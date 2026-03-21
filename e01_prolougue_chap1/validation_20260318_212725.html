@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>
+<title>PO Validation Report</title>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px;
+         background: #f4f5f7; color: #1a1a2e; }
+  header { background: #1a1a2e; color: #fff; padding: 20px 32px; }
+  header h1 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  header .meta { font-size: 12px; color: #aab; }
+  .stat-bar { display: flex; gap: 12px; padding: 16px 32px;
+              background: #fff; border-bottom: 1px solid #e0e0e0; flex-wrap: wrap;
+              align-items: center; }
+  .stat { padding: 6px 16px; border-radius: 20px; font-size: 13px;
+          font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .stat:hover { opacity: 0.75; }
+  .stat.ok     { background: #e6f9f0; color: #1a7a4a; border: 1.5px solid #1a7a4a; }
+  .stat.error  { background: #fdecea; color: #c0392b; border: 1.5px solid #c0392b; }
+  .stat.warn   { background: #fff8e1; color: #b7860b; border: 1.5px solid #b7860b; }
+  .stat.info   { background: #e8f0fe; color: #1a56c4; border: 1.5px solid #1a56c4; }
+  .stat.active { opacity: 1; }
+  .stat.dimmed { opacity: 0.35; }
+  .search-wrap { margin-left: auto; }
+  .search-wrap input { padding: 6px 12px; border: 1px solid #ccc; border-radius: 20px;
+                        font-size: 13px; width: 220px; outline: none; }
+  .search-wrap input:focus { border-color: #1a56c4; }
+  .chapters { padding: 16px 32px; display: flex; flex-direction: column; gap: 12px; }
+  .chapter { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0;
+             overflow: hidden; }
+  .chapter-header { display: flex; align-items: center; gap: 10px;
+                    padding: 10px 16px; cursor: pointer;
+                    background: #f8f8fb; border-bottom: 1px solid #e8e8ee;
+                    user-select: none; }
+  .chapter-header:hover { background: #f0f0f8; }
+  .chapter-name { font-weight: 600; font-size: 13px; flex: 1; }
+  .chapter-counts { font-size: 12px; color: #888; }
+  .chapter-toggle { font-size: 16px; color: #aaa; transition: transform .2s; }
+  .chapter.collapsed .chapter-toggle { transform: rotate(-90deg); }
+  .chapter.collapsed .chapter-body  { display: none; }
+  .chapter-body { padding: 0; }
+  .file-row { display: flex; align-items: flex-start; gap: 0;
+              border-bottom: 1px solid #f0f0f0; padding: 8px 16px 8px 16px; }
+  .file-row:last-child { border-bottom: none; }
+  .file-badge { min-width: 100px; font-size: 11px; font-weight: 700;
+                padding: 2px 8px; border-radius: 4px; text-align: center;
+                margin-right: 12px; margin-top: 2px; flex-shrink: 0; }
+  .badge-ok    { background: #e6f9f0; color: #1a7a4a; }
+  .badge-error { background: #fdecea; color: #c0392b; }
+  .badge-warn  { background: #fff8e1; color: #b7860b; }
+  .badge-nobackup { background: #f3e8ff; color: #6d28d9; }
+  .file-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #222; }
+  .file-issues { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .issue { font-size: 12px; padding: 3px 8px; border-radius: 4px;
+           border-left: 3px solid; line-height: 1.5; }
+  .issue-ERROR { background: #fff5f5; border-color: #e74c3c; color: #922b21; }
+  .issue-WARN  { background: #fffdf0; border-color: #f39c12; color: #7d6608; }
+  .issue-INFO  { background: #f0f4ff; border-color: #5b8cff; color: #1a4db5; }
+  .issue .check-tag { font-weight: 700; margin-right: 4px; }
+  .issue .detail-line { display: block; padding-left: 12px;
+                        color: #555; font-family: monospace; font-size: 11px; }
+  .no-issues { font-size: 12px; color: #999; font-style: italic; }
+  .hidden { display: none !important; }
+  .debug-block { background: #f8f8fb; border: 1px dashed #ccc; border-radius: 6px;
+                 padding: 12px 16px; font-family: monospace; font-size: 11px;
+                 color: #666; margin: 0 32px 12px; }
+  .debug-block summary { cursor: pointer; font-weight: 600; color: #888; }
+</style>
+
+</head><body>
+<header>
+  <h1>PO Validation Report</h1>
+  <div class="meta">
+    D:/Danganronpa1Viet/e01_prolougue_chap1_18-3-26 &nbsp;·&nbsp; 2026-03-18 21:27:25
+    &nbsp;·&nbsp; Rules: clt_tag_integrity, not_copy_of_source
+  </div>
+</header>
+<div class="stat-bar">
+  <span class="stat ok"    onclick="filterStatus('ok')"   >✔ OK &nbsp;0</span>
+  <span class="stat error" onclick="filterStatus('error')" >✗ Errors &nbsp;0</span>
+  <span class="stat warn"  onclick="filterStatus('warn')"  >! Warnings &nbsp;0</span>
+  <span class="stat info"  onclick="filterStatus('all')"   >Show all</span>
+  <span class="search-wrap"><input type="text" id="search" placeholder="Search segment…" oninput="filterSearch(this.value)"></span>
+</div>
+<details class="debug-block"><summary>Debug / scan info</summary><pre>Selected path: D:/Danganronpa1Viet/e01_prolougue_chap1_18-3-26
+Top-level folders: ['e00_001_000 trans', 'e00_002_000', 'e00_003_001', 'e00_004_001', 'e00_004_003 trans', 'e00_005_004', 'e00_006_007 trans', 'e01_000_146 chap1', 'e01_001_007', 'e01_001_103 trans', 'e01_002_101', 'e01_002_146', 'e01_003_135', 'e01_004_135', 'e01_005_103 first time room', 'e01_006_101', 'e01_006_103', 'e01_006_135', 'e01_006_136', 'e01_006_137', 'e01_006_139 hiro laundry room', 'e01_006_146', 'e01_007_001 trans', 'e01_007_003', 'e01_007_004 sayaka dream', 'e01_007_005', 'e01_007_010 meet junko', 'e01_008_001', 'e01_008_003', 'e01_008_004', 'e01_008_005', 'e01_008_006', 'e01_008_009', 'e01_008_010', 'e01_008_014', 'e01_008_015', 'e01_008_016', 'e01_008_101', 'e01_008_103 freetime', 'e01_008_135', 'e01_008_136 kitchen misc', 'e01_008_137', 'e01_008_139', 'e01_008_146 trans', 'e01_009_001', 'e01_009_003', 'e01_009_004', 'e01_009_005', 'e01_009_006', 'e01_009_009', 'e01_009_010', 'e01_009_014', 'e01_009_015 trans', 'e01_009_016', 'e01_009_101', 'e01_009_103 sleeptime', 'e01_009_135', 'e01_009_136', 'e01_009_137', 'e01_009_139', 'e01_009_146', 'e01_011_101 breakfast invite', 'e01_011_103 theater', 'e01_012_135 motive', 'e01_013_001', 'e01_013_003', 'e01_013_101 film look', 'e01_014_009 film', 'e01_015_001 sayaka run', 'e01_015_003', 'e01_015_004', 'e01_015_101', 'e01_016_014 find saya', 'e01_017_101', 'e01_018_103 ask room switch', 'e01_019_101', 'e01_019_119 room switch', 'e01_020_101', 'e01_020_119 theater', 'e01_021_101', 'e01_021_135 before sayaka', 'e01_022_006 after junko die', 'e01_022_104 sayaka die', 'e01_023_006 trans junko die', 'e01_024_001 investigate', 'e01_024_003 cleaning', 'e01_024_004 gym hall', 'e01_024_006 mono file', 'e01_024_010 Investigation Choice Interaction', 'e01_024_014 1a', 'e01_024_015 meet toko', 'e01_024_016', 'e01_024_101 dorm', 'e01_024_139 Laundry Room Choice', 'e01_024_146 Generic Choice Selection', 'e01_025_104 room kyoko', 'e01_025_106 sayaka body', 'e01_027_104', 'e01_029_104 Dying Message Discovery Dying Message Discovery', 'e01_031_119 room dvd', 'e01_032_009', 'e01_033_135 dining', 'e01_034_136 kitchen', 'e01_035_135 Hina Dining Break', 'e01_036_137 Trash Room Confrontation', 'e01_037_101 Hifumi Cleaning Duty', 'e01_038_137 Trash Gate Opening', 'e01_038_138 Hifumi Smut Offer', 'e01_038_156', 'e01_039_006', 'e01_040_001', 'e01_040_201', 'e01_040_203', 'e01_101_000', 'e01_102_000', 'e01_102_001', 'e01_103_000', 'e01_104_000', 'e01_104_001', 'e01_105_000', 'e01_106_000', 'e01_106_001', 'e01_107_000', 'e01_108_000', 'e01_109_000', 'e01_110_000', 'e01_110_001', 'e01_111_000', 'e01_112_000', 'e01_112_001', 'e01_113_000', 'e01_114_000', 'e01_114_001', 'e01_115_000', 'e01_116_000', 'e01_116_001', 'e01_117_000', 'e01_118_000', 'e01_118_001', 'e01_119_000', 'e01_120_000', 'e01_121_000', 'e01_122_000', 'e01_123_000', 'e01_150_000', 'e01_151_000', 'e01_152_000', 'e01_153_000', 'e01_154_000', 'e01_155_000', 'e01_156_000', 'e01_196_000', 'e01_197_000', 'e01_198_000', 'e01_199_000', 'e01_200_000', 'e01_201_000', 'e01_255_000']</pre></details>
+<div class="chapters">
+</div>
+<script>
+function toggleChapter(hdr) {
+  hdr.closest('.chapter').classList.toggle('collapsed');
+}
+function filterStatus(status) {
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden',
+      status !== 'all' && row.dataset.status !== status);
+  });
+}
+function filterSearch(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden', q && !row.dataset.name.toLowerCase().includes(q));
+  });
+  // Show chapters that have visible rows
+  document.querySelectorAll('.chapter').forEach(ch => {
+    const any = Array.from(ch.querySelectorAll('.file-row'))
+                     .some(r => !r.classList.contains('hidden'));
+    ch.classList.toggle('hidden', !any);
+  });
+}
+</script></body></html>

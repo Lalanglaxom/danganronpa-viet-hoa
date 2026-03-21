@@ -1,0 +1,1293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 何もない空間
+msgctxt "0001"
+msgid "Open Space"
+msgstr "Không gian mở"
+
+#. １階廊下　上り階段前
+msgctxt "0002"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr "Hành lang tầng 1 (Cầu thang lên tầng 2)"
+
+#. 玄関ホール
+msgctxt "0003"
+msgid "Main Hall"
+msgstr "Sảnh chính"
+
+#. 玄関ホール
+msgctxt "0004"
+msgid "Main Hall"
+msgstr "Sảnh chính"
+
+#. 体育館前ホール
+msgctxt "0005"
+msgid "Gym Entryway"
+msgstr "Lối vào phòng thể chất"
+
+#. ショーウインドウ前
+msgctxt "0006"
+msgid "Display Case"
+msgstr "Tủ trưng bày"
+
+#. 体育館
+msgctxt "0007"
+msgid "Gym"
+msgstr "Phòng thể chất"
+
+#. 体育館
+msgctxt "0008"
+msgid "Gym"
+msgstr "Phòng thể chất"
+
+#. 体育館
+msgctxt "0009"
+msgid "Gym"
+msgstr "Phòng thể chất"
+
+#. 視聴覚室
+msgctxt "0010"
+msgid "A/V Room"
+msgstr "Phòng nghe nhìn"
+
+#. 購買部
+msgctxt "0011"
+msgid "School Store"
+msgstr "Cửa hàng trường"
+
+#. 保健室
+msgctxt "0012"
+msgid "Nurse's Office"
+msgstr "Phòng y tế"
+
+#. 保健室
+msgctxt "0013"
+msgid "Nurse's Office"
+msgstr "Phòng y tế"
+
+#. 保健室
+msgctxt "0014"
+msgid "Nurse's Office"
+msgstr "Phòng y tế"
+
+#. 教室１－Ａ
+msgctxt "0015"
+msgid "Class 1-A"
+msgstr "Lớp 1-A"
+
+#. 教室１－Ｂ
+msgctxt "0016"
+msgid "Class 1-B"
+msgstr "Lớp 1-B"
+
+#. 男子トイレ
+msgctxt "0017"
+msgid "Boys Bathroom"
+msgstr "Nhà vệ sinh nam"
+
+#. 女子トイレ
+msgctxt "0018"
+msgid "Girls Bathroom"
+msgstr "Nhà vệ sinh nữ"
+
+#. １階廊下
+msgctxt "0019"
+msgid "Hallway 1F"
+msgstr "Hành lang tầng 1"
+
+#. １階廊下　玄関ホール前
+msgctxt "0020"
+msgid "Hallway 1F (Main Hall)"
+msgstr "Hành lang tầng 1 (Sảnh chính)"
+
+#. １階廊下　寄宿舎前
+msgctxt "0021"
+msgid "Hallway 1F (Dorms)"
+msgstr "Hành lang tầng 1 (Ký túc xá)"
+
+#. ２階廊下　下り階段前
+msgctxt "0022"
+msgid "Hallway 2F (Stairs to 1F)"
+msgstr "Hành lang tầng 2 (Cầu thang xuống tầng 1)"
+
+#. 図書室
+msgctxt "0023"
+msgid "Library"
+msgstr "Thư viện"
+
+#. 図書室
+msgctxt "0024"
+msgid "Library"
+msgstr "Thư viện"
+
+#. 図書室
+msgctxt "0025"
+msgid "Library"
+msgstr "Thư viện"
+
+#. 書庫
+msgctxt "0026"
+msgid "Archive"
+msgstr "Kho lưu trữ"
+
+#. プール前ホール
+msgctxt "0027"
+msgid "Hallway (Pool)"
+msgstr "Hành lang (Hồ bơi)"
+
+#. 男子更衣室
+msgctxt "0028"
+msgid "Boys Locker Room"
+msgstr "Phòng thay đồ nam"
+
+#. 女子更衣室
+msgctxt "0029"
+msgid "Girls Locker Room"
+msgstr "Phòng thay đồ nữ"
+
+#. 女子更衣室
+msgctxt "0030"
+msgid "Girls Locker Room"
+msgstr "Phòng thay đồ nữ"
+
+#. 室内プール
+msgctxt "0031"
+msgid "Pool"
+msgstr "Hồ bơi"
+
+#. 教室２－Ａ
+msgctxt "0032"
+msgid "Class 2-A"
+msgstr "Lớp 2-A"
+
+#. 教室２－Ｂ
+msgctxt "0033"
+msgid "Class 2-B"
+msgstr "Lớp 2-B"
+
+#. 男子トイレ
+msgctxt "0034"
+msgid "Boys Bathroom"
+msgstr "Nhà vệ sinh nam"
+
+#. 女子トイレ
+msgctxt "0035"
+msgid "Girls Bathroom"
+msgstr "Nhà vệ sinh nữ"
+
+#. 用具置き場
+msgctxt "0036"
+msgid "Storage Closet"
+msgstr "Tủ chứa đồ"
+
+#. 隠し部屋
+msgctxt "0037"
+msgid "Secret Room"
+msgstr "Phòng bí mật"
+
+#. 男子更衣室
+msgctxt "0038"
+msgid "Boys Locker Room"
+msgstr "Phòng thay đồ nam"
+
+#. ２階廊下　上り階段前
+msgctxt "0039"
+msgid "Hallway 2F (Stairs to 3F)"
+msgstr "Hành lang tầng 2 (Cầu thang lên tầng 3)"
+
+#. ２階廊下　教室前
+msgctxt "0040"
+msgid "Hallway 2F (Classroom)"
+msgstr "Hành lang tầng 2 (Lớp học)"
+
+#. ※
+msgctxt "0041"
+msgid "※"
+msgstr "※"
+
+#. ３階廊下　物理室前
+msgctxt "0042"
+msgid "Hallway 3F (Physics Lab)"
+msgstr "Hành lang tầng 3 (Phòng vật lý)"
+
+#. 娯楽室
+msgctxt "0043"
+msgid "Rec Room"
+msgstr "Phòng giải trí"
+
+#. 娯楽室
+msgctxt "0044"
+msgid "Rec Room"
+msgstr "Phòng giải trí"
+
+#. 美術室
+msgctxt "0045"
+msgid "Art Room"
+msgstr "Phòng mỹ thuật"
+
+#. 美術倉庫
+msgctxt "0046"
+msgid "Repository"
+msgstr "Kho chứa đồ mỹ thuật"
+
+#. 美術倉庫
+msgctxt "0047"
+msgid "Repository"
+msgstr "Kho chứa đồ mỹ thuật"
+
+#. 物理室
+msgctxt "0048"
+msgid "Physics Lab"
+msgstr "Phòng vật lý"
+
+#. 物理準備室
+msgctxt "0049"
+msgid "Equipment Room"
+msgstr "Phòng thiết bị"
+
+#. 物理準備室
+msgctxt "0050"
+msgid "Equipment Room"
+msgstr "Phòng thiết bị"
+
+#. 物理準備室
+msgctxt "0051"
+msgid "Equipment Room"
+msgstr "Phòng thiết bị"
+
+#. 教室３－Ａ
+msgctxt "0052"
+msgid "Class 3-A"
+msgstr "Lớp 3-A"
+
+#. 教室３－Ｂ
+msgctxt "0053"
+msgid "Class 3-B"
+msgstr "Lớp 3-B"
+
+#. ３階廊下　上り階段前
+msgctxt "0054"
+msgid "Hallway 3F (Stairs to 4F)"
+msgstr "Hành lang tầng 3 (Cầu thang lên tầng 4)"
+
+#. ３階廊下　下り階段前
+msgctxt "0055"
+msgid "Hallway 3F (Stairs to 2F)"
+msgstr "Hành lang tầng 3 (Cầu thang xuống tầng 2)"
+
+#. １階廊下　学園前
+msgctxt "0056"
+msgid "Hallway 1F (Main Area)"
+msgstr "Hành lang tầng 1 (Khu vực chính)"
+
+#. １階廊下　上り階段前
+msgctxt "0057"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr "Hành lang tầng 1 (Cầu thang lên tầng 2)"
+
+#. １階廊下　トラッシュルーム前
+msgctxt "0058"
+msgid "Hallway 1F (Trash Room)"
+msgstr "Hành lang tầng 1 (Phòng rác)"
+
+#. ※
+msgctxt "0059"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0060"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0061"
+msgid "※"
+msgstr "※"
+
+#. ４階廊下　下り階段前
+msgctxt "0062"
+msgid "Hallway 4F (Stairs to 3F)"
+msgstr "Hành lang tầng 4 (Cầu thang xuống tầng 3)"
+
+#. 化学室
+msgctxt "0063"
+msgid "Chem Lab"
+msgstr "Phòng hóa học"
+
+#. 化学室
+msgctxt "0064"
+msgid "Chem Lab"
+msgstr "Phòng hóa học"
+
+#. 化学室
+msgctxt "0065"
+msgid "Chem Lab"
+msgstr "Phòng hóa học"
+
+#. 職員室
+msgctxt "0066"
+msgid "Office"
+msgstr "Văn phòng"
+
+#. 学園長室
+msgctxt "0067"
+msgid "Headmaster's Room"
+msgstr "Phòng hiệu trưởng"
+
+#. 音楽室
+msgctxt "0068"
+msgid "Music Room"
+msgstr "Phòng âm nhạc"
+
+#. 情報処理室
+msgctxt "0069"
+msgid "Data Center"
+msgstr "Trung tâm dữ liệu"
+
+#. モノクマ操作室
+msgctxt "0070"
+msgid "Control Room"
+msgstr "Phòng điều khiển"
+
+#. 教室４－Ａ
+msgctxt "0071"
+msgid "Class 4-A"
+msgstr "Lớp 4-A"
+
+#. 教室４－Ｂ
+msgctxt "0072"
+msgid "Class 4-B"
+msgstr "Lớp 4-B"
+
+#. 男子トイレ
+msgctxt "0073"
+msgid "Boys Bathroom"
+msgstr "Nhà vệ sinh nam"
+
+#. 女子トイレ
+msgctxt "0074"
+msgid "Girls Bathroom"
+msgstr "Nhà vệ sinh nữ"
+
+#. ４階廊下　学園長室前
+msgctxt "0075"
+msgid "Hallway 4F (Headmaster's Room)"
+msgstr "Hành lang tầng 4 (Phòng hiệu trưởng)"
+
+#. ４階廊下　上り階段前
+msgctxt "0076"
+msgid "Hallway 4F (Stairs to 5F)"
+msgstr "Hành lang tầng 4 (Cầu thang lên tầng 5)"
+
+#. ※
+msgctxt "0077"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0078"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0079"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0080"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0081"
+msgid "※"
+msgstr "※"
+
+#. ５階廊下　植物庭園前
+msgctxt "0082"
+msgid "Hallway 5F (Garden)"
+msgstr "Hành lang tầng 5 (Khu vườn)"
+
+#. 植物庭園
+msgctxt "0083"
+msgid "Garden"
+msgstr "Khu vườn"
+
+#. 植物庭園
+msgctxt "0084"
+msgid "Garden"
+msgstr "Khu vườn"
+
+#. 植物庭園
+msgctxt "0085"
+msgid "Garden"
+msgstr "Khu vườn"
+
+#. 物置
+msgctxt "0086"
+msgid "Toolshed"
+msgstr "Nhà kho"
+
+#. 飼育小屋
+msgctxt "0087"
+msgid "Chicken Coop"
+msgstr "Chuồng gà"
+
+#. 武道場
+msgctxt "0088"
+msgid "Dojo"
+msgstr "Võ đạo đường"
+
+#. 武道場（ロッカー）
+msgctxt "0089"
+msgid "Dojo (Locker)"
+msgstr "Võ đạo đường (Tủ đồ)"
+
+#. 生物室
+msgctxt "0090"
+msgid "Bio Lab"
+msgstr "Phòng sinh học"
+
+#. 教室５－Ａ
+msgctxt "0091"
+msgid "Class 5-A"
+msgstr "Lớp 5-A"
+
+#. 教室５－Ｂ
+msgctxt "0092"
+msgid "Class 5-B"
+msgstr "Lớp 5-B"
+
+#. 教室５－Ｃ
+msgctxt "0093"
+msgid "Class 5-C"
+msgstr "Lớp 5-C"
+
+#. ※
+msgctxt "0094"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0095"
+msgid "※"
+msgstr "※"
+
+#. ５階廊下　生物室前
+msgctxt "0096"
+msgid "Hallway 5F (Bio Lab)"
+msgstr "Hành lang tầng 5 (Phòng sinh học)"
+
+#. ５階廊下　下り階段前
+msgctxt "0097"
+msgid "Hallway 5F (Stairs to 4F)"
+msgstr "Hành lang tầng 5 (Cầu thang xuống tầng 4)"
+
+#. ※
+msgctxt "0098"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0099"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0100"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0101"
+msgid "※"
+msgstr "※"
+
+#. １階廊下　学園前
+msgctxt "0102"
+msgid "Hallway 1F (Main Area)"
+msgstr "Hành lang tầng 1 (Khu vực chính)"
+
+#. 玄関ホール
+msgctxt "0103"
+msgid "Main Hall"
+msgstr "Sảnh chính"
+
+#. 苗木の部屋
+msgctxt "0104"
+msgid "Makoto's Room"
+msgstr "Phòng của Makoto"
+
+#. 苗木の部屋
+msgctxt "0105"
+msgid "Makoto's Room"
+msgstr "Phòng của Makoto"
+
+#. シャワールーム
+msgctxt "0106"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. シャワールーム
+msgctxt "0107"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 石丸の部屋
+msgctxt "0108"
+msgid "Kiyotaka's Room"
+msgstr "Phòng của Kiyotaka"
+
+#. シャワールーム
+msgctxt "0109"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 十神の部屋
+msgctxt "0110"
+msgid "Byakuya's Room"
+msgstr "Phòng của Byakuya"
+
+#. シャワールーム
+msgctxt "0111"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 大和田の部屋
+msgctxt "0112"
+msgid "Mondo's Room"
+msgstr "Phòng của Mondo"
+
+#. シャワールーム
+msgctxt "0113"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 桑田の部屋
+msgctxt "0114"
+msgid "Leon's Room"
+msgstr "Phòng của Leon"
+
+#. シャワールーム
+msgctxt "0115"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 山田の部屋
+msgctxt "0116"
+msgid "Hifumi's Room"
+msgstr "Phòng của Hifumi"
+
+#. シャワールーム
+msgctxt "0117"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 葉隠の部屋
+msgctxt "0118"
+msgid "Yasuhiro's Room"
+msgstr "Phòng của Yasuhiro"
+
+#. シャワールーム
+msgctxt "0119"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 舞園の部屋
+msgctxt "0120"
+msgid "Sayaka's Room"
+msgstr "Phòng của Sayaka"
+
+#. シャワールーム
+msgctxt "0121"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 霧切の部屋
+msgctxt "0122"
+msgid "Kyoko's Room"
+msgstr "Phòng của Kyoko"
+
+#. シャワールーム
+msgctxt "0123"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 朝日奈の部屋
+msgctxt "0124"
+msgid "Aoi's Room"
+msgstr "Phòng của Hina"
+
+#. シャワールーム
+msgctxt "0125"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 腐川の部屋
+msgctxt "0126"
+msgid "Toko's Room"
+msgstr "Phòng của Toko"
+
+#. シャワールーム
+msgctxt "0127"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 大神の部屋
+msgctxt "0128"
+msgid "Sakura's Room"
+msgstr "Phòng của Sakura"
+
+#. シャワールーム
+msgctxt "0129"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. セレスの部屋
+msgctxt "0130"
+msgid "Celeste's Room"
+msgstr "Phòng của Celeste"
+
+#. シャワールーム
+msgctxt "0131"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 江ノ島の部屋
+msgctxt "0132"
+msgid "Junko's Room"
+msgstr "Phòng của Junko"
+
+#. シャワールーム
+msgctxt "0133"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 不二咲の部屋
+msgctxt "0134"
+msgid "Chihiro's Room"
+msgstr "Phòng của Chihiro"
+
+#. シャワールーム
+msgctxt "0135"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. 食堂
+msgctxt "0136"
+msgid "Dining Hall"
+msgstr "Nhà ăn"
+
+#. 厨房
+msgctxt "0137"
+msgid "Kitchen"
+msgstr "Nhà bếp"
+
+#. トラッシュルーム
+msgctxt "0138"
+msgid "Trash Room"
+msgstr "Phòng rác"
+
+#. トラッシュルーム
+msgctxt "0139"
+msgid "Trash Room"
+msgstr "Phòng rác"
+
+#. ランドリー
+msgctxt "0140"
+msgid "Laundry"
+msgstr "Phòng giặt ủi"
+
+#. 倉庫
+msgctxt "0141"
+msgid "Warehouse"
+msgstr "Nhà kho"
+
+#. 脱衣所
+msgctxt "0142"
+msgid "Dressing Room"
+msgstr "Phòng thay đồ"
+
+#. 脱衣所ロッカー付近
+msgctxt "0143"
+msgid "Dressing Room Lockers"
+msgstr "Khu vực tủ đồ phòng thay đồ"
+
+#. 脱衣所ロッカー付近
+msgctxt "0144"
+msgid "Dressing Room Lockers"
+msgstr "Khu vực tủ đồ phòng thay đồ"
+
+#. 大浴場
+msgctxt "0145"
+msgid "Bathhouse"
+msgstr "Nhà tắm công cộng"
+
+#. サウナルーム
+msgctxt "0146"
+msgid "Sauna"
+msgstr "Phòng xông hơi"
+
+#. 男子トイレ
+msgctxt "0147"
+msgid "Boys Bathroom"
+msgstr "Nhà vệ sinh nam"
+
+#. 女子トイレ
+msgctxt "0148"
+msgid "Girls Bathroom"
+msgstr "Nhà vệ sinh nữ"
+
+#. ２階廊下
+msgctxt "0149"
+msgid "Hallway 2F"
+msgstr "Hành lang tầng 2"
+
+#. 空き部屋
+msgctxt "0150"
+msgid "Empty Room"
+msgstr "Phòng trống"
+
+#. ロッカールーム
+msgctxt "0151"
+msgid "Locker Room"
+msgstr "Phòng để đồ"
+
+#. 学園長の個室
+msgctxt "0152"
+msgid "Headmaster's Private Room"
+msgstr "Phòng riêng của Hiệu trưởng"
+
+#. 学園長の隠し部屋
+msgctxt "0153"
+msgid "Headmaster's Hidden Room"
+msgstr "Phòng bí mật của Hiệu trưởng"
+
+#. 男子トイレ
+msgctxt "0154"
+msgid "Boys Bathroom"
+msgstr "Nhà vệ sinh nam"
+
+#. 女子トイレ
+msgctxt "0155"
+msgid "Girls Bathroom"
+msgstr "Nhà vệ sinh nữ"
+
+#. ３階廊下
+msgctxt "0156"
+msgid "Hallway 3F"
+msgstr "Hành lang tầng 3"
+
+#. トラッシュルーム
+msgctxt "0157"
+msgid "Trash Room"
+msgstr "Phòng rác"
+
+#. ロッカールーム
+msgctxt "0158"
+msgid "Locker Room"
+msgstr "Phòng để đồ"
+
+#. ロッカールーム
+msgctxt "0159"
+msgid "Locker Room"
+msgstr "Phòng để đồ"
+
+#. シャワールーム
+msgctxt "0160"
+msgid "Bathroom"
+msgstr "Phòng tắm"
+
+#. １階廊下
+msgctxt "0161"
+msgid "Hallway 1F"
+msgstr "Hành lang tầng 1"
+
+#. １階廊下　上り階段前
+msgctxt "0162"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr "Hành lang tầng 1 (Cầu thang lên tầng 2)"
+
+#. １階廊下　トラッシュルーム前
+msgctxt "0163"
+msgid "Hallway 1F (Trash Room)"
+msgstr "Hành lang tầng 1 (Phòng rác)"
+
+#. ２階廊下　学園長個室前
+msgctxt "0164"
+msgid "Hallway 2F (Private Room)"
+msgstr "Hành lang tầng 2 (Phòng riêng)"
+
+#. ※
+msgctxt "0165"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0166"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0167"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0168"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0169"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0170"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0171"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0172"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0173"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0174"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0175"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0176"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0177"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0178"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0179"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0180"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0181"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0182"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0183"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0184"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0185"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0186"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0187"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0188"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0189"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0190"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0191"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0192"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0193"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0194"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0195"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0196"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0197"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0198"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0199"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0200"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0201"
+msgid "※"
+msgstr "※"
+
+#. 裁判場前ホール
+msgctxt "0202"
+msgid "Hallway (Courtroom)"
+msgstr "Hành lang (Phòng xử án)"
+
+#. エレベーター内
+msgctxt "0203"
+msgid "Elevator"
+msgstr "Thang máy"
+
+#. 学級裁判場
+msgctxt "0204"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0205"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0206"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0207"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0208"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0209"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 処刑場
+msgctxt "0210"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0211"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0212"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0213"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0214"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0215"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 処刑場
+msgctxt "0216"
+msgid "Execution Grounds"
+msgstr "Pháp trường"
+
+#. 夢の島
+msgctxt "0217"
+msgid "Dream Island"
+msgstr "Đảo mộng mơ"
+
+#. 学級裁判場
+msgctxt "0218"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0219"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0220"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0221"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0222"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. 学級裁判場
+msgctxt "0223"
+msgid "Class Trial Courtroom"
+msgstr "Lớp Xét Xử"
+
+#. ※
+msgctxt "0224"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0225"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0226"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0227"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0228"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0229"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0230"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0231"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0232"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0233"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0234"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0235"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0236"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0237"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0238"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0239"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0240"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0241"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0242"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0243"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0244"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0245"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0246"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0247"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0248"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0249"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0250"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0251"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0252"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0253"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0254"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0255"
+msgid "※"
+msgstr "※"
+
+#. ？？？
+msgctxt "0256"
+msgid "？？？"
+msgstr "？？？"

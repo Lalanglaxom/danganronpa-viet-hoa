@@ -1,0 +1,560 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 発言力の最大値が＋２されます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　２）
+msgctxt "0001"
+msgid ""
+"Increases the Influence Gauge\n"
+"by 2. Effective during the\n"
+"Class Trial. Costs 2 SP."
+msgstr ""
+"Tăng thanh Phát Ngôn thêm 2.\n"
+"Có hiệu lực trong Lớp Xét Xử.\n"
+"Tốn 2 SP."
+
+#. 発言力の最大値が＋５されます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　４）
+msgctxt "0002"
+msgid ""
+"Increases the Influence Gauge\n"
+"by 5. Effective during the\n"
+"Class Trial. Costs 4 SP."
+msgstr ""
+"Tăng Thanh Ảnh Hưởng thêm 5.\n"
+"Có hiệu quả trong Lớp Xét Xử.\n"
+"Tốn 4 SP."
+
+#. 集中力の最大値が＋２されます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　２）
+msgctxt "0003"
+msgid ""
+"Increases the Focus Gauge by\n"
+"2. Effective during the Class\n"
+"Trial. Costs 2 SP."
+msgstr ""
+"Tăng Thanh Tập Trung thêm 2.\n"
+"Có hiệu quả trong Lớp Xét Xử.\n"
+"Tốn 2 SP."
+
+#. 集中力の最大値が＋５されます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　４）
+msgctxt "0004"
+msgid ""
+"Increases the Focus Gauge by\n"
+"5. Effective during the Class\n"
+"Trial. Costs 4 SP."
+msgstr ""
+"Tăng Thanh Tập Trung thêm 5.\n"
+"Có hiệu quả trong Lớp Xét Xử.\n"
+"Tốn 4 SP."
+
+#. 各フェイズのタイムリミットが、
+#. 少し増えます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　３）
+msgctxt "0005"
+msgid ""
+"Increases the time limit for\n"
+"each phase. Effective during\n"
+"the Class Trial. Costs 3 SP."
+msgstr ""
+"Tăng giới hạn thời gian cho\n"
+"mỗi giai đoạn. Có hiệu quả trong\n"
+"Lớp Xét Xử. Tốn 3 SP."
+
+#. 選択肢などで正しい答えを選択
+#. した時の発言力ゲージの回復量が
+#. 増えます。
+#. 学級裁判パートで有効です。
+#. （必要ＳＰ　５）
+msgctxt "0006"
+msgid ""
+"Increases Influence Gauge\n"
+"recovery when right answers\n"
+"are chosen. Effective during\n"
+"the Class Trial. Costs 5 SP."
+msgstr ""
+"Tăng lượng hồi phục Thanh Ảnh Hưởng\n"
+"khi chọn câu trả lời đúng. Có hiệu\n"
+"quả trong Lớp Xét Xử. Tốn 5 SP."
+
+#. 照準のブレが少なくなります。
+#. ノンストップ議論、閃きアナグラ
+#. ムで有効です。
+#. （必要ＳＰ　２）
+msgctxt "0007"
+msgid ""
+"Steadies your aim a little.\n"
+"Effective during the Nonstop\n"
+"Debate and the Hangman's\n"
+"Gambit. Costs 2 SP."
+msgstr ""
+"Giúp tâm ngắm ổn định hơn một chút.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Trận Đồ Ký Tự. Tốn 2 SP."
+
+#. 照準のブレが無くなります。
+#. ノンストップ議論、閃きアナグラ
+#. ムで有効です。
+#. （必要ＳＰ　３）
+msgctxt "0008"
+msgid ""
+"Completely steadies your aim.\n"
+"Effective during the Nonstop\n"
+"Debate and the Hangman's\n"
+"Gambit. Costs 3 SP."
+msgstr ""
+"Giúp tâm ngắm hoàn toàn ổn định.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Trận Đồ Ký Tự. Tốn 3 SP."
+
+#. 照準の移動速度が遅くなります。
+#. ノンストップ議論、閃きアナグラ
+#. ムで有効です。
+#. （必要ＳＰ　１）
+msgctxt "0009"
+msgid ""
+"Reduces your aim speed.\n"
+"Effective during the Nonstop\n"
+"Debate and the Hangman's\n"
+"Gambit. Costs 1 SP."
+msgstr ""
+"Giảm tốc độ di chuyển tâm ngắm.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Trận Đồ Ký Tự. Tốn 1 SP."
+
+#. 照準の移動速度が速くなります。
+#. ノンストップ議論、閃きアナグラ
+#. ムで有効です。
+#. （必要ＳＰ　１）
+msgctxt "0010"
+msgid ""
+"Increases your aim speed.\n"
+"Effective during the Nonstop\n"
+"Debate and the Hangman's\n"
+"Gambit. Costs 1 SP."
+msgstr ""
+"Tăng tốc độ di chuyển tâm ngắm.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Trận Đồ Ký Tự. Tốn 1 SP."
+
+#. 発射したコトダマの速度が上がり
+#. ます。
+#. ノンストップ議論、マシンガント
+#. ークバトルのトドメで有効です。
+#. （必要ＳＰ　３）
+msgctxt "0011"
+msgid ""
+"Increases your Truth Bullet\n"
+"rate of fire. Effective during\n"
+"the Nonstop Debate and the\n"
+"Bullet Time Battle Final\n"
+"Strike. Costs 3 SP."
+msgstr ""
+"Tăng tốc độ bay của Đạn Hy Vọng.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 3 SP."
+
+#. コトダマを撃った後、次のコトダ
+#. マを発射できるようになるまでの
+#. 間隔が短くなります。
+#. ノンストップ議論、マシンガント
+#. ークバトルのトドメで有効です。
+#. （必要ＳＰ　３）
+msgctxt "0012"
+msgid ""
+"Decreases the delay between\n"
+"firing Truth Bullets. Effective\n"
+"during the Nonstop Debate\n"
+"and the Bullet Time Battle\n"
+"Final Strike. Costs 3 SP."
+msgstr ""
+"Giảm độ trễ giữa những lần bắn Đạn Hy Vọng.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 3 SP."
+
+#. コトダマが３種類以上装填される
+#. 議論の場合に、事前に３種類まで
+#. 答えを絞ります。
+#. ノンストップ議論、マシンガント
+#. ークバトルのトドメで有効です。
+#. （必要ＳＰ　５）
+msgctxt "0013"
+msgid ""
+"Decreases an argument to three\n"
+"statements or less. Effective\n"
+"during the Nonstop Debate and\n"
+"the Bullet Time Battle Final\n"
+"Strike. Costs 5 SP."
+msgstr ""
+"Giảm số lượng lập luận xuống còn tối đa ba.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi\n"
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 5 SP."
+
+#. サイレンサーを、発言に当ててし
+#. まっても、タイムリミットが減ら
+#. なくなります。
+#. ノンストップ議論で有効です。
+#. （必要ＳＰ　２）
+msgctxt "0014"
+msgid ""
+"The time limit doesn't\n"
+"decrease, even if you shoot a\n"
+"statement with the silencer.\n"
+"Effective during the Nonstop\n"
+"Debate. Costs 2 SP."
+msgstr ""
+"Giới hạn thời gian sẽ không giảm,\n"
+"ngay cả khi cậu bắn vào lập luận bằng ống giảm thanh.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi. Tốn 2 SP."
+
+#. 相手の発言をコトダマとして記憶
+#. する速度が上がります。
+#. ノンストップ議論で有効です。
+#. （必要ＳＰ　２）
+msgctxt "0015"
+msgid ""
+"Increases the speed of\n"
+"memorizing a statement.\n"
+"Effective during the\n"
+"Nonstop Debate. Costs 2 SP."
+msgstr ""
+"Tăng tốc độ ghi nhớ một lập luận.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi.\n"
+"Tốn 2 SP."
+
+#. 精神集中時、照準が自動的に相手
+#. の発言のウィークポイントに合わ
+#. さるようになります。
+#. ノンストップ議論で有効です。
+#. （必要ＳＰ　２）
+msgctxt "0016"
+msgid ""
+"During concentration,\n"
+"automatically targets the weak\n"
+"spot. Effective during the\n"
+"Nonstop Debate. Costs 2 SP."
+msgstr ""
+"Trong khi tập trung, tâm ngắm sẽ\n"
+"tự động nhắm vào điểm yếu. Có hiệu\n"
+"quả trong Tranh Luận Liên Hồi. Tốn 2 SP."
+
+#. ミスをした時に発言力のダメージ
+#. を減らします。
+#. ノンストップ議論、閃きアナグラ
+#. ム、マシンガントークバトル、ク
+#. ライマックス推理で有効です。
+#. （必要ＳＰ　３）
+msgctxt "0017"
+msgid ""
+"Reduces damage to the\n"
+"Influence Gauge when you miss.\n"
+"Effective during the Nonstop\n"
+"Debate, the Hangman's Gambit,\n"
+"the Bullet Time Battle, and the\n"
+"Closing Argument. Costs 3 SP."
+msgstr ""
+"Giảm sát thương lên Thanh Ảnh Hưởng\n"
+"khi cậu bắn trượt. Có hiệu quả trong Tranh\n"
+"Luận Liên Hồi, Trận Đồ Ký Tự, Đấu Khẩu Súng Máy,\n"
+"và Lập Luận Hồi Kết. Tốn 3 SP."
+
+#. 精神集中、フィーバータイム時、
+#. 集中力ゲージの減少が遅くなり、
+#. 持続時間が長くなります。
+#. ノンストップ議論、閃きアナグラ
+#. ム、マシンガントークバトルで有
+#. 効です。
+#. （必要ＳＰ　５）
+msgctxt "0018"
+msgid ""
+"The Focus Gauge decreases more\n"
+"slowly during concentration and\n"
+"Fever time. Effective during the\n"
+"Nonstop Debate, the Hangman's\n"
+"Gambit, and the Bullet Time\n"
+"Battle. Costs 5 SP."
+msgstr ""
+"Thanh Tập Trung giảm chậm hơn khi đang tập\n"
+"trung và trong thời gian Hưng Phấn. Có hiệu quả\n"
+"trong Tranh Luận Liên Hồi, Trận Đồ Ký Tự,\n"
+"và Đấu Khẩu Súng Máy. Tốn 5 SP."
+
+#. 精神集中、フィーバータイム時、
+#. 時間と共に発言力ゲージが少しづ
+#. つ回復するようになります。
+#. ノンストップ議論、閃きアナグラ
+#. ム、マシンガントークバトルで有
+#. 効です。
+#. （必要ＳＰ　５）
+msgctxt "0019"
+msgid ""
+"The Influence Gauge recovers\n"
+"over time during concentration\n"
+"and Fever Time. Effective\n"
+"during the Nonstop Debate,\n"
+"the Hangman's Gambit, and the\n"
+"Bullet Time Battle. Costs 5 SP."
+msgstr ""
+"Thanh Ảnh Hưởng sẽ hồi phục dần theo thời\n"
+"gian khi tập trung và trong thời gian Hưng\n"
+"Phấn. Có hiệu quả trong Tranh Luận Liên Hồi,\n"
+"Trận Đồ Ký Tự, và Đấu Khẩu Súng Máy. Tốn 5 SP."
+
+#. 集中力ゲージの回復速度が上がり
+#. ます。
+#. ノンストップ議論、閃きアナグラ
+#. ム、マシンガントークバトルで有
+#. 効です。
+#. （必要ＳＰ　４）
+msgctxt "0020"
+msgid ""
+"The Focus Gauge recovers more\n"
+"quickly. Effective during the\n"
+"Nonstop Debate, the Hangman's\n"
+"Gambit, and the Bullet Time\n"
+"Battle. Costs 4 SP."
+msgstr ""
+"Thanh Tập Trung hồi phục nhanh hơn.\n"
+"Có hiệu quả trong Tranh Luận Liên Hồi,\n"
+"Trận Đồ Ký Tự và Đấu Khẩu Súng Máy.\n"
+"Tốn 4 SP."
+
+#. 相手の発言を破壊した際に、相手
+#. に与えるダメージが増えます。
+#. マシンガントークバトルで有効で
+#. す。
+#. （必要ＳＰ　３）
+msgctxt "0021"
+msgid ""
+"Increases damage to the\n"
+"opponent when a statement is\n"
+"destroyed. Effective during\n"
+"the Bullet Time Battle.\n"
+"Costs 3 SP."
+msgstr ""
+"Tăng sát thương lên đối thủ khi một\n"
+"lập luận bị phá hủy. Có hiệu quả\n"
+"trong Đấu Khẩu Súng Máy.\n"
+"Tốn 3 SP."
+
+#. 弾数を増やすことができます。
+#. マシンガントークバトルで有効で
+#. す。
+#. （必要ＳＰ　４）
+msgctxt "0022"
+msgid ""
+"Increases bullet capacity.\n"
+"Effective during the Bullet\n"
+"Time Battle. Costs 4 SP."
+msgstr ""
+"Tăng số lượng đạn tối đa.\n"
+"Có hiệu quả trong Đấu Khẩu Súng Máy.\n"
+"Tốn 4 SP."
+
+#. １回の操作で、２つの発言を同時
+#. にロックオンできるようになりま
+#. す。
+#. マシンガントークバトルで有効で
+#. す。
+#. （必要ＳＰ　４）
+msgctxt "0023"
+msgid ""
+"Allows you to lock on to two\n"
+"statements at once. Effective\n"
+"during the Bullet Time Battle.\n"
+"Costs 4 SP."
+msgstr ""
+"Cho phép cậu khóa mục tiêu vào hai\n"
+"lập luận cùng lúc. Có hiệu quả\n"
+"trong Đấu Khẩu Súng Máy.\n"
+"Tốn 4 SP."
+
+#. １回のリロードで、２発分の弾を
+#. 補給することができます。
+#. マシンガントークバトルで有効で
+#. す。
+#. （必要ＳＰ　４）
+msgctxt "0024"
+msgid ""
+"Allows you to reload two\n"
+"bullets at once. Effective\n"
+"during the Bullet Time Battle.\n"
+"Costs 4 SP."
+msgstr ""
+"Cho phép cậu nạp hai viên đạn cùng\n"
+"lúc. Có hiệu quả trong Đấu Khẩu Súng Máy.\n"
+"Tốn 4 SP."
+
+#. 少ないコンボ数でテンポを上げる
+#. ことができるようになります。
+#. マシンガントークバトルで有効で
+#. す。
+#. （必要ＳＰ　４）
+msgctxt "0025"
+msgid ""
+"Even low combos will increase\n"
+"the tempo. Effective during\n"
+"the Bullet Time Battle. Costs\n"
+"4 SP."
+msgstr ""
+"Ngay cả combo thấp cũng sẽ làm tăng\n"
+"nhịp độ. Có hiệu quả trong Đấu Khẩu Súng Máy.\n"
+"Tốn 4 SP."
+
+#. 学園生活パートでＲボタンを押す
+#. ことで、調査対象を発見すること
+#. ができます。
+#. 取得しているだけで効果がありま
+#. す。
+msgctxt "0026"
+msgid ""
+"During school life, press the\n"
+"R button to mark objects that\n"
+"you can investigate."
+msgstr ""
+"Trong đời sống học đường, nhấn nút R\n"
+"để đánh dấu các vật thể mà cậu có thể\n"
+"điều tra."
+
+#. 学園生活パートで×ボタンを押し
+#. 続けると廊下を早く歩くことがで
+#. きるようになります。
+#. 取得しているだけで効果がありま
+#. す。
+msgctxt "0027"
+msgid ""
+"During school life, hold down\n"
+"the ○ button to move faster."
+msgstr ""
+"Trong đời sống học đường, giữ nút ○\n"
+"để di chuyển nhanh hơn."
+
+#. モノクマメダルを発見、獲得した
+#. 時に通常より多く手に入れること
+#. ができます。
+#. 取得しているだけで効果がありま
+#. す。
+msgctxt "0028"
+msgid ""
+"When you find Monocoins,\n"
+"you'll earn more than usual."
+msgstr ""
+"Khi cậu tìm thấy Huy hiệu Monokuma,\n"
+"cậu sẽ nhận được nhiều hơn bình thường."
+
+#. ※
+msgctxt "0029"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0030"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0031"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0032"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0033"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0034"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0035"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0036"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0037"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0038"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0039"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0040"
+msgid "※"
+msgstr "※"
+
+#. 全てのスキル効果が発動し、まさ
+#. しく希望を手に入れることができ
+#. ます。
+msgctxt "0041"
+msgid ""
+"With all your skills in\n"
+"effect, hope springs eternal."
+msgstr ""
+"Khi tất cả kỹ năng được kích hoạt,\n"
+"hy vọng sẽ mãi vĩnh hằng."
+
+#. スキルポイントの最大値が＋１さ
+#. れます。
+msgctxt "0042"
+msgid "Your max SP increases by 1."
+msgstr "Điểm Kỹ năng tối đa của cậu tăng thêm 1."
+
+#. スキルポイントの最大値が＋２さ
+#. れます。
+msgctxt "0043"
+msgid "Your max SP increases by 2."
+msgstr "Điểm Kỹ năng tối đa của cậu tăng thêm 2."
+
+#. スキルポイントの最大値が＋３さ
+#. れます。
+msgctxt "0044"
+msgid "Your max SP increases by 3."
+msgstr "Điểm Kỹ năng tối đa của cậu tăng thêm 3."
+
+#. スキルポイントの最大値が９９に
+#. なります。
+msgctxt "0045"
+msgid "Your max SP becomes 99."
+msgstr "Điểm Kỹ năng tối đa của cậu trở thành 99."
+
+#. ？？？
+msgctxt "0046"
+msgid "？？？"
+msgstr "???"

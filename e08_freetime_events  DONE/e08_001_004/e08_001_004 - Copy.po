@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 裸を見れば、その人物が信頼に足るかどうかなど、
+#. 一目瞭然なのだ…
+msgctxt "0001 | KIYOTAKA ISHIMARU"
+msgid ""
+"When you see someone naked, you can tell at a glance\n"
+"whether they're trustworthy or not."
+msgstr ""
+"Chỉ cần nhìn lúc trần trụi là có thể biết ngay một người \n"
+"có đáng tin cậy hay không..."
+
+#. だから、僕らは互いに裸を見せ合う必要があるのだ！
+msgctxt "0002 | KIYOTAKA ISHIMARU"
+msgid ""
+"Which is why it's necessary for us to bare ourselves\n"
+"to each other!"
+msgstr ""
+"Đó là lý do tại sao chúng ta cần phải thành thật với \n"
+"nhau cả về thể xác lẫn tâm hồn!"
+
+#. さぁ、見せたまえ！　僕に裸を見せたまえ！！
+msgctxt "0003 | KIYOTAKA ISHIMARU"
+msgid "So show me what you've got! Show me everything!"
+msgstr ""
+"Nào, cho tớ thấy cậu có gì đi! Cho tớ thấy tất cả mọi \n"
+"thứ của cậu nào!!"
+
+#. 一緒に過ごす
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Spend some time with Taka"
+msgstr "Dành thời gian với Taka"
+
+#. 他の場所へ行く
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. 石丸クンと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Taka for a while?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hừm... Mình có nên đi chơi với Taka một lát không\n"
+"nhỉ?\n"
+"<CLT>"
+
+#. よし！　裸の付き合いだ！
+#. 君も遠慮せずに脱ぎたまえ！！
+msgctxt "0007 | KIYOTAKA ISHIMARU"
+msgid ""
+"Alright! When the body is naked, so is the soul! So\n"
+"get to strippin' down!"
+msgstr ""
+"Được lắm! Khi cơ thể trần trụi thì tâm hồn cũng sẽ rộng \n"
+"mở! Thế nên đừng có ngại, cởi đồ ra đi nào!!"
+
+#. <CLT 4>石丸クンと一緒にお風呂に入った。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka and I bared ourselves to each other in the\n"
+"bathhouse...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ và Taka đã cùng nhau \"thành thật\" với đối \n"
+"phương trong nhà tắm...<CLT>"
+
+#. <CLT 4>石丸クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hôm nay mình và Taka đã trở nên thân thiết \n"
+"hơn một chút.<CLT>"
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn, chắc là không"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Taka a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng cho Taka một <CLT> <CLT 3>món quà<CLT><CLT 23> không?<CLT>"

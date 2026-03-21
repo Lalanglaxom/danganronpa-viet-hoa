@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. あぁ？　なんだ？
+#. オレになんか用か？
+msgctxt "0001 | MONDO OOWADA"
+msgid "Huh? What, you want somethin'?"
+msgstr "Hửm? Mày cần gì hả?"
+
+#. 一緒に過ごす
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Spend some time with Mondo"
+msgstr "Dành thời gian với Mondo"
+
+#. 他の場所へ行く
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>どうしよう…？
+#. 大和田クンと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Mondo for a while?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hmm... Mình có nên dành chút thời gian với Mondo \n"
+"không nhỉ?\n"
+"<CLT>"
+
+#. …オレと一緒に来んのか？
+#. そーか、面白れーよ…
+msgctxt "0005 | MONDO OOWADA"
+msgid "You wanna chill with me, huh? Gotcha..."
+msgstr ""
+"Muốn chill với tao hả?\n"
+"Được thôi... nghe cũng vui đấy..."
+
+#. “踊る”ぞ！　コラァ！！
+msgctxt "0006 | MONDO OOWADA"
+msgid "Wanna throw down!? Let's dance, shitbird!"
+msgstr "Muốn “nhảy” một trận không!? Lên luôn nào!"
+
+#. <CLT 4>大和田クンと一緒に、
+#. 刺激的な時間を過ごした。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I had a very exciting time with Mondo...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã có một khoảng thời gian khá kích thích\n"
+"khi ở cùng Mondo...\n"
+"<CLT>"
+
+#. <CLT 4>大和田クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay mình đã thân với Mondo hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không đưa"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0011 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Mondo a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng Mondo một <CLT> <CLT 3>món quà<CLT><CLT 23> không?<CLT>"

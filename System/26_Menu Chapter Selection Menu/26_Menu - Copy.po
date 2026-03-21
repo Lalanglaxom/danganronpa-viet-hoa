@@ -1,0 +1,367 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. チャプターの最初から始める
+msgctxt "0001"
+msgid "Start from chapter beginning"
+msgstr ""
+
+#. 学級裁判から始める
+msgctxt "0002"
+msgid "Start from class trial"
+msgstr ""
+
+#. 学級裁判の最高成績
+msgctxt "0003"
+msgid "Best results"
+msgstr ""
+
+#. 選んだチャプターからプレイを開始します。
+#. よろしいでしょうか？
+msgctxt "0004"
+msgid ""
+"The game will begin from the chapter\n"
+"you've selected. Is this okay?"
+msgstr ""
+
+#. はい
+msgctxt "0005"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0006"
+msgid "No"
+msgstr ""
+
+#. ＯＫ
+msgctxt "0007"
+msgid "Okay"
+msgstr ""
+
+#. 前回の続きからプレイを再開します。
+#. よろしいでしょうか？
+msgctxt "0008"
+msgid ""
+"The game will begin from where you\n"
+"last left off. Is this okay?"
+msgstr ""
+
+#. ＰＲＯＬＯＧＵＥ
+msgctxt "0009"
+msgid "Prologue"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０１
+msgctxt "0010"
+msgid "Chapter 1"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０２
+msgctxt "0011"
+msgid "Chapter 2"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０３
+msgctxt "0012"
+msgid "Chapter 3"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０４
+msgctxt "0013"
+msgid "Chapter 4"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０５
+msgctxt "0014"
+msgid "Chapter 5"
+msgstr ""
+
+#. ＣＨＡＰＴＥＲ　０６
+msgctxt "0015"
+msgid "Chapter 6"
+msgstr ""
+
+#. ＥＰＩＬＯＧＵＥ
+msgctxt "0016"
+msgid "Epilogue"
+msgstr ""
+
+#. ＥＮＤ
+msgctxt "0017"
+msgid "Ending"
+msgstr ""
+
+#. 学園生活
+msgctxt "0018"
+msgid "School Life"
+msgstr ""
+
+#. 学園生活　（非）日常編
+msgctxt "0019"
+msgid "School Life: Daily Life"
+msgstr ""
+
+#. 学園生活　（非）日常編　自由行動
+msgctxt "0020"
+msgid "School Life: Daily Life (Free Time)"
+msgstr ""
+
+#. 学園生活　非日常編
+msgctxt "0021"
+msgid "School Life: Deadly Life"
+msgstr ""
+
+#. 学園生活　非日常編　捜査
+msgctxt "0022"
+msgid "School Life: Deadly Life (Investigation)"
+msgstr ""
+
+#. 学園生活　裁判決着
+msgctxt "0023"
+msgid "School Life: Trial Verdict"
+msgstr ""
+
+#. 学園生活　セーブポイント
+msgctxt "0024"
+msgid "School Life: Checkpoint"
+msgstr ""
+
+#. 学級裁判
+msgctxt "0025"
+msgid "Class Trial"
+msgstr ""
+
+#. 学級裁判　弁論準備
+msgctxt "0026"
+msgid "Pre-Trial Prep"
+msgstr ""
+
+#. 学級裁判　中断
+msgctxt "0027"
+msgid "Class Trial: Interrupted"
+msgstr ""
+
+#. JAPANESE LINE NOT FOUND
+msgctxt "0028"
+msgid "[EMPTY_LINE]"
+msgstr "[EMPTY_LINE]"
+
+#. 難易度をお選びください。
+msgctxt "0029"
+msgid "Please choose a difficulty level."
+msgstr ""
+
+#. ※
+msgctxt "0030"
+msgid "※"
+msgstr "※"
+
+#. 体験版のセーブデータをロードすると、
+#. ささやかなプレゼントがございます。
+#. セーブデータをロードなさいますか？
+msgctxt "0031"
+msgid ""
+"If you load demo version save data,\n"
+"you will receive a small gift. Would\n"
+"you like to load save data?"
+msgstr ""
+
+#. 体験版で集めたモノクマメダルを、
+#. １０倍返しさせて頂きます。
+#. １枚は、ほんの気持ちです。
+msgctxt "0032"
+msgid ""
+"For every 10 Monocoins you acquire in the demo version, you\n"
+"will get 1 Monocoin in the full version. First one's free!"
+msgstr ""
+
+#. 獲得モノクマメダル
+msgctxt "0033"
+msgid "Monocoins acquired:"
+msgstr ""
+
+#. 枚
+msgctxt "0034"
+msgid "coin(s)"
+msgstr ""
+
+#. 体験版のセーブデータがございません。
+msgctxt "0035"
+msgid "No demo version save data found."
+msgstr ""
+
+#. ※
+msgctxt "0036"
+msgid "※"
+msgstr "※"
+
+#. こちらの特典をご覧頂くには、モノクマメダルが
+#. 必要でございます。メダルと交換されますか？
+msgctxt "0037"
+msgid ""
+"Would you like to spend Monocoins to\n"
+"unlock this special item?"
+msgstr ""
+
+#. 必要モノクマメダル
+msgctxt "0038"
+msgid "Monocoins needed:"
+msgstr ""
+
+#. 枚
+msgctxt "0039"
+msgid "coin(s)"
+msgstr ""
+
+#. モノクマメダルが不足しております。
+msgctxt "0040"
+msgid "You do not have enough Monocoins."
+msgstr ""
+
+#. 必要モノクマメダル
+msgctxt "0041"
+msgid "Monocoins needed:"
+msgstr ""
+
+#. 枚
+msgctxt "0042"
+msgid "coin(s)"
+msgstr ""
+
+#. 変更された内容を
+#. セーブデータに保存されますか？
+msgctxt "0043"
+msgid "Would you like to save your changes?"
+msgstr ""
+
+#. 記録メディアにインストールデータが既に存在します。
+#. インストールデータを削除して、再インストールしますか？
+msgctxt "0044"
+msgid ""
+"Install data already exists on inserted\n"
+"media. Would you like to delete install\n"
+"data and reinstall?"
+msgstr ""
+
+#. ※
+msgctxt "0045"
+msgid "※"
+msgstr "※"
+
+#. スクールモード
+msgctxt "0046"
+msgid "School Mode"
+msgstr ""
+
+#. ※
+msgctxt "0047"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0048"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0049"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0050"
+msgid "※"
+msgstr "※"
+
+#. 前回保存した状態から、ゲームを再開致します。
+msgctxt "0051"
+msgid "The game will resume from where you last saved."
+msgstr ""
+
+#. 一度クリアしたチャプターを再度プレイする事ができます。
+msgctxt "0052"
+msgid ""
+"Once you clear a chapter, you can play through\n"
+"it again at any time."
+msgstr ""
+
+#. もしもの世界で繰り広げられる
+#. シミュレーション風のモードでございます。
+msgctxt "0053"
+msgid "This is a \"what-if\" simulation type play mode."
+msgstr ""
+
+#. 様々な特典を閲覧頂けます。
+#. 特典内容はゲームを進めて頂くと、充実していきます。
+msgctxt "0054"
+msgid ""
+"Here you can check out all kinds of special bonuses.\n"
+"The farther you get in the game, the more you'll unlock!"
+msgstr ""
+
+#. あなた様にあった快適な環境を設定致します。
+msgctxt "0055"
+msgid "Adjust your environment for maximum comfort."
+msgstr ""
+
+#. まだ解放されておりません。
+msgctxt "0056"
+msgid "This hasn't been unlocked yet."
+msgstr ""
+
+#. イベントシーンをご覧頂けます。
+msgctxt "0057"
+msgid "Savor a heaping handful of cutscene images."
+msgstr ""
+
+#. ムービーをご覧頂けます。
+msgctxt "0058"
+msgid "Feast your eyes on an array of movie clips."
+msgstr ""
+
+#. アートワークをご覧頂けます。
+msgctxt "0059"
+msgid "Consume a multitude of bonus artwork."
+msgstr ""
+
+#. サウンドをご視聴頂けます。
+msgctxt "0060"
+msgid "Revel in a cacophony of music excerpts."
+msgstr ""
+
+#. モノモノマシーンで景品を獲得することができます。
+msgctxt "0061"
+msgid "Try your hand at the almighty MonoMono Machine!"
+msgstr ""
+
+#. 効果音の音量を変更させて頂きます。
+msgctxt "0062"
+msgid "Adjust the volume for sound effects."
+msgstr ""
+
+#. 声の音量を変更させて頂きます。
+msgctxt "0063"
+msgid "Adjust the volume for spoken voices."
+msgstr ""
+
+#. オプション設定を初期状態にさせて頂きます。
+msgctxt "0064"
+msgid "Return all options to their default settings."
+msgstr ""
+
+#. 変更された内容を
+#. セーブデータに保存しますか？
+msgctxt "0065"
+msgid "Would you like to save your changes?"
+msgstr ""

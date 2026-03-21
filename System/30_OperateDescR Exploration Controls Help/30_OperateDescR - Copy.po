@@ -1,0 +1,662 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 照準の移動%HLP_LEFT_STICK_MOVE_AIM%
+msgctxt "0001"
+msgid "Aim%HLP_LEFT_STICK_MOVE_AIM%"
+msgstr ""
+
+#. レティクル移動%HLP_INVESTIGATE_AIM%
+msgctxt "0002"
+msgid "Move Reticle%HLP_INVESTIGATE_AIM%"
+msgstr ""
+
+#. 話す、調べる%HLP_INTERACT%
+msgctxt "0003"
+msgid "Talk / Examine%HLP_INTERACT%"
+msgstr ""
+
+#. 走る%HLP_RUN%
+msgctxt "0004"
+msgid "Run%HLP_RUN%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0005"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. マップ表示のＯＮ／ＯＦＦ%HLP_MAP%
+msgctxt "0006"
+msgid "Map ON/OFF%HLP_MAP%"
+msgstr ""
+
+#. 左平行移動%HLP_MOVE_LEFT%
+msgctxt "0007"
+msgid "Move Left%HLP_MOVE_LEFT%"
+msgstr ""
+
+#. 右平行移動%HLP_MOVE_RIGHT%
+msgctxt "0008"
+msgid "Move Right%HLP_MOVE_RIGHT%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0009"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0010"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 選択%HLP_SELECT%
+msgctxt "0011"
+msgid "Select%HLP_SELECT%"
+msgstr ""
+
+#. 選択%HLP_SELECT_2%
+msgctxt "0012"
+msgid "Select%HLP_SELECT_2%"
+msgstr ""
+
+#. 決定、メッセージ送り%HLP_INTERACT%
+msgctxt "0013"
+msgid "Confirm / Advance Text%HLP_INTERACT%"
+msgstr ""
+
+#. キャンセル、メッセージスキップ%HLP_CANCEL_SKIP%
+msgctxt "0014"
+msgid "Cancel / Skip Text%HLP_CANCEL_SKIP%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0015"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. リアクショントーク%HLP_REACT%
+msgctxt "0016"
+msgid "Reaction Mode%HLP_REACT%"
+msgstr ""
+
+#. ウインドウのＯＮ／ＯＦＦ%HLP_HIDE_WINDOW%
+msgctxt "0017"
+msgid "Window ON/OFF%HLP_HIDE_WINDOW%"
+msgstr ""
+
+#. オートモード%HLP_MESS_AUTO%
+msgctxt "0018"
+msgid "Auto Mode%HLP_MESS_AUTO%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0019"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0020"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 選択、スクロール%HLP_MENU_HIGHLIGHT%
+msgctxt "0021"
+msgid "Highlight / Scroll%HLP_MENU_HIGHLIGHT%"
+msgstr ""
+
+#. 選択、スクロール%HLP_MENU_HIGHLIGHT_2%
+msgctxt "0022"
+msgid "Highlight / Scroll%HLP_MENU_HIGHLIGHT_2%"
+msgstr ""
+
+#. 決定%HLP_MENU_ACCEPT%
+msgctxt "0023"
+msgid "Confirm%HLP_MENU_ACCEPT%"
+msgstr ""
+
+#. キャンセル%HLP_MENU_BACK%
+msgctxt "0024"
+msgid "Cancel%HLP_MENU_BACK%"
+msgstr ""
+
+#. 手帳メニューを閉じる%HLP_SHOW_PAUSE%
+msgctxt "0025"
+msgid "Close Handbook Menu%HLP_SHOW_PAUSE%"
+msgstr ""
+
+#. ―
+msgctxt "0026"
+msgid "―"
+msgstr "―"
+
+#. ページ切り替え%HLP_INTERACT%
+msgctxt "0027"
+msgid "Advance%HLP_INTERACT%"
+msgstr ""
+
+#. ページ切り替え%HLP_INTERACT_2%
+msgctxt "0028"
+msgid "Advance%HLP_INTERACT_2%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0029"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0030"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 選択、スクロール%HLP_MENU_HIGHLIGHT%
+msgctxt "0031"
+msgid "Highlight / Scroll%HLP_MENU_HIGHLIGHT%"
+msgstr ""
+
+#. 選択、スクロール%HLP_MENU_HIGHLIGHT_2%
+msgctxt "0032"
+msgid "Highlight / Scroll%HLP_MENU_HIGHLIGHT_2%"
+msgstr ""
+
+#. 決定、スキルの装備%HLP_MENU_ACCEPT%
+msgctxt "0033"
+msgid "Confirm / Equip Skills%HLP_MENU_ACCEPT%"
+msgstr ""
+
+#. キャンセル%HLP_MENU_BACK%
+msgctxt "0034"
+msgid "Cancel%HLP_MENU_BACK%"
+msgstr ""
+
+#. ―
+msgctxt "0035"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0036"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0037"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0038"
+msgid "―"
+msgstr "―"
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0039"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0040"
+msgid "―"
+msgstr "―"
+
+#. 選択%HLP_SELECT%
+msgctxt "0041"
+msgid "Select%HLP_SELECT%"
+msgstr ""
+
+#. 選択%HLP_SELECT_2%
+msgctxt "0042"
+msgid "Select%HLP_SELECT_2%"
+msgstr ""
+
+#. 決定、メッセージ送り%HLP_INTERACT%
+msgctxt "0043"
+msgid "Confirm / Advance Text%HLP_INTERACT%"
+msgstr ""
+
+#. キャンセル、メッセージスキップ%HLP_CANCEL_SKIP%
+msgctxt "0044"
+msgid "Cancel / Skip Text%HLP_CANCEL_SKIP%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0045"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. ―
+msgctxt "0046"
+msgid "―"
+msgstr "―"
+
+#. ウインドウのＯＮ／ＯＦＦ%HLP_HIDE_WINDOW%
+msgctxt "0047"
+msgid "Window ON/OFF%HLP_HIDE_WINDOW%"
+msgstr ""
+
+#. オートモード%HLP_MESS_AUTO%
+msgctxt "0048"
+msgid "Auto Mode%HLP_MESS_AUTO%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0049"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0050"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 照準移動%HLP_TRIAL_AIM%
+msgctxt "0051"
+msgid "Aim%HLP_TRIAL_AIM%"
+msgstr ""
+
+#. 照準移動%HLP_TRIAL_AIM_2%
+msgctxt "0052"
+msgid "Aim%HLP_TRIAL_AIM_2%"
+msgstr ""
+
+#. サイレンサー%HLP_TRIAL_SHOOT_SILENT%
+msgctxt "0053"
+msgid "Silencer%HLP_TRIAL_SHOOT_SILENT%"
+msgstr ""
+
+#. 議論の早送り%HLP_MESS_FAST_FORWARD%
+msgctxt "0054"
+msgid "Fast-Forward Argument%HLP_MESS_FAST_FORWARD%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0055"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. コトダマの発射(記憶)%HLP_TRIAL_SHOOT%
+msgctxt "0056"
+msgid "Fire Truth Bullet (Flashback)%HLP_TRIAL_SHOOT%"
+msgstr ""
+
+#. コトダマの選択%HLP_TRIAL_KEY_INFORMATION%
+msgctxt "0057"
+msgid "Select Truth Bullet%HLP_TRIAL_KEY_INFORMATION%"
+msgstr ""
+
+#. 精神集中%HLP_TRIAL_CONCENTRATE%
+msgctxt "0058"
+msgid "Concentrate%HLP_TRIAL_CONCENTRATE%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0059"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0060"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0061"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0062"
+msgid "―"
+msgstr "―"
+
+#. ロックオン%HLP_BULLET_TIME_LOCK_ON%
+msgctxt "0063"
+msgid "Lock On%HLP_BULLET_TIME_LOCK_ON%"
+msgstr ""
+
+#. ―
+msgctxt "0064"
+msgid "―"
+msgstr "―"
+
+#. リロード%HLP_BULLET_TIME_RELOAD%
+msgctxt "0065"
+msgid "Reload%HLP_BULLET_TIME_RELOAD%"
+msgstr ""
+
+#. アタック、コトダマの発射%HLP_BULLET_TIME_ATTACK%
+msgctxt "0066"
+msgid "Attack / Fire Truth Bullets%HLP_BULLET_TIME_ATTACK%"
+msgstr ""
+
+#. コトダマの選択%HLP_QUICK_SELECT%
+msgctxt "0067"
+msgid "Select Truth Bullet%HLP_QUICK_SELECT%"
+msgstr ""
+
+#. フィーバータイム%HLP_BULLET_TIME_FEVER%
+msgctxt "0068"
+msgid "Activate Fever Time%HLP_BULLET_TIME_FEVER%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0069"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0070"
+msgid "―"
+msgstr "―"
+
+#. 照準移動%HLP_TRIAL_AIM%
+msgctxt "0071"
+msgid "Aim%HLP_TRIAL_AIM%"
+msgstr ""
+
+#. 照準移動%HLP_TRIAL_AIM_2%
+msgctxt "0072"
+msgid "Aim%HLP_TRIAL_AIM_2%"
+msgstr ""
+
+#. 文字を撃ち落とす%HLP_HANGMAN_SHOOT%
+msgctxt "0073"
+msgid "Shoot Letter%HLP_HANGMAN_SHOOT%"
+msgstr ""
+
+#. 文字の早送り%HLP_TRIAL_SPEED_UP%
+msgctxt "0074"
+msgid "Increase speed%HLP_TRIAL_SPEED_UP%"
+msgstr ""
+
+#. ―
+msgctxt "0075"
+msgid "―"
+msgstr "―"
+
+#. 文字を撃ち落とす%HLP_HANGMAN_SHOOT_2%
+msgctxt "0076"
+msgid "Shoot Letter%HLP_HANGMAN_SHOOT_2%"
+msgstr ""
+
+#. ―
+msgctxt "0077"
+msgid "―"
+msgstr "―"
+
+#. 精神集中%HLP_TRIAL_CONCENTRATE%
+msgctxt "0078"
+msgid "Concentrate%HLP_TRIAL_CONCENTRATE%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0079"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0080"
+msgid "―"
+msgstr "―"
+
+#. 照準移動%HLP_RECONSTRUCT_MOVE%
+msgctxt "0081"
+msgid "Aim%HLP_RECONSTRUCT_MOVE%"
+msgstr ""
+
+#. マンガのページを送る%HLP_RECONSTRUCT_MOVE_COMIC%
+msgctxt "0082"
+msgid "Navigate comic%HLP_RECONSTRUCT_MOVE_COMIC%"
+msgstr ""
+
+#. 推理コマをつかむ、置く%HLP_RECONSTRUCT_PICK_UP%
+msgctxt "0083"
+msgid "Pick up or put down Truth Panel%HLP_RECONSTRUCT_PICK_UP%"
+msgstr ""
+
+#. ―
+msgctxt "0084"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0085"
+msgid "―"
+msgstr "―"
+
+#. 再現開始%HLP_RECONSTRUCT_BEGIN%
+msgctxt "0086"
+msgid "Re-enact%HLP_RECONSTRUCT_BEGIN%"
+msgstr ""
+
+#. 推理コマの選択%HLP_RECONSTRUCT_TAB_PANELS%
+msgctxt "0087"
+msgid "Select Truth Panel%HLP_RECONSTRUCT_TAB_PANELS%"
+msgstr ""
+
+#. 推理コマの選択%HLP_RECONSTRUCT_TAB_PANELS_2%
+msgctxt "0088"
+msgid "Select Truth Panel%HLP_RECONSTRUCT_TAB_PANELS_2%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0089"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0090"
+msgid "―"
+msgstr "―"
+
+#. メダル投入・戻す%HLP_MONOMONO_ADD_REMOVE_COINS%
+msgctxt "0091"
+msgid "Insert/Retrieve Coins%HLP_MONOMONO_ADD_REMOVE_COINS%"
+msgstr ""
+
+#. メダル投入・戻す%HLP_MONOMONO_ADD_REMOVE_COINS_2%
+msgctxt "0092"
+msgid "Insert/Retrieve Coins%HLP_MONOMONO_ADD_REMOVE_COINS_2%"
+msgstr ""
+
+#. レバーを回す%HLP_MONOMONO_TURN_KNOB%
+msgctxt "0093"
+msgid "Turn Dial%HLP_MONOMONO_TURN_KNOB%"
+msgstr ""
+
+#. やめる%HLP_EXIT_RETURN%
+msgctxt "0094"
+msgid "Quit%HLP_EXIT_RETURN%"
+msgstr ""
+
+#. プレゼントメニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0095"
+msgid "Open Gifts Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. 長押しでメダル１０枚単位の操作%HLP_MONOMONO_ADD_COINS_FASTER%
+msgctxt "0096"
+msgid "Hold: Add multiples of 10%HLP_MONOMONO_ADD_COINS_FASTER%"
+msgstr ""
+
+#. ―
+msgctxt "0097"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0098"
+msgid "―"
+msgstr "―"
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0099"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. ―
+msgctxt "0100"
+msgid "―"
+msgstr "―"
+
+#. 照準移動%HLP_LEFT_STICK_MOVE_AIM%
+msgctxt "0101"
+msgid "Aim%HLP_LEFT_STICK_MOVE_AIM%"
+msgstr ""
+
+#. レティクル移動%HLP_INVESTIGATE_AIM%
+msgctxt "0102"
+msgid "Move Reticle%HLP_INVESTIGATE_AIM%"
+msgstr ""
+
+#. 話す、調べる%HLP_INTERACT%
+msgctxt "0103"
+msgid "Talk / Examine%HLP_INTERACT%"
+msgstr ""
+
+#. 部屋から出る、元のマップに戻る%HLP_EXIT_RETURN%
+msgctxt "0104"
+msgid "Exit Room / Return%HLP_EXIT_RETURN%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0105"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. 観察%HLP_OBSERVING_EYE%
+msgctxt "0106"
+msgid "Observe%HLP_OBSERVING_EYE%"
+msgstr ""
+
+#. 視点の左回転%HLP_VIEW_LEFT%
+msgctxt "0107"
+msgid "Change View Left%HLP_VIEW_LEFT%"
+msgstr ""
+
+#. 視点の右回転%HLP_VIEW_RIGHT%
+msgctxt "0108"
+msgid "Change View Right%HLP_VIEW_RIGHT%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0109"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0110"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 移動、照準の移動%HLP_LEFT_STICK_MOVE_AIM%
+msgctxt "0111"
+msgid "Aim%HLP_LEFT_STICK_MOVE_AIM%"
+msgstr ""
+
+#. レティクル移動%HLP_INVESTIGATE_AIM%
+msgctxt "0112"
+msgid "Move Reticle%HLP_INVESTIGATE_AIM%"
+msgstr ""
+
+#. 話す、調べる%HLP_INTERACT%
+msgctxt "0113"
+msgid "Talk / Examine%HLP_INTERACT%"
+msgstr ""
+
+#. 走る%HLP_RUN%
+msgctxt "0114"
+msgid "Run%HLP_RUN%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0115"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. クイック移動切り替え%HLP_QUICK_MOVE%
+msgctxt "0116"
+msgid "Quick Move%HLP_QUICK_MOVE%"
+msgstr ""
+
+#. 左平行移動%HLP_MOVE_LEFT%
+msgctxt "0117"
+msgid "Move Left%HLP_MOVE_LEFT%"
+msgstr ""
+
+#. 右平行移動%HLP_MOVE_RIGHT%
+msgctxt "0118"
+msgid "Move Right%HLP_MOVE_RIGHT%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0119"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0120"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""
+
+#. 選択%HLP_SELECT%
+msgctxt "0121"
+msgid "Select%HLP_SELECT%"
+msgstr ""
+
+#. 選択%HLP_SELECT_2%
+msgctxt "0122"
+msgid "Select%HLP_SELECT_2%"
+msgstr ""
+
+#. 決定、メッセージ送り%HLP_INTERACT%
+msgctxt "0123"
+msgid "Confirm / Advance Text%HLP_INTERACT%"
+msgstr ""
+
+#. キャンセル、メッセージスキップ%HLP_CANCEL_SKIP%
+msgctxt "0124"
+msgid "Cancel / Skip Text%HLP_CANCEL_SKIP%"
+msgstr ""
+
+#. 手帳メニューを開く%HLP_SHOW_HANDBOOK%
+msgctxt "0125"
+msgid "Open Handbook Menu%HLP_SHOW_HANDBOOK%"
+msgstr ""
+
+#. ―
+msgctxt "0126"
+msgid "―"
+msgstr "―"
+
+#. ウインドウのＯＮ／ＯＦＦ%HLP_HIDE_WINDOW%
+msgctxt "0127"
+msgid "Window ON/OFF%HLP_HIDE_WINDOW%"
+msgstr ""
+
+#. オートモード%HLP_MESS_AUTO%
+msgctxt "0128"
+msgid "Auto Mode%HLP_MESS_AUTO%"
+msgstr ""
+
+#. 操作説明を開く%HLP_SHOW_HELP%
+msgctxt "0129"
+msgid "Open Help%HLP_SHOW_HELP%"
+msgstr ""
+
+#. バックログを開く%HLP_SHOW_TRANSCRIPT%
+msgctxt "0130"
+msgid "Open Transcript%HLP_SHOW_TRANSCRIPT%"
+msgstr ""

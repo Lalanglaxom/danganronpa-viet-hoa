@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. ふぅ…穏やかないい天気…
+msgctxt "0001 | GENOCIDER SHOU"
+msgid "So, how about this weather?"
+msgstr "Phù... Thời tiết hôm nay thật là ôn hòa và dễ chịu..."
+
+#. …って、天気なんかわからねーし！
+#. ゲラゲラゲラゲラ！！
+msgctxt "0002 | TOUKO FUKAWA"
+msgid "Hah! Gotcha! We have no idea what the weather IS!"
+msgstr ""
+"...Đùa tí thôi chứ tao có biết cái thời tiết quái nào đâu! Ké hé \n"
+"hé hé hé!!"
+
+#. 一緒に過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time with Genocide Jack"
+msgstr "Dành thời gian với Jack Đồ Tể"
+
+#. 他の場所へ行く
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. ジェノサイダーと一緒に過ごしても…大丈夫かな？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Is it really a good idea to hang out with\n"
+"Genocide Jack...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Nên làm gì đây? Liệu dành thời gian với Jack Đồ Tể\n"
+"có ổn không trời...?\n"
+"<CLT>"
+
+#. あらん？　こんな殺人鬼で良ければ、
+#. ヒマ潰しに付き合ってあげるわよん.
+msgctxt "0006 | TOUKO FUKAWA"
+msgid ""
+"Huh? Hey, if you don't mind hanging out with a serial\n"
+"killer, I don't mind hanging out with a chump!"
+msgstr ""
+"Ối chà? Nếu ngươi không ngại đi cùng một sát nhân như \n"
+"tao, thì tao cũng chẳng ngại mấy thằng ngu như mi đâu."
+
+#. <CLT 4>ジェノサイダーと一緒にヒマを潰した。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Genocide Jack and I, um...killed some time together...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi và Jack Đồ Tể đã cùng nhau... giết thời gian...\n"
+"<CLT>"
+
+#. <CLT 4>ジェノサイダーと少し仲良くなれた…のか？
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Did I just get a little closer to...Genocide Jack?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như tôi và Jack đã trở nên thân thiết \n"
+"hơn một chút... chăng?\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0011 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Genocide Jack a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Jack Đồ Tể không?<CLT>"

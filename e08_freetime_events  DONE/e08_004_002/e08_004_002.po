@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. おい！　苗木！
+#. 何やってんだよ、さっさと出口を探せよな！！
+msgctxt "0001 | LEON KUWATA"
+msgid ""
+"What're you doing, Makoto!? We gotta hurry up and find\n"
+"a way outta here!"
+msgstr ""
+"Này, Makoto! Cậu đang làm cái gì vậy!? Mau mau tìm\n"
+"đường ra khỏi đây đi chứ!"
+
+#. 一緒に過ごす
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Spend some time with Leon"
+msgstr "Dành chút thời gian với Leon"
+
+#. 他の場所へ行く
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai ở quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. 桑田クンと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Leon for a while?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hmm... Mình có nên dành chút thời gian với Leon không?\n"
+"<CLT>"
+
+#. ま、まさか、２人きりになった瞬間に、
+#. オレの事を殺す気じゃねーだろな…
+msgctxt "0005 | LEON KUWATA"
+msgid ""
+"Y-You're not trying to get me alone so you can kill\n"
+"me, are you...?"
+msgstr ""
+"C-Cậu không phải định dụ tui ra chỗ riêng\n"
+"để giết tui đấy chứ...?"
+
+#. そんな事したら、ファンが黙ってねーぞ！
+#. オレはアイドル並みの人気者なんだぞ！
+msgctxt "0006 | LEON KUWATA"
+msgid ""
+"My fans will all go psycho on you if you do! I'm as\n"
+"popular as any international superstar!"
+msgstr ""
+"Nếu làm vậy là fan của tui không để yên đâu!\n"
+"Tui nổi tiếng chẳng khác gì siêu sao quốc tế đó!"
+
+#. いや、違うならいいけど…
+#. むしろ、一緒にいて欲しいけど…
+msgctxt "0007 | LEON KUWATA"
+msgid ""
+"But if you're NOT gonna murder me, then let's hang\n"
+"out. I don't really wanna be alone, anyway..."
+msgstr ""
+"Mà... nếu cậu không định giết tui thì thôi... Ở cùng tui một \n"
+"lúc đi. Nói thật là tui cũng không muốn ở một mình..."
+
+#. <CLT 4>桑田クンと一緒に過ごした…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Leon...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian với Leon...\n"
+"<CLT>"
+
+#. <CLT 4>桑田クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Leon and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay tôi và Leon đã thân thiết hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không, thôi khỏi"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Leon a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng Leon một <CLT> <CLT 3>món quà<CLT><CLT 23> không?<CLT>"

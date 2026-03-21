@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 俺はようやく確信に至ったべ。
+#. この件には“ある組織”が絡んでいるんだ…
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid ""
+"A certain organization is behind all of this, I'm\n"
+"finally sure of it...!"
+msgstr ""
+"Cuối cùng tui cũng có thể khẳng định rồi. Có “một tổ chức \n"
+"nọ” đang đứng sau tất cả chuyện này...!"
+
+#. だが、その組織の名前だけは言えん。
+#. 口にしたら最後、消されてしまうからだ…
+msgctxt "0002 | YASUHIRO HAGAKURE"
+msgid ""
+"But I can't say their name, cuz as soon as you do,\n"
+"they come and...get rid of you."
+msgstr "Nhưng tui hổng thể nói tên cái tổ chức đó ra được. Vì chỉ cần thốt ra thôi là coi như xong đời, bị khử ngay tắp lự..."
+
+#. ジョンレノンもカートコバーンも、
+#. みんなその組織に消されたんだ。
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid ""
+"Kurt Cobain said their name. John Lennon said their\n"
+"name!"
+msgstr ""
+"Cả John Lennon lẫn Kurt Cobain, tất cả đều đã bị tổ chức đó \n"
+"trừ khử đấy!"
+
+#. ヤバいヤバいヤバいって…
+#. 本格的にヤバいべ…
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgid "They're bad...so bad...really really bad!"
+msgstr "Tiêu rồi tiêu rồi tiêu rồi... Lần này là tiêu thiệt rồi đó!"
+
+#. 一緒に過ごす
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Spend some time with Hiro"
+msgstr "Dành thời gian với Hiro"
+
+#. 他の場所へ行く
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. こんな葉隠クンと一緒に過ごせるか？
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I spend time with Hiro while he's in\n"
+"this kind of mood?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Nên làm gì đây? Liệu mình có nên ở cạnh một Hiro \n"
+"đang như thế này không nhỉ?\n"
+"<CLT>"
+
+#. だったら、男２人で熱く語り合うべ。
+#. 宇宙発生論についてな。
+msgctxt "0008 | YASUHIRO HAGAKURE"
+msgid ""
+"Well then, why don't we have a heated discussion about\n"
+"cosmogony!"
+msgstr ""
+"Vậy thì, hai thằng đàn ông tụi mình cùng đàm đạo một trận \n"
+"ra trò đi. Về thuyết khởi nguyên vũ trụ nhé!"
+
+#. <CLT 4>宇宙発生論について、
+#. 葉隠クンの一方的な見解を述べられた。
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I learned all about Hiro's theories on the origin of\n"
+"the universe...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã bị bắt nghe Hiro thuyết giảng về những quan \n"
+"điểm phiến diện của cậu ấy về thuyết khởi nguyên vũ trụ...\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay mình và Hiro đã thân nhau hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0012 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0013 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Hiro không?<CLT>"

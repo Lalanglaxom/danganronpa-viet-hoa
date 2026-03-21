@@ -1,0 +1,104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. おやおや、苗木誠殿ではないですか。
+#. 貴殿は僕に何か用ですかな？
+msgctxt "0001 | HIFUMI YAMADA"
+msgid "Well, if it isn't Mr. Naegi! How can I help you?"
+msgstr ""
+
+#. 一緒に過ごす
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Spend some time with Hifumi"
+msgstr ""
+
+#. 他の場所へ行く
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr ""
+
+#. <CLT 4>どうしよう？
+#. 山田クンと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Hifumi for a while?\n"
+"<CLT>"
+msgstr ""
+
+#. ほぅ、僕と一緒に過ごしたいとは…
+msgctxt "0005 | HIFUMI YAMADA"
+msgid "So you want to be around me, eh?"
+msgstr ""
+
+#. 苗木誠殿は知っているようですな。
+#. 僕が能力者だという事を…
+msgctxt "0006 | HIFUMI YAMADA"
+msgid ""
+"That means you must have realized that I have\n"
+"certain...powers."
+msgstr ""
+
+#. そう、能力者なのですよ。
+#. 相手の能力を無効化する能力のね。
+msgctxt "0007 | HIFUMI YAMADA"
+msgid ""
+"Yes, that's right! My greatest power is my ability to\n"
+"negate the powers of others!"
+msgstr ""
+
+#. まだ実戦で使った事はないですが、
+#. どんな能力者が現れても怖くないですぞ。
+msgctxt "0008 | HIFUMI YAMADA"
+msgid ""
+"I've never actually used it in a fight yet, but I'm\n"
+"not worried. Cuz whatever abilities they have..."
+msgstr ""
+
+#. 僕の無効化の能力にかかればね…
+#. ふっふっふ…
+msgctxt "0009 | HIFUMI YAMADA"
+msgid "...all I need is my power of negation!"
+msgstr ""
+
+#. <CLT 4>山田クンの妄想話を延々と聞かせられた。
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hifumi cornered me and made me take part in his\n"
+"delusion...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>山田クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hifumi and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+
+#. 渡す
+msgctxt "0012 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr ""
+
+#. 渡さない
+msgctxt "0013 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr ""
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0014 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hifumi a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr ""

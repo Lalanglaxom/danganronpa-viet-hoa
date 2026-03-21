@@ -1,0 +1,289 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give her that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+"<CLT 23>Xin lỗi, nhưng bạn không thể tặng món quà đó. Trong\n"
+"ngành này, chúng tôi gọi đó là <CLT> <CLT 3>vật phẩm chìa khóa<CLT><CLT 23>.<CLT>"
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give her?\n"
+"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cô ấy món quà gì?<CLT>"
+
+#. あんたなんかから…こんな物を貰ったところで…
+msgctxt "0003 | TOUKO FUKAWA"
+msgid "Y-You're giving this to me...?"
+msgstr "C-Cậu... tặng thứ này cho tôi sao...?"
+
+#. べ、別に嬉しくないわよ…
+#. 迷惑なだけよ…
+msgctxt "0004 | TOUKO FUKAWA"
+msgid ""
+"Don't think it makes me h-happy or whatever. It's more\n"
+"a-annoying than anything..."
+msgstr ""
+"Đ-Đừng có tưởng làm thế thì tôi sẽ thấy v-vui sướng gì nhé. \n"
+"Chỉ thấy phiền phức thôi..."
+
+#. な、何よ…また同情…？
+msgctxt "0005 | TOUKO FUKAWA"
+msgid "What is this, m-more pity?"
+msgstr "G-Gì đây... lại là sự thương hại à...?"
+
+#. そ, そんな…同情だけで…
+#. 人に物をあげるなんて…
+msgctxt "0006 | TOUKO FUKAWA"
+msgid ""
+"Do you always give people p-presents when you pity\n"
+"them?"
+msgstr ""
+"C-Chỉ vì thương hại mà... cậu sẵn sàng tặng quà cho người \n"
+"khác sao...?"
+
+#. …あんた、バカが付くほどお人好しね。
+msgctxt "0007 | TOUKO FUKAWA"
+msgid "You really a-are a total sucker..."
+msgstr "...Cậu đúng là đồ n-ngốc tốt bụng thái quá mà."
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean she liked it...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Như vậy nghĩa là cậu ấy có thích nó nhỉ...?\n"
+"<CLT>"
+
+#. ………………
+msgctxt "0009 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. も, 貰っていいなら…貰うけど…
+msgctxt "0010 | TOUKO FUKAWA"
+msgid ""
+"If it's r-really okay for me to have it, I'll t-take\n"
+"it..."
+msgstr "N-Nếu đã bảo là cho... thì tôi sẽ n-nhận..."
+
+#. …もう返さないわよ！
+msgctxt "0011 | TOUKO FUKAWA"
+msgid "But I'm not gonna g-give it back!"
+msgstr "...Tôi không có t-trả lại đâu đấy!"
+
+#. あ, あんた…
+#. まさか, あたしの事が…！
+msgctxt "0012 | TOUKO FUKAWA"
+msgid "You don't really...! D-Do you...?"
+msgstr "C-Cậu... không lẽ nào cậu lại...!?"
+
+#. ち, 違う…そうやって騙して…
+#. あたしを笑いものにしようと…してるんでしょ…？
+msgctxt "0013 | TOUKO FUKAWA"
+msgid ""
+"N-No, you're just trying to trick me! Trying to m-make\n"
+"me the butt of your joke..."
+msgstr ""
+"Kh-Không, chắc chắn là cậu đang lừa tôi... định biến tôi thành \n"
+"t-trò cười cho cậu chứ gì...?"
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ。
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that she liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>May quá. Có vẻ như cậu ấy thích nó.\n"
+"<CLT>"
+
+#. あ, あたしは…あんたを許さないから…
+msgctxt "0015 | TOUKO FUKAWA"
+msgid "I c-can't forgive this..."
+msgstr "T-Tôi... sẽ không bao giờ tha thứ cho cậu đâu..."
+
+#. あたしに, こんなに優しくして…
+#. ぜ, 絶対に…許さないから…！
+msgctxt "0016 | TOUKO FUKAWA"
+msgid "I'll never forgive you f-for being this nice to me...!"
+msgstr ""
+"Dám đối xử t-tốt với tôi đến mức này... Nh-Nhất định... tôi sẽ \n"
+"không tha thứ đâu...!"
+
+#. 悪いけど, あたしには…
+#. 白夜様という婚約者がいるの…
+msgctxt "0017 | TOUKO FUKAWA"
+msgid "Sorry, but I'm already e-engaged to Master."
+msgstr "Tiếc cho cậu, nhưng tôi... đã có hôn phu là Ngài Byakuya rồi..."
+
+#. だ, だから…あんたとは付き合えないわ…
+msgctxt "0018 | TOUKO FUKAWA"
+msgid "So I can't g-go on a date with you..."
+msgstr "N-Nên là... tôi không thể hẹn hò với cậu được đâu..."
+
+#. それでもいいなら…
+#. あたしの事を想っててもいいわよ…
+msgctxt "0019 | TOUKO FUKAWA"
+msgid ""
+"If you're okay with th-that, I don't mind if\n"
+"you...think about m-me."
+msgstr ""
+"Nếu cậu vẫn chấp nhận chuyện đ-đó... thì cứ việc t-tơ tưởng \n"
+"về tôi cũng được."
+
+#. <CLT 4>ここまで喜んでもらえると,
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Toko so pleased with something I gave her makes\n"
+"me happy!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thấy Toko vui đến thế, người tặng như tôi cũng thấy \n"
+"hạnh phúc lây!\n"
+"<CLT>"
+
+#. ど, どういう事…？
+#. これを捨てておけって言うの…？
+msgctxt "0021 | TOUKO FUKAWA"
+msgid ""
+"Why are you g-giving me this? You want me to throw it\n"
+"a-away for you?"
+msgstr ""
+"Th-Thế này là ý gì...? Cậu định bảo tôi đi vứt cái đống r-rác \n"
+"này hộ cậu à...?"
+
+#. ゴミ捨てくらいは自分でしなさいよ！
+#. あ, あたしに雑用させないでよ…！！
+msgctxt "0022 | TOUKO FUKAWA"
+msgid ""
+"Th-Throw away your own trash! I'm not your trash\n"
+"b-bitch!"
+msgstr ""
+"Vứt rác thì t-tự đi mà làm lấy chứ! Đừng có b-bắt tôi làm mấy \n"
+"việc vặt vãnh đó...!"
+
+#. クラスメイトから貰う…カミソリ入りの手紙くらい…
+#. 不要な物だわ…
+msgctxt "0023 | TOUKO FUKAWA"
+msgid ""
+"Why don't you just g-give me a letter filled with\n"
+"razor blades wh-while you're at it...!"
+msgstr ""
+"Thứ này... chẳng khác gì đống thư nặc danh k-kèm lưỡi dao \n"
+"lam mà bọn bạn cùng lớp hay gửi cho tôi cả... vô dụng!"
+
+#. あ, ありがた迷惑よ…
+msgctxt "0024 | TOUKO FUKAWA"
+msgid "Totally unwelcome..."
+msgstr "Phiền p-phức quá đi..."
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think she was too happy with that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chết rồi... Hình như mình làm cậu ấy bực rồi...\n"
+"<CLT>"
+
+#. あ, あたしには…
+#. こんなゴミがお似合いって…？
+msgctxt "0026 | TOUKO FUKAWA"
+msgid ""
+"Are you saying I-I'm on the same level as th-this\n"
+"garbage?"
+msgstr "C-Cậu định bảo... loại rác rưởi này r-rất hợp với tôi sao...?"
+
+#. バ, バカにしないでよぉぉぉおおッ！！
+msgctxt "0027 | TOUKO FUKAWA"
+msgid "Stop mocking meeee!"
+msgstr "Đ-Đừng có mà x-xúc phạm tôi như thế chứ!!"
+
+#. だ, 男子からのプレゼントだと思って…
+#. 期待したあたしが…バkaだったわ…
+msgctxt "0028 | TOUKO FUKAWA"
+msgid ""
+"And here I w-was hoping for a present from a boy who\n"
+"liked me. I was stupid t-to get my hopes up..."
+msgstr ""
+"V-Vậy mà tôi lại cứ tưởng là quà từ c-con trai... tôi đúng là n-\n"
+"ngu ngốc khi lỡ kỳ vọng..."
+
+#. い, いつもそう…
+#. 期待しても…裏切られるだけ…
+msgctxt "0029 | TOUKO FUKAWA"
+msgid ""
+"That's how it always is. I build e-expectations, and I\n"
+"always end up b-betrayed..."
+msgstr ""
+"L-Lúc nào cũng thế... cứ hễ kỳ vọng... là lại bị \n"
+"ph-phản bội thôi..."
+
+#. だから…もう期待するのはやめようって…
+#. そう心に誓ったはずだったのに…！
+msgctxt "0030 | TOUKO FUKAWA"
+msgid ""
+"I'd promised myself I-I'd stop having hope in\n"
+"anything. Why'd I go back on th-that...!?"
+msgstr ""
+"Rõ ràng... tôi đã tự thề với l-lòng mình là không được kỳ vọng \n"
+"gì nữa mà... Tại sao chứ...!?"
+
+#. <CLT 4>怒らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I made her mad. She probably thinks worse of\n"
+"me now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hình như mình làm cậu ấy giận rồi... \n"
+"Ấn tượng xấu đi mất rồi...\n"
+"<CLT>"
+
+#. やっぱり渡す
+msgctxt "0032 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr "Chắc là không..."
+
+#. 渡さない
+msgctxt "0033 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr "Có, chắc chắn"
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0034 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give her something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn chắc là không muốn tặng cậu ấy món gì chứ?\n"
+"<CLT>"

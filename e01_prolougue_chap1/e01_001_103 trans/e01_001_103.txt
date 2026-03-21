@@ -1,0 +1,424 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. うっ…うぅ……
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Ng...gah..."
+msgstr ""
+
+#. …あ…れ？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. こ…ここは…？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Wh-Where am I?"
+msgstr ""
+
+#. <CLT 4>当たり前のように、
+#. 見覚えのない部屋だった…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As if it had become part of my daily routine, I woke\n"
+"up in yet another room I'd never seen before.\n"
+"<CLT>"
+msgstr ""
+
+#. と、とりあえず…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Okay, so..."
+msgstr ""
+
+#. …ここは、どこなんだ？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Where am I now?"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>手帳メニュー<CLT><CLT 23>を使えるようになります。
+#. ゲーム中のさまざまな情報をご確認頂けます。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>You now have access to the <CLT><CLT 3>Handbook Menu<CLT><CLT 23>. You can\n"
+"use this to check a variety of information as you play.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>%CTRL_SHOW_HANDBOOK%<CLT><CLT 23>で、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>を開く事が
+#. 可能でございます。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Open the <CLT><CLT 3>Handbook Menu<CLT><CLT 23> by pressing the <CLT><CLT 3>%CTRL_SHOW_HANDBOOK%<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>手帳メニューでは<CLT><CLT 3>“校則”<CLT><CLT 23>や、皆様のプロフィールを
+#. 記録した<CLT><CLT 3>“通信簿”<CLT><CLT 23>などがご確認頂けます。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>You can use this menu to check the <CLT><CLT 3>School\n"
+"Regulations<CLT><CLT 23>, and character info in the <CLT><CLT 3>Report Card<CLT><CLT 23> section.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>“マップ”<CLT><CLT 23>や<CLT><CLT 3>“言弾（コトダマ）”<CLT><CLT 23>などの、特定の項目は、
+#. 場合によってお使い頂けない事もございます。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>At certain points, <CLT><CLT 3>Map<CLT><CLT 23> and <CLT><CLT 3>Truth Bullets<CLT><CLT 23> may not\n"
+"be available.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ゲームの中断セーブやロードも、手帳メニューで
+#. ご利用頂けます。<CLT><CLT 3>“システム”<CLT><CLT 23>の項目をご確認ください。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>You can also save and load game data under the\n"
+"<CLT><CLT 3>System<CLT><CLT 23> section.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>また、<CLT><CLT 3>%CTRL_SHOW_TRANSCRIPT%<CLT><CLT 23>で、<CLT><CLT 3>“バックログ”<CLT><CLT 23>を
+#. ご覧頂けます。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>Finally, press the <CLT><CLT 3>%CTRL_SHOW_TRANSCRIPT%<CLT><CLT 23> to review\n"
+"the <CLT><CLT 3>Transcript<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>こちらでは皆様の発言を記録致しておりますので、
+#. 読み返したい場合に、ご利用ください。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>This records all pertinent info, so use this to review\n"
+"comments from everyone involved.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こっちは、部屋から出るドアみたいだけど…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like this door leads outside.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>このドアには鍵が掛かるみたいだ。
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's locked...\n"
+"<CLT>"
+msgstr ""
+
+#. 鍵のある部屋…か…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "So some of the rooms have locks, huh?"
+msgstr ""
+
+#. ここは…シャワールームみたいだな。
+msgctxt "0017 | MAKOTO NAEGI"
+msgid "This would appear to be...the bathroom."
+msgstr ""
+
+#. <CLT 23>「ガタガタガタ！」
+#. <CLT>
+msgctxt "0018 | NARRATION"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+
+#. あれ？　開かないな…
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "Huh? It's not opening."
+msgstr ""
+
+#. 鍵が掛かってる…みたいだ…
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "I guess it's locked."
+msgstr ""
+
+#. <CLT 4>これは…粘着テープクリーナーだな。
+#. 掃除はご自由にって事か…
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's some kind of lint roller. I guess we're supposed\n"
+"to clean up after ourselves...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>引き出しの中に何か入っている…
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It looks like there's something in the drawer...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>これは…工具セットだな。
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's...a toolkit.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ビニールの包装がされてる。
+#. まだ、新品の未開封品みたいだけど…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It must be brand-new. It's still in the shrink-wrap.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>少なくとも、今は使わないし、
+#. 戻しておこう。
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't really need it right now, so I'll just leave\n"
+"it here.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>壁に紙が貼られている。
+#. 書いてある内容は…
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a piece of paper hanging up on the wall, which\n"
+"says...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>モノクマ学園長からのお知らせ…
+#. <CLT>
+msgctxt "0027 | NARRATION"
+msgid ""
+"<CLT 23>\"Announcement from Headmaster Monokuma:\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>部屋の鍵には、ピッキング防止加工が施されています。
+#. <CLT>
+msgctxt "0028 | NARRATION"
+msgid ""
+"<CLT 23>\"Each room's lock has been designed to completely\n"
+"protect against tampering or lock-picking.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>鍵の複製は困難な為、
+#. 紛失しないようにしてください。
+#. <CLT>
+msgctxt "0029 | NARRATION"
+msgid ""
+"<CLT 23>\"Remaking an individual room key is quite troublesome,\n"
+"so please make sure not to lose yours.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>部屋には、シャワールームが完備されていますが、
+#. <CLT><CLT 3>夜時間は水が出ない<CLT><CLT 23>ので注意してください。
+#. <CLT>
+msgctxt "0030 | NARRATION"
+msgid ""
+"<CLT 23>\"Your room comes furnished with a shower, but please\n"
+"note that <CLT><CLT 3>the water is turned off at nighttime<CLT><CLT 23>.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>また、女子の部屋のみ、
+#. シャワールームが施錠出来るようになっています。
+#. <CLT>
+msgctxt "0031 | NARRATION"
+msgid ""
+"<CLT 23>\"Also, the bathrooms in the girls' rooms include a\n"
+"lock of their own.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>最後に、ささやかなプレゼントを用意してあります。
+#. <CLT>
+msgctxt "0032 | NARRATION"
+msgid ""
+"<CLT 23>\"Finally, we've prepared a small gift for each of\n"
+"you.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>女子生徒には女子らしく<CLT><CLT 3>裁縫セット<CLT><CLT 23>を…
+msgctxt "0033 | NARRATION"
+msgid "<CLT 23>\"For the girls, a <CLT><CLT 3>sewing kit<CLT><CLT 23>.\""
+msgstr ""
+
+#. <CLT 23>男子生徒には男子らしく<CLT><CLT 3>工具セット<CLT><CLT 23>を
+#. ご用意しました。
+#. <CLT>
+msgctxt "0034 | NARRATION"
+msgid ""
+"<CLT 23>\"And for the boys, a <CLT><CLT 3>toolkit<CLT><CLT 23>.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>裁縫セットには人体急所マップも付いているので、
+#. 女子のみなさんは、針で一突きするのが効果的です。
+#. <CLT>
+msgctxt "0035 | NARRATION"
+msgid ""
+"<CLT 23>\"The sewing kit includes a map of the body's vital\n"
+"organs. One stab will do the job, girls!\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>男子の工具セットを使用する場合は、
+#. 頭部への殴打が有効的かと思われます。
+#. <CLT>
+msgctxt "0036 | NARRATION"
+msgid ""
+"<CLT 23>\"For the boys, we believe a strong blow to the head\n"
+"with any of the tools should be ample.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ドントシンクだ！　フィールだ！！
+#. レッツエンジョイだ！！
+#. <CLT>
+msgctxt "0037 | NARRATION"
+msgid ""
+"<CLT 23>\"Don't think! Just feel! And let's all enjoy\n"
+"ourselves!\"\n"
+"<CLT>"
+msgstr ""
+
+#. ………………
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>ボクは紙を丸め、ゴミ箱の中に投げ捨てた。
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I crumpled up the sheet of paper and threw it in the\n"
+"trash.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>テレビモニターがある…
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Some kind of monitor...\n"
+"<CLT>"
+msgstr ""
+
+#. はあ……
+msgctxt "0041 | MAKOTO NAEGI"
+msgid "Urgh..."
+msgstr ""
+
+#. <CLT 4>監視カメラ…
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A surveillance camera...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんなカメラで見られていると思うと、
+#. 気分が悪いけど…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I hate the idea that someone might be watching me\n"
+"right now.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>校則によると、監視カメラを壊したらマズイんだよな…
+#. ムカツクけど、放っておくしかない…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>We're not allowed to mess with the cameras, so I'd\n"
+"better make sure I don't touch it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>これは、この部屋の鍵か…？
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This must be the key to the room...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>キーホルダーに、
+#. ボクの名前が書かれているけど…
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>My name's written on the keychain.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクの名前があるって事は、
+#. ボクの物…なんだよな？
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which means it must be mine, right?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>とりあえず…預かっておくか…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'd better hang on to it for now.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ベッド…
+#. 特に変わった所はないみたいだ…
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There doesn't seem to be anything particularly strange\n"
+"about the bed.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>特になんの仕掛けもない…
+#. 普通のゴミ箱みたいだ…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Just an everyday trash can. I don't see any kind of\n"
+"trapdoor or hidden compartments or anything...\n"
+"<CLT>"
+msgstr ""

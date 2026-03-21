@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. わたくしは自分が怖いですわ…
+msgctxt "0001 | CELES"
+msgid "I truly frighten myself."
+msgstr "Tôi thấy sợ hãi chính bản thân mình quá đi..."
+
+#. あなたのような、ちっぽけな人間でさえも、
+#. 虜にしてしまうのですから…
+msgctxt "0002 | CELES"
+msgid ""
+"To captivate even insignificant little creatures\n"
+"like yourself..."
+msgstr ""
+"Bởi vì ngay cả một sinh vật nhỏ bé như cậu, mà cũng bị tôi \n"
+"mê hoặc mất rồi..."
+
+#. <CLT 4>セレスさんと一緒に過ごした…
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Celeste...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian bên cạnh Celeste...\n"
+"<CLT>"
+
+#. あら、わたくしと一緒にいたいと？
+msgctxt "0004 | CELES"
+msgid "Oh, you wish to stay close to me?"
+msgstr "Ôi, cậu muốn được ở bên cạnh tôi sao?"
+
+#. うふふ…仕方ありませんわね…
+msgctxt "0005 | CELES"
+msgid "Heh-heh. I am not surprised."
+msgstr "Ư fư fư... thật là hết cách với cậu mà..."
+
+#. <CLT 4>セレスさんと一緒に過ごした…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Celeste.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian bên cạnh Celeste.\n"
+"<CLT>"
+
+#. 本来であれば、あなたのような方と２人きりなんて、
+#. わたくしのプライドが許さないのですが…
+msgctxt "0007 | CELES"
+msgid ""
+"Normally, my pride would not permit me to allow you to\n"
+"be alone with me."
+msgstr ""
+"Bình thường thì lòng tự trọng của tôi không đời nào cho \n"
+"phép một người như cậu ở riêng với tôi đâu, nhưng mà..."
+
+#. まぁ、いいでしょう。
+#. わたくしのヒマを潰させて差し上げましょう。
+msgctxt "0008 | CELES"
+msgid ""
+"But...fine. I will allow you to entertain me for a\n"
+"while."
+msgstr ""
+"Thôi được rồi. Tôi sẽ cho phép cậu được giúp tôi giết \n"
+"thời gian vậy."
+
+#. <CLT 4>セレスさんのヒマを潰させてもらった。
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I killed some time with Celeste...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã giúp Celeste giết thời gian...\n"
+"<CLT>"
+
+#. いいですわよ。お話でもしましょうか？
+msgctxt "0010 | CELES"
+msgid "Well then, shall we have a bit of conversation?"
+msgstr "Được thôi. Tụi mình trò chuyện một chút nhé?"
+
+#. ですగా、勘違いしないでくださいね。
+#. あなたに人間的魅力は一切感じていませんから。
+msgctxt "0011 | CELES"
+msgid ""
+"Ah, but don't misunderstand. I have no affection for\n"
+"you on a personal level."
+msgstr ""
+"Nhưng mà, đừng có hiểu lầm đó nha. Tôi chẳng hề thấy cậu \n"
+"có chút sức hút cá nhân nào đâu."
+
+#. <CLT 4>セレスさんと一緒に過ごした…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Celeste...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian bên cạnh Celeste...\n"
+"<CLT>"
+
+#. <CLT 4>セレスさんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như hôm nay tôi và Celeste đã trở nên thân \n"
+"thiết hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0016 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Celeste a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Celeste không?<CLT>"

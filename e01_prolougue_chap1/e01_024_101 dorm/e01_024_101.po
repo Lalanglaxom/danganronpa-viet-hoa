@@ -1,0 +1,1391 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. なんか変じゃね？
+msgctxt "0001 | LEON KUWATA"
+msgid "Something doesn't seem right..."
+msgstr "Có gì đó không đúng thì phải..."
+
+#. モノクマファイルによると舞園が殺されたのって、
+#. お前の部屋って事になってんのに…
+msgctxt "0002 | LEON KUWATA"
+msgid "The Monokuma File said Sayaka was killed in your room."
+msgstr ""
+"Theo hồ sơ Monokuma thì Sayaka bị giết trong phòng \n"
+"của cậu..."
+
+#. …どう考えても変だよな。
+#. あの<CLT 3>ネームプレート<CLT>がおかしいんか？
+msgctxt "0003 | LEON KUWATA"
+msgid ""
+"I just can't stop thinking about it. Could it be...the\n"
+"<CLT 3>nameplate<CLT>...?"
+msgstr ""
+"Tui cứ suy nghĩ mãi về chuyện đó. Chẳng lẽ là... cái\n"
+"<CLT 3>biển tên<CLT> đó sao?"
+
+#. 十神クンは、掃除当番について何か知ってる？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "Byakuya, can you tell me anything about cleaning duty?"
+msgstr "Byakuya, cậu có biết gì về việc trực nhật không?"
+
+#. ……知らん。
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid "...No."
+msgstr "...Không biết."
+
+#. 聞くべき相手も判断できんのか。
+#. クズが。
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgid ""
+"You're like a child lost in the woods, you know that?\n"
+"A total waste of space."
+msgstr ""
+"Cậu giống như một đứa trẻ bị lạc trong rừng vậy, biết không?\n"
+"Đúng là đồ vô dụng."
+
+#. どういう事？
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "What do you mean?"
+msgstr "Ý cậu là sao?"
+
+#. そういう事を仕切りたがるのは、
+#. 石丸だろう。
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid ""
+"Taka's the one who has any interest in organizing\n"
+"things like that."
+msgstr ""
+"Kẻ duy nhất hứng thú với việc quản lý mấy thứ\n"
+"như thế là Taka thôi."
+
+#. <CLT 4>あ、そうか…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Oh, good point...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>À, cũng đúng...\n"
+"<CLT>"
+
+#. 舞園さやかは、
+#. どうしてお前の部屋で死んでいたんだ？
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgid "So, why was Sayaka in your room when she was killed?"
+msgstr ""
+"Vậy, tại sao Sayaka lại ở trong phòng của cậu khi cô ta \n"
+"bị sát hại?"
+
+#. お前が犯人だからか？
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "Could it be because...*you* are the culprit?"
+msgstr "Chẳng lẽ là bởi vì... *ngươi* chính là thủ phạm sao?"
+
+#. ち、違うよ…ボクと舞園さんは…
+#. 昨日の夜は部屋を交換してて…
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"N-No, you've got it all wrong. Sayaka and I...switched\n"
+"rooms last night."
+msgstr ""
+"Kh-Không, cậu hiểu lầm rồi. Tớ và Sayaka... đã đổi\n"
+"phòng cho nhau vào tối qua..."
+
+#. ………………
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>あからさまに…疑ってる目付きだな…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He didn't even try to hide the suspicion on his face.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ta thậm chí còn chẳng buồn che giấu sự nghi \n"
+"ngờ trên khuôn mặt mình.\n"
+"<CLT>"
+
+#. 万が一、お前の言葉が本当だとしても…
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgid "Even if what you say is the absolute truth..."
+msgstr "Dù cho những gì ngươi nói có là sự thật đi chăng nữa..."
+
+#. 舞園さやかの死の責任は,
+#. お前にあるんじゃないのか？
+msgctxt "0016 | BYAKUYA TOGAMI"
+msgid ""
+"...you're still responsible for her death, wouldn't\n"
+"you say?"
+msgstr ""
+"...thì ngươi vẫn phải chịu trách nhiệm cho cái chết của cô ta, \n"
+"đúng chứ?"
+
+#. …えっ？
+msgctxt "0017 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr "...Hả?"
+
+#. 舞園さやかは、お前と部屋を交換したせいで殺された。
+#. そうは考えられないか？
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid ""
+"After all, she wouldn't have died if she hadn't\n"
+"switched rooms with you, right?"
+msgstr ""
+"Dù sao thì, cô ta đã không chết nếu như không\n"
+"đổi phòng với ngươi, đúng không?"
+
+#. …ッ！！
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "Gh—!"
+msgstr "Ư—!"
+
+#. <CLT 4>舞園さんが殺されたのは…
+#. 部屋の交換のせい？
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The reason Sayaka was killed...is because I suggested\n"
+"we switch rooms?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lý do Sayaka bị sát hại... là vì tôi đã đề nghị\n"
+"đổi phòng sao?\n"
+"<CLT>"
+
+#. <CLT 4>ボクが部屋を替わってあげたせいで…
+#. 彼女は死んだ？
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She's dead because of me...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cô ấy chết là do tôi sao...?\n"
+"<CLT>"
+
+#. <CLT 4>舞園さんは…ボクの代わりに殺された…？
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Then...it should have been me that died?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vậy thì... lẽ ra người phải chết là tôi sao?\n"
+"<CLT>"
+
+#. まぁ、あくまで可能性の話だがな…
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgid ""
+"Well, all we can say right now is that it's a\n"
+"possibility."
+msgstr "Hừm, đó dù sao cũng chỉ là một khả năng thôi."
+
+#. <CLT 4>そ、そんな…！
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Th-That's—!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Kh-Không thể nào—!\n"
+"<CLT>"
+
+#. <CLT 4>もしそうだとしたら、ボクは…！
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If that's really true, then I...!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu chuyện đó là thật, thì tôi...!\n"
+"<CLT>"
+
+#. あのさ…掃除当番を捜してるんだけど…
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "Umm...I'm looking for whoever's on cleaning duty."
+msgstr "Ờm... tớ đang tìm người trực nhật."
+
+#. 掃除当番…？
+msgctxt "0027 | HIFUMI YAMADA"
+msgid "Cleaning duty?"
+msgstr "Trực nhật sao?"
+
+#. あぁ、それなら僕ですが…
+#. それが何か？
+msgctxt "0028 | HIFUMI YAMADA"
+msgid "As a matter of fact, that's me. Why do you ask?"
+msgstr "À, thực ra người đó chính là tôi đây. Có chuyện gì vậy cậu?"
+
+#. 昨日の朝、モノクマに頼まれたんですよ.
+msgctxt "0029 | HIFUMI YAMADA"
+msgid ""
+"It just so happens Monokuma talked to me yesterday and\n"
+"asked me to take care of it."
+msgstr ""
+"Chẳng qua là hôm qua Monokuma đã nói chuyện với tôi và\n"
+"nhờ tôi đảm nhận việc đó."
+
+#. 掃除当番がいないと、
+#. 学園中がゴミだらけになってしまうとの事でしたので…
+msgctxt "0030 | HIFUMI YAMADA"
+msgid ""
+"Without someone on cleaning duty, the school would be\n"
+"flooded with trash in no time."
+msgstr ""
+"Vì nếu không có ai trực nhật, cả ngôi trường này sẽ\n"
+"ngập trong rác mất..."
+
+#. わたくしめが立候補したのです！
+msgctxt "0031 | HIFUMI YAMADA"
+msgid "So I formally applied for the position!"
+msgstr "Nên tôi đã chính thức ứng tuyển vào vị trí này!"
+
+#. 本当は、今朝から始める予定だったのですが、
+#. あんな事があったせいで実働はまだですがね。
+msgctxt "0032 | HIFUMI YAMADA"
+msgid ""
+"I was gonna start this morning, but after what\n"
+"happened, I haven't had a chance to get started."
+msgstr ""
+"Đáng lẽ tôi đã bắt đầu từ sáng nay, nhưng sau những gì\n"
+"vừa xảy ra, tôi vẫn chưa có cơ hội để bắt tay vào làm."
+
+#. 掃除当番って…
+#. トラッシュールームの鉄格子を開けられるの？
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"And since you're on cleaning duty...you can open the\n"
+"gate in front of the trash room?"
+msgstr ""
+"Vì cậu là người trực nhật... nên cậu có thể mở\n"
+"cánh cổng sắt trước phòng rác chứ?"
+
+#. とーぜんでしょう！
+msgctxt "0034 | HIFUMI YAMADA"
+msgid "Of course!"
+msgstr "Dĩ nhiên rồi!"
+
+#. 掃除当番は、集めたゴミを、
+#. トラッシュルームに廃棄しなければならないのです。
+msgctxt "0035 | HIFUMI YAMADA"
+msgid ""
+"It's my job to gather up all the garbage and toss it\n"
+"in the trash room."
+msgstr ""
+"Nhiệm vụ của người trực nhật là thu gom toàn bộ rác và\n"
+"vứt chúng vào phòng rác mà."
+
+#. トラッシュルームの鉄格子を開ける鍵も
+#. ちゃんと受け取ってますがな！！
+msgctxt "0036 | HIFUMI YAMADA"
+msgid ""
+"And to do that, they gave me the key for the trash\n"
+"room gate!"
+msgstr ""
+"Và để làm được việc đó, họ đã giao cho tôi chiếc chìa khóa\n"
+"của cánh cổng phòng rác rồi!"
+
+#. ちなみに、掃除当番は１週間ごとの交代制らしいので、
+#. その内、苗木誠殿 cũng担当する事があるでしょう。
+msgctxt "0037 | HIFUMI YAMADA"
+msgid ""
+"But we're supposed to rotate once a week, so\n"
+"eventually you'll be in charge."
+msgstr ""
+"Mà nghe nói việc trực nhật sẽ thay phiên mỗi tuần một lần,\n"
+"nên sớm muộn gì cũng tới lượt cậu Naegi thôi."
+
+#. ちょっと待て…
+msgctxt "0038 | BYAKUYA TOGAMI"
+msgid "Wait, hold on..."
+msgstr "Khoan đã, chờ chút..."
+
+#. トラッシュルームに入るには鍵が必要？
+#. その鍵は、掃除当番だけに持たされる？
+msgctxt "0039 | BYAKUYA TOGAMI"
+msgid ""
+"You need a key to get in the trash room? And only the\n"
+"person on cleaning duty has access to the key?"
+msgstr ""
+"Cần chìa khóa mới vào được phòng rác sao? Và chỉ có\n"
+"người trực nhật mới được giữ chìa khóa đó?"
+
+#. なぜ、そんな面倒をする必要がある？
+msgctxt "0040 | BYAKUYA TOGAMI"
+msgid "What's the point of going to all that trouble?"
+msgstr "Tại sao phải làm chuyện phiền phức như vậy làm gì?"
+
+#. トラッシュルームを開放して、
+#. 各々が廃棄出来るようにしたらいいはずだ…
+msgctxt "0041 | BYAKUYA TOGAMI"
+msgid ""
+"Why not just leave the trash room open all the time so\n"
+"we can all throw things out whenever we want?"
+msgstr ""
+"Chẳng phải chỉ cần mở cửa phòng rác suốt để\n"
+"ai cũng có thể tự đi vứt rác bất cứ khi nào họ muốn sao?"
+
+#. 確かに、そっちの方が効率的だよね…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid "That does seem more convenient."
+msgstr "Đúng là như vậy thì có vẻ tiện hơn."
+
+#. ひょっとすると…
+msgctxt "0043 | BYAKUYA TOGAMI"
+msgid "Actually..."
+msgstr "Thực ra thì..."
+
+#. <CLT 23>仲間の誰かを殺したクロは<CLT><CLT 3>“卒業”<CLT><CLT 23>となりますが、
+#. 自分がクロだと他の生徒に知られてはいけません。
+#. <CLT>
+msgctxt "0044 | NARRATION"
+msgid ""
+"<CLT 23>Anyone who kills a fellow student and becomes\n"
+"\"blackened\" will <CLT><CLT 3>graduate<CLT><CLT 23>, unless they are discovered.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bất kỳ ai sát hại bạn học của mình và trở thành\n"
+"\"kẻ thủ ác\"\n"
+"sẽ được <CLT><CLT 3>tốt nghiệp<CLT><CLT 23>, trừ khi họ bị phát hiện.\n"
+"<CLT>"
+
+#. …そういう事か。
+msgctxt "0045 | BYAKUYA TOGAMI"
+msgid "That must be why."
+msgstr "...Hóa ra là vậy."
+
+#. 全員がトラッシュルームに、
+#. 自由に出入りするようになってしまったら…
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgid ""
+"If anyone could go in and out of the trash room\n"
+"whenever they wanted..."
+msgstr ""
+"Nếu bất kỳ ai cũng có thể tự do ra vào phòng rác\n"
+"bất cứ khi nào họ muốn..."
+
+#. 証拠隠滅が簡単になってしまう。
+msgctxt "0047 | BYAKUYA TOGAMI"
+msgid "...then destroying evidence would be easy."
+msgstr "...thì việc tiêu hủy bằng chứng sẽ trở nên quá dễ dàng."
+
+#. つまり、スリルがなくてつまらなくなる…
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgid ""
+"The thrill would disappear, and things would become\n"
+"boring."
+msgstr ""
+"Nói cách khác, sự kịch tính sẽ biến mất, và mọi chuyện sẽ trở \n"
+"nên nhàm chán."
+
+#. つ、つまらないって…！！
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "B-Boring...!?"
+msgstr "Nh-Nhàm chán sao...!?"
+
+#. つーかさぁ、そんな事より…
+msgctxt "0050 | LEON KUWATA"
+msgid "Anyway, more important than that..."
+msgstr "Mà này, quan trọng hơn chuyện đó..."
+
+#. おい、ブーデー！
+#. テメー、なんで掃除当番に立候補しやがった！
+msgctxt "0051 | LEON KUWATA"
+msgid ""
+"Hey fatty! Why'd you want the cleaning duty gig,\n"
+"anyway!?"
+msgstr ""
+"Này tên béo kia! Tại sao mày lại xung phong đi trực nhật\n"
+"hả!?"
+
+#. ぼ、僕は…みなさんの嫌がる仕事を買って出たまでで…
+#. それが何か…？
+msgctxt "0052 | HIFUMI YAMADA"
+msgid ""
+"I-I just decided to volunteer for something I knew no\n"
+"one else would wanna do. What's the big deal!?"
+msgstr ""
+"T-Tôi chỉ quyết định tình nguyện làm một việc mà tôi biết \n"
+"không ai muốn làm thôi. Có gì ghê gớm đâu chứ cậu?"
+
+#. ウソこけっ！！　テメー、さてはアレだろ…
+msgctxt "0053 | LEON KUWATA"
+msgid "Liar! I know why you did it..."
+msgstr "Xạo ke đi!! Tao biết tỏng tại sao mày làm thế rồi..."
+
+#. 女子のゴミでも漁って…なんか色々と…
+#. アレしようって腹じゃ…
+msgctxt "0054 | LEON KUWATA"
+msgid ""
+"You wanna dig through all the girls' trash! Looking\n"
+"for...y'know...and poking around at it!"
+msgstr ""
+"Mày muốn lục lọi đống rác của hội con gái chứ gì! Để tìm...\n"
+"mấy cái đó đó... rồi táy máy lung tung chứ gì!"
+
+#. な、何をおっしゃるウサギさん！
+#. 僕の愛 là ２次元限定ですぞっ！！
+msgctxt "0055 | HIFUMI YAMADA"
+msgid "What are you talking about!? All my love is for 2D!"
+msgstr ""
+"C-Cậu đang nói cái quái gì vậy! Tình yêu của tôi chỉ dành cho \n"
+"2D thôi!"
+
+#. でもよ、よくあんじゃん！
+#. ２次元では飽き足らずに、実際に犯罪を起こす的な…
+msgctxt "0056 | LEON KUWATA"
+msgid ""
+"But there's all kinds of trash diggers like that!\n"
+"Maybe you'll get tired of 2D, and then turn to—"
+msgstr ""
+"Nhưng có đầy rẫy mấy kẻ lục rác kiểu đó mà! Biết đâu\n"
+"mày chán 2D rồi lại chuyển sang—"
+
+#. 僕はァァ、２次元に飽きたりしないィィ！
+msgctxt "0057 | HIFUMI YAMADA"
+msgid "I would NEVER get tired of 2D!"
+msgstr "Tôi KHÔNG BAO GIỜ chán 2D đâuuuuu!"
+
+#. 僕は、２次元と３次元とを比較した上で、
+#. 自らの意思で、あえて２次元を選んでいるのだ！
+msgctxt "0058 | HIFUMI YAMADA"
+msgid ""
+"After spending a significant amount of time comparing\n"
+"2D and 3D, I voluntarily chose 2D!"
+msgstr ""
+"Sau khi dành ra một khoảng thời gian dài để so sánh giữa\n"
+"2D và 3D, tôi đã tự nguyện chọn 2D đấy!"
+
+#. ３次元で存在価値があるものなんて、
+#. ２次元を愛する者だけなのだッ！
+msgctxt "0059 | HIFUMI YAMADA"
+msgid ""
+"The only thing 3D is good for is to shower love and\n"
+"affection on 2D!"
+msgstr ""
+"Thứ duy nhất có giá trị tồn tại ở 3D là những\n"
+"kẻ biết dành trọn tình yêu cho 2D thôi!"
+
+#. …あとフィギュアね！
+msgctxt "0060 | HIFUMI YAMADA"
+msgid "...Oh, and PVC figures!"
+msgstr "...À, và cả mô hình nữa!"
+
+#. よく恥ずかしくねーな…
+msgctxt "0061 | LEON KUWATA"
+msgid ""
+"How are you not totally embarrassed to say stuff like\n"
+"that!?"
+msgstr ""
+"Sao mày có thể nói mấy lời đó mà không thấy nhục tí \n"
+"nào vậy!?"
+
+#. そんなに山田の素行が心配なら、
+#. いい方法があるぞ。
+msgctxt "0062 | BYAKUYA TOGAMI"
+msgid ""
+"If you're so worried about Hifumi's questionable\n"
+"morality, there's a very easy solution."
+msgstr ""
+"Nếu lo lắng về đạo đức đáng nghi của Hifumi như \n"
+"vậy, thì có một giải pháp rất đơn giản đấy."
+
+#. 男子が掃除当番の時は、ゴミの収集から廃棄まで、
+#. 大神さくらに付き添ってもらえばいいんだ…
+msgctxt "0063 | BYAKUYA TOGAMI"
+msgid ""
+"Whenever a guy has cleaning duty, Sakura can accompany\n"
+"them, from picking up the trash to disposing of it."
+msgstr ""
+"Mỗi khi có học sinh nam trực nhật, cứ để Sakura đi cùng\n"
+"họ, từ lúc thu gom cho đến khi vứt rác là được."
+
+#. ええ～っ！？
+msgctxt "0064 | HIFUMI YAMADA"
+msgid "Whaaat!?"
+msgstr "Cái gìiiii!?"
+
+#. やましい事がないなら、問題ないだろう？
+msgctxt "0065 | BYAKUYA TOGAMI"
+msgid ""
+"If you're as innocent as you claim, where's the harm\n"
+"in it?"
+msgstr ""
+"Nếu ngươi trong sạch như những gì đã tuyên bố, thì có \n"
+"vấn đề gì sao?"
+
+#. クッ…こんなはずじゃ…！！
+msgctxt "0066 | HIFUMI YAMADA"
+msgid "Kh—! That's not how it's supposed to—!"
+msgstr "Kh—! Lẽ ra không phải như thế này—!"
+
+#. 山田クン、そんな事よりさ…
+#. キミが掃除当番なら、お願いがあるんだけど…
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"Anyway, on another topic... Hifumi, since you were on\n"
+"cleaning duty, I have a favor to ask you."
+msgstr ""
+"Mà này, gác chuyện đó qua một bên đi... Hifumi, vì cậu \n"
+"là người trực nhật nên tớ có việc này muốn nhờ cậu."
+
+#. まさか唐突に仲間になれと？
+#. いやいや、まだフラグが立っておりませんぞ。
+msgctxt "0068 | HIFUMI YAMADA"
+msgid ""
+"What, so now you suddenly want to join my party?\n"
+"Sorry, but you haven't triggered that flag yet."
+msgstr ""
+"Đừng nói là cậu tự nhiên muốn gia nhập tổ đội của tôi nhé?\n"
+"Không được, cậu vẫn chưa kích hoạt được flag đâu cậu."
+
+#. それは、トラウマを共に解決したり、
+#. 一緒に村を救ったり、または壮絶なバトルを経た後で…
+msgctxt "0069 | HIFUMI YAMADA"
+msgid ""
+"I mean, you haven't helped me recover from a past\n"
+"trauma, or save a village, or beat a boss..."
+msgstr ""
+"Ý tôi là, cậu còn chưa giúp tôi vượt qua sang chấn tâm lý,\n"
+"cứu một ngôi làng, hay đồng cam cộng khổ gì mà..."
+
+#. そうじゃなくって…山田クンって掃除当番でしょ？
+#. トラッシュルームを調べたいんだけど…
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"No, nothing like that... I was just hoping to get into\n"
+"the trash room and look around."
+msgstr ""
+"Không, không phải mấy chuyện đó đâu... Tớ chỉ muốn vào\n"
+"phòng rác để điều tra một chút thôi."
+
+#. いいよ。
+msgctxt "0071 | HIFUMI YAMADA"
+msgid "Oh, okay!"
+msgstr "Được thôi."
+
+#. 軽…ッ！
+msgctxt "0072 | MAKOTO NAEGI"
+msgid "So easy...!"
+msgstr "Dễ dàng vậy luôn...!"
+
+#. <CLT 4>…とにかく、ボクは山田クンと一緒に、
+#. トラッシュルームへと向かった。
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So, Hifumi and I headed down to the trash room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù sao thì, tôi và Hifumi cũng đã cùng nhau đi \n"
+"xuống phòng rác.\n"
+"<CLT>"
+
+#. むむむむむ～、おかしいですなぁ。
+msgctxt "0074 | HIFUMI YAMADA"
+msgid "Hmm-hm-hm... Very strange..."
+msgstr "Hừm hừm... Kỳ lạ thật đấy."
+
+#. なぜゆえに、
+#. 舞園さやか殿は苗木誠殿の部屋で…
+msgctxt "0075 | HIFUMI YAMADA"
+msgid "Mr. Naegi, what was Miss Maizono doing in your room?"
+msgstr ""
+"Cậu Naegi này, tại sao cô Maizono lại ở trong phòng của \n"
+"cậu vậy?"
+
+#. 苗木誠殿、これだけは言っておきますが…
+msgctxt "0076 | HIFUMI YAMADA"
+msgid "Let me just say this..."
+msgstr "Cậu Makoto, tôi chỉ muốn nói điều này thôi..."
+
+#. そこの<CLT 3>トラッシュルーム<CLT>で証拠を処分…なんて事は、
+#. この僕がさせませんからな！
+msgctxt "0077 | HIFUMI YAMADA"
+msgid ""
+"I absolutely will not allow you to dispose of any\n"
+"evidence in the <CLT 3>trash room<CLT>!"
+msgstr ""
+"Tôi tuyệt đối sẽ không để cậu tiêu hủy bất kỳ\n"
+"bằng chứng nào trong <CLT 3>phòng rác<CLT> đâu đấy!"
+
+#. <CLT 4>ボクを怪しんでいるのかな…？
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Do you really think I'm guilty...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy thực sự đang nghi ngờ mình sao...?\n"
+"<CLT>"
+
+#. <CLT 23>「ガタガタガタ！」
+#. <CLT>
+msgctxt "0079 | NARRATION"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"Cạch cạch cạch!\"\n"
+"<CLT>"
+
+#. 開かない…
+#. 鍵が掛かってるみたいだ…
+msgctxt "0080 | MAKOTO NAEGI"
+msgid "The door won't budge. It must be locked."
+msgstr "Không mở được... Hình như cửa đã bị khóa rồi."
+
+#. <CLT 4>ここは女子トイレだ…
+#. もちろん、入る訳にはいかない…
+#. <CLT>
+msgctxt "0081 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is the girls bathroom. Obviously I can't go in...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là nhà vệ sinh nữ. Hiển nhiên là tôi không \n"
+"thể vào rồi...\n"
+"<CLT>"
+
+#. <CLT 4>ここには、入れないみたいだ…
+#. <CLT>
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I can't get in there...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như không thể vào đây được...\n"
+"<CLT>"
+
+#. <CLT 4>…あれ？　ここってボクの部屋だよな。
+#. ネームプレートが舞園さんの名前になってるけど…
+#. <CLT>
+msgctxt "0083 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...Huh? This is definitely my room, but...the\n"
+"nameplate has Sayaka's name on it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Ơ kìa? Đây chắc chắn là phòng mình mà, nhưng... \n"
+"biển tên lại là tên của Sayaka...\n"
+"<CLT>"
+
+#. ボクの部屋と舞園さんの部屋のネームプレートが
+#. 入れ替えられてる…！？
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"The nameplates on my room and Sayaka's room...were\n"
+"switched!?"
+msgstr ""
+"Biển tên phòng của mình và phòng của Sayaka... đã\n"
+"bị tráo đổi sao!?"
+
+#. <CLT 4>せっかく、みんなに内緒で部屋を交換したのに…
+#. これじゃあ意味がないじゃないか…
+#. <CLT>
+msgctxt "0085 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So all that effort I put into switching rooms without\n"
+"anyone knowing was totally pointless...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bao nhiêu công sức giấu mọi người để đổi phòng...\n"
+"giờ chẳng còn ý nghĩa gì nữa sao...\n"
+"<CLT>"
+
+#. <CLT 4>誰が…どうして…こんな事を？
+#. <CLT>
+msgctxt "0086 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...why would anyone do that?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng ai đã làm chuyện này... và vì mục đích gì chứ?\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0087 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Dorm Nameplates<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Bảng Tên Phòng<CLT><CLT 23>\" đã được thêm vào mục \n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+#. <CLT 4>ここは霧切さんの部屋だ。
+#. <CLT>
+msgctxt "0088 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Kyoko's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Kyoko.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0089 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>…あれ？　ここって舞園さんの部屋だよな。
+#. ネームプレートがボクの名前になってるけど…
+#. <CLT>
+msgctxt "0090 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...Huh? This *is* Sayaka's room, right? But the\n"
+"nameplate has my name on it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Ơ kìa? Đây *là* phòng của Sayaka mà phải không? Nhưng\n"
+"biển tên lại ghi tên của mình...\n"
+"<CLT>"
+
+#. ボクの部屋と舞園さんの部屋のネームプレートが
+#. 入れ替えられてる…！？
+msgctxt "0091 | MAKOTO NAEGI"
+msgid ""
+"The nameplates on my room and Sayaka's room...were\n"
+"switched!?"
+msgstr ""
+"Biển tên phòng của mình và phòng của Sayaka... đã\n"
+"bị tráo đổi sao!?"
+
+#. <CLT 4>せっかく、みんなに内緒で部屋を交換したのに…
+#. これじゃあ意味がないじゃないか…
+#. <CLT>
+msgctxt "0092 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So all that effort I put into switching rooms without\n"
+"anyone knowing was totally pointless...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bao nhiêu công sức giấu mọi người để đổi phòng...\n"
+"giờ chẳng còn ý nghĩa gì nữa sao...\n"
+"<CLT>"
+
+#. <CLT 4>誰が…どうして…こんな事を？
+#. <CLT>
+msgctxt "0093 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...why would anyone do that?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng ai đã làm chuyện này... và vì mục đích gì chứ?\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0094 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Dorm Nameplates<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Bảng Tên Phòng<CLT><CLT 23>\" đã được thêm vào mục \n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました.
+#. 言弾（コトダマ）メニューで確認できます.
+#. <CLT>
+#. <CLT 4>ここは腐川さんの部屋だ。
+#. 今は、ここに用はない…
+#. <CLT>
+msgctxt "0095 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Toko's room. I don't really have anything to\n"
+"talk to her about right now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Toko. Lúc này mình chẳng có việc gì \n"
+"để nói với cô ấy cả...\n"
+"<CLT>"
+
+#. <CLT 4>ここは不二咲さんの部屋だ。
+#. <CLT>
+msgctxt "0096 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Chihiro's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Chihiro.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0097 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>ここは朝日奈さんの部屋だ。
+#. <CLT>
+msgctxt "0098 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Hina's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Hina.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0099 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>ここは、石丸クンの部屋だ。
+#. <CLT>
+msgctxt "0100 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Taka's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Taka.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0101 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>大和田クンの部屋はここだ。
+#. <CLT>
+msgctxt "0102 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Mondo's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Mondo.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0103 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>ここは十神クンの部屋だ。
+#. <CLT>
+msgctxt "0104 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Byakuya's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Byakuya.\n"
+"<CLT>"
+
+#. …おい。
+msgctxt "0105 | BYAKUYA TOGAMI"
+msgid "...hey."
+msgstr "...này."
+
+#. なに？
+msgctxt "0106 | MAKOTO NAEGI"
+msgid "Huh?"
+msgstr "Hả?"
+
+#. 何の権利があって、入ろうとしている？
+#. その手をどけろ。
+msgctxt "0107 | BYAKUYA TOGAMI"
+msgid ""
+"Did I give you permission to do that? Get your hand\n"
+"off that door."
+msgstr ""
+"Mi lấy quyền gì mà định vào đây hả? Bỏ cái tay\n"
+"khỏi cánh cửa đó đi."
+
+#. ご、ごめん…
+msgctxt "0108 | MAKOTO NAEGI"
+msgid "S-Sorry..."
+msgstr "X-Xin lỗi..."
+
+#. <CLT 4>まぁ、確かに…
+#. この部屋は事件には関係なさそうだな…
+#. <CLT>
+msgctxt "0109 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, I can't imagine this has anything to do with the\n"
+"case anyway.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chà, đúng thật... Tôi không nghĩ căn phòng này\n"
+"liên quan gì đến vụ án đâu.\n"
+"<CLT>"
+
+#. <CLT 4>江ノ島さんの部屋だ。
+#. <CLT>
+msgctxt "0110 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Junko's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Junko.\n"
+"<CLT>"
+
+#. …………
+msgctxt "0111 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>江ノ島さんは…もう、いない…
+#. 確かに…死んでいた……
+#. <CLT>
+msgctxt "0112 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Junko...isn't here anymore. She's dead...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Junko... không còn ở đây nữa. Cô ấy đã chết thật rồi...\n"
+"<CLT>"
+
+#. <CLT 4>セレスさんの部屋だ。
+#. <CLT>
+msgctxt "0113 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Celeste's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Celeste.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0114 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>大神さんの部屋だ。
+#. <CLT>
+msgctxt "0115 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Sakura's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Sakura.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0116 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>桑田クンの部屋のドアノブに
+#. 手をかけた途端…
+#. <CLT>
+msgctxt "0117 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As I placed my hand on Leon's door...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ngay khi tôi đặt tay lên nắm cửa phòng của Leon...\n"
+"<CLT>"
+
+#. <CLT 4>…廊下の奥から猛スピードで、
+#. 人影が走って来た。
+#. <CLT>
+msgctxt "0118 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I noticed a human-shaped blur come tearing out of\n"
+"the depths of the hallway.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Tôi thấy một bóng người lao ra từ phía cuối hành \n"
+"lang với tốc độ cực nhanh.\n"
+"<CLT>"
+
+#. ちょ！　コラァ！
+#. なに入ろうとしてんだ！
+msgctxt "0119 | LEON KUWATA"
+msgid ""
+"Hold up! Hey! What the hell do you think you're\n"
+"doing!?"
+msgstr ""
+"Ê! Khoan đã! Mày tính lẻn vào phòng tao làm cái\n"
+"quái gì đấy!?"
+
+#. えっ？
+msgctxt "0120 | MAKOTO NAEGI"
+msgid "Huh?"
+msgstr "Hả?"
+
+#. オレの部屋は事件と関係ねぇだろ！
+msgctxt "0121 | LEON KUWATA"
+msgid ""
+"How does my room have anything to do with the\n"
+"investigation!?"
+msgstr ""
+"Phòng của tao thì có liên quan khỉ gì tới cuộc điều tra\n"
+"đâu chứ!?"
+
+#. <CLT 4>まぁ、勝手に入ろうとしたら、
+#. やっぱり、こうなるよな…
+#. <CLT>
+msgctxt "0122 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, I suppose that's a natural reaction to someone\n"
+"trying to go in your room without permission...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chà, phản ứng như vậy khi thấy ai đó định vào \n"
+"phòng mình không xin phép cũng là lẽ đương nhiên thôi...\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンの部屋はここだ。
+#. <CLT>
+msgctxt "0123 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Hiro's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng của Hiro.\n"
+"<CLT>"
+
+#. <CLT 4>事件には…関係がなさそうだな…
+#. <CLT>
+msgctxt "0124 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think there's anything here that will help\n"
+"me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như nơi này không liên quan gì đến vụ án rồi...\n"
+"<CLT>"
+
+#. <CLT 4>山田クンの部屋のドアノブに
+#. 手をかけた途端…
+#. <CLT>
+msgctxt "0125 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As my hand came into contact with the knob of Hifumi's\n"
+"room...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ngay khi tay tôi chạm vào nắm cửa phòng \n"
+"của Hifumi...\n"
+"<CLT>"
+
+#. <CLT 4>…廊下の奥からドスドスと地鳴りのような音が
+#. 聞こえて来た。
+#. <CLT>
+msgctxt "0126 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I heard a rumbling like a herd of elephants\n"
+"stampeding down the hallway.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Tôi nghe thấy những tiếng thình thịch như thể có \n"
+"một bầy voi đang dậm chân ầm ầm dọc hành lang.\n"
+"<CLT>"
+
+#. 待ちたまえ、苗木誠殿！
+msgctxt "0127 | HIFUMI YAMADA"
+msgid "Hold it right there, Mr. Naegi!"
+msgstr "Dừng tay lại đó, cậu Naegi!"
+
+#. …えっ？
+msgctxt "0128 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr "...Hả?"
+
+#. 人の部屋に無断で入るなど、
+#. マナー違反ですぞっ！
+msgctxt "0129 | HIFUMI YAMADA"
+msgid ""
+"Trying to enter someone's room without their express\n"
+"permission is the highest breach of etiquette!"
+msgstr ""
+"Tự ý vào phòng người khác khi chưa được cho phép\n"
+"là hành vi cực kỳ khiếm nhã đấy cậu!"
+
+#. いくら事件の捜査とはいえ、
+#. 人としての尊厳は守るべきですな！
+msgctxt "0130 | HIFUMI YAMADA"
+msgid ""
+"Whether it's related to the case or not, you must\n"
+"respect a person's right to privacy!"
+msgstr ""
+"Dù là để điều tra vụ án đi chăng nữa, cậu vẫn phải tôn trọng\n"
+"quyền riêng tư của người khác chứ!"
+
+#. そうだね…
+msgctxt "0131 | MAKOTO NAEGI"
+msgid "True..."
+msgstr "Cũng phải..."
+
+#. <CLT 4>階段…なんだろうけど……
+#. シャッターが降りてる。
+#. <CLT>
+msgctxt "0132 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'd love to find out where those stairs lead, but\n"
+"there's no way past the gate...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi rất muốn biết cầu thang đó dẫn đi đâu, nhưng chẳng \n"
+"thể nào vượt qua được cánh cửa sập đó...\n"
+"<CLT>"
+
+#. <CLT 4>これじゃ、上れないな。
+#. 階段の意味がない…
+#. <CLT>
+msgctxt "0133 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What's the point of having stairs if you're just gonna\n"
+"block 'em off...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cầu thang mà bị chặn đứng thế này thì chẳng còn \n"
+"tác dụng gì nữa...\n"
+"<CLT>"
+
+#. <CLT 4>あれ？　ここってボクの部屋だよな.
+#. ネームプレートが舞園さんの名前になってるけど…
+msgctxt "0134 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh? This is definitely my room, but...the nameplate\n"
+"has Sayaka's name on it..."
+msgstr ""
+"<CLT 4>...Ơ kìa? Đây chắc chắn là phòng mình mà, nhưng... \n"
+"biển tên lại là tên của Sayaka...\n"
+"<CLT>"
+
+#. <CLT 4>…どういう事だ？
+#. <CLT>
+msgctxt "0135 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What does this mean...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chuyện này là sao chứ...?\n"
+"<CLT>"
+
+#. これって、つまり…
+msgctxt "0136 | MAKOTO NAEGI"
+msgid "I guess it would have to mean..."
+msgstr "Điều này có nghĩa là..."
+
+#. ボクの部屋と舞園さんの部屋のネームプレートが
+#. 入れ替えられている…！？
+msgctxt "0137 | MAKOTO NAEGI"
+msgid ""
+"...the nameplates on my room and Sayaka's room...were\n"
+"switched!?"
+msgstr ""
+"...biển tên phòng của mình và phòng của Sayaka... đã\n"
+"bị tráo đổi sao!?"
+
+#. <CLT 4>せっかく、みんなに内緒で部屋を交換したのに…
+#. これじゃあ意味がないじゃないか…
+#. <CLT>
+msgctxt "0138 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So all that effort I put into switching rooms without\n"
+"anyone knowing was totally pointless...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bao nhiêu công sức giấu mọi người để đổi phòng...\n"
+"giờ chẳng còn ý nghĩa gì nữa sao...\n"
+"<CLT>"
+
+#. <CLT 4>sでも、誰が…
+#. どうして…こんな事を？
+#. <CLT>
+msgctxt "0139 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...why would anyone do that?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng ai đã làm chuyện này... và vì mục đích gì chứ?\n"
+"<CLT>"
+
+#. <CLT 4>部屋の交換を知っているのは…
+#. ボクと舞園さんだけのはずなのに。
+#. <CLT>
+msgctxt "0140 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The only ones who were supposed to know we had\n"
+"switched rooms...were me and Sayaka.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Người duy nhất biết chuyện chúng tôi đổi phòng...\n"
+"đáng lẽ chỉ có tôi và Sayaka thôi.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0141 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Dorm Nameplates<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Bảng Tên Phòng<CLT><CLT 23>\" đã được thêm vào mục \n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました.
+#. 言弾（コトダマ）メニューで確認できます.
+#. <CLT>
+#. <CLT 4>あれ？　ここって舞園さんの部屋だよな.
+#. ネームプレートがボクの名前になってるけど…
+#. <CLT>
+msgctxt "0142 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh? This *is* Sayaka's room, right? But the nameplate\n"
+"has my name on it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ơ kìa? Đây *là* phòng của Sayaka mà phải không? \n"
+"Nhưng biển tên lại ghi tên của mình...\n"
+"<CLT>"
+
+#. <CLT 4>…どういう事だ？
+#. <CLT>
+msgctxt "0143 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What does this mean...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chuyện này là sao chứ...?\n"
+"<CLT>"
+
+#. これって、つまり…
+msgctxt "0144 | MAKOTO NAEGI"
+msgid "I guess it would have to mean..."
+msgstr "Điều này có nghĩa là..."
+
+#. ボクの部屋と舞園さんの部屋のネームプレートが
+#. 入れ替えられている…！？
+msgctxt "0145 | MAKOTO NAEGI"
+msgid ""
+"...the nameplates on my room and Sayaka's room...were\n"
+"switched!?"
+msgstr ""
+"...biển tên phòng của mình và phòng của Sayaka... đã\n"
+"bị tráo đổi sao!?"
+
+#. <CLT 4>せっかく、みんなに内緒で部屋を交換したのに…
+#. これじゃあ意味がないじゃないか…
+#. <CLT>
+msgctxt "0146 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So all that effort I put into switching rooms without\n"
+"anyone knowing was totally pointless...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bao nhiêu công sức giấu mọi người để đổi phòng...\n"
+"giờ chẳng còn ý nghĩa gì nữa sao...\n"
+"<CLT>"
+
+#. <CLT 4>でも、誰が…
+#. どうして…こんな事を？
+#. <CLT>
+msgctxt "0147 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...why would anyone do that?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng ai đã làm chuyện này... và vì mục đích gì chứ?\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0148 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Dorm Nameplates<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Bảng Tên Phòng<CLT><CLT 23>\" đã được thêm vào mục \n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>個室のネームプレート<CLT><CLT 23>を手帳に記録しました.
+#. 言弾（コトダマ）メニューで確認できます.
+#. <CLT>
+#. <CLT 4>鉄格子だ…
+#. かなり頑丈そうだな.
+#. <CLT>
+msgctxt "0149 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This gate seems remarkably sturdy.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là một cánh cổng sắt... Có vẻ nó cực kỳ kiên cố đấy.\n"
+"<CLT>"
+
+#. <CLT 4>なんだって、こんなに厳重に
+#. 封鎖してるんだろう…
+#. <CLT>
+msgctxt "0150 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why would someone go to all the trouble of blocking\n"
+"off this entire area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tại sao ai đó phải tốn bao công sức để phong tỏa\n"
+"toàn bộ khu vực này một cách nghiêm ngặt như vậy chứ?\n"
+"<CLT>"

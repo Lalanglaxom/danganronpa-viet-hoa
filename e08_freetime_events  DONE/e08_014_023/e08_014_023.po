@@ -1,0 +1,730 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. ねぇ、苗木君。
+#. 約束だったよね？
+msgctxt "0001 | CHIHIRO FUJISAKI"
+msgid "Hey, Makoto! You remember your promise?"
+msgstr "Nè Makoto! Cậu còn nhớ lời hứa của tụi mình không?"
+
+#. え、約束…？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Huh? What promise?"
+msgstr "Hả, lời hứa... gì cơ?"
+
+#. …忘れちゃったの？
+msgctxt "0003 | CHIHIRO FUJISAKI"
+msgid "Did you forget already?"
+msgstr "...Cậu quên rồi sao?"
+
+#. 約束…したよ…
+#. 今度は苗木君の事を話してくれるって…
+msgctxt "0004 | CHIHIRO FUJISAKI"
+msgid "You promised that we could talk about you this time!"
+msgstr "Cậu đã hứa là... lần tới sẽ kể cho tớ nghe về cậu mà..."
+
+#. そっか…忘れちゃったんだね…
+msgctxt "0005 | CHIHIRO FUJISAKI"
+msgid "You really did forget..."
+msgstr "Ra là vậy... cậu quên thật rồi nhỉ..."
+
+#. <CLT 4>不二咲さんはガックリと肩を落としたまま、
+#. とぼとぼと歩き去ってしまった。
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro looked really disappointed. With sagging\n"
+"shoulders, she wandered away.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chihiro trông thực sự thất vọng. Cậu ấy rũ vai, lủi \n"
+"thủi bước đi.\n"
+"<CLT>"
+
+#. …そうだ、約束してたんだ。
+#. <CLT 3>今度はボクの事を話す<CLT>って…
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"That's right, I did promise. She wanted to <CLT 3>talk about\n"
+"me<CLT> this time..."
+msgstr ""
+"Đúng rồi, mình có hứa thật. Cậu ấy muốn <CLT 3>nghe kể về mình<CLT> \n"
+"lần này..."
+
+#. <CLT 4>追った方が…いいよな…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'd better go after her...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình nên đuổi theo thì hơn...\n"
+"<CLT>"
+
+#. <CLT 4>ボクは不二咲さんの後を追って、
+#. 慌てて彼女の部屋へと向かった。
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I headed to Chihiro's room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đuổi theo Chihiro và vội vã đi về phía phòng của \n"
+"cậu ấy.\n"
+"<CLT>"
+
+#. ………………
+msgctxt "0010 | CHIHIRO FUJISAKI"
+msgid "..."
+msgstr "..."
+
+#. えーっと…聞いて欲しいんだけど、
+#. 約束を忘れた訳じゃないんだ。
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"Listen, I just wanted to tell you that I didn't forget\n"
+"about my promise...!"
+msgstr "Ừm... nghe tớ nói này, không phải tớ đã quên lời hứa đâu!"
+
+#. ちゃんと覚えてるからさ…
+#. 元気出してよ…
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "Of course I remember! So cheer up, okay?"
+msgstr "Tớ vẫn nhớ kỹ mà... Đừng buồn nữa nhé..."
+
+#. …じゃあ、聞かせてくれるの？
+#. 苗木君の事…
+msgctxt "0013 | CHIHIRO FUJISAKI"
+msgid "...Then can we talk about you today?"
+msgstr "...Vậy, hôm nay cậu sẽ kể cho tớ nghe về cậu chứ?"
+
+#. うん…それは構わないけど…
+msgctxt "0014 | MAKOTO NAEGI"
+msgid "Sure, I don't mind at all!"
+msgstr "Ừm... tớ không phiền đâu!"
+
+#. ホントに！　良かった！
+#. じゃあ、座ってよ。
+msgctxt "0015 | CHIHIRO FUJISAKI"
+msgid "Really? Great! Then come in and sit down."
+msgstr "Thật sao! Tốt quá rồi! Vậy cậu ngồi xuống đi."
+
+#. え？　部屋に入っていいの？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "Huh? I can...come in?"
+msgstr "Hả? Tớ vào phòng cậu được chứ?"
+
+#. うん、もちろんだよ！
+msgctxt "0017 | CHIHIRO FUJISAKI"
+msgid "Yeah, of course!"
+msgstr "Ừm, tất nhiên rồi!"
+
+#. <CLT 4>成り行きとは言え、簡単に男子を部屋にあげて…
+#. 無防備過ぎやしないかな…？
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I know what she said, but I'm not sure she should be\n"
+"so quick to let down her defenses like this...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dẫu tình thế là vậy, nhưng cho con trai vào phòng\n"
+"dễ dàng \n"
+"thế này... có phải là quá thiếu cảnh giác không nhỉ...?\n"
+"<CLT>"
+
+#. じゃあ、さっそく聞かせてよ。
+#. 苗木君の事。
+msgctxt "0019 | CHIHIRO FUJISAKI"
+msgid "Okay, let's go! I wanna hear all about you!"
+msgstr "Vậy, mau kể cho tớ nghe về cậu đi!"
+
+#. 聞かせるも何も…
+#. 何を話したらいいのかな？
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "I'm happy to talk, but what do you want to know?"
+msgstr "Kể thì cũng được... nhưng cậu muốn nghe chuyện gì cơ?"
+
+#. 質問ならあるよ。
+msgctxt "0021 | CHIHIRO FUJISAKI"
+msgid "Well, let's start with a question."
+msgstr "Tớ có câu hỏi đây."
+
+#. …え、何？
+msgctxt "0022 | MAKOTO NAEGI"
+msgid "Huh?"
+msgstr "...Ơ, chuyện gì?"
+
+#. 苗木君って、普段は何をして過ごしてるの？
+msgctxt "0023 | CHIHIRO FUJISAKI"
+msgid "What do you like to do in your spare time?"
+msgstr "Bình thường Makoto hay làm gì để giết thời gian vậy?"
+
+#. そうだな、普段は…
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "Well, you know..."
+msgstr "Xem nào, bình thường thì..."
+
+#. …テレビ観たり、ゲームしたり、
+#. 後はゴロゴロしたり…くらいだけど。
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"I watch TV, play video games, lay around... That's\n"
+"pretty much it."
+msgstr "...Tớ chỉ xem TV, chơi game, rồi nằm ườn ra thôi..."
+
+#. え？　スポーツは？
+msgctxt "0026 | CHIHIRO FUJISAKI"
+msgid "Huh? What about sports?"
+msgstr "Hả? Còn thể thao thì sao?"
+
+#. …スポーツなんて全然だよ。
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "Oh, I don't really play anything."
+msgstr "...Thể thao thì tớ chịu chết."
+
+#. 体育の授業と、
+#. 遅刻しそうな時に走るくらいしか…
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"The only time I run anywhere is during gym, or when\n"
+"I'm running late in the morning..."
+msgstr ""
+"Tớ chỉ vận động trong giờ thể dục, hoặc là chạy thục mạng \n"
+"khi sắp bị muộn học thôi..."
+
+#. え？　それなのに…
+#. そんなに、たくましいの？
+msgctxt "0029 | CHIHIRO FUJISAKI"
+msgid "Really? And you're still so strong?"
+msgstr "Ơ? Thế mà... cậu vẫn mạnh mẽ đến vậy sao?"
+
+#. たくましい？　ボクが？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "Strong? Me?"
+msgstr "Mạnh mẽ? Tớ á?"
+
+#. いや、むしろボクなんて、
+#. 男子としては最低レベルだって！
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"N-No, I'm pretty much on the bottom rung of\n"
+"masculinity!"
+msgstr ""
+"Không đâu, tớ phải thuộc hàng yếu nhất trong đám con trai \n"
+"ấy chứ!"
+
+#. 男子として最低レベル…
+#. 苗木君で…？
+msgctxt "0032 | CHIHIRO FUJISAKI"
+msgid "You're on...the bottom rung?"
+msgstr "Yếu nhất đám con trai... cỡ như Makoto á...?"
+
+#. じゃあ…
+msgctxt "0033 | CHIHIRO FUJISAKI"
+msgid "Oh..."
+msgstr "Vậy thì..."
+
+#. ………………
+msgctxt "0034 | CHIHIRO FUJISAKI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>なんか…しょんぼりしてるみたいだけど…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro seemed...disappointed, somehow.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hình như... cậu ấy đang thất vọng thì phải...\n"
+"<CLT>"
+
+#. ねぇ、どうかしたの？
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "Hey, what's the matter?"
+msgstr "Nè, có chuyện gì sao?"
+
+#. あのね…<CLT 3>強い人<CLT>を捜してるんだ…
+msgctxt "0037 | CHIHIRO FUJISAKI"
+msgid "Well, it's just... I'm looking for <CLT 3>someone strong<CLT>."
+msgstr "Chuyện là... tớ đang tìm <CLT 3>một người mạnh mẽ<CLT>..."
+
+#. 強い人…？
+#. それなら大神さんが…
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "Someone strong? Well, what about Sakura...?"
+msgstr "Người mạnh mẽ sao? Nếu vậy thì có Sakura..."
+
+#. …ううん。
+#. <CLT 3>男子<CLT>で捜してるんだよね…
+msgctxt "0039 | CHIHIRO FUJISAKI"
+msgid "...No, I mean a <CLT 3>guy<CLT>."
+msgstr "...Không. Tớ đang tìm một <CLT 3>ban nam<CLT> cơ..."
+
+#. 大和田クン
+msgctxt "0040 | CHOICE/RE:ACT"
+msgid "Mondo"
+msgstr "Mondo"
+
+#. 十神クン
+msgctxt "0041 | CHOICE/RE:ACT"
+msgid "Byakuya"
+msgstr "Byakuya"
+
+#. 十神クンかな。
+msgctxt "0042 | MAKOTO NAEGI"
+msgid "Maybe Byakuya...?"
+msgstr "Có lẽ là Byakuya...?"
+
+#. 十神…君？
+#. そうかな…？
+msgctxt "0043 | CHIHIRO FUJISAKI"
+msgid "Byakuya? You think so...?"
+msgstr "Byakuya sao? Cậu nghĩ vậy à...?"
+
+#. 困ったところもあるけど
+#. 何があっても動じないし…
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"Yeah, no matter what kind of problems he runs into,\n"
+"I've never seen him get rattled or anything."
+msgstr ""
+"Ừm, dẫu tính cách có hơi khó gần, nhưng dù chuyện gì xảy \n"
+"ra cậu ấy cũng không hề dao động..."
+
+#. いつでも、自分は自分だって態度が取れるところは
+#. 強いって言えるんじゃないかな？
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"If you can believe in who you are no matter what\n"
+"happens, that must take a certain kind of strength..."
+msgstr ""
+"Lúc nào cũng giữ vững cái tôi của mình, tớ nghĩ đó cũng có \n"
+"thể coi là một kiểu mạnh mẽ đúng không?"
+
+#. そう…だね…
+msgctxt "0046 | CHIHIRO FUJISAKI"
+msgid "Yeah, that's true..."
+msgstr "Đúng... là vậy nhỉ..."
+
+#. Nhưng mà…十神クンじゃ…
+msgctxt "0047 | CHIHIRO FUJISAKI"
+msgid "But I don't think Byakuya's the one..."
+msgstr "Nhưng mà... Byakuya thì không phải..."
+
+#. え？　どうかした？
+msgctxt "0048 | MAKOTO NAEGI"
+msgid "Huh? What do you mean?"
+msgstr "Hả? Sao vậy?"
+
+#. ううん…なんでもないけど…
+#. 十神クン以外では…誰だと思う？
+msgctxt "0049 | CHIHIRO FUJISAKI"
+msgid ""
+"O-Oh, it's nothing. Does anyone besides Byakuya come\n"
+"to mind?"
+msgstr ""
+"Không... không có gì đâu... Ngoài Byakuya ra... cậu nghĩ còn \n"
+"ai nữa không?"
+
+#. 大神さん
+msgctxt "0050 | CHOICE/RE:ACT"
+msgid "Sakura"
+msgstr "Sakura"
+
+#. うーん…
+#. 大神さんより強い人が思いつかないよ…
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"Hmmm... I honestly just can't think of anyone stronger\n"
+"than Sakura."
+msgstr "Ừm... Tớ không nghĩ ra được ai mạnh hơn Sakura cả..."
+
+#. ………………
+msgctxt "0052 | CHIHIRO FUJISAKI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>すごくしょんぼりしてる…
+#. なぜか…罪悪感が…
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She seems really depressed for some reason. I kinda\n"
+"feel guilty now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy trông buồn thiu... Chẳng hiểu sao mình lại \n"
+"thấy có lỗi quá...\n"
+"<CLT>"
+
+#. どうしても男の人じゃないとダメなんだ？
+msgctxt "0054 | MAKOTO NAEGI"
+msgid "Does it really absolutely have to be a guy?"
+msgstr "Nhất định phải là con trai mới được sao?"
+
+#. うん…
+msgctxt "0055 | CHIHIRO FUJISAKI"
+msgid "Yeah..."
+msgstr "Ừm..."
+
+#. そっか…
+#. じゃあ、ええっと…
+msgctxt "0056 | MAKOTO NAEGI"
+msgid "Okay. In that case...umm..."
+msgstr "Ra là vậy... Để xem nào, ờ thì..."
+
+#. 思いつかない…かな…？
+msgctxt "0057 | CHIHIRO FUJISAKI"
+msgid "You really can't think of anyone?"
+msgstr "Cậu không... nghĩ ra ai sao...?"
+
+#. <CLT 4>こんな、すがるような目で見られたら…
+#. 答えないとダメだって気分になるよな…
+#. <CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>When she looks at me with those big, pleading eyes...\n"
+"I feel like I'd die if I let her down...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bị nhìn bằng ánh mắt đầy mong đợi thế này... mình \n"
+"nếu không trả lời thì không xong rồi...\n"
+"<CLT>"
+
+#. 男子で強い人…
+#. やっぱり、ケンカ慣れしてる彼だろうな…
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"Thinking about strong guys, there *is* someone here\n"
+"who's probably been in a lot of fights..."
+msgstr ""
+"Người mạnh mẽ trong đám con trai... chắc chắn phải là \n"
+"người dày dặn kinh nghiệm chinh chiến rồi..."
+
+#. それなら、<CLT 3>大和田クン<CLT>かな…
+msgctxt "0060 | MAKOTO NAEGI"
+msgid "Then what about <CLT 3>Mondo<CLT>?"
+msgstr "Nếu vậy thì chắc là <CLT 3>Mondo<CLT> rồi..."
+
+#. <CLT 3>“超高校級の暴走族”<CLT>の彼が、
+#. 男子では一番強いと思うけど…
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"He's the <CLT 3>Ultimate Biker Gang Leader<CLT>, right? He's\n"
+"gotta be the strongest guy here."
+msgstr ""
+"Tớ nghĩ <CLT 3>Siêu Học Sinh Đại Ca Băng Mô tô<CLT> như cậu ấy \n"
+"là người mạnh nhất trong đám con trai ở đây đấy..."
+
+#. 大和田クン…
+#. やっぱり、そうだよね！
+msgctxt "0062 | CHIHIRO FUJISAKI"
+msgid "Mondo... Yeah, that's it!"
+msgstr "Mondo... Quả nhiên là vậy nhỉ!"
+
+#. Nhưng mà, 強い人を捜してるなんて、
+#. どうして？
+msgctxt "0063 | MAKOTO NAEGI"
+msgid "But why are you looking for a strong guy?"
+msgstr "Nhưng mà, tại sao cậu lại tìm người mạnh mẽ vậy?"
+
+#. ………………
+msgctxt "0064 | CHIHIRO FUJISAKI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>あれ…？　また黙り込んじゃった…
+#. <CLT>
+msgctxt "0065 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh? She went all quiet again...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ơ...? Cậu ấy lại im lặng rồi...\n"
+"<CLT>"
+
+#. <CLT 4>もしかして、強い男の人が好きとか、
+#. そういう理由だったり？
+#. <CLT>
+msgctxt "0066 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Are you, like...into tough guys or something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chẳng lẽ là vì cậu ấy thích đàn ông mạnh mẽ sao?\n"
+"<CLT>"
+
+#. 鍛えたいんだ…
+#. 体が…弱いからさ…
+msgctxt "0067 | CHIHIRO FUJISAKI"
+msgid "I want to...start training. I'm so weak..."
+msgstr "Tớ muốn... rèn luyện bản thân. Vì cơ thể tớ... yếu ớt lắm..."
+
+#. …え？
+msgctxt "0068 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr "...Hả?"
+
+#. 強い人から意見を聞けば…
+#. 何か参考になるかなって思ったんだ…
+msgctxt "0069 | CHIHIRO FUJISAKI"
+msgid ""
+"I thought if I could talk to someone strong about it,\n"
+"it might help motivate me."
+msgstr ""
+"Tớ nghĩ nếu được nghe ý kiến từ một người mạnh mẽ... có lẽ \n"
+"tớ sẽ học hỏi được điều gì đó..."
+
+#. そっか、そういう事だったんだ…
+msgctxt "0070 | MAKOTO NAEGI"
+msgid "So that's why, huh?"
+msgstr "Ra là vậy, lý do là thế sao."
+
+#. だったら、ごめん.
+#. ボクじゃ、役に立てないよね…
+msgctxt "0071 | MAKOTO NAEGI"
+msgid "Sorry, I wish I could help somehow..."
+msgstr ""
+"Vậy thì cho tớ xin lỗi nhé. Tớ chẳng giúp được gì cho \n"
+"cậu rồi..."
+
+#. ………………
+msgctxt "0072 | CHIHIRO FUJISAKI"
+msgid "..."
+msgstr "..."
+
+#. あのさ、苗木君には、
+#. 何か…<CLT 3>コンプレックス<CLT>とかある？
+msgctxt "0073 | CHIHIRO FUJISAKI"
+msgid ""
+"Hey, Makoto...? Do you have any kind of,\n"
+"um...<CLT 3>inferiority complex<CLT>?"
+msgstr "Nè Makoto... cậu có <CLT 3>mặc cảm<CLT> gì về bản thân không?"
+
+#. …コンプレックス？
+msgctxt "0074 | MAKOTO NAEGI"
+msgid "Inferiority complex...?"
+msgstr "...Mặc cảm sao?"
+
+#. 自分で自分の嫌いなところとか…
+#. 許せないところとか…
+msgctxt "0075 | CHIHIRO FUJISAKI"
+msgid ""
+"You know, some part of you that you can't stand.\n"
+"Something you absolutely hate..."
+msgstr ""
+"Là những điểm cậu ghét ở bản thân ấy... hay những điểm \n"
+"cậu không thể tha thứ..."
+
+#. そんなの、もちろんあるよ.
+msgctxt "0076 | MAKOTO NAEGI"
+msgid "Well, I guess so..."
+msgstr "Chuyện đó thì tất nhiên là có rồi."
+
+#. ボクの場合は、
+#. 普通で平凡過ぎる事かな…
+msgctxt "0077 | MAKOTO NAEGI"
+msgid "For me, it's how forgettably ordinary I am."
+msgstr ""
+"Với tớ thì có lẽ là sự tầm thường đến mức bình \n"
+"thường quá mức..."
+
+#. ここに来てからは、
+#. 特に痛感させられっぱなしだよ.
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"I've been made painfully aware of this part of me ever\n"
+"since I came here."
+msgstr ""
+"Kể từ khi tới đây, tớ lại càng cảm thấy điều đó một cách \n"
+"đau lòng."
+
+#. みんなは“超高校級”なんて才能を持っているのに、
+#. ボクだけが大した才能もなくて…
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"The rest of you all have your ultimate abilities, but\n"
+"I don't have any kind of talent at all."
+msgstr ""
+"Mọi người ai cũng có tài năng “Siêu Học Sinh”, chỉ có tớ là \n"
+"chẳng có tài năng gì ra hồn..."
+
+#. そういう気持ちって…どうやって克服するの？
+msgctxt "0080 | CHIHIRO FUJISAKI"
+msgid "And...how do you overcome that kind of feeling?"
+msgstr "Cảm giác đó... cậu làm cách nào để vượt qua?"
+
+#. …克服なんて出来ないよ.
+msgctxt "0081 | MAKOTO NAEGI"
+msgid "I'm not sure I can..."
+msgstr "...Tớ không vượt qua nổi đâu."
+
+#. だから、受け入れるようにしている.
+#. コンプレックスがあるのは仕方ないんだって.
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"That's why I decided to just accept it. It's how I\n"
+"feel, and there's nothing I can do about it."
+msgstr ""
+"Nên tớ đã chọn cách chấp nhận nó. Tớ tự nhủ rằng việc \n"
+"mình có mặc cảm cũng là chuyện đương nhiên thôi."
+
+#. それに、クヨクヨ考えてるヒマがあるなら、
+#. 何か具体的に行動した方がいいかなって…
+msgctxt "0083 | MAKOTO NAEGI"
+msgid ""
+"And if I find myself thinking about it too much, I\n"
+"just find something else to do with my time."
+msgstr ""
+"Với lại, thay vì phí thời gian để lo âu, tớ nghĩ mình nên làm gì \n"
+"đó cụ thể thì hơn..."
+
+#. 夢中になって何かをやってれば、
+#. コンプレックスなんて忘れられる気がするんだよね.
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"If I throw myself into something hard enough, I can\n"
+"forget about it for a little while."
+msgstr ""
+"Nếu cứ mải mê làm một việc gì đó, tớ cảm thấy mình có thể \n"
+"quên đi những mặc cảm đó."
+
+#. 夢中になって…何かをやる…
+msgctxt "0085 | CHIHIRO FUJISAKI"
+msgid "Throw myself into something..."
+msgstr "Mải mê... làm một việc gì đó..."
+
+#. …そっか、そうだよね.
+msgctxt "0086 | CHIHIRO FUJISAKI"
+msgid "I see. That's a good idea."
+msgstr "...Ra vậy, đúng là như thế nhỉ."
+
+#. 行動に移さない限りは、
+#. 何も変わらないんだもんね…
+msgctxt "0087 | CHIHIRO FUJISAKI"
+msgid ""
+"If I don't do something, nothing's ever going to\n"
+"change."
+msgstr "Nếu không bắt tay vào hành động thì chẳng có gì thay đổi cả..."
+
+#. うん、何かわかった気がするよ！
+#. <CLT 3>苗木君のアドバイス<CLT>のお陰で！
+msgctxt "0088 | CHIHIRO FUJISAKI"
+msgid "Yeah, I think <CLT 3>your advice<CLT> has helped me understand!"
+msgstr "Ừm, tớ hiểu ra rồi! Nhờ có <CLT 3>lời khuyên của Makoto<CLT> đó!"
+
+#. <CLT 4>アドバイスなんて…
+#. そんな大それたものでもないと思うけど…
+#. <CLT>
+msgctxt "0089 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Advice? I'm not sure it was anything like that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lời khuyên sao... Tớ hông nghĩ nó to tát đến thế đâu...\n"
+"<CLT>"
+
+#. …えへへ！　ありがとね、苗木君！
+msgctxt "0090 | CHIHIRO FUJISAKI"
+msgid "Ehehe... Thanks, Makoto!"
+msgstr "...Hì hì! Cảm ơn cậu nhé, Makoto!"
+
+#. <CLT 4>それでも不二咲さんの役に立てたなら、
+#. まぁ、いいか…
+#. <CLT>
+msgctxt "0091 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, if it helped, that's good enough for me.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dẫu sao, nếu đã giúp ích được cho Chihiro thì cũng \n"
+"tốt rồi...\n"
+"<CLT>"
+
+#. <CLT 4>それに、不二咲さんと色々と話せたお陰で、
+#. 彼女の事もよくわかったし…
+#. <CLT>
+msgctxt "0092 | CHIHIRO FUJISAKI"
+msgid ""
+"<CLT 4>Talking to her like this, I feel like I've gotten to\n"
+"know Chihiro really well.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hơn nữa, nhờ trò chuyện nhiều với Chihiro, mình \n"
+"cũng hiểu thêm về cậu ấy...\n"
+"<CLT>"
+
+#. <CLT 4>なんだか、心が通じ合えた気がするって言うか…
+#. <CLT>
+msgctxt "0093 | CHIHIRO FUJISAKI"
+msgid ""
+"<CLT 4>I think we understand each other a lot better...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cảm giác như tâm hồn chúng mình đã thấu hiểu \n"
+"nhau hơn...\n"
+"<CLT>"
+
+#. <CLT 4>本当の意味で、
+#. 不二咲さんと<CLT><CLT 3>“仲間”<CLT><CLT 4>になれたのかもしれない.
+#. <CLT>
+msgctxt "0094 | CHIHIRO FUJISAKI"
+msgid ""
+"<CLT 4>I wonder if maybe I've finally become a <CLT><CLT 3>friend<CLT><CLT 4> to\n"
+"her in the truest sense of the word.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có lẽ mình đã thực sự trở thành <CLT><CLT 3>“đồng đội”<CLT> của Chihiro \n"
+"theo đúng nghĩa rồi.\n"
+"<CLT>"
+
+#. <CLT 23>不二咲千尋の<CLT><CLT 3>通信簿<CLT><CLT 23> bi kịch 情報を追記致しました.
+#. <CLT>
+msgctxt "0095 | NARRATION"
+msgid ""
+"<CLT 23>Chihiro's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with her.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Chihiro đã được cập nhật dựa trên\n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>\""
+
+#. <CLT 23>おめでとうございます.
+#. スキル<CLT><CLT 3>“チートコード”<CLT><CLT 23>を獲得致しました.
+#. <CLT>
+msgctxt "0096 | NARRATION"
+msgid ""
+"<CLT 23>You just unlocked the skill <CLT><CLT 3>Cheat Code<CLT><CLT 23>!\n"
+"Give yourself a pat on the back. You've earned it!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Chúc mừng! Bạn vừa mở khóa được kỹ năng <CLT><CLT 3>Mã Cheat<CLT><CLT 23>! \n"
+"Cho một tràng pháo tay đi nào. Vì bạn xứng đáng!\n"
+"<CLT>"
+
+#. <CLT 4>しばらく不二咲さんと雑談した後、
+#. ボク là 自分の部屋へ帰る事にした.
+#. <CLT>
+msgctxt "0097 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After talking with Chihiro a little while longer, I\n"
+"decided to head back to my room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi trò chuyện với Chihiro thêm một lát, tôi \n"
+"quyết định quay trở về phòng mình.\n"
+"<CLT>"

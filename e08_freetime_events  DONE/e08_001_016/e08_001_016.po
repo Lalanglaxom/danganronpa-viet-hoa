@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give him that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+"<CLT 23>Xin lỗi, nhưng bạn không thể tặng món quà đó. Trong \n"
+"ngành này, chúng tôi gọi đó là <CLT> <CLT 3>vật phẩm chìa khóa<CLT><CLT 23>.<CLT>"
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give him?\n"
+"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
+
+#. …いちお、貰っとくぜ。
+msgctxt "0003 | KIYOTAKA ISHIMARU"
+msgid "Sure, I guess I'll take it."
+msgstr "...Thôi được, tao tạm nhận vậy."
+
+#. サンキューな…
+msgctxt "0004 | KIYOTAKA ISHIMARU"
+msgid "Thanks or whatever..."
+msgstr "Cảm ơn nhé... hay gì đó..."
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean he liked it...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Liệu như vậy nghĩa là cậu ấy thích nó \n"
+"nhỉ...?<CLT>"
+
+#. おーし、気に入った…
+#. タイマンしてやんよ…
+msgctxt "0006 | KIYOTAKA ISHIMARU"
+msgid "Hey, not bad! You wanna have a one-on-one now?"
+msgstr ""
+"Được lắm, không tệ... Có muốn làm một trận solo \n"
+"ngay không?"
+
+#. やってやんぞォ！！
+#. ひき肉にしちまうよ？　ダボッ！！
+msgctxt "0007 | KIYOTAKA ISHIMARU"
+msgid "Let's go! I'll smash you into ground meat! Dumbbutt!"
+msgstr ""
+"Lên luôn nào!! Tao sẽ băm vằn mày ra như thịt xay luôn! \n"
+"Thằng đần!!"
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that he liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình có cảm giác là cậu ấy thích nó. May quá...\n"
+"<CLT>"
+
+#. 上等上等上等…
+msgctxt "0009 | KIYOTAKA ISHIMARU"
+msgid "Nice, nice, nice!"
+msgstr "Tốt, tốt, tốt lắm...!"
+
+#. 上等なモンくれやがって！
+#. クソありがとうございますだゴラァッ！
+msgctxt "0010 | KIYOTAKA ISHIMARU"
+msgid ""
+"It's like you read my mind. Thanks a bunch, ya fudging\n"
+"son of a beeswax!"
+msgstr ""
+"Mày dám đưa cho tao một món hời thế này à! Cảm ơn \n"
+"mày vãi cả chưởng nhé thằng khốn!!"
+
+#. <CLT 4>ここまで喜んでもらえると、
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Taka so pleased with something I gave him makes\n"
+"me happy!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhìn thấy Taka vui sướng với món quà mình tặng làm \n"
+"mình cũng thấy hạnh phúc lây!\n"
+"<CLT>"
+
+#. オレはよォ…
+#. “ダチ”笑われてヘラヘラしてらんねーんだよ…
+msgctxt "0012 | KIYOTAKA ISHIMARU"
+msgid ""
+"I'm not gonna stand here and let my \"friend\" make fun\n"
+"of me!"
+msgstr ""
+"Tao sẽ không đứng đây để mặc cho \"bạn bè\" đem tao ra \n"
+"làm trò cười đâu nhé!"
+
+#. 気合い入れろ、オラァ！！
+msgctxt "0013 | KIYOTAKA ISHIMARU"
+msgid "Get fired up, ya beesting!"
+msgstr "Máu lửa lên xem nào, đồ nhát chết!!"
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think he was too happy with that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tiêu rồi... Hình như cậu ấy không vui lắm với \n"
+"món quà đó...\n"
+"<CLT>"
+
+#. テ、テメェ…
+msgctxt "0015 | KIYOTAKA ISHIMARU"
+msgid "Y-You..."
+msgstr "M-Mày..."
+
+#. なめてんのか！？　コラァァァァアアッ！！
+msgctxt "0016 | KIYOTAKA ISHIMARU"
+msgid "Are you fudging with me right now!? I'll kill you!"
+msgstr ""
+"Mày đang giỡn mặt với tao đấy à!? Tao giết mày \n"
+"bây giờ!!"
+
+#. <CLT 4>怒らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I made him mad. He probably thinks worse of\n"
+"me now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình... nghĩ là mình đã làm cậu ấy giận rồi. Giờ chắc cậu \n"
+"ấy còn ghét mình hơn nữa...<CLT>"
+
+#. やっぱり渡す
+msgctxt "0018 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr "Hay là thôi nhỉ..."
+
+#. 渡さない
+msgctxt "0019 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr "Phải, mình chắc chắn"
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0020 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give him something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn chắc chắn là không muốn tặng cậu ấy thứ gì chứ?\n"
+"<CLT>"

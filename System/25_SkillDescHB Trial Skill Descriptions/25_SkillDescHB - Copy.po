@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 学級裁判で有効。発言力の最大値が＋２。
+msgctxt "0001"
+msgid "Increases Influence Gauge by 2."
+msgstr ""
+
+#. 学級裁判で有効。発言力の最大値が＋５。
+msgctxt "0002"
+msgid "Increases Influence Gauge by 5."
+msgstr ""
+
+#. 学級裁判で有効。集中力の最大値が＋２。
+msgctxt "0003"
+msgid "Increases Focus Gauge by 2."
+msgstr ""
+
+#. 学級裁判で有効。集中力の最大値が＋５。
+msgctxt "0004"
+msgid "Increases Focus Gauge by 5."
+msgstr ""
+
+#. 学級裁判で有効。タイムリミット増加。
+msgctxt "0005"
+msgid "Increases the time limit."
+msgstr ""
+
+#. 学級裁判で有効。選択肢の発言力回復量アップ。
+msgctxt "0006"
+msgid "Increases Influence Gauge recovery."
+msgstr ""
+
+#. 学級裁判で有効。照準のブレが少なくなる。
+msgctxt "0007"
+msgid "Steadies your aim a little."
+msgstr ""
+
+#. 学級裁判で有効。照準のブレが無くなる。
+msgctxt "0008"
+msgid "Completely steadies your aim."
+msgstr ""
+
+#. 学級裁判で有効。照準の移動速度が遅くなる。
+msgctxt "0009"
+msgid "Reduces your aim speed."
+msgstr ""
+
+#. 学級裁判で有効。照準の移動速度が速くなる。
+msgctxt "0010"
+msgid "Increases your aim speed."
+msgstr ""
+
+#. 学級裁判で有効。発射した言弾の速度が上がる。
+msgctxt "0011"
+msgid "Increases your Truth Bullet rate of fire."
+msgstr ""
+
+#. 学級裁判で有効。言弾の発射間隔が短縮。
+msgctxt "0012"
+msgid "Delay between Truth Bullets is decreased."
+msgstr ""
+
+#. 学級裁判で有効。言弾装填を３種類に絞る。
+msgctxt "0013"
+msgid "Decreases statement choice to three."
+msgstr ""
+
+#. 学級裁判で有効。サイレンサー強化。
+msgctxt "0014"
+msgid "Reinforces silencer effectiveness."
+msgstr ""
+
+#. 学級裁判で有効。言弾の記憶速度アップ。
+msgctxt "0015"
+msgid "Increases statement memorization."
+msgstr ""
+
+#. 学級裁判で有効。精神集中時に自動照準。
+msgctxt "0016"
+msgid "Automatically aims during concentration."
+msgstr ""
+
+#. 学級裁判で有効。発言力のダメージ減少。
+msgctxt "0017"
+msgid "Decreases damage to the Influence Gauge."
+msgstr ""
+
+#. 学級裁判で有効。精神集中の持続時間アップ。
+msgctxt "0018"
+msgid "Increases concentration time."
+msgstr ""
+
+#. 学級裁判で有効。精神集中で発言力回復。
+msgctxt "0019"
+msgid "Restores Influence Gauge during concentration."
+msgstr ""
+
+#. 学級裁判で有効。集中力の回復速度アップ。
+msgctxt "0020"
+msgid "Increases speed of Focus Gauge."
+msgstr ""
+
+#. 学級裁判で有効。ＭＴＢで攻撃力アップ。
+msgctxt "0021"
+msgid ""
+"Offensive abilities increase during the\n"
+"Bullet Time Battle."
+msgstr ""
+
+#. 学級裁判で有効。ＭＴＢで弾数が増える。
+msgctxt "0022"
+msgid ""
+"Bullet capacity increases during the\n"
+"Bullet Time Battle."
+msgstr ""
+
+#. 学級裁判で有効。ＭＴＢでロックオン強化。
+msgctxt "0023"
+msgid ""
+"Strengthens lock-on ability during the\n"
+"Bullet Time Battle."
+msgstr ""
+
+#. 学級裁判で有効。ＭＴＢでリロード強化。
+msgctxt "0024"
+msgid ""
+"Improves reload during the Bullet\n"
+"Time Battle."
+msgstr ""
+
+#. 学級裁判で有効。ＭＴＢでテンポアップしやすい。
+msgctxt "0025"
+msgid ""
+"Makes increasing the tempo easier during\n"
+"the Bullet Time Battle."
+msgstr ""
+
+#. 部屋で△ボタンを押すと、調査対象を発見。
+msgctxt "0026"
+msgid ""
+"Pressing the ◇ button in a room will mark\n"
+"objects you can investigate."
+msgstr ""
+
+#. 廊下で×ボタンを押し続ける事で、走って移動。
+msgctxt "0027"
+msgid ""
+"Holding down the ○ button will allow\n"
+"you to run."
+msgstr ""
+
+#. モノクマメダルの入手数が増加する。
+msgctxt "0028"
+msgid "Raises the number of Monocoins earned."
+msgstr ""
+
+#. ※
+msgctxt "0029"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0030"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0031"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0032"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0033"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0034"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0035"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0036"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0037"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0038"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0039"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0040"
+msgid "※"
+msgstr "※"
+
+#. 全てのスキル効果が発動。
+msgctxt "0041"
+msgid "Triggers every skill you have."
+msgstr ""
+
+#. スキルポイントの最大値が＋１。
+msgctxt "0042"
+msgid "Increases max SP by 1."
+msgstr ""
+
+#. スキルポイントの最大値が＋２。
+msgctxt "0043"
+msgid "Increases max SP by 2."
+msgstr ""
+
+#. スキルポイントの最大値が＋３。
+msgctxt "0044"
+msgid "Increases max SP by 3."
+msgstr ""
+
+#. スキルポイントの最大値が９９。
+msgctxt "0045"
+msgid "Increases max SP to 99."
+msgstr ""
+
+#. ？？？
+msgctxt "0046"
+msgid "？？？"
+msgstr ""

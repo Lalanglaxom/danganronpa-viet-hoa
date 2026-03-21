@@ -1,0 +1,502 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ちょっと待って！　掃除当番じゃなくても、
+#. <CLT 3>証拠を処分する方法<CLT>はあったはずだよ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Hold on! I think I know how someone could <CLT 3>dispose of\n"
+"the evidence<CLT> without using the trash room key!"
+msgstr ""
+
+#. だが、鉄格子を開けなければ、
+#. 焼却炉の火を付ける事は出来んのだぞ？
+msgctxt "0002 | SAKURA OOGAMI"
+msgid ""
+"But if you can't get past the gate, you couldn't\n"
+"possibly turn on the incinerator, could you?"
+msgstr ""
+
+#. いや、それが可能だったんだよ。
+#. これを使えばね…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Yes, you could. If you used this."
+msgstr ""
+
+#. 割れちまってるけど…
+#. ガラス玉みてーだな…
+msgctxt "0004 | MONDO OOWADA"
+msgid ""
+"What is it, some kinda glass ball? It's busted to\n"
+"hell..."
+msgstr ""
+
+#. いや、<CLT 3>水晶玉<CLT>…のはずだったんだけども…
+msgctxt "0005 | YASUHIRO HAGAKURE"
+msgid ""
+"Actually, it was supposed to be a <CLT 3>crystal ball<CLT>. But,\n"
+"uh..."
+msgstr ""
+
+#. これを使うって…どうやって使うのぉ？
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "But...how would you use it?"
+msgstr ""
+
+#. 投げる
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Throw it"
+msgstr ""
+
+#. 転がす
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "Roll it"
+msgstr ""
+
+#. 多分、犯人は転がして使ったんだよ…
+#. ボウリングの玉のようにね…
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"The killer most likely used it like a bowling ball,\n"
+"and rolled it..."
+msgstr ""
+
+#. それで、焼却炉のスイッチを押したんだよ！
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"And that's how they pressed the switch on the\n"
+"incinerator!"
+msgstr ""
+
+#. 転がしても…スイッチには届かないんじゃ…？
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid ""
+"But...there's no way for it to hit that switch if you\n"
+"just rolled it."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 占う
+msgctxt "0013 | CHOICE/RE:ACT"
+msgid "Divine with it"
+msgstr ""
+
+#. 犯人は占ったんだよ…
+#. 山田クンが鉄格子を開ける時間帯を…！
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"The killer used it...to divine what time Hifumi would\n"
+"open the gate!"
+msgstr ""
+
+#. そして鉄格子が開いた隙に、
+#. 焼却炉を使ったんだ！
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"And with the gate open, they strolled right in and\n"
+"used the incinerator!"
+msgstr ""
+
+#. じゃあ…犯人は葉隠って事になんのか？
+msgctxt "0016 | MONDO OOWADA"
+msgid "Then...Hiro's the killer?"
+msgstr ""
+
+#. そんな事まで占える訳ないだろ！
+#. むしろ、俺が弟子入りしたいべ！
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Hell no! I could never divine something like that!\n"
+"Hell, I wanna be their apprentice!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. あなたが発言しなければ、
+#. 議論は進まないわ。
+msgctxt "0019 | KYOUKO KIRIGIRI"
+msgid ""
+"If you don't do something, the trial can't move\n"
+"forward."
+msgstr ""
+
+#. 時間には限りがある…
+#. 最悪の結果をあなたは望んでいるの？
+msgctxt "0020 | KYOUKO KIRIGIRI"
+msgid ""
+"We don't have all the time in the world. You're not\n"
+"*trying* to lose this case, are you?"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>犯人はこのガラス玉を使って、
+#. ある事をやったはずだ。それは…
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The killer had to use the glass ball in a certain way.\n"
+"Which was...\n"
+"<CLT>"
+msgstr ""
+
+#. 犯人は鉄格子の隙間から、このガラス玉を投げたんだ。
+#. 焼却炉のスイッチ目掛けてね…
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"The killer simply took aim at the incinerator switch\n"
+"and threw the ball through a gap in the gate."
+msgstr ""
+
+#. そうやって焼却炉のスイッチを押す事で、
+#. 焼却炉に火を付けたんだ！
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"All they had to do was hit that switch, and the\n"
+"incinerator would come to life."
+msgstr ""
+
+#. 鉄格子の隙間から…投げた…？
+msgctxt "0025 | HIFUMI YAMADA"
+msgid "Someone threw that...through a gap in the gate!?"
+msgstr ""
+
+#. 山田クンは…前に言ってたよね？
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "Remember what you said before, Hifumi?"
+msgstr ""
+
+#. およよぉ！
+#. 焼却炉の火が点けっ放しじゃないですかぁ！？
+msgctxt "0027 | HIFUMI YAMADA"
+msgid "Huh!? Someone turned the incinerator on!"
+msgstr ""
+
+#. おっかしいな…前に来た時は、
+#. ちゃんと火は消えていたはずなのですが…
+msgctxt "0028 | HIFUMI YAMADA"
+msgid ""
+"Very strange... I'm quite certain it was off last time\n"
+"I was down here."
+msgstr ""
+
+#. 妖精さんの仕業？
+msgctxt "0029 | HIFUMI YAMADA"
+msgid "Perhaps it was the work of a fairy..."
+msgstr ""
+
+#. 鍵を持っていた山田クンの知らない内に、
+#. 焼却炉の火が付いてたのは…
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"Hifumi had the key, so the only way the incinerator\n"
+"could have been turned on without his knowledge..."
+msgstr ""
+
+#. 犯人が、鉄格子を開けずに、
+#. 焼却炉のスイッチを押したからだったんだ。
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"...was because the killer was able to hit the switch\n"
+"*without* opening the gate."
+msgstr ""
+
+#. そうやって焼却炉の火を付けたところで、
+#. そこに、丸めたワイシャツを投げ込んだんだよ！
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"Once they'd gotten the incinerator going, all they had\n"
+"to do was ball up the shirt and toss it in!"
+msgstr ""
+
+#. お、おい……何言ってんだよ……
+msgctxt "0033 | LEON KUWATA"
+msgid "H-Hey, come on...what the hell is this?"
+msgstr ""
+
+#. 犯人が鉄格子の中に入っていない事は、
+#. 証拠隠滅後の状況が物語っているわ…
+msgctxt "0034 | KYOUKO KIRIGIRI"
+msgid ""
+"All you have to do is look at the scene to know that\n"
+"the killer never actually went inside the trash room."
+msgstr ""
+
+#. 割れたガラス玉…付けっ放しの焼却炉の火…
+#. 燃えカスが残ってしまったという雑な処分方法…
+msgctxt "0035 | KYOUKO KIRIGIRI"
+msgid ""
+"The shards of broken glass, the incinerator left\n"
+"running, the piece of shirt that escaped the fire..."
+msgstr ""
+
+#. 掃除当番が犯人なら、
+#. もっと丁寧に、証拠を隠滅しているはずよ…
+msgctxt "0036 | KYOUKO KIRIGIRI"
+msgid ""
+"If the killer had been on cleaning duty, the evidence\n"
+"would have been taken care of much more thoroughly."
+msgstr ""
+
+#. い、いや…ちょっと待てって…！
+msgctxt "0037 | LEON KUWATA"
+msgid "W-Wait, no...just hold on!"
+msgstr ""
+
+#. でもさぁ、鉄格子から焼却炉までって、
+#. <CLT 3>１０メートル以上<CLT>は離れてたよねぇ…？
+msgctxt "0038 | CHIHIRO FUJISAKI"
+msgid ""
+"But the distance from the gate to the incinerator has\n"
+"to be at least...<CLT 3>thirty feet<CLT>, right?"
+msgstr ""
+
+#. そんな距離から、ガラス玉を投げて、
+#. ピンポイントでスイッチに当てるなんて…
+msgctxt "0039 | CHIHIRO FUJISAKI"
+msgid ""
+"The pinpoint accuracy you'd need to throw a glass ball\n"
+"that far and hit something that small..."
+msgstr ""
+
+#. そんな事…本当に出来るのかなぁ…？
+msgctxt "0040 | CHIHIRO FUJISAKI"
+msgid "Could someone really do that?"
+msgstr ""
+
+#. そ、そうだ…！
+#. そんなの不可能に決まってんじゃん！
+msgctxt "0041 | LEON KUWATA"
+msgid "Th-That's right! There's no way! It'd be impossible!"
+msgstr ""
+
+#. 難しいかもしれないけど…
+#. でも、不可能じゃないはずだよ…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"Difficult, absolutely. Impossible? I don't think so.\n"
+"Because the killer is..."
+msgstr ""
+
+#. 超高校級の野球選手
+msgctxt "0043 | CHOICE/RE:ACT"
+msgid "Ultimate Baseball Star"
+msgstr ""
+
+#. 超高校級の同人作家
+msgctxt "0044 | CHOICE/RE:ACT"
+msgid "Ultimate Fanfic Creator"
+msgstr ""
+
+#. だって、犯人は“超高校級の同人作家”だったから…
+#. そうだよね、山田クン…？
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the Ultimate Fanfic Creator.\n"
+"Isn't that right, Hifumi!?"
+msgstr ""
+
+#. 今の流れで、ご指名ですかぁ！？
+msgctxt "0046 | HIFUMI YAMADA"
+msgid ""
+"Huh? Why am I part of the conversation all of a\n"
+"sudden!?"
+msgstr ""
+
+#. 僕は、正確なコピーで同人を作る事は出来ても、
+#. 正確なコントロールは持ち合わせておりませんぞ！
+msgctxt "0047 | HIFUMI YAMADA"
+msgid ""
+"Sure, I've got the dexterity to draw a comic with the\n"
+"best of 'em, but my accuracy is total garbage!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 超高校級の占い師
+msgctxt "0049 | CHOICE/RE:ACT"
+msgid "Ultimate Clairvoyant"
+msgstr ""
+
+#. だって、犯人は“超高校級の占い師”だったから…
+#. そうだよね、葉隠クン…？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the Ultimate Clairvoyant. Isn't\n"
+"that right, Hiro!?"
+msgstr ""
+
+#. いや、ここは決めるトコだべ…
+#. それともマジで俺だと思ってんのか？
+msgctxt "0051 | YASUHIRO HAGAKURE"
+msgid ""
+"Hey, c'mon. Now's when we get down to the nitty\n"
+"gritty. Or...do you seriously think I did it?"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 今は発言しなければ、議論は進まないわ。
+msgctxt "0053 | KYOUKO KIRIGIRI"
+msgid ""
+"If you don't do something, the trial can't move\n"
+"forward."
+msgstr ""
+
+#. 時間には限りがある…
+#. 最悪の結果をあなたは望んでいるの？
+msgctxt "0054 | KYOUKO KIRIGIRI"
+msgid ""
+"We don't have all the time in the world. You're not\n"
+"*trying* to lose this case, are you?"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いや、犯人にとっては難しくさえなかったのかも…
+#. だって犯人は…
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wouldn't have been much of a challenge at all for\n"
+"the killer. Because...\n"
+"<CLT>"
+msgstr ""
+
+#. だって、犯人は<CLT 3>“超高校級の野球選手”<CLT>だったから…
+#. そうだよね、桑田クン…？
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the <CLT 3>Ultimate Baseball Star<CLT>.\n"
+"Isn't that right, Leon!?"
+msgstr ""
+
+#. バ、バカ言ってんじゃ…ねーって…！
+msgctxt "0058 | LEON KUWATA"
+msgid ""
+"D-Do you have any idea how stupid you sound right\n"
+"now!?"
+msgstr ""
+
+#. 確かに、超高校級の野球選手と称される彼なら、
+#. １０メートル先の的など大した事ないでしょうね。
+msgctxt "0059 | CELES"
+msgid ""
+"A target thirty feet away would surely be little\n"
+"challenge for the Ultimate Baseball Star."
+msgstr ""
+
+#. ふ、ふ、ふ、ふ、ふ、ふざけんな…！
+#. オレは…オレは……！
+msgctxt "0060 | LEON KUWATA"
+msgid "Y-Y-Y-You can't be serious! I...! I...!"
+msgstr ""
+
+#. 犯人なんかじゃねぇっつーのぉ！！
+msgctxt "0061 | LEON KUWATA"
+msgid "I'm not the killer!"
+msgstr ""
+
+#. つーか、今の推理だって、ぜんっぜん間違ってんだよ！
+#. このクソボケウンコタレっ！！
+msgctxt "0062 | LEON KUWATA"
+msgid ""
+"These goddamn shit-for-brains have got it all wrong,\n"
+"I'm telling you!"
+msgstr ""
+
+#. まだ認めないのね。だったら…
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid "You still won't admit it? Okay then..."
+msgstr ""
+
+#. 苗木君…もう１度、事件を振り返って、
+#. 彼の犯行のすべてを明らかにするのよ…
+msgctxt "0064 | KYOUKO KIRIGIRI"
+msgid ""
+"Makoto, go ahead and review the incident one more time\n"
+"to make his crime perfectly clear."
+msgstr ""
+
+#. それで…終わりにさせましょう……
+msgctxt "0065 | KYOUKO KIRIGIRI"
+msgid "And with that, we can end this..."
+msgstr ""
+
+#. だ・か・ら！
+#. 何が終わりだってんだよッ！！
+msgctxt "0066 | LEON KUWATA"
+msgid "Listen to me! What the hell do you mean, end this!?"
+msgstr ""
+
+#. …桑田クン、キミがなんて言おうと、
+#. すべての謎はもう解けてるんだ…
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"Say what you want, Leon. But all the questions have\n"
+"been answered, and the truth has been revealed."
+msgstr ""
+
+#. 今回の事件の答えは、これだ！
+msgctxt "0068 | MAKOTO NAEGI"
+msgid "Now here's what happened...!"
+msgstr ""

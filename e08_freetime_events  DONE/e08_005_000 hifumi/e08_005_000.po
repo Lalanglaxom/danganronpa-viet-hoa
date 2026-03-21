@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give him that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+"<CLT 23>Xin lỗi, nhưng bạn không thể tặng món quà đó. Trong \n"
+"ngành này, chúng tôi gọi đó là <CLT> <CLT 3>vật phẩm chìa khóa<CLT><CLT 23>.<CLT>"
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give him?\n"
+"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
+
+#. いやはや、素敵アイテムをどうもでござるよ！
+msgctxt "0003 | HIFUMI YAMADA"
+msgid "Oh-ho! Thank you for this most wonderful item!"
+msgstr ""
+"Ố hô! Cảm ơn cậu vì vật phẩm tuyệt vời ông mặt trời này \n"
+"nhé!"
+
+#. 山adaが起き上がり、
+#. 仲間になりたそうにこちらを見ている！
+msgctxt "0004 | HIFUMI YAMADA"
+msgid "> HIFUMI gets up and seems to want to join the party."
+msgstr "> HIFUMI đứng dậy, có vẻ như cậu ta muốn gia nhập tổ đội."
+
+#. 仲間にしてあげますか？
+#. むふふふ…！
+msgctxt "0005 | HIFUMI YAMADA"
+msgid ""
+"> Allow HIFUMI to join you?\n"
+"...Mewhehe."
+msgstr ""
+"> Cho phép HIFUMI gia nhập chứ?\n"
+"...Mewhehe."
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean he liked it...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Liệu có phải cậu ấy thích món quà không nhỉ...?\n"
+"<CLT>"
+
+#. キタコレ！　貢ぎ物がキタコレ！！
+msgctxt "0007 | HIFUMI YAMADA"
+msgid "This swag is for me? Epic win!"
+msgstr "Kìa nó về! Lễ vật đã về tới bản rồi! Đỉnh chóp!!"
+
+#. おっとっと！　我が輩とした事が『キタコレ』などと、
+#. ネット用語を使ってしまいました。いや失敬失敬。
+msgctxt "0008 | HIFUMI YAMADA"
+msgid ""
+"Oh, that's Internet slang. Sorry, sometimes I forget\n"
+"not everyone's as streets ahead as I am."
+msgstr ""
+"Ối chết! Một người như tôi mà lại lỡ dùng thuật ngữ mạng\n"
+"sao. Thật là thất lễ, thất lễ quá."
+
+#. ククッ！　この僕がこんな物で喜ぶと思うなよ…
+msgctxt "0009 | HIFUMI YAMADA"
+msgid "Keh-heh. So you thought this would please me, huh?"
+msgstr ""
+"Khà khà! Đừng tưởng một người như tôi sẽ hài lòng với món \n"
+"đồ này...?"
+
+#. こ、こんな…物…！
+msgctxt "0010 | HIFUMI YAMADA"
+msgid "You thought this..."
+msgstr "Cậu nghĩ cái... thứ này."
+
+#. こ、こんな…ッ！！
+msgctxt "0011 | HIFUMI YAMADA"
+msgid "This would...!"
+msgstr "Cái này sẽ...!"
+
+#. うぎゃあああああ！！
+msgctxt "0012 | HIFUMI YAMADA"
+msgid "Guhwaaaaahh!"
+msgstr "Uwaaaaaahh!"
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ。
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that he liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>May quá. Có vẻ như cậu ấy rất thích nó.\n"
+"<CLT>"
+
+#. ま、まさか苗木誠殿から、
+#. こんなレアアイテムを頂けるとは…
+msgctxt "0014 | HIFUMI YAMADA"
+msgid ""
+"I-I never imagined you'd want to give me something so\n"
+"rare, Mr. Naegi!"
+msgstr ""
+"K-Không thể tin được là tôi lại nhận được một vật phẩm \n"
+"hiếm như thế này từ ngài Naegi Makoto...!"
+
+#. ちょｗｗｗ神展開ｗｗｗ超展開ｗｗｗ
+msgctxt "0015 | HIFUMI YAMADA"
+msgid "Super <3 God Level <3 Result <3"
+msgstr ""
+"Vãi chưởng www Cốt truyện thần thánh www Diễn biến siêu \n"
+"cấp www"
+
+#. べ、別に…嬉しくなんかないんだからね！
+#. で、でも…
+msgctxt "0016 | HIFUMI YAMADA"
+msgid "Er, I mean, I guess it's okay!"
+msgstr "K-Không phải là tôi thấy vui hay gì đâu nhé! N-Nhưng mà...!"
+
+#. ちょっと付き合ってあげても、
+#. いいかな…なんて…！
+msgctxt "0017 | HIFUMI YAMADA"
+msgid "Anyway, if you wanted to hang out for a while...!"
+msgstr ""
+"Tôi cũng có thể dành chút thời gian cho cậu... một chút thôi \n"
+"đấy...!"
+
+#. 苗木誠殿のお陰で、
+#. 冷血超人だった僕が友情パワーに目覚めました。
+msgctxt "0018 | HIFUMI YAMADA"
+msgid ""
+"I was once a ruthless ubermensch, but Mr. Naegi has\n"
+"awakened my heart through the power of friendship!"
+msgstr ""
+"Nhờ có ngài Naegi Makoto mà một siêu nhân máu lạnh \n"
+"như tôi đã thức tỉnh được sức mạnh của tình bạn.!"
+
+#. マスターと呼んでもいいですか？
+#. コーホー、コーホー…
+msgctxt "0019 | HIFUMI YAMADA"
+msgid ""
+"May I call you...my master? What is thy bidding, my\n"
+"master?"
+msgstr ""
+"Tôi có thể gọi ngài là chủ nhân không? Tuân lệnh chủ nhân,\n"
+"chủ nhân muốn sai bảo gì nào? Khì khò, khì khò...?"
+
+#. <CLT 4>ここまで喜んでもらえると、
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Hifumi so pleased with something I gave him\n"
+"makes me happy!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thấy Hifumi vui đến mức này, mình cũng thấy \n"
+"vui lây!\n"
+"<CLT>"
+
+#. そうですか。どうもありがとうございました。
+#. それでは拙者はこのへんで。
+msgctxt "0021 | HIFUMI YAMADA"
+msgid ""
+"I see... Well, thank you. Now if you'll excuse me, I'm\n"
+"very busy..."
+msgstr ""
+"Vậy à. Cảm ơn cậu rất nhiều. Vậy tại hạ xin phép cáo lui\n"
+"\n"
+"tại đây."
+
+#. はぁ？　こんな物で喜ぶとでも？
+#. ぷげらっちょ！　笑い死ぬ！
+msgctxt "0022 | HIFUMI YAMADA"
+msgid ""
+"What? LOL if you thought I'd want something like this.\n"
+"Just LMAO."
+msgstr ""
+"LMAO? Nghĩ sao mà tôi lại vui vì cái món này được chứ? \n"
+"Cười bể bụng mất!."
+
+#. わかってない！
+#. 正直、苗木誠殿にはガッカリですな！
+msgctxt "0023 | HIFUMI YAMADA"
+msgid ""
+"Don't you understand me, Mr. Naegi!? Frankly I'm\n"
+"disappointed."
+msgstr ""
+"Cậu chẳng hiểu gì cả! Nói thật là tôi quá thất vọng về\n"
+"ngài Naegi rồi đấy!."
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think he was too happy with that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thôi chết rồi... Có vẻ như mình đã khiến cậu ấy thất \n"
+"vọng...\n"
+"<CLT>"
+
+#. 山田は逃げ出した。
+msgctxt "0025 | HIFUMI YAMADA"
+msgid "> The wild HIFUMI tried to escape!"
+msgstr "> HIFUMI hoang dã đã bỏ chạy!"
+
+#. しかし逃げられない！
+msgctxt "0026 | HIFUMI YAMADA"
+msgid "> But he couldn't get away!"
+msgstr "> Nhưng cậu ta không thể trốn thoát!"
+
+#. ナニソレ…？
+msgctxt "0027 | HIFUMI YAMADA"
+msgid "What's this...?"
+msgstr "Cái gì đây...?"
+
+#. イラネ！
+msgctxt "0028 | HIFUMI YAMADA"
+msgid "Hổng thèm!"
+msgstr "Chê! Hổng thèm!"
+
+#. へぇ……
+msgctxt "0029 | HIFUMI YAMADA"
+msgid "Huh?"
+msgstr "Hể......?"
+
+#. …で？
+msgctxt "0030 | HIFUMI YAMADA"
+msgid "...And?"
+msgstr "...Rồi sao nữa?"
+
+#. <CLT 4>怒らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I made him mad. He probably thinks worse of\n"
+"me now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình đã làm cậu ấy giận rồi... Ấn tượng của mình\n"
+"xấu đi mất...\n"
+"<CLT>"
+
+#. やっぱり渡す
+msgctxt "0032 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr "Để xem lại..."
+
+#. 渡さない
+msgctxt "0033 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr "Mình chắc chắn"
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0034 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give him something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn chắc là không muốn tặng cậu ấy món gì chứ?\n"
+"<CLT>"

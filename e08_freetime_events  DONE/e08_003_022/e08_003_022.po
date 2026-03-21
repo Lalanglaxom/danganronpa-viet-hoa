@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. なぁ、苗木…
+msgctxt "0001 | MONDO OOWADA"
+msgid "Hey, Makoto..."
+msgstr "Này, Makoto..."
+
+#. どうしても、オメーに聞いておかなきゃならねー事が
+#. あるんだけどよ…
+msgctxt "0002 | MONDO OOWADA"
+msgid "Listen, there's somethin' I gotta ask you..."
+msgstr ""
+"Có chuyện này,\n"
+"kiểu gì tao cũng phải hỏi mày..."
+
+#. ど、どうしたの？
+#. そんな深刻なトーンで…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Wh-What is it? You sound really serious..."
+msgstr ""
+"C-Có chuyện gì vậy?\n"
+"Nghe cậu nghiêm túc quá..."
+
+#. いいから黙って聞け…
+msgctxt "0004 | MONDO OOWADA"
+msgid "Just shut up and listen."
+msgstr "Im đi rồi nghe đây..."
+
+#. オメーは犬派か？　猫派か？
+msgctxt "0005 | MONDO OOWADA"
+msgid "So...are you a dog person or a cat person?"
+msgstr "Mày là phe chó hay phe mèo?"
+
+#. …は？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr "...Hả?"
+
+#. 答えろ！　答えねーと殴るぞ！
+msgctxt "0007 | MONDO OOWADA"
+msgid "Just tell me before I beat the shit outta you!"
+msgstr "Trả lời mau! Không thì tao đấm đó!"
+
+#. ちなみにオレは<CLT 3>犬派<CLT>だ！
+#. オラァ！　さっさと答えろ！！
+msgctxt "0008 | MONDO OOWADA"
+msgid ""
+"I'm a <CLT 3>dog person<CLT>, by the way! So what are you!?\n"
+"C'mon, tell me!"
+msgstr ""
+"Nhân tiện thì tao là <CLT 3>phe chó<CLT>! Còn mày thì sao!?\n"
+"Mau trả lời coi nào!!"
+
+#. 犬派
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Dog person"
+msgstr "Phe chó"
+
+#. 猫派
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Cat person"
+msgstr "Phe mèo"
+
+#. ねこ…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "C-Cat..."
+msgstr "M-Mèo..."
+
+#. なんか言ったか、おいィ？
+msgctxt "0012 | MONDO OOWADA"
+msgid "What'd you just say? What'd you just say!?"
+msgstr "Mày vừa nói cái gì!? Nói lại coi!?"
+
+#. 何も言ってないよ！
+msgctxt "0013 | MAKOTO NAEGI"
+msgid "N-Nothing!"
+msgstr "K-Không có gì hết!"
+
+#. <CLT 4>これは…話を合わせないとダメそうだ…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I think it might be best to just follow his lead...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vụ này... chắc mình phải hùa theo cậu ấy thôi...\n"
+"<CLT>"
+
+#. クマ派
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "Bear person"
+msgstr "Phe gấu"
+
+#. クマ派かな…なんて…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "A...bear person?"
+msgstr "C-Có khi là phe gấu...?"
+
+#. クマァ？
+#. オメェ、妙な趣味してんなァ？
+msgctxt "0017 | MONDO OOWADA"
+msgid "Bears? That's fucked up, man."
+msgstr ""
+"Gấu á?\n"
+"Mày có gu quái đản thật đấy."
+
+#. まさか、モノクマもかわいいとか思って…
+msgctxt "0018 | MONDO OOWADA"
+msgid ""
+"You're not tryin' to say you think Monokuma's cute,\n"
+"are ya?"
+msgstr ""
+"Đừng nói là mày còn thấy Monokuma đáng yêu\n"
+"hay gì nhé...?"
+
+#. いや、やめとこうぜ…
+#. モノクマの野郎が出てきそうで胸クソ悪ぃ。
+msgctxt "0019 | MONDO OOWADA"
+msgid ""
+"Shit, I don't even wanna talk about it. Just thinkin'\n"
+"about him popping out pisses me off..."
+msgstr ""
+"Thôi, dẹp mẹ đi... Chỉ cần nghĩ tới cảnh thằng đó chui ra \n"
+"là tao đã thấy phát bực rồi..."
+
+#. つかよォ！
+#. 俺はそもそも犬派か猫派かって聞いてんだよッ！
+msgctxt "0020 | MONDO OOWADA"
+msgid ""
+"Anyway, I asked whether you were specifically a DOG\n"
+"person or a CAT person! Which one!?"
+msgstr ""
+"Mà nói mới nhớ! Ngay từ đầu tao hỏi mày là phe CHÓ \n"
+"hay phe MÈO cơ mà! Là phe nào hả!?"
+
+#. とっとと答えやがれ！
+#. 殴るぞ！
+msgctxt "0021 | MONDO OOWADA"
+msgid "Answer before I piledrive you!"
+msgstr "Trả lời mau lên! Không là mày ăn đấm!"
+
+#. 何迷ってやがんだ！
+#. どっちか答えりゃいいだけだろ、早くしろ！
+msgctxt "0022 | MONDO OOWADA"
+msgid ""
+"What's taking so long!? Just answer the goddamn\n"
+"question!"
+msgstr ""
+"Mày còn lưỡng lự cái gì nữa!\n"
+"Chỉ cần chọn một bên thôi mà, nhanh lên!"
+
+#. <CLT 4>犬派か猫派かってことは…
+#. 要は、どっちが好きかってことだよな？
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Am I a dog person, or a cat person?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Phe chó hay phe mèo...\n"
+"nói cách khác là mình thích bên nào hơn đúng không?\n"
+"<CLT>"
+
+#. <CLT 4>大和田クンは犬派か…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well Mondo's a dog person, so...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mondo là phe chó nhỉ...\n"
+"<CLT>"
+
+#. ボ、ボクも…犬派だよ…
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "I-I'm kind of a dog person, too..."
+msgstr "T-Tớ cũng... là phe chó..."
+
+#. ホントかぁ？
+#. テキトーに話を合わせただけじゃねーだろなぁ？
+msgctxt "0026 | MONDO OOWADA"
+msgid "Really? You're not just sayin' that, right!?"
+msgstr ""
+"Thật không đó?\n"
+"Đừng nói là mày chỉ đang hùa theo tao thôi nhé?"
+
+#. ホ、ホントだよ…
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "N-No, it's true!"
+msgstr "K-Không, thật mà!"
+
+#. 実際、犬を飼った事もあるんだ…
+#. 雑種だったけど、かわいかったよ…
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"Actually, I grew up with a dog in the house.\n"
+"It was a mutt, but it was still pretty cute."
+msgstr ""
+"Thật ra trước đây tớ cũng từng nuôi chó...\n"
+"Dù chỉ là chó lai thôi, nhưng dễ thương lắm..."
+
+#. だよなぁ！　猫もかわいいけど、
+#. やっぱ、犬の方がかわいいよなぁ！？
+msgctxt "0029 | MONDO OOWADA"
+msgid "Right!? Cats are okay, but dogs are WAY cuter!?"
+msgstr ""
+"Đúng rồi còn gì! Mèo cũng oke đó,\n"
+"nhưng chó vẫn dễ thương hơn hẳn đúng không!?"
+
+#. そんで…今は何歳だ？
+msgctxt "0030 | MONDO OOWADA"
+msgid "So, how old is your dog?"
+msgstr "Thế giờ nó bao nhiêu tuổi rồi?"
+
+#. …ううん。飼ってたのは子供の頃だよ。
+#. だから、もう死んじゃったんだ…
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"Oh, uh... Well, we had it when I was a kid.\n"
+"It's...dead now."
+msgstr ""
+"...Ừm không. Tớ nuôi nó từ hồi còn nhỏ cơ.\n"
+"Nên giờ... nó chết rồi..."
+
+#. そ、そうか…
+msgctxt "0032 | MONDO OOWADA"
+msgid "O-Oh..."
+msgstr "V-Vậy à..."
+
+#. わかるぞ…オメーの気持ち…
+msgctxt "0033 | MONDO OOWADA"
+msgid "I know how that feels man..."
+msgstr "Tao hiểu cảm giác đó của mày..."
+
+#. ツレーよなぁ…
+#. 愛する犬をなくすのはよォ…
+msgctxt "0034 | MONDO OOWADA"
+msgid "It's tough to lose a dog you love so much."
+msgstr ""
+"Đau lắm chứ...\n"
+"Mất đi một con chó mình yêu thương mà..."
+
+#. わかる！　わかんぞッ！！
+msgctxt "0035 | MONDO OOWADA"
+msgid "I totally know how you feel!"
+msgstr "Tao hiểu! Tao hiểu lắm chứ!!"
+
+#. 大和田クンも犬を飼ってたの？
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "So you used to have a dog, too?"
+msgstr "Mondo cũng từng nuôi chó à?"
+
+#. チャックってんだ。
+#. マルチーズだけどな。９歳で死んじまった。
+msgctxt "0037 | MONDO OOWADA"
+msgid "Yeah, Chuck. A maltese. He died when he was nine..."
+msgstr ""
+"Nó tên là Chuck.\n"
+"Một con Maltese. Nó mất lúc 9 tuổi..."
+
+#. <CLT 4>マルチーズ…
+#. ドーベルマンとかブルドッグってイメージだけど…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A maltese? I figured Mondo would be more of a pitbull\n"
+"guy, or a doberman...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Maltese à... Mình cứ tưởng kiểu người như Mondo \n"
+"sẽ nuôi Doberman hay Bulldog cơ...\n"
+"<CLT>"
+
+#. チャックは頭が良くってよぉ…
+#. 毎朝、新聞を持って来てくれんだ…
+msgctxt "0039 | MONDO OOWADA"
+msgid ""
+"He was so smart, man. He'd bring in the newspaper\n"
+"every morning."
+msgstr ""
+"Chuck khôn lắm man...\n"
+"Sáng nào nó cũng mang báo đến cho tao."
+
+#. 新聞持ってくるの？　すごいね？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "Really? That's so cool!"
+msgstr "Mang báo tới luôn á? Ghê thật đó!"
+
+#. そんでよぉ。ご褒美に散歩をねだるんだよ。
+msgctxt "0041 | MONDO OOWADA"
+msgid "Right? And then he'd beg me to take him for a walk."
+msgstr "Ừ. Rồi sau đó nó sẽ đòi tao dắt đi dạo như phần thưởng."
+
+#. 上目遣いでしっぽを振り…ながら……
+msgctxt "0042 | MONDO OOWADA"
+msgid ""
+"He'd look up at me with those eyes of his, and wiggle\n"
+"that little butt..."
+msgstr ""
+"Nó ngước lên nhìn tao bằng đôi mắt đó,\n"
+"rồi còn ngoáy đuôi qua lại..."
+
+#. クッ…ヤバ…！
+#. 思い出してきちまった…！
+msgctxt "0043 | MONDO OOWADA"
+msgid "Gah! I don't wanna remember this shit!"
+msgstr ""
+"Khụ... toi rồi...!\n"
+"Tự dưng lại nhớ ra hết rồi...!"
+
+#. うっ…マジで…！
+#. こいつはヤバい…！
+msgctxt "0044 | MONDO OOWADA"
+msgid "Ugh...this seriously sucks!"
+msgstr ""
+"Ư... chết thật...!\n"
+"Vụ này không ổn...!"
+
+#. おい、苗木！　あっち向いてろ！
+msgctxt "0045 | MONDO OOWADA"
+msgid "Don't look at me right now!"
+msgstr "Ê, Makoto! Quay mặt chỗ khác đi!"
+
+#. …あぁ、ダメだ！！
+msgctxt "0046 | MONDO OOWADA"
+msgid "Ah, god dammit...!"
+msgstr "...Aaa, chết tiệt!!"
+
+#. オ、オレはもう行くぞ…！
+msgctxt "0047 | MONDO OOWADA"
+msgid "I gotta go!"
+msgstr "T-Tao đi đây...!"
+
+#. ううっ…チャック……
+msgctxt "0048 | MONDO OOWADA"
+msgid "Ngaaah...! Chuck! My baby boy!"
+msgstr "Ưư... Chuck! Anh bạn của tôi!"
+
+#. <CLT 4>大和田クンは不自然なほど顔を上げながら、
+#. 歩き去っていった。
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo left in a state I'd never seen him in before...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mondo ngẩng mặt lên một cách kỳ lạ rồi bước đi.\n"
+"<CLT>"
+
+#. 大和田クン…<CLT 3>犬好き<CLT>だったんだ…
+#. しかも、かなりの…
+msgctxt "0050 | MAKOTO NAEGI"
+msgid "I had no idea he <CLT 3>loved dogs that much<CLT>..."
+msgstr "Mình không ngờ Mondo lại <CLT 3>mê chó đến thế<CLT>..."
+
+#. <CLT 4>なんだか…大和田クンの事が、
+#. また少しわかった気がした…
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I feel like I've learned a little more about him\n"
+"today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có cảm giác như hôm nay,\n"
+"mình lại hiểu thêm về Mondo một chút...\n"
+"<CLT>"
+
+#. <CLT 23>大和田紋土の<CLT><CLT 3>通信簿<CLT><CLT 23>に、今の情報を追記致しました。
+#. <CLT>
+msgctxt "0052 | NARRATION"
+msgid ""
+"<CLT 23>Mondo's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with him.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Mondo đã được cập nhật dựa trên \n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>"
+
+#. <CLT 23>おめでとうございます。
+#. スキル<CLT><CLT 3>“シフトアップ”<CLT><CLT 23>を獲得致しました。
+#. <CLT>
+msgctxt "0053 | NARRATION"
+msgid ""
+"<CLT 23>You just unlocked the skill <CLT><CLT 3>Upshift<CLT><CLT 23>!\n"
+"Give yourself a pat on the back. You've earned it!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn vừa mở khóa được kỹ năng <CLT><CLT 3>Sang Số Tiến<CLT><CLT 23>! \n"
+"Cho một tràng pháo tay đi nào. Vì bạn xứng đáng!\n"
+"<CLT>"
+
+#. <CLT 4>大和田クンと別れた後、
+#. ボクは、いったん自分の部屋へと戻る事にした。
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Once we were all done, I headed back to my room for a\n"
+"little while...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi tạm biệt Mondo,\n"
+"mình quyết định trước hết quay về phòng một lát...\n"
+"<CLT>"

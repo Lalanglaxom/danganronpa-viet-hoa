@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. もしかして…心配してくれてるの…？
+msgctxt "0001 | CHIHIRO FUJISAKI"
+msgid "Are you concerned about me...?"
+msgstr ""
+
+#. ごめんね、心配ばっかり掛けちゃって…
+msgctxt "0002 | CHIHIRO FUJISAKI"
+msgid "Sorry to make you worry..."
+msgstr ""
+
+#. 一緒に過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time with Chihiro"
+msgstr ""
+
+#. 他の場所へ行く
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr ""
+
+#. <CLT 4>…どうしよう？
+#. 不二咲さんを励まそうか？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I try to cheer up Chihiro...?\n"
+"<CLT>"
+msgstr ""
+
+#. なんか…気を使わせちゃって…
+#. ごめんね…
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "I'm really sorry for worrying you..."
+msgstr ""
+
+#. でも、嬉しいよ…
+#. ありがとうね…
+msgctxt "0007 | CHIHIRO FUJISAKI"
+msgid "But...I'm happy you're here. Thank you."
+msgstr ""
+
+#. <CLT 4>不二咲さんと一緒に休憩した。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I took some time to stay with Chihiro...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>不二咲さんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr ""
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr ""
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Chihiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr ""

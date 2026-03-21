@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 俺とお前は同じ人間とは思えないほど、
+#. 能力や容姿や身分において差が開いている…
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgid ""
+"We are so different in ability, appearance, and status\n"
+"that I can hardly believe we're even the same species."
+msgstr ""
+
+#. その事をちゃんと考慮しているのか？
+#. なら、気安く話しかけられないはずだぞ？
+msgctxt "0002 | BYAKUYA TOGAMI"
+msgid ""
+"You do understand that, right? So why do you act like\n"
+"it's natural for you to talk to me?"
+msgstr ""
+
+#. 一緒に過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time with Byakuya"
+msgstr ""
+
+#. 他の場所へ行く
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr ""
+
+#. <CLT 4>…どうしよう？
+#. 十神クンを誘ってみようか？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I talk to Byakuya for a while?\n"
+"<CLT>"
+msgstr ""
+
+#. …いいだろう。
+#. お前の為に、俺の貴重な時間を少しだけ割いてやろう。
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgid ""
+"Fine. I don't mind allowing you to indulge in my\n"
+"attention."
+msgstr ""
+
+#. ありがたく思えよ…
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid "I hope you appreciate this."
+msgstr ""
+
+#. <CLT 4>十神クンと一緒に過ごした…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Byakuya...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>十神クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Byakuya and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr ""
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr ""
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Byakuya a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr ""

@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give her that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give her?\n"
+"<CLT>"
+msgstr ""
+
+#. …いいの？
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid "...Are you sure about this?"
+msgstr ""
+
+#. 悪いわね…
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid "Sorry..."
+msgstr ""
+
+#. それ…あまり見ないものね…
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid "This is...something you don't see too often."
+msgstr ""
+
+#. 預かってもいい？
+#. 少し調べてみたいの。
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid ""
+"Do you mind if I keep it? I'd like to take a closer\n"
+"look at it."
+msgstr ""
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean she liked it...?\n"
+"<CLT>"
+msgstr ""
+
+#. へぇ、面白い物ね…
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid "Well now, this is interesting."
+msgstr ""
+
+#. ちょっと興味があるわ。
+#. 貰っておこうかしら。
+msgctxt "0009 | KYOUKO KIRIGIRI"
+msgid "I must admit, I'm intrigued. Can I hold on to it?"
+msgstr ""
+
+#. ふふふ…
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid "Hmhmhm..."
+msgstr ""
+
+#. こんな物で喜ぶなんて、
+#. なんだか自分がおかしいわ…
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgid "I actually feel...pleased. How strange..."
+msgstr ""
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ。
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that she liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+
+#. …ありがとう。大切にするわね。
+msgctxt "0013 | KYOUKO KIRIGIRI"
+msgid "Thank you. This really means a lot to me."
+msgstr ""
+
+#. なんで知ってるの？
+#. 私が、それを欲しがっていた事…
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgid "How did you know I was interested in this?"
+msgstr ""
+
+#. 苗木君、あなたって不思議な人ね…
+msgctxt "0015 | KYOUKO KIRIGIRI"
+msgid "You're an enigma, Makoto Naegi..."
+msgstr ""
+
+#. <CLT 4>ここまで喜んでもらえると、
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Kyoko so pleased with something I gave her\n"
+"makes me happy!\n"
+"<CLT>"
+msgstr ""
+
+#. あげる人を間違えているんじゃない？
+msgctxt "0017 | KYOUKO KIRIGIRI"
+msgid "Are you sure you're giving this to the right person?"
+msgstr ""
+
+#. 私には不要な物ね。
+msgctxt "0018 | KYOUKO KIRIGIRI"
+msgid "I have no need for this."
+msgstr ""
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think she was too happy with that...\n"
+"<CLT>"
+msgstr ""
+
+#. いちいち言わなくちゃ駄目？
+msgctxt "0020 | KYOUKO KIRIGIRI"
+msgid "Do I even need to say it?"
+msgstr ""
+
+#. いらないわ…
+msgctxt "0021 | KYOUKO KIRIGIRI"
+msgid "Obviously I don't need something like this."
+msgstr ""
+
+#. そんな物…よく持ってたわね…
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid ""
+"Frankly, I'm surprised you would even have something\n"
+"like this."
+msgstr ""
+
+#. わかってる？　褒めてるんじゃなくて、
+#. 呆れているのよ？
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid "That's not a compliment, by the way."
+msgstr ""
+
+#. <CLT 4>怒らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I made her mad. She probably thinks worse of\n"
+"me now...\n"
+"<CLT>"
+msgstr ""
+
+#. やっぱり渡す
+msgctxt "0025 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr ""
+
+#. 渡さない
+msgctxt "0026 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr ""
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0027 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give her something?\n"
+"<CLT>"
+msgstr ""

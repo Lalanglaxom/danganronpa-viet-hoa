@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give him that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+"<CLT 23>Xin lỗi, nhưng bạn không thể tặng món quà đó. Trong \n"
+"ngành này, chúng tôi gọi đó là <CLT> <CLT 3>vật phẩm chìa khóa<CLT><CLT 23>.<CLT>"
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give him?\n"
+"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
+
+#. ………………
+msgctxt "0003 | KIYOTAKA ISHIMARU"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>何も反応がないな…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No response...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không trả lời...\n"
+"<CLT>"
+
+#. やっぱり渡す
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr "Để xem lại..."
+
+#. 渡さない
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr "Mình chắc chắn"
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give him something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn chắc chắn là không muốn tặng cậu ấy thứ gì chứ?\n"
+"<CLT>"

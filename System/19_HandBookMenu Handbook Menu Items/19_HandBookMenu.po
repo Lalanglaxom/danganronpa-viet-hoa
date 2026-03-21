@@ -1,0 +1,203 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. マップ
+msgctxt "0001"
+msgid "Map"
+msgstr "Bản đồ"
+
+#. 言弾（コトダマ）
+msgctxt "0002"
+msgid "Truth Bullets"
+msgstr "Đạn Sự Thật"
+
+#. プレゼント
+msgctxt "0003"
+msgid "Presents"
+msgstr "Quà tặng"
+
+#. 通信簿
+msgctxt "0004"
+msgid "Report Card"
+msgstr "Bảng điểm"
+
+#. 校則
+msgctxt "0005"
+msgid "Regulations"
+msgstr "Nội quy"
+
+#. システム
+msgctxt "0006"
+msgid "System"
+msgstr "Hệ thống"
+
+#. セーブ
+msgctxt "0007"
+msgid "Save"
+msgstr "Lưu"
+
+#. ロード
+msgctxt "0008"
+msgid "Load"
+msgstr "Tải"
+
+#. バックログ
+msgctxt "0009"
+msgid "Transcript"
+msgstr "Lịch Sử"
+
+#. オプション
+msgctxt "0010"
+msgid "Options"
+msgstr "Tùy chọn"
+
+#. ＢＧＭ音量
+msgctxt "0011"
+msgid "BGM Volume"
+msgstr "Âm lượng BGM"
+
+#. ＳＥ音量
+msgctxt "0012"
+msgid "SFX Volume"
+msgstr "Âm lượng SFX"
+
+#. ボイス音量
+msgctxt "0013"
+msgid "Voice Volume"
+msgstr "Âm lượng giọng nói"
+
+#. 移動時の画面揺れ
+msgctxt "0014"
+msgid "Movement Bob"
+msgstr "Rung lắc khi di chuyển"
+
+#. 初期設定に戻す
+msgctxt "0015"
+msgid "Reset Settings"
+msgstr "Khôi phục cài đặt gốc"
+
+#. あり
+msgctxt "0016"
+msgid "Yes"
+msgstr "Có"
+
+#. なし
+msgctxt "0017"
+msgid "No"
+msgstr "Không"
+
+#. 実行
+msgctxt "0018"
+msgid "Execute"
+msgstr "Thực thi"
+
+#. 名前
+msgctxt "0019"
+msgid "Name"
+msgstr "Tên"
+
+#. 身長
+msgctxt "0020"
+msgid "Height"
+msgstr "Chiều cao"
+
+#. 体重
+msgctxt "0021"
+msgid "Weight"
+msgstr "Cân nặng"
+
+#. 胸囲
+msgctxt "0022"
+msgid "Chest"
+msgstr "Vòng ngực"
+
+#. 特記
+msgctxt "0023"
+msgid "Special Ability"
+msgstr "Năng lực đặc biệt"
+
+#. 獲得情報
+msgctxt "0024"
+msgid "Info"
+msgstr "Thông tin"
+
+#. 獲得スキル
+msgctxt "0025"
+msgid "Skills"
+msgstr "Kỹ năng"
+
+#. コトダマ選択
+msgctxt "0026"
+msgid "Bullet Select"
+msgstr "Chọn đạn"
+
+#. コトダマ詳細
+msgctxt "0027"
+msgid "Bullet Details"
+msgstr "Chi tiết đạn"
+
+#. プレゼント選択
+msgctxt "0028"
+msgid "Present Select"
+msgstr "Chọn quà"
+
+#. プレゼント詳細
+msgctxt "0029"
+msgid "Present Details"
+msgstr "Chi tiết quà"
+
+#. 名前
+msgctxt "0030"
+msgid "Name"
+msgstr "Tên"
+
+#. 身長
+msgctxt "0031"
+msgid "Height"
+msgstr "Chiều cao"
+
+#. 体重
+msgctxt "0032"
+msgid "Weight"
+msgstr "Cân nặng"
+
+#. 胸囲
+msgctxt "0033"
+msgid "Chest"
+msgstr "Vòng ngực"
+
+#. 特記
+msgctxt "0034"
+msgid "Special Ability"
+msgstr "Năng lực đặc biệt"
+
+#. 獲得情報
+msgctxt "0035"
+msgid "Info"
+msgstr "Thông tin"
+
+#. 獲得スキル
+msgctxt "0036"
+msgid "Skills"
+msgstr "Kỹ năng"
+
+#. メインメニューに戻る
+msgctxt "0037"
+msgid "Return to Main Menu"
+msgstr "Quay lại menu chính"
+
+#. 照準移動速度
+msgctxt "0038"
+msgid "Reticle Speed"
+msgstr "Tốc độ tâm ngắm"

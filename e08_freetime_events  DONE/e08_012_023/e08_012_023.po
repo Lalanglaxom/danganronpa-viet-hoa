@@ -1,0 +1,229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 苗木君…
+#. 実は、わたくし困っていまして…
+msgctxt "0001 | CELES"
+msgid "Hello, Makoto. I must say, I am quite troubled..."
+msgstr "Makoto nè... Thật ra, tôi đang gặp chút rắc rối..."
+
+#. 困ってる？　セレスさんが？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Huh? How come?"
+msgstr "Rắc rối sao? Cả người như Celeste cũng gặp rắc rối à?"
+
+#. 教えて欲しい事があるのです。
+msgctxt "0003 | CELES"
+msgid "I'd like you to teach me something."
+msgstr "Có chuyện này tôi muốn cậu chỉ dạy cho tôi."
+
+#. …え？　何？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "What...?"
+msgstr "...Hả? Chuyện gì cơ?"
+
+#. <CLT 3>将棋<CLT>をですね、教えて欲しいのです。
+msgctxt "0005 | CELES"
+msgid "I want you to teach me how to play <CLT 3>shogi<CLT>."
+msgstr "Tôi muốn cậu dạy tôi cách chơi <CLT 3>cờ Shogi<CLT> đó."
+
+#. あ、ごめん…
+#. ボクもわからないよ…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Oh, uh... Sorry, I don't know how to play, either."
+msgstr "À, xin lỗi nhé... tớ cũng không biết chơi môn đó đâu..."
+
+#. …そうですか、あなたは本当に使えないのですね。
+msgctxt "0007 | CELES"
+msgid "I see... You really are useless, aren't you?"
+msgstr "...Vậy sao, cậu đúng là chẳng được việc gì cả nhỉ."
+
+#. …だけどさ、意外だね。
+#. セレスさんが将棋を知らないなんて…
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"Uh, okay... But I'm surprised you don't know how to\n"
+"play."
+msgstr ""
+"...Nhưng mà lạ thật đấy. Không ngờ Celeste lại không biết \n"
+"chơi Shogi..."
+
+#. 将棋はギャンブルじゃないから…って事？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"Is it because there's no, like, shogi gambling\n"
+"circuit?"
+msgstr ""
+"Có phải vì Shogi không phải là một môn cờ bạc nên cậu mới \n"
+"không biết... đúng không?"
+
+#. あら、将棋のギャンブルなら存在しますよ。
+msgctxt "0010 | CELES"
+msgid "Oh, there most certainly is."
+msgstr "Ô kìa, cá cược Shogi vẫn tồn tại đó chứ."
+
+#. え、そうなo？
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "What, really?"
+msgstr "Hả, thật sao?"
+
+#. 闇将棋ですけどね…
+msgctxt "0012 | CELES"
+msgid "But it is all underground."
+msgstr "Có điều đó là cờ shogi ngầm, yami shogi đó..."
+
+#. 地下で行われているのです。
+#. 以前、わたくしも参加しましたわよ。
+msgctxt "0013 | CELES"
+msgid ""
+"It is rather shady, all things considered. I have\n"
+"tried my own hand at it, naturally."
+msgstr ""
+"Những trận đấu đó được tổ chức dưới thế giới ngầm. Trước \n"
+"đây tôi cũng từng tham gia rồi đó."
+
+#. …将棋知らないのに？
+msgctxt "0014 | MAKOTO NAEGI"
+msgid "Wait, even though you don't know how to play?"
+msgstr "...Dù cậu không biết chơi sao?"
+
+#. だからこそ気になっているのです。
+msgctxt "0015 | CELES"
+msgid "That is why I wish to learn now."
+msgstr "Chính vì thế nên giờ tôi mới thấy thắc mắc đây."
+
+#. あの時、わたくしが<CLT 3>適当に指していた<CLT>将棋は、
+#. 一体どのようなものだったのか…
+msgctxt "0016 | CELES"
+msgid ""
+"I <CLT 3>placed my pieces without even thinking<CLT>. What on\n"
+"Earth was I doing...?"
+msgstr ""
+"Không biết khi đó, những nước đi mà tôi <CLT 3>đã đánh \n"
+"bừa<CLT> thực chất là như thế nào nhỉ..."
+
+#. そんな事も知らないのに…
+#. 闇将棋なんかに参加したの？
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"And you still tried to win an underground shogi\n"
+"tournament?"
+msgstr ""
+"Đến cả luật chơi còn không biết... mà cậu vẫn tham gia vào \n"
+"thế giới cờ shogi ngầm đó sao?"
+
+#. というより、<CLT 3>大会で優勝<CLT>しました。
+msgctxt "0018 | CELES"
+msgid "Tried? Oh, no. <CLT 3>I did win<CLT>."
+msgstr ""
+"Đúng hơn là, tôi <CLT 3>đã giành chức vô địch<CLT> ở đại \n"
+"hội đó luôn."
+
+#. …優勝！？
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "You won!?"
+msgstr "...Vô địch luôn sao!?"
+
+#. よくわかりませんが、
+#. 決勝の相手はかなりの強敵らしかったですわ。
+msgctxt "0020 | CELES"
+msgid ""
+"I didn't really understand, but apparently my final\n"
+"opponent was infamously powerful."
+msgstr ""
+"Tôi cũng không rõ lắm, nhưng nghe nói đối thủ ở trận chung \n"
+"kết là một kẻ cực kỳ đáng gờm."
+
+#. なんか変わった女性で…
+#. メイド服を着たぽっちゃり美人でしたわね。
+msgctxt "0021 | CELES"
+msgid ""
+"She was...rather odd. She was a voluptuous woman who\n"
+"dressed as an exotic French maid."
+msgstr ""
+"Đó là một người phụ nữ khá kỳ lạ... một mỹ nhân đẫy đà \n"
+"trong bộ trang phục hầu gái."
+
+#. なんで…勝てたの…？
+msgctxt "0022 | MAKOTO NAEGI"
+msgid "But...how did you win?"
+msgstr "Tại sao... cậu lại thắng được chứ...?"
+
+#. <CLT 3>ビギナーズラック<CLT>でしょうか？
+msgctxt "0023 | CELES"
+msgid "<CLT 3>Beginner's luck<CLT>, perhaps?"
+msgstr "Chắc là do <CLT 3>vận may của người mới<CLT> chăng?"
+
+#. 将棋にビギナーズラックも何もないんじゃ…
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "I don't think beginner's luck works in shogi..."
+msgstr ""
+"Tớ không nghĩ trong Shogi lại tồn tại cái gọi là vận may của \n"
+"người mới bắt đầu đâu..."
+
+#. Ư fư fư fư…そうなんですかね？
+msgctxt "0025 | CELES"
+msgid "Hmhmhm. Is that so?"
+msgstr "Ư fư fư fư... vậy sao?"
+
+#. <CLT 4>セレスさん…知れば知るほど、
+#. ますます訳がわからなくなっていくな…
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Yup. The more I learn about Celeste, the less I\n"
+"understand her...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Celeste à... Càng biết nhiều về cậu ấy, mình lại càng \n"
+"thấy chẳng hiểu gì cả...\n"
+"<CLT>"
+
+#. <CLT 23>セレスの<CLT><CLT 3>通信簿<CLT><CLT 23> bi kịch 情報を追記致しました.
+#. <CLT>
+msgctxt "0027 | NARRATION"
+msgid ""
+"<CLT 23>Celeste's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with her.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Celeste đã được cập nhật dựa trên\n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>\""
+
+#. <CLT 23>おめでとうございます.
+#. <CLT><CLT 3>“スキルポイント”<CLT><CLT 23>が上がりました.
+#. <CLT>
+msgctxt "0028 | NARRATION"
+msgid ""
+"<CLT 23>Your maximum number of <CLT><CLT 3>Skill Points<CLT><CLT 23> has increased!\n"
+"Hey, look at you go!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Chúc mừng! <CLT><CLT 3>Điểm Kỹ năng<CLT><CLT 23> tối đa của bạn đã tăng lên! \n"
+"Tiếp tục phát huy nhé!\n"
+"<CLT>"
+
+#. <CLT 4>セレスさんの壮絶な過去に困惑しつつ、
+#. ボク là 自分の部屋へと戻っていった.
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Reeling from Celeste's fearsome past, I went back to\n"
+"my room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vừa thấy bối rối trước quá khứ kinh hoàng của \n"
+"Celeste, tôi vừa quay trở về phòng của mình.\n"
+"<CLT>"

@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give her that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+"<CLT 23>Xin lỗi, nhưng bạn không thể tặng món quà đó. Trong \n"
+"ngành này, chúng tôi gọi đó là <CLT> <CLT 3>vật phẩm chìa khóa<CLT><CLT 23>.<CLT>"
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ.
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give her?\n"
+"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
+
+#. えへへ、ありがとね。
+#. すっごく嬉しいよ.
+msgctxt "0003 | AOI ASAHINA"
+msgid "Hehe. Thanks! I'm super stoked!"
+msgstr "Ê hê hê, cảm ơn ông nha. Tui vui lắm luôn á!"
+
+#. 苗木～！　心の友よ～！
+msgctxt "0004 | AOI ASAHINA"
+msgid "Makoto! It's like you read my mind!"
+msgstr "Makoto ơi~! Đúng là tri kỷ của tui mà~!"
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean she liked it...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Liệu cô ấy có thấy vui chút nào không nhỉ...?\n"
+"<CLT>"
+
+#. うんうん、余は満足じゃ！
+#. 素敵な貢ぎ物を感謝するぞ！
+msgctxt "0006 | AOI ASAHINA"
+msgid "Ah, yes! The queen accepts this royal tribute!"
+msgstr ""
+"Ừm ừm, bổn cung rất hài lòng! Đa tạ vì món lễ vật tuyệt \n"
+"vời này nhé!"
+
+#. なーんてね！
+#. ありがと、苗木！
+msgctxt "0007 | AOI ASAHINA"
+msgid "Heh, just kiddin'! Thanks, Makoto!"
+msgstr "Giỡn chút thôi! Cảm ơn nha, Makoto!"
+
+#. うわぁ！　何それ！
+#. 超カワイイじゃん！！
+msgctxt "0008 | AOI ASAHINA"
+msgid "Whoa, what is this!? It's super cute!"
+msgstr "Oa! Cái gì đây! Nhìn dễ thương xỉu luôn á!!"
+
+#. いいの、いいの？
+#. ホントに貰っていいの？
+msgctxt "0009 | AOI ASAHINA"
+msgid "For real? You're sure I can have this!?"
+msgstr "Được hả, thiệt hả? Tui lấy thiệt nha?"
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ.
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that she liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>May quá. Có vẻ như cô ấy thích nó.\n"
+"<CLT>"
+
+#. え！？　いいんすか！？
+#. これって、貰っちゃっていいんすか！？
+msgctxt "0011 | AOI ASAHINA"
+msgid "What!? I can keep this, right? Right!?"
+msgstr ""
+"Hả!? Thật không ông!? Tui nhận món này thiệt luôn \n"
+"được hả!?"
+
+#. ほぇ～！　幸せ～！
+msgctxt "0012 | AOI ASAHINA"
+msgid "Yay! Ultra stoked!"
+msgstr "Hú u~! Hạnh phúc quá đi~!"
+
+#. えへへ～！　気が利くー！
+#. これだから苗木は好きなんだよ！
+msgctxt "0013 | AOI ASAHINA"
+msgid "Hehe, how thoughtful! This is why I like you, Makoto!"
+msgstr ""
+"Ê hê hê~! Ông tâm lý ghê á! Bởi vậy tui mới thích Makoto\n"
+"nhất luôn!"
+
+#. あ、違う違う！
+#. 好きって…そういうアレじゃないからね！！
+msgctxt "0014 | AOI ASAHINA"
+msgid ""
+"Er, I mean—not, like, *like* like! Not *that* kind of\n"
+"like!"
+msgstr ""
+"À, không phải không phải! Thích ở đây... không phải kiểu \n"
+"\"thích thích\" kia đâu nha!!"
+
+#. <CLT 4>ここまで喜んでもらえると、
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Hina so pleased with something I gave her makes\n"
+"mean happy!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thấy Aoi vui đến thế, người tặng như tôi cũng thấy \n"
+"hạnh phúc lây!\n"
+"<CLT>"
+
+#. な、なんか…リアクションに困るんですけど…
+#. 一応…ありがと…
+msgctxt "0016 | AOI ASAHINA"
+msgid ""
+"I-I'm not sure how I'm supposed to react. Er, I\n"
+"mean...thanks, I guess."
+msgstr ""
+"N-Nói sao ta... phản ứng sao cho hợp giờ ta... Dù sao thì... \n"
+"cũng cảm ơn ông..."
+
+#. な、苗木ってば…マニアック過ぎ…
+#. 私の理解を軽く超えてるって…
+msgctxt "0017 | AOI ASAHINA"
+msgid ""
+"This is kind of...intense, Makoto. I mean, it's not\n"
+"really what I was expecting..."
+msgstr ""
+"M-Makoto nè... ông mặn quá rồi đó... Gu của ông vượt xa tầm \n"
+"hiểu biết của tui luôn rồi..."
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think she was too happy with that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chết rồi... Hình như mình làm cô ấy thất vọng rồi...\n"
+"<CLT>"
+
+#. な、苗木って…
+#. 私の事…そういう風に見てたの…？
+msgctxt "0019 | AOI ASAHINA"
+msgid "Is this how you see me...?"
+msgstr "M-Makoto... thì ra ông nhìn tui theo kiểu đó hả...?"
+
+#. 心外だよ！　とっても心外だよ！
+msgctxt "0020 | AOI ASAHINA"
+msgid "Disappointed! Ultra disappointed!"
+msgstr "Tổn thương ghê gớm! Tui thất vọng về ông quá đi!"
+
+#. うーん…
+msgctxt "0021 | AOI ASAHINA"
+msgid "Hmm..."
+msgstr "Hừm..."
+
+#. ううーん……
+msgctxt "0022 | AOI ASAHINA"
+msgid "Hmmmmmmm..."
+msgstr "Hừm m m m m m m..."
+
+#. ダメだ！　それの使い道が思い付かない！
+#. 私には扱い切れないよ！
+msgctxt "0023 | AOI ASAHINA"
+msgid "Nope! Can't think of a single thing this is good for!"
+msgstr ""
+"Chịu rồi! Tui không nghĩ ra được món này dùng để làm cái gì \n"
+"luôn á! Món này quá tầm với tui rồi!"
+
+#. <CLT 4>怒らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I made her mad. She probably thinks worse of\n"
+"me now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hình như mình làm cô ấy giận rồi... Ấn tượng xấu đi \n"
+"mất rồi...\n"
+"<CLT>"
+
+#. やっぱり渡す
+msgctxt "0025 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr "Để xem lại..."
+
+#. 渡さない
+msgctxt "0026 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr "Mình chắc chắn"
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0027 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give her something?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn chắc là không muốn tặng cậu ấy món gì chứ?\n"
+"<CLT>"

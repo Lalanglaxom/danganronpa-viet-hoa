@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+
+#. よぉ！　色んな意味で俺と兄弟になる予定の苗木っち！
+#. 一緒に子育て頑張ろうな！
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid ""
+"Hey, Makoto! What's up, my brother and fellow mother\n"
+"lover? Let's raise our semi-siblings up right, okay!?"
+msgstr ""
+"Chào Makoto - người anh em cùng mẹ của con với tui! Tụi \n"
+"mình cùng cố gắng nuôi dạy con cái cho tốt nhé!?"
+
+#. や、やめてよ…それ…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "S-Stop talking about that..."
+msgstr "Th-Thôi đi mà... đừng nói về chuyện đó nữa..."
+
+#. おや！？　占って欲しくなった！？
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid "So! You ready for the next round!?"
+msgstr "Ô kìa!? Ông lại muốn tui xem bói cho rồi chứ gì!?"
+
+#. ならないよ！
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "Never!"
+msgstr "Không đời nào!"
+
+#. ていうかさ、葉隠クンって、
+#. どうやって占ってるの？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"...Actually, how do you do your fortune-telling,\n"
+"anyway?"
+msgstr "...Cơ mà, Hiro này, thực ra ông xem bói bằng cách nào vậy?"
+
+#. 前だって、手相とか見た訳でも、
+#. 道具を使った訳でもなかったし…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"I saw you doing palm readings and stuff, and you\n"
+"didn't use any tools or anything..."
+msgstr ""
+"Lần trước tui thấy ông cũng đâu có xem chỉ tay, mà cũng \n"
+"chẳng dùng đạo cụ gì hết..."
+
+#. ほぅ…占い道具を使う事を知ってるとは…
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgid "Wow, I didn't know you knew about divination tools!"
+msgstr ""
+"Hồ... Không ngờ ông cũng biết đến việc phải dùng đạo cụ \n"
+"xem bói cơ đấy!"
+
+#. 苗木っちは占いに関して、
+#. なかなかの知識を持ってるみてーだな…
+msgctxt "0008 | YASUHIRO HAGAKURE"
+msgid "Sounds like you know your way around the spirit world!"
+msgstr "Xem ra Makoto cũng có kiến thức về bói toán ra phết nhỉ!"
+
+#. 知識なんかなくてもわかるよ。
+#. 道具を使ったりする事くらい…
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"Er, I'm not sure you need to know that much to know\n"
+"about those kinda tools."
+msgstr ""
+"Cái này thì cần gì kiến thức, mấy chuyện như dùng đạo cụ thì \n"
+"ai chẳng biết chứ..."
+
+#. 官は、そんな苗木っちに問題だべ。
+#. 答えられたら、占い料金を割り引いてやる。
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgid ""
+"Now that I know you're an expert, I have a question\n"
+"for you! A correct answer gets you another discount!"
+msgstr ""
+"Được rồi, vậy để tui đố Makoto một câu. Trả lời đúng tui sẽ \n"
+"giảm giá tiền xem bói cho luôn!"
+
+#. いや…そんな必要は…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "No thanks..."
+msgstr "Thôi... không cần đâu..."
+
+#. 大アルカナと呼ばれる２２枚のカードと、
+#. 小アルカナと呼ばれる５６枚のカードが存在し…
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgid ""
+"There are 22 cards known as the Major Arcana, and 56\n"
+"cards known as the Minor Arcana..."
+msgstr ""
+"Gồm có 22 lá bài được gọi là Ẩn chính (Major Arcana), và 56 \n"
+"lá bài được gọi là Ẩn phụ (Minor Arcana)..."
+
+#. 一般的には、大アルカナのみで行われるカード占い…
+#. それをなんて言うか知ってっか？
+msgctxt "0013 | YASUHIRO HAGAKURE"
+msgid ""
+"Generally, the cards from the Major Arcana are used\n"
+"for divination. Do you know what I'm talking about!?"
+msgstr ""
+"Thông thường, người ta chỉ dùng các lá bài Ẩn chính để xem \n"
+"bói... Ông có biết đó gọi là gì không?"
+
+#. タロット
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "Tarot"
+msgstr "Bài Tarot"
+
+#. 易経
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "I Ching"
+msgstr "Kinh Dịch"
+
+#. 易経だったかな？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "Isn't that the I Ching?"
+msgstr "Là Kinh Dịch phải không?"
+
+#. おおッ！
+#. 易経を知ってるとは…本当に詳しいベ…
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Whoa! You even know about the I Ching! You're mega\n"
+"smart...!"
+msgstr "Ồ! Biết cả Kinh Dịch luôn à... Đúng là am hiểu thật sự...!"
+
+#. けども易経で使うのは筮竹、竹だべ.
+#. カードを使うのはまた別だ.
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgid ""
+"But the I Ching actually uses special bamboo sticks\n"
+"for fortune-telling, not cards."
+msgstr ""
+"Nhưng Kinh Dịch thì người ta dùng thẻ tre chứ. Dùng bài thì \n"
+"lại là chuyện khác rồi."
+
+#. つーか、カードのがよっぽど有名じゃねーか？
+#. 苗木っち cũng 知ってるはずだべ.
+msgctxt "0019 | YASUHIRO HAGAKURE"
+msgid ""
+"Now listen, what I'm talking about is super famous.\n"
+"There's no way you don't know this!"
+msgstr ""
+"Mà cái vụ dùng bài bói toán này nổi tiếng lắm mà? Chắc \n"
+"chắn Makoto phải biết chứ!"
+
+#. トランプ
+msgctxt "0020 | CHOICE/RE:ACT"
+msgid "Playing cards"
+msgstr "Bài Tây"
+
+#. トランプ？
+msgctxt "0021 | MAKOTO NAEGI"
+msgid "It's a deck of playing cards, right?"
+msgstr "Là bài Tây hả?"
+
+#. おいおい…
+#. そりゃまあ、カードだけどよ…
+msgctxt "0022 | YASUHIRO HAGAKURE"
+msgid ""
+"Come on, man! ...Actually, you *did* get pretty close\n"
+"with the cards part."
+msgstr "Nè nè... Thì cũng đúng là bài thật, nhưng mà..."
+
+#. 俺が言ってんのは遊びじゃなくて占い！
+msgctxt "0023 | YASUHIRO HAGAKURE"
+msgid ""
+"But these aren't for playing games! They're for\n"
+"serious fortune-telling!"
+msgstr "Cái tui đang nói tới là bói toán chứ không phải trò chơi!"
+
+#. それに、トランプの絵札の種類は
+#. アルカナじゃなくてスートっていうんだべ！
+msgctxt "0024 | YASUHIRO HAGAKURE"
+msgid ""
+"Each Major Arcanum card features its own scene, not a\n"
+"number or member of royalty! Well, sometimes royalty!"
+msgstr ""
+"Vả lại, các chất trong bài Tây được gọi là Suit chứ không phải \n"
+"Arcana đâu nha!"
+
+#. そうなんだ…
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "I see..."
+msgstr "Thế à..."
+
+#. あれ、わからんだべか？
+msgctxt "0026 | YASUHIRO HAGAKURE"
+msgid "Huh? Do you really not know?"
+msgstr "Ơ, không biết thật hả?"
+
+#. せっかくの、占い料金割り引きのチャンスだべ？
+#. 気合入れて考えんべ！
+msgctxt "0027 | YASUHIRO HAGAKURE"
+msgid ""
+"But this is your big chance at a big discount! Put\n"
+"your butt into it and think!"
+msgstr ""
+"Đây là cơ hội hiếm hoi để được giảm giá xem bói đó? Tập \n"
+"trung suy nghĩ đi chứ!"
+
+#. <CLT 4>大アルカナ、小アルカナと呼ばれるカードが存在し…
+#. 一般的には、大アルカナのみで行われるカード占い…
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The major and Minor Arcana... And the Major Arcana\n"
+"cards are used to tell the future..."
+msgstr ""
+"<CLT 4>Có những lá bài được gọi là Ẩn chính, Ẩn phụ... Và \n"
+"thường người ta chỉ dùng các lá bài Ẩn chính để xem bói..."
+
+#. <CLT 4>えっと…それって…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That must be...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ừm... cái đó là...\n"
+"<CLT>"
+
+#. 知ってるよ。タロット占いの事でしょ！？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "Oh, I know! You're talking about tarot cards!"
+msgstr "Tớ biết rồi. Ý ông là bói bài Tarot đúng không!"
+
+#. おぉ！　大正解だべ！
+#. 賞品代わりに６万円で占ってやる！
+msgctxt "0031 | YASUHIRO HAGAKURE"
+msgid ""
+"Ahh, gloriously correct! I will now tell your fortune\n"
+"for a measly six hundred bones!"
+msgstr ""
+"Ồ! Chuẩn đét luôn! Thay cho phần thưởng, tui sẽ xem bói cho \n"
+"ông với giá 60.000 Yên thôi!"
+
+#. いいの？
+msgctxt "0032 | MAKOTO NAEGI"
+msgid "Wow, really?"
+msgstr "Thật không?"
+
+#. …なんて言う訳ないじゃん.
+#. もう占いはいいって…
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"...Is something I'd never say! I've had enough\n"
+"fortune-telling for one lifetime..."
+msgstr ""
+"...Đời nào tớ lại nói thế. Tớ đã bảo là không cần xem bói nữa \n"
+"rồi mà..."
+
+#. あっそ…
+#. Nhưng, 気が変わったらいつでも言えよ.
+msgctxt "0034 | YASUHIRO HAGAKURE"
+msgid ""
+"I see... Well, if you ever change your mind, you know\n"
+"where to find me!"
+msgstr "Vậy à... Nhưng khi nào đổi ý thì cứ hú tui bất cứ lúc nào nha!"
+
+#. そんな事より、さっきの質問に戻るけど…
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"Sure thing. Anyway, getting back to what I asked you\n"
+"about before..."
+msgstr "Bỏ qua chuyện đó đi, quay lại câu hỏi lúc nãy của tớ..."
+
+#. 道具 cũng 使わないで、
+#. 葉隠クンはどうやって占ってるの？
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"If you don't use any tools or whatever, how do you do\n"
+"your fortune-telling?"
+msgstr ""
+"Nếu không dùng đạo cụ hay gì hết, thì Hiro xem bói kiểu gì \n"
+"vậy?"
+
+#. 勘違いしないで欲しいのは、
+#. 俺だって、ちゃんとした技術は持ってんだぞ.
+msgctxt "0037 | YASUHIRO HAGAKURE"
+msgid "Well, don't be fooled. I have my own techniques."
+msgstr ""
+"Ông đừng có nhầm nhé, tui cũng có kỹ thuật đàng hoàng đó \n"
+"nha."
+
+#. <CLT 3>数秘術<CLT>だって使えんだ！
+msgctxt "0038 | YASUHIRO HAGAKURE"
+msgid "For example, I employ <CLT 3>numerology<CLT>!"
+msgstr "Tui còn dùng được cả <CLT 3>Thần số học<CLT> nữa đấy!"
+
+#. …数秘術？
+msgctxt "0039 | MAKOTO NAEGI"
+msgid "Numerology...?"
+msgstr "...Thần số học sao?"
+
+#. 占う対象の生年月日や姓名から、
+#. 計算式に基づいて運勢や宿命を占う方法だべ！
+msgctxt "0040 | YASUHIRO HAGAKURE"
+msgid ""
+"It uses a mathematical formula to predict the future\n"
+"based on birth dates, letter numbering, all that."
+msgstr ""
+"Đó là phương pháp dựa trên ngày tháng năm sinh hay họ tên \n"
+"của đối tượng, rồi dùng công thức mệnh hay số kiếp đó."
+
+#. Nhưng, それも使ってないんだよね？
+#. だったら…
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"But...I didn't see you doing anything like that,\n"
+"either."
+msgstr "Nhưng lúc nãy ông cũng đâu có dùng cái đó? Vậy thì..."
+
+#. <CLT 3>インスピレーション占い<CLT>だべ！
+msgctxt "0042 | YASUHIRO HAGAKURE"
+msgid ""
+"Well, it's more of an <CLT 3>inspirational<CLT> style of\n"
+"fortune-telling!"
+msgstr "Là <CLT 3>Bói toán bằng linh cảm<CLT> đó!"
+
+#. 何がしかの力が働いて、
+#. 頭の中にインスピレーションがわくんだ.
+msgctxt "0043 | YASUHIRO HAGAKURE"
+msgid ""
+"Some kind of unknown power just acts through you, and\n"
+"suddenly, bam! You've got the info!"
+msgstr ""
+"Có một nguồn sức mạnh nào đó tác động, làm linh cảm cứ \n"
+"thế tuôn trào trong đầu tui nè!"
+
+#. それって、ただの直感じゃ…
+msgctxt "0044 | MAKOTO NAEGI"
+msgid "You're talking about intuition!"
+msgstr "Cái đó chẳng phải chỉ là trực giác thôi sao...!"
+
+#. 直感なんて安っぽい言葉を使うなっ！
+msgctxt "0045 | YASUHIRO HAGAKURE"
+msgid "Don't try and describe it using such a cheesy word!"
+msgstr "Đừng có dùng cái từ rẻ tiền như trực giác để gọi nó chứ!"
+
+#. 直感じゃなきゃ…そんなの超能力だよ…
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"But if it's not intuition, then it's gotta be some\n"
+"kind of supernatural power..."
+msgstr "Nếu không phải trực giác... thì đó là siêu năng lực rồi còn gì..."
+
+#. 俺の占いをそんなオカルトと一緒にすんな！
+#. オカルト話は嫌いなんだ！　ヨソでやってくれって！！
+msgctxt "0047 | YASUHIRO HAGAKURE"
+msgid ""
+"Don't compare my clairvoyance to some occult bullcrap!\n"
+"I hate the occult! Take that crap somewhere else!"
+msgstr ""
+"Đừng có đánh đồng bói toán của tui với mấy thứ huyền học \n"
+"đó! Tui ghét ba cái chuyện huyền học lắm! Đi chỗ khác chơi!"
+
+#. <CLT 4>オカルト嫌い…ねぇ…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You hate the occult...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ghét huyền học à...? \n"
+"<CLT>"
+
+#. そうだ！　苗木っちに朗報があったんだ.
+#. 今、俺に占ってもらうと素敵な特典が付くんだぞ.
+msgctxt "0049 | YASUHIRO HAGAKURE"
+msgid ""
+"Yup! Now here's some good news. Act now, and I'll\n"
+"throw in an extra bonus on your reading!"
+msgstr ""
+"Phải rồi! Tui có tin vui cho Makoto đây. Bây giờ mà xem bói \n"
+"chỗ tui là sẽ được tặng kèm quà xịn lắm đó!"
+
+#. 白魔術を使い、高級霊界である天上界の神々から受けた
+#. スピリチュアルメッセージを収録したＣＤだべ.
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid ""
+"I used white magic to record a CD of spirit messages I\n"
+"received from the luxury suite of heaven!"
+msgstr ""
+"Đó là một chiếc đĩa CD ghi âm lại những thông điệp tâm linh \n"
+"nhận được từ các vị thần trên trời bằng Bạch ma thuật đấy!"
+
+#. これを聞けば、
+#. 手軽に神秘体験が出来るようになるんだ！
+msgctxt "0051 | YASUHIRO HAGAKURE"
+msgid ""
+"Five seconds of this baby, and you'll be witnessing\n"
+"miracles and communing with angels for days!"
+msgstr "Chỉ cần nghe cái này thôi là ông có thể dễ dàng trải nghiệm được những điều huyền bí luôn!"
+
+#. オカルトは…嫌いなんじゃ…
+msgctxt "0052 | MAKOTO NAEGI"
+msgid "And you said you...hate the occult...?"
+msgstr "Không phải ông vừa bảo... ghét huyền học sao...?"
+
+#. 商売事に関しては別だべ！！
+msgctxt "0053 | YASUHIRO HAGAKURE"
+msgid "Hey, business is business!"
+msgstr "Riêng chuyện làm ăn thì lại là chuyện khác chứ!!"
+
+#. <CLT 4>駄目だ…
+#. ますます葉隠クンの事がわからなくなった…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The more I talk to him, the less I understand...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thôi chịu... Mình càng lúc càng chẳng thể hiểu nổi \n"
+"con người của Hiro nữa...\n"
+"<CLT>"
+
+#. <CLT 23>Thông tin <CLT><CLT 3>Sổ Học Sinh<CLT><CLT 23> của Hiro đã được cập nhật dựa trên trải nghiệm của bạn với cậu ấy.\n<CLT>
+msgctxt "0055 | NARRATION"
+msgid ""
+"<CLT 23>Hiro's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with him.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Hiro đã được cập nhật dựa trên \n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>"
+
+#. <CLT 23>Chúc mừng! <CLT><CLT 3>Điểm Kỹ năng<CLT><CLT 23> tối đa của bạn đã tăng lên! Tiếp tục phát huy nhé!\n<CLT>
+msgctxt "0056 | NARRATION"
+msgid ""
+"<CLT 23>Your maximum number of <CLT><CLT 3>Skill Points<CLT><CLT 23> has increased!\n"
+"Hey, look at you go!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Chúc mừng! <CLT><CLT 3>Điểm Kỹ năng<CLT><CLT 23> tối đa của bạn đã tăng lên! \n"
+"Tiếp tục phát huy nhé!\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンの勧誘を振り切った後、
+#. ボクは、いったん自分の部屋に戻った.
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I shook off Hiro's sales pitch, and headed back to my\n"
+"room for a while.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi rũ bỏ được màn chèo kéo của Hiro,\n"
+"mình tạm thời quay trở về phòng.\n"
+"<CLT>"

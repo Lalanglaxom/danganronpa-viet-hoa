@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 別に、一緒にいてもいいけど…
+#. その代わり、なんか面白い話してよね。
+msgctxt "0001 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"I don't mind hanging out. But you better keep me\n"
+"entertained!"
+msgstr ""
+"Cậu muốn ở bên tớ cũng được thôi... Nhưng đổi lại, cậu phải \n"
+"kể chuyện gì đó thú vị cho tớ nghe đó nha."
+
+#. <CLT 4>江ノ島さんと一緒に過ごした…
+#. けど…
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Junko, but...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian bên cạnh Junko, \n"
+"nhưng...\n"
+"<CLT>"
+
+#. あたしも退屈してたんだよねぇ…
+msgctxt "0003 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Yeah, I'm bored too."
+msgstr "Mà tớ cũng đang chán muốn xỉu đây nè..."
+
+#. …いいよ。ちょっとだけ付き合ってあげる.
+msgctxt "0004 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Let's chill for a while!"
+msgstr "...Được thôi. Tớ sẽ chơi với cậu một lát vậy!"
+
+#. <CLT 4>江ノ島さんと一緒に過ごした…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Junko...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành một khoảng thời gian bên cạnh Junko...\n"
+"<CLT>"
+
+#. もしかして…
+#. あたしをデートに誘ってんの？
+msgctxt "0006 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Oooh... Are you asking me out on a DATE!?"
+msgstr "Hổng lẽ là... cậu đang rủ tớ đi HẸN HÒ hả!?"
+
+#. アハハッ、苗木ってかわいいじゃーん！
+msgctxt "0007 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Ahaha! You're such a little cutie!"
+msgstr "A ha ha, Makoto đáng yêu ghê ta ơi!"
+
+#. <CLT 4>江ノ島さんと一緒にデートした。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I guess I went on a date with Junko...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như tôi đã có một buổi hẹn hò với Junko...\n"
+"<CLT>"
+
+#. <CLT 4>江ノ島さんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Junko and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như hôm nay tôi và Junko đã trở nên thân \n"
+"thiết hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Junko a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Junko không?<CLT>"

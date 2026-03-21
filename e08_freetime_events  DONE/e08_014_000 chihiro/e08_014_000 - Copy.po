@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 23>そのプレゼントは渡す事ができません。<CLT>
+#. <CLT 3>“重要アイテム”<CLT><CLT 23>ですので…<CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>Sorry, but we can't let you give her that. It's what\n"
+"we in the industry like to call a<CLT> <CLT 3>key item<CLT><CLT 23>.<CLT>"
+msgstr ""
+
+#. <CLT 23>渡すプレゼントを選択してくださいませ。
+#. <CLT>
+msgctxt "0002 | NARRATION"
+msgid ""
+"<CLT 23>What would you like to give her?\n"
+"<CLT>"
+msgstr ""
+
+#. これ…貰っちゃっていいのぉ…？
+msgctxt "0003 | CHIHIRO FUJISAKI"
+msgid "I...can have this?"
+msgstr ""
+
+#. 嬉しいな…
+#. なんか、元気が出てきたよ。
+msgctxt "0004 | CHIHIRO FUJISAKI"
+msgid "Thank you. This has made me feel a little better..."
+msgstr ""
+
+#. <CLT 4>少しは喜んでくれたかな…？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does that mean she liked it...?\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木君、ありがと…
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "Thank you, Makoto..."
+msgstr ""
+
+#. えへへ、こんな素敵なプレゼントなんて、
+#. 生まれて初めてだよ。
+msgctxt "0007 | CHIHIRO FUJISAKI"
+msgid ""
+"Ehehe. This is the first time I've ever gotten\n"
+"something like this...!"
+msgstr ""
+
+#. <CLT 4>良かった。
+#. どうやら喜んでくれたみたいだ。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I get the impression that she liked it. That's good...\n"
+"<CLT>"
+msgstr ""
+
+#. え？　プレゼント？
+msgctxt "0009 | CHIHIRO FUJISAKI"
+msgid "Huh? A present...?"
+msgstr ""
+
+#. やったぁ！　ありがとう！
+msgctxt "0010 | CHIHIRO FUJISAKI"
+msgid "Yaay! Thank you so much!"
+msgstr ""
+
+#. わぁ！　すごいね！
+msgctxt "0011 | CHIHIRO FUJISAKI"
+msgid "Ooh, it's really amazing!"
+msgstr ""
+
+#. これ…大事にするね…
+#. ずっとずっと大事にするからね…
+msgctxt "0012 | CHIHIRO FUJISAKI"
+msgid ""
+"I'll take really good care of it. I'll hold on to it\n"
+"forever..."
+msgstr ""
+
+#. <CLT 4>ここまで喜んでもらえると、
+#. あげたこっちも嬉しくなるよな…！
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Seeing Chihiro so pleased with something I gave her\n"
+"makes me happy!\n"
+"<CLT>"
+msgstr ""
+
+#. き、気持ちは嬉しいんだけどぉ…
+msgctxt "0014 | CHIHIRO FUJISAKI"
+msgid "I-I'm grateful, really. But..."
+msgstr ""
+
+#. あの…気持ちだけ…
+#. 受け取っておく事にするね…
+msgctxt "0015 | CHIHIRO FUJISAKI"
+msgid "It's enough that you even thought of me."
+msgstr ""
+
+#. もったいなくて…受け取れないよぉ…
+msgctxt "0016 | CHIHIRO FUJISAKI"
+msgid "I can't take this. It's...too nice."
+msgstr ""
+
+#. それは、苗木君が持っていた方が
+#. いいと思うんだ。
+msgctxt "0017 | CHIHIRO FUJISAKI"
+msgid ""
+"I think it'd be better if you held on to this,\n"
+"Makoto..."
+msgstr ""
+
+#. <CLT 4>しまった…
+#. がっかりさせちゃったみたいだ…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh-oh... I don't think she was too happy with that...\n"
+"<CLT>"
+msgstr ""
+
+#. えっと…その…
+msgctxt "0019 | CHIHIRO FUJISAKI"
+msgid "Um...well..."
+msgstr ""
+
+#. きっと、それの価値をわかる人が、
+#. 他にいると思うから…
+msgctxt "0020 | CHIHIRO FUJISAKI"
+msgid ""
+"I'm sure someone else will appreciate having that more\n"
+"than me."
+msgstr ""
+
+#. そういう人に、
+#. あげた方がいいと思うんだよね…
+msgctxt "0021 | CHIHIRO FUJISAKI"
+msgid ""
+"Maybe you should find someone to give it to who can\n"
+"make better use of it..."
+msgstr ""
+
+#. あの…嫌わないで欲しいんだけど…
+msgctxt "0022 | CHIHIRO FUJISAKI"
+msgid "I hope you don't hate me for this, but..."
+msgstr ""
+
+#. その…そういう物はあんまり…
+#. 受け取れないって言うか…
+msgctxt "0023 | CHIHIRO FUJISAKI"
+msgid "Well, see...I mean, it's not that I can't accept it..."
+msgstr ""
+
+#. ご、ごめんなさい…
+msgctxt "0024 | CHIHIRO FUJISAKI"
+msgid "I-I'm sorry...!"
+msgstr ""
+
+#. <CLT 4>困らせちゃったみたいだ…
+#. 印象が悪くなっちゃったな…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I...think I upset her. She probably thinks worse of me\n"
+"now...\n"
+"<CLT>"
+msgstr ""
+
+#. やっぱり渡す
+msgctxt "0026 | CHOICE/RE:ACT"
+msgid "Maybe not..."
+msgstr ""
+
+#. 渡さない
+msgctxt "0027 | CHOICE/RE:ACT"
+msgid "Yeah, I'm sure"
+msgstr ""
+
+#. <CLT 23>プレゼントを渡さなくてもよろしいですか？
+#. <CLT>
+msgctxt "0028 | NARRATION"
+msgid ""
+"<CLT 23>Are you sure you don't want to give her something?\n"
+"<CLT>"
+msgstr ""

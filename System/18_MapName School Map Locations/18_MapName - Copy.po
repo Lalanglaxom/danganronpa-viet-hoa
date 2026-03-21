@@ -1,0 +1,1292 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 何もない空間
+msgctxt "0001"
+msgid "Open Space"
+msgstr ""
+
+#. １階廊下　上り階段前
+msgctxt "0002"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr ""
+
+#. 玄関ホール
+msgctxt "0003"
+msgid "Main Hall"
+msgstr ""
+
+#. 玄関ホール
+msgctxt "0004"
+msgid "Main Hall"
+msgstr ""
+
+#. 体育館前ホール
+msgctxt "0005"
+msgid "Gym Entryway"
+msgstr ""
+
+#. ショーウインドウ前
+msgctxt "0006"
+msgid "Display Case"
+msgstr ""
+
+#. 体育館
+msgctxt "0007"
+msgid "Gym"
+msgstr ""
+
+#. 体育館
+msgctxt "0008"
+msgid "Gym"
+msgstr ""
+
+#. 体育館
+msgctxt "0009"
+msgid "Gym"
+msgstr ""
+
+#. 視聴覚室
+msgctxt "0010"
+msgid "A/V Room"
+msgstr ""
+
+#. 購買部
+msgctxt "0011"
+msgid "School Store"
+msgstr ""
+
+#. 保健室
+msgctxt "0012"
+msgid "Nurse's Office"
+msgstr ""
+
+#. 保健室
+msgctxt "0013"
+msgid "Nurse's Office"
+msgstr ""
+
+#. 保健室
+msgctxt "0014"
+msgid "Nurse's Office"
+msgstr ""
+
+#. 教室１－Ａ
+msgctxt "0015"
+msgid "Class 1-A"
+msgstr ""
+
+#. 教室１－Ｂ
+msgctxt "0016"
+msgid "Class 1-B"
+msgstr ""
+
+#. 男子トイレ
+msgctxt "0017"
+msgid "Boys Bathroom"
+msgstr ""
+
+#. 女子トイレ
+msgctxt "0018"
+msgid "Girls Bathroom"
+msgstr ""
+
+#. １階廊下
+msgctxt "0019"
+msgid "Hallway 1F"
+msgstr ""
+
+#. １階廊下　玄関ホール前
+msgctxt "0020"
+msgid "Hallway 1F (Main Hall)"
+msgstr ""
+
+#. １階廊下　寄宿舎前
+msgctxt "0021"
+msgid "Hallway 1F (Dorms)"
+msgstr ""
+
+#. ２階廊下　下り階段前
+msgctxt "0022"
+msgid "Hallway 2F (Stairs to 1F)"
+msgstr ""
+
+#. 図書室
+msgctxt "0023"
+msgid "Library"
+msgstr ""
+
+#. 図書室
+msgctxt "0024"
+msgid "Library"
+msgstr ""
+
+#. 図書室
+msgctxt "0025"
+msgid "Library"
+msgstr ""
+
+#. 書庫
+msgctxt "0026"
+msgid "Archive"
+msgstr ""
+
+#. プール前ホール
+msgctxt "0027"
+msgid "Hallway (Pool)"
+msgstr ""
+
+#. 男子更衣室
+msgctxt "0028"
+msgid "Boys Locker Room"
+msgstr ""
+
+#. 女子更衣室
+msgctxt "0029"
+msgid "Girls Locker Room"
+msgstr ""
+
+#. 女子更衣室
+msgctxt "0030"
+msgid "Girls Locker Room"
+msgstr ""
+
+#. 室内プール
+msgctxt "0031"
+msgid "Pool"
+msgstr ""
+
+#. 教室２－Ａ
+msgctxt "0032"
+msgid "Class 2-A"
+msgstr ""
+
+#. 教室２－Ｂ
+msgctxt "0033"
+msgid "Class 2-B"
+msgstr ""
+
+#. 男子トイレ
+msgctxt "0034"
+msgid "Boys Bathroom"
+msgstr ""
+
+#. 女子トイレ
+msgctxt "0035"
+msgid "Girls Bathroom"
+msgstr ""
+
+#. 用具置き場
+msgctxt "0036"
+msgid "Storage Closet"
+msgstr ""
+
+#. 隠し部屋
+msgctxt "0037"
+msgid "Secret Room"
+msgstr ""
+
+#. 男子更衣室
+msgctxt "0038"
+msgid "Boys Locker Room"
+msgstr ""
+
+#. ２階廊下　上り階段前
+msgctxt "0039"
+msgid "Hallway 2F (Stairs to 3F)"
+msgstr ""
+
+#. ２階廊下　教室前
+msgctxt "0040"
+msgid "Hallway 2F (Classroom)"
+msgstr ""
+
+#. ※
+msgctxt "0041"
+msgid "※"
+msgstr "※"
+
+#. ３階廊下　物理室前
+msgctxt "0042"
+msgid "Hallway 3F (Physics Lab)"
+msgstr ""
+
+#. 娯楽室
+msgctxt "0043"
+msgid "Rec Room"
+msgstr ""
+
+#. 娯楽室
+msgctxt "0044"
+msgid "Rec Room"
+msgstr ""
+
+#. 美術室
+msgctxt "0045"
+msgid "Art Room"
+msgstr ""
+
+#. 美術倉庫
+msgctxt "0046"
+msgid "Repository"
+msgstr ""
+
+#. 美術倉庫
+msgctxt "0047"
+msgid "Repository"
+msgstr ""
+
+#. 物理室
+msgctxt "0048"
+msgid "Physics Lab"
+msgstr ""
+
+#. 物理準備室
+msgctxt "0049"
+msgid "Equipment Room"
+msgstr ""
+
+#. 物理準備室
+msgctxt "0050"
+msgid "Equipment Room"
+msgstr ""
+
+#. 物理準備室
+msgctxt "0051"
+msgid "Equipment Room"
+msgstr ""
+
+#. 教室３－Ａ
+msgctxt "0052"
+msgid "Class 3-A"
+msgstr ""
+
+#. 教室３－Ｂ
+msgctxt "0053"
+msgid "Class 3-B"
+msgstr ""
+
+#. ３階廊下　上り階段前
+msgctxt "0054"
+msgid "Hallway 3F (Stairs to 4F)"
+msgstr ""
+
+#. ３階廊下　下り階段前
+msgctxt "0055"
+msgid "Hallway 3F (Stairs to 2F)"
+msgstr ""
+
+#. １階廊下　学園前
+msgctxt "0056"
+msgid "Hallway 1F (Main Area)"
+msgstr ""
+
+#. １階廊下　上り階段前
+msgctxt "0057"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr ""
+
+#. １階廊下　トラッシュルーム前
+msgctxt "0058"
+msgid "Hallway 1F (Trash Room)"
+msgstr ""
+
+#. ※
+msgctxt "0059"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0060"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0061"
+msgid "※"
+msgstr "※"
+
+#. ４階廊下　下り階段前
+msgctxt "0062"
+msgid "Hallway 4F (Stairs to 3F)"
+msgstr ""
+
+#. 化学室
+msgctxt "0063"
+msgid "Chem Lab"
+msgstr ""
+
+#. 化学室
+msgctxt "0064"
+msgid "Chem Lab"
+msgstr ""
+
+#. 化学室
+msgctxt "0065"
+msgid "Chem Lab"
+msgstr ""
+
+#. 職員室
+msgctxt "0066"
+msgid "Office"
+msgstr ""
+
+#. 学園長室
+msgctxt "0067"
+msgid "Headmaster's Room"
+msgstr ""
+
+#. 音楽室
+msgctxt "0068"
+msgid "Music Room"
+msgstr ""
+
+#. 情報処理室
+msgctxt "0069"
+msgid "Data Center"
+msgstr ""
+
+#. モノクマ操作室
+msgctxt "0070"
+msgid "Control Room"
+msgstr ""
+
+#. 教室４－Ａ
+msgctxt "0071"
+msgid "Class 4-A"
+msgstr ""
+
+#. 教室４－Ｂ
+msgctxt "0072"
+msgid "Class 4-B"
+msgstr ""
+
+#. 男子トイレ
+msgctxt "0073"
+msgid "Boys Bathroom"
+msgstr ""
+
+#. 女子トイレ
+msgctxt "0074"
+msgid "Girls Bathroom"
+msgstr ""
+
+#. ４階廊下　学園長室前
+msgctxt "0075"
+msgid "Hallway 4F (Headmaster's Room)"
+msgstr ""
+
+#. ４階廊下　上り階段前
+msgctxt "0076"
+msgid "Hallway 4F (Stairs to 5F)"
+msgstr ""
+
+#. ※
+msgctxt "0077"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0078"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0079"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0080"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0081"
+msgid "※"
+msgstr "※"
+
+#. ５階廊下　植物庭園前
+msgctxt "0082"
+msgid "Hallway 5F (Garden)"
+msgstr ""
+
+#. 植物庭園
+msgctxt "0083"
+msgid "Garden"
+msgstr ""
+
+#. 植物庭園
+msgctxt "0084"
+msgid "Garden"
+msgstr ""
+
+#. 植物庭園
+msgctxt "0085"
+msgid "Garden"
+msgstr ""
+
+#. 物置
+msgctxt "0086"
+msgid "Toolshed"
+msgstr ""
+
+#. 飼育小屋
+msgctxt "0087"
+msgid "Chicken Coop"
+msgstr ""
+
+#. 武道場
+msgctxt "0088"
+msgid "Dojo"
+msgstr ""
+
+#. 武道場（ロッカー）
+msgctxt "0089"
+msgid "Dojo (Locker)"
+msgstr ""
+
+#. 生物室
+msgctxt "0090"
+msgid "Bio Lab"
+msgstr ""
+
+#. 教室５－Ａ
+msgctxt "0091"
+msgid "Class 5-A"
+msgstr ""
+
+#. 教室５－Ｂ
+msgctxt "0092"
+msgid "Class 5-B"
+msgstr ""
+
+#. 教室５－Ｃ
+msgctxt "0093"
+msgid "Class 5-C"
+msgstr ""
+
+#. ※
+msgctxt "0094"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0095"
+msgid "※"
+msgstr "※"
+
+#. ５階廊下　生物室前
+msgctxt "0096"
+msgid "Hallway 5F (Bio Lab)"
+msgstr ""
+
+#. ５階廊下　下り階段前
+msgctxt "0097"
+msgid "Hallway 5F (Stairs to 4F)"
+msgstr ""
+
+#. ※
+msgctxt "0098"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0099"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0100"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0101"
+msgid "※"
+msgstr "※"
+
+#. １階廊下　学園前
+msgctxt "0102"
+msgid "Hallway 1F (Main Area)"
+msgstr ""
+
+#. 玄関ホール
+msgctxt "0103"
+msgid "Main Hall"
+msgstr ""
+
+#. 苗木の部屋
+msgctxt "0104"
+msgid "Makoto's Room"
+msgstr ""
+
+#. 苗木の部屋
+msgctxt "0105"
+msgid "Makoto's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0106"
+msgid "Bathroom"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0107"
+msgid "Bathroom"
+msgstr ""
+
+#. 石丸の部屋
+msgctxt "0108"
+msgid "Kiyotaka's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0109"
+msgid "Bathroom"
+msgstr ""
+
+#. 十神の部屋
+msgctxt "0110"
+msgid "Byakuya's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0111"
+msgid "Bathroom"
+msgstr ""
+
+#. 大和田の部屋
+msgctxt "0112"
+msgid "Mondo's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0113"
+msgid "Bathroom"
+msgstr ""
+
+#. 桑田の部屋
+msgctxt "0114"
+msgid "Leon's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0115"
+msgid "Bathroom"
+msgstr ""
+
+#. 山田の部屋
+msgctxt "0116"
+msgid "Hifumi's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0117"
+msgid "Bathroom"
+msgstr ""
+
+#. 葉隠の部屋
+msgctxt "0118"
+msgid "Yasuhiro's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0119"
+msgid "Bathroom"
+msgstr ""
+
+#. 舞園の部屋
+msgctxt "0120"
+msgid "Sayaka's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0121"
+msgid "Bathroom"
+msgstr ""
+
+#. 霧切の部屋
+msgctxt "0122"
+msgid "Kyoko's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0123"
+msgid "Bathroom"
+msgstr ""
+
+#. 朝日奈の部屋
+msgctxt "0124"
+msgid "Aoi's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0125"
+msgid "Bathroom"
+msgstr ""
+
+#. 腐川の部屋
+msgctxt "0126"
+msgid "Toko's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0127"
+msgid "Bathroom"
+msgstr ""
+
+#. 大神の部屋
+msgctxt "0128"
+msgid "Sakura's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0129"
+msgid "Bathroom"
+msgstr ""
+
+#. セレスの部屋
+msgctxt "0130"
+msgid "Celeste's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0131"
+msgid "Bathroom"
+msgstr ""
+
+#. 江ノ島の部屋
+msgctxt "0132"
+msgid "Junko's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0133"
+msgid "Bathroom"
+msgstr ""
+
+#. 不二咲の部屋
+msgctxt "0134"
+msgid "Chihiro's Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0135"
+msgid "Bathroom"
+msgstr ""
+
+#. 食堂
+msgctxt "0136"
+msgid "Dining Hall"
+msgstr ""
+
+#. 厨房
+msgctxt "0137"
+msgid "Kitchen"
+msgstr ""
+
+#. トラッシュルーム
+msgctxt "0138"
+msgid "Trash Room"
+msgstr ""
+
+#. トラッシュルーム
+msgctxt "0139"
+msgid "Trash Room"
+msgstr ""
+
+#. ランドリー
+msgctxt "0140"
+msgid "Laundry"
+msgstr ""
+
+#. 倉庫
+msgctxt "0141"
+msgid "Warehouse"
+msgstr ""
+
+#. 脱衣所
+msgctxt "0142"
+msgid "Dressing Room"
+msgstr ""
+
+#. 脱衣所ロッカー付近
+msgctxt "0143"
+msgid "Dressing Room Lockers"
+msgstr ""
+
+#. 脱衣所ロッカー付近
+msgctxt "0144"
+msgid "Dressing Room Lockers"
+msgstr ""
+
+#. 大浴場
+msgctxt "0145"
+msgid "Bathhouse"
+msgstr ""
+
+#. サウナルーム
+msgctxt "0146"
+msgid "Sauna"
+msgstr ""
+
+#. 男子トイレ
+msgctxt "0147"
+msgid "Boys Bathroom"
+msgstr ""
+
+#. 女子トイレ
+msgctxt "0148"
+msgid "Girls Bathroom"
+msgstr ""
+
+#. ２階廊下
+msgctxt "0149"
+msgid "Hallway 2F"
+msgstr ""
+
+#. 空き部屋
+msgctxt "0150"
+msgid "Empty Room"
+msgstr ""
+
+#. ロッカールーム
+msgctxt "0151"
+msgid "Locker Room"
+msgstr ""
+
+#. 学園長の個室
+msgctxt "0152"
+msgid "Headmaster's Private Room"
+msgstr ""
+
+#. 学園長の隠し部屋
+msgctxt "0153"
+msgid "Headmaster's Hidden Room"
+msgstr ""
+
+#. 男子トイレ
+msgctxt "0154"
+msgid "Boys Bathroom"
+msgstr ""
+
+#. 女子トイレ
+msgctxt "0155"
+msgid "Girls Bathroom"
+msgstr ""
+
+#. ３階廊下
+msgctxt "0156"
+msgid "Hallway 3F"
+msgstr ""
+
+#. トラッシュルーム
+msgctxt "0157"
+msgid "Trash Room"
+msgstr ""
+
+#. ロッカールーム
+msgctxt "0158"
+msgid "Locker Room"
+msgstr ""
+
+#. ロッカールーム
+msgctxt "0159"
+msgid "Locker Room"
+msgstr ""
+
+#. シャワールーム
+msgctxt "0160"
+msgid "Bathroom"
+msgstr ""
+
+#. １階廊下
+msgctxt "0161"
+msgid "Hallway 1F"
+msgstr ""
+
+#. １階廊下　上り階段前
+msgctxt "0162"
+msgid "Hallway 1F (Stairs to 2F)"
+msgstr ""
+
+#. １階廊下　トラッシュルーム前
+msgctxt "0163"
+msgid "Hallway 1F (Trash Room)"
+msgstr ""
+
+#. ２階廊下　学園長個室前
+msgctxt "0164"
+msgid "Hallway 2F (Private Room)"
+msgstr ""
+
+#. ※
+msgctxt "0165"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0166"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0167"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0168"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0169"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0170"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0171"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0172"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0173"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0174"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0175"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0176"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0177"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0178"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0179"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0180"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0181"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0182"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0183"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0184"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0185"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0186"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0187"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0188"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0189"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0190"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0191"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0192"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0193"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0194"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0195"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0196"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0197"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0198"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0199"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0200"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0201"
+msgid "※"
+msgstr "※"
+
+#. 裁判場前ホール
+msgctxt "0202"
+msgid "Hallway (Courtroom)"
+msgstr ""
+
+#. エレベーター内
+msgctxt "0203"
+msgid "Elevator"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0204"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0205"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0206"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0207"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0208"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0209"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 処刑場
+msgctxt "0210"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0211"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0212"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0213"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0214"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0215"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 処刑場
+msgctxt "0216"
+msgid "Execution Grounds"
+msgstr ""
+
+#. 夢の島
+msgctxt "0217"
+msgid "Dream Island"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0218"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0219"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0220"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0221"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0222"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. 学級裁判場
+msgctxt "0223"
+msgid "Class Trial Courtroom"
+msgstr ""
+
+#. ※
+msgctxt "0224"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0225"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0226"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0227"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0228"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0229"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0230"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0231"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0232"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0233"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0234"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0235"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0236"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0237"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0238"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0239"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0240"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0241"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0242"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0243"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0244"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0245"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0246"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0247"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0248"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0249"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0250"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0251"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0252"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0253"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0254"
+msgid "※"
+msgstr "※"
+
+#. ※
+msgctxt "0255"
+msgid "※"
+msgstr "※"
+
+#. ？？？
+msgctxt "0256"
+msgid "？？？"
+msgstr ""

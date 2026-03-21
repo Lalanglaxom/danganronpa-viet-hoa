@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. じゃあ、食堂で茶でも飲むか。
+#. オススメのパワースポットを教えてやんべ。
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid ""
+"You wanna go grab a bite to eat in the dining hall?\n"
+"I'll teach you where all the best power spots are!"
+msgstr ""
+"Vậy thì qua nhà ăn làm tách trà đi.\n"
+"Tui sẽ chỉ cho ông mấy cái địa điểm linh thiêng nhất ở đây!"
+
+#. <CLT 4>葉隠クンから、
+#. オススメのパワースポットを教わった。
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro taught me about all the best power spots...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã được Hiro chỉ cho\n"
+"mấy cái địa điểm linh thiêng nhất ở đây...\n"
+"<CLT>"
+
+#. …んじゃ、一緒に昼寝でもすっか.
+#. 寝たら、気分 cũng 晴れるべ.
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid ""
+"Hey, you wanna go take a nap? A little mid-day shuteye\n"
+"always makes me feel better."
+msgstr ""
+"Vậy thì, hay là tụi mình làm một giấc ngủ trưa đi.\n"
+"Ngủ xong là thấy tâm hồn thanh thản ngay ấy mà."
+
+#. <CLT 4>葉隠クンと一緒に昼寝をした.
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I went and took a nap with Hiro...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã đi ngủ trưa cùng với Hiro...\n"
+"<CLT>"
+
+#. …なんだ？　俺の話を聞きたいんか？
+msgctxt "0005 | YASUHIRO HAGAKURE"
+msgid "Huh? You wanna hang out with me?"
+msgstr "Hử? Muốn tâm sự mỏng với tui hả?"
+
+#. よっしゃ！　じゃあ話してやる！
+msgctxt "0006 | YASUHIRO HAGAKURE"
+msgid "Well then, have I got a story for you!"
+msgstr "Được thôi! Vậy để tui kể cho nghe cái này, hay lắm luôn!"
+
+#. 俺が研究の末に突き止めた、
+#. レムリア文明と東京タワーの驚くべき関係についてな！
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgid ""
+"My research revealed a surprising connection between\n"
+"Tokyo Tower and the lost Lemurian civilization!"
+msgstr ""
+"Đó là về mối liên hệ đáng kinh ngạc giữa nền văn minh \n"
+"Lemuria và Tháp Tokyo mà tui đã nghiên cứu bấy lâu nay!"
+
+#. <CLT 4>葉隠クンのよくわからない話を
+#. 延々と聞かせられた.
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro spent a lot of time talking about stuff that\n"
+"didn't make any see to me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã bị bắt nghe Hiro thao thao bất tuyệt\n"
+"về mấy chuyện chẳng hiểu mô tê gì suốt cả buổi...\n"
+"<CLT>"
+
+#. だったら、男２人で熱く語り合うべ.
+#. 宇宙発生論についてな.
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgid ""
+"Well then, why don't we have a heated discussion about\n"
+"cosmogony!"
+msgstr ""
+"Vậy thì, hai thằng đàn ông tụi mình cùng đàm đạo một trận \n"
+"ra trò đi. Về thuyết khởi nguyên vũ trụ nhé!"
+
+#. <CLT 4>宇宙発生論について、
+#. 葉隠クンの一方的な見解を述べられた.
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I learned all about Hiro's theories on the origin of\n"
+"the universe...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã bị bắt nghe Hiro thuyết giảng về những quan \n"
+"điểm phiến diện của cậu ấy về thuyết khởi nguyên vũ trụ...\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay mình và Hiro đã thân nhau hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0012 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0013 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0014 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Hiro không?<CLT>"

@@ -1,0 +1,649 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. ねぇ、苗木誠殿…
+msgctxt "0001 | HIFUMI YAMADA"
+msgid "Hey, Mr. Naegi?"
+msgstr "Này, ngài Naegi...?"
+
+#. …ん？　どうしたの？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Yeah? What's up?"
+msgstr "...Hửm? Có chuyện gì vậy?"
+
+#. あなたは信頼に足る人物だと思うから…
+msgctxt "0003 | HIFUMI YAMADA"
+msgid "I feel like you're worthy of my trust, you know?"
+msgstr "Vì tôi thấy cậu là người đáng để tin tưởng...?"
+
+#. そんな苗木誠殿だけに…
+#. 告白しますけどね…
+msgctxt "0004 | HIFUMI YAMADA"
+msgid "You're the only one...I can confess to."
+msgstr ""
+"Nên tôi chỉ thú nhận chuyện này... với riêng ngài Naegi \n"
+"Makoto thôi đấy..."
+
+#. 僕はもう限界です。
+#. 今すぐ、ここから出たいです。
+msgctxt "0005 | HIFUMI YAMADA"
+msgid ""
+"I've reached my limit. I need to get out of here.\n"
+"Right now."
+msgstr "Tôi đã tới giới hạn rồi. Tôi muốn thoát khỏi đây ngay lập tức."
+
+#. そ、そんな…
+#. ニコニコしながら言わないでよ…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"H-Hey, come on. Don't talk like that when you've got\n"
+"that creepy grin on your face..."
+msgstr ""
+"Đ-Đừng có... \n"
+"vừa cười tủm tỉm vừa nói mấy lời đó chứ..."
+
+#. だって…会いたいんだもん…
+msgctxt "0007 | HIFUMI YAMADA"
+msgid "I need to see her."
+msgstr "Bởi vì... tôi muốn gặp cô ấy..."
+
+#. テレビで…
+#. 実物のぶー子ちゃんに会いたいんだもん…
+msgctxt "0008 | HIFUMI YAMADA"
+msgid ""
+"I need to get to a TV. I need to see the real Princess\n"
+"Piggles."
+msgstr ""
+"Trên tivi... Tôi muốn được nhìn thấy Bao-chan bằng xương \n"
+"bằng thịt trên màn ảnh..."
+
+#. <CLT 4>アニメなんだから実物も何もないんじゃ…
+#. なんて言ってる場合じゃないな。
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What's he mean, \"real\"? She's a cartoon character.\n"
+"But now might be a bad time to bring that up...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhân vật anime thì làm gì có bằng xương bằng thịt...\n"
+"Nhưng mà thôi, giờ không phải lúc để nói chuyện đó.\n"
+"<CLT>"
+
+#. 山田クン…そんなに落ち込まないでよ…
+#. きっと、すぐに会えるはずだからさ…
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"L-Listen, don't get so upset. I'm sure you'll see\n"
+"her again really soon!"
+msgstr ""
+"Nghe này, cậu đừng có suy sụp thế chứ... \n"
+"Chắc chắn là cậu sẽ sớm gặp lại cô ấy thôi mà...!"
+
+#. なんとか天使プリンセスぶー子ちゃんにだってさ…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"You'll see your...uh, what was it? Something angel\n"
+"pretty pudgy princess?"
+msgstr "Cái gì mà thiên sứ công chúa Bao-chan đó...?"
+
+#. …なんとか天使！？
+msgctxt "0012 | HIFUMI YAMADA"
+msgid "\"Something\" angel...? SOMETHING angel!?"
+msgstr "...Cái gì mà thiên sứ hả!? CÁI GÌ MÀ hả!?"
+
+#. 失敬な！　プリンセスに対して失敬な！
+#. ちゃんと正式名称を言わんかぁ！！
+msgctxt "0013 | HIFUMI YAMADA"
+msgid ""
+"How dare you insult the princess like that!? Say her\n"
+"name right, swine!"
+msgstr ""
+"Thật là thất lễ! Quá thất lễ với Công chúa rồi đấy! \n"
+"Mau gọi tên chính thức của người ra cho tôi!!"
+
+#. 外道
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "Demon"
+msgstr "Ngoại đạo"
+
+#. 仏道
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "Dharma"
+msgstr "Phật đạo"
+
+#. ええっと、仏道天使だったかな？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "It was, uh...Dharma Angel, right?"
+msgstr "Ừm, hình như là Thiên Sứ Phật Đạo đúng không?"
+
+#. 和洋折衷ってレベルじゃないですな！
+msgctxt "0017 | HIFUMI YAMADA"
+msgid ""
+"Dharma? Why would a Japanese anime combine Buddhism\n"
+"with a Western-style angel motif!?"
+msgstr ""
+"Hả!? Làm gì có bộ anime Nhật Bản nào lại kết hợp Phật giáo \n"
+"với thiên sứ phương Tây chứ!?"
+
+#. しかし、そういった寛容な姿勢こそが
+#. 日本文化の美しさでもあるのです…
+msgctxt "0018 | HIFUMI YAMADA"
+msgid ""
+"Although, our tolerant and accepting attitude is one\n"
+"of the many beauties of Japanese culture..."
+msgstr ""
+"Thế nhưng, chính cái sự bao dung đó \n"
+"lại là một trong những nét đẹp của văn hóa Nhật Bản đấy..."
+
+#. やはり苗木誠殿は見所がありますぞ！
+msgctxt "0019 | HIFUMI YAMADA"
+msgid "Maybe you're not as dumb as I thought!"
+msgstr "Quả nhiên ngài Naegi Makoto rất có tố chất!"
+
+#. そ、そうかな？
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "S-Seriously...?"
+msgstr "Th-Thế sao?"
+
+#. だが、それとこれとは別！
+#. ちゃんと正式名称を答えんかぁ！
+msgctxt "0021 | HIFUMI YAMADA"
+msgid ""
+"But you're still wrong! You'd better come up with the\n"
+"right title, before I...!"
+msgstr ""
+"Nhưng chuyện đó với chuyện này là hai việc khác nhau! \n"
+"Mau trả lời đúng tên chính thức đi xem nào!"
+
+#. 殴殺
+msgctxt "0022 | CHOICE/RE:ACT"
+msgid "Damage"
+msgstr "Ẩu đả"
+
+#. 確か、殴殺天使じゃなかった？
+msgctxt "0023 | MAKOTO NAEGI"
+msgid "If I remember, it was...Damage Angel, right?"
+msgstr "Tớ nhớ là... Thiên Sứ Ẩu Đả đúng không?"
+
+#. なん…だと…？
+#. なぜ…その名を知ってる…！
+msgctxt "0024 | HIFUMI YAMADA"
+msgid "What...? How did you know about that!?"
+msgstr "Cái... gì cơ...? Sao cậu lại biết cái tên đó...!?"
+
+#. え…？
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr "Hả...?"
+
+#. それは…企画段階のプリンセスに
+#. つけられていた仮称ですぞ…！
+msgctxt "0026 | HIFUMI YAMADA"
+msgid "That was her tentative name during pre-production!"
+msgstr ""
+"Đó là... cái tên tạm thời được đặt cho Công chúa trong giai \n"
+"đoạn lên ý tưởng đấy...!"
+
+#. そう、素人が知るはずのない…！
+msgctxt "0027 | HIFUMI YAMADA"
+msgid "How would a total amateur like you know about that!?"
+msgstr ""
+"Đúng thế, một kẻ gà mờ làm sao có thể biết được chuyện \n"
+"này...!?"
+
+#. 苗木誠殿…恐ろしい子っ！
+msgctxt "0028 | HIFUMI YAMADA"
+msgid "Makoto... You're a most terrifying prodigy!"
+msgstr "Ngài Naegi Makoto... Quả là một thiếu niên đáng sợ!"
+
+#. <CLT 4>適当に言っただけなんだけど…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh...I just kinda said it at random...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thì mình cũng chỉ nói bừa thôi mà...\n"
+"<CLT>"
+
+#. しかしっ！
+#. ちゃんと正式名称を言わんかぁ！
+msgctxt "0030 | HIFUMI YAMADA"
+msgid ""
+"However! I *will* hear you call her by her proper\n"
+"name!"
+msgstr ""
+"Thế nhưng! \n"
+"Cậu vẫn phải gọi đúng cái tên chính thức của người ra đi!"
+
+#. よもや答えられないとは…！
+#. 見損ないましたぞ！
+msgctxt "0031 | HIFUMI YAMADA"
+msgid ""
+"If you can't answer, I misjudged you more than I would\n"
+"have imagined possible!"
+msgstr ""
+"Thật không ngờ là cậu lại không trả lời được! \n"
+"Tôi đã đánh giá cậu quá cao rồi!"
+
+#. しかし、あまたの特典商法により
+#. 鍛えられたこの山田の心 là, 海よりも広い…
+msgctxt "0032 | HIFUMI YAMADA"
+msgid ""
+"However, I am governed by the universal law of free\n"
+"commerce, so my heart is open wide to you!"
+msgstr ""
+"Mà, trái tim được rèn giũa qua vô vàn chiêu trò thương mại \n"
+"của Hifumi này còn rộng lớn hơn cả đại dương...!"
+
+#. さあ、今一度チャンスを与えましょう…
+#. 再び蘇るのです、苗木誠殿…！
+msgctxt "0033 | HIFUMI YAMADA"
+msgid ""
+"So I'll give you one more chance... Consider yourself\n"
+"Phoenix Down'd!"
+msgstr ""
+"Nào, tôi sẽ cho cậu thêm một cơ hội nữa... \n"
+"Hãy hồi sinh thêm lần nữa đi, ngài Naegi Makoto...!"
+
+#. <CLT 4>正式名称って…
+#. えーっと…なんだったっけ…？
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Her official name... Uh...what was it again?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tên chính thức sao... Ừm... là cái gì nhỉ...?\n"
+"<CLT>"
+
+#. <CLT 4>なんとか天使…までは覚えてるんだけど…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I know it was definitely \"something\" angel...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình chỉ nhớ mang máng là Thiên Sứ gì gì đó thôi...\n"
+"<CLT>"
+
+#. …思い出したよ！
+#. 外道天使もちもちプリンセスだったよね！？
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"Oh! Now I remember! The full title is Demon Angel\n"
+"Pretty Pudgy Princess, right!?"
+msgstr ""
+"À! Nhớ ra rồi! Chính là Thiên Sứ Ngoại Đạo☆Công Chúa Bánh \n"
+"Bao đúng không!?"
+
+#. <CLT 3>外道天使☆もちもちプリンセス<CLT>…
+msgctxt "0037 | HIFUMI YAMADA"
+msgid ""
+"It's actually <CLT 3>Demon Angel☆Pretty Pudgy Princess<CLT>, to\n"
+"be precise."
+msgstr "<CLT 3>Thiên Sứ Ngoại Đạo☆Công Chúa Bánh Bao<CLT>..."
+
+#. 正確には☆が入るのですが、
+#. 許してあげましょう。
+msgctxt "0038 | HIFUMI YAMADA"
+msgid ""
+"You left out the star. But I suppose I'll let that\n"
+"slide."
+msgstr ""
+"Dù chính xác là phải có thêm dấu ☆ nữa, \n"
+"nhưng thôi tôi sẽ đại xá cho cậu."
+
+#. あ、ありがとう…
+msgctxt "0039 | MAKOTO NAEGI"
+msgid "Th-Thanks..."
+msgstr "À, cảm ơn cậu..."
+
+#. …て言うか、山田クンって、
+#. 本当に、そのアニメが好きなんだね？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "But jeez, Hifumi... You really love that anime, huh?"
+msgstr "...Mà tính ra, Hifumi, cậu thực sự thích bộ anime đó đến thế sao?"
+
+#. 彼女は、僕の人生を切り開いてくれた恩人ですから。
+msgctxt "0041 | HIFUMI YAMADA"
+msgid ""
+"Of course. She's my guiding angel. She opened my eyes\n"
+"to life."
+msgstr ""
+"Bởi cô ấy chính là ân nhân đã mở ra một cuộc đời mới cho \n"
+"tôi."
+
+#. 当時の僕は友達もいませんでしたし、
+#. 絵を描くのが好きな、好青年でしかありませんでした。
+msgctxt "0042 | HIFUMI YAMADA"
+msgid ""
+"Before her, I didn't have a single friend. I was just\n"
+"a mild-mannered boy who liked to draw."
+msgstr ""
+"Khi đó tôi chẳng có lấy một người bạn, \n"
+"chỉ là một thanh niên hiền lành với sở thích vẽ vời thôi."
+
+#. 触るものみな傷付ける…
+#. そんなダークサイドに落ちた好青年だったのです。
+msgctxt "0043 | HIFUMI YAMADA"
+msgid ""
+"I hurt everything I touched. I was a model young lad\n"
+"who fell to the Dark Side..."
+msgstr ""
+"Sẵn sàng làm tổn thương bất cứ thứ gì mình chạm vào... \n"
+"Một thanh niên sa ngã vào bóng tối là như vậy đó."
+
+#. 唯一の娯楽と言えば、
+#. たまに委員長タイプの女子が話しかけてきた時…
+msgctxt "0044 | HIFUMI YAMADA"
+msgid ""
+"For example! Sometimes a nicey-nice type girl would\n"
+"come try to talk to me, right?"
+msgstr ""
+"Niềm vui duy nhất khi đó là mỗi khi mấy cô nàng kiểu lớp \n"
+"trưởng đến bắt chuyện...?"
+
+#. オレのようなキモイ奴に親切で話しかけて、
+#. 偽善者ぶるのはヤメい！！
+msgctxt "0045 | HIFUMI YAMADA"
+msgid ""
+"You know, be nice to the weird, dorky kid. And I'd\n"
+"scream at her, \"You're such a hypocrite!\""
+msgstr ""
+"Đừng có tỏ ra tử tế với một tên gớm ghiếc như tôi để làm trò \n"
+"đạo đức giả nữa đi!!"
+
+#. そう言って泣かす事…
+#. それだけが楽しみだったのです。
+msgctxt "0046 | HIFUMI YAMADA"
+msgid ""
+"I'd just yell right in her face and make her cry.\n"
+"Man I loved doing that..."
+msgstr ""
+"Chỉ cần nói vậy để làm họ khóc... \n"
+"là niềm vui duy nhất của tôi."
+
+#. <CLT 4>委員長…可哀相過ぎるだろ…
+#. トラウマになってもおかしくないって…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's awful... He probably traumatized that\n"
+"poor girl!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lớp trưởng đó... đáng thương quá... \n"
+"Bị sang chấn tâm lý luôn cũng không chừng...\n"
+"<CLT>"
+
+#. そんな折に、たまたま見たアニメ…
+#. それが、外道天使☆もちもちプリンセスでした。
+msgctxt "0048 | HIFUMI YAMADA"
+msgid ""
+"But by total chance, I happened to catch an episode of\n"
+"Demon Angel☆Pretty Pudgy Princess one day."
+msgstr ""
+"Trong lúc đó, tôi đã vô tình xem được bộ anime ấy... \n"
+"Chính là Thiên Sứ Ngoại Đạo☆Công Chúa Bánh Bao."
+
+#. 最初に見た時は、むしろ小馬鹿にしておりました。
+#. 巷に溢れてる美少女バトル物かと…
+msgctxt "0049 | HIFUMI YAMADA"
+msgid ""
+"At first, I felt nothing but contempt for it. I\n"
+"thought it was just another magical girl anime."
+msgstr ""
+"Lúc đầu, tôi còn cười nhạo nó nữa kia. Cứ nghĩ nó cũng chỉ là \n"
+"mấy bộ ma pháp thiếu nữ đầy rẫy ngoài kia thôi..."
+
+#. ですが…
+msgctxt "0050 | HIFUMI YAMADA"
+msgid "However..."
+msgstr "Thế nhưng..."
+
+#. 夢にね…見たのですよ…
+msgctxt "0051 | HIFUMI YAMADA"
+msgid "...after that, she came to me in my dreams."
+msgstr "Tôi đã thấy cô ấy... trong mơ..."
+
+#. …夢？
+msgctxt "0052 | MAKOTO NAEGI"
+msgid "Your dreams...?"
+msgstr "...Trong mơ sao?"
+
+#. 僕とぶー子が楽しくデートを重ねる夢です。
+msgctxt "0053 | HIFUMI YAMADA"
+msgid ""
+"I dreamed that I went on date after lovely date\n"
+"with Princess Piggles."
+msgstr ""
+"Đó là giấc mơ mà tôi và Bao đã có những buổi hẹn hò vô \n"
+"cùng vui vẻ."
+
+#. あれは…楽しかったなぁ…
+msgctxt "0054 | HIFUMI YAMADA"
+msgid "It was...so much fun."
+msgstr "Chao ôi... nó mới vui làm sao..."
+
+#. 目が覚めて、それが夢だと知った時、
+#. 虚脱感と共に彼女に恋をしてる自分に気付きました…
+msgctxt "0055 | HIFUMI YAMADA"
+msgid ""
+"When I woke up and realized it was a dream, I got\n"
+"depressed. But I also realized...I was in love."
+msgstr ""
+"Đến khi tỉnh dậy và biết đó chỉ là mơ, trong cơn hụt hẫng đó, \n"
+"tôi nhận ra mình đã yêu cô ấy mất rồi..."
+
+#. あの萌えるような気持ちをもう１度味わいたくて、
+#. すぐに、僕はぶー子関連商品を買い漁りました。
+msgctxt "0056 | HIFUMI YAMADA"
+msgid ""
+"I wanted to experience that sensation again, so I\n"
+"started buying all the Princess Piggles stuff I could."
+msgstr ""
+"Vì muốn được nếm trải cái cảm giác mãnh liệt đó lần nữa, tôi \n"
+"đã lập tức đi lùng mua mọi món đồ liên quan đến Bao."
+
+#. ですが、困った事に、
+#. ぶー子は原作では一切の恋をしないのですよ…
+msgctxt "0057 | HIFUMI YAMADA"
+msgid ""
+"Unfortunately, in the show itself, the princess never\n"
+"falls in love..."
+msgstr ""
+"Nhưng rắc rối ở chỗ, trong nguyên tác Bao chẳng hề biết \n"
+"yêu đương là gì..."
+
+#. だから、夢で見た彼女の恋する顔だけは、
+#. どうやっても見る事が出来なかったのです。
+msgctxt "0058 | HIFUMI YAMADA"
+msgid ""
+"So as much as I wanted to, I never got to see her face\n"
+"filled with love, the way I did in my dream."
+msgstr ""
+"Vì thế, dù có làm cách nào đi nữa, tôi cũng chẳng thể thấy lại \n"
+"khuôn mặt khi đang yêu của cô ấy như trong giấc mơ."
+
+#. 本当は…彼女は恋している時の顔が、
+#. 一番かわいいのにね…
+msgctxt "0059 | HIFUMI YAMADA"
+msgid ""
+"The face she made when she was in love was the cutest\n"
+"thing I've ever seen..."
+msgstr ""
+"Dù sự thật là... khuôn mặt lúc đang yêu \n"
+"mới là lúc cô ấy đáng yêu nhất..."
+
+#. だから、自分で描く事にしたのです。
+#. ぶー子への溢れんばかり của愛情を込めてね！
+msgctxt "0060 | HIFUMI YAMADA"
+msgid ""
+"So, filled to the brim with my overflowing affection\n"
+"for the princess, I decided to draw that face myself!"
+msgstr ""
+"Thế là tôi quyết định sẽ tự mình vẽ nên nó. \n"
+"Với tất cả tình yêu nồng cháy dành cho Bao!"
+
+#. すると一気に情熱が燃え上がり、
+#. ぶー子を題材とした作品が次々と完成しました。
+msgctxt "0061 | HIFUMI YAMADA"
+msgid ""
+"I was consumed with passion, and I finished one\n"
+"Princess Piggles project after another."
+msgstr ""
+"Thế rồi ngọn lửa đam mê bùng cháy, \n"
+"những tác phẩm lấy đề tài Bao cứ thế lần lượt ra đời."
+
+#. あまりに出来がいいので、
+#. 試しにホームページで公開したところ…
+msgctxt "0062 | HIFUMI YAMADA"
+msgid ""
+"I was so happy with the results, I decided to put it\n"
+"up on my personal website, just to see what happened."
+msgstr ""
+"Vì chúng quá tuyệt vời nên tôi đã thử đăng lên trang cá \n"
+"nhân của mình, và thế là..."
+
+#. またたく間に、大ヒットとなったのです！！
+msgctxt "0063 | HIFUMI YAMADA"
+msgid "And it was an instant success!"
+msgstr "Ngay lập tức nó đã tạo nên một cú hích cực lớn!!"
+
+#. これが、僕が<CLT 3>同人作家として
+#. 生まれ変わった瞬間<CLT>なのです！
+msgctxt "0064 | HIFUMI YAMADA"
+msgid ""
+"That was the moment I was <CLT 3>reborn as a true fanfic\n"
+"creator<CLT>!"
+msgstr ""
+"Đó chính là khoảnh khắc mà tôi được \n"
+"<CLT 3>tái sinh là một tác giả doujin<CLT>!"
+
+#. そう…だったんだ…
+msgctxt "0065 | MAKOTO NAEGI"
+msgid "So that's why, huh?"
+msgstr "Hóa ra... là vậy sao...?"
+
+#. 僕は嬉しかったなぁ…
+msgctxt "0066 | HIFUMI YAMADA"
+msgid "I was so happy..."
+msgstr "Tôi đã vui lắm chứ..."
+
+#. 僕と同じような想いを抱く同士が、
+#. 世の中に、こんなにいたのかと…
+msgctxt "0067 | HIFUMI YAMADA"
+msgid ""
+"I had no idea there were other people on the planet\n"
+"who'd felt the same things I had."
+msgstr ""
+"Hóa ra trên đời này lại có nhiều người có cùng chí hướng \n"
+"với tôi đến như vậy."
+
+#. ぶー子ちゃんには感謝し切れません！
+#. だから、僕は…
+msgctxt "0068 | HIFUMI YAMADA"
+msgid "I can't thank her, I know that! So instead..."
+msgstr ""
+"Lòng biết ơn của tôi dành cho Bao-chan là không sao kể \n"
+"hết! Thế nên tôi..."
+
+#. ありったけの愛を込めて、
+#. 彼女を辱めているのです！！
+msgctxt "0069 | HIFUMI YAMADA"
+msgid ""
+"I'll ball up all my love and affection, and use it to\n"
+"do incredibly embarrassing things to her!"
+msgstr ""
+"Sẽ dùng tất cả tình yêu đó để... \n"
+"vẽ ra những cảnh tượng nhạy cảm nhất về cô ấy!!"
+
+#. <CLT 4>少し、間違ってる気もするけど…
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I think he missed the mark...by a mile.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hình như... có gì đó sai sai ở đây thì phải...\n"
+"<CLT>"
+
+#. <CLT 4>でも、聞けて良かったかも。
+#. お陰で、山田クンの事がわかった気がする…
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...maybe I'm better off for hearing what he had to\n"
+"say. I think I understand him a little better now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng dù sao... mình cũng thấy nhẹ nhõm hơn. \n"
+"Nhờ đó mà mình cũng hiểu thêm một chút về Hifumi...\n"
+"<CLT>"
+
+#. ぶー子は、女性としてまだ発展途上なのです！！
+#. 今後も僕によって色々と開発されていくのです！
+msgctxt "0072 | HIFUMI YAMADA"
+msgid ""
+"She's still developing as a woman, you know! And I can\n"
+"keep developing her in all sorts of ways!"
+msgstr ""
+"Bao vẫn còn đang trong giai đoạn phát triển thành thiếu nữ. \n"
+"Sau này tôi sẽ còn tiếp tục 'khai phá' cô ấy nhiều hơn nữa!"
+
+#. <CLT 4>わかるのは…少しだけでいいかもしれないけど…
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...And maybe understanding him just a *little* better\n"
+"is good enough.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Có lẽ hiểu thêm một chút thôi là cũng đủ lắm rồi.\n"
+"<CLT>"
+
+#. <CLT 23>Thông tin <CLT><CLT 3>Sổ Học Sinh<CLT><CLT 23> của Hifumi đã được cập nhật dựa trên trải nghiệm của bạn với cậu ấy.\n<CLT>
+msgctxt "0074 | NARRATION"
+msgid ""
+"<CLT 23>Hifumi's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with him.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Hifumi đã được cập nhật dựa trên \n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>"
+
+#. <CLT 23>Bạn vừa mở khóa được kỹ năng <CLT><CLT 3>Ảo Tưởng<CLT><CLT 23>! Cho một tràng pháo tay đi nào. Vì bạn xứng đáng!\n<CLT>
+msgctxt "0075 | NARRATION"
+msgid ""
+"<CLT 23>You just unlocked the skill <CLT><CLT 3>Delusion<CLT><CLT 23>!\n"
+"Give yourself a pat on the back. You've earned it!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn vừa mở khóa được kỹ năng <CLT><CLT 3>Ảo Tưởng<CLT><CLT 23>! \n"
+"Cho một tràng pháo tay đi nào. Vì bạn xứng đáng!\n"
+"<CLT>"
+
+#. <CLT 4>山田クンと別れた後、
+#. ボクは自分の部屋へと戻った。
+#. <CLT>
+msgctxt "0076 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I parted ways with Hifumi, and went back to my room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi tạm biệt Hifumi, mình quay trở về phòng.\n"
+"<CLT>"

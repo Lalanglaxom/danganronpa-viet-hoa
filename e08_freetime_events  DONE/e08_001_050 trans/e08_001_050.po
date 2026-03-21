@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. いいだろう！　他ならぬ苗木くんの為だ！
+#. 貴重な僕の時間を割いてあげようではないか！
+msgctxt "0001 | KIYOTAKA ISHIMARU"
+msgid ""
+"Sounds good! If it were anyone else, no way. But I\n"
+"don't mind sharing some of my valuable time with you!"
+msgstr ""
+"Được thôi! Nếu là người khác thì chắc chắn là không. \n"
+"Nhưng vì là cậu nên tớ không ngại đâu!"
+
+#. <CLT 4>石丸クンの貴重な時間を割いてもらった。
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka was nice enough to give me some of his valuable\n"
+"time...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ishimaru đã rất tốt bụng khi dành cho tôi\n"
+"một ít thời gian quý báu của cậu ấy...\n"
+"<CLT>"
+
+#. ふむ。時には生徒同士の心の交流も必要かもしれん。
+#. では、一緒に自習するか！
+msgctxt "0003 | KIYOTAKA ISHIMARU"
+msgid ""
+"You know, sometimes what students need is a meeting of\n"
+"the soul. Would you like to study with me?"
+msgstr ""
+"Hừm. Đôi khi học sinh cần những buổi giao lưu tâm hồn.\n"
+"Vậy, cậu có muốn cùng tớ tự học không?"
+
+#. <CLT 4>石丸クンと一緒に自習した…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I took some time to study with Taka...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành thời gian để cùng tự học với Taka...\n"
+"<CLT>"
+
+#. 何！？　僕の話を聞きたいと！？
+msgctxt "0005 | KIYOTAKA ISHIMARU"
+msgid "What's that!? You want to hear what I've got to say!?"
+msgstr "Cái gì!? Cậu bảo là muốn nghe tớ nói chuyện sao!?"
+
+#. いいだろう！　聞かせようではないか！
+#. 僕の自論の数々を！！
+msgctxt "0006 | KIYOTAKA ISHIMARU"
+msgid ""
+"Very well! I've got many theories on many topics, and\n"
+"I'll share them all with you!"
+msgstr ""
+"Rất tốt! Tớ có rất nhiều quan điểm về đủ loại chủ đề,\n"
+"và tớ sẽ chia sẻ tất cả chúng với cậu!!"
+
+#. <CLT 4>石丸クンの自論の数々を聞かされた。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka went into extreme detail on some of his many\n"
+"theories...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ishimaru đã giảng giải cực kỳ chi tiết về hàng loạt\n"
+"quan điểm cá nhân của cậu ấy...\n"
+"<CLT>"
+
+#. そうだな、たまには休憩でもするか.
+#. 僕のいれるお茶 là 美味しいぞ！　ハッハッハ！！
+msgctxt "0008 | KIYOTAKA ISHIMARU"
+msgid ""
+"Well, I suppose we should take a break once in a\n"
+"while. Let's partake of some of my delicious tea!"
+msgstr ""
+"Phải rồi, thỉnh thoảng chúng ta nên nghỉ ngơi một chút.\n"
+"Trà tớ pha ngon lắm đấy! Ha ha ha!!"
+
+#. <CLT 4>食堂で、石丸クンのいれたお茶を飲んだ.
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>We went to the dining hall, and Taka made us some of\n"
+"his delicious tea...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chúng tôi tới nhà ăn, và Taka đã cho tôi\n"
+"thưởng thức món trà tuyệt hảo của cậu ấy...\n"
+"<CLT>"
+
+#. <CLT 4>石丸クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi và Ishimaru đã thân thiết hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0012 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không, không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0013 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Taka a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Taka không?<CLT>"

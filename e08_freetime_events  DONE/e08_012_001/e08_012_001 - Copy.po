@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. みなさん、頑張って出口を探しているのですね？
+msgctxt "0001 | CELES"
+msgid ""
+"Everyone's working hard trying to find an exit, are\n"
+"they not?"
+msgstr ""
+
+#. うふふ…勝手に頑張ってください。
+#. わたくしは、そういう事に興味ありませんから。
+msgctxt "0002 | CELES"
+msgid ""
+"Hmhm. Good luck with that. I have no interest in such\n"
+"menial labor."
+msgstr ""
+
+#. 一緒に過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time with Celeste"
+msgstr ""
+
+#. 他の場所へ行く
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr ""
+
+#. <CLT 4>どうしよう？
+#. セレスさんと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Celeste for a while?\n"
+"<CLT>"
+msgstr ""
+
+#. あら、わたくしと一緒にいたいと？
+msgctxt "0006 | CELES"
+msgid "Oh, you wish to stay close to me?"
+msgstr ""
+
+#. うふふ…仕方ありませんわね…
+msgctxt "0007 | CELES"
+msgid "Heh-heh. I am not surprised."
+msgstr ""
+
+#. <CLT 4>セレスさんと一緒に過ごした…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Celeste.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>セレスさんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr ""
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr ""
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Celeste a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr ""

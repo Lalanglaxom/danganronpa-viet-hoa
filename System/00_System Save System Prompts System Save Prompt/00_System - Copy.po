@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. メモリースティック™が差し込まれていません。
+msgctxt "0001"
+msgid "？？？"
+msgstr "Thẻ nhớ chưa được cắm vào."
+#. 記録メディアの空き容量が不足しています。
+#. このゲームのデータをセーブするには空き容量が
+#. あと○○KB以上必要です。
+msgctxt "0002"
+msgid "？？？"
+msgstr "Bộ nhớ trống của thiết bị lưu trữ không đủ. Cần ít nhất ○○KB dung lượng trống để lưu dữ liệu của trò chơi này."
+#. 本ゲームはオートセーブ機能に対応しています。
+#. オートセーブ中にはメモリースティック™アクセスランプが
+#. 点滅しますので、その間はメモリースティック™を抜いたり、
+#. 本体の電源を切ったりしないでください。
+msgctxt "0003"
+msgid "？？？"
+msgstr "Trò chơi này hỗ trợ tính năng tự động lưu. Đèn truy cập thẻ nhớ sẽ nhấp nháy trong khi đang tự động lưu, vui lòng không rút thẻ nhớ hoặc tắt nguồn thiết bị trong thời gian đó."
+#. ロードに失敗しました。セーブデータが壊れています。
+msgctxt "0004"
+msgid "？？？"
+msgstr "Tải dữ liệu thất bại. Dữ liệu lưu đã bị hỏng."
+#. 体験版のセーブデータを保存しますか？
+#. このセーブデータがあると、製品版で何かいいことが…？
+msgctxt "0005"
+msgid "？？？"
+msgstr "Bạn có muốn lưu dữ liệu của bản chơi thử không? Nếu có dữ liệu lưu này, có lẽ sẽ có điều gì đó tốt đẹp trong bản chính thức...?"
+#. セーブデータを保存しますか？
+msgctxt "0006"
+msgid "Do you want to save the data?"
+msgstr "Bạn có muốn lưu dữ liệu?"
+
+#. セーブデータを読み込みますか？
+msgctxt "0007"
+msgid "？？？"
+msgstr "Bạn có muốn tải dữ liệu lưu không?"
+#. ここまでの進行状況を
+#. セーブデータに保存しますか？
+msgctxt "0008"
+msgid "？？？"
+msgstr "Bạn có muốn lưu tiến trình cho đến hiện tại vào dữ liệu lưu không?"
+#. 変更された内容を
+#. セーブデータに保存しますか？
+msgctxt "0009"
+msgid "？？？"
+msgstr "Bạn có muốn lưu các nội dung đã thay đổi vào dữ liệu lưu không?"
+#. はい
+msgctxt "0010"
+msgid "？？？"
+msgstr "Có"
+#. いいえ
+msgctxt "0011"
+msgid "？？？"
+msgstr "Không"
+#. ＯＫ
+msgctxt "0012"
+msgid "？？？"
+msgstr "OK"
+#. 記録メディアの空き容量が不足しています。
+#. ゲームデータをインストールするには空き容量が
+#. あと○○MB以上必要です。
+msgctxt "0013"
+msgid "？？？"
+msgstr "Bộ nhớ trống của thiết bị lưu trữ không đủ. Cần ít nhất ○○MB dung lượng trống để cài đặt dữ liệu trò chơi."
+#. メモリースティック™を抜くと、自動的に
+#. インストール機能が“無効”となります。
+#. 再度“有効”にする場合は、オプションから
+#. 変更してください。
+msgctxt "0014"
+msgid "？？？"
+msgstr ""
+
+#. 記録メディアにインストールデータが
+#. 既に存在します。
+#. インストールデータを削除して、
+#. 再インストールしますか？
+msgctxt "0015"
+msgid "？？？"
+msgstr "Dữ liệu cài đặt đã tồn tại trong thiết bị lưu trữ. Bạn có muốn xóa dữ liệu cài đặt cũ và cài đặt lại không?"
+#. インストールデータが破損しています。
+#. インストールデータを削除して、
+#. 再インストールしますか？
+msgctxt "0016"
+msgid "？？？"
+msgstr "Dữ liệu cài đặt đã bị hỏng. Bạn có muốn xóa dữ liệu cài đặt và cài đặt lại không?"
+#. メモリースティック™のアクセスに失敗したため、
+#. "UMD"からゲームデータを読み込んでいます。
+#. インストールデータからゲームデータを
+#. 読み込むには、オプションのインストール機能を
+#. “有効”にしてください。
+msgctxt "0017"
+msgid "？？？"
+msgstr ""
+
+#. インストールを中断しました。
+msgctxt "0018"
+msgid "？？？"
+msgstr "Quá trình cài đặt đã bị gián đoạn."
+#. データをインストールするメモリースティック™ を
+#. 差し込んでから、“ＩＮＳＴＡＬＬ　ＤＡＴＡ”を
+#. 選択してください。
+msgctxt "0019"
+msgid "？？？"
+msgstr ""
+
+#. JAPANESE LINE NOT FOUND
+msgctxt "0020"
+msgid "[EMPTY_LINE]"
+msgstr "[EMPTY_LINE]"
+
+#. JAPANESE LINE NOT FOUND
+msgctxt "0021"
+msgid "[EMPTY_LINE]"
+msgstr "[EMPTY_LINE]"
+
+#. JAPANESE LINE NOT FOUND
+msgctxt "0022"
+msgid "[EMPTY_LINE]"
+msgstr "[EMPTY_LINE]"
+
+#. JAPANESE LINE NOT FOUND
+msgctxt "0023"
+msgid "[EMPTY_LINE]"
+msgstr "[EMPTY_LINE]"

@@ -1,0 +1,388 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. うぅ…苗木…
+msgctxt "0001 | AOI ASAHINA"
+msgid "Ugh... Hey, Makoto..."
+msgstr "Ư ư... Makoto ơi..."
+
+#. へろへろだよ…
+#. 私…へろへろなんだよね…
+msgctxt "0002 | AOI ASAHINA"
+msgid "I'm so tired..."
+msgstr "Tui rã rời hết cả người rồi... Tui... đuối như trái chuối luôn rồi nè..."
+
+#. 確かに、へろへろみたいだね。
+#. どうしたの？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Yeah, you *look* pretty tired. What happened?"
+msgstr "Công nhận, nhìn cậu bơ phờ thật đấy. Có chuyện gì vậy?"
+
+#. 今朝、いつもより早く起きちゃったから、
+#. 腕立てと腹筋とスクワットをやったんだけど…
+msgctxt "0004 | AOI ASAHINA"
+msgid ""
+"I woke up earlier than normal this morning, so I\n"
+"decided to do a push-up, sit-up, squat set."
+msgstr ""
+"Sáng nay tui lỡ dậy sớm hơn mọi khi, nên tui quyết định làm \n"
+"một set hít đất, gập bụng với squat..."
+
+#. …それぞれ１０００回ずつ。
+msgctxt "0005 | AOI ASAHINA"
+msgid "I ended up doing a thousand of each..."
+msgstr "...Mỗi bài 1000 cái."
+
+#. それで、へろへろに？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Well, that would explain it."
+msgstr "Thế thì bảo sao chẳng rã rời."
+
+#. へろへろ…へろへろ…
+msgctxt "0007 | AOI ASAHINA"
+msgid "Tired...so tired..."
+msgstr "Đuối quá... mệt chết đi được..."
+
+#. 疲れた体が…甘い物を欲してるよ…
+#. 例えば…
+msgctxt "0008 | AOI ASAHINA"
+msgid "I want...something sweet..."
+msgstr ""
+"Cái cơ thể mệt mỏi này của tui... đang thèm đồ ngọt phát \n"
+"điên lên được... Ví dụ như là..."
+
+#. 小麦粉に砂糖やバターや卵を混ぜた生地を
+#. 油で揚げた例の食べ物とか…
+msgctxt "0009 | AOI ASAHINA"
+msgid ""
+"I want those things you get when you mix flour, sugar,\n"
+"butter and eggs, then deep fry 'em..."
+msgstr ""
+"Mấy cái món mà làm từ bột mì trộn với đường, bơ, trứng rồi \n"
+"đem đi chiên ngập dầu ấy..."
+
+#. ドーナツ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Donuts"
+msgstr "Bánh Donut"
+
+#. クッキー
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Cookies"
+msgstr "Bánh quy"
+
+#. それ、クッキーのこと？
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "You want some cookies?"
+msgstr "Ý cậu là bánh quy hả?"
+
+#. 違うよ！
+#. クッキーは油で揚げたりしないし！
+msgctxt "0013 | AOI ASAHINA"
+msgid "No! Since when do you deep fry a cookie!?"
+msgstr "Không phải! Bánh quy có ai đem đi chiên dầu bao giờ đâu!?"
+
+#. クッキーも嫌いじゃないけど…
+#. あまり食べた気にならないんだよね～。
+msgctxt "0014 | AOI ASAHINA"
+msgid ""
+"I mean, don't get me wrong. I like cookies as much as\n"
+"anyone. But they're totally not filling..."
+msgstr ""
+"Tui cũng không ghét bánh quy đâu, nhưng mà... ăn mấy cái \n"
+"đó chẳng bõ dính kẽ răng..."
+
+#. やっぱりこう、食べたときに
+#. 胃にどっしり来る物がいいよね！
+msgctxt "0015 | AOI ASAHINA"
+msgid ""
+"When you're as tired as I am, you want something\n"
+"that'll leave ya feeling full and gross!"
+msgstr ""
+"Phải là cái gì đó mà khi ăn vào, cảm giác nó lấp đầy cái bụng \n"
+"một cách chắc nịch cơ!"
+
+#. <CLT 4>女の子の発言には聞こえない気が…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I wonder if any girl in the history of human\n"
+"civilization has ever said something like that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nghe cái câu này chẳng giống con gái nói chút nào...\n"
+"<CLT>"
+
+#. チュロス
+msgctxt "0017 | CHOICE/RE:ACT"
+msgid "Churros"
+msgstr "Bánh Churros"
+
+#. チュロスかな？
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "Are you talking about churros?"
+msgstr "Hay là bánh Churros?"
+
+#. うん, チュロスもいいよね！
+msgctxt "0019 | AOI ASAHINA"
+msgid "Oh man, churros are good, too!"
+msgstr "Ừm, Churros cũng ngon lắm nha!"
+
+#. 外はカリッと, 中はもっちりってところは
+#. 例の食べ物と一緒だし！
+msgctxt "0020 | AOI ASAHINA"
+msgid ""
+"Crunchy on the outside, chewy on the inside... It's\n"
+"almost the same as what I'm craving!"
+msgstr ""
+"Cái kiểu bên ngoài giòn rụm, bên trong dai mềm thì cũng y \n"
+"hệt món tui đang thèm!"
+
+#. っていうか、
+#. 多分、同じカテゴリなんじゃないかな？
+msgctxt "0021 | AOI ASAHINA"
+msgid ""
+"I guess you could probably put them in the same\n"
+"category, huh?"
+msgstr ""
+"Mà nói chung là, chắc tụi nó cũng cùng một hệ với nhau hết \n"
+"ấy mà!"
+
+#. <CLT 4>チュロスと同じカテゴリの、例の食べ物…か…
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh... So it's something similar to churros...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cùng hệ với Churros, là món nào... hmm...\n"
+"<CLT>"
+
+#. 苗木, わかんないの！？
+msgctxt "0023 | AOI ASAHINA"
+msgid "Haven't you figured it out, Makoto!?"
+msgstr "Makoto, ông vẫn không đoán ra hả!?"
+
+#. 小麦粉に砂糖やバターや卵を混ぜた生地を
+#. 油で揚げた例の食べ物だよ！　ほら！
+msgctxt "0024 | AOI ASAHINA"
+msgid "Flour, sugar, butter, eggs, then fry it! Come on!"
+msgstr ""
+"Bột mì trộn đường, bơ với trứng rồi đem đi chiên ngập dầu \n"
+"đó! Nghĩ đi!"
+
+#. <CLT 4>つまり、朝日奈さんが言ってるのって…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So what Hina's looking for is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tóm lại là món mà Hina đang nhắc tới chính là...\n"
+"<CLT>"
+
+#. わかった, ドーナツでしょ？
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "Oh, I know. You want some donuts, don't you?"
+msgstr "Tớ biết rồi, bánh Donut đúng không?"
+
+#. あのね、内緒の話なんだけど、
+#. 寄宿舎の倉庫に<CLT 3>冷凍ドーナツ<CLT>があるんだ…
+msgctxt "0027 | AOI ASAHINA"
+msgid ""
+"Don't tell anyone, but there's actually a bunch of\n"
+"<CLT 3>frozen donuts<CLT> in the warehouse...!"
+msgstr ""
+"Nè, tui nói nhỏ cái này cho nghe thôi nha, trong kho ở ký túc \n"
+"xá có một đống <CLT 3>Donut đông lạnh<CLT> đó…!"
+
+#. それを電子レンジに入れた時の事を
+#. 想像してみなって！
+msgctxt "0028 | AOI ASAHINA"
+msgid ""
+"Throw those in the microwave for a few seconds and\n"
+"just imagine..."
+msgstr ""
+"Ông hãy thử tưởng tượng cái cảnh bỏ tụi nó vào lò vi sóng \n"
+"quay lên mà xem!"
+
+#. ほっかほかのドーナツを想像してみなって！
+msgctxt "0029 | AOI ASAHINA"
+msgid "Imagine the warm chewiness of that donut!"
+msgstr "Tưởng tượng cái sự ấm áp mềm rộp của cái donut đó!"
+
+#. ほっかほかのドーナツを想像してみなって！
+#. ほら、食べたくなったでしょ！？
+#. 苗木もドーナツ食べたくなったでしょ！？
+msgctxt "0030 | AOI ASAHINA"
+msgid ""
+"You know what I'm saying, right? You'd eat the crap\n"
+"outta that, right!?"
+msgstr ""
+"Thấy chưa, thèm rồi chứ gì!? Makoto cũng đang thèm Donut \n"
+"phát điên lên rồi đúng không!?"
+
+#. 本当に好きなんだね, ドーナツ…
+msgctxt "0031 | MAKOTO NAEGI"
+msgid "You really do love donuts, huh?"
+msgstr "Cậu đúng là cuồng bánh Donut thật đấy."
+
+#. むしろ嫌いな人なんている！？
+#. 全世界…いや<CLT 3>全宇宙<CLT>が好きでしょ！
+msgctxt "0032 | AOI ASAHINA"
+msgid ""
+"Is there anyone who doesn't? Who on Earth—no, who in\n"
+"the <CLT 3>whole universe<CLT> can say they hate donuts!?"
+msgstr ""
+"Trên đời có ai mà không thích nó hả!? Toàn thế giới... không, \n"
+"phải là <CLT 3>toàn vũ trụ<CLT> này đều mê mệt nó mới đúng!"
+
+#. あのね、ドーナツを食べるとね…
+msgctxt "0033 | AOI ASAHINA"
+msgid "Think about the sensation of biting into a donut..."
+msgstr "Này nha, khi ông cắn một miếng Donut..."
+
+#. 甘い砂糖の味が口中に広がって、
+#. 次にもちっとした生地の食感が…
+msgctxt "0034 | AOI ASAHINA"
+msgid ""
+"First the sweetness floods your mouth, then the soft\n"
+"dough cushions you..."
+msgstr ""
+"Cái vị đường ngọt lịm sẽ lan tỏa khắp khoang miệng, rồi sau \n"
+"đó là cảm giác dai dai của lớp bột bánh..."
+
+#. そんで、卵 và バターの風味が口に
+#. ぶわぁーっと広がった途端…
+msgctxt "0035 | AOI ASAHINA"
+msgid "Next you get that hint of egg and butter, right?"
+msgstr "Cái hương vị của trứng và bơ sẽ bùng nổ ngay lập tức..."
+
+#. なんか、体がとろろ～んって、
+#. とろけてくるんだよ…
+msgctxt "0036 | AOI ASAHINA"
+msgid "Your whole body starts to melt..."
+msgstr "Cảm giác cả cơ thể như đang tan chảy ra..."
+
+#. まるで自分がドーナツの穴の中に落ちていくような、
+#. そんな素敵な感覚…
+msgctxt "0037 | AOI ASAHINA"
+msgid ""
+"You feel like you're falling into the center of the\n"
+"donut itself!"
+msgstr ""
+"Cứ như thể chính mình đang rơi tõm vào cái lỗ ở giữa cái \n"
+"bánh Donut vậy, một cảm giác tuyệt diệu khôn tả..."
+
+#. これを、<CLT 3>ドーナツ化現象<CLT>って言うらしいよ。
+msgctxt "0038 | AOI ASAHINA"
+msgid ""
+"When people talk about the <CLT 3>donut effective<CLT>, that's\n"
+"what they're talking about...!"
+msgstr "Người ta gọi đó chính là <CLT 3>Hiện tượng Donut hóa<CLT> đó!"
+
+#. …いや、ウソだよ。
+msgctxt "0039 | MAKOTO NAEGI"
+msgid "That's absolutely not true."
+msgstr "...Xạo vừa thôi bà nội."
+
+#. ああっ、ダメだ…！
+msgctxt "0040 | AOI ASAHINA"
+msgid "Ahh, I can't take it anymore!"
+msgstr "Aaa, chịu hết nổi rồi...!"
+
+#. もう…ガマン出来ない…
+#. ヨダレがナイアガラ状態だよ…
+msgctxt "0041 | AOI ASAHINA"
+msgid "I'm drooling like Niagara Falls over here!"
+msgstr ""
+"Tui không kìm lòng được nữa rồi... Nước miếng tui chảy như \n"
+"thác Niagara luôn rồi nè..."
+
+#. 苗木！　そこをどいて！
+#. ジャマすると、グーでいくよ！
+msgctxt "0042 | AOI ASAHINA"
+msgid ""
+"Get outta my way, Makoto, or I got an uppercut with\n"
+"your name on it!"
+msgstr ""
+"Makoto! Tránh đường cho tui! Cản đường là tui cho ăn đấm \n"
+"đó nha!"
+
+#. い、いや…ジャマなんて…
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "I-I'm not in the way..."
+msgstr "Kh-Khỏi cần dọa, tớ có cản đâu..."
+
+#. …待っててね！　ドーナツの神様！！
+msgctxt "0044 | AOI ASAHINA"
+msgid "Wait for me, god of donuts!"
+msgstr "...Đợi tui với! Vị thần Donut ơi!!"
+
+#. <CLT 4>言い終わるや否や、
+#. 朝日奈さんは猛スピードで駆けていった.
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Almost before she was done talking, Hina took off like\n"
+"a bat out of hell...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vừa mới dứt lời, Hina đã lao đi với tốc độ bàn thờ.\n"
+"<CLT>"
+
+#. 朝日奈さんと接してると…
+#. なんて言うか、人間の生命力みたいなものを感じるな…
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"Whenever I'm around her, I feel like I'm soaking in\n"
+"the essence of human vitality..."
+msgstr ""
+"Mỗi lần ở cạnh Hina... làm sao nhỉ, tôi lại cảm nhận được một \n"
+"nguồn sinh lực tràn trề của con người..."
+
+#. <CLT 23>朝日奈葵の<CLT><CLT 3>通信簿<CLT><CLT 23>に、今の情報を追記致しました.
+#. <CLT>
+msgctxt "0047 | NARRATION"
+msgid ""
+"<CLT 23>Hina's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with her.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Hina đã được cập nhật dựa trên \n"
+"trải nghiệm của bạn với cậu ấy.\n"
+"<CLT>"
+
+#. <CLT 23>おめでとうございます.
+#. <CLT><CLT 3>“スキルポイント”<CLT><CLT 23>が上がりました.
+#. <CLT>
+msgctxt "0048 | NARRATION"
+msgid ""
+"<CLT 23>Your maximum number of <CLT><CLT 3>Skill Points<CLT><CLT 23> has increased!\n"
+"Hey, look at you go!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Chúc mừng! <CLT><CLT 3>Điểm Kỹ năng<CLT><CLT 23> tối đa của bạn đã tăng lên! Tiếp tục phát huy nhé!\n"
+"<CLT>"
+
+#. <CLT 4>走り去った朝日奈さんを見送った後、
+#. ボクは自分の部屋へと戻った.
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After I watched her run off, I went back to my room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi nhìn bóng lưng Hina chạy mất hút, tôi trở về phòng mình.\n"
+"<CLT>"

@@ -1,0 +1,405 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 掃除当番…？
+#. あぁ、それなら僕ですが…それが何か？
+msgctxt "0001 | HIFUMI YAMADA"
+msgid ""
+"Cleaning duty? As a matter of fact, that's me. Why do\n"
+"you ask?"
+msgstr ""
+
+#. 昨日の朝、モノクマに頼まれたんですよ。
+msgctxt "0002 | HIFUMI YAMADA"
+msgid ""
+"It just so happens Monokuma talked to me yesterday and\n"
+"asked me to take care of it."
+msgstr ""
+
+#. 掃除当番がいないと
+#. 学園中がゴミだらけになってしまうとの事でしたので…
+msgctxt "0003 | HIFUMI YAMADA"
+msgid ""
+"Without someone on cleaning duty, the school would be\n"
+"flooded with trash in no time."
+msgstr ""
+
+#. わたくしめが立候補したのです！
+msgctxt "0004 | HIFUMI YAMADA"
+msgid "So I formally applied for the position!"
+msgstr ""
+
+#. 本当は、今朝から始める予定だったのですが…
+#. あんな事があったせいで実働はまだですがね。
+msgctxt "0005 | HIFUMI YAMADA"
+msgid ""
+"I was gonna start this morning, but after what\n"
+"happened, I haven't had a chance to get started."
+msgstr ""
+
+#. 掃除当番って…トラッシュールームに入れるんだよね？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"And since you're on cleaning duty...you can open the\n"
+"gate in front of the trash room?"
+msgstr ""
+
+#. とーぜんでしょう！
+msgctxt "0007 | HIFUMI YAMADA"
+msgid "Of course!"
+msgstr ""
+
+#. 掃除当番はみんなから集めたゴミをトラッシュルームに
+#. 廃棄しなければならないのです。
+msgctxt "0008 | HIFUMI YAMADA"
+msgid ""
+"It's my job to gather up all the garbage and toss it\n"
+"in the trash room."
+msgstr ""
+
+#. トラッシュルームの鉄格子を開ける鍵も
+#. ちゃんと受け取ってますがな！！
+msgctxt "0009 | HIFUMI YAMADA"
+msgid ""
+"And to do that, they gave me the key for the trash\n"
+"room gate!"
+msgstr ""
+
+#. ちなみに、掃除当番は１週間ごとの交代制らしいので、
+#. その内、苗木誠殿も担当する事があるでしょう。
+msgctxt "0010 | HIFUMI YAMADA"
+msgid ""
+"But we're supposed to rotate once a week, so\n"
+"eventually you'll be in charge."
+msgstr ""
+
+#. ちょっと待て…
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "Wait, hold on..."
+msgstr ""
+
+#. トラッシュルームに入るには鍵が必要…
+#. そして、その鍵は掃除当番だけに持たされる…？
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid ""
+"You need a key to get in the trash room? And only the\n"
+"person on cleaning duty has access to the key?"
+msgstr ""
+
+#. なぜ、そんな面倒をする必要がある？
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgid "What's the point of going to all that trouble?"
+msgstr ""
+
+#. トラッシュルームを開放して、
+#. 各々が廃棄出来るようにしたらいいはずだ…
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid ""
+"Why not just leave the trash room open all the time so\n"
+"we can all throw things out whenever we want?"
+msgstr ""
+
+#. 確かに…そっちの方が効率的だよね…
+msgctxt "0015 | MAKOTO NAEGI"
+msgid "That does seem more convenient."
+msgstr ""
+
+#. …どうしてだろう。
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "So I wonder why..."
+msgstr ""
+
+#. ひょっとすると…
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgid "Actually..."
+msgstr ""
+
+#. <CLT 4>仲間の誰かを殺したクロは“卒業”となりますが、
+#. 自分がクロだと他の生徒に知られてはいけません。
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyone who kills a fellow student and becomes\n"
+"\"blackened\" will graduate, unless they are discovered.\n"
+"<CLT>"
+msgstr ""
+
+#. …そういう事なのかもしれないな。
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid "That must be why."
+msgstr ""
+
+#. 全員がトラッシュルームに
+#. 自由に出入りするようになってしまったら…
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgid ""
+"If anyone could go in and out of the trash room\n"
+"whenever they wanted..."
+msgstr ""
+
+#. 証拠隠滅が簡単になり、
+#. スリルがなくてつまらなくなる…
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgid ""
+"...then destroying evidence would be easy. The thrill\n"
+"would disappear, and things would become boring."
+msgstr ""
+
+#. つまらないって…！！
+msgctxt "0022 | MAKOTO NAEGI"
+msgid "B-Boring...!?"
+msgstr ""
+
+#. つーかさぁ、今はそれどころじゃなくね？
+msgctxt "0023 | LEON KUWATA"
+msgid "That doesn't matter right now! My question is..."
+msgstr ""
+
+#. おい、ブーデー！
+#. テメー、なんで掃除当番に立候補しやがった！
+msgctxt "0024 | LEON KUWATA"
+msgid ""
+"Hey fatty! Why'd you want the cleaning duty gig,\n"
+"anyway!?"
+msgstr ""
+
+#. ぼ、僕は…みなさんの嫌がる仕事を買って出たまでで…
+#. そ、それが何か…？
+msgctxt "0025 | HIFUMI YAMADA"
+msgid ""
+"I-I just decided to volunteer for something I knew no\n"
+"one else would wanna do. What's the big deal!?"
+msgstr ""
+
+#. ウソこけっ！！　テメー、さてはアレだろ…
+msgctxt "0026 | LEON KUWATA"
+msgid "Liar! I know why you did it..."
+msgstr ""
+
+#. 女子のゴミでも漁って…なんか色々と…
+#. アレしようって腹じゃ…
+msgctxt "0027 | LEON KUWATA"
+msgid ""
+"You wanna dig through all the girls' trash! Looking\n"
+"for...y'know...and poking around at it!"
+msgstr ""
+
+#. な、何をおっしゃるウサギさん！
+#. 僕の愛は２次元限定ですぞっ！！
+msgctxt "0028 | HIFUMI YAMADA"
+msgid "What are you talking about!? All my love is for 2D!"
+msgstr ""
+
+#. でもよ、よくあんじゃん！
+#. ２次元では飽き足らず実際に犯罪を起こす的な…
+msgctxt "0029 | LEON KUWATA"
+msgid ""
+"But there's all kinds of trash diggers like that!\n"
+"Maybe you'll get tired of 2D, and then turn to—"
+msgstr ""
+
+#. 僕はァァ、２次元に飽きたりしないィィ！
+msgctxt "0030 | HIFUMI YAMADA"
+msgid "I would NEVER get tired of 2D!"
+msgstr ""
+
+#. 僕は２次元と３次元とを比較した上で、
+#. 自らの意思であえて２次元を選んでいるのだッ！
+msgctxt "0031 | HIFUMI YAMADA"
+msgid ""
+"After spending a significant amount of time comparing\n"
+"2D and 3D, I voluntarily chose 2D!"
+msgstr ""
+
+#. 大体…３次元で存在価値があるものなんて、
+#. ２次元を愛する者だけなのだッ！　あとフィギュアね！
+msgctxt "0032 | HIFUMI YAMADA"
+msgid ""
+"The only thing 3D is good for is to shower love and\n"
+"affection on 2D!"
+msgstr ""
+
+#. よく恥ずかしくねーな…
+msgctxt "0033 | LEON KUWATA"
+msgid ""
+"How are you not totally embarrassed to say stuff like\n"
+"that!?"
+msgstr ""
+
+#. …男子が掃除当番の時は、ゴミの収集から廃棄まで、
+#. 大神さくらに付き添ってもらえばいいだけだろう…
+msgctxt "0034 | BYAKUYA TOGAMI"
+msgid ""
+"Whenever a guy has cleaning duty, Sakura can accompany\n"
+"them, from picking up the trash to disposing of it."
+msgstr ""
+
+#. なっ！？
+msgctxt "0035 | HIFUMI YAMADA"
+msgid "Whaaat!?"
+msgstr ""
+
+#. やましい事がないなら、問題ないだろう？
+msgctxt "0036 | BYAKUYA TOGAMI"
+msgid ""
+"If you're as innocent as you claim, where's the harm\n"
+"in it?"
+msgstr ""
+
+#. クッ…こんなはずじゃ…！！
+msgctxt "0037 | HIFUMI YAMADA"
+msgid "Kh—! That's not how it's supposed to—!"
+msgstr ""
+
+#. あのさ山田クン、そんな事よりさ…
+#. キミが掃除当番なら、ちょっとお願いがあるんだけど…
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"Anyway, on another topic... Hifumi, since you were on\n"
+"cleaning duty, I have a favor to ask you."
+msgstr ""
+
+#. おや、なんですかな？　まさか唐突に仲間になれと？
+#. いやいや、まだフラグが立っておりませんぞ。
+msgctxt "0039 | HIFUMI YAMADA"
+msgid ""
+"What, so now you suddenly want to join my party?\n"
+"Sorry, but you haven't triggered that flag yet."
+msgstr ""
+
+#. それは仲間となる人物のトラウマを共に解決したり、
+#. 一緒に村を救ったり、または壮絶なバトルを経た後で…
+msgctxt "0040 | HIFUMI YAMADA"
+msgid ""
+"I mean, you haven't helped me recover from a past\n"
+"trauma, or save a village, or beat a boss..."
+msgstr ""
+
+#. いや…あのさ…山田クンって掃除当番だろ？
+#. トラッシュルームを調べたいんだけど…
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"No, nothing like that... I was just hoping to get into\n"
+"the trash room and look around."
+msgstr ""
+
+#. いいよ。
+msgctxt "0042 | HIFUMI YAMADA"
+msgid "Oh, okay!"
+msgstr ""
+
+#. 軽…ッ！
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "So easy...!"
+msgstr ""
+
+#. あん？　掃除当番…？
+#. 知らねぇよ。石丸にでも聞いてみろ？
+msgctxt "0044 | MONDO OOWADA"
+msgid "So, Hifumi and I headed down to the trash room."
+msgstr ""
+
+#. 掃除当番って…？
+msgctxt "0045 | AOI ASAHINA"
+msgid "Cleaning duty...?"
+msgstr ""
+
+#. そういうのだったら石丸に聞いてみれば？
+#. あいつ、その手の決まり事にうるさいし。
+msgctxt "0046 | AOI ASAHINA"
+msgid ""
+"Taka would prolly know more about that, I bet. He's\n"
+"pretty uptight about stuff like that."
+msgstr ""
+
+#. 掃除当番…？　さぁ、なんの事でしょう。
+msgctxt "0047 | CELES"
+msgid "Cleaning duty? What is that...?"
+msgstr ""
+
+#. 心当たりがありませんわね。
+#. 石丸君あたりに聞いてみてはいかがでしょう。
+msgctxt "0048 | CELES"
+msgid ""
+"Honestly, I have no idea. Maybe you should ask Taka.\n"
+"Or someone else. Anyone but me, really."
+msgstr ""
+
+#. あぁ、掃除当番か。
+#. それなら昨日の朝、モノクマから話があったな！
+msgctxt "0049 | KIYOTAKA ISHIMARU"
+msgid ""
+"Cleaning duty, eh? As a matter of fact, Monokuma came\n"
+"and talked to me yesterday morning!"
+msgstr ""
+
+#. …ホント！？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid "Really!?"
+msgstr ""
+
+#. きっと、モノクマも僕がまとめ役だとわかってたんだ！
+#. だから僕に直々に言ってきたのだよ。
+msgctxt "0051 | KIYOTAKA ISHIMARU"
+msgid ""
+"He probably realized I was basically in charge, so he\n"
+"decided to talk to me directly!"
+msgstr ""
+
+#. 掃除当番を決めてくれってね！！
+msgctxt "0052 | KIYOTAKA ISHIMARU"
+msgid ""
+"The topic of conversation was...assigning cleaning\n"
+"duty!"
+msgstr ""
+
+#. じゃあ、石丸クンが掃除当番だったんだね…
+msgctxt "0053 | MAKOTO NAEGI"
+msgid "Oh, so you're on cleaning duty now?"
+msgstr ""
+
+#. いや、僕は掃除当番ではないぞ。
+msgctxt "0054 | KIYOTAKA ISHIMARU"
+msgid "Actually, no."
+msgstr ""
+
+#. …えっ？　じゃあ誰が？
+msgctxt "0055 | MAKOTO NAEGI"
+msgid "Huh? Okay, then who is?"
+msgstr ""
+
+#. その話があった時、ちょうど山田くんもいてな、
+#. 彼が立候補してくれたんで、彼にお願いしたんだ！
+msgctxt "0056 | KIYOTAKA ISHIMARU"
+msgid ""
+"Hifumi was also there when we had this conversation.\n"
+"He volunteered right away, so I let him have it!"
+msgstr ""
+
+#. じゃあ、掃除当番は…山田クン？
+msgctxt "0057 | MAKOTO NAEGI"
+msgid "So *he's* on cleaning duty, then."
+msgstr ""
+
+#. 掃除当番は１週間ごとに交代していく予定だ。
+#. いずれ君にもお願いする事があるだろう…
+msgctxt "0058 | KIYOTAKA ISHIMARU"
+msgid ""
+"Indeed. But we'll swap out on a weekly basis. I'm sure\n"
+"you'll be up before too long."
+msgstr ""
+
+#. その時はよろしく頼むぞッ！！
+msgctxt "0059 | KIYOTAKA ISHIMARU"
+msgid "And when that time comes, I'll be counting on you!"
+msgstr ""

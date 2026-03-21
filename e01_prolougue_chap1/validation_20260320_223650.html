@@ -1,0 +1,2731 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>
+<title>PO Validation Report</title>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px;
+         background: #f4f5f7; color: #1a1a2e; }
+  header { background: #1a1a2e; color: #fff; padding: 20px 32px; }
+  header h1 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  header .meta { font-size: 12px; color: #aab; }
+  .stat-bar { display: flex; gap: 12px; padding: 16px 32px;
+              background: #fff; border-bottom: 1px solid #e0e0e0; flex-wrap: wrap;
+              align-items: center; }
+  .stat { padding: 6px 16px; border-radius: 20px; font-size: 13px;
+          font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .stat:hover { opacity: 0.75; }
+  .stat.ok     { background: #e6f9f0; color: #1a7a4a; border: 1.5px solid #1a7a4a; }
+  .stat.error  { background: #fdecea; color: #c0392b; border: 1.5px solid #c0392b; }
+  .stat.warn   { background: #fff8e1; color: #b7860b; border: 1.5px solid #b7860b; }
+  .stat.info   { background: #e8f0fe; color: #1a56c4; border: 1.5px solid #1a56c4; }
+  .stat.active { opacity: 1; }
+  .stat.dimmed { opacity: 0.35; }
+  .search-wrap { margin-left: auto; }
+  .search-wrap input { padding: 6px 12px; border: 1px solid #ccc; border-radius: 20px;
+                        font-size: 13px; width: 220px; outline: none; }
+  .search-wrap input:focus { border-color: #1a56c4; }
+  .chapters { padding: 16px 32px; display: flex; flex-direction: column; gap: 12px; }
+  .chapter { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0;
+             overflow: hidden; }
+  .chapter-header { display: flex; align-items: center; gap: 10px;
+                    padding: 10px 16px; cursor: pointer;
+                    background: #f8f8fb; border-bottom: 1px solid #e8e8ee;
+                    user-select: none; }
+  .chapter-header:hover { background: #f0f0f8; }
+  .chapter-name { font-weight: 600; font-size: 13px; flex: 1; }
+  .chapter-counts { font-size: 12px; color: #888; }
+  .chapter-toggle { font-size: 16px; color: #aaa; transition: transform .2s; }
+  .chapter.collapsed .chapter-toggle { transform: rotate(-90deg); }
+  .chapter.collapsed .chapter-body  { display: none; }
+  .chapter-body { padding: 0; }
+  .file-row { display: flex; align-items: flex-start; gap: 0;
+              border-bottom: 1px solid #f0f0f0; padding: 8px 16px 8px 16px; }
+  .file-row:last-child { border-bottom: none; }
+  .file-badge { min-width: 100px; font-size: 11px; font-weight: 700;
+                padding: 2px 8px; border-radius: 4px; text-align: center;
+                margin-right: 12px; margin-top: 2px; flex-shrink: 0; }
+  .badge-ok    { background: #e6f9f0; color: #1a7a4a; }
+  .badge-error { background: #fdecea; color: #c0392b; }
+  .badge-warn  { background: #fff8e1; color: #b7860b; }
+  .badge-nobackup { background: #f3e8ff; color: #6d28d9; }
+  .file-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #222; }
+  .file-issues { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .issue { font-size: 12px; padding: 3px 8px; border-radius: 4px;
+           border-left: 3px solid; line-height: 1.5; }
+  .issue-ERROR { background: #fff5f5; border-color: #e74c3c; color: #922b21; }
+  .issue-WARN  { background: #fffdf0; border-color: #f39c12; color: #7d6608; }
+  .issue-INFO  { background: #f0f4ff; border-color: #5b8cff; color: #1a4db5; }
+  .issue .check-tag { font-weight: 700; margin-right: 4px; }
+  .issue .detail-line { display: block; padding-left: 12px;
+                        color: #555; font-family: monospace; font-size: 11px; }
+  .no-issues { font-size: 12px; color: #999; font-style: italic; }
+  .hidden { display: none !important; }
+  .debug-block { background: #f8f8fb; border: 1px dashed #ccc; border-radius: 6px;
+                 padding: 12px 16px; font-family: monospace; font-size: 11px;
+                 color: #666; margin: 0 32px 12px; }
+  .debug-block summary { cursor: pointer; font-weight: 600; color: #888; }
+</style>
+
+</head><body>
+<header>
+  <h1>PO Validation Report</h1>
+  <div class="meta">
+    D:/Danganronpa1Viet/e01_prolougue_chap1_18-3-26 &nbsp;·&nbsp; 2026-03-20 22:36:50
+    &nbsp;·&nbsp; Rules: clt_tag_integrity, not_copy_of_source
+  </div>
+</header>
+<div class="stat-bar">
+  <span class="stat ok"    onclick="filterStatus('ok')"   >✔ OK &nbsp;96</span>
+  <span class="stat error" onclick="filterStatus('error')" >✗ Errors &nbsp;0</span>
+  <span class="stat warn"  onclick="filterStatus('warn')"  >! Warnings &nbsp;62</span>
+  <span class="stat info"  onclick="filterStatus('all')"   >Show all</span>
+  <span class="search-wrap"><input type="text" id="search" placeholder="Search segment…" oninput="filterSearch(this.value)"></span>
+</div>
+<details class="debug-block"><summary>Debug / scan info</summary><pre>Selected path: D:/Danganronpa1Viet/e01_prolougue_chap1_18-3-26
+Top-level folders: ['e00_001_000 trans', 'e00_002_000', 'e00_003_001', 'e00_004_001', 'e00_004_003 trans', 'e00_005_004', 'e00_006_007 trans', 'e01_000_146 chap1', 'e01_001_007', 'e01_001_103 trans', 'e01_002_101', 'e01_002_146', 'e01_003_135', 'e01_004_135', 'e01_005_103 first time room', 'e01_006_101', 'e01_006_103', 'e01_006_135', 'e01_006_136', 'e01_006_137', 'e01_006_139 hiro laundry room', 'e01_006_146', 'e01_007_001 trans', 'e01_007_003', 'e01_007_004 sayaka dream', 'e01_007_005', 'e01_007_010 meet junko', 'e01_008_001', 'e01_008_003', 'e01_008_004', 'e01_008_005', 'e01_008_006', 'e01_008_009', 'e01_008_010', 'e01_008_014', 'e01_008_015', 'e01_008_016', 'e01_008_101', 'e01_008_103 freetime', 'e01_008_135', 'e01_008_136 kitchen misc', 'e01_008_137', 'e01_008_139', 'e01_008_146 trans', 'e01_009_001', 'e01_009_003', 'e01_009_004', 'e01_009_005', 'e01_009_006', 'e01_009_009', 'e01_009_010', 'e01_009_014', 'e01_009_015 trans', 'e01_009_016', 'e01_009_101', 'e01_009_103 sleeptime', 'e01_009_135', 'e01_009_136', 'e01_009_137', 'e01_009_139', 'e01_009_146', 'e01_011_101 breakfast invite', 'e01_011_103 theater', 'e01_012_135 motive', 'e01_013_001', 'e01_013_003', 'e01_013_101 film look', 'e01_014_009 film', 'e01_015_001 sayaka run', 'e01_015_003', 'e01_015_004', 'e01_015_101', 'e01_016_014 find saya', 'e01_017_101', 'e01_018_103 ask room switch', 'e01_019_101', 'e01_019_119 room switch', 'e01_020_101', 'e01_020_119 theater', 'e01_021_101', 'e01_021_135 before sayaka', 'e01_022_006 after junko die', 'e01_022_104 sayaka die', 'e01_023_006 trans junko die', 'e01_024_001 investigate', 'e01_024_003 cleaning', 'e01_024_004 gym hall', 'e01_024_006 mono file', 'e01_024_010 Investigation Choice Interaction', 'e01_024_014 1a', 'e01_024_015 meet toko', 'e01_024_016', 'e01_024_101 dorm', 'e01_024_139 Laundry Room Choice', 'e01_024_146 Generic Choice Selection', 'e01_025_104 room kyoko', 'e01_025_106 sayaka body', 'e01_027_104', 'e01_029_104 Dying Message Discovery Dying Message Discovery', 'e01_031_119 room dvd', 'e01_032_009', 'e01_033_135 dining', 'e01_034_136 kitchen', 'e01_035_135 Hina Dining Break', 'e01_036_137 Trash Room Confrontation', 'e01_037_101 Hifumi Cleaning Duty', 'e01_038_137 Trash Gate Opening', 'e01_038_138 Hifumi Smut Offer', 'e01_038_156', 'e01_039_006', 'e01_040_001', 'e01_040_201', 'e01_040_203', 'e01_101_000', 'e01_102_000', 'e01_102_001', 'e01_103_000', 'e01_104_000', 'e01_104_001', 'e01_105_000', 'e01_106_000', 'e01_106_001', 'e01_107_000', 'e01_108_000', 'e01_109_000', 'e01_110_000', 'e01_110_001', 'e01_111_000', 'e01_112_000', 'e01_112_001', 'e01_113_000', 'e01_114_000', 'e01_114_001', 'e01_115_000', 'e01_116_000', 'e01_116_001', 'e01_117_000', 'e01_118_000', 'e01_118_001', 'e01_119_000', 'e01_120_000', 'e01_121_000', 'e01_122_000', 'e01_123_000', 'e01_150_000', 'e01_151_000', 'e01_152_000', 'e01_153_000', 'e01_154_000', 'e01_155_000', 'e01_156_000', 'e01_196_000', 'e01_197_000', 'e01_198_000', 'e01_199_000', 'e01_200_000', 'e01_201_000', 'e01_255_000']</pre></details>
+<div class="chapters">
+<div class="chapter" data-chapter="e00_001_000 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_001_000 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e00_001_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e00_001_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_002_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_002_000</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e00_002_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e00_002_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | MAKOTO NAEGI&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0002 | MAKOTO NAEGI&quot; (line 21): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 26): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_003_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_003_001</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e00_003_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e00_003_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_004_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_004_001</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e00_004_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e00_004_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_004_003 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_004_003 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e00_004_003">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e00_004_003</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0089 | MAKOTO NAEGI&quot; (line 863): translation is identical to source text</div>
+<div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0341 | MAKOTO NAEGI&quot; (line 3105): CLT tag mismatch — </div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0344 | CELES&quot; (line 3134): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0347 | CELES&quot; (line 3157): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_005_004">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_005_004</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e00_005_004">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e00_005_004</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0001 | MONDO OOWADA&quot; (line 16): English source text changed<span class="detail-line">    Copy   : &quot;God, I had no idea this Hope's Peak Academy place was\\ngonna be such a pain in my balls.&quot;</span><span class="detail-line">    Working: &quot;God, I had no idea this Hope's Peak Academy place was\\ngonne be such a pain in my balls.&quot;</span></div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e00_006_007 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e00_006_007 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e00_006_007">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e00_006_007</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0039 | MONOKUMA&quot; (line 333): English source text changed<span class="detail-line">    Copy   : '...you will all live a communal life together &lt;CLT 3&gt;solely\\nwithin the confines of this school&lt;CLT&gt;.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;...you will all live a communal life together &lt;CLT 3&gt;solely\\n\\&quot; \\&quot;within the confines of this school&lt;CLT&gt;.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0040 | MONOKUMA&quot; (line 342): English source text changed<span class="detail-line">    Copy   : 'Everyone will live in harmony together, and adhere to\\nthe rules and regulations of the school.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Everyone will live in harmony together, and adhere to\\n\\&quot; \\&quot;the rules and regulations of the school.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0042 | MONOKUMA&quot; (line 362): English source text changed<span class="detail-line">    Copy   : 'Ah, now then...regarding the end date for this\\ncommunal life...'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Ah, now then...regarding the end date for this\\n\\&quot; \\&quot;communal life...'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0044 | MONOKUMA&quot; (line 377): English source text changed<span class="detail-line">    Copy   : &quot;In other words, you'll all be here &lt;CLT 3&gt;until the day you\\ndie&lt;CLT&gt;! Such is the school life you've been assigned.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;In other words, you\'ll all be here &lt;CLT 3&gt;until the day you\\n\\&quot; \\&quot;die&lt;CLT&gt;! Such is the school life you\'ve been ass'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0046 | MONOKUMA&quot; (line 392): English source text changed<span class="detail-line">    Copy   : &quot;Oh, but fear not! We have quite an abundant budget, so\\nyou won't lack for all the common conveniences.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Oh, but fear not! We have quite an abundant budget, so\\n\\&quot; \\&quot;you won\'t lack for all the common conveniences.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0048 | JUNKO ENOSHIMA (MUKURO)&quot; (line 407): English source text changed<span class="detail-line">    Copy   : &quot;Yeah, what the hell? You're saying I have to live here\\nforever?&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Yeah, what the hell? You\'re saying I have to live here\\n\\&quot; \\&quot;forever?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0050 | MONOKUMA&quot; (line 421): English source text changed<span class="detail-line">    Copy   : 'I am not screwing with you! I am no liar, of that you\\ncan be 100% sure.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;I am not screwing with you! I am no liar, of that you\\n\\&quot; \\&quot;can be 100% sure.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0051 | MONOKUMA&quot; (line 431): English source text changed<span class="detail-line">    Copy   : &quot;Ah, and just for your information...you're completely\\ncut off from the outside world.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Ah, and just for your information...you\'re completely\\n\\&quot; \\&quot;cut off from the outside world.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0052 | MONOKUMA&quot; (line 441): English source text changed<span class="detail-line">    Copy   : &quot;So you don't have to worry about that dirty dirty land\\nbeyond these walls ever again!&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;So you don\'t have to worry about that dirty dirty land\\n\\&quot; \\&quot;beyond these walls ever again!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0057 | MONOKUMA&quot; (line 471): English source text changed<span class="detail-line">    Copy   : 'No matter how much you may yell and scream for\\nhelp...help will not come.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;No matter how much you may yell and scream for\\n\\&quot; \\&quot;help...help will not come.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0058 | MONOKUMA&quot; (line 481): English source text changed<span class="detail-line">    Copy   : 'So with all of that in mind, feel free to live out\\nyour life here with reckless abandon!'</span><span class="detail-line">    Working: '\\&quot; \\&quot;So with all of that in mind, feel free to live out\\n\\&quot; \\&quot;your life here with reckless abandon!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0060 | LEON KUWATA&quot; (line 497): English source text changed<span class="detail-line">    Copy   : &quot;I don't care if the school or whoever else is behind\\nit all, this is just a really bad joke.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;I don\'t care if the school or whoever else is behind\\n\\&quot; \\&quot;it all, this is just a really bad joke.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0062 | MONOKUMA&quot; (line 515): English source text changed<span class="detail-line">    Copy   : 'You keep saying this is a lie, or a joke. A bunch of\\nskeptics, all of you.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;You keep saying this is a lie, or a joke. A bunch of\\n\\&quot; \\&quot;skeptics, all of you.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0063 | MONOKUMA&quot; (line 525): English source text changed<span class="detail-line">    Copy   : &quot;But I guess you can't help it, huh? You all grew up in\\nan age where you're taught to doubt your neighbor...&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;But I guess you can\'t help it, huh? You all grew up in\\n\\&quot; \\&quot;an age where you\'re taught to doubt your neighbor...'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0064 | MONOKUMA&quot; (line 535): English source text changed<span class="detail-line">    Copy   : &quot;Well, you'll have plenty of time to find out whether\\nor not what I say is true.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Well, you\'ll have plenty of time to find out whether\\n\\&quot; \\&quot;or not what I say is true.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0065 | MONOKUMA&quot; (line 545): English source text changed<span class="detail-line">    Copy   : &quot;And when that time comes, you'll see with your own\\neyeballs that I speak the undeniable truth.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;And when that time comes, you\'ll see with your own\\n\\&quot; \\&quot;eyeballs that I speak the undeniable truth.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0066 | CELES&quot; (line 555): English source text changed<span class="detail-line">    Copy   : 'Having to live here forever would be...quite the\\nproblem.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Having to live here forever would be...quite the\\n\\&quot; \\&quot;problem.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0068 | MONOKUMA&quot; (line 570): English source text changed<span class="detail-line">    Copy   : &quot;You decided of your own free will to attend Hope's\\nPeak Academy, didn't you?&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;You decided of your own free will to attend Hope\'s\\n\\&quot; \\&quot;Peak Academy, didn\'t you?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0069 | MONOKUMA&quot; (line 580): English source text changed<span class="detail-line">    Copy   : &quot;And now, before the entrance ceremony is even\\nfinished, you've already decided you want to leave?&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;And now, before the entrance ceremony is even\\n\\&quot; \\&quot;finished, you\'ve already decided you want to leave?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0071 | MONOKUMA&quot; (line 595): English source text changed<span class="detail-line">    Copy   : 'I guess I did forget to mention one thing. There *is*\\none way for you to leave the school...'</span><span class="detail-line">    Working: '\\&quot; \\&quot;I guess I did forget to mention one thing. There *is*\\n\\&quot; \\&quot;one way for you to leave the school...'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0073 | MONOKUMA&quot; (line 610): English source text changed<span class="detail-line">    Copy   : &quot;As headmaster, I've crafted a &lt;CLT 3&gt;special clause&lt;CLT&gt; for\\nthose of you who would like to leave!&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;As headmaster, I\'ve crafted a &lt;CLT 3&gt;special clause&lt;CLT&gt; for\\n\\&quot; \\&quot;those of you who would like to leave!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0076 | MONOKUMA&quot; (line 633): English source text changed<span class="detail-line">    Copy   : 'As I mentioned, in order to maintain an environment of\\nharmony here, we rely on a communal lifestyle.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;As I mentioned, in order to maintain an environment of\\n\\&quot; \\&quot;harmony here, we rely on a communal lifestyle.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0077 | MONOKUMA&quot; (line 643): English source text changed<span class="detail-line">    Copy   : 'And if someone were to disrupt that harmony, they and\\nthey alone would be allowed to leave the school.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;And if someone were to disrupt that harmony, they and\\n\\&quot; \\&quot;they alone would be allowed to leave the school.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0083 | MONOKUMA&quot; (line 680): English source text changed<span class="detail-line">    Copy   : &quot;Stabbing, strangling, bludgeoning, crushing, hacking,\\ndrowning, igniting, how you do it doesn't matter.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Stabbing, strangling, bludgeoning, crushing, hacking,\\n\\&quot; \\&quot;drowning, igniting, how you do it doesn\'t matter.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0084 | MONOKUMA&quot; (line 690): English source text changed<span class="detail-line">    Copy   : &quot;&lt;CLT 3&gt;You must kill someone if you want to leave&lt;CLT&gt;. It's as\\nsimple as that.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;&lt;CLT 3&gt;You must kill someone if you want to leave&lt;CLT&gt;. It\'s as\\n\\&quot; \\&quot;simple as that.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0085 | MONOKUMA&quot; (line 700): English source text changed<span class="detail-line">    Copy   : 'The rest is up to you. Give it your all to achieve the\\nbest outcome in the worst way possible.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;The rest is up to you. Give it your all to achieve the\\n\\&quot; \\&quot;best outcome in the worst way possible.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0086 | MAKOTO NAEGI&quot; (line 710): English source text changed<span class="detail-line">    Copy   : '&lt;CLT 4&gt;A chill shot down my spine...\\n&lt;CLT&gt;'</span><span class="detail-line">    Working: '\\&quot; \\&quot;&lt;CLT 4&gt;A chill shot down my spine...\\n\\&quot; \\&quot;&lt;CLT&gt;'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0087 | MAKOTO NAEGI&quot; (line 721): English source text changed<span class="detail-line">    Copy   : '&lt;CLT 4&gt;\\&quot;You must kill someone if you want to leave.\\&quot;\\n&lt;CLT&gt;'</span><span class="detail-line">    Working: '\\&quot; \\&quot;&lt;CLT 4&gt;\\&quot;You must kill someone if you want to leave.\\&quot;\\n\\&quot; \\&quot;&lt;CLT&gt;'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0088 | MAKOTO NAEGI&quot; (line 732): English source text changed<span class="detail-line">    Copy   : '&lt;CLT 4&gt;As soon as I heard those words, my blood went cold.\\n&lt;CLT&gt;'</span><span class="detail-line">    Working: '\\&quot; \\&quot;&lt;CLT 4&gt;As soon as I heard those words, my blood went cold.\\n\\&quot; \\&quot;&lt;CLT&gt;'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0089 | MONOKUMA&quot; (line 743): English source text changed<span class="detail-line">    Copy   : 'Puhuhu. I bet *that* got your brain juices flowing!\\nBeats the heck out of a human catching a salmon, huh?'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Puhuhu. I bet *that* got your brain juices flowing!\\n\\&quot; \\&quot;Beats the heck out of a human catching a salmon, huh?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0090 | MONOKUMA&quot; (line 753): English source text changed<span class="detail-line">    Copy   : 'Like I said before, you guys are the hope of the\\nworld. But you know...'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Like I said before, you guys are the hope of the\\n\\&quot; \\&quot;world. But you know...'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0091 | MONOKUMA&quot; (line 763): English source text changed<span class="detail-line">    Copy   : 'Taking that &lt;CLT 3&gt;hope&lt;CLT&gt; and seeing it get murdered creates\\na darkened shadow of &lt;CLT 3&gt;despair&lt;CLT&gt;.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Taking that &lt;CLT 3&gt;hope&lt;CLT&gt; and seeing it get murdered creates\\n\\&quot; \\&quot;a darkened shadow of &lt;CLT 3&gt;despair&lt;CLT&gt;.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0092 | MONOKUMA&quot; (line 772): English source text changed<span class="detail-line">    Copy   : 'And I just find that so...darn...exciting!'</span><span class="detail-line">    Working: 'And I find that so...darn...exciting!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0093 | LEON KUWATA&quot; (line 778): English source text changed<span class="detail-line">    Copy   : &quot;What the hell are you talking about!? To kill each\\nother is... It's...!&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;What the hell are you talking about!? To kill each\\n\\&quot; \\&quot;other is... It\'s...!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0094 | MONOKUMA&quot; (line 788): English source text changed<span class="detail-line">    Copy   : &quot;To kill each other is to kill each other. I'm sure\\nthere's a dictionary here somewhere if you need it.&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;To kill each other is to kill each other. I\'m sure\\n\\&quot; \\&quot;there\'s a dictionary here somewhere if you need it.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0095 | AOI ASAHINA&quot; (line 798): English source text changed<span class="detail-line">    Copy   : &quot;We know what it means, that's not the problem! Why do\\nwe have to kill each other!?&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;We know what it means, that\'s not the problem! Why do\\n\\&quot; \\&quot;we have to kill each other!?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0096 | HIFUMI YAMADA&quot; (line 808): English source text changed<span class="detail-line">    Copy   : 'Yeah! Stop blabbering on with all this nonsense! Just\\nlet us go home already!'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Yeah! Stop blabbering on with all this nonsense! Just\\n\\&quot; \\&quot;let us go home already!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0098 | MONOKUMA&quot; (line 823): English source text changed<span class="detail-line">    Copy   : 'Blabbering, blabbering, what do you mean blabbering!?\\nStop blabbering on about blabbering on!'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Blabbering, blabbering, what do you mean blabbering!?\\n\\&quot; \\&quot;Stop blabbering on about blabbering on!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0100 | MONOKUMA&quot; (line 840): English source text changed<span class="detail-line">    Copy   : '\\&quot;Let us go, let us go!\\&quot; You keep on saying the same\\nthing over and over and over and over...!'</span><span class="detail-line">    Working: '\\&quot; \\&quot;\\&quot;Let us go, let us go!\\&quot; You keep on saying the same\\n\\&quot; \\&quot;thing over and over and over and over...!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0101 | MONOKUMA&quot; (line 850): English source text changed<span class="detail-line">    Copy   : 'Listen. From this moment on, this school is your home,\\nyour life, your world. Got it?'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Listen. From this moment on, this school is your home,\\n\\&quot; \\&quot;your life, your world. Got it?'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0102 | MONOKUMA&quot; (line 860): English source text changed<span class="detail-line">    Copy   : 'And you can kill as much as you wanna kill! So go\\nahead, go on a kill-kill-killing spree!'</span><span class="detail-line">    Working: '\\&quot; \\&quot;And you can kill as much as you wanna kill! So go\\n\\&quot; \\&quot;ahead, go on a kill-kill-killing spree!'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0105 | YASUHIRO HAGAKURE&quot; (line 880): English source text changed<span class="detail-line">    Copy   : 'You got us, okay? You scared the hell out of us. So\\nyou can go ahead and reveal the trick now.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;You got us, okay? You scared the hell out of us. So\\n\\&quot; \\&quot;you can go ahead and reveal the trick now.'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0107 | YASUHIRO HAGAKURE&quot; (line 895): English source text changed<span class="detail-line">    Copy   : &quot;Yeah, cuz I mean... Y'know, this is all some kinda\\ntrick and all, right? So uh, like...&quot;</span><span class="detail-line">    Working: '\\&quot; \\&quot;Yeah, cuz I mean... Y\'know, this is all some kinda\\n\\&quot; \\&quot;trick and all, right? So uh, like...'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0109 | MAKOTO NAEGI&quot; (line 911): English source text changed<span class="detail-line">    Copy   : '&lt;CLT 4&gt;Shoving Hiro aside, Mondo placed himself in front of\\nMonokuma, his voice rumbling like thunder.\\n&lt;CLT&gt;'</span><span class="detail-line">    Working: '\\&quot; \\&quot;&lt;CLT 4&gt;Shoving Hiro aside, Mondo placed himself in front of\\n\\&quot; \\&quot;Monokuma, his voice rumbling like an earthquake.\\'</span></div>
+<div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0162 | MONOKUMA&quot; (line 1357): English source text changed<span class="detail-line">    Copy   : 'Rules restrict, yes, but they also protect. Society,\\nfor example, would be utter chaos without laws.'</span><span class="detail-line">    Working: '\\&quot; \\&quot;Rules restrict, yes, but they also protect. Society,\\n\\&quot; \\&quot;for example, would be utter chaos without laws.'</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0121 | MONOKUMA&quot; (line 1018): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0123 | MONOKUMA&quot; (line 1028): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0153 | MAKOTO NAEGI&quot; (line 1278): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_000_146 chap1">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_000_146 chap1</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_000_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_000_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_001_007">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_001_007</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_001_007">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_001_007</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0043 | MONDO OOWADA&quot; (line 459): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0077 | SAYAKA MAIZONO&quot; (line 726): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_001_103 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_001_103 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_001_103">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_001_103</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0051 | MAKOTO NAEGI&quot; (line 526): English source text changed<span class="detail-line">    Copy   : &quot;&lt;CLT 4&gt;All that's in the trash can is the paper I wadded up\\nand threw away.\\n&lt;CLT&gt;&quot;</span><span class="detail-line">    Working: &quot;All that's in the trash can is the paper I wadded up\\nand threw away.\\n&lt;CLT&gt;&quot;</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0038 | MAKOTO NAEGI&quot; (line 390): translation is identical to source text</div>
+<div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0051 | MAKOTO NAEGI&quot; (line 526): CLT tag mismatch — extra: &lt;CLT 4&gt;</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_002_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_002_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_002_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_002_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_002_146">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_002_146</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_002_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_002_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_003_135">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_003_135</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_003_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_003_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_004_135">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_004_135</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_004_135">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_004_135</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0179 | CELES&quot; (line 1441): English source text changed<span class="detail-line">    Copy   : 'Huh? Is it not crystal clear to you what is going on?'</span><span class="detail-line">    Working: 'Oh? Is it not crystal clear to you what is going on?'</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | CHOICE/RE:ACT&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0009 | CHOICE/RE:ACT&quot; (line 72): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0025 | KIYOTAKA ISHIMARU&quot; (line 221): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0029 | CHOICE/RE:ACT&quot; (line 244): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0174 | CELES&quot; (line 1401): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_005_103 first time room">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_005_103 first time room</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_005_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_005_103</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0046 | MAKOTO NAEGI&quot; (line 394): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0050 | MAKOTO NAEGI&quot; (line 422): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0057 | SAYAKA MAIZONO&quot; (line 471): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0086 | MAKOTO NAEGI&quot; (line 656): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_103">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_103</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_103</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_135">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_135</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 26): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | KYOUKO KIRIGIRI&quot; (line 31): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | MAKOTO NAEGI&quot; (line 95): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | MAKOTO NAEGI&quot; (line 135): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | BYAKUYA TOGAMI&quot; (line 151): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_136">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_136</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_136</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_137">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_137</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_139 hiro laundry room">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_139 hiro laundry room</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_139</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | MAKOTO NAEGI&quot; (line 67): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_006_146">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_006_146</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_006_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_006_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_007_001 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_007_001 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_007_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_007_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0002 | TOUKO FUKAWA&quot; (line 28): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_007_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_007_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_007_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_007_003</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0016 | SAYAKA MAIZONO&quot; (line 147): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_007_004 sayaka dream">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_007_004 sayaka dream</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_007_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_007_004</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0017 | SAYAKA MAIZONO&quot; (line 130): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0041 | MAKOTO NAEGI&quot; (line 321): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0056 | MAKOTO NAEGI&quot; (line 438): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0068 | MAKOTO NAEGI&quot; (line 542): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0072 | SAYAKA MAIZONO&quot; (line 567): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0088 | SAYAKA MAIZONO&quot; (line 698): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0101 | SAYAKA MAIZONO&quot; (line 794): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_007_005">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_007_005</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_007_005">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_007_005</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_007_010 meet junko">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_007_010 meet junko</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_007_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_007_010</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 84): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_001</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_004">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_004</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_005">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_005</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_005">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_005</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_006">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_006</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_009">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_009</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_009</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_010">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_010</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_010</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_014">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_014</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_014">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_014</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_015">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_015</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_015">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_015</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_016">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_016</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_016">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_016</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_103 freetime">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_103 freetime</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_103</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_135">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_135</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_136 kitchen misc">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_136 kitchen misc</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_136</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_137">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_137</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_139">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_139</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_139</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_008_146 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_008_146 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_008_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_008_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_001</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_004">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_004</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_005">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_005</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_005">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_005</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_006">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_006</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_009">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_009</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_009</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_010">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_010</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_010</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_014">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_014</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_014">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_014</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_015 trans">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_015 trans</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_015">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_015</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_016">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_016</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_016">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_016</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_103 sleeptime">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_103 sleeptime</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | MAKOTO NAEGI&quot; (line 207): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_135">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_135</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_136">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_136</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_136</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_137">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_137</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_139">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_139</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_139</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_009_146">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_009_146</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_009_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_009_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_011_101 breakfast invite">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_011_101 breakfast invite</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_011_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_011_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0011 | TOUKO FUKAWA&quot; (line 84): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_011_103 theater">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_011_103 theater</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_011_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_011_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0038 | MAKOTO NAEGI&quot; (line 331): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0050 | MAKOTO NAEGI&quot; (line 435): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_012_135 motive">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_012_135 motive</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_012_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_012_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | TOUKO FUKAWA&quot; (line 128): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0088 | MAKOTO NAEGI&quot; (line 667): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0124 | CHIHIRO FUJISAKI&quot; (line 943): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0129 | BYAKUYA TOGAMI&quot; (line 983): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0166 | TOUKO FUKAWA&quot; (line 1246): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0167 | MAKOTO NAEGI&quot; (line 1251): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_013_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_013_001</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_013_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_013_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_013_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_013_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_013_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_013_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_013_101 film look">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_013_101 film look</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_013_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_013_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_014_009 film">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_014_009 film</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_014_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_014_009</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | KYOUKO KIRIGIRI&quot; (line 102): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0017 | SAKURA OOGAMI&quot; (line 117): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0102 | MAKOTO NAEGI&quot; (line 862): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0161 | SAYAKA MAIZONO&quot; (line 1376): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0163 | SAYAKA MAIZONO&quot; (line 1386): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0165 | SAYAKA MAIZONO&quot; (line 1396): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0170 | AOI ASAHINA&quot; (line 1432): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0182 | MAKOTO NAEGI&quot; (line 1523): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_015_001 sayaka run">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_015_001 sayaka run</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_015_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_015_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_015_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_015_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_015_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_015_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_015_004">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_015_004</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_015_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_015_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_015_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_015_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_015_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_015_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0022 | MAKOTO NAEGI&quot; (line 196): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0025 | MAKOTO NAEGI&quot; (line 216): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_016_014 find saya">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_016_014 find saya</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_016_014">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_016_014</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0071 | MAKOTO NAEGI&quot; (line 540): English source text changed<span class="detail-line">    Copy   : 'Get the hell out of here!'</span><span class="detail-line">    Working: 'Hey! Get the hell out of here!'</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | SAYAKA MAIZONO&quot; (line 135): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0023 | SAYAKA MAIZONO&quot; (line 191): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0037 | MAKOTO NAEGI&quot; (line 313): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0042 | MAKOTO NAEGI&quot; (line 348): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0043 | SAYAKA MAIZONO&quot; (line 353): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0057 | SAYAKA MAIZONO&quot; (line 446): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0087 | MAKOTO NAEGI&quot; (line 667): translation is identical to source text</div>
+<div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0092 | MAKOTO NAEGI&quot; (line 694): CLT tag mismatch — missing: &lt;CLT&gt;</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_017_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_017_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_017_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_017_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_018_103 ask room switch">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_018_103 ask room switch</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_018_103">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_018_103</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0053 | SAYAKA MAIZONO&quot; (line 397): English source text changed<span class="detail-line">    Copy   : &quot;What if I *wasn't* just kidding...?&quot;</span><span class="detail-line">    Working: 'What if I *was* just kidding...?'</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0031 | SAYAKA MAIZONO&quot; (line 238): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0051 | SAYAKA MAIZONO&quot; (line 385): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0089 | MAKOTO NAEGI&quot; (line 700): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0093 | MAKOTO NAEGI&quot; (line 740): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0095 | MAKOTO NAEGI&quot; (line 760): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0096 | MAKOTO NAEGI&quot; (line 770): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0097 | MAKOTO NAEGI&quot; (line 780): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_019_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_019_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_019_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_019_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_019_119 room switch">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_019_119 room switch</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_019_119">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_019_119</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_020_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_020_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_020_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_020_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_020_119 theater">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_020_119 theater</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_020_119">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_020_119</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_021_101">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_021_101</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_021_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_021_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_021_135 before sayaka">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_021_135 before sayaka</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_021_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_021_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_022_006 after junko die">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_022_006 after junko die</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_022_006">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_022_006</div>
+    <div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0130 | MAKOTO NAEGI&quot; (line 1091): CLT tag mismatch — missing: &lt;CLT&gt;</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0140 | HIFUMI YAMADA&quot; (line 1156): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0148 | TOUKO FUKAWA&quot; (line 1208): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0155 | MAKOTO NAEGI&quot; (line 1267): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0170 | MAKOTO NAEGI&quot; (line 1378): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0215 | MAKOTO NAEGI&quot; (line 1712): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_022_104 sayaka die">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_022_104 sayaka die</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_022_104">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_022_104</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | MAKOTO NAEGI&quot; (line 206): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_023_006 trans junko die">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_023_006 trans junko die</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_023_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_023_006</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 60): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | MAKOTO NAEGI&quot; (line 135): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0042 | MAKOTO NAEGI&quot; (line 316): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0150 | JUNKO ENOSHIMA (MUKURO)&quot; (line 1138): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_001 investigate">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_001 investigate</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 219): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_003 cleaning">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_003 cleaning</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_004 gym hall">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_004 gym hall</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_006 mono file">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_006 mono file</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_006</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 257): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_010 Investigation Choice Interaction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_010 Investigation Choice Interaction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_010</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_014 1a">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_014 1a</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_014">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_014</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_015 meet toko">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_015 meet toko</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_015">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_015</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_016">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_016</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_016">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_016</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_101 dorm">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_101 dorm</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_024_101">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_101</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0121 | LEON KUWATA&quot; (line 1073): English source text changed<span class="detail-line">    Copy   : 'How does my room have anything to do with the\\ninvestigation!?'</span><span class="detail-line">    Working: ''</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | BYAKUYA TOGAMI&quot; (line 107): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0111 | MAKOTO NAEGI&quot; (line 976): translation is identical to source text</div>
+<div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0134 | MAKOTO NAEGI&quot; (line 1202): CLT tag mismatch — extra: &lt;CLT&gt;</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_139 Laundry Room Choice">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_139 Laundry Room Choice</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_139</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_024_146 Generic Choice Selection">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_024_146 Generic Choice Selection</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_024_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_024_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_025_104 room kyoko">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_025_104 room kyoko</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_025_104">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_025_104</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MONDO OOWADA&quot; (line 215): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0042 | KYOUKO KIRIGIRI&quot; (line 325): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0061 | MAKOTO NAEGI&quot; (line 490): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0068 | MAKOTO NAEGI&quot; (line 561): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0078 | MAKOTO NAEGI&quot; (line 645): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0085 | MAKOTO NAEGI&quot; (line 716): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0163 | MAKOTO NAEGI&quot; (line 1569): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_025_106 sayaka body">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_025_106 sayaka body</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_025_106">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_025_106</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 38): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0041 | MAKOTO NAEGI&quot; (line 444): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0060 | MAKOTO NAEGI&quot; (line 644): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_027_104">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_027_104</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_027_104">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_027_104</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | KYOUKO KIRIGIRI&quot; (line 55): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020 | MONDO OOWADA&quot; (line 145): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | KYOUKO KIRIGIRI&quot; (line 184): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0037 | MAKOTO NAEGI&quot; (line 278): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0044 | MAKOTO NAEGI&quot; (line 349): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0054 | MAKOTO NAEGI&quot; (line 433): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0061 | MAKOTO NAEGI&quot; (line 504): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_029_104 Dying Message Discovery Dying Message Discovery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_029_104 Dying Message Discovery Dying Message Discovery</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_029_104">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_029_104</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>6 untranslated: 0018 | NARRATION, 0031 | NARRATION, 0078 | NARRATION, 0091 | NARRATION, 0204 | NARRATION, 0245 | NARRATION</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0059 | MONDO OOWADA&quot; (line 463): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0110 | MAKOTO NAEGI&quot; (line 876): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0117 | MAKOTO NAEGI&quot; (line 944): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0127 | MAKOTO NAEGI&quot; (line 1028): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0134 | MAKOTO NAEGI&quot; (line 1096): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_031_119 room dvd">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_031_119 room dvd</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_031_119">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_031_119</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 46): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | MAKOTO NAEGI&quot; (line 69): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 92): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_032_009">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_032_009</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_032_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_032_009</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 119): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_033_135 dining">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_033_135 dining</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_033_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_033_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_034_136 kitchen">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_034_136 kitchen</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_034_136">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_034_136</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>1 untranslated: 0009 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_035_135 Hina Dining Break">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_035_135 Hina Dining Break</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_035_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_035_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | AOI ASAHINA&quot; (line 229): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0033 | MAKOTO NAEGI&quot; (line 279): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_036_137 Trash Room Confrontation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_036_137 Trash Room Confrontation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_036_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_036_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_037_101 Hifumi Cleaning Duty">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_037_101 Hifumi Cleaning Duty</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_037_101">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_037_101</div>
+    <div class="issue issue-WARN"><span class="check-tag">[clt_tag_integrity]</span>Entry &quot;0018 | MAKOTO NAEGI&quot; (line 151): CLT tag mismatch — missing: &lt;CLT 4&gt;; extra: &lt;CLT 23&gt;, &lt;CLT 3&gt;, &lt;CLT 23&gt;</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_038_137 Trash Gate Opening">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_038_137 Trash Gate Opening</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_038_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_038_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_038_138 Hifumi Smut Offer">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_038_138 Hifumi Smut Offer</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e01_038_138">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e01_038_138</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 45): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_038_156">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_038_156</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_038_156">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_038_156</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>97 untranslated: 0001 | HIFUMI YAMADA, 0002 | HIFUMI YAMADA, 0003 | HIFUMI YAMADA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | HIFUMI YAMADA, 0007 | HIFUMI YAMADA, 0008 | MAKOTO NAEGI, 0009 | HIFUMI YAMADA, 0010 | MAKOTO NAEGI, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | HIFUMI YAMADA, 0018 | HIFUMI YAMADA, 0019 | HIFUMI YAMADA, 0020 | HIFUMI YAMADA, 0021 | HIFUMI YAMADA, 0022 | HIFUMI YAMADA, 0023 | MAKOTO NAEGI, 0024 | HIFUMI YAMADA, 0025 | MAKOTO NAEGI, 0026 | HIFUMI YAMADA, 0027 | HIFUMI YAMADA, 0028 | HIFUMI YAMADA, 0029 | HIFUMI YAMADA, 0030 | HIFUMI YAMADA, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | NARRATION, 0034 | HIFUMI YAMADA, 0035 | HIFUMI YAMADA, 0036 | HIFUMI YAMADA, 0037 | MAKOTO NAEGI, 0038 | HIFUMI YAMADA, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | HIFUMI YAMADA, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | NARRATION, 0059 | HIFUMI YAMADA, 0060 | HIFUMI YAMADA, 0061 | HIFUMI YAMADA, 0062 | MAKOTO NAEGI, 0063 | HIFUMI YAMADA, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | HIFUMI YAMADA, 0073 | MAKOTO NAEGI, 0074 | HIFUMI YAMADA, 0075 | HIFUMI YAMADA, 0076 | HIFUMI YAMADA, 0077 | HIFUMI YAMADA, 0078 | MAKOTO NAEGI, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | NARRATION, 0082 | HIFUMI YAMADA, 0083 | HIFUMI YAMADA, 0084 | HIFUMI YAMADA, 0085 | MAKOTO NAEGI, 0086 | HIFUMI YAMADA, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | CHOICE/RE:ACT, 0096 | CHOICE/RE:ACT, 0097 | NARRATION, 0098 | HIFUMI YAMADA, 0099 | HIFUMI YAMADA, 0100 | MAKOTO NAEGI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | MAKOTO NAEGI&quot; (line 92): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0045 | MAKOTO NAEGI&quot; (line 325): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0050 | MAKOTO NAEGI&quot; (line 360): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_039_006">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_039_006</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_039_006">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_039_006</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>64 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | YASUHIRO HAGAKURE, 0003 | YASUHIRO HAGAKURE, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | YASUHIRO HAGAKURE, 0007 | MAKOTO NAEGI, 0008 | YASUHIRO HAGAKURE, 0009 | YASUHIRO HAGAKURE, 0010 | MAKOTO NAEGI, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0015 | YASUHIRO HAGAKURE, 0016 | YASUHIRO HAGAKURE, 0017 | YASUHIRO HAGAKURE, 0018 | YASUHIRO HAGAKURE, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | YASUHIRO HAGAKURE, 0022 | YASUHIRO HAGAKURE, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | NARRATION, 0026 | MAKOTO NAEGI, 0027 | YASUHIRO HAGAKURE, 0029 | MAKOTO NAEGI, 0030 | YASUHIRO HAGAKURE, 0031 | YASUHIRO HAGAKURE, 0032 | MAKOTO NAEGI, 0033 | YASUHIRO HAGAKURE, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | CHIHIRO FUJISAKI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | CHIHIRO FUJISAKI, 0044 | CHIHIRO FUJISAKI, 0045 | MAKOTO NAEGI, 0046 | CHIHIRO FUJISAKI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | CHIHIRO FUJISAKI, 0054 | CHIHIRO FUJISAKI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | CHOICE/RE:ACT, 0065 | CHOICE/RE:ACT, 0066 | NARRATION</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0028 | MAKOTO NAEGI&quot; (line 193): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0061 | MAKOTO NAEGI&quot; (line 419): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_040_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_040_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_040_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_040_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>22 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_040_201">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_040_201</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_040_201">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_040_201</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>55 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | TOUKO FUKAWA, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | KIYOTAKA ISHIMARU, 0015 | MAKOTO NAEGI, 0016 | BYAKUYA TOGAMI, 0017 | MONDO OOWADA, 0018 | LEON KUWATA, 0019 | HIFUMI YAMADA, 0020 | HIFUMI YAMADA, 0021 | YASUHIRO HAGAKURE, 0022 | YASUHIRO HAGAKURE, 0023 | MAKOTO NAEGI, 0025 | KYOUKO KIRIGIRI, 0026 | AOI ASAHINA, 0027 | TOUKO FUKAWA, 0028 | SAKURA OOGAMI, 0029 | CELES, 0030 | MAKOTO NAEGI, 0031 | CHIHIRO FUJISAKI, 0032 | CHIHIRO FUJISAKI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | SAKURA OOGAMI, 0038 | CELES, 0040 | KYOUKO KIRIGIRI, 0041 | MAKOTO NAEGI, 0042 | KYOUKO KIRIGIRI, 0043 | KYOUKO KIRIGIRI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | CELES, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0024 | KYOUKO KIRIGIRI&quot; (line 186): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0039 | MAKOTO NAEGI&quot; (line 298): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_040_203">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_040_203</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_040_203">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_040_203</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>17 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONDO OOWADA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_101_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_101_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_101_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_101_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>19 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MAKOTO NAEGI, 0005 | MONOKUMA, 0006 | KIYOTAKA ISHIMARU, 0007 | MONDO OOWADA, 0008 | KYOUKO KIRIGIRI, 0009 | KYOUKO KIRIGIRI, 0010 | MONOKUMA, 0011 | HIFUMI YAMADA, 0012 | CELES, 0013 | CELES, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_102_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_102_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_102_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_102_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>18 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | MAKOTO NAEGI, 0005 | CHIHIRO FUJISAKI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION, 0016 | NARRATION, 0017 | NARRATION, 0018 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_102_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_102_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_102_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_102_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>7 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | YASUHIRO HAGAKURE, 0003 | BYAKUYA TOGAMI, 0004 | AOI ASAHINA, 0005 | CHIHIRO FUJISAKI, 0006 | CHIHIRO FUJISAKI, 0007 | CHIHIRO FUJISAKI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_103_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_103_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_103_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_103_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHIHIRO FUJISAKI, 0004 | MAKOTO NAEGI, 0005 | CHIHIRO FUJISAKI, 0006 | CELES, 0007 | CELES, 0008 | BYAKUYA TOGAMI, 0009 | CHIHIRO FUJISAKI, 0010 | YASUHIRO HAGAKURE, 0011 | SAKURA OOGAMI, 0012 | HIFUMI YAMADA, 0013 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_104_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_104_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_104_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_104_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>9 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | MONDO OOWADA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_104_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_104_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_104_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_104_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>5 untranslated: 0001 | SAKURA OOGAMI, 0002 | KIYOTAKA ISHIMARU, 0003 | KIYOTAKA ISHIMARU, 0004 | MONDO OOWADA, 0005 | MONDO OOWADA</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_105_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_105_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_105_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_105_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>16 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONDO OOWADA, 0003 | MAKOTO NAEGI, 0004 | SAKURA OOGAMI, 0005 | MONDO OOWADA, 0006 | MONDO OOWADA, 0007 | LEON KUWATA, 0008 | LEON KUWATA, 0009 | TOUKO FUKAWA, 0010 | MAKOTO NAEGI, 0011 | KYOUKO KIRIGIRI, 0012 | LEON KUWATA, 0013 | KYOUKO KIRIGIRI, 0014 | YASUHIRO HAGAKURE, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | KYOUKO KIRIGIRI&quot; (line 112): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_106_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_106_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_106_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_106_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>10 untranslated: 0001 | LEON KUWATA, 0002 | MAKOTO NAEGI, 0003 | TOUKO FUKAWA, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_106_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_106_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_106_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_106_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>12 untranslated: 0001 | LEON KUWATA, 0002 | LEON KUWATA, 0003 | TOUKO FUKAWA, 0004 | TOUKO FUKAWA, 0005 | TOUKO FUKAWA, 0006 | LEON KUWATA, 0007 | HIFUMI YAMADA, 0008 | HIFUMI YAMADA, 0009 | HIFUMI YAMADA, 0010 | HIFUMI YAMADA, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_107_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_107_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_107_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_107_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>105 untranslated: 0001 | MAKOTO NAEGI, 0002 | TOUKO FUKAWA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | AOI ASAHINA, 0006 | MAKOTO NAEGI, 0007 | AOI ASAHINA, 0008 | AOI ASAHINA, 0009 | AOI ASAHINA, 0010 | AOI ASAHINA, 0011 | AOI ASAHINA, 0012 | MAKOTO NAEGI, 0013 | AOI ASAHINA, 0014 | MAKOTO NAEGI, 0015 | AOI ASAHINA, 0016 | BYAKUYA TOGAMI, 0017 | AOI ASAHINA, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | TOUKO FUKAWA, 0021 | TOUKO FUKAWA, 0022 | AOI ASAHINA, 0023 | AOI ASAHINA, 0024 | BYAKUYA TOGAMI, 0025 | MONOKUMA, 0026 | MONOKUMA, 0027 | KYOUKO KIRIGIRI, 0028 | MONDO OOWADA, 0029 | CHIHIRO FUJISAKI, 0030 | MONOKUMA, 0031 | MONOKUMA, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | CHIHIRO FUJISAKI, 0035 | CELES, 0036 | AOI ASAHINA, 0037 | HIFUMI YAMADA, 0038 | SAKURA OOGAMI, 0039 | AOI ASAHINA, 0040 | LEON KUWATA, 0041 | SAKURA OOGAMI, 0042 | LEON KUWATA, 0043 | YASUHIRO HAGAKURE, 0044 | AOI ASAHINA, 0045 | MONDO OOWADA, 0046 | SAKURA OOGAMI, 0047 | AOI ASAHINA, 0048 | AOI ASAHINA, 0049 | TOUKO FUKAWA, 0050 | CHIHIRO FUJISAKI, 0051 | CHIHIRO FUJISAKI, 0052 | KIYOTAKA ISHIMARU, 0053 | SAKURA OOGAMI, 0054 | KIYOTAKA ISHIMARU, 0055 | CELES, 0056 | SAKURA OOGAMI, 0057 | AOI ASAHINA, 0058 | BYAKUYA TOGAMI, 0059 | AOI ASAHINA, 0060 | MAKOTO NAEGI, 0061 | AOI ASAHINA, 0062 | MAKOTO NAEGI, 0063 | CHOICE/RE:ACT, 0064 | CHOICE/RE:ACT, 0065 | MAKOTO NAEGI, 0066 | AOI ASAHINA, 0067 | MAKOTO NAEGI, 0068 | SAKURA OOGAMI, 0069 | AOI ASAHINA, 0070 | MAKOTO NAEGI, 0071 | CHOICE/RE:ACT, 0072 | MAKOTO NAEGI, 0073 | KIYOTAKA ISHIMARU, 0074 | MONOKUMA, 0075 | MONOKUMA, 0076 | KIYOTAKA ISHIMARU, 0077 | MAKOTO NAEGI, 0078 | MONOKUMA, 0079 | MONOKUMA, 0081 | KYOUKO KIRIGIRI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | SAKURA OOGAMI, 0086 | SAKURA OOGAMI, 0087 | SAKURA OOGAMI, 0088 | SAKURA OOGAMI, 0089 | KIYOTAKA ISHIMARU, 0090 | MAKOTO NAEGI, 0091 | BYAKUYA TOGAMI, 0092 | BYAKUYA TOGAMI, 0093 | MAKOTO NAEGI, 0094 | TOUKO FUKAWA, 0095 | MAKOTO NAEGI, 0096 | HIFUMI YAMADA, 0097 | HIFUMI YAMADA, 0098 | MAKOTO NAEGI, 0099 | MAKOTO NAEGI, 0100 | MAKOTO NAEGI, 0101 | KYOUKO KIRIGIRI, 0102 | KYOUKO KIRIGIRI, 0103 | KYOUKO KIRIGIRI, 0104 | MONDO OOWADA, 0105 | KYOUKO KIRIGIRI, 0106 | KYOUKO KIRIGIRI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0080 | KYOUKO KIRIGIRI&quot; (line 529): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_108_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_108_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_108_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_108_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>4 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_109_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_109_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_109_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_109_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>50 untranslated: 0001 | MAKOTO NAEGI, 0002 | CHIHIRO FUJISAKI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | CELES, 0007 | CELES, 0008 | KYOUKO KIRIGIRI, 0009 | HIFUMI YAMADA, 0010 | LEON KUWATA, 0011 | KYOUKO KIRIGIRI, 0012 | MONDO OOWADA, 0013 | KYOUKO KIRIGIRI, 0014 | CHIHIRO FUJISAKI, 0015 | KIYOTAKA ISHIMARU, 0016 | KYOUKO KIRIGIRI, 0017 | SAKURA OOGAMI, 0018 | KYOUKO KIRIGIRI, 0019 | KYOUKO KIRIGIRI, 0020 | MONDO OOWADA, 0021 | KYOUKO KIRIGIRI, 0022 | CELES, 0023 | KYOUKO KIRIGIRI, 0024 | KYOUKO KIRIGIRI, 0025 | KYOUKO KIRIGIRI, 0026 | KYOUKO KIRIGIRI, 0027 | KYOUKO KIRIGIRI, 0028 | MAKOTO NAEGI, 0029 | KYOUKO KIRIGIRI, 0030 | BYAKUYA TOGAMI, 0031 | MAKOTO NAEGI, 0032 | KYOUKO KIRIGIRI, 0033 | KYOUKO KIRIGIRI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | YASUHIRO HAGAKURE, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | CHIHIRO FUJISAKI, 0043 | KYOUKO KIRIGIRI, 0044 | KYOUKO KIRIGIRI, 0045 | LEON KUWATA, 0046 | LEON KUWATA, 0047 | KYOUKO KIRIGIRI, 0048 | KYOUKO KIRIGIRI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_110_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_110_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_110_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_110_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>10 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | LEON KUWATA, 0004 | MAKOTO NAEGI, 0005 | LEON KUWATA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_110_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_110_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_110_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_110_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>17 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | MONDO OOWADA, 0005 | MONDO OOWADA, 0006 | LEON KUWATA, 0007 | LEON KUWATA, 0008 | CHIHIRO FUJISAKI, 0009 | YASUHIRO HAGAKURE, 0010 | TOUKO FUKAWA, 0011 | TOUKO FUKAWA, 0012 | TOUKO FUKAWA, 0013 | TOUKO FUKAWA, 0014 | TOUKO FUKAWA, 0015 | TOUKO FUKAWA, 0016 | TOUKO FUKAWA, 0017 | TOUKO FUKAWA</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_111_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_111_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_111_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_111_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>119 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | SAKURA OOGAMI, 0004 | CHIHIRO FUJISAKI, 0005 | MAKOTO NAEGI, 0006 | LEON KUWATA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | KYOUKO KIRIGIRI, 0013 | KYOUKO KIRIGIRI, 0014 | CELES, 0015 | CELES, 0016 | KYOUKO KIRIGIRI, 0017 | CHOICE/RE:ACT, 0018 | MAKOTO NAEGI, 0019 | KYOUKO KIRIGIRI, 0020 | KYOUKO KIRIGIRI, 0021 | MAKOTO NAEGI, 0022 | CHOICE/RE:ACT, 0023 | KYOUKO KIRIGIRI, 0024 | KYOUKO KIRIGIRI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | HIFUMI YAMADA, 0035 | KYOUKO KIRIGIRI, 0036 | HIFUMI YAMADA, 0037 | KYOUKO KIRIGIRI, 0038 | KYOUKO KIRIGIRI, 0039 | KYOUKO KIRIGIRI, 0040 | KIYOTAKA ISHIMARU, 0041 | SAKURA OOGAMI, 0042 | KYOUKO KIRIGIRI, 0043 | KYOUKO KIRIGIRI, 0044 | BYAKUYA TOGAMI, 0045 | MAKOTO NAEGI, 0046 | BYAKUYA TOGAMI, 0047 | CHIHIRO FUJISAKI, 0048 | TOUKO FUKAWA, 0049 | MAKOTO NAEGI, 0050 | MONDO OOWADA, 0051 | HIFUMI YAMADA, 0052 | CHIHIRO FUJISAKI, 0053 | KIYOTAKA ISHIMARU, 0054 | LEON KUWATA, 0055 | YASUHIRO HAGAKURE, 0056 | CELES, 0057 | AOI ASAHINA, 0058 | CELES, 0059 | AOI ASAHINA, 0060 | KIYOTAKA ISHIMARU, 0061 | AOI ASAHINA, 0062 | AOI ASAHINA, 0063 | SAKURA OOGAMI, 0064 | LEON KUWATA, 0065 | KIYOTAKA ISHIMARU, 0066 | CHIHIRO FUJISAKI, 0067 | KIYOTAKA ISHIMARU, 0068 | HIFUMI YAMADA, 0069 | HIFUMI YAMADA, 0070 | MAKOTO NAEGI, 0071 | HIFUMI YAMADA, 0072 | HIFUMI YAMADA, 0073 | HIFUMI YAMADA, 0074 | MAKOTO NAEGI, 0075 | HIFUMI YAMADA, 0076 | MAKOTO NAEGI, 0077 | HIFUMI YAMADA, 0078 | HIFUMI YAMADA, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | SAYAKA MAIZONO, 0087 | SAYAKA MAIZONO, 0088 | MAKOTO NAEGI, 0089 | KYOUKO KIRIGIRI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | KYOUKO KIRIGIRI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | KYOUKO KIRIGIRI, 0096 | KYOUKO KIRIGIRI, 0097 | AOI ASAHINA, 0098 | AOI ASAHINA, 0099 | AOI ASAHINA, 0100 | KYOUKO KIRIGIRI, 0101 | KYOUKO KIRIGIRI, 0102 | MAKOTO NAEGI, 0103 | KYOUKO KIRIGIRI, 0104 | BYAKUYA TOGAMI, 0105 | KYOUKO KIRIGIRI, 0106 | MAKOTO NAEGI, 0107 | KYOUKO KIRIGIRI, 0108 | MAKOTO NAEGI, 0109 | MAKOTO NAEGI, 0110 | MAKOTO NAEGI, 0111 | KYOUKO KIRIGIRI, 0112 | KYOUKO KIRIGIRI, 0113 | HIFUMI YAMADA, 0114 | HIFUMI YAMADA, 0115 | CELES, 0116 | CELES, 0117 | CHIHIRO FUJISAKI, 0118 | CELES, 0119 | CELES</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_112_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_112_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_112_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_112_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>10 untranslated: 0001 | CELES, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | CELES, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_112_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_112_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_112_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_112_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>14 untranslated: 0001 | CELES, 0002 | CELES, 0003 | CELES, 0004 | CHIHIRO FUJISAKI, 0005 | CHIHIRO FUJISAKI, 0006 | CELES, 0007 | CELES, 0008 | CELES, 0009 | SAKURA OOGAMI, 0010 | SAKURA OOGAMI, 0011 | SAKURA OOGAMI, 0012 | SAKURA OOGAMI, 0013 | SAKURA OOGAMI, 0014 | SAKURA OOGAMI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_113_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_113_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_113_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_113_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>76 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | KYOUKO KIRIGIRI, 0006 | BYAKUYA TOGAMI, 0007 | CHIHIRO FUJISAKI, 0008 | KYOUKO KIRIGIRI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | LEON KUWATA, 0012 | CHOICE/RE:ACT, 0013 | MAKOTO NAEGI, 0014 | AOI ASAHINA, 0015 | AOI ASAHINA, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | CHOICE/RE:ACT, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | LEON KUWATA, 0022 | BYAKUYA TOGAMI, 0023 | MAKOTO NAEGI, 0024 | CHOICE/RE:ACT, 0025 | KYOUKO KIRIGIRI, 0026 | KYOUKO KIRIGIRI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | KYOUKO KIRIGIRI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | KYOUKO KIRIGIRI, 0037 | KYOUKO KIRIGIRI, 0038 | CHIHIRO FUJISAKI, 0039 | KYOUKO KIRIGIRI, 0040 | MAKOTO NAEGI, 0041 | AOI ASAHINA, 0042 | KYOUKO KIRIGIRI, 0043 | KYOUKO KIRIGIRI, 0044 | KYOUKO KIRIGIRI, 0045 | KIYOTAKA ISHIMARU, 0046 | KIYOTAKA ISHIMARU, 0047 | KIYOTAKA ISHIMARU, 0048 | MONDO OOWADA, 0049 | CELES, 0050 | CELES, 0051 | KYOUKO KIRIGIRI, 0052 | AOI ASAHINA, 0053 | SAKURA OOGAMI, 0054 | MONDO OOWADA, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | LEON KUWATA, 0058 | LEON KUWATA, 0059 | MAKOTO NAEGI, 0060 | LEON KUWATA, 0061 | LEON KUWATA, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | CHIHIRO FUJISAKI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | KIYOTAKA ISHIMARU, 0073 | HIFUMI YAMADA, 0074 | YASUHIRO HAGAKURE, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_114_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_114_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_114_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_114_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>8 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | MAKOTO NAEGI, 0003 | TOUKO FUKAWA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_114_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_114_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_114_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_114_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>16 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | YASUHIRO HAGAKURE, 0003 | YASUHIRO HAGAKURE, 0004 | YASUHIRO HAGAKURE, 0005 | HIFUMI YAMADA, 0006 | TOUKO FUKAWA, 0007 | TOUKO FUKAWA, 0008 | CHIHIRO FUJISAKI, 0009 | SAKURA OOGAMI, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0015 | YASUHIRO HAGAKURE, 0016 | YASUHIRO HAGAKURE</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_115_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_115_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_115_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_115_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>128 untranslated: 0001 | MAKOTO NAEGI, 0002 | YASUHIRO HAGAKURE, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | CHIHIRO FUJISAKI, 0006 | MONDO OOWADA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MONDO OOWADA, 0010 | HIFUMI YAMADA, 0011 | KYOUKO KIRIGIRI, 0012 | KYOUKO KIRIGIRI, 0013 | SAKURA OOGAMI, 0014 | HIFUMI YAMADA, 0015 | KIYOTAKA ISHIMARU, 0016 | KIYOTAKA ISHIMARU, 0017 | KIYOTAKA ISHIMARU, 0018 | KIYOTAKA ISHIMARU, 0019 | KIYOTAKA ISHIMARU, 0020 | KYOUKO KIRIGIRI, 0021 | LEON KUWATA, 0022 | KYOUKO KIRIGIRI, 0023 | CHOICE/RE:ACT, 0024 | CHOICE/RE:ACT, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | MAKOTO NAEGI, 0028 | KYOUKO KIRIGIRI, 0029 | KYOUKO KIRIGIRI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | AOI ASAHINA, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | TOUKO FUKAWA, 0042 | MAKOTO NAEGI, 0043 | TOUKO FUKAWA, 0044 | MAKOTO NAEGI, 0045 | CHOICE/RE:ACT, 0046 | CHOICE/RE:ACT, 0047 | MAKOTO NAEGI, 0048 | TOUKO FUKAWA, 0049 | TOUKO FUKAWA, 0050 | MAKOTO NAEGI, 0051 | CHOICE/RE:ACT, 0052 | MAKOTO NAEGI, 0053 | TOUKO FUKAWA, 0054 | MAKOTO NAEGI, 0055 | TOUKO FUKAWA, 0056 | MAKOTO NAEGI, 0057 | KYOUKO KIRIGIRI, 0058 | KYOUKO KIRIGIRI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | TOUKO FUKAWA, 0066 | HIFUMI YAMADA, 0067 | TOUKO FUKAWA, 0068 | HIFUMI YAMADA, 0069 | LEON KUWATA, 0070 | KIYOTAKA ISHIMARU, 0071 | KIYOTAKA ISHIMARU, 0072 | KIYOTAKA ISHIMARU, 0073 | CHOICE/RE:ACT, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | KIYOTAKA ISHIMARU, 0077 | KIYOTAKA ISHIMARU, 0078 | MAKOTO NAEGI, 0079 | CHOICE/RE:ACT, 0080 | KYOUKO KIRIGIRI, 0081 | KYOUKO KIRIGIRI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | CHIHIRO FUJISAKI, 0086 | BYAKUYA TOGAMI, 0087 | HIFUMI YAMADA, 0088 | MAKOTO NAEGI, 0089 | KYOUKO KIRIGIRI, 0090 | BYAKUYA TOGAMI, 0091 | MAKOTO NAEGI, 0092 | BYAKUYA TOGAMI, 0093 | BYAKUYA TOGAMI, 0094 | SAKURA OOGAMI, 0095 | CELES, 0096 | CELES, 0097 | CELES, 0098 | MAKOTO NAEGI, 0100 | CELES, 0101 | CELES, 0102 | CELES, 0103 | CELES, 0104 | CELES, 0105 | MONDO OOWADA, 0106 | HIFUMI YAMADA, 0107 | HIFUMI YAMADA, 0108 | BYAKUYA TOGAMI, 0109 | BYAKUYA TOGAMI, 0111 | TOUKO FUKAWA, 0112 | TOUKO FUKAWA, 0113 | HIFUMI YAMADA, 0114 | MONDO OOWADA, 0115 | CELES, 0116 | CELES, 0117 | CELES, 0118 | SAKURA OOGAMI, 0119 | MAKOTO NAEGI, 0120 | MAKOTO NAEGI, 0121 | MONOKUMA, 0122 | MONOKUMA, 0123 | MONOKUMA, 0124 | YASUHIRO HAGAKURE, 0126 | KYOUKO KIRIGIRI, 0127 | KYOUKO KIRIGIRI, 0128 | MAKOTO NAEGI, 0129 | MAKOTO NAEGI, 0130 | MAKOTO NAEGI, 0131 | MAKOTO NAEGI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0099 | KYOUKO KIRIGIRI&quot; (line 727): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0110 | MAKOTO NAEGI&quot; (line 806): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0125 | MAKOTO NAEGI&quot; (line 902): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_116_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_116_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_116_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_116_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>9 untranslated: 0001 | LEON KUWATA, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_116_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_116_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_116_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_116_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>13 untranslated: 0001 | LEON KUWATA, 0002 | LEON KUWATA, 0003 | KIYOTAKA ISHIMARU, 0004 | CELES, 0005 | TOUKO FUKAWA, 0006 | TOUKO FUKAWA, 0007 | TOUKO FUKAWA, 0008 | TOUKO FUKAWA, 0009 | TOUKO FUKAWA, 0010 | TOUKO FUKAWA, 0011 | TOUKO FUKAWA, 0012 | TOUKO FUKAWA, 0013 | TOUKO FUKAWA</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_117_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_117_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_117_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_117_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>141 untranslated: 0001 | MAKOTO NAEGI, 0002 | LEON KUWATA, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | CELES, 0006 | CELES, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | MAKOTO NAEGI, 0010 | AOI ASAHINA, 0011 | AOI ASAHINA, 0013 | AOI ASAHINA, 0014 | MAKOTO NAEGI, 0015 | CHOICE/RE:ACT, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | BYAKUYA TOGAMI, 0019 | BYAKUYA TOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | MAKOTO NAEGI, 0022 | CELES, 0023 | CELES, 0024 | CELES, 0025 | MAKOTO NAEGI, 0026 | CELES, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | KIYOTAKA ISHIMARU, 0032 | AOI ASAHINA, 0033 | AOI ASAHINA, 0034 | MONDO OOWADA, 0035 | CHIHIRO FUJISAKI, 0036 | KYOUKO KIRIGIRI, 0037 | HIFUMI YAMADA, 0038 | MONDO OOWADA, 0039 | HIFUMI YAMADA, 0040 | HIFUMI YAMADA, 0041 | CHIHIRO FUJISAKI, 0042 | CHIHIRO FUJISAKI, 0043 | MONDO OOWADA, 0044 | HIFUMI YAMADA, 0045 | SAKURA OOGAMI, 0047 | MAKOTO NAEGI, 0049 | KYOUKO KIRIGIRI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | AOI ASAHINA, 0055 | TOUKO FUKAWA, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | HIFUMI YAMADA, 0061 | HIFUMI YAMADA, 0062 | AOI ASAHINA, 0063 | MAKOTO NAEGI, 0064 | KYOUKO KIRIGIRI, 0065 | MAKOTO NAEGI, 0066 | YASUHIRO HAGAKURE, 0067 | AOI ASAHINA, 0068 | MAKOTO NAEGI, 0069 | YASUHIRO HAGAKURE, 0070 | KYOUKO KIRIGIRI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | KYOUKO KIRIGIRI, 0074 | MAKOTO NAEGI, 0075 | TOUKO FUKAWA, 0076 | TOUKO FUKAWA, 0077 | MAKOTO NAEGI, 0078 | MAKOTO NAEGI, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | LEON KUWATA, 0083 | LEON KUWATA, 0084 | LEON KUWATA, 0085 | KYOUKO KIRIGIRI, 0086 | KYOUKO KIRIGIRI, 0087 | KYOUKO KIRIGIRI, 0088 | KYOUKO KIRIGIRI, 0089 | KYOUKO KIRIGIRI, 0090 | KYOUKO KIRIGIRI, 0091 | LEON KUWATA, 0092 | LEON KUWATA, 0093 | KYOUKO KIRIGIRI, 0094 | LEON KUWATA, 0095 | KYOUKO KIRIGIRI, 0096 | KYOUKO KIRIGIRI, 0097 | LEON KUWATA, 0098 | MAKOTO NAEGI, 0099 | YASUHIRO HAGAKURE, 0100 | YASUHIRO HAGAKURE, 0102 | MAKOTO NAEGI, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | KYOUKO KIRIGIRI, 0108 | KYOUKO KIRIGIRI, 0109 | CELES, 0110 | KYOUKO KIRIGIRI, 0111 | KYOUKO KIRIGIRI, 0112 | LEON KUWATA, 0113 | SAKURA OOGAMI, 0114 | CHIHIRO FUJISAKI, 0115 | LEON KUWATA, 0116 | LEON KUWATA, 0117 | MAKOTO NAEGI, 0118 | KYOUKO KIRIGIRI, 0119 | MAKOTO NAEGI, 0120 | CHOICE/RE:ACT, 0121 | CHOICE/RE:ACT, 0122 | MAKOTO NAEGI, 0123 | YASUHIRO HAGAKURE, 0124 | KYOUKO KIRIGIRI, 0125 | MAKOTO NAEGI, 0126 | CHOICE/RE:ACT, 0127 | MAKOTO NAEGI, 0128 | MONDO OOWADA, 0129 | MONDO OOWADA, 0130 | MAKOTO NAEGI, 0131 | YASUHIRO HAGAKURE, 0132 | YASUHIRO HAGAKURE, 0134 | MAKOTO NAEGI, 0135 | MAKOTO NAEGI, 0136 | MAKOTO NAEGI, 0137 | MAKOTO NAEGI, 0138 | LEON KUWATA, 0139 | LEON KUWATA, 0140 | LEON KUWATA, 0141 | LEON KUWATA, 0142 | LEON KUWATA, 0143 | HIFUMI YAMADA, 0144 | HIFUMI YAMADA, 0145 | MAKOTO NAEGI, 0146 | MAKOTO NAEGI</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 85): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0046 | MAKOTO NAEGI&quot; (line 324): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0048 | KYOUKO KIRIGIRI&quot; (line 338): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0101 | LEON KUWATA&quot; (line 721): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0133 | LEON KUWATA&quot; (line 956): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_118_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_118_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_118_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_118_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>11 untranslated: 0001 | LEON KUWATA, 0002 | MAKOTO NAEGI, 0003 | TOUKO FUKAWA, 0004 | TOUKO FUKAWA, 0005 | MAKOTO NAEGI, 0006 | LEON KUWATA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_118_001">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_118_001</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_118_001">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_118_001</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>18 untranslated: 0001 | LEON KUWATA, 0002 | LEON KUWATA, 0003 | TOUKO FUKAWA, 0004 | TOUKO FUKAWA, 0005 | LEON KUWATA, 0006 | LEON KUWATA, 0007 | HIFUMI YAMADA, 0008 | HIFUMI YAMADA, 0009 | HIFUMI YAMADA, 0010 | HIFUMI YAMADA, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA, 0013 | HIFUMI YAMADA, 0014 | HIFUMI YAMADA, 0015 | HIFUMI YAMADA, 0016 | HIFUMI YAMADA, 0017 | HIFUMI YAMADA, 0018 | HIFUMI YAMADA</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_119_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_119_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_119_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_119_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>68 untranslated: 0001 | MAKOTO NAEGI, 0002 | SAKURA OOGAMI, 0003 | MAKOTO NAEGI, 0004 | MONDO OOWADA, 0005 | YASUHIRO HAGAKURE, 0006 | CHIHIRO FUJISAKI, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | YASUHIRO HAGAKURE, 0012 | MAKOTO NAEGI, 0013 | CHOICE/RE:ACT, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MONDO OOWADA, 0017 | YASUHIRO HAGAKURE, 0018 | MAKOTO NAEGI, 0019 | KYOUKO KIRIGIRI, 0020 | KYOUKO KIRIGIRI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | HIFUMI YAMADA, 0026 | MAKOTO NAEGI, 0027 | HIFUMI YAMADA, 0028 | HIFUMI YAMADA, 0029 | HIFUMI YAMADA, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | LEON KUWATA, 0034 | KYOUKO KIRIGIRI, 0035 | KYOUKO KIRIGIRI, 0036 | KYOUKO KIRIGIRI, 0037 | LEON KUWATA, 0038 | CHIHIRO FUJISAKI, 0039 | CHIHIRO FUJISAKI, 0040 | CHIHIRO FUJISAKI, 0041 | LEON KUWATA, 0042 | MAKOTO NAEGI, 0043 | CHOICE/RE:ACT, 0044 | CHOICE/RE:ACT, 0045 | MAKOTO NAEGI, 0046 | HIFUMI YAMADA, 0047 | HIFUMI YAMADA, 0048 | MAKOTO NAEGI, 0049 | CHOICE/RE:ACT, 0050 | MAKOTO NAEGI, 0051 | YASUHIRO HAGAKURE, 0052 | MAKOTO NAEGI, 0053 | KYOUKO KIRIGIRI, 0054 | KYOUKO KIRIGIRI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | LEON KUWATA, 0059 | CELES, 0060 | LEON KUWATA, 0061 | LEON KUWATA, 0062 | LEON KUWATA, 0063 | KYOUKO KIRIGIRI, 0064 | KYOUKO KIRIGIRI, 0065 | KYOUKO KIRIGIRI, 0066 | LEON KUWATA, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_120_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_120_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_120_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_120_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>46 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_121_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_121_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_121_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_121_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>11 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | KYOUKO KIRIGIRI, 0005 | LEON KUWATA, 0006 | LEON KUWATA, 0007 | LEON KUWATA, 0008 | LEON KUWATA, 0009 | KYOUKO KIRIGIRI, 0010 | KYOUKO KIRIGIRI, 0011 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_122_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_122_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_122_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_122_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>9 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | MAKOTO NAEGI, 0004 | KYOUKO KIRIGIRI, 0005 | KYOUKO KIRIGIRI, 0006 | MAKOTO NAEGI, 0007 | LEON KUWATA, 0008 | LEON KUWATA, 0009 | MAKOTO NAEGI</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_123_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_123_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_123_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_123_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>30 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MONDO OOWADA, 0004 | YASUHIRO HAGAKURE, 0005 | HIFUMI YAMADA, 0006 | MAKOTO NAEGI, 0007 | KIYOTAKA ISHIMARU, 0008 | CHIHIRO FUJISAKI, 0009 | MAKOTO NAEGI, 0010 | LEON KUWATA, 0011 | MAKOTO NAEGI, 0012 | LEON KUWATA, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | LEON KUWATA, 0016 | BYAKUYA TOGAMI, 0017 | KYOUKO KIRIGIRI, 0018 | KYOUKO KIRIGIRI, 0019 | LEON KUWATA, 0020 | LEON KUWATA, 0021 | BYAKUYA TOGAMI, 0022 | CELES, 0023 | MONOKUMA, 0024 | MONOKUMA, 0025 | MONOKUMA, 0026 | MONOKUMA, 0027 | MONOKUMA, 0029 | MONOKUMA, 0030 | MONOKUMA, 0031 | MONOKUMA</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0028 | KYOUKO KIRIGIRI&quot; (line 188): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_150_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_150_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_150_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_150_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>14 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_151_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_151_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_151_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_151_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>9 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_152_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_152_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_152_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_152_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>11 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_153_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_153_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_153_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_153_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>15 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_154_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_154_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_154_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_154_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>12 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_155_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_155_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_155_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_155_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>23 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION, 0016 | NARRATION, 0017 | NARRATION, 0018 | NARRATION, 0019 | NARRATION, 0020 | NARRATION, 0021 | NARRATION, 0022 | NARRATION, 0023 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_156_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_156_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_156_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_156_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>11 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_196_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_196_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_196_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_196_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>15 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | CHOICE/RE:ACT, 0008 | NARRATION, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_197_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_197_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_197_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_197_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>4 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_198_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_198_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_198_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_198_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_199_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_199_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_199_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_199_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_200_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_200_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_200_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_200_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>110 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0005 | LEON KUWATA, 0006 | LEON KUWATA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | AOI ASAHINA, 0011 | MONDO OOWADA, 0012 | LEON KUWATA, 0013 | LEON KUWATA, 0014 | LEON KUWATA, 0015 | LEON KUWATA, 0016 | LEON KUWATA, 0017 | LEON KUWATA, 0018 | MONDO OOWADA, 0019 | LEON KUWATA, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | SAYAKA MAIZONO, 0035 | SAYAKA MAIZONO, 0036 | SAYAKA MAIZONO, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | SAYAKA MAIZONO, 0041 | SAYAKA MAIZONO, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | SAYAKA MAIZONO, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MONOKUMA, 0052 | MONOKUMA, 0053 | MONOKUMA, 0054 | MAKOTO NAEGI, 0055 | MONOKUMA, 0056 | MONOKUMA, 0057 | MONOKUMA, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | KYOUKO KIRIGIRI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | KYOUKO KIRIGIRI, 0069 | MAKOTO NAEGI, 0070 | MONOKUMA, 0071 | MONOKUMA, 0072 | MONOKUMA, 0073 | MONOKUMA, 0074 | LEON KUWATA, 0075 | LEON KUWATA, 0076 | LEON KUWATA, 0077 | LEON KUWATA, 0078 | LEON KUWATA, 0079 | CELES, 0080 | CELES, 0081 | CELES, 0082 | CELES, 0083 | CELES, 0084 | CELES, 0085 | CELES, 0086 | LEON KUWATA, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | CELES, 0090 | CELES, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | MONOKUMA, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0098 | MAKOTO NAEGI, 0099 | MONOKUMA, 0100 | MONOKUMA, 0101 | MONOKUMA, 0102 | MONOKUMA, 0103 | MAKOTO NAEGI, 0104 | MONOKUMA, 0105 | MONOKUMA, 0106 | LEON KUWATA, 0107 | MONOKUMA, 0108 | LEON KUWATA, 0109 | MONOKUMA, 0110 | LEON KUWATA, 0111 | MONOKUMA, 0112 | LEON KUWATA</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | LEON KUWATA&quot; (line 32): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0068 | MAKOTO NAEGI&quot; (line 472): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_201_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_201_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_201_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_201_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>101 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | HIFUMI YAMADA, 0007 | TOUKO FUKAWA, 0008 | CHIHIRO FUJISAKI, 0009 | CHIHIRO FUJISAKI, 0010 | CHIHIRO FUJISAKI, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MONDO OOWADA, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | HIFUMI YAMADA, 0019 | MONOKUMA, 0020 | MONOKUMA, 0021 | HIFUMI YAMADA, 0022 | MONDO OOWADA, 0023 | MONOKUMA, 0024 | MONOKUMA, 0025 | MONOKUMA, 0026 | MONOKUMA, 0027 | TOUKO FUKAWA, 0028 | MONOKUMA, 0029 | MONOKUMA, 0030 | MONOKUMA, 0031 | KIYOTAKA ISHIMARU, 0032 | KYOUKO KIRIGIRI, 0033 | KYOUKO KIRIGIRI, 0034 | MONOKUMA, 0035 | KYOUKO KIRIGIRI, 0036 | MONOKUMA, 0037 | MONOKUMA, 0038 | MONOKUMA, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | KIYOTAKA ISHIMARU, 0048 | CHIHIRO FUJISAKI, 0049 | CHIHIRO FUJISAKI, 0050 | CHIHIRO FUJISAKI, 0051 | KYOUKO KIRIGIRI, 0052 | MAKOTO NAEGI, 0053 | KYOUKO KIRIGIRI, 0054 | KYOUKO KIRIGIRI, 0056 | MAKOTO NAEGI, 0058 | KYOUKO KIRIGIRI, 0059 | KYOUKO KIRIGIRI, 0060 | KYOUKO KIRIGIRI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | KYOUKO KIRIGIRI, 0064 | KYOUKO KIRIGIRI, 0065 | KYOUKO KIRIGIRI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | KYOUKO KIRIGIRI, 0071 | KYOUKO KIRIGIRI, 0072 | KYOUKO KIRIGIRI, 0073 | MAKOTO NAEGI, 0074 | KYOUKO KIRIGIRI, 0075 | KYOUKO KIRIGIRI, 0076 | MAKOTO NAEGI, 0077 | KYOUKO KIRIGIRI, 0078 | KYOUKO KIRIGIRI, 0079 | KYOUKO KIRIGIRI, 0080 | KYOUKO KIRIGIRI, 0081 | KYOUKO KIRIGIRI, 0082 | KYOUKO KIRIGIRI, 0083 | KYOUKO KIRIGIRI, 0085 | MAKOTO NAEGI, 0086 | KYOUKO KIRIGIRI, 0087 | KYOUKO KIRIGIRI, 0088 | KYOUKO KIRIGIRI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0099 | KYOUKO KIRIGIRI, 0100 | KYOUKO KIRIGIRI, 0101 | MAKOTO NAEGI, 0102 | KYOUKO KIRIGIRI, 0103 | KYOUKO KIRIGIRI, 0104 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | KYOUKO KIRIGIRI, 0108 | MAKOTO NAEGI, 0109 | NARRATION</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0046 | MONDO OOWADA&quot; (line 328): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0047 | CHIHIRO FUJISAKI&quot; (line 333): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0055 | MAKOTO NAEGI&quot; (line 386): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0057 | KYOUKO KIRIGIRI&quot; (line 396): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0084 | MAKOTO NAEGI&quot; (line 564): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0092 | KYOUKO KIRIGIRI&quot; (line 612): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0098 | KYOUKO KIRIGIRI&quot; (line 644): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0105 | MAKOTO NAEGI&quot; (line 686): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e01_255_000">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e01_255_000</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e01_255_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e01_255_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[untranslated]</span>7 untranslated: 0001 | NARRATION, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA</div>
+
+  </div>
+</div>
+</div></div>
+</div>
+<script>
+function toggleChapter(hdr) {
+  hdr.closest('.chapter').classList.toggle('collapsed');
+}
+function filterStatus(status) {
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden',
+      status !== 'all' && row.dataset.status !== status);
+  });
+}
+function filterSearch(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden', q && !row.dataset.name.toLowerCase().includes(q));
+  });
+  // Show chapters that have visible rows
+  document.querySelectorAll('.chapter').forEach(ch => {
+    const any = Array.from(ch.querySelectorAll('.file-row'))
+                     .some(r => !r.classList.contains('hidden'));
+    ch.classList.toggle('hidden', !any);
+  });
+}
+</script></body></html>

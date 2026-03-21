@@ -1,0 +1,1474 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 【例の殺人鬼】
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "[certain murderous fiend]"
+msgstr "[tên sát nhân nọ]"
+
+#. 例の殺人鬼って…
+#. 不二咲さん、犯人に心当たりでもあるの？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"A murderous fiend... Chihiro, do you have some idea\n"
+"who might be behind all this?"
+msgstr ""
+"Tên sát nhân nọ sao... Chihiro, cậu có manh mối gì về kẻ \n"
+"đứng sau chuyện này à?"
+
+#. 心当たりって言うか…
+#. ひょっとしたらって程度なんだけど…
+msgctxt "0003 | CHIHIRO FUJISAKI"
+msgid ""
+"Well...maybe. I mean, I can't really be certain,\n"
+"but..."
+msgstr "À... cũng có thể. Tớ cũng không chắc lắm, nhưng mà..."
+
+#. この際、程度は問題じゃない！　発言を許可するっ！
+msgctxt "0004 | KIYOTAKA ISHIMARU"
+msgid ""
+"Certainty is not a concern right now! I'll allow\n"
+"whatever remarks you may have!"
+msgstr ""
+"Lúc này thì chắc chắn hay không không quan trọng! Tôi cho \n"
+"phép cậu trình bày bất cứ ý kiến nào!"
+
+#. う、うん…あのね…
+msgctxt "0005 | CHIHIRO FUJISAKI"
+msgid "O-Okay, well..."
+msgstr "Ừ-Ừm, chuyện là..."
+
+#. みんな…<CLT 3>“ジェノサイダー翔”<CLT>って知ってる？
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "Have you guys heard of <CLT 3>Genocide Jack<CLT>?"
+msgstr "Mọi người... có biết đến <CLT 3>“Jack đồ tể”<CLT> không?"
+
+#. それって…！
+#. ネットとかテレビで話題になってる連続殺人犯の！？
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"You mean that serial killer that's been in the news\n"
+"and all over the Internet?"
+msgstr ""
+"Đó chẳng phải là...! Tên sát nhân hàng loạt đang gây xôn xao \n"
+"trên mạng và truyền hình sao!?"
+
+#. 猟奇的かつ残忍な手口で殺人を繰り返す、
+#. 凶悪殺人鬼…
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid ""
+"The monstrous villain who's murdered scores of victims\n"
+"in brutally bizarre fashion..."
+msgstr ""
+"Một tên sát nhân tàn bạo, kẻ thực hiện hàng loạt vụ giết \n"
+"người với thủ đoạn quái đản và dã man..."
+
+#. 現場には必ず被害者本人の血で
+#. <CLT 3>“チミドロフィーバー”<CLT>の血文字を残す。
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgid ""
+"The word \"<CLT 3>bloodlust<CLT>\" was left at each murder scene,\n"
+"written in the victim's own blood."
+msgstr ""
+"Tại hiện trường, hắn luôn dùng chính máu của nạn nhân để \n"
+"lại dòng chữ <CLT 3>“Bloodlust”<CLT>."
+
+#. 通り魔的かつ無差別的で突発的な犯行ばかりゆえ、
+#. 警察もその足取りを掴めていない状態…
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgid ""
+"Whoever it is, he's like a ghost. He strikes without\n"
+"warning, and disappears without a trace."
+msgstr ""
+"Hắn ra tay một cách ngẫu nhiên và bừa bãi như một bóng \n"
+"ma, khiến cảnh sát không thể nắm bắt được tung tích..."
+
+#. そんな連続殺人事件の容疑者に、
+#. ネット上で与えられたあだ名が…
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "And on the Internet, they started calling him..."
+msgstr ""
+"Biệt danh mà cư dân mạng đặt cho kẻ tình nghi của những \n"
+"vụ giết người hàng loạt đó chính là..."
+
+#. ジェノサイダー翔…だったな？
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid "Genocide Jack. That about covers it, I think."
+msgstr "Jack Đồ Tể... đúng không?"
+
+#. 噂では、犠牲者は数千人にも及ぶって話だべ。
+msgctxt "0013 | YASUHIRO HAGAKURE"
+msgid "They say he's claimed over a thousand victims..."
+msgstr ""
+"Nghe đồn số nạn nhân đã lên đến hàng ngàn người \n"
+"rồi đó cậu."
+
+#. それって都市伝説でしょ？
+#. せいぜい数十人とか…それでも異常だけど。
+msgctxt "0014 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"That's just an urban legend though, right? I mean even\n"
+"like, ten people would be totally insane."
+msgstr ""
+"Đó chỉ là truyền thuyết đô thị thôi đúng không? Tớ nghĩ \n"
+"cùng lắm là vài chục người... mà thế cũng là quá tởm rồi."
+
+#. ………………
+msgctxt "0015 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. とにかく…常軌を逸した殺人鬼らしいけど…
+msgctxt "0016 | CHIHIRO FUJISAKI"
+msgid ""
+"Anyway, whoever Genocide Jack really is, he's\n"
+"obviously some kind of super crazy killer."
+msgstr ""
+"Dù sao thì... đó có vẻ là một tên sát nhân cực kỳ \n"
+"biến thái và điên khùng..."
+
+#. そんな超ド級の変態殺人鬼なら…
+#. こんな事を仕組んだとしても不思議じゃねーってか…
+msgctxt "0017 | MONDO OOWADA"
+msgid ""
+"And if he really is this \"ultimate\" psycho, I wouldn't\n"
+"be surprised if he put together something like this."
+msgstr ""
+"Nếu là một tên sát nhân biến thái cấp độ tột cùng như vậy... \n"
+"thì việc hắn bày ra cái trò này cũng chẳng có gì lạ..."
+
+#. でも、確証はないって言うか…
+#. ただの推論だけど…
+msgctxt "0018 | CHIHIRO FUJISAKI"
+msgid ""
+"But like I said, I can't be certain. I don't have any\n"
+"evidence or anything. It's just a thought..."
+msgstr ""
+"Nhưng tớ không có bằng chứng gì cả... đó chỉ là suy đoán cá \n"
+"nhân thôi..."
+
+#. つーか、そんなヤツが犯人だとしたら…
+#. ものっそいクリミナルな問題じゃね？
+msgctxt "0019 | LEON KUWATA"
+msgid ""
+"But if they're the killer, isn't that like a killer of\n"
+"a problem for us!?"
+msgstr ""
+"Đm, nếu hạng người như thế mà là hung thủ... thì chẳng \n"
+"phải chúng ta đang gặp rắc rối to rồi sao?"
+
+#. 大丈夫だって！　
+#. 絶対に完璧に間違いなく大丈夫だって！
+msgctxt "0020 | AOI ASAHINA"
+msgid ""
+"It's okay! Everything's absolutely, positively, one\n"
+"hundred percent without a doubt gonna be okay!"
+msgstr ""
+"Không sao đâu mà! Chắc chắn, tuyệt đối, 100% là mọi \n"
+"chuyện sẽ ổn thôi!"
+
+#. だってさ、もうすぐ助けも来るんだし！
+msgctxt "0021 | AOI ASAHINA"
+msgid "Cuz help's gonna be here soon, I'm sure of it!"
+msgstr "Vì tui tin là cứu viện sẽ sớm đến thôi!"
+
+#. は？　助け…？
+msgctxt "0022 | TOUKO FUKAWA"
+msgid "Huh...? H-Help?"
+msgstr "Hả...? C-Cứu viện?"
+
+#. だってさ、私達がここに閉じ込められてから、
+#. もう数日経つんだよ…
+msgctxt "0023 | AOI ASAHINA"
+msgid "We've been stuck in here a few days already, right?"
+msgstr ""
+"Ngẫm mà xem, chúng ta đã bị nhốt ở đây vài ngày \n"
+"rồi còn gì..."
+
+#. 急に連絡の取れなくなった私達を心配して、
+#. そろそろ警察も動き出す頃なんじゃない？
+msgctxt "0024 | AOI ASAHINA"
+msgid ""
+"Nobody's been able to contact us, so I'm sure they're\n"
+"getting worried. I bet they called the police already!"
+msgstr ""
+"Mọi người hẳn đang lo lắng vì bỗng dưng mất liên lạc với \n"
+"chúng ta, cảnh sát cũng đang bắt đầu hành động rồi ấy chứ!"
+
+#. …アハハハハハハハハハハハハハハハッ！！
+msgctxt "0025 | NO NAME"
+msgid "AHHH-HAHAHAHAHAHAHAHAHAHA!"
+msgstr "...A HAHAHAHAHAHAHAHAHAHAHAH!!"
+
+#. 警察だって…！　警察なんかあてにしてんの？
+msgctxt "0026 | MONOKUMA"
+msgid "The police? You're putting your faith in the police!?"
+msgstr ""
+"Cảnh sát á...! Các em mà cũng dám đặt niềm tin vào lũ cảnh \n"
+"sát sao?"
+
+#. 現れたか…！
+msgctxt "0027 | SAKURA OOGAMI"
+msgid "What are you doing here!?"
+msgstr "Ngươi lại xuất hiện rồi sao...!"
+
+#. オマエラ…警察にはどんな役割があるか知ってる？
+msgctxt "0028 | MONOKUMA"
+msgid ""
+"You guys, seriously... Do you understand what role the\n"
+"police exist to fill?"
+msgstr ""
+"Lũ nhóc các em... có biết vai trò của cảnh sát sinh ra để làm \n"
+"gì không?"
+
+#. 引き立て役だよ。
+#. 悪の組織や悪役やダークヒーローの。
+msgctxt "0029 | MONOKUMA"
+msgid ""
+"All they're good for is being a foil, playing against\n"
+"a villain or anti-hero or evil organization."
+msgstr ""
+"Là để làm nền thôi. Làm nền cho các tổ chức tội ác, những \n"
+"kẻ phản diện hay những phản anh hùng ấy."
+
+#. あいつらがやられる事で、
+#. 悪役が引き立てられんの。
+msgctxt "0030 | MONOKUMA"
+msgid ""
+"The bad guys come along and destroy them, and that\n"
+"shows just how badass they really are."
+msgstr ""
+"Bằng việc để lũ cảnh sát bị hạ gục, sự bá đạo của kẻ phản \n"
+"diện sẽ được tôn lên gấp bội."
+
+#. そんな安直な役割しかない警察をあてにするなど、
+#. お約束と言えども、どうかと思いますぞ。
+msgctxt "0031 | MONOKUMA"
+msgid ""
+"Are you sure you wanna rely on such an unreliable\n"
+"group of losers?"
+msgstr ""
+"Tin tưởng vào cái lũ chỉ có vai trò rẻ mạt như thế, dù là mô \n"
+"típ quen thuộc nhưng ta cũng quan ngại thay các em đấy."
+
+#. …ていうかさぁ、そんなに出たいなら、
+#. 殺しちゃえばいいじゃーん！
+msgctxt "0032 | MONOKUMA"
+msgid ""
+"I mean come on! If you really, REALLY wanna get out of\n"
+"here, all you gotta do is kill!"
+msgstr ""
+"...Mà này, nếu muốn ra ngoài đến thế thì cứ giết phắt ai đó đi \n"
+"là xong mà!"
+
+#. アッハッハッハ！！
+msgctxt "0033 | YASUHIRO HAGAKURE"
+msgid "Hahahaha!"
+msgstr "Á ha ha ha!"
+
+#. 笑うトコ？
+msgctxt "0034 | LEON KUWATA"
+msgid "Why the hell are you laughing?"
+msgstr "Có gì mà mày cười hả?"
+
+#. 徹底した芝居っぷりに感心してるんよ。
+msgctxt "0035 | YASUHIRO HAGAKURE"
+msgid ""
+"I'm just impressed at the total commitment to this\n"
+"whole act."
+msgstr ""
+"Tớ chỉ đang thán phục màn kịch được đầu tư quá công phu \n"
+"này thôi mà."
+
+#. …アンタ、まだ言ってんの？
+msgctxt "0036 | JUNKO ENOSHIMA (MUKURO)"
+msgid "...You're still going on about that?"
+msgstr "...Cậu vẫn còn lảm nhảm về chuyện đó à?"
+
+#. つーか何の用だぁ！？　連続殺人鬼さんよぉ！
+msgctxt "0037 | MONDO OOWADA"
+msgid ""
+"So, mister serial killer psycho freak bastard...what\n"
+"the hell do you want!?"
+msgstr "Đm, mày đến đây làm gì!? Thằng giết người hàng loạt kia!"
+
+#. …レンゾクサツジンキー？
+#. 変な名前！　ドイツ人？
+msgctxt "0038 | MONOKUMA"
+msgid ""
+"Mr. Serialkillerpsychofreakbastard, huh? That's a\n"
+"pretty long name! German, maybe?"
+msgstr ""
+"...Giếtnngườihàngloạt-ki-a? Cái tên nghe lạ nhỉ! \n"
+"Người Đức à?"
+
+#. オメェの正体はわかってんだよ…！
+msgctxt "0039 | MONDO OOWADA"
+msgid "We know who you really are!"
+msgstr "Tao thừa biết bộ mặt thật của mày là gì rồi...!"
+
+#. 無視無視…
+msgctxt "0040 | MONOKUMA"
+msgid "Maybe if I ignore him, he'll just go away..."
+msgstr "Lờ đi thôi, lờ đi thôi..."
+
+#. 無視すんな、コラァ！！
+msgctxt "0041 | MONDO OOWADA"
+msgid "Hey! Don't ignore me, asshole!"
+msgstr "Ê! Đừng có lơ tao, thằng buồi!"
+
+#. 無視すんな, コラァ！！
+#. はいはい, それでは話を戻して…
+msgctxt "0042 | MONOKUMA"
+msgid "Okay, okay, let's get back to business."
+msgstr "Rồi rồi, giờ quay lại công chuyện nào..."
+
+#. 学園生活が開始されて数日経った訳ですが,
+#. まだ, 誰かを殺すようなヤツは現われないよね！
+msgctxt "0043 | MONOKUMA"
+msgid ""
+"Your life here has already begun and a couple days\n"
+"have gone by, and nobody's killing anybody!"
+msgstr ""
+"Cuộc sống học đường đã bắt đầu được vài ngày rồi, vậy mà \n"
+"vẫn chưa có ai chịu giết người cả nhỉ!"
+
+#. オマエラ, ゆとり世代の割にはガッツあるんだね…
+#. Nhưng mà, ボク的にはちょっと退屈ですぅ～！
+msgctxt "0044 | MONOKUMA"
+msgid ""
+"I thought all you kids were lazy and selfish, and here\n"
+"you are working together. But I'm totally bored!"
+msgstr ""
+"Lũ nhóc các em cũng có bản lĩnh gớm... Nhưng với ta thì \n"
+"thế này hơi bị nhàm chán đấy~!"
+
+#. な, 何を言われたって…
+#. ボクらは…人を殺したりなんか…
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"There's nothing you can say that'll make us start\n"
+"killing each other..."
+msgstr ""
+"Dù mi có nói gì đi nữa... chúng tôi cũng sẽ không giết \n"
+"người đâu..."
+
+#. あ, わかった！ ピコーン, 閃いたのだ！
+msgctxt "0046 | MONOKUMA"
+msgid "Wait, I think—yes! Ding ding ding! I figured it out!"
+msgstr "A, ta hiểu rồi! Ting! Một ý tưởng vừa lóe lên trong đầu ta!"
+
+#. 場所も人も環境も, ミステリー yếu tố は揃ってるのに,
+#. どうして殺人が起きないのかと思ったら…
+msgctxt "0047 | MONOKUMA"
+msgid ""
+"All the mystery ingredients are here—right people,\n"
+"right place. So why hasn't anyone killed anyone yet?"
+msgstr ""
+"Từ địa điểm, con người cho đến hoàn cảnh, mọi yếu tố đều \n"
+"hội tụ đủ cả, mà sao mãi vẫn chưa có vụ án mạng nào..."
+
+#. そっか, 足りないものが１つあったね！！
+msgctxt "0048 | MONOKUMA"
+msgid ""
+"That's what I couldn't understand. But I just realized\n"
+"there was one very important piece missing!"
+msgstr "Thì ra là vậy, vẫn còn thiếu một thứ cực kỳ quan trọng!!"
+
+#. た, 足りないものって, なんだよ…
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "Wh-What are you...?"
+msgstr "Th-Thứ còn thiếu... là gì cơ..."
+
+#. …ずばり“動機”だよ！
+msgctxt "0050 | MONOKUMA"
+msgid "If you wanna know, I'll tell ya! It's motive!"
+msgstr "...Đó chính là “Động cơ”!"
+
+#. うぷぷ, だったら簡単！
+#. ボクがみんなに<CLT 3>“動機”<CLT>を与えればいいだけだもんね！
+msgctxt "0051 | MONOKUMA"
+msgid ""
+"Puhuhu! It's so simple! I just have to give everyone a\n"
+"<CLT 3>motive<CLT>!"
+msgstr ""
+"U pư pư, thế thì dễ rồi! Ta chỉ việc trao cho các em một \n"
+"<CLT 3>“Động cơ”<CLT> thôi mà!"
+
+#. 動機だぁ…？ どういう意味だッ！！
+msgctxt "0052 | MONDO OOWADA"
+msgid "Motive? What the fuck are you talking about!?"
+msgstr "Động cơ á...? Ý mày là sao hả!!"
+
+#. ところでさ, オマエラに見せたい物があるんだ！
+msgctxt "0053 | MONOKUMA"
+msgid ""
+"Oh, by the way! There's something I wanna show you\n"
+"guys!"
+msgstr "À mà nhân tiện, ta có thứ này muốn cho các em xem nè!"
+
+#. 話変えんな、コラァァ！！
+msgctxt "0054 | MONDO OOWADA"
+msgid "Stop changing the goddamn subject!"
+msgstr "Đừng có mà đổi chủ đề!"
+
+#. 話変えんな, コラァァ！！
+#. オマエラに見せたいのは,
+#. ちょっとした映像だよ…
+msgctxt "0055 | MONOKUMA"
+msgid "I have a little video I'd like you all to see."
+msgstr "Thứ ta muốn cho các em xem là một đoạn phim ngắn..."
+
+#. あ, 違うよ. １８禁とかアブノーマルとかじゃないよ！
+#. ホントに, そういうのじゃないんだからッ！！
+msgctxt "0056 | MONOKUMA"
+msgid ""
+"Oh, but don't worry. It's not some pervy \"adult\" video\n"
+"or anything. Seriously, it's nothing like that!"
+msgstr ""
+"A, không phải phim người lớn hay mấy thứ biến thái đâu \n"
+"nhé! Thật đấy, đừng có hiểu lầm ta nha!!"
+
+#. <CLT 3>学園の外の映像<CLT>なんだってば！
+msgctxt "0057 | MONOKUMA"
+msgid ""
+"It's a special video for each of you showing what's\n"
+"going on <CLT 3>outside the school<CLT>."
+msgstr "Đó chính là <CLT 3>những hình ảnh bên ngoài học viện<CLT>!"
+
+#. 学園の外の…なんの映像だよ…
+msgctxt "0058 | MAKOTO NAEGI"
+msgid "Outside the school...? What are you talking about?"
+msgstr "Bên ngoài học viện... đó là phim về cái gì chứ?"
+
+#. ヘヘッ, ダンナ cũng 気が短けぇや！
+#. そいつは見てのお楽しみじゃねーですかッ！
+msgctxt "0059 | MONOKUMA"
+msgid ""
+"Heh-heh! Ooh, Master's so impatient today! Why don't\n"
+"you just watch it and find out?"
+msgstr ""
+"He he, cậu Makoto cũng nóng tính gớm nhỉ! Chuyện đó cứ \n"
+"để xem xong rồi biết có phải hay hơn không!"
+
+#. なんでも, 学校内の<CLT 3>“ある場所”<CLT>に行けば,
+#. その映像が見られるようになってるらしいですゼッ！
+msgctxt "0060 | MONOKUMA"
+msgid ""
+"Here in the school, there's a <CLT 3>specific place<CLT> you can\n"
+"go that has everything you need to watch the video."
+msgstr ""
+"Nghe bảo là chỉ cần đến <CLT 3>“một nơi nọ”<CLT> trong trường \n"
+"là có thể xem được đoạn phim đó đấy!"
+
+#. …だったら, すぐに確認してみましょう.
+msgctxt "0061 | KYOUKO KIRIGIRI"
+msgid "Good, then we can go watch the video right now."
+msgstr "...Nếu vậy, chúng ta đi kiểm chứng ngay thôi."
+
+#. Nhưng mà, その前に聞かせてもらえる？
+msgctxt "0062 | KYOUKO KIRIGIRI"
+msgid "But before we do that, I'd like to know..."
+msgstr "Nhưng trước đó, ông có thể trả lời tôi một câu được không?"
+
+#. あなたは何者なの？
+#. どうしてこんな事をするの？
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid "What are you? Why would you do something like this?"
+msgstr "Ông rốt cuộc là thứ gì? Tại sao lại làm những việc này?"
+
+#. あなたは私達に何をさせたいの？
+msgctxt "0064 | KYOUKO KIRIGIRI"
+msgid "What do you want from us?"
+msgstr "Ông muốn chúng tôi phải làm gì đây?"
+
+#. ボクがオマエラに…させたい事？
+msgctxt "0065 | MONOKUMA"
+msgid "What do I want from you...?"
+msgstr "Thứ ta muốn... các em phải làm sao?"
+
+#. あぁ, それはね…
+msgctxt "0066 | MONOKUMA"
+msgid "Well, if you must know..."
+msgstr "À, chuyện đó thì..."
+
+#. 絶望…それだけだよ……
+msgctxt "0067 | MONOKUMA"
+msgid "Despair. That's all."
+msgstr "Là tuyệt vọng... chỉ thế thôi..."
+
+#. 後の事が知りたければ,
+#. オマエラが自分達の手で突き止めるんだね.
+msgctxt "0068 | MONOKUMA"
+msgid ""
+"If you want to know more than that, you'll have to\n"
+"figure it out for yourselves."
+msgstr ""
+"Nếu muốn biết thêm, thì các em hãy tự tay mình mà đi tìm \n"
+"câu trả lời đi nhé."
+
+#. この学園に潜む謎…知りたければ好きにして.
+#. ボクは止めないよ.
+msgctxt "0069 | MONOKUMA"
+msgid ""
+"Do whatever you need to to uncover the mystery hidden\n"
+"within this school. I won't try and stop you."
+msgstr ""
+"Những bí ẩn đang ẩn giấu trong học viện này... nếu muốn \n"
+"biết thì cứ tự nhiên. Ta sẽ không ngăn cản đâu."
+
+#. ボクも楽しませてもーらおっと！
+msgctxt "0071 | MONOKUMA"
+msgid "So I guess I want amusement from you, too."
+msgstr ""
+"Ta cũng sẽ lót dép hóng xem màn trình diễn của các \n"
+"em ra sao!"
+
+#. だって、オマエラが必死に真実を探し求める姿も、
+#. 面白い見世物だしさッ！
+msgctxt "0070 | MONOKUMA"
+msgid ""
+"Cuz to be honest, it's entertaining as heck watching\n"
+"you guys search so desperately for answers!"
+msgstr ""
+"Tại vì nói thật, nhìn mấy bây đi mò mẫm câu trả lời một cách \n"
+"tuyệt vọng rất là giải trí luôn đó!"
+
+#. 行っちゃいました…ね…
+msgctxt "0072 | SAYAKA MAIZONO"
+msgid "He's gone..."
+msgstr "Hắn... đi rồi..."
+
+#. それに今回も…
+#. 結局、何も聞けず終いで…
+msgctxt "0073 | SAYAKA MAIZONO"
+msgid ""
+"And once again, he left before we could find out\n"
+"anything useful."
+msgstr ""
+"Lần này cũng vậy... rốt cuộc vẫn chẳng hỏi được \n"
+"gì ra hồn cả..."
+
+#. そう…？ いい事を聞けたじゃない.
+msgctxt "0074 | KYOUKO KIRIGIRI"
+msgid "Really? I think we learned something *very* useful."
+msgstr ""
+"Vậy sao...? Tớ lại thấy chúng ta vừa nghe được thông tin rất \n"
+"hữu ích đấy chứ."
+
+#. 真実を追い求めるのは自由.
+#. あいつはそれを止めはしない…なるほどね.
+msgctxt "0075 | KYOUKO KIRIGIRI"
+msgid ""
+"He has no intention of standing in the way of our\n"
+"pursuit of the truth. Interesting..."
+msgstr ""
+"Được tự do theo đuổi sự thật, và hắn sẽ không ngăn cản việc \n"
+"đó... ra là vậy."
+
+#. されど…学園の外の映像とは何の事だ？
+#. 気に掛かるな…
+msgctxt "0076 | SAKURA OOGAMI"
+msgid ""
+"Perhaps, but what about the video he mentioned? I'm\n"
+"very curious to see what's on it."
+msgstr ""
+"Có điều... đoạn phim về bên ngoài học viện là thế nào? Thật \n"
+"đáng quan ngại..."
+
+#. よぉし！ じゃあ, ここは…！
+msgctxt "0077 | MONDO OOWADA"
+msgid "Same here! Okay, so...!"
+msgstr "Được rồi! Vậy thì...!"
+
+#. <CLT 4>大和田クンはぐるりと
+#. 食堂内を見回したかと思うと…
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo started glancing around the dining hall...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mondo đảo mắt nhìn quanh nhà ăn một lượt, rồi...\n"
+"<CLT>"
+
+#. <CLT 4>その視線は、ボクに向けられたところで止まった.
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...but when his gaze landed on me, he stopped.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...ánh mắt cậu ta dừng lại ngay chỗ tôi.\n"
+"<CLT>"
+
+#. おう, 苗木！ ちっと調べてみてくれや！
+msgctxt "0080 | MONDO OOWADA"
+msgid "Hey Makoto! Check this out for us, would ya?"
+msgstr "Này, Makoto! Cậu đi kiểm tra thử xem sao đi!"
+
+#. えっ？ なんでボクが…！？
+msgctxt "0081 | MAKOTO NAEGI"
+msgid "Huh? Why me!?"
+msgstr "Hả? Sao lại là tớ...!?"
+
+#. オメェが扉の近くに立ってるからだ.
+#. 決まりだろ？
+msgctxt "0082 | MONDO OOWADA"
+msgid ""
+"Cuz you're closest to the door! That's the rule,\n"
+"right?"
+msgstr ""
+"Vì mày đang đứng gần cửa nhất chứ sao. \n"
+"Quy tắc là thế, rõ chưa?"
+
+#. き, 決まりだって…
+msgctxt "0083 | MAKOTO NAEGI"
+msgid "R-Rule...?"
+msgstr "Q-Quy tắc sao...?"
+
+#. おいおい…
+msgctxt "0084 | MONDO OOWADA"
+msgid "Hey, hey..."
+msgstr "Này này..."
+
+#. おいおいおいおいおいおいおいおい…
+msgctxt "0085 | MONDO OOWADA"
+msgid "Hey hey hey hey hey!"
+msgstr "Này này này này này!"
+
+#. うぉぉぉい！！
+msgctxt "0086 | MONDO OOWADA"
+msgid "HEEEEEY!!!"
+msgstr "NÀY CÁI THẰNG KIA!!!"
+
+#. オレがこうやって頼んでんだ！
+#. ちっと調べるくらい簡単に出来るだろうがよぉ！！
+msgctxt "0087 | MONDO OOWADA"
+msgid ""
+"You see how passionately I'm begging you!? What's the\n"
+"big deal? Just check it out real quick!"
+msgstr ""
+"Tao đã hạ mình nhờ vả thế này rồi! Chỉ là đi kiểm tra một \n"
+"chút thôi mà, có gì khó khăn đâu hả!?"
+
+#. ………………
+msgctxt "0088 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. わ, わかったよ…じゃあ行ってくる…
+msgctxt "0089 | MAKOTO NAEGI"
+msgid "O-Okay...I guess I'll get going, then."
+msgstr "T-Tớ biết rồi... vậy tớ đi đây..."
+
+#. おぅ, すまねぇな！ 恩に着るぜ！
+msgctxt "0090 | MONDO OOWADA"
+msgid "Awesome, thanks! I owe ya one!"
+msgstr "Ờ, cảm ơn nhé! Tao nợ mày một lần đấy!"
+
+#. …だったら, 私も行きます.
+#. １人だと危険じゃないですか.
+msgctxt "0091 | SAYAKA MAIZONO"
+msgid ""
+"...If Makoto's going, I'm going with him. It's not\n"
+"safe to walk around this place alone."
+msgstr ""
+"...Nếu vậy thì tớ cũng đi nữa. Để cậu ấy đi một mình thì nguy \n"
+"hiểm lắm."
+
+#. そっか, わーったよ.
+#. じゃあ, ２人とも頼むぜ！
+msgctxt "0092 | MONDO OOWADA"
+msgid ""
+"Yeah, sure thing. Then we're countin' on the both of\n"
+"ya!"
+msgstr "Ờ, hiểu rồi. Vậy nhờ cả vào hai người đấy!"
+
+#. 何かあったら助けを呼べよ.
+#. ソッコーでオレが駆けつけてやっからよ！
+msgctxt "0093 | MONDO OOWADA"
+msgid "If anything happens, just yell and I'll come runnin'!"
+msgstr "Có chuyện gì thì cứ hét lên, tao sẽ phi tới cứu ngay lập tức!"
+
+#. よーし, みんな集まったな！
+#. では, さっそく朝食会を始めるとしようかッ！
+msgctxt "0094 | KIYOTAKA ISHIMARU"
+msgid ""
+"Okay, looks like everyone's here. So then, let's begin\n"
+"our very first \"breakfast meeting\"!"
+msgstr ""
+"Được rồi, mọi người đã đông đủ! Vậy chúng ta hãy bắt đầu \n"
+"buổi họp mặt ăn sáng ngay thôi nào!"
+
+#. 諸君, わざわざ集まってくれてありがとう！！
+msgctxt "0095 | KIYOTAKA ISHIMARU"
+msgid ""
+"Everyone, thank you for making time in your busy\n"
+"schedules to come together."
+msgstr ""
+"Các bạn, cảm ơn mọi người vì đã bớt chút thời gian tập \n"
+"trung tại đây!!"
+
+#. 断ったのに, オメーが無理矢理,
+#. 連れて来たんじゃん…
+msgctxt "0096 | LEON KUWATA"
+msgid "I didn't make time for shit. You dragged me here..."
+msgstr "Tui đã từ chối rồi mà cậu cứ ép tui đi bằng được đấy chứ..."
+
+#. さっきも話したと思うが…
+msgctxt "0097 | KIYOTAKA ISHIMARU"
+msgid "I know I already mentioned this earlier, but..."
+msgstr "Tớ biết là đã nói chuyện này lúc trước rồi, nhưng..."
+
+#. ここから脱出する為には,
+#. 僕らが一層互いに協力し合う事が必要不可欠だ！
+msgctxt "0098 | KIYOTAKA ISHIMARU"
+msgid ""
+"In order to get out of here, it is essential that we\n"
+"all cooperate with each other."
+msgstr ""
+"Để thoát khỏi đây, việc chúng ta hợp tác chặt chẽ với nhau là \n"
+"điều kiện tiên quyết!"
+
+#. その第一歩として, 仲間同士の信頼を築き上げる為の
+#. 朝食会を開催する事と相成った！
+msgctxt "0099 | KIYOTAKA ISHIMARU"
+msgid ""
+"And the first step is this breakfast meeting, to allow\n"
+"us to become friends and build trust!"
+msgstr ""
+"Và bước đi đầu tiên chính là buổi họp mặt ăn sáng này, \n"
+"nhằm xây dựng niềm tin giữa những người đồng đội!"
+
+#. これからは, 朝の起床を知らせる校内放送後,
+#. この食堂に集まるように, よろしく頼むぞ！！
+msgctxt "0100 | KIYOTAKA ISHIMARU"
+msgid ""
+"So from now on, let's all meet here in the dining hall\n"
+"every morning after the morning announcement!"
+msgstr ""
+"Từ nay về sau, sau khi có thông báo thức dậy buổi sáng, \n"
+"mong mọi người hãy tập trung tại nhà ăn này nhé!!"
+
+#. では、さっそく朝食を頂くとしようではないかッ！
+msgctxt "0101 | KIYOTAKA ISHIMARU"
+msgid "Now then, let's eat!"
+msgstr "Giờ thì, ăn thôi!"
+
+#. 他人と朝食を食べるの…？
+#. き, 緊張するわ…そんなの初めてよ…
+msgctxt "0102 | TOUKO FUKAWA"
+msgid ""
+"You w-want me to eat breakfast with other p-people?\n"
+"I've never done that b-before. I'm not s-sure..."
+msgstr ""
+"Ăn sáng cùng người khác sao...? T-Tôi lo lắng quá... đây là lần \n"
+"đầu tiên của tôi đấy..."
+
+#. 久しぶりですらねーんだ…
+msgctxt "0103 | LEON KUWATA"
+msgid "Yeah, it's been a while for me, too."
+msgstr "Ờ, với tui thì cũng lâu lắm rồi mới có dịp thế này."
+
+#. ねぇ, そんな事よりさ…
+#. あれから手掛かりを掴んだヤツはいないの？
+msgctxt "0104 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"Well anyway...did anyone happen to come up with any\n"
+"clues?"
+msgstr ""
+"Này, mấy chuyện đó để sau đi... Có ai tìm thêm được manh \n"
+"mối gì không?"
+
+#. <CLT 4>食堂に、シーンという擬音が響き渡った.
+#. <CLT>
+msgctxt "0105 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Silence echoed throughout the dining hall.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bầu không khí im lặng bao trùm khắp cả nhà ăn.\n"
+"<CLT>"
+
+#. マジで！？ なんも進展なしッ！？
+msgctxt "0106 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Seriously? Nothing at all!?"
+msgstr "Thật luôn!? Không có chút tiến triển nào sao!?"
+
+#. 犯人に関してでも, 逃げ道に関してでもいいから,
+#. 誰か, なんかないのッ！？
+msgctxt "0107 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"Anything, it can be about how to get out, or who's\n"
+"doing this, nobody has anything!?"
+msgstr ""
+"Dù là về hung thủ hay lối thoát cũng được, không ai có \n"
+"gì để nói à!?"
+
+#. …死にますわよ.
+msgctxt "0108 | CELES"
+msgid "...You are going to die."
+msgstr "...Cậu sẽ chết đấy."
+
+#. …は？
+msgctxt "0109 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Huh...?"
+msgstr "Hở...?"
+
+#. 他人の前で弱みを見せているようですと…
+msgctxt "0110 | CELES"
+msgid ""
+"If you can't stop yourself from showing weakness in\n"
+"front of others..."
+msgstr ""
+"Nếu cậu cứ để lộ sự yếu đuối của mình trước mặt người \n"
+"khác như vậy..."
+
+#. あなた死にますわよ…
+msgctxt "0111 | CELES"
+msgid "...you will die."
+msgstr "...cậu sẽ chết đấy."
+
+#. ア, アンタ何言ってんの！？
+#. 死ぬとか……ふざけないでっ！！
+msgctxt "0112 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Wh-What the hell? Don't even freaking joke about that!"
+msgstr ""
+"N-Này, cậu nói cái quái gì thế!? Chết chóc cái gì... đừng có \n"
+"đùa như vậy chứ!!"
+
+#. 言いましたわよね？
+#. 『適応力こそ生命力である』と…
+msgctxt "0113 | CELES"
+msgid ""
+"I am not joking. Adaptability is survivability. Did I\n"
+"not say so?"
+msgstr ""
+"Tôi không đùa đâu. “Khả năng thích nghi chính là bản năng \n"
+"sinh tồn”... Tôi đã nói rồi mà?"
+
+#. 早く, ここの生活に慣れるべきですわ.
+msgctxt "0114 | CELES"
+msgid ""
+"So you'd better hurry up and adapt to your new life\n"
+"here."
+msgstr "Cậu nên sớm làm quen với cuộc sống ở đây đi là vừa."
+
+#. アンタ…頭おかしいんじゃない？
+#. ここに慣れろとか…何言ってんの…？
+msgctxt "0115 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"Have you gone completely insane? Adapt to my new life\n"
+"here? Do you have any idea what you're saying?"
+msgstr ""
+"Cậu... bị điên rồi à? Thích nghi với cái nơi này á... Cậu đang \n"
+"nói cái gì vậy chứ...?"
+
+#. その女はここで暮らしたいらしいな？
+#. だったら好きにさせとけ.
+msgctxt "0116 | MONDO OOWADA"
+msgid ""
+"Yeah, sounds like the girl wants to live here. And\n"
+"hell, more power to her."
+msgstr ""
+"Hóa ra cô nàng này muốn sống ở đây à? Vậy thì cứ để mặc \n"
+"cô ta thích làm gì thì làm đi."
+
+#. だけどなぁ…
+msgctxt "0117 | MONDO OOWADA"
+msgid "But shit..."
+msgstr "Nhưng mẹ..."
+
+#. オレはゴメンだ！
+#. ぜってー出て行くぞ…！
+msgctxt "0118 | MONDO OOWADA"
+msgid ""
+"No way in hell am I living here! I'm gettin' outta\n"
+"here, I don't give a shit!"
+msgstr ""
+"Tao thì xin kiếu! Tao nhất định sẽ thoát khỏi cái nơi này cho \n"
+"xem...!"
+
+#. うふふ, ではお好きに.
+msgctxt "0119 | CELES"
+msgid "Hmhm. Sure, feel free."
+msgstr "Hmhm, vậy thì tùy cậu thôi."
+
+#. で…手掛かりは何もねーの？
+msgctxt "0120 | LEON KUWATA"
+msgid "Okay, so...nobody has any clues?"
+msgstr "Thế... rốt cuộc là vẫn chẳng có manh mối nào à?"
+
+#. 犯人なら決まってるよ。
+#. よっぽど異常で猟奇的なヤツなんだよ。
+msgctxt "0121 | AOI ASAHINA"
+msgid ""
+"One thing I can tell you is who's behind all this.\n"
+"Someone who's totally weird and messed up."
+msgstr ""
+"Một điều tui có thể khẳng định với mấy cậu là, đứa nào làm\n"
+"việc này đầu óc vừa biến thái vừa chập mạch."
+
+#. じゃなきゃ、私達をこんな所に
+#. 閉じ込めたりしないもん…
+msgctxt "0122 | AOI ASAHINA"
+msgid ""
+"Why else would we be trapped in here in the first\n"
+"place?"
+msgstr "Nếu không thì sao chúng ta lại bị nhốt ở đây chứ?"
+
+#. そんな感想的な事はどーでもいいから、
+#. 実際のところ、手掛かりは…
+msgctxt "0123 | LEON KUWATA"
+msgid ""
+"Well, sure, it could be something like that. But for\n"
+"right now, actual clues are..."
+msgstr ""
+"Ờ thì, có thể là đúng như thế. Nhưng mà bây giờ, manh mối\n"
+"có được là..."
+
+#. あ…あのぉ……
+msgctxt "0124 | CHIHIRO FUJISAKI"
+msgid "U-Umm..."
+msgstr "U-Umm..."
+
+#. …あんっ？　何？
+msgctxt "0125 | LEON KUWATA"
+msgid "Huh? What's up?"
+msgstr "Hả? Sao thế?"
+
+#. 異常で猟奇的な犯人って線から…
+#. 考えるとな…
+msgctxt "0126 | CHIHIRO FUJISAKI"
+msgid ""
+"If you think in terms of people who are really\n"
+"abnormal or bizarre..."
+msgstr ""
+"Nếu chúng ta xét theo hướng hung thủ là một kẻ biến thái \n"
+"và quái dị..."
+
+#. ひょっとして, 犯人って…
+#. <CLT 1>【例 của 殺人鬼】<CLT>だったりしないよね…？
+msgctxt "0127 | CHIHIRO FUJISAKI"
+msgid ""
+"Do you think maybe the person responsible for all this\n"
+"could be a <CLT 1>[certain murderous fiend]<CLT>...?"
+msgstr ""
+"Liệu có khi nào, hung thủ chính là... \n"
+"<CLT 1>[tên sát nhân nọ]<CLT> không...?"
+
+#. 不二咲くんに何か意見があるようだな！
+#. 確かめてみてはどうだろう！？
+msgctxt "0128 | KIYOTAKA ISHIMARU"
+msgid ""
+"Sounds like you've got one heck of a thought, Chihiro!\n"
+"Let's dig into it!"
+msgstr ""
+"Có vẻ Chihiro có ý kiến gì đó rồi! Sao chúng ta không thử tìm \n"
+"hiểu xem sao nhỉ!?"
+
+#. ………………
+msgctxt "0129 | BYAKUYA TOGAMI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>めんどくさそうに, ため息をつかれた…
+#. <CLT>
+msgctxt "0130 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He let out a heavy, annoyed sigh.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ta thở dài một cách đầy vẻ phiền phức...\n"
+"<CLT>"
+
+#. <CLT 4>なんだか無視されるより堪える…
+#. <CLT>
+msgctxt "0131 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'd rather be ignored completely than suffer that kind\n"
+"of insult.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cảm giác bị đối xử thế này còn tệ hơn cả khi \n"
+"bị lờ đi nữa...\n"
+"<CLT>"
+
+#. 例 của 殺人鬼…
+#. まさか…あれのことか？
+msgctxt "0132 | BYAKUYA TOGAMI"
+msgid ""
+"When you say a \"certain murderous fiend,\" you're\n"
+"talking about...him, aren't you?"
+msgstr "Tên sát nhân nọ... Chẳng lẽ ý cô là hắn sao?"
+
+#. おう, 苗木.
+msgctxt "0133 | MONDO OOWADA"
+msgid "Yo."
+msgstr "Chào."
+
+#. おはよう…
+msgctxt "0134 | MAKOTO NAEGI"
+msgid "Good morning..."
+msgstr "Chào buổi sáng"
+
+#. とっとと朝食会っての始めるぞ…
+#. 石丸の野郎が待ち構えてるしな…
+msgctxt "0135 | MONDO OOWADA"
+msgid ""
+"Let's just hurry up and get this over with. Taka's\n"
+"getting antsy."
+msgstr ""
+"Mau bắt đầu cái buổi ăn sáng này đi... Tên Taka kia đang \n"
+"chực chờ sẵn rồi kìa..."
+
+#. あの女, 何考えてやがんだ？
+#. こんなとoで暮らすなんて冗談じゃねーぜ…
+msgctxt "0136 | MONDO OOWADA"
+msgid ""
+"What's with that chick? Living in a place like this?\n"
+"Gimme a break..."
+msgstr ""
+"Nhỏ đó nghĩ cái quái gì vậy không biết? Thích nghi với cái \n"
+"cuộc sống ở nơi này á... Đừng có đùa chứ..."
+
+#. オメェもそうだろ、苗木…
+msgctxt "0137 | MONDO OOWADA"
+msgid "You know what I'm sayin'?"
+msgstr "Biết tao nói gì mà đúng không?"
+
+#. オレに話してどーすんだよッ！
+#. 仕切ってんのは風紀委員だっつーの…
+msgctxt "0138 | LEON KUWATA"
+msgid ""
+"What are you looking at me for? Mr. Goody Two Shoes is\n"
+"running the show for now."
+msgstr ""
+"Cậu nhìn tui thì được ích gì chứ! Người nắm quyền điều \n"
+"khiển hiện giờ là tên Ủy viên Kỷ luật kia kìa..."
+
+#. おいおーい…
+#. 殺人鬼って…どーゆー事？
+msgctxt "0139 | LEON KUWATA"
+msgid "What do you mean by \"murderous fiend\"?"
+msgstr "Cái \"tên sát nhân nọ\" tức là sao?"
+
+#. おはようございますですぞ…
+msgctxt "0140 | HIFUMI YAMADA"
+msgid "Good morning..."
+msgstr "Chào buổi sáng..."
+
+#. 山田クン…
+#. なんだが、テンション低いね？
+msgctxt "0141 | MAKOTO NAEGI"
+msgid "Hifumi...? You don't seem too energetic..."
+msgstr "Cậu Hifumi... Trông cậu có vẻ ủ rũ thế?"
+
+#. そりゃ、下がりますよ…
+#. あんな暑苦しい男に起こされるなんて…悪夢だ…
+msgctxt "0142 | HIFUMI YAMADA"
+msgid ""
+"How can I be? I got woke up by that annoying,\n"
+"obnoxious, nightmarish guy..."
+msgstr ""
+"Dĩ nhiên là phải ủ rũ rồi cậu Naegi... Bị cái gã đàn ông hừng \n"
+"hực khí thế đó đánh thức... đúng là một cơn ác mộng mà..."
+
+#. これだから３次元は…
+msgctxt "0143 | HIFUMI YAMADA"
+msgid "This is why I hate 3D so much."
+msgstr "Bởi thế nên tôi mới ghét thế giới 3D này đến vậy."
+
+#. さ、殺人鬼でございますですか？
+msgctxt "0144 | HIFUMI YAMADA"
+msgid "Do you know anything about this \"murderous fiend\"?"
+msgstr "S-Sát nhân hàng loạt mà các cậu vừa nói tới đó sao?"
+
+#. そそそ、そんな使い古されたネタなんて
+#. 今時ないないッ！　流行りませんぞッ！
+msgctxt "0145 | HIFUMI YAMADA"
+msgid ""
+"But I mean, s-s-seriously, isn't that like super\n"
+"played out? No way they're gonna show up here!"
+msgstr ""
+"M-M-Mấy cái tình tiết cũ rích đó thời nay chẳng còn ai dùng \n"
+"nữa đâu! Không bao giờ lỗi thời được đâu nhé!"
+
+#. おう、おはようーさん。
+msgctxt "0146 | YASUHIRO HAGAKURE"
+msgid "Mornin'."
+msgstr "Ồ, chào buổi sáng."
+
+#. しっかし、朝一番に石丸っちの声はきつかったな…
+#. 爽やかな空気と一番縁遠いべ…
+msgctxt "0147 | YASUHIRO HAGAKURE"
+msgid ""
+"Man, waking up to the sound of Taka's squawking\n"
+"is...not a fun way to start the day."
+msgstr ""
+"Cơ mà, sáng sớm ra đã phải nghe cái giọng của Taka thì \n"
+"đúng là cực hình..."
+
+#. な、なんか…
+#. 聞いてはいけない単語が聞こえたような気が…
+msgctxt "0148 | YASUHIRO HAGAKURE"
+msgid ""
+"Y'know, I think I just heard something I really didn't\n"
+"wanna hear..."
+msgstr ""
+"N-Này... tớ vừa nghe thấy từ gì đó mà đáng lẽ không nên \n"
+"nghe thì phải..."
+
+#. さ、さつ…じ…？
+msgctxt "0149 | YASUHIRO HAGAKURE"
+msgid "M-Murderous...?"
+msgstr "S-Sát... nhân...?"
+
+#. おはようございます、苗木君。
+msgctxt "0150 | SAYAKA MAIZONO"
+msgid "Good morning to you, Makoto."
+msgstr "Chào buổi sáng, Makoto."
+
+#. <CLT 4>さすがアイドルだよな…
+#. なんかもう、挨拶の爽やかさレベル?が違うよ…
+#. <CLT>
+msgctxt "0151 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She can make even a basic greeting feel eloquent\n"
+"somehow. That's the power of a celebrity, I guess.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đúng là thần tượng có khác... Ngay cả lời chào cũng \n"
+"toát ra một đẳng cấp tươi tắn hoàn toàn khác biệt.\n"
+"<CLT>"
+
+#. どうかしました？
+msgctxt "0152 | SAYAKA MAIZONO"
+msgid "Is everything okay?"
+msgstr "Tớ có chuyện gì sao?"
+
+#. う、ううん！
+#. おはよう、舞園さん。
+msgctxt "0153 | MAKOTO NAEGI"
+msgid "O-Oh, yeah! Good morning, Sayaka."
+msgstr "À, không có gì! Chào buổi sáng, Sayaka."
+
+#. 適応力こそ生命力…ですか…
+msgctxt "0154 | SAYAKA MAIZONO"
+msgid "Adaptability is survivability...?"
+msgstr "Thích nghi chính là bản năng sinh tồn... sao..."
+
+#. セレスさんは…どうして…
+#. あんな風に思えるんでしょうね…
+msgctxt "0155 | SAYAKA MAIZONO"
+msgid "How can she think like that...?"
+msgstr "Sao Celeste lại có thể nghĩ như vậy được nhỉ..."
+
+#. …石丸君がお待ちかねよ。
+#. 早く始めましょう…
+msgctxt "0156 | KYOUKO KIRIGIRI"
+msgid ""
+"Taka looks pretty impatient. We'd better get this\n"
+"started already..."
+msgstr "...Taka đang đợi kìa. Chúng ta bắt đầu nhanh thôi..."
+
+#. 殺人鬼…ね…
+msgctxt "0157 | KYOUKO KIRIGIRI"
+msgid "A murderous fiend, huh...?"
+msgstr "Sát nhân hàng loạt... sao..."
+
+#. 詳しい事、聞いてみた方がいいんじゃない？
+msgctxt "0158 | KYOUKO KIRIGIRI"
+msgid ""
+"I think it'd be very useful to get some more details\n"
+"about that."
+msgstr "Tớ nghĩ chúng ta nên hỏi kỹ hơn về chuyện đó."
+
+#. おっはよー、苗木！
+msgctxt "0159 | AOI ASAHINA"
+msgid "Good-mor-ning-Ma-ko-to!"
+msgstr "Chào buổi sáng nha, Makoto!"
+
+#. おはよう…
+msgctxt "0160 | MAKOTO NAEGI"
+msgid "Morning..."
+msgstr "Chào cậu..."
+
+#. あっさごっはんー, あっさごはんー！
+#. 朝はちゃんと食べないとね！
+msgctxt "0161 | AOI ASAHINA"
+msgid ""
+"Breakfast time! Breakfast time! Gotta eat a big\n"
+"breakfast at breakfast time!"
+msgstr ""
+"Ăn sáng thôi, ăn sáng thôi! Sáng ra là phải ăn đầy đủ mới \n"
+"được!"
+
+#. え, えぇぇぇぇ！？ 殺人鬼？
+msgctxt "0162 | AOI ASAHINA"
+msgid "Whaaaaaaaaaaat!? A murderous fiend!?"
+msgstr "C-Cái gìiiii!? Sát nhân hàng loạt á?"
+
+#. 不二咲ちゃんに詳しい事, 聞いてみようよ！
+msgctxt "0163 | AOI ASAHINA"
+msgid "We should ask Chihiro more about it!"
+msgstr "Phải hỏi Chihiro cho rõ mới được!"
+
+#. あ, あたしに話しかけて…
+#. どうするのよ…
+msgctxt "0164 | TOUKO FUKAWA"
+msgid "What's the point of t-talking to me...?"
+msgstr "C-Cậu bắt chuyện với tôi... để làm gì chứ..."
+
+#. 石丸が呼んだんだから…
+#. あいつに話しかければいいじゃない…
+msgctxt "0165 | TOUKO FUKAWA"
+msgid ""
+"Taka's the o-one who got everyone t-together. Go talk\n"
+"to him if you have qu-questions or whatever..."
+msgstr ""
+"Taka là người đã g-gọi mọi người tập trung mà... Có chuyện \n"
+"gì thì đi mà hỏi cậu ta ấy..."
+
+#. ………………
+msgctxt "0166 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. 腐川さん？
+msgctxt "0167 | MAKOTO NAEGI"
+msgid "Toko...?"
+msgstr "Toko...?"
+
+#. う, うるさいわね…！
+#. 不二咲に聞えばいいでしょ, 殺人鬼の事なんて…
+msgctxt "0168 | TOUKO FUKAWA"
+msgid ""
+"Sh-Shut up! If you wanna kn-know about that murderous\n"
+"f-fiend or whatever, t-talk to Chihiro!"
+msgstr ""
+"Ồ-Ồn ào quá đấy! Muốn biết về tên sát nhân đó thì cứ đi mà \n"
+"hỏi Chihiro đi...!"
+
+#. おはよう…
+msgctxt "0169 | SAKURA OOGAMI"
+msgid "Good morning."
+msgstr "Chào buổi sáng."
+
+#. お, おはよう…
+msgctxt "0170 | MAKOTO NAEGI"
+msgid "G-Good morning..."
+msgstr "C-Chào buổi sáng..."
+
+#. こうして, みなそろって朝食会とはな…
+#. 石丸らしい発案だが…
+msgctxt "0171 | SAKURA OOGAMI"
+msgid ""
+"To bring everyone together for a breakfast meeting is\n"
+"a very...Taka-esque suggestion."
+msgstr ""
+"Tập hợp mọi người lại để cùng ăn sáng thế này... Đúng là \n"
+"một ý tưởng đậm chất Taka."
+
+#. 連続殺人鬼…
+#. このところ世間を騒がせているニュースだな…
+msgctxt "0172 | SAKURA OOGAMI"
+msgid ""
+"News of a brutal serial killer has been terrorizing\n"
+"the world for some time now."
+msgstr ""
+"Tên sát nhân hàng loạt đó... Đúng là tin tức đang gây xôn \n"
+"xao dư luận dạo gần đây."
+
+#. 詳しい事は, 我は知らぬが…
+msgctxt "0173 | SAKURA OOGAMI"
+msgid "I don't really know the details, though."
+msgstr "Có điều, tôi cũng không biết rõ chi tiết cho lắm."
+
+#. 朝食会, ですか…
+msgctxt "0174 | CELES"
+msgid "A breakfast meeting, eh?"
+msgstr "Tiệc sáng sao?"
+
+#. みなさんとの円滑な生活には
+#. 悪くない催し物かもしれませんね.
+msgctxt "0175 | CELES"
+msgid ""
+"Perhaps it will keep me entertained and make life with\n"
+"everyone here a bit more bearable."
+msgstr ""
+"Để duy trì một cuộc sống êm đềm với mọi người thì đây có \n"
+"lẽ cũng không phải là một ý tưởng tồi."
+
+#. 嫌ですわね…
+#. 食事中には相応しくない話題です…
+msgctxt "0176 | CELES"
+msgid ""
+"I hate this... This topic is absolutely NOT\n"
+"appropriate during mealtime!"
+msgstr ""
+"Thật là khó chịu... Đây hoàn toàn không phải chủ đề thích \n"
+"hợp để bàn trong bữa ăn đâu."
+
+#. はいはい, あたしと話してるヒマあったら
+#. とっとと朝食会始めるわよ！
+msgctxt "0177 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"Okay, okay, if I absolutely MUST talk to you, let's\n"
+"just hurry up and start the stupid meeting!"
+msgstr ""
+"Được rồi được rồi, nếu rảnh rỗi đến mức đứng đây bắt \n"
+"chuyện với tớ thì mau vào việc chính đi!"
+
+#. 石丸が待ち構えてんだしさァ…
+msgctxt "0178 | JUNKO ENOSHIMA (MUKURO)"
+msgid "Taka's gonna throw a fit if we don't."
+msgstr "Taka đang trực sẵn ở đằng kia kìa..."
+
+#. ちょっと！
+#. 殺人鬼って…冗談になってないんだけど！
+msgctxt "0179 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"Come on! A \"murderous fiend\"? Don't even joke about\n"
+"something like that!"
+msgstr ""
+"Này! Đừng có đùa về chuyện sát nhân hàng loạt nữa, chẳng \n"
+"vui chút nào đâu!"
+
+#. そんな話より,
+#. どーやって脱出するか考えようって！
+msgctxt "0180 | JUNKO ENOSHIMA (MUKURO)"
+msgid ""
+"And anyway, we need to figure out how to get the hell\n"
+"out of here!"
+msgstr "Thay vì thế, hãy lo mà nghĩ cách trốn thoát khỏi đây đi!"
+
+#. おはようございますぅ…
+msgctxt "0181 | CHIHIRO FUJISAKI"
+msgid "Good morning..."
+msgstr "Chào buổi sáng mọi người..."
+
+#. おはよう, 不二咲さん.
+msgctxt "0182 | MAKOTO NAEGI"
+msgid "Good morning, Chihiro."
+msgstr "Chào cậu, Chihiro."
+
+#. みんなでご飯って, いいねぇ…
+#. やっぱり大勢で食べる方が楽しいよね.
+msgctxt "0183 | CHIHIRO FUJISAKI"
+msgid ""
+"It's nice to get to eat with everyone... With so many\n"
+"people, it's actually kind of fun."
+msgstr ""
+"Mọi người cùng dùng bữa thế này thích thật đấy... Đúng là \n"
+"ăn đông người thì lúc nào cũng vui hơn."
+
+#. あ…あのぉ……
+msgctxt "0184 | CHIHIRO FUJISAKI"
+msgid "U-Umm..."
+msgstr "À... tớ..."
+
+#. 異常で猟奇的な犯人って線から
+#. 考えるとな…
+msgctxt "0185 | CHIHIRO FUJISAKI"
+msgid ""
+"If you think in terms of people who are really\n"
+"abnormal or bizarre..."
+msgstr "Nếu xét theo hướng hung thủ là một kẻ biến thái và quái dị..."
+
+#. ひょっとして, 犯人って…
+#. <CLT 1>【例 của 殺人鬼】<CLT>だったりしないよね…？
+msgctxt "0186 | CHIHIRO FUJISAKI"
+msgid ""
+"Do you think maybe the person responsible for all this\n"
+"could be a <CLT 1>[certain murderous fiend]<CLT>...?"
+msgstr ""
+"Liệu có khi nào, hung thủ chính là... \n"
+"<CLT 1>[tên sát nhân nọ]<CLT> không...?"
+
+#. <CLT 4>なんだよ、このモニター…！
+#. どこの会社が作ってるんだよ！
+#. <CLT>
+msgctxt "0187 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What kind of monitor is this!? Who would even make\n"
+"this kind of thing!?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái màn hình kiểu gì thế này!? Rốt cuộc là công ty \n"
+"nào sản xuất ra thứ này cơ chứ!?\n"
+"<CLT>"
+
+#. …モノクマ社って書いてある.
+#. ディティールにこだわってんな…
+msgctxt "0188 | MAKOTO NAEGI"
+msgid ""
+"It has \"Monokuma Co.\" written across it. I guess\n"
+"they've covered all the details..."
+msgstr ""
+"Trên đó có ghi \"Tập đoàn Monokuma\". Đúng là chăm chút \n"
+"tới từng chi tiết mà..."
+
+#. <CLT 4>いつでもどこでも…
+#. このカメラでボクらを監視しているんだな…
+#. <CLT>
+msgctxt "0189 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anywhere we go, day or night... This thing is watching\n"
+"us.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù là ở đâu hay bất cứ khi nào... lũ camera này vẫn \n"
+"luôn giám sát chúng tôi.\n"
+"<CLT>"
+
+#. <CLT 4>時間さえも正しいのかわからない.
+#. もう何を信じていいのやら…
+#. <CLT>
+msgctxt "0190 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't even be sure if that clock is right. I don't\n"
+"know what to believe anymore...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi thậm chí chẳng rõ liệu cái đồng hồ kia có chạy đúng \n"
+"không. Chẳng biết phải tin vào điều gì nữa...\n"
+"<CLT>"
+
+#. <CLT 4>いま出ていっても意味がない…
+#. 目の前の相手に話しかけよう.
+#. <CLT>
+msgctxt "0191 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no reason to leave right now. I should talk to\n"
+"everyone that's here.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bây giờ có rời đi cũng chẳng ích gì... Mình nên bắt \n"
+"chuyện với những người ở đây thì hơn.\n"
+"<CLT>"
+
+#. <CLT 4>いま出ていっても意味がない…
+#. 目の前の相手に話しかけよう.
+#. <CLT>
+msgctxt "0192 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no reason to leave right now. I should talk to\n"
+"everyone that's here.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bây giờ có rời đi cũng chẳng ích gì... Mình nên bắt \n"
+"chuyện với những người ở đây thì hơn.\n"
+"<CLT>"

@@ -1,0 +1,706 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 苗木くん！
+#. どうだ、これから一緒に自習しないか！？
+msgctxt "0001 | KIYOTAKA ISHIMARU"
+msgid ""
+"Would you like to study with me, Makoto? Just the two\n"
+"of us?"
+msgstr ""
+"Makoto này! Cậu thấy sao, từ giờ chúng mình cùng \n"
+"nhau tự học nhé!? Chỉ hai đứa mình thôi?"
+
+#. 僕の部屋に来たまえ！
+#. わからない事があれば、手取り足取り教えるぞ！！
+msgctxt "0002 | KIYOTAKA ISHIMARU"
+msgid ""
+"Come to my room! If there's anything you don't\n"
+"understand, I'm a very attentive teacher!"
+msgstr ""
+"Đến phòng tớ đi! Nếu có chỗ nào cậu không hiểu, \n"
+"tớ sẽ tận tình chỉ bảo từng chút một cho!!"
+
+#. いや…手取り足取りまではいらないけど…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"Um...I don't think I need you to be all that\n"
+"attentive."
+msgstr ""
+"Ừm... tớ nghĩ là không cần phải \"tận tình\" \n"
+"đến mức đó đâu..."
+
+#. じゃあ、一緒させてもらおうかな？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "But sure, you don't mind if I stop by?"
+msgstr ""
+"Nhưng mà chắc rồi, cậu không phiền nếu \n"
+"tớ ghé qua chứ?"
+
+#. 無論だ！　では行こう！！
+msgctxt "0005 | KIYOTAKA ISHIMARU"
+msgid "Of course not! Okay, let's do it!"
+msgstr "Tất nhiên là không rồi! Được thôi, đi nào!!"
+
+#. <CLT 4>石丸クンに連れられて、
+#. ボクは彼の部屋へと向かった。
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>With Taka leading the way, we headed to his room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Được Taka dẫn đường, tớ đã đi về phía phòng \n"
+"của cậu ấy.\n"
+"<CLT>"
+
+#. やぁ、いらっしゃい！　苗木くん！！
+#. この部屋に招き入れた客人は君が初めてだ！
+msgctxt "0007 | KIYOTAKA ISHIMARU"
+msgid ""
+"Welcome, Makoto! You're the first guest I've invited\n"
+"to my room!"
+msgstr ""
+"Chào mừng cậu, Makoto! Cậu là vị khách đầu tiên mà \n"
+"tớ mời đến phòng mình đấy!"
+
+#. では、さっそくだが、
+#. 苗木くんに問題を出してあげよう！
+msgctxt "0008 | KIYOTAKA ISHIMARU"
+msgid "Now that we're here, let me pose to you a question."
+msgstr ""
+"Giờ chúng ta đã ở đây rồi, để tớ đặt cho cậu một \n"
+"câu hỏi nhé."
+
+#. も、問題…？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "A question...?"
+msgstr "M-Một câu hỏi sao...?"
+
+#. 構えなくても大丈夫！
+#. 簡単な問題。基礎中の基礎の問題だ！
+msgctxt "0010 | KIYOTAKA ISHIMARU"
+msgid ""
+"Don't worry, no studying required! This is the most\n"
+"basic of basic questions. Very straightforward!"
+msgstr ""
+"Đừng lo, không cần phải học trước đâu! Đây là một \n"
+"câu hỏi cực kỳ cơ bản. Rất thẳng thắn thôi!"
+
+#. ハッハッハ！　解けて当然の問題だよ！
+#. 遊びだ遊び！
+msgctxt "0011 | KIYOTAKA ISHIMARU"
+msgid ""
+"Hahaha! This should be no challenge for you! Very\n"
+"easy, I assure you!"
+msgstr ""
+"Ha ha ha! Câu hỏi này chắc chắn không làm khó \n"
+"được cậu đâu! Dễ lắm, tớ đảm bảo đấy!"
+
+#. <CLT 4>そこまで言われると、
+#. 逆にプレッシャーが…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Stop saying how easy it's gonna be. That just puts\n"
+"even more pressure on me...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy cứ nói nó dễ làm mình lại thấy áp lực hơn...\n"
+"<CLT>"
+
+#. …では問題だ。数字の０を数の概念として、
+#. 初めて確立させた国はどこだと思う？
+msgctxt "0013 | KIYOTAKA ISHIMARU"
+msgid ""
+"Okay, here we go. What country first established\n"
+"\"zero\" as a numerical concept?"
+msgstr ""
+"...Vậy câu hỏi là: Quốc gia nào đã thiết lập số \"0\" \n"
+"như một khái niệm toán học đầu tiên?"
+
+#. インド
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "India"
+msgstr "Ấn Độ"
+
+#. 日本
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "Japan"
+msgstr "Nhật Bản"
+
+#. 日本…かな？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "Is it...Japan?"
+msgstr "Có phải là... Nhật Bản không?"
+
+#. 違うッ！
+msgctxt "0017 | KIYOTAKA ISHIMARU"
+msgid "Wrong!"
+msgstr "Sai rồi!"
+
+#. ご、ごめんッ！
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "S-Sorry!"
+msgstr "T-Tớ xin lỗi!"
+
+#. いや、謝る事はないが。
+msgctxt "0019 | KIYOTAKA ISHIMARU"
+msgid "No, you don't have to apologize."
+msgstr "Không, cậu không cần phải xin lỗi đâu."
+
+#. <CLT 4>つい…反射的に謝っちゃったよ…
+#. それだけ迫力があったから…
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The way he reacted, I couldn't really help myself...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cách cậu ấy phản ứng làm tớ cứ theo phản xạ \n"
+"mà xin lỗi thôi... Tại cậu ấy trông gay gắt quá mà...\n"
+"<CLT>"
+
+#. しかし、同じアジア圏の国家ではある。
+#. もう一度考えてみたまえ。
+msgctxt "0021 | KIYOTAKA ISHIMARU"
+msgid ""
+"But anyway, you're on the right track. It was an\n"
+"Asian nation, I can tell you that much."
+msgstr ""
+"Nhưng dù sao thì cậu cũng đang đi đúng \n"
+"hướng rồi đấy. Đó là một quốc gia châu Á."
+
+#. ギリシャ
+msgctxt "0022 | CHOICE/RE:ACT"
+msgid "Greece"
+msgstr "Hy Lạp"
+
+#. ギリシャ…とか？
+#. 哲学とかで有名だし、それっぽいかなって…
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"Could it be...Greece? I know they were famous for\n"
+"philosophy, so..."
+msgstr ""
+"Có thể là... Hy Lạp không? Tớ biết họ nổi tiếng về \n"
+"triết học, nên..."
+
+#. 苗木くん…！
+#. そんな推測で答えるとは何事だッ！
+msgctxt "0024 | KIYOTAKA ISHIMARU"
+msgid ""
+"Come on, Makoto! Don't try to guess your way through\n"
+"this!"
+msgstr ""
+"Nào Makoto! Đừng có trả lời theo kiểu đoán mò như \n"
+"thế chứ!"
+
+#. ご、ごめん…
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "S-Sorry..."
+msgstr "T-Tớ xin lỗi..."
+
+#. 恐らく学校の授業で習っているはずだ。
+#. よく思い出して見たまえ！
+msgctxt "0026 | KIYOTAKA ISHIMARU"
+msgid ""
+"I'm sure you must have learned this at some point in\n"
+"your education. Try to think back!"
+msgstr ""
+"Tớ chắc chắn là cậu đã được học điều này ở trường. \n"
+"Thử nhớ lại xem nào!"
+
+#. むう…
+#. それほど難しい問題ではないぞ？
+msgctxt "0027 | KIYOTAKA ISHIMARU"
+msgid "Come, now. It can't be that hard, can it?"
+msgstr "Nào, nó đâu có khó đến thế phải không?"
+
+#. 恐らく学校の授業で習っているはずだ。
+#. よく思い出してみたまえ。
+msgctxt "0028 | KIYOTAKA ISHIMARU"
+msgid ""
+"I'm sure you must have learned this at some point in\n"
+"your education. Try to think back!"
+msgstr ""
+"Tớ chắc chắn là cậu đã được học điều này ở trường. \n"
+"Thử nhớ lại xem nào!"
+
+#. <CLT 4>え、えーっと…数字の０を確立させた国って…
+#. 確か、アジアの国って聞いた気が…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Zero as a number, right? I'm pretty sure that\n"
+"came from an Asian country...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hừm... Số 0 là một con số, đúng không? \n"
+"Mình khá chắc là nó đến từ một quốc gia châu Á...<CLT>"
+
+#. インド…じゃなかったっけ？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "It was...India, wasn't it?"
+msgstr "Là... Ấn Độ, đúng không?"
+
+#. 正解だ！　やるではないか苗木くん！
+#. さすが僕が見込んだ男だな！
+msgctxt "0031 | KIYOTAKA ISHIMARU"
+msgid ""
+"Correct! Good job, Makoto! I had faith in you,\n"
+"and you came through for me!"
+msgstr ""
+"Chính xác! Làm tốt lắm Makoto! Tớ đã tin tưởng \n"
+"vào cậu, và cậu đã không làm tớ thất vọng!"
+
+#. よーし、僕もやる気が出て来たぞ！
+msgctxt "0032 | KIYOTAKA ISHIMARU"
+msgid "Seeing you get excited is getting *me* excited!"
+msgstr ""
+"Nhìn thấy cậu hào hứng làm tớ cũng thấy hào \n"
+"hứng lây rồi đây này!"
+
+#. これからも一緒に努力を重ねて、
+#. 怠惰な天才どもに目に物を見せてやろうではないか！
+msgctxt "0033 | KIYOTAKA ISHIMARU"
+msgid ""
+"Let's stack our effort one on top of the other and\n"
+"show those self-centered genius jerks what for!"
+msgstr ""
+"Chúng ta hãy cùng nhau nỗ lực nhiều hơn nữa \n"
+"để cho lũ thiên tài tự phụ kia biết tay!!"
+
+#. あ、あのさ…石丸クン…
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "Hey, um...Taka?"
+msgstr "À, này... Taka?"
+
+#. …ん？　どうした？
+msgctxt "0035 | KIYOTAKA ISHIMARU"
+msgid "Yeah?"
+msgstr "...Hửm? Có chuyện gì thế?"
+
+#. 石丸クンって、
+#. なんか…天才って言葉をやけに嫌うよね…？
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"Well, I've just noticed...you seem to really hate the\n"
+"idea of geniuses."
+msgstr ""
+"Tớ vừa nhận ra là... cậu có vẻ thực sự ghét khái \n"
+"niệm \"thiên tài\"."
+
+#. …目の敵にしているように感じるか？
+msgctxt "0037 | KIYOTAKA ISHIMARU"
+msgid ""
+"Hmm...I guess I feel like they're just...my sworn\n"
+"enemy, you know?"
+msgstr ""
+"...Cậu cảm thấy tớ coi họ như kẻ thù không đội \n"
+"trời chung sao?"
+
+#. え…？
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr "Hả...?"
+
+#. だが、その通りだ。なかなか鋭いな。
+msgctxt "0039 | KIYOTAKA ISHIMARU"
+msgid "But you hit the nail on the head. You're pretty sharp!"
+msgstr "Nhưng cậu nói đúng đấy. Cậu nhạy bén thật!"
+
+#. でも…どうして…？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "But...why?"
+msgstr "Nhưng... tại sao chứ?"
+
+#. 僕が乗り越えなければならない人物…
+#. 誰よりも尊敬し、誰よりも憎む人物が…
+msgctxt "0041 | KIYOTAKA ISHIMARU"
+msgid ""
+"There's someone... Someone I respect, someone I hate.\n"
+"Someone I have to surpass..."
+msgstr ""
+"Có một người... Một người mà tớ vừa kính trọng, \n"
+"vừa căm ghét. Người mà tớ nhất định phải vượt qua..."
+
+#. …その天才とやらだからだ。
+msgctxt "0042 | KIYOTAKA ISHIMARU"
+msgid "Because he was a genius."
+msgstr "...Bởi vì ông ta là một thiên tài."
+
+#. …え？
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "What...?"
+msgstr "...Cái gì?"
+
+#. <CLT 3>石丸寅之助<CLT>…
+#. 僕の祖父の名前だ。聞いた事はないか？
+msgctxt "0044 | KIYOTAKA ISHIMARU"
+msgid ""
+"<CLT 3>Toranosuke Ishimaru<CLT>. Do you recognize that name?\n"
+"...He was my grandfather."
+msgstr ""
+"<CLT 3>Toranosuke Ishimaru<CLT>... Cậu có \n"
+"nhận ra cái tên đó không? ...Đó là tên ông nội tớ."
+
+#. かつての…日本国総理大臣だよ。
+msgctxt "0045 | KIYOTAKA ISHIMARU"
+msgid "He was once...Prime Minister of Japan."
+msgstr "Ông ấy từng là... Thủ tướng Nhật Bản đấy."
+
+#. …そ、総理大臣！？
+msgctxt "0046 | MAKOTO NAEGI"
+msgid "He was your grandpa!?"
+msgstr "...Ông nội cậu từng là Thủ tướng sao!?"
+
+#. 外務大臣、内閣官房長官を歴任し、
+#. そして内閣総理大臣までのぼりつめた男…
+msgctxt "0047 | KIYOTAKA ISHIMARU"
+msgid ""
+"He went from Minister of Foreign Affairs to Chief\n"
+"Cabinet Secretary, and finally...Prime Minister."
+msgstr ""
+"Ông đã đi từ Bộ trưởng Bộ Ngoại giao đến Chánh \n"
+"Văn phòng Nội các, và cuối cùng là... Thủ tướng."
+
+#. それも、なんの後ろ盾もなく、
+#. 高卒の学歴しか持たないにも関わらずな。
+msgctxt "0048 | KIYOTAKA ISHIMARU"
+msgid ""
+"And all without any support network, and only a high\n"
+"school degree...!"
+msgstr ""
+"Và những điều đó đều không có bất kỳ mạng lưới hỗ trợ \n"
+"nào, ông ấy chỉ có bằng tốt nghiệp phổ thông thôi đấy!"
+
+#. まさに<CLT 3>天才<CLT>…
+#. 努力せずとも何事もこなしてしまう人物だったらしい。
+msgctxt "0049 | KIYOTAKA ISHIMARU"
+msgid ""
+"He was, simply, a <CLT 3>genius<CLT>. Everything he did, he did\n"
+"without any effort."
+msgstr ""
+"Ông ấy thực sự là một <CLT 3>thiên tài<CLT>... Mọi \n"
+"việc ông ấy làm đều thành công mà chẳng cần tốn \n"
+"chút nỗ lực nào."
+
+#. そんなすごい人が…石丸クンのおじいさん？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"He sounds like an amazing person. And he was your\n"
+"grandfather?"
+msgstr ""
+"Nghe có vẻ là một người tuyệt vời. Và ông ấy là \n"
+"ông nội của cậu sao?"
+
+#. 天才ゆえに挫折知らず。
+#. 凡人にはあり得ないスピードで出世していったらしい。
+msgctxt "0051 | KIYOTAKA ISHIMARU"
+msgid ""
+"He was a genius. He'd never known failure. His success\n"
+"was unimaginable to a normal person."
+msgstr ""
+"Vì là thiên tài nên ông ấy chưa từng biết đến thất bại. \n"
+"Thành công của ông ấy là quá lớn tưởng tượng."
+
+#. だが、それゆえの反動もあった。
+msgctxt "0052 | KIYOTAKA ISHIMARU"
+msgid "But because of that..."
+msgstr ""
+"Nhưng cũng chính vì thế mà mọi \n"
+"chuyện đã đảo lộn..."
+
+#. 甘い気持ちに動かされ、
+#. 彼は汚職事件を起こしてしまったのだ。
+msgctxt "0053 | KIYOTAKA ISHIMARU"
+msgid ""
+"...he allowed himself to be controlled by naive\n"
+"emotions, and got roped into a corruption scandal."
+msgstr ""
+"...Ông ấy đã bị kiểm soát bởi những cảm xúc ngây \n"
+"thơ, và bị lôi kéo vào một vụ bê bối tham nhũng."
+
+#. 天才ゆえに世の中を舐めていたのだろう。
+#. 少なくとも、僕はそう判断する。
+msgctxt "0054 | KIYOTAKA ISHIMARU"
+msgid ""
+"He had no idea what the world of geniuses was really\n"
+"like. At least, that's how I see it."
+msgstr ""
+"Vì là thiên tài nên ông ấy đã coi thường thế giới này. \n"
+"Ít nhất thì đó là cách tớ nhìn nhận về chuyện đó."
+
+#. それ以降の彼は、
+#. 出世したのと同じスピードで転がり落ちていった…
+msgctxt "0055 | KIYOTAKA ISHIMARU"
+msgid "At that point, he fell just as fast as he had risen."
+msgstr ""
+"Kể từ thời điểm đó, ông ấy sụp đổ cũng nhanh \n"
+"như lúc ông ấy đi lên vậy."
+
+#. 政治の世界から追われただけではなく、
+#. 事業の失敗も相まって、一気に落ちぶれていったよ。
+msgctxt "0056 | KIYOTAKA ISHIMARU"
+msgid ""
+"And it wasn't just in politics. The business world\n"
+"had no use for him anymore, and he plummeted."
+msgstr ""
+"Và không chỉ trong chính trị. Giới kinh doanh cũng \n"
+"chẳng còn chỗ cho ông nữa, ông ấy đã sa sút thảm hại."
+
+#. そんな祖父の残した借金は今も残って、
+#. ボクら家族を苦しめ続けている。
+msgctxt "0057 | KIYOTAKA ISHIMARU"
+msgid ""
+"The debt he left behind torments my family to this\n"
+"day."
+msgstr ""
+"Khoản nợ mà ông ấy để lại vẫn còn dằn vặt gia \n"
+"đình tớ cho đến tận ngày hôm nay."
+
+#. その祖父も数年前に死んだ…
+#. 晩年の彼は誰とも口をきく事はなかった。
+msgctxt "0058 | KIYOTAKA ISHIMARU"
+msgid ""
+"He died a few years ago. By the end, he wasn't\n"
+"speaking to anyone."
+msgstr ""
+"Ông ấy đã mất vài năm trước rồi... Đến cuối \n"
+"đời, ông ấy chẳng buồn nói chuyện với ai cả."
+
+#. あれだけ持てはやされていた祖父なのに、
+#. 葬式に出席したのは身内がほとんどだった。
+msgctxt "0059 | KIYOTAKA ISHIMARU"
+msgid ""
+"Despite his fame, his legacy...the only people who\n"
+"came to his funeral were family members."
+msgstr ""
+"Mặc dù ông ấy từng nổi tiếng và có một di sản đồ sộ \n"
+"như vậy... nhưng những người đến dự đám tang hầu \n"
+"như chỉ có người thân trong gia đình thôi."
+
+#. そう…だったんだ…
+msgctxt "0060 | MAKOTO NAEGI"
+msgid "That's hard to imagine..."
+msgstr "Chuyện đó... thật khó tưởng tượng quá..."
+
+#. 天才…それは運命に与えられた財産だ。
+#. だが、それは悲劇であるとも思うのだ。
+msgctxt "0061 | KIYOTAKA ISHIMARU"
+msgid ""
+"Some consider genius fate's blessing. But I see it as\n"
+"a tragedy more than anything."
+msgstr ""
+"Có người coi thiên tài là sự ban phước của định \n"
+"mệnh. Nhưng tớ thấy đó là một bi kịch thì đúng hơn."
+
+#. 大切な努力を知らずして、
+#. 進む事が出来てしまう悲劇…
+msgctxt "0062 | KIYOTAKA ISHIMARU"
+msgid ""
+"The tragedy of finding success without understanding\n"
+"the importance of effort."
+msgstr ""
+"Bi kịch của việc đạt được thành công mà không \n"
+"hiểu được tầm quan trọng của sự nỗ lực."
+
+#. それゆえに、一度つまずいてしまえば、
+#. 天才ほど弱い者はない…
+msgctxt "0063 | KIYOTAKA ISHIMARU"
+msgid ""
+"There's nothing worse than a genius who trips and\n"
+"falls."
+msgstr ""
+"Chính vì thế, một khi đã vấp ngã, không ai \n"
+"yếu đuối hơn một thiên tài..."
+
+#. …祖父のようにな。
+msgctxt "0064 | KIYOTAKA ISHIMARU"
+msgid "Just like my grandfather..."
+msgstr "...Cũng giống như ông nội tớ vậy."
+
+#. それが理由…？
+#. 石丸クンが“天才”を嫌う…
+msgctxt "0065 | MAKOTO NAEGI"
+msgid "And that's why you hate the word \"genius\"?"
+msgstr "Và đó là lý do cậu ghét từ \"thiên tài\" sao?"
+
+#. 祖父の件は、いい教訓だ。
+#. 天才などという言葉に惑わされてはならないのだ。
+msgctxt "0066 | KIYOTAKA ISHIMARU"
+msgid ""
+"My grandfather serves as an important lesson why you\n"
+"must never be deceived by words like \"genius.\""
+msgstr ""
+"Ông nội tớ là một bài học đắt giá rằng cậu đừng \n"
+"bao giờ để bị lừa dối bởi những từ ngữ như \"thiên tài\"."
+
+#. 僕は<CLT 3>“努力”<CLT>という確実な力を身に付け、
+#. 祖父以上の事を成し遂げてみせる！
+msgctxt "0067 | KIYOTAKA ISHIMARU"
+msgid ""
+"Relying on my own <CLT 3>effort<CLT>, I will reach greater\n"
+"accomplishments than anything my grandfather ever did!"
+msgstr ""
+"Bằng chính <CLT 3>nỗ lực<CLT> của mình, tớ sẽ đạt \n"
+"được sự vĩ đại hơn bất cứ điều gì ông nội tớ từng làm!"
+
+#. だから、苗木くん！　共に頑張ろうではないか！
+#. 努力した者こそが報われる社会を作り上げる為にな！
+msgctxt "0068 | KIYOTAKA ISHIMARU"
+msgid ""
+"So we have to work hard to build a society where those\n"
+"who put in the most effort are properly rewarded!"
+msgstr ""
+"Vì vậy, Makoto này! Hãy cùng nhau cố gắng nhé! Để xây \n"
+"dựng một xã hội nơi mà những người nỗ lực nhất \n"
+"sẽ được đền đáp xứng đáng!"
+
+#. そ、そうだね…
+msgctxt "0069 | MAKOTO NAEGI"
+msgid "I-I see..."
+msgstr "T-Tớ hiểu rồi..."
+
+#. <CLT 4>と言っても、ボクは石丸クンと違って、
+#. そんな大それた事が出来る訳じゃないけど…
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can agree with him, but Taka and I aren't the same.\n"
+"I can't reach for those kinds of big dreams...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đồng ý với cậu ấy, nhưng tôi và Taka không \n"
+"giống nhau. Giấc mơ đó quá lớn với tôi\n"
+"<CLT>"
+
+#. しかし、苗木くん。
+#. 僕は本当に嬉しいぞ。
+msgctxt "0071 | KIYOTAKA ISHIMARU"
+msgid "But you know, Makoto...I'm really happy!"
+msgstr ""
+"Nhưng cậu biết không Makoto... tớ thực sự rất hạnh \n"
+"phúc!"
+
+#. この学園は天才ばかり…
+#. つまり敵ばかりだと、僕は思っていたのだ。
+msgctxt "0072 | KIYOTAKA ISHIMARU"
+msgid ""
+"I figured this school would be full of geniuses. I\n"
+"mean, I thought everyone would be my enemy."
+msgstr ""
+"Tớ đã nghĩ ngôi trường này toàn là thiên tài... \n"
+"Nghĩa là tớ đã nghĩ ai cũng là kẻ thù của mình."
+
+#. そんな場所で、まさか…
+#. こんな話が出来る仲間を見つけられるなんてな…
+msgctxt "0073 | KIYOTAKA ISHIMARU"
+msgid ""
+"I never imagined I'd meet someone here who I could\n"
+"share my story with..."
+msgstr ""
+"Tớ chưa bao giờ tưởng tượng được mình lại có thể \n"
+"gặp được người bạn để chia sẻ câu chuyện của mình..."
+
+#. 君と会えた事は僕の財産だ！
+#. 一生ものの財産だよ！
+msgctxt "0074 | KIYOTAKA ISHIMARU"
+msgid ""
+"I'm so lucky to have met you here! This kind of thing\n"
+"only happens once in a lifetime!"
+msgstr ""
+"Được gặp cậu là tài sản quý giá nhất của tớ! Một món \n"
+"quà chỉ có một lần trong đời thôi!"
+
+#. これからも、よろしく頼む！
+#. 互いに協力し合い、努力し合おうな！！
+msgctxt "0075 | KIYOTAKA ISHIMARU"
+msgid ""
+"I hope we can stay close, and combine our efforts to\n"
+"shape things the way we want!"
+msgstr ""
+"Tớ hy vọng chúng ta có thể luôn thân thiết, và cùng \n"
+"nhau nỗ lực để xoay chuyển mọi thứ theo ý mình!"
+
+#. うん、こちらこそ。
+msgctxt "0076 | MAKOTO NAEGI"
+msgid "Yeah, definitely..."
+msgstr "Ừm, chắc chắn rồi..."
+
+#. よし！　では自習の続きだ！
+msgctxt "0077 | KIYOTAKA ISHIMARU"
+msgid "Okay, we have to keep on studying!"
+msgstr "Được rồi! Giờ thì tiếp tục tự học nào!!"
+
+#. <CLT 4>石丸クンの事がよくわかって、
+#. なんだか心が通じ合えた気がする…
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I feel like I've come to understand Taka a lot\n"
+"better...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ cảm thấy mình đã hiểu Taka hơn rất nhiều \n"
+"rồi...\n"
+"<CLT>"
+
+#. <CLT 4>本当の意味で、
+#. 彼と<CLT><CLT 3>“仲間”<CLT><CLT 4>になれたって事なのかも。
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I think we've finally become <CLT><CLT 3>friends<CLT><CLT 4> in the truest\n"
+"sense of the word.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có lẽ cuối cùng chúng tớ đã trở thành những <CLT><CLT 3>\n"
+"người bạn<CLT><CLT 4> thực sự theo đúng nghĩa của nó.\n"
+"<CLT>"
+
+#. <CLT 23>石丸清多夏の<CLT><CLT 3>通信簿<CLT><CLT 23>に、今の情報を追記致しました。
+#. <CLT>
+msgctxt "0080 | NARRATION"
+msgid ""
+"<CLT 23>Taka's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with him.\n"
+"<CLT>"
+msgstr ""
+"<CLT 3>Bảng điểm<CLT><CLT 23> của Taka đã được cập nhật dựa trên trải \n"
+"nghiệm của bạn với cậu ấy.\n"
+"<CLT>"
+
+#. <CLT 23>おめでとうございます。
+#. <CLT><CLT 3>“スキルポイント”<CLT><CLT 23>が上がりました。
+#. <CLT>
+msgctxt "0081 | NARRATION"
+msgid ""
+"<CLT 23>Your maximum number of <CLT><CLT 3>Skill Points<CLT><CLT 23> has increased!\n"
+"Hey, look at you go!\n"
+"<CLT>"
+msgstr "<CLT 23>Số <CLT><CLT 3>Điểm kỹ năng<CLT><CLT 23> tối đa của bạn đã tăng lên! Nhìn bạn xem, làm tốt lắm!<CLT>"
+
+#. <CLT 4>石丸クンの部屋でみっちりと自習をした後、
+#. ボクは自分の部屋へと戻った。
+#. <CLT>
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After lots of studying, I went back to my room.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau khi tạm biệt Taka, tôi quyết định quay trở về \n"
+"phòng mình một lát...\n"
+"<CLT>"

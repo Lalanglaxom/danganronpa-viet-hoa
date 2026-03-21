@@ -1,0 +1,529 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. あのさ…苗木君が嫌じゃなければだけど…
+msgctxt "0001 | CHIHIRO FUJISAKI"
+msgid "Um, if you don't hate the idea..."
+msgstr ""
+
+#. …また、一緒にお話しない？
+msgctxt "0002 | CHIHIRO FUJISAKI"
+msgid "...would you like to talk some more?"
+msgstr ""
+
+#. <CLT 4>彼女にこんな風に頼まれて、
+#. 断れる人間がいるなら会ってみたい…
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Jeez, if there's anyone who can say no to someone who\n"
+"asks like that, I'd like to meet 'em.\n"
+"<CLT>"
+msgstr ""
+
+#. だったらさ…
+#. もう少し不二咲さんの事を教えてよ。
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "Sure, I'd love to learn more about you."
+msgstr ""
+
+#. いいけど…何を…？
+msgctxt "0005 | CHIHIRO FUJISAKI"
+msgid "Okay. But...what do you want to know?"
+msgstr ""
+
+#. 不二咲さんは、今はどんなプログラムを作ってるの？
+#. それも、すごい物なんでしょ？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"Well, let's see... What kind of program are you\n"
+"working on now? I bet it's pretty amazing."
+msgstr ""
+
+#. うーんとねぇ…今はまだ研究段階なんだけど…
+msgctxt "0007 | CHIHIRO FUJISAKI"
+msgid ""
+"Oh! Actually, I just started the research process for\n"
+"something..."
+msgstr ""
+
+#. 前に話した自動応答システムも流用した、
+#. ちょっと<CLT 3>複雑なプログラム<CLT>なんだ。
+msgctxt "0008 | CHIHIRO FUJISAKI"
+msgid ""
+"You remember that database software I told you about?\n"
+"I'm retooling it into something <CLT 3>a little more complex.<CLT>"
+msgstr ""
+
+#. だけど、詳しくは話せないんだよ…
+#. 研究費を出してもらってる企業さんとの契約もあって…
+msgctxt "0009 | CHIHIRO FUJISAKI"
+msgid ""
+"But I signed an NDA with the company that hired me, so\n"
+"I can't really go into the details..."
+msgstr ""
+
+#. そっか…盗まれたりしたら大変だもんね…
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"Yeah, they probably wouldn't want the wrong people to\n"
+"hear about it, huh?"
+msgstr ""
+
+#. 別に、苗木君を信じてない訳じゃないんだけど…
+#. でも、約束だから…
+msgctxt "0011 | CHIHIRO FUJISAKI"
+msgid ""
+"It's not that I don't trust you or anything! I\n"
+"just...made a promise, you know?"
+msgstr ""
+
+#. ご、ごめんね…
+msgctxt "0012 | CHIHIRO FUJISAKI"
+msgid "S-Sorry..."
+msgstr ""
+
+#. ううん、いいんだよ。
+#. 話せないような事を聞いたボクの方が悪いんだし…
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"No, it's okay. It's my fault for asking about\n"
+"something you couldn't talk about."
+msgstr ""
+
+#. あ、でも…
+msgctxt "0014 | CHIHIRO FUJISAKI"
+msgid "Oh, but..."
+msgstr ""
+
+#. ちょっとだけヒントを言うくらいなら、
+#. 多分、大丈夫だから…
+msgctxt "0015 | CHIHIRO FUJISAKI"
+msgid "...maybe I can give you a little hint."
+msgstr ""
+
+#. アルファベットで<CLT 3>“ＡＩ”<CLT>かな…
+msgctxt "0016 | CHIHIRO FUJISAKI"
+msgid "It has to do with <CLT 3>simulating human thoughts<CLT>."
+msgstr ""
+
+#. 人工知能
+msgctxt "0017 | CHOICE/RE:ACT"
+msgid "Artificial intelligence"
+msgstr ""
+
+#. バーチャルリアリティ
+msgctxt "0018 | CHOICE/RE:ACT"
+msgid "Virtual reality"
+msgstr ""
+
+#. バーチャルリアリティ、だったっけ？
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "Are you talking about virtual reality?"
+msgstr ""
+
+#. それは違うんだぁ…
+msgctxt "0020 | CHIHIRO FUJISAKI"
+msgid "Nope, not quite!"
+msgstr ""
+
+#. バーチャルリアリティっていうのは
+#. 仮想現実って訳されて…
+msgctxt "0021 | CHIHIRO FUJISAKI"
+msgid ""
+"Virtual reality is less about our thoughts and more\n"
+"about our senses."
+msgstr ""
+
+#. 実際には形がないけれど、まるでそこにあるみたいに
+#. 人間に錯覚させる事を言うんだよ。
+msgctxt "0022 | CHIHIRO FUJISAKI"
+msgid ""
+"It doesn't have a physical form, of course, but the\n"
+"illusion is real enough to convince most people."
+msgstr ""
+
+#. アルファベットで言うと、“ＶＲ”だね。
+msgctxt "0023 | CHIHIRO FUJISAKI"
+msgid ""
+"We just call virtual reality \"VR\" for short. What I'm\n"
+"talking about has a short nickname like that, too!"
+msgstr ""
+
+#. ロボット工学
+msgctxt "0024 | CHOICE/RE:ACT"
+msgid "Robotics"
+msgstr ""
+
+#. ロボット工学だよね？
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "Are you doing robotics research?"
+msgstr ""
+
+#. うーん、違うんだよね…
+#. 確かに…関わり合いの深い分野ではあるけど…
+msgctxt "0026 | CHIHIRO FUJISAKI"
+msgid ""
+"Hmm... Not exactly. Although the two fields are\n"
+"definitely connected."
+msgstr ""
+
+#. え、えっと…
+#. これ以上はヒントが出せないんだけど…
+msgctxt "0027 | CHIHIRO FUJISAKI"
+msgid "Sorry, I can't give you any more hints."
+msgstr ""
+
+#. 苗木君だったら…わかるんじゃないかな…？
+msgctxt "0028 | CHIHIRO FUJISAKI"
+msgid "But you're smart. I know you can figure it out!"
+msgstr ""
+
+#. <CLT 4>ヒントはＡＩ…
+#. そのまま解釈すればいいんだよな…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She said it has to do with simulating human thoughts,\n"
+"right? Which must mean...\n"
+"<CLT>"
+msgstr ""
+
+#. 人工知能…だよね？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"You're developing some kind of artificial\n"
+"intelligence, aren't you?"
+msgstr ""
+
+#. あ！　バレちゃった！？
+msgctxt "0031 | CHIHIRO FUJISAKI"
+msgid "Ah! You figured it out!"
+msgstr ""
+
+#. ヒント…言い過ぎちゃったかな…
+msgctxt "0032 | CHIHIRO FUJISAKI"
+msgid "Was my hint too easy...?"
+msgstr ""
+
+#. どうしよう…
+#. 約束破ったのがバレたら、怒られちゃうよぉ…
+msgctxt "0033 | CHIHIRO FUJISAKI"
+msgid ""
+"Ahh, what am I gonna do? If they find out I broke my\n"
+"promise, they might..."
+msgstr ""
+
+#. だ、大丈夫だよ…
+#. 絶対に誰にも言わないから…
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "Don't worry. I'm not gonna say anything to anyone."
+msgstr ""
+
+#. う、うん…そうだよね…
+#. 苗木君だし、大丈夫だよね…
+msgctxt "0035 | CHIHIRO FUJISAKI"
+msgid "Y-Yeah, I know... I know I can trust you."
+msgstr ""
+
+#. …だったら、もう言っちゃおうかな。
+msgctxt "0036 | CHIHIRO FUJISAKI"
+msgid "Okay, I guess I can tell you about it."
+msgstr ""
+
+#. あのね、今開発してるのは、
+#. 今までなかったような人工知能で…
+msgctxt "0037 | CHIHIRO FUJISAKI"
+msgid ""
+"I'm working on a type of artificial intelligence the\n"
+"world has never seen before."
+msgstr ""
+
+#. ちゃんと人間と同じ思考回路で、
+#. 人間の仕事をこなせるような<CLT 3>“強いＡＩ”<CLT>なんだ…
+msgctxt "0038 | CHIHIRO FUJISAKI"
+msgid ""
+"It's what we call a <CLT 3>strong AI<CLT>. It's designed to\n"
+"think like a human, to process any mental task we can."
+msgstr ""
+
+#. 強いＡＩ…？
+msgctxt "0039 | MAKOTO NAEGI"
+msgid "A strong AI...?"
+msgstr ""
+
+#. 人工知能研究の分野では、
+#. “強いＡＩと弱いＡＩ”って問題があってね…
+msgctxt "0040 | CHIHIRO FUJISAKI"
+msgid ""
+"You see, in the field of artificial intelligence,\n"
+"there's strong AI and weak AI."
+msgstr ""
+
+#. 弱いＡＩは、人間的な認知能力を必要としない程度の
+#. 問題解決を行うソフトウェアの事だよ。
+msgctxt "0041 | CHIHIRO FUJISAKI"
+msgid ""
+"Weak AI isn't meant to match human intelligence. It's\n"
+"simply a type of problem-solving software."
+msgstr ""
+
+#. 機械自体が本当に思考している訳じゃなくて、
+#. プログラムに従って処理しているだけって事…
+msgctxt "0042 | CHIHIRO FUJISAKI"
+msgid ""
+"A weak AI isn't actually thinking, it's just executing\n"
+"actions programmed into it."
+msgstr ""
+
+#. 一方の強いＡＩって言うのは、
+#. <CLT 3>真の自意識や自我を持つコンピューター<CLT>の事だよ。
+msgctxt "0043 | CHIHIRO FUJISAKI"
+msgid ""
+"Strong AI, on the other hand, is a program that can\n"
+"achieve true <CLT 3>self-consciousness<CLT>—full ego awareness."
+msgstr ""
+
+#. 強いＡＩの観点からすると、
+#. 正しいプログラムは精神を持つって事になるんだけど…
+msgctxt "0044 | CHIHIRO FUJISAKI"
+msgid ""
+"In other words, a strong AI is a complete entity, a\n"
+"computer program capable of becoming aware."
+msgstr ""
+
+#. でも、その考えに否定的な学者も、
+#. 少なくないんだよ…
+msgctxt "0045 | CHIHIRO FUJISAKI"
+msgid ""
+"But it's always just been a hypothesis. Plenty of\n"
+"experts don't think it's even possible."
+msgstr ""
+
+#. まるでＳＦみたいだけど…
+#. それを不二咲さんが作ってるの？
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"It sounds like something from a sci-fi movie... And\n"
+"you're working on something like that?"
+msgstr ""
+
+#. 今は、まだまだ研究段階だけどね…
+msgctxt "0047 | CHIHIRO FUJISAKI"
+msgid "Well like I said, right now I'm just researching it."
+msgstr ""
+
+#. 人間並の知識や知性を持つプログラミングに関しては、
+#. かなり進んでると思うけど…
+msgctxt "0048 | CHIHIRO FUJISAKI"
+msgid ""
+"I've made lots of progress on the programming side,\n"
+"and the intelligence development..."
+msgstr ""
+
+#. 自我や自意識となると、まだまだ先…
+#. もしかしたら、ずっと完成しないかもしれない…
+msgctxt "0049 | CHIHIRO FUJISAKI"
+msgid ""
+"...but when it comes to actual awareness, it's still a\n"
+"long way off. It might even be impossible..."
+msgstr ""
+
+#. そうなの…？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid "Really...?"
+msgstr ""
+
+#. なんて言うか…
+#. ちょっと変な話になっちゃうんだけどさ…
+msgctxt "0051 | CHIHIRO FUJISAKI"
+msgid "I'm not sure how to put it, but..."
+msgstr ""
+
+#. どんなにプログラムを優秀にして、複雑にしても…
+msgctxt "0052 | CHIHIRO FUJISAKI"
+msgid "No matter how well designed or complex a program is..."
+msgstr ""
+
+#. 人間の脳モデルのシミュレーションが可能なほどの
+#. ハードウェアやソフトウェアがあったとしても…
+msgctxt "0053 | CHIHIRO FUJISAKI"
+msgid ""
+"No matter how closely the software can simulate the\n"
+"workings of the human brain..."
+msgstr ""
+
+#. …それだけじゃ足りないと思うんだよ。
+msgctxt "0054 | CHIHIRO FUJISAKI"
+msgid "...I don't think that's enough."
+msgstr ""
+
+#. いくら人間の思考に近いプログラムが出来たとしても、
+#. それだけじゃ決定的に<CLT 3>足りない物<CLT>があると思うんだ。
+msgctxt "0055 | CHIHIRO FUJISAKI"
+msgid ""
+"If the program is only *simulating* thought, it will\n"
+"always be <CLT 3>lacking something<CLT>."
+msgstr ""
+
+#. 足りない物…？
+msgctxt "0056 | MAKOTO NAEGI"
+msgid "Lacking...?"
+msgstr ""
+
+#. なんて言うか…
+msgctxt "0057 | CHIHIRO FUJISAKI"
+msgid "Well..."
+msgstr ""
+
+#. <CLT 3>魂<CLT>みたいな何か…かな…
+msgctxt "0058 | CHIHIRO FUJISAKI"
+msgid "I guess you could say...a <CLT 3>soul<CLT>."
+msgstr ""
+
+#. もし、自分の魂をプログラムに込める事が出来たら、
+#. その人工知能は“強いＡＩ”になるかもしれないけど…
+msgctxt "0059 | CHIHIRO FUJISAKI"
+msgid ""
+"If you could somehow pour your own soul into the\n"
+"software, maybe then a strong AI could be created."
+msgstr ""
+
+#. でも、魂って…
+msgctxt "0060 | MAKOTO NAEGI"
+msgid "Wait...a soul?"
+msgstr ""
+
+#. うん、よくわかんないし…
+#. それに、プログラマーが言う言葉じゃないよね…
+msgctxt "0061 | CHIHIRO FUJISAKI"
+msgid ""
+"Yeah, I know. It's not a programming term. I'm not\n"
+"even sure how that would work on a technical level."
+msgstr ""
+
+#. …ごめんね。今の言葉は忘れて。
+msgctxt "0062 | CHIHIRO FUJISAKI"
+msgid "S-Sorry, forget I mentioned it..."
+msgstr ""
+
+#. とにかく、今はまだ研究段階で、
+#. どっちにしろ、この程度の事しか話せないんだ…
+msgctxt "0063 | CHIHIRO FUJISAKI"
+msgid ""
+"Anyway, all I have right now is the theory. There's\n"
+"still lots of research left to do."
+msgstr ""
+
+#. <CLT 4>人工知能か…ちょっと難しかったけど、
+#. なんか興味深い話だったな。
+#. <CLT>
+msgctxt "0064 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Artificial intelligence sounds like a pretty tough\n"
+"subject. But I'm glad I got to hear about it...\n"
+"<CLT>"
+msgstr ""
+
+#. また…長々とつまらない話をしちゃったね…
+#. 退屈だったでしょ…？
+msgctxt "0065 | CHIHIRO FUJISAKI"
+msgid ""
+"I wasted your time on another boring topic. I must\n"
+"have bored you to death, huh?"
+msgstr ""
+
+#. ううん。退屈どころか、すごく面白かったよ。
+msgctxt "0066 | MAKOTO NAEGI"
+msgid "No, the complete opposite! It was really interesting!"
+msgstr ""
+
+#. …え？　ホントに？
+msgctxt "0067 | CHIHIRO FUJISAKI"
+msgid "You mean it...?"
+msgstr ""
+
+#. じゃあさ！　今度、お話する時は、
+#. 苗木君の話を聞かせてよ！
+msgctxt "0068 | CHIHIRO FUJISAKI"
+msgid "Okay! Next time we talk, I wanna hear about you!"
+msgstr ""
+
+#. いや、ボクの話なんて…
+#. 不二咲さんと違って、本当に退屈なだけだから…
+msgctxt "0069 | MAKOTO NAEGI"
+msgid "Oh, well... Unlike you, I really *am* boring."
+msgstr ""
+
+#. …ダメなの！　今度は苗木君の番なの！
+msgctxt "0070 | CHIHIRO FUJISAKI"
+msgid "No excuses! It's your turn next time!"
+msgstr ""
+
+#. わ、わかったよ…
+msgctxt "0071 | MAKOTO NAEGI"
+msgid "O-Okay..."
+msgstr ""
+
+#. …えへへ、やった。
+msgctxt "0072 | CHIHIRO FUJISAKI"
+msgid "Ehehe. Yay!"
+msgstr ""
+
+#. <CLT 4>彼女にこんな風に頼まれて、
+#. 断れる人間がいるとしたら…
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>When she says it like that, I think the only way to\n"
+"refuse...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それこそ、魂のない人工知能だけなのかもしれないな…
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...is if you're one of those soulless AI programs she\n"
+"mentioned.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>不二咲千尋の<CLT><CLT 3>通信簿<CLT><CLT 23>に、今の情報を追記致しました。
+#. <CLT>
+msgctxt "0075 | NARRATION"
+msgid ""
+"<CLT 23>Chihiro's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with her.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>おめでとうございます。
+#. <CLT><CLT 3>“スキルポイント”<CLT><CLT 23>が上がりました。
+#. <CLT>
+msgctxt "0076 | NARRATION"
+msgid ""
+"<CLT 23>Your maximum number of <CLT><CLT 3>Skill Points<CLT><CLT 23> has increased!\n"
+"Hey, look at you go!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>不二咲さんと別れた後、
+#. ボクはいったん、自分の部屋に帰る事にした。
+#. <CLT>
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Once we were all done, I headed back to my room for a\n"
+"little while...\n"
+"<CLT>"
+msgstr ""

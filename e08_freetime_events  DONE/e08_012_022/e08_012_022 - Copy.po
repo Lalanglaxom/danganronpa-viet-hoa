@@ -1,0 +1,379 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. セレスティア・ルーデンベルク…
+msgctxt "0001 | CELES"
+msgid "Celestia Ludenberg."
+msgstr ""
+
+#. セレスティア・ルーデンベルク…
+msgctxt "0002 | CELES"
+msgid "Celestia...Ludenberg..."
+msgstr ""
+
+#. …どうしたの？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "What are you doing...?"
+msgstr ""
+
+#. うふ、何度聞いても素晴らしい響きですわ。
+#. 我ながら惚れ惚れする名前ですわね。
+msgctxt "0004 | CELES"
+msgid ""
+"No matter how many times I hear it, I never tire of\n"
+"hearing my own name. Isn't it so splendidly charming?"
+msgstr ""
+
+#. 前から気になってたんだけどさ…
+#. どうして、その名前なの？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"Oh yeah, I've been wondering about that. Why *that*\n"
+"name?"
+msgstr ""
+
+#. …どうして？
+msgctxt "0006 | CELES"
+msgid "...Why?"
+msgstr ""
+
+#. 何か由来でもあって…
+#. その名前を付けたの？
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "I mean, is it from something? Why'd you pick it?"
+msgstr ""
+
+#. 由来も何も…親から授かった、
+#. わたくしの名前ですわ。
+msgctxt "0008 | CELES"
+msgid ""
+"I did not *pick* it. My name was given to me by my\n"
+"mother and father..."
+msgstr ""
+
+#. 親から授かったって…
+#. それって本名じゃないでしょ？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "Come on, that can't be your real name, can it?"
+msgstr ""
+
+#. <CLT 3>本名<CLT>ですわよ。
+#. 決まっているじゃありませんか。
+msgctxt "0010 | CELES"
+msgid ""
+"It is, indeed, my <CLT 3>real name<CLT>. Make no mistake about\n"
+"that."
+msgstr ""
+
+#. じゃあ、ご両親がそんな名前を付けたって事？
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "Okay, so your parents gave you that name?"
+msgstr ""
+
+#. フランス貴族の父と…
+#. ドイツの音楽家である母がね…
+msgctxt "0012 | CELES"
+msgid ""
+"That's right. My father is French nobility, and my\n"
+"mother is part of a German family of musicians."
+msgstr ""
+
+#. <CLT 4>いや…明らかにウソだろうけど…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way that's true...\n"
+"<CLT>"
+msgstr ""
+
+#. …って事は、セレスさんの出身も、
+#. フランスかドイツ…
+msgctxt "0014 | MAKOTO NAEGI"
+msgid "But okay, so were you born in France or Germany?"
+msgstr ""
+
+#. <CLT 3>栃木県<CLT>ですわ。
+msgctxt "0015 | CELES"
+msgid "<CLT 3>Tochigi<CLT>."
+msgstr ""
+
+#. <CLT 4>そこはいいんだ…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Now we're getting somewhere...\n"
+"<CLT>"
+msgstr ""
+
+#. うふふ、栃木県の中部の出身です。
+#. 県庁所在地で、餃子の都市でもあります。
+msgctxt "0017 | CELES"
+msgid ""
+"I was born in the capital of Tochigi, which is known\n"
+"for its delicious gyoza."
+msgstr ""
+
+#. ご存知ですか？
+msgctxt "0018 | CELES"
+msgid "Do you know of which city I speak?"
+msgstr ""
+
+#. 宇都宮
+msgctxt "0019 | CHOICE/RE:ACT"
+msgid "Utsunomiya"
+msgstr ""
+
+#. 足利
+msgctxt "0020 | CHOICE/RE:ACT"
+msgid "Ashikaga"
+msgstr ""
+
+#. 足利だったかな？
+msgctxt "0021 | MAKOTO NAEGI"
+msgid "Is it...uh...Ashikaga?"
+msgstr ""
+
+#. ………………
+msgctxt "0022 | CELES"
+msgid "..."
+msgstr "..."
+
+#. あれ？
+#. もしかして、間違った？
+msgctxt "0023 | MAKOTO NAEGI"
+msgid "Huh? Does that mean I'm wrong...?"
+msgstr ""
+
+#. …失礼しました。
+#. まさか、そのような答えが来るとは思わず。
+msgctxt "0024 | CELES"
+msgid ""
+"You must excuse me. I simply wasn't anticipating an\n"
+"answer like that..."
+msgstr ""
+
+#. 栃木の県庁所在地もわからないなんて…
+#. 小学生以下の知性ですわね。
+msgctxt "0025 | CELES"
+msgid ""
+"Any elementary school child knows what the capital of\n"
+"Tochigi is, so naturally..."
+msgstr ""
+
+#. ………………
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. 日光
+msgctxt "0027 | CHOICE/RE:ACT"
+msgid "Nikko"
+msgstr ""
+
+#. 日光だっけ？
+msgctxt "0028 | MAKOTO NAEGI"
+msgid "Nikko, I think...?"
+msgstr ""
+
+#. まあっ…
+msgctxt "0029 | CELES"
+msgid "Well..."
+msgstr ""
+
+#. え？　どうかした？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "Huh? Am I right?"
+msgstr ""
+
+#. 確かに、栃木の観光地と言えば日光です。
+msgctxt "0031 | CELES"
+msgid ""
+"Nikko is certainly one of the most beautiful parts of\n"
+"Tochigi, this is true."
+msgstr ""
+
+#. ですから苗木君の印象に残っていても
+#. おかしくありませんけど…
+msgctxt "0032 | CELES"
+msgid ""
+"So it's no surprise it would leave a lasting\n"
+"impression on you."
+msgstr ""
+
+#. まさか、先ほどの質問に対して答えるなんて。
+#. 呆れて物も言えません…
+msgctxt "0033 | CELES"
+msgid ""
+"But to think you would consider that an appropriate\n"
+"answer to my question... Simply appalling."
+msgstr ""
+
+#. <CLT 4>充分言ってると思うけど…
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Maybe I should stop talking...\n"
+"<CLT>"
+msgstr ""
+
+#. あら、おわかりになりませんの？
+msgctxt "0035 | CELES"
+msgid "Well now, do you really not know the answer?"
+msgstr ""
+
+#. 餃子で町おこしをして
+#. すっかり有名になりましたのに…
+msgctxt "0036 | CELES"
+msgid ""
+"The sudden popularity of our gyoza revitalized the\n"
+"town, and put us on the map again."
+msgstr ""
+
+#. うん、そうだよね。
+#. ボクも…思い出しかけてるんだけど…
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"Yeah, I think I'm starting to remember. It's right\n"
+"there...!"
+msgstr ""
+
+#. <CLT 4>そう…
+#. 栃木県の県庁所在地で餃子の都市って言えば…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So it's the capital of Tochigi, and it's famous for\n"
+"its gyoza...\n"
+"<CLT>"
+msgstr ""
+
+#. 宇都宮…？
+msgctxt "0039 | MAKOTO NAEGI"
+msgid "It's Utsunomiya, right...?"
+msgstr ""
+
+#. 大正解ですわ。
+#. 一応、小学生並の知識はあるようですわね。
+msgctxt "0040 | CELES"
+msgid ""
+"That is correct. You have proven you are roughly as\n"
+"intelligent as an elementary school student."
+msgstr ""
+
+#. まぁ…高校生だからね…
+msgctxt "0041 | MAKOTO NAEGI"
+msgid "Or a high schooler, maybe...?"
+msgstr ""
+
+#. 意外かもしれませんが、
+#. わたくし、<CLT 3>餃子が大好物<CLT>ですの。
+msgctxt "0042 | CELES"
+msgid ""
+"You may be surprised to learn that I absolutely adore\n"
+"<CLT 3>gyoza<CLT>."
+msgstr ""
+
+#. あの下品で臭い食べ物が大好物ですの。
+msgctxt "0043 | CELES"
+msgid "I love its stench, its base vulgarity."
+msgstr ""
+
+#. ですから、少々残念ですわね。
+#. もう２度と、あの町の餃子を口に出来ないのが…
+msgctxt "0044 | CELES"
+msgid ""
+"So as you can imagine, I'm quite disappointed that I\n"
+"will never taste my hometown's gyoza again."
+msgstr ""
+
+#. もう２度と…なんて事はないよ…
+#. ここから出られれば…
+msgctxt "0045 | MAKOTO NAEGI"
+msgid "Never say never, you know...? Once we get out of here—"
+msgstr ""
+
+#. わたくし達は出られません。
+msgctxt "0046 | CELES"
+msgid "We will never get out of here."
+msgstr ""
+
+#. いつまで未練がましい事を言っているのですか？
+#. いい加減、諦めた方がよろしいですわよ。
+msgctxt "0047 | CELES"
+msgid ""
+"How long will you continue with this ridiculousness?\n"
+"You should give up."
+msgstr ""
+
+#. でないと、人を殺す事になりますわ…
+msgctxt "0048 | CELES"
+msgid "If you don't, it can only lead to murder..."
+msgstr ""
+
+#. <CLT 4>不気味な言葉を残して、
+#. セレスさんはその場から去っていった…
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste's eerie words stuck with me long after she'd\n"
+"left.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>なんか知れば知るほど…
+#. セレスさんの事がわからなくなっていくな…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The more I talk to her, the more I just don't\n"
+"understand her...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>セレスの<CLT><CLT 3>通信簿<CLT><CLT 23>に、今の情報を追記致しました。
+#. <CLT>
+msgctxt "0051 | NARRATION"
+msgid ""
+"<CLT 23>Celeste's <CLT><CLT 3>Report Card<CLT><CLT 23> has been updated based on your\n"
+"experience with her.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>おめでとうございます。
+#. スキル<CLT><CLT 3>“レイズ”<CLT><CLT 23>を獲得致しました。
+#. <CLT>
+msgctxt "0052 | NARRATION"
+msgid ""
+"<CLT 23>You just unlocked the skill <CLT><CLT 3>Raise<CLT><CLT 23>!\n"
+"Give yourself a pat on the back. You've earned it!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>モノクマメダル<CLT><CLT 23>を発見、獲得した際に、今までよりも
+#. 多く手に入れることが可能でございます。
+#. <CLT>
+msgctxt "0053 | NARRATION"
+msgid ""
+"<CLT 23>When you find <CLT><CLT 3>Monocoins<CLT><CLT 23>, you'll now earn more than\n"
+"you did before.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>セレスさんと別れた後、
+#. ボクは自分の部屋へと帰った。
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Once I was all finished, I headed back to my room.\n"
+"<CLT>"
+msgstr ""

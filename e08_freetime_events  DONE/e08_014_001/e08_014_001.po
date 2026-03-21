@@ -1,0 +1,96 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. なんだか…怖いよ…
+msgctxt "0001 | CHIHIRO FUJISAKI"
+msgid "I'm...kinda scared."
+msgstr "Cảm giác... tớ sợ lắm..."
+
+#. 閉じ込められたとか、
+#. 本当なのかなぁ…？
+msgctxt "0002 | CHIHIRO FUJISAKI"
+msgid "Are we really trapped in here...?"
+msgstr "Chuyện tụi mình bị nhốt ở đây... có thật không nhỉ...?"
+
+#. 一緒に過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time with Chihiro"
+msgstr "Dành thời gian với Chihiro"
+
+#. 他の場所へ行く
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. 不二咲さんと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Chihiro for a while?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Nên làm gì đây? Có nên dành thời gian với Chihiro \n"
+"một lát không nhỉ?\n"
+"<CLT>"
+
+#. え、苗木君と２人で…？
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "Huh? You mean...just the two of us?"
+msgstr "Ơ, chỉ có tớ và Makoto thôi sao...?"
+
+#. うん、いいよ…
+#. なんだか…ちょっと恥ずかしいけど…
+msgctxt "0007 | CHIHIRO FUJISAKI"
+msgid "Y-Yeah, okay. I'm a little nervous, though..."
+msgstr "Ừm, được chứ... Dù cảm giác có hơi... ngại một chút..."
+
+#. <CLT 4>恥ずかしがってる不二咲さんと
+#. 一緒に過ごした…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I spent some time with Chihiro, even though she seemed\n"
+"kind of embarrassed...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã dành thời gian bên cạnh Chihiro, dù cho cậu \n"
+"ấy có vẻ hơi ngượng ngùng...\n"
+"<CLT>"
+
+#. <CLT 4>不二咲さんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như hôm nay tôi và Chihiro đã trở nên thân \n"
+"thiết hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Chihiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Chihiro không?<CLT>"

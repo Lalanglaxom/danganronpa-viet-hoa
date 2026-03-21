@@ -1,0 +1,104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 苗木っち、俺に何の用だべ？
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid "Did you need something, Makoto?"
+msgstr "Makoto, kiếm tui có chuyện gì không ông?"
+
+#. はっ！　まさか俺を殺そうと！？
+msgctxt "0002 | YASUHIRO HAGAKURE"
+msgid "*Gasp* It better not be my life! Don't kill me!"
+msgstr "Hả! Chẳng lẽ ông định... đừng giết tui mà!"
+
+#. 後生だべ！　見逃してくれって！
+#. 殺すなら俺じゃなくて他のヤツにしてくれ！！
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid ""
+"Afterlife, protect me! Makoto, kill someone if you\n"
+"must, but don't kill meeee!"
+msgstr ""
+"Lạy ông tôi ở bụi này! Tha cho tui đi mà! Có giết thì giết đứa \n"
+"khác ấy chứ đừng có giết tuiiiii!!"
+
+#. 一緒に過ごす
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Spend some time with Hiro"
+msgstr "Dành thời gian với Hiro"
+
+#. 他の場所へ行く
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. こんな葉隠クンと一緒に過ごせるか？
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I spend time with Hiro while he's acting\n"
+"like this...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Nên làm gì đây? Liệu mình có nên ở cạnh một Hiro \n"
+"đang như thế này không nhỉ?\n"
+"<CLT>"
+
+#. だったら、男２人で熱く語り合うべ。
+#. 宇宙発生論についてな。
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgid ""
+"Well then, why don't we have a heated discussion about\n"
+"cosmogony!"
+msgstr ""
+"Vậy thì, hai thằng đàn ông tụi mình cùng đàm đạo một trận \n"
+"ra trò đi. Về thuyết khởi nguyên vũ trụ nhé!"
+
+#. <CLT 4>宇宙発生論について、
+#. 葉隠クンの一方的な見解を述べられた。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I learned all about Hiro's theories on the origin of\n"
+"the universe...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã bị bắt nghe Hiro thuyết giảng về những quan \n"
+"điểm phiến diện của cậu ấy về thuyết khởi nguyên vũ trụ...\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay mình và Hiro đã thân nhau hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0012 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Hiro không?<CLT>"

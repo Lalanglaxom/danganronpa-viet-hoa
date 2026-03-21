@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/18/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 移動、照準移動
+msgctxt "0001"
+msgid "Move / Aim"
+msgstr ""
+
+#. 視点移動
+msgctxt "0002"
+msgid "Move Reticle"
+msgstr ""
+
+#. 話す、調べる
+msgctxt "0003"
+msgid "Talk / Examine"
+msgstr ""
+
+#. 廊下：走る（要スキル）　部屋：部屋を出る
+msgctxt "0004"
+msgid "Hallway: Run (skill required) | Class: Leave"
+msgstr ""
+
+#. 手帳メニューを開く
+msgctxt "0005"
+msgid "Open Handbook Menu"
+msgstr ""
+
+#. 廊下：マップ表示　部屋：観察（要スキル）
+msgctxt "0006"
+msgid "Hallway: Map | Class: Observe (skill required)"
+msgstr ""
+
+#. 左平行移動、部屋では左回転
+msgctxt "0007"
+msgid "Strafe left / Turn left"
+msgstr ""
+
+#. 右平行移動、部屋では右回転
+msgctxt "0008"
+msgid "Strafe right / Turn right"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0009"
+msgid "Open Help"
+msgstr ""
+
+#. バックログを開く
+msgctxt "0010"
+msgid "Open Transcript"
+msgstr ""
+
+#. ―
+msgctxt "0011"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0012"
+msgid "―"
+msgstr "―"
+
+#. 決定、メッセージ送り
+msgctxt "0013"
+msgid "Confirm / Advance Text"
+msgstr ""
+
+#. キャンセル、メッセージスキップ
+msgctxt "0014"
+msgid "Cancel / Skip Text"
+msgstr ""
+
+#. 手帳メニューを開く
+msgctxt "0015"
+msgid "Open Handbook Menu"
+msgstr ""
+
+#. ―
+msgctxt "0016"
+msgid "―"
+msgstr "―"
+
+#. テキストウインドウＯＮ／ＯＦＦ
+msgctxt "0017"
+msgid "Text Window ON/OFF"
+msgstr ""
+
+#. オートモード
+msgctxt "0018"
+msgid "Auto Mode"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0019"
+msgid "Open Help"
+msgstr ""
+
+#. バックログを開く
+msgctxt "0020"
+msgid "Open Transcript"
+msgstr ""
+
+#. 選択、スクロール
+msgctxt "0021"
+msgid "Highlight / Scroll"
+msgstr ""
+
+#. 選択、スクロール
+msgctxt "0022"
+msgid "Highlight / Scroll"
+msgstr ""
+
+#. 決定
+msgctxt "0023"
+msgid "Confirm"
+msgstr ""
+
+#. キャンセル
+msgctxt "0024"
+msgid "Cancel"
+msgstr ""
+
+#. 手帳メニューを閉じる
+msgctxt "0025"
+msgid "Close Handbook Menu"
+msgstr ""
+
+#. ―
+msgctxt "0026"
+msgid "―"
+msgstr "―"
+
+#. ページ切り替え
+msgctxt "0027"
+msgid "Advance"
+msgstr ""
+
+#. ページ切り替え
+msgctxt "0028"
+msgid "Advance"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0029"
+msgid "Open Help"
+msgstr ""
+
+#. バックログを開く
+msgctxt "0030"
+msgid "Open Transcript"
+msgstr ""
+
+#. 選択、スクロール
+msgctxt "0031"
+msgid "Highlight / Scroll"
+msgstr ""
+
+#. 選択、スクロール
+msgctxt "0032"
+msgid "Highlight / Scroll"
+msgstr ""
+
+#. 決定、スキルの装備
+msgctxt "0033"
+msgid "Confirm / Equip Skills"
+msgstr ""
+
+#. キャンセル
+msgctxt "0034"
+msgid "Cancel"
+msgstr ""
+
+#. ―
+msgctxt "0035"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0036"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0037"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0038"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0039"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0040"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0041"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0042"
+msgid "―"
+msgstr "―"
+
+#. 決定、メッセージ送り
+msgctxt "0043"
+msgid "Confirm / Advance Text"
+msgstr ""
+
+#. キャンセル、メッセージスキップ
+msgctxt "0044"
+msgid "Cancel / Skip Text"
+msgstr ""
+
+#. 手帳メニューを開く
+msgctxt "0045"
+msgid "Open Handbook Menu"
+msgstr ""
+
+#. ―
+msgctxt "0046"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0047"
+msgid "―"
+msgstr "―"
+
+#. オートモード
+msgctxt "0048"
+msgid "Auto Mode"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0049"
+msgid "Open Help"
+msgstr ""
+
+#. バックログを開く
+msgctxt "0050"
+msgid "Open Transcript"
+msgstr ""
+
+#. 照準移動
+msgctxt "0051"
+msgid "Aim"
+msgstr ""
+
+#. 照準移動
+msgctxt "0052"
+msgid "Aim"
+msgstr ""
+
+#. サイレンサー
+msgctxt "0053"
+msgid "Silencer"
+msgstr ""
+
+#. 議論の早送り
+msgctxt "0054"
+msgid "Fast-Forward Argument"
+msgstr ""
+
+#. 手帳メニューを開く
+msgctxt "0055"
+msgid "Open Handbook Menu"
+msgstr ""
+
+#. コトダマの発射
+msgctxt "0056"
+msgid "Fire Truth Bullet"
+msgstr ""
+
+#. コトダマの選択
+msgctxt "0057"
+msgid "Select Truth Bullet"
+msgstr ""
+
+#. 精神集中
+msgctxt "0058"
+msgid "Concentrate"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0059"
+msgid "Open Help"
+msgstr ""
+
+#. ―
+msgctxt "0060"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0061"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0062"
+msgid "―"
+msgstr "―"
+
+#. ロックオン（テンポに合わせて押す）
+msgctxt "0063"
+msgid "Lock On (press in time with the tempo)"
+msgstr ""
+
+#. ―
+msgctxt "0064"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0065"
+msgid "―"
+msgstr "―"
+
+#. アタック（テンポに合わせて押す）
+msgctxt "0066"
+msgid "Attack (press in time with the tempo)"
+msgstr ""
+
+#. ―
+msgctxt "0067"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0068"
+msgid "―"
+msgstr "―"
+
+#. 操作説明を開く
+msgctxt "0069"
+msgid "Open Help"
+msgstr ""
+
+#. ―
+msgctxt "0070"
+msgid "―"
+msgstr "―"
+
+#. 照準移動
+msgctxt "0071"
+msgid "Aim"
+msgstr ""
+
+#. 照準移動
+msgctxt "0072"
+msgid "Aim"
+msgstr ""
+
+#. 文字を撃ち落とす
+msgctxt "0073"
+msgid "Shoot Letter"
+msgstr ""
+
+#. 文字の早送り
+msgctxt "0074"
+msgid "Increase Speed"
+msgstr ""
+
+#. ―
+msgctxt "0075"
+msgid "―"
+msgstr "―"
+
+#. 文字を撃ち落とす
+msgctxt "0076"
+msgid "Shoot Letter"
+msgstr ""
+
+#. ―
+msgctxt "0077"
+msgid "―"
+msgstr "―"
+
+#. 精神集中
+msgctxt "0078"
+msgid "Concentrate"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0079"
+msgid "Open Help"
+msgstr ""
+
+#. ―
+msgctxt "0080"
+msgid "―"
+msgstr "―"
+
+#. 照準移動
+msgctxt "0081"
+msgid "Aim"
+msgstr ""
+
+#. 照準移動
+msgctxt "0082"
+msgid "Aim"
+msgstr ""
+
+#. 推理コマをつかむ、置く
+msgctxt "0083"
+msgid "Pick up or put down Truth Panel"
+msgstr ""
+
+#. ―
+msgctxt "0084"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0085"
+msgid "―"
+msgstr "―"
+
+#. 再現開始
+msgctxt "0086"
+msgid "Re-enact"
+msgstr ""
+
+#. 推理コマの選択
+msgctxt "0087"
+msgid "Select Truth Panel"
+msgstr ""
+
+#. 推理コマの選択
+msgctxt "0088"
+msgid "Select Truth Panel"
+msgstr ""
+
+#. 操作説明を開く
+msgctxt "0089"
+msgid "Open Help"
+msgstr ""
+
+#. ―
+msgctxt "0090"
+msgid "―"
+msgstr "―"
+
+#. 下：メダルを入れる　上：戻す
+msgctxt "0091"
+msgid "Down: Insert Coin | Up: Retrieve Coin"
+msgstr ""
+
+#. 下：メダルを入れる　上：戻す
+msgctxt "0092"
+msgid "Down: Insert Coin | Up: Retrieve Coin"
+msgstr ""
+
+#. レバーを回す
+msgctxt "0093"
+msgid "Turn Dial"
+msgstr ""
+
+#. やめる
+msgctxt "0094"
+msgid "Quit"
+msgstr ""
+
+#. プレゼントメニューを開く
+msgctxt "0095"
+msgid "Open Presents Menu"
+msgstr ""
+
+#. （押し続ける）１０枚単位で操作
+msgctxt "0096"
+msgid "(hold) Add multiples of 10"
+msgstr ""
+
+#. ―
+msgctxt "0097"
+msgid "―"
+msgstr "―"
+
+#. ―
+msgctxt "0098"
+msgid "―"
+msgstr "―"
+
+#. 操作説明を開く
+msgctxt "0099"
+msgid "Open Help"
+msgstr ""
+
+#. ―
+msgctxt "0100"
+msgid "―"
+msgstr "―"

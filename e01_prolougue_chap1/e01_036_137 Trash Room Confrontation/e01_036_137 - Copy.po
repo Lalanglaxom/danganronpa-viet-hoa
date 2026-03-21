@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 4>こんな場所にも、
+#. モノクマが写るモニターが…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Even here there's a damn monitor...\n"
+"<CLT>"
+msgstr ""
+
+#. なんなんだよ…！
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "What *is* this...!?"
+msgstr ""
+
+#. <CLT 4>この監視カメラで…
+#. ボクらが捜査してる姿を見てるって言うのか…
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Whoever's behind this must be using these cameras to\n"
+"observe our investigation...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな事させて…
+#. 一体何が目的なんだよ…！
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To force us into a situation like this... What the\n"
+"hell do they want from us!?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>鉄格子がジャマで中に入れないな…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a sturdy gate here. No way to get past...\n"
+"<CLT>"
+msgstr ""
+
+#. ここは終着駅…
+msgctxt "0006 | MONOKUMA"
+msgid "It's the end of the line."
+msgstr ""
+
+#. そう、ゴミ捨て場…
+#. 名付けてトラッシュルーム…
+msgctxt "0007 | MONOKUMA"
+msgid ""
+"The trash room... This is where all the trash in the\n"
+"school eventually winds up."
+msgstr ""
+
+#. この鉄格子は、どうやったら…
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "How do you get this gate open?"
+msgstr ""
+
+#. ダメダメ、こっから先は入れないよ！！
+#. 掃除当番以外は入れないよ！！
+msgctxt "0009 | MONOKUMA"
+msgid ""
+"No no no! No entry beyond this point! Only the person\n"
+"on cleaning duty is allowed in!"
+msgstr ""
+
+#. 掃除当番…？
+msgctxt "0010 | MAKOTO NAEGI"
+msgid "Cleaning duty...?"
+msgstr ""
+
+#. ダメダメ、こっから先は入れないよ！！
+#. 掃除当番以外は入れないよ！！
+msgctxt "0011 | MONOKUMA"
+msgid ""
+"No no no! No entry beyond this point! Only the person\n"
+"on cleaning duty is allowed in!"
+msgstr ""
+
+#. 掃除当番って…誰の事だよ……
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "Who's on cleaning duty?"
+msgstr ""
+
+#. ダメダメ、こっから先は入れないよ！！
+#. 掃除当番以外は入れないよ！！
+msgctxt "0013 | MONOKUMA"
+msgid ""
+"No no no! No entry beyond this point! Only the person\n"
+"on cleaning duty is allowed in!"
+msgstr ""
+
+#. <CLT 4>話にならないな…
+#. みんなに聞いて回った方が早いか…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is stupid. It'd be faster to just go around and\n"
+"ask the others.\n"
+"<CLT>"
+msgstr ""
+
+#. ダメダメ、こっから先は入れないよ！！
+#. 掃除当番以外は入れないよ！！
+msgctxt "0015 | MONOKUMA"
+msgid ""
+"No no no! No entry beyond this point! Only the person\n"
+"on cleaning duty is allowed in!"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>掃除当番<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0016 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Cleaning Duty<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>スイッチ…みたいだ…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It looks like some kind of switch.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>なんのスイッチなんだろう？
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I wonder what it does...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>床に扉がある…
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a hatch on the floor...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「ガタガタガタ！」
+#. <CLT>
+msgctxt "0020 | NARRATION"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>開かない…
+#. 鍵が掛かってるみたいだ…
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The door won't budge. It must be locked.\n"
+"<CLT>"
+msgstr ""
+
+#. はい
+msgctxt "0022 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0023 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0024 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""

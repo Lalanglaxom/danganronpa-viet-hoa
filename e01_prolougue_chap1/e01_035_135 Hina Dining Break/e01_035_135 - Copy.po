@@ -1,0 +1,324 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 朝日奈さんは…食堂の調査？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Hina... Are you investigating the dining hall?"
+msgstr ""
+
+#. ううん、休憩中。
+#. てか、ずっと休憩してるんだけどね。
+msgctxt "0002 | AOI ASAHINA"
+msgid ""
+"Oh, no. I'm just taking a break. Actually, I've been\n"
+"taking a break since we started..."
+msgstr ""
+
+#. こんな経験初めてだからさ…
+#. 何をどうしたらいいか、さっぱりで…
+msgctxt "0003 | AOI ASAHINA"
+msgid ""
+"This is all a first for me, ya know? I don't have the\n"
+"first clue what I should be doing."
+msgstr ""
+
+#. そうだよね…
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "I know what you mean..."
+msgstr ""
+
+#. それにさ、なんだかこの食堂って
+#. 落ち着くんだよね。
+msgctxt "0005 | AOI ASAHINA"
+msgid ""
+"And I dunno why, but being in the dining hall helps\n"
+"keep me calm."
+msgstr ""
+
+#. だから…ついつい居座っちゃうんだ…
+msgctxt "0006 | AOI ASAHINA"
+msgid ""
+"So I know I shouldn't, but I've just been\n"
+"kinda...hanging around here."
+msgstr ""
+
+#. 舞園ちゃんが殺された昨日の夜も…
+#. そうだったし…
+msgctxt "0007 | AOI ASAHINA"
+msgid ""
+"To tell the truth...I was doing the same thing last\n"
+"night, when Sayaka was killed..."
+msgstr ""
+
+#. あのさ、朝日奈さんは知らない？
+#. 食堂の包丁が１本足りないみたいなんだけど…
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"Hey, so...did you notice that one of the kitchen\n"
+"knives is missing from the dining hall?"
+msgstr ""
+
+#. そうそう、私も変だと思ってたんだよね。
+#. いつの間にか、包丁が無くなっててさ…
+msgctxt "0009 | AOI ASAHINA"
+msgid ""
+"Yeah, weird huh? I thought it was kinda strange, a\n"
+"knife just suddenly disappearing like that."
+msgstr ""
+
+#. じゃあ、包丁は最初から足りなかった訳じゃないんだ？
+msgctxt "0010 | MAKOTO NAEGI"
+msgid "Oh, so it wasn't missing from the beginning?"
+msgstr ""
+
+#. 違うよ。前に見た時には、
+#. ちゃんと全部揃ってたもん。
+msgctxt "0011 | AOI ASAHINA"
+msgid ""
+"Nope. Last I remember, they were all lined up in a\n"
+"nice, neat row."
+msgstr ""
+
+#. 包丁がなくなったのに気付いたのは、いつの事？
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "So when did you notice one of them had disappeared?"
+msgstr ""
+
+#. 昨日の夜、紅茶を飲もうとして、
+#. 厨房に入った時は、確かに包丁は揃ってたよ。
+msgctxt "0013 | AOI ASAHINA"
+msgid ""
+"Well, I went to go get some tea from the kitchen last\n"
+"night, and all the knives were still there."
+msgstr ""
+
+#. だけど、食堂で紅茶を飲んだ後、
+#. その紅茶を片づけようと厨房に入った時には…
+msgctxt "0014 | AOI ASAHINA"
+msgid ""
+"But when I finished my tea and went back into the\n"
+"kitchen to wash my glass..."
+msgstr ""
+
+#. もうなかったんだ…
+msgctxt "0015 | AOI ASAHINA"
+msgid "...one of the knives was gone."
+msgstr ""
+
+#. じゃあ、朝日奈さんが食堂で紅茶を飲んでいる間に、
+#. 包丁は消えちゃったんだね？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"So you're saying the knife disappeared while you were\n"
+"drinking your tea in the dining hall?"
+msgstr ""
+
+#. う、うん…
+msgctxt "0017 | AOI ASAHINA"
+msgid "Yeah..."
+msgstr ""
+
+#. <CLT 4>つまり、包丁が持ち出されたのは、
+#. 朝日奈さんが食堂にいる間だったんだな。
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>In other words, you were right there in the dining\n"
+"hall when someone came and took it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だったら、朝日奈さんは知ってるはずだ。
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Then you should be able to say for sure...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その間、ボクが食堂に行ってないって事を…
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You can tell everyone I didn't come to the dining hall\n"
+"last night...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>つまり、ボクが凶器を持ち出していないって事を！
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which proves I didn't take it!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>朝日奈の証言<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0022 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Aoi's Account<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. ねぇ、ところでさ…
+msgctxt "0023 | AOI ASAHINA"
+msgid "Hey, by the way..."
+msgstr ""
+
+#. 苗木って、本当に舞園ちゃんを殺しちゃったの？
+msgctxt "0024 | AOI ASAHINA"
+msgid "Did you really kill Sayaka?"
+msgstr ""
+
+#. な、何言ってんだよ！　
+#. そんな訳ないじゃないか！！
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "Wh-What!? Of course not! I would never!"
+msgstr ""
+
+#. ………………
+msgctxt "0026 | AOI ASAHINA"
+msgid "..."
+msgstr "..."
+
+#. 朝日奈さんはボクが殺したって…思ってるの？
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "Hina...do you really think I murdered her?"
+msgstr ""
+
+#. 舞園ちゃんは苗木の部屋で殺されたんだよね？
+#. だとしたら、やっぱり…
+msgctxt "0028 | AOI ASAHINA"
+msgid ""
+"Well...she was killed in your room, right? So I\n"
+"mean..."
+msgstr ""
+
+#. でも…舞園ちゃんは苗木と仲良かったし、
+#. そんな関係なのに殺人なんて…
+msgctxt "0029 | AOI ASAHINA"
+msgid ""
+"You guys were supposed to be friends, right? But you\n"
+"still...killed her..."
+msgstr ""
+
+#. だけど、仲良いからこそ殺人が起きるってのは
+#. ドラマの定番でもあるし…
+msgctxt "0030 | AOI ASAHINA"
+msgid ""
+"On the other hand, two people becoming good friends,\n"
+"then one killing the other is a classic drama setup."
+msgstr ""
+
+#. とか、全部ひっくるめて考えると…
+msgctxt "0031 | AOI ASAHINA"
+msgid "So when you consider everything together..."
+msgstr ""
+
+#. 結局…よくわかんないよ……
+msgctxt "0032 | AOI ASAHINA"
+msgid "...I honestly have no idea."
+msgstr ""
+
+#. ………………
+msgctxt "0033 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. 学校エリアの…赤い扉…
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "The red door on the 1st floor..."
+msgstr ""
+
+#. そこに行けばいいんだな…
+msgctxt "0035 | MAKOTO NAEGI"
+msgid "That's where I should go."
+msgstr ""
+
+#. …行くしかないんだな。
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "...No, where I *have* to go."
+msgstr ""
+
+#. <CLT 4>こんなモニターなんて…
+#. 気にしてる場合じゃない。
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't waste time worrying about these monitors...\n"
+"<CLT>"
+msgstr ""
+
+#. 忘れよう。記憶から抹消しよう。
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "Forget it. I need to just erase it from my memory."
+msgstr ""
+
+#. <CLT 4>この監視カメラで…
+#. ボクらが捜査してる姿を見てるって言うのか…
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Whoever's behind this must be using these cameras to\n"
+"observe our investigation...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな事させて…
+#. 一体何が目的なんだよ…！
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To force us into a situation like this... What the\n"
+"hell do they want from us!?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>捜査に制限時間はあるのか？
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I wonder if there's a time limit on the\n"
+"investigation...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>とにかく、急いだ方が良さそうだな。
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, doesn't matter. Either way I need to move as\n"
+"fast as I can.\n"
+"<CLT>"
+msgstr ""
+
+#. はい
+msgctxt "0043 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0044 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0045 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""

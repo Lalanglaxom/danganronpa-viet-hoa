@@ -1,0 +1,96 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. はぁーあ…
+#. いつになったら、ここから出られるんだ…？
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid "Gaah... When are we gonna get outta here...?"
+msgstr ""
+"Hầy... Đến bao giờ tụi mình mới thoát được khỏi cái chỗ này \n"
+"đây hả trời...?"
+
+#. 一緒に過ごす
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Spend some time with Hiro"
+msgstr "Dành thời gian với Hiro"
+
+#. 他の場所へ行く
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Go see who else is around"
+msgstr "Đi xem còn ai khác quanh đây"
+
+#. <CLT 4>…どうしよう？
+#. 葉隠クンと一緒に過ごそうか？
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Should I hang out with Hiro for a while?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Nên làm gì đây?\n"
+"Hay là mình dành thời gian với Hiro nhỉ?\n"
+"<CLT>"
+
+#. そんじゃ、特別に苗木っちには見せてやんべ。
+#. 俺の背中にある“聖痕”をな…
+msgctxt "0005 | YASUHIRO HAGAKURE"
+msgid ""
+"Oh, I've got something I wanted to show you! I got the\n"
+"stigmata...on my back!"
+msgstr ""
+"Được rồi, đặc cách cho Makoto xem cái này luôn nha. Chính \n"
+"là cái \"Thánh ấn\" ở trên lưng tui đó!"
+
+#. ふっふっふ…ご利益があんべ。
+msgctxt "0006 | YASUHIRO HAGAKURE"
+msgid "Heh-heh-heh. It's a gift from the gods!"
+msgstr "Hế hế hế... Nhìn vào là thấy linh ứng ngay ấy mà!"
+
+#. <CLT 4>葉隠クンの背中にある
+#. よくわからない傷跡を見させられた。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro showed me a scar on his back, though I didn't\n"
+"really get what it meant...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình vừa bị bắt xem cái vết sẹo chẳng biết từ đâu ra\n"
+"trên lưng của Hiro...\n"
+"<CLT>"
+
+#. <CLT 4>葉隠クンと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ hôm nay mình và Hiro đã thân nhau hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0011 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hiro a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Hiro không?<CLT>"

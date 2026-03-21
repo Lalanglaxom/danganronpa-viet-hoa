@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. お、私と一緒にストレッチでもする！？
+msgctxt "0001 | AOI ASAHINA"
+msgid "You wanna do some stretches with me?"
+msgstr "Ồ, ông muốn cùng tui tập vài động tác giãn cơ không!?"
+
+#. <CLT 4>朝日奈さんと一緒に、
+#. 入念なストレッチを繰り返した。
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I followed Hina's lead and did some elaborate\n"
+"stretching...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã làm theo sự hướng dẫn của Hina và thực hiện \n"
+"các động tác giãn cơ thật kỹ lưỡng...\n"
+"<CLT>"
+
+#. じゃあさ、ストレス発散に軽く走ろっか？
+msgctxt "0003 | AOI ASAHINA"
+msgid "You wanna go for a run to relieve some of this stress?"
+msgstr "Vậy thì, tụi mình cùng chạy bộ một chút để xả stress đi!"
+
+#. <CLT 4>朝日奈さんと一緒に、
+#. 校内を走り回って過ごした。
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hina and I went for a light run through the school.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã cùng Hina chạy bộ quanh trường...\n"
+"<CLT>"
+
+#. オッケー！　たまには、
+#. ゆっくりと、ぶらぶらしますか！
+msgctxt "0005 | AOI ASAHINA"
+msgid "Okay! You wanna go for a walk? I don't care where to."
+msgstr ""
+"Ok luôn! Thỉnh thoảng cũng nên đi dạo thong dong một chút \n"
+"cho khuây khỏa nhỉ!"
+
+#. と言っても…
+#. 結局、この不気味な建物の中だけなんだけど…
+msgctxt "0006 | AOI ASAHINA"
+msgid ""
+"Although, no matter where we go, we're still stuck in\n"
+"this stupid school..."
+msgstr ""
+"Mà nói là đi dạo chứ... cuối cùng cũng chỉ quanh quẩn trong \n"
+"cái tòa nhà quái gở này thôi..."
+
+#. <CLT 4>朝日奈さんと一緒に、
+#. 校内 को ぶらぶら歩いて過ごした。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hina and I walked aimlessly around the school...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tôi đã cùng Hina đi dạo thong dong khắp các hành \n"
+"lang trong trường...\n"
+"<CLT>"
+
+#. <CLT 4>朝日奈さんと少し仲良くなれたみたいだ…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hina and I grew a little closer today.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như hôm nay tôi và Hina đã trở nên thân thiết \n"
+"hơn một chút...\n"
+"<CLT>"
+
+#. 渡す
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes, definitely"
+msgstr "Có, chắc chắn rồi"
+
+#. 渡さない
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Not really, no"
+msgstr "Không hẳn"
+
+#. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
+msgctxt "0011 | NARRATION"
+msgid "<CLT 3><CLT><CLT 23>Would you like to give Hina a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Hina không?<CLT>"
