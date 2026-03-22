@@ -11,7 +11,7 @@ from playwright.sync_api import sync_playwright
 
 # "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\ChromeDebug"
 
-MAX_FILES_TO_TRANSLATE = 3      # How many .po files to process per run
+MAX_FILES_TO_TRANSLATE = 5      # How many .po files to process per run
 MAX_LINES_PER_BATCH    = 600    # Max lines of .po content sent to Gemini per request
 WAIT_BETWEEN_BATCHES   = 8      # Seconds to pause between Gemini calls
 
