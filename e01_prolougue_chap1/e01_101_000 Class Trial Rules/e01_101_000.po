@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. まずは、学級裁判の簡単な説明から始めましょう！
+#. 学級裁判の結果はオマエラの投票により決定されます。
+msgctxt "0001 | MONOKUMA"
+msgid ""
+"Let's begin with a basic explanation of the class\n"
+"trial! So, your votes will determine the results."
+msgstr ""
+"Ta hãy bắt đầu với phần giải thích ngắn gọn về lớp xét xử!\n"
+"Kết quả sẽ được quyết định dựa trên tổng số phiếu bầu."
+
+#. 正しいクロを指摘出来れば、クロだけがおしおき。
+#. だけど…もし間違った人物をクロとした場合は…
+msgctxt "0002 | MONOKUMA"
+msgid ""
+"If you can figure out \"whodunnit\" then only they will\n"
+"receive punishment. But if you pick the wrong one..."
+msgstr ""
+"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị \n"
+"nhận hình phạt. Nhưng nếu các em chọn nhầm người..."
+
+#. クロ以外の全員がおしおきされ、
+#. みんなを欺いたクロだけが晴れて卒業となりまーす！
+msgctxt "0003 | MONOKUMA"
+msgid ""
+"...then I'll punish everyone *besides* the blackened,\n"
+"and the one that deceived everyone else will graduate!"
+msgstr ""
+"...thì ta sẽ trừng phạt tất cả mọi người *ngoại trừ* kẻ thủ ác, \n"
+"và kẻ đã lừa dối tất cả sẽ được tốt nghiệp!"
+
+#. 本当に…この中に犯人がいるんだよな？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "And the killer really is one of us, right?"
+msgstr ""
+"Và hung thủ thực sự là một người trong chúng ta, \n"
+"đúng không?"
+
+#. 当然です。
+msgctxt "0005 | MONOKUMA"
+msgid "Of course!"
+msgstr "Tất nhiên rồi!"
+
+#. よし、みんなで目を閉じよう！
+#. そして、犯人は挙手したまえ！
+msgctxt "0006 | KIYOTAKA ISHIMARU"
+msgid ""
+"Okay then...everyone close your eyes, and whoever did\n"
+"it, raise your hand!"
+msgstr ""
+"Được rồi... tất cả hãy nhắm mắt lại, và ai đã làm việc đó, \n"
+"hãy giơ tay lên!"
+
+#. アホか、挙げる訳ねーだろ…
+msgctxt "0007 | MONDO OOWADA"
+msgid ""
+"Don't be a goddamn idiot. Why the hell would they\n"
+"raise their hand?"
+msgstr "Mày bị ngu à, làm quái gì có chuyện nó lại giơ tay chứ..."
+
+#. …ちょっといい？
+#. 議論の前に聞いておきたいんだけど…
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"Before we move on and start the trial, can I ask a\n"
+"question real quick?"
+msgstr ""
+"Trước khi bắt đầu buổi xét xử, tôi có thể hỏi nhanh một câu \n"
+"được không?"
+
+#. あれって…どういう意味？
+msgctxt "0009 | KYOUKO KIRIGIRI"
+msgid "What's going on with...those pictures?"
+msgstr "Chuyện gì với... những bức ảnh đó vậy?"
+
+#. 死んだからって仲間外れにするのはかわいそうでしょ？
+#. 友情は生死を飛び越えるんだよ！
+msgctxt "0010 | MONOKUMA"
+msgid ""
+"I'd feel awful if they got left out just because they\n"
+"died. Friendship penetrates even death's barrier!"
+msgstr ""
+"Nếu chỉ vì họ đã chết mà bị ra rìa thì tội nghiệp lắm phải \n"
+"không? Tình bạn có thể vượt qua cả rào cản sinh tử đấy!"
+
+#. せいしが…飛び…超える！？
+msgctxt "0011 | HIFUMI YAMADA"
+msgid "Friendship...penetrates?"
+msgstr "Tình bạn... vượt qua sao?"
+
+#. それでしたら…あの空席は…？
+msgctxt "0012 | CELES"
+msgid "Okay, but what about that other empty seat?"
+msgstr "Vậy còn... chiếc ghế trống kia thì sao?"
+
+#. わたくし達は１５人なのに…
+#. なぜ、席が１６個もあるのですか？
+msgctxt "0013 | CELES"
+msgid ""
+"There were only fifteen of us to begin with, so why\n"
+"are there sixteen seats?"
+msgstr ""
+"Chúng ta vốn chỉ có mười lăm người, vậy tại sao lại có đến \n"
+"mười sáu chiếc ghế?"
+
+#. …深い意味はないよ。
+#. 最大１６人収容可能な裁判場っていうだけ。
+msgctxt "0014 | MONOKUMA"
+msgid ""
+"Oh, no reason. It's just that our little courtroom\n"
+"here can technically fit up to sixteen people."
+msgstr ""
+"À, không có ẩn ý gì đâu. Chỉ là phòng xét xử này có thể chứa \n"
+"tối đa mười sáu người thôi."
+
+#. さてと、前置きはこれぐらいにして…
+#. そろそろ始めよっか！
+msgctxt "0015 | MONOKUMA"
+msgid ""
+"Okay, that about does it for the preamble. Get ready\n"
+"to get started!"
+msgstr ""
+"Thôi, phần giới thiệu thế là đủ rồi. Chuẩn bị để bắt đầu \n"
+"thôi nào!"
+
+#. まずは、事件のまとめからだね！
+#. じゃあ、議論を開始してくださーい！！
+msgctxt "0016 | MONOKUMA"
+msgid ""
+"First up is the case summary. Now, let the class\n"
+"trial...begin!"
+msgstr "Đầu tiên là phần tóm tắt vụ án. Nào, lớp xét xử... bắt đầu!"
+
+#. <CLT 4>始まる…犯人を決める為の議論が……
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's about to begin—the debate to decide who we think\n"
+"the killer is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sắp bắt đầu rồi—cuộc tranh luận để tìm ra \n"
+"kẻ sát nhân...\n"
+"<CLT>"
+
+#. <CLT 4>何か気付いた事があったら、
+#. ボク自身が発言しないと…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anything I found, anything I noticed... I have to be\n"
+"ready to speak up about everything.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bất cứ điều gì tôi tìm thấy hay nhận ra... tôi phải \n"
+"sẵn sàng để nói về tất cả.\n"
+"<CLT>"
+
+#. <CLT 4>ボクだけじゃない…
+#. みんなの命がかかってるんだ…！
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Because this isn't just about me. Everyone's lives are\n"
+"on the line!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bởi vì chuyện này không chỉ là về tôi. Mạng sống \n"
+"của mọi người đều đang bị đe dọa!\n"
+"<CLT>"

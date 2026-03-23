@@ -153,42 +153,31 @@ def build_po_block(entry: dict) -> str:
     )
 
 
-# def write_translations_to_po(filepath: str, raw: str, translations: dict) -> None:
-#     """
-#     Patch `raw` PO content with new translations then save to `filepath`.
-#     Only touches entries whose msgctxt appears in `translations`.
-#     translations: { msgctxt_str → Vietnamese_text }
-#     """
-#     updated = raw
+def batch_entries(entries: list) -> list:
+    """
+    Groups entries into batches to avoid hitting Gemini's context window limits.
+    Uses MAX_LINES_PER_BATCH as a guide for when to split.
+    """
+    batches = []
+    current_batch = []
+    current_line_count = 0
 
-#     for msgctxt, translated_text in translations.items():
-#         ctx_esc = re.escape(msgctxt)
+    for entry in entries:
+        # Estimate lines (msgid lines + metadata)
+        entry_lines = entry["msgid"].count("\n") + 3 
+        
+        if current_line_count + entry_lines > MAX_LINES_PER_BATCH and current_batch:
+            batches.append(current_batch)
+            current_batch = []
+            current_line_count = 0
+            
+        current_batch.append(entry)
+        current_line_count += entry_lines
 
-#         Q = r'"(?:[^"\\\\]|\\\\.)*"'
-#         entry_pat = re.compile(
-#             r'(msgctxt\s+"' + ctx_esc + r'"\n'
-#             r'(?:msgid\s+(?:' + Q + r'\n?)+)'
-#             r')(msgstr\s+(?:' + Q + r'\n?)*)',
-#             re.MULTILINE,
-#         )
+    if current_batch:
+        batches.append(current_batch)
+    return batches
 
-#         new_msgstr = f"msgstr {_text_to_po_val(translated_text)}"
-
-#         def _replacer(m, ns=new_msgstr):
-#             return m.group(1) + ns
-
-#         patched = entry_pat.sub(_replacer, updated, count=1)
-#         if patched == updated:
-#             print(f"    ⚠  Could not patch entry: {msgctxt}")
-#         updated = patched
-
-#     # DRAT rejects bare "#." lines — add a trailing space to make "#. "
-#     cleaned = "\n".join(
-#         "#. " if line.rstrip() == "#." else line
-#         for line in updated.split("\n")
-#     )
-#     with open(filepath, "w", encoding="utf-8") as f:
-#         f.write(cleaned)
 
 def write_translations_to_po(filepath: str, raw: str, translations: dict) -> None:
     """
@@ -199,7 +188,6 @@ def write_translations_to_po(filepath: str, raw: str, translations: dict) -> Non
     for msgctxt, translated_text in translations.items():
         ctx_esc = re.escape(msgctxt)
 
-        # FIXED REGEX: removed the extra backslashes so \n matches correctly
         Q = r'"(?:[^"\\]|\\.)*"'
         entry_pat = re.compile(
             r'(msgctxt\s+"' + ctx_esc + r'"\n'
@@ -240,7 +228,6 @@ def parse_translated_block(response_text: str) -> dict:
 
     translations = {}
 
-    # FIXED REGEX: matches single quoted strings including escaped \n properly
     Q = r'"(?:[^"\\]|\\.)*"'
 
     entry_pat = re.compile(
@@ -259,56 +246,6 @@ def parse_translated_block(response_text: str) -> dict:
 
     return translations
 
-# def parse_translated_block(response_text: str) -> dict:
-#     """
-#     Parse Gemini's response which contains .po entries.
-#     Handles both fenced (``` ```) and bare .po output.
-#     msgid is optional — Gemini sometimes omits it and returns only msgctxt + msgstr.
-#     Returns { msgctxt → Vietnamese msgstr text }.
-#     """
-#     # Normalise browser line endings before parsing
-#     response_text = response_text.replace("\r\n", "\n").replace("\r", "\n")
-
-#     # Strip code fences if present
-#     fenced = re.search(r"```[a-z]*\s*(.*?)\s*```", response_text, re.DOTALL)
-#     content = fenced.group(1) if fenced else response_text
-
-#     translations = {}
-
-#     # Q matches one PO quoted string including escaped chars like \" and \\
-#     Q = r'"(?:[^"\\\\]|\\\\.)*"'
-
-#     # Primary: msgctxt + optional msgid + msgstr
-#     entry_pat = re.compile(
-#         r'msgctxt\s+"([^"]+)"\s*\n'
-#         r'(?:msgid\s+(?:' + Q + r'\n?)+)?'   # msgid — optional
-#         r'(msgstr\s+(?:' + Q + r'\n?)*)',     # msgstr — required
-#         re.MULTILINE,
-#     )
-
-#     for m in entry_pat.finditer(content):
-#         msgctxt    = m.group(1)
-#         msgstr_raw = m.group(2)
-#         msgstr     = _po_raw_to_text(msgstr_raw)
-#         if msgstr.strip():
-#             translations[msgctxt] = msgstr
-
-#     return translations
-
-
-# ════════════════════════════════════════════════════════════════════
-#  GEMINI  HELPERS
-# ════════════════════════════════════════════════════════════════════
-
-# def _wait_for_response(page) -> None:
-#     """Wait for Gemini to start and finish generating."""
-#     try:
-#         page.wait_for_selector(STOP_BTN_SEL, state="visible",  timeout=15_000)
-#         page.wait_for_selector(STOP_BTN_SEL, state="detached", timeout=180_000)
-#     except Exception:
-#         pass
-#     time.sleep(1.5)
-
 
 def _count_responses(page) -> int:
     """Count how many model-response elements exist right now."""
@@ -318,20 +255,11 @@ def _count_responses(page) -> int:
 def _extract_nth_response(page, index: int) -> str:
     """
     Extract text from the model-response at `index` (0-based).
-    Falls back to the last response if the nth one isn't found.
-
-    Gemini response structure:
-      model-response
-        └─ message-content
-             └─ div.markdown
-                  └─ <p data-path-to-node> (plain text)
-                  └─ <pre>                 (code block)
     """
     SHORT = 5_000   # ms — for count/existence checks only
 
     all_resps = page.locator("model-response")
 
-    # Resolve which bubble to read: prefer nth, fall back to last
     total = all_resps.count()
     if total == 0:
         return ""
@@ -341,7 +269,6 @@ def _extract_nth_response(page, index: int) -> str:
     else:
         resp = all_resps.last
 
-    # 1. Code block scoped to this bubble
     try:
         pre = resp.locator("pre")
         if pre.count() > 0:
@@ -349,7 +276,6 @@ def _extract_nth_response(page, index: int) -> str:
     except Exception:
         pass
 
-    # 2. message-content scoped to this bubble
     try:
         mc = resp.locator("message-content")
         if mc.count() > 0:
@@ -357,7 +283,6 @@ def _extract_nth_response(page, index: int) -> str:
     except Exception:
         pass
 
-    # 3. Paragraphs with data-path-to-node
     try:
         paras = resp.locator("p[data-path-to-node]")
         n = paras.count()
@@ -366,60 +291,14 @@ def _extract_nth_response(page, index: int) -> str:
     except Exception:
         pass
 
-    # 4. Last-resort: full bubble text with a short timeout
     try:
         return resp.inner_text(timeout=SHORT)
     except Exception:
         return ""
 
 
-# def send_to_gemini(page, text: str) -> str:
-#     """
-#     Paste `text` directly into the Gemini chatbox and submit.
-#     Gemini's chatbox is a contenteditable div — NOT <input>/<textarea>.
-#     Never call .input_value() on it; use JS innerText to verify instead.
-#     Returns Gemini's response string.
-#     """
-#     chatbox = page.get_by_role("textbox")
-#     chatbox.click()
-
-#     # JS paste — safe for contenteditable divs
-#     page.evaluate(
-#         """(txt) => {
-#             const el = document.activeElement;
-#             el.focus();
-#             document.execCommand('selectAll');
-#             document.execCommand('insertText', false, txt);
-#         }""",
-#         text,
-#     )
-
-#     # Verify via innerText (works on contenteditable); fallback to fill()
-#     placed = page.evaluate("() => document.activeElement.innerText || ''")
-#     if not placed.strip() and len(text) < 50_000:
-#         chatbox.fill(text)
-
-#     # Record how many responses exist before we submit
-#     response_index = _count_responses(page)
-
-#     page.keyboard.press("Enter")
-#     print("    → Waiting for Gemini response...")
-#     _wait_for_response(page)
-
-#     # Wait up to 15s for the new response bubble to appear
-#     try:
-#         page.locator("model-response").nth(response_index).wait_for(state="attached", timeout=15_000)
-#     except Exception:
-#         pass  # Already handled by fallback-to-last in _extract_nth_response
-
-#     # Extra small buffer for content to render inside the bubble
-#     time.sleep(0.5)
-
-#     return _extract_nth_response(page, response_index)
-
 def _wait_for_generation_to_finish(page, response_index: int) -> str:
     """Wait by monitoring the text output until it stops changing."""
-    # Wait up to 15s for the new response bubble to appear
     try:
         page.locator("model-response").nth(response_index).wait_for(state="attached", timeout=15_000)
     except Exception:
@@ -432,10 +311,8 @@ def _wait_for_generation_to_finish(page, response_index: int) -> str:
     for _ in range(max_wait_seconds):
         current_text = _extract_nth_response(page, response_index)
         
-        # If text exists and hasn't changed since the last check
         if current_text and current_text == last_text:
             stable_count += 1
-            # INCREASED TO 8 SECONDS to prevent cutting off mid-generation lag
             if stable_count >= 8:  
                 return current_text
         else:
@@ -455,7 +332,6 @@ def send_to_gemini(page, text: str) -> str:
     chatbox = page.get_by_role("textbox")
     chatbox.click()
 
-    # JS paste — safe for contenteditable divs
     page.evaluate(
         """(txt) => {
             const el = document.activeElement;
@@ -466,22 +342,16 @@ def send_to_gemini(page, text: str) -> str:
         text,
     )
 
-    # Verify via innerText (works on contenteditable); fallback to fill()
     placed = page.evaluate("() => document.activeElement.innerText || ''")
     if not placed.strip() and len(text) < 50_000:
         chatbox.fill(text)
 
-    # Record how many responses exist before we submit
     response_index = _count_responses(page)
-
-    time.sleep(0.5) # Brief pause to let the UI register the pasted text
+    time.sleep(0.5) 
     page.keyboard.press("Enter")
     print("    → Waiting for Gemini response...")
     
-    # Wait using the new stability checker and return the final text
     final_text = _wait_for_generation_to_finish(page, response_index)
-    
-    # Extra small buffer for any final DOM settling
     time.sleep(0.5)
 
     return final_text
@@ -494,20 +364,6 @@ def discover_files(root_dir: str, limit: int) -> list:
     """
     Walk `root_dir` and collect up to `limit` segment folders whose
     working .po file has at least one empty msgstr.
-
-    Rules (same convention as the validator):
-      - Folder name must have NO spaces (folders with spaces are skipped
-        but their children are still searched).
-      - The working .po must be named exactly <folder_name>.po
-      - The copy .po must be named exactly <folder_name> - Copy.po
-
-    Each result dict:
-        work_path      – path to the working .po  (read back + write)
-        copy_path      – path to the Copy.po      (source for prompt)
-        work_raw       – raw string of working .po
-        copy_entries   – parsed entries from Copy.po (or work if no copy)
-        missing_ctxts  – set of msgctxt values that are empty in work .po
-        folder_path    – the direct parent folder containing the .po files
     """
     results = []
 
@@ -519,9 +375,6 @@ def discover_files(root_dir: str, limit: int) -> list:
         if "SKIP" in folder_name:
             continue
 
-        # Derive segment_id: part before first space, or full name if no spaces
-        # e.g. "e00_001_000 trans" → "e00_001_000"
-        # e.g. "00_System"        → "00_System"
         segment_id = folder_name.split()[0] if " " in folder_name else folder_name
 
         po_filename   = f"{segment_id}.po"
@@ -539,10 +392,12 @@ def discover_files(root_dir: str, limit: int) -> list:
             print(f"  ⚠  Parse error ({work_path}): {e}")
             continue
 
-        missing_ctxts = {e["msgctxt"] for e in work_entries if e["is_empty"]}
-        if not missing_ctxts:
+        # Get missing msgctxts
+        missing_ctxts_set = {e["msgctxt"] for e in work_entries if e["is_empty"]}
+        if not missing_ctxts_set:
             continue
 
+        # Use Copy.po as source for Japanese context if it exists
         if copy_path:
             try:
                 _, copy_entries = parse_po(copy_path)
@@ -553,14 +408,17 @@ def discover_files(root_dir: str, limit: int) -> list:
             print(f"  ⚠  No Copy.po in {dirpath} — using working file as source")
             copy_entries = work_entries
 
+        # Extract only the required entry dictionaries to translate
+        missing_entries = [e for e in copy_entries if e["msgctxt"] in missing_ctxts_set]
+
         results.append({
-            "work_path":     work_path,
-            "copy_path":     copy_path,
-            "work_raw":      work_raw,
-            "copy_entries":  copy_entries,
-            "missing_ctxts": missing_ctxts,
-            "folder_path":   dirpath,
-            "segment_id":    segment_id,
+            "work_path":       work_path,
+            "copy_path":       copy_path,
+            "work_raw":        work_raw,
+            "missing_entries": missing_entries,
+            "total_entries":   len(work_entries),
+            "folder_path":     dirpath,
+            "segment_id":      segment_id,
         })
 
         if len(results) >= limit:
@@ -568,80 +426,34 @@ def discover_files(root_dir: str, limit: int) -> list:
 
     return results
 
-
 # ════════════════════════════════════════════════════════════════════
 #  PER-FILE  PROCESSOR
 # ════════════════════════════════════════════════════════════════════
 
-def process_file(page, info: dict) -> None:
-    """Translate one .po file and rename its containing folder."""
-    work_path     = info["work_path"]
-    work_raw      = info["work_raw"]
-    copy_entries  = info["copy_entries"]
-    missing_ctxts = info["missing_ctxts"]
-    folder_path   = info["folder_path"]
+def process_file(page, fi: dict):
+    """
+    Translates missing entries in a single .po file using batches.
+    Raw Gemini responses are saved to a .txt file for debugging/review.
+    """
+    work_path = fi["work_path"]
+    base_name = os.path.splitext(os.path.basename(work_path))[0]
+    dir_path  = os.path.dirname(work_path)
+    
+    # Path for the debug text file
+    debug_txt_path = os.path.join(dir_path, f"{base_name}_translated.txt")
+    
+    print(f"\n  File   : {os.path.basename(work_path)}")
+    print(f"  Missing: {len(fi['missing_entries'])} / {fi['total_entries']} entries")
 
-    # Entries to translate: pull from Copy.po but only the ones missing in work .po
-    to_translate = [e for e in copy_entries if e["msgctxt"] in missing_ctxts]
-
-    print(f"\n{'─'*65}")
-    print(f"  Folder : {folder_path}")
-    print(f"  File   : {os.path.basename(work_path)}")
-    print(f"  Missing: {len(to_translate)} / {len(copy_entries)} entries")
-
-    if not to_translate:
-        print("  ✓ Nothing to translate.")
+    if not fi["missing_entries"]:
         return
 
-    # ── Split into batches by line count (max MAX_LINES_PER_BATCH) ─
-    def make_batches(entries):
-        batches, current, current_lines = [], [], 0
-        for e in entries:
-            block_lines = build_po_block(e).count("\n") + 1
-            if current and current_lines + block_lines > MAX_LINES_PER_BATCH:
-                batches.append(current)
-                current, current_lines = [], 0
-            current.append(e)
-            current_lines += block_lines
-        if current:
-            batches.append(current)
-        return batches
-    batches = make_batches(to_translate)
+    # Initialize/Clear the debug log
+    with open(debug_txt_path, "w", encoding="utf-8") as f:
+        f.write(f"--- Gemini Translation Raw Output for {os.path.basename(work_path)} ---\n\n")
 
-    all_translations: dict = {}
-
-    # for idx, batch in enumerate(batches):
-    #     print(f"\n  Batch {idx + 1}/{len(batches)}  ({len(batch)} entries)")
-
-    #     entries_text = "\n".join(build_po_block(e) for e in batch)
-    #     prompt       = TRANSLATE_PROMPT_TEMPLATE.format(entries=entries_text)
-
-    #     response = send_to_gemini(page, prompt)
-    #     parsed   = parse_translated_block(response)
-
-    #     if not parsed:
-    #         print(f"    ✗  No translations parsed.")
-    #     else:
-    #         # Filter to only entries we actually requested.
-    #         # Gemini sometimes bleeds in full-file context from previous turns.
-    #         requested = {e["msgctxt"] for e in batch}
-    #         valid  = {k: v for k, v in parsed.items() if k in requested}
-    #         extra  = len(parsed) - len(valid)
-    #         if extra:
-    #             print(f"    ℹ  Discarded {extra} unrequested entries (context bleed).")
-    #         if not valid:
-    #             print(f"    ✗  None of {len(parsed)} parsed entries matched this batch.")
-    #         else:
-    #             last_ctxt = batch[-1]["msgctxt"]
-    #             if last_ctxt not in valid:
-    #                 print(f"    ⚠  Got {len(valid)}/{len(batch)} — response may be truncated.")
-    #             else:
-    #                 print(f"    ✓  Got {len(valid)}/{len(batch)} translation(s).")
-    #             all_translations.update(valid)
-
-    #     if idx < len(batches) - 1:
-    #         print(f"  ⏳ Waiting {WAIT_BETWEEN_BATCHES}s before next batch...")
-    #         time.sleep(WAIT_BETWEEN_BATCHES)
+    batches = batch_entries(fi["missing_entries"])
+    all_translations = {}
 
     for idx, batch in enumerate(batches):
         print(f"\n  Batch {idx + 1}/{len(batches)}  ({len(batch)} entries)")
@@ -650,23 +462,21 @@ def process_file(page, info: dict) -> None:
         prompt       = TRANSLATE_PROMPT_TEMPLATE.format(entries=entries_text)
 
         response = send_to_gemini(page, prompt)
-        
-        # -------- NEW DEBUG PRINT -----------
-        print("\n" + "▼" * 40 + " GEMINI RAW RESPONSE " + "▼" * 40)
-        print(response)
-        print("▲" * 101 + "\n")
-        # ------------------------------------
 
-        parsed   = parse_translated_block(response)
+        # Write to debug file instead of terminal
+        with open(debug_txt_path, "a", encoding="utf-8") as f:
+            f.write(f"==================== BATCH {idx + 1} ====================\n")
+            f.write(response)
+            f.write("\n\n")
+
+        parsed = parse_translated_block(response)
 
         if not parsed:
-            print(f"    ✗  No translations parsed.")
+            print(f"    ✗  No translations parsed (Check {os.path.basename(debug_txt_path)})")
         else:
             requested = {e["msgctxt"] for e in batch}
             valid  = {k: v for k, v in parsed.items() if k in requested}
-            extra  = len(parsed) - len(valid)
-            if extra:
-                print(f"    ℹ  Discarded {extra} unrequested entries (context bleed).")
+            
             if not valid:
                 print(f"    ✗  None of {len(parsed)} parsed entries matched this batch.")
             else:
@@ -681,52 +491,39 @@ def process_file(page, info: dict) -> None:
             print(f"  ⏳ Waiting {WAIT_BETWEEN_BATCHES}s before next batch...")
             time.sleep(WAIT_BETWEEN_BATCHES)
 
-    if not all_translations:
-        print("  ✗ No translations to write — skipping write-back.")
+    # ── Write back to PO file ──
+    if all_translations:
+        write_translations_to_po(work_path, fi["work_raw"], all_translations)
+        print(f"  ✓  Saved {len(all_translations)} translations to {os.path.basename(work_path)}")
     else:
-        # ── Write back to the working .po file ────────────────────
-        write_translations_to_po(work_path, work_raw, all_translations)
-        print(f"\n  ✓ Written {len(all_translations)} translation(s) to {os.path.basename(work_path)}")
+        print("  ✗  No translations to write — skipping write-back.")
 
-    # ── Ask Gemini for a 2-3 word folder summary (always runs) ────
-    print("  Requesting folder name summary...")
-    time.sleep(WAIT_BETWEEN_BATCHES)
-
-    sample_lines = [
-        e["msgid"].replace("\n", " ").strip()
-        for e in copy_entries
-        if e["msgid"].strip() and "<CLT" not in e["msgid"]
-    ][:6]
-
+    # ── Handle Folder Summary ──
+    print(f"  Requesting folder name summary...")
+    context_entries = fi["missing_entries"][:6]
     summary_prompt = SUMMARY_PROMPT.format(
-        samples="\n".join(f"- {s}" for s in sample_lines)
+        samples="\n".join(f"- {e['msgid']}" for e in context_entries)
     )
+
     summary_raw = send_to_gemini(page, summary_prompt)
+    
+    # Save the summary to the log file too
+    with open(debug_txt_path, "a", encoding="utf-8") as f:
+        f.write("==================== FOLDER SUMMARY ====================\n")
+        f.write(summary_raw)
+        f.write("\n\n")
 
-    # Sanitise: ASCII words only — blocks Japanese/symbols from leaking in
-    summary = summary_raw.strip().strip('"').strip("'")
-    summary = summary.split("\n")[0].strip()
-    summary = re.sub(r'[<>:"/\\|?*\[\]#.]', "", summary)
-    summary = " ".join(w for w in summary.split() if w.isascii())[:50].strip()
+    folder_label = summary_raw.strip().strip('"').replace(":", "").replace("/", "")
 
-    segment_id = os.path.basename(folder_path).split()[0]
-    old_name   = os.path.basename(folder_path)
-
-    if summary:
-        # Only rename if folder has no label yet (bare segment_id)
-        if old_name.strip() == segment_id.strip():
-            parent   = os.path.dirname(folder_path)
-            new_name = f"{segment_id} {summary}"
-            new_path = os.path.join(parent, new_name)
-            try:
-                os.rename(folder_path, new_path)
-                print(f"  ✓ Folder renamed:  {old_name}  →  {new_name}")
-            except Exception as e:
-                print(f"  ⚠  Rename failed: {e}")
-        else:
-            print(f"  ℹ  Already labelled — skipping rename: {old_name}")
+    if folder_label and all(ord(c) < 128 for c in folder_label) and len(folder_label) < 50:
+        new_dir_name = f"{dir_path} {folder_label}"
+        try:
+            os.rename(dir_path, new_dir_name)
+            print(f"  ✓  Renamed folder to: ...{folder_label}")
+        except Exception as e:
+            print(f"  ⚠  Could not rename folder: {e}")
     else:
-        print("  ⚠  No valid ASCII summary — folder name unchanged.")
+        print(f"  ⚠  No valid ASCII summary — folder name unchanged.")
 
 
 # ════════════════════════════════════════════════════════════════════
@@ -746,7 +543,6 @@ def run() -> None:
     print("  Gemini PO Translator — Danganronpa Fan TL")
     print("═" * 65)
 
-    # ── Folder picker ──────────────────────────────────────────────
     translated_dir = pick_folder("Select your 'translated' working folder")
     if not translated_dir:
         print("No folder selected — exiting.")
@@ -755,7 +551,6 @@ def run() -> None:
     print(f"\n  Folder : {translated_dir}")
     print(f"  Limit  : {MAX_FILES_TO_TRANSLATE} file(s)\n")
 
-    # ── Scan for files that need translation ───────────────────────
     print("  Scanning for missing translations...")
     to_process = discover_files(translated_dir, MAX_FILES_TO_TRANSLATE)
 
@@ -767,9 +562,8 @@ def run() -> None:
     for fi in to_process:
         rel = os.path.relpath(fi["work_path"], translated_dir)
         copy_note = "(Copy.po found ✓)" if fi["copy_path"] else "(no Copy.po — using work file)"
-        print(f"    {rel}  —  {len(fi['missing_ctxts'])} missing  {copy_note}")
+        print(f"    {rel}  —  {len(fi['missing_entries'])} missing  {copy_note}")
 
-    # ── Connect to the already-open Chrome ────────────────────────
     print("\n  Connecting to Chrome on port 9222...")
     with sync_playwright() as p:
         try:
@@ -793,17 +587,13 @@ def run() -> None:
             "     want a clean context.\n"
         )
 
-        # ── Translate each file without touching the chat session ─
         for fi in to_process:
             process_file(page, fi)
 
-    # ── Summary ────────────────────────────────────────────────────
     msg = f"Processed {len(to_process)} file(s).\nCheck the console for details."
     print(f"\n{'═'*65}")
     print(f"  Done!  {msg}")
     print("═" * 65)
-
-
 
 
 if __name__ == "__main__":

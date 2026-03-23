@@ -1,16 +1,6 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 6/4/2023\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en-US\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+--- Gemini Translation Raw Output for e01_102_000.po ---
 
+==================== BATCH 1 ====================
 #. 僕の発言とその証拠…
 #. 何か矛盾している点でもあるのだろうか？
 msgctxt "0001 | KIYOTAKA ISHIMARU"
@@ -18,6 +8,8 @@ msgid ""
 "You think you have some proof that contradicts what I\n"
 "said...?"
 msgstr ""
+"Cậu nghĩ cậu có bằng chứng nào đó mâu thuẫn với những gì\n"
+"tôi đã nói sao...?"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -28,6 +20,9 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ cần phải suy nghĩ lại một lần nữa. Chắc chắn phải có\n"
+"một điểm mâu thuẫn nào đó ẩn giấu trong cuộc tranh luận này...\n"
+"<CLT>"
 
 #. フン…それがどうした。
 #. 俺の言ってる事に何か間違いがあるか？
@@ -36,6 +31,8 @@ msgid ""
 "Hmph. What, you think there's some mistake lurking in\n"
 "what I said?"
 msgstr ""
+"Hừ. Sao nào, cậu nghĩ có sai sót nào đang lẩn khuất trong\n"
+"những gì tôi vừa nói à?"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -46,11 +43,14 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ cần phải suy nghĩ lại một lần nữa. Chắc chắn phải có\n"
+"một điểm mâu thuẫn nào đó ẩn giấu trong cuộc tranh luận này...\n"
+"<CLT>"
 
 #. え？　どういう意味なのかなぁ…？
 msgctxt "0005 | CHIHIRO FUJISAKI"
 msgid "Huh...? What does that mean...?"
-msgstr ""
+msgstr "Hả...? Thế nghĩa là sao nhỉ...?"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -61,6 +61,9 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ cần phải suy nghĩ lại một lần nữa. Chắc chắn phải có\n"
+"một điểm mâu thuẫn nào đó ẩn giấu trong cuộc tranh luận này...\n"
+"<CLT>"
 
 #. <CLT 4>あれ…？　あの人の発言っておかしいよな…
 #. ボクの知っている情報とは明らかに矛盾するぞ…
@@ -71,6 +74,9 @@ msgid ""
 "It definitely contradicts what I already know...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hả? Có gì đó kỳ lạ về câu nói vừa rồi. Nó rõ ràng\n"
+"mâu thuẫn với những thông tin mà tớ đã biết...\n"
+"<CLT>"
 
 #. <CLT 4>あれ？　あの人の発言っておかしいぞ…
 #. <CLT>
@@ -79,6 +85,8 @@ msgid ""
 "<CLT 4>Huh? Something's off about what was just said...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hả? Có gì đó không ổn về những gì vừa được nói...\n"
+"<CLT>"
 
 #. <CLT 4>だって、舞園さんが抵抗すらしてなかったとすると、
 #. ボクの部屋があんな風になっている説明が付かない…
@@ -89,6 +97,9 @@ msgid ""
 "explanation for what happened to my room...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Bởi vì nếu Sayaka không hề kháng cự, thì không có lời\n"
+"giải thích nào cho những gì đã xảy ra với căn phòng của tớ cả...\n"
+"<CLT>"
 
 #. <CLT 23>今回の議論は、ここまでで一区切りでございます。
 #. <CLT>
@@ -98,6 +109,9 @@ msgid ""
 "sidebar.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Đối với cuộc tranh luận đầu tiên này, chúng tôi xin phép\n"
+"tạm dừng một chút để giải thích.\n"
+"<CLT>"
 
 #. <CLT 23>あなた様が、発言の<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>を見抜き、
 #. 論破しない限り、議論は<CLT><CLT 3>繰り返されます<CLT><CLT 23>。
@@ -108,6 +122,9 @@ msgid ""
 "contradictions<CLT><CLT 23>, the argument will <CLT><CLT 3>repeat<CLT><CLT 23>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Trừ khi bạn nhìn thấu và bác bỏ những <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23>,\n"
+"cuộc tranh luận sẽ <CLT><CLT 3>lặp đi lặp lại<CLT><CLT 23>.\n"
+"<CLT>"
 
 #. <CLT 23>発言の中に、<CLT><CLT 3>色が異なる文字<CLT><CLT 23>があったのに、
 #. お気付きでしょうか？
@@ -118,6 +135,9 @@ msgid ""
 "different color<CLT><CLT 23>. Did you happen to notice?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Trong nhóm các câu phát biểu, bạn có để ý thấy một số từ\n"
+"xuất hiện với <CLT><CLT 3>màu sắc khác biệt<CLT><CLT 23> không?\n"
+"<CLT>"
 
 #. <CLT 23>それが、議論を論破するための発言の穴…
 #. <CLT><CLT 3>ウィークポイント<CLT><CLT 23>でございます。
@@ -128,6 +148,9 @@ msgid ""
 "statement—a possible <CLT><CLT 3>weak spot<CLT><CLT 23>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Đó chính là kẽ hở trong lời nói của nhân vật, hay còn gọi\n"
+"là <CLT><CLT 3>Điểm Yếu<CLT><CLT 23>.\n"
+"<CLT>"
 
 #. <CLT 23>ウィークポイントは、登場人物の発言の中の、
 #. 特に重要な語句を示しております。
@@ -138,6 +161,9 @@ msgid ""
 "inaccurate—sections of a person's statement.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Điểm Yếu chỉ ra những cụm từ đặc biệt quan trọng trong\n"
+"lời phát biểu của các nhân vật.\n"
+"<CLT>"
 
 #. <CLT 23>言弾（コトダマ）は、
 #. <CLT><CLT 3>ウィークポイントにのみ有効<CLT><CLT 23>でございます。
@@ -148,6 +174,9 @@ msgid ""
 "weak spots<CLT><CLT 23>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Đạn Hy Vọng <CLT><CLT 3>chỉ có tác dụng đối với những\n"
+"Điểm Yếu<CLT><CLT 23> này mà thôi.\n"
+"<CLT>"
 
 #. <CLT 23>言弾（コトダマ）で、
 #. ウィークポイントをお撃ちください。
@@ -158,6 +187,9 @@ msgid ""
 "only if you're sure it's actually wrong!\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Vì vậy, khi thấy chúng xuất hiện, hãy ngắm chuẩn và bắn, nhưng\n"
+"chỉ khi bạn chắc chắn rằng nó thực sự sai!\n"
+"<CLT>"
 
 #. <CLT 23>また、<CLT><CLT 3>%CTRL_TRIAL_SPEED_UP%<CLT><CLT 23>で
 #. 議論を<CLT><CLT 3>早送り<CLT><CLT 23>する事も可能でございます。
@@ -168,6 +200,9 @@ msgid ""
 "down the <CLT><CLT 3>%CTRL_TRIAL_SPEED_UP%<CLT><CLT 23>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Ngoài ra, bạn cũng có thể <CLT><CLT 3>tua nhanh<CLT><CLT 23> cuộc tranh luận bằng cách\n"
+"giữ nút <CLT><CLT 3>%CTRL_TRIAL_SPEED_UP%<CLT><CLT 23>.\n"
+"<CLT>"
 
 #. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
 #. <CLT>
@@ -176,3 +211,10 @@ msgid ""
 "<CLT 23>Well then...good luck, and have fun!\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Trên đây là toàn bộ hướng dẫn, chúc bạn may mắn và chơi game vui vẻ!\n"
+"<CLT>"
+
+
+==================== FOLDER SUMMARY ====================
+Contradiction Debate Prep
+

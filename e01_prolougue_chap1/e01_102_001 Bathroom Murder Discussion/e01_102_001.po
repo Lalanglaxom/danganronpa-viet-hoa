@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 断言しよう！
 #. 殺されたのは舞園さやかだ！
@@ -18,11 +19,13 @@ msgid ""
 "I assert that the one who was\n"
 "murdered was Miss Sayaka Maizono!"
 msgstr ""
+"Tớ xin khẳng định rằng người đã bị\n"
+"sát hại chính là cô Sayaka Maizono!"
 
 #. …そんなん、わかってんべ。
 msgctxt "0002 | YASUHIRO HAGAKURE"
 msgid "...Yeah, we know that part already."
-msgstr ""
+msgstr "...Ừ, chuyện đó thì tụi này biết rồi."
 
 #. 殺人が起きたのは
 #. 苗木の部屋だったな。
@@ -31,16 +34,18 @@ msgid ""
 "And the murder took place in\n"
 "Makoto's room."
 msgstr ""
+"Và vụ án mạng đã xảy ra trong\n"
+"phòng của Makoto."
 
 #. そのシャワールームだったよね…
 msgctxt "0004 | AOI ASAHINA"
 msgid "In the bathroom..."
-msgstr ""
+msgstr "Trong phòng tắm..."
 
 #. きっと、舞園さんは…
 msgctxt "0005 | CHIHIRO FUJISAKI"
 msgid "So it seems most likely that..."
-msgstr ""
+msgstr "Vậy nên có khả năng cao là..."
 
 #. シャワールームにいる所を
 #. いきなり襲われて…
@@ -49,9 +54,11 @@ msgid ""
 "The killer must have taken her by\n"
 "surprise while she was in the bathroom."
 msgstr ""
+"Hung thủ hẳn đã tấn công bất ngờ\n"
+"khi cậu ấy đang ở trong phòng tắm."
 
 #. <CLT 9>抵抗する間もなく
 #. 殺されちゃった<CLT>んだね…
 msgctxt "0007 | CHIHIRO FUJISAKI"
 msgid "She <CLT 9>didn't even have a chance to resist<CLT>..."
-msgstr ""
+msgstr "Cậu ấy <CLT 9>còn không có cơ hội để kháng cự<CLT>..."
