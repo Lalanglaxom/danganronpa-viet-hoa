@@ -11,7 +11,7 @@ from playwright.sync_api import sync_playwright
 
 # "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\ChromeDebug"
 
-MAX_FILES_TO_TRANSLATE = 5      # How many .po files to process per run
+MAX_FILES_TO_TRANSLATE = 3      # How many .po files to process per run
 MAX_LINES_PER_BATCH    = 600    # Max lines of .po content sent to Gemini per request
 WAIT_BETWEEN_BATCHES   = 8      # Seconds to pause between Gemini calls
 
@@ -29,6 +29,7 @@ Strict constraints for this session:
 * Keep ellipses (...) only if present in the English source.
 * Do not skip entries, even if they are duplicates.
 * Return only the translated content inside a single code block.
+* Don't write back the japanese part, but still use it to add context for translation
 File content:
 
 {entries}"""
@@ -152,18 +153,54 @@ def build_po_block(entry: dict) -> str:
     )
 
 
+# def write_translations_to_po(filepath: str, raw: str, translations: dict) -> None:
+#     """
+#     Patch `raw` PO content with new translations then save to `filepath`.
+#     Only touches entries whose msgctxt appears in `translations`.
+#     translations: { msgctxt_str → Vietnamese_text }
+#     """
+#     updated = raw
+
+#     for msgctxt, translated_text in translations.items():
+#         ctx_esc = re.escape(msgctxt)
+
+#         Q = r'"(?:[^"\\\\]|\\\\.)*"'
+#         entry_pat = re.compile(
+#             r'(msgctxt\s+"' + ctx_esc + r'"\n'
+#             r'(?:msgid\s+(?:' + Q + r'\n?)+)'
+#             r')(msgstr\s+(?:' + Q + r'\n?)*)',
+#             re.MULTILINE,
+#         )
+
+#         new_msgstr = f"msgstr {_text_to_po_val(translated_text)}"
+
+#         def _replacer(m, ns=new_msgstr):
+#             return m.group(1) + ns
+
+#         patched = entry_pat.sub(_replacer, updated, count=1)
+#         if patched == updated:
+#             print(f"    ⚠  Could not patch entry: {msgctxt}")
+#         updated = patched
+
+#     # DRAT rejects bare "#." lines — add a trailing space to make "#. "
+#     cleaned = "\n".join(
+#         "#. " if line.rstrip() == "#." else line
+#         for line in updated.split("\n")
+#     )
+#     with open(filepath, "w", encoding="utf-8") as f:
+#         f.write(cleaned)
+
 def write_translations_to_po(filepath: str, raw: str, translations: dict) -> None:
     """
     Patch `raw` PO content with new translations then save to `filepath`.
-    Only touches entries whose msgctxt appears in `translations`.
-    translations: { msgctxt_str → Vietnamese_text }
     """
     updated = raw
 
     for msgctxt, translated_text in translations.items():
         ctx_esc = re.escape(msgctxt)
 
-        Q = r'"(?:[^"\\\\]|\\\\.)*"'
+        # FIXED REGEX: removed the extra backslashes so \n matches correctly
+        Q = r'"(?:[^"\\]|\\.)*"'
         entry_pat = re.compile(
             r'(msgctxt\s+"' + ctx_esc + r'"\n'
             r'(?:msgid\s+(?:' + Q + r'\n?)+)'
@@ -181,14 +218,12 @@ def write_translations_to_po(filepath: str, raw: str, translations: dict) -> Non
             print(f"    ⚠  Could not patch entry: {msgctxt}")
         updated = patched
 
-    # DRAT rejects bare "#." lines — add a trailing space to make "#. "
     cleaned = "\n".join(
         "#. " if line.rstrip() == "#." else line
         for line in updated.split("\n")
     )
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(cleaned)
-
 
 # ════════════════════════════════════════════════════════════════════
 #  RESPONSE  PARSER
@@ -197,27 +232,21 @@ def write_translations_to_po(filepath: str, raw: str, translations: dict) -> Non
 def parse_translated_block(response_text: str) -> dict:
     """
     Parse Gemini's response which contains .po entries.
-    Handles both fenced (``` ```) and bare .po output.
-    msgid is optional — Gemini sometimes omits it and returns only msgctxt + msgstr.
-    Returns { msgctxt → Vietnamese msgstr text }.
     """
-    # Normalise browser line endings before parsing
     response_text = response_text.replace("\r\n", "\n").replace("\r", "\n")
 
-    # Strip code fences if present
     fenced = re.search(r"```[a-z]*\s*(.*?)\s*```", response_text, re.DOTALL)
     content = fenced.group(1) if fenced else response_text
 
     translations = {}
 
-    # Q matches one PO quoted string including escaped chars like \" and \\
-    Q = r'"(?:[^"\\\\]|\\\\.)*"'
+    # FIXED REGEX: matches single quoted strings including escaped \n properly
+    Q = r'"(?:[^"\\]|\\.)*"'
 
-    # Primary: msgctxt + optional msgid + msgstr
     entry_pat = re.compile(
         r'msgctxt\s+"([^"]+)"\s*\n'
-        r'(?:msgid\s+(?:' + Q + r'\n?)+)?'   # msgid — optional
-        r'(msgstr\s+(?:' + Q + r'\n?)*)',     # msgstr — required
+        r'(?:msgid\s+(?:' + Q + r'\n?)+)?'
+        r'(msgstr\s+(?:' + Q + r'\n?)*)',
         re.MULTILINE,
     )
 
@@ -230,19 +259,55 @@ def parse_translated_block(response_text: str) -> dict:
 
     return translations
 
+# def parse_translated_block(response_text: str) -> dict:
+#     """
+#     Parse Gemini's response which contains .po entries.
+#     Handles both fenced (``` ```) and bare .po output.
+#     msgid is optional — Gemini sometimes omits it and returns only msgctxt + msgstr.
+#     Returns { msgctxt → Vietnamese msgstr text }.
+#     """
+#     # Normalise browser line endings before parsing
+#     response_text = response_text.replace("\r\n", "\n").replace("\r", "\n")
+
+#     # Strip code fences if present
+#     fenced = re.search(r"```[a-z]*\s*(.*?)\s*```", response_text, re.DOTALL)
+#     content = fenced.group(1) if fenced else response_text
+
+#     translations = {}
+
+#     # Q matches one PO quoted string including escaped chars like \" and \\
+#     Q = r'"(?:[^"\\\\]|\\\\.)*"'
+
+#     # Primary: msgctxt + optional msgid + msgstr
+#     entry_pat = re.compile(
+#         r'msgctxt\s+"([^"]+)"\s*\n'
+#         r'(?:msgid\s+(?:' + Q + r'\n?)+)?'   # msgid — optional
+#         r'(msgstr\s+(?:' + Q + r'\n?)*)',     # msgstr — required
+#         re.MULTILINE,
+#     )
+
+#     for m in entry_pat.finditer(content):
+#         msgctxt    = m.group(1)
+#         msgstr_raw = m.group(2)
+#         msgstr     = _po_raw_to_text(msgstr_raw)
+#         if msgstr.strip():
+#             translations[msgctxt] = msgstr
+
+#     return translations
+
 
 # ════════════════════════════════════════════════════════════════════
 #  GEMINI  HELPERS
 # ════════════════════════════════════════════════════════════════════
 
-def _wait_for_response(page) -> None:
-    """Wait for Gemini to start and finish generating."""
-    try:
-        page.wait_for_selector(STOP_BTN_SEL, state="visible",  timeout=15_000)
-        page.wait_for_selector(STOP_BTN_SEL, state="detached", timeout=180_000)
-    except Exception:
-        pass
-    time.sleep(1.5)
+# def _wait_for_response(page) -> None:
+#     """Wait for Gemini to start and finish generating."""
+#     try:
+#         page.wait_for_selector(STOP_BTN_SEL, state="visible",  timeout=15_000)
+#         page.wait_for_selector(STOP_BTN_SEL, state="detached", timeout=180_000)
+#     except Exception:
+#         pass
+#     time.sleep(1.5)
 
 
 def _count_responses(page) -> int:
@@ -308,11 +373,83 @@ def _extract_nth_response(page, index: int) -> str:
         return ""
 
 
+# def send_to_gemini(page, text: str) -> str:
+#     """
+#     Paste `text` directly into the Gemini chatbox and submit.
+#     Gemini's chatbox is a contenteditable div — NOT <input>/<textarea>.
+#     Never call .input_value() on it; use JS innerText to verify instead.
+#     Returns Gemini's response string.
+#     """
+#     chatbox = page.get_by_role("textbox")
+#     chatbox.click()
+
+#     # JS paste — safe for contenteditable divs
+#     page.evaluate(
+#         """(txt) => {
+#             const el = document.activeElement;
+#             el.focus();
+#             document.execCommand('selectAll');
+#             document.execCommand('insertText', false, txt);
+#         }""",
+#         text,
+#     )
+
+#     # Verify via innerText (works on contenteditable); fallback to fill()
+#     placed = page.evaluate("() => document.activeElement.innerText || ''")
+#     if not placed.strip() and len(text) < 50_000:
+#         chatbox.fill(text)
+
+#     # Record how many responses exist before we submit
+#     response_index = _count_responses(page)
+
+#     page.keyboard.press("Enter")
+#     print("    → Waiting for Gemini response...")
+#     _wait_for_response(page)
+
+#     # Wait up to 15s for the new response bubble to appear
+#     try:
+#         page.locator("model-response").nth(response_index).wait_for(state="attached", timeout=15_000)
+#     except Exception:
+#         pass  # Already handled by fallback-to-last in _extract_nth_response
+
+#     # Extra small buffer for content to render inside the bubble
+#     time.sleep(0.5)
+
+#     return _extract_nth_response(page, response_index)
+
+def _wait_for_generation_to_finish(page, response_index: int) -> str:
+    """Wait by monitoring the text output until it stops changing."""
+    # Wait up to 15s for the new response bubble to appear
+    try:
+        page.locator("model-response").nth(response_index).wait_for(state="attached", timeout=15_000)
+    except Exception:
+        pass
+
+    last_text = ""
+    stable_count = 0
+    max_wait_seconds = 180
+
+    for _ in range(max_wait_seconds):
+        current_text = _extract_nth_response(page, response_index)
+        
+        # If text exists and hasn't changed since the last check
+        if current_text and current_text == last_text:
+            stable_count += 1
+            # INCREASED TO 8 SECONDS to prevent cutting off mid-generation lag
+            if stable_count >= 8:  
+                return current_text
+        else:
+            stable_count = 0
+            last_text = current_text
+            
+        time.sleep(1)
+        
+    return last_text
+
+
 def send_to_gemini(page, text: str) -> str:
     """
     Paste `text` directly into the Gemini chatbox and submit.
-    Gemini's chatbox is a contenteditable div — NOT <input>/<textarea>.
-    Never call .input_value() on it; use JS innerText to verify instead.
     Returns Gemini's response string.
     """
     chatbox = page.get_by_role("textbox")
@@ -337,21 +474,17 @@ def send_to_gemini(page, text: str) -> str:
     # Record how many responses exist before we submit
     response_index = _count_responses(page)
 
+    time.sleep(0.5) # Brief pause to let the UI register the pasted text
     page.keyboard.press("Enter")
     print("    → Waiting for Gemini response...")
-    _wait_for_response(page)
-
-    # Wait up to 15s for the new response bubble to appear
-    try:
-        page.locator("model-response").nth(response_index).wait_for(state="attached", timeout=15_000)
-    except Exception:
-        pass  # Already handled by fallback-to-last in _extract_nth_response
-
-    # Extra small buffer for content to render inside the bubble
+    
+    # Wait using the new stability checker and return the final text
+    final_text = _wait_for_generation_to_finish(page, response_index)
+    
+    # Extra small buffer for any final DOM settling
     time.sleep(0.5)
 
-    return _extract_nth_response(page, response_index)
-
+    return final_text
 
 # ════════════════════════════════════════════════════════════════════
 #  FILE  DISCOVERY
@@ -477,6 +610,39 @@ def process_file(page, info: dict) -> None:
 
     all_translations: dict = {}
 
+    # for idx, batch in enumerate(batches):
+    #     print(f"\n  Batch {idx + 1}/{len(batches)}  ({len(batch)} entries)")
+
+    #     entries_text = "\n".join(build_po_block(e) for e in batch)
+    #     prompt       = TRANSLATE_PROMPT_TEMPLATE.format(entries=entries_text)
+
+    #     response = send_to_gemini(page, prompt)
+    #     parsed   = parse_translated_block(response)
+
+    #     if not parsed:
+    #         print(f"    ✗  No translations parsed.")
+    #     else:
+    #         # Filter to only entries we actually requested.
+    #         # Gemini sometimes bleeds in full-file context from previous turns.
+    #         requested = {e["msgctxt"] for e in batch}
+    #         valid  = {k: v for k, v in parsed.items() if k in requested}
+    #         extra  = len(parsed) - len(valid)
+    #         if extra:
+    #             print(f"    ℹ  Discarded {extra} unrequested entries (context bleed).")
+    #         if not valid:
+    #             print(f"    ✗  None of {len(parsed)} parsed entries matched this batch.")
+    #         else:
+    #             last_ctxt = batch[-1]["msgctxt"]
+    #             if last_ctxt not in valid:
+    #                 print(f"    ⚠  Got {len(valid)}/{len(batch)} — response may be truncated.")
+    #             else:
+    #                 print(f"    ✓  Got {len(valid)}/{len(batch)} translation(s).")
+    #             all_translations.update(valid)
+
+    #     if idx < len(batches) - 1:
+    #         print(f"  ⏳ Waiting {WAIT_BETWEEN_BATCHES}s before next batch...")
+    #         time.sleep(WAIT_BETWEEN_BATCHES)
+
     for idx, batch in enumerate(batches):
         print(f"\n  Batch {idx + 1}/{len(batches)}  ({len(batch)} entries)")
 
@@ -484,13 +650,32 @@ def process_file(page, info: dict) -> None:
         prompt       = TRANSLATE_PROMPT_TEMPLATE.format(entries=entries_text)
 
         response = send_to_gemini(page, prompt)
+        
+        # -------- NEW DEBUG PRINT -----------
+        print("\n" + "▼" * 40 + " GEMINI RAW RESPONSE " + "▼" * 40)
+        print(response)
+        print("▲" * 101 + "\n")
+        # ------------------------------------
+
         parsed   = parse_translated_block(response)
 
         if not parsed:
             print(f"    ✗  No translations parsed.")
         else:
-            print(f"    ✓  Got {len(parsed)} translation(s).")
-            all_translations.update(parsed)
+            requested = {e["msgctxt"] for e in batch}
+            valid  = {k: v for k, v in parsed.items() if k in requested}
+            extra  = len(parsed) - len(valid)
+            if extra:
+                print(f"    ℹ  Discarded {extra} unrequested entries (context bleed).")
+            if not valid:
+                print(f"    ✗  None of {len(parsed)} parsed entries matched this batch.")
+            else:
+                last_ctxt = batch[-1]["msgctxt"]
+                if last_ctxt not in valid:
+                    print(f"    ⚠  Got {len(valid)}/{len(batch)} — response may be truncated.")
+                else:
+                    print(f"    ✓  Got {len(valid)}/{len(batch)} translation(s).")
+                all_translations.update(valid)
 
         if idx < len(batches) - 1:
             print(f"  ⏳ Waiting {WAIT_BETWEEN_BATCHES}s before next batch...")

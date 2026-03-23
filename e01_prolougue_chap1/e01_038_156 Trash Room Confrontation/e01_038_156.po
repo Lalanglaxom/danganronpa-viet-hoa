@@ -14,8 +14,7 @@ msgstr ""
 #. しかしながら、苗木誠殿…
 msgctxt "0001 | HIFUMI YAMADA"
 msgid "However, Mr. Naegi..."
-msgstr ""
-
+msgstr "Tuy nhiên, cậu Naegi..."
 #. よもや、トラッシュルームで
 #. 証拠隠滅しようとしてるのではあるまいな！？
 msgctxt "0002 | HIFUMI YAMADA"
@@ -23,17 +22,16 @@ msgid ""
 "Surely you aren't planning to use the trash room to\n"
 "destroy evidence, are you!?"
 msgstr ""
-
+"Chẳng lẽ cậu định dùng phòng rác để\n"
+"tiêu hủy bằng chứng sao!?"
 #. お、おのれ…図ったなッ！！
 msgctxt "0003 | HIFUMI YAMADA"
 msgid "Y-You fiend...! You planned this all along!"
-msgstr ""
-
+msgstr "C-Cậu đúng là ác quỷ...! Cậu đã lên kế hoạch cho việc này từ đầu rồi!"
 #. ち、違うよ！
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "N-No!"
-msgstr ""
-
+msgstr "K-Không phải đâu!"
 #. ボクは、犯人が証拠を隠滅してないか
 #. 調べに来ただけだって！
 msgctxt "0005 | MAKOTO NAEGI"
@@ -41,7 +39,8 @@ msgid ""
 "I just wanted to see if the actual killer had tried to\n"
 "destroy any evidence or not!"
 msgstr ""
-
+"Tớ chỉ muốn đến xem liệu kẻ sát nhân thật sự có cố\n"
+"tiêu hủy bằng chứng nào không thôi!"
 #. 犯人は苗木誠殿であろう？
 #. 自分が隠滅した証拠を自分で調べる…だと？
 msgctxt "0006 | HIFUMI YAMADA"
@@ -49,12 +48,12 @@ msgid ""
 "But the \"actual killer\" is YOU, isn't it!? You want to\n"
 "see if you left anything behind!"
 msgstr ""
-
+"Nhưng \"kẻ sát nhân thật sự\" chính là CẬU, không phải sao!? Cậu muốn\n"
+"xem mình có bỏ sót lại thứ gì không chứ gì!"
 #. え…？　どんなパラレルワールド…？
 msgctxt "0007 | HIFUMI YAMADA"
 msgid "Wait... Maybe a parallel world...?"
-msgstr ""
-
+msgstr "Khoan đã... Có lẽ là một thế giới song song chăng...?"
 #. <CLT 4>もういいや…さっさと捜査を進めよう。
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -62,24 +61,22 @@ msgid ""
 "<CLT 4>Whatever, let's just hurry up and keep looking...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Thôi kệ đi... cứ nhanh chóng tiếp tục điều tra thôi...\n"
+"<CLT>"
 #. むむっ、苗木誠殿…元気がないですぞ？
 msgctxt "0009 | HIFUMI YAMADA"
 msgid "Mmmhey, Mr. Naegi...you seem a little down."
-msgstr ""
-
+msgstr "Mmm này, cậu Naegi... trông cậu có vẻ hơi xuống tinh thần đấy."
 #. えっ…そう？
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Huh? Really?"
-msgstr ""
-
+msgstr "Hả? Thật sao?"
 #. 元気を出したかったら、いつでも僕に声をかけてちょ。
 msgctxt "0011 | HIFUMI YAMADA"
 msgid ""
 "If you need help lifting your spirits, call on me\n"
 "anytime!"
-msgstr ""
-
+msgstr "Nếu cậu muốn phấn chấn lên, cứ gọi tôi bất cứ lúc nào!"
 #. エロエロと…いやさ色々と取り揃えておりますぞ！
 #. ムフ…ムフフ…ッ！！
 msgctxt "0012 | HIFUMI YAMADA"
@@ -87,7 +84,8 @@ msgid ""
 "I've got all kinds of smut—er, stuff that might help\n"
 "cheer you up! Meh heh...mehehehe!"
 msgstr ""
-
+"Tôi có đủ các loại văn hóa phẩm đồi—à không, đủ thứ có thể giúp\n"
+"cậu vui vẻ lên đấy! Heh heh...mehehehe!"
 #. ………………
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "..."
@@ -101,7 +99,9 @@ msgid ""
 "the trash room.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đây là lò đốt rác. Nó nằm tận phía sâu trong\n"
+"phòng rác.\n"
+"<CLT>"
 #. <CLT 4>ここから、あの鉄格子までは
 #. １０メートル以上は離れてるな。
 #. <CLT>
@@ -110,7 +110,8 @@ msgid ""
 "<CLT 4>It's a good thirty feet from here to the gate...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Từ đây đến chỗ cổng sắt kia cũng phải hơn mười mét...\n"
+"<CLT>"
 #. <CLT 4>それはともかく、火が付きっ放しだ…！
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -118,7 +119,8 @@ msgid ""
 "<CLT 4>Ah! And it's on right now!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>A! Và nó vẫn đang cháy này!\n"
+"<CLT>"
 #. 焼却炉の投入口の横には、
 #. 緑色のボタンと黄色いボタンがありますな？
 msgctxt "0017 | HIFUMI YAMADA"
@@ -126,15 +128,15 @@ msgid ""
 "Do you see the green and yellow buttons next to the\n"
 "mouth of the incinerator?"
 msgstr ""
-
+"Cậu có thấy nút màu xanh lá và màu vàng bên cạnh\n"
+"cửa lò đốt không?"
 #. <CLT 3>緑色のボタン<CLT>を押す事で燃焼を開始し、
 #. <CLT 3>黄色のボタン<CLT>で燃焼を終了するシステムなのです。
 msgctxt "0018 | HIFUMI YAMADA"
 msgid ""
 "It's a pretty simple setup. You press the <CLT 3>green\n"
 "button<CLT> to get it going, and the <CLT 3>yellow button<CLT> to turn it off."
-msgstr ""
-
+msgstr "Cơ chế khá đơn giản. Cậu nhấn <CLT 3>nút xanh lá<CLT> để bắt đầu đốt, và nhấn <CLT 3>nút vàng<CLT> để tắt nó đi."
 #. 苗木誠殿も、いずれ掃除当番をやるでしょうから、
 #. しっかりと覚えて帰ってくれたまえよよよよよよ…！？
 msgctxt "0019 | HIFUMI YAMADA"
@@ -142,13 +144,13 @@ msgid ""
 "Sooner or later you'll be on cleaning duty, so make\n"
 "sure you learn this before you leave, okaaaAAAYYY!?!?"
 msgstr ""
-
+"Sớm muộn gì cậu cũng sẽ đến lượt trực nhật thôi, nên hãy\n"
+"ghi nhớ kỹ trước khi rời đi đấy, rõ chưaaaa!?!?"
 #. およよぉ！
 #. 焼却炉の火が点けっ放しじゃないですかぁ！？
 msgctxt "0020 | HIFUMI YAMADA"
 msgid "Huh!? Someone turned the incinerator on!"
-msgstr ""
-
+msgstr "Hả!? Ai đó đã bật lò đốt rác lên rồi kìa!"
 #. おっかしいな…前に来た時は、
 #. ちゃんと火は消えていたはずなのですが…
 msgctxt "0021 | HIFUMI YAMADA"
@@ -156,23 +158,21 @@ msgid ""
 "Very strange... I'm quite certain it was off last time\n"
 "I was down here."
 msgstr ""
-
+"Lạ thật đó... Tôi khá chắc chắn là lần trước khi xuống\n"
+"đây nó đã tắt rồi mà..."
 #. 妖精さんの仕業？
 msgctxt "0022 | HIFUMI YAMADA"
 msgid "Perhaps it was the work of a fairy..."
-msgstr ""
-
+msgstr "Có lẽ đây là tác phẩm của một nàng tiên chăng..."
 #. 山田クン…！　
 #. 今、言った事って間違いない！？
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "Hifumi! Do you realize what you just said!?"
-msgstr ""
-
+msgstr "Hifumi! Cậu có chắc chắn về những gì mình vừa nói không!?"
 #. へ…？　妖精さん…？
 msgctxt "0024 | HIFUMI YAMADA"
 msgid "Huh? The fairy...?"
-msgstr ""
-
+msgstr "Hả? Nàng tiên sao...?"
 #. …そっちじゃなくて、
 #. 前に来た時は、焼却炉の火が消えてたって…
 msgctxt "0025 | MAKOTO NAEGI"
@@ -180,7 +180,8 @@ msgid ""
 "...No. You said that last time you were here, the\n"
 "incinerator was off."
 msgstr ""
-
+"...Không. Cậu nói là lần trước khi cậu ở đây, cái\n"
+"lò đốt đã tắt rồi đúng không..."
 #. あぁ、間違いないですぞ。
 #. ボクって記憶力だけは確かなもんで。
 msgctxt "0026 | HIFUMI YAMADA"
@@ -188,7 +189,8 @@ msgid ""
 "Ah, yes. About that there can be no mistake. If I've\n"
 "got one thing going for me, it's my memory!"
 msgstr ""
-
+"À, đúng vậy. Về chuyện đó thì không thể sai được đâu. Nếu tôi có\n"
+"thứ gì đáng tự hào, thì đó chính là trí nhớ của mình!"
 #. 昨日、当番を任命された直後に下見に来たのですが、
 #. その時、確かに火は消えておりました。
 msgctxt "0027 | HIFUMI YAMADA"
@@ -196,13 +198,13 @@ msgid ""
 "Yesterday, as soon as I was appointed, I came down to\n"
 "check the place out. It definitely wasn't on then."
 msgstr ""
-
+"Hôm qua, ngay sau khi được phân công trực nhật, tôi đã xuống để\n"
+"xem qua nơi này. Lúc đó chắc chắn là nó chưa bật đâu."
 #. それ以来、
 #. 僕はトラッシュルームには来ておりませんし…
 msgctxt "0028 | HIFUMI YAMADA"
 msgid "I haven't been back to the trash room since then..."
-msgstr ""
-
+msgstr "Kể từ đó, tôi chưa hề quay lại phòng rác lần nào..."
 #. 鉄格子を開ける鍵を持っているのは、
 #. 僕だけなのですから…
 msgctxt "0029 | HIFUMI YAMADA"
@@ -210,14 +212,14 @@ msgid ""
 "And since I'm the only one who has a key to open the\n"
 "gate..."
 msgstr ""
-
+"Và vì tôi là người duy nhất giữ chìa khóa để mở\n"
+"cái cổng sắt này..."
 #. 火が付いてるなんて…あり得ないはずなのですが…
 msgctxt "0030 | HIFUMI YAMADA"
 msgid ""
 "...it should be impossible for the incinerator to be\n"
 "on. And yet..."
-msgstr ""
-
+msgstr "...lẽ ra việc cái lò đốt đang bật là điều không thể nào. Vậy mà..."
 #. <CLT 4>つまり、誰かが鉄格子を開けずに、
 #. この焼却炉の火を付けた…？
 #. <CLT>
@@ -227,7 +229,9 @@ msgid ""
 "incinerator without opening the gate...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Vậy nghĩa là đã có ai đó bật được cái lò đốt\n"
+"mà không cần mở cổng sắt sao...\n"
+"<CLT>"
 #. <CLT 4>でも…どうやって？
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -235,7 +239,8 @@ msgid ""
 "<CLT 4>But...how is that possible?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng... làm thế nào mà được?\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>トラッシュルームの焼却炉<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -245,12 +250,13 @@ msgid ""
 "section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>\"<CLT><CLT 3>Lò đốt rác<CLT><CLT 23>\" đã được thêm vào mục Đạn Hy Vọng\n"
+"trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. しかしながら妙ですなぁ…
 msgctxt "0034 | HIFUMI YAMADA"
 msgid "This whole thing is quite strange, indeed..."
-msgstr ""
-
+msgstr "Mọi chuyện quả thực là rất kỳ lạ..."
 #. 前に来た時は、焼却炉の火も消えてたし、
 #. そんなガラス破片も、燃えかけの布もなかったのに…
 msgctxt "0035 | HIFUMI YAMADA"
@@ -258,7 +264,8 @@ msgid ""
 "When I was here last, the incinerator was off, and\n"
 "those glass shards and burnt clothes weren't."
 msgstr ""
-
+"Lần trước tôi ở đây, lò đốt đã tắt, mấy mảnh\n"
+"thủy tinh kia và đống vải cháy đó đều không có."
 #. どういう事ですかな、苗木誠殿！
 #. そろそろ白状してもらいましょうか！
 msgctxt "0036 | HIFUMI YAMADA"
@@ -266,12 +273,12 @@ msgid ""
 "What does it all mean, Mr. Naegi!? Will you be\n"
 "confessing soon!?"
 msgstr ""
-
+"Mọi chuyện là sao đây hả cậu Naegi! Cậu đã định\n"
+"thú nhận chưa vậy!"
 #. なんで…ボクが…？
 msgctxt "0037 | MAKOTO NAEGI"
 msgid "Why me...?"
-msgstr ""
-
+msgstr "Tại sao lại là tớ...?"
 #. あなたが犯人に決まっているのです！
 #. 謎はすべて解けているのですっ！
 msgctxt "0038 | HIFUMI YAMADA"
@@ -279,7 +286,8 @@ msgid ""
 "Everyone already knows you did it! All the mysteries\n"
 "are being solved one by one!"
 msgstr ""
-
+"Mọi người đều biết cậu là kẻ thủ ác rồi! Mọi bí ẩn\n"
+"đang dần được phơi bày từng cái một!"
 #. <CLT 4>この人…マンガと現実がごっちゃになってるな…
 #. <CLT>
 msgctxt "0039 | MAKOTO NAEGI"
@@ -288,22 +296,20 @@ msgid ""
 "fantasies...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có vẻ như cậu ấy đang sống trong ảo tưởng truyện tranh của chính mình...\n"
+"<CLT>"
 #. 学校エリアの…赤い扉…
 msgctxt "0040 | MAKOTO NAEGI"
 msgid "The red door on the 1st floor..."
-msgstr ""
-
+msgstr "Cánh cửa màu đỏ ở tầng một..."
 #. そこに行けばいいんだな…
 msgctxt "0041 | MAKOTO NAEGI"
 msgid "That's where I should go."
-msgstr ""
-
+msgstr "Đó là nơi mình nên đến."
 #. …行くしかないんだな。
 msgctxt "0042 | MAKOTO NAEGI"
 msgid "...No, where I *have* to go."
-msgstr ""
-
+msgstr "...Không, đó là nơi mình *phải* đến."
 #. <CLT 4>大きなゴミ箱だな…
 #. <CLT>
 msgctxt "0043 | MAKOTO NAEGI"
@@ -311,7 +317,8 @@ msgid ""
 "<CLT 4>That's a huge trash can...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Một cái thùng rác khổng lồ...\n"
+"<CLT>"
 #. <CLT 4>燃えないゴミでも入れておけって事か？
 #. <CLT>
 msgctxt "0044 | MAKOTO NAEGI"
@@ -320,7 +327,8 @@ msgid ""
 "can't burn?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có phải đây là nơi để bỏ những loại rác không thể đốt không?\n"
+"<CLT>"
 #. ……………
 msgctxt "0045 | MAKOTO NAEGI"
 msgid "..."
@@ -335,27 +343,25 @@ msgid ""
 "any clues.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Dù sao đi nữa, có vẻ nó không che giấu manh mối nào cả.\n"
+"<CLT>"
 #. 焼却炉の前に何か落ちてる。
 msgctxt "0047 | MAKOTO NAEGI"
 msgid ""
 "There's something on the ground in front of the\n"
 "incinerator..."
-msgstr ""
-
+msgstr "Có thứ gì đó đang nằm trên sàn ngay trước lò đốt rác..."
 #. 何かの…燃えカスか…？
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "It looks like a burnt piece of...something."
-msgstr ""
-
+msgstr "Trông nó như một mảnh bị cháy xém của... thứ gì đó."
 #. 萌えカス…カス萌え…？
 #. 苗木誠殿ってマニアックな属性をお持ち？
 msgctxt "0049 | HIFUMI YAMADA"
 msgid ""
 "A burnt piece...? Like a hunk? Like a hunk of burning\n"
 "love!?"
-msgstr ""
-
+msgstr "Mảnh cháy sém sao? Một mẩu sém... hay là một mẩu tình si rực cháy vậy!"
 #. ………………
 msgctxt "0050 | MAKOTO NAEGI"
 msgid "..."
@@ -368,7 +374,8 @@ msgid ""
 "<CLT 4>Anyway. This is...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Dù sao thì. Đây là...\n"
+"<CLT>"
 #. <CLT 4>布…だな。
 #. それにこの形状…
 #. <CLT>
@@ -377,7 +384,8 @@ msgid ""
 "<CLT 4>...it looks like a piece of cloth. And the shape...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...trông giống một mảnh vải. Và hình dạng này...\n"
+"<CLT>"
 #. <CLT 4>これって、ワイシャツの袖口じゃないか！？
 #. <CLT>
 msgctxt "0053 | MAKOTO NAEGI"
@@ -385,7 +393,8 @@ msgid ""
 "<CLT 4>It's part of the sleeve from a button-up shirt!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đây chẳng phải là một phần tay áo sơ mi sao!\n"
+"<CLT>"
 #. <CLT 4>しかも袖口の部分に血が付着している！
 #. じゃあ、これって…！
 #. <CLT>
@@ -395,14 +404,14 @@ msgid ""
 "the cuff! Which means...!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Hơn nữa còn có máu dính trên cổ tay áo! Vậy nghĩa là...!\n"
+"<CLT>"
 #. 犯人が隠滅した…証拠の残り？
 msgctxt "0055 | MAKOTO NAEGI"
 msgid ""
 "This is all that's left of some of the evidence the\n"
 "killer destroyed..."
-msgstr ""
-
+msgstr "Đây là tất cả những gì còn sót lại từ bằng chứng mà kẻ sát nhân đã tiêu hủy..."
 #. <CLT 4>でも、袖口が白いワイシャツを着てる人物なんて、
 #. たくさんいるよな…
 #. <CLT>
@@ -412,7 +421,8 @@ msgid ""
 "shirts.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ở đây có rất nhiều người mặc áo sơ mi trắng mà.\n"
+"<CLT>"
 #. <CLT 4>これだけじゃあ、
 #. 犯人を割り出す証拠にはならないかも…
 #. <CLT>
@@ -422,7 +432,8 @@ msgid ""
 "killer is...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chỉ nhiêu đây thôi có lẽ không đủ để xác định ai là kẻ sát nhân...\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>ワイシャツの燃えカス<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -432,41 +443,37 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>\"<CLT><CLT 3>Mảnh áo sơ mi cháy<CLT><CLT 23>\" đã được thêm vào mục Đạn Hy Vọng trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. しかしながら妙ですなぁ…
 msgctxt "0059 | HIFUMI YAMADA"
 msgid "This whole thing is quite strange, indeed..."
-msgstr ""
-
+msgstr "Mọi chuyện quả thực là rất kỳ lạ..."
 #. 前に来た時は、焼却炉の火も消えてたし、
 #. そんなガラス破片も、燃えかけの布もなかったのに…
 msgctxt "0060 | HIFUMI YAMADA"
 msgid ""
 "When I was here last, the incinerator was off, and\n"
 "those glass shards and burnt clothes weren't."
-msgstr ""
-
+msgstr "Lần trước tôi ở đây, lò đốt đã tắt, mấy mảnh thủy tinh kia và đống vải cháy đó đều không có."
 #. どういう事ですかな、苗木誠殿！
 #. そろそろ白状してもらいましょうか！
 msgctxt "0061 | HIFUMI YAMADA"
 msgid ""
 "What does it all mean, Mr. Naegi!? Will you be\n"
 "confessing soon!?"
-msgstr ""
-
+msgstr "Mọi chuyện là sao đây hả cậu Naegi! Cậu đã định thú nhận chưa vậy!"
 #. なんで…ボクが…？
 msgctxt "0062 | MAKOTO NAEGI"
 msgid "Why me...?"
-msgstr ""
-
+msgstr "Tại sao lại là tớ...?"
 #. あなたが犯人に決まっているのです！
 #. 謎はすべて解けているのですっ！
 msgctxt "0063 | HIFUMI YAMADA"
 msgid ""
 "Everyone already knows you did it! All the mysteries\n"
 "are being solved one by one!"
-msgstr ""
-
+msgstr "Mọi người đều biết cậu là kẻ thủ ác rồi! Mọi bí ẩn đang dần được phơi bày từng cái một!"
 #. <CLT 4>この人…マンガと現実がごっちゃになってるな…
 #. <CLT>
 msgctxt "0064 | MAKOTO NAEGI"
@@ -475,7 +482,8 @@ msgid ""
 "fantasies...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có vẻ như cậu ấy đang sống trong ảo tưởng truyện tranh của chính mình...\n"
+"<CLT>"
 #. <CLT 4>でも、袖口が白いワイシャツを着てる人物なんて、
 #. たくさんいるもんな…
 #. <CLT>
@@ -485,7 +493,8 @@ msgid ""
 "shirts.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ở đây có rất nhiều người mặc áo sơ mi trắng mà.\n"
+"<CLT>"
 #. <CLT 4>これだけじゃあ、
 #. 犯人を割り出す証拠にはならないかも…
 #. <CLT>
@@ -495,23 +504,18 @@ msgid ""
 "killer is...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chỉ nhiêu đây thôi có lẽ không đủ để xác định ai là kẻ sát nhân...\n"
+"<CLT>"
 #. 学校エリアの…赤い扉…
 msgctxt "0067 | MAKOTO NAEGI"
 msgid "The red door on the 1st floor..."
-msgstr ""
-
-#. そこに行けばいいんだな…
+msgstr "Cánh cửa màu đỏ ở tầng một..."#. そこに行けばいいんだな…
 msgctxt "0068 | MAKOTO NAEGI"
 msgid "That's where I should go."
-msgstr ""
-
-#. …行くしかないんだな。
+msgstr "Đó là nơi mình nên đến."#. …行くしかないんだな。
 msgctxt "0069 | MAKOTO NAEGI"
 msgid "...No, where I *have* to go."
-msgstr ""
-
-#. <CLT 4>焼却炉の手前に、
+msgstr "...Không, đó là nơi mình *phải* đến."#. <CLT 4>焼却炉の手前に、
 #. 割れたガラスの破片が散らばってる。
 #. <CLT>
 msgctxt "0070 | MAKOTO NAEGI"
@@ -520,7 +524,8 @@ msgid ""
 "front of the incinerator.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có những mảnh kính vỡ nằm rải rác ở phía trước lò đốt rác.\n"
+"<CLT>"
 #. <CLT 4>元は…丸いガラス玉だったみたいだな。
 #. ちょうど男性の手に収まるくらいの大きさだけど…
 #. <CLT>
@@ -530,17 +535,17 @@ msgid ""
 "just about big enough to fit in the palm of your hand.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Trông nó như thể từng là một quả cầu thủy tinh,\n"
+"vừa đủ lớn để nằm gọn trong lòng bàn tay.\n"
+"<CLT>"
 #. むむっ、もしやそれは…！！
 msgctxt "0072 | HIFUMI YAMADA"
 msgid "Ngyah! Is that...!?"
-msgstr ""
-
+msgstr "Ngyah! Đó chẳng lẽ là...!?"
 #. …知ってるの？
 msgctxt "0073 | MAKOTO NAEGI"
 msgid "...Do you know what this is?"
-msgstr ""
-
+msgstr "...Cậu có biết thứ này là gì không?"
 #. 七つ集めると、
 #. 龍が出てきて夢をかなえてくれるという…
 msgctxt "0074 | HIFUMI YAMADA"
@@ -548,7 +553,8 @@ msgid ""
 "They say if you collect all seven, a dragon will\n"
 "appear and grant you a single wish!"
 msgstr ""
-
+"Người ta nói rằng nếu cậu thu thập đủ bảy quả, một con rồng\n"
+"sẽ hiện ra và ban cho cậu một điều ước duy nhất!"
 #. なーんて冗談はさておき…
 #. それって、よく見かけますよね。街角とかで。
 msgctxt "0075 | HIFUMI YAMADA"
@@ -556,7 +562,8 @@ msgid ""
 "Erm, kidding aside, it's the kind of thing you might\n"
 "see on any big-city street corner."
 msgstr ""
-
+"Hơ, đùa chút thôi, nhưng đó là thứ cậu có thể\n"
+"bắt gặp ở bất kỳ góc phố nào của thành phố lớn."
 #. 玉の中を覗いて、
 #. 未来が見える～とか言ってるヤツですよね？
 msgctxt "0076 | HIFUMI YAMADA"
@@ -564,7 +571,8 @@ msgid ""
 "Gaze into it, and it will show you a glimpse of the\n"
 "future..."
 msgstr ""
-
+"Nhìn vào bên trong, và nó sẽ cho cậu thấy một thoáng của\n"
+"tương lai..."
 #. ４作目に出てきた褐色の姉妹も、
 #. 持っていましたよね？
 msgctxt "0077 | HIFUMI YAMADA"
@@ -572,7 +580,8 @@ msgid ""
 "Just like that Meena girl who was on that quest to\n"
 "find that one guy!"
 msgstr ""
-
+"Giống như cô gái Meena trong nhiệm vụ đi tìm\n"
+"chàng trai đó ấy!"
 #. <CLT 4>言いたい事はわかったけど…
 #. だとすると、このガラス玉の持ち主って…
 #. <CLT>
@@ -582,7 +591,9 @@ msgid ""
 "this particular ball belong to...?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Tớ hiểu cậu định nói gì rồi. Nhưng chủ nhân của\n"
+"quả cầu này là ai mới được...?\n"
+"<CLT>"
 #. <CLT 4>あの人…だよな？
 #. <CLT>
 msgctxt "0079 | MAKOTO NAEGI"
@@ -590,7 +601,8 @@ msgid ""
 "<CLT 4>There's only one person it could be...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chỉ có thể là người đó thôi phải không...\n"
+"<CLT>"
 #. <CLT 4>確か、<CLT><CLT 3>体育館<CLT><CLT 4>にいたはずだ。
 #. 直接確認してみるか…
 #. <CLT>
@@ -600,7 +612,9 @@ msgid ""
 "find out for sure...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chắc hẳn họ vẫn còn ở trong <CLT><CLT 3>phòng thể chất<CLT><CLT 4>. Tớ nên đến đó\n"
+"để xác nhận trực tiếp xem sao...\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>割れたガラス玉<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -610,12 +624,13 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>\"<CLT><CLT 3>Quả cầu thủy tinh vỡ<CLT><CLT 23>\" đã được thêm vào phần\n"
+"Đạn Hy Vọng trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. しかしながら妙ですなぁ…
 msgctxt "0082 | HIFUMI YAMADA"
 msgid "This whole thing is quite strange, indeed..."
-msgstr ""
-
+msgstr "Mọi chuyện quả thực là rất kỳ lạ..."
 #. 前に来た時は、焼却炉の火も消えてたし、
 #. そんなガラス破片も、燃えかけの布もなかったのに…
 msgctxt "0083 | HIFUMI YAMADA"
@@ -623,7 +638,8 @@ msgid ""
 "When I was here last, the incinerator was off, and\n"
 "those glass shards and burnt clothes weren't."
 msgstr ""
-
+"Lần trước tôi ở đây, lò đốt đã tắt, và mấy mảnh\n"
+"thủy tinh với đống vải cháy đó đều không hề có."
 #. どういう事ですかな、苗木誠殿！
 #. そろそろ白状してもらいましょうか！
 msgctxt "0084 | HIFUMI YAMADA"
@@ -631,12 +647,12 @@ msgid ""
 "What does it all mean, Mr. Naegi!? Will you be\n"
 "confessing soon!?"
 msgstr ""
-
+"Mọi chuyện là sao đây hả cậu Naegi! Cậu đã định\n"
+"thú nhận chưa vậy!"
 #. なんで…ボクが…？
 msgctxt "0085 | MAKOTO NAEGI"
 msgid "Why me...?"
-msgstr ""
-
+msgstr "Tại sao lại là tớ...?"
 #. あなたが犯人に決まっているのです！
 #. 謎はすべて解けているのですっ！
 msgctxt "0086 | HIFUMI YAMADA"
@@ -644,7 +660,8 @@ msgid ""
 "Everyone already knows you did it! All the mysteries\n"
 "are being solved one by one!"
 msgstr ""
-
+"Mọi người đều đã biết cậu là hung thủ rồi! Tất cả bí ẩn\n"
+"đang được giải đáp từng cái một!"
 #. <CLT 4>この人…マンガと現実がごっちゃになってるな…
 #. <CLT>
 msgctxt "0087 | MAKOTO NAEGI"
@@ -653,22 +670,21 @@ msgid ""
 "fantasies...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có vẻ như cậu ấy đang sống trong ảo tưởng\n"
+"truyện tranh của chính mình...\n"
+"<CLT>"
 #. 学校エリアの…赤い扉…
 msgctxt "0088 | MAKOTO NAEGI"
 msgid "The red door on the 1st floor..."
-msgstr ""
-
+msgstr "Cánh cửa màu đỏ ở tầng một..."
 #. そこに行けばいいんだな…
 msgctxt "0089 | MAKOTO NAEGI"
 msgid "That's where I should go."
-msgstr ""
-
+msgstr "Đó là nơi mình nên đến."
 #. …行くしかないんだな。
 msgctxt "0090 | MAKOTO NAEGI"
 msgid "...No, where I *have* to go."
-msgstr ""
-
+msgstr "...Không, đó là nơi mình *phải* đến."
 #. <CLT 4>緑色のボタンと…黄色のボタン…
 #. <CLT>
 msgctxt "0091 | MAKOTO NAEGI"
@@ -676,7 +692,8 @@ msgid ""
 "<CLT 4>A green button...and a yellow button.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Một nút xanh lá... và một nút màu vàng...\n"
+"<CLT>"
 #. <CLT 4>真ん中の装置に関係しているのは、
 #. 間違いなさそうだ。
 #. <CLT>
@@ -685,7 +702,8 @@ msgid ""
 "<CLT 4>There's no doubt they're related to the big mechanism.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chắc chắn là chúng có liên quan đến cái máy lớn kia rồi.\n"
+"<CLT>"
 #. <CLT 4>緑色のボタンを押す事で燃焼を開始し、
 #. 黄色のボタンで燃焼を終了するシステム…
 #. <CLT>
@@ -695,7 +713,9 @@ msgid ""
 "turns it off.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nút xanh lá để khởi động lò đốt, còn nút màu vàng\n"
+"để tắt nó đi.\n"
+"<CLT>"
 #. <CLT 4>…らしいな。
 #. <CLT>
 msgctxt "0094 | MAKOTO NAEGI"
@@ -703,17 +723,16 @@ msgid ""
 "<CLT 4>...Or so it seems, anyway.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...Có vẻ là vậy.\n"
+"<CLT>"
 #. はい
 msgctxt "0095 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
-
+msgstr "Có"
 #. いいえ
 msgctxt "0096 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
-
+msgstr "Không"
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0097 | NARRATION"
@@ -721,7 +740,8 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>Bạn muốn ra ngoài không?\n"
+"<CLT>"
 #. なにィ？
 #. 開けさせておいて調べもせずに出るだとォ！？
 msgctxt "0098 | HIFUMI YAMADA"
@@ -729,7 +749,8 @@ msgid ""
 "What? You made me come all the way down here, and now\n"
 "you're not even gonna check it out!?"
 msgstr ""
-
+"Cái gì? Cậu bắt tôi xuống tận đây rồi giờ lại\n"
+"định đi mà không thèm kiểm tra gì sao!?"
 #. 最悪の想定、そのナナメ上！
 #. しかし、そんな意外性を読者は望みませんぞ？
 msgctxt "0099 | HIFUMI YAMADA"
@@ -737,7 +758,8 @@ msgid ""
 "That's the worst twist I can imagine! That's not the\n"
 "kind of thing readers like at all!"
 msgstr ""
-
+"Đây là bước ngoặt tồi tệ nhất tôi có thể tưởng tượng! Độc giả\n"
+"không hề mong đợi kiểu tình tiết bất ngờ này đâu!"
 #. <CLT 4>読者って…何？
 #. <CLT>
 msgctxt "0100 | MAKOTO NAEGI"
@@ -745,3 +767,5 @@ msgid ""
 "<CLT 4>...What readers?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>...Độc giả nào cơ?\n"
+"<CLT>"

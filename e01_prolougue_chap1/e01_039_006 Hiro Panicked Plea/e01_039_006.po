@@ -15,8 +15,7 @@ msgstr ""
 #. リアルな話…こんな場所で死にたくねーって…
 msgctxt "0001 | YASUHIRO HAGAKURE"
 msgid "Ugh...no way. I seriously don't wanna die here...!"
-msgstr ""
-
+msgstr "Ư... không đời nào. Tớ nói thật lòng đấy... tớ không muốn chết ở đây đâu!"
 #. お願いッ！　助けてください、
 #. 神様仏様女神様宇宙神様界王神様！
 msgctxt "0002 | YASUHIRO HAGAKURE"
@@ -24,12 +23,12 @@ msgid ""
 "I'm begging you! God, Buddha, Mother Earth, God of\n"
 "Space, King Neptune! Help me!"
 msgstr ""
-
+"Tớ xin các người đó! Thần linh, Phật tổ, Mẹ Trái Đất, Thần\n"
+"Vũ Trụ, Vua Thủy Tề! Cứu tớ với!"
 #. 誰でもいいから助けてください～！！
 msgctxt "0003 | YASUHIRO HAGAKURE"
 msgid "I don't care who it is, just get me outta here!"
-msgstr ""
-
+msgstr "Ai cũng được, làm ơn đưa tớ ra khỏi đây đi!"
 #. <CLT 4>葉隠クンは…捜査どころじゃなさそうだな…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -38,12 +37,12 @@ msgid ""
 "investigating right now...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Hiro có vẻ... chẳng còn tâm trí đâu mà điều tra nữa rồi...\n"
+"<CLT>"
 #. 葉隠クン…ちょっと聞きたい事があるんだ。
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Hey Hiro, can I ask you something?"
-msgstr ""
-
+msgstr "Yasuhiro... tớ có chuyện này muốn hỏi cậu một chút."
 #. イヤだイヤだイヤだ…
 #. ここから出たいすぐ出たいもう出たい今にも出たい…
 msgctxt "0006 | YASUHIRO HAGAKURE"
@@ -51,43 +50,37 @@ msgid ""
 "Aggh! No no no no no! I gotta get outta here! Gotta\n"
 "get out now! I've had enough! Gotta break free!"
 msgstr ""
-
+"Á! Không không không! Tớ phải ra khỏi đây! Phải\n"
+"ra ngay lập tức! Tớ chịu hết nổi rồi! Phải thoát ra thôi!"
 #. 葉隠クンってば…！
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "Hiro, snap out of it!"
-msgstr ""
-
+msgstr "Yasuhiro, tỉnh lại đi!"
 #. ううう……ん…？
 msgctxt "0008 | YASUHIRO HAGAKURE"
 msgid "Ghh... Hrm?"
-msgstr ""
-
+msgstr "Ghh... Hửm...?"
 #. あら、苗木っち…いたの？
 #. 何…？
 msgctxt "0009 | YASUHIRO HAGAKURE"
 msgid "Huh? Makoto, what are you doing here? What...?"
-msgstr ""
-
+msgstr "Hả? Makoto, cậu ở đây từ lúc nào thế? Gì vậy...?"
 #. …あのさ、このガラス玉に見覚えないかな？
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Hey, um...does this look familiar?"
-msgstr ""
-
+msgstr "...Này, cậu có thấy quả cầu thủy tinh này quen không?"
 #. あああっ！？
 msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid "Ahhh!"
-msgstr ""
-
+msgstr "Ááá!"
 #. つか、それって俺の水晶玉だべっ！！
 msgctxt "0012 | YASUHIRO HAGAKURE"
 msgid "That's my crystal ball!"
-msgstr ""
-
+msgstr "Đúng hơn thì, đó là quả cầu pha lê của tớ mà!"
 #. え？　割れてる…え？　え？
 msgctxt "0013 | YASUHIRO HAGAKURE"
 msgid "But...it's all smashed! What the hell...?"
-msgstr ""
-
+msgstr "Hả? Nó bị vỡ rồi... hả? Cái quái gì thế này...?"
 #. ぜ、絶対に割れない奇跡の水晶玉って言われたから
 #. 買ったのに…
 msgctxt "0014 | YASUHIRO HAGAKURE"
@@ -95,12 +88,12 @@ msgid ""
 "I-I only bought it cuz the guy said it was blessed! He\n"
 "said it was unbreakable...!"
 msgstr ""
-
+"T-Tớ mua nó chỉ vì gã đó bảo nó đã được ban phước! Gã\n"
+"còn bảo nó không bao giờ vỡ được cơ mà...!"
 #. え？　なんで割れてるん？
 msgctxt "0015 | YASUHIRO HAGAKURE"
 msgid "So...how did it break?"
-msgstr ""
-
+msgstr "Hả? Sao nó lại vỡ được chứ?"
 #. しかもガラスだった！？　水晶ですらなく？
 #. もしかして、俺って騙されたんか？
 msgctxt "0016 | YASUHIRO HAGAKURE"
@@ -108,7 +101,8 @@ msgid ""
 "Was it actually just made of glass!? And not crystal!?\n"
 "Did that guy totally dupe me!?"
 msgstr ""
-
+"Hóa ra nó chỉ làm bằng thủy tinh thôi sao!? Thậm chí không phải pha lê!?\n"
+"Chẳng lẽ tớ bị lừa ngoạn mục vậy sao!?"
 #. かのナポレオンやチンギスハンやワシントンという
 #. 歴代の英雄達が手にしてきた水晶玉で…
 msgctxt "0017 | YASUHIRO HAGAKURE"
@@ -116,42 +110,38 @@ msgid ""
 "He said it belonged to the pillars of history...\n"
 "Genghis Khan, George Washington, Napoleon..."
 msgstr ""
-
+"Gã bảo nó từng thuộc về những vĩ nhân lịch sử...\n"
+"Thành Cát Tư Hãn, George Washington, Napoleon..."
 #. それを持つ者は世界を統べるという伝説の水晶玉…
 #. え、騙されたん？　マジでか！？
 msgctxt "0018 | YASUHIRO HAGAKURE"
 msgid ""
 "He said whoever controlled that crystal ball\n"
 "controlled the world! Was that seriously all BS!?"
-msgstr ""
-
+msgstr "Gã bảo ai sở hữu quả cầu đó sẽ thống trị cả thế giới! Chẳng lẽ tất cả chỉ là lời xạo hết sao!?"
 #. あ、あのさ…葉隠クン。
 #. その話は置いといて…
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "U-Umm...let's put that aside for now."
-msgstr ""
-
+msgstr "À, ừm... chuyện đó để sau đi đã Yasuhiro."
 #. とにかく、これって…
 #. 葉隠クンの物で間違いないんだよね？
 msgctxt "0020 | MAKOTO NAEGI"
 msgid ""
 "So you can say without a doubt that this belonged to\n"
 "you?"
-msgstr ""
-
+msgstr "Dù sao thì, cậu có thể khẳng định chắc chắn đây là đồ của cậu chứ?"
 #. 間違いなく…俺んだけど…
 msgctxt "0021 | YASUHIRO HAGAKURE"
 msgid "Yeah, that's mine for sure."
-msgstr ""
-
+msgstr "Chắc chắn rồi... nó là của tớ mà."
 #. きっと、昨日の夜、ランドリーに置き忘れたんだ。
 #. それを盗まれたって事だべ…
 msgctxt "0022 | YASUHIRO HAGAKURE"
 msgid ""
 "I prolly forgot it in the laundry room last night.\n"
 "Someone musta come by and snatched it."
-msgstr ""
-
+msgstr "Chắc là tớ để quên nó ở phòng giặt tối qua rồi. Ai đó chắc hẳn đã đi ngang qua rồi nẫng nó đi mất..."
 #. <CLT 4>ランドリーに…置き忘れた？
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -159,7 +149,8 @@ msgid ""
 "<CLT 4>You left it in the laundry room?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cậu để quên ở phòng giặt sao?\n"
+"<CLT>"
 #. <CLT 4>という事は、誰にでも持ち出せたって事だよな。
 #. <CLT>
 msgctxt "0024 | MAKOTO NAEGI"
@@ -167,7 +158,8 @@ msgid ""
 "<CLT 4>That means anyone could have found it and taken it...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Vậy nghĩa là bất cứ ai cũng có thể tìm thấy và lấy nó đi...\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>割れたガラス玉<CLT><CLT 23>の情報を更新しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -177,18 +169,17 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>Thông tin về \"<CLT><CLT 3>Quả cầu thủy tinh vỡ<CLT><CLT 23>\" đã được cập nhật trong mục Đạn Hy Vọng trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. …葉隠クン、ありがとう。
 #. ボクが聞きたいのは、それだけだよ。
 msgctxt "0026 | MAKOTO NAEGI"
 msgid "Thanks, Hiro. That's all I wanted to know."
-msgstr ""
-
+msgstr "Cảm ơn cậu nhé Yasuhiro. Tớ chỉ muốn biết bấy nhiêu thôi."
 #. あ、あぁ……
 msgctxt "0027 | YASUHIRO HAGAKURE"
 msgid "S-Sure..."
-msgstr ""
-
+msgstr "À, ừ..."
 #. ………………
 msgctxt "0028 | MAKOTO NAEGI"
 msgid "..."
@@ -200,32 +191,27 @@ msgctxt "0029 | MAKOTO NAEGI"
 msgid ""
 "Um, by the way...I'm almost afraid to ask, but how\n"
 "much did you pay for that thing?"
-msgstr ""
-
+msgstr "Ừm, tớ hỏi ngoài lề chút... tớ cũng hơi ngại khi hỏi, nhưng cậu đã mua thứ đó với giá bao nhiêu vậy?"
 #. …占いで稼いだ２年間のほぼすべて…
 msgctxt "0030 | YASUHIRO HAGAKURE"
 msgid ""
 "Everything I saved up from fortune-telling for two\n"
 "full years."
-msgstr ""
-
+msgstr "...Hầu như toàn bộ số tiền tớ kiếm được từ việc bói toán trong suốt hai năm..."
 #. リアルな話…１億だべ。
 msgctxt "0031 | YASUHIRO HAGAKURE"
 msgid "Came out to be like...a million."
-msgstr ""
-
+msgstr "Nói thật lòng đấy... là 100 triệu yên."
 #. い、１億ぅ！？
 msgctxt "0032 | MAKOTO NAEGI"
 msgid "A m-million!?"
-msgstr ""
-
+msgstr "1-100 triệu yên sao!?"
 #. 世界を統べる力の金額にしては…安いかなって…
 msgctxt "0033 | YASUHIRO HAGAKURE"
 msgid ""
 "That's pretty cheap, actually. I mean, considering it\n"
 "gives you the power to control the world..."
-msgstr ""
-
+msgstr "Thực ra như vậy là khá rẻ rồi. Ý tớ là, xét đến việc nó mang lại sức mạnh thống trị thế giới..."
 #. <CLT 4>アホすぎて…同情の余地すらないな…
 #. <CLT>
 msgctxt "0034 | MAKOTO NAEGI"
@@ -234,62 +220,53 @@ msgid ""
 "for him...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Thật là... quá ngốc luôn. Mình thậm chí chẳng thể thấy tội nghiệp cho cậu ta được nữa...\n"
+"<CLT>"
 #. 学校エリアの…赤い扉…
 msgctxt "0035 | MAKOTO NAEGI"
 msgid "The red door on the 1st floor..."
-msgstr ""
-
+msgstr "Cánh cửa màu đỏ ở tầng một..."
 #. そこに行けばいいんだな…
 msgctxt "0036 | MAKOTO NAEGI"
 msgid "That's where I should go."
-msgstr ""
-
+msgstr "Đó là nơi mình nên đến."
 #. …行くしかないんだな。
 msgctxt "0037 | MAKOTO NAEGI"
 msgid "...No, where I *have* to go."
-msgstr ""
-
+msgstr "Không, đó là nơi mình *phải* đến."
 #. あのさ、不二咲さんに
 #. 聞きたい事があるんだけど…
 msgctxt "0038 | MAKOTO NAEGI"
 msgid "Hey, Chihiro. I was hoping I could ask you something."
-msgstr ""
-
+msgstr "Này Chihiro, tớ có chuyện này muốn hỏi cậu một chút."
 #. …聞きたい事？　なぁにぃ？
 msgctxt "0039 | CHIHIRO FUJISAKI"
 msgid "Oh? What is it?"
-msgstr ""
-
+msgstr "Hỏi chuyện gì cơ? Gì thế cậu?"
 #. 死んだ舞園さんが、
 #. あるメッセージを残してたんだ。
 msgctxt "0040 | MAKOTO NAEGI"
 msgid "Before she died, Sayaka left a message."
-msgstr ""
-
+msgstr "Trước khi chết, Sayaka đã để lại một lời nhắn."
 #. <CLT 3>『１１０３７』<CLT>って数字なんだけどさ…
 msgctxt "0041 | MAKOTO NAEGI"
 msgid "She wrote out the numbers <CLT 3>11037<CLT>."
-msgstr ""
-
+msgstr "Đó là dãy số <CLT 3>11037<CLT>..."
 #. この数字に何か心当たりはないかな？
 #. 例えば、暗号とかさ…
 msgctxt "0042 | MAKOTO NAEGI"
 msgid ""
 "Do you have any idea what these numbers might mean?\n"
 "Like, could they be a code or something...?"
-msgstr ""
-
+msgstr "Cậu có ý tưởng gì về ý nghĩa của những con số này không? Chẳng hạn như, nó có thể là một mật mã hay gì đó không...?"
 #. う～ん…
 msgctxt "0043 | CHIHIRO FUJISAKI"
 msgid "Umm..."
-msgstr ""
-
+msgstr "Ừm..."
 #. うう～ん……
 msgctxt "0044 | CHIHIRO FUJISAKI"
 msgid "Sorry, no..."
-msgstr ""
-
+msgstr "Xin lỗi, tớ không biết..."
 #. <CLT 4>不二咲さんは、しきりに何度も首を傾げた後…
 #. <CLT>
 msgctxt "0045 | MAKOTO NAEGI"
@@ -297,21 +274,20 @@ msgid ""
 "<CLT 4>Chihiro slowly shook her head.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chihiro khẽ lắc đầu sau một hồi suy nghĩ...\n"
+"<CLT>"
 #. ご、ごめんなさい…
 #. わからないです…
 msgctxt "0046 | CHIHIRO FUJISAKI"
 msgid "I-I'm sorry... I just don't know."
-msgstr ""
-
+msgstr "T-Tớ xin lỗi... tớ không biết thật mà."
 #. そっか、ならいいんだ。
 #. ありがとう…
 msgctxt "0047 | MAKOTO NAEGI"
 msgid ""
 "Okay. Well, don't worry about it. Thanks anyway for\n"
 "trying."
-msgstr ""
-
+msgstr "Vậy sao, không sao đâu. Dù sao cũng cảm ơn cậu vì đã cố gắng giúp tớ."
 #. <CLT 4>彼女でも…わからないか…
 #. <CLT>
 msgctxt "0048 | MAKOTO NAEGI"
@@ -319,7 +295,8 @@ msgid ""
 "<CLT 4>Even she doesn't know...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đến cả cậu ấy cũng không biết sao...\n"
+"<CLT>"
 #. <CLT 4>もしかして隠してる…とか…？
 #. <CLT>
 msgctxt "0049 | MAKOTO NAEGI"
@@ -327,7 +304,8 @@ msgid ""
 "<CLT 4>Or...could she maybe know more than she's letting on?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Hay là... cậu ấy đang che giấu điều gì đó chăng...?\n"
+"<CLT>"
 #. <CLT 4>………………
 #. <CLT>
 msgctxt "0050 | MAKOTO NAEGI"
@@ -335,7 +313,8 @@ msgid ""
 "<CLT 4>...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...\n"
+"<CLT>"
 #. <CLT 4>まさかな…
 #. <CLT>
 msgctxt "0051 | MAKOTO NAEGI"
@@ -343,25 +322,23 @@ msgid ""
 "<CLT 4>No, couldn't be...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chắc không phải đâu...\n"
+"<CLT>"
 #. 不二咲さんは、調査に行かないの？
 msgctxt "0052 | MAKOTO NAEGI"
 msgid "Aren't you going to help investigate, Chihiro?"
-msgstr ""
-
+msgstr "Chihiro không đi tham gia điều tra sao?"
 #. でも…江ノ島さんを置いて行ったら、
 #. 可哀相だから…
 msgctxt "0053 | CHIHIRO FUJISAKI"
 msgid ""
 "But...I can't leave Junko here. I-I feel sorry for\n"
 "her..."
-msgstr ""
-
+msgstr "Nhưng... tớ không thể bỏ mặc Junko ở đây được. T-Tớ thấy tội nghiệp cho cậu ấy lắm..."
 #. 一緒にいてあげようと思って…
 msgctxt "0054 | CHIHIRO FUJISAKI"
 msgid "I...I have to stay with her."
-msgstr ""
-
+msgstr "Tớ... tớ phải ở lại đây với cậu ấy."
 #. <CLT 4>そうだ！　このモノクマが写るモニター！
 #. ここに事件の手がかりが…
 #. <CLT>
@@ -371,12 +348,12 @@ msgid ""
 "There's gotta be a clue here!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đúng rồi! Cái màn hình mà Monokuma hay xuất hiện nè! Chắc chắn phải có manh mối gì đó ở đây!\n"
+"<CLT>"
 #. …ある訳ない。捜査に集中しよう。
 msgctxt "0056 | MAKOTO NAEGI"
 msgid "...Or not. I'd better get back to the investigation."
-msgstr ""
-
+msgstr "...Làm gì có chuyện đó chứ. Tốt nhất mình nên tập trung vào việc điều tra thì hơn."
 #. <CLT 4>この監視カメラで…
 #. ボクらが捜査してる姿を見てるって言うのか…
 #. <CLT>
@@ -386,7 +363,8 @@ msgid ""
 "observe our investigation...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Kẻ đứng sau chuyện này hẳn là đang dùng những chiếc camera này để theo dõi cuộc điều tra của chúng ta sao...\n"
+"<CLT>"
 #. <CLT 4>こんな事させて…
 #. 一体何が目的なんだよ…！
 #. <CLT>
@@ -396,7 +374,8 @@ msgid ""
 "hell do they want from us!?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Ép chúng ta vào tình cảnh như thế này... Rốt cuộc mục đích của chúng là gì chứ!\n"
+"<CLT>"
 #. <CLT 4>ボクは、江ノ島さんの死体にそっと手を触れてみた…
 #. <CLT>
 msgctxt "0059 | MAKOTO NAEGI"
@@ -404,7 +383,8 @@ msgid ""
 "<CLT 4>I gently placed my hand on Junko's lifeless body...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Tớ khẽ chạm tay vào thi thể của Junko...\n"
+"<CLT>"
 #. <CLT 4>映画やドラマで見るように、
 #. 彼女の手や首の脈を確かめてみたのだが…
 #. <CLT>
@@ -414,7 +394,8 @@ msgid ""
 "in movies and stuff, but...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Tớ thử bắt mạch ở cổ tay và cổ của cậu ấy như người ta hay làm trong phim ảnh, nhưng...\n"
+"<CLT>"
 #. ………………
 msgctxt "0061 | MAKOTO NAEGI"
 msgid "..."
@@ -423,8 +404,7 @@ msgstr "..."
 #. 本当に…死んでる……
 msgctxt "0062 | MAKOTO NAEGI"
 msgid "She...really is dead."
-msgstr ""
-
+msgstr "Cậu ấy... thực sự đã chết rồi."
 #. <CLT 4>それ以上は一切の言い表しようもないほど…
 #. 彼女は完全に死んでいた。
 #. <CLT>
@@ -433,17 +413,16 @@ msgid ""
 "<CLT 4>There wasn't anything else to say. She was gone...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Không còn gì để nói thêm nữa. Cậu ấy đã hoàn toàn ra đi rồi...\n"
+"<CLT>"
 #. はい
 msgctxt "0064 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
-
+msgstr "Có"
 #. いいえ
 msgctxt "0065 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
-
+msgstr "Không"
 #. <CLT 23>体育館から出ますか？
 #. <CLT>
 msgctxt "0066 | NARRATION"
@@ -451,3 +430,5 @@ msgid ""
 "<CLT 23>Leave the gym?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Bạn có muốn rời khỏi phòng thể chất không?\n"
+"<CLT>"
