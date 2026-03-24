@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Tất nhiên rồi!"
+#. <CLT 23><CLT><CLT 3>%CTRL_TRIAL_CONCENTRATE%<CLT><CLT 23>を押している間、
+#. あなた様は<CLT><CLT 3>精神集中<CLT><CLT 23>を行う事ができます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>You can <CLT><CLT 3>concentrate<CLT><CLT 23> by holding down the <CLT><CLT 3>%CTRL_TRIAL_CONCENTRATE%<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn có thể <CLT><CLT 3>tập trung tinh thần<CLT><CLT 23> bằng cách giữ nút <CLT><CLT 3>%CTRL_TRIAL_CONCENTRATE%<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>精神集中を行うと、<CLT><CLT 3>議論の流れが遅く<CLT><CLT 23>なり、
+#. 発言をじっくりと聞くことが可能でございます。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>While you're concentrating, time will <CLT><CLT 3>slow down<CLT><CLT 23> so\n"
+"you can pay closer attention to what everyone's saying.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Khi đang tập trung, thời gian sẽ <CLT><CLT 3>trôi chậm lại<CLT><CLT 23> để\n"
+"bạn có thể chú ý kỹ hơn vào những gì mọi người đang nói.\n"
+"<CLT>"
+#. <CLT 23>また、<CLT><CLT 3>照準のブレも抑えられる<CLT><CLT 23>ため、
+#. ウィークポイントを狙いやすくなるでしょう。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>On top of that, it'll <CLT><CLT 3>steady your aim<CLT><CLT 23>, making it\n"
+"easier to target potential weak spots.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Ngoài ra, nó cũng giúp <CLT><CLT 3>ổn định tâm ngắm<CLT><CLT 23>, giúp\n"
+"việc nhắm vào các điểm yếu trở nên dễ dàng hơn.\n"
+"<CLT>"
+#. <CLT 23>精神集中は<CLT><CLT 3>集中力ゲージを消費<CLT><CLT 23>するため、
+#. 集中力ゲージが無ければ、お使い頂けません。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>Concentrating like this consumes the <CLT><CLT 3>Focus Gauge<CLT><CLT 23>,\n"
+"and if this gauge empties, you can't concentrate.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Việc tập trung như vậy sẽ tiêu tốn <CLT><CLT 3>Thanh Tập Trung<CLT><CLT 23>,\n"
+"và nếu thanh này cạn kiệt, bạn sẽ không thể tập trung được nữa.\n"
+"<CLT>"
+#. <CLT 23>集中力ゲージは<CLT><CLT 3>時間と共に回復<CLT><CLT 23>していきます。
+#. あわてず脳をお休めください。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>But the Focus Gauge will <CLT><CLT 3>recover over time<CLT><CLT 23>. So let\n"
+"your brain take a rest. No need to rush!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhưng Thanh Tập Trung sẽ <CLT><CLT 3>tự hồi phục theo thời gian<CLT><CLT 23>. Vậy nên\n"
+"hãy để bộ não của bạn nghỉ ngơi một chút. Đừng quá vội vàng nhé!\n"
+"<CLT>"
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
+"<CLT>"
+#. <CLT 23>ノンストップ議論の<CLT><CLT 3>補足説明<CLT><CLT 23>でございます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>There's <CLT><CLT 3>a bit more to learn<CLT><CLT 23> about Nonstop Debates.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vẫn còn <CLT><CLT 3>một chút thông tin nữa<CLT><CLT 23> về Tranh Luận Liên Hồi. Bạn\n"
+"có muốn nghe thêm không?\n"
+"<CLT>"

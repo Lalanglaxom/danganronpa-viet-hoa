@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Tất nhiên rồi!"
+#. <CLT 23>学級裁判を決着づける、最後の推理…
+#. それが<CLT><CLT 3>クライマックス推理<CLT><CLT 23>でございます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Every case has one last element to bring the class\n"
+"trial to an end. This is the <CLT><CLT 3>Closing Argument<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Mọi vụ án đều có một yếu tố cuối cùng để kết thúc Lớp Xét Xử.\n"
+"Đó chính là <CLT><CLT 3>Lập Luận Đỉnh Điểm<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>このフェイズでは、<CLT><CLT 3>事件の総まとめ<CLT><CLT 23>を行います。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>In this phase, you'll give a <CLT><CLT 3>complete summary of the\n"
+"case<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Trong giai đoạn này, bạn sẽ đưa ra một <CLT><CLT 3>bản tóm tắt\n"
+"toàn bộ vụ án<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>事件の流れは<CLT><CLT 3>マンガ形式<CLT><CLT 23>で再現致します。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>You'll have to reproduce the flow of events for the\n"
+"case in the form of a <CLT><CLT 3>comic book<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn sẽ phải tái hiện lại trình tự các sự việc trong\n"
+"vụ án dưới hình thức một <CLT><CLT 3>cuốn truyện tranh<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>しかしマンガには、ところどころ<CLT><CLT 3>“コマ”<CLT><CLT 23>が
+#. 抜けております。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>However, you'll notice that in the comic, there are a\n"
+"number of <CLT><CLT 3>pieces<CLT><CLT 23> missing.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Tuy nhiên, bạn sẽ thấy rằng trong truyện tranh có một\n"
+"vài <CLT><CLT 3>mảnh ghép<CLT><CLT 23> còn thiếu.\n"
+"<CLT>"
+#. <CLT 23>与えられた<CLT><CLT 3>“推理コマ”<CLT><CLT 23>を、抜けているコマに
+#. はめこんでいき、<CLT><CLT 3>マンガを完成<CLT><CLT 23>させてください。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>It's up to you to <CLT><CLT 3>complete the comic<CLT><CLT 23> using the\n"
+"provided <CLT><CLT 3>Truth Panels<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhiệm vụ của bạn là <CLT><CLT 3>hoàn thành truyện tranh<CLT><CLT 23> bằng cách\n"
+"sử dụng <CLT><CLT 3>Ô Truyện Sự Thật<CLT><CLT 23> đã cho.\n"
+"<CLT>"
+#. <CLT 23>また、抜けているコマに照準を合わせ、
+#. <CLT><CLT 3>%CTRL_RECONSTRUCT_HINT%<CLT><CLT 23>を押して頂くと…
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Also, if you take aim at a missing section and press\n"
+"the <CLT><CLT 3>%CTRL_RECONSTRUCT_HINT%<CLT><CLT 23>...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Ngoài ra, nếu bạn nhắm vào phần còn thiếu và nhấn\n"
+"nút <CLT><CLT 3>%CTRL_RECONSTRUCT_HINT%<CLT><CLT 23>...\n"
+"<CLT>"
+#. <CLT 23>なんという事でしょう…
+#. 画期的な<CLT><CLT 3>“ヒント”<CLT><CLT 23>をご覧頂けます。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>Holy cow! You'll get a <CLT><CLT 3>hint<CLT><CLT 23> that might lead to a\n"
+"breakthrough!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Tuyệt vời làm sao! Bạn sẽ nhận được một <CLT><CLT 3>gợi ý<CLT><CLT 23> có thể dẫn\n"
+"đến một bước đột phá đấy!\n"
+"<CLT>"
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
+"<CLT>"
+#. <CLT 23>これから、<CLT><CLT 3>クライマックス推理<CLT><CLT 23>が始まります。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>The <CLT><CLT 3>Closing Argument<CLT><CLT 23> is about to begin. Would you\n"
+"like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Màn <CLT><CLT 3>Lập Luận Đỉnh Điểm<CLT><CLT 23> chuẩn bị bắt đầu. Bạn có\n"
+"muốn nghe giải thích thêm không?\n"
+"<CLT>"

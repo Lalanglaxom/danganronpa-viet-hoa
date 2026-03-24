@@ -1,0 +1,413 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. そうだ！　ボクの部屋には、
+#. <CLT 3>髪の毛<CLT>が１本も落ちてなかったんだ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"That's right! There wasn't a single <CLT 3>hair<CLT> on the\n"
+"floor!"
+msgstr ""
+"Đúng rồi! Không hề có một sợi <CLT 3>tóc<CLT> nào rơi trên\n"
+"sàn nhà cả!"
+#. 犯人が…証拠隠滅したって事…？
+msgctxt "0002 | CHIHIRO FUJISAKI"
+msgid "So...the culprit removed some evidence?"
+msgstr "Vậy là... hung thủ đã phi tang bằng chứng sao...?"
+#. でもさ、もしボクが犯人だとしたら…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Yes. And if I were the culprit..."
+msgstr "Đúng vậy. Và nếu tớ là hung thủ..."
+#. どうして自分の部屋の髪の毛を、
+#. そこまで徹底的に掃除する必要があるの？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"Why would I need to get rid of all the hair in my own\n"
+"room?"
+msgstr ""
+"Tại sao tớ lại phải dọn dẹp sạch sẽ toàn bộ tóc trong chính căn\n"
+"phòng của mình chứ?"
+#. だって、自分の部屋に自分の髪の毛が落ちてても、
+#. 何もおかしくないはずだよ？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"It wouldn't be unusual at all to find my hair at the\n"
+"crime scene, if the crime scene is in my room."
+msgstr ""
+"Sẽ chẳng có gì bất thường nếu tìm thấy tóc của tớ tại\n"
+"hiện trường, nếu như hiện trường đó nằm ngay trong phòng tớ."
+#. <CLT 3>『舞園さんが部屋を訪れた』<CLT>という痕跡を消す為に、
+#. 部屋中の髪の毛を掃除した…
+msgctxt "0006 | CELES"
+msgid ""
+"The reason all the hair was gone...was to remove any\n"
+"trace that <CLT 3>Sayaka had ever been there<CLT>."
+msgstr ""
+"Lý do mà toàn bộ tóc biến mất... là để xóa sạch mọi\n"
+"dấu vết cho thấy <CLT 3>Sayaka từng ở đó<CLT>."
+#. …そうは考えられませんか？
+msgctxt "0007 | CELES"
+msgid "That makes sense, does it not?"
+msgstr "Chẳng phải suy luận đó rất hợp lý sao?"
+#. 彼女の痕跡を消すのが目的なら、
+#. 髪の毛よりも、死体そのものをなんとかするはずよ…
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"No. If that were the case, they would have had to do\n"
+"something about the body itself, not just her hair."
+msgstr ""
+"Không. Nếu đúng là vậy, họ sẽ phải tìm cách xử lý\n"
+"chính cái xác, chứ không chỉ riêng đống tóc đâu."
+#. むむむ…一理ありますなぁ…
+msgctxt "0009 | HIFUMI YAMADA"
+msgid "Ah-ha-ha! Yes, very true, very true!"
+msgstr "A ha ha! Vâng, rất có lý, rất có lý!"
+#. だったら、どうして髪の毛が落ちてなかったんだよ…
+msgctxt "0010 | LEON KUWATA"
+msgid "Okay, then why wasn't there any hair on the ground?"
+msgstr "Được rồi, vậy tại sao lại không có sợi tóc nào trên sàn hả?"
+#. もちろん、犯人が掃除したからよ。
+#. <CLT 3>『自分がその部屋を訪れた』<CLT>という痕跡を消す為にね。
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgid ""
+"The killer got rid of it all, of course. To remove any\n"
+"trace that <CLT 3>*they* had ever been there<CLT>."
+msgstr ""
+"Dĩ nhiên là vì hung thủ đã dọn dẹp rồi. Để xóa sạch mọi\n"
+"dấu vết cho thấy <CLT 3>*hắn* từng có mặt ở đó<CLT>."
+#. …って事は！
+msgctxt "0012 | MONDO OOWADA"
+msgid "Wait, then that means...!"
+msgstr "Khoan đã, vậy nghĩa là...!"
+#. そう、犯人が部屋の持ち主だとは考えられないのよ…
+msgctxt "0013 | KYOUKO KIRIGIRI"
+msgid ""
+"Precisely. It's simply beyond reason to believe that\n"
+"the room's owner and the killer are one and the same."
+msgstr ""
+"Chính xác. Thật phi lý khi tin rằng chủ nhân căn phòng\n"
+"và hung thủ lại là cùng một người."
+#. じゃあ…苗木君は犯人じゃない…！？
+msgctxt "0014 | CHIHIRO FUJISAKI"
+msgid "Then...Makoto isn't the culprit?"
+msgstr "Vậy... Makoto không phải là hung thủ sao...?"
+#. だが、そんな大事な事を
+#. たかが髪の毛だけで決めていいのか！？
+msgctxt "0015 | KIYOTAKA ISHIMARU"
+msgid ""
+"But are you sure we can decide something so important\n"
+"based solely on the absence of some hair!?"
+msgstr ""
+"Nhưng cậu có chắc là chúng ta nên quyết định một việc quan trọng\n"
+"như vậy chỉ dựa vào việc thiếu vài sợi tóc không!?"
+#. いいえ、苗木君が犯人じゃないって根拠は、
+#. 他にもあるわよ。
+msgctxt "0016 | KYOUKO KIRIGIRI"
+msgid ""
+"No. There are other reasons that prove why Makoto\n"
+"couldn't have done it."
+msgstr ""
+"Không. Vẫn còn những lý do khác chứng minh tại sao\n"
+"Makoto không thể là người đã làm việc đó."
+#. 聞かせてもらおうか…
+msgctxt "0017 | SAKURA OOGAMI"
+msgid "I would like to hear these reasons..."
+msgstr "Tôi muốn nghe những lý do này..."
+#. 現場となった<CLT 3>シャワールーム周辺の状況<CLT>を
+#. よく思い出してみて…
+msgctxt "0018 | KYOUKO KIRIGIRI"
+msgid ""
+"Do you remember anything remarkable about the\n"
+"<CLT 3>bathroom<CLT> at the scene?"
+msgstr ""
+"Cậu có nhớ điều gì đáng chú ý về <CLT 3>phòng tắm<CLT>\n"
+"tại hiện trường không?"
+#. 舞園さんは最初に部屋で襲われ、
+#. その後、シャワールームに逃げ込んだのよね？
+msgctxt "0019 | KYOUKO KIRIGIRI"
+msgid ""
+"Sayaka was attacked in the main room first, then fled\n"
+"into the bathroom, right?"
+msgstr ""
+"Sayaka đã bị tấn công ở phòng chính trước, sau đó mới chạy\n"
+"vào phòng tắm, đúng chứ?"
+#. 犯人は、その後を追って、シャワールームに入った。
+#. そこで、あの女を刺し殺したんだ。
+msgctxt "0020 | MONDO OOWADA"
+msgid ""
+"Yeah, then they ran after her, got into the bathroom,\n"
+"and stabbed her..."
+msgstr ""
+"Phải, rồi hắn đuổi theo cô ta, xông vào phòng tắm,\n"
+"và đâm chết cô ta luôn..."
+#. その時、犯人は、
+#. すんなりとシャワールームに入れたのかしら？
+msgctxt "0021 | KYOUKO KIRIGIRI"
+msgid ""
+"And how did the killer get into the bathroom? Did they\n"
+"have any trouble with it?"
+msgstr ""
+"Và hung thủ đã vào phòng tắm bằng cách nào? Hắn có\n"
+"gặp khó khăn gì không?"
+#. どういう意味ですか…？
+msgctxt "0022 | CELES"
+msgid "What do you mean...?"
+msgstr "Cậu có ý gì vậy...?"
+#. 犯人はシャワールームに入る際、
+#. かなり手こずったんじゃないかしら…
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid ""
+"It's fairly certain that the killer had some trouble\n"
+"getting into the bathroom..."
+msgstr ""
+"Khá chắc chắn rằng hung thủ đã gặp rắc rối khi cố gắng\n"
+"vào trong phòng tắm..."
+#. その証拠だってハッキリと残っていたはずよ…
+#. 苗木君、覚えているでしょう？
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid ""
+"There was clear evidence left behind. Do you remember,\n"
+"Makoto?"
+msgstr ""
+"Đã có bằng chứng rõ ràng được để lại. Cậu còn nhớ\n"
+"không, Makoto?"
+#. 確かにそれは重要な事実なのかもね…
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgid "There's no doubt, this fact is an important one."
+msgstr "Không còn nghi ngờ gì nữa, sự thật này rất quan trọng."
+#. けれど、今必要なのは、
+#. 現場にハッキリと残っていた証拠よ。
+msgctxt "0026 | KYOUKO KIRIGIRI"
+msgid ""
+"But what we need now is the evidence left behind at\n"
+"the scene which proves it."
+msgstr ""
+"Nhưng thứ chúng ta cần bây giờ là bằng chứng còn sót lại\n"
+"tại hiện trường để chứng minh điều đó."
+#. 苗木君の部屋で壊されていたモノ…
+#. 覚えているでしょう？
+msgctxt "0027 | KYOUKO KIRIGIRI"
+msgid ""
+"You do remember what was in your room, right? What got\n"
+"broken?"
+msgstr ""
+"Cậu có nhớ thứ gì trong phòng mình không? Thứ gì đã bị\n"
+"hỏng?"
+#. <CLT 4>ボクの部屋で壊されていたモノ…？
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What got broken in my room...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thứ gì đã bị hỏng trong phòng mình sao...?\n"
+"<CLT>"
+#. いいえ違うわ。
+#. 落ち着いて良く考えてみて…
+msgctxt "0029 | KYOUKO KIRIGIRI"
+msgid ""
+"No, you've got it all wrong. Just calm down and think\n"
+"about it carefully."
+msgstr ""
+"Không, cậu nhầm rồi. Hãy bình tĩnh và suy nghĩ\n"
+"thật kỹ đi."
+#. そんな見当違いの話をしたかったのか？
+#. 耳を傾けた自分の愚かさを恥じる。
+msgctxt "0030 | BYAKUYA TOGAMI"
+msgid ""
+"Could you possibly have been more wrong? I'm ashamed I\n"
+"wasted any amount of time listening to you..."
+msgstr ""
+"Lẽ nào ngươi có thể sai lầm hơn thế được không? Tôi thấy xấu hổ vì\n"
+"đã lãng phí thời gian để lắng nghe ngươi đấy..."
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như tôi vừa làm bẽ mặt chính mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. 今は発言しなければ、議論は進まないわ。
+msgctxt "0032 | KYOUKO KIRIGIRI"
+msgid ""
+"If you don't do something, the trial can't move\n"
+"forward."
+msgstr ""
+"Nếu cậu không lên tiếng, phiên tòa sẽ không thể tiếp\n"
+"tục được đâu."
+#. 時間には限りがある…
+#. 最悪の結果をあなたは望んでいるの？
+msgctxt "0033 | KYOUKO KIRIGIRI"
+msgid ""
+"We don't have all the time in the world. You're not\n"
+"*trying* to lose this case, are you?"
+msgstr ""
+"Thời gian của chúng ta có hạn. Cậu không phải đang\n"
+"*muốn* thua vụ này đấy chứ?"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như tôi vừa làm bẽ mặt chính mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. <CLT 4>犯人はシャワールームに入る際に手こずったはず…
+#. その事を示す証拠って…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The killer struggled getting into the bathroom. And\n"
+"the evidence that proves it is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hung thủ hẳn đã gặp khó khăn khi vào phòng tắm. Và\n"
+"bằng chứng chứng minh điều đó là...\n"
+"<CLT>"
+#. <CLT 4>犯人はシャワールームに入る際に手こずったはず…
+#. その事を示す証拠って…
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The killer struggled getting into the bathroom. And\n"
+"the evidence that proves it is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hung thủ hẳn đã gặp khó khăn khi vào phòng tắm. Và\n"
+"bằng chứng chứng minh điều đó là...\n"
+"<CLT>"
+#. <CLT 4>犯人が壊した例の物の事だよな…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...the object the killer broke.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...thứ mà hung thủ đã làm hỏng.\n"
+"<CLT>"
+#. 犯人が手こずった証拠って…
+#. <CLT 3>シャワールームのドアノブ<CLT>の事だよね？
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"Evidence that the killer had trouble getting into the\n"
+"bathroom... You're talking about the <CLT 3>doorknob<CLT>, right?"
+msgstr ""
+"Bằng chứng cho thấy hung thủ gặp khó khăn khi vào phòng\n"
+"tắm... Ý cậu là cái <CLT 3>tay nắm cửa<CLT>, đúng chứ?"
+#. ドアノブが…どうしたんだべ…？
+msgctxt "0039 | YASUHIRO HAGAKURE"
+msgid "Huh? The doorknob? What doorknob?"
+msgstr "Hả? Tay nắm cửa? Tay nắm cửa nào cơ?"
+#. 壊されてたんだよ…
+#. ボクの部屋のシャワールームのドアノブがさ…
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"The doorknob for my bathroom... It was completely\n"
+"broken."
+msgstr ""
+"Tay nắm cửa phòng tắm của tớ... Nó đã bị hỏng hoàn\n"
+"toàn."
+#. ほら、上の部分のネジが外れて、
+#. ドアノブが取れ掛かってるでしょ？
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"See how the top part was unscrewed, and the doorknob's\n"
+"about ready to fall off?"
+msgstr ""
+"Cậu thấy phần ốc vít bên trên bị tháo ra, và cái tay nắm cửa\n"
+"sắp rơi hẳn ra ngoài không?"
+#. ホントだぁ…
+#. でも、どうしてドアノブなんかが…？
+msgctxt "0042 | CHIHIRO FUJISAKI"
+msgid "Oh yeah, true... But what does it mean?"
+msgstr "Ồ đúng thật... Nhưng vậy nghĩa là sao?"
+#. 犯人がシャワールームの鍵を壊そうとして、
+#. ドアノブごと外したのよ…
+msgctxt "0043 | KYOUKO KIRIGIRI"
+msgid ""
+"In trying to bypass the lock, they ended up nearly\n"
+"removing the entire doorknob."
+msgstr ""
+"Trong khi cố phá khóa, họ đã vô tình tháo gần như rời\n"
+"cả cái tay nắm cửa ra."
+#. これが、苗木君が犯人と考えられない根拠。
+#. もう１つの“部屋の持ち主ではあり得ない行動”よ…
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid ""
+"This is another most bewildering act for the room's\n"
+"owner. It proves Makoto is beyond suspicion."
+msgstr ""
+"Đây là một hành động cực kỳ khó hiểu khác đối với chủ nhân căn\n"
+"phòng. Nó chứng minh Makoto hoàn toàn vô tội."
+#. 自分の部屋のドアを壊すはずねーってか？
+msgctxt "0045 | LEON KUWATA"
+msgid ""
+"So what, you're saying he wouldn't break the door in\n"
+"his own room?"
+msgstr ""
+"Vậy là sao, ý cậu là cậu ta sẽ không phá cửa phòng\n"
+"của chính mình à?"
+#. でも、壊すしかねーんだったら壊すだろ！！
+#. あり得ねーってほどじゃねーだろ！？
+msgctxt "0046 | LEON KUWATA"
+msgid ""
+"But if the only choice you have is to break it, you\n"
+"break it! There's nothing \"bewildering\" about it!"
+msgstr ""
+"Nhưng nếu lựa chọn duy nhất là phá nó, thì phải phá thôi chứ!\n"
+"Chẳng có gì là \"khó hiểu\" ở đây cả!"
+#. そう…まだわからないのね…
+#. だったら…
+msgctxt "0047 | KYOUKO KIRIGIRI"
+msgid "You still don't see? Okay, then..."
+msgstr "Cậu vẫn chưa hiểu sao? Được thôi, vậy thì..."
+#. もう１度、事件の流れを振り返ってみましょうか。
+#. そうすれば、きっとわかるはずよ…
+msgctxt "0048 | KYOUKO KIRIGIRI"
+msgid ""
+"Let's take another look at how the incident unfolded.\n"
+"Hopefully that will help you understand..."
+msgstr ""
+"Hãy cùng nhìn lại diễn biến vụ án một lần nữa.\n"
+"Hy vọng điều đó sẽ giúp cậu hiểu ra..."
+#. <CLT 4>霧切さんの言う、
+#. “部屋の持ち主ではあり得ない行動”の意味…
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko said it was a \"bewildering act\"...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ý nghĩa của \"hành động khó hiểu đối với chủ phòng\" mà Kyoko nói...\n"
+"<CLT>"
+#. <CLT 4>それが、事件の流れの中に隠されている…
+#. そういう事なのか？
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I almost didn't notice it at first, but...is that the\n"
+"key point here?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ban đầu mình suýt thì không nhận ra, nhưng... đó có phải là điểm\n"
+"mấu chốt ở đây không?\n"
+"<CLT>"

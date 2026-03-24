@@ -1,0 +1,176 @@
+--- Gemini Translation Raw Output for e01_153_000.po ---
+
+==================== BATCH 1 ====================
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Tất nhiên rồi!"
+
+#. <CLT 23>そろそろノンストップ議論にも、
+#. 慣れて頂けたでしょうか？
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Are you getting used to these Nonstop Debates?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn đã dần làm quen với các màn Tranh Luận Liên Hồi chưa?\n"
+"<CLT>"
+
+#. <CLT 23>次の議論からは、<CLT><CLT 3>複数の言弾（コトダマ）<CLT><CLT 23>を、
+#. シリンダーに装填させて頂きます。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Starting with the next debate, I'll start loading\n"
+"<CLT><CLT 3>multiple Truth Bullets<CLT><CLT 23> into your Truth Cylinder.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bắt đầu từ cuộc tranh luận tới, tôi sẽ nạp\n"
+"<CLT><CLT 3>nhiều Đạn Phản Hồi<CLT><CLT 23> vào Ổ Đạn Phản Hồi của bạn.\n"
+"<CLT>"
+
+#. <CLT 23>ですが、ウィークポイント同様、議論を論破できる
+#. 言弾（コトダマ）はその中に<CLT><CLT 3>１つ<CLT><CLT 23>だけ…
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>But just like with the weak spots, only <CLT><CLT 3>one<CLT><CLT 23> of those\n"
+"bullets can actually refute the proper statement.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhưng cũng giống như các điểm yếu, chỉ có <CLT><CLT 3>duy nhất một<CLT><CLT 23>\n"
+"viên đạn có thể thực sự bác bỏ phát ngôn chính xác.\n"
+"<CLT>"
+
+#. <CLT 23>つまりここからは…
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>In other words, from here on out...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nói cách khác, kể từ bây giờ trở đi...\n"
+"<CLT>"
+
+#. <CLT 23>議論を論破できるウィークポイントと言弾（コトダマ）
+#. の<CLT><CLT 3>組み合わせ<CLT><CLT 23>を、<CLT><CLT 3>推理<CLT><CLT 23>して頂く事になります。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>...you'll have to <CLT><CLT 3>combine<CLT><CLT 23> the right Truth Bullets\n"
+"with the right weak spots to refute each statement.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...bạn sẽ phải <CLT><CLT 3>kết hợp<CLT><CLT 23> đúng Đạn Phản Hồi với đúng điểm yếu\n"
+"để bác bỏ từng phát ngôn tương ứng.\n"
+"<CLT>"
+
+#. <CLT 23>その組み合わせが間違ったモノであれば、
+#. <CLT><CLT 3>発言力ゲージにダメージ<CLT><CLT 23>を受けてしまいます。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>If you come up with the wrong combination, you'll take\n"
+"damage to your <CLT><CLT 3>Influence Gauge<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu đưa ra một sự kết hợp sai lầm, bạn sẽ khiến\n"
+"<CLT><CLT 3>Thanh Phát Ngôn<CLT><CLT 23> bị tổn hại.\n"
+"<CLT>"
+
+#. <CLT 23>コトダマシリンダーにセットされている
+#. 言弾（コトダマ）は、<CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23>で
+#. ご変更頂けます。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>You can press the <CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23> to rotate the cylinder\n"
+"and choose which bullet to fire.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn có thể nhấn <CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23> để xoay ổ đạn\n"
+"và chọn viên đạn muốn bắn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>%CTRL_QUICK_SELECT%をちょんと押して<CLT><CLT 23>頂くと、
+#. 順送りに言弾（コトダマ）をご変更頂けます。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23><CLT><CLT 3>Press and release the %CTRL_QUICK_SELECT%<CLT><CLT 23> to cycle through each\n"
+"bullet.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23><CLT><CLT 3>Nhấn rồi thả %CTRL_QUICK_SELECT%<CLT><CLT 23> để xoay vòng qua từng\n"
+"viên đạn.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>%CTRL_TRUTH_BULLET_CYCLE_START%<CLT><CLT 23>頂くと、%CTRL_TRUTH_BULLET_CYCLE_CONTD%
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>Or you can <CLT><CLT 3>%CTRL_TRUTH_BULLET_CYCLE_START%<CLT><CLT 23> %CTRL_TRUTH_BULLET_CYCLE_CONTD%\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Hoặc bạn có thể <CLT><CLT 3>%CTRL_TRUTH_BULLET_CYCLE_START%<CLT><CLT 23> %CTRL_TRUTH_BULLET_CYCLE_CONTD%\n"
+"<CLT>"
+
+#. <CLT 23>ちなみに、推理難易度が“ユルヤカ”以下ですと、
+#. 言弾（コトダマ）の装填数が少なくなりますが…
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>By the way, if the Logic Difficulty is set to Kind,\n"
+"fewer bullets will be loaded into the cylinder.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhân tiện, nếu Độ khó Suy luận được thiết lập ở mức Nhẹ nhàng,\n"
+"số lượng đạn được nạp vào ổ đạn sẽ ít hơn.\n"
+"<CLT>"
+
+#. <CLT 23>今回の議論だけは、推理難易度“イジワル”と
+#. 同様の装填数にさせて頂きます。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>For our purposes this time, the Logic Difficulty will\n"
+"be set to Mean.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Riêng cuộc tranh luận lần này, Độ khó Suy luận sẽ được\n"
+"thiết lập tương đương mức Khó nhằn.\n"
+"<CLT>"
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
+"<CLT>"
+
+#. <CLT 23>ノンストップ議論の<CLT><CLT 3>補足説明<CLT><CLT 23>でございます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0015 | NARRATION"
+msgid ""
+"<CLT 23>There's <CLT><CLT 3>a bit more to learn<CLT><CLT 23> about Nonstop Debates.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vẫn còn <CLT><CLT 3>một chút thông tin nữa<CLT><CLT 23> về Tranh Luận Liên Hồi. Bạn\n"
+"có muốn nghe thêm không?\n"
+"<CLT>"
+
+
+==================== FOLDER SUMMARY ====================
+Truth Bullet Tutorial
+

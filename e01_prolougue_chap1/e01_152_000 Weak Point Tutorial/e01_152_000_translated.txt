@@ -1,0 +1,131 @@
+--- Gemini Translation Raw Output for e01_152_000.po ---
+
+==================== BATCH 1 ====================
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Tất nhiên rồi!"
+
+#. <CLT 23>この議論から、
+#. ウィークポイントを増やさせて頂きます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>From here on out, the number of weak spots will start\n"
+"going up.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Kể từ đây trở đi, số lượng điểm yếu sẽ bắt đầu\n"
+"tăng lên.\n"
+"<CLT>"
+
+#. <CLT 23>ウィークポイントが複数あっても、
+#. 議論の中の<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>は基本的に１つ…
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>But no matter how many weak spots, there's essentially\n"
+"only one <CLT><CLT 3>lie or contradiction<CLT><CLT 23> in that debate.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhưng dù có bao nhiêu điểm yếu đi nữa, về cơ bản sẽ chỉ\n"
+"có một <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23> trong cuộc tranh luận.\n"
+"<CLT>"
+
+#. <CLT 23>つまり、偽物のウィークポイントがある、
+#. という事でございます。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>What I'm trying to say is, not all weak spots you see\n"
+"are necessarily false.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Điều tôi muốn nói là, không phải tất cả các điểm yếu bạn thấy\n"
+"đều nhất thiết là giả.\n"
+"<CLT>"
+
+#. <CLT 23>偽物のウィークポイントに、言弾（コトダマ）を
+#. 当てても、論破できないばかりか…
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>Use a Truth Bullet on the wrong one, and not only will\n"
+"you fail to refute what they said...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu dùng Đạn Phản Hồi sai mục tiêu, bạn không chỉ thất bại\n"
+"trong việc bác bỏ lời họ nói...\n"
+"<CLT>"
+
+#. <CLT 23>あなた様の信用が損なわれ、
+#. <CLT><CLT 3>発言力ゲージにダメージ<CLT><CLT 23>を受けてしまいます。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>...but you'll also lower your trust with everyone, and\n"
+"<CLT><CLT 3>your Influence Gauge will take damage<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...mà còn làm giảm lòng tin của mọi người, và\n"
+"<CLT><CLT 3>Thanh Phát Ngôn của bạn sẽ bị tổn hại<CLT><CLT 23>.\n"
+"<CLT>"
+
+#. <CLT 23>発言力ゲージが無くなると、
+#. <CLT><CLT 3>失敗<CLT><CLT 23>となってしまいますのでご注意ください。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Now this is important, because if your Influence Gauge\n"
+"reaches zero, you <CLT><CLT 3>fail<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Điều này rất quan trọng, vì nếu Thanh Phát Ngôn chạm\n"
+"mức không, bạn sẽ <CLT><CLT 3>thất bại<CLT><CLT 23>.\n"
+"<CLT>"
+
+#. <CLT 23>どのウィークポイントが<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>なのかは、
+#. あなた様が、議論の中で<CLT><CLT 3>推理<CLT><CLT 23>なさってください。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>You'll have to rely on your own <CLT><CLT 3>logic<CLT><CLT 23> to determine\n"
+"which weak spots are actually <CLT><CLT 3>lies or contradictions<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn sẽ phải dựa vào <CLT><CLT 3>suy luận<CLT><CLT 23> của chính mình để xác định\n"
+"đâu là điểm yếu thực sự chứa <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23>.\n"
+"<CLT>"
+
+#. <CLT 23>以上、ご確認 của ほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
+"<CLT>"
+
+#. <CLT 23>ノンストップ議論の<CLT><CLT 3>補足説明<CLT><CLT 23>でございます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>There's <CLT><CLT 3>a bit more to learn<CLT><CLT 23> about Nonstop Debates.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vẫn còn <CLT><CLT 3>một chút thông tin nữa<CLT><CLT 23> về Tranh Luận Liên Hồi. Bạn\n"
+"có muốn nghe thêm không?\n"
+"<CLT>"
+
+
+==================== FOLDER SUMMARY ====================
+Weak Point Tutorial
+

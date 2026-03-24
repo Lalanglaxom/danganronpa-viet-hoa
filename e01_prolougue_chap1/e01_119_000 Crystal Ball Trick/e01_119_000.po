@@ -1,0 +1,533 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ちょっと待って！　掃除当番じゃなくても、
+#. <CLT 3>証拠を処分する方法<CLT>はあったはずだよ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Hold on! I think I know how someone could <CLT 3>dispose of\n"
+"the evidence<CLT> without using the trash room key!"
+msgstr ""
+"Chờ đã! Tớ nghĩ tớ biết làm cách nào để ai đó <CLT 3>tiêu hủy\n"
+"bằng chứng<CLT> mà không cần dùng đến chìa khóa phòng rác đấy!"
+#. だが、鉄格子を開けなければ、
+#. 焼却炉の火を付ける事は出来んのだぞ？
+msgctxt "0002 | SAKURA OOGAMI"
+msgid ""
+"But if you can't get past the gate, you couldn't\n"
+"possibly turn on the incinerator, could you?"
+msgstr ""
+"Nhưng nếu không thể vượt qua cánh cổng sắt, cậu chẳng thể\n"
+"nào khởi động được lò đốt rác đâu, đúng không?"
+#. いや、それが可能だったんだよ。
+#. これを使えばね…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Yes, you could. If you used this."
+msgstr "Có chứ, hoàn toàn có thể. Nếu sử dụng thứ này."
+#. 割れちまってるけど…
+#. ガラス玉みてーだな…
+msgctxt "0004 | MONDO OOWADA"
+msgid ""
+"What is it, some kinda glass ball? It's busted to\n"
+"hell..."
+msgstr ""
+"Cái gì đây, một loại bóng thủy tinh à? Nó vỡ nát bét\n"
+"luôn rồi..."
+#. いや、<CLT 3>水晶玉<CLT>…のはずだったんだけども…
+msgctxt "0005 | YASUHIRO HAGAKURE"
+msgid ""
+"Actually, it was supposed to be a <CLT 3>crystal ball<CLT>. But,\n"
+"uh..."
+msgstr ""
+"Thực ra, vốn dĩ nó là một <CLT 3>quả cầu pha lê<CLT>. Nhưng mà,\n"
+"ừm..."
+#. これを使うって…どうやって使うのぉ？
+msgctxt "0006 | CHIHIRO FUJISAKI"
+msgid "But...how would you use it?"
+msgstr "Nhưng... làm thế nào để sử dụng nó chứ?"
+#. 投げる
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Throw it"
+msgstr "Ném nó"
+#. 転がす
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "Roll it"
+msgstr "Lăn nó"
+#. 多分、犯人は転がして使ったんだよ…
+#. ボウリングの玉のようにね…
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"The killer most likely used it like a bowling ball,\n"
+"and rolled it..."
+msgstr ""
+"Hung thủ rất có thể đã sử dụng nó như một quả bóng bowling,\n"
+"và lăn nó đi..."
+#. それで、焼却炉のスイッチを押したんだよ！
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"And that's how they pressed the switch on the\n"
+"incinerator!"
+msgstr ""
+"Và đó là cách hắn nhấn vào công tắc trên\n"
+"lò đốt rác!"
+#. 転がしても…スイッチには届かないんじゃ…？
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid ""
+"But...there's no way for it to hit that switch if you\n"
+"just rolled it."
+msgstr ""
+"Nhưng... chẳng đời nào nó chạm tới công tắc đó nếu cậu\n"
+"chỉ lăn nó đi đâu."
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. 占う
+msgctxt "0013 | CHOICE/RE:ACT"
+msgid "Divine with it"
+msgstr "Bói toán"
+#. 犯人は占ったんだよ…
+#. 山田クンが鉄格子を開ける時間帯を…！
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"The killer used it...to divine what time Hifumi would\n"
+"open the gate!"
+msgstr ""
+"Hung thủ đã dùng nó... để bói xem lúc nào Yamada sẽ\n"
+"mở cổng sắt!"
+#. そして鉄格子が開いた隙に、
+#. 焼却炉を使ったんだ！
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"And with the gate open, they strolled right in and\n"
+"used the incinerator!"
+msgstr ""
+"Và khi cổng mở ra, hắn ta thản nhiên bước vào và\n"
+"sử dụng lò đốt rác!"
+#. じゃあ…犯人は葉隠って事になんのか？
+msgctxt "0016 | MONDO OOWADA"
+msgid "Then...Hiro's the killer?"
+msgstr "Vậy... Hiro là hung thủ sao?"
+#. そんな事まで占える訳ないだろ！
+#. むしろ、俺が弟子入りしたいべ！
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Hell no! I could never divine something like that!\n"
+"Hell, I wanna be their apprentice!"
+msgstr ""
+"Đời nào! Tớ chẳng bao giờ bói được mấy chuyện như thế đâu!\n"
+"Trời ạ, tớ còn muốn xin làm đệ tử đây này!"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. あなたが発言しなければ、
+#. 議論は進まないわ。
+msgctxt "0019 | KYOUKO KIRIGIRI"
+msgid ""
+"If you don't do something, the trial can't move\n"
+"forward."
+msgstr ""
+"Nếu cậu không lên tiếng, phiên tòa sẽ không thể tiếp\n"
+"tục được đâu."
+#. 時間には限りがある…
+#. 最悪の結果をあなたは望んでいるの？
+msgctxt "0020 | KYOUKO KIRIGIRI"
+msgid ""
+"We don't have all the time in the world. You're not\n"
+"*trying* to lose this case, are you?"
+msgstr ""
+"Thời gian của chúng ta có hạn. Cậu không phải đang\n"
+"*muốn* thua vụ án này đấy chứ?"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. <CLT 4>犯人はこのガラス玉を使って、
+#. ある事をやったはずだ。それは…
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The killer had to use the glass ball in a certain way.\n"
+"Which was...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hung thủ chắc chắn đã sử dụng quả cầu thủy tinh theo một cách cụ thể.\n"
+"Đó chính là...\n"
+"<CLT>"
+#. 犯人は鉄格子の隙間から、このガラス玉を投げたんだ。
+#. 焼却炉のスイッチ目掛けてね…
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"The killer simply took aim at the incinerator switch\n"
+"and threw the ball through a gap in the gate."
+msgstr ""
+"Hung thủ chỉ đơn giản là nhắm vào công tắc lò đốt rác\n"
+"rồi ném quả cầu qua khe hở của cổng sắt."
+#. そうやって焼却炉のスイッチを押す事で、
+#. 焼却炉に火を付けたんだ！
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"All they had to do was hit that switch, and the\n"
+"incinerator would come to life."
+msgstr ""
+"Hắn chỉ cần ném trúng công tắc đó, và lò\n"
+"đốt rác sẽ hoạt động ngay lập tức!"
+#. 鉄格子の隙間から…投げた…？
+msgctxt "0025 | HIFUMI YAMADA"
+msgid "Someone threw that...through a gap in the gate!?"
+msgstr "Có ai đó đã ném thứ đó... qua khe hở của cổng sắt sao!?"
+#. 山田クンは…前に言ってたよね？
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "Remember what you said before, Hifumi?"
+msgstr "Cậu nhớ những gì mình đã nói trước đây chứ, Yamada?"
+#. およよぉ！
+#. 焼却炉の火が点けっ放しじゃないですかぁ！？
+msgctxt "0027 | HIFUMI YAMADA"
+msgid "Huh!? Someone turned the incinerator on!"
+msgstr "Hả!? Ai đó đã bật lò đốt rác lên rồi!"
+#. おっかしいな…前に来た時は、
+#. ちゃんと火は消えていたはずなのですが…
+msgctxt "0028 | HIFUMI YAMADA"
+msgid ""
+"Very strange... I'm quite certain it was off last time\n"
+"I was down here."
+msgstr ""
+"Lạ thật đấy... Tớ chắc chắn là lần trước xuống đây nó\n"
+"vẫn còn đang tắt mà..."
+#. 妖精さんの仕業？
+msgctxt "0029 | HIFUMI YAMADA"
+msgid "Perhaps it was the work of a fairy..."
+msgstr "Lẽ nào là do các nàng tiên làm sao?"
+#. 鍵を持っていた山田クンの知らない内に、
+#. 焼却炉の火が付いてたのは…
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"Hifumi had the key, so the only way the incinerator\n"
+"could have been turned on without his knowledge..."
+msgstr ""
+"Yamada giữ chìa khóa, nên cách duy nhất để lò đốt rác\n"
+"có thể được bật lên mà cậu ấy không hề hay biết..."
+#. 犯人が、鉄格子を開けずに、
+#. 焼却炉のスイッチを押したからだったんだ。
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"...was because the killer was able to hit the switch\n"
+"*without* opening the gate."
+msgstr ""
+"...chính là vì hung thủ đã có thể nhấn vào công tắc\n"
+"mà *không cần* mở cổng sắt."
+#. そうやって焼却炉の火を付けたところで、
+#. そこに、丸めたワイシャツを投げ込んだんだよ！
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"Once they'd gotten the incinerator going, all they had\n"
+"to do was ball up the shirt and toss it in!"
+msgstr ""
+"Sau khi lò đốt rác đã hoạt động, việc hắn cần làm chỉ\n"
+"là vo tròn chiếc áo sơ mi lại rồi ném nó vào trong!"
+#. お、おい……何言ってんだよ……
+msgctxt "0033 | LEON KUWATA"
+msgid "H-Hey, come on...what the hell is this?"
+msgstr "N-Này, thôi nào... cái quái gì thế này chứ?"
+#. 犯人が鉄格子の中に入っていない事は、
+#. 証拠隠滅後の状況が物語っているわ…
+msgctxt "0034 | KYOUKO KIRIGIRI"
+msgid ""
+"All you have to do is look at the scene to know that\n"
+"the killer never actually went inside the trash room."
+msgstr ""
+"Chỉ cần nhìn vào hiện trường là đủ để biết rằng hung\n"
+"thủ thực sự chưa bao giờ bước vào bên trong phòng rác."
+#. 割れたガラス玉…付けっ放しの焼却炉の火…
+#. 燃えカスが残ってしまったという雑な処分方法…
+msgctxt "0035 | KYOUKO KIRIGIRI"
+msgid ""
+"The shards of broken glass, the incinerator left\n"
+"running, the piece of shirt that escaped the fire..."
+msgstr ""
+"Những mảnh vỡ của quả cầu, lò đốt rác vẫn còn đang\n"
+"chạy, mẩu áo sơ mi vẫn còn sót lại sau vụ cháy..."
+#. 掃除当番が犯人なら、
+#. もっと丁寧に、証拠を隠滅しているはずよ…
+msgctxt "0036 | KYOUKO KIRIGIRI"
+msgid ""
+"If the killer had been on cleaning duty, the evidence\n"
+"would have been taken care of much more thoroughly."
+msgstr ""
+"Nếu hung thủ là người trực nhật, các bằng chứng hẳn\n"
+"đã được phi tang một cách cẩn thận hơn nhiều rồi."
+#. い、いや…ちょっと待てって…！
+msgctxt "0037 | LEON KUWATA"
+msgid "W-Wait, no...just hold on!"
+msgstr "K-Khoan, không... chờ chút đã!"
+#. でもさぁ、鉄格子から焼却炉までって、
+#. <CLT 3>１０メートル以上<CLT>は離れてたよねぇ…？
+msgctxt "0038 | CHIHIRO FUJISAKI"
+msgid ""
+"But the distance from the gate to the incinerator has\n"
+"to be at least...<CLT 3>thirty feet<CLT>, right?"
+msgstr ""
+"Nhưng mà, khoảng cách từ cổng sắt đến lò đốt rác phải\n"
+"ít nhất là... <CLT 3>10 mét<CLT>, đúng không?"
+#. そんな距離から、ガラス玉を投げて、
+#. ピンポイントでスイッチに当てるなんて…
+msgctxt "0039 | CHIHIRO FUJISAKI"
+msgid ""
+"The pinpoint accuracy you'd need to throw a glass ball\n"
+"that far and hit something that small..."
+msgstr ""
+"Độ chính xác tuyệt đối cần thiết để ném một quả cầu đi\n"
+"xa như vậy và trúng vào một thứ nhỏ bé như thế..."
+#. そんな事…本当に出来るのかなぁ…？
+msgctxt "0040 | CHIHIRO FUJISAKI"
+msgid "Could someone really do that?"
+msgstr "Có ai thực sự làm được chuyện đó không?"
+#. そ、そうだ…！
+#. そんなの不可能に決まってんじゃん！
+msgctxt "0041 | LEON KUWATA"
+msgid "Th-That's right! There's no way! It'd be impossible!"
+msgstr "Đ-Đúng vậy! Chắc chắn không thể nào! Việc đó là bất khả thi!"
+#. 難しいかもしれないけど…
+#. でも、不可能じゃないはずだよ…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"Difficult, absolutely. Impossible? I don't think so.\n"
+"Because the killer is..."
+msgstr ""
+"Khó khăn, chắc chắn rồi. Nhưng bất khả thi sao? Tớ không nghĩ vậy.\n"
+"Bởi vì hung thủ chính là..."
+#. 超高校級の野球選手
+msgctxt "0043 | CHOICE/RE:ACT"
+msgid "Ultimate Baseball Star"
+msgstr "Siêu Học Sinh Cầu Thủ Bóng Chày"
+#. 超高校級の同人作家
+msgctxt "0044 | CHOICE/RE:ACT"
+msgid "Ultimate Fanfic Creator"
+msgstr "Siêu Học Sinh Tác Giả Doujin"
+#. だって、犯人は“超高校級の同人作家”だったから…
+#. そうだよね、山田クン…？
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the Ultimate Fanfic Creator.\n"
+"Isn't that right, Hifumi!?"
+msgstr ""
+"Bởi vì hung thủ chính là Siêu Học Sinh Tác Giả Doujin.\n"
+"Có đúng không, Yamada!?"
+#. 今の流れで、ご指名ですかぁ！？
+msgctxt "0046 | HIFUMI YAMADA"
+msgid ""
+"Huh? Why am I part of the conversation all of a\n"
+"sudden!?"
+msgstr ""
+"Hả? Sao tự dưng tôi lại bị lôi vào cuộc hội thoại\n"
+"này vậy!?"
+#. 僕は、正確なコピーで同人を作る事は出来ても、
+#. 正確なコントロールは持ち合わせておりませんぞ！
+msgctxt "0047 | HIFUMI YAMADA"
+msgid ""
+"Sure, I've got the dexterity to draw a comic with the\n"
+"best of 'em, but my accuracy is total garbage!"
+msgstr ""
+"Đúng là tôi có đôi tay khéo léo để vẽ nên những tập truyện xuất\n"
+"sắc, nhưng độ chính xác của tôi thì tệ hại vô cùng!"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. 超高校級の占い師
+msgctxt "0049 | CHOICE/RE:ACT"
+msgid "Ultimate Clairvoyant"
+msgstr "Siêu Học Sinh Nhà Ngoại Cảm"
+#. だって、犯人は“超高校級の占い師”だったから…
+#. そうだよね、葉隠クン…？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the Ultimate Clairvoyant. Isn't\n"
+"that right, Hiro!?"
+msgstr ""
+"Bởi vì hung thủ chính là Siêu Học Sinh Nhà Ngoại Cảm. Có\n"
+"đúng không, Hiro!?"
+#. いや、ここは決めるトコだべ…
+#. それともマジで俺だと思ってんのか？
+msgctxt "0051 | YASUHIRO HAGAKURE"
+msgid ""
+"Hey, c'mon. Now's when we get down to the nitty\n"
+"gritty. Or...do you seriously think I did it?"
+msgstr ""
+"Này, thôi nào. Giờ là lúc đi sâu vào trọng tâm rồi.\n"
+"Hay là... cậu thực sự nghĩ tớ đã làm chuyện đó?"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. 今は発言しなければ、議論は進まないわ。
+msgctxt "0053 | KYOUKO KIRIGIRI"
+msgid ""
+"If you don't do something, the trial can't move\n"
+"forward."
+msgstr ""
+"Nếu cậu không lên tiếng, phiên tòa sẽ không thể tiếp\n"
+"tục được đâu."
+#. 時間には限りがある…
+#. 最悪の結果をあなたは望んでいるの？
+msgctxt "0054 | KYOUKO KIRIGIRI"
+msgid ""
+"We don't have all the time in the world. You're not\n"
+"*trying* to lose this case, are you?"
+msgstr ""
+"Thời gian của chúng ta có hạn. Cậu không phải đang\n"
+"*muốn* thua vụ án này đấy chứ?"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ mình vừa tự làm bẽ mặt mình\n"
+"trước mặt mọi người rồi...\n"
+"<CLT>"
+#. <CLT 4>いや、犯人にとっては難しくさえなかったのかも…
+#. だって犯人は…
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wouldn't have been much of a challenge at all for\n"
+"the killer. Because...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có lẽ đối với hung thủ, việc đó thậm chí còn chẳng khó khăn gì...\n"
+"Bởi vì hắn chính là...\n"
+"<CLT>"
+#. だって、犯人は<CLT 3>“超高校級の野球選手”<CLT>だったから…
+#. そうだよね、桑田クン…？
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"Because the killer is the <CLT 3>Ultimate Baseball Star<CLT>.\n"
+"Isn't that right, Leon!?"
+msgstr ""
+"Bởi vì hung thủ chính là <CLT 3>Siêu Học Sinh Cầu Thủ Bóng Chày<CLT>.\n"
+"Có đúng không, Leon!?"
+#. バ、バカ言ってんじゃ…ねーって…！
+msgctxt "0058 | LEON KUWATA"
+msgid ""
+"D-Do you have any idea how stupid you sound right\n"
+"now!?"
+msgstr ""
+"C-Cậu có biết là những gì cậu vừa nói nghe ngu ngốc\n"
+"đến mức nào không hả!?"
+#. 確かに、超高校級の野球選手と称される彼なら、
+#. １０メートル先の的など大した事ないでしょうね。
+msgctxt "0059 | CELES"
+msgid ""
+"A target thirty feet away would surely be little\n"
+"challenge for the Ultimate Baseball Star."
+msgstr ""
+"Một mục tiêu cách xa 10 mét chắc chắn chẳng thể làm\n"
+"khó được Siêu Học Sinh Cầu Thủ Bóng Chày đâu nhỉ."
+#. ふ、ふ、ふ、ふ、ふ、ふざけんな…！
+#. オレは…オレは……！
+msgctxt "0060 | LEON KUWATA"
+msgid "Y-Y-Y-You can't be serious! I...! I...!"
+msgstr "Đ-Đ-Đ-Đừng có giỡn mặt tui chứ! Tui...! Tui...!"
+#. 犯人なんかじゃねぇっつーのぉ！！
+msgctxt "0061 | LEON KUWATA"
+msgid "I'm not the killer!"
+msgstr "Tui không phải là hung thủ!"
+#. つーか、今の推理だって、ぜんっぜん間違ってんだよ！
+#. このクソボケウンコタレっ！！
+msgctxt "0062 | LEON KUWATA"
+msgid ""
+"These goddamn shit-for-brains have got it all wrong,\n"
+"I'm telling you!"
+msgstr ""
+"Cái lũ não bã đậu này nhầm to hết rồi, tui nói cho\n"
+"mà biết!"
+#. まだ認めないのね。だったら…
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid "You still won't admit it? Okay then..."
+msgstr "Cậu vẫn không chịu thừa nhận sao? Được thôi..."
+#. 苗木君…もう１度、事件を振り返って、
+#. 彼の犯行のすべてを明らかにするのよ…
+msgctxt "0064 | KYOUKO KIRIGIRI"
+msgid ""
+"Makoto, go ahead and review the incident one more time\n"
+"to make his crime perfectly clear."
+msgstr ""
+"Makoto, hãy hồi tưởng lại vụ án một lần nữa để vạch\n"
+"trần toàn bộ tội ác của hắn đi."
+#. それで…終わりにさせましょう……
+msgctxt "0065 | KYOUKO KIRIGIRI"
+msgid "And with that, we can end this..."
+msgstr "Và rồi... hãy kết thúc chuyện này tại đây thôi..."
+#. だ・か・ら！
+#. 何が終わりだってんだよッ！！
+msgctxt "0066 | LEON KUWATA"
+msgid "Listen to me! What the hell do you mean, end this!?"
+msgstr "Nghe tui nói nè! Kết thúc cái quái gì cơ chứ!?"
+#. …桑田クン、キミがなんて言おうと、
+#. すべての謎はもう解けてるんだ…
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"Say what you want, Leon. But all the questions have\n"
+"been answered, and the truth has been revealed."
+msgstr ""
+"Leon, cậu muốn nói gì cũng được. Nhưng mọi bí ẩn đã được\n"
+"giải đáp, và sự thật đã được phơi bày."
+#. 今回の事件の答えは、これだ！
+msgctxt "0068 | MAKOTO NAEGI"
+msgid "Now here's what happened...!"
+msgstr "Đây là toàn bộ sự thật về vụ án này!"

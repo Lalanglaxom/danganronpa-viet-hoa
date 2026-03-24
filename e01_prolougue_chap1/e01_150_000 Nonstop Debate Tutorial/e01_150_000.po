@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 6/4/2023\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Tất nhiên rồi!"
+#. <CLT 23>学級裁判中、ストーリーが進むと、
+#. <CLT><CLT 3>ノンストップ議論<CLT><CLT 23>が発生致します。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>As things progress during each class trial, you will\n"
+"engage in a number of <CLT><CLT 3>Nonstop Debates<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Trong quá trình diễn ra Lớp Xét Xử, bạn sẽ tham gia vào\n"
+"các <CLT><CLT 3>Tranh Luận Liên Hồi<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>ノンストップ議論では、登場人物達が、
+#. 次々と発言し、議論が<CLT><CLT 3>自動的<CLT><CLT 23>にお進みします。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>During these discussions, characters will speak one\n"
+"after another, <CLT><CLT 3>without pause<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Trong các cuộc thảo luận này, các nhân vật sẽ lần lượt phát biểu\n"
+"mà <CLT><CLT 3>không hề dừng lại<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>あなた様には、議論に潜む<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>を
+#. 見つけ出し…
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>It's up to you to unearth any <CLT><CLT 3>lies or contradictions<CLT><CLT 23>\n"
+"buried within their statements.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhiệm vụ của bạn là tìm ra những <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23>\n"
+"ẩn giấu trong lời khai của họ.\n"
+"<CLT>"
+#. <CLT 23><CLT><CLT 3>“言弾（コトダマ）”<CLT><CLT 23>を使って、
+#. <CLT><CLT 3>論破<CLT><CLT 23>して頂かなければなりません。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>What this means is that you'll have to use your <CLT><CLT 3>Truth\n"
+"Bullets<CLT><CLT 23> to <CLT><CLT 3>refute<CLT><CLT 23> what they say.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Điều này có nghĩa là bạn phải sử dụng các <CLT><CLT 3>Đạn Phản Hồi<CLT><CLT 23>\n"
+"để <CLT><CLT 3>bác bỏ<CLT><CLT 23> lời nói của họ.\n"
+"<CLT>"
+#. <CLT 23>捜査で集めた<CLT><CLT 3>言弾（コトダマ）<CLT><CLT 23>のうち、議論に
+#. 必要なモノのみ、<CLT><CLT 3>コトダマシリンダー<CLT><CLT 23>に装填致します。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>Any relevant <CLT><CLT 3>Truth Bullets<CLT><CLT 23> you've found during your\n"
+"investigation will be loaded into the <CLT><CLT 3>Truth Cylinder<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Những <CLT><CLT 3>Đạn Phản Hồi<CLT><CLT 23> liên quan tìm được trong lúc điều tra\n"
+"sẽ được nạp vào <CLT><CLT 3>Ổ Đạn Phản Hồi<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23><CLT><CLT 3>%CTRL_TRIAL_AIM%<CLT><CLT 23>で<CLT><CLT 3>照準<CLT><CLT 23>を動かし、
+#. <CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>でお撃ちになれます。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Use the <CLT><CLT 3>%CTRL_LEFT_STICK%<CLT><CLT 23> to aim, then fire with \n"
+"the <CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Sử dụng <CLT><CLT 3>%CTRL_LEFT_STICK%<CLT><CLT 23> để nhắm, sau đó bắn bằng\n"
+"<CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>もしくは、セリフを直接<CLT><CLT 3>タップ<CLT><CLT 23>する事でも
+#. お撃ちになる事が可能となっております。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...\n"
+"<CLT>"
+#. <CLT 23>登場人物の<CLT><CLT 3>発言セリフ<CLT><CLT 23>に注目し、
+#. <CLT><CLT 3>言弾（コトダマ）<CLT><CLT 23>をお当てください。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Pay close attention to each character's <CLT><CLT 3>statements<CLT><CLT 23>,\n"
+"and use your <CLT><CLT 3>Truth Bullets<CLT><CLT 23> to blast the right ones.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Hãy chú ý kỹ đến từng <CLT><CLT 3>phát ngôn<CLT><CLT 23> của nhân vật\n"
+"và dùng <CLT><CLT 3>Đạn Phản Hồi<CLT><CLT 23> để bắn vào những câu nói phù hợp.\n"
+"<CLT>"
+#. <CLT 23>なお、<CLT><CLT 3>タイム<CLT><CLT 23>がなくなると、
+#. <CLT><CLT 3>失敗<CLT><CLT 23>となりますので、お気をつけください。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>Note that if you run out of time, you will\n"
+"automatically <CLT><CLT 3>fail<CLT><CLT 23>, so please be careful!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Lưu ý rằng nếu hết thời gian, bạn sẽ mặc định\n"
+"bị coi là <CLT><CLT 3>thất bại<CLT><CLT 23>, vì vậy hãy cẩn thận nhé!\n"
+"<CLT>"
+#. <CLT 23>ノンストップ議論中に、<CLT><CLT 3>%CTRL_SHOW_HELP%<CLT><CLT 23>を押すと、
+#. <CLT><CLT 3>操作方法<CLT><CLT 23>をご覧頂けます。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>If you press the <CLT><CLT 3>%CTRL_SHOW_HELP%<CLT><CLT 23> during these\n"
+"arguments, you can review the <CLT><CLT 3>controls<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu bạn nhấn <CLT><CLT 3>%CTRL_SHOW_HELP%<CLT><CLT 23> trong khi tranh luận,\n"
+"bạn có thể xem lại <CLT><CLT 3>cách điều khiển<CLT><CLT 23>.\n"
+"<CLT>"
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
+"<CLT>"
+#. <CLT 23>これから、<CLT><CLT 3>ノンストップ議論<CLT><CLT 23>が始まります。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>Your first <CLT><CLT 3>Nonstop Debate<CLT><CLT 23> is about to begin. Would\n"
+"you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Màn <CLT><CLT 3>Tranh Luận Liên Hồi<CLT><CLT 23> đầu tiên chuẩn bị bắt đầu. Bạn\n"
+"có muốn nghe giải thích thêm không?\n"
+"<CLT>"
