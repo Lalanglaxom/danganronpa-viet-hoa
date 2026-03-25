@@ -2,23 +2,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 6/4/2023\n"
+"POT-Creation-Date: 3/25/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 聞きたくありません
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Not at all!"
 msgstr "Không cần đâu!"
+
 #. 聞かせてください
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Absolutely!"
 msgstr "Tất nhiên rồi!"
+
 #. <CLT 23>この議論から、
 #. ウィークポイントを増やさせて頂きます。
 #. <CLT>
@@ -31,6 +34,7 @@ msgstr ""
 "<CLT 23>Kể từ đây trở đi, số lượng điểm yếu sẽ bắt đầu\n"
 "tăng lên.\n"
 "<CLT>"
+
 #. <CLT 23>ウィークポイントが複数あっても、
 #. 議論の中の<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>は基本的に１つ…
 #. <CLT>
@@ -43,6 +47,7 @@ msgstr ""
 "<CLT 23>Nhưng dù có bao nhiêu điểm yếu đi nữa, về cơ bản sẽ chỉ\n"
 "có một <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23> trong cuộc tranh luận.\n"
 "<CLT>"
+
 #. <CLT 23>つまり、偽物のウィークポイントがある、
 #. という事でございます。
 #. <CLT>
@@ -52,9 +57,10 @@ msgid ""
 "are necessarily false.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Điều tôi muốn nói là, không phải tất cả các điểm yếu bạn thấy\n"
-"đều nhất thiết là giả.\n"
+"<CLT 23>Điều tôi muốn nói là, không phải tất cả các điểm yếu bạn \n"
+"thấy đều nhất thiết là giả.\n"
 "<CLT>"
+
 #. <CLT 23>偽物のウィークポイントに、言弾（コトダマ）を
 #. 当てても、論破できないばかりか…
 #. <CLT>
@@ -64,9 +70,10 @@ msgid ""
 "you fail to refute what they said...\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Nếu dùng Đạn Phản Hồi sai mục tiêu, bạn không chỉ thất bại\n"
-"trong việc bác bỏ lời họ nói...\n"
+"<CLT 23>Nếu dùng Đạn Sự Thật sai mục tiêu, bạn không chỉ thất \n"
+"bại trong việc bác bỏ lời họ nói...\n"
 "<CLT>"
+
 #. <CLT 23>あなた様の信用が損なわれ、
 #. <CLT><CLT 3>発言力ゲージにダメージ<CLT><CLT 23>を受けてしまいます。
 #. <CLT>
@@ -77,8 +84,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>...mà còn làm giảm lòng tin của mọi người, và\n"
-"<CLT><CLT 3>Thanh Phát Ngôn của bạn sẽ bị tổn hại<CLT><CLT 23>.\n"
+"<CLT><CLT 3>Thanh Phát Ngôn của bạn sẽ bị hư tổn<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>発言力ゲージが無くなると、
 #. <CLT><CLT 3>失敗<CLT><CLT 23>となってしまいますのでご注意ください。
 #. <CLT>
@@ -89,8 +97,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Điều này rất quan trọng, vì nếu Thanh Phát Ngôn chạm\n"
-"mức không, bạn sẽ <CLT><CLT 3>thất bại<CLT><CLT 23>.\n"
+"mức 0, bạn sẽ <CLT><CLT 3>thất bại<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>どのウィークポイントが<CLT><CLT 3>“ウソや矛盾”<CLT><CLT 23>なのかは、
 #. あなた様が、議論の中で<CLT><CLT 3>推理<CLT><CLT 23>なさってください。
 #. <CLT>
@@ -101,8 +110,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Bạn sẽ phải dựa vào <CLT><CLT 3>suy luận<CLT><CLT 23> của chính mình để xác định\n"
-"đâu là điểm yếu thực sự chứa <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23>.\n"
+"đâu là điểm yếu chứa <CLT><CLT 3>lời nói dối hoặc mâu thuẫn<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
 #. <CLT>
 msgctxt "0010 | NARRATION"
@@ -112,6 +122,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
 "<CLT>"
+
 #. <CLT 23>ノンストップ議論の<CLT><CLT 3>補足説明<CLT><CLT 23>でございます。
 #. 説明をお聞きになりますか？
 #. <CLT>
@@ -121,6 +132,6 @@ msgid ""
 "Would you like to hear more?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Vẫn còn <CLT><CLT 3>một chút thông tin nữa<CLT><CLT 23> về Tranh Luận Liên Hồi. Bạn\n"
-"có muốn nghe thêm không?\n"
+"<CLT 23>Vẫn còn <CLT><CLT 3>một chút thông tin nữa<CLT><CLT 23> về Tranh Luận Liên Hồi. \n"
+"Bạn có muốn nghe thêm không?\n"
 "<CLT>"

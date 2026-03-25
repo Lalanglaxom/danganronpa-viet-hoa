@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
 
 #. 確かに凶器は包丁
 #. みてーだけどさ…
@@ -20,10 +21,12 @@ msgid ""
 msgstr ""
 "Vậy tui đoán không còn nghi ngờ gì về việc\n"
 "con dao làm bếp chính là hung khí gây án."
+
 #. それがどーしたっての？
 msgctxt "0002 | LEON KUWATA"
 msgid "But where does that get us?"
-msgstr "Nhưng điều đó giúp ích gì cho chúng ta chứ?"
+msgstr "Nhưng điều đó giúp ích gì chứ?"
+
 #. な、苗木が…
 #. 厨房から持ち出したんでしょ…
 msgctxt "0003 | TOUKO FUKAWA"
@@ -33,6 +36,7 @@ msgid ""
 msgstr ""
 "M-Makoto chắc chắn đã lấy nó t-từ\n"
 "nhà bếp, đúng không?"
+
 #. <CLT 9>食堂に誰もいない時<CLT>に、
 #. こっそりと…
 msgctxt "0004 | TOUKO FUKAWA"
@@ -41,9 +45,10 @@ msgid ""
 "<CLT 9>when nobody was\n"
 "in the d-dining hall<CLT>..."
 msgstr ""
-"Cậu ta đã làm việc đó l-lén lút,\n"
+"Cậu ta đã làm nó l-lén lút,\n"
 "<CLT 9>khi không có ai ở\n"
 "trong p-phòng ăn cả<CLT>..."
+
 #. そ、それで…
 #. 舞園さやかを刺したのよ…！
 msgctxt "0005 | TOUKO FUKAWA"
@@ -53,10 +58,12 @@ msgid ""
 msgstr ""
 "Và rồi cậu ta đ-đến và dùng nó\n"
 "để đâm S-Sayaka!"
+
 #. やっぱ、苗木が犯人なんじゃん！！
 msgctxt "0006 | LEON KUWATA"
 msgid "So he really did do it!"
 msgstr "Vậy là cậu thực sự đã làm việc đó!"
+
 #. ふむふむ、これで決まり…
 msgctxt "0007 | HIFUMI YAMADA"
 msgid ""
@@ -64,24 +71,29 @@ msgid ""
 "Then it's been decided..."
 msgstr ""
 "Hừm hừm, đúng vậy.\n"
-"Vậy là mọi chuyện đã được quyết định..."
+"Mọi chuyện đã được quyết định..."
+
 #. ジエンドですなっ！！
 msgctxt "0008 | HIFUMI YAMADA"
 msgid "We've reached the end!"
 msgstr "Chúng ta đã đi đến hồi kết rồi!"
+
 #. <CLT 26>うんうん…<CLT>
 msgctxt "0009 | HIFUMI YAMADA"
 msgid "<CLT 26>That's right...!<CLT>"
 msgstr "<CLT 26>Đúng vậy đó...!<CLT>"
+
 #. <CLT 26>まあ…確かに…<CLT>
 msgctxt "0010 | HIFUMI YAMADA"
 msgid "<CLT 26>It's gotta be, right?<CLT>"
 msgstr "<CLT 26>Phải vậy chứ, nhỉ?<CLT>"
+
 #. <CLT 26>そうだそうだ！<CLT>
 msgctxt "0011 | HIFUMI YAMADA"
 msgid "<CLT 26>Yeah, totally!<CLT>"
-msgstr "<CLT 26>Phải đó, hoàn toàn chính xác!<CLT>"
+msgstr "<CLT 26>Phải, hoàn toàn!<CLT>"
+
 #. <CLT 26>お前以外に考えられねぇ！<CLT>
 msgctxt "0012 | HIFUMI YAMADA"
 msgid "<CLT 26>It can't be anyone else but you!<CLT>"
-msgstr "<CLT 26>Không thể là ai khác ngoài cậu được!<CLT>"
+msgstr "<CLT 26>Không thể là ai ngoài cậu được!<CLT>"

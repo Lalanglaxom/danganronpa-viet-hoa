@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ボクの部屋のシャワールームが開かなかったのは、
 #. 鍵のせいじゃないんだよ。
@@ -20,6 +21,7 @@ msgid ""
 msgstr ""
 "Lý do phòng tắm của tớ không mở được không phải là\n"
 "vì nó bị khóa đâu."
+
 #. だって、シャワールームに鍵が掛かるのって、
 #. <CLT 3>女性の部屋<CLT>だけだったはずでしょ？
 msgctxt "0002 | MAKOTO NAEGI"
@@ -27,38 +29,46 @@ msgid ""
 "After all, the <CLT 3>girls' rooms<CLT> are the only ones with\n"
 "locking bathrooms, right?"
 msgstr ""
-"Sau tất cả, chỉ có <CLT 3>phòng của các bạn nữ<CLT> mới có\n"
-"chốt khóa phòng tắm, đúng chứ?"
+"Bởi vì, chỉ có <CLT 3>phòng của các bạn nữ<CLT> mới \n"
+"có chốt khóa phòng tắm, đúng chứ?"
+
 #. そう言えば…そうだったな…
 msgctxt "0003 | SAKURA OOGAMI"
 msgid "Yes... Now that you mention it, that is true."
 msgstr "Phải... Nghe cậu nhắc tôi mới nhớ, đúng là vậy."
+
 #. じゃあ、苗木君の部屋のシャワールームは、
 #. どうして開かなかったのぉ…？
 msgctxt "0004 | CHIHIRO FUJISAKI"
 msgid "Then...why didn't your bathroom door open...?"
 msgstr "Vậy... tại sao cửa phòng tắm của cậu lại không mở được...?"
+
 #. <CLT 3>ドアの建付け<CLT>のせいなんだ…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Because <CLT 3>it was stuck<CLT>."
 msgstr "Bởi vì <CLT 3>nó bị kẹt<CLT>."
+
 #. は…？　ドアの建付け？
 msgctxt "0006 | LEON KUWATA"
 msgid "Huh? What are you talking about?"
 msgstr "Hả? Cậu đang nói cái quái gì vậy?"
+
 #. ボクの部屋のシャワールームは、
 #. ドアの建付けが悪かったんだ。
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "My bathroom door doesn't fit in the frame quite right."
 msgstr "Cửa phòng tắm của tớ không khớp với khung cửa cho lắm."
+
 #. それは…そこのモノクマが証人だよ。
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Monokuma over there can testify to that."
 msgstr "Monokuma đằng kia có thể làm chứng cho việc đó."
+
 #. はい、そのとーりでございます！！
 msgctxt "0009 | MONOKUMA"
 msgid "Yup! True as true can be!"
-msgstr "Phải, hoàn toàn chính xác luôn!!"
+msgstr "Phải, hoàn toàn chính xác luôn!"
+
 #. でも、<CLT 3>“超高校級の幸運”<CLT>であるはずの
 #. 苗木クンの部屋だけ、建付けが悪いなんて…
 msgctxt "0010 | MONOKUMA"
@@ -66,13 +76,15 @@ msgid ""
 "But ya know...you're supposed to be the <CLT 3>Ultimate\n"
 "Lucky Student<CLT>, right? But to have such a cruddy door..."
 msgstr ""
-"Nhưng mà nè... em vốn là <CLT 3>Siêu Học Sinh\n"
-"May Mắn<CLT> cơ mà? Thế mà lại sở hữu cái cửa dỏm đời thế..."
+"Nhưng mà nè... cậu vốn là <CLT 3>Siêu Học Sinh May Mắn<CLT> cơ mà? \n"
+"Thế mà lại sở hữu cái cửa dỏm đời thế..."
+
 #. うぷぷ…！
 #. 全然、幸運じゃないし…！
 msgctxt "0011 | MONOKUMA"
 msgid "Puhuhu...! That's not lucky at all!"
 msgstr "U pư pư...! Chẳng may mắn chút nào luôn á!"
+
 #. シャワールームのドアが開かなかったのは、
 #. 建付けのせいだった…
 msgctxt "0012 | KYOUKO KIRIGIRI"
@@ -82,6 +94,7 @@ msgid ""
 msgstr ""
 "Vậy lý do cánh cửa không mở được chỉ đơn giản là vì nó\n"
 "bị kẹt..."
+
 #. でも、犯人はそれを鍵のせいだと勘違いした。
 #. だからこそ、ドアノブごと鍵を壊そうとしたのよ。
 msgctxt "0013 | KYOUKO KIRIGIRI"
@@ -91,6 +104,7 @@ msgid ""
 msgstr ""
 "Nhưng hung thủ không biết điều đó và cho rằng nó đã bị\n"
 "khóa. Vì thế hắn mới phá nát cả tay nắm cửa để xông vào."
+
 #. ですが…犯人はどうして、
 #. 鍵が掛かっているなんて勘違いをしたのでしょう。
 msgctxt "0014 | CELES"
@@ -100,6 +114,7 @@ msgid ""
 msgstr ""
 "Được rồi, nhưng tại sao ngay từ đầu hung thủ lại nghĩ\n"
 "rằng cánh cửa đó bị khóa chứ?"
+
 #. 男子の部屋のシャワールームに鍵が掛からない事は、
 #. わたくし達の全員が知っているはずですけど…
 msgctxt "0015 | CELES"
@@ -107,8 +122,9 @@ msgid ""
 "Everyone should have known you can't lock any of the\n"
 "boys' bathrooms."
 msgstr ""
-"Tất cả chúng ta đều nên biết rằng không thể khóa bất kỳ\n"
+"Tất cả chúng ta đều biết rằng không thể khóa bất kỳ\n"
 "phòng tắm nào của nam giới mà..."
+
 #. 犯人が、そう勘違いしたのは、
 #. 現場に関する“重要な事”を知らなかったせいよ…
 msgctxt "0016 | KYOUKO KIRIGIRI"
@@ -118,10 +134,12 @@ msgid ""
 msgstr ""
 "Hung thủ rất dễ mắc sai lầm đó, nhờ vào\n"
 "một chi tiết quan trọng về hiện trường vụ án..."
+
 #. 現場が舞園の部屋だった事
 msgctxt "0017 | CHOICE/RE:ACT"
 msgid "The crime took place in Sayaka's room"
 msgstr "Vụ án xảy ra ở phòng của Sayaka"
+
 #. 犯人が知らなかったのって…
 #. 現場が舞園さんの部屋だったって事なんじゃ…
 msgctxt "0018 | MAKOTO NAEGI"
@@ -131,6 +149,7 @@ msgid ""
 msgstr ""
 "Điều duy nhất mà hung thủ không biết chính là... vụ\n"
 "án thực sự đã xảy ra trong phòng của Sayaka."
+
 #. あなたの部屋で事件が起こったという事実…
 #. これは明白よ。
 msgctxt "0019 | KYOUKO KIRIGIRI"
@@ -140,6 +159,7 @@ msgid ""
 msgstr ""
 "Ừm... không. Hoàn toàn không có nghi ngờ gì về việc phòng\n"
 "của cậu chính là hiện trường vụ án."
+
 #. だとすれば…わかるでしょう？
 #. 難しく考える必要はないわ。
 msgctxt "0020 | KYOUKO KIRIGIRI"
@@ -149,6 +169,7 @@ msgid ""
 msgstr ""
 "Vì thế cậu nên nhận ra rồi chứ? Cậu không cần\n"
 "phải suy nghĩ quá phức tạp đâu..."
+
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. <CLT>
@@ -161,10 +182,12 @@ msgstr ""
 "<CLT 4>Có vẻ như mình vừa tự làm bẽ mặt\n"
 "trước tất cả mọi người rồi...\n"
 "<CLT>"
+
 #. 現場が苗木の部屋だった事
 msgctxt "0022 | CHOICE/RE:ACT"
 msgid "The crime took place in my room"
-msgstr "Vụ án xảy ra ở phòng của tớ"
+msgstr "Vụ án xảy ra ở phòng của mình"
+
 #. 今は発言しなければ、議論は進まないわ。
 msgctxt "0023 | KYOUKO KIRIGIRI"
 msgid ""
@@ -173,6 +196,7 @@ msgid ""
 msgstr ""
 "Nếu cậu không làm gì đó, phiên tòa sẽ không thể tiếp\n"
 "tục được đâu."
+
 #. 時間には限りがある…
 #. 最悪の結果をあなたは望んでいるの？
 msgctxt "0024 | KYOUKO KIRIGIRI"
@@ -182,6 +206,7 @@ msgid ""
 msgstr ""
 "Thời gian của chúng ta có hạn. Cậu không phải đang\n"
 "*muốn* thua vụ án này đấy chứ?"
+
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. <CLT>
@@ -194,6 +219,7 @@ msgstr ""
 "<CLT 4>Có vẻ như mình vừa tự làm bẽ mặt\n"
 "trước tất cả mọi người rồi...\n"
 "<CLT>"
+
 #. <CLT 4>現場に関する重要な事…？
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -203,6 +229,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chi tiết quan trọng sao...?\n"
 "<CLT>"
+
 #. <CLT 4>犯人は、それを知らなかったからこそ…
 #. <CLT>
 msgctxt "0027 | MAKOTO NAEGI"
@@ -212,6 +239,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một điều gì đó mà hung thủ không biết...\n"
 "<CLT>"
+
 #. <CLT 4>シャワールームのドアに、
 #. 鍵が掛かってると思い込んでしまった？
 #. <CLT>
@@ -224,6 +252,7 @@ msgstr ""
 "<CLT 4>Vì lý do nào đó, hắn ta tin chắc rằng cánh cửa\n"
 "đã bị khóa.\n"
 "<CLT>"
+
 #. <CLT 4>だとすると、犯人が知らなかった重要な事って…
 #. <CLT>
 msgctxt "0029 | MAKOTO NAEGI"
@@ -235,6 +264,7 @@ msgstr ""
 "<CLT 4>Nghĩa là, chi tiết quan trọng mà hung thủ không\n"
 "biết chính là...\n"
 "<CLT>"
+
 #. <CLT 4>犯人がシャワールームのドアに、
 #. 鍵が掛かってると思い込んでしまったって事は…
 #. <CLT>
@@ -247,6 +277,7 @@ msgstr ""
 "<CLT 4>Hung thủ đã tin chắc rằng cửa phòng tắm\n"
 "bị khóa...\n"
 "<CLT>"
+
 #. <CLT 4>犯人は、その部屋に鍵が掛からないとは
 #. 知らなかったって事になるはずだ。
 #. <CLT>
@@ -256,9 +287,10 @@ msgid ""
 "be locked.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy nên hắn đã không biết rằng thực tế cánh cửa đó *không thể*\n"
-"khóa được.\n"
+"<CLT 4>Nghĩa là hắn đã không biết rằng thực tế cánh cửa đó \n"
+"*không thể* khóa được.\n"
 "<CLT>"
+
 #. <CLT 4>つまり、犯人が知らなかった、
 #. 現場に関する重要な事って言うのは…
 #. <CLT>
@@ -271,6 +303,7 @@ msgstr ""
 "<CLT 4>Nói cách khác, chi tiết quan trọng về hiện trường vụ án\n"
 "mà hắn không biết chính là...\n"
 "<CLT>"
+
 #. 犯人は…<CLT 3>現場がボクの部屋<CLT>だって事を
 #. 知らなかったのかも…
 msgctxt "0033 | MAKOTO NAEGI"
@@ -280,6 +313,7 @@ msgid ""
 msgstr ""
 "Hung thủ hẳn đã không nhận ra rằng đó là <CLT 3>phòng\n"
 "của tớ<CLT>."
+
 #. はぁ！？　犯人が現場を知らないなんて、
 #. 前代未聞ですぞっ！
 msgctxt "0034 | HIFUMI YAMADA"
@@ -289,18 +323,22 @@ msgid ""
 msgstr ""
 "Cái gì!? Cậu đang bảo hung thủ thậm chí còn không biết\n"
 "mình đang ở đâu sao? Thật là... không thể tin nổi!"
+
 #. でも、当たってるわ…
 msgctxt "0035 | KYOUKO KIRIGIRI"
 msgid "And yet, he's absolutely right."
 msgstr "Tuy vậy, cậu ấy hoàn toàn đúng đấy."
+
 #. なぬぅぅううッ！？
 msgctxt "0036 | HIFUMI YAMADA"
 msgid "SAYWHAAA!?"
 msgstr "CÁI GÌ CƠƠƠ!?"
+
 #. だけど、もう少し正確に言えば…
 msgctxt "0037 | KYOUKO KIRIGIRI"
 msgid "Well, to be more specific..."
 msgstr "Nhưng để chính xác hơn một chút..."
+
 #. 犯人が知らなかったのは、
 #. 苗木君と舞園さんが、部屋を交換していた事実…
 msgctxt "0038 | KYOUKO KIRIGIRI"
@@ -310,6 +348,7 @@ msgid ""
 msgstr ""
 "Điều hung thủ không biết là việc Makoto và Sayaka\n"
 "đã hoán đổi phòng cho nhau."
+
 #. そのせいで、犯人は勘違いしてしまったのよ。
 #. 舞園さんがいた部屋を、彼女の部屋だとね…
 msgctxt "0039 | KYOUKO KIRIGIRI"
@@ -319,6 +358,7 @@ msgid ""
 msgstr ""
 "Chính điều đó đã dẫn đến sự hiểu lầm về phòng tắm. Nếu\n"
 "Sayaka ở trong phòng của chính mình, thì..."
+
 #. だから、シャワールームには鍵があると思い込み、
 #. 鍵を壊しに掛かったのだな…
 msgctxt "0040 | KIYOTAKA ISHIMARU"
@@ -328,6 +368,7 @@ msgid ""
 msgstr ""
 "Thế thì cánh cửa đáng lẽ đã có khóa, và hắn\n"
 "sẽ phải phá nó để xông vào...!"
+
 #. それが無意味な行動とも知らずに、か…
 msgctxt "0041 | SAKURA OOGAMI"
 msgid ""
@@ -336,6 +377,7 @@ msgid ""
 msgstr ""
 "Vậy là hắn không hề hay biết hành động của mình vô nghĩa\n"
 "đến mức nào sao..."
+
 #. 最終的には、力ずくで開けたのか、
 #. ひょんな事から開いたのかはわからないけど…
 msgctxt "0042 | KYOUKO KIRIGIRI"
@@ -343,8 +385,9 @@ msgid ""
 "Ultimately, we can't know if it came open by force or\n"
 "simply by accident, but..."
 msgstr ""
-"Cuối cùng, chúng ta không thể biết nó được mở ra bằng vũ lực hay\n"
-"chỉ đơn giản là tình cờ, nhưng..."
+"Cuối cùng, chúng ta không thể biết nó được mở ra bằng vũ \n"
+"lực hay chỉ đơn giản là tình cờ, nhưng..."
+
 #. 犯人は相当、混乱したはずよ。
 #. 結局、ドアが開いた理由もわからず終いでしょうし…
 msgctxt "0043 | KYOUKO KIRIGIRI"
@@ -352,8 +395,9 @@ msgid ""
 "The killer must have been considerably confused, with\n"
 "no idea how they actually got the door opened."
 msgstr ""
-"Hung thủ hẳn đã cực kỳ bối rối, và chẳng có\n"
-"chút manh mối nào về việc tại sao mình lại mở được cửa."
+"Hung thủ hẳn đã cực kỳ bối rối, và chẳng có chút manh mối \n"
+"nào về việc tại sao mình lại mở được cửa."
+
 #. なんにせよ、実に回りくどい行動だ。
 #. ありもしないドアの鍵を、壊そうとするとはな…
 msgctxt "0044 | BYAKUYA TOGAMI"
@@ -361,8 +405,9 @@ msgid ""
 "Regardless, it was a pointless act. Wasting time\n"
 "trying to break down a door that wasn't locked is..."
 msgstr ""
-"Dù sao đi nữa, đó là một hành động vô nghĩa. Lãng phí thời gian\n"
-"để phá một cánh cửa vốn chẳng hề khóa là..."
+"Dù sao đi nữa, đó là một hành động vô nghĩa. Lãng phí thời \n"
+"gian để phá một cánh cửa vốn chẳng hề khóa là..."
+
 #. ドアが開かない理由を知っていたボクなら、
 #. そんな事するはずないよね…？
 msgctxt "0045 | MAKOTO NAEGI"
@@ -370,12 +415,14 @@ msgid ""
 "...definitely something I wouldn't do, since I\n"
 "would've known exactly why it wasn't opening. Right?"
 msgstr ""
-"...chắc chắn là điều tớ sẽ không làm, vì tớ biết\n"
-"chính xác tại sao nó không mở được. Đúng chứ?"
+"...chắc chắn là điều tớ sẽ không làm, vì tớ biết chính xác tại \n"
+"sao nó không mở được. Đúng chứ?"
+
 #. 確かに、そうかもしれんな…
 msgctxt "0046 | BYAKUYA TOGAMI"
 msgid "That is...a definite possibility."
 msgstr "Đó... chắc chắn là một khả năng."
+
 #. じゃあ、犯人って、
 #. 部屋の交換を知らなかった人なの…？
 msgctxt "0047 | CHIHIRO FUJISAKI"
@@ -385,10 +432,12 @@ msgid ""
 msgstr ""
 "Vậy hung thủ phải là người không biết về việc họ\n"
 "đã đổi phòng cho nhau sao...?"
+
 #. な、苗木は…当てはまらないじゃない…！
 msgctxt "0048 | TOUKO FUKAWA"
 msgid "Then Makoto *c-couldn't* have done it...!"
 msgstr "Thế thì Makoto *kh-không thể* là người đã làm việc đó...!"
+
 #. <CLT 4>だから…最初からそう言ってるのに…
 #. <CLT>
 msgctxt "0049 | MAKOTO NAEGI"
@@ -398,14 +447,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Thì tôi đã cố nói với mọi người từ nãy giờ rồi mà...\n"
 "<CLT>"
+
 #. だったら、犯人は誰だっつーんだ！？
 msgctxt "0050 | MONDO OOWADA"
 msgid "Okay, then who *did* do it!?"
 msgstr "Được rồi, vậy rốt cuộc là đứa nào đã làm hả!?"
+
 #. スマンが拙者はお手上げでござる！
 msgctxt "0051 | HIFUMI YAMADA"
 msgid "I'm sorry, but I give up! Quit without saving!"
 msgstr "Xin lỗi nhưng tôi xin đầu hàng! Thoát game không lưu luôn!"
+
 #. このまま犯人が決まらなかったら、
 #. どうなるのぉ…？
 msgctxt "0052 | CHIHIRO FUJISAKI"
@@ -413,24 +465,27 @@ msgid ""
 "But...what happens if we can't decide on who we think\n"
 "did it...?"
 msgstr ""
-"Nhưng... chuyện gì sẽ xảy ra nếu chúng ta không thể quyết định\n"
-"xem ai là hung thủ...?"
+"Nhưng... chuyện gì sẽ xảy ra nếu chúng ta không thể quyết \n"
+"định xem ai là hung thủ...?"
+
 #. よし、とりあえず多数決で決めよう！
 msgctxt "0053 | KIYOTAKA ISHIMARU"
 msgid ""
 "Well then, why don't we just vote right now? Majority\n"
 "rules!"
 msgstr ""
-"Vậy thì, tại sao chúng ta không biểu quyết ngay bây giờ nhỉ? Đa số\n"
-"thắng thiểu số!"
+"Vậy thì, tại sao chúng ta không biểu quyết ngay bây giờ nhỉ? \n"
+"Đa số thắng thiểu số!"
+
 #. とりあえずで…いいんだ？
 msgctxt "0054 | LEON KUWATA"
 msgid ""
 "Majority rules? Do you really think that's a good\n"
 "idea...?"
 msgstr ""
-"Đa số thắng thiểu số sao? Ông thực sự nghĩ đó là một ý\n"
+"Đa số thắng thiểu số sao? Cậu thực sự nghĩ đó là một ý\n"
 "kiến hay hả...?"
+
 #. つーか、この状況ってヤバくねーか？
 #. リアルな話、誰かなんとかしてくんねーと…
 msgctxt "0055 | YASUHIRO HAGAKURE"
@@ -438,8 +493,9 @@ msgid ""
 "Yeah! Our necks are on the line here! Someone\n"
 "seriously needs to do something. For serious...!"
 msgstr ""
-"Phải đó! Tính mạng chúng ta đang ngàn cân treo sợi tóc đây! Ai đó\n"
-"làm ơn làm gì đi chứ. Thật đấy...!"
+"Phải đó! Tính mạng chúng ta đang ngàn cân treo sợi tóc đây! \n"
+"Ai đó làm ơn làm gì đi chứ. Thật đấy...!"
+
 #. どんな些細な事でも構いませんわ。
 #. どなたか、疑問に感じている事はないのですか？
 msgctxt "0056 | CELES"
@@ -448,27 +504,33 @@ msgid ""
 "does not matter how trivial they may seem..."
 msgstr ""
 "Không ai có suy nghĩ hay câu hỏi nào khác sao? Không\n"
-"quan trọng là chúng có vẻ nhỏ nhặt đến mức nào đâu..."
+"quan trọng là chúng có vẻ nhỏ nhặt đến mức nào..."
+
 #. …あ！　疑問ならあるよっ！！
 msgctxt "0057 | AOI ASAHINA"
 msgid "Oh! As a matter of fact, I do have one question!"
 msgstr "Ồ! Thực ra thì tui có một câu hỏi đây!"
+
 #. あなたですか…
 msgctxt "0058 | CELES"
 msgid "Oh...you..."
 msgstr "Ồ... cậu sao..."
+
 #. なんで残念そうなのッ！！
 msgctxt "0059 | AOI ASAHINA"
 msgid "You don't gotta sound so disappointed!"
-msgstr "Bà không cần phải tỏ ra thất vọng như vậy đâu!"
+msgstr "Cậu không cần phải tỏ ra thất vọng như vậy đâu!"
+
 #. 朝日奈くん、いいから話したまえ！
 msgctxt "0060 | KIYOTAKA ISHIMARU"
 msgid "It's fine, it's fine, just ask your question!"
 msgstr "Không sao, không sao, cứ đặt câu hỏi của mình đi!"
+
 #. あ、そうそう。あのね…
 msgctxt "0061 | AOI ASAHINA"
 msgid "Oh yeah! Okay, so, umm..."
 msgstr "À phải rồi! Được rồi, ừm..."
+
 #. そもそも、犯人はどうやって、
 #. 苗木の部屋に入ったのかなーって思ってさ。
 msgctxt "0062 | AOI ASAHINA"
@@ -478,10 +540,14 @@ msgid ""
 msgstr ""
 "Thì tui chỉ thắc mắc là, ngay từ đầu hung thủ làm cách nào\n"
 "để vào được phòng của Makoto vậy?"
+
 #. なるほど…犯人が現場に入った方法か…
 msgctxt "0063 | SAKURA OOGAMI"
 msgid "Hmm... Yes, how *did* the killer get inside?"
-msgstr "Hừm... Phải, làm thế nào mà kẻ sát nhân vào được bên trong?"
+msgstr ""
+"Hừm... Phải, làm thế nào mà kẻ sát nhân vào được \n"
+"bên trong?"
+
 #. 舞園が部屋の鍵を落として、
 #. それを犯人が拾ったんだろ…？
 msgctxt "0064 | LEON KUWATA"
@@ -489,16 +555,19 @@ msgid ""
 "Maybe Sayaka just dropped the key somewhere and the\n"
 "culprit picked it up. That's possible, right?"
 msgstr ""
-"Có lẽ Sayaka đã đánh rơi chìa khóa ở đâu đó và tên\n"
-"hung thủ đã nhặt được nó. Có khả năng đó mà, đúng không?"
+"Có lẽ Sayaka đã đánh rơi chìa khóa ở đâu đó và tên hung thủ \n"
+"đã nhặt được nó. Có khả năng đó mà, đúng không?"
+
 #. そんなに都合よく落とすとは思えんが…
 msgctxt "0065 | KIYOTAKA ISHIMARU"
 msgid "I don't think so. That seems way too convenient."
 msgstr "Tôi không nghĩ vậy. Điều đó nghe có vẻ quá thuận lợi rồi."
+
 #. じゃあ…ピッキングとか？
 msgctxt "0066 | CHIHIRO FUJISAKI"
 msgid "Then...maybe someone picked the lock?"
 msgstr "Vậy... hay là ai đó đã phá khóa?"
+
 #. いや、鍵にはピッキング防止加工があったはずだ！
 msgctxt "0067 | KIYOTAKA ISHIMARU"
 msgid ""
@@ -507,11 +576,15 @@ msgid ""
 msgstr ""
 "Không thể nào! Nếu cậu nhớ lại, Monokuma đã khẳng định\n"
 "rằng tất cả các ổ khóa đều không thể bị phá."
+
 #. では、お答えしましょう。
 #. 犯人は、もっと簡単に入ったのであります。
 msgctxt "0068 | HIFUMI YAMADA"
 msgid "Fine, how about this? The killer got in the easy way."
-msgstr "Được rồi, thế này thì sao? Hung thủ đã vào bằng cách dễ dàng hơn."
+msgstr ""
+"Được rồi, thế này thì sao? Hung thủ đã vào bằng cách dễ \n"
+"dàng hơn."
+
 #. つまり、来訪者のフリをしてやって来た犯人を、
 #. 舞園さん自らが招き入れたのです！
 msgctxt "0069 | HIFUMI YAMADA"
@@ -521,10 +594,12 @@ msgid ""
 msgstr ""
 "Hắn có thể đã gõ cửa và nói muốn nói chuyện gì đó, và\n"
 "tiểu thư Maizono chỉ đơn giản là... cho hắn vào!"
+
 #. いや、それはないよ…
 msgctxt "0070 | MAKOTO NAEGI"
 msgid "No, that can't be it, either."
 msgstr "Không, chuyện đó cũng không thể xảy ra được."
+
 #. ほぅ…随分と身の程知らずがいたもんですな…
 #. この僕に反論するとはね…
 msgctxt "0071 | HIFUMI YAMADA"
@@ -534,19 +609,23 @@ msgid ""
 msgstr ""
 "Ồ hô! Định tranh cãi với tôi sao? Nghe có vẻ như có ai đó\n"
 "không biết lượng sức mình rồi!"
+
 #. もしもーし！！
 #. どうして、ないって言い切れるんですかぁ！？
 msgctxt "0072 | HIFUMI YAMADA"
 msgid "Hello!? Why, exactly, can't that be it!?"
-msgstr "Alôô!! Chính xác thì tại sao chuyện đó lại không thể xảy ra hả!?"
+msgstr "Alôô! Chính xác thì tại sao chuyện đó lại không thể xảy ra hả!?"
+
 #. ほぅ…それは証拠になるのですかな？
 msgctxt "0073 | HIFUMI YAMADA"
 msgid "Ohh, so that's your evidence!?"
 msgstr "Ồ, vậy đó là bằng chứng của cậu hả!?"
+
 #. いや…うーん…ならないかも…
 msgctxt "0074 | MAKOTO NAEGI"
 msgid "No, I mean...um, maybe not."
 msgstr "Không, ý tớ là... ừm, có lẽ không phải."
+
 #. 苗木誠殿！　反論した以上は、
 #. 納得のいく答えを聞かせて頂きますぞ！
 msgctxt "0075 | HIFUMI YAMADA"
@@ -554,8 +633,9 @@ msgid ""
 "Mr. Naegi! You disputed my statement, so let's hear a\n"
 "believable reason why I'm wrong!"
 msgstr ""
-"Ngài Naegi! Cậu đã phản đối tuyên bố của tôi, vậy nên hãy cho\n"
-"tôi nghe một lý do thuyết phục tại sao tôi sai đi!"
+"Ngài Naegi! Cậu đã phản đối tuyên bố của tôi, vậy nên hãy \n"
+"cho tôi nghe một lý do thuyết phục tại sao tôi sai đi!"
+
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. <CLT>
@@ -568,6 +648,7 @@ msgstr ""
 "<CLT 4>Có vẻ như mình vừa tự làm bẽ mặt\n"
 "trước tất cả mọi người rồi...\n"
 "<CLT>"
+
 #. ぬぬぬ…
 #. あれだけ自信満々に言い切っておいて沈黙だと…？
 msgctxt "0077 | HIFUMI YAMADA"
@@ -577,6 +658,7 @@ msgid ""
 msgstr ""
 "Ái chà chà... Lúc nãy cậu đầy tự tin cơ mà, sao giờ lại\n"
 "im lặng thế?"
+
 #. 許せませんぞぉ！
 #. 何が何でも答えてもらいますからな！
 msgctxt "0078 | HIFUMI YAMADA"
@@ -584,8 +666,9 @@ msgid ""
 "Unforgivable! I don't care what you have to do, I\n"
 "demand an answer!"
 msgstr ""
-"Không thể tha thứ được! Tôi không cần biết cậu phải làm gì, tôi\n"
-"yêu cầu một câu trả lời!"
+"Không thể tha thứ được! Tôi không cần biết cậu phải làm gì, \n"
+"tôi yêu cầu một câu trả lời!"
+
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. <CLT>
@@ -598,6 +681,7 @@ msgstr ""
 "<CLT 4>Có vẻ như mình vừa tự làm bẽ mặt\n"
 "trước tất cả mọi người rồi...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんが他人を部屋に招き入れたとは
 #. 思えない根拠なんて…
 #. <CLT>
@@ -610,6 +694,7 @@ msgstr ""
 "<CLT 4>Lý do không đời nào Sayaka lại mời hung thủ vào\n"
 "trong phòng là...\n"
 "<CLT>"
+
 #. <CLT 4>そんなの…決まってる…！
 #. <CLT>
 msgctxt "0081 | MAKOTO NAEGI"
@@ -619,6 +704,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tôi đã có câu trả lời rồi!\n"
 "<CLT>"
+
 #. <CLT 4>そもそも彼女は怯えていたからこそ、
 #. ボクに“例の事”を頼んだんだ…
 #. <CLT>
@@ -631,6 +717,7 @@ msgstr ""
 "<CLT 4>Vì cô ấy đã nhờ tôi làm một việc cụ thể,\n"
 "chỉ vì cô ấy quá đỗi sợ hãi.\n"
 "<CLT>"
+
 #. <CLT 4>それが…根拠になるはずだ。
 #. <CLT>
 msgctxt "0083 | MAKOTO NAEGI"
@@ -640,6 +727,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó chính là câu trả lời...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんが他人を部屋に招き入れたと
 #. 考えられない根拠…
 #. <CLT>
@@ -650,6 +738,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không đời nào Sayaka lại cho ai đó vào, bởi vì...\n"
 "<CLT>"
+
 #. だって、<CLT 3>舞園さんは怯えていた<CLT>んだよ？
 #. だからこそ、ボクに部屋の交換を頼んだんだ。
 msgctxt "0085 | MAKOTO NAEGI"
@@ -657,8 +746,9 @@ msgid ""
 "Because <CLT 3>Sayaka was already scared<CLT>, remember? That's\n"
 "why she asked me to switch rooms in the first place."
 msgstr ""
-"Bởi vì <CLT 3>Sayaka đã rất sợ hãi rồi<CLT>, mọi người nhớ không? Đó là\n"
-"lý do tại sao ngay từ đầu cô ấy lại nhờ tớ đổi phòng."
+"Bởi vì <CLT 3>Sayaka đã rất sợ hãi rồi<CLT>, mọi người nhớ không? \n"
+"Đó là lý do tại sao ngay từ đầu cô ấy lại nhờ tớ đổi phòng."
+
 #. 舞園さんも…
 #. 誰か来ても絶対にドアを開けちゃ駄目だよ。
 msgctxt "0086 | SAYAKA MAIZONO"
@@ -666,8 +756,9 @@ msgid ""
 "The same goes for you, Sayaka. No matter who it is,\n"
 "don't open your door for anyone."
 msgstr ""
-"Sayaka cũng vậy nhé. Dù là ai đi nữa,\n"
-"cũng tuyệt đối đừng mở cửa cho bất kỳ ai đấy."
+"Sayaka cũng vậy nhé... Dù là ai đến đi chăng nữa, cậu tuyệt \n"
+"đối không được mở cửa đâu đấy."
+
 #. 苗木君だとわかっても絶対に開けませんよ。
 #. でないと、部屋を交換した意味がありませんもんね。
 msgctxt "0087 | SAYAKA MAIZONO"
@@ -675,8 +766,9 @@ msgid ""
 "Even if I'm sure it's you, I absolutely won't open it.\n"
 "Otherwise, what's the point of even switching?"
 msgstr ""
-"Ngay cả khi biết chắc đó là cậu, tớ cũng tuyệt đối không mở đâu.\n"
-"Nếu không thì việc đổi phòng còn có ý nghĩa gì nữa chứ."
+"Kể cả khi biết đó là cậu, Makoto, tớ cũng không mở đâu. Nếu \n"
+"không thì việc đổi phòng đâu còn ý nghĩa gì nữa chứ."
+
 #. そう言っていた彼女が…
 #. 自分から鍵を開けたとは考えられないよ…
 msgctxt "0088 | MAKOTO NAEGI"
@@ -684,16 +776,19 @@ msgid ""
 "Knowing what she'd been through, I just can't believe\n"
 "she would have opened the door for anyone."
 msgstr ""
-"Biết rõ những gì cô ấy đã trải qua, tớ đơn giản là không thể tin\n"
-"rằng cô ấy lại tự mình mở cửa cho bất kỳ ai."
+"Biết rõ những gì cô ấy đã trải qua, tớ đơn giản là không thể \n"
+"tin rằng cô ấy lại tự mình mở cửa cho bất kỳ ai."
+
 #. …彼女が怯えていた事自体が、ウソだったとしたら？
 msgctxt "0089 | KYOUKO KIRIGIRI"
 msgid "...What if her being scared was a lie?"
 msgstr "...Nếu việc cô ấy sợ hãi chỉ là một lời nói dối thì sao?"
+
 #. え…？
 msgctxt "0090 | MAKOTO NAEGI"
 msgid "Huh...?"
 msgstr "Hả...?"
+
 #. な、何言ってんだよ！
 #. どうして彼女がそんなウソを…！
 msgctxt "0091 | MAKOTO NAEGI"
@@ -703,6 +798,7 @@ msgid ""
 msgstr ""
 "Cái quái gì vậy chứ!? Tại sao cô ấy lại phải nói dối\n"
 "về một chuyện như thế chứ!?"
+
 #. 苗木君にとっては、考えたくない可能性でしょうけど…
 #. これを見ても、まだそう言える？
 msgctxt "0092 | KYOUKO KIRIGIRI"
@@ -710,8 +806,9 @@ msgid ""
 "I know you don't want to consider it, but look at this\n"
 "and tell me...can you still deny the possibility?"
 msgstr ""
-"Tớ biết cậu không muốn nghĩ đến khả năng đó, nhưng hãy nhìn cái này\n"
-"và nói cho tớ nghe xem... cậu còn có thể phủ nhận nó không?"
+"Tớ biết cậu không muốn xét đến điều đó, nhưng hãy nhìn \n"
+"cái này và nói tớ nghe xem... cậu còn có thể phủ nhận không?"
+
 #. <CLT 4>２人きりで話したい事があります。
 #. ５分後に、私の部屋に来てください。
 #. <CLT>
@@ -724,6 +821,7 @@ msgstr ""
 "<CLT 4>\"Có chuyện này tớ muốn nói riêng với cậu. 5 phút nữa,\n"
 "hãy đến gặp tớ ở phòng tớ nhé.\"\n"
 "<CLT>"
+
 #. <CLT 4>部屋を間違えないように、
 #. ちゃんと部屋のネームプレートを確認してくださいね。
 #. <CLT>
@@ -736,6 +834,7 @@ msgstr ""
 "<CLT 4>\"Nhớ kiểm tra bảng tên để đảm bảo cậu không vào nhầm\n"
 "phòng đấy nhé, được chứ?\"\n"
 "<CLT>"
+
 #. ある場所に置いてあったメモ帳の、
 #. １番上のページを鉛筆でこすってみたら…
 msgctxt "0095 | KYOUKO KIRIGIRI"
@@ -743,12 +842,14 @@ msgid ""
 "I found a notepad during my search, and I shaded in\n"
 "the top sheet with a pencil."
 msgstr ""
-"Tớ đã tìm thấy một cuốn sổ ghi chép khi khám xét, và tớ đã dùng bút chì\n"
-"tô lên trang đầu tiên."
+"Tớ đã tìm thấy một cuốn sổ ghi chép khi khám xét, và tớ đã \n"
+"dùng bút chì tô lên trang đầu tiên."
+
 #. こんな字が浮かび上がったわ…
 msgctxt "0096 | KYOUKO KIRIGIRI"
 msgid "And these are the words that appeared."
 msgstr "Và đây là những dòng chữ đã hiện lên."
+
 #. あ、ドラマで見た事あるよ！
 msgctxt "0097 | AOI ASAHINA"
 msgid ""
@@ -757,6 +858,7 @@ msgid ""
 msgstr ""
 "Ôi trời, tui đã thấy người ta làm vậy trên mấy phim\n"
 "trinh thám suốt luôn!"
+
 #. メモ帳の下のページに残された筆圧を、
 #. 鉛筆でこすって浮かび上がらせるんだよね！
 msgctxt "0098 | AOI ASAHINA"
@@ -766,6 +868,7 @@ msgid ""
 msgstr ""
 "Khi mình viết, nó có thể để lại vết hằn. Chỉ cần tô lên trang\n"
 "giấy tiếp theo là có thể thấy được chữ hiện ra đó!"
+
 #. それを見た時に思ったもん！　メモに字を書く時は、
 #. メモ帳から破った後で書かないとって！
 msgctxt "0099 | AOI ASAHINA"
@@ -775,6 +878,7 @@ msgid ""
 msgstr ""
 "Lúc thấy vậy, tui kiểu: \"Trời đất ơi! Từ giờ chắc tui phải\n"
 "xé giấy ra rồi mới viết cho chắc ăn quá!\""
+
 #. 古い手法だけど、意外と古典も役に立つものね…
 msgctxt "0100 | KYOUKO KIRIGIRI"
 msgid ""
@@ -783,6 +887,7 @@ msgid ""
 msgstr ""
 "Đó là một kỹ thuật khá cổ xưa, nhưng đôi khi những thứ\n"
 "cổ điển lại hữu ích đến kinh ngạc đấy."
+
 #. ちなみに、このメモ帳が置いてあったのは、
 #. 苗木君の部屋のデスクの上よ。
 msgctxt "0101 | KYOUKO KIRIGIRI"
@@ -792,10 +897,12 @@ msgid ""
 msgstr ""
 "Ồ, và tớ cũng nên nói thêm... tớ đã tìm thấy cuốn sổ trên\n"
 "bàn làm việc trong phòng của Makoto."
+
 #. え…？
 msgctxt "0102 | MAKOTO NAEGI"
 msgid "Huh?"
 msgstr "Hả?"
+
 #. つまり、このメモを事件前に残せたのは、
 #. 苗木君の部屋に入った事のある人物だけ…
 msgctxt "0103 | KYOUKO KIRIGIRI"
@@ -805,6 +912,7 @@ msgid ""
 msgstr ""
 "Nghĩa là, chỉ ai đó từng ở trong phòng của Makoto\n"
 "trước khi vụ án xảy ra mới có thể viết nó."
+
 #. 部屋の持ち主である苗木か…
 #. 昨晩だけ部屋を交換していたという舞園…
 msgctxt "0104 | BYAKUYA TOGAMI"
@@ -814,14 +922,17 @@ msgid ""
 msgstr ""
 "Vậy thì hoặc là Makoto, người sống ở đó, hoặc là Sayaka,\n"
 "người đã đổi phòng chỉ trong một đêm..."
+
 #. …苗木君、これはあなたが書いた物かしら？
 msgctxt "0105 | KYOUKO KIRIGIRI"
 msgid "So, Makoto...did you write this?"
 msgstr "Vậy, Makoto... có phải cậu đã viết cái này không?"
+
 #. い、いや…違うけど…
 msgctxt "0106 | MAKOTO NAEGI"
 msgid "N-No, I didn't. But—"
 msgstr "Kh-Không, tớ không viết. Nhưng—"
+
 #. …そうでしょうね。このメモには、
 #. “舞園”と読めるサインも書いてあったみたいだし…
 msgctxt "0107 | KYOUKO KIRIGIRI"
@@ -831,6 +942,7 @@ msgid ""
 msgstr ""
 "Dĩ nhiên là không rồi. Bởi vì tờ ghi chú này còn có một\n"
 "chữ ký hoàn toàn dễ đọc—chữ ký của Sayaka."
+
 #. <CLT 4>じゃあ、そのメモって…
 #. <CLT>
 msgctxt "0108 | MAKOTO NAEGI"
@@ -840,6 +952,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vậy thì... tờ ghi chú đó...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんが書いた…？
 #. <CLT>
 msgctxt "0109 | MAKOTO NAEGI"
@@ -849,10 +962,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Sayaka đã viết sao...?\n"
 "<CLT>"
+
 #. で、でも、どうして彼女がそんなメモを？
 msgctxt "0110 | MAKOTO NAEGI"
 msgid "B-But why? Why would she write that?"
 msgstr "Nh-Nhưng tại sao? Tại sao cô ấy lại viết như vậy?"
+
 #. 彼女は<CLT 3>“ある人物”<CLT>を呼び出そうとしていた。
 #. そこで、このメモを使ったんじゃないかしら…
 msgctxt "0111 | KYOUKO KIRIGIRI"
@@ -862,6 +977,7 @@ msgid ""
 msgstr ""
 "Tờ ghi chú có lẽ là cách cô ấy liên lạc với một\n"
 "<CLT 3>người cụ thể nào đó<CLT>."
+
 #. このメモを部屋のドアの隙間から入れる事で、
 #. その人物を、こっそり呼び出そうとしたのよ。
 msgctxt "0112 | KYOUKO KIRIGIRI"
@@ -871,6 +987,7 @@ msgid ""
 msgstr ""
 "Cô ấy hẳn đã nhét nó qua khe cửa để cho người đó biết\n"
 "rằng cô ấy muốn gặp họ một cách bí mật."
+
 #. 超高校級のアイドルに、そんな風に誘われた日には、
 #. 男子ならイチコロですな…
 msgctxt "0113 | HIFUMI YAMADA"
@@ -880,6 +997,7 @@ msgid ""
 msgstr ""
 "Nếu được một Siêu Học Sinh Thần Tượng mời như vậy, thì\n"
 "chàng trai nào mà cưỡng lại được chứ?"
+
 #. 僕は２次元限定なんで、関係ありませんがね！
 msgctxt "0114 | HIFUMI YAMADA"
 msgid ""
@@ -888,11 +1006,15 @@ msgid ""
 msgstr ""
 "Dĩ nhiên, tôi chỉ quan tâm đến 2D nên nó chẳng có chút\n"
 "tác dụng nào với tôi đâu!"
+
 #. …ですが、そのメモで呼び出された人物なんて、
 #. 本当に存在するのでしょうか？
 msgctxt "0115 | CELES"
 msgid "...But can we be sure anyone even got this note?"
-msgstr "...Nhưng liệu chúng ta có thể chắc chắn là có ai đó đã nhận được tờ ghi chú này không?"
+msgstr ""
+"...Nhưng liệu chúng ta có thể chắc chắn là có ai đó đã nhận \n"
+"được tờ ghi chú này không?"
+
 #. 存在するとしても、
 #. その人物が事件に関係しているとは思えませんわ。
 msgctxt "0116 | CELES"
@@ -900,16 +1022,19 @@ msgid ""
 "And honestly, even if they did, I do not think they\n"
 "are at all involved in what happened."
 msgstr ""
-"Và thành thật mà nói, ngay cả khi họ đã nhận được, tôi cũng không nghĩ rằng họ\n"
-"có liên quan chút nào đến những gì đã xảy ra đâu."
+"Và thành thật mà nói, ngay cả khi họ đã nhận được, tôi cũng \n"
+"không nghĩ họ có liên quan gì đến những gì đã xảy ra đâu."
+
 #. え？　どうして？
 msgctxt "0117 | CHIHIRO FUJISAKI"
 msgid "Huh? What makes you say that?"
 msgstr "Hả? Sao cậu lại nói vậy?"
+
 #. うふ…聞いていただけますか？
 msgctxt "0118 | CELES"
 msgid "Hmhm... Would you like to hear what I have to say?"
-msgstr "Hừm hừm... Cậu có muốn nghe những gì tôi sắp nói không?"
+msgstr "Hmhm... Cậu có muốn nghe những gì tớ sắp nói không?"
+
 #. では、お話しして差し上げましょう。
 msgctxt "0119 | CELES"
 msgid "Very well, then. Pay attention!"

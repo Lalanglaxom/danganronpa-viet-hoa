@@ -6,15 +6,17 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
 
 #. トラッシュルームの鍵は…
 msgctxt "0001 | LEON KUWATA"
 msgid "The key to the trash room..."
 msgstr "Chìa khóa phòng rác..."
+
 #. <CLT 9>掃除当番が持って<CLT>
 #. んだったよなぁ！？
 msgctxt "0002 | LEON KUWATA"
@@ -24,6 +26,7 @@ msgid ""
 msgstr ""
 "Chẳng phải <CLT 9>đứa nào trực nhật<CLT>\n"
 "thì sẽ giữ nó sao!?"
+
 #. つまり、焼却炉に近付けたのは…
 msgctxt "0003 | TOUKO FUKAWA"
 msgid ""
@@ -32,6 +35,7 @@ msgid ""
 msgstr ""
 "V-Vậy nên người duy nhất c-có thể\n"
 "tiếp cận được l-lò đốt rác là..."
+
 #. <CLT 9>掃除当番だけ<CLT>…？
 msgctxt "0004 | TOUKO FUKAWA"
 msgid ""
@@ -39,7 +43,8 @@ msgid ""
 "of the t-trash<CLT>?"
 msgstr ""
 "...<CLT 9>người ph-phụ trách\n"
-"dọn r-rác<CLT> sao...?"
+"dọn r-rác<CLT>?"
+
 #. <CLT 9>焼却炉に近付かなきゃ<CLT>、
 #. 証拠隠滅なんて出来やしねー…
 msgctxt "0005 | LEON KUWATA"
@@ -51,6 +56,7 @@ msgstr ""
 "Và <CLT 9>mày phải tiếp cận được\n"
 "cái lò đốt rác<CLT> thì mới có\n"
 "thể phi tang bằng chứng được chứ."
+
 #. …つー事は、犯人は掃除当番だ！
 msgctxt "0006 | LEON KUWATA"
 msgid ""
@@ -61,6 +67,7 @@ msgstr ""
 "Nghĩa là nghi phạm duy nhất\n"
 "chỉ có thể là đứa nào giữ\n"
 "chìa khóa phòng rác thôi!"
+
 #. えーっと…
 #. 確か、掃除当番は…
 msgctxt "0007 | HIFUMI YAMADA"
@@ -70,47 +77,58 @@ msgid ""
 msgstr ""
 "Được rồi, vậy... người giữ\n"
 "chìa khóa phòng rác chính là..."
+
 #. え？　ボク…？
 msgctxt "0008 | HIFUMI YAMADA"
 msgid "Huh? Me...?"
 msgstr "Hả? Tôi sao...?"
+
 #. いやぁぁああああ！！
 msgctxt "0009 | HIFUMI YAMADA"
 msgid "NOOOOOOOOOOOOOOOO!!!"
 msgstr "KHÔÔÔÔÔÔNGGGGG!!!"
+
 #. <CLT 26>桑田…お前…！<CLT>
 msgctxt "0010 | HIFUMI YAMADA"
 msgid "<CLT 26>Leon...you...!<CLT>"
 msgstr "<CLT 26>Leon... cậu...!<CLT>"
+
 #. <CLT 26>掃除当番ってまさか…！<CLT>
 msgctxt "0011 | HIFUMI YAMADA"
 msgid "<CLT 26>The one on cleaning duty? No way!<CLT>"
 msgstr "<CLT 26>Người trực nhật á? Không thể nào!<CLT>"
+
 #. <CLT 26>まさか…<CLT>
 msgctxt "0012 | HIFUMI YAMADA"
 msgid "<CLT 26>It can't be...<CLT>"
 msgstr "<CLT 26>Không thể nào...<CLT>"
+
 #. <CLT 26>おいおい！<CLT>
 msgctxt "0013 | HIFUMI YAMADA"
 msgid "<CLT 26>Hey, hold on!<CLT>"
 msgstr "<CLT 26>Này, chờ chút đã!<CLT>"
+
 #. <CLT 26>あの距離じゃな…<CLT>
 msgctxt "0014 | HIFUMI YAMADA"
 msgid "<CLT 26>At that distance...<CLT>"
 msgstr "<CLT 26>Ở khoảng cách đó thì...<CLT>"
+
 #. <CLT 26>焼却炉を使えるのは…？<CLT>
 msgctxt "0015 | HIFUMI YAMADA"
 msgid "<CLT 26>Could you even use the incinerator?<CLT>"
 msgstr "<CLT 26>Cậu có thể sử dụng được lò đốt rác không?<CLT>"
+
 #. <CLT 26>掃除当番って事はつまり…<CLT>
 msgctxt "0016 | HIFUMI YAMADA"
 msgid "<CLT 26>So in other words...<CLT>"
 msgstr "<CLT 26>Nói cách khác thì...<CLT>"
+
 #. <CLT 26>フン…苦し紛れの言い訳だな<CLT>
 msgctxt "0017 | HIFUMI YAMADA"
 msgid "<CLT 26>Hmph. This is just a desperate excuse...<CLT>"
 msgstr "<CLT 26>Hừm. Đây chỉ là một lời bào chữa tuyệt vọng thôi...<CLT>"
+
 #. <CLT 26>山田じゃん…<CLT>
 msgctxt "0018 | HIFUMI YAMADA"
 msgid "<CLT 26>It was Hifumi...<CLT>"
-msgstr "<CLT 26>Chẳng phải là Yamada sao...<CLT>"
+msgstr "<CLT 26>Chẳng phải là Hifumi sao...<CLT>"

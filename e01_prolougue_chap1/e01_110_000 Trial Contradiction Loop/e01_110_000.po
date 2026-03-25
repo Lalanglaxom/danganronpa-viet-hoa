@@ -6,7 +6,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,8 +18,9 @@ msgid ""
 "What does that have to do with what I said? Or do you\n"
 "just not know what you're doing?"
 msgstr ""
-"Điều đó có liên quan gì đến những gì tôi đã nói không? Hay là\n"
-"cậu thực sự chẳng biết mình đang làm gì vậy?"
+"Điều đó có liên quan gì đến những gì tớ đã nói không? Hay \n"
+"là cậu thực sự chẳng biết mình đang làm gì vậy?"
+
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
 #. <CLT>
@@ -29,9 +30,10 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn nào đó ẩn giấu ở đâu đây...\n"
+"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn \n"
+"phải có một sự mâu thuẫn nào đó ẩn giấu ở đây...\n"
 "<CLT>"
+
 #. …はぁ？　それが何だっつーの？
 #. いい加減な事言ってると疑われるぜ？
 msgctxt "0003 | LEON KUWATA"
@@ -41,6 +43,7 @@ msgid ""
 msgstr ""
 "Hả? Cái gì vậy? Nếu cậu cứ tiếp tục phá rối phiên\n"
 "tòa, chính cậu sẽ bị đưa ra xét xử đấy!"
+
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
 #. <CLT>
@@ -50,9 +53,10 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn nào đó ẩn giấu ở đâu đây...\n"
+"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn \n"
+"phải có một sự mâu thuẫn nào đó ẩn giấu ở đây...\n"
 "<CLT>"
+
 #. …はぁ？　それが何だっつーの？
 #. いい加減な事言ってると疑われるぜ？
 msgctxt "0005 | LEON KUWATA"
@@ -62,6 +66,7 @@ msgid ""
 msgstr ""
 "Hả? Cái gì vậy? Nếu cậu cứ tiếp tục phá rối phiên\n"
 "tòa, chính cậu sẽ bị đưa ra xét xử đấy!"
+
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
 #. <CLT>
@@ -71,9 +76,10 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn nào đó ẩn giấu ở đâu đây...\n"
+"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn \n"
+"phải có một sự mâu thuẫn nào đó ẩn giấu ở đây...\n"
 "<CLT>"
+
 #. <CLT 4>ボクの部屋のシャワールームが開かなかったのは、
 #. 確かだ…
 #. <CLT>
@@ -82,8 +88,10 @@ msgid ""
 "<CLT 4>It's obvious that my bathroom door wouldn't open.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Rõ ràng là cửa phòng tắm của tôi đã không thể mở được.\n"
+"<CLT 4>Rõ ràng là cửa phòng tắm của mình đã không thể \n"
+"mở được.\n"
 "<CLT>"
+
 #. <CLT 4>だけど…その本当の理由は…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -93,6 +101,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng lý do thực sự cho việc đó là...\n"
 "<CLT>"
+
 #. <CLT 4>ボクの部屋のシャワールームが開かなかったのは、
 #. 鍵が掛かっていたせいなんかじゃない。
 #. <CLT>
@@ -103,6 +112,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó không phải là vì cánh cửa đã bị khóa.\n"
 "<CLT>"
+
 #. <CLT 4>そこには他の理由があったはずだ。
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"

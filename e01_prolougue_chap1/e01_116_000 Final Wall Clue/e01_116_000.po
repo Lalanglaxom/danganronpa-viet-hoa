@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
 
 #. …はぁ？　それが何だっつーの？
 #. いい加減な事言ってると疑われるぜ？
@@ -18,8 +19,9 @@ msgid ""
 "Huh? What's wrong? If you keep trying to disrupt the\n"
 "trial, you're gonna get put on trial yourself!"
 msgstr ""
-"Hả? Cái gì vậy? Nếu cậu cứ tiếp tục phá rối phiên\n"
+"Hả? Sao thế? Nếu cậu cứ tiếp tục phá rối phiên\n"
 "tòa, chính cậu sẽ bị đưa ra xét xử đấy!"
+
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
 #. <CLT>
@@ -29,9 +31,10 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn nào đó ẩn giấu đâu đây...\n"
+"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn \n"
+"phải có một sự mâu thuẫn nào đó ẩn giấu ở đây...\n"
 "<CLT>"
+
 #. 僕の発言とその証拠…
 #. 何か矛盾している点でもあるのだろうか？
 msgctxt "0003 | KIYOTAKA ISHIMARU"
@@ -39,8 +42,9 @@ msgid ""
 "You think you have some proof that contradicts what I\n"
 "said...?"
 msgstr ""
-"Cậu nghĩ mình có bằng chứng nào đó mâu thuẫn với những gì tôi\n"
-"vừa nói sao...?"
+"Cậu nghĩ rằng cậu có bằng chứng nào đó mâu thuẫn với \n"
+"những gì tôi đã nói sao...?"
+
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
 #. <CLT>
@@ -50,9 +54,10 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn nào đó ẩn giấu đâu đây...\n"
+"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn \n"
+"phải có một sự mâu thuẫn nào đó ẩn giấu ở đây...\n"
 "<CLT>"
+
 #. <CLT 4>……いや、待てよ。
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -62,6 +67,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Khoan đã, không... chờ chút.\n"
 "<CLT>"
+
 #. <CLT 4>そうだ…犯人に繋がる手掛かりは、
 #. まだ残されていたはずだ…
 #. <CLT>
@@ -74,6 +80,7 @@ msgstr ""
 "<CLT 4>Đúng rồi... Vẫn còn một manh mối nữa có thể\n"
 "dẫn chúng ta đến kẻ đã giết cậu ấy!\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんが…残してくれていたはずだ…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -83,6 +90,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Sayaka đã để lại nó...\n"
 "<CLT>"
+
 #. <CLT 4>手掛かりは、まだあったはずだ。
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -90,8 +98,10 @@ msgid ""
 "<CLT 4>There's still one clue left, I'm sure of it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vẫn còn một manh mối nữa, tôi chắc chắn về điều đó...\n"
+"<CLT 4>Vẫn còn một manh mối nữa, mình chắc chắn \n"
+"về điều đó...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんが背中の壁に
 #. ちゃんと残してくれていたはずだ。
 #. <CLT>
@@ -100,5 +110,6 @@ msgid ""
 "<CLT 4>Sayaka left it on the wall she was leaning up against.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sayaka đã để lại nó trên bức tường mà cậu ấy đang tựa vào.\n"
+"<CLT 4>Sayaka đã để lại nó trên bức tường mà cậu ấy đang \n"
+"tựa vào.\n"
 "<CLT>"

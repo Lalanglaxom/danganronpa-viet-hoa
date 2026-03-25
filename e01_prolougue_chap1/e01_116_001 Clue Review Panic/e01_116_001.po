@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 犯人を決めろっつってもよぉ…
 msgctxt "0001 | LEON KUWATA"
@@ -17,12 +18,16 @@ msgid ""
 "It's easy just to say,\n"
 "\"Hey, decide who did it!\""
 msgstr ""
-"Nói \"Này, quyết định xem ai đã làm đi\" thì\n"
-"dễ lắm cậu biết không!"
+"Nói \"Này, quyết định xem ai \n"
+"đã làm đi\" thì dễ lắm!"
+
 #. もう、<CLT 9>新しい手掛かりがない<CLT>んだぜ？
 msgctxt "0002 | LEON KUWATA"
 msgid "But there <CLT 9>just aren't any more clues<CLT>, right?"
-msgstr "Nhưng <CLT 9>chẳng còn bất kỳ manh mối nào nữa<CLT>, đúng chứ?"
+msgstr ""
+"Nhưng <CLT 9>chẳng còn manh mối nào nữa<CLT>, \n"
+"đúng chứ?"
+
 #. ならば、<CLT 9>今までの手掛かり<CLT>を
 #. もう１度見直そう！
 msgctxt "0003 | KIYOTAKA ISHIMARU"
@@ -30,16 +35,21 @@ msgid ""
 "Very well! Then let's review <CLT 9>all the clues we've\n"
 "found up to this point<CLT> one more time!"
 msgstr ""
-"Được lắm! Vậy thì hãy xem xét lại <CLT 9>tất cả manh mối chúng ta\n"
-"đã tìm thấy cho đến thời điểm này<CLT> một lần nữa!"
+"Được lắm! Vậy thì hãy xem xét lại <CLT 9>tất cả manh mối chúng \n"
+"ta đã tìm thấy cho đến thời điểm này<CLT> một lần nữa!"
+
 #. そんな時間があるのですか…？
 msgctxt "0004 | CELES"
 msgid "Do we really have time for all that...?"
-msgstr "Chúng ta thực sự có thời gian cho tất cả những việc đó sao...?"
+msgstr ""
+"Chúng ta thực sự có thời gian cho tất cả \n"
+"những việc đó sao...?"
+
 #. は、破滅…破滅よ…！
 msgctxt "0005 | TOUKO FUKAWA"
 msgid "D-Die... Die!"
-msgstr "Ch-Chết... Chết đi!"
+msgstr "Ch-Chết... Chết!"
+
 #. このまま…
 #. みんな破滅するのよ…ッ！
 msgctxt "0006 | TOUKO FUKAWA"
@@ -49,30 +59,37 @@ msgid ""
 msgstr ""
 "Nếu chúng ta không l-làm gì đó...\n"
 "tất cả chúng ta sẽ ch-chết mất!"
+
 #. <CLT 26>手掛かり手掛かり手掛かり…<CLT>
 msgctxt "0007 | TOUKO FUKAWA"
 msgid "<CLT 26>Clues...clues...clues...<CLT>"
 msgstr "<CLT 26>Manh mối... manh mối... manh mối...<CLT>"
+
 #. <CLT 26>誰かいねーのかよ…！<CLT>
 msgctxt "0008 | TOUKO FUKAWA"
 msgid "<CLT 26>Isn't there anything!?<CLT>"
 msgstr "<CLT 26>Không còn gì nữa sao!?<CLT>"
+
 #. <CLT 26>うーむむむむむ…<CLT>
 msgctxt "0009 | TOUKO FUKAWA"
 msgid "<CLT 26>Hrm-hrm-hrm...<CLT>"
 msgstr "<CLT 26>Hừm hừm hừm...<CLT>"
+
 #. <CLT 26>はあ！？　また？<CLT>
 msgctxt "0010 | TOUKO FUKAWA"
 msgid "<CLT 26>What? Again!?<CLT>"
 msgstr "<CLT 26>Cái gì? Lại nữa sao!?<CLT>"
+
 #. <CLT 26>他に方法はないのか？<CLT>
 msgctxt "0011 | TOUKO FUKAWA"
 msgid "<CLT 26>Is there really nothing else?<CLT>"
 msgstr "<CLT 26>Thực sự không còn cách nào khác sao?<CLT>"
+
 #. <CLT 26>何を見直すの…？<CLT>
 msgctxt "0012 | TOUKO FUKAWA"
 msgid "<CLT 26>What's left to look at?<CLT>"
 msgstr "<CLT 26>Còn gì để mà xem xét nữa chứ?<CLT>"
+
 #. <CLT 26>終わっちまうぞ！<CLT>
 msgctxt "0013 | TOUKO FUKAWA"
 msgid "<CLT 26>It's all over!<CLT>"

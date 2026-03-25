@@ -6,16 +6,20 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
 
 #. 現場のシャワールームのドアノブは、
 #. ネジが外されてたけどさ…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "The screws on the bathroom doorknob were removed."
-msgstr "Những chiếc đinh vít trên nắm đấm cửa phòng tắm đã bị tháo ra."
+msgstr ""
+"Những chiếc đinh vít trên nắm đấm cửa phòng tắm đã \n"
+"bị tháo ra."
+
 #. 犯人は、そのネジを外す際、
 #. <CLT 3>“どんな道具”<CLT>を使ったんだろうね？
 msgctxt "0002 | MAKOTO NAEGI"
@@ -23,21 +27,24 @@ msgid ""
 "I wonder <CLT 3>what kind of tool<CLT> the killer used to remove\n"
 "them..."
 msgstr ""
-"Tớ tự hỏi hung thủ đã dùng <CLT 3>loại dụng cụ nào<CLT> để tháo\n"
-"chúng ra nhỉ..."
+"Tớ tự hỏi hung thủ đã dùng <CLT 3>loại dụng cụ nào<CLT> \n"
+"để tháo chúng ra nhỉ..."
+
 #. ネジを外すっつったら…
 #. ドライバーだろ…？
 msgctxt "0003 | MONDO OOWADA"
 msgid "I mean...it had to be a screwdriver, right?"
 msgstr "Ý tao là... chắc chắn phải dùng tua vít rồi, đúng không?"
+
 #. だったら、配られた<CLT 3>工具セット<CLT>の中にあったべ？
 msgctxt "0004 | YASUHIRO HAGAKURE"
 msgid ""
 "Oh yeah. I'm pretty sure the <CLT 3>toolkits<CLT> we got each\n"
 "had one inside."
 msgstr ""
-"À phải rồi. Tớ khá chắc là trong mỗi <CLT 3>bộ dụng cụ<CLT> được\n"
-"phát đều có một cái bên trong."
+"À phải rồi. Tớ khá chắc là trong mỗi <CLT 3>bộ dụng cụ<CLT> \n"
+"được phát đều có một cái bên trong."
+
 #. あれを使ったんでしょうな。
 #. 他に、工具などありませんでしたし。
 msgctxt "0005 | HIFUMI YAMADA"
@@ -47,6 +54,7 @@ msgid ""
 msgstr ""
 "Vậy thì hẳn là hắn đã dùng cái đó rồi! Chẳng còn công\n"
 "cụ nào khác ở quanh đây cả."
+
 #. だけど、ボクの部屋にあった工具セットには、
 #. 使われた形跡なんてなかったんだ…
 msgctxt "0006 | MAKOTO NAEGI"
@@ -56,6 +64,7 @@ msgid ""
 msgstr ""
 "Nhưng bộ dụng cụ trong phòng tớ rõ ràng là chưa từng\n"
 "được sử dụng qua..."
+
 #. 犯人は、現場を苗木くんの部屋ではなく、
 #. 舞園くんの部屋だと思い込んでいたはずだからな！
 msgctxt "0007 | KIYOTAKA ISHIMARU"
@@ -65,6 +74,7 @@ msgid ""
 msgstr ""
 "Đó là bởi vì hung thủ không hề biết đó là phòng của\n"
 "cậu! Hắn cứ ngỡ mình đang ở trong phòng của Sayaka!"
+
 #. 工具セットは男子だけに配られた物だから…
 #. その部屋にあるとは思わなかったんだろうねぇ…
 msgctxt "0008 | CHIHIRO FUJISAKI"
@@ -72,26 +82,31 @@ msgid ""
 "Only the boys got toolkits, so the killer naturally\n"
 "assumed there wouldn't be one in there..."
 msgstr ""
-"Chỉ có học sinh nam mới được phát bộ dụng cụ, nên hung thủ\n"
-"mặc định là trong căn phòng đó sẽ không có cái nào..."
+"Chỉ có học sinh nam mới được phát bộ dụng cụ, nên hung \n"
+"thủ mặc định là trong căn phòng đó sẽ không có cái nào..."
+
 #. だったら、犯人が使ったのって、
 #. <CLT 3>誰の工具セット<CLT>だったんだろうね？
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "Okay, then <CLT 3>whose toolkit<CLT> did the killer use?"
 msgstr "Vậy thì hung thủ đã dùng <CLT 3>bộ dụng cụ của ai<CLT>?"
+
 #. アホアホアホーッ！！
 msgctxt "0010 | LEON KUWATA"
 msgid "Stupidstupidstupid!"
-msgstr "Ngungungungu!"
+msgstr "NgusiNgusiNgusi!"
+
 #. きっと、犯人は自分に配られた工具セットを
 #. 使ったはずだよ！
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "It had to be their very own toolkit!"
 msgstr "Chắc chắn đó phải là bộ dụng cụ của chính hắn rồi!"
+
 #. アホアホアホアホーッ！！
 msgctxt "0012 | LEON KUWATA"
 msgid "Stupidstupidstupidstupidstupid!!!"
-msgstr "Ngungungungungungu!!!"
+msgstr "NgusiNgusiNgusiNgusiNgusi!!!"
+
 #. 桑田クン、キミの工具セットを見せてもらえないかな？
 #. もし、ボクの考えが合っているなら…
 msgctxt "0013 | MAKOTO NAEGI"
@@ -99,8 +114,9 @@ msgid ""
 "Leon, would you mind showing us your toolkit? If I'm\n"
 "right about this, then..."
 msgstr ""
-"Leon, cậu có phiền cho tụi tớ xem bộ dụng cụ của cậu không? Nếu\n"
-"tớ đoán đúng thì..."
+"Leon, cậu có phiền cho tụi tớ xem bộ dụng cụ của cậu \n"
+"không? Nếu tớ đoán đúng thì..."
+
 #. その工具セットのドライバーには、
 #. “使用された痕跡”が残ってるはずなんだ！
 msgctxt "0014 | MAKOTO NAEGI"
@@ -110,10 +126,12 @@ msgid ""
 msgstr ""
 "...chiếc tua vít đó sẽ để lại dấu vết đã từng được\n"
 "sử dụng!"
+
 #. アホアホ……あぁ？
 msgctxt "0015 | LEON KUWATA"
 msgid "Stupidstupidstu...uh, huh?"
-msgstr "Ngungungu... hở, cái gì?"
+msgstr "Ngusingusingu... hở, cái gì?"
+
 #. もし、別の用途で使ったと言うなら、
 #. どこで、どんな使い方をしたのか説明してもらおう…
 msgctxt "0016 | BYAKUYA TOGAMI"
@@ -123,34 +141,44 @@ msgid ""
 msgstr ""
 "Và nếu ngươi nói rằng mình dùng nó cho việc khác, ngươi\n"
 "sẽ phải giải thích rõ ràng là khi nào, ở đâu và tại sao..."
+
 #. 先に言っておくけど…
 msgctxt "0017 | KYOUKO KIRIGIRI"
 msgid "And let me say this right now..."
-msgstr "Và tớ cũng xin nói luôn điều này..."
+msgstr "Và tôi cũng xin nói luôn điều này..."
+
 #. …なくした、なんて言い訳はなしよ。
 msgctxt "0018 | KYOUKO KIRIGIRI"
 msgid "\"I lost it\" isn't an excuse at this point."
-msgstr "\"Tớ làm mất rồi\" không phải là một lời bào chữa thỏa đáng vào lúc này đâu."
+msgstr ""
+"\"Tui làm mất rồi\" không phải là một lời bào chữa thỏa đáng \n"
+"vào lúc này đâu."
+
 #. ア…ホ……アァ…………
 msgctxt "0019 | LEON KUWATA"
 msgid "Stu...pid. Stu..."
-msgstr "Ngu... ngốc. Ngu..."
+msgstr "Ngu... si. Ngu..."
+
 #. ……アポ？
 msgctxt "0020 | LEON KUWATA"
 msgid "...pid?"
-msgstr "...ngốc?"
+msgstr "...si?"
+
 #. どうやら、反論は出来ないようだな…
 msgctxt "0021 | BYAKUYA TOGAMI"
 msgid "So, you have no rebuttal?"
 msgstr "Có vẻ như ngươi không còn gì để phản bác nữa nhỉ?"
+
 #. これで終わり…のようですわね。
 msgctxt "0022 | CELES"
 msgid "Then it would seem...we are finished here."
 msgstr "Vậy thì có vẻ như... chúng ta xong việc ở đây rồi."
+
 #. うぷぷぷ…
 msgctxt "0023 | MONOKUMA"
 msgid "Puhuhuhu..."
 msgstr "U pư pư pư..."
+
 #. 議論の結論が出たみたいですね。
 #. では、そろそろ投票タイムといきましょうか！
 msgctxt "0024 | MONOKUMA"
@@ -160,6 +188,7 @@ msgid ""
 msgstr ""
 "Có vẻ như các em đã đưa ra được phán quyết rồi nhỉ. Vậy thì\n"
 "đã đến lúc bắt đầu thời gian bỏ phiếu rồi đây!"
+
 #. オマエラ、お手元のスイッチで投票してくださーい！
 msgctxt "0025 | MONOKUMA"
 msgid ""
@@ -168,10 +197,12 @@ msgid ""
 msgstr ""
 "Mọi người hãy dùng chiếc cần gạt trước mặt để thực hiện\n"
 "lựa chọn của mình nhé!"
+
 #. あ、念の為に言っておくけど…
 msgctxt "0026 | MONOKUMA"
 msgid "Oh, just to remind you all..."
 msgstr "Ồ, ta chỉ nhắc nhở một chút thôi..."
+
 #. 必ず、誰かに投票するようにしてくださいねっ！！
 #. こんなつまらない事で、罰を受けたくないでしょ？
 msgctxt "0027 | MONOKUMA"
@@ -179,8 +210,9 @@ msgid ""
 "Make triple sure you vote for someone! You wouldn't\n"
 "want to be punished for something so minor, right?"
 msgstr ""
-"Nhớ kỹ là phải bỏ phiếu cho một ai đó đấy! Các em đâu muốn\n"
-"bị phạt chỉ vì một lý do vớ vẩn như vậy, đúng không?"
+"Nhớ kỹ là phải bỏ phiếu cho một ai đó đấy! Các em đâu \n"
+"muốn bị phạt chỉ vì một lý do vớ vẩn như vậy, đúng không?"
+
 #. ………………
 msgctxt "0028 | KYOUKO KIRIGIRI"
 msgid "..."
@@ -190,6 +222,7 @@ msgstr "..."
 msgctxt "0029 | MONOKUMA"
 msgid "Okay! Then let's get excited!"
 msgstr "Được rồi! Vậy thì hãy thật hào hứng lên nào!!"
+
 #. 投票の結果、クロとなるのは誰か！？
 #. その答えは…正解なのか不正解なのかーーッ！？
 msgctxt "0030 | MONOKUMA"
@@ -197,9 +230,10 @@ msgid ""
 "Who will be chosen as the blackened? Will you make the\n"
 "right choice, or the dreadfully wrong one?"
 msgstr ""
-"Kết quả bỏ phiếu, ai sẽ là kẻ thủ ác đây!? Liệu đó là lựa\n"
-"chọn chính xác hay là một sai lầm khủng khiếp đây!?"
+"Kết quả bỏ phiếu, ai sẽ là kẻ thủ ác!? Liệu đó là lựa chọn \n"
+"chính xác hay là một sai lầm khủng khiếp đây!?"
+
 #. さぁ、どうなんでしょーーッ！？
 msgctxt "0031 | MONOKUMA"
 msgid "What's it gonna be? What's it gonna beeee!?"
-msgstr "Nào, kết quả sẽ ra sao đây hả!?"
+msgstr "Nào, kết quả sẽ ra sao đây!? Sẽ ra sao đâyyy!?"

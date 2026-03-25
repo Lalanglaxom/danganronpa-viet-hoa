@@ -2,23 +2,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 6/4/2023\n"
+"POT-Creation-Date: 3/25/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 聞きたくありません
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Not at all!"
 msgstr "Không cần đâu!"
+
 #. 聞かせてください
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Absolutely!"
 msgstr "Tất nhiên rồi!"
+
 #. <CLT 23>学級裁判中、ストーリーが進むと、
 #. <CLT><CLT 3>閃きアナグラム<CLT><CLT 23>が発生する事がございます。
 #. <CLT>
@@ -29,8 +32,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Trong quá trình Lớp Xét Xử diễn ra, màn\n"
-"<CLT><CLT 3>Giải Ô Chữ<CLT><CLT 23> cuối cùng sẽ xuất hiện.\n"
+"<CLT><CLT 3>Trận Đồ Ký Tự<CLT><CLT 23> cuối cùng sẽ xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 23>ここでは、事件に関わる<CLT><CLT 3>重要なキーワード<CLT><CLT 23>を
 #. 完成させる事が、あなた様の目的でございます。
 #. <CLT>
@@ -43,6 +47,7 @@ msgstr ""
 "<CLT 23>Mục tiêu của phần này là tìm ra một <CLT><CLT 3>cụm từ quan trọng<CLT><CLT 23>\n"
 "có liên quan mật thiết đến vụ án.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>飛んでいる文字<CLT><CLT 23>や、<CLT><CLT 3>分かっている文字<CLT><CLT 23>から、
 #. キーワードを推理し…
 #. <CLT>
@@ -55,6 +60,7 @@ msgstr ""
 "<CLT 23>Bạn sẽ phải suy luận cụm từ dựa trên các <CLT><CLT 3>chữ cái\n"
 "đang bay quanh<CLT><CLT 23> và <CLT><CLT 3>những chữ cái đã biết<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>正しい順番<CLT><CLT 23>で、飛んでいる文字を
 #. 撃ち落とし、キーワードを完成なさってください。
 #. <CLT>
@@ -67,6 +73,7 @@ msgstr ""
 "<CLT 23>Hãy hoàn thành cụm từ bằng cách bắn hạ các chữ cái đang\n"
 "bay theo <CLT><CLT 3>đúng thứ tự<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>%CTRL_HANGMAN_AIM%<CLT><CLT 23>で、<CLT><CLT 3>照準<CLT><CLT 23>を動かし、
 #. <CLT><CLT 3>%CTRL_HANGMAN_SHOOT%<CLT><CLT 23>で、文字をお撃ちください。
 #. <CLT>
@@ -79,6 +86,7 @@ msgstr ""
 "<CLT 23>Sử dụng <CLT><CLT 3>%CTRL_HANGMAN_AIM%<CLT><CLT 23> để nhắm, sau đó nhấn <CLT><CLT 3>%CTRL_HANGMAN_SHOOT%<CLT><CLT 23>\n"
 "để bắn các chữ cái mong muốn.\n"
 "<CLT>"
+
 #. <CLT 23>…
 #. <CLT>
 msgctxt "0008 | NARRATION"
@@ -88,6 +96,7 @@ msgid ""
 msgstr ""
 "<CLT 23>...\n"
 "<CLT>"
+
 #. <CLT 23>間違った文字を撃ち落としてしまうと、
 #. <CLT><CLT 3>発言力ゲージにダメージ<CLT><CLT 23>を受けてしまいます。
 #. <CLT>
@@ -98,8 +107,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Nếu bạn bắn hạ sai chữ cái, bạn sẽ <CLT><CLT 3>khiến Thanh\n"
-"Phát Ngôn bị tổn hại<CLT><CLT 23>.\n"
+"Phát Ngôn bị hư tổn<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>発言力ゲージ、またはタイムが無くなると、
 #. <CLT><CLT 3>失敗<CLT><CLT 23>でございます。
 #. <CLT>
@@ -112,6 +122,7 @@ msgstr ""
 "<CLT 23>Nếu thanh này chạm mức không, hoặc nếu hết thời gian,\n"
 "bạn sẽ <CLT><CLT 3>thất bại<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -121,6 +132,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
 "<CLT>"
+
 #. <CLT 23>これから、<CLT><CLT 3>閃きアナグラム<CLT><CLT 23>が始まります。
 #. 説明をお聞きになりますか？
 #. <CLT>
@@ -130,6 +142,6 @@ msgid ""
 "you like to hear more?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Màn <CLT><CLT 3>Giải Ô Chữ<CLT><CLT 23> đầu tiên chuẩn bị bắt đầu. Bạn\n"
+"<CLT 23>Màn <CLT><CLT 3>Trận Đồ Ký Tự<CLT><CLT 23> đầu tiên chuẩn bị bắt đầu. Bạn\n"
 "có muốn nghe giải thích thêm không?\n"
 "<CLT>"

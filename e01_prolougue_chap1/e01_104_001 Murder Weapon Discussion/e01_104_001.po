@@ -2,20 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 6/4/2023\n"
+"POT-Creation-Date: 3/25/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 舞園さやかを殺した
 #. 凶器とはなんだったのだ？
 msgctxt "0001 | SAKURA OOGAMI"
 msgid "So what was used to kill her?"
 msgstr "Vậy thứ gì đã được dùng để sát hại cô ấy?"
+
 #. 舞園くんの腹部に
 #. 刺さっていた刃物…
 msgctxt "0002 | KIYOTAKA ISHIMARU"
@@ -25,6 +27,7 @@ msgid ""
 msgstr ""
 "Có một loại vật sắc nhọn nào đó\n"
 "đã bị đâm vào bụng của cậu ấy..."
+
 #. 間違いない！
 #. あれが凶器だ！
 msgctxt "0003 | KIYOTAKA ISHIMARU"
@@ -34,6 +37,7 @@ msgid ""
 msgstr ""
 "Không còn nghi ngờ gì nữa, đó chính là\n"
 "hung khí gây án!"
+
 #. 犯人が、<CLT 9>ナイフで<CLT>
 #. ぶっ刺しやがったんだな。
 msgctxt "0004 | MONDO OOWADA"
@@ -43,6 +47,7 @@ msgid ""
 msgstr ""
 "Vậy là thằng hung thủ đã dùng <CLT 9>con dao nào đó<CLT>\n"
 "mà nó có trên người..."
+
 #. クソがぁ…
 #. エゲツねぇ事しやがる…！
 msgctxt "0005 | MONDO OOWADA"

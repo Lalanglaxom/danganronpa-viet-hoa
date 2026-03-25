@@ -6,19 +6,22 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 聞きたくありません
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Not at all!"
 msgstr "Không cần đâu!"
+
 #. 聞かせてください
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Absolutely!"
 msgstr "Tất nhiên rồi!"
+
 #. <CLT 23>学級裁判では、時に、相手があなた様の意見を
 #. まったく聞き入れようとしない場面が訪れます。
 #. <CLT>
@@ -31,6 +34,7 @@ msgstr ""
 "<CLT 23>Đôi khi trong Lớp Xét Xử, đối thủ của bạn đơn giản là\n"
 "sẽ không muốn nghe bất cứ điều gì bạn nói.\n"
 "<CLT>"
+
 #. <CLT 23>その時に発生するのが、
 #. あなた様と相手との１対１の口論バトル…
 #. <CLT>
@@ -43,6 +47,7 @@ msgstr ""
 "<CLT 23>Khi điều này xảy ra, bạn sẽ tham gia vào\n"
 "một cuộc đối đầu trực diện với họ.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>マシンガントークバトル（ＭＴＢ）<CLT><CLT 23>でございます。
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -51,9 +56,10 @@ msgid ""
 "(AKA the BTB, BTW).\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Chúng tôi gọi đây là <CLT><CLT 3>Tranh Luận Tốc Độ<CLT><CLT 23>\n"
-"(Hay còn gọi là BTB).\n"
+"<CLT 23>Chúng tôi gọi đây là <CLT><CLT 3>Đấu Khẩu Súng Máy<CLT><CLT 23>\n"
+"(Hay còn gọi là MTB).\n"
 "<CLT>"
+
 #. <CLT 23>ＭＴＢでは、現れる<CLT><CLT 3>相手の発言<CLT><CLT 23>を、
 #. リズムに合わせて<CLT><CLT 3>破壊<CLT><CLT 23>していくのが目的です。
 #. <CLT>
@@ -63,9 +69,10 @@ msgid ""
 "statements<CLT><CLT 23> in time with the rhythm.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Trong màn BTB, mục tiêu của bạn là <CLT><CLT 3>phá hủy<CLT><CLT 23> những <CLT><CLT 3>phát ngôn\n"
+"<CLT 23>Trong màn MTB, mục tiêu của bạn là <CLT><CLT 3>phá hủy<CLT><CLT 23> những <CLT><CLT 3>phát ngôn\n"
 "của đối thủ<CLT><CLT 23> theo đúng nhịp điệu.\n"
 "<CLT>"
+
 #. <CLT 23>画面下を流れる<CLT><CLT 3>テンポマーカー<CLT><CLT 23>が真ん中に来た時に、
 #. タイミングを合わせて<CLT><CLT 3>ボタン<CLT><CLT 23>を押してください。
 #. <CLT>
@@ -76,8 +83,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Hãy thực hiện <CLT><CLT 3>nhấn nút<CLT><CLT 23> khớp với từng <CLT><CLT 3>Dấu Nhịp Điệu<CLT><CLT 23> khi\n"
-"chúng di chuyển trên màn hình và chạm tới điểm chính giữa.\n"
+"chúng di chuyển trên màn hình và chạm tới chính giữa.\n"
 "<CLT>"
+
 #. <CLT 23>…
 #. <CLT>
 msgctxt "0008 | NARRATION"
@@ -87,6 +95,7 @@ msgid ""
 msgstr ""
 "<CLT 23>...\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>テンポマーカー<CLT><CLT 23>が真ん中に来た時に、
 #. <CLT><CLT 3>%CTRL_BULLET_TIME_LOCK_ON%<CLT><CLT 23>で相手の発言を<CLT><CLT 3>ロックオン<CLT><CLT 23>。
 #. <CLT>
@@ -99,6 +108,7 @@ msgstr ""
 "<CLT 23>Nhấn <CLT><CLT 3>%CTRL_BULLET_TIME_LOCK_ON%<CLT><CLT 23> để <CLT><CLT 3>khóa mục tiêu<CLT><CLT 23> vào\n"
 "phát ngôn của đối thủ.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>テンポマーカー<CLT><CLT 23>が真ん中に来た時に、
 #. <CLT><CLT 3>%CTRL_BULLET_TIME_ATTACK%<CLT><CLT 23>でロックオンした発言を<CLT 3>破壊<CLT>します。
 #. <CLT>
@@ -111,6 +121,7 @@ msgstr ""
 "<CLT 23>Phá hủy phát ngôn bạn đã khóa mục tiêu bằng nút\n"
 "<CLT><CLT 3>%CTRL_BULLET_TIME_ATTACK%<CLT><CLT 23> khi <CLT><CLT 3>Dấu Nhịp Điệu<CLT><CLT 23> chạm tới chính giữa.\n"
 "<CLT>"
+
 #. <CLT 23>…
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -120,6 +131,7 @@ msgid ""
 msgstr ""
 "<CLT 23>...\n"
 "<CLT>"
+
 #. <CLT 23>これによって、相手は<CLT><CLT 3>ダメージ<CLT><CLT 23>を受けます。
 #. 破壊できなければ、あなた様が痛い思いをされるでしょう。
 #. <CLT>
@@ -130,8 +142,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Hãy dùng cách này để <CLT><CLT 3>gây sát thương<CLT><CLT 23> lên đối thủ. Nếu bạn\n"
-"không làm được... chính bạn mới là người phải chịu đau đớn.\n"
+"không làm được... thì bạn là người phải chịu đau đớn.\n"
 "<CLT>"
+
 #. <CLT 23>なお、ボタン入力を連続で成功させると<CLT><CLT 3>コンボ<CLT><CLT 23>となり、
 #. 一定回数成功すると、<CLT><CLT 3>テンポアップ<CLT><CLT 23>致します。
 #. <CLT>
@@ -142,8 +155,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Làm điều này liên tục và bạn sẽ tạo được một <CLT><CLT 3>chuỗi kết hợp<CLT><CLT 23>. Duy trì\n"
-"điều đó và bạn sẽ kích hoạt <CLT><CLT 3>Tăng Nhịp Điệu<CLT><CLT 23>.\n"
+"điều đó và bạn sẽ kích hoạt <CLT><CLT 3>Tempo Up<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>逆に<CLT><CLT 3>ミス<CLT><CLT 23>を連続すると、
 #. <CLT><CLT 3>テンポダウン<CLT><CLT 23>致します。
 #. <CLT>
@@ -154,8 +168,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>Ngược lại, nếu bạn liên tục <CLT><CLT 3>bỏ lỡ<CLT><CLT 23>, bạn sẽ rơi vào\n"
-"tình trạng <CLT><CLT 3>Giảm Nhịp Điệu<CLT><CLT 23>.\n"
+"tình trạng <CLT><CLT 3>Tempo Down<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>テンポが変われば、ボタンを押すタイミング
 #. が変わります。
 #. <CLT>
@@ -168,6 +183,7 @@ msgstr ""
 "<CLT 23>Khi nhịp điệu thay đổi, thời điểm để\n"
 "nhấn từng nút cũng sẽ thay đổi theo.\n"
 "<CLT>"
+
 #. <CLT 23>ご注意ください。
 #. <CLT>
 msgctxt "0016 | NARRATION"
@@ -177,6 +193,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Vì vậy hãy cẩn thận với điều đó nhé!\n"
 "<CLT>"
+
 #. <CLT 23>相手に一定のダメージを与えると、
 #. <CLT><CLT 3>ウィークポイント発言<CLT><CLT 23>を出してきます。
 #. <CLT>
@@ -189,6 +206,7 @@ msgstr ""
 "<CLT 23>Gây đủ sát thương cho đối thủ, và <CLT><CLT 3>phát ngôn chứa điểm\n"
 "yếu<CLT><CLT 23> của họ sẽ xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 23>議論と同じように、<CLT><CLT 3>言弾（コトダマ）<CLT><CLT 23>を
 #. <CLT><CLT 3>%CTRL_BULLET_TIME_ATTACK%<CLT><CLT 23>でお撃ちください。
 msgctxt "0018 | NARRATION"
@@ -197,7 +215,8 @@ msgid ""
 "it down with a <CLT><CLT 3>Truth Bullet<CLT><CLT 23>, like any other statement."
 msgstr ""
 "<CLT 23>Tại thời điểm đó, bạn có thể nhấn <CLT><CLT 3>%CTRL_BULLET_TIME_ATTACK%<CLT><CLT 23> để bắn hạ\n"
-"nó bằng một <CLT><CLT 3>Đạn Phản Hồi<CLT><CLT 23>, giống như bất kỳ phát ngôn nào khác."
+"nó bằng một <CLT><CLT 3>Đạn Sự Thật<CLT><CLT 23>, giống như bất kỳ phát ngôn nào khác."
+
 #. <CLT 23>...
 #. <CLT>
 msgctxt "0019 | NARRATION"
@@ -207,6 +226,7 @@ msgid ""
 msgstr ""
 "<CLT 23>...\n"
 "<CLT>"
+
 #. <CLT 23>一定時間内に論破なさいますと、
 #. あなた様の<CLT><CLT 3>勝利<CLT><CLT 23>でございます。
 #. <CLT>
@@ -216,9 +236,10 @@ msgid ""
 "out <CLT><CLT 3>victorious<CLT><CLT 23>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bác bỏ phát ngôn của họ đủ nhanh, và bạn sẽ giành\n"
+"<CLT 23>Bác bỏ phát biểu của họ đủ nhanh, và bạn sẽ giành\n"
 "được <CLT><CLT 3>chiến thắng<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>発言力ゲージ、またはタイムが無くなると、
 #. <CLT><CLT 3>失敗<CLT><CLT 23>でございます。
 #. <CLT>
@@ -231,6 +252,7 @@ msgstr ""
 "<CLT 23>Nhưng cũng giống như trước, nếu Thanh Phát Ngôn chạm mức\n"
 "không hoặc bạn hết thời gian, bạn sẽ <CLT><CLT 3>thất bại<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
 #. <CLT>
 msgctxt "0022 | NARRATION"
@@ -240,6 +262,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ nhé!\n"
 "<CLT>"
+
 #. <CLT 23>これから、<CLT><CLT 3>マシンガントークバトル<CLT><CLT 23>が始まります。
 #. 説明をお聞きになりますか？
 #. <CLT>
@@ -249,6 +272,6 @@ msgid ""
 "Would you like to hear more?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Màn <CLT><CLT 3>Tranh Luận Tốc Độ<CLT><CLT 23> đầu tiên chuẩn bị bắt đầu.\n"
+"<CLT 23>Màn <CLT><CLT 3>Đấu Khẩu Súng Máy<CLT><CLT 23> đầu tiên chuẩn bị bắt đầu.\n"
 "Bạn có muốn nghe giải thích thêm không?\n"
 "<CLT>"
