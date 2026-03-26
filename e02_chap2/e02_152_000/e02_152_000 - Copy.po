@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr ""
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>フィーバータイム<CLT><CLT 23>と<CLT><CLT 3>ネガティブタイム<CLT><CLT 23>
+#. について説明させて頂きます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Let's talk a little bit about <CLT><CLT 3>Fever Time<CLT><CLT 23> and <CLT><CLT 3>Nega\n"
+"Time<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>マシンガントークバトル中に、
+#. <CLT><CLT 3>%CTRL_BULLET_TIME_FEVER%<CLT><CLT 23>をお押し頂きますと…
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>During a Bullet Time Battle, if you press the \n"
+"<CLT><CLT 3>%CTRL_BULLET_TIME_FEVER%<CLT><CLT 23>...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>フィーバータイム<CLT><CLT 23>が発動し、
+#. 強制的に<CLT><CLT 3>テンポが最大<CLT><CLT 23>になります。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>...<CLT><CLT 3>Fever Time<CLT><CLT 23> will activate, and the <CLT><CLT 3>tempo will be\n"
+"forced to its max<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>フィーバータイム中は、ボタンを適当に
+#. 押して頂いてもミスになりません<CLT 23><CLT>。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>At this point, even if you push the buttons at random,\n"
+"you won't miss.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>適当に、%CTRL_BULLET_COMBO%と押して頂くだけで、
+#. 相手の口撃を破壊することが可能でございます。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>So you can push %CTRL_BULLET_COMBO% however you want to\n"
+"destroy the opponent's verbal assault.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ただし、<CLT><CLT 3>集中力ゲージが無くなるまでの間<CLT><CLT 23>です。
+#. 有利な時間を有効にお使いください。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>But this only lasts until your <CLT><CLT 3>Focus Gauge<CLT><CLT 23> runs out,\n"
+"so make the best possible use of your time.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>もちろんあなた様だけに、特別な時間があるのは
+#. 不公平ですので…
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Of course, it wouldn't be fair if only *you* got\n"
+"access to special time, right?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>相手方にも、<CLT><CLT 3>ネガティブタイム<CLT><CLT 23>と呼ばれる
+#. 時間をご用意致しました。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>So we've also prepared something called <CLT><CLT 3>Nega Time<CLT><CLT 23>\n"
+"that your opponent can use.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>マシンガントークバトル中に、
+#. 相手がネガティブタイムを発動致しますと…
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>If the opponent activates Nega Time during the Bullet\n"
+"Time Battle...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>あなた様の<CLT><CLT 3>テンポマーカーが隠れ<CLT><CLT 23>、
+#. ボタンをお押し頂くのが困難となります。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>...your <CLT><CLT 3>Tempo Marker will disappear<CLT><CLT 23>, making it quite\n"
+"a bit tougher to hit the buttons in rhythm.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>そんな時こそ、フィーバータイムを
+#. お使い頂くのが良いかと…
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>If you were to activate Fever Time at this point...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>いや、あなた様には杞憂でございますね。
+#. <CLT>
+msgctxt "0015 | NARRATION"
+msgid ""
+"<CLT 23>No, never mind. I'm sure nothing would happen. I don't\n"
+"know what I was worried about!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ちなみに…シンセツなアクション難易度ですと、
+#. 相手はネガティブタイムを使ってきません。
+#. <CLT>
+msgctxt "0016 | NARRATION"
+msgid ""
+"<CLT 23>Unsurprisingly, if your action difficulty is set to\n"
+"Gentle, the opponent won't use Nega Time.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0017 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>マシンガントークバトルに<CLT><CLT 3>新要素が追加<CLT><CLT 23>されます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0018 | NARRATION"
+msgid ""
+"<CLT 23>A <CLT><CLT 3>new element has been added<CLT><CLT 23> to Bullet Time Battles.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""

@@ -1,0 +1,27 @@
+--- Gemini Translation Raw Output for e02_000_016.po ---
+
+==================== BATCH 1 ====================
+#. はい
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT>"
+
+
+==================== FOLDER SUMMARY ====================
+Exit Area Prompt
+

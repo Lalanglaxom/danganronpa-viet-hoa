@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr ""
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr ""
+
+#. <CLT 23>今回の議論では、あなた様の発言を邪魔する、
+#. <CLT><CLT 3>雑音セリフ<CLT><CLT 23>が出現しております。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>For this debate, lines of <CLT><CLT 3>white noise<CLT><CLT 23> will appear to\n"
+"disrupt your reactions.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>言弾（コトダマ）は雑音セリフに当たると、
+#. 消えてしまうため、論破の<CLT><CLT 3>邪魔<CLT><CLT 23>になります。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Your Truth Bullets will disappear if they hit these\n"
+"lines, so think of them as <CLT><CLT 3>obstacles<CLT><CLT 23> in your debate.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>雑音セリフに邪魔されないためには…
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>But there's a way to keep this white noise from\n"
+"getting in your way.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>%CTRL_TRIAL_SHOOT_SILENT%<CLT><CLT 23>の<CLT><CLT 3>サイレンサー<CLT><CLT 23>で、
+#. 雑音セリフを打ち消す必要がございます。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>Press the <CLT><CLT 3>%CTRL_TRIAL_SHOOT_SILENT%<CLT><CLT 23> to attach the silencer, which you\n"
+"can use to shoot down the white noise.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ただし、サイレンサーを、雑音セリフではなく、
+#. <CLT><CLT 3>発言セリフ<CLT><CLT 23>に当ててしまいますと…
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>However, if you shoot an actual <CLT><CLT 3>remark<CLT><CLT 23> with your\n"
+"silencer instead of the white noise...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>タイムリミット<CLT><CLT 23>が減ってしまいます。
+#. うまく雑音セリフを狙ってくださいませ。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>...the <CLT><CLT 3>time limit<CLT><CLT 23> will decrease. So take careful aim\n"
+"when you have your silencer out.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ちなみに…“シンセツ”なアクション難易度ですと、
+#. 雑音セリフが全く出てきません。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>Oh, but if your action difficulty is set to Gentle,\n"
+"white noise won't appear at all.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>サイレンサーを使う必要はありませんので、
+#. どうぞ安心して、推理に集中してくださいませ。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>In which case, you can forget about the silencer and\n"
+"just focus on the situation in front of you!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ノンストップ議論に<CLT><CLT 3>新要素が追加<CLT><CLT 23>されます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>A <CLT><CLT 3>new element has been added<CLT><CLT 23> to Nonstop Debates.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""

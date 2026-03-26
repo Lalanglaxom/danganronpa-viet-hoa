@@ -1,0 +1,773 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. よし、次はここだ…
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgid "So, this is our next location."
+msgstr ""
+
+#. え？　このホールも事件に関係してるの？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Huh? This place is related to the investigation?"
+msgstr ""
+
+#. …自分で考えろ。
+#. それでなければ面白くないだろう？
+msgctxt "0003 | BYAKUYA TOGAMI"
+msgid ""
+"Figure it out for yourself. It's no fun if you don't,\n"
+"right?"
+msgstr ""
+
+#. ………………
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. …調べる場所くらいは、自分で考えろ。
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid ""
+"You could at least try and figure out where we should\n"
+"check without my help."
+msgstr ""
+
+#. <CLT 4>モノクマが写るモニター…
+#. なんかを気にしている場合じゃないな…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on. Now's\n"
+"no time to think about it...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>監視カメラ…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A surveillance camera...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>黒幕は、この監視カメラで見ていたはずだ。
+#. 不二咲さんが殺されたところも…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Even as Chihiro was being murdered, I bet the\n"
+"mastermind was just sitting there watching...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>黒幕はそれを知った上で…
+#. ボクらにこんな事をさせているのか…！
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>They know what's happened, and they're still forcing\n"
+"us to go through with this...!\n"
+"<CLT>"
+msgstr ""
+
+#. そっちは現場ですらないぞ…
+#. 間抜けが。
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgid "That's not even the scene of the crime. Idiot."
+msgstr ""
+
+#. もう現場は調べたはずだ。
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid ""
+"You've already spent plenty of time checking the crime\n"
+"scene."
+msgstr ""
+
+#. それに、まだここで調べるべき事が
+#. 残っているぞ。
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid "There are plenty of other things left to check here."
+msgstr ""
+
+#. 確か、この<CLT 3>カードリーダー<CLT>って、
+#. 電子生徒手帳に対応しているんだよね？
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"If I remember right, this <CLT 3>card reader<CLT> is meant to\n"
+"work with our handbooks, right?"
+msgstr ""
+
+#. 何か気になる事でもあるのか？
+#. なら、モノクマに直接聞いてみるがいい。
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid ""
+"Do you have an issue with it? If so, you should take\n"
+"it up with Monokuma."
+msgstr ""
+
+#. <CLT 4>と言い終わるや否や、
+#. 十神クンは、パンパンと手を鳴らし…
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He said that, then quickly and sharply clapped his\n"
+"hands together.\n"
+"<CLT>"
+msgstr ""
+
+#. お呼びですかッ！！
+msgctxt "0016 | MONOKUMA"
+msgid "You called for me!?"
+msgstr ""
+
+#. <CLT 4>飼い慣らされてる…？
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Has he been domesticated...?\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木から、お前に質問があるらしいぞ…
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid "It seems that Makoto has a question for you."
+msgstr ""
+
+#. はい、なぁにー？
+msgctxt "0019 | MONOKUMA"
+msgid "Sure, what's up?"
+msgstr ""
+
+#. えっと…ここのカードリーダーについて、
+#. 聞きたいんだ…
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "Umm...well, it's just about this card reader."
+msgstr ""
+
+#. そのカードリーダーは、オマエラにお配りしている
+#. 電子生徒手帳に対応しています！
+msgctxt "0021 | MONOKUMA"
+msgid ""
+"Yes, the card readers have all been designed to\n"
+"interface with each of your e-Handbooks!"
+msgstr ""
+
+#. <CLT 3>電子生徒手帳の性別<CLT>に応じた更衣室にしか、
+#. 入れないようになっているから、注意してね！
+msgctxt "0022 | MONOKUMA"
+msgid ""
+"You can only enter the locker room corresponding to\n"
+"the <CLT 3>gender listed in your individual handbook<CLT>."
+msgstr ""
+
+#. ロック解除している隙に、
+#. <CLT 3>２人同時で入るのも不可能<CLT>なんだったな？
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgid ""
+"And it's <CLT 3>impossible for two people in a row to go\n"
+"through<CLT> while the door is unlocked, correct?"
+msgstr ""
+
+#. そんなエロティックテロリストがいたら…
+msgctxt "0024 | MONOKUMA"
+msgid ""
+"If there were some sort of erotic terrorist on the\n"
+"prowl..."
+msgstr ""
+
+#. 天井のガトリングガンで、
+#. ハチの巣地獄ですわいッ！！
+msgctxt "0025 | MONOKUMA"
+msgid ""
+"The ceiling-mounted Gatling gun would initiate a Swiss\n"
+"cheese slaughter!"
+msgstr ""
+
+#. それと…電子生徒手帳を<CLT 3>他人に貸す<CLT>のも、
+#. <CLT 3>校則で禁止<CLT>されたんだったな。
+msgctxt "0026 | BYAKUYA TOGAMI"
+msgid ""
+"And the <CLT 3>school regulations<CLT> prohibit anyone from\n"
+"<CLT 3>lending someone else<CLT> their handbook, correct?"
+msgstr ""
+
+#. イエスザッツライト！
+msgctxt "0027 | MONOKUMA"
+msgid "Correctly correct!"
+msgstr ""
+
+#. <CLT 4>だとすると…
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So then...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>女子なら女子更衣室に…
+#. 男子なら男子更衣室にしか入れないって事か…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That means only girls can go in the girls locker room,\n"
+"and only boys can go in the boys locker room.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>つまり、不二咲さんの死体が、
+#. 女子更衣室で見つかったって事は…
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>In other words, Chihiro's body being found in the\n"
+"girls locker room means...\n"
+"<CLT>"
+msgstr ""
+
+#. おい苗木…透けて見えるぞ。
+msgctxt "0031 | BYAKUYA TOGAMI"
+msgid "Hey, Makoto. I can see right through you."
+msgstr ""
+
+#. 透けて…？
+msgctxt "0032 | MAKOTO NAEGI"
+msgid "See right...through me?"
+msgstr ""
+
+#. …お前はこう考えているんだろう？
+msgctxt "0033 | BYAKUYA TOGAMI"
+msgid "Allow me to tell you what you're thinking..."
+msgstr ""
+
+#. 不二咲千尋の死体が女子更衣室で見つかった以上、
+#. 犯人は女子更衣室に入ったはず…
+msgctxt "0034 | BYAKUYA TOGAMI"
+msgid ""
+"Since Chihiro was found in the girls locker room, the\n"
+"killer must have been able to get in there."
+msgstr ""
+
+#. つまり、犯人は女子の誰かなんじゃないかと…
+msgctxt "0035 | BYAKUYA TOGAMI"
+msgid ""
+"As such, the killer must be one of the girls. Did I\n"
+"get it right?"
+msgstr ""
+
+#. まったく…甘いな…
+msgctxt "0036 | BYAKUYA TOGAMI"
+msgid "Good lord you're simple."
+msgstr ""
+
+#. …違うの？
+msgctxt "0037 | MAKOTO NAEGI"
+msgid "But am I wrong?"
+msgstr ""
+
+#. もう一度、よく校則を確認してみるんだな。
+#. 追加されたルールには、こうあったはずだ。
+msgctxt "0038 | BYAKUYA TOGAMI"
+msgid ""
+"You should pay closer attention to the regulations.\n"
+"The answer has been in front of you the entire time."
+msgstr ""
+
+#. 『電子生徒手帳の他人への貸与禁止』とな…
+msgctxt "0039 | BYAKUYA TOGAMI"
+msgid ""
+"\"Loaning your e-Handbook to another student is\n"
+"strictly prohibited.\""
+msgstr ""
+
+#. 禁止されてるのは、他人に貸す行為だけだ。
+#. <CLT 3>借りる事は禁止されていない<CLT>。
+msgctxt "0040 | BYAKUYA TOGAMI"
+msgid ""
+"Only the act of *loaning* a handbook is prohibited.\n"
+"<CLT 3>Borrowing someone else's is perfectly fine<CLT>."
+msgstr ""
+
+#. にょほほほッ！　さっすが十神財閥の御曹司様ッ！！
+msgctxt "0041 | MONOKUMA"
+msgid ""
+"Nyohohoho! I would expect nothing less from the\n"
+"prodigal son of the noble Togami family!"
+msgstr ""
+
+#. 気付いちゃいましたね、この校則の<CLT 3>“抜け道”<CLT>に！！
+msgctxt "0042 | MONOKUMA"
+msgid ""
+"So you managed to sniff out the <CLT 3>loophole<CLT> in the\n"
+"regulations!"
+msgstr ""
+
+#. お前の事だ、あえて抜け道を用意したんだろう？
+#. 謎解きが少しでも面白くなるようにと…
+msgctxt "0043 | BYAKUYA TOGAMI"
+msgid ""
+"Knowing you, I would bet you created it on purpose,\n"
+"didn't you? To add a little more excitement to things."
+msgstr ""
+
+#. キャー！　この程度は朝飯前のお通し扱い！？
+#. サッスガですねぇ！
+msgctxt "0044 | MONOKUMA"
+msgid ""
+"Kyaaah! You're treating me like a puny little\n"
+"appetizer instead of the main course that I am!"
+msgstr ""
+
+#. さらに言えば、死人に口なしとあるように、
+#. 死人とは人でなく物なのですよ、もはや…！
+msgctxt "0045 | MONOKUMA"
+msgid ""
+"Now then, since the dead can't actually talk, they're\n"
+"not people anymore—they're things!"
+msgstr ""
+
+#. …アンダスタン？
+msgctxt "0046 | MONOKUMA"
+msgid "Get it? Got it? Good."
+msgstr ""
+
+#. ちょっと待ってよ、抜け道って言うけどさ…
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"Wait, hold on... You're saying that's a loophole,\n"
+"but..."
+msgstr ""
+
+#. 他人から借りるって事は…つまり誰かが貸すって事で…
+#. そうなると…えーっと……
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"In order to borrow something from someone, then...that\n"
+"means someone would have to loan it, so...uhh..."
+msgstr ""
+
+#. 眠い…
+msgctxt "0049 | MONOKUMA"
+msgid "So sleepy..."
+msgstr ""
+
+#. 眠たいヤツだよ、キミは！
+#. 十神クンを見習って、もっとシャキッとしなさいッ！！
+msgctxt "0050 | MONOKUMA"
+msgid ""
+"Just listening to you makes me wanna pass out! Be more\n"
+"like Byakuya and get your poop together!"
+msgstr ""
+
+#. そんなキミは、放置プレイの刑に処す！
+msgctxt "0051 | MONOKUMA"
+msgid "Or else I'll charge you with criminal negligence!"
+msgstr ""
+
+#. もう質問は受け付けないよ！　
+#. 自分で考えなさいッ！！
+msgctxt "0052 | MONOKUMA"
+msgid ""
+"No more questions! Figure out the rest your own damn\n"
+"self!"
+msgstr ""
+
+#. ………………
+msgctxt "0053 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. …仕方がない。出来の悪い相棒の為に、
+#. モノクマに代わって俺が教えてやろう。
+msgctxt "0054 | BYAKUYA TOGAMI"
+msgid ""
+"Well, I know you are unfortunately lacking in mental\n"
+"faculties, so I'll fill you in myself."
+msgstr ""
+
+#. 行くぞ、<CLT 3>玄関ホール<CLT>だ。
+msgctxt "0055 | BYAKUYA TOGAMI"
+msgid "Let's head to the <CLT 3>main hall<CLT>."
+msgstr ""
+
+#. …玄関ホール？
+msgctxt "0056 | MAKOTO NAEGI"
+msgid "The main hall...?"
+msgstr ""
+
+#. そこに行けばわかる。
+msgctxt "0057 | BYAKUYA TOGAMI"
+msgid "That'll help you understand what's going on."
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>カードリーダー<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0058 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Card Reader<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. 確か、この<CLT 3>カードリーダー<CLT>って、
+#. 電子生徒手帳に対応しているんだよね？
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"If I remember right, this <CLT 3>card reader<CLT> is meant to\n"
+"work with our handbooks, right?"
+msgstr ""
+
+#. 何か気になる事でもあるのか？
+#. なら、モノクマに直接聞いてみるがいい。
+msgctxt "0060 | BYAKUYA TOGAMI"
+msgid ""
+"Do you have an issue with it? If so, you should take\n"
+"it up with Monokuma."
+msgstr ""
+
+#. <CLT 4>と言い終わるや否や、
+#. 十神クンはパンパンと手を鳴らし…
+#. <CLT>
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He said that, then quickly and sharply clapped his\n"
+"hands together.\n"
+"<CLT>"
+msgstr ""
+
+#. お呼びですかッ！！
+msgctxt "0062 | MONOKUMA"
+msgid "You called for me!?"
+msgstr ""
+
+#. <CLT 4>飼い慣らされてる…？
+#. <CLT>
+msgctxt "0063 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Has he been domesticated...?\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木から、お前に質問があるらしいぞ…
+msgctxt "0064 | BYAKUYA TOGAMI"
+msgid "It seems that Makoto has a question for you."
+msgstr ""
+
+#. はい、なぁにー？
+msgctxt "0065 | MONOKUMA"
+msgid "Sure, what's up?"
+msgstr ""
+
+#. えっと…ここのカードリーダーについて
+#. 聞きたいんだ…
+msgctxt "0066 | MAKOTO NAEGI"
+msgid "Umm...well, it's just about this card reader."
+msgstr ""
+
+#. そのカードリーダーは、オマエラにお配りしている
+#. 電子生徒手帳に対応しています！
+msgctxt "0067 | MONOKUMA"
+msgid ""
+"Yes, the card readers have all been designed to\n"
+"interface with each of your e-Handbooks!"
+msgstr ""
+
+#. <CLT 3>電子生徒手帳の性別<CLT>に対応した更衣室にしか
+#. 入れないから、注意してね！
+msgctxt "0068 | MONOKUMA"
+msgid ""
+"You can only enter the locker room corresponding to\n"
+"the <CLT 3>gender listed in your individual handbook<CLT>."
+msgstr ""
+
+#. ロック解除している隙に、
+#. <CLT 3>２人同時で入るのも不可能<CLT>なんだったな？
+msgctxt "0069 | BYAKUYA TOGAMI"
+msgid ""
+"And it's <CLT 3>impossible for two people in a row to go\n"
+"through<CLT> while the door is unlocked, correct?"
+msgstr ""
+
+#. そんなエロティックテロリストがいたら…
+msgctxt "0070 | MONOKUMA"
+msgid ""
+"If there were some sort of erotic terrorist on the\n"
+"prowl..."
+msgstr ""
+
+#. 天井のガトリングガンでハチの巣地獄ですわッ！！
+msgctxt "0071 | MONOKUMA"
+msgid ""
+"The ceiling-mounted Gatling gun would initiate a Swiss\n"
+"cheese slaughter!"
+msgstr ""
+
+#. それと…電子生徒手帳を<CLT 3>他人に貸す<CLT>のも、
+#. <CLT 3>校則で禁止<CLT>だったな…
+msgctxt "0072 | BYAKUYA TOGAMI"
+msgid ""
+"And the <CLT 3>school regulations<CLT> prohibit anyone from\n"
+"<CLT 3>lending someone else<CLT> their handbook, correct?"
+msgstr ""
+
+#. イエスザッツライト！
+msgctxt "0073 | MONOKUMA"
+msgid "Correctly correct!"
+msgstr ""
+
+#. <CLT 4>だとすると…
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So then...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>女子なら女子更衣室に…
+#. 男子なら男子更衣室にしか入れないって事か…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That means only girls can go in the girls locker room,\n"
+"and only boys can go in the boys locker room.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>つまり、不二咲さんの死体が
+#. 女子更衣室で見つかったって事は…
+#. <CLT>
+msgctxt "0076 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>In other words, Chihiro's body being found in the\n"
+"girls locker room means...\n"
+"<CLT>"
+msgstr ""
+
+#. おい苗木…透けて見えるぞ。
+msgctxt "0077 | BYAKUYA TOGAMI"
+msgid "Hey, Makoto. I can see right through you."
+msgstr ""
+
+#. 透けて…？
+msgctxt "0078 | MAKOTO NAEGI"
+msgid "See right...through me?"
+msgstr ""
+
+#. …お前はこう考えているんだろう？
+msgctxt "0079 | BYAKUYA TOGAMI"
+msgid "Allow me to tell you what you're thinking..."
+msgstr ""
+
+#. 不二咲千尋の死体が女子更衣室で見つかった以上、
+#. 犯人は、女子更衣室に入ったはず…
+msgctxt "0080 | BYAKUYA TOGAMI"
+msgid ""
+"Since Chihiro was found in the girls locker room, the\n"
+"killer must have been able to get in there."
+msgstr ""
+
+#. だから、犯人は女子の誰かなんじゃないかと…
+msgctxt "0081 | BYAKUYA TOGAMI"
+msgid ""
+"As such, the killer must be one of the girls. Did I\n"
+"get it right?"
+msgstr ""
+
+#. まったく…甘いな…
+msgctxt "0082 | BYAKUYA TOGAMI"
+msgid "Good lord you're simple."
+msgstr ""
+
+#. …違うの？
+msgctxt "0083 | MAKOTO NAEGI"
+msgid "But am I wrong?"
+msgstr ""
+
+#. もう一度、よく校則を確認してみるんだな。
+#. 追加されたルールには、こうあったはずだ。
+msgctxt "0084 | BYAKUYA TOGAMI"
+msgid ""
+"You should pay closer attention to the regulations.\n"
+"The answer has been in front of you the entire time."
+msgstr ""
+
+#. 『電子生徒手帳の他人への貸与禁止』とな…
+msgctxt "0085 | BYAKUYA TOGAMI"
+msgid ""
+"\"Loaning your e-Handbook to another student is\n"
+"strictly prohibited.\""
+msgstr ""
+
+#. 禁止されてるのは、他人に貸す行為だけだ。
+#. <CLT 3>借りる事は禁止されていない<CLT>。
+msgctxt "0086 | BYAKUYA TOGAMI"
+msgid ""
+"Only the act of *loaning* a handbook is prohibited.\n"
+"<CLT 3>Borrowing someone else's is perfectly fine<CLT>."
+msgstr ""
+
+#. にょほほほッ！　さっすが十神財閥の御曹司様ッ！！
+msgctxt "0087 | MONOKUMA"
+msgid ""
+"Nyohohoho! I would expect nothing less from the\n"
+"prodigal son of the noble Togami family!"
+msgstr ""
+
+#. 気付いちゃいましたね、この校則の<CLT 3>“抜け道”<CLT>に！！
+msgctxt "0088 | MONOKUMA"
+msgid ""
+"So you managed to sniff out the <CLT 3>loophole<CLT> in the\n"
+"regulations!"
+msgstr ""
+
+#. お前の事だ、あえて抜け道を用意したんだろう？
+#. 謎解きが少しでも面白くなるようにと…
+msgctxt "0089 | BYAKUYA TOGAMI"
+msgid ""
+"Knowing you, I would bet you created it on purpose,\n"
+"didn't you? To add a little more excitement to things."
+msgstr ""
+
+#. キャー！　この程度は朝飯前のお通し扱い！？
+#. サッスガですねぇ！
+msgctxt "0090 | MONOKUMA"
+msgid ""
+"Kyaaah! You're treating me like a puny little\n"
+"appetizer instead of the main course that I am!"
+msgstr ""
+
+#. さらに言えば、死人に口なしとあるように、
+#. 死人とは人でなく物なのですよ…もはや…！
+msgctxt "0091 | MONOKUMA"
+msgid ""
+"Now then, since the dead can't actually talk, they're\n"
+"not people anymore—they're things!"
+msgstr ""
+
+#. …アンダスタン？
+msgctxt "0092 | MONOKUMA"
+msgid "Get it? Got it? Good."
+msgstr ""
+
+#. ちょっと待ってよ、抜け道って言うけどさ…
+msgctxt "0093 | MAKOTO NAEGI"
+msgid ""
+"Wait, hold on... You're saying that's a loophole,\n"
+"but..."
+msgstr ""
+
+#. 他人から借りるって事は…つまり誰かが貸すって事で…
+#. そうなると…えーっと……
+msgctxt "0094 | MAKOTO NAEGI"
+msgid ""
+"In order to borrow something from someone, then...that\n"
+"means someone would have to loan it, so...uhh..."
+msgstr ""
+
+#. 眠い…！
+msgctxt "0095 | MONOKUMA"
+msgid "So sleepy..."
+msgstr ""
+
+#. 眠たいヤツだよ、キミは！！
+#. 十神クンを見習って、もっとシャキッとしなさいッ！！
+msgctxt "0096 | MONOKUMA"
+msgid ""
+"Just listening to you makes me wanna pass out! Be more\n"
+"like Byakuya and get your poop together!"
+msgstr ""
+
+#. そんなオマエは放置プレイの刑に処す！
+msgctxt "0097 | MONOKUMA"
+msgid "Or else I'll charge you with criminal negligence!"
+msgstr ""
+
+#. もう質問は受け付けないよ！
+#. 自分で考えなさいッ！！
+msgctxt "0098 | MONOKUMA"
+msgid ""
+"No more questions! Figure out the rest your own damn\n"
+"self!"
+msgstr ""
+
+#. ………………
+msgctxt "0099 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. …仕方がない。出来の悪い相棒の為に、
+#. モノクマに代わって俺が教えてやろう。
+msgctxt "0100 | BYAKUYA TOGAMI"
+msgid ""
+"Well, I know you are unfortunately lacking in mental\n"
+"faculties, so I'll fill you in myself."
+msgstr ""
+
+#. 行くぞ、<CLT 3>玄関ホール<CLT>だ。
+msgctxt "0101 | BYAKUYA TOGAMI"
+msgid "Let's head to the <CLT 3>main hall<CLT>."
+msgstr ""
+
+#. …玄関ホール？
+msgctxt "0102 | MAKOTO NAEGI"
+msgid "The main hall...?"
+msgstr ""
+
+#. そこに行けばわかる。
+msgctxt "0103 | BYAKUYA TOGAMI"
+msgid "That'll help you understand what's going on."
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>カードリーダー<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0104 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Card Reader<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>不二咲さんはこの銃で…
+#. …な訳ないよな。これが凶器ならハチの巣だ。
+#. <CLT>
+msgctxt "0105 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Maybe this gun was used to... No, impossible. If that\n"
+"were true, Chihiro would be riddled with holes.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>この棚には…水泳用の色々な用具が並んでいる…
+#. 不二咲さんの事件とは関係なさそうだ…
+#. <CLT>
+msgctxt "0106 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There are a bunch of different pool-related items on\n"
+"the shelf. Which have nothing to do with the case...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>浮き輪がある…
+#. 不二咲さんの事件とは明らかに関係なさそうだ…
+#. <CLT>
+msgctxt "0107 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A flotation donut... I don't think it's related to\n"
+"what happened to Chihiro.\n"
+"<CLT>"
+msgstr ""
+
+#. 待て…まだ調べるべき事があるだろう。
+msgctxt "0108 | BYAKUYA TOGAMI"
+msgid "Hold on. We still have more to check here."
+msgstr ""

@@ -1,0 +1,1613 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. あらら…今回も大正解でしたっ！！
+msgctxt "0001 | MONOKUMA"
+msgid ""
+"Uh-oh... This time it looks like...you got it right\n"
+"again!"
+msgstr ""
+
+#. そうなのです…
+#. 不二咲千尋クンを殺したクロは…
+msgctxt "0002 | MONOKUMA"
+msgid ""
+"Yes, it is so. The blackened that killed Chihiro\n"
+"Fujisaki was..."
+msgstr ""
+
+#. …大和田紋土クンなのでしたー！！
+msgctxt "0003 | MONOKUMA"
+msgid "...Mondo Owaaadaaaa!"
+msgstr ""
+
+#. ………………
+msgctxt "0004 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. ちなみに、投票は満場一致ではありませんでした。
+#. 石丸クンだけが不正解でした！
+msgctxt "0005 | MONOKUMA"
+msgid ""
+"In case you're wondering, the vote was NOT unanimous.\n"
+"Kiyotaka chose the wrooong answer!"
+msgstr ""
+
+#. 石丸クン、危ないところでしたね！
+#. 気を付けてくださいよッ！！
+msgctxt "0006 | MONOKUMA"
+msgid ""
+"You're treading very close to the danger zone, Mr.\n"
+"Ishimaru! You need to be more careful!"
+msgstr ""
+
+#. ぼ、僕は信じないぞ…
+msgctxt "0007 | KIYOTAKA ISHIMARU"
+msgid "I-I refuse to believe it..."
+msgstr ""
+
+#. 兄弟が…人を殺すはずが……
+msgctxt "0008 | KIYOTAKA ISHIMARU"
+msgid "There's no way...no way he would kill someone!"
+msgstr ""
+
+#. すまねぇ…
+msgctxt "0009 | MONDO OOWADA"
+msgid "Sorry..."
+msgstr ""
+
+#. な、なぜ謝るッ！！
+msgctxt "0010 | KIYOTAKA ISHIMARU"
+msgid "Wh-Why are you apologizing!?"
+msgstr ""
+
+#. なぜだ！　なぜだ！　なぜだ！　なぜだ！　なぜだ！
+#. なぜなんだ！
+msgctxt "0011 | KIYOTAKA ISHIMARU"
+msgid "Why!? Why why why why why!? WHYYY!?"
+msgstr ""
+
+#. な…ぜ……
+msgctxt "0012 | KIYOTAKA ISHIMARU"
+msgid "Wh...why?"
+msgstr ""
+
+#. なぜ、そんな事をしたんだッ！！
+msgctxt "0013 | KIYOTAKA ISHIMARU"
+msgid "Why did you do it!?"
+msgstr ""
+
+#. ………………
+msgctxt "0014 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. では、黙秘権を発動した大和田クンに代わり、
+#. ボクが説明しましょう…
+msgctxt "0015 | MONOKUMA"
+msgid ""
+"Well, it looks like Mondo's taken a vow of silence, so\n"
+"allow me to explain on his behalf..."
+msgstr ""
+
+#. 今回の殺人が起きた理由…
+#. そこには、２人の男の悲しい物語があったのです。
+msgctxt "0016 | MONOKUMA"
+msgid ""
+"The story of the murder this time...is the sad story\n"
+"of two men."
+msgstr ""
+
+#. あっ、聞きたくない人は、
+#. %CTRL_MESS_FAST_FORWARD%で読み進めちゃってくださいね。
+msgctxt "0017 | MONOKUMA"
+msgid ""
+"Oh, but for anyone who doesn't really wanna hear it,\n"
+"you can hit the %CTRL_MESS_FAST_FORWARD% to fast-forward the text!"
+msgstr ""
+
+#. ある少年がいました…
+msgctxt "0018 | MONOKUMA"
+msgid "Anyway, there was once a young boy..."
+msgstr ""
+
+#. 少年の名は、不二咲千尋…
+msgctxt "0019 | MONOKUMA"
+msgid "And his name was Chihiro Fujisaki."
+msgstr ""
+
+#. 彼は、自分の<CLT 3>“弱さ”<CLT>に、
+#. 極度のコンプレックスを抱いていました。
+msgctxt "0020 | MONOKUMA"
+msgid ""
+"He had an extreme inferiority complex regarding his\n"
+"own <CLT 3>lack of strength<CLT>."
+msgstr ""
+
+#. <CLT 3>『男のクセに…』<CLT>
+msgctxt "0021 | MONOKUMA"
+msgid "\"You're so weak, <CLT 3>even though you're a boy<CLT>!\""
+msgstr ""
+
+#. 幼い頃から、そんな言葉を言われ続けた彼は、
+#. その弱さをいつまでも克服する事が出来ず…
+msgctxt "0022 | MONOKUMA"
+msgid ""
+"He'd heard things like that as long as he could\n"
+"remember, and he couldn't overcome his weakness."
+msgstr ""
+
+#. 逆に、<CLT 3>“さらなる弱さ”<CLT>の中に、
+#. 自分自身を隠してしまいました。
+msgctxt "0023 | MONOKUMA"
+msgid ""
+"On the contrary, he tried to hide and buried himself\n"
+"<CLT 3>further and further<CLT> into that weakness..."
+msgstr ""
+
+#. …女性になりきる事。
+msgctxt "0024 | MONOKUMA"
+msgid "...to take on the fragile form of a petite young girl."
+msgstr ""
+
+#. それが彼の選択した<CLT 3>“逃げ道”<CLT>だったのです。
+msgctxt "0025 | MONOKUMA"
+msgid "He had chosen that as his <CLT 3>way out<CLT>."
+msgstr ""
+
+#. これで、もう誰も…
+#. 僕の事を『男のクセに』なんて言えない…
+msgctxt "0026 | CHIHIRO FUJISAKI"
+msgid ""
+"Now nobody will be able to say anything about \"even\n"
+"though you're a boy\"..."
+msgstr ""
+
+#. しかし、いくら殻に身を包んでも…
+msgctxt "0027 | MONOKUMA"
+msgid ""
+"But no matter how tightly he wrapped himself up in\n"
+"that shell..."
+msgstr ""
+
+#. 自分の中に根付いたコンプレックスは、
+#. そう簡単には払拭されませんでした。
+msgctxt "0028 | MONOKUMA"
+msgid ""
+"...the inferiority complex had already taken root deep\n"
+"inside of him, and was not so easily weeded out."
+msgstr ""
+
+#. 殻はしょせん空…
+msgctxt "0029 | MONOKUMA"
+msgid "As it turned out, the shell was completely empty."
+msgstr ""
+
+#. 不二咲クンのコンプレックスは消えるどころか、
+#. ますます強くなる一方だったのです。
+msgctxt "0030 | MONOKUMA"
+msgid ""
+"The complex didn't disappear. Instead, it only grew\n"
+"stronger and stronger."
+msgstr ""
+
+#. ボクは…弱い…
+msgctxt "0031 | CHIHIRO FUJISAKI"
+msgid "I'm...weak..."
+msgstr ""
+
+#. 弱い弱い弱い弱い弱い弱い弱い弱い弱い弱い弱い…
+msgctxt "0032 | CHIHIRO FUJISAKI"
+msgid "Weak, weak, weak, weak, weak, weak, weak, weak...!"
+msgstr ""
+
+#. そんな折、スタートした<CLT 3>“コロシアイ学園生活”<CLT>
+#. ここで、彼は思い知る事となるのです。
+msgctxt "0033 | MONOKUMA"
+msgid ""
+"Once the <CLT 3>killing game<CLT> had begun here at the school,\n"
+"he had no choice but to accept this fact."
+msgstr ""
+
+#. しょせん、世界は弱肉強食。
+#. 強くなければ生き抜けない、と…
+msgctxt "0034 | MONOKUMA"
+msgid ""
+"After all, this world is survival of the fittest. If\n"
+"you're not strong, you don't survive."
+msgstr ""
+
+#. さらに、憎くて愛くるしいモノクマから発表された、
+#. <CLT 3>“恥ずかしい思い出”<CLT>の暴露イベント…
+msgctxt "0035 | MONOKUMA"
+msgid ""
+"And then the lovely and hateful Monokuma announced the\n"
+"revealing of the <CLT 3>embarrassing secrets<CLT>."
+msgstr ""
+
+#. その時、モノクマから暴露される予定だった、
+#. “不二咲クンの恥ずかしい思い出”とは…
+msgctxt "0036 | MONOKUMA"
+msgid ""
+"Which, of course, included Chihiro's embarrassing\n"
+"secret, which I was more than willing to divulge..."
+msgstr ""
+
+#. <CLT 3>『男のクセに女の恰好をしている』<CLT>
+msgctxt "0037 | NARRATION"
+msgid ""
+"\"<CLT 3>Even though he dresses like a girl, Chihiro is\n"
+"actually a boy<CLT>.\""
+msgstr ""
+
+#. それは不二咲クンにとって、
+#. 絶対に、他人に知られてはならない秘密でした…
+msgctxt "0038 | MONOKUMA"
+msgid ""
+"And that was something Chihiro couldn't let anyone\n"
+"find out, no matter the cost."
+msgstr ""
+
+#. それを知られたら最後…
+#. 自分を守る殻、いやさ鎧は引っぺがされ…
+msgctxt "0039 | MONOKUMA"
+msgid ""
+"If that was revealed, it would be the end. The\n"
+"hardened shell would crack, the armor would fall away."
+msgstr ""
+
+#. 彼は今まで以上に、
+#. 周りのみんなから責め立てられるに違いありません。
+msgctxt "0040 | MONOKUMA"
+msgid ""
+"Without a doubt, those around him would torture him\n"
+"more than ever before."
+msgstr ""
+
+#. こんな窮地に立たせられ、
+#. 彼は激しく絶望するはず…誰もがそう思いました。
+msgctxt "0041 | MONOKUMA"
+msgid ""
+"Everyone figured being thrust into such a dilemma must\n"
+"have sent him spiraling into despair."
+msgstr ""
+
+#. ですが…ッ！！
+msgctxt "0042 | MONOKUMA"
+msgid "And yet...!"
+msgstr ""
+
+#. あの…ごめんなさい…今は話したくない…
+#. で、でも…
+msgctxt "0043 | CHIHIRO FUJISAKI"
+msgid ""
+"Um...s-sorry, I don't really want to talk about it\n"
+"right now."
+msgstr ""
+
+#. …このままじゃダメだと思うから、
+#. 後できっと話すよ…
+msgctxt "0044 | CHIHIRO FUJISAKI"
+msgid ""
+"But I also don't want to leave things the way they\n"
+"are. So maybe I can talk about it later..."
+msgstr ""
+
+#. 頑張って…強くなって…
+#. みんなには話すから……
+msgctxt "0045 | CHIHIRO FUJISAKI"
+msgid ""
+"After I try my best...to become strong... Then I can\n"
+"tell everyone."
+msgstr ""
+
+#. ウザい事に、彼は秘密が暴かれるのをきっかけとし、
+#. 強くなろうと決心しやがったのです！
+msgctxt "0046 | MONOKUMA"
+msgid ""
+"Annoyingly, he used the threat of discovery to\n"
+"motivate himself to become stronger!"
+msgstr ""
+
+#. 今こそ…今だからこそ…
+msgctxt "0047 | CHIHIRO FUJISAKI"
+msgid "Now's my chance..."
+msgstr ""
+
+#. 強くなって…本当の自分になるんだ…
+msgctxt "0048 | CHIHIRO FUJISAKI"
+msgid "I'm going to get stronger...and accept who I am..."
+msgstr ""
+
+#. 男のクセになんて言われても平気なくらい…
+#. 強く変わるんだッ！！
+msgctxt "0049 | CHIHIRO FUJISAKI"
+msgid ""
+"Strong enough so that when someone says \"even though\n"
+"you're a boy\" I'll be okay. I'll get better!"
+msgstr ""
+
+#. そう思い立った彼は、
+#. すぐに行動に移る事にしました。
+msgctxt "0050 | MONOKUMA"
+msgid ""
+"With that thought at the front of his mind, he\n"
+"resolved to take immediate action."
+msgstr ""
+
+#. そして…
+msgctxt "0051 | MONOKUMA"
+msgid "And so..."
+msgstr ""
+
+#. その日から、トレーニングを始めようとしたのです。
+#. 心と体をイチから鍛え直す為に…
+msgctxt "0052 | MONOKUMA"
+msgid ""
+"That day, he made the commitment to begin exercising.\n"
+"He was prepared to retrain his mind and body."
+msgstr ""
+
+#. ですが、悲しい事に…
+msgctxt "0053 | MONOKUMA"
+msgid "But sadly..."
+msgstr ""
+
+#. それが、最初で最後の
+#. トレーニングとなってしまったのです！
+msgctxt "0054 | MONOKUMA"
+msgid ""
+"That would be the first and only chance he would get\n"
+"at it!"
+msgstr ""
+
+#. 不二咲クンはトレーニングを開始するにあたり、
+#. 誰かに、協力をお願いしようと考えていました。
+msgctxt "0055 | MONOKUMA"
+msgid ""
+"When he'd decided to start exercising, he thought it\n"
+"would be good to ask for someone's help."
+msgstr ""
+
+#. 最初に、その人物だけに秘密を話し、
+#. 一緒にトレーニングしてもらおうと考えたのです。
+msgctxt "0056 | MONOKUMA"
+msgid ""
+"But he wanted to tell that person his secret first,\n"
+"and then ask them to help him from there."
+msgstr ""
+
+#. そこで、彼が選んだのが…
+msgctxt "0057 | MONOKUMA"
+msgid "And the person he went to..."
+msgstr ""
+
+#. オレって事だろ…！
+msgctxt "0058 | MONDO OOWADA"
+msgid "It was me...!"
+msgstr ""
+
+#. ハイ、そうですね。
+msgctxt "0059 | MONOKUMA"
+msgid "Yup, it sure was!"
+msgstr ""
+
+#. <CLT 3>『男の約束』<CLT>に、こだわる暴走族ヤローになら…
+msgctxt "0060 | MONOKUMA"
+msgid ""
+"The biker gang fella had been painfully clear about\n"
+"how important his <CLT 3>manly promises<CLT> were."
+msgstr ""
+
+#. 最初に秘密を打ち明けても、
+#. その約束を守ってくれると思ったのでしょう。
+msgctxt "0061 | MONOKUMA"
+msgid ""
+"So Chihiro probably figured that even if he confided\n"
+"in Mondo, his honor would make him keep the secret."
+msgstr ""
+
+#. ………………
+msgctxt "0062 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. それに…男臭い大和田クンは、
+#. 不二咲クンが憧れる<CLT 3>“強い男”<CLT>の象徴でもあります。
+msgctxt "0063 | MONOKUMA"
+msgid ""
+"Plus, Mr. Macho Mondo was the very symbol of a <CLT 3>strong\n"
+"man<CLT> that Chihiro had always aspired to."
+msgstr ""
+
+#. 勇気を振り絞って…
+#. まずは大和田クンに話してみよう。
+msgctxt "0064 | CHIHIRO FUJISAKI"
+msgid ""
+"Maybe talking to Mondo about it will help give me some\n"
+"courage..."
+msgstr ""
+
+#. それで…強くなる為の手助けをしてって、
+#. お願いするんだ！
+msgctxt "0065 | CHIHIRO FUJISAKI"
+msgid "So he went and asked Mondo to help him become strong!"
+msgstr ""
+
+#. それは“憧れ”…
+msgctxt "0066 | MONOKUMA"
+msgid "That was his aspiration..."
+msgstr ""
+
+#. 不二咲クンは、決して届かない存在だからこそ、
+#. その想いを大和田クンに抱いたのです…
+msgctxt "0067 | MONOKUMA"
+msgid ""
+"And he thought that only with Mondo's support would\n"
+"he ever be able to come close to that."
+msgstr ""
+
+#. じゃあ、大和田君はその約束を守る為に、
+#. <CLT 3>“あんな事”<CLT>をしたのね？
+msgctxt "0068 | KYOUKO KIRIGIRI"
+msgid ""
+"So then, that must be why Mondo <CLT 3>did what he did<CLT>—to\n"
+"keep the promise he'd made to Chihiro."
+msgstr ""
+
+#. …あんな事？
+msgctxt "0069 | MAKOTO NAEGI"
+msgid "Huh? Did what he did?"
+msgstr ""
+
+#. それって…死体を男子更衣室から
+#. 女子更衣室に運んだ理由の事？
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"You mean...? That's why Mondo carried Chihiro from the\n"
+"boys locker room into the girls locker room?"
+msgstr ""
+
+#. …えぇ、その通りよ。
+msgctxt "0071 | KYOUKO KIRIGIRI"
+msgid "Yes, that's exactly what I mean."
+msgstr ""
+
+#. それは…事件を偽装する為だったはずじゃ…
+msgctxt "0072 | HIFUMI YAMADA"
+msgid "Wasn't that to cover up what he'd done?"
+msgstr ""
+
+#. それもあったかもしれない…
+#. でも、それだけじゃなかったはずよ。
+msgctxt "0073 | KYOUKO KIRIGIRI"
+msgid ""
+"That could have been part of it, but I don't think it\n"
+"was the main reason."
+msgstr ""
+
+#. 不二咲千尋との<CLT 3>『男同士の約束を守る』<CLT>という目的も
+#. 含まれていたはずだわ。
+msgctxt "0074 | KYOUKO KIRIGIRI"
+msgid ""
+"The real purpose was to keep the <CLT 3>promise between men<CLT>\n"
+"he'd made to Chihiro."
+msgstr ""
+
+#. 死体を移動させる事が、
+#. どうして秘密を守る事になるの？
+msgctxt "0075 | AOI ASAHINA"
+msgid "But...how does moving the body keep his secret?"
+msgstr ""
+
+#. だって、不二咲千尋が、
+#. 男子更衣室で殺されたとなれば…
+msgctxt "0076 | KYOUKO KIRIGIRI"
+msgid ""
+"Because if everyone knew he'd been killed in the boys\n"
+"locker room..."
+msgstr ""
+
+#. 『どうやって男子更衣室に入ったのか？』
+#. という議論になってしまうでしょ？
+msgctxt "0077 | KYOUKO KIRIGIRI"
+msgid ""
+"...then everyone would have been arguing about how\n"
+"\"she\" got into the *boys* locker room, right?"
+msgstr ""
+
+#. そうなってしまえば、彼の正体を疑う者も出てくるわ。
+#. だからこそ…
+msgctxt "0078 | KYOUKO KIRIGIRI"
+msgid ""
+"Once that started up, at least a few of us would have\n"
+"immediately begun to suspect his identity. So..."
+msgstr ""
+
+#. 死体を女子更衣室に移し、彼の生徒手帳を盗む事で、
+#. その正体がバレないようにしたんじゃないの？
+msgctxt "0079 | KYOUKO KIRIGIRI"
+msgid ""
+"He tried to protect Chihiro's secret by putting him in\n"
+"the girls locker room and stealing his handbook. See?"
+msgstr ""
+
+#. じゃあ、大和田クンは…
+#. 自分が殺した不二咲さんとの約束を守る為に…？
+msgctxt "0080 | MAKOTO NAEGI"
+msgid ""
+"Then...Mondo did all that to keep the promise he'd\n"
+"made to Chihiro...who he'd also killed?"
+msgstr ""
+
+#. ………………
+msgctxt "0081 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. どう…して……なんだ？
+msgctxt "0082 | KIYOTAKA ISHIMARU"
+msgid "Why...would he...do that?"
+msgstr ""
+
+#. 話を聞けば聞くほどわからないッ！！
+#. 君らは、互いに信頼し合っていたようではないかッ！？
+msgctxt "0083 | KIYOTAKA ISHIMARU"
+msgid ""
+"The more I hear you talk, the more I don't understand!\n"
+"I mean, you guys trusted each other, right!?"
+msgstr ""
+
+#. それなのに…どうしてなんだ…？
+msgctxt "0084 | KIYOTAKA ISHIMARU"
+msgid "So why? Why did you...?"
+msgstr ""
+
+#. ………………
+msgctxt "0085 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. バラされたくなかったんだ…
+#. どうしても…
+msgctxt "0086 | MONDO OOWADA"
+msgid ""
+"Because...no matter what, I didn't want anyone to\n"
+"know..."
+msgstr ""
+
+#. やっぱり、あの件が引き金になったのね…
+msgctxt "0087 | KYOUKO KIRIGIRI"
+msgid "So that's what triggered it, after all."
+msgstr ""
+
+#. <CLT 3>“恥ずかしい思い出”<CLT>や、
+#. <CLT 3>“誰にも言えない過去”<CLT>の暴露の件…
+msgctxt "0088 | KYOUKO KIRIGIRI"
+msgid ""
+"The possibility of having your <CLT 3>embarrassing memories<CLT>\n"
+"and <CLT 3>secrets<CLT> exposed..."
+msgstr ""
+
+#. そ、そんなバカな…ッ！
+#. そんな事あるはずがない…ッ！
+msgctxt "0089 | KIYOTAKA ISHIMARU"
+msgid ""
+"Th-That's impossible! Nothing could have been that\n"
+"bad!"
+msgstr ""
+
+#. 人を殺してまで知られたくない…
+#. 思い出や過去なんて…
+msgctxt "0090 | KIYOTAKA ISHIMARU"
+msgid ""
+"Something he didn't want anyone to know, even if it\n"
+"meant killing someone...?"
+msgstr ""
+
+#. あ、あるはずがないッ！！
+msgctxt "0091 | KIYOTAKA ISHIMARU"
+msgid "It's impossible!"
+msgstr ""
+
+#. …前にも言ったはずだぞ。
+msgctxt "0092 | BYAKUYA TOGAMI"
+msgid "How many times must I repeat myself?"
+msgstr ""
+
+#. 自分を基準に物事を判断するなど、
+#. 愚の骨頂だ。
+msgctxt "0093 | BYAKUYA TOGAMI"
+msgid ""
+"To judge others by your own standard is the height of\n"
+"folly."
+msgstr ""
+
+#. お前にはなくとも、こいつにはあった…
+#. それだけの事だ。
+msgctxt "0094 | BYAKUYA TOGAMI"
+msgid ""
+"Even if you can't comprehend it, he obviously can.\n"
+"That's all there is to it."
+msgstr ""
+
+#. じゃあ、ついでに教えておいてやるね。
+msgctxt "0095 | MONOKUMA"
+msgid ""
+"Well, while we're on the subject...why don't I tell\n"
+"you?"
+msgstr ""
+
+#. 大和田クンが世間にバラされたくなかった思い出…
+#. そして過去とは…
+msgctxt "0096 | MONOKUMA"
+msgid ""
+"That embarrassing memory, that secret he didn't want\n"
+"anyone to know..."
+msgstr ""
+
+#. あのね、大和田クンはね…
+msgctxt "0097 | MONOKUMA"
+msgid "You know what Mondo did?"
+msgstr ""
+
+#. <CLT 3>“自分のお兄さんを殺した”<CLT>んだよ！！
+msgctxt "0098 | MONOKUMA"
+msgid "He <CLT 3>killed his own brother<CLT>!"
+msgstr ""
+
+#. …ッ！！
+msgctxt "0099 | MONDO OOWADA"
+msgid "Gh—!"
+msgstr ""
+
+#. 今や、<CLT 3>“超高校級の暴走族”<CLT>として、
+#. 全国の不良を震え上がらせる存在となった大和田クン…
+msgctxt "0100 | MONOKUMA"
+msgid ""
+"Mondo, the <CLT 3>Ultimate Biker Gang Leader<CLT>, makes all the\n"
+"hoodlums and riff-raff across the country tremble..."
+msgstr ""
+
+#. そんな彼が、暴走族に入ったきっかけは、
+#. <CLT 3>“ある人物”<CLT>の存在でした。
+msgctxt "0101 | MONOKUMA"
+msgid ""
+"But the only reason he had the chance to join a gang\n"
+"in the first place was because of a <CLT 3>certain someone<CLT>."
+msgstr ""
+
+#. 大和田紋土クンの兄、<CLT 3>大和田大亜<CLT>クンです…
+msgctxt "0102 | MONOKUMA"
+msgid "Mondo's older brother's name was <CLT 3>Daiya Owada<CLT>."
+msgstr ""
+
+#. 紋土クンは、お兄さんを心から尊敬していました。
+#. 彼が単車に乗るようになったのもお兄さんの影響です。
+msgctxt "0103 | MONOKUMA"
+msgid ""
+"Mondo had nothing but respect for him. It was because\n"
+"of Daiya that Mondo ever got on a motorcycle."
+msgstr ""
+
+#. 荒んだ家庭に育った紋土クンにとって、
+#. 唯一心を許し、尊敬できる相手がお兄さんでした。
+msgctxt "0104 | MONOKUMA"
+msgid ""
+"Mondo's brother was his only family growing up. He was\n"
+"the only one Mondo could trust, or respect."
+msgstr ""
+
+#. お兄さんに追いつこうと、
+#. お兄さんの真似ばかりしている…
+msgctxt "0105 | MONOKUMA"
+msgid ""
+"He wanted to measure up to his big brother, so he\n"
+"imitated him in everything he did."
+msgstr ""
+
+#. 紋土クンは、そんな弟さんでした。
+msgctxt "0106 | MONOKUMA"
+msgid "Mondo was the epitome of the starry-eyed kid brother."
+msgstr ""
+
+#. そして、カリスマ性溢れるお兄さんが作った
+#. 暴走族チームは…
+msgctxt "0107 | MONOKUMA"
+msgid ""
+"Meanwhile, the charismatic older brother had put\n"
+"together a local motorcycle gang..."
+msgstr ""
+
+#. いつしか、日本最大のチームへと発展していきました。
+msgctxt "0108 | MONOKUMA"
+msgid ""
+"...and before anyone knew it, it had grown into the\n"
+"biggest biker gang in the country."
+msgstr ""
+
+#. 兄の大和田大亜は、チームのナンバー１…
+#. 弟の大和田紋土は、ナンバー２…
+msgctxt "0109 | MONOKUMA"
+msgid ""
+"Daiya, the older brother, number one in the gang. And\n"
+"his number two, his younger brother, Mondo."
+msgstr ""
+
+#. 最初はそれでよかったのですが…
+msgctxt "0110 | MONOKUMA"
+msgid "In the beginning, everything was peaches and gravy."
+msgstr ""
+
+#. お兄さんが暴走族を引退し、
+#. 自分が２代目を引き継がなくてはならなくなった時…
+msgctxt "0111 | MONOKUMA"
+msgid ""
+"But when Mondo started to think about how he would\n"
+"have to take over the gang from his brother someday..."
+msgstr ""
+
+#. お兄さんの偉大さが大きな重圧となって、
+#. 紋土クンを襲ったのです！
+msgctxt "0112 | MONOKUMA"
+msgid ""
+"...his brother's greatness, his reputation, began to\n"
+"gnaw on Mondo's very soul!"
+msgstr ""
+
+#. <CLT 23>『弟はしょせんナンバー２だしな…』
+#. <CLT>
+msgctxt "0113 | NARRATION"
+msgid ""
+"<CLT 23>\"The kid's gonna take over for Daiya, huh?\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>『このチームは大亜が１人で作ったチームだ。
+#. 　弟の紋土はおまけだよ…』
+#. <CLT>
+msgctxt "0114 | NARRATION"
+msgid ""
+"<CLT 23>\"Daiya created this gang with his bare hands! Mondo's\n"
+"just along for the ride.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>『そんなヤツに２代目が務まんのか…？』
+#. <CLT>
+msgctxt "0115 | NARRATION"
+msgid ""
+"<CLT 23>\"Can someone like that really be our leader?\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>『この先チームは弱くなる一方だな…』
+#. <CLT>
+msgctxt "0116 | NARRATION"
+msgid ""
+"<CLT 23>\"All that'll do is make the gang look bad.\"\n"
+"<CLT>"
+msgstr ""
+
+#. チーム内で囁かれるそんな陰口が、
+#. 毎日のように、紋土クンの耳に入ってきました。
+msgctxt "0117 | MONOKUMA"
+msgid ""
+"Almost every day, Mondo heard the gossip and whispers\n"
+"of the other members of the gang."
+msgstr ""
+
+#. だからこそ…
+msgctxt "0118 | MONOKUMA"
+msgid "Which is why..."
+msgstr ""
+
+#. オレは…兄貴より強くなんなきゃなんねぇ…
+msgctxt "0119 | MONDO OOWADA"
+msgid "I gotta get stronger...stronger than Daiya."
+msgstr ""
+
+#. だから…最後に１度だけ…
+msgctxt "0120 | MONDO OOWADA"
+msgid "Once...just one time..."
+msgstr ""
+
+#. どうしても…勝つんだ…
+msgctxt "0121 | MONDO OOWADA"
+msgid "No matter what, I gotta win..."
+msgstr ""
+
+#. どうしても勝たなくちゃなんねーんだッ！！
+msgctxt "0122 | MONDO OOWADA"
+msgid "I don't care what it takes, I gotta come out on top!"
+msgstr ""
+
+#. そして、偉大なお兄さんの引退式の夜、
+#. 紋土クンは、彼に単車での勝負を挑んだのです！
+msgctxt "0123 | MONOKUMA"
+msgid ""
+"And on the night of his amazing brother's retirement\n"
+"ceremony, Mondo challenged him to a street race!"
+msgstr ""
+
+#. ですが、そのレース中に、
+#. 悲劇は起きてしまいました…
+msgctxt "0124 | MONOKUMA"
+msgid "But during the race, tragedy struck..."
+msgstr ""
+
+#. 勝利を焦った弟さんは無謀な走りをした結果、
+#. 反対車線に飛び出してしまいました…
+msgctxt "0125 | MONOKUMA"
+msgid ""
+"The kid brother pushed ahead with reckless abandon,\n"
+"eager for victory, and dashed into oncoming traffic."
+msgstr ""
+
+#. ですが、その時でした！！
+msgctxt "0126 | MONOKUMA"
+msgid "But suddenly...!"
+msgstr ""
+
+#. 弟の腕に抱かれながら…
+#. お兄さんは、最後にこう言いました。
+msgctxt "0127 | MONOKUMA"
+msgid ""
+"Laying in his kid brother's arms, the older brother\n"
+"delivered his final words..."
+msgstr ""
+
+#. わ、わりぃ…ドジっちまった…
+#. すまねぇな……
+msgctxt "0128 | DAIA OOWADA"
+msgid "M-My bad, kid... I fucked up. Sorry."
+msgstr ""
+
+#. 事故の責任は紋土クンにあるとわかっていながら、
+#. お兄さんは、弟さんを責めようとはしませんでした。
+msgctxt "0129 | MONOKUMA"
+msgid ""
+"Of course he knew it was his brother's fault, but\n"
+"Daiya never blamed him for what happened."
+msgstr ""
+
+#. おい…後は頼むぞ…
+#. ぜってーに…チームを潰すんじゃねぇぞ……
+msgctxt "0130 | DAIA OOWADA"
+msgid ""
+"Hey, kid... The rest is up to you. No matter what, you\n"
+"gotta keep the gang together."
+msgstr ""
+
+#. <CLT 3>“俺とお前”<CLT>で…作ったチーム……
+#. なんだからな…
+msgctxt "0131 | DAIA OOWADA"
+msgid "Cuz it's the team...<CLT 3>you and me<CLT> put together."
+msgstr ""
+
+#. 男の……男同士の……
+msgctxt "0132 | DAIA OOWADA"
+msgid "It's...a pr..."
+msgstr ""
+
+#. <CLT 3>約束<CLT>…だぞ……
+msgctxt "0133 | DAIA OOWADA"
+msgid "...a <CLT 3>promise...between men<CLT>..."
+msgstr ""
+
+#. チームのみんなには、
+#. 事故の原因は伏せておく事にしました。
+msgctxt "0134 | MONOKUMA"
+msgid ""
+"He decided to hide the truth of what happened from\n"
+"everyone else in the gang."
+msgstr ""
+
+#. 兄との約束を守るには…
+#. チームを分裂させない為には…
+msgctxt "0135 | MONOKUMA"
+msgid ""
+"In order to keep the gang together, and keep the\n"
+"promise to his brother..."
+msgstr ""
+
+#. 自分の<CLT 3>“弱さ”<CLT>のせいで兄が事故ったとは、
+#. 絶対に言う訳にはいかなかったのです！
+msgctxt "0136 | MONOKUMA"
+msgid ""
+"...he could never admit to anyone that it was his own\n"
+"<CLT 3>weakness<CLT> that had caused the accident!"
+msgstr ""
+
+#. その結果…
+msgctxt "0137 | MONOKUMA"
+msgid "And as a result..."
+msgstr ""
+
+#. <CLT 3>“お兄さんに勝った弟さん”<CLT>の元で、
+#. 再び、チームは１つにまとまりました。
+msgctxt "0138 | MONOKUMA"
+msgid ""
+"...the team was made even stronger, under the banner\n"
+"of <CLT 3>the kid who'd bested his big brother<CLT>."
+msgstr ""
+
+#. 『弟に負けそうになった兄が、
+#. 　無茶な走りをしたせいで自滅した…』
+msgctxt "0139 | MONOKUMA"
+msgid ""
+"\"Daiya was gonna lose to his kid brother, so he got\n"
+"stupid and got himself killed.\""
+msgstr ""
+
+#. それが、大亜クンの死の理由となりました…
+#. 紋土クンのウソが“真実”になったのです。
+msgctxt "0140 | MONOKUMA"
+msgid ""
+"That became the explanation for what happened. Mondo's\n"
+"lie became the truth."
+msgstr ""
+
+#. こうして、紋土クンは兄の死をウソで塗り固め、
+#. チームをけん引していく覚悟を決めたのです！！
+msgctxt "0141 | MONOKUMA"
+msgid ""
+"He wanted to lead the team so bad, he was willing to\n"
+"tell all kinds of lies about his brother!"
+msgstr ""
+
+#. オレは…強い…
+msgctxt "0142 | MONDO OOWADA"
+msgid "I'm...strong..."
+msgstr ""
+
+#. 強い強い強い強い強い強い強い強い強い強い強い強い…
+msgctxt "0143 | MONDO OOWADA"
+msgid "Strong, strong, strong, strong, strong, strong...!"
+msgstr ""
+
+#. ですが…
+msgctxt "0144 | MONOKUMA"
+msgid "And yet..."
+msgstr ""
+
+#. そんな折、スタートした“コロシアイ学園生活”で、
+#. 彼は思い知る事となったのです。
+msgctxt "0145 | MONOKUMA"
+msgid "As soon as our killing game began, he realized..."
+msgstr ""
+
+#. いくら強がっていても、
+#. 自分は簡単に死ぬ<CLT 3>“弱い存在”<CLT>でしかないのだと…
+msgctxt "0146 | MONOKUMA"
+msgid ""
+"...no matter how tough he pretended to be, he was just\n"
+"another <CLT 3>weakling<CLT> that could die in an instant."
+msgstr ""
+
+#. さらに、憎くて愛らしいモノクマから発表された
+#. “恥ずかしい思い出”の暴露イベント…
+msgctxt "0147 | MONOKUMA"
+msgid ""
+"And then the lovely, the hateful Monokuma announced\n"
+"the revealing of the embarrassing secrets."
+msgstr ""
+
+#. そこで、モノクマから暴露される予定だと知らされた
+#. “恥ずかしい思い出”こそが…
+msgctxt "0148 | MONOKUMA"
+msgid ""
+"At that point, it was clear I would have no problem\n"
+"shedding light on his secret..."
+msgstr ""
+
+#. <CLT 3>『大和田紋土は兄を殺した』<CLT>
+msgctxt "0149 | NARRATION"
+msgid "\"<CLT 3>Mondo killed his own older brother<CLT>.\""
+msgstr ""
+
+#. ぜ、ぜってーに…
+#. チームの連中に知られる訳には…いかなかったんだ…
+msgctxt "0150 | MONDO OOWADA"
+msgid ""
+"N-No matter what...I couldn't let the other gang\n"
+"members find out."
+msgstr ""
+
+#. …んな事になったらチームは破滅だ。
+msgctxt "0151 | MONDO OOWADA"
+msgid "If that happened, everything would have been ruined..."
+msgstr ""
+
+#. 俺と兄貴のチームが潰れちまう…
+msgctxt "0152 | MONDO OOWADA"
+msgid ""
+"Everything me and my brother had worked to\n"
+"create...woulda been destroyed..."
+msgstr ""
+
+#. 兄貴の死も…俺が１人で背負い込んだ罪悪感も…
+#. すべてが無駄になっちまう…
+msgctxt "0153 | MONDO OOWADA"
+msgid ""
+"His death...all the guilt I'd been carrying\n"
+"around...it all woulda been for nothing."
+msgstr ""
+
+#. だ、だから…
+msgctxt "0154 | MONDO OOWADA"
+msgid "So that's why..."
+msgstr ""
+
+#. だから、オレは…！！　オレは…ッ！！
+msgctxt "0155 | MONDO OOWADA"
+msgid "That's why I...I...!"
+msgstr ""
+
+#. 大和田…クン……
+msgctxt "0156 | MAKOTO NAEGI"
+msgid "Mondo..."
+msgstr ""
+
+#. モノクマの“暴露”の話を聞いた時から…
+msgctxt "0157 | MONDO OOWADA"
+msgid "After I saw what Monokuma had on me..."
+msgstr ""
+
+#. オレの頭ん中では…
+#. モヤモヤした不安が渦巻いているみてーだった…
+msgctxt "0158 | MONDO OOWADA"
+msgid ""
+"...my head filled up with a kind of fuzzy uneasiness,\n"
+"and just started swirlin' around."
+msgstr ""
+
+#. あんなの…初めてだった……
+msgctxt "0159 | MONDO OOWADA"
+msgid "I'd never felt anything like it before..."
+msgstr ""
+
+#. オレは…自分でも…
+#. どうしたらいいかわかんなくなっちまって…
+msgctxt "0160 | MONDO OOWADA"
+msgid "I...I didn't know what to do about it."
+msgstr ""
+
+#. そうこうしてる内に…
+#. そのモヤモヤした不安はいつの間にか…
+msgctxt "0161 | MONDO OOWADA"
+msgid ""
+"I wasn't sure what to think or say. But after a while,\n"
+"that fuzzy uneasiness..."
+msgstr ""
+
+#. ガッチガチでデッケェ不安に
+#. 変わってやがったんだ！
+msgctxt "0162 | MONDO OOWADA"
+msgid ""
+"...turned itself into a rock-hard lump of anxiety, way\n"
+"down in my stomach...!"
+msgstr ""
+
+#. …そん時だった。
+msgctxt "0163 | MONDO OOWADA"
+msgid "And it was right around then..."
+msgstr ""
+
+#. 不二咲からトレーニングを頼まれたのは…
+msgctxt "0164 | MONDO OOWADA"
+msgid ""
+"...that Chihiro asked me to start working out with\n"
+"him."
+msgstr ""
+
+#. そこでオレは…
+#. アイツから秘密を打ち明けられたんだ…
+msgctxt "0165 | MONDO OOWADA"
+msgid "And right there, I... He told me a secret."
+msgstr ""
+
+#. マ、マジかよ…
+msgctxt "0166 | MONDO OOWADA"
+msgid "Seriously? Jesus..."
+msgstr ""
+
+#. う、うん…騙しててごめんなさい……
+msgctxt "0167 | CHIHIRO FUJISAKI"
+msgid "Y-Yeah... I'm sorry I lied to you."
+msgstr ""
+
+#. で、でもよ…どうしてだ？
+msgctxt "0168 | MONDO OOWADA"
+msgid "But...why?"
+msgstr ""
+
+#. どうして急に…秘密を打ち明ける気になった？
+msgctxt "0169 | MONDO OOWADA"
+msgid "Why now? Why are you telling me this all of a sudden?"
+msgstr ""
+
+#. …え？
+msgctxt "0170 | CHIHIRO FUJISAKI"
+msgid "...Huh?"
+msgstr ""
+
+#. だってよ…ずっと守り通してきた秘密だろ？
+#. そいつを知られちまったら…オメェは…
+msgctxt "0171 | MONDO OOWADA"
+msgid ""
+"Cuz I mean...you've kept that secret all this time,\n"
+"right? If anyone found out...you would..."
+msgstr ""
+
+#. そ、そうだけど…でも…
+msgctxt "0172 | CHIHIRO FUJISAKI"
+msgid "Y-You're right, but..."
+msgstr ""
+
+#. …変わりたいんだ。
+msgctxt "0173 | CHIHIRO FUJISAKI"
+msgid "...I want to change."
+msgstr ""
+
+#. いつまでも“ウソに逃げている弱い自分”を
+#. 壊してさ…！
+msgctxt "0174 | CHIHIRO FUJISAKI"
+msgid ""
+"I wrapped myself in lies. I'm weak. I want to destroy\n"
+"that version of me forever!"
+msgstr ""
+
+#. <CLT 4>その言葉が…オレを刺した。
+#. <CLT>
+msgctxt "0175 | MONDO OOWADA"
+msgid ""
+"<CLT 4>His words were like a knife in my gut...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>オレがやったすべてを…否定された気がした。
+#. <CLT>
+msgctxt "0176 | MONDO OOWADA"
+msgid ""
+"<CLT 4>I felt like he was exposing the lie I'd been living\n"
+"myself.\n"
+"<CLT>"
+msgstr ""
+
+#. 変わらなきゃいけないと思うんだ。
+#. ボクは弱いから…
+msgctxt "0177 | CHIHIRO FUJISAKI"
+msgid "I have to change. I don't want to be weak anymore."
+msgstr ""
+
+#. でもさぁ、大和田クンは強いから、
+#. きっと、へっちゃらなんだよね？
+msgctxt "0178 | CHIHIRO FUJISAKI"
+msgid "You're so strong, it can't hurt you, right?"
+msgstr ""
+
+#. モノクマに、どんな秘密をバラされてもさ。
+msgctxt "0179 | CHIHIRO FUJISAKI"
+msgid "Whatever secret Monokuma might tell us..."
+msgstr ""
+
+#. ………………
+msgctxt "0180 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. だから…言えっつーのか？
+msgctxt "0181 | MONDO OOWADA"
+msgid "So, what? You're saying I should just say it?"
+msgstr ""
+
+#. 本当に強ぇーなら…秘密を言ってみろっつーのか？
+msgctxt "0182 | MONDO OOWADA"
+msgid ""
+"You're saying if I really am, I should just be able to\n"
+"tell everyone my secret?"
+msgstr ""
+
+#. え…？
+msgctxt "0183 | CHIHIRO FUJISAKI"
+msgid "Huh...?"
+msgstr ""
+
+#. <CLT 4><CLT><CLT 3>嫉妬<CLT><CLT 4>…だよ…
+#. <CLT>
+msgctxt "0184 | MONDO OOWADA"
+msgid ""
+"<CLT 4>I was...<CLT><CLT 3>jealous<CLT><CLT 4>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>オレは…不二咲の強さに嫉妬したんだ…
+#. <CLT>
+msgctxt "0185 | MONDO OOWADA"
+msgid ""
+"<CLT 4>I was jealous of Chihiro's strength.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>自分の弱さと向き合って、
+#. それを乗り越えようとする強さに…！
+#. <CLT>
+msgctxt "0186 | MONDO OOWADA"
+msgid ""
+"<CLT 4>He had the strength to face his own weakness, to try\n"
+"and overcome it...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>オレにはない強さに…
+#. <CLT>
+msgctxt "0187 | MONDO OOWADA"
+msgid ""
+"<CLT 4>It was the kind of strength I've never had...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>オレは、そいつに嫉妬したんだ。
+#. <CLT>
+msgctxt "0188 | MONDO OOWADA"
+msgid ""
+"<CLT 4>So I was jealous of him.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ぶっ壊れた…嫉妬だよ……
+#. <CLT>
+msgctxt "0189 | MONDO OOWADA"
+msgid ""
+"<CLT 4>And that jealousy...broke me.\n"
+"<CLT>"
+msgstr ""
+
+#. 皮肉…か…？
+msgctxt "0190 | MONDO OOWADA"
+msgid "Are you making fun of me?"
+msgstr ""
+
+#. オレが強いって…？
+#. そいつは…皮肉かよ…
+msgctxt "0191 | MONDO OOWADA"
+msgid "I'm strong? Are you fucking with me right now?"
+msgstr ""
+
+#. ひ、皮肉なんかじゃないよ…
+#. だって大和田クンは…本当に強い人だし…
+msgctxt "0192 | CHIHIRO FUJISAKI"
+msgid ""
+"I-I'm not making fun of you. You really are strong,\n"
+"Mondo..."
+msgstr ""
+
+#. <CLT 4>ジグジグと…不気味な音を立てながら、
+#. 何かが軋み始めてた…
+#. <CLT>
+msgctxt "0193 | MONDO OOWADA"
+msgid ""
+"<CLT 4>I felt like I could hear something starting\n"
+"to...creak.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>オレの頭ん中の…何かが……
+#. <CLT>
+msgctxt "0194 | MONDO OOWADA"
+msgid ""
+"<CLT 4>Something...inside my head.\n"
+"<CLT>"
+msgstr ""
+
+#. オレに…どうしろっつーんだ…？
+msgctxt "0195 | MONDO OOWADA"
+msgid "What did he want me to do?"
+msgstr ""
+
+#. じゃあ…オレはどうすりゃよかったんだ？
+msgctxt "0196 | MONDO OOWADA"
+msgid "What was I *supposed* to do?"
+msgstr ""
+
+#. 秘密をバラして…
+#. 全部を…台無しにすりゃ…よかったってのか？
+msgctxt "0197 | MONDO OOWADA"
+msgid ""
+"Was I supposed to just sit back, let my secret get\n"
+"revealed, and ruin everything...?"
+msgstr ""
+
+#. どう…したのぉ？
+msgctxt "0198 | CHIHIRO FUJISAKI"
+msgid "Wh...what's wrong?"
+msgstr ""
+
+#. なんで…オレに言った？　
+#. オレへの当て付けか？
+msgctxt "0199 | MONDO OOWADA"
+msgid ""
+"Why did you have to tell me all that? Are you trying\n"
+"to rub my failure in my face?"
+msgstr ""
+
+#. ぼ、僕はただ…大和田クンに憧れてて…
+msgctxt "0200 | CHIHIRO FUJISAKI"
+msgid "N-No, I just...really admire you."
+msgstr ""
+
+#. 強い…大和田クンに憧れてて…
+msgctxt "0201 | CHIHIRO FUJISAKI"
+msgid "I admire...your strength..."
+msgstr ""
+
+#. そうだよ…オレは強ぇーんだ…
+msgctxt "0202 | MONDO OOWADA"
+msgid "That's right... I *am* strong..."
+msgstr ""
+
+#. 強い…強いんだ…
+msgctxt "0203 | MONDO OOWADA"
+msgid "Strong... I'm strong...!"
+msgstr ""
+
+#. <CLT 4>強い強い強い強い強い強い強い強い強い強い強い強い！
+#. <CLT>
+msgctxt "0204 | MONDO OOWADA"
+msgid ""
+"<CLT 4>Strong, strong, strong, strong, strong, strong!\n"
+"<CLT>"
+msgstr ""
+
+#. オメェよりも…！
+msgctxt "0205 | MONDO OOWADA"
+msgid "Stronger than you!"
+msgstr ""
+
+#. 兄貴よりもだぁぁぁぁぁああッ！！
+msgctxt "0206 | MONDO OOWADA"
+msgid "And stronger than Daaaaiiiyaaaaa!!!"
+msgstr ""
+
+#. そっから先の記憶は…オレにはねー…
+msgctxt "0207 | MONDO OOWADA"
+msgid "I don't remember anything after that..."
+msgstr ""
+
+#. 気付いた時には…
+#. あ、足元に…血まみれのアイツが……
+msgctxt "0208 | MONDO OOWADA"
+msgid ""
+"When I woke up again, he was laying at my\n"
+"feet...covered in blood..."
+msgstr ""
+
+#. 手には…ダンベルで…
+#. 倒れたアイツを……見下ろしてたんだ……
+msgctxt "0209 | MONDO OOWADA"
+msgid ""
+"I had the dumbbell in my hand...and I was just staring\n"
+"at him...down on the ground..."
+msgstr ""
+
+#. きょ、兄弟…
+msgctxt "0210 | KIYOTAKA ISHIMARU"
+msgid "H-Hey..."
+msgstr ""
+
+#. ………………
+msgctxt "0211 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. オレは…殺した……
+msgctxt "0212 | MONDO OOWADA"
+msgid "I...killed him."
+msgstr ""
+
+#. 不二咲千尋を…殺しちまった…
+msgctxt "0213 | MONDO OOWADA"
+msgid "I killed Chihiro."
+msgstr ""
+
+#. いつまでたっても、
+#. 自分の弱さを克服出来ないせいで…！
+msgctxt "0214 | MONDO OOWADA"
+msgid ""
+"Even after all this time, I'm still just as weak as\n"
+"I've always been!"
+msgstr ""
+
+#. そのせいで、とんでもねー事をしちまった！！
+msgctxt "0215 | MONDO OOWADA"
+msgid ""
+"And thanks to that, I did something I can never take\n"
+"back...!"
+msgstr ""
+
+#. <CLT 4>大和田クン…
+#. <CLT>
+msgctxt "0216 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>普段はあんなに…強気だった彼が…
+#. <CLT>
+msgctxt "0217 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He was normally so aggressive, so angry...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなには内緒で抱えていた…弱い部分…
+#. <CLT>
+msgctxt "0218 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He hid that weak side away from everyone. That was his\n"
+"secret...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そんな心の弱い部分を…
+#. アイツが…冷酷に突いたんだ…
+#. <CLT>
+msgctxt "0219 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A weakness like that lived in a heart like his...and\n"
+"it turned him cold-blooded...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>アイツが…ッ！！
+#. <CLT>
+msgctxt "0220 | MONDO OOWADA"
+msgid ""
+"<CLT 4>Goddammit!\n"
+"<CLT>"
+msgstr ""
+
+#. アーッハッハッハッ！！
+msgctxt "0221 | MONOKUMA"
+msgid "Ahh-hahaha!"
+msgstr ""
+
+#. そーら見なよ！　オマエラなんてそんなもんなんだよ！
+msgctxt "0222 | MONOKUMA"
+msgid "Look at him! You see? You're all just like him!"
+msgstr ""
+
+#. 思い出なんかの為に…
+#. たかが、過去なんかの為に…
+msgctxt "0223 | MONOKUMA"
+msgid "For a secret from the past, for a memory..."
+msgstr ""
+
+#. 平気で人を殺す生き物なんだよッ！
+msgctxt "0224 | MONOKUMA"
+msgid ""
+"For that, he killed another living human in cold\n"
+"blood!"
+msgstr ""
+
+#. いつまでたっても外の世界の未練を断ち切れず…
+#. しかも、本当の強さってのをまーったく理解してない。
+msgctxt "0225 | MONOKUMA"
+msgid ""
+"He couldn't cut free of his regrets from the outside\n"
+"world. He doesn't know what true strength is."
+msgstr ""
+
+#. そんなヤツらの、どこが<CLT 3>“希望”<CLT>だってんだッ！！
+msgctxt "0226 | MONOKUMA"
+msgid ""
+"Do you see <CLT 3>hope<CLT> anywhere in there!? Cuz I sure\n"
+"don't!"
+msgstr ""
+
+#. き…さ…ま…ッ！
+msgctxt "0227 | KIYOTAKA ISHIMARU"
+msgid "You...bastard!"
+msgstr ""
+
+#. 貴様ッ、ふざけるなッ！
+#. もう１度言ってみろッ！！
+msgctxt "0228 | KIYOTAKA ISHIMARU"
+msgid ""
+"Just shut up, you son of a bitch! Go ahead, say that\n"
+"again, I dare you!"
+msgstr ""
+
+#. いいよ、何度でも言ってあげるよ！
+#. と言いたいところですが…
+msgctxt "0229 | MONOKUMA"
+msgid ""
+"Okay! I'll say it as many times as I want!\n"
+"...is what I want to say, but..."
+msgstr ""
+
+#. …そういう訳にもいかないんだよね！
+#. そろそろ、<CLT 3>おしおき<CLT>の時間が近付いているからさ！
+msgctxt "0230 | MONOKUMA"
+msgid ""
+"...unfortunately, I can't do that right now! Because\n"
+"the time for <CLT 3>punishing<CLT> is fast approaching!"
+msgstr ""
+
+#. お、おしおきって…ッ！？
+msgctxt "0231 | MAKOTO NAEGI"
+msgid "P-Punishing...?"
+msgstr ""
+
+#. <CLT 3>処刑<CLT>…ッ！？
+msgctxt "0232 | KIYOTAKA ISHIMARU"
+msgid "You mean...<CLT 3>execution<CLT>...!?"
+msgstr ""
+
+#. だってさ、そういう約束でしょ？
+#. 秩序を乱したクロは罰せられるって。
+msgctxt "0233 | MONOKUMA"
+msgid ""
+"That's what I promised you, right? The blackened that\n"
+"disturbs the peace will be punished."
+msgstr ""
+
+#. ま、待て…！
+msgctxt "0234 | KIYOTAKA ISHIMARU"
+msgid "H-Hold on!"
+msgstr ""
+
+#. 今回は、超高校級の暴走族である大和田紋土クンの為に
+#. スペシャルなおしおきを用意させて頂きましたぞっ！！
+msgctxt "0235 | MONOKUMA"
+msgid ""
+"Now then, I've prepared a very special punishment for\n"
+"Mondo Owada, the Ultimate Biker Gang Leader!"
+msgstr ""
+
+#. ま、待つんだ…待ってくれ……
+msgctxt "0236 | KIYOTAKA ISHIMARU"
+msgid "N-No, wait! Wait!"
+msgstr ""
+
+#. では張り切っていきましょう！　おしおきターイム！
+msgctxt "0237 | MONOKUMA"
+msgid ""
+"Let's give it everything we've got! It's...PUNISHMENT\n"
+"TIIIME!"
+msgstr ""
+
+#. 待てって言ってるじゃないかーーーーーッ！！
+msgctxt "0238 | KIYOTAKA ISHIMARU"
+msgid "I! Said! WAAAAAIIIITT!!!"
+msgstr ""
+
+#. ………………
+msgctxt "0239 | MONDO OOWADA"
+msgid "..."
+msgstr "..."
+
+#. すまねぇな兄貴…
+msgctxt "0240 | MONDO OOWADA"
+msgid "Sorry, man..."
+msgstr ""
+
+#. 男同士の約束…守れなかった……
+msgctxt "0241 | MONDO OOWADA"
+msgid ""
+"I couldn't keep the promise we made...\n"
+"from one man to another..."
+msgstr ""
