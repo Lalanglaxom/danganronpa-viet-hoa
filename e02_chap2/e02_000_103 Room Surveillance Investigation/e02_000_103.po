@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -21,6 +22,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
 "hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,12 +32,14 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ có biểu tượng của trường...\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và trừng\n"
-"phạt mình đó."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -45,6 +49,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -55,6 +60,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để nhìn mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -63,9 +69,10 @@ msgid ""
 "alone.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù việc này làm tớ phát cáu, nhưng tốt nhất là nên mặc kệ\n"
-"nó thôi.\n"
+"<CLT 4>Dù việc này làm tôi phát cáu, nhưng tốt nhất là nên\n"
+"mặc kệ nó thôi.\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "..."
@@ -78,9 +85,10 @@ msgid ""
 "<CLT 4>I can't let myself turn away from Sayaka's death...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ không được phép ngoảnh mặt làm ngơ trước cái\n"
+"<CLT 4>Tôi không được phép ngoảnh mặt làm ngơ trước cái\n"
 "chết của Sayaka...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんの為にも…
 #. ボク自身の為にもだ…
 #. <CLT>
@@ -89,12 +97,14 @@ msgid ""
 "<CLT 4>For Sayaka...and for myself...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vì Sayaka... và vì chính bản thân tớ nữa...\n"
+"<CLT 4>Vì Sayaka... và vì chính bản thân tôi nữa...\n"
 "<CLT>"
+
 #. この鉄板…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "This metal plate..."
 msgstr "Tấm kim loại này..."
+
 #. <CLT 4>本当はここにある窓を…ふさいでるんだろうな…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -102,13 +112,15 @@ msgid ""
 "<CLT 4>It's blocking the window I'm sure must be behind it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó đang chặn lấy chiếc cửa sổ mà tớ chắc chắn là\n"
+"<CLT 4>Nó đang chặn lấy chiếc cửa sổ mà tôi chắc chắn là\n"
 "nằm ở phía sau.\n"
 "<CLT>"
+
 #. この鉄板…
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "This metal plate..."
 msgstr "Tấm kim loại này..."
+
 #. <CLT 4>本当はここにある窓を…ふさいでるんだろうな…
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -116,9 +128,10 @@ msgid ""
 "<CLT 4>It's blocking the window I'm sure must be behind it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó đang chặn lấy chiếc cửa sổ mà tớ chắc chắn là\n"
+"<CLT 4>Nó đang chặn lấy chiếc cửa sổ mà tôi chắc chắn là\n"
 "nằm ở phía sau.\n"
 "<CLT>"
+
 #. <CLT 4>メモ帳がある。
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -128,6 +141,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là tập giấy ghi chú lúc trước.\n"
 "<CLT>"
+
 #. <CLT 4>これは、ここの備え付けってことかな？
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -136,9 +150,10 @@ msgid ""
 "us...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ đoán là ngôi trường này đã đưa cho mỗi đứa\n"
-"chúng tớ một cái...\n"
+"<CLT 4>Tôi đoán là ngôi trường này đã đưa cho mỗi đứa chúng\n"
+"tôi một cái...\n"
 "<CLT>"
+
 #. <CLT 4>粘着テープクリーナーだ。
 #. 残量は相変わらず減ったままだ。
 #. <CLT>
@@ -148,9 +163,10 @@ msgid ""
 "than there was at the start.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cây lăn bụi... Chắc chắn là nó đã vơi đi nhiều\n"
-"so với lúc ban đầu rồi.\n"
+"<CLT 4>Cây lăn bụi... Chắc chắn là nó đã vơi đi nhiều so\n"
+"với lúc ban đầu rồi.\n"
 "<CLT>"
+
 #. <CLT 4>これは…工具セットだな。
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -160,6 +176,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là... bộ dụng cụ.\n"
 "<CLT>"
+
 #. <CLT 4>ビニールの包装がされてる。
 #. まだ未開封の新品だ。
 #. <CLT>
@@ -170,6 +187,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó vẫn chưa được mở ra.\n"
 "<CLT>"
+
 #. <CLT 4>まぁ、工具セットなんて使う事はないだろうな…
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -177,8 +195,10 @@ msgid ""
 "<CLT 4>Well, I don't think I need it right now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chà, tớ nghĩ lúc này mình cũng chẳng cần đến nó đâu.\n"
+"<CLT 4>Hmm, tôi nghĩ lúc này mình cũng chẳng cần đến nó\n"
+"đâu.\n"
 "<CLT>"
+
 #. <CLT 4>ベッド…
 #. 特徴もない普通のものだ…寝心地も普通だし…
 #. <CLT>
@@ -188,9 +208,10 @@ msgid ""
 "...Feels normal, too.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giường của tớ. Trông nó khá là bình thường.\n"
-"...Cảm giác khi nằm cũng bình thường luôn.\n"
+"<CLT 4>Giường của tôi. Trông nó khá là bình thường. ...Cảm\n"
+"giác khi nằm cũng bình thường luôn.\n"
 "<CLT>"
+
 #. <CLT 4>なんて、ボクに言われたくないだろうな…
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -198,8 +219,10 @@ msgid ""
 "<CLT 4>I hope that didn't hurt the bed's feelings...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ hy vọng điều đó không làm chiếc giường bị tổn thương...\n"
+"<CLT 4>Tôi hy vọng điều đó không làm chiếc giường bị tổn\n"
+"thương...\n"
 "<CLT>"
+
 #. <CLT 4>普通のゴミ箱だ。
 #. 特に注目するほどでもないな。
 #. <CLT>
@@ -209,9 +232,10 @@ msgid ""
 "the trash can.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chẳng có gì đặc biệt hay đáng chú ý về\n"
-"chiếc thùng rác này cả.\n"
+"<CLT 4>Chẳng có gì đặc biệt hay đáng chú ý về chiếc thùng\n"
+"rác này cả.\n"
 "<CLT>"
+
 #. <CLT 4>紙は、はがしたけど…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -219,8 +243,9 @@ msgid ""
 "<CLT 4>I tore the paper off the wall, but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ đã xé tờ giấy đó khỏi tường rồi, nhưng...\n"
+"<CLT 4>Tôi đã xé tờ giấy đó khỏi tường rồi, nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>あの内容を思い出すだけでも、
 #. 嫌な気分になる…
 #. <CLT>
@@ -230,9 +255,10 @@ msgid ""
 "queasy.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...chỉ cần nhớ lại nội dung trên đó thôi cũng khiến tớ cảm thấy\n"
-"buồn nôn rồi.\n"
+"<CLT 4>...chỉ cần nhớ lại nội dung trên đó thôi cũng khiến\n"
+"tôi cảm thấy buồn nôn.\n"
 "<CLT>"
+
 #. <CLT 4>引き出しのある机だ。
 #. <CLT>
 msgctxt "0025 | MAKOTO NAEGI"
@@ -242,6 +268,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vẫn là chiếc bàn đó với mấy chiếc ngăn kéo đó.\n"
 "<CLT>"
+
 #. <CLT 4>よくある一般的な机だな。
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -251,14 +278,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Đúng là kiểu đồ vật mà bất kỳ học sinh nào cũng có.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0027 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0028 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0029 | NARRATION"
@@ -266,5 +296,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

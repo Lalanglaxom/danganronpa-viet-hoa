@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -21,6 +22,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
 "hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,12 +32,14 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ có biểu tượng của trường...\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và trừng\n"
-"phạt mình đó."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>いつも見てるのか…？
 #. それはそれで飽きないのか？
 #. <CLT>
@@ -45,9 +49,10 @@ msgid ""
 "of it...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Họ luôn theo dõi chúng ta sao? Họ không bao giờ thấy chán\n"
-"việc đó à...?\n"
+"<CLT 4>Chúng luôn theo dõi chúng ta sao? Chúng không bao giờ\n"
+"thấy chán việc đó à...?\n"
 "<CLT>"
+
 #. <CLT 4>…と、心の中で挑発するのが精一杯だ。
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -56,9 +61,10 @@ msgid ""
 "about mocking them...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trời ạ, tôi đã phải dồn hết can đảm chỉ để dám *nghĩ*\n"
-"đến chuyện mỉa mai họ...\n"
+"<CLT 4>Trời ạ, tôi đã phải dồn hết can đảm chỉ để dám\n"
+"*nghĩ* đến chuyện mỉa mai họ...\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -68,9 +74,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -80,9 +87,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -92,9 +100,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -104,9 +113,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -116,9 +126,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -128,9 +139,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>洗濯機だ…これだけ数があれば、
 #. 順番待ちしないで済みそうだ。
 #. <CLT>
@@ -140,9 +152,10 @@ msgid ""
 "you'd ever have to wait for one to open up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ máy giặt ở đây, tớ không nghĩ là\n"
-"cậu sẽ phải xếp hàng đợi đến lượt đâu.\n"
+"<CLT 4>Có đủ máy giặt ở đây, tôi không nghĩ là mình sẽ phải\n"
+"xếp hàng đợi đến lượt đâu.\n"
 "<CLT>"
+
 #. <CLT 4>雑誌が置いてある…
 #. テラべっぴん？
 #. <CLT>
@@ -152,9 +165,10 @@ msgid ""
 "Ladies of Earth\"...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một đống tạp chí. Một cuốn tên là \"Những Quý Cô Khả Ái\n"
-"Của Trái Đất\"...?\n"
+"<CLT 4>Có một đống tạp chí. Một cuốn tên là \"Những Quý Cô\n"
+"Khả Ái Của Trái Đất\"...?\n"
 "<CLT>"
+
 #. <CLT 4>テラ級のべっぴんが揃ってるみたいだ…
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -163,8 +177,10 @@ msgid ""
 "beauties\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Toàn những người mà họ gọi là \"mỹ nhân đẳng cấp thế giới\"...\n"
+"<CLT 4>Toàn những người mà họ gọi là \"mỹ nhân đẳng cấp thế\n"
+"giới\"...\n"
 "<CLT>"
+
 #. <CLT 4>水着が干してある…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -172,8 +188,10 @@ msgid ""
 "<CLT 4>That swimsuit is still hanging out to dry.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bộ đồ bơi đó vẫn còn đang treo ở đây để phơi cho khô.\n"
+"<CLT 4>Bộ đồ bơi đó vẫn còn đang treo ở đây để phơi cho\n"
+"khô.\n"
 "<CLT>"
+
 #. <CLT 4>こんな所にスクール水着なんて…
 #. 山田クンあたりに盗まれそうだな…
 #. <CLT>
@@ -183,9 +201,10 @@ msgid ""
 "something...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ thấy ngạc nhiên là Hifumi chưa tới đây để cuỗm nó đi hay\n"
-"làm gì đó đấy...\n"
+"<CLT 4>Tôi thấy ngạc nhiên là Hifumi chưa tới đây để cuỗm\n"
+"nó đi hay làm gì đó đấy...\n"
 "<CLT>"
+
 #. <CLT 4>自販機だ…お金は取らないみたいだ。
 #. 飲み放題って事か…
 #. <CLT>
@@ -196,8 +215,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Máy bán hàng tự động này dường như không nhận tiền.\n"
-"Vậy nên tớ đoán là chúng tớ có thể uống bao nhiêu tùy thích...\n"
+"Vậy nên tôi đoán là chúng tôi có thể uống bao nhiêu tùy thích...\n"
 "<CLT>"
+
 #. <CLT 4>缶ジュース飲み放題って言われてもな…
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -205,16 +225,20 @@ msgid ""
 "<CLT 4>But even if it's totally all-you-can-drink...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng dù cho có được uống nước ngọt thỏa thích đi nữa...\n"
+"<CLT 4>Nhưng dù cho có được uống nước ngọt thỏa thích đi\n"
+"nữa...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0019 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0020 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0021 | NARRATION"
@@ -222,5 +246,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ………………
 msgctxt "0001 | MAKOTO NAEGI"
@@ -20,6 +21,7 @@ msgstr "..."
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "It's gone..."
 msgstr "Biến mất rồi..."
+
 #. ………………
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "..."
@@ -34,6 +36,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cậu ấy... cậu ấy thực sự đã đi rồi.\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "..."
@@ -48,8 +51,10 @@ msgid ""
 "begin with.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ như thể là... ngay từ đầu chẳng có thứ gì tồn tại ở đó vậy.\n"
+"<CLT 4>Cứ như thể là... ngay từ đầu chẳng có thứ gì tồn\n"
+"tại ở đó vậy.\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんの痕跡は、
 #. キレイさっぱり消えてしまっていた……
 #. <CLT>
@@ -62,10 +67,12 @@ msgstr ""
 "<CLT 4>Mọi dấu vết cuối cùng về sự tồn tại của Sayaka đã\n"
 "tan biến không một dấu vết...\n"
 "<CLT>"
+
 #. あいつの……言った通りか……
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "It's just like he said..."
 msgstr "Đúng như lời hắn ta nói..."
+
 #. <CLT 4>学級裁判の終了後…地上に戻ろうとするボクらに、
 #. モノクマはこう言った。
 #. <CLT>
@@ -75,9 +82,10 @@ msgid ""
 "back up, Monokuma told us...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sau khi Lớp Xét Xử kết thúc, trước khi chúng tớ đi thang máy\n"
-"trở lên trên, Monokuma đã nói với cả bọn rằng...\n"
+"<CLT 4>Sau khi lớp xét xử kết thúc, trước khi chúng tôi đi\n"
+"thang máy trở lên trên, Monokuma đã nói với cả bọn rằng...\n"
 "<CLT>"
+
 #. あ、そうそう！　学級裁判も終わった事だし、
 #. <CLT 3>“ジャマな死体”<CLT>はキレイに掃除しといたから！
 msgctxt "0010 | MONOKUMA"
@@ -85,8 +93,9 @@ msgid ""
 "Oh, I almost forgot! Since the class trial is over,\n"
 "I'll go ahead and dispose of <CLT 3>all the corpses<CLT>!"
 msgstr ""
-"À, ta suýt thì quên mất! Vì Lớp Xét Xử đã kết thúc rồi,\n"
-"nên ta sẽ tiến hành dọn dẹp <CLT 3>mấy cái xác vướng víu<CLT> đó luôn!"
+"À, ta suýt thì quên mất! Vì Lớp Xét Xử đã kết thúc rồi, nên ta sẽ tiến \n"
+"hành dọn dẹp <CLT 3>mấy cái xác vướng víu<CLT> đó luôn!"
+
 #. いいの、いいの…お礼はいいの…
 #. ボクはオマエラの喜ぶ顔が見たいだけだから！！
 msgctxt "0011 | MONOKUMA"
@@ -94,9 +103,9 @@ msgid ""
 "It's okay, no need to thank me! Just seeing your\n"
 "delighted, smiling faces is thanks enough for me!"
 msgstr ""
-"Không sao, không sao... không cần cảm ơn ta đâu... Ta chỉ\n"
-"muốn được nhìn thấy khuôn mặt tươi cười hớn hở của các em\n"
-"thôi!"
+"Không sao, không sao... không cần cảm ơn ta đâu... Ta chỉ muốn \n"
+"được nhìn thấy khuôn mặt tươi cười hớn hở của các em thôi!"
+
 #. それに、腐っちゃったりしたら目も当てられないし、
 #. 健全な生活にも支障をきたすでしょ？
 msgctxt "0012 | MONOKUMA"
@@ -105,12 +114,13 @@ msgid ""
 "every day! That can't be good for your health..."
 msgstr ""
 "Sau cùng thì, chẳng ai muốn nhìn một cái xác đang thối rữa\n"
-"mỗi ngày cả! Việc đó chắc chắn là không tốt cho sức khỏe\n"
-"của các em đâu..."
+"mỗi ngày cả! Việc đó chắc chắn là không tốt cho sức khỏe đâu..."
+
 #. にょほほほ～！！
 msgctxt "0013 | MONOKUMA"
 msgid "Nyohohoho!"
 msgstr "Nyohohoho!"
+
 #. <CLT 4>ボクには…死んだ舞園さん達の死を
 #. 弔ってやる事も許されない…
 #. <CLT>
@@ -120,9 +130,10 @@ msgid ""
 "and Junko's deaths...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ thậm chí còn không có thời gian để thương tiếc cho\n"
-"cái chết của Sayaka và Junko nữa...\n"
+"<CLT 4>Tôi thậm chí còn không có thời gian để thương tiếc\n"
+"cho cái chết của Sayaka và Junko nữa...\n"
 "<CLT>"
+
 #. <CLT 4>そういう事か……
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -130,8 +141,9 @@ msgid ""
 "<CLT 4>I'm sure that's exactly why he did it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ chắc chắn đó chính xác là lý do hắn ta làm vậy.\n"
+"<CLT 4>Tôi chắc chắn đó chính xác là lý do hắn ta làm vậy.\n"
 "<CLT>"
+
 #. <CLT 4>まるで冗談のような…まるで悪夢のような…
 #. この状況を確認し…
 #. <CLT>
@@ -142,8 +154,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Giống như một trò đùa quái ác, một cơn ác mộng kinh\n"
-"hoàng... Nhưng tớ phải chấp nhận thực tại này thôi...\n"
+"hoàng... Nhưng tôi phải chấp nhận thực tại này thôi...\n"
 "<CLT>"
+
 #. <CLT 4>ボクは、みんなが待つ食堂へと戻った。
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -152,5 +165,6 @@ msgid ""
 "others.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ quay trở lại phòng ăn để tập hợp cùng với mọi người.\n"
+"<CLT 4>Tôi quay trở lại phòng ăn để tập hợp cùng với mọi\n"
+"người.\n"
 "<CLT>"

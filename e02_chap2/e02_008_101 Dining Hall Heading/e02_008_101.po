@@ -1,15 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en-US\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
 
 #. <CLT 4>学校に用はないな…
 #. みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
@@ -26,7 +19,9 @@ msgstr ""
 #. 本当だ…入れるようになってる…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Taka was right. We really can get in here now..."
-msgstr "Taka nói đúng rồi. Giờ chúng ta thực sự có thể vào đây rồi..."
+msgstr ""
+"Taka nói đúng rồi. Giờ chúng ta thực sự có thể vào đây\n"
+"rồi..."
 #. <CLT 4>でも、今は…
 #. みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -59,8 +54,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -70,8 +65,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>ここは女子トイレだ…
 #. <CLT>
@@ -92,13 +87,14 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Nếu mình dám bước chân vào đó, mình sẽ trở thành\n"
-"một kẻ biến thái hoàn toàn trong mắt mọi người, và đời\n"
-"mình thế là xong đời...\n"
+"một kẻ biến thái hoàn toàn trong mắt mọi người, và đời mình thế là xong đời...\n"
 "<CLT>"
 #. 本当だ…入れるようになってる…
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "Taka was right. We really can get in here now..."
-msgstr "Taka nói đúng rồi. Giờ chúng ta thực sự có thể vào đây rồi..."
+msgstr ""
+"Taka nói đúng rồi. Giờ chúng ta thực sự có thể vào đây\n"
+"rồi..."
 #. <CLT 4>でも、今は…
 #. みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -119,8 +115,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>舞園さん……
 #. <CLT>
@@ -150,8 +146,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Không... giờ mình không thể để bản thân chìm đắm\n"
-"trong đau thương được. Mọi\n"
-"người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT 4> rồi.\n"
+"trong đau thương được. Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT 4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -161,8 +156,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -172,8 +167,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -183,8 +178,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -194,8 +189,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -205,8 +200,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -216,8 +211,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>江ノ島さんは…もういない……
 #. <CLT>
@@ -236,8 +231,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -247,8 +242,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>桑田クンは…もういない…
 #. <CLT>
@@ -267,8 +262,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>みんな集まってるだろうし、<CLT><CLT 3>食堂<CLT><CLT 4>へ行こう。
 #. <CLT>
@@ -278,8 +273,8 @@ msgid ""
 "hall<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng\n"
-"ăn<CLT><CLT 4> rồi.\n"
+"<CLT 4>Mọi người chắc đang đợi mình ở <CLT><CLT 3>phòng ăn<CLT><CLT\n"
+"4> rồi.\n"
 "<CLT>"
 #. <CLT 4>階段には、シャッターが降りてる。
 #. <CLT>
@@ -297,7 +292,8 @@ msgid ""
 "<CLT 4>I wonder if this'll open up at some point...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình tự hỏi liệu lúc nào đó nó có mở ra không nhỉ...\n"
+"<CLT 4>Mình tự hỏi liệu lúc nào đó nó có mở ra không\n"
+"nhỉ...\n"
 "<CLT>"
 #. <CLT 4>鉄格子だ…
 #. かなり頑丈そうだな。

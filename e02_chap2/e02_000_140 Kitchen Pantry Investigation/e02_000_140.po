@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -21,6 +22,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
 "hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,12 +32,14 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ có biểu tượng của trường...\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và trừng\n"
-"phạt mình đó."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -45,6 +49,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -55,6 +60,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để nhìn mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -63,9 +69,10 @@ msgid ""
 "alone.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù việc này làm tớ phát cáu, nhưng tốt nhất là nên\n"
+"<CLT 4>Dù việc này làm tôi phát cáu, nhưng tốt nhất là nên\n"
 "mặc kệ nó thôi.\n"
 "<CLT>"
+
 #. <CLT 4>ここの棚には、食べ物が並んでいる…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -76,6 +83,7 @@ msgstr ""
 "<CLT 4>Có đủ các loại thực phẩm khác nhau được xếp chồng\n"
 "lên nhau ở đây.\n"
 "<CLT>"
+
 #. <CLT 4>料理の食材からお菓子まで、よりどりみどりだ。
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -84,9 +92,10 @@ msgid ""
 "everything anyone could ever want or need.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Từ những nguyên liệu cơ bản đến đồ ăn nhẹ và bánh kẹo, ở đây\n"
-"có tất cả những thứ mà bất kỳ ai cũng có thể muốn hoặc cần.\n"
+"<CLT 4>Từ những nguyên liệu cơ bản đến đồ ăn nhẹ và bánh\n"
+"kẹo, ở đây có tất cả những thứ mà bất kỳ ai muốn hoặc cần.\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -96,6 +105,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mọi thứ hoàn toàn lộn xộn...\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -105,6 +115,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ mọi loại đồ đạc được chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -114,14 +125,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ mọi loại đồ đạc được chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0014 | NARRATION"
@@ -129,8 +143,9 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
+
 #. <CLT 4>これは、冷蔵庫か…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -138,8 +153,10 @@ msgid ""
 "<CLT 4>Is this the fridge Sayaka mentioned?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây có phải chiếc tủ lạnh mà Sayaka đã nhắc tới không nhỉ?\n"
+"<CLT 4>Đây có phải chiếc tủ lạnh mà Sayaka đã nhắc tới\n"
+"không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>中には、飲み物や食料品が詰まっている…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -149,14 +166,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó chứa đầy ắp đồ ăn và thức uống.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0017 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0018 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0019 | NARRATION"

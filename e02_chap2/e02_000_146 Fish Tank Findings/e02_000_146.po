@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>水槽だ…
 #. 小さな魚が泳いでいる…
@@ -20,17 +21,20 @@ msgid ""
 "swimming around inside...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một bể cá. Có một đàn cá nhỏ đang bơi lội\n"
-"ở bên trong...\n"
+"<CLT 4>Đó là một bể cá. Có một đàn cá nhỏ đang bơi lội ở\n"
+"bên trong...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0004 | NARRATION"
@@ -38,5 +42,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

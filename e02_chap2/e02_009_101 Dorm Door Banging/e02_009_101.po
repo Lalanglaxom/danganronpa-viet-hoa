@@ -1,15 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: DR1 (PC)\n"
-"Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en-US\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
 
 #. どう、朝日奈さん。
 #. 返事あった？
@@ -251,7 +244,8 @@ msgid ""
 "<CLT 4>This is my room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng mình. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng mình. Byakuya chắc chắn không ở đây\n"
+"đâu...\n"
 "<CLT>"
 #. <CLT 4>ここは霧切さんの部屋だ。
 #. ここにはいないだろう…
@@ -261,7 +255,8 @@ msgid ""
 "<CLT 4>This is Kyoko's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Kyoko. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Kyoko. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
@@ -285,7 +280,8 @@ msgid ""
 "<CLT 4>This is Toko's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Toko. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Toko. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>ここは不二咲さんの部屋だ。
 #. ここにはいないだろう…
@@ -295,7 +291,8 @@ msgid ""
 "<CLT 4>This is Chihiro's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Chihiro. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Chihiro. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>朝日奈さんの部屋だ。
 #. ここにはいないだろう…
@@ -305,7 +302,8 @@ msgid ""
 "<CLT 4>This is Hina's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Hina. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Hina. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>ここは、石丸クンの部屋だ。
 #. ここにはいないだろう…
@@ -315,7 +313,8 @@ msgid ""
 "<CLT 4>This is Taka's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Taka. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Taka. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>大和田クンの部屋はここだ。
 #. ここにはいないだろう…
@@ -325,7 +324,8 @@ msgid ""
 "<CLT 4>This is Mondo's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Mondo. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Mondo. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>一応、ボクもノックしてみよう。
 #. <CLT>
@@ -334,7 +334,8 @@ msgid ""
 "<CLT 4>Maybe I'll knock myself, just to be sure.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có lẽ mình nên tự gõ cửa thử xem sao, cho chắc chắn.\n"
+"<CLT 4>Có lẽ mình nên tự gõ cửa thử xem sao, cho chắc\n"
+"chắn.\n"
 "<CLT>"
 #. <CLT 23>「コンコン」
 #. <CLT>
@@ -394,7 +395,8 @@ msgid ""
 "<CLT 4>This is Celeste's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Celeste. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Celeste. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>大神さんの部屋だ。
 #. ここにはいないだろう…
@@ -404,7 +406,8 @@ msgid ""
 "<CLT 4>This is Sakura's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Sakura. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Sakura. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
@@ -428,7 +431,8 @@ msgid ""
 "<CLT 4>This is Hiro's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Hiro. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Hiro. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>ここは山田クンの部屋だ。
 #. ここにはいないだろう…
@@ -438,7 +442,8 @@ msgid ""
 "<CLT 4>This is Hifumi's room. Byakuya wouldn't be here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Hifumi. Byakuya chắc chắn không ở đây đâu...\n"
+"<CLT 4>Đây là phòng của Hifumi. Byakuya chắc chắn không ở\n"
+"đây đâu...\n"
 "<CLT>"
 #. <CLT 4>階段には、シャッターが降りてる。
 #. <CLT>
@@ -456,7 +461,8 @@ msgid ""
 "<CLT 4>I wonder if this'll open up at some point...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình tự hỏi liệu lúc nào đó nó có mở ra không nhỉ...\n"
+"<CLT 4>Mình tự hỏi liệu lúc nào đó nó có mở ra không\n"
+"nhỉ...\n"
 "<CLT>"
 #. <CLT 4>鉄格子だ…
 #. かなり頑丈そうだな。
