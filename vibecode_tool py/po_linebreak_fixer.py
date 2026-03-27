@@ -19,7 +19,7 @@ from tkinter import filedialog, messagebox
 SOFT_LIMIT: int = 58   
 HARD_LIMIT: int = 64
 
-_CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>")
+_CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>|<CLT_\d+>")
 
 # ════════════════════════════════════════════════════════════════════
 #  PO  LOW-LEVEL  HELPERS  
@@ -53,13 +53,13 @@ def visible_len(text: str) -> int:
     """Return display length of *text*, stripping all CLT colour tags."""
     return len(_CLT_RE.sub("", text))
 
-def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT) -> tuple[str, bool]:
+def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT) -> tuple[str, bool]:
     original_text = msgstr_text
 
     if not _CLT_RE.sub("", msgstr_text).strip():
         return original_text, False
 
-    # 🎀 STEP 1: Detach the final <CLT> or \n<CLT> 🎀
+    # STEP 1: Detach the final <CLT> or \n<CLT>
     end_tag = ""
     if msgstr_text.endswith("\n<CLT>"):
         end_tag = "\n<CLT>"
@@ -68,39 +68,58 @@ def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT) -> tuple[str, bool]:
         end_tag = "<CLT>"
         msgstr_text = msgstr_text[:-5]
 
-    # 🎀 STEP 2: Flatten EVERYTHING! Remove all \n 🎀
-    msgstr_text = msgstr_text.replace("\n", " ")
-    msgstr_text = re.sub(r"\s+", " ", msgstr_text).strip()
+    # STEP 2: Flatten — remove all existing line breaks
+    flat = re.sub(r"\s+", " ", msgstr_text.replace("\n", " ")).strip()
 
-    total_visible = visible_len(msgstr_text)
-    
-    # 🎀 STEP 3: Determine max cuts (1 or 2) based on 128 rule 🎀
-    max_newlines = 2 if total_visible >= 128 else 1
+    # STEP 3: No wrapping needed if already within hard limit
+    if visible_len(flat) <= hard:
+        fixed = flat + end_tag
+        return fixed, fixed != original_text
 
-    words = msgstr_text.split(" ")
-    lines = []
-    current_words = []
-    current_vis = 0
+    # STEP 4: Wrap
+    #   Line 1: try soft cap first; if remainder > soft, fall back to hard cap
+    #   Line 2: always cut at hard cap (no even-split check)
 
-    for word in words:
-        word_vis = visible_len(word)
-        space_vis = 1 if current_words else 0
-        if current_words and current_vis + space_vis + word_vis > soft:
-            if len(lines) < max_newlines:
-                lines.append(" ".join(current_words))
-                current_words = [word]
-                current_vis = word_vis
+    def find_cut(word_list: list[str], limit: int) -> int:
+        """Index of first word that pushes the line over *limit*. len(word_list) if all fit."""
+        vis = 0
+        for i, w in enumerate(word_list):
+            vis += (1 if i else 0) + visible_len(w)
+            if vis > limit:
+                return i
+        return len(word_list)
+
+    # Protect space inside <CLT 3> tags so split(" ") does not tear them apart
+    flat = re.sub(r"<CLT\s+(\d+)>", r"<CLT_\1>", flat)
+    words = flat.split(" ")
+    lines: list[str] = []
+
+    for cut_num in range(2):
+        soft_cut = find_cut(words, soft)
+        if soft_cut == len(words):
+            break  # everything fits, no cut needed
+
+        if cut_num == 0:
+            # Line 1: even split if possible, else hard cap
+            remainder = words[soft_cut:]
+            if visible_len(" ".join(remainder)) <= soft:
+                cut_at = soft_cut
             else:
-                current_words.append(word)
-                current_vis += space_vis + word_vis
+                hard_cut = find_cut(words, hard)
+                cut_at = hard_cut if hard_cut < len(words) else soft_cut
         else:
-            current_words.append(word)
-            current_vis += space_vis + word_vis
+            # Line 2: always hard cap
+            hard_cut = find_cut(words, hard)
+            cut_at = hard_cut if hard_cut < len(words) else soft_cut
 
-    if current_words:
-        lines.append(" ".join(current_words))
+        lines.append(" ".join(words[:cut_at]))
+        words = words[cut_at:]
 
-    fixed_text = "\n".join(lines) + end_tag
+    if words:
+        lines.append(" ".join(words))
+
+    # Restore protected tags
+    fixed_text = re.sub(r"<CLT_(\d+)>", r"<CLT \1>", "\n".join(lines)) + end_tag
     return fixed_text, fixed_text != original_text
 
 # ════════════════════════════════════════════════════════════════════
