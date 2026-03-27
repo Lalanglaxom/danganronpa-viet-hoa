@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>外の情報に飢えている…
 #. ここでテレビでも見られればな…
@@ -20,9 +21,10 @@ msgid ""
 "If only there was a TV that worked...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ đang khao khát thông tin từ thế giới bên ngoài.\n"
+"<CLT 4>Mình đang khao khát thông tin từ thế giới bên ngoài.\n"
 "Giá mà có một chiếc TV nào đó còn hoạt động...\n"
 "<CLT>"
+
 #. <CLT 4>こんな監視カメラで見張られる生活が…
 #. 一体、いつまで続くんだよ…
 #. <CLT>
@@ -32,9 +34,10 @@ msgid ""
 "all these cameras...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ sẽ phải kẹt ở đây, bị theo dõi bởi tất cả những\n"
+"<CLT 4>Mình sẽ phải kẹt ở đây, bị theo dõi bởi tất cả những\n"
 "chiếc camera này đến bao giờ nữa đây...?\n"
 "<CLT>"
+
 #. <CLT 4>こんな鉄板で閉じ込められてるなんて…
 #. まさに悪夢だ…
 #. <CLT>
@@ -45,8 +48,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Bị nhốt lại bởi một tấm kim loại khổng lồ... Cứ như thể\n"
-"tớ đang bị kẹt trong một cơn ác mộng vậy.\n"
+"mình đang bị kẹt trong một cơn ác mộng vậy.\n"
 "<CLT>"
+
 #. <CLT 4>こんな鉄板で閉じ込められてるなんて…
 #. まさに悪夢だ…
 #. <CLT>
@@ -57,8 +61,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Bị nhốt lại bởi một tấm kim loại khổng lồ... Cứ như thể\n"
-"tớ đang bị kẹt trong một cơn ác mộng vậy.\n"
+"mình đang bị kẹt trong một cơn ác mộng vậy.\n"
 "<CLT>"
+
 #. <CLT 4>時計があって時間はわかるけど…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -66,8 +71,9 @@ msgid ""
 "<CLT 4>There's a clock telling me what time it is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một chiếc đồng hồ cho tớ biết bây giờ là mấy giờ...\n"
+"<CLT 4>Có một chiếc đồng hồ cho mình biết bây giờ là mấy giờ...\n"
 "<CLT>"
+
 #. <CLT 4>外が見えないんじゃ、
 #. それが正しいのかもわからないな…
 #. <CLT>
@@ -77,17 +83,20 @@ msgid ""
 "even right.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng vì không thể nhìn ra bên ngoài, nên tớ chẳng rõ\n"
+"<CLT 4>Nhưng vì không thể nhìn ra bên ngoài, nên mình chẳng rõ\n"
 "liệu nó có chạy đúng không nữa.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0009 | NARRATION"

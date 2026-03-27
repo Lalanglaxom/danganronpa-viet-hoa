@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -18,8 +19,10 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>こんな物、壊してやりたいけど…
 #. 壊したら大変な事になるんだよな…
 #. <CLT>
@@ -29,9 +32,10 @@ msgid ""
 "what would happen to me if I did...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ rất muốn đập nát cái thứ ngu ngốc này, nhưng chẳng biết\n"
-"chuyện gì sẽ xảy ra với mình nếu làm vậy đâu...\n"
+"<CLT 4>Tôi rất muốn đập nát cái thứ ngu ngốc này, nhưng chẳng biết\n"
+"chuyện gì sẽ xảy ra nếu làm vậy đâu...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -39,8 +43,10 @@ msgid ""
 "<CLT 4>Someone's using these cameras to watch people die...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có kẻ đang dùng những chiếc camera này để nhìn mọi người bỏ mạng...\n"
+"<CLT 4>Có kẻ đang dùng những chiếc camera này để nhìn mọi\n"
+"người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、無視するしかない…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -49,9 +55,10 @@ msgid ""
 "think about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thật là tức điên mà... nhưng tớ đành phải cố gắng\n"
+"<CLT 4>Thật là tức điên mà... nhưng mình đành phải cố gắng\n"
 "không nghĩ về nó thôi.\n"
 "<CLT>"
+
 #. <CLT 4>ショーウインドウの中には、
 #. トロフィーや展示品なんかが飾られている…
 #. <CLT>
@@ -62,14 +69,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Bên trong tủ trưng bày là những chiếc cúp và các vật phẩm khác.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0008 | NARRATION"

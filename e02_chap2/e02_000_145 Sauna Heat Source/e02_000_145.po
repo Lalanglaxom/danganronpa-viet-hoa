@@ -9,7 +9,7 @@ msgstr ""
 "Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #. <CLT 4>これって…なんだ？
 #. サウナの熱源…かな？
@@ -19,7 +19,8 @@ msgid ""
 "<CLT 4>What's this? Is it...the heat source for the sauna?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái gì thế này? Có phải là... nguồn nhiệt cho phòng xông hơi không nhỉ?\n"
+"<CLT 4>Cái gì thế này? Có phải là... nguồn nhiệt cho phòng\n"
+"xông hơi không nhỉ?\n"
 "<CLT>"
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"

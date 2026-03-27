@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8"
 
 #. <CLT 4>モノクマが写るモニター…
 #. 今は校章が浮かんでいるだけだ…
@@ -20,9 +21,10 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những màn hình mà Monokuma hay xuất hiện.\n"
-"Hiện tại, nó chỉ đang hiển thị biểu tượng của trường.\n"
+"<CLT 4>Màn hình nơi Monokuma thường xuất hiện... Hiện \n"
+"tại nó chỉ hiển thị huy hiệu của trường thôi sao...\n"
 "<CLT>"
+
 #. この場所で下手な事してると、
 #. 一気にハチの巣にされそうだ…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,8 +32,9 @@ msgid ""
 "If I'm not careful, I might find myself in\n"
 "some pretty hot water..."
 msgstr ""
-"Nếu tôi không cẩn thận, tôi có thể sẽ tự rước\n"
-"họa vào thân đó..."
+"Nếu không cẩn thận, mình có thể sẽ tự rước\n"
+"họa vào thân..."
+
 #. <CLT 4>監視カメラ…に銃みたいな物が付いている…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -40,9 +43,10 @@ msgid ""
 "assume is a gun attached to it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Một chiếc camera giám sát... Và có thứ mà tôi chỉ có thể\n"
-"đoán là một khẩu súng gắn kèm với nó.\n"
+"<CLT 4>Camera giám sát... còn có thứ gì đó giống như khẩu \n"
+"súng được gắn trên đó nữa...\n"
 "<CLT>"
+
 #. <CLT 4>ここには…あまり近付かない方がいいのかも…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -50,8 +54,9 @@ msgid ""
 "<CLT 4>I'd better not get too close...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tốt nhất là tôi không nên lại quá gần...\n"
+"<CLT 4>Mình tốt hơn là không nên lại gần.\n"
 "<CLT>"
+
 #. <CLT 4>入口は…鉄の塊で塞がれてしまっている…
 #. まるで銀行…まるで軍事施設…
 #. <CLT>
@@ -62,8 +67,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Lối vào vẫn đang bị chặn bởi tấm kim loại khổng lồ\n"
-"đó. Như một hầm chứa ngân hàng, hay căn cứ quân sự bí mật vậy...\n"
+"đó. Như hầm ngân hàng, hay căn cứ quân sự bí mật vậy...\n"
 "<CLT>"
+
 #. <CLT 4>レターケースが置いてある…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -73,6 +79,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hộp thư...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…に銃みたいな物が付いている…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -81,9 +88,10 @@ msgid ""
 "assume is a gun attached to it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Một chiếc camera giám sát... Và có thứ mà tôi chỉ có thể\n"
-"đoán là một khẩu súng gắn kèm với nó.\n"
+"<CLT 4>Camera giám sát... còn có thứ gì đó giống như khẩu \n"
+"súng được gắn trên đó nữa...\n"
 "<CLT>"
+
 #. <CLT 4>ここには…あまり近付かない方がいいのかも…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -91,16 +99,19 @@ msgid ""
 "<CLT 4>I'd better not get too close...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tốt nhất là tôi không nên lại quá gần...\n"
+"<CLT 4>Mình tốt hơn là không nên lại gần.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -108,5 +119,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
