@@ -1,0 +1,675 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. あ、苗木！　おっはー！！
+msgctxt "0001 | AOI ASAHINA"
+msgid "Mornin', Makoto!"
+msgstr "Chào buổi sáng, Makoto!"
+#. おはよう…
+#. もう、みんな揃ってるの？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Good morning... Is everyone here already?"
+msgstr "Chào buổi sáng... Mọi người đã tập trung đông đủ hết chưa?"
+#. いんや、十神っちと石丸っちがまだだべ。
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid "Nope! Still waitin' on Byakuya and Taka."
+msgstr "Chưa đâu! Vẫn đang đợi Byakuya với Taka đây."
+#. 十神クンはともかく…
+#. 石丸クンがまだ来てないなんて珍しいね。
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"Byakuya's no surprise, but it's strange Taka's not\n"
+"here yet..."
+msgstr ""
+"Byakuya thì không nói làm gì, nhưng lạ là Taka\n"
+"vẫn chưa tới nhỉ..."
+#. 石丸君でしたら、遅刻魔の十神君を呼びに、
+#. 部屋まで迎えに行きましたわ。
+msgctxt "0005 | CELES"
+msgid ""
+"Knowing Taka, I imagine he is trying to get the King\n"
+"of Tardiness up and out of bed."
+msgstr "Với tính cách của Taka, tớ đoán cậu ấy đang cố lôi cái tên Chúa Tể Đi Muộn kia ra khỏi giường rồi."
+#. すぐに戻ってくるはずだ。
+#. 我らは、ここで待っているとしよう…
+msgctxt "0006 | SAKURA OOGAMI"
+msgid ""
+"I'm sure they'll be here soon enough. Just be\n"
+"patient..."
+msgstr ""
+"Tôi chắc là họ sẽ tới sớm thôi. Cứ kiên nhẫn\n"
+"chút đi..."
+#. 待つのは構いませんが、
+#. １つ問題があるのです。
+msgctxt "0007 | CELES"
+msgid ""
+"I don't mind waiting for them, but there is one\n"
+"problem..."
+msgstr "Tớ không ngại đợi họ đâu, nhưng có một vấn đề thế này..."
+#. …問題？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "Which is...?"
+msgstr "Vấn đề gì cơ...?"
+#. 喉が渇きました。
+msgctxt "0009 | CELES"
+msgid "I am thirsty."
+msgstr "Tớ đang khát nước."
+#. どこが問題だっつーの…
+msgctxt "0010 | MONDO OOWADA"
+msgid "How the hell is that a problem!?"
+msgstr "Cái đó thì liên quan quái gì tới vấn đề hả!?"
+#. 山田君、紅茶を入れてくださる？
+msgctxt "0011 | CELES"
+msgid "Hifumi, would you make me some tea?"
+msgstr "Hifumi, cậu pha cho tớ chút trà được không?"
+#. …はい？
+msgctxt "0012 | HIFUMI YAMADA"
+msgid "...Huh?"
+msgstr "...Hả?"
+#. ミルクティーをお願いしますわね。
+msgctxt "0013 | CELES"
+msgid "Milk tea, if you please."
+msgstr "Làm phiền cậu cho tớ trà sữa nhé."
+#. な、なぜ…僕が…？
+msgctxt "0014 | HIFUMI YAMADA"
+msgid "Wh...why me?"
+msgstr "T-Tại sao lại là tôi?"
+#. あなたの丸い体系は、わたくしが通っていた喫茶店の
+#. マスターにそっくりですわ。
+msgctxt "0015 | CELES"
+msgid ""
+"Your roundish figure reminds me of the owner of the\n"
+"coffee shop I used to frequent."
+msgstr "Cái thân hình tròn trịa của cậu làm tớ nhớ đến ông chủ quán cà phê mà tớ hay ghé qua."
+#. <CLT 4>そんな理由…なんだ…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's your reason...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lý do là vậy đó sao...?\n"
+"<CLT>"
+#. 喉がカラカラですの。急ぎで願いますわ。
+msgctxt "0017 | CELES"
+msgid "I can feel my throat drying out. Quickly, please."
+msgstr "Tớ thấy cổ họng khô khốc rồi. Nhanh lên giùm tớ nhé."
+#. わ、わかりましたよぉ…
+msgctxt "0018 | HIFUMI YAMADA"
+msgid "O-Okay..."
+msgstr "Đ-Được rồi..."
+#. <CLT 4>セレスさんの命令には逆らえなかったらしく、
+#. 山田クンはしぶしぶ厨房へと入っていった。
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Apparently unable to refuse Celeste's order, Hifumi\n"
+"skulked his way into the kitchen.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dường như không thể từ chối mệnh lệnh của Celeste, Hifumi\n"
+"đành lủi thủi đi vào bếp.\n"
+"<CLT>"
+#. <CLT 4>そして、数分後…
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And a few minutes later...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và vài phút sau...\n"
+"<CLT>"
+#. お待たせしました！！
+msgctxt "0021 | HIFUMI YAMADA"
+msgid "Thank you for waiting!"
+msgstr "Cảm ơn vì đã chờ đợi!"
+#. <CLT 4>あたりに紅茶の匂いを漂わせながら、
+#. 山田クンはトレイを片手に戻って来た。
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hifumi reappeared with tray in hand, the gentle aroma\n"
+"growing stronger as he approached.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hifumi quay trở lại với khay trà trên tay, hương thơm dịu nhẹ\n"
+"càng lúc càng nồng hơn khi cậu ấy tiến lại gần.\n"
+"<CLT>"
+#. うふふ、待っていましたわよ。
+msgctxt "0023 | CELES"
+msgid "Hmhmhm. Finally..."
+msgstr "Heh heh. Cuối cùng cũng xong..."
+#. つ、ついでに…
+#. 全員分いれてくれれば…いいのに…
+msgctxt "0024 | TOUKO FUKAWA"
+msgid ""
+"You c-could've made some for the r-rest of us, you\n"
+"know..."
+msgstr ""
+"Cậu c-có thể pha cho cả nh-những người còn lại nữa mà,\n"
+"biết không..."
+#. お前は全然タイプじゃないから、
+#. 断固拒否だ！
+msgctxt "0025 | HIFUMI YAMADA"
+msgid "I emphatically decline! You're not my type at all!"
+msgstr "Tôi kiên quyết từ chối! Cô hoàn toàn không phải gu của tôi!"
+#. フフ…すべては因果律の流れのままに…
+msgctxt "0026 | HIFUMI YAMADA"
+msgid ""
+"Hmhm... It's all about the law of causality, basic\n"
+"instinct, act and react!"
+msgstr "Heh heh... Tất cả đều tuân theo luật nhân quả, bản năng cơ bản, có làm thì mới có hưởng!"
+#. ぐ…ぐぐ……
+msgctxt "0027 | TOUKO FUKAWA"
+msgid "Grr..."
+msgstr "Hừ..."
+#. では、頂きますわね…
+msgctxt "0028 | CELES"
+msgid "Well then, if you don't mind..."
+msgstr "Vậy thì, nếu cậu không phiền..."
+#. <CLT 4>口元に笑みを浮かべながら、
+#. ティーカップを手にしたセレスさんだったが…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A small smile played across her lips as she held the\n"
+"tea cup delicately in her hand...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Một nụ cười khẽ nở trên môi khi cậu ấy cầm tách\n"
+"trà một cách đầy tinh tế trên tay...\n"
+"<CLT>"
+#. …あら？
+msgctxt "0030 | CELES"
+msgid "...Wait."
+msgstr "...Khoan đã."
+#. <CLT 4>と小首をかしげると…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She cocked her head to the side...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy khẽ nghiêng đầu sang một bên...\n"
+"<CLT>"
+#. <CLT 4>突然、彼女は手にしていたカップを
+#. 壁に向かって放り投げた！
+#. <CLT>
+msgctxt "0032 | CELES"
+msgid ""
+"<CLT 4>...and threw the cup as hard as she could at the wall!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...rồi ném mạnh tách trà trên tay vào tường!\n"
+"<CLT>"
+#. <CLT 23>「ガシャーン！」
+#. <CLT>
+msgctxt "0033 | NARRATION"
+msgid ""
+"<CLT 23>*CRASH*\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>*XOẢNG*\n"
+"<CLT>"
+#. えー！？
+msgctxt "0034 | HIFUMI YAMADA"
+msgid "What the—!?"
+msgstr "Cái gì thế này!?"
+#. チョイチョイ…何をなさるかウサギさん？
+msgctxt "0035 | HIFUMI YAMADA"
+msgid "H-Hey! What are you doing, my little white rabbit!?"
+msgstr "N-Này! Cô đang làm gì thế, chú thỏ trắng nhỏ của tôi ơi!?"
+#. わたくし、こういうミルクティーって、
+#. 嫌いなんですわ！
+msgctxt "0036 | CELES"
+msgid "I HATE this kind of tea!"
+msgstr "Tớ GHÉT cái loại trà sữa này!"
+#. え、えーと…理解しかねますが…
+msgctxt "0037 | HIFUMI YAMADA"
+msgid "U-Umm...I don't understand..."
+msgstr "Ừ-Ừm... tôi không hiểu..."
+#. 例えば、その辺の普通の喫茶店で、
+#. 紅茶を注文するとしましょう…
+msgctxt "0038 | CELES"
+msgid ""
+"Imagine we are at a coffee shop—just any normal,\n"
+"everyday cafe. I sit down, and I order some tea."
+msgstr "Hãy tưởng tượng chúng ta đang ở một quán cà phê—chỉ là một quán bình thường thôi. Tớ ngồi xuống, và gọi một chút trà."
+#. すると、『レモンですか？　ミルクですか？』
+#. と聞かれる場合がありますわよね？
+msgctxt "0039 | CELES"
+msgid "They then ask me, \"Would you like lemon, or milk?\""
+msgstr "Họ sẽ hỏi tớ rằng, \"Quý khách dùng chanh hay sữa ạ?\""
+#. そこで、わたくしはミルクティーと答えます。
+msgctxt "0040 | CELES"
+msgid ""
+"Now, further imagine that I replied, \"Ah, yes, I would\n"
+"like milk tea, please.\""
+msgstr "Và hãy tưởng tượng tiếp là tớ trả lời, \"À vâng, cho tôi xin trà sữa.\""
+#. すると、紅茶と共に小さい容器に入れられたミルクが
+#. 運ばれて来たりするのですが…
+msgctxt "0041 | CELES"
+msgid ""
+"In this case, along with my tea they may bring me a\n"
+"small container of milk, yes?"
+msgstr "Trong trường hợp đó, họ sẽ mang trà ra kèm theo một hũ sữa nhỏ, đúng không?"
+#. わたくしは、ミルクティーをいれる際、
+#. ミルクを先に入れたい派なのです。
+msgctxt "0042 | CELES"
+msgid ""
+"But this is not for me! I am among those who prefer\n"
+"the milk to be part of the process from the outset!"
+msgstr "Nhưng cái đó không dành cho tớ! Tớ thuộc kiểu người muốn sữa phải là một phần của quá trình pha chế ngay từ đầu!"
+#. その方が、圧倒的に香りがよろしいのです。
+msgctxt "0043 | CELES"
+msgid ""
+"The fragrance is just so overwhelmingly sweet that\n"
+"way..."
+msgstr "Chỉ có cách đó mới tạo ra được mùi hương ngọt ngào đến ngây ngất..."
+#. それに、飲む直前にレモンかミルクを入れるかなんて、
+#. 調味料レベルの選択肢と変わらないじゃないですか。
+msgctxt "0044 | CELES"
+msgid ""
+"Adding milk or lemon right before you drink is like\n"
+"dousing your fries in ketchup—mere condiments!"
+msgstr "Cho sữa hay chanh ngay trước khi uống thì chẳng khác nào rưới tương cà lên khoai tây chiên cả—chúng chỉ là đồ gia vị thôi!"
+#. そもそも、その程度をメニューの選択肢として
+#. 認めていいのかも疑問ですわ。
+msgctxt "0045 | CELES"
+msgid ""
+"Whenever looking for a cafe, I first review their menu\n"
+"to see if it offers the proper style of milk tea."
+msgstr "Mỗi khi tìm một quán cà phê, tớ luôn xem thực đơn của họ trước để xem liệu họ có phục vụ đúng kiểu trà sữa hay không."
+#. ですから、わたくしは牛乳で紅茶を煮出す、
+#. “ロイヤルミルクティー”しか認めていませんの。
+msgctxt "0046 | CELES"
+msgid ""
+"And I cannot acknowledge any \"milk tea\" that does not\n"
+"add the milk during the brewing process!"
+msgstr "Và tớ không chấp nhận bất kỳ loại \"trà sữa\" nào mà không cho sữa vào ngay trong lúc đun trà!"
+#. <CLT 4>その時の、ボクらの反応を表現するとしたら…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If I had to describe our shared reaction to what we'd\n"
+"just heard...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu mình phải miêu tả phản ứng chung của mọi người trước những gì\n"
+"vừa nghe được...\n"
+"<CLT>"
+#. <CLT 4>“目を白黒させて”って以外の表現は、
+#. 見当たらなかったはずだ…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I'd have to go with \"wide-eyed bewilderment.\"\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...thì hẳn chỉ có cụm từ \"mắt chữ O mồm chữ A\" mà thôi.\n"
+"<CLT>"
+#. えっと…せっかく紅茶を作ったってのに…
+#. そこまでしろと！？
+msgctxt "0049 | HIFUMI YAMADA"
+msgid ""
+"Umm...I went to all that trouble to make you that\n"
+"tea...and you wanted me to go even farther?"
+msgstr "Ừm... tôi đã tốn công pha trà cho cô rồi... mà cô còn muốn tôi làm nhiều hơn thế sao?"
+#. 面倒なのは知っていますわ…
+msgctxt "0050 | CELES"
+msgid "Yes, I realize it can be a bit of a hassle.."
+msgstr "Phải, tớ biết việc đó hơi rắc rối chút.."
+#. ミルクティーとロイヤルミルクティーの両方が
+#. 置いてある店では、後者の方が値段が高いですからね。
+msgctxt "0051 | CELES"
+msgid ""
+"Even in cafes that offer proper milk tea, it is always\n"
+"more expensive than simple tea with milk."
+msgstr "Ngay cả ở những quán cà phê có trà sữa đúng chuẩn, giá của nó luôn đắt hơn trà pha sữa thông thường."
+#. きっと手間がかかるんでしょう。
+#. ですが…
+msgctxt "0052 | CELES"
+msgid "It takes more time to prepare, surely, but..."
+msgstr "Chắc chắn là mất nhiều thời gian chuẩn bị hơn, nhưng mà..."
+#. 手間をかけないで、何がメニューでしょう。
+msgctxt "0053 | CELES"
+msgid ""
+"...why even bother creating a menu if you are not\n"
+"going to offer the highest level of quality!?"
+msgstr "...tại sao lại tốn công lập ra thực đơn làm gì nếu không định mang lại chất lượng cao nhất chứ!?"
+#. いや、そもそも…メニューも何も…
+msgctxt "0054 | HIFUMI YAMADA"
+msgid "Well, um...we don't actually have a menu..."
+msgstr "Chà, ừm... thực ra chúng ta đâu có thực đơn nào đâu..."
+#. いいから早く持って来い、このブタがぁぁぁ！！！
+msgctxt "0055 | CELES"
+msgid ""
+"That does not matter. Hurry up and bring me what I\n"
+"asked for, swine!"
+msgstr "Cái đó không quan trọng. Mau mang thứ tớ yêu cầu ra đây ngay, đồ con lợn này!"
+#. えーーーーーッ！？
+msgctxt "0056 | HIFUMI YAMADA"
+msgid "WHAAAAAT!?"
+msgstr "CÁI GÌ CƠ!?"
+#. は、はいっ！
+#. ブタめがすぐに持ってまいりますぅぅ！！
+msgctxt "0057 | HIFUMI YAMADA"
+msgid "O-Okay! Your little piggy will bring it right out!"
+msgstr "Đ-Được rồi! Chú lợn con của cô sẽ mang ra ngay đây!"
+#. うふ。恐喝は便利ですわね。
+msgctxt "0058 | CELES"
+msgid "Hmhm. I do so love coercion."
+msgstr "Heh heh. Tớ thực sự rất thích việc cưỡng ép người khác đấy."
+#. 人格…変わったけど…
+msgctxt "0059 | AOI ASAHINA"
+msgid "You were like...a totally different person just now."
+msgstr "Bà vừa mới... như biến thành một người hoàn toàn khác vậy."
+#. クソ…一瞬ブルッちまったぜ…
+msgctxt "0060 | MONDO OOWADA"
+msgid "Yeah, shit... You really went psycho there."
+msgstr "Phải, chết tiệt... Cô vừa rồi đúng là phát điên luôn đấy."
+#. うふふふふふ…
+msgctxt "0061 | CELES"
+msgid "Hmhmhm..."
+msgstr "Heh heh..."
+#. <CLT 4>セレスさん…やっぱ最初の印象通り…
+#. 一筋縄じゃいかない人みたいだ…
+#. <CLT>
+msgctxt "0062 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I knew there was more to her when I first met her...\n"
+"I'd hate to have her as an enemy.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình biết là cậu ấy không đơn giản như vẻ bề ngoài mà...\n"
+"Mình sẽ không muốn đối đầu với cậu ấy đâu.\n"
+"<CLT>"
+#. <CLT 4>…と、ボクらがセレスさんの本性に、
+#. 戦々恐々としていたところで…
+#. <CLT>
+msgctxt "0063 | MONDO OOWADA"
+msgid ""
+"<CLT 4>Seriously, man. She's one scary chick...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nói thật lòng đấy. Cô ta đúng là một đứa đáng sợ...\n"
+"<CLT>"
+#. <CLT 4>食堂のドアが開け放たれ、
+#. そして、ようやく待ち人はやって来た…
+#. <CLT>
+msgctxt "0064 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...the dining hall doors flew open, and one of the\n"
+"late arrivals came storming in.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...cánh cửa phòng ăn bật mở, và một trong những người\n"
+"đến muộn đã lao xầm vào.\n"
+"<CLT>"
+#. <CLT 4>のだが…
+#. <CLT>
+msgctxt "0065 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng...\n"
+"<CLT>"
+#. おい、諸君！　妙な事態になったぞ…！
+msgctxt "0066 | KIYOTAKA ISHIMARU"
+msgid "Bad news, everyone! There is a mystery afoot!"
+msgstr "Tin xấu đây mọi người! Có một sự việc bí ẩn vừa xảy ra!"
+#. へ？　どうしたん？
+msgctxt "0067 | YASUHIRO HAGAKURE"
+msgid "Huh? What happened?"
+msgstr "Hả? Chuyện gì thế?"
+#. 十神くんが部屋から出て来ないんだ…
+msgctxt "0068 | KIYOTAKA ISHIMARU"
+msgid "It would seem Byakuya refuses to leave his room!"
+msgstr "Có vẻ như Byakuya nhất quyết không chịu rời khỏi phòng!"
+#. 何度インターホンを押しても、
+#. まったく出て来ないんだ…
+msgctxt "0069 | KIYOTAKA ISHIMARU"
+msgid ""
+"I stood there pressing his doorbell over and over,\n"
+"but he never showed himself."
+msgstr "Tôi đã đứng đó nhấn chuông cửa liên tục, nhưng cậu ta chẳng bao giờ lộ mặt."
+#. 居留守…じゃなくて…？
+msgctxt "0070 | MAKOTO NAEGI"
+msgid "Maybe he just...wasn't there."
+msgstr "Có lẽ cậu ta chỉ... không có ở đó thôi."
+#. だったら…いいのだが…
+#. ひょっとして、<CLT 3>彼の身に何かあった<CLT>のではないかと…
+msgctxt "0071 | KIYOTAKA ISHIMARU"
+msgid ""
+"I'd like to think so. But I'm worried <CLT 3>something might\n"
+"have happened to him<CLT>."
+msgstr ""
+"Tôi cũng muốn nghĩ như vậy. Nhưng tôi lo là <CLT 3>có chuyện gì đó\n"
+"đã xảy ra với cậu ta rồi<CLT>."
+#. <CLT 4>何か…その言葉が意味するもの…
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What he meant by that...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Điều cậu ấy muốn ám chỉ qua câu nói đó...\n"
+"<CLT>"
+#. <CLT 4>それ以上は言わなくても…
+#. その場の誰もが理解しているようだった。
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He didn't have to say anything else. Everyone\n"
+"understood exactly what that might mean...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy không cần phải nói thêm lời nào nữa. Mọi người\n"
+"đều hiểu chính xác ý nghĩa của điều đó là gì...\n"
+"<CLT>"
+#. さ、捜してみた方がいいかもね…
+#. みんなで手分けして…
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"I-It might be a good idea if we all split up and go\n"
+"look for him."
+msgstr "C-Có lẽ chúng ta nên chia nhau ra đi tìm cậu ta thì tốt hơn đấy."
+#. 言っておくが、僕もそう提案しようと思ってたんだッ！
+msgctxt "0075 | KIYOTAKA ISHIMARU"
+msgid "Ah! I was just about to suggest the same thing!"
+msgstr "À! Tôi cũng vừa định gợi ý điều tương tự đây!"
+#. こんな時に…妙な対抗意識を
+#. 燃やしてんじゃないわよ…
+msgctxt "0076 | TOUKO FUKAWA"
+msgid "Stop trying to one-up e-everyone..."
+msgstr "Đừng có lúc nào cũng muốn tỏ ra hơn ng-người khác thế chứ..."
+#. じゃあ、私はもう１度、
+#. あいつの部屋に行ってみるね。
+msgctxt "0077 | AOI ASAHINA"
+msgid "Okay, then I'll go check his room one more time."
+msgstr "Được rồi, vậy để tui qua kiểm tra phòng ông ta lần nữa."
+#. 反応あるまで、しつこくインターホン押してみるよ。
+msgctxt "0078 | AOI ASAHINA"
+msgid ""
+"I'm just gonna keep on hammering that button till I\n"
+"get a response!"
+msgstr "Tui sẽ cứ nhấn cái nút đó liên hồi cho tới khi nhận được phản hồi thì thôi!"
+#. では、残った我らで手分けして捜すとしよう…
+msgctxt "0079 | SAKURA OOGAMI"
+msgid ""
+"Very well, then the rest of us can go check the rest\n"
+"of the building."
+msgstr "Rất tốt, vậy những người còn lại chúng ta hãy đi kiểm tra các khu vực khác của tòa nhà."
+#. 実際、手遅れになる前に…だろ？
+msgctxt "0080 | YASUHIRO HAGAKURE"
+msgid "Yeah. Before it's, y'know...too late."
+msgstr "Phải. Trước khi, cậu biết đấy... quá muộn."
+#. ………………
+msgctxt "0081 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>とにかく…急いで十神クンを捜さないと…
+#. <CLT>
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, we have to just do our best to find Byakuya.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù sao thì, chúng ta phải cố gắng hết sức để tìm Byakuya.\n"
+"<CLT>"
+#. <CLT 4>十神クンが行きそうな場所…
+#. <CLT>
+msgctxt "0083 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So where might Byakuya have gone...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vậy Byakuya có thể đã đi đâu được nhỉ...?\n"
+"<CLT>"
+#. <CLT 4>もしかしたら、また…
+#. <CLT><CLT 3>“学校の２階”<CLT><CLT 4>とか調べてる可能性も…
+#. <CLT>
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Maybe he went to go check out the <CLT><CLT 3>2nd floor of the\n"
+"school<CLT><CLT 4> again...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có lẽ cậu ta đã quay lại kiểm tra <CLT><CLT 3>tầng 2 của\n"
+"trường học<CLT><CLT 4> chăng...\n"
+"<CLT>"
+#. セレスさんは…
+#. 十神クンを捜しに行かないの？
+msgctxt "0085 | MAKOTO NAEGI"
+msgid "Celeste...aren't you going to help look for Byakuya?"
+msgstr "Celeste... cậu không định giúp tìm Byakuya sao?"
+#. だって、まだ紅茶を飲んでおりませんわ。
+msgctxt "0086 | CELES"
+msgid "I have not had my tea yet."
+msgstr "Tớ vẫn chưa được uống trà mà."
+#. …え？
+msgctxt "0087 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr "...Hả?"
+#. 喉の渇きを潤さない事には
+#. 何をする気にもなれません。
+msgctxt "0088 | CELES"
+msgid ""
+"Until my thirst is satisfied, I have no urge to do\n"
+"anything."
+msgstr "Chừng nào cơn khát của tớ chưa được giải tỏa, tớ sẽ chẳng có hứng thú làm bất cứ việc gì cả."
+#. 急かすのなら、山田君を急かしてくださいな。
+msgctxt "0089 | CELES"
+msgid ""
+"If you are in a hurry, feel free to motivate Hifumi to\n"
+"move faster."
+msgstr "Nếu cậu đang vội, cứ tự nhiên đi mà thúc giục Hifumi làm nhanh lên nhé."
+#. う、うん…
+msgctxt "0090 | MAKOTO NAEGI"
+msgid "O-Okay..."
+msgstr "Đ-Được rồi..."
+#. <CLT 4>セレスさん、マイペースすぎないか…？
+#. <CLT>
+msgctxt "0091 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But aren't you being kind of...selfish?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng chẳng phải cậu đang hơi... ích kỷ sao?\n"
+"<CLT>"
+#. 喉の渇きを潤さない事には
+#. 何をする気にもなれません。
+msgctxt "0092 | CELES"
+msgid ""
+"Until my thirst is satisfied, I have no urge to do\n"
+"anything."
+msgstr "Chừng nào cơn khát của tớ chưa được giải tỏa, tớ sẽ chẳng có hứng thú làm bất cứ việc gì cả."
+#. 急かすのなら、山田君を急かしてくださいな。
+msgctxt "0093 | CELES"
+msgid ""
+"If you are in a hurry, feel free to motivate Hifumi to\n"
+"move faster."
+msgstr "Nếu cậu đang vội, cứ tự nhiên đi mà thúc giục Hifumi làm nhanh lên nhé."
+#. う、うん…
+msgctxt "0094 | MAKOTO NAEGI"
+msgid "O-Okay..."
+msgstr "Đ-Được rồi..."
+#. <CLT 4>モノクマが写るモニター…
+#. <CLT>
+msgctxt "0095 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT>"
+#. <CLT 4>こんな物、壊してやりたいけど…
+#. 壊したら大変な事になるんだよな…
+#. <CLT>
+msgctxt "0096 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'd love to just smash the stupid thing, but who knows\n"
+"what would happen to me if I did...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình chỉ muốn đập nát cái thứ ngớ ngẩn này cho xong, nhưng ai biết được chuyện gì sẽ xảy ra với mình nếu làm vậy chứ...\n"
+"<CLT>"
+#. <CLT 4>こんなカメラで…
+#. ボクらをずっと監視してるのか…
+#. <CLT>
+msgctxt "0097 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>They've been using these cameras to watch us this\n"
+"whole time...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Họ đã luôn sử dụng những chiếc camera này để theo dõi chúng ta suốt bấy lâu nay...\n"
+"<CLT>"
+#. <CLT 4>ムカツクけど、今は無視するしかない…
+#. <CLT>
+msgctxt "0098 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's infuriating...but I have to just try and not\n"
+"think about it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thật tức điên người... nhưng mình đành phải cố gắng không nghĩ về nó vậy.\n"
+"<CLT>"
+#. <CLT 4>今は、時計なんか気にしている場合じゃないな…
+#. <CLT>
+msgctxt "0099 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't have time to worry about the clock right now.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Giờ mình không có thời gian để lo lắng về đồng hồ đâu.\n"
+"<CLT>"
+#. はい
+msgctxt "0100 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+#. いいえ
+msgctxt "0101 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0102 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT>"
