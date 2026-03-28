@@ -616,6 +616,51 @@ def build_entry_block(entry: dict) -> str:
     return "\n".join(lines)
 
 
+# ─────────────────────────────────────────────
+#  AUTO-FIX: MALFORMED HEADER
+# ─────────────────────────────────────────────
+
+def fix_header(work_path: str) -> bool:
+    """
+    Replace the PO header with the canonical fixed template.
+    Returns True if the file was changed, False if already correct.
+    """
+    CANONICAL_HEADER = (
+        'msgid ""\n'
+        'msgstr ""\n'
+        '"Project-Id-Version: DR1 (PC)\\n"\n'
+        '"Report-Msgid-Bugs-To: your_email\\n"\n'
+        '"POT-Creation-Date: 3/26/2026\\n"\n'
+        '"PO-Revision-Date: \\n"\n'
+        '"Last-Translator: \\n"\n'
+        '"Language-Team: \\n"\n'
+        '"Language: en_US\\n"\n'
+        '"MIME-Version: 1.0\\n"\n'
+        '"Content-Type: text/plain; charset=UTF-8\\n"\n'
+        '"Content-Transfer-Encoding: 8bit\\n"\n'
+        '"X-Generator: Poedit 3.8\\n"\n'
+    )
+
+    with open(work_path, encoding="utf-8") as f:
+        raw = f.read()
+
+    raw = raw.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Find and replace everything from the start up to the first blank line
+    header_pat = re.compile(r'^.*?\n\n', re.DOTALL)
+    m = header_pat.match(raw)
+    if not m:
+        return False
+
+    if m.group() == CANONICAL_HEADER + "\n":
+        return False  # already correct
+
+    new_raw = CANONICAL_HEADER + "\n" + raw[m.end():]
+    with open(work_path, "w", encoding="utf-8") as f:
+        f.write(new_raw)
+    return True
+
+
 def auto_fix_missing(work_path: str, copy_entries: dict, copy_keys: list,
                      work_entries: dict, work_keys: list) -> int:
     """
@@ -737,6 +782,18 @@ def run():
                                 {"level":"ERROR","check":"backup",
                                  "detail":"Copy file not found — run backup script first"}]})
             continue
+
+        # ── Auto-fix CRLF → LF before anything else ─────────────
+        with open(work_path, 'rb') as _f:
+            _raw_bytes = _f.read()
+        if b'\r\n' in _raw_bytes:
+            with open(work_path, 'wb') as _f:
+                _f.write(_raw_bytes.replace(b'\r\n', b'\n'))
+            out.append(f"    ✔ [auto-fix] CRLF → LF normalized in {segment_id}")
+
+        # ── Auto-fix malformed header ─────────────────────────────
+        if fix_header(work_path):
+            out.append(f"    ✔ [auto-fix] Header reformatted in {segment_id}")
 
         try:
             copy_header, copy_entries, copy_keys = parse_po(copy_path)

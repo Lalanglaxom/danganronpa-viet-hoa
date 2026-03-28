@@ -1,0 +1,1516 @@
+========================================================================
+  PO VALIDATION REPORT
+  Generated : 2026-03-28 16:22:21
+  Folder    : D:/Danganronpa1Viet/danganronpa-viet-hoa/e02_chap2
+  Rules     : built-in + clt_tag_integrity, not_copy_of_source
+========================================================================
+Selected path: D:/Danganronpa1Viet/danganronpa-viet-hoa/e02_chap2
+Top-level folders: ['e02_000_003', 'e02_000_004 Main Hall Exploration', 'e02_000_006 Gym Exploration Findings', 'e02_000_009 AV Room Exploration', 'e02_000_010 School Store Exploration', 'e02_000_014 Classroom One Exploration', 'e02_000_015 Classroom Two Exploration', 'e02_000_016 Exit Area Prompt', 'e02_000_022 Library Investigation Findings', 'e02_000_026 Locker Room Exploration', 'e02_000_030 Indoor Pool Exploration', 'e02_000_031 Second Floor Exploration', 'e02_000_032 Library Floor Two', 'e02_000_033 Cleaning Closet Investigation', 'e02_000_037 Locker Room Poster', 'e02_000_103 Room Surveillance Investigation', 'e02_000_135 School Observation Thoughts', 'e02_000_136 Kitchen Investigation Findings', 'e02_000_137 Trash Room Surveillance', 'e02_000_139 Laundry Room Exploration', 'e02_000_140 Kitchen Pantry Investigation', 'e02_000_141 Locker Room Findings', 'e02_000_144 Bathhouse Exploration Findings', 'e02_000_145 Sauna Heat Source', 'e02_000_146 Fish Tank Findings', 'e02_001_103', 'e02_001_105 Body Disposal Aftermath', 'e02_002_135 Post-Trial Dining Reunion', 'e02_003_006 Gym Morning Exercise', 'e02_004_001 Second Floor Access', 'e02_004_004 Trophy Case Omen', 'e02_004_006 Surveillance Monitor Investigation', 'e02_004_021 School Floor Exploration', 'e02_004_031 New Floor Investigation', 'e02_004_032 Monitor Surveillance Data', 'e02_005_022 Library Investigation Start', 'e02_006_026 Pool Discovery Excitement', 'e02_006_027 Locker Room Investigation', 'e02_006_030 Pool Surveillance Check', 'e02_007_135 Investigation Discovery Report', 'e02_008_101 Dining Hall Heading', 'e02_008_103 Nighttime Announcement Rules', 'e02_009_001 Locked Door Exploration', 'e02_009_021 Finding Byakuya Byakuya', 'e02_009_026 Locker Room Search', 'e02_009_101 Dorm Door Banging', 'e02_009_135 Dining Hall Morning', 'e02_009_136 Kitchen Tea Quest', 'e02_009_140 Warehouse Investigation Report', 'e02_009_141 Bathhouse Search Talk', 'e02_009_146 Bathroom Fortune Prediction', 'e02_010_022', 'e02_011_001', 'e02_011_021', 'e02_011_022', 'e02_011_101', 'e02_011_103', 'e02_013_101', 'e02_013_103', 'e02_013_135', 'e02_014_103', 'e02_016_101', 'e02_016_103', 'e02_017_135', 'e02_017_144', 'e02_018_103', 'e02_018_135', 'e02_019_103', 'e02_020_021', 'e02_020_022', 'e02_021_103', 'e02_022_001', 'e02_022_003', 'e02_022_004', 'e02_022_010', 'e02_022_101', 'e02_022_103', 'e02_023_006', 'e02_024_101', 'e02_024_103', 'e02_025_001', 'e02_025_021', 'e02_025_022', 'e02_025_101', 'e02_025_135', 'e02_025_137', 'e02_026_026', 'e02_027_029', 'e02_028_003', 'e02_028_026', 'e02_029_101', 'e02_030_021', 'e02_030_022', 'e02_030_025', 'e02_032_001', 'e02_032_003', 'e02_032_004', 'e02_032_006', 'e02_032_009', 'e02_032_010', 'e02_032_014', 'e02_032_015', 'e02_032_016', 'e02_032_021', 'e02_032_022', 'e02_032_025', 'e02_032_026', 'e02_032_027', 'e02_032_029', 'e02_032_030', 'e02_032_031', 'e02_032_032', 'e02_032_033', 'e02_032_101', 'e02_032_135', 'e02_032_136', 'e02_032_137', 'e02_032_139', 'e02_032_140', 'e02_032_141', 'e02_032_144', 'e02_032_145', 'e02_032_146', 'e02_033_001', 'e02_033_201', 'e02_033_204', 'e02_101_000', 'e02_102_000', 'e02_102_001', 'e02_103_000', 'e02_104_000', 'e02_104_001', 'e02_105_000', 'e02_106_000', 'e02_107_000', 'e02_108_000', 'e02_108_001', 'e02_109_000', 'e02_110_000', 'e02_110_001', 'e02_111_000', 'e02_112_000', 'e02_112_001', 'e02_113_000', 'e02_114_000', 'e02_114_001', 'e02_115_000', 'e02_116_000', 'e02_117_000', 'e02_118_000', 'e02_118_001', 'e02_119_000', 'e02_120_000', 'e02_120_001', 'e02_121_000', 'e02_122_000', 'e02_122_001', 'e02_123_000', 'e02_124_000', 'e02_125_000', 'e02_127_000', 'e02_150_000', 'e02_151_000', 'e02_152_000', 'e02_195_000', 'e02_196_000', 'e02_197_000', 'e02_198_000', 'e02_199_000', 'e02_200_000', 'e02_201_000', 'e02_255_006']
+
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_003
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_004 Main Hall Exploration
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_006 Gym Exploration Findings
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_009 AV Room Exploration
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_010 School Store Exploration
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_014 Classroom One Exploration
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_015 Classroom Two Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_000_015
+
+  [OK]             e02_000_015
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_016 Exit Area Prompt
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_022 Library Investigation Findings
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_022
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 130): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_026 Locker Room Exploration
+────────────────────────────────────────────────────────────────────────
+
+  [OK]             e02_000_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_030 Indoor Pool Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_030
+    ✔ [auto-fix] Header reformatted in e02_000_030
+
+  [OK]             e02_000_030
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_031 Second Floor Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_031
+    ✔ [auto-fix] Header reformatted in e02_000_031
+
+  [OK]             e02_000_031
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_032 Library Floor Two
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_032
+    ✔ [auto-fix] Header reformatted in e02_000_032
+
+  [OK]             e02_000_032
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_033 Cleaning Closet Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_033
+    ✔ [auto-fix] Header reformatted in e02_000_033
+
+  [OK]             e02_000_033
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_037 Locker Room Poster
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_037
+    ✔ [auto-fix] Header reformatted in e02_000_037
+
+  [OK]             e02_000_037
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_103 Room Surveillance Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_103
+    ✔ [auto-fix] Header reformatted in e02_000_103
+
+  [OK]             e02_000_103
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 76): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_135 School Observation Thoughts
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_135
+    ✔ [auto-fix] Header reformatted in e02_000_135
+
+  [OK]             e02_000_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_136 Kitchen Investigation Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_136
+    ✔ [auto-fix] Header reformatted in e02_000_136
+
+  [OK]             e02_000_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 66): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_137 Trash Room Surveillance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_137
+    ✔ [auto-fix] Header reformatted in e02_000_137
+
+  [OK]             e02_000_137
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_139 Laundry Room Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_139
+    ✔ [auto-fix] Header reformatted in e02_000_139
+
+  [OK]             e02_000_139
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_140 Kitchen Pantry Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_140
+    ✔ [auto-fix] Header reformatted in e02_000_140
+
+  [OK]             e02_000_140
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_141 Locker Room Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_141
+    ✔ [auto-fix] Header reformatted in e02_000_141
+
+  [OK]             e02_000_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_144 Bathhouse Exploration Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_144
+    ✔ [auto-fix] Header reformatted in e02_000_144
+
+  [OK]             e02_000_144
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_145 Sauna Heat Source
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_145
+    ✔ [auto-fix] Header reformatted in e02_000_145
+
+  [OK]             e02_000_145
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_146 Fish Tank Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_146
+    ✔ [auto-fix] Header reformatted in e02_000_146
+
+  [OK]             e02_000_146
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_001_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_001_103
+    ✔ [auto-fix] Header reformatted in e02_001_103
+
+  [OK]             e02_001_103
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002 | MAKOTO NAEGI" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 51): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MAKOTO NAEGI" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | MAKOTO NAEGI" (line 91): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_001_105 Body Disposal Aftermath
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_001_105
+    ✔ [auto-fix] Header reformatted in e02_001_105
+
+  [OK]             e02_001_105
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MONOKUMA" (line 120): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_002_135 Post-Trial Dining Reunion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_002_135
+    ✔ [auto-fix] Header reformatted in e02_002_135
+
+  [OK]             e02_002_135
+    i [not_copy_of_source] Entry "0014 | AOI ASAHINA" (line 118): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0047 | CHIHIRO FUJISAKI" (line 373): translation is identical to source text
+    i [not_copy_of_source] Entry "0049 | CHIHIRO FUJISAKI" (line 388): translation is identical to source text
+    i [not_copy_of_source] Entry "0071 | MAKOTO NAEGI" (line 560): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_003_006 Gym Morning Exercise
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_003_006
+    ✔ [auto-fix] Header reformatted in e02_003_006
+
+  [OK]             e02_003_006
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 86): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_001 Second Floor Access
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_001
+    ✔ [auto-fix] Header reformatted in e02_004_001
+
+  [OK]             e02_004_001
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 247): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_004 Trophy Case Omen
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_004
+    ✔ [auto-fix] Header reformatted in e02_004_004
+
+  [OK]             e02_004_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_006 Surveillance Monitor Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_006
+    ✔ [auto-fix] Header reformatted in e02_004_006
+
+  [OK]             e02_004_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_021 School Floor Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_021
+    ✔ [auto-fix] Header reformatted in e02_004_021
+
+  [OK]             e02_004_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_031 New Floor Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_031
+    ✔ [auto-fix] Header reformatted in e02_004_031
+
+  [OK]             e02_004_031
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_032 Monitor Surveillance Data
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_032
+    ✔ [auto-fix] Header reformatted in e02_004_032
+
+  [OK]             e02_004_032
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_005_022 Library Investigation Start
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_005_022
+    ✔ [auto-fix] Header reformatted in e02_005_022
+
+  [OK]             e02_005_022
+    i [not_copy_of_source] Entry "0154 | MAKOTO NAEGI" (line 1457): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_026 Pool Discovery Excitement
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_026
+    ✔ [auto-fix] Header reformatted in e02_006_026
+
+  [OK]             e02_006_026
+    i [not_copy_of_source] Entry "0021 | CHIHIRO FUJISAKI" (line 173): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_027 Locker Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_027
+    ✔ [auto-fix] Header reformatted in e02_006_027
+
+  [OK]             e02_006_027
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_030 Pool Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_030
+    ✔ [auto-fix] Header reformatted in e02_006_030
+
+  [OK]             e02_006_030
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_007_135 Investigation Discovery Report
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_007_135
+    ✔ [auto-fix] Header reformatted in e02_007_135
+
+  [OK]             e02_007_135
+    i [not_copy_of_source] Entry "0026 | BYAKUYA TOGAMI" (line 224): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_008_101 Dining Hall Heading
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_008_101
+    ✔ [auto-fix] Header reformatted in e02_008_101
+
+  [OK]             e02_008_101
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 133): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MAKOTO NAEGI" (line 143): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_008_103 Nighttime Announcement Rules
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_008_103
+    ✔ [auto-fix] Header reformatted in e02_008_103
+
+  [OK]             e02_008_103
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 278): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_001 Locked Door Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_001
+    ✔ [auto-fix] Header reformatted in e02_009_001
+
+  [OK]             e02_009_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_021 Finding Byakuya Byakuya
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_021
+    ✔ [auto-fix] Header reformatted in e02_009_021
+
+  [OK]             e02_009_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_026 Locker Room Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_026
+    ✔ [auto-fix] Header reformatted in e02_009_026
+
+  [OK]             e02_009_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_101 Dorm Door Banging
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_101
+    ✔ [auto-fix] Header reformatted in e02_009_101
+
+  [OK]             e02_009_101
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 240): translation is identical to source text
+    i [not_copy_of_source] Entry "0046 | MAKOTO NAEGI" (line 394): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | MAKOTO NAEGI" (line 409): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_135 Dining Hall Morning
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_135
+    ✔ [auto-fix] Header reformatted in e02_009_135
+
+  [OK]             e02_009_135
+    i [not_copy_of_source] Entry "0081 | MAKOTO NAEGI" (line 634): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_136 Kitchen Tea Quest
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_136
+    ✔ [auto-fix] Header reformatted in e02_009_136
+
+  [OK]             e02_009_136
+    i [not_copy_of_source] Entry "0017 | MAKOTO NAEGI" (line 174): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_140 Warehouse Investigation Report
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_140
+    ✔ [auto-fix] Header reformatted in e02_009_140
+
+  [OK]             e02_009_140
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_141 Bathhouse Search Talk
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_141
+    ✔ [auto-fix] Header reformatted in e02_009_141
+
+  [OK]             e02_009_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_146 Bathroom Fortune Prediction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_146
+    ✔ [auto-fix] Header reformatted in e02_009_146
+
+  [OK]             e02_009_146
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_010_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_010_022
+
+  [1 WARN]         e02_010_022
+    ! [untranslated] 131 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | BYAKUYA TOGAMI, 0012 | MAKOTO NAEGI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | KIYOTAKA ISHIMARU, 0018 | YASUHIRO HAGAKURE, 0019 | SAKURA OOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | BYAKUYA TOGAMI, 0022 | AOI ASAHINA, 0023 | BYAKUYA TOGAMI, 0024 | HIFUMI YAMADA, 0025 | BYAKUYA TOGAMI, 0026 | MAKOTO NAEGI, 0027 | BYAKUYA TOGAMI, 0028 | MAKOTO NAEGI, 0029 | BYAKUYA TOGAMI, 0030 | BYAKUYA TOGAMI, 0031 | BYAKUYA TOGAMI, 0032 | BYAKUYA TOGAMI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MONDO OOWADA, 0038 | BYAKUYA TOGAMI, 0039 | BYAKUYA TOGAMI, 0040 | CELES, 0041 | MAKOTO NAEGI, 0042 | CELES, 0043 | CELES, 0044 | CELES, 0045 | CELES, 0046 | SAKURA OOGAMI, 0047 | CELES, 0048 | CELES, 0049 | CELES, 0050 | CELES, 0051 | BYAKUYA TOGAMI, 0052 | MAKOTO NAEGI, 0053 | CELES, 0054 | CELES, 0055 | BYAKUYA TOGAMI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | CELES, 0059 | BYAKUYA TOGAMI, 0060 | CELES, 0061 | YASUHIRO HAGAKURE, 0062 | AOI ASAHINA, 0063 | BYAKUYA TOGAMI, 0064 | MONDO OOWADA, 0065 | BYAKUYA TOGAMI, 0066 | MONDO OOWADA, 0067 | BYAKUYA TOGAMI, 0068 | MONDO OOWADA, 0069 | BYAKUYA TOGAMI, 0070 | YASUHIRO HAGAKURE, 0071 | CELES, 0072 | CELES, 0073 | CELES, 0074 | CELES, 0075 | CELES, 0076 | BYAKUYA TOGAMI, 0077 | CELES, 0078 | BYAKUYA TOGAMI, 0079 | CELES, 0080 | BYAKUYA TOGAMI, 0081 | BYAKUYA TOGAMI, 0082 | CHIHIRO FUJISAKI, 0083 | BYAKUYA TOGAMI, 0084 | CHIHIRO FUJISAKI, 0085 | CHIHIRO FUJISAKI, 0086 | CHIHIRO FUJISAKI, 0087 | BYAKUYA TOGAMI, 0088 | CHIHIRO FUJISAKI, 0089 | BYAKUYA TOGAMI, 0090 | CHIHIRO FUJISAKI, 0091 | BYAKUYA TOGAMI, 0092 | CHIHIRO FUJISAKI, 0093 | BYAKUYA TOGAMI, 0095 | CHIHIRO FUJISAKI, 0096 | MONDO OOWADA, 0097 | BYAKUYA TOGAMI, 0098 | MONDO OOWADA, 0099 | BYAKUYA TOGAMI, 0100 | BYAKUYA TOGAMI, 0101 | MONDO OOWADA, 0102 | AOI ASAHINA, 0103 | MONDO OOWADA, 0104 | AOI ASAHINA, 0105 | BYAKUYA TOGAMI, 0106 | BYAKUYA TOGAMI, 0107 | BYAKUYA TOGAMI, 0108 | MAKOTO NAEGI, 0109 | BYAKUYA TOGAMI, 0110 | BYAKUYA TOGAMI, 0111 | MONDO OOWADA, 0112 | BYAKUYA TOGAMI, 0113 | MAKOTO NAEGI, 0114 | MAKOTO NAEGI, 0115 | MAKOTO NAEGI, 0116 | YASUHIRO HAGAKURE, 0117 | CELES, 0118 | MONDO OOWADA, 0119 | TOUKO FUKAWA, 0120 | TOUKO FUKAWA, 0121 | AOI ASAHINA, 0122 | TOUKO FUKAWA, 0123 | TOUKO FUKAWA, 0124 | MAKOTO NAEGI, 0125 | TOUKO FUKAWA, 0126 | YASUHIRO HAGAKURE, 0127 | TOUKO FUKAWA, 0128 | TOUKO FUKAWA, 0129 | MAKOTO NAEGI, 0130 | CELES, 0132 | MAKOTO NAEGI, 0133 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0094 | CHIHIRO FUJISAKI" (line 626): translation is identical to source text
+    i [not_copy_of_source] Entry "0131 | MAKOTO NAEGI" (line 873): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_011_001
+
+  [1 WARN]         e02_011_001
+    ! [untranslated] 5 untranslated: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_011_021
+
+  [1 WARN]         e02_011_021
+    ! [untranslated] 3 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_011_022
+
+  [1 WARN]         e02_011_022
+    ! [untranslated] 33 untranslated: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | BYAKUYA TOGAMI, 0015 | MAKOTO NAEGI, 0016 | BYAKUYA TOGAMI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | CHOICE/RE:ACT, 0034 | CHOICE/RE:ACT, 0035 | NARRATION
+    i [not_copy_of_source] Entry "0001 | BYAKUYA TOGAMI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0029 | MAKOTO NAEGI" (line 269): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_011_101
+
+  [1 WARN]         e02_011_101
+    ! [untranslated] 23 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | NARRATION, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | NARRATION, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_011_103
+
+  [1 WARN]         e02_011_103
+    ! [untranslated] 43 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | NARRATION, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | CHOICE/RE:ACT, 0035 | CHOICE/RE:ACT, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | CHOICE/RE:ACT, 0043 | CHOICE/RE:ACT, 0044 | NARRATION
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 183): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_013_101
+
+  [1 WARN]         e02_013_101
+    ! [untranslated] 29 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_013_103
+
+  [1 WARN]         e02_013_103
+    ! [untranslated] 25 untranslated: 0001 | NARRATION, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | CHOICE/RE:ACT, 0025 | CHOICE/RE:ACT, 0026 | NARRATION
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 80): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_013_135
+
+  [1 WARN]         e02_013_135
+    ! [untranslated] 69 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | KIYOTAKA ISHIMARU, 0006 | CELES, 0007 | MAKOTO NAEGI, 0008 | AOI ASAHINA, 0009 | YASUHIRO HAGAKURE, 0010 | CELES, 0011 | KIYOTAKA ISHIMARU, 0012 | MONDO OOWADA, 0013 | MONDO OOWADA, 0014 | MONDO OOWADA, 0015 | MAKOTO NAEGI, 0016 | KIYOTAKA ISHIMARU, 0017 | KIYOTAKA ISHIMARU, 0018 | MONDO OOWADA, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | MONDO OOWADA, 0023 | MAKOTO NAEGI, 0024 | CHIHIRO FUJISAKI, 0025 | MAKOTO NAEGI, 0026 | CHIHIRO FUJISAKI, 0027 | CHIHIRO FUJISAKI, 0028 | CHIHIRO FUJISAKI, 0029 | AOI ASAHINA, 0030 | MONDO OOWADA, 0031 | MONDO OOWADA, 0033 | CHIHIRO FUJISAKI, 0034 | MONDO OOWADA, 0035 | AOI ASAHINA, 0036 | CHIHIRO FUJISAKI, 0037 | MONDO OOWADA, 0038 | AOI ASAHINA, 0039 | MONDO OOWADA, 0040 | MONDO OOWADA, 0041 | CHIHIRO FUJISAKI, 0042 | MONDO OOWADA, 0043 | MONDO OOWADA, 0044 | MONDO OOWADA, 0045 | HIFUMI YAMADA, 0046 | MONDO OOWADA, 0047 | MAKOTO NAEGI, 0048 | MONDO OOWADA, 0049 | MONDO OOWADA, 0050 | CHIHIRO FUJISAKI, 0051 | CHIHIRO FUJISAKI, 0052 | MONDO OOWADA, 0053 | CHIHIRO FUJISAKI, 0054 | CHIHIRO FUJISAKI, 0055 | MAKOTO NAEGI, 0056 | CHIHIRO FUJISAKI, 0057 | CHIHIRO FUJISAKI, 0058 | SAKURA OOGAMI, 0059 | HIFUMI YAMADA, 0060 | AOI ASAHINA, 0061 | CHIHIRO FUJISAKI, 0062 | YASUHIRO HAGAKURE, 0063 | CHIHIRO FUJISAKI, 0064 | CHIHIRO FUJISAKI, 0065 | MAKOTO NAEGI, 0066 | YASUHIRO HAGAKURE, 0067 | YASUHIRO HAGAKURE, 0068 | YASUHIRO HAGAKURE, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0022 | CHIHIRO FUJISAKI" (line 158): translation is identical to source text
+    i [not_copy_of_source] Entry "0032 | CHIHIRO FUJISAKI" (line 218): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_014_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_014_103
+
+  [1 WARN]         e02_014_103
+    ! [untranslated] 34 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | CHOICE/RE:ACT, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | CHOICE/RE:ACT, 0034 | CHOICE/RE:ACT, 0035 | NARRATION
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 104): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_016_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_016_101
+
+  [1 WARN]         e02_016_101
+    ! [untranslated] 52 untranslated: 0001 | CELES, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | CELES, 0005 | CELES, 0006 | CELES, 0007 | MAKOTO NAEGI, 0008 | CELES, 0009 | CELES, 0011 | CELES, 0012 | MAKOTO NAEGI, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | CELES, 0017 | CHIHIRO FUJISAKI, 0018 | CHIHIRO FUJISAKI, 0019 | MAKOTO NAEGI, 0020 | CHIHIRO FUJISAKI, 0021 | CHIHIRO FUJISAKI, 0022 | CHIHIRO FUJISAKI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | NARRATION, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | NARRATION, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 74): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_016_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_016_103
+
+  [1 WARN]         e02_016_103
+    ! [untranslated] 27 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | CHOICE/RE:ACT, 0028 | NARRATION
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 49): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_017_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_017_135
+
+  [1 WARN]         e02_017_135
+    ! [untranslated] 36 untranslated: 0001 | CHOICE/RE:ACT, 0002 | MAKOTO NAEGI, 0003 | MONDO OOWADA, 0004 | KIYOTAKA ISHIMARU, 0005 | KIYOTAKA ISHIMARU, 0006 | MONDO OOWADA, 0007 | MONDO OOWADA, 0008 | KIYOTAKA ISHIMARU, 0009 | MONDO OOWADA, 0010 | KIYOTAKA ISHIMARU, 0011 | MONDO OOWADA, 0012 | KIYOTAKA ISHIMARU, 0013 | MONDO OOWADA, 0014 | MAKOTO NAEGI, 0015 | MONDO OOWADA, 0016 | KIYOTAKA ISHIMARU, 0017 | KIYOTAKA ISHIMARU, 0018 | MONDO OOWADA, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | KIYOTAKA ISHIMARU, 0023 | MAKOTO NAEGI, 0024 | MONDO OOWADA, 0025 | MAKOTO NAEGI, 0026 | MONDO OOWADA, 0027 | MAKOTO NAEGI, 0028 | KIYOTAKA ISHIMARU, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | KIYOTAKA ISHIMARU, 0034 | KIYOTAKA ISHIMARU, 0035 | MONDO OOWADA, 0036 | MONDO OOWADA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_017_144
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_017_144
+
+  [1 WARN]         e02_017_144
+    ! [untranslated] 53 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONDO OOWADA, 0003 | KIYOTAKA ISHIMARU, 0004 | MONDO OOWADA, 0005 | MONDO OOWADA, 0006 | MAKOTO NAEGI, 0007 | MONDO OOWADA, 0008 | KIYOTAKA ISHIMARU, 0009 | MONDO OOWADA, 0010 | KIYOTAKA ISHIMARU, 0011 | MONDO OOWADA, 0012 | KIYOTAKA ISHIMARU, 0013 | MONDO OOWADA, 0014 | KIYOTAKA ISHIMARU, 0015 | MONDO OOWADA, 0016 | MONDO OOWADA, 0017 | KIYOTAKA ISHIMARU, 0018 | MONDO OOWADA, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | KIYOTAKA ISHIMARU, 0027 | MONDO OOWADA, 0028 | KIYOTAKA ISHIMARU, 0029 | MONDO OOWADA, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | ISHIDA, 0033 | MAKOTO NAEGI, 0034 | NARRATION, 0035 | MONOKUMA, 0036 | MONOKUMA, 0037 | MONOKUMA, 0038 | MONOKUMA, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | KIYOTAKA ISHIMARU, 0042 | KIYOTAKA ISHIMARU, 0043 | MONDO OOWADA, 0044 | MONDO OOWADA, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MONDO OOWADA, 0048 | MONDO OOWADA, 0049 | KIYOTAKA ISHIMARU, 0050 | KIYOTAKA ISHIMARU, 0051 | MONDO OOWADA, 0052 | KIYOTAKA ISHIMARU, 0054 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0053 | MAKOTO NAEGI" (line 349): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_018_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_018_103
+
+  [1 WARN]         e02_018_103
+    ! [untranslated] 16 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | NARRATION, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_018_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_018_135
+
+  [1 WARN]         e02_018_135
+    ! [untranslated] 24 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MONDO OOWADA, 0004 | KIYOTAKA ISHIMARU, 0005 | MAKOTO NAEGI, 0006 | MONDO OOWADA, 0007 | KIYOTAKA ISHIMARU, 0008 | MAKOTO NAEGI, 0009 | AOI ASAHINA, 0010 | MONDO OOWADA, 0011 | AOI ASAHINA, 0012 | KIYOTAKA ISHIMARU, 0013 | KIYOTAKA ISHIMARU, 0014 | MONDO OOWADA, 0015 | KIYOTAKA ISHIMARU, 0016 | MAKOTO NAEGI, 0017 | MONDO OOWADA, 0018 | KIYOTAKA ISHIMARU, 0019 | MAKOTO NAEGI, 0020 | SAKURA OOGAMI, 0021 | AOI ASAHINA, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_019_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_019_103
+
+  [1 WARN]         e02_019_103
+    ! [untranslated] 46 untranslated: 0001 | CHOICE/RE:ACT, 0002 | MAKOTO NAEGI, 0003 | TOUKO FUKAWA, 0004 | TOUKO FUKAWA, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | TOUKO FUKAWA, 0008 | MAKOTO NAEGI, 0009 | TOUKO FUKAWA, 0010 | MAKOTO NAEGI, 0011 | TOUKO FUKAWA, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | NARRATION, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | TOUKO FUKAWA, 0020 | TOUKO FUKAWA, 0021 | MAKOTO NAEGI, 0022 | TOUKO FUKAWA, 0023 | TOUKO FUKAWA, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0031 | MAKOTO NAEGI" (line 226): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_020_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_020_021
+
+  [1 WARN]         e02_020_021
+    ! [untranslated] 23 untranslated: 0002 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | TOUKO FUKAWA, 0007 | MAKOTO NAEGI, 0008 | TOUKO FUKAWA, 0010 | TOUKO FUKAWA, 0011 | MAKOTO NAEGI, 0012 | TOUKO FUKAWA, 0013 | MAKOTO NAEGI, 0014 | TOUKO FUKAWA, 0015 | TOUKO FUKAWA, 0016 | TOUKO FUKAWA, 0017 | MAKOTO NAEGI, 0018 | TOUKO FUKAWA, 0019 | TOUKO FUKAWA, 0021 | MONOKUMA, 0022 | MAKOTO NAEGI, 0023 | MONOKUMA, 0024 | MONOKUMA, 0025 | MONOKUMA, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0001 | TOUKO FUKAWA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | TOUKO FUKAWA" (line 29): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 67): translation is identical to source text
+    i [not_copy_of_source] Entry "0020 | MAKOTO NAEGI" (line 133): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 169): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_020_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_020_022
+
+  [1 WARN]         e02_020_022
+    ! [untranslated] 56 untranslated: 0001 | TOUKO FUKAWA, 0002 | TOUKO FUKAWA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | TOUKO FUKAWA, 0007 | MAKOTO NAEGI, 0008 | TOUKO FUKAWA, 0009 | MAKOTO NAEGI, 0010 | TOUKO FUKAWA, 0011 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | MAKOTO NAEGI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI, 0020 | TOUKO FUKAWA, 0022 | TOUKO FUKAWA, 0023 | BYAKUYA TOGAMI, 0024 | TOUKO FUKAWA, 0025 | BYAKUYA TOGAMI, 0026 | BYAKUYA TOGAMI, 0027 | TOUKO FUKAWA, 0028 | BYAKUYA TOGAMI, 0029 | TOUKO FUKAWA, 0030 | TOUKO FUKAWA, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | TOUKO FUKAWA, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | TOUKO FUKAWA
+    i [not_copy_of_source] Entry "0012 | BYAKUYA TOGAMI" (line 88): translation is identical to source text
+    i [not_copy_of_source] Entry "0019 | TOUKO FUKAWA" (line 131): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | BYAKUYA TOGAMI" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0042 | MAKOTO NAEGI" (line 305): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_021_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_021_103
+
+  [1 WARN]         e02_021_103
+    ! [untranslated] 26 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | CHOICE/RE:ACT, 0018 | CHOICE/RE:ACT, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | CHOICE/RE:ACT, 0026 | CHOICE/RE:ACT, 0027 | NARRATION
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 57): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_001
+
+  [1 WARN]         e02_022_001
+    ! [untranslated] 11 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 34): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_003
+
+  [1 WARN]         e02_022_003
+    ! [untranslated] 11 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_004
+
+  [1 WARN]         e02_022_004
+    ! [untranslated] 16 untranslated: 0001 | MAKOTO NAEGI, 0002 | HIFUMI YAMADA, 0003 | HIFUMI YAMADA, 0004 | MAKOTO NAEGI, 0005 | HIFUMI YAMADA, 0006 | HIFUMI YAMADA, 0007 | MAKOTO NAEGI, 0008 | HIFUMI YAMADA, 0009 | HIFUMI YAMADA, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_010
+
+  [1 WARN]         e02_022_010
+    ! [untranslated] 11 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_101
+
+  [1 WARN]         e02_022_101
+    ! [untranslated] 44 untranslated: 0001 | MAKOTO NAEGI, 0002 | KYOUKO KIRIGIRI, 0003 | MAKOTO NAEGI, 0004 | KYOUKO KIRIGIRI, 0005 | KYOUKO KIRIGIRI, 0006 | MAKOTO NAEGI, 0007 | MONDO OOWADA, 0008 | MAKOTO NAEGI, 0009 | MONDO OOWADA, 0010 | MONDO OOWADA, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MONDO OOWADA, 0014 | MONDO OOWADA, 0015 | MONDO OOWADA, 0016 | MONDO OOWADA, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_022_103
+
+  [1 WARN]         e02_022_103
+    ! [untranslated] 31 untranslated: 0001 | NARRATION, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | CHOICE/RE:ACT, 0032 | CHOICE/RE:ACT, 0033 | NARRATION
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 57): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 105): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_023_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_023_006
+
+  [1 WARN]         e02_023_006
+    ! [untranslated] 143 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | CELES, 0003 | BYAKUYA TOGAMI, 0004 | HIFUMI YAMADA, 0005 | HIFUMI YAMADA, 0006 | AOI ASAHINA, 0007 | BYAKUYA TOGAMI, 0008 | AOI ASAHINA, 0009 | BYAKUYA TOGAMI, 0010 | BYAKUYA TOGAMI, 0011 | BYAKUYA TOGAMI, 0012 | AOI ASAHINA, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | AOI ASAHINA, 0016 | AOI ASAHINA, 0017 | KYOUKO KIRIGIRI, 0018 | KYOUKO KIRIGIRI, 0019 | HIFUMI YAMADA, 0020 | CELES, 0021 | YASUHIRO HAGAKURE, 0022 | TOUKO FUKAWA, 0023 | YASUHIRO HAGAKURE, 0024 | YASUHIRO HAGAKURE, 0025 | YASUHIRO HAGAKURE, 0026 | YASUHIRO HAGAKURE, 0027 | CHIHIRO FUJISAKI, 0028 | YASUHIRO HAGAKURE, 0029 | KIYOTAKA ISHIMARU, 0030 | YASUHIRO HAGAKURE, 0031 | YASUHIRO HAGAKURE, 0032 | YASUHIRO HAGAKURE, 0033 | MAKOTO NAEGI, 0034 | YASUHIRO HAGAKURE, 0035 | TOUKO FUKAWA, 0036 | NO NAME, 0037 | KYOUKO KIRIGIRI, 0038 | MONOKUMA, 0039 | MONOKUMA, 0040 | MAKOTO NAEGI, 0041 | MONOKUMA, 0042 | MAKOTO NAEGI, 0043 | MONOKUMA, 0044 | MONOKUMA, 0045 | KYOUKO KIRIGIRI, 0046 | KYOUKO KIRIGIRI, 0047 | MONOKUMA, 0048 | MONOKUMA, 0049 | MONOKUMA, 0050 | MONOKUMA, 0051 | MONOKUMA, 0052 | MONOKUMA, 0053 | MONOKUMA, 0054 | MONOKUMA, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MONOKUMA, 0059 | KIYOTAKA ISHIMARU, 0060 | KIYOTAKA ISHIMARU, 0061 | MONOKUMA, 0062 | MONOKUMA, 0063 | MONOKUMA, 0064 | MONOKUMA, 0065 | MONOKUMA, 0066 | MONOKUMA, 0067 | MONOKUMA, 0068 | MONOKUMA, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | NARRATION, 0074 | MAKOTO NAEGI, 0075 | AOI ASAHINA, 0076 | KIYOTAKA ISHIMARU, 0077 | MAKOTO NAEGI, 0078 | MONOKUMA, 0079 | MONOKUMA, 0080 | MONOKUMA, 0081 | MONOKUMA, 0083 | MAKOTO NAEGI, 0084 | MONOKUMA, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MONOKUMA, 0088 | KIYOTAKA ISHIMARU, 0089 | MONOKUMA, 0090 | MONOKUMA, 0091 | MONOKUMA, 0092 | MONOKUMA, 0093 | MONOKUMA, 0094 | MONOKUMA, 0095 | MONOKUMA, 0096 | MONOKUMA, 0097 | MAKOTO NAEGI, 0098 | AOI ASAHINA, 0099 | AOI ASAHINA, 0100 | AOI ASAHINA, 0101 | KIYOTAKA ISHIMARU, 0102 | KIYOTAKA ISHIMARU, 0103 | KIYOTAKA ISHIMARU, 0104 | KIYOTAKA ISHIMARU, 0105 | TOUKO FUKAWA, 0106 | KIYOTAKA ISHIMARU, 0107 | TOUKO FUKAWA, 0108 | TOUKO FUKAWA, 0109 | CELES, 0110 | HIFUMI YAMADA, 0111 | CELES, 0112 | HIFUMI YAMADA, 0113 | CELES, 0114 | HIFUMI YAMADA, 0115 | CELES, 0116 | HIFUMI YAMADA, 0117 | BYAKUYA TOGAMI, 0118 | KIYOTAKA ISHIMARU, 0119 | CHIHIRO FUJISAKI, 0120 | CHIHIRO FUJISAKI, 0121 | CHIHIRO FUJISAKI, 0122 | AOI ASAHINA, 0123 | MONDO OOWADA, 0124 | KIYOTAKA ISHIMARU, 0125 | KIYOTAKA ISHIMARU, 0126 | MAKOTO NAEGI, 0127 | MAKOTO NAEGI, 0128 | MAKOTO NAEGI, 0129 | KIYOTAKA ISHIMARU, 0130 | KIYOTAKA ISHIMARU, 0131 | KIYOTAKA ISHIMARU, 0132 | KIYOTAKA ISHIMARU, 0133 | HIFUMI YAMADA, 0134 | KIYOTAKA ISHIMARU, 0135 | NARRATION, 0136 | MONOKUMA, 0137 | MONOKUMA, 0138 | MONOKUMA, 0139 | MONOKUMA, 0140 | YASUHIRO HAGAKURE, 0141 | SAKURA OOGAMI, 0142 | MAKOTO NAEGI, 0143 | MAKOTO NAEGI, 0144 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0082 | MAKOTO NAEGI" (line 536): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_024_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_024_101
+
+  [1 WARN]         e02_024_101
+    ! [untranslated] 26 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_024_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_024_103
+
+  [1 WARN]         e02_024_103
+    ! [untranslated] 47 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA, 0022 | NO NAME, 0023 | NO NAME, 0024 | NO NAME, 0025 | MONOKUMA, 0026 | MAKOTO NAEGI, 0027 | MONOKUMA, 0028 | MAKOTO NAEGI, 0029 | MONOKUMA, 0030 | MAKOTO NAEGI, 0031 | MONOKUMA, 0032 | MONOKUMA, 0033 | MAKOTO NAEGI, 0034 | MONOKUMA, 0035 | MONOKUMA, 0036 | MAKOTO NAEGI, 0037 | MONOKUMA, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MONOKUMA, 0041 | MONOKUMA, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0021 | NO NAME" (line 172): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_001
+
+  [1 WARN]         e02_025_001
+    ! [untranslated] 19 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | MAKOTO NAEGI, 0003 | YASUHIRO HAGAKURE, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | YASUHIRO HAGAKURE, 0007 | MAKOTO NAEGI, 0008 | YASUHIRO HAGAKURE, 0009 | YASUHIRO HAGAKURE, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | MAKOTO NAEGI, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 103): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_021
+
+  [1 WARN]         e02_025_021
+    ! [untranslated] 3 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_022
+
+  [1 WARN]         e02_025_022
+    ! [untranslated] 34 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | BYAKUYA TOGAMI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | BYAKUYA TOGAMI, 0032 | BYAKUYA TOGAMI, 0033 | CHOICE/RE:ACT, 0034 | CHOICE/RE:ACT, 0035 | NARRATION
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 114): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_101
+
+  [1 WARN]         e02_025_101
+    ! [untranslated] 49 untranslated: 0001 | AOI ASAHINA, 0002 | AOI ASAHINA, 0003 | AOI ASAHINA, 0004 | AOI ASAHINA, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | NARRATION, 0011 | NARRATION, 0013 | MAKOTO NAEGI, 0014 | NARRATION, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | NARRATION, 0019 | NARRATION, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | NARRATION, 0025 | NARRATION, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | NARRATION, 0032 | NARRATION, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | NARRATION, 0038 | NARRATION, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | NARRATION, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | NARRATION, 0047 | NARRATION, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | NARRATION, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | NARRATION, 0057 | NARRATION, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 82): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 95): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 138): translation is identical to source text
+    i [not_copy_of_source] Entry "0020 | MAKOTO NAEGI" (line 151): translation is identical to source text
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 180): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 193): translation is identical to source text
+    i [not_copy_of_source] Entry "0031 | MAKOTO NAEGI" (line 232): translation is identical to source text
+    i [not_copy_of_source] Entry "0033 | MAKOTO NAEGI" (line 245): translation is identical to source text
+    i [not_copy_of_source] Entry "0037 | MAKOTO NAEGI" (line 274): translation is identical to source text
+    i [not_copy_of_source] Entry "0039 | MAKOTO NAEGI" (line 287): translation is identical to source text
+    i [not_copy_of_source] Entry "0046 | MAKOTO NAEGI" (line 340): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | MAKOTO NAEGI" (line 353): translation is identical to source text
+    i [not_copy_of_source] Entry "0056 | MAKOTO NAEGI" (line 416): translation is identical to source text
+    i [not_copy_of_source] Entry "0058 | MAKOTO NAEGI" (line 429): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_135
+
+  [1 WARN]         e02_025_135
+    ! [untranslated] 35 untranslated: 0001 | AOI ASAHINA, 0002 | YASUHIRO HAGAKURE, 0003 | SAKURA OOGAMI, 0004 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | MAKOTO NAEGI, 0011 | SAKURA OOGAMI, 0012 | SAKURA OOGAMI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | YASUHIRO HAGAKURE, 0016 | AOI ASAHINA, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI, 0019 | MAKOTO NAEGI, 0020 | BYAKUYA TOGAMI, 0021 | AOI ASAHINA, 0022 | BYAKUYA TOGAMI, 0023 | BYAKUYA TOGAMI, 0024 | AOI ASAHINA, 0025 | YASUHIRO HAGAKURE, 0026 | SAKURA OOGAMI, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | CHOICE/RE:ACT, 0035 | CHOICE/RE:ACT, 0036 | NARRATION
+    i [not_copy_of_source] Entry "0005 | BYAKUYA TOGAMI" (line 38): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_137
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_025_137
+
+  [1 WARN]         e02_025_137
+    ! [untranslated] 20 untranslated: 0001 | SAKURA OOGAMI, 0002 | MAKOTO NAEGI, 0003 | SAKURA OOGAMI, 0004 | SAKURA OOGAMI, 0005 | MAKOTO NAEGI, 0006 | SAKURA OOGAMI, 0007 | SAKURA OOGAMI, 0008 | SAKURA OOGAMI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | NARRATION, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | CHOICE/RE:ACT, 0019 | CHOICE/RE:ACT, 0020 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_026_026
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_026_026
+
+  [1 WARN]         e02_026_026
+    ! [untranslated] 36 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | NARRATION, 0018 | MONOKUMA, 0019 | MAKOTO NAEGI, 0020 | BYAKUYA TOGAMI, 0021 | MAKOTO NAEGI, 0022 | BYAKUYA TOGAMI, 0023 | MAKOTO NAEGI, 0024 | BYAKUYA TOGAMI, 0025 | BYAKUYA TOGAMI, 0026 | MAKOTO NAEGI, 0027 | BYAKUYA TOGAMI, 0028 | MAKOTO NAEGI, 0029 | BYAKUYA TOGAMI, 0030 | BYAKUYA TOGAMI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_027_029
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_027_029
+
+  [1 WARN]         e02_027_029
+    ! [untranslated] 287 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | BYAKUYA TOGAMI, 0005 | MAKOTO NAEGI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | BYAKUYA TOGAMI, 0011 | MAKOTO NAEGI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | NARRATION, 0022 | MONOKUMA, 0023 | MONOKUMA, 0024 | MAKOTO NAEGI, 0025 | BYAKUYA TOGAMI, 0026 | BYAKUYA TOGAMI, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | MAKOTO NAEGI, 0030 | KIYOTAKA ISHIMARU, 0031 | BYAKUYA TOGAMI, 0032 | KIYOTAKA ISHIMARU, 0033 | BYAKUYA TOGAMI, 0034 | BYAKUYA TOGAMI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | SAKURA OOGAMI, 0041 | KIYOTAKA ISHIMARU, 0042 | CELES, 0043 | MONDO OOWADA, 0044 | MONDO OOWADA, 0045 | HIFUMI YAMADA, 0046 | HIFUMI YAMADA, 0047 | HIFUMI YAMADA, 0048 | CELES, 0049 | SAKURA OOGAMI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | SAKURA OOGAMI, 0053 | SAKURA OOGAMI, 0054 | MAKOTO NAEGI, 0055 | SAKURA OOGAMI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | SAKURA OOGAMI, 0060 | MAKOTO NAEGI, 0061 | SAKURA OOGAMI, 0062 | SAKURA OOGAMI, 0063 | MAKOTO NAEGI, 0064 | SAKURA OOGAMI, 0065 | SAKURA OOGAMI, 0066 | SAKURA OOGAMI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | SAKURA OOGAMI, 0070 | NARRATION, 0072 | MAKOTO NAEGI, 0073 | MAKOTO NAEGI, 0074 | BYAKUYA TOGAMI, 0076 | MAKOTO NAEGI, 0077 | MONDO OOWADA, 0078 | MONDO OOWADA, 0079 | MAKOTO NAEGI, 0080 | MONDO OOWADA, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | MONDO OOWADA, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | NARRATION, 0087 | BYAKUYA TOGAMI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | KYOUKO KIRIGIRI, 0094 | KYOUKO KIRIGIRI, 0095 | KIYOTAKA ISHIMARU, 0096 | BYAKUYA TOGAMI, 0097 | BYAKUYA TOGAMI, 0098 | BYAKUYA TOGAMI, 0099 | BYAKUYA TOGAMI, 0100 | YASUHIRO HAGAKURE, 0101 | MAKOTO NAEGI, 0102 | MAKOTO NAEGI, 0103 | AOI ASAHINA, 0104 | AOI ASAHINA, 0105 | BYAKUYA TOGAMI, 0106 | YASUHIRO HAGAKURE, 0107 | AOI ASAHINA, 0108 | CELES, 0109 | SAKURA OOGAMI, 0110 | AOI ASAHINA, 0111 | HIFUMI YAMADA, 0112 | AOI ASAHINA, 0113 | MAKOTO NAEGI, 0114 | TOUKO FUKAWA, 0115 | MAKOTO NAEGI, 0116 | TOUKO FUKAWA, 0117 | TOUKO FUKAWA, 0118 | TOUKO FUKAWA, 0119 | TOUKO FUKAWA, 0120 | NARRATION, 0121 | YASUHIRO HAGAKURE, 0122 | AOI ASAHINA, 0123 | YASUHIRO HAGAKURE, 0124 | AOI ASAHINA, 0125 | HIFUMI YAMADA, 0126 | CELES, 0127 | YASUHIRO HAGAKURE, 0128 | MAKOTO NAEGI, 0129 | YASUHIRO HAGAKURE, 0130 | AOI ASAHINA, 0131 | MAKOTO NAEGI, 0132 | MAKOTO NAEGI, 0133 | MAKOTO NAEGI, 0134 | TOUKO FUKAWA, 0135 | TOUKO FUKAWA, 0136 | MAKOTO NAEGI, 0137 | MAKOTO NAEGI, 0138 | AOI ASAHINA, 0139 | TOUKO FUKAWA, 0140 | MAKOTO NAEGI, 0141 | TOUKO FUKAWA, 0142 | TOUKO FUKAWA, 0143 | TOUKO FUKAWA, 0144 | YASUHIRO HAGAKURE, 0145 | TOUKO FUKAWA, 0146 | HIFUMI YAMADA, 0147 | TOUKO FUKAWA, 0148 | TOUKO FUKAWA, 0149 | KIYOTAKA ISHIMARU, 0150 | SAKURA OOGAMI, 0151 | AOI ASAHINA, 0152 | HIFUMI YAMADA, 0153 | AOI ASAHINA, 0154 | HIFUMI YAMADA, 0155 | BYAKUYA TOGAMI, 0156 | BYAKUYA TOGAMI, 0157 | MAKOTO NAEGI, 0158 | BYAKUYA TOGAMI, 0159 | MAKOTO NAEGI, 0160 | BYAKUYA TOGAMI, 0161 | BYAKUYA TOGAMI, 0162 | MONOKUMA, 0163 | MONOKUMA, 0164 | MONOKUMA, 0165 | MONOKUMA, 0166 | MAKOTO NAEGI, 0167 | MAKOTO NAEGI, 0168 | MAKOTO NAEGI, 0169 | MAKOTO NAEGI, 0170 | MAKOTO NAEGI, 0171 | MONOKUMA, 0172 | MONOKUMA, 0173 | MONOKUMA, 0174 | BYAKUYA TOGAMI, 0175 | MONOKUMA, 0176 | MONOKUMA, 0177 | MONOKUMA, 0178 | AOI ASAHINA, 0179 | AOI ASAHINA, 0180 | AOI ASAHINA, 0181 | AOI ASAHINA, 0182 | YASUHIRO HAGAKURE, 0183 | YASUHIRO HAGAKURE, 0184 | SAKURA OOGAMI, 0185 | BYAKUYA TOGAMI, 0186 | CELES, 0187 | BYAKUYA TOGAMI, 0188 | MAKOTO NAEGI, 0189 | BYAKUYA TOGAMI, 0190 | BYAKUYA TOGAMI, 0191 | MONDO OOWADA, 0192 | MONDO OOWADA, 0193 | KYOUKO KIRIGIRI, 0194 | MAKOTO NAEGI, 0195 | KYOUKO KIRIGIRI, 0196 | KYOUKO KIRIGIRI, 0197 | KYOUKO KIRIGIRI, 0198 | HIFUMI YAMADA, 0199 | MONOKUMA, 0200 | MONOKUMA, 0201 | HIFUMI YAMADA, 0202 | MONOKUMA, 0203 | MONOKUMA, 0204 | NARRATION, 0205 | SAKURA OOGAMI, 0206 | MONOKUMA, 0207 | MONOKUMA, 0208 | MONOKUMA, 0209 | CELES, 0210 | CELES, 0211 | BYAKUYA TOGAMI, 0212 | MONDO OOWADA, 0213 | AOI ASAHINA, 0214 | TOUKO FUKAWA, 0215 | CELES, 0216 | CELES, 0217 | CELES, 0218 | MAKOTO NAEGI, 0219 | MAKOTO NAEGI, 0220 | MAKOTO NAEGI, 0221 | MAKOTO NAEGI, 0222 | MAKOTO NAEGI, 0223 | MAKOTO NAEGI, 0224 | MAKOTO NAEGI, 0225 | MAKOTO NAEGI, 0226 | MAKOTO NAEGI, 0227 | MAKOTO NAEGI, 0228 | MAKOTO NAEGI, 0229 | MAKOTO NAEGI, 0230 | NARRATION, 0231 | BYAKUYA TOGAMI, 0232 | MAKOTO NAEGI, 0233 | MAKOTO NAEGI, 0234 | BYAKUYA TOGAMI, 0235 | MAKOTO NAEGI, 0236 | BYAKUYA TOGAMI, 0237 | MAKOTO NAEGI, 0238 | BYAKUYA TOGAMI, 0239 | MAKOTO NAEGI, 0240 | BYAKUYA TOGAMI, 0241 | BYAKUYA TOGAMI, 0242 | MAKOTO NAEGI, 0243 | BYAKUYA TOGAMI, 0244 | MAKOTO NAEGI, 0245 | BYAKUYA TOGAMI, 0247 | MAKOTO NAEGI, 0248 | MAKOTO NAEGI, 0249 | MAKOTO NAEGI, 0250 | MAKOTO NAEGI, 0251 | MAKOTO NAEGI, 0252 | MAKOTO NAEGI, 0253 | MAKOTO NAEGI, 0254 | BYAKUYA TOGAMI, 0255 | MAKOTO NAEGI, 0256 | BYAKUYA TOGAMI, 0257 | NARRATION, 0258 | MAKOTO NAEGI, 0259 | MAKOTO NAEGI, 0260 | MAKOTO NAEGI, 0261 | SAKURA OOGAMI, 0262 | SAKURA OOGAMI, 0263 | MAKOTO NAEGI, 0264 | MAKOTO NAEGI, 0265 | BYAKUYA TOGAMI, 0266 | MAKOTO NAEGI, 0267 | BYAKUYA TOGAMI, 0268 | MAKOTO NAEGI, 0269 | MAKOTO NAEGI, 0270 | MAKOTO NAEGI, 0271 | MAKOTO NAEGI, 0272 | BYAKUYA TOGAMI, 0273 | MAKOTO NAEGI, 0274 | BYAKUYA TOGAMI, 0275 | BYAKUYA TOGAMI, 0276 | BYAKUYA TOGAMI, 0277 | KYOUKO KIRIGIRI, 0278 | KYOUKO KIRIGIRI, 0279 | MAKOTO NAEGI, 0280 | BYAKUYA TOGAMI, 0281 | KYOUKO KIRIGIRI, 0282 | KYOUKO KIRIGIRI, 0283 | MAKOTO NAEGI, 0284 | BYAKUYA TOGAMI, 0285 | BYAKUYA TOGAMI, 0286 | MAKOTO NAEGI, 0287 | BYAKUYA TOGAMI, 0288 | MAKOTO NAEGI, 0289 | BYAKUYA TOGAMI, 0290 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0071 | KYOUKO KIRIGIRI" (line 502): translation is identical to source text
+    i [not_copy_of_source] Entry "0075 | KYOUKO KIRIGIRI" (line 532): translation is identical to source text
+    i [not_copy_of_source] Entry "0246 | MAKOTO NAEGI" (line 1742): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_028_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_028_003
+
+  [1 WARN]         e02_028_003
+    ! [untranslated] 133 untranslated: 0001 | CHOICE/RE:ACT, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | BYAKUYA TOGAMI, 0005 | MAKOTO NAEGI, 0006 | NO NAME, 0007 | AOI ASAHINA, 0008 | BYAKUYA TOGAMI, 0009 | AOI ASAHINA, 0010 | AOI ASAHINA, 0011 | CHOICE/RE:ACT, 0012 | MAKOTO NAEGI, 0013 | AOI ASAHINA, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | MAKOTO NAEGI, 0019 | BYAKUYA TOGAMI, 0020 | MAKOTO NAEGI, 0021 | AOI ASAHINA, 0022 | MAKOTO NAEGI, 0023 | BYAKUYA TOGAMI, 0024 | MAKOTO NAEGI, 0025 | CHOICE/RE:ACT, 0026 | MAKOTO NAEGI, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | BYAKUYA TOGAMI, 0030 | BYAKUYA TOGAMI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | BYAKUYA TOGAMI, 0035 | MAKOTO NAEGI, 0036 | BYAKUYA TOGAMI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0042 | BYAKUYA TOGAMI, 0043 | MAKOTO NAEGI, 0044 | BYAKUYA TOGAMI, 0045 | BYAKUYA TOGAMI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | BYAKUYA TOGAMI, 0049 | BYAKUYA TOGAMI, 0050 | BYAKUYA TOGAMI, 0051 | AOI ASAHINA, 0052 | MAKOTO NAEGI, 0053 | AOI ASAHINA, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | BYAKUYA TOGAMI, 0064 | MAKOTO NAEGI, 0065 | BYAKUYA TOGAMI, 0066 | BYAKUYA TOGAMI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | BYAKUYA TOGAMI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | BYAKUYA TOGAMI, 0073 | MAKOTO NAEGI, 0074 | BYAKUYA TOGAMI, 0075 | BYAKUYA TOGAMI, 0076 | BYAKUYA TOGAMI, 0077 | MAKOTO NAEGI, 0078 | NARRATION, 0079 | BYAKUYA TOGAMI, 0080 | MAKOTO NAEGI, 0081 | BYAKUYA TOGAMI, 0082 | BYAKUYA TOGAMI, 0083 | MAKOTO NAEGI, 0084 | BYAKUYA TOGAMI, 0085 | MAKOTO NAEGI, 0086 | BYAKUYA TOGAMI, 0087 | BYAKUYA TOGAMI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MONOKUMA, 0095 | MONOKUMA, 0096 | MONOKUMA, 0097 | MAKOTO NAEGI, 0098 | MONOKUMA, 0099 | MONOKUMA, 0100 | MAKOTO NAEGI, 0101 | MONOKUMA, 0102 | MONOKUMA, 0103 | MONOKUMA, 0104 | MONOKUMA, 0105 | MAKOTO NAEGI, 0106 | MONOKUMA, 0107 | BYAKUYA TOGAMI, 0108 | MONOKUMA, 0109 | MONOKUMA, 0110 | MONOKUMA, 0111 | MAKOTO NAEGI, 0112 | MAKOTO NAEGI, 0113 | MAKOTO NAEGI, 0114 | BYAKUYA TOGAMI, 0115 | MAKOTO NAEGI, 0116 | NARRATION, 0117 | BYAKUYA TOGAMI, 0118 | BYAKUYA TOGAMI, 0119 | MAKOTO NAEGI, 0120 | BYAKUYA TOGAMI, 0121 | MAKOTO NAEGI, 0122 | MAKOTO NAEGI, 0123 | MAKOTO NAEGI, 0124 | MAKOTO NAEGI, 0125 | MAKOTO NAEGI, 0126 | MAKOTO NAEGI, 0127 | MAKOTO NAEGI, 0128 | MAKOTO NAEGI, 0129 | MAKOTO NAEGI, 0130 | MAKOTO NAEGI, 0131 | MAKOTO NAEGI, 0132 | MAKOTO NAEGI, 0133 | MAKOTO NAEGI, 0134 | BYAKUYA TOGAMI, 0135 | AOI ASAHINA
+    i [not_copy_of_source] Entry "0039 | BYAKUYA TOGAMI" (line 256): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | BYAKUYA TOGAMI" (line 269): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_028_026
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_028_026
+
+  [1 WARN]         e02_028_026
+    ! [untranslated] 105 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0005 | BYAKUYA TOGAMI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | BYAKUYA TOGAMI, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | MAKOTO NAEGI, 0014 | BYAKUYA TOGAMI, 0015 | MAKOTO NAEGI, 0016 | MONOKUMA, 0017 | MAKOTO NAEGI, 0018 | BYAKUYA TOGAMI, 0019 | MONOKUMA, 0020 | MAKOTO NAEGI, 0021 | MONOKUMA, 0022 | MONOKUMA, 0023 | BYAKUYA TOGAMI, 0024 | MONOKUMA, 0025 | MONOKUMA, 0026 | BYAKUYA TOGAMI, 0027 | MONOKUMA, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | BYAKUYA TOGAMI, 0032 | MAKOTO NAEGI, 0033 | BYAKUYA TOGAMI, 0034 | BYAKUYA TOGAMI, 0035 | BYAKUYA TOGAMI, 0036 | BYAKUYA TOGAMI, 0037 | MAKOTO NAEGI, 0038 | BYAKUYA TOGAMI, 0039 | BYAKUYA TOGAMI, 0040 | BYAKUYA TOGAMI, 0041 | MONOKUMA, 0042 | MONOKUMA, 0043 | BYAKUYA TOGAMI, 0044 | MONOKUMA, 0045 | MONOKUMA, 0046 | MONOKUMA, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MONOKUMA, 0050 | MONOKUMA, 0051 | MONOKUMA, 0052 | MONOKUMA, 0054 | BYAKUYA TOGAMI, 0055 | BYAKUYA TOGAMI, 0056 | MAKOTO NAEGI, 0057 | BYAKUYA TOGAMI, 0058 | NARRATION, 0059 | MAKOTO NAEGI, 0060 | BYAKUYA TOGAMI, 0061 | MAKOTO NAEGI, 0062 | MONOKUMA, 0063 | MAKOTO NAEGI, 0064 | BYAKUYA TOGAMI, 0065 | MONOKUMA, 0066 | MAKOTO NAEGI, 0067 | MONOKUMA, 0068 | MONOKUMA, 0069 | BYAKUYA TOGAMI, 0070 | MONOKUMA, 0071 | MONOKUMA, 0072 | BYAKUYA TOGAMI, 0073 | MONOKUMA, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | BYAKUYA TOGAMI, 0078 | MAKOTO NAEGI, 0079 | BYAKUYA TOGAMI, 0080 | BYAKUYA TOGAMI, 0081 | BYAKUYA TOGAMI, 0082 | BYAKUYA TOGAMI, 0083 | MAKOTO NAEGI, 0084 | BYAKUYA TOGAMI, 0085 | BYAKUYA TOGAMI, 0086 | BYAKUYA TOGAMI, 0087 | MONOKUMA, 0088 | MONOKUMA, 0089 | BYAKUYA TOGAMI, 0090 | MONOKUMA, 0091 | MONOKUMA, 0092 | MONOKUMA, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | MONOKUMA, 0096 | MONOKUMA, 0097 | MONOKUMA, 0098 | MONOKUMA, 0100 | BYAKUYA TOGAMI, 0101 | BYAKUYA TOGAMI, 0102 | MAKOTO NAEGI, 0103 | BYAKUYA TOGAMI, 0104 | NARRATION, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | MAKOTO NAEGI, 0108 | BYAKUYA TOGAMI
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 34): translation is identical to source text
+    i [not_copy_of_source] Entry "0053 | MAKOTO NAEGI" (line 385): translation is identical to source text
+    i [not_copy_of_source] Entry "0099 | MAKOTO NAEGI" (line 704): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_029_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_029_101
+
+  [1 WARN]         e02_029_101
+    ! [untranslated] 102 untranslated: 0001 | AOI ASAHINA, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | AOI ASAHINA, 0005 | AOI ASAHINA, 0006 | AOI ASAHINA, 0007 | AOI ASAHINA, 0008 | MAKOTO NAEGI, 0009 | BYAKUYA TOGAMI, 0010 | MAKOTO NAEGI, 0011 | AOI ASAHINA, 0012 | AOI ASAHINA, 0013 | AOI ASAHINA, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0019 | BYAKUYA TOGAMI, 0020 | AOI ASAHINA, 0022 | MAKOTO NAEGI, 0023 | NARRATION, 0024 | MAKOTO NAEGI, 0025 | TOUKO FUKAWA, 0026 | TOUKO FUKAWA, 0027 | BYAKUYA TOGAMI, 0029 | TOUKO FUKAWA, 0030 | TOUKO FUKAWA, 0031 | TOUKO FUKAWA, 0032 | MAKOTO NAEGI, 0033 | AOI ASAHINA, 0034 | BYAKUYA TOGAMI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | BYAKUYA TOGAMI, 0039 | MAKOTO NAEGI, 0040 | BYAKUYA TOGAMI, 0041 | AOI ASAHINA, 0042 | BYAKUYA TOGAMI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | NARRATION, 0066 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | TOUKO FUKAWA, 0071 | MAKOTO NAEGI, 0072 | TOUKO FUKAWA, 0073 | MAKOTO NAEGI, 0075 | TOUKO FUKAWA, 0076 | MAKOTO NAEGI, 0077 | TOUKO FUKAWA, 0078 | MAKOTO NAEGI, 0079 | MAKOTO NAEGI, 0080 | AOI ASAHINA, 0081 | TOUKO FUKAWA, 0082 | AOI ASAHINA, 0083 | AOI ASAHINA, 0084 | AOI ASAHINA, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | AOI ASAHINA, 0090 | AOI ASAHINA, 0091 | AOI ASAHINA, 0092 | AOI ASAHINA, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0098 | MAKOTO NAEGI, 0099 | MAKOTO NAEGI, 0100 | MAKOTO NAEGI, 0101 | MAKOTO NAEGI, 0102 | MAKOTO NAEGI, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0018 | BYAKUYA TOGAMI" (line 117): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | BYAKUYA TOGAMI" (line 135): translation is identical to source text
+    i [not_copy_of_source] Entry "0028 | TOUKO FUKAWA" (line 181): translation is identical to source text
+    i [not_copy_of_source] Entry "0067 | TOUKO FUKAWA" (line 475): translation is identical to source text
+    i [not_copy_of_source] Entry "0074 | TOUKO FUKAWA" (line 524): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_030_021
+
+  [1 WARN]         e02_030_021
+    ! [untranslated] 2 untranslated: 0001 | MAKOTO NAEGI, 0002 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_030_022
+
+  [1 WARN]         e02_030_022
+    ! [untranslated] 18 untranslated: 0001 | MAKOTO NAEGI, 0002 | BYAKUYA TOGAMI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | BYAKUYA TOGAMI, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | BYAKUYA TOGAMI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | BYAKUYA TOGAMI, 0014 | MAKOTO NAEGI, 0015 | BYAKUYA TOGAMI, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_030_025
+
+  [1 WARN]         e02_030_025
+    ! [untranslated] 285 untranslated: 0001 | CHOICE/RE:ACT, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | BYAKUYA TOGAMI, 0005 | MAKOTO NAEGI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | MAKOTO NAEGI, 0009 | BYAKUYA TOGAMI, 0010 | BYAKUYA TOGAMI, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI, 0019 | BYAKUYA TOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | BYAKUYA TOGAMI, 0022 | MAKOTO NAEGI, 0023 | BYAKUYA TOGAMI, 0024 | BYAKUYA TOGAMI, 0025 | BYAKUYA TOGAMI, 0026 | BYAKUYA TOGAMI, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | BYAKUYA TOGAMI, 0030 | BYAKUYA TOGAMI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | BYAKUYA TOGAMI, 0034 | BYAKUYA TOGAMI, 0035 | BYAKUYA TOGAMI, 0036 | BYAKUYA TOGAMI, 0037 | MAKOTO NAEGI, 0038 | BYAKUYA TOGAMI, 0039 | BYAKUYA TOGAMI, 0040 | BYAKUYA TOGAMI, 0041 | BYAKUYA TOGAMI, 0042 | MAKOTO NAEGI, 0043 | BYAKUYA TOGAMI, 0044 | BYAKUYA TOGAMI, 0045 | BYAKUYA TOGAMI, 0046 | MAKOTO NAEGI, 0047 | BYAKUYA TOGAMI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | BYAKUYA TOGAMI, 0051 | BYAKUYA TOGAMI, 0052 | BYAKUYA TOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | BYAKUYA TOGAMI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | BYAKUYA TOGAMI, 0058 | BYAKUYA TOGAMI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | BYAKUYA TOGAMI, 0062 | BYAKUYA TOGAMI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | BYAKUYA TOGAMI, 0073 | MAKOTO NAEGI, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | MAKOTO NAEGI, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | BYAKUYA TOGAMI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | NARRATION, 0088 | BYAKUYA TOGAMI, 0089 | MAKOTO NAEGI, 0090 | BYAKUYA TOGAMI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | BYAKUYA TOGAMI, 0098 | BYAKUYA TOGAMI, 0099 | BYAKUYA TOGAMI, 0100 | MAKOTO NAEGI, 0101 | BYAKUYA TOGAMI, 0102 | BYAKUYA TOGAMI, 0103 | MAKOTO NAEGI, 0104 | BYAKUYA TOGAMI, 0105 | BYAKUYA TOGAMI, 0106 | BYAKUYA TOGAMI, 0107 | BYAKUYA TOGAMI, 0108 | MAKOTO NAEGI, 0109 | BYAKUYA TOGAMI, 0110 | MAKOTO NAEGI, 0111 | MAKOTO NAEGI, 0112 | BYAKUYA TOGAMI, 0113 | BYAKUYA TOGAMI, 0114 | MAKOTO NAEGI, 0115 | MAKOTO NAEGI, 0116 | BYAKUYA TOGAMI, 0117 | MAKOTO NAEGI, 0118 | BYAKUYA TOGAMI, 0119 | BYAKUYA TOGAMI, 0120 | BYAKUYA TOGAMI, 0121 | MAKOTO NAEGI, 0122 | BYAKUYA TOGAMI, 0123 | BYAKUYA TOGAMI, 0124 | BYAKUYA TOGAMI, 0125 | MAKOTO NAEGI, 0126 | BYAKUYA TOGAMI, 0127 | BYAKUYA TOGAMI, 0128 | BYAKUYA TOGAMI, 0129 | BYAKUYA TOGAMI, 0130 | BYAKUYA TOGAMI, 0131 | MAKOTO NAEGI, 0132 | BYAKUYA TOGAMI, 0133 | BYAKUYA TOGAMI, 0134 | BYAKUYA TOGAMI, 0135 | BYAKUYA TOGAMI, 0136 | MAKOTO NAEGI, 0137 | BYAKUYA TOGAMI, 0138 | MAKOTO NAEGI, 0139 | BYAKUYA TOGAMI, 0140 | MAKOTO NAEGI, 0141 | BYAKUYA TOGAMI, 0142 | BYAKUYA TOGAMI, 0143 | MAKOTO NAEGI, 0144 | BYAKUYA TOGAMI, 0145 | MAKOTO NAEGI, 0146 | BYAKUYA TOGAMI, 0147 | BYAKUYA TOGAMI, 0148 | BYAKUYA TOGAMI, 0149 | BYAKUYA TOGAMI, 0150 | MAKOTO NAEGI, 0151 | BYAKUYA TOGAMI, 0152 | MAKOTO NAEGI, 0153 | MAKOTO NAEGI, 0154 | BYAKUYA TOGAMI, 0155 | BYAKUYA TOGAMI, 0156 | MAKOTO NAEGI, 0157 | MAKOTO NAEGI, 0158 | BYAKUYA TOGAMI, 0159 | MAKOTO NAEGI, 0160 | BYAKUYA TOGAMI, 0161 | BYAKUYA TOGAMI, 0162 | BYAKUYA TOGAMI, 0163 | MAKOTO NAEGI, 0164 | BYAKUYA TOGAMI, 0165 | BYAKUYA TOGAMI, 0166 | BYAKUYA TOGAMI, 0167 | BYAKUYA TOGAMI, 0168 | BYAKUYA TOGAMI, 0169 | BYAKUYA TOGAMI, 0170 | MAKOTO NAEGI, 0171 | BYAKUYA TOGAMI, 0172 | BYAKUYA TOGAMI, 0173 | BYAKUYA TOGAMI, 0174 | BYAKUYA TOGAMI, 0175 | MAKOTO NAEGI, 0176 | MAKOTO NAEGI, 0177 | MAKOTO NAEGI, 0178 | BYAKUYA TOGAMI, 0179 | MAKOTO NAEGI, 0180 | BYAKUYA TOGAMI, 0181 | BYAKUYA TOGAMI, 0182 | BYAKUYA TOGAMI, 0184 | MAKOTO NAEGI, 0185 | BYAKUYA TOGAMI, 0186 | BYAKUYA TOGAMI, 0187 | BYAKUYA TOGAMI, 0188 | BYAKUYA TOGAMI, 0189 | MAKOTO NAEGI, 0190 | BYAKUYA TOGAMI, 0191 | MAKOTO NAEGI, 0192 | MAKOTO NAEGI, 0193 | BYAKUYA TOGAMI, 0194 | BYAKUYA TOGAMI, 0195 | MAKOTO NAEGI, 0196 | MAKOTO NAEGI, 0197 | BYAKUYA TOGAMI, 0198 | MAKOTO NAEGI, 0199 | BYAKUYA TOGAMI, 0200 | BYAKUYA TOGAMI, 0201 | BYAKUYA TOGAMI, 0202 | MAKOTO NAEGI, 0203 | BYAKUYA TOGAMI, 0204 | BYAKUYA TOGAMI, 0205 | BYAKUYA TOGAMI, 0206 | BYAKUYA TOGAMI, 0207 | BYAKUYA TOGAMI, 0208 | BYAKUYA TOGAMI, 0210 | BYAKUYA TOGAMI, 0211 | BYAKUYA TOGAMI, 0212 | BYAKUYA TOGAMI, 0213 | BYAKUYA TOGAMI, 0215 | MAKOTO NAEGI, 0216 | MAKOTO NAEGI, 0217 | BYAKUYA TOGAMI, 0218 | BYAKUYA TOGAMI, 0219 | BYAKUYA TOGAMI, 0220 | BYAKUYA TOGAMI, 0221 | BYAKUYA TOGAMI, 0222 | BYAKUYA TOGAMI, 0223 | BYAKUYA TOGAMI, 0224 | MAKOTO NAEGI, 0225 | BYAKUYA TOGAMI, 0226 | MAKOTO NAEGI, 0227 | MAKOTO NAEGI, 0228 | BYAKUYA TOGAMI, 0229 | BYAKUYA TOGAMI, 0230 | MAKOTO NAEGI, 0231 | MAKOTO NAEGI, 0232 | BYAKUYA TOGAMI, 0233 | MAKOTO NAEGI, 0234 | BYAKUYA TOGAMI, 0235 | BYAKUYA TOGAMI, 0236 | BYAKUYA TOGAMI, 0237 | MAKOTO NAEGI, 0238 | BYAKUYA TOGAMI, 0239 | BYAKUYA TOGAMI, 0240 | BYAKUYA TOGAMI, 0241 | BYAKUYA TOGAMI, 0242 | BYAKUYA TOGAMI, 0243 | BYAKUYA TOGAMI, 0244 | BYAKUYA TOGAMI, 0245 | BYAKUYA TOGAMI, 0246 | BYAKUYA TOGAMI, 0247 | BYAKUYA TOGAMI, 0248 | BYAKUYA TOGAMI, 0249 | BYAKUYA TOGAMI, 0250 | MAKOTO NAEGI, 0251 | MAKOTO NAEGI, 0252 | MAKOTO NAEGI, 0253 | BYAKUYA TOGAMI, 0254 | MAKOTO NAEGI, 0255 | BYAKUYA TOGAMI, 0256 | BYAKUYA TOGAMI, 0257 | BYAKUYA TOGAMI, 0258 | BYAKUYA TOGAMI, 0259 | MAKOTO NAEGI, 0260 | BYAKUYA TOGAMI, 0261 | MAKOTO NAEGI, 0262 | MAKOTO NAEGI, 0263 | BYAKUYA TOGAMI, 0264 | BYAKUYA TOGAMI, 0265 | MAKOTO NAEGI, 0266 | MAKOTO NAEGI, 0267 | BYAKUYA TOGAMI, 0268 | MAKOTO NAEGI, 0269 | BYAKUYA TOGAMI, 0270 | BYAKUYA TOGAMI, 0271 | BYAKUYA TOGAMI, 0272 | MAKOTO NAEGI, 0273 | BYAKUYA TOGAMI, 0274 | BYAKUYA TOGAMI, 0275 | BYAKUYA TOGAMI, 0276 | MAKOTO NAEGI, 0277 | MAKOTO NAEGI, 0278 | BYAKUYA TOGAMI, 0279 | MAKOTO NAEGI, 0280 | MAKOTO NAEGI, 0281 | MAKOTO NAEGI, 0282 | BYAKUYA TOGAMI, 0283 | MAKOTO NAEGI, 0284 | MAKOTO NAEGI, 0285 | MAKOTO NAEGI, 0286 | BYAKUYA TOGAMI, 0287 | MAKOTO NAEGI, 0288 | BYAKUYA TOGAMI
+    i [not_copy_of_source] Entry "0183 | MAKOTO NAEGI" (line 1391): translation is identical to source text
+    i [not_copy_of_source] Entry "0209 | MAKOTO NAEGI" (line 1587): translation is identical to source text
+    i [not_copy_of_source] Entry "0214 | MAKOTO NAEGI" (line 1624): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_001
+
+  [1 WARN]         e02_032_001
+    ! [untranslated] 7 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 32): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_003
+
+  [1 WARN]         e02_032_003
+    ! [untranslated] 23 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | YASUHIRO HAGAKURE, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | CHOICE/RE:ACT, 0022 | CHOICE/RE:ACT, 0023 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_004
+
+  [1 WARN]         e02_032_004
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | CHOICE/RE:ACT, 0005 | CHOICE/RE:ACT, 0006 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_006
+
+  [1 WARN]         e02_032_006
+    ! [untranslated] 9 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_009
+
+  [1 WARN]         e02_032_009
+    ! [untranslated] 12 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_010
+
+  [1 WARN]         e02_032_010
+    ! [untranslated] 10 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | NARRATION
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 41): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_014
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_014
+
+  [1 WARN]         e02_032_014
+    ! [untranslated] 17 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | CHOICE/RE:ACT, 0016 | CHOICE/RE:ACT, 0017 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_015
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_015
+
+  [1 WARN]         e02_032_015
+    ! [untranslated] 15 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_016
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_016
+
+  [1 WARN]         e02_032_016
+    ! [untranslated] 3 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_021
+
+  [1 WARN]         e02_032_021
+    ! [untranslated] 34 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | BYAKUYA TOGAMI, 0005 | BYAKUYA TOGAMI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | HIFUMI YAMADA, 0019 | HIFUMI YAMADA, 0020 | MAKOTO NAEGI, 0021 | HIFUMI YAMADA, 0022 | HIFUMI YAMADA, 0023 | MAKOTO NAEGI, 0024 | HIFUMI YAMADA, 0025 | MAKOTO NAEGI, 0026 | HIFUMI YAMADA, 0027 | MAKOTO NAEGI, 0028 | HIFUMI YAMADA, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_022
+
+  [1 WARN]         e02_032_022
+    ! [untranslated] 44 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | NARRATION, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | CHOICE/RE:ACT, 0044 | CHOICE/RE:ACT, 0045 | NARRATION
+    i [not_copy_of_source] Entry "0038 | MAKOTO NAEGI" (line 317): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_025
+
+  [1 WARN]         e02_032_025
+    ! [untranslated] 26 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | CHOICE/RE:ACT, 0028 | NARRATION
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 65): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 148): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_026
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_026
+
+  [1 WARN]         e02_032_026
+    ! [untranslated] 29 untranslated: 0001 | HIFUMI YAMADA, 0002 | HIFUMI YAMADA, 0003 | MAKOTO NAEGI, 0004 | HIFUMI YAMADA, 0005 | HIFUMI YAMADA, 0006 | MAKOTO NAEGI, 0007 | HIFUMI YAMADA, 0008 | MAKOTO NAEGI, 0009 | HIFUMI YAMADA, 0010 | MAKOTO NAEGI, 0011 | HIFUMI YAMADA, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | CHOICE/RE:ACT, 0028 | NARRATION, 0029 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_027
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_027
+
+  [1 WARN]         e02_032_027
+    ! [untranslated] 28 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | NARRATION, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | NARRATION, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | CHOICE/RE:ACT, 0026 | CHOICE/RE:ACT, 0027 | NARRATION, 0028 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_029
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_029
+
+  [1 WARN]         e02_032_029
+    ! [untranslated] 120 untranslated: 0001 | MAKOTO NAEGI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | KYOUKO KIRIGIRI, 0009 | KYOUKO KIRIGIRI, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | NARRATION, 0017 | MAKOTO NAEGI, 0018 | SAKURA OOGAMI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | SAKURA OOGAMI, 0022 | MAKOTO NAEGI, 0023 | SAKURA OOGAMI, 0024 | SAKURA OOGAMI, 0025 | MAKOTO NAEGI, 0026 | SAKURA OOGAMI, 0027 | SAKURA OOGAMI, 0028 | SAKURA OOGAMI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | SAKURA OOGAMI, 0032 | SAKURA OOGAMI, 0033 | SAKURA OOGAMI, 0034 | NARRATION, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | SAKURA OOGAMI, 0038 | SAKURA OOGAMI, 0039 | SAKURA OOGAMI, 0040 | SAKURA OOGAMI, 0041 | MAKOTO NAEGI, 0042 | SAKURA OOGAMI, 0043 | SAKURA OOGAMI, 0044 | SAKURA OOGAMI, 0045 | MONDO OOWADA, 0046 | MONDO OOWADA, 0047 | MAKOTO NAEGI, 0048 | MONDO OOWADA, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MONDO OOWADA, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | MAKOTO NAEGI, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | NARRATION, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | MAKOTO NAEGI, 0095 | NARRATION, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0098 | MAKOTO NAEGI, 0099 | MAKOTO NAEGI, 0100 | MAKOTO NAEGI, 0101 | MAKOTO NAEGI, 0102 | MAKOTO NAEGI, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | MAKOTO NAEGI, 0108 | MAKOTO NAEGI, 0109 | MAKOTO NAEGI, 0110 | MAKOTO NAEGI, 0111 | MAKOTO NAEGI, 0112 | MAKOTO NAEGI, 0113 | MAKOTO NAEGI, 0114 | MAKOTO NAEGI, 0115 | MAKOTO NAEGI, 0116 | MAKOTO NAEGI, 0117 | CHOICE/RE:ACT, 0118 | CHOICE/RE:ACT, 0119 | NARRATION, 0120 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_030
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_030
+
+  [1 WARN]         e02_032_030
+    ! [untranslated] 9 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_031
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_031
+
+  [1 WARN]         e02_032_031
+    ! [untranslated] 14 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | CHOICE/RE:ACT, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_032
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_032
+
+  [1 WARN]         e02_032_032
+    ! [untranslated] 14 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | CHOICE/RE:ACT, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_033
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_033
+
+  [1 WARN]         e02_032_033
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | CHOICE/RE:ACT, 0005 | CHOICE/RE:ACT, 0006 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_101
+
+  [1 WARN]         e02_032_101
+    ! [untranslated] 27 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | NARRATION, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | NARRATION, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | NARRATION, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 71): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_135
+
+  [1 WARN]         e02_032_135
+    ! [untranslated] 52 untranslated: 0001 | MAKOTO NAEGI, 0002 | AOI ASAHINA, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | AOI ASAHINA, 0006 | AOI ASAHINA, 0007 | AOI ASAHINA, 0008 | MAKOTO NAEGI, 0009 | AOI ASAHINA, 0010 | MAKOTO NAEGI, 0011 | AOI ASAHINA, 0012 | MAKOTO NAEGI, 0013 | AOI ASAHINA, 0014 | AOI ASAHINA, 0015 | MAKOTO NAEGI, 0016 | AOI ASAHINA, 0017 | AOI ASAHINA, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | AOI ASAHINA, 0021 | MAKOTO NAEGI, 0022 | AOI ASAHINA, 0023 | AOI ASAHINA, 0024 | AOI ASAHINA, 0025 | AOI ASAHINA, 0026 | MAKOTO NAEGI, 0027 | NARRATION, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | AOI ASAHINA, 0031 | MAKOTO NAEGI, 0032 | AOI ASAHINA, 0033 | AOI ASAHINA, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | AOI ASAHINA, 0037 | MAKOTO NAEGI, 0038 | AOI ASAHINA, 0039 | AOI ASAHINA, 0040 | AOI ASAHINA, 0041 | AOI ASAHINA, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | CHOICE/RE:ACT, 0051 | CHOICE/RE:ACT, 0052 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_136
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_136
+
+  [1 WARN]         e02_032_136
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | CHOICE/RE:ACT, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_137
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_137
+
+  [1 WARN]         e02_032_137
+    ! [untranslated] 14 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | NARRATION, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | CHOICE/RE:ACT, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_139
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_139
+
+  [1 WARN]         e02_032_139
+    ! [untranslated] 18 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | CHOICE/RE:ACT, 0017 | CHOICE/RE:ACT, 0018 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_140
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_140
+
+  [1 WARN]         e02_032_140
+    ! [untranslated] 71 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | CELES, 0006 | CELES, 0007 | MAKOTO NAEGI, 0008 | CELES, 0009 | CELES, 0010 | MAKOTO NAEGI, 0011 | CELES, 0012 | CELES, 0013 | CHIHIRO FUJISAKI, 0014 | CELES, 0015 | CHIHIRO FUJISAKI, 0016 | CELES, 0017 | CHIHIRO FUJISAKI, 0018 | CHIHIRO FUJISAKI, 0020 | CELES, 0021 | CELES, 0022 | CELES, 0023 | CELES, 0024 | CELES, 0025 | CELES, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | NARRATION, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | CELES, 0035 | MAKOTO NAEGI, 0036 | CELES, 0037 | CELES, 0038 | CHIHIRO FUJISAKI, 0039 | CELES, 0040 | CHIHIRO FUJISAKI, 0041 | CELES, 0042 | CHIHIRO FUJISAKI, 0043 | CHIHIRO FUJISAKI, 0045 | CELES, 0046 | CELES, 0047 | CELES, 0048 | CELES, 0049 | CELES, 0050 | CELES, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | CHOICE/RE:ACT, 0072 | CHOICE/RE:ACT, 0073 | NARRATION
+    i [not_copy_of_source] Entry "0019 | CELES" (line 126): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | CELES" (line 297): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_141
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_141
+
+  [1 WARN]         e02_032_141
+    ! [untranslated] 7 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_144
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_144
+
+  [1 WARN]         e02_032_144
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_145
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_145
+
+  [1 WARN]         e02_032_145
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_146
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_032_146
+
+  [1 WARN]         e02_032_146
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_033_001
+
+  [1 WARN]         e02_033_001
+    ! [untranslated] 24 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_201
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_033_201
+
+  [1 WARN]         e02_033_201
+    ! [untranslated] 53 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONDO OOWADA, 0004 | MONOKUMA, 0005 | YASUHIRO HAGAKURE, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | TOUKO FUKAWA, 0012 | TOUKO FUKAWA, 0013 | TOUKO FUKAWA, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | BYAKUYA TOGAMI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | KIYOTAKA ISHIMARU, 0025 | KIYOTAKA ISHIMARU, 0026 | BYAKUYA TOGAMI, 0027 | MONDO OOWADA, 0028 | HIFUMI YAMADA, 0029 | HIFUMI YAMADA, 0030 | YASUHIRO HAGAKURE, 0031 | KYOUKO KIRIGIRI, 0032 | AOI ASAHINA, 0033 | TOUKO FUKAWA, 0034 | SAKURA OOGAMI, 0035 | CELES, 0036 | CELES, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | KYOUKO KIRIGIRI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_204
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_033_204
+
+  [1 WARN]         e02_033_204
+    ! [untranslated] 9 untranslated: 0001 | MONOKUMA, 0002 | BYAKUYA TOGAMI, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_101_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_101_000
+
+  [1 WARN]         e02_101_000
+    ! [untranslated] 6 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_102_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_102_000
+
+  [1 WARN]         e02_102_000
+    ! [untranslated] 8 untranslated: 0001 | SAKURA OOGAMI, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | YASUHIRO HAGAKURE, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_102_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_102_001
+
+  [1 WARN]         e02_102_001
+    ! [untranslated] 8 untranslated: 0001 | SAKURA OOGAMI, 0002 | SAKURA OOGAMI, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | YASUHIRO HAGAKURE, 0006 | KIYOTAKA ISHIMARU, 0007 | KIYOTAKA ISHIMARU, 0008 | AOI ASAHINA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_103_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_103_000
+
+  [1 WARN]         e02_103_000
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | AOI ASAHINA, 0006 | HIFUMI YAMADA, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | YASUHIRO HAGAKURE, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0007 | KYOUKO KIRIGIRI" (line 57): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_104_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_104_000
+
+  [1 WARN]         e02_104_000
+    ! [untranslated] 7 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_104_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_104_001
+
+  [1 WARN]         e02_104_001
+    ! [untranslated] 14 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | BYAKUYA TOGAMI, 0003 | AOI ASAHINA, 0004 | BYAKUYA TOGAMI, 0005 | AOI ASAHINA, 0006 | AOI ASAHINA, 0007 | HIFUMI YAMADA, 0008 | HIFUMI YAMADA, 0009 | HIFUMI YAMADA, 0010 | HIFUMI YAMADA, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA, 0013 | HIFUMI YAMADA, 0014 | HIFUMI YAMADA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_105_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_105_000
+
+  [1 WARN]         e02_105_000
+    ! [untranslated] 50 untranslated: 0001 | MAKOTO NAEGI, 0002 | AOI ASAHINA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MONDO OOWADA, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | HIFUMI YAMADA, 0011 | AOI ASAHINA, 0012 | BYAKUYA TOGAMI, 0013 | MONDO OOWADA, 0014 | BYAKUYA TOGAMI, 0015 | CHOICE/RE:ACT, 0016 | CHOICE/RE:ACT, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | BYAKUYA TOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | MAKOTO NAEGI, 0022 | CHOICE/RE:ACT, 0023 | MAKOTO NAEGI, 0024 | BYAKUYA TOGAMI, 0025 | BYAKUYA TOGAMI, 0026 | MAKOTO NAEGI, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | BYAKUYA TOGAMI, 0037 | BYAKUYA TOGAMI, 0038 | BYAKUYA TOGAMI, 0039 | BYAKUYA TOGAMI, 0040 | MONDO OOWADA, 0041 | CELES, 0042 | BYAKUYA TOGAMI, 0043 | TOUKO FUKAWA, 0044 | BYAKUYA TOGAMI, 0045 | HIFUMI YAMADA, 0046 | TOUKO FUKAWA, 0047 | AOI ASAHINA, 0048 | AOI ASAHINA, 0049 | BYAKUYA TOGAMI, 0050 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_106_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_106_000
+
+  [1 WARN]         e02_106_000
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_107_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_107_000
+
+  [1 WARN]         e02_107_000
+    ! [untranslated] 128 untranslated: 0001 | MAKOTO NAEGI, 0002 | AOI ASAHINA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | HIFUMI YAMADA, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | CHOICE/RE:ACT, 0009 | CHOICE/RE:ACT, 0010 | MAKOTO NAEGI, 0011 | BYAKUYA TOGAMI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | CHOICE/RE:ACT, 0015 | MAKOTO NAEGI, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0019 | MAKOTO NAEGI, 0020 | BYAKUYA TOGAMI, 0021 | BYAKUYA TOGAMI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | BYAKUYA TOGAMI, 0027 | TOUKO FUKAWA, 0028 | TOUKO FUKAWA, 0029 | TOUKO FUKAWA, 0030 | YASUHIRO HAGAKURE, 0031 | TOUKO FUKAWA, 0032 | HIFUMI YAMADA, 0033 | KIYOTAKA ISHIMARU, 0034 | TOUKO FUKAWA, 0035 | BYAKUYA TOGAMI, 0036 | BYAKUYA TOGAMI, 0037 | TOUKO FUKAWA, 0038 | AOI ASAHINA, 0039 | TOUKO FUKAWA, 0040 | TOUKO FUKAWA, 0041 | BYAKUYA TOGAMI, 0042 | BYAKUYA TOGAMI, 0043 | AOI ASAHINA, 0044 | BYAKUYA TOGAMI, 0045 | TOUKO FUKAWA, 0046 | AOI ASAHINA, 0047 | BYAKUYA TOGAMI, 0048 | BYAKUYA TOGAMI, 0049 | BYAKUYA TOGAMI, 0050 | AOI ASAHINA, 0051 | BYAKUYA TOGAMI, 0052 | BYAKUYA TOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | BYAKUYA TOGAMI, 0055 | TOUKO FUKAWA, 0056 | AOI ASAHINA, 0057 | TOUKO FUKAWA, 0058 | AOI ASAHINA, 0059 | TOUKO FUKAWA, 0060 | BYAKUYA TOGAMI, 0061 | BYAKUYA TOGAMI, 0062 | TOUKO FUKAWA, 0063 | BYAKUYA TOGAMI, 0064 | BYAKUYA TOGAMI, 0065 | BYAKUYA TOGAMI, 0066 | TOUKO FUKAWA, 0067 | TOUKO FUKAWA, 0068 | TOUKO FUKAWA, 0069 | TOUKO FUKAWA, 0070 | TOUKO FUKAWA, 0071 | BYAKUYA TOGAMI, 0072 | BYAKUYA TOGAMI, 0073 | TOUKO FUKAWA, 0074 | BYAKUYA TOGAMI, 0075 | TOUKO FUKAWA, 0076 | BYAKUYA TOGAMI, 0077 | TOUKO FUKAWA, 0078 | TOUKO FUKAWA, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | TOUKO FUKAWA, 0082 | HIFUMI YAMADA, 0083 | TOUKO FUKAWA, 0084 | TOUKO FUKAWA, 0085 | MONDO OOWADA, 0086 | KIYOTAKA ISHIMARU, 0087 | TOUKO FUKAWA, 0088 | TOUKO FUKAWA, 0089 | TOUKO FUKAWA, 0090 | YASUHIRO HAGAKURE, 0091 | TOUKO FUKAWA, 0092 | SAKURA OOGAMI, 0093 | TOUKO FUKAWA, 0094 | TOUKO FUKAWA, 0095 | TOUKO FUKAWA, 0096 | TOUKO FUKAWA, 0097 | MAKOTO NAEGI, 0098 | MAKOTO NAEGI, 0099 | HIFUMI YAMADA, 0100 | TOUKO FUKAWA, 0101 | HIFUMI YAMADA, 0102 | TOUKO FUKAWA, 0103 | TOUKO FUKAWA, 0104 | MAKOTO NAEGI, 0105 | MONOKUMA, 0106 | MONOKUMA, 0107 | MONOKUMA, 0108 | TOUKO FUKAWA, 0109 | TOUKO FUKAWA, 0110 | TOUKO FUKAWA, 0112 | BYAKUYA TOGAMI, 0113 | BYAKUYA TOGAMI, 0114 | SAKURA OOGAMI, 0115 | BYAKUYA TOGAMI, 0116 | BYAKUYA TOGAMI, 0117 | BYAKUYA TOGAMI, 0118 | BYAKUYA TOGAMI, 0119 | BYAKUYA TOGAMI, 0120 | TOUKO FUKAWA, 0121 | TOUKO FUKAWA, 0122 | KIYOTAKA ISHIMARU, 0123 | CELES, 0124 | TOUKO FUKAWA, 0125 | SAKURA OOGAMI, 0126 | AOI ASAHINA, 0128 | MAKOTO NAEGI, 0129 | MAKOTO NAEGI, 0130 | MAKOTO NAEGI, 0131 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 129): translation is identical to source text
+    i [not_copy_of_source] Entry "0111 | MAKOTO NAEGI" (line 754): translation is identical to source text
+    i [not_copy_of_source] Entry "0127 | MAKOTO NAEGI" (line 856): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_108_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_108_000
+
+  [1 WARN]         e02_108_000
+    ! [untranslated] 7 untranslated: 0001 | TOUKO FUKAWA, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_108_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_108_001
+
+  [1 WARN]         e02_108_001
+    ! [untranslated] 18 untranslated: 0001 | TOUKO FUKAWA, 0002 | SAKURA OOGAMI, 0003 | CELES, 0004 | TOUKO FUKAWA, 0005 | BYAKUYA TOGAMI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | TOUKO FUKAWA, 0009 | BYAKUYA TOGAMI, 0010 | BYAKUYA TOGAMI, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_109_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_109_000
+
+  [1 WARN]         e02_109_000
+    ! [untranslated] 191 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | YASUHIRO HAGAKURE, 0004 | TOUKO FUKAWA, 0005 | TOUKO FUKAWA, 0006 | GENOCIDER SHOU, 0007 | GENOCIDER SHOU, 0008 | GENOCIDER SHOU, 0009 | GENOCIDER SHOU, 0010 | GENOCIDER SHOU, 0011 | GENOCIDER SHOU, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | MAKOTO NAEGI, 0017 | HIFUMI YAMADA, 0018 | AOI ASAHINA, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | TOUKO FUKAWA, 0022 | TOUKO FUKAWA, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | TOUKO FUKAWA, 0026 | TOUKO FUKAWA, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | HIFUMI YAMADA, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | TOUKO FUKAWA, 0041 | TOUKO FUKAWA, 0042 | YASUHIRO HAGAKURE, 0043 | KIYOTAKA ISHIMARU, 0044 | CHOICE/RE:ACT, 0045 | CHOICE/RE:ACT, 0046 | MAKOTO NAEGI, 0047 | KIYOTAKA ISHIMARU, 0048 | MAKOTO NAEGI, 0049 | TOUKO FUKAWA, 0050 | TOUKO FUKAWA, 0051 | KYOUKO KIRIGIRI, 0052 | MAKOTO NAEGI, 0053 | CHOICE/RE:ACT, 0054 | MAKOTO NAEGI, 0055 | BYAKUYA TOGAMI, 0056 | BYAKUYA TOGAMI, 0057 | BYAKUYA TOGAMI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | TOUKO FUKAWA, 0061 | TOUKO FUKAWA, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | CELES, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | TOUKO FUKAWA, 0074 | TOUKO FUKAWA, 0075 | TOUKO FUKAWA, 0076 | TOUKO FUKAWA, 0077 | MAKOTO NAEGI, 0078 | TOUKO FUKAWA, 0079 | MAKOTO NAEGI, 0080 | TOUKO FUKAWA, 0081 | TOUKO FUKAWA, 0082 | SAKURA OOGAMI, 0083 | TOUKO FUKAWA, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | CHOICE/RE:ACT, 0087 | CHOICE/RE:ACT, 0088 | MAKOTO NAEGI, 0089 | HIFUMI YAMADA, 0090 | TOUKO FUKAWA, 0091 | TOUKO FUKAWA, 0092 | HIFUMI YAMADA, 0093 | TOUKO FUKAWA, 0094 | HIFUMI YAMADA, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | CHOICE/RE:ACT, 0098 | MAKOTO NAEGI, 0099 | TOUKO FUKAWA, 0100 | TOUKO FUKAWA, 0101 | TOUKO FUKAWA, 0102 | MAKOTO NAEGI, 0103 | MAKOTO NAEGI, 0104 | TOUKO FUKAWA, 0105 | TOUKO FUKAWA, 0106 | MAKOTO NAEGI, 0107 | MAKOTO NAEGI, 0108 | MAKOTO NAEGI, 0109 | MAKOTO NAEGI, 0110 | MAKOTO NAEGI, 0111 | MAKOTO NAEGI, 0112 | MAKOTO NAEGI, 0113 | TOUKO FUKAWA, 0114 | YASUHIRO HAGAKURE, 0115 | MAKOTO NAEGI, 0116 | MAKOTO NAEGI, 0117 | MAKOTO NAEGI, 0118 | YASUHIRO HAGAKURE, 0119 | TOUKO FUKAWA, 0120 | TOUKO FUKAWA, 0121 | MONDO OOWADA, 0122 | TOUKO FUKAWA, 0123 | TOUKO FUKAWA, 0124 | KIYOTAKA ISHIMARU, 0125 | TOUKO FUKAWA, 0126 | TOUKO FUKAWA, 0127 | BYAKUYA TOGAMI, 0128 | BYAKUYA TOGAMI, 0129 | TOUKO FUKAWA, 0130 | BYAKUYA TOGAMI, 0131 | TOUKO FUKAWA, 0132 | TOUKO FUKAWA, 0133 | TOUKO FUKAWA, 0134 | CELES, 0135 | TOUKO FUKAWA, 0136 | TOUKO FUKAWA, 0137 | HIFUMI YAMADA, 0138 | TOUKO FUKAWA, 0139 | TOUKO FUKAWA, 0140 | YASUHIRO HAGAKURE, 0141 | TOUKO FUKAWA, 0142 | GENOCIDER SHOU, 0143 | HIFUMI YAMADA, 0144 | GENOCIDER SHOU, 0145 | GENOCIDER SHOU, 0146 | GENOCIDER SHOU, 0147 | TOUKO FUKAWA, 0148 | KIYOTAKA ISHIMARU, 0149 | KIYOTAKA ISHIMARU, 0150 | MONDO OOWADA, 0151 | AOI ASAHINA, 0152 | MAKOTO NAEGI, 0153 | MAKOTO NAEGI, 0154 | AOI ASAHINA, 0155 | AOI ASAHINA, 0156 | MAKOTO NAEGI, 0157 | TOUKO FUKAWA, 0158 | MAKOTO NAEGI, 0159 | TOUKO FUKAWA, 0160 | TOUKO FUKAWA, 0161 | KYOUKO KIRIGIRI, 0162 | MAKOTO NAEGI, 0163 | BYAKUYA TOGAMI, 0164 | BYAKUYA TOGAMI, 0165 | MAKOTO NAEGI, 0166 | MAKOTO NAEGI, 0167 | MAKOTO NAEGI, 0168 | MAKOTO NAEGI, 0170 | HIFUMI YAMADA, 0172 | CELES, 0173 | CELES, 0174 | TOUKO FUKAWA, 0175 | TOUKO FUKAWA, 0176 | KIYOTAKA ISHIMARU, 0177 | BYAKUYA TOGAMI, 0178 | BYAKUYA TOGAMI, 0179 | MAKOTO NAEGI, 0180 | MAKOTO NAEGI, 0181 | BYAKUYA TOGAMI, 0182 | BYAKUYA TOGAMI, 0183 | MAKOTO NAEGI, 0184 | BYAKUYA TOGAMI, 0185 | MAKOTO NAEGI, 0186 | BYAKUYA TOGAMI, 0187 | BYAKUYA TOGAMI, 0188 | HIFUMI YAMADA, 0189 | MAKOTO NAEGI, 0190 | BYAKUYA TOGAMI, 0191 | BYAKUYA TOGAMI, 0192 | MAKOTO NAEGI, 0193 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0169 | BYAKUYA TOGAMI" (line 1208): translation is identical to source text
+    i [not_copy_of_source] Entry "0171 | BYAKUYA TOGAMI" (line 1218): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_110_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_110_000
+
+  [1 WARN]         e02_110_000
+    ! [untranslated] 9 untranslated: 0001 | AOI ASAHINA, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_110_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_110_001
+
+  [1 WARN]         e02_110_001
+    ! [untranslated] 16 untranslated: 0001 | AOI ASAHINA, 0002 | AOI ASAHINA, 0003 | HIFUMI YAMADA, 0004 | HIFUMI YAMADA, 0005 | BYAKUYA TOGAMI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | BYAKUYA TOGAMI, 0009 | HIFUMI YAMADA, 0010 | HIFUMI YAMADA, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA, 0013 | HIFUMI YAMADA, 0014 | HIFUMI YAMADA, 0015 | HIFUMI YAMADA, 0016 | HIFUMI YAMADA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_111_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_111_000
+
+  [1 WARN]         e02_111_000
+    ! [untranslated] 19 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | BYAKUYA TOGAMI, 0005 | BYAKUYA TOGAMI, 0006 | MAKOTO NAEGI, 0007 | BYAKUYA TOGAMI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | BYAKUYA TOGAMI, 0012 | MAKOTO NAEGI, 0013 | KYOUKO KIRIGIRI, 0014 | KYOUKO KIRIGIRI, 0015 | KYOUKO KIRIGIRI, 0016 | BYAKUYA TOGAMI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0017 | KYOUKO KIRIGIRI" (line 125): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_112_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_112_000
+
+  [1 WARN]         e02_112_000
+    ! [untranslated] 13 untranslated: 0001 | TOUKO FUKAWA, 0002 | MAKOTO NAEGI, 0003 | TOUKO FUKAWA, 0004 | MAKOTO NAEGI, 0005 | BYAKUYA TOGAMI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_112_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_112_001
+
+  [1 WARN]         e02_112_001
+    ! [untranslated] 17 untranslated: 0001 | TOUKO FUKAWA, 0002 | TOUKO FUKAWA, 0003 | TOUKO FUKAWA, 0004 | TOUKO FUKAWA, 0005 | CELES, 0006 | CELES, 0007 | KIYOTAKA ISHIMARU, 0008 | HIFUMI YAMADA, 0009 | MONDO OOWADA, 0010 | BYAKUYA TOGAMI, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_113_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_113_000
+
+  [1 WARN]         e02_113_000
+    ! [untranslated] 140 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | HIFUMI YAMADA, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | KIYOTAKA ISHIMARU, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | BYAKUYA TOGAMI, 0021 | MONDO OOWADA, 0022 | TOUKO FUKAWA, 0023 | KIYOTAKA ISHIMARU, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | YASUHIRO HAGAKURE, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | BYAKUYA TOGAMI, 0031 | BYAKUYA TOGAMI, 0032 | BYAKUYA TOGAMI, 0033 | BYAKUYA TOGAMI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | CHOICE/RE:ACT, 0037 | CHOICE/RE:ACT, 0038 | MAKOTO NAEGI, 0039 | BYAKUYA TOGAMI, 0040 | BYAKUYA TOGAMI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | CHOICE/RE:ACT, 0045 | MAKOTO NAEGI, 0046 | BYAKUYA TOGAMI, 0047 | MAKOTO NAEGI, 0048 | BYAKUYA TOGAMI, 0049 | BYAKUYA TOGAMI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | BYAKUYA TOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | BYAKUYA TOGAMI, 0055 | BYAKUYA TOGAMI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | BYAKUYA TOGAMI, 0066 | BYAKUYA TOGAMI, 0067 | BYAKUYA TOGAMI, 0068 | BYAKUYA TOGAMI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | BYAKUYA TOGAMI, 0073 | BYAKUYA TOGAMI, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | MAKOTO NAEGI, 0079 | KIYOTAKA ISHIMARU, 0080 | BYAKUYA TOGAMI, 0081 | BYAKUYA TOGAMI, 0082 | MAKOTO NAEGI, 0083 | BYAKUYA TOGAMI, 0084 | BYAKUYA TOGAMI, 0085 | MAKOTO NAEGI, 0086 | KYOUKO KIRIGIRI, 0087 | KYOUKO KIRIGIRI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | BYAKUYA TOGAMI, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0098 | TOUKO FUKAWA, 0099 | MAKOTO NAEGI, 0100 | MAKOTO NAEGI, 0101 | MAKOTO NAEGI, 0102 | CELES, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | SAKURA OOGAMI, 0106 | HIFUMI YAMADA, 0107 | SAKURA OOGAMI, 0108 | SAKURA OOGAMI, 0109 | MAKOTO NAEGI, 0110 | SAKURA OOGAMI, 0111 | HIFUMI YAMADA, 0112 | MAKOTO NAEGI, 0113 | KYOUKO KIRIGIRI, 0114 | KYOUKO KIRIGIRI, 0115 | BYAKUYA TOGAMI, 0116 | MAKOTO NAEGI, 0117 | SAKURA OOGAMI, 0118 | SAKURA OOGAMI, 0119 | SAKURA OOGAMI, 0120 | MAKOTO NAEGI, 0121 | MAKOTO NAEGI, 0122 | MAKOTO NAEGI, 0123 | MAKOTO NAEGI, 0124 | SAKURA OOGAMI, 0125 | CELES, 0126 | CELES, 0127 | MAKOTO NAEGI, 0128 | KIYOTAKA ISHIMARU, 0129 | MAKOTO NAEGI, 0130 | MAKOTO NAEGI, 0131 | MAKOTO NAEGI, 0132 | CELES, 0133 | MAKOTO NAEGI, 0134 | CELES, 0135 | CELES, 0136 | CELES, 0137 | MAKOTO NAEGI, 0138 | CELES, 0139 | CELES, 0140 | CELES, 0141 | YASUHIRO HAGAKURE, 0142 | CELES, 0143 | YASUHIRO HAGAKURE, 0144 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0010 | BYAKUYA TOGAMI" (line 73): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0072 | BYAKUYA TOGAMI" (line 517): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_114_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_114_000
+
+  [1 WARN]         e02_114_000
+    ! [untranslated] 9 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | MAKOTO NAEGI, 0003 | YASUHIRO HAGAKURE, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_114_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_114_001
+
+  [1 WARN]         e02_114_001
+    ! [untranslated] 19 untranslated: 0001 | CELES, 0002 | CELES, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | KIYOTAKA ISHIMARU, 0006 | KIYOTAKA ISHIMARU, 0007 | YASUHIRO HAGAKURE, 0008 | YASUHIRO HAGAKURE, 0009 | HIFUMI YAMADA, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0015 | YASUHIRO HAGAKURE, 0016 | YASUHIRO HAGAKURE, 0017 | YASUHIRO HAGAKURE, 0018 | YASUHIRO HAGAKURE, 0019 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_115_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_115_000
+
+  [1 WARN]         e02_115_000
+    ! [untranslated] 38 untranslated: 0001 | MAKOTO NAEGI, 0002 | YASUHIRO HAGAKURE, 0003 | MAKOTO NAEGI, 0004 | YASUHIRO HAGAKURE, 0005 | SAKURA OOGAMI, 0006 | CELES, 0007 | BYAKUYA TOGAMI, 0008 | BYAKUYA TOGAMI, 0009 | MONOKUMA, 0010 | BYAKUYA TOGAMI, 0011 | KIYOTAKA ISHIMARU, 0012 | MONOKUMA, 0013 | SAKURA OOGAMI, 0014 | HIFUMI YAMADA, 0015 | AOI ASAHINA, 0016 | KIYOTAKA ISHIMARU, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | KYOUKO KIRIGIRI, 0022 | KYOUKO KIRIGIRI, 0023 | MONDO OOWADA, 0024 | MONDO OOWADA, 0025 | KYOUKO KIRIGIRI, 0026 | MONDO OOWADA, 0027 | KIYOTAKA ISHIMARU, 0028 | KYOUKO KIRIGIRI, 0029 | KYOUKO KIRIGIRI, 0030 | MONOKUMA, 0031 | KYOUKO KIRIGIRI, 0032 | MONOKUMA, 0033 | MONOKUMA, 0034 | AOI ASAHINA, 0035 | MONOKUMA, 0036 | KYOUKO KIRIGIRI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0017 | MAKOTO NAEGI" (line 126): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_116_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_116_000
+
+  [1 WARN]         e02_116_000
+    ! [untranslated] 42 untranslated: 0001 | MAKOTO NAEGI, 0002 | KIYOTAKA ISHIMARU, 0003 | KYOUKO KIRIGIRI, 0004 | MAKOTO NAEGI, 0005 | KYOUKO KIRIGIRI, 0006 | HIFUMI YAMADA, 0007 | HIFUMI YAMADA, 0008 | KIYOTAKA ISHIMARU, 0009 | YASUHIRO HAGAKURE, 0010 | SAKURA OOGAMI, 0011 | AOI ASAHINA, 0012 | SAKURA OOGAMI, 0013 | SAKURA OOGAMI, 0014 | AOI ASAHINA, 0015 | TOUKO FUKAWA, 0016 | AOI ASAHINA, 0017 | SAKURA OOGAMI, 0018 | SAKURA OOGAMI, 0019 | MAKOTO NAEGI, 0020 | KYOUKO KIRIGIRI, 0021 | SAKURA OOGAMI, 0022 | SAKURA OOGAMI, 0023 | SAKURA OOGAMI, 0024 | MAKOTO NAEGI, 0025 | SAKURA OOGAMI, 0026 | MAKOTO NAEGI, 0027 | SAKURA OOGAMI, 0028 | AOI ASAHINA, 0029 | SAKURA OOGAMI, 0030 | HIFUMI YAMADA, 0031 | HIFUMI YAMADA, 0032 | YASUHIRO HAGAKURE, 0033 | SAKURA OOGAMI, 0034 | KIYOTAKA ISHIMARU, 0035 | KIYOTAKA ISHIMARU, 0036 | MAKOTO NAEGI, 0037 | MONOKUMA, 0038 | MONOKUMA, 0039 | TOUKO FUKAWA, 0040 | MONOKUMA, 0042 | MONOKUMA, 0043 | MONOKUMA
+    i [not_copy_of_source] Entry "0041 | KYOUKO KIRIGIRI" (line 264): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_117_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_117_000
+
+  [1 WARN]         e02_117_000
+    ! [untranslated] 85 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | KYOUKO KIRIGIRI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | KYOUKO KIRIGIRI, 0007 | BYAKUYA TOGAMI, 0008 | MONOKUMA, 0009 | KYOUKO KIRIGIRI, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | KIYOTAKA ISHIMARU, 0013 | KYOUKO KIRIGIRI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | TOUKO FUKAWA, 0017 | BYAKUYA TOGAMI, 0018 | AOI ASAHINA, 0019 | BYAKUYA TOGAMI, 0020 | HIFUMI YAMADA, 0021 | KYOUKO KIRIGIRI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | HIFUMI YAMADA, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | CELES, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | BYAKUYA TOGAMI, 0038 | BYAKUYA TOGAMI, 0039 | AOI ASAHINA, 0040 | BYAKUYA TOGAMI, 0041 | BYAKUYA TOGAMI, 0042 | MONDO OOWADA, 0043 | BYAKUYA TOGAMI, 0044 | KIYOTAKA ISHIMARU, 0045 | BYAKUYA TOGAMI, 0046 | AOI ASAHINA, 0047 | BYAKUYA TOGAMI, 0048 | BYAKUYA TOGAMI, 0049 | MAKOTO NAEGI, 0050 | YASUHIRO HAGAKURE, 0051 | KYOUKO KIRIGIRI, 0052 | KYOUKO KIRIGIRI, 0053 | CELES, 0054 | YASUHIRO HAGAKURE, 0055 | KIYOTAKA ISHIMARU, 0056 | YASUHIRO HAGAKURE, 0057 | MAKOTO NAEGI, 0058 | SAKURA OOGAMI, 0059 | AOI ASAHINA, 0060 | BYAKUYA TOGAMI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | CHOICE/RE:ACT, 0064 | CHOICE/RE:ACT, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | CHOICE/RE:ACT, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | MAKOTO NAEGI, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | BYAKUYA TOGAMI, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 188): translation is identical to source text
+    i [not_copy_of_source] Entry "0033 | BYAKUYA TOGAMI" (line 249): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_118_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_118_000
+
+  [1 WARN]         e02_118_000
+    ! [untranslated] 10 untranslated: 0001 | SAKURA OOGAMI, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | YASUHIRO HAGAKURE, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_118_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_118_001
+
+  [1 WARN]         e02_118_001
+    ! [untranslated] 18 untranslated: 0001 | SAKURA OOGAMI, 0002 | KIYOTAKA ISHIMARU, 0003 | KIYOTAKA ISHIMARU, 0004 | YASUHIRO HAGAKURE, 0005 | SAKURA OOGAMI, 0006 | AOI ASAHINA, 0007 | YASUHIRO HAGAKURE, 0008 | YASUHIRO HAGAKURE, 0009 | YASUHIRO HAGAKURE, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | HIFUMI YAMADA, 0013 | HIFUMI YAMADA, 0014 | HIFUMI YAMADA, 0015 | HIFUMI YAMADA, 0016 | HIFUMI YAMADA, 0017 | HIFUMI YAMADA, 0018 | HIFUMI YAMADA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_119_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_119_000
+
+  [1 WARN]         e02_119_000
+    ! [untranslated] 45 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | HIFUMI YAMADA, 0004 | CELES, 0005 | CELES, 0006 | KIYOTAKA ISHIMARU, 0007 | CELES, 0008 | CELES, 0009 | CELES, 0010 | KIYOTAKA ISHIMARU, 0011 | SAKURA OOGAMI, 0012 | CELES, 0013 | CHIHIRO FUJISAKI, 0014 | CELES, 0015 | CELES, 0016 | HIFUMI YAMADA, 0017 | SAKURA OOGAMI, 0018 | YASUHIRO HAGAKURE, 0019 | CELES, 0020 | CELES, 0021 | TOUKO FUKAWA, 0022 | AOI ASAHINA, 0023 | MAKOTO NAEGI, 0024 | KYOUKO KIRIGIRI, 0025 | MAKOTO NAEGI, 0026 | KYOUKO KIRIGIRI, 0027 | KIYOTAKA ISHIMARU, 0028 | MONDO OOWADA, 0029 | KYOUKO KIRIGIRI, 0030 | KYOUKO KIRIGIRI, 0031 | CELES, 0032 | CELES, 0033 | HIFUMI YAMADA, 0034 | KIYOTAKA ISHIMARU, 0035 | BYAKUYA TOGAMI, 0036 | KYOUKO KIRIGIRI, 0037 | AOI ASAHINA, 0038 | AOI ASAHINA, 0039 | CELES, 0040 | CELES, 0041 | SAKURA OOGAMI, 0042 | SAKURA OOGAMI, 0043 | KYOUKO KIRIGIRI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_120_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_120_000
+
+  [1 WARN]         e02_120_000
+    ! [untranslated] 13 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | MONDO OOWADA, 0004 | MAKOTO NAEGI, 0005 | MONDO OOWADA, 0006 | MAKOTO NAEGI, 0007 | YASUHIRO HAGAKURE, 0008 | MAKOTO NAEGI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | KYOUKO KIRIGIRI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_120_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_120_001
+
+  [1 WARN]         e02_120_001
+    ! [untranslated] 20 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | BYAKUYA TOGAMI, 0006 | KIYOTAKA ISHIMARU, 0007 | KIYOTAKA ISHIMARU, 0008 | MONDO OOWADA, 0009 | MONDO OOWADA, 0010 | MONDO OOWADA, 0011 | HIFUMI YAMADA, 0012 | HIFUMI YAMADA, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0015 | CELES, 0016 | MONDO OOWADA, 0017 | MONDO OOWADA, 0018 | MONDO OOWADA, 0019 | MONDO OOWADA, 0020 | MONDO OOWADA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_121_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_121_000
+
+  [1 WARN]         e02_121_000
+    ! [untranslated] 185 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONDO OOWADA, 0003 | MAKOTO NAEGI, 0004 | CELES, 0005 | CELES, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MONDO OOWADA, 0009 | BYAKUYA TOGAMI, 0010 | CELES, 0011 | MAKOTO NAEGI, 0012 | CELES, 0013 | SAKURA OOGAMI, 0014 | MONDO OOWADA, 0015 | KIYOTAKA ISHIMARU, 0016 | KYOUKO KIRIGIRI, 0017 | KYOUKO KIRIGIRI, 0018 | TOUKO FUKAWA, 0019 | TOUKO FUKAWA, 0020 | AOI ASAHINA, 0021 | TOUKO FUKAWA, 0022 | MONDO OOWADA, 0023 | MONDO OOWADA, 0024 | MAKOTO NAEGI, 0025 | CELES, 0026 | CELES, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MONDO OOWADA, 0030 | KYOUKO KIRIGIRI, 0031 | BYAKUYA TOGAMI, 0032 | BYAKUYA TOGAMI, 0033 | CELES, 0034 | CELES, 0035 | CELES, 0036 | KYOUKO KIRIGIRI, 0037 | KYOUKO KIRIGIRI, 0038 | MAKOTO NAEGI, 0039 | CHOICE/RE:ACT, 0041 | CHOICE/RE:ACT, 0043 | CHOICE/RE:ACT, 0045 | KYOUKO KIRIGIRI, 0046 | KYOUKO KIRIGIRI, 0047 | KYOUKO KIRIGIRI, 0048 | KYOUKO KIRIGIRI, 0049 | KYOUKO KIRIGIRI, 0050 | KYOUKO KIRIGIRI, 0051 | HIFUMI YAMADA, 0052 | TOUKO FUKAWA, 0053 | KYOUKO KIRIGIRI, 0054 | KYOUKO KIRIGIRI, 0055 | MONDO OOWADA, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MONDO OOWADA, 0059 | MONDO OOWADA, 0060 | MONDO OOWADA, 0061 | MONDO OOWADA, 0062 | KIYOTAKA ISHIMARU, 0063 | KYOUKO KIRIGIRI, 0064 | MAKOTO NAEGI, 0065 | CELES, 0066 | HIFUMI YAMADA, 0067 | HIFUMI YAMADA, 0068 | MAKOTO NAEGI, 0069 | AOI ASAHINA, 0071 | HIFUMI YAMADA, 0072 | YASUHIRO HAGAKURE, 0073 | HIFUMI YAMADA, 0074 | HIFUMI YAMADA, 0075 | TOUKO FUKAWA, 0076 | HIFUMI YAMADA, 0077 | CHOICE/RE:ACT, 0078 | CHOICE/RE:ACT, 0079 | MAKOTO NAEGI, 0080 | MONDO OOWADA, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | CHOICE/RE:ACT, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | MAKOTO NAEGI, 0092 | KYOUKO KIRIGIRI, 0093 | HIFUMI YAMADA, 0094 | HIFUMI YAMADA, 0095 | AOI ASAHINA, 0096 | HIFUMI YAMADA, 0097 | CELES, 0098 | BYAKUYA TOGAMI, 0099 | MONOKUMA, 0100 | MONOKUMA, 0101 | CELES, 0102 | CELES, 0103 | MONOKUMA, 0104 | MONOKUMA, 0105 | CHOICE/RE:ACT, 0106 | CHOICE/RE:ACT, 0107 | MAKOTO NAEGI, 0108 | MONOKUMA, 0109 | MAKOTO NAEGI, 0110 | MAKOTO NAEGI, 0111 | CHOICE/RE:ACT, 0112 | MAKOTO NAEGI, 0113 | MONOKUMA, 0114 | MAKOTO NAEGI, 0115 | MAKOTO NAEGI, 0116 | BYAKUYA TOGAMI, 0117 | BYAKUYA TOGAMI, 0118 | MAKOTO NAEGI, 0119 | MAKOTO NAEGI, 0120 | MAKOTO NAEGI, 0121 | MAKOTO NAEGI, 0122 | MONOKUMA, 0123 | MONOKUMA, 0124 | SAKURA OOGAMI, 0125 | KYOUKO KIRIGIRI, 0126 | KYOUKO KIRIGIRI, 0127 | MONOKUMA, 0128 | KYOUKO KIRIGIRI, 0129 | MONOKUMA, 0130 | AOI ASAHINA, 0131 | MONOKUMA, 0132 | MONOKUMA, 0133 | MONOKUMA, 0134 | HIFUMI YAMADA, 0135 | MAKOTO NAEGI, 0136 | HIFUMI YAMADA, 0137 | MONOKUMA, 0138 | MONOKUMA, 0139 | MONOKUMA, 0140 | MONOKUMA, 0141 | MONOKUMA, 0142 | KIYOTAKA ISHIMARU, 0143 | HIFUMI YAMADA, 0144 | MAKOTO NAEGI, 0145 | MAKOTO NAEGI, 0146 | SAKURA OOGAMI, 0147 | AOI ASAHINA, 0148 | HIFUMI YAMADA, 0149 | KYOUKO KIRIGIRI, 0150 | SAKURA OOGAMI, 0151 | KYOUKO KIRIGIRI, 0152 | KYOUKO KIRIGIRI, 0153 | KYOUKO KIRIGIRI, 0154 | BYAKUYA TOGAMI, 0155 | BYAKUYA TOGAMI, 0156 | MAKOTO NAEGI, 0157 | HIFUMI YAMADA, 0158 | MAKOTO NAEGI, 0159 | KIYOTAKA ISHIMARU, 0160 | MAKOTO NAEGI, 0161 | MAKOTO NAEGI, 0162 | MAKOTO NAEGI, 0163 | MAKOTO NAEGI, 0164 | KIYOTAKA ISHIMARU, 0165 | MAKOTO NAEGI, 0166 | MAKOTO NAEGI, 0167 | MAKOTO NAEGI, 0168 | HIFUMI YAMADA, 0169 | YASUHIRO HAGAKURE, 0170 | MAKOTO NAEGI, 0171 | MAKOTO NAEGI, 0172 | KYOUKO KIRIGIRI, 0173 | KYOUKO KIRIGIRI, 0174 | MAKOTO NAEGI, 0175 | CELES, 0176 | CELES, 0177 | MAKOTO NAEGI, 0178 | MAKOTO NAEGI, 0179 | MONDO OOWADA, 0180 | KIYOTAKA ISHIMARU, 0181 | MAKOTO NAEGI, 0182 | MAKOTO NAEGI, 0183 | MAKOTO NAEGI, 0184 | MAKOTO NAEGI, 0185 | MONDO OOWADA, 0186 | KIYOTAKA ISHIMARU, 0187 | KIYOTAKA ISHIMARU, 0188 | MAKOTO NAEGI, 0189 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0040 | KYOUKO KIRIGIRI" (line 272): translation is identical to source text
+    i [not_copy_of_source] Entry "0042 | KYOUKO KIRIGIRI" (line 282): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | KYOUKO KIRIGIRI" (line 292): translation is identical to source text
+    i [not_copy_of_source] Entry "0070 | HIFUMI YAMADA" (line 455): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_122_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_122_000
+
+  [1 WARN]         e02_122_000
+    ! [untranslated] 10 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | MONDO OOWADA, 0004 | MAKOTO NAEGI, 0005 | KIYOTAKA ISHIMARU, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_122_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_122_001
+
+  [1 WARN]         e02_122_001
+    ! [untranslated] 20 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | CELES, 0005 | CELES, 0006 | MONDO OOWADA, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | KIYOTAKA ISHIMARU, 0010 | KIYOTAKA ISHIMARU, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | KIYOTAKA ISHIMARU, 0014 | KIYOTAKA ISHIMARU, 0015 | KIYOTAKA ISHIMARU, 0016 | KIYOTAKA ISHIMARU, 0017 | KIYOTAKA ISHIMARU, 0018 | KIYOTAKA ISHIMARU, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_123_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_123_000
+
+  [1 WARN]         e02_123_000
+    ! [untranslated] 24 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONDO OOWADA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | KIYOTAKA ISHIMARU, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MONOKUMA, 0010 | CELES, 0011 | CELES, 0012 | AOI ASAHINA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MONDO OOWADA, 0020 | KIYOTAKA ISHIMARU, 0021 | KIYOTAKA ISHIMARU, 0022 | KIYOTAKA ISHIMARU, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_124_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_124_000
+
+  [1 WARN]         e02_124_000
+    ! [untranslated] 52 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_125_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_125_000
+
+  [1 WARN]         e02_125_000
+    ! [untranslated] 10 untranslated: 0001 | MONDO OOWADA, 0002 | KIYOTAKA ISHIMARU, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | KIYOTAKA ISHIMARU, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_127_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_127_000
+
+  [1 WARN]         e02_127_000
+    ! [untranslated] 19 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MONDO OOWADA, 0006 | MAKOTO NAEGI, 0007 | MONDO OOWADA, 0008 | MONDO OOWADA, 0009 | KIYOTAKA ISHIMARU, 0010 | MONDO OOWADA, 0011 | MONDO OOWADA, 0012 | MONDO OOWADA, 0013 | MONOKUMA, 0014 | KIYOTAKA ISHIMARU, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_150_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_150_000
+
+  [1 WARN]         e02_150_000
+    ! [untranslated] 14 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_151_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_151_000
+
+  [1 WARN]         e02_151_000
+    ! [untranslated] 15 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_152_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_152_000
+
+  [1 WARN]         e02_152_000
+    ! [untranslated] 18 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION, 0016 | NARRATION, 0017 | NARRATION, 0018 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_195_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_195_000
+
+  [1 WARN]         e02_195_000
+    ! [untranslated] 4 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_196_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_196_000
+
+  [1 WARN]         e02_196_000
+    ! [untranslated] 16 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | CHOICE/RE:ACT, 0008 | NARRATION, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_197_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_197_000
+
+  [1 WARN]         e02_197_000
+    ! [untranslated] 4 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_198_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_198_000
+
+  [1 WARN]         e02_198_000
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_199_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_199_000
+
+  [1 WARN]         e02_199_000
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_200_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_200_000
+
+  [1 WARN]         e02_200_000
+    ! [untranslated] 233 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | MONDO OOWADA, 0010 | KIYOTAKA ISHIMARU, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | KIYOTAKA ISHIMARU, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA, 0021 | MONOKUMA, 0022 | MONOKUMA, 0023 | MONOKUMA, 0024 | MONOKUMA, 0025 | MONOKUMA, 0026 | CHIHIRO FUJISAKI, 0027 | MONOKUMA, 0028 | MONOKUMA, 0029 | MONOKUMA, 0030 | MONOKUMA, 0031 | CHIHIRO FUJISAKI, 0032 | CHIHIRO FUJISAKI, 0033 | MONOKUMA, 0034 | MONOKUMA, 0035 | MONOKUMA, 0036 | MONOKUMA, 0037 | NARRATION, 0038 | MONOKUMA, 0039 | MONOKUMA, 0040 | MONOKUMA, 0041 | MONOKUMA, 0042 | MONOKUMA, 0043 | CHIHIRO FUJISAKI, 0044 | CHIHIRO FUJISAKI, 0045 | CHIHIRO FUJISAKI, 0046 | MONOKUMA, 0047 | CHIHIRO FUJISAKI, 0048 | CHIHIRO FUJISAKI, 0049 | CHIHIRO FUJISAKI, 0050 | MONOKUMA, 0051 | MONOKUMA, 0052 | MONOKUMA, 0053 | MONOKUMA, 0054 | MONOKUMA, 0055 | MONOKUMA, 0056 | MONOKUMA, 0057 | MONOKUMA, 0058 | MONDO OOWADA, 0059 | MONOKUMA, 0060 | MONOKUMA, 0061 | MONOKUMA, 0063 | MONOKUMA, 0064 | CHIHIRO FUJISAKI, 0065 | CHIHIRO FUJISAKI, 0066 | MONOKUMA, 0067 | MONOKUMA, 0068 | KYOUKO KIRIGIRI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | KYOUKO KIRIGIRI, 0072 | HIFUMI YAMADA, 0073 | KYOUKO KIRIGIRI, 0074 | KYOUKO KIRIGIRI, 0075 | AOI ASAHINA, 0076 | KYOUKO KIRIGIRI, 0077 | KYOUKO KIRIGIRI, 0078 | KYOUKO KIRIGIRI, 0079 | KYOUKO KIRIGIRI, 0080 | MAKOTO NAEGI, 0082 | KIYOTAKA ISHIMARU, 0083 | KIYOTAKA ISHIMARU, 0084 | KIYOTAKA ISHIMARU, 0086 | MONDO OOWADA, 0087 | KYOUKO KIRIGIRI, 0088 | KYOUKO KIRIGIRI, 0089 | KIYOTAKA ISHIMARU, 0090 | KIYOTAKA ISHIMARU, 0091 | KIYOTAKA ISHIMARU, 0092 | BYAKUYA TOGAMI, 0093 | BYAKUYA TOGAMI, 0094 | BYAKUYA TOGAMI, 0095 | MONOKUMA, 0096 | MONOKUMA, 0097 | MONOKUMA, 0098 | MONOKUMA, 0099 | MONDO OOWADA, 0100 | MONOKUMA, 0101 | MONOKUMA, 0102 | MONOKUMA, 0103 | MONOKUMA, 0104 | MONOKUMA, 0105 | MONOKUMA, 0106 | MONOKUMA, 0107 | MONOKUMA, 0108 | MONOKUMA, 0109 | MONOKUMA, 0110 | MONOKUMA, 0111 | MONOKUMA, 0112 | MONOKUMA, 0113 | NARRATION, 0114 | NARRATION, 0115 | NARRATION, 0116 | NARRATION, 0117 | MONOKUMA, 0118 | MONOKUMA, 0119 | MONDO OOWADA, 0120 | MONDO OOWADA, 0121 | MONDO OOWADA, 0122 | MONDO OOWADA, 0123 | MONOKUMA, 0124 | MONOKUMA, 0125 | MONOKUMA, 0126 | MONOKUMA, 0127 | MONOKUMA, 0128 | DAIA OOWADA, 0129 | MONOKUMA, 0130 | DAIA OOWADA, 0131 | DAIA OOWADA, 0132 | DAIA OOWADA, 0133 | DAIA OOWADA, 0134 | MONOKUMA, 0135 | MONOKUMA, 0136 | MONOKUMA, 0137 | MONOKUMA, 0138 | MONOKUMA, 0139 | MONOKUMA, 0140 | MONOKUMA, 0141 | MONOKUMA, 0142 | MONDO OOWADA, 0143 | MONDO OOWADA, 0144 | MONOKUMA, 0145 | MONOKUMA, 0146 | MONOKUMA, 0147 | MONOKUMA, 0148 | MONOKUMA, 0149 | NARRATION, 0150 | MONDO OOWADA, 0151 | MONDO OOWADA, 0152 | MONDO OOWADA, 0153 | MONDO OOWADA, 0154 | MONDO OOWADA, 0155 | MONDO OOWADA, 0156 | MAKOTO NAEGI, 0157 | MONDO OOWADA, 0158 | MONDO OOWADA, 0159 | MONDO OOWADA, 0160 | MONDO OOWADA, 0161 | MONDO OOWADA, 0162 | MONDO OOWADA, 0163 | MONDO OOWADA, 0164 | MONDO OOWADA, 0165 | MONDO OOWADA, 0166 | MONDO OOWADA, 0167 | CHIHIRO FUJISAKI, 0168 | MONDO OOWADA, 0169 | MONDO OOWADA, 0170 | CHIHIRO FUJISAKI, 0171 | MONDO OOWADA, 0172 | CHIHIRO FUJISAKI, 0173 | CHIHIRO FUJISAKI, 0174 | CHIHIRO FUJISAKI, 0175 | MONDO OOWADA, 0176 | MONDO OOWADA, 0177 | CHIHIRO FUJISAKI, 0178 | CHIHIRO FUJISAKI, 0179 | CHIHIRO FUJISAKI, 0181 | MONDO OOWADA, 0182 | MONDO OOWADA, 0183 | CHIHIRO FUJISAKI, 0184 | MONDO OOWADA, 0185 | MONDO OOWADA, 0186 | MONDO OOWADA, 0187 | MONDO OOWADA, 0188 | MONDO OOWADA, 0189 | MONDO OOWADA, 0190 | MONDO OOWADA, 0191 | MONDO OOWADA, 0192 | CHIHIRO FUJISAKI, 0193 | MONDO OOWADA, 0194 | MONDO OOWADA, 0195 | MONDO OOWADA, 0196 | MONDO OOWADA, 0197 | MONDO OOWADA, 0198 | CHIHIRO FUJISAKI, 0199 | MONDO OOWADA, 0200 | CHIHIRO FUJISAKI, 0201 | CHIHIRO FUJISAKI, 0202 | MONDO OOWADA, 0203 | MONDO OOWADA, 0204 | MONDO OOWADA, 0205 | MONDO OOWADA, 0206 | MONDO OOWADA, 0207 | MONDO OOWADA, 0208 | MONDO OOWADA, 0209 | MONDO OOWADA, 0210 | KIYOTAKA ISHIMARU, 0212 | MONDO OOWADA, 0213 | MONDO OOWADA, 0214 | MONDO OOWADA, 0215 | MONDO OOWADA, 0216 | MAKOTO NAEGI, 0217 | MAKOTO NAEGI, 0218 | MAKOTO NAEGI, 0219 | MAKOTO NAEGI, 0220 | MONDO OOWADA, 0221 | MONOKUMA, 0222 | MONOKUMA, 0223 | MONOKUMA, 0224 | MONOKUMA, 0225 | MONOKUMA, 0226 | MONOKUMA, 0227 | KIYOTAKA ISHIMARU, 0228 | KIYOTAKA ISHIMARU, 0229 | MONOKUMA, 0230 | MONOKUMA, 0231 | MAKOTO NAEGI, 0232 | KIYOTAKA ISHIMARU, 0233 | MONOKUMA, 0234 | KIYOTAKA ISHIMARU, 0235 | MONOKUMA, 0236 | KIYOTAKA ISHIMARU, 0237 | MONOKUMA, 0238 | KIYOTAKA ISHIMARU, 0240 | MONDO OOWADA, 0241 | MONDO OOWADA
+    i [not_copy_of_source] Entry "0004 | MONDO OOWADA" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MONDO OOWADA" (line 93): translation is identical to source text
+    i [not_copy_of_source] Entry "0062 | MONDO OOWADA" (line 423): translation is identical to source text
+    i [not_copy_of_source] Entry "0081 | MONDO OOWADA" (line 556): translation is identical to source text
+    i [not_copy_of_source] Entry "0085 | MONDO OOWADA" (line 579): translation is identical to source text
+    i [not_copy_of_source] Entry "0180 | MONDO OOWADA" (line 1208): translation is identical to source text
+    i [not_copy_of_source] Entry "0211 | MONDO OOWADA" (line 1412): translation is identical to source text
+    i [not_copy_of_source] Entry "0239 | MONDO OOWADA" (line 1600): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_201_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_201_000
+
+  [1 WARN]         e02_201_000
+    ! [untranslated] 111 untranslated: 0001 | MONOKUMA, 0002 | KIYOTAKA ISHIMARU, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | KIYOTAKA ISHIMARU, 0006 | KIYOTAKA ISHIMARU, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | KIYOTAKA ISHIMARU, 0010 | KIYOTAKA ISHIMARU, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | BYAKUYA TOGAMI, 0014 | MAKOTO NAEGI, 0015 | AOI ASAHINA, 0016 | BYAKUYA TOGAMI, 0017 | KYOUKO KIRIGIRI, 0018 | KYOUKO KIRIGIRI, 0019 | KYOUKO KIRIGIRI, 0020 | BYAKUYA TOGAMI, 0021 | BYAKUYA TOGAMI, 0022 | MAKOTO NAEGI, 0023 | BYAKUYA TOGAMI, 0024 | CELES, 0025 | BYAKUYA TOGAMI, 0026 | CELES, 0027 | BYAKUYA TOGAMI, 0028 | BYAKUYA TOGAMI, 0029 | BYAKUYA TOGAMI, 0030 | YASUHIRO HAGAKURE, 0031 | BYAKUYA TOGAMI, 0032 | HIFUMI YAMADA, 0033 | BYAKUYA TOGAMI, 0034 | BYAKUYA TOGAMI, 0035 | BYAKUYA TOGAMI, 0036 | BYAKUYA TOGAMI, 0037 | MAKOTO NAEGI, 0038 | KYOUKO KIRIGIRI, 0039 | KYOUKO KIRIGIRI, 0040 | YASUHIRO HAGAKURE, 0041 | BYAKUYA TOGAMI, 0042 | BYAKUYA TOGAMI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | BYAKUYA TOGAMI, 0046 | BYAKUYA TOGAMI, 0047 | MAKOTO NAEGI, 0048 | KYOUKO KIRIGIRI, 0049 | BYAKUYA TOGAMI, 0050 | KYOUKO KIRIGIRI, 0051 | KYOUKO KIRIGIRI, 0052 | KYOUKO KIRIGIRI, 0053 | MONOKUMA, 0054 | KYOUKO KIRIGIRI, 0055 | KYOUKO KIRIGIRI, 0056 | MONOKUMA, 0057 | MONOKUMA, 0058 | MONOKUMA, 0059 | KYOUKO KIRIGIRI, 0060 | MONOKUMA, 0061 | MONOKUMA, 0062 | SAKURA OOGAMI, 0063 | MONOKUMA, 0064 | MONOKUMA, 0065 | MONOKUMA, 0066 | MONOKUMA, 0067 | MONOKUMA, 0068 | BYAKUYA TOGAMI, 0069 | BYAKUYA TOGAMI, 0070 | MONOKUMA, 0071 | MONOKUMA, 0072 | BYAKUYA TOGAMI, 0073 | BYAKUYA TOGAMI, 0074 | BYAKUYA TOGAMI, 0075 | BYAKUYA TOGAMI, 0076 | BYAKUYA TOGAMI, 0077 | MONOKUMA, 0078 | BYAKUYA TOGAMI, 0079 | MONOKUMA, 0080 | MONOKUMA, 0081 | MONOKUMA, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | MAKOTO NAEGI, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | MAKOTO NAEGI, 0090 | MONOKUMA, 0091 | MONOKUMA, 0092 | MONOKUMA, 0093 | MONOKUMA, 0094 | MONOKUMA, 0095 | MONOKUMA, 0096 | MONOKUMA, 0097 | MONOKUMA, 0098 | MONOKUMA, 0099 | MONOKUMA, 0100 | MONOKUMA, 0102 | NO NAME, 0103 | MONOKUMA, 0104 | NO NAME, 0105 | NO NAME, 0106 | MONOKUMA, 0107 | MONOKUMA, 0108 | MONOKUMA, 0109 | MONOKUMA, 0110 | MONOKUMA, 0111 | MONOKUMA, 0113 | NARRATION
+    i [not_copy_of_source] Entry "0101 | NO NAME" (line 696): translation is identical to source text
+    i [not_copy_of_source] Entry "0112 | NO NAME" (line 759): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_255_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e02_255_006
+
+  [1 WARN]         e02_255_006
+    ! [untranslated] 6 untranslated: 0001 | NARRATION, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA
+
+========================================================================
+  SUMMARY
+========================================================================
+  Files OK          : 51
+  Files with issues : 121
+  Total ERRORs      : 0
+  Total WARNings    : 121
+========================================================================
