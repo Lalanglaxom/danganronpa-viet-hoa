@@ -1,13 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. 苗木くん！　見たまえ！
 msgctxt "0001 | KIYOTAKA ISHIMARU"
 msgid "Makoto! Look!"
 msgstr "Makoto! Nhìn này!"
+
 #. 階段のシャッターが消えている…
 #. どうやら<CLT 3>学校の２階への道が開いた<CLT>ようだぞ！
 msgctxt "0002 | KIYOTAKA ISHIMARU"
@@ -17,6 +26,7 @@ msgid ""
 msgstr ""
 "Cánh cổng chắn cầu thang đã biến mất rồi... Có vẻ như <CLT 3>con\n"
 "đường dẫn lên tầng 2<CLT> đã được mở ra!"
+
 #. しかし、そういう時こそ
 #. 既知の場所を調べる事が重要だ！
 msgctxt "0003 | KIYOTAKA ISHIMARU"
@@ -26,6 +36,7 @@ msgid ""
 msgstr ""
 "Nhưng vào những lúc thế này, việc kiểm tra kỹ lại những\n"
 "khu vực chúng ta đã biết cũng quan trọng không kém đâu!"
+
 #. どうかね、素晴らしい発想だろう？
 #. 自分でも惚れ惚れする！
 msgctxt "0004 | KIYOTAKA ISHIMARU"
@@ -33,12 +44,14 @@ msgid ""
 "Aren't I so clever to think of that!? I really impress\n"
 "myself sometimes."
 msgstr ""
-"Tôi nghĩ ra ý đó hay quá đúng không!? Đôi khi chính tôi\n"
+"Tớ nghĩ ra ý đó hay quá đúng không!? Đôi khi chính tớ\n"
 "cũng thấy ngưỡng mộ bản thân mình nữa."
+
 #. では、学校側は頼んだぞッ！
 msgctxt "0005 | KIYOTAKA ISHIMARU"
 msgid "Well, I'll leave the school to you!"
-msgstr "Vậy nhé, tôi giao phía bên trường học cho cậu đấy!"
+msgstr "Vậy nhé, tớ giao phía bên trường học cho cậu đấy!"
+
 #. 僕はこれから寄宿舎を見てくる！
 #. 学校側は頼んだぞッ！
 msgctxt "0006 | KIYOTAKA ISHIMARU"
@@ -46,8 +59,9 @@ msgid ""
 "I'm gonna go check out the dorms! The school's all\n"
 "yours!"
 msgstr ""
-"Tôi sẽ đi kiểm tra khu ký túc xá! Phía bên trường học\n"
+"Tớ sẽ đi kiểm tra khu ký túc xá! Phía bên trường học\n"
 "trông cậy cả vào cậu đấy!"
+
 #. 念のためってヤツでよォ、
 #. 玄関の例の鉄の塊、調べてきたんだが…
 msgctxt "0007 | MONDO OOWADA"
@@ -57,6 +71,7 @@ msgid ""
 msgstr ""
 "Tao vừa đi kiểm tra cái khối sắt ở sảnh chính cho chắc ăn,\n"
 "nhưng mà..."
+
 #. チッ、やっぱりあそこが開くなんてこたぁ
 #. なさそうだな…
 msgctxt "0008 | MONDO OOWADA"
@@ -66,6 +81,7 @@ msgid ""
 msgstr ""
 "...đúng như tao nghĩ, nó chẳng hề nhúc nhích lấy một phân.\n"
 "Mẹ kiếp..."
+
 #. そっか…
 #. そう都合よくはいかないよね…
 msgctxt "0009 | MAKOTO NAEGI"
@@ -75,10 +91,12 @@ msgid ""
 msgstr ""
 "Vậy sao... tớ cũng sẽ thấy ngạc nhiên nếu hắn làm mọi thứ\n"
 "dễ dàng cho chúng ta như vậy..."
+
 #. うぉぉぉぉおおいッ！！
 msgctxt "0010 | MONDO OOWADA"
 msgid "Heeeeeyyy!"
-msgstr "Nèèèèèèèè!"
+msgstr "Êêêêêêêêêê!"
+
 #. …んな、しょぼくれた顔すんじゃねぇ！
 #. 気合入れたろっか？　あぁん？
 msgctxt "0011 | MONDO OOWADA"
@@ -89,11 +107,13 @@ msgstr ""
 "Đừng có trưng cái bộ mặt thảm hại đó ra! Trông mày như thằng hèn\n"
 "vậy! Muốn tao nạp thêm chút tinh thần thép cho mày không\n"
 "hả?"
+
 #. う、ううん！
 #. 気持ちだけで充分だから！
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "N-No thanks! I think I've got enough for now..."
 msgstr "K-Không cần đâu! Tớ nghĩ lúc này thế là đủ rồi..."
+
 #. へッ、そうかよ。
 #. んじゃ、とっとと出口見つけに行くぜ。
 msgctxt "0013 | MONDO OOWADA"
@@ -101,6 +121,7 @@ msgid ""
 "Well...okay. I'm gonna go look for another way out,\n"
 "then."
 msgstr "Hừm... được thôi. Vậy thì tao đi tìm lối thoát khác đây."
+
 #. 念のためってやつでよォ、
 #. 玄関の例の鉄の塊、調べてきたんだが…
 msgctxt "0014 | MONDO OOWADA"
@@ -110,6 +131,7 @@ msgid ""
 msgstr ""
 "Tao vừa đi kiểm tra cái khối sắt ở sảnh chính cho chắc ăn,\n"
 "nhưng mà..."
+
 #. チッ、やっぱりあそこが開くなんてこたぁ
 #. なさそうだな…
 msgctxt "0015 | MONDO OOWADA"
@@ -119,10 +141,12 @@ msgid ""
 msgstr ""
 "...đúng như tao nghĩ, nó chẳng hề nhúc nhích lấy một phân.\n"
 "Mẹ kiếp..."
+
 #. とっとと他の出口見つけに行くぜ。
 msgctxt "0016 | MONDO OOWADA"
 msgid "I'm gonna go look for another way out, then."
 msgstr "Vậy thì tao đi tìm lối thoát khác đây."
+
 #. <CLT 4>階段を閉ざしていた<CLT><CLT 3>シャッターがなくなってる<CLT><CLT 4>…
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -133,6 +157,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cánh <CLT><CLT 3>cổng<CLT><CLT 4> chắn lối cầu thang đã được mở ra rồi.\n"
 "<CLT>"
+
 #. <CLT 4>これが…モノクマの言ってた“新しい世界”の意味？
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -143,10 +168,12 @@ msgstr ""
 "<CLT 4>Đây có phải là ý nghĩa của \"thế giới mới\" mà Monokuma đã\n"
 "nói không?\n"
 "<CLT>"
+
 #. だとしたら…この上に何が？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "If so...what's up there?"
 msgstr "Nếu vậy thì... trên đó có gì nhỉ?"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0020 | MAKOTO NAEGI"
@@ -154,8 +181,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -165,9 +193,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0022 | MAKOTO NAEGI"
@@ -175,8 +204,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -186,9 +216,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0024 | MAKOTO NAEGI"
@@ -196,8 +227,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -207,9 +239,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. ……………
 msgctxt "0026 | MAKOTO NAEGI"
 msgid "..."
@@ -224,9 +257,10 @@ msgid ""
 "place ever again...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ thực sự không muốn vào đó... Tớ tuyệt đối không bao giờ\n"
+"<CLT 4>Mình thực sự không muốn vào đó... Mình tuyệt đối không bao giờ\n"
 "muốn thấy nơi này thêm một lần nào nữa...!\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0028 | MAKOTO NAEGI"
@@ -234,8 +268,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -245,9 +280,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0030 | MAKOTO NAEGI"
@@ -255,8 +291,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -266,9 +303,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0032 | NARRATION"
@@ -278,11 +316,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lộc cộc lộc cộc*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0033 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0034 | MAKOTO NAEGI"
@@ -290,8 +330,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -301,9 +342,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0036 | MAKOTO NAEGI"
@@ -311,8 +353,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -322,9 +365,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
@@ -332,8 +376,9 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"
+
 #. <CLT 4>モノクマの言ってた“新しい世界”の意味を…
 #. 確かめるんだ…
 #. <CLT>
@@ -343,9 +388,10 @@ msgid ""
 "world\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
+"<CLT 4>Mình cần phải xác nhận ý nghĩa của \"thế giới mới\" mà\n"
 "Monokuma đã nói...\n"
 "<CLT>"
+
 #. <CLT 4>まずは…学校エリアの方を調べてみよう…
 #. <CLT>
 msgctxt "0040 | MAKOTO NAEGI"
@@ -353,5 +399,5 @@ msgid ""
 "<CLT 4>I should look around the school first.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ nên đi kiểm tra quanh khu trường học đã.\n"
+"<CLT 4>Trước tiên mình nên đi kiểm tra quanh khu trường học đã.\n"
 "<CLT>"

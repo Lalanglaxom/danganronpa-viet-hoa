@@ -1,14 +1,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. どう、朝日奈さん。
 #. 返事あった？
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Hey, Hina. Any luck?"
 msgstr "Này Hina. Có tin gì mới không?"
+
 #. 駄目だよ…
 #. どんだけ強くノックしても反応なし…
 msgctxt "0002 | AOI ASAHINA"
@@ -16,13 +25,15 @@ msgid ""
 "Nah, it's no use. I keep banging on his door, and\n"
 "nothin'!"
 msgstr ""
-"Không ăn thua rồi. Tui cứ đập cửa phòng ông ta liên tục mà\n"
+"Không ăn thua rồi. Tui cứ đập cửa phòng cậu ấy liên tục mà\n"
 "chẳng thấy tăm hơi đâu hết!"
+
 #. …んもう！
 #. こら、いい加減に返事しろ～！
 msgctxt "0003 | AOI ASAHINA"
 msgid "Come on, already! Open up!"
 msgstr "Thôi nào, mau mở cửa đi chứ!"
+
 #. <CLT 23>「ドンドンドン！」
 #. <CLT>
 msgctxt "0004 | AOI ASAHINA"
@@ -32,6 +43,7 @@ msgid ""
 msgstr ""
 "<CLT 23>*RẦM RẦM RẦM*\n"
 "<CLT>"
+
 #. ちょ、ちょっと！
 #. そんなに叩いたらドアが壊れるって！
 msgctxt "0005 | MAKOTO NAEGI"
@@ -41,6 +53,7 @@ msgid ""
 msgstr ""
 "C-Cẩn thận chút đi. Cậu mà đập mạnh thế là cái cửa hỏng\n"
 "luôn đấy!"
+
 #. 平気平気！
 #. 私、腕力はさくらちゃんに負けるし。
 msgctxt "0006 | AOI ASAHINA"
@@ -50,6 +63,7 @@ msgid ""
 msgstr ""
 "Yên tâm đi. Thế này đã là gì so với những gì Sakura có thể\n"
 "làm chứ."
+
 #. さくらちゃんってスゴイんだよ～？
 #. 本気になれば…
 msgctxt "0007 | AOI ASAHINA"
@@ -59,16 +73,19 @@ msgid ""
 msgstr ""
 "Sakura thực sự đỉnh lắm đó, ông biết không? Nếu cậu ấy\n"
 "thực sự muốn..."
+
 #. こんなドアくらい破れちゃうんじゃないかな！
 msgctxt "0008 | AOI ASAHINA"
 msgid "...she could tear this door to shreds!"
 msgstr ""
 "...thì cậu ấy có thể xé nát cánh cửa này ra thành từng\n"
 "mảnh luôn!"
+
 #. へ、へえ…
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "I-I see..."
 msgstr "T-Tớ hiểu rồi..."
+
 #. <CLT 4>“超高校級の格闘家”の彼女なら…
 #. それも不可能じゃないかも…
 #. <CLT>
@@ -78,13 +95,15 @@ msgid ""
 "actually be able to do it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dẫu sao cậu ấy cũng là Siêu Học Sinh Võ Thuật mà. Có lẽ\n"
+"<CLT 4>Dẫu sao cậu ấy cũng là Siêu Học Sinh Võ Sĩ mà. Có lẽ\n"
 "cậu ấy thực sự làm được chuyện đó đấy...\n"
 "<CLT>"
+
 #. うーん…
 msgctxt "0011 | AOI ASAHINA"
 msgid "Hmm..."
 msgstr "Hừm..."
+
 #. これだけ叩いても出てこないって事は、
 #. やっぱり<CLT 3>ここにはいない<CLT>んだね。
 msgctxt "0012 | AOI ASAHINA"
@@ -94,6 +113,7 @@ msgid ""
 msgstr ""
 "Tui gõ nãy giờ cũng đủ lâu rồi, tui nghĩ có thể khẳng định\n"
 "chắc chắn là <CLT 3>ông ta không có ở đây<CLT> đâu."
+
 #. みたいだね。
 #. じゃあ、ボクは他を捜してくるよ。
 msgctxt "0013 | MAKOTO NAEGI"
@@ -103,10 +123,12 @@ msgid ""
 msgstr ""
 "Tớ nghĩ cậu đúng đấy. Được rồi, tớ sẽ đi tìm cậu ta ở chỗ\n"
 "khác xem sao."
+
 #. うん！　よろしくね！
 msgctxt "0014 | AOI ASAHINA"
 msgid "Okay! Good luck!"
 msgstr "Được rồi! Chúc ông may mắn nhé!"
+
 #. これだけ叩いても出てこないって事は、
 #. やっぱり<CLT 3>ここにはいない<CLT>んだね。
 msgctxt "0015 | AOI ASAHINA"
@@ -116,6 +138,7 @@ msgid ""
 msgstr ""
 "Tui gõ nãy giờ cũng đủ lâu rồi, tui nghĩ có thể khẳng định\n"
 "chắc chắn là <CLT 3>ông ta không có ở đây<CLT> đâu."
+
 #. みたいだね。
 #. じゃあ、ボクは他を探してくるよ。
 msgctxt "0016 | MAKOTO NAEGI"
@@ -125,26 +148,32 @@ msgid ""
 msgstr ""
 "Tớ nghĩ cậu đúng đấy. Được rồi, tớ sẽ đi tìm cậu ta ở chỗ\n"
 "khác xem sao."
+
 #. うん！　よろしくね！
 msgctxt "0017 | AOI ASAHINA"
 msgid "Okay! Good luck!"
 msgstr "Được rồi! Chúc ông may mắn nhé!"
+
 #. 腐川さん、朝日奈さんと一緒なんだ。
 msgctxt "0018 | MAKOTO NAEGI"
 msgid "Hey, Toko. Hanging out with Hina, huh?"
 msgstr "Chào Toko. Đang đi cùng Hina hả?"
+
 #. なに…文句があるの…？
 msgctxt "0019 | TOUKO FUKAWA"
 msgid "What, you got a problem with th-that?"
 msgstr "Gì chứ, cậu có v-vấn đề gì với chuyện đó à?"
+
 #. そ、そういう訳じゃ…
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "N-No..."
 msgstr "Kh-Không có gì..."
+
 #. ふ、ふんっ…
 msgctxt "0021 | TOUKO FUKAWA"
 msgid "Hmph."
 msgstr "Hừ."
+
 #. な、何かあったかもしれないんでしょう…？
 #. １人は…危険じゃない…
 msgctxt "0022 | TOUKO FUKAWA"
@@ -154,10 +183,12 @@ msgid ""
 msgstr ""
 "Ch-Chuyện gì đó có thể đã xảy ra mà, đúng không? Ở một\n"
 "mình l-lúc này có lẽ không an toàn đâu..."
+
 #. だから心配して、朝日奈さんの側にいるんだ。
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "So you got scared and decided to stay close to Hina..."
 msgstr "Nên cậu thấy sợ và quyết định đi gần Hina chứ gì..."
+
 #. <CLT 4>へぇ、腐川さんにも
 #. そういうところがあったんだな…
 #. <CLT>
@@ -168,10 +199,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình đoán là ai cũng có một mặt yếu đuối thôi.\n"
 "<CLT>"
+
 #. このスポーツバカなら…
 msgctxt "0025 | TOUKO FUKAWA"
 msgid "As long as I'm w-with the sports idiot..."
 msgstr "Miễn là tôi đi c-cùng cái đồ ngốc thể thao này..."
+
 #. 何かあっても…考えもせずにかばって…
 #. 身代わりになってくれそうだし…
 msgctxt "0026 | TOUKO FUKAWA"
@@ -181,10 +214,12 @@ msgid ""
 msgstr ""
 "...nếu có chuyện gì x-xảy ra, tôi chắc chắn cô ta sẽ nhảy\n"
 "vào mà kh-không suy nghĩ rồi gánh hết hậu quả thôi..."
+
 #. え？
 msgctxt "0027 | MAKOTO NAEGI"
 msgid "Huh?"
 msgstr "Hả?"
+
 #. なに…？　盗み聞き？　盗み聞きなの？
 #. い、いやらしいっ！　いやらしいわっ！
 msgctxt "0028 | TOUKO FUKAWA"
@@ -194,11 +229,13 @@ msgid ""
 msgstr ""
 "Gì cơ? Cậu đ-đang nghe lén đấy à? Thật kinh tởm! Cậu đúng\n"
 "là đ-đáng ghét!"
+
 #. あ、あっち行きなさいよ！！
 #. この野良猫ッ！
 msgctxt "0029 | TOUKO FUKAWA"
 msgid "G-Get lost, you stray cat!"
-msgstr "C-Cút đi, đồ mèo hoang này!"
+msgstr "C-Cút đi, đồ mèo hoang!"
+
 #. ………………
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "..."
@@ -209,6 +246,7 @@ msgstr "..."
 msgctxt "0031 | TOUKO FUKAWA"
 msgid "I s-said go away, wandering pig!"
 msgstr "Tôi đ-đã bảo là biến đi rồi mà, đồ lợn hoang này!"
+
 #. <CLT 4>なんだよ、野良ブタって…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -218,6 +256,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Lợn hoang là cái quái gì vậy chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>ここは女子トイレだ…
 #. <CLT>
 msgctxt "0033 | MAKOTO NAEGI"
@@ -227,6 +266,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là nhà vệ sinh nữ.\n"
 "<CLT>"
+
 #. <CLT 4>もちろん、入る訳にはいかない…
 #. <CLT>
 msgctxt "0034 | MAKOTO NAEGI"
@@ -236,6 +276,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Rõ ràng là mình không thể vào rồi...\n"
 "<CLT>"
+
 #. <CLT 4>ボクの部屋だけど…
 #. ここにはいないだろう…
 #. <CLT>
@@ -246,6 +287,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng mình. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ここは霧切さんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -256,6 +298,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Kyoko. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0037 | MAKOTO NAEGI"
@@ -265,11 +308,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0038 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+
 #. <CLT 4>ここは腐川さんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -280,6 +325,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Toko. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ここは不二咲さんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -290,6 +336,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Chihiro. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>朝日奈さんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -300,6 +347,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Hina. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ここは、石丸クンの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -310,6 +358,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Taka. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>大和田クンの部屋はここだ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -320,6 +369,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Mondo. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>一応、ボクもノックしてみよう。
 #. <CLT>
 msgctxt "0044 | MAKOTO NAEGI"
@@ -329,6 +379,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ mình nên tự gõ cửa thử xem sao, cho chắc chắn.\n"
 "<CLT>"
+
 #. <CLT 23>「コンコン」
 #. <CLT>
 msgctxt "0045 | MAKOTO NAEGI"
@@ -338,6 +389,7 @@ msgid ""
 msgstr ""
 "<CLT 23>*Cộc cộc*\n"
 "<CLT>"
+
 #. …………
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "..."
@@ -352,6 +404,7 @@ msgid ""
 msgstr ""
 "<CLT 23>*Cộc cộc*\n"
 "<CLT>"
+
 #. …………
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "..."
@@ -360,11 +413,13 @@ msgstr "..."
 #. ね、返事なしでしょ？
 msgctxt "0049 | AOI ASAHINA"
 msgid "See? He's not in there."
-msgstr "Thấy chưa? Ông ta không có ở trong đó đâu."
+msgstr "Thấy chưa? Ổng không có ở trong đó đâu."
+
 #. うん、ここにはいないみたいだね。
 msgctxt "0050 | MAKOTO NAEGI"
 msgid "Yeah, I guess not..."
 msgstr "Ừ, tớ cũng nghĩ vậy..."
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0051 | MAKOTO NAEGI"
@@ -374,11 +429,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0052 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+
 #. <CLT 4>セレスさんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -389,6 +446,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Celeste. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>大神さんの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -399,6 +457,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Sakura. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0055 | MAKOTO NAEGI"
@@ -408,11 +467,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0056 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+
 #. <CLT 4>葉隠クンの部屋はここだ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -423,6 +484,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Hiro. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ここは山田クンの部屋だ。
 #. ここにはいないだろう…
 #. <CLT>
@@ -433,6 +495,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng của Hifumi. Byakuya chắc chắn không ở đây đâu...\n"
 "<CLT>"
+
 #. <CLT 4>階段には、シャッターが降りてる。
 #. <CLT>
 msgctxt "0059 | MAKOTO NAEGI"
@@ -442,6 +505,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cánh cổng đang chặn lối lên cầu thang.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは行けるようにはならないのか…
 #. <CLT>
 msgctxt "0060 | MAKOTO NAEGI"
@@ -451,6 +515,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình tự hỏi liệu lúc nào đó nó có mở ra không nhỉ...\n"
 "<CLT>"
+
 #. <CLT 4>鉄格子だ…
 #. かなり頑丈そうだな。
 #. <CLT>
@@ -461,6 +526,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cánh cổng này trông vô cùng chắc chắn.\n"
 "<CLT>"
+
 #. <CLT 4>なんだって、こんなに厳重に
 #. 封鎖してるんだろう…
 #. <CLT>

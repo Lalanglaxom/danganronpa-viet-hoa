@@ -1,13 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. ここには、<CLT 3>十神はいない<CLT>ようだ…
 msgctxt "0001 | SAKURA OOGAMI"
 msgid "It would appear <CLT 3>Byakuya<CLT> is not here..."
 msgstr "Có vẻ như <CLT 3>Byakuya<CLT> không có ở đây..."
+
 #. 朝と言えばトレーニングだ…
 #. ゆえに、更衣室にいるかと思ったのだが…
 msgctxt "0002 | SAKURA OOGAMI"
@@ -17,6 +26,7 @@ msgid ""
 msgstr ""
 "Vì đang là buổi sáng, tôi đã nghĩ cậu ta có thể đã đến\n"
 "phòng thay đồ để tập luyện."
+
 #. 男子更衣室のドアは…
 #. 女子には開けられない事を失念していた…
 msgctxt "0003 | SAKURA OOGAMI"
@@ -26,10 +36,12 @@ msgid ""
 msgstr ""
 "Nhưng tôi đã quên mất rằng con gái không thể mở được cửa\n"
 "phòng thay đồ nam."
+
 #. あ、そうだったね。
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "Oh yeah, true."
 msgstr "Ồ phải rồi, đúng thế thật."
+
 #. ひとまず、ノックしてみたが返答はなかった。
 #. それに、器具を使用している音もしなかった…
 msgctxt "0005 | SAKURA OOGAMI"
@@ -38,8 +50,8 @@ msgid ""
 "sound of equipment being used, but there was nothing."
 msgstr ""
 "Tôi đã gõ cửa, nhưng không ai trả lời. Tôi cũng lắng nghe xem có\n"
-"tiếng thiết bị đang được sử dụng hay không, nhưng chẳng có gì\n"
-"cả."
+"tiếng thiết bị đang được sử dụng hay không, nhưng chẳng có gì."
+
 #. <CLT 4>じゃあ、いないって事か。
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -49,6 +61,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vậy là cậu ta chắc không có ở trong đó rồi...\n"
 "<CLT>"
+
 #. <CLT 4>それに、十神クンは朝から
 #. トレーニングで汗を流すようなタイプじゃないよな…
 #. <CLT>
@@ -61,14 +74,17 @@ msgstr ""
 "<CLT 4>Hơn nữa, Byakuya trông không giống kiểu người sẽ đi \"đổ mồ\n"
 "hôi\" sớm thế này vào buổi sáng đâu.\n"
 "<CLT>"
+
 #. 大神さんは、毎朝トレーニングをしてるの？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Do you exercise every single morning, Sakura?"
 msgstr "Cậu tập luyện vào mỗi buổi sáng luôn sao, Sakura?"
+
 #. 無論だ…
 msgctxt "0009 | SAKURA OOGAMI"
 msgid "Of course."
 msgstr "Tất nhiên rồi."
+
 #. 朝のうちに体を動かしておかねば
 #. 一日のリズムが崩れてしまうからな…
 msgctxt "0010 | SAKURA OOGAMI"
@@ -78,10 +94,12 @@ msgid ""
 msgstr ""
 "Nếu tôi không vận động cho máu huyết lưu thông sớm vào\n"
 "buổi sáng, nó sẽ làm đảo lộn nhịp độ của cả ngày hôm đó."
+
 #. ここには、<CLT 3>十神はいない<CLT>ようだ…
 msgctxt "0011 | SAKURA OOGAMI"
 msgid "It would appear <CLT 3>Byakuya<CLT> is not here..."
 msgstr "Có vẻ như <CLT 3>Byakuya<CLT> không có ở đây..."
+
 #. 朝と言えばトレーニングだ…
 #. ゆえに、更衣室にいるかと思ったのだがな…
 msgctxt "0012 | SAKURA OOGAMI"
@@ -91,6 +109,7 @@ msgid ""
 msgstr ""
 "Vì đang là buổi sáng, tôi đã nghĩ cậu ta có thể đã đến\n"
 "phòng thay đồ để tập luyện."
+
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -100,6 +119,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -109,12 +129,14 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ có biểu tượng của trường...\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ tới và trừng\n"
-"phạt mình."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -124,6 +146,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -134,6 +157,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để chứng kiến mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -144,6 +168,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Dù bực mình thật đấy, nhưng tốt nhất là mình nên mặc kệ nó thôi.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のドアだ。
 #. ボクじゃロックを外せないから、入れないな…
 #. <CLT>
@@ -156,6 +181,7 @@ msgstr ""
 "<CLT 4>Cánh cửa dẫn đến phòng thay đồ nữ. Mình không có cách nào\n"
 "để mở khóa nó, nên có muốn mình cũng chẳng vào được.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは男子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳で開けられるはず…
 #. <CLT>
@@ -168,6 +194,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ của phòng thay đồ nam. Mình có thể mở nó bằng\n"
 "sổ học sinh điện tử của mình.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳じゃ開けられないはず…
 #. <CLT>
@@ -180,6 +207,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ của phòng thay đồ nữ. Trong sổ học sinh điện tử mình\n"
 "được ghi là \"nam\", nên nó không thể mở cánh cửa này.\n"
 "<CLT>"
+
 #. <CLT 4>これって…本物の銃だよな？
 #. なんでこんな物があるんだよ…
 #. <CLT>
@@ -192,6 +220,7 @@ msgstr ""
 "<CLT 4>Đó là... một khẩu súng thật sao? Tại sao ở đây lại có một\n"
 "thứ như thế chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>ビート板か…
 #. 学校の授業で使ったっけな…
 #. <CLT>
@@ -204,6 +233,7 @@ msgstr ""
 "<CLT 4>Đó là một tấm ván bơi. Liệu mình đã từng thực sự dùng cái\n"
 "nào như thế này chưa nhỉ...?\n"
 "<CLT>"
+
 #. <CLT 4>浮き輪を見てると…
 #. ドーナツを思い出すな…
 #. <CLT>
@@ -215,14 +245,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhìn cái thứ này làm mình nhớ đến bánh donut thật quá đi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0025 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0026 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0027 | NARRATION"
@@ -230,5 +263,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

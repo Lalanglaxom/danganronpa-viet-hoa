@@ -1,21 +1,32 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. どうだ、見つかったか？
 msgctxt "0001 | MONDO OOWADA"
 msgid "How's it goin'? You find him?"
 msgstr "Sao rồi? Mày tìm thấy nó chưa?"
+
 #. ううん…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "No..."
 msgstr "Chưa..."
+
 #. チッ、どこ行きやがったんだ…
 msgctxt "0003 | MONDO OOWADA"
 msgid "Shit... Man, where the hell'd he go?"
-msgstr "Chết tiệt... Thật chứ, nó biến đi đằng quái nào rồi?"
+msgstr "Địt... Thật chứ, nó biến đi đằng quái nào rồi?"
+
 #. 空気を読まねぇアイツの事だ…
 msgctxt "0004 | MONDO OOWADA"
 msgid ""
@@ -24,18 +35,21 @@ msgid ""
 msgstr ""
 "Cái thằng đó lúc nào cũng coi trời bằng vung, ai mà biết\n"
 "được nó đang làm cái quái gì cơ chứ?"
+
 #. のんきに朝から風呂でも入ってんじゃねぇかと
 #. 思ったんだがな…
 msgctxt "0005 | MONDO OOWADA"
 msgid "I figured maybe he was takin' a bath or somethin'."
-msgstr "Tao đã nghĩ có lẽ nó đang đi tắm hay gì đó rồi."
+msgstr "Tao đã nghĩ có lẽ nó đang đi tắm hay gì đó."
+
 #. ところでよォ、苗木。
 #. オメェは<CLT 3>朝風呂<CLT>好きか？
 msgctxt "0006 | MONDO OOWADA"
 msgid "So what about you? You a <CLT 3>morning bath<CLT> kinda guy?"
 msgstr ""
-"Còn mày thì sao, Naegi? Mày có phải kiểu người thích <CLT 3>tắm\n"
-"sáng<CLT> không?"
+"Còn mày thì sao, Makoto? Mày có phải kiểu người thích <CLT 3>\n"
+"tắm sáng<CLT> không?"
+
 #. いいぜェ、
 #. 一晩中、バイクで風を切った後の朝風呂はよォ！
 msgctxt "0007 | MONDO OOWADA"
@@ -45,6 +59,7 @@ msgid ""
 msgstr ""
 "Sau cả đêm dài cưỡi xe xé gió, cảm giác gió tạt thẳng vào\n"
 "mặt, thì không gì sướng bằng được ngâm mình buổi sáng đâu!"
+
 #. 冷えた体に染み渡る熱さと、魂に凝った熱さが
 #. 身と心を揺さぶる…！
 msgctxt "0008 | MONDO OOWADA"
@@ -54,6 +69,7 @@ msgid ""
 msgstr ""
 "Làn nước nóng sẽ giúp mày thư giãn, và sức nóng từ tâm hồn\n"
 "sẽ khiến cả cơ thể lẫn trái tim mày bùng nổ!"
+
 #. う、うーん…
 #. 僕にはちょっとわからないかな…
 msgctxt "0009 | MAKOTO NAEGI"
@@ -61,6 +77,7 @@ msgid ""
 "S-Sure thing. I'll have to take your word for...all\n"
 "that."
 msgstr "Ch-Chắc là vậy rồi. Tớ sẽ ghi nhận... mấy lời đó của cậu."
+
 #. あぁん？
 #. んだよ、つまんねー男だな…
 msgctxt "0010 | MONDO OOWADA"
@@ -68,6 +85,7 @@ msgid ""
 "What, you don't know what I'm talkin' about? Fuckin'\n"
 "nerd..."
 msgstr "Gì, mày không hiểu tao đang nói gì hả? Đúng là đồ mọt sách..."
+
 #. 男なら裸のつきあいってのも大事だろ？
 #. 今度つきあえよ？　な？
 msgctxt "0011 | MONDO OOWADA"
@@ -77,10 +95,12 @@ msgid ""
 msgstr ""
 "Đàn ông con trai là phải trần trụi với nhau mới thân được,\n"
 "hiểu không? Lần tới đi với tao đi, rồi mày sẽ thấy!"
+
 #. か、考えておくね…
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "I-I'll think about it..."
 msgstr "T-Tớ sẽ suy nghĩ về việc đó..."
+
 #. <CLT 4>というか、ここにいる限り
 #. バイクで走るのは無理じゃないかな…
 #. <CLT>
@@ -93,17 +113,20 @@ msgstr ""
 "<CLT 4>Nhưng mà... cậu đâu có được \"cưỡi xe xé gió\" ở trong cái\n"
 "trường này đâu đúng không?\n"
 "<CLT>"
+
 #. ま、ここには<CLT 3>アイツもいねぇ<CLT>し
 #. 別の場所を探すか。
 msgctxt "0014 | MONDO OOWADA"
 msgid ""
 "Well...<CLT 3>he's not here<CLT>. I better go look somewhere\n"
 "else."
-msgstr "Chà... <CLT 3>nó không có ở đây<CLT>. Tốt nhất tao nên đi tìm chỗ khác thôi."
+msgstr "Hừm... <CLT 3>nó không có ở đây<CLT>. Tốt nhất tao nên đi tìm chỗ khác."
+
 #. そうだね…
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "Good idea..."
 msgstr "Ý hay đấy..."
+
 #. <CLT 4>ロッカーだ…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -113,6 +136,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tủ đồ...\n"
 "<CLT>"
+
 #. <CLT 4>１つだけ開いているものがあるけど、
 #. ここにも何もないみたいだ。
 #. <CLT>
@@ -124,6 +148,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một cái không khóa, nhưng mình chẳng thấy gì bên trong cả.\n"
 "<CLT>"
+
 #. <CLT 4>このマッサージチェアに座ってたら…
 #. おじさん扱いされたりしてね…
 #. <CLT>
@@ -136,14 +161,17 @@ msgstr ""
 "<CLT 4>Ngồi vào cái ghế massage này chắc sẽ khiến mình cảm thấy\n"
 "già đi mất...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0019 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0020 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0021 | NARRATION"
@@ -151,5 +179,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

@@ -1,8 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. むっ！
 #. 苗木くんもここを捜しに来たのか！
@@ -10,11 +18,13 @@ msgctxt "0001 | KIYOTAKA ISHIMARU"
 msgid ""
 "Ah-ha! I see you came to search this area as well,\n"
 "Makoto!"
-msgstr "A-ha! Tôi thấy cậu cũng đến tìm ở khu vực này rồi, Makoto!"
+msgstr "A-ha! Tớ thấy cậu cũng đến tìm ở khu vực này rồi, Makoto!"
+
 #. しかし、一歩遅かったな！
 msgctxt "0002 | KIYOTAKA ISHIMARU"
 msgid "But you were one step too late!"
 msgstr "Nhưng cậu đã chậm một bước rồi!"
+
 #. すでに僕が調査済みだ。
 #. 十神くんの<CLT 3>痕跡は一切なかった<CLT>ぞ！
 msgctxt "0003 | KIYOTAKA ISHIMARU"
@@ -22,19 +32,22 @@ msgid ""
 "I've already finished my investigation. And <CLT 3>there was\n"
 "no trace<CLT> of Byakuya here!"
 msgstr ""
-"Tôi đã hoàn tất việc điều tra rồi. Và <CLT 3>chẳng có dấu vết nào<CLT>\n"
+"Tớ đã hoàn tất việc điều tra rồi. Và <CLT 3>chẳng có dấu vết nào<CLT>\n"
 "của Byakuya ở đây cả!"
+
 #. 腹が減っては戦はできん！
 msgctxt "0004 | KIYOTAKA ISHIMARU"
 msgid "An army marches on its stomach, as they say!"
 msgstr "Người ta thường nói có thực mới vực được đạo mà!"
+
 #. 従って、ここで腹を満たしているのかと
 #. 推測したのだが…
 msgctxt "0005 | KIYOTAKA ISHIMARU"
 msgid ""
 "So I thought maybe he would come here to have his\n"
 "fill..."
-msgstr "Nên tôi đã nghĩ có lẽ cậu ta sẽ đến đây để lấp đầy cái bụng..."
+msgstr "Nên tớ đã nghĩ có lẽ cậu ta sẽ đến đây để lấp đầy cái bụng..."
+
 #. くうっ！
 #. よもや、痕跡すら見つけられないとは！
 msgctxt "0006 | KIYOTAKA ISHIMARU"
@@ -44,6 +57,7 @@ msgid ""
 msgstr ""
 "Chúng ta đều phải ăn! Ăn cho đến khi không còn gì để ăn\n"
 "nữa mới thôi!"
+
 #. が、くじけている暇はない！
 #. 別の場所を捜しに向かおうじゃないか、苗木くん！
 msgctxt "0007 | KIYOTAKA ISHIMARU"
@@ -53,10 +67,12 @@ msgid ""
 msgstr ""
 "Dù sao thì, giờ không phải lúc để nản lòng. Chúng ta phải\n"
 "đi chỗ khác để tiếp tục cuộc tìm kiếm thôi!"
+
 #. そ、そうだね…
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Y-Yeah, you're right..."
 msgstr "Ph-Phải, cậu nói đúng đấy..."
+
 #. くじけている暇はない！
 #. 別の場所を捜しに向かおうじゃないか、苗木くん！
 msgctxt "0009 | KIYOTAKA ISHIMARU"
@@ -66,10 +82,12 @@ msgid ""
 msgstr ""
 "Giờ không phải lúc để nản lòng. Chúng ta phải đi chỗ khác\n"
 "để tiếp tục cuộc tìm kiếm thôi!"
+
 #. そ、そうだね…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Y-Yeah, you're right..."
 msgstr "Ph-Phải, cậu nói đúng đấy..."
+
 #. <CLT 4>モノクマが写るモニター…
 #. 今は校章が浮かんでいるだけだ…
 #. <CLT>
@@ -79,15 +97,17 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
-"Hiện tại, nó chỉ đang hiển thị biểu tượng của trường thôi.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện. Hiện tại, nó chỉ đang hiển thị huy hiệu của trường.\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ tới và trừng\n"
-"phạt mình."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -97,6 +117,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -107,6 +128,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để chứng kiến mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -115,8 +137,10 @@ msgid ""
 "alone.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù bực mình thật đấy, nhưng tốt nhất là mình nên mặc kệ nó thôi.\n"
+"<CLT 4>Dù việc này làm tôi phát cáu, nhưng tốt nhất là nên\n"
+"mặc kệ nó thôi.\n"
 "<CLT>"
+
 #. <CLT 4>ここの棚には、食べ物が並んでいる…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -126,6 +150,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có đủ loại thực phẩm khác nhau được xếp chồng lên nhau.\n"
 "<CLT>"
+
 #. <CLT 4>料理の食材からお菓子まで、よりどりみどりだ。
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -137,6 +162,7 @@ msgstr ""
 "<CLT 4>Từ nguyên liệu cơ bản đến đồ ăn nhẹ và kẹo, có mọi thứ mà\n"
 "bất kỳ ai cũng có thể muốn hoặc cần.\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. なんかテンション上がるよな…
 #. <CLT>
@@ -149,6 +175,7 @@ msgstr ""
 "<CLT 4>Có đủ thứ đồ đạc chất đống ở khắp mọi nơi. Mình thấy hơi\n"
 "phấn khích khi nhìn vào đống này...\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -158,6 +185,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có đủ thứ đồ đạc chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. 自分で調達すると思うと面倒だ。
 #. <CLT>
@@ -168,8 +196,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Có đủ thứ đồ đạc chất đống ở khắp mọi nơi. Mình chẳng bao\n"
-"giờ có được một nửa chỗ này ở thế giới bên ngoài.\n"
+"giờ có được dù một nửa chỗ này ở thế giới bên ngoài.\n"
 "<CLT>"
+
 #. <CLT 4>これは、冷蔵庫か…
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -177,8 +206,9 @@ msgid ""
 "<CLT 4>Is this the fridge Sayaka mentioned?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây có phải chiếc tủ lạnh mà Sayaka đã nhắc tới không nhỉ?\n"
+"<CLT 4>Đây có phải chiếc tủ lạnh mà Sayaka đã nhắc mìnhi không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>中には、飲み物や食料品が詰まっているな…
 #. <CLT>
 msgctxt "0022 | MAKOTO NAEGI"
@@ -188,14 +218,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó chứa đầy ắp đồ ăn và thức uống.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0023 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0024 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0025 | NARRATION"
@@ -203,5 +236,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

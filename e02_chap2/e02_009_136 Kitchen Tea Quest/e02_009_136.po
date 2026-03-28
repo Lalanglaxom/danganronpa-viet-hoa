@@ -1,14 +1,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. おお、苗木誠殿…
 #. どうしました？
 msgctxt "0001 | HIFUMI YAMADA"
 msgid "Ah, Mr. Naegi. What's going on?"
-msgstr "Ồ, cậu Naegi Makoto. Có chuyện gì thế cậu?"
+msgstr "Ồ, cậu Naegi. Có chuyện gì thế cậu?"
+
 #. それが、十神クンの姿が見えないから
 #. みんなで探そうって事になったんだ…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -18,15 +27,18 @@ msgid ""
 msgstr ""
 "À... sáng nay không ai thấy Byakuya đâu cả, nên mọi người\n"
 "quyết định sẽ đi tìm cậu ta."
+
 #. な、なんとっ！
 #. それは一大事！
 msgctxt "0003 | HIFUMI YAMADA"
 msgid "Wh-What!? That's not good at all!"
 msgstr "C-Cái gì!? Chuyện này hệ trọng lắm đây!"
+
 #. しかし…このブタめには…
 msgctxt "0004 | HIFUMI YAMADA"
 msgid "However...this little piggy needs to..."
 msgstr "Tuy nhiên... chú lợn con này phải..."
+
 #. ご主人様にロイヤルミルクティーをお届けするという
 #. <CLT 3>聖なる指命<CLT>がありまして…！
 msgctxt "0005 | HIFUMI YAMADA"
@@ -36,6 +48,7 @@ msgid ""
 msgstr ""
 "Tôi đang gánh vác một <CLT 3>thánh mệnh<CLT> là phải dâng trà sữa\n"
 "hoàng gia cho chủ nhân của mình!"
+
 #. ああ、このブタには身に余る光栄…！
 #. 心を込めて奉仕致します、ご主人様ッ！
 msgctxt "0006 | HIFUMI YAMADA"
@@ -45,11 +58,13 @@ msgid ""
 msgstr ""
 "Ban cho con lợn thấp hèn này một vinh dự to lớn đến thế\n"
 "sao...! Tôi sẽ tận tâm phục vụ người, thưa chủ nhân!"
+
 #. …そ、そう。
 #. がんばってね…
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "O-Oh, okay. Good luck with that..."
 msgstr "Ồ-Ồ, được rồi. Chúc cậu may mắn nhé..."
+
 #. <CLT 4>山田クン、変な世界に行っちゃってるな…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -58,8 +73,9 @@ msgid ""
 "himself...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Yamada lại lạc vào cái thế giới kỳ quặc của cậu ta rồi...\n"
+"<CLT 4>Hifumi lại lạc vào cái thế giới kỳ quặc của cậu ta rồi...\n"
 "<CLT>"
+
 #. ああ、このブタには身に余る光栄…！
 #. 心を込めて奉仕致します、ご主人様ッ！
 msgctxt "0009 | HIFUMI YAMADA"
@@ -69,6 +85,7 @@ msgid ""
 msgstr ""
 "Ban cho con lợn thấp hèn này một vinh dự to lớn đến thế\n"
 "sao...! Tôi sẽ tận tâm phục vụ người, thưa chủ nhân!"
+
 #. <CLT 4>山田クン、変な世界に行っちゃってるな…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -77,8 +94,9 @@ msgid ""
 "himself...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Yamada lại lạc vào cái thế giới kỳ quặc của cậu ta rồi...\n"
+"<CLT 4>Hifumi lại lạc vào cái thế giới kỳ quặc của cậu ta rồi...\n"
 "<CLT>"
+
 #. <CLT 4>モノクマが写るモニター…
 #. 厨房にまで置いてあるのか…
 #. <CLT>
@@ -89,8 +107,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Họ thậm chí còn đặt chúng ở cả trong bếp nữa sao...\n"
+"hiện. Chúng thậm chí còn đặt ở cả trong bếp nữa sao...\n"
 "<CLT>"
+
 #. <CLT 4>いつモノクマが出てくるかと思うと、
 #. うかうか料理なんて出来ないな…
 #. <CLT>
@@ -103,6 +122,7 @@ msgstr ""
 "<CLT 4>Thật khó mà tập trung nấu nướng ở đây khi cứ phải nghĩ đến\n"
 "việc hắn có thể xuất hiện bất cứ lúc nào...\n"
 "<CLT>"
+
 #. <CLT 4>この監視カメラ…
 #. 厨房にまで置いてあるのか…
 #. <CLT>
@@ -113,6 +133,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cả trong bếp cũng có camera giám sát nữa sao...\n"
 "<CLT>"
+
 #. <CLT 4>モノクマに見られてると思うと、
 #. 料理に集中なんて出来なさそうだ。
 #. <CLT>
@@ -125,6 +146,7 @@ msgstr ""
 "<CLT 4>Nghĩ đến việc bị Monokuma theo dõi, mình chẳng thể nào tập\n"
 "trung vào việc nấu ăn được.\n"
 "<CLT>"
+
 #. <CLT 4>包丁は、ひとつ欠けたまま…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -134,6 +156,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Bộ dao vẫn còn thiếu một chiếc...\n"
 "<CLT>"
+
 #. <CLT 4>ここにあった包丁を舞園さんが持ち出して…
 #. そして…それで……
 #. <CLT>
@@ -145,6 +168,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Sayaka đã lấy một chiếc dao ở đây... và rồi cậu ấy...\n"
 "<CLT>"
+
 #. <CLT 4>………………
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -154,6 +178,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>このショーケースにケーキが並んでたら
 #. 女の子たちが喜びそうだな。
 #. <CLT>
@@ -164,8 +189,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Mình cá là mấy bạn nữ sẽ sướng phát điên nếu cái tủ trưng\n"
-"bày lớn này được lấp đầy bởi bánh ngọt và kẹo thôi.\n"
+"bày lớn này được lấp đầy bởi bánh ngọt và kẹo.\n"
 "<CLT>"
+
 #. <CLT 4>いや…そんな気分じゃないか…
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -175,6 +201,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không... giờ không phải lúc để nghĩ về mấy chuyện đó.\n"
 "<CLT>"
+
 #. <CLT 4>野菜が山積みになっている…
 #. これはピーマンかな…？
 #. <CLT>
@@ -186,6 +213,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Rau củ chất đống ở đây này. À, đây là ớt chuông phải không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>あ、違う。
 #. パプリカって野菜だな、これは…
 #. <CLT>
@@ -196,14 +224,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Ồ không... chỉ là ớt bột thôi.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0022 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0023 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>厨房から出ますか？
 #. <CLT>
 msgctxt "0024 | NARRATION"
@@ -211,5 +242,5 @@ msgid ""
 "<CLT 23>Leave the kitchen?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn rời khỏi bếp không?\n"
+"<CLT 23>Rời khỏi nhà bếp?\n"
 "<CLT>"

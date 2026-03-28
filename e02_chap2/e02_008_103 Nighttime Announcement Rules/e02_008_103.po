@@ -1,8 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 23>「キーン、コーン…　カーン、コーン」
 #. <CLT>
@@ -11,8 +19,9 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*Bính bong, bính bong*\n"
+"<CLT 23>*Bính bong, binh bong*\n"
 "<CLT>"
+
 #. えー、校内放送でーす。
 #. 午後１０時になりました。
 msgctxt "0002 | MONOKUMA"
@@ -20,10 +29,12 @@ msgid ""
 "Mm, ahem, this is a school announcement. It is now 10\n"
 "p.m."
 msgstr "E hèm, đây là thông báo từ nhà trường. Bây giờ đã là 10 giờ tối."
+
 #. ただいまより<CLT 3>“夜時間”<CLT>になります。
 msgctxt "0003 | MONOKUMA"
 msgid "As such, it is officially <CLT 3>nighttime<CLT>."
 msgstr "Vì vậy, giờ đã chính thức là <CLT 3>giờ ban đêm<CLT>."
+
 #. 間もなく食堂はドアをロックされますので、
 #. 立ち入り禁止となりま～す。
 msgctxt "0004 | MONOKUMA"
@@ -33,14 +44,16 @@ msgid ""
 msgstr ""
 "Cửa phòng ăn sẽ sớm được khóa lại, và việc vào đó lúc này\n"
 "là bị nghiêm cấm hoàn toàn."
+
 #. ではでは、いい夢を。おやすみなさい…
 msgctxt "0005 | MONOKUMA"
 msgid ""
 "Okay then...sweet dreams, everyone! Good night, sleep\n"
 "tight, don't let the bed bugs bite..."
 msgstr ""
-"Thôi được rồi... chúc mọi người có những giấc mơ đẹp nhé!\n"
-"Chúc ngủ ngon, ngủ cho kỹ, đừng để rệp cắn đó..."
+"Thế thôi...mơ đẹp nhé, mọi người! Ngủ ngon, ngủ tròn, đừng để\n"
+"lũ rệp rỉa mòn thịt da..."
+
 #. <CLT 4>夜時間か…出歩きは禁止の約束だし…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -52,6 +65,7 @@ msgstr ""
 "<CLT 4>Mọi người đều đã hứa sẽ không rời khỏi phòng trong giờ ban\n"
 "đêm rồi...\n"
 "<CLT>"
+
 #. <CLT 4>仕方がない…今日は寝るか……
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -63,10 +77,12 @@ msgstr ""
 "<CLT 4>Cũng chẳng còn việc gì khác để làm. Mình đoán là mình nên\n"
 "đi ngủ thôi...\n"
 "<CLT>"
+
 #. 先生…モノクマ先生聞いてくれる？
 msgctxt "0008 | MONOKUMA"
 msgid "Mr. Monokuma... Mr. Monokuma, do you have a second?"
 msgstr "Thầy Monokuma... Thầy Monokuma, thầy có rảnh chút không?"
+
 #. 僕は自分が好きじゃないんだ。
 #. 胸を張って自慢できるような特技も趣味もないんだ。
 msgctxt "0009 | MONOKUMA"
@@ -74,9 +90,9 @@ msgid ""
 "I...I don't really like myself. I don't have any kind\n"
 "of skill or hobby I can say I'm super good at..."
 msgstr ""
-"Em... em thực sự không thích bản thân mình lắm. Em không có bất\n"
-"kỳ kỹ năng hay sở thích nào mà em có thể tự hào là mình cực giỏi\n"
-"cả..."
+"Em... em thực sự không ưa bản thân mình lắm. Em không có bất kỳ \n"
+"kỹ năng hay sở thích nào mà em có thể nói là mình cực giỏi cả..."
+
 #. 成績も中くらいなんだ。
 #. 運動神経も、そんなに良くなく悪くもないんだ。
 msgctxt "0010 | MONOKUMA"
@@ -86,6 +102,7 @@ msgid ""
 msgstr ""
 "Và điểm số của em cũng hoàn toàn bình thường. Phản xạ của\n"
 "em cũng tạm ổn. Không quá xuất sắc, cũng chẳng quá tệ."
+
 #. 受験勉強をすれば、どこかの大学に引っ掛かって、
 #. そこで新しい友達や恋人だって出来るかもしれない。
 msgctxt "0011 | MONOKUMA"
@@ -94,23 +111,26 @@ msgid ""
 "few friends. Maybe even find a normal girlfriend..."
 msgstr ""
 "Em có thể vào được một trường đại học khá, nơi em sẽ kết thêm\n"
-"vài người bạn. Thậm chí có thể tìm được một cô bạn gái bình\n"
-"thường..."
+"vài người bạn. Thậm chí có thể có một cô bạn gái bình thường..."
+
 #. だからこそ、自分が好きじゃないんだ！
 msgctxt "0012 | MONOKUMA"
 msgid "Which is exactly why I don't like who I am!"
 msgstr ""
 "Đó chính xác là lý do tại sao em không thích con người\n"
-"mình hiện tại!"
+"em hiện tại!"
+
 #. 僕は気付いてしまったんだよ！
 msgctxt "0013 | MONOKUMA"
 msgid "I understand that now!"
 msgstr "Bây giờ em đã hiểu ra rồi!"
+
 #. ボクの人生って、
 #. 結局はコピーアンドペーストなんだろ？
 msgctxt "0014 | MONOKUMA"
 msgid "My life is just one giant copy-paste!"
 msgstr "Cuộc đời em chỉ là một bản sao chép khổng lồ!"
+
 #. 想像力の欠如した、
 #. 単なる複製でしかないんだろ！？
 msgctxt "0015 | MONOKUMA"
@@ -120,10 +140,12 @@ msgid ""
 msgstr ""
 "Em chẳng có chút trí tưởng tượng nào cả! Em chỉ là một\n"
 "hình nộm trung bình đến mức hoàn hảo!"
+
 #. ねぇ、先生…そうなんだろ！？
 msgctxt "0016 | MONOKUMA"
 msgid "You see what I mean, right Mr. Monokuma!?"
 msgstr "Thầy hiểu ý em mà, đúng không thầy Monokuma!?"
+
 #. <CLT 23>「キーン、コーン…　カーン、コーン」
 #. <CLT>
 msgctxt "0017 | NARRATION"
@@ -131,8 +153,9 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*Bính bong, bính bong*\n"
+"<CLT 23>*Bính bong, binh bong*\n"
 "<CLT>"
+
 #. オマエラ、おはようございます！
 #. 朝です、７時になりました！　起床時間ですよ～！
 msgctxt "0018 | MONOKUMA"
@@ -142,14 +165,17 @@ msgid ""
 msgstr ""
 "Chào buổi sáng, các em! Bây giờ là 7 giờ sáng và giờ ban đêm đã\n"
 "chính thức kết thúc! Đến lúc thức dậy và tỏa sáng rồi!"
+
 #. さぁて、今日も張り切っていきましょう～！
 msgctxt "0019 | MONOKUMA"
 msgid "Get ready to greet another beee-yutiful day!"
 msgstr "Hãy sẵn sàng để chào đón một ngày mớiii tuyệt đẹp nào!"
+
 #. あ、そうそう…
 msgctxt "0020 | MONOKUMA"
 msgid "Oh, that's right!"
 msgstr "Ồ, đúng rồi!"
+
 #. ちなみに、電子生徒手帳を<CLT 3>アップデート<CLT>してあるので、
 #. お伝えしておきまーす！！
 msgctxt "0021 | MONOKUMA"
@@ -159,6 +185,7 @@ msgid ""
 msgstr ""
 "Ta muốn thông báo cho các em biết rằng sổ học sinh điện tử\n"
 "của các em đã được <CLT 3>cập nhật<CLT>!"
+
 #. 校則が追加されましたので、確認しておいてね！
 #. より充実した学園生活を今まで以上に楽しんでねー！
 msgctxt "0022 | MONOKUMA"
@@ -168,6 +195,7 @@ msgid ""
 msgstr ""
 "Các quy định mới đã được thêm vào, vậy nên hãy kiểm tra và\n"
 "tận hưởng cuộc sống học đường hơn bao giờ hết nhé!"
+
 #. <CLT 23><CLT><CLT 3>“校則”<CLT><CLT 23>が追加されました。
 #. 校則メニューで確認できます。
 #. <CLT>
@@ -178,6 +206,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Quy tắc mới đã được thêm vào menu <CLT><CLT 3>Nội quy<CLT><CLT 23>.\n"
 "<CLT>"
+
 #. <CLT 4>校則の追加…昨日モノクマが言ってた
 #. <CLT><CLT 3>『電子生徒手帳の他人への貸与禁止』<CLT><CLT 4>ってヤツか…
 #. <CLT>
@@ -187,16 +216,18 @@ msgid ""
 "e-Handbook to another student is strictly prohibited<CLT><CLT 4>.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hẳn là hắn đang nhắc tới chuyện hôm qua... <CLT><CLT 3>\"Nghiêm cấm\n"
+"<CLT 4>Hẳn là hắn đang nhắc mình chuyện hôm qua... <CLT><CLT 3>\"Nghiêm cấm\n"
 "việc cho học sinh khác mượn sổ học sinh điện tử<CLT><CLT 4>.\"\n"
 "<CLT>"
+
 #. …って、そんな事より、
 #. さっさと<CLT 3>朝食<CLT>に向かわないとな。
 msgctxt "0025 | MAKOTO NAEGI"
 msgid ""
 "But right now, I need to hurry up and head to\n"
 "<CLT 3>breakfast<CLT>."
-msgstr "Nhưng bây giờ, mình cần nhanh chóng đi ăn <CLT 3>sáng<CLT> đã."
+msgstr "Nhưng bây giờ, mình cần nhanh chóng đi <CLT 3>ăn sáng<CLT> đã."
+
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -206,6 +237,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>こんな物、壊してやりたいけど…
 #. 壊したら大変な事になるんだよな…
 #. <CLT>
@@ -215,9 +247,10 @@ msgid ""
 "what would happen to me if I did...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình chỉ muốn đập nát cái thứ ngớ ngẩn này cho xong, nhưng ai\n"
-"biết được chuyện gì sẽ xảy ra với mình nếu làm vậy chứ...\n"
+"<CLT 4>Mình rất muốn đập nát cái thứ ngu ngốc này, nhưng\n"
+"chẳng biết chuyện gì sẽ xảy ra nếu làm vậy đâu...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0028 | MAKOTO NAEGI"
@@ -228,6 +261,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để chứng kiến mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>無視してやるのが…精一杯の抵抗か…
 #. <CLT>
 msgctxt "0029 | MAKOTO NAEGI"
@@ -239,6 +273,7 @@ msgstr ""
 "<CLT 4>Phớt lờ chúng thực sự là cách duy nhất mình có thể kháng\n"
 "cự lại chúng...\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "..."
@@ -254,6 +289,7 @@ msgstr ""
 "<CLT 4>Mình không thể để bản thân trốn tránh khỏi cái chết của\n"
 "Sayaka...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんの為にも…
 #. ボク自身の為にもだ…！
 #. <CLT>
@@ -264,10 +300,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Vì Sayaka... và vì chính bản thân mình nữa...\n"
 "<CLT>"
+
 #. この鉄板…
 msgctxt "0033 | MAKOTO NAEGI"
 msgid "This metal plate..."
 msgstr "Tấm sắt này..."
+
 #. <CLT 4>どうにかして取っ払いたいけど…
 #. 無理だよな…
 #. <CLT>
@@ -280,10 +318,12 @@ msgstr ""
 "<CLT 4>Hơn bất cứ điều gì, mình muốn tìm cách gỡ nó ra. Nhưng\n"
 "chuyện đó là không thể...\n"
 "<CLT>"
+
 #. この鉄板…
 msgctxt "0035 | MAKOTO NAEGI"
 msgid "This metal plate..."
 msgstr "Tấm sắt này..."
+
 #. <CLT 4>どうにかして取っ払いたいけど…
 #. 無理だよな…
 #. <CLT>
@@ -296,6 +336,7 @@ msgstr ""
 "<CLT 4>Hơn bất cứ điều gì, mình muốn tìm cách gỡ nó ra. Nhưng\n"
 "chuyện đó là không thể...\n"
 "<CLT>"
+
 #. <CLT 4>メモ帳がある。
 #. けど、メモ帳なんて使う用事はないな。
 #. <CLT>
@@ -308,6 +349,7 @@ msgstr ""
 "<CLT 4>Vẫn là cuốn sổ ghi chép lúc trước. Mình chưa nghĩ ra việc\n"
 "gì cần dùng đến nó lúc này cả...\n"
 "<CLT>"
+
 #. <CLT 4>粘着テープクリーナーだ。
 #. 残量は相変わらず減ったままだ。
 #. <CLT>
@@ -320,6 +362,7 @@ msgstr ""
 "<CLT 4>Cái cây lăn bụi... Chắc chắn là nó đã vơi đi so với lúc\n"
 "ban đầu rồi.\n"
 "<CLT>"
+
 #. <CLT 4>これは…工具セットだな。
 #. <CLT>
 msgctxt "0039 | MAKOTO NAEGI"
@@ -329,6 +372,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là... bộ dụng cụ.\n"
 "<CLT>"
+
 #. <CLT 4>ビニールの包装がされてる。
 #. まだ未開封の新品だ。
 #. <CLT>
@@ -339,6 +383,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó vẫn chưa hề được mở ra.\n"
 "<CLT>"
+
 #. <CLT 4>まぁ、工具セットなんて使う事はないだろうな…
 #. <CLT>
 msgctxt "0041 | MAKOTO NAEGI"
@@ -348,6 +393,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Dù sao thì mình cũng không nghĩ là mình cần nó lúc này.\n"
 "<CLT>"
+
 #. <CLT 4>今までベッドの寝心地なんて
 #. 気にした事がなかったけど…
 #. <CLT>
@@ -360,6 +406,7 @@ msgstr ""
 "<CLT 4>Cho đến tận bây giờ mình vẫn chưa thực sự để tâm đến chiếc\n"
 "giường của mình hay bất cứ thứ gì...\n"
 "<CLT>"
+
 #. <CLT 4>家のベッドが一番だな…
 #. <CLT>
 msgctxt "0043 | MAKOTO NAEGI"
@@ -369,6 +416,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng mà... chiếc giường cũ ở nhà mình thực sự vẫn là nhất.\n"
 "<CLT>"
+
 #. <CLT 4>普通のゴミ箱だ。
 #. 特に注目するほどでもないな。
 #. <CLT>
@@ -380,6 +428,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng chú ý hay nổi bật về cái thùng rác này cả.\n"
 "<CLT>"
+
 #. <CLT 4>紙は、はがしたけど…
 #. <CLT>
 msgctxt "0045 | MAKOTO NAEGI"
@@ -389,6 +438,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình đã xé tờ giấy đó khỏi tường, nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>あの内容を思い出すだけでも、
 #. 嫌な気分になる…
 #. <CLT>
@@ -401,6 +451,7 @@ msgstr ""
 "<CLT 4>...chỉ cần nhớ lại nội dung của nó thôi cũng đủ làm mình\n"
 "cảm thấy buồn nôn rồi.\n"
 "<CLT>"
+
 #. <CLT 4>普通の学生生活を送ってたのなら…
 #. ここで予習や復習をしてたんだよな…
 #. <CLT>
@@ -413,14 +464,17 @@ msgstr ""
 "<CLT 4>Ở một thế giới bình thường, lẽ ra mình đang dùng cái bàn\n"
 "này để làm bài tập và ôn thi rồi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0048 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0049 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0050 | NARRATION"
@@ -428,5 +482,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

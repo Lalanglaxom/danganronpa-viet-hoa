@@ -1,17 +1,27 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. あなたも…ここに来たのね…
 msgctxt "0001 | KYOUKO KIRIGIRI"
 msgid "So you thought to come here, too..."
 msgstr "Vậy ra cậu cũng nghĩ đến việc tới đây nhỉ..."
+
 #. …え？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "...Huh?"
 msgstr "...Hả?"
+
 #. 昨日…十神君が<CLT 3>興味を示したもの<CLT>を
 #. 考えてみれば…
 msgctxt "0003 | KYOUKO KIRIGIRI"
@@ -21,6 +31,7 @@ msgid ""
 msgstr ""
 "Nếu cậu thử ngẫm lại xem hôm qua Byakuya đã <CLT 3>quan tâm đến\n"
 "thứ gì<CLT>..."
+
 #. 彼がどこにいるのか推測は出来るわ…
 #. …そうでしょう？
 msgctxt "0004 | KYOUKO KIRIGIRI"
@@ -30,6 +41,7 @@ msgid ""
 msgstr ""
 "...thì cậu có lẽ sẽ đoán được hiện giờ cậu ta đang ở đâu,\n"
 "đúng chứ?"
+
 #. <CLT 4>昨日、十神クンが興味を示してたもの？
 #. それって…なんだっけ？
 #. <CLT>
@@ -41,6 +53,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hả...? Rốt cuộc hôm qua Byakuya đã quan tâm đến cái gì nhỉ...?\n"
 "<CLT>"
+
 #. 昨日…十神君が<CLT 3>興味を示したもの<CLT>を
 #. 考えてみれば…
 msgctxt "0006 | KYOUKO KIRIGIRI"
@@ -50,10 +63,12 @@ msgid ""
 msgstr ""
 "Nếu cậu thử ngẫm lại xem hôm qua Byakuya đã <CLT 3>quan tâm đến\n"
 "thứ gì<CLT>..."
+
 #. 彼がどこにいるのか…推測は出来るわ…
 msgctxt "0007 | KYOUKO KIRIGIRI"
 msgid "...you can probably guess where he is right now."
 msgstr "...thì cậu có lẽ sẽ đoán được hiện giờ cậu ta đang ở đâu."
+
 #. <CLT 4>昨日、十神クンが興味を示してたもの？
 #. それは…なんだっけ？
 #. <CLT>
@@ -65,23 +80,28 @@ msgid ""
 msgstr ""
 "<CLT 4>Hả...? Rốt cuộc hôm qua Byakuya đã quan tâm đến cái gì nhỉ...?\n"
 "<CLT>"
+
 #. あ、苗木君…
 msgctxt "0009 | CHIHIRO FUJISAKI"
 msgid "Oh, hey Makoto."
 msgstr "Ồ, chào cậu Makoto."
+
 #. どう？　十神クンはいた？
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "So? Did you find Byakuya?"
 msgstr "Sao rồi? Cậu có thấy Byakuya không?"
+
 #. う、ううん…
 #. 見かけてないんだぁ…
 msgctxt "0011 | CHIHIRO FUJISAKI"
 msgid "N-No...I didn't see him anywhere."
 msgstr "K-Không... tớ chẳng thấy cậu ấy đâu cả."
+
 #. そっか…
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "I see..."
-msgstr "Tớ hiểu rồi..."
+msgstr "Thế à..."
+
 #. 霧切さんは…
 #. なんとなく…<CLT 3>予想出来てる<CLT>みたい。
 msgctxt "0013 | CHIHIRO FUJISAKI"
@@ -89,14 +109,17 @@ msgid "Somehow, Kyoko <CLT 3>figured out<CLT> where he might be..."
 msgstr ""
 "Không hiểu sao, Kyoko đã <CLT 3>đoán ra được<CLT> cậu ấy có thể đang ở\n"
 "đâu rồi..."
+
 #. え、そうなの？
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Huh..."
 msgstr "Hả..."
+
 #. …霧切さん、スゴイなぁ。
 msgctxt "0015 | CHIHIRO FUJISAKI"
 msgid "Kyoko's so amazing..."
 msgstr "Kyoko tuyệt thật đấy..."
+
 #. 格好良くて…強そうだし…
 #. 頭もいいみたいだし…
 msgctxt "0016 | CHIHIRO FUJISAKI"
@@ -106,6 +129,7 @@ msgid ""
 msgstr ""
 "Cậu ấy thật ngầu. Vừa thông minh, lại còn có vẻ rất mạnh\n"
 "mẽ nữa..."
+
 #. <CLT 4>確かに、頭はよさそうだけど…
 #. 強そうかな？
 #. <CLT>
@@ -116,6 +140,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chắc chắn là cậu ấy thông minh rồi. Nhưng mà... mạnh mẽ sao?\n"
 "<CLT>"
+
 #. <CLT 4>朝日奈さんや大神さんに比べれば、
 #. 不二咲さんと大して変わらないように見えるけど…
 #. <CLT>
@@ -128,6 +153,7 @@ msgstr ""
 "<CLT 4>Nếu so với Sakura hay thậm chí là Hina, cậu ấy trông cũng\n"
 "chẳng khác Chihiro là mấy.\n"
 "<CLT>"
+
 #. <CLT 4>…って、比べる対象がおかしいのか。
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -137,14 +163,17 @@ msgid ""
 msgstr ""
 "<CLT 4>...So sánh như vậy có kỳ quặc quá không nhỉ?\n"
 "<CLT>"
+
 #. はぁ……
 msgctxt "0020 | CHIHIRO FUJISAKI"
 msgid "Ahh..."
 msgstr "Haiz..."
+
 #. …霧切さん、スゴイなぁ。
 msgctxt "0021 | CHIHIRO FUJISAKI"
 msgid "Kyoko's so amazing..."
 msgstr "Kyoko tuyệt thật đấy..."
+
 #. 女の子なのに…格好良くて…
 #. 強そうだし…頭もいいみたいだし…
 msgctxt "0022 | CHIHIRO FUJISAKI"
@@ -154,14 +183,17 @@ msgid ""
 msgstr ""
 "Cậu ấy thật ngầu. Cậu ấy thông minh, và có vẻ rất mạnh mẽ\n"
 "dù là con gái..."
+
 #. なのに…
 msgctxt "0023 | CHIHIRO FUJISAKI"
 msgid "But..."
 msgstr "Nhưng mà..."
+
 #. はぁ……
 msgctxt "0024 | CHIHIRO FUJISAKI"
 msgid "Ahh..."
 msgstr "Haiz..."
+
 #. <CLT 4>ここは女子トイレだ…
 #. <CLT>
 msgctxt "0025 | MAKOTO NAEGI"
@@ -171,6 +203,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là nhà vệ sinh nữ.\n"
 "<CLT>"
+
 #. <CLT 4>もちろん、入る訳にはいかない…
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -180,6 +213,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Rõ ràng là mình không thể vào rồi...\n"
 "<CLT>"
+
 #. <CLT 4>シャッターが降りてる…
 #. この向こうには、行きたくても行けないだろうな…
 #. <CLT>

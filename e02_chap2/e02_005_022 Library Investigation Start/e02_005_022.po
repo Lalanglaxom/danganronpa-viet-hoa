@@ -1,30 +1,43 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. しかし、この図書室は…
 #. 実に<CLT 3>興味深い<CLT>な…
 msgctxt "0001 | BYAKUYA TOGAMI"
 msgid "...But still, this library is <CLT 3>most interesting<CLT>..."
 msgstr "...Nhưng dẫu vậy, thư viện này quả thực <CLT 3>vô cùng thú vị<CLT>..."
+
 #. 興味深い…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Huh? What's interesting about it?"
 msgstr "Hả? Có gì thú vị ở đây sao?"
+
 #. なんでもない。こっちの話だ…
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid "Oh, nothing... I was just thinking out loud."
 msgstr "À, không có gì... Tôi chỉ đang tự nhủ thôi."
+
 #. これはショックです！
 msgctxt "0004 | HIFUMI YAMADA"
 msgid "I'm absolutely shocked!"
 msgstr "Tôi thực sự bị sốc rồi đó!"
+
 #. …何が？
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "...How come?"
 msgstr "...Tại sao vậy?"
+
 #. これだけ本が揃ってるのに、
 #. 僕の描いたマンガがねーじゃねーか、と！
 msgctxt "0006 | HIFUMI YAMADA"
@@ -34,6 +47,7 @@ msgid ""
 msgstr ""
 "Họ có tất cả đống sách này ở đây, vậy mà không có lấy MỘT\n"
 "bản sao nào của BẤT KỲ tác phẩm nào của tôi cả!"
+
 #. あ、当たり前じゃない…
 #. マンガなんて…図書室にある訳ないし…
 msgctxt "0007 | TOUKO FUKAWA"
@@ -43,6 +57,7 @@ msgid ""
 msgstr ""
 "Th-Thì, phải rồi... Tại sao họ lại để tr-truyện tranh\n"
 "trong thư viện cơ chứ?"
+
 #. そ、そもそも同人誌なんて…
 #. 素人の描いたエロ本でしょ…
 msgctxt "0008 | TOUKO FUKAWA"
@@ -51,15 +66,18 @@ msgid ""
 "a-amateurs..."
 msgstr ""
 "Chưa kể, hầu hết doujin chỉ là tr-truyện khiêu dâm được vẽ\n"
-"bởi một lũ ngh-nghệ sĩ nghiệp dư thôi..."
+"bởi một lũ n-nghiệp dư thôi..."
+
 #. わかってない…全然わかってない…
 msgctxt "0009 | HIFUMI YAMADA"
 msgid "You just don't get it. Not. At. All."
-msgstr "Cậu chẳng hiểu gì cả. Không. Một. Chút. Nào."
+msgstr "Cậu chẳng hiểu gì cả. Chẳng. Hiểu. Gì. Cả."
+
 #. わ、わかってるわよ…
 msgctxt "0010 | TOUKO FUKAWA"
 msgid "I-I do too get it..."
-msgstr "T-Tôi có hiểu mà..."
+msgstr "T-Tôi có hiểu đấy..."
+
 #. どうせ、あんたみたいな顔のが描くマンガなんて…
 #. 大した事ないに…決まってるわ…
 msgctxt "0011 | TOUKO FUKAWA"
@@ -69,6 +87,7 @@ msgid ""
 msgstr ""
 "Và v-với cái bản mặt như cậu, ai cũng có thể nói rằng\n"
 "ch-chẳng có việc gì cậu làm là có giá trị cả."
+
 #. こ、これ以上の屈辱があろうか…
 #. 作者の見た目だけで作品の中身を決められるなどと…
 msgctxt "0012 | HIFUMI YAMADA"
@@ -77,11 +96,13 @@ msgid ""
 "by its author!"
 msgstr ""
 "Cậu muốn nói gì về tôi cũng được, nhưng đừng bao giờ đánh\n"
-"giá một tác phẩm qua vẻ ngoài của tác giả!"
+"giá một tác phẩm qua vẻ bề ngoài tác giả!"
+
 #. いいか！　見た目など、なんの意味もないのだ！
 msgctxt "0013 | HIFUMI YAMADA"
 msgid "Now hear this! Appearances mean nothing at all!"
 msgstr "Nghe cho rõ đây! Diện mạo chẳng có ý nghĩa gì hết!"
+
 #. 君が見ているのは、僕を包む皮に過ぎないのだ！
 msgctxt "0014 | HIFUMI YAMADA"
 msgid ""
@@ -90,6 +111,7 @@ msgid ""
 msgstr ""
 "Những gì cậu thấy trước mặt chỉ là lớp vỏ bọc chứa đựng\n"
 "tinh hoa thiên tài của tôi mà thôi!"
+
 #. 僕の意味や価値は、
 #. すべて、ボクの創作物で決定するのだ！
 msgctxt "0015 | HIFUMI YAMADA"
@@ -97,10 +119,12 @@ msgid "My creations are what determine my meaning and value!"
 msgstr ""
 "Chính những tạo tác của tôi mới là thứ quyết định ý nghĩa\n"
 "và giá trị của tôi!"
+
 #. 最低レベルの…演説ね…
 msgctxt "0016 | TOUKO FUKAWA"
 msgid "You're so f-full of it..."
 msgstr "Cậu th-thật là hợm hĩnh..."
+
 #. フン…なじられるのには慣れている。
 #. その程度の精神攻撃で僕のＨＰを削れると思うなよ…
 msgctxt "0017 | HIFUMI YAMADA"
@@ -110,6 +134,7 @@ msgid ""
 msgstr ""
 "Hừm. Tôi quen với việc bị hiểu lầm rồi. Cậu nghĩ những đòn\n"
 "tấn công yếu ớt như vậy có thể làm giảm HP của tôi sao?"
+
 #. <CLT 4>この２人…完全に怖いな…
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -119,10 +144,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Hai người này... thực sự làm mình lo lắng đấy.\n"
 "<CLT>"
+
 #. 苗木誠殿はわかってくれる！
 msgctxt "0019 | HIFUMI YAMADA"
 msgid "Mr. Naegi! You understand, don't you!?"
 msgstr "Cậu Naegi! Cậu hiểu mà, đúng không!?"
+
 #. 作者の見た目だけで作品の中身を決めるなど
 #. 愚かしい行為だとッ！
 msgctxt "0020 | HIFUMI YAMADA"
@@ -132,10 +159,12 @@ msgid ""
 msgstr ""
 "Cậu biết việc đánh giá giá trị của một tác phẩm dựa trên\n"
 "vẻ ngoài của người sáng tạo ra nó là ngu ngốc thế nào mà!"
+
 #. 見た目など、なんの意味もないのだ！
 msgctxt "0021 | HIFUMI YAMADA"
 msgid "Appearances mean nothing at all!"
 msgstr "Diện mạo chẳng có ý nghĩa gì hết!"
+
 #. 僕の意味や価値は、
 #. すべて、僕の創作物で決定するのだ！
 msgctxt "0022 | HIFUMI YAMADA"
@@ -143,6 +172,7 @@ msgid "My creations are what determine my meaning and value!"
 msgstr ""
 "Chính những tạo tác của tôi mới là thứ quyết định ý nghĩa\n"
 "và giá trị của tôi!"
+
 #. <CLT 4>と、言われてもな…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -152,6 +182,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cậu nói vậy, nhưng mà...\n"
 "<CLT>"
+
 #. 腐川さんは…嬉しいんじゃない？
 #. これだけ本があるとさ…
 msgctxt "0024 | MAKOTO NAEGI"
@@ -161,6 +192,7 @@ msgid ""
 msgstr ""
 "Cậu chắc phải thấy hạnh phúc lắm khi có tất cả đống sách\n"
 "này ở quanh đây nhỉ Toko?"
+
 #. べ、別に…興味がある本は…
 #. そんなにないみたいだし…
 msgctxt "0025 | TOUKO FUKAWA"
@@ -170,6 +202,7 @@ msgid ""
 msgstr ""
 "C-Cũng không hẳn... Cho đến giờ vẫn chưa có gì thực sự\n"
 "th-thu hút sự chú ý của tôi cả."
+
 #. 確かに、本がたくさん並んでおりますが、
 #. 品揃えがよろしくないようですな…
 msgctxt "0026 | HIFUMI YAMADA"
@@ -179,12 +212,14 @@ msgid ""
 msgstr ""
 "Đúng vậy. Có rất nhiều sách, sự thật là thế, nhưng nội\n"
 "dung có vẻ... thiếu thốn."
+
 #. ラノベもマンガも見当たらねーじゃねーか、と！
 msgctxt "0027 | HIFUMI YAMADA"
 msgid ""
 "Where's the comic books!? Where's the young adult\n"
 "section!?"
-msgstr "Truyện tranh đâu rồi!? Khu vực cho thanh thiếu niên đâu rồi!?"
+msgstr "Manga đâu rồi!? Khu vực cho light novel đâu rồi!?"
+
 #. 何がラノベよ…何がマンガよ…
 #. あんな物…読む価値なんてない…
 msgctxt "0028 | TOUKO FUKAWA"
@@ -192,8 +227,9 @@ msgid ""
 "Comic b-books? Young adult? That stuff's a w-waste of\n"
 "time..."
 msgstr ""
-"Tr-Truyện tranh? Thanh thiếu niên? Những thứ đó đúng là\n"
+"M-Manga? L-Light novel? Những thứ đó đúng là\n"
 "l-lãng phí thời gian..."
+
 #. しかし、腐川冬子殿が得意とする恋愛小説だって、
 #. 実はラノベにも通じるところが…
 msgctxt "0029 | HIFUMI YAMADA"
@@ -201,8 +237,9 @@ msgid ""
 "I've seen what you write, Miss Fukawa. Talented as you\n"
 "are, your stuff isn't any more \"worthwhile.\""
 msgstr ""
-"Tôi đã xem những gì cậu viết rồi, cô Fukawa. Dù cậu có tài\n"
+"Tôi đã xem những gì cô viết rồi, cô Fukawa. Dù cô có tài\n"
 "năng, nhưng mấy thứ đó cũng chẳng \"đáng giá\" hơn đâu."
+
 #. あたしの純愛恋愛小説を、
 #. あんな紙クズ同然の物と一緒にしないで…！
 msgctxt "0030 | TOUKO FUKAWA"
@@ -211,8 +248,8 @@ msgid ""
 "feelings! Don't compare them to that garbage of yours!"
 msgstr ""
 "Truyện của tôi tràn đầy tình yêu đích thực và những cảm xúc\n"
-"thuần khiết! Đừng có so sánh chúng với đống rác rưởi đó\n"
-"của cậu!"
+"thuần khiết! Đừng có so chúng với đống rác đó của cậu!"
+
 #. あ、あんなの文章ですらない…
 #. 単なる文字の集合体よ…
 msgctxt "0031 | TOUKO FUKAWA"
@@ -221,11 +258,13 @@ msgid ""
 "bunch of j-jumbled up letters...!"
 msgstr ""
 "Văn chương của cậu thậm chí chẳng có ý ngh-nghĩa gì cả. Nó\n"
-"chỉ là một lũ chữ cái l-lộn xộn thôi!"
+"chỉ là một đám chữ cái l-lộn xộn thôi!"
+
 #. ぜ、全部…灰になればいいのよ……
 msgctxt "0032 | TOUKO FUKAWA"
 msgid "S-Someone should just...burn it all."
 msgstr "A-Ai đó nên... đốt sạch hết đi."
+
 #. またまたぁ。そんな事言って…
 #. 実はボーイズラブ系を熱望してたり？
 msgctxt "0033 | HIFUMI YAMADA"
@@ -233,8 +272,9 @@ msgid ""
 "Ooh, the lady doth protest too much, methinks! I bet\n"
 "you're secretly into boy-on-boy action!"
 msgstr ""
-"Ồ, tôi nghĩ là quý cô đây đang phản đối quá đà rồi đó! Tôi\n"
-"cá là cậu đang bí mật mê mẩn mấy cảnh nam-nam đúng không!"
+"Ồ, tôi nghĩ là quý cô đây đang phản đối quá đà rồi đó! Tôi cá là \n"
+"cậu đang bí mật mê mẩn mấy cảnh nam-nam đúng không!"
+
 #. ボーイズラブやら…アニメやマンガや同人誌…
 #. そ、そんなものはね…
 msgctxt "0034 | TOUKO FUKAWA"
@@ -244,6 +284,7 @@ msgid ""
 msgstr ""
 "Nam-nam...? Tôi không quan tâm dù đó là a-anime, truyện\n"
 "tranh, doujin hay bất cứ th-thứ gì!"
+
 #. 不潔な文化よ…ッ！
 #. ５年後にはキレイに消えている使い捨て文化よ！
 msgctxt "0035 | TOUKO FUKAWA"
@@ -253,6 +294,7 @@ msgid ""
 msgstr ""
 "Tất cả đều là dơ bẩn! Cái thứ văn hóa dùng một lần sẽ bị\n"
 "vứt bỏ và lãng quên trong nửa thập kỷ thôi!"
+
 #. あぁ、口にしただけで気持ち悪いわ…
 #. な、なんだか吐きそうよ…
 msgctxt "0036 | TOUKO FUKAWA"
@@ -261,7 +303,8 @@ msgid ""
 "s-stomach. I feel like I'm g-gonna throw up..."
 msgstr ""
 "Ư... chỉ nh-nhắc đến thôi cũng làm tôi thấy buồn n-nôn.\n"
-"Tôi cảm thấy mình s-sắp nôn ra rồi..."
+"Tôi cảm thấy mình s-sắp ói ra rồi..."
+
 #. グ…グググ…ッ！
 #. バカにしやがって…！
 msgctxt "0037 | HIFUMI YAMADA"
@@ -269,6 +312,7 @@ msgid ""
 "Grr...! You've insulted me, and you've insulted my\n"
 "honor!"
 msgstr "Gừ...! Cậu đã xúc phạm tôi, và cậu đã xúc phạm danh dự của tôi!"
+
 #. <CLT 4>この２人…これ以上ないほど怖いな…
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
@@ -278,8 +322,9 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Hai người này thực sự bắt đầu làm mình hoảng rồi đấy. Mình\n"
-"chưa bao giờ thấy điều gì giống như vậy luôn...\n"
+"chưa bao giờ thấy điều gì giống như vầy...\n"
 "<CLT>"
+
 #. 何がラノベよ…何がマンガよ…
 #. あんな物…読む価値なんてないわ…
 msgctxt "0039 | TOUKO FUKAWA"
@@ -287,8 +332,9 @@ msgid ""
 "Comic b-books? Young adult? That stuff's a w-waste of\n"
 "time..."
 msgstr ""
-"Tr-Truyện tranh? Thanh thiếu niên? Những thứ đó đúng là\n"
+"M-Manga? L-Light novel? Những thứ đó đúng là\n"
 "l-lãng phí thời gian..."
+
 #. 不潔な文化よ…ッ！
 #. ５年後にはキレイに消えている使い捨て文化よ！
 msgctxt "0040 | TOUKO FUKAWA"
@@ -298,6 +344,7 @@ msgid ""
 msgstr ""
 "Tất cả đều là dơ bẩn! Cái thứ văn hóa dùng một lần sẽ bị\n"
 "vứt bỏ và lãng quên trong nửa thập kỷ thôi!"
+
 #. あぁ、口にしただけで気持ち悪いわ…
 #. な、なんだか吐きそうよ…
 msgctxt "0041 | TOUKO FUKAWA"
@@ -306,7 +353,8 @@ msgid ""
 "s-stomach. I feel like I'm g-gonna throw up..."
 msgstr ""
 "Ư... chỉ nh-nhắc đến thôi cũng làm tôi thấy buồn n-nôn.\n"
-"Tôi cảm thấy mình s-sắp nôn ra rồi..."
+"Tôi cảm thấy mình s-sắp ói ra rồi..."
+
 #. ここ…埃っぽいわね…
 #. 照明も暗い…
 msgctxt "0042 | KYOUKO KIRIGIRI"
@@ -316,14 +364,16 @@ msgid ""
 msgstr ""
 "Ở đây bụi bặm một cách đáng kinh ngạc. Và ánh sáng thì\n"
 "không được lý tưởng cho lắm."
+
 #. 図書室なのに…読書に向かない環境だわ。
 msgctxt "0043 | KYOUKO KIRIGIRI"
 msgid ""
 "For a library, it's not the kind of place I'd want to\n"
 "do much reading in..."
 msgstr ""
-"Đối với một thư viện, đây không phải kiểu nơi tôi muốn\n"
+"Đối với một thư viện, đây không phải kiểu nơi tớ muốn\n"
 "ngồi đọc sách nhiều đâu..."
+
 #. <CLT 4>外の情報に飢えている…
 #. ここでテレビでも見られればな…
 #. <CLT>
@@ -336,6 +386,7 @@ msgstr ""
 "<CLT 4>Mình đang khao khát thông tin từ thế giới bên ngoài. Giá\n"
 "mà có một chiếc TV còn hoạt động...\n"
 "<CLT>"
+
 #. <CLT 4>こんな監視カメラで見張られる生活が…
 #. 一体、いつまで続くんだよ…
 #. <CLT>
@@ -348,6 +399,7 @@ msgstr ""
 "<CLT 4>Mình sẽ còn bị kẹt ở đây, bị theo dõi bởi tất cả đống\n"
 "camera này đến bao giờ nữa đây...?\n"
 "<CLT>"
+
 #. <CLT 4>埃の積もった棚の上に…ポツンと<CLT><CLT 3>手紙<CLT><CLT 4>が置いてある。
 #. <CLT>
 msgctxt "0046 | MAKOTO NAEGI"
@@ -358,6 +410,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Kệ sách phủ đầy bụi. Nhưng trên kệ là...<CLT><CLT 3>một lá thư<CLT><CLT 4>.\n"
 "<CLT>"
+
 #. <CLT 4>この手紙って…
 #. <CLT>
 msgctxt "0047 | MAKOTO NAEGI"
@@ -367,10 +420,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái gì đây...?\n"
 "<CLT>"
+
 #. <CLT 3>希望ヶ峰学園…事務局<CLT>…？
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "<CLT 3>Hope's Peak Academy...?<CLT>"
 msgstr "<CLT 3>Học viện Đỉnh Hy Vọng...?<CLT>"
+
 #. …随分と埃を被っているわね。
 #. 長い事、ここに放置されていたようだわ。
 msgctxt "0049 | KYOUKO KIRIGIRI"
@@ -380,10 +435,12 @@ msgid ""
 msgstr ""
 "Nó bị vùi dưới một lớp bụi dày. Chắc hẳn nó đã nằm ở đó\n"
 "khá lâu rồi."
+
 #. …中を確認してみましょうか。
 msgctxt "0050 | KYOUKO KIRIGIRI"
 msgid "Well, shall we see what's inside?"
 msgstr "Vậy, chúng ta xem bên trong có gì nhé?"
+
 #. でも、勝手にはマズイんじゃ…？
 msgctxt "0051 | MAKOTO NAEGI"
 msgid ""
@@ -392,6 +449,7 @@ msgid ""
 msgstr ""
 "Nhưng... chúng ta không nên đọc thư của người khác mà\n"
 "không có sự cho phép của họ chứ."
+
 #. 読まずに放っておく方がマズイわよ…
 msgctxt "0052 | KYOUKO KIRIGIRI"
 msgid ""
@@ -400,10 +458,12 @@ msgid ""
 msgstr ""
 "Điều chúng ta *không nên* làm là để mặc nó ở đây mà không\n"
 "tìm hiểu xem bên trong có gì."
+
 #. わ、わかったよ…
 msgctxt "0053 | MAKOTO NAEGI"
 msgid "O-Okay..."
 msgstr "Đ-Được rồi..."
+
 #. <CLT 4>埃を被った手紙の封を開けると…
 #. 中には、１枚の便せんが入っていた。
 #. <CLT>
@@ -416,6 +476,7 @@ msgstr ""
 "<CLT 4>Mình bóc niêm phong trên chiếc phong bì đầy bụi, và rút ra\n"
 "một tờ giấy duy nhất bên trong.\n"
 "<CLT>"
+
 #. <CLT 4>そこに並んだ文字を、
 #. 読み進めていくと…
 #. <CLT>
@@ -427,10 +488,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình mở tờ giấy ra, và đọc những gì được viết ở đó...\n"
 "<CLT>"
+
 #. <CLT 3>希望ヶ峰学園事務局からのお知らせ。<CLT>
 msgctxt "0056 | NARRATION"
 msgid "<CLT 3>From the Hope's Peak Academy Executive Office<CLT>"
 msgstr "<CLT 3>Từ Ban Quản trị Học viện Đỉnh Hy Vọng<CLT>"
+
 #. <CLT 23>希望ヶ峰学園は長年にわたり、
 #. 世界に通じる人材の育成に専心してきました。<CLT>
 msgctxt "0057 | NARRATION"
@@ -438,9 +501,10 @@ msgid ""
 "<CLT 23>Throughout the years, we have been committed to\n"
 "shaping the youth who will one day shape the world.<CLT>"
 msgstr ""
-"<CLT 23>Suốt nhiều năm qua, chúng tôi đã tận tâm trong việc rèn dũa\n"
-"những thế hệ trẻ, những người mà một ngày nào đó sẽ định hình\n"
-"thế giới.<CLT>"
+"<CLT 23>Nhiều năm qua, chúng tôi đã tận tâm trong việc rèn dũa\n"
+"những \n"
+"thế hệ trẻ, những người sau này sẽ định hình thế giới.<CLT>"
+
 #. <CLT 23>長い歴史を刻む中で、
 #. 本校は、政府特別認可の伝統ある教育機関として…<CLT>
 msgctxt "0058 | NARRATION"
@@ -449,8 +513,9 @@ msgid ""
 "higher learning with full governmental support.<CLT>"
 msgstr ""
 "<CLT 23>Chúng tôi có một lịch sử lâu đời và tự hào với tư cách là một cơ\n"
-"sở giáo dục bậc cao nhận được sự hỗ trợ đầy đủ từ chính\n"
-"phủ.<CLT>"
+"sở giáo dục bậc cao nhận được sự hỗ trợ đầy đủ từ chính phủ.\n"
+"<CLT>"
+
 #. <CLT 23>数多くの卒業生を社会に送り出し、
 #. 今や各界で、多数の卒業生が活躍しております。<CLT>
 msgctxt "0059 | NARRATION"
@@ -458,9 +523,10 @@ msgid ""
 "<CLT 23>Our graduates enter society ready to take on active\n"
 "leadership roles in every major job field.<CLT>"
 msgstr ""
-"<CLT 23>Những học sinh tốt nghiệp của chúng tôi tiến vào xã hội với tâm\n"
-"thế sẵn sàng đảm nhận các vai trò lãnh đạo tích cực trong mọi\n"
-"lĩnh vực nghề nghiệp chính.<CLT>"
+"<CLT 23>Những học sinh tốt nghiệp của chúng tôi tiến vào xã hội sẵn \n"
+"sàng đảm nhận các vai trò lãnh đạo tích cực trong mọi lĩnh vực.\n"
+"<CLT>"
+
 #. <CLT 23>ですが、この度、我が希望ヶ峰学園は、
 #. その栄光の歴史にいったん幕を下ろす事となりました。<CLT>
 msgctxt "0060 | NARRATION"
@@ -468,8 +534,9 @@ msgid ""
 "<CLT 23>However, Hope's Peak Academy must now lower the\n"
 "curtain on its glorious history, for the time being.<CLT>"
 msgstr ""
-"<CLT 23>Tuy nhiên, Học viện Đỉnh Hy Vọng giờ đây phải tạm thời hạ\n"
-"màn cho lịch sử huy hoàng của mình.<CLT>"
+"<CLT 23>Tuy nhiên, Học viện Đỉnh Hy Vọng giờ đây phải tạm thời khép\n"
+"lại lịch sử huy hoàng của mình.<CLT>"
+
 #. <CLT 23>苦渋の決断ではありましたが、<CLT>
 #. <CLT 3>深刻な問題<CLT><CLT 23>の発生により、これを余儀なくされました。<CLT>
 msgctxt "0061 | NARRATION"
@@ -478,8 +545,8 @@ msgid ""
 "<CLT 3>serious issues<CLT><CLT 23> <CLT><CLT 23>beyond our control have made it necessary.<CLT>"
 msgstr ""
 "<CLT 23>Đây không phải là một quyết định dễ dàng, nhưng<CLT> <CLT 3>những vấn đề\n"
-"nghiêm trọng<CLT><CLT 23> <CLT><CLT 23>nằm ngoài tầm kiểm soát đã khiến việc này trở nên\n"
-"cần thiết.<CLT>"
+"nghiêm trọng<CLT><CLT 23> <CLT><CLT 23>ngoài tầm kiểm soát đã khiến nó trở nên cần thiết.<CLT>"
+
 #. <CLT 23>しかし、希望ヶ峰学園は、
 #. これで終わりではありません。
 #. <CLT>
@@ -492,6 +559,7 @@ msgstr ""
 "<CLT 23>Nhưng đừng nhầm lẫn—đây không phải là kết thúc cho Học\n"
 "viện Đỉnh Hy Vọng.\n"
 "<CLT>"
+
 #. <CLT 23>近い将来、先に述べた問題が改善され次第、
 #. すぐにでも活動を再開させる所存です。<CLT>
 msgctxt "0063 | NARRATION"
@@ -501,10 +569,12 @@ msgid ""
 msgstr ""
 "<CLT 23>Chúng tôi dự định sẽ mở cửa trở lại ngay khi các vấn đề\n"
 "buộc chúng tôi phải đóng cửa được giải quyết.<CLT>"
+
 #. <CLT 23>最後となりましたが…<CLT>
 msgctxt "0064 | NARRATION"
 msgid "<CLT 23>That being said, this is the end for now...<CLT>"
 msgstr "<CLT 23>Nói cách khác, đây là điểm kết thúc cho hiện tại...<CLT>"
+
 #. <CLT 23>長年にわたりご支援、ご助力を賜りました
 #. 関係者のみなさまに心より感謝を申し上げます。<CLT>
 msgctxt "0065 | NARRATION"
@@ -514,6 +584,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Và tôi muốn gửi lời cảm ơn cá nhân và chân thành nhất tới mọi\n"
 "người vì sự giúp đỡ và ủng hộ trong suốt nhiều năm qua.<CLT>"
+
 #. <CLT 23>なお、希望ヶ峰学園の廃止は、政府当該機関の認可を
 #. 待って行われる事を申し添えます。<CLT>
 msgctxt "0066 | NARRATION"
@@ -521,18 +592,21 @@ msgid ""
 "<CLT 23>For now, we are awaiting official governmental\n"
 "authorization to formally cease operations...<CLT>"
 msgstr ""
-"<CLT 23>Hiện tại, chúng tôi đang chờ đợi sự cho phép chính thức từ\n"
+"<CLT 23>Hiện tại, chúng tôi đang chờ đợi sự chấp thuận từ\n"
 "phía chính phủ để chính thức ngừng hoạt động...<CLT>"
+
 #. なんだ…これ…？
 msgctxt "0067 | MAKOTO NAEGI"
 msgid "What does this mean...?"
 msgstr "Điều này có nghĩa là gì chứ...?"
+
 #. なるほど…興味深い内容だ…
 msgctxt "0068 | BYAKUYA TOGAMI"
 msgid ""
 "Hmm... The contents of this letter are quite\n"
 "interesting indeed."
 msgstr "Hừm... Nội dung của lá thư này quả thực khá thú vị đấy."
+
 #. どうやら希望ヶ峰学園は…
 #. すでに、<CLT 3>学校としての役割を終えていた<CLT>ようね。
 msgctxt "0069 | KYOUKO KIRIGIRI"
@@ -542,6 +616,7 @@ msgid ""
 msgstr ""
 "Có vẻ như Đỉnh Hy Vọng đã <CLT 3>ngừng hoạt động với tư cách là\n"
 "một ngôi trường<CLT>."
+
 #. しかも…その手紙に積もっていた埃の量からして、
 #. つい最近って訳でもなさそう…
 msgctxt "0070 | KYOUKO KIRIGIRI"
@@ -551,14 +626,16 @@ msgid ""
 msgstr ""
 "Và dựa trên lượng bụi bám trên lá thư, có vẻ như việc này\n"
 "không mới xảy ra gần đây."
+
 #. 下手すれば…<CLT 3>１年以上も前<CLT>…
 msgctxt "0071 | KYOUKO KIRIGIRI"
 msgid ""
 "If I had to guess, I'd say this letter could be <CLT 3>at\n"
 "least a year old<CLT>."
 msgstr ""
-"Nếu tôi phải đoán, tôi sẽ nói lá thư này có thể đã <CLT 3>ít nhất\n"
+"Nếu tớ phải đoán, tớ sẽ nói lá thư này có thể đã <CLT 3>ít nhất\n"
 "được một năm tuổi rồi<CLT>."
+
 #. じゃあ…希望ヶ峰学園は
 #. そんな前に閉鎖されてた可能性があるって事？
 msgctxt "0072 | MAKOTO NAEGI"
@@ -568,6 +645,7 @@ msgid ""
 msgstr ""
 "Vậy... ý cậu là Đỉnh Hy Vọng đã đóng cửa từ ít nhất một\n"
 "năm trước sao?"
+
 #. 黒幕は、無人と化した希望ヶ峰学園を乗っ取り、
 #. この妙な学園生活の舞台を作り上げたのだろう…
 msgctxt "0073 | BYAKUYA TOGAMI"
@@ -576,7 +654,8 @@ msgid ""
 "school in order to put on this little performance."
 msgstr ""
 "Nhiều khả năng kẻ chủ mưu đã chiếm lấy ngôi trường bỏ\n"
-"hoang này để thực hiện màn trình diễn nhỏ này."
+"hoang để thực hiện màn trình diễn nhỏ này."
+
 #. だ、だけどさ…
 #. つい数日前に、ボクがここにやって来た時は…
 msgctxt "0074 | MAKOTO NAEGI"
@@ -586,11 +665,13 @@ msgid ""
 msgstr ""
 "Nh-Nhưng như vậy có nghĩa là nó đã đóng cửa khi mình tới\n"
 "đây chỉ vài ngày trước..."
+
 #. 閉鎖されてるなんて…
 #. そんな雰囲気は、どこにもなかったけど…
 msgctxt "0075 | MAKOTO NAEGI"
 msgid "But I didn't get that sense at all."
-msgstr "Nhưng mình hoàn toàn không cảm nhận được điều đó."
+msgstr "Nhưng tớ hoàn toàn không cảm nhận được điều đó."
+
 #. それにさ、希望ヶ峰学園が閉鎖されてるなら、
 #. その話だって、もっと広がってるはずじゃない？
 msgctxt "0076 | MAKOTO NAEGI"
@@ -600,6 +681,7 @@ msgid ""
 msgstr ""
 "Thêm nữa, nếu ngôi trường *đã* đóng cửa, cậu không nghĩ là\n"
 "nó sẽ tràn lan trên báo chí hay đại loại thế sao?"
+
 #. しかも、閉鎖されたのはつい最近じゃなくて…
 #. 下手すれば１年以上前なんでしょ？
 msgctxt "0077 | MAKOTO NAEGI"
@@ -607,8 +689,9 @@ msgid ""
 "I mean, you're saying it could've happened over a year\n"
 "ago, right?"
 msgstr ""
-"Ý mình là, cậu đang nói việc này có thể đã xảy ra hơn một\n"
+"Ý tớ là, cậu đang nói việc này có thể đã xảy ra hơn một\n"
 "năm trước, đúng không?"
+
 #. でも、ネットとか見てても、
 #. そんな話なんてどこにもなかったのに…
 msgctxt "0078 | MAKOTO NAEGI"
@@ -616,9 +699,10 @@ msgid ""
 "But before I got here, I looked stuff up online about\n"
 "the school, and never saw anything about this."
 msgstr ""
-"Nhưng trước khi tới đây, mình đã tìm kiếm thông tin trên mạng về\n"
+"Nhưng trước khi tới đây, tớ đã tìm kiếm thông tin trên mạng về\n"
 "ngôi trường, và chưa bao giờ thấy bất cứ điều gì về việc\n"
 "này."
+
 #. …それが、黒幕の手という事だ。
 #. そうやって俺達をおびき寄せたんだろう。
 msgctxt "0079 | BYAKUYA TOGAMI"
@@ -628,6 +712,7 @@ msgid ""
 msgstr ""
 "Đó hẳn đều là một phần trong kế hoạch của kẻ chủ mưu.\n"
 "Chúng đã lừa tất cả chúng ta vào đây..."
+
 #. 学園内に、処刑場や裁判場を造るようなヤツなんだ。
 #. 何をやったとしても不思議じゃない…
 msgctxt "0080 | BYAKUYA TOGAMI"
@@ -637,12 +722,14 @@ msgid ""
 msgstr ""
 "Một kẻ có thể tạo ra một nơi để xét xử và hành quyết mọi\n"
 "người thì hoàn toàn có khả năng làm được bất cứ điều gì."
+
 #. まぁ、この手紙が<CLT 3>本物であると仮定<CLT>すればの話だがな…
 msgctxt "0081 | BYAKUYA TOGAMI"
 msgid ""
 "Of course, that's all assuming that <CLT 3>this letter is\n"
 "real<CLT>."
 msgstr "Tất nhiên, đó là giả định rằng <CLT 3>lá thư này là thật<CLT>."
+
 #. …だけど、その手紙が本物だとすると、
 #. この学園に関する謎が１つ解けた事になるわよ。
 msgctxt "0082 | KYOUKO KIRIGIRI"
@@ -652,6 +739,7 @@ msgid ""
 msgstr ""
 "Tuy nhiên, nếu nó *là* thật, thì điều đó sẽ giải mã được\n"
 "một bí ẩn xoay quanh ngôi trường này..."
+
 #. 学園内に、私達以外の生徒がいない理由は、
 #. この学園がすでに閉鎖されていたから…
 msgctxt "0083 | KYOUKO KIRIGIRI"
@@ -661,14 +749,17 @@ msgid ""
 msgstr ""
 "Lý do không có học sinh nào khác ở đây có thể là vì ngôi\n"
 "trường vốn đã đóng cửa rồi."
+
 #. 単純かつ明確な答えだな…
 msgctxt "0084 | BYAKUYA TOGAMI"
 msgid "That would be a nice, simple solution, it's true."
 msgstr "Đó quả thực là một lời giải đáp gọn gàng và đơn giản."
+
 #. それとさ…これも気にならない…？
 msgctxt "0085 | MAKOTO NAEGI"
 msgid "But then...what about this other part?"
 msgstr "Nhưng còn... đoạn khác này thì sao?"
+
 #. <CLT 23>苦渋の決断ではありましたが、<CLT>
 #. <CLT 3>深刻な問題<CLT><CLT 23>の発生により、これを余儀なくされました。<CLT>
 msgctxt "0086 | NARRATION"
@@ -677,8 +768,8 @@ msgid ""
 "<CLT 3>serious issues<CLT><CLT 23> <CLT><CLT 23>beyond our control have made it necessary.<CLT>"
 msgstr ""
 "<CLT 23>Đây không phải là một quyết định dễ dàng, nhưng<CLT> <CLT 3>những vấn đề\n"
-"nghiêm trọng<CLT><CLT 23> <CLT><CLT 23>nằm ngoài tầm kiểm soát đã khiến việc này trở nên\n"
-"cần thiết.<CLT>"
+"nghiêm trọng<CLT><CLT 23> <CLT><CLT 23>ngoài tầm kiểm soát đã khiến nó trở nên cần thiết.<CLT>"
+
 #. <CLT 23>しかし、希望ヶ峰学園はこれで終わりではありません。
 #. <CLT>
 msgctxt "0087 | NARRATION"
@@ -690,6 +781,7 @@ msgstr ""
 "<CLT 23>Nhưng đừng nhầm lẫn—đây không phải là kết thúc cho Học\n"
 "viện Đỉnh Hy Vọng.\n"
 "<CLT>"
+
 #. <CLT 23>近い将来、先に述べた問題が改善され次第、
 #. すぐにでも活動を再開させる所存です。
 #. <CLT>
@@ -702,15 +794,18 @@ msgstr ""
 "<CLT 23>Chúng tôi dự định sẽ mở cửa trở lại ngay khi các vấn đề\n"
 "buộc chúng tôi phải đóng cửa được giải quyết.\n"
 "<CLT>"
+
 #. ここにある<CLT 3>“深刻な問題”<CLT>って…？
 msgctxt "0089 | MAKOTO NAEGI"
 msgid "What did they mean by <CLT 3>serious issues<CLT>?"
 msgstr "Họ có ý gì khi nói <CLT 3>những vấn đề nghiêm trọng<CLT> nhỉ?"
+
 #. 希望ヶ峰学園が閉鎖に追い込まれた
 #. 理由みたいだけど…
 msgctxt "0090 | MAKOTO NAEGI"
 msgid "That's apparently why the school had to close..."
 msgstr "Đó rõ ràng là lý do tại sao ngôi trường phải đóng cửa..."
+
 #. それって、ボクらの身に降りかかっているこの状況と、
 #. 何か関係あるのかな…？
 msgctxt "0091 | MAKOTO NAEGI"
@@ -720,10 +815,12 @@ msgid ""
 msgstr ""
 "Có mối liên hệ nào giữa việc đó và những gì đang xảy ra\n"
 "với chúng ta lúc này không nhỉ...?"
+
 #. もし関係あるとしたら…
 msgctxt "0092 | KYOUKO KIRIGIRI"
 msgid "If the two events are in fact connected..."
 msgstr "Nếu hai sự kiện này thực sự có liên quan đến nhau..."
+
 #. これは、相当重要な手掛かりになるはずよ。
 #. <CLT 3>黒幕の目的<CLT>を探る上でのね…
 msgctxt "0093 | KYOUKO KIRIGIRI"
@@ -733,6 +830,7 @@ msgid ""
 msgstr ""
 "...thì việc phơi bày mối liên hệ đó sẽ là một manh mối hữu\n"
 "ích, bên cạnh việc tìm ra <CLT 3>mục đích của kẻ chủ mưu<CLT>..."
+
 #. とは言っても…
 #. 現時点では、まだなんとも言えないけど…
 msgctxt "0094 | KYOUKO KIRIGIRI"
@@ -740,14 +838,16 @@ msgid ""
 "Although I can't really say any more until we find\n"
 "more details."
 msgstr ""
-"Mặc dù tôi chưa thể nói gì thêm cho đến khi chúng ta tìm\n"
+"Mặc dù tớ chưa thể nói gì thêm cho đến khi chúng ta tìm\n"
 "thấy nhiều chi tiết hơn."
+
 #. 知るのは黒幕のみ…という事か。
 msgctxt "0095 | BYAKUYA TOGAMI"
 msgid ""
 "So in other words, only the mastermind knows the truth\n"
 "right now."
 msgstr "Nói cách khác, hiện tại chỉ có kẻ chủ mưu là biết được sự thật."
+
 #. <CLT 4>黒幕の目的…
 #. <CLT>
 msgctxt "0096 | MAKOTO NAEGI"
@@ -757,6 +857,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mục đích của kẻ chủ mưu...\n"
 "<CLT>"
+
 #. <CLT 4>ボクらをここに閉じ込め、
 #. こんな事をさせている目的…
 #. <CLT>
@@ -769,6 +870,7 @@ msgstr ""
 "<CLT 4>Nếu chúng ta có thể tìm ra lý do tại sao chúng lại muốn\n"
 "giam cầm tất cả chúng ta ở đây...\n"
 "<CLT>"
+
 #. <CLT 4>それを解き明かせば、
 #. ボクらはここから出られるのだろうか…
 #. <CLT>
@@ -779,6 +881,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...liệu điều đó có đủ để giúp chúng ta thoát khỏi đây không?\n"
 "<CLT>"
+
 #. <CLT 4>それとも……
 #. <CLT>
 msgctxt "0099 | MAKOTO NAEGI"
@@ -788,6 +891,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hay là...?\n"
 "<CLT>"
+
 #. …とにかく、これで２階に何があるかは、
 #. 一通りわかったな…
 msgctxt "0100 | MAKOTO NAEGI"
@@ -797,6 +901,7 @@ msgid ""
 msgstr ""
 "Dù sao thì, giờ mình cũng đã nắm khá rõ những gì có ở tầng\n"
 "2 rồi."
+
 #. <CLT 4>それにしても、やっぱり２階にも、
 #. 出口らしきものはないみたいだ…
 #. <CLT>
@@ -809,6 +914,7 @@ msgstr ""
 "<CLT 4>Nhưng mình chẳng thấy bất cứ thứ gì có vẻ như là lối thoát\n"
 "hay đại loại thế cả...\n"
 "<CLT>"
+
 #. <CLT 4>…他のみんなの調査結果に、
 #. 期待するしかないか…
 #. <CLT>
@@ -821,6 +927,7 @@ msgstr ""
 "<CLT 4>Giờ tất cả những gì mình có thể làm là hy vọng ai đó khác\n"
 "tìm thấy thứ gì đó giá trị...\n"
 "<CLT>"
+
 #. <CLT 4>よし、そろそろ<CLT><CLT 3>“食堂”<CLT><CLT 4>に戻ってみるか…
 #. <CLT>
 msgctxt "0103 | MAKOTO NAEGI"
@@ -831,6 +938,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Được rồi, mình nên quay lại <CLT><CLT 3>phòng ăn<CLT><CLT 4> càng sớm càng tốt!\n"
 "<CLT>"
+
 #. <CLT 4>埃の積もった棚の上に…ポツンと手紙が置いてある。
 #. <CLT>
 msgctxt "0104 | MAKOTO NAEGI"
@@ -841,6 +949,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Kệ sách phủ đầy bụi. Nhưng trên kệ là... một lá thư.\n"
 "<CLT>"
+
 #. どうやら希望ヶ峰学園は…
 #. すでに<CLT 3>学校としての役割を終えていた<CLT>ようね。
 msgctxt "0105 | KYOUKO KIRIGIRI"
@@ -850,6 +959,7 @@ msgid ""
 msgstr ""
 "Có vẻ như Đỉnh Hy Vọng đã <CLT 3>ngừng hoạt động với tư cách là\n"
 "một ngôi trường<CLT>."
+
 #. しかも…その手紙に積もっていた埃の量からして、
 #. つい最近って訳でもなさそう…
 msgctxt "0106 | KYOUKO KIRIGIRI"
@@ -859,14 +969,16 @@ msgid ""
 msgstr ""
 "Và dựa trên lượng bụi bám trên lá thư, có vẻ như việc này\n"
 "không mới xảy ra gần đây."
+
 #. 下手すれば<CLT 3>１年以上も前<CLT>…
 msgctxt "0107 | KYOUKO KIRIGIRI"
 msgid ""
 "If I had to guess, I'd say this letter could be <CLT 3>at\n"
 "least a year old<CLT>."
 msgstr ""
-"Nếu tôi phải đoán, tôi sẽ nói lá thư này có thể đã <CLT 3>ít nhất\n"
+"Nếu tớ phải đoán, tớ sẽ nói lá thư này có thể đã <CLT 3>ít nhất\n"
 "được một năm tuổi rồi<CLT>."
+
 #. 黒幕は、無人と化した希望ヶ峰学園を乗っ取り、
 #. この妙な学園生活の舞台を作り上げたのだろう…
 msgctxt "0108 | BYAKUYA TOGAMI"
@@ -876,12 +988,14 @@ msgid ""
 msgstr ""
 "Nhiều khả năng kẻ chủ mưu đã chiếm lấy ngôi trường bỏ\n"
 "hoang này để thực hiện màn trình diễn nhỏ này."
+
 #. まぁ、この手紙が<CLT 3>本物であると仮定すれば<CLT>の話だがな…
 msgctxt "0109 | BYAKUYA TOGAMI"
 msgid ""
 "Of course, that's all assuming that <CLT 3>this letter is\n"
 "real<CLT>."
 msgstr "Tất nhiên, đó là giả định rằng <CLT 3>lá thư này là thật<CLT>."
+
 #. …だけど、手紙が本物だとすると、
 #. この学園に関する謎が１つ解けた事になるわよ。
 msgctxt "0110 | KYOUKO KIRIGIRI"
@@ -891,6 +1005,7 @@ msgid ""
 msgstr ""
 "Tuy nhiên, nếu nó *là* thật, thì điều đó sẽ giải mã được\n"
 "một bí ẩn xoay quanh ngôi trường này..."
+
 #. 学園内に私達以外の生徒がいない理由は、
 #. この学園がすでに閉鎖されていたから…
 msgctxt "0111 | KYOUKO KIRIGIRI"
@@ -900,10 +1015,12 @@ msgid ""
 msgstr ""
 "Lý do không có học sinh nào khác ở đây có thể là vì ngôi\n"
 "trường vốn đã đóng cửa rồi."
+
 #. 単純かつ明確な答えだな…
 msgctxt "0112 | BYAKUYA TOGAMI"
 msgid "That would be a nice, simple solution, it's true."
 msgstr "Đó quả thực là một lời giải đáp gọn gàng và đơn giản."
+
 #. それと、手紙にある<CLT 3>“深刻な問題”<CLT>…
 #. 希望ヶ峰学園が閉鎖に追い込まれた理由みたいだけど…
 msgctxt "0113 | MAKOTO NAEGI"
@@ -913,6 +1030,7 @@ msgid ""
 msgstr ""
 "Và <CLT 3>những vấn đề nghiêm trọng<CLT> mà lá thư đã đề cập... Đó rõ\n"
 "ràng là lý do tại sao ngôi trường phải đóng cửa..."
+
 #. それって、ボクらの身に降りかかっているこの状況と、
 #. 何か関係あるのかな…？
 msgctxt "0114 | MAKOTO NAEGI"
@@ -922,10 +1040,12 @@ msgid ""
 msgstr ""
 "Có mối liên hệ nào giữa việc đó và những gì đang xảy ra\n"
 "với chúng ta lúc này không nhỉ...?"
+
 #. もし関係あるとしたら…
 msgctxt "0115 | KYOUKO KIRIGIRI"
 msgid "If the two events are in fact connected..."
 msgstr "Nếu hai sự kiện này thực sự có liên quan đến nhau..."
+
 #. これは、相当重要な手掛かりになるはずよ。
 #. <CLT 3>黒幕の目的<CLT>を探る上でのね…
 msgctxt "0116 | KYOUKO KIRIGIRI"
@@ -935,6 +1055,7 @@ msgid ""
 msgstr ""
 "...thì việc phơi bày mối liên hệ đó sẽ là một manh mối hữu\n"
 "ích, bên cạnh việc tìm ra <CLT 3>mục đích của kẻ chủ mưu<CLT>..."
+
 #. とは言っても…
 #. 現時点では、まだなんとも言えないわね…
 msgctxt "0117 | KYOUKO KIRIGIRI"
@@ -942,14 +1063,16 @@ msgid ""
 "Although I can't really say any more until we find\n"
 "more details."
 msgstr ""
-"Mặc dù tôi chưa thể nói gì thêm cho đến khi chúng ta tìm\n"
+"Mặc dù tớ chưa thể nói gì thêm cho đến khi chúng ta tìm\n"
 "thấy nhiều chi tiết hơn."
+
 #. 知るのは黒幕のみ…という事か。
 msgctxt "0118 | BYAKUYA TOGAMI"
 msgid ""
 "So in other words, only the mastermind knows the truth\n"
 "right now."
 msgstr "Nói cách khác, hiện tại chỉ có kẻ chủ mưu là biết được sự thật."
+
 #. <CLT 4>黒幕の目的…
 #. ボクらをここに閉じ込め、こんな事をさせてる目的…
 #. <CLT>
@@ -962,6 +1085,7 @@ msgstr ""
 "<CLT 4>Mục đích của kẻ chủ mưu... Nếu chúng ta có thể tìm ra lý do tại\n"
 "sao chúng lại muốn giam cầm tất cả chúng ta ở đây...\n"
 "<CLT>"
+
 #. <CLT 4>それを解き明かせば、
 #. ボクらはここから出られるのだろうか…
 #. <CLT>
@@ -972,6 +1096,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...liệu điều đó có đủ để giúp chúng ta thoát khỏi đây không?\n"
 "<CLT>"
+
 #. <CLT 4>それとも……
 #. <CLT>
 msgctxt "0121 | MAKOTO NAEGI"
@@ -981,6 +1106,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hay là...?\n"
 "<CLT>"
+
 #. <CLT 4>これって、<CLT><CLT 3>ノートパソコン<CLT><CLT 4>だよな…
 #. <CLT>
 msgctxt "0122 | MAKOTO NAEGI"
@@ -990,6 +1116,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Trông giống như một chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>結構、古い型の<CLT><CLT 3>ノートパソコン<CLT><CLT 4>みたいだ。
 #. しかも、かなり埃をかぶってるし…
 #. <CLT>
@@ -1001,18 +1128,21 @@ msgid ""
 msgstr ""
 "<CLT 4>Chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4> trông khá cũ. Và nó bị bám đầy bụi bẩn.\n"
 "<CLT>"
+
 #. …壊れてるわよ。電源を入れても起動しないもの。
 msgctxt "0124 | KYOUKO KIRIGIRI"
 msgid ""
 "It's broken. I tried pressing the power button\n"
 "earlier, but nothing happened."
 msgstr ""
-"Nó hỏng rồi. Lúc nãy tôi đã thử nhấn nút nguồn nhưng không\n"
+"Nó hỏng rồi. Lúc nãy tớ đã thử nhấn nút nguồn nhưng không\n"
 "có chuyện gì xảy ra cả."
+
 #. そっか…壊れてるんだ…
 msgctxt "0125 | MAKOTO NAEGI"
 msgid "It's broken, huh? Too bad..."
 msgstr "Nó hỏng rồi sao? Tiếc thật đấy..."
+
 #. <CLT 4>これが使えれば、ネットに繋いで、
 #. 色々と情報を集められると思ったんだけど…
 #. <CLT>
@@ -1025,6 +1155,7 @@ msgstr ""
 "<CLT 4>Mình đã hy vọng có thể dùng nó để lên mạng và xem chuyện\n"
 "gì đang xảy ra ở thế giới bên ngoài.\n"
 "<CLT>"
+
 #. <CLT 4>壊れているんじゃ、仕方がないか…
 #. <CLT>
 msgctxt "0127 | MAKOTO NAEGI"
@@ -1035,6 +1166,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...nếu nó đã hỏng thì mình thực sự chẳng thể làm gì được rồi...\n"
 "<CLT>"
+
 #. …とにかく、これで２階に何があるかは、
 #. 一通りわかったな…
 msgctxt "0128 | MAKOTO NAEGI"
@@ -1044,6 +1176,7 @@ msgid ""
 msgstr ""
 "Dù sao thì, giờ mình cũng đã nắm khá rõ những gì có ở tầng\n"
 "2 rồi."
+
 #. <CLT 4>それにしても、やっぱり２階にも、
 #. 出口らしきものはないみたいだ…
 #. <CLT>
@@ -1056,6 +1189,7 @@ msgstr ""
 "<CLT 4>Nhưng mình chẳng thấy bất cứ thứ gì có vẻ như là lối thoát\n"
 "hay đại loại thế cả...\n"
 "<CLT>"
+
 #. <CLT 4>…他のみんなの調査結果に、
 #. 期待するしかないか…
 #. <CLT>
@@ -1068,6 +1202,7 @@ msgstr ""
 "<CLT 4>Giờ tất cả những gì mình có thể làm là hy vọng ai đó khác\n"
 "tìm thấy thứ gì đó giá trị...\n"
 "<CLT>"
+
 #. <CLT 4>よし、そろそろ<CLT><CLT 3>“食堂”<CLT><CLT 4>に戻ってみるか…
 #. <CLT>
 msgctxt "0131 | MAKOTO NAEGI"
@@ -1078,6 +1213,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Được rồi, mình nên quay lại <CLT><CLT 3>phòng ăn<CLT><CLT 4> càng sớm càng tốt!\n"
 "<CLT>"
+
 #. <CLT 4>棚にはびっしりと本が詰め込まれている。
 #. けどそれ以前に、この棚…
 #. <CLT>
@@ -1089,6 +1225,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Kệ sách xếp kín mít toàn là sách. Nhưng nhìn kỹ thì...\n"
 "<CLT>"
+
 #. <CLT 4>埃がもの凄いな…
 #. <CLT>
 msgctxt "0133 | MAKOTO NAEGI"
@@ -1098,6 +1235,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...tất cả mọi thứ đều bị phủ một lớp bụi dày kinh khủng.\n"
 "<CLT>"
+
 #. <CLT 4>この図書室は長い事、
 #. 放ったらかしになってたみたいだ…
 #. <CLT>
@@ -1110,6 +1248,7 @@ msgstr ""
 "<CLT 4>Có vẻ như thư viện này đã bị bỏ bê trong một thời gian khá\n"
 "dài rồi.\n"
 "<CLT>"
+
 #. <CLT 4>超一流の高校なのに…
 #. なんだか、ずさんだな。
 #. <CLT>
@@ -1122,6 +1261,7 @@ msgstr ""
 "<CLT 4>Mặc dù đây là một ngôi trường trung học danh tiếng, nhưng\n"
 "họ lại khá bất cẩn trong việc giữ gìn nó cho tươm tất.\n"
 "<CLT>"
+
 #. <CLT 4>棚にはびっしりと本が詰め込まれている。
 #. けど、それ以前に…
 #. <CLT>
@@ -1133,6 +1273,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Kệ sách xếp kín mít toàn là sách. Nhưng nhìn kỹ thì...\n"
 "<CLT>"
+
 #. <CLT 4>この棚…埃がもの凄いな…
 #. <CLT>
 msgctxt "0137 | MAKOTO NAEGI"
@@ -1142,6 +1283,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...tất cả mọi thứ đều bị phủ một lớp bụi dày kinh khủng.\n"
 "<CLT>"
+
 #. <CLT 4>この図書室は長い事、
 #. 放ったらかしになってたみたいだ…
 #. <CLT>
@@ -1154,6 +1296,7 @@ msgstr ""
 "<CLT 4>Có vẻ như thư viện này đã bị bỏ bê trong một thời gian khá\n"
 "dài rồi.\n"
 "<CLT>"
+
 #. <CLT 4>超一流の学園なのにずさんな管理…
 #. なんだか変だな…
 #. <CLT>
@@ -1166,6 +1309,7 @@ msgstr ""
 "<CLT 4>Dù bản thân ngôi trường rất tuyệt vời, nhưng bất kỳ ai\n"
 "chịu trách nhiệm bảo trì cũng thật lười biếng. Lạ thật...\n"
 "<CLT>"
+
 #. <CLT 4>棚にはびっしりと本が詰め込まれている。
 #. けど、それ以前に…
 #. <CLT>
@@ -1177,6 +1321,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Kệ sách xếp kín mít toàn là sách. Nhưng nhìn kỹ thì...\n"
 "<CLT>"
+
 #. <CLT 4>この棚…埃がもの凄いな…
 #. <CLT>
 msgctxt "0141 | MAKOTO NAEGI"
@@ -1186,6 +1331,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...tất cả mọi thứ đều bị phủ một lớp bụi dày kinh khủng.\n"
 "<CLT>"
+
 #. <CLT 4>この図書室は、
 #. 長い事、放ったらかしになってたみたいだ…
 #. <CLT>
@@ -1198,6 +1344,7 @@ msgstr ""
 "<CLT 4>Có vẻ như thư viện này đã bị bỏ bê trong một thời gian khá\n"
 "dài rồi.\n"
 "<CLT>"
+
 #. <CLT 4>超一流の学園なのにずさんな管理…
 #. なんだか変だな…
 #. <CLT>
@@ -1210,6 +1357,7 @@ msgstr ""
 "<CLT 4>Dù bản thân ngôi trường rất tuyệt vời, nhưng bất kỳ ai\n"
 "chịu trách nhiệm bảo trì cũng thật lười biếng. Lạ thật...\n"
 "<CLT>"
+
 #. <CLT 4>机の上にはみっちりと埃が積もってる…
 #. <CLT>
 msgctxt "0144 | MAKOTO NAEGI"
@@ -1219,6 +1367,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một lớp bụi dày bám trên mặt bàn.\n"
 "<CLT>"
+
 #. <CLT 4>この図書室は、
 #. 長い事、放ったらかしになってたみたいだ…
 #. <CLT>
@@ -1231,6 +1380,7 @@ msgstr ""
 "<CLT 4>Có vẻ như thư viện này đã bị bỏ bê trong một thời gian khá\n"
 "dài rồi.\n"
 "<CLT>"
+
 #. <CLT 4>超一流の学園なのにずさんな管理…
 #. なんだか変だな…
 #. <CLT>
@@ -1243,6 +1393,7 @@ msgstr ""
 "<CLT 4>Dù bản thân ngôi trường rất tuyệt vời, nhưng bất kỳ ai\n"
 "chịu trách nhiệm bảo trì cũng thật lười biếng. Lạ thật...\n"
 "<CLT>"
+
 #. <CLT 4>このドアの向こうは…
 #. <CLT>
 msgctxt "0147 | MAKOTO NAEGI"
@@ -1252,6 +1403,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Phía sau cánh cửa này là gì vậy...?\n"
 "<CLT>"
+
 #. …<CLT 3>書庫<CLT>のようだぞ。
 #. 本が大量に積まれてる以外は何もなかった。
 msgctxt "0148 | BYAKUYA TOGAMI"
@@ -1261,12 +1413,14 @@ msgid ""
 msgstr ""
 "Nó là một kiểu <CLT 3>kho lưu trữ<CLT>. Tất cả những gì tôi thấy trong\n"
 "đó là những chồng sách cũ và hồ sơ."
+
 #. お前には、用のない場所だろう…
 msgctxt "0149 | BYAKUYA TOGAMI"
 msgid "I can't imagine what business you would have in there."
 msgstr ""
 "Tôi không thể tưởng tượng được cậu có việc gì để làm ở\n"
 "trong đó đâu."
+
 #. <CLT 4>確かに…ボクに用はなさそうだな…
 #. <CLT>
 msgctxt "0150 | MAKOTO NAEGI"
@@ -1278,14 +1432,17 @@ msgstr ""
 "<CLT 4>Đúng thật... Mình cũng không thực sự có lý do gì để kiểm\n"
 "tra nó cả.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0151 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0152 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0153 | NARRATION"
@@ -1293,8 +1450,9 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
+
 #. ……………
 msgctxt "0154 | MAKOTO NAEGI"
 msgid "..."

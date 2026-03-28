@@ -1,8 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -13,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -22,12 +31,14 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ có biểu tượng của trường...\n"
 "<CLT>"
+
 #. これも、壊したら…罰があるのかもな…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "If I break it...Monokuma might come and punish *me*."
 msgstr ""
-"Nếu mình làm hỏng nó... Monokuma có thể sẽ tới và trừng\n"
-"phạt mình."
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -37,6 +48,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -47,6 +59,7 @@ msgstr ""
 "<CLT 4>Có kẻ đang dùng những chiếc camera này để chứng kiến mọi\n"
 "người bỏ mạng...\n"
 "<CLT>"
+
 #. <CLT 4>ムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -57,14 +70,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Dù bực mình thật đấy, nhưng tốt nhất là mình nên mặc kệ nó thôi.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0009 | NARRATION"
@@ -72,5 +88,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

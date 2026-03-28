@@ -1,13 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC) Report-Msgid-Bugs-To:\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "your_email POT-Creation-Date: 3/26/2026 PO-Revision-Date:\n"
-"Last-Translator: Language-Team: Language: en-US MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit"
+"X-Generator: Poedit 3.8\n"
 
 #. あ、苗木！　聞いて聞いて！！
 msgctxt "0001 | AOI ASAHINA"
 msgid "Oh, Makoto! Hey, guess what!"
 msgstr "Ôi, Makoto! Này, đoán xem tui thấy gì nè!"
+
 #. 奥にね、プールがあんの、プールが。
 #. プールがあるんだよ。プール、プール！
 msgctxt "0002 | AOI ASAHINA"
@@ -17,11 +26,13 @@ msgid ""
 msgstr ""
 "Đoán xem tui tìm thấy gì đi! Một cái hồ bơi! Có hồ bơi ở\n"
 "đây nè! HỒ BƠI đó! Hồ bơi hồ bơi hồ bơi!"
+
 #. そ、そんなに連呼しなくても、
 #. わかったから…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "Y-You don't have to keep repeating it, I got it..."
 msgstr "C-Cậu không cần phải lặp đi lặp lại vậy đâu, tớ hiểu rồi mà..."
+
 #. しかも、更衣室には<CLT 3>トレーニング機器<CLT>が勢揃いッ！
 #. さくらちゃんが知ったらスゲー喜ぶよ、絶対！！
 msgctxt "0004 | AOI ASAHINA"
@@ -31,10 +42,12 @@ msgid ""
 msgstr ""
 "Và có cả đống <CLT 3>thiết bị tập luyện<CLT> trong phòng thay đồ nữa!\n"
 "Sakura mà biết chắc chắn sẽ sướng phát điên cho coi!"
+
 #. そ、そうだね…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Yeah, you're right about that..."
 msgstr "Phải, cậu nói đúng đấy..."
+
 #. <CLT 4>朝日奈さん…だいぶテンション上がってるな…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -44,6 +57,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hina có vẻ phấn khích hơn hẳn mọi khi nhỉ...\n"
 "<CLT>"
+
 #. ２階が解放され、生活空間も広がって、
 #. プールのような運動施設も使用可能となり…
 msgctxt "0007 | CELES"
@@ -53,6 +67,7 @@ msgid ""
 msgstr ""
 "Tầng 2 đã được mở, không gian sống cũng rộng hơn, và một\n"
 "số cơ sở vật chất giờ đã có thể sử dụng."
+
 #. これで、学園生活がより快適になりましたわね。
 msgctxt "0008 | CELES"
 msgid ""
@@ -61,6 +76,7 @@ msgid ""
 msgstr ""
 "Dù chuyện gì đang xảy ra đi nữa, tớ phải thừa nhận rằng\n"
 "mọi thứ đã trở nên thoải mái hơn nhiều cho chúng ta."
+
 #. 学園生活がこのように発展していくのならば、
 #. たまの学級裁判も悪くないかもしれません。
 msgctxt "0009 | CELES"
@@ -69,23 +85,28 @@ msgid ""
 "trial may not be so bad."
 msgstr ""
 "Nếu mọi chuyện cứ tiếp tục thế này, thỉnh thoảng có một\n"
-"Lớp Xét Xử cũng không đến nỗi tệ."
+"lớp xét xử cũng không đến nỗi tệ."
+
 #. うふふふ…
 msgctxt "0010 | CELES"
 msgid "Hmhmhm..."
 msgstr "Heh heh..."
+
 #. 不二咲さんは、プールに行ってみた？
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "Hey Chihiro, have you checked out the pool yet?"
 msgstr "Này Chihiro, cậu đã qua xem hồ bơi chưa?"
+
 #. ううん……
 msgctxt "0012 | CHIHIRO FUJISAKI"
 msgid "No..."
 msgstr "Tớ chưa..."
+
 #. 水着は…着たくないからぁ……
 msgctxt "0013 | CHIHIRO FUJISAKI"
 msgid "I...don't like wearing swimsuits."
 msgstr "Tớ... không thích mặc đồ bơi cho lắm."
+
 #. <CLT 4>まぁ、確かに…
 #. 水着姿になるようなキャラでもなさそうだけど…
 #. <CLT>
@@ -95,8 +116,9 @@ msgid ""
 "that kind of thing.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phải, cậu có vẻ là kiểu người không thích mấy thứ như vậy thật.\n"
+"<CLT 4>Ờ, cậu có vẻ là kiểu người không thích mấy thứ như vậy thật.\n"
 "<CLT>"
+
 #. でもさ…ここの更衣室には
 #. <CLT 3>トレーニング機器<CLT>が揃ってるらしいんだよね…
 msgctxt "0015 | CHIHIRO FUJISAKI"
@@ -106,6 +128,7 @@ msgid ""
 msgstr ""
 "Nhưng mà... nghe nói trong phòng thay đồ ở đây có đầy đủ\n"
 "<CLT 3>thiết bị tập luyện<CLT> luôn đó."
+
 #. それは使ってみたいかも…
 #. ちょっと体鍛えたいし…
 msgctxt "0016 | CHIHIRO FUJISAKI"
@@ -115,6 +138,7 @@ msgid ""
 msgstr ""
 "Có lẽ tớ sẽ thử xem sao. Tớ cũng muốn bản thân khỏe mạnh\n"
 "hơn một chút..."
+
 #. 体を鍛える？　不二咲さんが？
 #. なんだか意外だね…
 msgctxt "0017 | MAKOTO NAEGI"
@@ -124,6 +148,7 @@ msgid ""
 msgstr ""
 "Cậu muốn khỏe hơn sao? Tớ phải nói là, điều này hơi bất\n"
 "ngờ đấy..."
+
 #. だけど…更衣室に入るのは…
 #. ちょっと…勇気がなくってぇ……
 msgctxt "0018 | CHIHIRO FUJISAKI"
@@ -133,14 +158,17 @@ msgid ""
 msgstr ""
 "Nhưng... tớ còn không đủ dũng cảm để bước chân vào phòng\n"
 "thay đồ nữa..."
+
 #. 更衣室に入りたくないって事？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "Huh? You don't even wanna go in the locker room?"
 msgstr "Hả? Cậu thậm chí còn không muốn vào phòng thay đồ sao?"
+
 #. 入りたくないって言うか…その……
 msgctxt "0020 | CHIHIRO FUJISAKI"
 msgid "It's not that I don't want to. It's just..."
 msgstr "Không phải tớ không muốn. Chỉ là..."
+
 #. ………………
 msgctxt "0021 | CHIHIRO FUJISAKI"
 msgid "..."
@@ -157,6 +185,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không hiểu lắm. Bộ cậu ấy sợ phòng thay đồ hay gì sao?\n"
 "<CLT>"
+
 #. <CLT 4>更衣室が苦手ってのも、意味不明だけど…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -164,8 +193,9 @@ msgid ""
 "<CLT 4>That's a pretty weird phobia, though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù sao thì đó cũng là một nỗi sợ khá kỳ lạ...\n"
+"<CLT 4>Đó cũng là một nỗi sợ khá kỳ lạ đấy...\n"
 "<CLT>"
+
 #. ここの更衣室には
 #. <CLT 3>トレーニング機器<CLT>が揃ってるんだよね…
 msgctxt "0024 | CHIHIRO FUJISAKI"
@@ -175,11 +205,13 @@ msgid ""
 msgstr ""
 "Nghe nói trong phòng thay đồ ở đây có đầy đủ <CLT 3>thiết bị tập\n"
 "luyện<CLT> luôn đó."
+
 #. それを使って…
 #. ちょっと体鍛えてみたいかも…
 msgctxt "0025 | CHIHIRO FUJISAKI"
 msgid "Maybe I can use it to get a little stronger..."
 msgstr "Có lẽ tớ có thể dùng chúng để khỏe mạnh hơn một chút..."
+
 #. だけど…更衣室に入るのは…
 #. ちょっと…勇気がなくってぇ……
 msgctxt "0026 | CHIHIRO FUJISAKI"
@@ -189,6 +221,7 @@ msgid ""
 msgstr ""
 "Nhưng... tớ còn không đủ dũng cảm để bước chân vào phòng\n"
 "thay đồ nữa..."
+
 #. <CLT 4>なんだか、よくわからないけど…
 #. 更衣室が苦手なのか？
 #. <CLT>
@@ -200,6 +233,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không hiểu lắm. Bộ cậu ấy sợ phòng thay đồ hay gì sao?\n"
 "<CLT>"
+
 #. <CLT 4>更衣室が苦手ってのも、
 #. 意味不明だけど…
 #. <CLT>
@@ -208,8 +242,9 @@ msgid ""
 "<CLT 4>That's a pretty weird phobia, though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù sao thì đó cũng là một nỗi sợ khá kỳ lạ...\n"
+"<CLT 4>Đó cũng là một nỗi sợ khá kỳ lạ đấy...\n"
 "<CLT>"
+
 #. 更衣室の奥にね、<CLT 3>プール<CLT>があるんだよ。
 #. 結構キレイで広くて泳ぎやすそうだったよ！
 msgctxt "0029 | AOI ASAHINA"
@@ -219,6 +254,7 @@ msgid ""
 msgstr ""
 "Phòng thay đồ thông ra một cái <CLT 3>hồ bơi<CLT> đó! Trông nó xịn cực\n"
 "kỳ luôn! Vừa rộng vừa lý tưởng để bơi lội nữa!"
+
 #. あ～、ウズウズ通り越して、
 #. ムズムズしてきたッ！
 msgctxt "0030 | AOI ASAHINA"
@@ -228,10 +264,12 @@ msgid ""
 msgstr ""
 "Ahh, tui đang phấn khích không chịu nổi đây! Tui nóng lòng\n"
 "muốn nhảy ùm xuống đó quá đi!"
+
 #. いや、ムカムカしてきたッ！！
 msgctxt "0031 | AOI ASAHINA"
 msgid "In fact, I'm gettin' kinda mad thinking about it!"
 msgstr "Thực ra thì, cứ nghĩ tới là tui lại thấy hơi bực mình đây!"
+
 #. <CLT 4>なんで…怒るんだよ…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -241,6 +279,7 @@ msgid ""
 msgstr ""
 "<CLT 4>S-Sao cậu lại nổi giận vậy chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
 msgctxt "0033 | MAKOTO NAEGI"
@@ -250,6 +289,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>こんな物、壊してやりたいけど…
 #. 壊したら大変な事になるんだよな…
 #. <CLT>
@@ -262,6 +302,7 @@ msgstr ""
 "<CLT 4>Mình chỉ muốn đập nát cái thứ ngớ ngẩn này cho xong, nhưng ai\n"
 "biết được chuyện gì sẽ xảy ra với mình nếu làm vậy chứ...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0035 | MAKOTO NAEGI"
@@ -271,6 +312,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>こんな所も…
 #. 監視対象って訳か…
 #. <CLT>
@@ -281,6 +323,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Ngay cả ở đây chúng ta cũng đang bị theo dõi sao...\n"
 "<CLT>"
+
 #. <CLT 4>この向こうは…更衣室になってるのか？
 #. <CLT>
 msgctxt "0037 | MAKOTO NAEGI"
@@ -290,6 +333,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Phía sau cánh cửa này là... phòng thay đồ sao?\n"
 "<CLT>"
+
 #. あ、更衣室に入るには
 #. 電子生徒手帳が必要みたいだよ！
 msgctxt "0038 | AOI ASAHINA"
@@ -299,22 +343,27 @@ msgid ""
 msgstr ""
 "Ồ! Và tui đoán là ông cần phải có sổ học sinh để vào được\n"
 "phòng thay đồ đó!"
+
 #. …そうなの？
 msgctxt "0039 | MAKOTO NAEGI"
 msgid "Really...?"
 msgstr "Thật sao...?"
+
 #. そーなのですッ！！
 msgctxt "0040 | MONOKUMA"
 msgid "Really really!"
-msgstr "Thật của thật luôn!"
+msgstr "Thật chứ thật chứ!"
+
 #. うわわッ！！
 msgctxt "0041 | AOI ASAHINA"
 msgid "Uwaah!"
-msgstr "Uwaah!"
+msgstr "U quaaa!"
+
 #. 更衣室のロックを解除するには…
 msgctxt "0042 | MONOKUMA"
 msgid "If you wanna unlocker the locker room..."
 msgstr "Nếu các em muốn mở cửa phòng thay đồ..."
+
 #. ドアの横にある<CLT 3>カードリーダー<CLT>に、
 #. 自分の<CLT 3>電子生徒手帳<CLT>を重ねてください。
 msgctxt "0043 | MONOKUMA"
@@ -324,12 +373,14 @@ msgid ""
 msgstr ""
 "...các em sẽ phải quẹt <CLT 3>sổ học sinh điện tử<CLT> cá nhân qua cái\n"
 "<CLT 3>máy đọc thẻ<CLT> ngay cạnh cửa."
+
 #. ただし…更衣室のセキュリティーには万全を期す為…
 msgctxt "0044 | MONOKUMA"
 msgid ""
 "However, to ensure maximum security within each locker\n"
 "room..."
 msgstr "Tuy nhiên, để đảm bảo an ninh tối đa cho mỗi phòng thay đồ..."
+
 #. 男子の電子生徒手帳で入れるのは<CLT 3>男子更衣室<CLT>のみ…
 #. 女子の電子生徒手帳で入れるのは<CLT 3>女子更衣室<CLT>のみ…
 msgctxt "0045 | MONOKUMA"
@@ -339,10 +390,12 @@ msgid ""
 msgstr ""
 "...chỉ có <CLT 3>sổ học sinh nam<CLT> mới mở được phòng thay đồ nam,\n"
 "và <CLT 3>phòng nữ cũng tương tự như thế<CLT>!"
+
 #. と、なっておりますッ！
 msgctxt "0046 | MONOKUMA"
 msgid "And that's the bottom line!"
 msgstr "Và đó là quy tắc cuối cùng!"
+
 #. じゃあさ、誰かがドアを開けている隙に、
 #. 別の誰かがこっそり入ったりしたら？
 msgctxt "0047 | AOI ASAHINA"
@@ -352,6 +405,7 @@ msgid ""
 msgstr ""
 "Hừm... nhưng lỡ có ai đó mở cửa, rồi người khác lẻn vào\n"
 "theo thì sao?"
+
 #. そんな卑猥な事をする輩は不純異性交遊として、
 #. 容赦も情けもなく罰しますッ！
 msgctxt "0048 | MONOKUMA"
@@ -361,25 +415,32 @@ msgid ""
 msgstr ""
 "Bất cứ kẻ nào thực hiện hành vi khiếm nhã đó sẽ bị trừng\n"
 "phạt không nương tay vì tội suy đồi đạo đức đầy bê bối!"
+
 #. 天井に、<CLT 3>ガトリングガン<CLT>がぶら下がってるでしょ？
 msgctxt "0049 | MONOKUMA"
 msgid ""
 "See, there's a <CLT 3>Gatling gun<CLT> mounted on the ceiling,\n"
 "right?"
-msgstr "Nhìn kìa, có một khẩu <CLT 3>súng Gatling<CLT> gắn trên trần nhà đúng không?"
+msgstr ""
+"Nhìn kìa, có một khẩu <CLT 3>súng Gatling<CLT> gắn trên trần \n"
+"nhà đúng không?"
+
 #. あれで、ドドドドドドドドドドッって！！
 msgctxt "0050 | MONOKUMA"
 msgid "And it'll be all DUKKA DUKKA DUKKA DUKKA!"
-msgstr "Và nó sẽ nã đạn pằng pằng pằng pằng luôn!"
+msgstr "Và nó sẽ nã đạn PẰNG PẰNG PẰNG PẰNG PẰNG PẰNG!"
+
 #. あんなので撃たれたら、
 #. 怪我しちゃうじゃん！！
 msgctxt "0051 | AOI ASAHINA"
 msgid "I bet it'd really hurt to get shot by that thing!"
-msgstr "Tui cá là bị cái thứ đó bắn trúng thì đau lắm luôn đó!"
+msgstr "Tui cá là bị cái thứ đó bắn trúng thì chấn thương nặng luôn đó!"
+
 #. ううん…死んじゃうと思う…
 msgctxt "0052 | CHIHIRO FUJISAKI"
 msgid "Um, no...I think it'd be a *little* worse than that..."
 msgstr "Ừm, không đâu... tớ nghĩ hậu quả sẽ tệ hơn thế một *chút* đó..."
+
 #. ですが、電子生徒手帳を
 #. 貸し借りした場合はどうなるのです？
 msgctxt "0053 | CELES"
@@ -389,6 +450,7 @@ msgid ""
 msgstr ""
 "Nhưng chuyện gì sẽ xảy ra nếu ai đó cho người khác mượn sổ\n"
 "học sinh của mình?"
+
 #. 男子が女子から借りれば、
 #. 女子更衣室に入れてしまいますわよ？
 msgctxt "0054 | CELES"
@@ -398,6 +460,7 @@ msgid ""
 msgstr ""
 "Một bạn nam có thể mượn sổ của một bạn nữ, và như thế họ\n"
 "sẽ vào được phòng thay đồ nữ, có đúng không?"
+
 #. はッ！　考えてなかった…！
 #. そんな…卑怯で卑劣で鬼畜な方法があったとは！！
 msgctxt "0055 | MONOKUMA"
@@ -405,13 +468,15 @@ msgid ""
 "Wh—!? That never even occurred to me! To think someone\n"
 "could be so low, so cowardly, so devilish!"
 msgstr ""
-"Cái gì—!? Ta chưa bao giờ nghĩ tới chuyện đó luôn! Không\n"
+"Cái gì—!? Ta chưa bao giờ nghĩ tới chuyện đó! Không\n"
 "ngờ lại có kẻ thấp hèn, hèn nhát và quỷ quyệt đến thế!"
+
 #. うーん…
 #. じゃあ、こういうのはどうかな？
 msgctxt "0056 | MONOKUMA"
 msgid "Hmm... Okay, then how's this sound?"
-msgstr "Hừm... Được rồi, vậy nghe thế này thấy sao?"
+msgstr "Hừm... Được rồi, vậy thế này thấy sao?"
+
 #. 校則に<CLT 3>『電子生徒手帳の他人への貸与禁止』<CLT>って項目を
 #. 追加するの！！
 msgctxt "0057 | MONOKUMA"
@@ -420,8 +485,8 @@ msgid ""
 "e-Handbook to another student is strictly prohibited<CLT>."
 msgstr ""
 "Đã đến lúc cho một luật mới! Kể từ giây phút này, việc <CLT 3>cho học\n"
-"sinh khác mượn sổ học sinh điện tử bị nghiêm cấm hoàn\n"
-"toàn<CLT>."
+"sinh khác mượn sổ học sinh điện tử bị nghiêm cấm hoàn toàn<CLT>."
+
 #. そうすれば、電子生徒手帳を他人に渡せないでしょ？
 msgctxt "0058 | MONOKUMA"
 msgid ""
@@ -430,6 +495,7 @@ msgid ""
 msgstr ""
 "Đó! Vậy là giờ không ai có thể đưa sổ của mình cho người\n"
 "khác nữa nhé?"
+
 #. 冴え渡る綿１００％の頭脳…
 #. ボクって天才かも！！
 msgctxt "0059 | MONOKUMA"
@@ -439,6 +505,7 @@ msgid ""
 msgstr ""
 "Thấy sao hả? Ta đúng là thiên tài mà đúng không? Đó là vì\n"
 "bộ não của ta làm bằng 100% bông gòn đó!"
+
 #. そもそも、他人に電子生徒手帳を貸したりする人が
 #. いるとは思えませんけどね。
 msgctxt "0060 | CELES"
@@ -446,8 +513,9 @@ msgid ""
 "I do not imagine anyone would have lent their handbook\n"
 "out in the first place."
 msgstr ""
-"Tớ không nghĩ là ngay từ đầu đã có ai chịu cho mượn sổ học\n"
+"Tôi không nghĩ là ngay từ đầu đã có ai chịu cho mượn sổ học\n"
 "sinh của mình đâu."
+
 #. 悪用されたら…
 #. たまったもんじゃありませんし…
 msgctxt "0061 | CELES"
@@ -456,7 +524,8 @@ msgid ""
 "anything that person might do using the handbook..."
 msgstr ""
 "Sau tất cả, họ có khả năng sẽ phải chịu trách nhiệm cho bất cứ\n"
-"điều gì mà người đó làm khi sử dụng cuốn sổ đó mà..."
+"điều gì mà người đó làm khi sử dụng cuốn sổ của mình..."
+
 #. …って言うかさぁ、更衣室のセキュリティーには、
 #. やけにこだわるんだね？
 msgctxt "0062 | AOI ASAHINA"
@@ -466,6 +535,7 @@ msgid ""
 msgstr ""
 "Nhưng mà nè, ông có vẻ quan tâm thái quá đến mấy vụ an\n"
 "ninh phòng thay đồ này nhỉ..."
+
 #. だってさ、高校生って欲望の塊じゃん？
 #. ペットボトルにも欲情するお年頃じゃん？
 msgctxt "0063 | MONOKUMA"
@@ -473,9 +543,9 @@ msgid ""
 "It's cuz all you teenagers are sex-crazed maniacs!\n"
 "You're at that age you'd try humping a plastic bottle!"
 msgstr ""
-"Đó là vì lũ thiếu niên các em đều là những kẻ cuồng loạn vì giới\n"
-"tính! Các em đang ở cái tuổi mà có khi còn muốn làm bậy với cả\n"
-"một cái chai nhựa nữa đó!"
+"Đó là vì lũ thiếu niên bọn bây đều là những kẻ cuồng loạn về xếp \n"
+"hình! Bọn bây đang ở cái tuổi mà thấy lứng với cả chai nhựa mà!"
+
 #. だから、色んな間違いが起こらないように、
 #. 見張りは厳重にしておかなければならないのですッ！！
 msgctxt "0064 | MONOKUMA"
@@ -485,14 +555,16 @@ msgid ""
 msgstr ""
 "Vì vậy để ngăn chặn bất cứ điều gì khiếm nhã xảy ra, ta\n"
 "phải duy trì việc giám sát thật nghiêm ngặt!"
+
 #. でしたら、寄宿舎の方も取り締まって欲しいですわ。
 msgctxt "0065 | CELES"
 msgid ""
 "Then in that case, I would ask that you keep the same\n"
 "close eye on our dorms."
 msgstr ""
-"Vậy trong trường hợp đó, tớ muốn yêu cầu cậu cũng hãy để\n"
-"mắt kỹ càng như thế tới khu ký túc xá của chúng tớ."
+"Vậy trong trường hợp đó, tôi muốn yêu cầu ông cũng hãy để\n"
+"mắt kỹ càng như thế tới khu ký túc xá của chúng tôi."
+
 #. あちらこそ、何か起きても不思議じゃありませんわよ。
 #. 男女が１つ屋根の下で寝泊まりするなんて…
 msgctxt "0066 | CELES"
@@ -502,6 +574,7 @@ msgid ""
 msgstr ""
 "Nếu một nam một nữ nào đó quyết định ở chung phòng, thì sẽ\n"
 "chẳng có gì ngăn cản được họ cả."
+
 #. …ボクは神聖な学校のイメージを守りたいだけだから。
 msgctxt "0067 | MONOKUMA"
 msgid ""
@@ -510,6 +583,7 @@ msgid ""
 msgstr ""
 "Ta chỉ quan tâm đến việc bảo vệ hình ảnh thiêng liêng của\n"
 "chính ngôi trường này thôi!"
+
 #. だから、寄宿舎で何が起きようと興味ないんで！
 #. 力づくでもアブノーマルでも好きにすれば？
 msgctxt "0068 | MONOKUMA"
@@ -518,17 +592,19 @@ msgid ""
 "force or by cunning, do whatever you want!"
 msgstr ""
 "Ta không quan tâm chuyện gì xảy ra trong ký túc xá riêng tư của\n"
-"các em đâu! Dùng vũ lực hay mưu mẹo thì cứ việc làm bất cứ điều\n"
-"gì các em muốn đi!"
+"bọn bây! Dùng vũ lực hay mưu mẹo gì thì cứ việc!"
+
 #. サイテー…
 msgctxt "0069 | AOI ASAHINA"
 msgid "I hate you so much..."
 msgstr "Tui ghét ông kinh khủng..."
+
 #. じゃ、校則の件はそういう事で決定ね！
 #. まったね～！！
 msgctxt "0070 | MONOKUMA"
 msgid "Okay, so the new regulation is now in place! See ya!"
 msgstr "Được rồi, vậy là quy định mới đã có hiệu lực! Hẹn gặp lại nhé!"
+
 #. あ～あ、せっかく上がった気分が台無しだよ…
 #. 気分転換にひと泳ぎしてこよーかな…
 msgctxt "0071 | AOI ASAHINA"
@@ -538,20 +614,24 @@ msgid ""
 msgstr ""
 "Trời ơi, cái con gấu ngớ ngẩn đó làm hỏng hết tâm trạng của tui\n"
 "rồi! Có lẽ tui sẽ đi ngụp lặn một chút cho khuây khỏa vậy."
+
 #. セレスちゃんと不二咲ちゃんも一緒にどう？
 msgctxt "0072 | AOI ASAHINA"
 msgid "Celeste, Chihiro, you wanna come with me?"
 msgstr "Celeste, Chihiro, hai bà có muốn đi cùng tui không?"
+
 #. わたくし…お顔が水に濡れるのは苦手ですの…
 msgctxt "0073 | CELES"
 msgid ""
 "There is nothing I hate more than getting water on my\n"
 "face."
 msgstr "Chẳng có gì tớ ghét hơn việc để nước dính lên mặt mình cả."
+
 #. ごめん…遠慮しておくよぉ……
 msgctxt "0074 | CHIHIRO FUJISAKI"
 msgid "Sorry...I'll pass this time."
 msgstr "Xin lỗi... lần này tớ xin kiếu vậy."
+
 #. なんでッ？　悩んでる時は泳ぐのが１番なのにッ！
 msgctxt "0075 | AOI ASAHINA"
 msgid ""
@@ -560,6 +640,7 @@ msgid ""
 msgstr ""
 "Sao lại thế chứ! Khi bà đang thấy nản, không có gì tốt hơn\n"
 "một buổi bơi lội để vực dậy tinh thần đâu!"
+
 #. <CLT 4>それは…朝日奈さんだけじゃ…
 #. <CLT>
 msgctxt "0076 | MAKOTO NAEGI"
@@ -567,8 +648,9 @@ msgid ""
 "<CLT 4>I'm pretty sure that only applies to you...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ khá chắc là điều đó chỉ đúng với mỗi cậu thôi...\n"
+"<CLT 4>Mình khá chắc là điều đó chỉ đúng với mỗi cậu thôi...\n"
 "<CLT>"
+
 #. …とにかく、これで２階に何があるかは、
 #. 一通りわかったな…
 msgctxt "0077 | MAKOTO NAEGI"
@@ -578,6 +660,7 @@ msgid ""
 msgstr ""
 "Dù sao thì, giờ mình cũng đã nắm khá rõ những gì có ở tầng\n"
 "2 rồi."
+
 #. <CLT 4>それにしても、やっぱり２階にも、
 #. 出口らしきものはないみたいだ…
 #. <CLT>
@@ -590,6 +673,7 @@ msgstr ""
 "<CLT 4>Nhưng mình chẳng thấy bất cứ thứ gì có vẻ như là lối thoát\n"
 "hay đại loại thế cả...\n"
 "<CLT>"
+
 #. <CLT 4>…他のみんなの調査結果に、
 #. 期待するしかないか…
 #. <CLT>
@@ -602,6 +686,7 @@ msgstr ""
 "<CLT 4>Giờ tất cả những gì mình có thể làm là hy vọng ai đó khác\n"
 "tìm thấy thứ gì đó giá trị...\n"
 "<CLT>"
+
 #. <CLT 4>よし、そろそろ<CLT><CLT 3>“食堂”<CLT><CLT 4>に戻ってみるか…
 #. <CLT>
 msgctxt "0080 | MAKOTO NAEGI"
@@ -612,6 +697,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Được rồi, mình nên quay lại <CLT><CLT 3>phòng ăn<CLT><CLT 4> càng sớm càng tốt!\n"
 "<CLT>"
+
 #. <CLT 4>この向こうは…更衣室になってるのか？
 #. <CLT>
 msgctxt "0081 | MAKOTO NAEGI"
@@ -621,16 +707,19 @@ msgid ""
 msgstr ""
 "<CLT 4>Phía sau cánh cửa này là... phòng thay đồ sao?\n"
 "<CLT>"
+
 #. そちらは、女性用の更衣室のようです。
 msgctxt "0082 | CELES"
 msgid "This is the *girls* locker room."
 msgstr "Đây là phòng thay đồ *nữ*."
+
 #. 殿方は…ご遠慮くださいね？
 msgctxt "0083 | CELES"
 msgid "A true gentleman will respect our space, yes?"
 msgstr ""
 "Một quý ông thực thụ sẽ tôn trọng không gian riêng của tụi\n"
 "tớ, đúng không?"
+
 #. <CLT 4>こっちは女子更衣室のドアだ。
 #. ボクじゃロックを外せないから、入れないな…
 #. <CLT>
@@ -643,6 +732,7 @@ msgstr ""
 "<CLT 4>Cánh cửa dẫn đến phòng thay đồ nữ. Mình không có cách nào\n"
 "để mở khóa nó, nên có muốn mình cũng chẳng vào được.\n"
 "<CLT>"
+
 #. <CLT 4>これってカードリーダーか？
 #. なんに使うんだろう…
 #. <CLT>
@@ -655,6 +745,7 @@ msgstr ""
 "<CLT 4>Đây là một kiểu máy đọc thẻ sao? Mình tự hỏi nó dùng để\n"
 "làm gì nhỉ...\n"
 "<CLT>"
+
 #. <CLT 4>こっちは男子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳で開けられるはず…
 #. <CLT>
@@ -667,6 +758,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ của phòng thay đồ nam. Mình có thể mở nó bằng\n"
 "sổ học sinh điện tử của mình.\n"
 "<CLT>"
+
 #. <CLT 4>これってカードリーダー？
 #. なんに使うんだろう…
 #. <CLT>
@@ -679,6 +771,7 @@ msgstr ""
 "<CLT 4>Đây là một kiểu máy đọc thẻ sao? Mình tự hỏi nó dùng để\n"
 "làm gì nhỉ...\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳じゃ開けられないはず…
 #. <CLT>
@@ -691,6 +784,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ của phòng thay đồ nữ. Trong sổ học sinh điện tử mình\n"
 "được ghi là \"nam\", nên nó không thể mở cánh cửa này.\n"
 "<CLT>"
+
 #. <CLT 4>これって…本物の銃だよな？
 #. <CLT>
 msgctxt "0089 | MAKOTO NAEGI"
@@ -700,6 +794,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là... một khẩu súng thật sao?\n"
 "<CLT>"
+
 #. <CLT 4>戦場じゃあるまいし、
 #. なんでこんな物があるんだよ…
 #. <CLT>
@@ -712,6 +807,7 @@ msgstr ""
 "<CLT 4>Chúng ta đâu có đang ở trong chiến trường. Tại sao ở đây\n"
 "lại cần một thứ như thế chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>この棚には…
 #. 水泳用の色々な用具が並んでいる…
 #. <CLT>
@@ -723,6 +819,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có rất nhiều vật dụng khác nhau liên quan đến hồ bơi trên kệ.\n"
 "<CLT>"
+
 #. <CLT 4>浮き輪がある…
 #. なんとなくだけど、救命用に見えるな…
 #. <CLT>
@@ -734,14 +831,17 @@ msgstr ""
 "<CLT 4>Nó trông giống như một trong những chiếc phao cứu sinh\n"
 "hình vòng tròn vậy.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0093 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0094 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0095 | NARRATION"
@@ -749,8 +849,9 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn có muốn đi ra ngoài không?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
+
 #. <CLT 4>いや、まだ調べる事があるはずだ…
 #. <CLT>
 msgctxt "0096 | MAKOTO NAEGI"

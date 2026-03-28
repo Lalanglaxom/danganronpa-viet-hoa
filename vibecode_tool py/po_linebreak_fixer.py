@@ -110,7 +110,7 @@ def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT)
         else:
             # Line 2: always hard cap
             hard_cut = find_cut(words, hard)
-            cut_at = hard_cut if hard_cut < len(words) else soft_cut
+            cut_at = hard_cut 
 
         lines.append(" ".join(words[:cut_at]))
         words = words[cut_at:]
