@@ -16,7 +16,7 @@ from tkinter import filedialog, messagebox
 # ║                      ⚙  SETTINGS                                ║
 # ╚══════════════════════════════════════════════════════════════════╝
 
-SOFT_LIMIT: int = 58   
+SOFT_LIMIT: int = 56   
 HARD_LIMIT: int = 64
 
 _CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>|<CLT_\d+>")

@@ -424,7 +424,7 @@ msgstr ""
 #. <CLT 3>希望ヶ峰学園…事務局<CLT>…？
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "<CLT 3>Hope's Peak Academy...?<CLT>"
-msgstr "<CLT 3>Học viện Đỉnh Hy Vọng...?<CLT>"
+msgstr "<CLT 3>Văn phòng hành chính học viện Đỉnh Hy Vọng...?<CLT>"
 
 #. …随分と埃を被っているわね。
 #. 長い事、ここに放置されていたようだわ。
@@ -625,7 +625,7 @@ msgid ""
 "collected, it doesn't seem to have happened recently."
 msgstr ""
 "Và dựa trên lượng bụi bám trên lá thư, có vẻ như việc này\n"
-"không mới xảy ra gần đây."
+"không phải mới xảy ra gần đây."
 
 #. 下手すれば…<CLT 3>１年以上も前<CLT>…
 msgctxt "0071 | KYOUKO KIRIGIRI"
@@ -700,8 +700,7 @@ msgid ""
 "the school, and never saw anything about this."
 msgstr ""
 "Nhưng trước khi tới đây, tớ đã tìm kiếm thông tin trên mạng về\n"
-"ngôi trường, và chưa bao giờ thấy bất cứ điều gì về việc\n"
-"này."
+"ngôi trường, và không hề thấy bất cứ điều gì về việc này cả."
 
 #. …それが、黒幕の手という事だ。
 #. そうやって俺達をおびき寄せたんだろう。
@@ -814,7 +813,7 @@ msgid ""
 "happening to us now...?"
 msgstr ""
 "Có mối liên hệ nào giữa việc đó và những gì đang xảy ra\n"
-"với chúng ta lúc này không nhỉ...?"
+"với chúng ta lúc này không...?"
 
 #. もし関係あるとしたら…
 msgctxt "0092 | KYOUKO KIRIGIRI"
@@ -1114,7 +1113,7 @@ msgid ""
 "<CLT 4>It looks like a <CLT><CLT 3>laptop<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trông giống như một chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4>...\n"
+"<CLT 4>Trông giống như một chiếc <CLT><CLT 3>laptop<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. <CLT 4>結構、古い型の<CLT><CLT 3>ノートパソコン<CLT><CLT 4>みたいだ。
@@ -1126,7 +1125,8 @@ msgid ""
 "dust.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4> trông khá cũ. Và nó bị bám đầy bụi bẩn.\n"
+"<CLT 4>Chiếc <CLT><CLT 3>laptop<CLT><CLT 4> trông khá cũ. Và nó bị \n"
+"bám đầy bụi bẩn.\n"
 "<CLT>"
 
 #. …壊れてるわよ。電源を入れても起動しないもの。
@@ -1164,7 +1164,8 @@ msgid ""
 "about it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...nếu nó đã hỏng thì mình thực sự chẳng thể làm gì được rồi...\n"
+"<CLT 4>...nếu nó đã hỏng thì mình thực sự chẳng thể \n"
+"làm gì được...\n"
 "<CLT>"
 
 #. …とにかく、これで２階に何があるかは、
