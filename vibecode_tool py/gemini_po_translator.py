@@ -19,17 +19,33 @@ WAIT_BETWEEN_BATCHES   = 8      # Seconds to pause between Gemini calls
 
 STOP_BTN_SEL = 'button[aria-label*="Stop"], button[aria-label*="Dừng"]'
 
-TRANSLATE_PROMPT_TEMPLATE = """\
-Translate the following .po file entries for the Danganronpa project into Vietnamese. \
-Use my 'Saved Information' for character-specific tones (Makoto, Hina, etc.) and \
-terminology (Ultimate, Hope's Peak).
-Strict constraints for this session:
-* Preserve all msgctxt and tags like <CLT X>.
+TRANSLATE_PROMPT_TEMPLATE = """Translate the following .po file entries for the Danganronpa project into Vietnamese.
+Use my 'Saved Information' for character-specific tones (Makoto, Hina, etc.) and terminology (Ultimate, Hope's Peak).
+
+OUTPUT FORMAT — follow this exactly, no exceptions:
+- Leave msgid completely unchanged. Never translate or modify it.
+- Put your Vietnamese translation ONLY in msgstr, replacing the empty "".
+- Never put Vietnamese text in msgid. Never leave msgstr empty on a translated entry.
+
+EXAMPLE:
+Input:
+  msgctxt "0003 | MAKOTO NAEGI"
+  msgid "I hope we can all get along!"
+  msgstr ""
+
+Required output:
+  msgctxt "0003 | MAKOTO NAEGI"
+  msgid "I hope we can all get along!"
+  msgstr "Tôi hy vọng chúng ta có thể hòa thuận!"
+
+ADDITIONAL RULES:
+* Preserve all tags like <CLT X> and <CLT> exactly as they appear in msgid.
+* Use the Japanese #. comment lines for translation context only — do not output them.
 * Limit to exactly one exclamation mark per sentence.
 * Keep ellipses (...) only if present in the English source.
-* Do not skip entries, even if they are duplicates.
-* Return only the translated content inside a single code block.
-* Don't write back the japanese part, but still use it to add context for translation
+* Do not skip any entries, even duplicates.
+* Return all entries inside a single code block.
+
 File content:
 
 {entries}"""
@@ -220,6 +236,9 @@ def write_translations_to_po(filepath: str, raw: str, translations: dict) -> Non
 def parse_translated_block(response_text: str) -> dict:
     """
     Parse Gemini's response which contains .po entries.
+    Handles two formats Gemini may return:
+      - Normal:   translation is in msgstr  (correct)
+      - Inverted: translation is in msgid, msgstr left empty  (Gemini mistake)
     """
     response_text = response_text.replace("\r\n", "\n").replace("\r", "\n")
 
@@ -232,17 +251,24 @@ def parse_translated_block(response_text: str) -> dict:
 
     entry_pat = re.compile(
         r'msgctxt\s+"([^"]+)"\s*\n'
-        r'(?:msgid\s+(?:' + Q + r'\n?)+)?'
+        r'((msgid\s+(?:' + Q + r'\n?)+))'
         r'(msgstr\s+(?:' + Q + r'\n?)*)',
         re.MULTILINE,
     )
 
     for m in entry_pat.finditer(content):
         msgctxt    = m.group(1)
-        msgstr_raw = m.group(2)
+        msgid_raw  = m.group(2) or ""
+        msgstr_raw = m.group(4)
         msgstr     = _po_raw_to_text(msgstr_raw)
+        msgid      = _po_raw_to_text(msgid_raw)
+
         if msgstr.strip():
+            # Normal: translation in msgstr
             translations[msgctxt] = msgstr
+        elif msgid.strip():
+            # Inverted: Gemini put translation in msgid, left msgstr empty
+            translations[msgctxt] = msgid
 
     return translations
 
