@@ -1,0 +1,454 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 【付いて来て欲しい場所】
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "[g-go somewhere with me]"
+msgstr "[đ-đi đâu đó với tôi]"
+
+#. 付いて来て欲しい場所って…どこ？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "And...where is it you want to go?"
+msgstr "Và... cậu muốn đi đâu cơ?"
+
+#. そ、それは…
+msgctxt "0003 | TOUKO FUKAWA"
+msgid "W-Well..."
+msgstr "Th-Thì là..."
+
+#. …<CLT 3>図書室<CLT>よ。
+msgctxt "0004 | TOUKO FUKAWA"
+msgid "...the <CLT 3>library<CLT>."
+msgstr "...<CLT 3>thư viện<CLT>."
+
+#. …図書室？　本でも探してるの？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Huh? Are you looking for a book or something?"
+msgstr "Hả? Cậu đang tìm sách hay gì à?"
+
+#. それだったら、十神クンに頼んだら？
+#. 図書室に入り浸ってるみたいだし…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"Why don't you just ask Byakuya? He spends all his time\n"
+"in the library, anyway."
+msgstr ""
+"Nếu vậy thì sao cậu không nhờ Byakuya nhỉ? Dù sao thì\n"
+"cậu ấy cũng suốt ngày ở trong thư viện mà."
+
+#. …ッ！！
+msgctxt "0007 | TOUKO FUKAWA"
+msgid "Kh—!"
+msgstr "Kh—!"
+
+#. ど、どうかした…？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "D-Did I say something wrong...?"
+msgstr "T-Tớ nói gì sai à...?"
+
+#. あ、あなた…口は軽くないわよね…
+#. こ、この事は…内緒にしてよッ！！
+msgctxt "0009 | TOUKO FUKAWA"
+msgid ""
+"You're not a b-b-blabbermouth, right? This h-has to be\n"
+"a secret!"
+msgstr ""
+"C-Cậu... không phải hạng người lẻo mép đúng không?\n"
+"Chuyện n-này phải giữ bí mật đó!"
+
+#. な、なんの事かわからないけど…
+#. 黙ってて欲しいなら黙ってるよ。
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"I honestly have no idea what you're talking about, but\n"
+"if you want me to be quiet, I'll be quiet."
+msgstr ""
+"Thú thật là tớ chẳng hiểu cậu đang nói gì, nhưng nếu cậu\n"
+"muốn tớ giữ kín thì tớ sẽ giữ kín."
+
+#. じゃあ行くわよッ！　<CLT 3>図書室<CLT>にッ！！
+msgctxt "0011 | TOUKO FUKAWA"
+msgid "Then let's g-go to the <CLT 3>library<CLT>!"
+msgstr "Vậy thì đ-đi thôi! Đến <CLT 3>thư viện<CLT>!"
+
+#. と、図書室だね…わかったよ…
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "Okay, I got it, the library..."
+msgstr "Được rồi, tớ hiểu rồi, thư viện..."
+
+#. <CLT 4>こ、この強引さは…なんなんだ…？
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Jeez, why so pushy?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Trời ạ, sao lại ép người quá đáng...?\n"
+"<CLT>"
+
+#. さてと…今日はどうするか…
+msgctxt "0014 | MAKOTO NAEGI"
+msgid "So, what should I do today...?"
+msgstr "Vậy, hôm nay mình nên làm gì đây nhỉ...?"
+
+#. <CLT 23>「ピンポーン…」
+#. <CLT>
+msgctxt "0015 | NARRATION"
+msgid ""
+"<CLT 23>*Ding dong*\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>*Bính boong*\n"
+"<CLT>"
+
+#. <CLT 4>…ん？　誰か来た？
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm? Who could that be?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Hửm? Ai đến thế?\n"
+"<CLT>"
+
+#. <CLT 4>…と思ってドアを開けるや否や、
+#. その人物は強引に…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Wondering who had come to visit, I opened the door,\n"
+"and someone forced their way in.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đang tự hỏi ai đến thăm thì mình vừa mở cửa ra, người đó\n"
+"đã xông thẳng vào trong.\n"
+"<CLT>"
+
+#. ふ、腐川さん？　どうしたの…？
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "T-Toko? What's the matter?"
+msgstr "T-Toko? Có chuyện gì vậy...?"
+
+#. 何よ…そんなに驚いて……
+#. そ、そんなに迷惑…？
+msgctxt "0019 | TOUKO FUKAWA"
+msgid ""
+"Why are you s-so surprised? Am I really that\n"
+"an-noying?"
+msgstr ""
+"Gì chứ... sao cậu ngạc nhiên thế... L-Làm phiền cậu đến\n"
+"thế cơ à...?"
+
+#. め、迷惑なんて承知よ…承知の上で来てるのよ…
+#. だから…いいじゃない…
+msgctxt "0020 | TOUKO FUKAWA"
+msgid ""
+"W-Well I already know I'm annoying. I came here\n"
+"kn-knowing that, so...that makes it o-okay..."
+msgstr ""
+"Th-Thì tôi biết là làm phiền rồi... biết rõ nên tôi\n"
+"mới đến đây đấy... vậy nên... có sao đâu chứ..."
+
+#. いや、迷惑というか…なんの用かなって？
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"No, you're not annoying... I just wondered what was\n"
+"going on."
+msgstr ""
+"Không, không phải làm phiền... tớ chỉ thắc mắc có chuyện\n"
+"gì thôi."
+
+#. お、お、お願いがあって来たのよ…
+msgctxt "0022 | TOUKO FUKAWA"
+msgid "I have a f-f-favor to ask..."
+msgstr "T-T-Tôi đến vì có việc muốn nhờ đây..."
+
+#. ちょ、ちょっと一緒に…
+#. <CLT 1>【付いて来て欲しい場所】<CLT>が…あるの……
+msgctxt "0023 | TOUKO FUKAWA"
+msgid "I want you to <CLT 1>[g-go somewhere with me]<CLT>..."
+msgstr "Tôi muốn cậu <CLT 1>[đ-đi đâu đó với tôi]<CLT>..."
+
+#. <CLT 4>腐川さんが…
+#. ボクに付いて来て欲しい場所…？
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She wants to go somewhere...with *me*?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Toko muốn mình... đi cùng đến một nơi nào đó sao?\n"
+"<CLT>"
+
+#. <CLT 4>まるで、見当が付かないけど…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Frankly, I'm shocked...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thật tình, mình chẳng thể đoán nổi là nơi nào...\n"
+"<CLT>"
+
+#. <CLT 4>モノクマが写るモニター…
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma thường\n"
+"xuất hiện.\n"
+"<CLT>"
+
+#. <CLT 4>そういえば…あの連続ドラマの結末って
+#. どうなったんだろうな…
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which reminds me, I wonder how that one supernatural\n"
+"crime show I was watching turned out...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhắc mới nhớ, không biết cái kết của bộ phim hình sự\n"
+"siêu nhiên mình đang xem dở thế nào rồi nhỉ...\n"
+"<CLT>"
+
+#. <CLT 4>こんなカメラで…
+#. ボクらを監視してるのか…
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>They've been using these cameras to watch us...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chúng đang dùng những chiếc camera này để giám sát\n"
+"bọn mình...\n"
+"<CLT>"
+
+#. <CLT 4>ムカツクけど、今は無視するしかない…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's infuriating...but I have to just try and not\n"
+"think about it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thật là tức điên mà... nhưng mình đành phải cố gắng\n"
+"không nghĩ về nó thôi.\n"
+"<CLT>"
+
+#. <CLT 4>いや、出ていっても仕方ない。
+#. 腐川さんに話しかけよう。
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No, I can't leave right now. I need to talk to Toko\n"
+"first.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không, giờ đi ra ngoài cũng chẳng giải quyết được gì.\n"
+"Mình nên nói chuyện với Toko trước đã.\n"
+"<CLT>"
+
+#. ………………
+msgctxt "0031 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>舞園さんの死から…目を背けちゃいけない…！
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't let myself turn away from Sayaka's death...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình không được phép trốn tránh cái chết của Sayaka...!\n"
+"<CLT>"
+
+#. <CLT 4>舞園さんの為にも…
+#. ボク自身の為にもだ…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>For Sayaka...and for myself...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vì Sayaka... và vì cả chính bản thân mình nữa...\n"
+"<CLT>"
+
+#. <CLT 4>こんな鉄板で閉じ込められてるなんて…
+#. まさに悪夢だ…
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To be sealed in by a huge slab of metal... It's like\n"
+"I'm stuck in a bad dream.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bị nhốt sau những tấm sắt khổng lồ thế này... Đúng là\n"
+"một cơn ác mộng.\n"
+"<CLT>"
+
+#. <CLT 4>こんな鉄板で閉じ込められてるなんて…
+#. まさに悪夢だ…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To be sealed in by a huge slab of metal... It's like\n"
+"I'm stuck in a bad dream.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bị nhốt sau những tấm sắt khổng lồ thế này... Đúng là\n"
+"một cơn ác mộng.\n"
+"<CLT>"
+
+#. <CLT 4>何か、メモしなくちゃいけないような事は…
+#. 思い当たらないな。
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Is there anything I need to write down?\n"
+"...Nope, can't think of a thing.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có chuyện gì mình cần ghi chú lại không nhỉ? ...Chịu,\n"
+"mình chẳng nghĩ ra được gì cả.\n"
+"<CLT>"
+
+#. <CLT 4>粘着テープクリーナーだ。
+#. 桑田クンのお陰で部屋はキレイだ…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The lint roller... At least my room is super clean\n"
+"now, thanks to Leon...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cây lăn bụi... Ít nhất thì giờ phòng mình cũng sạch bong\n"
+"kin kít nhờ công của Leon...\n"
+"<CLT>"
+
+#. <CLT 4>これは…工具セットだな。
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's...the toolkit.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là... bộ dụng cụ.\n"
+"<CLT>"
+
+#. <CLT 4>ビニールの包装がされてる。
+#. まだ未開封の新品だ。
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It still hasn't been opened.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó vẫn còn nguyên bao bì bóng kính. Chưa hề được bóc \n"
+"ra luôn.\n"
+"<CLT>"
+
+#. <CLT 4>まぁ、工具セットなんて使う事はないだろうな…
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, I don't think I need it right now.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù sao thì chắc mình cũng chẳng bao giờ phải dùng đến bộ\n"
+"dụng cụ này đâu...\n"
+"<CLT>"
+
+#. <CLT 4>住めば都と同じく…寝れば都…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Home is where the heart is, they say.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Người ta hay nói nơi nào mình sống quen thì nơi \n"
+"đó là nhà...\n"
+"<CLT>"
+
+#. <CLT 4>なんてことはないよな。
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But I say, bullcrap.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng mình thì thấy đúng là tào lao.\n"
+"<CLT>"
+
+#. <CLT 4>ゴミ箱は今日も普通にゴミ箱だ…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The trash can is unremarkable as ever...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chiếc thùng rác hôm nay vẫn cứ là một chiếc thùng rác\n"
+"bình thường...\n"
+"<CLT>"
+
+#. <CLT 4>紙は、はがしたけど…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I tore the paper off the wall, but...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình đã gỡ tờ giấy trên tường xuống rồi, nhưng...\n"
+"<CLT>"
+
+#. <CLT 4>あの内容を思い出すだけでも、
+#. 嫌な気分になる…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...just remembering what it said still makes me feel\n"
+"queasy.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...chỉ cần nhớ lại nội dung của nó thôi cũng đủ khiến\n"
+"mình cảm thấy buồn nôn.\n"
+"<CLT>"
+
+#. <CLT 4>引き出しのある机だ。
+#. よくある一般的な机だな。
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's the same desk with the same few drawers. It's the\n"
+"kind of thing any student would have.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vẫn là chiếc bàn đó với mấy cái ngăn kéo quen thuộc.\n"
+"Đúng kiểu bàn mà bất kỳ học sinh nào cũng có.\n"
+"<CLT>"
+
+#. <CLT 4>いや、腐川さんを置いて、
+#. ボクだけ出て行くのはマズイだろう…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't just leave Toko here alone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không được, bỏ mặc Toko ở lại đây rồi đi ra ngoài một\n"
+"mình thì không ổn chút nào...\n"
+"<CLT>"

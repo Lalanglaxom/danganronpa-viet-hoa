@@ -45,7 +45,7 @@ CRITERIA = [
     #     "character":  None,
     #     "scope":      "clt:4",
     #     "whole_word": True,
-    #     "replace":    [("Tớ", "Tôi"), ("tớ", "tôi")],
+    #     "replace":    [("Tôi", "Mình"), ("tôi", "mình")],
     # },
     # ── Add more criteria below ────────────────────────────────────
     # Whole-word, specific character, entire msgstr:
@@ -56,14 +56,22 @@ CRITERIA = [
     #     "whole_word": True,
     #     "replace":    [("Tôi", "Tớ"), ("tôi", "tớ")],
     # },
-    # Substring (replaces even inside other words):
+    # Whole-word, specific character, entire msgstr:
     {
-        "label":      'Fix substring example',
-        "character":  None,
+        "label":      'TOUKO: Mình → Tôi',
+        "character":  "TOUKO",
         "scope":      None,
-        "whole_word": False,
-        "replace":    [("Vậy thôi, chúc các em có những giấc mơ đẹp. ,"",Chúc ngủ ngon nhé...", "Thế thôi...mơ đẹp nhé, mọi người! Ngủ ngon, ngủ tròn, đừng để\n lũ rệp rỉa mòn thịt da...")],
+        "whole_word": True,
+        "replace":    [("Mình", "Tôi"), ("mình", "tôi")],
     },
+    # Substring (replaces even inside other words):
+    # {
+    #     "label":      'Fix substring example',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("Vậy thôi, chúc các em có những giấc mơ đẹp. ,"",Chúc ngủ ngon nhé...", "Thế thôi...mơ đẹp nhé, mọi người! Ngủ ngon, ngủ tròn, đừng để\n lũ rệp rỉa mòn thịt da...")],
+    # },
 ]
 
 # ════════════════════════════════════════════════════════════════════
