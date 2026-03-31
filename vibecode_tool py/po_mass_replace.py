@@ -65,13 +65,13 @@ CRITERIA = [
         "replace":    [("Mình", "Tôi"), ("mình", "tôi")],
     },
     # Substring (replaces even inside other words):
-    # {
-    #     "label":      'Fix substring example',
-    #     "character":  None,
-    #     "scope":      None,
-    #     "whole_word": False,
-    #     "replace":    [("Vậy thôi, chúc các em có những giấc mơ đẹp. ,"",Chúc ngủ ngon nhé...", "Thế thôi...mơ đẹp nhé, mọi người! Ngủ ngon, ngủ tròn, đừng để\n lũ rệp rỉa mòn thịt da...")],
-    # },
+    {
+        "label":      'Fix substring example',
+        "character":  None,
+        "scope":      None,
+        "whole_word": False,
+        "replace":    [("Genocide Jack", "Jack Đồ Tể")],
+    },
 ]
 
 # ════════════════════════════════════════════════════════════════════
