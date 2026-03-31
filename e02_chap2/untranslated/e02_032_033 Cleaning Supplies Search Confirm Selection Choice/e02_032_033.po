@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 4>トイレ用具入れか…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is where the bathroom cleaning supplies are\n"
+"stored.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là nơi cất giữ các dụng cụ vệ sinh nhà tắm.\n"
+"<CLT>"
+#. 事件に関係ありそうなものは…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Maybe there's some kind of clue here..."
+msgstr "Có lẽ ở đây có loại manh mối nào đó..."
+#. …ないか。
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "...Guess not."
+msgstr "...Chắc là không rồi."
+#. はい
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn muốn rời khỏi khu vực này chứ?\n"
+"<CLT>"
