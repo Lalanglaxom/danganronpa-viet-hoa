@@ -72,6 +72,13 @@ CRITERIA = [
         "whole_word": False,
         "replace":    [("Genocide Jack", "Jack Đồ Tể")],
     },
+    {
+        "label":      'Fix truth bullet',
+        "character":  None,
+        "scope":      None,
+        "whole_word": False,
+        "replace":    [("Đạn Hy Vọng", "Đạn Sự Thật")],
+    },
 ]
 
 # ════════════════════════════════════════════════════════════════════
