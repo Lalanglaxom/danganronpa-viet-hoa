@@ -16,8 +16,9 @@ from tkinter import filedialog, messagebox
 # ║                      ⚙  SETTINGS                                ║
 # ╚══════════════════════════════════════════════════════════════════╝
 
-SOFT_LIMIT: int = 56   
-HARD_LIMIT: int = 64
+SOFT_LIMIT: int = 24   
+HARD_LIMIT: int = 28
+MAX_CUTS:   int = 50    # Maximum line breaks (1 = 2 lines max, 2 = 3 lines max, etc.)
 
 _CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>|<CLT_\d+>")
 
@@ -53,7 +54,7 @@ def visible_len(text: str) -> int:
     """Return display length of *text*, stripping all CLT colour tags."""
     return len(_CLT_RE.sub("", text))
 
-def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT) -> tuple[str, bool]:
+def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT, max_cuts: int = MAX_CUTS) -> tuple[str, bool]:
     original_text = msgstr_text
 
     if not _CLT_RE.sub("", msgstr_text).strip():
@@ -94,7 +95,7 @@ def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT)
     words = flat.split(" ")
     lines: list[str] = []
 
-    for cut_num in range(2):
+    for cut_num in range(max_cuts):
         soft_cut = find_cut(words, soft)
         if soft_cut == len(words):
             break  # everything fits, no cut needed
@@ -126,7 +127,7 @@ def fix_msgstr(msgstr_text: str, soft: int = SOFT_LIMIT, hard: int = HARD_LIMIT)
 #  PO  FILE  PROCESSING
 # ════════════════════════════════════════════════════════════════════
 
-def fix_po_file(filepath: str, dry_run: bool = False) -> int:
+def fix_po_file(filepath: str, dry_run: bool = False, max_cuts: int = MAX_CUTS) -> int:
     try:
         with open(filepath, encoding="utf-8") as f:
             raw = f.read()
@@ -166,7 +167,7 @@ def fix_po_file(filepath: str, dry_run: bool = False) -> int:
             changed = True
 
         if msgstr_text.strip():
-            fixed_msgstr_text, wrapped = fix_msgstr(msgstr_text)
+            fixed_msgstr_text, wrapped = fix_msgstr(msgstr_text, max_cuts=max_cuts)
             if wrapped:
                 msgstr_text = fixed_msgstr_text
                 changed = True
@@ -195,7 +196,7 @@ def fix_po_file(filepath: str, dry_run: bool = False) -> int:
             f.write(updated)
     return fixed_count
 
-def fix_po_directory(root_dir: str) -> None:
+def fix_po_directory(root_dir: str, max_cuts: int = MAX_CUTS) -> None:
     total_files = 0
     total_entries = 0
 
@@ -213,7 +214,7 @@ def fix_po_directory(root_dir: str) -> None:
             print(f"\n{'─' * 65}")
             print(f"  File: {rel}")
             
-            n = fix_po_file(fpath)
+            n = fix_po_file(fpath, max_cuts=max_cuts)
             if n:
                 print(f"  → Fixed {n} entry/entries. ♡")
                 total_entries += n
@@ -236,6 +237,35 @@ def _pick(title: str, kind: str) -> str:
     root.destroy()
     return path
 
+def _ask_max_cuts() -> int:
+    """Show a small dialog to pick max line breaks. Returns chosen value."""
+    root = tk.Tk()
+    root.title("Max Line Breaks")
+    root.resizable(False, False)
+
+    tk.Label(root, text="Maximum line breaks per entry:",
+             font=("Segoe UI", 10), pady=10, padx=16).pack()
+
+    var = tk.IntVar(value=MAX_CUTS)
+    frame = tk.Frame(root, padx=16, pady=4)
+    frame.pack()
+    for val, label in [(1, "1  (max 2 lines)"),
+                       (2, "2  (max 3 lines)"),
+                       (3, "3  (max 4 lines)"),
+                       (4, "4  (max 5 lines)")]:
+        tk.Radiobutton(frame, text=label, variable=var, value=val,
+                       font=("Segoe UI", 9), anchor="w").pack(fill="x")
+
+    result = {"v": MAX_CUTS}
+    def confirm():
+        result["v"] = var.get()
+        root.destroy()
+    tk.Button(root, text="OK", command=confirm,
+              font=("Segoe UI", 9, "bold"), padx=20, pady=4).pack(pady=10)
+    root.mainloop()
+    return result["v"]
+
+
 def run() -> None:
     print("═" * 65)
     print("  PO Line-Break Fixer (Ultimate Safe Version! 🎀)")
@@ -248,17 +278,20 @@ def run() -> None:
     choice = messagebox.askquestion("Target", "Fix a single .po file?\n\nYes = Single File\nNo = Entire Folder")
     root.destroy()
 
+    max_cuts = _ask_max_cuts()
+    print(f"  Max line breaks : {max_cuts}  (max {max_cuts + 1} lines per entry)")
+
     if choice == "yes":
         path = _pick("Select .po file", "file")
         if path:
             print(f"\n  File : {path}")
-            n = fix_po_file(path)
+            n = fix_po_file(path, max_cuts=max_cuts)
             print(f"\nDone! Fixed {n} entries. Original text protected! ♡")
     else:
         path = _pick("Select folder", "folder")
         if path:
             print(f"\n  Folder : {path}")
-            fix_po_directory(path)
+            fix_po_directory(path, max_cuts=max_cuts)
 
 if __name__ == "__main__":
     run()
