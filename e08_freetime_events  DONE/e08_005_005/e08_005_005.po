@@ -24,8 +24,8 @@ msgid ""
 "You see, I've been spending time going back and forth\n"
 "between a parallel world."
 msgstr ""
-"Cậu thấy đấy, cho tới tận vừa rồi, tôi vẫn còn đang du hành \n"
-"qua lại giữa các thế giới song song đó."
+"Cậu thấy đấy, cho tới tận vừa rồi, tôi vẫn còn đang du\n"
+"hành qua lại giữa các thế giới song song đó."
 
 #. ようやく、こちらの世界に
 #. 戻って来たところなのですよ。
@@ -34,7 +34,7 @@ msgid ""
 "I've been over there for...well, a long time. But I've\n"
 "finally returned to my own time!"
 msgstr ""
-"Tôi đã ở bên đó... ừm, một thời gian khá dài. Nhưng cuối \n"
+"Tôi đã ở bên đó... ừm, một thời gian khá dài. Nhưng cuối\n"
 "cùng tôi cũng đã trở lại với dòng thời gian của mình rồi!"
 
 #. クール…すげぇクールだった…
@@ -44,7 +44,7 @@ msgid ""
 "Wow, that actually sounded kinda cool. I should make\n"
 "that my, like, battle quote!"
 msgstr ""
-"Ngầu... Ngầu lòi luôn ấy chứ... Có khi mình nên dùng câu \n"
+"Ngầu... Ngầu lòi luôn ấy chứ... Có khi mình nên dùng câu\n"
 "này làm lời thoại đặc trưng khi xuất trận nhỉ...!"
 
 #. 一緒に過ごす
@@ -65,8 +65,7 @@ msgid ""
 "<CLT 4>Hmm... Should I hang out with Hifumi for a while?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình có nên dành chút thời gian cùng Hifumi \n"
-"không nhỉ?\n"
+"<CLT 4>Mình có nên dành chút thời gian cùng Hifumi không nhỉ?\n"
 "<CLT>"
 
 #. ほぅ、僕と一緒に過ごしたいとは…
@@ -91,8 +90,8 @@ msgid ""
 "Yes, that's right! My greatest power is my ability to\n"
 "negate the powers of others!"
 msgstr ""
-"Đúng vậy! Siêu năng lực mạnh nhất của tôi chính là\n"
-"khả năng vô hiệu hóa năng lực của kẻ khác đó!"
+"Đúng vậy! Siêu năng lực mạnh nhất của tôi chính là khả\n"
+"năng vô hiệu hóa năng lực của kẻ khác đó!"
 
 #. まだ実戦で使った事はないですが、
 #. どんな能力者が現れても怖くないですぞ。
@@ -101,14 +100,16 @@ msgid ""
 "I've never actually used it in a fight yet, but I'm\n"
 "not worried. Cuz whatever abilities they have..."
 msgstr ""
-"Dù tôi vẫn dùng nó trong thực chiến lần nào, nhưng chẳng \n"
+"Dù tôi vẫn dùng nó trong thực chiến lần nào, nhưng chẳng\n"
 "sợ bố con thằng nào hết. Dù chúng có năng lực gì đi nữa..."
 
 #. 僕の無効化の能力にかかればね…
 #. ふっふっふ…
 msgctxt "0012 | HIFUMI YAMADA"
 msgid "...all I need is my power of negation!"
-msgstr "...tất cả những gì tôi cần là sức mạnh vô hiệu hóa này thôi! Hứ hứ hứ...!"
+msgstr ""
+"...tất cả những gì tôi cần là sức mạnh vô hiệu hóa này\n"
+"thôi! Hứ hứ hứ...!"
 
 #. <CLT 4>山田クンの妄想話を延々と聞かせられた。
 #. <CLT>
@@ -118,8 +119,8 @@ msgid ""
 "delusion...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hifumi đã ép góc và bắt mình phải nghe\n"
-"những câu chuyện ảo tưởng sức mạnh của cậu ấy...\n"
+"<CLT 4>Hifumi đã ép góc và bắt mình phải nghe những câu chuyện ảo\n"
+"tưởng sức mạnh của cậu ấy...\n"
 "<CLT>"
 
 #. <CLT 4>山田クンと少し仲良くなれたみたいだ…
@@ -129,8 +130,7 @@ msgid ""
 "<CLT 4>Hifumi and I grew a little closer today.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ hôm nay mình và Hifumi đã trở nên thân thiết \n"
-"hơn một chút.\n"
+"<CLT 4>Có vẻ hôm nay mình và Hifumi đã trở nên thân thiết hơn một chút.\n"
 "<CLT>"
 
 #. 渡す

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 挑戦する
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Give it a shot"
+msgstr "Thử một phen"
+#. よし、挑戦してみるか。
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Alright, let's give it a shot."
+msgstr "Được rồi, thử một phen xem sao."
+#. そろそろ他の場所へ行こう…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "I should probably get going..."
+msgstr "Chắc là tớ nên đi thôi..."
+#. 挑戦しない
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Not right now"
+msgstr "Để sau đi"
+#. また今度にしておくか…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Maybe next time..."
+msgstr "Để lần tới vậy..."
+#. 説明を見る
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Learn more about it"
+msgstr "Tìm hiểu thêm về nó"
+#. <CLT 23>あなた様は、希望ヶ峰学園の様々な場所で、
+#. 小さなメダルを手に入れることでしょう。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>During your stay here at Hope's Peak Academy, you'll\n"
+"find coins scattered throughout the school.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Trong thời gian ở tại Học viện Đỉnh Hy Vọng, bạn sẽ\n"
+"tìm thấy những đồng xu nằm rải rác khắp trường.\n"
+"<CLT>"
+#. <CLT 23>これは、どこぞの王様も集めているとウワサの、
+#. <CLT><CLT 3>モノクマメダル<CLT><CLT 23>というものです。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>These <CLT><CLT 3>Monocoins<CLT><CLT 23> are treasures valued by kings and\n"
+"thieves alike!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Những đồng <CLT><CLT 3>Xu Monokuma<CLT><CLT 23> này là báu vật được cả quốc vương lẫn\n"
+"kẻ trộm coi trọng như nhau!\n"
+"<CLT>"
+#. <CLT 23>手に入れたモノクマメダルの枚数は、
+#. <CLT><CLT 3>手帳メニュー<CLT><CLT 23>でご確認頂けます。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>You can use the <CLT><CLT 3>Handbook Menu<CLT><CLT 23> to see how many\n"
+"Monocoins you currently have.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn có thể dùng <CLT><CLT 3>Sổ học sinh<CLT><CLT 23> để kiểm tra số lượng\n"
+"Xu Monokuma mà mình hiện có.\n"
+"<CLT>"
+#. <CLT 23>こちらの機械では、そのモノクマメダルを使って、
+#. <CLT><CLT 3>景品<CLT><CLT 23>を獲得する事ができます。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>And if you put the coins in this machine here, there's\n"
+"a chance you could win a <CLT><CLT 3>prize<CLT><CLT 23>!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Và nếu bạn bỏ xu vào chiếc máy này, bạn sẽ\n"
+"có cơ hội trúng một <CLT><CLT 3>phần quà<CLT><CLT 23>!\n"
+"<CLT>"
+#. <CLT 23>モノクマメダルをたくさん投入されますと、
+#. あなた様がお持ちでない景品が出やすくなります。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>The more coins you use, the better chance you have of\n"
+"getting something new.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn càng dùng nhiều xu, cơ hội nhận được\n"
+"những món đồ mới càng cao.\n"
+"<CLT>"
+#. <CLT 23>獲得した景品は、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>の
+#. <CLT><CLT 3>“プレゼント”<CLT><CLT 23>でご確認頂けます。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>Check the <CLT><CLT 3>Presents<CLT><CLT 23> section of the <CLT><CLT 3>Handbook Menu<CLT><CLT 23> to\n"
+"review your prizes.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Hãy kiểm tra mục <CLT><CLT 3>Quà tặng<CLT><CLT 23> trong <CLT><CLT 3>Sổ học sinh<CLT><CLT 23> để\n"
+"xem lại các phần quà của bạn.\n"
+"<CLT>"
+#. <CLT 23><CLT><CLT 3>モノモノマシーン<CLT><CLT 23>に挑戦なさいますか？
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>Would you like to try your hand against the almighty\n"
+"<CLT><CLT 3>MonoMono Machine<CLT><CLT 23>!?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bạn có muốn thử vận may với chiếc máy\n"
+"<CLT><CLT 3>MonoMono<CLT><CLT 23> quyền năng không!?\n"
+"<CLT>"

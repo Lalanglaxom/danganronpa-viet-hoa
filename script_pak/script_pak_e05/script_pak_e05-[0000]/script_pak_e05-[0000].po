@@ -21,12 +21,16 @@ msgstr ""
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Alright, let's give it a shot."
 msgstr ""
-
+"<CLT 4>Dù sao thì, tớ không nghĩ nó có liên quan gì đến\n"
+"vụ án.\n"
+"<CLT>"
 #. そろそろ他の場所へ行こう…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "I should probably get going..."
 msgstr ""
-
+"<CLT 4>Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến\n"
+"bánh kẹo—họ có tất cả mọi thứ.\n"
+"<CLT>"
 #. 挑戦しない
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Not right now"
@@ -36,7 +40,9 @@ msgstr ""
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Maybe next time..."
 msgstr ""
-
+"<CLT 4>Một chiếc tủ lạnh... Tớ có thể lấy một thức uống mát lạnh và\n"
+"không tốn một xu nào!\n"
+"<CLT>"
 #. 説明を見る
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Learn more about it"
@@ -91,7 +97,8 @@ msgid ""
 "getting something new.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT>"
 #. <CLT 23>獲得した景品は、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>の
 #. <CLT><CLT 3>“プレゼント”<CLT><CLT 23>でご確認頂けます。
 #. <CLT>
