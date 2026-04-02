@@ -54,6 +54,8 @@ def backup_and_sync():
     lin_not_found   = 0
     errors          = []
 
+    translated_segments = set()  # track every segment_id found in translated_dir
+
     for dirpath, dirnames, filenames in os.walk(translated_dir):
         dirnames.sort()
 
@@ -68,6 +70,7 @@ def backup_and_sync():
         if not os.path.isfile(po_path):
             continue
 
+        translated_segments.add(po_filename)  # e.g. "e01_038_156.po"
         rel = os.path.relpath(po_path, translated_dir)
 
         # ── 1. Create a backup copy inside the same folder ──────────
@@ -106,6 +109,24 @@ def backup_and_sync():
                 print(f"  [ERROR]  {msg}")
                 errors.append(msg)
 
+    # ── Folder structure check ──────────────────────────────────────
+    lin_only   = sorted(set(lin_index) - translated_segments)   # in LIN but missing from translated
+    trans_only = sorted(translated_segments - set(lin_index))   # in translated but not in LIN
+
+    print("\n" + "─" * 40)
+    print("FOLDER STRUCTURE CHECK")
+    print("─" * 40)
+    if not lin_only and not trans_only:
+        print("  ✓ Both folders contain the same set of .po files.")
+    if lin_only:
+        print(f"\n  MISSING from your translated folder ({len(lin_only)}) — present in LIN:")
+        for fname in lin_only:
+            print(f"    - {fname}")
+    if trans_only:
+        print(f"\n  EXTRA in your translated folder ({len(trans_only)}) — not in LIN:")
+        for fname in trans_only:
+            print(f"    + {fname}")
+
     # ── Summary ─────────────────────────────────────────────────────
     summary = (
         f"\n{'='*40}\n"
@@ -114,6 +135,9 @@ def backup_and_sync():
         f"Backups skipped  : {backup_skipped}  (copy already existed)\n"
         f"LIN files updated: {lin_updated}\n"
         f"Not found in LIN : {lin_not_found}\n"
+        f"\nFolder check:\n"
+        f"  Missing from translated : {len(lin_only)}\n"
+        f"  Extra in translated     : {len(trans_only)}\n"
     )
     if errors:
         summary += f"\nErrors ({len(errors)}):\n" + "\n".join(f"  - {e}" for e in errors)
