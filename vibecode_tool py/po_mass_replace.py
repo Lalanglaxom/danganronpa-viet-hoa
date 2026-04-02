@@ -40,20 +40,27 @@ except ImportError:
 # ╚══════════════════════════════════════════════════════════════════╝
 
 CRITERIA = [
+    # {
+    #     "label":      'General: Tớ → mình',
+    #     "character":  None,
+    #     "scope":      "clt:4",
+    #     "whole_word": True,
+    #     "replace":    [("Tớ", "Mình"), ("tớ", "mình")],
+    # },
     {
-        "label":      'General: Tớ → mình',
+        "label":      'General: Tôi → mình',
         "character":  None,
         "scope":      "clt:4",
         "whole_word": True,
-        "replace":    [("Tớ", "Mình"), ("tớ", "mình")],
+        "replace":    [("Tôi", "Mình"), ("tôi", "mình")],
     },
-    {
-        "label":      'MAKOTO: Tôi → tớ',
-        "character":  "MAKOTO",
-        "scope":      None,
-        "whole_word": True,
-        "replace":    [("Tôi", "Tớ"), ("tôi", "tớ")],
-    },
+    # {
+    #     "label":      'MAKOTO: Tôi → tớ',
+    #     "character":  "MAKOTO",
+    #     "scope":      None,
+    #     "whole_word": True,
+    #     "replace":    [("Tôi", "Tớ"), ("tôi", "tớ")],
+    # },
     # ── Add more criteria below ────────────────────────────────────
     # Whole-word, specific character, entire msgstr:
     # {
@@ -64,41 +71,55 @@ CRITERIA = [
     #     "replace":    [("Tôi", "Tớ"), ("tôi", "tớ")],
     # },
     # Whole-word, specific character, entire msgstr:
+    # {
+    #     "label":      'TOUKO: Mình → Tôi',
+    #     "character":  "TOUKO",
+    #     "scope":      None,
+    #     "whole_word": True,
+    #     "replace":    [("Mình", "Tôi"), ("mình", "tôi")],
+    # },
+    # # Substring (replaces even inside other words):
+    # {
+    #     "label":      'Jack change',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("Genocide Jack", "Jack Đồ Tể")],
+    # },
+    # {
+    #     "label":      'Fix truth bullet',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("Đạn Hy Vọng", "Đạn Sự Thật")],
+    # },
+    # {
+    #     "label":      'Fix class trial',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("Lớp Xét Xử", "lớp xét xử")],
+    # },
+    # {
+    #     "label":      'Thể thao → thể dục',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("thể thao", "thể dục"), ("Thể thao", "Thể dục"), ("thể chất", "thể dục")],
+    # },
+    # {
+    #     "label":      'Đồng Monokuma → Xu Monokuma',
+    #     "character":  None,
+    #     "scope":      None,
+    #     "whole_word": False,
+    #     "replace":    [("Đồng Monokuma", "Xu Monokuma"), ("đồng Monokuma", "xu Monokuma")],
+    # },
     {
-        "label":      'TOUKO: Mình → Tôi',
-        "character":  "TOUKO",
-        "scope":      None,
-        "whole_word": True,
-        "replace":    [("Mình", "Tôi"), ("mình", "tôi")],
-    },
-    # Substring (replaces even inside other words):
-    {
-        "label":      'Jack change',
+        "label":      'Thực đơn → Menu',
         "character":  None,
         "scope":      None,
         "whole_word": False,
-        "replace":    [("Genocide Jack", "Jack Đồ Tể")],
-    },
-    {
-        "label":      'Fix truth bullet',
-        "character":  None,
-        "scope":      None,
-        "whole_word": False,
-        "replace":    [("Đạn Hy Vọng", "Đạn Sự Thật")],
-    },
-    {
-        "label":      'Fix class trial',
-        "character":  None,
-        "scope":      None,
-        "whole_word": False,
-        "replace":    [("Lớp Xét Xử", "lớp xét xử")],
-    },
-    {
-        "label":      'Thể thao → thể dục',
-        "character":  None,
-        "scope":      None,
-        "whole_word": False,
-        "replace":    [("thể thao", "thể dục"), ("Thể thao", "Thể dục"), ("thể chất", "thể dục")],
+        "replace":    [("Thực đơn", "Menu"), ("thực đơn", "menu")],
     },
 ]
 

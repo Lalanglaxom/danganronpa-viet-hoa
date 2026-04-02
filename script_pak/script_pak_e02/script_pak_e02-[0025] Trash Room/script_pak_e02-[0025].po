@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 4>モノクマが写るモニター…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma \n"
+"xuất hiện.\n"
+"<CLT>"
+
+#. <CLT 4>いまは校章が浮かんでいるだけだ…
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>All that's on it right now is the school crest...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hiện tại nó chỉ hiển thị huy hiệu của trường...\n"
+"<CLT>"
+
+#. これも、壊したら…罰があるのかもな…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "If I break it...Monokuma might come and punish *me*."
+msgstr ""
+"Nếu mình làm hỏng nó... Monokuma có thể sẽ đến và *trừng\n"
+"phạt* mình."
+
+#. <CLT 4>監視カメラ…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A surveillance camera...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Camera giám sát...\n"
+"<CLT>"
+
+#. <CLT 4>こんなカメラで…人が死ぬところも見てるのか…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Someone's using these cameras to watch people die...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ai đó đang dùng những chiếc camera này để giám sát xem\n"
+"người khác bỏ mạng...\n"
+"<CLT>"
+
+#. <CLT 4>ムカツクけど、放っておくしかない…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As much as it gets on my nerves, I'd better leave it\n"
+"alone.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù bực mình nhưng đành mặc kệ nó thôi.\n"
+"<CLT>"
+
+#. <CLT 4>鉄格子の開閉スイッチだ…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's the switch that raises and lowers the gate.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là công tắc để nâng và hạ cánh cổng sắt.\n"
+"<CLT>"
+
+#. <CLT 4>ボクは鍵を持ってないから、開けられない…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't have the key, so I can't activate it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình không có chìa khóa, nên không thể kích hoạt \n"
+"nó được.\n"
+"<CLT>"
+
+#. <CLT 4>床に扉がある…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a hatch on the floor...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có một chiếc cửa sập trên sàn nhà...\n"
+"<CLT>"
+
+#. <CLT 23>「ガタガタガタ！」
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>“Lạch cạch lạch cạch!”\n"
+"<CLT>"
+
+#. 開かない…
+#. 鍵が掛かってるみたいだ…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "The door won't budge. It must be locked."
+msgstr "Không mở được... Hình như bị khóa rồi."
+
+#. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だな。
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is the trash room. The dump, in other words.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là phòng chứa rác. Nói cách khác là bãi rác.\n"
+"<CLT>"
+
+#. <CLT 4>だけど、鉄格子がジャマで中に入れないか。
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But with the gate in the way, I can't actually get\n"
+"inside.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng vì cánh cổng sắt đang chắn đường nên mình không thể\n"
+"thực sự vào trong được.\n"
+"<CLT>"
+
+#. はい
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0016 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

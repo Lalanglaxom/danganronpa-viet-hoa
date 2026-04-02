@@ -16,9 +16,9 @@ from tkinter import filedialog, messagebox
 # ║                      ⚙  SETTINGS                                ║
 # ╚══════════════════════════════════════════════════════════════════╝
 
-SOFT_LIMIT: int = 24   
-HARD_LIMIT: int = 28
-MAX_CUTS:   int = 50    # Maximum line breaks (1 = 2 lines max, 2 = 3 lines max, etc.)
+SOFT_LIMIT: int = 58   
+HARD_LIMIT: int = 64
+MAX_CUTS:   int = 2    # Maximum line breaks (1 = 2 lines max, 2 = 3 lines max, etc.)
 
 _CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>|<CLT_\d+>")
 
