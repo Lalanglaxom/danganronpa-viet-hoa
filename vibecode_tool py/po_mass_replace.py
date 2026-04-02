@@ -40,13 +40,20 @@ except ImportError:
 # ╚══════════════════════════════════════════════════════════════════╝
 
 CRITERIA = [
-    # {
-    #     "label":      'Inside <CLT 4>: tớ/Tớ → tôi/Tôi',
-    #     "character":  None,
-    #     "scope":      "clt:4",
-    #     "whole_word": True,
-    #     "replace":    [("Tôi", "Mình"), ("tôi", "mình")],
-    # },
+    {
+        "label":      'General: Tớ → mình',
+        "character":  None,
+        "scope":      "clt:4",
+        "whole_word": True,
+        "replace":    [("Tớ", "Mình"), ("tớ", "mình")],
+    },
+    {
+        "label":      'MAKOTO: Tôi → tớ',
+        "character":  "MAKOTO",
+        "scope":      None,
+        "whole_word": True,
+        "replace":    [("Tôi", "Tớ"), ("tôi", "tớ")],
+    },
     # ── Add more criteria below ────────────────────────────────────
     # Whole-word, specific character, entire msgstr:
     # {
@@ -66,7 +73,7 @@ CRITERIA = [
     },
     # Substring (replaces even inside other words):
     {
-        "label":      'Fix substring example',
+        "label":      'Jack change',
         "character":  None,
         "scope":      None,
         "whole_word": False,
@@ -78,6 +85,20 @@ CRITERIA = [
         "scope":      None,
         "whole_word": False,
         "replace":    [("Đạn Hy Vọng", "Đạn Sự Thật")],
+    },
+    {
+        "label":      'Fix class trial',
+        "character":  None,
+        "scope":      None,
+        "whole_word": False,
+        "replace":    [("Lớp Xét Xử", "lớp xét xử")],
+    },
+    {
+        "label":      'Thể thao → thể dục',
+        "character":  None,
+        "scope":      None,
+        "whole_word": False,
+        "replace":    [("thể thao", "thể dục"), ("Thể thao", "Thể dục"), ("thể chất", "thể dục")],
     },
 ]
 

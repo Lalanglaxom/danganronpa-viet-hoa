@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Chắc chắn rồi!"
+
+#. <CLT 23>今回追加されますのは、
+#. <CLT><CLT 3>言弾（コトダマ）の記憶<CLT><CLT 23>でございます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Next we're going to add something called a <CLT><CLT 3>Truth\n"
+"Flashback<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Tiếp theo chúng ta sẽ thêm vào một thứ gọi là <CLT><CLT 3>Hồi tưởng Sự thật<CLT><CLT 23>.\n"
+"<CLT>"
+
+#. <CLT 23>発言セリフのウィークポイントに照準を合わせ、
+#. <CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>を長押しすると
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>If you aim at a weak spot and hold down the\n"
+"<CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu bạn nhắm vào một điểm yếu và nhấn giữ <CLT><CLT 3>%CTRL_TRIAL_SHOOT%<CLT><CLT 23>...\n"
+"<CLT>"
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...\n"
+"<CLT>"
+
+#. <CLT 23>ウィークポイントを<CLT><CLT 3>記憶<CLT><CLT 23>致します。
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>...then you'll <CLT><CLT 3>memorize<CLT><CLT 23> that weak spot.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...thì bạn sẽ <CLT><CLT 3>ghi nhớ<CLT><CLT 23> điểm yếu đó.\n"
+"<CLT>"
+
+#. <CLT 23>記憶した言葉は、１発だけ
+#. <CLT><CLT 3>言弾（コトダマ）<CLT><CLT 23>として、撃つことができます。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>This memorized phrase can only be shot once as a\n"
+"single <CLT><CLT 3>Truth Bullet<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Cụm từ đã ghi nhớ này chỉ có thể được bắn ra một lần\n"
+"dưới dạng một viên <CLT><CLT 3>Đạn Sự Thật<CLT><CLT 23> duy nhất.\n"
+"<CLT>"
+
+#. <CLT 23>記憶した言弾（コトダマ）は、撃ったり、変更すると、
+#. コトダマシリンダーからお無くなりになります。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>If you shoot or change the Truth Bullet, it will\n"
+"disappear from your Truth Cylinder.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu bạn bắn hoặc thay đổi Đạn Sự Thật, nó sẽ biến mất\n"
+"khỏi ổ đạn của bạn.\n"
+"<CLT>"
+
+#. <CLT 23>ですが、言弾（コトダマ）の記憶は、
+#. 何度でも行うことが可能となっております。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>However, you can use this flashback feature as many\n"
+"times as you want.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Tuy nhiên, bạn có thể sử dụng tính năng hồi tưởng này\n"
+"bao nhiêu lần tùy thích.\n"
+"<CLT>"
+
+#. <CLT 23>手持ちの言弾（コトダマ）の中に、<CLT><CLT 3>ウソや矛盾<CLT><CLT 23>に
+#. 対する答えが無さそうな時は…
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>If you don't seem to have the answer to a <CLT><CLT 3>lie or\n"
+"contradiction<CLT><CLT 23> in your loaded Truth Bullets...\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nếu bạn dường như không có câu trả lời cho một <CLT><CLT 3>lời nói dối hay\n"
+"mâu thuẫn<CLT><CLT 23> trong số những viên Đạn Sự Thật đang có...\n"
+"<CLT>"
+
+#. <CLT 23>記憶した言弾（コトダマ）を使って、
+#. 論破なさってください。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>...it might be wise to memorize a different weak spot\n"
+"and use that to make your case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>...thì có lẽ sẽ khôn ngoan nếu bạn ghi nhớ một điểm yếu\n"
+"khác và dùng nó để lập luận cho trường hợp của mình.\n"
+"<CLT>"
+
+#. <CLT 23>どういう時に、記憶を使えばいいか…？
+#. それはあなた様が推理なさってください。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>When's the best time to flashback? Well, you'll just\n"
+"have to use your keen wits, won't you?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Khi nào là lúc tốt nhất để hồi tưởng? Chà, bạn sẽ phải tự mình\n"
+"vận dụng trí thông minh sắc sảo thôi, phải không?\n"
+"<CLT>"
+
+#. <CLT 23>とりあえず、今回は、記憶をお使い頂かなければ、
+#. 論破できない、とだけ申しておきます。
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>In this case, though, I will say that if you don't use\n"
+"a flashback, you won't be refuting anything.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Tuy nhiên, trong trường hợp này, tôi sẽ nói rằng nếu bạn không\n"
+"dùng hồi tưởng, bạn sẽ chẳng bác bỏ được điều gì đâu.\n"
+"<CLT>"
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc may mắn và chơi vui vẻ nhé!\n"
+"<CLT>"
+
+#. <CLT 23>ノンストップ議論に<CLT><CLT 3>新要素が追加<CLT><CLT 23>されます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0015 | NARRATION"
+msgid ""
+"<CLT 23>A <CLT><CLT 3>new element has been added<CLT><CLT 23> to Nonstop Debates.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Một <CLT><CLT 3>yếu tố mới vừa được thêm vào<CLT><CLT 23> trong Tranh luận liên\n"
+"hồi. Bạn có muốn nghe thêm không?\n"
+"<CLT>"
