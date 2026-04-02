@@ -23,7 +23,7 @@ from datetime import datetime
 # ║           yield f'Entry "{work_entry["msgctxt"]}" contains badword' ║
 # ║                                                                      ║
 # ║   TIPS                                                               ║
-# ║   • level can be "ERROR", "WARN", or "INFO"                         ║
+# ║   • level can be "ERROR", "WARN", "INFO", or "STRUCT"               ║
 # ║   • Set enabled=False to temporarily disable a rule                 ║
 # ║   • copy_entry or work_entry may be None if the entry is missing    ║
 # ║     from that side — always guard with:  if work_entry is None:     ║
@@ -134,6 +134,32 @@ def check_not_copy_of_source(ctx, copy_entry, work_entry):
             f"translation is identical to source text"
         )
 
+
+
+
+# ──────────────────────────────────────────────────────────────────────
+#  RULE 5 — Line count (\n separator) mismatch between msgid and msgstr
+#  Only affects multi-line entries used in special dialogue/choice menus.
+#  The game engine reads a fixed number of \n-separated segments per
+#  entry; a mismatch desynchronises parsing and can cause a crash.
+# ──────────────────────────────────────────────────────────────────────
+@rule("line_count_match", level="STRUCT", enabled=True)
+def check_line_count_match(ctx, copy_entry, work_entry):
+    """Flags entries where msgstr has a different number of \\n-separated segments than msgid."""
+    if work_entry is None or not work_entry["msgstr"].strip():
+        return
+    if not ctx.get("has_choice_react"):
+        return
+    def count_newlines(text):
+        return text.count("\n")
+    src_n  = count_newlines(work_entry["msgid"])
+    tgt_n  = count_newlines(work_entry["msgstr"])
+    if src_n != tgt_n and src_n > 0:
+        yield (
+            f'Entry "{work_entry["msgctxt"]}" (line {work_entry["line"]}): '
+            f"msgid has {src_n} \\n separator(s) but msgstr has {tgt_n} — "
+            f"structure mismatch may cause crash in choice/dialogue menus"
+        )
 
 # ══════════════════════════════════════════════════════════════════════
 #  END OF CUSTOM RULES — engine code below, edit with care
@@ -399,8 +425,8 @@ def find_pairs(translated_dir, debug=False):
 #  REPORT
 # ─────────────────────────────────────────────
 
-LEVEL_ORDER  = {"ERROR": 0, "WARN": 1, "INFO": 2}
-LEVEL_PREFIX = {"ERROR": "  ✗", "WARN": "  !", "INFO": "  i"}
+LEVEL_ORDER  = {"ERROR": 0, "WARN": 1, "INFO": 2, "STRUCT": 3}
+LEVEL_PREFIX = {"ERROR": "  ✗", "WARN": "  !", "INFO": "  i", "STRUCT": "  ≠"}
 
 def format_issues(issues):
     lines = []
@@ -466,6 +492,7 @@ HTML_STYLE = """
   .badge-error { background: #fdecea; color: #c0392b; }
   .badge-warn  { background: #fff8e1; color: #b7860b; }
   .badge-nobackup { background: #f3e8ff; color: #6d28d9; }
+  .badge-struct { background: #f3fdf3; color: #1a7a4a; border: 1.5px solid #1a7a4a; }
   .file-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #222; }
   .file-issues { display: flex; flex-direction: column; gap: 3px; flex: 1; }
   .issue { font-size: 12px; padding: 3px 8px; border-radius: 4px;
@@ -473,6 +500,7 @@ HTML_STYLE = """
   .issue-ERROR { background: #fff5f5; border-color: #e74c3c; color: #922b21; }
   .issue-WARN  { background: #fffdf0; border-color: #f39c12; color: #7d6608; }
   .issue-INFO  { background: #f0f4ff; border-color: #5b8cff; color: #1a4db5; }
+  .issue-STRUCT { background: #f3fdf3; border-color: #2ecc71; color: #1a7a4a; }
   .issue .check-tag { font-weight: 700; margin-right: 4px; }
   .issue .detail-line { display: block; padding-left: 12px;
                         color: #555; font-family: monospace; font-size: 11px; }
@@ -538,8 +566,8 @@ def build_html(results, translated_dir, timestamp, active_rules, debug_lines):
 
         for r in rows:
             status = r["status"]
-            badge_cls = {"ok":"badge-ok","error":"badge-error","warn":"badge-warn","nobackup":"badge-nobackup"}.get(status,"badge-warn")
-            badge_txt = {"ok":"OK","error":"ERROR","warn":"WARN","nobackup":"NO BACKUP"}.get(status, status.upper())
+            badge_cls = {"ok":"badge-ok","error":"badge-error","warn":"badge-warn","nobackup":"badge-nobackup","struct":"badge-struct"}.get(status,"badge-warn")
+            badge_txt = {"ok":"OK","error":"ERROR","warn":"WARN","nobackup":"NO BACKUP","struct":"STRUCT"}.get(status, status.upper())
             issues_html = ""
             if r["issues"]:
                 for iss in r["issues"]:
@@ -819,12 +847,14 @@ def run():
                 out.append(f"    ✚ [auto-fix] Inserted {n_fixed} missing entr{'y' if n_fixed==1 else 'ies'} — re-parsing...")
                 work_header, work_entries, _ = parse_po(work_path)
 
-        ctx    = {"file": rel, "chapter": chapter_name, "segment": segment_id}
+        ctx    = {"file": rel, "chapter": chapter_name, "segment": segment_id,
+                   "has_choice_react": any("CHOICE/RE:ACT" in k for k in work_entries)}
         issues = run_builtin_checks(copy_header, copy_entries, work_header, work_entries)
         issues += run_custom_rules(copy_entries, work_entries, ctx)
 
-        n_err  = sum(1 for i in issues if i["level"] == "ERROR")
-        n_warn = sum(1 for i in issues if i["level"] == "WARN")
+        n_err    = sum(1 for i in issues if i["level"] == "ERROR")
+        n_warn   = sum(1 for i in issues if i["level"] == "WARN")
+        n_struct = sum(1 for i in issues if i["level"] == "STRUCT")
         total_errors += n_err
         total_warns  += n_warn
 
@@ -832,6 +862,8 @@ def run():
             status = "error"; tag = f"[{n_err} ERROR{'S' if n_err>1 else ''}]"; files_err += 1
         elif n_warn:
             status = "warn";  tag = f"[{n_warn} WARN{'S' if n_warn>1 else ''}]"; files_err += 1
+        elif n_struct:
+            status = "struct"; tag = f"[{n_struct} STRUCT]"; files_err += 1
         else:
             status = "ok";    tag = "[OK]"; files_ok += 1
 

@@ -16,26 +16,32 @@ msgstr ""
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Give it a shot"
 msgstr "Thử một phen"
+
 #. よし、挑戦してみるか。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Alright, let's give it a shot."
 msgstr "Được rồi, thử một phen xem sao."
+
 #. そろそろ他の場所へ行こう…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "I should probably get going..."
 msgstr "Mình có lẽ nên đi tiếp thôi..."
+
 #. 挑戦しない
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Not right now"
 msgstr "Không phải lúc này"
+
 #. また今度にしておくか…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Maybe next time..."
 msgstr "Để lần tới vậy..."
+
 #. 説明を見る
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Learn more about it"
 msgstr "Tìm hiểu thêm về nó"
+
 #. <CLT 23>あなた様は、希望ヶ峰学園の様々な場所で、
 #. 小さなメダルを手に入れることでしょう。
 #. <CLT>
@@ -48,6 +54,7 @@ msgstr ""
 "<CLT 23>Trong thời gian ở tại Đỉnh Hy Vọng, bạn sẽ tìm thấy những\n"
 "đồng xu nằm rải rác khắp trường.\n"
 "<CLT>"
+
 #. <CLT 23>これは、どこぞの王様も集めているとウワサの、
 #. <CLT><CLT 3>モノクマメダル<CLT><CLT 23>というものです。
 #. <CLT>
@@ -60,6 +67,7 @@ msgstr ""
 "<CLT 23>Những <CLT><CLT 3>Xu Monokuma<CLT><CLT 23> này là những kho báu được cả vua chúa\n"
 "lẫn những kẻ trộm coi trọng!\n"
 "<CLT>"
+
 #. <CLT 23>手に入れたモノクマメダルの枚数は、
 #. <CLT><CLT 3>手帳メニュー<CLT><CLT 23>でご確認頂けます。
 #. <CLT>
@@ -72,6 +80,7 @@ msgstr ""
 "<CLT 23>Bạn có thể sử dụng <CLT><CLT 3>Menu Sổ tay<CLT><CLT 23> để xem mình hiện đang\n"
 "có bao nhiêu Xu Monokuma.\n"
 "<CLT>"
+
 #. <CLT 23>こちらの機械では、そのモノクマメダルを使って、
 #. <CLT><CLT 3>景品<CLT><CLT 23>を獲得する事ができます。
 #. <CLT>
@@ -84,6 +93,7 @@ msgstr ""
 "<CLT 23>Và nếu bạn cho xu vào chiếc máy này ở đây, sẽ có cơ hội\n"
 "nhận được một <CLT><CLT 3>phần thưởng<CLT><CLT 23> đấy!\n"
 "<CLT>"
+
 #. <CLT 23>モノクマメダルをたくさん投入されますと、
 #. あなた様がお持ちでない景品が出やすくなります。
 #. <CLT>
@@ -93,8 +103,10 @@ msgid ""
 "getting something new.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn càng dùng nhiều xu, cơ hội nhận được vật phẩm mới càng cao.\n"
+"<CLT 23>Bạn càng dùng nhiều xu, cơ hội nhận được vật \n"
+"phẩm mới càng cao.\n"
 "<CLT>"
+
 #. <CLT 23>獲得した景品は、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>の
 #. <CLT><CLT 3>“プレゼント”<CLT><CLT 23>でご確認頂けます。
 #. <CLT>
@@ -107,6 +119,7 @@ msgstr ""
 "<CLT 23>Hãy kiểm tra mục <CLT><CLT 3>Quà tặng<CLT><CLT 23> trong <CLT><CLT 3>Menu Sổ tay<CLT><CLT 23> để xem lại\n"
 "các phần thưởng của mình.\n"
 "<CLT>"
+
 #. <CLT 23><CLT><CLT 3>モノモノマシーン<CLT><CLT 23>に挑戦なさいますか？
 #. <CLT>
 msgctxt "0013 | NARRATION"

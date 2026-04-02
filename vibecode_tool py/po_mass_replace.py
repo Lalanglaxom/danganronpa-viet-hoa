@@ -47,12 +47,19 @@ CRITERIA = [
     #     "whole_word": True,
     #     "replace":    [("Tớ", "Mình"), ("tớ", "mình")],
     # },
+    # {
+    #     "label":      'General: Tôi → mình',
+    #     "character":  None,
+    #     "scope":      "clt:4",
+    #     "whole_word": True,
+    #     "replace":    [("Tôi", "Mình"), ("tôi", "mình")],
+    # },
     {
         "label":      'General: Tôi → mình',
         "character":  None,
-        "scope":      "clt:4",
-        "whole_word": True,
-        "replace":    [("Tôi", "Mình"), ("tôi", "mình")],
+        "scope":      None,
+        "whole_word": None,
+        "replace":    [("<CLT>\"", "<CLT>")],
     },
     # {
     #     "label":      'MAKOTO: Tôi → tớ',

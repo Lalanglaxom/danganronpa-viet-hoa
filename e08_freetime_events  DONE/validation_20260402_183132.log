@@ -1,0 +1,2021 @@
+========================================================================
+  PO VALIDATION REPORT
+  Generated : 2026-04-02 18:31:32
+  Folder    : D:/Danganronpa1Viet/danganronpa-viet-hoa/e08_freetime_events  DONE
+  Rules     : built-in + clt_tag_integrity, not_copy_of_source, line_count_match
+========================================================================
+Selected path: D:/Danganronpa1Viet/danganronpa-viet-hoa/e08_freetime_events  DONE
+Top-level folders: ['e08_000_000 monokuma', 'e08_000_001', 'e08_000_002 trans', 'e08_000_003', 'e08_000_004', 'e08_000_005', 'e08_000_006 tráns', 'e08_000_007', 'e08_000_008', 'e08_000_009', 'e08_000_010', 'e08_000_011', 'e08_000_012', 'e08_000_013', 'e08_000_014', 'e08_000_015', 'e08_000_016 tran', 'e08_001_000 taka', 'e08_001_001', 'e08_001_002', 'e08_001_003', 'e08_001_004', 'e08_001_005', 'e08_001_006', 'e08_001_007', 'e08_001_008', 'e08_001_009', 'e08_001_010', 'e08_001_011', 'e08_001_012 tran', 'e08_001_013', 'e08_001_016', 'e08_001_017', 'e08_001_020 trans', 'e08_001_021', 'e08_001_022', 'e08_001_023', 'e08_001_024', 'e08_001_030 jap', 'e08_001_031', 'e08_001_032', 'e08_001_033', 'e08_001_034 jap', 'e08_001_050 trans', 'e08_002_000 byakuya', 'e08_002_001', 'e08_002_002', 'e08_002_003', 'e08_002_004', 'e08_002_005', 'e08_002_006', 'e08_002_007', 'e08_002_008', 'e08_002_009', 'e08_002_010 trans', 'e08_002_011', 'e08_002_012', 'e08_002_013', 'e08_002_014', 'e08_002_020', 'e08_002_021', 'e08_002_022', 'e08_002_023', 'e08_002_024', 'e08_002_050 trans', 'e08_003_000 mondo', 'e08_003_001', 'e08_003_002', 'e08_003_003', 'e08_003_004', 'e08_003_005', 'e08_003_006', 'e08_003_020', 'e08_003_021', 'e08_003_022', 'e08_003_023', 'e08_003_050 trans', 'e08_004_000 leon', 'e08_004_001', 'e08_004_002', 'e08_004_003', 'e08_004_020', 'e08_004_021', 'e08_004_022', 'e08_004_050', 'e08_005_000 hifumi', 'e08_005_001', 'e08_005_002', 'e08_005_003', 'e08_005_004', 'e08_005_005', 'e08_005_006', 'e08_005_007', 'e08_005_020', 'e08_005_021', 'e08_005_022', 'e08_005_023', 'e08_005_024', 'e08_005_050', 'e08_006_000 Yasuhiro', 'e08_006_001', 'e08_006_002', 'e08_006_003', 'e08_006_004', 'e08_006_005', 'e08_006_006', 'e08_006_007', 'e08_006_008', 'e08_006_009', 'e08_006_010', 'e08_006_020', 'e08_006_021', 'e08_006_022', 'e08_006_023', 'e08_006_024', 'e08_006_025', 'e08_006_050 trans', 'e08_007_000 sayaka', 'e08_007_001', 'e08_007_002', 'e08_007_003', 'e08_007_020', 'e08_007_021', 'e08_007_050 translate', 'e08_008_000 kyoko', 'e08_008_001', 'e08_008_002', 'e08_008_003', 'e08_008_004', 'e08_008_005', 'e08_008_006', 'e08_008_007', 'e08_008_008', 'e08_008_020', 'e08_008_021', 'e08_008_022', 'e08_008_023', 'e08_008_050 trans', 'e08_009_000 aoi', 'e08_009_001', 'e08_009_002', 'e08_009_003', 'e08_009_004 trans', 'e08_009_005', 'e08_009_006', 'e08_009_007', 'e08_009_008', 'e08_009_009', 'e08_009_016', 'e08_009_020', 'e08_009_021 trans', 'e08_009_022', 'e08_009_023', 'e08_009_024', 'e08_009_025', 'e08_009_050', 'e08_010_000 toko', 'e08_010_001', 'e08_010_002', 'e08_010_003', 'e08_010_004', 'e08_010_005', 'e08_010_006', 'e08_010_007', 'e08_010_008', 'e08_010_009', 'e08_010_010', 'e08_010_016 trans', 'e08_010_020', 'e08_010_021', 'e08_010_022', 'e08_010_023', 'e08_010_024', 'e08_010_025', 'e08_010_026', 'e08_010_027', 'e08_010_050 trans', 'e08_011_000 sakura', 'e08_011_001', 'e08_011_002', 'e08_011_003', 'e08_011_004', 'e08_011_005', 'e08_011_006', 'e08_011_007', 'e08_011_008', 'e08_011_009', 'e08_011_010', 'e08_011_016', 'e08_011_020', 'e08_011_021', 'e08_011_022', 'e08_011_023', 'e08_011_024', 'e08_011_050 trans', 'e08_012_000 celeste', 'e08_012_001', 'e08_012_002', 'e08_012_003', 'e08_012_004', 'e08_012_005', 'e08_012_006', 'e08_012_020', 'e08_012_021', 'e08_012_022', 'e08_012_023', 'e08_012_024', 'e08_012_025', 'e08_012_050', 'e08_013_000 mukuro', 'e08_013_001', 'e08_013_002', 'e08_013_003', 'e08_013_004', 'e08_013_020', 'e08_013_021', 'e08_013_022', 'e08_013_050 trans', 'e08_014_000 chihiro', 'e08_014_001', 'e08_014_002', 'e08_014_003', 'e08_014_004', 'e08_014_005', 'e08_014_006', 'e08_014_007', 'e08_014_016', 'e08_014_020', 'e08_014_021', 'e08_014_022', 'e08_014_023', 'e08_014_050', 'e08_015_000 linh tinh', 'e08_016_000', 'e08_020_000']
+
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_000 monokuma
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_000
+
+  [OK]             e08_000_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_001
+
+  [OK]             e08_000_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_002 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_002
+
+  [OK]             e08_000_002
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_003
+
+  [OK]             e08_000_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_004
+
+  [OK]             e08_000_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_005
+
+  [OK]             e08_000_005
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_006 tráns
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_006
+
+  [OK]             e08_000_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_007
+
+  [OK]             e08_000_007
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_008
+
+  [OK]             e08_000_008
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_009
+
+  [OK]             e08_000_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_010
+
+  [OK]             e08_000_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_011
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_011
+
+  [OK]             e08_000_011
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_012
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_012
+
+  [1 WARN]         e08_000_012
+    ! [untranslated] 12 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | MONOKUMA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_013
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_013
+
+  [OK]             e08_000_013
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_014
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_014
+
+  [OK]             e08_000_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_015
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_015
+
+  [OK]             e08_000_015
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_000_016 tran
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_000_016
+
+  [OK]             e08_000_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_000 taka
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_000
+
+  [OK]             e08_001_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_001
+
+  [OK]             e08_001_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_002
+
+  [OK]             e08_001_002
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_003
+
+  [OK]             e08_001_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_004
+
+  [OK]             e08_001_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_005
+
+  [OK]             e08_001_005
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_006
+
+  [OK]             e08_001_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_007
+
+  [OK]             e08_001_007
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_008
+
+  [OK]             e08_001_008
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_009
+
+  [OK]             e08_001_009
+    i [not_copy_of_source] Entry "0001 | KIYOTAKA ISHIMARU" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002 | KIYOTAKA ISHIMARU" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | KIYOTAKA ISHIMARU" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | KIYOTAKA ISHIMARU" (line 53): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | KIYOTAKA ISHIMARU" (line 58): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_010
+
+  [OK]             e08_001_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_011
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_011
+
+  [OK]             e08_001_011
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_012 tran
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_012
+
+  [OK]             e08_001_012
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_013
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_013
+
+  [OK]             e08_001_013
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_016
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_016
+
+  [OK]             e08_001_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_017
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_017
+
+  [OK]             e08_001_017
+    i [not_copy_of_source] Entry "0003 | KIYOTAKA ISHIMARU" (line 34): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_020 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_020
+
+  [1 WARN]         e08_001_020
+    ! [clt_tag_integrity] Entry "0071 | NARRATION" (line 572): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_021
+
+  [1 WARN]         e08_001_021
+    ! [clt_tag_integrity] Entry "0060 | NARRATION" (line 479): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_022
+
+  [1 WARN]         e08_001_022
+    ! [clt_tag_integrity] Entry "0068 | NARRATION" (line 582): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0016 | KIYOTAKA ISHIMARU" (line 129): translation is identical to source text
+    i [not_copy_of_source] Entry "0027 | KIYOTAKA ISHIMARU" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0051 | KIYOTAKA ISHIMARU" (line 416): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_023
+
+  [1 WARN]         e08_001_023
+    ! [clt_tag_integrity] Entry "0080 | NARRATION" (line 676): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_024
+
+  [1 WARN]         e08_001_024
+    ! [clt_tag_integrity] Entry "0014 | NARRATION" (line 113): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0005 | KIYOTAKA ISHIMARU" (line 46): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_030 jap
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_030
+
+  [1 WARN]         e08_001_030
+    ! [untranslated] 47 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | KIYOTAKA ISHIMARU, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | KIYOTAKA ISHIMARU, 0011 | KIYOTAKA ISHIMARU, 0012 | MAKOTO NAEGI, 0013 | KIYOTAKA ISHIMARU, 0014 | KIYOTAKA ISHIMARU, 0015 | KIYOTAKA ISHIMARU, 0016 | KIYOTAKA ISHIMARU, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | KIYOTAKA ISHIMARU, 0021 | KIYOTAKA ISHIMARU, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | KIYOTAKA ISHIMARU, 0025 | KIYOTAKA ISHIMARU, 0026 | KIYOTAKA ISHIMARU, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | KIYOTAKA ISHIMARU, 0030 | KIYOTAKA ISHIMARU, 0031 | KIYOTAKA ISHIMARU, 0032 | MAKOTO NAEGI, 0033 | KIYOTAKA ISHIMARU, 0034 | MAKOTO NAEGI, 0035 | KIYOTAKA ISHIMARU, 0036 | KIYOTAKA ISHIMARU, 0037 | MAKOTO NAEGI, 0038 | KIYOTAKA ISHIMARU, 0039 | KIYOTAKA ISHIMARU, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | ERROR1, 0047 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_031
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_031
+
+  [1 WARN]         e08_001_031
+    ! [untranslated] 50 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | KIYOTAKA ISHIMARU, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | KIYOTAKA ISHIMARU, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | KIYOTAKA ISHIMARU, 0018 | KIYOTAKA ISHIMARU, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | MAKOTO NAEGI, 0022 | CHOICE/RE:ACT, 0023 | MAKOTO NAEGI, 0024 | KIYOTAKA ISHIMARU, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | MAKOTO NAEGI, 0028 | KIYOTAKA ISHIMARU, 0029 | KIYOTAKA ISHIMARU, 0030 | MAKOTO NAEGI, 0031 | CHOICE/RE:ACT, 0032 | KIYOTAKA ISHIMARU, 0033 | KIYOTAKA ISHIMARU, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | KIYOTAKA ISHIMARU, 0037 | KIYOTAKA ISHIMARU, 0038 | KIYOTAKA ISHIMARU, 0039 | KIYOTAKA ISHIMARU, 0040 | KIYOTAKA ISHIMARU, 0041 | KIYOTAKA ISHIMARU, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | KIYOTAKA ISHIMARU, 0047 | KIYOTAKA ISHIMARU, 0048 | KIYOTAKA ISHIMARU, 0049 | ERROR1, 0050 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_032
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_032
+
+  [1 WARN]         e08_001_032
+    ! [untranslated] 40 untranslated: 0001 | MAKOTO NAEGI, 0002 | KIYOTAKA ISHIMARU, 0003 | MAKOTO NAEGI, 0004 | KIYOTAKA ISHIMARU, 0005 | MAKOTO NAEGI, 0006 | KIYOTAKA ISHIMARU, 0007 | KIYOTAKA ISHIMARU, 0008 | MAKOTO NAEGI, 0009 | KIYOTAKA ISHIMARU, 0010 | KIYOTAKA ISHIMARU, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | KIYOTAKA ISHIMARU, 0014 | MAKOTO NAEGI, 0015 | KIYOTAKA ISHIMARU, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | KIYOTAKA ISHIMARU, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | MAKOTO NAEGI, 0022 | KIYOTAKA ISHIMARU, 0023 | KIYOTAKA ISHIMARU, 0024 | MAKOTO NAEGI, 0025 | KIYOTAKA ISHIMARU, 0026 | KIYOTAKA ISHIMARU, 0027 | MAKOTO NAEGI, 0028 | KIYOTAKA ISHIMARU, 0029 | KIYOTAKA ISHIMARU, 0030 | KIYOTAKA ISHIMARU, 0031 | MAKOTO NAEGI, 0032 | KIYOTAKA ISHIMARU, 0033 | KIYOTAKA ISHIMARU, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | ERROR1, 0040 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_033
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_033
+
+  [1 WARN]         e08_001_033
+    ! [untranslated] 66 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | KIYOTAKA ISHIMARU, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | KIYOTAKA ISHIMARU, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | KIYOTAKA ISHIMARU, 0010 | MAKOTO NAEGI, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | MAKOTO NAEGI, 0014 | KIYOTAKA ISHIMARU, 0015 | KIYOTAKA ISHIMARU, 0016 | KIYOTAKA ISHIMARU, 0017 | MAKOTO NAEGI, 0018 | CHOICE/RE:ACT, 0019 | MAKOTO NAEGI, 0020 | KIYOTAKA ISHIMARU, 0021 | KIYOTAKA ISHIMARU, 0022 | MAKOTO NAEGI, 0023 | CHOICE/RE:ACT, 0024 | MAKOTO NAEGI, 0025 | KIYOTAKA ISHIMARU, 0026 | MAKOTO NAEGI, 0027 | CHOICE/RE:ACT, 0028 | KIYOTAKA ISHIMARU, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | KIYOTAKA ISHIMARU, 0032 | KIYOTAKA ISHIMARU, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | KIYOTAKA ISHIMARU, 0036 | KIYOTAKA ISHIMARU, 0037 | KIYOTAKA ISHIMARU, 0038 | MAKOTO NAEGI, 0039 | KIYOTAKA ISHIMARU, 0040 | KIYOTAKA ISHIMARU, 0041 | KIYOTAKA ISHIMARU, 0042 | KIYOTAKA ISHIMARU, 0043 | KIYOTAKA ISHIMARU, 0044 | KIYOTAKA ISHIMARU, 0045 | KIYOTAKA ISHIMARU, 0046 | KIYOTAKA ISHIMARU, 0047 | KIYOTAKA ISHIMARU, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | KIYOTAKA ISHIMARU, 0051 | KIYOTAKA ISHIMARU, 0052 | KIYOTAKA ISHIMARU, 0053 | KIYOTAKA ISHIMARU, 0054 | KIYOTAKA ISHIMARU, 0055 | MAKOTO NAEGI, 0056 | KIYOTAKA ISHIMARU, 0057 | KIYOTAKA ISHIMARU, 0058 | KIYOTAKA ISHIMARU, 0059 | KIYOTAKA ISHIMARU, 0060 | KIYOTAKA ISHIMARU, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | ERROR1, 0066 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_034 jap
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_034
+
+  [1 WARN]         e08_001_034
+    ! [untranslated] 71 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | KIYOTAKA ISHIMARU, 0003 | KIYOTAKA ISHIMARU, 0004 | KIYOTAKA ISHIMARU, 0005 | KIYOTAKA ISHIMARU, 0006 | MAKOTO NAEGI, 0007 | KIYOTAKA ISHIMARU, 0008 | KIYOTAKA ISHIMARU, 0009 | KIYOTAKA ISHIMARU, 0010 | MAKOTO NAEGI, 0011 | KIYOTAKA ISHIMARU, 0012 | KIYOTAKA ISHIMARU, 0013 | MAKOTO NAEGI, 0014 | KIYOTAKA ISHIMARU, 0015 | MAKOTO NAEGI, 0016 | KIYOTAKA ISHIMARU, 0017 | KIYOTAKA ISHIMARU, 0018 | KIYOTAKA ISHIMARU, 0019 | KIYOTAKA ISHIMARU, 0020 | KIYOTAKA ISHIMARU, 0021 | KIYOTAKA ISHIMARU, 0022 | KIYOTAKA ISHIMARU, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | KIYOTAKA ISHIMARU, 0028 | MAKOTO NAEGI, 0029 | KIYOTAKA ISHIMARU, 0030 | KIYOTAKA ISHIMARU, 0031 | KIYOTAKA ISHIMARU, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | KIYOTAKA ISHIMARU, 0036 | KIYOTAKA ISHIMARU, 0037 | KIYOTAKA ISHIMARU, 0038 | KIYOTAKA ISHIMARU, 0039 | KIYOTAKA ISHIMARU, 0040 | MAKOTO NAEGI, 0041 | KIYOTAKA ISHIMARU, 0042 | MAKOTO NAEGI, 0043 | KIYOTAKA ISHIMARU, 0044 | KIYOTAKA ISHIMARU, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | KIYOTAKA ISHIMARU, 0048 | KIYOTAKA ISHIMARU, 0049 | KIYOTAKA ISHIMARU, 0050 | KIYOTAKA ISHIMARU, 0051 | KIYOTAKA ISHIMARU, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | KIYOTAKA ISHIMARU, 0056 | KIYOTAKA ISHIMARU, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | KIYOTAKA ISHIMARU, 0061 | KIYOTAKA ISHIMARU, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | ERROR1, 0069 | ERROR1, 0070 | ERROR1, 0071 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_001_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_001_050
+
+  [1 WARN]         e08_001_050
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 127): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_000 byakuya
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_000
+
+  [OK]             e08_002_000
+    i [not_copy_of_source] Entry "0003 | BYAKUYA TOGAMI" (line 36): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_001
+
+  [1 WARN]         e08_002_001
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 100): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_002
+
+  [1 WARN]         e08_002_002
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 92): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_003
+
+  [1 WARN]         e08_002_003
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 90): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0006 | BYAKUYA TOGAMI" (line 49): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | BYAKUYA TOGAMI" (line 54): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_004
+
+  [1 WARN]         e08_002_004
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 104): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_005
+
+  [1 WARN]         e08_002_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 102): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_006
+
+  [1 WARN]         e08_002_006
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 100): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_007
+
+  [1 WARN]         e08_002_007
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 105): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_008
+
+  [1 WARN]         e08_002_008
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 93): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_009
+
+  [1 WARN]         e08_002_009
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 103): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_010 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_010
+
+  [1 WARN]         e08_002_010
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 99): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_011
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_011
+
+  [OK]             e08_002_011
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_012
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_012
+
+  [OK]             e08_002_012
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_013
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_013
+
+  [OK]             e08_002_013
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_014
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_014
+
+  [OK]             e08_002_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_020
+
+  [OK]             e08_002_020
+    i [not_copy_of_source] Entry "0001 | BYAKUYA TOGAMI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0025 | MAKOTO NAEGI" (line 203): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_021
+
+  [1 WARN]         e08_002_021
+    ! [clt_tag_integrity] Entry "0052 | NARRATION" (line 440): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0024 | BYAKUYA TOGAMI" (line 196): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_022
+
+  [1 WARN]         e08_002_022
+    ! [clt_tag_integrity] Entry "0046 | NARRATION" (line 396): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_023
+
+  [1 WARN]         e08_002_023
+    ! [clt_tag_integrity] Entry "0068 | NARRATION" (line 542): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0037 | BYAKUYA TOGAMI" (line 296): translation is identical to source text
+    i [not_copy_of_source] Entry "0047 | BYAKUYA TOGAMI" (line 381): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_024
+
+  [1 WARN]         e08_002_024
+    ! [clt_tag_integrity] Entry "0072 | NARRATION" (line 645): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | BYAKUYA TOGAMI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | BYAKUYA TOGAMI" (line 185): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_002_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_002_050
+
+  [OK]             e08_002_050
+    i [not_copy_of_source] Entry "0005 | BYAKUYA TOGAMI" (line 60): translation is identical to source text
+    i [not_copy_of_source] Entry "0006 | BYAKUYA TOGAMI" (line 65): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_000 mondo
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_000
+
+  [OK]             e08_003_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_001
+
+  [OK]             e08_003_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_002
+
+  [OK]             e08_003_002
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_003
+
+  [OK]             e08_003_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_004
+
+  [OK]             e08_003_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_005
+
+  [OK]             e08_003_005
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_006
+
+  [OK]             e08_003_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_020
+
+  [2 WARNS]        e08_003_020
+    ! [clt_tag_integrity] Entry "0041 | MONDO OOWADA" (line 332): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0063 | NARRATION" (line 528): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_021
+
+  [1 WARN]         e08_003_021
+    ! [clt_tag_integrity] Entry "0057 | NARRATION" (line 458): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0041 | MAKOTO NAEGI" (line 311): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_022
+
+  [1 WARN]         e08_003_022
+    ! [clt_tag_integrity] Entry "0052 | NARRATION" (line 383): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_023
+
+  [1 WARN]         e08_003_023
+    ! [clt_tag_integrity] Entry "0057 | NARRATION" (line 439): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0008 | MONDO OOWADA" (line 57): translation is identical to source text
+    i [not_copy_of_source] Entry "0034 | MAKOTO NAEGI" (line 250): translation is identical to source text
+    i [not_copy_of_source] Entry "0040 | MONDO OOWADA" (line 299): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_003_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_003_050
+
+  [OK]             e08_003_050
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_000 leon
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_000
+
+  [OK]             e08_004_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_001
+
+  [OK]             e08_004_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_002
+
+  [OK]             e08_004_002
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_003
+
+  [OK]             e08_004_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_020
+
+  [1 WARN]         e08_004_020
+    ! [clt_tag_integrity] Entry "0031 | NARRATION" (line 219): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 179): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_021
+
+  [1 WARN]         e08_004_021
+    ! [clt_tag_integrity] Entry "0051 | NARRATION" (line 435): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0011 | CHOICE/RE:ACT" (line 95): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | CHOICE/RE:ACT" (line 140): translation is identical to source text
+    i [not_copy_of_source] Entry "0049 | MAKOTO NAEGI" (line 416): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_022
+
+  [1 WARN]         e08_004_022
+    ! [clt_tag_integrity] Entry "0045 | NARRATION" (line 367): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0009 | LEON KUWATA" (line 80): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | LEON KUWATA" (line 105): translation is identical to source text
+    i [not_copy_of_source] Entry "0028 | MAKOTO NAEGI" (line 216): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_004_050
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_004_050
+
+  [OK]             e08_004_050
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_000 hifumi
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_000
+
+  [1 WARN]         e08_005_000
+    ! [source_changed] "0028 | HIFUMI YAMADA" (line 237): English source text changed
+           Copy   : "Don't want it!"
+           Working: 'Hổng thèm!'
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_001
+
+  [OK]             e08_005_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_002
+
+  [OK]             e08_005_002
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_003
+
+  [OK]             e08_005_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_004
+
+  [OK]             e08_005_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_005
+
+  [OK]             e08_005_005
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_006
+
+  [OK]             e08_005_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_007
+
+  [OK]             e08_005_007
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_020
+
+  [1 WARN]         e08_005_020
+    ! [clt_tag_integrity] Entry "0050 | NARRATION" (line 414): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0025 | CHOICE/RE:ACT" (line 215): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_021
+
+  [1 WARN]         e08_005_021
+    ! [clt_tag_integrity] Entry "0060 | NARRATION" (line 507): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0033 | CHOICE/RE:ACT" (line 285): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_022
+
+  [1 WARN]         e08_005_022
+    ! [clt_tag_integrity] Entry "0044 | NARRATION" (line 317): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_023
+
+  [1 WARN]         e08_005_023
+    ! [clt_tag_integrity] Entry "0074 | NARRATION" (line 619): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_024
+
+  [1 WARN]         e08_005_024
+    ! [clt_tag_integrity] Entry "0049 | NARRATION" (line 420): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0040 | MAKOTO NAEGI" (line 332): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_005_050
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_005_050
+
+  [1 WARN]         e08_005_050
+    ! [clt_tag_integrity] Entry "0026 | NARRATION" (line 243): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_000 Yasuhiro
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_000
+
+  [OK]             e08_006_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_001
+
+  [1 WARN]         e08_006_001
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_002
+
+  [1 WARN]         e08_006_002
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 95): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_003
+
+  [1 WARN]         e08_006_003
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 97): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_004
+
+  [1 WARN]         e08_006_004
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 94): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_005
+
+  [1 WARN]         e08_006_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 102): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_006
+
+  [1 WARN]         e08_006_006
+    ! [clt_tag_integrity] Entry "0010 | NARRATION" (line 88): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_007
+
+  [1 WARN]         e08_006_007
+    ! [clt_tag_integrity] Entry "0010 | NARRATION" (line 86): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_008
+
+  [1 WARN]         e08_006_008
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 106): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_009
+
+  [1 WARN]         e08_006_009
+    ! [clt_tag_integrity] Entry "0015 | NARRATION" (line 123): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_010
+
+  [1 WARN]         e08_006_010
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 116): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_020
+
+  [1 WARN]         e08_006_020
+    ! [clt_tag_integrity] Entry "0038 | NARRATION" (line 314): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_021
+
+  [1 WARN]         e08_006_021
+    ! [clt_tag_integrity] Entry "0055 | NARRATION" (line 430): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_022
+
+  [1 WARN]         e08_006_022
+    ! [clt_tag_integrity] Entry "0039 | NARRATION" (line 300): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_023
+
+  [2 WARNS]        e08_006_023
+    ! [source_changed] "0033 | YASUHIRO HAGAKURE" (line 266): English source text changed
+           Copy   : "So now you gotta keep your promise! You don't wanna\\nknow what that thing does to oath breakers..."
+           Working: 'Bù lại, ông phải giữ lời hứa tham gia hội thảo đó nha! Nếu thất hứa là dính lời nguyền của quả cầu pha lê đáng sợ lắm đó'
+    ! [clt_tag_integrity] Entry "0038 | NARRATION" (line 308): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_024
+
+  [1 WARN]         e08_006_024
+    ! [clt_tag_integrity] Entry "0059 | NARRATION" (line 469): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0020 | CHOICE/RE:ACT" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | CHOICE/RE:ACT" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | CHOICE/RE:ACT" (line 214): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_025
+
+  [1 WARN]         e08_006_025
+    ! [clt_tag_integrity] Entry "0071 | NARRATION" (line 574): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0045 | MAKOTO NAEGI" (line 368): translation is identical to source text
+    i [not_copy_of_source] Entry "0047 | MAKOTO NAEGI" (line 378): translation is identical to source text
+    i [not_copy_of_source] Entry "0049 | MAKOTO NAEGI" (line 393): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_006_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_006_050
+
+  [2 WARNS]        e08_006_050
+    ! [source_changed] "0008 | MAKOTO NAEGI" (line 80): English source text changed
+           Copy   : "<CLT 4>Hiro spent a lot of time talking about stuff that\\ndidn't make any sense to me...\\n<CLT>"
+           Working: "<CLT 4>Hiro spent a lot of time talking about stuff that\\ndidn't make any see to me...\\n<CLT>"
+    ! [clt_tag_integrity] Entry "0014 | NARRATION" (line 134): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_000 sayaka
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_000
+
+  [OK]             e08_007_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_001
+
+  [1 WARN]         e08_007_001
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 87): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_002
+
+  [1 WARN]         e08_007_002
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 93): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_003
+
+  [1 WARN]         e08_007_003
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 90): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_020
+
+  [1 WARN]         e08_007_020
+    ! [clt_tag_integrity] Entry "0077 | NARRATION" (line 625): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 82): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_021
+
+  [2 WARNS]        e08_007_021
+    ! [clt_tag_integrity] Entry "0049 | SAYAKA MAIZONO" (line 374): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0063 | NARRATION" (line 476): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0024 | SAYAKA MAIZONO" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0061 | SAYAKA MAIZONO" (line 457): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_007_050 translate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_007_050
+
+  [1 WARN]         e08_007_050
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_000 kyoko
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_000
+
+  [OK]             e08_008_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_001
+
+  [1 WARN]         e08_008_001
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 98): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_002
+
+  [1 WARN]         e08_008_002
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_003
+
+  [1 WARN]         e08_008_003
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 92): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_004
+
+  [1 WARN]         e08_008_004
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 93): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_005
+
+  [1 WARN]         e08_008_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_006
+
+  [1 WARN]         e08_008_006
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 103): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_007
+
+  [1 WARN]         e08_008_007
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 95): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_008
+
+  [1 WARN]         e08_008_008
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 111): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_020
+
+  [1 WARN]         e08_008_020
+    ! [clt_tag_integrity] Entry "0029 | NARRATION" (line 221): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_021
+
+  [2 WARNS]        e08_008_021
+    ! [source_changed] "0031 | KYOUKO KIRIGIRI" (line 232): English source text changed
+           Copy   : 'Why are you making that face?'
+           Working: 'Sao thế? Cái mặt cậu nhìn lạ vậy...'
+    ! [clt_tag_integrity] Entry "0066 | NARRATION" (line 492): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | KYOUKO KIRIGIRI" (line 353): translation is identical to source text
+    i [not_copy_of_source] Entry "0052 | KYOUKO KIRIGIRI" (line 376): translation is identical to source text
+    i [not_copy_of_source] Entry "0057 | KYOUKO KIRIGIRI" (line 414): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_022
+
+  [1 WARN]         e08_008_022
+    ! [clt_tag_integrity] Entry "0045 | NARRATION" (line 336): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | KYOUKO KIRIGIRI" (line 26): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_023
+
+  [1 WARN]         e08_008_023
+    ! [clt_tag_integrity] Entry "0075 | NARRATION" (line 563): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | KYOUKO KIRIGIRI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | KYOUKO KIRIGIRI" (line 78): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | KYOUKO KIRIGIRI" (line 350): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_008_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_008_050
+
+  [1 WARN]         e08_008_050
+    ! [clt_tag_integrity] Entry "0016 | NARRATION" (line 141): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_000 aoi
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_000
+
+  [1 WARN]         e08_009_000
+    ! [source_changed] "0015 | MAKOTO NAEGI" (line 124): English source text changed
+           Copy   : '<CLT 4>Seeing Hina so pleased with something I gave her makes\\nme happy!\\n<CLT>'
+           Working: '<CLT 4>Seeing Hina so pleased with something I gave her makes\\nmean happy!\\n<CLT>'
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_001
+
+  [1 WARN]         e08_009_001
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 94): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_002
+
+  [1 WARN]         e08_009_002
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_003
+
+  [1 WARN]         e08_009_003
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 103): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_004 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_004
+
+  [1 WARN]         e08_009_004
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 114): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_005
+
+  [1 WARN]         e08_009_005
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 107): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_006
+
+  [1 WARN]         e08_009_006
+    ! [clt_tag_integrity] Entry "0014 | NARRATION" (line 108): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_007
+
+  [1 WARN]         e08_009_007
+    ! [clt_tag_integrity] Entry "0016 | NARRATION" (line 137): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_008
+
+  [1 WARN]         e08_009_008
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 96): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | AOI ASAHINA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | AOI ASAHINA" (line 57): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_009
+
+  [1 WARN]         e08_009_009
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 101): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0008 | AOI ASAHINA" (line 62): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_016
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_016
+
+  [OK]             e08_009_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_020
+
+  [2 WARNS]        e08_009_020
+    ! [source_changed] "0011 | AOI ASAHINA" (line 76): English source text changed
+           Copy   : 'Really...?'
+           Working: 'Thiệt không đó...?'
+    ! [clt_tag_integrity] Entry "0054 | NARRATION" (line 398): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0011 | AOI ASAHINA" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0037 | CHOICE/RE:ACT" (line 259): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_021 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_021
+
+  [1 WARN]         e08_009_021
+    ! [clt_tag_integrity] Entry "0071 | NARRATION" (line 572): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | AOI ASAHINA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | AOI ASAHINA" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0017 | AOI ASAHINA" (line 133): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_022
+
+  [1 WARN]         e08_009_022
+    ! [clt_tag_integrity] Entry "0047 | NARRATION" (line 357): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_023
+
+  [2 WARNS]        e08_009_023
+    ! [source_changed] "0032 | AOI ASAHINA" (line 243): English source text changed
+           Copy   : "Then don't! If I don't do this now, when am I ever\\ngonna get another chance...!?"
+           Working: "Then don't! If I don't do this now, when am I ever\\nget another chance...!?"
+    ! [clt_tag_integrity] Entry "0035 | NARRATION" (line 272): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_024
+
+  [1 WARN]         e08_009_024
+    ! [clt_tag_integrity] Entry "0038 | NARRATION" (line 283): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0002 | AOI ASAHINA" (line 21): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_025
+
+  [1 WARN]         e08_009_025
+    ! [clt_tag_integrity] Entry "0103 | NARRATION" (line 722): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0007 | AOI ASAHINA" (line 47): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 98): translation is identical to source text
+    i [not_copy_of_source] Entry "0031 | AOI ASAHINA" (line 199): translation is identical to source text
+    i [not_copy_of_source] Entry "0051 | MAKOTO NAEGI" (line 352): translation is identical to source text
+    i [not_copy_of_source] Entry "0057 | AOI ASAHINA" (line 383): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_009_050
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_009_050
+
+  [1 WARN]         e08_009_050
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_000 toko
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_000
+
+  [OK]             e08_010_000
+    i [not_copy_of_source] Entry "0009 | TOUKO FUKAWA" (line 79): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_001
+
+  [1 WARN]         e08_010_001
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 102): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_002
+
+  [1 WARN]         e08_010_002
+    ! [untranslated] 12 untranslated: 0001 | TOUKO FUKAWA, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | TOUKO FUKAWA, 0007 | TOUKO FUKAWA, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_003
+
+  [1 WARN]         e08_010_003
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_004
+
+  [1 WARN]         e08_010_004
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 88): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_005
+
+  [1 WARN]         e08_010_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 98): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_006
+
+  [1 WARN]         e08_010_006
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 104): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_007
+
+  [1 WARN]         e08_010_007
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_008
+
+  [1 WARN]         e08_010_008
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 93): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_009
+
+  [1 WARN]         e08_010_009
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 108): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_010
+
+  [1 WARN]         e08_010_010
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 91): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_016 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_016
+
+  [OK]             e08_010_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_020
+
+  [1 WARN]         e08_010_020
+    ! [clt_tag_integrity] Entry "0059 | NARRATION" (line 460): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | TOUKO FUKAWA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002 | TOUKO FUKAWA" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0004 | TOUKO FUKAWA" (line 38): translation is identical to source text
+    i [not_copy_of_source] Entry "0006 | TOUKO FUKAWA" (line 53): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | MAKOTO NAEGI" (line 127): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_021
+
+  [1 WARN]         e08_010_021
+    ! [clt_tag_integrity] Entry "0030 | NARRATION" (line 254): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | TOUKO FUKAWA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | TOUKO FUKAWA" (line 33): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_022
+
+  [4 WARNS]        e08_010_022
+    ! [source_changed] "0038 | MAKOTO NAEGI" (line 292): English source text changed
+           Copy   : "You're right. That was stupid of me..."
+           Working: 'Xin lỗi, tớ lại lỡ lời...'
+    ! [source_changed] "0061 | TOUKO FUKAWA" (line 478): English source text changed
+           Copy   : 'Ngggh!'
+           Working: 'Nnggh!'
+    ! [clt_tag_integrity] Entry "0036 | TOUKO FUKAWA" (line 276): CLT tag mismatch — extra: <CLT 3>, <CLT>
+    ! [clt_tag_integrity] Entry "0079 | NARRATION" (line 618): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_023
+
+  [2 WARNS]        e08_010_023
+    ! [source_changed] "0012 | TOUKO FUKAWA" (line 93): English source text changed
+           Copy   : 'This has never h-happened before...'
+           Working: 'Chuyện này... mới là l-lần đầu tiên...'
+    ! [clt_tag_integrity] Entry "0059 | NARRATION" (line 480): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0001 | TOUKO FUKAWA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002 | TOUKO FUKAWA" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | TOUKO FUKAWA" (line 93): translation is identical to source text
+    i [not_copy_of_source] Entry "0025 | TOUKO FUKAWA" (line 200): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_024
+
+  [1 WARN]         e08_010_024
+    ! [clt_tag_integrity] Entry "0077 | NARRATION" (line 641): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0030 | CHOICE/RE:ACT" (line 266): translation is identical to source text
+    i [not_copy_of_source] Entry "0058 | TOUKO FUKAWA" (line 477): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_025
+
+  [1 WARN]         e08_010_025
+    ! [clt_tag_integrity] Entry "0024 | NARRATION" (line 180): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 49): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_026
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_026
+
+  [1 WARN]         e08_010_026
+    ! [clt_tag_integrity] Entry "0048 | NARRATION" (line 398): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0047 | MAKOTO NAEGI" (line 391): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_027
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_027
+
+  [1 WARN]         e08_010_027
+    ! [clt_tag_integrity] Entry "0031 | NARRATION" (line 265): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_010_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_010_050
+
+  [2 WARNS]        e08_010_050
+    ! [clt_tag_integrity] Entry "0022 | NARRATION" (line 190): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0026 | NARRATION" (line 216): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_000 sakura
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_000
+
+  [OK]             e08_011_000
+    i [not_copy_of_source] Entry "0016 | SAKURA OOGAMI" (line 122): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_001
+
+  [1 WARN]         e08_011_001
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 97): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_002
+
+  [3 WARNS]        e08_011_002
+    ! [source_changed] "0004 | MAKOTO NAEGI" (line 33): English source text changed
+           Copy   : '<CLT 4>Hmm... Should I talk to Sakura for a while?\\n<CLT>'
+           Working: '<CLT 4>Hmm... Should I tôilk to Sakura for a while?\\n<CLT>'
+    ! [source_changed] "0006 | SAKURA OOGAMI" (line 53): English source text changed
+           Copy   : 'Would you like to get something to drink and talk for\\na bit?'
+           Working: 'Would you like to get something to drink and tôilk for\\na bit?'
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_003
+
+  [1 WARN]         e08_011_003
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 100): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0002 | SAKURA OOGAMI" (line 21): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_004
+
+  [2 WARNS]        e08_011_004
+    ! [source_changed] "0004 | MAKOTO NAEGI" (line 33): English source text changed
+           Copy   : '<CLT 4>Hmm... Should I talk to Sakura for a while?\\n<CLT>'
+           Working: '<CLT 4>Hmm... Should I tôilk to Sakura for a while?\\n<CLT>'
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 99): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_005
+
+  [1 WARN]         e08_011_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 102): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_006
+
+  [1 WARN]         e08_011_006
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 109): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_007
+
+  [1 WARN]         e08_011_007
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_008
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_008
+
+  [OK]             e08_011_008
+    i [not_copy_of_source] Entry "0001 | SAKURA OOGAMI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_009
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_009
+
+  [OK]             e08_011_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_010
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_010
+
+  [OK]             e08_011_010
+    i [not_copy_of_source] Entry "0001 | SAKURA OOGAMI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_016
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_016
+
+  [OK]             e08_011_016
+    i [not_copy_of_source] Entry "0013 | SAKURA OOGAMI" (line 101): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_020
+
+  [1 WARN]         e08_011_020
+    ! [clt_tag_integrity] Entry "0048 | NARRATION" (line 409): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0026 | CHOICE/RE:ACT" (line 226): translation is identical to source text
+    i [not_copy_of_source] Entry "0043 | SAKURA OOGAMI" (line 358): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_021
+
+  [2 WARNS]        e08_011_021
+    ! [clt_tag_integrity] Entry "0024 | SAKURA OOGAMI" (line 189): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0047 | NARRATION" (line 373): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0005 | SAKURA OOGAMI" (line 44): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | SAKURA OOGAMI" (line 134): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | SAKURA OOGAMI" (line 183): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_022
+
+  [1 WARN]         e08_011_022
+    ! [clt_tag_integrity] Entry "0065 | NARRATION" (line 532): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0011 | SAKURA OOGAMI" (line 90): translation is identical to source text
+    i [not_copy_of_source] Entry "0030 | SAKURA OOGAMI" (line 244): translation is identical to source text
+    i [not_copy_of_source] Entry "0045 | SAKURA OOGAMI" (line 361): translation is identical to source text
+    i [not_copy_of_source] Entry "0055 | SAKURA OOGAMI" (line 442): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_023
+
+  [1 WARN]         e08_011_023
+    ! [clt_tag_integrity] Entry "0038 | NARRATION" (line 285): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_024
+
+  [1 WARN]         e08_011_024
+    ! [clt_tag_integrity] Entry "0077 | NARRATION" (line 578): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0026 | SAKURA OOGAMI" (line 192): translation is identical to source text
+    i [not_copy_of_source] Entry "0055 | MAKOTO NAEGI" (line 405): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_011_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_011_050
+
+  [1 WARN]         e08_011_050
+    ! [clt_tag_integrity] Entry "0017 | NARRATION" (line 154): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_000 celeste
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_000
+
+  [3 WARNS]        e08_012_000
+    ! [source_changed] "0010 | CELES" (line 95): English source text changed
+           Copy   : '...Do you understand the sense of gratitude I am\\ntrying to convey to you?'
+           Working: '...Do you understôind the sense of gratitude I am\\ntrying to convey to you?'
+    ! [source_changed] "0018 | MAKOTO NAEGI" (line 162): English source text changed
+           Copy   : '<CLT 4>Seeing Celeste so pleased with something I gave her\\nmakes me happy!\\n<CLT>'
+           Working: '<CLT 4>Seeing Sakura so pleased with something I gave her\\nmakes me happy!\\n<CLT>'
+    ! [source_changed] "0020 | CELES" (line 184): English source text changed
+           Copy   : 'Could you perhaps bring me something a little more\\nbefitting someone of my standing?'
+           Working: 'Could you perhaps bring me something a little more\\nbefitting someone of my stôinding?'
+    i [not_copy_of_source] Entry "0009 | CELES" (line 89): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | CELES" (line 104): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | CELES" (line 214): translation is identical to source text
+    i [not_copy_of_source] Entry "0025 | CELES" (line 225): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_001
+
+  [1 WARN]         e08_012_001
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 96): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_002
+
+  [1 WARN]         e08_012_002
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 89): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_003
+
+  [2 WARNS]        e08_012_003
+    ! [source_changed] "0007 | CELES" (line 67): English source text changed
+           Copy   : 'But...fine. I will allow you to entertain me for a\\nwhile.'
+           Working: 'But...fine. I will allow you to entertôiin me for a\\nwhile.'
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 107): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_004
+
+  [2 WARNS]        e08_012_004
+    ! [source_changed] "0006 | CELES" (line 54): English source text changed
+           Copy   : "Ah, but don't misunderstand. I have no affection for\\nyou on a personal level."
+           Working: "Ah, but don't misunderstôind. I have no affection for\\nyou on a personal level."
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 94): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_005
+
+  [1 WARN]         e08_012_005
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 102): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_006
+
+  [1 WARN]         e08_012_006
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 101): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_020
+
+  [1 WARN]         e08_012_020
+    ! [clt_tag_integrity] Entry "0026 | NARRATION" (line 192): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 173): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_021
+
+  [1 WARN]         e08_012_021
+    ! [clt_tag_integrity] Entry "0017 | NARRATION" (line 141): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 122): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_022
+
+  [1 WARN]         e08_012_022
+    ! [clt_tag_integrity] Entry "0051 | NARRATION" (line 400): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0019 | CHOICE/RE:ACT" (line 155): translation is identical to source text
+    i [not_copy_of_source] Entry "0020 | CHOICE/RE:ACT" (line 160): translation is identical to source text
+    i [not_copy_of_source] Entry "0022 | CELES" (line 170): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0027 | CHOICE/RE:ACT" (line 206): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_023
+
+  [1 WARN]         e08_012_023
+    ! [clt_tag_integrity] Entry "0027 | NARRATION" (line 195): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_024
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_024
+
+  [1 WARN]         e08_012_024
+    ! [clt_tag_integrity] Entry "0027 | NARRATION" (line 237): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 90): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 201): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_025
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_025
+
+  [4 WARNS]        e08_012_025
+    ! [source_changed] "0023 | MAKOTO NAEGI" (line 173): English source text changed
+           Copy   : 'What kind of habit is that...?'
+           Working: 'Cái đó mà cũng gọi là thói quen hả...?'
+    ! [clt_tag_integrity] Entry "0041 | MAKOTO NAEGI" (line 319): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0047 | MAKOTO NAEGI" (line 367): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0049 | NARRATION" (line 389): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 50): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 173): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | CELES" (line 345): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_012_050
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_012_050
+
+  [1 WARN]         e08_012_050
+    ! [clt_tag_integrity] Entry "0016 | NARRATION" (line 137): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_000 mukuro
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_000
+
+  [OK]             e08_013_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_001
+
+  [1 WARN]         e08_013_001
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 95): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_002
+
+  [1 WARN]         e08_013_002
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 105): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_003
+
+  [1 WARN]         e08_013_003
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 85): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_004
+
+  [1 WARN]         e08_013_004
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 85): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_020
+
+  [2 WARNS]        e08_013_020
+    ! [clt_tag_integrity] Entry "0041 | JUNKO ENOSHIMA (MUKURO)" (line 346): CLT tag mismatch — extra: <CLT 3>, <CLT>
+    ! [clt_tag_integrity] Entry "0048 | NARRATION" (line 410): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 205): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_021
+
+  [2 WARNS]        e08_013_021
+    ! [clt_tag_integrity] Entry "0019 | JUNKO ENOSHIMA (MUKURO)" (line 146): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0051 | NARRATION" (line 397): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0030 | NARRATION" (line 244): translation is identical to source text
+    i [not_copy_of_source] Entry "0033 | JUNKO ENOSHIMA (MUKURO)" (line 265): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_022
+
+  [1 WARN]         e08_013_022
+    ! [clt_tag_integrity] Entry "0046 | NARRATION" (line 372): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0010 | JUNKO ENOSHIMA (MUKURO)" (line 75): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_013_050 trans
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_013_050
+
+  [1 WARN]         e08_013_050
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 100): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_000 chihiro
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_000
+
+  [OK]             e08_014_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_001
+
+  [1 WARN]         e08_014_001
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 94): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_002
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_002
+
+  [1 WARN]         e08_014_002
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 103): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_003
+
+  [1 WARN]         e08_014_003
+    ! [clt_tag_integrity] Entry "0010 | NARRATION" (line 86): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_004
+
+  [1 WARN]         e08_014_004
+    ! [clt_tag_integrity] Entry "0011 | NARRATION" (line 86): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_005
+
+  [1 WARN]         e08_014_005
+    ! [clt_tag_integrity] Entry "0010 | NARRATION" (line 80): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_006
+
+  [1 WARN]         e08_014_006
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 100): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0002 | CHIHIRO FUJISAKI" (line 21): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_007
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_007
+
+  [1 WARN]         e08_014_007
+    ! [clt_tag_integrity] Entry "0012 | NARRATION" (line 91): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_016
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_016
+
+  [OK]             e08_014_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_020
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_020
+
+  [1 WARN]         e08_014_020
+    ! [clt_tag_integrity] Entry "0057 | NARRATION" (line 415): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_021
+
+  [2 WARNS]        e08_014_021
+    ! [clt_tag_integrity] Entry "0013 | MAKOTO NAEGI" (line 109): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0076 | NARRATION" (line 624): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0017 | CHIHIRO FUJISAKI" (line 141): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_022
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_022
+
+  [1 WARN]         e08_014_022
+    ! [clt_tag_integrity] Entry "0075 | NARRATION" (line 580): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_023
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_023
+
+  [2 WARNS]        e08_014_023
+    ! [clt_tag_integrity] Entry "0094 | CHIHIRO FUJISAKI" (line 684): CLT tag mismatch — 
+    ! [clt_tag_integrity] Entry "0095 | NARRATION" (line 696): CLT tag mismatch — 
+    i [not_copy_of_source] Entry "0010 | CHIHIRO FUJISAKI" (line 88): translation is identical to source text
+    i [not_copy_of_source] Entry "0034 | CHIHIRO FUJISAKI" (line 240): translation is identical to source text
+    i [not_copy_of_source] Entry "0040 | CHOICE/RE:ACT" (line 277): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | CHOICE/RE:ACT" (line 282): translation is identical to source text
+    i [not_copy_of_source] Entry "0050 | CHOICE/RE:ACT" (line 343): translation is identical to source text
+    i [not_copy_of_source] Entry "0052 | CHIHIRO FUJISAKI" (line 356): translation is identical to source text
+    i [not_copy_of_source] Entry "0064 | CHIHIRO FUJISAKI" (line 445): translation is identical to source text
+    i [not_copy_of_source] Entry "0072 | CHIHIRO FUJISAKI" (line 505): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_014_050
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_014_050
+
+  [1 WARN]         e08_014_050
+    ! [clt_tag_integrity] Entry "0013 | NARRATION" (line 115): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_015_000 linh tinh
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_015_000
+
+  [1 WARN]         e08_015_000
+    ! [clt_tag_integrity] Entry "0007 | NARRATION" (line 80): CLT tag mismatch — 
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_016_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_016_000
+
+  [OK]             e08_016_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e08_020_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] Header reformatted in e08_020_000
+
+  [OK]             e08_020_000
+
+========================================================================
+  SUMMARY
+========================================================================
+  Files OK          : 75
+  Files with issues : 160
+  Total ERRORs      : 0
+  Total WARNings    : 187
+========================================================================
