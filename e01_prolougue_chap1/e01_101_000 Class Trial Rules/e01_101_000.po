@@ -29,7 +29,7 @@ msgid ""
 "If you can figure out \"whodunnit\" then only they will\n"
 "receive punishment. But if you pick the wrong one..."
 msgstr ""
-"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị \n"
+"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị\n"
 "nhận hình phạt. Nhưng nếu các em chọn nhầm người..."
 
 #. クロ以外の全員がおしおきされ、
@@ -39,15 +39,13 @@ msgid ""
 "...then I'll punish everyone *besides* the blackened,\n"
 "and the one that deceived everyone else will graduate!"
 msgstr ""
-"...thì ta sẽ trừng phạt tất cả mọi người *ngoại trừ* kẻ thủ ác, \n"
-"và kẻ đã lừa dối tất cả sẽ được tốt nghiệp!"
+"...thì ta sẽ trừng phạt tất cả mọi người *ngoại trừ* kẻ\n"
+"thủ ác, và kẻ đã lừa dối tất cả sẽ được tốt nghiệp!"
 
 #. 本当に…この中に犯人がいるんだよな？
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "And the killer really is one of us, right?"
-msgstr ""
-"Và hung thủ thực sự là một người trong chúng ta, \n"
-"đúng không?"
+msgstr "Và hung thủ thực sự là một người trong chúng ta, đúng không?"
 
 #. 当然です。
 msgctxt "0005 | MONOKUMA"
@@ -61,7 +59,7 @@ msgid ""
 "Okay then...everyone close your eyes, and whoever did\n"
 "it, raise your hand!"
 msgstr ""
-"Được rồi... tất cả hãy nhắm mắt lại, và ai đã làm việc đó, \n"
+"Được rồi... tất cả hãy nhắm mắt lại, và ai đã làm việc đó,\n"
 "hãy giơ tay lên!"
 
 #. アホか、挙げる訳ねーだろ…
@@ -78,8 +76,8 @@ msgid ""
 "Before we move on and start the trial, can I ask a\n"
 "question real quick?"
 msgstr ""
-"Trước khi bắt đầu buổi xét xử, tôi có thể hỏi nhanh một câu \n"
-"được không?"
+"Trước khi bắt đầu buổi xét xử, tôi có thể hỏi nhanh một\n"
+"câu được không?"
 
 #. あれって…どういう意味？
 msgctxt "0009 | KYOUKO KIRIGIRI"
@@ -93,7 +91,7 @@ msgid ""
 "I'd feel awful if they got left out just because they\n"
 "died. Friendship penetrates even death's barrier!"
 msgstr ""
-"Nếu chỉ vì họ đã chết mà bị ra rìa thì tội nghiệp lắm phải \n"
+"Nếu chỉ vì họ đã chết mà bị ra rìa thì tội nghiệp lắm phải\n"
 "không? Tình bạn có thể chọc lủng cả rào cản sinh tử đấy!"
 
 #. せいしが…飛び…超える！？
@@ -113,7 +111,7 @@ msgid ""
 "There were only fifteen of us to begin with, so why\n"
 "are there sixteen seats?"
 msgstr ""
-"Chúng ta vốn chỉ có mười lăm người, vậy tại sao lại có đến \n"
+"Chúng ta vốn chỉ có mười lăm người, vậy tại sao lại có đến\n"
 "mười sáu chiếc ghế?"
 
 #. …深い意味はないよ。
@@ -123,8 +121,8 @@ msgid ""
 "Oh, no reason. It's just that our little courtroom\n"
 "here can technically fit up to sixteen people."
 msgstr ""
-"À, không có ẩn ý gì đâu. Chỉ là phòng xét xử này có thể chứa \n"
-"tối đa mười sáu người thôi."
+"À, không có ẩn ý gì đâu. Chỉ là phòng xét xử này có thể\n"
+"chứa tối đa mười sáu người thôi."
 
 #. さてと、前置きはこれぐらいにして…
 #. そろそろ始めよっか！
@@ -133,7 +131,7 @@ msgid ""
 "Okay, that about does it for the preamble. Get ready\n"
 "to get started!"
 msgstr ""
-"Thôi, phần giới thiệu thế là đủ rồi. Chuẩn bị để bắt đầu \n"
+"Thôi, phần giới thiệu thế là đủ rồi. Chuẩn bị để bắt đầu\n"
 "thôi nào!"
 
 #. まずは、事件のまとめからだね！
@@ -152,8 +150,7 @@ msgid ""
 "the killer is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sắp bắt đầu rồi—cuộc tranh luận để tìm ra \n"
-"kẻ sát nhân...\n"
+"<CLT 4>Sắp bắt đầu rồi—cuộc tranh luận để tìm ra kẻ sát nhân...\n"
 "<CLT>"
 
 #. <CLT 4>何か気付いた事があったら、
@@ -165,8 +162,8 @@ msgid ""
 "ready to speak up about everything.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bất cứ điều gì tôi tìm thấy hay nhận ra... tôi phải \n"
-"sẵn sàng để nói về tất cả.\n"
+"<CLT 4>Bất cứ điều gì tôi tìm thấy hay nhận ra... tôi phải sẵn\n"
+"sàng để nói về tất cả.\n"
 "<CLT>"
 
 #. <CLT 4>ボクだけじゃない…
@@ -178,6 +175,6 @@ msgid ""
 "on the line!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bởi vì chuyện này không chỉ là về tôi. Mạng sống \n"
-"của mọi người đều đang bị đe dọa!\n"
+"<CLT 4>Bởi vì chuyện này không chỉ là về tôi. Mạng sống của mọi\n"
+"người đều đang bị đe dọa!\n"
 "<CLT>"

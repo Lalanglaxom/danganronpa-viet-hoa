@@ -25,8 +25,8 @@ msgid ""
 "Hmph. I bet y-you were afraid you would be discovered\n"
 "as th-the murderer you are..."
 msgstr ""
-"Hừ. Tôi cá là c-cậu đang sợ vì sắp bị vạch trần\n"
-"rằng c-cậu chính là kẻ sát nhân..."
+"Hừ. Tôi cá là c-cậu đang sợ vì sắp bị vạch trần rằng c-cậu\n"
+"chính là kẻ sát nhân..."
 
 #. 決め付けは良くないぞ！　
 #. 学級裁判まで待ちたまえ！
@@ -35,16 +35,14 @@ msgid ""
 "Let's not jump to conclusions just yet! Save that for\n"
 "the class trial!"
 msgstr ""
-"Đừng vội kết luận như vậy chứ! Hãy để dành việc đó cho\n"
-"lớp xét xử đi!"
+"Đừng vội kết luận như vậy chứ! Hãy để dành việc đó cho lớp\n"
+"xét xử đi!"
 
 #. そこで、苗木くんの犯行の一部始終を
 #. 明らかにするのだ！
 msgctxt "0004 | KIYOTAKA ISHIMARU"
 msgid "There we can all reveal the details of Makoto's crime!"
-msgstr ""
-"Ở đó chúng ta sẽ làm sáng tỏ mọi chi tiết về tội ác của \n"
-"Makoto!"
+msgstr "Ở đó chúng ta sẽ làm sáng tỏ mọi chi tiết về tội ác của Makoto!"
 
 #. <CLT 4>結局…犯人だと思われてるんだな…
 #. だけど…
@@ -54,7 +52,8 @@ msgid ""
 "<CLT 4>So they really are convinced I did it. But...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Rốt cuộc... mọi người vẫn tin chắc là tôi làm chuyện đó. Nhưng mà...\n"
+"<CLT 4>Rốt cuộc... mọi người vẫn tin chắc là tôi làm chuyện đó.\n"
+"Nhưng mà...\n"
 "<CLT>"
 
 #. <CLT 4>だけど、ボクが犯人じゃないって事は…
@@ -66,8 +65,7 @@ msgid ""
 "well...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi không phải hung thủ. Sayaka và tôi đều biết \n"
-"quá rõ rồi...\n"
+"<CLT 4>Tôi không phải hung thủ. Sayaka và tôi đều biết quá rõ rồi...\n"
 "<CLT>"
 
 #. <CLT 4>…だったら、真犯人は誰なんだ？
@@ -113,8 +111,8 @@ msgid ""
 "Please board the elevator in front of you, which will\n"
 "transport you to the courtroom..."
 msgstr ""
-"Mời các em bước vào thang máy phía trước mặt, nó sẽ\n"
-"đưa các em đến phòng xử án..."
+"Mời các em bước vào thang máy phía trước mặt, nó sẽ đưa\n"
+"các em đến phòng xử án..."
 
 #. オマエラの…運命を決める裁判場にね……
 msgctxt "0012 | MONOKUMA"
@@ -133,9 +131,7 @@ msgctxt "0014 | KIYOTAKA ISHIMARU"
 msgid ""
 "Relax! I haven't decided 100% that you're the culprit\n"
 "just yet!"
-msgstr ""
-"Yên tâm đi! Tôi vẫn chưa khẳng định 100% cậu là thủ \n"
-"phạm đâu!"
+msgstr "Yên tâm đi! Tôi vẫn chưa khẳng định 100% cậu là thủ phạm đâu!"
 
 #. <CLT 4>でも、犯人だとは思ってるんだな…
 #. <CLT>
@@ -144,17 +140,14 @@ msgid ""
 "<CLT 4>Maybe, but you're obviously leaning that way...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có thể vậy, nhưng rõ ràng là cậu đang nghiêng về \n"
-"phía đó rồi...\n"
+"<CLT 4>Có thể vậy, nhưng rõ ràng là cậu đang nghiêng về phía đó rồi...\n"
 "<CLT>"
 
 #. さて…いよいよだな…
 #. 覚悟はいいのか？
 msgctxt "0016 | BYAKUYA TOGAMI"
 msgid "Well then...the time has finally come. Are you ready?"
-msgstr ""
-"Vậy là... thời khắc đó cuối cùng cũng tới. Cậu đã sẵn \n"
-"sàng chưa?"
+msgstr "Vậy là... thời khắc đó cuối cùng cũng tới. Cậu đã sẵn sàng chưa?"
 
 #. 裁判場だと？
 #. んなもんまで、ご丁寧に用意してやがって…
@@ -163,8 +156,8 @@ msgid ""
 "So whoever stuck us here even took the time to set up\n"
 "a goddamn courtroom, huh?"
 msgstr ""
-"Thế là thằng nhốt chúng ta vào đây còn tốn công chuẩn \n"
-"bị cả một cái phòng xử án chết tiệt nữa hả?"
+"Thế là thằng nhốt chúng ta vào đây còn tốn công chuẩn bị\n"
+"cả một cái phòng xử án chết tiệt nữa hả?"
 
 #. まァ、オレはやる事やったし、
 #. オメーらに任すわ！
@@ -193,8 +186,8 @@ msgid ""
 "We're all here to bear witness to Mr. Naegi's final\n"
 "curtain call."
 msgstr ""
-"Tất cả chúng ta ở đây để chứng kiến màn hạ màn\n"
-"cuối cùng của cậu Naegi."
+"Tất cả chúng ta ở đây để chứng kiến màn hạ màn cuối cùng\n"
+"của cậu Naegi."
 
 #. まいったべ…
 #. 本当に学級裁判なんてやるんだな…
@@ -203,15 +196,13 @@ msgid ""
 "Damn...we really gotta go through with this class\n"
 "trial thing, huh?"
 msgstr ""
-"Tệ rồi đây... chúng ta thật sự phải trải qua cái vụ\n"
-"lớp xét xử này sao?"
+"Tệ rồi đây... chúng ta thật sự phải trải qua cái vụ lớp\n"
+"xét xử này sao?"
 
 #. 苗木っち、自白するなら今の内だべ？
 msgctxt "0022 | YASUHIRO HAGAKURE"
 msgid "If you wanna confess, I guess now's the time to do it."
-msgstr ""
-"Nếu cậu muốn thú tội thì tớ đoán giờ là lúc thích \n"
-"hợp đấy."
+msgstr "Nếu cậu muốn thú tội thì tớ đoán giờ là lúc thích hợp đấy."
 
 #. <CLT 4>だから、ボクじゃないんだよ…！
 #. <CLT>
@@ -240,8 +231,8 @@ msgid ""
 "I can't help but wonder what whoever killed Sayaka is\n"
 "feeling right now..."
 msgstr ""
-"Tui cứ thắc mắc không biết kẻ đã giết Sayaka đang\n"
-"cảm thấy thế nào ngay lúc này..."
+"Tui cứ thắc mắc không biết kẻ đã giết Sayaka đang cảm thấy\n"
+"thế nào ngay lúc này..."
 
 #. 殺しておいて…その態度…
 #. た、大したものね…
@@ -250,7 +241,7 @@ msgid ""
 "Being s-so insistent, even though you obviously\n"
 "k-killed her... Very i-impressive..."
 msgstr ""
-"Giết người xong mà vẫn khăng khăng n-như vậy... Thật sự \n"
+"Giết người xong mà vẫn khăng khăng n-như vậy... Thật sự\n"
 "rất ấ-ấn tượng đó..."
 
 #. ここでためらっても仕方あるまい…
@@ -260,8 +251,8 @@ msgid ""
 "There's no point in standing around here. Settle your\n"
 "resolve and step into the future."
 msgstr ""
-"Đứng thẩn thờ ở đây cũng chẳng ích gì. Hãy chuẩn bị\n"
-"tâm lý và bước tiếp đi."
+"Đứng thẩn thờ ở đây cũng chẳng ích gì. Hãy chuẩn bị tâm lý\n"
+"và bước tiếp đi."
 
 #. どうでした？
 #. 無実を証明出来そうな証拠は見つかりまして？
@@ -270,8 +261,8 @@ msgid ""
 "Well? Did you find anything that might actually prove\n"
 "your innocence?"
 msgstr ""
-"Sao rồi? Cậu đã tìm thấy bất cứ thứ gì có thể thực sự chứng \n"
-"minh sự vô tội của mình chưa?"
+"Sao rồi? Cậu đã tìm thấy bất cứ thứ gì có thể thực sự\n"
+"chứng minh sự vô tội của mình chưa?"
 
 #. <CLT 4>………………
 #. <CLT>
@@ -290,8 +281,8 @@ msgid ""
 "Sorry... In the end, I wasn't able to do any looking\n"
 "around or anything..."
 msgstr ""
-"Xin lỗi cậu... Cuối cùng, tớ chẳng thể đi điều tra\n"
-"hay làm được gì cả..."
+"Xin lỗi cậu... Cuối cùng, tớ chẳng thể đi điều tra hay làm\n"
+"được gì cả..."
 
 #. 舞園さんは…こんな風に犯人を暴く事…
 #. 望んでるのかな…？
@@ -300,7 +291,7 @@ msgid ""
 "Is this...really how Sayaka would want us to find out\n"
 "who killed her...?"
 msgstr ""
-"Liệu đây... có thật sự là cách mà Sayaka muốn chúng ta tìm \n"
+"Liệu đây... có thật sự là cách mà Sayaka muốn chúng ta tìm\n"
 "ra kẻ đã giết cậu ấy không...?"
 
 #. <CLT 4>今はこんなモニターを気にしている場合じゃない…
@@ -312,8 +303,8 @@ msgid ""
 "concentrate on what's about to happen...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Lúc này mình không thể bận tâm đến cái màn hình \n"
-"được. Mình cần phải tập trung vào những gì sắp xảy ra...\n"
+"<CLT 4>Lúc này mình không thể bận tâm đến cái màn hình được. Mình\n"
+"cần phải tập trung vào những gì sắp xảy ra...\n"
 "<CLT>"
 
 #. <CLT 4>監視カメラ…
@@ -333,8 +324,8 @@ msgid ""
 "<CLT 4>I can't waste time on this right now...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể lãng phí thời gian vào việc này ngay \n"
-"lúc này được!\n"
+"<CLT 4>Mình không thể lãng phí thời gian vào việc này ngay lúc\n"
+"này được!\n"
 "<CLT>"
 
 #. <CLT 4>このエレベーターに…
@@ -346,8 +337,8 @@ msgid ""
 "elevator...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ mình không còn lựa chọn nào khác ngoài việc \n"
-"bước vào cái thang máy này...\n"
+"<CLT 4>Có vẻ mình không còn lựa chọn nào khác ngoài việc bước vào\n"
+"cái thang máy này...\n"
 "<CLT>"
 
 #. では、行くとするぞ…
@@ -402,8 +393,7 @@ msgid ""
 "<CLT 4>I need to uncover the truth of Sayaka's death...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải vạch trần sự thật về cái chết \n"
-"của Sayaka...\n"
+"<CLT 4>Mình cần phải vạch trần sự thật về cái chết của Sayaka...\n"
 "<CLT>"
 
 #. <CLT 4>言われなくても…そうするつもりだ…
@@ -413,8 +403,7 @@ msgid ""
 "<CLT 4>I didn't need someone else to tell me to do that.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không cần ai phải nhắc... mình cũng định làm như \n"
-"vậy rồi.\n"
+"<CLT 4>Không cần ai phải nhắc... mình cũng định làm như vậy rồi.\n"
 "<CLT>"
 
 #. 舞園さんの為にも…
@@ -447,8 +436,8 @@ msgid ""
 "elevator.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Tôi quay người, đôi chân run rẩy vì căng thẳng, \n"
-"hướng về phía thang máy.\n"
+"<CLT 4>...Tôi quay người, đôi chân run rẩy vì căng thẳng, hướng\n"
+"về phía thang máy.\n"
 "<CLT>"
 
 #. <CLT 4>１歩１歩進むごとに、
@@ -460,8 +449,8 @@ msgid ""
 "to race faster and faster.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ mỗi bước tiến lên, tôi có thể cảm thấy nhịp tim \n"
-"mình bắt đầu đập nhanh hơn.\n"
+"<CLT 4>Cứ mỗi bước tiến lên, tôi có thể cảm thấy nhịp tim mình\n"
+"bắt đầu đập nhanh hơn.\n"
 "<CLT>"
 
 #. <CLT 4>すでに全員が乗り込んだエレベーター…
@@ -473,8 +462,8 @@ msgid ""
 "finally stepped on...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi người đều đã ở trong thang máy. Khi tôi\n"
-"cuối cùng cũng bước vào...\n"
+"<CLT 4>Mọi người đều đã ở trong thang máy. Khi tôi cuối cùng cũng\n"
+"bước vào...\n"
 "<CLT>"
 
 #. <CLT 4>扉は閉じ…
@@ -497,8 +486,8 @@ msgid ""
 "toward the school's basement.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái hộp sắt hạ xuống cùng những âm thanh lộc cộc \n"
-"chói tai hướng về phía tầng hầm của ngôi trường.\n"
+"<CLT 4>Cái hộp sắt hạ xuống cùng những âm thanh lộc cộc chói tai\n"
+"hướng về phía tầng hầm của ngôi trường.\n"
 "<CLT>"
 
 #. 死刑を待つ囚人の気分って、こんな感じなのかな…
@@ -507,8 +496,8 @@ msgid ""
 "I wonder if this is how a death row inmate feels when\n"
 "his time finally comes..."
 msgstr ""
-"Tớ tự hỏi liệu đây có phải cảm giác của một tử tù trước khi\n"
-"thời gian của họ đến..."
+"Tớ tự hỏi liệu đây có phải cảm giác của một tử tù trước\n"
+"khi thời gian của họ đến..."
 
 #. それを言うなら、
 #. “判決を待つ被告人”の気分じゃありません？
@@ -529,8 +518,8 @@ msgid ""
 "us further and further into the bowels of the school.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bất chấp nỗi lo âu chung của chúng tôi, cái thang máy \n"
-"cứ thế hạ xuống sâu hơn nữa vào lòng của ngôi trường.\n"
+"<CLT 4>Bất chấp nỗi lo âu chung của chúng tôi, cái thang máy cứ\n"
+"thế hạ xuống sâu hơn nữa vào lòng của ngôi trường.\n"
 "<CLT>"
 
 #. <CLT 4>もう逃げる事は…出来ない…
@@ -540,6 +529,5 @@ msgid ""
 "<CLT 4>There's no escape for any of us...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không một ai trong chúng ta có thể trốn thoát \n"
-"được nữa...\n"
+"<CLT 4>Không một ai trong chúng ta có thể trốn thoát được nữa...\n"
 "<CLT>"

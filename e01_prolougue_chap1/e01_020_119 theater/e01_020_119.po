@@ -19,7 +19,7 @@ msgid ""
 "Imagine you're all in a big spaceship, in the middle\n"
 "of an intergalactic adventure."
 msgstr ""
-"Nơi này chính là bên trong một con tàu vũ trụ. Các bạn \n"
+"Nơi này chính là bên trong một con tàu vũ trụ. Các bạn\n"
 "đang ở giữa một cuộc hành trình du hành không gian đấy."
 
 #. ノアの方舟をご存知ですか？
@@ -29,8 +29,8 @@ msgid ""
 "You've heard of Noah's Ark, right? We're sort of like\n"
 "that. We've set sail and left Earth behind!"
 msgstr ""
-"Các bạn biết về tàu Noah rồi đúng không? Chúng ta cũng \n"
-"kiểu như vậy đó. Ta đã đi và bỏ lại Trái Đất ở phía sau rồi!"
+"Các bạn biết về tàu Noah rồi đúng không? Chúng ta cũng kiểu như\n"
+"vậy đó. Ta đã đi và bỏ lại Trái Đất ở phía sau rồi!"
 
 #. 頭のおかしい隣人や、警察の横暴、
 #. 酔っ払い運転や放火魔の危険性はありません。
@@ -39,7 +39,7 @@ msgid ""
 "Here you don't have to worry about crazy neighbors,\n"
 "corrupt cops, drunk drivers, or pyromaniacs!"
 msgstr ""
-"Ở đây các bạn chẳng cần phải lo về hàng xóm điên khùng, \n"
+"Ở đây các bạn chẳng cần phải lo về hàng xóm điên khùng,\n"
 "công an biến chất, mấy thằng bợm rượu lái xe cả!"
 
 #. 排気ガスや、大気汚染が引き起こすぜんそくの心配も、
@@ -49,8 +49,8 @@ msgid ""
 "You don't have to worry about the ozone layer, or\n"
 "asthma-inducing air pollution!"
 msgstr ""
-"Các bạn cũng chẳng cần bận tâm về tầng ozone hay ô \n"
-"nhiễm không khí gây hen suyễn làm gì cho mệt!"
+"Các bạn cũng chẳng cần bận tâm về tầng ozone hay ô nhiễm\n"
+"không khí gây hen suyễn làm gì cho mệt!"
 
 #. もちろん、受験や競争に悩まされる事もないでしょう。
 msgctxt "0005 | MONOKUMA"
@@ -58,23 +58,23 @@ msgid ""
 "And of course, you don't have to stress about studying\n"
 "for finals or practicing for the big game! But..."
 msgstr ""
-"Và dĩ nhiên, các bạn cũng hổng cần phải áp lực về việc \n"
-"ôn thi cuối kỳ hay tập luyện cho mấy trận đấu lớn nữa!"
+"Và dĩ nhiên, các bạn cũng hổng cần phải áp lực về việc ôn\n"
+"thi cuối kỳ hay tập luyện cho mấy trận đấu lớn nữa!"
 
 #. ただ、自由で素晴らしい世界にも、
 #. ルールはあります。
 msgctxt "0006 | MONOKUMA"
 msgid "But even our divine world of freedom has a few rules."
 msgstr ""
-"Ngay cả trong một thế giới tự do và tuyệt vời đến thế này thì \n"
-"vẫn có những quy tắc."
+"Ngay cả trong một thế giới tự do và tuyệt vời đến thế này\n"
+"thì vẫn có những quy tắc."
 
 #. 自由というのは、
 #. ルールで縛られた上に存在するのです。
 msgctxt "0007 | MONOKUMA"
 msgid "After all, freedom can only exist *because* of rules."
 msgstr ""
-"Bởi vì tự do chỉ thực sự tồn tại khi dựa trên nền tảng của \n"
+"Bởi vì tự do chỉ thực sự tồn tại khi dựa trên nền tảng của\n"
 "những quy tắc gò bó mà thôi."
 
 #. もし、あなたが、あんなクソどうでもいい地球に
@@ -84,8 +84,8 @@ msgid ""
 "If you're really dead set on returning to that tiny\n"
 "piece of dog poop you call Earth..."
 msgstr ""
-"Nếu các bạn thực sự hạ quyết tâm muốn quay trở lại \n"
-"cái cục phân chó nhỏ bé mà các bạn gọi là Trái Đất đó..."
+"Nếu các bạn thực sự hạ quyết tâm muốn quay trở lại cái cục\n"
+"phân chó nhỏ bé mà các bạn gọi là Trái Đất đó..."
 
 #. …ルールを守ってください。
 #. 私の言っている意味はおわかりになるでしょう？
@@ -93,9 +93,7 @@ msgctxt "0009 | MONOKUMA"
 msgid ""
 "...please do your best to follow the rules. I hope\n"
 "I've made myself perfectly clear."
-msgstr ""
-"Hãy tuân thủ các quy tắc. Các bạn hiểu ý ta muốn \n"
-"nói gì rồi chứ?"
+msgstr "Hãy tuân thủ các quy tắc. Các bạn hiểu ý ta muốn nói gì rồi chứ?"
 
 #. では…秩序はみなさまと共に…
 msgctxt "0010 | MONOKUMA"
@@ -121,8 +119,8 @@ msgid ""
 "Good morning, everyone! It is now 7 a.m. and nighttime\n"
 "is officially over! Time to rise and shine!"
 msgstr ""
-"Chào buổi sáng, các em! \n"
-"Sáng rồi, đã 7 giờ rồi đó! Đến giờ dậy rồi~!"
+"Chào buổi sáng, các em! Sáng rồi, đã 7 giờ rồi đó! Đến giờ\n"
+"dậy rồi~!"
 
 #. さぁて、今日も張り切っていきましょう～！
 msgctxt "0013 | MONOKUMA"
@@ -138,8 +136,8 @@ msgid ""
 "Slowly I pulled myself out of bed.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vừa dụi đôi mắt vẫn còn ngái ngủ, tôi vừa chậm rãi \n"
-"ngồi dậy khỏi giường.\n"
+"<CLT 4>Vừa dụi đôi mắt vẫn còn ngái ngủ, tôi vừa chậm rãi ngồi\n"
+"dậy khỏi giường.\n"
 "<CLT>"
 
 #. <CLT 4>…舞園さんの部屋で.
@@ -158,9 +156,7 @@ msgctxt "0016 | MAKOTO NAEGI"
 msgid ""
 "I just remembered, I promised to eat breakfast with\n"
 "everyone else."
-msgstr ""
-"Nhắc mới nhớ, mình đã hứa là sẽ ăn sáng cùng với \n"
-"mọi người."
+msgstr "Nhắc mới nhớ, mình đã hứa là sẽ ăn sáng cùng với mọi người."
 
 #. 行かないと…
 msgctxt "0017 | MAKOTO NAEGI"
