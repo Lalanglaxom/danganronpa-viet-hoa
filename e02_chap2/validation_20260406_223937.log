@@ -1,0 +1,1581 @@
+========================================================================
+  PO VALIDATION REPORT
+  Generated : 2026-04-06 22:39:37
+  Folder    : D:\Danganronpa1Viet\danganronpa-viet-hoa\e02_chap2
+  Rules     : built-in + clt_tag_integrity, not_copy_of_source, line_count_match
+========================================================================
+Selected path: D:\Danganronpa1Viet\danganronpa-viet-hoa\e02_chap2
+Top-level folders: ['e02_000_003', 'e02_000_004 Main Hall Exploration', 'e02_000_006 Gym Exploration Findings', 'e02_000_009 AV Room Exploration', 'e02_000_010 School Store Exploration', 'e02_000_014 Classroom One Exploration', 'e02_000_015 Classroom Two Exploration', 'e02_000_016 Exit Area Prompt', 'e02_000_022 Library Investigation Findings', 'e02_000_026 Locker Room Exploration', 'e02_000_030 Indoor Pool Exploration', 'e02_000_031 Second Floor Exploration', 'e02_000_032 Library Floor Two', 'e02_000_033 Cleaning Closet Investigation', 'e02_000_037 Locker Room Poster', 'e02_000_103 Room Surveillance Investigation', 'e02_000_135 School Observation Thoughts', 'e02_000_136 Kitchen Investigation Findings', 'e02_000_137 Trash Room Surveillance', 'e02_000_139 Laundry Room Exploration', 'e02_000_140 Kitchen Pantry Investigation', 'e02_000_141 Locker Room Findings', 'e02_000_144 Bathhouse Exploration Findings', 'e02_000_145 Sauna Heat Source', 'e02_000_146 Fish Tank Findings', 'e02_001_103', 'e02_001_105 Body Disposal Aftermath', 'e02_002_135 Post-Trial Dining Reunion', 'e02_003_006 Gym Morning Exercise', 'e02_004_001 Second Floor Access', 'e02_004_004 Trophy Case Omen', 'e02_004_006 Surveillance Monitor Investigation', 'e02_004_021 School Floor Exploration', 'e02_004_031 New Floor Investigation', 'e02_004_032 Monitor Surveillance Data', 'e02_005_022 Library Investigation Start', 'e02_006_026 Pool Discovery Excitement', 'e02_006_027 Locker Room Investigation', 'e02_006_030 Pool Surveillance Check', 'e02_007_135 Investigation Discovery Report', 'e02_008_101 Dining Hall Heading', 'e02_008_103 Nighttime Announcement Rules', 'e02_009_001 Locked Door Exploration', 'e02_009_021 Finding Byakuya Byakuya', 'e02_009_026 Locker Room Search', 'e02_009_101 Dorm Door Banging', 'e02_009_135 Dining Hall Morning', 'e02_009_136 Kitchen Tea Quest', 'e02_009_140 Warehouse Investigation Report', 'e02_009_141 Bathhouse Search Talk', 'e02_009_146 Bathroom Fortune Prediction', 'e02_010_022 Library Byakuya Encounter', 'e02_011_001 Girls Bathroom Interaction', 'e02_011_021 Bathroom Gate Exploration', 'e02_011_022 Library Investigation Observations', 'e02_011_101 Dormitory Exploration Hallway', 'e02_011_103 Morning Dorm Start', 'e02_013_101 Dining Hall Commute', 'e02_013_103 Monokuma Morning Announcement', 'e02_013_135 Empty Breakfast Meeting', 'e02_014_103 Free Time Start', 'e02_016_101 Celeste Night Stroll', 'e02_016_103 Dorm Room Surveillance', 'e02_017_135 Mondo Taka Confrontation', 'e02_017_144 Sauna Endurance Battle', 'e02_018_103 Sauna Duel Aftermath', 'e02_018_135 Mondo Taka Brotherhood', 'e02_019_103 Toko Library Invitation', 'e02_020_021 Toko Delusional Crush', 'e02_020_022 Spying on Byakuya', 'e02_021_103 Dormitory Investigation Start', 'e02_022_001 Gym Entrance Dread', 'e02_022_003 Gym Entrance Surveillance', 'e02_022_004 Hifumi Gym Ghost', 'e02_022_010 School Store Vending', 'e02_022_101 Gym Announcement Response', 'e02_022_103 Gym Emergency Gathering', 'e02_023_006 New Motive Reveal', 'e02_024_101 Dining Hall Hurry', 'e02_024_103 Motive Reflection Dread', 'e02_025_001 Byakuya Brainwash Suspicion', 'e02_025_021 School Gate Blocked', 'e02_025_022 Library Investigation Discovery', 'e02_025_101 Searching For Everyone', 'e02_025_135 Gathering After Announcement', 'e02_025_137 Trash Room Investigation', 'e02_026_026 Locker Room Suspicion Locker Room Discovery', 'e02_027_029 Chihiro Body Discovery', 'e02_028_003 Genocide Jack Evidence', 'e02_028_026 Locker Room Card-reader', 'e02_029_101 Toko Room Emergency', 'e02_030_021 Library Entrance Entry', 'e02_030_022 Library Archive Search', 'e02_030_025 Togami Library Secret', 'e02_032_001 Mondo Bathroom Regret', 'e02_032_003 Mailbox Area Investigation', 'e02_032_004 School Shop Investigation', 'e02_032_006 Gym Monitor Check', 'e02_032_009 AV Room Investigation', 'e02_032_010 School Store Investigation', 'e02_032_014 Classroom Monitor Check', 'e02_032_015 Classroom Surveillance Check', 'e02_032_016 Leave Area Prompt', 'e02_032_021 Togami Parts Ways', 'e02_032_022 Library Evidence Search', 'e02_032_025 Archive Evidence Search', 'e02_032_026 Hifumi Culprit Evidence', 'e02_032_027 Locker Room Investigation', 'e02_032_029 Kyoko Mystery Task', 'e02_032_030 Pool Area Investigation', 'e02_032_031 Classroom Surveillance Check', 'e02_032_032 Classroom Surveillance Check', 'e02_032_033', 'e02_032_101 Dormitory Investigation Check', 'e02_032_135 Hina Donut Break', 'e02_032_136 Kitchen Evidence Search', 'e02_032_137 Trash Room Investigation', 'e02_032_139 Laundry Room Investigation', 'e02_032_140 Warehouse Celeste Account', 'e02_032_141 Locker Room Investigation', 'e02_032_144 Bathhouse Investigation Check', 'e02_032_145 Sauna Investigation Check', 'e02_032_146 Fish Tank Investigation', 'e02_033_001 Red Door Entrance', 'e02_033_201 Toko Missing Search', 'e02_033_204 Trial Courtroom Entrance', 'e02_101_000 Trial Rules Introduction', 'e02_102_000 Trial Contradiction Search', 'e02_102_001 Trial Weapon Discussion', 'e02_103_000 Dumbbell Weapon Confirmation', 'e02_104_000 Genocide Jack Evidence', 'e02_104_001 Genocide Jack Accusation', 'e02_105_000 Police Archive Revelation', 'e02_106_000 Split Personality Realization', 'e02_107_000 Toko Personality Reveal', 'e02_108_000 Killer Identity Doubt', 'e02_108_001 Modus Operandi Match', 'e02_109_000 Murder Method Comparison', 'e02_110_000 Byakuya Gender Contradiction', 'e02_110_001 Byakuya Locker Room', 'e02_111_000 Byakuya Locker Rebuttal', 'e02_112_000 Hangman_s Toko Interruption', 'e02_112_001 Genocider Rope Contradiction', 'e02_113_000 Library Cord Mystery', 'e02_114_000 Locker Room Logic', 'e02_114_001 Locker Room Entry', 'e02_115_000 Broken Handbook Debate', 'e02_116_000 Body Re-examination Discovery', 'e02_117_000 Chihiro Gender Reveal', 'e02_118_000 Nonstop Debate Refutation', 'e02_118_001 Nonstop Debate Clues', 'e02_119_000 Celeste Witness Account', 'e02_120_000 Mondo Outburst Refutation', 'e02_120_001 Tracksuit Color Debate', 'e02_121_000 Mondo Slip Tongue', 'e02_122_000 Nonstop Debate Refutation', 'e02_122_001 Handbook Verification Debate', 'e02_123_000 Mondo Handbook Swap', 'e02_124_000 Closing Argument Case', 'e02_125_000 Mondo Evidence Confrontation', 'e02_127_000 Mondo Confession Admission', 'e02_150_000 White Noise Tutorial', 'e02_151_000 Truth Flashback Tutorial', 'e02_152_000 BTB Fever Tutorial', 'e02_195_000 Trial Jump Points', 'e02_196_000 Debate Jump Points', 'e02_197_000 Minigame Jump Points', 'e02_198_000 Wrong Verdict Ending', 'e02_199_000 Time Limit Failure', 'e02_200_000 Mondo Killer Reveal', 'e02_201_000 Mondo Post-Execution Mourning', 'e02_255_006 Trial Commencement Announcement']
+
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_003
+    ✔ [auto-fix] PO spacing reformatted in e02_000_003
+
+  [OK]             e02_000_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_004 Main Hall Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_004
+    ✔ [auto-fix] PO spacing reformatted in e02_000_004
+
+  [OK]             e02_000_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_006 Gym Exploration Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_006
+    ✔ [auto-fix] PO spacing reformatted in e02_000_006
+
+  [OK]             e02_000_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_009 AV Room Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_009
+    ✔ [auto-fix] PO spacing reformatted in e02_000_009
+
+  [OK]             e02_000_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_010 School Store Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_010
+    ✔ [auto-fix] PO spacing reformatted in e02_000_010
+
+  [OK]             e02_000_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_014 Classroom One Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_014
+    ✔ [auto-fix] PO spacing reformatted in e02_000_014
+
+  [OK]             e02_000_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_015 Classroom Two Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_015
+    ✔ [auto-fix] PO spacing reformatted in e02_000_015
+
+  [OK]             e02_000_015
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_016 Exit Area Prompt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_016
+    ✔ [auto-fix] PO spacing reformatted in e02_000_016
+
+  [OK]             e02_000_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_022 Library Investigation Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_022
+    ✔ [auto-fix] PO spacing reformatted in e02_000_022
+
+  [OK]             e02_000_022
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 133): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_026 Locker Room Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_026
+    ✔ [auto-fix] PO spacing reformatted in e02_000_026
+
+  [OK]             e02_000_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_030 Indoor Pool Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_030
+    ✔ [auto-fix] PO spacing reformatted in e02_000_030
+
+  [OK]             e02_000_030
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_031 Second Floor Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_031
+    ✔ [auto-fix] PO spacing reformatted in e02_000_031
+
+  [OK]             e02_000_031
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_032 Library Floor Two
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_032
+    ✔ [auto-fix] PO spacing reformatted in e02_000_032
+
+  [OK]             e02_000_032
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_033 Cleaning Closet Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_033
+    ✔ [auto-fix] PO spacing reformatted in e02_000_033
+
+  [OK]             e02_000_033
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_037 Locker Room Poster
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_037
+    ✔ [auto-fix] PO spacing reformatted in e02_000_037
+
+  [OK]             e02_000_037
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_103 Room Surveillance Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_103
+    ✔ [auto-fix] PO spacing reformatted in e02_000_103
+
+  [OK]             e02_000_103
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 78): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_135 School Observation Thoughts
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_135
+    ✔ [auto-fix] PO spacing reformatted in e02_000_135
+
+  [OK]             e02_000_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_136 Kitchen Investigation Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_136
+    ✔ [auto-fix] PO spacing reformatted in e02_000_136
+
+  [OK]             e02_000_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 69): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_137 Trash Room Surveillance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_137
+    ✔ [auto-fix] PO spacing reformatted in e02_000_137
+
+  [OK]             e02_000_137
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_139 Laundry Room Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_139
+    ✔ [auto-fix] PO spacing reformatted in e02_000_139
+
+  [OK]             e02_000_139
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_140 Kitchen Pantry Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_140
+    ✔ [auto-fix] PO spacing reformatted in e02_000_140
+
+  [OK]             e02_000_140
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_141 Locker Room Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_141
+    ✔ [auto-fix] PO spacing reformatted in e02_000_141
+
+  [OK]             e02_000_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_144 Bathhouse Exploration Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_144
+    ✔ [auto-fix] PO spacing reformatted in e02_000_144
+
+  [OK]             e02_000_144
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_145 Sauna Heat Source
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_145
+    ✔ [auto-fix] PO spacing reformatted in e02_000_145
+
+  [OK]             e02_000_145
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_000_146 Fish Tank Findings
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_000_146
+    ✔ [auto-fix] PO spacing reformatted in e02_000_146
+
+  [OK]             e02_000_146
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_001_103
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_001_103
+    ✔ [auto-fix] PO spacing reformatted in e02_001_103
+
+  [OK]             e02_001_103
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002 | MAKOTO NAEGI" (line 23): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 28): translation is identical to source text
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 33): translation is identical to source text
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 38): translation is identical to source text
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 43): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 48): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 53): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 58): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 63): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 68): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 73): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MAKOTO NAEGI" (line 78): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 83): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 88): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | MAKOTO NAEGI" (line 93): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_001_105 Body Disposal Aftermath
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_001_105
+    ✔ [auto-fix] PO spacing reformatted in e02_001_105
+
+  [OK]             e02_001_105
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 28): translation is identical to source text
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 43): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MONOKUMA" (line 121): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_002_135 Post-Trial Dining Reunion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_002_135
+    ✔ [auto-fix] PO spacing reformatted in e02_002_135
+
+  [OK]             e02_002_135
+    i [not_copy_of_source] Entry "0014 | AOI ASAHINA" (line 118): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 190): translation is identical to source text
+    i [not_copy_of_source] Entry "0047 | CHIHIRO FUJISAKI" (line 371): translation is identical to source text
+    i [not_copy_of_source] Entry "0049 | CHIHIRO FUJISAKI" (line 386): translation is identical to source text
+    i [not_copy_of_source] Entry "0071 | MAKOTO NAEGI" (line 558): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_003_006 Gym Morning Exercise
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_003_006
+    ✔ [auto-fix] PO spacing reformatted in e02_003_006
+
+  [OK]             e02_003_006
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 89): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_001 Second Floor Access
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_001
+    ✔ [auto-fix] PO spacing reformatted in e02_004_001
+
+  [OK]             e02_004_001
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 248): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_004 Trophy Case Omen
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_004
+    ✔ [auto-fix] PO spacing reformatted in e02_004_004
+
+  [OK]             e02_004_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_006 Surveillance Monitor Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_006
+    ✔ [auto-fix] PO spacing reformatted in e02_004_006
+
+  [OK]             e02_004_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_021 School Floor Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_021
+    ✔ [auto-fix] PO spacing reformatted in e02_004_021
+
+  [OK]             e02_004_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_031 New Floor Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_031
+    ✔ [auto-fix] PO spacing reformatted in e02_004_031
+
+  [OK]             e02_004_031
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_004_032 Monitor Surveillance Data
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_004_032
+    ✔ [auto-fix] PO spacing reformatted in e02_004_032
+
+  [OK]             e02_004_032
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_005_022 Library Investigation Start
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_005_022
+    ✔ [auto-fix] PO spacing reformatted in e02_005_022
+
+  [OK]             e02_005_022
+    i [not_copy_of_source] Entry "0154 | MAKOTO NAEGI" (line 1460): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_026 Pool Discovery Excitement
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_026
+    ✔ [auto-fix] PO spacing reformatted in e02_006_026
+
+  [OK]             e02_006_026
+    i [not_copy_of_source] Entry "0021 | CHIHIRO FUJISAKI" (line 175): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_027 Locker Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_027
+    ✔ [auto-fix] PO spacing reformatted in e02_006_027
+
+  [OK]             e02_006_027
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_006_030 Pool Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_006_030
+    ✔ [auto-fix] PO spacing reformatted in e02_006_030
+
+  [OK]             e02_006_030
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_007_135 Investigation Discovery Report
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_007_135
+    ✔ [auto-fix] PO spacing reformatted in e02_007_135
+
+  [OK]             e02_007_135
+    i [not_copy_of_source] Entry "0026 | BYAKUYA TOGAMI" (line 227): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_008_101 Dining Hall Heading
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_008_101
+    ✔ [auto-fix] PO spacing reformatted in e02_008_101
+
+  [OK]             e02_008_101
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 136): translation is identical to source text
+    i [not_copy_of_source] Entry "0013 | MAKOTO NAEGI" (line 146): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_008_103 Nighttime Announcement Rules
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_008_103
+    ✔ [auto-fix] PO spacing reformatted in e02_008_103
+
+  [OK]             e02_008_103
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 280): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_001 Locked Door Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_001
+    ✔ [auto-fix] PO spacing reformatted in e02_009_001
+
+  [OK]             e02_009_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_021 Finding Byakuya Byakuya
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_021
+    ✔ [auto-fix] PO spacing reformatted in e02_009_021
+
+  [OK]             e02_009_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_026 Locker Room Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_026
+    ✔ [auto-fix] PO spacing reformatted in e02_009_026
+
+  [OK]             e02_009_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_101 Dorm Door Banging
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_101
+    ✔ [auto-fix] PO spacing reformatted in e02_009_101
+
+  [OK]             e02_009_101
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 242): translation is identical to source text
+    i [not_copy_of_source] Entry "0046 | MAKOTO NAEGI" (line 403): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | MAKOTO NAEGI" (line 418): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_135 Dining Hall Morning
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_135
+    ✔ [auto-fix] PO spacing reformatted in e02_009_135
+
+  [OK]             e02_009_135
+    i [not_copy_of_source] Entry "0081 | MAKOTO NAEGI" (line 636): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_136 Kitchen Tea Quest
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_136
+    ✔ [auto-fix] PO spacing reformatted in e02_009_136
+
+  [OK]             e02_009_136
+    i [not_copy_of_source] Entry "0017 | MAKOTO NAEGI" (line 176): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_140 Warehouse Investigation Report
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_140
+    ✔ [auto-fix] PO spacing reformatted in e02_009_140
+
+  [OK]             e02_009_140
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_141 Bathhouse Search Talk
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_141
+    ✔ [auto-fix] PO spacing reformatted in e02_009_141
+
+  [OK]             e02_009_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_009_146 Bathroom Fortune Prediction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_009_146
+    ✔ [auto-fix] PO spacing reformatted in e02_009_146
+
+  [OK]             e02_009_146
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_010_022 Library Byakuya Encounter
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_010_022
+    ✔ [auto-fix] PO spacing reformatted in e02_010_022
+
+  [OK]             e02_010_022
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 40): translation is identical to source text
+    i [not_copy_of_source] Entry "0094 | CHIHIRO FUJISAKI" (line 720): translation is identical to source text
+    i [not_copy_of_source] Entry "0131 | MAKOTO NAEGI" (line 1006): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_001 Girls Bathroom Interaction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_011_001
+    ✔ [auto-fix] PO spacing reformatted in e02_011_001
+
+  [OK]             e02_011_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_021 Bathroom Gate Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_011_021
+    ✔ [auto-fix] PO spacing reformatted in e02_011_021
+
+  [OK]             e02_011_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_022 Library Investigation Observations
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_011_022
+    ✔ [auto-fix] PO spacing reformatted in e02_011_022
+
+  [OK]             e02_011_022
+    i [not_copy_of_source] Entry "0001 | BYAKUYA TOGAMI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0029 | MAKOTO NAEGI" (line 337): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_101 Dormitory Exploration Hallway
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_011_101
+    ✔ [auto-fix] PO spacing reformatted in e02_011_101
+
+  [OK]             e02_011_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_011_103 Morning Dorm Start
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_011_103
+    ✔ [auto-fix] PO spacing reformatted in e02_011_103
+
+  [OK]             e02_011_103
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 224): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_101 Dining Hall Commute
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_013_101
+    ✔ [auto-fix] PO spacing reformatted in e02_013_101
+
+  [OK]             e02_013_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_103 Monokuma Morning Announcement
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_013_103
+    ✔ [auto-fix] PO spacing reformatted in e02_013_103
+
+  [OK]             e02_013_103
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 100): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | MAKOTO NAEGI" (line 178): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_013_135 Empty Breakfast Meeting
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_013_135
+    ✔ [auto-fix] PO spacing reformatted in e02_013_135
+
+  [OK]             e02_013_135
+    i [not_copy_of_source] Entry "0022 | CHIHIRO FUJISAKI" (line 187): translation is identical to source text
+    i [not_copy_of_source] Entry "0032 | CHIHIRO FUJISAKI" (line 257): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_014_103 Free Time Start
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_014_103
+    ✔ [auto-fix] PO spacing reformatted in e02_014_103
+
+  [OK]             e02_014_103
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 47): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 129): translation is identical to source text
+    i [not_copy_of_source] Entry "0022 | MAKOTO NAEGI" (line 226): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_016_101 Celeste Night Stroll
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_016_101
+    ✔ [auto-fix] PO spacing reformatted in e02_016_101
+
+  [OK]             e02_016_101
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 82): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_016_103 Dorm Room Surveillance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_016_103
+    ✔ [auto-fix] PO spacing reformatted in e02_016_103
+
+  [OK]             e02_016_103
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 61): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_017_135 Mondo Taka Confrontation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_017_135
+    ✔ [auto-fix] PO spacing reformatted in e02_017_135
+
+  [OK]             e02_017_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_017_144 Sauna Endurance Battle
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_017_144
+    ✔ [auto-fix] PO spacing reformatted in e02_017_144
+
+  [OK]             e02_017_144
+    i [not_copy_of_source] Entry "0053 | MAKOTO NAEGI" (line 402): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_018_103 Sauna Duel Aftermath
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_018_103
+    ✔ [auto-fix] PO spacing reformatted in e02_018_103
+
+  [OK]             e02_018_103
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 51): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_018_135 Mondo Taka Brotherhood
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_018_135
+    ✔ [auto-fix] PO spacing reformatted in e02_018_135
+
+  [OK]             e02_018_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_019_103 Toko Library Invitation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_019_103
+    ✔ [auto-fix] PO spacing reformatted in e02_019_103
+
+  [OK]             e02_019_103
+    i [not_copy_of_source] Entry "0007 | TOUKO FUKAWA" (line 53): translation is identical to source text
+    i [not_copy_of_source] Entry "0031 | MAKOTO NAEGI" (line 268): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_020_021 Toko Delusional Crush
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_020_021
+    ✔ [auto-fix] PO spacing reformatted in e02_020_021
+
+  [OK]             e02_020_021
+    i [not_copy_of_source] Entry "0001 | TOUKO FUKAWA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0003 | TOUKO FUKAWA" (line 33): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0020 | MAKOTO NAEGI" (line 146): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 184): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_020_022 Spying on Byakuya
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_020_022
+    ✔ [auto-fix] PO spacing reformatted in e02_020_022
+
+  [OK]             e02_020_022
+    i [not_copy_of_source] Entry "0012 | BYAKUYA TOGAMI" (line 100): translation is identical to source text
+    i [not_copy_of_source] Entry "0019 | TOUKO FUKAWA" (line 148): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | BYAKUYA TOGAMI" (line 158): translation is identical to source text
+    i [not_copy_of_source] Entry "0027 | TOUKO FUKAWA" (line 198): translation is identical to source text
+    i [not_copy_of_source] Entry "0042 | MAKOTO NAEGI" (line 359): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_021_103 Dormitory Investigation Start
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_021_103
+    ✔ [auto-fix] PO spacing reformatted in e02_021_103
+
+  [OK]             e02_021_103
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 69): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_001 Gym Entrance Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_001
+    ✔ [auto-fix] PO spacing reformatted in e02_022_001
+
+  [OK]             e02_022_001
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 43): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_003 Gym Entrance Surveillance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_003
+    ✔ [auto-fix] PO spacing reformatted in e02_022_003
+
+  [OK]             e02_022_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_004 Hifumi Gym Ghost
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_004
+    ✔ [auto-fix] PO spacing reformatted in e02_022_004
+
+  [OK]             e02_022_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_010 School Store Vending
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_010
+    ✔ [auto-fix] PO spacing reformatted in e02_022_010
+
+  [OK]             e02_022_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_101 Gym Announcement Response
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_101
+    ✔ [auto-fix] PO spacing reformatted in e02_022_101
+
+  [OK]             e02_022_101
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 245): translation is identical to source text
+    i [not_copy_of_source] Entry "0027 | MAKOTO NAEGI" (line 255): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_022_103 Gym Emergency Gathering
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_022_103
+    ✔ [auto-fix] PO spacing reformatted in e02_022_103
+
+  [OK]             e02_022_103
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 63): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 121): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_023_006 New Motive Reveal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_023_006
+    ✔ [auto-fix] PO spacing reformatted in e02_023_006
+
+  [OK]             e02_023_006
+    i [not_copy_of_source] Entry "0082 | MAKOTO NAEGI" (line 619): translation is identical to source text
+    i [not_copy_of_source] Entry "0116 | HIFUMI YAMADA" (line 883): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_024_101 Dining Hall Hurry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_024_101
+    ✔ [auto-fix] PO spacing reformatted in e02_024_101
+
+  [OK]             e02_024_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_024_103 Motive Reflection Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_024_103
+    ✔ [auto-fix] PO spacing reformatted in e02_024_103
+
+  [OK]             e02_024_103
+    i [not_copy_of_source] Entry "0021 | NO NAME" (line 210): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_001 Byakuya Brainwash Suspicion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_001
+    ✔ [auto-fix] PO spacing reformatted in e02_025_001
+
+  [OK]             e02_025_001
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 118): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_021 School Gate Blocked
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_021
+    ✔ [auto-fix] PO spacing reformatted in e02_025_021
+
+  [OK]             e02_025_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_022 Library Investigation Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_022
+    ✔ [auto-fix] PO spacing reformatted in e02_025_022
+
+  [OK]             e02_025_022
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 142): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_101 Searching For Everyone
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_101
+    ✔ [auto-fix] PO spacing reformatted in e02_025_101
+
+  [OK]             e02_025_101
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 99): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | MAKOTO NAEGI" (line 114): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 165): translation is identical to source text
+    i [not_copy_of_source] Entry "0020 | MAKOTO NAEGI" (line 180): translation is identical to source text
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 215): translation is identical to source text
+    i [not_copy_of_source] Entry "0026 | MAKOTO NAEGI" (line 230): translation is identical to source text
+    i [not_copy_of_source] Entry "0031 | MAKOTO NAEGI" (line 278): translation is identical to source text
+    i [not_copy_of_source] Entry "0033 | MAKOTO NAEGI" (line 293): translation is identical to source text
+    i [not_copy_of_source] Entry "0037 | MAKOTO NAEGI" (line 328): translation is identical to source text
+    i [not_copy_of_source] Entry "0039 | MAKOTO NAEGI" (line 343): translation is identical to source text
+    i [not_copy_of_source] Entry "0046 | MAKOTO NAEGI" (line 407): translation is identical to source text
+    i [not_copy_of_source] Entry "0048 | MAKOTO NAEGI" (line 422): translation is identical to source text
+    i [not_copy_of_source] Entry "0056 | MAKOTO NAEGI" (line 499): translation is identical to source text
+    i [not_copy_of_source] Entry "0058 | MAKOTO NAEGI" (line 514): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_135 Gathering After Announcement
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_135
+    ✔ [auto-fix] PO spacing reformatted in e02_025_135
+
+  [OK]             e02_025_135
+    i [not_copy_of_source] Entry "0005 | BYAKUYA TOGAMI" (line 40): translation is identical to source text
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 45): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_025_137 Trash Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_025_137
+    ✔ [auto-fix] PO spacing reformatted in e02_025_137
+
+  [OK]             e02_025_137
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_026_026 Locker Room Suspicion Locker Room Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_026_026
+    ✔ [auto-fix] PO spacing reformatted in e02_026_026
+
+  [OK]             e02_026_026
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 122): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | MAKOTO NAEGI" (line 229): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_027_029 Chihiro Body Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_027_029
+    ✔ [auto-fix] PO spacing reformatted in e02_027_029
+
+  [OK]             e02_027_029
+    i [not_copy_of_source] Entry "0020 | KIYOTAKA ISHIMARU" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0047 | HIFUMI YAMADA" (line 396): translation is identical to source text
+    i [not_copy_of_source] Entry "0071 | KYOUKO KIRIGIRI" (line 582): translation is identical to source text
+    i [not_copy_of_source] Entry "0075 | KYOUKO KIRIGIRI" (line 619): translation is identical to source text
+    i [not_copy_of_source] Entry "0112 | AOI ASAHINA" (line 950): translation is identical to source text
+    i [not_copy_of_source] Entry "0116 | TOUKO FUKAWA" (line 983): translation is identical to source text
+    i [not_copy_of_source] Entry "0122 | AOI ASAHINA" (line 1020): translation is identical to source text
+    i [not_copy_of_source] Entry "0143 | TOUKO FUKAWA" (line 1209): translation is identical to source text
+    i [not_copy_of_source] Entry "0159 | MAKOTO NAEGI" (line 1332): translation is identical to source text
+    i [not_copy_of_source] Entry "0194 | MAKOTO NAEGI" (line 1596): translation is identical to source text
+    i [not_copy_of_source] Entry "0246 | MAKOTO NAEGI" (line 2059): translation is identical to source text
+    i [not_copy_of_source] Entry "0276 | BYAKUYA TOGAMI" (line 2340): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_028_003 Genocide Jack Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_028_003
+    ✔ [auto-fix] PO spacing reformatted in e02_028_003
+
+  [OK]             e02_028_003
+    i [not_copy_of_source] Entry "0039 | BYAKUYA TOGAMI" (line 288): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | BYAKUYA TOGAMI" (line 303): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_028_026 Locker Room Card-reader
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_028_026
+    ✔ [auto-fix] PO spacing reformatted in e02_028_026
+
+  [OK]             e02_028_026
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 38): translation is identical to source text
+    i [not_copy_of_source] Entry "0053 | MAKOTO NAEGI" (line 456): translation is identical to source text
+    i [not_copy_of_source] Entry "0099 | MAKOTO NAEGI" (line 830): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_029_101 Toko Room Emergency
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_029_101
+    ✔ [auto-fix] PO spacing reformatted in e02_029_101
+
+  [OK]             e02_029_101
+    i [not_copy_of_source] Entry "0018 | BYAKUYA TOGAMI" (line 125): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | BYAKUYA TOGAMI" (line 145): translation is identical to source text
+    i [not_copy_of_source] Entry "0028 | TOUKO FUKAWA" (line 198): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | MAKOTO NAEGI" (line 314): translation is identical to source text
+    i [not_copy_of_source] Entry "0061 | MAKOTO NAEGI" (line 488): translation is identical to source text
+    i [not_copy_of_source] Entry "0067 | TOUKO FUKAWA" (line 550): translation is identical to source text
+    i [not_copy_of_source] Entry "0074 | TOUKO FUKAWA" (line 608): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_021 Library Entrance Entry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_030_021
+    ✔ [auto-fix] PO spacing reformatted in e02_030_021
+
+  [OK]             e02_030_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_022 Library Archive Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_030_022
+    ✔ [auto-fix] PO spacing reformatted in e02_030_022
+
+  [OK]             e02_030_022
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_030_025 Togami Library Secret
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_030_025
+    ✔ [auto-fix] PO spacing reformatted in e02_030_025
+
+  [OK]             e02_030_025
+    i [not_copy_of_source] Entry "0183 | MAKOTO NAEGI" (line 1692): translation is identical to source text
+    i [not_copy_of_source] Entry "0209 | MAKOTO NAEGI" (line 1932): translation is identical to source text
+    i [not_copy_of_source] Entry "0214 | MAKOTO NAEGI" (line 1977): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_001 Mondo Bathroom Regret
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_001
+    ✔ [auto-fix] PO spacing reformatted in e02_032_001
+
+  [1 WARN]         e02_032_001
+    ! [untranslated] 3 untranslated: 0001 | KIYOTAKA ISHIMARU, 0002 | KIYOTAKA ISHIMARU, 0003 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_003 Mailbox Area Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_003
+    ✔ [auto-fix] PO spacing reformatted in e02_032_003
+
+  [OK]             e02_032_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_004 School Shop Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_004
+    ✔ [auto-fix] PO spacing reformatted in e02_032_004
+
+  [OK]             e02_032_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_006 Gym Monitor Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_006
+    ✔ [auto-fix] PO spacing reformatted in e02_032_006
+
+  [OK]             e02_032_006
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_009 AV Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_009
+    ✔ [auto-fix] PO spacing reformatted in e02_032_009
+
+  [OK]             e02_032_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_010 School Store Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_010
+    ✔ [auto-fix] PO spacing reformatted in e02_032_010
+
+  [OK]             e02_032_010
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 52): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_014 Classroom Monitor Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_014
+    ✔ [auto-fix] PO spacing reformatted in e02_032_014
+
+  [OK]             e02_032_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_015 Classroom Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_015
+    ✔ [auto-fix] PO spacing reformatted in e02_032_015
+
+  [OK]             e02_032_015
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_016 Leave Area Prompt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_016
+    ✔ [auto-fix] PO spacing reformatted in e02_032_016
+
+  [OK]             e02_032_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_021 Togami Parts Ways
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_021
+    ✔ [auto-fix] PO spacing reformatted in e02_032_021
+
+  [OK]             e02_032_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_022 Library Evidence Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_022
+    ✔ [auto-fix] PO spacing reformatted in e02_032_022
+
+  [OK]             e02_032_022
+    i [not_copy_of_source] Entry "0038 | MAKOTO NAEGI" (line 387): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_025 Archive Evidence Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_025
+    ✔ [auto-fix] PO spacing reformatted in e02_032_025
+
+  [OK]             e02_032_025
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 82): translation is identical to source text
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 182): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_026 Hifumi Culprit Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_026
+    ✔ [auto-fix] PO spacing reformatted in e02_032_026
+
+  [OK]             e02_032_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_027 Locker Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_027
+    ✔ [auto-fix] PO spacing reformatted in e02_032_027
+
+  [OK]             e02_032_027
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_029 Kyoko Mystery Task
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_029
+    ✔ [auto-fix] PO spacing reformatted in e02_032_029
+
+  [OK]             e02_032_029
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_030 Pool Area Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_030
+    ✔ [auto-fix] PO spacing reformatted in e02_032_030
+
+  [OK]             e02_032_030
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_031 Classroom Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_031
+    ✔ [auto-fix] PO spacing reformatted in e02_032_031
+
+  [OK]             e02_032_031
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_032 Classroom Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_032
+    ✔ [auto-fix] PO spacing reformatted in e02_032_032
+
+  [OK]             e02_032_032
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_033
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_033
+    ✔ [auto-fix] PO spacing reformatted in e02_032_033
+
+  [OK]             e02_032_033
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_101 Dormitory Investigation Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_101
+    ✔ [auto-fix] PO spacing reformatted in e02_032_101
+
+  [OK]             e02_032_101
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 102): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_135 Hina Donut Break
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_135
+    ✔ [auto-fix] PO spacing reformatted in e02_032_135
+
+  [OK]             e02_032_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_136 Kitchen Evidence Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_136
+    ✔ [auto-fix] PO spacing reformatted in e02_032_136
+
+  [OK]             e02_032_136
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_137 Trash Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_137
+    ✔ [auto-fix] PO spacing reformatted in e02_032_137
+
+  [OK]             e02_032_137
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_139 Laundry Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_139
+    ✔ [auto-fix] PO spacing reformatted in e02_032_139
+
+  [OK]             e02_032_139
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_140 Warehouse Celeste Account
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_140
+    ✔ [auto-fix] PO spacing reformatted in e02_032_140
+
+  [OK]             e02_032_140
+    i [not_copy_of_source] Entry "0019 | CELES" (line 140): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | CELES" (line 341): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_141 Locker Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_141
+    ✔ [auto-fix] PO spacing reformatted in e02_032_141
+
+  [OK]             e02_032_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_144 Bathhouse Investigation Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_144
+    ✔ [auto-fix] PO spacing reformatted in e02_032_144
+
+  [OK]             e02_032_144
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_145 Sauna Investigation Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_145
+    ✔ [auto-fix] PO spacing reformatted in e02_032_145
+
+  [OK]             e02_032_145
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_032_146 Fish Tank Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_032_146
+    ✔ [auto-fix] PO spacing reformatted in e02_032_146
+
+  [OK]             e02_032_146
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_001 Red Door Entrance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_033_001
+    ✔ [auto-fix] PO spacing reformatted in e02_033_001
+
+  [OK]             e02_033_001
+    i [not_copy_of_source] Entry "0002 | MAKOTO NAEGI" (line 29): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_201 Toko Missing Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_033_201
+    ✔ [auto-fix] PO spacing reformatted in e02_033_201
+
+  [OK]             e02_033_201
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 143): translation is identical to source text
+    i [not_copy_of_source] Entry "0019 | MAKOTO NAEGI" (line 153): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_033_204 Trial Courtroom Entrance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_033_204
+    ✔ [auto-fix] PO spacing reformatted in e02_033_204
+
+  [OK]             e02_033_204
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_101_000 Trial Rules Introduction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_101_000
+    ✔ [auto-fix] PO spacing reformatted in e02_101_000
+
+  [OK]             e02_101_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_102_000 Trial Contradiction Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_102_000
+    ✔ [auto-fix] PO spacing reformatted in e02_102_000
+
+  [OK]             e02_102_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_102_001 Trial Weapon Discussion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_102_001
+    ✔ [auto-fix] PO spacing reformatted in e02_102_001
+
+  [OK]             e02_102_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_103_000 Dumbbell Weapon Confirmation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_103_000
+    ✔ [auto-fix] PO spacing reformatted in e02_103_000
+
+  [OK]             e02_103_000
+    i [not_copy_of_source] Entry "0007 | KYOUKO KIRIGIRI" (line 68): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_104_000 Genocide Jack Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_104_000
+    ✔ [auto-fix] PO spacing reformatted in e02_104_000
+
+  [OK]             e02_104_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_104_001 Genocide Jack Accusation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_104_001
+    ✔ [auto-fix] PO spacing reformatted in e02_104_001
+
+  [OK]             e02_104_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_105_000 Police Archive Revelation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_105_000
+    ✔ [auto-fix] PO spacing reformatted in e02_105_000
+
+  [OK]             e02_105_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_106_000 Split Personality Realization
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_106_000
+    ✔ [auto-fix] PO spacing reformatted in e02_106_000
+
+  [OK]             e02_106_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_107_000 Toko Personality Reveal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_107_000
+    ✔ [auto-fix] PO spacing reformatted in e02_107_000
+
+  [OK]             e02_107_000
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 149): translation is identical to source text
+    i [not_copy_of_source] Entry "0029 | TOUKO FUKAWA" (line 242): translation is identical to source text
+    i [not_copy_of_source] Entry "0089 | TOUKO FUKAWA" (line 697): translation is identical to source text
+    i [not_copy_of_source] Entry "0096 | TOUKO FUKAWA" (line 754): translation is identical to source text
+    i [not_copy_of_source] Entry "0111 | MAKOTO NAEGI" (line 879): translation is identical to source text
+    i [not_copy_of_source] Entry "0127 | MAKOTO NAEGI" (line 999): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_108_000 Killer Identity Doubt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_108_000
+    ✔ [auto-fix] PO spacing reformatted in e02_108_000
+
+  [OK]             e02_108_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_108_001 Modus Operandi Match
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_108_001
+    ✔ [auto-fix] PO spacing reformatted in e02_108_001
+
+  [OK]             e02_108_001
+    i [not_copy_of_source] Entry "0008 | TOUKO FUKAWA" (line 74): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_109_000 Murder Method Comparison
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_109_000
+    ✔ [auto-fix] PO spacing reformatted in e02_109_000
+
+  [1 WARN]         e02_109_000
+    ! [source_changed] "0152 | MAKOTO NAEGI" (line 1293): English source text changed
+           Copy   : '<CLT 4>Actually, hold on...there *is* one person...\\n<CLT>'
+           Working: '<CLT 4>Actually, hold on...there is one person...\\n<CLT>'
+    i [not_copy_of_source] Entry "0169 | BYAKUYA TOGAMI" (line 1445): translation is identical to source text
+    i [not_copy_of_source] Entry "0171 | BYAKUYA TOGAMI" (line 1455): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_110_000 Byakuya Gender Contradiction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_110_000
+    ✔ [auto-fix] PO spacing reformatted in e02_110_000
+
+  [OK]             e02_110_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_110_001 Byakuya Locker Room
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_110_001
+    ✔ [auto-fix] PO spacing reformatted in e02_110_001
+
+  [OK]             e02_110_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_111_000 Byakuya Locker Rebuttal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_111_000
+    ✔ [auto-fix] PO spacing reformatted in e02_111_000
+
+  [OK]             e02_111_000
+    i [not_copy_of_source] Entry "0017 | KYOUKO KIRIGIRI" (line 146): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_112_000 Hangman_s Toko Interruption
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_112_000
+    ✔ [auto-fix] PO spacing reformatted in e02_112_000
+
+  [OK]             e02_112_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_112_001 Genocider Rope Contradiction
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_112_001
+    ✔ [auto-fix] PO spacing reformatted in e02_112_001
+
+  [OK]             e02_112_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_113_000 Library Cord Mystery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_113_000
+    ✔ [auto-fix] PO spacing reformatted in e02_113_000
+
+  [OK]             e02_113_000
+    i [not_copy_of_source] Entry "0010 | BYAKUYA TOGAMI" (line 85): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | MAKOTO NAEGI" (line 124): translation is identical to source text
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 203): translation is identical to source text
+    i [not_copy_of_source] Entry "0072 | BYAKUYA TOGAMI" (line 613): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_114_000 Locker Room Logic
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_114_000
+    ✔ [auto-fix] PO spacing reformatted in e02_114_000
+
+  [OK]             e02_114_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_114_001 Locker Room Entry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_114_001
+    ✔ [auto-fix] PO spacing reformatted in e02_114_001
+
+  [OK]             e02_114_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_115_000 Broken Handbook Debate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_115_000
+    ✔ [auto-fix] PO spacing reformatted in e02_115_000
+
+  [OK]             e02_115_000
+    i [not_copy_of_source] Entry "0017 | MAKOTO NAEGI" (line 146): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_116_000 Body Re-examination Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_116_000
+    ✔ [auto-fix] PO spacing reformatted in e02_116_000
+
+  [OK]             e02_116_000
+    i [not_copy_of_source] Entry "0014 | AOI ASAHINA" (line 120): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | KYOUKO KIRIGIRI" (line 300): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_117_000 Chihiro Gender Reveal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_117_000
+    ✔ [auto-fix] PO spacing reformatted in e02_117_000
+
+  [OK]             e02_117_000
+    i [not_copy_of_source] Entry "0024 | MAKOTO NAEGI" (line 229): translation is identical to source text
+    i [not_copy_of_source] Entry "0033 | BYAKUYA TOGAMI" (line 302): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_118_000 Nonstop Debate Refutation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_118_000
+    ✔ [auto-fix] PO spacing reformatted in e02_118_000
+
+  [OK]             e02_118_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_118_001 Nonstop Debate Clues
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_118_001
+    ✔ [auto-fix] PO spacing reformatted in e02_118_001
+
+  [OK]             e02_118_001
+    i [not_copy_of_source] Entry "0016 | HIFUMI YAMADA" (line 122): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_119_000 Celeste Witness Account
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_119_000
+    ✔ [auto-fix] PO spacing reformatted in e02_119_000
+
+  [OK]             e02_119_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_120_000 Mondo Outburst Refutation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_120_000
+    ✔ [auto-fix] PO spacing reformatted in e02_120_000
+
+  [OK]             e02_120_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_120_001 Tracksuit Color Debate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_120_001
+    ✔ [auto-fix] PO spacing reformatted in e02_120_001
+
+  [OK]             e02_120_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_121_000 Mondo Slip Tongue
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_121_000
+    ✔ [auto-fix] PO spacing reformatted in e02_121_000
+
+  [OK]             e02_121_000
+    i [not_copy_of_source] Entry "0040 | KYOUKO KIRIGIRI" (line 314): translation is identical to source text
+    i [not_copy_of_source] Entry "0042 | KYOUKO KIRIGIRI" (line 324): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | KYOUKO KIRIGIRI" (line 334): translation is identical to source text
+    i [not_copy_of_source] Entry "0070 | HIFUMI YAMADA" (line 519): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_122_000 Nonstop Debate Refutation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_122_000
+    ✔ [auto-fix] PO spacing reformatted in e02_122_000
+
+  [OK]             e02_122_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_122_001 Handbook Verification Debate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_122_001
+    ✔ [auto-fix] PO spacing reformatted in e02_122_001
+
+  [OK]             e02_122_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_123_000 Mondo Handbook Swap
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_123_000
+    ✔ [auto-fix] PO spacing reformatted in e02_123_000
+
+  [OK]             e02_123_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_124_000 Closing Argument Case
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_124_000
+    ✔ [auto-fix] PO spacing reformatted in e02_124_000
+
+  [OK]             e02_124_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_125_000 Mondo Evidence Confrontation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_125_000
+    ✔ [auto-fix] PO spacing reformatted in e02_125_000
+
+  [OK]             e02_125_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_127_000 Mondo Confession Admission
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_127_000
+    ✔ [auto-fix] PO spacing reformatted in e02_127_000
+
+  [OK]             e02_127_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_150_000 White Noise Tutorial
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_150_000
+    ✔ [auto-fix] PO spacing reformatted in e02_150_000
+
+  [OK]             e02_150_000
+    i [not_copy_of_source] Entry "0009 | NARRATION" (line 105): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | NARRATION" (line 115): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_151_000 Truth Flashback Tutorial
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_151_000
+    ✔ [auto-fix] PO spacing reformatted in e02_151_000
+
+  [OK]             e02_151_000
+    i [not_copy_of_source] Entry "0005 | NARRATION" (line 53): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_152_000 BTB Fever Tutorial
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_152_000
+    ✔ [auto-fix] PO spacing reformatted in e02_152_000
+
+  [OK]             e02_152_000
+    i [not_copy_of_source] Entry "0008 | NARRATION" (line 93): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_195_000 Trial Jump Points
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_195_000
+    ✔ [auto-fix] PO spacing reformatted in e02_195_000
+
+  [OK]             e02_195_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_196_000 Debate Jump Points
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_196_000
+    ✔ [auto-fix] PO spacing reformatted in e02_196_000
+
+  [OK]             e02_196_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_197_000 Minigame Jump Points
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_197_000
+    ✔ [auto-fix] PO spacing reformatted in e02_197_000
+
+  [OK]             e02_197_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_198_000 Wrong Verdict Ending
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_198_000
+    ✔ [auto-fix] PO spacing reformatted in e02_198_000
+
+  [OK]             e02_198_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_199_000 Time Limit Failure
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_199_000
+    ✔ [auto-fix] PO spacing reformatted in e02_199_000
+
+  [OK]             e02_199_000
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_200_000 Mondo Killer Reveal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_200_000
+    ✔ [auto-fix] PO spacing reformatted in e02_200_000
+
+  [OK]             e02_200_000
+    i [not_copy_of_source] Entry "0003 | MONOKUMA" (line 35): translation is identical to source text
+    i [not_copy_of_source] Entry "0004 | MONDO OOWADA" (line 40): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | MONDO OOWADA" (line 101): translation is identical to source text
+    i [not_copy_of_source] Entry "0062 | MONDO OOWADA" (line 495): translation is identical to source text
+    i [not_copy_of_source] Entry "0081 | MONDO OOWADA" (line 654): translation is identical to source text
+    i [not_copy_of_source] Entry "0085 | MONDO OOWADA" (line 679): translation is identical to source text
+    i [not_copy_of_source] Entry "0099 | MONDO OOWADA" (line 784): translation is identical to source text
+    i [not_copy_of_source] Entry "0156 | MAKOTO NAEGI" (line 1246): translation is identical to source text
+    i [not_copy_of_source] Entry "0180 | MONDO OOWADA" (line 1413): translation is identical to source text
+    i [not_copy_of_source] Entry "0211 | MONDO OOWADA" (line 1649): translation is identical to source text
+    i [not_copy_of_source] Entry "0216 | MAKOTO NAEGI" (line 1684): translation is identical to source text
+    i [not_copy_of_source] Entry "0239 | MONDO OOWADA" (line 1869): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_201_000 Mondo Post-Execution Mourning
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_201_000
+    ✔ [auto-fix] PO spacing reformatted in e02_201_000
+
+  [OK]             e02_201_000
+    i [not_copy_of_source] Entry "0081 | MONOKUMA" (line 624): translation is identical to source text
+    i [not_copy_of_source] Entry "0101 | NO NAME" (line 811): translation is identical to source text
+    i [not_copy_of_source] Entry "0112 | NO NAME" (line 878): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e02_255_006 Trial Commencement Announcement
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e02_255_006
+    ✔ [auto-fix] PO spacing reformatted in e02_255_006
+
+  [OK]             e02_255_006
+
+========================================================================
+  SUMMARY
+========================================================================
+  Files OK          : 170
+  Files with issues : 2
+  Total ERRORs      : 0
+  Total WARNings    : 2
+========================================================================

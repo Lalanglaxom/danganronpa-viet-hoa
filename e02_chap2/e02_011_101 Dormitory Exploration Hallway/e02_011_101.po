@@ -15,12 +15,15 @@ msgstr ""
 #. <CLT 4>女子トイレに用事は…
 #. <CLT>
 msgctxt "0001 | MAKOTO NAEGI"
+msgid "<CLT 4>Is there anything I need to do in the girls bathroom?\n<CLT>"
+msgstr ""
 msgid ""
 "<CLT 4>Is there anything I need to do in the girls bathroom?\n"
 "<CLT>"
 msgstr ""
 "<CLT 4>Mình có việc gì cần làm trong nhà vệ sinh nữ không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>…ある訳ないよな。
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,6 +33,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...Không, chắc chắn là không rồi.\n"
 "<CLT>"
+
 #. <CLT 4>ここは霧切さんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -42,6 +46,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Kyoko. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -51,11 +56,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó đã bị khóa rồi."
+
 #. <CLT 4>ここは腐川さんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -68,6 +75,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Toko. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>ここは不二咲さんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -80,6 +88,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Chihiro. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>朝日奈さんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -92,6 +101,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Hina. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cô ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>ここは、石丸クンの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -104,6 +114,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Taka. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>大和田クンの部屋はここだ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -116,6 +127,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Mondo. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>十神クンの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -128,6 +140,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Byakuya. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0012 | NARRATION"
@@ -137,11 +150,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó đã bị khóa rồi."
+
 #. <CLT 4>セレスさんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -154,6 +169,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Celeste. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>大神さんの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -166,6 +182,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Sakura. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0016 | NARRATION"
@@ -175,11 +192,13 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0017 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó đã bị khóa rồi."
+
 #. <CLT 4>葉隠クンの部屋はここだ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -192,6 +211,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Hiro. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>ここは山田クンの部屋だ。
 #. 今は特に用もないな。
 #. <CLT>
@@ -204,6 +224,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Hifumi. Hiện tại mình cũng không có\n"
 "chuyện gì cần nói với cậu ấy cả...\n"
 "<CLT>"
+
 #. <CLT 4>階段には、シャッターが降りてる。
 #. <CLT>
 msgctxt "0020 | MAKOTO NAEGI"
@@ -213,6 +234,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái cổng đang chắn lối đi lên cầu thang.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは…行けるようにはならないのか…
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -222,6 +244,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình tự hỏi liệu có lúc nào đó nó sẽ mở ra không nhỉ...\n"
 "<CLT>"
+
 #. <CLT 4>鉄格子だ…
 #. かなり頑丈そうだな。
 #. <CLT>
@@ -232,6 +255,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái cổng này có vẻ cực kỳ chắc chắn.\n"
 "<CLT>"
+
 #. <CLT 4>なんだって、こんなに厳重に
 #. 封鎖してるんだろう…
 #. <CLT>

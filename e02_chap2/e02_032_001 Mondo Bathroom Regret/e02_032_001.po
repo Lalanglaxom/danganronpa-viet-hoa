@@ -12,25 +12,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.8\n"
 
-msgctxt "0001 | KIYOTAKA ISHIMARU"
-msgid ""
-"Maybe we should have confessed our embarrassing\n"
-"secrets after all...!"
-msgstr ""
-"Có lẽ chúng ta nên thú nhận những bí mật xấu hổ\n"
-"của mình ngay từ đầu mới phải!"
-
-msgctxt "0002 | KIYOTAKA ISHIMARU"
-msgid ""
-"Dammit! I'm sorry, Chihiro... It's all because I\n"
-"wasn't strong enough!"
-msgstr ""
-"Khốn kiếp! Tôi xin lỗi, Chihiro... Tất cả là tại vì tôi\n"
-"không đủ mạnh mẽ!"
-
+#. ……………
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "..."
-msgstr "..."
+msgstr ""
+
+#. くうっ！
+#. すまん、不二咲くん…僕の力不足だッ！！
+msgctxt "0002 | KIYOTAKA ISHIMARU"
+msgid "Dammit! I'm sorry, Chihiro... It's all because I\nwasn't strong enough!"
+msgstr ""
+
+#. やはり、恥ずかしい秘密とやらを
+#. 告白し合っておくべきだったのか…！
+msgctxt "0001 | KIYOTAKA ISHIMARU"
+msgid "Maybe we should have confessed our embarrassing\nsecrets after all...!"
+msgstr ""
 
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""

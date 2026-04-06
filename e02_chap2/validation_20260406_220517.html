@@ -1,0 +1,2877 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>
+<title>PO Validation Report</title>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px;
+         background: #f4f5f7; color: #1a1a2e; }
+  header { background: #1a1a2e; color: #fff; padding: 20px 32px; }
+  header h1 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  header .meta { font-size: 12px; color: #aab; }
+  .stat-bar { display: flex; gap: 12px; padding: 16px 32px;
+              background: #fff; border-bottom: 1px solid #e0e0e0; flex-wrap: wrap;
+              align-items: center; }
+  .stat { padding: 6px 16px; border-radius: 20px; font-size: 13px;
+          font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .stat:hover { opacity: 0.75; }
+  .stat.ok     { background: #e6f9f0; color: #1a7a4a; border: 1.5px solid #1a7a4a; }
+  .stat.error  { background: #fdecea; color: #c0392b; border: 1.5px solid #c0392b; }
+  .stat.warn   { background: #fff8e1; color: #b7860b; border: 1.5px solid #b7860b; }
+  .stat.info   { background: #e8f0fe; color: #1a56c4; border: 1.5px solid #1a56c4; }
+  .stat.active { opacity: 1; }
+  .stat.dimmed { opacity: 0.35; }
+  .search-wrap { margin-left: auto; }
+  .search-wrap input { padding: 6px 12px; border: 1px solid #ccc; border-radius: 20px;
+                        font-size: 13px; width: 220px; outline: none; }
+  .search-wrap input:focus { border-color: #1a56c4; }
+  .chapters { padding: 16px 32px; display: flex; flex-direction: column; gap: 12px; }
+  .chapter { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0;
+             overflow: hidden; }
+  .chapter-header { display: flex; align-items: center; gap: 10px;
+                    padding: 10px 16px; cursor: pointer;
+                    background: #f8f8fb; border-bottom: 1px solid #e8e8ee;
+                    user-select: none; }
+  .chapter-header:hover { background: #f0f0f8; }
+  .chapter-name { font-weight: 600; font-size: 13px; flex: 1; }
+  .chapter-counts { font-size: 12px; color: #888; }
+  .chapter-toggle { font-size: 16px; color: #aaa; transition: transform .2s; }
+  .chapter.collapsed .chapter-toggle { transform: rotate(-90deg); }
+  .chapter.collapsed .chapter-body  { display: none; }
+  .chapter-body { padding: 0; }
+  .file-row { display: flex; align-items: flex-start; gap: 0;
+              border-bottom: 1px solid #f0f0f0; padding: 8px 16px 8px 16px; }
+  .file-row:last-child { border-bottom: none; }
+  .file-badge { min-width: 100px; font-size: 11px; font-weight: 700;
+                padding: 2px 8px; border-radius: 4px; text-align: center;
+                margin-right: 12px; margin-top: 2px; flex-shrink: 0; }
+  .badge-ok    { background: #e6f9f0; color: #1a7a4a; }
+  .badge-error { background: #fdecea; color: #c0392b; }
+  .badge-warn  { background: #fff8e1; color: #b7860b; }
+  .badge-nobackup { background: #f3e8ff; color: #6d28d9; }
+  .badge-struct { background: #f3fdf3; color: #1a7a4a; border: 1.5px solid #1a7a4a; }
+  .file-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #222; }
+  .file-issues { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .issue { font-size: 12px; padding: 3px 8px; border-radius: 4px;
+           border-left: 3px solid; line-height: 1.5; }
+  .issue-ERROR { background: #fff5f5; border-color: #e74c3c; color: #922b21; }
+  .issue-WARN  { background: #fffdf0; border-color: #f39c12; color: #7d6608; }
+  .issue-INFO  { background: #f0f4ff; border-color: #5b8cff; color: #1a4db5; }
+  .issue-STRUCT { background: #f3fdf3; border-color: #2ecc71; color: #1a7a4a; }
+  .issue .check-tag { font-weight: 700; margin-right: 4px; }
+  .issue .detail-line { display: block; padding-left: 12px;
+                        color: #555; font-family: monospace; font-size: 11px; }
+  .no-issues { font-size: 12px; color: #999; font-style: italic; }
+  .hidden { display: none !important; }
+  .debug-block { background: #f8f8fb; border: 1px dashed #ccc; border-radius: 6px;
+                 padding: 12px 16px; font-family: monospace; font-size: 11px;
+                 color: #666; margin: 0 32px 12px; }
+  .debug-block summary { cursor: pointer; font-weight: 600; color: #888; }
+</style>
+
+</head><body>
+<header>
+  <h1>PO Validation Report</h1>
+  <div class="meta">
+    D:\Danganronpa1Viet\danganronpa-viet-hoa\e02_chap2 &nbsp;·&nbsp; 2026-04-06 22:05:17
+    &nbsp;·&nbsp; Rules: clt_tag_integrity, not_copy_of_source, line_count_match
+  </div>
+</header>
+<div class="stat-bar">
+  <span class="stat ok"    onclick="filterStatus('ok')"   >✔ OK &nbsp;171</span>
+  <span class="stat error" onclick="filterStatus('error')" >✗ Errors &nbsp;0</span>
+  <span class="stat warn"  onclick="filterStatus('warn')"  >! Warnings &nbsp;1</span>
+  <span class="stat info"  onclick="filterStatus('all')"   >Show all</span>
+  <span class="search-wrap"><input type="text" id="search" placeholder="Search segment…" oninput="filterSearch(this.value)"></span>
+</div>
+<details class="debug-block"><summary>Debug / scan info</summary><pre>Selected path: D:\Danganronpa1Viet\danganronpa-viet-hoa\e02_chap2
+Top-level folders: ['e02_000_003', 'e02_000_004 Main Hall Exploration', 'e02_000_006 Gym Exploration Findings', 'e02_000_009 AV Room Exploration', 'e02_000_010 School Store Exploration', 'e02_000_014 Classroom One Exploration', 'e02_000_015 Classroom Two Exploration', 'e02_000_016 Exit Area Prompt', 'e02_000_022 Library Investigation Findings', 'e02_000_026 Locker Room Exploration', 'e02_000_030 Indoor Pool Exploration', 'e02_000_031 Second Floor Exploration', 'e02_000_032 Library Floor Two', 'e02_000_033 Cleaning Closet Investigation', 'e02_000_037 Locker Room Poster', 'e02_000_103 Room Surveillance Investigation', 'e02_000_135 School Observation Thoughts', 'e02_000_136 Kitchen Investigation Findings', 'e02_000_137 Trash Room Surveillance', 'e02_000_139 Laundry Room Exploration', 'e02_000_140 Kitchen Pantry Investigation', 'e02_000_141 Locker Room Findings', 'e02_000_144 Bathhouse Exploration Findings', 'e02_000_145 Sauna Heat Source', 'e02_000_146 Fish Tank Findings', 'e02_001_103', 'e02_001_105 Body Disposal Aftermath', 'e02_002_135 Post-Trial Dining Reunion', 'e02_003_006 Gym Morning Exercise', 'e02_004_001 Second Floor Access', 'e02_004_004 Trophy Case Omen', 'e02_004_006 Surveillance Monitor Investigation', 'e02_004_021 School Floor Exploration', 'e02_004_031 New Floor Investigation', 'e02_004_032 Monitor Surveillance Data', 'e02_005_022 Library Investigation Start', 'e02_006_026 Pool Discovery Excitement', 'e02_006_027 Locker Room Investigation', 'e02_006_030 Pool Surveillance Check', 'e02_007_135 Investigation Discovery Report', 'e02_008_101 Dining Hall Heading', 'e02_008_103 Nighttime Announcement Rules', 'e02_009_001 Locked Door Exploration', 'e02_009_021 Finding Byakuya Byakuya', 'e02_009_026 Locker Room Search', 'e02_009_101 Dorm Door Banging', 'e02_009_135 Dining Hall Morning', 'e02_009_136 Kitchen Tea Quest', 'e02_009_140 Warehouse Investigation Report', 'e02_009_141 Bathhouse Search Talk', 'e02_009_146 Bathroom Fortune Prediction', 'e02_010_022 Library Byakuya Encounter', 'e02_011_001 Girls Bathroom Interaction', 'e02_011_021 Bathroom Gate Exploration', 'e02_011_022 Library Investigation Observations', 'e02_011_101 Dormitory Exploration Hallway', 'e02_011_103 Morning Dorm Start', 'e02_013_101 Dining Hall Commute', 'e02_013_103 Monokuma Morning Announcement', 'e02_013_135 Empty Breakfast Meeting', 'e02_014_103 Free Time Start', 'e02_016_101 Celeste Night Stroll', 'e02_016_103 Dorm Room Surveillance', 'e02_017_135 Mondo Taka Confrontation', 'e02_017_144 Sauna Endurance Battle', 'e02_018_103 Sauna Duel Aftermath', 'e02_018_135 Mondo Taka Brotherhood', 'e02_019_103 Toko Library Invitation', 'e02_020_021 Toko Delusional Crush', 'e02_020_022 Spying on Byakuya', 'e02_021_103 Dormitory Investigation Start', 'e02_022_001 Gym Entrance Dread', 'e02_022_003 Gym Entrance Surveillance', 'e02_022_004 Hifumi Gym Ghost', 'e02_022_010 School Store Vending', 'e02_022_101 Gym Announcement Response', 'e02_022_103 Gym Emergency Gathering', 'e02_023_006 New Motive Reveal', 'e02_024_101 Dining Hall Hurry', 'e02_024_103 Motive Reflection Dread', 'e02_025_001 Byakuya Brainwash Suspicion', 'e02_025_021 School Gate Blocked', 'e02_025_022 Library Investigation Discovery', 'e02_025_101 Searching For Everyone', 'e02_025_135 Gathering After Announcement', 'e02_025_137 Trash Room Investigation', 'e02_026_026 Locker Room Suspicion Locker Room Discovery', 'e02_027_029 Chihiro Body Discovery', 'e02_028_003 Genocide Jack Evidence', 'e02_028_026 Locker Room Card-reader', 'e02_029_101 Toko Room Emergency', 'e02_030_021 Library Entrance Entry', 'e02_030_022 Library Archive Search', 'e02_030_025 Togami Library Secret', 'e02_032_001 Mondo Bathroom Regret', 'e02_032_003 Mailbox Area Investigation', 'e02_032_004 School Shop Investigation', 'e02_032_006 Gym Monitor Check', 'e02_032_009 AV Room Investigation', 'e02_032_010 School Store Investigation', 'e02_032_014 Classroom Monitor Check', 'e02_032_015 Classroom Surveillance Check', 'e02_032_016 Leave Area Prompt', 'e02_032_021 Togami Parts Ways', 'e02_032_022 Library Evidence Search', 'e02_032_025 Archive Evidence Search', 'e02_032_026 Hifumi Culprit Evidence', 'e02_032_027 Locker Room Investigation', 'e02_032_029 Kyoko Mystery Task', 'e02_032_030 Pool Area Investigation', 'e02_032_031 Classroom Surveillance Check', 'e02_032_032 Classroom Surveillance Check', 'e02_032_033', 'e02_032_101 Dormitory Investigation Check', 'e02_032_135 Hina Donut Break', 'e02_032_136 Kitchen Evidence Search', 'e02_032_137 Trash Room Investigation', 'e02_032_139 Laundry Room Investigation', 'e02_032_140 Warehouse Celeste Account', 'e02_032_141 Locker Room Investigation', 'e02_032_144 Bathhouse Investigation Check', 'e02_032_145 Sauna Investigation Check', 'e02_032_146 Fish Tank Investigation', 'e02_033_001 Red Door Entrance', 'e02_033_201 Toko Missing Search', 'e02_033_204 Trial Courtroom Entrance', 'e02_101_000 Trial Rules Introduction', 'e02_102_000 Trial Contradiction Search', 'e02_102_001 Trial Weapon Discussion', 'e02_103_000 Dumbbell Weapon Confirmation', 'e02_104_000 Genocide Jack Evidence', 'e02_104_001 Genocide Jack Accusation', 'e02_105_000 Police Archive Revelation', 'e02_106_000 Split Personality Realization', 'e02_107_000 Toko Personality Reveal', 'e02_108_000 Killer Identity Doubt', 'e02_108_001 Modus Operandi Match', 'e02_109_000 Murder Method Comparison', 'e02_110_000 Byakuya Gender Contradiction', 'e02_110_001 Byakuya Locker Room', 'e02_111_000 Byakuya Locker Rebuttal', 'e02_112_000 Hangman_s Toko Interruption', 'e02_112_001 Genocider Rope Contradiction', 'e02_113_000 Library Cord Mystery', 'e02_114_000 Locker Room Logic', 'e02_114_001 Locker Room Entry', 'e02_115_000 Broken Handbook Debate', 'e02_116_000 Body Re-examination Discovery', 'e02_117_000 Chihiro Gender Reveal', 'e02_118_000 Nonstop Debate Refutation', 'e02_118_001 Nonstop Debate Clues', 'e02_119_000 Celeste Witness Account', 'e02_120_000 Mondo Outburst Refutation', 'e02_120_001 Tracksuit Color Debate', 'e02_121_000 Mondo Slip Tongue', 'e02_122_000 Nonstop Debate Refutation', 'e02_122_001 Handbook Verification Debate', 'e02_123_000 Mondo Handbook Swap', 'e02_124_000 Closing Argument Case', 'e02_125_000 Mondo Evidence Confrontation', 'e02_127_000 Mondo Confession Admission', 'e02_150_000 White Noise Tutorial', 'e02_151_000 Truth Flashback Tutorial', 'e02_152_000 BTB Fever Tutorial', 'e02_195_000 Trial Jump Points', 'e02_196_000 Debate Jump Points', 'e02_197_000 Minigame Jump Points', 'e02_198_000 Wrong Verdict Ending', 'e02_199_000 Time Limit Failure', 'e02_200_000 Mondo Killer Reveal', 'e02_201_000 Mondo Post-Execution Mourning', 'e02_255_006 Trial Commencement Announcement']</pre></details>
+<div class="chapters">
+<div class="chapter" data-chapter="e02_000_003">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_003</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_004 Main Hall Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_004 Main Hall Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_006 Gym Exploration Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_006 Gym Exploration Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_009 AV Room Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_009 AV Room Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_009</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_010 School Store Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_010 School Store Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_010</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_014 Classroom One Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_014 Classroom One Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_014">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_014</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_015 Classroom Two Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_015 Classroom Two Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_015">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_015</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_016 Exit Area Prompt">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_016 Exit Area Prompt</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_016">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_016</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_022 Library Investigation Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_022 Library Investigation Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 138): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_026 Locker Room Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_026 Locker Room Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_026</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_030 Indoor Pool Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_030 Indoor Pool Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_030">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_030</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_031 Second Floor Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_031 Second Floor Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_031">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_031</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_032 Library Floor Two">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_032 Library Floor Two</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_032">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_032</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_033 Cleaning Closet Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_033 Cleaning Closet Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_033">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_033</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_037 Locker Room Poster">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_037 Locker Room Poster</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_037">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_037</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_103 Room Surveillance Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_103 Room Surveillance Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | MAKOTO NAEGI&quot; (line 76): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_135 School Observation Thoughts">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_135 School Observation Thoughts</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_136 Kitchen Investigation Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_136 Kitchen Investigation Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_136</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 69): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_137 Trash Room Surveillance">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_137 Trash Room Surveillance</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_139 Laundry Room Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_139 Laundry Room Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_139</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_140 Kitchen Pantry Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_140 Kitchen Pantry Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_140">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_140</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_141 Locker Room Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_141 Locker Room Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_141">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_141</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_144 Bathhouse Exploration Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_144 Bathhouse Exploration Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_144">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_144</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_145 Sauna Heat Source">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_145 Sauna Heat Source</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_145">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_145</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_000_146 Fish Tank Findings">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_000_146 Fish Tank Findings</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_000_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_000_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_001_103">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_001_103</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_001_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_001_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | MAKOTO NAEGI&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0002 | MAKOTO NAEGI&quot; (line 21): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 26): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 31): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 36): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0006 | MAKOTO NAEGI&quot; (line 41): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | MAKOTO NAEGI&quot; (line 46): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | MAKOTO NAEGI&quot; (line 51): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0009 | MAKOTO NAEGI&quot; (line 56): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 61): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0011 | MAKOTO NAEGI&quot; (line 66): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 71): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | MAKOTO NAEGI&quot; (line 76): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | MAKOTO NAEGI&quot; (line 81): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | MAKOTO NAEGI&quot; (line 86): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0016 | MAKOTO NAEGI&quot; (line 91): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_001_105 Body Disposal Aftermath">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_001_105 Body Disposal Aftermath</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_001_105">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_001_105</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | MAKOTO NAEGI&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 26): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 41): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | MONOKUMA&quot; (line 122): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_002_135 Post-Trial Dining Reunion">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_002_135 Post-Trial Dining Reunion</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_002_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_002_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | AOI ASAHINA&quot; (line 116): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0023 | MAKOTO NAEGI&quot; (line 188): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0047 | CHIHIRO FUJISAKI&quot; (line 369): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0049 | CHIHIRO FUJISAKI&quot; (line 384): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0071 | MAKOTO NAEGI&quot; (line 556): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_003_006 Gym Morning Exercise">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_003_006 Gym Morning Exercise</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_003_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_003_006</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 87): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_001 Second Floor Access">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_001 Second Floor Access</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 249): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_004 Trophy Case Omen">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_004 Trophy Case Omen</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_006 Surveillance Monitor Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_006 Surveillance Monitor Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_021 School Floor Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_021 School Floor Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_031 New Floor Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_031 New Floor Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_031">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_031</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_004_032 Monitor Surveillance Data">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_004_032 Monitor Surveillance Data</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_004_032">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_004_032</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_005_022 Library Investigation Start">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_005_022 Library Investigation Start</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_005_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_005_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0154 | MAKOTO NAEGI&quot; (line 1485): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_006_026 Pool Discovery Excitement">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_006_026 Pool Discovery Excitement</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_006_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_006_026</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | CHIHIRO FUJISAKI&quot; (line 174): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_006_027 Locker Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_006_027 Locker Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_006_027">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_006_027</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_006_030 Pool Surveillance Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_006_030 Pool Surveillance Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_006_030">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_006_030</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_007_135 Investigation Discovery Report">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_007_135 Investigation Discovery Report</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_007_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_007_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | BYAKUYA TOGAMI&quot; (line 225): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_008_101 Dining Hall Heading">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_008_101 Dining Hall Heading</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_008_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_008_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 138): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0013 | MAKOTO NAEGI&quot; (line 148): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_008_103 Nighttime Announcement Rules">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_008_103 Nighttime Announcement Rules</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_008_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_008_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0030 | MAKOTO NAEGI&quot; (line 281): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_001 Locked Door Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_001 Locked Door Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | MAKOTO NAEGI&quot; (line 16): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_021 Finding Byakuya Byakuya">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_021 Finding Byakuya Byakuya</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_026 Locker Room Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_026 Locker Room Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_026</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_101 Dorm Door Banging">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_101 Dorm Door Banging</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0030 | MAKOTO NAEGI&quot; (line 242): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0046 | MAKOTO NAEGI&quot; (line 410): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0048 | MAKOTO NAEGI&quot; (line 425): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_135 Dining Hall Morning">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_135 Dining Hall Morning</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0081 | MAKOTO NAEGI&quot; (line 643): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_136 Kitchen Tea Quest">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_136 Kitchen Tea Quest</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_136</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0017 | MAKOTO NAEGI&quot; (line 179): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_140 Warehouse Investigation Report">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_140 Warehouse Investigation Report</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_140">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_140</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_141 Bathhouse Search Talk">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_141 Bathhouse Search Talk</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_141">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_141</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_009_146 Bathroom Fortune Prediction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_009_146 Bathroom Fortune Prediction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_009_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_009_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_010_022 Library Byakuya Encounter">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_010_022 Library Byakuya Encounter</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_010_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_010_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 39): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0094 | CHIHIRO FUJISAKI&quot; (line 722): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0131 | MAKOTO NAEGI&quot; (line 1010): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_011_001 Girls Bathroom Interaction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_011_001 Girls Bathroom Interaction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_011_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_011_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | MAKOTO NAEGI&quot; (line 16): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_011_021 Bathroom Gate Exploration">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_011_021 Bathroom Gate Exploration</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_011_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_011_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_011_022 Library Investigation Observations">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_011_022 Library Investigation Observations</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_011_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_011_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | BYAKUYA TOGAMI&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0029 | MAKOTO NAEGI&quot; (line 354): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_011_101 Dormitory Exploration Hallway">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_011_101 Dormitory Exploration Hallway</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_011_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_011_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_011_103 Morning Dorm Start">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_011_103 Morning Dorm Start</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_011_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_011_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0023 | MAKOTO NAEGI&quot; (line 227): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_013_101 Dining Hall Commute">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_013_101 Dining Hall Commute</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_013_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_013_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_013_103 Monokuma Morning Announcement">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_013_103 Monokuma Morning Announcement</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_013_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_013_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0009 | MAKOTO NAEGI&quot; (line 100): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0016 | MAKOTO NAEGI&quot; (line 183): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_013_135 Empty Breakfast Meeting">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_013_135 Empty Breakfast Meeting</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_013_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_013_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0022 | CHIHIRO FUJISAKI&quot; (line 186): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0032 | CHIHIRO FUJISAKI&quot; (line 256): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_014_103 Free Time Start">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_014_103 Free Time Start</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_014_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_014_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 46): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 131): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0022 | MAKOTO NAEGI&quot; (line 232): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_016_101 Celeste Night Stroll">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_016_101 Celeste Night Stroll</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_016_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_016_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 80): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_016_103 Dorm Room Surveillance">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_016_103 Dorm Room Surveillance</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_016_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_016_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | MAKOTO NAEGI&quot; (line 60): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_017_135 Mondo Taka Confrontation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_017_135 Mondo Taka Confrontation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_017_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_017_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_017_144 Sauna Endurance Battle">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_017_144 Sauna Endurance Battle</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_017_144">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_017_144</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0053 | MAKOTO NAEGI&quot; (line 401): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_018_103 Sauna Duel Aftermath">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_018_103 Sauna Duel Aftermath</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_018_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_018_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 50): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_018_135 Mondo Taka Brotherhood">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_018_135 Mondo Taka Brotherhood</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_018_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_018_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_019_103 Toko Library Invitation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_019_103 Toko Library Invitation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_019_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_019_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | TOUKO FUKAWA&quot; (line 51): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0031 | MAKOTO NAEGI&quot; (line 271): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_020_021 Toko Delusional Crush">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_020_021 Toko Delusional Crush</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_020_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_020_021</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0001 | TOUKO FUKAWA&quot; (line 16): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | TOUKO FUKAWA&quot; (line 31): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0009 | MAKOTO NAEGI&quot; (line 75): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020 | MAKOTO NAEGI&quot; (line 145): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 183): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_020_022 Spying on Byakuya">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_020_022 Spying on Byakuya</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_020_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_020_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | BYAKUYA TOGAMI&quot; (line 100): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | TOUKO FUKAWA&quot; (line 149): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | BYAKUYA TOGAMI&quot; (line 159): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0027 | TOUKO FUKAWA&quot; (line 199): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0042 | MAKOTO NAEGI&quot; (line 368): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_021_103 Dormitory Investigation Start">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_021_103 Dormitory Investigation Start</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_021_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_021_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0006 | MAKOTO NAEGI&quot; (line 69): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_001 Gym Entrance Dread">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_001 Gym Entrance Dread</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 40): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_003 Gym Entrance Surveillance">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_003 Gym Entrance Surveillance</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_004 Hifumi Gym Ghost">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_004 Hifumi Gym Ghost</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_010 School Store Vending">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_010 School Store Vending</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_010</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_101 Gym Announcement Response">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_101 Gym Announcement Response</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 245): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0027 | MAKOTO NAEGI&quot; (line 255): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_022_103 Gym Emergency Gathering">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_022_103 Gym Emergency Gathering</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_022_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_022_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | MAKOTO NAEGI&quot; (line 61): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | MAKOTO NAEGI&quot; (line 121): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_023_006 New Motive Reveal">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_023_006 New Motive Reveal</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_023_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_023_006</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0082 | MAKOTO NAEGI&quot; (line 618): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0116 | HIFUMI YAMADA&quot; (line 883): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_024_101 Dining Hall Hurry">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_024_101 Dining Hall Hurry</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_024_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_024_101</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_024_103 Motive Reflection Dread">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_024_103 Motive Reflection Dread</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_024_103">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_024_103</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | NO NAME&quot; (line 211): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_001 Byakuya Brainwash Suspicion">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_001 Byakuya Brainwash Suspicion</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | MAKOTO NAEGI&quot; (line 117): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_021 School Gate Blocked">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_021 School Gate Blocked</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_022 Library Investigation Discovery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_022 Library Investigation Discovery</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 148): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_101 Searching For Everyone">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_101 Searching For Everyone</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 98): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0012 | MAKOTO NAEGI&quot; (line 113): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0018 | MAKOTO NAEGI&quot; (line 164): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020 | MAKOTO NAEGI&quot; (line 179): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0024 | MAKOTO NAEGI&quot; (line 214): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026 | MAKOTO NAEGI&quot; (line 229): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0031 | MAKOTO NAEGI&quot; (line 278): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0033 | MAKOTO NAEGI&quot; (line 293): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0037 | MAKOTO NAEGI&quot; (line 328): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0039 | MAKOTO NAEGI&quot; (line 343): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0046 | MAKOTO NAEGI&quot; (line 408): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0048 | MAKOTO NAEGI&quot; (line 423): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0056 | MAKOTO NAEGI&quot; (line 502): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0058 | MAKOTO NAEGI&quot; (line 517): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_135 Gathering After Announcement">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_135 Gathering After Announcement</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_135</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | BYAKUYA TOGAMI&quot; (line 38): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0006 | MAKOTO NAEGI&quot; (line 43): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_025_137 Trash Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_025_137 Trash Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_025_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_025_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_026_026 Locker Room Suspicion Locker Room Discovery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_026_026 Locker Room Suspicion Locker Room Discovery</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_026_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_026_026</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 124): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | MAKOTO NAEGI&quot; (line 235): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_027_029 Chihiro Body Discovery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_027_029 Chihiro Body Discovery</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_027_029">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_027_029</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020 | KIYOTAKA ISHIMARU&quot; (line 178): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0047 | HIFUMI YAMADA&quot; (line 402): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0071 | KYOUKO KIRIGIRI&quot; (line 589): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0075 | KYOUKO KIRIGIRI&quot; (line 627): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0112 | AOI ASAHINA&quot; (line 966): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0116 | TOUKO FUKAWA&quot; (line 1000): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0122 | AOI ASAHINA&quot; (line 1037): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0143 | TOUKO FUKAWA&quot; (line 1230): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0159 | MAKOTO NAEGI&quot; (line 1353): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0194 | MAKOTO NAEGI&quot; (line 1617): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0246 | MAKOTO NAEGI&quot; (line 2087): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0276 | BYAKUYA TOGAMI&quot; (line 2377): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_028_003 Genocide Jack Evidence">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_028_003 Genocide Jack Evidence</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_028_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_028_003</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0039 | BYAKUYA TOGAMI&quot; (line 289): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0041 | BYAKUYA TOGAMI&quot; (line 304): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_028_026 Locker Room Card-reader">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_028_026 Locker Room Card-reader</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_028_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_028_026</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 36): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0053 | MAKOTO NAEGI&quot; (line 460): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0099 | MAKOTO NAEGI&quot; (line 838): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_029_101 Toko Room Emergency">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_029_101 Toko Room Emergency</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_029_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_029_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0018 | BYAKUYA TOGAMI&quot; (line 123): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021 | BYAKUYA TOGAMI&quot; (line 143): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0028 | TOUKO FUKAWA&quot; (line 197): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0044 | MAKOTO NAEGI&quot; (line 314): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0061 | MAKOTO NAEGI&quot; (line 491): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0067 | TOUKO FUKAWA&quot; (line 556): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0074 | TOUKO FUKAWA&quot; (line 615): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_030_021 Library Entrance Entry">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_030_021 Library Entrance Entry</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_030_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_030_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_030_022 Library Archive Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_030_022 Library Archive Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_030_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_030_022</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_030_025 Togami Library Secret">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_030_025 Togami Library Secret</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_030_025">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_030_025</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0183 | MAKOTO NAEGI&quot; (line 1718): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0209 | MAKOTO NAEGI&quot; (line 1959): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0214 | MAKOTO NAEGI&quot; (line 2004): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_001 Mondo Bathroom Regret">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_001 Mondo Bathroom Regret</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MAKOTO NAEGI&quot; (line 28): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_003 Mailbox Area Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_003 Mailbox Area Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_003">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_003</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_004 School Shop Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_004 School Shop Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_004">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_004</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_006 Gym Monitor Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_006 Gym Monitor Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_009 AV Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_009 AV Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_009">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_009</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_010 School Store Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_010 School Store Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_010">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_010</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MAKOTO NAEGI&quot; (line 51): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_014 Classroom Monitor Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_014 Classroom Monitor Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_014">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_014</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_015 Classroom Surveillance Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_015 Classroom Surveillance Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_015">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_015</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_016 Leave Area Prompt">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_016 Leave Area Prompt</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_016">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_016</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_021 Togami Parts Ways">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_021 Togami Parts Ways</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_021">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_021</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_022 Library Evidence Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_022 Library Evidence Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_022">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_022</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0038 | MAKOTO NAEGI&quot; (line 401): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_025 Archive Evidence Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_025 Archive Evidence Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_025">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_025</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | MAKOTO NAEGI&quot; (line 82): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0018 | MAKOTO NAEGI&quot; (line 185): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_026 Hifumi Culprit Evidence">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_026 Hifumi Culprit Evidence</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_026">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_026</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_027 Locker Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_027 Locker Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_027">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_027</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_029 Kyoko Mystery Task">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_029 Kyoko Mystery Task</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_029">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_029</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_030 Pool Area Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_030 Pool Area Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_030">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_030</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_031 Classroom Surveillance Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_031 Classroom Surveillance Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_031">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_031</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_032 Classroom Surveillance Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_032 Classroom Surveillance Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_032">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_032</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_033">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_033</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_033">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_033</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_101 Dormitory Investigation Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_101 Dormitory Investigation Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_101">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_101</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | MAKOTO NAEGI&quot; (line 87): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | MAKOTO NAEGI&quot; (line 103): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_135 Hina Donut Break">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_135 Hina Donut Break</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_135">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_135</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_136 Kitchen Evidence Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_136 Kitchen Evidence Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_136">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_136</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_137 Trash Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_137 Trash Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_137">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_137</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_139 Laundry Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_139 Laundry Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_139">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_139</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_140 Warehouse Celeste Account">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_140 Warehouse Celeste Account</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_140">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_140</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | CELES&quot; (line 138): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0044 | CELES&quot; (line 342): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_141 Locker Room Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_141 Locker Room Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_141">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_141</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_144 Bathhouse Investigation Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_144 Bathhouse Investigation Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_144">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_144</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_145 Sauna Investigation Check">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_145 Sauna Investigation Check</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_145">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_145</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_032_146 Fish Tank Investigation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_032_146 Fish Tank Investigation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_032_146">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_032_146</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_033_001 Red Door Entrance">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_033_001 Red Door Entrance</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_033_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_033_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0002 | MAKOTO NAEGI&quot; (line 27): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_033_201 Toko Missing Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_033_201 Toko Missing Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_033_201">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_033_201</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0018 | MAKOTO NAEGI&quot; (line 142): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019 | MAKOTO NAEGI&quot; (line 152): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_033_204 Trial Courtroom Entrance">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_033_204 Trial Courtroom Entrance</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_033_204">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_033_204</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_101_000 Trial Rules Introduction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_101_000 Trial Rules Introduction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_101_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_101_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_102_000 Trial Contradiction Search">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_102_000 Trial Contradiction Search</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_102_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_102_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_102_001 Trial Weapon Discussion">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_102_001 Trial Weapon Discussion</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_102_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_102_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_103_000 Dumbbell Weapon Confirmation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_103_000 Dumbbell Weapon Confirmation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_103_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_103_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0007 | KYOUKO KIRIGIRI&quot; (line 65): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_104_000 Genocide Jack Evidence">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_104_000 Genocide Jack Evidence</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_104_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_104_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_104_001 Genocide Jack Accusation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_104_001 Genocide Jack Accusation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_104_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_104_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_105_000 Police Archive Revelation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_105_000 Police Archive Revelation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_105_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_105_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_106_000 Split Personality Realization">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_106_000 Split Personality Realization</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_106_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_106_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_107_000 Toko Personality Reveal">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_107_000 Toko Personality Reveal</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_107_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_107_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0018 | MAKOTO NAEGI&quot; (line 148): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0029 | TOUKO FUKAWA&quot; (line 244): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0089 | TOUKO FUKAWA&quot; (line 700): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0096 | TOUKO FUKAWA&quot; (line 757): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0111 | MAKOTO NAEGI&quot; (line 883): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0127 | MAKOTO NAEGI&quot; (line 1003): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_108_000 Killer Identity Doubt">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_108_000 Killer Identity Doubt</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_108_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_108_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_108_001 Modus Operandi Match">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_108_001 Modus Operandi Match</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_108_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_108_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | TOUKO FUKAWA&quot; (line 72): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_109_000 Murder Method Comparison">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_109_000 Murder Method Comparison</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="warn" data-name="e02_109_000">
+  <span class="file-badge badge-warn">WARN</span>
+  <div class="file-issues">
+    <div class="file-name">e02_109_000</div>
+    <div class="issue issue-WARN"><span class="check-tag">[source_changed]</span>&quot;0152 | MAKOTO NAEGI&quot; (line 1312): English source text changed<span class="detail-line">    Copy   : '&lt;CLT 4&gt;Actually, hold on...there *is* one person...\\n&lt;CLT&gt;'</span><span class="detail-line">    Working: '&lt;CLT 4&gt;Actually, hold on...there is one person...\\n&lt;CLT&gt;'</span></div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0169 | BYAKUYA TOGAMI&quot; (line 1467): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0171 | BYAKUYA TOGAMI&quot; (line 1477): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_110_000 Byakuya Gender Contradiction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_110_000 Byakuya Gender Contradiction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_110_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_110_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_110_001 Byakuya Locker Room">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_110_001 Byakuya Locker Room</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_110_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_110_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_111_000 Byakuya Locker Rebuttal">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_111_000 Byakuya Locker Rebuttal</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_111_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_111_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0017 | KYOUKO KIRIGIRI&quot; (line 145): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_112_000 Hangman_s Toko Interruption">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_112_000 Hangman_s Toko Interruption</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_112_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_112_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_112_001 Genocider Rope Contradiction">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_112_001 Genocider Rope Contradiction</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_112_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_112_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_113_000 Library Cord Mystery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_113_000 Library Cord Mystery</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_113_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_113_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | BYAKUYA TOGAMI&quot; (line 83): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0015 | MAKOTO NAEGI&quot; (line 122): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0024 | MAKOTO NAEGI&quot; (line 201): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0072 | BYAKUYA TOGAMI&quot; (line 620): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_114_000 Locker Room Logic">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_114_000 Locker Room Logic</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_114_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_114_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_114_001 Locker Room Entry">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_114_001 Locker Room Entry</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_114_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_114_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_115_000 Broken Handbook Debate">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_115_000 Broken Handbook Debate</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_115_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_115_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0017 | MAKOTO NAEGI&quot; (line 144): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_116_000 Body Re-examination Discovery">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_116_000 Body Re-examination Discovery</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_116_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_116_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | AOI ASAHINA&quot; (line 118): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0041 | KYOUKO KIRIGIRI&quot; (line 300): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_117_000 Chihiro Gender Reveal">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_117_000 Chihiro Gender Reveal</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_117_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_117_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0024 | MAKOTO NAEGI&quot; (line 227): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0033 | BYAKUYA TOGAMI&quot; (line 300): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_118_000 Nonstop Debate Refutation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_118_000 Nonstop Debate Refutation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_118_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_118_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_118_001 Nonstop Debate Clues">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_118_001 Nonstop Debate Clues</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_118_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_118_001</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0016 | HIFUMI YAMADA&quot; (line 120): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_119_000 Celeste Witness Account">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_119_000 Celeste Witness Account</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_119_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_119_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_120_000 Mondo Outburst Refutation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_120_000 Mondo Outburst Refutation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_120_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_120_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_120_001 Tracksuit Color Debate">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_120_001 Tracksuit Color Debate</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_120_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_120_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_121_000 Mondo Slip Tongue">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_121_000 Mondo Slip Tongue</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_121_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_121_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0040 | KYOUKO KIRIGIRI&quot; (line 312): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0042 | KYOUKO KIRIGIRI&quot; (line 322): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0044 | KYOUKO KIRIGIRI&quot; (line 332): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0070 | HIFUMI YAMADA&quot; (line 517): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_122_000 Nonstop Debate Refutation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_122_000 Nonstop Debate Refutation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_122_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_122_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_122_001 Handbook Verification Debate">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_122_001 Handbook Verification Debate</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_122_001">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_122_001</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_123_000 Mondo Handbook Swap">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_123_000 Mondo Handbook Swap</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_123_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_123_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_124_000 Closing Argument Case">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_124_000 Closing Argument Case</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_124_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_124_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_125_000 Mondo Evidence Confrontation">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_125_000 Mondo Evidence Confrontation</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_125_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_125_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_127_000 Mondo Confession Admission">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_127_000 Mondo Confession Admission</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_127_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_127_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_150_000 White Noise Tutorial">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_150_000 White Noise Tutorial</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_150_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_150_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0009 | NARRATION&quot; (line 108): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0010 | NARRATION&quot; (line 118): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_151_000 Truth Flashback Tutorial">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_151_000 Truth Flashback Tutorial</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_151_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_151_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0005 | NARRATION&quot; (line 53): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_152_000 BTB Fever Tutorial">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_152_000 BTB Fever Tutorial</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_152_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_152_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0008 | NARRATION&quot; (line 96): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_195_000 Trial Jump Points">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_195_000 Trial Jump Points</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_195_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_195_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_196_000 Debate Jump Points">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_196_000 Debate Jump Points</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_196_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_196_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_197_000 Minigame Jump Points">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_197_000 Minigame Jump Points</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_197_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_197_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_198_000 Wrong Verdict Ending">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_198_000 Wrong Verdict Ending</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_198_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_198_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_199_000 Time Limit Failure">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_199_000 Time Limit Failure</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_199_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_199_000</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_200_000 Mondo Killer Reveal">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_200_000 Mondo Killer Reveal</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_200_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_200_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0003 | MONOKUMA&quot; (line 33): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0004 | MONDO OOWADA&quot; (line 38): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0014 | MONDO OOWADA&quot; (line 99): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0062 | MONDO OOWADA&quot; (line 493): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0081 | MONDO OOWADA&quot; (line 652): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0085 | MONDO OOWADA&quot; (line 677): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0099 | MONDO OOWADA&quot; (line 782): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0156 | MAKOTO NAEGI&quot; (line 1245): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0180 | MONDO OOWADA&quot; (line 1412): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0211 | MONDO OOWADA&quot; (line 1650): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0216 | MAKOTO NAEGI&quot; (line 1685): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0239 | MONDO OOWADA&quot; (line 1871): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_201_000 Mondo Post-Execution Mourning">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_201_000 Mondo Post-Execution Mourning</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_201_000">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_201_000</div>
+    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0081 | MONOKUMA&quot; (line 625): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0101 | NO NAME&quot; (line 816): translation is identical to source text</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0112 | NO NAME&quot; (line 883): translation is identical to source text</div>
+
+  </div>
+</div>
+</div></div>
+<div class="chapter" data-chapter="e02_255_006 Trial Commencement Announcement">
+  <div class="chapter-header" onclick="toggleChapter(this)">
+    <span class="chapter-toggle">▾</span>
+    <span class="chapter-name">e02_255_006 Trial Commencement Announcement</span>
+    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+  </div>
+  <div class="chapter-body">
+<div class="file-row" data-status="ok" data-name="e02_255_006">
+  <span class="file-badge badge-ok">OK</span>
+  <div class="file-issues">
+    <div class="file-name">e02_255_006</div>
+    <span class="no-issues">No issues found</span>
+  </div>
+</div>
+</div></div>
+</div>
+<script>
+function toggleChapter(hdr) {
+  hdr.closest('.chapter').classList.toggle('collapsed');
+}
+function filterStatus(status) {
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden',
+      status !== 'all' && row.dataset.status !== status);
+  });
+}
+function filterSearch(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('.file-row').forEach(row => {
+    row.classList.toggle('hidden', q && !row.dataset.name.toLowerCase().includes(q));
+  });
+  // Show chapters that have visible rows
+  document.querySelectorAll('.chapter').forEach(ch => {
+    const any = Array.from(ch.querySelectorAll('.file-row'))
+                     .some(r => !r.classList.contains('hidden'));
+    ch.classList.toggle('hidden', !any);
+  });
+}
+</script></body></html>

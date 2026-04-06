@@ -643,7 +643,41 @@ def build_entry_block(entry: dict) -> str:
     lines.append('msgstr ""')
     return "\n".join(lines)
 
+# ─────────────────────────────────────────────
+#  AUTO-FIX: Split entries that are merged together without blank lines
+# ─────────────────────────────────────────────
+def reformat_po_spacing(content):
+    """
+    Tách các entry bằng cách:
+    1. Xóa toàn bộ dòng trống thừa
+    2. Thêm dòng trống khi: dòng không-# → dòng-#
+    3. Thêm dòng trống khi: dòng kết thúc bằng " → msgctxt (bắt msgstr/msgid/continuation lines)
+    """
+    # 1. Xóa toàn bộ dòng trống thừa
+    content = re.sub(r'\n\s*\n', '\n', content)
+    
+    # 2. Thêm dòng trống: dòng không-# → dòng-#
+    content = re.sub(r'\n([^#][^\n]*)\n(#)', r'\n\1\n\n\2', content)
+    
+    # 3. Thêm dòng trống: dòng kết thúc bằng " → msgctxt
+    # Matches any non-# line ending with quote (msgstr "", msgid "", or "continuation") followed by msgctxt
+    content = re.sub(r'\n([^#][^\n]*")\n(msgctxt)', r'\n\1\n\n\2', content)
+    
+    # 4. Đảm bảo file kết thúc bằng đúng 1 dấu xuống dòng
+    return content.strip() + "\n"
 
+def fix_file(filepath):
+    """Đọc, sửa định dạng và lưu lại file."""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        new_content = reformat_po_spacing(content)
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+    except Exception as e:
+        print(f"  [ERROR] Không thể sửa file {filepath}: {e}")
 # ─────────────────────────────────────────────
 #  AUTO-FIX: MALFORMED HEADER
 # ─────────────────────────────────────────────
@@ -818,6 +852,10 @@ def run():
             with open(work_path, 'wb') as _f:
                 _f.write(_raw_bytes.replace(b'\r\n', b'\n'))
             out.append(f"    ✔ [auto-fix] CRLF → LF normalized in {segment_id}")
+
+        # ── Auto-fix PO spacing ──────────────────────────────────
+        fix_file(work_path)
+        out.append(f"    ✔ [auto-fix] PO spacing reformatted in {segment_id}")
 
         # ── Auto-fix malformed header ─────────────────────────────
         if fix_header(work_path):
