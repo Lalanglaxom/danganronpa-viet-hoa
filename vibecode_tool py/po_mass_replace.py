@@ -65,7 +65,6 @@ def _apply_replacements(text, rules_list):
 
     for rule in rules_list:
         rule_changes = 0
-        char_filter = rule.get("character")
         scope = rule.get("scope")
         is_whole = rule.get("whole_word", False)
         label = rule.get("label", "Unknown Rule")
@@ -91,18 +90,16 @@ def _apply_replacements(text, rules_list):
     return text, total_changes, triggered_labels
 
 def process_po_file(filepath, active_criteria, log):
-    """Parses and updates a single .po file. Returns (change_count, triggered_labels)."""
+    """Parses and updates a single .po file. Returns list of change details."""
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
-    file_total_changes = 0
-    file_triggered_labels = set()
+    file_changes_details = []
     
     # Regex to find msgctxt and msgstr blocks
     pattern = re.compile(r'(msgctxt\s+"(.*?)"\s+msgid\s+".*?"\s+msgstr\s+")((?:[^"\\]|\\.)*?)"', re.DOTALL)
 
     def outer_replacer(match):
-        nonlocal file_total_changes
         header, context, msgstr = match.groups()
         
         relevant_rules = []
@@ -116,18 +113,23 @@ def process_po_file(filepath, active_criteria, log):
 
         new_msgstr, n, labels = _apply_replacements(msgstr, relevant_rules)
         if n > 0:
-            file_total_changes += n
-            file_triggered_labels.update(labels)
+            file_changes_details.append({
+                "context": context,
+                "old": msgstr,
+                "new": new_msgstr,
+                "count": n,
+                "labels": labels
+            })
             return f"{header}{new_msgstr}\""
         return match.group(0)
 
     updated = pattern.sub(outer_replacer, content)
 
-    if file_total_changes > 0:
+    if file_changes_details:
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(updated)
             
-    return file_total_changes, file_triggered_labels
+    return file_changes_details
 
 def process_path(path, active_criteria, log):
     """Walks the folder and applies selected JSON criteria."""
@@ -140,23 +142,30 @@ def process_path(path, active_criteria, log):
 
     files_to_process = []
     if os.path.isfile(path) and path.lower().endswith(".po"):
-        # Check if single file is a copy
         if "- copy" not in path.lower():
             files_to_process.append(path)
     elif os.path.isdir(path):
         for root, _, filenames in os.walk(path):
             for f in filenames:
-                # Ignores "- Copy", "-copy", " - Copy (2)", etc.
                 if f.lower().endswith(".po") and "- copy" not in f.lower():
                     files_to_process.append(os.path.join(root, f))
 
     for fpath in files_to_process:
-        changes, labels = process_po_file(fpath, active_criteria, log)
-        if changes > 0:
-            labels_str = ", ".join(sorted(labels))
-            log(f"✓ Updated: {os.path.basename(fpath)}", "good")
-            log(f"  └─ {changes} changes from: [{labels_str}]", "info")
-            total_files_changed += 1
-            total_replacements += changes
+            change_list = process_po_file(fpath, active_criteria, log)
+            
+            if change_list:
+                log(f"✓ Updated: {os.path.basename(fpath)}", "good")
+                
+                for item in change_list:
+                    # Log context in Gold
+                    log(f"  [{item['context']}]", "head")
+                    
+                    # Log sentences with custom color tags
+                    log(f"    - Old: \"{item['old'].strip()}\"", "old_sent")
+                    log(f"    + New: \"{item['new'].strip()}\"", "new_sent")
+                    
+                    total_replacements += item['count']
+                
+                total_files_changed += 1
 
     return total_files_changed, total_replacements

@@ -53,20 +53,25 @@ def save_config():
 
 
 # ══════════════════════════════════════════════════════════════════
-#  THEME: EXECUTION GOLD & CRIMSON 🏛️⚖️
+#  THEME: ULTIMATE GAMER (CHIAKI NANAMI) 🎮👾
 # ══════════════════════════════════════════════════════════════════
-BG       = "#1a0505"   
-BG2      = "#2d0a0a"   
-BG3      = "#4a1212"   
-ACCENT   = "#eab308"   
-ACCENT2  = "#881337"   
-TEXT     = "#fff7ed"   
-SUBTLE   = "#a8a29e"   
-GREEN    = "#a3e635"   
-RED      = "#f87171"   
-TAB_BG   = "#2d0a0a"   
-TAB_SEL  = "#eab308"   
-TAB_FG   = "#1a0505"   
+
+BG       = "#1c1c22"   # Dark handheld console grey
+BG2      = "#282a36"   # Deep slate (UI panels)
+BG3      = "#3b3e4f"   # Lighter slate (highlights)
+ACCENT   = "#98d9d6"   # Chiaki's Teal hoodie color
+ACCENT2  = "#f4b3c2"   # Soft Hair/Ribbon Pink
+TEXT     = "#eef2f3"   # Soft white
+SUBTLE   = "#7b8296"   # Muted blue-grey
+GREEN    = "#a5d6a7"   # Level up green
+RED      = "#ffab91"   # Game over red
+TAB_BG   = "#282a36"   # Inactive tab
+TAB_SEL  = "#98d9d6"   # Selected tab (Teal)
+TAB_FG   = "#1c1c22"   # Dark text on Teal tab
+
+# Custom sentence colors for Mass Replace
+OLD_SENT_CLR = "#f4b3c2" # Soft Pink (Old)
+NEW_SENT_CLR = "#98d9d6" # Teal (New)
 
 FONT       = ("Segoe UI", 9)
 FONT_BOLD  = ("Segoe UI", 9, "bold")
@@ -88,6 +93,10 @@ class _TabStream(io.StringIO):
         elif s.strip().startswith("✗") or s.strip().startswith("[ERROR]") or s.strip().startswith("⚠"): tag = "bad"
         elif s.strip().startswith("!") or s.strip().startswith("[SKIP") or s.strip().startswith("[NOT"): tag = "warn"
         elif s.startswith("═") or s.startswith("="): tag = "head"
+        elif s.strip().startswith("-"):
+            tag = "old_sent"
+        elif s.strip().startswith("+"):
+            tag = "new_sent"
         else: tag = "info"
         self._w.insert("end", s, tag)
         self._w.see("end")
@@ -108,6 +117,8 @@ def _make_log(parent) -> tk.Text:
     log.tag_config("warn", foreground="#ffcc80")
     log.tag_config("head", foreground=ACCENT)
     log.tag_config("info", foreground=SUBTLE)
+    log.tag_config("old_sent", foreground=OLD_SENT_CLR) # Custom tag for old text
+    log.tag_config("new_sent", foreground=NEW_SENT_CLR) # Custom tag for new text
     return log
 
 def _run_in_thread(fn, log: tk.Text, btn: tk.Button, btn_text: str):
@@ -180,7 +191,6 @@ def _open_file_system(filepath, mode="file"):
     except Exception as e: messagebox.showerror("Error", f"Could not open: {e}")
 
 def _launch_chrome_debug():
-    """Launches Chrome with remote debugging enabled from the C drive."""
     chrome_cmd = r'"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\ChromeDebug"'
     try:
         subprocess.Popen(chrome_cmd, shell=True)
@@ -198,11 +208,15 @@ def _build_simple_run_tab(notebook, title: str, module_name: str, run_fn_name: s
     hdr = tk.Frame(frame, bg=BG)
     hdr.pack(fill="x", padx=12, pady=(14, 6))
     tk.Label(hdr, text=title, bg=BG, fg=ACCENT, font=FONT_TITLE).pack(side="left")
+    
     path_vars = [_build_path_row(frame, label, config_key) for label, config_key in path_configs]
+    
+    # Pack btn_row to bottom FIRST
+    btn_row = tk.Frame(frame, bg=BG)
+    btn_row.pack(side="bottom", fill="x", padx=12, pady=(0, 12))
+
     _section_label(frame, "LOG")
     log = _make_log(frame)
-    btn_row = tk.Frame(frame, bg=BG)
-    btn_row.pack(fill="x", padx=12, pady=(0, 12))
 
     def _run():
         try:
@@ -235,10 +249,13 @@ def _build_gemini_tab(notebook):
     hdr.pack(fill="x", padx=12, pady=(14, 6))
     tk.Label(hdr, text="Gemini Translator", bg=BG, fg=ACCENT, font=FONT_TITLE).pack(side="left")
     path_var = _build_path_row(frame, "Translated Folder:", "gemini_folder")
+    
+    # Pack btn_row to bottom FIRST
+    btn_row = tk.Frame(frame, bg=BG)
+    btn_row.pack(side="bottom", fill="x", padx=12, pady=(0, 12))
+
     _section_label(frame, "LOG")
     log = _make_log(frame)
-    btn_row = tk.Frame(frame, bg=BG)
-    btn_row.pack(fill="x", padx=12, pady=(0, 12))
 
     def _run():
         try:
@@ -281,18 +298,42 @@ def _build_mass_replace_tab(notebook):
         if hasattr(mod, "CRITERIA"):
             criteria = mod.CRITERIA
             for c in criteria:
-                var = tk.BooleanVar(value=False); check_vars.append(var)
-                tk.Checkbutton(crit_inner, text=c["label"], variable=var, bg=BG2, fg=TEXT, selectcolor=BG3, activebackground=BG2, font=FONT).pack(anchor="w", padx=8, pady=2)
+                # --- DYNAMIC LABEL GENERATION ---
+                char = f"[{c.get('character')}] " if c.get('character') else ""
+                scope = f"({c.get('scope')}) " if c.get('scope') else ""
+                whole = "[Whole] " if c.get('whole_word') else ""
+                
+                # Show the first replacement pair as the main label
+                repls = c.get('replace', [])
+                pairs = f"{repls[0][0]} → {repls[0][1]}" if repls else "No Rules"
+                
+                # Combine them: [CHAR] (scope) [W] Find -> Replace
+                display_label = f"{char}{scope}{whole}{pairs}"
+                
+                var = tk.BooleanVar(value=False)
+                check_vars.append(var)
+                tk.Checkbutton(crit_inner, text=display_label, variable=var, 
+                               bg=BG2, fg=TEXT, selectcolor=BG3, 
+                               activebackground=BG2, font=FONT).pack(anchor="w", padx=8, pady=2)
     except Exception: pass
-    _section_label(frame, "LOG"); log = _make_log(frame)
-    btn_row = tk.Frame(frame, bg=BG); btn_row.pack(fill="x", padx=12, pady=(0, 12))
+    
+    # Pack btn_row to bottom FIRST
+    btn_row = tk.Frame(frame, bg=BG)
+    btn_row.pack(side="bottom", fill="x", padx=12, pady=(0, 12))
+
+    _section_label(frame, "LOG")
+    log = _make_log(frame)
+
     def _run():
         path = path_var.get().strip()
         if not path or "Drop" in path: print("⚠ Set path first."); return
         active = [c for c, v in zip(criteria, check_vars) if v.get()]
         if not active: print("⚠ Check criteria."); return
         def _log_fn(m, t="info"): print(f"✓ {m}" if t=="good" else f"✗ {m}" if t=="bad" else m)
-        print(f"═ Starting: {path}"); mod.process_path(path, active, _log_fn); print("═ Finished.")
+        print(f"═ Starting: {path}")
+        mod.process_path(path, active, _log_fn)
+        print("═ Finished.")
+    
     btn = _styled_btn(btn_row, "▶  Run Mass Replace", lambda: _run_in_thread(_run, log, btn, "▶  Run Mass Replace"))
     btn.pack(side="right")
 
@@ -335,16 +376,30 @@ def _build_search_tab(notebook):
     details = tk.Text(dt_f, bg=BG2, fg=TEXT, font=FONT_MONO, wrap="word", state="disabled", padx=8, pady=8, relief="flat")
     sb2 = tk.Scrollbar(dt_f, command=details.yview, bg=BG3); details.configure(yscrollcommand=sb2.set); sb2.pack(side="right", fill="y"); details.pack(side="left", fill="both", expand=True)
     details.tag_config("head", foreground=ACCENT); details.tag_config("info", foreground=SUBTLE)
+    # Thêm vào dưới nó (hoặc thay thế info):
+    details.tag_config("msgid_clr", foreground=OLD_SENT_CLR) # Màu Hồng nhạt giống Mass Replace
+    details.tag_config("msgstr_clr", foreground=GREEN)        # Màu Xanh lá "Level up" cho rực rỡ
     results_data = []
     def _on_s(e):
-        sel = tree.selection()
-        if not sel: b1.configure(state="disabled"); b2.configure(state="disabled"); return
-        res = results_data[int(tree.item(sel[0], "tags")[0])]
-        sel_path[0] = os.path.join(path_var.get().strip(), res['file'])
-        b1.configure(state="normal"); b2.configure(state="normal")
-        details.configure(state="normal"); details.delete("1.0", "end")
-        details.insert("end", f"File: {res['file']}\nContext: {res['msgctxt']}\n\n", "head")
-        details.insert("end", f"msgid:\n{res['msgid']}\n\nmsgstr:\n{res['msgstr']}\n", "info"); details.configure(state="disabled")
+            sel = tree.selection()
+            if not sel: b1.configure(state="disabled"); b2.configure(state="disabled"); return
+            res = results_data[int(tree.item(sel[0], "tags")[0])]
+            sel_path[0] = os.path.join(path_var.get().strip(), res['file'])
+            b1.configure(state="normal"); b2.configure(state="normal")
+            details.configure(state="normal"); details.delete("1.0", "end")
+            
+            # Tiêu đề File và Context (Giữ màu ACCENT)
+            details.insert("end", f"File: {res['file']}\nContext: {res['msgctxt']}\n\n", "head")
+            
+            # Phần msgid (Dùng màu hồng mới)
+            details.insert("end", "msgid:\n", "head")
+            details.insert("end", f"{res['msgid']}\n\n", "msgid_clr")
+            
+            # Phần msgstr (Dùng màu xanh lá mới)
+            details.insert("end", "msgstr:\n", "head")
+            details.insert("end", f"{res['msgstr']}\n", "msgstr_clr")
+            
+            details.configure(state="disabled")
     tree.bind("<<TreeviewSelect>>", _on_s)
     def _run_search():
         mod = importlib.import_module("po_search")
@@ -363,40 +418,21 @@ def _build_search_tab(notebook):
 class ToolkitApp:
     def __init__(self, root: tk.Tk):
         self.root = root
-        root.title("⚖️  PO Toolkit — Danganronpa TL")
+        root.title("🎮  PO Toolkit — Nanami Edition")
         root.configure(bg=BG); root.geometry("820x660"); root.minsize(700, 500)
         self._apply_theme(); self._build()
 
     def _apply_theme(self):
         style = ttk.Style()
-        try: 
-            style.theme_use("clam")
-        except Exception: 
-            pass
-
-        # 1. Base configuration for all tabs
+        try: style.theme_use("clam")
+        except: pass
         style.configure("TNotebook", background=BG, borderwidth=0, tabmargins=0)
-        
-        # We set a fixed padding and borderwidth 0 to prevent jumping
-        style.configure("TNotebook.Tab", 
-                        background=TAB_BG, 
-                        foreground=TEXT, 
-                        font=FONT_BOLD, 
-                        padding=(15, 8), 
-                        borderwidth=0,
-                        focuscolor=TAB_BG) # Removes the dotted focus line
-
-        # 2. The Map - This is where we stop the "shrinking/shifting"
+        style.configure("TNotebook.Tab", background=TAB_BG, foreground=TEXT, font=FONT_BOLD, padding=(15, 8), borderwidth=0, focuscolor=TAB_BG)
         style.map("TNotebook.Tab", 
                   background=[("selected", ACCENT)], 
                   foreground=[("selected", BG)],
-                  # This line is the key: it forces the padding to stay identical
-                  # when selected, preventing the "smaller/shifting" effect.
                   padding=[("selected", (15, 8))],
-                  # This prevents the tab from "sinking" or "lifting"
                   expand=[("selected", (0, 0, 0, 0))])
-
-        # Treeview styling (remains the same)
         style.configure("Treeview", background=BG2, foreground=TEXT, fieldbackground=BG2, borderwidth=0, font=FONT)
         style.configure("Treeview.Heading", background=BG3, foreground=ACCENT, font=FONT_BOLD, relief="flat")
         style.map("Treeview", background=[("selected", TAB_SEL)], foreground=[("selected", BG)])
@@ -404,7 +440,7 @@ class ToolkitApp:
     def _build(self):
         tk.Frame(self.root, bg=ACCENT2, height=4).pack(fill="x")
         title_bar = tk.Frame(self.root, bg=BG); title_bar.pack(fill="x", padx=16, pady=(10, 4))
-        tk.Label(title_bar, text="⚖️  PO Toolkit", bg=BG, fg=ACCENT, font=("Segoe UI", 16, "bold")).pack(side="left")
+        tk.Label(title_bar, text="🎮  PO Toolkit — Nanami Edition", bg=BG, fg=ACCENT, font=("Segoe UI", 16, "bold")).pack(side="left")
         nb = ttk.Notebook(self.root); nb.pack(fill="both", expand=True, padx=8, pady=(4, 8))
         _build_validator_tab(nb); _build_linebreak_tab(nb); _build_mass_replace_tab(nb); _build_search_tab(nb); _build_backup_tab(nb); _build_gemini_tab(nb)
 

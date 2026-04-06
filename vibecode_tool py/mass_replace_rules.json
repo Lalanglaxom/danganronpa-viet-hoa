@@ -1,16 +1,23 @@
 [
     {
-        "label": "General: Tớ → mình",
         "character": null,
         "scope": null,
         "whole_word": true,
         "replace": [
-            ["Tớ", "Mình"],
-            ["tớ", "mình"]
+            ["Tao", "Mình"],
+            ["tao", "mình"]
         ]
     },
     {
-        "label": "General: Tôi → mình",
+        "character": null,
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            ["Mình", "Tao"],
+            ["mình", "tao"]
+        ]
+    },
+    {
         "character": null,
         "scope": "clt:4",
         "whole_word": true,
@@ -20,7 +27,6 @@
         ]
     },
     {
-        "label": "KYOUKO: Tôi → tớ",
         "character": "KYOUKO",
         "scope": null,
         "whole_word": null,
@@ -30,7 +36,6 @@
         ]
     },
     {
-        "label": "MAKOTO: Tôi → tớ",
         "character": "MAKOTO",
         "scope": null,
         "whole_word": true,
@@ -40,7 +45,6 @@
         ]
     },
     {
-        "label": "KIYOTAKA: Tôi → tớ",
         "character": "KIYOTAKA",
         "scope": null,
         "whole_word": true,
@@ -50,7 +54,6 @@
         ]
     },
     {
-        "label": "TOUKO: Mình → Tôi",
         "character": "TOUKO",
         "scope": null,
         "whole_word": true,
@@ -60,7 +63,6 @@
         ]
     },
     {
-        "label": "Jack change",
         "character": null,
         "scope": null,
         "whole_word": false,
@@ -69,7 +71,6 @@
         ]
     },
     {
-        "label": "Fix truth bullet",
         "character": null,
         "scope": null,
         "whole_word": false,
@@ -78,7 +79,6 @@
         ]
     },
     {
-        "label": "Fix class trial",
         "character": null,
         "scope": null,
         "whole_word": false,
@@ -87,7 +87,6 @@
         ]
     },
     {
-        "label": "Thể thao → thể dục",
         "character": null,
         "scope": null,
         "whole_word": false,
@@ -98,7 +97,6 @@
         ]
     },
     {
-        "label": "Đồng Monokuma → Xu Monokuma",
         "character": null,
         "scope": null,
         "whole_word": false,
@@ -108,7 +106,6 @@
         ]
     },
     {
-        "label": "Thực đơn → Menu",
         "character": null,
         "scope": null,
         "whole_word": false,
