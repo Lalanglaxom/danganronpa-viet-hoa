@@ -369,11 +369,34 @@ class ToolkitApp:
 
     def _apply_theme(self):
         style = ttk.Style()
-        try: style.theme_use("clam")
-        except: pass
+        try: 
+            style.theme_use("clam")
+        except Exception: 
+            pass
+
+        # 1. Base configuration for all tabs
         style.configure("TNotebook", background=BG, borderwidth=0, tabmargins=0)
-        style.configure("TNotebook.Tab", background=TAB_BG, foreground=TEXT, font=FONT_BOLD, padding=(10, 6), borderwidth=0)
-        style.map("TNotebook.Tab", background=[("selected", ACCENT)], foreground=[("selected", BG)])
+        
+        # We set a fixed padding and borderwidth 0 to prevent jumping
+        style.configure("TNotebook.Tab", 
+                        background=TAB_BG, 
+                        foreground=TEXT, 
+                        font=FONT_BOLD, 
+                        padding=(15, 8), 
+                        borderwidth=0,
+                        focuscolor=TAB_BG) # Removes the dotted focus line
+
+        # 2. The Map - This is where we stop the "shrinking/shifting"
+        style.map("TNotebook.Tab", 
+                  background=[("selected", ACCENT)], 
+                  foreground=[("selected", BG)],
+                  # This line is the key: it forces the padding to stay identical
+                  # when selected, preventing the "smaller/shifting" effect.
+                  padding=[("selected", (15, 8))],
+                  # This prevents the tab from "sinking" or "lifting"
+                  expand=[("selected", (0, 0, 0, 0))])
+
+        # Treeview styling (remains the same)
         style.configure("Treeview", background=BG2, foreground=TEXT, fieldbackground=BG2, borderwidth=0, font=FONT)
         style.configure("Treeview.Heading", background=BG3, foreground=ACCENT, font=FONT_BOLD, relief="flat")
         style.map("Treeview", background=[("selected", TAB_SEL)], foreground=[("selected", BG)])

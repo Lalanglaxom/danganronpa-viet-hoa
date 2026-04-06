@@ -1,0 +1,120 @@
+[
+    {
+        "label": "General: Tớ → mình",
+        "character": null,
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            ["Tớ", "Mình"],
+            ["tớ", "mình"]
+        ]
+    },
+    {
+        "label": "General: Tôi → mình",
+        "character": null,
+        "scope": "clt:4",
+        "whole_word": true,
+        "replace": [
+            ["Tôi", "Mình"],
+            ["tôi", "mình"]
+        ]
+    },
+    {
+        "label": "KYOUKO: Tôi → tớ",
+        "character": "KYOUKO",
+        "scope": null,
+        "whole_word": null,
+        "replace": [
+            ["Tôi", "Tớ"],
+            ["tôi", "tớ"]
+        ]
+    },
+    {
+        "label": "MAKOTO: Tôi → tớ",
+        "character": "MAKOTO",
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            ["Tôi", "Tớ"],
+            ["tôi", "tớ"]
+        ]
+    },
+    {
+        "label": "KIYOTAKA: Tôi → tớ",
+        "character": "KIYOTAKA",
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            ["Tôi", "Tớ"],
+            ["tôi", "tớ"]
+        ]
+    },
+    {
+        "label": "TOUKO: Mình → Tôi",
+        "character": "TOUKO",
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            ["Mình", "Tôi"],
+            ["mình", "tôi"]
+        ]
+    },
+    {
+        "label": "Jack change",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["Genocide Jack", "Jack Đồ Tể"]
+        ]
+    },
+    {
+        "label": "Fix truth bullet",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["Đạn Hy Vọng", "Đạn Sự Thật"]
+        ]
+    },
+    {
+        "label": "Fix class trial",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["Lớp Xét Xử", "lớp xét xử"]
+        ]
+    },
+    {
+        "label": "Thể thao → thể dục",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["thể thao", "thể dục"],
+            ["Thể thao", "Thể dục"],
+            ["thể chất", "thể dục"]
+        ]
+    },
+    {
+        "label": "Đồng Monokuma → Xu Monokuma",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["Đồng Monokuma", "Xu Monokuma"],
+            ["đồng Monokuma", "xu Monokuma"]
+        ]
+    },
+    {
+        "label": "Thực đơn → Menu",
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["Thực đơn", "Menu"],
+            ["thực đơn", "menu"]
+        ]
+    }
+]
