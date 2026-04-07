@@ -1,0 +1,1433 @@
+========================================================================
+  PO VALIDATION REPORT
+  Generated : 2026-04-07 22:34:47
+  Folder    : D:/Danganronpa1Viet/danganronpa-viet-hoa/system
+  Rules     : built-in + clt_tag_integrity, not_copy_of_source, line_count_match
+========================================================================
+Selected path: D:/Danganronpa1Viet/danganronpa-viet-hoa/system
+Top-level folders: ['00_System Save System Prompts System Save Prompt', '01_Contents', '02_BgmName', '03_EventName', '04_ItemName', '05_ItemDescription', '06_KotodamaName', '07_KotodamaDesc1', '08_KotodamaDesc2', '09_KotodamaDesc3', '10_Special', '11_Report', '12_SkillName', '13_SkillDesc Trial Skill Buffs', '14_Rule', '15_OperateMode', '16_OperateDesc', '17_FloorName', '18_MapName School Map Locations', '19_HandBookMenu Handbook Menu Items', '20_HandBookDesc Handbook Function Descriptions', '21_Briefing Trial Preparation Menus', '22_Profile', '23_Anagram', '24_MovieName Execution Movie Files Execution Video Titles', '25_SkillDescHB Trial Skill Descriptions', '26_Menu Chapter Selection Menu', '27_ArtWorkName Character Art Gallery', '28_Credit SKIP Voice Cast Credits', '29_OperateModeR Gameplay Mode Labels', '30_OperateDescR Exploration Controls Help', '31_OperateSysR Game System Tutorials']
+
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  00_System Save System Prompts System Save Prompt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 00_System
+    ✔ [auto-fix] PO spacing reformatted in 00_System
+    ✔ [auto-fix] Header reformatted in 00_System
+
+  [OK]             00_System
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002" (line 23): translation is identical to source text
+    i [not_copy_of_source] Entry "0003" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0004" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0005" (line 42): translation is identical to source text
+    i [not_copy_of_source] Entry "0007" (line 52): translation is identical to source text
+    i [not_copy_of_source] Entry "0008" (line 58): translation is identical to source text
+    i [not_copy_of_source] Entry "0009" (line 64): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 69): translation is identical to source text
+    i [not_copy_of_source] Entry "0011" (line 74): translation is identical to source text
+    i [not_copy_of_source] Entry "0012" (line 79): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 94): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 102): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 109): translation is identical to source text
+    i [not_copy_of_source] Entry "0017" (line 118): translation is identical to source text
+    i [not_copy_of_source] Entry "0018" (line 123): translation is identical to source text
+    i [not_copy_of_source] Entry "0019" (line 130): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 135): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 140): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 145): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 150): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  01_Contents
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 01_Contents
+    ✔ [auto-fix] Header reformatted in 01_Contents
+
+  [OK]             01_Contents
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0008" (line 51): translation is identical to source text
+    i [not_copy_of_source] Entry "0009" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0011" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0017" (line 96): translation is identical to source text
+    i [not_copy_of_source] Entry "0018" (line 101): translation is identical to source text
+    i [not_copy_of_source] Entry "0019" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 111): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 132): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  02_BgmName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 02_BgmName
+    ✔ [auto-fix] Header reformatted in 02_BgmName
+
+  [OK]             02_BgmName
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  03_EventName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 03_EventName
+    ✔ [auto-fix] Header reformatted in 03_EventName
+
+  [OK]             03_EventName
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0150" (line 761): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  04_ItemName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 04_ItemName
+    ✔ [auto-fix] Header reformatted in 04_ItemName
+
+  [OK]             04_ItemName
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 261): translation is identical to source text
+    i [not_copy_of_source] Entry "0095" (line 486): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  05_ItemDescription
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 05_ItemDescription
+    ✔ [auto-fix] Header reformatted in 05_ItemDescription
+
+  [OK]             05_ItemDescription
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  06_KotodamaName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 06_KotodamaName
+    ✔ [auto-fix] Header reformatted in 06_KotodamaName
+
+  [OK]             06_KotodamaName
+    i [not_copy_of_source] Entry "0019" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 111): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 116): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 121): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 126): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 131): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 136): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0027" (line 146): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 151): translation is identical to source text
+    i [not_copy_of_source] Entry "0029" (line 156): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 161): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 246): translation is identical to source text
+    i [not_copy_of_source] Entry "0048" (line 251): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 256): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 261): translation is identical to source text
+    i [not_copy_of_source] Entry "0051" (line 266): translation is identical to source text
+    i [not_copy_of_source] Entry "0052" (line 271): translation is identical to source text
+    i [not_copy_of_source] Entry "0053" (line 276): translation is identical to source text
+    i [not_copy_of_source] Entry "0054" (line 281): translation is identical to source text
+    i [not_copy_of_source] Entry "0055" (line 286): translation is identical to source text
+    i [not_copy_of_source] Entry "0056" (line 291): translation is identical to source text
+    i [not_copy_of_source] Entry "0057" (line 296): translation is identical to source text
+    i [not_copy_of_source] Entry "0058" (line 301): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 306): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 311): translation is identical to source text
+    i [not_copy_of_source] Entry "0078" (line 401): translation is identical to source text
+    i [not_copy_of_source] Entry "0079" (line 406): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 416): translation is identical to source text
+    i [not_copy_of_source] Entry "0082" (line 421): translation is identical to source text
+    i [not_copy_of_source] Entry "0083" (line 426): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 431): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 436): translation is identical to source text
+    i [not_copy_of_source] Entry "0086" (line 441): translation is identical to source text
+    i [not_copy_of_source] Entry "0087" (line 446): translation is identical to source text
+    i [not_copy_of_source] Entry "0088" (line 451): translation is identical to source text
+    i [not_copy_of_source] Entry "0089" (line 456): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 461): translation is identical to source text
+    i [not_copy_of_source] Entry "0112" (line 571): translation is identical to source text
+    i [not_copy_of_source] Entry "0113" (line 576): translation is identical to source text
+    i [not_copy_of_source] Entry "0114" (line 581): translation is identical to source text
+    i [not_copy_of_source] Entry "0115" (line 586): translation is identical to source text
+    i [not_copy_of_source] Entry "0116" (line 591): translation is identical to source text
+    i [not_copy_of_source] Entry "0117" (line 596): translation is identical to source text
+    i [not_copy_of_source] Entry "0118" (line 601): translation is identical to source text
+    i [not_copy_of_source] Entry "0119" (line 606): translation is identical to source text
+    i [not_copy_of_source] Entry "0120" (line 611): translation is identical to source text
+    i [not_copy_of_source] Entry "0141" (line 716): translation is identical to source text
+    i [not_copy_of_source] Entry "0142" (line 721): translation is identical to source text
+    i [not_copy_of_source] Entry "0143" (line 726): translation is identical to source text
+    i [not_copy_of_source] Entry "0144" (line 731): translation is identical to source text
+    i [not_copy_of_source] Entry "0145" (line 736): translation is identical to source text
+    i [not_copy_of_source] Entry "0146" (line 741): translation is identical to source text
+    i [not_copy_of_source] Entry "0147" (line 746): translation is identical to source text
+    i [not_copy_of_source] Entry "0148" (line 751): translation is identical to source text
+    i [not_copy_of_source] Entry "0149" (line 756): translation is identical to source text
+    i [not_copy_of_source] Entry "0150" (line 761): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 856): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 861): translation is identical to source text
+    i [not_copy_of_source] Entry "0171" (line 866): translation is identical to source text
+    i [not_copy_of_source] Entry "0172" (line 871): translation is identical to source text
+    i [not_copy_of_source] Entry "0173" (line 876): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 881): translation is identical to source text
+    i [not_copy_of_source] Entry "0175" (line 886): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 891): translation is identical to source text
+    i [not_copy_of_source] Entry "0177" (line 896): translation is identical to source text
+    i [not_copy_of_source] Entry "0178" (line 901): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 906): translation is identical to source text
+    i [not_copy_of_source] Entry "0180" (line 911): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 926): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 931): translation is identical to source text
+    i [not_copy_of_source] Entry "0206" (line 1041): translation is identical to source text
+    i [not_copy_of_source] Entry "0207" (line 1046): translation is identical to source text
+    i [not_copy_of_source] Entry "0208" (line 1051): translation is identical to source text
+    i [not_copy_of_source] Entry "0209" (line 1056): translation is identical to source text
+    i [not_copy_of_source] Entry "0210" (line 1061): translation is identical to source text
+    i [not_copy_of_source] Entry "0213" (line 1076): translation is identical to source text
+    i [not_copy_of_source] Entry "0214" (line 1081): translation is identical to source text
+    i [not_copy_of_source] Entry "0215" (line 1086): translation is identical to source text
+    i [not_copy_of_source] Entry "0216" (line 1091): translation is identical to source text
+    i [not_copy_of_source] Entry "0217" (line 1096): translation is identical to source text
+    i [not_copy_of_source] Entry "0218" (line 1101): translation is identical to source text
+    i [not_copy_of_source] Entry "0219" (line 1106): translation is identical to source text
+    i [not_copy_of_source] Entry "0220" (line 1111): translation is identical to source text
+    i [not_copy_of_source] Entry "0221" (line 1116): translation is identical to source text
+    i [not_copy_of_source] Entry "0222" (line 1121): translation is identical to source text
+    i [not_copy_of_source] Entry "0223" (line 1126): translation is identical to source text
+    i [not_copy_of_source] Entry "0224" (line 1131): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 1136): translation is identical to source text
+    i [not_copy_of_source] Entry "0226" (line 1141): translation is identical to source text
+    i [not_copy_of_source] Entry "0227" (line 1146): translation is identical to source text
+    i [not_copy_of_source] Entry "0228" (line 1151): translation is identical to source text
+    i [not_copy_of_source] Entry "0229" (line 1156): translation is identical to source text
+    i [not_copy_of_source] Entry "0230" (line 1161): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 1166): translation is identical to source text
+    i [not_copy_of_source] Entry "0232" (line 1171): translation is identical to source text
+    i [not_copy_of_source] Entry "0233" (line 1176): translation is identical to source text
+    i [not_copy_of_source] Entry "0234" (line 1181): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 1186): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 1191): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 1196): translation is identical to source text
+    i [not_copy_of_source] Entry "0238" (line 1201): translation is identical to source text
+    i [not_copy_of_source] Entry "0239" (line 1206): translation is identical to source text
+    i [not_copy_of_source] Entry "0240" (line 1211): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 1216): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 1221): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 1226): translation is identical to source text
+    i [not_copy_of_source] Entry "0244" (line 1231): translation is identical to source text
+    i [not_copy_of_source] Entry "0245" (line 1236): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 1241): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 1246): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 1251): translation is identical to source text
+    i [not_copy_of_source] Entry "0249" (line 1256): translation is identical to source text
+    i [not_copy_of_source] Entry "0250" (line 1261): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 1266): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 1271): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 1276): translation is identical to source text
+    i [not_copy_of_source] Entry "0254" (line 1281): translation is identical to source text
+    i [not_copy_of_source] Entry "0255" (line 1286): translation is identical to source text
+    i [not_copy_of_source] Entry "0256" (line 1291): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  07_KotodamaDesc1
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 07_KotodamaDesc1
+    ✔ [auto-fix] PO spacing reformatted in 07_KotodamaDesc1
+    ✔ [auto-fix] Header reformatted in 07_KotodamaDesc1
+
+  [OK]             07_KotodamaDesc1
+    i [not_copy_of_source] Entry "0019" (line 464): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 469): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 474): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 479): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 484): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 489): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 494): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 499): translation is identical to source text
+    i [not_copy_of_source] Entry "0027" (line 504): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 509): translation is identical to source text
+    i [not_copy_of_source] Entry "0029" (line 514): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 519): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 968): translation is identical to source text
+    i [not_copy_of_source] Entry "0048" (line 973): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 978): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 983): translation is identical to source text
+    i [not_copy_of_source] Entry "0051" (line 988): translation is identical to source text
+    i [not_copy_of_source] Entry "0052" (line 993): translation is identical to source text
+    i [not_copy_of_source] Entry "0053" (line 998): translation is identical to source text
+    i [not_copy_of_source] Entry "0054" (line 1003): translation is identical to source text
+    i [not_copy_of_source] Entry "0055" (line 1008): translation is identical to source text
+    i [not_copy_of_source] Entry "0056" (line 1013): translation is identical to source text
+    i [not_copy_of_source] Entry "0057" (line 1018): translation is identical to source text
+    i [not_copy_of_source] Entry "0058" (line 1023): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 1028): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 1033): translation is identical to source text
+    i [not_copy_of_source] Entry "0078" (line 1452): translation is identical to source text
+    i [not_copy_of_source] Entry "0079" (line 1457): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 1462): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 1467): translation is identical to source text
+    i [not_copy_of_source] Entry "0082" (line 1472): translation is identical to source text
+    i [not_copy_of_source] Entry "0083" (line 1477): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 1482): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 1487): translation is identical to source text
+    i [not_copy_of_source] Entry "0086" (line 1492): translation is identical to source text
+    i [not_copy_of_source] Entry "0087" (line 1497): translation is identical to source text
+    i [not_copy_of_source] Entry "0088" (line 1502): translation is identical to source text
+    i [not_copy_of_source] Entry "0089" (line 1507): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 1512): translation is identical to source text
+    i [not_copy_of_source] Entry "0112" (line 2028): translation is identical to source text
+    i [not_copy_of_source] Entry "0113" (line 2033): translation is identical to source text
+    i [not_copy_of_source] Entry "0114" (line 2038): translation is identical to source text
+    i [not_copy_of_source] Entry "0115" (line 2043): translation is identical to source text
+    i [not_copy_of_source] Entry "0116" (line 2048): translation is identical to source text
+    i [not_copy_of_source] Entry "0117" (line 2053): translation is identical to source text
+    i [not_copy_of_source] Entry "0118" (line 2058): translation is identical to source text
+    i [not_copy_of_source] Entry "0119" (line 2063): translation is identical to source text
+    i [not_copy_of_source] Entry "0120" (line 2068): translation is identical to source text
+    i [not_copy_of_source] Entry "0141" (line 2625): translation is identical to source text
+    i [not_copy_of_source] Entry "0142" (line 2630): translation is identical to source text
+    i [not_copy_of_source] Entry "0143" (line 2635): translation is identical to source text
+    i [not_copy_of_source] Entry "0144" (line 2640): translation is identical to source text
+    i [not_copy_of_source] Entry "0145" (line 2645): translation is identical to source text
+    i [not_copy_of_source] Entry "0146" (line 2650): translation is identical to source text
+    i [not_copy_of_source] Entry "0147" (line 2655): translation is identical to source text
+    i [not_copy_of_source] Entry "0148" (line 2660): translation is identical to source text
+    i [not_copy_of_source] Entry "0149" (line 2665): translation is identical to source text
+    i [not_copy_of_source] Entry "0150" (line 2670): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 3082): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 3087): translation is identical to source text
+    i [not_copy_of_source] Entry "0171" (line 3092): translation is identical to source text
+    i [not_copy_of_source] Entry "0172" (line 3097): translation is identical to source text
+    i [not_copy_of_source] Entry "0173" (line 3102): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 3107): translation is identical to source text
+    i [not_copy_of_source] Entry "0175" (line 3112): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 3117): translation is identical to source text
+    i [not_copy_of_source] Entry "0177" (line 3122): translation is identical to source text
+    i [not_copy_of_source] Entry "0178" (line 3127): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 3132): translation is identical to source text
+    i [not_copy_of_source] Entry "0180" (line 3137): translation is identical to source text
+    i [not_copy_of_source] Entry "0181" (line 3142): translation is identical to source text
+    i [not_copy_of_source] Entry "0182" (line 3147): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 3152): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 3157): translation is identical to source text
+    i [not_copy_of_source] Entry "0206" (line 3437): translation is identical to source text
+    i [not_copy_of_source] Entry "0207" (line 3442): translation is identical to source text
+    i [not_copy_of_source] Entry "0208" (line 3447): translation is identical to source text
+    i [not_copy_of_source] Entry "0209" (line 3452): translation is identical to source text
+    i [not_copy_of_source] Entry "0210" (line 3457): translation is identical to source text
+    i [not_copy_of_source] Entry "0213" (line 3482): translation is identical to source text
+    i [not_copy_of_source] Entry "0214" (line 3487): translation is identical to source text
+    i [not_copy_of_source] Entry "0215" (line 3492): translation is identical to source text
+    i [not_copy_of_source] Entry "0216" (line 3497): translation is identical to source text
+    i [not_copy_of_source] Entry "0217" (line 3502): translation is identical to source text
+    i [not_copy_of_source] Entry "0218" (line 3507): translation is identical to source text
+    i [not_copy_of_source] Entry "0219" (line 3512): translation is identical to source text
+    i [not_copy_of_source] Entry "0220" (line 3517): translation is identical to source text
+    i [not_copy_of_source] Entry "0221" (line 3522): translation is identical to source text
+    i [not_copy_of_source] Entry "0222" (line 3527): translation is identical to source text
+    i [not_copy_of_source] Entry "0223" (line 3532): translation is identical to source text
+    i [not_copy_of_source] Entry "0224" (line 3537): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 3542): translation is identical to source text
+    i [not_copy_of_source] Entry "0226" (line 3547): translation is identical to source text
+    i [not_copy_of_source] Entry "0227" (line 3552): translation is identical to source text
+    i [not_copy_of_source] Entry "0228" (line 3557): translation is identical to source text
+    i [not_copy_of_source] Entry "0229" (line 3562): translation is identical to source text
+    i [not_copy_of_source] Entry "0230" (line 3567): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 3572): translation is identical to source text
+    i [not_copy_of_source] Entry "0232" (line 3577): translation is identical to source text
+    i [not_copy_of_source] Entry "0233" (line 3582): translation is identical to source text
+    i [not_copy_of_source] Entry "0234" (line 3587): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 3592): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 3597): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 3602): translation is identical to source text
+    i [not_copy_of_source] Entry "0238" (line 3607): translation is identical to source text
+    i [not_copy_of_source] Entry "0239" (line 3612): translation is identical to source text
+    i [not_copy_of_source] Entry "0240" (line 3617): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 3622): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 3627): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 3632): translation is identical to source text
+    i [not_copy_of_source] Entry "0244" (line 3637): translation is identical to source text
+    i [not_copy_of_source] Entry "0245" (line 3642): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 3647): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 3652): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 3657): translation is identical to source text
+    i [not_copy_of_source] Entry "0249" (line 3662): translation is identical to source text
+    i [not_copy_of_source] Entry "0250" (line 3667): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 3672): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 3677): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 3682): translation is identical to source text
+    i [not_copy_of_source] Entry "0254" (line 3687): translation is identical to source text
+    i [not_copy_of_source] Entry "0255" (line 3692): translation is identical to source text
+    i [not_copy_of_source] Entry "0256" (line 3697): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  08_KotodamaDesc2
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 08_KotodamaDesc2
+    ✔ [auto-fix] PO spacing reformatted in 08_KotodamaDesc2
+    ✔ [auto-fix] Header reformatted in 08_KotodamaDesc2
+
+  [OK]             08_KotodamaDesc2
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0004" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0005" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0006" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0007" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0008" (line 51): translation is identical to source text
+    i [not_copy_of_source] Entry "0009" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0011" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0012" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0017" (line 96): translation is identical to source text
+    i [not_copy_of_source] Entry "0019" (line 137): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 142): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 147): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 152): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 157): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 162): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 167): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 172): translation is identical to source text
+    i [not_copy_of_source] Entry "0027" (line 177): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 182): translation is identical to source text
+    i [not_copy_of_source] Entry "0029" (line 187): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 192): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 197): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 202): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 207): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 212): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 217): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 222): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 227): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 232): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 237): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 242): translation is identical to source text
+    i [not_copy_of_source] Entry "0041" (line 247): translation is identical to source text
+    i [not_copy_of_source] Entry "0042" (line 252): translation is identical to source text
+    i [not_copy_of_source] Entry "0043" (line 257): translation is identical to source text
+    i [not_copy_of_source] Entry "0044" (line 262): translation is identical to source text
+    i [not_copy_of_source] Entry "0045" (line 267): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 272): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 277): translation is identical to source text
+    i [not_copy_of_source] Entry "0048" (line 282): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 287): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 292): translation is identical to source text
+    i [not_copy_of_source] Entry "0051" (line 297): translation is identical to source text
+    i [not_copy_of_source] Entry "0052" (line 302): translation is identical to source text
+    i [not_copy_of_source] Entry "0053" (line 307): translation is identical to source text
+    i [not_copy_of_source] Entry "0054" (line 312): translation is identical to source text
+    i [not_copy_of_source] Entry "0055" (line 317): translation is identical to source text
+    i [not_copy_of_source] Entry "0056" (line 322): translation is identical to source text
+    i [not_copy_of_source] Entry "0057" (line 327): translation is identical to source text
+    i [not_copy_of_source] Entry "0058" (line 332): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 337): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 342): translation is identical to source text
+    i [not_copy_of_source] Entry "0061" (line 347): translation is identical to source text
+    i [not_copy_of_source] Entry "0062" (line 352): translation is identical to source text
+    i [not_copy_of_source] Entry "0063" (line 357): translation is identical to source text
+    i [not_copy_of_source] Entry "0064" (line 362): translation is identical to source text
+    i [not_copy_of_source] Entry "0065" (line 367): translation is identical to source text
+    i [not_copy_of_source] Entry "0066" (line 372): translation is identical to source text
+    i [not_copy_of_source] Entry "0067" (line 377): translation is identical to source text
+    i [not_copy_of_source] Entry "0068" (line 382): translation is identical to source text
+    i [not_copy_of_source] Entry "0069" (line 387): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 392): translation is identical to source text
+    i [not_copy_of_source] Entry "0071" (line 397): translation is identical to source text
+    i [not_copy_of_source] Entry "0072" (line 402): translation is identical to source text
+    i [not_copy_of_source] Entry "0073" (line 407): translation is identical to source text
+    i [not_copy_of_source] Entry "0074" (line 412): translation is identical to source text
+    i [not_copy_of_source] Entry "0075" (line 417): translation is identical to source text
+    i [not_copy_of_source] Entry "0076" (line 422): translation is identical to source text
+    i [not_copy_of_source] Entry "0077" (line 427): translation is identical to source text
+    i [not_copy_of_source] Entry "0078" (line 432): translation is identical to source text
+    i [not_copy_of_source] Entry "0079" (line 437): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 442): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 447): translation is identical to source text
+    i [not_copy_of_source] Entry "0082" (line 452): translation is identical to source text
+    i [not_copy_of_source] Entry "0083" (line 457): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 462): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 467): translation is identical to source text
+    i [not_copy_of_source] Entry "0086" (line 472): translation is identical to source text
+    i [not_copy_of_source] Entry "0087" (line 477): translation is identical to source text
+    i [not_copy_of_source] Entry "0088" (line 482): translation is identical to source text
+    i [not_copy_of_source] Entry "0089" (line 487): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 492): translation is identical to source text
+    i [not_copy_of_source] Entry "0091" (line 497): translation is identical to source text
+    i [not_copy_of_source] Entry "0092" (line 502): translation is identical to source text
+    i [not_copy_of_source] Entry "0093" (line 507): translation is identical to source text
+    i [not_copy_of_source] Entry "0094" (line 512): translation is identical to source text
+    i [not_copy_of_source] Entry "0095" (line 517): translation is identical to source text
+    i [not_copy_of_source] Entry "0096" (line 522): translation is identical to source text
+    i [not_copy_of_source] Entry "0097" (line 527): translation is identical to source text
+    i [not_copy_of_source] Entry "0099" (line 559): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 564): translation is identical to source text
+    i [not_copy_of_source] Entry "0101" (line 569): translation is identical to source text
+    i [not_copy_of_source] Entry "0102" (line 574): translation is identical to source text
+    i [not_copy_of_source] Entry "0103" (line 579): translation is identical to source text
+    i [not_copy_of_source] Entry "0104" (line 584): translation is identical to source text
+    i [not_copy_of_source] Entry "0105" (line 589): translation is identical to source text
+    i [not_copy_of_source] Entry "0106" (line 594): translation is identical to source text
+    i [not_copy_of_source] Entry "0107" (line 599): translation is identical to source text
+    i [not_copy_of_source] Entry "0108" (line 604): translation is identical to source text
+    i [not_copy_of_source] Entry "0109" (line 609): translation is identical to source text
+    i [not_copy_of_source] Entry "0110" (line 614): translation is identical to source text
+    i [not_copy_of_source] Entry "0111" (line 619): translation is identical to source text
+    i [not_copy_of_source] Entry "0112" (line 624): translation is identical to source text
+    i [not_copy_of_source] Entry "0113" (line 629): translation is identical to source text
+    i [not_copy_of_source] Entry "0114" (line 634): translation is identical to source text
+    i [not_copy_of_source] Entry "0115" (line 639): translation is identical to source text
+    i [not_copy_of_source] Entry "0116" (line 644): translation is identical to source text
+    i [not_copy_of_source] Entry "0117" (line 649): translation is identical to source text
+    i [not_copy_of_source] Entry "0118" (line 654): translation is identical to source text
+    i [not_copy_of_source] Entry "0119" (line 659): translation is identical to source text
+    i [not_copy_of_source] Entry "0120" (line 664): translation is identical to source text
+    i [not_copy_of_source] Entry "0121" (line 669): translation is identical to source text
+    i [not_copy_of_source] Entry "0122" (line 674): translation is identical to source text
+    i [not_copy_of_source] Entry "0123" (line 679): translation is identical to source text
+    i [not_copy_of_source] Entry "0124" (line 684): translation is identical to source text
+    i [not_copy_of_source] Entry "0126" (line 719): translation is identical to source text
+    i [not_copy_of_source] Entry "0127" (line 724): translation is identical to source text
+    i [not_copy_of_source] Entry "0128" (line 729): translation is identical to source text
+    i [not_copy_of_source] Entry "0129" (line 734): translation is identical to source text
+    i [not_copy_of_source] Entry "0130" (line 739): translation is identical to source text
+    i [not_copy_of_source] Entry "0131" (line 744): translation is identical to source text
+    i [not_copy_of_source] Entry "0132" (line 749): translation is identical to source text
+    i [not_copy_of_source] Entry "0133" (line 754): translation is identical to source text
+    i [not_copy_of_source] Entry "0135" (line 801): translation is identical to source text
+    i [not_copy_of_source] Entry "0136" (line 806): translation is identical to source text
+    i [not_copy_of_source] Entry "0137" (line 811): translation is identical to source text
+    i [not_copy_of_source] Entry "0138" (line 816): translation is identical to source text
+    i [not_copy_of_source] Entry "0139" (line 821): translation is identical to source text
+    i [not_copy_of_source] Entry "0140" (line 826): translation is identical to source text
+    i [not_copy_of_source] Entry "0141" (line 831): translation is identical to source text
+    i [not_copy_of_source] Entry "0142" (line 836): translation is identical to source text
+    i [not_copy_of_source] Entry "0143" (line 841): translation is identical to source text
+    i [not_copy_of_source] Entry "0144" (line 846): translation is identical to source text
+    i [not_copy_of_source] Entry "0145" (line 851): translation is identical to source text
+    i [not_copy_of_source] Entry "0146" (line 856): translation is identical to source text
+    i [not_copy_of_source] Entry "0147" (line 861): translation is identical to source text
+    i [not_copy_of_source] Entry "0148" (line 866): translation is identical to source text
+    i [not_copy_of_source] Entry "0149" (line 871): translation is identical to source text
+    i [not_copy_of_source] Entry "0150" (line 876): translation is identical to source text
+    i [not_copy_of_source] Entry "0151" (line 881): translation is identical to source text
+    i [not_copy_of_source] Entry "0152" (line 886): translation is identical to source text
+    i [not_copy_of_source] Entry "0155" (line 966): translation is identical to source text
+    i [not_copy_of_source] Entry "0156" (line 971): translation is identical to source text
+    i [not_copy_of_source] Entry "0157" (line 976): translation is identical to source text
+    i [not_copy_of_source] Entry "0158" (line 981): translation is identical to source text
+    i [not_copy_of_source] Entry "0159" (line 986): translation is identical to source text
+    i [not_copy_of_source] Entry "0160" (line 991): translation is identical to source text
+    i [not_copy_of_source] Entry "0161" (line 996): translation is identical to source text
+    i [not_copy_of_source] Entry "0164" (line 1057): translation is identical to source text
+    i [not_copy_of_source] Entry "0165" (line 1062): translation is identical to source text
+    i [not_copy_of_source] Entry "0167" (line 1099): translation is identical to source text
+    i [not_copy_of_source] Entry "0168" (line 1104): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 1109): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 1114): translation is identical to source text
+    i [not_copy_of_source] Entry "0171" (line 1119): translation is identical to source text
+    i [not_copy_of_source] Entry "0172" (line 1124): translation is identical to source text
+    i [not_copy_of_source] Entry "0173" (line 1129): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 1134): translation is identical to source text
+    i [not_copy_of_source] Entry "0175" (line 1139): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 1144): translation is identical to source text
+    i [not_copy_of_source] Entry "0177" (line 1149): translation is identical to source text
+    i [not_copy_of_source] Entry "0178" (line 1154): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 1159): translation is identical to source text
+    i [not_copy_of_source] Entry "0180" (line 1164): translation is identical to source text
+    i [not_copy_of_source] Entry "0181" (line 1169): translation is identical to source text
+    i [not_copy_of_source] Entry "0182" (line 1174): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 1179): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 1184): translation is identical to source text
+    i [not_copy_of_source] Entry "0185" (line 1189): translation is identical to source text
+    i [not_copy_of_source] Entry "0186" (line 1194): translation is identical to source text
+    i [not_copy_of_source] Entry "0187" (line 1199): translation is identical to source text
+    i [not_copy_of_source] Entry "0188" (line 1204): translation is identical to source text
+    i [not_copy_of_source] Entry "0189" (line 1209): translation is identical to source text
+    i [not_copy_of_source] Entry "0190" (line 1214): translation is identical to source text
+    i [not_copy_of_source] Entry "0191" (line 1219): translation is identical to source text
+    i [not_copy_of_source] Entry "0192" (line 1224): translation is identical to source text
+    i [not_copy_of_source] Entry "0193" (line 1229): translation is identical to source text
+    i [not_copy_of_source] Entry "0194" (line 1234): translation is identical to source text
+    i [not_copy_of_source] Entry "0195" (line 1239): translation is identical to source text
+    i [not_copy_of_source] Entry "0196" (line 1244): translation is identical to source text
+    i [not_copy_of_source] Entry "0197" (line 1249): translation is identical to source text
+    i [not_copy_of_source] Entry "0198" (line 1254): translation is identical to source text
+    i [not_copy_of_source] Entry "0199" (line 1259): translation is identical to source text
+    i [not_copy_of_source] Entry "0200" (line 1264): translation is identical to source text
+    i [not_copy_of_source] Entry "0201" (line 1269): translation is identical to source text
+    i [not_copy_of_source] Entry "0202" (line 1274): translation is identical to source text
+    i [not_copy_of_source] Entry "0203" (line 1279): translation is identical to source text
+    i [not_copy_of_source] Entry "0204" (line 1284): translation is identical to source text
+    i [not_copy_of_source] Entry "0205" (line 1289): translation is identical to source text
+    i [not_copy_of_source] Entry "0206" (line 1294): translation is identical to source text
+    i [not_copy_of_source] Entry "0207" (line 1299): translation is identical to source text
+    i [not_copy_of_source] Entry "0208" (line 1304): translation is identical to source text
+    i [not_copy_of_source] Entry "0209" (line 1309): translation is identical to source text
+    i [not_copy_of_source] Entry "0210" (line 1314): translation is identical to source text
+    i [not_copy_of_source] Entry "0211" (line 1319): translation is identical to source text
+    i [not_copy_of_source] Entry "0212" (line 1324): translation is identical to source text
+    i [not_copy_of_source] Entry "0213" (line 1329): translation is identical to source text
+    i [not_copy_of_source] Entry "0214" (line 1334): translation is identical to source text
+    i [not_copy_of_source] Entry "0215" (line 1339): translation is identical to source text
+    i [not_copy_of_source] Entry "0216" (line 1344): translation is identical to source text
+    i [not_copy_of_source] Entry "0217" (line 1349): translation is identical to source text
+    i [not_copy_of_source] Entry "0218" (line 1354): translation is identical to source text
+    i [not_copy_of_source] Entry "0219" (line 1359): translation is identical to source text
+    i [not_copy_of_source] Entry "0220" (line 1364): translation is identical to source text
+    i [not_copy_of_source] Entry "0221" (line 1369): translation is identical to source text
+    i [not_copy_of_source] Entry "0222" (line 1374): translation is identical to source text
+    i [not_copy_of_source] Entry "0223" (line 1379): translation is identical to source text
+    i [not_copy_of_source] Entry "0224" (line 1384): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 1389): translation is identical to source text
+    i [not_copy_of_source] Entry "0226" (line 1394): translation is identical to source text
+    i [not_copy_of_source] Entry "0227" (line 1399): translation is identical to source text
+    i [not_copy_of_source] Entry "0228" (line 1404): translation is identical to source text
+    i [not_copy_of_source] Entry "0229" (line 1409): translation is identical to source text
+    i [not_copy_of_source] Entry "0230" (line 1414): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 1419): translation is identical to source text
+    i [not_copy_of_source] Entry "0232" (line 1424): translation is identical to source text
+    i [not_copy_of_source] Entry "0233" (line 1429): translation is identical to source text
+    i [not_copy_of_source] Entry "0234" (line 1434): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 1439): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 1444): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 1449): translation is identical to source text
+    i [not_copy_of_source] Entry "0238" (line 1454): translation is identical to source text
+    i [not_copy_of_source] Entry "0239" (line 1459): translation is identical to source text
+    i [not_copy_of_source] Entry "0240" (line 1464): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 1469): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 1474): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 1479): translation is identical to source text
+    i [not_copy_of_source] Entry "0244" (line 1484): translation is identical to source text
+    i [not_copy_of_source] Entry "0245" (line 1489): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 1494): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 1499): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 1504): translation is identical to source text
+    i [not_copy_of_source] Entry "0249" (line 1509): translation is identical to source text
+    i [not_copy_of_source] Entry "0250" (line 1514): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 1519): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 1524): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 1529): translation is identical to source text
+    i [not_copy_of_source] Entry "0254" (line 1534): translation is identical to source text
+    i [not_copy_of_source] Entry "0255" (line 1539): translation is identical to source text
+    i [not_copy_of_source] Entry "0256" (line 1544): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  09_KotodamaDesc3
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 09_KotodamaDesc3
+    ✔ [auto-fix] Header reformatted in 09_KotodamaDesc3
+
+  [OK]             09_KotodamaDesc3
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0004" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0005" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0006" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0007" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0008" (line 51): translation is identical to source text
+    i [not_copy_of_source] Entry "0009" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0011" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0012" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0017" (line 96): translation is identical to source text
+    i [not_copy_of_source] Entry "0018" (line 101): translation is identical to source text
+    i [not_copy_of_source] Entry "0019" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 111): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 116): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 121): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 126): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 131): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 136): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0027" (line 146): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 151): translation is identical to source text
+    i [not_copy_of_source] Entry "0029" (line 156): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 161): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 181): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 186): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 206): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0041" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0042" (line 221): translation is identical to source text
+    i [not_copy_of_source] Entry "0043" (line 226): translation is identical to source text
+    i [not_copy_of_source] Entry "0044" (line 231): translation is identical to source text
+    i [not_copy_of_source] Entry "0045" (line 236): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 241): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 246): translation is identical to source text
+    i [not_copy_of_source] Entry "0048" (line 251): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 256): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 261): translation is identical to source text
+    i [not_copy_of_source] Entry "0051" (line 266): translation is identical to source text
+    i [not_copy_of_source] Entry "0052" (line 271): translation is identical to source text
+    i [not_copy_of_source] Entry "0053" (line 276): translation is identical to source text
+    i [not_copy_of_source] Entry "0054" (line 281): translation is identical to source text
+    i [not_copy_of_source] Entry "0055" (line 286): translation is identical to source text
+    i [not_copy_of_source] Entry "0056" (line 291): translation is identical to source text
+    i [not_copy_of_source] Entry "0057" (line 296): translation is identical to source text
+    i [not_copy_of_source] Entry "0058" (line 301): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 306): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 311): translation is identical to source text
+    i [not_copy_of_source] Entry "0061" (line 316): translation is identical to source text
+    i [not_copy_of_source] Entry "0062" (line 321): translation is identical to source text
+    i [not_copy_of_source] Entry "0063" (line 326): translation is identical to source text
+    i [not_copy_of_source] Entry "0064" (line 331): translation is identical to source text
+    i [not_copy_of_source] Entry "0065" (line 336): translation is identical to source text
+    i [not_copy_of_source] Entry "0066" (line 341): translation is identical to source text
+    i [not_copy_of_source] Entry "0067" (line 346): translation is identical to source text
+    i [not_copy_of_source] Entry "0068" (line 351): translation is identical to source text
+    i [not_copy_of_source] Entry "0069" (line 356): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 361): translation is identical to source text
+    i [not_copy_of_source] Entry "0071" (line 366): translation is identical to source text
+    i [not_copy_of_source] Entry "0072" (line 371): translation is identical to source text
+    i [not_copy_of_source] Entry "0073" (line 376): translation is identical to source text
+    i [not_copy_of_source] Entry "0074" (line 381): translation is identical to source text
+    i [not_copy_of_source] Entry "0075" (line 386): translation is identical to source text
+    i [not_copy_of_source] Entry "0076" (line 391): translation is identical to source text
+    i [not_copy_of_source] Entry "0077" (line 396): translation is identical to source text
+    i [not_copy_of_source] Entry "0078" (line 401): translation is identical to source text
+    i [not_copy_of_source] Entry "0079" (line 406): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 416): translation is identical to source text
+    i [not_copy_of_source] Entry "0082" (line 421): translation is identical to source text
+    i [not_copy_of_source] Entry "0083" (line 426): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 431): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 436): translation is identical to source text
+    i [not_copy_of_source] Entry "0086" (line 441): translation is identical to source text
+    i [not_copy_of_source] Entry "0087" (line 446): translation is identical to source text
+    i [not_copy_of_source] Entry "0088" (line 451): translation is identical to source text
+    i [not_copy_of_source] Entry "0089" (line 456): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 461): translation is identical to source text
+    i [not_copy_of_source] Entry "0091" (line 466): translation is identical to source text
+    i [not_copy_of_source] Entry "0092" (line 471): translation is identical to source text
+    i [not_copy_of_source] Entry "0093" (line 476): translation is identical to source text
+    i [not_copy_of_source] Entry "0094" (line 481): translation is identical to source text
+    i [not_copy_of_source] Entry "0095" (line 486): translation is identical to source text
+    i [not_copy_of_source] Entry "0096" (line 491): translation is identical to source text
+    i [not_copy_of_source] Entry "0097" (line 496): translation is identical to source text
+    i [not_copy_of_source] Entry "0098" (line 501): translation is identical to source text
+    i [not_copy_of_source] Entry "0099" (line 506): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 511): translation is identical to source text
+    i [not_copy_of_source] Entry "0101" (line 516): translation is identical to source text
+    i [not_copy_of_source] Entry "0102" (line 521): translation is identical to source text
+    i [not_copy_of_source] Entry "0103" (line 526): translation is identical to source text
+    i [not_copy_of_source] Entry "0104" (line 531): translation is identical to source text
+    i [not_copy_of_source] Entry "0105" (line 536): translation is identical to source text
+    i [not_copy_of_source] Entry "0106" (line 541): translation is identical to source text
+    i [not_copy_of_source] Entry "0107" (line 546): translation is identical to source text
+    i [not_copy_of_source] Entry "0108" (line 551): translation is identical to source text
+    i [not_copy_of_source] Entry "0109" (line 556): translation is identical to source text
+    i [not_copy_of_source] Entry "0110" (line 561): translation is identical to source text
+    i [not_copy_of_source] Entry "0111" (line 566): translation is identical to source text
+    i [not_copy_of_source] Entry "0112" (line 571): translation is identical to source text
+    i [not_copy_of_source] Entry "0113" (line 576): translation is identical to source text
+    i [not_copy_of_source] Entry "0114" (line 581): translation is identical to source text
+    i [not_copy_of_source] Entry "0115" (line 586): translation is identical to source text
+    i [not_copy_of_source] Entry "0116" (line 591): translation is identical to source text
+    i [not_copy_of_source] Entry "0117" (line 596): translation is identical to source text
+    i [not_copy_of_source] Entry "0118" (line 601): translation is identical to source text
+    i [not_copy_of_source] Entry "0119" (line 606): translation is identical to source text
+    i [not_copy_of_source] Entry "0120" (line 611): translation is identical to source text
+    i [not_copy_of_source] Entry "0121" (line 616): translation is identical to source text
+    i [not_copy_of_source] Entry "0122" (line 621): translation is identical to source text
+    i [not_copy_of_source] Entry "0123" (line 626): translation is identical to source text
+    i [not_copy_of_source] Entry "0124" (line 631): translation is identical to source text
+    i [not_copy_of_source] Entry "0125" (line 636): translation is identical to source text
+    i [not_copy_of_source] Entry "0126" (line 641): translation is identical to source text
+    i [not_copy_of_source] Entry "0127" (line 646): translation is identical to source text
+    i [not_copy_of_source] Entry "0128" (line 651): translation is identical to source text
+    i [not_copy_of_source] Entry "0129" (line 656): translation is identical to source text
+    i [not_copy_of_source] Entry "0130" (line 661): translation is identical to source text
+    i [not_copy_of_source] Entry "0131" (line 666): translation is identical to source text
+    i [not_copy_of_source] Entry "0132" (line 671): translation is identical to source text
+    i [not_copy_of_source] Entry "0133" (line 676): translation is identical to source text
+    i [not_copy_of_source] Entry "0134" (line 681): translation is identical to source text
+    i [not_copy_of_source] Entry "0135" (line 686): translation is identical to source text
+    i [not_copy_of_source] Entry "0136" (line 691): translation is identical to source text
+    i [not_copy_of_source] Entry "0137" (line 696): translation is identical to source text
+    i [not_copy_of_source] Entry "0138" (line 701): translation is identical to source text
+    i [not_copy_of_source] Entry "0139" (line 706): translation is identical to source text
+    i [not_copy_of_source] Entry "0140" (line 711): translation is identical to source text
+    i [not_copy_of_source] Entry "0141" (line 716): translation is identical to source text
+    i [not_copy_of_source] Entry "0142" (line 721): translation is identical to source text
+    i [not_copy_of_source] Entry "0143" (line 726): translation is identical to source text
+    i [not_copy_of_source] Entry "0144" (line 731): translation is identical to source text
+    i [not_copy_of_source] Entry "0145" (line 736): translation is identical to source text
+    i [not_copy_of_source] Entry "0146" (line 741): translation is identical to source text
+    i [not_copy_of_source] Entry "0147" (line 746): translation is identical to source text
+    i [not_copy_of_source] Entry "0148" (line 751): translation is identical to source text
+    i [not_copy_of_source] Entry "0149" (line 756): translation is identical to source text
+    i [not_copy_of_source] Entry "0150" (line 761): translation is identical to source text
+    i [not_copy_of_source] Entry "0151" (line 766): translation is identical to source text
+    i [not_copy_of_source] Entry "0152" (line 771): translation is identical to source text
+    i [not_copy_of_source] Entry "0153" (line 776): translation is identical to source text
+    i [not_copy_of_source] Entry "0154" (line 781): translation is identical to source text
+    i [not_copy_of_source] Entry "0155" (line 786): translation is identical to source text
+    i [not_copy_of_source] Entry "0156" (line 791): translation is identical to source text
+    i [not_copy_of_source] Entry "0157" (line 796): translation is identical to source text
+    i [not_copy_of_source] Entry "0158" (line 801): translation is identical to source text
+    i [not_copy_of_source] Entry "0159" (line 806): translation is identical to source text
+    i [not_copy_of_source] Entry "0160" (line 811): translation is identical to source text
+    i [not_copy_of_source] Entry "0161" (line 816): translation is identical to source text
+    i [not_copy_of_source] Entry "0162" (line 821): translation is identical to source text
+    i [not_copy_of_source] Entry "0163" (line 826): translation is identical to source text
+    i [not_copy_of_source] Entry "0164" (line 831): translation is identical to source text
+    i [not_copy_of_source] Entry "0165" (line 836): translation is identical to source text
+    i [not_copy_of_source] Entry "0166" (line 841): translation is identical to source text
+    i [not_copy_of_source] Entry "0167" (line 846): translation is identical to source text
+    i [not_copy_of_source] Entry "0168" (line 851): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 856): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 861): translation is identical to source text
+    i [not_copy_of_source] Entry "0171" (line 866): translation is identical to source text
+    i [not_copy_of_source] Entry "0172" (line 871): translation is identical to source text
+    i [not_copy_of_source] Entry "0173" (line 876): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 881): translation is identical to source text
+    i [not_copy_of_source] Entry "0175" (line 886): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 891): translation is identical to source text
+    i [not_copy_of_source] Entry "0177" (line 896): translation is identical to source text
+    i [not_copy_of_source] Entry "0178" (line 901): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 906): translation is identical to source text
+    i [not_copy_of_source] Entry "0180" (line 911): translation is identical to source text
+    i [not_copy_of_source] Entry "0181" (line 916): translation is identical to source text
+    i [not_copy_of_source] Entry "0182" (line 921): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 926): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 931): translation is identical to source text
+    i [not_copy_of_source] Entry "0185" (line 936): translation is identical to source text
+    i [not_copy_of_source] Entry "0186" (line 941): translation is identical to source text
+    i [not_copy_of_source] Entry "0187" (line 946): translation is identical to source text
+    i [not_copy_of_source] Entry "0188" (line 951): translation is identical to source text
+    i [not_copy_of_source] Entry "0189" (line 956): translation is identical to source text
+    i [not_copy_of_source] Entry "0190" (line 961): translation is identical to source text
+    i [not_copy_of_source] Entry "0191" (line 966): translation is identical to source text
+    i [not_copy_of_source] Entry "0192" (line 971): translation is identical to source text
+    i [not_copy_of_source] Entry "0193" (line 976): translation is identical to source text
+    i [not_copy_of_source] Entry "0194" (line 981): translation is identical to source text
+    i [not_copy_of_source] Entry "0195" (line 986): translation is identical to source text
+    i [not_copy_of_source] Entry "0196" (line 991): translation is identical to source text
+    i [not_copy_of_source] Entry "0197" (line 996): translation is identical to source text
+    i [not_copy_of_source] Entry "0198" (line 1001): translation is identical to source text
+    i [not_copy_of_source] Entry "0199" (line 1006): translation is identical to source text
+    i [not_copy_of_source] Entry "0200" (line 1011): translation is identical to source text
+    i [not_copy_of_source] Entry "0201" (line 1016): translation is identical to source text
+    i [not_copy_of_source] Entry "0202" (line 1021): translation is identical to source text
+    i [not_copy_of_source] Entry "0203" (line 1026): translation is identical to source text
+    i [not_copy_of_source] Entry "0204" (line 1031): translation is identical to source text
+    i [not_copy_of_source] Entry "0205" (line 1036): translation is identical to source text
+    i [not_copy_of_source] Entry "0206" (line 1041): translation is identical to source text
+    i [not_copy_of_source] Entry "0207" (line 1046): translation is identical to source text
+    i [not_copy_of_source] Entry "0208" (line 1051): translation is identical to source text
+    i [not_copy_of_source] Entry "0209" (line 1056): translation is identical to source text
+    i [not_copy_of_source] Entry "0210" (line 1061): translation is identical to source text
+    i [not_copy_of_source] Entry "0211" (line 1066): translation is identical to source text
+    i [not_copy_of_source] Entry "0212" (line 1071): translation is identical to source text
+    i [not_copy_of_source] Entry "0213" (line 1076): translation is identical to source text
+    i [not_copy_of_source] Entry "0214" (line 1081): translation is identical to source text
+    i [not_copy_of_source] Entry "0215" (line 1086): translation is identical to source text
+    i [not_copy_of_source] Entry "0216" (line 1091): translation is identical to source text
+    i [not_copy_of_source] Entry "0217" (line 1096): translation is identical to source text
+    i [not_copy_of_source] Entry "0218" (line 1101): translation is identical to source text
+    i [not_copy_of_source] Entry "0219" (line 1106): translation is identical to source text
+    i [not_copy_of_source] Entry "0220" (line 1111): translation is identical to source text
+    i [not_copy_of_source] Entry "0221" (line 1116): translation is identical to source text
+    i [not_copy_of_source] Entry "0222" (line 1121): translation is identical to source text
+    i [not_copy_of_source] Entry "0223" (line 1126): translation is identical to source text
+    i [not_copy_of_source] Entry "0224" (line 1131): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 1136): translation is identical to source text
+    i [not_copy_of_source] Entry "0226" (line 1141): translation is identical to source text
+    i [not_copy_of_source] Entry "0227" (line 1146): translation is identical to source text
+    i [not_copy_of_source] Entry "0228" (line 1151): translation is identical to source text
+    i [not_copy_of_source] Entry "0229" (line 1156): translation is identical to source text
+    i [not_copy_of_source] Entry "0230" (line 1161): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 1166): translation is identical to source text
+    i [not_copy_of_source] Entry "0232" (line 1171): translation is identical to source text
+    i [not_copy_of_source] Entry "0233" (line 1176): translation is identical to source text
+    i [not_copy_of_source] Entry "0234" (line 1181): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 1186): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 1191): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 1196): translation is identical to source text
+    i [not_copy_of_source] Entry "0238" (line 1201): translation is identical to source text
+    i [not_copy_of_source] Entry "0239" (line 1206): translation is identical to source text
+    i [not_copy_of_source] Entry "0240" (line 1211): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 1216): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 1221): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 1226): translation is identical to source text
+    i [not_copy_of_source] Entry "0244" (line 1231): translation is identical to source text
+    i [not_copy_of_source] Entry "0245" (line 1236): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 1241): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 1246): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 1251): translation is identical to source text
+    i [not_copy_of_source] Entry "0249" (line 1256): translation is identical to source text
+    i [not_copy_of_source] Entry "0250" (line 1261): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 1266): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 1271): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 1276): translation is identical to source text
+    i [not_copy_of_source] Entry "0254" (line 1281): translation is identical to source text
+    i [not_copy_of_source] Entry "0255" (line 1286): translation is identical to source text
+    i [not_copy_of_source] Entry "0256" (line 1291): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  10_Special
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 10_Special
+    ✔ [auto-fix] Header reformatted in 10_Special
+
+  [OK]             10_Special
+    i [not_copy_of_source] Entry "0031" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 181): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 186): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 206): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0041" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0042" (line 221): translation is identical to source text
+    i [not_copy_of_source] Entry "0043" (line 226): translation is identical to source text
+    i [not_copy_of_source] Entry "0044" (line 231): translation is identical to source text
+    i [not_copy_of_source] Entry "0045" (line 236): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  11_Report
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 11_Report
+    ✔ [auto-fix] Header reformatted in 11_Report
+
+  [OK]             11_Report
+    i [not_copy_of_source] Entry "0067" (line 972): translation is identical to source text
+    i [not_copy_of_source] Entry "0068" (line 977): translation is identical to source text
+    i [not_copy_of_source] Entry "0069" (line 982): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 987): translation is identical to source text
+    i [not_copy_of_source] Entry "0071" (line 992): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  12_SkillName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 12_SkillName
+    ✔ [auto-fix] Header reformatted in 12_SkillName
+
+  [OK]             12_SkillName
+    i [not_copy_of_source] Entry "0029" (line 156): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 161): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 176): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 181): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 186): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 206): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 241): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  13_SkillDesc Trial Skill Buffs
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 13_SkillDesc
+    ✔ [auto-fix] PO spacing reformatted in 13_SkillDesc
+    ✔ [auto-fix] Header reformatted in 13_SkillDesc
+
+  [OK]             13_SkillDesc
+    i [not_copy_of_source] Entry "0029" (line 463): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 468): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 473): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 478): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 483): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 488): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 493): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 498): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 503): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 508): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 513): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 518): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  14_Rule
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 14_Rule
+    ✔ [auto-fix] Header reformatted in 14_Rule
+
+  [OK]             14_Rule
+    i [not_copy_of_source] Entry "0013" (line 149): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 154): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 159): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  15_OperateMode
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 15_OperateMode
+    ✔ [auto-fix] Header reformatted in 15_OperateMode
+
+  [OK]             15_OperateMode
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  16_OperateDesc
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 16_OperateDesc
+    ✔ [auto-fix] Header reformatted in 16_OperateDesc
+
+  [OK]             16_OperateDesc
+    i [not_copy_of_source] Entry "0011" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0012" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 186): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 206): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0041" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0042" (line 221): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 241): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 246): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 311): translation is identical to source text
+    i [not_copy_of_source] Entry "0061" (line 316): translation is identical to source text
+    i [not_copy_of_source] Entry "0062" (line 321): translation is identical to source text
+    i [not_copy_of_source] Entry "0064" (line 331): translation is identical to source text
+    i [not_copy_of_source] Entry "0065" (line 336): translation is identical to source text
+    i [not_copy_of_source] Entry "0067" (line 346): translation is identical to source text
+    i [not_copy_of_source] Entry "0068" (line 351): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 361): translation is identical to source text
+    i [not_copy_of_source] Entry "0075" (line 386): translation is identical to source text
+    i [not_copy_of_source] Entry "0077" (line 396): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 431): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 436): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 461): translation is identical to source text
+    i [not_copy_of_source] Entry "0097" (line 496): translation is identical to source text
+    i [not_copy_of_source] Entry "0098" (line 501): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 511): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  17_FloorName
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 17_FloorName
+    ✔ [auto-fix] Header reformatted in 17_FloorName
+
+  [OK]             17_FloorName
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  18_MapName School Map Locations
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 18_MapName
+    ✔ [auto-fix] PO spacing reformatted in 18_MapName
+    ✔ [auto-fix] Header reformatted in 18_MapName
+
+  [OK]             18_MapName
+    i [not_copy_of_source] Entry "0041" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 306): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 311): translation is identical to source text
+    i [not_copy_of_source] Entry "0061" (line 316): translation is identical to source text
+    i [not_copy_of_source] Entry "0077" (line 396): translation is identical to source text
+    i [not_copy_of_source] Entry "0078" (line 401): translation is identical to source text
+    i [not_copy_of_source] Entry "0079" (line 406): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 416): translation is identical to source text
+    i [not_copy_of_source] Entry "0094" (line 481): translation is identical to source text
+    i [not_copy_of_source] Entry "0095" (line 486): translation is identical to source text
+    i [not_copy_of_source] Entry "0098" (line 501): translation is identical to source text
+    i [not_copy_of_source] Entry "0099" (line 506): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 511): translation is identical to source text
+    i [not_copy_of_source] Entry "0101" (line 516): translation is identical to source text
+    i [not_copy_of_source] Entry "0165" (line 836): translation is identical to source text
+    i [not_copy_of_source] Entry "0166" (line 841): translation is identical to source text
+    i [not_copy_of_source] Entry "0167" (line 846): translation is identical to source text
+    i [not_copy_of_source] Entry "0168" (line 851): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 856): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 861): translation is identical to source text
+    i [not_copy_of_source] Entry "0171" (line 866): translation is identical to source text
+    i [not_copy_of_source] Entry "0172" (line 871): translation is identical to source text
+    i [not_copy_of_source] Entry "0173" (line 876): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 881): translation is identical to source text
+    i [not_copy_of_source] Entry "0175" (line 886): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 891): translation is identical to source text
+    i [not_copy_of_source] Entry "0177" (line 896): translation is identical to source text
+    i [not_copy_of_source] Entry "0178" (line 901): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 906): translation is identical to source text
+    i [not_copy_of_source] Entry "0180" (line 911): translation is identical to source text
+    i [not_copy_of_source] Entry "0181" (line 916): translation is identical to source text
+    i [not_copy_of_source] Entry "0182" (line 921): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 926): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 931): translation is identical to source text
+    i [not_copy_of_source] Entry "0185" (line 936): translation is identical to source text
+    i [not_copy_of_source] Entry "0186" (line 941): translation is identical to source text
+    i [not_copy_of_source] Entry "0187" (line 946): translation is identical to source text
+    i [not_copy_of_source] Entry "0188" (line 951): translation is identical to source text
+    i [not_copy_of_source] Entry "0189" (line 956): translation is identical to source text
+    i [not_copy_of_source] Entry "0190" (line 961): translation is identical to source text
+    i [not_copy_of_source] Entry "0191" (line 966): translation is identical to source text
+    i [not_copy_of_source] Entry "0192" (line 971): translation is identical to source text
+    i [not_copy_of_source] Entry "0193" (line 976): translation is identical to source text
+    i [not_copy_of_source] Entry "0194" (line 981): translation is identical to source text
+    i [not_copy_of_source] Entry "0195" (line 986): translation is identical to source text
+    i [not_copy_of_source] Entry "0196" (line 991): translation is identical to source text
+    i [not_copy_of_source] Entry "0197" (line 996): translation is identical to source text
+    i [not_copy_of_source] Entry "0198" (line 1001): translation is identical to source text
+    i [not_copy_of_source] Entry "0199" (line 1006): translation is identical to source text
+    i [not_copy_of_source] Entry "0200" (line 1011): translation is identical to source text
+    i [not_copy_of_source] Entry "0201" (line 1016): translation is identical to source text
+    i [not_copy_of_source] Entry "0224" (line 1131): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 1136): translation is identical to source text
+    i [not_copy_of_source] Entry "0226" (line 1141): translation is identical to source text
+    i [not_copy_of_source] Entry "0227" (line 1146): translation is identical to source text
+    i [not_copy_of_source] Entry "0228" (line 1151): translation is identical to source text
+    i [not_copy_of_source] Entry "0229" (line 1156): translation is identical to source text
+    i [not_copy_of_source] Entry "0230" (line 1161): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 1166): translation is identical to source text
+    i [not_copy_of_source] Entry "0232" (line 1171): translation is identical to source text
+    i [not_copy_of_source] Entry "0233" (line 1176): translation is identical to source text
+    i [not_copy_of_source] Entry "0234" (line 1181): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 1186): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 1191): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 1196): translation is identical to source text
+    i [not_copy_of_source] Entry "0238" (line 1201): translation is identical to source text
+    i [not_copy_of_source] Entry "0239" (line 1206): translation is identical to source text
+    i [not_copy_of_source] Entry "0240" (line 1211): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 1216): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 1221): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 1226): translation is identical to source text
+    i [not_copy_of_source] Entry "0244" (line 1231): translation is identical to source text
+    i [not_copy_of_source] Entry "0245" (line 1236): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 1241): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 1246): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 1251): translation is identical to source text
+    i [not_copy_of_source] Entry "0249" (line 1256): translation is identical to source text
+    i [not_copy_of_source] Entry "0250" (line 1261): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 1266): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 1271): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 1276): translation is identical to source text
+    i [not_copy_of_source] Entry "0254" (line 1281): translation is identical to source text
+    i [not_copy_of_source] Entry "0255" (line 1286): translation is identical to source text
+    i [not_copy_of_source] Entry "0256" (line 1291): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  19_HandBookMenu Handbook Menu Items
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 19_HandBookMenu
+    ✔ [auto-fix] PO spacing reformatted in 19_HandBookMenu
+    ✔ [auto-fix] Header reformatted in 19_HandBookMenu
+
+  [OK]             19_HandBookMenu
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  20_HandBookDesc Handbook Function Descriptions
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 20_HandBookDesc
+    ✔ [auto-fix] PO spacing reformatted in 20_HandBookDesc
+    ✔ [auto-fix] Header reformatted in 20_HandBookDesc
+
+  [OK]             20_HandBookDesc
+    i [not_copy_of_source] Entry "0019" (line 134): translation is identical to source text
+    i [not_copy_of_source] Entry "0020" (line 139): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 144): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 149): translation is identical to source text
+    i [not_copy_of_source] Entry "0023" (line 154): translation is identical to source text
+    i [not_copy_of_source] Entry "0024" (line 159): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 164): translation is identical to source text
+    i [not_copy_of_source] Entry "0026" (line 169): translation is identical to source text
+    i [not_copy_of_source] Entry "0027" (line 174): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 179): translation is identical to source text
+    i [not_copy_of_source] Entry "0029" (line 184): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 189): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 194): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 199): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  21_Briefing Trial Preparation Menus
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 21_Briefing
+    ✔ [auto-fix] PO spacing reformatted in 21_Briefing
+    ✔ [auto-fix] Header reformatted in 21_Briefing
+
+  [OK]             21_Briefing
+    i [not_copy_of_source] Entry "0012" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  22_Profile
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 22_Profile
+    ✔ [auto-fix] PO spacing reformatted in 22_Profile
+    ✔ [auto-fix] Header reformatted in 22_Profile
+
+  [OK]             22_Profile
+    i [not_copy_of_source] Entry "0001" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0004" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0005" (line 36): translation is identical to source text
+    i [not_copy_of_source] Entry "0006" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0007" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0008" (line 51): translation is identical to source text
+    i [not_copy_of_source] Entry "0009" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0011" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0012" (line 71): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0014" (line 81): translation is identical to source text
+    i [not_copy_of_source] Entry "0015" (line 86): translation is identical to source text
+    i [not_copy_of_source] Entry "0076" (line 391): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  23_Anagram
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] PO spacing reformatted in 23_Anagram
+    ✔ [auto-fix] Header reformatted in 23_Anagram
+
+  [OK]             23_Anagram
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0021" (line 116): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 121): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  24_MovieName Execution Movie Files Execution Video Titles
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 24_MovieName
+    ✔ [auto-fix] PO spacing reformatted in 24_MovieName
+    ✔ [auto-fix] Header reformatted in 24_MovieName
+
+  [OK]             24_MovieName
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  25_SkillDescHB Trial Skill Descriptions
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 25_SkillDescHB
+    ✔ [auto-fix] PO spacing reformatted in 25_SkillDescHB
+    ✔ [auto-fix] Header reformatted in 25_SkillDescHB
+
+  [OK]             25_SkillDescHB
+    i [not_copy_of_source] Entry "0029" (line 182): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 187): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 192): translation is identical to source text
+    i [not_copy_of_source] Entry "0032" (line 197): translation is identical to source text
+    i [not_copy_of_source] Entry "0033" (line 202): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 207): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 212): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 217): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 222): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 227): translation is identical to source text
+    i [not_copy_of_source] Entry "0039" (line 232): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 237): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  26_Menu Chapter Selection Menu
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 26_Menu
+    ✔ [auto-fix] PO spacing reformatted in 26_Menu
+    ✔ [auto-fix] Header reformatted in 26_Menu
+
+  [OK]             26_Menu
+    i [not_copy_of_source] Entry "0028" (line 161): translation is identical to source text
+    i [not_copy_of_source] Entry "0030" (line 171): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 216): translation is identical to source text
+    i [not_copy_of_source] Entry "0045" (line 274): translation is identical to source text
+    i [not_copy_of_source] Entry "0047" (line 284): translation is identical to source text
+    i [not_copy_of_source] Entry "0048" (line 289): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 294): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 299): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  27_ArtWorkName Character Art Gallery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 27_ArtWorkName
+    ✔ [auto-fix] PO spacing reformatted in 27_ArtWorkName
+    ✔ [auto-fix] Header reformatted in 27_ArtWorkName
+
+  [OK]             27_ArtWorkName
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  28_Credit SKIP Voice Cast Credits
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 28_Credit
+    ✔ [auto-fix] PO spacing reformatted in 28_Credit
+    ✔ [auto-fix] Header reformatted in 28_Credit
+
+  [1 WARN]         28_Credit
+    ! [untranslated] 42 untranslated: 0102, 0103, 0106, 0191, 0192, 0196, 0197, 0198, 0199, 0200, 0204, 0205, 0206, 0210, 0211, 0215, 0216, 0217, 0218, 0219, 0220, 0221, 0223, 0224, 0226, 0227, 0228, 0229, 0230, 0232, 0233, 0234, 0238, 0239, 0240, 0244, 0245, 0249, 0250, 0254, 0255, 0256
+    i [not_copy_of_source] Entry "0002" (line 21): translation is identical to source text
+    i [not_copy_of_source] Entry "0003" (line 26): translation is identical to source text
+    i [not_copy_of_source] Entry "0004" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0007" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0010" (line 61): translation is identical to source text
+    i [not_copy_of_source] Entry "0013" (line 76): translation is identical to source text
+    i [not_copy_of_source] Entry "0016" (line 91): translation is identical to source text
+    i [not_copy_of_source] Entry "0019" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0022" (line 121): translation is identical to source text
+    i [not_copy_of_source] Entry "0025" (line 136): translation is identical to source text
+    i [not_copy_of_source] Entry "0028" (line 151): translation is identical to source text
+    i [not_copy_of_source] Entry "0031" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0034" (line 181): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0043" (line 226): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 241): translation is identical to source text
+    i [not_copy_of_source] Entry "0049" (line 256): translation is identical to source text
+    i [not_copy_of_source] Entry "0050" (line 261): translation is identical to source text
+    i [not_copy_of_source] Entry "0051" (line 266): translation is identical to source text
+    i [not_copy_of_source] Entry "0054" (line 281): translation is identical to source text
+    i [not_copy_of_source] Entry "0055" (line 286): translation is identical to source text
+    i [not_copy_of_source] Entry "0056" (line 291): translation is identical to source text
+    i [not_copy_of_source] Entry "0057" (line 296): translation is identical to source text
+    i [not_copy_of_source] Entry "0058" (line 301): translation is identical to source text
+    i [not_copy_of_source] Entry "0059" (line 306): translation is identical to source text
+    i [not_copy_of_source] Entry "0062" (line 321): translation is identical to source text
+    i [not_copy_of_source] Entry "0063" (line 326): translation is identical to source text
+    i [not_copy_of_source] Entry "0066" (line 341): translation is identical to source text
+    i [not_copy_of_source] Entry "0067" (line 346): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 361): translation is identical to source text
+    i [not_copy_of_source] Entry "0071" (line 366): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0081" (line 416): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 431): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 436): translation is identical to source text
+    i [not_copy_of_source] Entry "0088" (line 451): translation is identical to source text
+    i [not_copy_of_source] Entry "0089" (line 456): translation is identical to source text
+    i [not_copy_of_source] Entry "0092" (line 471): translation is identical to source text
+    i [not_copy_of_source] Entry "0093" (line 476): translation is identical to source text
+    i [not_copy_of_source] Entry "0096" (line 491): translation is identical to source text
+    i [not_copy_of_source] Entry "0097" (line 496): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 511): translation is identical to source text
+    i [not_copy_of_source] Entry "0101" (line 516): translation is identical to source text
+    i [not_copy_of_source] Entry "0104" (line 531): translation is identical to source text
+    i [not_copy_of_source] Entry "0105" (line 536): translation is identical to source text
+    i [not_copy_of_source] Entry "0112" (line 571): translation is identical to source text
+    i [not_copy_of_source] Entry "0113" (line 576): translation is identical to source text
+    i [not_copy_of_source] Entry "0114" (line 581): translation is identical to source text
+    i [not_copy_of_source] Entry "0116" (line 591): translation is identical to source text
+    i [not_copy_of_source] Entry "0119" (line 606): translation is identical to source text
+    i [not_copy_of_source] Entry "0122" (line 621): translation is identical to source text
+    i [not_copy_of_source] Entry "0123" (line 626): translation is identical to source text
+    i [not_copy_of_source] Entry "0125" (line 636): translation is identical to source text
+    i [not_copy_of_source] Entry "0140" (line 711): translation is identical to source text
+    i [not_copy_of_source] Entry "0145" (line 736): translation is identical to source text
+    i [not_copy_of_source] Entry "0152" (line 771): translation is identical to source text
+    i [not_copy_of_source] Entry "0155" (line 786): translation is identical to source text
+    i [not_copy_of_source] Entry "0158" (line 801): translation is identical to source text
+    i [not_copy_of_source] Entry "0161" (line 816): translation is identical to source text
+    i [not_copy_of_source] Entry "0165" (line 836): translation is identical to source text
+    i [not_copy_of_source] Entry "0168" (line 851): translation is identical to source text
+    i [not_copy_of_source] Entry "0169" (line 856): translation is identical to source text
+    i [not_copy_of_source] Entry "0170" (line 861): translation is identical to source text
+    i [not_copy_of_source] Entry "0174" (line 881): translation is identical to source text
+    i [not_copy_of_source] Entry "0176" (line 891): translation is identical to source text
+    i [not_copy_of_source] Entry "0179" (line 906): translation is identical to source text
+    i [not_copy_of_source] Entry "0182" (line 921): translation is identical to source text
+    i [not_copy_of_source] Entry "0183" (line 926): translation is identical to source text
+    i [not_copy_of_source] Entry "0184" (line 931): translation is identical to source text
+    i [not_copy_of_source] Entry "0189" (line 956): translation is identical to source text
+    i [not_copy_of_source] Entry "0193" (line 976): translation is identical to source text
+    i [not_copy_of_source] Entry "0194" (line 981): translation is identical to source text
+    i [not_copy_of_source] Entry "0195" (line 986): translation is identical to source text
+    i [not_copy_of_source] Entry "0201" (line 1016): translation is identical to source text
+    i [not_copy_of_source] Entry "0202" (line 1021): translation is identical to source text
+    i [not_copy_of_source] Entry "0203" (line 1026): translation is identical to source text
+    i [not_copy_of_source] Entry "0207" (line 1046): translation is identical to source text
+    i [not_copy_of_source] Entry "0208" (line 1051): translation is identical to source text
+    i [not_copy_of_source] Entry "0209" (line 1056): translation is identical to source text
+    i [not_copy_of_source] Entry "0212" (line 1071): translation is identical to source text
+    i [not_copy_of_source] Entry "0213" (line 1076): translation is identical to source text
+    i [not_copy_of_source] Entry "0214" (line 1081): translation is identical to source text
+    i [not_copy_of_source] Entry "0222" (line 1121): translation is identical to source text
+    i [not_copy_of_source] Entry "0225" (line 1136): translation is identical to source text
+    i [not_copy_of_source] Entry "0231" (line 1166): translation is identical to source text
+    i [not_copy_of_source] Entry "0235" (line 1186): translation is identical to source text
+    i [not_copy_of_source] Entry "0236" (line 1191): translation is identical to source text
+    i [not_copy_of_source] Entry "0237" (line 1196): translation is identical to source text
+    i [not_copy_of_source] Entry "0241" (line 1216): translation is identical to source text
+    i [not_copy_of_source] Entry "0242" (line 1221): translation is identical to source text
+    i [not_copy_of_source] Entry "0243" (line 1226): translation is identical to source text
+    i [not_copy_of_source] Entry "0246" (line 1241): translation is identical to source text
+    i [not_copy_of_source] Entry "0247" (line 1246): translation is identical to source text
+    i [not_copy_of_source] Entry "0248" (line 1251): translation is identical to source text
+    i [not_copy_of_source] Entry "0251" (line 1266): translation is identical to source text
+    i [not_copy_of_source] Entry "0252" (line 1271): translation is identical to source text
+    i [not_copy_of_source] Entry "0253" (line 1276): translation is identical to source text
+    i [not_copy_of_source] Entry "0257" (line 1296): translation is identical to source text
+    i [not_copy_of_source] Entry "0258" (line 1301): translation is identical to source text
+    i [not_copy_of_source] Entry "0259" (line 1306): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  29_OperateModeR Gameplay Mode Labels
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 29_OperateModeR
+    ✔ [auto-fix] PO spacing reformatted in 29_OperateModeR
+    ✔ [auto-fix] Header reformatted in 29_OperateModeR
+
+  [OK]             29_OperateModeR
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  30_OperateDescR Exploration Controls Help
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 30_OperateDescR
+    ✔ [auto-fix] PO spacing reformatted in 30_OperateDescR
+    ✔ [auto-fix] Header reformatted in 30_OperateDescR
+
+  [OK]             30_OperateDescR
+    i [not_copy_of_source] Entry "0026" (line 141): translation is identical to source text
+    i [not_copy_of_source] Entry "0035" (line 186): translation is identical to source text
+    i [not_copy_of_source] Entry "0036" (line 191): translation is identical to source text
+    i [not_copy_of_source] Entry "0037" (line 196): translation is identical to source text
+    i [not_copy_of_source] Entry "0038" (line 201): translation is identical to source text
+    i [not_copy_of_source] Entry "0040" (line 211): translation is identical to source text
+    i [not_copy_of_source] Entry "0046" (line 241): translation is identical to source text
+    i [not_copy_of_source] Entry "0060" (line 311): translation is identical to source text
+    i [not_copy_of_source] Entry "0061" (line 316): translation is identical to source text
+    i [not_copy_of_source] Entry "0062" (line 321): translation is identical to source text
+    i [not_copy_of_source] Entry "0064" (line 331): translation is identical to source text
+    i [not_copy_of_source] Entry "0070" (line 361): translation is identical to source text
+    i [not_copy_of_source] Entry "0075" (line 386): translation is identical to source text
+    i [not_copy_of_source] Entry "0077" (line 396): translation is identical to source text
+    i [not_copy_of_source] Entry "0080" (line 411): translation is identical to source text
+    i [not_copy_of_source] Entry "0084" (line 431): translation is identical to source text
+    i [not_copy_of_source] Entry "0085" (line 436): translation is identical to source text
+    i [not_copy_of_source] Entry "0090" (line 461): translation is identical to source text
+    i [not_copy_of_source] Entry "0097" (line 496): translation is identical to source text
+    i [not_copy_of_source] Entry "0098" (line 501): translation is identical to source text
+    i [not_copy_of_source] Entry "0100" (line 511): translation is identical to source text
+    i [not_copy_of_source] Entry "0126" (line 641): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  31_OperateSysR Game System Tutorials
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in 31_OperateSysR
+    ✔ [auto-fix] PO spacing reformatted in 31_OperateSysR
+    ✔ [auto-fix] Header reformatted in 31_OperateSysR
+
+  [OK]             31_OperateSysR
+
+========================================================================
+  SUMMARY
+========================================================================
+  Files OK          : 31
+  Files with issues : 1
+  Total ERRORs      : 0
+  Total WARNings    : 1
+========================================================================

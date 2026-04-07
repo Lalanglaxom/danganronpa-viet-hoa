@@ -2,19 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/18/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. CAST
 msgctxt "0001"
 msgid "CAST"
 msgstr "DIỄN VIÊN"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0002"
 msgid "[EMPTY_LINE]"
@@ -34,10 +36,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0005"
 msgid "<CLT 4>苗木　誠<CLT>"
 msgstr "<CLT 4>Makoto Naegi<CLT>"
+
 #. 緒方　恵美
 msgctxt "0006"
 msgid "緒方　恵美"
 msgstr "Megumi Ogata"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0007"
 msgid "[EMPTY_LINE]"
@@ -47,10 +51,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0008"
 msgid "<CLT 4>舞園　さやか<CLT>"
 msgstr "<CLT 4>Sayaka Maizono<CLT>"
+
 #. 大本　眞基子
 msgctxt "0009"
 msgid "大本　眞基子"
 msgstr "Makiko Ohmoto"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0010"
 msgid "[EMPTY_LINE]"
@@ -60,10 +66,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0011"
 msgid "<CLT 4>桑田　怜恩<CLT>"
 msgstr "<CLT 4>Leon Kuwata<CLT>"
+
 #. 櫻井　孝宏
 msgctxt "0012"
 msgid "櫻井　孝宏"
 msgstr "Takahiro Sakurai"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0013"
 msgid "[EMPTY_LINE]"
@@ -73,10 +81,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0014"
 msgid "<CLT 4>石丸　清多夏<CLT>"
 msgstr "<CLT 4>Kiyotaka Ishimaru<CLT>"
+
 #. 鳥海　浩輔
 msgctxt "0015"
 msgid "鳥海　浩輔"
 msgstr "Kosuke Toriumi"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0016"
 msgid "[EMPTY_LINE]"
@@ -86,10 +96,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0017"
 msgid "<CLT 4>十神　白夜<CLT>"
 msgstr "<CLT 4>Byakuya Togami<CLT>"
+
 #. 石田　彰
 msgctxt "0018"
 msgid "石田　彰"
 msgstr "Akira Ishida"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0019"
 msgid "[EMPTY_LINE]"
@@ -99,10 +111,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0020"
 msgid "<CLT 4>大和田　紋土<CLT>"
 msgstr "<CLT 4>Mondo Owada<CLT>"
+
 #. 中井　和哉
 msgctxt "0021"
 msgid "中井　和哉"
 msgstr "Kazuya Nakai"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0022"
 msgid "[EMPTY_LINE]"
@@ -112,10 +126,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0023"
 msgid "<CLT 4>山田　一二三<CLT>"
 msgstr "<CLT 4>Hifumi Yamada<CLT>"
+
 #. 山口　勝平
 msgctxt "0024"
 msgid "山口　勝平"
 msgstr "Kappei Yamaguchi"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0025"
 msgid "[EMPTY_LINE]"
@@ -125,10 +141,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0026"
 msgid "<CLT 4>葉隠　康比呂<CLT>"
 msgstr "<CLT 4>Yasuhiro Hagakure<CLT>"
+
 #. 松風　雅也
 msgctxt "0027"
 msgid "松風　雅也"
 msgstr "Masaya Matsukaze"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0028"
 msgid "[EMPTY_LINE]"
@@ -138,10 +156,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0029"
 msgid "<CLT 4>霧切　響子<CLT>"
 msgstr "<CLT 4>Kyoko Kirigiri<CLT>"
+
 #. 日笠　陽子
 msgctxt "0030"
 msgid "日笠　陽子"
 msgstr "Yoko Hikasa"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0031"
 msgid "[EMPTY_LINE]"
@@ -151,10 +171,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0032"
 msgid "<CLT 4>朝日奈　葵<CLT>"
 msgstr "<CLT 4>Hina<CLT>"
+
 #. 斎藤　千和
 msgctxt "0033"
 msgid "斎藤　千和"
 msgstr "Chiwa Saito"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0034"
 msgid "[EMPTY_LINE]"
@@ -164,10 +186,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0035"
 msgid "<CLT 4>腐川　冬子<CLT>"
 msgstr "<CLT 4>Toko Fukawa<CLT>"
+
 #. 沢城　みゆき
 msgctxt "0036"
 msgid "沢城　みゆき"
 msgstr "Miyuki Sawashiro"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0037"
 msgid "[EMPTY_LINE]"
@@ -177,10 +201,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0038"
 msgid "<CLT 4>大神　さくら<CLT>"
 msgstr "<CLT 4>Sakura Ogami<CLT>"
+
 #. くじら
 msgctxt "0039"
 msgid "くじら"
 msgstr "Kujira"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0040"
 msgid "[EMPTY_LINE]"
@@ -190,10 +216,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0041"
 msgid "<CLT 4>セレス<CLT>"
 msgstr "<CLT 4>Celeste<CLT>"
+
 #. 椎名　へきる
 msgctxt "0042"
 msgid "椎名　へきる"
 msgstr "Hekiru Shiina"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0043"
 msgid "[EMPTY_LINE]"
@@ -203,10 +231,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0044"
 msgid "<CLT 4>江ノ島　盾子<CLT>"
 msgstr "<CLT 4>Junko Enoshima<CLT>"
+
 #. 豊口　めぐみ
 msgctxt "0045"
 msgid "豊口　めぐみ"
 msgstr "Megumi Toyoguchi"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0046"
 msgid "[EMPTY_LINE]"
@@ -216,10 +246,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0047"
 msgid "<CLT 4>不二咲　千尋<CLT>"
 msgstr "<CLT 4>Chihiro Fujisaki<CLT>"
+
 #. 宮田　幸季
 msgctxt "0048"
 msgid "宮田　幸季"
 msgstr "Koki Miyata"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0049"
 msgid "[EMPTY_LINE]"
@@ -239,10 +271,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0052"
 msgid "<CLT 4>モノクマ<CLT>"
 msgstr "<CLT 4>Monokuma<CLT>"
+
 #. 大山　のぶ代
 msgctxt "0053"
 msgid "大山　のぶ代"
 msgstr "Nobuyo Oyama"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0054"
 msgid "[EMPTY_LINE]"
@@ -277,10 +311,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0060"
 msgid "<CLT 4>ディレクター<CLT>"
 msgstr "<CLT 4>ĐẠO DIỄN<CLT>"
+
 #. 丸谷　竜也
 msgctxt "0061"
 msgid "丸谷　竜也"
 msgstr "Tatsuya Marutani"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0062"
 msgid "[EMPTY_LINE]"
@@ -295,10 +331,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0064"
 msgid "<CLT 4>企画/シナリオ<CLT>"
 msgstr "<CLT 4>KẾ HOẠCH / KỊCH BẢN<CLT>"
+
 #. 小高　和剛
 msgctxt "0065"
 msgid "小高　和剛"
 msgstr "Kazutaka Kodaka"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0066"
 msgid "[EMPTY_LINE]"
@@ -313,10 +351,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0068"
 msgid "<CLT 4>企画/ゲームシステム<CLT>"
 msgstr "<CLT 4>KẾ HOẠCH / HỆ THỐNG TRÒ CHƠI<CLT>"
+
 #. 菅原　隆行
 msgctxt "0069"
 msgid "菅原　隆行"
 msgstr "Takayuki Sugawara"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0070"
 msgid "[EMPTY_LINE]"
@@ -331,34 +371,42 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0072"
 msgid "<CLT 4>スクリプト<CLT>"
 msgstr "<CLT 4>KỊCH BẢN MÃ<CLT>"
+
 #. 宮脇　真吾
 msgctxt "0073"
 msgid "宮脇　真吾"
 msgstr "Shingo Miyawaki"
+
 #. 田山　奈美
 msgctxt "0074"
 msgid "田山　奈美"
 msgstr "Nami Tayama"
+
 #. 天明　哲也
 msgctxt "0075"
 msgid "天明　哲也"
 msgstr "Tetsuya Tenmyo"
+
 #. 尾上　尚志
 msgctxt "0076"
 msgid "尾上　尚志"
 msgstr "Takashi Onoue"
+
 #. 曲木　一博
 msgctxt "0077"
 msgid "曲木　一博"
 msgstr "Kazuhiro Magaki"
+
 #. 内田　あすか
 msgctxt "0078"
 msgid "内田　あすか"
 msgstr "Asuka Uchida"
+
 #. 小出　剛
 msgctxt "0079"
 msgid "小出　剛"
 msgstr "Go Koide"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0080"
 msgid "[EMPTY_LINE]"
@@ -373,10 +421,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0082"
 msgid "<CLT 4>チーフプログラマー<CLT>"
 msgstr "<CLT 4>LẬP TRÌNH VIÊN TRƯỞNG<CLT>"
+
 #. 伊藤　謙吾
 msgctxt "0083"
 msgid "伊藤　謙吾"
 msgstr "Kengo Ito"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0084"
 msgid "[EMPTY_LINE]"
@@ -391,10 +441,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0086"
 msgid "<CLT 4>プログラムサポート<CLT>"
 msgstr "<CLT 4>HỖ TRỢ LẬP TRÌNH<CLT>"
+
 #. 小林　亮太
 msgctxt "0087"
 msgid "小林　亮太"
 msgstr "Ryota Kobayashi"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0088"
 msgid "[EMPTY_LINE]"
@@ -409,10 +461,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0090"
 msgid "<CLT 4>キャラクターデザイン<CLT>"
 msgstr "<CLT 4>THIẾT KẾ NHÂN VẬT<CLT>"
+
 #. 小松崎　類
 msgctxt "0091"
 msgid "小松崎　類"
 msgstr "Rui Komatsuzaki"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0092"
 msgid "[EMPTY_LINE]"
@@ -427,10 +481,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0094"
 msgid "<CLT 4>ムービーデザイン<CLT>"
 msgstr "<CLT 4>THIẾT KẾ PHIM<CLT>"
+
 #. 中島　大
 msgctxt "0095"
 msgid "中島　大"
 msgstr "Dai Nakajima"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0096"
 msgid "[EMPTY_LINE]"
@@ -445,10 +501,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0098"
 msgid "<CLT 4>ＵＩデザイン<CLT>"
 msgstr "<CLT 4>THIẾT KẾ GIAO DIỆN<CLT>"
+
 #. 中尾　文子
 msgctxt "0099"
 msgid "中尾　文子"
 msgstr "Ayako Nakao"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0100"
 msgid "[EMPTY_LINE]"
@@ -488,22 +546,27 @@ msgstr ""
 msgctxt "0107"
 msgid "トゥルグレン　マティアス"
 msgstr "Mattias Thurgren"
+
 #. 神崎　伸義
 msgctxt "0108"
 msgid "神崎　伸義"
 msgstr "Nobuyoshi Kanzaki"
+
 #. 松倉　真彦
 msgctxt "0109"
 msgid "松倉　真彦"
 msgstr "Masahiko Matsukura"
+
 #. 新浪　麻友子
 msgctxt "0110"
 msgid "新浪　麻友子"
 msgstr "Mayuko Niinami"
+
 #. 堀内　雅人
 msgctxt "0111"
 msgid "堀内　雅人"
 msgstr "Masato Horiuchi"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0112"
 msgid "[EMPTY_LINE]"
@@ -523,6 +586,7 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0115"
 msgid "<CLT 4>プログラミング協力<CLT>"
 msgstr "<CLT 4>HỖ TRỢ LẬP TRÌNH<CLT>"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0116"
 msgid "[EMPTY_LINE]"
@@ -532,10 +596,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0117"
 msgid "株式会社タムタム"
 msgstr "TamTam Co., Ltd."
+
 #. 永田　潔
 msgctxt "0118"
 msgid "永田　潔"
 msgstr "Kiyoshi Nagata"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0119"
 msgid "[EMPTY_LINE]"
@@ -545,10 +611,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0120"
 msgid "有限会社熱中日和"
 msgstr "Netchubiyori Co., Ltd."
+
 #. 越川　剛
 msgctxt "0121"
 msgid "越川　剛"
 msgstr "Tsuyoshi Koshikawa"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0122"
 msgid "[EMPTY_LINE]"
@@ -563,6 +631,7 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0124"
 msgid "<CLT 4>デザイン協力<CLT>"
 msgstr "<CLT 4>HỖ TRỢ THIẾT KẾ<CLT>"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0125"
 msgid "[EMPTY_LINE]"
@@ -572,58 +641,72 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0126"
 msgid "株式会社G-STYLE"
 msgstr "G-STYLE Co., Ltd."
+
 #. 石川  秀人
 msgctxt "0127"
 msgid "石川  秀人"
 msgstr "Hideto Ishikawa"
+
 #. 林　友恵
 msgctxt "0128"
 msgid "林　友恵"
 msgstr "Tomoe Hayashi"
+
 #. 藤野　信一
 msgctxt "0129"
 msgid "藤野　信一"
 msgstr "Shinichi Fujino"
+
 #. 遠藤　智之
 msgctxt "0130"
 msgid "遠藤　智之"
 msgstr "Tomoyuki Endo"
+
 #. 鳴海　玲
 msgctxt "0131"
 msgid "鳴海　玲"
 msgstr "Rei Narumi"
+
 #. 神河　魅久
 msgctxt "0132"
 msgid "神河　魅久"
 msgstr "Miku Kamigawa"
+
 #. 田中　雅継
 msgctxt "0133"
 msgid "田中　雅継"
 msgstr "Masatsugu Tanaka"
+
 #. 大樂　悠太
 msgctxt "0134"
 msgid "大樂　悠太"
 msgstr "Yuta Dairaku"
+
 #. 米澤　若菜
 msgctxt "0135"
 msgid "米澤　若菜"
 msgstr "Wakana Yonezawa"
+
 #. 木村　俊晴
 msgctxt "0136"
 msgid "木村　俊晴"
 msgstr "Toshiharu Kimura"
+
 #. 木村　千羽
 msgctxt "0137"
 msgid "木村　千羽"
 msgstr "Chiha Kimura"
+
 #. 山口　啓太
 msgctxt "0138"
 msgid "山口　啓太"
 msgstr "Keita Yamaguchi"
+
 #. 山本　早里
 msgctxt "0139"
 msgid "山本　早里"
 msgstr "Sari Yamamoto"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0140"
 msgid "[EMPTY_LINE]"
@@ -633,18 +716,22 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0141"
 msgid "株式会社白組"
 msgstr "Shirogumi Inc."
+
 #. 花房　真
 msgctxt "0142"
 msgid "花房　真"
 msgstr "Shin Hanafusa"
+
 #. 酒向　純平
 msgctxt "0143"
 msgid "酒向　純平"
 msgstr "Junpei Sakoh"
+
 #. 佐藤　志都
 msgctxt "0144"
 msgid "佐藤　志都"
 msgstr "Shizu Sato"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0145"
 msgid "[EMPTY_LINE]"
@@ -654,26 +741,32 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0146"
 msgid "有限会社チャイム"
 msgstr "Chime Co., Ltd."
+
 #. 古川　哲
 msgctxt "0147"
 msgid "古川　哲"
 msgstr "Satoshi Furukawa"
+
 #. 茂木　昌夫
 msgctxt "0148"
 msgid "茂木　昌夫"
 msgstr "Masao Motegi"
+
 #. 伊福　透
 msgctxt "0149"
 msgid "伊福　透"
 msgstr "Toru Ifuku"
+
 #. 種下　秀樹
 msgctxt "0150"
 msgid "種下　秀樹"
 msgstr "Hideki Taneshita"
+
 #. 岩崎　洋史
 msgctxt "0151"
 msgid "岩崎　洋史"
 msgstr "Hiroshi Iwasaki"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0152"
 msgid "[EMPTY_LINE]"
@@ -683,10 +776,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0153"
 msgid "株式会社Switch・エンタテインメント"
 msgstr "Switch Entertainment Inc."
+
 #. 乾　智之
 msgctxt "0154"
 msgid "乾　智之"
 msgstr "Tomoyuki Inui"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0155"
 msgid "[EMPTY_LINE]"
@@ -696,10 +791,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0156"
 msgid "有限会社アナハイム・エンタテインメント"
 msgstr "Anaheim Entertainment Co., Ltd."
+
 #. 清水　雅治
 msgctxt "0157"
 msgid "清水　雅治"
 msgstr "Masaharu Shimizu"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0158"
 msgid "[EMPTY_LINE]"
@@ -709,10 +806,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0159"
 msgid "有限会社スタジオ グラミー・ペア"
 msgstr "Studio Grammy Pair Co., Ltd."
+
 #. 谷本　佐和子
 msgctxt "0160"
 msgid "谷本　佐和子"
 msgstr "Sawako Tanimoto"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0161"
 msgid "[EMPTY_LINE]"
@@ -722,14 +821,17 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0162"
 msgid "株式会社紅藍"
 msgstr "Kouran Co., Ltd."
+
 #. 小島　典子
 msgctxt "0163"
 msgid "小島　典子"
 msgstr "Noriko Kojima"
+
 #. 佐藤　はじめ
 msgctxt "0164"
 msgid "佐藤　はじめ"
 msgstr "Hajime Sato"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0165"
 msgid "[EMPTY_LINE]"
@@ -739,10 +841,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0166"
 msgid "藤井　英俊"
 msgstr "Hidetoshi Fujii"
+
 #. 青田　麻里
 msgctxt "0167"
 msgid "青田　麻里"
 msgstr "Mari Aota"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0168"
 msgid "[EMPTY_LINE]"
@@ -762,14 +866,17 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0171"
 msgid "<CLT 4>サウンドコンポーザー<CLT>"
 msgstr "<CLT 4>SOẠN NHẠC<CLT>"
+
 #. 株式会社Tango
 msgctxt "0172"
 msgid "株式会社Tango"
 msgstr "Tango Co., Ltd."
+
 #. 高田　雅史
 msgctxt "0173"
 msgid "高田　雅史"
 msgstr "Masafumi Takada"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0174"
 msgid "[EMPTY_LINE]"
@@ -779,18 +886,22 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0175"
 msgid "<CLT 4>サウンド協力<CLT>"
 msgstr "<CLT 4>HỖ TRỢ ÂM THANH<CLT>"
+
 #. X-OVER-RECORDS
 msgctxt "0176"
 msgid "X-OVER-RECORDS"
 msgstr "X-OVER-RECORDS"
+
 #. 保本　真吾（Guitar）
 msgctxt "0177"
 msgid "保本　真吾（Guitar）"
 msgstr "Shingo Yasumoto (Guitar)"
+
 #. 高添　香織（SE制作）
 msgctxt "0178"
 msgid "高添　香織（SE制作）"
 msgstr "Kaori Takazoe (Phụ trách SE)"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0179"
 msgid "[EMPTY_LINE]"
@@ -800,10 +911,12 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0180"
 msgid "株式会社Tango"
 msgstr "Tango Co., Ltd."
+
 #. 白木　一平（ムービーMA　MIXサポート）
 msgctxt "0181"
 msgid "白木　一平（ムービーMA　MIXサポート）"
 msgstr "Ippei Shiraki (Hỗ trợ Movie MA MIX)"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0182"
 msgid "[EMPTY_LINE]"
@@ -823,18 +936,22 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0185"
 msgid "<CLT 4>キャスティング協力<CLT>"
 msgstr "<CLT 4>HỖ TRỢ TUYỂN DIỄN VIÊN<CLT>"
+
 #. 株式会社ウォーターオリオン
 msgctxt "0186"
 msgid "株式会社ウォーターオリオン"
 msgstr "Water Orion Co., Ltd."
+
 #. 福島　央俐音（コーディネーター）
 msgctxt "0187"
 msgid "福島　央俐音（コーディネーター）"
 msgstr "Orine Fukushima (Điều phối viên)"
+
 #. 山田　美佳（アシスタント）
 msgctxt "0188"
 msgid "山田　美佳（アシスタント）"
 msgstr "Mika Yamada (Trợ lý)"
+
 #. JAPANESE LINE NOT FOUND
 msgctxt "0189"
 msgid "[EMPTY_LINE]"
@@ -844,6 +961,7 @@ msgstr "[EMPTY_LINE]"
 msgctxt "0190"
 msgid "<CLT 4>ボイスエンジニアリング<CLT>"
 msgstr "<CLT 4>KỸ THUẬT ÂM THANH GIỌNG NÓI<CLT>"
+
 #. 有限会社Ｔプロジェクトスタジオ
 msgctxt "0191"
 msgid "有限会社Ｔプロジェクトスタジオ"
