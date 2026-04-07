@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Example: Change Hope's Peak to Đỉnh Hy Vọng",
+        "character": null,
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            [
+                "Hope's Peak",
+                "Đỉnh Hy Vọng"
+            ]
+        ]
+    }
+]

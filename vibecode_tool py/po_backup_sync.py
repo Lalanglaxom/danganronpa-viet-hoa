@@ -27,6 +27,38 @@ def build_lin_index(lin_dir: str) -> dict:
     return index
 
 
+def run_backup(translated_dir):
+    """Chỉ thực hiện sao lưu các file .po hiện tại thành file - Copy.po"""
+    if not translated_dir: return "⚠ Chưa chọn thư mục!"
+    
+    count = 0
+    for dirpath, _, filenames in os.walk(translated_dir):
+        for fname in filenames:
+            if fname.endswith(".po") and "- Copy" not in fname:
+                src = os.path.join(dirpath, fname)
+                dst = src.replace(".po", "- Copy.po")
+                shutil.copy2(src, dst)
+                count += 1
+    return f"✅ Đã tạo {count} bản sao lưu (- Copy.po) thành công!"
+
+def run_sync(translated_dir, lin_dir):
+    """Chỉ thực hiện đồng bộ từ 'translated' sang 'LIN'"""
+    if not translated_dir or not lin_dir: return "⚠ Thiếu thư mục nguồn hoặc đích!"
+    
+    lin_index = build_lin_index(lin_dir)
+    updated = 0
+    
+    for dirpath, _, filenames in os.walk(translated_dir):
+        for fname in filenames:
+            if fname.endswith(".po") and "- Copy" not in fname:
+                if fname in lin_index:
+                    src = os.path.join(dirpath, fname)
+                    for dest_path in lin_index[fname]:
+                        shutil.copy2(src, dest_path)
+                        updated += 1
+    
+    return f"✅ Đã đồng bộ {updated} file sang thư mục LIN!"
+
 def backup_and_sync():
     print("=== PO File Backup & Sync Tool ===\n")
 

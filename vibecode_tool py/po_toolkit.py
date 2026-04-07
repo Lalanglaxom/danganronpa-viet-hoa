@@ -24,6 +24,15 @@ import tkinter as tk
 import tkinter.filedialog as fd
 from tkinter import ttk, filedialog, messagebox
 
+def get_path(filename):
+    """Xác định đường dẫn file dù đang chạy code gốc hay chạy file .exe"""
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, filename)
+    return os.path.join(os.path.abspath("."), filename)
+
+# Khi cậu gọi Backup Sync hoặc các công cụ khác, hãy dùng get_path. Ví dụ:
+# path_to_sync = get_path("po_backup_sync.py")
+
 # ── Optional drag-and-drop ─────────────────────────────────────────
 try:
     from tkinterdnd2 import TkinterDnD, DND_FILES
@@ -239,7 +248,9 @@ def _build_simple_run_tab(notebook, title: str, module_name: str, run_fn_name: s
     btn = _styled_btn(btn_row, f"▶  Run {title}", _run)
     btn.pack(side="right")
 
-def _build_backup_tab(notebook): _build_simple_run_tab(notebook, "Backup & Sync", "po_backup_sync", "backup_and_sync", [("Translated Folder:", "backup_trans"), ("LIN Folder:", "backup_lin")])
+def _build_backup_tab(notebook): 
+    _build_simple_run_tab(notebook, "Backup & Sync", "po_backup_sync", "backup_and_sync", [("Translated Folder:", "backup_trans"), ("LIN Folder:", "backup_lin")])
+    
 def _build_validator_tab(notebook): _build_simple_run_tab(notebook, "Validator", "po_validator", "run", [("Validation Folder:", "validator_folder")])
 def _build_linebreak_tab(notebook): _build_simple_run_tab(notebook, "Line-Break Fixer", "po_linebreak_fixer", "run", [("Target Folder/File:", "linebreak_path")])
 
