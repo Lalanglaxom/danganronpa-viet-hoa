@@ -248,8 +248,32 @@ def _build_simple_run_tab(notebook, title: str, module_name: str, run_fn_name: s
     btn = _styled_btn(btn_row, f"▶  Run {title}", _run)
     btn.pack(side="right")
 
-def _build_backup_tab(notebook): 
-    _build_simple_run_tab(notebook, "Backup & Sync", "po_backup_sync", "backup_and_sync", [("Translated Folder:", "backup_trans"), ("LIN Folder:", "backup_lin")])
+def _build_backup_sync_tab(notebook):
+    frame = _tab_frame(notebook, "Backup & Sync")
+    hdr = tk.Frame(frame, bg=BG); hdr.pack(fill="x", padx=12, pady=(14, 6))
+    tk.Label(hdr, text="Backup & Sync", bg=BG, fg=ACCENT, font=FONT_TITLE).pack(side="left")
+    tv = _build_path_row(frame, "Translated Folder:", "backup_trans")
+    lv = _build_path_row(frame, "LIN Folder:", "backup_lin")
+    br = tk.Frame(frame, bg=BG); br.pack(side="bottom", fill="x", padx=12, pady=(0, 12))
+    _section_label(frame, "LOG")
+    log = _make_log(frame)
+
+    def _run(fn_name, btn, txt):
+        try:
+            mod = importlib.import_module("po_backup_sync")
+            t, l = tv.get().strip(), lv.get().strip()
+            if "Drop" in t: t = ""
+            if "Drop" in l: l = ""
+            def _w():
+                if fn_name == "run_backup": print(mod.run_backup(t))
+                else: print(mod.run_sync(t, l))
+            _run_in_thread(_w, log, btn, txt)
+        except Exception as e: print(f"⚠ Error: {e}")
+
+    bs = _styled_btn(br, "▶  Sync", lambda: _run("run_sync", bs, "▶  Sync"))
+    bs.pack(side="right")
+    bb = _styled_btn(br, "▶  Backup", lambda: _run("run_backup", bb, "▶  Backup"))
+    bb.pack(side="right", padx=8)
     
 def _build_validator_tab(notebook): _build_simple_run_tab(notebook, "Validator", "po_validator", "run", [("Validation Folder:", "validator_folder")])
 def _build_linebreak_tab(notebook): _build_simple_run_tab(notebook, "Line-Break Fixer", "po_linebreak_fixer", "run", [("Target Folder/File:", "linebreak_path")])
@@ -453,7 +477,7 @@ class ToolkitApp:
         title_bar = tk.Frame(self.root, bg=BG); title_bar.pack(fill="x", padx=16, pady=(10, 4))
         tk.Label(title_bar, text="🎮  PO Toolkit — Nanami Edition", bg=BG, fg=ACCENT, font=("Segoe UI", 16, "bold")).pack(side="left")
         nb = ttk.Notebook(self.root); nb.pack(fill="both", expand=True, padx=8, pady=(4, 8))
-        _build_validator_tab(nb); _build_linebreak_tab(nb); _build_mass_replace_tab(nb); _build_search_tab(nb); _build_backup_tab(nb); _build_gemini_tab(nb)
+        _build_validator_tab(nb); _build_linebreak_tab(nb); _build_mass_replace_tab(nb); _build_search_tab(nb); _build_backup_sync_tab(nb); _build_gemini_tab(nb)
 
 if __name__ == "__main__":
     root = TkinterDnD.Tk() if _DND else tk.Tk()
