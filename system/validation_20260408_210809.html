@@ -72,14 +72,14 @@
 <header>
   <h1>PO Validation Report</h1>
   <div class="meta">
-    D:/Danganronpa1Viet/danganronpa-viet-hoa/system &nbsp;·&nbsp; 2026-04-07 22:34:47
-    &nbsp;·&nbsp; Rules: clt_tag_integrity, not_copy_of_source, line_count_match
+    D:/Danganronpa1Viet/danganronpa-viet-hoa/system &nbsp;·&nbsp; 2026-04-08 21:08:10
+    &nbsp;·&nbsp; Rules: clt_tag_integrity, not_copy_of_source, line_count_match, suspicious_whitespace, unicode_integrity
   </div>
 </header>
 <div class="stat-bar">
-  <span class="stat ok"    onclick="filterStatus('ok')"   >✔ OK &nbsp;31</span>
+  <span class="stat ok"    onclick="filterStatus('ok')"   >✔ OK &nbsp;27</span>
   <span class="stat error" onclick="filterStatus('error')" >✗ Errors &nbsp;0</span>
-  <span class="stat warn"  onclick="filterStatus('warn')"  >! Warnings &nbsp;1</span>
+  <span class="stat warn"  onclick="filterStatus('warn')"  >! Warnings &nbsp;5</span>
   <span class="stat info"  onclick="filterStatus('all')"   >Show all</span>
   <span class="search-wrap"><input type="text" id="search" placeholder="Search segment…" oninput="filterSearch(this.value)"></span>
 </div>
@@ -225,14 +225,18 @@ Top-level folders: ['00_System Save System Prompts System Save Prompt', '01_Cont
   <div class="chapter-header" onclick="toggleChapter(this)">
     <span class="chapter-toggle">▾</span>
     <span class="chapter-name">06_KotodamaName</span>
-    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
   </div>
   <div class="chapter-body">
-<div class="file-row" data-status="ok" data-name="06_KotodamaName">
-  <span class="file-badge badge-ok">OK</span>
+<div class="file-row" data-status="warn" data-name="06_KotodamaName">
+  <span class="file-badge badge-warn">WARN</span>
   <div class="file-issues">
     <div class="file-name">06_KotodamaName</div>
-    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019&quot; (line 106): translation is identical to source text</div>
+    <div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Dấu Hiệu Xô Xát' → 0002 (line 21) | 'Dấu vết xô xát' → 0202 (line 1021)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Bộ Dao Nhà Bếp' → 0013 (line 76) | 'Bộ dao trong nhà bếp' → 0204 (line 1031)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Lời Khai của Hina' → 0014 (line 81) | 'Lời Khai Của Hina' → 0039 (line 206) | 'Lời khai của Hina' → 0101 (line 516), 0205 (line 1036)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Lời Khai Của Celeste' → 0046 (line 241) | 'Lời khai của Celeste' → 0069 (line 356)</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019&quot; (line 106): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020&quot; (line 111): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021&quot; (line 116): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0022&quot; (line 121): translation is identical to source text</div>
@@ -361,14 +365,15 @@ Top-level folders: ['00_System Save System Prompts System Save Prompt', '01_Cont
   <div class="chapter-header" onclick="toggleChapter(this)">
     <span class="chapter-toggle">▾</span>
     <span class="chapter-name">07_KotodamaDesc1</span>
-    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
   </div>
   <div class="chapter-body">
-<div class="file-row" data-status="ok" data-name="07_KotodamaDesc1">
-  <span class="file-badge badge-ok">OK</span>
+<div class="file-row" data-status="warn" data-name="07_KotodamaDesc1">
+  <span class="file-badge badge-warn">WARN</span>
   <div class="file-issues">
     <div class="file-name">07_KotodamaDesc1</div>
-    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019&quot; (line 464): translation is identical to source text</div>
+    <div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Nhà bếp trong phòng ăn có\\nmột bộ dao làm bếp. Có vẻ\\nnhư một trong số những con\\ndao đã bị mất tích.' → 0013 (line 323) | 'Gian bếp trong nhà ăn có một\\nbộ dao làm bếp. Rõ ràng một\\ntrong những con dao đó đã\\nbiến mất.' → 0204 (line 3411)</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0019&quot; (line 464): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0020&quot; (line 469): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0021&quot; (line 474): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0022&quot; (line 479): translation is identical to source text</div>
@@ -1032,14 +1037,15 @@ Top-level folders: ['00_System Save System Prompts System Save Prompt', '01_Cont
   <div class="chapter-header" onclick="toggleChapter(this)">
     <span class="chapter-toggle">▾</span>
     <span class="chapter-name">10_Special</span>
-    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
   </div>
   <div class="chapter-body">
-<div class="file-row" data-status="ok" data-name="10_Special">
-  <span class="file-badge badge-ok">OK</span>
+<div class="file-row" data-status="warn" data-name="10_Special">
+  <span class="file-badge badge-warn">WARN</span>
   <div class="file-issues">
     <div class="file-name">10_Special</div>
-    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0031&quot; (line 166): translation is identical to source text</div>
+    <div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Siêu Học Sinh Ngôi sao Bóng Chày' → 0005 (line 36) | 'Siêu Học Sinh Ngôi Sao Bóng Chày' → 0020 (line 111)</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0031&quot; (line 166): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0032&quot; (line 171): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0033&quot; (line 176): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0034&quot; (line 181): translation is identical to source text</div>
@@ -1660,14 +1666,20 @@ Top-level folders: ['00_System Save System Prompts System Save Prompt', '01_Cont
   <div class="chapter-header" onclick="toggleChapter(this)">
     <span class="chapter-toggle">▾</span>
     <span class="chapter-name">30_OperateDescR Exploration Controls Help</span>
-    <span class="chapter-counts">0 err &nbsp; 0 warn &nbsp; 1 ok</span>
+    <span class="chapter-counts">0 err &nbsp; 1 warn &nbsp; 0 ok</span>
   </div>
   <div class="chapter-body">
-<div class="file-row" data-status="ok" data-name="30_OperateDescR">
-  <span class="file-badge badge-ok">OK</span>
+<div class="file-row" data-status="warn" data-name="30_OperateDescR">
+  <span class="file-badge badge-warn">WARN</span>
   <div class="file-issues">
     <div class="file-name">30_OperateDescR</div>
-    <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026&quot; (line 141): translation is identical to source text</div>
+    <div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Mở Sổ học sinh%HLP_SHOW_HANDBOOK%' → 0005 (line 36), 0015 (line 86), 0045 (line 236), 0055 (line 286), 0115 (line 586), ... | 'Mở Menu Sổ học sinh%HLP_SHOW_HANDBOOK%' → 0105 (line 536)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Mở hướng dẫn thao tác%HLP_SHOW_HELP%' → 0009 (line 56), 0019 (line 106), 0029 (line 156), 0039 (line 206), 0049 (line 256) | 'Mở Hướng dẫn%HLP_SHOW_HELP%' → 0059 (line 306), 0069 (line 356), 0079 (line 406), 0089 (line 456), 0099 (line 506), ...</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Mở lịch sử hội thoại%HLP_SHOW_TRANSCRIPT%' → 0010 (line 61), 0020 (line 111), 0030 (line 161), 0050 (line 261) | 'Mở Lịch sử hội thoại%HLP_SHOW_TRANSCRIPT%' → 0110 (line 561), 0120 (line 611), 0130 (line 661)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Xác nhận / Chuyển lời thoại%HLP_INTERACT%' → 0013 (line 76), 0043 (line 226) | 'Xác nhận / Tiếp tục văn bản%HLP_INTERACT%' → 0123 (line 626)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Hủy / Bỏ qua lời thoại%HLP_CANCEL_SKIP%' → 0014 (line 81), 0044 (line 231) | 'Hủy / Bỏ qua văn bản%HLP_CANCEL_SKIP%' → 0124 (line 631)</div>
+<div class="issue issue-WARN"><span class="check-tag">[repeated_source_inconsistent]</span>Repeated identical msgid has inconsistent translations: 'Chế độ Tự động%HLP_MESS_AUTO%' → 0018 (line 101), 0048 (line 251) | 'Chế độ tự động%HLP_MESS_AUTO%' → 0128 (line 651)</div>
+<div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0026&quot; (line 141): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0035&quot; (line 186): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0036&quot; (line 191): translation is identical to source text</div>
 <div class="issue issue-INFO"><span class="check-tag">[not_copy_of_source]</span>Entry &quot;0037&quot; (line 196): translation is identical to source text</div>

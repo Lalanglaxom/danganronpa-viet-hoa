@@ -3,7 +3,8 @@ import re
 import tkinter as tk
 from tkinter import filedialog
 from datetime import datetime
-
+import unicodedata
+from collections import defaultdict
 
 # ╔══════════════════════════════════════════════════════════════════════╗
 # ║                                                                      ║
@@ -161,6 +162,127 @@ def check_line_count_match(ctx, copy_entry, work_entry):
             f"structure mismatch may cause crash in choice/dialogue menus"
         )
 
+@rule("suspicious_whitespace", level="WARN", enabled=True)
+def check_suspicious_whitespace(ctx, copy_entry, work_entry):
+    """Flags hidden or suspicious whitespace in msgstr."""
+    if work_entry is None or not work_entry["msgstr"]:
+        return
+
+    s = work_entry["msgstr"]
+    msgctxt = work_entry["msgctxt"]
+    line = work_entry["line"]
+
+    hidden_chars = {
+        "\u00A0": "NBSP (non-breaking space)",
+        "\u200B": "ZERO WIDTH SPACE",
+        "\u200C": "ZERO WIDTH NON-JOINER",
+        "\u200D": "ZERO WIDTH JOINER",
+        "\u2060": "WORD JOINER",
+        "\u3000": "FULL-WIDTH SPACE",
+        "\t": "TAB",
+    }
+
+    for ch, name in hidden_chars.items():
+        if ch in s:
+            yield f'Entry "{msgctxt}" (line {line}): contains {name}'
+
+    if s != s.strip():
+        yield f'Entry "{msgctxt}" (line {line}): leading or trailing whitespace in msgstr'
+
+    if "  " in s:
+        yield f'Entry "{msgctxt}" (line {line}): contains double spaces'
+
+# @rule("placeholder_integrity", level="ERROR", enabled=True)
+# def check_placeholder_integrity(ctx, copy_entry, work_entry):
+#     """Checks that formatting tokens/placeholders in msgid are preserved in msgstr."""
+#     if work_entry is None or not work_entry["msgstr"].strip():
+#         return
+
+#     src = work_entry["msgid"]
+#     tgt = work_entry["msgstr"]
+#     msgctxt = work_entry["msgctxt"]
+#     line = work_entry["line"]
+
+#     token_patterns = {
+#         "printf": r'%(?:\d+\$)?[sdifouxX]',
+#         "brace_placeholders": r'\{[^{}\n]+\}',
+#         "escaped_sequences": r'\\[ntr"\\]',
+#         "generic_tags": r'<(?!CLT\b)[^>\n]+>',
+#     }
+
+#     for label, pattern in token_patterns.items():
+#         src_tokens = re.findall(pattern, src)
+#         tgt_tokens = re.findall(pattern, tgt)
+
+#         if sorted(src_tokens) != sorted(tgt_tokens):
+#             missing = [t for t in src_tokens if t not in tgt_tokens]
+#             extra = [t for t in tgt_tokens if t not in src_tokens]
+
+#             parts = []
+#             if missing:
+#                 parts.append("missing: " + ", ".join(missing))
+#             if extra:
+#                 parts.append("extra: " + ", ".join(extra))
+
+#             yield (
+#                 f'Entry "{msgctxt}" (line {line}): {label} mismatch — '
+#                 + "; ".join(parts)
+#             )
+
+@rule("unicode_integrity", level="WARN", enabled=True)
+def check_unicode_integrity(ctx, copy_entry, work_entry):
+    """Flags non-normalized Unicode, replacement chars, and forbidden control chars in msgstr."""
+    if work_entry is None or not work_entry["msgstr"]:
+        return
+
+    s = work_entry["msgstr"]
+    msgctxt = work_entry["msgctxt"]
+    line = work_entry["line"]
+
+    # 7a. NFC normalization
+    normalized = unicodedata.normalize("NFC", s)
+    if s != normalized:
+        yield (
+            f'Entry "{msgctxt}" (line {line}): msgstr is not NFC-normalized '
+            f"(Unicode normalization mismatch)"
+        )
+
+    # 7b. Replacement character
+    if "\uFFFD" in s:
+        yield f'Entry "{msgctxt}" (line {line}): contains replacement character �'
+
+    # 7c. Unexpected control characters
+    bad_controls = []
+    for ch in s:
+        cat = unicodedata.category(ch)
+        # Allow newline only; tabs are treated as suspicious here
+        if cat == "Cc" and ch != "\n":
+            bad_controls.append(ch)
+
+    if bad_controls:
+        names = ", ".join(
+            f"U+{ord(ch):04X} ({unicodedata.name(ch, 'UNKNOWN CONTROL')})"
+            for ch in sorted(set(bad_controls))
+        )
+        yield (
+            f'Entry "{msgctxt}" (line {line}): contains control character(s): {names}'
+        )
+
+# @rule("translation_length_risk", level="WARN", enabled=True)
+# def check_translation_length_risk(ctx, copy_entry, work_entry):
+#     """Warns if msgstr is longer than 128 characters."""
+#     if work_entry is None:
+#         return
+
+#     tgt = work_entry["msgstr"].strip()
+#     if not tgt:
+#         return
+
+#     if len(tgt) > 128:
+#         yield (
+#             f'Entry "{work_entry["msgctxt"]}" (line {work_entry["line"]}): '
+#             f"msgstr length is {len(tgt)} (> 128 characters)"
+#         )
 # ══════════════════════════════════════════════════════════════════════
 #  END OF CUSTOM RULES — engine code below, edit with care
 # ══════════════════════════════════════════════════════════════════════
@@ -169,6 +291,83 @@ def check_line_count_match(ctx, copy_entry, work_entry):
 # ─────────────────────────────────────────────
 #  PO PARSER
 # ─────────────────────────────────────────────
+ORDER_NUMBER_RE = re.compile(r'^\s*(\d+)\b')
+
+def extract_order_number(msgctxt: str):
+    """
+    Extract leading numeric order from msgctxt.
+    Examples it accepts:
+      "001 MAKOTO"
+      "001 | MAKOTO"
+      "001: MAKOTO"
+    If your format differs, adjust ORDER_NUMBER_RE.
+    """
+    m = ORDER_NUMBER_RE.match(msgctxt or "")
+    return int(m.group(1)) if m else None
+
+
+def scan_raw_po_structure(filepath: str, side_label: str = "Working"):
+    """
+    Scan raw msgctxt lines before parse_po() builds the dict.
+    This catches:
+      - duplicate msgctxt
+      - duplicate order number at start of msgctxt
+    """
+    issues = []
+
+    def issue(level, check, detail):
+        issues.append({"level": level, "check": check, "detail": detail})
+
+    with open(filepath, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    seen_msgctxt = {}         # msgctxt -> first line
+    seen_order_no = {}        # order number -> (first line, first msgctxt)
+
+    for lineno, raw in enumerate(lines, 1):
+        line = raw.rstrip("\n")
+        if not line.startswith("msgctxt "):
+            continue
+
+        m = re.match(r'^msgctxt\s+"(.*)"\s*$', line)
+        if not m:
+            issue(
+                "ERROR",
+                "malformed_msgctxt",
+                f'{side_label}: malformed msgctxt line at {lineno}: {line!r}'
+            )
+            continue
+
+        msgctxt = m.group(1)
+
+        # 4. Duplicate msgctxt check
+        if msgctxt in seen_msgctxt:
+            issue(
+                "ERROR",
+                "duplicate_msgctxt",
+                f'{side_label}: duplicate msgctxt "{msgctxt}" at line {lineno} '
+                f'(first seen at line {seen_msgctxt[msgctxt]})'
+            )
+        else:
+            seen_msgctxt[msgctxt] = lineno
+
+        # 5. Duplicate order-number check
+        order_no = extract_order_number(msgctxt)
+        if order_no is not None:
+            if order_no in seen_order_no:
+                first_line, first_ctx = seen_order_no[order_no]
+                issue(
+                    "ERROR",
+                    "duplicate_order_number",
+                    f'{side_label}: duplicate order number {order_no} at line {lineno} '
+                    f'for msgctxt "{msgctxt}" (first seen at line {first_line} '
+                    f'as "{first_ctx}")'
+                )
+            else:
+                seen_order_no[order_no] = (lineno, msgctxt)
+
+    return issues
+
 
 def parse_po(filepath):
     with open(filepath, encoding="utf-8") as f:
@@ -250,7 +449,7 @@ REQUIRED_HEADER_KEYS = [
     "Content-Transfer-Encoding",
 ]
 
-def run_builtin_checks(copy_header, copy_entries, work_header, work_entries):
+def run_builtin_checks(copy_header, copy_entries, work_header, work_entries, copy_order, work_order):
     issues = []
 
     def issue(level, check, detail):
@@ -258,7 +457,29 @@ def run_builtin_checks(copy_header, copy_entries, work_header, work_entries):
 
     copy_keys = set(copy_entries)
     work_keys = set(work_entries)
+    # ── 0. Entry order must match ─────────────────────────────────────────
+    if copy_order != work_order:
+        min_len = min(len(copy_order), len(work_order))
+        first_diff = None
 
+        for i in range(min_len):
+            if copy_order[i] != work_order[i]:
+                first_diff = i
+                break
+
+        if first_diff is not None:
+            issue(
+                "ERROR",
+                "entry_order",
+                f"First order mismatch at position {first_diff + 1}: "
+                f'Copy="{copy_order[first_diff]}", Working="{work_order[first_diff]}"'
+            )
+        else:
+            issue(
+                "ERROR",
+                "entry_order",
+                f"Entry order length mismatch: Copy={len(copy_order)}, Working={len(work_order)}"
+            )
     # ── 1. Entry count ────────────────────────────────────────────────────
     if len(copy_entries) != len(work_entries):
         issue("ERROR", "entry_count",
@@ -328,6 +549,42 @@ def run_builtin_checks(copy_header, copy_entries, work_header, work_entries):
     if untrans:
         issue("WARN", "untranslated",
               f"{len(untrans)} untranslated: " + ", ".join(untrans))
+
+    # ── 5. Consistency for repeated identical source text ───────────────
+    repeated_sources = defaultdict(list)
+    for key, entry in work_entries.items():
+        src = entry["msgid"].strip()
+        if src:
+            repeated_sources[src].append(entry)
+
+    for src, group in repeated_sources.items():
+        if len(group) < 2:
+            continue
+
+        # Only compare non-empty translations
+        translations = {}
+        for e in group:
+            tgt = e["msgstr"].strip()
+            if tgt:
+                translations.setdefault(tgt, []).append(e)
+
+        if len(translations) > 1:
+            parts = []
+            for tgt, entries_for_tgt in translations.items():
+                labels = ", ".join(
+                    f'{e["msgctxt"]} (line {e["line"]})'
+                    for e in entries_for_tgt[:5]
+                )
+                if len(entries_for_tgt) > 5:
+                    labels += ", ..."
+                parts.append(f'{tgt!r} → {labels}')
+
+            issue(
+                "WARN",
+                "repeated_source_inconsistent",
+                f"Repeated identical msgid has inconsistent translations: "
+                + " | ".join(parts)
+            )
 
     return issues
 
@@ -853,6 +1110,16 @@ def run():
                 _f.write(_raw_bytes.replace(b'\r\n', b'\n'))
             out.append(f"    ✔ [auto-fix] CRLF → LF normalized in {segment_id}")
 
+        # ── Auto-fix NFD → NFC unicode normalization ─────────────
+        import unicodedata as _ud
+        with open(work_path, 'r', encoding='utf-8') as _f:
+            _text = _f.read()
+        _nfc = _ud.normalize('NFC', _text)
+        if _text != _nfc:
+            with open(work_path, 'w', encoding='utf-8') as _f:
+                _f.write(_nfc)
+            out.append(f"    ✔ [auto-fix] NFD → NFC unicode normalized in {segment_id}")
+        
         # ── Auto-fix PO spacing ──────────────────────────────────
         fix_file(work_path)
         out.append(f"    ✔ [auto-fix] PO spacing reformatted in {segment_id}")
@@ -862,8 +1129,11 @@ def run():
             out.append(f"    ✔ [auto-fix] Header reformatted in {segment_id}")
 
         try:
+            raw_issues = []
+            raw_issues += scan_raw_po_structure(copy_path, "Copy")
+            raw_issues += scan_raw_po_structure(work_path, "Working")
             copy_header, copy_entries, copy_keys = parse_po(copy_path)
-            work_header, work_entries, _          = parse_po(work_path)
+            work_header, work_entries, work_keys_order = parse_po(work_path)
         except Exception as e:
             out.append(f"\n  [PARSE ERROR]  {segment_id}")
             out.append(f"    ✗ [parse] {e}")
@@ -883,11 +1153,17 @@ def run():
             )
             if n_fixed:
                 out.append(f"    ✚ [auto-fix] Inserted {n_fixed} missing entr{'y' if n_fixed==1 else 'ies'} — re-parsing...")
-                work_header, work_entries, _ = parse_po(work_path)
+                work_header, work_entries, work_keys_order = parse_po(work_path)
 
         ctx    = {"file": rel, "chapter": chapter_name, "segment": segment_id,
                    "has_choice_react": any("CHOICE/RE:ACT" in k for k in work_entries)}
-        issues = run_builtin_checks(copy_header, copy_entries, work_header, work_entries)
+        
+        issues = raw_issues[:]
+        issues += run_builtin_checks(
+            copy_header, copy_entries,
+            work_header, work_entries,
+            copy_keys, work_keys_order
+        )
         issues += run_custom_rules(copy_entries, work_entries, ctx)
 
         n_err    = sum(1 for i in issues if i["level"] == "ERROR")
