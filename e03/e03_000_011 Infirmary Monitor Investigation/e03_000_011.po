@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>なんだよ、このモニター…！
 #. どこの会社が作ってるんだよ！
@@ -20,9 +21,10 @@ msgid ""
 "this kind of thing!?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái loại màn hình gì thế này!? Ai lại đi sản xuất\n"
-"cái thứ như thế này chứ!?\n"
+"<CLT 4>Cái loại màn hình gì thế này!? Ai lại đi sản xuất cái thứ\n"
+"như thế này chứ!?\n"
 "<CLT>"
+
 #. …モノクマ社って書いてある。
 #. ディティールにこだわってるな…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,8 +32,9 @@ msgid ""
 "It has \"Monokuma Co.\" written across it. I guess\n"
 "they've covered all the details..."
 msgstr ""
-"Trên đó có dòng chữ \"Tập đoàn Monokuma\". Tôi đoán\n"
-"là chúng đã chuẩn bị kỹ lưỡng đến từng chi tiết rồi..."
+"Trên đó có ghi \"Tập đoàn Monokuma\". Đúng là chăm chút \n"
+"tới từng chi tiết mà..."
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -41,9 +44,10 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia\n"
-"của chiếc camera giám sát đó...\n"
+"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của\n"
+"chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -52,9 +56,10 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ cần nghĩ về điều đó thôi cũng làm tôi thấy bứt rứt... nhưng thực sự\n"
-"chẳng có gì tôi có thể làm được.\n"
+"<CLT 4>Chỉ cần nghĩ về điều đó thôi cũng làm mình thấy bứt rứt...\n"
+"nhưng thực sự chẳng có gì mình có thể làm được.\n"
 "<CLT>"
+
 #. <CLT 4>これは、ゴミ箱だな…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -64,6 +69,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một cái thùng rác bình thường.\n"
 "<CLT>"
+
 #. <CLT 4>中には何も入ってないし、
 #. 気にする必要はないか…
 #. <CLT>
@@ -73,9 +79,10 @@ msgid ""
 "spend any more time thinking about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bên trong chẳng có gì cả, nên tôi cũng không cần phải\n"
-"tốn thêm thời gian bận tâm về nó làm gì.\n"
+"<CLT 4>Bên trong chẳng có gì cả, nên mình cũng không cần phải tốn\n"
+"thêm thời gian bận tâm về nó làm gì.\n"
 "<CLT>"
+
 #. <CLT 4>冷蔵庫…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -85,6 +92,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một cái tủ lạnh...\n"
 "<CLT>"
+
 #. <CLT 4>医薬品でも冷やしてるのかな…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -92,16 +100,20 @@ msgid ""
 "<CLT 4>They must use it to keep drugs and stuff cold.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hẳn là họ dùng nó để giữ lạnh thuốc men và những thứ tương tự.\n"
+"<CLT 4>Hẳn là họ dùng nó để giữ lạnh thuốc men và những \n"
+"thứ tương tự.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -109,5 +121,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

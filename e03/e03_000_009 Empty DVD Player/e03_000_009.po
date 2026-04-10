@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. モノクマじゃなくて、テレビでも見られたらな…
@@ -20,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất hiện. Tôi\n"
-"thà được xem TV bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất\n"
+"hiện. Mình thà được xem TV bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -32,9 +34,10 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là tôi có thể thoát khỏi đây mà còn sống, tôi sẽ chẳng bao giờ\n"
-"nhìn những chiếc camera giám sát theo cách như trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ chẳng\n"
+"thể nhìn những chiếc camera giám sát như trước đây đượcnữa...\n"
 "<CLT>"
+
 #. <CLT 4>もう何も入ってない…
 #. 空っぽなら誰か捨てればいいのに…
 #. <CLT>
@@ -44,9 +47,10 @@ msgid ""
 "just throw it away...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không còn gì ở trong này nữa. Đáng lẽ ai đó nên\n"
-"vứt nó đi mới phải...\n"
+"<CLT 4>Không còn gì ở trong này nữa. Đáng lẽ ai đó nên vứt nó đi\n"
+"mới phải...\n"
 "<CLT>"
+
 #. <CLT 4>ＤＶＤデッキだ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -56,6 +60,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một cái đầu đĩa DVD.\n"
 "<CLT>"
+
 #. <CLT 4>でも再生するソフトは何もない。
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -65,14 +70,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì xung quanh đây để cho vào đó cả...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0008 | NARRATION"
@@ -80,5 +88,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

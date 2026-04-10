@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. モノクマじゃなくて、テレビでも見られたらな…
@@ -20,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất hiện. Tôi\n"
-"thà được xem TV bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất\n"
+"hiện. Mình thà được xem TV bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -32,13 +34,16 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là tôi có thể thoát khỏi đây mà còn sống, tôi sẽ chẳng bao giờ\n"
-"nhìn những chiếc camera giám sát theo cách như trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ chẳng\n"
+"bao giờ nhìn những chiếc camera giám sát theo cách như trước đây\n"
+"nữa...\n"
 "<CLT>"
+
 #. これは…ビニールシートか。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "This is...a tarp."
 msgstr "Đây là... một tấm bạt."
+
 #. <CLT 4>ごく普通のものだな…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -48,6 +53,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhìn chung thì nó là một món đồ khá bình thường.\n"
 "<CLT>"
+
 #. <CLT 4>振り子や車輪やレール…
 #. 実験で使う器具が乱雑にしまわれている。
 #. <CLT>
@@ -60,6 +66,7 @@ msgstr ""
 "<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả thiết bị\n"
 "đều nằm rải rác khắp nơi.\n"
 "<CLT>"
+
 #. <CLT 4>埃をかぶってるみたいだし…
 #. 長い事、使われてないみたいだな…
 #. <CLT>
@@ -69,9 +76,10 @@ msgid ""
 "haven't been used in a long time.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng cũng bị bám đầy bụi nữa. Rõ ràng là\n"
-"đã lâu rồi không có ai sử dụng đến.\n"
+"<CLT 4>Chúng cũng bị bám đầy bụi nữa. Rõ ràng là đã lâu rồi không\n"
+"có ai sử dụng đến.\n"
 "<CLT>"
+
 #. <CLT 4>おそらく…過去の実験結果とか研究資料とか…
 #. その手のファイルがズラリと並んでいる。
 #. <CLT>
@@ -81,17 +89,20 @@ msgid ""
 "or research data...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ở đây có một đống hồ sơ. Chắc là mấy tệp tài liệu phòng thí nghiệm cũ\n"
-"hoặc dữ liệu nghiên cứu...\n"
+"<CLT 4>Ở đây có một đống hồ sơ. Chắc là mấy tệp tài liệu phòng\n"
+"thí nghiệm cũ hoặc dữ liệu nghiên cứu...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>物理準備室から出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"

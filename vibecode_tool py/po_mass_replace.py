@@ -82,14 +82,30 @@ def _decode(raw_block: str) -> str:
 
 
 def _encode_po_string(text: str) -> str:
-    """Encode Python text as a single PO quoted string."""
-    escaped = (
-        text
-        .replace("\\", "\\\\")
-        .replace('"', '\\"')
-        .replace("\n", "\\n")
-    )
-    return f'"{escaped}"'
+    """Encode Python text into multi-line PO string format. UwU~ ✨"""
+    if not text:
+        return '""'
+        
+    lines = text.split('\n')
+    
+    # If it's a single line with no newline at the end
+    if len(lines) == 1:
+        escaped = lines[0].replace("\\", "\\\\").replace('"', '\\"')
+        return f'"{escaped}"'
+        
+    # Multi-line format layout preserving!
+    result = ['""']
+    for i, line in enumerate(lines):
+        if i == len(lines) - 1 and line == "":
+            continue
+            
+        escaped = line.replace("\\", "\\\\").replace('"', '\\"')
+        if i < len(lines) - 1:
+            escaped += "\\n"
+            
+        result.append(f'"{escaped}"')
+        
+    return '\n'.join(result)
 
 
 def _extract_entry_parts(block: str):
@@ -109,14 +125,19 @@ def _extract_entry_parts(block: str):
 
 
 def _replace_msgstr_in_block(block: str, new_msgstr: str) -> str:
-    """Replace only the msgstr portion inside a PO entry block."""
+    """Replace only the msgstr portion inside a PO entry block. Safely! 🎀"""
     encoded = _encode_po_string(new_msgstr)
-    return re.sub(
-        r'msgstr\s+(?:' + Q + r'\n?)*',
-        f"msgstr {encoded}",
-        block,
-        count=1,
-    )
+    
+    # Using a callable replacer stops re.sub from turning our precious \n into actual linebreaks!
+    pattern = r'msgstr\s+(?:' + Q + r'\n?)*'
+    
+    def repl(m):
+        matched_str = m.group(0)
+        # Give back the trailing newline if we eated it! 🍪
+        suffix = "\n" if matched_str.endswith("\n") else ""
+        return f"msgstr {encoded}{suffix}"
+        
+    return re.sub(pattern, repl, block, count=1)
 
 
 # ════════════════════════════════════════════════════════════════════

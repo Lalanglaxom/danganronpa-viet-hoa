@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>ここは…物理室か…
 #. <CLT>
@@ -20,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là... phòng vật lý.\n"
 "<CLT>"
+
 #. <CLT 4>でも、教室って言うより、
 #. まるで何かの研究所だな。
 #. <CLT>
@@ -29,9 +31,10 @@ msgid ""
 "research institute...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nơi này ít giống một lớp học mà giống một loại\n"
-"viện nghiên cứu nào đó hơn...\n"
+"<CLT 4>Nơi này ít giống một lớp học mà giống một loại viện nghiên\n"
+"cứu nào đó hơn...\n"
 "<CLT>"
+
 #. 石丸クン…
 #. ここって、何かの研究所みたいだよね。
 msgctxt "0003 | MAKOTO NAEGI"
@@ -39,8 +42,9 @@ msgid ""
 "Hey, Taka. Don't you think this place is like some\n"
 "kind of research institute?"
 msgstr ""
-"Này, Ishimaru. Cậu có nghĩ nơi này giống như một loại\n"
-"viện nghiên cứu nào đó không?"
+"Này, Ishimaru. Cậu có nghĩ nơi này giống như một loại viện\n"
+"nghiên cứu nào đó không?"
+
 #. ……………
 msgctxt "0004 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -55,6 +59,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vẫn không có phản ứng gì...\n"
 "<CLT>"
+
 #. <CLT 4>もちろん、ここにもモニターが…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -64,6 +69,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Dĩ nhiên là ở đây cũng có một cái màn hình.\n"
 "<CLT>"
+
 #. こんな物を気にしてもしょうがない、
 #. 放っておこう。
 msgctxt "0007 | MAKOTO NAEGI"
@@ -71,8 +77,9 @@ msgid ""
 "I can't let it get to me. I need to just forget about\n"
 "it."
 msgstr ""
-"Tôi không thể để nó làm ảnh hưởng đến mình. Tôi cần phải quên\n"
-"nó đi thôi."
+"Tôi không thể để nó làm ảnh hưởng đến mình. Tôi cần phải\n"
+"quên nó đi thôi."
+
 #. <CLT 4>もちろん、監視カメラ…って訳か。
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -82,6 +89,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tất nhiên là ở đây cũng có camera giám sát rồi.\n"
 "<CLT>"
+
 #. <CLT 4>あ、これって…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -91,6 +99,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Ồ, đây là...\n"
 "<CLT>"
+
 #. <CLT 4>なんだか、アニメ調の妙なデザインだけど…
 #. デジカメだよな？
 #. <CLT>
@@ -100,9 +109,10 @@ msgid ""
 "anime style design on it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một chiếc máy ảnh kỹ thuật số. Nó có thiết kế theo phong cách\n"
-"anime kỳ lạ nào đó trên vỏ máy...\n"
+"<CLT 4>Đó là một chiếc máy ảnh kỹ thuật số. Nó có thiết kế theo\n"
+"phong cách anime kỳ lạ nào đó trên vỏ máy...\n"
 "<CLT>"
+
 #. <CLT 4>ちょっと汚れてるけど、
 #. 電源はちゃんと入るみたいだ。
 #. <CLT>
@@ -115,6 +125,7 @@ msgstr ""
 "<CLT 4>Nó hơi cũ nát một chút, nhưng có vẻ như vẫn còn khởi động\n"
 "bình thường được...\n"
 "<CLT>"
+
 #. <CLT 4>これは使えそうだぞ。
 #. 後で、みんなにも見せてみよう。
 #. <CLT>
@@ -125,26 +136,32 @@ msgid ""
 msgstr ""
 "<CLT 4>Ừm, nó vẫn hoạt động tốt! Tí nữa mình nên đưa cho mọi người xem.\n"
 "<CLT>"
+
 #. こ、このバカでかい機械は…なんなんだ？
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "What's up with this ridiculously big machine...?"
 msgstr "Cái máy to lớn đến nực cười này là sao vậy chứ...?"
+
 #. あっぶなーいッ！！
 msgctxt "0014 | MONOKUMA"
 msgid "Watch out!"
 msgstr "Coi chừng đấy nhé!"
+
 #. な、なんだよ…
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "Wh-What—?"
 msgstr "C-Cái gì—?"
+
 #. 時を駆けちゃうのッ！？
 msgctxt "0016 | MONOKUMA"
 msgid "What, you wanna do some quantum leaping!?"
 msgstr "Sao thế, ngươi muốn thực hiện cú nhảy lượng tử à!?"
+
 #. …は？
 msgctxt "0017 | MAKOTO NAEGI"
 msgid "Huh...?"
 msgstr "Hả...?"
+
 #. それ、タイムマシーンなの！
 #. すごくない？　希望ヶ峰学園の生徒が開発したんだよ？
 msgctxt "0018 | MONOKUMA"
@@ -152,8 +169,9 @@ msgid ""
 "That's a time machine! Pretty awesome, right? It was\n"
 "designed by a student right here at Hope's Peak!"
 msgstr ""
-"Đó là một cỗ máy thời gian đấy! Tuyệt vời lắm đúng không? Nó được\n"
-"thiết kế bởi một học sinh ngay tại Đỉnh Hy Vọng này đấy!"
+"Đó là một cỗ máy thời gian đấy! Tuyệt vời lắm đúng không? Nó\n"
+"được thiết kế bởi một học sinh ngay tại Đỉnh Hy Vọng này đấy!"
+
 #. 超高校級の物理研究者…
 #. 絶望の末に死んだ<CLT 3>“元”希望ヶ峰学園生<CLT>だけどね。
 msgctxt "0019 | MONOKUMA"
@@ -161,29 +179,35 @@ msgid ""
 "The Ultimate Physicist... Although, they <CLT 3>don't go\n"
 "here<CLT> anymore. They died during The Tragedy!"
 msgstr ""
-"Siêu Học Sinh Vật Lý... Mặc dù, họ không còn <CLT 3>ở đây<CLT>\n"
-"nữa. Họ đã chết trong Bi kịch rồi!"
+"Siêu Học Sinh Vật Lý... Mặc dù, họ không còn <CLT 3>ở đây<CLT> nữa. Họ\n"
+"đã chết trong Bi kịch rồi!"
+
 #. タイムマシーン……？
 msgctxt "0020 | KIYOTAKA ISHIMARU"
 msgid "A time machine...?"
 msgstr "Một cỗ máy thời gian sao...?"
+
 #. 本当…なのか……
 #. 過去に戻れる…のか…？
 msgctxt "0021 | KIYOTAKA ISHIMARU"
 msgid "Seriously...? So...it can go back in time...?"
 msgstr "Thật sao...? Vậy... nó có thể quay ngược thời gian sao...?"
+
 #. だったら…僕を…乗せてくれ…
 msgctxt "0022 | KIYOTAKA ISHIMARU"
 msgid "Okay, then...let me get in there..."
 msgstr "Được rồi, vậy thì... hãy để tôi vào trong đó..."
+
 #. 過去に戻れば…そうすれば……
 msgctxt "0023 | KIYOTAKA ISHIMARU"
 msgid "If I can go back to the past...then I can..."
 msgstr "Nếu tôi có thể quay về quá khứ... vậy thì tôi có thể..."
+
 #. 今度こそ…兄弟を止められる…ッ！！
 msgctxt "0024 | KIYOTAKA ISHIMARU"
 msgid "This time I'll stop Mondo for sure—!"
 msgstr "Lần này tôi chắc chắn sẽ ngăn cản Mondo—!"
+
 #. 無理だよ。
 #. このタイムマシーンって１分しか戻れないもん。
 msgctxt "0025 | MONOKUMA"
@@ -191,8 +215,9 @@ msgid ""
 "Oh, sorry, not possible. This particular time machine\n"
 "can only go back one minute."
 msgstr ""
-"Ồ, xin lỗi nhé, không được đâu. Cỗ máy thời gian đặc biệt này\n"
-"chỉ có thể quay ngược lại một phút thôi."
+"Ồ, xin lỗi nhé, không được đâu. Cỗ máy thời gian đặc biệt\n"
+"này chỉ có thể quay ngược lại một phút thôi."
+
 #. カップラーメンを１分長めに放置した…なんて場合は、
 #. 重宝すると思うけどね！
 msgctxt "0026 | MONOKUMA"
@@ -202,14 +227,17 @@ msgid ""
 msgstr ""
 "Nó sẽ rất tiện dụng khi đằng ấy, kiểu như... để bánh pizza\n"
 "trong lò vi sóng lâu hơn một phút chẳng hạn."
+
 #. １分……？
 msgctxt "0027 | KIYOTAKA ISHIMARU"
 msgid "One minute...?"
 msgstr "Một phút sao...?"
+
 #. あれ、ガッカリした？
 msgctxt "0028 | MONOKUMA"
 msgid "Hmm... You sound disappointed."
 msgstr "Hừm... Nghe đằng ấy có vẻ thất vọng nhỉ."
+
 #. ていうか全部ウソなんだけど。
 #. タイムマシーンなんて…ないない。
 msgctxt "0029 | MONOKUMA"
@@ -219,18 +247,22 @@ msgid ""
 msgstr ""
 "Nhưng thực ra, dù sao thì ta cũng vừa nói dối toàn bộ đấy.\n"
 "Làm gì có thứ gọi là máy thời gian chứ!"
+
 #. え……？
 msgctxt "0030 | KIYOTAKA ISHIMARU"
 msgid "What...?"
 msgstr "Cái gì...?"
+
 #. ホントは<CLT 3>空気清浄機<CLT>なんだよ。
 msgctxt "0031 | MONOKUMA"
 msgid "Honestly, it's just an <CLT 3>air purifier<CLT>."
 msgstr "Thật ra, nó chỉ là một cái <CLT 3>máy lọc không khí<CLT> thôi."
+
 #. 空気清浄機…？
 msgctxt "0032 | MAKOTO NAEGI"
 msgid "Air purifier...?"
 msgstr "Máy lọc không khí sao...?"
+
 #. あらゆる状況下で酸素を生み出せる優れ物だよ。
 #. それさえあれば、火星でだって暮らせる。
 msgctxt "0033 | MONOKUMA"
@@ -240,6 +272,7 @@ msgid ""
 msgstr ""
 "Nó có thể tạo ra không khí sạch bất kể đằng ấy đang ở đâu.\n"
 "Với thứ đó, ngươi thậm chí có thể sống trên sao Hỏa đấy!"
+
 #. まぁ、気温とか重力の問題があるから、
 #. 実際のところ、火星には住めないでしょうけど…
 msgctxt "0034 | MONOKUMA"
@@ -249,6 +282,7 @@ msgid ""
 msgstr ""
 "Nhưng với trọng lực hỗn loạn và nhiệt độ thấp chết người,\n"
 "ngươi có lẽ chẳng muốn sống trên sao Hỏa đâu."
+
 #. とにかく、オマエラがおいしい空気をいただけるのは、
 #. その機械のおかげなんだから…
 msgctxt "0035 | MONOKUMA"
@@ -256,14 +290,18 @@ msgid ""
 "Anyway, this machine is the reason you guys have all\n"
 "this delicious air."
 msgstr ""
-"Dù sao thì, cái máy này chính là lý do mà các ngươi có được\n"
-"bầu không khí ngon lành này đấy."
+"Dù sao thì, cái máy này chính là lý do mà các ngươi có\n"
+"được bầu không khí ngon lành này đấy."
+
 #. いじって壊したりしないよーに！！
 msgctxt "0036 | MONOKUMA"
 msgid ""
 "So don't go messing with it! You break it, and it's\n"
 "your butt!"
-msgstr "Nên đừng có táy máy vào nó đấy! Ngươi mà làm hỏng nó là tiêu đời luôn!"
+msgstr ""
+"Nên đừng có táy máy vào nó đấy! Ngươi mà làm hỏng nó là\n"
+"tiêu đời luôn!"
+
 #. <CLT 4>この大きい機械が…ただの空気清浄機だって…？
 #. <CLT>
 msgctxt "0037 | MAKOTO NAEGI"
@@ -273,6 +311,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái thứ to lớn này chỉ là... một cái máy lọc không khí thôi sao?\n"
 "<CLT>"
+
 #. <CLT 4>いや、そんな事より…
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
@@ -282,6 +321,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Và hơn thế nữa...\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0039 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -299,10 +339,12 @@ msgstr ""
 "<CLT 4>Phải cố tình nói ra điều gì đó mà mình biết chắc chắn sẽ\n"
 "làm tổn thương một người vốn đã đang đau khổ...\n"
 "<CLT>"
+
 #. …クソッ！
 msgctxt "0041 | MAKOTO NAEGI"
 msgid "God damn you!"
 msgstr "Chết tiệt thật mà!"
+
 #. この大きい機械が…
 #. ただの空気清浄機なんて…
 msgctxt "0042 | MAKOTO NAEGI"
@@ -310,12 +352,14 @@ msgid ""
 "This gigantic piece of machinery is just an air\n"
 "purifier..."
 msgstr ""
-"Cái bộ máy khổng lồ này chỉ là một cái máy lọc\n"
-"không khí thôi sao..."
+"Cái bộ máy khổng lồ này chỉ là một cái máy lọc không khí\n"
+"thôi sao..."
+
 #. 本当なのか…！？
 msgctxt "0043 | MAKOTO NAEGI"
 msgid "Is that really true...?"
 msgstr "Điều đó thực sự là thật sao...?"
+
 #. <CLT 4>物理の実験とかで使う物か…？
 #. <CLT>
 msgctxt "0044 | MAKOTO NAEGI"
@@ -327,6 +371,7 @@ msgstr ""
 "<CLT 4>Chắc hẳn họ dùng mấy thứ này cho các thí nghiệm vật lý và\n"
 "đại loại vậy...\n"
 "<CLT>"
+
 #. <CLT 4>資料の他にも、滑車やプレート、
 #. 磁石や見た事のない機器が並んでる…
 #. <CLT>
@@ -336,9 +381,10 @@ msgid ""
 "all kinds of stuff I don't even recognize.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có các tài liệu, ròng rọc, tấm thép, nam châm, và\n"
-"đủ loại thứ mà tôi thậm chí còn chẳng nhận ra.\n"
+"<CLT 4>Có các tài liệu, ròng rọc, tấm thép, nam châm, và đủ loại\n"
+"thứ mà mình thậm chí còn chẳng nhận ra.\n"
 "<CLT>"
+
 #. <CLT 4>なんかの機械って事はわかるけど…
 #. <CLT>
 msgctxt "0046 | MAKOTO NAEGI"
@@ -347,9 +393,9 @@ msgid ""
 "but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cỗ máy này rõ ràng là có mục đích gì đó,\n"
-"nhưng...\n"
+"<CLT 4>Cỗ máy này rõ ràng là có mục đích gì đó, nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>そもそも、物理が何かよくわからないボクに、
 #. この機械を理解するのは難しそうだ…
 #. <CLT>
@@ -359,17 +405,20 @@ msgid ""
 "so I wouldn't have a clue where to start with this.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...vốn dĩ tôi chẳng biết gì về vật lý cả, nên tôi\n"
-"cũng chẳng biết phải bắt đầu từ đâu với thứ này nữa.\n"
+"<CLT 4>...vốn dĩ mình chẳng biết gì về vật lý cả, nên mình cũng\n"
+"chẳng biết phải bắt đầu từ đâu với thứ này nữa.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0048 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0049 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0050 | NARRATION"
@@ -379,6 +428,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
+
 #. <CLT 4>もうちょっと、ここを調べてみよう…
 #. <CLT>
 msgctxt "0051 | MAKOTO NAEGI"
@@ -386,5 +436,5 @@ msgid ""
 "<CLT 4>I'd better look around a little bit more...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi nên tìm kiếm xung quanh thêm một chút nữa...\n"
+"<CLT 4>Mình nên tìm kiếm xung quanh thêm một chút nữa...\n"
 "<CLT>"

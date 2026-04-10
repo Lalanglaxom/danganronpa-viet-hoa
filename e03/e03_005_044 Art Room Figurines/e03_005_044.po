@@ -2,19 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 【彫刻用器具】
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "[sculpting tools]"
 msgstr "[dụng cụ điêu khắc]"
+
 #. 山田クンって…彫刻にも興味あるの？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -23,6 +25,7 @@ msgid ""
 msgstr ""
 "Vậy, Hifumi... cậu có thích điêu khắc và mô hình nhân vật\n"
 "hay mấy thứ tương tự không?"
+
 #. 基本、２次元限定なんですが、
 #. フィギュアは別です。ギリで２次元です。
 msgctxt "0003 | HIFUMI YAMADA"
@@ -30,8 +33,9 @@ msgid ""
 "Well normally, I limit myself to 2D. But figurines are\n"
 "like, borderline 2D, so it's okay."
 msgstr ""
-"Bình thường tôi chỉ giới hạn bản thân ở thế giới 2D thôi. Nhưng mô hình\n"
-"cũng kiểu như là ranh giới của 2D vậy, nên cũng ổn thôi."
+"Bình thường tôi chỉ giới hạn bản thân ở thế giới 2D thôi. Nhưng\n"
+"mô hình cũng kiểu như là ranh giới của 2D vậy, nên cũng ổn thôi."
+
 #. <CLT 4>ギリの意味がわからないけど…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -39,8 +43,9 @@ msgid ""
 "<CLT 4>I don't know how that's \"borderline\" but okay...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi chẳng hiểu cái \"ranh giới\" đó là nghĩa gì nhưng được rồi...\n"
+"<CLT 4>Mình chẳng hiểu cái \"ranh giới\" đó là nghĩa gì nhưng được rồi...\n"
 "<CLT>"
+
 #. 特に、チャランボさん、パンプキンヘッドさん、
 #. 六本木三郎さんの作る作品には憧れていましてね…
 msgctxt "0005 | HIFUMI YAMADA"
@@ -48,8 +53,9 @@ msgid ""
 "I'm a fan of Charanbo, Pumpkinhead, and I especially\n"
 "admire anything that Saburo Ronppongi makes."
 msgstr ""
-"Tôi là fan của Charanbo, Pumpkinhead, và đặc biệt\n"
-"ngưỡng mộ bất cứ thứ gì mà Saburo Ronppongi tạo ra."
+"Tôi là fan của Charanbo, Pumpkinhead, và đặc biệt ngưỡng\n"
+"mộ bất cứ thứ gì mà Saburo Ronppongi tạo ra."
+
 #. チャランボさんは、筋肉の表現が美しく、その持ち味が
 #. 十全に発揮された猫ママシリーズが秀逸です。
 msgctxt "0006 | HIFUMI YAMADA"
@@ -57,8 +63,9 @@ msgid ""
 "Charanbo's ability to express the movement of muscles\n"
 "is exquisite, as seen in his Mama Cat series."
 msgstr ""
-"Khả năng thể hiện sự chuyển động của cơ bắp của Charanbo\n"
-"rất tinh tế, có thể thấy rõ qua series Mama Cat của ông ấy."
+"Khả năng thể hiện sự chuyển động của cơ bắp của Charanbo rất\n"
+"tinh tế, có thể thấy rõ qua series Mama Cat của ông ấy."
+
 #. パンプキンヘッドさんは、
 #. 今世紀を代表する妖精さん原型師ですし…
 msgctxt "0007 | HIFUMI YAMADA"
@@ -66,8 +73,9 @@ msgid ""
 "Pumpkinhead is like a little sculptor fairy,\n"
 "representing this century's greatest quality!"
 msgstr ""
-"Pumpkinhead cứ như một nàng tiên điêu khắc nhỏ bé,\n"
-"đại diện cho chất lượng tuyệt vời nhất của thế kỷ này!"
+"Pumpkinhead cứ như một nàng tiên điêu khắc nhỏ bé, đại\n"
+"diện cho chất lượng tuyệt vời nhất của thế kỷ này!"
+
 #. 六本木三郎さんは、美麗可動フィギュアを得意とし、
 #. メカ娘の布教の為に海外遠征までなさっている。
 msgctxt "0008 | HIFUMI YAMADA"
@@ -77,27 +85,32 @@ msgid ""
 msgstr ""
 "Trong khi đó, Saburo Ronppongi lại nổi tiếng với series Mecha\n"
 "Musume, thứ đã dẫn đến một chuyến lưu diễn toàn thế giới."
+
 #. いずれも、フィギュア界の四天王の名に相応しいお方！
 msgctxt "0009 | HIFUMI YAMADA"
 msgid "Truly they can only be regarded as the Elite Four!"
 msgstr "Thực sự họ chỉ có thể được coi là Tứ Đại Thiên Vương mà thôi!"
+
 #. 四天王って１人足りないけど…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "But...one of your elite is missing."
 msgstr "Nhưng... nhóm tinh anh của cậu thiếu mất một người rồi."
+
 #. 三天王では中途半端でしょうが！
 msgctxt "0011 | HIFUMI YAMADA"
 msgid ""
 "Well the Elite Three just sounds stupid, now doesn't\n"
 "it!?"
 msgstr ""
-"Chà, cái tên Tam Đại Thiên Vương nghe nó cứ ngớ ngẩn thế nào ấy, đúng\n"
-"không!?"
+"Chà, cái tên Tam Đại Thiên Vương nghe nó cứ ngớ ngẩn thế\n"
+"nào ấy, đúng không!?"
+
 #. それに席が１つ空いているのは、
 #. ずばり…僕の為の席なのです！
 msgctxt "0012 | HIFUMI YAMADA"
 msgid "Besides, that empty seat rightly belongs to...me!"
 msgstr "Hơn nữa, cái ghế trống đó vốn dĩ thuộc về... tôi!"
+
 #. ふっふっふ、始まる…
 #. ここから僕の世紀末覇王伝説が始まるのだ…
 msgctxt "0013 | HIFUMI YAMADA"
@@ -105,12 +118,15 @@ msgid ""
 "Hmhmhm. It begins... Today begins my reign as the\n"
 "legendary ruler of the next century!"
 msgstr ""
-"Heh heh heh. Bắt đầu rồi... Hôm nay chính là khởi đầu cho triều đại của tôi\n"
-"với tư cách là kẻ thống trị huyền thoại của thế kỷ tới!"
+"Heh heh heh. Bắt đầu rồi... Hôm nay chính là khởi đầu cho triều\n"
+"đại của tôi với tư cách là kẻ thống trị huyền thoại của thế kỷ\n"
+"tới!"
+
 #. そっか…頑張ってね…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "I see... Well, good luck with that."
 msgstr "Tớ hiểu rồi... Chà, chúc cậu may mắn với việc đó nhé."
+
 #. <CLT 4>ここは…
 #. 一応、美術室みたいだな…
 #. <CLT>
@@ -119,8 +135,10 @@ msgid ""
 "<CLT 4>At first glance, this looks like any normal art room.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thoạt nhìn, nơi này trông giống như bất kỳ phòng mỹ thuật bình thường nào.\n"
+"<CLT 4>Thoạt nhìn, nơi này trông giống như bất kỳ phòng mỹ thuật\n"
+"bình thường nào.\n"
 "<CLT>"
+
 #. <CLT 4>なんだか…色々とおかしい気もするけど…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -132,6 +150,7 @@ msgstr ""
 "<CLT 4>Nhưng có gì đó không ổn cho lắm. Hoặc là rất nhiều thứ\n"
 "không ổn...\n"
 "<CLT>"
+
 #. これはこれは…充実した設備ですな。
 #. アート精神をくすぐられますぞ。
 msgctxt "0017 | HIFUMI YAMADA"
@@ -139,8 +158,9 @@ msgid ""
 "Well, well. Look at all this equipment! It certainly\n"
 "scratches that artistic itch of mine..."
 msgstr ""
-"Chà chà. Nhìn đống thiết bị này xem! Nó thực sự\n"
-"thỏa mãn cái máu nghệ thuật của tôi rồi đấy..."
+"Chà chà. Nhìn đống thiết bị này xem! Nó thực sự thỏa mãn\n"
+"cái máu nghệ thuật của tôi rồi đấy..."
+
 #. 画材はもちろん、<CLT 1>【彫刻用器具】<CLT>まで、
 #. ずらりと完備してあるではないですか！！
 msgctxt "0018 | HIFUMI YAMADA"
@@ -150,6 +170,7 @@ msgid ""
 msgstr ""
 "Dụng cụ vẽ tranh là đương nhiên rồi, nhưng họ còn thu thập\n"
 "đủ loại <CLT 1>[dụng cụ điêu khắc]<CLT> nữa!"
+
 #. これはこれは…充実した設備ですな。
 #. アート精神をくすぐられますぞ。
 msgctxt "0019 | HIFUMI YAMADA"
@@ -157,8 +178,9 @@ msgid ""
 "Well, well. Look at all this equipment! It certainly\n"
 "scratches that artistic itch of mine..."
 msgstr ""
-"Chà chà. Nhìn đống thiết bị này xem! Nó thực sự\n"
-"thỏa mãn cái máu nghệ thuật của tôi rồi đấy..."
+"Chà chà. Nhìn đống thiết bị này xem! Nó thực sự thỏa mãn\n"
+"cái máu nghệ thuật của tôi rồi đấy..."
+
 #. 画材はもちろん、彫刻用器具まで
 #. ずらりと完備してあるではないですか！！
 msgctxt "0020 | HIFUMI YAMADA"
@@ -168,6 +190,7 @@ msgid ""
 msgstr ""
 "Dụng cụ vẽ tranh là đương nhiên rồi, nhưng họ còn thu thập\n"
 "đủ loại dụng cụ điêu khắc nữa!"
+
 #. ふっふっふ、始まる…
 #. ここから僕の世紀末覇王伝説が始まるのだ…
 msgctxt "0021 | HIFUMI YAMADA"
@@ -175,8 +198,10 @@ msgid ""
 "Hmhmhm. It begins... Today begins my reign as the\n"
 "legendary ruler of the next century!"
 msgstr ""
-"Heh heh heh. Bắt đầu rồi... Hôm nay chính là khởi đầu cho triều đại của tôi\n"
-"với tư cách là kẻ thống trị huyền thoại của thế kỷ tới!"
+"Heh heh heh. Bắt đầu rồi... Hôm nay chính là khởi đầu cho triều\n"
+"đại của tôi với tư cách là kẻ thống trị huyền thoại của thế kỷ\n"
+"tới!"
+
 #. <CLT 4>美術室にも、モノクマが写るモニターがあるのか…
 #. <CLT>
 msgctxt "0022 | MAKOTO NAEGI"
@@ -186,14 +211,16 @@ msgid ""
 msgstr ""
 "<CLT 4>Ngay cả ở đây trong phòng mỹ thuật cũng có một cái màn hình...\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0023 | MAKOTO NAEGI"
 msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được gì. Tôi\n"
-"nên cố quên nó đi thôi..."
+"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được\n"
+"gì. Tôi nên cố quên nó đi thôi..."
+
 #. <CLT 4>ここにも監視カメラが…
 #. 無視したいけど…無視できない…
 #. <CLT>
@@ -203,9 +230,10 @@ msgid ""
 "just ignore it, but I can't seem to help myself.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ngay cả ở đây cũng có camera giám sát... Tôi nên\n"
-"mặc kệ nó đi, nhưng tôi lại chẳng thể kiềm chế được bản thân.\n"
+"<CLT 4>Ngay cả ở đây cũng có camera giám sát... Mình nên mặc kệ\n"
+"nó đi, nhưng mình lại chẳng thể kiềm chế được bản thân.\n"
 "<CLT>"
+
 #. <CLT 4>これは…モノクマの像か…
 #. こんな物、誰が作ったんだよ…
 #. <CLT>
@@ -215,9 +243,10 @@ msgid ""
 "make something like this?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là... tượng của Monokuma sao? Ai lại muốn đi\n"
-"tạo ra một thứ như thế này chứ?\n"
+"<CLT 4>Đây là... tượng của Monokuma sao? Ai lại muốn đi tạo ra\n"
+"một thứ như thế này chứ?\n"
 "<CLT>"
+
 #. <CLT 4>意外と出来はいいけど…
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -227,6 +256,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Dù vậy, chất lượng của nó... thật đáng ngạc nhiên.\n"
 "<CLT>"
+
 #. <CLT 4>これは…ビーナス像か…
 #. うん、美術室っぽいな…
 #. <CLT>
@@ -236,9 +266,10 @@ msgid ""
 "room-ish.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là... một bức tượng thần Vệ nữ. Ừm, đúng chất phòng\n"
-"mỹ thuật rồi.\n"
+"<CLT 4>Đó là... một bức tượng thần Vệ nữ. Ừm, đúng chất phòng mỹ\n"
+"thuật rồi.\n"
 "<CLT>"
+
 #. <CLT 4>壁一面に絵が張られている…
 #. <CLT>
 msgctxt "0028 | MAKOTO NAEGI"
@@ -248,6 +279,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có những bức tranh treo dọc khắp các bức tường.\n"
 "<CLT>"
+
 #. <CLT 4>手抜きの落書きっぽいけど、
 #. これも…芸術なのかな？
 #. <CLT>
@@ -257,9 +289,10 @@ msgid ""
 "graffiti to me...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây thực sự là nghệ thuật sao? Với tôi nó chỉ giống như một đống\n"
-"hình vẽ bậy rẻ tiền vậy...\n"
+"<CLT 4>Đây thực sự là nghệ thuật sao? Với mình nó chỉ giống như\n"
+"một đống hình vẽ bậy rẻ tiền vậy...\n"
 "<CLT>"
+
 #. <CLT 4>これって、仁王像だよな…
 #. <CLT>
 msgctxt "0030 | MAKOTO NAEGI"
@@ -269,6 +302,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một bức tượng Hộ pháp Nio.\n"
 "<CLT>"
+
 #. <CLT 4>デッサン用の仁王像なんて…
 #. 聞いた事ないぞ。
 #. <CLT>
@@ -278,9 +312,10 @@ msgid ""
 "for life drawing classes or whatever...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi chưa bao giờ nghe nói có ai lại dùng tượng Hộ pháp Nio\n"
-"cho mấy lớp học vẽ phác họa hay đại loại thế cả...\n"
+"<CLT 4>Mình chưa bao giờ nghe nói có ai lại dùng tượng Hộ pháp\n"
+"Nio cho mấy lớp học vẽ phác họa hay đại loại thế cả...\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがある…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -290,6 +325,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một chiếc tủ đồ.\n"
 "<CLT>"
+
 #. <CLT 4>けど、中には何も入ってないみたいだ…
 #. <CLT>
 msgctxt "0033 | MAKOTO NAEGI"
@@ -299,14 +335,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng có vẻ như bên trong chẳng có gì cả...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0034 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0035 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0036 | NARRATION"
@@ -316,6 +355,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
+
 #. <CLT 4>もうちょっと、ここを調べてみよう…
 #. <CLT>
 msgctxt "0037 | MAKOTO NAEGI"
@@ -323,5 +363,5 @@ msgid ""
 "<CLT 4>I'd better look around a little bit more...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi nên tìm kiếm xung quanh thêm một chút nữa...\n"
+"<CLT 4>Mình nên tìm kiếm xung quanh thêm một chút nữa...\n"
 "<CLT>"

@@ -2,36 +2,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. えっと…ここは…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Hmm... So this is..."
 msgstr "Hừm... Vậy đây là..."
+
 #. 娯楽室…
 #. 学生達の休憩所のような場所らしいですわね…
 msgctxt "0002 | CELES"
 msgid ""
 "A recreation room. A place for students to come and\n"
 "relax..."
-msgstr ""
-"Phòng giải trí. Một nơi để các học sinh đến và\n"
-"thư giãn..."
+msgstr "Phòng giải trí. Một nơi để các học sinh đến và thư giãn..."
+
 #. そんな教室があるなんて…すごいね。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "I never would've imagined a school having a place like\n"
 "this..."
 msgstr ""
-"Tớ chưa bao giờ tưởng tượng được một ngôi trường lại có một nơi như\n"
-"thế này..."
+"Tớ chưa bao giờ tưởng tượng được một ngôi trường lại có\n"
+"một nơi như thế này..."
+
 #. 普通の学校では考えられませんわね。
 #. オセロに将棋…ダーツやビリヤードまで…
 msgctxt "0004 | CELES"
@@ -39,12 +41,15 @@ msgid ""
 "Well, no normal school would. It has Othello, shogi,\n"
 "even a dartboard and a pool table..."
 msgstr ""
-"Chà, không ngôi trường bình thường nào có đâu. Ở đây có cờ Othello, cờ tướng shogi,\n"
-"thậm chí cả bảng phóng phi tiêu và bàn bida nữa..."
+"Chà, không ngôi trường bình thường nào có đâu. Ở đây có cờ\n"
+"Othello, cờ tướng shogi, thậm chí cả bảng phóng phi tiêu và bàn\n"
+"bida nữa..."
+
 #. それに、見てください…
 msgctxt "0005 | CELES"
 msgid "And look at this..."
 msgstr "Và hãy nhìn cái này xem..."
+
 #. 雑誌類も充実しているようですわよ。
 msgctxt "0006 | CELES"
 msgid ""
@@ -53,18 +58,19 @@ msgid ""
 msgstr ""
 "Họ thậm chí còn cung cấp cho chúng ta một số lượng tạp chí\n"
 "đáng kể nữa."
+
 #. 退屈しのぎには事欠きませんわね。
 msgctxt "0007 | CELES"
 msgid ""
 "Those will certainly be helpful in keeping our boredom\n"
 "at bay."
-msgstr ""
-"Những thứ đó chắc chắn sẽ giúp chúng ta xua tan\n"
-"sự nhàm chán."
+msgstr "Những thứ đó chắc chắn sẽ giúp chúng ta xua tan sự nhàm chán."
+
 #. ピロリロリーン！　補足があるニョロよ！
 msgctxt "0008 | MONOKUMA"
 msgid "Ring ring ring! Hello there! Allow me to expound!"
 msgstr "Pí po pí po! Chào đằng ấy nhé! Để ta giải thích thêm cho nào!"
+
 #. ファッション、バイク、格闘技、ゲーム、野球、
 #. サッカー、パソコン、色んな雑誌が揃ってるけど…
 msgctxt "0009 | MONOKUMA"
@@ -72,8 +78,9 @@ msgid ""
 "We've got fashion, motorcycles, martials arts, video\n"
 "games, baseball, science, all kinds of magazines!"
 msgstr ""
-"Ta có tạp chí thời trang, mô tô, võ thuật, trò chơi\n"
-"điện tử, bóng chày, khoa học, đủ mọi thể loại luôn!"
+"Ta có tạp chí thời trang, mô tô, võ thuật, trò chơi điện\n"
+"tử, bóng chày, khoa học, đủ mọi thể loại luôn!"
+
 #. エロはないんだよ、学校だからね。
 #. カメラ雑誌のエロ気味のページでガマンしてね！
 msgctxt "0010 | MONOKUMA"
@@ -81,8 +88,9 @@ msgid ""
 "Oh, but nothing dirty! This is a school, after all. If\n"
 "you need a quick fix, check out the swimsuit mags!"
 msgstr ""
-"Ồ, nhưng không có đồ bậy bạ đâu nhé! Dù gì đây cũng là trường học mà. Nếu\n"
-"đang vã quá thì xem tạm mấy tờ tạp chí áo tắm đi!"
+"Ồ, nhưng không có đồ bậy bạ đâu nhé! Dù gì đây cũng là trường\n"
+"học mà. Nếu đang vã quá thì xem tạm mấy tờ tạp chí áo tắm đi!"
+
 #. …ここの雑誌は、新しい号が出たら、
 #. 順次追加されていくのですか？
 msgctxt "0011 | CELES"
@@ -90,25 +98,30 @@ msgid ""
 "And will you be adding to our collection as new issues\n"
 "come out?"
 msgstr ""
-"Và cậu sẽ bổ sung thêm vào bộ sưu tập khi có những số báo mới\n"
-"ra lò chứ?"
+"Và cậu sẽ bổ sung thêm vào bộ sưu tập khi có những số báo\n"
+"mới ra lò chứ?"
+
 #. それは無理だねぇ。
 msgctxt "0012 | MONOKUMA"
 msgid "Sorry, no can do."
 msgstr "Xin lỗi nhé, không được đâu."
+
 #. ボクがそうしたくても、
 #. 雑誌そのものが…
 msgctxt "0013 | MONOKUMA"
 msgid "Even if I wanted to, right now magazines are kinda..."
 msgstr "Ngay cả khi ta muốn, thì hiện tại tạp chí cũng kiểu như là..."
+
 #. え…？
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Kinda what...?"
 msgstr "Kiểu như là sao...?"
+
 #. …おっとっと！
 msgctxt "0015 | MONOKUMA"
 msgid "Oops!"
 msgstr "Ối chà!"
+
 #. なんでもないよ～！
 #. 補足はそれだけだからバイバイッ！！
 msgctxt "0016 | MONOKUMA"
@@ -116,8 +129,9 @@ msgid ""
 "Nothing, never mind, no no no! Anyway, that's it for\n"
 "my expoundation. Bye-bye!"
 msgstr ""
-"Không có gì đâu, đừng bận tâm, không không không! Dù sao thì, phần giải thích của\n"
-"ta đến đây là hết. Tạm biệt nhé!"
+"Không có gì đâu, đừng bận tâm, không không không! Dù sao\n"
+"thì, phần giải thích của ta đến đây là hết. Tạm biệt nhé!"
+
 #. ………………
 msgctxt "0017 | CELES"
 msgid "..."
@@ -127,10 +141,12 @@ msgstr "..."
 msgctxt "0018 | CELES"
 msgid "What he just said..."
 msgstr "Những gì hắn vừa nói..."
+
 #. …やっぱ、気になるよね？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "I know, right? It bothers me, too..."
 msgstr "Tớ biết mà, đúng không? Tớ cũng thấy thắc mắc lắm..."
+
 #. たまには雑誌を追加して貰った方が、
 #. ここでの生活が充実するのですが…残念です。
 msgctxt "0020 | CELES"
@@ -140,18 +156,19 @@ msgid ""
 msgstr ""
 "Cuộc sống ở đây sẽ tốt hơn biết bao nếu hắn có thể bổ sung\n"
 "mấy số báo mới thỉnh thoảng một lần. Thật đáng thất vọng."
+
 #. そ、そう…
 msgctxt "0021 | MAKOTO NAEGI"
 msgid "R-Really...?"
 msgstr "T-Thật sao...?"
+
 #. 雑誌の事は残念ですけど…
 msgctxt "0022 | CELES"
 msgid ""
 "It is rather unfortunate about the magazines, but\n"
 "still..."
-msgstr ""
-"Chuyện tạp chí thì đúng là hơi đáng tiếc, nhưng\n"
-"dù vậy..."
+msgstr "Chuyện tạp chí thì đúng là hơi đáng tiếc, nhưng dù vậy..."
+
 #. この部屋のおかげで、
 #. わたくしたちの生活も少しは潤いそうですわね。
 msgctxt "0023 | CELES"
@@ -159,8 +176,9 @@ msgid ""
 "I do believe our lives will improve significantly\n"
 "thanks to this little hideaway."
 msgstr ""
-"Tớ tin rằng cuộc sống của chúng ta sẽ được cải thiện đáng kể\n"
-"nhờ vào nơi trú ẩn nhỏ này."
+"Tớ tin rằng cuộc sống của chúng ta sẽ được cải thiện đáng\n"
+"kể nhờ vào nơi trú ẩn nhỏ này."
+
 #. <CLT 4>本当にどこにでもあるんだな、
 #. このモニター…
 #. <CLT>
@@ -171,14 +189,16 @@ msgid ""
 msgstr ""
 "<CLT 4>Mấy cái màn hình này đúng là có mặt ở khắp mọi nơi...\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0025 | MAKOTO NAEGI"
 msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được gì. Tôi\n"
-"nên cố quên nó đi thôi..."
+"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được\n"
+"gì. Tôi nên cố quên nó đi thôi..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -188,17 +208,21 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giả sử nếu tôi có thể sống sót thoát khỏi đây, tôi sẽ không bao giờ nhìn\n"
-"vào những chiếc camera giám sát theo cách cũ nữa đâu...\n"
+"<CLT 4>Giả sử nếu mình có thể sống sót thoát khỏi đây, mình sẽ không\n"
+"bao giờ nhìn vào những chiếc camera giám sát theo cách cũ nữa\n"
+"đâu...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0027 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0028 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0029 | NARRATION"
@@ -208,6 +232,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
+
 #. <CLT 4>ここの雑誌棚には、
 #. 色々なジャンルの雑誌が揃っているみたいだ…
 #. <CLT>
@@ -217,9 +242,9 @@ msgid ""
 "shelf...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ các loại tạp chí khác nhau ở trên\n"
-"giá này...\n"
+"<CLT 4>Có đủ các loại tạp chí khác nhau ở trên giá này...\n"
 "<CLT>"
+
 #. <CLT 4>漫画雑誌もあるけど…
 #. 続きが読めないって、どんな嫌がらせだよ…
 #. <CLT>
@@ -232,6 +257,7 @@ msgstr ""
 "<CLT 4>Họ thậm chí còn có cả một đống truyện tranh hàng tháng. Nhưng...\n"
 "nếu không có các số tiếp theo thì đọc làm gì cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これは、オセロか…
 #. あんまり得意じゃないんだよな…
 #. <CLT>
@@ -241,9 +267,9 @@ msgid ""
 "though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một bộ cờ Othello ở đây. Nhưng tôi chơi môn này\n"
-"tệ lắm...\n"
+"<CLT 4>Có một bộ cờ Othello ở đây. Nhưng mình chơi môn này tệ lắm...\n"
 "<CLT>"
+
 #. <CLT 4>ダーツ…まであるのか。
 #. モノクマが用意したのか？　最初からあるのか？
 #. <CLT>
@@ -253,9 +279,10 @@ msgid ""
 "here, or was it always part of the school...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có... cả một bảng phóng phi tiêu nữa. Là do Monokuma đặt ở đây,\n"
-"hay nó vốn đã là một phần của ngôi trường rồi nhỉ...?\n"
+"<CLT 4>Có... cả một bảng phóng phi tiêu nữa. Là do Monokuma đặt ở\n"
+"đây, hay nó vốn đã là một phần của ngôi trường rồi nhỉ...?\n"
 "<CLT>"
+
 #. <CLT 4>ビリヤードなんて…学校にある物じゃないよな。
 #. モノクマが用意したのか？　最初からあるのか？
 #. <CLT>
@@ -265,9 +292,10 @@ msgid ""
 "thanks to Monokuma, or did the school buy it...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bàn bida không phải là thiết bị trường học bình thường... Đây là công lao\n"
-"của Monokuma, hay là do trường đã mua nó nhỉ...?\n"
+"<CLT 4>Bàn bida không phải là thiết bị trường học bình thường... Đây là\n"
+"công lao của Monokuma, hay là do trường đã mua nó nhỉ...?\n"
 "<CLT>"
+
 #. <CLT 4>ボロっちいロッカーがある…
 #. <CLT>
 msgctxt "0035 | MAKOTO NAEGI"
@@ -277,6 +305,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một chiếc tủ đồ cũ nát.\n"
 "<CLT>"
+
 #. <CLT 4>特に意味がある物はなさそうだし、
 #. 開ける必要はないかな…
 #. <CLT>
@@ -286,9 +315,10 @@ msgid ""
 "don't need to open it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hiện tại nó có vẻ không quan trọng lắm, nên tôi\n"
-"cũng chẳng cần phải mở nó ra làm gì.\n"
+"<CLT 4>Hiện tại nó có vẻ không quan trọng lắm, nên mình cũng\n"
+"chẳng cần phải mở nó ra làm gì.\n"
 "<CLT>"
+
 #. <CLT 4>革張りの頑丈そうなソファーだ…
 #. <CLT>
 msgctxt "0037 | MAKOTO NAEGI"
@@ -298,6 +328,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc ghế sofa bằng da trông có vẻ chắc chắn...\n"
 "<CLT>"
+
 #. <CLT 4>座り心地は悪くなさそうだな。
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
@@ -307,6 +338,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Trông nó có vẻ khá là thoải mái.\n"
 "<CLT>"
+
 #. <CLT 4>ゆったりとしたテーブルだ。
 #. <CLT>
 msgctxt "0039 | MAKOTO NAEGI"
@@ -316,6 +348,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một cái bàn ở đây.\n"
 "<CLT>"
+
 #. <CLT 4>教室にある机とは、雰囲気が違うな。
 #. <CLT>
 msgctxt "0040 | MAKOTO NAEGI"
@@ -324,9 +357,10 @@ msgid ""
 "also kinda not.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó hơi giống mấy cái bàn trong lớp học... nhưng\n"
-"cũng hơi khác một chút.\n"
+"<CLT 4>Nó hơi giống mấy cái bàn trong lớp học... nhưng cũng hơi\n"
+"khác một chút.\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -336,9 +370,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -349,6 +384,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -358,9 +394,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -371,6 +408,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -380,9 +418,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -393,6 +432,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -402,9 +442,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -415,6 +456,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -424,9 +466,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -437,6 +480,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -446,9 +490,10 @@ msgid ""
 "heck *is* it?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt cuộc nó\n"
-"là cái quái gì thế này?\n"
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... rốt\n"
+"cuộc nó là cái quái gì thế này?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -459,14 +504,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0053 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0054 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0055 | NARRATION"

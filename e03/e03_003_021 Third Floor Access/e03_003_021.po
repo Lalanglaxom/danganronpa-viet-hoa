@@ -2,27 +2,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ここの階は、なんも変わりねーべ…
 msgctxt "0001 | YASUHIRO HAGAKURE"
 msgid "Nothing's changed on this floor."
 msgstr "Chẳng có gì thay đổi ở tầng này cả."
+
 #. ただ、３階への階段のシャッターが開いてたぞ。
 msgctxt "0002 | YASUHIRO HAGAKURE"
 msgid ""
 "The only difference is the gate blocking the stairs\n"
 "leading up to the 3rd floor is gone."
 msgstr ""
-"Điểm khác biệt duy nhất là cái cổng chặn cầu thang\n"
-"dẫn lên tầng 3 đã biến mất rồi."
+"Điểm khác biệt duy nhất là cái cổng chặn cầu thang dẫn lên\n"
+"tầng 3 đã biến mất rồi."
+
 #. きっと、３階に行けるようになったんだべ。
 #. そっちに色々とありそうだべ！
 msgctxt "0003 | YASUHIRO HAGAKURE"
@@ -32,6 +35,7 @@ msgid ""
 msgstr ""
 "Tớ đoán đó là nơi họ muốn chúng ta tiến đến tiếp theo. Tớ\n"
 "tự hỏi trên đó có mấy thứ điên rồ gì đây...!"
+
 #. <CLT 4>ここは女子トイレだ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -41,6 +45,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là nhà vệ sinh nữ.\n"
 "<CLT>"
+
 #. <CLT 4>こんな所に入ったら最後…
 #. みんなから軽蔑されて終わりだ…
 #. <CLT>
@@ -50,6 +55,6 @@ msgid ""
 "creep in everyone's eyes, and that'd be it for me...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu tôi dám bước chân vào đó, tôi sẽ trở thành một tên\n"
-"biến thái hoàn toàn trong mắt mọi người, và đời tôi coi như xong...\n"
+"<CLT 4>Nếu mình dám bước chân vào đó, mình sẽ trở thành một tên biến\n"
+"thái hoàn toàn trong mắt mọi người, và đời mình coi như xong...\n"
 "<CLT>"

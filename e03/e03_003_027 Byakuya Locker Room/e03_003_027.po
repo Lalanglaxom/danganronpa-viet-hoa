@@ -2,36 +2,41 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 十神クン、こんなところで
 #. 何をやってるの？
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "What are you doing here, Byakuya?"
 msgstr "Cậu đang làm gì ở đây vậy, Byakuya?"
+
 #. …見ればわかるだろう、読書だ。
 msgctxt "0002 | BYAKUYA TOGAMI"
 msgid "Isn't it obvious? I'm reading."
 msgstr "Chẳng phải đã quá rõ ràng rồi sao? Tôi đang đọc sách."
+
 #. ここなら邪魔が入らないと思ったんだがな。
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid ""
 "I was *hoping* I wouldn't be bothered in a place like\n"
 "this..."
 msgstr ""
-"Tôi đã *hy vọng* rằng mình sẽ không bị làm phiền ở một nơi như\n"
-"thế này..."
+"Tôi đã *hy vọng* rằng mình sẽ không bị làm phiền ở một nơi\n"
+"như thế này..."
+
 #. ご、ごめん…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "S-Sorry..."
 msgstr "T-Tớ xin lỗi..."
+
 #. そ、それより…
 #. ここ、元通りになったんだね…
 msgctxt "0005 | MAKOTO NAEGI"
@@ -41,6 +46,7 @@ msgid ""
 msgstr ""
 "Dù sao thì, có vẻ như mọi thứ ở đây đã được đưa trở lại\n"
 "trạng thái bình thường rồi."
+
 #. <CLT 4>カーペットのシミも消えてるし、
 #. ポスターもグラビアアイドルのものになってる…
 #. <CLT>
@@ -50,9 +56,10 @@ msgid ""
 "bikini model poster is back...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích\n"
-"người mẫu bikini đã quay trở lại...\n"
+"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích người\n"
+"mẫu bikini đã quay trở lại...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんたちの時と同じ…
 #. モノクマがやったんだろうな。
 #. <CLT>
@@ -62,9 +69,10 @@ msgid ""
 "it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cũng giống hệt như trường hợp của Sayaka. Chắc chắn là do Monokuma\n"
-"làm rồi...\n"
+"<CLT 4>Cũng giống hệt như trường hợp của Sayaka. Chắc chắn là do\n"
+"Monokuma làm rồi...\n"
 "<CLT>"
+
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -74,6 +82,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất hiện.\n"
 "<CLT>"
+
 #. こんな物を気にしてもしょうがない、
 #. 放っておこう。
 msgctxt "0009 | MAKOTO NAEGI"
@@ -83,6 +92,7 @@ msgid ""
 msgstr ""
 "Tôi không được để nó làm mình bận tâm. Tôi cần phải quên\n"
 "nó đi thôi."
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -92,9 +102,10 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia\n"
-"của chiếc camera giám sát đó...\n"
+"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của\n"
+"chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -103,9 +114,10 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ cần nghĩ về điều đó thôi cũng làm tôi thấy bứt rứt... nhưng thực sự\n"
-"chẳng có gì tôi có thể làm được.\n"
+"<CLT 4>Chỉ cần nghĩ về điều đó thôi cũng làm mình thấy bứt rứt...\n"
+"nhưng thực sự chẳng có gì mình có thể làm được.\n"
 "<CLT>"
+
 #. <CLT 4>カーペットのシミも消えてるし、
 #. ポスターもグラビアアイドルのものになってる…
 #. <CLT>
@@ -115,9 +127,10 @@ msgid ""
 "bikini model poster is back...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích\n"
-"người mẫu bikini đã quay trở lại...\n"
+"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích người\n"
+"mẫu bikini đã quay trở lại...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんたちの時と同じ…
 #. モノクマがやったんだろうな。
 #. <CLT>
@@ -127,17 +140,20 @@ msgid ""
 "it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cũng giống hệt như trường hợp của Sayaka. Chắc chắn là do Monokuma\n"
-"làm rồi...\n"
+"<CLT 4>Cũng giống hệt như trường hợp của Sayaka. Chắc chắn là do\n"
+"Monokuma làm rồi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>男子更衣室から出ますか？
 #. <CLT>
 msgctxt "0016 | NARRATION"

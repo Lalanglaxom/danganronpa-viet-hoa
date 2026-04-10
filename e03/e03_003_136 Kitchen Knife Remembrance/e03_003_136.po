@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>包丁は、ひとつ欠けたまま…
 #. <CLT>
@@ -20,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vẫn còn thiếu một con...\n"
 "<CLT>"
+
 #. <CLT 4>ここにあった包丁を舞園さんが持ち出して…
 #. そして…それで……
 #. <CLT>
@@ -29,9 +31,9 @@ msgid ""
 "she...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sayaka đã lấy một trong những con dao ở đây... và rồi\n"
-"cậu ấy...\n"
+"<CLT 4>Sayaka đã lấy một trong những con dao ở đây... và rồi cậu ấy...\n"
 "<CLT>"
+
 #. <CLT 4>………………
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -41,6 +43,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>…忘れられない。
 #. 忘れられる訳がない。
 #. <CLT>
@@ -49,8 +52,10 @@ msgid ""
 "<CLT 4>I still can't forget about it. How could I...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi vẫn không thể quên được chuyện đó. Làm sao tôi có thể chứ...?\n"
+"<CLT 4>Mình vẫn không thể quên được chuyện đó. Làm sao mình có\n"
+"thể chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>ショーケースには肉が並んでいる…
 #. うーん、今日はオージーか…
 #. <CLT>
@@ -60,9 +65,10 @@ msgid ""
 "Today it looks like Aussie Beef. Mmm...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tủ trưng bày chứa đầy các loại thịt.\n"
-"Hôm nay có vẻ là thịt bò Úc. Ừm...\n"
+"<CLT 4>Tủ trưng bày chứa đầy các loại thịt. Hôm nay có vẻ là thịt\n"
+"bò Úc. Ừm...\n"
 "<CLT>"
+
 #. <CLT 4>野菜が山積みになっている…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -72,6 +78,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một đống rau củ được xếp chồng lên nhau.\n"
 "<CLT>"
+
 #. <CLT 4>野菜より肉だ。１０代だからな。
 #. お肉の１０代なんだよ。
 #. <CLT>
@@ -81,17 +88,20 @@ msgid ""
 "teens. The meat teens...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tôi luôn chọn thịt thay vì rau. Vì tôi vẫn đang ở độ tuổi\n"
-"thiếu niên mà. Tuổi trẻ là phải ăn thịt...\n"
+"<CLT 4>Mình luôn chọn thịt thay vì rau. Vì mình vẫn đang ở độ\n"
+"tuổi thiếu niên mà. Tuổi trẻ là phải ăn thịt...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"

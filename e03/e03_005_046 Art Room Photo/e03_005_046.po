@@ -2,14 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 4/10/2026\n"
+"POT-Creation-Date: 3/26/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>ここは美術室に隣接した倉庫…
 #. 美術倉庫ってところか…
@@ -20,9 +21,10 @@ msgid ""
 "room. It's used to store different artsy things...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là nhà kho nằm cạnh phòng mỹ thuật.\n"
-"Nó dùng để lưu trữ các vật dụng nghệ thuật khác nhau...\n"
+"<CLT 4>Đây là nhà kho nằm cạnh phòng mỹ thuật. Nó dùng để lưu trữ\n"
+"các vật dụng nghệ thuật khác nhau...\n"
 "<CLT>"
+
 #. <CLT 4>こんな倉庫にもモニターが…
 #. 徹底してるな…
 #. <CLT>
@@ -35,14 +37,16 @@ msgstr ""
 "<CLT 4>Và tất nhiên ở đây cũng có một cái màn hình. Kẻ chủ mưu\n"
 "đúng là vô cùng cẩn trọng.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được gì. Tôi\n"
-"nên cố quên nó đi thôi..."
+"Bây giờ lo lắng về chuyện đó cũng chẳng giải quyết được\n"
+"gì. Tôi nên cố quên nó đi thôi..."
+
 #. <CLT 4>こんな倉庫にも監視カメラが…
 #. 徹底してるな…
 #. <CLT>
@@ -52,17 +56,20 @@ msgid ""
 "The mastermind didn't miss a single detail...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dĩ nhiên là ở đây cũng có camera giám sát rồi.\n"
-"Kẻ chủ mưu không hề bỏ sót một chi tiết nào cả...\n"
+"<CLT 4>Dĩ nhiên là ở đây cũng có camera giám sát rồi. Kẻ chủ mưu\n"
+"không hề bỏ sót một chi tiết nào cả...\n"
 "<CLT>"
+
 #. 床に…何か落ちてる…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "There's...something on the floor."
 msgstr "Có... thứ gì đó ở trên sàn nhà."
+
 #. 写真…みたいだけど…
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "It looks like...a picture."
 msgstr "Trông nó giống như... một bức ảnh."
+
 #. <CLT 4>と、その写真に手を伸ばし掛けたところで…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -70,8 +77,9 @@ msgid ""
 "<CLT 4>But as I stretched out my hand to pick it up...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng khi tôi vừa đưa tay ra định nhặt nó lên...\n"
+"<CLT 4>Nhưng khi mình vừa đưa tay ra định nhặt nó lên...\n"
 "<CLT>"
+
 #. <CLT 4>ボクの手は止まった…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -79,12 +87,14 @@ msgid ""
 "<CLT 4>...almost as if on its own, my hand froze.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...gần như là tự phát, bàn tay tôi bỗng khựng lại.\n"
+"<CLT 4>...gần như là tự phát, bàn tay mình bỗng khựng lại.\n"
 "<CLT>"
+
 #. は…？
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "Huh...?"
 msgstr "Hả...?"
+
 #. <CLT 4>そこに写っていたのは…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -92,8 +102,9 @@ msgid ""
 "<CLT 4>What I saw in that picture was...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Những gì tôi thấy trong bức ảnh đó là...\n"
+"<CLT 4>Những gì mình thấy trong bức ảnh đó là...\n"
 "<CLT>"
+
 #. <CLT 4>死んだ不二咲クンと、桑田クンと、大和田クン。
 #. しかも、彼らは…
 #. <CLT>
@@ -104,6 +115,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...Chihiro, Leon và Mondo.\n"
 "<CLT>"
+
 #. <CLT 4>…笑顔だった。
 #. <CLT>
 msgctxt "0012 | MAKOTO NAEGI"
@@ -113,10 +125,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Và họ đang... mỉm cười.\n"
 "<CLT>"
+
 #. なんだよ…この写真…？
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "What is this...?"
 msgstr "Cái gì thế này...?"
+
 #. <CLT 4>途端に、いくつものクエスチョンマークが
 #. 次々と頭の中に浮かんでくる。
 #. <CLT>
@@ -126,9 +140,10 @@ msgid ""
 "the other.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hàng loạt câu hỏi bắt đầu hiện lên trong đầu tôi, hết câu\n"
+"<CLT 4>Hàng loạt câu hỏi bắt đầu hiện lên trong đầu mình, hết câu\n"
 "này đến câu khác.\n"
 "<CLT>"
+
 #. <CLT 4>なんで、この３人が？
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -138,6 +153,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tại sao chỉ có ba người này?\n"
 "<CLT>"
+
 #. <CLT 4>なんで、一緒に写ってる？
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -147,6 +163,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Họ đang làm gì cùng nhau vậy?\n"
 "<CLT>"
+
 #. <CLT 4>なんで、こんな笑顔？
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -156,6 +173,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tại sao họ lại cười tươi như vậy chứ?\n"
 "<CLT>"
+
 #. <CLT 4>いつ撮った？　誰が撮った？
 #. カメラは？　現像は？
 #. <CLT>
@@ -168,6 +186,7 @@ msgstr ""
 "<CLT 4>Bức ảnh này được chụp khi nào? Ai đã chụp nó? Chiếc camera\n"
 "họ dùng đâu rồi? Họ đã rửa ảnh kiểu gì vậy?\n"
 "<CLT>"
+
 #. <CLT 4>それに、この教室の窓……
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -177,18 +196,22 @@ msgid ""
 msgstr ""
 "<CLT 4>Và trong bức ảnh, cửa sổ của phòng học...\n"
 "<CLT>"
+
 #. 鉄板がない…！？
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "There's no metal plate covering it!"
 msgstr "Không hề có tấm kim loại nào che nó cả!"
+
 #. じゃあ、この写真が撮られた場所って…
 msgctxt "0021 | MAKOTO NAEGI"
 msgid "Which must mean, wherever this picture was taken..."
 msgstr "Điều đó có nghĩa là, dù bức ảnh này được chụp ở đâu đi nữa..."
+
 #. 希望ヶ峰学園じゃ…ない？
 msgctxt "0022 | MAKOTO NAEGI"
 msgid "It...wasn't here at Hope's Peak?"
 msgstr "Nó... không phải ở Học viện Đỉnh Hy Vọng sao?"
+
 #. <CLT 4>けど、それらのクエスチョンマークは、
 #. 解消される事を待たずに…
 #. <CLT>
@@ -199,6 +222,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng chẳng còn thời gian để đi tìm câu trả lời nữa.\n"
 "<CLT>"
+
 #. <CLT 4>強引に、かき消されてしまった…
 #. <CLT>
 msgctxt "0024 | MAKOTO NAEGI"
@@ -207,13 +231,15 @@ msgid ""
 "drowned out by...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mọi câu hỏi đang lở lửng trong đầu tôi nhanh chóng bị\n"
-"áp chế bởi...\n"
+"<CLT 4>Mọi câu hỏi đang lở lửng trong đầu mình nhanh chóng bị áp\n"
+"chế bởi...\n"
 "<CLT>"
+
 #. 返してよ！　それ、ボクんだよッ！
 msgctxt "0025 | MONOKUMA"
 msgid "That's mine! Give it back!"
 msgstr "Cái đó là của ta! Trả lại đây mau!"
+
 #. <CLT 4>突然現れたモノクマによって写真は奪い取られ、
 #. ボクが思案に暮れる時間は終わりを告げた。
 #. <CLT>
@@ -223,9 +249,10 @@ msgid ""
 "photo, and any chance I had at answers evaporated.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Monokuma đột ngột xuất hiện và giật lấy bức ảnh,\n"
-"và mọi cơ hội tìm kiếm câu trả lời của tôi đều tan biến.\n"
+"<CLT 4>Monokuma đột ngột xuất hiện và giật lấy bức ảnh, và mọi cơ\n"
+"hội tìm kiếm câu trả lời của mình đều tan biến.\n"
 "<CLT>"
+
 #. もしかして、見ちゃった？
 #. でも、いい笑顔でしょ？
 msgctxt "0027 | MONOKUMA"
@@ -233,8 +260,9 @@ msgid ""
 "You peeked, didn't you!? Well, they all had some\n"
 "pretty dazzling smiles, huh?"
 msgstr ""
-"Ngươi đã lén nhìn rồi phải không!? Chà, nụ cười của\n"
-"họ trông rạng rỡ quá nhỉ?"
+"Ngươi đã lén nhìn rồi phải không!? Chà, nụ cười của họ\n"
+"trông rạng rỡ quá nhỉ?"
+
 #. 学園生活をエンジョイしてるって言うか…
 #. 青春の１ページってヤツですかね！？
 msgctxt "0028 | MONOKUMA"
@@ -242,20 +270,26 @@ msgid ""
 "They were definitely living their school life. It's\n"
 "like they ripped a page right outta the book of youth!"
 msgstr ""
-"Họ chắc chắn đang tận hưởng cuộc đời học sinh. Cứ như\n"
-"thể họ vừa xé toạc một trang ra khỏi cuốn sách tuổi trẻ vậy!"
+"Họ chắc chắn đang tận hưởng cuộc đời học sinh. Cứ như thể\n"
+"họ vừa xé toạc một trang ra khỏi cuốn sách tuổi trẻ vậy!"
+
 #. 知ってるのか…？　その写真の事…！
 msgctxt "0029 | MAKOTO NAEGI"
 msgid "What's going on with that picture? Do you know...?"
-msgstr "Chuyện gì đang xảy ra với bức ảnh đó vậy? Ngươi biết phải không...?"
+msgstr ""
+"Chuyện gì đang xảy ra với bức ảnh đó vậy? Ngươi biết phải\n"
+"không...?"
+
 #. 答えますせん！！
 msgctxt "0030 | MONOKUMA"
 msgid "I'm not tellin' you nothin'!"
 msgstr "Ta không nói cho ngươi biết cái gì đâu!"
+
 #. おい、どっちだよ…！
 msgctxt "0031 | MAKOTO NAEGI"
 msgid "Why can't you give me a straight answer!?"
 msgstr "Tại sao ngươi không thể trả lời thẳng thắn được chứ!?"
+
 #. <CLT 4>突っ込むだけ無駄だった…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -264,17 +298,20 @@ msgid ""
 "asking...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thôi bỏ đi... Tôi thậm chí còn chẳng biết tại sao mình\n"
+"<CLT 4>Thôi bỏ đi... Mình thậm chí còn chẳng biết tại sao mình\n"
 "lại tốn công hỏi nữa...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0033 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0034 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>美術倉庫から出ますか？
 #. <CLT>
 msgctxt "0035 | NARRATION"
@@ -284,6 +321,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi nhà kho chứ?\n"
 "<CLT>"
+
 #. <CLT 4>壁に…木槌がある…
 #. 彫刻作成なんかで使うんだろうか…
 #. <CLT>
@@ -293,9 +331,10 @@ msgid ""
 "to guess, I'd say they use them for making sculptures.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có những chiếc vồ gỗ treo trên tường. Nếu phải đoán,\n"
-"tôi sẽ nói rằng họ dùng chúng để tạo ra các bức điêu khắc.\n"
+"<CLT 4>Có những chiếc vồ gỗ treo trên tường. Nếu phải đoán, mình\n"
+"sẽ nói rằng họ dùng chúng để tạo ra các bức điêu khắc.\n"
 "<CLT>"
+
 #. <CLT 4>台車だ…
 #. 彫像とかを乗せておくのに使う物だな…
 #. <CLT>
@@ -308,14 +347,17 @@ msgstr ""
 "<CLT 4>Một chiếc xe đẩy hàng... Chắc hẳn họ dùng nó để di chuyển\n"
 "tất cả những bức tượng này.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0038 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0039 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>美術倉庫から出ますか？
 #. <CLT>
 msgctxt "0040 | NARRATION"
