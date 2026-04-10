@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 4/10/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr ""
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>リロード<CLT><CLT 23>について説明させて頂きます。
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Let's talk about <CLT><CLT 3>reloading<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>今回のマシンガントークバトルから、
+#. 操作をひとつ追加させて頂きます。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Starting with this next Bullet Time Battle, we're\n"
+"gonna add one more ingredient to the recipe.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>画面下部、テンポマーカーの下に、
+#. <CLT><CLT 3>弾数<CLT><CLT 23>が表示されます。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>On the bottom of the screen, underneath the Tempo\n"
+"Marker, you'll see your <CLT><CLT 3>ammo count<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>今までは、相手の発言を破壊するのに、
+#. 特に制限はございませんでしたが…
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>Up until now, there hasn't really been a limit on how\n"
+"you destroy your opponent's statements.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>今後は、ただロックオンして%CTRL_BULLET_TIME_ATTACK%を
+#. 押して頂くだけでは破壊できません。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>But from now on, just locking on and pressing the\n"
+"%CTRL_BULLET_TIME_ATTACK% won't be enough to handle them.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>１つの発言を破壊<CLT><CLT 23>するのに、<CLT><CLT 3>１つの弾<CLT><CLT 23>が
+#. ご必要となってしまいます。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Now it will cost you \n"
+"<CLT><CLT 3>one bullet<CLT><CLT 23> to <CLT><CLT 3>destroy a single remark<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>弾数が無くなると、いくらロックオンして
+#. 頂いても、発言を破壊できません。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>Once you run out of bullets, you can't destroy any\n"
+"more statements, no matter how locked on you are.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>弾は<CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23>の<CLT><CLT 3>リロード<CLT><CLT 23>を押すことで
+#. 補充して頂けます。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>However, you can <CLT><CLT 3>reload<CLT><CLT 23> by pressing the <CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ロックオンなどと同様、テンポマーカーに合わせて、
+#. <CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23>を押してください。
+#. <CLT>
+msgctxt "0012 | NARRATION"
+msgid ""
+"<CLT 23>Just like locking on, you'll have to press \n"
+"the <CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23> in time with the Tempo Marker.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>…
+#. <CLT>
+msgctxt "0013 | NARRATION"
+msgid ""
+"<CLT 23>…\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>今までの%CTRL_BULLET_TIME_BUTTONS%の操作に、
+#. <CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23>が加わったとお考えください。
+#. <CLT>
+msgctxt "0014 | NARRATION"
+msgid ""
+"<CLT 23>Basically, just remember that the <CLT><CLT 3>%CTRL_BULLET_TIME_RELOAD%<CLT><CLT 23> now\n"
+"has a function along with the %CTRL_BULLET_TIME_BUTTONS% buttons.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>なお、<CLT><CLT 3>フィーバータイム中<CLT><CLT 23>は、
+#. 弾数が<CLT><CLT 3>全回復<CLT><CLT 23>し<CLT><CLT 3>減らなく<CLT><CLT 23>なります。
+#. <CLT>
+msgctxt "0015 | NARRATION"
+msgid ""
+"<CLT 23>You will <CLT><CLT 3>automatically reload<CLT><CLT 23> at the start of <CLT><CLT 3>Fever Time<CLT><CLT 23>, \n"
+"and your ammo <CLT><CLT 3>will not decrease<CLT><CLT 23>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>ちなみに…“シンセツ”なアクション難易度ですと、
+#. リロードは必要ありません。
+#. <CLT>
+msgctxt "0016 | NARRATION"
+msgid ""
+"<CLT 23>Oh, but if your action difficulty is set to Gentle,\n"
+"you won't have to reload at all.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>今までの説明はお忘れ頂いて結構です。
+#. <CLT>
+msgctxt "0017 | NARRATION"
+msgid ""
+"<CLT 23>In which case, you can ignore everything I just said!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0018 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>マシンガントークバトルに<CLT><CLT 3>新要素が追加<CLT><CLT 23>されます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0019 | NARRATION"
+msgid ""
+"<CLT 23>A <CLT><CLT 3>new element has been added<CLT><CLT 23> to Bullet Time Battles.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""

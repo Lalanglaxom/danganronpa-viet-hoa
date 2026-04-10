@@ -1,0 +1,1141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 4/10/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. でも、今回は<CLT 3>２つの事件<CLT>が起きてたんだ…
+#. だったら、共犯関係も成り立つんじゃないかな？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Since there were <CLT 3>two murders<CLT>, it's at least\n"
+"plausible that more than one person was involved."
+msgstr ""
+
+#. …どういう意味だ？
+msgctxt "0002 | SAKURA OOGAMI"
+msgid "...What do you mean?"
+msgstr ""
+
+#. 共犯者の存在が考えられないのは、
+#. 起きた事件が、１つだった場合の話よ。
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid ""
+"If there'd only been one murder, then yes, the idea of\n"
+"an accomplice isn't really worth considering."
+msgstr ""
+
+#. 当然よね。１つの事件で助かるのが１人だけなら、
+#. 共犯したところで、<CLT 3>天秤作用<CLT>が成立しないんだから…
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid ""
+"Naturally, if only one person can be saved per murder,\n"
+"an accomplice has no <CLT 3>risk versus reward<CLT> benefit."
+msgstr ""
+
+#. …天秤作用？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Risk versus reward...benefit?"
+msgstr ""
+
+#. その仕事と釣り合う額の報酬…
+#. つまり、共犯するだけの危険に見合った報酬…
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid ""
+"The payoff for working together—the reward that\n"
+"balances out the risk of taking part in the scheme."
+msgstr ""
+
+#. 殺人を手伝っても助からないんだったら、
+#. 共犯する意味なんてない…
+msgctxt "0007 | KYOUKO KIRIGIRI"
+msgid ""
+"There's no point in being someone's accomplice if\n"
+"there's no benefit to you."
+msgstr ""
+
+#. でも逆に、その天秤作用さえ成立すれば、
+#. 誰かと共犯関係になる事は不可能ではないわ…
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"However, if there *were* some potential mutual reward\n"
+"for the risk, then cooperation becomes possible."
+msgstr ""
+
+#. ２人の犯人が２つの殺人を犯し、
+#. 互いの殺人の共犯者になればいい…という事か。
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgid ""
+"You're saying that two people could act as each\n"
+"other's accomplices to commit two separate murders."
+msgstr ""
+
+#. 真犯人は、その計画を山田君に持ちかけたのよ。
+#. 自分の犯行の共犯をさせる為にね…
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid ""
+"I think that's what the true killer told Hifumi; they\n"
+"would each have an accomplice for their crime."
+msgstr ""
+
+#. おそらく、最初に石丸君を殺したのは、
+#. 山田君だったはずよ…
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgid ""
+"And based on the case's events, Hifumi would have been\n"
+"the first one to act, murdering Taka."
+msgstr ""
+
+#. 先に、彼に殺人を起こさせ、逃げられなくした上で、
+#. 自分の計画を手伝わせたんでしょうね…
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgid ""
+"They made him carry out the first murder so he\n"
+"couldn't back out of helping them later on."
+msgstr ""
+
+#. つまり、今回の事件は１人の犯人による
+#. 連続殺人なんかじゃなくって…
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"So in this case, there wasn't one single person\n"
+"committing multiple murders..."
+msgstr ""
+
+#. ２人の犯人が起こした、２つの事件だったんだよ。
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"Instead, each person killed someone, creating two\n"
+"separate incidents."
+msgstr ""
+
+#. それが一連の連続殺人に見えたのは、
+#. すべて、犯人の偽装工作によるものだったんだ…
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"And it only looked like one person because that's how\n"
+"the true killer designed it to look."
+msgstr ""
+
+#. 顔を隠した不審者…似たような凶器…そして死体消失…
+#. 犯人は、これらの共通点を作り上げる事で…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"A single suspicious individual, a similar weapon used\n"
+"in each crime, disappearing bodies..."
+msgstr ""
+
+#. 一連の犯行が同一犯によって行われていると、
+#. 見せかけようとしたんだ！
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"By creating one seamless set of circumstances, they\n"
+"made it look like one person was behind it all!"
+msgstr ""
+
+#. 犯人はその計画を共犯者に持ちかけ、
+#. そして、共犯者を得る事に成功し…
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid ""
+"The mastermind picked their target and managed to\n"
+"convince him to go along with their plan."
+msgstr ""
+
+#. 最後に、その共犯者を殺す事で、
+#. １番の懸念材料をも消し去ったという訳か。
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid ""
+"And then, to avoid the \"no accomplices\" rule, they\n"
+"simply...killed their accomplice."
+msgstr ""
+
+#. となると、山田を裏切ったのも、
+#. 当初からの計画通りだったんだろうな…
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgid ""
+"Which, if true, means that betraying Hifumi was part\n"
+"of the plan from the very beginning."
+msgstr ""
+
+#. な、なんなの…その計画って！
+#. いくらなんでも残酷すぎるよ！！
+msgctxt "0021 | AOI ASAHINA"
+msgid "Th-That's just...awful! How could anyone be so cruel!?"
+msgstr ""
+
+#. そうか？　なかなかよく出来た計画じゃないか。
+#. 共犯者の人選は別だがな…
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgid ""
+"You think so? I can't help but admire its cunning.\n"
+"Still, their choice of accomplice seems...odd."
+msgstr ""
+
+#. <CLT 4>連続殺人に見せかけた２つの事件…
+#. それが今回の事件の最大の特徴だったんだ…
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The effort made to convince us the two murders were\n"
+"the same. That was the main characteristic this time.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>きっと、霧切さんは最初から、
+#. その事実に気付いてたんだな…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko must have noticed that fact from the very\n"
+"beginning...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だから、今回の事件を一連の事件としてじゃなく、
+#. それぞれ別の事件として考えるべきだって言ったんだ…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which is why she said not to look at this as a series\n"
+"of connected events, but entirely separate incidents.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さん…すごいけど…
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko really is amazing. Although...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いくらなんでも…すご過ぎだろ…
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...when you think about it, she's almost *too*\n"
+"amazing.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…なんだか不自然なくらいだよ。
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Like, it's almost unnatural how good she is at this...\n"
+"<CLT>"
+msgstr ""
+
+#. 共犯者の存在が成り立つ事はわかったが…
+#. では、山田を操っていた真犯人とは何者なのだ？
+msgctxt "0029 | SAKURA OOGAMI"
+msgid ""
+"I understand how an accomplice could be involved, but\n"
+"then who was the one pulling Hifumi's strings?"
+msgstr ""
+
+#. それが問題だな！！
+msgctxt "0030 | TOUKO FUKAWA"
+msgid "That's problem numero uno right now!"
+msgstr ""
+
+#. <CLT 4>真犯人…山田クンを操る事で一連の事件を実行し、
+#. そして最終的には山田君を殺した犯人…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The true killer manipulated Hifumi to carry out a\n"
+"number of actions, and in the end...murdered him.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>今までの議論…事件の流れ…
+#. それらすべてを踏まえて考えてみれば…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>In the debates up till now, the way the case has\n"
+"unfolded... When you consider all that...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その可能性がありそうなのって、
+#. あの人しかいないよな…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...there's really only one person who seems to fit.\n"
+"<CLT>"
+msgstr ""
+
+#. はあッ！？
+#. こ、ここで俺に戻ってくるんか？
+msgctxt "0034 | YASUHIRO HAGAKURE"
+msgid "What!? I-Is it all coming back to me again!?"
+msgstr ""
+
+#. 待て…
+msgctxt "0035 | SAKURA OOGAMI"
+msgid "Hold on..."
+msgstr ""
+
+#. 葉隠に犯行が不可能な事は
+#. これまでの議論で、逆に証明されたのではないか？
+msgctxt "0036 | SAKURA OOGAMI"
+msgid ""
+"Haven't we already shown that there's absolutely no\n"
+"way Hiro could have done this?"
+msgstr ""
+
+#. そうだよね。
+#. 事件の間、葉隠はロボになってたんだもんね。
+msgctxt "0037 | AOI ASAHINA"
+msgid ""
+"She's right! Hiro was in the robot costume when\n"
+"everything went down!"
+msgstr ""
+
+#. そ、そうだべ！
+msgctxt "0038 | YASUHIRO HAGAKURE"
+msgid "F-For serious!"
+msgstr ""
+
+#. 俺は改造された悲劇のヒーローで
+#. 早く人間になりたいんだベ！
+msgctxt "0039 | YASUHIRO HAGAKURE"
+msgid ""
+"I'm just a tragically modified hero, who longs to\n"
+"become human again as soon as possible!"
+msgstr ""
+
+#. いや、今でも人間でしょ…一応。
+msgctxt "0040 | AOI ASAHINA"
+msgid "Um, no... You're still a human...for now."
+msgstr ""
+
+#. <CLT 4>と、とにかく…
+#. 葉隠クンは真犯人じゃないって事か…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A-Anyway...if Hiro's not the killer, then...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 私…？
+msgctxt "0043 | KYOUKO KIRIGIRI"
+msgid "Me...?"
+msgstr ""
+
+#. どういった根拠でそう言うのか…
+#. 教えてもらいましょうか？
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid ""
+"What are you basing that on? I would very much like to\n"
+"hear your explanation."
+msgstr ""
+
+#. <CLT 4>いくらなんでも…すご過ぎだから…
+#. なんて、根拠にもならないよな…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Um...hmm... I guess when you put it that way, I don't\n"
+"really have an explanation...\n"
+"<CLT>"
+msgstr ""
+
+#. 根拠はないようね…
+#. じゃあ、今度こそ真犯人を指摘してくれる？
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid ""
+"You have no basis for your claim, in other words. So\n"
+"then, could you point out the *real* killer?"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 本当に、自信を持ってそう言うのか？
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgid "Are you confident in your assertion?"
+msgstr ""
+
+#. え…？
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. もう一度、冷静に考えてみた方が
+#. いいんじゃないかしら？
+msgctxt "0050 | KYOUKO KIRIGIRI"
+msgid ""
+"Perhaps you should take a second and think it through\n"
+"again—more slowly this time."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木、黙っていても議論は進まん…
+msgctxt "0052 | BYAKUYA TOGAMI"
+msgid "The case can't advance through your silence, Makoto."
+msgstr ""
+
+#. 残念ながら、時間は
+#. お前のような輩にも平等に流れるからな…
+msgctxt "0053 | BYAKUYA TOGAMI"
+msgid ""
+"Unfortunately, time moves just as quickly even for\n"
+"people like you."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>セレスさん<CLT>……
+msgctxt "0055 | MAKOTO NAEGI"
+msgid "It was <CLT 3>Celeste<CLT>..."
+msgstr ""
+
+#. あら…わたくしが怪しいのですか？
+msgctxt "0056 | CELES"
+msgid "Ah, so I'm the suspicious individual now, am I?"
+msgstr ""
+
+#. うふふ、嫌ですわ。そんなご冗談を…
+msgctxt "0057 | CELES"
+msgid "Hmhmhm. I really do hate this kind of joke..."
+msgstr ""
+
+#. 冗談…それはどうかな？
+msgctxt "0058 | BYAKUYA TOGAMI"
+msgid "A joke? I wonder..."
+msgstr ""
+
+#. ………………
+msgctxt "0059 | CELES"
+msgid "..."
+msgstr "..."
+
+#. …では、わたくしと山田君が組んでいたと、
+#. おっしゃるのですね。
+msgctxt "0060 | CELES"
+msgid ""
+"So what you are saying, then, is that I specifically\n"
+"chose to work together with Hifumi."
+msgstr ""
+
+#. そんな…わたくしと山田君が組んでいたなんて…
+msgctxt "0061 | CELES"
+msgid ""
+"The idea that I would choose to spend any amount of\n"
+"time interacting with him..."
+msgstr ""
+
+#. そんな事ある訳ねぇだろう、クソボケがッ！！
+#. 誰があんなヘタレと組むっつーんだよ！！
+msgctxt "0062 | CELES"
+msgid ""
+"That I would go within ten feet of that\n"
+"shit-for-brains! That lazy, worthless goddamn idiot!"
+msgstr ""
+
+#. …うふ、失礼しましたわ。
+msgctxt "0063 | CELES"
+msgid "Ahem. Ah, pardonnez-moi."
+msgstr ""
+
+#. 言っておくが、根拠もあるぞ。
+msgctxt "0064 | BYAKUYA TOGAMI"
+msgid "Just to be clear, there *is* evidence to support it."
+msgstr ""
+
+#. …根拠？
+msgctxt "0065 | CELES"
+msgid "...Is that so?"
+msgstr ""
+
+#. そうだ。今回の一連の事件において、
+#. お前らだけは共通して<CLT 3>“ある行動”<CLT>を取っていた…
+msgctxt "0066 | BYAKUYA TOGAMI"
+msgid ""
+"It is. Throughout the investigation, there was\n"
+"<CLT 3>certain behavior<CLT> that was common only to the two of you."
+msgstr ""
+
+#. それが根拠になるんだよ。
+#. お前らが組んでいた事のな！
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgid ""
+"Considering what we've learned so far, it only further\n"
+"proves that the two of you were working together!"
+msgstr ""
+
+#. 不審者の目撃
+msgctxt "0068 | CHOICE/RE:ACT"
+msgid "Encountering the suspicious individual"
+msgstr ""
+
+#. パンツに紙の切れ端を隠していた
+msgctxt "0069 | CHOICE/RE:ACT"
+msgid "The paper hidden in Hifumi's pants"
+msgstr ""
+
+#. まだパンツの話をしているの…？
+#. まじめに考えて。
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgid ""
+"Why is everyone obsessed with Hifumi's pants? Please\n"
+"take this a little more seriously..."
+msgstr ""
+
+#. <CLT 4>まずい事を言ってしまったみたいだ…
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Bad call on my part, I guess.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 大声で叫んだ
+msgctxt "0073 | CHOICE/RE:ACT"
+msgid "The screaming"
+msgstr ""
+
+#. <CLT 4>確かに、２人共が大声で叫んでるけど…
+#. それは今は関係なさそうだ…
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, it's true that both of them did a lot of\n"
+"screaming. But I don't think that's it...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. どうした…？
+#. 何か言いたい事でもあるのか？
+msgctxt "0076 | BYAKUYA TOGAMI"
+msgid "What's wrong? Do you have something you want to say?"
+msgstr ""
+
+#. <CLT 4>共通して取っていた行動…
+#. まさに不審な…
+#. <CLT>
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Behavior that they had in common... There's definitely\n"
+"something suspicious there...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>山田クンとセレスさんだけが共通して取っていた行動…
+#. それって、ひょっとして…
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What it is that only Hifumi and Celeste had in\n"
+"common...\n"
+"<CLT>"
+msgstr ""
+
+#. 山田クンとセレスさんだけが共通して取っていた行動…
+#. それって、<CLT 3>不審者の目撃<CLT>の事だよね？
+msgctxt "0080 | MAKOTO NAEGI"
+msgid ""
+"The behavior they had in common has to do with the\n"
+"\"<CLT 3>suspicious individual<CLT>\" in the suit, doesn't it?"
+msgstr ""
+
+#. 例の不審者…ジャスティスロボを目撃してるのって、
+#. セレスさんと山田クンだけだったもんね。
+msgctxt "0081 | MAKOTO NAEGI"
+msgid ""
+"The only ones who ever actually saw Robo Justice\n"
+"firsthand were Celeste and Hifumi."
+msgstr ""
+
+#. でしゃばるな…
+msgctxt "0082 | BYAKUYA TOGAMI"
+msgid "Shush. The adults are talking now."
+msgstr ""
+
+#. ご、ごめん…
+msgctxt "0083 | MAKOTO NAEGI"
+msgid "S-Sorry..."
+msgstr ""
+
+#. 苗木の言う通り、例の不審者を目撃しているのは、
+#. 山田とセレスの２人だけだった…
+msgctxt "0084 | BYAKUYA TOGAMI"
+msgid ""
+"As he said, only Celeste and Hifumi ever laid eyes on\n"
+"the costumed individual."
+msgstr ""
+
+#. その山田が犯人の１人であれば、
+#. もう一方のセレスの証言も、怪しいと見るのが当然だ。
+msgctxt "0085 | BYAKUYA TOGAMI"
+msgid ""
+"If we accept that Hifumi was one of the culprits, we\n"
+"can't help but suspect what Celeste has said, as well."
+msgstr ""
+
+#. すべてウソ…って事？
+msgctxt "0086 | AOI ASAHINA"
+msgid "Are you saying everything they told us was a lie...?"
+msgstr ""
+
+#. 図書室でケガをした山田を保健室に連れて行った後、
+#. 俺達は全員で、不審者の捜索を始めたな？
+msgctxt "0087 | BYAKUYA TOGAMI"
+msgid ""
+"After taking Hifumi to the nurse's office, we all\n"
+"began our search for this individual, correct?"
+msgstr ""
+
+#. その直後の…セレスの言葉を思い出してみろ。
+msgctxt "0088 | BYAKUYA TOGAMI"
+msgid ""
+"And not too long after that, do you remember what\n"
+"Celeste said?"
+msgstr ""
+
+#. 影です…あの階段の上で影が動きました！
+msgctxt "0089 | CELES"
+msgid ""
+"I saw a shadow! Something moving around at the top of\n"
+"the stairs!"
+msgstr ""
+
+#. あの証言があったからこそ、
+#. 俺達は２階へと移動したんだ。
+msgctxt "0090 | BYAKUYA TOGAMI"
+msgid ""
+"We headed to the 2nd floor specifically because of\n"
+"what she claimed to have seen."
+msgstr ""
+
+#. そこで、セレスは
+#. 俺達を３階の物理室へと誘導する為に…
+msgctxt "0091 | BYAKUYA TOGAMI"
+msgid ""
+"Next, to draw us all to the physics lab, up on the 3rd\n"
+"floor..."
+msgstr ""
+
+#. ３階で悲鳴を上げた…
+msgctxt "0092 | SAKURA OOGAMI"
+msgid "...She let out a bloodcurdling scream."
+msgstr ""
+
+#. あの時、悲鳴を聞き付けて３階に集まった俺達に、
+#. セレスはなんと言った？
+msgctxt "0093 | BYAKUYA TOGAMI"
+msgid ""
+"And when we'd all come to see what was wrong, what was\n"
+"it she said?"
+msgstr ""
+
+#. セレスちゃん、どうしたの！？
+msgctxt "0094 | AOI ASAHINA"
+msgid "Celeste! What's wrong!?"
+msgstr ""
+
+#. お前にしては、やけに大げさな叫び声だったな…
+msgctxt "0095 | BYAKUYA TOGAMI"
+msgid ""
+"That was a rather...intense scream for someone like\n"
+"you."
+msgstr ""
+
+#. 見つけたのです…例のコスプレ不審者を…
+msgctxt "0096 | CELES"
+msgid "I saw him! The strange costumed man...!"
+msgstr ""
+
+#. わたくしが叫び声を上げたら、
+#. 逃げていきました。
+msgctxt "0097 | CELES"
+msgid "He ran off as soon as I screamed..."
+msgstr ""
+
+#. 階段を背にしたわたくしに対して、
+#. 左側の廊下の奥を曲がっていきましたわ。
+msgctxt "0098 | CELES"
+msgid ""
+"I was blocking the stairs, so he headed further down\n"
+"into the hallway and disappeared...!"
+msgstr ""
+
+#. そうやって、俺達を物理室に向かうよう仕向けた後は…
+msgctxt "0099 | BYAKUYA TOGAMI"
+msgid ""
+"Once she'd done her job of getting us all up to the\n"
+"physics lab..."
+msgstr ""
+
+#. …もう１人の相方の出番だ。
+msgctxt "0100 | BYAKUYA TOGAMI"
+msgid "...it was time for her partner to get to work."
+msgstr ""
+
+#. ギニャアアアアアアアーッ！！
+msgctxt "0101 | NO NAME"
+msgid "Ungyaaaaaahhh!!!"
+msgstr ""
+
+#. …えっ！？
+msgctxt "0102 | MAKOTO NAEGI"
+msgid "Huh!?"
+msgstr ""
+
+#. な、何ッ…！？
+msgctxt "0103 | AOI ASAHINA"
+msgid "Wh-What was that!?"
+msgstr ""
+
+#. 下の階から聞えましたわね。
+#. という事は、今の悲鳴は…！
+msgctxt "0104 | CELES"
+msgid "That came from downstairs! It must have been..."
+msgstr ""
+
+#. 保健室にいる…山田クンの…？
+msgctxt "0105 | MAKOTO NAEGI"
+msgid "Hifumi! He's in the nurse's office!"
+msgstr ""
+
+#. マズイよ！　急いで戻ろう！！
+msgctxt "0106 | MAKOTO NAEGI"
+msgid "This is bad! Come on, we have to go back!"
+msgstr ""
+
+#. あれは…私達を二手に分かれさせて…
+#. 同時に死体を発見させる為に…！？
+msgctxt "0107 | AOI ASAHINA"
+msgid ""
+"It was to get us to divide into two groups...so that\n"
+"we would discover both bodies at the same time!?"
+msgstr ""
+
+#. 現に、二手に分かれようと提案したのも、
+#. セレスだったはずだ。
+msgctxt "0108 | BYAKUYA TOGAMI"
+msgid ""
+"In fact, Celeste was precisely the one who proposed\n"
+"that we split up."
+msgstr ""
+
+#. でしたら、二手に分かれましょうか。
+msgctxt "0109 | CELES"
+msgid "Then why don't we split into two groups?"
+msgstr ""
+
+#. 俺は捕獲の方に回るぞ。その方が面白そうだ。
+msgctxt "0110 | BYAKUYA TOGAMI"
+msgid ""
+"I'll lead the hunting party. That seems much more\n"
+"interesting."
+msgstr ""
+
+#. では、苗木君と朝日奈さんは、
+#. わたくしと共に保健室へ…
+msgctxt "0111 | CELES"
+msgid ""
+"Very well, then Makoto and Hina, you come with me to\n"
+"the nurse's office."
+msgstr ""
+
+#. 腐川さんと十神君と大神さんは、
+#. 不審者の捕獲をお願いしますわ。
+msgctxt "0112 | CELES"
+msgid ""
+"I will leave the capture of the suspicious individual\n"
+"to Toko, Byakuya, and Sakura."
+msgstr ""
+
+#. どうだ？　セレスと山田が組んでいると仮定した途端、
+#. すべての偶然が、故意の必然へと繋がっていくんだ…
+msgctxt "0113 | BYAKUYA TOGAMI"
+msgid ""
+"Well? If Celeste and Hifumi were working together, all\n"
+"those chance events suddenly become connected..."
+msgstr ""
+
+#. ………………
+msgctxt "0114 | CELES"
+msgid "..."
+msgstr "..."
+
+#. 付け加えて言えば、
+#. その前の、お前の盛大な叫び声…
+msgctxt "0115 | BYAKUYA TOGAMI"
+msgid ""
+"And on top of that...that piercing cry of yours early\n"
+"on..."
+msgstr ""
+
+#. ドッヒャァァァァァーーーーーーッ！！
+msgctxt "0116 | NO NAME"
+msgid "Ha-aaaaaahhhh!"
+msgstr ""
+
+#. あれには<CLT 3>“山田への合図”<CLT>という役割も
+#. あったんじゃないのか？
+msgctxt "0117 | BYAKUYA TOGAMI"
+msgid "That was <CLT 3>to signal Hifumi<CLT>, wasn't it?"
+msgstr ""
+
+#. 『自分は予定通り３階までたどり着いた。
+#. 　悲鳴を上げろ』…そんな意味の合図がな。
+msgctxt "0118 | BYAKUYA TOGAMI"
+msgid ""
+"It was your way of telling him, \"We're on the 3rd\n"
+"floor, everything's going according to plan.\""
+msgstr ""
+
+#. だからこそ、あんな校内全体に響き渡るような大声で
+#. 叫んだんじゃないのか？
+msgctxt "0119 | BYAKUYA TOGAMI"
+msgid ""
+"Why else would you let out a scream that could have\n"
+"carried across the sea?"
+msgstr ""
+
+#. ………………
+msgctxt "0120 | CELES"
+msgid "..."
+msgstr "..."
+
+#. それに…怪しいのは、あの時もだよ…
+msgctxt "0121 | MAKOTO NAEGI"
+msgid "I just realized another strange thing..."
+msgstr ""
+
+#. 保健室で、死んだフリをしてた山田クンを発見した時…
+msgctxt "0122 | MAKOTO NAEGI"
+msgid ""
+"When we found Hifumi in the nurse's office, who we now\n"
+"know was only pretending to be dead..."
+msgstr ""
+
+#. まさか…予期していませんでしたわ…
+msgctxt "0123 | CELES"
+msgid "I certainly was not expecting this."
+msgstr ""
+
+#. あの山田クンが…
+msgctxt "0124 | CELES"
+msgid "I did not imagine that Hifumi..."
+msgstr ""
+
+#. 殺されてしまうなんて…！
+msgctxt "0125 | CELES"
+msgid "...would be murdered!"
+msgstr ""
+
+#. あの時、最初に<CLT 3>“殺された”<CLT>と言ったのは、
+#. セレスさんだったよね…？
+msgctxt "0126 | MAKOTO NAEGI"
+msgid ""
+"Celeste...you were the first one to say <CLT 3>he'd been\n"
+"murdered<CLT>."
+msgstr ""
+
+#. そうやって言う事で、山田クンは死んだんだと、
+#. ボク達に思い込ませようとしたんじゃないの？
+msgctxt "0127 | MAKOTO NAEGI"
+msgid ""
+"You wanted to make sure we wouldn't have any doubt in\n"
+"our minds."
+msgstr ""
+
+#. ………………
+msgctxt "0128 | CELES"
+msgid "..."
+msgstr "..."
+
+#. そ、そんな…信じらんないよ…
+#. 全部…セレスちゃんの演技だったなんて…！
+msgctxt "0129 | AOI ASAHINA"
+msgid ""
+"I-I don't believe it... Everything...the whole thing\n"
+"was one big act!"
+msgstr ""
+
+#. …朝日奈さんは、山田クンの死体が消えた時、
+#. セレスさんと一緒にいたんだよね？
+msgctxt "0130 | MAKOTO NAEGI"
+msgid ""
+"Hina. You were with Celeste when Hifumi's body\n"
+"disappeared, right?"
+msgstr ""
+
+#. うん…私の気分が悪かったから、
+#. セレスちゃんがトイレに連れてってくれて…
+msgctxt "0131 | AOI ASAHINA"
+msgid ""
+"Yeah... I was feeling kinda sick, so Celeste took me\n"
+"to the bathroom..."
+msgstr ""
+
+#. …え！　じゃあ、あれも…！？
+msgctxt "0132 | AOI ASAHINA"
+msgid "...Wait! Then that was—!?"
+msgstr ""
+
+#. 朝日奈さんを気遣った訳じゃなくて、
+#. 山田クンを保健室から逃がす隙を作る為だったのかも…
+msgctxt "0133 | MAKOTO NAEGI"
+msgid ""
+"She wasn't worried about you. She just saw a chance to\n"
+"help Hifumi sneak out of the nurse's office."
+msgstr ""
+
+#. どれもこれも、１つずつでは小さな事だが、
+#. 積み重なった途端、大きな疑惑になる…
+msgctxt "0134 | BYAKUYA TOGAMI"
+msgid ""
+"Each piece isn't much by itself, but start putting\n"
+"them together and the picture gets very ugly indeed."
+msgstr ""
+
+#. …そう思わないか、セレス？
+msgctxt "0135 | BYAKUYA TOGAMI"
+msgid "Wouldn't you agree, Celeste?"
+msgstr ""
+
+#. さぁ、なんの事でしょう…？
+msgctxt "0136 | CELES"
+msgid "...I have no idea what you mean."
+msgstr ""
+
+#. とぼけても無駄だ…
+msgctxt "0137 | BYAKUYA TOGAMI"
+msgid "Don't bother trying to deny it."
+msgstr ""
+
+#. お前は決定的な<CLT 3>ミス<CLT>を犯しているんだ。
+msgctxt "0138 | BYAKUYA TOGAMI"
+msgid "You made one fatal <CLT 3>mistake<CLT>."
+msgstr ""
+
+#. …ミス？
+msgctxt "0139 | CELES"
+msgid "...Oh did I?"
+msgstr ""
+
+#. 最初にあれを聞いた時は、
+#. さほど深刻には考えなかったが…
+msgctxt "0140 | BYAKUYA TOGAMI"
+msgid ""
+"I didn't even catch it myself when you first said it,\n"
+"but..."
+msgstr ""
+
+#. 今となっては、ハッキリと言える。
+#. あれは、お前の犯した致命的なミスだとな。
+msgctxt "0141 | BYAKUYA TOGAMI"
+msgid ""
+"...looking back, I can say that that one little\n"
+"slip-up was your undoing."
+msgstr ""
+
+#. なんの…事でしょう？
+msgctxt "0142 | CELES"
+msgid "Wh-What are you talking about...?"
+msgstr ""
+
+#. 山田の死体消失を聞いた俺達が、
+#. 保健室に戻った直後の話だ…
+msgctxt "0143 | BYAKUYA TOGAMI"
+msgid ""
+"I'm talking about what you said after Hifumi's body\n"
+"disappeared and we returned to the nurse's office."
+msgstr ""
+
+#. まるで…楽しんでいるようですわね…
+msgctxt "0144 | CELES"
+msgid "They must really be enjoying this..."
+msgstr ""
+
+#. わたくし達が怯え、混乱するのを見て…
+#. 楽しんでいるようですわ…
+msgctxt "0145 | CELES"
+msgid ""
+"Enjoying the sight of us standing around, frightened\n"
+"and confused..."
+msgstr ""
+
+#. このままだと…全員殺されてしまいます。
+msgctxt "0146 | CELES"
+msgid "We're all going to die here."
+msgstr ""
+
+#. 彼らのように…殺されてしまいます…
+msgctxt "0147 | CELES"
+msgid "We're going to die, just like those guys died..."
+msgstr ""
+
+#. その言葉なら我も聞いていたが…
+#. それの何がおかしいと言うのだ？
+msgctxt "0148 | SAKURA OOGAMI"
+msgid ""
+"I remember her saying that too, but...I don't\n"
+"understand what's so strange about it."
+msgstr ""
+
+#. いいか、物理準備室で石丸の死体を発見したのは、
+#. 俺と大神と腐川の３人だったんだ。
+msgctxt "0149 | BYAKUYA TOGAMI"
+msgid ""
+"Then pay attention. Sakura, Toko, and I were first to\n"
+"discover Taka's body in the equipment room."
+msgstr ""
+
+#. その後、遅れて来た苗木から山田殺害の件を聞き、
+#. 俺と大神は、苗木と一緒に物理準備室を後にした…
+msgctxt "0150 | BYAKUYA TOGAMI"
+msgid ""
+"Then Makoto showed up and told us Hifumi had been\n"
+"killed. So Sakura and I left with Makoto."
+msgstr ""
+
+#. そして、廊下に出たところで、セレスと会い、
+#. 俺達は４人で保健室に向かう事になったんだ。
+msgctxt "0151 | BYAKUYA TOGAMI"
+msgid ""
+"Once we were in the hall, we ran into Celeste, and the\n"
+"four of us headed to the nurse's office."
+msgstr ""
+
+#. その間、俺達は石丸の死については
+#. 一切、何も話していないんだ。
+msgctxt "0152 | BYAKUYA TOGAMI"
+msgid ""
+"Now, the entire time we were together, none of us said\n"
+"anything about Taka being dead."
+msgstr ""
+
+#. そう考えると、セレスのあの<CLT 3>発言<CLT>は極めて不自然。
+#. いや、不自然過ぎるんだよ。
+msgctxt "0153 | BYAKUYA TOGAMI"
+msgid ""
+"Think about it—Celeste's <CLT 3>comment<CLT> doesn't make sense.\n"
+"It was completely out of place."
+msgstr ""
+
+#. あの発言だの…不自然だの…
+#. イマイチ意味がわからんのだけど…
+msgctxt "0154 | YASUHIRO HAGAKURE"
+msgid ""
+"Yeah, I see what you're talking about. Although I\n"
+"don't really get what it means..."
+msgstr ""
+
+#. おい、セレス。みんなが困ってるぞ。
+#. みんなの為に、もう１度同じ発言をしてやれよ。
+msgctxt "0155 | BYAKUYA TOGAMI"
+msgid ""
+"You hear that, Celeste? Everyone's having some trouble\n"
+"understanding. Could you repeat what you said?"
+msgstr ""
+
+#. お前が犯人じゃないなら、出来るはずだぞ？
+msgctxt "0156 | BYAKUYA TOGAMI"
+msgid ""
+"If you're really not the culprit, you shouldn't have\n"
+"any problem repeating it, right?"
+msgstr ""
+
+#. ………………
+msgctxt "0157 | CELES"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>十神クンの言う、
+#. セレスさんの発言の不自然な点…
+#. <CLT>
+msgctxt "0158 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Byakuya said that Celeste's comment doesn't make\n"
+"sense...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それって…何を指しているんだ…？
+#. <CLT>
+msgctxt "0159 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But what is he alluding to...?\n"
+"<CLT>"
+msgstr ""
