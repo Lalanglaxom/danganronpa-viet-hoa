@@ -3,6 +3,10 @@
     "linebreak_path": "D:/Danganronpa1Viet/BAK/e01",
     "mass_replace_path": "D:/Danganronpa1Viet/temp",
     "backup_lin": "D:/Danganronpa1Viet/DRAT_v1-5-2/DR1 (PC) [MANUAL MODE]/EXTRACTED/LIN",
-    "backup_trans": "D:/Danganronpa1Viet/temp",
-    "validator_folder": "D:\\Danganronpa1Viet\\danganronpa-viet-hoa\\e02_chap2"
+    "backup_trans": "D:/Danganronpa1Viet/danganronpa-viet-hoa/mtb",
+    "validator_folder": "D:\\Danganronpa1Viet\\danganronpa-viet-hoa\\e02_chap2",
+    "gemini_folder": "D:/Danganronpa1Viet/danganronpa-viet-hoa/mtb",
+    "gemini_max_files": 3,
+    "gemini_max_lines": 600,
+    "gemini_wait_time": 8
 }

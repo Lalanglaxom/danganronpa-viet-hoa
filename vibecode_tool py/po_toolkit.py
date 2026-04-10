@@ -285,6 +285,35 @@ def _build_gemini_tab(notebook):
     tk.Label(hdr, text="Gemini Translator", bg=BG, fg=ACCENT, font=FONT_TITLE).pack(side="left")
     path_var = _build_path_row(frame, "Translated Folder:", "gemini_folder")
     
+    # Settings Section
+    _section_label(frame, "SETTINGS")
+    settings_frame = tk.Frame(frame, bg=BG2, relief="flat", bd=1)
+    settings_frame.pack(fill="x", padx=12, pady=8)
+    
+    # Max Files Row
+    row1 = tk.Frame(settings_frame, bg=BG2)
+    row1.pack(fill="x", padx=8, pady=6)
+    tk.Label(row1, text="Max Files to Translate:", bg=BG2, fg=TEXT, font=FONT).pack(side="left", padx=(0, 8))
+    max_files_var = tk.StringVar(value=str(CONFIG.get("gemini_max_files", 59)))
+    tk.Spinbox(row1, from_=1, to=500, textvariable=max_files_var, width=8, 
+               bg=BG3, fg=ACCENT, font=FONT).pack(side="left")
+    
+    # Max Lines Per Batch Row
+    row2 = tk.Frame(settings_frame, bg=BG2)
+    row2.pack(fill="x", padx=8, pady=6)
+    tk.Label(row2, text="Max Lines Per Batch:", bg=BG2, fg=TEXT, font=FONT).pack(side="left", padx=(0, 8))
+    max_lines_var = tk.StringVar(value=str(CONFIG.get("gemini_max_lines", 600)))
+    tk.Spinbox(row2, from_=100, to=5000, textvariable=max_lines_var, width=8,
+               bg=BG3, fg=ACCENT, font=FONT).pack(side="left")
+    
+    # Wait Between Batches Row
+    row3 = tk.Frame(settings_frame, bg=BG2)
+    row3.pack(fill="x", padx=8, pady=6)
+    tk.Label(row3, text="Wait Between Batches (sec):", bg=BG2, fg=TEXT, font=FONT).pack(side="left", padx=(0, 8))
+    wait_time_var = tk.StringVar(value=str(CONFIG.get("gemini_wait_time", 8)))
+    tk.Spinbox(row3, from_=1, to=60, textvariable=wait_time_var, width=8,
+               bg=BG3, fg=ACCENT, font=FONT).pack(side="left")
+    
     # Pack btn_row to bottom FIRST
     btn_row = tk.Frame(frame, bg=BG)
     btn_row.pack(side="bottom", fill="x", padx=12, pady=(0, 12))
@@ -297,10 +326,30 @@ def _build_gemini_tab(notebook):
             mod = importlib.import_module("po_gemini_translator")
             path = path_var.get().strip()
             if not path or "Drop" in path: print("⚠ Set path first."); return
+            
+            # Get settings from UI inputs
+            try:
+                max_files = int(max_files_var.get())
+                max_lines = int(max_lines_var.get())
+                wait_time = int(wait_time_var.get())
+                
+                # Validate ranges
+                if max_files < 1: max_files = 59
+                if max_lines < 100: max_lines = 600
+                if wait_time < 1: wait_time = 8
+                
+                # Save to config
+                CONFIG["gemini_max_files"] = max_files
+                CONFIG["gemini_max_lines"] = max_lines
+                CONFIG["gemini_wait_time"] = wait_time
+                save_config()
+            except ValueError:
+                max_files, max_lines, wait_time = 59, 600, 8
+            
             def _wrapper():
                 orig = fd.askdirectory
                 fd.askdirectory = lambda *a,**k: path
-                try: mod.run()
+                try: mod.run(max_files_to_translate=max_files, max_lines_per_batch=max_lines, wait_between_batches=wait_time)
                 finally: fd.askdirectory = orig
             _run_in_thread(_wrapper, log, btn, "▶  Run Gemini Translator")
         except Exception as e: print(f"⚠ Error: {e}")

@@ -6,11 +6,12 @@ from tkinter import filedialog
 from playwright.sync_api import sync_playwright
 
 # ╔══════════════════════════════════════════════════════════════════╗
-# ║                    ⚙  USER SETTINGS                             ║
+# ║                    ⚙  DEFAULT SETTINGS                          ║
 # ╚══════════════════════════════════════════════════════════════════╝
 
 # "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\ChromeDebug"
 
+# Default values (can be overridden via parameters)
 MAX_FILES_TO_TRANSLATE = 59      # How many .po files to process per run
 MAX_LINES_PER_BATCH    = 600    # Max lines of .po content sent to Gemini per request
 WAIT_BETWEEN_BATCHES   = 8      # Seconds to pause between Gemini calls
@@ -564,10 +565,36 @@ def pick_folder(title: str) -> str:
     return folder
 
 
-def run() -> None:
+def run(
+    max_files_to_translate: int = None,
+    max_lines_per_batch: int = None,
+    wait_between_batches: int = None
+) -> None:
+    """
+    Run the Gemini translator with optional parameters.
+    
+    Args:
+        max_files_to_translate: How many .po files to process (default: 59)
+        max_lines_per_batch: Max lines per Gemini request (default: 600)
+        wait_between_batches: Seconds to wait between batches (default: 8)
+    """
+    global MAX_FILES_TO_TRANSLATE, MAX_LINES_PER_BATCH, WAIT_BETWEEN_BATCHES
+    
+    # Set parameters if provided, otherwise use defaults
+    if max_files_to_translate is not None:
+        MAX_FILES_TO_TRANSLATE = max_files_to_translate
+    if max_lines_per_batch is not None:
+        MAX_LINES_PER_BATCH = max_lines_per_batch
+    if wait_between_batches is not None:
+        WAIT_BETWEEN_BATCHES = wait_between_batches
+    
     print("═" * 65)
     print("  Gemini PO Translator — Danganronpa Fan TL")
     print("═" * 65)
+    print(f"\n  Settings:")
+    print(f"    Max Files: {MAX_FILES_TO_TRANSLATE}")
+    print(f"    Max Lines Per Batch: {MAX_LINES_PER_BATCH}")
+    print(f"    Wait Between Batches: {WAIT_BETWEEN_BATCHES}s\n")
 
     translated_dir = pick_folder("Select your 'translated' working folder")
     if not translated_dir:
