@@ -1,7 +1,11 @@
 {
-    "search_path": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e02_chap2",
+    "search_path": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e08_freetime_events  DONE",
     "validator_folder": "D:/Danganronpa1Viet/danganronpa-viet-hoa/system",
     "backup_lin": "D:/Danganronpa1Viet/DRAT_v1-5-2/DR1 (PC) [MANUAL MODE]/EXTRACTED/LIN",
     "backup_trans": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e03",
-    "gemini_folder": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e03"
+    "gemini_folder": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e03/untranslated",
+    "mass_replace_path": "D:/Danganronpa1Viet/danganronpa-viet-hoa/e03/untranslated",
+    "gemini_max_files": 30,
+    "gemini_max_lines": 600,
+    "gemini_wait_time": 8
 }

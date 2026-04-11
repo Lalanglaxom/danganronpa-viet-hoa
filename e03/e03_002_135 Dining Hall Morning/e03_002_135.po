@@ -20,7 +20,7 @@ msgid ""
 "trial...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Buổi sáng sau khi Lớp Xét Xử thứ hai kết thúc...\n"
+"<CLT 4>Buổi sáng sau khi lớp xét xử thứ hai kết thúc...\n"
 "<CLT>"
 
 #. <CLT 4>ボクらはいつものように、いつもの食堂に集まり…
@@ -61,12 +61,12 @@ msgid ""
 "refuse to show up..."
 msgstr ""
 "Hôm nay vắng vẻ quá nhỉ? Toko với Byakuya vẫn cứ nhất\n"
-"quyết không chịu lộ mặt..."
+"quyết không chịu ló mặt..."
 
 #. 朝日奈葵殿の姿も見られませんな…
 msgctxt "0006 | HIFUMI YAMADA"
 msgid "And I haven't seen Miss Asahina anywhere."
-msgstr "Và tôi cũng không thấy tiểu thư Hina đâu cả."
+msgstr "Và tôi cũng không thấy cô Asahina đâu cả."
 
 #. 朝日奈は腹痛らしい。
 #. 今日は部屋で休んでいるそうだ。
@@ -90,7 +90,7 @@ msgstr ""
 #. だから余計に心配でな…
 msgctxt "0009 | SAKURA OOGAMI"
 msgid "Which is exactly what makes me worry..."
-msgstr "Chính vì thế nên tôi mới càng lo lắng hơn..."
+msgstr "Chính vì thế nên tôi mới lo lắng đây..."
 
 #. じゃあ、集まったのは、
 #. この７人だけ…？
@@ -220,7 +220,7 @@ msgstr ""
 #. 言ってたら、ますます気が滅入ってきた…
 msgctxt "0024 | HIFUMI YAMADA"
 msgid "Ngh! Now I'm all depressed just thinking about it..."
-msgstr "Ngh! Càng nghĩ tôi lại càng thấy nản lòng hơn rồi đấy..."
+msgstr "Ngh! Càng nghĩ tôi lại càng thấy nản lòng hơn..."
 
 #. …ここで仲良く暮らせばいいだけですわ。
 msgctxt "0025 | CELES"
@@ -239,7 +239,7 @@ msgid ""
 "life. That is the only hope we have now."
 msgstr ""
 "Hãy quên thế giới bên ngoài đi và chấp nhận cuộc sống mới\n"
-"này. Đó là niềm hy vọng duy nhất của chúng ta vào lúc này."
+"này. Đó là niềm hy vọng duy nhất của chúng ta bây giờ."
 
 #. そんな…こんな所でずっと暮らせなんて…
 msgctxt "0027 | MAKOTO NAEGI"
@@ -279,12 +279,14 @@ msgstr ""
 #. それならば、いっそここの方が…
 msgctxt "0031 | CELES"
 msgid "In which case, is our current situation not—"
-msgstr "Trong trường hợp đó, tình cảnh hiện tại của chúng ta chẳng phải—"
+msgstr ""
+"Trong trường hợp đó, tình cảnh hiện tại của chúng ta \n"
+"chẳng phải—"
 
 #. 外道天使☆もちもちプリンセス…
 msgctxt "0032 | HIFUMI YAMADA"
 msgid "Demon Angel☆Pretty Pudgy Princess..."
-msgstr "Thiên sứ Ngoại đạo☆Công chúa Mochi Mochi..."
+msgstr "Thiên sứ Ngoại đạo☆Công chúa Bánh Bao..."
 
 #. はい…？
 msgctxt "0033 | CELES"
@@ -359,7 +361,7 @@ msgctxt "0042 | YASUHIRO HAGAKURE"
 msgid ""
 "Well, I mean...since the class trial is over and\n"
 "all..."
-msgstr "Thì, ý tớ là... vì Lớp Xét Xử cũng đã kết thúc rồi nên..."
+msgstr "Thì, ý tớ là... vì lớp xét xử cũng đã kết thúc rồi nên..."
 
 #. 新たに行ける場所が増えているはず…か…
 msgctxt "0043 | SAKURA OOGAMI"
@@ -418,7 +420,7 @@ msgstr ""
 #. 呼ばれて飛び出て、邪邪邪じゃーん！
 msgctxt "0050 | TOUKO FUKAWA"
 msgid "You called for me, and so I appear! Genocide—!"
-msgstr "Nghe tiếng gọi ta liền xuất hiện đây! Genocide—!"
+msgstr "Nghe tiếng gọi ta liền xuất hiện đây! Đồ Tể—!"
 
 #. 呼んでない、呼んでない！
 msgctxt "0051 | HIFUMI YAMADA"
@@ -431,7 +433,7 @@ msgctxt "0052 | YASUHIRO HAGAKURE"
 msgid ""
 "What the...? How come it's Genocide Jill, and not\n"
 "Toko?"
-msgstr "Cái gì thế này...? Sao lại là Genocide Jill mà không phải Toko?"
+msgstr "Cái gì thế này...? Sao lại là Jill Đồ Tể mà không phải Toko?"
 
 #. この学校って素敵空間よね！
 #. アタシみたいな殺人鬼が堂々としていられるんだもん！
@@ -440,8 +442,8 @@ msgid ""
 "God, this place is just AMAZING! Finally a place I can\n"
 "just be my murderous self!"
 msgstr ""
-"Trời ạ, nơi này đúng là TUYỆT VỜI! Cuối cùng cũng có một nơi mà\n"
-"tôi có thể sống đúng với bản chất sát nhân của mình!"
+"Trời đất, nơi này đúng là TUYỆT VỜI! Cuối cùng cũng có một \n"
+"nơi mà tôi có thể sống đúng với bản chất sát nhân của mình!"
 
 #. だから、遠慮なく羽を伸ばさせてもらう事にしたの！
 #. コソコソ隠れるのはやめッ！！
@@ -450,13 +452,13 @@ msgid ""
 "Which is why I've decided to stop holding back and\n"
 "spread my wings! No more hiding in a cave for me!"
 msgstr ""
-"Đó là lý do tại sao tôi quyết định không kìm nén nữa mà vung vẩy\n"
-"đôi cánh của mình! Không còn phải trốn chui trốn lủi nữa!"
+"Đó là lý do tại sao tôi quyết định không kìm nén nữa mà sẽ vung\n"
+"đôi cánh của mình! Không còn trốn chui trốn lủi nữa!"
 
 #. それに、アタシは戦わなければならないのよ…
 msgctxt "0055 | TOUKO FUKAWA"
 msgid "Plus, I have another battle to fight!"
-msgstr "Thêm nữa, tôi còn một cuộc chiến khác phải tham gia!"
+msgstr "Với lại, tôi còn một cuộc chiến khác phải tham gia!"
 
 #. 二重人格と言えば、古いドラマの安直な犯人設定…
 #. そんな二重人格に対する誤解を打破する為に…
@@ -505,7 +507,7 @@ msgstr ""
 #. ゲラゲラゲラゲラ！！
 msgctxt "0061 | TOUKO FUKAWA"
 msgid "Kyeeehahahaha!"
-msgstr "Heh heh heh heh!"
+msgstr "Kyeeehahahaha!"
 
 #. 何にしても、まずは食事にするぞ。
 #. 腹が減っては何も出来ぬからな…
@@ -528,7 +530,7 @@ msgstr "Cậu nói đúng. Mau ăn xong rồi bắt đầu đi điều tra thôi
 #. ゲラゲラゲラゲラッ！！
 msgctxt "0064 | TOUKO FUKAWA"
 msgid "Kyeehahaha!"
-msgstr "Heh heh heh heh!"
+msgstr "Kyeehahaha!"
 
 #. <CLT 4>殺人鬼と共に過ごす朝食…
 #. そんな貴重かつ迷惑な食事を済ませた後…

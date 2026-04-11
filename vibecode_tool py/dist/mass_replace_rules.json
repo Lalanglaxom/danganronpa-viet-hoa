@@ -6,8 +6,24 @@
         "whole_word": true,
         "replace": [
             [
-                "Hope's Peak",
-                "Đỉnh Hy Vọng"
+                "Lớp Xét Xử",
+                "lớp xét xử"
+            ]
+        ]
+    },
+    {
+        "label": "Example: Change Hope's Peak to Đỉnh Hy Vọng",
+        "character": null,
+        "scope": null,
+        "whole_word": true,
+        "replace": [
+            [
+                "Genocide Jill",
+                "Jill Đồ Tể"
+            ],
+            [
+                "Genocide Jack",
+                "Jack Đồ Tể"
             ]
         ]
     }
