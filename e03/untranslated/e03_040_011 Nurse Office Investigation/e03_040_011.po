@@ -1,0 +1,514 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. セレスさんは、なんの捜査をしているの？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "What are you investigating, Celeste?"
+msgstr "Cậu đang điều tra gì vậy, Celeste?"
+#. 捜査というほどでもありませんわ。
+msgctxt "0002 | CELES"
+msgid "I am not investigating anything, precisely speaking."
+msgstr "Nói chính xác thì tớ không có điều tra gì hết đâu."
+#. どこかに葉隠君が隠れていないかと、
+#. 捜し回っているだけです。
+msgctxt "0003 | CELES"
+msgid ""
+"I am simply going around, seeing if Hiro might be\n"
+"hiding somewhere."
+msgstr ""
+"Tớ chỉ đơn giản là đi vòng quanh để xem liệu Hiro có đang\n"
+"trốn ở đâu đó không thôi."
+#. そう言うあなたは、
+#. どのような捜査をしているのですか？
+msgctxt "0004 | CELES"
+msgid "What about you?"
+msgstr "Còn cậu thì sao?"
+#. うーん、色々と調べ回っているところだけど…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Oh, you know...I'm just checking this and that..."
+msgstr "À, cậu biết đấy... tớ chỉ đang kiểm tra chỗ này chỗ kia chút thôi..."
+#. 特に、気になってるのは、
+#. 山田クンの死体を移動させた方法かな…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"The main thing on my mind is how someone could have\n"
+"moved Hifumi's body."
+msgstr ""
+"Điều chính yếu mà tớ đang bận tâm là làm cách nào mà ai đó có thể\n"
+"di chuyển được xác của Hifumi."
+#. 山田君の死体を移動させた方法…ですか…
+msgctxt "0007 | CELES"
+msgid "How Hifumi was moved, eh?"
+msgstr "Làm thế nào để di chuyển Hifumi sao?"
+#. 山田クンの死体が消えた時、
+#. セレスさんは保健室に残ってたんだよね？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"When it disappeared, you were supposed to be in the\n"
+"nurse's office, right?"
+msgstr ""
+"Lúc cái xác biến mất, đáng lẽ cậu đang ở trong\n"
+"phòng y tế mà, đúng không?"
+#. 朝日奈さんの気分が悪そうでしたので、
+#. わたくしが付き添いで残ったのです。
+msgctxt "0009 | CELES"
+msgid ""
+"Correct. Hina was not feeling well, so I stayed behind\n"
+"to look after her."
+msgstr ""
+"Chính xác. Vì Hina cảm thấy không khỏe nên tớ đã ở lại\n"
+"để chăm sóc cô ấy."
+#. ですが、あまりに気分が悪そうなので、
+#. わたくしは彼女をトイレに連れていったのです。
+msgctxt "0010 | CELES"
+msgid ""
+"But she seemed to be getting worse, so I took her to\n"
+"the bathroom."
+msgstr ""
+"Nhưng trông cô ấy có vẻ tệ hơn, nên tớ đã đưa cô ấy đi\n"
+"vệ sinh."
+#. それで…戻って来た時に、
+#. 死体がなくなってた…？
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "And when you got back, the body was gone?"
+msgstr "Và khi cậu quay lại thì cái xác đã biến mất rồi sao?"
+#. ですが、わたくし達が目を離したのは、
+#. ほんの１分程度でしたわよ。
+msgctxt "0012 | CELES"
+msgid ""
+"We could not have been gone for more than a minute or\n"
+"two, though."
+msgstr ""
+"Dù vậy, chúng tớ đi chưa đầy một hoặc\n"
+"hai phút đâu."
+#. <CLT 4>確かに、朝日奈さんも同じような事言ってたな。
+#. だとすると…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Yeah, Hina said the same thing.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Phải, Hina cũng nói điều tương tự.\n"
+"<CLT>"
+#. 犯人は、その１分程度の間に、
+#. 山田クンの死体を運び出したって事…？
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"So then, the killer was able to get in and move\n"
+"Hifumi's body in that short amount of time?"
+msgstr ""
+"Vậy nghĩa là hung thủ đã có thể lẻn vào và di chuyển\n"
+"xác của Hifumi chỉ trong khoảng thời gian ngắn ngủi đó sao?"
+#. そうなりますわね。
+msgctxt "0015 | CELES"
+msgid "It would seem so..."
+msgstr "Có vẻ là như vậy..."
+#. <CLT 4>あの山田クンの巨体を、
+#. たった１分程度の間に運び出すなんて…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To carry off someone as big as Hifumi in only a couple\n"
+"of minutes is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Việc mang một người to lớn như Hifumi đi chỉ trong vòng vài\n"
+"phút thực sự là...\n"
+"<CLT>"
+#. <CLT 4>ますます、不可能としか思えないな。
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't think of it as anything less than impossible.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ không thể nghĩ gì khác ngoài việc đó là điều không thể.\n"
+"<CLT>"
+#. <CLT 23><CLT><CLT 3>セレスの証言<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0018 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Celeste's Account<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Lời khai của Celeste<CLT><CLT 23>\" đã được thêm vào phần Đạn\n"
+"Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+#. 山田クンの死体が消えた時は
+#. セレスさんは保健室に残ってたんだよね？
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"When it disappeared, you were supposed to be in the\n"
+"nurse's office, right?"
+msgstr ""
+"Lúc cái xác biến mất, đáng lẽ cậu đang ở trong\n"
+"phòng y tế mà, đúng không?"
+#. 朝日奈さんの気分が悪そうでしたので、
+#. わたくしが付き添いで残ったのです。
+msgctxt "0020 | CELES"
+msgid ""
+"Correct. Hina was not feeling well, so I stayed behind\n"
+"to look after her."
+msgstr ""
+"Chính xác. Vì Hina cảm thấy không khỏe nên tớ đã ở lại\n"
+"để chăm sóc cô ấy."
+#. ですが、あまりに気分が悪そうなので、
+#. わたくしは彼女をトイレに連れていったのです。
+msgctxt "0021 | CELES"
+msgid ""
+"But she seemed to be getting worse, so I took her to\n"
+"the bathroom."
+msgstr ""
+"Nhưng trông cô ấy có vẻ tệ hơn, nên tớ đã đưa cô ấy đi\n"
+"vệ sinh."
+#. それで…戻って来た時に、
+#. 死体がなくなってた…？
+msgctxt "0022 | MAKOTO NAEGI"
+msgid "And when you got back, the body was gone?"
+msgstr "Và khi cậu quay lại thì cái xác đã biến mất rồi sao?"
+#. ですが、わたくし達が目を離したのは、
+#. ほんの１分程度でしたわよ。
+msgctxt "0023 | CELES"
+msgid ""
+"We could not have been gone for more than a minute or\n"
+"two, though."
+msgstr ""
+"Dù vậy, chúng tớ đi chưa đầy một hoặc\n"
+"hai phút đâu."
+#. <CLT 4>確かに、朝日奈さんも同じような事言ってたな。
+#. だとすると…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Yeah, Hina said the same thing.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Phải, Hina cũng nói điều tương tự.\n"
+"<CLT>"
+#. 犯人は、その１分程度の間に、
+#. 山田クンの死体を運び出したって事…？
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"So then, the killer was able to get in and move\n"
+"Hifumi's body in that short amount of time?"
+msgstr ""
+"Vậy nghĩa là hung thủ đã có thể lẻn vào và di chuyển\n"
+"xác của Hifumi chỉ trong khoảng thời gian ngắn ngủi đó sao?"
+#. そうなりますわね。
+msgctxt "0026 | CELES"
+msgid "It would seem so..."
+msgstr "Có vẻ là như vậy..."
+#. <CLT 4>あの山田クンの巨体を１分程度の間に運び出すなんて…
+#. ますます不可能としか思えないな。
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To carry off someone as big as Hifumi in only a couple\n"
+"of minutes is nothing short of impossible...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Việc mang một người to lớn như Hifumi đi chỉ trong vòng vài\n"
+"phút không gì khác ngoài một điều không tưởng...\n"
+"<CLT>"
+#. <CLT 4>こんなモニターなんて…
+#. 今は、特にどうでもいいな。
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This monitor really doesn't matter right now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chiếc màn hình này thực sự không quan trọng vào lúc này...\n"
+"<CLT>"
+#. <CLT 4>こんな監視カメラ…
+#. 今は、気にしている場合じゃないな。
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This surveillance camera really doesn't matter right\n"
+"now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chiếc camera giám sát này thực sự không quan trọng vào lúc\n"
+"này...\n"
+"<CLT>"
+#. <CLT 4>普通のゴミ箱みたいだけど…
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's just a normal trash can.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó chỉ là một chiếc thùng rác bình thường thôi.\n"
+"<CLT>"
+#. <CLT 4>あれ…？　中に何か落ちているぞ。
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh? Wait...there's something inside.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hả? Khoan đã... có thứ gì đó bên trong này.\n"
+"<CLT>"
+#. <CLT 4>ハンカチにしてはサイズが小さいし、
+#. これは、<CLT><CLT 3>メガネ拭き<CLT><CLT 4>だな…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's too small to be a handkerchief. It's...a <CLT><CLT 3>glasses\n"
+"cleaning cloth<CLT><CLT 4>.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó quá nhỏ để là khăn tay. Nó là... một cái <CLT><CLT 3>khăn lau\n"
+"kính<CLT><CLT 4>.\n"
+"<CLT>"
+#. <CLT 4>何かのキャラクターものみたいだけど…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And it's got some kind of cartoon character on it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và nó còn in hình một nhân vật hoạt hình nào đó nữa...\n"
+"<CLT>"
+#. <CLT 4>それにしても、これ…！
+#. 血がべっとりと…！
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Augh, but it's also covered in blood...!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Á, nhưng nó cũng dính đầy máu nữa...!\n"
+"<CLT>"
+#. …何か見つけたのですか？
+msgctxt "0035 | CELES"
+msgid "Ah, did you find something?"
+msgstr "À, cậu đã tìm thấy gì sao?"
+#. うん、ゴミ箱の中に
+#. メガネ拭きがあったんだけどさ…
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "Yeah. There was a cleaning cloth in the trash can."
+msgstr "Ừ. Có một cái khăn lau kính trong thùng rác."
+#. メガネ拭き…？
+msgctxt "0037 | CELES"
+msgid "A cleaning cloth...?"
+msgstr "Một cái khăn lau kính sao?"
+#. しかも、血まで付着してたんだ。
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "And it's all bloody..."
+msgstr "Và nó dính đầy máu luôn..."
+#. きっと、誰かがこのメガネ拭きで、
+#. 血を拭いたんだろうけど…
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"Whoever this belonged to must have used it to wipe up\n"
+"some blood."
+msgstr ""
+"Bất kể chủ nhân của nó là ai chắc hẳn đã dùng nó để lau\n"
+"vết máu."
+#. 誰が、なんの為に、
+#. メガネ拭きなんかで血を拭いたんだろうね？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "But who would need to do something like that...?"
+msgstr "Nhưng ai lại cần phải làm điều gì đó như vậy chứ...?"
+#. 皆目、見当が付きませんわね…
+msgctxt "0041 | CELES"
+msgid "I haven't the slightest idea."
+msgstr "Tớ cũng không có ý niệm gì hết."
+#. <CLT 4>確かに見当は付かないけど…
+#. でも…何か気になるんだよな…
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Yeah, me either. But I think it might be important...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Phải, tớ cũng vậy. Nhưng tớ nghĩ nó có thể quan trọng đấy...\n"
+"<CLT>"
+#. <CLT 23><CLT><CLT 3>キャラクターもののメガネ拭き<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0043 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Glasses Cleaning Cloth<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Khăn lau kính<CLT><CLT 23>\" đã được thêm vào phần Đạn\n"
+"Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
+#. <CLT 4>普通のゴミ箱みたいだけど…中に…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's just a normal trash can. But inside...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó chỉ là một chiếc thùng rác bình thường. Nhưng bên trong...\n"
+"<CLT>"
+#. <CLT 4>ハンカチにしてはサイズが小さい。
+#. これは、メガネ拭きだな…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's too small to be a handkerchief. It's...a glasses\n"
+"cleaning cloth.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó quá nhỏ để là khăn tay. Nó là... một cái khăn lau\n"
+"kính.\n"
+"<CLT>"
+#. <CLT 4>何かのキャラクターものみたいだ…
+#. キャラクターもののメガネ拭きって事か…
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It seems like some kind of cartoon character\n"
+"collectible type thing. Hmm...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như đây là một loại vật phẩm in hình nhân vật hoạt\n"
+"hình để sưu tầm. Hừm...\n"
+"<CLT>"
+#. <CLT 4>しかも、血がべっとり付いてる…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And it's all bloody...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và nó dính đầy máu luôn...\n"
+"<CLT>"
+#. <CLT 4>でも、誰がなんの為に、
+#. メガネ拭きなんかで血を拭いたんだろう？
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But why would anyone need to do that...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng tại sao có người lại cần làm như vậy nhỉ...?\n"
+"<CLT>"
+#. <CLT 4>冷蔵庫だ…
+#. 中に飲み物でも入ってるのかな？
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A refrigerator... I wonder if there's anything to\n"
+"drink inside.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Một chiếc tủ lạnh... Tớ tự hỏi không biết có gì để\n"
+"uống bên trong không nhỉ.\n"
+"<CLT>"
+#. <CLT 4>緊張したせいで喉が渇いた気もするし、
+#. ちょっと中を見てみよう…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After everything I've been through, I'm totally\n"
+"parched. Maybe just a quick peek...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sau tất cả những chuyện đã trải qua, tớ khát khô cả cổ rồi.\n"
+"Có lẽ chỉ liếc nhìn một cái thôi...\n"
+"<CLT>"
+#. ………………
+msgctxt "0051 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>輸血用の血液が、
+#. 大量に保管されてるだけだ。
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a bunch of blood packets in here. For blood\n"
+"transfusions, I guess...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có một đống túi máu ở đây. Chắc là dùng để\n"
+"truyền máu đây mà...\n"
+"<CLT>"
+#. <CLT 4>吸血鬼じゃあるまいし、
+#. これじゃあ、喉の渇きは癒せないな…
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It doesn't help me, though. I'm not a vampire...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Dù vậy nó chẳng giúp ích gì cho tớ. Tớ có phải ma cà rồng đâu...\n"
+"<CLT>"
+#. <CLT 4>この冷蔵庫には、
+#. 輸血用の血液が大量に保管されているのか…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Inside the fridge there are a bunch of blood packets,\n"
+"probably for transfusions.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bên trong tủ lạnh có rất nhiều túi máu, có lẽ\n"
+"là dùng để truyền máu.\n"
+"<CLT>"
+#. <CLT 4><CLT><CLT 3>ジャスティスハンマー３号<CLT><CLT 4>…
+#. 山田クンを襲ったハンマーだ。<CLT>
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4><CLT><CLT 3>Justice Hammer 3<CLT><CLT 4>... The one that was used to kill\n"
+"Hifumi...<CLT>"
+msgstr ""
+"<CLT 4><CLT><CLT 3>Búa Công Lý số 3<CLT><CLT 4>... Cái búa đã được dùng để giết\n"
+"Hifumi...<CLT>"
+#. <CLT 4>死体は移動させられたけど、
+#. 凶器は残されたままなんだな…
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Someone moved the body, but left the weapon behind...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có kẻ đã di chuyển cái xác, nhưng lại bỏ lại vũ khí ở đây...\n"
+"<CLT>"
+#. はい
+msgctxt "0057 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+#. いいえ
+msgctxt "0058 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0059 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT>"
+#. <CLT 4>まだ、調べる事がありそうだ…
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I feel like there's more for me to look at here...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ cảm thấy dường như vẫn còn điều gì đó để kiểm tra ở đây...\n"
+"<CLT>"

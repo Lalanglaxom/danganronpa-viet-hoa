@@ -19,7 +19,8 @@ msgid ""
 "I was sleeping right here when the killer carried the\n"
 "body away!"
 msgstr ""
-
+"Tôi đã ngủ ngay tại đây khi tên sát nhân mang\n"
+"cái xác đi đấy!"
 #. 残念だわぁ、そんなアルティメットレアなシーンを
 #. 見逃しちゃうなんて～ん！
 msgctxt "0002 | TOUKO FUKAWA"
@@ -27,7 +28,8 @@ msgid ""
 "I'm super pissed I missed such an ultimately rare\n"
 "event!"
 msgstr ""
-
+"Tôi cực kỳ bực mình vì đã bỏ lỡ một sự kiện\n"
+"siêu cấp hiếm có như thế!"
 #. こんな物を気にしてる場合じゃない。
 #. 放っておこう。
 msgctxt "0003 | MAKOTO NAEGI"
@@ -35,7 +37,8 @@ msgid ""
 "This isn't important to the case. I need to just\n"
 "forget about it."
 msgstr ""
-
+"Điều này không quan trọng đối với vụ án. Tớ chỉ cần\n"
+"quên nó đi thôi."
 #. <CLT 4>今はこんな物を気にしている場合じゃない。
 #. 放っておこう。
 #. <CLT>
@@ -45,7 +48,9 @@ msgid ""
 "forget about it for now.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Điều này không quan trọng đối với vụ án. Tạm thời mình cần\n"
+"quên nó đi đã.\n"
+"<CLT>"
 #. <CLT 4>あれ、こういうビニールシート…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -53,7 +58,8 @@ msgid ""
 "<CLT 4>Huh? This tarp...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Hả? Tấm bạt này...\n"
+"<CLT>"
 #. <CLT 4>どこかで見たよな。
 #. しかも、ごく最近…
 #. <CLT>
@@ -63,7 +69,9 @@ msgid ""
 "recently, too...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Tớ cảm giác như mình đã thấy nó ở đâu đó trước đây. Và cũng\n"
+"chỉ mới gần đây thôi...\n"
+"<CLT>"
 #. <CLT 4>部屋の中央の血だまりから、
 #. 車輪らしき跡が伸びている…
 #. <CLT>
@@ -73,7 +81,9 @@ msgid ""
 "of blood in the middle of the room.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có một loại vết bánh xe đi xuyên qua vũng\n"
+"máu ở giữa căn phòng.\n"
+"<CLT>"
 #. <CLT 4>そう言えば、美術倉庫にあった台車のタイヤって…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -82,7 +92,9 @@ msgid ""
 "repository...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chuyện đó làm tớ nhớ ra... Về chiếc xe đẩy trong\n"
+"phòng kho...\n"
+"<CLT>"
 #. <CLT 4>そうだ…あのタイヤには血痕が付着してたんだ。
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -90,7 +102,8 @@ msgid ""
 "<CLT 4>There was blood on its tire...!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đã có máu dính trên bánh xe của nó...!\n"
+"<CLT>"
 #. <CLT 4>ひょっとすると、あのタイヤに付いてた血痕って…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -98,7 +111,8 @@ msgid ""
 "<CLT 4>Could that blood have come from...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Liệu vết máu đó có phải đến từ...\n"
+"<CLT>"
 #. <CLT 4>ここの血痕…？
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -106,7 +120,8 @@ msgid ""
 "<CLT 4>...here?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...đây không?\n"
+"<CLT>"
 #. とすると、石丸クンの死体は、あの台車を使って、
 #. この物理準備室から美術倉庫まで運ばれたのかも…
 msgctxt "0012 | MAKOTO NAEGI"
@@ -114,7 +129,8 @@ msgid ""
 "Which could mean that Taka's body was moved from the\n"
 "equipment room to the repository using the dolly..."
 msgstr ""
-
+"Điều đó có nghĩa là xác của Taka đã được chuyển từ\n"
+"phòng chuẩn bị sang phòng kho bằng xe đẩy..."
 #. <CLT 4>どちらも、同じ３階にある部屋だから、
 #. 台車を使った運搬は可能だったはずだよな。
 #. <CLT>
@@ -124,7 +140,9 @@ msgid ""
 "definitely have been possible.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó\n"
+"chắc chắn là khả thi.\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>物理準備室の血痕<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -134,7 +152,9 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>\"<CLT><CLT 3>Vết máu phòng chuẩn bị<CLT><CLT 23>\" đã được thêm vào phần\n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. <CLT 4>でも、石丸クンの死体が
 #. 台車で運ばれたんだとしても…
 #. <CLT>
@@ -144,7 +164,9 @@ msgid ""
 "body...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng để di chuyển\n"
+"xác của Taka...\n"
+"<CLT>"
 #. <CLT 4>じゃあ、もう一方の山田クンの死体の運搬は、
 #. どうやったんだ？
 #. <CLT>
@@ -153,7 +175,8 @@ msgid ""
 "<CLT 4>...what about Hifumi?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...vậy còn Hifumi thì sao?\n"
+"<CLT>"
 #. <CLT 4>山田クンの死体があったのは１階の保健室だ。
 #. 台車を使っても、１階から３階に運ぶのは不可能だし…
 #. <CLT>
@@ -163,12 +186,13 @@ msgid ""
 "way to get it up to the 3rd floor...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cậu ấy đã ở tầng 1. Ngay cả khi dùng xe đẩy, cũng chẳng có\n"
+"cách nào đưa nó lên tầng 3 được...\n"
+"<CLT>"
 #. 謎…だな…
 msgctxt "0018 | MAKOTO NAEGI"
 msgid "That's still a total mystery..."
-msgstr ""
-
+msgstr "Đó vẫn còn là một bí ẩn hoàn toàn..."
 #. <CLT 4>石丸クンの死体は、あの台車を使って、
 #. この物理準備室から美術倉庫まで運ばれたのかも…
 #. <CLT>
@@ -178,7 +202,9 @@ msgid ""
 "room to the repository using the dolly...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Xác của Taka có thể đã được chuyển từ phòng chuẩn bị\n"
+"sang phòng kho bằng xe đẩy...\n"
+"<CLT>"
 #. <CLT 4>どちらも同じ３階にある部屋だから、
 #. 台車を使った運搬は可能だったはずだよな。
 #. <CLT>
@@ -188,7 +214,9 @@ msgid ""
 "definitely have been possible.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó\n"
+"chắc chắn là khả thi.\n"
+"<CLT>"
 #. <CLT 4>でも、石丸クンの死体が
 #. 台車で運ばれたんだとしても…
 #. <CLT>
@@ -198,7 +226,9 @@ msgid ""
 "body...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng để di chuyển\n"
+"xác của Taka...\n"
+"<CLT>"
 #. <CLT 4>じゃあ、もう一方の山田クンの死体の運搬は、
 #. どうやったんだ？
 #. <CLT>
@@ -207,7 +237,8 @@ msgid ""
 "<CLT 4>...what about Hifumi?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...vậy còn Hifumi thì sao?\n"
+"<CLT>"
 #. <CLT 4>山田クンの死体があったのは、１階の保健室だ。
 #. 台車を使っても、１階から３階に運ぶのは不可能だし…
 #. <CLT>
@@ -217,12 +248,13 @@ msgid ""
 "way to get it up to the 3rd floor...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cậu ấy đã ở tầng 1. Ngay cả khi dùng xe đẩy, cũng chẳng có\n"
+"cách nào đưa nó lên tầng 3 được...\n"
+"<CLT>"
 #. 謎…だな…
 msgctxt "0024 | MAKOTO NAEGI"
 msgid "That's still a total mystery..."
-msgstr ""
-
+msgstr "Đó vẫn còn là một bí ẩn hoàn toàn..."
 #. <CLT 4>ジャスティスハンマー４号…
 #. 石丸クンを襲ったハンマーだ。
 #. <CLT>
@@ -232,7 +264,9 @@ msgid ""
 "Taka...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Búa Công Lý số 4... Vũ khí đã được dùng để giết\n"
+"Taka...\n"
+"<CLT>"
 #. <CLT 4>死体は移動させられたけど、
 #. ここの凶器は、残されたままなんだな…
 #. <CLT>
@@ -242,7 +276,9 @@ msgid ""
 "left here...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cái xác đã bị di dời, nhưng vũ khí giết người thì lại bị\n"
+"bỏ lại đây...\n"
+"<CLT>"
 #. <CLT 4>部屋の中央の血だまりから、
 #. 車輪らしき跡が伸びている…
 #. <CLT>
@@ -252,7 +288,9 @@ msgid ""
 "of blood in the middle of the room.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Có một loại vết bánh xe đi xuyên qua vũng\n"
+"máu ở giữa căn phòng.\n"
+"<CLT>"
 #. <CLT 4>そう言えば、美術倉庫にあった台車のタイヤって…
 #. <CLT>
 msgctxt "0028 | MAKOTO NAEGI"
@@ -261,7 +299,9 @@ msgid ""
 "repository...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chuyện đó làm tớ nhớ ra... Về chiếc xe đẩy trong\n"
+"phòng kho...\n"
+"<CLT>"
 #. <CLT 4>そうだ…あのタイヤには血痕が付着してたんだ。
 #. <CLT>
 msgctxt "0029 | MAKOTO NAEGI"
@@ -269,7 +309,8 @@ msgid ""
 "<CLT 4>There was blood on its tire...!\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đã có máu dính trên bánh xe của nó...!\n"
+"<CLT>"
 #. <CLT 4>ひょっとすると、あのタイヤに付いてた血痕って…
 #. <CLT>
 msgctxt "0030 | MAKOTO NAEGI"
@@ -277,7 +318,8 @@ msgid ""
 "<CLT 4>Could that blood have come from...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Liệu vết máu đó có phải đến từ...\n"
+"<CLT>"
 #. <CLT 4>ここの血痕…？
 #. <CLT>
 msgctxt "0031 | MAKOTO NAEGI"
@@ -285,7 +327,8 @@ msgid ""
 "<CLT 4>...here?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...đây không?\n"
+"<CLT>"
 #. とすると、石丸クンの死体は、あの台車を使って、
 #. この物理準備室から美術倉庫まで運ばれたのかも…
 msgctxt "0032 | MAKOTO NAEGI"
@@ -293,7 +336,8 @@ msgid ""
 "Which could mean that Taka's body was moved from the\n"
 "equipment room to the repository using the dolly..."
 msgstr ""
-
+"Điều đó có nghĩa là xác của Taka đã được chuyển từ\n"
+"phòng chuẩn bị sang phòng kho bằng xe đẩy..."
 #. <CLT 4>どちらも、同じ３階にある部屋だから、
 #. 台車を使った運搬は可能だったはずだ。
 #. <CLT>
@@ -303,7 +347,9 @@ msgid ""
 "definitely have been possible.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó\n"
+"chắc chắn là khả thi.\n"
+"<CLT>"
 #. <CLT 23><CLT><CLT 3>物理準備室の血痕<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -313,7 +359,9 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 23>\"<CLT><CLT 3>Vết máu phòng chuẩn bị<CLT><CLT 23>\" đã được thêm vào phần\n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
+"<CLT>"
 #. <CLT 4>でも、石丸クンの死体が
 #. 台車で運ばれたんだとしても…
 #. <CLT>
@@ -323,7 +371,9 @@ msgid ""
 "body...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng để di chuyển\n"
+"xác của Taka...\n"
+"<CLT>"
 #. <CLT 4>じゃあ、もう一方の山田クンの死体の運搬は、
 #. どうやったんだ？
 #. <CLT>
@@ -332,7 +382,8 @@ msgid ""
 "<CLT 4>...what about Hifumi?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...vậy còn Hifumi thì sao?\n"
+"<CLT>"
 #. <CLT 4>山田クンの死体があったのは、
 #. １階の保健室だ。
 #. <CLT>
@@ -342,7 +393,8 @@ msgid ""
 "floor.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Xác của Hifumi đã ở trong phòng y tế tại tầng 1.\n"
+"<CLT>"
 #. <CLT 4>台車を使っても、
 #. １階から３階に運ぶのは不可能だし…
 #. <CLT>
@@ -352,12 +404,13 @@ msgid ""
 "3rd floor...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Ngay cả khi dùng xe đẩy, cũng chẳng có cách nào đưa nó lên\n"
+"tầng 3 được...\n"
+"<CLT>"
 #. 謎…だな…
 msgctxt "0039 | MAKOTO NAEGI"
 msgid "That's still a total mystery..."
-msgstr ""
-
+msgstr "Đó vẫn còn là một bí ẩn hoàn toàn..."
 #. 石丸クンの死体は、あの台車を使って、
 #. この物理準備室から美術倉庫まで運ばれたのかも…
 msgctxt "0040 | MAKOTO NAEGI"
@@ -365,7 +418,8 @@ msgid ""
 "Taka's body may have been moved from the equipment\n"
 "room to the repository using the dolly..."
 msgstr ""
-
+"Xác của Taka có thể đã được chuyển từ phòng chuẩn bị\n"
+"sang phòng kho bằng xe đẩy..."
 #. <CLT 4>どちらも、同じ３階にある部屋だから、
 #. 台車を使った運搬は可能だったはずだ。
 #. <CLT>
@@ -375,7 +429,9 @@ msgid ""
 "definitely have been possible.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó\n"
+"chắc chắn là khả thi.\n"
+"<CLT>"
 #. <CLT 4>でも、石丸クンの死体が
 #. 台車で運ばれたんだとしても…
 #. <CLT>
@@ -385,7 +441,9 @@ msgid ""
 "body...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng để di chuyển\n"
+"xác của Taka...\n"
+"<CLT>"
 #. <CLT 4>じゃあ、もう一方の山田クンの死体の運搬は、
 #. どうやったんだ？
 #. <CLT>
@@ -394,7 +452,8 @@ msgid ""
 "<CLT 4>...what about Hifumi?\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...vậy còn Hifumi thì sao?\n"
+"<CLT>"
 #. <CLT 4>山田クンの死体があったのは、１階の保健室だ。
 #. 台車を使っても、１階から３階に運ぶのは不可能だし…
 #. <CLT>
@@ -404,22 +463,21 @@ msgid ""
 "way to get it up to the 3rd floor...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Cậu ấy đã ở tầng 1. Ngay cả khi dùng xe đẩy, cũng chẳng có\n"
+"cách nào đưa nó lên tầng 3 được...\n"
+"<CLT>"
 #. 謎…だな…
 msgctxt "0045 | MAKOTO NAEGI"
 msgid "That's still a total mystery..."
-msgstr ""
-
+msgstr "Đó vẫn còn là một bí ẩn hoàn toàn..."
 #. はい
 msgctxt "0046 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
-
+msgstr "Có"
 #. いいえ
 msgctxt "0047 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
-
+msgstr "Không"
 #. <CLT 23>物理準備室から出ますか？
 #. <CLT>
 msgctxt "0048 | NARRATION"
@@ -427,3 +485,5 @@ msgid ""
 "<CLT 23>Leave the equipment room?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi phòng chuẩn bị?\n"
+"<CLT>"

@@ -36,7 +36,8 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-
+"Điều này không quan trọng đối với vụ án. Tớ chỉ cần\n"
+"quên nó đi thôi."
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -45,7 +46,9 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Điều này không quan trọng đối với vụ án. Tạm thời mình cần\n"
+"quên nó đi đã.\n"
+"<CLT>"
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
@@ -73,7 +76,9 @@ msgid ""
 "don't have any way to get past the gate...\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Chuyện đó làm tớ nhớ ra... Về chiếc xe đẩy trong\n"
+"phòng kho...\n"
+"<CLT>"
 #. <CLT 4>でも、事件には関係なさそうだな…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -81,7 +86,8 @@ msgid ""
 "<CLT 4>But it doesn't seem related to the case, anyway.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Đã có máu dính trên bánh xe của nó...!\n"
+"<CLT>"
 #. <CLT 4>鉄格子の開閉スイッチだ…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -89,7 +95,8 @@ msgid ""
 "<CLT 4>It's the switch that raises and lowers the gate.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>Liệu vết máu đó có phải đến từ...\n"
+"<CLT>"
 #. <CLT 4>ボクは鍵を持ってないから、開けられない…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -97,7 +104,8 @@ msgid ""
 "<CLT 4>I don't have the key, so I can't activate it.\n"
 "<CLT>"
 msgstr ""
-
+"<CLT 4>...đây không?\n"
+"<CLT>"
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0012 | NARRATION"
@@ -111,7 +119,9 @@ msgstr ""
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr ""
-
+"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó\n"
+"chắc chắn là khả thi.\n"
+"<CLT>"
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"

@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. おい、お前ら…
+msgctxt "0001 | NO NAME"
+msgid "Hey, you two..."
+msgstr "Này, hai người kia..."
+#. …どうした、なんの騒ぎだ？
+msgctxt "0002 | BYAKUYA TOGAMI"
+msgid "What's going on? What's all the fuss?"
+msgstr "Có chuyện gì vậy? Sao mà ồn ào thế?"
+#. およよ？　何して遊んでんのッ！？
+msgctxt "0003 | TOUKO FUKAWA"
+msgid "Yeah! You guys playin' a game or something!?"
+msgstr "Đúng đó! Các người đang chơi trò gì hay sao vậy!?"
+#. どう見たら、遊んでんのよッ！？
+msgctxt "0004 | AOI ASAHINA"
+msgid "Does it freaking LOOK like we're playing a game!?"
+msgstr "Nhìn tui giống như đang chơi đùa lắm hả!?"
+#. そんな事より、
+#. 霧切さんか山田クンを見かけなかった！？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Listen, have either of you seen Kyoko or Hifumi?"
+msgstr "Nghe này, hai người có thấy Kyoko hay Hifumi đâu không?"
+#. ないない、見てない。
+msgctxt "0006 | TOUKO FUKAWA"
+msgid "Nope nope, sure haven't!"
+msgstr "Không không, tôi chẳng thấy ai hết!"
+#. この階にいるのか？
+#. だが、俺達も今来たばかりでな…
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid "Are they on this floor? We just got here ourselves."
+msgstr "Họ ở tầng này à? Tôi cũng vừa mới tới đây thôi."
+#. 騒ぎが聞こえたんで、
+#. 駆けつけて来たんだよ。
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid "I heard some kind of uproar, so I came running."
+msgstr "Tôi nghe thấy tiếng náo động nên mới chạy đến xem sao."
+#. 一緒にね！
+msgctxt "0009 | TOUKO FUKAWA"
+msgid "We came here together!"
+msgstr "Chúng tôi đi cùng nhau đó!"
+#. お前がストーキングしているだけだろう…
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgid "No...you're just stalking me."
+msgstr "Không... cậu chỉ đang bám đuôi tôi thôi."
+#. と、とにかく！
+#. 一緒に２人を捜して欲しいんだ！
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "A-Anyway, can you guys help us look for them?"
+msgstr "D-Dù sao thì, hai người giúp bọn mình tìm họ được không?"
+#. 何があった…？
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid "Why? What happened?"
+msgstr "Tại sao? Đã có chuyện gì?"
+#. 今は一刻を争う。説明は後だ。
+msgctxt "0013 | SAKURA OOGAMI"
+msgid "There's no time now. We'll explain later."
+msgstr "Giờ không còn thời gian đâu. Tôi sẽ giải thích sau."
+#. …まぁ、いいだろう。
+#. 何やら面白い事になっているようだしな。
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid ""
+"Well...fine. It sounds like something interesting is\n"
+"going on."
+msgstr ""
+"Chà... được thôi. Nghe có vẻ như có chuyện gì đó thú vị\n"
+"đang diễn ra đấy."
+#. 山田ーッ！！　霧切ちゃーん！！
+#. 聞こえてたら返事してーッ！！
+msgctxt "0015 | AOI ASAHINA"
+msgid "HIFUMI! KYOKO! If you can hear me, say something!"
+msgstr "HIFUMI! KYOKO! Nếu nghe thấy tui thì trả lời đi chứ!"
+#. <CLT 4>だけど、その声は虚しく廊下に響くだけ……
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Her voice echoed down the hall in vain...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tiếng gọi của bà ấy vang vọng dọc hành lang trong vô vọng...\n"
+"<CLT>"
+#. むっ…？
+msgctxt "0017 | SAKURA OOGAMI"
+msgid "Hm...?"
+msgstr "Hử...?"
+#. 何か聞こえましたか？
+msgctxt "0018 | CELES"
+msgid "Did you hear something?"
+msgstr "Cậu có nghe thấy gì không?"
+#. うっすらとだが…
+msgctxt "0019 | SAKURA OOGAMI"
+msgid "Maybe..."
+msgstr "Có lẽ là có..."
+#. おそらく…図書室の方だ…！
+msgctxt "0020 | SAKURA OOGAMI"
+msgid "I think it came from...the library!"
+msgstr "Tôi nghĩ nó phát ra từ... thư viện!"
+#. 図書室だね、急ごうッ！！
+msgctxt "0021 | AOI ASAHINA"
+msgid "The library!? Okay, let's go!"
+msgstr "Thư viện sao!? Được rồi, đi thôi!"
+#. <CLT 4>ボクらは一目散に、図書室へと走った。
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>We ran to the library as fast as our legs would carry\n"
+"us.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chúng tôi chạy đến thư viện nhanh hết mức có thể.\n"
+"<CLT>"

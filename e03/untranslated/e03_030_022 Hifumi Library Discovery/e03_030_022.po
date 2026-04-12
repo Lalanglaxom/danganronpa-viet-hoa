@@ -1,0 +1,539 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 4>図書室のドアを開けると…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>When we opened the door to the library...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Khi chúng tôi mở cánh cửa dẫn vào thư viện...\n"
+"<CLT>"
+#. うう…痛い…痛いよ…
+msgctxt "0002 | HIFUMI YAMADA"
+msgid "Gh... It hurts...it hurts...!"
+msgstr "Ư... đau quá... đau quá...!"
+#. <CLT 4>…そこには、傷付いた山田クンの姿があった。
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...we found Hifumi, seriously injured.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...chúng tôi tìm thấy Hifumi, cậu ấy bị thương rất nặng.\n"
+"<CLT>"
+#. だ、大丈夫！？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "A-Are you okay!?"
+msgstr "C-Cậu có sao không!?"
+#. でも…生きてたんだ…
+#. よかったぁ……
+msgctxt "0005 | AOI ASAHINA"
+msgid "I'm glad to see...you're still alive..."
+msgstr "Tui mừng quá... ông vẫn còn sống..."
+#. よくないですよ…
+#. 見てください、この血を…
+msgctxt "0006 | HIFUMI YAMADA"
+msgid "It's super bad, though... Look at all the blood..."
+msgstr "Tệ cực kỳ luôn ấy... Nhìn đống máu này đi..."
+#. その傷はどうしたんだ…？
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid "How did you get hurt?"
+msgstr "Cậu bị thương như thế nào?"
+#. やられました…あいつに…
+msgctxt "0008 | HIFUMI YAMADA"
+msgid "That guy hit me..."
+msgstr "Gã đó đã đánh tôi..."
+#. あいつって…？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "What guy?"
+msgstr "Gã nào cơ?"
+#. <CLT 3>ジャスティスロボ<CLT>です…
+#. 今しがた僕が命名しました…
+msgctxt "0010 | HIFUMI YAMADA"
+msgid ""
+"<CLT 3>Robo Justice<CLT>. Er, that's what I decided to call him,\n"
+"just now..."
+msgstr ""
+"<CLT 3>Người Máy Công Lý<CLT>. Ờ, đó là cái tên tôi vừa mới đặt cho hắn,\n"
+"ngay lúc này luôn..."
+#. 何を…言っている…？
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "What are you talking about...?"
+msgstr "Cậu đang nói cái quái gì vậy...?"
+#. あい、あいつは…ジャスティスロボです…
+msgctxt "0012 | HIFUMI YAMADA"
+msgid "Th-That guy was...Robo Justice..."
+msgstr "G-Gã đó là... Người Máy Công Lý..."
+#. あなたが言うジャスティスロボとは…
+#. これの事ですわよね？
+msgctxt "0013 | CELES"
+msgid ""
+"This \"Robo Justice\" you are referring to is...this, is\n"
+"it not?"
+msgstr ""
+"Cái tên \"Người Máy Công Lý\" mà cậu đang nhắc tới là... cái này, có đúng\n"
+"không?"
+#. な、なんだ…このトンデモ物体は…！？
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid "Wh-What the hell am I looking at...?"
+msgstr "C-Cái thứ quái quỷ gì đang hiện ra trước mắt tôi thế này!?"
+#. これが、セレスさんと山田クンを襲った犯人…
+msgctxt "0015 | MAKOTO NAEGI"
+msgid "This is the one that attacked Celeste and Hifumi."
+msgstr "Đây chính là kẻ đã tấn công Celeste và Hifumi."
+#. そうだよね、山田クン？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "Isn't that right, Hifumi?"
+msgstr "Có đúng không, Hifumi?"
+#. 間違いありません、こいつです…
+msgctxt "0017 | HIFUMI YAMADA"
+msgid "Yeah...that's him, I'm sure of it..."
+msgstr "Vâng... chính là hắn, tôi chắc chắn luôn..."
+#. ジャスティスロボですッ！！
+msgctxt "0018 | HIFUMI YAMADA"
+msgid "Robo Justice...!"
+msgstr "Người Máy Công Lý!"
+#. ジャスティスロボ…だと？
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid "Robo Justice, huh...?"
+msgstr "Người Máy Công Lý sao...?"
+#. 何やら妙な事になってきたな…
+msgctxt "0020 | SAKURA OOGAMI"
+msgid "This just keeps getting stranger..."
+msgstr "Chuyện này càng lúc càng trở nên kỳ lạ hơn rồi đấy..."
+#. あいつは…ジャスティスロボです…
+msgctxt "0021 | HIFUMI YAMADA"
+msgid "He's...Robo Justice..."
+msgstr "Hắn là... Người Máy Công Lý..."
+#. ジャスティスロボ…だと？
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgid "Robo Justice, huh...?"
+msgstr "Người Máy Công Lý sao...?"
+#. 何やら妙な事になってきたな…
+msgctxt "0023 | SAKURA OOGAMI"
+msgid "This just keeps getting stranger..."
+msgstr "Chuyện này càng lúc càng trở nên kỳ lạ hơn rồi đấy..."
+#. ジャスティスロボ…だと…？
+msgctxt "0024 | BYAKUYA TOGAMI"
+msgid "Robo Justice...?"
+msgstr "Người Máy Công Lý sao...?"
+#. 山田が生きててよかったけど…
+#. ジャスティスロボって？
+msgctxt "0025 | AOI ASAHINA"
+msgid ""
+"I'm seriously happy Hifumi's still alive, but...Robo\n"
+"Justice?"
+msgstr "Tui thực sự rất vui vì Hifumi vẫn còn sống, nhưng... Người Máy Công Lý sao?"
+#. おいっ、そこケガしてんじゃんッ！
+#. ゲラゲラゲラ…！
+msgctxt "0026 | TOUKO FUKAWA"
+msgid "Whoa! Fatboy took a serious shellacking! Kyeehahaha!"
+msgstr "Oa! Gã mập đó bị ăn hành ra bã luôn kìa! Heh heh heh!"
+#. 何やら…妙な事になってきたな…
+msgctxt "0027 | SAKURA OOGAMI"
+msgid "This just keeps getting stranger..."
+msgstr "Chuyện này càng lúc càng trở nên kỳ lạ hơn rồi đấy..."
+#. ひとまず…彼も生きていたようで
+#. よかったですわ…
+msgctxt "0028 | CELES"
+msgid "I am glad to see he is still alive..."
+msgstr "Tớ rất mừng khi thấy cậu ấy vẫn còn sống..."
+#. <CLT 4>モノクマが写るモニター…
+#. 今は校章が浮かんでいるだけだ…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on.\n"
+"Right now, it's just showing the school crest.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị biểu tượng của ngôi trường.\n"
+"<CLT>"
+#. 気にしてもしょうがない、放っておこう。
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"There's not much point in worrying about it now. I\n"
+"should try to just forget about it..."
+msgstr ""
+"Giờ có lo lắng về nó cũng chẳng giải quyết được gì. Mình\n"
+"nên cố gắng quên nó đi thôi..."
+#. <CLT 4>ここで何かあったなら、
+#. 監視カメラが見ているはずだけど…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If something happened here, the surveillance camera\n"
+"must have caught it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu có chuyện gì xảy ra ở đây, hẳn là camera giám sát\n"
+"đã ghi lại được.\n"
+"<CLT>"
+#. <CLT 4>…もちろん、教えてくれないんだろうな。
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Not that the mastermind would tell us if it did...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mặc dù kẻ chủ mưu chắc chắn sẽ không đời nào nói cho chúng ta biết...\n"
+"<CLT>"
+#. <CLT 4>山田クンが心配だ…
+#. 詳しい話を聞かないと…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm really worried about Hifumi. I'd better ask him\n"
+"for more details...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ thực sự lo cho Hifumi. Mình nên hỏi cậu ấy\n"
+"thêm chi tiết xem sao...\n"
+"<CLT>"
+#. <CLT 4>今は本棚なんかに
+#. 気を取られている場合じゃないな…
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Now's no time to be distracted by a bookshelf...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT>"
+#. <CLT 4>今は本棚なんかに
+#. 気を取られている場合じゃないな…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Now's no time to be distracted by a bookshelf...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT>"
+#. <CLT 4>今は本棚なんかに
+#. 気を取られている場合じゃないな…
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Now's no time to be distracted by a bookshelf...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT>"
+#. <CLT 4>机の上にはみっちりと埃が積もってる…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a thick layer of dust on top of the desk.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có một lớp bụi dày đặc bám trên mặt bàn.\n"
+"<CLT>"
+#. <CLT 4>この図書室は長い事、
+#. 放ったらかしになってたんだな…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It looks like this library's been neglected for a\n"
+"pretty long time.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như thư viện này đã bị bỏ hoang trong một\n"
+"khoảng thời gian khá dài rồi.\n"
+"<CLT>"
+#. <CLT 4>娯楽室でセレスさんを襲ったのと同じような木槌だ…
+#. しかも、この木槌…
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's a hammer, just like the one Celeste was attacked\n"
+"with in the rec room. But this one is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công Celeste\n"
+"trong phòng giải trí. Nhưng cây này thì...\n"
+"<CLT>"
+#. ジャスティスハンマー２号…？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "Justice Hammer 2...?"
+msgstr "Búa Công Lý số 2 sao...?"
+#. <CLT 4>しかも、娯楽室にあった物より、
+#. 一回り大きくなってる…！
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And on top of that...this one is actually a little\n"
+"bigger than the first one!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn\n"
+"cây đầu tiên một chút!\n"
+"<CLT>"
+#. そのハンマーで襲われたんです。
+#. 頭をゴチーンと…
+msgctxt "0042 | HIFUMI YAMADA"
+msgid ""
+"He attacked me with that hammer. He bonked me right on\n"
+"the head with it..."
+msgstr "Hắn đã tấn công tôi bằng cây búa đó. Hắn nện thẳng vào đầu tôi luôn..."
+#. こんなんで殴られて…よく平気だったね。
+msgctxt "0043 | AOI ASAHINA"
+msgid "A hammer that big, I'm surprised you're still okay..."
+msgstr "Bị đập bởi cây búa to thế kia mà ông vẫn ổn thì lạ thật đấy..."
+#. 平気じゃないですよ。血が出てますから…
+msgctxt "0044 | HIFUMI YAMADA"
+msgid "I'm *not* okay...! Look at all this blood..."
+msgstr "Tôi *không* có ổn đâu! Nhìn đống máu này đi..."
+#. 傷にはプロテインが効くぞ。飲むか？
+msgctxt "0045 | SAKURA OOGAMI"
+msgid ""
+"Protein helps heal wounds, you know. Would you like\n"
+"some?"
+msgstr "Protein giúp chữa lành vết thương đấy. Cậu có muốn dùng một ít không?"
+#. …そんな話は聞いた事ないですわ。
+#. あなただけじゃありません？
+msgctxt "0046 | CELES"
+msgid ""
+"...I have never heard such a thing. Are you sure it\n"
+"isn't just you?"
+msgstr "...Tớ chưa từng nghe thấy chuyện đó bao giờ. Có chắc là không phải chỉ mình cậu thấy thế không?"
+#. <CLT 4>娯楽室でセレスさんを襲ったのと同じような木槌だ。
+#. しかも、この木槌…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's a hammer, just like the one Celeste was attacked\n"
+"with in the rec room. But this one is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công Celeste\n"
+"trong phòng giải trí. Nhưng cây này thì...\n"
+"<CLT>"
+#. <CLT 4>ジャスティスハンマー２号…？
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Justice Hammer 2...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Búa Công Lý số 2 sao...?\n"
+"<CLT>"
+#. <CLT 4>しかも、娯楽室にあった物より、
+#. 一回り大きくなってる…！
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And on top of that...this one is actually a little\n"
+"bigger than the first one!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn\n"
+"cây đầu tiên một chút!\n"
+"<CLT>"
+#. <CLT 4>この手紙によれば…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>According to this letter...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Theo bức thư này thì...\n"
+"<CLT>"
+#. <CLT 4>希望ヶ峰学園は…
+#. すでに学校としての役割を終えていた。
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hope's Peak Academy had stopped functioning as a\n"
+"school.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Học viện Đỉnh Hy Vọng đã ngừng hoạt động như một\n"
+"ngôi trường.\n"
+"<CLT>"
+#. <CLT 4>しかも最近って訳じゃなくて、
+#. 下手すれば１年以上も前…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And what's more, it didn't even happen recently.\n"
+"Apparently it closed down over a year ago.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hơn nữa, chuyện này thậm chí không phải mới xảy ra gần đây.\n"
+"Rõ ràng là nó đã đóng cửa từ hơn một năm trước rồi.\n"
+"<CLT>"
+#. <CLT 4>きっと、黒幕は無人になった希望ヶ峰学園を乗っ取り、
+#. このコロシアイ学園生活の舞台を作り上げたんだ…
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind probably took over the abandoned school\n"
+"in order to start this \"killing game\"...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Kẻ chủ mưu có lẽ đã chiếm đoạt ngôi trường bị bỏ hoang này\n"
+"để bắt đầu \"trò chơi sinh tử\" này...\n"
+"<CLT>"
+#. <CLT 4>学園内にボク達以外の生徒がいない理由は、
+#. この学園がすでに閉鎖されていたから…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which explains why there aren't any other students\n"
+"here—because it's not a real school.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Điều này giải thích lý do tại sao ở đây không có học sinh nào khác\n"
+"bởi vì đây không phải là một ngôi trường thực sự.\n"
+"<CLT>"
+#. <CLT 4>そして、希望ヶ峰学園が閉鎖に追い込まれた
+#. “深刻な問題”…
+#. <CLT>
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And then there's these \"serious issues\" that forced\n"
+"the school to close down in the first place...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và còn cả những \"vấn đề nghiêm trọng\" đã buộc ngôi trường\n"
+"phải đóng cửa ngay từ đầu nữa...\n"
+"<CLT>"
+#. <CLT 4>それって、ボクらの身に降りかかっているこの状況と、
+#. 何か関係あるのかな…？
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Is there any connection between that and what's\n"
+"happening to us now...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Liệu có mối liên hệ nào giữa điều đó và những gì đang\n"
+"xảy ra với chúng ta bây giờ không...?\n"
+"<CLT>"
+#. ……………
+msgctxt "0057 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>黒幕の目的…
+#. ボクらをここに閉じ込め、こんな事をさせてる目的…
+#. <CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind's motive... If we can figure out why\n"
+"they would want to imprison us all here...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Động cơ của kẻ chủ mưu... Nếu chúng ta có thể tìm ra lý do tại sao\n"
+"hắn lại muốn giam cầm tất cả chúng tôi ở đây...\n"
+"<CLT>"
+#. <CLT 4>それを解き明かせば、
+#. ボクらはここから出られるのだろうか…
+#. <CLT>
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...will that be enough to get us out of here?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...liệu điều đó có đủ để giúp chúng tôi thoát khỏi đây không?\n"
+"<CLT>"
+#. <CLT 4>それとも……
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Or...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hay là...?\n"
+"<CLT>"
+#. <CLT 4>山田クンが心配だ…
+#. 詳しい話を聞かないと…
+#. <CLT>
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm really worried about Hifumi. I'd better ask him\n"
+"for more details...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tớ thực sự lo cho Hifumi. Mình nên hỏi cậu ấy\n"
+"thêm chi tiết xem sao...\n"
+"<CLT>"
+#. アーッハッハッハッハ！！
+msgctxt "0062 | MONOKUMA"
+msgid "Ahh-hahahaha!"
+msgstr "Heh heh heh heh!"
+#. 出た…ッ！！
+msgctxt "0063 | AOI ASAHINA"
+msgid "It's him!"
+msgstr "Chính là hắn!"
+#. うぷぷ、正義のロボットだって！
+#. なんだか楽しそうな展開になってるじゃん！！
+msgctxt "0064 | MONOKUMA"
+msgid ""
+"Puhuhu! A robot of justice, huh!? Now things are\n"
+"*really* starting to get exciting!"
+msgstr ""
+"U pư pư! Một người máy công lý sao!? Giờ thì mọi chuyện\n"
+"đang thực sự bắt đầu trở nên kịch tính rồi đấy!"
+#. どんな必殺技使うんだろ？　飛べるのかなぁ？
+#. お約束の合体とかは、どうなんだろ？
+msgctxt "0065 | MONOKUMA"
+msgid ""
+"What kind of special moves does it have? Can it fly?\n"
+"Can it COMBINE!?"
+msgstr ""
+"Hắn có chiêu thức đặc biệt nào không? Hắn có biết bay không?\n"
+"Hắn có biết HỢP THỂ không hả!?"
+#. にょほほほほー！
+msgctxt "0066 | MONOKUMA"
+msgid "Nyoohohoho!"
+msgstr "Heh heh heh heh!"
+#. あいつは…何しに来たんだ？
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgid "Why...is he here?"
+msgstr "Tại sao... hắn lại ở đây?"
+#. …モノクマの事は放っておきましょう。
+msgctxt "0068 | CELES"
+msgid "Let us not concern ourselves with him..."
+msgstr "Đừng bận tâm đến hắn làm gì..."
+#. それより、山田君を、
+#. １階の保健室に連れて行きませんと。
+msgctxt "0069 | CELES"
+msgid ""
+"What we need to do now is get Hifumi to the nurse's\n"
+"office right away."
+msgstr ""
+"Điều chúng ta cần làm lúc này là đưa Hifumi đến phòng y tế\n"
+"ngay lập tức."
+#. どう見ても、手当てしてあげた方が、
+#. よろしいでしょうし…
+msgctxt "0070 | CELES"
+msgid ""
+"Whatever else we do, he needs to be treated as soon as\n"
+"possible."
+msgstr ""
+"Dù có làm gì đi nữa, cậu ấy cũng cần được băng bó vết thương càng sớm\n"
+"càng tốt."
+#. そうだね！　じゃあ、行こっか！
+msgctxt "0071 | AOI ASAHINA"
+msgid "You're right! Let's go!"
+msgstr "Bà nói đúng! Đi thôi!"
+#. うぅ…かたじけない…
+msgctxt "0072 | HIFUMI YAMADA"
+msgid "Ngh... Thanks, everyone..."
+msgstr "Ư... Cảm ơn mọi người..."

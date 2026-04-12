@@ -1,0 +1,337 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. <CLT 4>こんなくだらないモニターを気にしても仕方がない。
+#. 放っておこう。
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Thinking about this stupid monitor isn't gonna do me\n"
+"any good. I need to just forget about it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cứ nghĩ mãi về cái màn hình ngớ ngẩn này cũng chẳng ích gì.\n"
+"Mình cần phải quên nó đi thôi.\n"
+"<CLT>"
+#. <CLT 4>ここから出ても、
+#. しばらくは監視カメラがトラウマになりそうだな…
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Assuming I make it out of here alive, I'll never look\n"
+"at surveillance cameras the same way again...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ không bao giờ nhìn\n"
+"những chiếc camera giám sát theo cách cũ được nữa...\n"
+"<CLT>"
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT>"
+#. <CLT 4>雑誌棚だ…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's a shelf full of magazines.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đó là một kệ đầy tạp chí.\n"
+"<CLT>"
+#. <CLT 4>雑誌にヒントが載ってる訳ないしな…
+#. 事件には関係ないだろう。
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>None of these magazines have anything to do with the\n"
+"case. There can't possibly be any clues in them...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mấy cuốn tạp chí này chẳng liên quan gì tới vụ án cả.\n"
+"Chắc chắn là chẳng có manh mối nào trong đó đâu...\n"
+"<CLT>"
+#. <CLT 4>このオセロ…
+#. さすがに事件には関係なさそうだ。
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way Othello is related to the case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không đời nào cờ Othello lại liên quan tới vụ án này.\n"
+"<CLT>"
+#. <CLT 4>ダーツ…
+#. さすがに事件には関係なさそうだ。
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way this dartboard is related to the case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không đời nào tấm bảng phóng phi tiêu này lại liên quan tới vụ án này.\n"
+"<CLT>"
+#. <CLT 4>ビリヤードだ…
+#. さすがに事件には関係なさそうだ。
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way this pool table is related to the case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không đời nào bàn bi-a này lại liên quan tới vụ án này.\n"
+"<CLT>"
+#. <CLT 4>ロッカーがある…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's a locker.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đó là một cái tủ đồ.\n"
+"<CLT>"
+#. <CLT 4>特に意味がある物はなさそうだし、
+#. 開ける必要はないかな…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It doesn't seem especially important right now, so I\n"
+"don't need to open it.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lúc này nó có vẻ không quan trọng lắm, nên mình\n"
+"không cần phải mở nó ra đâu.\n"
+"<CLT>"
+#. <CLT 4>ソファーだ…
+#. さすがに事件には関係なさそうだ。
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way this couch is related to the case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không đời nào chiếc ghế sô pha này lại liên quan tới vụ án này.\n"
+"<CLT>"
+#. <CLT 4>ゆったりとしたテーブルだ。
+#. さすがに事件には関係なさそうだ。
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way this table is related to the case.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không đời nào cái bàn này lại liên quan tới vụ án này.\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>これって、ビンみたいだけど…
+#. なんなんだ？
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This looks like some kind of bottle, but...what the\n"
+"heck *is* it?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái quái gì\n"
+"vậy trời?\n"
+"<CLT>"
+#. <CLT 4>ただのインテリアだろうし…
+#. 今は気にしてもしょうがないな。
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's probably just a decoration or something. No\n"
+"reason to really worry about it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có\n"
+"lý do gì để phải bận tâm về nó cả...\n"
+"<CLT>"
+#. <CLT 4>セレスさんは…
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Celeste...\n"
+"<CLT>"
+#. <CLT 4>この、ジャスティスハンマー１号で…
+#. 襲われた…？
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was she really attacked with this...Justice Hammer 1?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cậu ấy thực sự đã bị tấn công bởi thứ này... Búa Công Lý số 1 sao?\n"
+"<CLT>"
+#. <CLT 4>それにしても…
+#. ジャスティスハンマー１号って…？
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...what the heck is *with* this thing?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng... cái quái gì đang xảy ra với cái thứ này vậy?\n"
+"<CLT>"
+#. はい
+msgctxt "0030 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+#. いいえ
+msgctxt "0031 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0032 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT>"
