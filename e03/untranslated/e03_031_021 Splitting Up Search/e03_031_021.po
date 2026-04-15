@@ -19,8 +19,8 @@ msgid ""
 "He must be around here somewhere. Let's split up and\n"
 "corner him!"
 msgstr ""
-"Hắn ta chắc chắn đang ở quanh đây thôi. Chúng ta hãy chia nhau ra và\n"
-"dồn hắn vào đường cùng đi!"
+"Hắn ta chắc chắn đang ở quanh đây thôi. Chúng ta hãy chia\n"
+"nhau ra và dồn hắn vào đường cùng đi!"
 #. だが、無理はするなよ。
 #. 何か見つけたら、すぐに叫んで我を呼べ。
 msgctxt "0002 | SAKURA OOGAMI"
@@ -28,8 +28,8 @@ msgid ""
 "But don't take any chances. As soon as you find him,\n"
 "call out and I'll come running."
 msgstr ""
-"Nhưng đừng có liều lĩnh. Ngay khi cậu tìm thấy hắn,\n"
-"hãy gọi lớn và tôi sẽ chạy đến ngay."
+"Nhưng đừng có liều lĩnh. Ngay khi cậu tìm thấy hắn, hãy\n"
+"gọi lớn và tôi sẽ chạy đến ngay."
 #. …ですが、なんて叫べばよろしいのですか？
 msgctxt "0003 | CELES"
 msgid "Okay, but...what should we yell?"
@@ -49,13 +49,15 @@ msgid ""
 "Haaah or dohyaah or whatever you want! Just yell loud\n"
 "enough so we can hear you!"
 msgstr ""
-"Á hay là ối dồi ôi hay bất cứ thứ gì bà muốn! Miễn là hét đủ\n"
-"to để tụi mình nghe thấy là được!"
+"Á hay là ối dồi ôi hay bất cứ thứ gì bà muốn! Miễn là hét\n"
+"đủ to để tụi mình nghe thấy là được!"
 #. うふふ…ドッヒャーですって。
 #. そんなリアクションは聞いた事がありませんわ…
 msgctxt "0007 | CELES"
 msgid "Hmhmhm. Dohyaah? I have never heard such a reaction..."
-msgstr "U fư fư. Ối dồi ôi sao? Tớ chưa bao giờ nghe thấy kiểu phản ứng như vậy đấy..."
+msgstr ""
+"U fư fư. Ối dồi ôi sao? Tớ chưa bao giờ nghe thấy kiểu\n"
+"phản ứng như vậy đấy..."
 #. あー、もうっ！　いいから急いで捜してッ！！
 #. じゃあ、行くよッ！！
 msgctxt "0008 | AOI ASAHINA"
@@ -63,8 +65,8 @@ msgid ""
 "Okay, whatever! Just hurry up and start looking! Okay?\n"
 "Let's go!"
 msgstr ""
-"Được rồi, sao cũng được! Mau chóng bắt đầu tìm kiếm đi! Được chứ?\n"
-"Đi thôi nào!"
+"Được rồi, sao cũng được! Mau chóng bắt đầu tìm kiếm đi!\n"
+"Được chứ? Đi thôi nào!"
 #. ロボちゃーん！　どこに隠れたのー！！
 #. 出て来ないと解体しちゃうわよーッ！！
 msgctxt "0009 | TOUKO FUKAWA"
@@ -72,8 +74,8 @@ msgid ""
 "Hey Mister Robot! Where ya hidin'? If you don't come\n"
 "out, we're gonna decommission ya!"
 msgstr ""
-"Này ông Người máy! Trốn đâu rồi? Nếu ngươi không chịu\n"
-"ra đây, tôi sẽ tháo tung ngươi ra đấy!"
+"Này ông Người máy! Trốn đâu rồi? Nếu ngươi không chịu ra\n"
+"đây, tôi sẽ tháo tung ngươi ra đấy!"
 #. <CLT 4>どこかに潜んだ不審者を捜し、
 #. ボクらは四方へと散開した…
 #. <CLT>
@@ -103,9 +105,7 @@ msgctxt "0014 | MAKOTO NAEGI"
 msgid ""
 "It came from the floor above... She's on the 3rd\n"
 "floor!"
-msgstr ""
-"Nó phát ra từ tầng trên... Cậu ấy đang ở trên tầng\n"
-"3!"
+msgstr "Nó phát ra từ tầng trên... Cậu ấy đang ở trên tầng 3!"
 #. <CLT 4>ボクは、急いで３階へと駆け上がった。
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
