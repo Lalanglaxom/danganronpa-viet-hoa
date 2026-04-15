@@ -42,7 +42,7 @@ msgid ""
 "Hey, Taka. Don't you think this place is like some\n"
 "kind of research institute?"
 msgstr ""
-"Này, Ishimaru. Cậu có nghĩ nơi này giống như một loại viện\n"
+"Này, Taka. Cậu có nghĩ nơi này giống như một loại viện\n"
 "nghiên cứu nào đó không?"
 
 #. ……………
@@ -134,7 +134,8 @@ msgid ""
 "<CLT 4>Yup, it still works! I should show the others later.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ừm, nó vẫn hoạt động tốt! Tí nữa mình nên đưa cho mọi người xem.\n"
+"<CLT 4>Yup, nó vẫn hoạt động tốt! Tí nữa mình nên đưa cho \n"
+"mọi người xem.\n"
 "<CLT>"
 
 #. こ、このバカでかい機械は…なんなんだ？
@@ -145,7 +146,7 @@ msgstr "Cái máy to lớn đến nực cười này là sao vậy chứ...?"
 #. あっぶなーいッ！！
 msgctxt "0014 | MONOKUMA"
 msgid "Watch out!"
-msgstr "Coi chừng đấy nhé!"
+msgstr "Coi chừng đấy!"
 
 #. な、なんだよ…
 msgctxt "0015 | MAKOTO NAEGI"
@@ -155,7 +156,7 @@ msgstr "C-Cái gì—?"
 #. 時を駆けちゃうのッ！？
 msgctxt "0016 | MONOKUMA"
 msgid "What, you wanna do some quantum leaping!?"
-msgstr "Sao thế, ngươi muốn thực hiện cú nhảy lượng tử à!?"
+msgstr "Sao thế, cậu muốn thực hiện cú nhảy lượng tử à!?"
 
 #. …は？
 msgctxt "0017 | MAKOTO NAEGI"
@@ -245,7 +246,7 @@ msgid ""
 "But actually, I was lying about the whole thing\n"
 "anyway. There's no such thing as time machines!"
 msgstr ""
-"Nhưng thực ra, dù sao thì ta cũng vừa nói dối toàn bộ đấy.\n"
+"Nhưng thực ra, ta vừa nói dối toàn bộ đấy.\n"
 "Làm gì có thứ gọi là máy thời gian chứ!"
 
 #. え……？
@@ -271,7 +272,7 @@ msgid ""
 "With that thing, you could even live on Mars!"
 msgstr ""
 "Nó có thể tạo ra không khí sạch bất kể đằng ấy đang ở đâu.\n"
-"Với thứ đó, ngươi thậm chí có thể sống trên sao Hỏa đấy!"
+"Với thứ đó, cậu thậm chí có thể sống trên sao Hỏa đấy!"
 
 #. まぁ、気温とか重力の問題があるから、
 #. 実際のところ、火星には住めないでしょうけど…
@@ -281,7 +282,7 @@ msgid ""
 "low temperatures, you prolly don't wanna live on Mars."
 msgstr ""
 "Nhưng với trọng lực hỗn loạn và nhiệt độ thấp chết người,\n"
-"ngươi có lẽ chẳng muốn sống trên sao Hỏa đâu."
+"cậu có lẽ chẳng muốn sống trên sao Hỏa đâu."
 
 #. とにかく、オマエラがおいしい空気をいただけるのは、
 #. その機械のおかげなんだから…
@@ -290,7 +291,7 @@ msgid ""
 "Anyway, this machine is the reason you guys have all\n"
 "this delicious air."
 msgstr ""
-"Dù sao thì, cái máy này chính là lý do mà các ngươi có\n"
+"Dù sao thì, cái máy này chính là lý do mà các cậu có\n"
 "được bầu không khí ngon lành này đấy."
 
 #. いじって壊したりしないよーに！！
@@ -299,8 +300,8 @@ msgid ""
 "So don't go messing with it! You break it, and it's\n"
 "your butt!"
 msgstr ""
-"Nên đừng có táy máy vào nó đấy! Ngươi mà làm hỏng nó là\n"
-"tiêu đời luôn!"
+"Nên đừng có mà táy máy vào nó! Ngươi mà làm hỏng nó là\n"
+"cả đám tiêu đời luôn!"
 
 #. <CLT 4>この大きい機械が…ただの空気清浄機だって…？
 #. <CLT>
@@ -309,7 +310,8 @@ msgid ""
 "<CLT 4>This huge thing is just...an air purifier?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái thứ to lớn này chỉ là... một cái máy lọc không khí thôi sao?\n"
+"<CLT 4>Cái thứ to lớn này chỉ là... một cái máy lọc không khí \n"
+"thôi sao?\n"
 "<CLT>"
 
 #. <CLT 4>いや、そんな事より…
@@ -426,7 +428,7 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
 
 #. <CLT 4>もうちょっと、ここを調べてみよう…
@@ -436,5 +438,5 @@ msgid ""
 "<CLT 4>I'd better look around a little bit more...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình nên tìm kiếm xung quanh thêm một chút nữa...\n"
+"<CLT 4>Mình nên xem xung quanh thêm một chút nữa...\n"
 "<CLT>"

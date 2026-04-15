@@ -21,7 +21,7 @@ msgstr "Cậu đang làm gì ở đây vậy, Byakuya?"
 #. …見ればわかるだろう、読書だ。
 msgctxt "0002 | BYAKUYA TOGAMI"
 msgid "Isn't it obvious? I'm reading."
-msgstr "Chẳng phải đã quá rõ ràng rồi sao? Tôi đang đọc sách."
+msgstr "Chẳng phải rõ ràng rồi sao? Tôi đang đọc sách."
 
 #. ここなら邪魔が入らないと思ったんだがな。
 msgctxt "0003 | BYAKUYA TOGAMI"
@@ -80,7 +80,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những màn hình mà Monokuma thường xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma \n"
+"xuất hiện.\n"
 "<CLT>"
 
 #. こんな物を気にしてもしょうがない、
@@ -161,5 +162,5 @@ msgid ""
 "<CLT 23>Leave the boys locker room?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi phòng thay đồ nam chứ?\n"
+"<CLT 23>Rời khỏi phòng thay đồ nam?\n"
 "<CLT>"

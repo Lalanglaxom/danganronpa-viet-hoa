@@ -42,8 +42,7 @@ msgid ""
 "even a dartboard and a pool table..."
 msgstr ""
 "Chà, không ngôi trường bình thường nào có đâu. Ở đây có cờ\n"
-"Othello, cờ tướng shogi, thậm chí cả bảng phóng phi tiêu và bàn\n"
-"bida nữa..."
+"Othello, cờ shogi, thậm chí cả bảng phi tiêu và bàn bida nữa..."
 
 #. それに、見てください…
 msgctxt "0005 | CELES"
@@ -69,7 +68,7 @@ msgstr "Những thứ đó chắc chắn sẽ giúp chúng ta xua tan sự nhàm
 #. ピロリロリーン！　補足があるニョロよ！
 msgctxt "0008 | MONOKUMA"
 msgid "Ring ring ring! Hello there! Allow me to expound!"
-msgstr "Pí po pí po! Chào đằng ấy nhé! Để ta giải thích thêm cho nào!"
+msgstr "Pí po pí po! Chào đằng ấy! Hãy cho phép ta được giải thích!"
 
 #. ファッション、バイク、格闘技、ゲーム、野球、
 #. サッカー、パソコン、色んな雑誌が揃ってるけど…
@@ -98,7 +97,7 @@ msgid ""
 "And will you be adding to our collection as new issues\n"
 "come out?"
 msgstr ""
-"Và cậu sẽ bổ sung thêm vào bộ sưu tập khi có những số báo\n"
+"Và mi sẽ bổ sung thêm vào bộ sưu tập khi có những số báo\n"
 "mới ra lò chứ?"
 
 #. それは無理だねぇ。
@@ -145,7 +144,7 @@ msgstr "Những gì hắn vừa nói..."
 #. …やっぱ、気になるよね？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "I know, right? It bothers me, too..."
-msgstr "Tớ biết mà, đúng không? Tớ cũng thấy thắc mắc lắm..."
+msgstr "Tớ biết mà, đúng không? Tớ cũng thấy lạ lắm..."
 
 #. たまには雑誌を追加して貰った方が、
 #. ここでの生活が充実するのですが…残念です。
@@ -208,9 +207,8 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giả sử nếu mình có thể sống sót thoát khỏi đây, mình sẽ không\n"
-"bao giờ nhìn vào những chiếc camera giám sát theo cách cũ nữa\n"
-"đâu...\n"
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ chẳng\n"
+"thể nhìn những chiếc camera giám sát như trước đây được nữa...\n"
 "<CLT>"
 
 #. はい
@@ -230,7 +228,7 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
 
 #. <CLT 4>ここの雑誌棚には、
@@ -267,7 +265,8 @@ msgid ""
 "though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một bộ cờ Othello ở đây. Nhưng mình chơi môn này tệ lắm...\n"
+"<CLT 4>Có một bộ cờ Othello ở đây. Mặc dù mình chơi môn \n"
+"này khá tệ...\n"
 "<CLT>"
 
 #. <CLT 4>ダーツ…まであるのか。
@@ -522,5 +521,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
