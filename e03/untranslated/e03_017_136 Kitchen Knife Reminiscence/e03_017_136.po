@@ -25,6 +25,7 @@ msgstr ""
 "Ít nhất thì bọn họ cũng nên chiếu một chương trình nấu ăn hay gì\n"
 "đó chứ...\n"
 "<CLT>"
+
 #. <CLT 4>ここにも監視カメラ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -34,6 +35,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Ở đây cũng có một chiếc camera giám sát nữa...\n"
 "<CLT>"
+
 #. <CLT 4>もしかしてモノクマは…
 #. 料理している姿に萌えるから設置してるとか…？
 #. <CLT>
@@ -46,6 +48,7 @@ msgstr ""
 "<CLT 4>Không lẽ Monokuma có sở thích quái đản là xem người ta nấu\n"
 "nướng hay gì sao?\n"
 "<CLT>"
+
 #. <CLT 4>包丁は、ひとつ欠けたまま…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -55,6 +58,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc vẫn còn đang bị thiếu...\n"
 "<CLT>"
+
 #. <CLT 4>ここにあった包丁を舞園さんが持ち出して…
 #. そして…それで……
 #. <CLT>
@@ -67,6 +71,7 @@ msgstr ""
 "<CLT 4>Sayaka đã lấy một trong những con dao ở đây... và rồi cậu\n"
 "ấy đã...\n"
 "<CLT>"
+
 #. <CLT 4>………………
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -76,6 +81,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>…忘れられない。
 #. 忘れられる訳がない。
 #. <CLT>
@@ -87,6 +93,7 @@ msgstr ""
 "<CLT 4>Mình vẫn không thể nào quên được chuyện đó. Làm sao mình\n"
 "có thể chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>今のショーケースの中は魚だ…
 #. 獲れたての鮭みたいだ。
 #. <CLT>
@@ -99,6 +106,7 @@ msgstr ""
 "<CLT 4>Bên trong tủ kính lần này là... cá. Đối với mình thì trông\n"
 "nó giống như cá hồi tươi vậy.\n"
 "<CLT>"
+
 #. <CLT 4>まさか、モノクマが狩ってきたのか？
 #. クマだし…
 #. <CLT>
@@ -111,6 +119,7 @@ msgstr ""
 "<CLT 4>Không đời nào... Lẽ nào Monokuma đã tự mình bắt đống này\n"
 "sao? Ý mình là, hắn đúng *là* một con gấu mà...\n"
 "<CLT>"
+
 #. <CLT 4>野菜が山積みになっている…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -120,6 +129,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có cả đống rau củ được xếp chồng lên nhau.\n"
 "<CLT>"
+
 #. <CLT 4>下の方は潰れてるんじゃないか、これ…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -131,14 +141,17 @@ msgstr ""
 "<CLT 4>Những thứ nằm ở phía dưới chắc chắn là đang bị đè cho nát\n"
 "bét hết rồi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0014 | NARRATION"

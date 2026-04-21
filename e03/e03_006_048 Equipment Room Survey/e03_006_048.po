@@ -44,7 +44,9 @@ msgstr "Ahhh, nơi này thật là thoải máiii! Thật là bình yêeen làm 
 #. ホルマリンの匂いがたまらなく…
 msgctxt "0004 | TOUKO FUKAWA"
 msgid "The smell of formaldehyde is almost unbearable..."
-msgstr "Cái mùi của formaldehyde này gần như không thể cưỡng lại được..."
+msgstr ""
+"Cái mùi của formaldehyde này gần như không thể cưỡng \n"
+"lại được..."
 
 #. …そそるッ！！
 msgctxt "0005 | TOUKO FUKAWA"
@@ -196,5 +198,5 @@ msgid ""
 "<CLT 23>Leave the equipment room?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi phòng thiết bị chứ?\n"
+"<CLT 23>Rời khỏi phòng thiết bị?\n"
 "<CLT>"

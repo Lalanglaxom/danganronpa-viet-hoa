@@ -21,10 +21,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 今は忘れよう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "I need to forget about it for now."
 msgstr "Giờ thì mình cần phải quên nó đi thôi."
+
 #. <CLT 4>殺人も恐ろしいけど…
 #. やっぱり、この銃も恐ろしいよな…
 #. <CLT>
@@ -37,6 +39,7 @@ msgstr ""
 "<CLT 4>Dĩ nhiên giết người thật kinh khủng... nhưng ngay cả khẩu\n"
 "súng này thôi cũng đủ đáng sợ rồi.\n"
 "<CLT>"
+
 #. <CLT 4>もはや扉とさえ呼べない鉄の塊だ。
 #. どうやったって、開きっこない。
 #. <CLT>
@@ -49,6 +52,7 @@ msgstr ""
 "<CLT 4>Khó mà gọi cái khối kim loại này là một cánh cửa được. Tớ\n"
 "không thấy có cách nào khả thi để mở nó ra cả...\n"
 "<CLT>"
+
 #. <CLT 4>レターケースの中には…
 #. 死んだみんなの電子生徒手帳が置かれている…
 #. <CLT>
@@ -61,6 +65,7 @@ msgstr ""
 "<CLT 4>Sổ học sinh của tất cả những người đã chết cho đến nay đều\n"
 "đã được đặt bên trong hòm thư.\n"
 "<CLT>"
+
 #. <CLT 4>でも、今回の事件には関係ないよな…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -70,6 +75,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng chuyện đó không liên quan gì đến vụ án lần này cả...\n"
 "<CLT>"
+
 #. <CLT 4>殺人も恐ろしいけど…
 #. やっぱり、この銃も恐ろしいよな…
 #. <CLT>
@@ -82,14 +88,17 @@ msgstr ""
 "<CLT 4>Dĩ nhiên giết người thật kinh khủng... nhưng ngay cả khẩu\n"
 "súng này thôi cũng đủ đáng sợ rồi.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"

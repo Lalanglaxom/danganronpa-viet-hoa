@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,6 +31,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Hiện tại trên đó chỉ đang hiển thị biểu tượng của ngôi trường...\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
@@ -38,6 +40,7 @@ msgid ""
 msgstr ""
 "Giờ có lo lắng về nó cũng chẳng giải quyết được gì. Mình\n"
 "nên cố gắng quên nó đi thôi..."
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -50,6 +53,7 @@ msgstr ""
 "<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của\n"
 "chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -61,6 +65,7 @@ msgstr ""
 "<CLT 4>Chỉ cần nghĩ về điều đó thôi cũng khiến mình thấy bồn\n"
 "chồn... nhưng thực sự chẳng có gì mình có thể làm được cả.\n"
 "<CLT>"
+
 #. <CLT 4>最近、あんまり時計を見なくなった。
 #. 意味がないってわかったからかな…
 #. <CLT>
@@ -73,6 +78,7 @@ msgstr ""
 "<CLT 4>Dạo này mình cũng không hay nhìn đồng hồ cho lắm. Ý mình\n"
 "là, làm vậy thì có ích gì chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これも慣れってヤツか、
 #. なんだか虚しいな…
 #. <CLT>
@@ -85,6 +91,7 @@ msgstr ""
 "<CLT 4>Có lẽ đây là lúc mình đã dần quen với việc ở nơi này rồi\n"
 "nhỉ? Một cảm giác thật trống rỗng...\n"
 "<CLT>"
+
 #. <CLT 4>本来の教室なら窓があるべき場所…
 #. だが、そこにはやっぱり…
 #. <CLT>
@@ -97,6 +104,7 @@ msgstr ""
 "<CLT 4>Trong bất kỳ lớp học bình thường nào, đây sẽ là nơi có cửa\n"
 "sổ. Nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>鉄板のような物が打ち付けられていた。
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -107,6 +115,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...giờ lại có một tấm kim loại khổng lồ được gắn đè lên trên nó.\n"
 "<CLT>"
+
 #. <CLT 4>本来の教室なら窓があるべき場所…
 #. だが、そこにはやっぱり…
 #. <CLT>
@@ -119,6 +128,7 @@ msgstr ""
 "<CLT 4>Trong bất kỳ lớp học bình thường nào, đây sẽ là nơi có cửa\n"
 "sổ. Nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>鉄板のような物が打ち付けられていた。
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -129,14 +139,17 @@ msgid ""
 msgstr ""
 "<CLT 4>...giờ lại có một tấm kim loại khổng lồ được gắn đè lên trên nó.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0014 | NARRATION"
@@ -146,14 +159,17 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0016 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0017 | NARRATION"

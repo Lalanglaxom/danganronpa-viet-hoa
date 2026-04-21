@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr ""
 "Giờ có lo lắng về nó cũng chẳng giải quyết được gì. Mình\n"
 "nên cố gắng quên nó đi thôi..."
+
 #. <CLT 4>監視カメラ…
 #. もしかしたら、ここには元々あったのかもな…
 #. <CLT>
@@ -39,6 +41,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát... Phải chăng nó đã ở đây từ đầu rồi?\n"
 "<CLT>"
+
 #. <CLT 4>うわ、マズイジュースとして有名な
 #. “紫汁”がある…
 #. <CLT>
@@ -49,6 +52,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Oa! Họ có cả loại nước giải khát màu tím đó kìa—Nước Tím!\n"
 "<CLT>"
+
 #. <CLT 4>ここ、購買部みたいだ…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -58,6 +62,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đúng rồi, đây chắc chắn là cửa hàng trường học.\n"
 "<CLT>"
+
 #. <CLT 4>前の学校で売ってた
 #. “もちもちクッキー”が食べたいな…
 #. <CLT>
@@ -70,14 +75,17 @@ msgstr ""
 "<CLT 4>Ước gì ở đây có món bánh quy kem caramel dừa tuyệt hảo mà\n"
 "trường cũ của mình từng bán nhỉ...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0009 | NARRATION"

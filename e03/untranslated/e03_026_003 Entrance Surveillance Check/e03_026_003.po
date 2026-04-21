@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "Hiện tại, nó chỉ đang hiển thị biểu tượng của ngôi trường.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -32,6 +33,7 @@ msgid ""
 msgstr ""
 "Giờ có lo lắng về nó cũng chẳng giải quyết được gì. Mình\n"
 "nên cố gắng quên nó đi thôi..."
+
 #. <CLT 4>ものすごい迫力…
 #. ものすごい威圧感がある…
 #. <CLT>
@@ -42,6 +44,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một áp lực ghê gớm... một sự hiện diện đầy áp đảo...\n"
 "<CLT>"
+
 #. <CLT 4>あって当たり前か。
 #. 重火器とセットの監視カメラなんて…
 #. <CLT>
@@ -54,6 +57,7 @@ msgstr ""
 "<CLT 4>Ý mình là... nó là một chiếc camera giám sát được trang bị\n"
 "vũ khí hạng nặng mà.\n"
 "<CLT>"
+
 #. <CLT 4>なんで、ここまで厳重にロックする必要があるんだ？
 #. 丸っきり異常だな…
 #. <CLT>
@@ -65,6 +69,7 @@ msgstr ""
 "<CLT 4>Tại sao nó lại được khóa chặt đến thế? Thật là bất thường\n"
 "quá đi...\n"
 "<CLT>"
+
 #. <CLT 4>レターケースだ…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -74,6 +79,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là cái tủ đựng thư từ trước...\n"
 "<CLT>"
+
 #. <CLT 4>中には…
 #. 死んだみんなの電子生徒手帳が置かれている…
 #. <CLT>
@@ -86,6 +92,7 @@ msgstr ""
 "<CLT 4>Sổ học sinh của tất cả những người đã chết cho đến nay đều\n"
 "đã được đặt ở bên trong.\n"
 "<CLT>"
+
 #. <CLT 4>ものすごい迫力…
 #. ものすごい威圧感がある…
 #. <CLT>
@@ -96,6 +103,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một áp lực ghê gớm... một sự hiện diện đầy áp đảo...\n"
 "<CLT>"
+
 #. <CLT 4>あって当たり前か。
 #. 重火器とセットの監視カメラなんて…
 #. <CLT>
@@ -108,14 +116,17 @@ msgstr ""
 "<CLT 4>Ý mình là... nó là một chiếc camera giám sát được trang bị\n"
 "vũ khí hạng nặng mà.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"

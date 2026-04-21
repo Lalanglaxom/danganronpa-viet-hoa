@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Cứ nghĩ mãi về cái màn hình ngớ ngẩn này cũng chẳng ích\n"
 "gì. Mình cần phải quên nó đi thôi.\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -37,14 +38,17 @@ msgstr ""
 "bao giờ nhìn những chiếc camera giám sát theo cách cũ được\n"
 "nữa...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -54,6 +58,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. <CLT 4>雑誌棚だ…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -63,6 +68,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một kệ đầy tạp chí.\n"
 "<CLT>"
+
 #. <CLT 4>雑誌にヒントが載ってる訳ないしな…
 #. 事件には関係ないだろう。
 #. <CLT>
@@ -75,6 +81,7 @@ msgstr ""
 "<CLT 4>Mấy cuốn tạp chí này chẳng liên quan gì tới vụ án cả. Chắc\n"
 "chắn là chẳng có manh mối nào trong đó đâu...\n"
 "<CLT>"
+
 #. <CLT 4>このオセロ…
 #. さすがに事件には関係なさそうだ。
 #. <CLT>
@@ -85,6 +92,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không đời nào cờ Othello lại liên quan tới vụ án này.\n"
 "<CLT>"
+
 #. <CLT 4>ダーツ…
 #. さすがに事件には関係なさそうだ。
 #. <CLT>
@@ -96,6 +104,7 @@ msgstr ""
 "<CLT 4>Không đời nào tấm bảng phóng phi tiêu này lại liên quan\n"
 "tới vụ án này.\n"
 "<CLT>"
+
 #. <CLT 4>ビリヤードだ…
 #. さすがに事件には関係なさそうだ。
 #. <CLT>
@@ -106,6 +115,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không đời nào bàn bi-a này lại liên quan tới vụ án này.\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがある…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -115,6 +125,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một cái tủ đồ.\n"
 "<CLT>"
+
 #. <CLT 4>特に意味がある物はなさそうだし、
 #. 開ける必要はないかな…
 #. <CLT>
@@ -127,6 +138,7 @@ msgstr ""
 "<CLT 4>Lúc này nó có vẻ không quan trọng lắm, nên mình không cần\n"
 "phải mở nó ra đâu.\n"
 "<CLT>"
+
 #. <CLT 4>ソファーだ…
 #. さすがに事件には関係なさそうだ。
 #. <CLT>
@@ -137,6 +149,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không đời nào chiếc ghế sô pha này lại liên quan tới vụ án này.\n"
 "<CLT>"
+
 #. <CLT 4>ゆったりとしたテーブルだ。
 #. さすがに事件には関係なさそうだ。
 #. <CLT>
@@ -147,6 +160,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không đời nào cái bàn này lại liên quan tới vụ án này.\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -159,6 +173,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -171,6 +186,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -183,6 +199,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -195,6 +212,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -207,6 +225,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -219,6 +238,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -231,6 +251,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -243,6 +264,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -255,6 +277,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -267,6 +290,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -279,6 +303,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống một loại chai lọ gì đó, nhưng... cái\n"
 "quái gì vậy trời?\n"
 "<CLT>"
+
 #. <CLT 4>ただのインテリアだろうし…
 #. 今は気にしてもしょうがないな。
 #. <CLT>
@@ -291,6 +316,7 @@ msgstr ""
 "<CLT 4>Chắc chỉ là đồ trang trí hay gì đó thôi. Chẳng có lý do gì\n"
 "để phải bận tâm về nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>セレスさんは…
 #. <CLT>
 msgctxt "0027 | MAKOTO NAEGI"
@@ -300,6 +326,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Celeste...\n"
 "<CLT>"
+
 #. <CLT 4>この、ジャスティスハンマー１号で…
 #. 襲われた…？
 #. <CLT>
@@ -311,6 +338,7 @@ msgstr ""
 "<CLT 4>Cậu ấy thực sự đã bị tấn công bởi thứ này... Búa Công Lý\n"
 "số 1 sao?\n"
 "<CLT>"
+
 #. <CLT 4>それにしても…
 #. ジャスティスハンマー１号って…？
 #. <CLT>
@@ -321,14 +349,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng... cái quái gì đang xảy ra với cái thứ này vậy?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0030 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0031 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0032 | NARRATION"

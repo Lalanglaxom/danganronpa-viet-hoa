@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "Tại sao ngay cả trong nhà bếp cũng cần có một cái nhỉ...?\n"
 "<CLT>"
+
 #. <CLT 4>厨房から生中継！
 #. なんて言っても、見てるのは黒幕だけだもんな…
 #. <CLT>
@@ -36,6 +37,7 @@ msgstr ""
 "<CLT 4>Truyền hình trực tiếp từ nhà bếp! Vào lúc... mình cũng chẳng\n"
 "biết khi nào! ...Mà mình đang diễn cho ai xem lúc này cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>包丁は、ひとつ欠けたまま…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -45,6 +47,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Vẫn còn thiếu một con...\n"
 "<CLT>"
+
 #. <CLT 4>ここにあった包丁を舞園さんが持ち出して…
 #. そして…それで……
 #. <CLT>
@@ -56,6 +59,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Sayaka đã lấy một con dao ở đây... và rồi cậu ấy đã...\n"
 "<CLT>"
+
 #. <CLT 4>………………
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -65,6 +69,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>…忘れられない。
 #. 忘れられる訳がない。
 #. <CLT>
@@ -76,6 +81,7 @@ msgstr ""
 "<CLT 4>Mình vẫn không thể quên được chuyện đó. Làm sao mình có\n"
 "thể quên đây...?\n"
 "<CLT>"
+
 #. <CLT 4>ショーケースには肉が並んでいる…
 #. うーん、今日はオージーか…
 #. <CLT>
@@ -88,6 +94,7 @@ msgstr ""
 "<CLT 4>Tủ trưng bày đầy ắp các loại thịt. Hôm nay trông giống\n"
 "thịt bò Úc thật. Ừm...\n"
 "<CLT>"
+
 #. <CLT 4>野菜が山積みになっている…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -97,6 +104,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một đống rau củ đang được xếp chồng lên nhau.\n"
 "<CLT>"
+
 #. <CLT 4>野菜より肉だ。１０代だからな。
 #. お肉の１０代なんだよ。
 #. <CLT>
@@ -109,14 +117,17 @@ msgstr ""
 "<CLT 4>Mình luôn chọn thịt thay vì rau. Vì mình vẫn đang ở tuổi\n"
 "thiếu niên mà. Tuổi trẻ là phải ăn thịt...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"

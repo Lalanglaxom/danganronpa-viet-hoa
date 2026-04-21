@@ -1,0 +1,1907 @@
+========================================================================
+  PO VALIDATION REPORT
+  Generated : 2026-04-21 20:23:01
+  Folder    : D:/Danganronpa1Viet/danganronpa-viet-hoa/e03/untranslated
+  Rules     : built-in + clt_tag_integrity, not_copy_of_source, line_count_match, suspicious_whitespace, unicode_integrity
+========================================================================
+Selected path: D:/Danganronpa1Viet/danganronpa-viet-hoa/e03/untranslated
+Top-level folders: ['e03_006_048 Equipment Room Survey', 'e03_007_135 Anime Camera Discovery Celeste Lie Advice', 'e03_007_141 Bathhouse Ghost Investigation', 'e03_007_142 Alter Ego Discovery Alter Ego Farewell', 'e03_008_101 Hina Level Up Makoto Bathhouse Choice', 'e03_008_135 Post-Bath Discussion', 'e03_008_141 Bathhouse Peeping Mission Hifumi Battle Cry', 'e03_009_006 Gym Motive Meeting', 'e03_010_101 Hifumi Strawberry Morning Hifumi Morning Encounter', 'e03_010_103 Morning Announcement Routine', 'e03_011_135 Taka Absence Discussion', 'e03_012_001 Girls Bathroom Entry', 'e03_012_021 Girls Bathroom Hesitation', 'e03_012_041 Blocked Up Stairs', 'e03_012_101 Locked Dorm Exploration', 'e03_012_103 Dorm Morning Thoughts', 'e03_012_136 Kitchen Knife Trauma', 'e03_013_101 Taka Condition Concern', 'e03_013_103 Taka Room Visit', 'e03_014_142 Taka Alter Ego Meeting', 'e03_015_101 Breakfast Dining Meeting', 'e03_015_103 Nighttime Taka Worry', 'e03_016_135 Hiro Bath Invitation Makoto Bathhouse Investigation', 'e03_016_141 Hifumi Alter Obsession', 'e03_017_001 Girls Bathroom Dread', 'e03_017_021 Bathroom Creep Avoidance', 'e03_017_041 Blocked Stair Gate', 'e03_017_101 Dormitory Exploration Inspection', 'e03_017_103 Daily Routine Dread', 'e03_017_136 Kitchen Knife Reminiscence', 'e03_018_001 Bathroom Entry Dread', 'e03_018_021 Makoto Bathroom Avoidance', 'e03_018_041 Blocked Staircase Gate', 'e03_018_101 Dormitory Hallway Exploration', 'e03_018_103 Nighttime Announcement Sequence', 'e03_018_136 Kitchen Knife Investigation', 'e03_019_101 Dining Hall Transition', 'e03_019_103 Morning Announcement Sequence', 'e03_020_135 Dining Hall Gossip', 'e03_021_001 Makoto Bathroom Hesitation', 'e03_021_021 Makoto Bathroom Avoidance', 'e03_021_041 Blocked Staircase Gate', 'e03_021_101 Dormitory Investigation Routine', 'e03_021_103 Makoto Room Inspection', 'e03_021_136 Kitchen Investigation Monologue', 'e03_022_001 Bathroom Entry Dread', 'e03_022_021 Makoto Bathroom Comment', 'e03_022_041 Blocked Stairway Gate', 'e03_022_101 Dormitory Hallway Investigation', 'e03_022_103 Makoto Idle Thoughts', 'e03_022_136 Kitchen Knife Remembrance', 'e03_023_101 Dining Hall Objective', 'e03_023_103 Mysterious Door Note', 'e03_024_135 Hiro Letter Reveal', 'e03_024_141 Dressing Room Confrontation', 'e03_025_101 Split Search Mission', 'e03_025_103 Alter Ego Theft', 'e03_025_135 Dining Hall Absence', 'e03_026_001 Hina Distant Scream', 'e03_026_003 Entrance Surveillance Check', 'e03_026_009 AV Room Inspection', 'e03_026_010 School Store Inspection', 'e03_026_011 Nurse Office Inspection', 'e03_026_014 Classroom Investigation Check', 'e03_026_015 Classroom Environment Inspection', 'e03_026_016 Area Exit Prompt', 'e03_027_041 Rec Room Discovery', 'e03_028_042 Hifumi Kidnapping Evidence', 'e03_029_021 Library Search Party', 'e03_030_011 Nurse Office Treatment', 'e03_030_022 Hifumi Library Discovery', 'e03_031_001 Staircase Shadow Chase', 'e03_031_021 Splitting Up Search', 'e03_031_022 Library Investigation Summary', 'e03_032_041 Celeste Scream Groupup', 'e03_033_001 Nurse Office Rush', 'e03_034_011 Hifumi Murder Discovery', 'e03_034_048 Missing Body Mystery', 'e03_035_001 Tenth Floor Ascent', 'e03_035_041 Suspect Pursuit Investigation', 'e03_035_042 Rec Room Distractions', 'e03_036_047 Taka Body Discovery', 'e03_037_011 Hifumi Body Theft', 'e03_037_041 Hifumi Body Vanishing', 'e03_037_048 Double Murder Discovery', 'e03_038_041 Repository Bodies Found', 'e03_038_042 Rec Room Investigation', 'e03_038_044 Art Room Search', 'e03_038_047 Physics Lab Inspection', 'e03_038_048 Equipment Room Evidence', 'e03_038_051 Classroom Environment Inspection', 'e03_038_052 Classroom Monologue Observation', 'e03_039_044 Repository Body Hunt', 'e03_039_046 Hifumi Final Words', 'e03_040_001 School Exploration Refusal', 'e03_040_003 Entrance Hall Evidence', 'e03_040_004 Generic Investigation Room', 'e03_040_005 Trophy Case Inspection', 'e03_040_006 Gym Money Discovery', 'e03_040_009 Gym Money Discovery', 'e03_040_010 Gym Money Discovery', 'e03_040_011 Nurse Office Investigation', 'e03_040_014 Nurse Office Investigation', 'e03_040_015 Nurse Office Investigation', 'e03_040_016 Nurse Office Investigation', 'e03_040_021 Nurse Office Investigation', 'e03_040_022 Nurse Office Investigation', 'e03_040_025 Nurse Office Investigation', 'e03_040_026 Locker Room Access', 'e03_040_027 Locker Room Access', 'e03_040_030 Locker Size Inspection', 'e03_040_031 Locker Size Inspection', 'e03_040_032 Locker Size Inspection', 'e03_040_033 Locker Size Inspection', 'e03_040_041 Locker Size Inspection', 'e03_040_042 Locker Size Inspection', 'e03_040_044 Locker Size Inspection', 'e03_040_046', 'e03_040_047', 'e03_040_048', 'e03_040_051', 'e03_040_052', 'e03_040_101', 'e03_040_135', 'e03_040_136', 'e03_040_137', 'e03_040_139', 'e03_040_140', 'e03_040_141', 'e03_040_144', 'e03_040_145', 'e03_040_146', 'e03_042_117', 'e03_043_101', 'e03_044_030', 'e03_045_021', 'e03_045_041', 'e03_045_046', 'e03_046_001', 'e03_046_201', 'e03_046_205', 'e03_101_000', 'e03_102_000', 'e03_102_001', 'e03_103_000', 'e03_105_000', 'e03_106_000', 'e03_106_001', 'e03_107_000', 'e03_108_000', 'e03_108_001', 'e03_109_000', 'e03_110_000', 'e03_111_000', 'e03_112_000', 'e03_112_001', 'e03_113_000', 'e03_114_000', 'e03_114_001', 'e03_115_000', 'e03_116_000', 'e03_116_001', 'e03_117_000', 'e03_118_000', 'e03_118_001', 'e03_119_000', 'e03_120_000', 'e03_120_001', 'e03_121_000', 'e03_122_000', 'e03_122_001', 'e03_123_000', 'e03_124_000', 'e03_124_001', 'e03_125_000', 'e03_126_000', 'e03_126_001', 'e03_127_000', 'e03_128_000', 'e03_129_000', 'e03_150_000', 'e03_196_000', 'e03_197_000', 'e03_198_000', 'e03_199_000', 'e03_200_205', 'e03_200_211', 'e03_201_101', 'e03_201_141', 'e03_202_021', 'e03_202_033', 'e03_202_035', 'e03_202_036', 'e03_203_001', 'e03_203_004', 'e03_203_006', 'e03_211_000', 'e03_255_003', 'e03_255_004', 'e03_255_005', 'e03_255_006']
+
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_006_048 Equipment Room Survey
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_006_048
+    ✔ [auto-fix] PO spacing reformatted in e03_006_048
+
+  [OK]             e03_006_048
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 62): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 95): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_007_135 Anime Camera Discovery Celeste Lie Advice
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_007_135
+    ✔ [auto-fix] PO spacing reformatted in e03_007_135
+
+  [1 WARN]         e03_007_135
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: 'Tôi đã tìm kiếm toàn bộ tầng 3, nhưng... tất cả các cửa sổ\\nở hành lang và các phòng đều đã bị phong tỏa.' → 0176 | SAKURA OOGAMI (line 1234) | 'Tôi đã tìm kiếm toàn bộ tầng 3, nhưng... tất cả cửa sổ ở\\nhành lang và các phòng đều đã bị phong tỏa.' → 0185 | SAKURA OOGAMI (line 1300)
+    i [not_copy_of_source] Entry "0049 | AOI ASAHINA" (line 349): translation is identical to source text
+    i [not_copy_of_source] Entry "0104 | KIYOTAKA ISHIMARU" (line 688): translation is identical to source text
+    i [not_copy_of_source] Entry "0108 | MAKOTO NAEGI" (line 715): translation is identical to source text
+    i [not_copy_of_source] Entry "0111 | SAKURA OOGAMI" (line 743): translation is identical to source text
+    i [not_copy_of_source] Entry "0131 | KIYOTAKA ISHIMARU" (line 885): translation is identical to source text
+    i [not_copy_of_source] Entry "0167 | TOUKO FUKAWA" (line 1171): translation is identical to source text
+    i [not_copy_of_source] Entry "0200 | KIYOTAKA ISHIMARU" (line 1416): translation is identical to source text
+    i [not_copy_of_source] Entry "0208 | TOUKO FUKAWA" (line 1476): translation is identical to source text
+    i [not_copy_of_source] Entry "0209 | KIYOTAKA ISHIMARU" (line 1481): translation is identical to source text
+    i [not_copy_of_source] Entry "0210 | KIYOTAKA ISHIMARU" (line 1486): translation is identical to source text
+    i [not_copy_of_source] Entry "0212 | KIYOTAKA ISHIMARU" (line 1501): translation is identical to source text
+    i [not_copy_of_source] Entry "0213 | KIYOTAKA ISHIMARU" (line 1506): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_007_141 Bathhouse Ghost Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_007_141
+    ✔ [auto-fix] PO spacing reformatted in e03_007_141
+
+  [OK]             e03_007_141
+    i [not_copy_of_source] Entry "0003 | HIFUMI YAMADA" (line 31): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | HIFUMI YAMADA" (line 59): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_007_142 Alter Ego Discovery Alter Ego Farewell
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_007_142
+    ✔ [auto-fix] PO spacing reformatted in e03_007_142
+
+  [OK]             e03_007_142
+    i [not_copy_of_source] Entry "0016 | AOI ASAHINA" (line 139): translation is identical to source text
+    i [not_copy_of_source] Entry "0089 | KYOUKO KIRIGIRI" (line 731): translation is identical to source text
+    i [not_copy_of_source] Entry "0115 | MAKOTO NAEGI" (line 918): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_008_101 Hina Level Up Makoto Bathhouse Choice
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_008_101
+    ✔ [auto-fix] PO spacing reformatted in e03_008_101
+
+  [OK]             e03_008_101
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 66): translation is identical to source text
+    i [not_copy_of_source] Entry "0042 | MAKOTO NAEGI" (line 335): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_008_135 Post-Bath Discussion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_008_135
+    ✔ [auto-fix] PO spacing reformatted in e03_008_135
+
+  [OK]             e03_008_135
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | MAKOTO NAEGI" (line 54): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_008_141 Bathhouse Peeping Mission Hifumi Battle Cry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_008_141
+    ✔ [auto-fix] PO spacing reformatted in e03_008_141
+
+  [OK]             e03_008_141
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_009_006 Gym Motive Meeting
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_009_006
+    ✔ [auto-fix] PO spacing reformatted in e03_009_006
+
+  [OK]             e03_009_006
+    i [not_copy_of_source] Entry "0006 | TOUKO FUKAWA" (line 62): translation is identical to source text
+    i [not_copy_of_source] Entry "0032 | MAKOTO NAEGI" (line 254): translation is identical to source text
+    i [not_copy_of_source] Entry "0072 | KIYOTAKA ISHIMARU" (line 562): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_010_101 Hifumi Strawberry Morning Hifumi Morning Encounter
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_010_101
+    ✔ [auto-fix] PO spacing reformatted in e03_010_101
+
+  [OK]             e03_010_101
+    i [not_copy_of_source] Entry "0035 | MAKOTO NAEGI" (line 313): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_010_103 Morning Announcement Routine
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_010_103
+    ✔ [auto-fix] PO spacing reformatted in e03_010_103
+
+  [OK]             e03_010_103
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_011_135 Taka Absence Discussion
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_011_135
+    ✔ [auto-fix] PO spacing reformatted in e03_011_135
+
+  [OK]             e03_011_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_001 Girls Bathroom Entry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_001
+    ✔ [auto-fix] PO spacing reformatted in e03_012_001
+
+  [OK]             e03_012_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_021 Girls Bathroom Hesitation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_021
+    ✔ [auto-fix] PO spacing reformatted in e03_012_021
+
+  [OK]             e03_012_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_041 Blocked Up Stairs
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_041
+    ✔ [auto-fix] PO spacing reformatted in e03_012_041
+
+  [OK]             e03_012_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_101 Locked Dorm Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_101
+    ✔ [auto-fix] PO spacing reformatted in e03_012_101
+
+  [OK]             e03_012_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_103 Dorm Morning Thoughts
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_103
+    ✔ [auto-fix] PO spacing reformatted in e03_012_103
+
+  [OK]             e03_012_103
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 86): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_012_136 Kitchen Knife Trauma
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_012_136
+    ✔ [auto-fix] PO spacing reformatted in e03_012_136
+
+  [OK]             e03_012_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 66): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_013_101 Taka Condition Concern
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_013_101
+    ✔ [auto-fix] PO spacing reformatted in e03_013_101
+
+  [OK]             e03_013_101
+    i [not_copy_of_source] Entry "0038 | MAKOTO NAEGI" (line 355): translation is identical to source text
+    i [not_copy_of_source] Entry "0045 | MAKOTO NAEGI" (line 437): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_013_103 Taka Room Visit
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_013_103
+    ✔ [auto-fix] PO spacing reformatted in e03_013_103
+
+  [OK]             e03_013_103
+    i [not_copy_of_source] Entry "0005 | KIYOTAKA ISHIMARU" (line 46): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | KIYOTAKA ISHIMARU" (line 82): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | KIYOTAKA ISHIMARU" (line 92): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | KIYOTAKA ISHIMARU" (line 97): translation is identical to source text
+    i [not_copy_of_source] Entry "0022 | KIYOTAKA ISHIMARU" (line 168): translation is identical to source text
+    i [not_copy_of_source] Entry "0025 | KIYOTAKA ISHIMARU" (line 188): translation is identical to source text
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 218): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_014_142 Taka Alter Ego Meeting
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_014_142
+    ✔ [auto-fix] PO spacing reformatted in e03_014_142
+
+  [OK]             e03_014_142
+    i [not_copy_of_source] Entry "0001 | KIYOTAKA ISHIMARU" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | KIYOTAKA ISHIMARU" (line 56): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | ALTER EGO" (line 127): translation is identical to source text
+    i [not_copy_of_source] Entry "0021 | KIYOTAKA ISHIMARU" (line 162): translation is identical to source text
+    i [not_copy_of_source] Entry "0035 | KIYOTAKA ISHIMARU" (line 268): translation is identical to source text
+    i [not_copy_of_source] Entry "0046 | KIYOTAKA ISHIMARU" (line 351): translation is identical to source text
+    i [not_copy_of_source] Entry "0049 | KIYOTAKA ISHIMARU" (line 366): translation is identical to source text
+    i [not_copy_of_source] Entry "0074 | MAKOTO NAEGI" (line 534): translation is identical to source text
+    i [not_copy_of_source] Entry "0079 | MAKOTO NAEGI" (line 568): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_015_101 Breakfast Dining Meeting
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_015_101
+    ✔ [auto-fix] PO spacing reformatted in e03_015_101
+
+  [1 WARN]         e03_015_101
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Mọi người đã hứa sẽ tập hợp vào buổi sáng và ăn sáng cùng\\nnhau. Mình nên đi đến nhà ăn thôi...\\n<CLT>' → 0002 | MAKOTO NAEGI (line 31) | '<CLT 4>Mọi người đã hứa sẽ tập hợp vào buổi sáng và ăn sáng cùng\\nnhau. Mình nên nhanh chóng đi đến nhà ăn thôi...\\n<CLT>' → 0003 | MAKOTO NAEGI (line 44), 0004 | MAKOTO NAEGI (line 57), 0008 | MAKOTO NAEGI (line 104), 0009 | MAKOTO NAEGI (line 117), 0012 | MAKOTO NAEGI (line 151), ...
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 129): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_015_103 Nighttime Taka Worry
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_015_103
+    ✔ [auto-fix] PO spacing reformatted in e03_015_103
+
+  [OK]             e03_015_103
+    i [not_copy_of_source] Entry "0033 | MAKOTO NAEGI" (line 297): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_016_135 Hiro Bath Invitation Makoto Bathhouse Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_016_135
+    ✔ [auto-fix] PO spacing reformatted in e03_016_135
+
+  [OK]             e03_016_135
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_016_141 Hifumi Alter Obsession
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_016_141
+    ✔ [auto-fix] PO spacing reformatted in e03_016_141
+
+  [OK]             e03_016_141
+    i [not_copy_of_source] Entry "0018 | KYOUKO KIRIGIRI" (line 126): translation is identical to source text
+    i [not_copy_of_source] Entry "0023 | KYOUKO KIRIGIRI" (line 166): translation is identical to source text
+    i [not_copy_of_source] Entry "0069 | HIFUMI YAMADA" (line 486): translation is identical to source text
+    i [not_copy_of_source] Entry "0119 | HIFUMI YAMADA" (line 825): translation is identical to source text
+    i [not_copy_of_source] Entry "0134 | HIFUMI YAMADA" (line 935): translation is identical to source text
+    i [not_copy_of_source] Entry "0135 | KIYOTAKA ISHIMARU" (line 940): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_001 Girls Bathroom Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_001
+    ✔ [auto-fix] PO spacing reformatted in e03_017_001
+
+  [OK]             e03_017_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_021 Bathroom Creep Avoidance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_021
+    ✔ [auto-fix] PO spacing reformatted in e03_017_021
+
+  [OK]             e03_017_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_041 Blocked Stair Gate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_041
+    ✔ [auto-fix] PO spacing reformatted in e03_017_041
+
+  [OK]             e03_017_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_101 Dormitory Exploration Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_101
+    ✔ [auto-fix] PO spacing reformatted in e03_017_101
+
+  [OK]             e03_017_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_103 Daily Routine Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_103
+    ✔ [auto-fix] PO spacing reformatted in e03_017_103
+
+  [OK]             e03_017_103
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 107): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_017_136 Kitchen Knife Reminiscence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_017_136
+    ✔ [auto-fix] PO spacing reformatted in e03_017_136
+
+  [OK]             e03_017_136
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 77): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_001 Bathroom Entry Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_001
+    ✔ [auto-fix] PO spacing reformatted in e03_018_001
+
+  [OK]             e03_018_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_021 Makoto Bathroom Avoidance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_021
+    ✔ [auto-fix] PO spacing reformatted in e03_018_021
+
+  [OK]             e03_018_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_041 Blocked Staircase Gate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_041
+    ✔ [auto-fix] PO spacing reformatted in e03_018_041
+
+  [OK]             e03_018_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_101 Dormitory Hallway Exploration
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_101
+    ✔ [auto-fix] PO spacing reformatted in e03_018_101
+
+  [OK]             e03_018_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_103 Nighttime Announcement Sequence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_103
+    ✔ [auto-fix] PO spacing reformatted in e03_018_103
+
+  [OK]             e03_018_103
+    i [not_copy_of_source] Entry "0019 | MAKOTO NAEGI" (line 170): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_018_136 Kitchen Knife Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_018_136
+    ✔ [auto-fix] PO spacing reformatted in e03_018_136
+
+  [OK]             e03_018_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 65): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_019_101 Dining Hall Transition
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_019_101
+    ✔ [auto-fix] PO spacing reformatted in e03_019_101
+
+  [OK]             e03_019_101
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 132): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 142): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_019_103 Morning Announcement Sequence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_019_103
+    ✔ [auto-fix] PO spacing reformatted in e03_019_103
+
+  [OK]             e03_019_103
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 101): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_020_135 Dining Hall Gossip
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_020_135
+    ✔ [auto-fix] PO spacing reformatted in e03_020_135
+
+  [OK]             e03_020_135
+    i [not_copy_of_source] Entry "0012 | NO NAME" (line 83): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | TOUKO FUKAWA" (line 106): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_001 Makoto Bathroom Hesitation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_001
+    ✔ [auto-fix] PO spacing reformatted in e03_021_001
+
+  [OK]             e03_021_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_021 Makoto Bathroom Avoidance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_021
+    ✔ [auto-fix] PO spacing reformatted in e03_021_021
+
+  [OK]             e03_021_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_041 Blocked Staircase Gate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_041
+    ✔ [auto-fix] PO spacing reformatted in e03_021_041
+
+  [OK]             e03_021_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_101 Dormitory Investigation Routine
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_101
+    ✔ [auto-fix] PO spacing reformatted in e03_021_101
+
+  [OK]             e03_021_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_103 Makoto Room Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_103
+    ✔ [auto-fix] PO spacing reformatted in e03_021_103
+
+  [OK]             e03_021_103
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 82): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_021_136 Kitchen Investigation Monologue
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_021_136
+    ✔ [auto-fix] PO spacing reformatted in e03_021_136
+
+  [OK]             e03_021_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 65): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_001 Bathroom Entry Dread
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_001
+    ✔ [auto-fix] PO spacing reformatted in e03_022_001
+
+  [OK]             e03_022_001
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_021 Makoto Bathroom Comment
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_021
+    ✔ [auto-fix] PO spacing reformatted in e03_022_021
+
+  [OK]             e03_022_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_041 Blocked Stairway Gate
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_041
+    ✔ [auto-fix] PO spacing reformatted in e03_022_041
+
+  [OK]             e03_022_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_101 Dormitory Hallway Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_101
+    ✔ [auto-fix] PO spacing reformatted in e03_022_101
+
+  [OK]             e03_022_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_103 Makoto Idle Thoughts
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_103
+    ✔ [auto-fix] PO spacing reformatted in e03_022_103
+
+  [OK]             e03_022_103
+    i [not_copy_of_source] Entry "0010 | MAKOTO NAEGI" (line 95): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_022_136 Kitchen Knife Remembrance
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_022_136
+    ✔ [auto-fix] PO spacing reformatted in e03_022_136
+
+  [OK]             e03_022_136
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 65): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_023_101 Dining Hall Objective
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_023_101
+    ✔ [auto-fix] PO spacing reformatted in e03_023_101
+
+  [OK]             e03_023_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_023_103 Mysterious Door Note
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_023_103
+    ✔ [auto-fix] PO spacing reformatted in e03_023_103
+
+  [OK]             e03_023_103
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 107): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_024_135 Hiro Letter Reveal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_024_135
+    ✔ [auto-fix] PO spacing reformatted in e03_024_135
+
+  [OK]             e03_024_135
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 67): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_024_141 Dressing Room Confrontation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_024_141
+    ✔ [auto-fix] PO spacing reformatted in e03_024_141
+
+  [1 WARN]         e03_024_141
+    ! [untranslated] 1 untranslated: 0068 | BYAKUYA TOGAMI
+    i [not_copy_of_source] Entry "0017 | KYOUKO KIRIGIRI" (line 162): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | KYOUKO KIRIGIRI" (line 348): translation is identical to source text
+    i [not_copy_of_source] Entry "0119 | KIYOTAKA ISHIMARU" (line 958): translation is identical to source text
+    i [not_copy_of_source] Entry "0120 | HIFUMI YAMADA" (line 963): translation is identical to source text
+    i [not_copy_of_source] Entry "0124 | MAKOTO NAEGI" (line 989): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_025_101 Split Search Mission
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_025_101
+    ✔ [auto-fix] PO spacing reformatted in e03_025_101
+
+  [OK]             e03_025_101
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_025_103 Alter Ego Theft
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_025_103
+    ✔ [auto-fix] PO spacing reformatted in e03_025_103
+
+  [OK]             e03_025_103
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_025_135 Dining Hall Absence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_025_135
+    ✔ [auto-fix] PO spacing reformatted in e03_025_135
+
+  [OK]             e03_025_135
+    i [not_copy_of_source] Entry "0003 | KYOUKO KIRIGIRI" (line 29): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_001 Hina Distant Scream
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_001
+    ✔ [auto-fix] PO spacing reformatted in e03_026_001
+
+  [OK]             e03_026_001
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 87): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_003 Entrance Surveillance Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_003
+    ✔ [auto-fix] PO spacing reformatted in e03_026_003
+
+  [OK]             e03_026_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_009 AV Room Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_009
+    ✔ [auto-fix] PO spacing reformatted in e03_026_009
+
+  [OK]             e03_026_009
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_010 School Store Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_010
+    ✔ [auto-fix] PO spacing reformatted in e03_026_010
+
+  [OK]             e03_026_010
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_011 Nurse Office Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_011
+    ✔ [auto-fix] PO spacing reformatted in e03_026_011
+
+  [OK]             e03_026_011
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_014 Classroom Investigation Check
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_014
+    ✔ [auto-fix] PO spacing reformatted in e03_026_014
+
+  [OK]             e03_026_014
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_015 Classroom Environment Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_015
+    ✔ [auto-fix] PO spacing reformatted in e03_026_015
+
+  [OK]             e03_026_015
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_026_016 Area Exit Prompt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_026_016
+    ✔ [auto-fix] PO spacing reformatted in e03_026_016
+
+  [OK]             e03_026_016
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_027_041 Rec Room Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_027_041
+    ✔ [auto-fix] PO spacing reformatted in e03_027_041
+
+  [OK]             e03_027_041
+    i [not_copy_of_source] Entry "0003 | AOI ASAHINA" (line 38): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_028_042 Hifumi Kidnapping Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_028_042
+    ✔ [auto-fix] PO spacing reformatted in e03_028_042
+
+  [OK]             e03_028_042
+    i [not_copy_of_source] Entry "0004 | CELES" (line 37): translation is identical to source text
+    i [not_copy_of_source] Entry "0005 | MAKOTO NAEGI" (line 42): translation is identical to source text
+    i [not_copy_of_source] Entry "0041 | NO NAME" (line 288): translation is identical to source text
+    i [not_copy_of_source] Entry "0105 | NO NAME" (line 860): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_029_021 Library Search Party
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_029_021
+    ✔ [auto-fix] PO spacing reformatted in e03_029_021
+
+  [OK]             e03_029_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_030_011 Nurse Office Treatment
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_030_011
+    ✔ [auto-fix] PO spacing reformatted in e03_030_011
+
+  [OK]             e03_030_011
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_030_022 Hifumi Library Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_030_022
+    ✔ [auto-fix] PO spacing reformatted in e03_030_022
+
+  [OK]             e03_030_022
+    i [not_copy_of_source] Entry "0057 | MAKOTO NAEGI" (line 493): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_031_001 Staircase Shadow Chase
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_031_001
+    ✔ [auto-fix] PO spacing reformatted in e03_031_001
+
+  [OK]             e03_031_001
+    i [not_copy_of_source] Entry "0005 | CELES" (line 46): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_031_021 Splitting Up Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_031_021
+    ✔ [auto-fix] PO spacing reformatted in e03_031_021
+
+  [OK]             e03_031_021
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_031_022 Library Investigation Summary
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_031_022
+    ✔ [auto-fix] PO spacing reformatted in e03_031_022
+
+  [1 WARN]         e03_031_022
+    ! [clt_tag_integrity] Entry "0015 | MAKOTO NAEGI" (line 166): CLT tag mismatch — missing: <CLT>
+    i [not_copy_of_source] Entry "0023 | MAKOTO NAEGI" (line 261): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_032_041 Celeste Scream Groupup
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_032_041
+    ✔ [auto-fix] PO spacing reformatted in e03_032_041
+
+  [OK]             e03_032_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_033_001 Nurse Office Rush
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_033_001
+    ✔ [auto-fix] PO spacing reformatted in e03_033_001
+
+  [OK]             e03_033_001
+    i [not_copy_of_source] Entry "0018 | MAKOTO NAEGI" (line 138): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_034_011 Hifumi Murder Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_034_011
+    ✔ [auto-fix] PO spacing reformatted in e03_034_011
+
+  [OK]             e03_034_011
+    i [not_copy_of_source] Entry "0001 | AOI ASAHINA" (line 16): translation is identical to source text
+    i [not_copy_of_source] Entry "0044 | AOI ASAHINA" (line 364): translation is identical to source text
+    i [not_copy_of_source] Entry "0053 | CELES" (line 416): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_034_048 Missing Body Mystery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_034_048
+    ✔ [auto-fix] PO spacing reformatted in e03_034_048
+
+  [1 WARN]         e03_034_048
+    ! [untranslated] 1 untranslated: 0048 | SAKURA OOGAMI
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 50): translation is identical to source text
+    i [not_copy_of_source] Entry "0008 | MAKOTO NAEGI" (line 85): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_035_001 Tenth Floor Ascent
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_035_001
+    ✔ [auto-fix] PO spacing reformatted in e03_035_001
+
+  [OK]             e03_035_001
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_035_041 Suspect Pursuit Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_035_041
+    ✔ [auto-fix] PO spacing reformatted in e03_035_041
+
+  [OK]             e03_035_041
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_035_042 Rec Room Distractions
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_035_042
+    ✔ [auto-fix] PO spacing reformatted in e03_035_042
+
+  [OK]             e03_035_042
+    i [not_copy_of_source] Entry "0019 | MAKOTO NAEGI" (line 196): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_036_047 Taka Body Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_036_047
+    ✔ [auto-fix] PO spacing reformatted in e03_036_047
+
+  [OK]             e03_036_047
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_037_011 Hifumi Body Theft
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_037_011
+    ✔ [auto-fix] PO spacing reformatted in e03_037_011
+
+  [OK]             e03_037_011
+    i [not_copy_of_source] Entry "0003 | MAKOTO NAEGI" (line 41): translation is identical to source text
+    i [not_copy_of_source] Entry "0007 | AOI ASAHINA" (line 72): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_037_041 Hifumi Body Vanishing
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_037_041
+    ✔ [auto-fix] PO spacing reformatted in e03_037_041
+
+  [OK]             e03_037_041
+    i [not_copy_of_source] Entry "0013 | CELES" (line 87): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_037_048 Double Murder Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_037_048
+    ✔ [auto-fix] PO spacing reformatted in e03_037_048
+
+  [OK]             e03_037_048
+    i [not_copy_of_source] Entry "0009 | BYAKUYA TOGAMI" (line 96): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | SAKURA OOGAMI" (line 101): translation is identical to source text
+    i [not_copy_of_source] Entry "0011 | BYAKUYA TOGAMI" (line 106): translation is identical to source text
+    i [not_copy_of_source] Entry "0012 | SAKURA OOGAMI" (line 111): translation is identical to source text
+    i [not_copy_of_source] Entry "0016 | MAKOTO NAEGI" (line 147): translation is identical to source text
+    i [not_copy_of_source] Entry "0029 | MAKOTO NAEGI" (line 269): translation is identical to source text
+    i [not_copy_of_source] Entry "0030 | MAKOTO NAEGI" (line 279): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_041 Repository Bodies Found
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_041
+    ✔ [auto-fix] PO spacing reformatted in e03_038_041
+
+  [OK]             e03_038_041
+    i [not_copy_of_source] Entry "0001 | CELES" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_042 Rec Room Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_042
+    ✔ [auto-fix] PO spacing reformatted in e03_038_042
+
+  [OK]             e03_038_042
+    i [not_copy_of_source] Entry "0027 | MAKOTO NAEGI" (line 322): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_044 Art Room Search
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_044
+    ✔ [auto-fix] PO spacing reformatted in e03_038_044
+
+  [OK]             e03_038_044
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_047 Physics Lab Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_047
+    ✔ [auto-fix] PO spacing reformatted in e03_038_047
+
+  [OK]             e03_038_047
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_048 Equipment Room Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_048
+    ✔ [auto-fix] PO spacing reformatted in e03_038_048
+
+  [OK]             e03_038_048
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_051 Classroom Environment Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_051
+    ✔ [auto-fix] PO spacing reformatted in e03_038_051
+
+  [OK]             e03_038_051
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_038_052 Classroom Monologue Observation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_038_052
+    ✔ [auto-fix] PO spacing reformatted in e03_038_052
+
+  [OK]             e03_038_052
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_039_044 Repository Body Hunt
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_039_044
+    ✔ [auto-fix] PO spacing reformatted in e03_039_044
+
+  [OK]             e03_039_044
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_039_046 Hifumi Final Words
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_039_046
+    ✔ [auto-fix] PO spacing reformatted in e03_039_046
+
+  [OK]             e03_039_046
+    i [not_copy_of_source] Entry "0052 | HIFUMI YAMADA" (line 377): translation is identical to source text
+    i [not_copy_of_source] Entry "0053 | HIFUMI YAMADA" (line 382): translation is identical to source text
+    i [not_copy_of_source] Entry "0066 | CELES" (line 497): translation is identical to source text
+    i [not_copy_of_source] Entry "0078 | MAKOTO NAEGI" (line 598): translation is identical to source text
+    i [not_copy_of_source] Entry "0081 | MAKOTO NAEGI" (line 625): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_001 School Exploration Refusal
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_001
+    ✔ [auto-fix] PO spacing reformatted in e03_040_001
+
+  [OK]             e03_040_001
+    i [not_copy_of_source] Entry "0002 | MAKOTO NAEGI" (line 26): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_003 Entrance Hall Evidence
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_003
+    ✔ [auto-fix] PO spacing reformatted in e03_040_003
+
+  [OK]             e03_040_003
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_004 Generic Investigation Room
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_004
+    ✔ [auto-fix] PO spacing reformatted in e03_040_004
+
+  [OK]             e03_040_004
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_005 Trophy Case Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_005
+    ✔ [auto-fix] PO spacing reformatted in e03_040_005
+
+  [OK]             e03_040_005
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_006 Gym Money Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_006
+    ✔ [auto-fix] PO spacing reformatted in e03_040_006
+
+  [OK]             e03_040_006
+    i [not_copy_of_source] Entry "0006 | MAKOTO NAEGI" (line 69): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_009 Gym Money Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_009
+    ✔ [auto-fix] PO spacing reformatted in e03_040_009
+
+  [1 WARN]         e03_040_009
+    ! [untranslated] 10 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | CHOICE/RE:ACT, 0009 | CHOICE/RE:ACT, 0010 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_010 Gym Money Discovery
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_010
+    ✔ [auto-fix] PO spacing reformatted in e03_040_010
+
+  [1 WARN]         e03_040_010
+    ! [untranslated] 9 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_011 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_011
+    ✔ [auto-fix] PO spacing reformatted in e03_040_011
+
+  [OK]             e03_040_011
+    i [not_copy_of_source] Entry "0051 | MAKOTO NAEGI" (line 472): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_014 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_014
+    ✔ [auto-fix] PO spacing reformatted in e03_040_014
+
+  [1 WARN]         e03_040_014
+    ! [untranslated] 18 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | NARRATION, 0016 | CHOICE/RE:ACT, 0017 | CHOICE/RE:ACT, 0018 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_015 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_015
+    ✔ [auto-fix] PO spacing reformatted in e03_040_015
+
+  [1 WARN]         e03_040_015
+    ! [untranslated] 14 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | NARRATION, 0012 | CHOICE/RE:ACT, 0013 | CHOICE/RE:ACT, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_016 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_016
+    ✔ [auto-fix] PO spacing reformatted in e03_040_016
+
+  [1 WARN]         e03_040_016
+    ! [untranslated] 3 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_021 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_021
+    ✔ [auto-fix] PO spacing reformatted in e03_040_021
+
+  [1 WARN]         e03_040_021
+    ! [untranslated] 2 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_022 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_022
+    ✔ [auto-fix] PO spacing reformatted in e03_040_022
+
+  [1 WARN]         e03_040_022
+    ! [untranslated] 32 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | CHOICE/RE:ACT, 0032 | CHOICE/RE:ACT, 0033 | NARRATION
+    i [not_copy_of_source] Entry "0027 | MAKOTO NAEGI" (line 248): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_025 Nurse Office Investigation
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_025
+    ✔ [auto-fix] PO spacing reformatted in e03_040_025
+
+  [1 WARN]         e03_040_025
+    ! [untranslated] 17 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | CHOICE/RE:ACT, 0017 | CHOICE/RE:ACT, 0018 | NARRATION
+    i [not_copy_of_source] Entry "0009 | MAKOTO NAEGI" (line 83): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_026 Locker Room Access
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_026
+    ✔ [auto-fix] PO spacing reformatted in e03_040_026
+
+  [OK]             e03_040_026
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_027 Locker Room Access
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_027
+    ✔ [auto-fix] PO spacing reformatted in e03_040_027
+
+  [1 WARN]         e03_040_027
+    ! [untranslated] 9 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | CHOICE/RE:ACT, 0008 | CHOICE/RE:ACT, 0009 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_030 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_030
+    ✔ [auto-fix] PO spacing reformatted in e03_040_030
+
+  [1 WARN]         e03_040_030
+    ! [untranslated] 4 untranslated: 0001 | MAKOTO NAEGI, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_031 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_031
+    ✔ [auto-fix] PO spacing reformatted in e03_040_031
+
+  [1 WARN]         e03_040_031
+    ! [untranslated] 16 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | CHOICE/RE:ACT, 0012 | CHOICE/RE:ACT, 0013 | NARRATION, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_032 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_032
+    ✔ [auto-fix] PO spacing reformatted in e03_040_032
+
+  [1 WARN]         e03_040_032
+    ! [untranslated] 14 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | NARRATION, 0012 | CHOICE/RE:ACT, 0013 | CHOICE/RE:ACT, 0014 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_033 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_033
+    ✔ [auto-fix] PO spacing reformatted in e03_040_033
+
+  [1 WARN]         e03_040_033
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | CHOICE/RE:ACT, 0005 | CHOICE/RE:ACT, 0006 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_041 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_041
+    ✔ [auto-fix] PO spacing reformatted in e03_040_041
+
+  [1 WARN]         e03_040_041
+    ! [untranslated] 1 untranslated: 0001 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_042 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_042
+    ✔ [auto-fix] PO spacing reformatted in e03_040_042
+
+  [1 WARN]         e03_040_042
+    ! [untranslated] 44 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | NARRATION, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | CHOICE/RE:ACT, 0043 | CHOICE/RE:ACT, 0044 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_044 Locker Size Inspection
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_044
+    ✔ [auto-fix] PO spacing reformatted in e03_040_044
+
+  [1 WARN]         e03_040_044
+    ! [untranslated] 30 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | NARRATION, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | CHOICE/RE:ACT, 0029 | CHOICE/RE:ACT, 0030 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_046
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_046
+    ✔ [auto-fix] PO spacing reformatted in e03_040_046
+
+  [2 WARNS]        e03_040_046
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Khi Hina kiểm tra nó, một ai đó đã đi vào phòng kho và\\nkhóa cửa lại rồi.\\n<CLT>' → 0133 | MAKOTO NAEGI (line 1082) | '<CLT 4>Khi Hina kiểm tra nó, một ai đó đã vào trong phòng kho rồi\\nkhóa cửa lại.\\n<CLT>' → 0296 | MAKOTO NAEGI (line 2626), 0313 | MAKOTO NAEGI (line 2808)
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Khi xong việc, bọn họ đã mở khóa và rời đi. Đó là lý do\\ntại sao bây giờ nó không còn khóa nữa...\\n<CLT>' → 0134 | MAKOTO NAEGI (line 1095) | '<CLT 4>Khi họ xong việc, họ đã mở khóa và rời đi. Đó là lý do tại\\nsao bây giờ nó không còn khóa nữa...\\n<CLT>' → 0297 | MAKOTO NAEGI (line 2639), 0314 | MAKOTO NAEGI (line 2821)
+    i [not_copy_of_source] Entry "0004 | MAKOTO NAEGI" (line 53): translation is identical to source text
+    i [not_copy_of_source] Entry "0010 | BYAKUYA TOGAMI" (line 98): translation is identical to source text
+    i [not_copy_of_source] Entry "0053 | BYAKUYA TOGAMI" (line 433): translation is identical to source text
+    i [not_copy_of_source] Entry "0095 | BYAKUYA TOGAMI" (line 777): translation is identical to source text
+    i [not_copy_of_source] Entry "0105 | BYAKUYA TOGAMI" (line 842): translation is identical to source text
+    i [not_copy_of_source] Entry "0171 | CELES" (line 1412): translation is identical to source text
+    i [not_copy_of_source] Entry "0243 | MAKOTO NAEGI" (line 2041): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_047
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_047
+    ✔ [auto-fix] PO spacing reformatted in e03_040_047
+
+  [1 WARN]         e03_040_047
+    ! [untranslated] 12 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_048
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_048
+    ✔ [auto-fix] PO spacing reformatted in e03_040_048
+
+  [OK]             e03_040_048
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_051
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_051
+    ✔ [auto-fix] PO spacing reformatted in e03_040_051
+
+  [2 WARNS]        e03_040_051
+    ! [untranslated] 8 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0008 | CHOICE/RE:ACT, 0009 | CHOICE/RE:ACT, 0010 | NARRATION, 0011 | CHOICE/RE:ACT, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 33): CLT tag mismatch — missing: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_052
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_052
+    ✔ [auto-fix] PO spacing reformatted in e03_040_052
+
+  [3 WARNS]        e03_040_052
+    ! [untranslated] 8 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0011 | CHOICE/RE:ACT, 0012 | CHOICE/RE:ACT, 0013 | NARRATION, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Có một loại vết bánh xe đi xuyên qua vũng máu ở giữa căn phòng.\\n<CLT>' → 0007 | MAKOTO NAEGI (line 81) | '<CLT 4>Đã có máu dính trên bánh xe của nó...!\\n<CLT>' → 0009 | MAKOTO NAEGI (line 104)
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Chuyện đó làm tớ nhớ ra... Về chiếc xe đẩy trong phòng kho...\\n<CLT>' → 0008 | MAKOTO NAEGI (line 92) | '<CLT 4>Liệu vết máu đó có phải đến từ...\\n<CLT>' → 0010 | MAKOTO NAEGI (line 115)
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_101
+    ✔ [auto-fix] PO spacing reformatted in e03_040_101
+
+  [11 WARNS]       e03_040_101
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | NARRATION, 0008 | NARRATION, 0017 | NARRATION, 0021 | NARRATION
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Tớ cảm giác như mình đã thấy nó ở đâu đó trước đây. Và\\ncũng chỉ mới gần đây thôi...\\n<CLT>' → 0006 | MAKOTO NAEGI (line 66) | '<CLT 4>Đã có máu dính trên bánh xe của nó...!\\n<CLT>' → 0009 | MAKOTO NAEGI (line 95) | '<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng để di\\nchuyển xác của Taka...\\n<CLT>' → 0015 | MAKOTO NAEGI (line 150) | 'Đó vẫn còn là một bí ẩn hoàn toàn...' → 0018 | MAKOTO NAEGI (line 179) | '<CLT 4>...vậy còn Hifumi thì sao?\\n<CLT>' → 0022 | MAKOTO NAEGI (line 218)
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 34): CLT tag mismatch — missing: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0006 | MAKOTO NAEGI" (line 66): CLT tag mismatch — extra: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0009 | MAKOTO NAEGI" (line 95): CLT tag mismatch — extra: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0013 | MAKOTO NAEGI" (line 131): CLT tag mismatch — extra: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0014 | NARRATION" (line 139): CLT tag mismatch — extra: <CLT 3>
+    ! [clt_tag_integrity] Entry "0015 | MAKOTO NAEGI" (line 150): CLT tag mismatch — extra: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0022 | MAKOTO NAEGI" (line 218): CLT tag mismatch — extra: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0024 | MAKOTO NAEGI" (line 237): CLT tag mismatch — missing: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0027 | MAKOTO NAEGI" (line 267): CLT tag mismatch — extra: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_135
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_135
+    ✔ [auto-fix] PO spacing reformatted in e03_040_135
+
+  [2 WARNS]        e03_040_135
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | NARRATION
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 31): CLT tag mismatch — missing: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_136
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_136
+    ✔ [auto-fix] PO spacing reformatted in e03_040_136
+
+  [2 WARNS]        e03_040_136
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 37): CLT tag mismatch — missing: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_137
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_137
+    ✔ [auto-fix] PO spacing reformatted in e03_040_137
+
+  [3 WARNS]        e03_040_137
+    ! [untranslated] 9 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | NARRATION, 0012 | NARRATION, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 33): CLT tag mismatch — missing: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0013 | MAKOTO NAEGI" (line 124): CLT tag mismatch — extra: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_139
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_139
+    ✔ [auto-fix] PO spacing reformatted in e03_040_139
+
+  [4 WARNS]        e03_040_139
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0016 | CHOICE/RE:ACT, 0017 | CHOICE/RE:ACT, 0018 | NARRATION
+    ! [repeated_source_inconsistent] Repeated identical msgid has inconsistent translations: '<CLT 4>Hả? Tấm bạt này...\\n<CLT>' → 0005 | MAKOTO NAEGI (line 57) | '<CLT 4>Tớ cảm giác như mình đã thấy nó ở đâu đó trước đây. Và\\ncũng chỉ mới gần đây thôi...\\n<CLT>' → 0006 | MAKOTO NAEGI (line 69) | '<CLT 4>Có một loại vết bánh xe đi xuyên qua vũng máu ở giữa căn phòng.\\n<CLT>' → 0007 | MAKOTO NAEGI (line 82) | '<CLT 4>Chuyện đó làm tớ nhớ ra... Về chiếc xe đẩy trong phòng kho...\\n<CLT>' → 0008 | MAKOTO NAEGI (line 94) | '<CLT 4>Đã có máu dính trên bánh xe của nó...!\\n<CLT>' → 0009 | MAKOTO NAEGI (line 106) | '<CLT 4>Liệu vết máu đó có phải đến từ...\\n<CLT>' → 0010 | MAKOTO NAEGI (line 118) | '<CLT 4>...đây không?\\n<CLT>' → 0011 | MAKOTO NAEGI (line 130)
+    ! [clt_tag_integrity] Entry "0003 | MAKOTO NAEGI" (line 33): CLT tag mismatch — missing: <CLT 4>, <CLT>
+    ! [clt_tag_integrity] Entry "0012 | MAKOTO NAEGI" (line 142): CLT tag mismatch — missing: <CLT 4>, <CLT>
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_140
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_140
+    ✔ [auto-fix] PO spacing reformatted in e03_040_140
+
+  [1 WARN]         e03_040_140
+    ! [untranslated] 16 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_141
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_141
+    ✔ [auto-fix] PO spacing reformatted in e03_040_141
+
+  [1 WARN]         e03_040_141
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | CHOICE/RE:ACT, 0005 | CHOICE/RE:ACT, 0006 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_144
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_144
+    ✔ [auto-fix] PO spacing reformatted in e03_040_144
+
+  [1 WARN]         e03_040_144
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_145
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_145
+    ✔ [auto-fix] PO spacing reformatted in e03_040_145
+
+  [1 WARN]         e03_040_145
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_040_146
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_040_146
+    ✔ [auto-fix] PO spacing reformatted in e03_040_146
+
+  [1 WARN]         e03_040_146
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | CHOICE/RE:ACT, 0005 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_042_117
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_042_117
+    ✔ [auto-fix] PO spacing reformatted in e03_042_117
+
+  [1 WARN]         e03_042_117
+    ! [untranslated] 34 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION, 0013 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | NARRATION, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | CHOICE/RE:ACT, 0034 | CHOICE/RE:ACT, 0035 | NARRATION
+    i [not_copy_of_source] Entry "0014 | MAKOTO NAEGI" (line 124): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_043_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_043_101
+    ✔ [auto-fix] PO spacing reformatted in e03_043_101
+
+  [1 WARN]         e03_043_101
+    ! [untranslated] 13 untranslated: 0001 | AOI ASAHINA, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | AOI ASAHINA, 0007 | AOI ASAHINA, 0008 | MAKOTO NAEGI, 0009 | AOI ASAHINA, 0010 | AOI ASAHINA, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_044_030
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_044_030
+    ✔ [auto-fix] PO spacing reformatted in e03_044_030
+
+  [1 WARN]         e03_044_030
+    ! [untranslated] 195 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | YASUHIRO HAGAKURE, 0005 | YASUHIRO HAGAKURE, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | KYOUKO KIRIGIRI, 0012 | MAKOTO NAEGI, 0013 | KYOUKO KIRIGIRI, 0014 | KYOUKO KIRIGIRI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | KYOUKO KIRIGIRI, 0018 | YASUHIRO HAGAKURE, 0019 | YASUHIRO HAGAKURE, 0020 | BYAKUYA TOGAMI, 0021 | YASUHIRO HAGAKURE, 0022 | YASUHIRO HAGAKURE, 0023 | CELES, 0024 | YASUHIRO HAGAKURE, 0025 | KYOUKO KIRIGIRI, 0026 | KYOUKO KIRIGIRI, 0027 | KYOUKO KIRIGIRI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | YASUHIRO HAGAKURE, 0031 | AOI ASAHINA, 0032 | CELES, 0033 | YASUHIRO HAGAKURE, 0034 | CELES, 0035 | CELES, 0036 | BYAKUYA TOGAMI, 0037 | MAKOTO NAEGI, 0038 | AOI ASAHINA, 0039 | AOI ASAHINA, 0040 | CELES, 0041 | AOI ASAHINA, 0042 | YASUHIRO HAGAKURE, 0043 | MAKOTO NAEGI, 0044 | KYOUKO KIRIGIRI, 0045 | YASUHIRO HAGAKURE, 0046 | YASUHIRO HAGAKURE, 0047 | AOI ASAHINA, 0048 | AOI ASAHINA, 0049 | YASUHIRO HAGAKURE, 0050 | AOI ASAHINA, 0051 | AOI ASAHINA, 0052 | YASUHIRO HAGAKURE, 0053 | AOI ASAHINA, 0054 | MAKOTO NAEGI, 0055 | AOI ASAHINA, 0056 | AOI ASAHINA, 0057 | AOI ASAHINA, 0058 | YASUHIRO HAGAKURE, 0059 | AOI ASAHINA, 0060 | AOI ASAHINA, 0061 | YASUHIRO HAGAKURE, 0062 | CELES, 0063 | YASUHIRO HAGAKURE, 0064 | AOI ASAHINA, 0065 | AOI ASAHINA, 0066 | MAKOTO NAEGI, 0067 | AOI ASAHINA, 0068 | YASUHIRO HAGAKURE, 0069 | BYAKUYA TOGAMI, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | AOI ASAHINA, 0074 | CELES, 0075 | YASUHIRO HAGAKURE, 0076 | CELES, 0077 | YASUHIRO HAGAKURE, 0078 | CELES, 0079 | YASUHIRO HAGAKURE, 0080 | AOI ASAHINA, 0081 | AOI ASAHINA, 0082 | YASUHIRO HAGAKURE, 0083 | YASUHIRO HAGAKURE, 0084 | NARRATION, 0086 | MAKOTO NAEGI, 0087 | MAKOTO NAEGI, 0088 | MAKOTO NAEGI, 0089 | YASUHIRO HAGAKURE, 0090 | MAKOTO NAEGI, 0091 | YASUHIRO HAGAKURE, 0092 | YASUHIRO HAGAKURE, 0094 | YASUHIRO HAGAKURE, 0096 | YASUHIRO HAGAKURE, 0097 | YASUHIRO HAGAKURE, 0098 | YASUHIRO HAGAKURE, 0099 | MAKOTO NAEGI, 0100 | MAKOTO NAEGI, 0101 | YASUHIRO HAGAKURE, 0102 | AOI ASAHINA, 0103 | YASUHIRO HAGAKURE, 0104 | YASUHIRO HAGAKURE, 0105 | YASUHIRO HAGAKURE, 0106 | KYOUKO KIRIGIRI, 0107 | YASUHIRO HAGAKURE, 0108 | YASUHIRO HAGAKURE, 0109 | KYOUKO KIRIGIRI, 0110 | YASUHIRO HAGAKURE, 0111 | AOI ASAHINA, 0112 | YASUHIRO HAGAKURE, 0113 | YASUHIRO HAGAKURE, 0114 | MAKOTO NAEGI, 0115 | YASUHIRO HAGAKURE, 0116 | YASUHIRO HAGAKURE, 0117 | YASUHIRO HAGAKURE, 0118 | YASUHIRO HAGAKURE, 0119 | YASUHIRO HAGAKURE, 0120 | YASUHIRO HAGAKURE, 0121 | AOI ASAHINA, 0122 | KYOUKO KIRIGIRI, 0123 | AOI ASAHINA, 0124 | YASUHIRO HAGAKURE, 0125 | YASUHIRO HAGAKURE, 0126 | AOI ASAHINA, 0127 | YASUHIRO HAGAKURE, 0128 | YASUHIRO HAGAKURE, 0129 | AOI ASAHINA, 0130 | YASUHIRO HAGAKURE, 0131 | AOI ASAHINA, 0132 | YASUHIRO HAGAKURE, 0134 | YASUHIRO HAGAKURE, 0135 | AOI ASAHINA, 0136 | YASUHIRO HAGAKURE, 0137 | CELES, 0138 | CELES, 0139 | YASUHIRO HAGAKURE, 0140 | NARRATION, 0141 | YASUHIRO HAGAKURE, 0142 | YASUHIRO HAGAKURE, 0143 | YASUHIRO HAGAKURE, 0144 | YASUHIRO HAGAKURE, 0145 | YASUHIRO HAGAKURE, 0146 | YASUHIRO HAGAKURE, 0147 | YASUHIRO HAGAKURE, 0148 | YASUHIRO HAGAKURE, 0149 | BYAKUYA TOGAMI, 0150 | BYAKUYA TOGAMI, 0151 | AOI ASAHINA, 0152 | AOI ASAHINA, 0153 | CELES, 0154 | CELES, 0155 | CELES, 0156 | MAKOTO NAEGI, 0157 | CELES, 0158 | MAKOTO NAEGI, 0159 | CELES, 0160 | MAKOTO NAEGI, 0161 | CELES, 0163 | CELES, 0164 | CELES, 0165 | MAKOTO NAEGI, 0166 | CELES, 0167 | MAKOTO NAEGI, 0168 | CELES, 0171 | MAKOTO NAEGI, 0172 | YASUHIRO HAGAKURE, 0174 | MAKOTO NAEGI, 0175 | MAKOTO NAEGI, 0176 | MAKOTO NAEGI, 0177 | BYAKUYA TOGAMI, 0178 | AOI ASAHINA, 0179 | AOI ASAHINA, 0180 | YASUHIRO HAGAKURE, 0181 | AOI ASAHINA, 0182 | AOI ASAHINA, 0183 | YASUHIRO HAGAKURE, 0184 | AOI ASAHINA, 0185 | BYAKUYA TOGAMI, 0186 | YASUHIRO HAGAKURE, 0187 | YASUHIRO HAGAKURE, 0188 | AOI ASAHINA, 0189 | AOI ASAHINA, 0190 | AOI ASAHINA, 0191 | AOI ASAHINA, 0192 | MAKOTO NAEGI, 0193 | KYOUKO KIRIGIRI, 0194 | MAKOTO NAEGI, 0195 | KYOUKO KIRIGIRI, 0196 | KYOUKO KIRIGIRI, 0198 | MAKOTO NAEGI, 0199 | MAKOTO NAEGI, 0200 | KYOUKO KIRIGIRI, 0201 | MAKOTO NAEGI, 0202 | KYOUKO KIRIGIRI, 0203 | MAKOTO NAEGI, 0204 | KYOUKO KIRIGIRI
+    i [not_copy_of_source] Entry "0085 | KYOUKO KIRIGIRI" (line 567): translation is identical to source text
+    i [not_copy_of_source] Entry "0093 | MAKOTO NAEGI" (line 619): translation is identical to source text
+    i [not_copy_of_source] Entry "0095 | MAKOTO NAEGI" (line 632): translation is identical to source text
+    i [not_copy_of_source] Entry "0133 | YASUHIRO HAGAKURE" (line 867): translation is identical to source text
+    i [not_copy_of_source] Entry "0162 | MAKOTO NAEGI" (line 1069): translation is identical to source text
+    i [not_copy_of_source] Entry "0169 | MAKOTO NAEGI" (line 1110): translation is identical to source text
+    i [not_copy_of_source] Entry "0170 | KYOUKO KIRIGIRI" (line 1115): translation is identical to source text
+    i [not_copy_of_source] Entry "0173 | MAKOTO NAEGI" (line 1130): translation is identical to source text
+    i [not_copy_of_source] Entry "0197 | MAKOTO NAEGI" (line 1286): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_045_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_045_021
+    ✔ [auto-fix] PO spacing reformatted in e03_045_021
+
+  [1 WARN]         e03_045_021
+    ! [untranslated] 17 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | MAKOTO NAEGI, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | KYOUKO KIRIGIRI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_045_041
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_045_041
+    ✔ [auto-fix] PO spacing reformatted in e03_045_041
+
+  [1 WARN]         e03_045_041
+    ! [untranslated] 6 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_045_046
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_045_046
+    ✔ [auto-fix] PO spacing reformatted in e03_045_046
+
+  [1 WARN]         e03_045_046
+    ! [untranslated] 211 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | KYOUKO KIRIGIRI, 0005 | MAKOTO NAEGI, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | KYOUKO KIRIGIRI, 0012 | MAKOTO NAEGI, 0013 | KYOUKO KIRIGIRI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | KYOUKO KIRIGIRI, 0017 | KYOUKO KIRIGIRI, 0018 | KYOUKO KIRIGIRI, 0019 | KYOUKO KIRIGIRI, 0020 | MAKOTO NAEGI, 0021 | KYOUKO KIRIGIRI, 0022 | KIYOTAKA ISHIMARU, 0023 | MAKOTO NAEGI, 0024 | KIYOTAKA ISHIMARU, 0025 | KYOUKO KIRIGIRI, 0026 | MAKOTO NAEGI, 0027 | NARRATION, 0028 | KYOUKO KIRIGIRI, 0029 | KYOUKO KIRIGIRI, 0030 | MAKOTO NAEGI, 0031 | KYOUKO KIRIGIRI, 0032 | MAKOTO NAEGI, 0033 | KYOUKO KIRIGIRI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | KYOUKO KIRIGIRI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | KYOUKO KIRIGIRI, 0043 | MAKOTO NAEGI, 0044 | KYOUKO KIRIGIRI, 0045 | NARRATION, 0046 | MAKOTO NAEGI, 0047 | KYOUKO KIRIGIRI, 0048 | KYOUKO KIRIGIRI, 0049 | MAKOTO NAEGI, 0050 | KYOUKO KIRIGIRI, 0051 | MAKOTO NAEGI, 0052 | KYOUKO KIRIGIRI, 0053 | MAKOTO NAEGI, 0054 | KYOUKO KIRIGIRI, 0055 | MAKOTO NAEGI, 0056 | KYOUKO KIRIGIRI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | NARRATION, 0061 | NARRATION, 0062 | KYOUKO KIRIGIRI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | KYOUKO KIRIGIRI, 0066 | YASUHIRO HAGAKURE, 0067 | YASUHIRO HAGAKURE, 0068 | YASUHIRO HAGAKURE, 0069 | YASUHIRO HAGAKURE, 0070 | MAKOTO NAEGI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | KYOUKO KIRIGIRI, 0074 | MAKOTO NAEGI, 0075 | KYOUKO KIRIGIRI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | KYOUKO KIRIGIRI, 0079 | KYOUKO KIRIGIRI, 0080 | MAKOTO NAEGI, 0081 | KYOUKO KIRIGIRI, 0082 | KYOUKO KIRIGIRI, 0083 | NARRATION, 0084 | KYOUKO KIRIGIRI, 0085 | KYOUKO KIRIGIRI, 0086 | KYOUKO KIRIGIRI, 0087 | KYOUKO KIRIGIRI, 0088 | MAKOTO NAEGI, 0089 | KYOUKO KIRIGIRI, 0090 | KYOUKO KIRIGIRI, 0091 | KYOUKO KIRIGIRI, 0092 | MAKOTO NAEGI, 0093 | MAKOTO NAEGI, 0094 | NARRATION, 0095 | NARRATION, 0096 | MONOKUMA, 0097 | MONOKUMA, 0098 | MONOKUMA, 0099 | MONOKUMA, 0100 | MONOKUMA, 0101 | MONOKUMA, 0102 | KYOUKO KIRIGIRI, 0103 | KYOUKO KIRIGIRI, 0104 | MAKOTO NAEGI, 0105 | KYOUKO KIRIGIRI, 0106 | MAKOTO NAEGI, 0107 | AOI ASAHINA, 0108 | SAKURA OOGAMI, 0109 | SAKURA OOGAMI, 0110 | CHOICE/RE:ACT, 0111 | CHOICE/RE:ACT, 0112 | SAKURA OOGAMI, 0113 | MAKOTO NAEGI, 0114 | SAKURA OOGAMI, 0115 | SAKURA OOGAMI, 0116 | SAKURA OOGAMI, 0117 | MAKOTO NAEGI, 0118 | SAKURA OOGAMI, 0119 | MAKOTO NAEGI, 0120 | MAKOTO NAEGI, 0121 | MAKOTO NAEGI, 0122 | SAKURA OOGAMI, 0123 | SAKURA OOGAMI, 0124 | SAKURA OOGAMI, 0125 | SAKURA OOGAMI, 0126 | SAKURA OOGAMI, 0127 | SAKURA OOGAMI, 0128 | SAKURA OOGAMI, 0129 | CELES, 0130 | BYAKUYA TOGAMI, 0131 | CELES, 0132 | MAKOTO NAEGI, 0133 | MAKOTO NAEGI, 0134 | SAKURA OOGAMI, 0135 | SAKURA OOGAMI, 0136 | AOI ASAHINA, 0137 | BYAKUYA TOGAMI, 0138 | CELES, 0139 | CELES, 0140 | CELES, 0141 | SAKURA OOGAMI, 0142 | NO NAME, 0143 | MAKOTO NAEGI, 0144 | AOI ASAHINA, 0145 | CELES, 0146 | MAKOTO NAEGI, 0147 | MAKOTO NAEGI, 0148 | MAKOTO NAEGI, 0149 | MAKOTO NAEGI, 0150 | MAKOTO NAEGI, 0151 | MAKOTO NAEGI, 0152 | MAKOTO NAEGI, 0153 | MAKOTO NAEGI, 0154 | MAKOTO NAEGI, 0155 | SAKURA OOGAMI, 0156 | SAKURA OOGAMI, 0157 | SAKURA OOGAMI, 0158 | MAKOTO NAEGI, 0159 | MAKOTO NAEGI, 0160 | MAKOTO NAEGI, 0161 | MAKOTO NAEGI, 0162 | MAKOTO NAEGI, 0163 | CELES, 0164 | MAKOTO NAEGI, 0165 | SAKURA OOGAMI, 0166 | BYAKUYA TOGAMI, 0167 | SAKURA OOGAMI, 0168 | MAKOTO NAEGI, 0169 | MAKOTO NAEGI, 0170 | MAKOTO NAEGI, 0171 | SAKURA OOGAMI, 0172 | MAKOTO NAEGI, 0173 | MAKOTO NAEGI, 0174 | SAKURA OOGAMI, 0175 | SAKURA OOGAMI, 0176 | MAKOTO NAEGI, 0177 | MAKOTO NAEGI, 0178 | MAKOTO NAEGI, 0179 | MAKOTO NAEGI, 0180 | MAKOTO NAEGI, 0181 | MAKOTO NAEGI, 0182 | MAKOTO NAEGI, 0183 | MAKOTO NAEGI, 0184 | MAKOTO NAEGI, 0185 | MAKOTO NAEGI, 0186 | MAKOTO NAEGI, 0187 | MAKOTO NAEGI, 0188 | MAKOTO NAEGI, 0189 | MAKOTO NAEGI, 0190 | MAKOTO NAEGI, 0191 | MAKOTO NAEGI, 0192 | MAKOTO NAEGI, 0193 | MAKOTO NAEGI, 0194 | MAKOTO NAEGI, 0195 | MAKOTO NAEGI, 0196 | MAKOTO NAEGI, 0197 | MAKOTO NAEGI, 0198 | MAKOTO NAEGI, 0199 | MAKOTO NAEGI, 0200 | MAKOTO NAEGI, 0201 | MAKOTO NAEGI, 0202 | MAKOTO NAEGI, 0203 | MAKOTO NAEGI, 0204 | MAKOTO NAEGI, 0205 | MAKOTO NAEGI, 0206 | MAKOTO NAEGI, 0207 | MAKOTO NAEGI, 0208 | MAKOTO NAEGI, 0209 | MAKOTO NAEGI, 0210 | MAKOTO NAEGI, 0211 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_046_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_046_001
+    ✔ [auto-fix] PO spacing reformatted in e03_046_001
+
+  [1 WARN]         e03_046_001
+    ! [untranslated] 22 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_046_201
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_046_201
+    ✔ [auto-fix] PO spacing reformatted in e03_046_201
+
+  [1 WARN]         e03_046_201
+    ! [untranslated] 55 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MONOKUMA, 0004 | MAKOTO NAEGI, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | KYOUKO KIRIGIRI, 0009 | MONOKUMA, 0010 | BYAKUYA TOGAMI, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | BYAKUYA TOGAMI, 0015 | YASUHIRO HAGAKURE, 0016 | AOI ASAHINA, 0017 | YASUHIRO HAGAKURE, 0018 | CELES, 0019 | YASUHIRO HAGAKURE, 0020 | CELES, 0021 | YASUHIRO HAGAKURE, 0022 | KYOUKO KIRIGIRI, 0023 | BYAKUYA TOGAMI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | BYAKUYA TOGAMI, 0035 | YASUHIRO HAGAKURE, 0036 | KYOUKO KIRIGIRI, 0037 | AOI ASAHINA, 0038 | TOUKO FUKAWA, 0039 | SAKURA OOGAMI, 0040 | CELES, 0041 | CELES, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_046_205
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_046_205
+    ✔ [auto-fix] PO spacing reformatted in e03_046_205
+
+  [1 WARN]         e03_046_205
+    ! [untranslated] 13 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | AOI ASAHINA, 0004 | YASUHIRO HAGAKURE, 0005 | MONOKUMA, 0006 | BYAKUYA TOGAMI, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_101_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_101_000
+    ✔ [auto-fix] PO spacing reformatted in e03_101_000
+
+  [1 WARN]         e03_101_000
+    ! [untranslated] 20 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | AOI ASAHINA, 0006 | MONOKUMA, 0007 | CELES, 0008 | AOI ASAHINA, 0009 | YASUHIRO HAGAKURE, 0010 | TOUKO FUKAWA, 0011 | YASUHIRO HAGAKURE, 0012 | CELES, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | CELES, 0017 | YASUHIRO HAGAKURE, 0018 | YASUHIRO HAGAKURE, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_102_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_102_000
+    ✔ [auto-fix] PO spacing reformatted in e03_102_000
+
+  [1 WARN]         e03_102_000
+    ! [untranslated] 7 untranslated: 0001 | CELES, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_102_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_102_001
+    ✔ [auto-fix] PO spacing reformatted in e03_102_001
+
+  [1 WARN]         e03_102_001
+    ! [untranslated] 13 untranslated: 0001 | CELES, 0002 | CELES, 0003 | CELES, 0004 | YASUHIRO HAGAKURE, 0005 | YASUHIRO HAGAKURE, 0006 | AOI ASAHINA, 0007 | YASUHIRO HAGAKURE, 0008 | YASUHIRO HAGAKURE, 0009 | YASUHIRO HAGAKURE, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_103_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_103_000
+    ✔ [auto-fix] PO spacing reformatted in e03_103_000
+
+  [1 WARN]         e03_103_000
+    ! [untranslated] 96 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | KYOUKO KIRIGIRI, 0008 | CELES, 0009 | SAKURA OOGAMI, 0010 | YASUHIRO HAGAKURE, 0011 | AOI ASAHINA, 0012 | BYAKUYA TOGAMI, 0013 | MAKOTO NAEGI, 0014 | AOI ASAHINA, 0015 | AOI ASAHINA, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | MAKOTO NAEGI, 0019 | AOI ASAHINA, 0020 | CHOICE/RE:ACT, 0021 | CHOICE/RE:ACT, 0022 | YASUHIRO HAGAKURE, 0023 | YASUHIRO HAGAKURE, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | CHOICE/RE:ACT, 0027 | AOI ASAHINA, 0028 | AOI ASAHINA, 0029 | AOI ASAHINA, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | BYAKUYA TOGAMI, 0033 | BYAKUYA TOGAMI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | BYAKUYA TOGAMI, 0040 | AOI ASAHINA, 0041 | BYAKUYA TOGAMI, 0042 | SAKURA OOGAMI, 0043 | BYAKUYA TOGAMI, 0044 | AOI ASAHINA, 0045 | TOUKO FUKAWA, 0046 | CELES, 0047 | BYAKUYA TOGAMI, 0048 | BYAKUYA TOGAMI, 0049 | AOI ASAHINA, 0050 | BYAKUYA TOGAMI, 0051 | SAKURA OOGAMI, 0052 | BYAKUYA TOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | BYAKUYA TOGAMI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | BYAKUYA TOGAMI, 0060 | BYAKUYA TOGAMI, 0061 | MAKOTO NAEGI, 0062 | BYAKUYA TOGAMI, 0063 | TOUKO FUKAWA, 0064 | BYAKUYA TOGAMI, 0065 | MAKOTO NAEGI, 0066 | AOI ASAHINA, 0067 | SAKURA OOGAMI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI, 0071 | BYAKUYA TOGAMI, 0072 | MAKOTO NAEGI, 0073 | MAKOTO NAEGI, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | MAKOTO NAEGI, 0079 | SAKURA OOGAMI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI, 0085 | CELES, 0086 | CELES, 0087 | MAKOTO NAEGI, 0088 | CELES, 0089 | CELES, 0090 | CELES, 0091 | CELES, 0092 | BYAKUYA TOGAMI, 0093 | CELES, 0094 | CELES, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_105_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_105_000
+    ✔ [auto-fix] PO spacing reformatted in e03_105_000
+
+  [1 WARN]         e03_105_000
+    ! [untranslated] 16 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | CELES, 0008 | MAKOTO NAEGI, 0009 | BYAKUYA TOGAMI, 0010 | AOI ASAHINA, 0011 | AOI ASAHINA, 0012 | SAKURA OOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | BYAKUYA TOGAMI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_106_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_106_000
+    ✔ [auto-fix] PO spacing reformatted in e03_106_000
+
+  [1 WARN]         e03_106_000
+    ! [untranslated] 16 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | AOI ASAHINA, 0006 | MAKOTO NAEGI, 0007 | BYAKUYA TOGAMI, 0008 | MAKOTO NAEGI, 0009 | AOI ASAHINA, 0010 | MAKOTO NAEGI, 0011 | TOUKO FUKAWA, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_106_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_106_001
+    ✔ [auto-fix] PO spacing reformatted in e03_106_001
+
+  [1 WARN]         e03_106_001
+    ! [untranslated] 13 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | BYAKUYA TOGAMI, 0003 | AOI ASAHINA, 0004 | AOI ASAHINA, 0005 | BYAKUYA TOGAMI, 0006 | AOI ASAHINA, 0007 | AOI ASAHINA, 0008 | AOI ASAHINA, 0009 | TOUKO FUKAWA, 0010 | TOUKO FUKAWA, 0011 | BYAKUYA TOGAMI, 0012 | BYAKUYA TOGAMI, 0013 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_107_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_107_000
+    ✔ [auto-fix] PO spacing reformatted in e03_107_000
+
+  [1 WARN]         e03_107_000
+    ! [untranslated] 135 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | AOI ASAHINA, 0006 | YASUHIRO HAGAKURE, 0007 | AOI ASAHINA, 0008 | AOI ASAHINA, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | AOI ASAHINA, 0012 | SAKURA OOGAMI, 0013 | CELES, 0014 | MAKOTO NAEGI, 0015 | TOUKO FUKAWA, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | TOUKO FUKAWA, 0019 | CHOICE/RE:ACT, 0020 | CHOICE/RE:ACT, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | CHOICE/RE:ACT, 0024 | YASUHIRO HAGAKURE, 0025 | YASUHIRO HAGAKURE, 0026 | KYOUKO KIRIGIRI, 0027 | YASUHIRO HAGAKURE, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | KYOUKO KIRIGIRI, 0031 | KYOUKO KIRIGIRI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | YASUHIRO HAGAKURE, 0037 | CELES, 0038 | YASUHIRO HAGAKURE, 0039 | KYOUKO KIRIGIRI, 0040 | KYOUKO KIRIGIRI, 0041 | KYOUKO KIRIGIRI, 0042 | SAKURA OOGAMI, 0043 | AOI ASAHINA, 0044 | YASUHIRO HAGAKURE, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | YASUHIRO HAGAKURE, 0048 | AOI ASAHINA, 0049 | SAKURA OOGAMI, 0050 | CELES, 0051 | CELES, 0052 | CELES, 0053 | CELES, 0054 | BYAKUYA TOGAMI, 0055 | HIFUMI YAMADA, 0056 | MAKOTO NAEGI, 0057 | HIFUMI YAMADA, 0058 | CELES, 0059 | CELES, 0060 | AOI ASAHINA, 0061 | YASUHIRO HAGAKURE, 0062 | KYOUKO KIRIGIRI, 0063 | KYOUKO KIRIGIRI, 0064 | KYOUKO KIRIGIRI, 0065 | KYOUKO KIRIGIRI, 0066 | SAKURA OOGAMI, 0067 | KYOUKO KIRIGIRI, 0068 | TOUKO FUKAWA, 0069 | SAKURA OOGAMI, 0070 | AOI ASAHINA, 0071 | SAKURA OOGAMI, 0072 | SAKURA OOGAMI, 0073 | SAKURA OOGAMI, 0074 | SAKURA OOGAMI, 0075 | SAKURA OOGAMI, 0076 | AOI ASAHINA, 0077 | SAKURA OOGAMI, 0078 | CELES, 0079 | CELES, 0080 | SAKURA OOGAMI, 0081 | SAKURA OOGAMI, 0082 | SAKURA OOGAMI, 0083 | SAKURA OOGAMI, 0084 | SAKURA OOGAMI, 0085 | SAKURA OOGAMI, 0086 | CELES, 0087 | BYAKUYA TOGAMI, 0088 | CELES, 0089 | MAKOTO NAEGI, 0090 | MAKOTO NAEGI, 0091 | CELES, 0092 | AOI ASAHINA, 0093 | BYAKUYA TOGAMI, 0094 | CELES, 0095 | CELES, 0096 | CELES, 0097 | MAKOTO NAEGI, 0098 | NO NAME, 0099 | MAKOTO NAEGI, 0100 | AOI ASAHINA, 0101 | CELES, 0102 | MAKOTO NAEGI, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | MAKOTO NAEGI, 0108 | MAKOTO NAEGI, 0109 | MAKOTO NAEGI, 0110 | SAKURA OOGAMI, 0111 | SAKURA OOGAMI, 0112 | SAKURA OOGAMI, 0113 | MAKOTO NAEGI, 0114 | MAKOTO NAEGI, 0115 | MAKOTO NAEGI, 0116 | MAKOTO NAEGI, 0117 | CELES, 0118 | MAKOTO NAEGI, 0119 | SAKURA OOGAMI, 0120 | BYAKUYA TOGAMI, 0121 | SAKURA OOGAMI, 0122 | SAKURA OOGAMI, 0123 | SAKURA OOGAMI, 0124 | SAKURA OOGAMI, 0125 | BYAKUYA TOGAMI, 0126 | BYAKUYA TOGAMI, 0127 | MAKOTO NAEGI, 0128 | KYOUKO KIRIGIRI, 0129 | KYOUKO KIRIGIRI, 0130 | MAKOTO NAEGI, 0131 | KYOUKO KIRIGIRI, 0132 | KYOUKO KIRIGIRI, 0133 | KYOUKO KIRIGIRI, 0134 | MAKOTO NAEGI, 0135 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_108_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_108_000
+    ✔ [auto-fix] PO spacing reformatted in e03_108_000
+
+  [1 WARN]         e03_108_000
+    ! [untranslated] 8 untranslated: 0001 | AOI ASAHINA, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_108_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_108_001
+    ✔ [auto-fix] PO spacing reformatted in e03_108_001
+
+  [1 WARN]         e03_108_001
+    ! [untranslated] 14 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | AOI ASAHINA, 0005 | AOI ASAHINA, 0006 | SAKURA OOGAMI, 0007 | AOI ASAHINA, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0010 | AOI ASAHINA, 0011 | AOI ASAHINA, 0012 | AOI ASAHINA, 0013 | AOI ASAHINA, 0014 | AOI ASAHINA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_109_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_109_000
+    ✔ [auto-fix] PO spacing reformatted in e03_109_000
+
+  [1 WARN]         e03_109_000
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | BYAKUYA TOGAMI, 0005 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_110_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_110_000
+    ✔ [auto-fix] PO spacing reformatted in e03_110_000
+
+  [1 WARN]         e03_110_000
+    ! [untranslated] 4 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_111_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_111_000
+    ✔ [auto-fix] PO spacing reformatted in e03_111_000
+
+  [1 WARN]         e03_111_000
+    ! [untranslated] 74 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | KIYOTAKA ISHIMARU, 0005 | MAKOTO NAEGI, 0006 | KIYOTAKA ISHIMARU, 0007 | KYOUKO KIRIGIRI, 0008 | MAKOTO NAEGI, 0009 | SAKURA OOGAMI, 0010 | MAKOTO NAEGI, 0011 | KYOUKO KIRIGIRI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | BYAKUYA TOGAMI, 0015 | BYAKUYA TOGAMI, 0016 | KYOUKO KIRIGIRI, 0017 | KYOUKO KIRIGIRI, 0018 | SAKURA OOGAMI, 0019 | SAKURA OOGAMI, 0020 | AOI ASAHINA, 0021 | NO NAME, 0022 | MAKOTO NAEGI, 0023 | AOI ASAHINA, 0024 | CELES, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | AOI ASAHINA, 0028 | AOI ASAHINA, 0029 | TOUKO FUKAWA, 0030 | YASUHIRO HAGAKURE, 0031 | AOI ASAHINA, 0032 | YASUHIRO HAGAKURE, 0033 | AOI ASAHINA, 0034 | SAKURA OOGAMI, 0035 | SAKURA OOGAMI, 0036 | CELES, 0037 | CELES, 0038 | CELES, 0039 | CELES, 0040 | CELES, 0041 | TOUKO FUKAWA, 0042 | YASUHIRO HAGAKURE, 0043 | BYAKUYA TOGAMI, 0044 | BYAKUYA TOGAMI, 0045 | TOUKO FUKAWA, 0046 | CELES, 0047 | CELES, 0048 | MAKOTO NAEGI, 0049 | KYOUKO KIRIGIRI, 0050 | KYOUKO KIRIGIRI, 0051 | KYOUKO KIRIGIRI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | CELES, 0055 | MAKOTO NAEGI, 0056 | CELES, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | YASUHIRO HAGAKURE, 0060 | KYOUKO KIRIGIRI, 0061 | AOI ASAHINA, 0062 | KYOUKO KIRIGIRI, 0063 | MAKOTO NAEGI, 0064 | AOI ASAHINA, 0065 | YASUHIRO HAGAKURE, 0066 | BYAKUYA TOGAMI, 0067 | BYAKUYA TOGAMI, 0068 | AOI ASAHINA, 0069 | SAKURA OOGAMI, 0070 | AOI ASAHINA, 0071 | BYAKUYA TOGAMI, 0072 | CELES, 0073 | MAKOTO NAEGI, 0074 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_112_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_112_000
+    ✔ [auto-fix] PO spacing reformatted in e03_112_000
+
+  [1 WARN]         e03_112_000
+    ! [untranslated] 9 untranslated: 0001 | SAKURA OOGAMI, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | KYOUKO KIRIGIRI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_112_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_112_001
+    ✔ [auto-fix] PO spacing reformatted in e03_112_001
+
+  [1 WARN]         e03_112_001
+    ! [untranslated] 13 untranslated: 0001 | SAKURA OOGAMI, 0002 | SAKURA OOGAMI, 0003 | CELES, 0004 | CELES, 0005 | KYOUKO KIRIGIRI, 0006 | CELES, 0007 | CELES, 0008 | CELES, 0009 | KYOUKO KIRIGIRI, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | KYOUKO KIRIGIRI, 0013 | KYOUKO KIRIGIRI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_113_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_113_000
+    ✔ [auto-fix] PO spacing reformatted in e03_113_000
+
+  [1 WARN]         e03_113_000
+    ! [untranslated] 57 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | MAKOTO NAEGI, 0004 | BYAKUYA TOGAMI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | BYAKUYA TOGAMI, 0008 | CELES, 0009 | BYAKUYA TOGAMI, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | YASUHIRO HAGAKURE, 0014 | BYAKUYA TOGAMI, 0015 | YASUHIRO HAGAKURE, 0016 | BYAKUYA TOGAMI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI, 0019 | TOUKO FUKAWA, 0020 | MAKOTO NAEGI, 0021 | CHOICE/RE:ACT, 0022 | CHOICE/RE:ACT, 0023 | KYOUKO KIRIGIRI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | CHOICE/RE:ACT, 0028 | TOUKO FUKAWA, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | BYAKUYA TOGAMI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | NARRATION, 0039 | MONOKUMA, 0040 | MONOKUMA, 0041 | MAKOTO NAEGI, 0042 | BYAKUYA TOGAMI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | SAKURA OOGAMI, 0047 | SAKURA OOGAMI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | TOUKO FUKAWA, 0051 | TOUKO FUKAWA, 0052 | CELES, 0053 | CELES, 0054 | KYOUKO KIRIGIRI, 0055 | KYOUKO KIRIGIRI, 0056 | CELES, 0057 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_114_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_114_000
+    ✔ [auto-fix] PO spacing reformatted in e03_114_000
+
+  [1 WARN]         e03_114_000
+    ! [untranslated] 10 untranslated: 0001 | AOI ASAHINA, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | CELES, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_114_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_114_001
+    ✔ [auto-fix] PO spacing reformatted in e03_114_001
+
+  [1 WARN]         e03_114_001
+    ! [untranslated] 17 untranslated: 0001 | AOI ASAHINA, 0002 | AOI ASAHINA, 0003 | AOI ASAHINA, 0004 | AOI ASAHINA, 0005 | BYAKUYA TOGAMI, 0006 | BYAKUYA TOGAMI, 0007 | CELES, 0008 | CELES, 0009 | CELES, 0010 | SAKURA OOGAMI, 0011 | CELES, 0012 | CELES, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | CELES, 0017 | CELES
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_115_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_115_000
+    ✔ [auto-fix] PO spacing reformatted in e03_115_000
+
+  [1 WARN]         e03_115_000
+    ! [untranslated] 137 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | CELES, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | CELES, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | KYOUKO KIRIGIRI, 0013 | MAKOTO NAEGI, 0014 | CELES, 0015 | KYOUKO KIRIGIRI, 0016 | KYOUKO KIRIGIRI, 0017 | KYOUKO KIRIGIRI, 0018 | MAKOTO NAEGI, 0019 | CELES, 0020 | CELES, 0021 | MAKOTO NAEGI, 0022 | CELES, 0023 | CELES, 0024 | AOI ASAHINA, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | AOI ASAHINA, 0033 | MAKOTO NAEGI, 0034 | SAKURA OOGAMI, 0035 | BYAKUYA TOGAMI, 0036 | TOUKO FUKAWA, 0037 | MAKOTO NAEGI, 0038 | YASUHIRO HAGAKURE, 0039 | MAKOTO NAEGI, 0040 | CELES, 0041 | MAKOTO NAEGI, 0042 | SAKURA OOGAMI, 0043 | YASUHIRO HAGAKURE, 0044 | KYOUKO KIRIGIRI, 0045 | KYOUKO KIRIGIRI, 0046 | KYOUKO KIRIGIRI, 0047 | KYOUKO KIRIGIRI, 0048 | AOI ASAHINA, 0049 | AOI ASAHINA, 0050 | KYOUKO KIRIGIRI, 0051 | TOUKO FUKAWA, 0052 | TOUKO FUKAWA, 0053 | KYOUKO KIRIGIRI, 0054 | KYOUKO KIRIGIRI, 0055 | CHOICE/RE:ACT, 0056 | CHOICE/RE:ACT, 0057 | SAKURA OOGAMI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | CHOICE/RE:ACT, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | YASUHIRO HAGAKURE, 0064 | YASUHIRO HAGAKURE, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI, 0070 | BYAKUYA TOGAMI, 0071 | MAKOTO NAEGI, 0072 | TOUKO FUKAWA, 0073 | AOI ASAHINA, 0074 | AOI ASAHINA, 0075 | AOI ASAHINA, 0076 | MAKOTO NAEGI, 0077 | MAKOTO NAEGI, 0078 | BYAKUYA TOGAMI, 0079 | KYOUKO KIRIGIRI, 0080 | KYOUKO KIRIGIRI, 0081 | SAKURA OOGAMI, 0082 | AOI ASAHINA, 0083 | KYOUKO KIRIGIRI, 0084 | YASUHIRO HAGAKURE, 0085 | KYOUKO KIRIGIRI, 0086 | KYOUKO KIRIGIRI, 0087 | KYOUKO KIRIGIRI, 0088 | KYOUKO KIRIGIRI, 0089 | MAKOTO NAEGI, 0090 | KYOUKO KIRIGIRI, 0091 | KYOUKO KIRIGIRI, 0092 | MAKOTO NAEGI, 0093 | KYOUKO KIRIGIRI, 0094 | YASUHIRO HAGAKURE, 0095 | MAKOTO NAEGI, 0096 | MAKOTO NAEGI, 0097 | MAKOTO NAEGI, 0098 | AOI ASAHINA, 0099 | MAKOTO NAEGI, 0100 | AOI ASAHINA, 0101 | TOUKO FUKAWA, 0102 | SAKURA OOGAMI, 0103 | MAKOTO NAEGI, 0104 | MAKOTO NAEGI, 0105 | MAKOTO NAEGI, 0106 | YASUHIRO HAGAKURE, 0107 | YASUHIRO HAGAKURE, 0108 | YASUHIRO HAGAKURE, 0109 | MAKOTO NAEGI, 0110 | YASUHIRO HAGAKURE, 0111 | CHOICE/RE:ACT, 0112 | CHOICE/RE:ACT, 0113 | MAKOTO NAEGI, 0114 | MAKOTO NAEGI, 0115 | CHOICE/RE:ACT, 0116 | AOI ASAHINA, 0117 | AOI ASAHINA, 0118 | SAKURA OOGAMI, 0119 | MAKOTO NAEGI, 0120 | MAKOTO NAEGI, 0121 | YASUHIRO HAGAKURE, 0122 | YASUHIRO HAGAKURE, 0123 | YASUHIRO HAGAKURE, 0124 | MAKOTO NAEGI, 0125 | MAKOTO NAEGI, 0126 | MAKOTO NAEGI, 0127 | MAKOTO NAEGI, 0128 | MAKOTO NAEGI, 0129 | MAKOTO NAEGI, 0130 | MAKOTO NAEGI, 0131 | TOUKO FUKAWA, 0132 | TOUKO FUKAWA, 0133 | TOUKO FUKAWA, 0134 | AOI ASAHINA, 0135 | TOUKO FUKAWA, 0136 | MAKOTO NAEGI, 0137 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_116_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_116_000
+    ✔ [auto-fix] PO spacing reformatted in e03_116_000
+
+  [1 WARN]         e03_116_000
+    ! [untranslated] 9 untranslated: 0001 | TOUKO FUKAWA, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_116_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_116_001
+    ✔ [auto-fix] PO spacing reformatted in e03_116_001
+
+  [1 WARN]         e03_116_001
+    ! [untranslated] 11 untranslated: 0001 | TOUKO FUKAWA, 0002 | TOUKO FUKAWA, 0003 | TOUKO FUKAWA, 0004 | KYOUKO KIRIGIRI, 0005 | KYOUKO KIRIGIRI, 0006 | SAKURA OOGAMI, 0007 | TOUKO FUKAWA, 0008 | TOUKO FUKAWA, 0009 | TOUKO FUKAWA, 0010 | TOUKO FUKAWA, 0011 | TOUKO FUKAWA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_117_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_117_000
+    ✔ [auto-fix] PO spacing reformatted in e03_117_000
+
+  [1 WARN]         e03_117_000
+    ! [untranslated] 84 untranslated: 0001 | MAKOTO NAEGI, 0002 | TOUKO FUKAWA, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | SAKURA OOGAMI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | TOUKO FUKAWA, 0011 | TOUKO FUKAWA, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE, 0014 | AOI ASAHINA, 0015 | TOUKO FUKAWA, 0016 | MAKOTO NAEGI, 0017 | AOI ASAHINA, 0018 | BYAKUYA TOGAMI, 0019 | BYAKUYA TOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | AOI ASAHINA, 0022 | MAKOTO NAEGI, 0023 | AOI ASAHINA, 0024 | SAKURA OOGAMI, 0025 | MAKOTO NAEGI, 0026 | KYOUKO KIRIGIRI, 0027 | KYOUKO KIRIGIRI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | AOI ASAHINA, 0034 | MAKOTO NAEGI, 0035 | KYOUKO KIRIGIRI, 0036 | KYOUKO KIRIGIRI, 0037 | SAKURA OOGAMI, 0038 | SAKURA OOGAMI, 0039 | SAKURA OOGAMI, 0040 | BYAKUYA TOGAMI, 0041 | KYOUKO KIRIGIRI, 0042 | YASUHIRO HAGAKURE, 0043 | YASUHIRO HAGAKURE, 0044 | YASUHIRO HAGAKURE, 0045 | YASUHIRO HAGAKURE, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | AOI ASAHINA, 0050 | SAKURA OOGAMI, 0051 | KYOUKO KIRIGIRI, 0052 | SAKURA OOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | BYAKUYA TOGAMI, 0055 | AOI ASAHINA, 0056 | TOUKO FUKAWA, 0057 | AOI ASAHINA, 0058 | YASUHIRO HAGAKURE, 0059 | CELES, 0060 | YASUHIRO HAGAKURE, 0061 | SAKURA OOGAMI, 0062 | YASUHIRO HAGAKURE, 0063 | YASUHIRO HAGAKURE, 0064 | YASUHIRO HAGAKURE, 0065 | YASUHIRO HAGAKURE, 0066 | YASUHIRO HAGAKURE, 0067 | YASUHIRO HAGAKURE, 0068 | YASUHIRO HAGAKURE, 0069 | BYAKUYA TOGAMI, 0070 | YASUHIRO HAGAKURE, 0071 | SAKURA OOGAMI, 0072 | SAKURA OOGAMI, 0073 | SAKURA OOGAMI, 0074 | CELES, 0075 | CELES, 0076 | AOI ASAHINA, 0077 | MAKOTO NAEGI, 0078 | AOI ASAHINA, 0079 | BYAKUYA TOGAMI, 0080 | YASUHIRO HAGAKURE, 0081 | SAKURA OOGAMI, 0082 | MAKOTO NAEGI, 0083 | MAKOTO NAEGI, 0084 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_118_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_118_000
+    ✔ [auto-fix] PO spacing reformatted in e03_118_000
+
+  [1 WARN]         e03_118_000
+    ! [untranslated] 11 untranslated: 0001 | SAKURA OOGAMI, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | TOUKO FUKAWA, 0006 | MAKOTO NAEGI, 0007 | YASUHIRO HAGAKURE, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_118_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_118_001
+    ✔ [auto-fix] PO spacing reformatted in e03_118_001
+
+  [1 WARN]         e03_118_001
+    ! [untranslated] 12 untranslated: 0001 | SAKURA OOGAMI, 0002 | SAKURA OOGAMI, 0003 | SAKURA OOGAMI, 0004 | CELES, 0005 | CELES, 0006 | CELES, 0007 | CELES, 0008 | TOUKO FUKAWA, 0009 | TOUKO FUKAWA, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_119_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_119_000
+    ✔ [auto-fix] PO spacing reformatted in e03_119_000
+
+  [1 WARN]         e03_119_000
+    ! [untranslated] 19 untranslated: 0001 | MAKOTO NAEGI, 0002 | YASUHIRO HAGAKURE, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | AOI ASAHINA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | SAKURA OOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | AOI ASAHINA, 0015 | CELES, 0016 | CELES, 0017 | CELES, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_120_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_120_000
+    ✔ [auto-fix] PO spacing reformatted in e03_120_000
+
+  [1 WARN]         e03_120_000
+    ! [untranslated] 6 untranslated: 0001 | CELES, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_120_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_120_001
+    ✔ [auto-fix] PO spacing reformatted in e03_120_001
+
+  [1 WARN]         e03_120_001
+    ! [untranslated] 12 untranslated: 0001 | CELES, 0002 | CELES, 0003 | CELES, 0004 | CELES, 0005 | SAKURA OOGAMI, 0006 | KYOUKO KIRIGIRI, 0007 | KYOUKO KIRIGIRI, 0008 | KYOUKO KIRIGIRI, 0009 | KYOUKO KIRIGIRI, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | KYOUKO KIRIGIRI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_121_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_121_000
+    ✔ [auto-fix] PO spacing reformatted in e03_121_000
+
+  [1 WARN]         e03_121_000
+    ! [untranslated] 154 untranslated: 0001 | MAKOTO NAEGI, 0002 | SAKURA OOGAMI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | MAKOTO NAEGI, 0006 | KYOUKO KIRIGIRI, 0007 | KYOUKO KIRIGIRI, 0008 | KYOUKO KIRIGIRI, 0009 | BYAKUYA TOGAMI, 0010 | KYOUKO KIRIGIRI, 0011 | KYOUKO KIRIGIRI, 0012 | KYOUKO KIRIGIRI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | BYAKUYA TOGAMI, 0019 | BYAKUYA TOGAMI, 0020 | BYAKUYA TOGAMI, 0021 | AOI ASAHINA, 0022 | BYAKUYA TOGAMI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | SAKURA OOGAMI, 0030 | TOUKO FUKAWA, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | YASUHIRO HAGAKURE, 0035 | SAKURA OOGAMI, 0036 | SAKURA OOGAMI, 0037 | AOI ASAHINA, 0038 | YASUHIRO HAGAKURE, 0039 | YASUHIRO HAGAKURE, 0040 | AOI ASAHINA, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | KYOUKO KIRIGIRI, 0044 | KYOUKO KIRIGIRI, 0045 | MAKOTO NAEGI, 0046 | KYOUKO KIRIGIRI, 0047 | MAKOTO NAEGI, 0048 | BYAKUYA TOGAMI, 0049 | MAKOTO NAEGI, 0050 | KYOUKO KIRIGIRI, 0051 | MAKOTO NAEGI, 0052 | BYAKUYA TOGAMI, 0053 | BYAKUYA TOGAMI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | CELES, 0057 | CELES, 0058 | BYAKUYA TOGAMI, 0060 | CELES, 0061 | CELES, 0062 | CELES, 0063 | CELES, 0064 | BYAKUYA TOGAMI, 0065 | CELES, 0066 | BYAKUYA TOGAMI, 0067 | BYAKUYA TOGAMI, 0068 | CHOICE/RE:ACT, 0069 | CHOICE/RE:ACT, 0070 | KYOUKO KIRIGIRI, 0071 | MAKOTO NAEGI, 0072 | MAKOTO NAEGI, 0073 | CHOICE/RE:ACT, 0074 | MAKOTO NAEGI, 0075 | MAKOTO NAEGI, 0076 | BYAKUYA TOGAMI, 0077 | MAKOTO NAEGI, 0078 | MAKOTO NAEGI, 0079 | MAKOTO NAEGI, 0080 | MAKOTO NAEGI, 0081 | MAKOTO NAEGI, 0082 | BYAKUYA TOGAMI, 0083 | MAKOTO NAEGI, 0084 | BYAKUYA TOGAMI, 0085 | BYAKUYA TOGAMI, 0086 | AOI ASAHINA, 0087 | BYAKUYA TOGAMI, 0088 | BYAKUYA TOGAMI, 0089 | CELES, 0090 | BYAKUYA TOGAMI, 0091 | BYAKUYA TOGAMI, 0092 | SAKURA OOGAMI, 0093 | BYAKUYA TOGAMI, 0094 | AOI ASAHINA, 0095 | BYAKUYA TOGAMI, 0096 | CELES, 0097 | CELES, 0098 | CELES, 0099 | BYAKUYA TOGAMI, 0100 | BYAKUYA TOGAMI, 0101 | NO NAME, 0102 | MAKOTO NAEGI, 0103 | AOI ASAHINA, 0104 | CELES, 0105 | MAKOTO NAEGI, 0106 | MAKOTO NAEGI, 0107 | AOI ASAHINA, 0108 | BYAKUYA TOGAMI, 0109 | CELES, 0110 | BYAKUYA TOGAMI, 0111 | CELES, 0112 | CELES, 0113 | BYAKUYA TOGAMI, 0115 | BYAKUYA TOGAMI, 0116 | NO NAME, 0117 | BYAKUYA TOGAMI, 0118 | BYAKUYA TOGAMI, 0119 | BYAKUYA TOGAMI, 0121 | MAKOTO NAEGI, 0122 | MAKOTO NAEGI, 0123 | CELES, 0124 | CELES, 0125 | CELES, 0126 | MAKOTO NAEGI, 0127 | MAKOTO NAEGI, 0129 | AOI ASAHINA, 0130 | MAKOTO NAEGI, 0131 | AOI ASAHINA, 0132 | AOI ASAHINA, 0133 | MAKOTO NAEGI, 0134 | BYAKUYA TOGAMI, 0135 | BYAKUYA TOGAMI, 0136 | CELES, 0137 | BYAKUYA TOGAMI, 0138 | BYAKUYA TOGAMI, 0139 | CELES, 0140 | BYAKUYA TOGAMI, 0141 | BYAKUYA TOGAMI, 0142 | CELES, 0143 | BYAKUYA TOGAMI, 0144 | CELES, 0145 | CELES, 0146 | CELES, 0147 | CELES, 0148 | SAKURA OOGAMI, 0149 | BYAKUYA TOGAMI, 0150 | BYAKUYA TOGAMI, 0151 | BYAKUYA TOGAMI, 0152 | BYAKUYA TOGAMI, 0153 | BYAKUYA TOGAMI, 0154 | YASUHIRO HAGAKURE, 0155 | BYAKUYA TOGAMI, 0156 | BYAKUYA TOGAMI, 0158 | MAKOTO NAEGI, 0159 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0059 | CELES" (line 456): translation is identical to source text
+    i [not_copy_of_source] Entry "0114 | CELES" (line 836): translation is identical to source text
+    i [not_copy_of_source] Entry "0120 | CELES" (line 876): translation is identical to source text
+    i [not_copy_of_source] Entry "0128 | CELES" (line 924): translation is identical to source text
+    i [not_copy_of_source] Entry "0157 | CELES" (line 1122): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_122_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_122_000
+    ✔ [auto-fix] PO spacing reformatted in e03_122_000
+
+  [1 WARN]         e03_122_000
+    ! [untranslated] 12 untranslated: 0001 | CELES, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | CELES, 0006 | MAKOTO NAEGI, 0007 | BYAKUYA TOGAMI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_122_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_122_001
+    ✔ [auto-fix] PO spacing reformatted in e03_122_001
+
+  [1 WARN]         e03_122_001
+    ! [untranslated] 9 untranslated: 0001 | CELES, 0002 | CELES, 0003 | CELES, 0004 | CELES, 0005 | CELES, 0006 | CELES, 0007 | CELES, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_123_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_123_000
+    ✔ [auto-fix] PO spacing reformatted in e03_123_000
+
+  [1 WARN]         e03_123_000
+    ! [untranslated] 56 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0004 | BYAKUYA TOGAMI, 0005 | BYAKUYA TOGAMI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0010 | CELES, 0011 | CELES, 0012 | BYAKUYA TOGAMI, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | YASUHIRO HAGAKURE, 0017 | YASUHIRO HAGAKURE, 0018 | CELES, 0019 | CELES, 0020 | CELES, 0021 | CELES, 0022 | KYOUKO KIRIGIRI, 0023 | CELES, 0024 | KYOUKO KIRIGIRI, 0025 | CELES, 0026 | MAKOTO NAEGI, 0027 | CHOICE/RE:ACT, 0028 | CHOICE/RE:ACT, 0029 | CELES, 0030 | KYOUKO KIRIGIRI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | CHOICE/RE:ACT, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | CELES, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | CELES, 0045 | KYOUKO KIRIGIRI, 0046 | KYOUKO KIRIGIRI, 0047 | KYOUKO KIRIGIRI, 0048 | KYOUKO KIRIGIRI, 0049 | KYOUKO KIRIGIRI, 0050 | YASUHIRO HAGAKURE, 0051 | CELES, 0052 | CELES, 0053 | CELES, 0054 | CELES, 0055 | KYOUKO KIRIGIRI, 0056 | CELES, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0003 | CELES" (line 32): translation is identical to source text
+    i [not_copy_of_source] Entry "0009 | CELES" (line 74): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_124_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_124_000
+    ✔ [auto-fix] PO spacing reformatted in e03_124_000
+
+  [1 WARN]         e03_124_000
+    ! [untranslated] 9 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | CELES, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_124_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_124_001
+    ✔ [auto-fix] PO spacing reformatted in e03_124_001
+
+  [1 WARN]         e03_124_001
+    ! [untranslated] 18 untranslated: 0001 | YASUHIRO HAGAKURE, 0002 | YASUHIRO HAGAKURE, 0003 | YASUHIRO HAGAKURE, 0004 | CELES, 0005 | CELES, 0006 | CELES, 0007 | CELES, 0008 | TOUKO FUKAWA, 0009 | YASUHIRO HAGAKURE, 0010 | YASUHIRO HAGAKURE, 0011 | YASUHIRO HAGAKURE, 0012 | YASUHIRO HAGAKURE, 0013 | YASUHIRO HAGAKURE, 0014 | YASUHIRO HAGAKURE, 0015 | YASUHIRO HAGAKURE, 0016 | YASUHIRO HAGAKURE, 0017 | YASUHIRO HAGAKURE, 0018 | YASUHIRO HAGAKURE
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_125_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_125_000
+    ✔ [auto-fix] PO spacing reformatted in e03_125_000
+
+  [1 WARN]         e03_125_000
+    ! [untranslated] 69 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | AOI ASAHINA, 0004 | AOI ASAHINA, 0005 | KYOUKO KIRIGIRI, 0006 | KYOUKO KIRIGIRI, 0007 | CELES, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | CELES, 0012 | BYAKUYA TOGAMI, 0013 | CELES, 0015 | CELES, 0016 | CELES, 0017 | CELES, 0018 | AOI ASAHINA, 0019 | CELES, 0020 | CELES, 0021 | AOI ASAHINA, 0022 | AOI ASAHINA, 0023 | HIFUMI YAMADA, 0024 | HIFUMI YAMADA, 0025 | HIFUMI YAMADA, 0026 | HIFUMI YAMADA, 0027 | CELES, 0028 | CELES, 0029 | CELES, 0030 | YASUHIRO HAGAKURE, 0031 | SAKURA OOGAMI, 0032 | KYOUKO KIRIGIRI, 0033 | CELES, 0034 | MAKOTO NAEGI, 0035 | CHOICE/RE:ACT, 0036 | CHOICE/RE:ACT, 0037 | YASUHIRO HAGAKURE, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | CHOICE/RE:ACT, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | KYOUKO KIRIGIRI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | KYOUKO KIRIGIRI, 0047 | KYOUKO KIRIGIRI, 0048 | MAKOTO NAEGI, 0049 | KYOUKO KIRIGIRI, 0050 | KYOUKO KIRIGIRI, 0051 | CELES, 0052 | TOUKO FUKAWA, 0053 | BYAKUYA TOGAMI, 0054 | KYOUKO KIRIGIRI, 0055 | KYOUKO KIRIGIRI, 0056 | KYOUKO KIRIGIRI, 0057 | MAKOTO NAEGI, 0058 | SAKURA OOGAMI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | CELES, 0062 | CELES, 0063 | CELES, 0064 | CELES, 0065 | CELES, 0066 | MAKOTO NAEGI, 0067 | CELES, 0068 | CELES, 0069 | MAKOTO NAEGI, 0070 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0014 | CELES" (line 102): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_126_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_126_000
+    ✔ [auto-fix] PO spacing reformatted in e03_126_000
+
+  [1 WARN]         e03_126_000
+    ! [untranslated] 8 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | CELES, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_126_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_126_001
+    ✔ [auto-fix] PO spacing reformatted in e03_126_001
+
+  [1 WARN]         e03_126_001
+    ! [untranslated] 20 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | KYOUKO KIRIGIRI, 0003 | AOI ASAHINA, 0004 | SAKURA OOGAMI, 0005 | CELES, 0006 | CELES, 0007 | CELES, 0008 | BYAKUYA TOGAMI, 0009 | CELES, 0010 | CELES, 0011 | CELES, 0012 | CELES, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | CELES, 0017 | CELES, 0018 | CELES, 0019 | CELES, 0020 | CELES
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_127_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_127_000
+    ✔ [auto-fix] PO spacing reformatted in e03_127_000
+
+  [1 WARN]         e03_127_000
+    ! [untranslated] 20 untranslated: 0001 | MAKOTO NAEGI, 0002 | CELES, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | CELES, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0016 | CELES, 0017 | CELES, 0018 | CELES, 0019 | CELES, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0011 | MAKOTO NAEGI" (line 83): translation is identical to source text
+    i [not_copy_of_source] Entry "0015 | CELES" (line 103): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_128_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_128_000
+    ✔ [auto-fix] PO spacing reformatted in e03_128_000
+
+  [1 WARN]         e03_128_000
+    ! [untranslated] 55 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_129_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_129_000
+    ✔ [auto-fix] PO spacing reformatted in e03_129_000
+
+  [1 WARN]         e03_129_000
+    ! [untranslated] 20 untranslated: 0001 | CELES, 0002 | CELES, 0003 | CELES, 0004 | CELES, 0005 | MAKOTO NAEGI, 0006 | CELES, 0007 | CELES, 0008 | CELES, 0009 | MAKOTO NAEGI, 0010 | BYAKUYA TOGAMI, 0011 | CELES, 0012 | BYAKUYA TOGAMI, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_150_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_150_000
+    ✔ [auto-fix] PO spacing reformatted in e03_150_000
+
+  [1 WARN]         e03_150_000
+    ! [untranslated] 19 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | NARRATION, 0007 | NARRATION, 0008 | NARRATION, 0009 | NARRATION, 0010 | NARRATION, 0011 | NARRATION, 0012 | NARRATION, 0013 | NARRATION, 0014 | NARRATION, 0015 | NARRATION, 0016 | NARRATION, 0017 | NARRATION, 0018 | NARRATION, 0019 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_196_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_196_000
+    ✔ [auto-fix] PO spacing reformatted in e03_196_000
+
+  [1 WARN]         e03_196_000
+    ! [untranslated] 20 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | CHOICE/RE:ACT, 0008 | NARRATION, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION, 0017 | CHOICE/RE:ACT, 0018 | CHOICE/RE:ACT, 0019 | CHOICE/RE:ACT, 0020 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_197_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_197_000
+    ✔ [auto-fix] PO spacing reformatted in e03_197_000
+
+  [1 WARN]         e03_197_000
+    ! [untranslated] 4 untranslated: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_198_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_198_000
+    ✔ [auto-fix] PO spacing reformatted in e03_198_000
+
+  [1 WARN]         e03_198_000
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_199_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_199_000
+    ✔ [auto-fix] PO spacing reformatted in e03_199_000
+
+  [1 WARN]         e03_199_000
+    ! [untranslated] 13 untranslated: 0001 | MAKOTO NAEGI, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MAKOTO NAEGI, 0010 | CHOICE/RE:ACT, 0011 | MAKOTO NAEGI, 0012 | CHOICE/RE:ACT, 0013 | NARRATION
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_200_205
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_200_205
+    ✔ [auto-fix] PO spacing reformatted in e03_200_205
+
+  [1 WARN]         e03_200_205
+    ! [untranslated] 168 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | CELES, 0005 | CELES, 0006 | CELES, 0007 | KYOUKO KIRIGIRI, 0008 | KYOUKO KIRIGIRI, 0009 | BYAKUYA TOGAMI, 0010 | CELES, 0011 | KYOUKO KIRIGIRI, 0012 | CELES, 0013 | CELES, 0014 | CELES, 0015 | CELES, 0016 | CELES, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MONOKUMA, 0020 | KYOUKO KIRIGIRI, 0021 | MONOKUMA, 0022 | KYOUKO KIRIGIRI, 0023 | CELES, 0024 | KYOUKO KIRIGIRI, 0025 | CELES, 0026 | CELES, 0027 | HIFUMI YAMADA, 0028 | CELES, 0029 | CELES, 0030 | HIFUMI YAMADA, 0031 | CELES, 0032 | HIFUMI YAMADA, 0033 | CELES, 0034 | CELES, 0035 | CELES, 0036 | CELES, 0037 | HIFUMI YAMADA, 0038 | HIFUMI YAMADA, 0039 | CELES, 0040 | HIFUMI YAMADA, 0041 | CELES, 0042 | HIFUMI YAMADA, 0043 | CELES, 0044 | CELES, 0045 | HIFUMI YAMADA, 0046 | CELES, 0047 | CELES, 0048 | HIFUMI YAMADA, 0049 | HIFUMI YAMADA, 0050 | HIFUMI YAMADA, 0051 | CELES, 0052 | HIFUMI YAMADA, 0053 | HIFUMI YAMADA, 0054 | CELES, 0055 | HIFUMI YAMADA, 0056 | CELES, 0057 | CELES, 0058 | HIFUMI YAMADA, 0059 | CELES, 0060 | HIFUMI YAMADA, 0061 | CELES, 0062 | HIFUMI YAMADA, 0063 | HIFUMI YAMADA, 0064 | CELES, 0065 | HIFUMI YAMADA, 0066 | HIFUMI YAMADA, 0067 | HIFUMI YAMADA, 0068 | CELES, 0069 | HIFUMI YAMADA, 0070 | CELES, 0071 | CELES, 0072 | CELES, 0073 | HIFUMI YAMADA, 0074 | CELES, 0075 | CELES, 0076 | CELES, 0077 | YASUHIRO HAGAKURE, 0078 | BYAKUYA TOGAMI, 0079 | CELES, 0080 | CELES, 0081 | CELES, 0082 | YASUHIRO HAGAKURE, 0083 | CELES, 0084 | YASUHIRO HAGAKURE, 0085 | CELES, 0086 | CELES, 0087 | YASUHIRO HAGAKURE, 0088 | SAKURA OOGAMI, 0089 | BYAKUYA TOGAMI, 0090 | CELES, 0091 | CELES, 0092 | CELES, 0093 | AOI ASAHINA, 0094 | CELES, 0095 | CELES, 0096 | CELES, 0097 | BYAKUYA TOGAMI, 0098 | CELES, 0099 | CELES, 0100 | SAKURA OOGAMI, 0101 | CELES, 0102 | CELES, 0103 | AOI ASAHINA, 0104 | CELES, 0105 | YASUHIRO HAGAKURE, 0106 | CELES, 0107 | KYOUKO KIRIGIRI, 0108 | AOI ASAHINA, 0109 | CELES, 0110 | CELES, 0111 | CELES, 0112 | YASUHIRO HAGAKURE, 0113 | CELES, 0114 | YASUHIRO HAGAKURE, 0115 | CELES, 0116 | CELES, 0117 | CELES, 0118 | CELES, 0119 | CELES, 0120 | CELES, 0121 | CELES, 0122 | CELES, 0123 | CELES, 0124 | MAKOTO NAEGI, 0125 | CELES, 0126 | MAKOTO NAEGI, 0127 | CELES, 0128 | CELES, 0129 | CELES, 0130 | CELES, 0131 | CELES, 0132 | CELES, 0133 | CELES, 0134 | CELES, 0135 | CELES, 0136 | AOI ASAHINA, 0137 | CELES, 0138 | CELES, 0139 | CELES, 0140 | CELES, 0141 | AOI ASAHINA, 0142 | AOI ASAHINA, 0143 | AOI ASAHINA, 0144 | AOI ASAHINA, 0145 | CELES, 0146 | CELES, 0147 | MAKOTO NAEGI, 0148 | CELES, 0149 | CELES, 0150 | CELES, 0151 | CELES, 0152 | YASUHIRO HAGAKURE, 0153 | CELES, 0154 | MAKOTO NAEGI, 0155 | MAKOTO NAEGI, 0156 | MAKOTO NAEGI, 0157 | MAKOTO NAEGI, 0158 | MAKOTO NAEGI, 0159 | MONOKUMA, 0160 | MONOKUMA, 0161 | MONOKUMA, 0162 | CELES, 0163 | KYOUKO KIRIGIRI, 0164 | CELES, 0165 | CELES, 0166 | CELES, 0167 | CELES, 0168 | CELES
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_200_211
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_200_211
+    ✔ [auto-fix] PO spacing reformatted in e03_200_211
+
+  [1 WARN]         e03_200_211
+    ! [untranslated] 49 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | YASUHIRO HAGAKURE, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA, 0022 | MONOKUMA, 0023 | KYOUKO KIRIGIRI, 0024 | KYOUKO KIRIGIRI, 0025 | KYOUKO KIRIGIRI, 0026 | MONOKUMA, 0027 | KYOUKO KIRIGIRI, 0028 | MONOKUMA, 0029 | MONOKUMA, 0030 | MONOKUMA, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MONOKUMA, 0037 | MONOKUMA, 0038 | MONOKUMA, 0039 | MONOKUMA, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | KYOUKO KIRIGIRI, 0046 | KYOUKO KIRIGIRI, 0047 | AOI ASAHINA, 0048 | BYAKUYA TOGAMI, 0049 | SAKURA OOGAMI, 0050 | KYOUKO KIRIGIRI, 0051 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0021 | KYOUKO KIRIGIRI" (line 162): translation is identical to source text
+    i [not_copy_of_source] Entry "0031 | KYOUKO KIRIGIRI" (line 216): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_201_101
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_201_101
+    ✔ [auto-fix] PO spacing reformatted in e03_201_101
+
+  [1 WARN]         e03_201_101
+    ! [untranslated] 23 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | BYAKUYA TOGAMI, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | BYAKUYA TOGAMI, 0009 | BYAKUYA TOGAMI, 0011 | MAKOTO NAEGI, 0012 | BYAKUYA TOGAMI, 0013 | MAKOTO NAEGI, 0015 | BYAKUYA TOGAMI, 0016 | BYAKUYA TOGAMI, 0017 | MAKOTO NAEGI, 0018 | SAKURA OOGAMI, 0019 | YASUHIRO HAGAKURE, 0020 | AOI ASAHINA, 0021 | AOI ASAHINA, 0022 | AOI ASAHINA, 0023 | MAKOTO NAEGI, 0024 | KYOUKO KIRIGIRI, 0025 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0010 | KYOUKO KIRIGIRI" (line 77): translation is identical to source text
+    i [not_copy_of_source] Entry "0014 | BYAKUYA TOGAMI" (line 97): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_201_141
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_201_141
+    ✔ [auto-fix] PO spacing reformatted in e03_201_141
+
+  [1 WARN]         e03_201_141
+    ! [untranslated] 43 untranslated: 0001 | KYOUKO KIRIGIRI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | ALTER EGO, 0005 | ALTER EGO, 0006 | KYOUKO KIRIGIRI, 0007 | MAKOTO NAEGI, 0008 | ALTER EGO, 0009 | ALTER EGO, 0010 | ALTER EGO, 0011 | ALTER EGO, 0012 | KYOUKO KIRIGIRI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | KYOUKO KIRIGIRI, 0018 | KYOUKO KIRIGIRI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | KYOUKO KIRIGIRI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0025 | KYOUKO KIRIGIRI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | KYOUKO KIRIGIRI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0033 | KYOUKO KIRIGIRI, 0034 | KYOUKO KIRIGIRI, 0035 | KYOUKO KIRIGIRI, 0036 | MAKOTO NAEGI, 0037 | KYOUKO KIRIGIRI, 0038 | KYOUKO KIRIGIRI, 0039 | KYOUKO KIRIGIRI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0015 | KYOUKO KIRIGIRI" (line 114): translation is identical to source text
+    i [not_copy_of_source] Entry "0032 | KYOUKO KIRIGIRI" (line 214): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_202_021
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_202_021
+    ✔ [auto-fix] PO spacing reformatted in e03_202_021
+
+  [1 WARN]         e03_202_021
+    ! [untranslated] 19 untranslated: 0002 | KYOUKO KIRIGIRI, 0003 | KYOUKO KIRIGIRI, 0004 | KYOUKO KIRIGIRI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0001 | MAKOTO NAEGI" (line 16): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_202_033
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_202_033
+    ✔ [auto-fix] PO spacing reformatted in e03_202_033
+
+  [1 WARN]         e03_202_033
+    ! [untranslated] 1 untranslated: 0001 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_202_035
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_202_035
+    ✔ [auto-fix] PO spacing reformatted in e03_202_035
+
+  [1 WARN]         e03_202_035
+    ! [untranslated] 12 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | NARRATION, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_202_036
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_202_036
+    ✔ [auto-fix] PO spacing reformatted in e03_202_036
+
+  [1 WARN]         e03_202_036
+    ! [untranslated] 68 untranslated: 0001 | NARRATION, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | KYOUKO KIRIGIRI, 0008 | KYOUKO KIRIGIRI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI, 0024 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | MAKOTO NAEGI, 0032 | MAKOTO NAEGI, 0033 | MAKOTO NAEGI, 0034 | MAKOTO NAEGI, 0035 | MAKOTO NAEGI, 0036 | MAKOTO NAEGI, 0037 | MAKOTO NAEGI, 0038 | MAKOTO NAEGI, 0039 | MAKOTO NAEGI, 0040 | MAKOTO NAEGI, 0041 | MAKOTO NAEGI, 0042 | MAKOTO NAEGI, 0043 | MAKOTO NAEGI, 0044 | MAKOTO NAEGI, 0045 | MAKOTO NAEGI, 0046 | MAKOTO NAEGI, 0047 | MAKOTO NAEGI, 0048 | MAKOTO NAEGI, 0049 | MAKOTO NAEGI, 0050 | MAKOTO NAEGI, 0051 | MAKOTO NAEGI, 0052 | MAKOTO NAEGI, 0053 | MAKOTO NAEGI, 0054 | MAKOTO NAEGI, 0055 | MAKOTO NAEGI, 0056 | MAKOTO NAEGI, 0057 | MAKOTO NAEGI, 0058 | MAKOTO NAEGI, 0059 | MAKOTO NAEGI, 0060 | MAKOTO NAEGI, 0061 | MAKOTO NAEGI, 0062 | MAKOTO NAEGI, 0063 | MAKOTO NAEGI, 0064 | MAKOTO NAEGI, 0065 | MAKOTO NAEGI, 0066 | MAKOTO NAEGI, 0067 | MAKOTO NAEGI, 0068 | MAKOTO NAEGI, 0069 | MAKOTO NAEGI
+    i [not_copy_of_source] Entry "0025 | MAKOTO NAEGI" (line 183): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_203_001
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_203_001
+    ✔ [auto-fix] PO spacing reformatted in e03_203_001
+
+  [1 WARN]         e03_203_001
+    ! [untranslated] 15 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | NARRATION, 0008 | MAKOTO NAEGI, 0009 | NARRATION, 0010 | MAKOTO NAEGI, 0011 | NARRATION, 0012 | MAKOTO NAEGI, 0013 | NARRATION, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_203_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_203_004
+    ✔ [auto-fix] PO spacing reformatted in e03_203_004
+
+  [1 WARN]         e03_203_004
+    ! [untranslated] 11 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | NARRATION, 0004 | NARRATION, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_203_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_203_006
+    ✔ [auto-fix] PO spacing reformatted in e03_203_006
+
+  [1 WARN]         e03_203_006
+    ! [untranslated] 30 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | NARRATION, 0004 | NARRATION, 0005 | NARRATION, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MAKOTO NAEGI, 0016 | SAKURA OOGAMI, 0017 | SAKURA OOGAMI, 0018 | SAKURA OOGAMI, 0019 | SAKURA OOGAMI, 0020 | MONOKUMA, 0021 | MONOKUMA, 0022 | MONOKUMA, 0023 | MONOKUMA, 0024 | SAKURA OOGAMI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | NARRATION
+    i [not_copy_of_source] Entry "0011 | SAKURA OOGAMI" (line 98): translation is identical to source text
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_211_000
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_211_000
+    ✔ [auto-fix] PO spacing reformatted in e03_211_000
+
+  [1 WARN]         e03_211_000
+    ! [untranslated] 3 untranslated: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_255_003
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_255_003
+    ✔ [auto-fix] PO spacing reformatted in e03_255_003
+
+  [1 WARN]         e03_255_003
+    ! [untranslated] 5 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_255_004
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_255_004
+    ✔ [auto-fix] PO spacing reformatted in e03_255_004
+
+  [1 WARN]         e03_255_004
+    ! [untranslated] 35 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | KYOUKO KIRIGIRI, 0005 | MAKOTO NAEGI, 0006 | AOI ASAHINA, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | KYOUKO KIRIGIRI, 0010 | MAKOTO NAEGI, 0011 | HIFUMI YAMADA, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | SAKURA OOGAMI, 0015 | CELES, 0016 | HIFUMI YAMADA, 0017 | MAKOTO NAEGI, 0018 | AOI ASAHINA, 0019 | YASUHIRO HAGAKURE, 0020 | KYOUKO KIRIGIRI, 0021 | KYOUKO KIRIGIRI, 0022 | KYOUKO KIRIGIRI, 0023 | KYOUKO KIRIGIRI, 0024 | MAKOTO NAEGI, 0025 | MAKOTO NAEGI, 0026 | MAKOTO NAEGI, 0027 | MAKOTO NAEGI, 0028 | MAKOTO NAEGI, 0029 | MAKOTO NAEGI, 0030 | MAKOTO NAEGI, 0031 | CELES, 0032 | MAKOTO NAEGI, 0033 | YASUHIRO HAGAKURE, 0034 | CELES, 0035 | CELES
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_255_005
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_255_005
+    ✔ [auto-fix] PO spacing reformatted in e03_255_005
+
+  [1 WARN]         e03_255_005
+    ! [untranslated] 21 untranslated: 0001 | BYAKUYA TOGAMI, 0002 | MAKOTO NAEGI, 0003 | BYAKUYA TOGAMI, 0004 | BYAKUYA TOGAMI, 0005 | MAKOTO NAEGI, 0006 | BYAKUYA TOGAMI, 0007 | BYAKUYA TOGAMI, 0008 | NARRATION, 0009 | MAKOTO NAEGI, 0010 | BYAKUYA TOGAMI, 0011 | MAKOTO NAEGI, 0012 | BYAKUYA TOGAMI, 0013 | BYAKUYA TOGAMI, 0014 | MAKOTO NAEGI, 0015 | BYAKUYA TOGAMI, 0016 | MAKOTO NAEGI, 0017 | BYAKUYA TOGAMI, 0018 | BYAKUYA TOGAMI, 0019 | NARRATION, 0020 | MAKOTO NAEGI, 0021 | MAKOTO NAEGI
+
+────────────────────────────────────────────────────────────────────────
+  CHAPTER  e03_255_006
+────────────────────────────────────────────────────────────────────────
+    ✔ [auto-fix] CRLF → LF normalized in e03_255_006
+    ✔ [auto-fix] PO spacing reformatted in e03_255_006
+
+  [1 WARN]         e03_255_006
+    ! [untranslated] 4 untranslated: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+========================================================================
+  SUMMARY
+========================================================================
+  Files OK          : 97
+  Files with issues : 104
+  Total ERRORs      : 0
+  Total WARNings    : 125
+========================================================================

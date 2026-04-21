@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Mình gần như lao xuống cầu thang, suýt chút nữa thì mất\n"
 "thăng bằng.\n"
 "<CLT>"
+
 #. <CLT 4>そして、息を切らしながら
 #. たどり着いた保健室で…
 #. <CLT>
@@ -35,10 +36,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình đã đến được phòng y tế trong tình trạng hoàn toàn hết hơi.\n"
 "<CLT>"
+
 #. …ッ！！
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "...!"
 msgstr "...!"
+
 #. <CLT 4>ボクは…自分の目を疑った…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -48,6 +51,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không thể tin vào mắt mình nữa...\n"
 "<CLT>"
+
 #. <CLT 4>ついさっきまで…
 #. そこにあったはずの山田クンの死体が…
 #. <CLT>
@@ -58,10 +62,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Xác của Hifumi mới vừa ở đó chỉ vài phút trước thôi.\n"
 "<CLT>"
+
 #. 消えた……？
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "It just...disappeared?"
 msgstr "Nó vừa mới... biến mất sao?"
+
 #. ………………
 msgctxt "0007 | AOI ASAHINA"
 msgid "..."
@@ -72,15 +78,18 @@ msgstr "..."
 msgctxt "0008 | AOI ASAHINA"
 msgid "Me and Celeste went to the bathroom..."
 msgstr "Tui và Celeste vừa đi vệ sinh một chút..."
+
 #. でも、目を離したのって…
 #. ほんの１分くらいだけだよ…
 msgctxt "0009 | AOI ASAHINA"
 msgid "But we were only gone for like a minute!"
 msgstr "Nhưng tụi tui mới đi có một phút thôi mà!"
+
 #. それで…戻って来たら……
 msgctxt "0010 | AOI ASAHINA"
 msgid "And then, when we got back..."
 msgstr "Và rồi, khi tụi tui quay lại..."
+
 #. おそらく…犯人の仕業でしょう…
 #. 犯人が、<CLT 3>死体を持ち去った<CLT>のです…
 msgctxt "0011 | CELES"
@@ -90,10 +99,12 @@ msgid ""
 msgstr ""
 "Đây chắc chắn là do hung thủ làm. Hắn hẳn là đã đến và\n"
 "<CLT 3>mang cái xác đi rồi<CLT>."
+
 #. まるで…楽しんでいるようですわね…
 msgctxt "0012 | CELES"
 msgid "They must really be enjoying this..."
 msgstr "Hắn chắc hẳn đang thực sự tận hưởng chuyện này..."
+
 #. わたくし達が怯え、混乱するのを見て…
 #. 楽しんでいるようですわ…
 msgctxt "0013 | CELES"
@@ -101,22 +112,27 @@ msgid ""
 "Enjoying the sight of us standing around, frightened\n"
 "and confused..."
 msgstr "Tận hưởng cảnh tượng chúng ta đứng đây, sợ hãi và bối rối..."
+
 #. このままだと…全員殺されてしまいます。
 msgctxt "0014 | CELES"
 msgid "We're all going to die here."
 msgstr "Tất cả chúng ta đều sẽ chết ở đây."
+
 #. 彼らのように…殺されてしまいます…
 msgctxt "0015 | CELES"
 msgid "We're going to die, just like those guys died..."
 msgstr "Chúng ta sẽ chết, giống như những người kia đã chết thôi..."
+
 #. 信じられん…
 msgctxt "0016 | BYAKUYA TOGAMI"
 msgid "I don't believe this."
 msgstr "Tôi không tin chuyện này."
+
 #. 死体が消えたなど…信じられん。
 msgctxt "0017 | BYAKUYA TOGAMI"
 msgid "I don't believe a body would just...disappear."
 msgstr "Tôi không tin một cái xác lại có thể... biến mất."
+
 #. 立て続けに<CLT 3>２件もの殺人<CLT>があった上に、
 #. さらには死体の消失まで…
 msgctxt "0018 | BYAKUYA TOGAMI"
@@ -126,15 +142,18 @@ msgid ""
 msgstr ""
 "Đầu tiên là <CLT 3>hai vụ giết người<CLT>, và giờ một trong số những\n"
 "cái xác đã bị mang đi sao?"
+
 #. …いくらなんでも不自然だ。
 msgctxt "0019 | BYAKUYA TOGAMI"
 msgid "This is...unnatural."
 msgstr "Chuyện này... thật bất thường."
+
 #. ちょ…ちょっと待って！
 #. 立て続けに２件もの殺人って…どういう意味？
 msgctxt "0020 | AOI ASAHINA"
 msgid "H-Hold on! What do you mean, TWO murders!?"
 msgstr "K-Khoan đã! Ý ông là sao, HAI vụ giết người cơ á!?"
+
 #. 石丸も殺されていたのだ。
 #. ３階の物理準備室でな…
 msgctxt "0021 | SAKURA OOGAMI"
@@ -142,23 +161,28 @@ msgid ""
 "Taka's been killed. We found him in the equipment\n"
 "room."
 msgstr "Taka đã bị giết. Chúng tôi tìm thấy cậu ấy ở phòng chuẩn bị."
+
 #. そんな…ッ！
 #. い、石丸まで…！？
 msgctxt "0022 | AOI ASAHINA"
 msgid "I-It can't be! Taka, too!?"
 msgstr "K-Không thể nào! Cả Taka nữa sao!?"
+
 #. そ、そんな…そんな事って……
 msgctxt "0023 | AOI ASAHINA"
 msgid "It can't be... It can't be..."
 msgstr "Không thể nào... Không thể nào..."
+
 #. イヤァァァァアアアアアアアア！！
 msgctxt "0024 | AOI ASAHINA"
 msgid "NooooooOOOOOOO!!!"
 msgstr "Khôôôôôôôôôông!!!"
+
 #. 落ち着くんだ、朝日奈ッ！
 msgctxt "0025 | SAKURA OOGAMI"
 msgid "Hina, calm down!"
 msgstr "Hina, bình tĩnh lại đi!"
+
 #. このままじゃ…本当に殺されちゃうよ…
 #. みんな…あいつに殺されちゃうよ…
 msgctxt "0026 | AOI ASAHINA"
@@ -168,14 +192,17 @@ msgid ""
 msgstr ""
 "Tất cả tụi mình sẽ chết mất... Tất cả... Hắn sẽ giết hết\n"
 "tụi mình mất!"
+
 #. …だとしたら、次の標的は腐川あたりか？
 msgctxt "0027 | BYAKUYA TOGAMI"
 msgid "Then who might the next target be? Toko?"
 msgstr "Vậy mục tiêu tiếp theo có thể là ai? Toko chăng?"
+
 #. えっ…？
 msgctxt "0028 | MAKOTO NAEGI"
 msgid "Huh...?"
 msgstr "Hả...?"
+
 #. 忘れていた…！
 #. あいつは物理準備室で気絶したままだ！
 msgctxt "0029 | SAKURA OOGAMI"
@@ -185,10 +212,12 @@ msgid ""
 msgstr ""
 "Tôi hoàn toàn quên mất! Cô ấy vẫn còn đang bất tỉnh ở\n"
 "phòng chuẩn bị!"
+
 #. …現場に置いてきたのですか！？
 msgctxt "0030 | CELES"
 msgid "You left her at the scene of the crime!?"
 msgstr "Cậu để cô ấy lại hiện trường vụ án sao!?"
+
 #. 仕方ないじゃないか。
 #. 気を失ったまま起きやしないんだからな。
 msgctxt "0031 | BYAKUYA TOGAMI"
@@ -198,10 +227,12 @@ msgid ""
 msgstr ""
 "Chúng tôi không có lựa chọn nào khác. Cô ta đã ngất đi, và\n"
 "cô ta chẳng chịu tỉnh lại."
+
 #. 気を失ったまま…？
 msgctxt "0032 | CELES"
 msgid "So she is still unconscious?"
 msgstr "Vậy là cô ấy vẫn còn đang bất tỉnh sao?"
+
 #. 十神、お主は気付いていたのか？
 #. ならば、なぜ…ッ！？
 msgctxt "0033 | SAKURA OOGAMI"
@@ -211,6 +242,7 @@ msgid ""
 msgstr ""
 "Khoan đã, vậy là cậu biết cô ấy vẫn còn ở trên đó mà không\n"
 "nói gì sao? Tại sao chứ...!?"
+
 #. 俺に付きまとう厄介者…
 #. 殺されてくれた方がありがたい…
 msgctxt "0034 | BYAKUYA TOGAMI"
@@ -220,10 +252,12 @@ msgid ""
 msgstr ""
 "Cái con côn trùng phiền phức cứ bám lấy tôi bất cứ đâu tôi\n"
 "đi... Chúng ta sẽ ổn hơn nếu không có cô ta."
+
 #. き、貴様…ッ！！
 msgctxt "0035 | SAKURA OOGAMI"
 msgid "Y-You bastard!"
 msgstr "T-Tên khốn nhà ngươi!"
+
 #. おいおい、お前らだって忘れてたんだ。
 #. 俺を責める権利なんてないはずだぞ。
 msgctxt "0036 | BYAKUYA TOGAMI"
@@ -233,6 +267,7 @@ msgid ""
 msgstr ""
 "Bình tĩnh đi. Chính các người cũng quên mất cô ta còn gì?\n"
 "Các người không có quyền gì mà đổ lỗi cho tôi đâu."
+
 #. ケンカしてる場合じゃないよ！
 #. それより早く戻ろうッ！！
 msgctxt "0037 | MAKOTO NAEGI"
@@ -242,6 +277,7 @@ msgid ""
 msgstr ""
 "Mọi người đừng cãi nhau nữa! Ngay lúc này chúng ta cần\n"
 "phải mau chóng quay lại!"
+
 #. もう…これ以上人が死ぬのはイヤだよ…
 msgctxt "0038 | AOI ASAHINA"
 msgid ""
@@ -250,6 +286,7 @@ msgid ""
 msgstr ""
 "Tui không chịu nổi nữa rồi... Tui không muốn có thêm bất\n"
 "kỳ ai phải chết nữa đâu!"
+
 #. 十神よ、もし腐川に何かあったら…
 #. 我は貴様を許さぬぞ…！！
 msgctxt "0039 | SAKURA OOGAMI"
@@ -259,6 +296,7 @@ msgid ""
 msgstr ""
 "Byakuya... Nếu có chuyện gì xảy ra với Toko, tôi sẽ không\n"
 "bao giờ tha thứ cho cậu đâu!"
+
 #. フッ…
 msgctxt "0040 | BYAKUYA TOGAMI"
 msgid "Hmph."

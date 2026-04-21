@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "Vẫn còn là buổi sáng, nhưng vì tất cả mọi chuyện đã xảy\n"
 "ra... mình đã thấy mệt mỏi rồi."
+
 #. <CLT 4>ともかく、気を取り直して…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,6 +31,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Dù sao thì, mình phải xốc lại tinh thần thôi.\n"
 "<CLT>"
+
 #. <CLT 4>今日は、これからどうしようかな？
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -40,6 +42,7 @@ msgstr ""
 "<CLT 4>Vậy mình nên làm gì trong thời gian còn lại của ngày hôm\n"
 "nay đây?\n"
 "<CLT>"
+
 #. <CLT 4>モノクマが写るモニター…
 #. 今は校章が浮かんでいるだけだ…
 #. <CLT>
@@ -52,6 +55,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
 "hiện. Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
@@ -60,6 +64,7 @@ msgid ""
 msgstr ""
 "Giờ có lo lắng về nó cũng chẳng giải quyết được gì. Mình\n"
 "nên cố gắng quên nó đi thôi..."
+
 #. <CLT 4>いつまで…こんな監視カメラで
 #. 見張られてなきゃならないんだ…！
 #. <CLT>
@@ -72,14 +77,17 @@ msgstr ""
 "<CLT 4>Chúng ta còn phải ngồi đây dưới sự giám sát không ngừng\n"
 "nghỉ của những chiếc camera này đến bao giờ nữa đây...!\n"
 "<CLT>"
+
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0009 | NARRATION"
@@ -89,10 +97,12 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. 舞園さんが…ここで…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Right here is where Sayaka..."
 msgstr "Chính tại nơi này là nơi Sayaka..."
+
 #. ………………
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "..."
@@ -109,6 +119,7 @@ msgstr ""
 "<CLT 4>Chúng ta còn phải kẹt ở đây, sống cái cuộc đời học đường\n"
 "này đến bao giờ nữa đây...?\n"
 "<CLT>"
+
 #. <CLT 4>鉄板のような物が打ち付けられている。
 #. まったく…うんざりだ…
 #. <CLT>
@@ -121,6 +132,7 @@ msgstr ""
 "<CLT 4>Có một loại... tấm kim loại được gắn ở đây. Nó làm mình\n"
 "thấy mệt mỏi mỗi khi nhìn vào...\n"
 "<CLT>"
+
 #. <CLT 4>鉄板のような物が打ち付けられている。
 #. まったく…うんざりだ…
 #. <CLT>
@@ -133,6 +145,7 @@ msgstr ""
 "<CLT 4>Có một loại... tấm kim loại được gắn ở đây. Nó làm mình\n"
 "thấy mệt mỏi mỗi khi nhìn vào...\n"
 "<CLT>"
+
 #. <CLT 4>メモ帳がある。
 #. でも、メモるような事がない。
 #. <CLT>
@@ -145,6 +158,7 @@ msgstr ""
 "<CLT 4>Đó vẫn là cuốn sổ tay từ trước. Hiện tại mình không cần\n"
 "phải ghi chép bất cứ điều gì cả...\n"
 "<CLT>"
+
 #. <CLT 4>これだけで部屋中を掃除って…
 #. 非効率だよな…
 #. <CLT>
@@ -157,6 +171,7 @@ msgstr ""
 "<CLT 4>Thật là thiếu hiệu quả khi cố gắng dọn dẹp cả căn phòng\n"
 "chỉ với thứ này...\n"
 "<CLT>"
+
 #. <CLT 4>引き出しの中には工具セットが入ったままだ…
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -166,6 +181,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Bộ dụng cụ vẫn nằm im lìm trong ngăn kéo...\n"
 "<CLT>"
+
 #. <CLT 4>しかも、まだ未使用…
 #. この先もずっとそうだろうな。
 #. <CLT>
@@ -178,14 +194,17 @@ msgstr ""
 "<CLT 4>Và vẫn chưa được sử dụng... Mình không nghĩ là điều đó sẽ\n"
 "sớm thay đổi đâu.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0019 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0020 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 4>時間もあるし、少し休もうかな…
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -196,6 +215,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình có chút thời gian, nên có lẽ mình nên nghỉ ngơi một chút...\n"
 "<CLT>"
+
 #. <CLT 4>普通のゴミ箱だ。
 #. 特に注目するほどでもないな。
 #. <CLT>
@@ -207,14 +227,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đặc biệt hay đáng chú ý về cái thùng rác này cả.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0023 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0024 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0025 | NARRATION"

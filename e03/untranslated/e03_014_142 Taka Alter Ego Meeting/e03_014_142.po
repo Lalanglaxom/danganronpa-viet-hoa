@@ -25,19 +25,23 @@ msgid ""
 msgstr ""
 "Được rồi, vậy là... có một chiếc máy tính xách tay ở trong\n"
 "tủ đồ, cậu hiểu chứ?"
+
 #. そこのパソコンに入ってるプログラムが
 #. アルターエゴって言うんだけど…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "And on the laptop there's a program called Alter Ego."
 msgstr "Và trên chiếc máy tính đó có một chương trình tên là Alter Ego."
+
 #. どうやって…話せばいい…？
 msgctxt "0004 | KIYOTAKA ISHIMARU"
 msgid "How do I...talk to him?"
 msgstr "Tôi phải... nói chuyện với cậu ấy thế nào đây?"
+
 #. え、えっと…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "O-Oh, um..."
 msgstr "Ồ, ờm..."
+
 #. じゃあ、ボクが入力するから…
 #. なんて話したいのか言ってくれる？
 msgctxt "0006 | MAKOTO NAEGI"
@@ -47,6 +51,7 @@ msgid ""
 msgstr ""
 "Vậy thì, cậu cứ nói những gì cậu muốn nói đi, rồi tớ sẽ gõ\n"
 "nó vào cho cậu."
+
 #. ………………
 msgctxt "0007 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -56,11 +61,13 @@ msgstr "..."
 msgctxt "0008 | KIYOTAKA ISHIMARU"
 msgid "Do you...hate Mondo?"
 msgstr "Cậu có... ghét Mondo không?"
+
 #. 兄弟を止められなかった僕を…
 #. 恨んでいるか…？
 msgctxt "0009 | KIYOTAKA ISHIMARU"
 msgid "And since I couldn't stop him...do you hate me?"
 msgstr "Và vì tôi đã không thể ngăn cậu ấy lại... cậu có ghét tôi không?"
+
 #. <CLT 4>それは…絞り出すような声だった…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -71,6 +78,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Rõ ràng là cậu ấy đang phải gồng mình để thốt ra những lời đó.\n"
 "<CLT>"
+
 #. <CLT 4>喉から…心の奥から…
 #. 必死で絞り出したような弱々しい声…
 #. <CLT>
@@ -83,14 +91,17 @@ msgstr ""
 "<CLT 4>Từ miệng cậu ấy, từ tận đáy lòng... cậu ấy cố ép giọng nói\n"
 "yếu ớt của mình để tạo nên những âm thanh đó.\n"
 "<CLT>"
+
 #. …頼む。
 msgctxt "0012 | KIYOTAKA ISHIMARU"
 msgid "...Please."
 msgstr "...Làm ơn."
+
 #. わ、わかったよ…
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "O-Okay..."
 msgstr "Đ-Được rồi..."
+
 #. <CLT 4>ボクは石丸クンに言われたままの文章を、
 #. キーボードに打ち込んでいった。
 #. <CLT>
@@ -101,6 +112,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình gõ những câu hỏi đúng hệt như những gì Ishimaru đã yêu cầu.\n"
 "<CLT>"
+
 #. <CLT 4>すると…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -110,6 +122,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Và rồi...\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0016 | ALTER EGO"
 msgid "..."
@@ -119,6 +132,7 @@ msgstr "..."
 msgctxt "0017 | ALTER EGO"
 msgid "Do you hold yourself responsible...?"
 msgstr "Cậu đang cảm thấy bản thân mình phải chịu trách nhiệm sao...?"
+
 #. でも、きっとご主人タマなら、
 #. こう言うと思うんだぁ…
 msgctxt "0018 | ALTER EGO"
@@ -128,10 +142,12 @@ msgid ""
 msgstr ""
 "Nếu Chủ nhân có thể nói chuyện lúc này, tôi nghĩ đây là\n"
 "những gì cậu ấy sẽ nói..."
+
 #. 僕の分まで生きてください…
 msgctxt "0019 | ALTER EGO"
 msgid "Please, live your life for the both of us."
 msgstr "Làm ơn, hãy sống tiếp phần đời của cả hai chúng ta."
+
 #. 僕は無理だったけど…
 #. みんなは必ずここから生きて帰ってね…って…
 msgctxt "0020 | ALTER EGO"
@@ -141,6 +157,7 @@ msgid ""
 msgstr ""
 "Với tôi thì điều đó giờ là không thể rồi, nhưng các bạn\n"
 "vẫn có thể sống sót và thoát khỏi đây—tất cả các bạn."
+
 #. ………………
 msgctxt "0021 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -150,6 +167,7 @@ msgstr "..."
 msgctxt "0022 | MAKOTO NAEGI"
 msgid "Hey, Taka..."
 msgstr "Này, Ishimaru..."
+
 #. <CLT 4>と、開きかけたボクの口は、
 #. すぐに閉じる事になった。
 #. <CLT>
@@ -162,10 +180,12 @@ msgstr ""
 "<CLT 4>Mình vừa định nói thêm điều gì đó, nhưng liền nhanh chóng\n"
 "ngậm miệng lại...\n"
 "<CLT>"
+
 #. 今の質問したのって…石丸君でしょ？
 msgctxt "0024 | ALTER EGO"
 msgid "The one asking those questions is...Taka, right?"
 msgstr "Người đang hỏi những câu hỏi đó là... Ishimaru, đúng không?"
+
 #. データから分析する限り、
 #. そうとしか考えられないよぉ。
 msgctxt "0025 | ALTER EGO"
@@ -175,6 +195,7 @@ msgid ""
 msgstr ""
 "Dựa trên phân tích toàn bộ dữ liệu hiện có, đó là kết luận\n"
 "duy nhất mà tôi có thể đưa ra."
+
 #. 石丸君って、大和田君と仲良しだって
 #. ご主人タマから聞いてるよぉ。
 msgctxt "0026 | ALTER EGO"
@@ -182,10 +203,12 @@ msgid "Master told me how close Taka and Mondo had become."
 msgstr ""
 "Chủ nhân đã kể cho tôi nghe về việc Ishimaru và Mondo đã\n"
 "trở nên thân thiết như thế nào."
+
 #. だから…責任を感じてるんでしょ…？
 msgctxt "0027 | ALTER EGO"
 msgid "So that must be why he feels responsible..."
 msgstr "Vì vậy đó hẳn là lý do khiến cậu ấy cảm thấy có trách nhiệm..."
+
 #. <CLT 4>すると、そこで画面は暗転し…
 #. <CLT>
 msgctxt "0028 | MAKOTO NAEGI"
@@ -195,6 +218,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Màn hình đột ngột vụt tắt.\n"
 "<CLT>"
+
 #. <CLT 4>次に、画面上に映し出されたのは…
 #. <CLT>
 msgctxt "0029 | MAKOTO NAEGI"
@@ -204,6 +228,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Và thứ xuất hiện tiếp theo là...\n"
 "<CLT>"
+
 #. で、その責任の重さに、
 #. 潰れちまったんじゃねーだろうなぁ！？
 msgctxt "0030 | ALTER EGO"
@@ -213,10 +238,12 @@ msgid ""
 msgstr ""
 "Đừng có bảo là chú mày định để bản thân bị nghiền nát dưới\n"
 "sức nặng của cái trách nhiệm đó đấy nhé!?"
+
 #. うっ…！！
 msgctxt "0031 | KIYOTAKA ISHIMARU"
 msgid "Gh—!"
 msgstr "Ư—!"
+
 #. …男の重さってのはよぉ、
 #. その男が背負ってるモンの重さなんだぜ…
 msgctxt "0032 | ALTER EGO"
@@ -224,16 +251,19 @@ msgid "A man's only worth as much as the load he can carry!"
 msgstr ""
 "Giá trị của một thằng đàn ông nằm ở gánh nặng mà nó có thể\n"
 "gánh vác được!"
+
 #. わかるだろ…兄弟…？
 msgctxt "0033 | ALTER EGO"
 msgid "You get it, right bro?"
 msgstr "Chú mày hiểu chứ, đúng không người anh em?"
+
 #. オメーなら、わかるはずだぞ…
 msgctxt "0034 | ALTER EGO"
 msgid "Hell, what am I saying? Of course ya do!"
 msgstr ""
 "Chết tiệt, mình đang nói cái quái gì thế này? Tất nhiên là\n"
 "chú mày phải hiểu rồi!"
+
 #. ………………
 msgctxt "0035 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -243,10 +273,12 @@ msgstr "..."
 msgctxt "0036 | MAKOTO NAEGI"
 msgid "Th-That's...!"
 msgstr "Đ-Đó là...!"
+
 #. ビックリさせてたらゴメンね。
 msgctxt "0037 | ALTER EGO"
 msgid "I'm sorry if I startled you..."
 msgstr "Xin lỗi nếu tôi đã làm các bạn giật mình..."
+
 #. ご主人タマが入力してた大和田君の情報を元に、
 #. 僕なりにシミュレーションしてみたんだぁ。
 msgctxt "0038 | ALTER EGO"
@@ -256,6 +288,7 @@ msgid ""
 msgstr ""
 "Đó là nỗ lực mô phỏng của tôi, sử dụng dữ liệu về Mondo mà\n"
 "Chủ nhân đã cung cấp."
+
 #. 大和田君が、落ち込んでる石丸君に声を掛けるなら、
 #. こんな言葉なんじゃないかって…
 msgctxt "0039 | ALTER EGO"
@@ -265,6 +298,7 @@ msgid ""
 msgstr ""
 "Tôi đoán rằng nếu Ishimaru đang chán nản, thì đó chính là\n"
 "những lời mà Mondo sẽ nói với cậu ấy..."
+
 #. まぁ、立ち止るのはしかたねー…
 #. せいぜい時間をかけやがれってんだ…
 msgctxt "0040 | ALTER EGO"
@@ -274,14 +308,17 @@ msgid ""
 msgstr ""
 "Vậy là chú mày định cứ đứng đực ra đó sao? Chỉ để chờ đợi\n"
 "mọi chuyện khá khẩm hơn à?"
+
 #. 時間かけて落ち込んで…
 msgctxt "0041 | ALTER EGO"
 msgid "Just take your time and get all depressed..."
 msgstr "Cứ thong thả mà chìm đắm trong sự tuyệt vọng đi..."
+
 #. 時間かけて後悔して…
 msgctxt "0042 | ALTER EGO"
 msgid "Take the time to indulge your regrets..."
 msgstr "Dành thời gian mà gặm nhấm những hối tiếc của mình đi..."
+
 #. そんで、気付いたらいつの間にか歩き出してる…
 msgctxt "0043 | ALTER EGO"
 msgid ""
@@ -290,6 +327,7 @@ msgid ""
 msgstr ""
 "Rồi có khi chú mày sẽ bắt đầu bước tiếp lúc nào mà chẳng\n"
 "hay đấy."
+
 #. 人間ってのはよ…
 #. それくらいテキトーに出来てんだ…
 msgctxt "0044 | ALTER EGO"
@@ -299,6 +337,7 @@ msgid ""
 msgstr ""
 "Chắc chắn rồi, cái kiểu suy nghĩ tầm thường đó có thể hiệu\n"
 "quả với một số người đấy."
+
 #. …なんて、エラそうに言っちゃったりして！
 msgctxt "0045 | ALTER EGO"
 msgid ""
@@ -307,6 +346,7 @@ msgid ""
 msgstr ""
 "...Nếu tôi nói bằng cái giọng điệu trịch thượng kiểu đó\n"
 "thì sao!?"
+
 #. ………………
 msgctxt "0046 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -316,10 +356,12 @@ msgstr "..."
 msgctxt "0047 | KIYOTAKA ISHIMARU"
 msgid "Hehe... Hahaha..."
 msgstr "Heh heh... Ha ha ha..."
+
 #. 石丸クン…？
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "Taka...?"
 msgstr "Ishimaru...?"
+
 #. ………………
 msgctxt "0049 | KIYOTAKA ISHIMARU"
 msgid "..."
@@ -329,6 +371,7 @@ msgstr "..."
 msgctxt "0050 | KIYOTAKA ISHIMARU"
 msgid "It's starting to sink in..."
 msgstr "Nó đang bắt đầu thấm nhuần rồi..."
+
 #. カラカラに乾いたスポンジが…
 #. 水を…吸い込むように…
 msgctxt "0051 | KIYOTAKA ISHIMARU"
@@ -338,34 +381,42 @@ msgid ""
 msgstr ""
 "Giống như cái cách một xô nước thấm vào một miếng bọt biển\n"
 "khô khốc vậy..."
+
 #. え…？
 msgctxt "0052 | MAKOTO NAEGI"
 msgid "Huh...?"
 msgstr "Hả...?"
+
 #. 今の言葉が…今の魂がぁぁぁッ！
 msgctxt "0053 | KIYOTAKA ISHIMARU"
 msgid "Those words... Deep within my heart...!"
 msgstr "Những lời nói đó... Sâu thẳm trong trái tim tôi...!"
+
 #. 僕の中にぃぃぃ！！
 msgctxt "0054 | KIYOTAKA ISHIMARU"
 msgid "They're inside of me!"
 msgstr "Chúng đang ở bên trong tôi!"
+
 #. うおおおぉぉぉぉぉおおおおぉぉぉおおッ！！
 msgctxt "0055 | KIYOTAKA ISHIMARU"
 msgid "Uwaaaaaaaaaaaaahhh!"
 msgstr "U oa a a a a a a a a a!"
+
 #. 石丸…クン！？
 msgctxt "0056 | MAKOTO NAEGI"
 msgid "T-Taka!?"
 msgstr "I-Ishimaru!?"
+
 #. 石丸ってのはどいつだーッ！？
 msgctxt "0057 | KIYOTAKA ISHIMARU"
 msgid "Who the fudge is Taka!?"
 msgstr "Thằng quái nào là Ishimaru hả!?"
+
 #. え…目つきが…
 msgctxt "0058 | MAKOTO NAEGI"
 msgid "Y-Your eyes..."
 msgstr "Á-Ánh mắt của cậu..."
+
 #. オウッ、もう心配はいらねーぞ！
 #. 悪かったな、迷惑掛けちまってよぉ！
 msgctxt "0059 | KIYOTAKA ISHIMARU"
@@ -375,14 +426,17 @@ msgid ""
 msgstr ""
 "Này, đừng lo về chuyện đó! Có vẻ tôi vừa gây ra một mớ hỗn\n"
 "độn nhỉ? Chết tiệt thật..."
+
 #. 口調も…
 msgctxt "0060 | MAKOTO NAEGI"
 msgid "And your voice..."
 msgstr "Và cả giọng nói của cậu nữa..."
+
 #. オレは…新しいオレになったんだ…
 msgctxt "0061 | KIYOTAKA ISHIMARU"
 msgid "I'm...a new me..."
 msgstr "Tôi... đã trở thành một con người mới rồi..."
+
 #. オラァ！　気合いブリバリだってんだッ！！
 #. バカヤロウッ！！
 msgctxt "0062 | KIYOTAKA ISHIMARU"
@@ -392,27 +446,33 @@ msgid ""
 msgstr ""
 "Hào hứng quá đi! Giờ tôi đang tràn đầy tinh thần chiến đấu\n"
 "đây! Đồ ngốc này!"
+
 #. ちょ…石丸クン…落ち着いて…！
 msgctxt "0063 | MAKOTO NAEGI"
 msgid "O-Okay, Taka... Just calm down."
 msgstr "Đ-Được rồi, Ishimaru... Cậu cứ bình tĩnh đi."
+
 #. 落ち着いてんだろうがぁ！！
 #. つーか、石丸なんて呼ぶんじゃねーよ！
 msgctxt "0064 | KIYOTAKA ISHIMARU"
 msgid "I AM calm! And don't call me Taka!"
 msgstr "Tôi ĐANG bình tĩnh đây! Và đừng có gọi tôi là Ishimaru!"
+
 #. オレは…もう石丸じゃねぇ…
 msgctxt "0065 | KIYOTAKA ISHIMARU"
 msgid "That's...that's not my name anymore..."
 msgstr "Đó... đó không còn là tên của tôi nữa rồi..."
+
 #. オレだッ！！
 msgctxt "0066 | KIYOTAKA ISHIMARU"
 msgid "I'm...me!"
 msgstr "Tôi... là chính tôi!"
+
 #. オレなんだぁぁぁぁああああッ！！
 msgctxt "0067 | KIYOTAKA ISHIMARU"
 msgid "I! Am! Meeeeeee!"
 msgstr "Tôi! Là! Chính mình n n n n n n n n n!"
+
 #. <CLT 4>妙な叫び声を上げながら、
 #. 石丸クンは脱衣所を飛び出していった。
 #. <CLT>
@@ -425,11 +485,13 @@ msgstr ""
 "<CLT 4>Ishimaru gào lên một tiếng kinh hồn bạt vía rồi lao ra\n"
 "khỏi phòng.\n"
 "<CLT>"
+
 #. ちょ、ちょっと待ってよ！
 #. 石丸クンッ！！
 msgctxt "0069 | MAKOTO NAEGI"
 msgid "H-Hey! Taka, hold on!"
 msgstr "N-Này! Ishimaru, chờ đã!"
+
 #. <CLT 4>後を追おうと、すぐに走り出したのだが…
 #. <CLT>
 msgctxt "0070 | MAKOTO NAEGI"
@@ -439,6 +501,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Và mình đuổi theo sau cậu ấy...\n"
 "<CLT>"
+
 #. <CLT 4>そこに立ちはだかった人物が１人。
 #. <CLT>
 msgctxt "0071 | MAKOTO NAEGI"
@@ -448,6 +511,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng có một người đã chặn đường mình.\n"
 "<CLT>"
+
 #. <CLT 4>石丸クンと入れ替わるようにして、
 #. 脱衣所へとやって来た彼女だった。
 #. <CLT>
@@ -460,18 +524,22 @@ msgstr ""
 "<CLT 4>Như thể đang thay chỗ cho Ishimaru, cô ấy bước nhanh vào\n"
 "phòng thay đồ.\n"
 "<CLT>"
+
 #. 何を…してるの？
 msgctxt "0073 | KYOUKO KIRIGIRI"
 msgid "What do you think you're doing?"
 msgstr "Cậu nghĩ mình đang làm cái gì thế?"
+
 #. き、霧切さん…！
 msgctxt "0074 | MAKOTO NAEGI"
 msgid "K-Kyoko!"
 msgstr "K-Kyoko!"
+
 #. いや、これは…その……
 msgctxt "0075 | MAKOTO NAEGI"
 msgid "Oh, um...no, see...this is just—"
 msgstr "Ồ, ờm... không, xem này... chuyện này chỉ là—"
+
 #. …勝手な事しないで。
 #. 迷惑なの。私だけじゃなく他のみんなにも…
 msgctxt "0076 | KYOUKO KIRIGIRI"
@@ -482,10 +550,12 @@ msgstr ""
 "Đừng có đi lung tung rồi làm bất cứ điều gì cậu thích. Nó sẽ gây\n"
 "ra rắc rối đấy. Và không chỉ cho tớ đâu. Cho tất cả mọi người\n"
 "nữa."
+
 #. ご、ごめん……
 msgctxt "0077 | MAKOTO NAEGI"
 msgid "S-Sorry..."
 msgstr "T-Tớ xin lỗi..."
+
 #. 謝る気持ちがあるなら、
 #. すぐに、ここから出てって…
 msgctxt "0078 | KYOUKO KIRIGIRI"
@@ -493,6 +563,7 @@ msgid "If you're really sorry, you'll get out of here. Now."
 msgstr ""
 "Nếu cậu thực sự thấy có lỗi, cậu hãy ra khỏi đây đi. Ngay\n"
 "bây giờ."
+
 #. ………………
 msgctxt "0079 | MAKOTO NAEGI"
 msgid "..."
@@ -502,6 +573,7 @@ msgstr "..."
 msgctxt "0080 | MAKOTO NAEGI"
 msgid "O-Okay..."
 msgstr "Đ-Được rồi..."
+
 #. <CLT 4>結局、ボクはすごすごと
 #. 自分の部屋に戻る羽目になった…
 #. <CLT>

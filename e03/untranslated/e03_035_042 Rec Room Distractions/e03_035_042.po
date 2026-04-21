@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái màn hình này không quan trọng vào lúc này...\n"
 "<CLT>"
+
 #. <CLT 4>こんな監視カメラなんて…どうでもいい。
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,14 +31,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chiếc camera giám sát này không quan trọng vào lúc này...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -47,6 +51,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. <CLT 4>雑誌棚があるけど…
 #. 気にしてる場合じゃない。
 #. <CLT>
@@ -59,6 +64,7 @@ msgstr ""
 "<CLT 4>Có một kệ đầy tạp chí ở đây, nhưng chuyện đó không quan\n"
 "trọng vào lúc này.\n"
 "<CLT>"
+
 #. <CLT 4>オセロなんて…気にしてる場合じゃない。
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -68,6 +74,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Giờ không phải lúc để nghĩ về cờ Othello.\n"
 "<CLT>"
+
 #. <CLT 4>こんなダーツなんか…
 #. 気にしている場合じゃない。
 #. <CLT>
@@ -78,6 +85,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Giờ không phải lúc để nghĩ về trò phóng phi tiêu.\n"
 "<CLT>"
+
 #. <CLT 4>こんなビリヤードなんか…
 #. 気にしている場合じゃない。
 #. <CLT>
@@ -88,6 +96,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Giờ không phải lúc để nghĩ về bàn bi-a.\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがあるけど…
 #. この中に人はいないみたいだ。
 #. <CLT>
@@ -98,6 +107,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một cái tủ đồ ở đây... nhưng không có ai cả.\n"
 "<CLT>"
+
 #. <CLT 4>いったん、ソファーで落ち着いて…
 #. なんて場合じゃない。
 #. <CLT>
@@ -110,6 +120,7 @@ msgstr ""
 "<CLT 4>Có lẽ mình nên ngồi xuống nghỉ một lát... Không! Không có\n"
 "thời gian!\n"
 "<CLT>"
+
 #. <CLT 4>こんなテーブルなんか…
 #. 気にしている場合じゃない…！
 #. <CLT>
@@ -120,6 +131,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cái bàn này không quan trọng vào lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -129,6 +141,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -138,6 +151,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -147,6 +161,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -156,6 +171,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0017 | MAKOTO NAEGI"
@@ -165,6 +181,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. <CLT 4>こんな物を気にしている場合じゃない…！
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -174,16 +191,19 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không có thời gian để bận tâm đến việc này lúc này!\n"
 "<CLT>"
+
 #. セレスさんは…
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "Celeste..."
 msgstr "Celeste..."
+
 #. この、ジャスティスハンマー１号で…襲われた…
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "Was she really attacked with this...Justice Hammer 1?"
 msgstr ""
 "Cậu ấy thực sự đã bị tấn công bởi thứ này... Búa Công Lý\n"
 "số 1 sao?"
+
 #. <CLT 4>それにしても…
 #. ジャスティスハンマー１号って…？
 #. <CLT>
@@ -194,14 +214,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng... cái quái gì đang xảy ra với cái thứ này vậy?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0022 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0023 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0024 | NARRATION"

@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
 "hiện. Hiện tại, nó chỉ đang hiển thị huy hiệu của trường.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -32,6 +33,7 @@ msgid ""
 msgstr ""
 "Lo lắng về nó bây giờ cũng chẳng ích gì. Tớ nên cố quên nó\n"
 "đi thôi..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -45,6 +47,7 @@ msgstr ""
 "bao giờ nhìn những chiếc camera giám sát theo cách cũ được\n"
 "nữa...\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のドアだ。
 #. ボクじゃロックを外せないから、入れないな…
 #. <CLT>
@@ -57,6 +60,7 @@ msgstr ""
 "<CLT 4>Cửa phòng thay đồ nữ. Tớ không có cách nào để mở khóa nó\n"
 "cả, nên có muốn tớ cũng chẳng vào được.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは男子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳で開けられるはず…
 #. <CLT>
@@ -69,6 +73,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ phòng thay đồ nam. Tớ có thể mở nó bằng sổ học\n"
 "sinh của mình.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳じゃ開けられないはず…
 #. <CLT>
@@ -81,6 +86,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ phòng thay đồ nữ. Trong sổ học sinh tớ được\n"
 "ghi là \"nam\", nên nó không thể mở cánh cửa này.\n"
 "<CLT>"
+
 #. <CLT 4>これって…本物の銃だよな？
 #. なんでこんなものがあるんだよ…
 #. <CLT>
@@ -93,6 +99,7 @@ msgstr ""
 "<CLT 4>Đó là... súng thật sao? Tại sao lại có thứ như thế này ở\n"
 "đây cơ chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>この棚には…
 #. 水泳用の色々な用具が並んでいる…
 #. <CLT>
@@ -104,6 +111,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có đủ loại dụng cụ liên quan đến hồ bơi được xếp trên kệ.\n"
 "<CLT>"
+
 #. <CLT 4>浮き輪がある…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -113,14 +121,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Một cái phao cứu sinh...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"

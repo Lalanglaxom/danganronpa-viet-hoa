@@ -84,8 +84,8 @@ msgid ""
 "Rude! She's not strange! She's Princess Piggles, from\n"
 "<CLT 3>\"Demon Angel☆Pretty Pudgy Princess\"<CLT>!"
 msgstr ""
-"Thật khiếm nhã! Cô ấy không hề kỳ lạ! Đó là Công chúa Piggles,\n"
-"trong bộ <CLT 3>\"Thiên Thần Ngoại Đạo☆Công Chúa Mũm Mĩm\"<CLT> đấy!"
+"Thật khiếm nhã! Cô ấy không hề kỳ lạ! Đó là Công chúa Bao,\n"
+"trong bộ <CLT 3>\"Thiên Sứ Ngoại Đạo☆Công Chúa Bánh Bao\"<CLT> đấy!"
 
 #. …山田クン、知ってるの？
 msgctxt "0012 | MAKOTO NAEGI"
@@ -234,7 +234,7 @@ msgstr "Ừ, cũng đúng..."
 #. 【気になる事】
 msgctxt "0033 | CHOICE/RE:ACT"
 msgid "[bothering me]"
-msgstr "[điều đang bận tâm]"
+msgstr "[bận tâm]"
 
 #. セレスさん、気になる事って…？
 msgctxt "0034 | MAKOTO NAEGI"
@@ -303,7 +303,7 @@ msgstr "Cái gì!? Thật á!?"
 #. ウソですわ。
 msgctxt "0043 | CELES"
 msgid "Actually, no."
-msgstr "Thực ra là không đâu."
+msgstr "Thực ra, là không."
 
 #. は…？
 msgctxt "0044 | AOI ASAHINA"
@@ -323,7 +323,7 @@ msgstr ""
 #. ズ、ズルイよッ！
 msgctxt "0046 | AOI ASAHINA"
 msgid "Th-That's no fair!"
-msgstr "Kh-Không công bằng chút nào cả!"
+msgstr "Kh-Không công bằng!"
 
 #. うふふ…ウソをつくなら、
 #. もっと徹底的にやって欲しいものですわね。
@@ -334,6 +334,7 @@ msgid ""
 msgstr ""
 "U fư fư... Nếu cậu định nói dối, tớ hy vọng cậu có thể làm\n"
 "điều đó một cách thuyết phục hơn."
+
 #. …朝日奈よ、正直に言ってくれ。
 #. 腹痛というのはウソだったのか？
 msgctxt "0048 | SAKURA OOGAMI"
@@ -417,7 +418,7 @@ msgstr "Một con ma sao...? Ý cậu là, con ma ĐÓ hả!?"
 #. 他に何があるの？
 msgctxt "0062 | KYOUKO KIRIGIRI"
 msgid "Is there more than one ghost...?"
-msgstr "Có nhiều hơn một con ma sao...?"
+msgstr "Có nhiều hơn một con ma không...?"
 
 #. で、でも…幽霊なんて…
 #. そんな…
@@ -428,7 +429,7 @@ msgstr "Nh-Nhưng... ý tớ là, ma quỷ thì..."
 #. ほら、やっぱり信じてくれない！
 msgctxt "0064 | AOI ASAHINA"
 msgid "See! I told you you wouldn't believe me!"
-msgstr "Thấy chưa! Tui đã bảo là mấy ông sẽ không tin tui mà!"
+msgstr "Thấy chưa! Tui đã bảo là mấy cậu sẽ không tin tui mà!"
 
 #. そ、そういう訳じゃないんだけど…
 msgctxt "0065 | MAKOTO NAEGI"
@@ -475,7 +476,9 @@ msgstr "Ừm, thì... chuyện đó xảy ra vào đêm qua."
 #. なんだか…寝付けなくってさ…
 msgctxt "0072 | AOI ASAHINA"
 msgid "I was in bed, but I couldn't get to sleep."
-msgstr "Tui đang nằm trên giường, nhưng tui không thể nào chợp mắt được."
+msgstr ""
+"Tui đang nằm trên giường, nhưng tui không thể nào chợp \n"
+"mắt được."
 
 #. 今までの事とか、色々考えてたら…
 #. 急に怖くなっちゃったんだ。
@@ -663,7 +666,7 @@ msgstr "Ông có thể đợi ở đây nếu ông muốn."
 #. １人はもっと嫌だッ！　連れてって！！
 msgctxt "0100 | YASUHIRO HAGAKURE"
 msgid "I don't wanna be alone! Take me with you!"
-msgstr "Tui không muốn ở một mình đâu! Cho tui đi với!"
+msgstr "Tớ không muốn ở một mình đâu! Cho tớ đi với!"
 
 #. どうするの、セレスさん？
 msgctxt "0101 | KYOUKO KIRIGIRI"
@@ -689,7 +692,7 @@ msgstr "..."
 #. …待っているそうです。
 msgctxt "0105 | HIFUMI YAMADA"
 msgid "...I guess that's a yes."
-msgstr "...Tôi đoán là đúng vậy rồi."
+msgstr "...Tôi đoán là thế."
 
 #. <CLT 4>食堂に戻ったボクの目に、
 #. 真っ先に飛び込んできたのは…
@@ -829,7 +832,9 @@ msgstr "Có vẻ như tiểu thư Hina cũng chẳng khác gì đâu."
 #. あんたにだけは言われたくないんですけど！
 msgctxt "0123 | AOI ASAHINA"
 msgid "Hey! You of all people don't have any room to talk!"
-msgstr "Này! Ông là người cuối cùng có quyền lên tiếng về chuyện đó đấy!"
+msgstr ""
+"Này! Ông là người cuối cùng có quyền lên tiếng về chuyện \n"
+"đó đấy!"
 
 #. ともかく…心配したのだぞ。
 msgctxt "0124 | SAKURA OOGAMI"
@@ -858,8 +863,8 @@ msgid ""
 "Jeez, your knockers are HUGE! What the heck, did you\n"
 "convince them to double up on milk production!?"
 msgstr ""
-"Trời đất ơi, đôi gò bồng đảo của cậu TO thật đấy! Cái quái gì\n"
-"thế, cậu đã thuyết phục chúng sản xuất sữa gấp đôi rồi à!?"
+"Trời đất ơi, hai quả dưa hấu của cậu TO thật đấy! Cái quái gì\n"
+"thế, cậu đã thuyết phục họ sản xuất sữa gấp đôi rồi à!?"
 
 #. 貴様、朝日奈から離れろ…
 msgctxt "0129 | SAKURA OOGAMI"
@@ -874,7 +879,7 @@ msgid ""
 "what we found. Right, Taka?"
 msgstr ""
 "Dù-Dù sao thì... việc quan trọng trước tiên, chúng ta nên nói về\n"
-"những gì chúng ta đã tìm thấy. Đúng không, Ishimaru?"
+"những gì chúng ta đã tìm thấy. Đúng không, Taka?"
 
 #. ………………
 msgctxt "0131 | KIYOTAKA ISHIMARU"
@@ -901,7 +906,9 @@ msgctxt "0134 | YASUHIRO HAGAKURE"
 msgid ""
 "It didn't happen to be a donut-related discovery, did\n"
 "it?"
-msgstr "Nó không phải là một phát hiện liên quan đến bánh donut đấy chứ?"
+msgstr ""
+"Nó không phải là một phát hiện liên quan đến bánh donut \n"
+"đấy chứ?"
 
 #. ドーナツ絡みの発見ってどんなよ…
 msgctxt "0135 | AOI ASAHINA"
@@ -1158,12 +1165,12 @@ msgid ""
 "away from me!"
 msgstr ""
 "Hóa ra ĐÓ là nơi cậu ấy đang lẩn trốn! Tôi sẽ không để cậu\n"
-"ấy thoát khỏi tay mình đâu!"
+"ta thoát khỏi tay tôi!"
 
 #. ゲラゲラゲラゲラゲラゲラゲラッ！！
 msgctxt "0167 | TOUKO FUKAWA"
 msgid "Kyehehe..."
-msgstr "Heh heh heh..."
+msgstr "Kyehehe..."
 
 #. す、すっ飛んでったべ…！
 msgctxt "0168 | YASUHIRO HAGAKURE"
@@ -1197,7 +1204,7 @@ msgstr ""
 #. うーん、十神っちに悪い事しちまったか…
 msgctxt "0173 | YASUHIRO HAGAKURE"
 msgid "Yeah, I totally screwed Byakuya over..."
-msgstr "Ừ, tui hoàn toàn đã chơi khăm Byakuya một vố rồi..."
+msgstr "Ừ, tui hoàn toàn đã chơi Byakuya một vố rồi..."
 
 #. <CLT 4>それは間違いなさそうだな…
 #. <CLT>
@@ -1245,7 +1252,7 @@ msgstr ""
 #. 忘れましょう。
 msgctxt "0178 | CELES"
 msgid "Just forget about it."
-msgstr "Cứ quên nó đi."
+msgstr "Quên nó đi."
 
 #. 小銭落としたみたく軽く言うなって…！
 msgctxt "0179 | YASUHIRO HAGAKURE"
@@ -1468,7 +1475,7 @@ msgstr "Cậu đang nói cái quái gì thế hả...?"
 #. ゲラゲラゲラ！！
 msgctxt "0208 | TOUKO FUKAWA"
 msgid "Kyeehahaha!"
-msgstr "Heh heh heh!"
+msgstr "Kyeehahaha!"
 
 #. ………………
 msgctxt "0209 | KIYOTAKA ISHIMARU"

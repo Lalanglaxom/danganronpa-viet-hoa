@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
 "hiện. Hiện tại, nó chỉ đang hiển thị huy hiệu của trường.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -32,6 +33,7 @@ msgid ""
 msgstr ""
 "Lo lắng về nó bây giờ cũng chẳng ích gì. Tớ nên cố quên nó\n"
 "đi thôi..."
+
 #. <CLT 4>監視カメラなんて気にしない！
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -42,10 +44,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình sẽ không thèm nghĩ về chiếc camera giám sát này nữa!\n"
 "<CLT>"
+
 #. これは…ビニールシートか。
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "This is...a tarp."
 msgstr "Đây là... một tấm bạt."
+
 #. <CLT 4>ごく普通の物だな…
 #. 特に気になるところはない。
 #. <CLT>
@@ -58,6 +62,7 @@ msgstr ""
 "<CLT 4>Tớ không thấy có điểm gì bất thường ở đây cả, không có gì\n"
 "đáng để bận tâm quá nhiều đâu...\n"
 "<CLT>"
+
 #. <CLT 4>部屋の中央の血だまりから、
 #. 車輪らしき跡が伸びている…？
 #. <CLT>
@@ -70,6 +75,7 @@ msgstr ""
 "<CLT 4>Có một loại... vết bánh xe đi xuyên qua vũng máu ở giữa\n"
 "căn phòng.\n"
 "<CLT>"
+
 #. <CLT 4>また…このハンマーだ…
 #. 材質からして木槌みたいだけど…
 #. <CLT>
@@ -81,6 +87,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Lại một cây búa nữa. Và có vẻ như nó được làm bằng gỗ...\n"
 "<CLT>"
+
 #. <CLT 4>前よりもさらに大きくなってる…！
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -90,6 +97,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó còn lớn hơn cả những cái trước nữa...!\n"
 "<CLT>"
+
 #. <CLT 4>そして、<CLT><CLT 3>ジャスティスハンマー４号<CLT><CLT 4>…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -99,6 +107,7 @@ msgid ""
 msgstr ""
 "<CLT 4><CLT><CLT 3>Búa Công Lý số 4<CLT><CLT 4>...\n"
 "<CLT>"
+
 #. <CLT 4>やっぱり、この犯行も例の不審者の仕業なのか…？
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -109,6 +118,7 @@ msgstr ""
 "<CLT 4>Liệu tất cả những chuyện này đều là do tên khả nghi đó làm\n"
 "sao...?\n"
 "<CLT>"
+
 #. <CLT 4>ジェノサイダーじゃない方の腐川さんは、
 #. 血が苦手なんだったな…
 #. <CLT>
@@ -119,6 +129,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Khi Toko là, ừm, Toko... cậu ấy rất sợ máu.\n"
 "<CLT>"
+
 #. <CLT 4>もう殺される心配はないだろうし、
 #. ひとまず、そっとしておく事にしよう。
 #. <CLT>
@@ -131,6 +142,7 @@ msgstr ""
 "<CLT 4>Tớ không nghĩ là chúng ta phải lo lắng về việc có thêm ai đó bỏ\n"
 "mạng đâu, nên là... tạm thời tớ cứ để cậu ấy yên vậy.\n"
 "<CLT>"
+
 #. <CLT 4>石丸クンの死体まで消えてしまった…
 #. 血痕だけを残して…
 #. <CLT>
@@ -143,14 +155,17 @@ msgstr ""
 "<CLT 4>Toàn bộ xác của Taka đã biến mất, không để lại gì ngoài\n"
 "một vết máu...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>物理準備室から出ますか？
 #. <CLT>
 msgctxt "0016 | NARRATION"
