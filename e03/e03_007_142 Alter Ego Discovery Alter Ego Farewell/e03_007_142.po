@@ -25,7 +25,7 @@ msgstr ""
 #. パソコン…？　こんな所にパソコン…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "...a laptop? What's something like that doing here?"
-msgstr "...một chiếc máy tính xách tay? Thứ đó làm gì ở đây vậy?"
+msgstr "...một cái laptop? Thứ đó làm gì ở đây vậy?"
 
 #. …見覚えがあるわね。
 msgctxt "0003 | KYOUKO KIRIGIRI"
@@ -50,7 +50,7 @@ msgid ""
 "<CLT 4>It looks like a <CLT><CLT 3>laptop<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó trông giống như một chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4>...\n"
+"<CLT 4>Trông giống như một chiếc <CLT><CLT 3>laptop<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. <CLT 4>結構、古い型の<CLT><CLT 3>ノートパソコン<CLT><CLT 4>みたいだ。
@@ -62,7 +62,8 @@ msgid ""
 "dust.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chiếc <CLT><CLT 3>máy tính xách tay<CLT><CLT 4> này trông khá cũ. Và nó bị phủ đầy bụi.\n"
+"<CLT 4>Chiếc <CLT><CLT 3>laptop<CLT><CLT 4> trông khá cũ. Và nó bị \n"
+"bám đầy bụi bẩn.\n"
 "<CLT>"
 
 #. …壊れてるわよ。電源を入れても起動しないもの。
@@ -146,7 +147,9 @@ msgctxt "0017 | CELES"
 msgid ""
 "I am surprised you are able to dress yourself in the\n"
 "morning."
-msgstr "Tớ ngạc nhiên là cậu vẫn có thể tự mặc quần áo vào mỗi sáng đấy."
+msgstr ""
+"Tớ ngạc nhiên là cậu vẫn có thể tự mặc quần áo vào mỗi \n"
+"sáng đấy."
 
 #. やれやれ…危ないところでしたな。
 #. 僕がどじっ子属性だったら惚れているところです。
@@ -161,7 +164,7 @@ msgstr ""
 #. ふぅ、どじっ子属性じゃなくて本当によかった…
 msgctxt "0019 | HIFUMI YAMADA"
 msgid "I'm so glad I don't have it..."
-msgstr "Thật may là tôi không có nó..."
+msgstr "May là tôi không có nó..."
 
 #. だって、ロッカーの中にパソコンが置いてあるなんて
 #. 思わないじゃん、普通！
@@ -419,7 +422,7 @@ msgstr "Cậu có thể coi nó giống như... một bút danh vậy."
 #. …苗木君、ちょっと場所を代わってもらえる？
 msgctxt "0051 | KYOUKO KIRIGIRI"
 msgid "Could you let me see it, Makoto?"
-msgstr "Cậu có thể cho tớ xem nó được không, Naegi?"
+msgstr "Cậu có thể cho tớ xem nó được không, Makoto?"
 
 #. <CLT 4>霧切さんはそう言って、
 #. ボクとパソコンの間に体を割り込ませると…
@@ -526,7 +529,8 @@ msgid ""
 "keyboard.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kyoko bắt đầu đánh máy, đôi tay thoăn thoắt lướt trên bàn phím.\n"
+"<CLT 4>Kyoko bắt đầu đánh máy, đôi tay thoăn thoắt lướt trên \n"
+"bàn phím.\n"
 "<CLT>"
 
 #. <CLT 23>『あなたは何者？』
@@ -609,8 +613,7 @@ msgid ""
 "tasks, it gains knowledge and grows bit by bit."
 msgstr ""
 "AI này sống trong máy tính, và thông qua việc lặp lại các nhiệm\n"
-"vụ khác nhau, nó tiếp nhận kiến thức và lớn dần lên từng chút\n"
-"một."
+"vụ khác nhau, nó tiếp nhận kiến thức và giỏi dần lên."
 
 #. サポートベクターマシンや強化学習を取り入れ、
 #. それを不二咲千尋の手でさらに発展させる事で…
@@ -635,7 +638,7 @@ msgstr ""
 #. 強化学習…？
 msgctxt "0077 | MAKOTO NAEGI"
 msgid "Support vector machine...? Reinforcement learning...?"
-msgstr "Máy vector hỗ trợ sao...? Học tăng cường sao...?"
+msgstr "Máy vector hỗ trợ...? Học tăng cường sao...?"
 
 #. 簡単に言えば…機械の学習方法といったところかしら…
 msgctxt "0078 | KYOUKO KIRIGIRI"
@@ -842,7 +845,7 @@ msgid ""
 "<CLT 4>Kyoko immediately shot out another question...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kirigiri lập tức đưa ra một câu hỏi khác...\n"
+"<CLT 4>Kyoko lập tức đưa ra một câu hỏi khác...\n"
 "<CLT>"
 
 #. <CLT 23>『あなたは、どうしてここにいるの？』
@@ -912,7 +915,9 @@ msgstr ""
 #. 例えば、<CLT 3>この学園の秘密<CLT>とかね。
 msgctxt "0114 | ALTER EGO"
 msgid "For example, perhaps...the <CLT 3>secret of this school<CLT>."
-msgstr "Ví dụ như, có lẽ là... <CLT 3>bí mật của ngôi trường này<CLT> chẳng hạn."
+msgstr ""
+"Ví dụ như, có lẽ là... <CLT 3>bí mật của ngôi trường này<CLT> \n"
+"chẳng hạn."
 
 #. …ッ！！
 msgctxt "0115 | MAKOTO NAEGI"
@@ -1157,8 +1162,8 @@ msgid ""
 "tone, but at the same time different...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sự tự tin đó có phần giống với ngữ điệu của Togami, nhưng\n"
-"đồng thời cũng rất khác biệt...\n"
+"<CLT 4>Sự tự tin đó có phần giống với ngữ điệu của Byakuya, \n"
+"nhưng đồng thời cũng rất khác biệt...\n"
 "<CLT>"
 
 #. <CLT 4>根本的に何かが違う…
@@ -1359,12 +1364,12 @@ msgstr ""
 #. うん、また来てね！　約束だよ！！
 msgctxt "0166 | ALTER EGO"
 msgid "Yes, please do! It's a promise, okay?"
-msgstr "Pí po pí po! Chào đằng ấy nhé! Để mình giải thích thêm cho nào!"
+msgstr "Vâng, làm ơn! Đó là một lời hứa, okay!"
 
 #. じゃあねぇ～！
 msgctxt "0167 | ALTER EGO"
 msgid "Bye-bye!"
-msgstr "Tạm biệt nhé!"
+msgstr "Bai bai!"
 
 #. <CLT 4>ディスプレイの向こうの“彼”は
 #. さっきまでとは打って変わって明るい口調に戻ってた。
