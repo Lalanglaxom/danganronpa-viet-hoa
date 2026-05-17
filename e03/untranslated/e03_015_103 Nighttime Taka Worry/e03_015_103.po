@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #. <CLT 4>それにしても…
 #. さっきの石丸クンの豹変っぷりはなんだったんだ…？
@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>But still...what was with Taka's sudden freakout?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng dù thế nào... sự thay đổi đột ngột của Ishimaru ban\n"
+"<CLT 4>Nhưng dù thế nào... sự thay đổi đột ngột của Taka ban\n"
 "nãy là sao chứ?\n"
 "<CLT>"
 
@@ -52,13 +52,13 @@ msgid ""
 "Mm, ahem, this is a school announcement. It is now 10\n"
 "p.m."
 msgstr ""
-"Ừm, hắng giọng, đây là thông báo của trường học. Hiện tại\n"
-"là 10 giờ tối."
+"E hèm, thông báo từ nhà trường đây. Bây giờ đã là 10 giờ \n"
+"tối rồi."
 
 #. ただいまより、<CLT 3>“夜時間”<CLT>になります。
 msgctxt "0005 | MONOKUMA"
 msgid "As such, it is officially <CLT 3>nighttime<CLT>."
-msgstr "Vì thế, giờ đã chính thức bắt đầu <CLT 3>giờ ban đêm<CLT>."
+msgstr "Kể từ giờ sẽ chính thức bước vào <CLT 3>giờ ban đêm<CLT>."
 
 #. 間もなく、食堂はドアをロックされますので、
 #. 立ち入り禁止となりま～す。
@@ -67,8 +67,8 @@ msgid ""
 "Soon the doors to the dining hall will be locked, and\n"
 "entry at that point is strictly prohibited."
 msgstr ""
-"Cửa nhà ăn sẽ sớm được khóa lại, và việc vào đó vào thời\n"
-"điểm này là bị nghiêm cấm."
+"Cửa phòng ăn sẽ sớm được khóa lại, nên kể từ lúc đó việc ra \n"
+"vào sẽ bị nghiêm cấm nhé."
 
 #. ではでは、いい夢を。おやすみなさい…
 msgctxt "0007 | MONOKUMA"
@@ -76,8 +76,8 @@ msgid ""
 "Okay then...sweet dreams, everyone! Good night, sleep\n"
 "tight, don't let the bed bugs bite..."
 msgstr ""
-"Vậy nhé... chúc cả lũ có những giấc mơ đẹp! Ngủ ngon, ngủ\n"
-"sâu, đừng để bị kiến cắn nhé..."
+"Được rồi... mơ đẹp nhé mọi người! Chúc ngủ ngon, ngủ \n"
+"cho tròn, đừng để rệp cắn ăn mòn thịt da..."
 
 #. <CLT 4>もう夜時間だし、仕方がない…
 #. 石丸クンの件は明日に持ち越しだな…
@@ -89,7 +89,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Đã đến giờ ban đêm rồi. Chắc mình phải chờ đến ngày mai để\n"
-"tìm hiểu chuyện của Ishimaru thôi...\n"
+"tìm hiểu chuyện của Taka thôi...\n"
 "<CLT>"
 
 #. <CLT 4>とりあえず、今日は休むとしよう…
@@ -106,7 +106,9 @@ msgstr ""
 #. 話してあげようか？
 msgctxt "0010 | MONOKUMA"
 msgid "You wanna know why I hate video games?"
-msgstr "Ngươi có muốn biết tại sao ta lại ghét trò chơi điện tử không?"
+msgstr ""
+"Các bạn có muốn biết tại sao tôi lại ghét trò chơi \n"
+"điện tử đến thế không?"
 
 #. こんなボクにも、
 #. 親友と呼べる友達がいた時代があるのですよ。
@@ -115,8 +117,8 @@ msgid ""
 "You might not believe this, but I had a best friend\n"
 "once."
 msgstr ""
-"Có thể ngươi không tin, nhưng ta cũng từng có một người\n"
-"bạn thân đấy."
+"Có thể các bạn không tin, nhưng tôi cũng từng có một\n"
+"người bạn thân đấy."
 
 #. ボクには友達がそいつしかいなかったんだけど、
 #. そいつには、友達がたくさんいたんだ…
@@ -125,8 +127,8 @@ msgid ""
 "Actually, he was my *only* friend. But unlike me,\n"
 "he had all kinds of friends."
 msgstr ""
-"Thực ra, đó là người bạn *duy nhất* của ta. Nhưng khác với\n"
-"ta, hắn ta có đủ loại bạn bè."
+"Thực ra, cậu ta là người bạn duy nhất của tôi. Nhưng \n"
+"chẳng giống tôi, cậu ta lại có rất nhiều bạn bè khác."
 
 #. ある日、そいつの家で２人で遊んでいると、
 #. 急にそいつの友達数人が遊びに来たんだよ…
@@ -135,13 +137,15 @@ msgid ""
 "So me and him were at his house one day, when a big\n"
 "group of guys showed up to hang out."
 msgstr ""
-"Một ngày nọ khi ta và hắn đang ở nhà, thì có một nhóm\n"
-"người kéo đến chơi."
+"Thế rồi một ngày nọ, khi tôi và cậu ta đang ở nhà chơi với \n"
+"nhau, thì một đám người kéo đến tụ tập."
 
 #. 新作のゲームソフトを持ってね…
 msgctxt "0014 | MONOKUMA"
 msgid "They'd just bought the latest big-budget video game."
-msgstr "Chúng mang theo trò chơi điện tử bom tấn mới nhất vừa mua được."
+msgstr ""
+"Bọn họ vừa mới mua một cái trò chơi điện tử bom tấn \n"
+"mới nhất xong."
 
 #. みんなでコントローラーを回しながら、
 #. テレビゲームに熱中したっけなぁ！
@@ -150,13 +154,13 @@ msgid ""
 "They sat there lost in the game, passing the\n"
 "controller back and forth, for hours."
 msgstr ""
-"Chúng ngồi đó say sưa với trò chơi, chuyền tay nhau tay\n"
-"cầm điều khiển suốt hàng giờ liền."
+"Cả lũ cứ thế ngồi lỳ ở đó, dán mắt vào màn hình \n"
+"rồi chuyền nhau cái tay cầm suốt mấy tiếng đồng hồ."
 
 #. …ボクをのぞいてね。
 msgctxt "0016 | MONOKUMA"
 msgid "But not me..."
-msgstr "Nhưng trừ ta ra..."
+msgstr "Ngoại trừ tôi ra..."
 
 #. ボクは見てるだけ。うん見てるだけだよ。
 #. それがどうしたの！？　別に構わないよ！
@@ -165,8 +169,8 @@ msgid ""
 "I just sat there watching. That's right, I just\n"
 "watched! What's wrong with that!? I didn't care!"
 msgstr ""
-"Ta chỉ ngồi đó nhìn thôi. Đúng vậy, ta chỉ ngồi nhìn! Thế\n"
-"thì có làm sao chứ! Ta chẳng quan tâm!"
+"Tôi chỉ ngồi đó nhìn. Đúng thế, tôi chỉ ở ngoài nhìn \n"
+"thôi! Thế thì đã sao nào!? Tôi thèm vào mà quan tâm!"
 
 #. お陰で、そのゲームの攻略法は
 #. 頭に叩き込まれたしね！
@@ -175,20 +179,20 @@ msgid ""
 "Just by watching, I was able to nail down all the best\n"
 "strategies!"
 msgstr ""
-"Chỉ bằng cách quan sát, ta đã nắm lòng tất cả những chiến\n"
-"thuật đỉnh nhất!"
+"Chỉ nhờ đứng xem, tôi đã nắm được hết mấy cái chiến \n"
+"thuật xịn nhất rồi!"
 
 #. １回もプレイした事ないのにね！
 msgctxt "0019 | MONOKUMA"
 msgid "Even though I never actually played it!"
-msgstr "Dù cho ta chưa thực sự chơi nó một lần nào!"
+msgstr "Dù rằng tôi chưa đụng tay chơi lấy một lần!"
 
 #. …ていうか、この先もやらないけどね！！
 msgctxt "0020 | MONOKUMA"
 msgid ""
 "And I don't plan on ever playing it in the future,\n"
 "either!"
-msgstr "Và ta cũng chẳng có kế hoạch chơi nó trong tương lai luôn!"
+msgstr "Và cũng chẳng có kế hoạch chơi nó trong tương lai luôn!"
 
 #. <CLT 23>「キーン、コーン…　カーン、コーン」
 #. <CLT>
@@ -197,7 +201,7 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*Bính boong, bính boong*\n"
+"<CLT 23>*Bính bong, binh bong*\n"
 "<CLT>"
 
 #. オマエラ、おはようございます！
@@ -207,13 +211,13 @@ msgid ""
 "Good morning, everyone! It is now 7 a.m. and nighttime\n"
 "is officially over! Time to rise and shine!"
 msgstr ""
-"Chào buổi sáng cả lũ! Bây giờ là 7 giờ sáng và giờ ban đêm\n"
-"đã chính thức kết thúc! Mau dậy đón bình minh thôi nào!"
+"Chào buổi sáng, các em! Bây giờ là 7 giờ sáng và giờ ban đêm đã\n"
+"chính thức kết thúc! Đến lúc thức dậy và tỏa sáng!"
 
 #. さぁて、今日も張り切っていきましょう～！
 msgctxt "0023 | MONOKUMA"
 msgid "Get ready to greet another beee-yutiful day!"
-msgstr "Hãy sẵn sàng để chào đón một ngày mới tươiiiii đẹp nữa đi!"
+msgstr "Hãy sẵn sàng chào đón một ngày mới tuyyyệt đẹp nào!"
 
 #. よし、さっさと起きて、
 #. 食堂に行こう…
@@ -231,7 +235,7 @@ msgid ""
 "yesterday."
 msgstr ""
 "Mình cần kể cho mọi người nghe về chuyện đã xảy ra với\n"
-"Ishimaru ngày hôm qua."
+"Taka ngày hôm qua."
 
 #. <CLT 4>外の情報に飢えている…
 #. ここでテレビでも見られればな…
@@ -285,7 +289,7 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
 
 #. 舞園さんが…ここで…
@@ -424,5 +428,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"
