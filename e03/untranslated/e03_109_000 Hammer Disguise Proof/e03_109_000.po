@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 3/26/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#. いや、ジャスティスハンマーの順番が
+#. <CLT 3>殺された順番とは限らない<CLT>はずだよ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Hold on, there's no reason to assume that <CLT 3>the hammers\n"
+"were used in the same order as their numbers<CLT>!"
+msgstr ""
+"Khoan đã, không có lý do gì để khẳng định rằng <CLT 3>các cây búa\n"
+"được sử dụng theo đúng thứ tự đánh số của chúng cả<CLT>!"
+#. と言うより、それ自体が犯人の偽装工作だと
+#. 考えられるんじゃないかな？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"If anything, that's just another way the killer tried\n"
+"to disguise their actions."
+msgstr "Ngược lại, đó rất có thể chỉ là một mánh khóe ngụy tạo khác mà hung thủ đã dựng lên để che mắt chúng ta thôi."
+#. あのジャスティスハンマーの番号が
+#. 犯人の偽装工作という事は…
+msgctxt "0003 | BYAKUYA TOGAMI"
+msgid ""
+"So you're saying the culprit wanted us to *think* the\n"
+"hammers were used in order..."
+msgstr ""
+"Ý cậu là hung thủ muốn chúng ta phải *nghĩ* rằng\n"
+"các cây búa được sử dụng theo đúng thứ tự sao..."
+#. 実際に殺された順番は、
+#. 石丸が先で、山田が後だったという事か？
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgid "...but in reality Taka was killed *before* Hifumi?"
+msgstr "...nhưng thực tế thì Ishimaru lại bị sát hại *trước* Hifumi?"
+#. だったら、その根拠を示してもらおうか。
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid "Okay then, let's see the proof."
+msgstr "Nếu vậy thì, cho tôi xem bằng chứng đi."
