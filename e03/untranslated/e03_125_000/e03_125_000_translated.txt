@@ -1,259 +1,279 @@
 --- Gemini Translation Raw Output for e03_125_000.po ---
 
 ==================== BATCH 1 ====================
-Robo Upright Contradiction
-
-==================== FOLDER SUMMARY ====================
-#. いや、中の人が気絶してても、
-#. 背筋を伸ばした姿勢になれたはずだよ。
+#. そうだ…<CLT 3>『彼らのように殺される』<CLT>なんて発言は、
+#. あの時のセレスさんから、出て来るはずないんだよ。
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"No, even if the person inside the suit were\n"
-"unconscious, they could still stand up like that."
-msgstr ""
-"Không đâu, dẫu cho người bên trong có bất tỉnh đi chăng nữa, họ vẫn có thể đứng ở một tư thế thẳng lưng như thế đấy."
+"That's right... There's no reason Celeste should have\n"
+"said \"<CLT 3>just like *those guys* died<CLT>\"..."
+msgstr "Đúng vậy... câu nói kiểu như <CLT 3>\"sẽ bị giết hại dã man giống như bọn họ\"<CLT> đáng lẽ không thể nào phát ra từ miệng Celeste vào lúc đó được."
 
-#. あのジャスティスロボの衣装にあった、
-#. ある<CLT 3>特徴<CLT>のお陰でね…
+#. だって、あの時、ボクらはまだセレスさんに、
+#. 石丸クンの件を伝えてなかったはずだよ？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"Because that Robo Justice suit had a <CLT 3>certain\n"
-"characteristic<CLT>..."
-msgstr ""
-"Tất cả là nhờ vào một <CLT 3>đặc điểm<CLT> nhất định trên bộ đồ Robo Justice đó..."
+"When she said that, none of us had told her Taka was\n"
+"dead."
+msgstr "Bởi vì vào thời điểm đó, tụi mình vẫn chưa hề thông báo cho Celeste biết về chuyện của Taka mà đúng không?"
 
-#. 腰がまったく曲がらないよ！？
-#. 明らかな設計ミスじゃん！？
-msgctxt "0003 | AOI ASAHINA"
+#. しかも、俺達がセレスと会ったのは、
+#. 廊下に出た後の事だ。
+msgctxt "0004 | BYAKUYA TOGAMI"
 msgid ""
-"You totally can't bend at the waist! Seems like a\n"
-"pretty obvious oversight..."
-msgstr ""
-"Phần hông hoàn toàn không thể gập lại được luôn không cơ chứ! Rõ ràng là lỗi thiết kế mười mươi rồi còn gì..."
+"Exactly. And we didn't run into her until after we\n"
+"were all out in the hall."
+msgstr "Chính xác. Và chúng ta cũng chỉ tình cờ chạm mặt cô ta sau khi tất cả đã bước ra ngoài hành lang."
 
-#. そうだ！　あの衣装って、
-#. 設計ミスのせいで腰がまったく曲がらないんだ！
-msgctxt "0004 | AOI ASAHINA"
+#. つまり、そいつには物理準備室の死体を見る機会も
+#. なかったはずだ…
+msgctxt "0005 | BYAKUYA TOGAMI"
 msgid ""
-"That's right! They totally made a mistake when they\n"
-"made it, so it couldn't bend at the waist!"
-msgstr ""
-"Đúng rồi! Bộ trang phục đó bị lỗi thiết kế nên phần hông hoàn toàn không thể gập lại được!"
+"So there was never any chance for her to have seen his\n"
+"body in the equipment room for herself."
+msgstr "Nghĩa là cô ta hoàn toàn không có cơ hội để tự mình nhìn thấy cái xác ở phòng chuẩn bị vật lý."
 
-#. そもそも、本当に設計ミスだったのかしら…？
-msgctxt "0005 | KYOUKO KIRIGIRI"
-msgid "I'm not so sure that was a mistake..."
-msgstr "Ngay từ đầu, chuyện đó liệu có thực sự là lỗi thiết kế không nhỉ..."
+#. それなのに、セレスさんはどうして知っていたの？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "So how did you know, Celeste?"
+msgstr "Tuy nhiên, sao cậu lại biết được chuyện đó hả Celeste?"
 
-#. 最初から、この画像をでっち上げる為に、
-#. 計算して作られた設計だったのかもしれないわよ？
-msgctxt "0006 | KYOUKO KIRIGIRI"
+#. 殺されたのは１人じゃなくて<CLT 3>“彼ら”<CLT>…
+#. しかも<CLT 3>“男”<CLT>だったって事をさ…
+msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"I think the suit was designed from the beginning to be\n"
-"used the way it was."
-msgstr ""
-"Không chừng ngay từ đầu, cấu tạo của nó đã được tính toán kỹ lưỡng cốt để tạo dựng nên bức ảnh này thì sao?"
+"How did you know <CLT 3>more than one person<CLT> had been\n"
+"killed? And how did you know they were <CLT 3>both guys<CLT>?"
+msgstr "Làm sao cậu biết người bị hại không phải chỉ có một mà là <CLT 3>\"bọn họ\"<CLT>... hơn nữa lại còn biết rõ họ đều là <CLT 3>\"nam giới\"<CLT> nữa chứ..."
 
-#. …くぅっ！
-msgctxt "0007 | CELES"
-msgid "Ngh...!"
-msgstr "Ư...!"
-
-#. セレスさん達は、そんな特徴がある衣裳を、
-#. 気絶した葉隠君に着させる事で…
+#. だって、あの時は霧切さんも姿を消してたんだ。
+#. 彼女が殺された可能性だって、あったはずだよ？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"Celeste and Hifumi took the suit they'd specially\n"
-"designed and stuffed Hiro into it..."
-msgstr ""
-"Bằng việc ép Yasuhiro đang bất tỉnh phải khoác lên mình bộ trang phục có đặc điểm như vậy..."
+"Because Kyoko had also disappeared, right? So she\n"
+"could have been dead, too."
+msgstr "Bởi vì lúc đó Kirigiri cũng đang mất tích mà. Chẳng phải khả năng cậu ấy bị sát hại cũng có thể xảy ra sao?"
 
-#. あの画像をでっち上げたんだよ。
-msgctxt "0009 | MAKOTO NAEGI"
-msgid "That's how they were able to fake that whole thing."
-msgstr "Celeste và Hifumi đã ngụy tạo nên bức ảnh đó."
+#. うふふふ…
+msgctxt "0010 | CELES"
+msgid "Hmhmhm..."
+msgstr "Heh heh heh heh..."
 
-#. あの不審者の存在を、
-#. ボク達に信じ込ませる為にね！
-msgctxt "0010 | MAKOTO NAEGI"
-msgid ""
-"The point of it all was to make us believe whoever was\n"
-"in the suit was to blame!"
-msgstr ""
-"Mục đích chính là để ép bọn tớ phải tin vào sự tồn tại của tên khả nghi đó!"
-
-#. …ぐぐぐッ！！
+#. みなさん、想像力が豊かなのですね？
 msgctxt "0011 | CELES"
-msgid "Ngh-gh-gh!"
-msgstr "Gừ gừ gừ...!!"
+msgid "You all have such vivid imaginations, you know that?"
+msgstr "Mọi người ai cũng có trí tưởng tượng phong phú quá nhỉ."
 
-#. どうやら…チェックメイトのようだな…
+#. 想像…だと…？
 msgctxt "0012 | BYAKUYA TOGAMI"
-msgid "Well then, I suppose this is checkmate..."
-msgstr "Xem ra... bàn cờ đã chiếu tướng rồi nhỉ..."
+msgid "Imaginations...?"
+msgstr "Tưởng tượng... sao...?"
 
-#. チェック…メイト……？
+#. 先程、あなた方はおっしゃっていましたわね？
+#. わたくしが不審者を目撃した証言は、すべてウソだと…
 msgctxt "0013 | CELES"
-msgid "Checkmate...?"
-msgstr "Chiếu... tướng...?"
-
-#. うふ…うふふふふ…
-msgctxt "0015 | CELES"
-msgid "Heh...hehehe..."
-msgstr "U fư... u fư fư fư fư..."
-
-#. ふ…ふ…ふふ…ふふふ…
-msgctxt "0016 | CELES"
-msgid "Hah...haha...hahaha..."
-msgstr "Ha... ha... ha ha... ha ha ha..."
-
-#. ふざけてんじゃねーぞ、このダボッ！！
-#. あぁ！？　何がチェックメイトだ！？
-msgctxt "0017 | CELES"
 msgid ""
-"Don't make me laugh, you idiot! What do you mean,\n"
-"checkmate!?"
-msgstr ""
-"Đừng có giỡn mặt với tao hả cái lũ ngu xuẩn kia!! Cái gì mà chiếu tướng cơ chứ?!"
+"You claim that I was lying when I told you about the\n"
+"suspicious person I saw..."
+msgstr "Lúc nãy các người vừa khẳng định chắc nịch rồi cơ mà. Rằng lời nhân chứng nhìn thấy kẻ khả nghi củaわたくし hoàn toàn là giả dối..."
 
-#. セ、セレス…ちゃん…？
-msgctxt "0018 | AOI ASAHINA"
-msgid "C-Celeste...?"
-msgstr "C-Celeste... ơi...?"
+#. でしたら、この画像はどうなるのです？
+msgctxt "0014 | CELES"
+msgid "Then what about the picture I took?"
+msgstr "Nếu vậy thì bức ảnh này phải giải thích thế nào đây?"
 
-#. どうしても、わたくしを犯人に仕立て上げたいらしーが
-#. そいつは大きな間違いですわよぉ！！
+#. 不審者が山田君を連れ去っている、この画像について、
+#. みなさんは、どう説明を付けるおつもりですか？
+msgctxt "0015 | CELES"
+msgid ""
+"How do you explain this picture of the costumed\n"
+"villain dragging Hifumi away?"
+msgstr "Về bức ảnh chụp lại cảnh kẻ khả nghi đang bắt giữ Hifumi đi này, mọi người tính biện minh làm sao đây ạ?"
+
+#. それも…ねつ造だろ…？
+msgctxt "0016 | YASUHIRO HAGAKURE"
+msgid "I-It has to be some kind of setup, right?"
+msgstr "C-Cái đó cũng là ngụy tạo đúng không...?"
+
+#. セレスっちが、あの衣装を着て…
+#. そんで…デジカメのタイマーを使って撮影したとか…
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Celeste put the suit on, and then...then she used the\n"
+"camera's timer to...to set up the picture!"
+msgstr "Celeste đã tự mình mặc bộ đồ đó vào... rồi... rồi dùng chế độ hẹn giờ của máy ảnh để chụp chứ gì..."
+
+#. お忘れですか？　あの衣装は、
+#. 葉隠君にしか着られないはずですわよ？
+msgctxt "0018 | CELES"
+msgid ""
+"Have you so quickly forgotten? You are the only one\n"
+"who could have possibly fit into that suit."
+msgstr "Anh quên rồi sao. Bộ trang phục đó chỉ có mỗi mình Hiro là mặc vừa thôi cơ mà."
+
+#. それに…このデジカメには、
+#. タイマー機能なんて付いておりません。
 msgctxt "0019 | CELES"
 msgid ""
-"Clearly, you want to cram me into your little \"guilty\"\n"
-"box. Well there's one little problem!"
-msgstr ""
-"Lũ tụi mày cứ sống chết muốn đổ vấy tội lỗi để biến tao thành hung thủ cho bằng được, nhưng cái đó là một sai lầm cực kỳ lớn đấy nhé!!"
+"Plus, I happen to know that this particular camera\n"
+"does not have a timer."
+msgstr "Với lại... chiếc máy ảnh kỹ thuật số này làm gì có chức năng hẹn giờ chụp đâu chứ."
 
-#. お忘れですかぁ？
-#. 山田君が死に際に残した、あの言葉をよぉ！！
+#. つまり、不審者が山田君を連れ去ったというのは、
+#. 揺るぎない事実なのです。
 msgctxt "0020 | CELES"
 msgid ""
-"Have you already forgotten what Hifumi told us as he\n"
-"lay dying!?"
-msgstr ""
-"Mấy người đã quên sạch bách rồi hả?! Những lời trăn trối cuối cùng mà Hifumi để lại trước khi lâm chung ấy!!"
+"In other words, it is an unassailable fact that this\n"
+"is a picture of Hifumi being dragged away."
+msgstr "Tóm lại, việc kẻ khả nghi bắt giữ Hifumi đi là một sự thật không thể chối cãi."
 
-#. …ねぇ、山田。誰にやられたの！？
-#. 誰があんたを襲ったの？
-msgctxt "0021 | AOI ASAHINA"
-msgid "Hey, Hifumi! Who was it? Who attacked you!?"
-msgstr "Này, Hifumi ơi. Ông bị ai hại ra nông nỗi này vậy?! Kẻ nào đã tấn công ông thế?"
-
-#. 犯人は…誰なの？
-msgctxt "0022 | AOI ASAHINA"
-msgid "Who tried to kill you!?"
-msgstr "Hung thủ... rốt cuộc là ai chứ?"
-
-#. は…んに…ん……？
-msgctxt "0023 | HIFUMI YAMADA"
-msgid "Who...killed me...?"
-msgstr "Hung... thủ... sao...?"
-
-#. 犯人の名前…僕は…知ってる…
-#. 思い…出したんだ…
-msgctxt "0024 | HIFUMI YAMADA"
-msgid "That's right... I remember...their name..."
-msgstr "Tên của hung thủ... tôi... biết rõ... Tôi đã... nhớ ra rồi..."
-
-#. や…やす…
-msgctxt "0025 | HIFUMI YAMADA"
-msgid "Y...Yasu..."
-msgstr "Ya... yasu..."
-
-#. ひ…ろ…
-msgctxt "0026 | HIFUMI YAMADA"
-msgid "...hi...ro..."
-msgstr "...hi... ro..."
-
-#. 犯人の名前を聞かれた山田君は、
-#. ハッキリと答えていましたわよね？
-msgctxt "0027 | CELES"
+#. わたくしの証言がすべてウソだと言うなら、
+#. この画像がなんなのかを、説明して頂けますか？
+msgctxt "0021 | CELES"
 msgid ""
-"When we asked him who had attacked him, his answer was\n"
-"quite clear, was it not?"
+"If everything I told you was a lie, how can this\n"
+"picture exist?"
+msgstr "Nếu cho rằng toàn bộ lời khai củaわたくし đều là dối trá, thì phiền mọi người giải thích hộ xem bức ảnh này từ đâu mà có đi?"
+
+#. そもそも、その画像って本当に…
+#. 不審者が山田君を連れ去っているところなのかしら？
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid ""
+"Simple. Are we sure that's really a picture of the\n"
+"suspect dragging Hifumi away?"
+msgstr "Ngay từ đầu, bức ảnh đó có thực sự chụp lại cảnh tên khả nghi đang bắt giữ Hifumi đi hay không nhỉ?"
+
+#. …どういう意味ですか？
+msgctxt "0023 | CELES"
+msgid "...What could you possibly mean by that?"
+msgstr "...Ý cô là sao ạ?"
+
+#. 不審者が山田君を連れ去った訳じゃなくて…
+#. 他の可能性だってあるんじゃないかしら？
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid ""
+"Surely there are other explanations than the one\n"
+"you've offered up."
+msgstr "Thay vì giả thuyết tên khả nghi bắt giữ Hifumi đi... chẳng phải vẫn còn những khả năng khác hay sao?"
+
+#. 他の可能性なんて…ある訳ないですわ…
+msgctxt "0025 | CELES"
+msgid "No...there is no other explanation."
+msgstr "Làm gì có khả năng nào khác ngoài chuyện đó được chứ..."
+
+#. <CLT 4>他の…可能性…？
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Other...explanations?\n"
+"<CLT>"
 msgstr ""
-"Vào lúc được gặng hỏi về danh tính của kẻ thủ ác, Hifumi đã trả lời một cách vô cùng rõ ràng còn gì nữa?!"
+"<CLT 4>Khả năng... khác sao...?\n"
+"<CLT>"
 
-#. 犯人は<CLT 3>“やすひろ”<CLT>だと…
-msgctxt "0028 | CELES"
-msgid "He shout, and I quote, \"<CLT 3>Yasuhiro<CLT>.\""
-msgstr "Nằng nặc nói rằng hung thủ chính là <CLT 3>\"Yasuhiro\"<CLT>..."
+#. 山田が不審者を連れ去っている
+msgctxt "0027 | CHOICE/RE:ACT"
+msgid "Hifumi is dragging the suspect away"
+msgstr "Hifumi đang bắt giữ tên khả nghi"
 
-#. つまり、葉隠康比呂なんだよぉぉぉぉおおおッ！！
+#. 山田と不審者が踊っている
+msgctxt "0028 | CHOICE/RE:ACT"
+msgid "Hifumi and the suspect are dancing"
+msgstr "Hifumi và tên khả nghi đang khiêu vũ"
+
+#. あら、うふふふ…
+#. 言われてみれば、そう見えなくもないですわね。
 msgctxt "0029 | CELES"
-msgid "In other words, Yasuhiro Hagakureeeee!"
-msgstr "Nói tóm lại, kẻ đó chính là Yasuhiro Hagakure chứ còn ai vào đây nữa!!"
-
-#. お、お、俺は“やすひろ”なんて名前じゃねーって！
-#. じ、実は“たろすけ”って名前で…
-msgctxt "0030 | YASUHIRO HAGAKURE"
 msgid ""
-"W-Wait, but my name isn't really Yasuhiro! It's\n"
-"actually Taro!"
-msgstr ""
-"T-Tớ đã bảo cái tên thật của tớ vốn đâu có phải là \"Yasuhiro\" đâu cơ chứ! Th-Thật ra tên tớ là \"Tarosuke\" và..."
+"Huh? Hmhmhm. Yes, I suppose in a certain light, you\n"
+"could interpret it that way."
+msgstr "Ơ kìa, u fư fư fư... Nghe cô nói vậy thì nhìn kỹ lại trông cũng có nét giống thế thật đấy nhỉ."
 
-#. そういう訳のわからぬウソをつくから、
-#. 話がややこしくなるのだ…
-msgctxt "0031 | SAKURA OOGAMI"
+#. ふざけているの…？
+#. まさか、本気じゃないでしょ…？
+msgctxt "0030 | KYOUKO KIRIGIRI"
 msgid ""
-"Your confusing statements don't make any sense. You're\n"
-"only making things more complicated."
-msgstr ""
-"Cũng tại cậu cứ mở mồm ra là bịa mấy lời nói dối vô căn cứ như thế, nên câu chuyện mới càng lúc càng trở nên rắc rối thêm đấy..."
+"Is this some kind of bad joke? Surely you can't be\n"
+"serious..."
+msgstr "Cô đang đùa giỡn đấy à... Chắc chắn là cô không nghiêm túc rồi..."
 
-#. だけど、山田君が言った“やすひろ”って、
-#. 本当に葉隠君の事を指しているのかしらね？
-msgctxt "0032 | KYOUKO KIRIGIRI"
+#. <CLT 4>違ったみたいだ…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
 msgid ""
-"He did say Yasuhiro, but are we sure he was really\n"
-"pointing the finger at Hiro?"
+"<CLT 4>I guess I was wrong...\n"
+"<CLT>"
 msgstr ""
-"Cậu ta đúng là có nhắc tới cái tên \"Yasuhiro\", nhưng liệu có chắc chắn mục tiêu nhắm đến thực sự là Yasuhiro hay không?"
+"<CLT 4>Hình như mình đoán sai mất rồi...\n"
+"<CLT>"
 
-#. テメー、何言ってんだ！　焼くぞ！！
-msgctxt "0033 | CELES"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
 msgid ""
-"What the hell are you talking about!? I'll burn you\n"
-"alive!"
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
 msgstr ""
-"Con khốn kia, mày đang lải nhải cái thá gì đấy hả! Tao thiêu sống mày bây giờ đấy!!"
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
+"<CLT>"
 
-#. 霧切さん…どういう意味？
+#. 山田と不審者は酔っ払っている
+msgctxt "0033 | CHOICE/RE:ACT"
+msgid "Hifumi and the suspect had been drinking"
+msgstr "Hifumi và tên khả nghi đang say xỉn"
+
+#. <CLT 4>うーん、ちょっと違う気が…
+#. <CLT>
 msgctxt "0034 | MAKOTO NAEGI"
-msgid "Kyoko...what do you mean by that?"
-msgstr "Kyoko... ý cậu là sao?"
+msgid ""
+"<CLT 4>Um, no...I really don't think that's right.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Ừm, có vẻ hướng này không đúng cho lắm...\n"
+"<CLT>"
 
-#. フルネーム
-msgctxt "0035 | CHOICE/RE:ACT"
-msgid "He said people's last names"
-msgstr "Họ tên đầy đủ"
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
+"<CLT>"
 
-#. 「っち」を付ける
-msgctxt "0036 | CHOICE/RE:ACT"
-msgid "He said \"for serious\" a lot"
-msgstr "Thêm đuôi \"cưng\""
+#. いくら考えても無駄ですわ。
+#. だって、他の可能性なんてありませんもの。
+msgctxt "0036 | CELES"
+msgid ""
+"Take all the time you want to think about it, there is\n"
+"no point. Because there is no other possibility."
+msgstr "Dù mọi người có tốn công suy nghĩ đến mức nào thì cũng vô ích thôi. Bởi vì làm gì tồn tại khả năng nào khác chứ."
 
-#. それは俺だべ！？
-msgctxt "0037 | YASUHIRO HAGAKURE"
-msgid "Wait, isn't that me!?"
-msgstr "Ủa, cái đó là cách gọi của tớ mà ta?!"
+#. <CLT 4>いや、きっと他の可能性があるはず…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No, you're wrong... There has to be!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không, nhất định phải có một giả thuyết khác hợp lý hơn...\n"
+"<CLT>"
 
-#. <CLT 4>そうだった…
-#. これは葉隠クンがみんなを呼ぶ時の呼び方だ…
+#. <CLT 4>山田クンが単なる被害者ではなく、
+#. 共犯者だったのなら…
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Oh yeah... That's kinda the thing you say, huh?\n"
+"<CLT 4>Hifumi wasn't just an innocent victim—he was also an\n"
+"accomplice!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phải rồi... Đây là biệt danh mà Yasuhiro thường dùng để gọi mọi người chứ đâu phải Hifumi đâu...\n"
+"<CLT 4>Một khi Hifumi không đơn thuần là nạn nhân mà là một đồng phạm...\n"
 "<CLT>"
 
 #. <CLT 4>みんなのボクに対する印象が、
@@ -265,26 +285,402 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như mình vừa tự làm mình mất mặt trước mặt mọi người rồi...\n"
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
 "<CLT>"
 
-#. ファーストネーム
+#. <CLT 4>不審者が山田クンを連れ去っているところを、
+#. 撮影した画像じゃないとすると…
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If it wasn't a picture of the suspect dragging Hifumi\n"
+"away...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu bức ảnh kia không phải chụp cảnh tên khả nghi đang bắt giữ Hifumi đi...\n"
+"<CLT>"
+
+#. <CLT 4>だとすると、それ以外の可能性って…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...the only other possibility is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Vậy thì khả năng còn lại duy nhất chỉ có thể là...\n"
+"<CLT>"
+
+#. あれは、不審者が、
+#. 山田クンを連れ去ってる画像じゃなくって…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"It's *not* a picture of the suspect dragging Hifumi\n"
+"away..."
+msgstr "Bức ảnh đó hoàn toàn không phải chụp cảnh tên khả nghi đang bắt giữ Hifumi đi..."
+
+#. 山田クンの方が、
+#. <CLT 3>不審者を連れ去ってる画像<CLT>だったのかもしれないね？
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"I would say it's a picture of <CLT 3>Hifumi dragging the\n"
+"suspect away<CLT>!"
+msgstr "Mà có lẽ thực chất đó chính là <CLT 3>bức ảnh chụp Hifumi đang mang tên khả nghi đi<CLT> đúng không?"
+
+#. く…！！
+msgctxt "0044 | CELES"
+msgid "Kh—!"
+msgstr "Hự...!!"
+
+#. …そう考えられるはずよ。
+msgctxt "0045 | KYOUKO KIRIGIRI"
+msgid "That's certainly within the realm of possibility."
+msgstr "...Hoàn toàn có thể giải thích theo hướng đó."
+
+#. あの画像で連れ去られていたのは、
+#. 山田君の方ではなく不審者の方だった…
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid ""
+"The one being dragged off in that picture isn't\n"
+"Hifumi, but the person in the robot suit."
+msgstr "Người bị mang đi trong bức ảnh đó không phải là Hifumi, mà thực chất là tên khả nghi."
+
+#. それを、私達が勘違いしていただけなのかかも。
+#. 山田君の方が連れ去られたんだって…
+msgctxt "0047 | KYOUKO KIRIGIRI"
+msgid ""
+"We've simply been led to believe that it's the other\n"
+"way around."
+msgstr "Chỉ là tất cả chúng ta đã bị đánh lừa rồi lầm tưởng rằng Hifumi mới là người bị bắt đi..."
+
+#. あの怪しい衣裳も、
+#. 私達に勘違いさせる為の物だったんじゃないかしら。
+msgctxt "0048 | KYOUKO KIRIGIRI"
+msgid ""
+"And the strange costume might only exist to lead us\n"
+"astray even farther."
+msgstr "Ngay cả bộ trang phục kỳ quặc kia có lẽ cũng được tạo ra nhằm mục đích khiến chúng ta nhầm lẫn."
+
+#. あんな衣裳を着ている人物を見たら、
+#. 誰だって、そっちが怪しいと思い込んでしまうからね…
+msgctxt "0049 | KYOUKO KIRIGIRI"
+msgid ""
+"If you saw someone wearing something like that in this\n"
+"situation, of course you'd notice and be suspicious."
+msgstr "Bởi vì khi nhìn thấy một người mặc bộ đồ như thế, bất kỳ ai cũng sẽ vô thức mặc định rằng kẻ đó mới là đối tượng đáng nghi..."
+
+#. そ、そうやって、俺の寝てる間に、
+#. 俺を容疑者に仕立て上げたんだな！
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid ""
+"Th-That's what happened! You put me to sleep and made\n"
+"me out to be the bad guy in all this!"
+msgstr "R-Ra là bằng cách đó, nhân lúc tớ đang ngủ say, các người đã đổ hết mọi tội lỗi lên đầu tớ để biến tớ thành nghi phạm chứ gì!"
+
+#. うふ…うふふふふ…
+msgctxt "0051 | CELES"
+msgid "Hmhm. Hmhmhmhm..."
+msgstr "U fư... u fư fư fư..."
+
+#. うふふ…そんな訳…
+msgctxt "0052 | CELES"
+msgid "Eheh... Such a thing..."
+msgstr "U fư fư... Làm gì có chuyện..."
+
+#. …ないじゃありませんか。
+msgctxt "0053 | CELES"
+msgid "...is utterly impossible."
+msgstr "...vô lý như thế được chứ ạ."
+
+#. 山田君の方が不審者を連れ去っていた？
+#. そんな事、あり得ませんわ…
+msgctxt "0054 | CELES"
+msgid "Hifumi was dragging him away? Ridiculous."
+msgstr "Hifumi lại là người đem tên khả nghi đi sao? Chuyện đó là hoàn toàn bất khả thi..."
+
+#. あり得ない…本当にそうかしら？
+#. 私にはそうは思えないけど…
+msgctxt "0055 | KYOUKO KIRIGIRI"
+msgid "Is it? I don't think it's ridiculous at all."
+msgstr "Bất khả thi sao... Có thật là vậy không nhỉ? Riêng tôi thì không nghĩ như thế đâu..."
+
+#. でしたら、お教えしましょうか。
+#. あり得ないと言い切れる根拠を…
+msgctxt "0056 | CELES"
+msgid "Then shut your mouth and allow me to educate you."
+msgstr "Nếu đã vậy, đểわたくし chỉ cho cô thấy nhé. Bằng chứng đanh thép chứng minh điều này hoàn toàn bất khả thi..."
+
+#. <CLT 4>山田クンが不審者を連れ去った事はあり得ない。
+#. そう言い切れる根拠なんて…
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste thinks she can prove that there's no way\n"
+"Hifumi was dragging the suspect away.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bằng chứng để Celeste khẳng định chắc nịch rằng việc Hifumi mang tên khả nghi đi là bất khả thi...\n"
+"<CLT>"
+
+#. <CLT 4>そんなものが…本当にあるのか？
+#. <CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But is that really possible...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Một thứ như thế... liệu có thực sự tồn tại hay không?\n"
+"<CLT>"
+
+
+==================== FOLDER SUMMARY ====================
+#. Không, ngay cả khi người bên trong bộ đồ bị ngất, họ vẫn có thể đứng thẳng như thế được.
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"No, even if the person inside the suit were\n"
+"unconscious, they could still stand up like that."
+msgstr "Không đâu, dù người bên trong có đang bất tỉnh nhân sự đi nữa thì vẫn có thể đứng ở tư thế thẳng thớm như vậy được."
+
+#. Nhờ vào một đặc điểm có sẵn trên bộ đồ Robo Justice đó...
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"Because that Robo Justice suit had a <CLT 3>certain\n"
+"characteristic<CLT>..."
+msgstr "Tất cả là nhờ vào một <CLT 3>đặc điểm<CLT> của bộ trang phục Robo Justice đó..."
+
+#. Phần eo hoàn toàn không gập lại được luôn kìa!? Rõ ràng là lỗi thiết kế rồi còn gì nữa!?
+msgctxt "0003 | AOI ASAHINA"
+msgid ""
+"You totally can't bend at the waist! Seems like a\n"
+"pretty obvious oversight..."
+msgstr "Phần eo không tài nào cúi xuống được luôn á!? Thế này rõ ràng là lỗi thiết kế chành bành ra rồi còn gì!?"
+
+#. Đúng rồi! Bộ trang phục đó do bị lỗi thiết kế nên phần eo hoàn toàn không thể gập lại được!
+msgctxt "0004 | AOI ASAHINA"
+msgid ""
+"That's right! They totally made a mistake when they\n"
+"made it, so it couldn't bend at the waist!"
+msgstr "Đúng thế luôn! Bộ đồ đó bị lỗi thiết kế nên phần eo mới không thể gập xuống được tí nào!"
+
+#. Ngay từ đầu, chuyện đó có thực sự là lỗi thiết kế hay không nhỉ...?
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid "I'm not so sure that was a mistake..."
+msgstr "Ngay từ đầu, chuyện đó có thực sự là lỗi thiết kế hay không nhỉ..."
+
+#. Có khi cấu trúc đó đã được tính toán kỹ lưỡng ngay từ đầu nhằm mục đích ngụy tạo ra bức ảnh này thì sao?
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid ""
+"I think the suit was designed from the beginning to be\n"
+"used the way it was."
+msgstr "Biết đâu cấu trúc đó đã nằm trong tính toán ngay từ đầu để phục vụ cho việc dàn dựng ra bức ảnh này thì sao?"
+
+#. ...Hự...!
+msgctxt "0007 | CELES"
+msgid "Ngh...!"
+msgstr "...Hự...!"
+
+#. Nhóm Celeste đã ép Hiro đang bất tỉnh mặc bộ trang phục có đặc điểm như thế vào...
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"Celeste and Hifumi took the suit they'd specially\n"
+"designed and stuffed Hiro into it..."
+msgstr "Celeste và Hifumi đã bắt Hiro mặc bộ trang phục có đặc điểm như vậy vào trong lúc cậu ấy đang ngất xỉu..."
+
+#. Rồi dàn dựng ra bức ảnh đó.
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "That's how they were able to fake that whole thing."
+msgstr "Rồi từ đó dàn dựng nên bức ảnh kia."
+
+#. Mục đích là để tụi mình tin vào sự tồn tại của kẻ khả nghi đó!
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"The point of it all was to make us believe whoever was\n"
+"in the suit was to blame!"
+msgstr "Tất cả là để ép tụi mình phải tin rằng thực sự có một kẻ khả nghi đang lảng vảng quanh đây!"
+
+#. ...Gừ gừ gừ...ッ!!
+msgctxt "0011 | CELES"
+msgid "Ngh-gh-gh!"
+msgstr "...Ư... ư... ư...ッ!!"
+
+#. Xem ra... đã chiếu tướng rồi nhỉ...
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid "Well then, I suppose this is checkmate..."
+msgstr "Xem ra... cục diện đã được chiếu tướng rồi nhỉ..."
+
+#. Chiếu... tướng......?
+msgctxt "0013 | CELES"
+msgid "Checkmate...?"
+msgstr "Chiếu... tướng......?"
+
+#. U fư... u fư fư fư...
+msgctxt "0015 | CELES"
+msgid "Heh...hehehe..."
+msgstr "U fư... u fư fư fư..."
+
+#. Hơ... hơ... hơ hơ... hô hô hô...
+msgctxt "0016 | CELES"
+msgid "Hah...haha...hahaha..."
+msgstr "Heh... heh... heh heh... heh heh heh..."
+
+#. Đừng có mà giỡn mặt với tao, cái đồ ngu xuẩn nàyッ!! Thằng khốn kia, chiếu tướng cái nỗi gì hảッ!?
+msgctxt "0017 | CELES"
+msgid ""
+"Don't make me laugh, you idiot! What do you mean,\n"
+"checkmate!?"
+msgstr "Đừng có mà giỡn mặt với tao, cái đồ ngu xuẩn nàyッ!! Thằng khốn kia, chiếu tướng cái nỗi gì hảッ!?"
+
+#. C-Celeste... ơi...?
+msgctxt "0018 | AOI ASAHINA"
+msgid "C-Celeste...?"
+msgstr "C-Celeste... bà sao thế...?"
+
+#. Tụi mày cứ một mực muốn đổ vấy tội lỗi lên đầu tao, nhưng cái đó là một sai lầm cực kỳ ngu xuẩn đấy nhéッ!!
+msgctxt "0019 | CELES"
+msgid ""
+"Clearly, you want to cram me into your little \"guilty\"\n"
+"box. Well there's one little problem!"
+msgstr "Tụi mày cứ một mực muốn đổ vấy tội lỗi lên đầu tao, nhưng cái đó là một sai lầm cực kỳ ngu xuẩn đấy nhéッ!!"
+
+#. Bộ tụi mày quên sạch rồi hảッ!? Câu trăng trối cuối cùng mà tên Hifumi đã để lại trước khi lâm chung ấyッ!!
+msgctxt "0020 | CELES"
+msgid ""
+"Have you already forgotten what Hifumi told us as he\n"
+"lay dying!?"
+msgstr "Bộ tụi mày quên sạch rồi hảッ!? Câu trăng trối cuối cùng mà tên Hifumi đã để lại trước khi lâm chung ấyッ!!"
+
+#. ...Này, Hifumi. Cậu bị ai hại thế!? Ai đã tấn công cậu vậy?
+msgctxt "0021 | AOI ASAHINA"
+msgid "Hey, Hifumi! Who was it? Who attacked you!?"
+msgstr "...Này, Hifumi. Ông bị ai hại thế!? Ai đã tấn công ông vậy?"
+
+#. Hung thủ... là ai cơ?
+msgctxt "0022 | AOI ASAHINA"
+msgid "Who tried to kill you!?"
+msgstr "Hung thủ... là ai cơ?"
+
+#. Hu... ng thủ......?
+msgctxt "0023 | HIFUMI YAMADA"
+msgid "Who...killed me...?"
+msgstr "Hu... ng thủ......?"
+
+#. Tên của hung thủ... tôi... biết chứ... Tôi... nhớ ra rồi...
+msgctxt "0024 | HIFUMI YAMADA"
+msgid "That's right... I remember...their name..."
+msgstr "Tên của hung thủ... tôi... biết chứ... Tôi... nhớ ra rồi..."
+
+#. Ya... su...
+msgctxt "0025 | HIFUMI YAMADA"
+msgid "Y...Yasu..."
+msgstr "Ya... su..."
+
+#. hi... ro...
+msgctxt "0026 | HIFUMI YAMADA"
+msgid "...hi...ro..."
+msgstr "hi... ro..."
+
+#. Khi được hỏi về danh tính của kẻ thủ ác, tên Hifumi đã trả lời cực kỳ rõ ràng còn gì nữaッ!?
+msgctxt "0027 | CELES"
+msgid ""
+"When we asked him who had attacked him, his answer was\n"
+"quite clear, was it not?"
+msgstr "Khi được hỏi về danh tính của kẻ thủ ác, tên Hifumi đã trả lời cực kỳ rõ ràng còn gì nữaッ!?"
+
+#. Hắn bảo hung thủ chính là <CLT 3>"Yasuhiro"<CLT>...
+msgctxt "0028 | CELES"
+msgid "He'll say, and I quote, \"<CLT 3>Yasuhiro<CLT>.\""
+msgstr "Hắn bảo hung thủ chính là <CLT 3>\"Yasuhiro\"<CLT>..."
+
+#. Tức là gã Yasuhiro Hagakure chứ còn ai vào đây nữa hả cái lũ ngu ngốc nàyッ!!
+msgctxt "0029 | CELES"
+msgid "In other words, Yasuhiro Hagakureeeee!"
+msgstr "Tức là gã Yasuhiro Hagakure chứ còn ai vào đây nữa hả cái lũ ngu ngốc nàyッ!!"
+
+#. Kh-Kh-Khoan đã, tên tớ làm gì phải là "Yasuhiro" cơ chứ! Th-Thực ra tên khai sinh của tớ là "Tarosuke" cơ mà...
+msgctxt "0030 | YASUHIRO HAGAKURE"
+msgid ""
+"W-Wait, but my name isn't really Yasuhiro! It's\n"
+"actually Taro!"
+msgstr "Kh-Kh-Khoan đã, tên tớ làm gì phải là \"Yasuhiro\" cơ chứ! Th-Thực ra tên khai sinh của tớ là \"Tarosuke\" cơ mà..."
+
+#. Cậu cứ mở miệng ra là nói mấy lời nói dối vô căn cứ như thế, bảo sao câu chuyện cứ rối rắm hết cả lên...
+msgctxt "0031 | SAKURA OOGAMI"
+msgid ""
+"Your confusing statements don't make any sense. You're\n"
+"only making things more complicated."
+msgstr "Cậu cứ mở miệng ra là nói mấy lời dối trá vô căn cứ như thế, bảo sao câu chuyện cứ rối rắm hết cả lên..."
+
+#. Thế nhưng, cái tên "Yasuhiro" mà Hifumi nhắc đến có thực sự là đang ám chỉ Hiro không nhỉ?
+msgctxt "0032 | KYOUKO KIRIGIRI"
+msgid ""
+"He did say Yasuhiro, but are we sure he was really\n"
+"pointing the finger at Hiro?"
+msgstr "Thế nhưng, cái tên \"Yasuhiro\" mà Hifumi nhắc đến có thực sự là đang ám chỉ Hiro không nhỉ?"
+
+#. Thằng khốn kia, mày đang sủa cái gì thế hảッ!? Tao thiêu sống mày bây giờッ!!
+msgctxt "0033 | CELES"
+msgid ""
+"What the hell are you talking about!? I'll burn you\n"
+"alive!"
+msgstr "Mày đang sủa cái gì thế hả thằng khốn kiaッ!? Tao thiêu sống mày bây giờッ!!"
+
+#. Kirigiri... ý cậu là sao?
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "Kyoko...what do you mean by that?"
+msgstr "Kirigiri... ý cậu là sao vậy?"
+
+#. Gọi bằng họ
+msgctxt "0035 | CHOICE/RE:ACT"
+msgid "He said people's last names"
+msgstr "Gọi người khác bằng họ"
+
+#. Thêm chữ "cậu" hoặc "bạn" vào sau
+msgctxt "0036 | CHOICE/RE:ACT"
+msgid "He said \"for serious\" a lot"
+msgstr "Thêm từ ngữ khách sáo vào"
+
+#. Cái đó là phong cách của tớ mà đúng không?
+msgctxt "0037 | YASUHIRO HAGAKURE"
+msgid "Wait, isn't that me!?"
+msgstr "Cái đó là phong cách của tớ mà đúng không?"
+
+#. <CLT 4>Đúng rồi...
+#. Đây là cách mà Hiro hay dùng để gọi mọi người...
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Oh yeah... That's kinda the thing you say, huh?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đúng rồi... Đây là cách mà Hiro hay dùng để gọi mọi người...\n"
+"<CLT>"
+
+#. <CLT 4>Mọi người dường như có ấn tượng xấu về tớ rồi...
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
+"<CLT>"
+
+#. Gọi bằng tên
 msgctxt "0040 | CHOICE/RE:ACT"
 msgid "He gave everyone nicknames"
-msgstr "Tên gọi thân mật"
+msgstr "Gọi người khác bằng tên"
 
-#. <CLT 4>そんなに気さくじゃなかったような…
+#. <CLT 4>Tớ nhớ là cậu ấy đâu có thân thiết đến mức gọi thẳng tên như vậy...
 #. <CLT>
 msgctxt "0041 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Actually, no...they weren't that close...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ừm, nhớ lại thì phong cách của cậu ấy thường ngày đâu có suồng sã đến mức này đâu chứ...\n"
+"<CLT 4>Tớ nhớ là cậu ấy đâu có thân thiết đến mức gọi thẳng tên như vậy...\n"
 "<CLT>"
 
-#. <CLT 4>みんなのボクに対する印象が、
-#. 悪くなったみたいだ…
+#. <CLT 4>Mọi người dường như có ấn tượng xấu về tớ rồi...
 #. <CLT>
 msgctxt "0042 | MAKOTO NAEGI"
 msgid ""
@@ -292,16 +688,16 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như mình vừa tự làm mình mất mặt trước mặt mọi người rồi...\n"
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
 "<CLT>"
 
-#. ねぇ、思い出して。
-#. 彼はあなたの事を、どう呼んでたかしらね？
+#. Nào, hãy thử nhớ lại xem.
+#. Cậu ta thường gọi cậu bằng danh xưng như thế nào nhỉ?
 msgctxt "0043 | KYOUKO KIRIGIRI"
 msgid "Think about it. How did he used to refer to you?"
-msgstr "Nào, hãy thử nhớ lại xem. Thường ngày cậu ta hay gọi cậu bằng danh xưng gì vậy?"
+msgstr "Nào, hãy thử nhớ lại xem. Cậu ta thường gọi cậu bằng danh xưng như thế nào nhỉ?"
 
-#. <CLT 4>確か…苗木誠殿って…
+#. <CLT 4>Nếu tớ nhớ không lầm... hình như là Naegi Makoto điện hạ...
 #. <CLT>
 msgctxt "0044 | MAKOTO NAEGI"
 msgid ""
@@ -309,11 +705,10 @@ msgid ""
 "remember that really well.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đúng rồi... Cậu ấy toàn gọi mình là \"Naegi Makoto công tử\" mà... Mình nhớ rất rõ chi tiết này.\n"
+"<CLT 4>Nếu tớ nhớ không lầm... hình như là Naegi Makoto điện hạ...\n"
 "<CLT>"
 
-#. <CLT 4>みんなのボクに対する印象が、
-#. 悪くなったみたいだ…
+#. <CLT 4>Mọi người dường như có ấn tượng xấu về tớ rồi...
 #. <CLT>
 msgctxt "0045 | MAKOTO NAEGI"
 msgid ""
@@ -321,201 +716,181 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như mình vừa tự làm mình mất mặt trước mặt mọi người rồi...\n"
+"<CLT 4>Có vẻ như ấn tượng của mọi người dành cho mình vừa tệ đi rồi...\n"
 "<CLT>"
 
-#. 思い出してしてみて…
-#. 山田君の、みんなに対する呼び方を…
+#. Thử nhớ lại mà xem...
+#. Cách mà Hifumi dùng để gọi mọi người ở đây...
 msgctxt "0046 | KYOUKO KIRIGIRI"
 msgid "Think back to how Hifumi used to talk to us..."
-msgstr "Mọi người cố gắng lục lọi lại trí nhớ xem... Cách mà Hifumi gọi từng người chúng ta thường ngày ấy..."
+msgstr "Thử nhớ lại mà xem... Cách mà Hifumi dùng để gọi mọi người ở đây..."
 
-#. 彼は、私達の事をどんな風に呼んでいたかしら？
+#. Cậu ta thường gọi chúng ta bằng kiểu xưng hô như thế nào?
 msgctxt "0047 | KYOUKO KIRIGIRI"
 msgid "How did he refer to each of us?"
-msgstr "Bình thường cậu ta hay xưng hô với chúng ta theo kiểu gì nhỉ?"
+msgstr "Cậu ta thường gọi chúng ta bằng kiểu xưng hô như thế nào?"
 
-#. そうだ…<CLT 3>フルネーム<CLT>だ！
-#. 山田クンはみんなの事をフルネームで呼んでたんだ！
+#. Đúng rồi... là <CLT 3>Họ và Tên<CLT>!
+#. Hifumi luôn gọi mọi người bằng đầy đủ cả Họ và Tên kèm theo kính ngữ!
 msgctxt "0048 | MAKOTO NAEGI"
 msgid ""
 "...That's right! Our <CLT 3>last names<CLT>! He called us all by\n"
 "our last names!"
-msgstr ""
-"...Phải rồi! Là <CLT 3>họ tên đầy đủ<CLT>! Thường ngày Hifumi luôn gọi tất cả mọi người bằng họ tên đầy đủ kèm theo kính ngữ!"
+msgstr "Đúng rồi... là đầy đủ cả <CLT 3>Họ và Tên<CLT>! Hifumi luôn gọi mọi người bằng đầy đủ Họ và Tên kèm theo kính ngữ!"
 
-#. 例えば<CLT 3>“苗木誠殿”<CLT>って具合にね…
+#. Chẳng hạn như cách cậu ấy gọi tớ là <CLT 3>"Naegi Makoto điện hạ"<CLT> vậy...
 msgctxt "0049 | KYOUKO KIRIGIRI"
 msgid ""
 "Exactly. I know I heard him say \"<CLT 3>Mr. Naegi<CLT>\" more\n"
 "than once, for example."
-msgstr ""
-"Chính xác. Ví dụ tiêu biểu nhất chính là việc cậu ta luôn miệng gọi \"<CLT 3>Naegi Makoto công tử<CLT>\" kia kìa."
+msgstr "Chính xác. Chẳng hạn như cách cậu ấy gọi cậu là <CLT 3>\"Naegi Makoto điện hạ\"<CLT> vậy..."
 
-#. だから、山田君が葉隠君を名指しするつもりなら、
-#. <CLT 3>“葉隠康比呂殿”<CLT>って呼ぶはずなのよ。
+#. Thế nên, nếu Hifumi thực sự có ý định chỉ đích danh Hiro,
+#. Cậu ta nhất định phải gọi là <CLT 3>"Hagakure Yasuhiro điện hạ"<CLT>.
 msgctxt "0050 | KYOUKO KIRIGIRI"
 msgid ""
 "So if Hifumi *did* mean to say Hiro's name, he would\n"
 "have said his last name—<CLT 3>Hagakure<CLT>."
-msgstr ""
-"Cho nên, nếu mục đích thực sự của Hifumi là muốn chỉ đích danh Yasuhiro, cậu ta theo thói quen bắt buộc phải gọi là <CLT 3>\"Hagakure Yasuhiro công tử\"<CLT> chứ không thể chỉ gọi mỗi cái tên được."
+msgstr "Thế nên, nếu Hifumi thực sự có ý định chỉ đích danh Hiro, cậu ta nhất định phải gọi là <CLT 3>\"Hagakure Yasuhiro điện hạ\"<CLT> chứ."
 
-#. た、たまたま…ですわ…
-#. その時だけ…下の名前で呼んだのでしょう…
+#. Ch-Chỉ là trùng hợp... thôi ạ...
+#. Chắc vào đúng lúc đó... cậu ta đột nhiên muốn gọi thẳng tên ra thì sao...
 msgctxt "0051 | CELES"
 msgid ""
 "I'm sure it was just incidental—by chance he just—his\n"
 "first name...!"
-msgstr ""
-"C-Chỉ là ngẫu nhiên... trùng hợp mà thôi... Chắc hẳn riêng vào cái khoảnh khắc lâm chung đó... cậu ta mới đổi cách gọi sang tên thân mật...!"
+msgstr "Ch-Chỉ là trùng hợp... thôi ạ... Chắc vào đúng lúc đó... cậu ta đột nhiên muốn gọi thẳng tên ra thì sao..."
 
-#. たまたま…？
+#. Trùng hợp sao...?
 msgctxt "0052 | TOUKO FUKAWA"
 msgid "Indecent...?"
-msgstr "Ngẫu nhiên á...?"
+msgstr "Trùng hợp sao cậu...?"
 
-#. …黙ってろ。
+#. ...Câm mồm đi.
 msgctxt "0053 | BYAKUYA TOGAMI"
 msgid "Don't talk."
-msgstr "Câm họng lại đi."
+msgstr "...Câm mồm đi."
 
-#. たった１回の偶然が、その時なんて…
-#. 随分と都合のいい解釈をするのね？
+#. Một sự trùng hợp hy hữu chỉ xảy ra duy nhất vào thời khắc đó...
+#. Cô đang cố tình đưa ra một lời biện hộ quá sức gượng ép và có lợi cho bản thân nhỉ?
 msgctxt "0054 | KYOUKO KIRIGIRI"
 msgid ""
 "Random chance... Now isn't that a convenient\n"
 "explanation?"
-msgstr ""
-"Một sự trùng hợp hiếm hoi ngay đúng vào thời khắc sinh tử đó sao... Cách tự suy diễn này của cậu nghe có vẻ hơi bị bao biện quá rồi đấy nhỉ?"
+msgstr "Một sự trùng hợp hy hữu chỉ xảy ra duy nhất vào thời khắc đó... Cô đang cố tình đưa ra một lời biện hộ quá sức gượng ép và có lợi cho bản thân nhỉ?"
 
-#. あり得ないわ。山田君はいつものようにフルネームで、
-#. 犯人の名前を言おうとしたはずよ。
+#. Không có chuyện đó đâu. Hifumi chắc chắn đã cố gắng gọi đầy đủ cả Họ và Tên của hung thủ như thói quen thường ngày.
 msgctxt "0055 | KYOUKO KIRIGIRI"
 msgid ""
 "No, there's no reason to think he would have said the\n"
 "name any different than normal."
-msgstr ""
-"Chuyện đó hoàn toàn là bất khả thi. Chắc chắn Hifumi đã cố gắng thốt ra toàn bộ họ tên đầy đủ của hung thủ đúng như thói quen thường ngày của mình."
+msgstr "Không có chuyện đó đâu. Hifumi chắc chắn đã cố gắng gọi đầy đủ cả Họ và Tên của hung thủ như thói quen thường ngày."
 
-#. だけど、その途中で力尽きてしまった…
+#. Tuy nhiên, cậu ta đã trút hơi thở cuối cùng trước khi kịp thốt ra phần còn lại...
 msgctxt "0056 | KYOUKO KIRIGIRI"
 msgid ""
 "But he must have run out of energy before he could say\n"
 "any more."
-msgstr ""
-"Chẳng qua là giữa chừng, cậu ta đã kiệt sức hoàn toàn nên không thể nói hết câu mà thôi..."
+msgstr "Tuy nhiên, cậu ta đã trút hơi thở cuối cùng trước khi kịp thốt ra phần còn lại..."
 
-#. じゃあ、山田クンが示そうとしたのは…
-#. 例えば、苗字が“やすひろ”の人物とか…？
+#. Vậy nghĩa là, thứ mà Hifumi đang muốn chỉ ra...
+#. Chẳng hạn như một người mang họ là "Yasuhiro" sao...?
 msgctxt "0057 | MAKOTO NAEGI"
 msgid ""
 "So Hifumi was trying to tell us the last name of\n"
 "whoever killed him...?"
-msgstr ""
-"Nếu vậy, danh tính thật mà Hifumi đang muốn vạch trần... thực chất lại là một nhân vật có họ là \"Yasuhiro\" sao...?"
+msgstr "Vậy nghĩa là, thứ mà Hifumi đang muốn chỉ ra... Chẳng hạn như một người mang họ là \"Yasuhiro\" sao...?"
 
-#. だが、そんな名前の人物など…
-#. 該当する者はいないぞ…
+#. Nhưng trong số chúng ta làm gì có ai sở hữu cái họ kỳ lạ như thế...
+#. Hoàn toàn không có một ai tương thích cả...
 msgctxt "0058 | SAKURA OOGAMI"
 msgid "But the name he said doesn't apply to anyone here..."
-msgstr "Tuy nhiên, xét trong số toàn bộ học sinh ở đây... làm gì có ai sở hữu cái họ kỳ lạ như vậy chứ..."
+msgstr "Nhưng trong số chúng ta làm gì có ai sở hữu cái họ như thế... Hoàn toàn không có một ai tương thích cả..."
 
-#. いや…ちょっと待って…
-#. 可能性のある人が１人だけいるよ…
+#. Không... mọi người khoan đã...
+#. Vẫn còn một người duy nhất có khả năng trùng khớp đấy...
 msgctxt "0059 | MAKOTO NAEGI"
 msgid ""
 "Well, no, hold on...there's one person it *could*\n"
 "apply to..."
-msgstr ""
-"Không... xin chờ một chút đã... Vẫn còn duy nhất một người có khả năng khớp với điều kiện này đấy..."
+msgstr "Không... mọi người khoan đã... Vẫn còn một người duy nhất có khả năng trùng khớp đấy..."
 
-#. 今まで本名を明かしていない…<CLT 3>セレスさん<CLT>…
+#. Người cho đến tận bây giờ vẫn chưa chịu công khai tên thật của mình... chính là <CLT 3>Celeste<CLT>...
 msgctxt "0060 | MAKOTO NAEGI"
 msgid ""
 "And that's <CLT 3>Celeste<CLT>. She never actually told us\n"
 "what her real name is..."
-msgstr ""
-"Chính là người cho tới tận thời điểm này vẫn chưa chịu công khai họ tên thật của mình... <CLT 3>Celeste<CLT>..."
+msgstr "Người cho đến tận bây giờ vẫn chưa chịu công khai tên thật của mình... chính là <CLT 3>Celeste<CLT>..."
 
-#. なん…ですと…？
+#. Cậu... vừa nói cái gì cơ...?
 msgctxt "0061 | CELES"
 msgid "Wh...? What did you just say?"
-msgstr "Cái... cái gì cơ...?"
+msgstr "Cậu... vừa nói cái gì cơ...?"
 
-#. 言いがかりも…そこまでくると笑えますわね……
+#. Lời vu khống của các người... vu khống đến mức độ này thì đúng là nực cười thật đấy......
 msgctxt "0062 | CELES"
 msgid ""
 "To think you'd take your false accusations so far... I\n"
 "don't know whether to laugh or spit..."
-msgstr ""
-"Bịa đặt đổ oan gán tội đến cái mức độ lố bịch này thì tao cũng phải bật cười bò ra luôn rồi đấy..."
+msgstr "Lời vu khống của các người... vu khống đến mức độ này thì đúng là nực cười thật đấy......"
 
-#. おい！　適当な事を言わないでくださる？
-#. わたくしが“やすひろ”なんて、ダセー苗字の訳が…
+#. Này! Đừng có mà ăn nói hàm hồ vô căn cứ như thế được không hả!? Cái loại họ quê mùa rách nát như "Yasuhiro" làm sao mà có thể là họ của tao được...
 msgctxt "0063 | CELES"
 msgid ""
 "Come on! Enough with your idiotic blather! Yasuhiro is\n"
 "a loser's name! Do I look like a loser to you!?"
-msgstr ""
-"Này! Bớt sủa mấy câu vô căn cứ xàm ngôn đó lại giùm cái đi?! Làm mẹ gì có chuyện cái họ của tao lại là \"Yasuhiro\" nghe quê mùa rách nát như thế được..."
+msgstr "Này! Đừng có mà ăn nói hàm hồ vô căn cứ như thế được không hả!? Cái loại họ quê mùa rách nát như \"Yasuhiro\" làm sao mà có thể là họ của tao được..."
 
-#. ねーーーーーーーだろがッ！！
+#. CHỨ HẢ TÊN KHỐN KIAẬẬẬẬẬẬẬẬẬッ!!
 msgctxt "0064 | CELES"
 msgid "Well!? Dooooo I!?"
-msgstr "HẢ CÁI LŨ ĐẦU TÔM KIA THẰNG CHÓ NÀO DÁM BẢO THẾ!!"
+msgstr "CHỨ HẢ TÊN KHỐN KIAẬẬẬẬẬẬẬẬẬッ!!"
 
-#. あぁッ！？　ちょん切るぞッ！！
+#. Cái gì cơッ!? Tao rạch họng mày bây giờッ!!
 msgctxt "0065 | CELES"
 msgid ""
 "What!? I think I've earned the right to be a little on\n"
 "edge!"
-msgstr ""
-"HẢ?! TAO THIẾN HẾT CẢ LŨ BÂY GIỜ ĐẤY!!"
+msgstr "Cái gì cơッ!? Tao rạch họng mày bây giờッ!!"
 
-#. だったら教えてよ…
-#. セレスさんの本名って…なんなの…？
+#. Nếu vậy thì xin hãy cho mọi người biết đi...
+#. Tên thật của Celeste... rốt cuộc là gì vậy...?
 msgctxt "0066 | MAKOTO NAEGI"
 msgid "Okay, then fill us in... What's your real name?"
-msgstr "Nếu đã trong sạch vậy thì chứng minh đi... Họ tên thật của cậu rốt cuộc là gì chứ hả...?"
+msgstr "Nếu vậy thì xin hãy cho mọi người biết đi... Tên thật của Celeste... rốt cuộc là gì vậy...?"
 
-#. よぉし！　耳の穴をガッツリかっぽじって、
-#. よく聞きやがれぇぇぇえええッ！！
+#. Được thôi! Hãy banh rộng cái lỗ tai trâu của tụi mày ra mà nghe cho thật kỹ đâyyyyyyyyッ!!
 msgctxt "0067 | CELES"
 msgid ""
 "Fine! Make sure your ear holes are wiiiiiiide open and\n"
 "listen up!"
-msgstr ""
-"ĐƯỢC LẮM! TẤT CẢ BANH RỘNG CÁI LỖ TAI TRÂU CỦA CHÚNG MÀY RA MÀ NUỐT TỪNG CHỮ ĐÂY NÀY!!"
+msgstr "Được thôi! Hãy banh rộng cái lỗ tai trâu của tụi mày ra mà nghe cho thật kỹ đâyyyyyyyyッ!!"
 
-#. わたくしの本名はセレスティア・ルーデンベルク！
-#. 何度も同じ事を言わせないで頂けますかぁ！
+#. Tên thật của tao là Celestia Ludenberg! Đừng có bắt tao phải mở mồm lặp đi lặp lại một chuyện nhiều lần thế nữa được không hả!
 msgctxt "0068 | CELES"
 msgid ""
 "My real name is Celestia Ludenberg! Could you PLEASE\n"
 "stop making me repeat myself over and over again!?"
-msgstr ""
-"HỌ TÊN THẬT CỦA TAO CHÍNH LÀ CELESTIA LUDENBERG!! ĐỪNG CÓ BẮT TAO PHẢI NHAI ĐI NHAI LẠI MỘT ĐIỀU RÕ RÀNG NHƯ THẾ NỮA ĐƯỢC CHƯA HẢ!!"
+msgstr "Tên thật của tao là Celestia Ludenberg! Đừng có bắt tao phải mở mồm lặp đi lặp lại một chuyện nhiều lần thế nữa được không hả!"
 
-#. <CLT 4>セレスさん…あくまで認めてくれないんだな…
-#. だったら…
+#. <CLT 4>Celeste... đến nước này rồi mà cậu vẫn nhất quyết không chịu thừa nhận sao... Nếu đã vậy thì...
 #. <CLT>
 msgctxt "0069 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Celeste still won't give up. So then...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Celeste... đến nước này rồi mà vẫn quyết tâm không chịu cúi đầu nhận tội sao... Nếu đã vậy thì...\n"
+"<CLT 4>Celeste... đến nước này rồi mà cậu vẫn nhất quyết không chịu thừa nhận sao... Nếu đã vậy thì...\n"
 "<CLT>"
 
-#. <CLT 4>なんとかして…彼女に認めさせるしかない…！
+#. <CLT 4>Mình buộc phải dùng mọi cách... để bắt cậu ấy phải cúi đầu nhận tội thôi...!
 #. <CLT>
 msgctxt "0070 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I have to do something to make her accept it!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bằng mọi giá... mình phải tìm cách ép cậu ta phải tâm phục khẩu phục mở miệng nhận tội mới được...!\n"
+"<CLT 4>Mình buộc phải dùng mọi cách... để bắt cậu ấy phải cúi đầu nhận tội thôi...!\n"
 "<CLT>"
 
 
