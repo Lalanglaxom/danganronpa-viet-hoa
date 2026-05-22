@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr ""
 "Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "nên cố quên nó đi thôi..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -93,10 +95,12 @@ msgstr ""
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"
@@ -106,14 +110,17 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này sao?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0013 | NARRATION"

@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 放っておこう。捜査に集中だ。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr ""
 "Mình cần phải tạm quên chuyện đó đi và tập trung\n"
 "vào việc điều tra."
+
 #. <CLT 4>監視カメラなんて…
 #. 放っておこう。捜査に集中だ。
 #. <CLT>
@@ -41,6 +43,7 @@ msgstr ""
 "<CLT 4>Mình cần phải tạm quên chiếc camera giám sát đó đi\n"
 "và tập trung vào việc điều tra.\n"
 "<CLT>"
+
 #. <CLT 4>ここには、もう何も入ってない…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -50,6 +53,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Không còn gì ở trong này nữa.\n"
 "<CLT>"
+
 #. 今回の事件には、関係なさそうだ…
 #. そもそも、あれはねつ造だしな。
 msgctxt "0005 | MAKOTO NAEGI"
@@ -59,6 +63,7 @@ msgid ""
 msgstr ""
 "Nó không có liên quan gì đến vụ án lần này cả. Dù sao thì lần trước\n"
 "những gì nó cho chúng mình xem cũng chỉ là một đống dối trá..."
+
 #. <CLT 4>ＤＶＤデッキだ…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -68,18 +73,22 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là đầu đĩa DVD.\n"
 "<CLT>"
+
 #. これは、今回の事件には関係なさそうだ…
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "I don't think it's related to the case this time..."
 msgstr "Mình không nghĩ là nó có liên quan đến vụ án lần này..."
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"

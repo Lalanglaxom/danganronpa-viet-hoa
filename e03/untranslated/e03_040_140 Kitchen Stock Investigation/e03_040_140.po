@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr ""
 "Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "nên cố quên nó đi thôi..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -41,6 +43,7 @@ msgstr ""
 "<CLT 4>Cứ cho là mình có thể sống sót rời khỏi đây, chắc mình sẽ không bao giờ nhìn\n"
 "những chiếc camera giám sát theo cách bình thường được nữa...\n"
 "<CLT>"
+
 #. <CLT 4>ここの棚には、食べ物が並んでいる…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -50,6 +53,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ các loại thực phẩm khác nhau được xếp chồng lên nhau ở đây.\n"
 "<CLT>"
+
 #. <CLT 4>特に気になることはないな…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -59,6 +63,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng bận tâm ở đó cả...\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -68,6 +73,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ các loại đồ nhu yếu phẩm được chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. <CLT 4>特に気になることはないな…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -77,6 +83,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng bận tâm ở đó cả...\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -86,6 +93,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ các loại đồ nhu yếu phẩm được chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. <CLT 4>特に気になることはないな…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -95,6 +103,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng bận tâm ở đó cả...\n"
 "<CLT>"
+
 #. <CLT 4>生活必需品がごちゃごちゃと置かれている…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -104,6 +113,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đủ các loại đồ nhu yếu phẩm được chất đống ở khắp mọi nơi.\n"
 "<CLT>"
+
 #. <CLT 4>特に気になることはないな…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -113,6 +123,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng bận tâm ở đó cả...\n"
 "<CLT>"
+
 #. <CLT 4>これは、冷蔵庫か…
 #. <CLT>
 msgctxt "0012 | MAKOTO NAEGI"
@@ -122,6 +133,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây có phải là chiếc tủ lạnh mà Sayaka từng nhắc tới không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>特に気になることはないな…
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -131,14 +143,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì đáng bận tâm ở đó cả...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0016 | NARRATION"

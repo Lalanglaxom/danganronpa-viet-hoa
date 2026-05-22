@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr ""
 "Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "nên cố quên nó đi thôi..."
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -41,6 +43,7 @@ msgstr ""
 "<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia\n"
 "của chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -52,14 +55,17 @@ msgstr ""
 "<CLT 4>Chỉ nghĩ đến thôi đã khiến mình bực mình rồi... nhưng mình\n"
 "chẳng thể làm gì được về chuyện đó cả.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0007 | NARRATION"
@@ -69,6 +75,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này sao?\n"
 "<CLT>"
+
 #. <CLT 4>雑誌棚だ…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -78,6 +85,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một chiếc giá đầy tạp chí.\n"
 "<CLT>"
+
 #. <CLT 4>色々なジャンルの雑誌が揃っているみたいだ…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -87,6 +95,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Ở đây có đủ các loại tạp chí thuộc nhiều lĩnh vực khác nhau.\n"
 "<CLT>"
+
 #. <CLT 4>これは、オセロか…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -96,6 +105,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một bộ cờ Othello ở đây.\n"
 "<CLT>"
+
 #. <CLT 4>事件には…関係ないか…
 #. <CLT>
 msgctxt "0011 | MAKOTO NAEGI"
@@ -105,6 +115,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>ダーツ…
 #. <CLT>
 msgctxt "0012 | MAKOTO NAEGI"
@@ -114,6 +125,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một bảng phóng phi tiêu...\n"
 "<CLT>"
+
 #. <CLT 4>事件には…関係ないよな…
 #. <CLT>
 msgctxt "0013 | MAKOTO NAEGI"
@@ -123,6 +135,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>ビリヤードだ…
 #. <CLT>
 msgctxt "0014 | MAKOTO NAEGI"
@@ -132,6 +145,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một bàn bida...\n"
 "<CLT>"
+
 #. <CLT 4>事件には…関係ないよな…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -141,6 +155,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó not thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがある…
 #. <CLT>
 msgctxt "0016 | MAKOTO NAEGI"
@@ -150,6 +165,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một chiếc tủ đồ.\n"
 "<CLT>"
+
 #. <CLT 4>特に意味がある物はなさそうだし、
 #. 開ける必要はないかな…
 #. <CLT>
@@ -161,6 +177,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Lúc này nó có vẻ không đặc biệt quan trọng nên mình cũng chẳng cần phải mở ra.\n"
 "<CLT>"
+
 #. <CLT 4>ソファーだ…
 #. <CLT>
 msgctxt "0018 | MAKOTO NAEGI"
@@ -170,6 +187,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc ghế sofa...\n"
 "<CLT>"
+
 #. <CLT 4>気になることは…特にないな…
 #. <CLT>
 msgctxt "0019 | MAKOTO NAEGI"
@@ -179,6 +197,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có thứ gì ở đây khiến mình thực sự phải bận tâm cả...\n"
 "<CLT>"
+
 #. <CLT 4>ゆったりとしたテーブルだ。
 #. 教室にある机とは、雰囲気が違うな。
 #. <CLT>
@@ -191,6 +210,7 @@ msgstr ""
 "<CLT 4>Có một chiếc bàn ở đây. Nó hơi giống với mấy chiếc bàn ở trong\n"
 "lớp học... nhưng cũng có chút khác biệt.\n"
 "<CLT>"
+
 #. <CLT 4>でも、事件とは関係なさそうだ。
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -200,6 +220,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、なんだ？
 #. よくわからないけど…インテリアなんだろうな…
 #. <CLT>
@@ -212,6 +233,7 @@ msgstr ""
 "<CLT 4>Cái này là gì thế nhỉ? Có lẽ nó chỉ dùng để trang trí hay\n"
 "gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -221,6 +243,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -233,6 +256,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống như một loại bình, nhưng... rốt cuộc nó *là* cái\n"
 "quái gì thế nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -243,6 +267,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -252,6 +277,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -264,6 +290,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống như một loại bình, nhưng... rốt cuộc nó *là* cái\n"
 "quái gì thế nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -274,6 +301,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0029 | MAKOTO NAEGI"
@@ -283,6 +311,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -295,6 +324,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống như một loại bình, nhưng... rốt cuộc nó *là* cái\n"
 "quái gì thế nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -305,6 +335,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -314,6 +345,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -326,6 +358,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống như một loại bình, nhưng... rốt cuộc nó *là* cái\n"
 "quái gì thế nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -336,6 +369,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0035 | MAKOTO NAEGI"
@@ -345,6 +379,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>これって、ビンみたいだけど…
 #. なんなんだ？
 #. <CLT>
@@ -357,6 +392,7 @@ msgstr ""
 "<CLT 4>Cái này trông giống như một loại bình, nhưng... rốt cuộc nó *là* cái\n"
 "quái gì thế nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>よくわからないけど…
 #. インテリアなんだろうな…
 #. <CLT>
@@ -367,6 +403,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có lẽ nó chỉ dùng để trang trí hay gì đó thôi...\n"
 "<CLT>"
+
 #. <CLT 4>事件には、関係ないか…
 #. <CLT>
 msgctxt "0038 | MAKOTO NAEGI"
@@ -376,6 +413,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>セレスさんは…
 #. <CLT>
 msgctxt "0039 | MAKOTO NAEGI"
@@ -385,6 +423,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Celeste...\n"
 "<CLT>"
+
 #. <CLT 4>この、ジャスティスハンマー１号で…
 #. 襲われた…？
 #. <CLT>
@@ -395,6 +434,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có thật là cậu ấy đã bị tấn công bằng thứ này... Búa Công Lý số 1 không?\n"
 "<CLT>"
+
 #. <CLT 4>それにしても…
 #. ジャスティスハンマー１号って…？
 #. <CLT>
@@ -405,14 +445,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng... rốt cuộc chuyện gì xảy ra với thứ này *vậy*?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0042 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0043 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0044 | NARRATION"

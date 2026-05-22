@@ -22,6 +22,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chiếc máy tính xách tay—Alter Ego đã biến đi đâu mất rồi...?\n"
 "<CLT>"
+
 #. <CLT 4>マッサージチェアがある…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -31,6 +32,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là chiếc ghế massage.\n"
 "<CLT>"
+
 #. <CLT 4>気になる事は、特にないな…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -41,14 +43,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì thực sự nổi bật khiến mình phải bận tâm cả...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0006 | NARRATION"

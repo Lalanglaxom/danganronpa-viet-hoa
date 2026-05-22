@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện. Tại sao\n"
 "lại cần phải đặt một cái ở trong nhà bếp cơ chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラだ…
 #. 調査の様子も見てるんだろうか…
 #. <CLT>
@@ -36,6 +37,7 @@ msgstr ""
 "<CLT 4>Một chiếc camera giám sát... Mình tự hỏi không biết họ có đang theo dõi\n"
 "quá trình điều tra hay không nữa...\n"
 "<CLT>"
+
 #. <CLT 4>包丁は、ひとつ欠けたまま…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -117,10 +119,12 @@ msgstr ""
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>厨房から出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"

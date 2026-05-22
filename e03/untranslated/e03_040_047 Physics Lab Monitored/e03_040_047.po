@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "Hiện tại, nó chỉ đang hiển thị biểu tượng của trường.\n"
 "<CLT>"
+
 #. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
@@ -32,6 +33,7 @@ msgid ""
 msgstr ""
 "Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "nên cố quên nó đi thôi..."
+
 #. <CLT 4>監視カメラなんか気にしてても仕方がない…！
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -42,6 +44,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Bận tâm về chiếc camera giám sát lúc này cũng chẳng để làm gì cả!\n"
 "<CLT>"
+
 #. こんなに大きい機械が…ただの空気清浄機なのか…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
@@ -50,10 +53,12 @@ msgid ""
 msgstr ""
 "Một cỗ máy to lớn thế này... Liệu nó có thực sự *chỉ* là\n"
 "một chiếc máy lọc không khí không nhỉ?"
+
 #. くだらないにも程があるな…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "That just seems silly..."
 msgstr "Nghe thật là ngớ ngẩn..."
+
 #. <CLT 4>物理の実験とかで使う物か…？
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -65,6 +70,7 @@ msgstr ""
 "<CLT 4>Chắc họ dùng mấy thứ này cho mấy bài thí nghiệm vật lý và\n"
 "vài việc đại loại thế...\n"
 "<CLT>"
+
 #. <CLT 4>事件には…関係ないか…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -74,6 +80,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng nó không thực sự liên quan đến vụ án cho lắm...\n"
 "<CLT>"
+
 #. <CLT 4>なんかの機械って事はわかるけど…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -85,6 +92,7 @@ msgstr ""
 "<CLT 4>Cỗ máy này rõ ràng là có mục đích sử dụng nào đó,\n"
 "nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>そもそも、物理が何かよくわからないボクに、
 #. この機械を理解するのは難しそうだ…
 #. <CLT>
@@ -97,14 +105,17 @@ msgstr ""
 "<CLT 4>...ngay từ đầu mình đã chẳng biết tí gì về vật lý rồi,\n"
 "nên chịu chết chẳng biết phải bắt đầu tìm hiểu từ đâu với thứ này nữa.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"

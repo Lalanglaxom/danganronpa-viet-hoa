@@ -543,12 +543,16 @@ def process_file(page, fi: dict):
     folder_label = summary_raw.strip().strip('"').replace(":", "").replace("/", "")
 
     if folder_label and all(ord(c) < 128 for c in folder_label) and len(folder_label) < 50:
-        new_dir_name = f"{dir_path} {folder_label}"
-        try:
-            os.rename(dir_path, new_dir_name)
-            print(f"  ✓  Renamed folder to: ...{folder_label}")
-        except Exception as e:
-            print(f"  ⚠  Could not rename folder: {e}")
+        # Check if folder has already been renamed
+        if not dir_path.endswith(f" {folder_label}"):
+            new_dir_name = f"{dir_path} {folder_label}"
+            try:
+                os.rename(dir_path, new_dir_name)
+                print(f"  ✓  Renamed folder to: ...{folder_label}")
+            except Exception as e:
+                print(f"  ⚠  Could not rename folder: {e}")
+        else:
+            print(f"  ℹ  Folder already named with summary — skipping rename.")
     else:
         print(f"  ⚠  No valid ASCII summary — folder name unchanged.")
 

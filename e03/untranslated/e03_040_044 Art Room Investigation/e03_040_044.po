@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Cái kiểu màn hình gì thế này!? Ai lại đi chế tạo ra\n"
 "cái thứ như thế này cơ chứ!?\n"
 "<CLT>"
+
 #. …モノクマ社って書いてある。
 #. ディティールにこだわってんな…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -33,6 +34,7 @@ msgid ""
 msgstr ""
 "Trên đó có khắc chữ \"Công ty Monokuma\". Xem ra\n"
 "hắn chăm chút kỹ lưỡng từng chi tiết một luôn..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -45,6 +47,7 @@ msgstr ""
 "<CLT 4>Cứ cho là mình có thể sống sót rời khỏi đây, chắc mình sẽ không bao giờ nhìn\n"
 "những chiếc camera giám sát theo cách bình thường được nữa...\n"
 "<CLT>"
+
 #. <CLT 4>ドアの鍵は、倉庫側にしか付いてないみたいだ。
 #. 美術室側には鍵穴すらないみたいだし…
 #. <CLT>
@@ -57,6 +60,7 @@ msgstr ""
 "<CLT 4>Có vẻ cửa được khóa từ phía bên kho mỹ thuật. Thậm chí\n"
 "còn không có lỗ khóa ở phía bên phòng mỹ thuật nữa...\n"
 "<CLT>"
+
 #. <CLT 4>何かしらの工作を施す余地もなさそうだ…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -66,10 +70,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Hầu như chẳng có kẽ hở nào để có thể tác động vào cả...\n"
 "<CLT>"
+
 #. うーん…
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "Hmm..."
 msgstr "Ưm..."
+
 #. <CLT 4>美術倉庫のドアの鍵か…
 #. ちょっと引っ掛かるな…
 #. <CLT>
@@ -82,6 +88,7 @@ msgstr ""
 "<CLT 4>Có điều gì đó về cánh cửa kho mỹ thuật và cách hoạt động\n"
 "của nó cứ làm mình bận tâm...\n"
 "<CLT>"
+
 #. <CLT 4>朝日奈さん達は、死体が消えた後の捜索で、
 #. 真っ先に美術倉庫を調べに来て…
 #. <CLT>
@@ -94,6 +101,7 @@ msgstr ""
 "<CLT 4>Sau khi các thi thể biến mất, Hina và Sakura đã đi\n"
 "thẳng đến kho mỹ thuật để kiểm tra xem sao.\n"
 "<CLT>"
+
 #. <CLT 4>その時、ドアに鍵が掛かっている事を確認している。
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -105,6 +113,7 @@ msgstr ""
 "<CLT 4>Vào thời điểm đó, hai cậu ấy đã xác nhận là cánh cửa\n"
 "đang khóa.\n"
 "<CLT>"
+
 #. <CLT 4>だけど、その鍵は…今は掛かっていない…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -114,6 +123,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng bây giờ... nó lại *không* khóa...\n"
 "<CLT>"
+
 #. <CLT 4>そして、ドアの鍵は、
 #. 美術倉庫の側からしか掛けられない仕組み…
 #. <CLT>
@@ -126,6 +136,7 @@ msgstr ""
 "<CLT 4>Và cánh cửa đó là loại cơ chế chỉ có thể khóa được từ bên trong\n"
 "kho mỹ thuật...\n"
 "<CLT>"
+
 #. <CLT 4>つまり…こういう事だよな…
 #. <CLT>
 msgctxt "0012 | MAKOTO NAEGI"
@@ -135,6 +146,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nói cách khác...\n"
 "<CLT>"
+
 #. <CLT 4>朝日奈さんが調べに来た時は、
 #. 倉庫の中に人がいて鍵が掛かっていたけど…
 #. <CLT>
@@ -147,6 +159,7 @@ msgstr ""
 "<CLT 4>Khi Hina đến kiểm tra, đã có ai đó ở bên trong\n"
 "kho mỹ thuật và khóa cửa lại.\n"
 "<CLT>"
+
 #. <CLT 4>その後、その人物が鍵を開けて出て行った事で、
 #. ここに入れるようになった…
 #. <CLT>
@@ -159,6 +172,7 @@ msgstr ""
 "<CLT 4>Sau đó, người đó đã mở khóa rồi rời đi. Chính vì vậy\n"
 "nên bây giờ nó mới không khóa...\n"
 "<CLT>"
+
 #. <CLT 4>とすると、その誰かって…
 #. <CLT>
 msgctxt "0015 | MAKOTO NAEGI"
@@ -168,10 +182,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Nếu vậy thì cái người đó...\n"
 "<CLT>"
+
 #. 犯人…？
 msgctxt "0016 | MAKOTO NAEGI"
 msgid "Was it the killer?"
 msgstr "Là hung thủ sao?"
+
 #. <CLT 23><CLT><CLT 3>美術倉庫のドア<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -184,6 +200,7 @@ msgstr ""
 "<CLT 23>\"<CLT><CLT 3>Cửa kho mỹ thuật<CLT><CLT 23>\" đã được ghi vào mục Đạn\n"
 "Sự Thật trong sổ học sinh của bạn.\n"
 "<CLT>"
+
 #. <CLT 4>これは…モノクマの像か…
 #. 事件には関係ないな…
 #. <CLT>
@@ -196,6 +213,7 @@ msgstr ""
 "<CLT 4>Đây là... tượng Monokuma sao? Chà, nó chẳng liên quan gì\n"
 "đến vụ án cả.\n"
 "<CLT>"
+
 #. <CLT 4>これは…ビーナス像か…
 #. 美術室らしいな…
 #. <CLT>
@@ -208,6 +226,7 @@ msgstr ""
 "<CLT 4>Đó là... một bức tượng thần Vệ Nữ. Đúng là thứ bạn hay tìm thấy\n"
 "ở trong một phòng mỹ thuật nhỉ...\n"
 "<CLT>"
+
 #. <CLT 4>特に気になる事はないか…
 #. <CLT>
 msgctxt "0020 | MAKOTO NAEGI"
@@ -217,6 +236,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không nghĩ có điều gì quan trọng ở đây cả.\n"
 "<CLT>"
+
 #. <CLT 4>壁一面に絵が張られている…
 #. <CLT>
 msgctxt "0021 | MAKOTO NAEGI"
@@ -226,6 +246,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tranh ảnh được treo kín khắp các bức tường.\n"
 "<CLT>"
+
 #. <CLT 4>特に気になる事はないな。
 #. <CLT>
 msgctxt "0022 | MAKOTO NAEGI"
@@ -235,6 +256,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không thấy có điểm gì bất thường về chúng cả.\n"
 "<CLT>"
+
 #. <CLT 4>これって、仁王像だよな…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -244,6 +266,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một bức tượng Kim Cương Lực Sĩ.\n"
 "<CLT>"
+
 #. <CLT 4>事件には関係なさそうだ…
 #. <CLT>
 msgctxt "0024 | MAKOTO NAEGI"
@@ -253,6 +276,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình không nghĩ nó có liên quan đến vụ án lần này đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがある…
 #. <CLT>
 msgctxt "0025 | MAKOTO NAEGI"
@@ -262,6 +286,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một chiếc tủ đồ.\n"
 "<CLT>"
+
 #. <CLT 4>気になる物はないか…
 #. <CLT>
 msgctxt "0026 | MAKOTO NAEGI"
@@ -271,6 +296,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì quá đặc biệt về nó cả.\n"
 "<CLT>"
+
 #. <CLT 4>美術倉庫への扉を調べてみよう…
 #. <CLT>
 msgctxt "0027 | MAKOTO NAEGI"
@@ -280,14 +306,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình nên kiểm tra cánh cửa dẫn vào kho mỹ thuật xem sao...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0028 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0029 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0030 | NARRATION"

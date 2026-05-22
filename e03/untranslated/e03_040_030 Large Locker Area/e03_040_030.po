@@ -22,14 +22,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chà, cái tủ đồ này to thật đấy...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0004 | NARRATION"

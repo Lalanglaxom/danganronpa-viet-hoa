@@ -23,10 +23,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Mọi người... ai cũng nghi ngờ mình... Không một ai chịu lắng nghe những gì mình nói nữa rồi!\n"
 "<CLT>"
+
 #. おやおや…もう議論は打ち止めかな？
 msgctxt "0002 | MONOKUMA"
 msgid "Uh-oh! Have we already come to the end of the debate?"
 msgstr "Ối dào ôi... cuộc tranh luận đã đi đến hồi kết thúc rồi đấy à?"
+
 #. これにて学級裁判は閉廷！
 #. サクッとクロを決めちゃうからね！
 msgctxt "0003 | MONOKUMA"
@@ -34,10 +36,12 @@ msgid ""
 "Well then, the class trial is officially adjourned!\n"
 "Now it's time to reveal who's the blackened!"
 msgstr "Vậy thì, Lớp Xét Xử chính thức bế mạc tại đây! Ta sẽ công bố kẻ thủ ác ngay và luôn đây!"
+
 #. うぷぷぷぷぷ…！
 msgctxt "0004 | MONOKUMA"
 msgid "Puuhuhuhuhu!"
 msgstr "U pư pư pư pư!"
+
 #. 一番投票された人は、苗木誠くん…
 #. みたいだね。
 msgctxt "0005 | MONOKUMA"
@@ -45,11 +49,13 @@ msgid ""
 "It would appear that the one with the most votes\n"
 "is...Makoto!"
 msgstr "Xem ra người nhận được số phiếu bầu cao nhất chính là... Makoto Naegi!"
+
 #. しかし、残念～！
 #. 苗木くんはクロじゃないよ！
 msgctxt "0006 | MONOKUMA"
 msgid "However...Makoto is NOT the blackened! Too bad!"
 msgstr "Thế nhưng mà đáng tiếc quá đi! Cậu Makoto lại không phải là kẻ thủ ác đâu nhé!"
+
 #. 本物のクロは見事卒業！　おめでとう！
 #. でも…
 msgctxt "0007 | MONOKUMA"
@@ -57,10 +63,12 @@ msgid ""
 "Looks like the real killer gets to graduate!\n"
 "Congraduations to them!"
 msgstr "Vậy là kẻ thủ ác đích thực đã xuất sắc giành được tấm vé tốt nghiệp rồi! Xin chúc mừng nhé!"
+
 #. クロ以外は、みんなおしおきだよ！
 msgctxt "0008 | MONOKUMA"
 msgid "On the other hand, everyone else must now be punished!"
 msgstr "Bù lại, tất cả những người còn lại ngoại trừ kẻ thủ ác đều sẽ phải nhận hình phạt!"
+
 #. <CLT 4>ボク達は…ここで終わってしまうのか…？
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -70,18 +78,22 @@ msgid ""
 msgstr ""
 "<CLT 4>Bọn mình... thực sự phải kết thúc ở đây sao? Mọi chuyện chấm hết rồi sao...?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. ここで諦めたりしないぞッ！
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "I can't give up now!"
 msgstr "Mình quyết không thể bỏ cuộc tại đây được!"
+
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23><CLT><CLT 3>リトライ<CLT><CLT 23>なさいますか？
 #. <CLT>
 msgctxt "0013 | NARRATION"

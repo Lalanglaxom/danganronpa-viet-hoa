@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đây là phòng của Yasuhiro. Có đủ các loại đồ đạc kỳ lạ\n"
 "ở trong này...\n"
 "<CLT>"
+
 #. <CLT 4>どこから持って来たんだよ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -33,6 +34,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Cậu ấy kiếm mấy thứ này từ đâu ra không biết nữa?\n"
 "<CLT>"
+
 #. <CLT 4>それに、相変わらず、
 #. 本人は姿を見せないままだし…
 #. <CLT>
@@ -43,6 +45,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Quan trọng hơn là cậu ấy vẫn chưa lộ diện...\n"
 "<CLT>"
+
 #. <CLT 4>勝手に部屋を調べられても、
 #. 文句は言えない…よな…？
 #. <CLT>
@@ -55,6 +58,7 @@ msgstr ""
 "<CLT 4>Nghĩa là cậu ấy cũng chẳng thể phàn nàn gì nếu mình tự ý\n"
 "lục soát phòng mà không xin phép, đúng không nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -64,6 +68,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
 "<CLT>"
+
 #. <CLT 4>今はこんな物を気にしても仕方がない。
 #. 放っておこう…
 #. <CLT>
@@ -76,6 +81,7 @@ msgstr ""
 "<CLT 4>Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "cần phải cố quên nó đi thôi...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -85,6 +91,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
+
 #. <CLT 4>今はこんな物を気にしても仕方がない。
 #. 放っておこう…
 #. <CLT>
@@ -97,6 +104,7 @@ msgstr ""
 "<CLT 4>Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
 "cần phải cố quên nó đi thôi...\n"
 "<CLT>"
+
 #. <CLT 4>まだ、調べる事がありそうだ…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -106,14 +114,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình cảm giác vẫn còn điều gì đó cần xem xét ở đây...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0012 | NARRATION"
@@ -123,6 +134,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này sao?\n"
 "<CLT>"
+
 #. <CLT 4>ボクはシャワールームの中を
 #. そっと確認してみた…
 #. <CLT>
@@ -133,6 +145,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình khẽ khàng kiểm tra phòng tắm...\n"
 "<CLT>"
+
 #. ………………
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "..."
@@ -148,6 +161,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì ở trong này cả. Nhưng mà nó khá là bẩn thỉu...\n"
 "<CLT>"
+
 #. <CLT 4>どうやったら、
 #. シャワールームをこんなに汚せるんだ？
 #. <CLT>
@@ -158,6 +172,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Làm sao mà một cái phòng tắm có thể bẩn đến mức này được cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>このダンボール箱…
 #. 中に何か入ってるみたいだ。
 #. <CLT>
@@ -168,6 +183,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chắc là có cái gì đó ở trong chiếc hộp các-tông này...\n"
 "<CLT>"
+
 #. <CLT 4>これは…何かの設計図か？
 #. それに…
 #. <CLT>
@@ -178,6 +194,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là... bản thiết kế của cái gì đó. Và...\n"
 "<CLT>"
+
 #. <CLT 4>石こうやプラスチック…
 #. ダンボール紙なんかで作られた部品…？
 #. <CLT>
@@ -190,14 +207,17 @@ msgstr ""
 "<CLT 4>Mấy thứ được làm bằng... Trông giống như các-tông,\n"
 "nhựa, và... thạch cao sao?\n"
 "<CLT>"
+
 #. もしかして、ジャスティスロボの？
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "Is this...Robo Justice?"
 msgstr "Chẳng lẽ đây là... Robo Justice sao?"
+
 #. これが葉隠クンの部屋にあるって事は…！
 msgctxt "0021 | MAKOTO NAEGI"
 msgid "And it's in Hiro's room...!"
 msgstr "Và nó lại ở trong phòng của Yasuhiro...!"
+
 #. <CLT 4>いや待てよ…でも…
 #. <CLT>
 msgctxt "0022 | MAKOTO NAEGI"
@@ -207,6 +227,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng khoan đã...\n"
 "<CLT>"
+
 #. <CLT 4>この設計図って…
 #. <CLT>
 msgctxt "0023 | MAKOTO NAEGI"
@@ -216,6 +237,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Bản thiết kế này...\n"
 "<CLT>"
+
 #. <CLT 4>なんか…気になるというか…
 #. <CLT>
 msgctxt "0024 | MAKOTO NAEGI"
@@ -225,10 +247,12 @@ msgid ""
 msgstr ""
 "<CLT 4>Có điều gì đó ở chúng cứ làm mình bận tâm...\n"
 "<CLT>"
+
 #. うーん……
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "Hmm..."
 msgstr "Hừm..."
+
 #. <CLT 23><CLT><CLT 3>ジャスティスロボの設計図<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
 #. <CLT>
@@ -241,22 +265,27 @@ msgstr ""
 "<CLT 23>\"<CLT><CLT 3>Bản thiết kế Robo Justice<CLT><CLT 23>\" đã được thêm vào\n"
 "mục Đạn Hy Vọng trong sổ học sinh của bạn.\n"
 "<CLT>"
+
 #. このダンボール箱に入ってるのって…
 msgctxt "0027 | MAKOTO NAEGI"
 msgid "In the cardboard box is..."
 msgstr "Thứ ở trong chiếc hộp các-tông là..."
+
 #. ジャスティスロボの設計図？
 msgctxt "0028 | MAKOTO NAEGI"
 msgid "...blueprints for Robo Justice?"
 msgstr "...bản thiết kế của Robo Justice sao?"
+
 #. だけど、この設計図って…
 msgctxt "0029 | MAKOTO NAEGI"
 msgid "But...these blueprints..."
 msgstr "Nhưng... bản thiết kế này..."
+
 #. なんか…気になるな…
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "Something about them bothers me..."
 msgstr "Có điều gì đó ở chúng cứ làm mình bận tâm..."
+
 #. <CLT 4>普通のベッドだ。
 #. ボクの部屋の物と大して変わらないな…
 #. <CLT>
@@ -269,6 +298,7 @@ msgstr ""
 "<CLT 4>Đó là một chiếc giường bình thường, cơ bản là chẳng khác gì cái ở trong phòng\n"
 "của mình cả.\n"
 "<CLT>"
+
 #. <CLT 4>まだ、調べる事がありそうだ…
 #. <CLT>
 msgctxt "0032 | MAKOTO NAEGI"
@@ -278,14 +308,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Mình cảm giác vẫn còn điều gì đó cần xem xét ở đây...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0033 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0034 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0035 | NARRATION"

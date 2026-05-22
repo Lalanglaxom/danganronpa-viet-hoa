@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Cái kiểu màn hình gì thế này!? Ai lại đi chế tạo ra\n"
 "cái thứ như thế này cơ chứ!?\n"
 "<CLT>"
+
 #. …モノクマ社って書いてある。
 #. ディティールにこだわってんな…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -33,6 +34,7 @@ msgid ""
 msgstr ""
 "Trên đó có khắc chữ \"Công ty Monokuma\". Xem ra\n"
 "hắn chăm chút kỹ lưỡng từng chi tiết một luôn..."
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -45,6 +47,7 @@ msgstr ""
 "<CLT 4>Cứ cho là mình có thể sống sót rời khỏi đây, chắc mình sẽ không bao giờ nhìn\n"
 "những chiếc camera giám sát theo cách bình thường được nữa...\n"
 "<CLT>"
+
 #. <CLT 4>最近、あんまり時計を見なくなった。
 #. 意味がないってわかったからかな…
 #. <CLT>
@@ -57,6 +60,7 @@ msgstr ""
 "<CLT 4>Dạo này mình không còn nhìn đồng hồ nhiều nữa. Ý mình là,\n"
 "làm vậy thì có ích gì chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これも慣れってヤツか、
 #. なんだか虚しいな…
 #. <CLT>
@@ -69,6 +73,7 @@ msgstr ""
 "<CLT 4>Có lẽ đây là dấu hiệu cho thấy mình đã dần quen với việc ở nơi này rồi nhỉ?\n"
 "Một cảm giác thật trống rỗng...\n"
 "<CLT>"
+
 #. <CLT 4>本来の教室なら窓があるべき場所…
 #. だが、そこにはやっぱり…
 #. <CLT>
@@ -80,6 +85,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Ở bất kỳ lớp học bình thường nào, đây sẽ là nơi có cửa sổ. Nhưng...\n"
 "<CLT>"
+
 #. <CLT 4>鉄板のような物が打ち付けられていた。
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -90,6 +96,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...bây giờ có một loại tấm kim loại khổng lồ được gắn đè lên trên nó.\n"
 "<CLT>"
+
 #. <CLT 4>こっちも鉄板…あっちも鉄板…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -99,14 +106,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chỗ này là tấm kim loại... Chỗ kia cũng là tấm kim loại nữa.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -116,14 +126,17 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này sao?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0014 | NARRATION"

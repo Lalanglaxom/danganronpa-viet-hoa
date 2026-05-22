@@ -22,22 +22,27 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là nơi cất giữ các dụng cụ vệ sinh.\n"
 "<CLT>"
+
 #. 事件に関係ありそうなものは…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Maybe there's some kind of clue here..."
 msgstr "Biết đâu ở đây lại có manh mối gì đó..."
+
 #. …ないか。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "...Guess not."
 msgstr "...Chắc là không rồi."
+
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0006 | NARRATION"

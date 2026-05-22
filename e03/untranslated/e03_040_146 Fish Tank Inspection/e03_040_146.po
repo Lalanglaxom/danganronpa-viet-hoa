@@ -24,6 +24,7 @@ msgstr ""
 "<CLT 4>Đó là một cái bể cá. Có một đàn cá nhỏ đang bơi tung\n"
 "tăng ở bên trong...\n"
 "<CLT>"
+
 #. <CLT 4>どう見ても…事件とは関係ないよな。
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -35,14 +36,17 @@ msgstr ""
 "<CLT 4>Mình chẳng thể tưởng tượng nổi cái này thì liên quan gì\n"
 "đến vụ án được nữa...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"

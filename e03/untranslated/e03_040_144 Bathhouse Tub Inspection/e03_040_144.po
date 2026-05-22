@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Bồn tắm này lớn thật đấy...\n"
 "<CLT>"
+
 #. <CLT 4>でも…お風呂に入ってる場合じゃない…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,14 +31,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhưng lúc này không phải là lúc để tắm rửa đâu.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>大浴場から出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
