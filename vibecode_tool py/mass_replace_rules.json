@@ -1,20 +1,11 @@
 [
     {
         "character": null,
-        "scope": null,
+        "scope": "clt:4",
         "whole_word": true,
         "replace": [
-            ["Tao", "Mình"],
-            ["tao", "mình"]
-        ]
-    },
-    {
-        "character": null,
-        "scope": null,
-        "whole_word": true,
-        "replace": [
-            ["Mình", "Tao"],
-            ["mình", "tao"]
+            ["Tôi", "Mình"],
+            ["tôi", "mình"]
         ]
     },
     {
@@ -22,8 +13,8 @@
         "scope": "clt:4",
         "whole_word": true,
         "replace": [
-            ["Tôi", "Mình"],
-            ["tôi", "mình"]
+            ["Tớ", "Mình"],
+            ["tớ", "mình"]
         ]
     },
     {
