@@ -13,5 +13,6 @@ objShell.CurrentDirectory = strScriptFolder
 ' Run po_toolkit.py with Python
 objShell.Run "python po_toolkit.py", 1, False
 
-Chỉ là một cái thùng rác. Nhưng bên trong chẳng có rác.
-Nếu không có rác... liệu nó có phải là một cái thùng rác không?
+' Chỉ là một cái thùng rác.
+' Nhưng bên trong chẳng có rác.
+' Nếu không có rác... liệu nó có phải là một cái thùng rác không?

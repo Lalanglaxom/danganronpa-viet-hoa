@@ -19,8 +19,8 @@ msgid ""
 "Let's begin with a basic explanation of the class\n"
 "trial! So, your votes will determine the results."
 msgstr ""
-"Hãy bắt đầu với một lời giải thích cơ bản về Lớp Xét\n"
-"Xử đi nào! Kết quả sẽ được quyết định dựa trên số phiếu bầu của các em."
+"Hãy bắt đầu với một lời giải thích cơ bản về Lớp Xét Xử đi nào!\n"
+"Kết quả sẽ được quyết định dựa trên số phiếu bầu của các em."
 
 #. 正しいクロを指摘出来れば、クロだけがおしおき。
 #. だけど…もし間違った人物をクロとした場合は…
@@ -28,7 +28,9 @@ msgctxt "0002 | MONOKUMA"
 msgid ""
 "If you can figure out \"whodunnit\" then only they will\n"
 "receive punishment. But if you pick the wrong one..."
-msgstr "Nếu các em tìm ra chính xác \"kẻ thủ ác\" thì chỉ có kẻ đó bị nhận hình phạt. Nhưng nếu chọn sai..."
+msgstr ""
+"Nếu các em tìm ra chính xác \"kẻ thủ ác\" thì chỉ có kẻ đó\n"
+"bị nhận hình phạt. Nhưng nếu chọn sai..."
 
 #. クロ以外の全員がおしおきされ、
 #. みんなを欺いたクロだけが晴れて卒業となりまーす！
@@ -36,7 +38,9 @@ msgctxt "0003 | MONOKUMA"
 msgid ""
 "Then I'll punish everyone *besides* the blackened, and\n"
 "the one that deceived everyone else will graduate!"
-msgstr "Thì ta sẽ trừng phạt tất cả mọi người ngoại trừ kẻ thủ ác, và kẻ đã lừa dối tất cả sẽ được tốt nghiệp vẻ vang!"
+msgstr ""
+"Thì ta sẽ trừng phạt tất cả mọi người ngoại trừ kẻ thủ ác,\n"
+"và kẻ đã lừa dối tất cả sẽ được tốt nghiệp vẻ vang!"
 
 #. さてと…じゃあ最初は…
 msgctxt "0004 | MONOKUMA"
@@ -60,8 +64,9 @@ msgid ""
 "It was <CLT 3>Hiro<CLT>. He does not have an alibi for when the\n"
 "murders took place, and we found him in that suit."
 msgstr ""
-"Chính là <CLT 3>Yasuhiro<CLT>. Cậu ấy không có bằng chứng ngoại phạm vào lúc các vụ\n"
-"án mạng diễn ra, và chúng ta còn tìm thấy cậu ấy trong bộ đồ đó nữa."
+"Chính là <CLT 3>Yasuhiro<CLT>. Cậu ấy không có bằng chứng ngoại phạm vào lúc\n"
+"các vụ án mạng diễn ra, và chúng ta còn tìm thấy cậu ấy trong bộ\n"
+"đồ đó nữa."
 
 #. どう考えても…あんたが犯人じゃん…！
 msgctxt "0008 | AOI ASAHINA"
@@ -75,8 +80,8 @@ msgid ""
 "I didn't! Someone knocked me out! I was asleep the\n"
 "whole time! I don't know anything about it!"
 msgstr ""
-"Tớ không có làm! Ai đó đã đánh ngất tớ! Tớ ngủ\n"
-"suốt cả buổi mà! Tớ hoàn toàn không biết gì về chuyện đó cả!"
+"Tớ không có làm! Ai đó đã đánh ngất tớ! Tớ ngủ suốt cả\n"
+"buổi mà! Tớ hoàn toàn không biết gì về chuyện đó cả!"
 
 #. 黙れ！　この人殺しめッ！！
 msgctxt "0010 | TOUKO FUKAWA"
@@ -91,7 +96,9 @@ msgstr "Cậu đang gọi AI là kẻ giết người hả!?"
 #. 葉隠君、残念ですが…こんな証拠もあるのですよ。
 msgctxt "0012 | CELES"
 msgid "I am sorry to say, Hiro, but we do have evidence..."
-msgstr "Tôi rất tiếc phải nói điều này, Yasuhiro, nhưng chúng tôi có bằng chứng..."
+msgstr ""
+"Tôi rất tiếc phải nói điều này, Yasuhiro, nhưng chúng tôi\n"
+"có bằng chứng..."
 
 #. あのコスプレ衣装の<CLT 3>設計図<CLT>です。
 #. それと…
@@ -103,7 +110,9 @@ msgstr "<CLT 3>Bản thiết kế<CLT> của bộ đồ..."
 #. これら<CLT 3>部品<CLT>の数々…
 msgctxt "0014 | CELES"
 msgid "<CLT 3>Parts<CLT> we assume were used to build it..."
-msgstr "Rất nhiều <CLT 3>linh kiện<CLT> mà chúng tôi cho là đã được dùng để chế tạo nó..."
+msgstr ""
+"Rất nhiều <CLT 3>linh kiện<CLT> mà chúng tôi cho là đã được dùng để\n"
+"chế tạo nó..."
 
 #. すべて、あなたの<CLT 3>部屋<CLT>から見つかった物です。
 #. これらが動かぬ証拠ですわ。
@@ -112,8 +121,8 @@ msgid ""
 "And all of it was found <CLT 3>in your room<CLT>. You have to\n"
 "admit, the evidence is quite compelling."
 msgstr ""
-"Và tất cả những thứ đó đều được tìm thấy <CLT 3>trong phòng của cậu<CLT>. Cậu phải\n"
-"thừa nhận rằng, bằng chứng này khá là thuyết phục đấy."
+"Và tất cả những thứ đó đều được tìm thấy <CLT 3>trong phòng của cậu<CLT>.\n"
+"Cậu phải thừa nhận rằng, bằng chứng này khá là thuyết phục đấy."
 
 #. あなたがあの衣装を作り上げ、それを身にまとい、
 #. 次々と犯行を重ねていったという事のね…
@@ -122,8 +131,8 @@ msgid ""
 "It points to you as having created the suit and\n"
 "wearing it while committing crime after crime..."
 msgstr ""
-"Nó cho thấy chính cậu là người đã tạo ra bộ đồ và\n"
-"mặc nó để thực hiện hết tội ác này đến tội ác khác..."
+"Nó cho thấy chính cậu là người đã tạo ra bộ đồ và mặc nó\n"
+"để thực hiện hết tội ác này đến tội ác khác..."
 
 #. だ、だから…俺は…俺は…
 msgctxt "0017 | YASUHIRO HAGAKURE"

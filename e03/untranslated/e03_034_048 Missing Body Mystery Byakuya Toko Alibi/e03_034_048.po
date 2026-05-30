@@ -32,7 +32,8 @@ msgid ""
 "<CLT 4>We ran back to the equipment room at full speed.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bọn mình chạy về phía phòng chuẩn bị vật lý với tốc độ tối đa.\n"
+"<CLT 4>Bọn mình chạy về phía phòng thiết bị với tốc độ \n"
+"tối đa.\n"
 "<CLT>"
 
 #. <CLT 4>すると、そこには……
@@ -341,7 +342,7 @@ msgid ""
 "Oh, that's right...! There's a rule that says <CLT 3>you can\n"
 "only kill a maximum of two people<CLT>..."
 msgstr ""
-"Ồ, phải rồi...! Có một quy tắc nói rằng <CLT 3>Siêu Học Sinh chỉ\n"
+"Ồ, phải rồi...! Có một quy tắc nói rằng <CLT 3>Học sinh chỉ\n"
 "có thể giết tối đa hai người<CLT>..."
 
 #. その校則がある限り３件目の殺人は起きない。
@@ -377,7 +378,7 @@ msgstr ""
 #. …だそうだ。
 msgctxt "0046 | BYAKUYA TOGAMI"
 msgid "...Indeed."
-msgstr "...Quả nhiên là vậy."
+msgstr "...Tất nhiên là vậy."
 
 #. 犯人が、<CLT 3>すでに２人を殺している<CLT>以上、
 #. さらなる犠牲者が出る可能性はない…という事ですね。
@@ -396,8 +397,8 @@ msgid ""
 "You knew that from the beginning, didn't you Byakuya?\n"
 "Which means you knew Toko was never in danger..."
 msgstr ""
-"Cậu đã biết điều đó ngay từ đầu rồi đúng không Byakuya?\n"
-"Có nghĩa là cậu thừa biết Toko chưa từng gặp nguy hiểm..."
+"Cậu đã biết điều đó ngay từ đầu rồi đúng không Byakuya? Có\n"
+"nghĩa là cậu thừa biết Toko chưa từng gặp nguy hiểm..."
 
 #. あいつが殺された方が助かると言ったのは、
 #. 本心だがな…
@@ -536,12 +537,12 @@ msgstr "T-Tui biết rồi. Ý tui là, tui nghĩ là tui biết. Nhưng..."
 #. 朝日奈よ、不安ならば我が一緒にいてやろう。
 msgctxt "0064 | SAKURA OOGAMI"
 msgid "If you're still nervous, I'll come with you."
-msgstr "Nếu bà vẫn thấy lo, tôi sẽ đi cùng bà."
+msgstr "Nếu cậu vẫn thấy lo, tôi sẽ đi cùng."
 
 #. うん…ありがとう…
 msgctxt "0065 | AOI ASAHINA"
 msgid "O-Okay, thank you..."
-msgstr "Đ-Được rồi, cảm ơn bà..."
+msgstr "Đ-Được rồi, cảm ơn..."
 
 #. …礼には及ばぬ。
 msgctxt "0066 | SAKURA OOGAMI"
@@ -563,7 +564,8 @@ msgid ""
 "others.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Byakuya rời khỏi phòng chuẩn bị, theo sau là những người khác.\n"
+"<CLT 4>Byakuya rời khỏi phòng thiết bị, theo sau là những \n"
+"người khác.\n"
 "<CLT>"
 
 #. <CLT 4>消えた２人の死体を見つけ出す為…
