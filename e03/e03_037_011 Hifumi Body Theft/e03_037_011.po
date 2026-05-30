@@ -34,7 +34,8 @@ msgid ""
 "breath.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã đến được phòng y tế trong tình trạng hoàn toàn hết hơi.\n"
+"<CLT 4>Mình đã đến được phòng y tế, trong tình trạng hoàn toàn \n"
+"hết hơi.\n"
 "<CLT>"
 
 #. …ッ！！
@@ -66,7 +67,7 @@ msgstr ""
 #. 消えた……？
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "It just...disappeared?"
-msgstr "Nó vừa mới... biến mất sao?"
+msgstr "Nó đã... biến mất sao?"
 
 #. ………………
 msgctxt "0007 | AOI ASAHINA"
@@ -98,7 +99,7 @@ msgid ""
 "come and <CLT 3>carried the body away<CLT>."
 msgstr ""
 "Đây chắc chắn là do hung thủ làm. Hắn hẳn là đã đến và\n"
-"<CLT 3>mang cái xác đi rồi<CLT>."
+"<CLT 3>mang cái xác đi<CLT>."
 
 #. まるで…楽しんでいるようですわね…
 msgctxt "0012 | CELES"
@@ -160,7 +161,7 @@ msgctxt "0021 | SAKURA OOGAMI"
 msgid ""
 "Taka's been killed. We found him in the equipment\n"
 "room."
-msgstr "Taka đã bị giết. Chúng tôi tìm thấy cậu ấy ở phòng chuẩn bị."
+msgstr "Taka đã bị giết. Chúng tôi tìm thấy cậu ấy ở phòng thiết bị."
 
 #. そんな…ッ！
 #. い、石丸まで…！？
@@ -181,7 +182,7 @@ msgstr "Khôôôôôôôôôông!!!"
 #. 落ち着くんだ、朝日奈ッ！
 msgctxt "0025 | SAKURA OOGAMI"
 msgid "Hina, calm down!"
-msgstr "Hina, bình tĩnh lại đi!"
+msgstr "Hina, bình tĩnh lại!"
 
 #. このままじゃ…本当に殺されちゃうよ…
 #. みんな…あいつに殺されちゃうよ…
@@ -211,7 +212,7 @@ msgid ""
 "equipment room!"
 msgstr ""
 "Tôi hoàn toàn quên mất! Cô ấy vẫn còn đang bất tỉnh ở\n"
-"phòng chuẩn bị!"
+"phòng thiết bị!"
 
 #. …現場に置いてきたのですか！？
 msgctxt "0030 | CELES"

@@ -104,5 +104,23 @@
             ["Thực đơn", "Menu"],
             ["thực đơn", "menu"]
         ]
+    },
+    {
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["phòng kho", "kho luu trữ"],
+            ["Phòng kho", "Kho lưu trữ"]
+        ]
+    },
+    {
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["phòng chuẩn bị", "phòng thiết bị"],
+            ["Phòng chuẩn bị", "Phòng thiết bị"]
+        ]
     }
 ]

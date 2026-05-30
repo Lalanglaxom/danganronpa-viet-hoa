@@ -11,7 +11,7 @@ strScriptFolder = objFSO.GetParentFolderName(WScript.ScriptFullName)
 objShell.CurrentDirectory = strScriptFolder
 
 ' Run po_toolkit.py with Python
-objShell.Run "python po_toolkit.py", 1, False
+objShell.Run "python po_toolkit.py", 0, False
 
 ' Chỉ là một cái thùng rác.
 ' Nhưng bên trong chẳng có rác.
