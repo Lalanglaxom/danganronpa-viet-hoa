@@ -122,5 +122,14 @@
             ["phòng chuẩn bị", "phòng thiết bị"],
             ["Phòng chuẩn bị", "Phòng thiết bị"]
         ]
+    },
+    {
+        "character": null,
+        "scope": null,
+        "whole_word": false,
+        "replace": [
+            ["kho mỹ thuật", "kho lưu trữ"],
+            ["Kho mỹ thuật", "Kho lưu trữ"]
+        ]
     }
 ]
