@@ -17,6 +17,7 @@ Supports:
 import os
 import re
 import json
+import unicodedata  # Thêm thư viện chuẩn hóa Unicode 🛠️
 
 RULES_FILE = "mass_replace_rules.json"
 
@@ -56,7 +57,16 @@ def load_rules():
 
     try:
         with open(RULES_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+            rules = json.load(f)
+            
+        # Chuẩn hóa toàn bộ dữ liệu trong file rules về dạng NFC
+        for rule in rules:
+            if "replace" in rule:
+                for pair in rule["replace"]:
+                    if isinstance(pair, (list, tuple)) and len(pair) == 2:
+                        pair[0] = unicodedata.normalize("NFC", pair[0])
+                        pair[1] = unicodedata.normalize("NFC", pair[1])
+        return rules
     except Exception as e:
         print(f"✗ Error loading JSON rules: {e}")
         return []
@@ -73,12 +83,14 @@ CRITERIA = load_rules()
 def _decode(raw_block: str) -> str:
     """Decode PO quoted content into normal Python text."""
     parts = re.findall(r'"((?:[^"\\]|\\.)*)"', raw_block)
-    return (
+    decoded = (
         "".join(parts)
         .replace("\\n", "\n")
         .replace('\\"', '"')
         .replace("\\\\", "\\")
     )
+    # Chuẩn hóa chuỗi vừa giải mã về dạng NFC
+    return unicodedata.normalize("NFC", decoded)
 
 
 def _encode_po_string(text: str) -> str:
@@ -147,16 +159,6 @@ def _replace_msgstr_in_block(block: str, new_msgstr: str) -> str:
 def _build_search_view(text: str):
     """
     Build a normalized visible-text view plus char-to-original mapping.
-
-    Ignores:
-    - CLT tags
-    - [ ]
-    - "
-    - repeated whitespace / newlines (collapsed to single spaces)
-
-    Returns:
-        normalized_text, spans
-    where spans[i] = (orig_start, orig_end) for normalized_text[i]
     """
     chars = []
     spans = []
@@ -228,15 +230,6 @@ def _find_match_spans(hay: str, needle: str, whole_word: bool):
 def _replace_in_visible_text(text: str, find_str: str, repl_str: str, whole_word=False):
     """
     Replace find_str in text using normalized visible-text matching.
-
-    Matching ignores:
-    - CLT tags
-    - [ ]
-    - "
-    - whitespace/newline differences
-
-    Returns:
-        (new_text, replacement_count)
     """
     normalized_text, spans = _build_search_view(text)
     normalized_find = _normalize_phrase(find_str)
@@ -285,9 +278,6 @@ def _apply_in_clt_block(text, find_str, repl_str, clt_id, whole_word=False):
 def _apply_replacements(text, rules_list):
     """
     Process decoded msgstr through active rules.
-
-    Returns:
-        (new_text, total_changes, triggered_labels)
     """
     total_changes = 0
     triggered_labels = set()
@@ -333,6 +323,9 @@ def process_po_file(filepath, active_criteria, log):
     """
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
+
+    # Ép toàn bộ nội dung file PO vừa đọc về chuẩn NFC để tránh lệch ký tự tiếng Việt dạng NFD
+    content = unicodedata.normalize("NFC", content)
 
     file_changes_details = []
 
