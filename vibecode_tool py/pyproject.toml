@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dr-po-toolkit"
+version = "0.2.0"
+description = "Refactored base for Danganronpa PO translation workflow"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+gemini = ["google-genai>=1.0.0"]
+packaging = ["pyinstaller>=6.0"]
+
+[project.scripts]
+dr-po = "dr_po_toolkit.cli:main"
+dr-po-gui = "dr_po_toolkit.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

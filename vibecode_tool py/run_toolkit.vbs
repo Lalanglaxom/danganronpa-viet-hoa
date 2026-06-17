@@ -1,17 +1,20 @@
-' run_toolkit.vbs - Launch po_toolkit.py
-' This script runs the PO Toolkit in the current folder
+' run_toolkit.vbs - Launch DR PO Toolkit GUI
+' Put this file in the same folder as run_toolkit.py.
 
 Set objShell = CreateObject("WScript.Shell")
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 
 ' Get the folder where this script is located
 strScriptFolder = objFSO.GetParentFolderName(WScript.ScriptFullName)
-
-' Change to that folder
 objShell.CurrentDirectory = strScriptFolder
 
-' Run po_toolkit.py with Python
-objShell.Run "python po_toolkit.py", 0, False
+' Prefer pythonw.exe so no console window appears.
+' Fallback to python.exe if pythonw is unavailable.
+If objFSO.FileExists(strScriptFolder & "\run_toolkit.py") Then
+    objShell.Run "cmd /c where pythonw >nul 2>nul && pythonw run_toolkit.py || python run_toolkit.py", 0, False
+Else
+    MsgBox "Cannot find run_toolkit.py in:" & vbCrLf & strScriptFolder, vbCritical, "DR PO Toolkit"
+End If
 
 ' Chỉ là một cái thùng rác.
 ' Nhưng bên trong chẳng có rác.

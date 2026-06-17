@@ -1,0 +1,8 @@
+# Base toolkit uses only Python standard library.
+# Optional, only for direct Gemini API mode:
+# google-genai>=1.0.0
+# Optional, only for building an .exe:
+# pyinstaller>=6.0
+
+# Optional, only for Gemini Web automation:
+# playwright>=1.40

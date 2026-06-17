@@ -19,6 +19,8 @@ msgid ""
 "<CLT 23>*Ba-bump*\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>*Rầm rầm!!*\n"
+"<CLT>"
 
 #. <CLT 4>ボクは、<CLT><CLT 3>用具置き場の奥の部屋<CLT><CLT 4>へと倒れ込んだ。
 #. <CLT>
@@ -27,11 +29,13 @@ msgid ""
 "<CLT 4>I had fallen through the <CLT><CLT 3>back of the storage closet<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ đã ngã nhào vào <CLT><CLT 3>căn phòng phía sau tủ để đồ<CLT><CLT 4>.\n"
+"<CLT>"
 
 #. え……？
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. <CLT 4>つまり…
 #. <CLT>
@@ -40,6 +44,8 @@ msgid ""
 "<CLT 4>It turned out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hóa ra là...\n"
+"<CLT>"
 
 #. <CLT 4>用具置き場の奥の壁は回転ドアのようになっていて、
 #. ボクは、その向こう側へとたどり着いたのだった。
@@ -50,6 +56,9 @@ msgid ""
 "made my way to the other side.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>...bức tường phía sau tủ để đồ hoạt động giống như\n"
+"một chiếc cửa xoay, và tớ đã lọt được sang phía bên kia.\n"
+"<CLT>"
 
 #. <CLT 4>霧切さんの…言ってた通りに…
 #. <CLT>
@@ -58,6 +67,8 @@ msgid ""
 "<CLT 4>Just like Kyoko had said...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đúng y như những gì Kyoko đã nói...\n"
+"<CLT>"
 
 #. 学校２階のトイレ…
 #. そこにある用具置き場…
@@ -66,26 +77,28 @@ msgid ""
 "In the boys bathroom on the 2nd floor, there's a\n"
 "storage closet."
 msgstr ""
+"Trong nhà vệ sinh nam ở tầng 2 của trường, có một chiếc tủ\n"
+"để đồ."
 
 #. その奥よ…
 msgctxt "0008 | KYOUKO KIRIGIRI"
 msgid "And way in the back of that closet..."
-msgstr ""
+msgstr "Và ở tận cùng phía sau chiếc tủ đó..."
 
 #. その奥に、隠し部屋があったの。
 msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid "...there's a secret room."
-msgstr ""
+msgstr "...có một căn phòng bí mật."
 
 #. ここが…その隠し部屋…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "So this is the secret room..."
-msgstr ""
+msgstr "Thì ra đây chính là căn phòng bí mật đó..."
 
 #. ここに…何があるんだ？
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "But what's in here?"
-msgstr ""
+msgstr "Nhưng ở trong này... có cái gì chứ?"
 
 #. <CLT 4>すごい量のファイルだ。
 #. 歴代の卒業アルバムなんかも並んでいるみたいだ。
@@ -96,6 +109,10 @@ msgid ""
 "after volume of yearbooks.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có rất nhiều tập hồ sơ tài liệu. Hình như cả những cuốn\n"
+"kỷ yếu tốt nghiệp qua các thời kỳ cũng được xếp thành hàng ở đây\n"
+"nữa.\n"
+"<CLT>"
 
 #. <CLT 4>どれも埃を被ってるみたいだけど…
 #. <CLT>
@@ -104,6 +121,8 @@ msgid ""
 "<CLT 4>They're all covered in dust...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cuốn nào cuốn nấy cũng đều bám đầy bụi bẩn...\n"
+"<CLT>"
 
 #. <CLT 4>そんな中で、ひときわボクの目を引いたのは、
 #. 本棚の隅っこにある１冊のファイル…
@@ -114,21 +133,24 @@ msgid ""
 "bookshelf caught my eye.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Giữa một nơi như thế, thứ duy nhất thu hút sự chú ý\n"
+"của tớ là một tập hồ sơ nằm ở góc giá sách...\n"
+"<CLT>"
 
 #. 希望ヶ峰学園在校生名簿…？
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "Hope's Peak Academy Student Registry...?"
-msgstr ""
+msgstr "Danh sách học sinh hiện tại của Đỉnh Hy Vọng...?"
 
 #. これだけ…埃をかぶってない…
 msgctxt "0016 | MAKOTO NAEGI"
 msgid "This is the only thing in here not covered in dust."
-msgstr ""
+msgstr "Chỉ có duy nhất thứ này... là không bị bám bụi."
 
 #. …つい最近、誰かが手にした？
 msgctxt "0017 | MAKOTO NAEGI"
 msgid "Has someone been looking at it recently...?"
-msgstr ""
+msgstr "Có phải... vừa mới có ai đó đụng vào gần đây không nhỉ...?"
 
 #. <CLT 4>ボクは何気なく、そのファイルを手にした…
 #. <CLT>
@@ -137,6 +159,8 @@ msgid ""
 "<CLT 4>I slipped the file into my hand.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ vô thức với tay lấy tập hồ sơ đó...\n"
+"<CLT>"
 
 #. <CLT 4>だが、ファイルの中身より先に…
 #. <CLT>
@@ -145,6 +169,8 @@ msgid ""
 "<CLT 4>But before I had a chance to take a look at it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Thế nhưng, trước cả khi kịp ngó qua nội dung bên trong...\n"
+"<CLT>"
 
 #. <CLT 4>ボクの意識は、そのファイルから落ちた
 #. “１枚の紙切れ”に向けられた。
@@ -155,21 +181,24 @@ msgid ""
 "my attention to it.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>...tâm trí tớ đã lập tức dồn vào \"một mảnh giấy\n"
+"nhỏ\" vừa rơi ra khỏi tập hồ sơ đó.\n"
+"<CLT>"
 
 #. なんだ…これ…？
 msgctxt "0021 | MAKOTO NAEGI"
 msgid "What's this...?"
-msgstr ""
+msgstr "Cái gì... thế này...?"
 
 #. ここから出てはいけない…？
 msgctxt "0022 | MAKOTO NAEGI"
 msgid "\"You must not leave.\""
-msgstr ""
+msgstr "\"Không được rời khỏi nơi này...\"?"
 
 #. なんだか…変なメモだな…
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "That's...kind of weird."
-msgstr ""
+msgstr "Đó là... một mẩu ghi chú thật kỳ lạ..."
 
 #. <CLT 3>『ここから出られない』<CLT>なら、わかるけど…
 #. <CLT 3>『ここから出てはいけない』<CLT>…って？
@@ -178,6 +207,9 @@ msgid ""
 "I could understand if it said, like, \"<CLT 3>I can't\n"
 "leave<CLT>.\" But \"<CLT 3>you must not leave<CLT>\"?"
 msgstr ""
+"Nếu ghi là <CLT 3>\"Không thể thoát khỏi nơi này\"<CLT> thì tớ còn hiểu\n"
+"được... Nhưng tại sao lại là <CLT 3>\"Không được rời khỏi nơi\n"
+"này\"<CLT> chứ?"
 
 #. ………………
 msgctxt "0025 | MAKOTO NAEGI"
@@ -191,6 +223,8 @@ msgid ""
 "<CLT 4>What is this? My head feels...funny.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cái gì thế này? Đầu óc mình cảm thấy... thật mơ hồ lung lạc.\n"
+"<CLT>"
 
 #. <CLT 4>妙な違和感…
 #. <CLT>
@@ -199,6 +233,8 @@ msgid ""
 "<CLT 4>This strange sensation.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một cảm giác lạc lõng kỳ lạ...\n"
+"<CLT>"
 
 #. <CLT 4>デジャブのような…
 #. <CLT>
@@ -212,6 +248,8 @@ msgstr ""
 msgctxt "0029 | MAKOTO NAEGI"
 msgid "<CLT 4>Those words...<CLT><CLT 3>you must not leave<CLT><CLT 4>...<CLT>"
 msgstr ""
+"<CLT 4>Những dòng chữ đó... <CLT><CLT 3>không được rời khỏi nơi này<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. <CLT 4>ボクは…前にも、どこかでこの言葉を…
 #. <CLT>
@@ -220,16 +258,19 @@ msgid ""
 "<CLT 4>I've seen them...somewhere before...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hình như... mình đã từng thấy những dòng chữ này ở\n"
+"đâu đó trước đây rồi...\n"
+"<CLT>"
 
 #. だけど…
 msgctxt "0031 | MAKOTO NAEGI"
 msgid "But..."
-msgstr ""
+msgstr "Nhưng..."
 
 #. 思い…出せない……
 msgctxt "0032 | MAKOTO NAEGI"
 msgid "I can't quite remember..."
-msgstr ""
+msgstr "Mình không thể nào nhớ nổi......"
 
 #. <CLT 4>ボクは何を知ってる…？
 #. <CLT>
@@ -238,6 +279,8 @@ msgid ""
 "<CLT 4>What do I know?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Rốt cuộc mình đang biết những gì chứ...?\n"
+"<CLT>"
 
 #. <CLT 4>ボクは何を知らない…？
 #. <CLT>
@@ -246,6 +289,8 @@ msgid ""
 "<CLT 4>What *don't* I know?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Và mình đang *không* biết những gì chứ...?\n"
+"<CLT>"
 
 #. <CLT 4>ボクは…
 #. <CLT>
@@ -254,6 +299,8 @@ msgid ""
 "<CLT 4>I...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình...\n"
+"<CLT>"
 
 #. <CLT 4>ボクは………
 #. <CLT>
@@ -262,6 +309,8 @@ msgid ""
 "<CLT 4>I—\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình.........\n"
+"<CLT>"
 
 #. <CLT 4>頭の中で妙な音が鳴った。
 #. <CLT>
@@ -270,6 +319,8 @@ msgid ""
 "<CLT 4>A strange sound rang out through my head.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một thứ âm thanh kỳ lạ bỗng vang lên trong đầu tớ.\n"
+"<CLT>"
 
 #. <CLT 4>脳ミソが激しくシェイクされる音。
 #. <CLT>
@@ -278,6 +329,9 @@ msgid ""
 "<CLT 4>It felt like it was shaking my brain back and forth.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cảm giác như thể toàn bộ não bộ đang bị rung lắc dữ\n"
+"dội qua lại vậy.\n"
+"<CLT>"
 
 #. <CLT 4>その直後。
 #. <CLT>
@@ -286,6 +340,8 @@ msgid ""
 "<CLT 4>And then...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Và ngay sau đó...\n"
+"<CLT>"
 
 #. <CLT 4>暗闇になった。
 #. <CLT>
@@ -294,6 +350,8 @@ msgid ""
 "<CLT 4>...darkness.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>...mọi thứ chìm vào bóng tối.\n"
+"<CLT>"
 
 #. <CLT 4>訳がわからない。
 #. <CLT>
@@ -302,6 +360,8 @@ msgid ""
 "<CLT 4>I don't understand what's happening.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ hoàn toàn không hiểu nổi chuyện gì đang xảy ra nữa.\n"
+"<CLT>"
 
 #. <CLT 4>すべてが訳のわからないまま始まり。
 #. <CLT>
@@ -310,6 +370,8 @@ msgid ""
 "<CLT 4>I don't know what started it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mọi thứ bắt đầu trong sự hoang mang vô định.\n"
+"<CLT>"
 
 #. <CLT 4>終わった。
 #. <CLT>
@@ -318,6 +380,8 @@ msgid ""
 "<CLT 4>It's all over...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Rồi kết thúc.\n"
+"<CLT>"
 
 #. <CLT 4>そして目を覚ましたのは。
 #. <CLT>
@@ -326,6 +390,8 @@ msgid ""
 "<CLT 4>And with that, I opened my eyes.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Và rồi khi tớ mở mắt tỉnh dậy.\n"
+"<CLT>"
 
 #. <CLT 4>しばらく後の事。
 #. <CLT>
@@ -334,16 +400,18 @@ msgid ""
 "<CLT 4>I didn't know how long it had been.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đó đã là chuyện của một lúc sau.\n"
+"<CLT>"
 
 #. う……うぅ………
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "G...gh..."
-msgstr ""
+msgstr "Ư...... ưm........."
 
 #. い…てて…………
 msgctxt "0047 | MAKOTO NAEGI"
 msgid "Oww..."
-msgstr ""
+msgstr "Đ... đau quá............"
 
 #. <CLT 4>どうやら…殴られて気を失った…
 #. <CLT>
@@ -353,6 +421,8 @@ msgid ""
 "consciousness.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có vẻ như... mình đã bị ai đó đánh ngất đi...\n"
+"<CLT>"
 
 #. <CLT 4>…という事だけはわかった。
 #. <CLT>
@@ -361,6 +431,8 @@ msgid ""
 "<CLT 4>That's all I understood.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>...ít nhất tớ cũng chỉ nhận biết được có thế.\n"
+"<CLT>"
 
 #. <CLT 4>頭部の鈍い痛みが、そう物語っていた。
 #. <CLT>
@@ -370,6 +442,9 @@ msgid ""
 "at least.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cơn đau âm ỉ nơi vùng đầu chính là minh chứng rõ\n"
+"ràng cho điều đó.\n"
+"<CLT>"
 
 #. <CLT 4>空の本棚…
 #. <CLT>
@@ -378,6 +453,8 @@ msgid ""
 "<CLT 4>An empty bookshelf...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một chiếc giá sách trống rỗng...\n"
+"<CLT>"
 
 #. <CLT 4>え？　空の本棚…？
 #. <CLT>
@@ -386,16 +463,18 @@ msgid ""
 "<CLT 4>Huh? Empty...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ủa? Giá sách trống rỗng sao...?\n"
+"<CLT>"
 
 #. ない…
 msgctxt "0053 | MAKOTO NAEGI"
 msgid "Gone..."
-msgstr ""
+msgstr "Không còn nữa..."
 
 #. なくなってる…！
 msgctxt "0054 | MAKOTO NAEGI"
 msgid "It's all gone!"
-msgstr ""
+msgstr "Biến mất hết rồi...!"
 
 #. <CLT 4>卒業アルバム…在校生名簿…
 #. それに…
@@ -405,6 +484,9 @@ msgid ""
 "<CLT 4>The yearbooks...the student registry...and...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mấy cuốn kỷ yếu tốt nghiệp... cuốn danh sách học\n"
+"sinh... và cả...\n"
+"<CLT>"
 
 #. <CLT 4>床に落ちたメモさえも…
 #. <CLT>
@@ -421,11 +503,13 @@ msgid ""
 "<CLT 4>It's all...gone?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tất cả, đều đã biến mất sạch sẽ sao...?\n"
+"<CLT>"
 
 #. どういう…事だよ……
 msgctxt "0058 | MAKOTO NAEGI"
 msgid "What does this mean...?"
-msgstr ""
+msgstr "Thế này... là sao chứ......"
 
 #. <CLT 4>だけど、それ以上は思考が働かない。
 #. <CLT>
@@ -434,6 +518,8 @@ msgid ""
 "<CLT 4>But my brain refused to do any more work.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Thế nhưng, đầu óc tớ không thể suy nghĩ thêm được gì nữa.\n"
+"<CLT>"
 
 #. <CLT 4>頭部の鈍い痛みが、
 #. 全身にまで広がっていた…
@@ -444,21 +530,24 @@ msgid ""
 "the rest of my body.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cơn đau nhức nhối từ vùng đầu đã bắt đầu lan ra\n"
+"khắp toàn bộ cơ thể...\n"
+"<CLT>"
 
 #. と、とりあえず…
 msgctxt "0061 | MAKOTO NAEGI"
 msgid "F-For now..."
-msgstr ""
+msgstr "T-Trước mắt thì..."
 
 #. いったん…部屋に帰って…
 msgctxt "0062 | MAKOTO NAEGI"
 msgid "I should go back to my room..."
-msgstr ""
+msgstr "Cứ quay về... phòng mình cái đã..."
 
 #. 休もう……
 msgctxt "0063 | MAKOTO NAEGI"
 msgid "Get some rest..."
-msgstr ""
+msgstr "Rồi nghỉ ngơi thôi......"
 
 #. <CLT 4>重い体と、途切れ途切れの思考を引きずりながら、
 #. ボクは自分の部屋に向かって歩き出した…
@@ -469,6 +558,9 @@ msgid ""
 "thought. I dragged myself back toward my room.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Lết đi tấm thân nặng trĩu cùng mớ suy nghĩ đứt\n"
+"đoạn, tớ bắt đầu bước từng bước trở về phòng của mình...\n"
+"<CLT>"
 
 #. <CLT 4>コンセントがある…
 #. <CLT>
@@ -477,6 +569,8 @@ msgid ""
 "<CLT 4>There's an outlet...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một ổ cắm...\n"
+"<CLT>"
 
 #. <CLT 4>これって、ＬＡＮコンセント…？
 #. <CLT>
@@ -485,6 +579,8 @@ msgid ""
 "<CLT 4>Is this...an ethernet port?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cái này, là ổ cắm mạng LAN sao...?\n"
+"<CLT>"
 
 #. <CLT 4>って事は、ここでなら
 #. ネットワークに接続できるのかも…
@@ -495,6 +591,9 @@ msgid ""
 "here...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nghĩa là nếu ở đây thì có thể kết nối được mạng\n"
+"internet chăng...\n"
+"<CLT>"
 
 #. <CLT 4>引き出しのある…普通の机…
 #. <CLT>
@@ -503,6 +602,8 @@ msgid ""
 "<CLT 4>It's just...a normal desk, with normal drawers.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một ngăn kéo... Chỉ là một chiếc bàn bình thường thôi...\n"
+"<CLT>"
 
 #. <CLT 4>もっと…色々と調べてみよう…
 #. <CLT>
@@ -511,3 +612,5 @@ msgid ""
 "<CLT 4>I need to check everything I can...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình cần phải... điều tra thêm nhiều thứ nữa...\n"
+"<CLT>"

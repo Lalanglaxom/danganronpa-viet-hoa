@@ -20,7 +20,8 @@ msgid ""
 "trial! So, your votes will determine the results."
 msgstr ""
 "Hãy bắt đầu với một lời giải thích cơ bản về Lớp Xét Xử đi nào!\n"
-"Kết quả sẽ được quyết định dựa trên số phiếu bầu của các em."
+"Kết quả sẽ được quyết định dựa trên số phiếu bầu của các\n"
+"em."
 
 #. 正しいクロを指摘出来れば、クロだけがおしおき。
 #. だけど…もし間違った人物をクロとした場合は…
@@ -64,9 +65,9 @@ msgid ""
 "It was <CLT 3>Hiro<CLT>. He does not have an alibi for when the\n"
 "murders took place, and we found him in that suit."
 msgstr ""
-"Chính là <CLT 3>Yasuhiro<CLT>. Cậu ấy không có bằng chứng ngoại phạm vào lúc\n"
-"các vụ án mạng diễn ra, và chúng ta còn tìm thấy cậu ấy trong bộ\n"
-"đồ đó nữa."
+"Chính là <CLT 3>Yasuhiro<CLT>. Cậu ấy không có bằng chứng ngoại phạm\n"
+"vào lúc các vụ án mạng diễn ra, và chúng ta còn tìm thấy cậu ấy\n"
+"trong bộ đồ đó nữa."
 
 #. どう考えても…あんたが犯人じゃん…！
 msgctxt "0008 | AOI ASAHINA"
@@ -111,8 +112,8 @@ msgstr "<CLT 3>Bản thiết kế<CLT> của bộ đồ..."
 msgctxt "0014 | CELES"
 msgid "<CLT 3>Parts<CLT> we assume were used to build it..."
 msgstr ""
-"Rất nhiều <CLT 3>linh kiện<CLT> mà chúng tôi cho là đã được dùng để\n"
-"chế tạo nó..."
+"Rất nhiều <CLT 3>linh kiện<CLT> mà chúng tôi cho là đã được\n"
+"dùng để chế tạo nó..."
 
 #. すべて、あなたの<CLT 3>部屋<CLT>から見つかった物です。
 #. これらが動かぬ証拠ですわ。
@@ -121,8 +122,9 @@ msgid ""
 "And all of it was found <CLT 3>in your room<CLT>. You have to\n"
 "admit, the evidence is quite compelling."
 msgstr ""
-"Và tất cả những thứ đó đều được tìm thấy <CLT 3>trong phòng của cậu<CLT>.\n"
-"Cậu phải thừa nhận rằng, bằng chứng này khá là thuyết phục đấy."
+"Và tất cả những thứ đó đều được tìm thấy <CLT 3>trong phòng của\n"
+"cậu<CLT>. Cậu phải thừa nhận rằng, bằng chứng này khá là thuyết phục\n"
+"đấy."
 
 #. あなたがあの衣装を作り上げ、それを身にまとい、
 #. 次々と犯行を重ねていったという事のね…

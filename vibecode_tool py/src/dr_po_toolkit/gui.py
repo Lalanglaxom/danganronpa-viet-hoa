@@ -1,0 +1,627 @@
+from __future__ import annotations
+
+import json
+import threading
+import tkinter as tk
+from pathlib import Path
+from tkinter import filedialog, messagebox, ttk
+
+from .backup import make_backups, restore_working_po_from_copies, sync_by_filename
+from .cancel import OperationCancelled
+from .config import load_config, save_config
+from .linewrap import wrap_path
+from .rules import apply_rules_to_path, load_rules, rule_to_dict, save_rules
+from .search import search_path
+from .gemini_web import DEFAULT_BATCH_RETRIES, DEFAULT_CHROME_USER_DATA_DIR, DEFAULT_MAX_ENTRIES_PER_BATCH, open_chrome_debug, run_gemini_web_path
+from .translator import apply_response_to_file, write_manual_jobs
+from .validation import format_text_report, validate_path, write_reports
+
+BG = "#1f2230"
+PANEL = "#2a2e3f"
+TEXT = "#f1f3f6"
+ACCENT = "#98d9d6"
+WARN = "#ffd37a"
+BAD = "#ff9f9f"
+GOOD = "#a7e8a3"
+FONT = ("Segoe UI", 9)
+MONO = ("Consolas", 9)
+
+
+class ToolkitGUI:
+    def __init__(self, root: tk.Tk):
+        self.root = root
+        self.config = load_config()
+        self._stop_event = threading.Event()
+        self._active_thread: threading.Thread | None = None
+        self._active_log: tk.Text | None = None
+        self.stop_button: tk.Button | None = None
+        root.title("DR PO Toolkit — Refactored Base")
+        root.geometry("980x700")
+        root.configure(bg=BG)
+        self._apply_style()
+        self._build()
+
+    def _apply_style(self) -> None:
+        style = ttk.Style()
+        try:
+            style.theme_use("clam")
+        except Exception:
+            pass
+        style.configure("TNotebook", background=BG)
+        style.configure("TNotebook.Tab", padding=(14, 7), font=("Segoe UI", 9, "bold"))
+        style.configure("Treeview", font=FONT, rowheight=24)
+        style.configure("Treeview.Heading", font=("Segoe UI", 9, "bold"))
+
+    def _build(self) -> None:
+        top = tk.Frame(self.root, bg=BG)
+        top.pack(fill="x", padx=16, pady=(12, 4))
+        title = tk.Label(top, text="DR PO Toolkit — Refactored Base", bg=BG, fg=ACCENT, font=("Segoe UI", 16, "bold"))
+        title.pack(side="left")
+        self.stop_button = tk.Button(
+            top,
+            text="Stop Current Action",
+            command=self._request_stop,
+            bg=BAD,
+            fg="#111",
+            font=("Segoe UI", 9, "bold"),
+            relief="flat",
+            padx=14,
+            pady=6,
+            state="disabled",
+        )
+        self.stop_button.pack(side="right")
+        nb = ttk.Notebook(self.root)
+        nb.pack(fill="both", expand=True, padx=10, pady=10)
+        self._build_validate_tab(nb)
+        self._build_replace_tab(nb)
+        self._build_rule_editor_tab(nb)
+        self._build_linewrap_tab(nb)
+        self._build_search_tab(nb)
+        self._build_translate_tab(nb)
+        self._build_backup_tab(nb)
+
+    def _frame(self, nb: ttk.Notebook, title: str) -> tk.Frame:
+        frame = tk.Frame(nb, bg=BG)
+        nb.add(frame, text=title)
+        return frame
+
+    def _log(self, parent: tk.Frame) -> tk.Text:
+        log = tk.Text(parent, bg=PANEL, fg=TEXT, insertbackground=TEXT, font=MONO, wrap="word", height=16, relief="flat")
+        log.tag_config("good", foreground=GOOD)
+        log.tag_config("bad", foreground=BAD)
+        log.tag_config("warn", foreground=WARN)
+        log.pack(fill="both", expand=True, padx=12, pady=12)
+        return log
+
+    def _write_log(self, log: tk.Text, text: str, tag: str | None = None) -> None:
+        log.configure(state="normal")
+        log.insert("end", text + ("" if text.endswith("\n") else "\n"), tag)
+        log.see("end")
+        log.configure(state="disabled")
+
+    def _clear_log(self, log: tk.Text) -> None:
+        log.configure(state="normal")
+        log.delete("1.0", "end")
+        log.configure(state="disabled")
+
+    def _request_stop(self) -> None:
+        self._stop_event.set()
+        if self._active_log is not None:
+            self._write_log(self._active_log, "Stop requested. Waiting for current safe checkpoint...", "warn")
+
+    def _check_stop(self) -> None:
+        if self._stop_event.is_set():
+            raise OperationCancelled("Stopped by user.")
+
+    def _run_threaded(self, button: tk.Button, log: tk.Text, fn) -> None:
+        if self._active_thread is not None and self._active_thread.is_alive():
+            messagebox.showwarning("Busy", "Another action is running. Press Stop Current Action first.")
+            return
+
+        def logwrite(text, tag=None):
+            self.root.after(0, lambda: self._write_log(log, text, tag))
+
+        def worker():
+            self._stop_event.clear()
+            self._active_log = log
+            self.root.after(0, lambda: (
+                button.configure(state="disabled"),
+                self.stop_button.configure(state="normal") if self.stop_button else None,
+                self._clear_log(log),
+            ))
+            try:
+                self._check_stop()
+                fn(logwrite)
+            except OperationCancelled:
+                self.root.after(0, lambda: self._write_log(log, "Stopped by user.", "warn"))
+            except Exception as exc:
+                self.root.after(0, lambda: self._write_log(log, f"ERROR: {exc}", "bad"))
+            finally:
+                self.root.after(0, lambda: (
+                    button.configure(state="normal"),
+                    self.stop_button.configure(state="disabled") if self.stop_button else None,
+                ))
+                self._active_log = None
+        self._active_thread = threading.Thread(target=worker, daemon=True)
+        self._active_thread.start()
+
+    def _path_row(self, parent: tk.Frame, label: str, key: str, file: bool = False) -> tk.StringVar:
+        row = tk.Frame(parent, bg=BG)
+        row.pack(fill="x", padx=12, pady=5)
+        tk.Label(row, text=label, bg=BG, fg=TEXT, font=("Segoe UI", 9, "bold"), width=14, anchor="w").pack(side="left")
+        var = tk.StringVar(value=self.config.get(key, ""))
+        ent = tk.Entry(row, textvariable=var, bg=PANEL, fg=TEXT, insertbackground=TEXT, relief="flat", font=FONT)
+        ent.pack(side="left", fill="x", expand=True, padx=8, ipady=5)
+
+        def browse():
+            path = filedialog.askopenfilename(filetypes=[("PO/JSON/text", "*.po *.json *.txt"), ("All", "*.*")]) if file else filedialog.askdirectory()
+            if path:
+                var.set(path)
+                self.config[key] = path
+                save_config(self.config)
+
+        tk.Button(row, text="Browse", command=browse, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(side="left")
+        return var
+
+    def _button(self, parent: tk.Frame, text: str, command) -> tk.Button:
+        btn = tk.Button(parent, text=text, command=command, bg=ACCENT, fg="#111", font=("Segoe UI", 9, "bold"), relief="flat", padx=14, pady=6)
+        return btn
+
+    def _build_validate_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Validate")
+        path_var = self._path_row(frame, "Folder/File", "last_path")
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+        reports_var = tk.BooleanVar(value=True)
+        tk.Checkbutton(btnrow, text="Save reports", variable=reports_var, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
+
+        def run(logwrite):
+            self._check_stop()
+            path = path_var.get().strip()
+            if not path:
+                logwrite("Set path first.", "warn")
+                return
+            results = validate_path(path)
+            logwrite(format_text_report(results, path))
+            if reports_var.get():
+                out_dir = Path(path) if Path(path).is_dir() else Path(path).parent
+                txt, html = write_reports(results, out_dir, path)
+                logwrite(f"Saved report: {txt}", "good")
+                logwrite(f"Saved report: {html}", "good")
+
+        btn = self._button(btnrow, "Run Validate", lambda: self._run_threaded(btn, log, run))
+        btn.pack(side="right")
+
+    def _build_replace_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Mass Replace")
+        path_var = self._path_row(frame, "Folder/File", "last_path")
+        rules_var = self._path_row(frame, "Rules JSON", "rules_file", file=True)
+        opts = tk.Frame(frame, bg=BG)
+        opts.pack(fill="x", padx=12, pady=5)
+        dry_var = tk.BooleanVar(value=True)
+        tk.Checkbutton(opts, text="Dry run", variable=dry_var, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+
+        def run(logwrite):
+            self._check_stop()
+            path = path_var.get().strip()
+            rules_path = rules_var.get().strip()
+            rules = load_rules(rules_path)
+            changes = apply_rules_to_path(path, rules, dry_run=dry_var.get())
+            logwrite(f"Rules loaded: {len(rules)}")
+            logwrite(f"Changes: {len(changes)}", "good" if changes else None)
+            for ch in changes[:200]:
+                self._check_stop()
+                logwrite(f"{ch.file.name} | {ch.msgctxt} | {ch.rule_id} | {ch.count}")
+                logwrite(f"- {ch.before}", "warn")
+                logwrite(f"+ {ch.after}", "good")
+            if dry_var.get():
+                logwrite("Dry run only. Uncheck Dry run to write files.", "warn")
+
+        btn = self._button(btnrow, "Run Replace", lambda: self._run_threaded(btn, log, run))
+        btn.pack(side="right")
+
+    def _build_rule_editor_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Rule Editor")
+        top = tk.Frame(frame, bg=BG)
+        top.pack(fill="x", padx=12, pady=8)
+        rules_file = tk.StringVar(value=self.config.get("rules_file", "rules/mass_replace_rules.json"))
+        tk.Entry(top, textvariable=rules_file, bg=PANEL, fg=TEXT, insertbackground=TEXT, relief="flat", font=FONT).pack(side="left", fill="x", expand=True, padx=(0, 8), ipady=5)
+        rules: list[dict] = []
+
+        body = tk.Frame(frame, bg=BG)
+        body.pack(fill="both", expand=True, padx=12, pady=6)
+        listbox = tk.Listbox(body, bg=PANEL, fg=TEXT, selectbackground=ACCENT, selectforeground="#111", font=MONO, width=42)
+        listbox.pack(side="left", fill="both", padx=(0, 8))
+        form = tk.Frame(body, bg=BG)
+        form.pack(side="left", fill="both", expand=True)
+
+        fields: dict[str, tk.Variable] = {}
+        specs = [
+            ("id", tk.StringVar), ("priority", tk.StringVar), ("speaker", tk.StringVar),
+            ("scope", tk.StringVar), ("find", tk.StringVar), ("replace", tk.StringVar),
+            ("notes", tk.StringVar),
+        ]
+        for name, varcls in specs:
+            row = tk.Frame(form, bg=BG)
+            row.pack(fill="x", pady=3)
+            tk.Label(row, text=name, bg=BG, fg=TEXT, width=12, anchor="w").pack(side="left")
+            var = varcls()
+            fields[name] = var
+            tk.Entry(row, textvariable=var, bg=PANEL, fg=TEXT, insertbackground=TEXT, relief="flat", font=FONT).pack(side="left", fill="x", expand=True, ipady=4)
+        for name in ["enabled", "whole_word", "case_sensitive", "stop_after"]:
+            var = tk.BooleanVar(value=True if name in ["enabled", "case_sensitive"] else False)
+            fields[name] = var
+            tk.Checkbutton(form, text=name, variable=var, bg=BG, fg=TEXT, selectcolor=PANEL).pack(anchor="w")
+
+        def refresh_list():
+            listbox.delete(0, "end")
+            for r in rules:
+                label = f"{r.get('priority', 100):>4} | {r.get('speaker') or 'GLOBAL':<10} | {r.get('find','')} → {r.get('replace','')}"
+                listbox.insert("end", label)
+
+        def load_file():
+            path = Path(rules_file.get())
+            if not path.exists():
+                messagebox.showwarning("Rules", "Rules file not found.")
+                return
+            loaded = load_rules(path)
+            rules.clear()
+            rules.extend(rule_to_dict(r) for r in loaded)
+            refresh_list()
+            self.config["rules_file"] = str(path)
+            save_config(self.config)
+
+        def save_file():
+            path = Path(rules_file.get())
+            normalized = []
+            for r in rules:
+                r.setdefault("enabled", True)
+                r.setdefault("priority", 100)
+                r.setdefault("case_sensitive", True)
+                normalized.append(r)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps({"version": 2, "rules": normalized}, ensure_ascii=False, indent=2), encoding="utf-8")
+            messagebox.showinfo("Rules", "Rules saved.")
+
+        def selected_index() -> int | None:
+            sel = listbox.curselection()
+            return int(sel[0]) if sel else None
+
+        def load_selected(_event=None):
+            idx = selected_index()
+            if idx is None:
+                return
+            r = rules[idx]
+            for name, var in fields.items():
+                if isinstance(var, tk.BooleanVar):
+                    var.set(bool(r.get(name, False)))
+                else:
+                    val = r.get(name, "")
+                    var.set("" if val is None else str(val))
+
+        def collect_rule() -> dict:
+            data = {}
+            for name, var in fields.items():
+                data[name] = var.get()
+            data["priority"] = int(data.get("priority") or 100)
+            data["speaker"] = data.get("speaker") or None
+            data["scope"] = data.get("scope") or None
+            return data
+
+        def add_rule():
+            rules.append(collect_rule())
+            refresh_list()
+
+        def update_rule():
+            idx = selected_index()
+            if idx is None:
+                add_rule()
+            else:
+                rules[idx] = collect_rule()
+                refresh_list()
+                listbox.selection_set(idx)
+
+        def delete_rule():
+            idx = selected_index()
+            if idx is not None:
+                rules.pop(idx)
+                refresh_list()
+
+        listbox.bind("<<ListboxSelect>>", load_selected)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+        for text, cmd in [("Load", load_file), ("Save", save_file), ("Add", add_rule), ("Update", update_rule), ("Delete", delete_rule)]:
+            self._button(btnrow, text, cmd).pack(side="left", padx=4)
+        try:
+            load_file()
+        except Exception:
+            pass
+
+    def _build_linewrap_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Line Wrap")
+        path_var = self._path_row(frame, "Folder/File", "last_path")
+        opts = tk.Frame(frame, bg=BG)
+        opts.pack(fill="x", padx=12, pady=6)
+        soft = tk.IntVar(value=int(self.config.get("soft_limit", 58)))
+        hard = tk.IntVar(value=int(self.config.get("hard_limit", 64)))
+        cuts = tk.IntVar(value=int(self.config.get("max_cuts", 2)))
+        dry = tk.BooleanVar(value=True)
+        for label, var in [("Soft", soft), ("Hard", hard), ("Max cuts", cuts)]:
+            tk.Label(opts, text=label, bg=BG, fg=TEXT).pack(side="left")
+            tk.Spinbox(opts, from_=1, to=200, textvariable=var, width=6, bg=PANEL, fg=TEXT).pack(side="left", padx=(4, 12))
+        tk.Checkbutton(opts, text="Dry run", variable=dry, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+
+        def run(logwrite):
+            self._check_stop()
+            results = wrap_path(path_var.get(), soft=soft.get(), hard=hard.get(), max_cuts=cuts.get(), dry_run=dry.get())
+            for path, n in results.items():
+                self._check_stop()
+                if n:
+                    logwrite(f"{path}: {n}", "good")
+            logwrite(f"Total wrapped: {sum(results.values())}")
+            if dry.get():
+                logwrite("Dry run only.", "warn")
+
+        btn = self._button(btnrow, "Run Line Wrap", lambda: self._run_threaded(btn, log, run))
+        btn.pack(side="right")
+
+    def _build_search_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Search")
+        path_var = self._path_row(frame, "Folder/File", "last_path")
+        row = tk.Frame(frame, bg=BG)
+        row.pack(fill="x", padx=12, pady=5)
+        phrase = tk.StringVar()
+        tk.Label(row, text="Phrase", bg=BG, fg=TEXT, width=14, anchor="w").pack(side="left")
+        tk.Entry(row, textvariable=phrase, bg=PANEL, fg=TEXT, insertbackground=TEXT, relief="flat", font=FONT).pack(side="left", fill="x", expand=True, padx=8, ipady=5)
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+
+        def run(logwrite):
+            self._check_stop()
+            results = search_path(path_var.get(), phrase.get())
+            for r in results[:500]:
+                self._check_stop()
+                logwrite(f"{r.file} | {r.msgctxt}")
+                logwrite(f"msgid : {r.msgid}", "warn" if r.hit_msgid else None)
+                logwrite(f"msgstr: {r.msgstr}", "good" if r.hit_msgstr else None)
+            logwrite(f"Results: {len(results)}")
+
+        btn = self._button(btnrow, "Search", lambda: self._run_threaded(btn, log, run))
+        btn.pack(side="right")
+
+    def _build_translate_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Gemini Web")
+        path_var = self._path_row(frame, "Folder", "last_path")
+
+        web1 = tk.Frame(frame, bg=BG)
+        web1.pack(fill="x", padx=12, pady=(8, 4))
+        cdp_var = tk.StringVar(value=str(self.config.get("gemini_web_cdp_url", "http://localhost:9222")))
+        tk.Label(web1, text="Chrome CDP", bg=BG, fg=TEXT, font=("Segoe UI", 9, "bold"), width=14, anchor="w").pack(side="left")
+        tk.Entry(web1, textvariable=cdp_var, bg=PANEL, fg=TEXT, insertbackground=TEXT, relief="flat", font=FONT).pack(side="left", fill="x", expand=True, padx=8, ipady=5)
+
+        web2 = tk.Frame(frame, bg=BG)
+        web2.pack(fill="x", padx=12, pady=4)
+        max_files = tk.IntVar(value=int(self.config.get("gemini_web_max_files", 59)))
+        max_lines = tk.IntVar(value=int(self.config.get("gemini_web_max_lines", 600)))
+        max_entries = tk.IntVar(value=int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
+        wait_seconds = tk.DoubleVar(value=float(self.config.get("gemini_web_wait_seconds", 8.0)))
+        timeout_seconds = tk.IntVar(value=int(self.config.get("gemini_web_timeout_seconds", 180)))
+        retries = tk.IntVar(value=int(self.config.get("gemini_web_retries", DEFAULT_BATCH_RETRIES)))
+        rename_dupes = tk.BooleanVar(value=True)
+        backup_missing = tk.BooleanVar(value=True)
+        rename_folders = tk.BooleanVar(value=True)
+        allow_invalid = tk.BooleanVar(value=False)
+
+        for label, var, width in (("Max files", max_files, 5), ("Max lines", max_lines, 6), ("Max entries", max_entries, 5), ("Wait", wait_seconds, 5), ("Timeout", timeout_seconds, 5), ("Retries", retries, 5)):
+            tk.Label(web2, text=label, bg=BG, fg=TEXT).pack(side="left")
+            tk.Spinbox(web2, from_=0 if label == "Max files" else 1, to=9999, textvariable=var, width=width, bg=PANEL, fg=TEXT).pack(side="left", padx=(4, 10))
+
+        web3 = tk.Frame(frame, bg=BG)
+        web3.pack(fill="x", padx=12, pady=(0, 6))
+        tk.Checkbutton(web3, text="Rename (1)", variable=rename_dupes, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
+        tk.Checkbutton(web3, text="Create Copy.po if missing", variable=backup_missing, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
+        tk.Checkbutton(web3, text="Rename segment folders", variable=rename_folders, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
+        tk.Checkbutton(web3, text="Allow invalid", variable=allow_invalid, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
+
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+
+        def save_web_config():
+            self.config["gemini_web_cdp_url"] = cdp_var.get().strip() or "http://localhost:9222"
+            self.config["gemini_web_max_files"] = int(max_files.get())
+            self.config["gemini_web_max_lines"] = int(max_lines.get())
+            self.config["gemini_web_max_entries"] = int(max_entries.get())
+            self.config["gemini_web_wait_seconds"] = float(wait_seconds.get())
+            self.config["gemini_web_timeout_seconds"] = int(timeout_seconds.get())
+            self.config["gemini_web_retries"] = int(retries.get())
+            save_config(self.config)
+
+        def run_web(logwrite):
+            save_web_config()
+            limit = int(max_files.get())
+            result = run_gemini_web_path(
+                path_var.get(),
+                max_files=None if limit <= 0 else limit,
+                max_lines_per_batch=int(max_lines.get()),
+                max_entries_per_batch=int(max_entries.get()),
+                wait_between_batches=float(wait_seconds.get()),
+                cdp_url=cdp_var.get().strip() or "http://localhost:9222",
+                allow_invalid=allow_invalid.get(),
+                rename_duplicates=rename_dupes.get(),
+                create_missing_backups=backup_missing.get(),
+                rename_folders=rename_folders.get(),
+                response_timeout_seconds=int(timeout_seconds.get()),
+                retry_count=int(retries.get()),
+                log=lambda msg: logwrite(msg),
+                stop_requested=self._stop_event.is_set,
+            )
+            if not result.files:
+                logwrite("No untranslated PO files found.", "warn")
+                return
+            for item in result.files:
+                self._check_stop()
+                tag = "good" if not item.errors else "warn"
+                logwrite(f"{item.file} | missing={item.missing_before} | applied={item.translated} | errors={len(item.errors)}", tag)
+                if item.debug_log:
+                    logwrite(f"  debug: {item.debug_log}")
+                if item.backup_created:
+                    logwrite("  backup: created missing Copy.po only; existing Copy.po was not touched", "good")
+                if item.folder_renamed_to:
+                    logwrite(f"  folder: {item.folder_renamed_from} -> {item.folder_renamed_to}", "good")
+                elif item.folder_rename_skipped_reason:
+                    logwrite(f"  folder: skipped ({item.folder_rename_skipped_reason})", "warn")
+                for e in item.errors[:30]:
+                    logwrite(f"  {e.uid} | {e.msgctxt} | {e.reason}", "bad")
+                if len(item.errors) > 30:
+                    logwrite(f"  ... {len(item.errors)-30} more errors", "warn")
+            logwrite(f"Total translated: {result.total_translated}", "good")
+            if result.total_errors:
+                logwrite(f"Total errors: {result.total_errors}", "bad")
+
+        def open_chrome(logwrite):
+            save_web_config()
+            cmd = open_chrome_debug(
+                cdp_url=cdp_var.get().strip() or "http://localhost:9222",
+                user_data_dir=DEFAULT_CHROME_USER_DATA_DIR,
+            )
+            logwrite("Chrome opened with remote debugging.", "good")
+            logwrite("Login to Gemini in that Chrome window, then click Run Gemini Web.")
+            logwrite("Command: " + " ".join(str(x) for x in cmd))
+
+        btn_open = self._button(btnrow, "Open Chrome", lambda: self._run_threaded(btn_open, log, open_chrome))
+        btn_open.pack(side="right", padx=(8, 0))
+        btn0 = self._button(btnrow, "Run Gemini Web", lambda: self._run_threaded(btn0, log, run_web))
+        btn0.pack(side="right")
+
+    def _build_backup_tab(self, nb: ttk.Notebook) -> None:
+        frame = self._frame(nb, "Backup / Sync")
+        path_var = self._path_row(frame, "Backup path", "last_path")
+        source_var = self._path_row(frame, "Sync source", "sync_source")
+        target_var = self._path_row(frame, "Sync target", "sync_target")
+
+        restore_box_frame = tk.Frame(frame, bg=BG)
+        restore_box_frame.pack(fill="x", padx=12, pady=5)
+        tk.Label(restore_box_frame, text="Restore folders", bg=BG, fg=TEXT, font=("Segoe UI", 9, "bold"), width=14, anchor="w").pack(side="left", anchor="n")
+        restore_list = tk.Listbox(restore_box_frame, bg=PANEL, fg=TEXT, selectbackground=ACCENT, selectforeground="#111", font=MONO, height=4)
+        restore_list.pack(side="left", fill="x", expand=True, padx=8)
+        restore_btns = tk.Frame(restore_box_frame, bg=BG)
+        restore_btns.pack(side="left", fill="y")
+
+        restore_paths: list[str] = list(self.config.get("restore_copy_paths", []))
+
+        def refresh_restore_list() -> None:
+            restore_list.delete(0, "end")
+            for item in restore_paths:
+                restore_list.insert("end", item)
+
+        def save_restore_paths() -> None:
+            self.config["restore_copy_paths"] = restore_paths
+            save_config(self.config)
+
+        def add_restore_folder() -> None:
+            folder = filedialog.askdirectory(title="Select folder containing Copy.po backups")
+            if folder and folder not in restore_paths:
+                restore_paths.append(folder)
+                refresh_restore_list()
+                save_restore_paths()
+
+        def remove_restore_folder() -> None:
+            selected = list(restore_list.curselection())
+            for idx in reversed(selected):
+                restore_paths.pop(idx)
+            refresh_restore_list()
+            save_restore_paths()
+
+        def clear_restore_folders() -> None:
+            restore_paths.clear()
+            refresh_restore_list()
+            save_restore_paths()
+
+        tk.Button(restore_btns, text="Add Folder", command=add_restore_folder, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x", pady=(0, 4))
+        tk.Button(restore_btns, text="Remove", command=remove_restore_folder, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x", pady=(0, 4))
+        tk.Button(restore_btns, text="Clear", command=clear_restore_folders, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x")
+        refresh_restore_list()
+
+        hint = tk.Label(
+            frame,
+            text="Restore scans every selected folder recursively. It overwrites working .po from matching - Copy.po. Copy.po files are never changed.",
+            bg=BG,
+            fg=WARN,
+            anchor="w",
+        )
+        hint.pack(fill="x", padx=12, pady=(0, 5))
+
+        log = self._log(frame)
+        btnrow = tk.Frame(frame, bg=BG)
+        btnrow.pack(fill="x", padx=12, pady=(0, 12))
+
+        def backup(logwrite):
+            self._check_stop()
+            n = make_backups(path_var.get(), overwrite=False)
+            self._check_stop()
+            logwrite(f"Missing Copy.po backups written: {n}", "good")
+            logwrite("Existing Copy.po files were not touched.", "warn")
+
+        def sync(logwrite):
+            self._check_stop()
+            n = sync_by_filename(source_var.get(), target_var.get())
+            self._check_stop()
+            logwrite(f"Files synced: {n}", "good")
+
+        def restore_from_copy(logwrite):
+            paths = list(restore_paths)
+            if not paths:
+                logwrite("Add one or more restore folders first.", "warn")
+                return
+            self._check_stop()
+            results = restore_working_po_from_copies(paths)
+            ok = 0
+            failed = 0
+            for r in results:
+                self._check_stop()
+                if r.ok:
+                    ok += 1
+                    logwrite(f"OK {r.action}: {r.copy_po} -> {r.work_po}", "good")
+                else:
+                    failed += 1
+                    logwrite(f"ERR {r.action}: {r.copy_po} -> {r.work_po} | {r.error}", "bad")
+            logwrite(f"Restored working PO files: {ok}", "good")
+            if failed:
+                logwrite(f"Failed/skipped: {failed}", "bad")
+            if not results:
+                logwrite("No Copy.po files found in selected folders.", "warn")
+
+        b1 = self._button(btnrow, "Create Missing Copy.po Backups", lambda: self._run_threaded(b1, log, backup))
+        b1.pack(side="right")
+        b2 = self._button(btnrow, "Sync by Filename", lambda: self._run_threaded(b2, log, sync))
+        b2.pack(side="right", padx=8)
+        def start_restore_from_copy() -> None:
+            if not messagebox.askyesno(
+                "Restore working PO",
+                "This will overwrite working .po files with clean content copied from matching - Copy.po files.\n\nCopy.po files will NOT be modified. Continue?",
+            ):
+                self._write_log(log, "Restore cancelled before start.", "warn")
+                return
+            self._run_threaded(b3, log, restore_from_copy)
+
+        b3 = self._button(btnrow, "Restore Working PO from Copy.po", start_restore_from_copy)
+        b3.pack(side="right", padx=8)
+
+
+def main() -> None:
+    root = tk.Tk()
+    ToolkitGUI(root)
+    root.mainloop()
+
+
+if __name__ == "__main__":
+    main()
