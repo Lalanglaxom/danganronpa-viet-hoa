@@ -54,32 +54,6 @@
       "notes": ""
     },
     {
-      "id": "makoto_toi_to_to_007",
-      "enabled": true,
-      "priority": 800,
-      "speaker": "MAKOTO",
-      "scope": null,
-      "find": "Tôi",
-      "replace": "Tớ",
-      "whole_word": true,
-      "case_sensitive": true,
-      "stop_after": false,
-      "notes": ""
-    },
-    {
-      "id": "makoto_toi_to_to_008",
-      "enabled": true,
-      "priority": 800,
-      "speaker": "MAKOTO",
-      "scope": null,
-      "find": "tôi",
-      "replace": "tớ",
-      "whole_word": true,
-      "case_sensitive": true,
-      "stop_after": false,
-      "notes": ""
-    },
-    {
       "id": "touko_minh_to_toi_011",
       "enabled": true,
       "priority": 800,
@@ -401,6 +375,45 @@
       "notes": "",
       "enabled": true,
       "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false
+    },
+    {
+      "id": "ghichu",
+      "priority": 100,
+      "speaker": null,
+      "scope": null,
+      "find": " thư lưu ý",
+      "replace": "tờ ghi chú",
+      "notes": "",
+      "enabled": true,
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false
+    },
+    {
+      "id": "makoto_toi_to_to_007",
+      "priority": 400,
+      "speaker": "MAKOTO",
+      "scope": null,
+      "find": "Tôi",
+      "replace": "Tớ",
+      "notes": "",
+      "enabled": true,
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false
+    },
+    {
+      "id": "makoto_toi_to_to_008",
+      "priority": 400,
+      "speaker": "MAKOTO",
+      "scope": null,
+      "find": "tôi",
+      "replace": "tớ",
+      "notes": "",
+      "enabled": true,
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false
     }
