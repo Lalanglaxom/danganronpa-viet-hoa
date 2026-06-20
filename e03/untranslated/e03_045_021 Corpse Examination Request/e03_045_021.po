@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ねぇ、苗木君。
 #. まずは、死体を見てみたいわ。
@@ -50,7 +51,7 @@ msgstr "...Cậu có đồng tình không?"
 #. そうでしょ…って言われても…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "How am I supposed to answer...?"
-msgstr "Cậu hỏi vậy thì tớ biết trả lời thế nào đây...?"
+msgstr "Cậu hỏi vậy thì tớ biết trả lời sao đây...?"
 
 #. …とにかく急ぎましょう。
 #. 早くしないと学級裁判が始まってしまう。
@@ -59,8 +60,8 @@ msgid ""
 "Anyway, we have to hurry. Before the class trial\n"
 "begins again..."
 msgstr ""
-"...Tóm lại tụi mình phải khẩn trương lên thôi. Nếu không\n"
-"nhanh lên thì Lớp Xét Xử sẽ bắt đầu mất."
+"Tóm lại, tụi mình phải khẩn trương thôi. Nếu không\n"
+"nhanh lên thì lớp xét xử sẽ bắt đầu mất."
 
 #. う、うん…わかったよ…
 msgctxt "0007 | MAKOTO NAEGI"
@@ -79,7 +80,7 @@ msgid ""
 "<CLT 4>They're in...the repository.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nơi có thi thể... là ở kho chứa đồ mỹ thuật nhỉ...\n"
+"<CLT 4>Nơi có thi thể... là ở kho lưu trữ nhỉ...\n"
 "<CLT>"
 
 #. <CLT 4>じゃあ…とりあえず美術倉庫に急ぐか…
@@ -128,8 +129,8 @@ msgid ""
 "repository!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chắc không còn many thời gian nữa đâu. Phải mau đến\n"
-"kho chứa đồ mỹ thuật thôi...!\n"
+"<CLT 4>Chắc không còn nhiều thời gian nữa đâu. Phải mau\n"
+"đến kho chứa đồ mỹ thuật thôi...!\n"
 "<CLT>"
 
 #. <CLT 4>もう、あんまり時間もないはずだ。
