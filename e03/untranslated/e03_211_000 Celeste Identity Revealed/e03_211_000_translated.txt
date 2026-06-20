@@ -1,28 +1,39 @@
 --- Gemini Translation Raw Output for e03_211_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 一応言っておくけど、これまた大正解なのでしたッ！！
 msgctxt "0001 | MONOKUMA"
 msgid ""
 "It's basically a formality at this point, but once\n"
 "again you're totally correct!"
 msgstr ""
-"Tầm này thì cũng chỉ là thủ tục thôi, nhưng một lần nữa các em lại đoán trúng phóc rồi!"
 
+#. 今回のクロ…
+#. すべての計画を操っていた真のクロは…
 msgctxt "0002 | MONOKUMA"
 msgid ""
 "The blackened this time...the true killer who devised\n"
 "the whole stinkin' scheme, was..."
 msgstr ""
-"Kẻ thủ ác lần này... hung thủ thực sự đứng sau giật dây toàn bộ cái kế hoạch thối nát này, không ai khác chính là..."
 
+#. セレスティア・ルーデンベルクこと、
+#. 安広多恵子さんなのでしたーーッ！！
 msgctxt "0003 | MONOKUMA"
 msgid ""
 "Celestia Ludenberg! Or more precisely...Taeko\n"
 "Yasuhiroooo!"
 msgstr ""
-"Celestia Ludenberg! Hay nói một cách chính xác hơn... chính là em Taeko Yasuhiroooo!"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MONOKUMA"
+msgstr "Ta cũng phải nói trước một câu, lần này các ngươi lại đoán trúng phóc rồi!"
+
+msgctxt "0002 | MONOKUMA"
+msgstr "Hung thủ lần này... kẻ hung thủ thực sự đã vạch ra toàn bộ kế hoạch tồi tệ này chính là..."
+
+msgctxt "0003 | MONOKUMA"
+msgstr "Celestia Ludenberg! Hay nói đúng hơn là... Taeko Yasuhiro đó!"
 
 ==================== FOLDER SUMMARY ====================
-Celeste Identity Revealed
+Celeste Killer Reveal
 

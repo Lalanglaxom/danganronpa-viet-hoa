@@ -1,6 +1,22 @@
 --- Gemini Translation Raw Output for e03_128_000.po ---
 
 ==================== BATCH 1 REQUEST ====================
+#. 犯人は、今回の犯行に及ぶ際、
+#. まず、ある人物と手を組んだんだ。その人物は…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Before anything, the killer persuaded someone to help\n"
+"carry out the murder. And that person was..."
+msgstr ""
+
+#. ⟦CLT 3⟧山田クン⟦CLT⟧だよ。犯人は山田クンを⟦CLT 3⟧共犯者⟦CLT⟧にする事で、
+#. 一連の事件を可能にしたんだ。
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"...⟦CLT 3⟧Hifumi⟦CLT⟧. With an ⟦CLT 3⟧accomplice⟦CLT⟧, the killer was able\n"
+"to execute a number of otherwise impossible schemes."
+msgstr ""
+
 #. 彼らは、まず昨日の⟦CLT 3⟧深夜１時⟦CLT⟧に、
 #. ある人物を⟦CLT 3⟧娯楽室⟦CLT⟧に呼び出したんだ。
 msgctxt "0003 | MAKOTO NAEGI"
@@ -36,6 +52,29 @@ msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
 "Next, Hifumi positioned himself to make it look like\n"
 "Robo Justice was attacking him..."
+msgstr ""
+
+#. 犯人は、それを⟦CLT 3⟧デジカメで撮影⟦CLT⟧したんだ。
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"...while the killer ⟦CLT 3⟧used a digital camera to take\n"
+"pictures⟦CLT⟧ of the \"assault.\""
+msgstr ""
+
+#. 葉隠クンを不審者…つまり容疑者に仕立て上げる、
+#. 証拠作りの為にね…
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"They did all this just to create evidence that would\n"
+"put the suspicion on Hiro."
+msgstr ""
+
+#. その後、犯人達は、眠ったままの葉隠クンを
+#. プールのロッカーの中に閉じ込めた。
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"When they were done with him, they shoved him, still\n"
+"unconscious, into the pool room locker."
 msgstr ""
 
 #. そして、⟦CLT 3⟧午前６時⟦CLT⟧…
@@ -214,6 +253,11 @@ msgid ""
 "advantage of the situation."
 msgstr ""
 
+#. 保健室から抜け出したんだ。
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "He simply got up and made his escape..."
+msgstr ""
+
 #. その後、山田クンの死体が消えたと知ったボクらは、
 #. 慌てて保健室に集まってしまった。
 msgctxt "0035 | MAKOTO NAEGI"
@@ -238,6 +282,19 @@ msgid ""
 "⟦CLT 3⟧dolly⟦CLT⟧ to move it all the way down to the ⟦CLT 3⟧repository⟦CLT⟧."
 msgstr ""
 
+#. これが⟦CLT 3⟧死体消失事件の真相⟦CLT⟧だよ…
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "That explains how ⟦CLT 3⟧each of the bodies disappeared⟦CLT⟧."
+msgstr ""
+
+#. でも、山田クンは知らなかったんだ。
+#. すべてを操る真犯人の犯行計画の結末を…
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"But even Hifumi didn't know what the true killer had\n"
+"in mind for their final act..."
+msgstr ""
+
 #. 本当の結末…
 #. それは共犯者である⟦CLT 3⟧山田クンを殺す事⟦CLT⟧だったんだ。
 msgctxt "0040 | MAKOTO NAEGI"
@@ -246,9 +303,166 @@ msgid ""
 "of the one person who could betray them."
 msgstr ""
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Trước hết, thủ phạm đã thuyết phục một người khác cùng tham gia thực hiện vụ giết người. Và người đó là..."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "...⟦CLT 3⟧Hifumi⟦CLT⟧. Với một ⟦CLT 3⟧đồng phạm⟦CLT⟧, thủ phạm đã có thể thực hiện những âm mưu mà nếu không có hắn thì không thể nào làm được."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Đầu tiên, chúng đã thuyết phục ai đó gặp mình ở ⟦CLT 3⟧phòng giải trí⟦CLT⟧ vào ⟦CLT 3⟧một giờ sáng⟦CLT⟧ đêm qua."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "“Ai đó” mà chúng đã gặp chính là ⟦CLT 3⟧Hiro⟦CLT⟧."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Bộ đôi sát nhân dự định biến Hiro thành nghi phạm chính. Vì thế khi gặp cậu ấy..."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "...chúng đã chuốc thuốc mê, làm cậu ấy bất tỉnh và nhét vào ⟦CLT 3⟧bộ đồ Robo Justice⟦CLT⟧."
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "Tiếp theo, Hifumi đứng vào vị trí sao cho trông như Robo Justice đang tấn công mình..."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "...trong khi thủ phạm ⟦CLT 3⟧dùng máy ảnh kỹ thuật số chụp lại⟦CLT⟧ cảnh “hành hung” đó."
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "Chúng làm tất cả những điều này chỉ để tạo ra bằng chứng đổ tội cho Hiro."
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "Khi xong việc, chúng tống cậu ấy lúc đó vẫn đang bất tỉnh vào tủ đồ trong phòng hồ bơi."
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "Và cuối cùng, vào lúc 6 giờ sáng, chúng bước vào giai đoạn “giết người” trong kế hoạch của mình."
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "Chúng gọi ⟦CLT 3⟧Taka⟦CLT⟧ đến ⟦CLT 3⟧phòng dụng cụ⟦CLT⟧."
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "Và đó là nơi Hifumi đã giết cậu ấy, trở thành hiện trường của vụ án mạng đầu tiên."
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "Hung khí là “⟦CLT 3⟧Justice Hammer 4⟦CLT⟧”, thứ đã bị bỏ lại trong phòng dụng cụ."
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "Lý do chiếc búa số 4 được sử dụng là để gây nhầm lẫn về trình tự các vụ án."
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "Tiếp theo, thủ phạm và Hifumi đã thực hiện việc ngụy tạo hai vụ hành hung khác."
+
+msgctxt "0017 | MAKOTO NAEGI"
+msgstr "Trong các vụ tấn công này, những kẻ thủ ác đóng giả làm nạn nhân để củng cố việc Robo Justice là thủ phạm..."
+
+msgctxt "0018 | MAKOTO NAEGI"
+msgstr "Vụ ngụy tạo đầu tiên là ⟦CLT 3⟧vụ tấn công trong phòng giải trí⟦CLT⟧."
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "Ở đó, chúng muốn chúng ta nhìn thấy ⟦CLT 3⟧Justice Hammer 1⟦CLT⟧ và những ⟦CLT 3⟧bức ảnh Robo Justice⟦CLT⟧ mà chúng đã chụp."
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "Chúng muốn đảm bảo rằng chúng ta tin vào câu chuyện “bị tấn công bất ngờ” đó."
+
+msgctxt "0021 | MAKOTO NAEGI"
+msgstr "Vụ ngụy tạo thứ hai... ⟦CLT 3⟧vụ tấn công trong thư viện⟦CLT⟧..."
+
+msgctxt "0022 | MAKOTO NAEGI"
+msgstr "Lần này, chúng để lại ⟦CLT 3⟧Justice Hammer 2⟦CLT⟧ và ⟦CLT 3⟧một Hifumi “bị thương”⟦CLT⟧ để lừa chúng ta."
+
+msgctxt "0023 | MAKOTO NAEGI"
+msgstr "Với hai vụ việc này, thủ phạm đã gieo rắc một định kiến trong tâm trí chúng ta..."
+
+msgctxt "0024 | MAKOTO NAEGI"
+msgstr "Rằng nghi phạm đang tăng dần kích thước những chiếc búa và tấn công mọi người theo thứ tự như vậy."
+
+msgctxt "0025 | MAKOTO NAEGI"
+msgstr "Chúng ta đã rơi thẳng vào bẫy và bắt đầu tìm kiếm nghi phạm dựa trên điều đó, nhưng..."
+
+msgctxt "0026 | MAKOTO NAEGI"
+msgstr "...trong lúc đó, chúng ta lại để Hifumi một mình trong ⟦CLT 3⟧phòng y tế⟦CLT⟧."
+
+msgctxt "0027 | MAKOTO NAEGI"
+msgstr "Đây chính xác là những gì Hifumi mong đợi."
+
+msgctxt "0028 | MAKOTO NAEGI"
+msgstr "Hắn lấy một ⟦CLT 3⟧túi máu⟦CLT⟧ từ trong tủ lạnh và ⟦CLT 3⟧Justice Hammer 3⟦CLT⟧..."
+
+msgctxt "0029 | MAKOTO NAEGI"
+msgstr "...rồi biến căn phòng thành hiện trường vụ án, nơi mà chính hắn trông như vừa bị giết hại dã man."
+
+msgctxt "0030 | MAKOTO NAEGI"
+msgstr "Hắn hét lên để dụ chúng ta quay lại, và khi đến nơi, đó là những gì chúng ta tìm thấy."
+
+msgctxt "0031 | MAKOTO NAEGI"
+msgstr "Trong khi đó, nhóm còn lại đang đi tìm kiếm đã tìm thấy thi thể của Taka vào cùng thời điểm đó."
+
+msgctxt "0032 | MAKOTO NAEGI"
+msgstr "Vì vậy khi nghe thấy ⟦CLT 3⟧thông báo phát hiện thi thể⟦CLT⟧, chúng ta đương nhiên cho rằng đó là của Hifumi."
+
+msgctxt "0033 | MAKOTO NAEGI"
+msgstr "Chúng ta rời phòng y tế, và Hifumi một lần nữa tận dụng cơ hội đó."
+
+msgctxt "0034 | MAKOTO NAEGI"
+msgstr "Hắn chỉ đơn giản là đứng dậy và bỏ trốn..."
+
+msgctxt "0035 | MAKOTO NAEGI"
+msgstr "Khi biết thi thể của hắn biến mất, tất cả chúng ta đều vội vã quay lại phòng y tế."
+
+msgctxt "0036 | MAKOTO NAEGI"
+msgstr "Và một lần nữa, Hifumi lại có cơ hội mà hắn chờ đợi. Lần này, hắn lẻn vào phòng dụng cụ..."
+
+msgctxt "0037 | MAKOTO NAEGI"
+msgstr "Hắn bọc thi thể của Taka vào ⟦CLT 3⟧tấm bạt⟦CLT⟧ và dùng ⟦CLT 3⟧xe đẩy⟦CLT⟧ để chuyển nó xuống tận ⟦CLT 3⟧kho lưu trữ⟦CLT⟧."
+
+msgctxt "0038 | MAKOTO NAEGI"
+msgstr "Đó là lời giải thích cho việc ⟦CLT 3⟧từng cái xác biến mất như thế nào⟦CLT⟧."
+
+msgctxt "0039 | MAKOTO NAEGI"
+msgstr "Nhưng ngay cả Hifumi cũng không biết kẻ thủ ác thực sự đã dự định gì cho màn cuối cùng của kế hoạch..."
+
+msgctxt "0040 | MAKOTO NAEGI"
+msgstr "Kế hoạch của chúng ngay từ đầu là ⟦CLT 3⟧giết Hifumi⟦CLT⟧ và loại bỏ kẻ duy nhất có thể phản bội chúng."
+
+==================== BATCH 2 REQUEST ====================
+#. 現場である⟦CLT 3⟧美術倉庫にあったハンマー⟦CLT⟧でね。
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"And they did it using ⟦CLT 3⟧an ordinary, everyday hammer\n"
+"from the repository⟦CLT⟧."
+msgstr ""
+
+#. これが今回の事件のすべてだよ。
+#. そして、この計画を実行していた主犯の人物は…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"That should cover everything that happened in this\n"
+"case. And the villain behind it all is..."
+msgstr ""
+
 #. ⟦CLT 3⟧セレスさん！⟦CLT⟧　キミの負けだッ！！
 msgctxt "0043 | MAKOTO NAEGI"
 msgid "⟦CLT 3⟧Celeste⟦CLT⟧! Sorry, you lose!"
+msgstr ""
+
+#. ⟦CLT 4⟧違う、これじゃ推理が通らない！
+#. もう一度、事件の流れを整理するんだ！
+#. ⟦CLT⟧
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧No, I didn't lay out my reasoning right! I need to\n"
+"rearrange the events of the case!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧今回の事件で、犯人にそそのかされ、
+#. 事件の⟦CLT⟧⟦CLT 3⟧共犯者⟦CLT⟧⟦CLT 4⟧となってしまったのは…？
+#. ⟦CLT⟧
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧In this case, how did the killer recruit their\n"
+"⟦CLT⟧⟦CLT 3⟧accomplice⟦CLT⟧⟦CLT 4⟧? Was it seduction...?\n"
+"⟦CLT⟧"
 msgstr ""
 
 #. ⟦CLT 4⟧ある人物が、犯人達に娯楽室に
@@ -267,6 +481,16 @@ msgstr ""
 msgctxt "0047 | MAKOTO NAEGI"
 msgid ""
 "⟦CLT 4⟧Who was it that the killers summoned first...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧眠らせたある人物にジャスティスロボの着ぐるみを
+#. 着せて、犯人達は偽の証拠を作り上げたんだ。
+#. ⟦CLT⟧
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧They knocked him out, then stuffed him in the Robo\n"
+"Justice suit to falsify their evidence...\n"
 "⟦CLT⟧"
 msgstr ""
 
@@ -318,128 +542,6 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-==================== BATCH 1 RESPONSE ====================
-msgctxt "0003 | MAKOTO NAEGI"
-msgstr "Đầu tiên, họ đã dụ một người đến ⟦CLT 3⟧phòng giải trí⟦CLT⟧ vào lúc ⟦CLT 3⟧1 giờ đêm⟦CLT⟧ hôm qua."
-
-msgctxt "0004 | MAKOTO NAEGI"
-msgstr "Người bị dụ đến chính là ⟦CLT 3⟧Hiro⟦CLT⟧."
-
-msgctxt "0005 | MAKOTO NAEGI"
-msgstr "Để biến Hiro thành nghi phạm gánh tội thay, hung thủ đã hẹn gặp rồi dùng thuốc mê để đánh bấy cậu ấy..."
-
-msgctxt "0006 | MAKOTO NAEGI"
-msgstr "Sau đó, họ mặc ⟦CLT 3⟧bộ trang phục Robo Justice⟦CLT⟧ cho Hiro đang bất tỉnh..."
-
-msgctxt "0007 | MAKOTO NAEGI"
-msgstr "Kế đến, Hifumi đóng kịch như thể mình đang bị Robo Justice tấn công..."
-
-msgctxt "0011 | MAKOTO NAEGI"
-msgstr "Và rồi vào lúc ⟦CLT 3⟧6 giờ sáng⟦CLT⟧... Cuối cùng hung thủ cũng bắt tay vào thực hiện kế hoạch sát hại."
-
-msgctxt "0012 | MAKOTO NAEGI"
-msgstr "Họ gọi ⟦CLT 3⟧Taka⟦CLT⟧ đến ⟦CLT 3⟧phòng chuẩn bị thiết bị⟦CLT⟧."
-
-msgctxt "0013 | MAKOTO NAEGI"
-msgstr "Tại đó, Taka đã bị Hifumi sát hại. Đây chính là vụ án mạng đầu tiên..."
-
-msgctxt "0014 | MAKOTO NAEGI"
-msgstr "Hung khí được sử dụng lúc đó là cây ⟦CLT 3⟧búa Justice số 4⟦CLT⟧ bị bỏ lại ở phòng chuẩn bị thiết bị."
-
-msgctxt "0015 | MAKOTO NAEGI"
-msgstr "Dù là vụ án mạng đầu tiên nhưng lại dùng cây búa số 4 cốt là để khiến chúng ta hiểu lầm về thứ tự diễn ra vụ án."
-
-msgctxt "0016 | MAKOTO NAEGI"
-msgstr "Tiếp theo, hung thủ và Hifumi đã cùng nhau dàn dựng lên hai vụ hành hung giả."
-
-msgctxt "0017 | MAKOTO NAEGI"
-msgstr "Họ tự đóng vai nạn nhân trong các vụ đó, nhằm mục đích đổ mọi nghi ngờ lên Robo Justice..."
-
-msgctxt "0018 | MAKOTO NAEGI"
-msgstr "Vụ ngụy tạo đầu tiên... chính là ⟦CLT 3⟧vụ hành hung ở phòng giải trí⟦CLT⟧."
-
-msgctxt "0019 | MAKOTO NAEGI"
-msgstr "Tại đó, hung thủ cố tình để lộ cây ⟦CLT 3⟧búa Justice số 1⟦CLT⟧ và ⟦CLT 3⟧bức ảnh Robo Justice⟦CLT⟧ cho tụi mình thấy..."
-
-msgctxt "0020 | MAKOTO NAEGI"
-msgstr "Họ làm vậy để khiến tụi mình tin sái cổ vào câu chuyện bị hành hung đó."
-
-msgctxt "0021 | MAKOTO NAEGI"
-msgstr "Và vụ ngụy tạo thứ hai... chính là ⟦CLT 3⟧vụ hành hung ở thư viện⟦CLT⟧..."
-
-msgctxt "0022 | MAKOTO NAEGI"
-msgstr "Lần này, họ dàn dựng bằng cách cho tụi mình thấy ⟦CLT 3⟧Hifumi bị thương⟦CLT⟧ cùng cây ⟦CLT 3⟧búa Justice số 2⟦CLT⟧."
-
-msgctxt "0023 | MAKOTO NAEGI"
-msgstr "Bằng việc dàn dựng hai vụ hành hung giả này, hung thủ đã gieo vào đầu tụi mình một định kiến."
-
-msgctxt "0024 | MAKOTO NAEGI"
-msgstr "Rằng có một kẻ khả nghi bí ẩn đang dùng những cây búa có kích thước lớn dần để lần lượt tấn công từng người."
-
-msgctxt "0025 | MAKOTO NAEGI"
-msgstr "Tin vào điều đó, tụi mình liền lập tức chia nhau đi tìm kiếm kẻ khả nghi, thế nhưng..."
-
-msgctxt "0026 | MAKOTO NAEGI"
-msgstr "Lúc ấy, tụi mình lại để một mình Hifumi ở lại ⟦CLT 3⟧phòng y tế⟦CLT⟧."
-
-msgctxt "0027 | MAKOTO NAEGI"
-msgstr "Đó hoàn toàn nằm trong tính toán của Hifumi. Khi đã thuận lợi ở lại một mình, cậu ta..."
-
-msgctxt "0028 | MAKOTO NAEGI"
-msgstr "...đã dùng ⟦CLT 3⟧túi máu⟦CLT⟧ trong tủ lạnh cùng cây ⟦CLT 3⟧búa Justice số 3⟦CLT⟧..."
-
-msgctxt "0029 | MAKOTO NAEGI"
-msgstr "...để tự đóng giả làm một cái xác. Cậu ta dàn dựng hiện trường như thể bản thân đã bị sát hại."
-
-msgctxt "0030 | MAKOTO NAEGI"
-msgstr "Sau đó, nghe thấy tiếng hét của Hifumi, tụi mình quay trở lại và phát hiện ra hiện trường đó."
-
-msgctxt "0031 | MAKOTO NAEGI"
-msgstr "Hơn nữa vào lúc ấy, xác của Taka cũng được phát hiện ở phòng chuẩn bị thiết bị."
-
-msgctxt "0032 | MAKOTO NAEGI"
-msgstr "Và rồi, chính vì cái ⟦CLT 3⟧thông báo phát hiện xác chết⟦CLT⟧ vang lên lúc đó đã khiến tụi mình lầm tưởng rằng Hifumi thực sự đã chết."
-
-msgctxt "0033 | MAKOTO NAEGI"
-msgstr "Sau khi lừa được tụi mình, Hifumi liền tận dụng khoảnh khắc ngắn ngủi lúc phòng y tế không có ai..."
-
-msgctxt "0035 | MAKOTO NAEGI"
-msgstr "Biết tin xác của Hifumi biến mất, tụi mình liền hớt hải tập trung lại phòng y tế."
-
-msgctxt "0036 | MAKOTO NAEGI"
-msgstr "Tận dụng sơ hở đó, lần này Hifumi lẻn vào phòng chuẩn bị thiết bị..."
-
-msgctxt "0037 | MAKOTO NAEGI"
-msgstr "Cậu ta bọc xác của Taka bằng ⟦CLT 3⟧tấm bạt nilon⟦CLT⟧, rồi dùng ⟦CLT 3⟧xe đẩy⟦CLT⟧ để vận chuyển đến tận ⟦CLT 3⟧kho lưu trữ mỹ thuật⟦CLT⟧."
-
-msgctxt "0040 | MAKOTO NAEGI"
-msgstr "Kết cục thực sự... chính là việc ⟦CLT 3⟧sát hại Hifumi⟦CLT⟧, kẻ đồng phạm, hòng bịt đầu mối."
-
-msgctxt "0043 | MAKOTO NAEGI"
-msgstr "⟦CLT 3⟧Celeste!⟦CLT⟧ Cậu thua rồiっ!!"
-
-msgctxt "0046 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Kẻ được chọn làm nghi phạm gánh tội thay bị hung thủ dụ đến phòng giải trí vào lúc mấy ⟦CLT⟧⟦CLT 3⟧giờ⟦CLT⟧⟦CLT 4⟧...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0047 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Người đầu tiên bị hung thủ dụ đến là ai chứ...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0049 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Họ đã dùng món ⟦CLT⟧⟦CLT 3⟧đồ⟦CLT⟧⟦CLT 4⟧ gì để thực hiện việc đó chứ...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0050 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Taka bị dụ đến phòng chuẩn bị thiết bị vào lúc mấy ⟦CLT⟧⟦CLT 3⟧giờ⟦CLT⟧⟦CLT 4⟧...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0051 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Hung khí dùng để tấn công Taka... là cây búa Justice số ⟦CLT⟧⟦CLT 3|mấy⟦CLT⟧⟦CLT 4⟧...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0052 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tại thư viện, Hifumi đã dùng thứ gì để dàn dựng lên vụ hành hung của kẻ bí ẩn chứ...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-msgctxt "0053 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Khi Hifumi đóng giả làm cái xác ở phòng y tế, cây búa Justice số ⟦CLT⟧⟦CLT 3|mấy⟦CLT⟧⟦CLT 4⟧ đang ở đó...? Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
-
-==================== BATCH 2 REQUEST ====================
 #. ⟦CLT 4⟧山田クンは、石丸クンの死体をアレに乗せて
 #. 運んだんだったよな…
 #. ⟦CLT⟧
@@ -459,12 +561,51 @@ msgid ""
 msgstr ""
 
 ==================== BATCH 2 RESPONSE ====================
+msgctxt "0041 | MAKOTO NAEGI"
+msgstr "Bằng chính ⟦CLT 3⟧chiếc búa tìm thấy tại kho mỹ thuật hiện trường⟦CLT⟧ đó."
+
+msgctxt "0042 | MAKOTO NAEGI"
+msgstr "Đó là tất cả những gì đã xảy ra trong vụ án lần này. Và kẻ chủ mưu đứng sau tất cả mọi chuyện chính là..."
+
+msgctxt "0043 | MAKOTO NAEGI"
+msgstr "⟦CLT 3⟧Celeste⟦CLT⟧! Cậu thua rồi!!"
+
+msgctxt "0044 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không, lập luận thế này là sai rồi! Mình cần phải sắp xếp lại trình tự các sự kiện trong vụ án này!\n⟦CLT⟧"
+
+msgctxt "0045 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trong vụ án này, làm thế nào mà hung thủ đã chiêu mộ được ⟦CLT⟧⟦CLT 3⟧đồng phạm⟦CLT⟧⟦CLT 4⟧ của mình? Bằng cách quyến rũ ư...?\n⟦CLT⟧"
+
+msgctxt "0046 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những kẻ thủ ác đã gọi nạn nhân đến phòng giải trí vào ⟦CLT⟧⟦CLT 3⟧thời gian⟦CLT⟧⟦CLT 4⟧ nào...?\n⟦CLT⟧"
+
+msgctxt "0047 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ai là người đầu tiên được những kẻ thủ ác gọi đến vậy nhỉ...?\n⟦CLT⟧"
+
+msgctxt "0048 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chúng đã đánh bất tỉnh một người nào đó rồi nhét vào bộ đồ Robo Justice để làm giả bằng chứng...\n⟦CLT⟧"
+
+msgctxt "0049 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Và chúng đã sử dụng một ⟦CLT⟧⟦CLT 3⟧món đồ nhất định⟦CLT⟧⟦CLT 4⟧ để thực hiện điều đó...\n⟦CLT⟧"
+
+msgctxt "0050 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Taka được cho là phải đến phòng dụng cụ vào ⟦CLT⟧⟦CLT 3⟧mấy giờ⟦CLT⟧⟦CLT 4⟧ nhỉ...?\n⟦CLT⟧"
+
+msgctxt "0051 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc Justice Hammer được dùng để giết Taka... Đó là ⟦CLT⟧⟦CLT 3⟧Justice Hammer số mấy⟦CLT⟧⟦CLT 4⟧...?\n⟦CLT⟧"
+
+msgctxt "0052 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trong thư viện, Hifumi đã dùng một thứ gì đó để ngụy tạo sự tồn tại của một tên tội phạm bí ẩn...\n⟦CLT⟧"
+
+msgctxt "0053 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc ⟦CLT⟧⟦CLT 3⟧Justice Hammer⟦CLT⟧⟦CLT 4⟧ nào đã ở trong phòng y tế khi Hifumi giả vờ chết...?\n⟦CLT⟧"
+
 msgctxt "0054 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Hifumi đã dùng thứ đó để vận chuyển xác của Taka... Phải suy nghĩ xem... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
+msgstr "⟦CLT 4⟧Hifumi đã dùng thứ gì đó để di chuyển thi thể của Taka đi...\n⟦CLT⟧"
 
 msgctxt "0055 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Hung thủ đã dùng ⟦CLT⟧⟦CLT 3⟧hung khí⟦CLT⟧⟦CLT 4⟧ gì để sát hại Hifumi... Đó chính là... Phá hủy lời nói dối đó đi!⟦CLT navigate_next 0⟧"
+msgstr "⟦CLT 4⟧⟦CLT⟧⟦CLT 3⟧Hung khí⟦CLT⟧⟦CLT 4⟧ mà hung thủ đã dùng để giết Hifumi... Đó là gì...?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Murder Plan Recap
+Killer Accomplice Setup
 

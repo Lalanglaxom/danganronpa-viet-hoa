@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. さっそく…ロッカーの鍵を開けてみましょう。
 msgctxt "0001 | KYOUKO KIRIGIRI"
 msgid "We need to get into that locker..."
-msgstr "Chúng ta cần phải mở chiếc tủ đồ đó ra..."
+msgstr "Chúng ta cần mở cái tủ đồ đó..."
 
 #. <CLT 4>霧切さんは、セレスさんから受け取った鍵を取り出し、
 #. それを脱衣所のロッカーへと差し込んだ。
@@ -26,9 +25,8 @@ msgid ""
 "the locker.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kyoko lấy chiếc chìa khóa nhận được từ Celeste ra,\n"
-"rồi tra nó vào ổ khóa của chiếc tủ đồ trong phòng thay đồ.\n"
-"<CLT>"
+"<CLT 4>Kirigiri lấy chìa khóa mà Celes đã đưa và cắm vào\n"
+"tủ đồ phòng thay đồ.<CLT>"
 
 #. <CLT 4>ロッカーがゆっくりと開くと、そこには…
 #. <CLT>
@@ -36,24 +34,22 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>And as the locker swung open, we saw...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Về phía cánh cửa tủ đồ từ từ hé mở ra, bọn mình đã nhìn thấy...\n"
-"<CLT>"
+msgstr "<CLT 4>Khi cánh cửa tủ đồ từ từ mở ra, chúng tôi thấy...<CLT>"
 
 #. おはようございますぅ。
 msgctxt "0004 | ALTER EGO"
 msgid "Good morning."
-msgstr "Xin chào buổi sáng ạ."
+msgstr "Chào buổi sáng."
 
 #. えへへ…なんだか久しぶりだねぇ！
 msgctxt "0005 | ALTER EGO"
 msgid "Ehehe... It's been a while, hasn't it?"
-msgstr "Ehehe... Cũng lâu rồi chúng ta mới gặp lại nhau nhỉ!"
+msgstr "Ehehe... Đã lâu không gặp rồi nhỉ!"
 
 #. よかったわ…無事で…
 msgctxt "0006 | KYOUKO KIRIGIRI"
 msgid "It's safe... Thank goodness..."
-msgstr "May quá... Cậu ấy vẫn bình an vô sự..."
+msgstr "Cậu vẫn an toàn... Thật may quá..."
 
 #. <CLT 4>それは、霧切さんにしては珍しく、
 #. 心の底から安堵したような声だった。
@@ -64,10 +60,8 @@ msgid ""
 "she was speaking from the bottom of her heart...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là lần đầu tiên mình nghe thấy một giọng nói tràn ngập\n"
-"sự nhẹ nhõm đến vậy từ Kyoko. Cứ như thể những lời đó được thốt\n"
-"ra từ tận đáy lòng cậu ấy vậy...\n"
-"<CLT>"
+"<CLT 4>Đó là giọng nói nhẹ nhõm từ tận đáy lòng mà lần đầu\n"
+"tiên tôi nghe thấy từ Kirigiri.<CLT>"
 
 #. ちゃんと、セレスさんの言い付けは守ったよ！
 #. 声を出さないで、ずっと静かにしてたもん！！
@@ -76,13 +70,13 @@ msgid ""
 "I did just what Celeste asked! I didn't say a word. I\n"
 "stayed quiet the entire time!"
 msgstr ""
-"Tớ đã nghe theo đúng lời dặn của chị Celeste đấy! Tớ không hề hé\n"
-"răng nửa lời, cứ giữ im lặng suốt từ bấy đến giờ luôn!"
+"Tớ đã giữ đúng lời hứa với Celes đấy! Tớ không hề lên\n"
+"tiếng, tớ cứ im lặng suốt!"
 
 #. あ、それと…
 msgctxt "0009 | ALTER EGO"
 msgid "Oh, and..."
-msgstr "À, với cả..."
+msgstr "À, với lại..."
 
 #. ハードディスクのファイルがもう少しで開けるかも。
 #. 早ければ明日にでも…
@@ -91,24 +85,22 @@ msgid ""
 "I think I might be able to open the last set of files\n"
 "soon. Maybe as early as tomorrow..."
 msgstr ""
-"Tớ nghĩ là mình sắp sửa mở khóa được những tệp tin cuối cùng\n"
-"trong ổ cứng rồi đấy. Có khi ngay trong ngày mai thôi..."
+"Có lẽ tớ sắp mở được bộ tập tin cuối cùng rồi. Nhanh nhất\n"
+"là ngày mai..."
 
 #. 頑張るから、もうちょっと待っててねぇ。
 msgctxt "0011 | ALTER EGO"
 msgid ""
 "I'm doing my best, so please wait just a while\n"
 "longer...!"
-msgstr ""
-"Tớ sẽ cố gắng hết sức, nên mọi người ráng kiên nhẫn đợi\n"
-"thêm một chút xíu nữa nhé!"
+msgstr "Tớ đang cố gắng hết sức đây, nên hãy đợi thêm chút nữa nhé...!"
 
 #. …とにかく、これで一件落着のようね。
 msgctxt "0012 | KYOUKO KIRIGIRI"
 msgid "So, now we can officially say the case is closed."
 msgstr ""
-"Dù sao thì, đến đây chúng ta đã có thể chính thức coi như\n"
-"vụ việc này ổn thỏa rồi."
+"Vậy là, giờ chúng ta có thể chính thức nói rằng vụ án này\n"
+"đã khép lại."
 
 #. <CLT 4>一件落着…この件に関してはそうかもしれない。
 #. だけど…
@@ -117,10 +109,7 @@ msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>As far as this incident is concerned, sure. But...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Mọi chuyện ổn thỏa... xét riêng vụ rắc rối này thì\n"
-"đúng là vậy. Thế nhưng...\n"
-"<CLT>"
+msgstr "<CLT 4>Về vụ việc này thì chắc là vậy. Nhưng mà...<CLT>"
 
 #. …ちょっと待ってくれる？
 #. この際だから、ちゃんと聞かせて欲しいんだ。
@@ -129,8 +118,8 @@ msgid ""
 "Can we take a second? Since we have this opportunity,\n"
 "I want you to be honest with me..."
 msgstr ""
-"Cậu có thể nán lại một chút không? Sẵn có cơ hội này, tớ\n"
-"thực sự muốn cậu thành thật chia sẻ với tớ..."
+"Kirigiri, đợi chút được không? Nhân cơ hội này, tớ muốn\n"
+"cậu hãy thành thật với tớ..."
 
 #. ………………
 msgctxt "0015 | KYOUKO KIRIGIRI"
@@ -144,40 +133,36 @@ msgid ""
 "Kyoko, please tell me... What are you trying to do all\n"
 "on your own here at the school?"
 msgstr ""
-"Kyoko, làm ơn nói cho tớ biết đi... Rốt cuộc cậu đang định\n"
-"đơn thương độc mã làm chuyện gì ở ngôi trường này vậy?"
+"Kirigiri, làm ơn hãy nói cho tớ biết... Cậu đang định làm\n"
+"gì một mình ở ngôi trường này vậy?"
 
 #. …その話をする為に、
 #. 私と一緒に脱衣所に来たのね？
 msgctxt "0017 | KYOUKO KIRIGIRI"
 msgid "Is that why you wanted to come here with me?"
-msgstr ""
-"Hóa ra đó là lý do cậu nằng nặc đòi đi theo tớ tới phòng\n"
-"thay đồ à?"
+msgstr "Có phải vì vậy mà cậu mới muốn đến đây cùng tôi không?"
 
 #. だけど…今は言う必要がないわ…
 msgctxt "0018 | KYOUKO KIRIGIRI"
 msgid ""
 "Regardless, that's not something you need to know\n"
 "right now."
-msgstr ""
-"Tuy nhiên... đó không phải là chuyện cậu cần phải bận tâm\n"
-"vào lúc này đâu."
+msgstr "Dù sao thì... đó không phải là chuyện cậu cần biết lúc này."
 
 #. 必要が…ない…？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "I don't...need to know?"
-msgstr "Không... cần phải bận tâm sao?"
+msgstr "Tớ... không cần biết sao?"
 
 #. こっちは…心配してるんだよ…！
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "That just makes me even *more* worried!"
-msgstr "Cậu nói vậy chỉ khiến tớ cảm thấy lo lắng hơn thôi đấy!"
+msgstr "Điều đó chỉ làm tớ càng lo lắng hơn thôi!"
 
 #. 心配…？
 msgctxt "0021 | KYOUKO KIRIGIRI"
 msgid "Worried...?"
-msgstr "Lo lắng sao...?"
+msgstr "Lo lắng... sao?"
 
 #. 今回の捜査の時だって、そうだよ。
 #. 急にいなくなっちゃって、それっきりで…
@@ -186,18 +171,18 @@ msgid ""
 "Like what happened during the investigation this time.\n"
 "You disappeared, and we didn't see you again."
 msgstr ""
-"Ngay cả trong đợt điều tra lần này cũng thế thôi. Cậu đột\n"
-"nhiên biến mất tăm, rồi bặt vô âm tín luôn."
+"Cả đợt điều tra lần này nữa. Cậu đột nhiên biến mất, rồi\n"
+"bặt vô âm tín luôn..."
 
 #. それで…なんの説明もなくて…
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "Without warning, without explanation..."
-msgstr "Không một lời báo trước, cũng chẳng có lấy một câu giải thích..."
+msgstr "Mà không có lấy một lời giải thích..."
 
 #. そんなんじゃ…
 msgctxt "0024 | MAKOTO NAEGI"
 msgid "When you do that..."
-msgstr "Nếu cậu cứ tiếp tục hành động như vậy..."
+msgstr "Cậu làm thế thì..."
 
 #. 黒幕の内通者と思われても仕方がないわね？
 #. あなたもそうなんでしょ？
@@ -206,24 +191,23 @@ msgid ""
 "...it's only natural that they think I'm the\n"
 "mastermind's spy, right? And you too..."
 msgstr ""
-"...thì việc mọi người nghi ngờ tớ là kẻ nội gián cho kẻ chủ mưu\n"
-"cũng là điều dễ hiểu đúng không? Bản thân cậu chắc cũng nghĩ vậy\n"
-"chứ gì?"
+"...thì người ta nghĩ tôi là gián điệp của kẻ chủ mưu cũng\n"
+"là chuyện đương nhiên thôi, nhỉ? Và cả cậu nữa..."
 
 #. …違う！！
 msgctxt "0026 | MAKOTO NAEGI"
 msgid "No!"
-msgstr "Không phải!"
+msgstr "Không phải!!"
 
 #. ボクは…霧切さんの事を信じてるんだ…
 msgctxt "0027 | MAKOTO NAEGI"
 msgid "I...I believe in you."
-msgstr "Tớ... tớ luôn luôn tin tưởng cậu mà."
+msgstr "Tớ... tớ tin cậu mà..."
 
 #. 私を…信じてる？
 msgctxt "0028 | KYOUKO KIRIGIRI"
 msgid "You believe...in me?"
-msgstr "Cậu... tin tưởng tớ sao?"
+msgstr "Cậu... tin tôi sao?"
 
 #. 当たり前だろ？　仲間なんだから信じて当たり前だろ？
 #. だからこそ話して欲しいんだよ！
@@ -232,19 +216,18 @@ msgid ""
 "Isn't it obvious? People believe in their friends,\n"
 "right? That's why I want you to tell me!"
 msgstr ""
-"Điều đó là hiển nhiên mà đúng không? Đã là bạn bè đồng cam cộng\n"
-"khổ với nhau thì tin tưởng nhau là chuyện đương nhiên rồi, chính\n"
-"vì vậy tớ mới muốn cậu chia sẻ đấy!"
+"Đương nhiên rồi? Là đồng đội thì tin tưởng nhau là chuyện bình\n"
+"thường mà? Chính vì vậy nên tớ muốn cậu nói cho tớ biết!"
 
 #. キミも…ボクを信じて欲しいんだよ…
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "And I want you...to believe in me, too."
-msgstr "Và tớ cũng muốn... cậu hãy đặt niềm tin vào tớ nữa."
+msgstr "Và tớ cũng muốn cậu... hãy tin tưởng tớ nữa..."
 
 #. 仲間なんだから……
 msgctxt "0031 | MAKOTO NAEGI"
 msgid "Because we're friends."
-msgstr "Bởi vì bọn mình là bạn bè của nhau mà..."
+msgstr "Vì chúng ta là đồng đội mà..."
 
 #. ………………
 msgctxt "0032 | KYOUKO KIRIGIRI"
@@ -254,27 +237,27 @@ msgstr "..."
 #. …そう、わかったわ。
 msgctxt "0033 | KYOUKO KIRIGIRI"
 msgid "I understand."
-msgstr "...Được rồi, tớ hiểu rồi."
+msgstr "...Tôi hiểu rồi."
 
 #. じゃあ、私も少し信じてみようかしら…
 msgctxt "0034 | KYOUKO KIRIGIRI"
 msgid "Then...maybe I can believe in you..."
-msgstr "Vậy thì... có lẽ tớ cũng nên thử tin tưởng..."
+msgstr "Vậy thì... có lẽ tôi cũng có thể tin cậu..."
 
 #. あなたの…事を…
 msgctxt "0035 | KYOUKO KIRIGIRI"
 msgid "...just a little bit more."
-msgstr "...vào cậu thêm một chút nữa xem sao."
+msgstr "...thêm một chút nữa."
 
 #. じゃあ…！
 msgctxt "0036 | MAKOTO NAEGI"
 msgid "Then...!"
-msgstr "Vậy có nghĩa là...!"
+msgstr "Vậy thì...!"
 
 #. …いいわ、話してあげる。
 msgctxt "0037 | KYOUKO KIRIGIRI"
 msgid "Fine. I'll tell you."
-msgstr "...Được thôi, tớ sẽ nói cho cậu nghe."
+msgstr "...Được thôi, tôi sẽ kể cho cậu."
 
 #. 私がどうして姿を消し、
 #. そして、どこに行っていたのか…
@@ -282,14 +265,12 @@ msgctxt "0038 | KYOUKO KIRIGIRI"
 msgid ""
 "I'll tell you why I've been disappearing, and where\n"
 "I've been going."
-msgstr ""
-"Tớ sẽ giải thích lý do vì sao mình lại đột ngột biến mất,\n"
-"và khoảng thời gian đó tớ đã đi những đâu..."
+msgstr "Lý do vì sao tôi biến mất, và tôi đã đi đâu..."
 
 #. それはね……
 msgctxt "0039 | KYOUKO KIRIGIRI"
 msgid "You see..."
-msgstr "Sự tình là thế này..."
+msgstr "Đó là vì..."
 
 #. <CLT 4>そこで霧切さんから聞いた話…
 #. <CLT>
@@ -297,9 +278,7 @@ msgctxt "0040 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>What I heard from Kyoko then was...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Về phía những gì mình được nghe từ miệng Kyoko kể lại lúc đó...\n"
-"<CLT>"
+msgstr "<CLT 4>Câu chuyện mà tôi nghe được từ Kirigiri lúc đó...<CLT>"
 
 #. <CLT 4>正直、驚きの内容ってヤツだった…
 #. <CLT>
@@ -307,10 +286,7 @@ msgctxt "0041 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Well frankly, it kind of blew my mind.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Thú thật, đó là một loạt những thông tin chấn động\n"
-"khiến mình hoàn toàn sững sờ...\n"
-"<CLT>"
+msgstr "<CLT 4>Thành thật mà nói, nó khiến tôi vô cùng kinh ngạc...<CLT>"
 
 #. <CLT 4>霧切さんを信じると言った直後にもかかわらず、
 #. 簡単には信じられないような話…
@@ -321,10 +297,8 @@ msgid ""
 "me a story that was, well...almost unbelievable.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ngay sau khi mình vừa dõng dạc tuyên bố tin tưởng Kyoko,\n"
-"cậu ấy lại đem đến một câu chuyện khó tin tới mức khiến người\n"
-"nghe phải hoài nghi nhân sinh.\n"
-"<CLT>"
+"<CLT 4>Ngay sau khi tôi nói tin tưởng Kirigiri, cô ấy đã kể cho\n"
+"tôi một câu chuyện... chà, gần như khó có thể tin được.<CLT>"
 
 #. <CLT 4>だから、それを自分の目で確かめる為に、
 #. ボクは夜になるのを待った。
@@ -335,10 +309,8 @@ msgid ""
 "own two eyes. So I waited for nighttime to come.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chính vì thế, để có thể tận mắt xác thực tính hư thực của\n"
-"câu chuyện đó, mình buộc phải kiên nhẫn ngồi chờ cho đến khi màn\n"
-"đêm buông xuống.\n"
-"<CLT>"
+"<CLT 4>Vì thế, để tận mắt xác nhận điều cô ấy đã nói, tôi\n"
+"đã đợi đến giờ ban đêm.<CLT>"
 
 #. <CLT 4>そして、夜時間になったところで…
 #. <CLT>
@@ -346,9 +318,7 @@ msgctxt "0044 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>And when it did...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Và rồi, ngay khi giờ ban đêm chính thức bắt đầu...\n"
-"<CLT>"
+msgstr "<CLT 4>Và khi thời điểm đó đến...<CLT>"
 
 #. <CLT 4>ボクは行動を開始したんだ。
 #. <CLT>
@@ -356,6 +326,4 @@ msgctxt "0045 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...I went into action.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>...mình lập tức bắt đầu hành động.\n"
-"<CLT>"
+msgstr "<CLT 4>...tôi bắt đầu hành động.<CLT>"

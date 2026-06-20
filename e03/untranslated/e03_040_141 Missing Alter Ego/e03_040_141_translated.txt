@@ -1,48 +1,69 @@
 --- Gemini Translation Raw Output for e03_040_141.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧パソコンは…アルターエゴは…
+#. どこにいったんだろう…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Where did the laptop—where did Alter Ego go?\n"
-"<CLT>"
+"⟦CLT 4⟧Where did the laptop—where did Alter Ego go?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Chiếc máy tính xách tay—Alter Ego đã biến đi đâu mất rồi...?\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧マッサージチェアがある…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There's the massage chair.\n"
-"<CLT>"
+"⟦CLT 4⟧There's the massage chair.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đó là chiếc ghế massage.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧気になる事は、特にないな…
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Nothing really sticks out as anything to worry\n"
+"⟦CLT 4⟧Nothing really sticks out as anything to worry\n"
 "about...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Chẳng có gì thực sự nổi bật khiến mình phải bận tâm cả...\n"
-"<CLT>"
 
+#. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0006 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái máy tính xách tay—Alter Ego đã đi đâu mất rồi nhỉ?\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có một chiếc ghế massage.\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thực sự không có gì nổi bật khiến mình phải bận tâm cả...\n⟦CLT⟧"
+
+msgctxt "0004 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0006 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Missing Alter Ego
+Bathhouse Locker Investigation
 

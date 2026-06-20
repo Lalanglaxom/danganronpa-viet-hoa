@@ -1,93 +1,158 @@
 --- Gemini Translation Raw Output for e03_114_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 最初に、山田の死体を
+#. 見つけたのは…
 msgctxt "0001 | AOI ASAHINA"
 msgid "Well here's one thing we do know..."
-msgstr "À, có một điều mà tụi mình biết chắc chắn nè..."
+msgstr ""
 
+#. 保健室だったよね。
 msgctxt "0002 | AOI ASAHINA"
 msgid ""
 "The first time we found Hifumi's body\n"
 "was in the nurse's office."
 msgstr ""
-"Lần đầu tiên tụi mình tìm thấy thi thể của Hifumi\n"
-"là ở phòng y tế."
 
+#. でも、私とセレスちゃんが
+#. トイレに行っている間に…
 msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "And then, while me and\n"
 "Celeste were in the bathroom..."
 msgstr ""
-"Và sau đó, trong lúc tui và\n"
-"Celeste đang ở trong nhà vệ sinh..."
 
+#. ⟦CLT 9⟧死体は消えちゃった⟦CLT⟧んだよ。
 msgctxt "0004 | AOI ASAHINA"
-msgid "...his <CLT 9>body disappeared<CLT>!"
-msgstr "...<CLT 9>cái xác của ông ấy bỗng biến mất tiêu<CLT> luôn!"
+msgid "...his ⟦CLT 9⟧body disappeared⟦CLT⟧!"
+msgstr ""
 
+#. そして、次にその死体が
+#. 発見されたのは…
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid "And the next time we saw his body..."
-msgstr "Và lần tiếp theo chúng ta nhìn thấy thi thể của cậu ta..."
+msgstr ""
 
+#. 美術倉庫だったな。
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "...it was in the repository."
-msgstr "...là ở kho mỹ thuật."
+msgstr ""
 
+#. 移動前の彼の死体と、
+#. 移動後の彼の死体…
 msgctxt "0007 | CELES"
 msgid ""
 "But when you compare his body\n"
 "before being moved, and his\n"
 "body after being moved..."
 msgstr ""
-"Nhưng khi các người so sánh cái xác của cậu ta\n"
-"trước lúc bị dịch chuyển, và cái xác\n"
-"sau khi đã bị dịch chuyển..."
 
+#. ⟦CLT 9⟧体勢が変わった⟦CLT⟧以外に…
 msgctxt "0008 | CELES"
-msgid "Other than the change in <CLT 9>how it was positioned<CLT>..."
-msgstr "Ngoại trừ sự thay đổi về <CLT 9>tư thế nằm<CLT> ra..."
+msgid "Other than the change in ⟦CLT 9⟧how it was positioned⟦CLT⟧..."
+msgstr ""
 
+#. 特に⟦CLT 9⟧違いはありません⟦CLT⟧でしたわ。
 msgctxt "0009 | CELES"
-msgid "...there <CLT 9>was no notable difference<CLT>."
-msgstr "...thì giữa chúng <CLT 9>chẳng có điểm gì khác biệt<CLT> cả."
+msgid "...there ⟦CLT 9⟧was no notable difference⟦CLT⟧."
+msgstr ""
 
+#. 本当に…あいつは
+#. 生きていたのか…？
 msgctxt "0010 | SAKURA OOGAMI"
 msgid "Then...was he really still alive?"
-msgstr "Vậy... cậu ta thực sự vẫn còn sống sao?"
+msgstr ""
 
+#. あり得ません…
+#. バカバカしいですわ…
 msgctxt "0011 | CELES"
 msgid ""
 "Of course not,\n"
 "it is impossible. This is ridiculous..."
 msgstr ""
-"Tất nhiên là không rồi,\n"
-"điều đó là bất khả thi. Thật nực cười..."
+
+#. ⟦CLT 26⟧死体が消える…か。⟦CLT⟧
+msgctxt "0012 | CELES"
+msgid "⟦CLT 26⟧So his body disappeared...?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧つまり、移動したって事…⟦CLT⟧
+msgctxt "0013 | CELES"
+msgid "⟦CLT 26⟧In other words, it moved somehow...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧手の位置が変わってたね…⟦CLT⟧
+msgctxt "0014 | CELES"
+msgid "⟦CLT 26⟧His hand had moved, maybe...?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧移動の際に変わったんだろう。⟦CLT⟧
+msgctxt "0015 | CELES"
+msgid "⟦CLT 26⟧Moving the body must've done it...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧私もそう思う…⟦CLT⟧
+msgctxt "0016 | CELES"
+msgid "⟦CLT 26⟧Yeah, I think so, too!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧何か見落としている…⟦CLT⟧
+msgctxt "0017 | CELES"
+msgid "⟦CLT 26⟧We must have overlooked something...⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | AOI ASAHINA"
+msgstr "À, có một chuyện này tụi mình đều biết..."
+
+msgctxt "0002 | AOI ASAHINA"
+msgstr "Lần đầu tiên tụi mình tìm thấy thi thể của Hifumi là ở phòng y tế mà nhỉ."
+
+msgctxt "0003 | AOI ASAHINA"
+msgstr "Thế nhưng, trong lúc tớ và Celes đang đi vệ sinh..."
+
+msgctxt "0004 | AOI ASAHINA"
+msgstr "...thì ⟦CLT 9⟧thi thể đó đã biến mất tiêu⟦CLT⟧ rồi."
+
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgstr "Và lần tiếp theo chúng ta nhìn thấy cái xác đó..."
+
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgstr "...là ở kho chứa đồ mỹ thuật."
+
+msgctxt "0007 | CELES"
+msgstr "Thế nhưng khi so sánh thi thể của cậu ta trước và sau khi được di chuyển..."
+
+msgctxt "0008 | CELES"
+msgstr "Ngoài việc ⟦CLT 9⟧tư thế thay đổi⟦CLT⟧ ra..."
+
+msgctxt "0009 | CELES"
+msgstr "...thì ⟦CLT 9⟧không hề có sự khác biệt đáng kể nào cả⟦CLT⟧."
+
+msgctxt "0010 | SAKURA OOGAMI"
+msgstr "Vậy thì... liệu cậu ta có thực sự còn sống không...?"
+
+msgctxt "0011 | CELES"
+msgstr "Dĩ nhiên là không thể rồi. Thật nực cười..."
 
 msgctxt "0012 | CELES"
-msgid "<CLT 26>So his body disappeared...?<CLT>"
-msgstr "<CLT 26>Vậy cái xác của cậu ta đã biến mất sao...?<CLT>"
+msgstr "⟦CLT 26⟧Vậy là thi thể đã biến mất...?⟦CLT⟧"
 
 msgctxt "0013 | CELES"
-msgid "<CLT 26>In other words, it moved somehow...<CLT>"
-msgstr "<CLT 26>Nói cách khác, bằng cách nào đó nó đã dịch chuyển...<CLT>"
+msgstr "⟦CLT 26⟧Nói cách khác, nó đã được di chuyển bằng cách nào đó...⟦CLT⟧"
 
 msgctxt "0014 | CELES"
-msgid "<CLT 26>His hand had moved, maybe...?<CLT>"
-msgstr "<CLT 26>Có lẽ bàn tay của cậu ta đã dịch chuyển chăng...?<CLT>"
+msgstr "⟦CLT 26⟧Vị trí tay của cậu ta đã thay đổi nhỉ...?⟦CLT⟧"
 
 msgctxt "0015 | CELES"
-msgid "<CLT 26>Moving the body must've done it...<CLT>"
-msgstr "<CLT 26>Chắc là do quá trình di chuyển cái xác gây ra thôi...<CLT>"
+msgstr "⟦CLT 26⟧Chắc là do quá trình di chuyển thôi...⟦CLT⟧"
 
 msgctxt "0016 | CELES"
-msgid "<CLT 26>Yeah, I think so, too!<CLT>"
-msgstr "<CLT 26>Phải đó, tớ cũng nghĩ vậy luôn!<CLT>"
+msgstr "⟦CLT 26⟧Ừ, tớ cũng nghĩ vậy...!⟦CLT⟧"
 
 msgctxt "0017 | CELES"
-msgid "<CLT 26>We must have overlooked something...<CLT>"
-msgstr "<CLT 26>Chúng ta hẳn đã bỏ sót điều gì đó rồi...<CLT>"
-
+msgstr "⟦CLT 26⟧Chắc chắn tụi mình đã bỏ sót gì đó rồi...⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Hifumi Body Disappearance
+Body Relocation Mystery
 

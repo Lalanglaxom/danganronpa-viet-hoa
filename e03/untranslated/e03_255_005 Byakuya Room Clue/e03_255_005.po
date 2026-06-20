@@ -2,31 +2,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. 苗木、ここにいたのか。
 #. 捜したぞ…
 msgctxt "0001 | BYAKUYA TOGAMI"
 msgid "So this is where you were. I've been looking for you."
-msgstr "Hóa ra tôi thấy cậu ở chỗ này à. Tôi đã mất công đi tìm cậu đấy."
+msgstr "Naegi, cậu đây rồi. Tôi đã tìm cậu đấy..."
 
 #. 捜した…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "You have...?"
-msgstr "Tìm tớ... sao...?"
+msgstr "Cậu tìm tôi…?"
 
 #. さっきの礼をしてやろうと思ってな…
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid "I wanted to thank you for what you did."
-msgstr "Tôi chỉ muốn đến cảm ơn vì những gì cậu đã làm lúc nãy mà thôi."
+msgstr "Tôi muốn đền đáp cậu về chuyện vừa rồi..."
 
 #. 不本意ではあるが、このゲームが面白くなったのは、
 #. お前のお陰だからな。
@@ -35,23 +34,23 @@ msgid ""
 "Not that you meant to, but you ended up making this\n"
 "little game of ours very interesting indeed."
 msgstr ""
-"Dẫu không phải chủ ý của cậu, nhưng cậu lại vô tình khiến cho\n"
-"trò chơi nhỏ này của chúng ta trở nên vô cùng thú vị đấy."
+"Dù không phải ý định của cậu, nhưng nhờ cậu mà trò chơi\n"
+"nhỏ này trở nên rất thú vị đấy."
 
 #. え、えーっと…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "U-Umm..."
-msgstr "À-Ừm..."
+msgstr "Ừ, ừm…"
 
 #. 葉隠の部屋に行ってみろ。
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "You should go to Hiro's room."
-msgstr "Cậu nên đến phòng của Yasuhiro đi."
+msgstr "Hãy thử đến phòng của Hagakure xem."
 
 #. それと、こいつも渡しておこう。
 msgctxt "0007 | BYAKUYA TOGAMI"
 msgid "Oh, and let me give you this."
-msgstr "Ồ, và để tôi đưa cho cậu thứ này."
+msgstr "À, và hãy cầm lấy cái này đi."
 
 #. <CLT 23>『食堂に集合せよ！』
 #. <CLT>
@@ -59,9 +58,7 @@ msgctxt "0008 | NARRATION"
 msgid ""
 "<CLT 23>\"Meet in the dining hall!\"\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>\"Tập hợp tại nhà ăn!\"\n"
-"<CLT>"
+msgstr "<CLT 23>“Tập trung tại nhà ăn!”<CLT>"
 
 #. これって、葉隠クンが
 #. ボク達を集める時に使ったメモ書きだよね…？
@@ -70,13 +67,13 @@ msgid ""
 "This is the note Hiro wrote to get us all to meet up,\n"
 "right?"
 msgstr ""
-"Đây chẳng phải mẩu giấy ghi chú mà Yasuhiro đã viết để gọi\n"
-"mọi người đến tập hợp sao...?"
+"Đây chẳng phải là mảnh giấy mà Hagakure đã dùng để tập hợp\n"
+"mọi người lại sao…?"
 
 #. よく覚えていたな…
 msgctxt "0010 | BYAKUYA TOGAMI"
 msgid "You remember well."
-msgstr "Cậu nhớ tốt đấy."
+msgstr "Cậu nhớ kỹ đấy..."
 
 #. かなり達筆だったから…
 #. 印象に残ってたんだよ。
@@ -84,34 +81,32 @@ msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
 "Well, the penmanship was pretty remarkable, so it left\n"
 "an impression..."
-msgstr ""
-"À thì, nét chữ của cậu ấy khá là đặc biệt nên nó để lại ấn\n"
-"tượng mạnh cho tớ..."
+msgstr "Vì nét chữ của cậu ấy khá là… ấn tượng nên tôi vẫn nhớ thôi."
 
 #. だが、これでハッキリしただろう。
 msgctxt "0012 | BYAKUYA TOGAMI"
 msgid "Anyway, this makes it clear, right?"
-msgstr "Dù sao thì, điều này đã quá rõ ràng rồi đúng chứ?"
+msgstr "Nhưng giờ thì mọi chuyện đã rõ ràng rồi, đúng không?"
 
 #. …これは罠だ。
 msgctxt "0013 | BYAKUYA TOGAMI"
 msgid "This is a trap."
-msgstr "Đây là một cái bẫy."
+msgstr "…Đây là một cái bẫy."
 
 #. どれが…？
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "What is...?"
-msgstr "Cái gì là bẫy cơ...?"
+msgstr "Cái gì… cơ?"
 
 #. フフ…ますます面白くなってきたぞ…
 msgctxt "0015 | BYAKUYA TOGAMI"
 msgid "Hmhm. Things grow ever more exciting."
-msgstr "Hửm hửm. Mọi chuyện ngày càng trở nên kích thích rồi đây."
+msgstr "Hừ hừ… Mọi chuyện ngày càng trở nên thú vị hơn rồi đấy…"
 
 #. あの…どういう意味…？
 msgctxt "0016 | MAKOTO NAEGI"
 msgid "Um...what are you talking about?"
-msgstr "Cậu... đang nói về chuyện gì thế?"
+msgstr "À… ý cậu là sao…?"
 
 #. もう、借りは返したんだ。
 #. これ以上は、話す義務はない。
@@ -120,13 +115,13 @@ msgid ""
 "I've already repaid my debt. I don't owe you any more\n"
 "explanation."
 msgstr ""
-"Tôi đã trả xong món nợ sòng phẳng rồi. Tôi không có nghĩa\n"
-"vụ phải giải thích thêm điều gì với cậu nữa đâu."
+"Ta đã trả nợ xong rồi. Ta không có nghĩa vụ phải giải\n"
+"thích thêm với cậu nữa."
 
 #. じゃあな…
 msgctxt "0018 | BYAKUYA TOGAMI"
 msgid "Goodbye..."
-msgstr "Chào nhé..."
+msgstr "Đi đây…"
 
 #. <CLT 23><CLT><CLT 3>葉隠直筆のメッセージ<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
@@ -137,9 +132,9 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23> <CLT><CLT 3>Thông điệp của Yasuhiro<CLT><CLT 23> đã được\n"
-"cập nhật vào phần Đạn Hy Vọng trong sổ học sinh của bạn.\n"
-"<CLT>"
+"<CLT 23><CLT><CLT 3>Thông điệp viết tay của Hagakure<CLT><CLT 23> đã được\n"
+"ghi lại vào sổ học sinh. Bạn có thể kiểm tra trong menu Ngôn\n"
+"Đạn.<CLT>"
 
 #. <CLT 4>えっと…葉隠クンの部屋に行ってみろって
 #. 言ってたけど…
@@ -148,10 +143,7 @@ msgctxt "0020 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Um...so he said to go to Hiro's room, but...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Ừm... Cậu ấy bảo mình thử đến phòng của Yasuhiro\n"
-"xem sao, thế nhưng...\n"
-"<CLT>"
+msgstr "<CLT 4>Ừm… cậu ấy bảo mình đi đến phòng của Hagakure… nhưng…<CLT>"
 
 #. <CLT 4>そこに…何かあるのか…？
 #. <CLT>
@@ -159,6 +151,4 @@ msgctxt "0021 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...what's waiting for me there?\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>...liệu có thứ gì đang chờ đợi mình ở nơi đó đây?\n"
-"<CLT>"
+msgstr "<CLT 4>Ở đó… có thứ gì sao…?<CLT>"

@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. あの台車が移動している根拠なら、
 #. ちゃんとあるんだ。
@@ -19,8 +18,8 @@ msgid ""
 "If you're asking for proof that the dolly moved, I\n"
 "have it right here..."
 msgstr ""
-"Nếu cậu muốn tìm căn cứ chứng minh chiếc xe đẩy đã được di\n"
-"chuyển, tớ có ngay đây..."
+"Căn cứ cho thấy chiếc xe đẩy đó đã được dịch chuyển thì tớ\n"
+"có đầy đủ ở ngay đây rồi."
 
 #. ボクが美術倉庫で、台車を見つけた時、
 #. そのタイヤには<CLT 3>血痕<CLT>が付着してたんだけど…
@@ -29,8 +28,8 @@ msgid ""
 "When I found the dolly in the repository, one of the\n"
 "wheels had a <CLT 3>bloodstain<CLT> on it."
 msgstr ""
-"Khi tớ tìm thấy chiếc xe đẩy ở kho lưu trữ, một trong\n"
-"những bánh xe của nó có dính <CLT 3>vết máu<CLT>..."
+"Lúc tớ tìm thấy chiếc xe đẩy ở kho chứa đồ mỹ thuật, trên\n"
+"bánh xe của nó vẫn còn dính <CLT 3>vết máu<CLT>..."
 
 #. それと同じタイヤの跡が、
 #. 物理準備室の血だまりにも残ってたんだ。
@@ -39,8 +38,8 @@ msgid ""
 "There was a pool of blood in the equipment room with a\n"
 "tire mark in it that matched the dolly wheel's tread."
 msgstr ""
-"Có một vũng máu ở phòng thiết bị vật lý cũng lưu lại vết bánh xe\n"
-"trùng khớp hoàn toàn với vân bánh của chiếc xe đẩy đó."
+"Và vết bánh xe y hệt như vậy cũng được để lại ngay trên\n"
+"vũng máu ở phòng chuẩn bị vật lý."
 
 #. きっと、犯人は物理準備室から死体を運び出す際に、
 #. 誤って台車のタイヤに血を付けてしまって…
@@ -49,8 +48,8 @@ msgid ""
 "The killer probably rolled the dolly through the blood\n"
 "on accident as they wheeled the body out of the room."
 msgstr ""
-"Chắc chắn hung thủ đã vô tình đẩy chiếc xe đi qua vũng máu\n"
-"trong lúc vận chuyển thi thể ra khỏi phòng..."
+"Chắc chắn hung thủ trong lúc mang thi thể ra khỏi phòng chuẩn bị\n"
+"vật lý đã vô tình làm bánh xe đẩy cán qua vũng máu..."
 
 #. それを、そのまま…
 #. 美術倉庫まで移動させちゃったんだよ。
@@ -59,8 +58,8 @@ msgid ""
 "And as the blood dried on the tire, they moved the\n"
 "body into the repository."
 msgstr ""
-"Và cứ thế, họ đã di chuyển cái xác cùng chiếc xe đẩy sang\n"
-"tận kho lưu trữ."
+"Rồi cứ thế... đẩy nó thẳng một mạch tới tận kho chứa đồ mỹ\n"
+"thuật luôn."
 
 #. …これが根拠だよ。
 #. 石丸クンの死体運搬に台車が使われた事のね…！
@@ -69,13 +68,13 @@ msgid ""
 "So there's my proof that the dolly was used to move\n"
 "Taka's body!"
 msgstr ""
-"Đó chính là căn cứ cho thấy chiếc xe đẩy đã được dùng để\n"
-"vận chuyển thi thể của Ishimaru!"
+"...Đây chính là bằng chứng đấy. Bằng chứng cho thấy chiếc\n"
+"xe đẩy đã được dùng để vận chuyển thi thể của Ishimaru...!"
 
 #. …チッ！
 msgctxt "0007 | CELES"
 msgid "Tch—!"
-msgstr "Chậc—!"
+msgstr "...Chậc!"
 
 #. <CLT 4>セレスさんまで…
 #. ボクって嫌われてるのか…？
@@ -85,7 +84,8 @@ msgid ""
 "<CLT 4>Jeez, does Celeste really hate me that much...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đến cả Celeste cũng... Không lẽ mình bị ghét đến thế sao...?\n"
+"<CLT 4>Đến cả Celes cũng vậy nữa... Chẳng lẽ mình bị ghét\n"
+"bỏ đến thế sao...?\n"
 "<CLT>"
 
 #. …まぁ、いいだろう。しょせん補足の話だ。
@@ -95,8 +95,8 @@ msgid ""
 "Well, anyway. That was just something we had to get\n"
 "out of the way. Let's get back to the main subject..."
 msgstr ""
-"Được rồi, dù sao thì đó cũng chỉ là vấn đề phụ thôi. Giờ\n"
-"thì quay lại chủ đề chính được chưa..."
+"...Mà thôi được rồi. Dù sao đó cũng chỉ là chuyện bổ sung\n"
+"ngoài lề. Giờ thì quay lại vấn đề chính được rồi chứ..."
 
 #. そうだ、ジャスティスロボが犯人じゃないって話だよ！
 #. 犯人がジャスティスロボじゃないなら…
@@ -105,18 +105,18 @@ msgid ""
 "Yeah! The subject of how Robo Justice didn't do it!\n"
 "Cuz if it's not a killer robot, then..."
 msgstr ""
-"Phải đó, chuyện Robo Justice không phải hung thủ ấy! Mà\n"
-"nếu đó không phải một con robot giết người, thì..."
+"Đúng vậy, chuyện Robo Justice không phải là hung thủ ấy!\n"
+"Nếu hung thủ không phải Robo Justice thì..."
 
 #. じゃあ、どんなロボなのっ！？
 msgctxt "0011 | AOI ASAHINA"
 msgid "...what kind of robot is it!?"
-msgstr "...thì nó là loại robot gì chứ!?"
+msgstr "Thế thì đó là loại robot gì cơ chứ!?"
 
 #. 朝日奈よ、ロボは関係ないと思うぞ…
 msgctxt "0012 | SAKURA OOGAMI"
 msgid "I'm not sure that really matters..."
-msgstr "Hina ơi, tôi nghĩ robot không liên quan gì ở đây đâu..."
+msgstr "Hina ơi, tôi nghĩ chuyện robot chẳng liên quan gì ở đây đâu..."
 
 #. では、話してやろう。
 #. 例の不審者が、事件の犯人ではないという根拠をな。
@@ -125,8 +125,8 @@ msgid ""
 "I'd be happy to explain why the occupant of the suit\n"
 "couldn't possibly be the killer."
 msgstr ""
-"Vậy để tôi nói cho các người nghe. Căn cứ cho thấy kẻ ở\n"
-"bên trong bộ đồ đó không thể nào là hung thủ."
+"Vậy tôi sẽ nói cho nghe. Căn cứ chứng minh gã khả nghi kia\n"
+"không phải là hung thủ trong vụ án lần này."
 
 #. それは、石丸の<CLT 3>死体運搬の流れ<CLT>を振り返ってみれば、
 #. すぐに見えてくるはずだ。
@@ -135,8 +135,8 @@ msgid ""
 "If you look back on <CLT 3>how the body was transported<CLT>, it\n"
 "will become immediately obvious."
 msgstr ""
-"Chỉ cần nhìn lại <CLT 3>trình tự vận chuyển thi thể<CLT> của\n"
-"Ishimaru, các người sẽ nhận ra ngay lập tức."
+"Chỉ cần nhìn lại toàn bộ <CLT 3>quá trình vận chuyển thi\n"
+"thể<CLT> của Ishimaru, các người sẽ nhận ra ngay lập tức."
 
 #. <CLT 4>例の不審者が事件に関係してない根拠は…
 #. 石丸クンの死体運搬を振り返れば、見えてくる…
@@ -147,9 +147,9 @@ msgid ""
 "why the person in the suit couldn't have done it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Căn cứ cho thấy kẻ khả nghi đó không liên quan đến vụ\n"
-"án... Chỉ cần nhìn lại quá trình di chuyển thi thể của Ishimaru\n"
-"là sẽ rõ...\n"
+"<CLT 4>Căn cứ chứng minh gã khả nghi đó không liên quan đến vụ\n"
+"án... Chỉ cần nhìn lại quá trình vận chuyển thi thể của Ishimaru\n"
+"là sẽ rõ sao...\n"
 "<CLT>"
 
 #. <CLT 4>…それって、どういう意味だ？
@@ -159,5 +159,5 @@ msgid ""
 "<CLT 4>What does he mean by that...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Cậu ta nói thế nghĩa là sao nhỉ?\n"
+"<CLT 4>...Như vậy nghĩa là sao nhỉ?\n"
 "<CLT>"

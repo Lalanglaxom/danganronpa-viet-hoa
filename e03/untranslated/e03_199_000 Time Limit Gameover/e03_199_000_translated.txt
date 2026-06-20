@@ -1,81 +1,132 @@
 --- Gemini Translation Raw Output for e03_199_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧答えが見えない…時間だけが過ぎていく…
+#. このままじゃ…！
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"I don't have the answer... Time is running out! If I\n"
+"⟦CLT 4⟧I don't have the answer... Time is running out! If I\n"
 "don't do something...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình vẫn chưa tìm ra câu trả lời... Thời gian sắp cạn sạch rồi! Cứ đà này thì...!\n"
-"<CLT>"
 
+#. おやおや…もう議論は打ち止めかな？
 msgctxt "0002 | MONOKUMA"
 msgid "Uh-oh! Have we already come to the end of the debate?"
-msgstr "Ối dào ôi... cuộc tranh luận đã đi đến hồi kết thúc rồi đấy à?"
+msgstr ""
 
+#. これにて学級裁判は閉廷！
+#. サクッとクロを決めちゃうからね！
 msgctxt "0003 | MONOKUMA"
 msgid ""
 "Well then, the class trial is officially adjourned!\n"
 "Now it's time to reveal who's the blackened!"
 msgstr ""
-"Vậy thì, Lớp Xét Xử chính thức bế mạc tại đây! Ta sẽ công bố kẻ thủ ác ngay và luôn đây!"
 
+#. うぷぷぷぷぷ…！
 msgctxt "0004 | MONOKUMA"
 msgid "Puuhuhuhuhu!"
-msgstr "U pư pư pư pư!"
+msgstr ""
 
+#. 一番投票された人は、苗木誠くん…
+#. みたいだね。
 msgctxt "0005 | MONOKUMA"
 msgid ""
 "It would appear that the one with the most votes\n"
 "is...Makoto!"
 msgstr ""
-"Xem ra người nhận được số phiếu bầu cao nhất chính là... Makoto Naegi!"
 
+#. しかし、残念～！
+#. 苗木くんはクロじゃないよ！
 msgctxt "0006 | MONOKUMA"
-msgid "Hyper...Makoto is NOT the blackened! Too bad!"
-msgstr "Thế nhưng mà đáng tiếc quá đi! Cậu Makoto lại không phải là kẻ thủ ác đâu nhé!"
+msgid "However...Makoto is NOT the blackened! Too bad!"
+msgstr ""
 
+#. 本物のクロは見事卒業！　おめでとう！
+#. でも…
 msgctxt "0007 | MONOKUMA"
 msgid ""
 "Looks like the real killer gets to graduate!\n"
 "Congraduations to them!"
 msgstr ""
-"Vậy là kẻ thủ ác đích thực đã xuất sắc giành được tấm vé tốt nghiệp rồi! Xin chúc mừng nhé!"
 
+#. クロ以外は、みんなおしおきだよ！
 msgctxt "0008 | MONOKUMA"
 msgid "On the other hand, everyone else must now be punished!"
-msgstr "Bù lại, tất cả những người còn lại ngoại trừ kẻ thủ ác đều sẽ phải nhận hình phạt!"
+msgstr ""
 
+#. ⟦CLT 4⟧ボク達は…ここで終わってしまうのか…？
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Is this really it for us? Is it all over?\n"
-"<CLT>"
+"⟦CLT 4⟧Is this really it for us? Is it all over?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bọn mình... thực sự phải kết thúc ở đây sao? Mọi chuyện chấm hết rồi sao...?\n"
-"<CLT>"
 
+#. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. ここで諦めたりしないぞッ！
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "I can't give up now!"
+msgstr ""
+
+#. いいえ
+msgctxt "0012 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧リトライ⟦CLT⟧⟦CLT 23⟧なさいますか？
+#. ⟦CLT⟧
+msgctxt "0013 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Whaddya say? Wanna ⟦CLT⟧⟦CLT 3⟧give it another shot⟦CLT⟧⟦CLT 23⟧?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không tìm ra câu trả lời... Thời gian cứ trôi đi... Cứ thế này thì...!\n⟦CLT⟧"
+
+msgctxt "0002 | MONOKUMA"
+msgstr "Chà chà... chúng ta đã đi đến cuối cuộc tranh luận rồi sao?"
+
+msgctxt "0003 | MONOKUMA"
+msgstr "Vậy thì, Lớp Xét Xử chính thức bế mạc! Giờ ta sẽ nhanh chóng công bố kẻ sát nhân thôi!"
+
+msgctxt "0004 | MONOKUMA"
+msgstr "U pư pư pư pư...!"
+
+msgctxt "0005 | MONOKUMA"
+msgstr "Có vẻ như người nhận được nhiều phiếu bầu nhất... là Makoto Naegi."
+
+msgctxt "0006 | MONOKUMA"
+msgstr "Nhưng mà, đáng tiếc quá! Makoto không phải là kẻ sát nhân đâu!"
+
+msgctxt "0007 | MONOKUMA"
+msgstr "Kẻ sát nhân thật sự sẽ được tốt nghiệp một cách xuất sắc! Chúc mừng nhé! Thế nhưng..."
+
+msgctxt "0008 | MONOKUMA"
+msgstr "Ngoại trừ kẻ sát nhân ra, tất cả các ngươi đều sẽ bị xử tử!"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chúng ta... sẽ kết thúc ở đây sao...?\n⟦CLT⟧"
+
+msgctxt "0010 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0011 | MAKOTO NAEGI"
-msgid "I can't give up now!"
-msgstr "Mình quyết không thể bỏ cuộc tại đây được!"
+msgstr "Mình sẽ không bỏ cuộc ở đây đâu!"
 
 msgctxt "0012 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0013 | NARRATION"
-msgid ""
-"<CLT 23>Whaddya say? Wanna <CLT><CLT 3>give it another shot<CLT><CLT 23>?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Sao nào? Các em có muốn <CLT><CLT 3>thử lại lần nữa<CLT><CLT 23> không đây?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Bạn có muốn ⟦CLT⟧⟦CLT 3⟧thử lại⟦CLT⟧⟦CLT 23⟧ không?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Time Limit Gameover
+Makoto Failed Trial
 

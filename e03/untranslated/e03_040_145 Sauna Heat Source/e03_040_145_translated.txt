@@ -1,41 +1,59 @@
 --- Gemini Translation Raw Output for e03_040_145.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧これって…なんだ？
+#. サウナの熱源…かな？
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>What's this? Is it...the heat source for the sauna?\n"
-"<CLT>"
+"⟦CLT 4⟧What's this? Is it...the heat source for the sauna?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Cái gì thế này? Có phải là... nguồn nhiệt của phòng xông hơi không nhỉ?\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧まあ…事件とは関係ないだろうし…
+#. ここは暑いし早く出よう…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Well, it's probably unrelated to the case, and I'm\n"
+"⟦CLT 4⟧Well, it's probably unrelated to the case, and I'm\n"
 "getting kind of hot. So I'd better get going...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Dù sao thì nó chắc cũng không liên quan tới vụ án đâu, với lại ở đây\n"
-"bắt đầu nóng lên rồi đấy. Nên mình đi ra ngoài thôi...\n"
-"<CLT>"
 
+#. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧サウナから出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the sauna?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái này là... gì thế nhỉ? Có phải là... nguồn nhiệt cho phòng xông hơi không?\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mà, chắc nó không liên quan gì đến vụ án đâu, với lại ở đây cũng hơi nóng rồi. Mình nên đi ra ngoài thôi...\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0005 | NARRATION"
-msgid ""
-"<CLT 23>Leave the sauna?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi phòng xông hơi sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi phòng xông hơi chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Sauna Heat Source
+Sauna Room Investigation
 

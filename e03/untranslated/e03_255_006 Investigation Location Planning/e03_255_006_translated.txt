@@ -1,36 +1,52 @@
 --- Gemini Translation Raw Output for e03_255_006.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. えっと…この現場での手掛かりは、
+#. こんなところかな…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Hmm... There's gotta be a clue around here somewhere."
-msgstr "Ừm... Chắc chắn phải có manh mối nào đó quanh đây thôi."
+msgstr ""
 
+#. ⟦CLT 4⟧だったら、他の場所も調べてみないとな…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Maybe I should check somewhere else.\n"
-"<CLT>"
+"⟦CLT 4⟧Maybe I should check somewhere else.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có lẽ mình nên đi kiểm tra những khu vực khác xem sao.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧他の場所で捜査すべき所…
+#. ボクが思い付く限りだと…
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There are some places I already know about...\n"
-"<CLT>"
+"⟦CLT 4⟧There are some places I already know about...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Về những địa điểm cần phải tiến hành điều tra... Theo như mình có thể nghĩ ra lúc này thì...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧最初に山田クンの死体が見つかった⟦CLT⟧⟦CLT 3⟧保健室⟦CLT⟧⟦CLT 4⟧と、
+#. 石丸クンの死体が見つかった⟦CLT⟧⟦CLT 3⟧物理準備室⟦CLT⟧⟦CLT 4⟧…だよな。
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>First the <CLT><CLT 3>nurse's office<CLT><CLT 4>, where Hifumi was found.\n"
-"Then the <CLT><CLT 3>equipment room<CLT><CLT 4>, where Taka was found...\n"
-"<CLT>"
+"⟦CLT 4⟧First the ⟦CLT⟧⟦CLT 3⟧nurse's office⟦CLT⟧⟦CLT 4⟧, where Hifumi was found.\n"
+"Then the ⟦CLT⟧⟦CLT 3⟧equipment room⟦CLT⟧⟦CLT 4⟧, where Taka was found...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đầu tiên là <CLT><CLT 3>phòng y tế<CLT><CLT 4>, nơi phát hiện ra thi thể của Hifumi trước tiên. Tiếp theo là <CLT><CLT 3>phòng chuẩn bị vật lý<CLT><CLT 4>, nơi phát hiện ra thi thể của Taka...\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Hừm... Chắc hẳn phải có manh mối nào đó quanh đây chứ."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vậy thì, mình phải kiểm tra những nơi khác xem sao...⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những nơi khác cần điều tra... theo như mình nhớ thì...⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đầu tiên là ⟦CLT⟧⟦CLT 3⟧Phòng y tế⟦CLT⟧⟦CLT 4⟧, nơi tìm thấy thi thể của Yamada, và ⟦CLT⟧⟦CLT 3⟧Phòng chuẩn bị vật lý⟦CLT⟧⟦CLT 4⟧, nơi tìm thấy thi thể của Ishimaru... nhỉ.⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Investigation Location Planning
+Review Crime Scenes
 

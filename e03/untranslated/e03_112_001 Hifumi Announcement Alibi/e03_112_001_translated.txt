@@ -1,76 +1,127 @@
 --- Gemini Translation Raw Output for e03_112_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 最初に保健室で
+#. 見つけた時の山田は…
 msgctxt "0001 | SAKURA OOGAMI"
 msgid ""
 "Are you saying that when we first\n"
 "found Hifumi in the nurse's office..."
 msgstr ""
-"Ý em là khi lần đầu chúng ta\n"
-"tìm thấy Hifumi ở phòng y tế..."
 
+#. ⟦CLT 9⟧生きていた可能性⟦CLT⟧が
+#. あるという事か？
 msgctxt "0002 | SAKURA OOGAMI"
 msgid ""
 "...there's a chance\n"
-"<CLT 9>he was actually still alive<CLT>?"
+"⟦CLT 9⟧he was actually still alive⟦CLT⟧?"
 msgstr ""
-"...rằng có khả năng\n"
-"<CLT 9>cậu ta thực chất vẫn còn sống<CLT> sao?"
 
+#. いいえ、そんなはずありません。
 msgctxt "0003 | CELES"
 msgid "No...it is impossible."
-msgstr "Không... điều đó là bất khả thi."
+msgstr ""
 
+#. あの時の山田君は
+#. 間違いなく死んでいましたわ。
 msgctxt "0004 | CELES"
 msgid "Hifumi was dead, without a doubt."
-msgstr "Hifumi lúc đó chắc chắn đã chết, không còn nghi ngờ gì nữa."
+msgstr ""
 
+#. どうして断言出来るの？
 msgctxt "0005 | KYOUKO KIRIGIRI"
 msgid "And you know that how?"
-msgstr "Và sao cậu lại dám khẳng định như vậy chứ?"
+msgstr ""
 
+#. あなたも死体発見アナウンスを
+#. 聞いたでしょう…
 msgctxt "0006 | CELES"
 msgid ""
 "Surely you heard the body discovery\n"
 "announcement along with the rest of us..."
 msgstr ""
-"Chắc chắn cậu cũng đã nghe thấy thông báo phát hiện thi thể cùng với những người còn lại trong chúng ta rồi mà..."
 
+#. あれは、⟦CLT 9⟧山田君の死体を
+#. 発見したから⟦CLT⟧こそ…
 msgctxt "0007 | CELES"
-msgid "Hifumi's <CLT 9>dead body had been found<CLT>..."
-msgstr "Chính vì <CLT 9>xác chết của Hifumi được tìm thấy<CLT>..."
+msgid "Hifumi's ⟦CLT 9⟧dead body had been found⟦CLT⟧..."
+msgstr ""
 
+#. 流されたアナウンスの
+#. はずですわよ。
 msgctxt "0008 | CELES"
 msgid "...and that is why the announcement was made."
-msgstr "...nên thông báo đó mới được phát lên chứ."
+msgstr ""
 
+#. 本当にそうかしら…？
 msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid "Are we really so sure about that?"
-msgstr "Liệu chúng ta có thực sự chắc chắn về điều đó không?"
+msgstr ""
 
+#. ⟦CLT 9⟧別の誰かの死体⟦CLT⟧に対する
+#. アナウンスだったのかも…
 msgctxt "0010 | KYOUKO KIRIGIRI"
 msgid ""
 "Maybe the announcement was\n"
 "intended to signal\n"
-"<CLT 9>someone else's discovery<CLT>..."
+"⟦CLT 9⟧someone else's discovery⟦CLT⟧..."
 msgstr ""
-"Biết đâu thông báo đó vốn dĩ\n"
-"là để báo hiệu cho\n"
-"<CLT 9>việc phát hiện ra một ai đó khác<CLT>..."
+
+#. ⟦CLT 26⟧俺は見てないから何とも…⟦CLT⟧
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgid "⟦CLT 26⟧I didn't see anything, so...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧それは私も聞いたよ！⟦CLT⟧
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgid "⟦CLT 26⟧I heard it, too!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧別の誰か…だと？⟦CLT⟧
+msgctxt "0013 | KYOUKO KIRIGIRI"
+msgid "⟦CLT 26⟧Were we...wrong?⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | SAKURA OOGAMI"
+msgstr "Cậu muốn nói là khi chúng ta lần đầu tìm thấy Yamada ở phòng y tế..."
+
+msgctxt "0002 | SAKURA OOGAMI"
+msgstr "...vẫn có ⟦CLT 9⟧khả năng là cậu ấy vẫn còn sống⟦CLT⟧ sao?"
+
+msgctxt "0003 | CELES"
+msgstr "Không... không thể nào có chuyện đó được đâu."
+
+msgctxt "0004 | CELES"
+msgstr "Vào thời điểm đó, chắc chắn Yamada đã chết rồi cậu ơi."
+
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgstr "Sao cậu lại dám khẳng định như thế chứ?"
+
+msgctxt "0006 | CELES"
+msgstr "Chính cậu cũng nghe thấy tiếng thông báo phát hiện thi thể cơ mà..."
+
+msgctxt "0007 | CELES"
+msgstr "Đó chính là vì ⟦CLT 9⟧thi thể của Yamada đã được tìm thấy⟦CLT⟧..."
+
+msgctxt "0008 | CELES"
+msgstr "...nên tiếng thông báo mới vang lên chứ còn gì nữa."
+
+msgctxt "0009 | KYOUKO KIRIGIRI"
+msgstr "Chuyện đó có thực sự chắc chắn như vậy không nhỉ...?"
+
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgstr "Biết đâu tiếng thông báo đó thực chất là dành cho việc phát hiện ⟦CLT 9⟧thi thể của một người khác⟦CLT⟧..."
 
 msgctxt "0011 | KYOUKO KIRIGIRI"
-msgid "<CLT 26>I didn't see anything, so...<CLT>"
-msgstr "<CLT 26>Tôi không nhìn thấy gì nên...<CLT>"
+msgstr "⟦CLT 26⟧Tớ có được chứng kiến đâu nên chịu...⟦CLT⟧"
 
 msgctxt "0012 | KYOUKO KIRIGIRI"
-msgid "<CLT 26>I heard it, too!<CLT>"
-msgstr "<CLT 26>Tớ cũng nghe thấy nó mà!<CLT>"
+msgstr "⟦CLT 26⟧Chuyện đó tớ cũng nghe thấy rồi!⟦CLT⟧"
 
 msgctxt "0013 | KYOUKO KIRIGIRI"
-msgid "<CLT 26>Were we...wrong?<CLT>"
-msgstr "<CLT 26>Có phải chúng ta... đã nhầm không?<CLT>"
-
+msgstr "⟦CLT 26⟧Thi thể một người khác... sao?⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Hifumi Announcement Alibi
+Body Discovery Announcement
 

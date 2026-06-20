@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>そして、なんとか…
 #. 学校の１階までは戻って来たのだが…
@@ -20,22 +19,17 @@ msgid ""
 "<CLT 4>Somehow, I made it back to the 1st floor of the\n"
 "school.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Bằng một cách thần kỳ nào đó, mình rốt cuộc cũng\n"
-"lết thân về được đến khu vực tầng 1 của ngôi trường.\n"
-"<CLT>"
+msgstr "<CLT 4>Bằng cách nào đó, mình đã lết được về tầng 1 của ngôi trường…<CLT>"
 
 #. う…うぅ…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Gh... Nng..."
-msgstr "Ư... ớ..."
+msgstr "Ư… ư……"
 
 #. 歩いたら…ますます気分が……
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "The farther I walked, the more I felt..."
-msgstr ""
-"Càng cố bước đi... cơ thể mình lại càng cảm thấy nôn nao\n"
-"chịu không nổi..."
+msgstr "Càng bước đi… mình càng thấy…."
 
 #. <CLT 4>目がぼやける…
 #. 視界がうまく定まらない…
@@ -45,10 +39,7 @@ msgid ""
 "<CLT 4>Things are getting blurry... Can't see...in front of\n"
 "me...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Mắt mình hoa lên hết rồi... Mọi thứ trước mặt...\n"
-"nhòe nhoẹt chẳng thể nhìn rõ được gì nữa...\n"
-"<CLT>"
+msgstr "<CLT 4>Mắt mình mờ đi… Mình không nhìn rõ… phía trước nữa…<CLT>"
 
 #. <CLT 4>ボクは思わず、
 #. その場にうずくまってしまった。
@@ -57,10 +48,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I couldn't stop myself from collapsing right there.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Mình không thể gượng dậy nổi nữa, đành bất lực\n"
-"buông xuôi quỵ ngã ngay tại chỗ.\n"
-"<CLT>"
+msgstr "<CLT 4>Mình không thể làm gì khác ngoài việc khuỵu xuống ngay tại đó.<CLT>"
 
 #. <CLT 4>と、その直後だった…
 #. <CLT>
@@ -68,9 +56,7 @@ msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>And after that...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Và rồi, ngay sau khoảnh khắc đó...\n"
-"<CLT>"
+msgstr "<CLT 4>Và ngay sau đó…<CLT>"
 
 #. <CLT 23>「………………」
 #. <CLT>
@@ -78,14 +64,12 @@ msgctxt "0007 | NARRATION"
 msgid ""
 "<CLT 23>\"...\"\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
+msgstr "<CLT 23>「………………」<CLT>"
 
 #. …ん？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Hm...?"
-msgstr "Ủa...?"
+msgstr "…Hửm?"
 
 #. <CLT 23>「………………」
 #. <CLT>
@@ -93,9 +77,7 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>\"...\"\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
+msgstr "<CLT 23>「………………」<CLT>"
 
 #. <CLT 4>遠くから…音が聞こえる…
 #. <CLT>
@@ -103,10 +85,7 @@ msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>As if from a vast distance, I heard a sound...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Từ một nơi nào đó xa xăm... mình lờ mờ nghe thấy\n"
-"một chuỗi âm thanh vọng lại...\n"
-"<CLT>"
+msgstr "<CLT 4>Từ đằng xa… mình nghe thấy tiếng gì đó…<CLT>"
 
 #. <CLT 23>「………………」
 #. <CLT>
@@ -114,9 +93,7 @@ msgctxt "0011 | NARRATION"
 msgid ""
 "<CLT 23>\"...\"\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
+msgstr "<CLT 23>「………………」<CLT>"
 
 #. <CLT 4>微かだけど、確かに…
 #. <CLT>
@@ -124,9 +101,7 @@ msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>It was faint, but undeniable...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Dẫu cho âm thanh ấy vô cùng nhỏ bé, nhưng chắc chắn là có...\n"
-"<CLT>"
+msgstr "<CLT 4>Dù rất nhỏ, nhưng chắc chắn là…<CLT>"
 
 #. <CLT 23>「………………」
 #. <CLT>
@@ -134,16 +109,14 @@ msgctxt "0013 | NARRATION"
 msgid ""
 "<CLT 23>\"...\"\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
+msgstr "<CLT 23>「………………」<CLT>"
 
 #. この音…って…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "That sound..."
-msgstr "Tiếng động này... rốt cuộc là..."
+msgstr "Tiếng động này… là…"
 
 #. 体育館の…方から…？
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "It's coming from...the gym...?"
-msgstr "Hình như phát ra từ... phía phòng thể chất đúng không...?"
+msgstr "Từ hướng… phòng thể chất…?"

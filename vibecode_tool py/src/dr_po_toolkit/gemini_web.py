@@ -18,7 +18,10 @@ from .models import POEntry
 from .po_io import format_field, load_po, patch_msgstr_by_uid, po_unescape_quoted, save_po
 from .translator import TranslationError, validate_translations
 
-STOP_BTN_SEL = 'button[aria-label*="Stop"], button[aria-label*="Dừng"]'
+STOP_BTN_SEL = (
+    'button[aria-label*="Stop"], button[aria-label*="Dừng"], '
+    'button:has(mat-icon[fonticon="stop"]), button:has(mat-icon[data-mat-icon-name="stop"])'
+)
 CHATBOX_SEL = (
     'div.ql-editor[contenteditable="true"][aria-label*="Enter a prompt for Gemini"], '
     'div.ql-editor[contenteditable="true"][data-placeholder*="Ask Gemini"], '
@@ -35,7 +38,7 @@ SEND_BTN_SEL = (
 RESPONSE_MARKDOWN_SEL = 'div.markdown-main-panel, message-content, pre'
 DEFAULT_CDP_URL = "http://localhost:9222"
 DEFAULT_GEMINI_URL = "https://gemini.google.com/app"
-DEFAULT_CHROME_USER_DATA_DIR = r"C:\ChromeDebug"
+DEFAULT_CHROME_USER_DATA_DIR = str(Path.home() / ".dr_po_toolkit" / "ChromeDebug")
 DEFAULT_MAX_ENTRIES_PER_BATCH = 40
 DEFAULT_BATCH_RETRIES = 2
 DEFAULT_NO_PROGRESS_TIMEOUT_SECONDS = 60
@@ -78,6 +81,16 @@ Lines:
 {samples}"""
 
 LogFn = Callable[[str], None]
+AllowInvalid = bool | Callable[[], bool]
+
+
+def _allow_invalid_enabled(value: AllowInvalid) -> bool:
+    if callable(value):
+        try:
+            return bool(value())
+        except Exception:
+            return False
+    return bool(value)
 
 
 @dataclass(slots=True)
@@ -290,21 +303,93 @@ def _extract_nth_response(page, index: int) -> str:
             return ""
 
 
+def _visible_stop_button_count(page) -> int:
+    """Count only visible, enabled Gemini stop buttons.
+
+    Gemini's current UI can leave a raw mat-icon like
+    <mat-icon fonticon="stop" aria-hidden="true"> in the DOM. That icon alone
+    must not be treated as an active generation state. It counts only when it is
+    inside a visible, clickable, enabled button.
+    """
+    try:
+        return int(page.evaluate(
+            """() => {
+                const isVisible = (el) => {
+                    if (!el || el.hidden) return false;
+                    const rect = el.getBoundingClientRect();
+                    const style = window.getComputedStyle(el);
+                    return rect.width > 0
+                        && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden'
+                        && style.opacity !== '0';
+                };
+                const isDisabled = (btn) => {
+                    return btn.disabled
+                        || btn.hasAttribute('disabled')
+                        || btn.getAttribute('aria-disabled') === 'true'
+                        || btn.closest('[aria-disabled="true"]');
+                };
+                const isStopButton = (btn) => {
+                    const label = (btn.getAttribute('aria-label') || '').toLowerCase();
+                    const title = (btn.getAttribute('title') || '').toLowerCase();
+                    if (label.includes('stop') || label.includes('dừng') || title.includes('stop')) return true;
+                    const icon = btn.querySelector('mat-icon[fonticon="stop"], mat-icon[data-mat-icon-name="stop"]');
+                    if (!icon || !isVisible(icon)) return false;
+                    const fonticon = (icon.getAttribute('fonticon') || '').toLowerCase();
+                    const iconName = (icon.getAttribute('data-mat-icon-name') || '').toLowerCase();
+                    const text = (icon.textContent || '').trim().toLowerCase();
+                    return fonticon === 'stop' || iconName === 'stop' || text === 'stop';
+                };
+                return Array.from(document.querySelectorAll('button'))
+                    .filter((btn) => isVisible(btn) && !isDisabled(btn) && isStopButton(btn))
+                    .length;
+            }"""
+        ) or 0)
+    except Exception:
+        try:
+            return int(page.locator(STOP_BTN_SEL).count())
+        except Exception:
+            return 0
+
+
 def _click_stop_button(page) -> bool:
     try:
         return bool(page.evaluate(
             """() => {
-                const selectors = [
-                    'button[aria-label*="Stop"]',
-                    'button[aria-label*="Dừng"]',
-                    'button[aria-label*="Cancel"]',
-                    'button[aria-label*="Hủy"]'
-                ];
-                for (const sel of selectors) {
-                    const btn = document.querySelector(sel);
-                    if (btn) { btn.click(); return true; }
-                }
-                return false;
+                const isVisible = (el) => {
+                    if (!el || el.hidden) return false;
+                    const rect = el.getBoundingClientRect();
+                    const style = window.getComputedStyle(el);
+                    return rect.width > 0
+                        && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden'
+                        && style.opacity !== '0';
+                };
+                const isDisabled = (btn) => {
+                    return btn.disabled
+                        || btn.hasAttribute('disabled')
+                        || btn.getAttribute('aria-disabled') === 'true'
+                        || btn.closest('[aria-disabled="true"]');
+                };
+                const isStopButton = (btn) => {
+                    const label = (btn.getAttribute('aria-label') || '').toLowerCase();
+                    const title = (btn.getAttribute('title') || '').toLowerCase();
+                    if (label.includes('stop') || label.includes('dừng') || title.includes('stop')) return true;
+                    if (label.includes('cancel') || label.includes('hủy')) return true;
+                    const icon = btn.querySelector('mat-icon[fonticon="stop"], mat-icon[data-mat-icon-name="stop"]');
+                    if (!icon || !isVisible(icon)) return false;
+                    const fonticon = (icon.getAttribute('fonticon') || '').toLowerCase();
+                    const iconName = (icon.getAttribute('data-mat-icon-name') || '').toLowerCase();
+                    const text = (icon.textContent || '').trim().toLowerCase();
+                    return fonticon === 'stop' || iconName === 'stop' || text === 'stop';
+                };
+                const btn = Array.from(document.querySelectorAll('button'))
+                    .find((candidate) => isVisible(candidate) && !isDisabled(candidate) && isStopButton(candidate));
+                if (!btn) return false;
+                btn.click();
+                return true;
             }"""
         ))
     except Exception:
@@ -316,6 +401,113 @@ def _click_stop_button(page) -> bool:
         except Exception:
             pass
     return False
+
+
+
+def _has_unclickable_stop_box(page) -> bool:
+    """Detect Gemini's stuck mobile composer state.
+
+    Bad DOM example:
+    - send-button-container is visible but disabled
+    - gem-icon-button has class "stop" and aria-disabled="true"
+    - inner button says aria-label="Stop response"
+    - mat-icon has fonticon="stop"
+
+    In this state Gemini is neither truly generating nor ready to send. Clicking
+    it does nothing, so the safest recovery is a page refresh and batch retry.
+    """
+    try:
+        return bool(page.evaluate(
+            """() => {
+                const isVisible = (el) => {
+                    if (!el || el.hidden) return false;
+                    const rect = el.getBoundingClientRect();
+                    const style = window.getComputedStyle(el);
+                    return rect.width > 0
+                        && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden'
+                        && style.opacity !== '0';
+                };
+                const hasStopIcon = (root) => {
+                    if (!root) return false;
+                    const icon = root.querySelector('mat-icon[fonticon="stop"], mat-icon[data-mat-icon-name="stop"]');
+                    if (!icon || !isVisible(icon)) return false;
+                    const fonticon = (icon.getAttribute('fonticon') || '').toLowerCase();
+                    const iconName = (icon.getAttribute('data-mat-icon-name') || '').toLowerCase();
+                    const text = (icon.textContent || '').trim().toLowerCase();
+                    return fonticon === 'stop' || iconName === 'stop' || text === 'stop';
+                };
+                const looksDisabled = (root) => {
+                    if (!root) return false;
+                    if (root.classList?.contains('disabled')) return true;
+                    if (root.getAttribute('aria-disabled') === 'true') return true;
+                    const gemBtn = root.querySelector('gem-icon-button[aria-disabled="true"], gem-icon-button.disabled');
+                    const button = root.querySelector('button');
+                    return !!gemBtn
+                        || !!button?.disabled
+                        || button?.hasAttribute('disabled')
+                        || button?.getAttribute('aria-disabled') === 'true';
+                };
+                const containers = Array.from(document.querySelectorAll(
+                    'div[data-test-id="send-button-container"], gem-icon-button.send-button'
+                ));
+                return containers.some((container) => {
+                    if (!isVisible(container)) return false;
+                    const label = (
+                        container.getAttribute('aria-label')
+                        || container.querySelector('button')?.getAttribute('aria-label')
+                        || ''
+                    ).toLowerCase();
+                    const classText = String(container.className || '').toLowerCase();
+                    const stopLike = label.includes('stop')
+                        || label.includes('dừng')
+                        || classText.split(/\\s+/).includes('stop')
+                        || hasStopIcon(container);
+                    return stopLike && looksDisabled(container);
+                });
+            }"""
+        ))
+    except Exception:
+        return False
+
+
+def _wait_for_chatbox_ready(page, timeout_ms: int = 30000) -> None:
+    deadline = time.time() + (max(1, int(timeout_ms)) / 1000.0)
+    while time.time() < deadline:
+        try:
+            loc = page.locator(CHATBOX_SEL)
+            if loc.count() > 0 and loc.last.is_visible(timeout=800):
+                return
+        except Exception:
+            pass
+        try:
+            page.wait_for_timeout(300)
+        except Exception:
+            time.sleep(0.3)
+
+
+def _refresh_gemini_page(page) -> None:
+    """Force-refresh Gemini and wait until the composer is visible again."""
+    try:
+        page.reload(wait_until="domcontentloaded", timeout=60_000)
+    except Exception:
+        try:
+            page.goto(DEFAULT_GEMINI_URL, wait_until="domcontentloaded", timeout=60_000)
+        except Exception:
+            pass
+    try:
+        _wait_for_chatbox_ready(page, timeout_ms=30_000)
+    except Exception:
+        pass
+
+
+def _refresh_page_for_unclickable_stop_box(page) -> bool:
+    """Refresh Gemini when its disabled Stop response button traps the composer."""
+    if not _has_unclickable_stop_box(page):
+        return False
+    _refresh_gemini_page(page)
+    return True
 
 
 def _wait_for_generation_to_finish(page, response_index: int, max_wait_seconds: int = 180, stop_requested: StopFn | None = None) -> str:
@@ -340,11 +532,11 @@ def _wait_for_generation_to_finish(page, response_index: int, max_wait_seconds: 
             _click_stop_button(page)
             check_stop(stop_requested)
 
+        if _refresh_page_for_unclickable_stop_box(page):
+            raise TimeoutError("Gemini UI got stuck on a disabled Stop response box. Refreshed the page; batch will retry.")
+
         current_text = _extract_nth_response(page, response_index).strip()
-        try:
-            stop_count = page.locator(STOP_BTN_SEL).count()
-        except Exception:
-            stop_count = 0
+        stop_count = _visible_stop_button_count(page)
 
         now = time.time()
         if current_text:
@@ -510,14 +702,26 @@ class GeminiWebSession:
     def recover_after_error(self) -> None:
         try:
             page = self._ensure_page()
+            if _refresh_page_for_unclickable_stop_box(page):
+                return
             _click_stop_button(page)
             page.keyboard.press("Escape")
             page.wait_for_timeout(500)
+            if _refresh_page_for_unclickable_stop_box(page):
+                return
             try:
                 box = _active_chatbox(page)
                 _clear_chatbox(page, box)
             except Exception:
                 pass
+        except Exception:
+            pass
+
+    def refresh_page(self) -> None:
+        """Force-refresh Gemini after normal retries are exhausted."""
+        try:
+            page = self._ensure_page()
+            _refresh_gemini_page(page)
         except Exception:
             pass
 
@@ -717,39 +921,86 @@ def _place_prompt_in_chatbox(page, text: str) -> str:
     return last
 
 def _click_send_button(page) -> bool:
+    """Click only a real enabled Gemini Send button.
+
+    Avoid the stuck disabled Stop-response box. The older fallback clicked any
+    button inside send-button-container, which could falsely report success when
+    Gemini showed an unclickable disabled Stop button.
+    """
+    try:
+        clicked = bool(page.evaluate(
+            """() => {
+                const isVisible = (el) => {
+                    if (!el || el.hidden) return false;
+                    const rect = el.getBoundingClientRect();
+                    const style = window.getComputedStyle(el);
+                    return rect.width > 0
+                        && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden'
+                        && style.opacity !== '0';
+                };
+                const isDisabled = (el) => {
+                    if (!el) return true;
+                    return el.disabled
+                        || el.hasAttribute('disabled')
+                        || el.getAttribute('aria-disabled') === 'true'
+                        || !!el.closest('[aria-disabled="true"], .disabled');
+                };
+                const hasStopIcon = (root) => {
+                    if (!root) return false;
+                    const icon = root.querySelector('mat-icon[fonticon="stop"], mat-icon[data-mat-icon-name="stop"]');
+                    return !!icon && isVisible(icon);
+                };
+                const hasSendIcon = (root) => !!root?.querySelector(
+                    'mat-icon[fonticon="send"], mat-icon[data-mat-icon-name="send"], mat-icon[fonticon="arrow_upward"], mat-icon[data-mat-icon-name="arrow_upward"]'
+                );
+                const looksLikeSend = (btn) => {
+                    const root = btn.closest('div[data-test-id="send-button-container"], gem-icon-button.send-button') || btn;
+                    const label = (btn.getAttribute('aria-label') || root.getAttribute('aria-label') || '').toLowerCase();
+                    const title = (btn.getAttribute('title') || root.getAttribute('title') || '').toLowerCase();
+                    const classes = `${btn.className || ''} ${root.className || ''}`.toLowerCase();
+                    if (label.includes('stop') || label.includes('dừng') || title.includes('stop') || classes.split(/\\s+/).includes('stop') || hasStopIcon(root)) return false;
+                    return label.includes('send')
+                        || label.includes('gửi')
+                        || title.includes('send')
+                        || hasSendIcon(root)
+                        || root.matches('div[data-test-id="send-button-container"]');
+                };
+                const candidates = Array.from(document.querySelectorAll(
+                    'div[data-test-id="send-button-container"] button, gem-icon-button.send-button button, button[aria-label="Send message"], button[aria-label*="Send"], button[aria-label*="Gửi"]'
+                ));
+                const btn = candidates.find((candidate) => {
+                    const root = candidate.closest('div[data-test-id="send-button-container"], gem-icon-button.send-button') || candidate;
+                    return isVisible(candidate) && isVisible(root) && !isDisabled(candidate) && !isDisabled(root) && looksLikeSend(candidate);
+                });
+                if (!btn) return false;
+                btn.click();
+                return true;
+            }"""
+        ))
+        if clicked:
+            return True
+    except Exception:
+        pass
+
     for selector in (
-        'div[data-test-id="send-button-container"] button[aria-label="Send message"]',
-        'gem-icon-button.send-button button[aria-label="Send message"]',
+        'div[data-test-id="send-button-container"]:not(.disabled) button[aria-label="Send message"]',
+        'gem-icon-button.send-button:not(.stop):not([aria-disabled="true"]) button[aria-label="Send message"]',
         'button[aria-label="Send message"]',
-        'div[data-test-id="send-button-container"] button',
     ):
         try:
             button = page.locator(selector).last
-            button.wait_for(state="visible", timeout=8_000)
-            button.click(timeout=8_000, force=True)
+            button.wait_for(state="visible", timeout=3_000)
+            label = (button.get_attribute("aria-label", timeout=1_000) or "").lower()
+            if "stop" in label or "dừng" in label:
+                continue
+            button.click(timeout=3_000, force=True)
             return True
         except Exception:
             pass
 
-    # Fallback: click by DOM if Playwright visibility check fails.
-    try:
-        return bool(page.evaluate(
-            """() => {
-                const selectors = [
-                    'div[data-test-id="send-button-container"] button[aria-label="Send message"]',
-                    'gem-icon-button.send-button button[aria-label="Send message"]',
-                    'button[aria-label="Send message"]',
-                    'div[data-test-id="send-button-container"] button'
-                ];
-                for (const sel of selectors) {
-                    const btn = document.querySelector(sel);
-                    if (btn) { btn.click(); return true; }
-                }
-                return false;
-            }"""
-        ))
-    except Exception:
-        return False
+    return False
 
 
 def send_to_gemini(page, text: str, max_wait_seconds: int = 180, stop_requested: StopFn | None = None) -> str:
@@ -758,6 +1009,8 @@ def send_to_gemini(page, text: str, max_wait_seconds: int = 180, stop_requested:
         page.bring_to_front()
     except Exception:
         pass
+    if _refresh_page_for_unclickable_stop_box(page):
+        raise RuntimeError("Gemini UI was stuck on a disabled Stop response box before send. Refreshed page; batch will retry.")
     placed = _place_prompt_in_chatbox(page, text)
     check_stop(stop_requested)
     if not _prompt_looks_placed(text, placed):
@@ -770,6 +1023,8 @@ def send_to_gemini(page, text: str, max_wait_seconds: int = 180, stop_requested:
     clicked = _click_send_button(page)
     check_stop(stop_requested)
     if not clicked:
+        if _refresh_page_for_unclickable_stop_box(page):
+            raise RuntimeError("Gemini showed a disabled Stop response box instead of an enabled Send button. Refreshed page; batch will retry.")
         # Last fallback only. Current Gemini UI needs the Send button click.
         page.keyboard.press("Control+Enter")
         sleep_with_stop(0.5, stop_requested)
@@ -784,6 +1039,8 @@ def send_to_gemini(page, text: str, max_wait_seconds: int = 180, stop_requested:
             break
         sleep_with_stop(0.5, stop_requested)
     if _count_responses(page) <= response_index:
+        if _refresh_page_for_unclickable_stop_box(page):
+            raise RuntimeError("Gemini got stuck on a disabled Stop response box after submit. Refreshed page; batch will retry.")
         _click_stop_button(page)
         raise RuntimeError("Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.")
 
@@ -843,12 +1100,21 @@ def _rename_folder_if_needed(folder: Path, segment_id: str, label: str) -> tuple
     return new_folder, ""
 
 
+def _folder_already_has_label(folder: Path, segment_id: str) -> bool:
+    """Return True when a segment folder already has a human label.
+
+    Example: folder "001 Classroom Intro" with segment_id "001".
+    In that case we skip the Gemini summary request entirely.
+    """
+    return folder.name != segment_id and folder.name.startswith(segment_id + " ")
+
+
 def translate_po_file_via_web(
     session: GeminiWebSession,
     po_path: str | Path,
     max_lines_per_batch: int = 600,
     wait_between_batches: float = 8.0,
-    allow_invalid: bool = False,
+    allow_invalid: AllowInvalid = False,
     rename_folder: bool = True,
     response_timeout_seconds: int = 180,
     max_entries_per_batch: int = DEFAULT_MAX_ENTRIES_PER_BATCH,
@@ -883,7 +1149,8 @@ def translate_po_file_via_web(
         max_lines_per_batch=max_lines_per_batch,
         max_entries_per_batch=max_entries_per_batch,
     )
-    all_translations: dict[str, str] = {}
+    all_valid_translations: dict[str, str] = {}
+    all_invalid_translations: dict[str, str] = {}
 
     say(f"File: {po_path.name} | missing {missing_before}/{total_entries}")
     for idx, batch in enumerate(batches, start=1):
@@ -895,17 +1162,25 @@ def translate_po_file_via_web(
         parsed_by_ctx: dict[str, str] = {}
         translations_by_uid: dict[str, str] = {}
         last_exc: Exception | None = None
-        attempts = max(1, int(retry_count) + 1)
+        normal_attempts = max(1, int(retry_count) + 1)
+        # After all normal retries fail, force-refresh Gemini and try the same
+        # batch one final time. This recovers from hidden/stale Gemini UI states
+        # that are not fixed by Escape/Stop/clear-composer recovery.
+        total_attempts = normal_attempts + 1
 
         with debug_path.open("a", encoding="utf-8") as f:
             f.write(f"==================== BATCH {idx} REQUEST ====================\n")
             f.write(entries_text)
             f.write("\n")
 
-        for attempt in range(1, attempts + 1):
+        for attempt in range(1, total_attempts + 1):
             check_stop(stop_requested)
-            if attempt > 1:
-                say(f"  Retry batch {idx}/{len(batches)} attempt {attempt}/{attempts}")
+            if attempt > normal_attempts:
+                say(f"  Retries failed for batch {idx}/{len(batches)}. Refreshing Gemini page and trying once more")
+                session.refresh_page()
+                sleep_with_stop(3, stop_requested)
+            elif attempt > 1:
+                say(f"  Retry batch {idx}/{len(batches)} attempt {attempt}/{normal_attempts}")
                 session.recover_after_error()
                 sleep_with_stop(2, stop_requested)
             try:
@@ -932,11 +1207,19 @@ def translate_po_file_via_web(
                     f.write(str(exc))
                     f.write("\n\n")
                 session.recover_after_error()
-                if attempt >= attempts:
-                    raise RuntimeError(f"Batch {idx}/{len(batches)} failed after {attempts} attempt(s): {exc}") from exc
+                if attempt >= total_attempts:
+                    session.refresh_page()
+                    raise RuntimeError(
+                        f"Batch {idx}/{len(batches)} failed after {normal_attempts} normal attempt(s) "
+                        f"plus 1 refresh attempt: {exc}"
+                    ) from exc
 
         if not translations_by_uid and last_exc is not None:
-            raise RuntimeError(f"Batch {idx}/{len(batches)} failed after {attempts} attempt(s): {last_exc}")
+            session.refresh_page()
+            raise RuntimeError(
+                f"Batch {idx}/{len(batches)} failed after {normal_attempts} normal attempt(s) "
+                f"plus 1 refresh attempt: {last_exc}"
+            )
 
         with debug_path.open("a", encoding="utf-8") as f:
             f.write(f"==================== BATCH {idx} RESPONSE ====================\n")
@@ -946,11 +1229,19 @@ def translate_po_file_via_web(
 
         errors = validate_translations(batch, translations_by_uid)
         invalid_uids = {err.uid for err in errors if err.reason != "missing translation"}
+        allow_invalid_now = _allow_invalid_enabled(allow_invalid)
         accepted = 0
         for uid, translation in translations_by_uid.items():
-            if allow_invalid or uid not in invalid_uids:
-                all_translations[uid] = translation
+            if uid in invalid_uids:
+                all_invalid_translations[uid] = translation
+                if allow_invalid_now:
+                    accepted += 1
+            else:
+                all_valid_translations[uid] = translation
                 accepted += 1
+
+        if invalid_uids:
+            say(f"  Allow invalid now: {'ON' if allow_invalid_now else 'OFF'}")
 
         batch_result = WebBatchResult(
             batch_index=idx,
@@ -972,9 +1263,20 @@ def translate_po_file_via_web(
             sleep_with_stop(float(wait_between_batches), stop_requested)
 
     check_stop(stop_requested)
-    if all_translations:
+    allow_invalid_at_save = _allow_invalid_enabled(allow_invalid)
+    translations_to_save = dict(all_valid_translations)
+    if allow_invalid_at_save:
+        translations_to_save.update(all_invalid_translations)
+
+    if all_invalid_translations:
+        say(
+            f"Allow invalid at save: {'ON' if allow_invalid_at_save else 'OFF'} | "
+            f"invalid translations {'included' if allow_invalid_at_save else 'skipped'}: {len(all_invalid_translations)}"
+        )
+
+    if translations_to_save:
         fresh_po = load_po(po_path)
-        changed = patch_msgstr_by_uid(fresh_po, all_translations)
+        changed = patch_msgstr_by_uid(fresh_po, translations_to_save)
         if changed:
             save_po(fresh_po, po_path)
         result.translated = changed
@@ -983,33 +1285,42 @@ def translate_po_file_via_web(
         say("No translations accepted; PO file not changed")
 
     if rename_folder and result.translated > 0:
-        context_entries = source_entries[:6]
-        samples = "\n".join(f"- {entry.msgid}" for entry in context_entries)
-        summary_prompt = SUMMARY_PROMPT.format(samples=samples)
-        say("Requesting folder summary")
-        check_stop(stop_requested)
-        try:
-            summary_raw = session.send(summary_prompt, max_wait_seconds=response_timeout_seconds, stop_requested=stop_requested)
-        except Exception as exc:
-            session.recover_after_error()
-            result.folder_rename_skipped_reason = f"summary request failed: {exc}"
-            say(f"Folder rename skipped: summary request failed ({exc})")
-            return result
-        with debug_path.open("a", encoding="utf-8") as f:
-            f.write("==================== FOLDER SUMMARY ====================\n")
-            f.write(summary_raw)
-            f.write("\n\n")
-        label = _safe_folder_label(summary_raw)
         folder = po_path.parent
-        segment_id = folder.name.split()[0] if " " in folder.name else folder.name
-        new_folder, reason = _rename_folder_if_needed(folder, segment_id, label)
-        if new_folder:
-            result.folder_renamed_from = folder
-            result.folder_renamed_to = new_folder
-            say(f"Renamed folder: {folder.name} -> {new_folder.name}")
+        # Prefer the working PO stem as segment id. Fall back to the first folder token
+        # for older layouts where the PO/folder names may differ.
+        stem_segment_id = po_path.stem.strip()
+        folder_segment_id = folder.name.split()[0] if " " in folder.name else folder.name
+        segment_id = stem_segment_id if folder.name == stem_segment_id or folder.name.startswith(stem_segment_id + " ") else folder_segment_id
+
+        if _folder_already_has_label(folder, segment_id):
+            result.folder_rename_skipped_reason = "folder already has a label"
+            say("Folder rename skipped: folder already has a label")
         else:
-            result.folder_rename_skipped_reason = reason
-            say(f"Folder rename skipped: {reason}")
+            context_entries = source_entries[:6]
+            samples = "\n".join(f"- {entry.msgid}" for entry in context_entries)
+            summary_prompt = SUMMARY_PROMPT.format(samples=samples)
+            say("Requesting folder summary")
+            check_stop(stop_requested)
+            try:
+                summary_raw = session.send(summary_prompt, max_wait_seconds=response_timeout_seconds, stop_requested=stop_requested)
+            except Exception as exc:
+                session.recover_after_error()
+                result.folder_rename_skipped_reason = f"summary request failed: {exc}"
+                say(f"Folder rename skipped: summary request failed ({exc})")
+                return result
+            with debug_path.open("a", encoding="utf-8") as f:
+                f.write("==================== FOLDER SUMMARY ====================\n")
+                f.write(summary_raw)
+                f.write("\n\n")
+            label = _safe_folder_label(summary_raw)
+            new_folder, reason = _rename_folder_if_needed(folder, segment_id, label)
+            if new_folder:
+                result.folder_renamed_from = folder
+                result.folder_renamed_to = new_folder
+                say(f"Renamed folder: {folder.name} -> {new_folder.name}")
+            else:
+                result.folder_rename_skipped_reason = reason
+                say(f"Folder rename skipped: {reason}")
 
     return result
 
@@ -1020,7 +1331,7 @@ def run_gemini_web_path(
     max_lines_per_batch: int = 600,
     wait_between_batches: float = 8.0,
     cdp_url: str = DEFAULT_CDP_URL,
-    allow_invalid: bool = False,
+    allow_invalid: AllowInvalid = False,
     rename_duplicates: bool = True,
     create_missing_backups: bool = True,
     rename_folders: bool = True,

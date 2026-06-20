@@ -1,79 +1,132 @@
 --- Gemini Translation Raw Output for e03_108_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. そもそも、石丸君が
+#. 殺されたのは…
 msgctxt "0001 | KYOUKO KIRIGIRI"
 msgid "So, regarding Taka's death..."
-msgstr "Vậy, liên quan đến cái chết của Ishimaru..."
+msgstr ""
 
+#. 山田君より先だったのかしら？
 msgctxt "0002 | KYOUKO KIRIGIRI"
 msgid "I wonder if he died before Hifumi..."
-msgstr "Tôi tự hỏi liệu cậu ta có chết trước Hifumi không..."
+msgstr ""
 
+#. それとも後だったのかしら？
 msgctxt "0003 | KYOUKO KIRIGIRI"
 msgid "Or perhaps it was after?"
-msgstr "Hay có lẽ là sau đó?"
+msgstr ""
 
+#. ２人の⟦CLT 9⟧殺された順番⟦CLT⟧
+#. なんて決まってるよ！
 msgctxt "0004 | AOI ASAHINA"
 msgid ""
-"We already know <CLT 9>what order<CLT>\n"
+"We already know ⟦CLT 9⟧what order⟦CLT⟧\n"
 "they were killed in!"
 msgstr ""
-"Tụi mình đã biết rõ họ bị giết theo <CLT 9>thứ tự nào<CLT>\n"
-"rồi mà!"
 
+#. 石丸の方が後だよ！
 msgctxt "0005 | AOI ASAHINA"
 msgid "Taka came last!"
-msgstr "Ishimaru bị giết sau cùng đó!"
+msgstr ""
 
+#. なぜ、そう思うのだ？
 msgctxt "0006 | SAKURA OOGAMI"
 msgid "What makes you say that?"
-msgstr "Điều gì khiến em nói như vậy chứ?"
+msgstr ""
 
+#. ⟦CLT 9⟧ジャスティスハンマーの順番⟦CLT⟧だよ。
 msgctxt "0007 | AOI ASAHINA"
 msgid ""
-"Because of <CLT 9>the numbering<CLT>\n"
+"Because of ⟦CLT 9⟧the numbering⟦CLT⟧\n"
 "of the Justice Hammers!"
 msgstr ""
-"Chính là vì <CLT 9>đánh số thứ tự<CLT>\n"
-"trên các cây búa Justice Hammer đó!"
 
+#. 確か、山田が３号の
+#. ハンマーで殺され…
 msgctxt "0008 | BYAKUYA TOGAMI"
 msgid ""
 "It's true that Hifumi was killed\n"
 "with Justice Hammer 3..."
 msgstr ""
-"Đúng là Hifumi đã bị sát hại\n"
-"bằng cây búa Justice Hammer số 3..."
 
+#. 石丸が４号のハンマーで
+#. 殺されたんだったな。
 msgctxt "0009 | BYAKUYA TOGAMI"
 msgid ""
 "...while Taka's death came from\n"
 "a swing of Justice Hammer 4."
 msgstr ""
-"...trong khi cái chết của Ishimaru đến từ\n"
-"một cú vung của cây búa Justice Hammer số 4."
 
+#. ほら！　明らかに
+#. 石丸の方が後じゃん！
 msgctxt "0010 | AOI ASAHINA"
 msgid "See? So it's obvious Taka came after!"
-msgstr "Thấy chưa? Nên rõ ràng là Ishimaru bị giết sau rồi!"
+msgstr ""
+
+#. ⟦CLT 26⟧何か関係あんのか？⟦CLT⟧
+msgctxt "0011 | AOI ASAHINA"
+msgid "⟦CLT 26⟧Are they really related?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧どうしてですか…？⟦CLT⟧
+msgctxt "0012 | AOI ASAHINA"
+msgid "⟦CLT 26⟧What's it mean...?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧ハンマーの順番？⟦CLT⟧
+msgctxt "0013 | AOI ASAHINA"
+msgid "⟦CLT 26⟧The numbering of the hammers...?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧そういえば…⟦CLT⟧
+msgctxt "0014 | AOI ASAHINA"
+msgid "⟦CLT 26⟧Now that you mention it...⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgstr "Về cái chết của Ishimaru..."
+
+msgctxt "0002 | KYOUKO KIRIGIRI"
+msgstr "Tớ tự hỏi không biết cậu ấy chết trước Yamada..."
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgstr "Hay là chết sau nhỉ?"
+
+msgctxt "0004 | AOI ASAHINA"
+msgstr "⟦CLT 9⟧Thứ tự bị sát hại⟦CLT⟧ của hai người bọn họ rành rành ra đó rồi mà!"
+
+msgctxt "0005 | AOI ASAHINA"
+msgstr "Ishimaru là người chết sau!"
+
+msgctxt "0006 | SAKURA OOGAMI"
+msgstr "Tại sao chủ lại nghĩ như vậy?"
+
+msgctxt "0007 | AOI ASAHINA"
+msgstr "Là nhờ vào ⟦CLT 9⟧thứ tự của búa Justice Hammer⟦CLT⟧ đó!"
+
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgstr "Đúng là Yamada đã bị sát hại bằng cây búa số 3..."
+
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgstr "...Trong khi cái chết của Ishimaru là do một cú vung từ cây búa số 4."
+
+msgctxt "0010 | AOI ASAHINA"
+msgstr "Đó thấy chưa! Rõ ràng là Ishimaru chết sau còn gì!"
 
 msgctxt "0011 | AOI ASAHINA"
-msgid "<CLT 26>Are they really related?<CLT>"
-msgstr "<CLT 26>Chúng thực sự có liên quan sao?<CLT>"
+msgstr "⟦CLT 26⟧Chuyện đó thì có liên quan gì không?⟦CLT⟧"
 
 msgctxt "0012 | AOI ASAHINA"
-msgid "<CLT 26>What's it mean...?<CLT>"
-msgstr "<CLT 26>Chuyện đó nghĩa là sao nhỉ...?<CLT>"
+msgstr "⟦CLT 26⟧Như vậy nghĩa là sao cơ chứ...?⟦CLT⟧"
 
 msgctxt "0013 | AOI ASAHINA"
-msgid "<CLT 26>The numbering of the hammers...?<CLT>"
-msgstr "<CLT 26>Đánh số trên các cây búa sao...?<CLT>"
+msgstr "⟦CLT 26⟧Thứ tự của mấy cây búa sao...?⟦CLT⟧"
 
 msgctxt "0014 | AOI ASAHINA"
-msgid "<CLT 26>Now that you mention it...<CLT>"
-msgstr "<CLT 26>Nghe nhắc mới nhớ...<CLT>"
-
+msgstr "⟦CLT 26⟧Nhắc mới nhớ...⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Murder Order Debate
+Murder Order Discussion
 

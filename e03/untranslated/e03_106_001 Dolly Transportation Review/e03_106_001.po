@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. 犯人は<CLT 9>物理準備室<CLT>で
 #. 石丸を殺し…
@@ -19,15 +18,17 @@ msgid ""
 "As we know, Taka was\n"
 "killed in the <CLT 9>equipment room<CLT>."
 msgstr ""
-"Như chúng ta đã biết, Ishimaru đã bị sát hại ở\n"
-"<CLT 9>phòng thiết bị vật lý<CLT>."
+"Như chúng ta đã biết, Ishimaru đã bị sát hại tại\n"
+"<CLT 9>phòng chuẩn bị vật lý<CLT>..."
 
 #. その死体を運んだのだったな？
 msgctxt "0002 | BYAKUYA TOGAMI"
 msgid ""
 "And from there, the body was\n"
 "moved to the repository, correct?"
-msgstr "Và từ đó, cái xác đã được di chuyển đến kho lưu trữ, đúng chứ?"
+msgstr ""
+"Và từ đó, thi thể đã được vận chuyển đến kho chứa đồ mỹ\n"
+"thuật, đúng chứ?"
 
 #. 死体を<CLT 9>ビニールシート<CLT>で
 #. 包んで…
@@ -35,7 +36,7 @@ msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "Yeah, the culprit wrapped\n"
 "the body in the <CLT 9>tarp<CLT>..."
-msgstr "Phải đó, hung thủ đã bọc thi thể lại trong tấm <CLT 9>bạt ni lông<CLT>..."
+msgstr "Đúng vậy, hung thủ đã bọc xác cậu ấy trong <CLT 9>tấm bạt ni-lông<CLT>..."
 
 #. それを<CLT 9>台車に乗せて<CLT>
 #. 運んだんでしょ？
@@ -43,7 +44,7 @@ msgctxt "0004 | AOI ASAHINA"
 msgid ""
 "...then <CLT 9>loaded it onto the dolly<CLT>\n"
 "and wheeled it off, right?"
-msgstr "...rồi <CLT 9>đặt nó lên xe đẩy<CLT> và đẩy đi mất tiêu, đúng không?"
+msgstr "...rồi <CLT 9>đặt nó lên xe đẩy<CLT> để vận chuyển đi đúng không?"
 
 #. あの台車は
 #. <CLT 9>取っ手がなかった<CLT>はずだ…
@@ -51,38 +52,38 @@ msgctxt "0005 | BYAKUYA TOGAMI"
 msgid ""
 "Now, keep in mind that\n"
 "the dolly <CLT 9>doesn't have a handle<CLT>."
-msgstr "Giờ thì hãy nhớ rằng chiếc xe đẩy đó <CLT 9>không hề có tay cầm<CLT>."
+msgstr "Hãy nhớ rằng, chiếc xe đẩy đó <CLT 9>vốn không có tay cầm<CLT>."
 
 #. でも、取っ手なんかなくたって…
 msgctxt "0006 | AOI ASAHINA"
 msgid "Well, yeah, but even without a handle..."
-msgstr "Thì đúng là vậy, nhưng dẫu không có tay cầm..."
+msgstr "Thì đúng là vậy, nhưng dù không có tay cầm đi nữa..."
 
 #. <CLT 9>腰を屈めた体勢<CLT>になれば…
 msgctxt "0007 | AOI ASAHINA"
 msgid "...all you'd have to do is <CLT 9>bend over<CLT>."
-msgstr "...tất cả những gì cần làm chỉ là <CLT 9>cúi khòm người xuống<CLT>."
+msgstr "...chỉ cần <CLT 9>cúi khom lưng xuống<CLT>..."
 
 #. 台車は問題なく
 #. 押せたはずだよ！
 msgctxt "0008 | AOI ASAHINA"
 msgid "Then you could push the dolly no problem!"
-msgstr "Thế là có thể đẩy chiếc xe đi mà chẳng gặp vấn đề gì rồi!"
+msgstr "Là ông vẫn có thể đẩy xe đi mà chẳng gặp vấn đề gì rồi!"
 
 #. そうやって、運んだ先が…
 msgctxt "0009 | TOUKO FUKAWA"
 msgid "So the killer just crouched down..."
-msgstr "Nên tên sát nhân chỉ cần cúi người xuống..."
+msgstr "Thế là hung thủ cứ cúi người xuống như vậy..."
 
 #. <CLT 9>美術倉庫<CLT>だったのね！
 msgctxt "0010 | TOUKO FUKAWA"
 msgid "...and carted the body off to the <CLT 9>repository<CLT>!"
-msgstr "...và đẩy cái xác đi đến chỗ <CLT 9>kho lưu trữ<CLT>!"
+msgstr "...rồi đẩy cái xác thẳng tới <CLT 9>kho chứa đồ mỹ thuật<CLT> luôn hả!"
 
 #. これで、わかっただろう…
 msgctxt "0011 | BYAKUYA TOGAMI"
 msgid "If you accept everything we just said..."
-msgstr "Nếu các người chấp nhận tất cả những điều vừa rồi..."
+msgstr "Đến đây thì chắc các người hiểu rồi chứ..."
 
 #. 例の不審者が事件の犯人では
 #. ないという事がな。
@@ -92,12 +93,12 @@ msgid ""
 "whoever was in the suit couldn't\n"
 "possibly be the culprit."
 msgstr ""
-"...thì hẳn các người phải nhận ra rằng kẻ ở bên trong bộ\n"
-"đồ đó không đời nào có thể là thủ phạm được."
+"...Rằng gã khả nghi bên trong bộ đồ kia không thể nào là\n"
+"hung thủ của vụ án được."
 
 #. いや…さっぱりだべ…
 msgctxt "0013 | YASUHIRO HAGAKURE"
 msgid ""
 "Uh...sorry,\n"
 "I don't think I realize anything..."
-msgstr "Ờ... xin lỗi nha, tớ không nghĩ là tớ nhận ra được gì đâu..."
+msgstr "Không... tớ hoàn toàn không hiểu gì hết á..."

@@ -1,117 +1,203 @@
 --- Gemini Translation Raw Output for e03_255_005.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 苗木、ここにいたのか。
+#. 捜したぞ…
 msgctxt "0001 | BYAKUYA TOGAMI"
 msgid "So this is where you were. I've been looking for you."
-msgstr "Hóa ra tôi thấy cậu ở chỗ này à. Tôi đã mất công đi tìm cậu đấy."
+msgstr ""
 
+#. 捜した…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "You have...?"
-msgstr "Tìm tớ... sao...?"
+msgstr ""
 
+#. さっきの礼をしてやろうと思ってな…
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid "I wanted to thank you for what you did."
-msgstr "Tôi chỉ muốn đến cảm ơn vì những gì cậu đã làm lúc nãy mà thôi."
+msgstr ""
 
+#. 不本意ではあるが、このゲームが面白くなったのは、
+#. お前のお陰だからな。
 msgctxt "0004 | BYAKUYA TOGAMI"
 msgid ""
 "Not that you meant to, but you ended up making this\n"
 "little game of ours very interesting indeed."
 msgstr ""
-"Dẫu không phải chủ ý của cậu, nhưng cậu lại vô tình khiến cho trò chơi nhỏ này của chúng ta trở nên vô cùng thú vị đấy."
 
+#. え、えーっと…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "U-Umm..."
-msgstr "À-Ừm..."
+msgstr ""
 
+#. 葉隠の部屋に行ってみろ。
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "You should go to Hiro's room."
-msgstr "Cậu nên đến phòng của Yasuhiro đi."
+msgstr ""
 
+#. それと、こいつも渡しておこう。
 msgctxt "0007 | BYAKUYA TOGAMI"
 msgid "Oh, and let me give you this."
-msgstr "Ồ, và để tôi đưa cho cậu thứ này."
+msgstr ""
 
+#. ⟦CLT 23⟧『食堂に集合せよ！』
+#. ⟦CLT⟧
 msgctxt "0008 | NARRATION"
 msgid ""
-"<CLT 23>\"Meet in the dining hall!\"\n"
-"<CLT>"
+"⟦CLT 23⟧\"Meet in the dining hall!\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"Tập hợp tại nhà ăn!\"\n"
-"<CLT>"
 
+#. これって、葉隠クンが
+#. ボク達を集める時に使ったメモ書きだよね…？
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
 "This is the note Hiro wrote to get us all to meet up,\n"
 "right?"
-msgstr "Đây chẳng phải mẩu giấy ghi chú mà Yasuhiro đã viết để gọi mọi người đến tập hợp sao...?"
+msgstr ""
 
+#. よく覚えていたな…
 msgctxt "0010 | BYAKUYA TOGAMI"
 msgid "You remember well."
-msgstr "Cậu nhớ tốt đấy."
+msgstr ""
 
+#. かなり達筆だったから…
+#. 印象に残ってたんだよ。
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
 "Well, the penmanship was pretty remarkable, so it left\n"
 "an impression..."
-msgstr "À thì, nét chữ của cậu ấy khá là đặc biệt nên nó để lại ấn tượng mạnh cho tớ..."
+msgstr ""
 
+#. だが、これでハッキリしただろう。
 msgctxt "0012 | BYAKUYA TOGAMI"
 msgid "Anyway, this makes it clear, right?"
-msgstr "Dù sao thì, điều này đã quá rõ ràng rồi đúng chứ?"
+msgstr ""
 
+#. …これは罠だ。
 msgctxt "0013 | BYAKUYA TOGAMI"
 msgid "This is a trap."
-msgstr "Đây là một cái bẫy."
+msgstr ""
 
+#. どれが…？
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "What is...?"
-msgstr "Cái gì là bẫy cơ...?"
+msgstr ""
 
+#. フフ…ますます面白くなってきたぞ…
 msgctxt "0015 | BYAKUYA TOGAMI"
 msgid "Hmhm. Things grow ever more exciting."
-msgstr "Hửm hửm. Mọi chuyện ngày càng trở nên kích thích rồi đây."
+msgstr ""
 
+#. あの…どういう意味…？
 msgctxt "0016 | MAKOTO NAEGI"
 msgid "Um...what are you talking about?"
-msgstr "Cậu... đang nói về chuyện gì thế?"
+msgstr ""
 
+#. もう、借りは返したんだ。
+#. これ以上は、話す義務はない。
 msgctxt "0017 | BYAKUYA TOGAMI"
 msgid ""
 "I've already repaid my debt. I don't owe you any more\n"
 "explanation."
-msgstr "Tôi đã trả xong món nợ sòng phẳng rồi. Tôi không có nghĩa vụ phải giải thích thêm điều gì với cậu nữa đâu."
+msgstr ""
 
+#. じゃあな…
 msgctxt "0018 | BYAKUYA TOGAMI"
 msgid "Goodbye..."
-msgstr "Chào nhé..."
+msgstr ""
 
+#. ⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧葉隠直筆のメッセージ⟦CLT⟧⟦CLT 23⟧を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. ⟦CLT⟧
 msgctxt "0019 | NARRATION"
 msgid ""
-"<CLT 23>\"<CLT><CLT 3>Yasuhiro's Message<CLT><CLT 23>\" has been added to the Truth\n"
+"⟦CLT 23⟧\"⟦CLT⟧⟦CLT 3⟧Yasuhiro's Message⟦CLT⟧⟦CLT 23⟧\" has been added to the Truth\n"
 "Bullets section of your handbook.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23> <CLT><CLT 3>Thông điệp của Yasuhiro<CLT><CLT 23> đã được cập nhật vào phần Đạn Hy Vọng trong sổ học sinh của bạn.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧えっと…葉隠クンの部屋に行ってみろって
+#. 言ってたけど…
+#. ⟦CLT⟧
 msgctxt "0020 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Um...so he said to go to Hiro's room, but...\n"
-"<CLT>"
+"⟦CLT 4⟧Um...so he said to go to Hiro's room, but...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Ừm... Cậu ấy bảo mình thử đến phòng của Yasuhiro xem sao, thế nhưng...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧そこに…何かあるのか…？
+#. ⟦CLT⟧
 msgctxt "0021 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>...what's waiting for me there?\n"
-"<CLT>"
+"⟦CLT 4⟧...what's waiting for me there?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>...liệu có thứ gì đang chờ đợi mình ở nơi đó đây?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgstr "Naegi, cậu đây rồi. Tôi đã tìm cậu đấy..."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Cậu tìm tôi…?"
+
+msgctxt "0003 | BYAKUYA TOGAMI"
+msgstr "Tôi muốn đền đáp cậu về chuyện vừa rồi..."
+
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgstr "Dù không phải ý định của cậu, nhưng nhờ cậu mà trò chơi nhỏ này trở nên rất thú vị đấy."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Ừ, ừm…"
+
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgstr "Hãy thử đến phòng của Hagakure xem."
+
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgstr "À, và hãy cầm lấy cái này đi."
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧“Tập trung tại nhà ăn!”⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "Đây chẳng phải là mảnh giấy mà Hagakure đã dùng để tập hợp mọi người lại sao…?"
+
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgstr "Cậu nhớ kỹ đấy..."
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "Vì nét chữ của cậu ấy khá là… ấn tượng nên tôi vẫn nhớ thôi."
+
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgstr "Nhưng giờ thì mọi chuyện đã rõ ràng rồi, đúng không?"
+
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgstr "…Đây là một cái bẫy."
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "Cái gì… cơ?"
+
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgstr "Hừ hừ… Mọi chuyện ngày càng trở nên thú vị hơn rồi đấy…"
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "À… ý cậu là sao…?"
+
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgstr "Ta đã trả nợ xong rồi. Ta không có nghĩa vụ phải giải thích thêm với cậu nữa."
+
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgstr "Đi đây…"
+
+msgctxt "0019 | NARRATION"
+msgstr "⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧Thông điệp viết tay của Hagakure⟦CLT⟧⟦CLT 23⟧ đã được ghi lại vào sổ học sinh. Bạn có thể kiểm tra trong menu Ngôn Đạn.⟦CLT⟧"
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ừm… cậu ấy bảo mình đi đến phòng của Hagakure… nhưng…⟦CLT⟧"
+
+msgctxt "0021 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ở đó… có thứ gì sao…?⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Byakuya Room Clue
+Togami Hiro Hint
 

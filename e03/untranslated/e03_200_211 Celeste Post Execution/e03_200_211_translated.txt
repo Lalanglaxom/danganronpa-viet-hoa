@@ -1,15 +1,492 @@
 --- Gemini Translation Raw Output for e03_200_211.po ---
 
 ==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧終わった…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's over...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧３度目の処刑が終わった…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The third execution...is over.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧セレスさんの処刑が終わった…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Celeste's death is over.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧仲間を殺したセレスさんに、
+#. 同情なんて出来ないけど…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Celeste killed my friends, so I can't pity her. But...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それでも、彼女もまた仲間には違いなかった…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I also can't deny that, at one point, I considered\n"
+"*her* a friend, too.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それを、あいつはこんなにも簡単に…ッ！
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧And for him to just come along and—!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いやはや困ったもんだねぇ…
+msgctxt "0007 | MONOKUMA"
+msgid "Isn't it just awful?"
+msgstr ""
+
+#. 今回も、外の世界との繋がりを絶てなかったせいで、
+#. またまた殺人が起きちゃったよ…
+msgctxt "0008 | MONOKUMA"
+msgid ""
+"Someone couldn't cut free of their regrets from the\n"
+"outside world, and so more people had to die..."
+msgstr ""
+
+#. もっと命を大事にしなさい！！　若いんだからさッ！！
+msgctxt "0009 | MONOKUMA"
+msgid ""
+"You guys are still young! You need to place more value\n"
+"on your lives!"
+msgstr ""
+
+#. やれやれ…オマエラが次世代を担う⟦CLT 3⟧“希望”⟦CLT⟧になるのは
+#. いつの事になるんだろうねぇ？
+msgctxt "0010 | MONOKUMA"
+msgid ""
+"Jeez... And here I thought you guys were gonna pass\n"
+"the torch of ⟦CLT 3⟧hope⟦CLT⟧ to the next generation!"
+msgstr ""
+
+#. な、何が希望だって！！
+#. そんなん辞退するから、ここから出してくれって！！
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid ""
+"Wh-What do I care about hope!? I'll throw it in the\n"
+"trash if you just let me out of here!"
+msgstr ""
+
+#. 望む望まないに関わらず、
+#. オマエラは希望の体現者…
+msgctxt "0012 | MONOKUMA"
+msgid ""
+"You're all the embodiment of hope, whether you like it\n"
+"or not."
+msgstr ""
+
+#. そんなオマエラを絶望に叩き落とすのが、
+#. マイ宿命！
+msgctxt "0013 | MONOKUMA"
+msgid "And it's my destiny to knock you down one by one!"
+msgstr ""
+
+#. 悲しいけど、これって避けられぬ現実なのよね。
+msgctxt "0014 | MONOKUMA"
+msgid ""
+"It's sad, yes it is. But that reality just can't be\n"
+"avoided."
+msgstr ""
+
+#. か、勝手な事ばっかり言うな…
+msgctxt "0015 | MAKOTO NAEGI"
+msgid "Don't talk like you're not responsible..."
+msgstr ""
+
+#. いつまで、ボクらをこんな目に遭わせるつもりだ！
+#. 一体、何が目的なんだよ！
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"How long are you gonna make us keep going through\n"
+"this!? What do you want from us!?"
+msgstr ""
+
+#. 聞き飽きたって！
+#. そういう質問、もうやめにしない？
+msgctxt "0017 | MONOKUMA"
+msgid ""
+"God, I'm so sick of people asking me that! Give it a\n"
+"rest already!"
+msgstr ""
+
+#. そんな事よりさ…
+msgctxt "0018 | MONOKUMA"
+msgid "So anyway..."
+msgstr ""
+
+#. 霧切さん、セレスさんから鍵みたいのを
+#. 受け取ってなかった？
+msgctxt "0019 | MONOKUMA"
+msgid ""
+"Kyoko, did I see you get some kind of key-type object\n"
+"from Celeste?"
+msgstr ""
+
+#. ねぇねぇ、それってなんの鍵？
+msgctxt "0020 | MONOKUMA"
+msgid "So uh...what's the deal with that?"
+msgstr ""
+
+#. あり？　どったの？
+msgctxt "0022 | MONOKUMA"
+msgid "Huh? What's the matter?"
+msgstr ""
+
+#. あなたの質問に答える前に…
+#. 私の質問に答えて。
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid "I'll answer your question, if you answer mine."
+msgstr ""
+
+#. あなたは…何をしたの…？
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid "What did you do?"
+msgstr ""
+
+#. あなたは、私の体に何をしたの？
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgid "What did you...do to me?"
+msgstr ""
+
+#. …えっ！？
+msgctxt "0026 | MONOKUMA"
+msgid "...What!?"
+msgstr ""
+
+#. 答えて…あなたは私の体に何をしたの？
+msgctxt "0027 | KYOUKO KIRIGIRI"
+msgid "Answer me. What did you do to my body?"
+msgstr ""
+
+#. あわわわ…ドキドキ…
+#. な、何をしたって…ど、どういう意味さ…！
+msgctxt "0028 | MONOKUMA"
+msgid ""
+"Uwaaah! Oh man, oh jeez... Oh man, oh jeez! What do\n"
+"you mean, what did I...do!?"
+msgstr ""
+
+#. ボ、ボクは知らんよぉ…
+msgctxt "0029 | MONOKUMA"
+msgid "I-I have no idea...!"
+msgstr ""
+
+#. なーんも…知らんよぉ……
+msgctxt "0030 | MONOKUMA"
+msgid "I don't know anything about it...!"
+msgstr ""
+
+#. ⟦CLT 4⟧え、えーっと…
+#. ⟦CLT⟧
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧U-Um...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧な、なんだ…？　今の会話って…？
+#. ⟦CLT⟧
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What was that just now...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧黒幕が霧切さんの体に何かしたって…
+#. ⟦CLT⟧
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The mastermind did something to Kyoko's body...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それって…どういう意味だ…？
+#. ⟦CLT⟧
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What does that mean...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. なんだか…バツが悪くなってきたから、
+#. そろそろ退散しよっかな…
+msgctxt "0036 | MONOKUMA"
+msgid ""
+"Okay, things are getting kinda awkward. I think it's\n"
+"about time I got out of here..."
+msgstr ""
+
+#. じゃ、オマエラは引き続き、
+#. 学園生活を楽しんでくださいな。
+msgctxt "0037 | MONOKUMA"
+msgid ""
+"Meanwhile, you guys can go on enjoying your school\n"
+"life."
+msgstr ""
+
+#. 寂しくなったらいつでも呼んでよ。
+#. まぁ、行きませんけどね！
+msgctxt "0038 | MONOKUMA"
+msgid ""
+"If you get lonely, gimme a shout! Not that I'll do\n"
+"anything about it, of course!"
+msgstr ""
+
+#. うぷぷ…まったね～！！
+msgctxt "0039 | MONOKUMA"
+msgid "Puhuhu... See ya!"
+msgstr ""
+
+#. ⟦CLT 4⟧そして、モノクマは去っていった。
+#. 絶望に打ちひしがれるボクらを残して…
+#. ⟦CLT⟧
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Monokuma disappeared, leaving us all depressed and in\n"
+"despair...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧だけど…すべてが絶望という訳でもなかった…
+#. ⟦CLT⟧
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Although...it wasn't *all* despair.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ほんの小さな希望。それは…
+#. ⟦CLT⟧
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There was...one small hope.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Kết thúc rồi...⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lần hành quyết thứ ba đã kết thúc...⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lần hành quyết Celes đã kết thúc...⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vì Celes đã giết bạn bè của mình, tôi không thể thương hại cô ấy được... nhưng...⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dẫu vậy, tôi cũng không thể phủ nhận rằng, đã có lúc, tôi từng coi cô ấy là bạn...⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vậy mà, hắn lại có thể dễ dàng làm vậy...!!⟦CLT⟧"
+
+msgctxt "0007 | MONOKUMA"
+msgstr "Chà chà, thật là đáng thương quá đi mà..."
+
+msgctxt "0008 | MONOKUMA"
+msgstr "Lần này, vì không thể dứt bỏ được những hối tiếc từ thế giới bên ngoài, nên lại có thêm người phải chết rồi..."
+
+msgctxt "0009 | MONOKUMA"
+msgstr "Hãy biết trân trọng mạng sống hơn đi!! Các ngươi còn trẻ mà!!"
+
+msgctxt "0010 | MONOKUMA"
+msgstr "Chậc chậc... Ta cứ tưởng các ngươi sẽ là ⟦CLT 3⟧“Hy vọng”⟦CLT⟧ gánh vác thế hệ tương lai cơ đấy?"
+
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgstr "G-Gì cơ, hy vọng gì chứ!! Nếu cho tôi ra khỏi đây, tôi sẽ ném cái thứ đó vào sọt rác ngay lập tức!!"
+
+msgctxt "0012 | MONOKUMA"
+msgstr "Dù ngươi có muốn hay không, thì các ngươi vẫn là hiện thân của hy vọng..."
+
+msgctxt "0013 | MONOKUMA"
+msgstr "Và việc kéo các ngươi xuống hố tuyệt vọng chính là định mệnh của ta!"
+
+msgctxt "0014 | MONOKUMA"
+msgstr "Đáng buồn thật đấy, đúng là vậy. Nhưng cái thực tại đó thì không thể tránh khỏi đâu."
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "Đừng có nói như thể ngươi không có trách nhiệm gì chứ..."
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "Ngươi định bắt chúng tôi phải trải qua chuyện này đến bao giờ nữa! Rốt cuộc mục đích của ngươi là gì!"
+
+msgctxt "0017 | MONOKUMA"
+msgstr "Trời, ta nghe chán tai mấy câu hỏi đó rồi! Dừng lại giùm cái coi!"
+
+msgctxt "0018 | MONOKUMA"
+msgstr "Thôi bỏ qua đi..."
+
+msgctxt "0019 | MONOKUMA"
+msgstr "Kirigiri, không phải cô đã nhận được một vật gì đó giống chìa khóa từ Celes sao?"
+
+msgctxt "0020 | MONOKUMA"
+msgstr "Nè nè, cái đó là chìa khóa gì thế?"
+
+msgctxt "0022 | MONOKUMA"
+msgstr "Hả? Có chuyện gì vậy?"
+
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgstr "Trước khi trả lời câu hỏi của ngươi... hãy trả lời câu hỏi của tôi đã."
+
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgstr "Ngươi đã... làm cái gì vậy...?"
+
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgstr "Ngươi đã làm gì với cơ thể tôi?"
+
+msgctxt "0026 | MONOKUMA"
+msgstr "...Cái gì!?"
+
+msgctxt "0027 | KYOUKO KIRIGIRI"
+msgstr "Trả lời đi... Ngươi đã làm gì với cơ thể tôi?"
+
+msgctxt "0028 | MONOKUMA"
+msgstr "Uwaaah! Ôi trời, ôi chao... Ôi trời, ôi chao! Ngươi... ngươi nói làm gì là làm cái gì cơ...!"
+
+msgctxt "0029 | MONOKUMA"
+msgstr "T-Ta không biết gì hết á...!"
+
+msgctxt "0030 | MONOKUMA"
+msgstr "Ta... không biết gì cả đâu...!"
+
+msgctxt "0032 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧U-Ừm...⟦CLT⟧"
+
+msgctxt "0033 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧G-Gì vậy...? Cuộc đối thoại vừa rồi là sao...?⟦CLT⟧"
+
+msgctxt "0034 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Kẻ chủ mưu đã làm gì đó với cơ thể của Kirigiri...⟦CLT⟧"
+
+msgctxt "0035 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chuyện đó... nghĩa là sao...?⟦CLT⟧"
+
+msgctxt "0036 | MONOKUMA"
+msgstr "Được rồi, tình hình bắt đầu trở nên khó xử rồi đấy. Ta nghĩ đến lúc nên rút lui rồi..."
+
+msgctxt "0037 | MONOKUMA"
+msgstr "Trong lúc đó, các ngươi cứ tiếp tục tận hưởng cuộc sống học đường đi nhé."
+
+msgctxt "0038 | MONOKUMA"
+msgstr "Nếu thấy cô đơn thì cứ gọi ta. Dù sao thì ta cũng đâu có làm gì đâu!"
+
+msgctxt "0039 | MONOKUMA"
+msgstr "U pư pư... Hẹn gặp lại nhé~!!"
+
+msgctxt "0040 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Rồi, Monokuma bỏ đi. Để lại chúng tôi chìm đắm trong sự tuyệt vọng...⟦CLT⟧"
+
+msgctxt "0041 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng... không phải tất cả đều là tuyệt vọng...⟦CLT⟧"
+
+msgctxt "0042 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chỉ một tia hy vọng nhỏ bé. Đó là...⟦CLT⟧"
+
+==================== BATCH 2 REQUEST ====================
+#. ねぇ、霧切さん。
+#. モノクマも言ってたけど…
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "Hey, Kyoko. Monokuma already mentioned it, but..."
+msgstr ""
+
+#. さっき、セレスさんから受け取ってた鍵って？
+msgctxt "0044 | MAKOTO NAEGI"
+msgid "What's that key that Celeste gave you?"
+msgstr ""
+
+#. おそらく…
+msgctxt "0045 | KYOUKO KIRIGIRI"
+msgid "Most likely..."
+msgstr ""
+
+#. 脱衣所のロッカーの鍵…
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid "...it's the key to one of the dressing room lockers."
+msgstr ""
+
 #. え！？　じゃあ、もしかして…！
 msgctxt "0047 | AOI ASAHINA"
 msgid "What!? Then that means...!"
 msgstr ""
 
-==================== BATCH 1 RESPONSE ====================
+#. セレスが、そこに隠したんだろう。
+#. あれをな…
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgid "Celeste probably hid it in there."
+msgstr ""
+
+#. 灯台もと暗しだったという事か…
+#. さっそく、確認しに行くぞ。
+msgctxt "0049 | SAKURA OOGAMI"
+msgid ""
+"I suppose sometimes it's easiest to miss what's right\n"
+"beneath your nose. Well then, we'd better go check."
+msgstr ""
+
+#. えぇ…そうね…
+msgctxt "0050 | KYOUKO KIRIGIRI"
+msgid "Good idea."
+msgstr ""
+
+#. ⟦CLT 4⟧ボクらは学級裁判場を後にし、
+#. 脱衣所へと急いだ。
+#. ⟦CLT⟧
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧We left the courtroom and rushed to the dressing room.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 2 RESPONSE ====================
+msgctxt "0043 | MAKOTO NAEGI"
+msgstr "Này, Kirigiri. Monokuma cũng đã nhắc đến rồi, nhưng..."
+
+msgctxt "0044 | MAKOTO NAEGI"
+msgstr "Cái chìa khóa cậu nhận được từ Celes là gì thế?"
+
+msgctxt "0045 | KYOUKO KIRIGIRI"
+msgstr "Có lẽ là..."
+
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgstr "...chìa khóa của một trong những tủ đồ ở phòng thay đồ."
+
 msgctxt "0047 | AOI ASAHINA"
-msgstr "Cái gì!? Vậy thì, chẳng lẽ nào...!"
+msgstr "Hả!? Vậy thì, chẳng lẽ là...!"
+
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgstr "Celes có lẽ đã giấu nó ở trong đó."
+
+msgctxt "0049 | SAKURA OOGAMI"
+msgstr "Đúng là thứ gần ngay trước mắt lại là thứ khó thấy nhất... Chúng ta nên đi kiểm tra ngay thôi."
+
+msgctxt "0050 | KYOUKO KIRIGIRI"
+msgstr "Được thôi... cũng phải..."
+
+msgctxt "0051 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chúng tôi rời khỏi lớp xét xử và vội vã chạy đến phòng thay đồ.⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Shocked Realization Reaction
+Trial Three Aftermath
 

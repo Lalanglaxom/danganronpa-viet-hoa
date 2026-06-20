@@ -2,21 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. 最初に、山田の死体を
 #. 見つけたのは…
 msgctxt "0001 | AOI ASAHINA"
 msgid "Well here's one thing we do know..."
-msgstr "À, có một điều mà tụi mình biết chắc chắn nè..."
+msgstr "À, có một chuyện này tụi mình đều biết..."
 
 #. 保健室だったよね。
 msgctxt "0002 | AOI ASAHINA"
@@ -25,7 +24,7 @@ msgid ""
 "was in the nurse's office."
 msgstr ""
 "Lần đầu tiên tụi mình tìm thấy thi thể của Hifumi là ở\n"
-"phòng y tế."
+"phòng y tế mà nhỉ."
 
 #. でも、私とセレスちゃんが
 #. トイレに行っている間に…
@@ -33,23 +32,23 @@ msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "And then, while me and\n"
 "Celeste were in the bathroom..."
-msgstr "Và sau đó, trong lúc tui và Celeste đang ở trong nhà vệ sinh..."
+msgstr "Thế nhưng, trong lúc tớ và Celes đang đi vệ sinh..."
 
 #. <CLT 9>死体は消えちゃった<CLT>んだよ。
 msgctxt "0004 | AOI ASAHINA"
 msgid "...his <CLT 9>body disappeared<CLT>!"
-msgstr "...<CLT 9>cái xác của ông ấy bỗng biến mất tiêu<CLT> luôn!"
+msgstr "...thì <CLT 9>thi thể đó đã biến mất tiêu<CLT> rồi."
 
 #. そして、次にその死体が
 #. 発見されたのは…
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid "And the next time we saw his body..."
-msgstr "Và lần tiếp theo chúng ta nhìn thấy thi thể của cậu ta..."
+msgstr "Và lần tiếp theo chúng ta nhìn thấy cái xác đó..."
 
 #. 美術倉庫だったな。
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "...it was in the repository."
-msgstr "...là ở kho lưu trữ."
+msgstr "...là ở kho chứa đồ mỹ thuật."
 
 #. 移動前の彼の死体と、
 #. 移動後の彼の死体…
@@ -59,24 +58,24 @@ msgid ""
 "before being moved, and his\n"
 "body after being moved..."
 msgstr ""
-"Nhưng khi các người so sánh cái xác của cậu ta trước lúc\n"
-"bị dịch chuyển, và cái xác sau khi đã bị dịch chuyển..."
+"Thế nhưng khi so sánh thi thể của cậu ta trước và sau khi\n"
+"được di chuyển..."
 
 #. <CLT 9>体勢が変わった<CLT>以外に…
 msgctxt "0008 | CELES"
 msgid "Other than the change in <CLT 9>how it was positioned<CLT>..."
-msgstr "Ngoại trừ sự thay đổi về <CLT 9>tư thế nằm<CLT> ra..."
+msgstr "Ngoài việc <CLT 9>tư thế thay đổi<CLT> ra..."
 
 #. 特に<CLT 9>違いはありません<CLT>でしたわ。
 msgctxt "0009 | CELES"
 msgid "...there <CLT 9>was no notable difference<CLT>."
-msgstr "...thì giữa chúng <CLT 9>chẳng có điểm gì khác biệt<CLT> cả."
+msgstr "...thì <CLT 9>không hề có sự khác biệt đáng kể nào cả<CLT>."
 
 #. 本当に…あいつは
 #. 生きていたのか…？
 msgctxt "0010 | SAKURA OOGAMI"
 msgid "Then...was he really still alive?"
-msgstr "Vậy... cậu ta thực sự vẫn còn sống sao?"
+msgstr "Vậy thì... liệu cậu ta có thực sự còn sống không...?"
 
 #. あり得ません…
 #. バカバカしいですわ…
@@ -84,34 +83,34 @@ msgctxt "0011 | CELES"
 msgid ""
 "Of course not,\n"
 "it is impossible. This is ridiculous..."
-msgstr "Tất nhiên là không rồi, điều đó là bất khả thi. Thật nực cười..."
+msgstr "Dĩ nhiên là không thể rồi. Thật nực cười..."
 
 #. <CLT 26>死体が消える…か。<CLT>
 msgctxt "0012 | CELES"
 msgid "<CLT 26>So his body disappeared...?<CLT>"
-msgstr "<CLT 26>Vậy cái xác của cậu ta đã biến mất sao...?<CLT>"
+msgstr "<CLT 26>Vậy là thi thể đã biến mất...?<CLT>"
 
 #. <CLT 26>つまり、移動したって事…<CLT>
 msgctxt "0013 | CELES"
 msgid "<CLT 26>In other words, it moved somehow...<CLT>"
-msgstr "<CLT 26>Nói cách khác, bằng cách nào đó nó đã dịch chuyển...<CLT>"
+msgstr "<CLT 26>Nói cách khác, nó đã được di chuyển bằng cách nào đó...<CLT>"
 
 #. <CLT 26>手の位置が変わってたね…<CLT>
 msgctxt "0014 | CELES"
 msgid "<CLT 26>His hand had moved, maybe...?<CLT>"
-msgstr "<CLT 26>Có lẽ bàn tay của cậu ta đã dịch chuyển chăng...?<CLT>"
+msgstr "<CLT 26>Vị trí tay của cậu ta đã thay đổi nhỉ...?<CLT>"
 
 #. <CLT 26>移動の際に変わったんだろう。<CLT>
 msgctxt "0015 | CELES"
 msgid "<CLT 26>Moving the body must've done it...<CLT>"
-msgstr "<CLT 26>Chắc là do quá trình di chuyển cái xác gây ra thôi...<CLT>"
+msgstr "<CLT 26>Chắc là do quá trình di chuyển thôi...<CLT>"
 
 #. <CLT 26>私もそう思う…<CLT>
 msgctxt "0016 | CELES"
 msgid "<CLT 26>Yeah, I think so, too!<CLT>"
-msgstr "<CLT 26>Phải đó, tớ cũng nghĩ vậy luôn!<CLT>"
+msgstr "<CLT 26>Ừ, tớ cũng nghĩ vậy...!<CLT>"
 
 #. <CLT 26>何か見落としている…<CLT>
 msgctxt "0017 | CELES"
 msgid "<CLT 26>We must have overlooked something...<CLT>"
-msgstr "<CLT 26>Chúng ta hẳn đã bỏ sót điều gì đó rồi...<CLT>"
+msgstr "<CLT 26>Chắc chắn tụi mình đã bỏ sót gì đó rồi...<CLT>"

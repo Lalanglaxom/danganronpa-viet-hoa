@@ -2,40 +2,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 9>山田を殺した凶器<CLT>は…
 msgctxt "0001 | SAKURA OOGAMI"
 msgid "What was <CLT 9>used to kill Hifumi<CLT>...?"
-msgstr "Thứ được <CLT 9>dùng làm hung khí sát hại Hifumi<CLT> là gì chứ...?"
+msgstr "Thứ <CLT 9>được dùng để giết Hifumi<CLT> là gì...?"
 
 #. ジャスティスハンマー３号なのか？
 msgctxt "0002 | SAKURA OOGAMI"
 msgid "Was it Justice Hammer 3?"
-msgstr "Liệu có phải là búa Justice Hammer số 3 không?"
+msgstr "Có phải là Justice Hammer số 3 không?"
 
 #. ジャスティスハンマー４号なのか？
 msgctxt "0003 | SAKURA OOGAMI"
 msgid "Maybe Justice Hammer 4?"
-msgstr "Hay là búa Justice Hammer số 4?"
+msgstr "Hay là Justice Hammer số 4?"
 
 #. どちらにしても…
 msgctxt "0004 | CELES"
 msgid "Well, whatever it was..."
-msgstr "Chà, dẫu cho nó là thứ gì đi nữa..."
+msgstr "Dù là gì đi chăng nữa..."
 
 #. 犯人はどのようにして…
 msgctxt "0005 | CELES"
 msgid "...there's one thing we have to figure out."
-msgstr "...thì vẫn còn một điều chúng ta cần phải làm rõ."
+msgstr "...có một chuyện chúng ta cần phải làm rõ."
 
 #. それらの凶器を
 #. 持ち運んだのでしょうね？
@@ -44,16 +43,14 @@ msgid ""
 "How was the culprit able to move around\n"
 "so freely with the weapon?"
 msgstr ""
-"Hung thủ làm cách nào có thể di chuyển xung quanh một cách\n"
-"tự do đến thế cùng với thứ hung khí đó chứ?"
+"Hung thủ đã làm cách nào để vận chuyển... những hung khí\n"
+"đó đi vậy nhỉ?"
 
 #. しかも、誰にも
 #. <CLT 9>目撃される<CLT>事なく…
 msgctxt "0007 | CELES"
 msgid "How did nobody <CLT 9>witness<CLT> them carrying it?"
-msgstr ""
-"Làm sao mà lại không có ai <CLT 9>bắt gặp<CLT> cảnh kẻ đó mang\n"
-"theo nó vậy chứ?"
+msgstr "Hơn nữa lại còn thực hiện mà không <CLT 9>bị ai nhìn thấy<CLT> nữa chứ..."
 
 #. 今明らかになる
 #. <CLT 9>ジャスティスハンマー５号<CLT>！！
@@ -62,23 +59,21 @@ msgid ""
 "Sounds like a <CLT 9>Justice Hammer 5<CLT>\n"
 "is about to make its appearance!"
 msgstr ""
-"Nghe có vẻ như một cây búa <CLT 9>Justice Hammer số 5<CLT> sắp\n"
-"sửa được cho lên sàn rồi đấy!"
+"Nghe cứ như <CLT 9>Justice Hammer số 5<CLT> sắp sửa xuất hiện\n"
+"đến nơi rồi ấy!"
 
 #. 詳細はウェブで！！
 msgctxt "0009 | TOUKO FUKAWA"
 msgid ""
 "Check out murdergear.com/\n"
 "hammertime for more info!"
-msgstr ""
-"Hãy truy cập vào trang dochoisatnhan.com/ giobualen de\n"
-"biet them thong tin chi tiet nhe!"
+msgstr "Chi tiết xem tại web nhé!!"
 
 #. とりあえず、
 #. ハッキリしてんのは…
 msgctxt "0010 | YASUHIRO HAGAKURE"
 msgid "Well, one thing seems pretty clear..."
-msgstr "À thì, có một điều xem ra đã khá rõ ràng rồi..."
+msgstr "Tạm thời thì, có một điều khá rõ ràng là..."
 
 #. <CLT 9>どっちかのハンマーが
 #. 凶器<CLT>って事だけか！
@@ -86,11 +81,9 @@ msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid ""
 "The murder weapon had to be\n"
 "<CLT 9>one of the Justice Hammers<CLT>!"
-msgstr ""
-"Hung khí gây án chắc chắn phải là <CLT 9>một trong mấy cây\n"
-"búa Justice Hammer<CLT> rồi!"
+msgstr "Chỉ có thể là <CLT 9>một trong hai cái búa đó đã là hung khí<CLT> mà thôi!"
 
 #. うぅ…それだけか…
 msgctxt "0012 | YASUHIRO HAGAKURE"
 msgid "And, uh...that's about it."
-msgstr "Và, ờm... chuyện chỉ có vậy thôi."
+msgstr "Ư... chỉ vậy thôi à..."

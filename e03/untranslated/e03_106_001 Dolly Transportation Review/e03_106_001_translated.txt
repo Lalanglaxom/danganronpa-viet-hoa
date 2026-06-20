@@ -1,89 +1,132 @@
 --- Gemini Translation Raw Output for e03_106_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 犯人は⟦CLT 9⟧物理準備室⟦CLT⟧で
+#. 石丸を殺し…
 msgctxt "0001 | BYAKUYA TOGAMI"
 msgid ""
 "As we know, Taka was\n"
-"killed in the <CLT 9>equipment room<CLT>."
+"killed in the ⟦CLT 9⟧equipment room⟦CLT⟧."
 msgstr ""
-"Như chúng ta đã biết, Ishimaru đã\n"
-"bị sát hại ở <CLT 9>phòng chuẩn bị vật lý<CLT>."
 
+#. その死体を運んだのだったな？
 msgctxt "0002 | BYAKUYA TOGAMI"
 msgid ""
 "And from there, the body was\n"
 "moved to the repository, correct?"
 msgstr ""
-"Và từ đó, cái xác đã được\n"
-"di chuyển đến kho mỹ thuật, đúng chứ?"
 
+#. 死体を⟦CLT 9⟧ビニールシート⟦CLT⟧で
+#. 包んで…
 msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "Yeah, the culprit wrapped\n"
-"the body in the <CLT 9>tarp<CLT>..."
+"the body in the ⟦CLT 9⟧tarp⟦CLT⟧..."
 msgstr ""
-"Phải đó, hung thủ đã bọc\n"
-"thi thể lại trong tấm <CLT 9>bạt ni lông<CLT>..."
 
+#. それを⟦CLT 9⟧台車に乗せて⟦CLT⟧
+#. 運んだんでしょ？
 msgctxt "0004 | AOI ASAHINA"
 msgid ""
-"...then <CLT 9>loaded it onto the dolly<CLT>\n"
+"...then ⟦CLT 9⟧loaded it onto the dolly⟦CLT⟧\n"
 "and wheeled it off, right?"
 msgstr ""
-"...rồi <CLT 9>đặt nó lên xe đẩy<CLT>\n"
-"và đẩy đi mất tiêu, đúng không?"
 
+#. あの台車は
+#. ⟦CLT 9⟧取っ手がなかった⟦CLT⟧はずだ…
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid ""
 "Now, keep in mind that\n"
-"the dolly <CLT 9>doesn't have a handle<CLT>."
+"the dolly ⟦CLT 9⟧doesn't have a handle⟦CLT⟧."
 msgstr ""
-"Giờ thì hãy nhớ rằng\n"
-"chiếc xe đẩy đó <CLT 9>không hề có tay cầm<CLT>."
 
+#. でも、取っ手なんかなくたって…
 msgctxt "0006 | AOI ASAHINA"
 msgid "Well, yeah, but even without a handle..."
-msgstr "Thì đúng là vậy, nhưng dẫu không có tay cầm..."
+msgstr ""
 
+#. ⟦CLT 9⟧腰を屈めた体勢⟦CLT⟧になれば…
 msgctxt "0007 | AOI ASAHINA"
-msgid "...all you'd have to do is <CLT 9>bend over<CLT>."
-msgstr "...tất cả những gì cần làm chỉ là <CLT 9>cúi khòm người xuống<CLT>."
+msgid "...all you'd have to do is ⟦CLT 9⟧bend over⟦CLT⟧."
+msgstr ""
 
+#. 台車は問題なく
+#. 押せたはずだよ！
 msgctxt "0008 | AOI ASAHINA"
 msgid "Then you could push the dolly no problem!"
-msgstr "Thế là có thể đẩy chiếc xe đi mà chẳng gặp vấn đề gì rồi!"
+msgstr ""
 
+#. そうやって、運んだ先が…
 msgctxt "0009 | TOUKO FUKAWA"
 msgid "So the killer just crouched down..."
-msgstr "Nên tên sát nhân chỉ cần cúi người xuống..."
+msgstr ""
 
+#. ⟦CLT 9⟧美術倉庫⟦CLT⟧だったのね！
 msgctxt "0010 | TOUKO FUKAWA"
-msgid "...and carted the body off to the <CLT 9>repository<CLT>!"
-msgstr "...và đẩy cái xác đi đến chỗ <CLT 9>kho mỹ thuật<CLT>!"
+msgid "...and carted the body off to the ⟦CLT 9⟧repository⟦CLT⟧!"
+msgstr ""
 
+#. これで、わかっただろう…
 msgctxt "0011 | BYAKUYA TOGAMI"
 msgid "If you accept everything we just said..."
-msgstr "Nếu các người chấp nhận tất cả những điều vừa rồi..."
+msgstr ""
 
+#. 例の不審者が事件の犯人では
+#. ないという事がな。
 msgctxt "0012 | BYAKUYA TOGAMI"
 msgid ""
 "...then you must realize that\n"
 "whoever was in the suit couldn't\n"
 "possibly be the culprit."
 msgstr ""
-"...thì hẳn các người phải nhận ra rằng\n"
-"kẻ ở bên trong bộ đồ đó không đời nào\n"
-"có thể là thủ phạm được."
 
+#. いや…さっぱりだべ…
 msgctxt "0013 | YASUHIRO HAGAKURE"
 msgid ""
 "Uh...sorry,\n"
 "I don't think I realize anything..."
 msgstr ""
-"Ờ... xin lỗi nha,\n"
-"tớ không nghĩ là tớ nhận ra được gì đâu..."
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgstr "Như chúng ta đã biết, Ishimaru đã bị sát hại tại ⟦CLT 9⟧phòng chuẩn bị vật lý⟦CLT⟧..."
+
+msgctxt "0002 | BYAKUYA TOGAMI"
+msgstr "Và từ đó, thi thể đã được vận chuyển đến kho chứa đồ mỹ thuật, đúng chứ?"
+
+msgctxt "0003 | AOI ASAHINA"
+msgstr "Đúng vậy, hung thủ đã bọc xác cậu ấy trong ⟦CLT 9⟧tấm bạt ni-lông⟦CLT⟧..."
+
+msgctxt "0004 | AOI ASAHINA"
+msgstr "...rồi ⟦CLT 9⟧đặt nó lên xe đẩy⟦CLT⟧ để vận chuyển đi đúng không?"
+
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgstr "Hãy nhớ rằng, chiếc xe đẩy đó ⟦CLT 9⟧vốn không có tay cầm⟦CLT⟧."
+
+msgctxt "0006 | AOI ASAHINA"
+msgstr "Thì đúng là vậy, nhưng dù không có tay cầm đi nữa..."
+
+msgctxt "0007 | AOI ASAHINA"
+msgstr "...chỉ cần ⟦CLT 9⟧cúi khom lưng xuống⟦CLT⟧..."
+
+msgctxt "0008 | AOI ASAHINA"
+msgstr "Là ông vẫn có thể đẩy xe đi mà chẳng gặp vấn đề gì rồi!"
+
+msgctxt "0009 | TOUKO FUKAWA"
+msgstr "Thế là hung thủ cứ cúi người xuống như vậy..."
+
+msgctxt "0010 | TOUKO FUKAWA"
+msgstr "...rồi đẩy cái xác thẳng tới ⟦CLT 9⟧kho chứa đồ mỹ thuật⟦CLT⟧ luôn hả!"
+
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgstr "Đến đây thì chắc các người hiểu rồi chứ..."
+
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgstr "...Rằng gã khả nghi bên trong bộ đồ kia không thể nào là hung thủ của vụ án được."
+
+msgctxt "0013 | YASUHIRO HAGAKURE"
+msgstr "Không... tớ hoàn toàn không hiểu gì hết á..."
 
 ==================== FOLDER SUMMARY ====================
-Dolly Transportation Review
+Dolly Transport Debate
 

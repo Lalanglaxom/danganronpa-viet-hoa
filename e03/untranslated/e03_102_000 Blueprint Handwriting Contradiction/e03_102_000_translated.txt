@@ -1,71 +1,92 @@
 --- Gemini Translation Raw Output for e03_102_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 意味の無い事をおっしゃられても困りますわ。
+#. 時間のムダです。
 msgctxt "0001 | CELES"
 msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Những lời nói vô nghĩa của cậu làm tôi thấy mệt mỏi rồi. Làm ơn đừng lãng\n"
-"phí thời gian của tôi nữa."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. 意味の無い事をおっしゃられても困りますわ。
+#. 時間のムダです。
 msgctxt "0003 | CELES"
 msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Những lời nói vô nghĩa của cậu làm tôi thấy mệt mỏi rồi. Làm ơn đừng lãng\n"
-"phí thời gian của tôi nữa."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧葉隠クンが犯人だという動かぬ証拠…
+#. 本当にそうなのか？
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Compelling evidence that Hiro is the killer... Is that\n"
+"⟦CLT 4⟧Compelling evidence that Hiro is the killer... Is that\n"
 "really true?\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bằng chứng thuyết phục cho thấy Yasuhiro là hung thủ... Chuyện đó có\n"
-"thật sự đúng không?\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧でも、あの設計図って…
+#. やけに字が汚かったよな…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I mean, looking at the blueprints... That handwriting\n"
+"⟦CLT 4⟧I mean, looking at the blueprints... That handwriting\n"
 "is awful messy.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Ý tớ là, nhìn vào bản thiết kế xem... Chữ viết tay\n"
-"ở trên đó cực kỳ cẩu thả.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧確か、葉隠クンの字って…
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>If I remember right, Hiro's handwriting is...\n"
-"<CLT>"
+"⟦CLT 4⟧If I remember right, Hiro's handwriting is...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nếu mình nhớ không lầm, nét chữ của Yasuhiro là...\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CELES"
+msgstr "Cậu nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0003 | CELES"
+msgstr "Cậu nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Bằng chứng đanh thép chứng minh Hiro là hung thủ... Có thật sự là như vậy không?\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng mà, nhìn vào bản thiết kế đó xem... Chữ viết trông bẩn thỉu và nguệch ngoạc đến lạ...\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nếu mình nhớ không lầm, nét chữ của Hiro thì...\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Blueprint Handwriting Contradiction
+Hiro Blueprint Doubt
 

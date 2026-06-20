@@ -9,6 +9,16 @@ msgid ""
 "stab your seriously adorably serious face off!"
 msgstr ""
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
+"a contradiction in there somewhere...\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. それが、私の発言にどう関わってくるのかしら？
 #. それとも…何も考えていないの？
 msgctxt "0003 | KYOUKO KIRIGIRI"
@@ -35,6 +45,36 @@ msgid ""
 "stab your seriously adorably serious face off!"
 msgstr ""
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
+"a contradiction in there somewhere...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧メモにあった呼び出し時間…
+#. そこに何か手掛かりがありそうな気がする…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The time mentioned in the note... I feel like that's\n"
+"the key.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧メモにあった呼び出し時間は、早朝６時…
+#. それと同じ時間帯に起きた事…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The time on the note said 6 a.m. What happened at 6\n"
+"a.m.?\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. ⟦CLT 4⟧…それを思い出すんだ。
 #. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
@@ -45,26 +85,32 @@ msgstr ""
 
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | TOUKO FUKAWA"
-msgstr "Ánh nhìn nghiêm túc đó... làm tôi muốn giết người ghê á...\n"
-"Nhưng mà tôi chẳng hiểu Ma-kun đang nói cái gì đâu nhé!"
+msgstr "Tớ chẳng hiểu cậu đang nói gì cả, nhưng tớ muốn đâm nát cái khuôn mặt nghiêm túc đáng yêu đó của cậu ghê!"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
 
 msgctxt "0003 | KYOUKO KIRIGIRI"
-msgstr "Điều đó thì có liên quan gì đến phát ngôn của tớ sao?\n"
-"Hay là... cậu chẳng suy nghĩ gì cả thế?"
+msgstr "Chuyện đó thì có liên quan gì đến những gì tớ vừa nói đâu chứ? Hay là... cậu đang chẳng biết mình đang làm gì thế?"
 
 msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Phải suy nghĩ kỹ lại một lần nữa xem. Chắc chắn điểm mâu thuẫn\n"
-"của cuộc tranh luận này đang ẩn giấu đâu đó...\n"
-"⟦CLT⟧"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
 
 msgctxt "0005 | TOUKO FUKAWA"
-msgstr "Ánh nhìn nghiêm túc đó... làm tôi muốn giết người ghê á...\n"
-"Nhưng mà tôi chẳng hiểu Ma-kun đang nói cái gì đâu nhé!"
+msgstr "Tớ chẳng hiểu cậu đang nói gì cả, nhưng tớ muốn đâm nát cái khuôn mặt nghiêm túc đáng yêu đó của cậu ghê!"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thời gian gọi đến ghi trong tờ giấy... Tớ có cảm giác đó chính là manh mối quan trọng...\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thời gian ghi trên tờ giấy là 6 giờ sáng... Những chuyện đã xảy ra vào khoảng thời gian đó là...\n⟦CLT⟧"
 
 msgctxt "0009 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧...Mình phải nhớ lại chuyện đó.\n"
-"⟦CLT⟧"
+msgstr "⟦CLT 4⟧...Mình phải nhớ lại chuyện đó thôi.\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Trial Contradiction Debate
+Contradiction Debate Thoughts
 

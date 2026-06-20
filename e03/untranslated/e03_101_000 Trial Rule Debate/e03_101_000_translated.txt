@@ -1,121 +1,196 @@
 --- Gemini Translation Raw Output for e03_101_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. まずは、学級裁判の簡単な説明から始めましょう！
+#. 学級裁判の結果はオマエラの投票により決定されます。
 msgctxt "0001 | MONOKUMA"
 msgid ""
 "Let's begin with a basic explanation of the class\n"
 "trial! So, your votes will determine the results."
 msgstr ""
-"Hãy bắt đầu với một lời giải thích cơ bản về Lớp Xét\n"
-"Xử đi nào! Kết quả sẽ được quyết định dựa trên số phiếu bầu của các em."
 
+#. 正しいクロを指摘出来れば、クロだけがおしおき。
+#. だけど…もし間違った人物をクロとした場合は…
 msgctxt "0002 | MONOKUMA"
 msgid ""
 "If you can figure out \"whodunnit\" then only they will\n"
 "receive punishment. But if you pick the wrong one..."
 msgstr ""
-"Nếu các em tìm ra chính xác \"kẻ thủ ác\" thì chỉ có kẻ đó bị nhận hình phạt. Nhưng nếu chọn sai..."
 
+#. クロ以外の全員がおしおきされ、
+#. みんなを欺いたクロだけが晴れて卒業となりまーす！
 msgctxt "0003 | MONOKUMA"
 msgid ""
 "Then I'll punish everyone *besides* the blackened, and\n"
 "the one that deceived everyone else will graduate!"
 msgstr ""
-"Thì ta sẽ trừng phạt tất cả mọi người ngoại trừ kẻ thủ ác, và kẻ đã lừa dối tất cả sẽ được tốt nghiệp vẻ vang!"
 
+#. さてと…じゃあ最初は…
 msgctxt "0004 | MONOKUMA"
 msgid "Now then, to begin with..."
-msgstr "Giờ thì, để bắt đầu..."
+msgstr ""
 
+#. 犯人は、もう決まってるよ！
 msgctxt "0005 | AOI ASAHINA"
 msgid "We already know who did it!"
-msgstr "Tụi này biết ai làm rồi!"
+msgstr ""
 
+#. おろろ…？
 msgctxt "0006 | MONOKUMA"
 msgid "Wuzzat...?"
-msgstr "Ủa gì dợ...?"
+msgstr ""
 
+#. 一連の殺人や死体消失が起きた際のアリバイがなく、
+#. 何より、あのコスプレ姿で現れた⟦CLT 3⟧葉隠康比呂⟦CLT⟧君…
 msgctxt "0007 | CELES"
 msgid ""
-"It was <CLT 3>Hiro<CLT>. He does not have an alibi for when the\n"
+"It was ⟦CLT 3⟧Hiro⟦CLT⟧. He does not have an alibi for when the\n"
 "murders took place, and we found him in that suit."
 msgstr ""
-"Chính là <CLT 3>Yasuhiro<CLT>. Cậu ấy không có bằng chứng ngoại phạm vào lúc các vụ\n"
-"án mạng diễn ra, và chúng ta còn tìm thấy cậu ấy trong bộ đồ đó nữa."
 
+#. どう考えても…あんたが犯人じゃん…！
 msgctxt "0008 | AOI ASAHINA"
 msgid "Don't try and deny it! You killed them!"
-msgstr "Ông đừng hòng chối cãi! Ông đã giết họ!"
+msgstr ""
 
+#. だ、だから違うんだって！
+#. 俺は…ずっと眠らされてただけで…！
 msgctxt "0009 | YASUHIRO HAGAKURE"
 msgid ""
 "I didn't! Someone knocked me out! I was asleep the\n"
 "whole time! I don't know anything about it!"
 msgstr ""
-"Tớ không có làm! Ai đó đã đánh ngất tớ! Tớ ngủ\n"
-"suốt cả buổi mà! Tớ hoàn toàn không biết gì về chuyện đó cả!"
 
+#. 黙れ！　この人殺しめッ！！
 msgctxt "0010 | TOUKO FUKAWA"
 msgid "Shut your murdering mouth, murderer!"
-msgstr "Ngậm cái mồm giết người của cậu lại đi, đồ sát thủ!"
+msgstr ""
 
+#. オメーに言われたかねーって！！
 msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid "Who are YOU calling a murderer!?"
-msgstr "Cậu đang gọi AI là kẻ giết người hả!?"
+msgstr ""
 
+#. 葉隠君、残念ですが…こんな証拠もあるのですよ。
 msgctxt "0012 | CELES"
 msgid "I am sorry to say, Hiro, but we do have evidence..."
-msgstr "Tôi rất tiếc phải nói điều này, Yasuhiro, nhưng chúng tôi có bằng chứng..."
+msgstr ""
 
+#. あのコスプレ衣装の⟦CLT 3⟧設計図⟦CLT⟧です。
+#. それと…
 msgctxt "0013 | CELES"
-msgid "<CLT 3>Blueprints<CLT> for the suit..."
-msgstr "<CLT 3>Bản thiết kế<CLT> của bộ đồ..."
+msgid "⟦CLT 3⟧Blueprints⟦CLT⟧ for the suit..."
+msgstr ""
 
+#. あの衣裳の制作に使われたと思われる、
+#. これら⟦CLT 3⟧部品⟦CLT⟧の数々…
 msgctxt "0014 | CELES"
-msgid "<CLT 3>Parts<CLT> we assume were used to build it..."
-msgstr "Rất nhiều <CLT 3>linh kiện<CLT> mà chúng tôi cho là đã được dùng để chế tạo nó..."
+msgid "⟦CLT 3⟧Parts⟦CLT⟧ we assume were used to build it..."
+msgstr ""
 
+#. すべて、あなたの⟦CLT 3⟧部屋⟦CLT⟧から見つかった物です。
+#. これらが動かぬ証拠ですわ。
 msgctxt "0015 | CELES"
 msgid ""
-"And all of it was found <CLT 3>in your room<CLT>. You have to\n"
+"And all of it was found ⟦CLT 3⟧in your room⟦CLT⟧. You have to\n"
 "admit, the evidence is quite compelling."
 msgstr ""
-"Và tất cả những thứ đó đều được tìm thấy <CLT 3>trong phòng của cậu<CLT>. Cậu phải\n"
-"thừa nhận rằng, bằng chứng này khá là thuyết phục đấy."
 
+#. あなたがあの衣装を作り上げ、それを身にまとい、
+#. 次々と犯行を重ねていったという事のね…
 msgctxt "0016 | CELES"
 msgid ""
 "It points to you as having created the suit and\n"
 "wearing it while committing crime after crime..."
 msgstr ""
-"Nó cho thấy chính cậu là người đã tạo ra bộ đồ và\n"
-"mặc nó để thực hiện hết tội ác này đến tội ác khác..."
 
+#. だ、だから…俺は…俺は…
 msgctxt "0017 | YASUHIRO HAGAKURE"
 msgid "How many times do I have to tell you!? I...I...!"
-msgstr "Tớ phải nói bao nhiêu lần nữa đây!? Tớ... tớ...!"
+msgstr ""
 
+#. 知らん知らん知らん知らん知らん知らん知らーんッ！！
 msgctxt "0018 | YASUHIRO HAGAKURE"
 msgid "I don't know, I don't know, I don't KNOW!"
-msgstr "Tớ không biết, tớ không biết, tớ KHÔNG BIẾT!"
+msgstr ""
 
+#. ⟦CLT 4⟧本当に葉隠クンが犯人なのか？　それとも…
+#. ⟦CLT⟧
 msgctxt "0019 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Is Hiro really the killer? Or...\n"
-"<CLT>"
+"⟦CLT 4⟧Is Hiro really the killer? Or...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có thật Yasuhiro là hung thủ không? Hay là...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧まずは、それをハッキリさせないと…！
+#. ⟦CLT⟧
 msgctxt "0020 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Before anything else, we have to make that clear!\n"
-"<CLT>"
+"⟦CLT 4⟧Before anything else, we have to make that clear!\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Trước hết, mình phải làm sáng tỏ chuyện đó đã!\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MONOKUMA"
+msgstr "Trước tiên, ta xin giải thích sơ qua về Lớp Xét Xử nhé! Theo đó, kết quả của Lớp Xét Xử sẽ được định đoạt dựa trên lượt bỏ phiếu của các em."
+
+msgctxt "0002 | MONOKUMA"
+msgstr "Nếu các em chỉ điểm chính xác \"kẻ thủ ác\", thì duy nhất kẻ đó bị xử phạt. Nhưng nếu các em chọn sai người..."
+
+msgctxt "0003 | MONOKUMA"
+msgstr "Thì ta sẽ xử phạt tất cả mọi người ngoại trừ kẻ thủ ác, còn kẻ đã lừa dối mọi người kia sẽ được đường đường chính chính tốt nghiệp đấy nha!"
+
+msgctxt "0004 | MONOKUMA"
+msgstr "Được rồi... Vậy thì lúc bắt đầu..."
+
+msgctxt "0005 | AOI ASAHINA"
+msgstr "Bọn tui biết tỏng hung thủ là ai rồi!"
+
+msgctxt "0006 | MONOKUMA"
+msgstr "Ủa chứ hả...?"
+
+msgctxt "0007 | CELES"
+msgstr "Đó chính là cậu ⟦CLT 3⟧Hiro⟦CLT⟧. Cậu ta không hề có chứng cứ ngoại phạm vào khoảng thời gian xảy ra hàng loạt vụ giết người và biến mất thi thể, và trên hết, cậu ta đã xuất hiện trong bộ đồ hóa trang đó..."
+
+msgctxt "0008 | AOI ASAHINA"
+msgstr "Dù có nghĩ thế nào đi nữa... rõ ràng ông chính là hung thủ còn gì...!"
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "Đ-Đã bảo là không phải tớ mà! Tớ... chỉ là bị ai đó đánh thuốc mê suốt bấy lâu nay thôi...!"
+
+msgctxt "0010 | TOUKO FUKAWA"
+msgstr "C-Câm miệng lại đi! Đồ sát nhân kia!"
+
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgstr "Tớ thèm vào nghe hạng người như cậu nói nhé!"
+
+msgctxt "0012 | CELES"
+msgstr "Hiro cậu ơi, thật đáng tiếc... nhưng tụi tớ có loại bằng chứng thế này cơ mà."
+
+msgctxt "0013 | CELES"
+msgstr "Đó là bản ⟦CLT 3⟧thiết kế⟦CLT⟧ của bộ đồ hóa trang đó."
+
+msgctxt "0014 | CELES"
+msgstr "Và cả... hàng loạt ⟦CLT 3⟧linh kiện⟦CLT⟧ được cho là đã dùng để chế tạo ra bộ đồ kia..."
+
+msgctxt "0015 | CELES"
+msgstr "Tất cả chúng đều được tìm thấy ở trong ⟦CLT 3⟧phòng⟦CLT⟧ của cậu đấy. Đây chính là bằng chứng đanh thép không thể chối cãi."
+
+msgctxt "0016 | CELES"
+msgstr "Chúng chứng minh rằng cậu đã làm ra bộ trang phục đó, khoác nó lên người, rồi liên tiếp thực hiện hết tội ác này đến tội ác khác..."
+
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgstr "Đ-Đã bảo là... tớ... tớ..."
+
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgstr "KHÔNG BIẾT KHÔNG BIẾT KHÔNG BIẾT KHÔNG BIẾT KHÔNG BIẾT KHÔNG BIẾT KHÔNG BIẾT ĐÂU MÀ CHỨ!"
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có thật Hiro là hung thủ không? Hay là...\n⟦CLT⟧"
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trước tiên, mình phải làm sáng tỏ chuyện đó cái đã...!\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Trial Rule Debate
+Trial Explanation Interrupted
 

@@ -1,38 +1,57 @@
 --- Gemini Translation Raw Output for e03_255_003.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ふぅ、それにしても…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Hmm..."
-msgstr "Phù, cơ mà..."
+msgstr ""
 
+#. ⟦CLT 4⟧いくつか発見はあったけど、
+#. 手掛かりどころか、妙な発見ばっかりだったな…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I discovered lots of stuff. And it was all strange.\n"
+"⟦CLT 4⟧I discovered lots of stuff. And it was all strange.\n"
 "But I dunno if any of it was an actual clue...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cũng đã phát hiện ra một vài thứ. Nhưng chẳng thấy manh mối nào đâu, toàn là những phát hiện kỳ lạ thôi...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧なんだか混乱してきたし…
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I'm just getting more confused.\n"
-"<CLT>"
+"⟦CLT 4⟧I'm just getting more confused.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đầu óc mình bắt đầu cảm thấy rối bời lên rồi đây.\n"
-"<CLT>"
 
+#. 食堂で…みんなに相談してみた方がいいかもな…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "Maybe I should head to the dining hall and talk about\n"
 "it with everyone else..."
-msgstr "Có lẽ mình nên đến nhà ăn để bàn bạc lại chuyện này với mọi người xem sao..."
+msgstr ""
 
+#. …いったん食堂に戻ろうかな。
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "For now, I should head to the dining hall."
-msgstr "Trước mắt thì mình nên quay trở lại nhà ăn cái đã."
+msgstr ""
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Hừm, dù sao thì..."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi đã khám phá ra khá nhiều thứ. Nhưng toàn là mấy thứ kỳ lạ... Tôi không biết liệu có cái nào trong đó là manh mối thật sự không nữa...⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi thấy rối loạn quá...⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "Có lẽ mình nên đến nhà ăn và bàn bạc chuyện này với mọi người thì tốt hơn..."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "…Tạm thời thì mình nên quay lại nhà ăn thôi."
 
 ==================== FOLDER SUMMARY ====================
-Dining Hall Discussion
+Dining Hall Plan
 

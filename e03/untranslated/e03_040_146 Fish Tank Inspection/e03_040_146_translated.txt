@@ -1,43 +1,59 @@
 --- Gemini Translation Raw Output for e03_040_146.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧水槽だ…
+#. 小さな魚が泳いでいる…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It's a fish tank. There's a bunch of little fish\n"
+"⟦CLT 4⟧It's a fish tank. There's a bunch of little fish\n"
 "swimming around inside...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đó là một cái bể cá. Có một đàn cá nhỏ đang bơi tung\n"
-"tăng ở bên trong...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧どう見ても…事件とは関係ないよな。
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I can't imagine how this could have anything to do\n"
+"⟦CLT 4⟧I can't imagine how this could have anything to do\n"
 "with the case...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình chẳng thể tưởng tượng nổi cái này thì liên quan gì\n"
-"đến vụ án được nữa...\n"
-"<CLT>"
 
+#. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Là một bể cá. Có một đàn cá nhỏ đang bơi lội tung tăng bên trong...\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không thể tưởng tượng nổi cái này thì liên quan gì đến vụ án được nữa...\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0005 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Fish Tank Inspection
+Fish Tank Investigation
 

@@ -1,107 +1,182 @@
 --- Gemini Translation Raw Output for e03_196_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 議論１～３
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Argument 1-3"
-msgstr "Lập luận 1-3"
+msgstr ""
 
+#. 議論４～６
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Argument 4-6"
-msgstr "Lập luận 4-6"
+msgstr ""
 
+#. 議論７～１１
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Argument 7-11"
-msgstr "Lập luận 7-11"
+msgstr ""
 
+#. ⟦CLT 23⟧ジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0004 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+#. 議論１に飛ぶ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Jump to Argument 1"
-msgstr "Nhảy đến Lập luận 1"
+msgstr ""
 
+#. 議論２に飛ぶ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Jump to Argument 2"
-msgstr "Nhảy đến Lập luận 2"
+msgstr ""
 
+#. 議論３に飛ぶ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Jump to Argument 3"
-msgstr "Nhảy đến Lập luận 3"
+msgstr ""
 
+#. ⟦CLT 23⟧議論のジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0008 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+#. 議論４に飛ぶ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Jump to Argument 4"
-msgstr "Nhảy đến Lập luận 4"
+msgstr ""
 
+#. 議論５に飛ぶ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Jump to Argument 5"
-msgstr "Nhảy đến Lập luận 5"
+msgstr ""
 
+#. 議論６に飛ぶ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Jump to Argument 6"
-msgstr "Nhảy đến Lập luận 6"
+msgstr ""
 
+#. ⟦CLT 23⟧議論のジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0012 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+#. 議論７に飛ぶ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "Jump to Argument 7"
-msgstr "Nhảy đến Lập luận 7"
+msgstr ""
 
+#. 議論８に飛ぶ
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Jump to Argument 8"
-msgstr "Nhảy đến Lập luận 8"
+msgstr ""
 
+#. 議論９～１１
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Argument 9-11"
-msgstr "Lập luận 9-11"
+msgstr ""
 
+#. ⟦CLT 23⟧議論のジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0016 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+#. 議論９に飛ぶ
 msgctxt "0017 | CHOICE/RE:ACT"
 msgid "Jump to Argument 9"
-msgstr "Nhảy đến Lập luận 9"
+msgstr ""
 
+#. 議論１０に飛ぶ
 msgctxt "0018 | CHOICE/RE:ACT"
 msgid "Jump to Argument 10"
-msgstr "Nhảy đến Lập luận 10"
+msgstr ""
 
+#. 議論１１に飛ぶ
 msgctxt "0019 | CHOICE/RE:ACT"
 msgid "Jump to Argument 11"
-msgstr "Nhảy đến Lập luận 11"
+msgstr ""
 
+#. ⟦CLT 23⟧議論のジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0020 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Tranh luận 1-3"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Tranh luận 4-6"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Tranh luận 7-11"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn nhảy đến đâu?\n⟦CLT⟧"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 1"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 2"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 3"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Hãy chọn điểm nhảy đến của tranh luận\n⟦CLT⟧"
+
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 4"
+
+msgctxt "0010 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 5"
+
+msgctxt "0011 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 6"
+
+msgctxt "0012 | NARRATION"
+msgstr "⟦CLT 23⟧Hãy chọn điểm nhảy đến của tranh luận\n⟦CLT⟧"
+
+msgctxt "0013 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 7"
+
+msgctxt "0014 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 8"
+
+msgctxt "0015 | CHOICE/RE:ACT"
+msgstr "Tranh luận 9-11"
+
+msgctxt "0016 | NARRATION"
+msgstr "⟦CLT 23⟧Hãy chọn điểm nhảy đến của tranh luận\n⟦CLT⟧"
+
+msgctxt "0017 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 9"
+
+msgctxt "0018 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 10"
+
+msgctxt "0019 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Tranh luận 11"
+
+msgctxt "0020 | NARRATION"
+msgstr "⟦CLT 23⟧Hãy chọn điểm nhảy đến của tranh luận\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Debug Jump Menu
+Argument Chapter Jump
 

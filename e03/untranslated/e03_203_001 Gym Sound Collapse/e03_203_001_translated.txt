@@ -1,109 +1,162 @@
 --- Gemini Translation Raw Output for e03_203_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧そして、なんとか…
+#. 学校の１階までは戻って来たのだが…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Somehow, I made it back to the 1st floor of the\n"
+"⟦CLT 4⟧Somehow, I made it back to the 1st floor of the\n"
 "school.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bằng một cách thần kỳ nào đó, mình rốt cuộc cũng lết thân về được đến khu vực tầng 1 của ngôi trường.\n"
-"<CLT>"
 
+#. う…うぅ…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Gh... Nng..."
-msgstr "Ư... ớ..."
+msgstr ""
 
+#. 歩いたら…ますます気分が……
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "The farther I walked, the more I felt..."
-msgstr "Càng cố bước đi... cơ thể mình lại càng cảm thấy nôn nao chịu không nổi..."
+msgstr ""
 
+#. ⟦CLT 4⟧目がぼやける…
+#. 視界がうまく定まらない…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"Things are getting blurry... Can't see...in front of\n"
+"⟦CLT 4⟧Things are getting blurry... Can't see...in front of\n"
 "me...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mắt mình hoa lên hết rồi... Mọi thứ trước mặt... nhòe nhoẹt chẳng thể nhìn rõ được gì nữa...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧ボクは思わず、
+#. その場にうずくまってしまった。
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"I couldn't stop myself from collapsing right there.\n"
-"<CLT>"
+"⟦CLT 4⟧I couldn't stop myself from collapsing right there.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình không thể gượng dậy nổi nữa, đành bất lực buông xuôi quỵ ngã ngay tại chỗ.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧と、その直後だった…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"And after that...\n"
-"<CLT>"
+"⟦CLT 4⟧And after that...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Và rồi, ngay sau khoảnh khắc đó...\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「………………」
+#. ⟦CLT⟧
 msgctxt "0007 | NARRATION"
 msgid ""
-"\"...\"\n"
-"<CLT>"
+"⟦CLT 23⟧\"...\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
 
+#. …ん？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Hm...?"
-msgstr "Ủa...?"
+msgstr ""
 
+#. ⟦CLT 23⟧「………………」
+#. ⟦CLT⟧
 msgctxt "0009 | NARRATION"
 msgid ""
-"\"...\"\n"
-"<CLT>"
+"⟦CLT 23⟧\"...\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧遠くから…音が聞こえる…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"As if from a vast distance, I heard a sound...\n"
-"<CLT>"
+"⟦CLT 4⟧As if from a vast distance, I heard a sound...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Từ một nơi nào đó xa xăm... mình lờ mờ nghe thấy một chuỗi âm thanh vọng lại...\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「………………」
+#. ⟦CLT⟧
 msgctxt "0011 | NARRATION"
 msgid ""
-"\"...\"\n"
-"<CLT>"
+"⟦CLT 23⟧\"...\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧微かだけど、確かに…
+#. ⟦CLT⟧
 msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
-"It was faint, but undeniable...\n"
-"<CLT>"
+"⟦CLT 4⟧It was faint, but undeniable...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Dẫu cho âm thanh ấy vô cùng nhỏ bé, nhưng chắc chắn là có...\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「………………」
+#. ⟦CLT⟧
 msgctxt "0013 | NARRATION"
 msgid ""
-"\"...\"\n"
-"<CLT>"
+"⟦CLT 23⟧\"...\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"............\"\n"
-"<CLT>"
 
+#. この音…って…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "That sound..."
-msgstr "Tiếng động này... rốt cuộc là..."
+msgstr ""
 
+#. 体育館の…方から…？
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "It's coming from...the gym...?"
-msgstr "Hình như phát ra từ... phía phòng thể chất đúng không...?"
+msgstr ""
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Bằng cách nào đó, mình đã lết được về tầng 1 của ngôi trường…⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Ư… ư……"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Càng bước đi… mình càng thấy…."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mắt mình mờ đi… Mình không nhìn rõ… phía trước nữa…⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không thể làm gì khác ngoài việc khuỵu xuống ngay tại đó.⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Và ngay sau đó…⟦CLT⟧"
+
+msgctxt "0007 | NARRATION"
+msgstr "⟦CLT 23⟧「………………」⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "…Hửm?"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧「………………」⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Từ đằng xa… mình nghe thấy tiếng gì đó…⟦CLT⟧"
+
+msgctxt "0011 | NARRATION"
+msgstr "⟦CLT 23⟧「………………」⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù rất nhỏ, nhưng chắc chắn là…⟦CLT⟧"
+
+msgctxt "0013 | NARRATION"
+msgstr "⟦CLT 23⟧「………………」⟦CLT⟧"
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "Tiếng động này… là…"
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "Từ hướng… phòng thể chất…?"
 
 ==================== FOLDER SUMMARY ====================
-Gym Sound Collapse
+Makoto Collapses
 

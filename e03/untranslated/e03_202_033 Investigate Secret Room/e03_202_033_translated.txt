@@ -1,16 +1,20 @@
 --- Gemini Translation Raw Output for e03_202_033.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧霧切さんが言ってた事を…
+#. 確かめないと…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"What Kyoko told me about... I have to see it for\n"
+"⟦CLT 4⟧What Kyoko told me about... I have to see it for\n"
 "myself.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Về những gì Kyoko đã kể lại... mình buộc phải tự mình đến tận nơi để xác thực thôi.\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi phải tự mình xác nhận... những điều Kirigiri đã nói.⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Investigate Secret Room
+Kyoko Secret Check
 

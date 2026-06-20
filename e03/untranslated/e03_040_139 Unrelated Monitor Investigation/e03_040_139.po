@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -19,7 +18,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"dùng để xuất hiện.\n"
 "<CLT>"
 
 #. 気にしてもしょうがない、放っておこう。
@@ -28,8 +28,8 @@ msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
-"nên cố quên nó đi thôi..."
+"Giờ bận tâm về nó cũng chẳng để làm gì. Mình nên cố quên\n"
+"nó đi thôi..."
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
@@ -40,8 +40,9 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"Điều này không quan trọng đối với vụ án. Tớ chỉ cần quên\n"
-"nó đi thôi."
+"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên\n"
+"kia của chiếc camera giám sát đó...\n"
+"<CLT>"
 
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
@@ -51,8 +52,8 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Điều này không quan trọng đối với vụ án. Tạm thời\n"
-"mình cần quên nó đi đã.\n"
+"<CLT 4>Chỉ nghĩ đến thôi đã thấy bực mình rồi... nhưng tôi\n"
+"thực sự chẳng thể làm gì được.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -64,7 +65,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hả? Tấm bạt này...\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -76,8 +77,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cảm giác như mình đã thấy nó ở đâu đó trước\n"
-"đây. Và cũng chỉ mới gần đây thôi...\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -89,7 +89,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một loại vết bánh xe đi xuyên qua vũng máu ở giữa căn phòng.\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -101,8 +101,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chuyện đó làm mình nhớ ra... Về chiếc xe đẩy trong\n"
-"kho luu trữ...\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -114,7 +113,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đã có máu dính trên bánh xe của nó...!\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -126,7 +125,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Liệu vết máu đó có phải đến từ...\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>この洗濯機は…
@@ -138,7 +137,7 @@ msgid ""
 "case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...đây không?\n"
+"<CLT 4>Cái máy giặt này... chắc không liên quan gì đến vụ án đâu.\n"
 "<CLT>"
 
 #. <CLT 4>雑誌が置いてあるけど…
@@ -150,8 +149,9 @@ msgid ""
 "anything to do with the case...\n"
 "<CLT>"
 msgstr ""
-"Điều đó có nghĩa là xác của Taka đã được chuyển từ phòng\n"
-"thiết bị sang kho luu trữ bằng xe đẩy..."
+"<CLT 4>Có một đống tạp chí. Không có cuốn nào trong số đó\n"
+"liên quan gì đến vụ án cả...\n"
+"<CLT>"
 
 #. <CLT 4>水着が干してある…
 #. <CLT>
@@ -160,7 +160,7 @@ msgid ""
 "<CLT 4>That swimsuit is still hanging out to dry.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó chắc chắn là khả thi.\n"
+"<CLT 4>Bộ đồ bơi đó vẫn đang được treo lên để phơi khô.\n"
 "<CLT>"
 
 #. <CLT 4>まあ、事件には関係ないよな。
@@ -172,8 +172,8 @@ msgid ""
 "definitely glad about...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng nó chẳng liên quan gì đến vụ án cả. Mà như\n"
-"thế thì mình mừng còn không hết ấy chứ...\n"
+"<CLT 4>Nhưng nó không liên quan gì đến vụ án. Điều này\n"
+"khiến tôi chắc chắn thấy mừng...\n"
 "<CLT>"
 
 #. <CLT 4>自販機はあるけど、事件には関係ないだろう…
@@ -183,8 +183,7 @@ msgid ""
 "<CLT 4>The fridge isn't connected to this case...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng ngay cả khi chiếc xe đẩy *thực sự* được dùng\n"
-"để di chuyển xác của Taka...\n"
+"<CLT 4>Tủ lạnh không liên quan gì đến vụ án này...\n"
 "<CLT>"
 
 #. はい
@@ -204,5 +203,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"

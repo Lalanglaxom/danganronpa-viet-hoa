@@ -2,21 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 9>あなたの部屋<CLT>から
 #. 見つかった…
 msgctxt "0001 | CELES"
 msgid "Everything we found in <CLT 9>your room<CLT>..."
-msgstr "Tất cả những thứ chúng tôi tìm thấy trong <CLT 9>phòng của cậu<CLT>..."
+msgstr "Tất cả những gì tìm thấy trong <CLT 9>phòng của cậu<CLT>..."
 
 #. この<CLT 9>設計図<CLT>や
 #. 部品が物語っています。
@@ -25,65 +24,65 @@ msgid ""
 "The <CLT 9>blueprints<CLT>, the suit parts,\n"
 "they are all proof enough..."
 msgstr ""
-"Từ <CLT 9>bản thiết kế<CLT> cho đến các bộ phận của bộ đồ, tất\n"
-"cả chúng đã là quá đủ để chứng minh..."
+"Bản <CLT 9>thiết kế<CLT> này, rồi cả đống linh kiện kia, tất cả\n"
+"đã quá đủ để chứng minh..."
 
 #. あなたが犯人である
 #. という事をね…
 msgctxt "0003 | CELES"
 msgid "...that you are the culprit."
-msgstr "...rằng cậu chính là thủ phạm."
+msgstr "...rằng cậu chính là hung thủ rồi."
 
 #. お、お、俺は知らーん！！
 msgctxt "0004 | YASUHIRO HAGAKURE"
 msgid ""
 "I-I-I don't know\n"
 "anything about that stuff!"
-msgstr "T-T-Tớ hoàn toàn không biết gì về mấy thứ đó cả!"
+msgstr "T-T-Tớ không có biết gì về mấy thứ đó hết!"
 
 #. これは罠だ！
 #. 陰謀だーッ！
 msgctxt "0005 | YASUHIRO HAGAKURE"
 msgid "It's not true! It's a conspiracy!"
-msgstr "Không đúng sự thật! Đây là một âm mưu!"
+msgstr "Đây là bẫy! Là một âm mưu hãm hại mà!"
 
 #. 葉隠…なんで殺したの…？
 msgctxt "0006 | AOI ASAHINA"
 msgid "Hiro, why...? Why did you kill them?"
-msgstr "Yasuhiro, tại sao chứ...? Tại sao ông lại giết họ?"
+msgstr "Hiro, tại sao...? Tại sao ông lại giết họ chứ?"
 
 #. ちょっと
 #. 待ってくれってーッ！！
 msgctxt "0007 | YASUHIRO HAGAKURE"
 msgid "No! Just hold on a second!"
-msgstr "Không! Hãy chờ tớ một chút coi!"
+msgstr "Làm ơn đợi một chút đi mà!"
 
 #. <CLT 26>葉隠の部屋か…<CLT>
 msgctxt "0008 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>In Hiro's room...<CLT>"
-msgstr "<CLT 26>Trong phòng của Yasuhiro sao...<CLT>"
+msgstr "<CLT 26>Trong phòng của Hiro sao...<CLT>"
 
 #. <CLT 26>確たる証拠だな。<CLT>
 msgctxt "0009 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>That evidence is proof positive!<CLT>"
-msgstr "<CLT 26>Bằng chứng đó rõ rành rành ra rồi!<CLT>"
+msgstr "<CLT 26>Bằng chứng đó là quá rõ ràng rồi!<CLT>"
 
 #. <CLT 26>うぷぷぷぷ…<CLT>
 msgctxt "0010 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>Puhuhuhu...<CLT>"
-msgstr "<CLT 26>U pư pư...<CLT>"
+msgstr "<CLT 26>U pư pư pư...<CLT>"
 
 #. <CLT 26>何を今さら…<CLT>
 msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>You're just bringing this up now?<CLT>"
-msgstr "<CLT 26>Sao đến tận bây giờ cậu mới chịu nói ra...<CLT>"
+msgstr "<CLT 26>Giờ này còn nhắc lại chuyện đó làm gì...<CLT>"
 
 #. <CLT 26>証拠があるのですよ？<CLT>
 msgctxt "0012 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>Is there really evidence...?<CLT>"
-msgstr "<CLT 26>Thực sự có bằng chứng sao...<CLT>"
+msgstr "<CLT 26>Liệu thực sự có bằng chứng không nhỉ...?<CLT>"
 
 #. <CLT 26>朝日奈の言う通りだ…<CLT>
 msgctxt "0013 | YASUHIRO HAGAKURE"
 msgid "<CLT 26>It's just like Hina said...<CLT>"
-msgstr "<CLT 26>Đúng như những gì Hina nói...<CLT>"
+msgstr "<CLT 26>Đúng y như những gì Hina nói...<CLT>"

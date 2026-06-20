@@ -1,139 +1,196 @@
 --- Gemini Translation Raw Output for e03_045_021.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ねぇ、苗木君。
+#. まずは、死体を見てみたいわ。
 msgctxt "0001 | KYOUKO KIRIGIRI"
 msgid "So, Makoto...first I'd like to examine the corpses."
-msgstr "Vậy thì, Makoto... trước tiên tớ muốn kiểm tra các thi thể."
+msgstr ""
 
+#. ⟦CLT 4⟧死体を見たいとか…
+#. ボクと同年代の女子のセリフとは思えないな…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>\"Examine the corpses\"... I can't believe I'm hearing\n"
+"⟦CLT 4⟧\"Examine the corpses\"... I can't believe I'm hearing\n"
 "that from a girl the same age as me...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>\"Kiểm tra các thi thể\"... Mình không thể tin được là lại nghe thấy\n"
-"điều đó từ một đứa con gái bằng tuổi mình...\n"
-"<CLT>"
 
+#. 死体はウソをつかない。
+#. 生きている者より確かな真実を伝えてくれる…
 msgctxt "0003 | KYOUKO KIRIGIRI"
 msgid ""
 "Dead bodies don't lie, you know. They tell the truth\n"
 "far more easily than the living."
 msgstr ""
-"Người chết không biết nói dối đâu. Họ bộc lộ sự thật\n"
-"dễ dàng hơn người sống nhiều."
 
+#. …そうでしょ？
 msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid "Wouldn't you agree?"
-msgstr "Cậu có đồng ý không?"
+msgstr ""
 
+#. そうでしょ…って言われても…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "How am I supposed to answer...?"
-msgstr "Tớ biết trả lời thế nào bây giờ...?"
+msgstr ""
 
+#. …とにかく急ぎましょう。
+#. 早くしないと学級裁判が始まってしまう。
 msgctxt "0006 | KYOUKO KIRIGIRI"
 msgid ""
 "Anyway, we have to hurry. Before the class trial\n"
 "begins again..."
 msgstr ""
-"Dù sao thì tụi mình cũng phải khẩn trương lên. Trước khi Lớp Xét Xử\n"
-"lại bắt đầu..."
 
+#. う、うん…わかったよ…
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "Y-Yeah, you're right..."
-msgstr "Ừ-Ừm, cậu nói đúng rồi..."
+msgstr ""
 
+#. さぁ、死体のある場所に連れて行って…
 msgctxt "0008 | KYOUKO KIRIGIRI"
 msgid "Okay then, show me where the bodies are."
-msgstr "Được rồi, dẫn tớ đến nơi có các thi thể đi."
+msgstr ""
 
+#. ⟦CLT 4⟧死体のある場所…美術倉庫だったな…
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>They're in...the repository.\n"
-"<CLT>"
+"⟦CLT 4⟧They're in...the repository.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Họ đang ở... trong kho mỹ thuật.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧じゃあ…とりあえず美術倉庫に急ぐか…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Then I guess we should head that way for now...\n"
-"<CLT>"
+"⟦CLT 4⟧Then I guess we should head that way for now...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Vậy thì trước mắt chắc mình nên đi về hướng đó thôi...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0014 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0015 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0016 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう、あんまり時間もないはずだ。
+#. 美術倉庫に急ごう…！
+#. ⟦CLT⟧
 msgctxt "0017 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Time is running out... I have to hurry to the\n"
+"⟦CLT 4⟧Time is running out... I have to hurry to the\n"
 "repository!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn nhiều thời gian nữa... Mình phải khẩn trương đến kho\n"
-"mỹ thuật thôi!\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgstr "Vậy thì, Makoto... trước tiên tớ muốn xem xét các thi thể cái đã."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Muốn xem thi thể sao... Mình không thể tin nổi đây lại là câu nói thốt ra từ một cô gái bằng tuổi mình luôn đấy...\n⟦CLT⟧"
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgstr "Người chết không biết nói dối đâu. Họ sẽ nói ra sự thật dễ dàng hơn nhiều so với người sống..."
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgstr "...Cậu có đồng tình không?"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Cậu hỏi vậy thì tớ biết trả lời thế nào đây...?"
+
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgstr "...Tóm lại tụi mình phải khẩn trương lên thôi. Nếu không nhanh lên thì Lớp Xét Xử sẽ bắt đầu mất."
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "Ừ-Ừm... cậu nói đúng đấy..."
+
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgstr "Được rồi, đưa tớ đến nơi có các thi thể đi."
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nơi có thi thể... là ở kho chứa đồ mỹ thuật nhỉ...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vậy thì... trước mắt mình phải mau chóng đến kho chứa đồ mỹ thuật thôi...\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn many thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
+
+msgctxt "0017 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc không còn nhiều thời gian nữa đâu. Phải mau đến kho chứa đồ mỹ thuật thôi...!\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Corpse Examination Request
+Kyoko Corpse Plan
 

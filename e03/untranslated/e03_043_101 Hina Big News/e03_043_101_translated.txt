@@ -1,72 +1,123 @@
 --- Gemini Translation Raw Output for e03_043_101.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. あ、苗木！
+#. 大変だよ、大変ッ！！
 msgctxt "0001 | AOI ASAHINA"
 msgid "Makoto! Big news! BIG NEWS!"
-msgstr "Makoto! Tin lớn nè, TIN LỚN NÈ!"
+msgstr ""
 
+#. …どうしたの？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "...What's wrong?"
-msgstr "...Có chuyện gì thế cậu?"
+msgstr ""
 
+#. ⟦CLT 3⟧霧切ちゃん⟦CLT⟧が見つかったって！！
 msgctxt "0003 | AOI ASAHINA"
-msgid "We found <CLT 3>Kyoko<CLT>!"
-msgstr "Mọi người tìm thấy <CLT 3>Kyoko<CLT> rồi đó!"
+msgid "We found ⟦CLT 3⟧Kyoko⟦CLT⟧!"
+msgstr ""
 
+#. え！？　霧切さんがッ！？
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "What!?"
-msgstr "Cái gì!?"
+msgstr ""
 
+#. ぶ、無事なの？　どこにいるの？
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "I-Is she okay? Where is she!?"
-msgstr "C-Cậu ấy có bình an vô sự không? Cậu ấy đang ở đâu thế!?"
+msgstr ""
 
+#. …って言うか、大変なのはそれだけじゃなくって…
 msgctxt "0006 | AOI ASAHINA"
 msgid "Wait, I wasn't done. There's more big news!"
-msgstr "Khoan đã, tui chưa nói xong đâu. Vẫn còn một tin chấn động nữa cơ!"
+msgstr ""
 
+#. ジャスティスロボまで参上しちゃったんだって！！
 msgctxt "0007 | AOI ASAHINA"
 msgid "Robo Justice showed up, too!"
-msgstr "Robo Justice cũng vừa mới xuất đầu lộ diện luôn kìa!"
+msgstr ""
 
+#. …ジャスティスロボ！？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Robo Justice!?"
-msgstr "Robo Justice!?"
+msgstr ""
 
+#. …の衣装を着た⟦CLT 3⟧葉隠⟦CLT⟧がね！！
 msgctxt "0009 | AOI ASAHINA"
-msgid "It's <CLT 3>Hiro<CLT> wearing the costume!"
-msgstr "Là <CLT 3>Hiro<CLT> đang mặc bộ đồ đó á!"
+msgid "It's ⟦CLT 3⟧Hiro⟦CLT⟧ wearing the costume!"
+msgstr ""
 
+#. …とにかく２階のプールまで来て！
+#. 大至急だよ、お願いねッ！！
 msgctxt "0010 | AOI ASAHINA"
 msgid ""
 "Anyway! As soon as you can, head to the pool, on the\n"
 "2nd floor!"
 msgstr ""
-"Tóm lại là! Cậu hãy chạy ngay tới phòng bơi ở tầng 2\n"
-"càng sớm càng tốt nha!"
 
+#. ⟦CLT 4⟧まさか、このタイミングで、
+#. 葉隠クンと霧切さんがいっぺんに見つかるなんて…
+#. ⟦CLT⟧
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>To think Hiro and Kyoko would turn up at the same\n"
+"⟦CLT 4⟧To think Hiro and Kyoko would turn up at the same\n"
 "time...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không ngờ cả Yasuhiro lẫn Kyoko lại cùng xuất hiện một lúc\n"
-"như thế này...\n"
-"<CLT>"
 
+#. とにかく急ごう！
+#. ２階のプールだったよな！
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "Anyway, I have to head to the pool!"
-msgstr "Dù sao thì mình cũng phải đến phòng bơi ngay mới được!"
+msgstr ""
 
+#. ⟦CLT 4⟧ボクは２階のプールへと走った。
+#. ⟦CLT⟧
 msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I ran off to the 2nd floor as fast as I could.\n"
-"<CLT>"
+"⟦CLT 4⟧I ran off to the 2nd floor as fast as I could.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình tức tốc chạy ngay lên phòng bơi ở tầng 2.\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | AOI ASAHINA"
+msgstr "Makoto! Tin lớn nè, tin lớn dữ lắm luôn á!"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "...Có chuyện gì thế?"
+
+msgctxt "0003 | AOI ASAHINA"
+msgstr "Mọi người tìm thấy ⟦CLT 3⟧Kyoko⟦CLT⟧ rồi đó!"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "Cái gì!?"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "C-Cậu ấy có bình an không? Cậu ấy đang ở đâu thế!?"
+
+msgctxt "0006 | AOI ASAHINA"
+msgstr "Khoan đã, tui chưa nói hết đâu. Còn một tin động trời nữa nè!"
+
+msgctxt "0007 | AOI ASAHINA"
+msgstr "Robo Justice cũng xuất đầu lộ diện rồi đó!"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "...Robo Justice!?"
+
+msgctxt "0009 | AOI ASAHINA"
+msgstr "Là ⟦CLT 3⟧Hiro⟦CLT⟧ đang mặc bộ trang phục đó á!"
+
+msgctxt "0010 | AOI ASAHINA"
+msgstr "Tóm lại là ông mau lên phòng bơi ở tầng 2 đi! Khẩn cấp lắm luôn đó, đi lẹ giùm tui nha!"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không ngờ ngay vào lúc này, cả Hiro lẫn Kyoko đều cùng lúc xuất hiện...\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "Dù sao thì mình cũng phải mau đến phòng bơi thôi!"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi tức tốc chạy nhanh hết sức có thể lên phòng bơi ở tầng 2.\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
 Hina Big News

@@ -1,10 +1,17 @@
 from __future__ import annotations
 
 import json
+import sys
 import threading
 import tkinter as tk
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
+
+try:
+    from tkinterdnd2 import DND_FILES, TkinterDnD
+except Exception:  # tkinterdnd2 is optional; Windows native drop is used as fallback.
+    DND_FILES = None
+    TkinterDnD = None
 
 from .backup import make_backups, restore_working_po_from_copies, sync_by_filename
 from .cancel import OperationCancelled
@@ -34,6 +41,7 @@ class ToolkitGUI:
         self._stop_event = threading.Event()
         self._active_thread: threading.Thread | None = None
         self._active_log: tk.Text | None = None
+        self._drop_refs: list[object] = []
         self.stop_button: tk.Button | None = None
         root.title("DR PO Toolkit — Refactored Base")
         root.geometry("980x700")
@@ -166,6 +174,277 @@ class ToolkitGUI:
     def _button(self, parent: tk.Frame, text: str, command) -> tk.Button:
         btn = tk.Button(parent, text=text, command=command, bg=ACCENT, fg="#111", font=("Segoe UI", 9, "bold"), relief="flat", padx=14, pady=6)
         return btn
+
+    def _parse_dropped_paths(self, data: str) -> list[str]:
+        """Parse TkDND file/folder drop payload into clean paths."""
+        try:
+            return [str(item) for item in self.root.tk.splitlist(data)]
+        except Exception:
+            # Conservative fallback for braced Windows paths: {C:/Long Path} C:/Other
+            out: list[str] = []
+            buf: list[str] = []
+            in_brace = False
+            token: list[str] = []
+            for ch in data:
+                if ch == "{" and not in_brace:
+                    in_brace = True
+                    token = []
+                    continue
+                if ch == "}" and in_brace:
+                    in_brace = False
+                    out.append("".join(token))
+                    token = []
+                    continue
+                if ch.isspace() and not in_brace:
+                    if buf:
+                        out.append("".join(buf))
+                        buf = []
+                    continue
+                (token if in_brace else buf).append(ch)
+            if buf:
+                out.append("".join(buf))
+            return out
+
+    def _ask_restore_folders(self, title: str) -> list[str]:
+        """Ask for one or more folders.
+
+        Windows gets a real multi-folder picker. Other platforms keep the
+        standard Tk single-folder picker, but drag/drop can still add many paths
+        when tkinterdnd2 is installed.
+        """
+        if sys.platform == "win32":
+            try:
+                paths = self._ask_windows_multiple_directories(title)
+                if paths:
+                    return paths
+            except Exception:
+                pass
+        folder = filedialog.askdirectory(title=title)
+        return [folder] if folder else []
+
+    def _ask_windows_multiple_directories(self, title: str) -> list[str]:
+        """Native Windows folder picker with multi-select, no extra package."""
+        if sys.platform != "win32":
+            return []
+
+        import ctypes
+        import uuid
+        from ctypes import wintypes
+
+        HRESULT = ctypes.c_long
+        DWORD = wintypes.DWORD
+        ULONG = wintypes.ULONG
+        UINT = wintypes.UINT
+        HWND = wintypes.HWND
+        LPCWSTR = wintypes.LPCWSTR
+
+        class GUID(ctypes.Structure):
+            _fields_ = [
+                ("Data1", DWORD),
+                ("Data2", wintypes.WORD),
+                ("Data3", wintypes.WORD),
+                ("Data4", ctypes.c_ubyte * 8),
+            ]
+
+        def guid(value: str) -> GUID:
+            return GUID.from_buffer_copy(uuid.UUID(value).bytes_le)
+
+        def failed(hr: int) -> bool:
+            return ctypes.c_long(hr).value < 0
+
+        def hresult_u32(hr: int) -> int:
+            return ctypes.c_ulong(hr).value
+
+        def com_method(ptr: ctypes.c_void_p, index: int, restype, *argtypes):
+            vtbl = ctypes.cast(ptr, ctypes.POINTER(ctypes.POINTER(ctypes.c_void_p))).contents
+            prototype = ctypes.WINFUNCTYPE(restype, ctypes.c_void_p, *argtypes)
+            return prototype(vtbl[index])
+
+        CLSCTX_INPROC_SERVER = 0x1
+        COINIT_APARTMENTTHREADED = 0x2
+        ERROR_CANCELLED = 0x800704C7
+        SIGDN_FILESYSPATH = 0x80058000
+        FOS_PICKFOLDERS = 0x00000020
+        FOS_FORCEFILESYSTEM = 0x00000040
+        FOS_ALLOWMULTISELECT = 0x00000200
+        FOS_PATHMUSTEXIST = 0x00000800
+
+        CLSID_FileOpenDialog = guid("DC1C5A9C-E88A-4DDE-A5A1-60F82A20AEF7")
+        IID_IFileOpenDialog = guid("D57C7288-D4AD-4768-BE02-9D969532D960")
+
+        ole32 = ctypes.windll.ole32
+        ole32.CoInitializeEx.argtypes = [ctypes.c_void_p, DWORD]
+        ole32.CoInitializeEx.restype = HRESULT
+        ole32.CoUninitialize.argtypes = []
+        ole32.CoUninitialize.restype = None
+        ole32.CoCreateInstance.argtypes = [ctypes.POINTER(GUID), ctypes.c_void_p, DWORD, ctypes.POINTER(GUID), ctypes.POINTER(ctypes.c_void_p)]
+        ole32.CoCreateInstance.restype = HRESULT
+        ole32.CoTaskMemFree.argtypes = [ctypes.c_void_p]
+        ole32.CoTaskMemFree.restype = None
+
+        initialized = False
+        dialog = ctypes.c_void_p()
+        results_array = ctypes.c_void_p()
+        try:
+            hr = ole32.CoInitializeEx(None, COINIT_APARTMENTTHREADED)
+            # RPC_E_CHANGED_MODE means COM is already initialized differently;
+            # still try to use the dialog and do not CoUninitialize in that case.
+            if hresult_u32(hr) != 0x80010106:
+                initialized = True
+            hr = ole32.CoCreateInstance(
+                ctypes.byref(CLSID_FileOpenDialog),
+                None,
+                CLSCTX_INPROC_SERVER,
+                ctypes.byref(IID_IFileOpenDialog),
+                ctypes.byref(dialog),
+            )
+            if failed(hr) or not dialog.value:
+                return []
+
+            get_options = com_method(dialog, 10, HRESULT, ctypes.POINTER(DWORD))
+            set_options = com_method(dialog, 9, HRESULT, DWORD)
+            set_title = com_method(dialog, 17, HRESULT, LPCWSTR)
+            show = com_method(dialog, 3, HRESULT, HWND)
+            get_results = com_method(dialog, 27, HRESULT, ctypes.POINTER(ctypes.c_void_p))
+
+            options = DWORD(0)
+            if not failed(get_options(dialog, ctypes.byref(options))):
+                set_options(dialog, options.value | FOS_PICKFOLDERS | FOS_FORCEFILESYSTEM | FOS_ALLOWMULTISELECT | FOS_PATHMUSTEXIST)
+            else:
+                set_options(dialog, FOS_PICKFOLDERS | FOS_FORCEFILESYSTEM | FOS_ALLOWMULTISELECT | FOS_PATHMUSTEXIST)
+            set_title(dialog, title)
+
+            owner = HWND(self.root.winfo_id())
+            hr = show(dialog, owner)
+            if hresult_u32(hr) == ERROR_CANCELLED:
+                return []
+            if failed(hr):
+                return []
+
+            hr = get_results(dialog, ctypes.byref(results_array))
+            if failed(hr) or not results_array.value:
+                return []
+
+            array_get_count = com_method(results_array, 7, HRESULT, ctypes.POINTER(DWORD))
+            array_get_item_at = com_method(results_array, 8, HRESULT, DWORD, ctypes.POINTER(ctypes.c_void_p))
+            release = com_method(results_array, 2, ULONG)
+
+            count = DWORD(0)
+            if failed(array_get_count(results_array, ctypes.byref(count))):
+                return []
+
+            selected: list[str] = []
+            for i in range(count.value):
+                item = ctypes.c_void_p()
+                if failed(array_get_item_at(results_array, i, ctypes.byref(item))) or not item.value:
+                    continue
+                try:
+                    item_get_display_name = com_method(item, 5, HRESULT, DWORD, ctypes.POINTER(ctypes.c_void_p))
+                    item_release = com_method(item, 2, ULONG)
+                    raw_path = ctypes.c_void_p()
+                    if not failed(item_get_display_name(item, SIGDN_FILESYSPATH, ctypes.byref(raw_path))) and raw_path.value:
+                        selected.append(ctypes.wstring_at(raw_path))
+                        ole32.CoTaskMemFree(raw_path)
+                finally:
+                    try:
+                        item_release(item)
+                    except Exception:
+                        pass
+            return selected
+        finally:
+            if results_array.value:
+                try:
+                    release(results_array)
+                except Exception:
+                    pass
+            if dialog.value:
+                try:
+                    dialog_release = com_method(dialog, 2, ULONG)
+                    dialog_release(dialog)
+                except Exception:
+                    pass
+            if initialized:
+                ole32.CoUninitialize()
+
+    def _enable_path_drop(self, widget: tk.Widget, callback) -> bool:
+        """Enable file/folder drop for a widget.
+
+        Uses tkinterdnd2 when available, then falls back to native Windows
+        WM_DROPFILES support. The callback receives list[str] paths.
+        """
+        enabled = False
+        if DND_FILES is not None and hasattr(widget, "drop_target_register"):
+            try:
+                widget.drop_target_register(DND_FILES)
+                widget.dnd_bind("<<Drop>>", lambda event: callback(self._parse_dropped_paths(event.data)))
+                enabled = True
+            except Exception:
+                enabled = False
+        if not enabled:
+            enabled = self._enable_windows_file_drop(widget, callback)
+        return enabled
+
+    def _enable_windows_file_drop(self, widget: tk.Widget, callback) -> bool:
+        """Windows Explorer drag/drop support without third-party packages."""
+        if sys.platform != "win32":
+            return False
+        try:
+            import ctypes
+            from ctypes import wintypes
+
+            widget.update_idletasks()
+            hwnd = wintypes.HWND(widget.winfo_id())
+            shell32 = ctypes.windll.shell32
+            user32 = ctypes.windll.user32
+            WM_DROPFILES = 0x0233
+            GWLP_WNDPROC = -4
+
+            WNDPROC = ctypes.WINFUNCTYPE(wintypes.LPARAM, wintypes.HWND, wintypes.UINT, wintypes.WPARAM, wintypes.LPARAM)
+            call_window_proc = user32.CallWindowProcW
+            call_window_proc.argtypes = [ctypes.c_void_p, wintypes.HWND, wintypes.UINT, wintypes.WPARAM, wintypes.LPARAM]
+            call_window_proc.restype = wintypes.LPARAM
+
+            if ctypes.sizeof(ctypes.c_void_p) == 8:
+                get_window_long = user32.GetWindowLongPtrW
+                set_window_long = user32.SetWindowLongPtrW
+                get_window_long.restype = ctypes.c_void_p
+                get_window_long.argtypes = [wintypes.HWND, ctypes.c_int]
+                set_window_long.restype = ctypes.c_void_p
+                set_window_long.argtypes = [wintypes.HWND, ctypes.c_int, ctypes.c_void_p]
+            else:
+                get_window_long = user32.GetWindowLongW
+                set_window_long = user32.SetWindowLongW
+                get_window_long.restype = ctypes.c_void_p
+                get_window_long.argtypes = [wintypes.HWND, ctypes.c_int]
+                set_window_long.restype = ctypes.c_void_p
+                set_window_long.argtypes = [wintypes.HWND, ctypes.c_int, ctypes.c_void_p]
+
+            old_proc = get_window_long(hwnd, GWLP_WNDPROC)
+            if not old_proc:
+                return False
+
+            def wndproc(window, msg, wparam, lparam):
+                if msg == WM_DROPFILES:
+                    hdrop = wparam
+                    count = shell32.DragQueryFileW(hdrop, 0xFFFFFFFF, None, 0)
+                    paths: list[str] = []
+                    for index in range(count):
+                        length = shell32.DragQueryFileW(hdrop, index, None, 0)
+                        buffer = ctypes.create_unicode_buffer(length + 1)
+                        shell32.DragQueryFileW(hdrop, index, buffer, length + 1)
+                        paths.append(buffer.value)
+                    shell32.DragFinish(hdrop)
+                    self.root.after(0, lambda dropped=paths: callback(dropped))
+                    return 0
+                return call_window_proc(old_proc, window, msg, wparam, lparam)
+
+            new_proc = WNDPROC(wndproc)
+            set_window_long(hwnd, GWLP_WNDPROC, ctypes.cast(new_proc, ctypes.c_void_p))
+            shell32.DragAcceptFiles(hwnd, True)
+            self._drop_refs.append((widget, hwnd, old_proc, new_proc))
+            return True
+        except Exception:
+            return False
 
     def _build_validate_tab(self, nb: ttk.Notebook) -> None:
         frame = self._frame(nb, "Validate")
@@ -419,6 +698,14 @@ class ToolkitGUI:
         backup_missing = tk.BooleanVar(value=True)
         rename_folders = tk.BooleanVar(value=True)
         allow_invalid = tk.BooleanVar(value=False)
+        allow_invalid_state = {"value": False}
+
+        def sync_allow_invalid_state() -> None:
+            # Tk variables should stay on the UI thread. Keep a tiny shared
+            # mirror so the running worker can read Allow invalid live.
+            allow_invalid_state["value"] = bool(allow_invalid.get())
+
+        sync_allow_invalid_state()
 
         for label, var, width in (("Max files", max_files, 5), ("Max lines", max_lines, 6), ("Max entries", max_entries, 5), ("Wait", wait_seconds, 5), ("Timeout", timeout_seconds, 5), ("Retries", retries, 5)):
             tk.Label(web2, text=label, bg=BG, fg=TEXT).pack(side="left")
@@ -429,7 +716,7 @@ class ToolkitGUI:
         tk.Checkbutton(web3, text="Rename (1)", variable=rename_dupes, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
         tk.Checkbutton(web3, text="Create Copy.po if missing", variable=backup_missing, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
         tk.Checkbutton(web3, text="Rename segment folders", variable=rename_folders, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
-        tk.Checkbutton(web3, text="Allow invalid", variable=allow_invalid, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
+        tk.Checkbutton(web3, text="Allow invalid", variable=allow_invalid, command=sync_allow_invalid_state, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left", padx=(12, 0))
 
         log = self._log(frame)
         btnrow = tk.Frame(frame, bg=BG)
@@ -455,7 +742,7 @@ class ToolkitGUI:
                 max_entries_per_batch=int(max_entries.get()),
                 wait_between_batches=float(wait_seconds.get()),
                 cdp_url=cdp_var.get().strip() or "http://localhost:9222",
-                allow_invalid=allow_invalid.get(),
+                allow_invalid=lambda: bool(allow_invalid_state["value"]),
                 rename_duplicates=rename_dupes.get(),
                 create_missing_backups=backup_missing.get(),
                 rename_folders=rename_folders.get(),
@@ -510,8 +797,8 @@ class ToolkitGUI:
 
         restore_box_frame = tk.Frame(frame, bg=BG)
         restore_box_frame.pack(fill="x", padx=12, pady=5)
-        tk.Label(restore_box_frame, text="Restore folders", bg=BG, fg=TEXT, font=("Segoe UI", 9, "bold"), width=14, anchor="w").pack(side="left", anchor="n")
-        restore_list = tk.Listbox(restore_box_frame, bg=PANEL, fg=TEXT, selectbackground=ACCENT, selectforeground="#111", font=MONO, height=4)
+        tk.Label(restore_box_frame, text="Restore paths", bg=BG, fg=TEXT, font=("Segoe UI", 9, "bold"), width=14, anchor="w").pack(side="left", anchor="n")
+        restore_list = tk.Listbox(restore_box_frame, bg=PANEL, fg=TEXT, selectbackground=ACCENT, selectforeground="#111", font=MONO, height=5, selectmode="extended")
         restore_list.pack(side="left", fill="x", expand=True, padx=8)
         restore_btns = tk.Frame(restore_box_frame, bg=BG)
         restore_btns.pack(side="left", fill="y")
@@ -527,12 +814,35 @@ class ToolkitGUI:
             self.config["restore_copy_paths"] = restore_paths
             save_config(self.config)
 
-        def add_restore_folder() -> None:
-            folder = filedialog.askdirectory(title="Select folder containing Copy.po backups")
-            if folder and folder not in restore_paths:
-                restore_paths.append(folder)
+        def add_restore_paths(paths: list[str] | tuple[str, ...]) -> int:
+            added = 0
+            for raw in paths:
+                raw = str(raw).strip()
+                if not raw:
+                    continue
+                try:
+                    path = Path(raw).expanduser()
+                except Exception:
+                    continue
+                if not path.exists():
+                    continue
+                if path.is_file() and path.suffix.lower() != ".po":
+                    continue
+                try:
+                    path_text = str(path.resolve())
+                except Exception:
+                    path_text = str(path)
+                if path_text not in restore_paths:
+                    restore_paths.append(path_text)
+                    added += 1
+            if added:
                 refresh_restore_list()
                 save_restore_paths()
+            return added
+
+        def add_restore_folder() -> None:
+            folders = self._ask_restore_folders("Select one or more folders containing Copy.po backups")
+            add_restore_paths(folders)
 
         def remove_restore_folder() -> None:
             selected = list(restore_list.curselection())
@@ -546,14 +856,18 @@ class ToolkitGUI:
             refresh_restore_list()
             save_restore_paths()
 
-        tk.Button(restore_btns, text="Add Folder", command=add_restore_folder, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x", pady=(0, 4))
+        tk.Button(restore_btns, text="Add Folders", command=add_restore_folder, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x", pady=(0, 4))
         tk.Button(restore_btns, text="Remove", command=remove_restore_folder, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x", pady=(0, 4))
         tk.Button(restore_btns, text="Clear", command=clear_restore_folders, bg=ACCENT, fg="#111", relief="flat", padx=10).pack(fill="x")
+        restore_list.bind("<Delete>", lambda _event: remove_restore_folder())
         refresh_restore_list()
 
+        drop_enabled = self._enable_path_drop(restore_list, add_restore_paths)
+        drop_enabled = self._enable_path_drop(restore_box_frame, add_restore_paths) or drop_enabled
+        drop_text = "Drag folders or - Copy.po files into the restore list. " if drop_enabled else ""
         hint = tk.Label(
             frame,
-            text="Restore scans every selected folder recursively. It overwrites working .po from matching - Copy.po. Copy.po files are never changed.",
+            text=drop_text + "Restore scans selected folders recursively. It overwrites working .po from matching - Copy.po. Copy.po files are never changed.",
             bg=BG,
             fg=WARN,
             anchor="w",
@@ -580,7 +894,7 @@ class ToolkitGUI:
         def restore_from_copy(logwrite):
             paths = list(restore_paths)
             if not paths:
-                logwrite("Add one or more restore folders first.", "warn")
+                logwrite("Add or drag one or more restore folders / - Copy.po files first.", "warn")
                 return
             self._check_stop()
             results = restore_working_po_from_copies(paths)
@@ -618,7 +932,7 @@ class ToolkitGUI:
 
 
 def main() -> None:
-    root = tk.Tk()
+    root = TkinterDnD.Tk() if TkinterDnD is not None else tk.Tk()
     ToolkitGUI(root)
     root.mainloop()
 

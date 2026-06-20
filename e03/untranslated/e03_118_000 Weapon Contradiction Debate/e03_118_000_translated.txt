@@ -1,107 +1,141 @@
 --- Gemini Translation Raw Output for e03_118_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. お主にも何か考えがあるのだろうが…
+#. 我には理解できん。
 msgctxt "0001 | SAKURA OOGAMI"
 msgid ""
 "Maybe you have some idea, but...I don't understand at\n"
 "all."
 msgstr ""
-"Có lẽ bản thân em đã có suy tính gì đó, nhưng... tôi hoàn toàn\n"
-"không thể hiểu nổi."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. 意味の無い事をおっしゃられても困りますわ。
+#. 時間のムダです。
 msgctxt "0003 | CELES"
 msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Những lời nói vô nghĩa của cậu làm tôi thấy mệt mỏi rồi. Làm ơn đừng lãng\n"
-"phí thời gian của tôi nữa."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. その真剣な眼差し…殺したくなるぜ…
+#. まーくんの言ってる意味は分かんないけどね！
 msgctxt "0005 | TOUKO FUKAWA"
 msgid ""
 "I have no idea what you're talking about, but I wanna\n"
 "stab your seriously adorably serious face off!"
 msgstr ""
-"Tôi chả hiểu cậu đang lải nhải cái quái gì hết, nhưng nhìn cái bản mặt nghiêm\n"
-"túc đến mức đáng yêu một cách nghiêm túc kia là tôi lại muốn đâm cho mấy phát rồi đấy!"
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ほうほう、なるほど。
+#. それはつまり…って全然わかんねーぞ！
 msgctxt "0007 | YASUHIRO HAGAKURE"
 msgid ""
 "Hmm, yes, I see. So what you're saying is...I have\n"
 "absolutely no idea!"
 msgstr ""
-"Ừm ừm, ra là thế. Tóm lại những gì cậu đang muốn nói là... tớ hoàn toàn\n"
-"chả hiểu cái vẹo gì hết!"
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧山田クンが殺された凶器…
+#. 石丸クンを殺した凶器と同じような物だとすると…
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>If the weapon used to kill Hifumi really was similar\n"
+"⟦CLT 4⟧If the weapon used to kill Hifumi really was similar\n"
 "to the weapon used to kill Taka...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nếu hung khí dùng để sát hại Hifumi thực sự tương đồng\n"
-"với loại hung khí đã lấy mạng Ishimaru...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧山田クンが殺されたのって、
+#. 美術倉庫だったんだよな…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Hifumi was killed in the repository, right?\n"
-"<CLT>"
+"⟦CLT 4⟧Hifumi was killed in the repository, right?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Hifumi đã bị hạ sát ở kho mỹ thuật đúng không nhỉ...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧しかも、山田クンと石丸クンが
+#. 同じような凶器で殺されているとなると…
+#. ⟦CLT⟧
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>So if the weapons used to kill both of them were\n"
+"⟦CLT 4⟧So if the weapons used to kill both of them were\n"
 "actually similar...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Vậy nếu những hung khí dùng để sát hại cả hai người họ\n"
-"trên thực tế đều tương tự như nhau...\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | SAKURA OOGAMI"
+msgstr "Có lẽ cậu có ý tưởng nào đó, nhưng... tôi chẳng hiểu gì cả."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0003 | CELES"
+msgstr "Cậu cứ nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0005 | TOUKO FUKAWA"
+msgstr "Tớ chẳng hiểu cậu đang nói gì cả, nhưng tớ muốn đâm nát cái khuôn mặt nghiêm túc đáng yêu đó của cậu ghê!"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgstr "Hừm, ừ, tớ hiểu rồi. Nghĩa là cậu đang nói... tớ chẳng hiểu cái gì cả!"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nếu hung khí dùng để giết Hifumi thực sự tương tự với hung khí dùng để giết Taka...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hifumi đã bị giết ở kho chứa đồ mỹ thuật, đúng không nhỉ...\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hơn nữa, nếu hung khí dùng để giết cả hai cậu ấy thực sự giống nhau thì...\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Weapon Contradiction Debate
+Contradiction Debate Thoughts
 

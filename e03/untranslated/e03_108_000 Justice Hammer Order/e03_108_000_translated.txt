@@ -1,77 +1,102 @@
 --- Gemini Translation Raw Output for e03_108_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ちょっと苗木、脅かさないでよ！
+#. 何か変な事言ったかと思っちゃったじゃん！
 msgctxt "0001 | AOI ASAHINA"
 msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Thôi đi Makoto, đừng làm tui hết hồn như vậy chứ! Làm tui cứ tưởng\n"
-"có chuyện gì kỳ lạ đang xảy ra không hà!"
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ちょっと苗木、脅かさないでよ！
+#. 何か変な事言ったかと思っちゃったじゃん！
 msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Thôi đi Makoto, đừng làm tui hết hồn như vậy chứ! Làm tui cứ tưởng\n"
-"có chuyện gì kỳ lạ đang xảy ra không hà!"
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧凶器となったジャスティスハンマーに
+#. 振られていた番号…
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The order that the Justice Hammers were used in to\n"
+"⟦CLT 4⟧The order that the Justice Hammers were used in to\n"
 "commit the murders...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Thứ tự các cây búa Justice Hammer được sử dụng để\n"
-"thực hiện các vụ sát hại...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧何か…引っ掛かるんだよな…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Something about that is bothering me.\n"
-"<CLT>"
+"⟦CLT 4⟧Something about that is bothering me.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có điều gì đó về chuyện này đang làm mình thấy lấn cấn.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧確かに、ジャスティスハンマーには、
+#. 番号が振られていたけど…
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The Justice Hammers *were* numbered, but...\n"
-"<CLT>"
+"⟦CLT 4⟧The Justice Hammers *were* numbered, but...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Các cây búa Justice Hammer đúng là đã được đánh số, nhưng...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧本当に、その番号通りに使われたのか？
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"...were they really used in that order?\n"
-"<CLT>"
+"⟦CLT 4⟧...were they really used in that order?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>...liệu chúng có thực sự được sử dụng theo đúng thứ tự đó không?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | AOI ASAHINA"
+msgstr "Kìa Naegi, đừng có hù tui như vậy chứ! Làm tui cứ tưởng ông vừa nói gì đó kỳ lạ lắm cơ đấy!"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0003 | AOI ASAHINA"
+msgstr "Kìa Naegi, đừng có hù tui như vậy chứ! Làm tui cứ tưởng ông vừa nói gì đó kỳ lạ lắm cơ đấy!"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thứ tự số hiệu được đánh trên những cây búa Justice Hammer vốn là hung khí của các vụ giết người...\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có điều gì đó... cứ làm mình vướng bận mãi.\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đúng là những cây búa Justice Hammer có được đánh số hiệu thật, nhưng...\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "...liệu chúng có thực sự được sử dụng theo đúng thứ tự số hiệu đó không?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Justice Hammer Order
+Hammer Order Suspicion
 

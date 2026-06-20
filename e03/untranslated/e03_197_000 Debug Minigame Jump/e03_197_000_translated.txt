@@ -1,27 +1,42 @@
 --- Gemini Translation Raw Output for e03_197_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. クライマックス推理に飛ぶ
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Jump to the Closing Argument"
-msgstr "Nhảy đến Lập luận Chung cuộc"
+msgstr ""
 
+#. ＭＴＢに飛ぶ
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Jump to the Bullet Time Battle"
-msgstr "Nhảy đến Trận Chiến Đấu Khẩu"
+msgstr ""
 
+#. 閃きアナグラムに飛ぶ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Jump to the Hangman's Gambit"
-msgstr "Nhảy đến Trò chơi Ghép chữ"
+msgstr ""
 
+#. ⟦CLT 23⟧ジャンプ先を選んでください
+#. ⟦CLT⟧
 msgctxt "0004 | NARRATION"
 msgid ""
-"Where would you like to jump to?\n"
-"<CLT>"
+"⟦CLT 23⟧Where would you like to jump to?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>Bạn muốn nhảy đến phần nào?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Suy Luận Cao Trào"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Trận đấu Đối thoại Căng thẳng"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Nhảy đến Trò chơi Chữ cái"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn nhảy đến đâu?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Debug Minigame Jump
+Trial Minigame Jump
 

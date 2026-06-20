@@ -1,39 +1,56 @@
 --- Gemini Translation Raw Output for e03_040_144.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧結構、広い湯船だ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>This bathtub is huge...\n"
-"<CLT>"
+"⟦CLT 4⟧This bathtub is huge...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bồn tắm này lớn thật đấy...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧でも…お風呂に入ってる場合じゃない…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But now's no time for taking baths.\n"
-"<CLT>"
+"⟦CLT 4⟧But now's no time for taking baths.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng lúc này không phải là lúc để tắm rửa đâu.\n"
-"<CLT>"
 
+#. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧大浴場から出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the bathhouse?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Bồn tắm này to thật đấy...\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng lúc này đâu phải lúc để tắm rửa.\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0005 | NARRATION"
-msgid ""
-"<CLT 23>Leave the bathhouse?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi nhà tắm công cộng sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi nhà tắm công cộng chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Bathhouse Tub Inspection
+Bathhouse Bathtub Investigation
 

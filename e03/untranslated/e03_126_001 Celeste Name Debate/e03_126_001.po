@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. 山田君が示そうとしたのは…
 msgctxt "0001 | KYOUKO KIRIGIRI"
 msgid "Hifumi was trying to tell us something..."
-msgstr "Hifumi đã cố gắng nói với chúng ta một điều gì đó..."
+msgstr "Hifumi đã cố gắng nói với chúng ta điều gì đó..."
 
 #. <CLT 9>苗字がやすひろ<CLT>の
 #. 人物だったはず。
@@ -23,9 +22,7 @@ msgctxt "0002 | KYOUKO KIRIGIRI"
 msgid ""
 "He wanted us to know\n"
 "the <CLT 9>killer's last name—Yasuhiro<CLT>."
-msgstr ""
-"Cậu ta muốn chúng ta biết được <CLT 9>họ của hung thủ\n"
-"chính là Yasuhiro<CLT>."
+msgstr "Cậu ấy muốn chúng ta biết <CLT 9>họ của kẻ thủ ác—Yasuhiro<CLT>."
 
 #. この中にやすひろって
 #. 苗字の人がいるとしたら…
@@ -33,7 +30,7 @@ msgctxt "0003 | AOI ASAHINA"
 msgid ""
 "If there's one person here\n"
 "who might have that last name..."
-msgstr "Nếu xét trong số mọi người ở đây có ai sở hữu cái họ đó..."
+msgstr "Nếu ở đây có một người mà có thể có cái họ đó..."
 
 #. 本名を明かしていない
 #. セレスだろうな。
@@ -43,43 +40,41 @@ msgid ""
 "Celeste. You haven't told anyone\n"
 "what your real name is."
 msgstr ""
-"Thì người đó chỉ có thể là cậu thôi, Celeste. Cậu chưa\n"
-"từng hé môi cho ai biết họ tên thật của mình là gì cả."
+"Thì đó chắc chắn là cậu rồi, Celeste. Cậu vẫn chưa nói cho\n"
+"ai biết tên thật của mình là gì cả."
 
 #. だから何度も
 #. 言ってますように…
 msgctxt "0005 | CELES"
 msgid "How many times do I have to tell you...?"
-msgstr "Tớ phải nói bao nhiêu lần thì mấy người mới chịu hiểu đây...?"
+msgstr "Tớ còn phải nói với các cậu bao nhiêu lần nữa đây...?"
 
 #. わたくしの名前はぁ…
 msgctxt "0006 | CELES"
 msgid "My...name...is..."
-msgstr "Họ tên... thật của tớ... là..."
+msgstr "Tên... của tớ... là..."
 
 #. セレスティア・ルーデンベルク
 #. なんだよぉッ！！
 msgctxt "0007 | CELES"
 msgid "Celestia Ludenberg, goddammit!"
-msgstr "Celestia Ludenberg cơ mà cái lũ khốn kiếp này!"
+msgstr "Celestia Ludenberg, chết tiệt!"
 
 #. いつまで言い張ってるつもりだ…
 msgctxt "0008 | BYAKUYA TOGAMI"
 msgid "How long do you plan to go on pretending...?"
-msgstr "Cô định ngoan cố diễn kịch như vậy đến bao giờ nữa đây...?"
+msgstr "Cô định giả vờ đến bao giờ nữa...?"
 
 #. 言い張るも何も…
 #. それが真実ですわ…
 msgctxt "0009 | CELES"
 msgid "I'm not pretending. It's the truth!"
-msgstr "Tớ không có diễn kịch. Đó là sự thật!"
+msgstr "Tớ không giả vờ. Đó là sự thật!"
 
 #. それを<CLT 9>確かめる方法がない<CLT>以上…
 msgctxt "0010 | CELES"
 msgid "And since you have <CLT 9>no way to contradict me<CLT>..."
-msgstr ""
-"Và một khi các người đã <CLT 9>không có cách nào để bẻ gãy\n"
-"lời tớ nói<CLT>..."
+msgstr "Và vì các cậu <CLT 9>không có cách nào để phản bác tớ<CLT>..."
 
 #. それが真実なんだよッ！
 #. ボケッ！
@@ -87,49 +82,49 @@ msgctxt "0011 | CELES"
 msgid ""
 "...that's the only truth there is!\n"
 "Moron!"
-msgstr "...thì đó chính là sự thật duy nhất tồn tại! Cái lũ đần độn!"
+msgstr "...đó là sự thật duy nhất tồn tại! Đồ đần!"
 
 #. <CLT 26>葉隠じゃないんだね！<CLT>
 msgctxt "0012 | CELES"
 msgid "<CLT 26>It wasn't Hiro!?<CLT>"
-msgstr "<CLT 26>Không phải là Yasuhiro sao?!<CLT>"
+msgstr "<CLT 26>Không phải là Hiro sao!?<CLT>"
 
 #. <CLT 26>その人物が…犯人！<CLT>
 msgctxt "0013 | CELES"
 msgid "<CLT 26>Whoever that is...must have done it!<CLT>"
-msgstr "<CLT 26>Nhân vật đó... chắc chắn chính là hung thủ thực sự!<CLT>"
+msgstr "<CLT 26>Bất kể kẻ đó là ai... chắc chắn hắn đã làm chuyện đó!<CLT>"
 
 #. <CLT 26>偽名の人間は他にいない。<CLT>
 msgctxt "0014 | CELES"
 msgid "<CLT 26>Who else could be using a fake name?<CLT>"
-msgstr "<CLT 26>Làm gì còn ai sử dụng tên giả ngoài cậu ta nữa chứ?<CLT>"
+msgstr "<CLT 26>Còn ai khác có thể đang dùng tên giả chứ?<CLT>"
 
 #. <CLT 26>真実だと…？<CLT>
 msgctxt "0015 | CELES"
 msgid "<CLT 26>The truth...?<CLT>"
-msgstr "<CLT 26>Sự thật sao...?<CLT>"
+msgstr "<CLT 26>Sự thật ư...?<CLT>"
 
 #. <CLT 26>セレスちゃん…なの？<CLT>
 msgctxt "0016 | CELES"
 msgid "<CLT 26>Celeste...was it you?<CLT>"
-msgstr "<CLT 26>Celeste... là cậu thật sao?<CLT>"
+msgstr "<CLT 26>Celeste... có phải là cậu không?<CLT>"
 
 #. <CLT 26>怒った白夜様も素敵ね！<CLT>
 msgctxt "0017 | CELES"
 msgid "<CLT 26>I love it when Master yells at people!<CLT>"
-msgstr "<CLT 26>Nhìn dáng vẻ cậu Byakuya lúc nổi cáu trông cũng ngầu quá đi!<CLT>"
+msgstr "<CLT 26>Tớ thích những lúc ngài Byakuya quát mắng người khác thật đấy!<CLT>"
 
 #. <CLT 26>何か方法は…<CLT>
 msgctxt "0018 | CELES"
 msgid "<CLT 26>What can we do...?<CLT>"
-msgstr "<CLT 26>Liệu có cách nào không...?<CLT>"
+msgstr "<CLT 26>Chúng ta có thể làm gì đây...?<CLT>"
 
 #. <CLT 26>決定的な証拠はないんか！？<CLT>
 msgctxt "0019 | CELES"
 msgid "<CLT 26>Is there no clear evidence!?<CLT>"
-msgstr "<CLT 26>Chẳng lẽ không có bằng chứng quyết định nào sao?!<CLT>"
+msgstr "<CLT 26>Chẳng lẽ không có bằng chứng rõ ràng nào sao!?<CLT>"
 
 #. <CLT 26>あと一手足りんな…<CLT>
 msgctxt "0020 | CELES"
 msgid "<CLT 26>We need to end this now...<CLT>"
-msgstr "<CLT 26>Cần phải chấm dứt chuyện này ngay lúc này thôi...<CLT>"
+msgstr "<CLT 26>Chúng ta cần phải kết thúc chuyện này ngay bây giờ...<CLT>"

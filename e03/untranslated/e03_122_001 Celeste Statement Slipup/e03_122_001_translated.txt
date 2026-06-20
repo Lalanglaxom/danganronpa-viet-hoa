@@ -1,59 +1,93 @@
 --- Gemini Translation Raw Output for e03_122_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. わたくしの発言は
+#. こうでした…
 msgctxt "0001 | CELES"
 msgid "All I said was..."
-msgstr "Tớ chỉ nói là..."
+msgstr ""
 
+#. まるで…
+#. 楽しんでいるようですわね…
 msgctxt "0002 | CELES"
 msgid "They must really be enjoying this..."
-msgstr "Họ chắc hẳn đang thực sự tận hưởng chuyện này..."
+msgstr ""
 
+#. ⟦CLT 9⟧わたくし達⟦CLT⟧が怯え、
+#. 混乱するのを見て…
 msgctxt "0003 | CELES"
 msgid ""
-"Enjoying the sight of <CLT 9>us<CLT> standing around,\n"
+"Enjoying the sight of ⟦CLT 9⟧us⟦CLT⟧ standing around,\n"
 "frightened and confused..."
 msgstr ""
-"Tận hưởng việc nhìn thấy <CLT 9>chúng ta<CLT> đứng xung quanh,\n"
-"sợ hãi và bối rối..."
 
+#. 楽しんでいるようですわ…
 msgctxt "0004 | CELES"
 msgid "They must be positively elated..."
-msgstr "Họ chắc chắn phải đang vô cùng phấn khích..."
+msgstr ""
 
+#. このままだと…
+#. ⟦CLT 9⟧全員⟦CLT⟧殺されてしまいます。
 msgctxt "0005 | CELES"
-msgid "We are <CLT 9>all<CLT> going to die here."
-msgstr "Tất cả <CLT 9>chúng ta<CLT> đều sẽ chết ở đây."
+msgid "We are ⟦CLT 9⟧all⟦CLT⟧ going to die here."
+msgstr ""
 
+#. ⟦CLT 9⟧彼ら⟦CLT⟧のように…
+#. 殺されてしまいます…
 msgctxt "0006 | CELES"
 msgid ""
 "We are going to die,\n"
-"just like <CLT 9>those guys<CLT> died..."
+"just like ⟦CLT 9⟧those guys⟦CLT⟧ died..."
 msgstr ""
-"Chúng ta sẽ chết,\n"
-"giống như <CLT 9>những người đó<CLT> đã chết..."
 
+#. …以上でしたわ。
 msgctxt "0007 | CELES"
 msgid "...And that is all I said."
-msgstr "...Và đó là tất cả những gì tớ đã nói."
+msgstr ""
 
+#. これで、わかっただろう？
 msgctxt "0008 | BYAKUYA TOGAMI"
 msgid ""
 "And that's all it takes to finish this.\n"
 "It's obvious, isn't it?"
 msgstr ""
-"Và chỉ cần như vậy là đủ để kết thúc chuyện này.\n"
-"Nó quá rõ ràng rồi, đúng không?"
 
+#. セレスの発言の
+#. ⟦CLT 9⟧不自然な点⟦CLT⟧が…
 msgctxt "0009 | BYAKUYA TOGAMI"
 msgid ""
-"What was <CLT 9>so strange<CLT> about\n"
+"What was ⟦CLT 9⟧so strange⟦CLT⟧ about\n"
 "Celeste's comment?"
 msgstr ""
-"Có điều gì <CLT 9>quá kỳ lạ<CLT> về\n"
-"lời bình luận của Celeste vậy?"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CELES"
+msgstr "Tất cả những gì tớ đã nói là..."
+
+msgctxt "0002 | CELES"
+msgstr "Chúng có vẻ như..."
+
+msgctxt "0003 | CELES"
+msgstr "Đang tận hưởng việc nhìn thấy ⟦CLT 9⟧chúng ta⟦CLT⟧ sợ hãi và bối rối..."
+
+msgctxt "0004 | CELES"
+msgstr "Chúng dường như đang rất thích thú..."
+
+msgctxt "0005 | CELES"
+msgstr "Cứ đà này... ⟦CLT 9⟧tất cả chúng ta⟦CLT⟧ đều sẽ bị giết hết."
+
+msgctxt "0006 | CELES"
+msgstr "Chúng ta sẽ bị giết... giống như ⟦CLT 9⟧những người kia⟦CLT⟧ đã bị giết..."
+
+msgctxt "0007 | CELES"
+msgstr "...Đó là tất cả những gì tớ đã nói."
+
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgstr "Đến đây thì cô hiểu rồi chứ?"
+
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgstr "⟦CLT 9⟧Điểm bất thường⟦CLT⟧ trong lời nói của Celeste là gì...?"
 
 ==================== FOLDER SUMMARY ====================
-Celeste Statement Slipup
+Celeste Suspicious Statement
 

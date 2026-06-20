@@ -1,63 +1,173 @@
 --- Gemini Translation Raw Output for e03_040_137.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニター…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>This is one of the monitors Monokuma appears on.\n"
-"<CLT>"
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
-"<CLT>"
 
+#. 気にしてもしょうがない、放っておこう。
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
-"nên cố quên nó đi thôi..."
 
+#. ⟦CLT 4⟧監視カメラ…
+#. きっと今も、この向こうで…黒幕が…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Even now, the mastermind is probably on the other side\n"
+"of that surveillance camera...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧そう思うとムカツクけど、放っておくしかない…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Just thinking about it puts me on edge...but there's\n"
+"nothing I can really do about it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0007 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここはトラッシュルーム…つまりゴミ捨て場だ。
+#. 鉄格子がジャマで中に入れないか。
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the trash room. The dump, in other words. I\n"
+"don't have any way to get past the gate...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、事件には関係なさそうだな…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But it doesn't seem related to the case, anyway.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧鉄格子の開閉スイッチだ…
+#. ⟦CLT⟧
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's the switch that raises and lowers the gate.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクは鍵を持ってないから、開けられない…
+#. ⟦CLT⟧
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't have the key, so I can't activate it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧「ガタガタガタ！」
+#. ⟦CLT⟧
+msgctxt "0012 | NARRATION"
+msgid ""
+"⟦CLT 23⟧*Rattle rattle*\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 開かない…
+#. 鍵が掛かってるみたいだ…
+msgctxt "0013 | MAKOTO NAEGI"
+msgid "The door won't budge. It must be locked."
+msgstr ""
+
+#. はい
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0016 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những chiếc màn hình mà Monokuma dùng để xuất hiện.\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Giờ bận tâm về nó cũng chẳng để làm gì. Mình nên cố quên nó đi thôi..."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của chiếc camera giám sát đó...\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chỉ nghĩ đến thôi đã thấy bực mình rồi... nhưng mình thực sự chẳng thể làm gì được.\n⟦CLT⟧"
+
+msgctxt "0005 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0006 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0007 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
-"<CLT>"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là phòng rác. Nói cách khác thì là bãi đổ rác. Mình không có cách nào để đi qua cánh cổng sắt cả...\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng dù sao thì có vẻ nó cũng không liên quan gì đến vụ án.\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là công tắc để đóng mở cánh cổng sắt.\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không có chìa khóa nên không kích hoạt nó được.\n⟦CLT⟧"
 
 msgctxt "0012 | NARRATION"
-msgid ""
-"<CLT 23>*Rattle rattle*\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>*Lạch cạch lạch cạch*\n"
-"<CLT>"
+msgstr "⟦CLT 23⟧*Lạch cạch lạch cạch*\n⟦CLT⟧"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "Cửa không hề nhúc nhích. Chắc là bị khóa rồi."
 
 msgctxt "0014 | CHOICE/RE:ACT"
-msgid "Yes"
 msgstr "Có"
 
 msgctxt "0015 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0016 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Rattling Monitor Room
+Trash Room Monitor
 

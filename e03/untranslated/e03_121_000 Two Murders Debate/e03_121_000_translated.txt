@@ -1,6 +1,14 @@
 --- Gemini Translation Raw Output for e03_121_000.po ---
 
 ==================== BATCH 1 REQUEST ====================
+#. でも、今回は⟦CLT 3⟧２つの事件⟦CLT⟧が起きてたんだ…
+#. だったら、共犯関係も成り立つんじゃないかな？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Since there were ⟦CLT 3⟧two murders⟦CLT⟧, it's at least\n"
+"plausible that more than one person was involved."
+msgstr ""
+
 #. …どういう意味だ？
 msgctxt "0002 | SAKURA OOGAMI"
 msgid "...What do you mean?"
@@ -20,6 +28,11 @@ msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid ""
 "Naturally, if only one person can be saved per murder,\n"
 "an accomplice has no ⟦CLT 3⟧risk versus reward⟦CLT⟧ benefit."
+msgstr ""
+
+#. …天秤作用？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Risk versus reward...benefit?"
 msgstr ""
 
 #. その仕事と釣り合う額の報酬…
@@ -101,12 +114,50 @@ msgid ""
 "the true killer designed it to look."
 msgstr ""
 
+#. 顔を隠した不審者…似たような凶器…そして死体消失…
+#. 犯人は、これらの共通点を作り上げる事で…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"A single suspicious individual, a similar weapon used\n"
+"in each crime, disappearing bodies..."
+msgstr ""
+
 #. 一連の犯行が同一犯によって行われていると、
 #. 見せかけようとしたんだ！
 msgctxt "0017 | MAKOTO NAEGI"
 msgid ""
 "By creating one seamless set of circumstances, they\n"
 "made it look like one person was behind it all!"
+msgstr ""
+
+#. 犯人はその計画を共犯者に持ちかけ、
+#. そして、共犯者を得る事に成功し…
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid ""
+"The mastermind picked their target and managed to\n"
+"convince him to go along with their plan."
+msgstr ""
+
+#. 最後に、その共犯者を殺す事で、
+#. １番の懸念材料をも消し去ったという訳か。
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid ""
+"And then, to avoid the \"no accomplices\" rule, they\n"
+"simply...killed their accomplice."
+msgstr ""
+
+#. となると、山田を裏切ったのも、
+#. 当初からの計画通りだったんだろうな…
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgid ""
+"Which, if true, means that betraying Hifumi was part\n"
+"of the plan from the very beginning."
+msgstr ""
+
+#. な、なんなの…その計画って！
+#. いくらなんでも残酷すぎるよ！！
+msgctxt "0021 | AOI ASAHINA"
+msgid "Th-That's just...awful! How could anyone be so cruel!?"
 msgstr ""
 
 #. そうか？　なかなかよく出来た計画じゃないか。
@@ -137,6 +188,16 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
+#. ⟦CLT 4⟧だから、今回の事件を一連の事件としてじゃなく、
+#. それぞれ別の事件として考えるべきだって言ったんだ…
+#. ⟦CLT⟧
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Which is why she said not to look at this as a series\n"
+"of connected events, but entirely separate incidents.\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. ⟦CLT 4⟧霧切さん…すごいけど…
 #. ⟦CLT⟧
 msgctxt "0026 | MAKOTO NAEGI"
@@ -154,6 +215,14 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
+#. ⟦CLT 4⟧…なんだか不自然なくらいだよ。
+#. ⟦CLT⟧
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Like, it's almost unnatural how good she is at this...\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. 共犯者の存在が成り立つ事はわかったが…
 #. では、山田を操っていた真犯人とは何者なのだ？
 msgctxt "0029 | SAKURA OOGAMI"
@@ -165,6 +234,26 @@ msgstr ""
 #. それが問題だな！！
 msgctxt "0030 | TOUKO FUKAWA"
 msgid "That's problem numero uno right now!"
+msgstr ""
+
+#. ⟦CLT 4⟧真犯人…山田クンを操る事で一連の事件を実行し、
+#. そして最終的には山田君を殺した犯人…
+#. ⟦CLT⟧
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The true killer manipulated Hifumi to carry out a\n"
+"number of actions, and in the end...murdered him.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧今までの議論…事件の流れ…
+#. それらすべてを踏まえて考えてみれば…
+#. ⟦CLT⟧
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧In the debates up till now, the way the case has\n"
+"unfolded... When you consider all that...\n"
+"⟦CLT⟧"
 msgstr ""
 
 #. ⟦CLT 4⟧その可能性がありそうなのって、
@@ -221,6 +310,128 @@ msgctxt "0040 | AOI ASAHINA"
 msgid "Um, no... You're still a human...for now."
 msgstr ""
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Vì đã có ⟦CLT 3⟧hai vụ giết người⟦CLT⟧ xảy ra, nên ít nhất khả năng có nhiều hơn một người tham gia là hoàn toàn có cơ sở."
+
+msgctxt "0002 | SAKURA OOGAMI"
+msgstr "...Ý cậu là sao?"
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgstr "Nếu chỉ có một vụ giết người duy nhất, thì ý tưởng về một đồng phạm là điều không đáng để xem xét."
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgstr "Đương nhiên rồi. Nếu mỗi vụ giết người chỉ có thể cứu được một người, thì việc đồng phạm sẽ chẳng mang lại ⟦CLT 3⟧lợi ích gì so với rủi ro⟦CLT⟧ cả..."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "...Lợi ích so với rủi ro...?"
+
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgstr "Phần thưởng xứng đáng với công sức bỏ ra... tức là, phần thưởng tương xứng với cái giá phải trả khi làm đồng phạm..."
+
+msgctxt "0007 | KYOUKO KIRIGIRI"
+msgstr "Sẽ chẳng có ý nghĩa gì khi làm đồng phạm cho ai đó nếu bản thân cậu chẳng nhận được lợi ích gì."
+
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgstr "Tuy nhiên, nếu *có* một lợi ích chung tiềm năng để bù đắp cho rủi ro, thì sự hợp tác trở nên khả thi."
+
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgstr "Cậu đang nói rằng hai người có thể đóng vai đồng phạm của nhau để thực hiện hai vụ giết người riêng biệt sao."
+
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgstr "Tớ nghĩ đó chính là những gì kẻ thủ ác thực sự đã nói với Yamada; rằng mỗi người trong số họ sẽ có một đồng phạm cho tội ác của mình."
+
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgstr "Và dựa trên các sự kiện đã xảy ra, Yamada hẳn là kẻ đã ra tay trước, sát hại Ishimaru."
+
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgstr "Hắn ta đã ép Yamada thực hiện vụ giết người đầu tiên để cậu ta không thể rút lui khỏi việc trợ giúp kế hoạch sau này..."
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "Vậy ra trong vụ án lần này, không phải là một hung thủ duy nhất thực hiện hàng loạt vụ giết người..."
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "Mà là hai hung thủ, mỗi người thực hiện một vụ giết người, tạo thành hai vụ án riêng biệt."
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "Sở dĩ nó trông như thể chỉ có một hung thủ là vì tất cả đều nằm trong sự dàn dựng của kẻ thủ ác thực sự..."
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "Một kẻ đáng ngờ che giấu khuôn mặt... hung khí tương tự nhau... và thi thể biến mất... Bằng cách tạo ra những điểm chung này..."
+
+msgctxt "0017 | MAKOTO NAEGI"
+msgstr "Hung thủ đã cố làm cho chúng ta tưởng rằng tất cả những vụ việc này đều do cùng một người gây ra!"
+
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgstr "Kẻ thủ ác đã đề xuất kế hoạch đó cho đồng phạm của mình, và đã thành công trong việc chiêu mộ được kẻ đó..."
+
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgstr "Cuối cùng, bằng cách sát hại chính đồng phạm đó, hắn đã xóa bỏ luôn mối đe dọa lớn nhất đối với quy tắc “không đồng phạm”."
+
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgstr "Nếu điều đó là thật, thì việc phản bội Yamada chắc chắn đã nằm trong kế hoạch ngay từ đầu rồi."
+
+msgctxt "0021 | AOI ASAHINA"
+msgstr "C-Cái gì thế... kế hoạch gì vậy chứ! Dù có thế nào đi nữa thì cũng quá tàn nhẫn rồi!!"
+
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgstr "Vậy sao? Tôi lại thấy đó là một kế hoạch khá tinh vi đấy chứ. Mặc dù việc chọn đồng phạm có vẻ... hơi lạ."
+
+msgctxt "0023 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dàn dựng hai vụ án như thể là một vụ duy nhất... Đó chính là đặc điểm lớn nhất của vụ án lần này...\n⟦CLT⟧"
+
+msgctxt "0024 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc hẳn Kirigiri đã nhận ra sự thật đó ngay từ đầu rồi...\n⟦CLT⟧"
+
+msgctxt "0025 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đó là lý do tại sao cậu ấy nói rằng chúng ta không nên coi đây là một chuỗi sự kiện liên kết, mà là những vụ việc hoàn toàn tách biệt...\n⟦CLT⟧"
+
+msgctxt "0026 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Kirigiri... cậu ấy thật tuyệt vời... nhưng mà...\n⟦CLT⟧"
+
+msgctxt "0027 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...dù nghĩ thế nào thì cũng... quá mức tuyệt vời rồi đấy...\n⟦CLT⟧"
+
+msgctxt "0028 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...cảm giác như cô ấy giỏi một cách phi tự nhiên vậy.\n⟦CLT⟧"
+
+msgctxt "0029 | SAKURA OOGAMI"
+msgstr "Tôi hiểu khả năng có đồng phạm, nhưng vậy kẻ thủ ác thực sự đang giật dây Yamada là ai?"
+
+msgctxt "0030 | TOUKO FUKAWA"
+msgstr "Đó chính là vấn đề số một lúc này đấy!!"
+
+msgctxt "0031 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Kẻ thủ ác thực sự... kẻ đã thao túng Yamada để thực hiện chuỗi vụ án, và cuối cùng chính là kẻ đã giết Yamada...\n⟦CLT⟧"
+
+msgctxt "0032 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Từ những cuộc tranh luận cho đến giờ... diễn biến của vụ án... Khi cân nhắc tất cả những điều đó...\n⟦CLT⟧"
+
+msgctxt "0033 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...chỉ có một người duy nhất là phù hợp với khả năng đó thôi.\n⟦CLT⟧"
+
+msgctxt "0034 | YASUHIRO HAGAKURE"
+msgstr "Hả!? L-Lại quay về phía tớ nữa hả?"
+
+msgctxt "0035 | SAKURA OOGAMI"
+msgstr "Khoan đã..."
+
+msgctxt "0036 | SAKURA OOGAMI"
+msgstr "Chẳng phải trong những cuộc thảo luận trước đây, chúng ta đã chứng minh rằng Hagakure hoàn toàn không thể thực hiện hành vi phạm tội sao?"
+
+msgctxt "0037 | AOI ASAHINA"
+msgstr "Đúng rồi. Trong suốt vụ án, Hagakure đã mặc bộ đồ robot mà."
+
+msgctxt "0038 | YASUHIRO HAGAKURE"
+msgstr "Đ-Đúng là vậy mà!"
+
+msgctxt "0039 | YASUHIRO HAGAKURE"
+msgstr "Tớ chỉ là một người hùng bị cải tạo đầy bi kịch, đang mong sớm được trở lại thành người đây!"
+
+msgctxt "0040 | AOI ASAHINA"
+msgstr "Ưm, không... Cậu vẫn là con người... tạm thời là thế."
+
+==================== BATCH 2 REQUEST ====================
 #. ⟦CLT 4⟧と、とにかく…
 #. 葉隠クンは真犯人じゃないって事か…
 #. ⟦CLT⟧
@@ -271,6 +482,16 @@ msgid ""
 "then, could you point out the *real* killer?"
 msgstr ""
 
+#. ⟦CLT 4⟧みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. ⟦CLT⟧
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. 本当に、自信を持ってそう言うのか？
 msgctxt "0048 | BYAKUYA TOGAMI"
 msgid "Are you confident in your assertion?"
@@ -304,139 +525,14 @@ msgctxt "0052 | BYAKUYA TOGAMI"
 msgid "The case can't advance through your silence, Makoto."
 msgstr ""
 
-==================== BATCH 1 RESPONSE ====================
-msgctxt "0002 | SAKURA OOGAMI"
-msgstr "...Ý cậu là sao?"
+#. 残念ながら、時間は
+#. お前のような輩にも平等に流れるからな…
+msgctxt "0053 | BYAKUYA TOGAMI"
+msgid ""
+"Unfortunately, time moves just as quickly even for\n"
+"people like you."
+msgstr ""
 
-msgctxt "0003 | KYOUKO KIRIGIRI"
-msgstr "Việc không thể tồn tại đồng phạm chỉ đúng trong trường hợp có một vụ án duy nhất xảy ra mà thôi."
-
-msgctxt "0004 | KYOUKO KIRIGIRI"
-msgstr "Tất nhiên rồi. Nếu một vụ án xảy ra mà chỉ có một người sống sót thoát khỏi đây, thì dù có hợp tác, ⟦CLT 3⟧quy luật đòn bẩy⟦CLT⟧ cũng sẽ không được thiết lập..."
-
-msgctxt "0006 | KYOUKO KIRIGIRI"
-msgstr "Phần thưởng phải tương xứng với công sức bỏ ra... Nói cách khác, phần thưởng phải xứng đáng với mức độ mạo hiểm khi tham gia đồng phạm..."
-
-msgctxt "0007 | KYOUKO KIRIGIRI"
-msgstr "Nếu giúp đỡ sát hại người khác mà bản thân không thể thoát khỏi đây, thì việc trở thành đồng phạm chẳng có ý nghĩa gì cả..."
-
-msgctxt "0008 | KYOUKO KIRIGIRI"
-msgstr "Nhưng ngược lại, chỉ cần quy luật đòn bẩy đó được thiết lập, việc thiết lập mối quan hệ đồng phạm với ai đó không phải là điều bất khả thi..."
-
-msgctxt "0009 | BYAKUYA TOGAMI"
-msgstr "Ý cô là, hai hung thủ có thể thực hiện hai vụ sát hại riêng biệt, rồi trở thành đồng phạm trong vụ án của đối phương sao."
-
-msgctxt "0010 | KYOUKO KIRIGIRI"
-msgstr "Tớ nghĩ hung thủ thực sự đã đề xuất kế hoạch đó với Hifumi. Để lôi kéo cậu ta làm đồng phạm cho tội ác của mình..."
-
-msgctxt "0011 | KYOUKO KIRIGIRI"
-msgstr "Dựa trên chuỗi sự kiện, người đầu tiên ra tay sát hại Taka chắc chắn là Hifumi..."
-
-msgctxt "0012 | KYOUKO KIRIGIRI"
-msgstr "Họ đã để cậu ta gây án trước để không còn đường lui, rồi bắt cậu ta phải giúp đỡ kế hoạch của mình..."
-
-msgctxt "0013 | MAKOTO NAEGI"
-msgstr "Nói cách khác, vụ án lần này không phải là một chuỗi án mạng liên hoàn do một hung thủ duy nhất thực hiện..."
-
-msgctxt "0014 | MAKOTO NAEGI"
-msgstr "Thay vào đó, đây là hai vụ án riêng biệt do hai hung thủ khác nhau gây ra."
-
-msgctxt "0015 | MAKOTO NAEGI"
-msgstr "Sở dĩ chuyện này trông giống như một chuỗi án mạng liên hoàn hoàn toàn là do những mánh khóe ngụy tạo của hung thủ thực sự..."
-
-msgctxt "0017 | MAKOTO NAEGI"
-msgstr "Kẻ đó đã cố tình dàn dựng để khiến cho chuỗi tội ác trông như thể được thực hiện bởi cùng một người!"
-
-msgctxt "0022 | BYAKUYA TOGAMI"
-msgstr "Vậy sao? Xem ra đây là một kế hoạch tương đối hoàn hảo đấy chứ. Ngoại trừ việc lựa chọn đồng phạm ra..."
-
-msgctxt "0023 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Hai vụ án riêng biệt được dàn dựng giống như một vụ án mạng liên hoàn... Đó chính là đặc điểm lớn nhất của vụ án lần này...\n"
-"⟦CLT⟧"
-
-msgctxt "0024 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Chắc chắn Kyoko đã nhận ra sự thật đó ngay từ đầu rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0026 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Kyoko... đỉnh thật đấy... Nhưng mà...\n"
-"⟦CLT⟧"
-
-msgctxt "0027 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Dù có thế nào đi nữa... chuyện này cũng quá đỉnh rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0029 | SAKURA OOGAMI"
-msgstr "Tôi đã hiểu chuyện đồng phạm có thể tồn tại thế nào rồi... Vậy thì, hung thủ thực sự kẻ đã giật dây Hifumi rốt cuộc là ai?"
-
-msgctxt "0030 | TOUKO FUKAWA"
-msgstr "Đó mới là vấn đề nan giải nhất lúc này đấy cậu!"
-
-msgctxt "0033 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Người có khả năng làm chuyện đó nhất... chỉ có thể là người ấy thôi...\n"
-"⟦CLT⟧"
-
-msgctxt "0034 | YASUHIRO HAGAKURE"
-msgstr "Cái gì cơ!? T-Tự dưng chuyện lại quay về phía tớ nữa hả trời?"
-
-msgctxt "0035 | SAKURA OOGAMI"
-msgstr "Khoan đã..."
-
-msgctxt "0036 | SAKURA OOGAMI"
-msgstr "Chẳng phải các cuộc thảo luận từ nãy đến giờ đã chứng minh điều ngược lại, rằng Hiro hoàn toàn không thể gây án sao?"
-
-msgctxt "0037 | AOI ASAHINA"
-msgstr "Đúng vậy đó! Trong suốt thời gian diễn ra vụ án, Hiro đã biến thành robot rồi còn đâu."
-
-msgctxt "0038 | YASUHIRO HAGAKURE"
-msgstr "Đ-Đúng vậy dại ạ!"
-
-msgctxt "0039 | YASUHIRO HAGAKURE"
-msgstr "Tớ chỉ là một người hùng bi kịch bị cải tạo, đang mong muốn được trở lại làm người càng sớm càng tốt thôi dại ơi!"
-
-msgctxt "0040 | AOI ASAHINA"
-msgstr "Ờ, không... Ông vẫn là con người mà... đại khái là vậy."
-
-msgctxt "0041 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧D-Dù sao thì... điều đó nghĩa là Hiro không phải hung thủ thực sự rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0042 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0043 | KYOUKO KIRIGIRI"
-msgstr "Tớ sao...?"
-
-msgctxt "0044 | KYOUKO KIRIGIRI"
-msgstr "Cậu dựa vào bằng chứng nào để nói như vậy... Có thể giải thích cho tớ nghe được không?"
-
-msgctxt "0045 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Ờ... ừm... Cậu nói vậy thì đúng là mình chẳng có bằng chứng nào để giải thích cả...\n"
-"⟦CLT⟧"
-
-msgctxt "0046 | KYOUKO KIRIGIRI"
-msgstr "Xem ra là không có bằng chứng rồi... Vậy thì, lần này cậu hãy chỉ ra hung thủ thực sự một cách chính xác xem?"
-
-msgctxt "0048 | BYAKUYA TOGAMI"
-msgstr "Cậu có thực sự tự tin với lời khẳng định của mình không đấy?"
-
-msgctxt "0049 | MAKOTO NAEGI"
-msgstr "Hử...?"
-
-msgctxt "0050 | KYOUKO KIRIGIRI"
-msgstr "Chẳng phải cậu nên bình tĩnh lại và suy nghĩ kỹ thêm một lần nữa sao—lần này hãy chậm rãi thôi."
-
-msgctxt "0051 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0052 | BYAKUYA TOGAMI"
-msgstr "Makoto, cậu cứ im lặng như vậy thì vụ án không tiến triển được đâu..."
-
-==================== BATCH 2 REQUEST ====================
 #. ⟦CLT 4⟧みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. ⟦CLT⟧
@@ -588,6 +684,16 @@ msgctxt "0076 | BYAKUYA TOGAMI"
 msgid "What's wrong? Do you have something you want to say?"
 msgstr ""
 
+#. ⟦CLT 4⟧共通して取っていた行動…
+#. まさに不審な…
+#. ⟦CLT⟧
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Behavior that they had in common... There's definitely\n"
+"something suspicious there...\n"
+"⟦CLT⟧"
+msgstr ""
+
 #. ⟦CLT 4⟧みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
 #. ⟦CLT⟧
@@ -624,9 +730,136 @@ msgid ""
 "firsthand were Celeste and Hifumi."
 msgstr ""
 
+==================== BATCH 2 RESPONSE ====================
+msgctxt "0041 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧D-Dù sao thì... nếu Hiro không phải là hung thủ, vậy thì...\n⟦CLT⟧"
+
+msgctxt "0042 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0043 | KYOUKO KIRIGIRI"
+msgstr "Tớ...?"
+
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgstr "Cậu dựa vào đâu mà nói như vậy...? Để tớ nghe lời giải thích của cậu xem nào?"
+
+msgctxt "0045 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ưm... hừm... Tớ đoán là khi cậu nói thế thì tớ thực sự không có lời giải thích nào cả...\n⟦CLT⟧"
+
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgstr "Nói cách khác, cậu chẳng có căn cứ gì cả. Vậy thì, lần này cậu chỉ ra hung thủ thực sự giùm tớ được không?"
+
+msgctxt "0047 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgstr "Cậu có thực sự tự tin vào lời khẳng định của mình không?"
+
+msgctxt "0049 | MAKOTO NAEGI"
+msgstr "Hả...?"
+
+msgctxt "0050 | KYOUKO KIRIGIRI"
+msgstr "Có lẽ cậu nên dành một giây và suy nghĩ lại cho kỹ — chậm lại một chút đi."
+
+msgctxt "0051 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0052 | BYAKUYA TOGAMI"
+msgstr "Vụ án không thể tiến triển nếu cậu cứ im lặng như vậy đâu, Makoto."
+
+msgctxt "0053 | BYAKUYA TOGAMI"
+msgstr "Đáng tiếc là thời gian vẫn trôi đi nhanh chóng, ngay cả với những kẻ như cậu..."
+
+msgctxt "0054 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0055 | MAKOTO NAEGI"
+msgstr "Đó là ⟦CLT 3⟧Celeste⟦CLT⟧..."
+
+msgctxt "0056 | CELES"
+msgstr "À, vậy giờ tớ lại trở thành đối tượng đáng nghi sao?"
+
+msgctxt "0057 | CELES"
+msgstr "Hmhmhm. Tớ thực sự rất ghét kiểu đùa như thế này đấy..."
+
+msgctxt "0058 | BYAKUYA TOGAMI"
+msgstr "Đùa ư? Tôi lại không nghĩ vậy..."
+
+msgctxt "0060 | CELES"
+msgstr "Vậy những gì cậu đang nói là tớ đã cố tình chọn hợp tác với Yamada đúng không."
+
+msgctxt "0061 | CELES"
+msgstr "Ý nghĩ rằng tớ sẽ dành dù chỉ một chút thời gian để tương tác với cậu ta..."
+
+msgctxt "0062 | CELES"
+msgstr "Chuyện đó đời nào có xảy ra, đồ ngu xuẩn nàyッ!! Ai mà lại đi hợp tác với cái tên vô dụng đó chứ!!"
+
+msgctxt "0063 | CELES"
+msgstr "…Hèm. Ah, xin lỗi nhé."
+
+msgctxt "0064 | BYAKUYA TOGAMI"
+msgstr "Tôi nói cho mà biết, *có* bằng chứng để hỗ trợ chuyện đó đấy."
+
+msgctxt "0065 | CELES"
+msgstr "…Vậy sao?"
+
+msgctxt "0066 | BYAKUYA TOGAMI"
+msgstr "Đúng vậy. Trong suốt quá trình điều tra, có ⟦CLT 3⟧“một hành động nhất định”⟦CLT⟧ mà chỉ hai người các người thực hiện..."
+
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgstr "Đó chính là căn cứ đấy. Chứng minh rằng hai người các người đã hợp tác với nhau!"
+
+msgctxt "0068 | CHOICE/RE:ACT"
+msgstr "Gặp gỡ kẻ đáng ngờ"
+
+msgctxt "0069 | CHOICE/RE:ACT"
+msgstr "Mảnh giấy giấu trong quần Hifumi"
+
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgstr "Sao ai cũng bị ám ảnh bởi cái quần của Hifumi thế...? Xin hãy xem xét chuyện này nghiêm túc hơn một chút đi..."
+
+msgctxt "0071 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa đưa ra một quyết định tồi tệ rồi...\n⟦CLT⟧"
+
+msgctxt "0072 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0073 | CHOICE/RE:ACT"
+msgstr "Tiếng la hét"
+
+msgctxt "0074 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧À, đúng là cả hai người họ đều la hét rất nhiều. Nhưng tớ không nghĩ đó là lý do...\n⟦CLT⟧"
+
+msgctxt "0075 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0076 | BYAKUYA TOGAMI"
+msgstr "Có chuyện gì vậy...? Cậu có điều gì muốn nói à?"
+
+msgctxt "0077 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hành vi mà họ có điểm chung... Chắc chắn có điều gì đó rất đáng ngờ ở đó...\n⟦CLT⟧"
+
+msgctxt "0078 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hình như mình vừa làm bản thân mất điểm trước mặt mọi người rồi...\n⟦CLT⟧"
+
+msgctxt "0079 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Điều mà chỉ Hifumi và Celeste có điểm chung... Liệu có phải là...\n⟦CLT⟧"
+
+msgctxt "0080 | MAKOTO NAEGI"
+msgstr "Hành vi mà họ có điểm chung liên quan đến ⟦CLT 3⟧“kẻ đáng ngờ”⟦CLT⟧ mặc bộ đồ đó, đúng không?"
+
+msgctxt "0081 | MAKOTO NAEGI"
+msgstr "Kẻ đáng ngờ đó... Justice Robot... những người duy nhất tận mắt nhìn thấy chính là Celeste và Hifumi."
+
+==================== BATCH 3 REQUEST ====================
 #. でしゃばるな…
 msgctxt "0082 | BYAKUYA TOGAMI"
 msgid "Shush. The adults are talking now."
+msgstr ""
+
+#. ご、ごめん…
+msgctxt "0083 | MAKOTO NAEGI"
+msgid "S-Sorry..."
 msgstr ""
 
 #. 苗木の言う通り、例の不審者を目撃しているのは、
@@ -718,143 +951,6 @@ msgctxt "0096 | CELES"
 msgid "I saw him! The strange costumed man...!"
 msgstr ""
 
-==================== BATCH 2 RESPONSE ====================
-msgctxt "0054 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0055 | MAKOTO NAEGI"
-msgstr "Chính là ⟦CLT 3⟧Celeste⟦CLT⟧..."
-
-msgctxt "0056 | CELES"
-msgstr "Ái chà... tớ đang là người đáng nghi sao?"
-
-msgctxt "0057 | CELES"
-msgstr "U fư fư, thật là đáng ghét. Những lời đùa cợt kiểu đó..."
-
-msgctxt "0058 | BYAKUYA TOGAMI"
-msgstr "Lời đùa cợt sao? Ta tự hỏi liệu có đúng thế không..."
-
-msgctxt "0060 | CELES"
-msgstr "...Vậy ra, ý cậu là tớ và Hifumi đã bắt tay với nhau."
-
-msgctxt "0061 | CELES"
-msgstr "Chuyện đó... việc tớ chịu dành thời gian để tiếp xúc với cậu ta..."
-
-msgctxt "0062 | CELES"
-msgstr "Làm sao có chuyện như thế được hả, cái đồ khốn ngu xuẩn kiaっ!!\n"
-"Đời nào có ai thèm bắt tay với cái thứ vô dụng bết bát đó chứ!!"
-
-msgctxt "0063 | CELES"
-msgstr "...U fư, tớ xin lỗi vì đã thất lễ."
-
-msgctxt "0064 | BYAKUYA TOGAMI"
-msgstr "Nói trước cho cô biết, bằng chứng cũng có cả rồi đấy."
-
-msgctxt "0065 | CELES"
-msgstr "...Bằng chứng sao?"
-
-msgctxt "0066 | BYAKUYA TOGAMI"
-msgstr "Đúng vậy. Trong suốt chuỗi vụ án lần này, chỉ có hai người các người là có cùng ⟦CLT 3⟧\"hành vi\"⟦CLT⟧ đó..."
-
-msgctxt "0067 | BYAKUYA TOGAMI"
-msgstr "Chính điều đó sẽ làm bằng chứng. Cho việc hai người đã bắt tay với nhau!"
-
-msgctxt "0068 | CHOICE/RE:ACT"
-msgstr "Bắt gặp kẻ khả nghi"
-
-msgctxt "0069 | CHOICE/RE:ACT"
-msgstr "Giấu mảnh giấy trong quần trong"
-
-msgctxt "0070 | KYOUKO KIRIGIRI"
-msgstr "Sao mọi người cứ bị ám ảnh bởi chuyện quần trong của Hifumi thế? Làm ơn\n"
-"hãy suy nghĩ một cách nghiêm túc đi..."
-
-msgctxt "0071 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Xem ra mình vừa nói một điều không nên nói rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0072 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0073 | CHOICE/RE:ACT"
-msgstr "Hét lên thật to"
-
-msgctxt "0074 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đúng là cả hai người họ đều hét lên rất to thật... Nhưng có vẻ việc đó\n"
-"bây giờ không liên quan lắm...\n"
-"⟦CLT⟧"
-
-msgctxt "0075 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0076 | BYAKUYA TOGAMI"
-msgstr "Có chuyện gì vậy...? Cậu có điều gì muốn nói à?"
-
-msgctxt "0078 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có vẻ như mình vừa tự làm bẽ mặt bản thân\n"
-"trước mặt mọi người rồi...\n"
-"⟦CLT⟧"
-
-msgctxt "0079 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Hành vi duy nhất mà Hifumi và Celeste đều cùng thực hiện...\n"
-"Chuyện đó, chẳng lẽ là...\n"
-"⟦CLT⟧"
-
-msgctxt "0080 | MAKOTO NAEGI"
-msgstr "Hành vi duy nhất mà Hifumi và Celeste đều cùng thực hiện... Chuyện đó, chẳng phải là việc ⟦CLT 3⟧bắt gặp kẻ khả nghi⟦CLT⟧ sao?"
-
-msgctxt "0081 | MAKOTO NAEGI"
-msgstr "Kẻ khả nghi đó... người thực sự tận mắt bắt gặp Robo Justice chỉ có mỗi Celeste và Hifumi mà thôi."
-
-msgctxt "0082 | BYAKUYA TOGAMI"
-msgstr "Đừng có xía vào... Để người lớn nói chuyện."
-
-msgctxt "0084 | BYAKUYA TOGAMI"
-msgstr "Đúng như Makoto nói, kẻ tận mắt bắt gặp gã khả nghi đó chỉ có mỗi hai người là Hifumi và Celeste..."
-
-msgctxt "0085 | BYAKUYA TOGAMI"
-msgstr "Nếu một mình Hifumi đã là một trong số các hung thủ, thì chuyện lời chứng thực của Celeste, người còn lại, cũng đáng nghi là điều đương nhiên."
-
-msgctxt "0086 | AOI ASAHINA"
-msgstr "Ý ông là tất cả những gì họ nói với tụi mình đều là giả dối sao...?"
-
-msgctxt "0087 | BYAKUYA TOGAMI"
-msgstr "Sau khi đưa Hifumi, kẻ bị thương ở thư viện, đến phòng y tế, tất cả chúng ta đã bắt đầu đi tìm kiếm kẻ khả nghi đúng không?"
-
-msgctxt "0088 | BYAKUYA TOGAMI"
-msgstr "Ngay sau thời điểm đó... hãy nhớ lại lời của Celeste xem."
-
-msgctxt "0089 | CELES"
-msgstr "Một bóng người... Tớ thấy có một bóng người vừa chuyển động ở phía trên cầu thang!"
-
-msgctxt "0090 | BYAKUYA TOGAMI"
-msgstr "Chính vì có lời chứng thực đó mà chúng ta mới di chuyển lên tầng hai."
-
-msgctxt "0091 | BYAKUYA TOGAMI"
-msgstr "Tại đó, để dẫn dụ chúng ta lên phòng chuẩn bị vật lý ở tầng ba..."
-
-msgctxt "0092 | SAKURA OOGAMI"
-msgstr "...Cô ta đã hét lên một tiếng thất thanh ở tầng ba."
-
-msgctxt "0093 | BYAKUYA TOGAMI"
-msgstr "Lúc đó, trước những người nghe thấy tiếng hét rồi tập trung lên tầng ba như chúng ta, Celeste đã nói gì?"
-
-msgctxt "0094 | AOI ASAHINA"
-msgstr "Celeste ơi, có chuyện gì vậy!?"
-
-msgctxt "0095 | BYAKUYA TOGAMI"
-msgstr "Tiếng hét đó có phần hơi thái quá so với một kẻ như cô đấy..."
-
-msgctxt "0096 | CELES"
-msgstr "Tớ đã tìm thấy rồi... gã khả nghi cosplay đó...!"
-
-==================== BATCH 3 REQUEST ====================
 #. わたくしが叫び声を上げたら、
 #. 逃げていきました。
 msgctxt "0097 | CELES"
@@ -1016,6 +1112,128 @@ msgctxt "0123 | CELES"
 msgid "I certainly was not expecting this."
 msgstr ""
 
+==================== BATCH 3 RESPONSE ====================
+msgctxt "0082 | BYAKUYA TOGAMI"
+msgstr "Im lặng đi. Người lớn đang nói chuyện đấy."
+
+msgctxt "0083 | MAKOTO NAEGI"
+msgstr "X-Xin lỗi..."
+
+msgctxt "0084 | BYAKUYA TOGAMI"
+msgstr "Như cậu ta nói, chỉ có Celeste và Hifumi là tận mắt nhìn thấy kẻ mặc bộ đồ đó."
+
+msgctxt "0085 | BYAKUYA TOGAMI"
+msgstr "Nếu chúng ta chấp nhận việc Hifumi là một trong những kẻ thủ ác, thì đương nhiên chúng ta không thể không nghi ngờ lời khai của Celeste."
+
+msgctxt "0086 | AOI ASAHINA"
+msgstr "Cậu đang nói là tất cả những gì họ nói với chúng ta đều là dối trá sao...?"
+
+msgctxt "0087 | BYAKUYA TOGAMI"
+msgstr "Sau khi đưa Hifumi đến phòng y tế, tất cả chúng ta đều bắt đầu tìm kiếm kẻ đó, đúng không?"
+
+msgctxt "0088 | BYAKUYA TOGAMI"
+msgstr "Và không lâu sau đó, cậu có nhớ Celeste đã nói gì không?"
+
+msgctxt "0089 | CELES"
+msgstr "Tớ thấy một cái bóng! Có thứ gì đó đang di chuyển trên đầu cầu thang!"
+
+msgctxt "0090 | BYAKUYA TOGAMI"
+msgstr "Chúng ta đã hướng lên tầng 2 chính vì những gì cô ta khẳng định đã nhìn thấy."
+
+msgctxt "0091 | BYAKUYA TOGAMI"
+msgstr "Tiếp theo, để dẫn dụ tất cả chúng ta lên tầng 3, tới phòng vật lý..."
+
+msgctxt "0092 | SAKURA OOGAMI"
+msgstr "...Cô ta đã thét lên một tiếng kinh hoàng."
+
+msgctxt "0093 | BYAKUYA TOGAMI"
+msgstr "Và khi tất cả chúng ta tập trung lại để xem có chuyện gì, cô ta đã nói gì?"
+
+msgctxt "0094 | AOI ASAHINA"
+msgstr "Celeste, có chuyện gì vậy!?"
+
+msgctxt "0095 | BYAKUYA TOGAMI"
+msgstr "Đó là một tiếng thét khá... mãnh liệt đối với một người như cô đấy."
+
+msgctxt "0096 | CELES"
+msgstr "Tớ đã nhìn thấy hắn! Kẻ mặc bộ đồ kỳ dị đó...!"
+
+msgctxt "0097 | CELES"
+msgstr "Ngay khi tớ thét lên, hắn liền bỏ chạy."
+
+msgctxt "0098 | CELES"
+msgstr "Vì tớ đang chặn đường cầu thang, nên hắn đã đi sâu vào hành lang rồi biến mất...!"
+
+msgctxt "0099 | BYAKUYA TOGAMI"
+msgstr "Sau khi đã làm xong nhiệm vụ lôi kéo tất cả chúng ta lên phòng vật lý..."
+
+msgctxt "0100 | BYAKUYA TOGAMI"
+msgstr "...đã đến lúc đồng bọn của cô ta hành động."
+
+msgctxt "0101 | NO NAME"
+msgstr "Áááááááááá!!!"
+
+msgctxt "0102 | MAKOTO NAEGI"
+msgstr "...Hả!?"
+
+msgctxt "0103 | AOI ASAHINA"
+msgstr "C-Cái gì thế đó!?"
+
+msgctxt "0104 | CELES"
+msgstr "Tiếng đó phát ra từ tầng dưới! Chắc chắn là..."
+
+msgctxt "0105 | MAKOTO NAEGI"
+msgstr "Hifumi! Cậu ấy đang ở phòng y tế!"
+
+msgctxt "0106 | MAKOTO NAEGI"
+msgstr "Chuyện này tệ rồi! Mau quay lại đó thôi!!"
+
+msgctxt "0107 | AOI ASAHINA"
+msgstr "Đó là để chia nhóm chúng ta ra làm hai... để chúng ta phát hiện ra cả hai thi thể cùng lúc sao...!?"
+
+msgctxt "0108 | BYAKUYA TOGAMI"
+msgstr "Thực tế, chính Celeste là người đã đề nghị chúng ta chia nhóm."
+
+msgctxt "0109 | CELES"
+msgstr "Vậy tại sao chúng ta không chia thành hai nhóm nhỉ?"
+
+msgctxt "0110 | BYAKUYA TOGAMI"
+msgstr "Tôi sẽ dẫn đầu nhóm săn lùng. Việc đó có vẻ thú vị hơn nhiều."
+
+msgctxt "0111 | CELES"
+msgstr "Được rồi, Makoto và Hina, hai cậu đi với tớ đến phòng y tế..."
+
+msgctxt "0112 | CELES"
+msgstr "Tớ sẽ để việc truy bắt kẻ đáng ngờ cho Toko, Byakuya và Sakura."
+
+msgctxt "0113 | BYAKUYA TOGAMI"
+msgstr "Sao nào? Ngay khi giả định Celeste và Hifumi hợp tác với nhau, mọi sự trùng hợp đều trở thành những hành động cố ý..."
+
+msgctxt "0115 | BYAKUYA TOGAMI"
+msgstr "Và trên hết là... tiếng thét vang dội của cô lúc trước..."
+
+msgctxt "0116 | NO NAME"
+msgstr "Áááááááááá!!!"
+
+msgctxt "0117 | BYAKUYA TOGAMI"
+msgstr "Đó chẳng phải là ⟦CLT 3⟧tín hiệu cho Hifumi⟦CLT⟧ sao?"
+
+msgctxt "0118 | BYAKUYA TOGAMI"
+msgstr "Đó là cách cô ra hiệu cho hắn rằng: “Chúng tôi đã lên tầng 3, mọi việc đang tiến hành đúng kế hoạch”."
+
+msgctxt "0119 | BYAKUYA TOGAMI"
+msgstr "Nếu không thì tại sao cô lại phải thét một tiếng mà cả trường đều nghe thấy chứ?"
+
+msgctxt "0121 | MAKOTO NAEGI"
+msgstr "Tớ vừa nhận ra một điều kỳ lạ nữa..."
+
+msgctxt "0122 | MAKOTO NAEGI"
+msgstr "Khi chúng ta tìm thấy Hifumi ở phòng y tế, người mà bây giờ chúng ta biết chỉ là đang giả chết..."
+
+msgctxt "0123 | CELES"
+msgstr "Tớ thực sự không hề mong đợi điều này."
+
+==================== BATCH 4 REQUEST ====================
 #. あの山田クンが…
 msgctxt "0124 | CELES"
 msgid "I did not imagine that Hifumi..."
@@ -1112,128 +1330,6 @@ msgctxt "0139 | CELES"
 msgid "...Oh did I?"
 msgstr ""
 
-==================== BATCH 3 RESPONSE ====================
-msgctxt "0097 | CELES"
-msgstr "Ngay khi tớ cất tiếng hét, hắn ta liền bỏ chạy mất."
-
-msgctxt "0098 | CELES"
-msgstr "Đối diện với tớ lúc đó đang đứng chắn ở cầu thang, hắn đã rẽ vào góc sâu phía hành lang bên trái rồi biến mất!"
-
-msgctxt "0099 | BYAKUYA TOGAMI"
-msgstr "Sau khi đã hoàn thành việc dẫn dụ chúng ta lên phòng chuẩn bị vật lý bằng cách đó..."
-
-msgctxt "0100 | BYAKUYA TOGAMI"
-msgstr "...thì đã đến lúc gã đồng phạm còn lại ra tay."
-
-msgctxt "0101 | NO NAME"
-msgstr "Á hựựựựựựっっっ!!!"
-
-msgctxt "0102 | MAKOTO NAEGI"
-msgstr "...Ủa!?"
-
-msgctxt "0103 | AOI ASAHINA"
-msgstr "C-Cái gì thế!?"
-
-msgctxt "0104 | CELES"
-msgstr "Tiếng động đó phát ra từ tầng dưới! Chắc chắn phải là..."
-
-msgctxt "0105 | MAKOTO NAEGI"
-msgstr "Hifumi! Cậu ấy đang ở phòng y tế!"
-
-msgctxt "0106 | MAKOTO NAEGI"
-msgstr "Chuyện này tệ rồi! Mau lên, chúng ta phải quay lại thôi!"
-
-msgctxt "0107 | AOI ASAHINA"
-msgstr "Chuyện đó... là để khiến tụi mình chia làm hai ngả... nhằm phát hiện ra các cái xác cùng một lúc sao...!?"
-
-msgctxt "0108 | BYAKUYA TOGAMI"
-msgstr "Thực tế, kẻ đề xuất chuyện chia làm hai ngả chính là Celeste."
-
-msgctxt "0109 | CELES"
-msgstr "Vậy thì, chúng ta hãy chia làm hai ngả nhé."
-
-msgctxt "0110 | BYAKUYA TOGAMI"
-msgstr "Tớ sẽ tham gia bên đội bắt giữ. Như vậy xem ra có vẻ thú vị hơn."
-
-msgctxt "0111 | CELES"
-msgstr "Vậy thì Makoto và Hina hãy cùng tớ xuống phòng y tế..."
-
-msgctxt "0112 | CELES"
-msgstr "Còn Toko, Byakuya và Sakura, phiền mọi người đi bắt gã khả nghi giúp tớ nhé."
-
-msgctxt "0113 | BYAKUYA TOGAMI"
-msgstr "Sao nào? Ngay khi giả định Celeste và Hifumi bắt tay với nhau, mọi sự ngẫu nhiên liền kết nối thành một chuỗi tất yếu có chủ đích..."
-
-msgctxt "0115 | BYAKUYA TOGAMI"
-msgstr "Nói thêm một chút, tiếng hét vang dội của cô lúc trước..."
-
-msgctxt "0116 | NO NAME"
-msgstr "Ối dồi ôi iiiiiiiっっっ!!"
-
-msgctxt "0117 | BYAKUYA TOGAMI"
-msgstr "Chẳng phải nó đóng vai trò như một ⟦CLT 3⟧\"tín hiệu cho Hifumi\"⟦CLT⟧ sao?"
-
-msgctxt "0118 | BYAKUYA TOGAMI"
-msgstr "\"Bản thân đã lên tới tầng ba đúng như kế hoạch. Hãy hét lên đi\"... đó chính là ý nghĩa của tín hiệu đó."
-
-msgctxt "0119 | BYAKUYA TOGAMI"
-msgstr "Chính vì vậy nên cô mới phải hét lớn đến mức vang vọng khắp cả trường như thế đúng không?"
-
-msgctxt "0121 | MAKOTO NAEGI"
-msgstr "Hơn nữa... lúc đó cũng có một điểm rất đáng nghi..."
-
-msgctxt "0122 | MAKOTO NAEGI"
-msgstr "Khi tụi mình tìm thấy Hifumi đang giả vờ chết ở phòng y tế..."
-
-msgctxt "0123 | CELES"
-msgstr "Chuyện này... tớ thực sự không lường trước được..."
-
-msgctxt "0124 | CELES"
-msgstr "Không ngờ là Hifumi..."
-
-msgctxt "0125 | CELES"
-msgstr "...lại bị sát hại như thế này...!"
-
-msgctxt "0126 | MAKOTO NAEGI"
-msgstr "Lúc đó, người đầu tiên thốt lên từ ⟦CLT 3⟧\"bị sát hại\"⟦CLT⟧ chính là Celeste đúng không...?"
-
-msgctxt "0127 | MAKOTO NAEGI"
-msgstr "Chẳng phải bằng cách nói như vậy, cậu đã cố tình gieo vào đầu tụi tớ suy nghĩ rằng Hifumi thực sự đã chết sao?"
-
-msgctxt "0129 | AOI ASAHINA"
-msgstr "T-Tụi mình... tui không tài nào tin nổi... Tất cả... đều là diễn xuất của Celeste sao...!"
-
-msgctxt "0130 | MAKOTO NAEGI"
-msgstr "...Hina, lúc xác của Hifumi biến mất, cậu đang ở cùng Celeste đúng không?"
-
-msgctxt "0131 | AOI ASAHINA"
-msgstr "Ừm... lúc đó tui thấy trong người không khỏe, nên Celeste đã đưa tui đi nhà vệ sinh..."
-
-msgctxt "0132 | AOI ASAHINA"
-msgstr "...Ủa! Vậy ra chuyện đó cũng là...!?"
-
-msgctxt "0133 | MAKOTO NAEGI"
-msgstr "Không phải cậu ấy lo lắng cho cậu đâu. Có lẽ đó chỉ là cái cớ để tạo sơ hở cho Hifumi trốn khỏi phòng y tế thôi..."
-
-msgctxt "0134 | BYAKUYA TOGAMI"
-msgstr "Từng việc, từng việc một nhìn riêng lẻ thì chỉ là chuyện nhỏ, nhưng một khi đã tích tụ lại, chúng sẽ trở thành một mối nghi ngờ khổng lồ..."
-
-msgctxt "0135 | BYAKUYA TOGAMI"
-msgstr "...Cô có nghĩ vậy không, Celeste?"
-
-msgctxt "0136 | CELES"
-msgstr "Kìa, tớ đâu biết mọi người đang nói về chuyện gì..."
-
-msgctxt "0137 | BYAKUYA TOGAMI"
-msgstr "Có giả vờ ngây ngô cũng vô ích thôi..."
-
-msgctxt "0138 | BYAKUYA TOGAMI"
-msgstr "Cô đã phạm phải một ⟦CLT 3⟧sai lầm⟦CLT⟧ chí mạng."
-
-msgctxt "0139 | CELES"
-msgstr "...Sai lầm sao?"
-
-==================== BATCH 4 REQUEST ====================
 #. 最初にあれを聞いた時は、
 #. さほど深刻には考えなかったが…
 msgctxt "0140 | BYAKUYA TOGAMI"
@@ -1376,65 +1472,108 @@ msgid ""
 msgstr ""
 
 ==================== BATCH 4 RESPONSE ====================
+msgctxt "0124 | CELES"
+msgstr "Tớ không hề nghĩ rằng Hifumi..."
+
+msgctxt "0125 | CELES"
+msgstr "...lại bị sát hại...!"
+
+msgctxt "0126 | MAKOTO NAEGI"
+msgstr "Celeste... cậu là người đầu tiên nói rằng ⟦CLT 3⟧cậu ấy đã bị sát hại⟦CLT⟧ đúng không...?"
+
+msgctxt "0127 | MAKOTO NAEGI"
+msgstr "Có phải cậu muốn dùng cách nói đó để khiến chúng ta tin rằng Hifumi đã chết rồi hay không?"
+
+msgctxt "0129 | AOI ASAHINA"
+msgstr "K-Không thể nào... Tớ không tin được... Tất cả... tất cả chỉ là màn kịch của Celeste sao...!"
+
+msgctxt "0130 | MAKOTO NAEGI"
+msgstr "Hina. Cậu đã ở cùng với Celeste khi thi thể của Hifumi biến mất, đúng không?"
+
+msgctxt "0131 | AOI ASAHINA"
+msgstr "Ừ... Vì tớ cảm thấy hơi khó chịu nên Celeste đã đưa tớ vào nhà vệ sinh..."
+
+msgctxt "0132 | AOI ASAHINA"
+msgstr "...Khoan đã! Vậy thì việc đó cũng là...!?"
+
+msgctxt "0133 | MAKOTO NAEGI"
+msgstr "Cậu ấy không hề lo lắng cho cậu đâu. Có lẽ cậu ấy chỉ tìm cơ hội để giúp Hifumi lẻn ra khỏi phòng y tế thôi..."
+
+msgctxt "0134 | BYAKUYA TOGAMI"
+msgstr "Mỗi manh mối tuy nhỏ bé nhưng khi đặt chúng lại với nhau, bức tranh hiện ra lại vô cùng tồi tệ..."
+
+msgctxt "0135 | BYAKUYA TOGAMI"
+msgstr "…Cậu không nghĩ vậy sao, Celeste?"
+
+msgctxt "0136 | CELES"
+msgstr "Chà, cậu đang nói về chuyện gì thế...?"
+
+msgctxt "0137 | BYAKUYA TOGAMI"
+msgstr "Đừng cố chối cãi nữa..."
+
+msgctxt "0138 | BYAKUYA TOGAMI"
+msgstr "Cô đã phạm phải một ⟦CLT 3⟧sai lầm⟦CLT⟧ chết người rồi."
+
+msgctxt "0139 | CELES"
+msgstr "…Sai lầm sao?"
+
 msgctxt "0140 | BYAKUYA TOGAMI"
-msgstr "Khi cô vừa nói câu đó ra lần đầu, ta cũng không mảy may suy nghĩ nghiêm trọng về nó, nhưng..."
+msgstr "Khi cô vừa nói câu đó, tôi đã không xem xét nó quá nghiêm trọng..."
 
 msgctxt "0141 | BYAKUYA TOGAMI"
-msgstr "...đến nước này rồi thì ta có thể khẳng định chắc chắn. Đó chính là một sai lầm chí mạng mà cô đã phạm phải."
+msgstr "...nhưng giờ nhìn lại, tôi có thể khẳng định rõ ràng. Đó chính là sai lầm chết người mà cô đã phạm phải."
 
 msgctxt "0142 | CELES"
-msgstr "Cậu đang nói... về chuyện gì vậy chứ?"
+msgstr "C-Cậu đang nói gì vậy...?"
 
 msgctxt "0143 | BYAKUYA TOGAMI"
-msgstr "Đó là câu nói ngay sau khi chúng ta nghe tin xác của Hifumi biến mất và quay trở lại phòng y tế..."
+msgstr "Tôi đang nói về những gì cô đã thốt ra sau khi thi thể Hifumi biến mất và chúng ta quay lại phòng y tế..."
 
 msgctxt "0144 | CELES"
-msgstr "Cứ như thể... bọn chúng đang tận hưởng chuyện này vậy..."
+msgstr "Chúng có vẻ đang rất tận hưởng chuyện này..."
 
 msgctxt "0145 | CELES"
-msgstr "Nhìn chúng tớ sợ hãi, hỗn loạn... rồi lấy đó làm niềm vui..."
+msgstr "Nhìn chúng ta sợ hãi và bối rối... chúng dường như rất thích thú..."
 
 msgctxt "0146 | CELES"
-msgstr "Cứ đà này... tất cả chúng ta đều sẽ bị sát hại mất."
+msgstr "Cứ đà này... tất cả chúng ta đều sẽ bị giết hết."
 
 msgctxt "0147 | CELES"
-msgstr "Giống như những người họ... chúng ta đều sẽ bị sát hại..."
+msgstr "Chúng ta sẽ chết, giống như những người kia đã chết..."
 
 msgctxt "0148 | SAKURA OOGAMI"
-msgstr "Câu nói đó tôi cũng có nghe qua... nhưng chuyện đó thì có gì kỳ lạ chứ?"
+msgstr "Tôi cũng nghe cô ấy nói câu đó, nhưng... tôi không hiểu có gì kỳ lạ ở đó."
 
 msgctxt "0149 | BYAKUYA TOGAMI"
-msgstr "Hãy nghe cho kỹ đây. Những người phát hiện ra xác của Taka ở phòng chuẩn bị thiết bị đầu tiên là ta, Sakura và Toko."
+msgstr "Vậy thì nghe cho kỹ đây. Sakura, Toko và tôi là những người đầu tiên phát hiện ra thi thể của Taka trong phòng vật lý."
 
 msgctxt "0150 | BYAKUYA TOGAMI"
-msgstr "Sau đó, nghe Makoto đến sau kể về vụ sát hại Hifumi, ta và Sakura đã cùng Makoto rời khỏi phòng chuẩn bị thiết bị..."
+msgstr "Sau đó, Makoto đến muộn và kể cho chúng tôi nghe vụ sát hại Hifumi, nên tôi và Sakura đã rời khỏi phòng vật lý cùng Makoto."
 
 msgctxt "0151 | BYAKUYA TOGAMI"
-msgstr "Và khi vừa ra đến hành lang, chúng ta đã gặp Celeste, rồi cả bốn người cùng nhau đi xuống phòng y tế."
+msgstr "Và khi ra đến hành lang, chúng tôi gặp Celeste, rồi cả bốn người cùng hướng đến phòng y tế."
 
 msgctxt "0152 | BYAKUYA TOGAMI"
-msgstr "Trong suốt khoảng thời gian đó, chúng ta hoàn toàn không nói một lời nào về cái chết của Taka cả."
+msgstr "Trong suốt khoảng thời gian đó, không ai trong chúng tôi nói bất cứ điều gì về việc Taka đã chết."
 
 msgctxt "0153 | BYAKUYA TOGAMI"
-msgstr "Nghĩ theo hướng đó thì ⟦CLT 3⟧phát ngôn⟦CLT⟧ lúc nãy của Celeste cực kỳ bất thường. Không, phải nói là quá mức bất thường đấy."
+msgstr "Hãy suy nghĩ kỹ đi — ⟦CLT 3⟧phát ngôn⟦CLT⟧ đó của Celeste hoàn toàn không hợp lý. Không, phải nói là nó cực kỳ bất thường."
 
 msgctxt "0154 | YASUHIRO HAGAKURE"
-msgstr "Nào là phát ngôn đó, rồi nào là bất thường... Tớ vẫn chưa hiểu lắm ý cậu là sao dại..."
+msgstr "Ừ, tớ hiểu cậu đang nói gì. Dù tớ không thực sự hiểu ý nghĩa của nó là gì..."
 
 msgctxt "0155 | BYAKUYA TOGAMI"
-msgstr "Này Celeste. Mọi người đang bối rối kìa. Vì lợi ích của mọi người, cô có muốn lặp lại chính phát ngôn đó một lần nữa không?"
+msgstr "Nghe thấy chưa, Celeste? Mọi người đều đang gặp khó khăn trong việc thấu hiểu. Cô có thể nhắc lại những gì cô đã nói không?"
 
 msgctxt "0156 | BYAKUYA TOGAMI"
-msgstr "Nếu cô không phải là hung thủ, cô hoàn toàn có thể làm được điều đó mà đúng chứ?"
+msgstr "Nếu cô thực sự không phải là hung thủ, thì chắc cô làm được chứ?"
 
 msgctxt "0158 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Điểm bất thường trong phát ngôn của Celeste mà Byakuya nói...\n"
-"⟦CLT⟧"
+msgstr "⟦CLT 4⟧Điểm bất thường trong phát ngôn của Celeste mà Togami đã đề cập tới...\n⟦CLT⟧"
 
 msgctxt "0159 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Chuyện đó... rốt cuộc là đang ám chỉ điều gì chứ...?\n"
-"⟦CLT⟧"
+msgstr "⟦CLT 4⟧Điều đó... đang ám chỉ đến cái gì vậy...?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Accomplice Theory Analysis
+Accomplice Risk Reward
 

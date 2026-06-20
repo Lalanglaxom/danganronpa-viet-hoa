@@ -1,118 +1,196 @@
 --- Gemini Translation Raw Output for e03_127_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. そうだ…⟦CLT 3⟧電子生徒手帳⟦CLT⟧だよ！！
 msgctxt "0001 | MAKOTO NAEGI"
-msgid "That's it...! The <CLT 3>handbook<CLT>!"
-msgstr "Phải rồi...! Là <CLT 3>sổ học sinh<CLT>!"
+msgid "That's it...! The ⟦CLT 3⟧handbook⟦CLT⟧!"
+msgstr ""
 
+#. あぁ…！？
 msgctxt "0002 | CELES"
 msgid "What!?"
-msgstr "Cái gì!?"
+msgstr ""
 
+#. 確か、電子生徒手帳って、
+#. 起動時に⟦CLT 3⟧持ち主の名前⟦CLT⟧が、表示されるはずだったよね？
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "Any time you turn your handbook on, it shows the\n"
-"<CLT 3>owner's name<CLT> when it boots up, right?"
+"⟦CLT 3⟧owner's name⟦CLT⟧ when it boots up, right?"
 msgstr ""
-"Mỗi khi khởi động sổ học sinh, nó sẽ luôn hiển thị\n"
-"<CLT 3>tên của chủ sở hữu<CLT> lúc lên màn hình đúng không?"
 
+#. 最初に、モノクマも言ってたはずだよ…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "Monokuma told us all about it before..."
-msgstr "Trước đây Monokuma cũng đã từng giải thích kỹ về chuyện đó rồi..."
+msgstr ""
 
+#. この電子生徒手帳は学園生活に欠かす事の出来ない
+#. 必需品だから、絶対になくさないようにね！！
 msgctxt "0005 | MONOKUMA"
 msgid ""
 "This handbook is absolutely vital to a healthy school\n"
 "life, so don't lose it!"
 msgstr ""
-"Cuốn sổ học sinh này là vật dụng cực kỳ thiết yếu cho một đời sống học đường lành mạnh, nên tuyệt đối cấm làm mất đấy nhé!"
 
+#. それと、起動時に自分の本名が表示されるから、
+#. ちゃんと確認しておいてね。
 msgctxt "0006 | MONOKUMA"
 msgid ""
 "When you start it up, it will display your name.\n"
 "Always make sure you have the right one!"
 msgstr ""
-"Lúc khởi động lên, nó sẽ hiển thị rõ họ tên thật của các em. Hãy kiểm tra lại xem có đúng là của mình không nhé!"
 
+#. 単なる手帳以外の使い道もあるんでね…
 msgctxt "0007 | MONOKUMA"
 msgid ""
 "Now, this is not your everyday notebook. It has so\n"
 "many more uses than that!"
 msgstr ""
-"Bởi vì đây đâu phải loại sổ tay ghi chép thông thường. Nó còn có nhiều công dụng thần kỳ hơn thế nhiều!"
 
+#. つまり、電子生徒手帳を確認すれば、
+#. ハッキリするはずなんだ。
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
 "So all we have to do is check her handbook and that'll\n"
 "clear up everything."
 msgstr ""
-"Thế nên chúng ta chỉ cần kiểm tra cuốn sổ học sinh của cậu ấy là mọi chuyện sẽ sáng tỏ ngay lập tức thôi."
 
+#. セレスさんの⟦CLT 3⟧本名⟦CLT⟧がさ！
 msgctxt "0009 | MAKOTO NAEGI"
-msgid "That's how we can find out Celeste's <CLT 3>real name<CLT>!"
-msgstr "Bằng cách đó, bọn mình có thể biết được <CLT 3>họ tên thật<CLT> của Celeste!"
+msgid "That's how we can find out Celeste's ⟦CLT 3⟧real name⟦CLT⟧!"
+msgstr ""
 
+#. プ、プライバシーの侵害ですわ…！
+#. 見せませんわよ…ッ！
 msgctxt "0010 | CELES"
 msgid ""
 "Th-That's an invasion of privacy! I-I refuse to\n"
 "cooperate!"
 msgstr ""
-"Đ-Đây là hành vi xâm phạm quyền riêng tư một cách thô bạo! Tớ từ chối hợp tác!"
 
+#. …セレスさん。
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "Celeste..."
-msgstr "Celeste..."
+msgstr ""
 
+#. そろそろ…本当の事を言ってくれないかな？
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "Can you please just tell us what really happened?"
-msgstr "Cậu có thể làm ơn nói cho bọn tớ biết sự thật được không?"
+msgstr ""
 
+#. 本当の事をさ…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Please, just tell us..."
-msgstr "Làm ơn, hãy nói ra đi..."
+msgstr ""
 
+#. わたくしは…王手されたとしても、
+#. 諦めない性質なんですの。
 msgctxt "0016 | CELES"
 msgid ""
 "Even when I'm put in check, it's just my nature not to\n"
 "give up."
 msgstr ""
-"Dẫu cho có bị chiếu tướng đi chăng nữa, bản tính của tớ cũng quyết không bao giờ đầu hàng đâu."
 
+#. だって…
 msgctxt "0017 | CELES"
 msgid "Because..."
-msgstr "Bởi vì..."
+msgstr ""
 
+#. だってだって…
+#. だってだってだってだってだってだって！
 msgctxt "0018 | CELES"
 msgid ""
 "Because, because...because because because because\n"
 "because—!"
 msgstr ""
-"Bởi vì, bởi vì... bởi vì bởi vì bởi vì bởi vì bởi vì—!"
 
+#. 完全に決着するまでは、
+#. 何があるかわかりませんだろがぁ！
 msgctxt "0019 | CELES"
 msgid ""
 "Until the game's over, you never know what might\n"
 "happen!"
 msgstr ""
-"Khi ván cờ còn chưa chính thức ngã ngũ thì chưa biết mèo nào cắn mỉu nào đâu nhé!"
 
+#. だったら…完全に決着させるよ…
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "Fine then. Let me settle it."
-msgstr "Nếu đã vậy... để tớ kết thúc chuyện này."
+msgstr ""
 
+#. もう１度、最初から事件を振り返って…
+#. そこで、すべての犯行を明らかにして…
 msgctxt "0021 | MAKOTO NAEGI"
 msgid ""
 "Let me go over the case again, from the beginning, and\n"
 "shed light on all your crimes."
 msgstr ""
-"Tớ sẽ xâu chuỗi lại toàn bộ vụ án một lần nữa ngay từ đầu, và phơi bày mọi tội ác của cậu ra trước ánh sáng."
 
+#. それで終わりにさせるよッ！！
 msgctxt "0022 | MAKOTO NAEGI"
 msgid "And that'll bring everything to an end!"
-msgstr "Và điều đó sẽ chấm dứt tất cả mọi chuyện tại đây!"
+msgstr ""
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Đúng rồi...! Là ⟦CLT 3⟧sổ học sinh⟦CLT⟧!!"
+
+msgctxt "0002 | CELES"
+msgstr "Cái gì cơ...!?"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Mỗi khi cậu bật sổ học sinh lên, nó đều hiển thị ⟦CLT 3⟧tên của chủ sở hữu⟦CLT⟧ khi khởi động, đúng không?"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "Monokuma đã từng nói về chuyện đó lúc trước mà..."
+
+msgctxt "0005 | MONOKUMA"
+msgstr "Sổ học sinh này là vật bất ly thân để có một cuộc sống học đường khỏe mạnh, nên tuyệt đối đừng làm mất nó đấy!!"
+
+msgctxt "0006 | MONOKUMA"
+msgstr "Với lại, khi khởi động nó sẽ hiển thị tên thật của các ngươi, hãy xác nhận cho kỹ vào nhé."
+
+msgctxt "0007 | MONOKUMA"
+msgstr "Vì nó còn có nhiều công dụng khác ngoài việc chỉ là một cuốn sổ tay thông thường..."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "Nghĩa là, nếu kiểm tra sổ học sinh, mọi thứ sẽ trở nên rõ ràng ngay thôi."
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "Đó là cách chúng ta có thể tìm ra ⟦CLT 3⟧tên thật⟦CLT⟧ của Celeste đấy!"
+
+msgctxt "0010 | CELES"
+msgstr "Đ-Đó là xâm phạm quyền riêng tư...! Tớ sẽ không cho các cậu xem đâu...!"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "…Celeste."
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "Đã đến lúc... cậu chịu nói sự thật cho chúng tôi biết chưa?"
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "Làm ơn hãy nói sự thật đi..."
+
+msgctxt "0016 | CELES"
+msgstr "Kể cả khi bị chiếu tướng, bản chất của tớ là sẽ không bao giờ bỏ cuộc."
+
+msgctxt "0017 | CELES"
+msgstr "Bởi vì..."
+
+msgctxt "0018 | CELES"
+msgstr "Bởi vì bởi vì... bởi vì bởi vì bởi vì bởi vì bởi vì—!"
+
+msgctxt "0019 | CELES"
+msgstr "Cho đến khi trò chơi kết thúc, làm sao mà các cậu biết được điều gì sẽ xảy ra chứ!"
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "Vậy thì... để mình kết thúc nó hoàn toàn cho."
+
+msgctxt "0021 | MAKOTO NAEGI"
+msgstr "Mình sẽ điểm lại vụ án từ đầu một lần nữa... rồi vạch trần mọi tội ác của cậu..."
+
+msgctxt "0022 | MAKOTO NAEGI"
+msgstr "Và chấm dứt mọi chuyện tại đây!!"
 
 ==================== FOLDER SUMMARY ====================
-Student Handbook Clue
+Handbook Name Reveal
 

@@ -1,203 +1,308 @@
 --- Gemini Translation Raw Output for e03_203_006.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧そっと、体育館の中を覗き込んだ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I didn't make a sound as I opened the door to the\n"
+"⟦CLT 4⟧I didn't make a sound as I opened the door to the\n"
 "gym...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bản thân cố gắng không phát ra bất kỳ tiếng động nào khi khẽ hé mở cánh cửa phòng thể chất...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧すると、音はさらに激しさを増す。
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The sounds coming from inside, meanwhile,\n"
+"⟦CLT 4⟧The sounds coming from inside, meanwhile,\n"
 "only intensified that much more.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Trong khi đó, những âm thanh chát chúa phát ra từ bên trong lại càng trở nên dữ dội hơn gấp bội.\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「ガガッ…バギッ…！」
+#. ⟦CLT⟧
 msgctxt "0003 | NARRATION"
 msgid ""
-"<CLT 23>*Kacha! Bakyu!*\n"
-"<CLT>"
+"⟦CLT 23⟧*Kacha! Bakyu!*\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"Cạch... Rầm...\"\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「ガガガッ！！　ドカッ！　バキッ！！」
+#. ⟦CLT⟧
 msgctxt "0004 | NARRATION"
 msgid ""
-"<CLT 23>*Hagagya! Hiya! Paching!*\n"
-"<CLT>"
+"⟦CLT 23⟧*Hagagya! Hiya! Paching!*\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"Rắc rắc... Bùm... Bốp...\"\n"
-"<CLT>"
 
+#. ⟦CLT 23⟧「バキャ！　ドドドッ！　スババババババッ！！」
+#. ⟦CLT⟧
 msgctxt "0005 | NARRATION"
 msgid ""
-"<CLT 23>*Bakya! Dadadun! Shashashasha!*\n"
-"<CLT>"
+"⟦CLT 23⟧*Bakya! Dadadun! Shashashasha!*\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 23>\"Rầm... Bùm bùm... Vút vút vút...\"\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧目の前で繰り広げられる人間離れしたバトル…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Before me there raged a battle beyond anything humanly\n"
+"⟦CLT 4⟧Before me there raged a battle beyond anything humanly\n"
 "possible.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Ngay trước mắt mình là một trận chiến kinh thiên động địa, vượt xa giới hạn thông thường của con người.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧いや…その片方は、
+#. 確かに人間ではないのだが…
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>No...one side's not human, that's for sure. But...\n"
-"<CLT>"
+"⟦CLT 4⟧No...one side's not human, that's for sure. But...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>À không... một bên trong số họ vốn dĩ chắc chắn không phải là con người rồi, thế nhưng...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧…とにかく、ボクはその戦いに釘付けになった。
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Regardless, I couldn't stop staring.\n"
-"<CLT>"
+"⟦CLT 4⟧Regardless, I couldn't stop staring.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Dù sao đi nữa, mình hoàn toàn bị hút hồn vào trận chiến ấy.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧動く事も、息をする事さえも、
+#. 忘れるほどに…
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I forgot to move, or even breathe...\n"
-"<CLT>"
+"⟦CLT 4⟧I forgot to move, or even breathe...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đến mức bản thân quên cả cử động, hay thậm chí là quên cả hít thở...\n"
-"<CLT>"
 
+#. オマエ…どういうつもり？
 msgctxt "0010 | MONOKUMA"
 msgid "Why you...! What do you think you're doing?"
-msgstr "Cái đứa này...! Em đang tính làm cái trò trống gì thế hả?"
+msgstr ""
 
+#. 答えろよ…どういうつもりなの？
 msgctxt "0012 | MONOKUMA"
 msgid "I asked you a question! What's the meaning of this?"
-msgstr "Ta đang hỏi em đấy! Hành động này rốt cuộc mang ý nghĩa gì đây hả?"
+msgstr ""
 
+#. ボクに逆らおうなんてさ…
 msgctxt "0013 | MONOKUMA"
 msgid "How dare you defy me...?"
-msgstr "Sao em lại dám to gan chống đối lại ta chứ...?"
+msgstr ""
 
+#. 約束が違うじゃん！！
 msgctxt "0014 | MONOKUMA"
 msgid "This wasn't part of the deal!"
-msgstr "Như thế này là không đúng theo thỏa thuận ban đầu rồi nhé!"
+msgstr ""
 
+#. ⟦CLT 4⟧約束……？
+#. ⟦CLT⟧
 msgctxt "0015 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The deal...?\n"
-"<CLT>"
+"⟦CLT 4⟧The deal...?\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Thỏa thuận... sao?\n"
-"<CLT>"
 
+#. 我は決めたのだ…
 msgctxt "0016 | SAKURA OOGAMI"
 msgid "I've made a decision..."
-msgstr "Ta đã đưa ra quyết định của mình rồi..."
+msgstr ""
 
+#. もう退かぬ、もう媚びぬ、もう省みぬと…
 msgctxt "0017 | SAKURA OOGAMI"
 msgid ""
 "I will no longer retreat, no longer compromise, no\n"
 "longer regret..."
-msgstr "Ta sẽ không bao giờ lùi bước, không bao giờ thỏa hiệp, và cũng không bao giờ hối hận nữa..."
+msgstr ""
 
+#. …我は決心したのだ！
 msgctxt "0018 | SAKURA OOGAMI"
 msgid "I've made my decision!"
-msgstr "Ta đã hạ quyết tâm rồi!"
+msgstr ""
 
+#. お前と…戦うと…ッ！！
 msgctxt "0019 | SAKURA OOGAMI"
 msgid "I'm going...to resist you!"
-msgstr "Ta nhất định... sẽ chiến đấu chống lại ngươi!"
+msgstr ""
 
+#. ふーん、あっそ…
 msgctxt "0020 | MONOKUMA"
 msgid "Hmm... Okay."
-msgstr "Hửm... Ra là vậy à."
+msgstr ""
 
+#. でもさ…そんな事して、どうなるかわかってるの？
 msgctxt "0021 | MONOKUMA"
 msgid ""
 "But...you do realize what will happen if you go\n"
 "through with this, right?"
-msgstr "Thế nhưng... em có nhận thức được hậu quả sẽ ra sao nếu em vẫn cố tình làm như vậy không?"
+msgstr ""
 
+#. 忘れちゃった訳じゃないよね？
 msgctxt "0022 | MONOKUMA"
 msgid "You haven't forgotten, have you?"
-msgstr "Em chắc là chưa quên mất chuyện đó đâu nhỉ?"
+msgstr ""
 
+#. 人質の件…！
 msgctxt "0023 | MONOKUMA"
 msgid "What I'm holding hostage...?"
-msgstr "Về thứ mà ta đang nắm giữ làm con tin ấy...?"
+msgstr ""
 
+#. …ッ！！
 msgctxt "0024 | SAKURA OOGAMI"
 msgid "...!?"
+msgstr ""
+
+#. ⟦CLT 4⟧………………
+#. ⟦CLT⟧
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧なんだ…これ…？
+#. ⟦CLT⟧
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What am I looking at...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧なんだよ…この会話…？
+#. ⟦CLT⟧
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What am I hearing...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧人質って…？
+#. ⟦CLT⟧
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A hostage?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧じゃあ…もしかして……
+#. ⟦CLT⟧
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Then...could it be...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧黒幕の内通者って……？
+#. ⟦CLT⟧
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The mastermind's spy is...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧プレゼント⟦CLT⟧⟦CLT 3⟧“超合金ジャスティスロボ”⟦CLT⟧⟦CLT 23⟧を獲得しました。
+#. プレゼントメニューで確認できます。
+#. ⟦CLT⟧
+msgctxt "0031 | NARRATION"
+msgid ""
+"⟦CLT 23⟧You received the ⟦CLT⟧⟦CLT 3⟧Super Robo Justice⟦CLT⟧⟦CLT 23⟧ present.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khi tôi lén lút nhìn vào bên trong phòng thể chất...⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trong khi đó, âm thanh phát ra từ bên trong ngày càng trở nên dữ dội hơn.⟦CLT⟧"
+
+msgctxt "0003 | NARRATION"
+msgstr "⟦CLT 23⟧*Rắc! Cạch!*⟦CLT⟧"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧*Hagagya! Hiya! Pạch!*⟦CLT⟧"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧*Bạch! Rầm rầm rầm! Xoẹt xoẹt xoẹt!*⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trước mắt tôi là một trận chiến vượt xa mọi giới hạn của con người...⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không... ít nhất thì một bên đúng là không phải con người... Nhưng...⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù sao thì, tôi không thể rời mắt khỏi trận đấu đó.⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đến mức tôi quên cả cử động, hay thậm chí là thở...⟦CLT⟧"
+
+msgctxt "0010 | MONOKUMA"
+msgstr "Ngươi... ngươi nghĩ mình đang làm cái gì thế hả?"
+
+msgctxt "0012 | MONOKUMA"
+msgstr "Ta đang hỏi ngươi đấy! Chuyện này nghĩa là sao hả?"
+
+msgctxt "0013 | MONOKUMA"
+msgstr "Sao ngươi dám chống đối ta...?"
+
+msgctxt "0014 | MONOKUMA"
+msgstr "Chuyện này không có trong thỏa thuận!!"
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thỏa thuận...?⟦CLT⟧"
+
+msgctxt "0016 | SAKURA OOGAMI"
+msgstr "Ta đã quyết định rồi..."
+
+msgctxt "0017 | SAKURA OOGAMI"
+msgstr "Ta sẽ không lùi bước, không thỏa hiệp, và không hối tiếc nữa..."
+
+msgctxt "0018 | SAKURA OOGAMI"
+msgstr "Ta đã hạ quyết tâm rồi!"
+
+msgctxt "0019 | SAKURA OOGAMI"
+msgstr "Ta sẽ... chống lại ngươi!!"
+
+msgctxt "0020 | MONOKUMA"
+msgstr "Hừm... Thế à..."
+
+msgctxt "0021 | MONOKUMA"
+msgstr "Nhưng mà... ngươi có biết chuyện gì sẽ xảy ra nếu ngươi làm thế không hả?"
+
+msgctxt "0022 | MONOKUMA"
+msgstr "Ngươi chưa quên đấy chứ?"
+
+msgctxt "0023 | MONOKUMA"
+msgstr "Về việc ta đang giữ con tin ấy...!"
+
+msgctxt "0024 | SAKURA OOGAMI"
 msgstr "...!?"
 
 msgctxt "0025 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>............\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧...⟦CLT⟧"
 
 msgctxt "0026 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>What am I looking at...?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Cái gì thế này... Mình đang phải chứng kiến chuyện gì thế này...\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧Mình đang chứng kiến cái gì thế này...?⟦CLT⟧"
 
 msgctxt "0027 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>What am I hearing...?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Cuộc đối thoại vừa rồi... rốt cuộc mang ý nghĩa gì đây...\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧Mình đang nghe thấy cái gì thế này...?⟦CLT⟧"
 
 msgctxt "0028 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>A hostage?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Con tin... sao?\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧Con tin...?⟦CLT⟧"
 
 msgctxt "0029 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>Then...could it be...?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Chẳng lẽ... chuyện này có nghĩa là...\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧Vậy thì... chẳng lẽ nào...⟦CLT⟧"
 
 msgctxt "0030 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>The mastermind's spy is...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Danh tính kẻ nội gián của kẻ chủ mưu... chính là...\n"
-"<CLT>"
+msgstr "⟦CLT 4⟧Kẻ nội gián của kẻ chủ mưu là...⟦CLT⟧"
 
 msgctxt "0031 | NARRATION"
-msgid ""
-"<CLT 23>You received the <CLT><CLT 3>Super Robo Justice<CLT><CLT 23> present.\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Bạn vừa nhận được món quà <CLT><CLT 3>\"Siêu robot công lý\"<CLT><CLT 23>.\n"
-"Bạn có thể kiểm tra lại trong thực đơn quà tặng.\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Bạn đã nhận được quà ⟦CLT⟧⟦CLT 3⟧Người Máy Công Lý Siêu Hợp Kim⟦CLT⟧⟦CLT 23⟧. Bạn có thể kiểm tra trong menu quà tặng.⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Gym Battle Discovered
+Sakura Monokuma Fight
 

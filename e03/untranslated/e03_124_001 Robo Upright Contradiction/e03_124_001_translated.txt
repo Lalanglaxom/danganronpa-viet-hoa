@@ -1,96 +1,169 @@
 --- Gemini Translation Raw Output for e03_124_001.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 気絶した俺に、
+#. あの衣装を着させて…
 msgctxt "0001 | YASUHIRO HAGAKURE"
 msgid "You dressed me up in that suit after I passed out..."
-msgstr "Cậu đã mặc bộ đồ đó vào người tớ sau khi tớ bất tỉnh nhân sự..."
+msgstr ""
 
+#. ⟦CLT 9⟧山田っちに運ばせた⟦CLT⟧んだな！
 msgctxt "0002 | YASUHIRO HAGAKURE"
 msgid ""
 "Then you just draped me across\n"
-"Hifumi and <CLT 9>had him carry my weight<CLT>!"
+"Hifumi and ⟦CLT 9⟧had him carry my weight⟦CLT⟧!"
 msgstr ""
-"Rồi sau đó cậu bắt <CLT 9>Hifumi phải vác cái thân xác nặng nề này của tớ đi<CLT> đúng không!"
 
+#. そうやって、俺を容疑者に
+#. 仕立て上げたんだな！
 msgctxt "0003 | YASUHIRO HAGAKURE"
 msgid "You tried to make me look like the bad guy!"
-msgstr "Cậu cố tình dàn dựng để biến tớ thành kẻ xấu xa!"
+msgstr ""
 
+#. ですから、
+#. それはあり得ないのです…
 msgctxt "0004 | CELES"
 msgid "Like I said—ridiculous."
-msgstr "Như tớ đã nói rồi đấy, thật là nực cười."
+msgstr ""
 
+#. この画像では不審者の
+#. 背筋が伸びています。
 msgctxt "0005 | CELES"
 msgid ""
 "As you can see in the picture,\n"
 "the suspect is standing perfectly upright."
 msgstr ""
-"Cậu có thể tự nhìn vào bức ảnh xem, dáng lưng của kẻ khả nghi đang đứng thẳng băng ra đấy."
 
+#. 中にいるのが
+#. ⟦CLT 9⟧気絶した人間⟦CLT⟧なら…
 msgctxt "0006 | CELES"
 msgid ""
 "If the person inside\n"
-"the suit <CLT 9>was unconscious<CLT>..."
+"the suit ⟦CLT 9⟧was unconscious⟦CLT⟧..."
 msgstr ""
-"Nếu như người ở bên trong\n"
-"bộ đồ <CLT 9>đang trong trạng thái bất tỉnh<CLT>..."
 
+#. ⟦CLT 9⟧そんな姿勢⟦CLT⟧を
+#. 取れる訳がありません。
 msgctxt "0007 | CELES"
 msgid ""
 "...there's no way they could\n"
-"<CLT 9>stand up straight<CLT> like that."
+"⟦CLT 9⟧stand up straight⟦CLT⟧ like that."
 msgstr ""
-"...thì làm sao họ có thể\n"
-"<CLT 9>đứng thẳng thớm vững vàng<CLT> được như thế cơ chứ."
 
+#. じゃあ、やっぱ犯人は
+#. 占いバカだ！
 msgctxt "0008 | TOUKO FUKAWA"
 msgid ""
 "Then the fortune-telling idiot\n"
 "is the culprit after all!"
 msgstr ""
-"Thế thì rút cục hung thủ vẫn là cái thằng cha bói toán ngu ngốc kia rồi chứ gì nữa!"
 
+#. な、なんで、
+#. そーなんだべ！？
 msgctxt "0009 | YASUHIRO HAGAKURE"
 msgid "N-No way!"
-msgstr "Kh-Không đời nào có chuyện đó đâu chứ!"
+msgstr ""
+
+#. ⟦CLT 26⟧いよいよ大詰めかな？⟦CLT⟧
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Have we reached the endgame?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧オマエラはこうやって…⟦CLT⟧
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧So this is how you guys...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧仲間を信じて…⟦CLT⟧
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Believing your friends...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧仲間を殺して…⟦CLT⟧
+msgctxt "0013 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Killing your friends...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧仲間を疑って…⟦CLT⟧
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Doubting your friends...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧何度も何度も何度も…⟦CLT⟧
+msgctxt "0015 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Over and over and over...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧真実にたどり着くんだよ！⟦CLT⟧
+msgctxt "0016 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧I've arrived at the truth!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧おしおきという真実に！⟦CLT⟧
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧The truth of punishment!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧うぷぷぷぷ…⟦CLT⟧
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Puhuhuhu...!⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgstr "Cậu đã mặc bộ đồ đó cho tớ sau khi tớ bất tỉnh..."
+
+msgctxt "0002 | YASUHIRO HAGAKURE"
+msgstr "Rồi cậu bắt ⟦CLT 9⟧Hifumi phải vác tớ đi⟦CLT⟧ chứ gì!"
+
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgstr "Cậu đã cố biến tớ thành kẻ xấu trong vụ này!"
+
+msgctxt "0004 | CELES"
+msgstr "Như tớ đã nói—thật nực cười."
+
+msgctxt "0005 | CELES"
+msgstr "Như các cậu có thể thấy trong bức ảnh, kẻ tình nghi đang đứng thẳng hoàn toàn."
+
+msgctxt "0006 | CELES"
+msgstr "Nếu người bên trong bộ đồ ⟦CLT 9⟧đang bất tỉnh⟦CLT⟧..."
+
+msgctxt "0007 | CELES"
+msgstr "...thì không đời nào họ có thể ⟦CLT 9⟧đứng thẳng⟦CLT⟧ như thế được."
+
+msgctxt "0008 | TOUKO FUKAWA"
+msgstr "Vậy thì tên ngốc bói toán đó chính là hung thủ rồi!"
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "K-Không đời nào!"
 
 msgctxt "0010 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Have we reached the endgame?<CLT>"
-msgstr "<CLT 26>Liệu đã đến hồi kết rồi chăng?<CLT>"
+msgstr "⟦CLT 26⟧Chúng ta đã đến hồi kết rồi sao?⟦CLT⟧"
 
 msgctxt "0011 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>So this is how you guys...<CLT>"
-msgstr "<CLT 26>Thì ra mọi người cứ thế này mà...<CLT>"
+msgstr "⟦CLT 26⟧Vậy ra đây là cách các cậu...⟦CLT⟧"
 
 msgctxt "0012 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Believing your friends...<CLT>"
-msgstr "<CLT 26>Tin tưởng bạn bè của mình...<CLT>"
+msgstr "⟦CLT 26⟧Tin tưởng bạn bè...⟦CLT⟧"
 
 msgctxt "0013 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Killing your friends...<CLT>"
-msgstr "<CLT 26>Sát hại bạn bè của mình...<CLT>"
+msgstr "⟦CLT 26⟧Giết hại bạn bè...⟦CLT⟧"
 
 msgctxt "0014 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Doubting your friends...<CLT>"
-msgstr "<CLT 26>Nghi ngờ bạn bè của mình...<CLT>"
+msgstr "⟦CLT 26⟧Nghi ngờ bạn bè...⟦CLT⟧"
 
 msgctxt "0015 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Over and over and over...<CLT>"
-msgstr "<CLT 26>Cứ lặp đi lặp lại hết lần này đến lần khác...<CLT>"
+msgstr "⟦CLT 26⟧Hết lần này đến lần khác...⟦CLT⟧"
 
 msgctxt "0016 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>I've arrived at the truth!<CLT>"
-msgstr "<CLT 26>Cuối cùng ta cũng chạm tay vào sự thật rồi!<CLT>"
+msgstr "⟦CLT 26⟧Tớ đã tìm ra sự thật rồi!⟦CLT⟧"
 
 msgctxt "0017 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>The truth of punishment!<CLT>"
-msgstr "<CLT 26>Sự thật về một hình phạt tàn khốc!<CLT>"
+msgstr "⟦CLT 26⟧Sự thật về hình phạt!⟦CLT⟧"
 
 msgctxt "0018 | YASUHIRO HAGAKURE"
-msgid "<CLT 26>Puhuhuhu...!<CLT>"
-msgstr "<CLT 26>U pư pư pư...!<CLT>"
-
+msgstr "⟦CLT 26⟧U pư pư pư...!⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Robo Upright Contradiction
+Suspect Suit Logic
 

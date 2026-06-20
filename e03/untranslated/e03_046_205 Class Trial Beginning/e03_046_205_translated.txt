@@ -1,101 +1,143 @@
 --- Gemini Translation Raw Output for e03_046_205.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ふむふむ…
+#. こうやって全員揃ったところを見てみると…
 msgctxt "0001 | MONOKUMA"
 msgid ""
 "Hmhmhm... When I see all of you gathered together like\n"
 "this..."
 msgstr ""
-"U pư pư... Khi ta thấy tất cả các em tập trung đông đủ như\n"
-"thế này..."
 
+#. なんだか、ずいぶんと人数が減っちゃったよね！
+#. 学園生活もいよいよクライマックスって感じかしら！
 msgctxt "0002 | MONOKUMA"
 msgid ""
 "...I realize just how few of you there are left! Your\n"
 "school life is slowly reaching its climax!"
 msgstr ""
-"...Ta mới nhận ra số lượng các em còn lại ít ỏi làm sao! Đời\n"
-"học sinh của các em đang dần đi đến hồi cao trào rồi đấy!"
 
+#. 全部、あんたのせいじゃん…！
 msgctxt "0003 | AOI ASAHINA"
 msgid "Only cuz of you!"
-msgstr "Tất cả là tại ông hết đó!"
+msgstr ""
 
+#. なんで…俺らに、
+#. こんな残酷な事をさせるんだべ…！
 msgctxt "0004 | YASUHIRO HAGAKURE"
 msgid ""
 "Why...? Why are you making us do such cruel things to\n"
 "each other!?"
 msgstr ""
-"Tại sao chứ...? Tại sao mày lại bắt tụi tớ phải làm những điều tàn nhẫn\n"
-"như vậy với nhau hả!?"
 
+#. ありゃりゃ？　ボクって嫌われてんの！？
+#. こんなにカワイイのに！？
 msgctxt "0005 | MONOKUMA"
 msgid ""
 "What what!? Do you really hate me so much? But I'm so\n"
 "cute!"
 msgstr ""
-"Ủa ủa gì vậy? Các em thực sự ghét ta đến thế sao? Nhưng ta đáng yêu thế\n"
-"này cơ mà!"
 
+#. いつまでふざけている気だ。
+#. さっさと始めろ…
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "Stop goofing around and begin the trial...!"
-msgstr "Bớt giỡn hớt và bắt đầu phiên tòa mau đi...!"
+msgstr ""
 
+#. …もちろん始めますとも！
 msgctxt "0007 | MONOKUMA"
 msgid "Don't rush me! Of course I'm gonna start it!"
-msgstr "Đừng có hối thúc ta! Dĩ nhiên là ta sẽ bắt đầu rồi!"
+msgstr ""
 
+#. 緊迫の学級裁判はＣＭの後で、
+#. みたいな引き延ばし演出をするつもりもないしさ！
 msgctxt "0008 | MONOKUMA"
 msgid ""
 "I would never be like, \"Stay tuned for the\n"
 "action-packed class trial after this commercial break!\""
 msgstr ""
-"Ta đời nào lại kiểu như, \"Đừng chuyển kênh để đón xem\n"
-"Lớp Xét Xử đầy kịch tính sau ít phút quảng cáo nhé!\" đâu nha!"
 
+#. …じゃあ、始めますよ！
+#. 自分の名前が書かれた席に着いてくださーい！
 msgctxt "0009 | MONOKUMA"
 msgid ""
 "I'd never hold out on you like that!\n"
 "...Okay, let's begin! Get to your assigned seats!"
 msgstr ""
-"Ta chẳng bao giờ câu giờ với các em như thế đâu!\n"
-"...Được rồi, bắt đầu thôi! Hãy về vị trí đã được chỉ định đi nào!"
 
+#. ⟦CLT 4⟧そして、またもや幕が開く…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>And so, the curtain opened once again...\n"
-"<CLT>"
+"⟦CLT 4⟧And so, the curtain opened once again...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Và thế là, bức màn lại một lần nữa mở ra...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧命がけの裁判…命がけの騙し合い…命がけの裏切り…
+#. ⟦CLT⟧
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>A deadly judgment... A deadly deception... A deadly\n"
+"⟦CLT 4⟧A deadly judgment... A deadly deception... A deadly\n"
 "betrayal...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một sự phán xét chết chóc... Một sự lừa dối chết chóc... Một sự phản bội\n"
-"chết chóc...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧命がけの謎解き…命がけの言い訳…命がけの信頼…
+#. ⟦CLT⟧
 msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>A deadly riddle, a deadly defense, a deadly faith...\n"
-"<CLT>"
+"⟦CLT 4⟧A deadly riddle, a deadly defense, a deadly faith...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một câu đố chết chóc, một sự bào chữa chết chóc, một niềm tin chết chóc...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧命がけの……学級裁判……
+#. ⟦CLT⟧
 msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>A deadly...class trial...!\n"
-"<CLT>"
+"⟦CLT 4⟧A deadly...class trial...!\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một... Lớp Xét Xử... chết chóc!\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MONOKUMA"
+msgstr "Hừm hừm... Khi nhìn thấy tất cả các em tập hợp đông đủ như thế này..."
+
+msgctxt "0002 | MONOKUMA"
+msgstr "...Ta mới nhận ra số lượng học sinh đã giảm đi kha khá rồi đấy nhỉ! Cảm giác như cuộc sống học đường cuối cùng cũng sắp đi đến hồi kết rồi ấy!"
+
+msgctxt "0003 | AOI ASAHINA"
+msgstr "Tất cả chuyện này chẳng phải là tại ông hết sao...!"
+
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgstr "Tại sao... tại sao ngươi lại bắt tụi tớ phải làm những chuyện tàn khốc như thế này cơ chứ...!"
+
+msgctxt "0005 | MONOKUMA"
+msgstr "Ủa ủa? Ta bị ghét bỏ rồi sao!? Trong khi ta đáng yêu thế này cơ mà!?"
+
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgstr "Ngươi định đùa giỡn đến bao giờ nữa hả. Mau bắt đầu đi..."
+
+msgctxt "0007 | MONOKUMA"
+msgstr "...Tất nhiên là ta sẽ bắt đầu rồi!"
+
+msgctxt "0008 | MONOKUMA"
+msgstr "Ta cũng chẳng thèm chơi trò câu giờ kiểu như \"Đón xem Lớp Xét Xử đầy kịch tính ngay sau phần quảng cáo\" đâu nhé!"
+
+msgctxt "0009 | MONOKUMA"
+msgstr "Ta đâu có rảnh mà làm mấy trò đó với các em đâu chứ!\n...Được rồi, bắt đầu thôi nào! Các em hãy mau chóng ngồi vào vị trí có ghi tên mình đi nhé!"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Và thế là, tấm màn lại được kéo lên một lần nữa...\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một cuộc phán quyết đặt cược cả mạng sống... Một màn lừa dối đặt cược cả mạng sống... Một sự phản bội đặt cược cả mạng sống...\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một bài toán giải mã đặt cược cả mạng sống... Một lời bào chữa đặt cược cả mạng sống... Một niềm tin đặt cược cả mạng sống...\n⟦CLT⟧"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một... Lớp Xét Xử... sinh tử...!\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Class Trial Beginning
+Gathered Trial Climax
 

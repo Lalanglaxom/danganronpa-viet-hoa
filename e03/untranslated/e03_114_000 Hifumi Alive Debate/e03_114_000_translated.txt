@@ -1,95 +1,127 @@
 --- Gemini Translation Raw Output for e03_114_000.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ちょっと苗木、脅かさないでよ！
+#. 何か変な事言ったかと思っちゃったじゃん！
 msgctxt "0001 | AOI ASAHINA"
 msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Thôi đi Makoto, đừng làm tui hết hồn như vậy chứ! Làm tui cứ tưởng\n"
-"có chuyện gì kỳ lạ đang xảy ra không hà!"
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. 意味の無い事をおっしゃられても困りますわ。
+#. 時間のムダです。
 msgctxt "0003 | CELES"
 msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Những lời nói vô nghĩa của cậu làm tôi thấy mệt mỏi rồi. Làm ơn đừng lãng\n"
-"phí thời gian của tôi nữa."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. 意味の無い事をおっしゃられても困りますわ。
+#. 時間のムダです。
 msgctxt "0005 | CELES"
 msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Những lời nói vô nghĩa của cậu làm tôi thấy mệt mỏi rồi. Làm ơn đừng lãng\n"
-"phí thời gian của tôi nữa."
 
+#. ⟦CLT 4⟧もう一度、よく考えてみるんだ。
+#. どこかにこの議論の矛盾が隠されているはず…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I need to think about it one more time. There must be\n"
+"⟦CLT 4⟧I need to think about it one more time. There must be\n"
 "a contradiction in there somewhere...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"một sự mâu thuẫn ở đâu đó quanh đây...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧山田クンが生きていたと考えられる根拠…
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The reason I can say Hifumi was still alive...\n"
-"<CLT>"
+"⟦CLT 4⟧The reason I can say Hifumi was still alive...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Manh mối khiến mình có thể khẳng định Hifumi lúc đó vẫn còn sống...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧今の議論の矛盾を突けば、
+#. 必ず見えてくるはずだ。
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>If I can just find the contradiction in these\n"
+"⟦CLT 4⟧If I can just find the contradiction in these\n"
 "statements, I'm sure it'll become clear...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Chỉ cần mình tìm ra điểm mâu thuẫn trong cuộc tranh luận này, chắc chắn mọi chuyện sẽ sáng tỏ thôi...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧保健室で見つけた時の山田クンの死体と、
+#. 美術倉庫で再発見した時の山田クンの死体…
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>When Hifumi's body was found in the nurse's office,\n"
+"⟦CLT 4⟧When Hifumi's body was found in the nurse's office,\n"
 "and when it was found again in the repository...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Thi thể của Hifumi khi được tìm thấy ở phòng y tế, và khi được phát hiện lại ở kho mỹ thuật...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧そこには、何か違和感があったような…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There's definitely some sort of conflict there...!\n"
-"<CLT>"
+"⟦CLT 4⟧There's definitely some sort of conflict there...!\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Chắc chắn có một điểm bất hợp lý cực kỳ lớn ở giữa hai thời điểm đó...!\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | AOI ASAHINA"
+msgstr "Kìa Naegi, đừng có hù tui như vậy chứ! Làm tui cứ tưởng ông vừa nói gì đó kỳ lạ lắm cơ đấy!"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0003 | CELES"
+msgstr "Cậu cứ nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0005 | CELES"
+msgstr "Cậu cứ nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Căn cứ để có thể khẳng định Yamada vẫn còn sống...\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chỉ cần bẻ gãy điểm mâu thuẫn trong cuộc thảo luận vừa rồi, mọi chuyện chắc chắn sẽ sáng tỏ thôi.\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thi thể của Yamada khi tụi mình tìm thấy ở phòng y tế, và thi thể của cậu ấy khi tái phát hiện ở kho chứa đồ mỹ thuật...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Giữa hai lúc đó, rõ ràng có điều gì đó rất bất thường...!\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Hifumi Alive Debate
+Disagreement Contradiction Debate
 

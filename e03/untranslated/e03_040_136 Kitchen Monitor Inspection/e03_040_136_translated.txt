@@ -1,43 +1,142 @@
 --- Gemini Translation Raw Output for e03_040_136.po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニター…
+#. こんな物…厨房にまで置かなくったって…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>This is one of the monitors Monokuma appears on. Why\n"
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on. Why\n"
 "does there need to be one in the kitchen...?\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện. Tại sao\n"
-"lại cần phải đặt một cái ở trong nhà bếp cơ chứ...?\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧監視カメラだ…
+#. 調査の様子も見てるんだろうか…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>A surveillance camera... I wonder if they're keeping\n"
+"⟦CLT 4⟧A surveillance camera... I wonder if they're keeping\n"
 "an eye on the investigation...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một chiếc camera giám sát... Mình tự hỏi không biết họ có đang theo dõi\n"
-"quá trình điều tra hay không nữa...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧包丁は、ひとつ欠けたまま…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧One is still missing...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここにあった包丁を舞園さんが持ち出して…
+#. そして…それで……
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Sayaka took one of the knives that was here...and then\n"
+"she...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧………………
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧…忘れられない。
+#. 忘れられる訳がない。
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I still can't forget about it. How could I...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ショーケースには肉が並んでいる…
+#. 今日はオージーだという事以外には気にならないな。
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The display case is filled with all kinds of meat. But\n"
+"if it's not Aussie Beef, I'm not interested!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧野菜が山積みになっている…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's a bunch of vegetables all piled up.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここには気になる物はないな…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's nothing here I need to be concerned about.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧厨房から出ますか？
+#. ⟦CLT⟧
+msgctxt "0012 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the kitchen?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những chiếc màn hình mà Monokuma dùng để xuất hiện. Tại sao ngay cả trong nhà bếp cũng cần phải có một cái cơ chứ...?\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một chiếc camera giám sát... Không biết họ có đang để mắt đến cuộc điều tra này không nữa...\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một con vẫn còn đang bị thiếu...\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Sayaka đã lấy đi một con dao ở đây... và rồi cậu ấy...\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi vẫn không thể nào quên được chuyện đó. Làm sao tôi có thể quên được cơ chứ...?\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tủ kính trưng bày chứa đầy đủ các loại thịt. Nhưng nếu không phải bò Úc thì tôi chẳng có hứng thú đâu!\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có một đống rau củ đang được chất thành đống.\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không có gì ở đây khiến tôi cần phải bận tâm cả.\n⟦CLT⟧"
+
+msgctxt "0010 | CHOICE/RE:ACT"
 msgstr "Có"
 
 msgctxt "0011 | CHOICE/RE:ACT"
-msgid "No"
 msgstr "Không"
 
 msgctxt "0012 | NARRATION"
-msgid ""
-"<CLT 23>Leave the kitchen?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi nhà bếp sao?\n"
-"<CLT>"
-
+msgstr "⟦CLT 23⟧Rời khỏi nhà bếp chứ?\n⟦CLT⟧"
 
 ==================== FOLDER SUMMARY ====================
-Kitchen Monitor Inspection
+Kitchen Knife Investigation
 

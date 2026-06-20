@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>…これで、一通りみんなの話は聞き終わったな。
 #. <CLT>
@@ -18,10 +17,7 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Okay, I've heard what everyone else has to say.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Vậy là mình đã nghe xong hết tất cả những lời mọi\n"
-"người muốn chia sẻ rồi.\n"
-"<CLT>"
+msgstr "<CLT 4>Được rồi, tôi đã nghe xong những gì mọi người nói.<CLT>"
 
 #. <CLT 4>じゃあ、最後にボクからだ…！
 #. <CLT>
@@ -29,9 +25,7 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>So now it's my turn...!\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Giờ thì đến lượt của mình lên tiếng rồi...!\n"
-"<CLT>"
+msgstr "<CLT 4>Vậy thì, cuối cùng đến lượt tôi…!<CLT>"
 
 #. …あのさ、聞いてくれる？
 #. ちょっと気になる物を見つけたんだ…
@@ -40,13 +34,13 @@ msgid ""
 "Hey, um...can I tell you guys something? I found\n"
 "something that's...kinda been bothering me."
 msgstr ""
-"À này... mọi người nghe tớ nói một chút được không? Tớ vừa\n"
-"phát hiện ra một thứ... cứ khiến tớ bận tâm mãi."
+"Này... mọi người có thể nghe tôi nói một chút không? Tôi\n"
+"tìm thấy một thứ... có chút đáng bận tâm."
 
 #. 気になる物…？
 msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid "What is it?"
-msgstr "Thứ khiến cậu bận tâm sao?"
+msgstr "Có chuyện gì vậy?"
 
 #. ３階の美術倉庫で、変な写真を見つけたんだ。
 #. 結局は、モノクマに持ってかれちゃったんだけど…
@@ -55,34 +49,34 @@ msgid ""
 "I found this weird picture in the repository.\n"
 "Apparently Monokuma took it..."
 msgstr ""
-"Tớ đã tìm thấy một bức ảnh rất kỳ lạ ở trong kho chứa đồ tầng 3.\n"
-"Nhưng cuối cùng nó lại bị Monokuma tịch thu mất rồi..."
+"Tôi đã tìm thấy một bức ảnh kỳ lạ trong kho lưu trữ. Cuối\n"
+"cùng thì nó đã bị Monokuma lấy mất rồi..."
 
 #. 変な写真って…エッチいヤツ！？
 msgctxt "0006 | AOI ASAHINA"
 msgid "A weird picture? You mean, like...dirty!?"
-msgstr "Một bức ảnh kỳ lạ á? Ý ông là... kiểu ảnh mát mẻ bậy bạ hả!?"
+msgstr "Ảnh kỳ lạ? Ý ông là... ảnh nóng á!?"
 
 #. そういう変じゃなくって、その写真には…
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "No, not that kind of weird. It was..."
-msgstr "Không phải kiểu kỳ lạ đó đâu, trong bức ảnh đó..."
+msgstr "Không phải cái kiểu kỳ lạ đó, bức ảnh đó..."
 
 #. 桑田クンと大和田クンと不二咲クンが
 #. 一緒に写ってたんだ。
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "...a picture of Leon, Mondo, and Chihiro all together."
-msgstr "...là hình chụp chung của Leon, Mondo và Chihiro đấy."
+msgstr "...là bức ảnh chụp Leon, Mondo và Chihiro cùng nhau."
 
 #. あの３人が…？
 msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid "Those three...?"
-msgstr "Ba người đó sao...?"
+msgstr "Ba người đó...?"
 
 #. しかも、３人とも…笑ってたんだ…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "And the three of them were...laughing."
-msgstr "Hơn nữa, cả ba người họ... đều đang cười đùa rất vui vẻ."
+msgstr "Và cả ba người họ... đều đang cười..."
 
 #. あの３人が、笑って写ってるなんて…
 #. そんな写真、いつの間に撮ったのでしょうかね…？
@@ -91,14 +85,13 @@ msgid ""
 "It showed the three of them together, laughing? When\n"
 "could it have been taken?"
 msgstr ""
-"Ba người bọn họ cùng tụ tập rồi cười đùa vui vẻ trong một khung\n"
-"hình sao? Một bức ảnh như thế rốt cuộc đã được chụp từ bao giờ\n"
-"vậy nhỉ...?"
+"Một bức ảnh cả ba người đó... đang cười ư? Không biết nó\n"
+"đã được chụp từ khi nào nhỉ...?"
 
 #. しかも、それだけじゃないんだ。
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "And there's more..."
-msgstr "Chưa hết, vẫn còn một chi tiết nữa..."
+msgstr "Hơn nữa, còn có chuyện này nữa."
 
 #. その写真に写ってた教室の窓には、
 #. 鉄板がなかったんだよ…
@@ -107,13 +100,13 @@ msgid ""
 "In the picture, there weren't any metal sheets\n"
 "covering the windows."
 msgstr ""
-"Cửa sổ của lớp học xuất hiện trong bức ảnh đó không hề bị\n"
-"những tấm sắt bịt kín lại..."
+"Trên cửa sổ của lớp học trong bức ảnh đó, không hề có tấm\n"
+"sắt che chắn nào cả..."
 
 #. では、この学園で撮った写真ではないと…？
 msgctxt "0014 | SAKURA OOGAMI"
 msgid "Then...the picture wasn't taken here?"
-msgstr "Nếu vậy... bức ảnh đó không phải được chụp tại học viện này sao?"
+msgstr "Vậy, bức ảnh đó không phải được chụp ở ngôi trường này sao...?"
 
 #. ですが、あの３人が学園に来る前から
 #. 知り合いだったなんて話は、聞いていませんわ…
@@ -122,9 +115,8 @@ msgid ""
 "But I don't recall hearing anything about them knowing\n"
 "each other before coming to this school."
 msgstr ""
-"Thế nhưng tớ chưa từng nghe bất kỳ ai trong số ba người họ nói\n"
-"rằng bản thân đã quen biết nhau từ trước khi đặt chân đến ngôi\n"
-"trường này cả..."
+"Nhưng tớ không nhớ là đã từng nghe nói họ quen biết nhau\n"
+"từ trước khi đến ngôi trường này."
 
 #. きっと幻ですがな。
 #. モノクマに邪眼でも使われて…
@@ -133,13 +125,13 @@ msgid ""
 "You probably just imagined it! Monokuma cast a spell\n"
 "on you!"
 msgstr ""
-"Chắc chắn đó chỉ là ảo ảnh do cậu tự tưởng tượng ra mà\n"
-"thôi! Hay là cậu đã dính phải tà nhãn của Monokuma rồi..."
+"Cậu chỉ tưởng tượng thôi! Chắc chắn là Monokuma đã dùng tà\n"
+"thuật lên cậu rồi!"
 
 #. いや、確かに見たんだって！
 msgctxt "0017 | MAKOTO NAEGI"
 msgid "No! I saw it, I'm telling you!"
-msgstr "Không, tớ thề là chính mắt tớ đã nhìn thấy nó mà!"
+msgstr "Không, tôi đã thực sự nhìn thấy nó mà!"
 
 #. この学園に来た後でも、来る前でもないんだとすると、
 #. じゃあ、その写真が撮られたのって…
@@ -148,8 +140,8 @@ msgid ""
 "But if it wasn't taken before we got here, or *after*\n"
 "we got here..."
 msgstr ""
-"Nhưng nếu nó không được chụp trước khi chúng ta đến đây,\n"
-"cũng chẳng phải *sau khi* chúng ta tới..."
+"Nhưng nếu không phải được chụp trước khi chúng ta đến đây,\n"
+"cũng không phải sau khi đến đây..."
 
 #. 実は、３人とも生きてて、
 #. ここから出た後に撮ったんだべ！
@@ -158,29 +150,28 @@ msgid ""
 "I bet they're all still alive! They left the school\n"
 "and then took that picture!"
 msgstr ""
-"Tớ cá là cả ba người họ thực ra vẫn còn sống nhăn răng! Họ đã\n"
-"thoát được ra ngoài trường rồi cùng nhau chụp bức ảnh đó\n"
-"đấy!"
+"Tớ cá là cả ba người họ vẫn còn sống! Sau khi ra khỏi đây\n"
+"họ mới chụp bức ảnh đó!"
 
 #. それはないわ。だって…
 msgctxt "0020 | KYOUKO KIRIGIRI"
 msgid "That's impossible. After all..."
-msgstr "Chuyện đó không thể xảy ra được đâu. Bởi vì..."
+msgstr "Điều đó là không thể. Vì..."
 
 #. 私達は…自分達の目でしっかり確認したはずよ。
 msgctxt "0021 | KYOUKO KIRIGIRI"
 msgid "...we saw it with our own eyes."
-msgstr "...chính mắt chúng ta đã chứng kiến tất cả rồi."
+msgstr "...chúng ta đã tận mắt chứng kiến mọi chuyện mà."
 
 #. 彼らが殺され、そして…
 msgctxt "0022 | KYOUKO KIRIGIRI"
 msgid "They're all dead."
-msgstr "Họ đều đã qua đời rồi."
+msgstr "Tất cả bọn họ đều đã chết."
 
 #. 処刑されていった姿を…
 msgctxt "0023 | KYOUKO KIRIGIRI"
 msgid "Either murdered or executed..."
-msgstr "Dù là bị sát hại hay là bị xử tử..."
+msgstr "Bị giết hại, hoặc bị xử tử..."
 
 #. <CLT 4>いや、あの３人だけじゃない…
 #. <CLT>
@@ -188,9 +179,7 @@ msgctxt "0024 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>And they're not the only ones...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Không, không chỉ có ba người bọn họ đâu...\n"
-"<CLT>"
+msgstr "<CLT 4>Không, không chỉ có ba người đó...<CLT>"
 
 #. <CLT 4>モノクマにやられた江ノ島さんも…
 #. それに…
@@ -199,9 +188,7 @@ msgctxt "0025 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Monokuma killed Junko. And then there's...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Cả Junko bị Monokuma kết liễu nữa. Và rồi còn cả...\n"
-"<CLT>"
+msgstr "<CLT 4>Enoshima cũng bị Monokuma giết... Và cả...<CLT>"
 
 #. <CLT 4>舞園さんも…
 #. <CLT>
@@ -209,9 +196,7 @@ msgctxt "0026 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...Sayaka.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>...Sayaka nữa.\n"
-"<CLT>"
+msgstr "<CLT 4>...Maizono nữa.<CLT>"
 
 #. <CLT 4>ボクらが見たものは、
 #. 幻でもなんでもなく…
@@ -221,9 +206,8 @@ msgid ""
 "<CLT 4>*That* wasn't an illusion.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Những gì bọn mình đã chứng kiến hoàn toàn không\n"
-"phải là ảo ảnh...\n"
-"<CLT>"
+"<CLT 4>Những gì chúng ta thấy, không phải là ảo ảnh hay\n"
+"thứ gì tương tự...<CLT>"
 
 #. <CLT 4>間違いなく現実だった。
 #. <CLT>
@@ -231,9 +215,7 @@ msgctxt "0028 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>It was real, I'm sure of it.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Nó chắc chắn là hiện thực tàn khốc.\n"
-"<CLT>"
+msgstr "<CLT 4>Mà chắc chắn đó là sự thật.<CLT>"
 
 #. <CLT 4>みんな間違いなく死んでいた。
 #. 生きていたなんて…あり得ないほどに。
@@ -243,10 +225,7 @@ msgid ""
 "<CLT 4>They all died. There's no way any of them are still\n"
 "alive.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Tất cả bọn họ đều đã thực sự bỏ mạng rồi. Chẳng có\n"
-"một cơ hội nào cho việc họ vẫn còn sống sót cả.\n"
-"<CLT>"
+msgstr "<CLT 4>Mọi người đều đã chết rồi. Không thể nào họ vẫn còn sống được.<CLT>"
 
 #. だったら、なおさら…
 #. あの写真はいつ撮られたものなんだ…？
@@ -254,9 +233,7 @@ msgctxt "0030 | MAKOTO NAEGI"
 msgid ""
 "So we have to figure out when that picture was\n"
 "taken..."
-msgstr ""
-"Nếu đã như vậy, thì bức ảnh đó rốt cuộc đã được chụp vào\n"
-"thời điểm nào chứ..."
+msgstr "Nếu vậy thì, bức ảnh đó rốt cuộc đã được chụp khi nào...?"
 
 #. モノクマがねつ造したのでしょう。
 #. それ以外には、考えられませんわ…
@@ -265,8 +242,8 @@ msgid ""
 "Monokuma most likely forged it. I can't imagine any\n"
 "other possibility."
 msgstr ""
-"Chắc chắn là do Monokuma đã làm giả nó rồi. Tớ chẳng thể\n"
-"nghĩ ra được bất kỳ khả năng nào khác nữa cả..."
+"Có lẽ Monokuma đã làm giả nó thôi. Tớ không nghĩ ra khả\n"
+"năng nào khác cả..."
 
 #. <CLT 4>ねつ造……
 #. やっぱり、そうだよな…
@@ -275,10 +252,7 @@ msgctxt "0032 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Forged...? Is that all there is to it?\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Làm giả sao...? Liệu mọi chuyện có đơn giản chỉ\n"
-"dừng lại ở đó không?\n"
-"<CLT>"
+msgstr "<CLT 4>Làm giả sao...? Chỉ vậy thôi sao...<CLT>"
 
 #. …忘れんべ！　モノクマのいたずらなんか気にしてても
 #. しゃーないって！
@@ -287,13 +261,13 @@ msgid ""
 "Stay focused, man! Don't let Monokuma's bullcrap\n"
 "sidetrack you!"
 msgstr ""
-"Quên nó đi cậu ơi! Cứ bận tâm đến mấy trò đùa ác ý của\n"
-"Monokuma thì chẳng giải quyết được gì đâu!"
+"Tập trung đi nào! Đừng để mấy trò nhảm nhí của Monokuma\n"
+"làm cậu xao nhãng!"
 
 #. その通りですわ。それに…
 msgctxt "0034 | CELES"
 msgid "He's right. But more importantly..."
-msgstr "Đúng là như vậy đấy. Hơn nữa..."
+msgstr "Cậu ấy nói đúng. Nhưng quan trọng hơn là..."
 
 #. それ以外にも、気になる事がありますしね。
 #. そちらの件も確認しておかなければならないでしょう。
@@ -302,6 +276,5 @@ msgid ""
 "On another topic, there is something that has been\n"
 "bothering me. I would like to discuss that."
 msgstr ""
-"Ngoài chuyện đó ra, tớ cũng có một vấn đề khác đang cảm thấy vô\n"
-"cùng lấn cấn đây. Tớ nghĩ chúng ta cũng cần phải làm rõ chuyện\n"
-"này luôn đi chứ nhỉ."
+"Tớ vẫn còn một chuyện khác đáng bận tâm. Tớ muốn thảo luận\n"
+"về vấn đề đó."

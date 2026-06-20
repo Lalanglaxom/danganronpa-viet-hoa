@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>ここが葉隠クンの部屋か…
 #. なんか、妙なアイテムがずらりと揃ってるけど…
@@ -21,8 +20,7 @@ msgid ""
 "in here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Yasuhiro. Có đủ các loại đồ đạc kỳ\n"
-"lạ ở trong này...\n"
+"<CLT 4>Đây là phòng của Hiro. Có đủ thứ món đồ kỳ lạ ở trong này...\n"
 "<CLT>"
 
 #. <CLT 4>どこから持って来たんだよ…
@@ -32,7 +30,7 @@ msgid ""
 "<CLT 4>Where'd he even get it all from?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy kiếm mấy thứ này từ đâu ra không biết nữa?\n"
+"<CLT 4>Cậu ấy kiếm đâu ra mấy thứ này không biết nữa?\n"
 "<CLT>"
 
 #. <CLT 4>それに、相変わらず、
@@ -43,7 +41,7 @@ msgid ""
 "<CLT 4>More importantly, he still hasn't turned up...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Quan trọng hơn là cậu ấy vẫn chưa lộ diện...\n"
+"<CLT 4>Quan trọng hơn là, cậu ấy vẫn chưa thấy xuất hiện...\n"
 "<CLT>"
 
 #. <CLT 4>勝手に部屋を調べられても、
@@ -55,8 +53,8 @@ msgid ""
 "his permission to search his room, right?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nghĩa là cậu ấy cũng chẳng thể phàn nàn gì nếu mình\n"
-"tự ý lục soát phòng mà không xin phép, đúng không nhỉ?\n"
+"<CLT 4>Nghĩa là cậu ấy thực sự không thể phàn nàn gì nếu mình tự\n"
+"ý lục soát phòng mà không xin phép, đúng không nhỉ?\n"
 "<CLT>"
 
 #. <CLT 4>モノクマが写るモニター…
@@ -66,7 +64,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"dùng để xuất hiện.\n"
 "<CLT>"
 
 #. <CLT 4>今はこんな物を気にしても仕方がない。
@@ -78,8 +77,8 @@ msgid ""
 "need to just forget about it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bận tâm về chuyện đó lúc này cũng chẳng để làm gì.\n"
-"Mình cần phải cố quên nó đi thôi...\n"
+"<CLT 4>Giờ bận tâm về nó cũng chẳng để làm gì. Mình nên cố\n"
+"quên nó đi thôi...\n"
 "<CLT>"
 
 #. <CLT 4>監視カメラ…
@@ -101,8 +100,8 @@ msgid ""
 "need to just forget about it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bận tâm về chuyện đó lúc này cũng chẳng để làm gì.\n"
-"Mình cần phải cố quên nó đi thôi...\n"
+"<CLT 4>Giờ bận tâm về nó cũng chẳng để làm gì. Mình nên cố\n"
+"quên nó đi thôi...\n"
 "<CLT>"
 
 #. <CLT 4>まだ、調べる事がありそうだ…
@@ -112,7 +111,7 @@ msgid ""
 "<CLT 4>I feel like there's more for me to look at here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cảm giác vẫn còn điều gì đó cần xem xét ở đây...\n"
+"<CLT 4>Mình cảm thấy vẫn còn thứ cần phải xem xét ở đây...\n"
 "<CLT>"
 
 #. はい
@@ -132,7 +131,7 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
 
 #. <CLT 4>ボクはシャワールームの中を
@@ -143,7 +142,7 @@ msgid ""
 "<CLT 4>I soundlessly checked the bathroom...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình khẽ khàng kiểm tra phòng tắm...\n"
+"<CLT 4>Tôi lặng lẽ kiểm tra phòng tắm...\n"
 "<CLT>"
 
 #. ………………
@@ -159,7 +158,7 @@ msgid ""
 "<CLT 4>There's nothing in here. It's pretty grungy, though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chẳng có gì ở trong này cả. Nhưng mà nó khá là bẩn thỉu...\n"
+"<CLT 4>Không có gì ở trong này cả. Cơ mà, bẩn thỉu thật đấy...\n"
 "<CLT>"
 
 #. <CLT 4>どうやったら、
@@ -170,7 +169,8 @@ msgid ""
 "<CLT 4>How does a bathroom even get this dirty?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Làm sao mà một cái phòng tắm có thể bẩn đến mức này được cơ chứ?\n"
+"<CLT 4>Làm sao mà người ta có thể để phòng tắm bẩn đến mức\n"
+"này được nhỉ?\n"
 "<CLT>"
 
 #. <CLT 4>このダンボール箱…
@@ -181,7 +181,7 @@ msgid ""
 "<CLT 4>I think there's something in the cardboard box...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chắc là có cái gì đó ở trong chiếc hộp các-tông này...\n"
+"<CLT 4>Mình nghĩ có cái gì đó ở trong chiếc thùng các-tông này...\n"
 "<CLT>"
 
 #. <CLT 4>これは…何かの設計図か？
@@ -204,19 +204,19 @@ msgid ""
 "plastic, and...plaster?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mấy thứ được làm bằng... Trông giống như các-tông,\n"
-"nhựa, và... thạch cao sao?\n"
+"<CLT 4>Mấy bộ phận làm bằng... Nhìn giống như bìa\n"
+"các-tông, nhựa và... thạch cao sao?\n"
 "<CLT>"
 
 #. もしかして、ジャスティスロボの？
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "Is this...Robo Justice?"
-msgstr "Chẳng lẽ đây là... Robo Justice sao?"
+msgstr "Chẳng lẽ đây là... Robo Justice?"
 
 #. これが葉隠クンの部屋にあるって事は…！
 msgctxt "0021 | MAKOTO NAEGI"
 msgid "And it's in Hiro's room...!"
-msgstr "Và nó lại ở trong phòng của Yasuhiro...!"
+msgstr "Và thứ này lại ở trong phòng của Hiro...!"
 
 #. <CLT 4>いや待てよ…でも…
 #. <CLT>
@@ -245,13 +245,13 @@ msgid ""
 "<CLT 4>Something about them bothers me...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có điều gì đó ở chúng cứ làm mình bận tâm...\n"
+"<CLT 4>Có điều gì đó về chúng làm mình thấy lấn cấn...\n"
 "<CLT>"
 
 #. うーん……
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "Hmm..."
-msgstr "Hừm..."
+msgstr "Ưm..."
 
 #. <CLT 23><CLT><CLT 3>ジャスティスロボの設計図<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
@@ -263,18 +263,18 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 23>\"<CLT><CLT 3>Bản thiết kế Robo Justice<CLT><CLT 23>\" đã được\n"
-"thêm vào mục Đạn Hy Vọng trong sổ học sinh của bạn.\n"
+"thêm vào phần Đạn Hy Vọng trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. このダンボール箱に入ってるのって…
 msgctxt "0027 | MAKOTO NAEGI"
 msgid "In the cardboard box is..."
-msgstr "Thứ ở trong chiếc hộp các-tông là..."
+msgstr "Thứ ở trong chiếc thùng các-tông này là..."
 
 #. ジャスティスロボの設計図？
 msgctxt "0028 | MAKOTO NAEGI"
 msgid "...blueprints for Robo Justice?"
-msgstr "...bản thiết kế của Robo Justice sao?"
+msgstr "...bản thiết kế Robo Justice sao?"
 
 #. だけど、この設計図って…
 msgctxt "0029 | MAKOTO NAEGI"
@@ -284,7 +284,7 @@ msgstr "Nhưng... bản thiết kế này..."
 #. なんか…気になるな…
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "Something about them bothers me..."
-msgstr "Có điều gì đó ở chúng cứ làm mình bận tâm..."
+msgstr "Có điều gì đó về chúng làm mình thấy lấn cấn..."
 
 #. <CLT 4>普通のベッドだ。
 #. ボクの部屋の物と大して変わらないな…
@@ -295,8 +295,8 @@ msgid ""
 "room.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một chiếc giường bình thường, cơ bản là chẳng\n"
-"khác gì cái ở trong phòng của mình cả.\n"
+"<CLT 4>Đó là một chiếc giường bình thường, hầu như chẳng\n"
+"khác gì chiếc ở phòng tôi.\n"
 "<CLT>"
 
 #. <CLT 4>まだ、調べる事がありそうだ…
@@ -306,7 +306,7 @@ msgid ""
 "<CLT 4>I feel like there's more for me to look at here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cảm giác vẫn còn điều gì đó cần xem xét ở đây...\n"
+"<CLT 4>Mình cảm thấy vẫn còn thứ cần phải xem xét ở đây...\n"
 "<CLT>"
 
 #. はい
@@ -326,5 +326,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"

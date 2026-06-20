@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. いや、ジャスティスハンマーの順番が
 #. <CLT 3>殺された順番とは限らない<CLT>はずだよ！
@@ -19,8 +18,8 @@ msgid ""
 "Hold on, there's no reason to assume that <CLT 3>the hammers\n"
 "were used in the same order as their numbers<CLT>!"
 msgstr ""
-"Khoan đã, không có lý do gì để khẳng định rằng <CLT 3>các cây\n"
-"búa được sử dụng theo đúng thứ tự đánh số của chúng cả<CLT>!"
+"Khoan đã, không có lý do gì để khẳng định <CLT 3>thứ tự sử\n"
+"dụng búa trùng khớp với số hiệu của chúng<CLT> đâu!"
 
 #. と言うより、それ自体が犯人の偽装工作だと
 #. 考えられるんじゃないかな？
@@ -29,8 +28,8 @@ msgid ""
 "If anything, that's just another way the killer tried\n"
 "to disguise their actions."
 msgstr ""
-"Ngược lại, đó rất có thể chỉ là một mánh khóe ngụy tạo\n"
-"khác mà hung thủ đã dựng lên để che mắt chúng ta thôi."
+"Trái lại, tớ nghĩ chính việc đó mới là một mánh khóe ngụy\n"
+"tạo của hung thủ đấy."
 
 #. あのジャスティスハンマーの番号が
 #. 犯人の偽装工作という事は…
@@ -39,16 +38,18 @@ msgid ""
 "So you're saying the culprit wanted us to *think* the\n"
 "hammers were used in order..."
 msgstr ""
-"Ý cậu là hung thủ muốn chúng ta phải *nghĩ* rằng các cây\n"
-"búa được sử dụng theo đúng thứ tự sao..."
+"Nghĩa là cậu muốn nói hung thủ cố tình làm vậy để đánh lừa\n"
+"chúng ta về thứ tự sử dụng búa..."
 
 #. 実際に殺された順番は、
 #. 石丸が先で、山田が後だったという事か？
 msgctxt "0004 | BYAKUYA TOGAMI"
 msgid "...but in reality Taka was killed *before* Hifumi?"
-msgstr "...nhưng thực tế thì Ishimaru lại bị sát hại *trước* Hifumi?"
+msgstr ""
+"...nhưng thực tế thì Ishimaru mới là người bị sát hại\n"
+"trước Yamada?"
 
 #. だったら、その根拠を示してもらおうか。
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid "Okay then, let's see the proof."
-msgstr "Nếu vậy thì, cho tôi xem bằng chứng đi."
+msgstr "Được thôi, vậy thì đưa bằng chứng ra đây xem nào."

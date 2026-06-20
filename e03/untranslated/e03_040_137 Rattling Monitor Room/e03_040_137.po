@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/10/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. <CLT>
@@ -19,7 +18,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"dùng để xuất hiện.\n"
 "<CLT>"
 
 #. 気にしてもしょうがない、放っておこう。
@@ -28,8 +28,8 @@ msgid ""
 "There's not much point in worrying about it now. I\n"
 "should try to just forget about it..."
 msgstr ""
-"Bận tâm về chuyện đó lúc này cũng chẳng để làm gì. Mình\n"
-"nên cố quên nó đi thôi..."
+"Giờ bận tâm về nó cũng chẳng để làm gì. Mình nên cố quên\n"
+"nó đi thôi..."
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
@@ -40,8 +40,9 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"Điều này không quan trọng đối với vụ án. Tớ chỉ cần quên\n"
-"nó đi thôi."
+"<CLT 4>Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên\n"
+"kia của chiếc camera giám sát đó...\n"
+"<CLT>"
 
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
@@ -51,8 +52,8 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Điều này không quan trọng đối với vụ án. Tạm thời\n"
-"mình cần quên nó đi đã.\n"
+"<CLT 4>Chỉ nghĩ đến thôi đã thấy bực mình rồi... nhưng\n"
+"mình thực sự chẳng thể làm gì được.\n"
 "<CLT>"
 
 #. はい
@@ -72,7 +73,7 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
 
 #. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だ。
@@ -84,8 +85,8 @@ msgid ""
 "don't have any way to get past the gate...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chuyện đó làm mình nhớ ra... Về chiếc xe đẩy trong\n"
-"kho luu trữ...\n"
+"<CLT 4>Đây là phòng rác. Nói cách khác thì là bãi đổ rác.\n"
+"Mình không có cách nào để đi qua cánh cổng sắt cả...\n"
 "<CLT>"
 
 #. <CLT 4>でも、事件には関係なさそうだな…
@@ -95,7 +96,7 @@ msgid ""
 "<CLT 4>But it doesn't seem related to the case, anyway.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đã có máu dính trên bánh xe của nó...!\n"
+"<CLT 4>Nhưng dù sao thì có vẻ nó cũng không liên quan gì đến vụ án.\n"
 "<CLT>"
 
 #. <CLT 4>鉄格子の開閉スイッチだ…
@@ -105,7 +106,7 @@ msgid ""
 "<CLT 4>It's the switch that raises and lowers the gate.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Liệu vết máu đó có phải đến từ...\n"
+"<CLT 4>Đây là công tắc để đóng mở cánh cổng sắt.\n"
 "<CLT>"
 
 #. <CLT 4>ボクは鍵を持ってないから、開けられない…
@@ -115,7 +116,7 @@ msgid ""
 "<CLT 4>I don't have the key, so I can't activate it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...đây không?\n"
+"<CLT 4>Mình không có chìa khóa nên không kích hoạt nó được.\n"
 "<CLT>"
 
 #. <CLT 23>「ガタガタガタ！」
@@ -132,9 +133,7 @@ msgstr ""
 #. 鍵が掛かってるみたいだ…
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
-msgstr ""
-"<CLT 4>Cả hai phòng đều nằm ở tầng 3, nên việc đó chắc chắn là khả thi.\n"
-"<CLT>"
+msgstr "Cửa không hề nhúc nhích. Chắc là bị khóa rồi."
 
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
@@ -153,5 +152,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này sao?\n"
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
 "<CLT>"
