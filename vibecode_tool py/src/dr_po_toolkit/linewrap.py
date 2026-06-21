@@ -8,13 +8,9 @@ from .po_io import load_po, save_po
 from .text_utils import visible_len
 
 CLT_SPACE_RE = re.compile(r"<CLT\s+(\d+)>")
-
+_PROTECTED_CLT_RE = re.compile(r"<CLT_\d+>")
 
 def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) -> tuple[str, bool]:
-    """Wrap display text while ignoring CLT tags for visible length.
-
-    This intentionally rewrites display line breaks. Run validator afterward.
-    """
     original = text
     if not text.strip():
         return text, False
@@ -28,7 +24,15 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
         text = text[:-5]
 
     flat = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
-    if visible_len(flat) <= hard:
+    total_len = visible_len(flat)
+
+    if total_len > soft + hard:
+        limit = hard
+    else:
+        limit = soft
+        max_cuts = 1
+
+    if total_len <= limit:
         fixed = flat + end_tag
         return fixed, fixed != original
 
@@ -36,23 +40,21 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
     words = protected.split(" ")
     lines: list[str] = []
 
-    def find_cut(items: list[str], limit: int) -> int:
+    def _vis(word: str) -> int:
+        return visible_len(_PROTECTED_CLT_RE.sub("", word))
+
+    def find_cut(items: list[str], lim: int) -> int:
         vis = 0
         for i, word in enumerate(items):
-            vis += (1 if i else 0) + visible_len(word)
-            if vis > limit:
+            vis += (1 if i else 0) + _vis(word)
+            if vis > lim:
                 return max(i, 1)
         return len(items)
 
-    for cut_num in range(max_cuts):
-        soft_cut = find_cut(words, soft)
-        if soft_cut >= len(words):
+    for _ in range(max_cuts):
+        cut_at = find_cut(words, limit)
+        if cut_at >= len(words):
             break
-        if cut_num == 0 and visible_len(" ".join(words[soft_cut:])) <= soft:
-            cut_at = soft_cut
-        else:
-            hard_cut = find_cut(words, hard)
-            cut_at = hard_cut if hard_cut < len(words) else soft_cut
         lines.append(" ".join(words[:cut_at]))
         words = words[cut_at:]
 

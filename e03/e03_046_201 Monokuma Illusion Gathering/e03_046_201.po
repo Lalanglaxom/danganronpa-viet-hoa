@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>赤い扉の向こうでは、
 #. モノクマの号令を聞いたみんなが集まっていた…
@@ -20,8 +21,8 @@ msgid ""
 "were gathered by the red door.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phía bên kia cánh cửa màu đỏ, mọi người nghe theo\n"
-"hiệu lệnh của Monokuma và đã tập hợp đông đủ...\n"
+"<CLT 4>Phía bên kia cánh cửa màu đỏ, mọi người nghe theo hiệu\n"
+"lệnh của Monokuma và đã tập hợp đông đủ...\n"
 "<CLT>"
 
 #. <CLT 4>そして、その場に全員が揃った直後…
@@ -37,7 +38,7 @@ msgstr ""
 #. こんちゃっす！x２
 msgctxt "0003 | MONOKUMA"
 msgid "Hello! (Hello...! Hello...)"
-msgstr "Chào các em nhé! (Chào các em nhé...! Chào các em nhé...)"
+msgstr "Xin chào! (Xin chào...! Xin chào...)"
 
 #. 増えたッ！？
 msgctxt "0004 | MAKOTO NAEGI"
@@ -59,9 +60,8 @@ msgstr ""
 msgctxt "0006 | MONOKUMA"
 msgid "I'm moving so fast it only LOOKS like I've multiplied!"
 msgstr ""
-"Ta đang tận dụng hiện tượng ảnh ảo bằng cách lặp đi lặp lại việc\n"
-"di chuyển với tốc độ cực cao, để giả vờ như mình có thể phân\n"
-"thân ra đấy mà!"
+"Ta đang tận dụng hiện tượng ảnh ảo bằng cách di chuyển với \n"
+"tốc độ cực cao, để vờ như mình có thể phân thân ấy mà!"
 
 #. クックック…どちらのモノクマが実体か…
 #. オマエラにはわかるかな？
@@ -70,8 +70,8 @@ msgid ""
 "Ke-heh-heh... Can you guys tell...which one is the\n"
 "real Monokuma!?"
 msgstr ""
-"Heh heh heh... Không biết trong hai Monokuma này thì đâu mới là\n"
-"hàng thật đây... Liệu các em có nhận ra được không ta?"
+"Heh heh heh... Không biết trong hai Monokuma này thì đâu\n"
+"mới là hàng thật đây... Liệu các em có nhận ra được không ta?"
 
 #. もうエレベーターに乗っていいのかしら？
 msgctxt "0008 | KYOUKO KIRIGIRI"
@@ -101,7 +101,9 @@ msgctxt "0012 | MONOKUMA"
 msgid ""
 "Then if everyone's here and ready to go, please board\n"
 "the pain train! Er...elevator."
-msgstr "Vậy nếu mọi người đã đông đủ rồi thì xin mời bước vào thang máy."
+msgstr ""
+"Vậy nếu mọi người đã đông đủ rồi thì xin mời bước vào\n"
+"thang máy."
 
 #. ボクは一足先に行ってるからね～！
 msgctxt "0013 | MONOKUMA"
@@ -129,7 +131,7 @@ msgid ""
 "anymore, Hiro. You're gonna pay for your sins..."
 msgstr ""
 "Hiro... ông không còn đường trốn nữa đâu... Ông phải đền\n"
-"tội cho những gì mình đã làm thôi..."
+"tội cho những gì mình đã làm..."
 
 #. だから…犯人じゃねーってのに…！
 msgctxt "0017 | YASUHIRO HAGAKURE"
@@ -144,7 +146,7 @@ msgid ""
 "costume? Or the note?"
 msgstr ""
 "Mà nhắc mới nhớ, bộ trang phục khác mà cậu nói rốt cuộc đã\n"
-"tìm thấy chưa vậy? Cả chiếctờ ghi chú kia nữa?"
+"tìm thấy chưa vậy? Cả tờ ghi chú kia nữa?"
 
 #. いや…それは…見つからんかったけども…
 msgctxt "0019 | YASUHIRO HAGAKURE"
@@ -164,7 +166,7 @@ msgstr ""
 #. う…うぅッ…！
 msgctxt "0021 | YASUHIRO HAGAKURE"
 msgid "N...ngh!"
-msgstr "Ư... ưử...!"
+msgstr "Ư... ư...!"
 
 #. それは、ここで話す事じゃないわ。
 #. 議論は裁判場に行ってからのはずよ…
@@ -230,8 +232,8 @@ msgid ""
 "with it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể làm ngơ cho kẻ đã sát hại Hifumi và\n"
-"Taka được nhởn nhơ ngoài vòng pháp luật...\n"
+"<CLT 4>Mình không thể làm ngơ cho kẻ đã sát hại Hifumi và Taka\n"
+"được nhởn nhơ bước ra khỏi đây...\n"
 "<CLT>"
 
 #. <CLT 4>残ったボクらの為にも…
@@ -241,7 +243,7 @@ msgid ""
 "<CLT 4>For everyone who's still alive...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vì lợi ích của những người còn sống sót trong tụi mình...\n"
+"<CLT 4>Vì những người còn sống sót...\n"
 "<CLT>"
 
 #. <CLT 4>そして、死んだ２人の為にも…
@@ -263,8 +265,8 @@ msgid ""
 "killed two of our friends...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kẻ đã ra tay sát hại Hifumi và Taka... Kẻ đã giết\n"
-"chết hai người bạn của tụi mình...\n"
+"<CLT 4>Kẻ đã ra tay sát hại Hifumi và Taka... Kẻ đã giết chết hai\n"
+"người bạn của tụi mình...\n"
 "<CLT>"
 
 #. <CLT 4>その犯人は…
@@ -274,7 +276,7 @@ msgid ""
 "<CLT 4>The killer is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hung thủ đó...\n"
+"<CLT 4>Kẻ giết người...\n"
 "<CLT>"
 
 #. <CLT 4>…この中にいる！！
@@ -284,7 +286,7 @@ msgid ""
 "<CLT 4>...someone right here!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...đang ở ngay trong số chúng ta!\n"
+"<CLT 4>...nằm trong số chúng ta!\n"
 "<CLT>"
 
 #. 聞こえなかったのか？
@@ -322,13 +324,15 @@ msgstr ""
 #. まこちん！
 msgctxt "0038 | TOUKO FUKAWA"
 msgid "Come on, Big Mac! Let's do it!"
-msgstr "H-Hơ, mau đi thôi cậu, Naegi!"
+msgstr "Cu Mak, mau đi thôi!"
 
 #. モノクマのあの態度…
 #. とことん…ふざけているな…
 msgctxt "0039 | SAKURA OOGAMI"
 msgid "I don't like Monokuma's carefree attitude..."
-msgstr "Thái độ đó của Monokuma... rõ là... trêu ngươi người khác mà..."
+msgstr ""
+"Thái độ đó của Monokuma... rõ là... trêu ngươi người khác\n"
+"mà..."
 
 #. これで犯人は決まったようなもの。
 msgctxt "0040 | CELES"
@@ -339,7 +343,7 @@ msgstr "Như thế này thì hung thủ coi như đã được định đoạt r
 #. あっという間に終わってしまいますわね。
 msgctxt "0041 | CELES"
 msgid "This trial will be over in no time."
-msgstr "lớp xét xử lần này sẽ kết thúc trong nháy mắt thôi nhỉ."
+msgstr "Lớp xét xử lần này sẽ kết thúc chóng vánh thôi nhỉ."
 
 #. <CLT 4>今はこんなモニターを気にしている場合じゃない…
 #. これからの事に集中しよう。
@@ -364,8 +368,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Bây giờ không phải lúc để bận tâm về cái camera giám sát\n"
-"này... Mình cần phải tập trung vào những chuyện sắp diễn\n"
-"ra.\n"
+"này... Mình cần phải tập trung vào những chuyện sắp diễn ra.\n"
 "<CLT>"
 
 #. <CLT 4>ボクは、肺の奥から大きな息を吐き出し…
@@ -375,7 +378,8 @@ msgid ""
 "<CLT 4>I took one last deep breath, and exhaled slowly.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình hít một hơi thật sâu tận lồng ngực, rồi từ từ thở ra...\n"
+"<CLT 4>Mình hít một hơi thật sâu tận lồng ngực, rồi từ từ thở\n"
+"ra...\n"
 "<CLT>"
 
 #. <CLT 4>エレベーターに向かって歩き出した。
@@ -396,7 +400,7 @@ msgid ""
 "<CLT 4>Once everyone was aboard...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và khi tất cả mọi người đã bước vào bên trong thang máy...\n"
+"<CLT 4>Và khi tất cả mọi người đã bước vào bên trong...\n"
 "<CLT>"
 
 #. <CLT 4>エレベーターの扉は自動で閉まり…
@@ -406,7 +410,7 @@ msgid ""
 "<CLT 4>...the doors closed on their own.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...cánh cửa thang máy tự động đóng lại...\n"
+"<CLT 4>...cánh cửa thang máy tự động đóng lại.\n"
 "<CLT>"
 
 #. <CLT 4>そして、動き出した。
@@ -428,8 +432,8 @@ msgid ""
 "fell further and further down...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cùng với tiếng động ầm ầm vang lên, tụi mình đang\n"
-"lún sâu, thật sâu xuống bên dưới...\n"
+"<CLT 4>Cùng với tiếng động ầm ầm vang lên, tụi mình đang lún sâu,\n"
+"thật sâu xuống bên dưới...\n"
 "<CLT>"
 
 #. <CLT 4>もう、後戻りは出来ない…
@@ -450,8 +454,8 @@ msgid ""
 "<CLT 4>Until we settled all this, we couldn't go anywhere.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trừ khi mọi chuyện được giải quyết ổn thỏa, bằng\n"
-"không tụi mình sẽ chẳng thể nào quay trở lên được nữa...\n"
+"<CLT 4>Trừ khi mọi chuyện được giải quyết ổn thỏa, bằng không tụi\n"
+"mình sẽ chẳng thể nào quay trở lên được nữa...\n"
 "<CLT>"
 
 #. <CLT 4>しばらくした後、
@@ -463,8 +467,8 @@ msgid ""
 "finally came to a stop.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sau một hồi lâu, cuối cùng chiếc thang máy cũng\n"
-"ngừng đi xuống...\n"
+"<CLT 4>Sau một hồi lâu, cuối cùng chiếc thang máy cũng ngừng đi\n"
+"xuống...\n"
 "<CLT>"
 
 #. <CLT 4>そして扉が開く…
@@ -474,7 +478,7 @@ msgid ""
 "<CLT 4>The elevator doors slid open...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...và cánh cửa mở ra...\n"
+"<CLT 4>...và cánh cửa mở ra.\n"
 "<CLT>"
 
 #. <CLT 4>残酷な運命の扉が…
