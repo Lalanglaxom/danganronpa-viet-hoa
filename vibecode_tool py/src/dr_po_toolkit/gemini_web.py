@@ -64,6 +64,7 @@ msgstr "Tôi hy vọng chúng ta có thể hòa thuận!"
 TRANSLATION RULES:
 * Translate into Vietnamese only.
 * Tags are protected in the input as tokens like ⟦CLT X⟧ and ⟦CLT⟧. Preserve those tokens exactly.
+* Translate as close as possible follow original english text.
 * Preserve placeholders and all other symbols exactly.
 * Use Japanese #. comment lines for context only.
 * Never leave msgstr empty.
