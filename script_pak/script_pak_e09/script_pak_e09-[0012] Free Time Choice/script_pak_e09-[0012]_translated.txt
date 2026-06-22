@@ -1,0 +1,56 @@
+--- Gemini Translation Raw Output for script_pak_e09-[0012].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 誰かに会いに行く
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Go meet with someone"
+msgstr ""
+
+#. ⟦CLT 4⟧えっと、誰を誘おうかな。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Hmm... Who should I talk to?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ひとりで過ごす
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Spend some time alone"
+msgstr ""
+
+#. ⟦CLT 4⟧まぁ、ひとりで過ごすか…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I could really use some time to myself...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧何をしますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧What would you like to do?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Đi gặp một ai đó"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ừm... Mình nên rủ ai bây giờ nhỉ?\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Ở một mình"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mà thôi, chắc mình ở một mình vậy...\n⟦CLT⟧"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn làm gì?\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Free Time Choice
+

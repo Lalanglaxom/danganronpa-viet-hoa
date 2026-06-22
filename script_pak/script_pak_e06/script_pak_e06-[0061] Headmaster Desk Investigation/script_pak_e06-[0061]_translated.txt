@@ -1,0 +1,94 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0061].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧デスクの上に置かれたパソコン…
+#. 学園長が使っていた物らしい。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This computer must have belonged to the headmaster.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧パソコンの置かれたデスクだ…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The desk is home to a computer...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それなりに使い込まれてる。
+#. 学園長は仕事熱心な人だったのかな？
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It looks well used. The headmaster must have spent a\n"
+"lot of time here...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧革張りのイスだ…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A leather chair...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧生徒が使う雰囲気じゃない。
+#. 学園長が使っていたんだろう…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I can't imagine a student using something like this.\n"
+"It must have been the headmaster's.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc máy tính này chắc hẳn là của hiệu trưởng. ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc bàn này là nơi đặt máy tính... ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trông nó được sử dụng khá nhiều. Có lẽ hiệu trưởng đã dành nhiều thời gian ở đây... ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một chiếc ghế bọc da... ⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tớ không thể tưởng tượng được việc một học sinh lại sử dụng thứ này. Chắc chắn nó là của hiệu trưởng rồi. ⟦CLT⟧"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Headmaster Desk Investigation
+

@@ -15,12 +15,12 @@ msgstr ""
 #. はい
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -28,7 +28,7 @@ msgctxt "0003 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"
 
 #. <CLT 4>ここはトラッシュルームだ。
 #. 今は、鉄格子がジャマで中に入れない。
@@ -37,7 +37,7 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>The trash room gate is down, so I can't get inside.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là phòng xử lý rác. Hiện tại, cánh cửa sắt đang chắn lối nên tôi không thể vào trong.<CLT>"
 
 #. <CLT 4>でも、事件には関係なさそうだな…
 #. <CLT>
@@ -45,7 +45,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I don't think it's involved in the case, anyway...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Nhưng mà, chắc cũng không liên quan gì đến vụ án đâu nhỉ...<CLT>"
 
 #. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だな。
 #. <CLT>
@@ -53,7 +53,7 @@ msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This is the trash room. The dump, in other words.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là phòng xử lý rác... nói cách khác là chỗ đổ rác.<CLT>"
 
 #. <CLT 4>そう言えば、掃除当番の話はどうなったんだ？
 #. 誰もその話をしないけど…
@@ -63,17 +63,17 @@ msgid ""
 "<CLT 4>Nobody's really said anything about cleaning duty\n"
 "since...everything happened.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Nhắc mới nhớ, chuyện phân công trực nhật thì sao rồi nhỉ? Chẳng ai nói gì về chuyện đó cả...<CLT>"
 
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -81,4 +81,4 @@ msgctxt "0010 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"

@@ -1,0 +1,53 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0018].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧ロッカー…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Lockers...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧プールにはつきものだよな…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Well, I would expect to see that at any normal pool.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧室内プールから出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the pool?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tủ đồ... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chà, ở hồ bơi nào thì cũng có thứ này cả mà... ⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi hồ bơi? ⟦CLT⟧"
+

@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>I'm not gonna let these things scare me anymore... I'm\n"
 "not afraid of you, Monokuma!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tôi sẽ không để những thứ này làm mình sợ hãi nữa... Tôi không sợ ngươi đâu, Monokuma!! <CLT>"
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで黒幕が…
@@ -30,7 +30,7 @@ msgid ""
 "<CLT 4>Even now...on the other side of this camera, the\n"
 "mastermind...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu... <CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -38,7 +38,7 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi! <CLT>"
 
 #. <CLT 4>この木槌が…
 #. もし、ここになかったら…
@@ -47,7 +47,7 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>If these mallets never existed...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Nếu những cái vồ này không tồn tại... <CLT>"
 
 #. <CLT 4>なんて、考えても仕方ない事だよな…
 #. <CLT>
@@ -55,7 +55,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>No, there's no point thinking like that.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Không, suy nghĩ như vậy cũng chẳng ích gì... <CLT>"
 
 #. <CLT 4>台車だ…
 #. 山田クンが…これで石丸クンを運んで…
@@ -64,17 +64,17 @@ msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>It's the dolly that Hifumi used it to move Taka...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là chiếc xe đẩy mà Hifumi đã dùng để di chuyển Taka... <CLT>"
 
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>美術倉庫から出ますか？
 #. <CLT>
@@ -82,4 +82,4 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>Leave the repository?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Bạn muốn rời khỏi nhà kho? <CLT>"

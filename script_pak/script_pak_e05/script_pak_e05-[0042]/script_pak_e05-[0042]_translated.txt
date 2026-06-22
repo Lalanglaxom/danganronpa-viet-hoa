@@ -1,0 +1,99 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0042].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧いや、待て…
+#. 気になるものが落ちてる…！
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Wait, hold on! There's something on the ground I'd\n"
+"better check out...!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、待て…
+#. 気になるものが落ちてる…！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Wait, hold on! There's something on the ground I'd\n"
+"better check out...!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、待て…
+#. 気になるものが落ちてる…！
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Wait, hold on! There's something on the ground I'd\n"
+"better check out...!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、待て…
+#. 気になるものが落ちてる…！
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Wait, hold on! There's something on the ground I'd\n"
+"better check out...!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、待て…
+#. 気になるものが落ちてる…！
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Wait, hold on! There's something on the ground I'd\n"
+"better check out...!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧死体から離れますか？
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Step away from the dead body?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini UI was stuck on a disabled Stop response box before send. Refreshed page; batch will retry.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\nnên kiểm tra xem...!\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\nnên kiểm tra xem...!\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\nnên kiểm tra xem...!\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\nnên kiểm tra xem...!\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\nnên kiểm tra xem...!\n⟦CLT⟧"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi thi thể này chứ?\n⟦CLT⟧"
+

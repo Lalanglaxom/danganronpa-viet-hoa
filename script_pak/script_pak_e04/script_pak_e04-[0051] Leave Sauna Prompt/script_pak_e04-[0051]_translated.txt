@@ -1,0 +1,34 @@
+--- Gemini Translation Raw Output for script_pak_e04-[0051].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧サウナから出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the sauna?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi phòng xông hơi?⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Leave Sauna Prompt
+

@@ -1,0 +1,77 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0005].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧そもそも、なんでモニターなんだ？
+#. アナウンスだけでも良かったじゃないか。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Why do they even need all these monitors? A normal PA\n"
+"announcement would work just as well...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧…絵的に寂しいって事か？
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Maybe it's just to give us something to look at.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧監視カメラ…この向こうで黒幕が…
+#. だとしたら、そいつは何者なんだ？
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The mastermind's been on the other side of this thing,\n"
+"watching us. But...who are they really?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0006 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 3 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mà rốt cuộc, tại sao lại cần mấy cái màn hình này chứ? Tôi nghĩ chỉ cần thông báo qua loa là đủ rồi mà... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...Hay là để cho tôi có cái mà nhìn cho đỡ chán à? ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Camera an ninh... Kẻ chủ mưu đang ở phía bên kia... đang quan sát chúng tôi.\nNhưng... kẻ đó rốt cuộc là ai?\n⟦CLT⟧"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0006 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
+

@@ -1,0 +1,53 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0018].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧このロッカーに、
+#. ジャスティスロボが入ってたんだ…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧We found \"Robo Justice\" stuffed in this locker last\n"
+"time.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧室内プールから出ますか？
+#. ⟦CLT⟧
+msgctxt "0004 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the pool?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Locator.click: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("div.ql-editor[contenteditable=\"true\"][aria-label*=\"Enter a prompt for Gemini\"]").last
+
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lần trước, chúng ta đã tìm thấy \"Robo Justice\" bị nhồi trong cái tủ đồ này...⟦CLT⟧"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi hồ bơi?⟦CLT⟧"
+

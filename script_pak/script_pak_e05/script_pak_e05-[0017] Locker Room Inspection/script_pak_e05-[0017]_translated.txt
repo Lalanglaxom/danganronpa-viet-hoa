@@ -1,0 +1,110 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0017].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧こっちは女子更衣室のドアだ。
+#. ボクじゃロックを外せないから、入れないな…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The door to the girls locker room. I have no way of\n"
+"unlocking it, so I couldn't go in if I wanted to.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧こっちは男子更衣室のカードリーダーだ。
+#. ボクの電子生徒手帳で開けられるはず…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The boys locker room card reader. I can open it using\n"
+"my e-Handbook.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧こっちは女子更衣室のカードリーダーだ。
+#. ボクの電子生徒手帳じゃ開けられないはず…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The girls locker room card reader. I'm listed as\n"
+"\"male\" in my e-Handbook, so it can't open this door.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧これって…本物の銃だよな？
+#. なんでこんなものがあるんだよ…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Is that...a real gun? Why is there something like that\n"
+"here...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧この棚には…
+#. 水泳用の色々な用具が並んでいる…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There are a bunch of different pool-related items on\n"
+"the shelf.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧浮き輪がある…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A flotation donut...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là cửa phòng thay đồ nữ. Tớ không có cách nào mở khóa nên không thể vào được đâu...⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là máy quét thẻ của phòng thay đồ nam. Tớ chắc là có thể mở bằng sổ học sinh của mình...⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là máy quét thẻ của phòng thay đồ nữ. Vì sổ học sinh ghi tớ là \"nam\" nên chắc không mở được cửa này đâu...⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là... súng thật sao? Tại sao lại có thứ này ở đây chứ...?⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trên kệ này... xếp đủ các loại dụng cụ bơi lội...⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một chiếc phao bơi...⟦CLT⟧"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Locker Room Inspection
+

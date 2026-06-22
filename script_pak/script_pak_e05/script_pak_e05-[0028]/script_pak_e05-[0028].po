@@ -15,7 +15,7 @@ msgstr ""
 #. これは…ビニールシートか。
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "It's the tarp..."
-msgstr ""
+msgstr "Đây là... tấm bạt sao."
 
 #. <CLT 4>もう気になる事はない。
 #. このビニールシートの出番は終わったはずだ。
@@ -25,7 +25,7 @@ msgid ""
 "<CLT 4>I don't think I have to worry about it anymore. Its\n"
 "part in all this is over, I think.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tôi không nghĩ mình cần phải lo lắng về nó nữa. Tôi nghĩ vai trò của tấm bạt này trong chuyện này đã kết thúc rồi.<CLT>"
 
 #. <CLT 4>大きな棚がある…
 #. <CLT>
@@ -33,7 +33,7 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Now that's a big shelf.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đó là một cái kệ lớn.<CLT>"
 
 #. <CLT 4>中には、実験器具などがごちゃごちゃと
 #. 置かれている。
@@ -43,7 +43,7 @@ msgid ""
 "<CLT 4>A bunch of lab equipment and stuff has been piled up\n"
 "on it. Totally disorganized...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Một đống dụng cụ thí nghiệm và đồ đạc được chất đống trên đó. Hoàn toàn lộn xộn...<CLT>"
 
 #. <CLT 4>色々な棚がある…
 #. <CLT>
@@ -51,7 +51,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>There are shelves full of stuff.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Có những cái kệ chứa đầy đồ đạc.<CLT>"
 
 #. <CLT 4>色々あるけど、特に気になる物はないんだ。
 #. とにかく、そういう事なんだ。
@@ -61,17 +61,17 @@ msgid ""
 "<CLT 4>There's a lot here, but I don't see anything that\n"
 "catches my eye. So...that's it.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Ở đây có nhiều thứ lắm, nhưng tôi không thấy thứ gì gây chú ý cả. Vậy nên... chỉ có vậy thôi.<CLT>"
 
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>物理準備室から出ますか？
 #. <CLT>
@@ -79,4 +79,4 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>Leave the equipment room?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi phòng chuẩn bị vật lý?<CLT>"

@@ -1,0 +1,118 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0032].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. …元通りになってる。
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Everything's back to normal..."
+msgstr ""
+
+#. 舞園さんや石丸クンたちの時と同じか。
+#. これも…モノクマがやったんだろうな…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"Just like with Sayaka and Taka. Monokuma's\n"
+"responsible, I'm sure..."
+msgstr ""
+
+#. ⟦CLT 4⟧かなり大きな棚だな…
+#. 棚いっぱいに薬品が詰め込まれている…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I can't get over how big this shelf is. And it's\n"
+"packed tight with all kinds of pills and chemicals.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それに…
+#. 棚の前にあった黄色い粉が片付けられてる…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧And someone's cleaned up all the powder that was\n"
+"spilled on the floor ...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧かなり大きな棚だな…
+#. 棚いっぱいに薬品が詰め込まれている…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I can't get over how big this shelf is. And it's\n"
+"packed tight with all kinds of pills and chemicals.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それに…
+#. 棚の前にあった黄色い粉が片付けられてる…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧And someone's cleaned up all the powder that was\n"
+"spilled on the floor ...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧かなり大きな棚だな…
+#. 棚いっぱいに薬品が詰め込まれている…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I can't get over how big this shelf is. And it's\n"
+"packed tight with all kinds of pills and chemicals.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それに…
+#. 棚の前にあった黄色い粉が片付けられてる…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧And someone's cleaned up all the powder that was\n"
+"spilled on the floor ...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0011 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Mọi thứ đã trở lại bình thường..."
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Giống như với Sayaka và Taka vậy. Chắc chắn là do Monokuma làm rồi..."
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái kệ này to thật đấy. Nó chứa đầy các loại thuốc và hóa chất bên trong... ⟦CLT⟧"
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hơn nữa... đống bột vàng vương vãi trên sàn trước kệ đã được dọn sạch... ⟦CLT⟧"
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái kệ này to thật đấy. Nó chứa đầy các loại thuốc và hóa chất bên trong... ⟦CLT⟧"
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hơn nữa... đống bột vàng vương vãi trên sàn trước kệ đã được dọn sạch... ⟦CLT⟧"
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái kệ này to thật đấy. Nó chứa đầy các loại thuốc và hóa chất bên trong... ⟦CLT⟧"
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hơn nữa... đống bột vàng vương vãi trên sàn trước kệ đã được dọn sạch... ⟦CLT⟧"
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Có"
+msgctxt "0010 | CHOICE/RE:ACT"
+msgstr "Không"
+msgctxt "0011 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này? ⟦CLT⟧"
+

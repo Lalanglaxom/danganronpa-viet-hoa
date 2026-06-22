@@ -1,0 +1,128 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0045].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧桜の木が植えられている。しかも満開だ。
+#. キレイだけど…なんだかな…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This cherry tree is in full bloom. It's really pretty,\n"
+"but somehow...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧桜の木が植えられている。しかも満開だ。
+#. キレイだけど…なんだかな…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This cherry tree is in full bloom. It's really pretty,\n"
+"but somehow...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧木製のロッカーがある…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's a bunch of wooden lockers in here.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それぞれのロッカーに木の札が差し込まれている。
+#. これが鍵になってるんだろうな…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Each of them has a traditional-looking woodblock key\n"
+"sticking out of it...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧鎧が飾られている…
+#. これって本物なのかな…？
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A suit of armor is on display. Is it authentic...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧巻き藁がある…
+#. 本物を見るのってこれが初めてだな…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a straw post used for sword practice. I've never\n"
+"actually seen one for real before...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧遠くに的が見える。
+#. いや、近いと成り立たないけど…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧That target seems pretty far away. Although I guess\n"
+"that's the point, huh...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0010 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một cây hoa anh đào đang nở rộ. Đẹp thật, nhưng mà... không hiểu sao... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một cây hoa anh đào đang nở rộ. Đẹp thật, nhưng mà... không hiểu sao... ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có mấy cái tủ đồ bằng gỗ ở đây này. ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mỗi cái tủ đều có cắm một thẻ gỗ. Chắc đây là chìa khóa... ⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có một bộ giáp được trưng bày... Không biết nó có phải hàng thật không nhỉ...? ⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một trụ rơm để tập kiếm... Đây là lần đầu tiên tôi nhìn thấy vật thật đấy... ⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đích ngắm trông có vẻ xa quá nhỉ. Mà chắc là phải vậy rồi...? ⟦CLT⟧"
+
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0010 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Dojo Room Inspection
+

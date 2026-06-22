@@ -1,0 +1,145 @@
+--- Gemini Translation Raw Output for script_pak_e09-[0000].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 挑戦する
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Give it a shot"
+msgstr ""
+
+#. よし、挑戦してみるか。
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Alright, let's give it a shot."
+msgstr ""
+
+#. そろそろ他の場所へ行こう…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "I should probably get going..."
+msgstr ""
+
+#. 挑戦しない
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Not right now"
+msgstr ""
+
+#. また今度にしておくか…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Maybe next time..."
+msgstr ""
+
+#. 説明を見る
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Learn more about it"
+msgstr ""
+
+#. ⟦CLT 23⟧あなた様は、希望ヶ峰学園の様々な場所で、
+#. 小さなメダルを手に入れることでしょう。
+#. ⟦CLT⟧
+msgctxt "0007 | NARRATION"
+msgid ""
+"⟦CLT 23⟧During your stay here at Hope's Peak Academy, you'll\n"
+"find coins scattered throughout the school.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧これは、どこぞの王様も集めているとウワサの、
+#. ⟦CLT⟧⟦CLT 3⟧モノクマメダル⟦CLT⟧⟦CLT 23⟧というものです。
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧These ⟦CLT⟧⟦CLT 3⟧Monocoins⟦CLT⟧⟦CLT 23⟧ are treasures valued by kings and\n"
+"thieves alike!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧手に入れたモノクマメダルの枚数は、
+#. ⟦CLT⟧⟦CLT 3⟧手帳メニュー⟦CLT⟧⟦CLT 23⟧でご確認頂けます。
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧You can use the ⟦CLT⟧⟦CLT 3⟧Handbook Menu⟦CLT⟧⟦CLT 23⟧ to see how many\n"
+"Monocoins you currently have.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧こちらの機械では、そのモノクマメダルを使って、
+#. ⟦CLT⟧⟦CLT 3⟧景品⟦CLT⟧⟦CLT 23⟧を獲得する事ができます。
+#. ⟦CLT⟧
+msgctxt "0010 | NARRATION"
+msgid ""
+"⟦CLT 23⟧And if you put the coins in this machine here, there's\n"
+"a chance you could win a ⟦CLT⟧⟦CLT 3⟧prize⟦CLT⟧⟦CLT 23⟧!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧モノクマメダルをたくさん投入されますと、
+#. あなた様がお持ちでない景品が出やすくなります。
+#. ⟦CLT⟧
+msgctxt "0011 | NARRATION"
+msgid ""
+"⟦CLT 23⟧The more coins you use, the better chance you have of\n"
+"getting something new.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧獲得した景品は、⟦CLT⟧⟦CLT 3⟧手帳メニュー⟦CLT⟧⟦CLT 23⟧の
+#. ⟦CLT⟧⟦CLT 3⟧“プレゼント”⟦CLT⟧⟦CLT 23⟧でご確認頂けます。
+#. ⟦CLT⟧
+msgctxt "0012 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Check the ⟦CLT⟧⟦CLT 3⟧Presents⟦CLT⟧⟦CLT 23⟧ section of the ⟦CLT⟧⟦CLT 3⟧Handbook Menu⟦CLT⟧⟦CLT 23⟧ to\n"
+"review your prizes.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧モノモノマシーン⟦CLT⟧⟦CLT 23⟧に挑戦なさいますか？
+#. ⟦CLT⟧
+msgctxt "0013 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Would you like to try your hand against the almighty\n"
+"⟦CLT⟧⟦CLT 3⟧MonoMono Machine⟦CLT⟧⟦CLT 23⟧!?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Thử xem sao"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Được, tớ thử xem sao."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Tớ nên đi thôi..."
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Để lúc khác"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Để lúc khác vậy..."
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Xem hướng dẫn"
+
+msgctxt "0007 | NARRATION"
+msgstr "⟦CLT 23⟧Trong thời gian ở lại Đỉnh Hy Vọng, bạn sẽ tìm thấy những đồng xu rải rác khắp trường học. ⟦CLT⟧"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Những ⟦CLT⟧⟦CLT 3⟧Xu Monokuma⟦CLT⟧⟦CLT 23⟧ này là kho báu mà cả vua chúa lẫn kẻ trộm đều khao khát! ⟦CLT⟧"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn có thể dùng ⟦CLT⟧⟦CLT 3⟧Menu Sổ học sinh⟦CLT⟧⟦CLT 23⟧ để xem mình hiện đang có bao nhiêu Xu Monokuma. ⟦CLT⟧"
+
+msgctxt "0010 | NARRATION"
+msgstr "⟦CLT 23⟧Và nếu bạn bỏ xu vào cái máy này, sẽ có cơ hội nhận được một ⟦CLT⟧⟦CLT 3⟧món quà⟦CLT⟧⟦CLT 23⟧! ⟦CLT⟧"
+
+msgctxt "0011 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn càng bỏ nhiều xu, cơ hội nhận được thứ gì đó mới càng cao. ⟦CLT⟧"
+
+msgctxt "0012 | NARRATION"
+msgstr "⟦CLT 23⟧Kiểm tra mục ⟦CLT⟧⟦CLT 3⟧“Quà tặng”⟦CLT⟧⟦CLT 23⟧ trong ⟦CLT⟧⟦CLT 3⟧Menu Sổ học sinh⟦CLT⟧⟦CLT 23⟧ để xem lại các món quà của bạn. ⟦CLT⟧"
+
+msgctxt "0013 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn có muốn thử vận may với ⟦CLT⟧⟦CLT 3⟧Máy MonoMono⟦CLT⟧⟦CLT 23⟧ vĩ đại này không!? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Interaction Choice
+

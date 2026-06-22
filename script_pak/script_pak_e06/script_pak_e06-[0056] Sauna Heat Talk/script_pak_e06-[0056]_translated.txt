@@ -1,0 +1,69 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0056].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧うぅ…熱くて頭がボーっと…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Urg...it's so hot. Makes it hard to even focus...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧おかしく…なりそうだ……
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I feel like I'm slowly losing my mind...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧も、木曜日を…もきゅ曜日って言うと…
+#. かわいらしいな…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Y-Ya know, if you pronounced \"Thursday\" like\n"
+"\"Thaursday\"...that'd be kinda funny...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧サウナから出ますか？
+#. ⟦CLT⟧
+msgctxt "0006 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the sauna?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ư... nóng quá. Khó mà tập trung được... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình cảm giác như sắp mất trí đến nơi rồi... ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Này... nếu gọi thứ Năm là... 'thứ Nâm'... nghe cũng đáng yêu nhỉ... ⟦CLT⟧"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0006 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi phòng xông hơi? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Sauna Heat Talk
+

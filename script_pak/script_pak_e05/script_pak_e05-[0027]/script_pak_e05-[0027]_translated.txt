@@ -1,0 +1,88 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0027].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. こんなに大きい機械が…ただの空気清浄機なんて…
+#. なんてバカバカしいんだ…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"A huge machine like this... Could it really be *just*\n"
+"an air purifier? Seems crazy to me..."
+msgstr ""
+
+#. ⟦CLT 4⟧物理の実験とかで使う物か…？
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧They must use these for physics experiments and\n"
+"stuff...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧資料の他にも滑車やプレート、
+#. 磁石や見た事のない機器が並んでる…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's materials, pulleys, steel plates, magnets, and\n"
+"all kinds of stuff I don't even recognize.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧なんかの機械って事はわかるけど…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This machine obviously has some kind of purpose,\n"
+"but...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧そもそも、物理が何かよくわからないボクに、
+#. この機械を理解するのは難しそうだ…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...I don't know anything about physics to begin with,\n"
+"so I wouldn't have a clue where to start with this.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Một cỗ máy to lớn như thế này... Liệu nó có thực sự *chỉ* là một chiếc máy lọc không khí? Thật nực cười..."
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chắc họ dùng những thứ này cho các thí nghiệm vật lý hay gì đó... ⟦CLT⟧"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có cả tài liệu, ròng rọc, tấm thép, nam châm và đủ thứ mà tôi còn chẳng nhận ra... ⟦CLT⟧"
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi biết là cỗ máy này rõ ràng có mục đích gì đó, nhưng... ⟦CLT⟧"
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...Mà ngay từ đầu tôi đã chẳng biết gì về vật lý rồi, nên việc hiểu được cỗ máy này xem ra quá khó... ⟦CLT⟧"
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Có"
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này? ⟦CLT⟧"
+

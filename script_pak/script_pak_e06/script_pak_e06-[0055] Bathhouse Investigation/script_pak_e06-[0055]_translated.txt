@@ -1,0 +1,60 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0055].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧うぅ…そう言えばゴミ捨て場から帰って来てから、
+#. まだお風呂に入れてない…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I just realized I haven't taken a bath since I rolled\n"
+"around in all that trash...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧さっぱりすれば、頭もスッキリするのに…
+#. その時間がないなんて…！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I could really use a nice bath to clear my head...but\n"
+"there's no time!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧大浴場から出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the bathhouse?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Giờ tớ mới nhận ra là tớ vẫn chưa tắm rửa gì kể từ khi lăn lộn trong đống rác đó... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ước gì được tắm một cái thật sảng khoái để đầu óc tỉnh táo lại... nhưng mà làm gì có thời gian chứ...! ⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi nhà tắm? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Bathhouse Investigation
+

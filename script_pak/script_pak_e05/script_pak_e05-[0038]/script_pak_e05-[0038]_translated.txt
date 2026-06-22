@@ -1,0 +1,91 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0038].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧今更、時計なんか気にしても仕方がないか…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What's the point in even looking at the clock now...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧こっちも鉄板…あっちも鉄板…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Metal plate here... Metal plate over there, too.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧この鉄板…
+#. 足に落としたら、どれだけ痛いのかな？
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Man, I bet it'd really hurt if one of these things\n"
+"fell on your foot...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0006 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Bây giờ có để ý đến đồng hồ thì cũng chẳng ích gì nhỉ...⟦CLT⟧"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chỗ này là tấm sắt... Chỗ kia cũng là tấm sắt...⟦CLT⟧"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trời ạ, tôi cá là nếu một trong mấy thứ này rơi vào chân thì sẽ đau lắm đây...⟦CLT⟧"
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Có"
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+msgctxt "0006 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Có"
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Không"
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+

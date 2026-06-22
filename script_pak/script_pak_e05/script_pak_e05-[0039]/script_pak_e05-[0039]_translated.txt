@@ -1,0 +1,32 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0039].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. はい
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0003 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Có"
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Không"
+msgctxt "0003 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+

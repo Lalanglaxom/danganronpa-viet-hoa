@@ -19,6 +19,8 @@ msgid ""
 "<CLT 4>There's a lawnmower here...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là máy cắt cỏ...\n"
+"<CLT>"
 
 #. <CLT 4>誰が、芝の手入れを…？
 #. モノクマにこれは扱えないよな…
@@ -29,6 +31,8 @@ msgid ""
 "can it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ai là người chăm sóc bãi cỏ chứ? Không thể nào là Monokuma được, phải không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>植木鉢か…
 #. <CLT>
@@ -37,6 +41,8 @@ msgid ""
 "<CLT 4>So many flowerpots...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhiều chậu hoa quá...\n"
+"<CLT>"
 
 #. <CLT 4>もしかして、職員室の花って…
 #. ここの鉢で育てたのかもな…
@@ -47,6 +53,8 @@ msgid ""
 "grown.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có lẽ đây là nơi trồng mấy bông hoa trong phòng giáo viên.\n"
+"<CLT>"
 
 #. <CLT 4>肥料だ…
 #. <CLT>
@@ -55,6 +63,8 @@ msgid ""
 "<CLT 4>Bags of fertilizer are piled up.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mấy bao phân bón chất đống.\n"
+"<CLT>"
 
 #. <CLT 4>色々あるんだな。
 #. 用途によって使い分けてるんだろうか…
@@ -65,6 +75,8 @@ msgid ""
 "different use.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có đủ loại khác nhau. Chắc mỗi loại có một công dụng riêng...\n"
+"<CLT>"
 
 #. <CLT 4>農具か…
 #. <CLT>
@@ -73,6 +85,8 @@ msgid ""
 "<CLT 4>There are different kinds of gardening tools here...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có nhiều loại dụng cụ làm vườn ở đây...\n"
+"<CLT>"
 
 #. <CLT 4>誰かが使ってるのだろうか…
 #. <CLT>
@@ -81,6 +95,8 @@ msgid ""
 "<CLT 4>Have they ever even been used?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Liệu chúng có từng được sử dụng không nhỉ...\n"
+"<CLT>"
 
 #. <CLT 4>このツルハシ…？
 #. 柄の部分に字が彫り込んであるけど…
@@ -91,11 +107,13 @@ msgid ""
 "pickaxe...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hử? Có thứ gì đó được khắc trên cán cái cuốc chim này...\n"
+"<CLT>"
 
 #. 暮威慈畏…大亜紋土…？
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Crazy...diamond...?"
-msgstr ""
+msgstr "Crazy...diamond...?"
 
 #. <CLT 4>どこかで…見覚えがあるような…
 #. <CLT>
@@ -104,6 +122,8 @@ msgid ""
 "<CLT 4>I remember seeing that...somewhere...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ nhớ là đã thấy nó... ở đâu đó rồi...\n"
+"<CLT>"
 
 #. <CLT 4>ビニールシート…
 #. <CLT>
@@ -112,6 +132,8 @@ msgid ""
 "<CLT 4>A tarp...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một tấm bạt...\n"
+"<CLT>"
 
 #. <CLT 4>特に気になる点は…ないな。
 #. <CLT>
@@ -120,16 +142,18 @@ msgid ""
 "<CLT 4>There isn't anything here that catches my eye...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Không có gì ở đây thu hút sự chú ý của tớ cả...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>物置から出ますか？
 #. <CLT>
@@ -138,3 +162,5 @@ msgid ""
 "<CLT 23>Leave the toolshed?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi nhà kho dụng cụ?\n"
+"<CLT>"

@@ -1,0 +1,100 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0048].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧時計で時間を知ったところで…
+#. なんか虚しくなるだけだ。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Sure, I can look at the clock and see what \"time\" it\n"
+"is. But what's the point?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧この教室にも鉄板か…
+#. 悲しい事に、なんか見慣れてきたな…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Another room sealed up with metal plates. It's kinda\n"
+"sad I'm actually getting used to it...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧この教室にも鉄板か…
+#. 悲しい事に、なんか見慣れてきたな…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Another room sealed up with metal plates. It's kinda\n"
+"sad I'm actually getting used to it...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0006 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tớ có xem đồng hồ để biết là \"mấy giờ\" thì... cũng chỉ thấy trống rỗng thôi. ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lại thêm một căn phòng bị bít kín bằng những tấm sắt à... Buồn thật đấy, có vẻ như tớ đang dần quen với chuyện này rồi... ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lại thêm một căn phòng bị bít kín bằng những tấm sắt à... Buồn thật đấy, có vẻ như tớ đang dần quen với chuyện này rồi... ⟦CLT⟧"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0006 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Sealed Room Check
+

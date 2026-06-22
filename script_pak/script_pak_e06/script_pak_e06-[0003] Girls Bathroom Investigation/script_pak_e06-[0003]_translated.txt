@@ -1,0 +1,56 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0003].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧……………
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここに入る気は起きない…
+#. できればもう…入りたくない…！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I really don't wanna go in... If I have any choice at\n"
+"all, I never want to go in there again!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここは女子トイレだ…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the girls bathroom.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧もちろん、入る訳にはいかない…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Obviously I can't go in...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tớ chẳng muốn vào trong đó chút nào... Nếu có thể chọn... tớ không bao giờ muốn bước vào đó lần nữa! ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là nhà vệ sinh nữ... ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đương nhiên là tớ không thể vào rồi... ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Girls Bathroom Investigation
+

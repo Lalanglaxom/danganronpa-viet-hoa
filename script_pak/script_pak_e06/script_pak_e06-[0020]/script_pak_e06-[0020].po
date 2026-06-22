@@ -18,7 +18,7 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. <CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -26,7 +26,7 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Right now, it's just showing the school crest.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Hiện tại, nó chỉ đang hiển thị huy hiệu trường. <CLT>"
 
 #. <CLT 4>もう、こんな監視カメラなんか…
 #. 心底どうでもいい…！
@@ -35,7 +35,7 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>From the bottom of my heart, I just really wanna...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Từ tận đáy lòng, tôi thực sự chỉ muốn... <CLT>"
 
 #. <CLT 4>本気で…壊してやろうかな…
 #. <CLT>
@@ -43,7 +43,7 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Maybe I'll just bust it to hell for real...!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Có lẽ tôi nên đập nát nó thật sự xem sao...! <CLT>"
 
 #. <CLT 4>時間に限りがあります…
 #. <CLT>
@@ -51,7 +51,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I don't have much time left...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Thời gian không còn nhiều nữa... <CLT>"
 
 #. <CLT 4>分厚い鉄板で隠された窓…
 #. その向こうには……
@@ -61,7 +61,7 @@ msgid ""
 "<CLT 4>The window's completely covered by that metal plate.\n"
 "And just on the other side of it...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Cửa sổ bị tấm thép dày che khuất... Phía bên kia... <CLT>"
 
 #. <CLT 4>もうすぐ帰れるはずだ。
 #. いや、絶対に帰ってみせる！！
@@ -71,7 +71,7 @@ msgid ""
 "<CLT 4>I'm sure I'll get out of here soon. No...I absolutely\n"
 "HAVE to get out!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Chắc chắn sớm muộn gì tôi cũng sẽ được về. Không... tôi nhất định phải tìm cách thoát ra!! <CLT>"
 
 #. <CLT 4>さようなら！　鉄板祭り！！
 #. いつか恋しくなる日が…来る訳ない！！
@@ -81,17 +81,17 @@ msgid ""
 "<CLT 4>See ya, metal plate party! I'm sure I'll miss you\n"
 "someday... Yeah, right!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tạm biệt nhé, bữa tiệc tấm thép!! Chắc chắn là tôi sẽ nhớ cậu... Ừ, còn lâu nhé!! <CLT>"
 
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -99,17 +99,17 @@ msgctxt "0011 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Bạn muốn rời khỏi khu vực này? <CLT>"
 
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -117,4 +117,4 @@ msgctxt "0014 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Bạn muốn rời khỏi khu vực này? <CLT>"

@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>It's the statue of Monokuma. Every time I see it, I\n"
 "can't help but think how ugly it is...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là... tượng Monokuma à... Lần nào nhìn thấy, tôi cũng thấy gu thẩm mỹ này tệ hại làm sao... <CLT>"
 
 #. <CLT 4>これは…ビーナス像か…
 #. これだけ美術室らしいな…
@@ -30,7 +30,7 @@ msgid ""
 "<CLT 4>It's...a Venus statue. This is the only thing in here\n"
 "that actually seems like it belongs...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là... tượng thần Vệ Nữ. Đây là thứ duy nhất ở đây có vẻ như thuộc về nơi này... <CLT>"
 
 #. <CLT 4>壁一面に絵が張られている…
 #. <CLT>
@@ -38,7 +38,7 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>There are paintings lining the walls.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Có những bức tranh được treo dọc theo các bức tường... <CLT>"
 
 #. <CLT 4>よく見たら、ただの子供の落書きだ。
 #. 芸術をバカにするな！
@@ -48,7 +48,7 @@ msgid ""
 "<CLT 4>But...now that I'm looking, it's just a bunch of kids'\n"
 "drawings. Don't make a fool out of art!\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Nhưng... nhìn kỹ thì chỉ là một đống hình vẽ nguệch ngoạc của trẻ con thôi. Đừng có bôi bác nghệ thuật như thế! <CLT>"
 
 #. <CLT 4>これって、仁王像だよな…
 #. <CLT>
@@ -56,7 +56,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This is a statue of Nio.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là tượng Hộ pháp Nio mà... <CLT>"
 
 #. <CLT 4>デッサン用に置かれてるんだろうか…
 #. <CLT>
@@ -65,7 +65,7 @@ msgid ""
 "<CLT 4>Maybe they use it as a model for drawing classes or\n"
 "something...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Chắc họ để ở đây làm mẫu cho các lớp vẽ hay gì đó... <CLT>"
 
 #. <CLT 4>ロッカーがある…
 #. やっぱり、中は空みたいだ。
@@ -74,17 +74,17 @@ msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>The locker is totally empty...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tủ đồ hoàn toàn trống rỗng... <CLT>"
 
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -92,4 +92,4 @@ msgctxt "0010 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"

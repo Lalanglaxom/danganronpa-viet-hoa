@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import threading
 import tkinter as tk
@@ -16,9 +17,10 @@ except Exception:  # tkinterdnd2 is optional; Windows native drop is used as fal
 from .backup import make_backups, restore_working_po_from_copies, sync_by_filename
 from .cancel import OperationCancelled
 from .config import load_config, save_config
-from .linewrap import wrap_path
+from .linewrap import wrap_msgstr, wrap_path
 from .rules import apply_rules_to_path, load_rules, rule_to_dict, save_rules
 from .search import search_path
+from .text_utils import visible_len
 from .gemini_web import DEFAULT_BATCH_RETRIES, DEFAULT_CHROME_USER_DATA_DIR, DEFAULT_MAX_ENTRIES_PER_BATCH, open_chrome_debug, run_gemini_web_path
 from .translator import apply_response_to_file, write_manual_jobs
 from .validation import format_text_report, validate_path, write_reports
@@ -633,6 +635,73 @@ class ToolkitGUI:
             tk.Label(opts, text=label, bg=BG, fg=TEXT).pack(side="left")
             tk.Spinbox(opts, from_=1, to=200, textvariable=var, width=6, bg=PANEL, fg=TEXT).pack(side="left", padx=(4, 12))
         tk.Checkbutton(opts, text="Dry run", variable=dry, bg=BG, fg=TEXT, selectcolor=PANEL).pack(side="left")
+
+        tester = tk.LabelFrame(frame, text="Line Wrap Test", bg=BG, fg=ACCENT, font=("Segoe UI", 9, "bold"), bd=1, relief="groove")
+        tester.pack(fill="x", padx=12, pady=(4, 0))
+
+        test_input = tk.Text(tester, bg=PANEL, fg=TEXT, insertbackground=TEXT, font=MONO, wrap="word", height=3, relief="flat")
+        test_input.pack(fill="x", padx=8, pady=(6, 4))
+        test_input.tag_configure("clt_tag", foreground="#1e90ff", font=(MONO[0], MONO[1], "bold"))
+
+        highlight_after_id = None
+
+        def highlight_clt_tags() -> None:
+            nonlocal highlight_after_id
+            highlight_after_id = None
+            content = test_input.get("1.0", "end-1c")
+            test_input.tag_remove("clt_tag", "1.0", "end")
+            # Match real PO CLT forms used by the tool: <CLT>, <CLT 1>, <CLT_1>.
+            # Also accepts <clt_N> typed as a placeholder while testing.
+            for match in re.finditer(r"<\s*clt(?:[\s_]*(?:\d+|n))?\s*>", content, flags=re.IGNORECASE):
+                start = f"1.0+{match.start()}c"
+                end = f"1.0+{match.end()}c"
+                test_input.tag_add("clt_tag", start, end)
+            test_input.tag_raise("clt_tag")
+
+        def schedule_clt_highlight(_event=None) -> None:
+            nonlocal highlight_after_id
+            if highlight_after_id is not None:
+                try:
+                    test_input.after_cancel(highlight_after_id)
+                except Exception:
+                    pass
+            highlight_after_id = test_input.after_idle(highlight_clt_tags)
+
+        def on_test_input_modified(_event=None) -> None:
+            if test_input.edit_modified():
+                test_input.edit_modified(False)
+                schedule_clt_highlight()
+
+        test_input.bind("<<Modified>>", on_test_input_modified)
+        test_input.edit_modified(False)
+
+        test_bottom = tk.Frame(tester, bg=BG)
+        test_bottom.pack(fill="x", padx=8, pady=(0, 6))
+
+        test_status = tk.StringVar(value="")
+        tk.Label(test_bottom, textvariable=test_status, bg=BG, fg=WARN, anchor="w", font=FONT).pack(side="left", fill="x", expand=True)
+
+        test_btnrow = tk.Frame(test_bottom, bg=BG)
+        test_btnrow.pack(side="right")
+
+        def apply_test_line_wrap() -> None:
+            raw = test_input.get("1.0", "end-1c")
+            fixed, did_change = wrap_msgstr(raw, soft=soft.get(), hard=hard.get(), max_cuts=cuts.get())
+            line_lengths = [visible_len(line) for line in fixed.splitlines()] or [0]
+            test_input.delete("1.0", "end")
+            test_input.insert("1.0", fixed)
+            highlight_clt_tags()
+            changed_text = "changed" if did_change else "unchanged"
+            test_status.set(f"Applied: {changed_text}. Lines: {line_lengths}")
+
+        def clear_test_text() -> None:
+            test_input.delete("1.0", "end")
+            highlight_clt_tags()
+            test_status.set("")
+
+        self._button(test_btnrow, "Apply Wrap", apply_test_line_wrap).pack(side="left", padx=(0, 5))
+        self._button(test_btnrow, "Clear", clear_test_text).pack(side="left")
+
         log = self._log(frame)
         btnrow = tk.Frame(frame, bg=BG)
         btnrow.pack(fill="x", padx=12, pady=(0, 12))

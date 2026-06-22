@@ -19,6 +19,8 @@ msgid ""
 "<CLT 4>It's a chicken...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Là một con gà...\n"
+"<CLT>"
 
 #. <CLT 4>爆弾産んだり…しないよな。
 #. <CLT>
@@ -27,6 +29,8 @@ msgid ""
 "<CLT 4>It's not gonna, like...lay a bomb, is it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó sẽ không... đẻ ra quả bom nào chứ, nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>ニワトリだ…
 #. <CLT>
@@ -35,6 +39,8 @@ msgid ""
 "<CLT 4>It's a chicken...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Là một con gà...\n"
+"<CLT>"
 
 #. <CLT 4>主食が人間なんて…ないよな。
 #. <CLT>
@@ -43,6 +49,8 @@ msgid ""
 "<CLT 4>It's not expecting to be fed, like...humans, is it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó sẽ không... ăn thịt người chứ nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>ニワトリだ…
 #. <CLT>
@@ -51,6 +59,8 @@ msgid ""
 "<CLT 4>It's a chicken...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Là một con gà...\n"
+"<CLT>"
 
 #. <CLT 4>爆弾産んだり…しないよな。
 #. <CLT>
@@ -59,6 +69,8 @@ msgid ""
 "<CLT 4>It's not gonna, like...lay a bomb, is it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó sẽ không... đẻ ra quả bom nào chứ, nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>ニワトリだ…
 #. <CLT>
@@ -67,6 +79,8 @@ msgid ""
 "<CLT 4>It's a chicken...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Là một con gà...\n"
+"<CLT>"
 
 #. <CLT 4>爆弾産んだり…しないよな。
 #. <CLT>
@@ -75,6 +89,8 @@ msgid ""
 "<CLT 4>It's not gonna, like...lay a bomb, is it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó sẽ không... đẻ ra quả bom nào chứ, nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>ニワトリだ…
 #. <CLT>
@@ -83,6 +99,8 @@ msgid ""
 "<CLT 4>It's a chicken...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Là một con gà...\n"
+"<CLT>"
 
 #. <CLT 4>主食が人間なんて…ないよな。
 #. <CLT>
@@ -91,16 +109,18 @@ msgid ""
 "<CLT 4>It's not expecting to be fed, like...humans, is it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó sẽ không... ăn thịt người chứ nhỉ?\n"
+"<CLT>"
 
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>飼育小屋から離れますか？
 #. <CLT>
@@ -109,3 +129,5 @@ msgid ""
 "<CLT 23>Step away from the chicken coop?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi chuồng gà chứ?\n"
+"<CLT>"

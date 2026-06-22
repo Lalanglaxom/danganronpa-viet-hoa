@@ -1,0 +1,82 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0007].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニター…
+#. こ、こんな物…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on. I\n"
+"just wanna...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧…あり得ませんな、常識的に考えて！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...Nope! Can't do it. Think, man! Think!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧監視カメラ…
+#. きっと今も、この向こうで黒幕が…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Even now...on the other side of this camera, the\n"
+"mastermind...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、それももうすぐ終わりだ…！
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that's gonna come to an end soon enough!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧体育館から出ますか？
+#. ⟦CLT⟧
+msgctxt "0007 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the gym?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những màn hình mà Monokuma xuất hiện. Tớ chỉ muốn... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...Không được! Không thể làm thế được. Tỉnh táo lại đi! Suy nghĩ đi! ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả lúc này... ở phía bên kia camera này, kẻ chủ mưu... ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng chuyện đó sắp chấm dứt rồi...! ⟦CLT⟧"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0007 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi phòng thể chất chứ?\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Gym Monitor Talk
+

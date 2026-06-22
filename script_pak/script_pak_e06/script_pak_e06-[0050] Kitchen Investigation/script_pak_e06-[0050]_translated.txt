@@ -1,0 +1,129 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0050].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニター…
+#. こんな物…厨房にまで置かなくったって…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on. Why\n"
+"does there need to be one in the kitchen...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧監視カメラ…
+#. こんな物…厨房にまで置かなくったって…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A surveillance camera... Why does there need to be one\n"
+"in the kitchen...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧包丁は、ひとつ欠けたままだ…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Not surprisingly, one of the knives is still missing.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧あの時の…舞園さんの事件から、
+#. すべてが始まったんだよな…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It all began then...with Sayaka's case...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ショーケースだ…
+#. 中には、食材が並んでいる…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a deli-style display case. There's all kinds of\n"
+"food and stuff lined up inside...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、ここでの食事ともおさらばだ！
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But I'm gonna say farewell to any more meals here!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧野菜が山積みになっている…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's a bunch of vegetables all piled up.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、ここでの食事ともおさらばだ！
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But I'm gonna say farewell to any more meals here!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧厨房から出ますか？
+#. ⟦CLT⟧
+msgctxt "0011 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the kitchen?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. Tại sao lại phải đặt một chiếc trong nhà bếp chứ...? ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Camera giám sát... Tại sao lại phải đặt một chiếc trong nhà bếp chứ...? ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không ngạc nhiên chút nào, vẫn còn thiếu một con dao. ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tất cả bắt đầu từ lúc đó... với vụ án của Sayaka... ⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là tủ trưng bày thức ăn. Bên trong bày đủ loại thực phẩm... ⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng mình sẽ nói lời tạm biệt với những bữa ăn ở đây! ⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có một đống rau củ chất cao. ⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng mình sẽ nói lời tạm biệt với những bữa ăn ở đây! ⟦CLT⟧"
+
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0010 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0011 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi nhà bếp? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Kitchen Investigation
+

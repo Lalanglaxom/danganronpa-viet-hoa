@@ -1,0 +1,34 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0063].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. はい
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0003 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0003 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Exit Confirmation
+

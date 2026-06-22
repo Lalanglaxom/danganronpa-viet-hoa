@@ -1,0 +1,93 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0049].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニタ…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いまは校章が浮かんでいるだけだ…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Right now, it's just showing the school crest.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧監視カメラ…
+#. きっと今も、この向こうで黒幕が…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Even now...on the other side of this camera, the\n"
+"mastermind...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、それももうすぐ終わりだ…！
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that's gonna come to an end soon enough!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧時は金なり。
+#. つまり、人生とは貯金を使い果たすもの。
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Time is money, they say. Which means I'm burning\n"
+"through my life savings just by existing...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Hiện tại, nó chỉ đang hiển thị huy hiệu trường. ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả bây giờ... ở phía bên kia của chiếc camera này, kẻ chủ mưu... ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng điều đó sẽ sớm kết thúc thôi! ⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Người ta nói thời gian là tiền bạc. Nghĩa là tôi đang đốt sạch tiền tiết kiệm cả đời chỉ bằng việc tồn tại... ⟦CLT⟧"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Surveillance Monitor Check
+

@@ -21,6 +21,9 @@ msgid ""
 "better check out...!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\n"
+"nên kiểm tra xem...!\n"
+"<CLT>"
 
 #. <CLT 4>いや、待て…
 #. 気になるものが落ちてる…！
@@ -31,6 +34,9 @@ msgid ""
 "better check out...!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\n"
+"nên kiểm tra xem...!\n"
+"<CLT>"
 
 #. <CLT 4>いや、待て…
 #. 気になるものが落ちてる…！
@@ -41,6 +47,9 @@ msgid ""
 "better check out...!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\n"
+"nên kiểm tra xem...!\n"
+"<CLT>"
 
 #. <CLT 4>いや、待て…
 #. 気になるものが落ちてる…！
@@ -51,6 +60,9 @@ msgid ""
 "better check out...!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\n"
+"nên kiểm tra xem...!\n"
+"<CLT>"
 
 #. <CLT 4>いや、待て…
 #. 気になるものが落ちてる…！
@@ -61,16 +73,19 @@ msgid ""
 "better check out...!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Khoan, đợi đã! Có thứ gì đó trên mặt đất mà tôi\n"
+"nên kiểm tra xem...!\n"
+"<CLT>"
 
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>死体から離れますか？
 #. <CLT>
@@ -79,3 +94,5 @@ msgid ""
 "<CLT 23>Step away from the dead body?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi thi thể này chứ?\n"
+"<CLT>"

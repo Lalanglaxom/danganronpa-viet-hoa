@@ -1,0 +1,46 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0059].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧これって…なんだ？
+#. サウナの熱源…かな？
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What's this? Is it...the heat source for the sauna?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧サウナから出ますか？
+#. ⟦CLT⟧
+msgctxt "0004 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the sauna?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cái gì đây...? Nguồn nhiệt của phòng xông hơi... à? ⟦CLT⟧"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi phòng xông hơi chứ?\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Sauna Investigation
+

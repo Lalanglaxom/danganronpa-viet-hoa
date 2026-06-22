@@ -18,7 +18,7 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Lockers...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tủ đồ... <CLT>"
 
 #. <CLT 4>プールにはつきものだよな…
 #. <CLT>
@@ -26,17 +26,17 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Well, I would expect to see that at any normal pool.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Chà, ở hồ bơi nào thì cũng có thứ này cả mà... <CLT>"
 
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>室内プールから出ますか？
 #. <CLT>
@@ -44,4 +44,4 @@ msgctxt "0005 | NARRATION"
 msgid ""
 "<CLT 23>Leave the pool?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Bạn muốn rời khỏi hồ bơi? <CLT>"

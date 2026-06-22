@@ -1,0 +1,108 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0000].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 挑戦する
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Give it a shot"
+msgstr ""
+
+#. 挑戦しない
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "Not right now"
+msgstr ""
+
+#. 説明を見る
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Learn more about it"
+msgstr ""
+
+#. ⟦CLT 23⟧あなた様は、希望ヶ峰学園の様々な場所で、
+#. 小さなメダルを手に入れることでしょう。
+#. ⟦CLT⟧
+msgctxt "0007 | NARRATION"
+msgid ""
+"⟦CLT 23⟧During your stay here at Hope's Peak Academy, you'll\n"
+"find coins scattered throughout the school.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧これは、どこぞの王様も集めているとウワサの、
+#. ⟦CLT⟧⟦CLT 3⟧モノクマメダル⟦CLT⟧⟦CLT 23⟧というものです。
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧These ⟦CLT⟧⟦CLT 3⟧Monocoins⟦CLT⟧⟦CLT 23⟧ are treasures valued by kings and\n"
+"thieves alike!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧手に入れたモノクマメダルの枚数は、
+#. ⟦CLT⟧⟦CLT 3⟧手帳メニュー⟦CLT⟧⟦CLT 23⟧でご確認頂けます。
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧You can use the ⟦CLT⟧⟦CLT 3⟧Handbook Menu⟦CLT⟧⟦CLT 23⟧ to see how many\n"
+"Monocoins you currently have.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧こちらの機械では、そのモノクマメダルを使って、
+#. ⟦CLT⟧⟦CLT 3⟧景品⟦CLT⟧⟦CLT 23⟧を獲得する事ができます。
+#. ⟦CLT⟧
+msgctxt "0010 | NARRATION"
+msgid ""
+"⟦CLT 23⟧And if you put the coins in this machine here, there's\n"
+"a chance you could win a ⟦CLT⟧⟦CLT 3⟧prize⟦CLT⟧⟦CLT 23⟧!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧獲得した景品は、⟦CLT⟧⟦CLT 3⟧手帳メニュー⟦CLT⟧⟦CLT 23⟧の
+#. ⟦CLT⟧⟦CLT 3⟧“プレゼント”⟦CLT⟧⟦CLT 23⟧でご確認頂けます。
+#. ⟦CLT⟧
+msgctxt "0012 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Check the ⟦CLT⟧⟦CLT 3⟧Presents⟦CLT⟧⟦CLT 23⟧ section of the ⟦CLT⟧⟦CLT 3⟧Handbook Menu⟦CLT⟧⟦CLT 23⟧ to\n"
+"review your prizes.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧モノモノマシーン⟦CLT⟧⟦CLT 23⟧に挑戦なさいますか？
+#. ⟦CLT⟧
+msgctxt "0013 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Would you like to try your hand against the almighty\n"
+"⟦CLT⟧⟦CLT 3⟧MonoMono Machine⟦CLT⟧⟦CLT 23⟧!?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Thử xem"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Để sau đi"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Xem hướng dẫn"
+
+msgctxt "0007 | NARRATION"
+msgstr "⟦CLT 23⟧Trong thời gian lưu lại học viện Đỉnh Hy Vọng này, bạn sẽ tìm thấy những đồng tiền nằm rải rác khắp trường.⟦CLT⟧"
+
+msgctxt "0008 | NARRATION"
+msgstr "⟦CLT 23⟧Đây là ⟦CLT⟧⟦CLT 3⟧Monokuma medal⟦CLT⟧⟦CLT 23⟧, thứ được đồn đại là ngay cả các vị vua cũng đang sưu tầm đấy.⟦CLT⟧"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn có thể kiểm tra số lượng Monokuma medal hiện có trong ⟦CLT⟧⟦CLT 3⟧menu sổ học sinh⟦CLT⟧⟦CLT 23⟧.⟦CLT⟧"
+
+msgctxt "0010 | NARRATION"
+msgstr "⟦CLT 23⟧Tại chiếc máy này, bạn có thể dùng Monokuma medal để giành lấy ⟦CLT⟧⟦CLT 3⟧quà tặng⟦CLT⟧⟦CLT 23⟧.⟦CLT⟧"
+
+msgctxt "0012 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn có thể kiểm tra ⟦CLT⟧⟦CLT 3⟧quà tặng⟦CLT⟧⟦CLT 23⟧ đã nhận trong ⟦CLT⟧⟦CLT 3⟧menu sổ học sinh⟦CLT⟧⟦CLT 23⟧.⟦CLT⟧"
+
+msgctxt "0013 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn có muốn thử sức với ⟦CLT⟧⟦CLT 3⟧Máy MonoMono⟦CLT⟧⟦CLT 23⟧ không!?⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Monocoin Tutorial
+

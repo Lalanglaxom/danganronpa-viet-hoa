@@ -1,0 +1,50 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0031].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧ここは女子トイレだ…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the girls bathroom.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧もちろん、入る訳にはいかない…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Obviously I can't go in...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧「ガチャ、ガチャ…」
+#. ⟦CLT⟧
+msgctxt "0003 | NARRATION"
+msgid ""
+"⟦CLT 23⟧*Rattle rattle*\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧駄目だ、鍵が掛かってる。
+#. やっぱり情報処理室は封鎖されたんだ…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Definitely locked. I figured I wouldn't be able to get\n"
+"into the data center...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là nhà vệ sinh nữ... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tất nhiên là tôi không thể vào rồi... ⟦CLT⟧"
+
+msgctxt "0003 | NARRATION"
+msgstr "⟦CLT 23⟧*Lạch cạch, lạch cạch* ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không được rồi, cửa khóa rồi. Tôi đã nghĩ là mình sẽ không thể vào được phòng xử lý dữ liệu mà... ⟦CLT⟧"
+

@@ -1,8 +1,105 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0045].po ---
 
-==================== BATCH 1 ====================
-Kitchen Knife Investigation
+==================== BATCH 1 REQUEST ====================
+#. はい
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
 
-==================== FOLDER SUMMARY ====================
-Kitchen Knife Investigation
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0003 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここはトラッシュルームだ。
+#. 今は、鉄格子がジャマで中に入れない。
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The trash room gate is down, so I can't get inside.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、事件には関係なさそうだな…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't think it's involved in the case, anyway...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここはトラッシュルーム…つまりゴミ捨て場だな。
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the trash room. The dump, in other words.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧そう言えば、掃除当番の話はどうなったんだ？
+#. 誰もその話をしないけど…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Nobody's really said anything about cleaning duty\n"
+"since...everything happened.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0010 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0003 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là phòng xử lý rác. Hiện tại, cánh cửa sắt đang chắn lối nên tôi không thể vào trong.⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng mà, chắc cũng không liên quan gì đến vụ án đâu nhỉ...⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là phòng xử lý rác... nói cách khác là chỗ đổ rác.⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhắc mới nhớ, chuyện phân công trực nhật thì sao rồi nhỉ? Chẳng ai nói gì về chuyện đó cả...⟦CLT⟧"
+
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0010 | NARRATION"
+msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
 

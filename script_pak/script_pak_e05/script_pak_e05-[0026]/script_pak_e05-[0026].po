@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>There are wooden mallets hanging on the wall. If I had\n"
 "to guess, I'd say they use them for making sculptures.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Có những chiếc vồ gỗ treo trên tường... Tôi đoán là chúng được dùng để điêu khắc tượng thì phải... <CLT>"
 
 #. <CLT 4>台車だ…
 #. 山田クンが…これで石丸クンを運んで…
@@ -29,17 +29,17 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>It's the dolly that Hifumi used to move Taka...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đây là chiếc xe đẩy mà Hifumi đã dùng để... vận chuyển Taka... <CLT>"
 
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>美術倉庫から出ますか？
 #. <CLT>
@@ -47,4 +47,4 @@ msgctxt "0005 | NARRATION"
 msgid ""
 "<CLT 23>Leave the repository?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi kho mỹ thuật? <CLT>"

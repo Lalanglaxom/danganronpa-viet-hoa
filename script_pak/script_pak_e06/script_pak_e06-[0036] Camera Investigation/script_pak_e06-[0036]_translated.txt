@@ -1,0 +1,58 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0036].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧監視カメラ…
+#. きっと今も、この向こうで黒幕が…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Even now...on the other side of this camera, the\n"
+"mastermind...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、それももうすぐ終わりだ…！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that's gonna come to an end soon enough!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0005 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu... ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng chuyện đó sẽ sớm kết thúc thôi! ⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0005 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Camera Investigation
+

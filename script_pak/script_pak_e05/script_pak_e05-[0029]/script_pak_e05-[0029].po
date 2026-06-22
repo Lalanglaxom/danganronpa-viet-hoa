@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>Sure, I can look at the clock and see what \"time\" it\n"
 "is. But what's the point?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Đúng là tôi có thể nhìn đồng hồ để biết bây giờ là mấy \"giờ\". Nhưng làm vậy thì có ích gì chứ?<CLT>"
 
 #. <CLT 4>大神さんが散々試したはずだ…
 #. ボクなんかが壊すのは到底不可能だな…
@@ -30,7 +30,7 @@ msgid ""
 "<CLT 4>I'm sure Sakura tried to tear these down more than\n"
 "once. If she couldn't do it, what chance do I have...?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tôi chắc rằng Sakura đã thử phá bỏ mấy thứ này nhiều lần rồi. Nếu cô ấy còn không làm được thì tôi có cơ hội nào chứ...?<CLT>"
 
 #. <CLT 4>こっちも鉄板…あっちも鉄板…
 #. <CLT>
@@ -38,17 +38,17 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Metal plate here... Metal plate over there, too.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Chỗ này là tấm sắt... Chỗ kia cũng là tấm sắt...<CLT>"
 
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -56,17 +56,17 @@ msgctxt "0006 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"
 
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -74,4 +74,4 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"

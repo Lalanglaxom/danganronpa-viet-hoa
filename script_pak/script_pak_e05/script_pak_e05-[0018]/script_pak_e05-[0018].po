@@ -20,17 +20,17 @@ msgid ""
 "<CLT 4>We found \"Robo Justice\" stuffed in this locker last\n"
 "time.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Lần trước, chúng ta đã tìm thấy \"Robo Justice\" bị nhồi trong cái tủ đồ này...<CLT>"
 
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>室内プールから出ますか？
 #. <CLT>
@@ -38,4 +38,4 @@ msgctxt "0004 | NARRATION"
 msgid ""
 "<CLT 23>Leave the pool?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Rời khỏi hồ bơi?<CLT>"

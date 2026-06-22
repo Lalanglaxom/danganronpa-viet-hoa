@@ -20,7 +20,7 @@ msgid ""
 "<CLT 4>Why do they even need all these monitors? A normal PA\n"
 "announcement would work just as well...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tại sao lại cần tất cả những màn hình này nhỉ? Thông báo qua loa bình thường là đủ rồi mà... <CLT>"
 
 #. <CLT 4>…絵的に寂しいって事か？
 #. <CLT>
@@ -28,7 +28,7 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Maybe it's just to give us something to look at.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>...Có phải vì khung cảnh nhìn trống trải quá không nhỉ? <CLT>"
 
 #. <CLT 4>監視カメラ…この向こうで黒幕が…
 #. だとしたら、そいつは何者なんだ？
@@ -38,7 +38,7 @@ msgid ""
 "<CLT 4>The mastermind's been on the other side of this thing,\n"
 "watching us. But...who are they really?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Camera giám sát... Kẻ chủ mưu đang ở phía bên kia... quan sát chúng ta. Nếu vậy thì, kẻ đó là ai chứ? <CLT>"
 
 #. <CLT 4>モノクマメダルがあるかな…？
 #. <CLT>
@@ -47,7 +47,7 @@ msgid ""
 "<CLT 4>Maybe there's some Monocoins hiding in here\n"
 "somewhere...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Liệu có Monocoins nào ở đây không nhỉ...? <CLT>"
 
 #. <CLT 4>ボクはレンタルするばっかりで、
 #. ＤＶＤはあんまり持ってないんだよな。
@@ -57,7 +57,7 @@ msgid ""
 "<CLT 4>I mostly rent DVDs, so I don't really have too many of\n"
 "my own.\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Tôi toàn đi thuê đĩa DVD thôi, nên tôi không có sở hữu nhiều cái cho lắm. <CLT>"
 
 #. <CLT 4>わざわざ言うほどの事でもないか…
 #. みんなも大抵そうだもんな…
@@ -67,17 +67,17 @@ msgid ""
 "<CLT 4>That's probably true of most people, so I dunno why I\n"
 "bothered to say anything...\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Mà cũng chẳng có gì đáng để nói... Mọi người cũng thường như vậy mà... <CLT>"
 
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -85,4 +85,4 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 23>Bạn muốn rời khỏi khu vực này? <CLT>"

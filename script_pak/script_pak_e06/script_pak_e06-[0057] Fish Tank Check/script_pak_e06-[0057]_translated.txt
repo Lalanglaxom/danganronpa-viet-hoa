@@ -1,0 +1,47 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0057].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧水槽だ…
+#. 小さな魚が泳いでいる…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a fish tank. There's a bunch of little fish\n"
+"swimming around inside...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0004 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một bể cá. Có vài chú cá nhỏ đang bơi bên trong... ⟦CLT⟧"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0004 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Fish Tank Check
+

@@ -21,6 +21,8 @@ msgid ""
 "candy—it's everything anyone could ever want or need.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ở đây có đủ các loại đồ ăn... Từ nguyên liệu nấu nướng cho tới bánh kẹo, muốn gì cũng có.\n"
+"<CLT>"
 
 #. <CLT 4>ボクは料理はできないけど…
 #. 少しは勉強しようかな…
@@ -31,6 +33,8 @@ msgid ""
 "learn...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tớ không rành nấu nướng lắm... Có lẽ tớ nên học thử xem sao...\n"
+"<CLT>"
 
 #. <CLT 4>しかし、本当にごちゃごちゃだな…
 #. 少しは整理した方がいいかも…
@@ -40,6 +44,8 @@ msgid ""
 "<CLT 4>It's so messy... Maybe I should try to tidy up a bit.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mà, ở đây thực sự lộn xộn quá... Có lẽ tớ nên dọn dẹp một chút...\n"
+"<CLT>"
 
 #. <CLT 4>しかし、本当にごちゃごちゃだな…
 #. 少しは整理した方がいいかも…
@@ -49,6 +55,8 @@ msgid ""
 "<CLT 4>It's so messy... Maybe I should try to tidy up a bit.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mà, ở đây thực sự lộn xộn quá... Có lẽ tớ nên dọn dẹp một chút...\n"
+"<CLT>"
 
 #. <CLT 4>しかし、本当にごちゃごちゃだな…
 #. 少しは整理した方がいいかも…
@@ -58,16 +66,18 @@ msgid ""
 "<CLT 4>It's so messy... Maybe I should try to tidy up a bit.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mà, ở đây thực sự lộn xộn quá... Có lẽ tớ nên dọn dẹp một chút...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -76,6 +86,8 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT>"
 
 #. <CLT 4>これは、冷蔵庫か…
 #. …あれ、当たり付きのアイスがある。
@@ -86,6 +98,8 @@ msgid ""
 "get a winning popsicle stick, I can win a free one...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là tủ lạnh à... Hử, có mấy cây kem trúng thưởng này.\n"
+"<CLT>"
 
 #. <CLT 4>当たったら…モノクマが交換してくれたりして…
 #. <CLT>
@@ -94,16 +108,18 @@ msgid ""
 "<CLT 4>If I got one, would Monokuma let me trade it in...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nếu mà trúng... không biết Monokuma có chịu đổi kem cho tớ không nhỉ...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -112,3 +128,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi khu vực này chứ?\n"
+"<CLT>"

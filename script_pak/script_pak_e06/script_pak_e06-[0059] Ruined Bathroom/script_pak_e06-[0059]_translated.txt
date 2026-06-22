@@ -1,0 +1,110 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0059].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが写るモニタ…
+#. こんな所にあっても無意味だな。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on.\n"
+"What's the point of putting it in here?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここにも監視カメラ…
+#. こんな所を見て、どうしようって言うんだよ…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's even a surveillance camera here... Why would\n"
+"anyone want to watch this place?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ドアの隙間から奥を覗いて、
+#. すぐに、また閉じた。
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I opened the door just a crack, glanced inside, and\n"
+"immediately closed it again.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧シャワールームの面影はない。
+#. ただのガレキの山と化していた。
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There wasn't even a hint of a bathroom. Just a big\n"
+"pile of rubble...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボロボロのベッド…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The bed is completely torn apart.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、もはやベッドですらない。
+#. ただの粗大ゴミと化している。
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I mean, it's not even really a bed anymore. It's\n"
+"just...garbage.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. はい
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT⟧
+msgctxt "0009 | NARRATION"
+msgid ""
+"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. Đặt nó ở đây thì có ý nghĩa gì chứ? ⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ở đây cũng có camera giám sát nữa... Ai lại muốn theo dõi nơi này chứ...? ⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tớ hé cửa ra một chút, nhìn vào trong, rồi lập tức đóng lại ngay. ⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chẳng còn dấu vết gì của phòng tắm nữa. Nó đã biến thành một đống đổ nát rồi... ⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc giường hoàn toàn tan nát... ⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ý tớ là, nó chẳng còn giống cái giường nữa. Nó chỉ là... rác thôi. ⟦CLT⟧"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Có"
+
+msgctxt "0008 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0009 | NARRATION"
+msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Ruined Bathroom
+
