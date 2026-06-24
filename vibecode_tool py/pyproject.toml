@@ -7,7 +7,7 @@ name = "dr-po-toolkit"
 version = "0.2.0"
 description = "Refactored base for Danganronpa PO translation workflow"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["PyQt6>=6.6"]
 
 [project.optional-dependencies]
 gemini = ["google-genai>=1.0.0"]

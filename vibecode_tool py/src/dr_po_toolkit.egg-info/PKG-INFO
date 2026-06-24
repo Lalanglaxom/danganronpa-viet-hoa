@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: dr-po-toolkit
+Version: 0.2.0
+Summary: Refactored base for Danganronpa PO translation workflow
+Requires-Python: >=3.10
+Requires-Dist: PyQt6>=6.6
+Provides-Extra: gemini
+Requires-Dist: google-genai>=1.0.0; extra == "gemini"
+Provides-Extra: packaging
+Requires-Dist: pyinstaller>=6.0; extra == "packaging"

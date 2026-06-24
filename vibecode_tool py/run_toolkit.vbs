@@ -1,21 +1,33 @@
-' run_toolkit.vbs - Launch DR PO Toolkit GUI
-' Put this file in the same folder as run_toolkit.py.
+Option Explicit
 
-Set objShell = CreateObject("WScript.Shell")
-Set objFSO = CreateObject("Scripting.FileSystemObject")
+' run_toolkit.vbs - Launch DR PO Toolkit GUI.
 
-' Get the folder where this script is located
-strScriptFolder = objFSO.GetParentFolderName(WScript.ScriptFullName)
-objShell.CurrentDirectory = strScriptFolder
+Dim shell, fso, folder, pythonExe, scriptPath, launchCmd
+Set shell = CreateObject("WScript.Shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
 
-' Prefer pythonw.exe so no console window appears.
-' Fallback to python.exe if pythonw is unavailable.
-If objFSO.FileExists(strScriptFolder & "\run_toolkit.py") Then
-    objShell.Run "cmd /c where pythonw >nul 2>nul && pythonw run_toolkit.py || python run_toolkit.py", 0, False
-Else
-    MsgBox "Cannot find run_toolkit.py in:" & vbCrLf & strScriptFolder, vbCritical, "DR PO Toolkit"
+folder = fso.GetParentFolderName(WScript.ScriptFullName)
+shell.CurrentDirectory = folder
+
+scriptPath = folder & "\run_toolkit.py"
+If Not fso.FileExists(scriptPath) Then
+    MsgBox "Cannot find run_toolkit.py in:" & vbCrLf & folder, vbCritical, "DR PO Toolkit"
+    WScript.Quit 1
 End If
 
-' Chỉ là một cái thùng rác.
-' Nhưng bên trong chẳng có rác.
-' Nếu không có rác... liệu nó có phải là một cái thùng rác không?
+pythonExe = folder & "\.venv\Scripts\pythonw.exe"
+If Not fso.FileExists(pythonExe) Then
+    pythonExe = folder & "\.venv\Scripts\python.exe"
+End If
+
+If Not fso.FileExists(pythonExe) Then
+    MsgBox "Cannot find a Python launcher in:" & vbCrLf & folder & "\.venv\Scripts", vbCritical, "DR PO Toolkit"
+    WScript.Quit 1
+End If
+
+launchCmd = "cmd /c cd /d " & Q(folder) & " && " & Q(pythonExe) & " " & Q(scriptPath)
+shell.Run launchCmd, 0, False
+
+Function Q(ByVal s)
+    Q = Chr(34) & s & Chr(34)
+End Function

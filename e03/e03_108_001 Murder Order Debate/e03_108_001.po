@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. そもそも、石丸君が
 #. 殺されたのは…
@@ -20,7 +21,7 @@ msgstr "Về cái chết của Taka..."
 #. 山田君より先だったのかしら？
 msgctxt "0002 | KYOUKO KIRIGIRI"
 msgid "I wonder if he died before Hifumi..."
-msgstr "Tớ tự hỏi không biết cậu ấy chết trước Hifumi..."
+msgstr "Tớ tự hỏi liệu cậu ấy chết trước Hifumi..."
 
 #. それとも後だったのかしら？
 msgctxt "0003 | KYOUKO KIRIGIRI"
@@ -34,8 +35,8 @@ msgid ""
 "We already know <CLT 9>what order<CLT>\n"
 "they were killed in!"
 msgstr ""
-"<CLT 9>Thứ tự bị sát hại<CLT> của hai người bọn họ rành rành ra đó rồi\n"
-"mà!"
+"Chúng ta đã biết <CLT 9>thứ tự<CLT> mà \n"
+"hai người họ bị giết rồi mà!"
 
 #. 石丸の方が後だよ！
 msgctxt "0005 | AOI ASAHINA"
@@ -45,14 +46,16 @@ msgstr "Taka là người chết sau!"
 #. なぜ、そう思うのだ？
 msgctxt "0006 | SAKURA OOGAMI"
 msgid "What makes you say that?"
-msgstr "Tại sao chủ lại nghĩ như vậy?"
+msgstr "Tại sao cậu lại nghĩ như vậy?"
 
 #. <CLT 9>ジャスティスハンマーの順番<CLT>だよ。
 msgctxt "0007 | AOI ASAHINA"
 msgid ""
 "Because of <CLT 9>the numbering<CLT>\n"
 "of the Justice Hammers!"
-msgstr "Là nhờ vào <CLT 9>thứ tự của búa Búa Công Lý<CLT> đó!"
+msgstr ""
+"Là nhờ vào <CLT 9>số thứ tự<CLT> của \n"
+"Búa Công Lý đó!"
 
 #. 確か、山田が３号の
 #. ハンマーで殺され…
@@ -60,7 +63,9 @@ msgctxt "0008 | BYAKUYA TOGAMI"
 msgid ""
 "It's true that Hifumi was killed\n"
 "with Justice Hammer 3..."
-msgstr "Đúng là Hifumi đã bị sát hại bằng cây búa số 3..."
+msgstr ""
+"Đúng là Hifumi đã bị sát hại bằng \n"
+"cây búa số 3..."
 
 #. 石丸が４号のハンマーで
 #. 殺されたんだったな。
@@ -69,14 +74,14 @@ msgid ""
 "...while Taka's death came from\n"
 "a swing of Justice Hammer 4."
 msgstr ""
-"...Trong khi cái chết của Taka là do một cú vung từ\n"
-"cây búa số 4."
+"...trong khi cái chết của Taka là do \n"
+"một cú vung từ Búa Công Lý số 4."
 
 #. ほら！　明らかに
 #. 石丸の方が後じゃん！
 msgctxt "0010 | AOI ASAHINA"
 msgid "See? So it's obvious Taka came after!"
-msgstr "Đó thấy chưa! Rõ ràng là Taka chết sau còn gì!"
+msgstr "Thấy chưa! Rõ ràng là Taka chết sau còn gì!"
 
 #. <CLT 26>何か関係あんのか？<CLT>
 msgctxt "0011 | AOI ASAHINA"

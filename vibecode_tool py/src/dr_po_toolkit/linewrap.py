@@ -8,7 +8,10 @@ from .po_io import load_po, save_po
 from .text_utils import visible_len
 
 CLT_SPACE_RE = re.compile(r"<CLT\s+(\d+)>")
+# visible_len only strips <CLT> and <CLT N>; the protected form <CLT_N>
+# (used internally during wrapping) must be stripped separately.
 _PROTECTED_CLT_RE = re.compile(r"<CLT_\d+>")
+
 
 def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) -> tuple[str, bool]:
     original = text
@@ -26,11 +29,14 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
     flat = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
     total_len = visible_len(flat)
 
-    if total_len > soft + hard:
+    # Dùng 64 cho các câu nhét vừa 2 dòng để tối đa diện tích dòng đầu.
+    # Chỉ bóp về 58 khi tổng chữ quá dài (> 122) để các dòng nhìn đều nhau hơn.
+    if total_len <= soft + hard:
         limit = hard
+        n_cuts = 1
     else:
         limit = soft
-        max_cuts = 1
+        n_cuts = max_cuts
 
     if total_len <= limit:
         fixed = flat + end_tag
@@ -51,7 +57,7 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
                 return max(i, 1)
         return len(items)
 
-    for _ in range(max_cuts):
+    for _ in range(n_cuts):
         cut_at = find_cut(words, limit)
         if cut_at >= len(words):
             break

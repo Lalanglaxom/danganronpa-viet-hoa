@@ -19,8 +19,8 @@ msgid ""
 "Let's begin with a basic explanation of the class\n"
 "trial! So, your votes will determine the results."
 msgstr ""
-"Ta hãy bắt đầu với phần giải thích ngắn gọn về lớp xét xử!\n"
-"Kết quả sẽ được quyết định dựa trên tổng số phiếu bầu."
+"Ta hãy bắt đầu với phần giải thích ngắn gọn về lớp xét xử! Kết\n"
+"quả sẽ được quyết định dựa trên tổng số phiếu bầu."
 
 #. 正しいクロを指摘出来れば、クロだけがおしおき。
 #. だけど…もし間違った人物をクロとした場合は…
@@ -29,8 +29,8 @@ msgid ""
 "If you can figure out \"whodunnit\" then only they will\n"
 "receive punishment. But if you pick the wrong one..."
 msgstr ""
-"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị\n"
-"nhận hình phạt. Nhưng nếu các em chọn nhầm người..."
+"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị nhận\n"
+"hình phạt. Nhưng nếu các em chọn nhầm người..."
 
 #. クロ以外の全員がおしおきされ、
 #. みんなを欺いたクロだけが晴れて卒業となりまーす！
@@ -39,8 +39,8 @@ msgid ""
 "Then I'll punish everyone *besides* the blackened, and\n"
 "the one that deceived everyone else will graduate!"
 msgstr ""
-"...thì ta sẽ trừng phạt tất cả mọi người *ngoại trừ* kẻ\n"
-"thủ ác, và kẻ đã lừa dối tất cả sẽ được tốt nghiệp!"
+"...thì ta sẽ trừng phạt tất cả mọi người *ngoại trừ* kẻ thủ ác,\n"
+"và kẻ đã lừa dối tất cả sẽ được tốt nghiệp!"
 
 #. さてと…じゃあ最初は…
 msgctxt "0004 | MONOKUMA"
@@ -64,8 +64,8 @@ msgid ""
 "It was <CLT 3>Hiro<CLT>. He does not have an alibi for when the\n"
 "murders took place, and we found him in that suit."
 msgstr ""
-"Đó là <CLT 3>Hiro<CLT>. Cậu ta không có chứng cứ ngoại phạm lúc xảy ra\n"
-"các vụ giết người, và chúng tôi đã tìm thấy cậu ấy trong bộ đồ."
+"Đó là <CLT 3>Hiro<CLT>. Cậu ta không có chứng cứ ngoại phạm lúc xảy ra các\n"
+"vụ giết người, và chúng tôi đã tìm thấy cậu ấy trong bộ đồ."
 
 #. どう考えても…あんたが犯人じゃん…！
 msgctxt "0008 | AOI ASAHINA"
@@ -79,8 +79,8 @@ msgid ""
 "I didn't! Someone knocked me out! I was asleep the\n"
 "whole time! I don't know anything about it!"
 msgstr ""
-"Không phải tớ mà! Tớ bị ai đó đánh thuốc mê suốt bấy lâu\n"
-"nay thôi...! Tớ chả biết gi cả!"
+"Không phải tớ mà! Tớ bị ai đó đánh thuốc mê suốt bấy lâu nay\n"
+"thôi...! Tớ chả biết gi cả!"
 
 #. 黙れ！　この人殺しめッ！！
 msgctxt "0010 | TOUKO FUKAWA"
@@ -108,8 +108,8 @@ msgstr "Đó là <CLT 3>bản thiết kế<CLT> của bộ đồ hóa trang đó
 msgctxt "0014 | CELES"
 msgid "<CLT 3>Parts<CLT> we assume were used to build it..."
 msgstr ""
-"Hàng loạt <CLT 3>linh kiện<CLT> được cho là đã dùng để chế tạo ra bộ\n"
-"đồ kia..."
+"Hàng loạt <CLT 3>linh kiện<CLT> được cho là đã dùng để chế tạo ra bộ đồ\n"
+"kia..."
 
 #. すべて、あなたの<CLT 3>部屋<CLT>から見つかった物です。
 #. これらが動かぬ証拠ですわ。
@@ -118,8 +118,8 @@ msgid ""
 "And all of it was found <CLT 3>in your room<CLT>. You have to\n"
 "admit, the evidence is quite compelling."
 msgstr ""
-"Tất cả chúng đều được tìm thấy ở trong <CLT 3>phòng của cậu<CLT> đấy.\n"
-"Cậu phải công nhận, bằng chứng khó là chối cãi đấy."
+"Tất cả chúng đều được tìm thấy ở trong <CLT 3>phòng của cậu<CLT> đấy. Cậu\n"
+"phải công nhận, bằng chứng khó là chối cãi đấy."
 
 #. あなたがあの衣装を作り上げ、それを身にまとい、
 #. 次々と犯行を重ねていったという事のね…
@@ -128,8 +128,8 @@ msgid ""
 "It points to you as having created the suit and\n"
 "wearing it while committing crime after crime..."
 msgstr ""
-"Chúng chứng minh rằng cậu đã làm ra bộ trang phục đó,\n"
-"khoác nó lên người, rồi thực hiện hết tội ác này đến tội ác khác..."
+"Chúng chứng minh rằng cậu đã làm ra bộ trang phục đó, khoác nó\n"
+"lên người, rồi thực hiện hết tội ác này đến tội ác khác..."
 
 #. だ、だから…俺は…俺は…
 msgctxt "0017 | YASUHIRO HAGAKURE"
@@ -139,9 +139,7 @@ msgstr "Đ-Đã bảo là... tớ... tớ..."
 #. 知らん知らん知らん知らん知らん知らん知らーんッ！！
 msgctxt "0018 | YASUHIRO HAGAKURE"
 msgid "I don't know, I don't know, I don't KNOW!"
-msgstr ""
-"KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG\n"
-"BIẾT!"
+msgstr "KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT!"
 
 #. <CLT 4>本当に葉隠クンが犯人なのか？　それとも…
 #. <CLT>

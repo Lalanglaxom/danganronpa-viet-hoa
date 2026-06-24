@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ちょっと苗木、脅かさないでよ！
 #. 何か変な事言ったかと思っちゃったじゃん！
@@ -18,8 +19,8 @@ msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Kìa Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng\n"
-"ông vừa nói gì đó kỳ lạ lắm cơ đấy!"
+"Nè Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng có gì đó\n"
+"kỳ lạ xảy ra cơ đấy!"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -30,8 +31,8 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải\n"
-"có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n"
+"<CLT 4>Mình cần phải suy nghĩ lại một lần nữa. Chắc chắn phải có một\n"
+"điểm mâu thuẫn nào đó trong này...\n"
 "<CLT>"
 
 #. ちょっと苗木、脅かさないでよ！
@@ -41,8 +42,8 @@ msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Kìa Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng\n"
-"ông vừa nói gì đó kỳ lạ lắm cơ đấy!"
+"Nè Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng có gì đó\n"
+"kỳ lạ xảy ra cơ đấy!"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -53,8 +54,8 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải\n"
-"có điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n"
+"<CLT 4>Mình cần phải suy nghĩ lại một lần nữa. Chắc chắn phải có một\n"
+"điểm mâu thuẫn nào đó trong này...\n"
 "<CLT>"
 
 #. <CLT 4>凶器となったジャスティスハンマーに
@@ -66,8 +67,8 @@ msgid ""
 "commit the murders...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thứ tự số hiệu được đánh trên những cây búa Công Lý Hammer\n"
-"vốn là hung khí của các vụ giết người...\n"
+"<CLT 4>Số thứ tự được đánh dấu trên những cây búa Công Lý vốn là hung\n"
+"khí của các vụ giết người...\n"
 "<CLT>"
 
 #. <CLT 4>何か…引っ掛かるんだよな…
@@ -77,7 +78,7 @@ msgid ""
 "<CLT 4>Something about that is bothering me.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có điều gì đó... cứ làm mình vướng bận mãi.\n"
+"<CLT 4>Có điều gì đó... cứ làm mình vướng bận.\n"
 "<CLT>"
 
 #. <CLT 4>確かに、ジャスティスハンマーには、
@@ -88,8 +89,8 @@ msgid ""
 "<CLT 4>The Justice Hammers *were* numbered, but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đúng là những cây búa Búa Công Lý có được đánh số hiệu\n"
-"thật, nhưng...\n"
+"<CLT 4>Đúng là những cây búa Búa Công Lý có được đánh số hiệu thật,\n"
+"nhưng...\n"
 "<CLT>"
 
 #. <CLT 4>本当に、その番号通りに使われたのか？
@@ -99,6 +100,5 @@ msgid ""
 "<CLT 4>...were they really used in that order?\n"
 "<CLT>"
 msgstr ""
-"...liệu chúng có thực sự được sử dụng theo đúng thứ tự số\n"
-"hiệu đó không?\n"
+"...liệu chúng có thực sự được sử dụng theo đúng thứ tự đó không?\n"
 "<CLT>"

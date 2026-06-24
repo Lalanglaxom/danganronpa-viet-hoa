@@ -16,6 +16,7 @@ class SearchResult:
     msgctxt: str
     msgid: str
     msgstr: str
+    line: int
     hit_msgid: bool
     hit_msgstr: bool
 
@@ -57,6 +58,7 @@ def search_path(
                         msgctxt=entry.msgctxt or "",
                         msgid=entry.msgid,
                         msgstr=entry.msgstr,
+                        line=entry.line,
                         hit_msgid=hit_id,
                         hit_msgstr=hit_str,
                     )

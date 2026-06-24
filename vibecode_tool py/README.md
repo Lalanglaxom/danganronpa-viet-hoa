@@ -261,3 +261,8 @@ Preview only:
 ```bash
 python run_cli.py restore-from-copy "folder1" "folder2" --dry-run
 ```
+
+
+## Windows launch notes
+
+If `run_toolkit.vbs` does not open the app after the PyQt UI update, PyQt6 is usually missing. Run `install_requirements.bat`, or run `run_toolkit_debug.bat` to see the error in a console. Startup errors are also written to `toolkit_launch_error.log`.

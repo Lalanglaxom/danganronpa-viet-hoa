@@ -3,29 +3,29 @@
   "rules": [
     {
       "id": "kiyotaka_toi_to_to_009",
+      "enabled": true,
       "priority": 800,
       "speaker": "KIYOTAKA",
       "scope": null,
       "find": "Tôi",
       "replace": "Tớ",
-      "notes": "",
-      "enabled": false,
       "whole_word": true,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "kiyotaka_toi_to_to_010",
+      "enabled": true,
       "priority": 800,
       "speaker": "KIYOTAKA",
       "scope": null,
       "find": "tôi",
       "replace": "tớ",
-      "notes": "",
-      "enabled": false,
       "whole_word": true,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "kyouko_toi_to_to_005",
@@ -133,39 +133,26 @@
     },
     {
       "id": "makoto_toi_to_to_007",
+      "enabled": true,
       "priority": 400,
       "speaker": "MAKOTO",
       "scope": null,
       "find": "Tôi",
       "replace": "Tớ",
-      "notes": "",
-      "enabled": false,
       "whole_word": true,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "makoto_toi_to_to_008",
+      "enabled": true,
       "priority": 400,
       "speaker": "MAKOTO",
       "scope": null,
       "find": "tôi",
       "replace": "tớ",
-      "notes": "",
-      "enabled": false,
       "whole_word": true,
-      "case_sensitive": true,
-      "stop_after": false
-    },
-    {
-      "id": "ghichu",
-      "enabled": true,
-      "priority": 100,
-      "speaker": null,
-      "scope": null,
-      "find": "thư lưu ý",
-      "replace": "tờ ghi chú",
-      "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
@@ -223,17 +210,43 @@
       "notes": ""
     },
     {
+      "id": "global_kho_my_thuat_to_kho_luu_tru_027",
+      "enabled": true,
+      "priority": 100,
+      "speaker": null,
+      "scope": null,
+      "find": "kho mỹ thuật",
+      "replace": "kho lưu trữ",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "id": "global_kho_my_thuat_to_kho_luu_tru_028",
+      "enabled": true,
+      "priority": 100,
+      "speaker": null,
+      "scope": null,
+      "find": "Kho mỹ thuật",
+      "replace": "Kho lưu trữ",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
       "id": "global_lop_xet_xu_to_lop_xet_xu_015",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "Lớp Xét Xử",
       "replace": "lớp xét xử",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_ong_monokuma_to_xu_monokuma_019",
@@ -289,68 +302,68 @@
     },
     {
       "id": "global_phong_kho_to_kho_luu_tru_023",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "phòng kho",
       "replace": "kho lưu trữ",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_phong_kho_to_kho_luu_tru_024",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "Phòng kho",
       "replace": "Kho lưu trữ",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_the_chat_to_the_duc_018",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "thể chất",
       "replace": "thể dục",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_the_thao_to_the_duc_016",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "thể thao",
       "replace": "thể dục",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_the_thao_to_the_duc_017",
+      "enabled": true,
       "priority": 100,
       "speaker": null,
       "scope": null,
       "find": "Thể thao",
       "replace": "Thể dục",
-      "notes": "",
-      "enabled": false,
       "whole_word": false,
       "case_sensitive": true,
-      "stop_after": false
+      "stop_after": false,
+      "notes": ""
     },
     {
       "id": "global_thuc_on_to_menu_021",
@@ -392,12 +405,12 @@
       "notes": ""
     },
     {
-      "id": "repository1",
+      "id": "Ishimaru",
       "priority": 100,
       "speaker": null,
       "scope": null,
-      "find": "kho chứa đồ mỹ thuật",
-      "replace": "kho họa cụ",
+      "find": "Ishimaru",
+      "replace": "Taka",
       "notes": "",
       "enabled": true,
       "whole_word": true,
@@ -405,12 +418,38 @@
       "stop_after": false
     },
     {
-      "id": "repository2",
+      "id": "Makoto",
       "priority": 100,
       "speaker": null,
       "scope": null,
-      "find": "Kho chứa đồ mỹ thuật",
-      "replace": "Kho họa cụ",
+      "find": "Naegi",
+      "replace": "Makoto",
+      "notes": "",
+      "enabled": true,
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false
+    },
+    {
+      "id": "ghichu",
+      "priority": 100,
+      "speaker": null,
+      "scope": null,
+      "find": "thư lưu ý",
+      "replace": "tờ ghi chú",
+      "notes": "",
+      "enabled": true,
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false
+    },
+    {
+      "id": "Hifumi",
+      "priority": 100,
+      "speaker": null,
+      "scope": null,
+      "find": "Yamada",
+      "replace": "Hifumi",
       "notes": "",
       "enabled": true,
       "whole_word": true,

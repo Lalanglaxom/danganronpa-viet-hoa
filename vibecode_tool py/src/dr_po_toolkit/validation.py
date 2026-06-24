@@ -11,7 +11,7 @@ from typing import Iterable
 from .discovery import SegmentFiles, find_backup_for_file, find_segments, iter_po_files
 from .models import POEntry, POFile, ValidationIssue
 from .po_io import load_po
-from .text_utils import clt_tags, generic_tags, has_bad_unicode, order_number, placeholders_by_type
+from .text_utils import clt_tags, generic_tags, has_bad_unicode, order_number, placeholders_by_type, visible_text
 
 LEVEL_ORDER = {"ERROR": 0, "WARN": 1, "STRUCT": 2, "INFO": 3}
 
@@ -118,6 +118,78 @@ def _normalize_msgid(text: str) -> str:
     return re.sub(r"[.,?!\-]+$", "", text).strip()
 
 
+def _normalize_duplicate_sentence(text: str) -> str:
+    text = visible_text(text).replace("\\n", " ").replace("\n", " ")
+    text = re.sub(r"\s+", " ", text).strip().casefold()
+    return re.sub(r"[.!?…。！？\-]+$", "", text).strip()
+
+
+def _normalize_duplicate_translation(text: str) -> str:
+    text = visible_text(text).replace("\\n", " ").replace("\n", " ")
+    return re.sub(r"\s+", " ", text).strip().casefold()
+
+
+def _short(text: str, limit: int = 140) -> str:
+    clean = visible_text(text).replace("\n", " ")
+    clean = re.sub(r"\s+", " ", clean).strip()
+    if len(clean) > limit:
+        return clean[: limit - 1].rstrip() + "…"
+    return clean
+
+
+def _validate_duplicate_sentence_translations(
+    entries: Iterable[POEntry],
+    path: Path,
+    *,
+    check_name: str,
+    global_locations: dict[int, str] | None = None,
+) -> list[ValidationIssue]:
+    """Detect same source sentence translated differently.
+
+    Uses normalized visible msgid text so duplicates are caught even if line breaks,
+    CLT tags, bracket tags, or spacing differ.
+    """
+    issues: list[ValidationIssue] = []
+    repeated: dict[str, list[POEntry]] = defaultdict(list)
+    for e in entries:
+        src_key = _normalize_duplicate_sentence(e.msgid)
+        if src_key and e.msgstr.strip():
+            repeated[src_key].append(e)
+
+    for _src_key, group in repeated.items():
+        translations: dict[str, list[POEntry]] = defaultdict(list)
+        for e in group:
+            trans_key = _normalize_duplicate_translation(e.msgstr)
+            if trans_key:
+                translations[trans_key].append(e)
+        if len(translations) <= 1:
+            continue
+
+        source_preview = _short(group[0].msgid, 180)
+        samples: list[str] = []
+        for _translation_key, t_entries in list(translations.items())[:8]:
+            sample_entry = t_entries[0]
+            where_parts: list[str] = []
+            for x in t_entries[:3]:
+                global_where = global_locations.get(id(x), "") if global_locations else ""
+                if global_where:
+                    where_parts.append(global_where)
+                else:
+                    where_parts.append(f"line {x.line} {x.msgctxt or x.uid}".strip())
+            if len(t_entries) > 3:
+                where_parts.append(f"+{len(t_entries) - 3} more")
+            samples.append(f"{_short(sample_entry.msgstr, 120)!r} -> {', '.join(where_parts)}")
+        detail = f"Same msgid has different msgstr. msgid={source_preview!r}. " + " | ".join(samples)
+
+        # Add one issue for the first entry of each different translation so the
+        # HTML report can jump/filter to every conflicting variant without
+        # flooding every repeated identical line.
+        for t_entries in translations.values():
+            if t_entries:
+                issues.append(_issue("WARN", check_name, detail, path, t_entries[0]))
+    return issues
+
+
 def _validate_single_file(po: POFile, path: Path) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     dupes = po.duplicate_contexts()
@@ -146,22 +218,7 @@ def _validate_single_file(po: POFile, path: Path) -> list[ValidationIssue]:
             continue
         issues.extend(_validate_entry(e, path, po))
 
-    # Repeated source with different non-empty translations.
-    repeated: dict[str, list[POEntry]] = defaultdict(list)
-    for e in po.entries:
-        src = e.msgid.strip()
-        if src and e.msgstr.strip():
-            repeated[src].append(e)
-    for src, group in repeated.items():
-        translations: dict[str, list[POEntry]] = defaultdict(list)
-        for e in group:
-            translations[e.msgstr.strip()].append(e)
-        if len(translations) > 1:
-            samples = []
-            for translation, entries in list(translations.items())[:4]:
-                where = ", ".join((x.msgctxt or x.uid) for x in entries[:3])
-                samples.append(f"{translation!r} -> {where}")
-            issues.append(_issue("WARN", "repeated_source_inconsistent", " | ".join(samples), path, group[0]))
+    issues.extend(_validate_duplicate_sentence_translations(po.entries, path, check_name="duplicate_sentence_translation"))
 
     return issues
 
@@ -234,6 +291,60 @@ def _suspicious_whitespace(text: str) -> list[str]:
     return issues
 
 
+def _append_cross_file_duplicate_sentence_translation_issues(results: dict[Path, list[ValidationIssue]]) -> None:
+    """Add folder-level duplicate msgid/different msgstr warnings across PO files."""
+    if len(results) <= 1:
+        return
+
+    repeated: dict[str, list[tuple[Path, POEntry]]] = defaultdict(list)
+    for path in list(results):
+        try:
+            po = load_po(path)
+        except Exception:
+            continue
+        for entry in po.entries:
+            src_key = _normalize_duplicate_sentence(entry.msgid)
+            if src_key and entry.msgstr.strip():
+                repeated[src_key].append((path, entry))
+
+    for _src_key, group in repeated.items():
+        involved_files = {path for path, _entry in group}
+        if len(involved_files) <= 1:
+            continue
+
+        translations: dict[str, list[tuple[Path, POEntry]]] = defaultdict(list)
+        for path, entry in group:
+            trans_key = _normalize_duplicate_translation(entry.msgstr)
+            if trans_key:
+                translations[trans_key].append((path, entry))
+        if len(translations) <= 1:
+            continue
+
+        source_preview = _short(group[0][1].msgid, 180)
+        samples: list[str] = []
+        for _translation_key, t_items in list(translations.items())[:10]:
+            sample_path, sample_entry = t_items[0]
+            where_parts: list[str] = []
+            for path, entry in t_items[:4]:
+                where_parts.append(f"{path.name}: line {entry.line} {entry.msgctxt or entry.uid}".strip())
+            if len(t_items) > 4:
+                where_parts.append(f"+{len(t_items) - 4} more")
+            samples.append(f"{_short(sample_entry.msgstr, 120)!r} -> {', '.join(where_parts)}")
+        detail = f"Same msgid has different msgstr across files. msgid={source_preview!r}. " + " | ".join(samples)
+
+        # Put one issue on the first entry of each translation variant.
+        for t_items in translations.values():
+            if not t_items:
+                continue
+            issue_path, issue_entry = t_items[0]
+            results.setdefault(issue_path, []).append(
+                _issue("WARN", "duplicate_sentence_translation_global", detail, issue_path, issue_entry)
+            )
+
+    for path, issues in results.items():
+        issues.sort(key=lambda x: (LEVEL_ORDER.get(x.level, 9), x.check, x.line, x.detail))
+
+
 def validate_path(path: str | Path) -> dict[Path, list[ValidationIssue]]:
     p = Path(path)
     results: dict[Path, list[ValidationIssue]] = {}
@@ -248,6 +359,8 @@ def validate_path(path: str | Path) -> dict[Path, list[ValidationIssue]]:
     if not found_segment:
         for po_path in iter_po_files(p):
             results[po_path] = validate_po_pair(po_path)
+
+    _append_cross_file_duplicate_sentence_translation_issues(results)
     return results
 
 
@@ -306,28 +419,175 @@ def write_reports(results: dict[Path, list[ValidationIssue]], out_dir: str | Pat
 def build_html_report(results: dict[Path, list[ValidationIssue]], root: str | Path | None = None) -> str:
     rows: list[str] = []
     root_path = Path(root).resolve() if root else None
-    for path, issues in sorted(results.items(), key=lambda x: str(x[0])):
+    levels = ["ERROR", "WARN", "STRUCT", "INFO"]
+    total_by_level = {level: 0 for level in levels}
+    check_counts: dict[str, int] = defaultdict(int)
+    total_issues = 0
+
+    def display_path(path: Path) -> str:
         display = str(path)
         if root_path:
             try:
                 display = str(path.resolve().relative_to(root_path))
             except Exception:
                 pass
+        return display
+
+    for _path, issues in results.items():
+        for issue in issues:
+            total_issues += 1
+            total_by_level[issue.level] = total_by_level.get(issue.level, 0) + 1
+            check_counts[issue.check] += 1
+
+    check_options = ['<option value="">All checks</option>']
+    for check, count in sorted(check_counts.items(), key=lambda item: (item[0].lower(), item[1])):
+        value = html.escape(check, quote=True)
+        check_options.append(f'<option value="{value}">{html.escape(check)} ({count})</option>')
+
+    level_options = ['<option value="">All levels</option>']
+    for level in levels:
+        value = html.escape(level, quote=True)
+        level_options.append(f'<option value="{value}">{html.escape(level)} ({total_by_level.get(level, 0)})</option>')
+    level_options.append('<option value="OK">OK files</option>')
+
+    summary_cards = "".join(
+        f'<button class="summary-card" type="button" data-set-level="{html.escape(level, quote=True)}">'
+        f'<b>{html.escape(level)}</b><span>{total_by_level.get(level, 0)}</span></button>'
+        for level in levels
+    )
+    summary_cards += (
+        f'<button class="summary-card" type="button" data-clear-filters="1"><b>FILES</b><span>{len(results)}</span></button>'
+        f'<button class="summary-card" type="button" data-clear-filters="1"><b>ISSUES</b><span>{total_issues}</span></button>'
+    )
+
+    for path, issues in sorted(results.items(), key=lambda x: str(x[0])):
+        display = display_path(path)
         status = "ok" if not issues else ("error" if any(i.level == "ERROR" for i in issues) else "warn")
-        issue_html = "".join(
-            f'<div class="issue {html.escape(i.level.lower())}"><b>{html.escape(i.level)} [{html.escape(i.check)}]</b> '
-            f'{html.escape(i.detail)} <span>{html.escape(i.msgctxt or "")}</span></div>'
-            for i in issues
-        ) or '<div class="issue ok">No issues.</div>'
-        rows.append(f'<section class="file {status}"><h2>{html.escape(display)}</h2>{issue_html}</section>')
+        file_counts = {level: sum(1 for i in issues if i.level == level) for level in levels}
+        count_text = "OK" if not issues else " · ".join(f"{level}:{count}" for level, count in file_counts.items() if count)
+        issue_blocks: list[str] = []
+        if issues:
+            for i in issues:
+                level = i.level.upper()
+                check = i.check
+                context = i.msgctxt or ""
+                line_text = f"line {i.line}" if i.line else ""
+                searchable = " ".join([display, level, check, context, line_text, i.detail]).casefold()
+                issue_blocks.append(
+                    f'<div class="issue {html.escape(level.lower(), quote=True)}" '
+                    f'data-level="{html.escape(level, quote=True)}" '
+                    f'data-check="{html.escape(check, quote=True)}" '
+                    f'data-context="{html.escape(context.casefold(), quote=True)}" '
+                    f'data-detail="{html.escape(searchable, quote=True)}">'
+                    f'<div class="issue-head"><b>{html.escape(level)} [{html.escape(check)}]</b> '
+                    f'<span class="line">{html.escape(line_text)}</span> '
+                    f'<span class="ctx">{html.escape(context)}</span></div>'
+                    f'<div class="detail">{html.escape(i.detail)}</div>'
+                    f'</div>'
+                )
+        else:
+            issue_blocks.append('<div class="issue ok" data-level="OK" data-check="ok" data-context="" data-detail="ok">No issues.</div>')
+
+        rows.append(
+            f'<section class="file {status}" data-file="{html.escape(display.casefold(), quote=True)}" '
+            f'data-status="{html.escape(status, quote=True)}" data-issue-count="{len(issues)}">'
+            f'<h2>{html.escape(display)} <span class="file-count">{html.escape(count_text)}</span></h2>'
+            f'{"".join(issue_blocks)}</section>'
+        )
+
     return f"""<!doctype html>
 <html><head><meta charset="utf-8"><title>PO Validation Report</title>
 <style>
-body{{font-family:Segoe UI,Arial,sans-serif;background:#f6f7fb;color:#1d1d24;margin:0;padding:24px}}
-.file{{background:white;border:1px solid #ddd;border-radius:8px;margin:0 0 12px;padding:12px 16px}}
-.file.error{{border-left:6px solid #d43c31}} .file.warn{{border-left:6px solid #d69d00}} .file.ok{{border-left:6px solid #168a48}}
-h1{{margin:0 0 16px}} h2{{font-size:15px;margin:0 0 8px}}
-.issue{{font-size:13px;line-height:1.45;margin:4px 0;padding:6px 8px;background:#fafafa;border-radius:4px;white-space:pre-wrap}}
-.issue.error{{background:#fff1f0}} .issue.warn{{background:#fffbe6}} .issue.info{{background:#eef4ff}} .issue.struct{{background:#f1fff6}}
-span{{color:#666;font-family:Consolas,monospace}}
-</style></head><body><h1>PO Validation Report</h1>{''.join(rows)}</body></html>"""
+:root{{--bg:#f6f7fb;--ink:#1d1d24;--muted:#666;--panel:#fff;--line:#ddd;--red:#d43c31;--yellow:#d69d00;--green:#168a48;--blue:#2b65d9}}
+*{{box-sizing:border-box}}
+body{{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:20px}}
+h1{{margin:0 0 12px;font-size:24px}}
+.toolbar{{position:sticky;top:0;z-index:5;background:rgba(246,247,251,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:0 0 14px;margin:0 0 14px}}
+.summary{{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}}
+.summary-card{{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;cursor:pointer;display:flex;gap:8px;align-items:center}}
+.summary-card span{{font-family:Consolas,monospace;color:var(--blue);font-weight:700}}
+.filters{{display:grid;grid-template-columns:repeat(5,minmax(140px,1fr));gap:8px;align-items:center}}
+.filters input,.filters select{{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px;background:white;color:var(--ink)}}
+.filters label{{display:flex;gap:6px;align-items:center;white-space:nowrap;font-size:13px}}
+#visibleCount{{font-size:13px;color:var(--muted);padding:8px 0}}
+.file{{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin:0 0 12px;padding:12px 16px}}
+.file.error{{border-left:6px solid var(--red)}} .file.warn{{border-left:6px solid var(--yellow)}} .file.ok{{border-left:6px solid var(--green)}}
+h2{{font-size:15px;margin:0 0 8px;word-break:break-word}}
+.file-count{{color:var(--muted);font-size:12px;font-family:Consolas,monospace;margin-left:8px}}
+.issue{{font-size:13px;line-height:1.45;margin:6px 0;padding:8px 10px;background:#fafafa;border-radius:5px;white-space:pre-wrap;border:1px solid transparent}}
+.issue-head{{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;margin-bottom:3px}}
+.issue.error{{background:#fff1f0;border-color:#ffd3cf}} .issue.warn{{background:#fffbe6;border-color:#f3df91}} .issue.info{{background:#eef4ff;border-color:#cbdcff}} .issue.struct{{background:#f1fff6;border-color:#c9edd4}} .issue.ok{{background:#effaf2;border-color:#c9e8d2}}
+.line,.ctx{{color:var(--muted);font-family:Consolas,monospace}}
+.detail{{white-space:pre-wrap}}
+.hidden{{display:none!important}}
+@media(max-width:900px){{.filters{{grid-template-columns:1fr 1fr}}}}
+</style></head><body>
+<div class="toolbar">
+  <h1>PO Validation Report</h1>
+  <div class="summary">{summary_cards}</div>
+  <div class="filters">
+    <select id="levelFilter">{''.join(level_options)}</select>
+    <select id="checkFilter">{''.join(check_options)}</select>
+    <input id="fileFilter" placeholder="Filter file name/path">
+    <input id="contextFilter" placeholder="Filter msgctxt/context">
+    <input id="textFilter" placeholder="Filter detail/text">
+    <label><input id="showOk" type="checkbox" checked> Show OK files</label>
+    <button id="clearFilters" type="button">Clear filters</button>
+  </div>
+  <div id="visibleCount"></div>
+</div>
+<main id="report">{''.join(rows)}</main>
+<script>
+const levelFilter = document.getElementById('levelFilter');
+const checkFilter = document.getElementById('checkFilter');
+const fileFilter = document.getElementById('fileFilter');
+const contextFilter = document.getElementById('contextFilter');
+const textFilter = document.getElementById('textFilter');
+const showOk = document.getElementById('showOk');
+const visibleCount = document.getElementById('visibleCount');
+const clearFilters = document.getElementById('clearFilters');
+const files = Array.from(document.querySelectorAll('.file'));
+function norm(v) {{ return String(v || '').toLowerCase(); }}
+function applyFilters() {{
+  const level = levelFilter.value;
+  const check = checkFilter.value;
+  const fileNeedle = norm(fileFilter.value);
+  const ctxNeedle = norm(contextFilter.value);
+  const textNeedle = norm(textFilter.value);
+  let visibleFiles = 0;
+  let visibleIssues = 0;
+  for (const file of files) {{
+    const fileText = norm(file.dataset.file);
+    const fileMatches = !fileNeedle || fileText.includes(fileNeedle);
+    let anyVisibleIssue = false;
+    const isOkFile = Number(file.dataset.issueCount || 0) === 0;
+    for (const issue of Array.from(file.querySelectorAll('.issue'))) {{
+      const issueLevel = issue.dataset.level || '';
+      const issueCheck = issue.dataset.check || '';
+      const issueContext = norm(issue.dataset.context);
+      const issueDetail = norm(issue.dataset.detail);
+      const passLevel = !level || issueLevel === level;
+      const passCheck = !check || issueCheck === check;
+      const passContext = !ctxNeedle || issueContext.includes(ctxNeedle);
+      const passText = !textNeedle || issueDetail.includes(textNeedle);
+      const passOk = issueLevel !== 'OK' || showOk.checked;
+      const visible = fileMatches && passLevel && passCheck && passContext && passText && passOk;
+      issue.classList.toggle('hidden', !visible);
+      if (visible && issueLevel !== 'OK') {{ visibleIssues += 1; }}
+      if (visible) {{ anyVisibleIssue = true; }}
+    }}
+    const showFile = fileMatches && anyVisibleIssue && (!isOkFile || showOk.checked);
+    file.classList.toggle('hidden', !showFile);
+    if (showFile) {{ visibleFiles += 1; }}
+  }}
+  visibleCount.textContent = `Showing ${{visibleFiles}} file(s), ${{visibleIssues}} issue(s)`;
+}}
+[levelFilter, checkFilter, fileFilter, contextFilter, textFilter, showOk].forEach(el => el.addEventListener('input', applyFilters));
+clearFilters.addEventListener('click', () => {{
+  levelFilter.value = ''; checkFilter.value = ''; fileFilter.value = ''; contextFilter.value = ''; textFilter.value = ''; showOk.checked = true; applyFilters();
+}});
+document.querySelectorAll('[data-set-level]').forEach(btn => btn.addEventListener('click', () => {{ levelFilter.value = btn.dataset.setLevel || ''; applyFilters(); }}));
+document.querySelectorAll('[data-clear-filters]').forEach(btn => btn.addEventListener('click', () => {{ clearFilters.click(); }}));
+applyFilters();
+</script>
+</body></html>"""

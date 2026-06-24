@@ -1,0 +1,7 @@
+PyQt6>=6.6
+
+[gemini]
+google-genai>=1.0.0
+
+[packaging]
+pyinstaller>=6.0
