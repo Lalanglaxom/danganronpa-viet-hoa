@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ちょっと苗木、脅かさないでよ！
 #. 何か変な事言ったかと思っちゃったじゃん！
@@ -18,8 +19,8 @@ msgid ""
 "C'mon Makoto, don't scare me like that! Makes me think\n"
 "something weird is going on!"
 msgstr ""
-"Kìa Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng ông vừa\n"
-"nói gì đó kỳ lạ lắm cơ đấy!"
+"Nè Makoto, đừng có hù tui như vậy chứ! Làm tui cứ tưởng\n"
+"có gì đó kỳ lạ xảy ra cơ đấy!"
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -30,8 +31,8 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n"
+"<CLT 4>Mình cần phải suy nghĩ lại một lần nữa. Chắc chắn phải\n"
+"có một điểm mâu thuẫn nào đó trong này...\n"
 "<CLT>"
 
 #. 意味の無い事をおっしゃられても困りますわ。
@@ -41,8 +42,8 @@ msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Cậu cứ nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm\n"
-"thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+"Mấy lời vô nghĩa làm tớ thật mệt mỏi. Xin đừng làm lãng phí thời \n"
+"gian của tớ nữa."
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -53,8 +54,8 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n"
+"<CLT 4>Mình cần phải suy nghĩ lại một lần nữa. Chắc chắn phải\n"
+"có một điểm mâu thuẫn nào đó trong này...\n"
 "<CLT>"
 
 #. 意味の無い事をおっしゃられても困りますわ。
@@ -64,8 +65,8 @@ msgid ""
 "Your meaningless words tire me. Please stop wasting my\n"
 "time."
 msgstr ""
-"Cậu cứ nói mấy lời vô nghĩa như vậy chỉ làm tớ mệt mỏi thêm\n"
-"thôi. Xin đừng làm lãng phí thời gian của tớ nữa."
+"Mấy lời vô nghĩa làm tớ thật mệt mỏi. Xin đừng làm lãng phí thời \n"
+"gian của tớ nữa."
 
 #. <CLT 4>もう一度、よく考えてみるんだ。
 #. どこかにこの議論の矛盾が隠されているはず…
@@ -76,8 +77,8 @@ msgid ""
 "a contradiction in there somewhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cần phải suy nghĩ kỹ lại một lần nữa. Chắc chắn phải có\n"
-"điểm mâu thuẫn nào đó ẩn giấu trong cuộc thảo luận này...\n"
+"<CLT 4>Mình cần phải suy nghĩ lại một lần nữa. Chắc chắn phải\n"
+"có một điểm mâu thuẫn nào đó trong này...\n"
 "<CLT>"
 
 #. <CLT 4>山田クンが生きていたと考えられる根拠…
@@ -113,7 +114,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Thi thể của Hifumi khi tụi mình tìm thấy ở phòng y tế, và thi\n"
-"thể của cậu ấy khi tái phát hiện ở kho chứa đồ mỹ thuật...\n"
+"thể của cậu ấy khi tái phát hiện ở kho họa cụ...\n"
 "<CLT>"
 
 #. <CLT 4>そこには、何か違和感があったような…

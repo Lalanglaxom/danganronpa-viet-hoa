@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. 最初に保健室で
 #. 見つけた時の山田は…
@@ -18,8 +19,8 @@ msgid ""
 "Are you saying that when we first\n"
 "found Hifumi in the nurse's office..."
 msgstr ""
-"Cậu muốn nói là khi chúng ta lần đầu tìm thấy Hifumi ở phòng y\n"
-"tế..."
+"Cậu muốn nói là khi chúng ta lần \n"
+"đầu tìm thấy Hifumi ở phòng y tế..."
 
 #. <CLT 9>生きていた可能性<CLT>が
 #. あるという事か？
@@ -27,23 +28,25 @@ msgctxt "0002 | SAKURA OOGAMI"
 msgid ""
 "...there's a chance\n"
 "<CLT 9>he was actually still alive<CLT>?"
-msgstr "...vẫn có <CLT 9>khả năng là cậu ấy vẫn còn sống<CLT> sao?"
+msgstr ""
+"...vẫn có khả năng là \n"
+"<CLT 9>cậu ấy vẫn còn sống<CLT> sao?"
 
 #. いいえ、そんなはずありません。
 msgctxt "0003 | CELES"
 msgid "No...it is impossible."
-msgstr "Không... không thể nào có chuyện đó được đâu."
+msgstr "Không... không thể nào chuyện đó."
 
 #. あの時の山田君は
 #. 間違いなく死んでいましたわ。
 msgctxt "0004 | CELES"
 msgid "Hifumi was dead, without a doubt."
-msgstr "Vào thời điểm đó, chắc chắn Hifumi đã chết rồi cậu ơi."
+msgstr "Hifumi đã chết, không nghi ngờ gì cả."
 
 #. どうして断言出来るの？
 msgctxt "0005 | KYOUKO KIRIGIRI"
 msgid "And you know that how?"
-msgstr "Sao cậu lại dám khẳng định như thế chứ?"
+msgstr "Và sao cậu lại biết?"
 
 #. あなたも死体発見アナウンスを
 #. 聞いたでしょう…
@@ -52,14 +55,16 @@ msgid ""
 "Surely you heard the body discovery\n"
 "announcement along with the rest of us..."
 msgstr ""
-"Chính cậu cũng nghe thấy tiếng thông báo phát hiện thi thể cơ\n"
-"mà..."
+"Khá chắc là cậu cũng nghe thấy thông\n"
+"báo phát hiện thi thể cũng như bọn tớ..."
 
 #. あれは、<CLT 9>山田君の死体を
 #. 発見したから<CLT>こそ…
 msgctxt "0007 | CELES"
 msgid "Hifumi's <CLT 9>dead body had been found<CLT>..."
-msgstr "Đó chính là vì <CLT 9>thi thể của Hifumi đã được tìm thấy<CLT>..."
+msgstr ""
+"Đó chính là vì \n"
+"<CLT 9>thi thể của Hifumi đã được tìm thấy<CLT>..."
 
 #. 流されたアナウンスの
 #. はずですわよ。
@@ -70,7 +75,7 @@ msgstr "...nên tiếng thông báo mới vang lên chứ còn gì nữa."
 #. 本当にそうかしら…？
 msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid "Are we really so sure about that?"
-msgstr "Chuyện đó có thực sự chắc chắn như vậy không nhỉ...?"
+msgstr "Chúng ta có chắc về điều đó không?"
 
 #. <CLT 9>別の誰かの死体<CLT>に対する
 #. アナウンスだったのかも…
@@ -80,7 +85,8 @@ msgid ""
 "intended to signal\n"
 "<CLT 9>someone else's discovery<CLT>..."
 msgstr ""
-"Biết đâu tiếng thông báo đó thực chất là dành cho việc phát hiện\n"
+"Biết đâu tiếng thông báo đó thực \n"
+"chất là dành cho\n"
 "<CLT 9>thi thể của một người khác<CLT>..."
 
 #. <CLT 26>俺は見てないから何とも…<CLT>
@@ -91,9 +97,9 @@ msgstr "<CLT 26>Tớ có được chứng kiến đâu nên chịu...<CLT>"
 #. <CLT 26>それは私も聞いたよ！<CLT>
 msgctxt "0012 | KYOUKO KIRIGIRI"
 msgid "<CLT 26>I heard it, too!<CLT>"
-msgstr "<CLT 26>Chuyện đó tớ cũng nghe thấy rồi!<CLT>"
+msgstr "<CLT 26>Tớ cũng nghe thấy rồi!<CLT>"
 
 #. <CLT 26>別の誰か…だと？<CLT>
 msgctxt "0013 | KYOUKO KIRIGIRI"
 msgid "<CLT 26>Were we...wrong?<CLT>"
-msgstr "<CLT 26>Thi thể một người khác... sao?<CLT>"
+msgstr "<CLT 26>Chúng ta... đã sai sao?<CLT>"

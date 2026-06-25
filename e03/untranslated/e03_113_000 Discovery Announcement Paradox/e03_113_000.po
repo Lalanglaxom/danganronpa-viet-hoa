@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. あの時の<CLT 3>死体発見アナウンス<CLT>って、
 #. <CLT 3>山田クンの死体<CLT>を発見したせいで流れたものなのかな？
@@ -19,7 +20,7 @@ msgid ""
 "really intended for <CLT 3>Hifumi<CLT>?"
 msgstr ""
 "Tiếng <CLT 3>thông báo phát hiện thi thể<CLT> lúc đó thực sự là do tụi mình\n"
-"phát hiện ra <CLT 3>xác của Hifumi<CLT> sao?"
+"phát hiện ra <CLT 3>Hifumi<CLT> sao?"
 
 #. 当然ですわ。だって山田君の死体を発見した直後に、
 #. あのアナウンスを聞いたのですよ？
@@ -28,8 +29,8 @@ msgid ""
 "Of course it was. The announcement played right after\n"
 "we discovered his body."
 msgstr ""
-"Đương nhiên rồi cậu. Chẳng phải ngay sau khi tìm thấy thi thể\n"
-"của Hifumi, tụi mình đã nghe thấy tiếng thông báo đó sao?"
+"Đương nhiên rồi. Tiếng thông báo đã vang lên ngay sau khi\n"
+"ta phát hiện ra thi thể cậu ấy."
 
 #. でも、それは、石丸クンの死体を発見した人達も
 #. 同じだったはずだよ…
@@ -38,8 +39,8 @@ msgid ""
 "Maybe, but that was also the same time that Taka's\n"
 "body was found."
 msgstr ""
-"Nhưng chuyện đó cũng hoàn toàn trùng khớp với thời điểm những\n"
-"người bên phía Taka tìm thấy xác của cậu ấy mà..."
+"Có thể, nhưng đó cũng trùng khớp với thời điểm tìm thấy xác \n"
+"của Taka..."
 
 #. その通りだ。俺達は石丸の死体を発見した直後に、
 #. あのアナウンスを聞いている。
@@ -49,14 +50,14 @@ msgid ""
 "that we heard the announcement."
 msgstr ""
 "Đúng thế. Bọn tôi cũng nghe thấy tiếng thông báo đó ngay sau khi\n"
-"phát hiện ra thi thể của Taka."
+"phát hiện ra thi thể của cậu ấy."
 
 #. つまり…ボク達は勘違いしてたんじゃないかな…？
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "So there's a good chance we've made a mistake in there\n"
 "somewhere."
-msgstr "Nói cách khác... có khi nào tụi mình đã lầm tưởng không...?"
+msgstr "Vậy nên có khả năng cao là chúng ta đã mắc sai lầm ở đâu đấy."
 
 #. 石丸クンの死体発見アナウンスを、
 #. 山田クンの死体発見アナウンスだとさ…
@@ -65,8 +66,8 @@ msgid ""
 "I think we've confused whether the announcement was\n"
 "for Hifumi or Taka."
 msgstr ""
-"Tụi mình đã nhầm thông báo phát hiện thi thể của Taka thành\n"
-"thông báo của Hifumi mất rồi..."
+"Tớ nghĩ tụi mình đã bối rối việc thông báo đó là dành cho Hifumi\n"
+"hay là Taka."
 
 #. そもそも、死体が２つ見つかったのであれば、
 #. アナウンスも２回流れるはずだ。
@@ -85,13 +86,13 @@ msgid ""
 "Maybe Monokuma simply got lazy and rolled them\n"
 "together into one..."
 msgstr ""
-"Biết đâu do Monokuma lười quá... nên mới gộp chung lại làm một\n"
-"lần thì sao cậu..."
+"Biết đâu do Monokuma lười quá... nên mới gộp chung lại làm \n"
+"một lần..."
 
 #. …その点に関しては、どうなんだ？
 msgctxt "0009 | BYAKUYA TOGAMI"
 msgid "What do you say, Monokuma? Any comment?"
-msgstr "...Về điểm này thì ngươi giải thích thế nào đây, Monokuma?"
+msgstr "Về điểm này thì ngươi giải thích thế nào đây, Monokuma?"
 
 #. とってもセンシティブな問題だから、
 #. 詳しい事は言えないんだけど…
@@ -119,7 +120,7 @@ msgid ""
 "...it's only broadcast when three or more people find\n"
 "a dead body for the first time!"
 msgstr ""
-"...Nó chỉ vang lên khi có từ ba người trở lên phát hiện ra thi\n"
+"...nó chỉ vang lên khi có từ ba người trở lên phát hiện ra thi\n"
 "thể đó lần đầu tiên mà thôi!"
 
 #. 答えになってないべ。
@@ -129,7 +130,7 @@ msgid ""
 "That didn't answer our question, man! We're asking if\n"
 "you're a lazy bum!"
 msgstr ""
-"Trả lời huề vốn vậy ông. Tụi này đang hỏi xem ông có lười biếng\n"
+"Trả lời huề vốn vậy. Tụi này đang hỏi xem mi có lười biếng\n"
 "gộp lại không cơ mà...!"
 
 #. いや、今ので十分だ。
@@ -159,8 +160,8 @@ msgid ""
 "...even if we find the same body again later, he won't\n"
 "make the announcement again."
 msgstr ""
-"...Cho dù chúng ta có phát hiện lại cùng một cái xác bao nhiêu\n"
-"lần đi nữa, tiếng thông báo cũng sẽ không vang lên lần hai."
+"...cho dù chúng ta có phát hiện lại cùng một cái xác lần nữa,\n"
+"tiếng thông báo cũng sẽ không vang lên lần hai."
 
 #. だとすると、あの時の死体発見アナウンスは、
 #. どうして流れたんだろうな…？
@@ -170,12 +171,12 @@ msgid ""
 "again later on?"
 msgstr ""
 "Nếu đã vậy, tại sao tiếng thông báo phát hiện thi thể khi đó lại\n"
-"vang lên lần nữa chứ...?"
+"vang lên sau đó chứ...?"
 
 #. は？　あの時って！？
 msgctxt "0019 | TOUKO FUKAWA"
 msgid "Huh? Later on!?"
-msgstr "Hả? Khi đó là khi nào chứ!?"
+msgstr "Hả? Sau đó!?"
 
 #. ボク達は、今回の一連の事件で、
 #. ２回の死体発見アナウンスを聞いているはずだよ…
@@ -184,8 +185,8 @@ msgid ""
 "Exactly. We heard the body discovery announcement\n"
 "twice."
 msgstr ""
-"Đúng vậy. Trong chuỗi vụ án lần này, tụi mình chắc chắn đã nghe\n"
-"thấy tiếng thông báo phát hiện thi thể hai lần..."
+"Chính xác. Tụi mình đã nghe thấy tiếng thông báo phát hiện thi\n"
+"thể hai lần."
 
 #. ２人の死体再発見時
 msgctxt "0021 | CHOICE/RE:ACT"
@@ -227,7 +228,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Mình nhớ tiếng thông báo thứ hai vang lên trước khi Hifumi hồi\n"
-"tỉnh cơ mà...\n"
+"tỉnh...\n"
 "<CLT>"
 
 #. <CLT 4>みんなのボクに対する印象が、
@@ -239,8 +240,8 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hình như mình vừa làm bản thân mất điểm trước mặt mọi người\n"
-"rồi...\n"
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt \n"
+"mọi người rồi...\n"
 "<CLT>"
 
 #. 倒れた腐川発見時
@@ -279,8 +280,8 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hình như mình vừa làm bản thân mất điểm trước mặt mọi người\n"
-"rồi...\n"
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt \n"
+"mọi người rồi...\n"
 "<CLT>"
 
 #. どうした、ど忘れでもしたのか？
@@ -298,7 +299,7 @@ msgctxt "0032 | MAKOTO NAEGI"
 msgid ""
 "Umm...I'm sure I was in the repository when I heard\n"
 "it..."
-msgstr "Ờ thì, mình nhớ là ở kho chứa đồ mỹ thuật lúc nghe thấy nó..."
+msgstr "Ờ thì, tớ nhớ là ở kho họa cụ lúc nghe thấy nó..."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -309,8 +310,8 @@ msgid ""
 "in front of everyone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hình như mình vừa làm bản thân mất điểm trước mặt mọi người\n"
-"rồi...\n"
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt \n"
+"mọi người rồi...\n"
 "<CLT>"
 
 #. <CLT 4>２回の死体発見アナウンス…
@@ -320,7 +321,7 @@ msgid ""
 "<CLT 4>The second body discovery announcement...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hai lần thông báo phát hiện thi thể...\n"
+"<CLT 4>Lần thông báo phát hiện thi thể thứ hai...\n"
 "<CLT>"
 
 #. <CLT 4>その１回目は、保健室と物理準備室で、
@@ -353,9 +354,8 @@ msgid ""
 "We heard it a second time in the repository <CLT 3>when we\n"
 "rediscovered the two bodies<CLT>."
 msgstr ""
-"Tụi mình nghe thấy tiếng thông báo phát hiện thi thể lần\n"
-"thứ hai là <CLT 3>khi tái phát hiện ra hai thi thể<CLT> ở kho chứa đồ\n"
-"mỹ thuật đấy."
+"Tụi mình nghe thấy tiếng thông báo phát hiện thi thể lần thứ hai\n"
+"là <CLT 3>khi tái phát hiện ra thi thể<CLT> ở kho họa cụ đấy."
 
 #. <CLT 23>「ピンポンパンポーン…！」
 #. <CLT>
@@ -364,13 +364,13 @@ msgid ""
 "<CLT 23>*Ding dong, ding dong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>“Bính boong bính boong…”\n"
+"<CLT 23>“Bính bong, bính bong”\n"
 "<CLT>"
 
 #. 死体が発見されました！
 msgctxt "0039 | MONOKUMA"
 msgid "A body has been discovered!"
-msgstr "Một thi thể đã được phát hiện!"
+msgstr "Một xác chết đã được phát hiện!"
 
 #. 一定の自由時間の後、『学級裁判』を開きまーす！
 msgctxt "0040 | MONOKUMA"
@@ -378,8 +378,8 @@ msgid ""
 "After a certain amount of time, which you may use\n"
 "however you like, the class trial will begin!"
 msgstr ""
-"Sau một khoảng thời gian tự do nhất định, “lớp xét xử” sẽ được\n"
-"bắt đầu nhé!"
+"Sau một khoảng thời gian nhất định để các em tùy nghi sử dụng,\n"
+"lớp xét xử sẽ chính thức bắt đầu!"
 
 #. あの時はアナウンスにまで気が回らなかったけど…
 #. これって、モノクマの言葉と<CLT 3>矛盾<CLT>してるよね？
@@ -388,9 +388,8 @@ msgid ""
 "It didn't seem weird at the time...but it\n"
 "<CLT 3>contradicts<CLT> what Monokuma just told us, doesn't it?"
 msgstr ""
-"Lúc đó tụi mình không bận tâm lắm đến tiếng thông báo...\n"
-"nhưng việc này rõ ràng là đang <CLT 3>mâu thuẫn<CLT> với những lời\n"
-"Monokuma vừa nói, đúng không?"
+"Lúc đó thì không thấy lạ lắm... nhưng việc này rõ ràng là đang\n"
+"<CLT 3>mâu thuẫn<CLT> với những lời Monokuma vừa nói, đúng không?"
 
 #. 死体を“最初に発見した時だけ”流れるのなら、
 #. 死体を再発見した時に流れるはずがない。
@@ -420,7 +419,7 @@ msgstr ""
 #. 実は<CLT 3>“初めて発見”<CLT>された状態だったんだよ。
 msgctxt "0045 | MAKOTO NAEGI"
 msgid "...being <CLT 3>discovered for the first time<CLT>!"
-msgstr "...đang ở trong trạng thái <CLT 3>“được phát hiện lần đầu tiên”<CLT>!"
+msgstr "...đang trong trạng thái <CLT 3>được phát hiện lần đầu tiên<CLT>!"
 
 #. つまり、最初に保健室で発見された時の山田は、
 #. まだ死んではおらず…
@@ -439,8 +438,8 @@ msgid ""
 "Meaning he wasn't actually found dead until we came\n"
 "upon him in the repository."
 msgstr ""
-"...Và thời điểm chúng ta thực sự phát hiện ra thi thể của cậu ấy\n"
-"theo đúng nghĩa đen, phải là lúc ở kho chứa đồ mỹ thuật."
+"Nghĩa là chúng ta thực sự phát hiện ra thi thể của cậu ấy\n"
+"phải là lúc ở kho họa cụ."
 
 #. だけど、それだけじゃないんだ…
 msgctxt "0048 | MAKOTO NAEGI"
@@ -460,7 +459,7 @@ msgstr ""
 #. その根拠…アタシにはわかるよ…
 msgctxt "0050 | TOUKO FUKAWA"
 msgid "Oh! Oh! I know! I know!"
-msgstr "Bằng chứng đó... tớ biết đấy nhé...!"
+msgstr "Ô! Ô! Ta biết! Ta biết!"
 
 #. あいつは死んだフリが上手だったから！
 #. それで決まりーッ！
@@ -468,12 +467,14 @@ msgctxt "0051 | TOUKO FUKAWA"
 msgid ""
 "Because he was super good at playing dead!\n"
 "Badda-bing badda-boom!"
-msgstr "Là vì tên đó có tài giả chết siêu đỉnh chứ gì! Chốt thế đi nhéッ!"
+msgstr ""
+"Là vì tên đó có tài giả chết siêu đỉnh chứ gì!\n"
+"Badda-bing badda-boom!"
 
 #. その程度の事は根拠とは呼びません。
 msgctxt "0052 | CELES"
 msgid "That is the worst logic I have ever heard..."
-msgstr "Cái kiểu đó mà cũng gọi là bằng chứng được sao."
+msgstr "Đó là cái logic tệ nhất tôi từng nghe."
 
 #. やはり、彼が生きていた根拠なんて…
 #. 存在するとは思えませんわ。
@@ -482,8 +483,8 @@ msgid ""
 "But honestly, I do not think there's anything that\n"
 "can prove he was still alive."
 msgstr ""
-"Tớ vẫn không tin là có sự tồn tại của bất kỳ bằng chứng nào\n"
-"chứng minh cậu ta còn sống đâu."
+"Nhưng thật lòng mà nói, tớ không nghĩ có gì có thể chứng minh\n"
+"cậu ấy vẫn còn sống."
 
 #. だったら、もう１度、
 #. 山田君の死体の状況について振り返ってみましょう。
@@ -493,7 +494,7 @@ msgid ""
 "surrounding the discovery of his body."
 msgstr ""
 "Vậy thì tụi mình hãy cùng nhìn nhận lại một lần nữa về tình\n"
-"trạng thi thể của Hifumi đi."
+"trạng thi thể lúc tìm thấy đi."
 
 #. そうすれば、ハッキリするはずよ。
 #. 彼が生きていたかどうかがね…
@@ -502,13 +503,13 @@ msgid ""
 "Then it should become clear whether he was really\n"
 "alive or not."
 msgstr ""
-"Làm vậy thì việc cậu ấy có còn sống hay không sẽ rõ như ban ngày\n"
-"thôi..."
+"Làm vậy thì việc cậu ấy có còn sống hay không sẽ rõ như\n"
+"ban ngày..."
 
 #. 無駄だと思いますが…
 msgctxt "0056 | CELES"
 msgid "This whole thing is pointless..."
-msgstr "Tớ thấy việc này chỉ vô ích thôi..."
+msgstr "Toàn bộ chuyện này chỉ vô ích thôi..."
 
 #. <CLT 4>山田クンが生きていた根拠は、確かにあるはずだ。
 #. それを、みんなに指し示すんだ…！
