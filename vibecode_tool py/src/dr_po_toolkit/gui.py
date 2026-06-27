@@ -62,7 +62,7 @@ from .po_io import load_po, patch_msgstr_by_uid, save_po
 from .rules import apply_rules_to_path, load_rules, rule_to_dict
 from .search import SearchResult, search_path
 from .validation import format_text_report, validate_path, write_reports
-from .text_utils import clt_tags, generic_tags, has_bad_unicode, nfc, order_number, placeholders_by_type, visible_len, visible_text
+from .text_utils import visible_len
 
 # Chiaki Nanami inspired theme palette: sleepy gamer, soft pink, muted teal,
 # dusty lavender, cream text, and deep charcoal blue panels.
@@ -952,7 +952,7 @@ class ToolkitGUI(QMainWindow):
 
         edit_buttons = QHBoxLayout()
         open_btn = self._button("Open File", secondary=True)
-        wrap_btn = self._button("Wrap Line", secondary=True)
+        wrap_btn = self._button("Wrap Selected", secondary=True)
         save_btn = self._button("Save msgstr")
         edit_buttons.addWidget(open_btn)
         edit_buttons.addWidget(wrap_btn)
@@ -961,8 +961,12 @@ class ToolkitGUI(QMainWindow):
 
         replace_group = QGroupBox("Find / Replace in Results")
         repl_layout = QGridLayout(replace_group)
-        find_edit = QLineEdit()
-        repl_edit = QLineEdit()
+        find_edit = QPlainTextEdit()
+        find_edit.setFixedHeight(58)
+        find_edit.setPlaceholderText("Find text. Spaces or pasted line breaks will also match line breaks in msgstr.")
+        repl_edit = QPlainTextEdit()
+        repl_edit.setFixedHeight(58)
+        repl_edit.setPlaceholderText("Replacement text. Use pasted line breaks or \\n for a line break.")
         replace_case = QCheckBox("Case")
         replace_whole = QCheckBox("Whole word")
         prev_btn = self._button("Find Prev", secondary=True)
@@ -993,6 +997,34 @@ class ToolkitGUI(QMainWindow):
         def compact(text: str, limit: int = 1000) -> str:
             text = text.replace("\\n", "\n")
             return text if len(text) <= limit else text[: limit - 1] + "…"
+
+        def multiline_text(editor: QPlainTextEdit) -> str:
+            # Let users type/paste real line breaks, or type \n as a shortcut.
+            return editor.toPlainText().replace("\\n", "\n")
+
+        def flexible_whitespace_pattern(text: str) -> str:
+            # Search text often comes from visible PO text where line breaks were collapsed.
+            # Treat any typed/pasted whitespace as flexible whitespace so "hello world"
+            # can replace "hello\nworld", literal "\\n", and other wrapped msgstr forms.
+            pieces: list[str] = []
+            pos = 0
+            for match in re.finditer(r"\s+", text):
+                if match.start() > pos:
+                    pieces.append(re.escape(text[pos:match.start()]))
+                pieces.append(r"(?:\s+|\\n)+")
+                pos = match.end()
+            if pos < len(text):
+                pieces.append(re.escape(text[pos:]))
+            return "".join(pieces)
+
+        def wrap_settings() -> tuple[int, int, int]:
+            soft_spin = getattr(self, "linewrap_soft_spin", None)
+            hard_spin = getattr(self, "linewrap_hard_spin", None)
+            cuts_spin = getattr(self, "linewrap_cuts_spin", None)
+            soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 58))
+            hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
+            cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
+            return soft_value, hard_value, cuts_value
 
         def fill_table() -> None:
             table.setRowCount(0)
@@ -1120,28 +1152,36 @@ class ToolkitGUI(QMainWindow):
             changed = save_updates({idx: msgstr_box.toPlainText()})
             status.setText("Saved msgstr." if changed else "No change.")
 
-        def wrap_current_msgstr() -> None:
-            idx = current_result_index()
-            if idx is None:
-                status.setText("Select a result first.")
+        def wrap_selected_msgstrs() -> None:
+            indices = selected_result_indices()
+            if not indices:
+                current = current_result_index()
+                indices = [current] if current is not None else []
+            if not indices:
+                status.setText("Select one or more results first.")
                 return
-            soft_spin = getattr(self, "linewrap_soft_spin", None)
-            hard_spin = getattr(self, "linewrap_hard_spin", None)
-            cuts_spin = getattr(self, "linewrap_cuts_spin", None)
-            soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 58))
-            hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
-            cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
-            fixed, changed = wrap_msgstr(
-                msgstr_box.toPlainText(),
-                soft=soft_value,
-                hard=hard_value,
-                max_cuts=cuts_value,
+
+            current_idx = current_result_index()
+            soft_value, hard_value, cuts_value = wrap_settings()
+            updates: dict[int, str] = {}
+            wrapped_count = 0
+            for idx in sorted(set(indices)):
+                if idx < 0 or idx >= len(self.search_results):
+                    continue
+                source = msgstr_box.toPlainText() if idx == current_idx else self.search_results[idx].msgstr
+                fixed, changed = wrap_msgstr(source, soft=soft_value, hard=hard_value, max_cuts=cuts_value)
+                if changed:
+                    wrapped_count += 1
+                if changed or source != self.search_results[idx].msgstr:
+                    updates[idx] = fixed
+
+            changed = save_updates(updates)
+            if current_idx is not None and 0 <= current_idx < len(self.search_results):
+                msgstr_box.setPlainText(self.search_results[current_idx].msgstr)
+            status.setText(
+                f"Wrapped {wrapped_count} selected result(s), saved {changed}. "
+                f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
             )
-            msgstr_box.setPlainText(fixed)
-            if changed:
-                status.setText(f"Wrapped line in editor. Click Save msgstr to write. Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}.")
-            else:
-                status.setText("Line wrap made no change.")
 
         def run_search() -> None:
             path = path_edit.text().strip()
@@ -1162,8 +1202,8 @@ class ToolkitGUI(QMainWindow):
             if self.search_results:
                 table.selectRow(0)
                 load_selected()
-            if not find_edit.text().strip():
-                find_edit.setText(text)
+            if not multiline_text(find_edit).strip():
+                find_edit.setPlainText(text)
 
         def open_selected_file() -> None:
             idx = current_result_index()
@@ -1174,11 +1214,11 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "Open file", f"Could not open file:\n{self.search_results[idx].file}")
 
         def compile_find() -> re.Pattern[str] | None:
-            needle = find_edit.text()
-            if not needle:
+            needle = multiline_text(find_edit)
+            if not needle.strip():
                 status.setText("Find is empty.")
                 return None
-            pattern = re.escape(needle)
+            pattern = flexible_whitespace_pattern(needle)
             if replace_whole.isChecked():
                 pattern = r"(?<!\w)" + pattern + r"(?!\w)"
             flags = 0 if replace_case.isChecked() else re.IGNORECASE
@@ -1216,17 +1256,27 @@ class ToolkitGUI(QMainWindow):
             pattern = compile_find()
             if pattern is None:
                 return
-            repl = repl_edit.text()
+            repl = multiline_text(repl_edit)
             updates: dict[int, str] = {}
             total_hits = 0
-            for idx in indices:
+            wrapped_count = 0
+            soft_value, hard_value, cuts_value = wrap_settings()
+            for idx in sorted(set(indices)):
+                if idx < 0 or idx >= len(self.search_results):
+                    continue
                 before = self.search_results[idx].msgstr
                 after, hits = pattern.subn(repl, before)
                 if hits:
+                    after, wrapped = wrap_msgstr(after, soft=soft_value, hard=hard_value, max_cuts=cuts_value)
                     updates[idx] = after
                     total_hits += hits
+                    if wrapped:
+                        wrapped_count += 1
             changed = save_updates(updates)
-            status.setText(f"Replaced {total_hits} hit(s) in {changed} result(s).")
+            status.setText(
+                f"Replaced {total_hits} hit(s) in {changed} result(s). "
+                f"Auto-wrapped {wrapped_count}."
+            )
 
         def replace_current() -> None:
             idx = current_result_index()
@@ -1240,7 +1290,7 @@ class ToolkitGUI(QMainWindow):
         search_btn.clicked.connect(run_search)
         phrase.returnPressed.connect(run_search)
         open_btn.clicked.connect(open_selected_file)
-        wrap_btn.clicked.connect(wrap_current_msgstr)
+        wrap_btn.clicked.connect(wrap_selected_msgstrs)
         save_btn.clicked.connect(save_current)
         msgstr_box.installEventFilter(self)
         prev_btn.clicked.connect(lambda: find_step(-1))

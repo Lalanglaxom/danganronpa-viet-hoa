@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. やっぱり、凶器はジャスティスハンマーじゃなくって、
 #. <CLT 3>別の凶器<CLT>だったんだよ。
@@ -18,8 +19,8 @@ msgid ""
 "The murder weapon wasn't a Justice Hammer at all. No,\n"
 "it was something <CLT 3>completely different<CLT>."
 msgstr ""
-"Quả nhiên, hung khí không phải là Búa Công Lý mà là một <CLT 3>hung khí\n"
-"khác hoàn toàn<CLT>."
+"Hung khí không phải là Búa Công Lý đâu. Mà là một <CLT 3>thứ gì\n"
+"đó khác hoàn toàn<CLT>."
 
 #. けど、別の凶器って…
 msgctxt "0002 | YASUHIRO HAGAKURE"
@@ -52,7 +53,9 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "...but for some reason, one of them had been <CLT 3>scrubbed\n"
 "clean<CLT>."
-msgstr "...nhưng vì lý do nào đó, chỉ có một chiếc là được <CLT 3>rửa sạch sẽ<CLT>."
+msgstr ""
+"...nhưng vì lý do nào đó, chỉ có một chiếc là \n"
+"được <CLT 3>rửa sạch sẽ<CLT>."
 
 #. 洗われてた…？
 msgctxt "0006 | AOI ASAHINA"
@@ -92,7 +95,9 @@ msgstr ""
 #. その内のいくつかは、<CLT 3>歯抜け<CLT>になってたんだ。
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "...and even some <CLT 3>flat, mallet-like<CLT> ones."
-msgstr "...trong số đó còn có cả mấy chiếc <CLT 3>búa đầu dẹt như vồ gỗ<CLT> nữa."
+msgstr ""
+"...trong số đó còn có cả mấy chiếc \n"
+"<CLT 3>búa đầu dẹt như vồ gỗ<CLT> nữa."
 
 #. ジャスティスハンマー自体も、
 #. ここのハンマーを元にして作られたんじゃないかな？
@@ -111,7 +116,7 @@ msgid ""
 "note about the wounds being similar..."
 msgstr ""
 "Nếu điều đó là thật, thì nó giải thích được lý do tại sao\n"
-"Monokuma File lại ghi là vết thương tương tự nhau..."
+"Hồ sơ Monokuma lại ghi là vết thương tương tự nhau..."
 
 #. では、山田は石丸の死体を美術倉庫まで運んだ直後、
 #. その場にあるハンマーで、殺されたのか…
@@ -120,7 +125,7 @@ msgid ""
 "So Hifumi moved Taka's body to the repository, where\n"
 "someone then used a hammer to kill *him*."
 msgstr ""
-"Vậy ra Hifumi vừa vận chuyển cái xác của Taka đến kho họa cụ\n"
+"Vậy Hifumi vừa vận chuyển cái xác của Taka đến kho họa cụ\n"
 "xong, thì bị ai đó dùng chiếc búa ở đó sát hại..."
 
 #. それをやったのが<CLT 3>真犯人<CLT>…
@@ -140,8 +145,8 @@ msgid ""
 "Hold on a moment. I still think it's strange to assume\n"
 "someone was <CLT 3>working together<CLT> with him."
 msgstr ""
-"Khoan đã một chút. Tớ vẫn cho rằng suy nghĩ có người <CLT 3>đồng lõa<CLT>\n"
-"với cậu ta là rất kỳ lạ."
+"Chờ một chút đã. Tớ vẫn cho rằng suy nghĩ có người \n"
+"<CLT 3>đồng lõa<CLT> với cậu ta là rất kỳ lạ."
 
 #. だって、この学園生活における卒業のルールでは、
 #. 共犯者は何も得をしないはずです。
@@ -183,5 +188,5 @@ msgid ""
 "<CLT 4>At least, that's what we thought at first. But...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ít nhất đó là những gì chúng ta nghĩ lúc đầu. Nhưng mà......\n"
+"<CLT 4>Ít nhất đó là những gì chúng ta nghĩ lúc đầu. Nhưng mà....\n"
 "<CLT>"

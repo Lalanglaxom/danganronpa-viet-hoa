@@ -6,20 +6,21 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 9>山田を殺した凶器<CLT>は…
 msgctxt "0001 | SAKURA OOGAMI"
 msgid "What was <CLT 9>used to kill Hifumi<CLT>...?"
-msgstr "Thứ <CLT 9>được dùng để giết Hifumi<CLT> là gì...?"
+msgstr "Thứ gì <CLT 9>được dùng để giết Hifumi<CLT>...?"
 
 #. ジャスティスハンマー３号なのか？
 msgctxt "0002 | SAKURA OOGAMI"
 msgid "Was it Justice Hammer 3?"
-msgstr "Có phải là Búa Công Lý số 3 không?"
+msgstr "Có phải là Búa Công Lý số 3?"
 
 #. ジャスティスハンマー４号なのか？
 msgctxt "0003 | SAKURA OOGAMI"
@@ -43,14 +44,14 @@ msgid ""
 "How was the culprit able to move around\n"
 "so freely with the weapon?"
 msgstr ""
-"Hung thủ đã làm cách nào để vận chuyển... những hung khí đó đi\n"
-"vậy nhỉ?"
+"Hung thủ đã làm cách nào để vận chuyển\n"
+"những hung khí đó đi?"
 
 #. しかも、誰にも
 #. <CLT 9>目撃される<CLT>事なく…
 msgctxt "0007 | CELES"
 msgid "How did nobody <CLT 9>witness<CLT> them carrying it?"
-msgstr "Hơn nữa lại còn thực hiện mà không <CLT 9>bị ai nhìn thấy<CLT> nữa chứ..."
+msgstr "Làm sao mà không <CLT 9>bị ai nhìn thấy<CLT> nữa chứ?"
 
 #. 今明らかになる
 #. <CLT 9>ジャスティスハンマー５号<CLT>！！
@@ -58,14 +59,18 @@ msgctxt "0008 | TOUKO FUKAWA"
 msgid ""
 "Sounds like a <CLT 9>Justice Hammer 5<CLT>\n"
 "is about to make its appearance!"
-msgstr "Nghe cứ như <CLT 9>Búa Công Lý số 5<CLT> sắp sửa xuất hiện đến nơi rồi ấy!"
+msgstr ""
+"Nghe cứ như <CLT 9>Búa Công Lý số 5<CLT> \n"
+"sắp sửa xuất hiện rồi ấy!"
 
 #. 詳細はウェブで！！
 msgctxt "0009 | TOUKO FUKAWA"
 msgid ""
 "Check out murdergear.com/\n"
 "hammertime for more info!"
-msgstr "Chi tiết xem tại web nhé!"
+msgstr ""
+"Chi tiết xem tại\n"
+"gietnguoi.com/buata nhé!"
 
 #. とりあえず、
 #. ハッキリしてんのは…
@@ -79,9 +84,11 @@ msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid ""
 "The murder weapon had to be\n"
 "<CLT 9>one of the Justice Hammers<CLT>!"
-msgstr "Chỉ có thể là <CLT 9>một trong hai cái búa đó đã là hung khí<CLT> mà thôi!"
+msgstr ""
+"Chỉ có thể là <CLT 9>một trong hai \n"
+"cái búa Công Lý là hung khí<CLT> mà thôi!"
 
 #. うぅ…それだけか…
 msgctxt "0012 | YASUHIRO HAGAKURE"
 msgid "And, uh...that's about it."
-msgstr "Ư... chỉ vậy thôi à..."
+msgstr "Và, ừ... chỉ vậy thôi..."
