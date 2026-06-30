@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,18 +34,20 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ chẳng\n"
+"thể nhìn những chiếc camera giám sát như trước đây được nữa...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -52,5 +55,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

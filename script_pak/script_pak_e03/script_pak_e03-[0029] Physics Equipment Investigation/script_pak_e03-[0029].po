@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,14 +34,16 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi,\n"
+"mình sẽ chẳng bao giờ nhìn những chiếc camera giám sát\n"
+"theo cách như trước đây nữa...\n"
 "<CLT>"
+
 #. これは…ビニールシートか。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "This is...a tarp."
 msgstr "Đây là... một tấm bạt."
+
 #. <CLT 4>ごく普通のものだな…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -50,6 +53,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhìn chung thì nó là một vật dụng khá bình thường.\n"
 "<CLT>"
+
 #. <CLT 4>振り子や車輪やレール…
 #. 実験で使う器具が乱雑にしまわれている。
 #. <CLT>
@@ -59,9 +63,10 @@ msgid ""
 "is scattered all over.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả các thiết\n"
-"bị đều đang nằm rải rác khắp nơi.\n"
+"<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả các thiết bị đều\n"
+"đang nằm rải rác khắp nơi.\n"
 "<CLT>"
+
 #. <CLT 4>埃をかぶってるみたいだし…
 #. 長い事、使われてないみたいだな…
 #. <CLT>
@@ -71,9 +76,10 @@ msgid ""
 "haven't been used in a long time.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng cũng đều bị bám đầy bụi nữa. Rõ ràng là chúng đã\n"
-"không được sử dụng trong một thời gian dài rồi.\n"
+"<CLT 4>Chúng cũng đều bị bám đầy bụi nữa. Rõ ràng là chúng đã không\n"
+"được sử dụng trong một thời gian dài rồi.\n"
 "<CLT>"
+
 #. <CLT 4>おそらく…過去の実験結果とか研究資料とか…
 #. その手のファイルがズラリと並んでいる。
 #. <CLT>
@@ -83,17 +89,20 @@ msgid ""
 "or research data...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một đống hồ sơ ở đây. Chắc là hồ sơ phòng thí nghiệm cũ\n"
-"hoặc dữ liệu nghiên cứu gì đó...\n"
+"<CLT 4>Có một đống hồ sơ ở đây. Chắc là hồ sơ phòng thí nghiệm cũ hoặc\n"
+"dữ liệu nghiên cứu gì đó...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>物理準備室から出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"

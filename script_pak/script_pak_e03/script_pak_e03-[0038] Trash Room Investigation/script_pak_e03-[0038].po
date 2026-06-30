@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện. Tớ\n"
-"thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Tớ thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -33,9 +34,10 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thậm chí ngay lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia\n"
-"của chiếc camera giám sát đó...\n"
+"<CLT 4>Thậm chí ngay lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của\n"
+"chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -44,17 +46,20 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ nghĩ đến thôi đã khiến tớ thấy bồn chồn rồi... nhưng tớ\n"
-"thực sự chẳng thể làm gì được cả.\n"
+"<CLT 4>Chỉ nghĩ đến thôi đã khiến tớ thấy bồn chồn rồi... nhưng tớ thực\n"
+"sự chẳng thể làm gì được cả.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0006 | NARRATION"
@@ -64,6 +69,7 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だな。
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -73,6 +79,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là phòng chứa rác. Nói cách khác thì là một bãi rác.\n"
 "<CLT>"
+
 #. <CLT 4>そう言えば、掃除当番の話はどうなったんだ？
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -81,9 +88,10 @@ msgid ""
 "\"rotating cleaning duty\" thing?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhắc mới nhớ... Vụ phân chia \"trực nhật luân phiên\" kia\n"
-"rốt cuộc là sao rồi nhỉ?\n"
+"<CLT 4>Nhắc mới nhớ... Vụ phân chia \"trực nhật luân phiên\" kia rốt cuộc\n"
+"là sao rồi nhỉ?\n"
 "<CLT>"
+
 #. <CLT 4>鉄格子の開閉スイッチだ…
 #. ボクは鍵を持ってないから、開けられない…
 #. <CLT>
@@ -93,9 +101,10 @@ msgid ""
 "don't have the key, so I can't activate it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là công tắc để nâng và hạ cổng sắt. Tớ\n"
-"không có chìa khóa, nên không thể kích hoạt nó được.\n"
+"<CLT 4>Đó là công tắc để nâng và hạ cổng sắt. Tớ không có chìa khóa,\n"
+"nên không thể kích hoạt nó được.\n"
 "<CLT>"
+
 #. <CLT 23>「ガタガタガタ！」
 #. <CLT>
 msgctxt "0010 | NARRATION"
@@ -105,19 +114,23 @@ msgid ""
 msgstr ""
 "<CLT 23>*Lạch cạch lạch cạch*\n"
 "<CLT>"
+
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
 msgstr "Cửa không hề nhúc nhích. Chắc là bị khóa rồi."
+
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0014 | NARRATION"

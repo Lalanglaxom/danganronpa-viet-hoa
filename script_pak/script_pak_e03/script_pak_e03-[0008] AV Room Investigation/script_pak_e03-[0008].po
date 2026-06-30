@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,10 +34,10 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể thoát khỏi đây mà còn sống, mình sẽ chẳng\n"
+"thể nhìn những chiếc camera giám sát như trước đây được nữa...\n"
 "<CLT>"
+
 #. <CLT 4>もう何も入ってない…
 #. 空っぽなら誰か捨てればいいのに…
 #. <CLT>
@@ -46,9 +47,10 @@ msgid ""
 "just throw it away...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chẳng còn gì trong này nữa cả. Ai đó thực sự nên vứt nó đi\n"
-"cho rồi...\n"
+"<CLT 4>Chẳng còn gì trong này nữa cả. Ai đó thực sự nên vứt nó đi cho\n"
+"rồi...\n"
 "<CLT>"
+
 #. <CLT 4>ＤＶＤデッキだ…
 #. <CLT>
 msgctxt "0004 | MAKOTO NAEGI"
@@ -58,6 +60,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một đầu đĩa DVD.\n"
 "<CLT>"
+
 #. <CLT 4>でも再生するソフトは何もない。
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -67,14 +70,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì xung quanh đây để bỏ vào đó cả...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0008 | NARRATION"
@@ -82,5 +88,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

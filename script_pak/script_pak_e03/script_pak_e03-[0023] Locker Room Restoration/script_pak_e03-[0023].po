@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,10 +34,11 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi,\n"
+"mình sẽ chẳng bao giờ nhìn những chiếc camera giám sát\n"
+"theo cách như trước đây nữa...\n"
 "<CLT>"
+
 #. <CLT 4>カーペットのシミも消えてるし、
 #. ポスターもグラビアアイドルのものになってる…
 #. <CLT>
@@ -46,9 +48,10 @@ msgid ""
 "bikini model poster is back...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích người\n"
-"mẫu bikini cũng đã quay trở lại...\n"
+"<CLT 4>Vết ố cà phê trên thảm đã biến mất, và tấm áp phích người mẫu\n"
+"bikini cũng đã quay trở lại...\n"
 "<CLT>"
+
 #. <CLT 4>舞園さんたちの時と同じ…
 #. モノクマがやったんだろうな。
 #. <CLT>
@@ -60,14 +63,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Cũng y hệt như với Sayaka. Chắc chắn là do Monokuma làm rồi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>男子更衣室から出ますか？
 #. <CLT>
 msgctxt "0007 | NARRATION"

@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,10 +34,11 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi,\n"
+"mình sẽ chẳng bao giờ nhìn những chiếc camera giám sát\n"
+"theo cách như trước đây nữa...\n"
 "<CLT>"
+
 #. <CLT 4>これは…モノクマの像か…
 #. こんな物…誰が作ったんだよ…
 #. <CLT>
@@ -46,9 +48,10 @@ msgid ""
 "make something like this?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là... tượng Monokuma sao? Ai lại muốn đi làm một thứ\n"
-"như thế này cơ chứ?\n"
+"<CLT 4>Đây là... tượng Monokuma sao? Ai lại muốn đi làm một thứ như thế\n"
+"này cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これは…ビーナス像か…
 #. 美術室らしいな…
 #. <CLT>
@@ -58,9 +61,10 @@ msgid ""
 "in an art room...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là... tượng thần Vệ Nữ. Có vẻ đúng là những thứ hay\n"
-"thấy trong phòng mỹ thuật rồi...\n"
+"<CLT 4>Đó là... tượng thần Vệ Nữ. Có vẻ đúng là những thứ hay thấy\n"
+"trong phòng mỹ thuật rồi...\n"
 "<CLT>"
+
 #. <CLT 4>壁一面に絵が張られている…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -70,6 +74,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có những bức tranh treo dọc khắp các bức tường.\n"
 "<CLT>"
+
 #. <CLT 4>これも…芸術なのかな？
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -79,6 +84,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Tất cả những thứ này đều là tác phẩm nghệ thuật thủ công à?\n"
 "<CLT>"
+
 #. <CLT 4>これって、仁王像だよな…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -88,6 +94,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đây là một bức tượng Nio.\n"
 "<CLT>"
+
 #. <CLT 4>デッサン用の仁王像なんて…
 #. 聞いた事ないぞ。
 #. <CLT>
@@ -97,9 +104,10 @@ msgid ""
 "for life drawing classes or whatever...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình chưa từng nghe nói về việc có ai đó dùng tượng Nio để\n"
-"làm mẫu cho các lớp vẽ hình họa hay đại loại thế cả...\n"
+"<CLT 4>Mình chưa từng nghe nói về việc có ai đó dùng tượng Nio để làm\n"
+"mẫu cho các lớp vẽ hình họa hay đại loại thế cả...\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーがある…
 #. <CLT>
 msgctxt "0009 | MAKOTO NAEGI"
@@ -109,6 +117,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là một cái tủ đồ.\n"
 "<CLT>"
+
 #. <CLT 4>気になる物はないな…
 #. <CLT>
 msgctxt "0010 | MAKOTO NAEGI"
@@ -118,14 +127,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì quá đặc biệt về nó cả.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0013 | NARRATION"

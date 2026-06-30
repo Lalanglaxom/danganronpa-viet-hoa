@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện. Tớ\n"
-"thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Tớ thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…
 #. 壊すのがダメならレンズをふさいでやろうか…
 #. <CLT>
@@ -36,6 +37,7 @@ msgstr ""
 "<CLT 4>Một chiếc camera giám sát... Nếu không thể đập phá nó, có lẽ ít\n"
 "nhất tớ cũng có thể che cái ống kính lại.\n"
 "<CLT>"
+
 #. <CLT 4>…試す勇気はないけど。
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -45,6 +47,7 @@ msgid ""
 msgstr ""
 "<CLT 4>...Thôi, tớ vẫn chưa đủ can đảm để thử làm thế đâu.\n"
 "<CLT>"
+
 #. <CLT 4>最近、あんまり時計を見なくなった。
 #. 意味がないってわかったからかな…
 #. <CLT>
@@ -54,9 +57,10 @@ msgid ""
 "what's the point?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dạo này tớ không còn nhìn đồng hồ quá nhiều nữa. Ý tớ là,\n"
-"làm vậy thì có ích gì đâu cơ chứ?\n"
+"<CLT 4>Dạo này tớ không còn nhìn đồng hồ quá nhiều nữa. Ý tớ là, làm\n"
+"vậy thì có ích gì đâu cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これがクセになったら…
 #. ここから出たとき苦労しそうだ…
 #. <CLT>
@@ -66,17 +70,20 @@ msgid ""
 "breaking it once I get out of here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ hy vọng việc đó không trở thành thói quen. Tớ có thể sẽ gặp khó khăn\n"
-"để từ bỏ nó một khi thoát được khỏi đây...\n"
+"<CLT 4>Tớ hy vọng việc đó không trở thành thói quen. Tớ có thể sẽ gặp\n"
+"khó khăn để từ bỏ nó một khi thoát được khỏi đây...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0008 | NARRATION"

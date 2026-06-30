@@ -21,17 +21,20 @@ msgid ""
 "hot spring.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bồn tắm này khổng lồ thật... Cảm giác gần giống như đang ở\n"
-"một suối nước nóng thực thụ vậy.\n"
+"<CLT 4>Bồn tắm này khổng lồ thật... Cảm giác gần giống như đang ở một\n"
+"suối nước nóng thực thụ vậy.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>大浴場から出ますか？
 #. <CLT>
 msgctxt "0004 | NARRATION"

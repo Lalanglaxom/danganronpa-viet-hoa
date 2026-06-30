@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>妙な威圧感がある…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -32,9 +33,10 @@ msgid ""
 "me.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể không cảm thấy như thể nó đang cố đe dọa\n"
-"mình vậy.\n"
+"<CLT 4>Mình không thể ngăn bản thân cảm thấy như nó đang cố hăm\n"
+"dọa mình.\n"
 "<CLT>"
+
 #. <CLT 4>あって当たり前か。
 #. 重火器とセットの監視カメラなんて…
 #. <CLT>
@@ -44,9 +46,10 @@ msgid ""
 "heavy weaponry.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ý mình là... đó là một chiếc camera giám sát được trang bị\n"
-"cả vũ khí hạng nặng cơ mà.\n"
+"<CLT 4>Ý mình là... đó là một chiếc camera giám sát được trang bị cả vũ\n"
+"khí hạng nặng cơ mà.\n"
 "<CLT>"
+
 #. <CLT 4>もはや扉とさえ呼べない鉄の塊だ。
 #. どうやったって、開きっこない。
 #. <CLT>
@@ -56,9 +59,10 @@ msgid ""
 "don't see any possible way to get it open...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu khó lòng mà gọi cái khối kim loại này là một cánh cửa.\n"
-"Mình chẳng thấy có cách nào khả thi để mở được nó cả...\n"
+"<CLT 4>Cậu khó lòng mà gọi cái khối kim loại này là một cánh cửa. Mình\n"
+"chẳng thấy có cách nào khả thi để mở được nó cả...\n"
 "<CLT>"
+
 #. <CLT 4>レターケースだ…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -68,6 +72,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Đó là hộp thư lúc nãy...\n"
 "<CLT>"
+
 #. <CLT 4>中には…
 #. 死んだみんなの電子生徒手帳が置かれている…
 #. <CLT>
@@ -77,9 +82,10 @@ msgid ""
 "placed inside.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sổ tay của tất cả những người đã bỏ mạng cho đến nay đã\n"
-"được đặt vào bên trong.\n"
+"<CLT 4>Sổ tay của tất cả những người đã bỏ mạng cho đến nay đã được đặt\n"
+"vào bên trong.\n"
 "<CLT>"
+
 #. <CLT 4>妙な威圧感がある…
 #. <CLT>
 msgctxt "0007 | MAKOTO NAEGI"
@@ -88,9 +94,10 @@ msgid ""
 "me.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể không cảm thấy như thể nó đang cố đe dọa\n"
-"mình vậy.\n"
+"<CLT 4>Mình không thể ngăn bản thân cảm thấy như nó đang cố hăm\n"
+"dọa mình.\n"
 "<CLT>"
+
 #. <CLT 4>あって当たり前か。
 #. 重火器とセットの監視カメラなんて…
 #. <CLT>
@@ -100,17 +107,20 @@ msgid ""
 "heavy weaponry.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ý mình là... đó là một chiếc camera giám sát được trang bị\n"
-"cả vũ khí hạng nặng cơ mà.\n"
+"<CLT 4>Ý mình là... đó là một chiếc camera giám sát được trang bị cả vũ\n"
+"khí hạng nặng cơ mà.\n"
 "<CLT>"
+
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0011 | NARRATION"
@@ -118,5 +128,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

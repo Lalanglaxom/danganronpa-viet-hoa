@@ -21,17 +21,20 @@ msgid ""
 "swimming around inside...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một bể cá. Có một đàn cá nhỏ đang bơi lội tung tăng\n"
-"bên trong...\n"
+"<CLT 4>Đó là một bể cá. Có một đàn cá nhỏ đang bơi lội tung tăng bên\n"
+"trong...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0004 | NARRATION"

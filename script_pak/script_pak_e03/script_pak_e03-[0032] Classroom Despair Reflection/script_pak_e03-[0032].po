@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện. Tớ\n"
-"thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Tớ thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで…黒幕が…
 #. <CLT>
@@ -33,9 +34,10 @@ msgid ""
 "of that surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thậm chí ngay lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia\n"
-"của chiếc camera giám sát đó...\n"
+"<CLT 4>Thậm chí ngay lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia của\n"
+"chiếc camera giám sát đó...\n"
 "<CLT>"
+
 #. <CLT 4>そう思うとムカツクけど、放っておくしかない…
 #. <CLT>
 msgctxt "0003 | MAKOTO NAEGI"
@@ -44,9 +46,10 @@ msgid ""
 "nothing I can really do about it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ nghĩ đến thôi đã khiến tớ thấy bồn chồn rồi... nhưng tớ\n"
-"thực sự chẳng thể làm gì được cả.\n"
+"<CLT 4>Chỉ nghĩ đến thôi đã khiến tớ thấy bồn chồn rồi... nhưng tớ thực\n"
+"sự chẳng thể làm gì được cả.\n"
 "<CLT>"
+
 #. <CLT 4>最近、あんまり時計を見なくなった。
 #. 意味がないってわかったからかな…
 #. <CLT>
@@ -56,9 +59,10 @@ msgid ""
 "what's the point?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dạo này tớ không còn nhìn đồng hồ quá nhiều nữa. Ý tớ là,\n"
-"làm vậy thì có ích gì đâu cơ chứ?\n"
+"<CLT 4>Dạo này tớ không còn nhìn đồng hồ quá nhiều nữa. Ý tớ là, làm\n"
+"vậy thì có ích gì đâu cơ chứ?\n"
 "<CLT>"
+
 #. <CLT 4>これも慣れってヤツか、
 #. なんだか虚しいな…
 #. <CLT>
@@ -68,9 +72,10 @@ msgid ""
 "It's a pretty empty feeling...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có lẽ đây là lúc tớ dần quen với việc ở nơi này rồi nhỉ?\n"
-"Đó là một cảm giác khá trống rỗng...\n"
+"<CLT 4>Có lẽ đây là lúc tớ dần quen với việc ở nơi này rồi nhỉ? Đó là\n"
+"một cảm giác khá trống rỗng...\n"
 "<CLT>"
+
 #. <CLT 4>ここにも鉄板か…
 #. 開いている窓には期待出来ないのかな…
 #. <CLT>
@@ -80,9 +85,10 @@ msgid ""
 "find an open window anywhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Lại một tấm kim loại nữa. Tớ đoán mình không nên mong chờ\n"
-"tìm thấy một chiếc cửa sổ mở ở bất cứ đâu...\n"
+"<CLT 4>Lại một tấm kim loại nữa. Tớ đoán mình không nên mong chờ tìm\n"
+"thấy một chiếc cửa sổ mở ở bất cứ đâu...\n"
 "<CLT>"
+
 #. <CLT 4>ここにも鉄板か…
 #. 開いている窓には期待出来ないのかな…
 #. <CLT>
@@ -92,17 +98,20 @@ msgid ""
 "find an open window anywhere...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Lại một tấm kim loại nữa. Tớ đoán mình không nên mong chờ\n"
-"tìm thấy một chiếc cửa sổ mở ở bất cứ đâu...\n"
+"<CLT 4>Lại một tấm kim loại nữa. Tớ đoán mình không nên mong chờ tìm\n"
+"thấy một chiếc cửa sổ mở ở bất cứ đâu...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0010 | NARRATION"
@@ -112,14 +121,17 @@ msgid ""
 msgstr ""
 "<CLT 23>Rời khỏi khu vực này?\n"
 "<CLT>"
+
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0013 | NARRATION"

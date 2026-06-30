@@ -21,9 +21,10 @@ msgid ""
 "much rather be able to watch regular TV...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất\n"
-"hiện. Mình thà được xem tivi bình thường còn hơn...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Mình thà được xem tivi bình thường còn hơn...\n"
 "<CLT>"
+
 #. <CLT 4>ここから出ても、
 #. しばらくは監視カメラがトラウマになりそうだな…
 #. <CLT>
@@ -33,10 +34,11 @@ msgid ""
 "at surveillance cameras the same way again...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi, mình sẽ\n"
-"chẳng bao giờ nhìn những chiếc camera giám sát theo cách như\n"
-"trước đây nữa...\n"
+"<CLT 4>Cứ cho là mình có thể rời khỏi đây mà vẫn còn mạng đi,\n"
+"mình sẽ chẳng bao giờ nhìn những chiếc camera giám sát\n"
+"theo cách như trước đây nữa...\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のドアだ。
 #. ボクじゃロックを外せないから、入れないな…
 #. <CLT>
@@ -49,6 +51,7 @@ msgstr ""
 "<CLT 4>Cánh cửa dẫn đến phòng thay đồ nữ. Mình không có cách nào mở\n"
 "khóa nó được, nên dù có muốn mình cũng chẳng thể vào trong.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは男子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳で開けられるはず…
 #. <CLT>
@@ -58,9 +61,10 @@ msgid ""
 "my e-Handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Máy đọc thẻ phòng thay đồ nam. Mình có thể mở nó bằng cách\n"
-"sử dụng sổ học sinh điện tử của mình.\n"
+"<CLT 4>Máy đọc thẻ phòng thay đồ nam. Mình có thể mở nó bằng cách sử\n"
+"dụng sổ học sinh điện tử của mình.\n"
 "<CLT>"
+
 #. <CLT 4>こっちは女子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳じゃ開けられないはず…
 #. <CLT>
@@ -73,6 +77,7 @@ msgstr ""
 "<CLT 4>Máy đọc thẻ phòng thay đồ nữ. Mình được ghi nhận là \"nam\" trong\n"
 "sổ học sinh điện tử, nên nó không thể mở cánh cửa này.\n"
 "<CLT>"
+
 #. <CLT 4>これって…本物の銃だよな？
 #. なんでこんなものがあるんだよ…
 #. <CLT>
@@ -82,9 +87,10 @@ msgid ""
 "here...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là... súng thật sao? Tại sao lại có một thứ như thế ở\n"
-"đây cơ chứ...?\n"
+"<CLT 4>Đó là... súng thật sao? Tại sao lại có một thứ như thế ở đây cơ\n"
+"chứ...?\n"
 "<CLT>"
+
 #. <CLT 4>この棚には…
 #. 水泳用の色々な用具が並んでいる…
 #. <CLT>
@@ -94,9 +100,10 @@ msgid ""
 "the shelf.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một loạt các vật dụng liên quan đến hồ bơi khác nhau\n"
-"trên chiếc kệ này.\n"
+"<CLT 4>Có một loạt các vật dụng liên quan đến hồ bơi khác nhau trên\n"
+"chiếc kệ này.\n"
 "<CLT>"
+
 #. <CLT 4>浮き輪がある…
 #. <CLT>
 msgctxt "0008 | MAKOTO NAEGI"
@@ -106,14 +113,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Một cái phao bơi...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0011 | NARRATION"
