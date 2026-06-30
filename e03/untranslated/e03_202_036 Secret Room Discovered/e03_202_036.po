@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 23>「ドターーンッ！！」
 #. <CLT>
@@ -81,7 +82,7 @@ msgstr "...là một căn phòng bí mật."
 #. ここが…その隠し部屋…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "So this is the secret room..."
-msgstr "Đây là... căn phòng bí mật đó sao..."
+msgstr "Đây là căn phòng bí mật đó sao..."
 
 #. ここに…何があるんだ？
 msgctxt "0011 | MAKOTO NAEGI"
@@ -133,7 +134,7 @@ msgstr "Chỉ có thứ này là... không bị phủ bụi."
 #. …つい最近、誰かが手にした？
 msgctxt "0017 | MAKOTO NAEGI"
 msgid "Has someone been looking at it recently...?"
-msgstr "…Gần đây có ai đã cầm qua nó sao?"
+msgstr "Gần đây có ai đã cầm qua nó sao...?"
 
 #. <CLT 4>ボクは何気なく、そのファイルを手にした…
 #. <CLT>
@@ -171,7 +172,7 @@ msgstr "Cái gì thế này...?"
 #. ここから出てはいけない…？
 msgctxt "0022 | MAKOTO NAEGI"
 msgid "\"You must not leave.\""
-msgstr "Bạn không được rời khỏi đây...?"
+msgstr "\"Cậu không được rời khỏi đây.\""
 
 #. なんだか…変なメモだな…
 msgctxt "0023 | MAKOTO NAEGI"
@@ -186,7 +187,7 @@ msgid ""
 "leave<CLT>.\" But \"<CLT 3>you must not leave<CLT>\"?"
 msgstr ""
 "Nếu là <CLT 3>“Tớ không thể rời khỏi đây”<CLT> thì còn hiểu được, nhưng...\n"
-"<CLT 3>“Bạn không được rời khỏi đây”<CLT>... là sao?"
+"<CLT 3>“Cậu không được rời khỏi đây”<CLT>... là sao?"
 
 #. ………………
 msgctxt "0025 | MAKOTO NAEGI"
@@ -220,7 +221,7 @@ msgstr "<CLT 4>Như thể là déjà vu...<CLT>"
 #. <CLT 4><CLT><CLT 3>『ここから出てはいけない』<CLT><CLT 4>って言葉…<CLT>
 msgctxt "0029 | MAKOTO NAEGI"
 msgid "<CLT 4>Those words...<CLT><CLT 3>you must not leave<CLT><CLT 4>...<CLT>"
-msgstr "<CLT 4><CLT><CLT 3>“Bạn không được rời khỏi đây”<CLT><CLT 4>... mấy từ này...<CLT>"
+msgstr "<CLT 4><CLT><CLT 3>“Cậu không được rời khỏi đây”<CLT><CLT 4>... mấy từ này...<CLT>"
 
 #. <CLT 4>ボクは…前にも、どこかでこの言葉を…
 #. <CLT>
@@ -238,7 +239,7 @@ msgstr "Nhưng..."
 #. 思い…出せない……
 msgctxt "0032 | MAKOTO NAEGI"
 msgid "I can't quite remember..."
-msgstr "Tớ... không thể nhớ ra được……"
+msgstr "Mình... không thể nhớ ra được."
 
 #. <CLT 4>ボクは何を知ってる…？
 #. <CLT>
@@ -270,7 +271,7 @@ msgctxt "0036 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I—\n"
 "<CLT>"
-msgstr "<CLT 4>Mình………<CLT>"
+msgstr "<CLT 4>Mình…<CLT>"
 
 #. <CLT 4>頭の中で妙な音が鳴った。
 #. <CLT>
@@ -361,7 +362,7 @@ msgid ""
 "<CLT 4>Apparently, something hit me, and I lost\n"
 "consciousness.\n"
 "<CLT>"
-msgstr "<CLT 4>Có vẻ như… mình bị đánh và ngất đi…<CLT>"
+msgstr "<CLT 4>Có vẻ như… mình bị đánh và ngất điCLT>"
 
 #. <CLT 4>…という事だけはわかった。
 #. <CLT>
@@ -369,7 +370,7 @@ msgctxt "0049 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>That's all I understood.\n"
 "<CLT>"
-msgstr "<CLT 4>…Chỉ biết có vậy.<CLT>"
+msgstr "<CLT 4Chỉ biết có vậy.<CLT>"
 
 #. <CLT 4>頭部の鈍い痛みが、そう物語っていた。
 #. <CLT>
@@ -421,7 +422,7 @@ msgctxt "0056 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...even the note that had fallen on the floor.\n"
 "<CLT>"
-msgstr "<CLT 4>…ngay cả mảnh giấy rơi trên sàn cũng…<CLT>"
+msgstr "<CLT 4>…ngay cả mảnh giấy rơi trên sàn cũng.<CLT>"
 
 #. <CLT 4>すべてが、なくなっている…？
 #. <CLT>
@@ -495,7 +496,7 @@ msgctxt "0066 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Is this...an ethernet port?\n"
 "<CLT>"
-msgstr "<CLT 4>Cái này là… cổng mạng LAN à…?<CLT>"
+msgstr "<CLT 4>Cái này là… cổng ethernet à…?<CLT>"
 
 #. <CLT 4>って事は、ここでなら
 #. ネットワークに接続できるのかも…

@@ -6,15 +6,16 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. ふぅ、それにしても…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Hmm..."
-msgstr "Hừm, dù sao thì..."
+msgstr "Hừm..."
 
 #. <CLT 4>いくつか発見はあったけど、
 #. 手掛かりどころか、妙な発見ばっかりだったな…
@@ -25,9 +26,8 @@ msgid ""
 "But I dunno if any of it was an actual clue...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã khám phá ra khá nhiều thứ. Nhưng toàn là mấy thứ\n"
-"kỳ lạ... Mình không biết liệu có cái nào trong đó là manh\n"
-"mối thật sự không nữa...<CLT>"
+"<CLT 4>Mình đã khám phá ra khá nhiều thứ. Nhưng cái nào cũng kỳ lạ...\n"
+"Không biết liệu có cái nào là manh mối thật sự không nữa...<CLT>"
 
 #. <CLT 4>なんだか混乱してきたし…
 #. <CLT>
@@ -49,4 +49,4 @@ msgstr ""
 #. …いったん食堂に戻ろうかな。
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "For now, I should head to the dining hall."
-msgstr "…Tạm thời thì mình nên quay lại nhà ăn thôi."
+msgstr "Tạm thời thì mình nên quay lại nhà ăn thôi."

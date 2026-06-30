@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>終わった…
 #. <CLT>
@@ -17,7 +18,9 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>It's over...\n"
 "<CLT>"
-msgstr "<CLT 4>Kết thúc rồi...<CLT>"
+msgstr ""
+"<CLT 4>Kết thúc rồi...\n"
+"<CLT>"
 
 #. <CLT 4>３度目の処刑が終わった…
 #. <CLT>
@@ -25,7 +28,7 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>The third execution...is over.\n"
 "<CLT>"
-msgstr "<CLT 4>Lần hành quyết thứ ba đã kết thúc...<CLT>"
+msgstr "<CLT 4>Lần hành quyết thứ ba... đã kết thúc.<CLT>"
 
 #. <CLT 4>セレスさんの処刑が終わった…
 #. <CLT>
@@ -44,7 +47,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Vì Celeste đã giết bạn bè của mình, mình không thể thương hại cô\n"
-"ấy được... nhưng...<CLT>"
+"ấy được. Nhưng...<CLT>"
 
 #. <CLT 4>それでも、彼女もまた仲間には違いなかった…
 #. <CLT>
@@ -68,7 +71,7 @@ msgstr "<CLT 4>Vậy mà, hắn lại có thể dễ dàng làm vậy...!<CLT>"
 #. いやはや困ったもんだねぇ…
 msgctxt "0007 | MONOKUMA"
 msgid "Isn't it just awful?"
-msgstr "Chà chà, thật là đáng thương quá đi mà..."
+msgstr "Thật là đáng thương quá đi."
 
 #. 今回も、外の世界との繋がりを絶てなかったせいで、
 #. またまた殺人が起きちゃったよ…
@@ -85,7 +88,7 @@ msgctxt "0009 | MONOKUMA"
 msgid ""
 "You guys are still young! You need to place more value\n"
 "on your lives!"
-msgstr "Hãy biết trân trọng mạng sống hơn đi! Các ngươi còn trẻ mà!"
+msgstr "Các em còn trẻ mà! Hãy biết trân trọng mạng sống hơn đi chứ!"
 
 #. やれやれ…オマエラが次世代を担う<CLT 3>“希望”<CLT>になるのは
 #. いつの事になるんだろうねぇ？
@@ -94,7 +97,7 @@ msgid ""
 "Jeez... And here I thought you guys were gonna pass\n"
 "the torch of <CLT 3>hope<CLT> to the next generation!"
 msgstr ""
-"Chậc chậc... Ta cứ tưởng các ngươi sẽ là <CLT 3>“Hy vọng”<CLT> gánh vác thế\n"
+"Chậc... Ta cứ tưởng các em sẽ là <CLT 3>“hy vọng”<CLT> gánh vác thế\n"
 "hệ tương lai cơ đấy?"
 
 #. な、何が希望だって！！
@@ -114,16 +117,14 @@ msgid ""
 "You're all the embodiment of hope, whether you like it\n"
 "or not."
 msgstr ""
-"Dù ngươi có muốn hay không, thì các ngươi vẫn là hiện thân của\n"
+"Dù em có muốn hay không, thì các em vẫn là hiện thân của\n"
 "hy vọng..."
 
 #. そんなオマエラを絶望に叩き落とすのが、
 #. マイ宿命！
 msgctxt "0013 | MONOKUMA"
 msgid "And it's my destiny to knock you down one by one!"
-msgstr ""
-"Và việc kéo các ngươi xuống hố tuyệt vọng chính là định mệnh của\n"
-"ta!"
+msgstr "Và định mệnh của ta chính là kéo tụi bây xuống từng đứa một!"
 
 #. 悲しいけど、これって避けられぬ現実なのよね。
 msgctxt "0014 | MONOKUMA"
@@ -146,7 +147,7 @@ msgid ""
 "How long are you gonna make us keep going through\n"
 "this!? What do you want from us!?"
 msgstr ""
-"Ngươi định bắt chúng tớ phải trải qua chuyện này đến bao giờ\n"
+"Ngươi định bắt chúng ta phải trải qua chuyện này đến bao giờ\n"
 "nữa! Rốt cuộc mục đích của ngươi là gì!"
 
 #. 聞き飽きたって！
@@ -194,18 +195,18 @@ msgstr "Hả? Có chuyện gì vậy?"
 msgctxt "0023 | KYOUKO KIRIGIRI"
 msgid "I'll answer your question, if you answer mine."
 msgstr ""
-"Trước khi trả lời câu hỏi của ngươi... hãy trả lời câu hỏi của\n"
-"tớ đã."
+"Trước khi trả lời câu hỏi của mi... hãy trả lời câu hỏi của\n"
+"ta đã."
 
 #. あなたは…何をしたの…？
 msgctxt "0024 | KYOUKO KIRIGIRI"
 msgid "What did you do?"
-msgstr "Ngươi đã... làm cái gì vậy...?"
+msgstr "Ngươi đã làm gì?"
 
 #. あなたは、私の体に何をしたの？
 msgctxt "0025 | KYOUKO KIRIGIRI"
 msgid "What did you...do to me?"
-msgstr "Ngươi đã làm gì với cơ thể tớ?"
+msgstr "Ngươi đã làm gì... với ta?"
 
 #. …えっ！？
 msgctxt "0026 | MONOKUMA"
@@ -215,7 +216,7 @@ msgstr "...Cái gì!?"
 #. 答えて…あなたは私の体に何をしたの？
 msgctxt "0027 | KYOUKO KIRIGIRI"
 msgid "Answer me. What did you do to my body?"
-msgstr "Trả lời đi... Ngươi đã làm gì với cơ thể tớ?"
+msgstr "Trả lời đi... Ngươi đã làm gì với cơ thể ta?"
 
 #. あわわわ…ドキドキ…
 #. な、何をしたって…ど、どういう意味さ…！
@@ -224,7 +225,7 @@ msgid ""
 "Uwaaah! Oh man, oh jeez... Oh man, oh jeez! What do\n"
 "you mean, what did I...do!?"
 msgstr ""
-"Uwaaah! Ôi trời, ôi chao... Ôi trời, ôi chao! Ngươi... ngươi nói\n"
+"Uwaaah! Ôi trời, ôi chao... Ôi trời, ôi chao! Em nói\n"
 "làm gì là làm cái gì cơ...!"
 
 #. ボ、ボクは知らんよぉ…
@@ -256,7 +257,7 @@ msgctxt "0033 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>What was that just now...?\n"
 "<CLT>"
-msgstr "<CLT 4>G-Gì vậy...? Cuộc đối thoại vừa rồi là sao...?<CLT>"
+msgstr "<CLT 4>Cuộc đối thoại vừa rồi là sao...?<CLT>"
 
 #. <CLT 4>黒幕が霧切さんの体に何かしたって…
 #. <CLT>
@@ -272,7 +273,7 @@ msgctxt "0035 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>What does that mean...?\n"
 "<CLT>"
-msgstr "<CLT 4>Chuyện đó... nghĩa là sao...?<CLT>"
+msgstr "<CLT 4>Chuyện đó... nghĩa là sao?<CLT>"
 
 #. なんだか…バツが悪くなってきたから、
 #. そろそろ退散しよっかな…
@@ -291,7 +292,7 @@ msgid ""
 "Meanwhile, you guys can go on enjoying your school\n"
 "life."
 msgstr ""
-"Trong lúc đó, các ngươi cứ tiếp tục tận hưởng cuộc sống học\n"
+"Trong lúc đó, các em cứ tiếp tục tận hưởng cuộc sống học\n"
 "đường đi nhé."
 
 #. 寂しくなったらいつでも呼んでよ。
@@ -307,7 +308,7 @@ msgstr ""
 #. うぷぷ…まったね～！！
 msgctxt "0039 | MONOKUMA"
 msgid "Puhuhu... See ya!"
-msgstr "U pư pư... Hẹn gặp lại nhé~!"
+msgstr "U pư pư... Tạm biệt~!"
 
 #. <CLT 4>そして、モノクマは去っていった。
 #. 絶望に打ちひしがれるボクらを残して…
@@ -391,4 +392,6 @@ msgctxt "0051 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>We left the courtroom and rushed to the dressing room.\n"
 "<CLT>"
-msgstr "<CLT 4>Chúng mình rời khỏi lớp xét xử và vội vã chạy đến phòng thay đồ.<CLT>"
+msgstr ""
+"<CLT 4>Chúng mình rời khỏi lớp xét xử và vội vã chạy đến \n"
+"phòng thay đồ.<CLT>"

@@ -6,10 +6,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en-US\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>そっと、体育館の中を覗き込んだ…
 #. <CLT>
@@ -97,7 +98,7 @@ msgstr "<CLT 4>Đến mức mình quên cả cử động, hay thậm chí là t
 #. オマエ…どういうつもり？
 msgctxt "0010 | MONOKUMA"
 msgid "Why you...! What do you think you're doing?"
-msgstr "Ngươi... ngươi nghĩ mình đang làm cái gì thế hả?"
+msgstr "Ngươi...! ngươi nghĩ mình đang làm cái gì thế hả?"
 
 #. ………………
 msgctxt "0011 | SAKURA OOGAMI"
@@ -152,7 +153,7 @@ msgstr "Ta sẽ... chống lại ngươi!"
 #. ふーん、あっそ…
 msgctxt "0020 | MONOKUMA"
 msgid "Hmm... Okay."
-msgstr "Hừm... Thế à..."
+msgstr "Hừm... Thế à."
 
 #. でもさ…そんな事して、どうなるかわかってるの？
 msgctxt "0021 | MONOKUMA"
@@ -234,5 +235,5 @@ msgid ""
 "<CLT 23>You received the <CLT><CLT 3>Super Robo Justice<CLT><CLT 23> present.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn đã nhận được quà <CLT><CLT 3>Người Máy Công Lý Siêu Hợp Kim<CLT><CLT 23>. Bạn có thể\n"
+"<CLT 23>Bạn đã nhận được quà <CLT><CLT 3>Siêu Robo Công Lý<CLT><CLT 23>. Bạn có thể\n"
 "kiểm tra trong menu quà tặng.<CLT>"
