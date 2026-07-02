@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. 死体も血痕も…何もなくなってる…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "The bodies, the bloodstains... They're all gone."
-msgstr "Cả những cái xác, lẫn vết máu... Tất cả đều biến mất rồi."
+msgstr ""
 
 #. <CLT 4>舞園さんや不二咲クンの時と同じか。
 #. これも…モノクマがやったんだろうな…
@@ -26,9 +25,6 @@ msgid ""
 "responsible, I'm sure...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cũng giống như trường hợp của Sayaka và Chihiro vậy. Chắc chắn\n"
-"là do Monokuma làm rồi...\n"
-"<CLT>"
 
 #. <CLT 4>壁に…木槌がある…
 #. <CLT>
@@ -37,8 +33,6 @@ msgid ""
 "<CLT 4>There are wooden mallets hanging on the wall.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có những chiếc vồ gỗ treo trên tường.\n"
-"<CLT>"
 
 #. <CLT 4>今回の事件には…関係なさそうだ…
 #. <CLT>
@@ -47,8 +41,6 @@ msgid ""
 "<CLT 4>But I don't think they're involved with this...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng mình không nghĩ chúng có liên quan đến việc này...\n"
-"<CLT>"
 
 #. <CLT 4>壁に…木槌がある…
 #. 彫刻作成なんかで使うんだろうか…
@@ -59,8 +51,8 @@ msgid ""
 "to guess, I'd say they use them for making sculptures.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có những chiếc vồ gỗ treo trên tường. Nếu phải đoán, mình sẽ nói\n"
-"rằng họ dùng chúng để tạo ra các tác phẩm điêu khắc.\n"
+"<CLT 4>Có những chiếc vồ gỗ đang treo trên tường. Nếu phải đoán, mình\n"
+"sẽ nói rằng họ dùng chúng để tạc tượng.\n"
 "<CLT>"
 
 #. <CLT 4>台車だ…
@@ -72,9 +64,6 @@ msgid ""
 "sculptures around.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là xe đẩy hàng. Có vẻ như nó dùng để di chuyển các bức tượng\n"
-"đi xung quanh.\n"
-"<CLT>"
 
 #. <CLT 4>今回の事件には…関係ないな…
 #. <CLT>
@@ -83,8 +72,6 @@ msgid ""
 "<CLT 4>But I don't think it's involved with this...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng mình không nghĩ nó có liên quan đến việc này...\n"
-"<CLT>"
 
 #. <CLT 4>台車だ…
 #. 山田クンが…これで石丸クンを運んで…
@@ -94,8 +81,6 @@ msgid ""
 "<CLT 4>It's the dolly that Hifumi used to move Taka...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là chiếc xe đẩy mà Hifumi đã dùng để di chuyển Taka...\n"
-"<CLT>"
 
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
@@ -114,5 +99,5 @@ msgid ""
 "<CLT 23>Leave the repository?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi nhà kho mỹ thuật?\n"
+"<CLT 23>Rời khỏi kho chứa đồ?\n"
 "<CLT>"

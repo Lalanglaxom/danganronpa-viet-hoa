@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. …元通りになってる…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Everything's back to normal..."
-msgstr "Mọi thứ đã trở lại bình thường rồi..."
+msgstr ""
 
 #. <CLT 4>舞園さんや不二咲クンの時と同じか。
 #. これも…モノクマがやったんだろうな…
@@ -26,15 +25,12 @@ msgid ""
 "responsible, I'm sure...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cũng giống như trường hợp của Sayaka và Chihiro vậy. Chắc chắn\n"
-"là do Monokuma làm rồi...\n"
-"<CLT>"
 
 #. このビニールシート…
 #. 前の石丸クンの事件では使われたけど…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "This tarp...was used when Taka was killed..."
-msgstr "Tấm bạt này... đã được sử dụng khi Taka bị sát hại..."
+msgstr ""
 
 #. <CLT 4>今回の事件には関係なさそうだ。
 #. <CLT>
@@ -43,14 +39,12 @@ msgid ""
 "<CLT 4>But it's unrelated to what's going on now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng nó không liên quan đến những gì đang diễn ra lúc này.\n"
-"<CLT>"
 
 #. このビニールシート…
 #. 前の石丸クンの事件では使われた物だ…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "This tarp...was used when Taka was killed..."
-msgstr "Tấm bạt này... đã được sử dụng khi Taka bị sát hại..."
+msgstr ""
 
 #. <CLT 4>その痕跡はどこにもないけど…
 #. <CLT>
@@ -59,8 +53,6 @@ msgid ""
 "<CLT 4>But there's no way you'd know it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng cậu chẳng có cách nào biết được điều đó đâu.\n"
-"<CLT>"
 
 #. <CLT 4>振り子や車輪やレール…
 #. 実験で使う器具が乱雑にしまわれている。
@@ -71,8 +63,8 @@ msgid ""
 "is scattered all over.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả thiết bị đều đang\n"
-"nằm rải rác khắp nơi.\n"
+"<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả các thiết bị đều\n"
+"đang nằm rải rác khắp nơi.\n"
 "<CLT>"
 
 #. <CLT 4>埃をかぶってるみたいだし…
@@ -84,8 +76,8 @@ msgid ""
 "haven't been used in a long time.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng cũng bị phủ đầy bụi nữa. Rõ ràng là đã lâu rồi không có ai\n"
-"sử dụng chúng.\n"
+"<CLT 4>Chúng cũng đều bị bám đầy bụi nữa. Rõ ràng là chúng đã không\n"
+"được sử dụng trong một thời gian dài rồi.\n"
 "<CLT>"
 
 #. <CLT 4>おそらく…過去の実験結果とか研究資料とか…
@@ -97,8 +89,8 @@ msgid ""
 "or research data...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một đống hồ sơ ở đây. Có lẽ là các tệp thí nghiệm cũ hoặc dữ\n"
-"liệu nghiên cứu...\n"
+"<CLT 4>Có một đống hồ sơ ở đây. Chắc là hồ sơ phòng thí nghiệm cũ hoặc\n"
+"dữ liệu nghiên cứu gì đó...\n"
 "<CLT>"
 
 #. はい

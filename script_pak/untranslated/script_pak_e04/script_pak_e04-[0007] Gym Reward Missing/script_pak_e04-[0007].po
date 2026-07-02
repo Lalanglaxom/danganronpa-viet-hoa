@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. あれ…？
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Huh...?"
-msgstr "Hả...?"
+msgstr ""
 
 #. <CLT 4>壇上の１００億円がなくなってる…
 #. <CLT>
@@ -25,8 +24,6 @@ msgid ""
 "gone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>10 tỷ yên từng được đặt ở đây đã biến mất rồi...\n"
-"<CLT>"
 
 #. <CLT 4>いや…あんな物…
 #. ない方がいいよな…
@@ -36,8 +33,6 @@ msgid ""
 "<CLT 4>But...I think it's better that it's gone.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng mà... mình nghĩ thà nó biến mất đi thì tốt hơn.\n"
-"<CLT>"
 
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"

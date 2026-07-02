@@ -1,0 +1,1394 @@
+========================================================================
+PO VALIDATION REPORT
+Generated: 2026-07-03 05:32:22
+========================================================================
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0000] MonoMono Machine Interaction\script_pak_e04-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0004] Entrance Mailbox Investigation\script_pak_e04-[0004].po
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e04\script_pak_e04-[0005] Trophy Case Investigation\script_pak_e04-[0005].po
+
+[ERROR:1, WARN:1] script_pak_e04\script_pak_e04-[0006] Gym Trophy Exhibits\script_pak_e04-[0006].po
+  ERROR  [clt_tag_integrity] line 137 0013 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation_global] line 80 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Why is something like that on display?'. 'Tại sao một thứ như thế lại được trưng bày nhỉ?' -> script_pak_e04-[0006].po: line 80 0007 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 107 0010 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 165 0016 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 192 0019 | MAKOTO NAEGI | 'Tại sao thứ này lại được trưng bày ở đây chứ...' -> script_pak_e05-[0006].po: line 49 0004 | MAKOTO NAEGI
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0007] Gym Reward Missing\script_pak_e04-[0007].po
+  STRUCT [line_count_match] line 22 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e04\script_pak_e04-[0008] AV Room Investigation\script_pak_e04-[0008].po
+
+[OK] script_pak_e04\script_pak_e04-[0009] School Store Investigation\script_pak_e04-[0009].po
+
+[INFO:1] script_pak_e04\script_pak_e04-[0010] Room Restoration Investigation\script_pak_e04-[0010].po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] script_pak_e04\script_pak_e04-[0011] First Classroom Desk\script_pak_e04-[0011].po
+
+[OK] script_pak_e04\script_pak_e04-[0012] Area Exit Prompt\script_pak_e04-[0012].po
+
+[OK] script_pak_e04\script_pak_e04-[0013] Area Exit Prompt\script_pak_e04-[0013].po
+
+[STRUCT:2, INFO:1] script_pak_e04\script_pak_e04-[0015] Abandoned School Secret\script_pak_e04-[0015].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 122 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 102 0008 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:3, STRUCT:3] script_pak_e04\script_pak_e04-[0016] Archive Room Investigation\script_pak_e04-[0016].po
+  WARN   [duplicate_sentence_translation] line 91 0008 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='But that has nothing to do with my investigation this time...'. 'Dù sao thì nó cũng chẳng có liên quan gì đến vụ án lần này cả...' -> line 91 0008 | MAKOTO NAEGI | 'Nhưng chuyện đó không liên quan gì đến cuộc điều tra lần này của mình cả...' -> line 138 0012 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 138 0012 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='But that has nothing to do with my investigation this time...'. 'Dù sao thì nó cũng chẳng có liên quan gì đến vụ án lần này cả...' -> line 91 0008 | MAKOTO NAEGI | 'Nhưng chuyện đó không liên quan gì đến cuộc điều tra lần này của mình cả...' -> line 138 0012 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 79 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='These are a bunch of investigation reports related to different cold cases.'. 'Đây là một xấp báo cáo điều tra liên quan đến các vụ án chưa có lời giải khác nhau.' -> script_pak_e04-[0016].po: line 79 0007 | MAKOTO NAEGI, script_pak_e04-[0016].po: line 103 0009 | MAKOTO NAEGI | 'Đây đều là những báo cáo điều tra về các vụ án chưa có lời giải sao...' -> script_pak_e05-[0016].po: line 17 0001 | MAKOTO NAEGI | 'Đây là tập hợp các báo cáo điều tra liên quan đến nhiều vụ án chưa có lời giải...' -> script_pak_e06-[0016].po: line 35 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 58 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 178 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[STRUCT:2] script_pak_e04\script_pak_e04-[0017] Locker Room Investigation\script_pak_e04-[0017].po
+  STRUCT [line_count_match] line 95 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 117 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e04\script_pak_e04-[0018] Locker Robo Justice\script_pak_e04-[0018].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='We found Robo Justice stuffed in this locker last time.'. 'Lần trước chúng ta đã tìm thấy Robo Công Lý bị nhét trong chiếc tủ đồ này.' -> script_pak_e04-[0018].po: line 18 0001 | MAKOTO NAEGI, script_pak_e04-[0018].po: line 41 0003 | MAKOTO NAEGI | 'Lần trước, chúng ta đã tìm thấy Robo Justice bị nhồi trong cái tủ đồ này...' -> script_pak_e05-[0018].po: line 18 0001 | MAKOTO NAEGI
+
+[OK] script_pak_e04\script_pak_e04-[0019] Area Exit Prompt\script_pak_e04-[0019].po
+
+[OK] script_pak_e04\script_pak_e04-[0020] Area Exit Prompt\script_pak_e04-[0020].po
+
+[WARN:1, STRUCT:1] script_pak_e04\script_pak_e04-[0021] Secret Room Entry\script_pak_e04-[0021].po
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='It also leads to the secret room. I should probably avoid going in and out of there too much...'. 'Nó cũng dẫn đến căn phòng bí mật. Mình có lẽ nên hạn chế ra vào nơi đó quá nhiều...' -> script_pak_e04-[0021].po: line 29 0002 | MAKOTO NAEGI | 'Nó còn dẫn đến căn phòng bí mật nữa. Mình nghĩ mình nên tránh ra vào chỗ đó quá thường xuyên thì hơn...' -> script_pak_e05-[0021].po: line 27 0002 | MAKOTO NAEGI | 'Nó cũng dẫn tới căn phòng bí mật nữa... Có lẽ mình không nên ra vào đó quá thường xuyên...' -> script_pak_e06-[0021].po: line 27 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e04\script_pak_e04-[0022] Empty Desk Search\script_pak_e04-[0022].po
+
+[WARN:1] script_pak_e04\script_pak_e04-[0023] Boys Locker Poster\script_pak_e04-[0023].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The poster has a super famous supermodel. Her name is Diamond Yuka, I think...'. 'Tấm áp phích vẽ một siêu mẫu cực kỳ nổi tiếng. Tên cô ấy là Diamond Yuka, mình nghĩ vậy...' -> script_pak_e04-[0023].po: line 18 0001 | MAKOTO NAEGI | 'Đây là áp phích của một siêu mẫu siêu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e05-[0022].po: line 18 0001 | MAKOTO NAEGI | 'Trên tấm áp phích là một người mẫu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e06-[0022].po: line 55 0005 | MAKOTO NAEGI
+
+[STRUCT:2] script_pak_e04\script_pak_e04-[0025] Game Room Investigation\script_pak_e04-[0025].po
+  STRUCT [line_count_match] line 123 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 134 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0026] Game Room Revisit\script_pak_e04-[0026].po
+  STRUCT [line_count_match] line 131 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e04\script_pak_e04-[0027] Art Room Statues\script_pak_e04-[0027].po
+
+[WARN:1] script_pak_e04\script_pak_e04-[0028] Art Repository Investigation\script_pak_e04-[0028].po
+  WARN   [duplicate_sentence_translation_global] line 92 0008 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It's the dolly that Hifumi used to move Taka...". 'Đó là chiếc xe đẩy mà Hifumi đã dùng để di chuyển Taka...' -> script_pak_e04-[0028].po: line 92 0008 | MAKOTO NAEGI | 'Đây là chiếc xe đẩy mà Hifumi đã dùng để... vận chuyển Taka...' -> script_pak_e05-[0026].po: line 31 0002 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:1] script_pak_e04\script_pak_e04-[0029] Physics Lab Investigation\script_pak_e04-[0029].po
+  WARN   [duplicate_sentence_translation_global] line 16 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='A huge machine like this... Could it really be *just* an air purifier?'. 'Một cỗ máy khổng lồ thế này... Liệu nó có thực sự *chỉ* là một cái máy lọc không khí không?' -> script_pak_e04-[0029].po: line 16 0001 | MAKOTO NAEGI | 'Một cỗ máy lớn thế này... Có thực sự *chỉ* là máy lọc không khí không vậy?' -> script_pak_e06-[0027].po: line 46 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 51 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e04\script_pak_e04-[0030] Equipment Room Tarp\script_pak_e04-[0030].po
+  WARN   [duplicate_sentence_translation_global] line 16 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Everything's back to normal...". 'Mọi thứ đã trở lại bình thường rồi...' -> script_pak_e04-[0030].po: line 16 0001 | MAKOTO NAEGI | 'Mọi thứ đã trở lại bình thường...' -> script_pak_e05-[0024].po: line 16 0001 | MAKOTO NAEGI, script_pak_e05-[0032].po: line 16 0001 | MAKOTO NAEGI
+
+[OK] script_pak_e04\script_pak_e04-[0031] Area Exit Prompt\script_pak_e04-[0031].po
+
+[OK] script_pak_e04\script_pak_e04-[0032] Area Exit Prompt\script_pak_e04-[0032].po
+
+[OK] script_pak_e04\script_pak_e04-[0033] Locked Office Stairs\script_pak_e04-[0033].po
+
+[OK] script_pak_e04\script_pak_e04-[0034] Infirmary Shelf Search\script_pak_e04-[0034].po
+
+[OK] script_pak_e04\script_pak_e04-[0035] Mastermind Camera Observation\script_pak_e04-[0035].po
+
+[OK] script_pak_e04\script_pak_e04-[0036] Area Exit Choice\script_pak_e04-[0036].po
+
+[WARN:1] script_pak_e04\script_pak_e04-[0037] Grand Piano Investigation\script_pak_e04-[0037].po
+  WARN   [duplicate_sentence_translation_global] line 16 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Is this...a grand piano?'. 'Đây là... một cây đại dương cầm sao?' -> script_pak_e04-[0037].po: line 16 0001 | MAKOTO NAEGI, script_pak_e04-[0037].po: line 31 0003 | MAKOTO NAEGI | 'Đây là... một cây đại dương cầm à?' -> script_pak_e05-[0035].po: line 16 0001 | MAKOTO NAEGI
+
+[OK] script_pak_e04\script_pak_e04-[0038] Area Exit Choice\script_pak_e04-[0038].po
+
+[OK] script_pak_e04\script_pak_e04-[0039] Area Exit Prompt\script_pak_e04-[0039].po
+
+[OK] script_pak_e04\script_pak_e04-[0040] Area Exit Prompt\script_pak_e04-[0040].po
+
+[OK] script_pak_e04\script_pak_e04-[0041] Dormitory Room Checks\script_pak_e04-[0041].po
+
+[OK] script_pak_e04\script_pak_e04-[0042] Area Exit Choice\script_pak_e04-[0042].po
+
+[OK] script_pak_e04\script_pak_e04-[0043] Area Exit Prompt\script_pak_e04-[0043].po
+
+[ERROR:1, STRUCT:2] script_pak_e04\script_pak_e04-[0044] Kitchen Knife Investigation\script_pak_e04-[0044].po
+  ERROR  [clt_tag_integrity] line 60 0005 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 60 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[STRUCT:2] script_pak_e04\script_pak_e04-[0045] Kitchen Knife Investigation\script_pak_e04-[0045].po
+  STRUCT [line_count_match] line 48 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 67 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e04\script_pak_e04-[0046] Area Exit Prompt\script_pak_e04-[0046].po
+
+[WARN:2, STRUCT:1] script_pak_e04\script_pak_e04-[0047]\script_pak_e04-[0047].po
+  WARN   [duplicate_sentence_translation] line 81 0006 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="Of course...I don't think that's worth the cost of having to live here...". 'Tất nhiên... tớ không nghĩ điều đó xứng đáng với cái giá phải trả là phải sống ở đây đâu...' -> line 81 0006 | MAKOTO NAEGI | 'Tất nhiên... mình không nghĩ điều đó xứng đáng với cái giá phải trả là phải sống ở đây đâu...' -> line 105 0008 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 105 0008 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="Of course...I don't think that's worth the cost of having to live here...". 'Tất nhiên... tớ không nghĩ điều đó xứng đáng với cái giá phải trả là phải sống ở đây đâu...' -> line 81 0006 | MAKOTO NAEGI | 'Tất nhiên... mình không nghĩ điều đó xứng đáng với cái giá phải trả là phải sống ở đây đâu...' -> line 105 0008 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:2, STRUCT:3] script_pak_e04\script_pak_e04-[0048] Leave Area Prompt\script_pak_e04-[0048].po
+  ERROR  [clt_tag_integrity] line 73 0006 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation] line 37 0003 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> line 61 0005 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 61 0005 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> line 61 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 37 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 61 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 73 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:4, STRUCT:3] script_pak_e04\script_pak_e04-[0048]\script_pak_e04-[0048].po
+  ERROR  [clt_tag_integrity] line 73 0006 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation] line 37 0003 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> line 61 0005 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 61 0005 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> line 61 0005 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 37 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI | 'Cái ghế mát-xa này...' -> script_pak_e05-[0057].po: line 28 0002 | MAKOTO NAEGI | 'Chiếc ghế mát-xa...' -> script_pak_e06-[0054].po: line 49 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 61 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI | 'Cái ghế mát-xa này...' -> script_pak_e05-[0057].po: line 28 0002 | MAKOTO NAEGI | 'Chiếc ghế mát-xa...' -> script_pak_e06-[0054].po: line 49 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 37 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 61 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 73 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:1] script_pak_e04\script_pak_e04-[0050] Leave Bathhouse Prompt\script_pak_e04-[0050].po
+  WARN   [duplicate_sentence_translation] line 28 0002 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> line 50 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 50 0004 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> line 50 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:4, STRUCT:1] script_pak_e04\script_pak_e04-[0050]\script_pak_e04-[0050].po
+  WARN   [duplicate_sentence_translation] line 28 0002 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> line 50 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 50 0004 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> line 50 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 28 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> script_pak_e04-[0050].po: line 28 0002 | MAKOTO NAEGI, script_pak_e04-[0050].po: line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> script_pak_e04-[0050].po: line 50 0004 | MAKOTO NAEGI, script_pak_e04-[0050].po: line 50 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 50 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't really like the color, though. If I had to compare it to an element, I'd say it's...germanium.". 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> script_pak_e04-[0050].po: line 28 0002 | MAKOTO NAEGI, script_pak_e04-[0050].po: line 28 0002 | MAKOTO NAEGI | 'Khi mình thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình mình!' -> script_pak_e04-[0050].po: line 50 0004 | MAKOTO NAEGI, script_pak_e04-[0050].po: line 50 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:1] script_pak_e04\script_pak_e04-[0051] Leave Sauna Prompt\script_pak_e04-[0051].po
+  WARN   [duplicate_sentence_translation] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 29 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:4, STRUCT:1] script_pak_e04\script_pak_e04-[0051]\script_pak_e04-[0051].po
+  WARN   [duplicate_sentence_translation] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> script_pak_e04-[0051].po: line 17 0001 | MAKOTO NAEGI, script_pak_e04-[0051].po: line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> script_pak_e04-[0051].po: line 29 0002 | MAKOTO NAEGI, script_pak_e04-[0051].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="If you touched this, you'd end up with more than just a little burn!". 'Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...' -> script_pak_e04-[0051].po: line 17 0001 | MAKOTO NAEGI, script_pak_e04-[0051].po: line 17 0001 | MAKOTO NAEGI | 'Dù sao thì, mình không nghĩ nó có liên quan gì đến vụ án.' -> script_pak_e04-[0051].po: line 29 0002 | MAKOTO NAEGI, script_pak_e04-[0051].po: line 29 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0052] Leave Area Prompt\script_pak_e04-[0052].po
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e04\script_pak_e04-[0052]\script_pak_e04-[0052].po
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0000] Monocoin Tutorial\script_pak_e05-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0000]\script_pak_e05-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:2] script_pak_e05\script_pak_e05-[0003] Girls Bathroom Entry\script_pak_e05-[0003].po
+  ERROR  [clt_tag_integrity] line 17 0001 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation_global] line 38 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This is the girls bathroom.'. 'Đây là nhà vệ sinh nữ.' -> script_pak_e05-[0003].po: line 38 0003 | MAKOTO NAEGI, script_pak_e06-[0048].po: line 17 0001 | MAKOTO NAEGI | 'Đây là nhà vệ sinh nữ...' -> script_pak_e05-[0014].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0031].po: line 17 0001 | MAKOTO NAEGI, script_pak_e06-[0003].po: line 37 0003 | MAKOTO NAEGI, script_pak_e06-[0031].po: line 17 0001 | MAKOTO NAEGI, +1 more
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="If I ever took one step in there, I'd become a total creep in everyone's eyes, and that'd be it for me...". 'Nếu mình lỡ bước chân vào đó, mình sẽ trở thành một tên biến thái trong mắt mọi người, và thế là đời mình xong luôn...' -> script_pak_e05-[0003].po: line 49 0004 | MAKOTO NAEGI | 'Nếu mình mà bước một chân vào đó... Mọi người sẽ nhìn mình như một kẻ biến thái, và thế là xong đời mình luôn...' -> script_pak_e05-[0014].po: line 26 0002 | MAKOTO NAEGI | 'Nếu mình mà bước chân vào đó thì xong đời thật rồi... Sẽ bị mọi người khinh bỉ và coi như là kết thúc...' -> script_pak_e05-[0031].po: line 26 0002 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:6] script_pak_e05\script_pak_e05-[0004] Entrance Gate Inspection\script_pak_e05-[0004].po
+  WARN   [duplicate_sentence_translation_global] line 64 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The handbooks of all the students who have died have been placed in here.'. 'Bên trong... đặt sổ học sinh của tất cả những người đã chết...' -> script_pak_e05-[0004].po: line 64 0005 | MAKOTO NAEGI | 'Bên trong... là sổ học sinh của tất cả những người đã chết...' -> script_pak_e06-[0004].po: line 58 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 64 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 74 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 86 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0004]\script_pak_e05-[0004].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[STRUCT:2] script_pak_e05\script_pak_e05-[0005] Display Case Talk\script_pak_e05-[0005].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0005]\script_pak_e05-[0005].po
+  WARN   [untranslated]: 1 untranslated entries: 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[WARN:1] script_pak_e05\script_pak_e05-[0006] Artifact Inspection\script_pak_e05-[0006].po
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Why is something like that on display?'. 'Tại sao một thứ như thế lại được trưng bày nhỉ?' -> script_pak_e04-[0006].po: line 80 0007 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 107 0010 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 165 0016 | MAKOTO NAEGI, script_pak_e04-[0006].po: line 192 0019 | MAKOTO NAEGI | 'Tại sao thứ này lại được trưng bày ở đây chứ...' -> script_pak_e05-[0006].po: line 49 0004 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e05\script_pak_e05-[0006]\script_pak_e05-[0006].po
+  WARN   [untranslated]: 4 untranslated entries: 0002 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[OK] script_pak_e05\script_pak_e05-[0007] Leave Gym Prompt\script_pak_e05-[0007].po
+
+[OK] script_pak_e05\script_pak_e05-[0007]\script_pak_e05-[0007].po
+
+[STRUCT:2] script_pak_e05\script_pak_e05-[0008] DVD Player Inspect\script_pak_e05-[0008].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0008]\script_pak_e05-[0008].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:2] script_pak_e05\script_pak_e05-[0009] School Store Inspection\script_pak_e05-[0009].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="All that's inside the vending machine is energy drinks...". 'Là máy bán hàng tự động... toàn là mấy loại đồ uống hóa học không à.' -> script_pak_e05-[0009].po: line 18 0001 | MAKOTO NAEGI | 'Máy bán hàng tự động đây mà... Toàn mấy loại đồ uống hóa chất không à.' -> script_pak_e05-[0055].po: line 176 0017 | MAKOTO NAEGI | 'Tất cả những gì trong máy bán hàng tự động chỉ toàn là nước tăng lực...' -> script_pak_e06-[0052].po: line 233 0021 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0009]\script_pak_e05-[0009].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:3] script_pak_e05\script_pak_e05-[0010] Infirmary Inspection\script_pak_e05-[0010].po
+  WARN   [duplicate_sentence_translation_global] line 38 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This refrigerator is filled with blood packs probably kept on hand for transfusions.'. 'Cái tủ lạnh này chứa đầy các túi máu, có lẽ được dự trữ để truyền máu.' -> script_pak_e05-[0010].po: line 38 0003 | MAKOTO NAEGI | 'Chiếc tủ lạnh này... bên trong đựng túi máu dùng cho truyền máu...' -> script_pak_e06-[0010].po: line 69 0006 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 26 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0010]\script_pak_e05-[0010].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[WARN:2, STRUCT:2] script_pak_e05\script_pak_e05-[0011] Classroom Inspection\script_pak_e05-[0011].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="What's the point in even looking at the clock now...?". 'Đến nước này rồi, có quan tâm đến đồng hồ thì cũng chẳng ích gì...' -> script_pak_e05-[0011].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có để ý đến đồng hồ thì cũng chẳng ích gì nhỉ...' -> script_pak_e05-[0037].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0038].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có nhìn đồng hồ thì cũng đâu có ích gì...' -> script_pak_e05-[0052].po: line 17 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 28 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm sure Sakura tried to tear these down more than once. If she couldn't do it, what chance do I have...?". 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi... Những kẻ như mình thì không đời nào phá nổi đâu...' -> script_pak_e05-[0011].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 28 0002 | MAKOTO NAEGI | 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi. Nếu đến cả cô ấy còn không làm được thì mình có cơ hội nào chứ...?' -> script_pak_e05-[0012].po: line 30 0002 | MAKOTO NAEGI | 'Mình chắc rằng Sakura đã thử phá bỏ mấy thứ này nhiều lần rồi. Nếu cô ấy còn không làm được thì mình có cơ hội nào chứ.…' -> script_pak_e05-[0029].po: line 30 0002 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 30 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 60 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e05\script_pak_e05-[0011]\script_pak_e05-[0011].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI
+
+[WARN:2, STRUCT:2] script_pak_e05\script_pak_e05-[0012] Metal Plate Inspect\script_pak_e05-[0012].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Sure, I can look at the clock and see what time it is. But what's the point?". 'Đúng là mình có thể nhìn đồng hồ để biết mấy giờ rồi. Nhưng có ích gì chứ?' -> script_pak_e05-[0012].po: line 18 0001 | MAKOTO NAEGI | 'Đúng là mình có thể nhìn đồng hồ để biết bây giờ là mấy giờ . Nhưng làm vậy thì có ích gì chứ?' -> script_pak_e05-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 18 0001 | MAKOTO NAEGI | 'Mình có xem đồng hồ để biết là mấy giờ thì... cũng chỉ thấy trống rỗng thôi.' -> script_pak_e05-[0047].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0048].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 30 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm sure Sakura tried to tear these down more than once. If she couldn't do it, what chance do I have...?". 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi... Những kẻ như mình thì không đời nào phá nổi đâu...' -> script_pak_e05-[0011].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 28 0002 | MAKOTO NAEGI | 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi. Nếu đến cả cô ấy còn không làm được thì mình có cơ hội nào chứ...?' -> script_pak_e05-[0012].po: line 30 0002 | MAKOTO NAEGI | 'Mình chắc rằng Sakura đã thử phá bỏ mấy thứ này nhiều lần rồi. Nếu cô ấy còn không làm được thì mình có cơ hội nào chứ.…' -> script_pak_e05-[0029].po: line 30 0002 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 30 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0012]\script_pak_e05-[0012].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+[OK] script_pak_e05\script_pak_e05-[0013] Leave Area Prompt\script_pak_e05-[0013].po
+
+[OK] script_pak_e05\script_pak_e05-[0013]\script_pak_e05-[0013].po
+
+[WARN:2] script_pak_e05\script_pak_e05-[0014] Girls Bathroom Talk\script_pak_e05-[0014].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This is the girls bathroom.'. 'Đây là nhà vệ sinh nữ.' -> script_pak_e05-[0003].po: line 38 0003 | MAKOTO NAEGI, script_pak_e06-[0048].po: line 17 0001 | MAKOTO NAEGI | 'Đây là nhà vệ sinh nữ...' -> script_pak_e05-[0014].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0031].po: line 17 0001 | MAKOTO NAEGI, script_pak_e06-[0003].po: line 37 0003 | MAKOTO NAEGI, script_pak_e06-[0031].po: line 17 0001 | MAKOTO NAEGI, +1 more
+  WARN   [duplicate_sentence_translation_global] line 26 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="If I ever took one step in there, I'd become a total creep in everyone's eyes, and that'd be it for me...". 'Nếu mình lỡ bước chân vào đó, mình sẽ trở thành một tên biến thái trong mắt mọi người, và thế là đời mình xong luôn...' -> script_pak_e05-[0003].po: line 49 0004 | MAKOTO NAEGI | 'Nếu mình mà bước một chân vào đó... Mọi người sẽ nhìn mình như một kẻ biến thái, và thế là xong đời mình luôn...' -> script_pak_e05-[0014].po: line 26 0002 | MAKOTO NAEGI | 'Nếu mình mà bước chân vào đó thì xong đời thật rồi... Sẽ bị mọi người khinh bỉ và coi như là kết thúc...' -> script_pak_e05-[0031].po: line 26 0002 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e05\script_pak_e05-[0014]\script_pak_e05-[0014].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+[ERROR:1, WARN:2, STRUCT:4, INFO:1] script_pak_e05\script_pak_e05-[0015] Library Inspection\script_pak_e05-[0015].po
+  ERROR  [clt_tag_integrity] line 100 0008 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 4>', '<CLT>', '<CLT>'], translation=['<CLT 4>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 4>', '<CLT>']
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Hifumi was upset that there weren't any comic books or young adult novels here...". 'Hifumi đã rất buồn vì ở đây không có doujin hay light novel nào cả... Yamada-kun từng nói vậy thì phải...' -> script_pak_e05-[0015].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0015].po: line 30 0002 | MAKOTO NAEGI | 'Hifumi đã rất khó chịu vì ở đây chẳng có bộ truyện tranh hay tiểu thuyết nào cả...' -> script_pak_e06-[0015].po: line 49 0004 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 61 0005 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 42 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The shelf is packed tight with books. But the whole thing is just so dusty...'. 'Trên giá sách chất đầy những cuốn sách. Nhưng mà, nó bám bụi kinh khủng thật...' -> script_pak_e05-[0015].po: line 42 0003 | MAKOTO NAEGI | 'Kệ sách chứa đầy ắp những cuốn sách. Nhưng mọi thứ toàn là bụi là bụi...' -> script_pak_e06-[0015].po: line 73 0006 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 196 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 176 0014 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[ERROR:1, WARN:1, STRUCT:1, INFO:1] script_pak_e05\script_pak_e05-[0015]\script_pak_e05-[0015].po
+  ERROR  [clt_tag_integrity] line 94 0008 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 4>', '<CLT>', '<CLT>'], translation=['<CLT 4>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 4>', '<CLT>']
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 190 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 170 0014 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, STRUCT:5, INFO:1] script_pak_e05\script_pak_e05-[0016]\script_pak_e05-[0016].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='These are a bunch of investigation reports related to different cold cases.'. 'Đây là một xấp báo cáo điều tra liên quan đến các vụ án chưa có lời giải khác nhau.' -> script_pak_e04-[0016].po: line 79 0007 | MAKOTO NAEGI, script_pak_e04-[0016].po: line 103 0009 | MAKOTO NAEGI | 'Đây đều là những báo cáo điều tra về các vụ án chưa có lời giải sao...' -> script_pak_e05-[0016].po: line 17 0001 | MAKOTO NAEGI | 'Đây là tập hợp các báo cáo điều tra liên quan đến nhiều vụ án chưa có lời giải...' -> script_pak_e06-[0016].po: line 35 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 51 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 83 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 58 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0017] Locker Room Inspection\script_pak_e05-[0017].po
+  STRUCT [line_count_match] line 70 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0017]\script_pak_e05-[0017].po
+  STRUCT [line_count_match] line 70 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0018]\script_pak_e05-[0018].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='We found Robo Justice stuffed in this locker last time.'. 'Lần trước chúng ta đã tìm thấy Robo Công Lý bị nhét trong chiếc tủ đồ này.' -> script_pak_e04-[0018].po: line 18 0001 | MAKOTO NAEGI, script_pak_e04-[0018].po: line 41 0003 | MAKOTO NAEGI | 'Lần trước, chúng ta đã tìm thấy Robo Justice bị nhồi trong cái tủ đồ này...' -> script_pak_e05-[0018].po: line 18 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:5] script_pak_e05\script_pak_e05-[0019] Metal Plate Inspection\script_pak_e05-[0019].po
+  WARN   [duplicate_sentence_translation_global] line 40 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='In any normal classroom, this is where a window would be...'. 'Ở lớp học bình thường thì đây đáng lẽ phải là nơi có cửa sổ...' -> script_pak_e05-[0019].po: line 40 0003 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 61 0005 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 40 0003 | MAKOTO NAEGI | 'Ở một lớp học bình thường thì đây là nơi lẽ ra phải có cửa sổ...' -> script_pak_e05-[0030].po: line 42 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='...but now some kind of metal plate is mounted over it.'. '...thế mà, ở đó lại có thứ gì đó giống như tấm sắt được đóng chặt vào.' -> script_pak_e05-[0019].po: line 49 0004 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 70 0006 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 49 0004 | MAKOTO NAEGI | '...nhưng bây giờ lại có một tấm kim loại nào đó được đóng chặt lên trên.' -> script_pak_e05-[0030].po: line 51 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 61 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 70 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0019]\script_pak_e05-[0019].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[STRUCT:3] script_pak_e05\script_pak_e05-[0020] Classroom Metal Plate\script_pak_e05-[0020].po
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0020]\script_pak_e05-[0020].po
+  WARN   [untranslated]: 4 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+[ERROR:1, WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0021]\script_pak_e05-[0021].po
+  ERROR  [clt_tag_integrity] line 16 0001 | MAKOTO NAEGI: CLT tags differ. source=[], translation=['<CLT 4>', '<CLT>']
+  WARN   [duplicate_sentence_translation_global] line 27 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='It also leads to the secret room. I should probably avoid going in and out of there too much...'. 'Nó cũng dẫn đến căn phòng bí mật. Mình có lẽ nên hạn chế ra vào nơi đó quá nhiều...' -> script_pak_e04-[0021].po: line 29 0002 | MAKOTO NAEGI | 'Nó còn dẫn đến căn phòng bí mật nữa. Mình nghĩ mình nên tránh ra vào chỗ đó quá thường xuyên thì hơn...' -> script_pak_e05-[0021].po: line 27 0002 | MAKOTO NAEGI | 'Nó cũng dẫn tới căn phòng bí mật nữa... Có lẽ mình không nên ra vào đó quá thường xuyên...' -> script_pak_e06-[0021].po: line 27 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0022] Locker Room Interaction\script_pak_e05-[0022].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The poster has a super famous supermodel. Her name is Diamond Yuka, I think...'. 'Tấm áp phích vẽ một siêu mẫu cực kỳ nổi tiếng. Tên cô ấy là Diamond Yuka, mình nghĩ vậy...' -> script_pak_e04-[0023].po: line 18 0001 | MAKOTO NAEGI | 'Đây là áp phích của một siêu mẫu siêu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e05-[0022].po: line 18 0001 | MAKOTO NAEGI | 'Trên tấm áp phích là một người mẫu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e06-[0022].po: line 55 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0022]\script_pak_e05-[0022].po
+  WARN   [untranslated]: 1 untranslated entries: 0001 | MAKOTO NAEGI
+
+[ERROR:1, WARN:1, STRUCT:14] script_pak_e05\script_pak_e05-[0024] Room Investigation\script_pak_e05-[0024].po
+  ERROR  [clt_tag_integrity] line 105 0011 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation_global] line 16 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Everything's back to normal...". 'Mọi thứ đã trở lại bình thường rồi...' -> script_pak_e04-[0030].po: line 16 0001 | MAKOTO NAEGI | 'Mọi thứ đã trở lại bình thường...' -> script_pak_e05-[0024].po: line 16 0001 | MAKOTO NAEGI, script_pak_e05-[0032].po: line 16 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 53 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 65 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 89 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 97 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 105 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 113 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 121 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 132 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 143 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 154 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 165 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 176 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 187 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0024]\script_pak_e05-[0024].po
+  ERROR  [clt_tag_integrity] line 97 0011 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [untranslated]: 15 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 97 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:5] script_pak_e05\script_pak_e05-[0025]\script_pak_e05-[0025].po
+  WARN   [duplicate_sentence_translation_global] line 30 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It's...a Venus statue. This is the only thing in here that actually seems like it belongs...". 'Đây là... tượng thần Vệ Nữ. Đây là thứ duy nhất ở đây có vẻ như thuộc về nơi này...' -> script_pak_e05-[0025].po: line 30 0002 | MAKOTO NAEGI | 'Đó là... bức tượng thần Vệ Nữ. Đây là thứ duy nhất ở đây trông có vẻ như thuộc về nơi này...' -> script_pak_e06-[0025].po: line 79 0007 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 52 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 73 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 83 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0026]\script_pak_e05-[0026].po
+  WARN   [duplicate_sentence_translation_global] line 31 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It's the dolly that Hifumi used to move Taka...". 'Đó là chiếc xe đẩy mà Hifumi đã dùng để di chuyển Taka...' -> script_pak_e04-[0028].po: line 92 0008 | MAKOTO NAEGI | 'Đây là chiếc xe đẩy mà Hifumi đã dùng để... vận chuyển Taka...' -> script_pak_e05-[0026].po: line 31 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0027]\script_pak_e05-[0027].po
+  STRUCT [line_count_match] line 52 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:4, STRUCT:5] script_pak_e05\script_pak_e05-[0028]\script_pak_e05-[0028].po
+  WARN   [duplicate_sentence_translation_global] line 34 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Now that's a big shelf.". 'Đó là một cái kệ lớn.' -> script_pak_e05-[0028].po: line 34 0003 | MAKOTO NAEGI | 'Cái kệ này to thật đấy...' -> script_pak_e06-[0028].po: line 70 0007 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 43 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='A bunch of lab equipment and stuff has been piled up on it. Totally disorganized...'. 'Một đống dụng cụ thí nghiệm và đồ đạc được chất đống trên đó. Hoàn toàn lộn xộn...' -> script_pak_e05-[0028].po: line 43 0004 | MAKOTO NAEGI | 'Một đống thiết bị thí nghiệm và đủ thứ bị chất đống trên đó. Chẳng ngăn nắp chút nào...' -> script_pak_e06-[0028].po: line 79 0008 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 54 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='There are shelves full of stuff.'. 'Có những cái kệ chứa đầy đồ đạc.' -> script_pak_e05-[0028].po: line 54 0005 | MAKOTO NAEGI | 'Có mấy cái kệ đầy ắp đồ đạc...' -> script_pak_e06-[0028].po: line 90 0009 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 63 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="There's a lot here, but I don't see anything that catches my eye. So...that's it.". 'Ở đây có nhiều thứ lắm, nhưng mình không thấy thứ gì gây chú ý cả. Vậy nên... chỉ có vậy thôi.' -> script_pak_e05-[0028].po: line 63 0006 | MAKOTO NAEGI | 'Ở đây có nhiều đồ thật, nhưng chẳng có cái nào làm mình để ý cả. Vậy thôi... chỉ thế thôi.' -> script_pak_e06-[0028].po: line 99 0010 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 23 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 34 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 43 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 54 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:2] script_pak_e05\script_pak_e05-[0029]\script_pak_e05-[0029].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Sure, I can look at the clock and see what time it is. But what's the point?". 'Đúng là mình có thể nhìn đồng hồ để biết mấy giờ rồi. Nhưng có ích gì chứ?' -> script_pak_e05-[0012].po: line 18 0001 | MAKOTO NAEGI | 'Đúng là mình có thể nhìn đồng hồ để biết bây giờ là mấy giờ . Nhưng làm vậy thì có ích gì chứ?' -> script_pak_e05-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 18 0001 | MAKOTO NAEGI | 'Mình có xem đồng hồ để biết là mấy giờ thì... cũng chỉ thấy trống rỗng thôi.' -> script_pak_e05-[0047].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0048].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 30 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm sure Sakura tried to tear these down more than once. If she couldn't do it, what chance do I have...?". 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi... Những kẻ như mình thì không đời nào phá nổi đâu...' -> script_pak_e05-[0011].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 28 0002 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 28 0002 | MAKOTO NAEGI | 'Sakura chắc chắn đã thử phá nó đủ kiểu rồi. Nếu đến cả cô ấy còn không làm được thì mình có cơ hội nào chứ...?' -> script_pak_e05-[0012].po: line 30 0002 | MAKOTO NAEGI | 'Mình chắc rằng Sakura đã thử phá bỏ mấy thứ này nhiều lần rồi. Nếu cô ấy còn không làm được thì mình có cơ hội nào chứ.…' -> script_pak_e05-[0029].po: line 30 0002 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 30 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:4] script_pak_e05\script_pak_e05-[0030] Classroom Investigation\script_pak_e05-[0030].po
+  WARN   [duplicate_sentence_translation_global] line 42 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='In any normal classroom, this is where a window would be...'. 'Ở lớp học bình thường thì đây đáng lẽ phải là nơi có cửa sổ...' -> script_pak_e05-[0019].po: line 40 0003 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 61 0005 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 40 0003 | MAKOTO NAEGI | 'Ở một lớp học bình thường thì đây là nơi lẽ ra phải có cửa sổ...' -> script_pak_e05-[0030].po: line 42 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 51 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='...but now some kind of metal plate is mounted over it.'. '...thế mà, ở đó lại có thứ gì đó giống như tấm sắt được đóng chặt vào.' -> script_pak_e05-[0019].po: line 49 0004 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 70 0006 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 49 0004 | MAKOTO NAEGI | '...nhưng bây giờ lại có một tấm kim loại nào đó được đóng chặt lên trên.' -> script_pak_e05-[0030].po: line 51 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 51 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0030]\script_pak_e05-[0030].po
+  WARN   [untranslated]: 4 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e05\script_pak_e05-[0031]\script_pak_e05-[0031].po
+  WARN   [duplicate_sentence_translation_global] line 26 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="If I ever took one step in there, I'd become a total creep in everyone's eyes, and that'd be it for me...". 'Nếu mình lỡ bước chân vào đó, mình sẽ trở thành một tên biến thái trong mắt mọi người, và thế là đời mình xong luôn...' -> script_pak_e05-[0003].po: line 49 0004 | MAKOTO NAEGI | 'Nếu mình mà bước một chân vào đó... Mọi người sẽ nhìn mình như một kẻ biến thái, và thế là xong đời mình luôn...' -> script_pak_e05-[0014].po: line 26 0002 | MAKOTO NAEGI | 'Nếu mình mà bước chân vào đó thì xong đời thật rồi... Sẽ bị mọi người khinh bỉ và coi như là kết thúc...' -> script_pak_e05-[0031].po: line 26 0002 | MAKOTO NAEGI
+
+[STRUCT:6] script_pak_e05\script_pak_e05-[0032]\script_pak_e05-[0032].po
+  STRUCT [line_count_match] line 33 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 57 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 69 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 81 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 93 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:27] script_pak_e05\script_pak_e05-[0033]\script_pak_e05-[0033].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 54 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 66 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 78 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 90 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 102 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 114 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 126 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 138 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 150 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 162 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 174 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 186 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 198 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 210 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 222 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 234 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 246 0020 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 258 0021 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 270 0022 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 282 0023 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 294 0024 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 306 0025 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 318 0026 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 330 0027 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e05\script_pak_e05-[0034]\script_pak_e05-[0034].po
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0035]\script_pak_e05-[0035].po
+  WARN   [duplicate_sentence_translation_global] line 16 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Is this...a grand piano?'. 'Đây là... một cây đại dương cầm sao?' -> script_pak_e04-[0037].po: line 16 0001 | MAKOTO NAEGI, script_pak_e04-[0037].po: line 31 0003 | MAKOTO NAEGI | 'Đây là... một cây đại dương cầm à?' -> script_pak_e05-[0035].po: line 16 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 23 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e05\script_pak_e05-[0036]\script_pak_e05-[0036].po
+
+[WARN:1, STRUCT:2] script_pak_e05\script_pak_e05-[0037]\script_pak_e05-[0037].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="What's the point in even looking at the clock now...?". 'Đến nước này rồi, có quan tâm đến đồng hồ thì cũng chẳng ích gì...' -> script_pak_e05-[0011].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có để ý đến đồng hồ thì cũng chẳng ích gì nhỉ...' -> script_pak_e05-[0037].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0038].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có nhìn đồng hồ thì cũng đâu có ích gì...' -> script_pak_e05-[0052].po: line 17 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 35 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[STRUCT:2] script_pak_e05\script_pak_e05-[0038]\script_pak_e05-[0038].po
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e05\script_pak_e05-[0039]\script_pak_e05-[0039].po
+
+[WARN:4, STRUCT:14] script_pak_e05\script_pak_e05-[0041]\script_pak_e05-[0041].po
+  WARN   [duplicate_sentence_translation_global] line 23 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Is it true...? Does it really eat paper, plastic, and people?'. 'Thật sao...? Nó thực sự ăn cả giấy, nhựa và con người ư?' -> script_pak_e05-[0041].po: line 23 0002 | MAKOTO NAEGI | 'Có thật không vậy...? Nó thực sự ăn cả giấy, nhựa và con người sao?' -> script_pak_e06-[0042].po: line 91 0009 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 67 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Crazy...Diamond...'. 'Crazy... Diamond...' -> script_pak_e05-[0041].po: line 67 0007 | MAKOTO NAEGI | 'Crazy...diamond...?' -> script_pak_e05-[0043].po: line 115 0010 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 161 0018 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Those nozzles poking out...'. 'Những vòi phun nhô ra đó...' -> script_pak_e05-[0041].po: line 161 0018 | MAKOTO NAEGI | 'Những vòi phun nhô ra kia...' -> script_pak_e06-[0042].po: line 134 0013 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 168 0019 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Are those...the sprinklers?'. 'Đó là... vòi phun nước sao?' -> script_pak_e05-[0041].po: line 168 0019 | MAKOTO NAEGI | 'Kia là... hệ thống phun nước sao?' -> script_pak_e06-[0042].po: line 141 0014 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 23 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 32 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 40 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 49 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 59 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 73 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 81 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 94 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 103 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 114 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 123 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 132 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 143 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 161 0018 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[OK] script_pak_e05\script_pak_e05-[0042]\script_pak_e05-[0042].po
+
+[WARN:1, STRUCT:3, INFO:1] script_pak_e05\script_pak_e05-[0043]\script_pak_e05-[0043].po
+  WARN   [duplicate_sentence_translation_global] line 115 0010 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Crazy...Diamond...'. 'Crazy... Diamond...' -> script_pak_e05-[0041].po: line 67 0007 | MAKOTO NAEGI | 'Crazy...diamond...?' -> script_pak_e05-[0043].po: line 115 0010 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 51 0004 | NO NAME: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 73 0006 | NO NAME: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 105 0009 | NO NAME: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 115 0010 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] script_pak_e05\script_pak_e05-[0044]\script_pak_e05-[0044].po
+
+[WARN:1, STRUCT:6] script_pak_e05\script_pak_e05-[0045] Dojo Room Inspection\script_pak_e05-[0045].po
+  WARN   [duplicate_sentence_translation_global] line 41 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="There's a bunch of wooden lockers in here.". 'Có mấy cái tủ đồ bằng gỗ ở đây này.' -> script_pak_e05-[0045].po: line 41 0003 | MAKOTO NAEGI | 'Có một dãy tủ đồ gỗ ở đây.' -> script_pak_e06-[0043].po: line 79 0007 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 41 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 50 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 83 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e05\script_pak_e05-[0045]\script_pak_e05-[0045].po
+  WARN   [untranslated]: 7 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[OK] script_pak_e05\script_pak_e05-[0046] Area Exit Prompt\script_pak_e05-[0046].po
+
+[OK] script_pak_e05\script_pak_e05-[0046]\script_pak_e05-[0046].po
+
+[WARN:1, STRUCT:2] script_pak_e05\script_pak_e05-[0047] Sealed Window Investigation\script_pak_e05-[0047].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Sure, I can look at the clock and see what time it is. But what's the point?". 'Đúng là mình có thể nhìn đồng hồ để biết mấy giờ rồi. Nhưng có ích gì chứ?' -> script_pak_e05-[0012].po: line 18 0001 | MAKOTO NAEGI | 'Đúng là mình có thể nhìn đồng hồ để biết bây giờ là mấy giờ . Nhưng làm vậy thì có ích gì chứ?' -> script_pak_e05-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0030].po: line 18 0001 | MAKOTO NAEGI | 'Mình có xem đồng hồ để biết là mấy giờ thì... cũng chỉ thấy trống rỗng thôi.' -> script_pak_e05-[0047].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0048].po: line 18 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 43 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0047]\script_pak_e05-[0047].po
+  WARN   [untranslated]: 4 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+[STRUCT:3] script_pak_e05\script_pak_e05-[0048] Sealed Room Check\script_pak_e05-[0048].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0048]\script_pak_e05-[0048].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[STRUCT:5, INFO:1] script_pak_e05\script_pak_e05-[0049]\script_pak_e05-[0049].po
+  STRUCT [line_count_match] line 38 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 50 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 62 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 73 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 86 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 80 0008 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] script_pak_e05\script_pak_e05-[0051]\script_pak_e05-[0051].po
+  STRUCT [line_count_match] line 60 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 72 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 107 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 36 0004 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, STRUCT:1] script_pak_e05\script_pak_e05-[0052]\script_pak_e05-[0052].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="What's the point in even looking at the clock now...?". 'Đến nước này rồi, có quan tâm đến đồng hồ thì cũng chẳng ích gì...' -> script_pak_e05-[0011].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0019].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0020].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có để ý đến đồng hồ thì cũng chẳng ích gì nhỉ...' -> script_pak_e05-[0037].po: line 17 0001 | MAKOTO NAEGI, script_pak_e05-[0038].po: line 17 0001 | MAKOTO NAEGI | 'Bây giờ có nhìn đồng hồ thì cũng đâu có ích gì...' -> script_pak_e05-[0052].po: line 17 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:2, STRUCT:6] script_pak_e05\script_pak_e05-[0053] Kitchen Investigation\script_pak_e05-[0053].po
+  WARN   [duplicate_sentence_translation_global] line 17 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Not surprisingly, one of the knives is still missing.'. 'Không ngạc nhiên lắm, một con dao vẫn còn thiếu...' -> script_pak_e05-[0053].po: line 17 0001 | MAKOTO NAEGI | 'Không ngạc nhiên chút nào, vẫn còn thiếu một con dao.' -> script_pak_e06-[0050].po: line 44 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 26 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It all began then...with Sayaka's case...". 'Mọi chuyện bắt đầu từ lúc đó... từ vụ án của Sayaka...' -> script_pak_e05-[0053].po: line 26 0002 | MAKOTO NAEGI | 'Tất cả bắt đầu từ lúc đó... với vụ án của Sayaka...' -> script_pak_e06-[0050].po: line 53 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 26 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 34 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 42 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0053]\script_pak_e05-[0053].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[STRUCT:2] script_pak_e05\script_pak_e05-[0054]\script_pak_e05-[0054].po
+  STRUCT [line_count_match] line 60 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 71 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:19] script_pak_e05\script_pak_e05-[0055]\script_pak_e05-[0055].po
+  WARN   [duplicate_sentence_translation_global] line 176 0017 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="All that's inside the vending machine is energy drinks...". 'Là máy bán hàng tự động... toàn là mấy loại đồ uống hóa học không à.' -> script_pak_e05-[0009].po: line 18 0001 | MAKOTO NAEGI | 'Máy bán hàng tự động đây mà... Toàn mấy loại đồ uống hóa chất không à.' -> script_pak_e05-[0055].po: line 176 0017 | MAKOTO NAEGI | 'Tất cả những gì trong máy bán hàng tự động chỉ toàn là nước tăng lực...' -> script_pak_e06-[0052].po: line 233 0021 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 58 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 69 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 78 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 89 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 98 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 109 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 118 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 129 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 138 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 149 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 157 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 166 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 176 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 187 0018 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 196 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:6] script_pak_e05\script_pak_e05-[0056]\script_pak_e05-[0056].po
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 43 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 67 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 99 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 110 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[WARN:2, STRUCT:1] script_pak_e05\script_pak_e05-[0057] Alter Ego Missing\script_pak_e05-[0057].po
+  WARN   [duplicate_sentence_translation_global] line 28 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI | 'Cái ghế mát-xa này...' -> script_pak_e05-[0057].po: line 28 0002 | MAKOTO NAEGI | 'Chiếc ghế mát-xa...' -> script_pak_e06-[0054].po: line 49 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 39 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm gonna stay away, in case it's been booby-trapped somehow...". 'Mình không nên dùng, nhỡ đâu có cái bẫy gì thì nguy...' -> script_pak_e05-[0057].po: line 39 0003 | MAKOTO NAEGI | 'Tốt nhất là không nên dùng, phòng trường hợp nó bị gài bẫy...' -> script_pak_e06-[0054].po: line 58 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e05\script_pak_e05-[0057]\script_pak_e05-[0057].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[STRUCT:1] script_pak_e05\script_pak_e05-[0058] Bathhouse Inspection\script_pak_e05-[0058].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e05\script_pak_e05-[0058]\script_pak_e05-[0058].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+[OK] script_pak_e05\script_pak_e05-[0059] Sauna Investigation\script_pak_e05-[0059].po
+
+[OK] script_pak_e05\script_pak_e05-[0059]\script_pak_e05-[0059].po
+
+[OK] script_pak_e05\script_pak_e05-[0060] Fish Tank Inspection\script_pak_e05-[0060].po
+
+[OK] script_pak_e05\script_pak_e05-[0060]\script_pak_e05-[0060].po
+
+[STRUCT:1] script_pak_e06\script_pak_e06-[0000] MonoMono Machine\script_pak_e06-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e06\script_pak_e06-[0000]\script_pak_e06-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:1] script_pak_e06\script_pak_e06-[0003] Girls Bathroom Investigation\script_pak_e06-[0003].po
+  ERROR  [clt_tag_integrity] line 17 0001 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation_global] line 45 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Obviously I can't go in...". 'Đương nhiên là mình không thể vào rồi...' -> script_pak_e06-[0003].po: line 45 0004 | MAKOTO NAEGI | 'Tất nhiên là mình không thể vào rồi...' -> script_pak_e06-[0031].po: line 25 0002 | MAKOTO NAEGI, script_pak_e06-[0048].po: line 25 0002 | MAKOTO NAEGI | 'Rõ ràng là mình không thể vào trong được rồi...' -> script_pak_e06-[0058].po: line 33 0003 | MAKOTO NAEGI
+
+[ERROR:1, WARN:1] script_pak_e06\script_pak_e06-[0003]\script_pak_e06-[0003].po
+  ERROR  [clt_tag_integrity] line 17 0001 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [untranslated]: 3 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:7] script_pak_e06\script_pak_e06-[0004] Handbooks Memorial\script_pak_e06-[0004].po
+  WARN   [duplicate_sentence_translation_global] line 58 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The handbooks of all the students who have died have been placed in here.'. 'Bên trong... đặt sổ học sinh của tất cả những người đã chết...' -> script_pak_e05-[0004].po: line 64 0005 | MAKOTO NAEGI | 'Bên trong... là sổ học sinh của tất cả những người đã chết...' -> script_pak_e06-[0004].po: line 58 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 25 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 37 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 58 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 67 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 86 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0004]\script_pak_e06-[0004].po
+  WARN   [untranslated]: 8 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+[WARN:3, STRUCT:2] script_pak_e06\script_pak_e06-[0005]\script_pak_e06-[0005].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Why do they even need all these monitors? A normal PA announcement would work just as well...'. 'Mà rốt cuộc, tại sao lại cần mấy cái màn hình này chứ? Mình nghĩ chỉ cần thông báo qua loa là đủ rồi mà...' -> script_pak_e06-[0005].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao lại cần tất cả những màn hình này nhỉ? Thông báo qua loa bình thường là đủ rồi mà...' -> script_pak_e06-[0008].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0022].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0025].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao họ lại cần tất cả những chiếc màn hình này chứ? Một thông báo qua loa bình thường cũng có tác dụng tương tự mà.…' -> script_pak_e06-[0052].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Maybe it's just to give us something to look at.". '...Hay là để cho mình có cái mà nhìn cho đỡ chán à?' -> script_pak_e06-[0005].po: line 29 0002 | MAKOTO NAEGI | '...Có phải vì khung cảnh nhìn trống trải quá không nhỉ?' -> script_pak_e06-[0008].po: line 29 0002 | MAKOTO NAEGI | 'Có phải để chúng ta có cái mà nhìn không nhỉ?' -> script_pak_e06-[0022].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ là để chúng ta có cái mà nhìn thôi.' -> script_pak_e06-[0025].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ chỉ để chúng ta có thứ gì đó để nhìn thôi chăng?' -> script_pak_e06-[0052].po: line 29 0002 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 38 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="The mastermind's been on the other side of this thing, watching us. But...who are they really?". 'Camera an ninh... Kẻ chủ mưu đang ở phía bên kia... đang quan sát chúng mình. Nhưng... kẻ đó rốt cuộc là ai?' -> script_pak_e06-[0005].po: line 38 0003 | MAKOTO NAEGI | 'Camera giám sát... Kẻ chủ mưu đang ở phía bên kia... quan sát chúng ta. Nếu vậy thì, kẻ đó là ai chứ?' -> script_pak_e06-[0008].po: line 38 0003 | MAKOTO NAEGI | 'Kẻ chủ mưu đã ở phía bên kia của thứ này, theo dõi chúng ta. Nhưng... thực sự thì kẻ đó là ai?' -> script_pak_e06-[0052].po: line 38 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[OK] script_pak_e06\script_pak_e06-[0006]\script_pak_e06-[0006].po
+
+[WARN:4, STRUCT:3] script_pak_e06\script_pak_e06-[0007] Gym Monitor Talk\script_pak_e06-[0007].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This is one of the monitors Monokuma appears on. I just wanna...'. 'Đây là một trong những màn hình mà Monokuma xuất hiện. Mình chỉ muốn...' -> script_pak_e06-[0007].po: line 18 0001 | MAKOTO NAEGI | 'Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. Mình chỉ muốn...' -> script_pak_e06-[0012].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="...Nope! Can't do it. Think, man! Think!". '...Không được! Không thể làm thế được. Tỉnh táo lại đi! Suy nghĩ đi!' -> script_pak_e06-[0007].po: line 29 0002 | MAKOTO NAEGI | '...Không thể nào! Không được. Nghĩ đi, nghĩ đi!' -> script_pak_e06-[0012].po: line 29 0002 | MAKOTO NAEGI | '...Không được! Không thể làm thế. Nghĩ đi, mình phải nghĩ!' -> script_pak_e06-[0039].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 40 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Even now...on the other side of this camera, the mastermind...'. 'Ngay cả lúc này... ở phía bên kia camera này, kẻ chủ mưu...' -> script_pak_e06-[0007].po: line 40 0003 | MAKOTO NAEGI | 'Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu...' -> script_pak_e06-[0009].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 18 0001 | MAKOTO NAEGI, +11 more | 'Ngay cả bây giờ... ở phía bên kia của chiếc camera này, kẻ chủ mưu...' -> script_pak_e06-[0049].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 36 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="But that's gonna come to an end soon enough!". 'Nhưng chuyện đó sắp chấm dứt rồi...!' -> script_pak_e06-[0007].po: line 49 0004 | MAKOTO NAEGI | 'Nhưng chuyện đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0009].po: line 45 0004 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 27 0002 | MAKOTO NAEGI, +11 more | 'Nhưng điều đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0049].po: line 47 0004 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 47 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0007]\script_pak_e06-[0007].po
+  WARN   [untranslated]: 4 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI
+
+[WARN:3, STRUCT:6] script_pak_e06\script_pak_e06-[0008]\script_pak_e06-[0008].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Why do they even need all these monitors? A normal PA announcement would work just as well...'. 'Mà rốt cuộc, tại sao lại cần mấy cái màn hình này chứ? Mình nghĩ chỉ cần thông báo qua loa là đủ rồi mà...' -> script_pak_e06-[0005].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao lại cần tất cả những màn hình này nhỉ? Thông báo qua loa bình thường là đủ rồi mà...' -> script_pak_e06-[0008].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0022].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0025].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao họ lại cần tất cả những chiếc màn hình này chứ? Một thông báo qua loa bình thường cũng có tác dụng tương tự mà.…' -> script_pak_e06-[0052].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Maybe it's just to give us something to look at.". '...Hay là để cho mình có cái mà nhìn cho đỡ chán à?' -> script_pak_e06-[0005].po: line 29 0002 | MAKOTO NAEGI | '...Có phải vì khung cảnh nhìn trống trải quá không nhỉ?' -> script_pak_e06-[0008].po: line 29 0002 | MAKOTO NAEGI | 'Có phải để chúng ta có cái mà nhìn không nhỉ?' -> script_pak_e06-[0022].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ là để chúng ta có cái mà nhìn thôi.' -> script_pak_e06-[0025].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ chỉ để chúng ta có thứ gì đó để nhìn thôi chăng?' -> script_pak_e06-[0052].po: line 29 0002 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 38 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="The mastermind's been on the other side of this thing, watching us. But...who are they really?". 'Camera an ninh... Kẻ chủ mưu đang ở phía bên kia... đang quan sát chúng mình. Nhưng... kẻ đó rốt cuộc là ai?' -> script_pak_e06-[0005].po: line 38 0003 | MAKOTO NAEGI | 'Camera giám sát... Kẻ chủ mưu đang ở phía bên kia... quan sát chúng ta. Nếu vậy thì, kẻ đó là ai chứ?' -> script_pak_e06-[0008].po: line 38 0003 | MAKOTO NAEGI | 'Kẻ chủ mưu đã ở phía bên kia của thứ này, theo dõi chúng ta. Nhưng... thực sự thì kẻ đó là ai?' -> script_pak_e06-[0052].po: line 38 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 59 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 71 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:7] script_pak_e06\script_pak_e06-[0009]\script_pak_e06-[0009].po
+  WARN   [duplicate_sentence_translation_global] line 36 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Even now...on the other side of this camera, the mastermind...'. 'Ngay cả lúc này... ở phía bên kia camera này, kẻ chủ mưu...' -> script_pak_e06-[0007].po: line 40 0003 | MAKOTO NAEGI | 'Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu...' -> script_pak_e06-[0009].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 18 0001 | MAKOTO NAEGI, +11 more | 'Ngay cả bây giờ... ở phía bên kia của chiếc camera này, kẻ chủ mưu...' -> script_pak_e06-[0049].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 36 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 45 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="But that's gonna come to an end soon enough!". 'Nhưng chuyện đó sắp chấm dứt rồi...!' -> script_pak_e06-[0007].po: line 49 0004 | MAKOTO NAEGI | 'Nhưng chuyện đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0009].po: line 45 0004 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 27 0002 | MAKOTO NAEGI, +11 more | 'Nhưng điều đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0049].po: line 47 0004 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 47 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 61 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 69 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 79 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1, STRUCT:4] script_pak_e06\script_pak_e06-[0010] Infirmary Investigation\script_pak_e06-[0010].po
+  WARN   [duplicate_sentence_translation_global] line 69 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This refrigerator is filled with blood packs probably kept on hand for transfusions.'. 'Cái tủ lạnh này chứa đầy các túi máu, có lẽ được dự trữ để truyền máu.' -> script_pak_e05-[0010].po: line 38 0003 | MAKOTO NAEGI | 'Chiếc tủ lạnh này... bên trong đựng túi máu dùng cho truyền máu...' -> script_pak_e06-[0010].po: line 69 0006 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 69 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0010]\script_pak_e06-[0010].po
+  WARN   [untranslated]: 5 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[WARN:3, STRUCT:7] script_pak_e06\script_pak_e06-[0011]\script_pak_e06-[0011].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm not gonna let these things scare me anymore... I'm not afraid of you, Monokuma!". 'Mình sẽ không để những thứ như màn hình này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0011].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0024].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!!' -> script_pak_e06-[0026].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0027].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 18 0001 | MAKOTO NAEGI, +1 more | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!' -> script_pak_e06-[0038].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0043].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 67 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="The window's completely covered by that metal plate. And just on the other side of it...". 'Cửa sổ bị tấm thép dày che khuất... Phía bên kia...' -> script_pak_e06-[0011].po: line 67 0005 | MAKOTO NAEGI, script_pak_e06-[0011].po: line 89 0007 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 63 0006 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 85 0008 | MAKOTO NAEGI, +7 more | 'Cửa sổ bị tấm thép dày che khuất. Phía bên kia...' -> script_pak_e06-[0039].po: line 71 0006 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 55 0005 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 77 0007 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 77 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm sure I'll get out of here soon. No...I absolutely HAVE to get out!". 'Chắc chắn sớm muộn gì mình cũng sẽ được về. Không... mình nhất định phải tìm cách thoát ra!!' -> script_pak_e06-[0011].po: line 77 0006 | MAKOTO NAEGI, script_pak_e06-[0011].po: line 99 0008 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 73 0007 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 95 0009 | MAKOTO NAEGI, +6 more | 'Chắc chắn sớm muộn gì mình cũng sẽ được về. Không... mình nhất định phải tìm cách thoát ra!' -> script_pak_e06-[0038].po: line 82 0007 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 81 0007 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 65 0006 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 87 0008 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 67 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 89 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 99 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 121 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+
+[WARN:2, STRUCT:9] script_pak_e06\script_pak_e06-[0012]\script_pak_e06-[0012].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This is one of the monitors Monokuma appears on. I just wanna...'. 'Đây là một trong những màn hình mà Monokuma xuất hiện. Mình chỉ muốn...' -> script_pak_e06-[0007].po: line 18 0001 | MAKOTO NAEGI | 'Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. Mình chỉ muốn...' -> script_pak_e06-[0012].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="...Nope! Can't do it. Think, man! Think!". '...Không được! Không thể làm thế được. Tỉnh táo lại đi! Suy nghĩ đi!' -> script_pak_e06-[0007].po: line 29 0002 | MAKOTO NAEGI | '...Không thể nào! Không được. Nghĩ đi, nghĩ đi!' -> script_pak_e06-[0012].po: line 29 0002 | MAKOTO NAEGI | '...Không được! Không thể làm thế. Nghĩ đi, mình phải nghĩ!' -> script_pak_e06-[0039].po: line 29 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 46 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 54 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 73 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 85 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 95 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e06\script_pak_e06-[0013]\script_pak_e06-[0013].po
+
+[OK] script_pak_e06\script_pak_e06-[0014]\script_pak_e06-[0014].po
+
+[WARN:2, STRUCT:9] script_pak_e06\script_pak_e06-[0015] Library Investigation\script_pak_e06-[0015].po
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Hifumi was upset that there weren't any comic books or young adult novels here...". 'Hifumi đã rất buồn vì ở đây không có doujin hay light novel nào cả... Yamada-kun từng nói vậy thì phải...' -> script_pak_e05-[0015].po: line 18 0001 | MAKOTO NAEGI, script_pak_e05-[0015].po: line 30 0002 | MAKOTO NAEGI | 'Hifumi đã rất khó chịu vì ở đây chẳng có bộ truyện tranh hay tiểu thuyết nào cả...' -> script_pak_e06-[0015].po: line 49 0004 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 61 0005 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 73 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The shelf is packed tight with books. But the whole thing is just so dusty...'. 'Trên giá sách chất đầy những cuốn sách. Nhưng mà, nó bám bụi kinh khủng thật...' -> script_pak_e05-[0015].po: line 42 0003 | MAKOTO NAEGI | 'Kệ sách chứa đầy ắp những cuốn sách. Nhưng mọi thứ toàn là bụi là bụi...' -> script_pak_e06-[0015].po: line 73 0006 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 40 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 61 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 73 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 85 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 107 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 130 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 141 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0015]\script_pak_e06-[0015].po
+  WARN   [untranslated]: 10 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:5, INFO:1] script_pak_e06\script_pak_e06-[0016]\script_pak_e06-[0016].po
+  WARN   [duplicate_sentence_translation_global] line 35 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='These are a bunch of investigation reports related to different cold cases.'. 'Đây là một xấp báo cáo điều tra liên quan đến các vụ án chưa có lời giải khác nhau.' -> script_pak_e04-[0016].po: line 79 0007 | MAKOTO NAEGI, script_pak_e04-[0016].po: line 103 0009 | MAKOTO NAEGI | 'Đây đều là những báo cáo điều tra về các vụ án chưa có lời giải sao...' -> script_pak_e05-[0016].po: line 17 0001 | MAKOTO NAEGI | 'Đây là tập hợp các báo cáo điều tra liên quan đến nhiều vụ án chưa có lời giải...' -> script_pak_e06-[0016].po: line 35 0003 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 35 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 93 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 104 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 87 0008 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:6] script_pak_e06\script_pak_e06-[0017]\script_pak_e06-[0017].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 54 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 79 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 104 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e06\script_pak_e06-[0018]\script_pak_e06-[0018].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[STRUCT:10] script_pak_e06\script_pak_e06-[0019]\script_pak_e06-[0019].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 54 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 66 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 76 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 88 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 98 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 110 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 120 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:7] script_pak_e06\script_pak_e06-[0020]\script_pak_e06-[0020].po
+  WARN   [duplicate_sentence_translation_global] line 52 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't have much time left...". 'Thời gian không còn nhiều nữa...' -> script_pak_e06-[0020].po: line 52 0005 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 54 0004 | MAKOTO NAEGI | 'Mình không còn nhiều thời gian nữa...' -> script_pak_e06-[0039].po: line 62 0005 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 46 0004 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 46 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 83 0008 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="See ya, metal plate party! I'm sure I'll miss you someday... Yeah, right!". 'Tạm biệt nhé, bữa tiệc tấm thép!! Chắc chắn là mình sẽ nhớ cậu... Ừ, còn lâu nhé!!' -> script_pak_e06-[0020].po: line 83 0008 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 82 0007 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 63 0005 | MAKOTO NAEGI | 'Tạm biệt nhé, bữa tiệc tấm thép! Chắc chắn là mình sẽ nhớ cậu... Ừ, còn lâu nhé!' -> script_pak_e06-[0038].po: line 60 0005 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 93 0008 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 55 0005 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 67 0006 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 44 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 52 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 61 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 83 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:1, STRUCT:1] script_pak_e06\script_pak_e06-[0021]\script_pak_e06-[0021].po
+  ERROR  [clt_tag_integrity] line 16 0001 | MAKOTO NAEGI: CLT tags differ. source=[], translation=['<CLT 4>', '<CLT>']
+  WARN   [duplicate_sentence_translation_global] line 27 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='It also leads to the secret room. I should probably avoid going in and out of there too much...'. 'Nó cũng dẫn đến căn phòng bí mật. Mình có lẽ nên hạn chế ra vào nơi đó quá nhiều...' -> script_pak_e04-[0021].po: line 29 0002 | MAKOTO NAEGI | 'Nó còn dẫn đến căn phòng bí mật nữa. Mình nghĩ mình nên tránh ra vào chỗ đó quá thường xuyên thì hơn...' -> script_pak_e05-[0021].po: line 27 0002 | MAKOTO NAEGI | 'Nó cũng dẫn tới căn phòng bí mật nữa... Có lẽ mình không nên ra vào đó quá thường xuyên...' -> script_pak_e06-[0021].po: line 27 0002 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:2, STRUCT:5] script_pak_e06\script_pak_e06-[0022]\script_pak_e06-[0022].po
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Maybe it's just to give us something to look at.". '...Hay là để cho mình có cái mà nhìn cho đỡ chán à?' -> script_pak_e06-[0005].po: line 29 0002 | MAKOTO NAEGI | '...Có phải vì khung cảnh nhìn trống trải quá không nhỉ?' -> script_pak_e06-[0008].po: line 29 0002 | MAKOTO NAEGI | 'Có phải để chúng ta có cái mà nhìn không nhỉ?' -> script_pak_e06-[0022].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ là để chúng ta có cái mà nhìn thôi.' -> script_pak_e06-[0025].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ chỉ để chúng ta có thứ gì đó để nhìn thôi chăng?' -> script_pak_e06-[0052].po: line 29 0002 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 55 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The poster has a super famous supermodel. Her name is Diamond Yuka, I think...'. 'Tấm áp phích vẽ một siêu mẫu cực kỳ nổi tiếng. Tên cô ấy là Diamond Yuka, mình nghĩ vậy...' -> script_pak_e04-[0023].po: line 18 0001 | MAKOTO NAEGI | 'Đây là áp phích của một siêu mẫu siêu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e05-[0022].po: line 18 0001 | MAKOTO NAEGI | 'Trên tấm áp phích là một người mẫu nổi tiếng. Mình nghĩ cô ấy tên là Diamond Yuka...' -> script_pak_e06-[0022].po: line 55 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 46 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 55 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:1, WARN:1, STRUCT:25] script_pak_e06\script_pak_e06-[0024]\script_pak_e06-[0024].po
+  ERROR  [clt_tag_integrity] line 167 0017 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=[]
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm not gonna let these things scare me anymore... I'm not afraid of you, Monokuma!". 'Mình sẽ không để những thứ như màn hình này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0011].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0024].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!!' -> script_pak_e06-[0026].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0027].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 18 0001 | MAKOTO NAEGI, +1 more | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!' -> script_pak_e06-[0038].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0043].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 18 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 74 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 83 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 94 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 104 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 112 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 121 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 129 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 139 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 148 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 159 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 167 0017 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 176 0018 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 184 0019 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 192 0020 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 200 0021 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 208 0022 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 216 0023 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 224 0024 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 232 0025 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 240 0026 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 248 0027 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 256 0028 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 264 0029 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 272 0030 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:2, STRUCT:8] script_pak_e06\script_pak_e06-[0025]\script_pak_e06-[0025].po
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Maybe it's just to give us something to look at.". '...Hay là để cho mình có cái mà nhìn cho đỡ chán à?' -> script_pak_e06-[0005].po: line 29 0002 | MAKOTO NAEGI | '...Có phải vì khung cảnh nhìn trống trải quá không nhỉ?' -> script_pak_e06-[0008].po: line 29 0002 | MAKOTO NAEGI | 'Có phải để chúng ta có cái mà nhìn không nhỉ?' -> script_pak_e06-[0022].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ là để chúng ta có cái mà nhìn thôi.' -> script_pak_e06-[0025].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ chỉ để chúng ta có thứ gì đó để nhìn thôi chăng?' -> script_pak_e06-[0052].po: line 29 0002 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 79 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It's...a Venus statue. This is the only thing in here that actually seems like it belongs...". 'Đây là... tượng thần Vệ Nữ. Đây là thứ duy nhất ở đây có vẻ như thuộc về nơi này...' -> script_pak_e05-[0025].po: line 30 0002 | MAKOTO NAEGI | 'Đó là... bức tượng thần Vệ Nữ. Đây là thứ duy nhất ở đây trông có vẻ như thuộc về nơi này...' -> script_pak_e06-[0025].po: line 79 0007 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 47 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 67 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 79 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 100 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 133 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:6] script_pak_e06\script_pak_e06-[0026]\script_pak_e06-[0026].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm not gonna let these things scare me anymore... I'm not afraid of you, Monokuma!". 'Mình sẽ không để những thứ như màn hình này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0011].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0024].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!!' -> script_pak_e06-[0026].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0027].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 18 0001 | MAKOTO NAEGI, +1 more | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!' -> script_pak_e06-[0038].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0043].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 18 0001 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 56 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 65 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:6] script_pak_e06\script_pak_e06-[0027]\script_pak_e06-[0027].po
+  WARN   [duplicate_sentence_translation_global] line 46 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='A huge machine like this... Could it really be *just* an air purifier?'. 'Một cỗ máy khổng lồ thế này... Liệu nó có thực sự *chỉ* là một cái máy lọc không khí không?' -> script_pak_e04-[0029].po: line 16 0001 | MAKOTO NAEGI | 'Một cỗ máy lớn thế này... Có thực sự *chỉ* là máy lọc không khí không vậy?' -> script_pak_e06-[0027].po: line 46 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 81 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 106 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 117 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:4, STRUCT:8] script_pak_e06\script_pak_e06-[0028]\script_pak_e06-[0028].po
+  WARN   [duplicate_sentence_translation_global] line 70 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Now that's a big shelf.". 'Đó là một cái kệ lớn.' -> script_pak_e05-[0028].po: line 34 0003 | MAKOTO NAEGI | 'Cái kệ này to thật đấy...' -> script_pak_e06-[0028].po: line 70 0007 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 79 0008 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='A bunch of lab equipment and stuff has been piled up on it. Totally disorganized...'. 'Một đống dụng cụ thí nghiệm và đồ đạc được chất đống trên đó. Hoàn toàn lộn xộn...' -> script_pak_e05-[0028].po: line 43 0004 | MAKOTO NAEGI | 'Một đống thiết bị thí nghiệm và đủ thứ bị chất đống trên đó. Chẳng ngăn nắp chút nào...' -> script_pak_e06-[0028].po: line 79 0008 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 90 0009 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='There are shelves full of stuff.'. 'Có những cái kệ chứa đầy đồ đạc.' -> script_pak_e05-[0028].po: line 54 0005 | MAKOTO NAEGI | 'Có mấy cái kệ đầy ắp đồ đạc...' -> script_pak_e06-[0028].po: line 90 0009 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 99 0010 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="There's a lot here, but I don't see anything that catches my eye. So...that's it.". 'Ở đây có nhiều thứ lắm, nhưng mình không thấy thứ gì gây chú ý cả. Vậy nên... chỉ có vậy thôi.' -> script_pak_e05-[0028].po: line 63 0006 | MAKOTO NAEGI | 'Ở đây có nhiều đồ thật, nhưng chẳng có cái nào làm mình để ý cả. Vậy thôi... chỉ thế thôi.' -> script_pak_e06-[0028].po: line 99 0010 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 59 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 70 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 79 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 90 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 99 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1, STRUCT:7] script_pak_e06\script_pak_e06-[0029] Monitor Room Investigation\script_pak_e06-[0029].po
+  WARN   [duplicate_sentence_translation_global] line 48 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Time is money, they say. Which means I'm burning through my life savings just by existing...". 'Người ta nói thời gian là tiền bạc. Nghĩa là mình đang đốt sạch vốn liếng cuộc đời mình chỉ bằng cách tồn tại...' -> script_pak_e06-[0029].po: line 48 0004 | MAKOTO NAEGI, script_pak_e06-[0038].po: line 48 0004 | MAKOTO NAEGI | 'Người ta nói thời gian là tiền bạc. Nghĩa là mình đang đốt sạch tiền tiết kiệm cả đời chỉ bằng việc tồn tại...' -> script_pak_e06-[0049].po: line 56 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 60 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 70 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 82 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0029]\script_pak_e06-[0029].po
+  WARN   [untranslated]: 7 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[STRUCT:5] script_pak_e06\script_pak_e06-[0030] Metal Plate Investigation\script_pak_e06-[0030].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 54 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 75 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 85 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0030]\script_pak_e06-[0030].po
+  WARN   [untranslated]: 5 untranslated entries: 0001 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e06\script_pak_e06-[0031]\script_pak_e06-[0031].po
+  WARN   [duplicate_sentence_translation_global] line 25 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Obviously I can't go in...". 'Đương nhiên là mình không thể vào rồi...' -> script_pak_e06-[0003].po: line 45 0004 | MAKOTO NAEGI | 'Tất nhiên là mình không thể vào rồi...' -> script_pak_e06-[0031].po: line 25 0002 | MAKOTO NAEGI, script_pak_e06-[0048].po: line 25 0002 | MAKOTO NAEGI | 'Rõ ràng là mình không thể vào trong được rồi...' -> script_pak_e06-[0058].po: line 33 0003 | MAKOTO NAEGI
+
+[STRUCT:9] script_pak_e06\script_pak_e06-[0032] Science Lab Investigation\script_pak_e06-[0032].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 44 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 65 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 89 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 101 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 113 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0032]\script_pak_e06-[0032].po
+  WARN   [untranslated]: 9 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI
+
+[STRUCT:55] script_pak_e06\script_pak_e06-[0033] Classroom Flower Investigation\script_pak_e06-[0033].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 59 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 68 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 79 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 88 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 99 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 108 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 119 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 128 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 139 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 148 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 159 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 168 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 179 0017 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 188 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 199 0019 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 208 0020 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 219 0021 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 228 0022 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 239 0023 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 248 0024 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 259 0025 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 268 0026 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 279 0027 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 288 0028 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 299 0029 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 308 0030 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 319 0031 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 328 0032 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 339 0033 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 348 0034 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 359 0035 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 368 0036 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 379 0037 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 388 0038 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 399 0039 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 408 0040 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 419 0041 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 428 0042 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 439 0043 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 448 0044 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 459 0045 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 468 0046 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 479 0047 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 488 0048 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 499 0049 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 508 0050 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 519 0051 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 528 0052 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 539 0053 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 548 0054 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 559 0055 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0033]\script_pak_e06-[0033].po
+  WARN   [untranslated]: 55 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI ...
+
+[STRUCT:6] script_pak_e06\script_pak_e06-[0034] Archive Room Investigation\script_pak_e06-[0034].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 44 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 52 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 61 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 73 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0034]\script_pak_e06-[0034].po
+  WARN   [untranslated]: 6 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[STRUCT:5] script_pak_e06\script_pak_e06-[0035] Music Room Investigation\script_pak_e06-[0035].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0035]\script_pak_e06-[0035].po
+  WARN   [untranslated]: 5 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[STRUCT:2] script_pak_e06\script_pak_e06-[0036] Camera Investigation\script_pak_e06-[0036].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0036]\script_pak_e06-[0036].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+[OK] script_pak_e06\script_pak_e06-[0037] Leave Area Prompt\script_pak_e06-[0037].po
+
+[OK] script_pak_e06\script_pak_e06-[0037]\script_pak_e06-[0037].po
+
+[WARN:3, STRUCT:7] script_pak_e06\script_pak_e06-[0038] Monitor Room Investigation\script_pak_e06-[0038].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm not gonna let these things scare me anymore... I'm not afraid of you, Monokuma!". 'Mình sẽ không để những thứ như màn hình này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0011].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi, Monokuma!!' -> script_pak_e06-[0024].po: line 18 0001 | MAKOTO NAEGI | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!!' -> script_pak_e06-[0026].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0027].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 18 0001 | MAKOTO NAEGI, +1 more | 'Mình sẽ không để những thứ này làm mình sợ hãi nữa... Mình không sợ ngươi đâu, Monokuma!' -> script_pak_e06-[0038].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0043].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 60 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="See ya, metal plate party! I'm sure I'll miss you someday... Yeah, right!". 'Tạm biệt nhé, bữa tiệc tấm thép!! Chắc chắn là mình sẽ nhớ cậu... Ừ, còn lâu nhé!!' -> script_pak_e06-[0020].po: line 83 0008 | MAKOTO NAEGI, script_pak_e06-[0029].po: line 82 0007 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 63 0005 | MAKOTO NAEGI | 'Tạm biệt nhé, bữa tiệc tấm thép! Chắc chắn là mình sẽ nhớ cậu... Ừ, còn lâu nhé!' -> script_pak_e06-[0038].po: line 60 0005 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 93 0008 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 55 0005 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 67 0006 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 82 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm sure I'll get out of here soon. No...I absolutely HAVE to get out!". 'Chắc chắn sớm muộn gì mình cũng sẽ được về. Không... mình nhất định phải tìm cách thoát ra!!' -> script_pak_e06-[0011].po: line 77 0006 | MAKOTO NAEGI, script_pak_e06-[0011].po: line 99 0008 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 73 0007 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 95 0009 | MAKOTO NAEGI, +6 more | 'Chắc chắn sớm muộn gì mình cũng sẽ được về. Không... mình nhất định phải tìm cách thoát ra!' -> script_pak_e06-[0038].po: line 82 0007 | MAKOTO NAEGI, script_pak_e06-[0039].po: line 81 0007 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 65 0006 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 87 0008 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 48 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 60 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 72 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 82 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0038]\script_pak_e06-[0038].po
+  WARN   [untranslated]: 7 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[WARN:3, STRUCT:6] script_pak_e06\script_pak_e06-[0039] Surveillance Monitor Check\script_pak_e06-[0039].po
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="...Nope! Can't do it. Think, man! Think!". '...Không được! Không thể làm thế được. Tỉnh táo lại đi! Suy nghĩ đi!' -> script_pak_e06-[0007].po: line 29 0002 | MAKOTO NAEGI | '...Không thể nào! Không được. Nghĩ đi, nghĩ đi!' -> script_pak_e06-[0012].po: line 29 0002 | MAKOTO NAEGI | '...Không được! Không thể làm thế. Nghĩ đi, mình phải nghĩ!' -> script_pak_e06-[0039].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 62 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't have much time left...". 'Thời gian không còn nhiều nữa...' -> script_pak_e06-[0020].po: line 52 0005 | MAKOTO NAEGI, script_pak_e06-[0030].po: line 54 0004 | MAKOTO NAEGI | 'Mình không còn nhiều thời gian nữa...' -> script_pak_e06-[0039].po: line 62 0005 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 46 0004 | MAKOTO NAEGI, script_pak_e06-[0046].po: line 46 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 71 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="The window's completely covered by that metal plate. And just on the other side of it...". 'Cửa sổ bị tấm thép dày che khuất... Phía bên kia...' -> script_pak_e06-[0011].po: line 67 0005 | MAKOTO NAEGI, script_pak_e06-[0011].po: line 89 0007 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 63 0006 | MAKOTO NAEGI, script_pak_e06-[0012].po: line 85 0008 | MAKOTO NAEGI, +7 more | 'Cửa sổ bị tấm thép dày che khuất. Phía bên kia...' -> script_pak_e06-[0039].po: line 71 0006 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 55 0005 | MAKOTO NAEGI, script_pak_e06-[0045].po: line 77 0007 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 81 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 93 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0039]\script_pak_e06-[0039].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+[OK] script_pak_e06\script_pak_e06-[0040] Area Exit Confirmation\script_pak_e06-[0040].po
+
+[OK] script_pak_e06\script_pak_e06-[0040]\script_pak_e06-[0040].po
+
+[WARN:3, STRUCT:11] script_pak_e06\script_pak_e06-[0042] Storage Room Investigation\script_pak_e06-[0042].po
+  WARN   [duplicate_sentence_translation_global] line 91 0009 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Is it true...? Does it really eat paper, plastic, and people?'. 'Thật sao...? Nó thực sự ăn cả giấy, nhựa và con người ư?' -> script_pak_e05-[0041].po: line 23 0002 | MAKOTO NAEGI | 'Có thật không vậy...? Nó thực sự ăn cả giấy, nhựa và con người sao?' -> script_pak_e06-[0042].po: line 91 0009 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 134 0013 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Those nozzles poking out...'. 'Những vòi phun nhô ra đó...' -> script_pak_e05-[0041].po: line 161 0018 | MAKOTO NAEGI | 'Những vòi phun nhô ra kia...' -> script_pak_e06-[0042].po: line 134 0013 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 141 0014 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Are those...the sprinklers?'. 'Đó là... vòi phun nước sao?' -> script_pak_e05-[0041].po: line 168 0019 | MAKOTO NAEGI | 'Kia là... hệ thống phun nước sao?' -> script_pak_e06-[0042].po: line 141 0014 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 47 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 56 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 67 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 76 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 91 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 103 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 114 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 123 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 134 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0042]\script_pak_e06-[0042].po
+  WARN   [untranslated]: 13 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:10] script_pak_e06\script_pak_e06-[0043] Dojo Investigation\script_pak_e06-[0043].po
+  WARN   [duplicate_sentence_translation_global] line 79 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="There's a bunch of wooden lockers in here.". 'Có mấy cái tủ đồ bằng gỗ ở đây này.' -> script_pak_e05-[0045].po: line 41 0003 | MAKOTO NAEGI | 'Có một dãy tủ đồ gỗ ở đây.' -> script_pak_e06-[0043].po: line 79 0007 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 47 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 56 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 68 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 79 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 88 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 100 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 110 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 122 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0043]\script_pak_e06-[0043].po
+  WARN   [untranslated]: 11 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI
+
+[STRUCT:12, INFO:1] script_pak_e06\script_pak_e06-[0044] Morgue Investigation\script_pak_e06-[0044].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 50 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 58 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 79 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 88 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 97 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 108 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 123 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 134 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 65 0006 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, INFO:1] script_pak_e06\script_pak_e06-[0044]\script_pak_e06-[0044].po
+  WARN   [untranslated]: 13 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 61 0006 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:8] script_pak_e06\script_pak_e06-[0045] Monitor Room Investigation\script_pak_e06-[0045].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 46 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 55 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 65 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 87 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0045]\script_pak_e06-[0045].po
+  WARN   [untranslated]: 8 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+
+[STRUCT:6] script_pak_e06\script_pak_e06-[0046] Monitor Room Defiance\script_pak_e06-[0046].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 46 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 55 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 67 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0046]\script_pak_e06-[0046].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[STRUCT:6, INFO:1] script_pak_e06\script_pak_e06-[0047] Monitor Inspection\script_pak_e06-[0047].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 81 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 91 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 102 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 114 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 130 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 124 0012 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, INFO:1] script_pak_e06\script_pak_e06-[0047]\script_pak_e06-[0047].po
+  WARN   [untranslated]: 6 untranslated entries: 0002 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 118 0012 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] script_pak_e06\script_pak_e06-[0048] Dorm Room Check\script_pak_e06-[0048].po
+
+[WARN:1] script_pak_e06\script_pak_e06-[0048]\script_pak_e06-[0048].po
+  WARN   [untranslated]: 38 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI ...
+
+[WARN:3, STRUCT:4] script_pak_e06\script_pak_e06-[0049] Surveillance Monitor Check\script_pak_e06-[0049].po
+  WARN   [duplicate_sentence_translation_global] line 36 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Even now...on the other side of this camera, the mastermind...'. 'Ngay cả lúc này... ở phía bên kia camera này, kẻ chủ mưu...' -> script_pak_e06-[0007].po: line 40 0003 | MAKOTO NAEGI | 'Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu...' -> script_pak_e06-[0009].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 31 0002 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 18 0001 | MAKOTO NAEGI, +11 more | 'Ngay cả bây giờ... ở phía bên kia của chiếc camera này, kẻ chủ mưu...' -> script_pak_e06-[0049].po: line 36 0003 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 36 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 47 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="But that's gonna come to an end soon enough!". 'Nhưng chuyện đó sắp chấm dứt rồi...!' -> script_pak_e06-[0007].po: line 49 0004 | MAKOTO NAEGI | 'Nhưng chuyện đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0009].po: line 45 0004 | MAKOTO NAEGI, script_pak_e06-[0010].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0015].po: line 40 0003 | MAKOTO NAEGI, script_pak_e06-[0016].po: line 27 0002 | MAKOTO NAEGI, +11 more | 'Nhưng điều đó sẽ sớm kết thúc thôi!' -> script_pak_e06-[0049].po: line 47 0004 | MAKOTO NAEGI, script_pak_e06-[0051].po: line 47 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 56 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Time is money, they say. Which means I'm burning through my life savings just by existing...". 'Người ta nói thời gian là tiền bạc. Nghĩa là mình đang đốt sạch vốn liếng cuộc đời mình chỉ bằng cách tồn tại...' -> script_pak_e06-[0029].po: line 48 0004 | MAKOTO NAEGI, script_pak_e06-[0038].po: line 48 0004 | MAKOTO NAEGI | 'Người ta nói thời gian là tiền bạc. Nghĩa là mình đang đốt sạch tiền tiết kiệm cả đời chỉ bằng việc tồn tại...' -> script_pak_e06-[0049].po: line 56 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 47 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 56 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0049]\script_pak_e06-[0049].po
+  WARN   [untranslated]: 4 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI
+
+[WARN:2, STRUCT:6] script_pak_e06\script_pak_e06-[0050] Kitchen Investigation\script_pak_e06-[0050].po
+  WARN   [duplicate_sentence_translation_global] line 44 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Not surprisingly, one of the knives is still missing.'. 'Không ngạc nhiên lắm, một con dao vẫn còn thiếu...' -> script_pak_e05-[0053].po: line 17 0001 | MAKOTO NAEGI | 'Không ngạc nhiên chút nào, vẫn còn thiếu một con dao.' -> script_pak_e06-[0050].po: line 44 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 53 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="It all began then...with Sayaka's case...". 'Mọi chuyện bắt đầu từ lúc đó... từ vụ án của Sayaka...' -> script_pak_e05-[0053].po: line 26 0002 | MAKOTO NAEGI | 'Tất cả bắt đầu từ lúc đó... với vụ án của Sayaka...' -> script_pak_e06-[0050].po: line 53 0004 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 44 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 53 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 89 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1, STRUCT:1] script_pak_e06\script_pak_e06-[0050]\script_pak_e06-[0050].po
+  WARN   [untranslated]: 5 untranslated entries: 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+
+[STRUCT:7] script_pak_e06\script_pak_e06-[0051] Monitor Investigation\script_pak_e06-[0051].po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 36 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 47 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 87 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 109 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 120 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 129 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0051]\script_pak_e06-[0051].po
+  WARN   [untranslated]: 7 untranslated entries: 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI
+
+[WARN:4, STRUCT:21] script_pak_e06\script_pak_e06-[0052] Laundry Room Investigation\script_pak_e06-[0052].po
+  WARN   [duplicate_sentence_translation_global] line 18 0001 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Why do they even need all these monitors? A normal PA announcement would work just as well...'. 'Mà rốt cuộc, tại sao lại cần mấy cái màn hình này chứ? Mình nghĩ chỉ cần thông báo qua loa là đủ rồi mà...' -> script_pak_e06-[0005].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao lại cần tất cả những màn hình này nhỉ? Thông báo qua loa bình thường là đủ rồi mà...' -> script_pak_e06-[0008].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0022].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0025].po: line 18 0001 | MAKOTO NAEGI | 'Tại sao họ lại cần tất cả những chiếc màn hình này chứ? Một thông báo qua loa bình thường cũng có tác dụng tương tự mà.…' -> script_pak_e06-[0052].po: line 18 0001 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 18 0001 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 29 0002 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Maybe it's just to give us something to look at.". '...Hay là để cho mình có cái mà nhìn cho đỡ chán à?' -> script_pak_e06-[0005].po: line 29 0002 | MAKOTO NAEGI | '...Có phải vì khung cảnh nhìn trống trải quá không nhỉ?' -> script_pak_e06-[0008].po: line 29 0002 | MAKOTO NAEGI | 'Có phải để chúng ta có cái mà nhìn không nhỉ?' -> script_pak_e06-[0022].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ là để chúng ta có cái mà nhìn thôi.' -> script_pak_e06-[0025].po: line 29 0002 | MAKOTO NAEGI | 'Có lẽ chỉ để chúng ta có thứ gì đó để nhìn thôi chăng?' -> script_pak_e06-[0052].po: line 29 0002 | MAKOTO NAEGI, script_pak_e06-[0053].po: line 29 0002 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 38 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="The mastermind's been on the other side of this thing, watching us. But...who are they really?". 'Camera an ninh... Kẻ chủ mưu đang ở phía bên kia... đang quan sát chúng mình. Nhưng... kẻ đó rốt cuộc là ai?' -> script_pak_e06-[0005].po: line 38 0003 | MAKOTO NAEGI | 'Camera giám sát... Kẻ chủ mưu đang ở phía bên kia... quan sát chúng ta. Nếu vậy thì, kẻ đó là ai chứ?' -> script_pak_e06-[0008].po: line 38 0003 | MAKOTO NAEGI | 'Kẻ chủ mưu đã ở phía bên kia của thứ này, theo dõi chúng ta. Nhưng... thực sự thì kẻ đó là ai?' -> script_pak_e06-[0052].po: line 38 0003 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 233 0021 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="All that's inside the vending machine is energy drinks...". 'Là máy bán hàng tự động... toàn là mấy loại đồ uống hóa học không à.' -> script_pak_e05-[0009].po: line 18 0001 | MAKOTO NAEGI | 'Máy bán hàng tự động đây mà... Toàn mấy loại đồ uống hóa chất không à.' -> script_pak_e05-[0055].po: line 176 0017 | MAKOTO NAEGI | 'Tất cả những gì trong máy bán hàng tự động chỉ toàn là nước tăng lực...' -> script_pak_e06-[0052].po: line 233 0021 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 50 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 61 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 82 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 92 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 103 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 113 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 124 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 134 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 145 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 155 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 166 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 176 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 187 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 197 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 209 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 221 0020 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 233 0021 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0052]\script_pak_e06-[0052].po
+  WARN   [untranslated]: 21 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0019 | MAKOTO NAEGI, 0020 | MAKOTO NAEGI ...
+
+[STRUCT:17] script_pak_e06\script_pak_e06-[0053] Kitchen Food Talk\script_pak_e06-[0053].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 29 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 75 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 86 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 95 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 106 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 118 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 129 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 138 0012 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 149 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 161 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 172 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 181 0016 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 192 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 204 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 235 0022 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0053]\script_pak_e06-[0053].po
+  WARN   [untranslated]: 18 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MAKOTO NAEGI, 0014 | MAKOTO NAEGI, 0015 | MAKOTO NAEGI, 0016 | MAKOTO NAEGI, 0017 | MAKOTO NAEGI, 0018 | MAKOTO NAEGI, 0022 | MAKOTO NAEGI, 0023 | MAKOTO NAEGI
+
+[WARN:2, STRUCT:5] script_pak_e06\script_pak_e06-[0054] Locker Room Investigation\script_pak_e06-[0054].po
+  WARN   [duplicate_sentence_translation_global] line 49 0004 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='The massage chair...'. 'Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh kẹo—họ có tất cả mọi thứ.' -> script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 37 0003 | MAKOTO NAEGI | 'Một chiếc tủ lạnh... Mình có thể lấy một thức uống mát lạnh và không tốn một xu nào!' -> script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI, script_pak_e04-[0048].po: line 61 0005 | MAKOTO NAEGI | 'Cái ghế mát-xa này...' -> script_pak_e05-[0057].po: line 28 0002 | MAKOTO NAEGI | 'Chiếc ghế mát-xa...' -> script_pak_e06-[0054].po: line 49 0004 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 58 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I'm gonna stay away, in case it's been booby-trapped somehow...". 'Mình không nên dùng, nhỡ đâu có cái bẫy gì thì nguy...' -> script_pak_e05-[0057].po: line 39 0003 | MAKOTO NAEGI | 'Tốt nhất là không nên dùng, phòng trường hợp nó bị gài bẫy...' -> script_pak_e06-[0054].po: line 58 0005 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 26 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 58 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0054]\script_pak_e06-[0054].po
+  WARN   [untranslated]: 5 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI
+
+[STRUCT:2] script_pak_e06\script_pak_e06-[0055] Bathhouse Investigation\script_pak_e06-[0055].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0055]\script_pak_e06-[0055].po
+  WARN   [untranslated]: 2 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI
+
+[STRUCT:3] script_pak_e06\script_pak_e06-[0056] Sauna Heat Talk\script_pak_e06-[0056].po
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 25 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 34 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0056]\script_pak_e06-[0056].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[OK] script_pak_e06\script_pak_e06-[0057] Fish Tank Check\script_pak_e06-[0057].po
+
+[OK] script_pak_e06\script_pak_e06-[0057]\script_pak_e06-[0057].po
+
+[WARN:1] script_pak_e06\script_pak_e06-[0058] Girls Bathroom Check\script_pak_e06-[0058].po
+  WARN   [duplicate_sentence_translation_global] line 33 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="Obviously I can't go in...". 'Đương nhiên là mình không thể vào rồi...' -> script_pak_e06-[0003].po: line 45 0004 | MAKOTO NAEGI | 'Tất nhiên là mình không thể vào rồi...' -> script_pak_e06-[0031].po: line 25 0002 | MAKOTO NAEGI, script_pak_e06-[0048].po: line 25 0002 | MAKOTO NAEGI | 'Rõ ràng là mình không thể vào trong được rồi...' -> script_pak_e06-[0058].po: line 33 0003 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e06\script_pak_e06-[0058]\script_pak_e06-[0058].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI
+
+[STRUCT:6] script_pak_e06\script_pak_e06-[0059] Ruined Bathroom\script_pak_e06-[0059].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 30 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 42 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 54 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 65 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 74 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0059]\script_pak_e06-[0059].po
+  WARN   [untranslated]: 6 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI
+
+[OK] script_pak_e06\script_pak_e06-[0060] Exit Confirmation\script_pak_e06-[0060].po
+
+[OK] script_pak_e06\script_pak_e06-[0060]\script_pak_e06-[0060].po
+
+[STRUCT:5] script_pak_e06\script_pak_e06-[0061] Headmaster Desk Investigation\script_pak_e06-[0061].po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 26 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 35 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 46 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 55 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:1] script_pak_e06\script_pak_e06-[0061]\script_pak_e06-[0061].po
+  WARN   [untranslated]: 5 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI
+
+[STRUCT:9] script_pak_e06\script_pak_e06-[0062] Headmaster Secret Box\script_pak_e06-[0062].po
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 26 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 37 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 71 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 79 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 87 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 0
+
+[WARN:1] script_pak_e06\script_pak_e06-[0062]\script_pak_e06-[0062].po
+  WARN   [untranslated]: 9 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI
+
+[OK] script_pak_e06\script_pak_e06-[0063] Exit Confirmation\script_pak_e06-[0063].po
+
+[OK] script_pak_e06\script_pak_e06-[0063]\script_pak_e06-[0063].po
+
+[STRUCT:1] script_pak_e07\script_pak_e07-[0000]\script_pak_e07-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e08\script_pak_e08-[0000] Interaction Choice\script_pak_e08-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e08\script_pak_e08-[0000]\script_pak_e08-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[OK] script_pak_e08\script_pak_e08-[0002] Monokuma Opening Speech\script_pak_e08-[0002].po
+
+[WARN:1] script_pak_e08\script_pak_e08-[0002]\script_pak_e08-[0002].po
+  WARN   [untranslated]: 5 untranslated entries: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA
+
+[STRUCT:1] script_pak_e09\script_pak_e09-[0000] Interaction Choice\script_pak_e09-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] script_pak_e09\script_pak_e09-[0000]\script_pak_e09-[0000].po
+  STRUCT [line_count_match] line 100 0011 | NARRATION: msgid has 2 newline separators; msgstr has 1
+
+[ERROR:2, WARN:10, INFO:6] script_pak_e09\script_pak_e09-[0004] Monokuma Concept Review\script_pak_e09-[0004].po
+  ERROR  [clt_tag_integrity] line 210 0026 | NARRATION: CLT tags differ. source=['<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>'], translation=['<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>']
+  ERROR  [clt_tag_integrity] line 220 0027 | NARRATION: CLT tags differ. source=['<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>'], translation=['<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>', '<CLT 3>', '<CLT>', '<CLT 23>', '<CLT>']
+  WARN   [duplicate_sentence_translation] line 187 0023 | MONOKUMA: Same msgid has different msgstr. msgid="...I guess I'll give you some more tickets!". '...ta đoán là ta sẽ cho ngươi thêm vài cái vé nữa!' -> line 187 0023 | MONOKUMA, line 305 0037 | MONOKUMA, line 638 0084 | MONOKUMA, +3 more | '...Ta đoán là ta sẽ cho ngươi thêm vài cái vé!' -> line 418 0054 | MONOKUMA, line 501 0065 | MONOKUMA, line 548 0071 | MONOKUMA, +1 more | '...Ta đoán là ta sẽ cho các ngươi thêm vài cái vé!' -> line 994 0135 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 199 0025 | NARRATION: Same msgid has different msgstr. msgid="Sorry to interrupt again. How'd your first project review go?". 'Xin lỗi vì lại làm phiền. Lần đánh giá dự án đầu tiên của bạn thế nào rồi?' -> line 199 0025 | NARRATION | 'Xin lỗi vì lại làm phiền. Lần đánh giá dự án đầu tiên của các ngươi thế nào rồi?' -> line 1214 0165 | NARRATION
+  WARN   [duplicate_sentence_translation] line 210 0026 | NARRATION: Same msgid has different msgstr. msgid='If you found it difficult, I have some good news! This mode has its very own New Game+ cycle !'. 'Nếu bạn thấy nó khó, ta có tin tốt đây. Chế độ này có cả chơi lại (New Game+) !' -> line 210 0026 | NARRATION | 'Nếu bạn thấy nó khó, ta có tin tốt đây. Chế độ này có cả Vòng chơi lại (New Game+) !' -> line 1225 0166 | NARRATION
+  WARN   [duplicate_sentence_translation] line 296 0036 | MONOKUMA: Same msgid has different msgstr. msgid="It's a total failure, but you did technically finish your assignment, so...". 'Đây là một thất bại hoàn toàn, nhưng về mặt kỹ thuật thì ngươi đã hoàn thành bài tập, nên là...' -> line 296 0036 | MONOKUMA | 'Nó là một thất bại thảm hại, nhưng ngươi đã hoàn thành bài tập, nên là...' -> line 409 0053 | MONOKUMA, line 492 0064 | MONOKUMA, line 539 0070 | MONOKUMA, +5 more | 'Nó là một thất bại thảm hại, nhưng về mặt kỹ thuật thì các ngươi đã hoàn thành bài tập, nên là...' -> line 985 0134 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 409 0053 | MONOKUMA: Same msgid has different msgstr. msgid="It's a total failure, but you did technically finish your assignment, so...". 'Đây là một thất bại hoàn toàn, nhưng về mặt kỹ thuật thì ngươi đã hoàn thành bài tập, nên là...' -> line 296 0036 | MONOKUMA | 'Nó là một thất bại thảm hại, nhưng ngươi đã hoàn thành bài tập, nên là...' -> line 409 0053 | MONOKUMA, line 492 0064 | MONOKUMA, line 539 0070 | MONOKUMA, +5 more | 'Nó là một thất bại thảm hại, nhưng về mặt kỹ thuật thì các ngươi đã hoàn thành bài tập, nên là...' -> line 985 0134 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 418 0054 | MONOKUMA: Same msgid has different msgstr. msgid="...I guess I'll give you some more tickets!". '...ta đoán là ta sẽ cho ngươi thêm vài cái vé nữa!' -> line 187 0023 | MONOKUMA, line 305 0037 | MONOKUMA, line 638 0084 | MONOKUMA, +3 more | '...Ta đoán là ta sẽ cho ngươi thêm vài cái vé!' -> line 418 0054 | MONOKUMA, line 501 0065 | MONOKUMA, line 548 0071 | MONOKUMA, +1 more | '...Ta đoán là ta sẽ cho các ngươi thêm vài cái vé!' -> line 994 0135 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 985 0134 | MONOKUMA: Same msgid has different msgstr. msgid="It's a total failure, but you did technically finish your assignment, so...". 'Đây là một thất bại hoàn toàn, nhưng về mặt kỹ thuật thì ngươi đã hoàn thành bài tập, nên là...' -> line 296 0036 | MONOKUMA | 'Nó là một thất bại thảm hại, nhưng ngươi đã hoàn thành bài tập, nên là...' -> line 409 0053 | MONOKUMA, line 492 0064 | MONOKUMA, line 539 0070 | MONOKUMA, +5 more | 'Nó là một thất bại thảm hại, nhưng về mặt kỹ thuật thì các ngươi đã hoàn thành bài tập, nên là...' -> line 985 0134 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 994 0135 | MONOKUMA: Same msgid has different msgstr. msgid="...I guess I'll give you some more tickets!". '...ta đoán là ta sẽ cho ngươi thêm vài cái vé nữa!' -> line 187 0023 | MONOKUMA, line 305 0037 | MONOKUMA, line 638 0084 | MONOKUMA, +3 more | '...Ta đoán là ta sẽ cho ngươi thêm vài cái vé!' -> line 418 0054 | MONOKUMA, line 501 0065 | MONOKUMA, line 548 0071 | MONOKUMA, +1 more | '...Ta đoán là ta sẽ cho các ngươi thêm vài cái vé!' -> line 994 0135 | MONOKUMA
+  WARN   [duplicate_sentence_translation] line 1214 0165 | NARRATION: Same msgid has different msgstr. msgid="Sorry to interrupt again. How'd your first project review go?". 'Xin lỗi vì lại làm phiền. Lần đánh giá dự án đầu tiên của bạn thế nào rồi?' -> line 199 0025 | NARRATION | 'Xin lỗi vì lại làm phiền. Lần đánh giá dự án đầu tiên của các ngươi thế nào rồi?' -> line 1214 0165 | NARRATION
+  WARN   [duplicate_sentence_translation] line 1225 0166 | NARRATION: Same msgid has different msgstr. msgid='If you found it difficult, I have some good news! This mode has its very own New Game+ cycle !'. 'Nếu bạn thấy nó khó, ta có tin tốt đây. Chế độ này có cả chơi lại (New Game+) !' -> line 210 0026 | NARRATION | 'Nếu bạn thấy nó khó, ta có tin tốt đây. Chế độ này có cả Vòng chơi lại (New Game+) !' -> line 1225 0166 | NARRATION
+  INFO   [copy_of_source] line 335 0042 | MONOKUMA BACKUP: msgstr is identical to msgid
+  INFO   [copy_of_source] line 345 0044 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 466 0061 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 727 0098 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 742 0100 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 947 0129 | MONOKUMA: msgstr is identical to msgid
+
+[WARN:1, INFO:5] script_pak_e09\script_pak_e09-[0004]\script_pak_e09-[0004].po
+  WARN   [untranslated]: 192 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | MAKOTO NAEGI, 0003 | MAKOTO NAEGI, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI, 0008 | MAKOTO NAEGI, 0009 | MAKOTO NAEGI, 0010 | MAKOTO NAEGI, 0011 | MAKOTO NAEGI, 0012 | MAKOTO NAEGI, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | NARRATION, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA ...
+  INFO   [copy_of_source] line 301 0042 | MONOKUMA BACKUP: msgstr is identical to msgid
+  INFO   [copy_of_source] line 311 0044 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 418 0061 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 649 0098 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 662 0100 | MONOKUMA: msgstr is identical to msgid
+
+[OK] script_pak_e09\script_pak_e09-[0006] Monokuma Concept Assignment\script_pak_e09-[0006].po
+
+[WARN:1] script_pak_e09\script_pak_e09-[0006]\script_pak_e09-[0006].po
+  WARN   [untranslated]: 26 untranslated entries: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MONOKUMA, 0005 | MONOKUMA, 0006 | MONOKUMA, 0007 | MONOKUMA, 0008 | MONOKUMA, 0009 | MONOKUMA, 0010 | MONOKUMA, 0011 | MONOKUMA, 0012 | MONOKUMA, 0013 | MONOKUMA, 0014 | MONOKUMA, 0015 | MONOKUMA, 0016 | MONOKUMA, 0017 | MONOKUMA, 0018 | MONOKUMA, 0019 | MONOKUMA, 0020 | MONOKUMA ...
+
+[ERROR:1, WARN:2] script_pak_e09\script_pak_e09-[0009] Monokuma Room Cleaning\script_pak_e09-[0009].po
+  ERROR  [clt_tag_integrity] line 34 0004 | MAKOTO NAEGI: CLT tags differ. source=['<CLT 4>', '<CLT>'], translation=['<CLT 4>']
+  WARN   [duplicate_sentence_translation] line 34 0004 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't even have enough energy to goof around. I'm gonna go lay down in my room for a while...". 'Tôi không còn chút năng lượng nào để đi chơi nữa. Mình sẽ về phòng nằm nghỉ một lát... <CLT Balkan>' -> line 34 0004 | MAKOTO NAEGI | 'Mình không còn chút năng lượng nào để đi chơi nữa. Mình sẽ về phòng nằm nghỉ một lát...' -> line 57 0006 | MAKOTO NAEGI, line 70 0007 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 57 0006 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="I don't even have enough energy to goof around. I'm gonna go lay down in my room for a while...". 'Tôi không còn chút năng lượng nào để đi chơi nữa. Mình sẽ về phòng nằm nghỉ một lát... <CLT Balkan>' -> line 34 0004 | MAKOTO NAEGI | 'Mình không còn chút năng lượng nào để đi chơi nữa. Mình sẽ về phòng nằm nghỉ một lát...' -> line 57 0006 | MAKOTO NAEGI, line 70 0007 | MAKOTO NAEGI
+
+[WARN:1] script_pak_e09\script_pak_e09-[0009]\script_pak_e09-[0009].po
+  WARN   [untranslated]: 7 untranslated entries: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA, 0004 | MAKOTO NAEGI, 0005 | MAKOTO NAEGI, 0006 | MAKOTO NAEGI, 0007 | MAKOTO NAEGI
+
+[OK] script_pak_e09\script_pak_e09-[0011] Students Overwork Exhaustion\script_pak_e09-[0011].po
+
+[WARN:1] script_pak_e09\script_pak_e09-[0011]\script_pak_e09-[0011].po
+  WARN   [untranslated]: 15 untranslated entries: 0001 | MAKOTO NAEGI, 0002 | KIYOTAKA ISHIMARU, 0003 | BYAKUYA TOGAMI, 0004 | MONDO OOWADA, 0005 | LEON KUWATA, 0006 | HIFUMI YAMADA, 0007 | YASUHIRO HAGAKURE, 0008 | SAYAKA MAIZONO, 0009 | KYOUKO KIRIGIRI, 0010 | AOI ASAHINA, 0011 | TOUKO FUKAWA, 0012 | SAKURA OOGAMI, 0013 | CELES, 0014 | JUNKO ENOSHIMA (MUKURO), 0015 | CHIHIRO FUJISAKI
+
+[OK] script_pak_e09\script_pak_e09-[0012] Free Time Choice\script_pak_e09-[0012].po
+
+[WARN:1] script_pak_e09\script_pak_e09-[0012]\script_pak_e09-[0012].po
+  WARN   [untranslated]: 5 untranslated entries: 0001 | CHOICE/RE:ACT, 0002 | MAKOTO NAEGI, 0003 | CHOICE/RE:ACT, 0004 | MAKOTO NAEGI, 0005 | NARRATION
+
+[STRUCT:3] script_pak_e09\script_pak_e09-[0013] Trip Ticket Selection\script_pak_e09-[0013].po
+  STRUCT [line_count_match] line 372 0058 | MONOKUMA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 421 0065 | MONOKUMA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 521 0081 | MONOKUMA: msgid has 1 newline separators; msgstr has 2
+
+[WARN:1] script_pak_e09\script_pak_e09-[0013]\script_pak_e09-[0013].po
+  WARN   [untranslated]: 95 untranslated entries: 0001 | CHOICE/RE:ACT, 0002 | CHOICE/RE:ACT, 0003 | CHOICE/RE:ACT, 0004 | NARRATION, 0005 | CHOICE/RE:ACT, 0006 | CHOICE/RE:ACT, 0007 | CHOICE/RE:ACT, 0008 | NARRATION, 0009 | CHOICE/RE:ACT, 0010 | CHOICE/RE:ACT, 0011 | CHOICE/RE:ACT, 0012 | NARRATION, 0013 | CHOICE/RE:ACT, 0014 | CHOICE/RE:ACT, 0015 | CHOICE/RE:ACT, 0016 | NARRATION, 0017 | CHOICE/RE:ACT, 0018 | CHOICE/RE:ACT, 0019 | CHOICE/RE:ACT, 0020 | NARRATION ...
+
+[OK] script_pak_e09\script_pak_e09-[0014] Nighttime School Announcement\script_pak_e09-[0014].po
+
+[WARN:1] script_pak_e09\script_pak_e09-[0014]\script_pak_e09-[0014].po
+  WARN   [untranslated]: 3 untranslated entries: 0001 | MONOKUMA, 0002 | MONOKUMA, 0003 | MONOKUMA
+
+[OK] script_pak_e09\script_pak_e09-[0015] Talk Before Departure\script_pak_e09-[0015].po
+
+[WARN:1] script_pak_e09\script_pak_e09-[0015]\script_pak_e09-[0015].po
+  WARN   [untranslated]: 1 untranslated entries: 0001 | MAKOTO NAEGI
+
+========================================================================
+SUMMARY
+Files checked: 257
+ERROR: 17
+WARN: 214
+STRUCT: 613
+INFO: 24

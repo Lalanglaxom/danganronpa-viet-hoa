@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. これは、グランドピアノか…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Is this...a grand piano?"
-msgstr "Đây là... một cây đại dương cầm sao?"
+msgstr ""
 
 #. <CLT 4>事件には…関係がなさそうだな。
 #. <CLT>
@@ -24,13 +23,11 @@ msgid ""
 "<CLT 4>I...don't think it's related to the case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình... không nghĩ nó có liên quan đến vụ án.\n"
-"<CLT>"
 
 #. これは、グランドピアノか…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "Is this...a grand piano?"
-msgstr "Đây là... một cây đại dương cầm sao?"
+msgstr ""
 
 #. <CLT 4>年季が入ってるし…
 #. もしかして、結構な値打ち物なのかも…
@@ -41,9 +38,6 @@ msgid ""
 "money...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó trông thực sự rất cũ. Mình cá là nó đáng giá cả một gia tài\n"
-"đấy...\n"
-"<CLT>"
 
 #. <CLT 4>でも、弾いてくれる人がいないんじゃ、
 #. 意味がないよな…
@@ -54,9 +48,6 @@ msgid ""
 "it's totally useless.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tất nhiên, nếu không có ai ở đây biết chơi, thì nó hoàn toàn vô\n"
-"dụng.\n"
-"<CLT>"
 
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
