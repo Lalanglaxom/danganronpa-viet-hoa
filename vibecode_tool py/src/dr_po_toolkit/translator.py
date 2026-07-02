@@ -40,7 +40,11 @@ class TranslationError:
     reason: str
 
 
-def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa") -> dict[str, Any]:
+def _clean_prompt(prompt: str | None = None) -> str:
+    return (prompt or SYSTEM_INSTRUCTIONS).strip() + "\n"
+
+
+def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa", instructions: str | None = None) -> dict[str, Any]:
     items = []
     for entry in entries:
         items.append(
@@ -55,7 +59,7 @@ def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa") -> d
     return {
         "task": "translate_po_entries_to_vietnamese",
         "project": project,
-        "instructions": SYSTEM_INSTRUCTIONS,
+        "instructions": _clean_prompt(instructions),
         "entries": items,
         "required_response_schema": {
             "entries": [
@@ -68,8 +72,17 @@ def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa") -> d
     }
 
 
-def build_prompt(payload: dict[str, Any]) -> str:
-    return SYSTEM_INSTRUCTIONS + "\nReturn exactly this JSON shape:\n" + json.dumps(payload["required_response_schema"], ensure_ascii=False, indent=2) + "\n\nREQUEST JSON:\n" + json.dumps(payload, ensure_ascii=False, indent=2)
+def build_prompt(payload: dict[str, Any], instructions: str | None = None) -> str:
+    prompt = _clean_prompt(instructions or str(payload.get("instructions") or ""))
+    request_payload = dict(payload)
+    request_payload["instructions"] = prompt
+    return (
+        prompt
+        + "\nReturn exactly this JSON shape. No Markdown fences. No explanation:\n"
+        + json.dumps(request_payload["required_response_schema"], ensure_ascii=False, indent=2)
+        + "\n\nREQUEST JSON:\n"
+        + json.dumps(request_payload, ensure_ascii=False, indent=2)
+    )
 
 
 def untranslated_entries(path: str | Path, limit: int | None = None) -> list[POEntry]:
@@ -230,42 +243,83 @@ class GeminiApiClient:
 
     This module does not require google-genai unless you instantiate this class.
     Set GEMINI_API_KEY in your environment or pass api_key directly.
+    The actual translation prompt is SYSTEM_INSTRUCTIONS by default; override it
+    with the ``prompt`` argument or the GUI Gemini API Prompt box.
     """
 
-    def __init__(self, api_key: str | None = None, model: str = "gemini-2.5-flash"):
+    def __init__(self, api_key: str | None = None, model: str = "gemini-2.5-flash", prompt: str | None = None):
         import os
         try:
             from google import genai  # type: ignore
+            from google.genai import types  # type: ignore
         except Exception as exc:  # pragma: no cover - optional dependency
             raise RuntimeError("Install google-genai to use GeminiApiClient: pip install google-genai") from exc
-        self._client = genai.Client(api_key=api_key or os.environ.get("GEMINI_API_KEY"))
+        resolved_key = api_key or os.environ.get("GEMINI_API_KEY")
+        if not resolved_key:
+            raise RuntimeError("Gemini API key missing. Enter it in the Gemini Web tab or set GEMINI_API_KEY.")
+        self._client = genai.Client(api_key=resolved_key)
+        self._types = types
         self.model = model
+        self.prompt = _clean_prompt(prompt)
 
-    def translate_payload(self, payload: dict[str, Any]) -> dict[str, str]:
+    def translate_payload(self, payload: dict[str, Any], prompt: str | None = None) -> dict[str, str]:
+        active_prompt = _clean_prompt(prompt or self.prompt)
         response = self._client.models.generate_content(
             model=self.model,
-            contents=build_prompt(payload),
+            contents=build_prompt(payload, instructions=active_prompt),
+            config=self._types.GenerateContentConfig(
+                system_instruction=active_prompt,
+                response_mime_type="application/json",
+            ),
         )
-        return parse_translation_response(response.text)
+        text = getattr(response, "text", "") or ""
+        return parse_translation_response(text)
 
 
-def translate_file_with_client(po_path: str | Path, client: GeminiApiClient, batch_size: int = 20, sleep_seconds: float = 1.0, allow_partial: bool = False) -> tuple[int, list[TranslationError]]:
-    po = load_po(po_path)
-    missing = [e for e in po.entries if not e.msgstr.strip()]
+def translate_entries_with_client(
+    entries: Iterable[POEntry],
+    client: GeminiApiClient,
+    batch_size: int = 20,
+    sleep_seconds: float = 1.0,
+    allow_partial: bool = False,
+    prompt: str | None = None,
+) -> tuple[dict[str, str], list[TranslationError]]:
+    entry_list = list(entries)
     all_errors: list[TranslationError] = []
     all_translations: dict[str, str] = {}
-    for i in range(0, len(missing), batch_size):
-        batch = missing[i:i + batch_size]
-        translations = client.translate_payload(build_payload(batch))
+    for i in range(0, len(entry_list), batch_size):
+        batch = entry_list[i:i + batch_size]
+        translations = client.translate_payload(build_payload(batch, instructions=prompt or client.prompt), prompt=prompt)
         errors = validate_translations(batch, translations)
         all_errors.extend(errors)
         bad = {e.uid for e in errors}
         for uid, text in translations.items():
             if allow_partial or uid not in bad:
                 all_translations[uid] = text
-        if sleep_seconds and i + batch_size < len(missing):
+        if sleep_seconds and i + batch_size < len(entry_list):
             time.sleep(sleep_seconds)
-    changed = patch_msgstr_by_uid(po, all_translations)
+    return all_translations, all_errors
+
+
+def translate_file_with_client(
+    po_path: str | Path,
+    client: GeminiApiClient,
+    batch_size: int = 20,
+    sleep_seconds: float = 1.0,
+    allow_partial: bool = False,
+    prompt: str | None = None,
+) -> tuple[int, list[TranslationError]]:
+    po = load_po(po_path)
+    missing = source_entries_for_translation(po_path)
+    translations, errors = translate_entries_with_client(
+        missing,
+        client,
+        batch_size=batch_size,
+        sleep_seconds=sleep_seconds,
+        allow_partial=allow_partial,
+        prompt=prompt,
+    )
+    changed = patch_msgstr_by_uid(po, translations)
     if changed:
         save_po(po, po_path)
-    return changed, all_errors
+    return changed, errors

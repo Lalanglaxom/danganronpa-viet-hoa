@@ -19,7 +19,15 @@ DEFAULT_CONFIG = {
     "gemini_web_wait_seconds": 8.0,
     "gemini_web_timeout_seconds": 180,
     "gemini_web_retries": 2,
+    "gemini_translate_mode": "web",
+    "gemini_api_use_key": False,
+    "gemini_api_key": "",
+    "gemini_api_model": "gemini-2.5-flash",
+    "gemini_api_prompt": "",
+    "gemini_api_sleep_seconds": 1.0,
+    "po_viewer_suggest_min_score": 70,
 }
+
 
 
 def default_config_path() -> Path:

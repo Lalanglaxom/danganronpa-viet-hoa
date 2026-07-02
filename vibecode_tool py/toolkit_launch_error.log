@@ -1,6 +1,6 @@
 Traceback (most recent call last):
-  File "D:\Danganronpa1Viet\danganronpa-viet-hoa\vibecode_tool py\run_toolkit.py", line 36, in <module>
+  File "d:\Danganronpa1Viet\danganronpa-viet-hoa\vibecode_tool py\run_toolkit.py", line 36, in <module>
     from dr_po_toolkit.gui import main
-  File "D:\Danganronpa1Viet\danganronpa-viet-hoa\vibecode_tool py\src\dr_po_toolkit\gui.py", line 65, in <module>
-    from text_utils import visible_len
-ModuleNotFoundError: No module named 'text_utils'
+  File "D:\Danganronpa1Viet\danganronpa-viet-hoa\vibecode_tool py\src\dr_po_toolkit\gui.py", line 14, in <module>
+    from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize
+ModuleNotFoundError: No module named 'PyQt6'

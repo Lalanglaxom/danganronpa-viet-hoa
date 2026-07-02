@@ -14,6 +14,8 @@ That removes the old problem where each script parsed PO files differently.
 - Rule format now has priority, enabled flag, speaker filter, CLT scope, whole-word, case sensitivity
 - Validator checks source drift, missing entries, duplicate contexts, CLT tags, placeholders, Unicode, whitespace
 - Line wrapper only touches `msgstr`
+- New GUI `Translafixer` tab copies known-good translations by matching original `msgid` text
+- New GUI `PO Viewer` tab opens one `.po` file with compact English/Vietnamese editing
 - `po_empty_entry_remover.py` is not part of the new workflow; it is kept only in `legacy/`
 
 ## Run GUI
@@ -47,6 +49,37 @@ After editable install:
 dr-po validate "path/to/folder"
 dr-po replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 ```
+
+
+## Search / Backup / Sync performance
+
+Large folders are faster in this build because scanners now prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search also does a quick file-level prefilter before fully parsing a `.po` file, so files that cannot contain the phrase are skipped early.
+
+`Sync by Filename` now refuses nested source/target folders, skips self-copy, skips duplicate source filenames, and avoids rewriting target files that are already identical. This reduces disk writes a lot when syncing the same folder repeatedly.
+
+## Translafixer GUI tab
+
+Use `Translafixer` when you have known-good `.po` translations and another folder needs to be fixed.
+
+1. Drag multiple correct source `.po` files or folders into the source list, or click `Add .po files` / `Add folder`. Dropped folders are expanded recursively into `.po` files.
+2. Choose the `Target folder` to fix.
+3. Run with `Dry run` checked to preview.
+4. Uncheck `Dry run` to rewrite target `msgstr` values.
+
+Matching uses original text / `msgid`; CLT tags such as `<CLT 4>` and `<CLT>` are ignored while comparing, so tagged and untagged originals can match. `Copy.po` target files are skipped. Dropped source folders skip their own `Copy.po` files, while explicitly selected `Copy.po` files are allowed. Selected source files are also skipped during the target scan, so they are not rewritten even if they live inside the target folder. If source files contain the same `msgid` with different translations, that source text is treated as ambiguous and skipped instead of writing a possibly wrong translation. When writing, the tab can create `*.po.translafixer.bak` backups before changing files.
+
+
+## PO Viewer GUI tab
+
+Use `PO Viewer` for quick manual edits in one `.po` file.
+
+1. Choose a `.po` file and click `Load`.
+2. The table shows every entry with English `msgid` and Vietnamese `msgstr`.
+3. English/original text is read-only. Edit only the Vietnamese side, either in the table or in the bottom Vietnamese editor.
+4. `Visual wrap` toggles display wrapping without changing the file.
+5. `Wrap selected` / `Wrap all` applies the existing `msgstr` line wrapper.
+6. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
+7. Click `Save` to write the edited `.po` file.
 
 ## Automatic Gemini Web workflow
 

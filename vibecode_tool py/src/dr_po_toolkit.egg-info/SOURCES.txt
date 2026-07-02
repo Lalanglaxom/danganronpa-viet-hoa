@@ -16,6 +16,7 @@ src/dr_po_toolkit/po_io.py
 src/dr_po_toolkit/rules.py
 src/dr_po_toolkit/search.py
 src/dr_po_toolkit/text_utils.py
+src/dr_po_toolkit/translafixer.py
 src/dr_po_toolkit/translator.py
 src/dr_po_toolkit/validation.py
 src/dr_po_toolkit.egg-info/PKG-INFO

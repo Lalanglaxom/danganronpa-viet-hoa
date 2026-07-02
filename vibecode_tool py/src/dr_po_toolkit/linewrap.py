@@ -7,8 +7,10 @@ from .discovery import iter_po_files
 from .po_io import load_po, save_po
 from .text_utils import visible_len
 
-CLT_SPACE_RE = re.compile(r"<CLT\s+([Nn]|\d+)>")
-_PROTECTED_CLT_RE = re.compile(r"<CLT_(?:[Nn]|\d+)>")
+CLT_SPACE_RE = re.compile(r"<CLT\s+(\d+)>")
+# visible_len only strips <CLT> and <CLT N>; the protected form <CLT_N>
+# (used internally during wrapping) must be stripped separately.
+_PROTECTED_CLT_RE = re.compile(r"<CLT_\d+>")
 
 
 def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) -> tuple[str, bool]:
@@ -27,7 +29,8 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
     flat = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
     total_len = visible_len(flat)
 
-
+    # Dùng 64 cho các câu nhét vừa 2 dòng để tối đa diện tích dòng đầu.
+    # Chỉ bóp về 58 khi tổng chữ quá dài (> 122) để các dòng nhìn đều nhau hơn.
     if total_len <= soft + hard:
         limit = hard
         n_cuts = 1
@@ -64,7 +67,7 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
     if words:
         lines.append(" ".join(words))
 
-    fixed = re.sub(r"<CLT_([Nn]|\d+)>", r"<CLT \1>", "\n".join(lines)) + end_tag
+    fixed = re.sub(r"<CLT_(\d+)>", r"<CLT \1>", "\n".join(lines)) + end_tag
     return fixed, fixed != original
 
 

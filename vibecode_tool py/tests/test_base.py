@@ -152,3 +152,244 @@ def test_gemini_web_prompt_uses_safe_tag_tokens():
 
     parsed = parse_translated_po_response('msgctxt "0001 | MAKOTO NAEGI"\nmsgstr "⟦CLT 4⟧Xin chào...\n⟦CLT⟧"')
     assert parsed["0001 | MAKOTO NAEGI"] == "<CLT 4>Xin chào...\n<CLT>"
+
+
+def test_translafixer_rewrites_target_by_msgid():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        correct = root / "correct"
+        target = root / "target"
+        correct.mkdir()
+        target.mkdir()
+        (correct / "good.po").write_text(
+            'msgctxt "A"\nmsgid "Hello"\nmsgstr "Xin chào"\n\n'
+            'msgctxt "B"\nmsgid "Bye"\nmsgstr "Tạm biệt"\n',
+            encoding="utf-8",
+        )
+        target_po = target / "bad.po"
+        target_po.write_text(
+            'msgctxt "X"\nmsgid "Hello"\nmsgstr "Sai"\n\n'
+            'msgctxt "Y"\nmsgid "Other"\nmsgstr "Giữ"\n',
+            encoding="utf-8",
+        )
+
+        result = apply_translafix(correct, target, dry_run=False, create_backup=True)
+
+        assert result.total_changed == 1
+        assert (target / "bad.po.translafixer.bak").exists()
+        fixed = target_po.read_text(encoding="utf-8")
+        assert 'msgstr "Xin chào"' in fixed
+        assert 'msgstr "Giữ"' in fixed
+
+
+def test_translafixer_skips_conflicting_source_msgid():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        correct = root / "correct"
+        target = root / "target"
+        correct.mkdir()
+        target.mkdir()
+        (correct / "one.po").write_text('msgctxt "A"\nmsgid "Same"\nmsgstr "Một"\n', encoding="utf-8")
+        (correct / "two.po").write_text('msgctxt "B"\nmsgid "Same"\nmsgstr "Hai"\n', encoding="utf-8")
+        target_po = target / "target.po"
+        target_po.write_text('msgctxt "T"\nmsgid "Same"\nmsgstr "Old"\n', encoding="utf-8")
+
+        result = apply_translafix(correct, target, dry_run=False, create_backup=False)
+
+        assert result.ambiguous_msgids == 1
+        assert result.total_changed == 0
+        assert 'msgstr "Old"' in target_po.read_text(encoding="utf-8")
+
+
+def test_translafixer_source_file_list_skips_selected_source_inside_target():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        target = root / "target"
+        target.mkdir()
+        source_po = target / "source_good.po"
+        target_po = target / "bad.po"
+        source_po.write_text('msgctxt "A"\nmsgid "Hello"\nmsgstr "Xin chào"\n', encoding="utf-8")
+        target_po.write_text('msgctxt "B"\nmsgid "Hello"\nmsgstr "Sai"\n', encoding="utf-8")
+
+        result = apply_translafix([source_po], target, dry_run=False, create_backup=False)
+
+        assert result.source_files == 1
+        assert result.skipped_source_targets == 1
+        assert result.target_files == 1
+        assert result.total_changed == 1
+        assert 'msgstr "Xin chào"' in target_po.read_text(encoding="utf-8")
+        assert source_po.read_text(encoding="utf-8") == 'msgctxt "A"\nmsgid "Hello"\nmsgstr "Xin chào"\n'
+
+
+
+def test_translafixer_source_picker_accepts_folders_and_dedupes_files():
+    import tempfile
+    from dr_po_toolkit.translafixer import collect_source_po_files
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source"
+        nested = source / "nested"
+        nested.mkdir(parents=True)
+        first = source / "one.po"
+        second = nested / "two.po"
+        copy = nested / "two - Copy.po"
+        first.write_text('msgid "A"\nmsgstr "Một"\n', encoding="utf-8")
+        second.write_text('msgid "B"\nmsgstr "Hai"\n', encoding="utf-8")
+        copy.write_text('msgid "COPY"\nmsgstr "Copy"\n', encoding="utf-8")
+
+        from_folder = collect_source_po_files([source, first])
+        assert {p.name for p in from_folder} == {"one.po", "two.po"}
+        assert len(from_folder) == 2
+
+        with_explicit_copy = collect_source_po_files([source, copy])
+        assert {p.name for p in with_explicit_copy} == {"one.po", "two.po", "two - Copy.po"}
+
+
+def test_translafixer_source_folder_inside_target_is_not_rewritten():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        target = root / "target"
+        source_folder = target / "correct"
+        source_folder.mkdir(parents=True)
+        source_po = source_folder / "source_good.po"
+        target_po = target / "bad.po"
+        source_po.write_text('msgctxt "A"\nmsgid "Hello"\nmsgstr "Xin chào"\n', encoding="utf-8")
+        target_po.write_text('msgctxt "B"\nmsgid "Hello"\nmsgstr "Sai"\n', encoding="utf-8")
+
+        result = apply_translafix([source_folder], target, dry_run=False, create_backup=False)
+
+        assert result.source_files == 1
+        assert result.skipped_source_targets == 1
+        assert result.target_files == 1
+        assert result.total_changed == 1
+        assert 'msgstr "Xin chào"' in target_po.read_text(encoding="utf-8")
+        assert source_po.read_text(encoding="utf-8") == 'msgctxt "A"\nmsgid "Hello"\nmsgstr "Xin chào"\n'
+
+def test_sync_by_filename_skips_identical_and_rejects_nested_folders():
+    import tempfile
+    import pytest
+    from dr_po_toolkit.backup import sync_by_filename_report
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source"
+        target = root / "target"
+        source.mkdir()
+        target.mkdir()
+        (source / "e01.po").write_text('msgid "A"\nmsgstr "same"\n', encoding="utf-8")
+        (target / "e01.po").write_text('msgid "A"\nmsgstr "same"\n', encoding="utf-8")
+
+        result = sync_by_filename_report(source, target)
+
+        assert result.copied == 0
+        assert result.skipped_identical == 1
+
+        nested = target / "nested_source"
+        nested.mkdir()
+        with pytest.raises(ValueError):
+            sync_by_filename_report(nested, target)
+
+
+def test_search_finds_wrapped_po_text_after_fast_prefilter():
+    import tempfile
+    from dr_po_toolkit.search import search_path
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        po = root / "e01.po"
+        po.write_text('msgid "Hello\\n"\n"world"\nmsgstr "Xin chào"\n', encoding="utf-8")
+
+        results = search_path(root, "hello world", search_msgid=True, search_msgstr=False)
+
+        assert len(results) == 1
+        assert results[0].msgid == "Hello\nworld"
+
+
+def test_translafixer_ignores_clt_tags_when_matching_msgid():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix, msgid_match_key
+
+    assert msgid_match_key('<CLT 4>Hello there\n<CLT>') == 'Hello there'
+    assert msgid_match_key('Hello there') == 'Hello there'
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / 'source.po'
+        target_dir = root / 'target'
+        target_dir.mkdir()
+        target = target_dir / 'target.po'
+        source.write_text(
+            'msgctxt "A"\nmsgid "<CLT 4>Hello there\\n"\n"<CLT>"\nmsgstr "<CLT 4>Xin chào đó\\n"\n"<CLT>"\n',
+            encoding='utf-8',
+        )
+        target.write_text('msgctxt "B"\nmsgid "Hello there"\nmsgstr "Old"\n', encoding='utf-8')
+
+        result = apply_translafix([source], target_dir, dry_run=False, create_backup=False)
+
+        assert result.total_changed == 1
+        assert '<CLT 4>Xin chào đó' in target.read_text(encoding='utf-8')
+
+
+def test_translafixer_suggestion_index_uses_sources_and_filters_low_scores():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source_dir = root / "sources"
+        source_dir.mkdir()
+        source_po = source_dir / "memory.po"
+        source_po.write_text(
+            'msgctxt "A"\nmsgid "<CLT 4>Hello there\\n"\n"<CLT>"\nmsgstr "<CLT 4>Xin chào đó\\n"\n"<CLT>"\n\n'
+            'msgctxt "B"\nmsgid "Completely different words"\nmsgstr "Câu khác hẳn"\n',
+            encoding="utf-8",
+        )
+
+        index, result = TranslationSuggestionIndex.from_translafixer_sources([source_dir])
+        suggestions = index.suggest("Hello there", min_score=0.70)
+        unrelated = index.suggest("Nothing in common here", min_score=0.70)
+
+        assert result.source_files == 1
+        assert result.usable_translations == 2
+        assert suggestions
+        assert suggestions[0].score > 0.95
+        assert suggestions[0].translation.startswith("<CLT 4>Xin chào")
+        assert all(item.score > 0.70 for item in suggestions)
+        assert unrelated == []
+
+
+def test_translafixer_suggestion_index_dedupes_translations_and_stops_at_five():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source_po = root / "memory.po"
+        body = []
+        for i in range(8):
+            body.append(f'msgctxt "A{i}"\nmsgid "Open the red door {i}"\nmsgstr "Mở cửa đỏ"\n')
+        for i in range(8):
+            body.append(f'msgctxt "B{i}"\nmsgid "Open the red door now {i}"\nmsgstr "Bản dịch {i}"\n')
+        source_po.write_text("\n".join(body), encoding="utf-8")
+
+        index, _result = TranslationSuggestionIndex.from_translafixer_sources([source_po])
+        suggestions = index.suggest("Open the red door now", min_score=0.70)
+        translations = [item.translation for item in suggestions]
+
+        assert len(suggestions) <= 5
+        assert len(translations) == len(set(translations))
+        assert translations.count("Mở cửa đỏ") <= 1
+        assert all(item.score > 0.70 for item in suggestions)

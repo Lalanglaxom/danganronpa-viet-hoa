@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import filecmp
 import os
 import re
 import shutil
@@ -15,22 +16,111 @@ def make_backups(path: str | Path, overwrite: bool = False) -> int:
         target = po_path.with_name(f"{po_path.stem} - Copy.po")
         if target.exists() and not overwrite:
             continue
+        if target.exists():
+            try:
+                if po_path.samefile(target):
+                    continue
+            except OSError:
+                pass
         shutil.copy2(po_path, target)
         count += 1
     return count
 
 
-def sync_by_filename(source_folder: str | Path, target_folder: str | Path) -> int:
+@dataclass(slots=True)
+class SyncByFilenameResult:
+    copied: int = 0
+    skipped_identical: int = 0
+    skipped_self: int = 0
+    source_files: int = 0
+    target_files: int = 0
+    duplicate_source_names: int = 0
+
+
+def _is_nested_or_same(a: Path, b: Path) -> bool:
+    """Return True when either folder is inside the other."""
+    try:
+        ar = a.resolve(strict=False)
+        br = b.resolve(strict=False)
+    except OSError:
+        ar = a.absolute()
+        br = b.absolute()
+    return ar == br or ar.is_relative_to(br) or br.is_relative_to(ar)
+
+
+def _same_file_content(src: Path, target: Path) -> bool:
+    try:
+        if src.samefile(target):
+            return True
+    except OSError:
+        pass
+
+    try:
+        s_stat = src.stat()
+        t_stat = target.stat()
+    except OSError:
+        return False
+
+    if s_stat.st_size != t_stat.st_size:
+        return False
+
+    # Same size + same timestamp is enough for already synced files.
+    if s_stat.st_mtime_ns == t_stat.st_mtime_ns:
+        return True
+
+    # Same size but different timestamp: deep compare avoids needless rewrites.
+    try:
+        return filecmp.cmp(src, target, shallow=False)
+    except OSError:
+        return False
+
+
+def sync_by_filename_report(source_folder: str | Path, target_folder: str | Path) -> SyncByFilenameResult:
     source_folder = Path(source_folder)
     target_folder = Path(target_folder)
-    source_index: dict[str, Path] = {p.name: p for p in iter_po_files(source_folder)}
-    count = 0
+
+    if not source_folder.exists() or not target_folder.exists():
+        raise ValueError("source and target folders must exist")
+    if not source_folder.is_dir() or not target_folder.is_dir():
+        raise ValueError("source and target must both be folders")
+    if _is_nested_or_same(source_folder, target_folder):
+        raise ValueError("source and target folders must be separate, not nested")
+
+    result = SyncByFilenameResult()
+    source_index: dict[str, Path] = {}
+    duplicate_names: set[str] = set()
+    for p in iter_po_files(source_folder):
+        result.source_files += 1
+        if p.name in source_index:
+            duplicate_names.add(p.name)
+            # Ambiguous source filename: do not use either file.
+            source_index.pop(p.name, None)
+            continue
+        if p.name not in duplicate_names:
+            source_index[p.name] = p
+    result.duplicate_source_names = len(duplicate_names)
+
     for target in iter_po_files(target_folder):
+        result.target_files += 1
         src = source_index.get(target.name)
-        if src:
-            shutil.copy2(src, target)
-            count += 1
-    return count
+        if not src:
+            continue
+        try:
+            if src.samefile(target):
+                result.skipped_self += 1
+                continue
+        except OSError:
+            pass
+        if _same_file_content(src, target):
+            result.skipped_identical += 1
+            continue
+        shutil.copy2(src, target)
+        result.copied += 1
+    return result
+
+
+def sync_by_filename(source_folder: str | Path, target_folder: str | Path) -> int:
+    return sync_by_filename_report(source_folder, target_folder).copied
 
 
 @dataclass(slots=True)
@@ -71,7 +161,7 @@ def iter_copy_po_files(path: str | Path):
         return
     if not p.exists():
         return
-    for f in sorted(p.rglob("*.po")):
+    for f in iter_po_files(p, include_copy=True):
         if is_copy_po(f):
             yield f
 

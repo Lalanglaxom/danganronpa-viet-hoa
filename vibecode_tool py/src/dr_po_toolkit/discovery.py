@@ -6,6 +6,25 @@ from pathlib import Path
 from typing import Iterator
 
 
+# These folders can be enormous and normally never contain project .po files.
+# Skipping them makes scans much faster when the user accidentally selects a
+# large project root or home folder.
+DEFAULT_SKIPPED_DIRS = {
+    ".git",
+    ".hg",
+    ".svn",
+    "__pycache__",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "venv",
+    "env",
+    "node_modules",
+}
+
+
 @dataclass(slots=True)
 class SegmentFiles:
     root: Path
@@ -27,22 +46,62 @@ def is_copy_po(path: str | Path) -> bool:
     return name.endswith(".po") and ("- copy" in name or "-copy" in name)
 
 
-def iter_po_files(path: str | Path, include_copy: bool = False) -> Iterator[Path]:
+def _iter_po_files_fast(
+    folder: Path,
+    *,
+    include_copy: bool,
+    skipped_dirs: set[str],
+) -> Iterator[Path]:
+    """Fast recursive .po scanner using os.scandir.
+
+    pathlib.rglob/os.walk with sorting is okay for small folders but becomes
+    noticeably slow on large trees. scandir gives DirEntry metadata cheaply and
+    lets us prune cache/vendor folders before walking into them.
+    """
+    try:
+        with os.scandir(folder) as entries:
+            dirs: list[os.DirEntry[str]] = []
+            for entry in entries:
+                name = entry.name
+                try:
+                    if entry.is_dir(follow_symlinks=False):
+                        if name not in skipped_dirs:
+                            dirs.append(entry)
+                        continue
+                    if not entry.is_file(follow_symlinks=False):
+                        continue
+                except OSError:
+                    continue
+
+                if not name.lower().endswith(".po"):
+                    continue
+                path = Path(entry.path)
+                if not include_copy and is_copy_po(path):
+                    continue
+                yield path
+    except OSError:
+        return
+
+    for entry in dirs:
+        yield from _iter_po_files_fast(Path(entry.path), include_copy=include_copy, skipped_dirs=skipped_dirs)
+
+
+def iter_po_files(
+    path: str | Path,
+    include_copy: bool = False,
+    *,
+    skip_common_dirs: bool = True,
+) -> Iterator[Path]:
     p = Path(path)
     if p.is_file():
         if p.suffix.lower() == ".po" and (include_copy or not is_copy_po(p)):
             yield p
         return
+    if not p.exists():
+        return
 
-    for dirpath, dirnames, filenames in os.walk(p):
-        dirnames.sort()
-        for fname in sorted(filenames):
-            f = Path(dirpath) / fname
-            if f.suffix.lower() != ".po":
-                continue
-            if not include_copy and is_copy_po(f):
-                continue
-            yield f
+    skipped_dirs = set(DEFAULT_SKIPPED_DIRS) if skip_common_dirs else set()
+    yield from _iter_po_files_fast(p, include_copy=include_copy, skipped_dirs=skipped_dirs)
 
 
 def segment_id_from_folder(folder: Path) -> str:
@@ -53,7 +112,7 @@ def segment_id_from_folder(folder: Path) -> str:
 def find_segments(root: str | Path) -> Iterator[SegmentFiles]:
     base = Path(root).resolve()
     for dirpath, dirnames, filenames in os.walk(base):
-        dirnames.sort()
+        dirnames[:] = [d for d in dirnames if d not in DEFAULT_SKIPPED_DIRS]
         folder = Path(dirpath)
         segment_id = segment_id_from_folder(folder)
         work_name = f"{segment_id}.po"

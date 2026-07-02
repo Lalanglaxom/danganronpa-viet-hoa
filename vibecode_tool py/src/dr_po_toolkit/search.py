@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .discovery import iter_po_files
-from .po_io import load_po
+from .po_io import parse_po_text
 from .text_utils import visible_text
 
 
@@ -21,18 +21,54 @@ class SearchResult:
     hit_msgstr: bool
 
 
-def _matches(text: str, phrase: str, case_sensitive: bool, whole_word: bool) -> bool:
+def _raw_visible_text(text: str) -> str:
+    # Convert common PO escapes before visible_text so the file-level prefilter
+    # matches the same user-visible text that parsed entries would show.
+    return visible_text(
+        text.replace("\\n", " ")
+        .replace("\\r", " ")
+        .replace("\\t", " ")
+        .replace('\\"', '"')
+    )
+
+
+def _compile_whole_word(needle: str, case_sensitive: bool) -> re.Pattern[str]:
+    flags = 0 if case_sensitive else re.IGNORECASE
+    return re.compile(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", flags)
+
+
+def _matches_prepared(
+    text: str,
+    needle: str,
+    *,
+    case_sensitive: bool,
+    whole_word_pattern: re.Pattern[str] | None,
+) -> bool:
     hay = visible_text(text)
-    needle = visible_text(phrase)
+    if not hay:
+        return False
+    if whole_word_pattern is not None:
+        return whole_word_pattern.search(hay) is not None
     if not case_sensitive:
         hay = hay.lower()
-        needle = needle.lower()
-    if not hay or not needle:
+    return needle in hay
+
+
+def _file_can_contain_match(
+    raw_text: str,
+    needle: str,
+    *,
+    case_sensitive: bool,
+    whole_word_pattern: re.Pattern[str] | None,
+) -> bool:
+    hay = _raw_visible_text(raw_text)
+    if not hay:
         return False
-    if not whole_word:
-        return needle in hay
-    flags = 0 if case_sensitive else re.IGNORECASE
-    return re.search(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", hay, flags) is not None
+    if whole_word_pattern is not None:
+        return whole_word_pattern.search(hay) is not None
+    if not case_sensitive:
+        hay = hay.lower()
+    return needle in hay
 
 
 def search_path(
@@ -45,11 +81,46 @@ def search_path(
 ) -> list[SearchResult]:
     results: list[SearchResult] = []
     base = Path(root)
+    needle_visible = visible_text(phrase)
+    if not needle_visible or not (search_msgid or search_msgstr):
+        return results
+
+    whole_word_pattern = _compile_whole_word(needle_visible, case_sensitive) if whole_word else None
+    needle = needle_visible if case_sensitive or whole_word else needle_visible.lower()
+
     for path in iter_po_files(base):
-        po = load_po(path)
+        try:
+            raw_text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            try:
+                raw_text = path.read_text(encoding="utf-8-sig")
+            except Exception:
+                continue
+        except OSError:
+            continue
+
+        if not _file_can_contain_match(
+            raw_text,
+            needle,
+            case_sensitive=case_sensitive,
+            whole_word_pattern=whole_word_pattern,
+        ):
+            continue
+
+        po = parse_po_text(raw_text, path)
         for entry in po.entries:
-            hit_id = search_msgid and _matches(entry.msgid, phrase, case_sensitive, whole_word)
-            hit_str = search_msgstr and _matches(entry.msgstr, phrase, case_sensitive, whole_word)
+            hit_id = search_msgid and _matches_prepared(
+                entry.msgid,
+                needle,
+                case_sensitive=case_sensitive,
+                whole_word_pattern=whole_word_pattern,
+            )
+            hit_str = search_msgstr and _matches_prepared(
+                entry.msgstr,
+                needle,
+                case_sensitive=case_sensitive,
+                whole_word_pattern=whole_word_pattern,
+            )
             if hit_id or hit_str:
                 results.append(
                     SearchResult(
