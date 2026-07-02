@@ -19,8 +19,9 @@ msgid ""
 "<CLT 4>Lockers...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mấy cái tủ đồ...\n"
+"<CLT 4>Tủ đồ...\n"
 "<CLT>"
+
 #. <CLT 4>特になにもないな…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,6 +31,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Chẳng có gì bất thường về chúng cả.\n"
 "<CLT>"
+
 #. <CLT 4>ロッカーの中には、
 #. ノートパソコンが入っている。
 #. <CLT>
@@ -40,6 +42,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Trong một trong những cái tủ đồ... là chiếc laptop.\n"
 "<CLT>"
+
 #. <CLT 4>アルターエゴ…不二咲クンの分身…
 #. 彼がのこしてくれた”希望”だ。
 #. <CLT>
@@ -52,6 +55,7 @@ msgstr ""
 "<CLT 4>Alter Ego... bản thể khác của Chihiro. Niềm hy vọng cuối cùng mà\n"
 "cậu ấy đã để lại cho chúng ta.\n"
 "<CLT>"
+
 #. <CLT 4>マッサージチェアがある…
 #. <CLT>
 msgctxt "0005 | MAKOTO NAEGI"
@@ -61,6 +65,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Có một chiếc ghế massage.\n"
 "<CLT>"
+
 #. <CLT 4>随分、古い感じだな…
 #. <CLT>
 msgctxt "0006 | MAKOTO NAEGI"
@@ -70,14 +75,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Nhìn nó khá là cũ kỹ...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0009 | NARRATION"
@@ -85,5 +93,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

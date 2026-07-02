@@ -20,20 +20,26 @@ msgid ""
 "stored.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là nơi cất giữ các dụng cụ dọn dẹp nhà vệ sinh.\n"
+"<CLT 4>Đây là nơi cất giữ các dụng cụ vệ sinh phòng tắm.\n"
 "<CLT>"
+
 #. 意味のある物はなさそうだな…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "I don't see anything useful in here..."
-msgstr "Tớ không thấy thứ gì hữu ích ở trong này cả..."
+msgstr ""
+"<CLT 4>Mình không thấy thứ gì hữu ích ở đây cả...\n"
+"<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -41,5 +47,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

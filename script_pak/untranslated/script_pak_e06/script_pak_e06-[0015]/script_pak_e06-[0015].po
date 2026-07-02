@@ -21,6 +21,9 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
+"<CLT>"
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで黒幕が…
@@ -87,6 +90,8 @@ msgid ""
 "<CLT 4>There's a thick layer of dust on top of the desk.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một lớp bụi dày đặc trên mặt bàn.\n"
+"<CLT>"
 
 #. <CLT 4>この図書室は長い事放ったらかしになってたみたいだ。
 #. もしかしたら、そこに何か謎が？
@@ -129,12 +134,12 @@ msgstr ""
 #. はい
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -143,3 +148,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

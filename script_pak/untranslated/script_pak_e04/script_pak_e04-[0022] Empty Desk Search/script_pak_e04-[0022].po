@@ -21,6 +21,7 @@ msgid ""
 msgstr ""
 "<CLT 4>Nó hoàn toàn trống rỗng...\n"
 "<CLT>"
+
 #. <CLT 4>引き出しのついた机だ…
 #. <CLT>
 msgctxt "0002 | MAKOTO NAEGI"
@@ -30,14 +31,17 @@ msgid ""
 msgstr ""
 "<CLT 4>Một chiếc bàn có vài ngăn kéo...\n"
 "<CLT>"
+
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
 msgstr "Có"
+
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
 msgstr "Không"
+
 #. <CLT 23>外に出ますか？
 #. <CLT>
 msgctxt "0005 | NARRATION"
@@ -45,5 +49,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
+"<CLT 23>Rời khỏi đây?\n"
 "<CLT>"

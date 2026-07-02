@@ -28,12 +28,12 @@ msgstr ""
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -42,6 +42,8 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"
 
 #. <CLT 4>妙にマニアックな雑誌もあるな…
 #. “月刊磯釣り”って…
@@ -96,7 +98,7 @@ msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...\n"
 "<CLT>"
-msgstr ""
+msgstr "..."
 
 #. <CLT 4>大神さん…
 #. <CLT>
@@ -172,12 +174,12 @@ msgstr ""
 #. はい
 msgctxt "0020 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0021 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -186,3 +188,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

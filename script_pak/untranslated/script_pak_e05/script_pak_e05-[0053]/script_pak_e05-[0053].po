@@ -67,12 +67,12 @@ msgstr ""
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>厨房から出ますか？
 #. <CLT>
@@ -81,3 +81,5 @@ msgid ""
 "<CLT 23>Leave the kitchen?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi nhà bếp?\n"
+"<CLT>"

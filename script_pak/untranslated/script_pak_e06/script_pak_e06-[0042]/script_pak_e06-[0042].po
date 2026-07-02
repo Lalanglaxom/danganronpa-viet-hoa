@@ -21,6 +21,9 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
+"<CLT>"
 
 #. <CLT 4>もう、こんな監視カメラなんか…
 #. 心底どうでもいい…！
@@ -134,12 +137,12 @@ msgstr ""
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0016 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -148,3 +151,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

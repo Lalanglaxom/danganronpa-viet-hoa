@@ -21,8 +21,9 @@ msgid ""
 "unlocking it, so I couldn't go in if I wanted to.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là cửa phòng thay đồ nữ. Mình không có cách nào mở khóa nên\n"
-"không thể vào được đâu...<CLT>"
+"<CLT 4>Cửa phòng thay đồ nữ. Mình không có cách nào để mở khóa nó, nên\n"
+"dù có muốn mình cũng chẳng thể vào được.\n"
+"<CLT>"
 
 #. <CLT 4>こっちは男子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳で開けられるはず…
@@ -33,8 +34,9 @@ msgid ""
 "my e-Handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là máy quét thẻ của phòng thay đồ nam. Mình chắc là có thể mở\n"
-"bằng sổ học sinh của mình...<CLT>"
+"<CLT 4>Máy đọc thẻ phòng thay đồ nam. Mình có thể mở nó bằng sổ học\n"
+"sinh điện tử của mình.\n"
+"<CLT>"
 
 #. <CLT 4>こっちは女子更衣室のカードリーダーだ。
 #. ボクの電子生徒手帳じゃ開けられないはず…
@@ -45,8 +47,9 @@ msgid ""
 "\"male\" in my e-Handbook, so it can't open this door.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là máy quét thẻ của phòng thay đồ nữ. Vì sổ học sinh ghi mình\n"
-"là \"nam\" nên chắc không mở được cửa này đâu...<CLT>"
+"<CLT 4>Máy đọc thẻ phòng thay đồ nữ. Mình được ghi nhận là \"nam\" trong\n"
+"sổ học sinh điện tử, nên nó không thể mở cánh cửa này.\n"
+"<CLT>"
 
 #. <CLT 4>これって…本物の銃だよな？
 #. なんでこんなものがあるんだよ…
@@ -56,7 +59,10 @@ msgid ""
 "<CLT 4>Is that...a real gun? Why is there something like that\n"
 "here...?\n"
 "<CLT>"
-msgstr "<CLT 4>Đây là... súng thật sao? Tại sao lại có thứ này ở đây chứ...?<CLT>"
+msgstr ""
+"<CLT 4>Đó là... một khẩu súng thật sao? Tại sao lại có thứ như vậy ở\n"
+"đây cơ chứ...?\n"
+"<CLT>"
 
 #. <CLT 4>この棚には…
 #. 水泳用の色々な用具が並んでいる…
@@ -66,7 +72,9 @@ msgid ""
 "<CLT 4>There are a bunch of different pool-related items on\n"
 "the shelf.\n"
 "<CLT>"
-msgstr "<CLT 4>Trên kệ này... xếp đủ các loại dụng cụ bơi lội...<CLT>"
+msgstr ""
+"<CLT 4>Có đủ loại vật dụng liên quan đến hồ bơi trên kệ sách.\n"
+"<CLT>"
 
 #. <CLT 4>浮き輪がある…
 #. <CLT>
@@ -92,4 +100,6 @@ msgctxt "0009 | NARRATION"
 msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
-msgstr "<CLT 23>Rời khỏi khu vực này?<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

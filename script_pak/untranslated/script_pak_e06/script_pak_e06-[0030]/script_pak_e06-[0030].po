@@ -31,6 +31,9 @@ msgid ""
 "of it...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Bọn chúng luôn theo dõi chúng ta sao? Chẳng lẽ chúng không bao\n"
+"giờ thấy chán à...?\n"
+"<CLT>"
 
 #. <CLT 4>…と、心の中で挑発するのが精一杯だ。
 #. <CLT>
@@ -40,6 +43,9 @@ msgid ""
 "about mocking them...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Thiệt, mình đã phải dồn hết sức lực chỉ để dám *nghĩ* về việc chế\n"
+"nhạo bọn chúng...\n"
+"<CLT>"
 
 #. <CLT 4>時間に限りがあります…
 #. <CLT>
@@ -82,12 +88,12 @@ msgstr ""
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -96,16 +102,18 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"
 
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -114,3 +122,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

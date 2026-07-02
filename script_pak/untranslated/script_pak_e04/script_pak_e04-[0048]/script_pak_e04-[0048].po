@@ -19,8 +19,7 @@ msgid ""
 "<CLT 4>Lockers...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là\n"
-"chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...\n"
+"<CLT 4>Tủ đồ...\n"
 "<CLT>"
 
 #. <CLT 4>パソコンには触れない方がいいよな。
@@ -83,12 +82,12 @@ msgstr ""
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -97,3 +96,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

@@ -19,8 +19,7 @@ msgid ""
 "<CLT 4>This bathtub is huge...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đủ loại thực phẩm khác nhau được xếp chồng lên nhau. Mình đoán là\n"
-"chúng ta không phải lo lắng về bữa ăn tiếp theo rồi...\n"
+"<CLT 4>Bồn tắm này rộng thật đấy...\n"
 "<CLT>"
 
 #. <CLT 4>でも、微妙な色だな。
@@ -42,8 +41,7 @@ msgid ""
 "<CLT 4>This bathtub is huge...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có đủ loại đồ ăn ở đây. Từ nguyên liệu nấu ăn cho đến bánh\n"
-"kẹo—họ có tất cả mọi thứ.\n"
+"<CLT 4>Bồn tắm này rộng thật đấy...\n"
 "<CLT>"
 
 #. <CLT 4>でも、微妙な色だな。
@@ -62,12 +60,12 @@ msgstr ""
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>大浴場から出ますか？
 #. <CLT>
@@ -76,3 +74,5 @@ msgid ""
 "<CLT 23>Leave the bathhouse?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi nhà tắm?\n"
+"<CLT>"

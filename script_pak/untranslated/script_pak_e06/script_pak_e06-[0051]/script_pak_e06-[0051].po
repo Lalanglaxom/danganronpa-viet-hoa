@@ -19,6 +19,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -49,12 +51,12 @@ msgstr ""
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -63,6 +65,8 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"
 
 #. <CLT 4>ここはトラッシュルーム…
 #. つまりゴミ捨て場だ。
@@ -72,6 +76,8 @@ msgid ""
 "<CLT 4>This is the trash room. The dump, in other words.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là phòng chứa rác. Nói cách khác là bãi rác.\n"
+"<CLT>"
 
 #. <CLT 4>最後に…この向こうに
 #. モノクマを放り込んでやりたい…
@@ -90,6 +96,8 @@ msgid ""
 "<CLT 4>It's the switch that raises and lowers the gate.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là công tắc để nâng và hạ cánh cổng sắt.\n"
+"<CLT>"
 
 #. <CLT 4>ボクは鍵を持ってないから開けられない…
 #. まぁ、開ける必要もないけど…
@@ -122,12 +130,12 @@ msgstr ""
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -136,3 +144,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

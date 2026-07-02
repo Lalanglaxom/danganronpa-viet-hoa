@@ -32,12 +32,12 @@ msgstr ""
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>大浴場から出ますか？
 #. <CLT>
@@ -46,3 +46,5 @@ msgid ""
 "<CLT 23>Leave the bathhouse?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi nhà tắm?\n"
+"<CLT>"

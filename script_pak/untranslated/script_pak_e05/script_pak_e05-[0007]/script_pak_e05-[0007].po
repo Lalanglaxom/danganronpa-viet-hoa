@@ -15,12 +15,12 @@ msgstr ""
 #. はい
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>体育館から出ますか？
 #. <CLT>
@@ -29,3 +29,5 @@ msgid ""
 "<CLT 23>Leave the gym?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi phòng thể dục?\n"
+"<CLT>"

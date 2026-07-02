@@ -20,16 +20,18 @@ msgid ""
 "<CLT 4>What's this? Is it...the heat source for the sauna?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cái gì đây? Có phải là... nguồn nhiệt cho phòng xông hơi không?\n"
+"<CLT>"
 
 #. はい
 msgctxt "0002 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>サウナから出ますか？
 #. <CLT>
@@ -38,3 +40,5 @@ msgid ""
 "<CLT 23>Leave the sauna?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi phòng xông hơi?\n"
+"<CLT>"
