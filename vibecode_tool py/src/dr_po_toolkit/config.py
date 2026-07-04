@@ -26,6 +26,7 @@ DEFAULT_CONFIG = {
     "gemini_api_prompt": "",
     "gemini_api_sleep_seconds": 1.0,
     "po_viewer_suggest_min_score": 70,
+    "po_viewer_clt_color_mode": False,
 }
 
 

@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from .backup import make_backups, restore_working_po_from_copies, sync_by_filename
+from .backup import make_backups, restore_working_po_from_copies, sync_by_filename_report
 from .linewrap import wrap_path
 from .rules import apply_rules_to_path, load_rules
 from .search import search_path
@@ -84,8 +84,35 @@ def cmd_backup(args: argparse.Namespace) -> int:
 
 
 def cmd_sync(args: argparse.Namespace) -> int:
-    count = sync_by_filename(args.source, args.target)
-    print(f"Files synced: {count}")
+    result = sync_by_filename_report(args.source, args.target)
+
+    def print_paths(title: str, paths: list[Path]) -> None:
+        if not paths:
+            return
+        print(f"{title}: {len(paths)}")
+        for path in paths:
+            print(f"  - {path}")
+
+    def print_pairs(title: str, pairs: list[tuple[Path, Path]]) -> None:
+        if not pairs:
+            return
+        print(f"{title}: {len(pairs)}")
+        for src, target in pairs:
+            print(f"  - {src} -> {target}")
+
+    print(f"Source files scanned: {result.source_files}")
+    print(f"Target files scanned: {result.target_files}")
+    if result.duplicate_source_names:
+        print(f"Duplicate source filenames skipped: {result.duplicate_source_names}")
+    if result.skipped_identical:
+        print(f"Identical files skipped: {result.skipped_identical}")
+    if result.skipped_self:
+        print(f"Self-copy skipped: {result.skipped_self}")
+    print_pairs("Copied source -> target", result.copied_files)
+    print_paths("Duplicate source files not pasted", result.duplicate_source_files)
+    print_paths("Source files with no target filename match (not pasted)", result.source_without_target)
+    print_paths("Target files with no source filename match (not found in source)", result.target_without_source)
+    print(f"Files synced: {result.copied}")
     return 0
 
 

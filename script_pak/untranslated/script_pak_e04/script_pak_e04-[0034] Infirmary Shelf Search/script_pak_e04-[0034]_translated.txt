@@ -1,32 +1,17 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0034].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧かなり大きな棚だな…
+#. 棚いっぱいに薬品が詰め込まれている…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It's a remarkably big shelf. And it's stocked with all\n"
+"⟦CLT 4⟧It's a remarkably big shelf. And it's stocked with all\n"
 "kinds of medicine...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đó là một cái kệ lớn đến kinh ngạc. Và nó chứa đầy\nđủ các loại thuốc...\n"
-"<CLT>"
 
-msgctxt "0002 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
-
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
-
-msgctxt "0004 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
-
-
-==================== FOLDER SUMMARY ====================
-Infirmary Shelf Search
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đó là một chiếc kệ lớn đến đáng kinh ngạc. Và nó chứa đầy đủ các loại thuốc...\n⟦CLT⟧"
 

@@ -38,7 +38,7 @@ SEND_BTN_SEL = (
 RESPONSE_MARKDOWN_SEL = 'div.markdown-main-panel, message-content, pre'
 DEFAULT_CDP_URL = "http://localhost:9222"
 DEFAULT_GEMINI_URL = "https://gemini.google.com/app"
-DEFAULT_CHROME_USER_DATA_DIR = str(Path.home() / ".dr_po_toolkit" / "ChromeDebug")
+DEFAULT_CHROME_USER_DATA_DIR = str(Path.home() / "ChromeDebug")
 DEFAULT_MAX_ENTRIES_PER_BATCH = 40
 DEFAULT_BATCH_RETRIES = 2
 DEFAULT_NO_PROGRESS_TIMEOUT_SECONDS = 60
@@ -64,9 +64,9 @@ msgstr "Tôi hy vọng chúng ta có thể hòa thuận!"
 TRANSLATION RULES:
 * Translate into Vietnamese only.
 * Tags are protected in the input as tokens like ⟦CLT X⟧ and ⟦CLT⟧. Preserve those tokens exactly.
-* Translate as close as possible follow original english text.
+* The English msgid is the source of truth. Translate by following the English meaning, wording, order, and intent as closely as natural Vietnamese allows.
+* Use Japanese #. comment lines only as secondary context for speaker tone, ambiguity, or terminology. Never let Japanese context override, expand, shorten, or change the English source.
 * Preserve placeholders and all other symbols exactly.
-* Use Japanese #. comment lines for context only.
 * Never leave msgstr empty.
 * Do not translate speaker names or msgctxt IDs.
 

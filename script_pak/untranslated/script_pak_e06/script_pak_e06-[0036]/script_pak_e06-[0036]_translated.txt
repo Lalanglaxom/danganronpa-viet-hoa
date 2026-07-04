@@ -1,0 +1,31 @@
+--- Gemini Translation Raw Output for script_pak_e06-[0036].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧監視カメラ…
+#. きっと今も、この向こうで黒幕が…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Even now...on the other side of this camera, the\n"
+"mastermind...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、それももうすぐ終わりだ…！
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that's gonna come to an end soon enough!\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ chủ mưu...\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng chuyện đó sẽ sớm kết thúc thôi!\n⟦CLT⟧"
+

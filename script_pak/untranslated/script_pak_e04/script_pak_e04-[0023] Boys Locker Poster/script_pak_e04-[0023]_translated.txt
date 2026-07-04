@@ -1,32 +1,17 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0023].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧男子に人気のグラビアアイドル…
+#. ダイヤモンドＹＵＫＡのポスターだ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The poster has a super famous supermodel. Her name is\n"
+"⟦CLT 4⟧The poster has a super famous supermodel. Her name is\n"
 "Diamond Yuka, I think...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tấm áp phích vẽ một siêu mẫu cực kỳ nổi tiếng. Tên cô ấy là\nDiamond Yuka, tớ nghĩ vậy...\n"
-"<CLT>"
 
-msgctxt "0002 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
-
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
-
-msgctxt "0004 | NARRATION"
-msgid ""
-"<CLT 23>Leave the boys locker room?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi phòng thay đồ nam?\n"
-"<CLT>"
-
-
-==================== FOLDER SUMMARY ====================
-Boys Locker Poster
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tấm áp phích có hình một siêu mẫu cực kỳ nổi tiếng. Tôi nghĩ tên cô ấy là Diamond Yuka...\n⟦CLT⟧"
 

@@ -1,82 +1,77 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0044].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧包丁入れ…
+#. 包丁は、ひとつ欠けたままだ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There are knives hung on the wall. One is still\n"
+"⟦CLT 4⟧There are knives hung on the wall. One is still\n"
 "missing...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có những con dao được treo trên tường. Một con vẫn\ncòn thiếu...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧今回の事件には、関係ないか…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But I don't think it's related to this case.\n"
-"<CLT>"
+"⟦CLT 4⟧But I don't think it's related to this case.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng tớ không nghĩ nó có liên quan đến vụ án này.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧包丁入れ…
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There are knives hung on the wall.\n"
-"<CLT>"
+"⟦CLT 4⟧There are knives hung on the wall.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có những con dao được treo trên tường.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧包丁は、ひとつ欠けたままだ…
+#. 舞園さんが…持ち出したまま…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>One is still missing. The one...that Sayaka took...\n"
-"<CLT>"
+"⟦CLT 4⟧One is still missing. The one...that Sayaka took...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một con vẫn còn thiếu. Con dao đó... mà Sayaka đã lấy...\n"
-"<CLT>"
 
-msgctxt "0005 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>...\n"
-"<CLT>"
-
+#. ⟦CLT 4⟧ショーケースの中に肉が入っている。
+#. 国産っぽいな。色とツヤ的に。
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There's fresh meat in the display case. Based on the\n"
+"⟦CLT 4⟧There's fresh meat in the display case. Based on the\n"
 "color and luster, I'd say it's domestic.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có thịt tươi trong tủ trưng bày. Dựa vào màu sắc\nvà độ bóng, tớ đoán là hàng nội địa.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧色とりどりの野菜が山積みになっている。
+#. パプリカってオシャレっぽいよな。
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There are all kinds of colorful vegetables piled up. I\n"
+"⟦CLT 4⟧There are all kinds of colorful vegetables piled up. I\n"
 "wonder if there's any paprika around here...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có đủ loại rau củ đầy màu sắc được xếp chồng lên nhau. Tớ\nthắc mắc liệu có quả ớt chuông nào quanh đây không...\n"
-"<CLT>"
 
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có những con dao được treo trên tường. Một con vẫn còn đang thiếu...\n⟦CLT⟧"
 
-msgctxt "0009 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng tôi không nghĩ là nó có liên quan đến vụ án này.\n⟦CLT⟧"
 
-msgctxt "0010 | NARRATION"
-msgid ""
-"<CLT 23>Leave the kitchen?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi nhà bếp?\n"
-"<CLT>"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có những con dao được treo trên tường.\n⟦CLT⟧"
 
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một con vẫn còn đang thiếu. Con dao... mà Sayaka đã lấy...\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Kitchen Knife Investigation
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có thịt tươi trong tủ trưng bày. Dựa vào màu sắc và độ bóng, tôi đoán đó là hàng nội địa.\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có đủ loại rau củ đầy màu sắc được xếp thành đống. Tôi tự hỏi không biết quanh đây có quả ớt chuông nào không nữa...\n⟦CLT⟧"
 

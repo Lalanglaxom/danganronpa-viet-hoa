@@ -1,0 +1,31 @@
+--- Gemini Translation Raw Output for script_pak_e05-[0054].po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧鉄格子の開閉スイッチだ…
+#. 開けるのには鍵がいる…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's the switch to open and close the gate. You need a\n"
+"key to activate it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧その鍵って今は誰が持ってるんだろう…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I wonder who has that key...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là công tắc để đóng mở cổng sắt. Cần phải có chìa khóa mới kích hoạt được nó.\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình tự hỏi hiện tại ai đang giữ chiếc chìa khóa đó nhỉ...\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Gate Switch Key
+

@@ -1,34 +1,30 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0050].po ---
 
 ==================== BATCH 1 REQUEST ====================
-#. はい
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0006 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧大浴場から出ますか？
+#. ⟦CLT 4⟧でも、微妙な色だな。
+#. ゲルマニウム的な何かか？
 #. ⟦CLT⟧
-msgctxt "0007 | NARRATION"
+msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"⟦CLT 23⟧Leave the bathhouse?\n"
+"⟦CLT 4⟧I don't really like the color, though. If I had to\n"
+"compare it to an element, I'd say it's...germanium.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、微妙な色だな。
+#. ゲルマニウム的な何かか？
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't really like the color, though. If I had to\n"
+"compare it to an element, I'd say it's...germanium.\n"
 "⟦CLT⟧"
 msgstr ""
 
 ==================== BATCH 1 RESPONSE ====================
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Có"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù vậy, tôi không thích màu sắc này cho lắm. Nếu phải so sánh nó với một nguyên tố, tôi sẽ nói đó là... gecmani.\n⟦CLT⟧"
 
-msgctxt "0006 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0007 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi nhà tắm?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Leave Bathhouse Prompt
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù vậy, tôi không thích màu sắc này cho lắm. Nếu phải so sánh nó với một nguyên tố, tôi sẽ nói đó là... gecmani.\n⟦CLT⟧"
 

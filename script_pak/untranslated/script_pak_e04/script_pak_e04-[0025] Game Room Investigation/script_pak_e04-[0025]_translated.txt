@@ -1,143 +1,141 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0025].po ---
 
-==================== BATCH 1 ====================
-msgctxt "0001 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
-
-msgctxt "0002 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
-
-msgctxt "0003 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
-
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧雑誌か…
+#. あの漫画、連載の続きが気になるな…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>A bunch of magazines... I'm behind on so many comics,\n"
+"⟦CLT 4⟧A bunch of magazines... I'm behind on so many comics,\n"
 "I wish I could catch up...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Một đống tạp chí... Tớ đã bỏ lỡ quá nhiều truyện tranh rồi,\ntớ ước gì mình có thể đọc kịp...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧オセロを見てると…
+#. モノクマを思い出してしまう…
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Whenever I look at this copy of Othello, it just makes\n"
+"⟦CLT 4⟧Whenever I look at this copy of Othello, it just makes\n"
 "me think of Monokuma...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Mỗi khi nhìn vào bộ cờ Othello này, nó lại khiến\ntớ nghĩ đến Monokuma...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧ダーツってやった事ないんだよな。
+#. ルールも全然知らない。
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I've never actually played darts before. I don't even\n"
+"⟦CLT 4⟧I've never actually played darts before. I don't even\n"
 "know the rules...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ chưa bao giờ thực sự chơi ném phi tiêu cả. Tớ thậm chí còn\nkhông biết luật chơi nữa...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧セレスさんなら…知ってただろうな…
+#. ⟦CLT⟧
 msgctxt "0007 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I bet...Celeste would have known...\n"
-"<CLT>"
+"⟦CLT 4⟧I bet...Celeste would have known...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ cá là... Celeste hẳn sẽ biết rõ chuyện đó...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧割とキレイだな…
+#. 誰かこれで遊んだりしてるのかな…？
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The pool table is spotless. I wonder if anyone's even\n"
+"⟦CLT 4⟧The pool table is spotless. I wonder if anyone's even\n"
 "used it yet...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bàn bida này sạch không tì vết luôn. Tớ tự hỏi không biết đã có ai\nsử dụng nó chưa nữa...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧ロッカーがある…
+#. ⟦CLT⟧
 msgctxt "0009 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It's the same locker as ever...\n"
-"<CLT>"
+"⟦CLT 4⟧It's the same locker as ever...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Vẫn là cái tủ đồ đó như mọi khi thôi...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧特に意味がある物はなさそうだし、
+#. 開ける必要はないかな…
+#. ⟦CLT⟧
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I don't think there's anything meaningful about it.\n"
+"⟦CLT 4⟧I don't think there's anything meaningful about it.\n"
 "Don't see much need to even open it...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ không nghĩ có điều gì ý nghĩa về nó đâu.\nChẳng thấy cần thiết phải mở nó ra làm gì cả...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧ソファーか…
+#. 部屋に置きたいって考えた事もあったな…
+#. ⟦CLT⟧
 msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I'd considered putting a couch like this in my room.\n"
-"<CLT>"
+"⟦CLT 4⟧I'd considered putting a couch like this in my room.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ từng cân nhắc việc đặt một chiếc ghế sofa như thế này trong phòng mình.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧狭いから、あきらめたけど。
+#. ⟦CLT⟧
 msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But my room's way too small...so I gave up on that\n"
+"⟦CLT 4⟧But my room's way too small...so I gave up on that\n"
 "idea.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng phòng tớ quá nhỏ... nên tớ đã từ bỏ ý định đó rồi.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧テーブルに関して感想を言えと言われても、
+#. 正直、困ってしまうな…
+#. ⟦CLT⟧
 msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>To be honest, if someone asked me to describe anything\n"
+"⟦CLT 4⟧To be honest, if someone asked me to describe anything\n"
 "unique or interesting about this table, I couldn't.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Thật lòng mà nói, nếu ai đó bảo tớ mô tả bất cứ điều gì\nđộc đáo hay thú vị về cái bàn này, tớ chịu thôi.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧これって、ビンみたいだけど…
+#. なんなんだ？
+#. ⟦CLT⟧
 msgctxt "0014 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It's some kind of bottle. But what's the point of\n"
+"⟦CLT 4⟧It's some kind of bottle. But what's the point of\n"
 "it...?\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Đó là một loại chai lọ gì đó. Nhưng mục đích của nó là\ngì cơ chứ...?\n"
-"<CLT>"
 
-msgctxt "0015 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>Maybe it's just for decoration or something...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Có lẽ nó chỉ dùng để trang trí hay đại loại thế thôi...\n"
-"<CLT>"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một đống tạp chí... Tôi đã bỏ lỡ quá nhiều truyện tranh rồi, ước gì tôi có thể đọc kịp...\n⟦CLT⟧"
 
-msgctxt "0016 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mỗi khi nhìn vào bàn cờ Othello này, nó lại khiến tôi nghĩ đến Monokuma...\n⟦CLT⟧"
 
-msgctxt "0017 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi chưa từng thực sự chơi ném phi tiêu bao giờ. Tôi thậm chí còn chẳng biết luật chơi...\n⟦CLT⟧"
 
-msgctxt "0018 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi cá là... Celeste sẽ biết đấy...\n⟦CLT⟧"
 
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Bàn bida không một vết bẩn. Tôi tự hỏi không biết đã có ai từng dùng nó chưa nữa...\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Game Room Investigation
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vẫn là chiếc tủ đồ như mọi khi...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi không nghĩ là có điều gì ý nghĩa ở trong này cả. Thậm chí chẳng thấy có gì cần thiết phải mở nó ra...\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi từng cân nhắc việc đặt một chiếc ghế sofa như thế này trong phòng mình.\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng phòng của tôi quá nhỏ... nên tôi đã từ bỏ ý định đó.\n⟦CLT⟧"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thành thật mà nói, nếu có ai đó bảo tôi mô tả điểm gì độc đáo hay thú vị về chiếc bàn này, tôi cũng chịu thôi.\n⟦CLT⟧"
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nó là một loại chai lọ gì đó. Nhưng mục đích của nó là gì vậy nhỉ...?\n⟦CLT⟧"
 

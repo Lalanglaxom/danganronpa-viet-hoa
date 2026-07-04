@@ -1,58 +1,54 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0008].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧もう何も入ってない…
+#. もちろん、今回の事件には関係なさそうだ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There's nothing in here anymore. So naturally it's no\n"
+"⟦CLT 4⟧There's nothing in here anymore. So naturally it's no\n"
 "use to us anymore.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Bên trong không còn gì nữa cả. Nên hiển nhiên là nó chẳng\ncòn ích gì cho chúng ta nữa rồi.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧もう何も入ってない…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>There's nothing in here anymore.\n"
-"<CLT>"
+"⟦CLT 4⟧There's nothing in here anymore.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không còn gì ở trong này nữa.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧今はＤＶＤデッキで再生する物は持ってない。
+#. あの…ねつ造の映像だって捨てたし…！
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I don't have anything to put in the DVD player. I made\n"
+"⟦CLT 4⟧I don't have anything to put in the DVD player. I made\n"
 "sure to throw away the disc with that awful video...!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ không có gì để bỏ vào đầu đĩa DVD cả. Tớ đã\nchắc chắn rằng mình đã vứt bỏ cái đĩa chứa đoạn video kinh khủng đó rồi!\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧今はＤＶＤデッキで再生する物は持ってない。
+#. あの…ねつ造の映像だって捨てたし…！
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I don't have anything to put in the DVD player. I made\n"
+"⟦CLT 4⟧I don't have anything to put in the DVD player. I made\n"
 "sure to throw away the disc with that awful video...!\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ không có gì để bỏ vào đầu đĩa DVD cả. Tớ đã\nchắc chắn rằng mình đã vứt bỏ cái đĩa chứa đoạn video kinh khủng đó rồi!\n"
-"<CLT>"
 
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không còn gì ở trong này nữa. Nên dĩ nhiên là nó không còn tác dụng gì với chúng ta nữa rồi.\n⟦CLT⟧"
 
-msgctxt "0006 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không còn gì ở trong này nữa.\n⟦CLT⟧"
 
-msgctxt "0007 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi không có gì để bỏ vào đầu đĩa DVD cả. Tôi đã chắc chắn vứt bỏ chiếc đĩa có đoạn video kinh khủng đó rồi...!\n⟦CLT⟧"
 
-
-==================== FOLDER SUMMARY ====================
-AV Room Investigation
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi không có gì để bỏ vào đầu đĩa DVD cả. Tôi đã chắc chắn vứt bỏ chiếc đĩa có đoạn video kinh khủng đó rồi...!\n⟦CLT⟧"
 

@@ -21,78 +21,10 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. ⟦CLT 4⟧こっちも鉄板…あっちも鉄板…
-#. ⟦CLT⟧
-msgctxt "0003 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧Metal plate here... Metal plate over there, too.\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. はい
-msgctxt "0007 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0009 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đúng là tôi có thể nhìn đồng hồ để biết \"mấy giờ\" rồi. Nhưng có ích gì chứ?⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chắc rồi, tôi có thể nhìn vào đồng hồ để biết bây giờ là mấy \"giờ\". Nhưng việc đó có ý nghĩa gì chứ?\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Sakura chắc chắn đã thử phá nó đủ kiểu rồi. Nếu đến cả cô ấy còn không làm được thì tôi có cơ hội nào chứ...?⟦CLT⟧"
-
-msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Chỗ này cũng là tấm sắt... Chỗ kia cũng là tấm sắt...⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-msgctxt "0007 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0009 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Metal Plate Inspect
+msgstr "⟦CLT 4⟧Tôi chắc rằng Sakura đã cố gắng phá sập mấy thứ này nhiều hơn một lần rồi. Nếu cô ấy còn không làm được, thì tôi có cơ hội nào chứ...?\n⟦CLT⟧"
 

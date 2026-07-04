@@ -68,61 +68,25 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0009 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0010 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
-==================== BATCH 1 ATTEMPT 1 ERROR ====================
-Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
-
-==================== BATCH 1 ATTEMPT 2 ERROR ====================
-Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một cây hoa anh đào đang nở rộ. Đẹp thật, nhưng mà... không hiểu sao... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Cây hoa anh đào này đang nở rộ. Nó thực sự rất đẹp, nhưng bằng cách nào đó...\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một cây hoa anh đào đang nở rộ. Đẹp thật, nhưng mà... không hiểu sao... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Cây hoa anh đào này đang nở rộ. Nó thực sự rất đẹp, nhưng bằng cách nào đó...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có mấy cái tủ đồ bằng gỗ ở đây này. ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Có một dãy tủ khóa bằng gỗ ở trong này.\n⟦CLT⟧"
 
 msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Mỗi cái tủ đều có cắm một thẻ gỗ. Chắc đây là chìa khóa... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Mỗi chiếc tủ đều có một chiếc chìa khóa bằng gỗ kiểu truyền thống cắm sẵn ở đó...\n⟦CLT⟧"
 
 msgctxt "0005 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Có một bộ giáp được trưng bày... Không biết nó có phải hàng thật không nhỉ...? ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Một bộ áo giáp đang được trưng bày. Liệu nó có phải là hàng thật không nhỉ...?\n⟦CLT⟧"
 
 msgctxt "0006 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một trụ rơm để tập kiếm... Đây là lần đầu tiên tôi nhìn thấy vật thật đấy... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Đó là một tấm bia rơm dùng để luyện kiếm. Trước đây mình chưa từng tận mắt nhìn thấy một cái thật bao giờ...\n⟦CLT⟧"
 
 msgctxt "0007 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đích ngắm trông có vẻ xa quá nhỉ. Mà chắc là phải vậy rồi...? ⟦CLT⟧"
-
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0009 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0010 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ? ⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Dojo Room Inspection
+msgstr "⟦CLT 4⟧Mục tiêu kia có vẻ khá xa. Dù mình đoán đó chính là mục đích của nó nhỉ...?\n⟦CLT⟧"
 

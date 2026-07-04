@@ -1,34 +1,29 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0052].po ---
 
 ==================== BATCH 1 REQUEST ====================
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT 4⟧どう見ても…事件とは関係ないよな。
 #. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
+msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT 4⟧I can't imagine how this could have anything to do\n"
+"with the case...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧水槽だ…小さな魚が泳いでいる…
+#. どういう意味だよ…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a fish tank. There's a little fish swimming\n"
+"around inside... What does it mean...?\n"
 "⟦CLT⟧"
 msgstr ""
 
 ==================== BATCH 1 RESPONSE ====================
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi không thể tưởng tượng nổi thứ này thì có liên quan gì đến vụ án nữa...\n⟦CLT⟧"
 
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Leave Area Prompt
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đó là một bể cá. Có một chú cá nhỏ đang bơi lội tung tăng bên trong... Điều này có ý nghĩa gì chứ...?\n⟦CLT⟧"
 

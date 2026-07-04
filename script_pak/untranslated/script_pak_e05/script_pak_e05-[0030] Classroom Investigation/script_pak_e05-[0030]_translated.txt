@@ -40,64 +40,16 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0006 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0007 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. はい
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0009 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0010 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đúng là tôi có thể nhìn đồng hồ để biết bây giờ là mấy \"giờ\". Nhưng làm vậy thì có ích gì chứ?⟦CLT⟧"
-msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tôi chắc rằng Sakura đã thử phá bỏ mấy thứ này nhiều lần rồi. Nếu cô ấy còn không làm được thì tôi có cơ hội nào chứ...?⟦CLT⟧"
-msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Ở một lớp học bình thường thì đây là nơi lẽ ra phải có cửa sổ...⟦CLT⟧"
-msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧...nhưng bây giờ lại có một tấm kim loại nào đó được đóng chặt lên trên.⟦CLT⟧"
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Có"
-msgctxt "0006 | CHOICE/RE:ACT"
-msgstr "Không"
-msgctxt "0007 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Có"
-msgctxt "0009 | CHOICE/RE:ACT"
-msgstr "Không"
-msgctxt "0010 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chắc rồi, tôi có thể nhìn vào đồng hồ và biết bây giờ là mấy \"giờ\". Nhưng việc đó thì có ý nghĩa gì chứ?\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Classroom Investigation
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi chắc rằng Sakura đã cố gắng phá sập mấy thứ này nhiều hơn một lần rồi. Nếu cô ấy còn không làm được, thì tôi có cơ hội nào chứ...?\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ở bất kỳ lớp học bình thường nào, đây sẽ là nơi có một ô cửa sổ...\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧...nhưng giờ thì một tấm kim loại nào đó đã được gắn chặt lên trên nó.\n⟦CLT⟧"
 

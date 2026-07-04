@@ -17,14 +17,6 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. ⟦CLT 23⟧「ガチャ、ガチャ…」
-#. ⟦CLT⟧
-msgctxt "0003 | NARRATION"
-msgid ""
-"⟦CLT 23⟧*Rattle rattle*\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧駄目だ、鍵が掛かってる。
 #. やっぱり情報処理室は封鎖されたんだ…
 #. ⟦CLT⟧
@@ -37,14 +29,11 @@ msgstr ""
 
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đây là nhà vệ sinh nữ... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Đây là nhà vệ sinh nữ.\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tất nhiên là tôi không thể vào rồi... ⟦CLT⟧"
-
-msgctxt "0003 | NARRATION"
-msgstr "⟦CLT 23⟧*Lạch cạch, lạch cạch* ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Tất nhiên là mình không thể vào trong rồi...\n⟦CLT⟧"
 
 msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Không được rồi, cửa khóa rồi. Tôi đã nghĩ là mình sẽ không thể vào được phòng xử lý dữ liệu mà... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chắc chắn là đã bị khóa rồi. Mình đoán là mình không thể vào được phòng xử lý thông tin dữ liệu đâu...\n⟦CLT⟧"
 

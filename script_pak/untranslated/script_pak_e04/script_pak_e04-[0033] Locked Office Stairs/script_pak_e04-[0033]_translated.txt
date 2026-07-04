@@ -1,49 +1,53 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0033].po ---
 
-==================== BATCH 1 ====================
-msgctxt "0001 | MAKOTO NAEGI"
-msgid ""
-"<CLT 23>*Rattle rattle*\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>*Lạch cạch lạch cạch*\n"
-"<CLT>"
-
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧駄目だ、鍵が掛かってる。
+#. ここには入れないみたいだ。
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>No good—the door's locked. I guess I won't be getting\n"
+"⟦CLT 4⟧No good—the door's locked. I guess I won't be getting\n"
 "in here...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Không xong rồi—cửa đã bị khóa. Có vẻ tớ không thể vào\ntrong này được đâu...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧ドアの表札には“学園長室”ってある。
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>The nameplate on the door says \"Headmaster's Room.\"\n"
-"<CLT>"
+"⟦CLT 4⟧The nameplate on the door says \"Headmaster's Room.\"\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Biển tên trên cửa ghi là \"Phòng Hiệu Trưởng.\"\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧階段…なんだろうけど……
+#. シャッターが降りてる。
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It looks like more stairs, but...the gate's locked.\n"
-"<CLT>"
+"⟦CLT 4⟧It looks like more stairs, but...the gate's locked.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Trông giống như có thêm cầu thang nữa, nhưng mà... cửa cuốn đã bị khóa.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧これじゃ、登れないな。
+#. 階段の意味がない…
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>What's the point of having stairs if you're just gonna\n"
+"⟦CLT 4⟧What's the point of having stairs if you're just gonna\n"
 "block 'em off...?\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Làm cầu thang làm gì nếu cậu chỉ định\nchặn chúng lại cơ chứ...?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không ổn rồi—cửa đã khóa. Tôi đoán là mình sẽ không vào được đây...\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Locked Office Stairs
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Biển tên trên cửa ghi \"Phòng Hiệu trưởng.\"\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Trông giống như có thêm cầu thang, nhưng... cửa cuốn đã đóng chặt rồi.\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Làm cầu thang làm gì nếu người ta chỉ định chặn chúng lại chứ...?\n⟦CLT⟧"
 

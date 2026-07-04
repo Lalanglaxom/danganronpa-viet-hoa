@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 4/2/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 4>今更、時計なんか気にしても仕方がないか…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What's the point in even looking at the clock now...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Bây giờ có nhìn vào đồng hồ thì còn có ích gì nữa đâu chứ...?\n"
+"<CLT>"
+
+#. はい
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

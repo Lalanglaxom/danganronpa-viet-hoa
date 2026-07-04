@@ -19,40 +19,10 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0005 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Ngay cả lúc này... ở phía bên kia camera, kẻ chủ mưu... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ chủ mưu...\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Nhưng chuyện đó sẽ sớm kết thúc thôi! ⟦CLT⟧"
-
-msgctxt "0003 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0005 | NARRATION"
-msgstr "⟦CLT 23⟧Bạn muốn rời khỏi khu vực này? ⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Camera Investigation
+msgstr "⟦CLT 4⟧Nhưng chuyện đó sẽ sớm kết thúc thôi!\n⟦CLT⟧"
 

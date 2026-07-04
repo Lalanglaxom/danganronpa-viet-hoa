@@ -71,6 +71,8 @@ msgid ""
 "what's going on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó có vẻ nguy hiểm... Và nó không có liên quan gì đến những chuyện đang xảy ra cả.\n"
+"<CLT>"
 
 #. <CLT 4>これって…本物の銃だよな？
 #. なんでこんなものがあるんだよ…
@@ -104,6 +106,8 @@ msgid ""
 "<CLT 4>I don't see anything all that interesting here...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tôi không thấy có gì quá thú vị ở đây cả...\n"
+"<CLT>"
 
 #. <CLT 4>この棚には…
 #. 水泳用の色々な用具が並んでいる…
@@ -130,7 +134,7 @@ msgstr ""
 #. <CLT 4>事件には関係なさそうだ…
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "<CLT 4>Doesn't seem related to the case..."
-msgstr ""
+msgstr "<CLT 4>Dường như không liên quan đến vụ án..."
 
 #. <CLT 4>浮き輪がある…
 #. <CLT>

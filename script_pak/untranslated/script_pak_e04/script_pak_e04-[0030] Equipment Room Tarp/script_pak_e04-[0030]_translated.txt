@@ -1,87 +1,65 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0030].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. …元通りになってる…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Everything's back to normal..."
-msgstr "Mọi thứ đã trở lại bình thường rồi..."
+msgstr ""
 
+#. ⟦CLT 4⟧舞園さんや不二咲クンの時と同じか。
+#. これも…モノクマがやったんだろうな…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Just like with Sayaka and Chihiro. Monokuma's\n"
+"⟦CLT 4⟧Just like with Sayaka and Chihiro. Monokuma's\n"
 "responsible, I'm sure...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Cũng giống như trường hợp của Sayaka và Chihiro vậy. Chắc chắn\nlà do Monokuma làm rồi...\n"
-"<CLT>"
 
+#. このビニールシート…
+#. 前の石丸クンの事件では使われたけど…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "This tarp...was used when Taka was killed..."
-msgstr "Tấm bạt này... đã được sử dụng khi Taka bị sát hại..."
+msgstr ""
 
+#. ⟦CLT 4⟧今回の事件には関係なさそうだ。
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But it's unrelated to what's going on now.\n"
-"<CLT>"
+"⟦CLT 4⟧But it's unrelated to what's going on now.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng nó không liên quan đến những gì đang diễn ra lúc này.\n"
-"<CLT>"
 
+#. このビニールシート…
+#. 前の石丸クンの事件では使われた物だ…
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "This tarp...was used when Taka was killed..."
-msgstr "Tấm bạt này... đã được sử dụng khi Taka bị sát hại..."
+msgstr ""
 
+#. ⟦CLT 4⟧その痕跡はどこにもないけど…
+#. ⟦CLT⟧
 msgctxt "0006 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But there's no way you'd know it.\n"
-"<CLT>"
+"⟦CLT 4⟧But there's no way you'd know it.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng cậu chẳng có cách nào biết được điều đó đâu.\n"
-"<CLT>"
 
-msgctxt "0007 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>Pendulums, wheels, rail segments... All the equipment\n"
-"is scattered all over.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Con lắc, bánh xe, các đoạn đường ray... Tất cả thiết bị\nđều đang nằm rải rác khắp nơi.\n"
-"<CLT>"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Mọi thứ đã trở lại bình thường..."
 
-msgctxt "0008 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>They're all covered in dust, too. They obviously\n"
-"haven't been used in a long time.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Chúng cũng bị phủ đầy bụi nữa. Rõ ràng là\nđã lâu rồi không có ai sử dụng chúng.\n"
-"<CLT>"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cũng giống như với Sayaka và Chihiro. Mình chắc chắn việc này là do Monokuma làm...\n⟦CLT⟧"
 
-msgctxt "0009 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>There's a bunch of files here. Probably old lab files\n"
-"or research data...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Có một đống hồ sơ ở đây. Có lẽ là các tệp thí nghiệm cũ\nhoặc dữ liệu nghiên cứu...\n"
-"<CLT>"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Tấm bạt này... đã được dùng khi Taka bị sát hại..."
 
-msgctxt "0010 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng nó không liên quan đến những chuyện đang xảy ra bây giờ.\n⟦CLT⟧"
 
-msgctxt "0011 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Tấm bạt này... đã được dùng khi Taka bị sát hại..."
 
-msgctxt "0012 | NARRATION"
-msgid ""
-"<CLT 23>Leave the equipment room?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi phòng thiết bị?\n"
-"<CLT>"
-
-
-==================== FOLDER SUMMARY ====================
-Equipment Room Tarp
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng chẳng có cách nào mà bạn biết được chuyện đó đâu.\n⟦CLT⟧"
 

@@ -1,48 +1,27 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0035].po ---
 
-==================== BATCH 1 ====================
-msgctxt "0001 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>This is one of the monitors Monokuma appears on.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
-"<CLT>"
-
-msgctxt "0002 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>All that's on it right now is the school crest...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Hiện giờ trên đó chỉ hiện mỗi biểu tượng của trường...\n"
-"<CLT>"
-
-msgctxt "0003 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>A surveillance camera...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Một chiếc camera giám sát...\n"
-"<CLT>"
-
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧きっといまも、この向こうで…黒幕が…
+#. ⟦CLT⟧
 msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>Even now, the mastermind is probably on the other\n"
+"⟦CLT 4⟧Even now, the mastermind is probably on the other\n"
 "side...\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Ngay lúc này, kẻ chủ mưu chắc hẳn đang ở phía bên kia...\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧でも、それももうすぐ終わりだ…！
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But I'm gonna bring that all to an end soon...!\n"
-"<CLT>"
+"⟦CLT 4⟧But I'm gonna bring that all to an end soon...!\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng tớ sẽ sớm kết thúc tất cả chuyện này thôi...!\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả lúc này, kẻ chủ mưu có lẽ đang ở phía bên kia...\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Mastermind Camera Observation
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng mình sẽ sớm chấm dứt tất cả chuyện đó thôi...!\n⟦CLT⟧"
 

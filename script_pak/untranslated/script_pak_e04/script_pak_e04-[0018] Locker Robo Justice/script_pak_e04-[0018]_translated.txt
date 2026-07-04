@@ -1,49 +1,41 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0018].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧このロッカーに、
+#. ジャスティスロボが入ってたんだ…
+#. ⟦CLT⟧
 msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>We found \"Robo Justice\" stuffed in this locker last\n"
+"⟦CLT 4⟧We found \"Robo Justice\" stuffed in this locker last\n"
 "time.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Lần trước chúng ta đã tìm thấy \"Người Máy Công Lý\"\nbị nhét trong chiếc tủ đồ này.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧今回の事件に関わるものは…ないか…
+#. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>But now...there's nothing useful in here.\n"
-"<CLT>"
+"⟦CLT 4⟧But now...there's nothing useful in here.\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Nhưng giờ thì... chẳng có gì hữu ích ở trong này cả.\n"
-"<CLT>"
 
+#. ⟦CLT 4⟧このロッカーに、
+#. ジャスティスロボが入ってたんだ…
+#. ⟦CLT⟧
 msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>We found \"Robo Justice\" stuffed in this locker last\n"
+"⟦CLT 4⟧We found \"Robo Justice\" stuffed in this locker last\n"
 "time.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Lần trước chúng ta đã tìm thấy \"Người Máy Công Lý\"\nbị nhét trong chiếc tủ đồ này.\n"
-"<CLT>"
 
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lần trước chúng tôi đã tìm thấy \"Robo Justice\" bị nhét trong tủ đồ này.\n⟦CLT⟧"
 
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng bây giờ... không có gì hữu ích ở trong này cả.\n⟦CLT⟧"
 
-msgctxt "0006 | NARRATION"
-msgid ""
-"<CLT 23>Leave the pool?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi hồ bơi?\n"
-"<CLT>"
-
-
-==================== FOLDER SUMMARY ====================
-Locker Robo Justice
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Lần trước chúng tôi đã tìm thấy \"Robo Justice\" bị nhét trong tủ đồ này.\n⟦CLT⟧"
 

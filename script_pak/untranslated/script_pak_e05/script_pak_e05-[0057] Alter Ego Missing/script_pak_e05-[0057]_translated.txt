@@ -28,49 +28,13 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
-==================== BATCH 1 ATTEMPT 1 ERROR ====================
-Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
-
-==================== BATCH 1 ATTEMPT 2 ERROR ====================
-Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
 msgstr "⟦CLT 4⟧Alter Ego... không còn ở đây nữa rồi.\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Cái ghế mát-xa này...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chiếc ghế massage...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tớ không nên dùng, nhỡ đâu có cái bẫy gì thì nguy...\n⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Alter Ego Missing
+msgstr "⟦CLT 4⟧Mình sẽ tránh xa nó ra, phòng trường hợp nó bị gài bẫy theo cách nào đó...\n⟦CLT⟧"
 

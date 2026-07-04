@@ -11,34 +11,7 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0002 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧男子更衣室から出ますか？
-#. ⟦CLT⟧
-msgctxt "0004 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the boys locker room?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đây là áp phích của một siêu mẫu siêu nổi tiếng. Tôi nghĩ cô ấy tên là Diamond Yuka... ⟦CLT⟧"
-msgctxt "0002 | CHOICE/RE:ACT"
-msgstr "Có"
-msgctxt "0003 | CHOICE/RE:ACT"
-msgstr "Không"
-msgctxt "0004 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi phòng thay đồ nam? ⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Locker Room Interaction
+msgstr "⟦CLT 4⟧Tấm áp phích in hình một siêu mẫu cực kỳ nổi tiếng. Tôi nghĩ tên cô ấy là Diamond Yuka...\n⟦CLT⟧"
 

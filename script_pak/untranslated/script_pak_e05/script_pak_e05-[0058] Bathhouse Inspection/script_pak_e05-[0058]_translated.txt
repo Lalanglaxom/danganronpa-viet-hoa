@@ -18,40 +18,10 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧大浴場から出ますか？
-#. ⟦CLT⟧
-msgctxt "0005 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the bathhouse?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Bồn tắm rộng thật đấy... làm tớ muốn bơi quá. ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Nó to thật đấy, làm mình cứ muốn nhảy vào bơi một vòng.\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Mà nghĩ lại thì, chuyện đó nên để dành cho bể bơi mới đúng nhỉ... ⟦CLT⟧"
-
-msgctxt "0003 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0005 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi nhà tắm công cộng chứ?\n⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Bathhouse Inspection
+msgstr "⟦CLT 4⟧Dù sao thì mình nghĩ chúng ta cũng có bể bơi riêng cho việc đó rồi...\n⟦CLT⟧"
 

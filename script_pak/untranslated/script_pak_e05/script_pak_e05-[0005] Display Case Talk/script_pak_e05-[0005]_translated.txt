@@ -1,15 +1,6 @@
 --- Gemini Translation Raw Output for script_pak_e05-[0005].po ---
 
 ==================== BATCH 1 REQUEST ====================
-#. ⟦CLT 4⟧ショーウインドウの中には、
-#. トロフィーや展示品なんかが飾られている…
-#. ⟦CLT⟧
-msgctxt "0001 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧Inside the display case are trophies and other items.\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧でも、こんなの見ても退屈なだけだ…
 #. ⟦CLT⟧
 msgctxt "0002 | MAKOTO NAEGI"
@@ -18,40 +9,7 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0005 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
-msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Trong tủ trưng bày có cúp và vài món đồ được bày biện...⟦CLT⟧"
-
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Nhưng mà, nhìn mấy thứ này thấy chán quá đi mất...⟦CLT⟧"
-
-msgctxt "0003 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0005 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Display Case Talk
+msgstr "⟦CLT 4⟧Thành thật mà nói, nhìn vào nó tôi thấy hơi chán rồi đấy...\n⟦CLT⟧"
 

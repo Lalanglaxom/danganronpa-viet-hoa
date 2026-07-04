@@ -29,43 +29,13 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đây là thùng rác, như mọi khi thôi.⟦CLT⟧"
+msgstr "⟦CLT 4⟧Một chiếc thùng rác, như thường lệ.\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Chẳng có gì ngạc nhiên khi bên trong toàn là rác. Tôi không thấy có lý do gì để đi bới đống rác đó lên cả...⟦CLT⟧"
+msgstr "⟦CLT 4⟧Không ngoài dự đoán, có rác ở bên trong. Tôi không có lý do chính đáng nào để bới móc nó lên cả...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Cái tủ lạnh này chứa đầy các túi máu, có lẽ được dự trữ để truyền máu.⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Infirmary Inspection
+msgstr "⟦CLT 4⟧Chiếc tủ lạnh này chứa đầy các túi máu, có lẽ được lưu trữ sẵn để phục vụ cho việc truyền máu.\n⟦CLT⟧"
 

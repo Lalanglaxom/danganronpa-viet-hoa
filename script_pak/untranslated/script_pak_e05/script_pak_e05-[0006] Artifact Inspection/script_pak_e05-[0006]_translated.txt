@@ -1,14 +1,6 @@
 --- Gemini Translation Raw Output for script_pak_e05-[0006].po ---
 
 ==================== BATCH 1 REQUEST ====================
-#. ⟦CLT 4⟧ハニワだ…
-#. ⟦CLT⟧
-msgctxt "0001 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧A couple of terra-cotta clay figures...\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧かなり小さい子供の頃に見た事あるな。
 #. ハニワが主人公の子供番組…
 #. ⟦CLT⟧
@@ -16,22 +8,6 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "⟦CLT 4⟧I remember there was a show I used to watch as a kid,\n"
 "where the main character was this type of statue...\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. ⟦CLT 4⟧仏像だよな…
-#. ⟦CLT⟧
-msgctxt "0003 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧A Buddha statue...\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. ⟦CLT 4⟧何でこんなものが飾ってあるんだろう…
-#. ⟦CLT⟧
-msgctxt "0004 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧Why is something like that on display?\n"
 "⟦CLT⟧"
 msgstr ""
 
@@ -55,36 +31,13 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. ⟦CLT 4⟧上段の棚にも、色々なものが置かれている…
-#. ⟦CLT⟧
-msgctxt "0007 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧There's all kinds of stuff on the upper shelf, too.\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
-msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Là mấy bức tượng đất nung...⟦CLT⟧"
-
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tôi nhớ mình từng xem một chương trình hồi còn bé, nhân vật chính là loại tượng này...⟦CLT⟧"
-
-msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tượng Phật à...⟦CLT⟧"
-
-msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tại sao thứ này lại được trưng bày ở đây chứ...⟦CLT⟧"
+msgstr "⟦CLT 4⟧Tôi nhớ lúc nhỏ từng xem một chương trình có nhân vật chính là kiểu bức tượng như thế này...\n⟦CLT⟧"
 
 msgctxt "0005 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một tấm khiên à... Chẳng có ấn tượng gì đặc biệt với tôi cả...⟦CLT⟧"
+msgstr "⟦CLT 4⟧Một chiếc biểu trưng... Nó không thực sự để lại nhiều ấn tượng cho tôi lắm.\n⟦CLT⟧"
 
 msgctxt "0006 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một cái mũ giáp... Tại sao thứ này lại được trưng bày ở đây chứ...⟦CLT⟧"
-
-msgctxt "0007 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Trên kệ cao hơn cũng có đặt đủ loại thứ khác...⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Artifact Inspection
+msgstr "⟦CLT 4⟧Đó là một chiếc mũ giáp kiểu gì đó. Tại sao một thứ như vậy lại được trưng bày ở đây nhỉ?\n⟦CLT⟧"
 

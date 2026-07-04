@@ -4,7 +4,7 @@ import filecmp
 import os
 import re
 import shutil
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from .discovery import is_copy_po, iter_po_files
@@ -35,6 +35,12 @@ class SyncByFilenameResult:
     source_files: int = 0
     target_files: int = 0
     duplicate_source_names: int = 0
+    copied_files: list[tuple[Path, Path]] = field(default_factory=list)
+    skipped_identical_files: list[tuple[Path, Path]] = field(default_factory=list)
+    skipped_self_files: list[tuple[Path, Path]] = field(default_factory=list)
+    duplicate_source_files: list[Path] = field(default_factory=list)
+    source_without_target: list[Path] = field(default_factory=list)
+    target_without_source: list[Path] = field(default_factory=list)
 
 
 def _is_nested_or_same(a: Path, b: Path) -> bool:
@@ -89,33 +95,46 @@ def sync_by_filename_report(source_folder: str | Path, target_folder: str | Path
     result = SyncByFilenameResult()
     source_index: dict[str, Path] = {}
     duplicate_names: set[str] = set()
+    duplicate_sources: dict[str, list[Path]] = {}
     for p in iter_po_files(source_folder):
         result.source_files += 1
         if p.name in source_index:
             duplicate_names.add(p.name)
             # Ambiguous source filename: do not use either file.
-            source_index.pop(p.name, None)
+            first = source_index.pop(p.name, None)
+            bucket = duplicate_sources.setdefault(p.name, [])
+            if first is not None:
+                bucket.append(first)
+            bucket.append(p)
             continue
         if p.name not in duplicate_names:
             source_index[p.name] = p
     result.duplicate_source_names = len(duplicate_names)
+    result.duplicate_source_files = [path for paths in duplicate_sources.values() for path in paths]
 
+    matched_source_names: set[str] = set()
     for target in iter_po_files(target_folder):
         result.target_files += 1
         src = source_index.get(target.name)
         if not src:
+            result.target_without_source.append(target)
             continue
+        matched_source_names.add(target.name)
         try:
             if src.samefile(target):
                 result.skipped_self += 1
+                result.skipped_self_files.append((src, target))
                 continue
         except OSError:
             pass
         if _same_file_content(src, target):
             result.skipped_identical += 1
+            result.skipped_identical_files.append((src, target))
             continue
         shutil.copy2(src, target)
         result.copied += 1
+        result.copied_files.append((src, target))
+    result.source_without_target = [src for name, src in source_index.items() if name not in matched_source_names]
     return result
 
 

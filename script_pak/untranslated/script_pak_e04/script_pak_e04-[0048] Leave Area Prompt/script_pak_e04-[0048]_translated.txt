@@ -1,34 +1,63 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0048].po ---
 
 ==================== BATCH 1 REQUEST ====================
-#. はい
-msgctxt "0007 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
+#. ⟦CLT 4⟧パソコンには触れない方がいいよな。
 #. ⟦CLT⟧
-msgctxt "0009 | NARRATION"
+msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
-"⟦CLT 23⟧Leave the area?\n"
+"⟦CLT 4⟧I'd better not touch the laptop.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧マッサージチェアがある…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The massage chair...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧どんな罠が仕掛けられてるかわからない。
+#. 使用は控えよう…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It might have been booby-trapped. I'd better avoid\n"
+"using it...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧マッサージチェアがある…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The massage chair...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧どんな罠が仕掛けられてるかわからない。
+#. 使用は控えよう…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I dunno what kind of trap might have been set in it.\n"
+"I'd better avoid using it...\n"
 "⟦CLT⟧"
 msgstr ""
 
 ==================== BATCH 1 RESPONSE ====================
-msgctxt "0007 | CHOICE/RE:ACT"
-msgstr "Có"
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình tốt nhất là không nên chạm vào máy tính xách tay.\n⟦CLT⟧"
 
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Không"
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc ghế massage...\n⟦CLT⟧"
 
-msgctxt "0009 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nó có thể đã bị gài bẫy. Tốt nhất mình nên tránh sử dụng nó...\n⟦CLT⟧"
 
-==================== FOLDER SUMMARY ====================
-Leave Area Prompt
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chiếc ghế massage...\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không biết có loại bẫy nào đã được đặt trong đó nữa. Tốt nhất mình nên tránh sử dụng nó...\n⟦CLT⟧"
 

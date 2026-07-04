@@ -11,14 +11,6 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. ⟦CLT 4⟧ＤＶＤデッキだ…
-#. ⟦CLT⟧
-msgctxt "0002 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧It's the DVD player.\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧でも、再生するソフトなんて何もない。
 #. ソフトのないハードなんて、まったく無意味だな。
 #. ⟦CLT⟧
@@ -29,43 +21,10 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Không còn gì trong này nữa rồi. Và thành thật mà nói, tôi cũng chẳng muốn nhớ lại những gì đã từng ở trong đó...⟦CLT⟧"
-
-msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Đầu đĩa DVD...⟦CLT⟧"
+msgstr "⟦CLT 4⟧Không còn gì ở trong này nữa. Và thành thật mà nói, tôi cũng chẳng muốn nhớ lại những gì *từng* ở trong này đâu...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Nhưng tôi chẳng có đĩa nào cả. Phần cứng mà không có phần mềm thì... hoàn toàn vô nghĩa.⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-DVD Player Inspect
+msgstr "⟦CLT 4⟧Nhưng tôi không có đĩa DVD nào cả. Phần cứng mà không có phần mềm thì... hầu như vô dụng.\n⟦CLT⟧"
 

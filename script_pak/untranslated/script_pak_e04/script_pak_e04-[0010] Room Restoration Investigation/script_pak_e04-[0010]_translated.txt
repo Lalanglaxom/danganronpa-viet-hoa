@@ -1,31 +1,20 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0010].po ---
 
-==================== BATCH 1 ====================
+==================== BATCH 1 REQUEST ====================
+#. 部屋が元通りになってる…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "The room's back to how it was before."
-msgstr "Căn phòng đã trở lại trạng thái ban đầu rồi."
+msgstr ""
 
+#. モノクマがやったんだな…
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "This must be Monokuma's doing..."
-msgstr "Chắc chắn đây là do Monokuma làm rồi..."
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
 msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
 
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Căn phòng đã trở lại như trước rồi."
 
-==================== FOLDER SUMMARY ====================
-Room Restoration Investigation
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Việc này hẳn là do Monokuma làm..."
 

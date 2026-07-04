@@ -14,24 +14,6 @@ msgid ""
 "responsible, I'm sure..."
 msgstr ""
 
-#. はい
-msgctxt "0003 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0005 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧妙にマニアックな雑誌もあるな…
 #. “月刊磯釣り”って…
 #. ⟦CLT⟧
@@ -76,14 +58,6 @@ msgstr ""
 msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
 "⟦CLT 4⟧Even Toko's handprint has been wiped away...\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. ⟦CLT 4⟧………………
-#. ⟦CLT⟧
-msgctxt "0011 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧...\n"
 "⟦CLT⟧"
 msgstr ""
 
@@ -158,70 +132,49 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0020 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0021 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0022 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "Mọi thứ đã trở lại bình thường..."
-msgctxt "0002 | MAKOTO NAEGI"
-msgstr "Giống như với Sayaka và Taka vậy. Chắc chắn là do Monokuma làm rồi..."
-msgctxt "0003 | CHOICE/RE:ACT"
-msgstr "Có"
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Không"
-msgctxt "0005 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-msgctxt "0006 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Một vài trong số những tạp chí này có vẻ cực kỳ chuyên biệt... \"Tạp chí câu cá lướt sóng\" ư?⟦CLT⟧"
-msgctxt "0007 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Mình tự hỏi liệu Celeste có tìm được ai đó để chơi Othello cùng cô ấy không...⟦CLT⟧"
-msgctxt "0008 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Luật chơi phi tiêu có vẻ khá phức tạp. Mình thực sự không mấy hứng thú với việc chơi môn này...⟦CLT⟧"
-msgctxt "0009 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Mình chỉ mới chơi phiên bản bi-a trên trò chơi điện tử thôi...⟦CLT⟧"
-msgctxt "0010 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Ngay cả dấu tay của Toko cũng đã bị xóa sạch...⟦CLT⟧"
-msgctxt "0011 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧...⟦CLT⟧"
-msgctxt "0012 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Sakura...⟦CLT⟧"
-msgctxt "0013 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Chẳng có cách nào để nhìn nhận thứ này như bất cứ thứ gì khác ngoài một cái bàn hoàn toàn bình thường.⟦CLT⟧"
-msgctxt "0014 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0015 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0016 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0017 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0018 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0019 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Những chai Monokuma đều được xếp hàng ngay ngắn như thể chưa từng có chuyện gì xảy ra...⟦CLT⟧"
-msgctxt "0020 | CHOICE/RE:ACT"
-msgstr "Có"
-msgctxt "0021 | CHOICE/RE:ACT"
-msgstr "Không"
-msgctxt "0022 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
+msgstr "Mọi thứ đã quay trở lại bình thường..."
 
-==================== FOLDER SUMMARY ====================
-Room Investigation
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Giống hệt như hồi của Sayaka và Taka. Chắc chắn là do Monokuma làm rồi..."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Một vài cuốn tạp chí ở đây có vẻ nói về những chủ đề vô cùng cụ thể... \"Tạp chí câu cá bờ biển hàng tháng\" sao?\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không biết Celeste có bao giờ tìm được ai đó để chơi cờ Othello cùng cô ấy không nữa...\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Luật chơi phóng phi tiêu có vẻ khá phức tạp. Mình thực sự không có hứng thú chơi môn này lắm...\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi mới chỉ từng chơi các phiên bản trò chơi điện tử của môn bida mà thôi...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay cả dấu bàn tay của Toko cũng đã bị xóa sạch rồi...\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Sakura...\n⟦CLT⟧"
+
+msgctxt "0013 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không thể nhìn thứ này thành cái gì khác ngoài một chiếc bàn hoàn toàn bình thường.\n⟦CLT⟧"
+
+msgctxt "0014 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
+
+msgctxt "0015 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
+
+msgctxt "0017 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
+
+msgctxt "0018 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Những chiếc bình Monokuma đều được xếp thành hàng như thể chưa từng có chuyện gì xảy ra...\n⟦CLT⟧"
 

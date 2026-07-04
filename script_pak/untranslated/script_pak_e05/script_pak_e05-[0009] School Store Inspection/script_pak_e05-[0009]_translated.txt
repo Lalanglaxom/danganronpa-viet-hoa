@@ -11,14 +11,6 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. ⟦CLT 4⟧ここ、購買部みたいだ…
-#. ⟦CLT⟧
-msgctxt "0002 | MAKOTO NAEGI"
-msgid ""
-"⟦CLT 4⟧Yup, this is definitely the school store.\n"
-"⟦CLT⟧"
-msgstr ""
-
 #. ⟦CLT 4⟧でも、購買というよりは…
 #. 田舎の雑貨屋みたいな空気を感じる…
 #. ⟦CLT⟧
@@ -29,43 +21,10 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Là máy bán hàng tự động... toàn là mấy loại đồ uống hóa học không à.⟦CLT⟧"
-
-msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Ừm, đây đúng là cửa hàng của trường rồi...⟦CLT⟧"
+msgstr "⟦CLT 4⟧Tất cả những gì có bên trong máy bán hàng tự động chỉ là nước tăng lực...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Nhưng mà, cảm giác nó giống cửa hàng tạp hóa ở quê hơn là cửa hàng trong trường...⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này?⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-School Store Inspection
+msgstr "⟦CLT 4⟧Nhưng nơi này mang lại cảm giác giống như một cửa hàng bách hóa thời xưa hơn là một thứ gì đó hiện đại...\n⟦CLT⟧"
 

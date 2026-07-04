@@ -31,70 +31,13 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0004 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0005 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0006 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
-#. はい
-msgctxt "0007 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧外に出ますか？
-#. ⟦CLT⟧
-msgctxt "0009 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the area?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tớ có xem đồng hồ để biết là \"mấy giờ\" thì... cũng chỉ thấy trống rỗng thôi. ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Dĩ nhiên là mình có thể nhìn vào đồng hồ và biết bây giờ là mấy \"giờ\". Nhưng việc đó thì có ích gì chứ?\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Lại thêm một căn phòng bị bít kín bằng những tấm sắt à... Buồn thật đấy, có vẻ như tớ đang dần quen với chuyện này rồi... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Lại một căn phòng nữa bị niêm phong bằng những tấm kim loại. Thật đáng buồn là mình lại đang dần quen với nó rồi...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Lại thêm một căn phòng bị bít kín bằng những tấm sắt à... Buồn thật đấy, có vẻ như tớ đang dần quen với chuyện này rồi... ⟦CLT⟧"
-
-msgctxt "0004 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0005 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0006 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
-
-msgctxt "0007 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0009 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi khu vực này chứ?\n⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Sealed Room Check
+msgstr "⟦CLT 4⟧Lại một căn phòng nữa bị niêm phong bằng những tấm kim loại. Thật đáng buồn là mình lại đang dần quen với nó rồi...\n⟦CLT⟧"
 

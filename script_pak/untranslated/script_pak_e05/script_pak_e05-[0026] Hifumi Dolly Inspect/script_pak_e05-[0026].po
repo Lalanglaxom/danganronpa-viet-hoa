@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 4/2/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 4>壁に…木槌がある…
+#. 彫刻作成なんかで使うんだろうか…
+#. <CLT>
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There are wooden mallets hanging on the wall. If I had\n"
+"to guess, I'd say they use them for making sculptures.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có những chiếc vồ gỗ đang treo trên tường. Nếu phải đoán, mình\n"
+"sẽ nói rằng họ dùng chúng để tạc tượng.\n"
+"<CLT>"
+
+#. <CLT 4>台車だ…
+#. 山田クンが…これで石丸クンを運んで…
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's the dolly that Hifumi used to move Taka...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đây là chiếc xe đẩy mà Hifumi đã dùng để di chuyển Taka...\n"
+"<CLT>"
+
+#. はい
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>美術倉庫から出ますか？
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>Leave the repository?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi kho chứa đồ?\n"
+"<CLT>"

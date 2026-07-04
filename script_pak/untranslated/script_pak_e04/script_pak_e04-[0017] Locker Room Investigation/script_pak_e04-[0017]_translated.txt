@@ -1,123 +1,35 @@
 --- Gemini Translation Raw Output for script_pak_e04-[0017].po ---
 
-==================== BATCH 1 ====================
-msgctxt "0001 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>The door to the girls locker room. I have no way of\n"
-"unlocking it, so I couldn't go in if I wanted to.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Cửa phòng thay đồ nữ. Tớ không có cách nào để\nmở khóa nó cả, nên dù muốn tớ cũng không thể vào trong được.\n"
-"<CLT>"
-
-msgctxt "0002 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>The boys locker room card reader. I can open it using\n"
-"my e-Handbook.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Máy đọc thẻ phòng thay đồ nam. Tớ có thể mở nó bằng\nsổ học sinh điện tử của mình.\n"
-"<CLT>"
-
-msgctxt "0003 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>The girls locker room card reader. I'm listed as\n"
-"\"male\" in my e-Handbook, so it can't open this door.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Máy đọc thẻ phòng thay đồ nữ. Tớ được ghi là\n\"nam\" trong sổ học sinh điện tử, nên nó không thể mở cánh cửa này.\n"
-"<CLT>"
-
-msgctxt "0004 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>Is that...a real gun? Why is there something like that\n"
-"here...?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Đó là... một khẩu súng thật sao? Tại sao lại có một thứ như vậy\nở đây cơ chứ...?\n"
-"<CLT>"
-
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧物騒な物だけど…事件には関係ないな…
+#. ⟦CLT⟧
 msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>It seems dangerous... And it has nothing to do with\n"
+"⟦CLT 4⟧It seems dangerous... And it has nothing to do with\n"
 "what's going on.\n"
-"<CLT>"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Có vẻ nguy hiểm đấy... Và nó cũng không liên quan gì đến\nnhững chuyện đang xảy ra cả.\n"
-"<CLT>"
 
-msgctxt "0006 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>Is that...a real gun? Why is there something like that\n"
-"here...?\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Đó là... một khẩu súng thật sao? Tại sao lại có một thứ như vậy\nở đây cơ chứ...?\n"
-"<CLT>"
-
-msgctxt "0007 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>There are a bunch of different pool-related items on\n"
-"the shelf.\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Có đủ thứ vật dụng liên quan đến hồ bơi trên\ncái kệ này.\n"
-"<CLT>"
-
+#. ⟦CLT 4⟧特に気になる物はないな…
+#. ⟦CLT⟧
 msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
-"<CLT 4>I don't see anything all that interesting here...\n"
-"<CLT>"
+"⟦CLT 4⟧I don't see anything all that interesting here...\n"
+"⟦CLT⟧"
 msgstr ""
-"<CLT 4>Tớ không thấy thứ gì thú vị ở đây cả...\n"
-"<CLT>"
 
-msgctxt "0009 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>There are a bunch of different pool-related items on\n"
-"the shelf.\n"
-"<CLT>"
+#. ⟦CLT 4⟧事件には関係なさそうだ…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧Doesn't seem related to the case..."
 msgstr ""
-"<CLT 4>Có đủ thứ vật dụng liên quan đến hồ bơi trên\ncái kệ này.\n"
-"<CLT>"
 
-msgctxt "0010 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>A flotation donut...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Một cái phao bơi...\n"
-"<CLT>"
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nó có vẻ nguy hiểm... Và nó không có liên quan gì đến những chuyện đang xảy ra cả.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tôi không thấy có gì quá thú vị ở đây cả...\n⟦CLT⟧"
 
 msgctxt "0011 | MAKOTO NAEGI"
-msgid "<CLT 4>Doesn't seem related to the case..."
-msgstr "<CLT 4>Có vẻ không liên quan gì đến vụ án cả..."
-
-msgctxt "0012 | MAKOTO NAEGI"
-msgid ""
-"<CLT 4>A flotation donut...\n"
-"<CLT>"
-msgstr ""
-"<CLT 4>Một cái phao bơi...\n"
-"<CLT>"
-
-msgctxt "0013 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr "Có"
-
-msgctxt "0014 | CHOICE/RE:ACT"
-msgid "No"
-msgstr "Không"
-
-msgctxt "0015 | NARRATION"
-msgid ""
-"<CLT 23>Leave the area?\n"
-"<CLT>"
-msgstr ""
-"<CLT 23>Rời khỏi khu vực này?\n"
-"<CLT>"
-
-
-==================== FOLDER SUMMARY ====================
-Locker Room Investigation
+msgstr "⟦CLT 4⟧Dường như không liên quan đến vụ án..."
 

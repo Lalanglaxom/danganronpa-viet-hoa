@@ -129,6 +129,7 @@ class TranslationSuggestionIndex:
         self.candidates: list[_SuggestionCandidate] = []
         self.by_token: dict[str, list[int]] = defaultdict(list)
         self.by_first_char: dict[str, list[int]] = defaultdict(list)
+        self.by_key: dict[str, list[int]] = defaultdict(list)
         self._dedupe: set[tuple[str, str]] = set()
         for candidate in candidates:
             self.add(candidate)
@@ -142,6 +143,7 @@ class TranslationSuggestionIndex:
         self._dedupe.add(dedupe)
         idx = len(self.candidates)
         self.candidates.append(candidate)
+        self.by_key[candidate.key].append(idx)
         tokens = _suggestion_tokens(candidate.key)
         for token in tokens:
             self.by_token[token].append(idx)
@@ -204,8 +206,25 @@ class TranslationSuggestionIndex:
         tokens = _suggestion_tokens(target_key)
         if not tokens:
             return []
+        max_candidates = max(1, max_candidates)
         counts: dict[int, int] = defaultdict(int)
-        for token in tokens:
+
+        # Exact msgid matches are always worth scoring first. They are usually the
+        # best suggestion and this avoids losing them in very large folders full of
+        # common words.
+        exact_indexes = self.by_key.get(target_key, [])
+        exact_set = set(exact_indexes)
+
+        # Large source folders can contain very common words such as "the", "you",
+        # or speaker names. Counting the rarest shared tokens first keeps the
+        # candidate pool small without the old early-stop behavior that could miss
+        # a better match later in the list.
+        ordered_tokens = sorted(tokens, key=lambda token: len(self.by_token.get(token, ())))
+        useful_tokens = [token for token in ordered_tokens if self.by_token.get(token)]
+        if len(useful_tokens) > 8:
+            useful_tokens = useful_tokens[:8]
+
+        for token in useful_tokens:
             for idx in self.by_token.get(token, []):
                 counts[idx] += 1
 
@@ -226,9 +245,24 @@ class TranslationSuggestionIndex:
             overlap = shared / max(1, min(target_token_count, candidate.token_count))
             len_ratio = min(target_len, candidate_len) / max(target_len, candidate_len)
             # Cheap approximate rank. Real score is SequenceMatcher below.
-            ranked.append((overlap * 0.75 + len_ratio * 0.25, idx))
+            exact_bonus = 1.0 if idx in exact_set else 0.0
+            ranked.append((exact_bonus + overlap * 0.75 + len_ratio * 0.25, idx))
         ranked.sort(reverse=True)
-        return [idx for _approx, idx in ranked[:max_candidates]]
+
+        picked: list[int] = []
+        seen: set[int] = set()
+        for idx in exact_indexes:
+            if idx not in seen:
+                picked.append(idx)
+                seen.add(idx)
+        for _approx, idx in ranked:
+            if idx in seen:
+                continue
+            picked.append(idx)
+            seen.add(idx)
+            if len(picked) >= max_candidates:
+                break
+        return picked[:max_candidates]
 
     def suggest(
         self,
@@ -236,7 +270,7 @@ class TranslationSuggestionIndex:
         *,
         min_score: float = 0.70,
         limit: int = 5,
-        max_candidates: int = 250,
+        max_candidates: int = 800,
         excellent_score: float = 0.95,
         excellent_limit: int = 3,
         distinct_limit: int = 5,
@@ -244,12 +278,13 @@ class TranslationSuggestionIndex:
         target_key = suggestion_match_key(source)
         if not target_key:
             return []
-        # Strictly greater than 70% by default. Scores <= 70% are always dropped.
-        min_score = max(0.7000001, min(1.0, min_score))
+        # The UI default is still 70%, but callers may search below 70% for hard
+        # cases. We score the whole prefiltered pool instead of stopping after a
+        # small number of >70% hits, so late better matches are not missed.
+        min_score = max(0.0, min(1.0, min_score))
         excellent_score = max(min_score, min(1.0, excellent_score))
         ranked: list[tuple[float, _SuggestionCandidate]] = []
         seen_translations: set[str] = set()
-        excellent_count = 0
 
         for idx in self._prefilter_indexes(target_key, max_candidates=max_candidates):
             candidate = self.candidates[idx]
@@ -258,18 +293,15 @@ class TranslationSuggestionIndex:
             if not translation_key or translation_key in seen_translations:
                 continue
 
-            score = SequenceMatcher(None, target_key, candidate.key).ratio()
-            if score <= min_score:
+            matcher = SequenceMatcher(None, target_key, candidate.key)
+            if matcher.quick_ratio() < min_score:
+                continue
+            score = matcher.ratio()
+            if score < min_score:
                 continue
 
             seen_translations.add(translation_key)
             ranked.append((score, candidate))
-            if score > excellent_score:
-                excellent_count += 1
-
-            # Fast exit: enough distinct high-quality suggestions for UI use.
-            if excellent_count >= excellent_limit or len(ranked) >= distinct_limit:
-                break
 
         ranked.sort(key=lambda item: item[0], reverse=True)
         return [

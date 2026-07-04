@@ -393,3 +393,48 @@ def test_translafixer_suggestion_index_dedupes_translations_and_stops_at_five():
         assert len(translations) == len(set(translations))
         assert translations.count("Mở cửa đỏ") <= 1
         assert all(item.score > 0.70 for item in suggestions)
+
+
+def test_sync_by_filename_reports_unmatched_and_copied_files():
+    import tempfile
+    from dr_po_toolkit.backup import sync_by_filename_report
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source"
+        target = root / "target"
+        source.mkdir()
+        target.mkdir()
+        source_copy = source / "copyme.po"
+        target_copy = target / "copyme.po"
+        source_only = source / "source_only.po"
+        target_only = target / "target_only.po"
+        source_copy.write_text('msgid "A"\nmsgstr "new"\n', encoding="utf-8")
+        target_copy.write_text('msgid "A"\nmsgstr "old"\n', encoding="utf-8")
+        source_only.write_text('msgid "B"\nmsgstr "source"\n', encoding="utf-8")
+        target_only.write_text('msgid "C"\nmsgstr "target"\n', encoding="utf-8")
+
+        result = sync_by_filename_report(source, target)
+
+        assert result.copied == 1
+        assert result.copied_files == [(source_copy, target_copy)]
+        assert result.source_without_target == [source_only]
+        assert result.target_without_source == [target_only]
+        assert target_copy.read_text(encoding="utf-8") == source_copy.read_text(encoding="utf-8")
+
+
+def test_translation_suggestions_can_search_below_seventy_percent():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source.po"
+        source.write_text('msgid "Hello"\nmsgstr "Xin chào"\n', encoding="utf-8")
+        index, _result = TranslationSuggestionIndex.from_translafixer_sources(source)
+
+        suggestions = index.suggest("Hello there", min_score=0.50, limit=5)
+
+        assert suggestions
+        assert suggestions[0].translation == "Xin chào"
+        assert suggestions[0].score < 0.70

@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>ここは女子トイレだ…
 #. <CLT>
@@ -18,7 +17,7 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This is the girls bathroom.\n"
 "<CLT>"
-msgstr "<CLT 4>Đây là nhà vệ sinh nữ.<CLT>"
+msgstr ""
 
 #. <CLT 4>もちろん、入る訳にはいかない…
 #. <CLT>
@@ -26,7 +25,7 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Obviously I can't go in...\n"
 "<CLT>"
-msgstr "<CLT 4>Tất nhiên là mình không thể vào rồi...<CLT>"
+msgstr ""
 
 #. <CLT 4>ボクの部屋だ…
 #. 部屋でゆっくりって訳にはいかないな。
@@ -37,8 +36,6 @@ msgid ""
 "around all day.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của mình. Mình không thể vào và ngồi không cả ngày\n"
-"được.<CLT>"
 
 #. <CLT 4>ここは霧切さんの部屋だ。
 #. 勝手に入ると…大問題になりそうだ…
@@ -49,8 +46,6 @@ msgid ""
 "if I just barged in without permission...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Kyoko. Mình nghĩ cậu ấy sẽ *rất* không vui nếu\n"
-"mình cứ xông vào mà không xin phép...<CLT>"
 
 #. <CLT 4>舞園さんの部屋…
 #. <CLT>
@@ -58,7 +53,7 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Sayaka's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Sayaka...<CLT>"
+msgstr ""
 
 #. <CLT 4>いや、感傷に浸ってる時間はないんだ…
 #. <CLT>
@@ -67,8 +62,6 @@ msgid ""
 "<CLT 4>No, I can't start feeling sorry for myself now...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không, mình không thể bắt đầu cảm thấy thương hại bản thân lúc\n"
-"này được...!<CLT>"
 
 #. <CLT 4>ここは腐川さんの部屋だ。
 #. 勝手に入ると…呪われそうだ…
@@ -79,8 +72,6 @@ msgid ""
 "she'd probably put a curse on me or something...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Toko. Nếu mình vào mà không hỏi, có lẽ cậu ấy sẽ\n"
-"nguyền rủa mình hoặc gì đó...<CLT>"
 
 #. <CLT 4>ここは不二咲クンの部屋だ…
 #. <CLT>
@@ -88,7 +79,7 @@ msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Chihiro's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Chihiro...<CLT>"
+msgstr ""
 
 #. <CLT 4>不二咲クンがのこしてくれたアルターエゴのお陰で、
 #. ボクは生き残る事が出来たんだ…
@@ -99,8 +90,6 @@ msgid ""
 "I'd be dead right now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thật may là cậu ấy đã để lại Alter Ego cho chúng ta. Nếu không\n"
-"thì giờ mình đã chết rồi.<CLT>"
 
 #. <CLT 4>ありがとう…不二咲クン…
 #. <CLT>
@@ -108,7 +97,7 @@ msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Chihiro...thank you.\n"
 "<CLT>"
-msgstr "<CLT 4>Chihiro... cảm ơn cậu.<CLT>"
+msgstr ""
 
 #. <CLT 4>朝日奈さんの部屋だ。
 #. 勝手に入ったら…大問題になりそうだ…
@@ -119,8 +108,6 @@ msgid ""
 "do if I went in without telling her...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Hina. Mình không muốn tưởng tượng cậu ấy sẽ làm\n"
-"gì nếu mình vào mà không báo trước...<CLT>"
 
 #. <CLT 4>ここは石丸クンの部屋…
 #. <CLT>
@@ -128,7 +115,7 @@ msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Taka's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Taka...<CLT>"
+msgstr ""
 
 #. <CLT 4>最初は面倒臭いなんて思ったりもしたけど…
 #. あんな真っ直ぐな人っていないよな…
@@ -139,8 +126,6 @@ msgid ""
 "many people are as open and direct as he was.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ban đầu mình đã nghĩ cậu ấy hơi phiền phức, nhưng... không nhiều\n"
-"người cởi mở và thẳng thắn như cậu ấy cả.<CLT>"
 
 #. <CLT 4>真っ直ぐ過ぎたせいで…
 #. この学園生活の犠牲者になって…
@@ -151,8 +136,6 @@ msgid ""
 "another one of this school's victims...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tất nhiên, chính sự thẳng thắn đó đã biến cậu ấy thành một nạn\n"
-"nhân khác của ngôi trường này...<CLT>"
 
 #. <CLT 4>…彼の為にも、頑張らないとな！
 #. <CLT>
@@ -160,7 +143,7 @@ msgctxt "0015 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I have to do my best for his sake, too...!\n"
 "<CLT>"
-msgstr "<CLT 4>Mình cũng phải cố gắng hết sức vì cậu ấy nữa...!<CLT>"
+msgstr ""
 
 #. <CLT 4>大和田クン…
 #. <CLT>
@@ -168,7 +151,7 @@ msgctxt "0016 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Mondo's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Mondo...<CLT>"
+msgstr ""
 
 #. <CLT 4>強面だけど…
 #. 本当は優しくて…弱い人だった…
@@ -179,8 +162,6 @@ msgid ""
 "Even he had his weaknesses...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy tỏ ra cứng rắn, nhưng thực chất lại là một người tốt.\n"
-"Ngay cả cậu ấy cũng có những điểm yếu...<CLT>"
 
 #. <CLT 4>その弱さを黒幕に付け込まれたせいで…
 #. 彼も…犠牲に…！
@@ -191,8 +172,6 @@ msgid ""
 "and Mondo wound up dead...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng kẻ chủ mưu đã lợi dụng những điểm yếu đó, và Mondo đã phải\n"
-"chết...<CLT>"
 
 #. <CLT 4>十神クンの部屋だ。
 #. 勝手に入ったら、鳥葬にされそうだ…
@@ -203,13 +182,11 @@ msgid ""
 "without asking, he'd feed me to the vultures...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Byakuya. Nếu mình bước chân vào mà không xin\n"
-"phép, cậu ấy sẽ đem mình đi cho kền kền ăn mất...<CLT>"
 
 #. あ…
 msgctxt "0020 | MAKOTO NAEGI"
 msgid "Oh..."
-msgstr "Ồ..."
+msgstr ""
 
 #. <CLT 4>江ノ島さんの部屋…
 #. 鍵が開いている…
@@ -218,7 +195,7 @@ msgctxt "0021 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Junko's room... The door is unlocked.\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Junko... Cửa không khóa.<CLT>"
+msgstr ""
 
 #. <CLT 4>だけど、事件には関係ないよな…
 #. 寄り道してる訳にはいかない…
@@ -229,8 +206,6 @@ msgid ""
 "time for detours now...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng chuyện này chẳng liên quan gì đến cuộc điều tra của mình\n"
-"cả. Giờ không phải lúc để la cà...!<CLT>"
 
 #. <CLT 4>セレスさんの部屋…
 #. <CLT>
@@ -238,7 +213,7 @@ msgctxt "0023 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Celeste's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Celeste...<CLT>"
+msgstr ""
 
 #. <CLT 4>怖い人…だったよな…
 #. だけど、彼女も仲間には違いなかった…
@@ -249,8 +224,6 @@ msgid ""
 "as much as anyone else.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy... hơi đáng sợ. Nhưng dù sao thì, cậu ấy vẫn là bạn của\n"
-"chúng ta cũng như bao người khác thôi.<CLT>"
 
 #. <CLT 4>別の出会い方をしていれば、
 #. 彼女だって仲間なんか殺さなかったんだ…
@@ -261,8 +234,6 @@ msgid ""
 "never would have killed her friends.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giá như chúng ta gặp nhau trong hoàn cảnh khác, cậu ấy đã không\n"
-"bao giờ giết bạn bè của mình.<CLT>"
 
 #. <CLT 4>絶対に…そうだったんだ…
 #. <CLT>
@@ -270,7 +241,7 @@ msgctxt "0026 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I'm absolutely sure of that...\n"
 "<CLT>"
-msgstr "<CLT 4>Mình hoàn toàn chắc chắn về điều đó...<CLT>"
+msgstr ""
 
 #. <CLT 4>大神さん…
 #. <CLT>
@@ -278,7 +249,7 @@ msgctxt "0027 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Sakura's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Sakura...<CLT>"
+msgstr ""
 
 #. <CLT 4>誰よりも強い大神さん…
 #. それゆえに自分を犠牲にして…
@@ -289,8 +260,6 @@ msgid ""
 "enough she was able to sacrifice herself for us...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy thật mạnh mẽ. Mạnh hơn tất cả chúng ta. Mạnh đến mức cậu\n"
-"ấy có thể hy sinh bản thân vì chúng ta...<CLT>"
 
 #. <CLT 4>彼女の想いに応える為にも、
 #. 絶対に生きて帰ってやる！
@@ -301,13 +270,11 @@ msgid ""
 "this alive and going home...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và mình phải đền đáp sự hy sinh đó... bằng cách sống sót thoát\n"
-"khỏi đây và trở về nhà...!<CLT>"
 
 #. あ…
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "Oh..."
-msgstr "Ồ..."
+msgstr ""
 
 #. <CLT 4>桑田クンの部屋…
 #. 鍵が開いている…
@@ -316,7 +283,7 @@ msgctxt "0031 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Leon's room... The door is unlocked.\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Leon... Cửa không khóa.<CLT>"
+msgstr ""
 
 #. <CLT 4>だけど、事件には関係ないよな…
 #. 寄り道してる訳にはいかない…
@@ -327,8 +294,6 @@ msgid ""
 "time for detours now...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng chuyện này chẳng liên quan gì đến cuộc điều tra của mình\n"
-"cả. Giờ không phải lúc để la cà...!<CLT>"
 
 #. <CLT 4>ここは葉隠クンの部屋だ。
 #. 事件には関係ないよな…
@@ -339,8 +304,6 @@ msgid ""
 "to go inside...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng của Hiro. Mình chẳng có lý do gì để muốn vào trong\n"
-"đó cả...<CLT>"
 
 #. <CLT 4>山田クン…
 #. <CLT>
@@ -348,7 +311,7 @@ msgctxt "0034 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Hifumi's room...\n"
 "<CLT>"
-msgstr "<CLT 4>Phòng của Hifumi...<CLT>"
+msgstr ""
 
 #. <CLT 4>なんだか変なヤツだったけど…
 #. 憎めなかったよな…
@@ -359,8 +322,6 @@ msgid ""
 "anything.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy là một gã khá kỳ quặc, nhưng mình không ghét cậu ấy hay gì\n"
-"cả.<CLT>"
 
 #. <CLT 4>出来れば…彼にも生きてて欲しかった…
 #. <CLT>
@@ -368,7 +329,7 @@ msgctxt "0036 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>If there'd been any way to save him, I would have...\n"
 "<CLT>"
-msgstr "<CLT 4>Nếu có bất kỳ cách nào để cứu cậu ấy, mình đã làm rồi...<CLT>"
+msgstr ""
 
 #. <CLT 4>鉄格子だ…
 #. かなり頑丈そうだな。
@@ -377,7 +338,7 @@ msgctxt "0037 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This gate seems remarkably sturdy.\n"
 "<CLT>"
-msgstr "<CLT 4>Cánh cổng này có vẻ cực kỳ chắc chắn.<CLT>"
+msgstr ""
 
 #. <CLT 4>なんだって、こんなに厳重に
 #. 封鎖してるんだろう…
@@ -388,5 +349,3 @@ msgid ""
 "off this entire area?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tại sao ai đó lại phải bỏ công sức đến vậy để chặn toàn bộ khu\n"
-"vực này chứ?<CLT>"

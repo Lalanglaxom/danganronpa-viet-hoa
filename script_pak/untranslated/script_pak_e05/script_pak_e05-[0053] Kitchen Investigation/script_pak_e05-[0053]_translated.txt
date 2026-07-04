@@ -53,52 +53,22 @@ msgid ""
 "⟦CLT⟧"
 msgstr ""
 
-#. はい
-msgctxt "0007 | CHOICE/RE:ACT"
-msgid "Yes"
-msgstr ""
-
-#. いいえ
-msgctxt "0008 | CHOICE/RE:ACT"
-msgid "No"
-msgstr ""
-
-#. ⟦CLT 23⟧厨房から出ますか？
-#. ⟦CLT⟧
-msgctxt "0009 | NARRATION"
-msgid ""
-"⟦CLT 23⟧Leave the kitchen?\n"
-"⟦CLT⟧"
-msgstr ""
-
 ==================== BATCH 1 RESPONSE ====================
 msgctxt "0001 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Không ngạc nhiên lắm, một con dao vẫn còn thiếu... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Không ngoài dự đoán, một trong những con dao vẫn còn thiếu.\n⟦CLT⟧"
 
 msgctxt "0002 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Mọi chuyện bắt đầu từ lúc đó... từ vụ án của Sayaka... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Mọi chuyện đều bắt đầu từ lúc đó... với vụ án của Sayaka...\n⟦CLT⟧"
 
 msgctxt "0003 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tủ trưng bày... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Tủ trưng bày...\n⟦CLT⟧"
 
 msgctxt "0004 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Bên trong, những miếng thịt với vân mỡ tuyệt đẹp đang được xếp hàng. ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Bên trong xếp một loạt các loại thịt bò vân mỡ tuyệt hảo.\n⟦CLT⟧"
 
 msgctxt "0005 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Rau củ được chất thành đống... nhưng mà... ⟦CLT⟧"
+msgstr "⟦CLT 4⟧Có đủ loại rau củ đầy màu sắc được xếp chồng lên nhau...\n⟦CLT⟧"
 
 msgctxt "0006 | MAKOTO NAEGI"
-msgstr "⟦CLT 4⟧Tớ không phải là kiểu người nổi tiếng thích ăn đồ hữu cơ để mà thấy phấn khích với đống rau này đâu! ⟦CLT⟧"
-
-msgctxt "0007 | CHOICE/RE:ACT"
-msgstr "Có"
-
-msgctxt "0008 | CHOICE/RE:ACT"
-msgstr "Không"
-
-msgctxt "0009 | NARRATION"
-msgstr "⟦CLT 23⟧Rời khỏi nhà bếp chứ?\n⟦CLT⟧"
-
-==================== FOLDER SUMMARY ====================
-Kitchen Investigation
+msgstr "⟦CLT 4⟧Mấy thứ này định làm mình thấy phấn khích hả? Mình đâu phải kiểu người nổi tiếng cuồng ăn đồ hữu cơ tự nhiên đâu cơ chứ.\n⟦CLT⟧"
 

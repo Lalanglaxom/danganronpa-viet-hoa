@@ -17,12 +17,13 @@ SYSTEM_INSTRUCTIONS = """You are translating Danganronpa game PO entries into Vi
 Return JSON only. Do not return PO text. Do not explain.
 Rules:
 - Translate only into Vietnamese.
+- The English source_en/msgid is the source of truth. Translate by following the English meaning, wording, order, and intent as closely as natural Vietnamese allows.
+- Use japanese_context only as secondary context for speaker tone, ambiguity, or terminology. Never let Japanese context override, expand, shorten, or change the English source.
 - Preserve every CLT tag exactly, in the same order, e.g. <CLT 4> and <CLT>.
 - Preserve placeholders and non-CLT tags exactly.
-- Use japanese_context as context only.
 - Do not translate speaker names or ids.
 - Do not leave translation empty.
-- Keep tone natural for the speaker.
+- Keep tone natural for the speaker while still following the English closely.
 """
 
 

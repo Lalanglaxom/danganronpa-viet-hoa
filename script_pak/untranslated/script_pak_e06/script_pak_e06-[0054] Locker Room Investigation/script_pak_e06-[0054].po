@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>ロッカーだ…
 #. <CLT>
@@ -18,7 +17,7 @@ msgctxt "0001 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>This locker...\n"
 "<CLT>"
-msgstr "<CLT 4>Cái tủ khóa này...<CLT>"
+msgstr ""
 
 #. <CLT 4>アルターエゴだよな…
 #. あの時、ボクを助けてくれたのは…
@@ -29,8 +28,6 @@ msgid ""
 "saving my life...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là nơi chúng ta tìm thấy Alter Ego. Thứ đã cứu mạng mình lúc\n"
-"đó...<CLT>"
 
 #. <CLT 4>…死んだ仲間の為にも、
 #. 絶対に、この学園の謎を解いてやる！
@@ -41,8 +38,6 @@ msgid ""
 "the sake of all my friends that died!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình thề, mình NHẤT ĐỊNH sẽ giải đáp bí ẩn của ngôi trường này, vì\n"
-"những người bạn đã khuất của mình!<CLT>"
 
 #. <CLT 4>マッサージチェアがある…
 #. <CLT>
@@ -50,7 +45,7 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>The massage chair...\n"
 "<CLT>"
-msgstr "<CLT 4>Chiếc ghế mát-xa...<CLT>"
+msgstr ""
 
 #. <CLT 4>なんか罠があったら大変だ。
 #. 使うのはやめておこう。
@@ -60,7 +55,7 @@ msgid ""
 "<CLT 4>I'm gonna stay away, in case it's been booby-trapped\n"
 "somehow...\n"
 "<CLT>"
-msgstr "<CLT 4>Tốt nhất là không nên dùng, phòng trường hợp nó bị gài bẫy...<CLT>"
+msgstr ""
 
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"

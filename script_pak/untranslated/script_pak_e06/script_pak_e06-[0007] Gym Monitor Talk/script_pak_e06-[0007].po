@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DR1 (PC)\n"
 "Report-Msgid-Bugs-To: your_email\n"
-"POT-Creation-Date: 3/26/2026\n"
+"POT-Creation-Date: 4/2/2026\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en_US\n"
+"Language: en-US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
 
 #. <CLT 4>モノクマが写るモニター…
 #. こ、こんな物…
@@ -21,8 +20,8 @@ msgid ""
 "just wanna...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những màn hình mà Monokuma xuất hiện. Mình chỉ\n"
-"muốn...<CLT>"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma xuất hiện. Mình chỉ muốn...\n"
+"<CLT>"
 
 #. <CLT 4>…あり得ませんな、常識的に考えて！
 #. <CLT>
@@ -31,8 +30,8 @@ msgid ""
 "<CLT 4>...Nope! Can't do it. Think, man! Think!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Không được! Không thể làm thế được. Tỉnh táo lại đi! Suy nghĩ\n"
-"đi!<CLT>"
+"<CLT 4>...Không! Không ổn đâu. Phải thực tế chút đi, nghĩ kỹ lại đi nào!\n"
+"<CLT>"
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで黒幕が…
@@ -42,7 +41,9 @@ msgid ""
 "<CLT 4>Even now...on the other side of this camera, the\n"
 "mastermind...\n"
 "<CLT>"
-msgstr "<CLT 4>Ngay cả lúc này... ở phía bên kia camera này, kẻ chủ mưu...<CLT>"
+msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -50,7 +51,9 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
-msgstr "<CLT 4>Nhưng chuyện đó sắp chấm dứt rồi...!<CLT>"
+msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. はい
 msgctxt "0005 | CHOICE/RE:ACT"

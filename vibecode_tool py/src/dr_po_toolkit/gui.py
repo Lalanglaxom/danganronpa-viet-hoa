@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Callable
 
 from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize
-from PyQt6.QtGui import QColor, QDesktopServices, QFont, QKeySequence, QShortcut, QSyntaxHighlighter, QTextCharFormat, QTextCursor, QBrush, QTextDocument
+from PyQt6.QtGui import QColor, QDesktopServices, QFont, QKeySequence, QShortcut, QSyntaxHighlighter, QTextCharFormat, QTextCursor, QBrush, QTextDocument, QPainter
 from PyQt6.QtWidgets import (
     QAbstractItemView,
     QApplication,
@@ -71,6 +71,7 @@ from .translafixer import (
     build_translation_map,
     collect_source_po_files,
     msgid_match_key,
+    suggestion_match_key,
 )
 from .validation import format_text_report, validate_path, write_reports
 
@@ -92,13 +93,46 @@ WARN = "#f6d58b"
 BAD = "#f38aa3"
 GOOD = "#91d7b7"
 BLUE = "#8bbcf5"
+CYAN = "#7fe7ff"
+YELLOW = "#ffe66d"
+ORANGE = "#ffb05c"
 PURPLE = "#c7a7ee"
+CLT_COLOR_BY_CODE = {
+    "3": YELLOW,
+    "4": CYAN,
+    "9": ORANGE,
+    "23": GOOD,
+    "n": PURPLE,
+}
+CLT_CODE_BY_STATE = {index: code for index, code in enumerate(CLT_COLOR_BY_CODE, start=1)}
+CLT_STATE_BY_CODE = {code: state for state, code in CLT_CODE_BY_STATE.items()}
+
+
+def _normalize_clt_code(raw: str | None) -> str:
+    return re.sub(r"[\s_]+", "", raw or "").lower()
+
+
+def clt_color_for_code(raw: str | None) -> str:
+    code = _normalize_clt_code(raw)
+    return CLT_COLOR_BY_CODE.get(code, BLUE)
+
+
+def _clt_state_for_code(raw: str | None) -> int:
+    code = _normalize_clt_code(raw)
+    if not code:
+        return 0
+    return CLT_STATE_BY_CODE.get(code, CLT_STATE_BY_CODE["4"])
+
+
+def _clt_code_for_state(state: int) -> str | None:
+    return CLT_CODE_BY_STATE.get(state)
 # Search result colors. EN is no longer dark yellow: it is now a dusty
 # periwinkle-lavender that matches the Chiaki-inspired app theme.
 EN_BG = "#3b3458"
 VI_BG = "#1f3b42"
 EN_HIT_BG = "#67508e"
 VI_HIT_BG = "#2f5d66"
+ENTRY_FOCUS_BG = "#7b648f"
 CONTEXT_BG = "#1b2030"
 HTML_ROLE = 0x0100 + 91
 
@@ -163,41 +197,179 @@ class PathDropList(QListWidget):
 class CltHighlighter(QSyntaxHighlighter):
     def __init__(self, document) -> None:
         super().__init__(document)
-        self.format = QTextCharFormat()
-        self.format.setForeground(QColor(BLUE))
-        self.format.setFontWeight(700)
-        self.pattern = re.compile(r"<\s*clt(?:[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
+        self.tag_format = QTextCharFormat()
+        self.tag_format.setForeground(QColor(BLUE))
+        self.text_token_format = QTextCharFormat()
+        self.text_token_format.setForeground(QColor(PURPLE))
+        self.pattern = re.compile(r"<\s*clt(?P<code>[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
+        self.text_token_pattern = re.compile(r"%TEXT%", re.IGNORECASE)
+        self.color_spans = False
+        self._span_formats: dict[str, QTextCharFormat] = {}
+
+    def _span_format(self, code: str | None) -> QTextCharFormat:
+        key = _normalize_clt_code(code) or "4"
+        fmt = self._span_formats.get(key)
+        if fmt is None:
+            fmt = QTextCharFormat()
+            fmt.setForeground(QColor(clt_color_for_code(key)))
+            self._span_formats[key] = fmt
+        return fmt
+
+    def set_color_spans(self, enabled: bool) -> None:
+        self.color_spans = enabled
+        self.rehighlight()
+
+    def _highlight_text_tokens(self, text: str) -> None:
+        for match in self.text_token_pattern.finditer(text):
+            self.setFormat(match.start(), match.end() - match.start(), self.text_token_format)
 
     def highlightBlock(self, text: str) -> None:  # type: ignore[override]
+        if not self.color_spans:
+            for match in self.pattern.finditer(text):
+                self.setFormat(match.start(), match.end() - match.start(), self.tag_format)
+            self._highlight_text_tokens(text)
+            self.setCurrentBlockState(0)
+            return
+
+        active_code = _clt_code_for_state(self.previousBlockState())
+        cursor = 0
         for match in self.pattern.finditer(text):
-            self.setFormat(match.start(), match.end() - match.start(), self.format)
+            if active_code and match.start() > cursor:
+                self.setFormat(cursor, match.start() - cursor, self._span_format(active_code))
+            # Keep raw tags visible in the editor, but color the in-game text
+            # between tags like the game does. Table/suggestion color view hides tags.
+            self.setFormat(match.start(), match.end() - match.start(), self.tag_format)
+            if match.group("code"):
+                active_code = _normalize_clt_code(match.group("code")) or "4"
+            else:
+                active_code = None
+            cursor = match.end()
+        if active_code and cursor < len(text):
+            self.setFormat(cursor, len(text) - cursor, self._span_format(active_code))
+        self._highlight_text_tokens(text)
+        self.setCurrentBlockState(_clt_state_for_code(active_code))
 
 
-CLT_TAG_RE = re.compile(r"<\s*clt(?:[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
+class VisibleNewlinePlainTextEdit(QPlainTextEdit):
+    """Plain text editor that paints visible red ``\\n`` markers at real line breaks."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self._show_newline_markers = True
+
+    def setShowNewlineMarkers(self, enabled: bool) -> None:
+        self._show_newline_markers = enabled
+        self.viewport().update()
+
+    def paintEvent(self, event):  # type: ignore[override]
+        super().paintEvent(event)
+        if not self._show_newline_markers:
+            return
+        block = self.firstVisibleBlock()
+        if not block.isValid():
+            return
+        painter = QPainter(self.viewport())
+        painter.setPen(QColor(BAD))
+        painter.setFont(self.font())
+        try:
+            rect_bottom = event.rect().bottom()
+            while block.isValid():
+                block_rect = self.blockBoundingGeometry(block).translated(self.contentOffset())
+                if block_rect.top() > rect_bottom:
+                    break
+                if block.isVisible() and block.next().isValid() and block_rect.bottom() >= event.rect().top():
+                    cursor = QTextCursor(block)
+                    cursor.movePosition(QTextCursor.MoveOperation.EndOfBlock)
+                    caret = self.cursorRect(cursor)
+                    painter.drawText(caret.right() + 4, caret.top() + self.fontMetrics().ascent(), r"\n")
+                block = block.next()
+        finally:
+            painter.end()
 
 
-def clt_rich_html(text: str) -> str:
+CLT_TAG_RE = re.compile(r"<\s*clt(?P<code>[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
+TEXT_TOKEN_RE = re.compile(r"%TEXT%", re.IGNORECASE)
+
+
+def _text_token_html(text: str) -> str:
     parts: list[str] = []
     last = 0
-    for match in CLT_TAG_RE.finditer(text or ""):
-        parts.append(html.escape((text or "")[last:match.start()]).replace("\n", "<br>"))
-        parts.append(f'<span style="color:{BLUE}; font-weight:800;">{html.escape(match.group(0))}</span>')
+    for match in TEXT_TOKEN_RE.finditer(text or ""):
+        parts.append(html.escape((text or "")[last:match.start()]))
+        parts.append(f'<span style="color:{PURPLE};">{html.escape(match.group(0))}</span>')
         last = match.end()
-    parts.append(html.escape((text or "")[last:]).replace("\n", "<br>"))
+    parts.append(html.escape((text or "")[last:]))
+    return "".join(parts)
+
+
+def _text_with_newline_markers_html(text: str) -> str:
+    parts: list[str] = []
+    chunks = (text or "").split("\n")
+    for idx, chunk in enumerate(chunks):
+        parts.append(_text_token_html(chunk))
+        if idx < len(chunks) - 1:
+            parts.append(f'<span style="color:{BAD};">\\n</span><br>')
+    return "".join(parts)
+
+
+def clt_rich_html(text: str, *, color_mode: bool = False) -> str:
+    parts: list[str] = []
+    value = text or ""
+    last = 0
+    active_code: str | None = None
+    for match in CLT_TAG_RE.finditer(value):
+        segment = value[last:match.start()]
+        if color_mode and active_code and segment:
+            parts.append(
+                f'<span style="color:{clt_color_for_code(active_code)};">'
+                f'{_text_with_newline_markers_html(segment)}</span>'
+            )
+        else:
+            parts.append(_text_with_newline_markers_html(segment))
+        if color_mode:
+            active_code = _normalize_clt_code(match.group("code")) if match.group("code") else None
+        else:
+            parts.append(f'<span style="color:{BLUE};">{html.escape(match.group(0))}</span>')
+        last = match.end()
+    tail = value[last:]
+    if color_mode and active_code and tail:
+        parts.append(
+            f'<span style="color:{clt_color_for_code(active_code)};">'
+            f'{_text_with_newline_markers_html(tail)}</span>'
+        )
+    else:
+        parts.append(_text_with_newline_markers_html(tail))
     return "".join(parts)
 
 
 class NoFocusCellDelegate(QStyledItemDelegate):
-    """Hide the dotted/current-cell focus rectangle while keeping row selection color.
+    """Hide focus rectangles while keeping a visible current-entry highlight.
 
-    Selection is still visible with the original purple highlight background and still works
-    for Replace Selected / Open File. Only the focus outline is removed.
+    PO Viewer navigation often keeps focus in the Vietnamese editor. In that state Qt can
+    draw the table selection as inactive, or leave older multi-row selections looking like
+    the active entry. For the PO Viewer table, always paint only the current row as the
+    highlighted entry, regardless of which widget has keyboard focus.
     """
 
-    def paint(self, painter, option, index) -> None:  # type: ignore[override]
+    def _view_option(self, option, index) -> QStyleOptionViewItem:
         opt = QStyleOptionViewItem(option)
+        self.initStyleOption(opt, index)
         opt.state &= ~QStyle.StateFlag.State_HasFocus
-        super().paint(painter, opt, index)
+
+        widget = opt.widget
+        current_index_getter = getattr(widget, "currentIndex", None) if widget is not None else None
+        if widget is not None and widget.objectName() == "poViewerTable" and callable(current_index_getter):
+            current = current_index_getter()
+            if current.isValid() and current.row() == index.row():
+                opt.state |= QStyle.StateFlag.State_Selected | QStyle.StateFlag.State_Active
+            else:
+                opt.state &= ~QStyle.StateFlag.State_Selected
+        return opt
+
+    def paint(self, painter, option, index) -> None:  # type: ignore[override]
+        opt = self._view_option(option, index)
+        style = opt.widget.style() if opt.widget is not None else QApplication.style()
+        style.drawControl(QStyle.ControlElement.CE_ItemViewItem, opt, painter, opt.widget)
 
 
 class RichTextCellDelegate(NoFocusCellDelegate):
@@ -206,10 +378,7 @@ class RichTextCellDelegate(NoFocusCellDelegate):
         if not html_text:
             super().paint(painter, option, index)
             return
-        opt = QStyleOptionViewItem(option)
-        opt.state &= ~QStyle.StateFlag.State_HasFocus
-        self.initStyleOption(opt, index)
-        opt.state &= ~QStyle.StateFlag.State_HasFocus
+        opt = self._view_option(option, index)
         opt.text = ""
         style = opt.widget.style() if opt.widget is not None else QApplication.style()
         style.drawControl(QStyle.ControlElement.CE_ItemViewItem, opt, painter, opt.widget)
@@ -316,6 +485,12 @@ class ToolkitGUI(QMainWindow):
             QTableWidget::item:selected {{
                 background: #6f5a88;
                 color: {WHITE};
+            }}
+            QTableWidget#poViewerTable::item:selected,
+            QTableWidget#poViewerTable::item:selected:!active {{
+                background: {ENTRY_FOCUS_BG};
+                color: {WHITE};
+                outline: none;
             }}
             QTableWidget#searchResultsTable::item:selected {{
                 background: #6f5a88;
@@ -1232,8 +1407,15 @@ class ToolkitGUI(QMainWindow):
             if idx is None:
                 status.setText("Select a result first.")
                 return
-            if not self._open_external(self.search_results[idx].file):
-                QMessageBox.warning(self, "Open file", f"Could not open file:\n{self.search_results[idx].file}")
+            result = self.search_results[idx]
+            opener = getattr(self, "_open_file_in_po_viewer", None)
+            if callable(opener):
+                source_root = path_edit.text().strip()
+                if opener(result.file, uid=result.uid, source_paths=[source_root] if source_root else None):
+                    status.setText(f"Opened {result.file.name} in PO Viewer.")
+                    return
+            if not self._open_external(result.file):
+                QMessageBox.warning(self, "Open file", f"Could not open file:\n{result.file}")
 
         def compile_find() -> re.Pattern[str] | None:
             needle = multiline_text(find_edit)
@@ -1524,11 +1706,12 @@ class ToolkitGUI(QMainWindow):
 
     def _build_po_viewer_tab(self) -> None:
         _tab, layout = self._new_tab("PO Viewer")
+        self._po_viewer_tab_widget = _tab
         note = QLabel(
             "Pick .po files/folder and choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines, then fill translations from the Translafixer source list. "
-            "Shortcuts: Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
-            "Ctrl+Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. Translafixer matching ignores CLT tags."
+            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
+            "Ctrl+Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. Red \\n markers show real line breaks. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
@@ -1571,6 +1754,7 @@ class ToolkitGUI(QMainWindow):
 
         tools = QHBoxLayout()
         wrap_view_btn = self._button("Visual wrap: ON", secondary=True)
+        clt_color_btn = self._button("CLT view: Tags", secondary=True)
         wrap_selected_btn = self._button("Wrap selected", secondary=True)
         wrap_all_btn = self._button("Wrap all", secondary=True)
         fill_btn = self._button("Translafix from sources")
@@ -1580,6 +1764,7 @@ class ToolkitGUI(QMainWindow):
         status.setObjectName("muted")
         status.setWordWrap(True)
         tools.addWidget(wrap_view_btn)
+        tools.addWidget(clt_color_btn)
         tools.addWidget(wrap_selected_btn)
         tools.addWidget(wrap_all_btn)
         tools.addWidget(fill_btn)
@@ -1627,12 +1812,12 @@ class ToolkitGUI(QMainWindow):
             box_layout.addWidget(box, 1)
             return wrap
 
-        en_box = QPlainTextEdit()
+        en_box = VisibleNewlinePlainTextEdit()
         en_box.setReadOnly(True)
         en_box.setPlaceholderText("English msgid")
         en_box.setFont(QFont("Consolas", 9))
         en_box._clt_highlighter = CltHighlighter(en_box.document())  # keep highlighter alive
-        vi_box = QPlainTextEdit()
+        vi_box = VisibleNewlinePlainTextEdit()
         vi_box.setPlaceholderText("Edit Vietnamese msgstr here. English is read-only.")
         vi_box.setFont(QFont("Consolas", 9))
         vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
@@ -1644,7 +1829,7 @@ class ToolkitGUI(QMainWindow):
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From Translafixer sources. Shows distinct Vietnamese translations only. >95% percentage is green. Ctrl+1..9 apply, Ctrl+0 refresh.")
+        suggest_note = QLabel("From Translafixer sources. Shows distinct Vietnamese translations only. >95% percentage is green. Ctrl+1..9 apply, Ctrl+0 refresh. Lower Min match when you need weaker fuzzy matches.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -1654,9 +1839,9 @@ class ToolkitGUI(QMainWindow):
         suggest_layout.addWidget(suggestions_list, 1)
         suggest_controls = QHBoxLayout()
         suggest_min_score = QSpinBox()
-        suggest_min_score.setRange(70, 100)
+        suggest_min_score.setRange(0, 100)
         suggest_min_score.setSuffix("%")
-        suggest_min_score.setValue(max(70, int(self.config.get("po_viewer_suggest_min_score", 70))))
+        suggest_min_score.setValue(max(0, min(100, int(self.config.get("po_viewer_suggest_min_score", 70)))))
         refresh_suggest_btn = self._button("Refresh", secondary=True)
         apply_suggest_btn = self._button("Apply", secondary=True)
         suggest_controls.addWidget(QLabel("Min match"))
@@ -1686,10 +1871,16 @@ class ToolkitGUI(QMainWindow):
             "loading_files": False,
             "detail_loading": False,
             "visual_wrap": True,
+            "clt_color_mode": bool(self.config.get("po_viewer_clt_color_mode", False)),
             "suggestion_index": None,
             "suggestion_source_signature": None,
             "suggestion_source_result": None,
+            "suggestion_cache": {},
+            "pending_suggestion_row": None,
+            "pending_suggestion_force": False,
         }
+        suggestion_timer = QTimer(_tab)
+        suggestion_timer.setSingleShot(True)
 
         def po_file():
             return state["po"]
@@ -1730,7 +1921,7 @@ class ToolkitGUI(QMainWindow):
 
         def set_cell_clt_html(item: QTableWidgetItem | None, text: str, *, color: str = TEXT) -> None:
             if item is not None:
-                item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text)}</span>')
+                item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text, color_mode=bool(state.get("clt_color_mode")))}</span>')
 
         def row_context(entry) -> str:
             return entry.speaker or entry.msgctxt or ""
@@ -1763,6 +1954,9 @@ class ToolkitGUI(QMainWindow):
             state["suggestion_source_signature"] = _suggestion_source_signature()
             state["suggestion_index"] = TranslationSuggestionIndex()
             state["suggestion_source_result"] = None
+            cache = state.get("suggestion_cache")
+            if isinstance(cache, dict):
+                cache.clear()
             if not sources:
                 if not quiet:
                     set_status("No Translafixer sources. Add files/folders in Translafixer for suggestions.")
@@ -1790,21 +1984,11 @@ class ToolkitGUI(QMainWindow):
                 index = state.get("suggestion_index")
             return index if isinstance(index, TranslationSuggestionIndex) else None
 
-        def refresh_suggestions_for_row(row: int | None = None, *, force_rebuild: bool = False) -> None:
+        def _suggestion_cache_key(source_text: str, min_score: float) -> tuple[str, float]:
+            return (suggestion_match_key(source_text), round(min_score, 3))
+
+        def _render_suggestions(row: int, suggestions) -> None:
             suggestions_list.clear()
-            po = po_file()
-            if po is None:
-                return
-            if row is None:
-                row = table.currentRow()
-            if row is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
-                return
-            index = ensure_suggestion_index(force=force_rebuild, quiet=not force_rebuild)
-            if index is None:
-                return
-            target = po.entries[row]  # type: ignore[union-attr]
-            min_score = max(70, suggest_min_score.value()) / 100.0
-            suggestions = index.suggest(target.msgid, min_score=min_score, limit=5)
 
             def _one_line(text: str, *, max_len: int = 190) -> str:
                 value = re.sub(r"\s+", " ", text or " ").strip()
@@ -1827,6 +2011,7 @@ class ToolkitGUI(QMainWindow):
                         "row": suggestion.row,
                         "uid": suggestion.uid,
                         "score": suggestion.score,
+                        "target_row": row,
                     },
                 )
                 item.setToolTip(f"{percent}% match")
@@ -1839,11 +2024,11 @@ class ToolkitGUI(QMainWindow):
                 meta_label = QLabel(meta)
                 meta_label.setTextFormat(Qt.TextFormat.RichText)
                 meta_label.setTextInteractionFlags(Qt.TextInteractionFlag.NoTextInteraction)
-                vi_label = QLabel(f"<span style='color:{WHITE}; font-weight:700;'>{clt_rich_html(translation)}</span>")
+                vi_label = QLabel(f"<span style='color:{WHITE};'>{clt_rich_html(translation, color_mode=bool(state.get('clt_color_mode')))}</span>")
                 vi_label.setTextFormat(Qt.TextFormat.RichText)
                 vi_label.setTextInteractionFlags(Qt.TextInteractionFlag.NoTextInteraction)
                 vi_label.setWordWrap(True)
-                vi_label.setStyleSheet(f"color: {WHITE}; font-weight:700;")
+                vi_label.setStyleSheet(f"color: {WHITE};")
                 row_layout.addWidget(meta_label)
                 row_layout.addWidget(vi_label)
 
@@ -1853,6 +2038,54 @@ class ToolkitGUI(QMainWindow):
             if suggestions_list.count():
                 suggestions_list.setCurrentRow(0)
 
+        def _refresh_suggestions_now() -> None:
+            row = state.get("pending_suggestion_row")
+            force_rebuild = bool(state.get("pending_suggestion_force"))
+            state["pending_suggestion_force"] = False
+            suggestions_list.clear()
+            po = po_file()
+            if po is None:
+                return
+            if not isinstance(row, int):
+                row = table.currentRow()
+            if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                return
+            # Ignore stale delayed refreshes after the user has already moved again.
+            if row != table.currentRow() and not force_rebuild:
+                return
+            index = ensure_suggestion_index(force=force_rebuild, quiet=not force_rebuild)
+            if index is None:
+                return
+            target = po.entries[row]  # type: ignore[union-attr]
+            min_score = suggest_min_score.value() / 100.0
+            key = _suggestion_cache_key(target.msgid, min_score)
+            cache = state.get("suggestion_cache")
+            if not isinstance(cache, dict):
+                cache = {}
+                state["suggestion_cache"] = cache
+            suggestions = None if force_rebuild else cache.get(key)
+            if suggestions is None:
+                suggestions = index.suggest(target.msgid, min_score=min_score, limit=5)
+                if len(cache) > 512:
+                    cache.clear()
+                cache[key] = suggestions
+            _render_suggestions(row, suggestions)
+
+        def refresh_suggestions_for_row(row: int | None = None, *, force_rebuild: bool = False, immediate: bool = False) -> None:
+            if row is None:
+                row = table.currentRow()
+            state["pending_suggestion_row"] = row
+            state["pending_suggestion_force"] = bool(force_rebuild)
+            if force_rebuild:
+                cache = state.get("suggestion_cache")
+                if isinstance(cache, dict):
+                    cache.clear()
+            suggestions_list.clear()
+            suggestion_timer.stop()
+            suggestion_timer.start(0 if (immediate or force_rebuild) else 100)
+
+        suggestion_timer.timeout.connect(_refresh_suggestions_now)
+
         def apply_selected_suggestion() -> None:
             row = table.currentRow()
             item = suggestions_list.currentItem()
@@ -1861,6 +2094,10 @@ class ToolkitGUI(QMainWindow):
                 return
             data = item.data(Qt.ItemDataRole.UserRole)
             if not isinstance(data, dict):
+                return
+            target_row = data.get("target_row")
+            if isinstance(target_row, int) and target_row != row:
+                refresh_suggestions_for_row(row, immediate=True)
                 return
             translation = str(data.get("translation") or "")
             if not translation.strip():
@@ -1901,8 +2138,10 @@ class ToolkitGUI(QMainWindow):
                     vi_box.clear()
                     return
                 entry = po.entries[row]  # type: ignore[union-attr]
-                en_box.setPlainText(entry.msgid)
-                vi_box.setPlainText(entry.msgstr)
+                if en_box.toPlainText() != entry.msgid:
+                    en_box.setPlainText(entry.msgid)
+                if vi_box.toPlainText() != entry.msgstr:
+                    vi_box.setPlainText(entry.msgstr)
                 set_status(f"Entry {row + 1}/{len(po.entries)} | line {entry.line}")  # type: ignore[union-attr]
                 refresh_suggestions_for_row(row)
             finally:
@@ -2102,6 +2341,78 @@ class ToolkitGUI(QMainWindow):
             state["dirty"] = False
             set_status(f"Saved {path.name}")
 
+        def select_entry_row(row: int, *, center: bool = False, keep_vi_focus: bool = False) -> None:
+            po = po_file()
+            if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                return
+            selection = table.selectionModel()
+            table.setUpdatesEnabled(False)
+            try:
+                if selection is not None:
+                    selection.clearSelection()
+                table.setCurrentCell(row, 0)
+                table.selectRow(row)
+                item = table.item(row, 0)
+                if item is not None:
+                    table.scrollToItem(
+                        item,
+                        QAbstractItemView.ScrollHint.PositionAtCenter if center else QAbstractItemView.ScrollHint.EnsureVisible,
+                    )
+            finally:
+                table.setUpdatesEnabled(True)
+            table.viewport().update()
+            if row == table.currentRow():
+                load_detail(row)
+            if keep_vi_focus:
+                vi_box.setFocus(Qt.FocusReason.ShortcutFocusReason)
+                table.viewport().update()
+
+        def select_entry_uid(uid: str | None = None, *, line: int | None = None, center: bool = True, keep_vi_focus: bool = False) -> bool:
+            po = po_file()
+            if po is None:
+                return False
+            target = -1
+            if uid:
+                for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
+                    if entry.uid == uid:
+                        target = row
+                        break
+            if target < 0 and line is not None:
+                for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
+                    if int(entry.line or 0) >= line:
+                        target = row
+                        break
+            if target < 0 and table.rowCount():
+                target = 0
+            if target < 0:
+                return False
+            select_entry_row(target, center=center, keep_vi_focus=keep_vi_focus)
+            return True
+
+        def open_file_in_po_viewer(path: str | Path, *, uid: str | None = None, line: int | None = None, source_paths: list[str] | None = None) -> bool:
+            target = Path(str(path)).expanduser()
+            if not target.is_file() or target.suffix.lower() != ".po":
+                QMessageBox.warning(self, "PO Viewer", f"Could not open in PO Viewer:\n{target}")
+                return False
+            roots = [item for item in (source_paths or []) if str(item).strip()]
+            if roots:
+                set_file_list(roots, "; ".join(roots), auto_load=False, quiet=True)
+            else:
+                files = state.get("file_paths")
+                in_current_list = False
+                if isinstance(files, list):
+                    in_current_list = any(_same_file(item if isinstance(item, Path) else Path(str(item)), target) for item in files)
+                if not in_current_list:
+                    set_file_list([target], str(target), auto_load=False, quiet=True)
+            load_file(target)
+            select_entry_uid(uid, line=line, center=True)
+            tab_widget = getattr(self, "_po_viewer_tab_widget", None)
+            if tab_widget is not None:
+                self.tabs.setCurrentWidget(tab_widget)
+            return True
+
+        self._open_file_in_po_viewer = open_file_in_po_viewer
+
         def open_current_po_external() -> None:
             path = current_path() or current_file_path()
             if path is None:
@@ -2197,6 +2508,33 @@ class ToolkitGUI(QMainWindow):
             vi_box.setLineWrapMode(mode)
             wrap_view_btn.setText(f"Visual wrap: {'ON' if enabled else 'OFF'}")
             set_status("Visual line wrap enabled." if enabled else "Visual line wrap disabled.")
+
+        def set_clt_color_mode(enabled: bool, *, persist: bool = True, quiet: bool = False) -> None:
+            state["clt_color_mode"] = enabled
+            clt_color_btn.setText(f"CLT view: {'Color' if enabled else 'Tags'}")
+            en_box._clt_highlighter.set_color_spans(enabled)
+            vi_box._clt_highlighter.set_color_spans(enabled)
+            for row in range(table.rowCount()):
+                refresh_row_style(row)
+            refresh_suggestions_for_row(table.currentRow())
+            if persist:
+                self.config["po_viewer_clt_color_mode"] = enabled
+                save_config(self.config)
+            if not quiet:
+                set_status("CLT color view enabled. Tags are hidden in table/suggestions; text uses in-game colors." if enabled else "CLT tag view enabled. Raw CLT tags are visible in the PO table.")
+
+        def toggle_clt_color_mode() -> None:
+            set_clt_color_mode(not bool(state.get("clt_color_mode")))
+
+        def focus_vi_editor() -> None:
+            if table.rowCount():
+                row = table.currentRow() if table.currentRow() >= 0 else 0
+                select_entry_row(row)
+            vi_box.setFocus(Qt.FocusReason.ShortcutFocusReason)
+            cursor = vi_box.textCursor()
+            cursor.movePosition(QTextCursor.MoveOperation.End)
+            vi_box.setTextCursor(cursor)
+            table.viewport().update()
 
         def fill_from_translafixer_sources() -> None:
             po = po_file()
@@ -2295,29 +2633,31 @@ class ToolkitGUI(QMainWindow):
         def current_changed(row: int, _col: int, _prev_row: int, _prev_col: int) -> None:
             load_detail(row)
 
+        def _focus_is_vi_editor() -> bool:
+            widget = QApplication.focusWidget()
+            return widget is vi_box or (widget is not None and vi_box.isAncestorOf(widget))
+
         def switch_entry(delta: int) -> None:
             if table.rowCount() <= 0:
                 return
-            row = table.currentRow()
-            if row < 0:
-                row = 0
-            else:
-                row = max(0, min(table.rowCount() - 1, row + delta))
-            table.setFocus()
-            table.selectRow(row)
-            item = table.item(row, 0)
-            if item is not None:
-                table.scrollToItem(item, QAbstractItemView.ScrollHint.PositionAtCenter)
-            load_detail(row)
+            current = table.currentRow()
+            row = 0 if current < 0 else max(0, min(table.rowCount() - 1, current + delta))
+            keep_vi_focus = _focus_is_vi_editor()
+            if not keep_vi_focus:
+                table.setFocus(Qt.FocusReason.ShortcutFocusReason)
+            select_entry_row(row, keep_vi_focus=keep_vi_focus)
 
         def switch_file(delta: int) -> None:
             if file_combo.count() <= 1:
                 return
+            keep_vi_focus = _focus_is_vi_editor()
             idx = file_combo.currentIndex()
             next_idx = (idx + delta) % file_combo.count()
             if file_combo.itemData(next_idx) is None:
                 return
             file_combo.setCurrentIndex(next_idx)
+            if keep_vi_focus:
+                QTimer.singleShot(0, focus_vi_editor)
 
         table.currentCellChanged.connect(current_changed)
         table.itemChanged.connect(table_item_changed)
@@ -2331,6 +2671,7 @@ class ToolkitGUI(QMainWindow):
         source_edit.returnPressed.connect(load_source_from_text)
         source_edit.editingFinished.connect(lambda: (self.config.__setitem__("po_viewer_source", source_edit.text().strip()), save_config(self.config)))
         wrap_view_btn.clicked.connect(toggle_visual_wrap)
+        clt_color_btn.clicked.connect(toggle_clt_color_mode)
         wrap_selected_btn.clicked.connect(wrap_selected)
         wrap_all_btn.clicked.connect(wrap_all)
         fill_btn.clicked.connect(fill_from_translafixer_sources)
@@ -2342,22 +2683,34 @@ class ToolkitGUI(QMainWindow):
 
         shortcuts: list[QShortcut] = []
 
-        def add_shortcut(sequence: str, callback: Callable[[], None]) -> None:
-            shortcut = QShortcut(QKeySequence(sequence), _tab)
-            shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        def add_shortcut(
+            sequence: str,
+            callback: Callable[[], None],
+            *,
+            parent: QWidget | None = None,
+            context: Qt.ShortcutContext = Qt.ShortcutContext.WidgetWithChildrenShortcut,
+        ) -> None:
+            shortcut = QShortcut(QKeySequence(sequence), parent or _tab)
+            shortcut.setContext(context)
             shortcut.activated.connect(callback)
             shortcuts.append(shortcut)
 
-        add_shortcut("Ctrl+Up", lambda: switch_entry(-1))
-        add_shortcut("Ctrl+Down", lambda: switch_entry(1))
+        for nav_parent in (table, vi_box):
+            add_shortcut("Ctrl+Up", lambda: switch_entry(-1), parent=nav_parent)
+            add_shortcut("Ctrl+Down", lambda: switch_entry(1), parent=nav_parent)
+            add_shortcut("Ctrl+Shift+Up", lambda: switch_file(-1), parent=nav_parent)
+            add_shortcut("Ctrl+Shift+Down", lambda: switch_file(1), parent=nav_parent)
+        add_shortcut("Ctrl+E", focus_vi_editor)
+        add_shortcut("F2", focus_vi_editor)
+        add_shortcut("Ctrl+S", save_file)
         add_shortcut("Ctrl+Return", wrap_selected)
         add_shortcut("Ctrl+Enter", wrap_selected)
-        add_shortcut("Ctrl+Shift+Up", lambda: switch_file(-1))
-        add_shortcut("Ctrl+Shift+Down", lambda: switch_file(1))
         for suggestion_number in range(1, 10):
             add_shortcut(f"Ctrl+{suggestion_number}", lambda n=suggestion_number: apply_suggestion_number(n))
         add_shortcut("Ctrl+0", lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         self._po_viewer_shortcuts = shortcuts
+
+        set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)
 
         if initial_source:
             set_file_list([initial_source], initial_source, auto_load=False, quiet=True)
@@ -2683,14 +3036,39 @@ class ToolkitGUI(QMainWindow):
         def sync(logwrite):
             self._check_stop()
             result = sync_by_filename_report(source_edit.text().strip(), target_edit.text().strip())
+
+            def log_paths(title: str, paths: list[Path], level: str = "warn", *, max_items: int = 200) -> None:
+                if not paths:
+                    return
+                logwrite(f"{title}: {len(paths)}", level)
+                for path in paths[:max_items]:
+                    logwrite(f"  - {path}", level)
+                if len(paths) > max_items:
+                    logwrite(f"  ... {len(paths) - max_items} more", level)
+
+            def log_pairs(title: str, pairs: list[tuple[Path, Path]], level: str = "info", *, max_items: int = 200) -> None:
+                if not pairs:
+                    return
+                logwrite(f"{title}: {len(pairs)}", level)
+                for src, target in pairs[:max_items]:
+                    logwrite(f"  - {src} -> {target}", level)
+                if len(pairs) > max_items:
+                    logwrite(f"  ... {len(pairs) - max_items} more", level)
+
             logwrite(f"Source files scanned: {result.source_files}")
             logwrite(f"Target files scanned: {result.target_files}")
             if result.duplicate_source_names:
                 logwrite(f"Duplicate source filenames skipped: {result.duplicate_source_names}", "warn")
+                log_paths("Duplicate source files not pasted", result.duplicate_source_files, "warn")
             if result.skipped_identical:
                 logwrite(f"Identical files skipped: {result.skipped_identical}")
+                log_pairs("Identical pairs skipped", result.skipped_identical_files, "info")
             if result.skipped_self:
                 logwrite(f"Self-copy skipped: {result.skipped_self}", "warn")
+                log_pairs("Self-copy pairs skipped", result.skipped_self_files, "warn")
+            log_pairs("Copied source -> target", result.copied_files, "good")
+            log_paths("Source files with no target filename match (not pasted)", result.source_without_target, "warn")
+            log_paths("Target files with no source filename match (not found in source)", result.target_without_source, "warn")
             logwrite(f"Files synced: {result.copied}", "good" if result.copied else "warn")
 
         def restore_from_copy(logwrite):
