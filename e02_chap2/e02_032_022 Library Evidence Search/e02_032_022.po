@@ -21,8 +21,8 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma xuất hiện.\n"
-"Hiện tại nó chỉ đang hiển thị biểu tượng của trường.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
 "<CLT>"
 
 #. <CLT 4>監視カメラ…
@@ -69,7 +69,7 @@ msgid ""
 "it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kệ sách này chứa đầy sách. Nhưng nhìn vào nó...\n"
+"<CLT 4>Kệ sách chứa đầy ắp những cuốn sách. Nhưng nhìn vào nó...\n"
 "<CLT>"
 
 #. 事件に関係ありそうなものは…
@@ -91,7 +91,7 @@ msgid ""
 "it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kệ sách này chứa đầy sách. Nhưng nhìn vào nó...\n"
+"<CLT 4>Kệ sách chứa đầy ắp những cuốn sách. Nhưng nhìn vào nó...\n"
 "<CLT>"
 
 #. 事件に関係ありそうなものは…
@@ -113,7 +113,7 @@ msgid ""
 "it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kệ sách này chứa đầy sách. Nhưng nhìn vào nó...\n"
+"<CLT 4>Kệ sách chứa đầy ắp những cuốn sách. Nhưng nhìn vào nó...\n"
 "<CLT>"
 
 #. 事件に関係ありそうなものは…
@@ -133,7 +133,7 @@ msgid ""
 "<CLT 4>There's a thick layer of dust on top of the desk.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một lớp bụi dày trên mặt bàn.\n"
+"<CLT 4>Có một lớp bụi dày đặc trên mặt bàn.\n"
 "<CLT>"
 
 #. 事件に関係ありそうなものは…
@@ -324,8 +324,8 @@ msgid ""
 "Apparently it closed down <CLT><CLT 3>over a year ago<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hơn nữa, chuyện này thậm chí không mới xảy ra gần đây.\n"
-"Rõ ràng nó đã đóng cửa từ <CLT><CLT 3>hơn một năm trước<CLT><CLT 4>.\n"
+"<CLT 4>Và hơn thế nữa, chuyện này thậm chí không phải mới xảy ra gần\n"
+"đây. Rõ ràng là nó đã đóng cửa từ <CLT><CLT 3>hơn một năm trước<CLT><CLT 4> rồi.\n"
 "<CLT>"
 
 #. <CLT 4>きっと、黒幕は無人になった希望ヶ峰学園を乗っ取り、
@@ -337,8 +337,8 @@ msgid ""
 "in order to start this \"killing game\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kẻ chủ mưu có lẽ đã chiếm lấy ngôi trường bỏ hoang này\n"
-"để bắt đầu \"trò chơi giết chóc\" này...\n"
+"<CLT 4>Kẻ chủ mưu có lẽ đã chiếm lấy ngôi trường bỏ hoang để bắt\n"
+"đầu \"trò chơi sinh tử\" này...\n"
 "<CLT>"
 
 #. <CLT 4>学園内に、ボク達以外の生徒がいない理由は、
@@ -350,8 +350,8 @@ msgid ""
 "here—because it's not a real school.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Điều đó giải thích tại sao không có học sinh nào khác ở\n"
-"đây—bởi vì đây không phải là một ngôi trường thực sự.\n"
+"<CLT 4>Điều đó giải thích tại sao không có bất kỳ học sinh nào khác ở\n"
+"đây—bởi vì đây không phải là một ngôi trường thực thụ.\n"
 "<CLT>"
 
 #. <CLT 4>そして、希望ヶ峰学園が閉鎖に追い込まれた
@@ -363,8 +363,8 @@ msgid ""
 "the school to close down in the first place...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và còn có những \"<CLT><CLT 3>vấn đề nghiêm trọng<CLT><CLT 4>\" đã buộc ngôi\n"
-"trường phải đóng cửa ngay từ đầu...\n"
+"<CLT 4>Và rồi còn có những \"<CLT><CLT 3>vấn đề nghiêm trọng<CLT><CLT 4>\" đã buộc ngôi trường\n"
+"này phải đóng cửa ngay từ đầu...\n"
 "<CLT>"
 
 #. <CLT 4>それって、ボクらの身に降りかかっているこの状況と、
@@ -376,8 +376,8 @@ msgid ""
 "happening to us now...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Liệu có mối liên hệ nào giữa chuyện đó và những gì đang\n"
-"xảy ra với chúng mình hiện giờ không...?\n"
+"<CLT 4>Liệu có mối liên hệ nào giữa chuyện đó và những gì đang xảy ra\n"
+"với chúng ta lúc này không...?\n"
 "<CLT>"
 
 #. ……………
@@ -394,8 +394,8 @@ msgid ""
 "they would want to imprison us all here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4><CLT><CLT 3>Động cơ của kẻ chủ mưu<CLT><CLT 4>... Nếu chúng mình có thể hiểu được tại\n"
-"sao hắn lại muốn giam cầm tất cả bọn mình ở đây...\n"
+"<CLT 4><CLT><CLT 3>Động cơ của kẻ chủ mưu<CLT><CLT 4>... Nếu chúng ta có thể tìm ra lý do tại\n"
+"sao chúng lại muốn giam cầm tất cả bọn mình ở đây...\n"
 "<CLT>"
 
 #. <CLT 4>それを解き明かせば、
@@ -406,7 +406,8 @@ msgid ""
 "<CLT 4>...will that be enough to get us out of here?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...liệu như vậy có đủ để giúp chúng mình thoát khỏi đây không?\n"
+"<CLT 4>...liệu bấy nhiêu đó có đủ để giúp chúng ta thoát khỏi nơi này\n"
+"không?\n"
 "<CLT>"
 
 #. <CLT 4>それとも……

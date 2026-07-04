@@ -29,7 +29,7 @@
     },
     {
       "id": "kyouko_toi_to_to_005",
-      "enabled": true,
+      "enabled": false,
       "priority": 800,
       "speaker": "KYOUKO",
       "scope": "",
@@ -42,7 +42,7 @@
     },
     {
       "id": "kyouko_toi_to_to_006",
-      "enabled": true,
+      "enabled": false,
       "priority": 800,
       "speaker": "KYOUKO",
       "scope": "",
@@ -81,7 +81,7 @@
     },
     {
       "id": "global_to_to_minh_003",
-      "enabled": false,
+      "enabled": true,
       "priority": 500,
       "speaker": "",
       "scope": "clt:4",
@@ -94,7 +94,7 @@
     },
     {
       "id": "global_to_to_minh_004",
-      "enabled": false,
+      "enabled": true,
       "priority": 500,
       "speaker": "",
       "scope": "clt:4",
@@ -302,7 +302,7 @@
     },
     {
       "id": "global_phong_kho_to_kho_luu_tru_023",
-      "enabled": true,
+      "enabled": false,
       "priority": 100,
       "speaker": "",
       "scope": "",
@@ -315,7 +315,7 @@
     },
     {
       "id": "global_phong_kho_to_kho_luu_tru_024",
-      "enabled": true,
+      "enabled": false,
       "priority": 100,
       "speaker": "",
       "scope": "",
@@ -393,7 +393,7 @@
     },
     {
       "id": "globalmark",
-      "enabled": true,
+      "enabled": false,
       "priority": 100,
       "speaker": "",
       "scope": "",

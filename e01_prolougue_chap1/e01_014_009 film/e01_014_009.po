@@ -435,8 +435,8 @@ msgid ""
 "this kind of thing!?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái màn hình kiểu gì thế này!? Rốt cuộc là công ty nào sản\n"
-"xuất ra thứ này cơ chứ!?\n"
+"<CLT 4>Cái loại màn hình gì thế này!? Kẻ nào lại đi chế tạo ra cái thứ\n"
+"này cơ chứ!?\n"
 "<CLT>"
 
 #. …モノクマ社って書いてある。
@@ -446,8 +446,8 @@ msgid ""
 "It has \"Monokuma Co.\" written across it. I guess\n"
 "they've covered all the details..."
 msgstr ""
-"Trên đó có ghi \"Tập đoàn Monokuma\". Đúng là chăm chút tới\n"
-"từng chi tiết mà..."
+"Trên đó có ghi \"Tập đoàn Monokuma\". Có vẻ như chúng đã chăm chút\n"
+"đến từng chi tiết rồi..."
 
 #. <CLT 4>監視カメラ…
 #. <CLT>
@@ -456,7 +456,7 @@ msgid ""
 "<CLT 4>A surveillance camera...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Camera giám sát...\n"
+"<CLT 4>Một chiếc camera giám sát...\n"
 "<CLT>"
 
 #. <CLT 4>こんなカメラで見られていると思うと、
@@ -1508,9 +1508,7 @@ msgctxt "0182 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>...\n"
-"<CLT>"
+msgstr "..."
 
 #. 苗木君.
 #. もうちょっと調べてみませんか？

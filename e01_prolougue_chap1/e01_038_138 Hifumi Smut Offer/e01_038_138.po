@@ -55,8 +55,8 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Màn hình nơi Monokuma thường xuất hiện... Hiện tại nó chỉ\n"
-"hiển thị huy hiệu của trường thôi sao...\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
 "<CLT>"
 
 #. <CLT 4>でも、またいつモノクマが出てくるかと思うと…
@@ -85,8 +85,8 @@ msgid ""
 "of it...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bọn chúng luôn theo dõi chúng ta sao? Chẳng lẽ chúng không\n"
-"bao giờ thấy chán à...?\n"
+"<CLT 4>Bọn chúng luôn theo dõi chúng ta sao? Chẳng lẽ chúng không bao\n"
+"giờ thấy chán à...?\n"
 "<CLT>"
 
 #. <CLT 4>…と、心の中で挑発するのが精一杯だ。
@@ -97,8 +97,8 @@ msgid ""
 "about mocking them...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thiệt, tôi đã phải dồn hết sức lực chỉ để dám *nghĩ* về\n"
-"việc chế nhạo bọn chúng...\n"
+"<CLT 4>Thiệt, mình đã phải dồn hết sức lực chỉ để dám *nghĩ* về việc chế\n"
+"nhạo bọn chúng...\n"
 "<CLT>"
 
 #. <CLT 4>山田クンのおかげで、中に入れるようになった。
@@ -156,7 +156,7 @@ msgid ""
 "<CLT 4>There's a hatch on the floor...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một cái nắp hầm trên sàn nhà...\n"
+"<CLT 4>Có một chiếc cửa sập trên sàn nhà...\n"
 "<CLT>"
 
 #. <CLT 23>「ガタガタガタ！」
@@ -166,14 +166,14 @@ msgid ""
 "<CLT 23>*Rattle rattle*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*Lạch cạch lạch cạch*\n"
+"<CLT 23>“Lạch cạch lạch cạch!”\n"
 "<CLT>"
 
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0018 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
-msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+msgstr "Không mở được... Hình như bị khóa rồi."
 
 #. <CLT 4>焼却炉は…
 #. もう調べたからいいかな…

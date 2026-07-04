@@ -21,8 +21,8 @@ msgid ""
 "Right now, it's just showing the school crest.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma xuất hiện.\n"
-"Hiện tại nó chỉ đang hiển thị biểu tượng của trường.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Hiện tại, nó chỉ đang hiển thị phù hiệu của trường.\n"
 "<CLT>"
 
 #. 無視だ無視…捜査に集中しよう。
@@ -55,8 +55,7 @@ msgid ""
 "alone.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù chuyện này làm mình tức điên lên, nhưng tốt nhất là\n"
-"nên mặc kệ nó thôi.\n"
+"<CLT 4>Dù bực mình nhưng đành mặc kệ nó thôi.\n"
 "<CLT>"
 
 #. <CLT 4>鉄格子の開閉スイッチだ。
@@ -68,8 +67,8 @@ msgid ""
 "don't have the key, so I can't activate it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là công tắc để đóng mở cổng sắt. Mình không có chìa\n"
-"khóa nên không thể kích hoạt nó được.\n"
+"<CLT 4>Đó là công tắc để nâng và hạ cổng sắt. Mình không có chìa khóa,\n"
+"nên không thể kích hoạt nó được.\n"
 "<CLT>"
 
 #. <CLT 4>床に扉がある…
@@ -79,7 +78,7 @@ msgid ""
 "<CLT 4>There's a hatch on the floor...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một cửa sập ở trên sàn...\n"
+"<CLT 4>Có một chiếc cửa sập trên sàn nhà...\n"
 "<CLT>"
 
 #. <CLT 23>「ガタガタガタ！」
@@ -89,14 +88,14 @@ msgid ""
 "<CLT 23>*Rattle rattle*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*Lạch cạch lạch cạch*\n"
+"<CLT 23>“Lạch cạch lạch cạch!”\n"
 "<CLT>"
 
 #. 開かない…
 #. 鍵が掛かってるみたいだ…
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
-msgstr "Cánh cửa không hề nhúc nhích. Chắc là nó bị khóa rồi."
+msgstr "Không mở được... Hình như bị khóa rồi."
 
 #. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だな。
 #. <CLT>
@@ -105,7 +104,7 @@ msgid ""
 "<CLT 4>This is the trash room. The dump, in other words.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là phòng chứa rác. Nói cách khác thì là bãi rác.\n"
+"<CLT 4>Đây là phòng chứa rác. Nói cách khác là bãi rác.\n"
 "<CLT>"
 
 #. <CLT 4>だけど、鉄格子がジャマで中に入れないか。
@@ -116,8 +115,8 @@ msgid ""
 "inside.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng vì có cánh cổng chắn đường nên mình không thực sự\n"
-"vào bên trong được.\n"
+"<CLT 4>Nhưng vì cánh cổng sắt đang chắn đường nên mình không thể thực\n"
+"sự vào trong được.\n"
 "<CLT>"
 
 #. <CLT 4>でも、ここは今回の事件には関係なさそうだな…
