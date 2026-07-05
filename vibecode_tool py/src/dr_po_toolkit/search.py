@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from email.mime import text
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -24,12 +25,13 @@ class SearchResult:
 def _raw_visible_text(text: str) -> str:
     # Convert common PO escapes before visible_text so the file-level prefilter
     # matches the same user-visible text that parsed entries would show.
-    return visible_text(
-        text.replace("\\n", " ")
-        .replace("\\r", " ")
-        .replace("\\t", " ")
-        .replace('\\"', '"')
-    )
+    # return visible_text(
+    #     text.replace("\\n", " ")
+    #     .replace("\\r", " ")
+    #     .replace("\\t", " ")
+    #     .replace('\\"', '"')
+    # )
+    return text.replace("\\n", " ").replace("\\r", " ").replace("\\t", " ").replace('\\"', '"')
 
 
 def _compile_whole_word(needle: str, case_sensitive: bool) -> re.Pattern[str]:
@@ -37,6 +39,16 @@ def _compile_whole_word(needle: str, case_sensitive: bool) -> re.Pattern[str]:
     return re.compile(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", flags)
 
 
+# def _matches_prepared(
+#     text: str,
+#     needle: str,
+#     *,
+#     case_sensitive: bool,
+#     whole_word_pattern: re.Pattern[str] | None,
+# ) -> bool:
+#     hay = visible_text(text)
+#     if not hay:
+#         return False
 def _matches_prepared(
     text: str,
     needle: str,
@@ -44,7 +56,7 @@ def _matches_prepared(
     case_sensitive: bool,
     whole_word_pattern: re.Pattern[str] | None,
 ) -> bool:
-    hay = visible_text(text)
+    hay = text
     if not hay:
         return False
     if whole_word_pattern is not None:
@@ -71,6 +83,19 @@ def _file_can_contain_match(
     return needle in hay
 
 
+# def search_path(
+#     root: str | Path,
+#     phrase: str,
+#     search_msgid: bool = True,
+#     search_msgstr: bool = True,
+#     case_sensitive: bool = False,
+#     whole_word: bool = False,
+# ) -> list[SearchResult]:
+#     results: list[SearchResult] = []
+#     base = Path(root)
+#     needle_visible = visible_text(phrase)
+#     if not needle_visible or not (search_msgid or search_msgstr):
+#         return results
 def search_path(
     root: str | Path,
     phrase: str,
@@ -81,10 +106,10 @@ def search_path(
 ) -> list[SearchResult]:
     results: list[SearchResult] = []
     base = Path(root)
-    needle_visible = visible_text(phrase)
+    needle_visible = phrase
     if not needle_visible or not (search_msgid or search_msgstr):
         return results
-
+    
     whole_word_pattern = _compile_whole_word(needle_visible, case_sensitive) if whole_word else None
     needle = needle_visible if case_sensitive or whole_word else needle_visible.lower()
 
