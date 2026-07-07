@@ -101,8 +101,8 @@ msgid ""
 "right now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cứ nghĩ đến việc bị ai đó dõi theo qua cái camera này, cảm\n"
-"giác thật khó chịu...\n"
+"<CLT 4>Cảm giác bị theo dõi qua cái ống kính này thật là khó chịu,\n"
+"nhưng mà...\n"
 "<CLT>"
 
 #. <CLT 4>校則によると、監視カメラを壊したらマズイんだよな。
@@ -359,7 +359,7 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"Bính boong, bính boong...\"\n"
+"<CLT 23>“Bíng bong, bing bong”\n"
 "<CLT>"
 
 #. えー、校内放送でーす。
@@ -555,8 +555,7 @@ msgid ""
 "to clean up after ourselves...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cái này là... cây lăn bụi hả. Nghĩa là việc dọn dẹp cứ tự\n"
-"nhiên à...\n"
+"<CLT 4>Đây là... cây lăn bụi. Có vẻ mình được tự do dọn dẹp phòng...\n"
 "<CLT>"
 
 #. <CLT 4>これは…工具セットだな.
@@ -566,7 +565,7 @@ msgid ""
 "<CLT 4>It's...a toolkit.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là... bộ dụng cụ.\n"
+"<CLT 4>Đây là... một bộ dụng cụ.\n"
 "<CLT>"
 
 #. <CLT 4>ビニールの包装がされてる.
@@ -577,8 +576,7 @@ msgid ""
 "<CLT 4>It must be brand-new. It's still in the shrink-wrap.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó được bọc nilon cẩn thận. Trông vẫn còn mới tinh chưa\n"
-"bóc tem...\n"
+"<CLT 4>Nó vẫn còn bọc nilon. Có vẻ là hàng mới chưa khui tem.\n"
 "<CLT>"
 
 #. <CLT 4>工具セットなんて使う事はないだろうな.
@@ -600,8 +598,8 @@ msgid ""
 "...Feels normal, too.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giường ngủ... Chẳng có gì đặc biệt, nằm lên cũng thấy bình\n"
-"thường...\n"
+"<CLT 4>Giường ngủ. Trông nó khá là bình thường. \n"
+"...Nằm thử cũng thấy bình thường nốt.\n"
 "<CLT>"
 
 #. <CLT 4>なんて、ボクに言われたくないだろうな…
@@ -623,8 +621,8 @@ msgid ""
 "trapdoor or hidden compartments or anything...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cũng không có mánh khóe gì đặc biệt... Trông chỉ như một\n"
-"cái thùng rác bình thường...\n"
+"<CLT 4>Chẳng có cơ quan hay bí mật gì cả. Chỉ là một chiếc sọt\n"
+"rác bình thường thôi...\n"
 "<CLT>"
 
 #. <CLT 4>引き出しのある机だ.
@@ -726,13 +724,13 @@ msgid ""
 "In any normal school, Mr. Monokuma would be a kind\n"
 "teacher. But when I think about what's coming up..."
 msgstr ""
-"Trang thiết bị đầy đủ, thầy Monokuma thì hiền từ. Cứ nghĩ đến\n"
-"những ngày sắp tới được bắt đầu trong môi trường thế này là..."
+"Ở bất kỳ ngôi trường bình thường nào, thầy Monokuma sẽ là một\n"
+"giáo viên tử tế. Nhưng khi nghĩ về chuyện sắp tới..."
 
 #. ボクはとても誇らしく、嬉しくてなりません.
 msgctxt "0078 | MONOKUMA"
 msgid "...I'm just so full of pride and joy."
-msgstr "...Ta thấy tự hào và vui sướng không sao tả xiết."
+msgstr "...Là lòng tôi lại tràn ngập niềm hân hoan và kiêu hãnh."
 
 #. 今日は私たち新入生の為にこのような素晴らしい式典を
 #. 執り行っていただき、誠にありがとうございました.
@@ -741,8 +739,8 @@ msgid ""
 "Our ceremony earlier today was absolutely splendid.\n"
 "Thank you all very much."
 msgstr ""
-"Xin chân thành cảm ơn vì đã tổ chức một buổi lễ tuyệt vời\n"
-"dành cho những học sinh mới như chúng em ngày hôm nay."
+"Buổi lễ sớm nay của chúng ta đã diễn ra vô cùng tốt đẹp. Cảm ơn\n"
+"các em rất nhiều."
 
 #. 希望ヶ峰学園の生徒としての自覚を失う事なく、
 #. それぞれ、新しい自分の理想を目指して…
@@ -751,15 +749,17 @@ msgid ""
 "Remember that you're all students of Hope's Peak\n"
 "Academy, and strive to refine your ideals."
 msgstr ""
-"Không bao giờ được quên mình là học sinh của Học viện Đỉnh\n"
-"Hy Vọng, mỗi người hãy hướng tới lý tưởng của bản thân."
+"Hãy luôn nhớ rằng các em là học sinh của Học viện Đỉnh Hy vọng,\n"
+"và hãy không ngừng nỗ lực để hoàn thiện lý tưởng của mình."
 
 #. 明日からの生活を、送っていく事を誓いますっ！
 msgctxt "0081 | MONOKUMA"
 msgid ""
 "I swear to you, I will send you all off into\n"
 "a new tomorrow!"
-msgstr "Em xin thề sẽ nỗ lực hết mình cho cuộc sống kể từ ngày mai!"
+msgstr ""
+"Ta xin thề rằng, chính tay tôi sẽ tiễn tất cả các em bước sang\n"
+"một ngày mai mới!"
 
 #. <CLT 23>「キーン、コーン…　カーン、コーン」
 #. <CLT>
@@ -768,7 +768,7 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"Bính boong, bính boong...\"\n"
+"<CLT 23>“Bíng bong, bing bong”\n"
 "<CLT>"
 
 #. オマエラ、おはようございます！

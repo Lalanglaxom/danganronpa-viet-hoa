@@ -56,7 +56,7 @@ def _matches_prepared(
     case_sensitive: bool,
     whole_word_pattern: re.Pattern[str] | None,
 ) -> bool:
-    hay = text
+    hay = visible_text(text)
     if not hay:
         return False
     if whole_word_pattern is not None:
@@ -77,10 +77,17 @@ def _file_can_contain_match(
     if not hay:
         return False
     if whole_word_pattern is not None:
-        return whole_word_pattern.search(hay) is not None
+        if whole_word_pattern.search(hay) is not None:
+            return True
+        cmp_hay = hay if case_sensitive else hay.lower()
+        parts = [part for part in re.split(r"\s+", needle) if part]
+        return bool(parts) and all(part in cmp_hay for part in parts)
     if not case_sensitive:
         hay = hay.lower()
-    return needle in hay
+    if needle in hay:
+        return True
+    parts = [part for part in re.split(r"\s+", needle) if part]
+    return bool(parts) and all(part in hay for part in parts)
 
 
 # def search_path(
@@ -106,7 +113,7 @@ def search_path(
 ) -> list[SearchResult]:
     results: list[SearchResult] = []
     base = Path(root)
-    needle_visible = phrase
+    needle_visible = visible_text(phrase)
     if not needle_visible or not (search_msgid or search_msgstr):
         return results
     

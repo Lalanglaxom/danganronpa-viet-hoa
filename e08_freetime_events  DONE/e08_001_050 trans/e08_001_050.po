@@ -30,9 +30,8 @@ msgid ""
 "time...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ishimaru đã rất tốt bụng khi dành cho mình một ít thời gian quý\n"
-"báu của cậu ấy...\n"
-"<CLT>"
+"<CLT 4>Taka đã rất tử tế khi dành cho mình một ít thời gian quý báu của\n"
+"cậu ấy...<CLT>"
 
 #. ふむ。時には生徒同士の心の交流も必要かもしれん。
 #. では、一緒に自習するか！
@@ -51,7 +50,7 @@ msgid ""
 "<CLT 4>I took some time to study with Taka...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã dành thời gian để cùng tự học với Taka...\n"
+"<CLT 4>Mình đã dành thời gian để tự học cùng với Taka...\n"
 "<CLT>"
 
 #. 何！？　僕の話を聞きたいと！？
@@ -77,8 +76,8 @@ msgid ""
 "theories...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ishimaru đã giảng giải cực kỳ chi tiết về hàng loạt quan điểm cá\n"
-"nhân của cậu ấy...\n"
+"<CLT 4>Taka giải thích cực kỳ chi tiết về mấy cái giả thuyết của cậu\n"
+"ấy...\n"
 "<CLT>"
 
 #. そうだな、たまには休憩でもするか.
@@ -98,10 +97,7 @@ msgid ""
 "<CLT 4>We went to the dining hall, and Taka made us some of\n"
 "his delicious tea...\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Chúng mình tới nhà ăn, và Taka đã cho mình thưởng thức món trà\n"
-"tuyệt hảo của cậu ấy...\n"
-"<CLT>"
+msgstr "<CLT 4>Mình đã đến nhà ăn và uống trà do chính tay Taka pha...<CLT>"
 
 #. <CLT 4>石丸クンと少し仲良くなれたみたいだ…
 #. <CLT>
@@ -109,9 +105,7 @@ msgctxt "0010 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Taka and I grew a little closer today.\n"
 "<CLT>"
-msgstr ""
-"<CLT 4>Mình và Ishimaru đã thân thiết hơn một chút...\n"
-"<CLT>"
+msgstr "<CLT 4>Hôm nay mình và Taka đã trở nên thân thiết hơn một chút.<CLT>"
 
 #. 渡す
 msgctxt "0011 | CHOICE/RE:ACT"
@@ -121,9 +115,9 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không, không hẳn"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0013 | NARRATION"
 msgid "<CLT 3><CLT><CLT 23>Would you like to give Taka a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
-msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Taka không?<CLT>"
+msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng cho Taka một <CLT> <CLT 3>món quà<CLT><CLT 23> không?<CLT>"

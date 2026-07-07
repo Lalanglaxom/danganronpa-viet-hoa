@@ -57,7 +57,7 @@ msgid ""
 "<CLT 4>Hmm... Should I talk to Hina for a while?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nên làm gì đây? Có nên rủ Hina đi cùng không nhỉ?\n"
+"<CLT 4>Nên làm gì đây? Có nên rủ Hina trò chuyện một lát không nhỉ?\n"
 "<CLT>"
 
 #. オッケー！　たまには、
@@ -86,7 +86,8 @@ msgid ""
 "<CLT 4>Hina and I walked aimlessly around the school...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã cùng Hina đi dạo quanh trường...\n"
+"<CLT 4>Mình đã cùng Hina đi dạo thong dong khắp các hành lang trong\n"
+"trường...\n"
 "<CLT>"
 
 #. <CLT 4>朝日奈さんと少し仲良くなれたみたいだ…
@@ -108,7 +109,7 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không hẳn"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0013 | NARRATION"

@@ -50,7 +50,7 @@ msgstr "Dành chút thời gian với Leon"
 #. 他の場所へ行く
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Go see who else is around"
-msgstr "Đi xem còn ai ở quanh đây"
+msgstr "Đi xem còn ai khác quanh đây"
 
 #. <CLT 4>…どうしよう？
 #. こんな桑田クンと一緒に過ごそうか？
@@ -83,7 +83,7 @@ msgid ""
 "<CLT 4>Leon and I had a strategy meeting...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã cùng Leon bàn bạc chiến lược...\n"
+"<CLT 4>Mình và Leon đã cùng nhau họp bàn chiến thuật...\n"
 "<CLT>"
 
 #. <CLT 4>桑田クンと少し仲良くなれたみたいだ…
@@ -104,9 +104,9 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không, thôi khỏi"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0014 | NARRATION"
 msgid "<CLT 3><CLT><CLT 23>Would you like to give Leon a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
-msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng Leon một <CLT> <CLT 3>món quà<CLT><CLT 23> không?<CLT>"
+msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng <CLT> <CLT 3>quà<CLT> <CLT 23>cho Leon không?<CLT>"

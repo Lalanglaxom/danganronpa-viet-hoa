@@ -28,7 +28,7 @@ msgctxt "0002 | NARRATION"
 msgid ""
 "<CLT 23>What would you like to give her?\n"
 "<CLT>"
-msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cô ấy món quà gì?<CLT>"
 
 #. 私に…？
 msgctxt "0003 | AOI ASAHINA"
@@ -85,7 +85,7 @@ msgstr ""
 #. やっぱり渡す
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Maybe not..."
-msgstr "Để xem lại..."
+msgstr "Có lẽ là không..."
 
 #. 渡さない
 msgctxt "0011 | CHOICE/RE:ACT"
@@ -99,5 +99,5 @@ msgid ""
 "<CLT 23>Are you sure you don't want to give her something?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn chắc chắn không muốn tặng quà gì chứ?\n"
+"<CLT 23>Bạn chắc là không muốn tặng cô ấy món gì chứ?\n"
 "<CLT>"

@@ -35,7 +35,7 @@ msgstr "Dành thời gian với Taka"
 #. 他の場所へ行く
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Go see who else is around"
-msgstr "Đi xem ai khác quanh đây"
+msgstr "Đi xem còn ai khác quanh đây"
 
 #. <CLT 4>…どうしよう？
 #. 石丸クンと一緒に過ごそうか？
@@ -45,7 +45,7 @@ msgid ""
 "<CLT 4>Hmm... Should I hang out with Taka for a while?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hừm... Mình có nên đi chơi với Taka một lát không nhỉ?\n"
+"<CLT 4>Hmm... Mình có nên dành chút thời gian với Taka không nhỉ?\n"
 "<CLT>"
 
 #. ………………
@@ -84,7 +84,7 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không hẳn, chắc là không"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0013 | NARRATION"

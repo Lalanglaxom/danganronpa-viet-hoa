@@ -30,7 +30,7 @@ msgstr "Dành thời gian với Byakuya"
 #. 他の場所へ行く
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Go see who else is around"
-msgstr "Xem thử còn ai ở quanh đây không"
+msgstr "Đi xem còn ai khác quanh đây"
 
 #. <CLT 4>…どうしよう？
 #. 十神クンと一緒に過ごそうか？
@@ -49,14 +49,12 @@ msgctxt "0005 | BYAKUYA TOGAMI"
 msgid ""
 "Fine. I don't mind allowing you to indulge in my\n"
 "attention."
-msgstr ""
-"Được thôi. Tôi không phiền khi cho phép cậu tận hưởng sự chú ý\n"
-"của tôi đâu."
+msgstr "Được thôi. Tôi không ngại ban cho cậu một chút sự chú ý của mình."
 
 #. ありがたく思えよ…
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "I hope you appreciate this."
-msgstr "Cậu nên biết ơn vì điều đó đi..."
+msgstr "Tốt nhất là cậu nên biết ơn nó."
 
 #. <CLT 4>十神クンと一緒に過ごした…
 #. <CLT>
@@ -75,7 +73,7 @@ msgid ""
 "<CLT 4>Byakuya and I grew a little closer today.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như hôm nay mình và Byakuya đã thân thiết hơn một chút...\n"
+"<CLT 4>Có vẻ hôm nay mình và Byakuya đã thân thiết hơn một chút...\n"
 "<CLT>"
 
 #. 渡す
@@ -86,7 +84,7 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không, không hẳn"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0011 | NARRATION"

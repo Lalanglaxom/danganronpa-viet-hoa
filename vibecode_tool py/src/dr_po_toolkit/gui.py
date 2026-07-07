@@ -18,6 +18,7 @@ from PyQt6.QtWidgets import (
     QApplication,
     QCheckBox,
     QComboBox,
+    QDialog,
     QDoubleSpinBox,
     QFileDialog,
     QFormLayout,
@@ -34,6 +35,7 @@ from PyQt6.QtWidgets import (
     QMessageBox,
     QPlainTextEdit,
     QPushButton,
+    QScrollArea,
     QSizePolicy,
     QSpinBox,
     QSplitter,
@@ -41,6 +43,7 @@ from PyQt6.QtWidgets import (
     QTableWidget,
     QTableWidgetItem,
     QTextEdit,
+    QToolButton,
     QVBoxLayout,
     QStyledItemDelegate,
     QStyle,
@@ -48,10 +51,11 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from .backup import make_backups, restore_working_po_from_copies, sync_by_filename_report
+from .backup import make_backups, move_repack_to_script, restore_working_po_from_copies, sync_by_filename_report, sync_option_from_working_folder
 from .cancel import OperationCancelled
 from .config import load_config, save_config
 from .discovery import iter_po_files
+from .dr_options import DR_FILE_OPTIONS, DR_FILE_OPTION_KEYS, default_selected_options, option_name
 from .gemini_web import (
     DEFAULT_BATCH_RETRIES,
     DEFAULT_CHROME_USER_DATA_DIR,
@@ -60,16 +64,19 @@ from .gemini_web import (
     open_chrome_debug,
     run_gemini_web_path,
 )
-from .linewrap import wrap_msgstr, wrap_path
+from .linewrap import wrap_msgstr, wrap_po_file
 from .po_io import load_po, patch_msgstr_by_uid, save_po
-from .rules import apply_rules_to_path, load_rules, rule_to_dict
+from .rules import apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_path
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
+    ReferenceTranslationConflictEntry,
     TranslationSuggestionIndex,
     apply_translafix,
     build_translation_map,
     collect_source_po_files,
+    find_reference_duplicate_sources,
+    find_reference_translation_conflicts,
     msgid_match_key,
     suggestion_match_key,
 )
@@ -418,8 +425,11 @@ class ToolkitGUI(QMainWindow):
         self._active_signals: list[WorkerSignals] = []
         self._active_log: LogBox | None = None
         self.search_results: list[SearchResult] = []
+        self.search_source_paths: list[str] = []
         self.search_last_index: int = -1
         self.rule_list_data: list[dict] = []
+        self._dr_option_widgets: dict[str, dict[str, QCheckBox]] = {}
+        self._reference_duplicates_dialog: QDialog | None = None
         self.rule_loading_fields = False
         self.rule_auto_timer: QTimer | None = None
 
@@ -519,6 +529,16 @@ class ToolkitGUI(QMainWindow):
             QPushButton#dangerButton {{ background: {BAD}; color: #241018; }}
             QPushButton#secondaryButton {{ background: {PANEL_3}; color: {TEXT}; border: 1px solid #46506a; }}
             QPushButton#secondaryButton:hover {{ background: #46506a; color: {ACCENT_SOFT}; }}
+            QToolButton {{
+                background: {PANEL_3};
+                color: {TEXT};
+                border: 1px solid #46506a;
+                border-radius: 7px;
+                padding: 4px;
+                font-weight: 900;
+            }}
+            QToolButton:hover {{ background: #46506a; color: {ACCENT_SOFT}; }}
+            QToolButton:pressed {{ background: {ACCENT_DARK}; color: {WHITE}; }}
             QCheckBox {{ spacing: 5px; color: {TEXT}; }}
             QCheckBox::indicator {{ width: 13px; height: 13px; }}
             QCheckBox::indicator:checked {{ background: {ACCENT}; border: 1px solid {ACCENT_SOFT}; border-radius: 4px; }}
@@ -561,6 +581,9 @@ class ToolkitGUI(QMainWindow):
         title.setObjectName("title")
         top.addWidget(title)
         top.addStretch()
+        settings_btn = self._button("Settings", secondary=True)
+        settings_btn.clicked.connect(self._open_settings_dialog)
+        top.addWidget(settings_btn)
         self.stop_button = QPushButton("Stop Current Action")
         self.stop_button.setObjectName("dangerButton")
         self.stop_button.setEnabled(False)
@@ -595,6 +618,21 @@ class ToolkitGUI(QMainWindow):
         log.setMinimumHeight(210)
         return log
 
+    def _linewrap_settings(self) -> tuple[int, int, int]:
+        """Return the active Line Wrap tab settings.
+
+        The Line Wrap tab owns the spin boxes, but other views also offer
+        wrap actions. Reading the same widgets here keeps every wrap button
+        on the same soft/hard/max-cuts logic.
+        """
+        soft_spin = getattr(self, "linewrap_soft_spin", None)
+        hard_spin = getattr(self, "linewrap_hard_spin", None)
+        cuts_spin = getattr(self, "linewrap_cuts_spin", None)
+        soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 58))
+        hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
+        cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
+        return soft_value, hard_value, cuts_value
+
     def _button(self, text: str, *, secondary: bool = False, danger: bool = False) -> QPushButton:
         btn = QPushButton(text)
         if danger:
@@ -602,6 +640,292 @@ class ToolkitGUI(QMainWindow):
         elif secondary:
             btn.setObjectName("secondaryButton")
         return btn
+
+    def _tool_button(
+        self,
+        text: str,
+        tooltip: str,
+        icon: QStyle.StandardPixmap | None = None,
+        *,
+        width: int = 32,
+    ) -> QToolButton:
+        btn = QToolButton()
+        btn.setToolTip(tooltip)
+        btn.setText(text)
+        if icon is not None:
+            btn.setIcon(self.style().standardIcon(icon))
+            btn.setIconSize(QSize(16, 16))
+            btn.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonIconOnly)
+        else:
+            btn.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextOnly)
+        btn.setMinimumWidth(width)
+        btn.setFixedHeight(28)
+        return btn
+
+    def _dr_option_config_key(self, tab_key: str) -> str:
+        return f"{tab_key}_dr_options"
+
+    def _initial_dr_options(self, tab_key: str) -> list[str]:
+        stored = self.config.get(self._dr_option_config_key(tab_key))
+        if isinstance(stored, list):
+            return [str(item) for item in stored if str(item) in DR_FILE_OPTION_KEYS]
+        return default_selected_options()
+
+    def _save_dr_options(self, tab_key: str) -> None:
+        checks = self._dr_option_widgets.get(tab_key, {})
+        self.config[self._dr_option_config_key(tab_key)] = [key for key, checkbox in checks.items() if checkbox.isChecked()]
+        save_config(self.config)
+
+    def _selected_dr_options(self, tab_key: str) -> list[str]:
+        checks = self._dr_option_widgets.get(tab_key)
+        if checks is not None:
+            return [key for key, checkbox in checks.items() if checkbox.isChecked()]
+        return self._initial_dr_options(tab_key)
+
+    def _dr_option_selector(self, layout: QVBoxLayout, tab_key: str) -> dict[str, QCheckBox]:
+        box = QGroupBox("Danganronpa file groups")
+        outer = QVBoxLayout(box)
+        outer.setContentsMargins(8, 8, 8, 8)
+        outer.setSpacing(5)
+
+        top = QHBoxLayout()
+        hint = QLabel("Choose which chapters/file groups this tab should target.")
+        hint.setObjectName("muted")
+        top.addWidget(hint)
+        top.addStretch()
+        all_btn = self._button("All", secondary=True)
+        none_btn = self._button("None", secondary=True)
+        top.addWidget(all_btn)
+        top.addWidget(none_btn)
+        outer.addLayout(top)
+
+        grid = QGridLayout()
+        grid.setHorizontalSpacing(12)
+        grid.setVerticalSpacing(4)
+        selected = set(self._initial_dr_options(tab_key))
+        checks: dict[str, QCheckBox] = {}
+        for index, option in enumerate(DR_FILE_OPTIONS):
+            checkbox = QCheckBox(option.label)
+            checkbox.setChecked(option.key in selected)
+            checkbox.setToolTip(option.description or option.name)
+            row, col = divmod(index, 4)
+            grid.addWidget(checkbox, row, col)
+            checks[option.key] = checkbox
+        outer.addLayout(grid)
+        self._dr_option_widgets[tab_key] = checks
+
+        def set_all(value: bool) -> None:
+            for checkbox in checks.values():
+                checkbox.blockSignals(True)
+                checkbox.setChecked(value)
+                checkbox.blockSignals(False)
+            self._save_dr_options(tab_key)
+
+        for checkbox in checks.values():
+            checkbox.stateChanged.connect(lambda _state, key=tab_key: self._save_dr_options(key))
+        all_btn.clicked.connect(lambda: set_all(True))
+        none_btn.clicked.connect(lambda: set_all(False))
+        layout.addWidget(box)
+        return checks
+
+    def _include_extra_config_key(self, tab_key: str) -> str:
+        return f"{tab_key}_include_extra_path"
+
+    def _extra_path_row(
+        self,
+        layout: QVBoxLayout | QFormLayout,
+        tab_key: str,
+        label: str,
+        key: str,
+        *,
+        file: bool = False,
+        include_label: str = "Include extra path",
+    ) -> tuple[QLineEdit, QCheckBox]:
+        wrap = QWidget()
+        row = QHBoxLayout(wrap)
+        row.setContentsMargins(0, 0, 0, 0)
+        row.setSpacing(8)
+        include = QCheckBox(include_label)
+        include.setChecked(bool(self.config.get(self._include_extra_config_key(tab_key), False)))
+        include.setToolTip("When on, this manual path is processed together with selected Working folders.")
+        edit = QLineEdit(str(self.config.get(key, "")))
+        edit.setPlaceholderText("Optional extra file/folder...")
+        browse = self._button("Browse", secondary=True)
+
+        def save_path() -> None:
+            self.config[key] = edit.text().strip()
+            save_config(self.config)
+
+        def save_include() -> None:
+            self.config[self._include_extra_config_key(tab_key)] = include.isChecked()
+            save_config(self.config)
+
+        def browse_path() -> None:
+            if file:
+                path, _ = QFileDialog.getOpenFileName(self, label, edit.text() or str(Path.cwd()), "PO/JSON/Text (*.po *.json *.txt);;All files (*.*)")
+            else:
+                path = QFileDialog.getExistingDirectory(self, label, edit.text() or str(Path.cwd()))
+            if path:
+                edit.setText(path)
+                include.setChecked(True)
+                save_path()
+                save_include()
+
+        browse.clicked.connect(browse_path)
+        edit.editingFinished.connect(save_path)
+        include.stateChanged.connect(lambda _state: save_include())
+        row.addWidget(include)
+        row.addWidget(edit, 1)
+        row.addWidget(browse)
+        if isinstance(layout, QFormLayout):
+            layout.addRow(label, wrap)
+        else:
+            outer = QHBoxLayout()
+            lab = QLabel(label)
+            lab.setMinimumWidth(120)
+            lab.setStyleSheet("font-weight:700;")
+            outer.addWidget(lab)
+            outer.addWidget(wrap, 1)
+            layout.addLayout(outer)
+        return edit, include
+
+    @staticmethod
+    def _path_key(path: Path) -> str:
+        try:
+            return str(path.expanduser().resolve(strict=False))
+        except Exception:
+            return str(path.expanduser())
+
+    def _selected_working_paths(
+        self,
+        tab_key: str,
+        logwrite: Callable[[str, str], None] | None = None,
+    ) -> list[Path]:
+        selected = self._selected_dr_options(tab_key)
+        paths: list[Path] = []
+        seen: set[str] = set()
+        missing: list[str] = []
+        invalid: list[str] = []
+        for option_key in selected:
+            label = option_name(option_key)
+            raw = str(self.config.get(f"working_{option_key}_path", "")).strip()
+            if not raw:
+                missing.append(label)
+                continue
+            path = Path(raw).expanduser()
+            if not path.exists():
+                invalid.append(f"{label}: {path}")
+                continue
+            key = self._path_key(path)
+            if key in seen:
+                continue
+            seen.add(key)
+            paths.append(path)
+        if logwrite is not None:
+            if missing:
+                logwrite("Working folder not set for selected groups: " + ", ".join(missing), "warn")
+            if invalid:
+                preview = "; ".join(invalid[:8])
+                if len(invalid) > 8:
+                    preview += f"; ... {len(invalid) - 8} more"
+                logwrite("Working folder not found: " + preview, "warn")
+        return paths
+
+    def _processing_paths(
+        self,
+        tab_key: str,
+        *,
+        extra_edit: QLineEdit | None = None,
+        include_extra: QCheckBox | None = None,
+        logwrite: Callable[[str, str], None] | None = None,
+        require_any: bool = True,
+    ) -> list[Path]:
+        paths = self._selected_working_paths(tab_key, logwrite=logwrite)
+        seen = {self._path_key(path) for path in paths}
+        if include_extra is not None and include_extra.isChecked():
+            raw = extra_edit.text().strip() if extra_edit is not None else ""
+            if not raw:
+                if logwrite is not None:
+                    logwrite("Extra path is enabled but empty.", "warn")
+            else:
+                extra = Path(raw).expanduser()
+                if not extra.exists():
+                    if logwrite is not None:
+                        logwrite(f"Extra path not found: {extra}", "warn")
+                else:
+                    key = self._path_key(extra)
+                    if key not in seen:
+                        seen.add(key)
+                        paths.append(extra)
+        if require_any and not paths and logwrite is not None:
+            logwrite("No input paths. Select file groups with Working folders in Settings, or enable Extra path.", "warn")
+        return paths
+
+    def _iter_unique_po_paths(self, paths: list[Path], *, include_copy: bool = False) -> list[Path]:
+        found: list[Path] = []
+        seen: set[str] = set()
+        for base in paths:
+            for po_path in iter_po_files(base, include_copy=include_copy):
+                key = self._path_key(po_path)
+                if key in seen:
+                    continue
+                seen.add(key)
+                found.append(po_path)
+        return found
+
+    def _open_settings_dialog(self) -> None:
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Settings")
+        dialog.resize(820, 520)
+        root = QVBoxLayout(dialog)
+        root.setContentsMargins(10, 10, 10, 10)
+        root.setSpacing(8)
+
+        note = QLabel(
+            "Set one Working folder and one Sync folder for each Danganronpa file group. "
+            "Tabs process the selected checkbox groups from their Working folders. "
+            "Optional Extra paths on each tab are added only when their Extra toggle is on. "
+            "Backup/Sync copies Working → Sync; Sync folders are destinations only."
+        )
+        note.setObjectName("muted")
+        note.setWordWrap(True)
+        root.addWidget(note)
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        content = QWidget()
+        content_layout = QVBoxLayout(content)
+        content_layout.setSpacing(10)
+        content_layout.setContentsMargins(6, 6, 6, 6)
+
+        option_box = QGroupBox("Danganronpa working + sync folders")
+        option_form = QFormLayout(option_box)
+        option_form.setSpacing(8)
+        option_form.setContentsMargins(8, 8, 8, 8)
+        for option in DR_FILE_OPTIONS:
+            self._path_row(option_form, f"Working {option.name}", f"working_{option.key}_path")
+            self._path_row(option_form, f"Sync {option.name}", f"sync_{option.key}_path")
+        content_layout.addWidget(option_box)
+
+        general_box = QGroupBox("Other folders")
+        general_form = QFormLayout(general_box)
+        general_form.setSpacing(8)
+        general_form.setContentsMargins(8, 8, 8, 8)
+        self._path_row(general_form, "Repack", "repack_path")
+        self._path_row(general_form, "Script", "script_path")
+        self._path_row(general_form, "Game Folder", "game_folder_path")
+        content_layout.addWidget(general_box)
+        content_layout.addStretch()
+
+        scroll.setWidget(content)
+        root.addWidget(scroll, 1)
+        buttons = QHBoxLayout()
+        buttons.addStretch()
+        close_btn = self._button("Close")
+        close_btn.clicked.connect(dialog.accept)
+        buttons.addWidget(close_btn)
+        root.addLayout(buttons)
+        dialog.exec()
 
     def _path_row(self, layout: QVBoxLayout | QFormLayout, label: str, key: str, *, file: bool = False) -> QLineEdit:
         wrap = QWidget()
@@ -709,10 +1033,53 @@ class ToolkitGUI(QMainWindow):
             except Exception:
                 return False
 
+    @staticmethod
+    def _undo_text_editor(widget: QWidget | None) -> bool:
+        if widget is None:
+            return False
+        try:
+            if isinstance(widget, QLineEdit) and widget.isUndoAvailable():
+                widget.undo()
+                return True
+            if isinstance(widget, (QPlainTextEdit, QTextEdit)) and widget.document().isUndoAvailable():
+                widget.undo()
+                return True
+        except RuntimeError:
+            return False
+        except Exception:
+            return False
+        return False
+
+    @staticmethod
+    def _undo_focused_text_editor() -> bool:
+        """Run the native undo stack for the focused text widget, if one exists."""
+        widget = QApplication.focusWidget()
+        seen: set[int] = set()
+        while widget is not None and id(widget) not in seen:
+            seen.add(id(widget))
+            if ToolkitGUI._undo_text_editor(widget):
+                return True
+            widget = widget.parentWidget()
+        return False
+
+    @staticmethod
+    def _clear_text_editor_undo(widget: QPlainTextEdit | QTextEdit | QLineEdit) -> None:
+        try:
+            if isinstance(widget, QLineEdit):
+                widget.setText(widget.text())
+                return
+            document = widget.document()
+            clear = getattr(document, "clearUndoRedoStacks", None)
+            if callable(clear):
+                clear()
+        except Exception:
+            pass
+
     # ---------------- Validate ----------------
     def _build_validate_tab(self) -> None:
         _tab, layout = self._new_tab("Validate")
-        path_edit = self._path_row(layout, "Folder/File", "last_path")
+        self._dr_option_selector(layout, "validate")
+        path_edit, include_extra = self._extra_path_row(layout, "validate", "Extra Folder/File", "last_path")
         options = QHBoxLayout()
         save_reports = QCheckBox("Save reports")
         save_reports.setChecked(True)
@@ -726,15 +1093,26 @@ class ToolkitGUI(QMainWindow):
 
         def run(logwrite):
             self._check_stop()
-            path = path_edit.text().strip()
-            if not path:
-                logwrite("Set path first.", "warn")
+            paths = self._processing_paths("validate", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
                 return
-            results = validate_path(path)
-            logwrite(format_text_report(results, path))
+            results = {}
+            seen_files: set[str] = set()
+            for input_path in paths:
+                self._check_stop()
+                logwrite(f"Validate input: {input_path}")
+                for file_path, issues in validate_path(input_path).items():
+                    key = self._path_key(file_path)
+                    if key in seen_files:
+                        continue
+                    seen_files.add(key)
+                    results[file_path] = issues
+            root_for_report = paths[0] if len(paths) == 1 else None
+            logwrite(format_text_report(results, root_for_report))
             if save_reports.isChecked():
-                out_dir = Path(path) if Path(path).is_dir() else Path(path).parent
-                txt, html_path = write_reports(results, out_dir, path)
+                out_base = paths[0]
+                out_dir = out_base if out_base.is_dir() else out_base.parent
+                txt, html_path = write_reports(results, out_dir, root_for_report)
                 logwrite(f"Saved report: {txt}", "good")
                 logwrite(f"Saved report: {html_path}", "good")
                 if self._open_external(html_path):
@@ -747,7 +1125,8 @@ class ToolkitGUI(QMainWindow):
     # ---------------- Mass Replace ----------------
     def _build_replace_tab(self) -> None:
         _tab, layout = self._new_tab("Mass Replace")
-        path_edit = self._path_row(layout, "Folder/File", "last_path")
+        self._dr_option_selector(layout, "replace")
+        path_edit, include_extra = self._extra_path_row(layout, "replace", "Extra Folder/File", "last_path")
         rules_edit = self._path_row(layout, "Rules JSON", "rules_file", file=True)
         row = QHBoxLayout()
         dry_run = QCheckBox("Dry run")
@@ -762,8 +1141,16 @@ class ToolkitGUI(QMainWindow):
 
         def run(logwrite):
             self._check_stop()
+            paths = self._processing_paths("replace", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
             rules = load_rules(rules_edit.text().strip())
-            changes = apply_rules_to_path(path_edit.text().strip(), rules, dry_run=dry_run.isChecked())
+            po_files = self._iter_unique_po_paths(paths)
+            changes = []
+            for po_path in po_files:
+                self._check_stop()
+                changes.extend(apply_rules_to_file(po_path, rules, dry_run=dry_run.isChecked()))
+            logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
             logwrite(f"Rules loaded: {len(rules)}")
             logwrite(f"Changes: {len(changes)}", "good" if changes else "")
             for ch in changes[:300]:
@@ -1002,7 +1389,8 @@ class ToolkitGUI(QMainWindow):
     # ---------------- Line Wrap ----------------
     def _build_linewrap_tab(self) -> None:
         _tab, layout = self._new_tab("Line Wrap")
-        path_edit = self._path_row(layout, "Folder/File", "last_path")
+        self._dr_option_selector(layout, "linewrap")
+        path_edit, include_extra = self._extra_path_row(layout, "linewrap", "Extra Folder/File", "last_path")
 
         controls = QHBoxLayout()
         dry = QCheckBox("Dry run")
@@ -1053,7 +1441,15 @@ class ToolkitGUI(QMainWindow):
 
         def run(logwrite):
             self._check_stop()
-            results = wrap_path(path_edit.text().strip(), soft=soft.value(), hard=hard.value(), max_cuts=cuts.value(), dry_run=dry.isChecked())
+            paths = self._processing_paths("linewrap", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
+            po_files = self._iter_unique_po_paths(paths)
+            results: dict[Path, int] = {}
+            for po_path in po_files:
+                self._check_stop()
+                results[po_path] = wrap_po_file(po_path, soft=soft.value(), hard=hard.value(), max_cuts=cuts.value(), dry_run=dry.isChecked())
+            logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
             for path, n in results.items():
                 self._check_stop()
                 if n:
@@ -1069,11 +1465,12 @@ class ToolkitGUI(QMainWindow):
     # ---------------- Search ----------------
     def _build_search_tab(self) -> None:
         _tab, layout = self._new_tab("Search")
-        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal.")
+        self._dr_option_selector(layout, "search")
+        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Ctrl+Z undoes editor text or the last saved Search edit.")
         theme_note.setObjectName("muted")
         theme_note.setWordWrap(True)
         layout.addWidget(theme_note)
-        path_edit = self._path_row(layout, "Folder/File", "last_path")
+        path_edit, include_extra = self._extra_path_row(layout, "search", "Extra Folder/File", "last_path")
 
         search_row = QHBoxLayout()
         search_row.addWidget(QLabel("Phrase"))
@@ -1183,6 +1580,12 @@ class ToolkitGUI(QMainWindow):
         splitter.addWidget(right)
         splitter.setSizes([740, 430])
 
+        search_undo_stack: list[list[dict[str, object]]] = []
+
+        def trim_search_undo_stack() -> None:
+            if len(search_undo_stack) > 100:
+                del search_undo_stack[:-100]
+
         def compact(text: str, limit: int = 1000) -> str:
             text = text.replace("\\n", "\n")
             return text if len(text) <= limit else text[: limit - 1] + "…"
@@ -1207,13 +1610,7 @@ class ToolkitGUI(QMainWindow):
             return "".join(pieces)
 
         def wrap_settings() -> tuple[int, int, int]:
-            soft_spin = getattr(self, "linewrap_soft_spin", None)
-            hard_spin = getattr(self, "linewrap_hard_spin", None)
-            cuts_spin = getattr(self, "linewrap_cuts_spin", None)
-            soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 58))
-            hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
-            cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
-            return soft_value, hard_value, cuts_value
+            return self._linewrap_settings()
 
         def fill_table() -> None:
             table.setUpdatesEnabled(False)
@@ -1303,18 +1700,31 @@ class ToolkitGUI(QMainWindow):
             selected_info.setToolTip(str(result.file))
             msgid_box.setPlainText(result.msgid)
             msgstr_box.setPlainText(result.msgstr)
+            self._clear_text_editor_undo(msgstr_box)
 
-        def save_updates(updates: dict[int, str]) -> int:
+        def save_updates(updates: dict[int, str], *, record_undo: bool = True) -> int:
             if not updates:
                 return 0
             grouped: dict[Path, dict[str, str]] = defaultdict(dict)
             changed_indices: list[int] = []
+            undo_action: list[dict[str, object]] = []
             for idx, new_text in updates.items():
                 if idx < 0 or idx >= len(self.search_results):
                     continue
                 result = self.search_results[idx]
-                if result.msgstr == new_text:
+                old_text = result.msgstr
+                if old_text == new_text:
                     continue
+                if record_undo:
+                    undo_action.append(
+                        {
+                            "index": idx,
+                            "file": result.file,
+                            "uid": result.uid,
+                            "old": old_text,
+                            "new": new_text,
+                        }
+                    )
                 grouped[result.file][result.uid] = new_text
                 result.msgstr = new_text
                 changed_indices.append(idx)
@@ -1325,6 +1735,9 @@ class ToolkitGUI(QMainWindow):
                 if n:
                     save_po(po, path)
                     changed_files += 1
+            if record_undo and undo_action and changed_files:
+                search_undo_stack.append(undo_action)
+                trim_search_undo_stack()
             for idx in changed_indices:
                 for row in range(table.rowCount()):
                     if row_result_index(row) == idx:
@@ -1381,21 +1794,36 @@ class ToolkitGUI(QMainWindow):
             )
 
         def run_search() -> None:
-            path = path_edit.text().strip()
             text = phrase.text()
-            if not path or not text:
-                status.setText("Set path and phrase first.")
+            if not text:
+                status.setText("Set phrase first.")
                 return
-            self.search_results = search_path(
-                path,
-                text,
-                search_msgid=search_msgid.isChecked(),
-                search_msgstr=search_msgstr.isChecked(),
-                case_sensitive=search_case.isChecked(),
-                whole_word=search_whole.isChecked(),
-            )
+            paths = self._processing_paths("search", extra_edit=path_edit, include_extra=include_extra, require_any=False)
+            if not paths:
+                status.setText("No input paths. Select file groups with Working folders in Settings, or enable Extra path.")
+                return
+            results: list[SearchResult] = []
+            seen: set[tuple[str, str]] = set()
+            for path in paths:
+                for result in search_path(
+                    path,
+                    text,
+                    search_msgid=search_msgid.isChecked(),
+                    search_msgstr=search_msgstr.isChecked(),
+                    case_sensitive=search_case.isChecked(),
+                    whole_word=search_whole.isChecked(),
+                ):
+                    key = (self._path_key(result.file), result.uid)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    results.append(result)
+            self.search_results = results
+            self.search_source_paths = [str(path) for path in paths]
             self.search_last_index = -1
+            search_undo_stack.clear()
             fill_table()
+            status.setText(f"Found {len(self.search_results)} result(s) from {len(paths)} input path(s).")
             if self.search_results:
                 table.selectRow(0)
                 load_selected()
@@ -1410,8 +1838,10 @@ class ToolkitGUI(QMainWindow):
             result = self.search_results[idx]
             opener = getattr(self, "_open_file_in_po_viewer", None)
             if callable(opener):
-                source_root = path_edit.text().strip()
-                if opener(result.file, uid=result.uid, source_paths=[source_root] if source_root else None):
+                source_roots = getattr(self, "search_source_paths", None)
+                if not isinstance(source_roots, list):
+                    source_roots = [str(path) for path in self._processing_paths("search", extra_edit=path_edit, include_extra=include_extra, require_any=False)]
+                if opener(result.file, uid=result.uid, source_paths=source_roots):
                     status.setText(f"Opened {result.file.name} in PO Viewer.")
                     return
             if not self._open_external(result.file):
@@ -1489,6 +1919,36 @@ class ToolkitGUI(QMainWindow):
                 return
             replace_indices([idx])
 
+        def undo_last_search_change() -> None:
+            if self._undo_focused_text_editor():
+                return
+            focus = QApplication.focusWidget()
+            if (focus is table or (focus is not None and table.isAncestorOf(focus))) and self._undo_text_editor(msgstr_box):
+                return
+            if not search_undo_stack:
+                status.setText("Nothing to undo.")
+                return
+            action = search_undo_stack.pop()
+            updates: dict[int, str] = {}
+            restored_indices: list[int] = []
+            for change in action:
+                idx = int(change.get("index", -1))
+                if idx < 0 or idx >= len(self.search_results):
+                    continue
+                result = self.search_results[idx]
+                expected_file = change.get("file")
+                expected_uid = str(change.get("uid", ""))
+                if expected_uid and result.uid != expected_uid:
+                    continue
+                if isinstance(expected_file, Path) and self._path_key(result.file) != self._path_key(expected_file):
+                    continue
+                updates[idx] = str(change.get("old", ""))
+                restored_indices.append(idx)
+            changed = save_updates(updates, record_undo=False)
+            if restored_indices:
+                select_result(restored_indices[0])
+            status.setText(f"Undid {changed} saved Search change{'s' if changed != 1 else ''}.")
+
         table.itemSelectionChanged.connect(load_selected)
         table.itemDoubleClicked.connect(lambda _item: open_selected_file())
         search_btn.clicked.connect(run_search)
@@ -1503,125 +1963,154 @@ class ToolkitGUI(QMainWindow):
         selected_btn.clicked.connect(lambda: replace_indices(selected_result_indices()))
         all_btn.clicked.connect(lambda: replace_indices(list(range(len(self.search_results)))))
 
+        undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), _tab)
+        undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        undo_shortcut.activated.connect(undo_last_search_change)
+        self._search_shortcuts = [undo_shortcut]
+
 
     # ---------------- Translafixer ----------------
     def _build_translafixer_tab(self) -> None:
         _tab, layout = self._new_tab("Translafixer")
+        self._dr_option_selector(layout, "translafixer")
         note = QLabel(
-            "Drag or add known-good source .po files, then pick the target folder to fix. "
-            "Target .po files are rewritten when original text / msgid matches. "
-            "Copy.po target files are skipped. Selected source files are never rewritten, "
-            "even if they are inside the target folder. Conflicting source translations are skipped."
+            "Translafixer Source is used only for fixing/filling translations. "
+            "Duplicate views scan only selected checkbox Working folders. "
+            "PO Viewer suggestions scan all configured Working folders from Settings. "
+            "Target .po files are rewritten when original text / msgid matches. Copy.po target files are skipped. "
+            "Selected source files are never rewritten, even if they are inside the target folder."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
         layout.addWidget(note)
 
-        source_box = QGroupBox("Correct source translation files")
-        source_layout = QVBoxLayout(source_box)
-        source_hint = QLabel("Drag .po files or folders here. Dropped folders are expanded recursively into source .po files.")
-        source_hint.setObjectName("muted")
-        source_hint.setWordWrap(True)
-        source_layout.addWidget(source_hint)
+        def build_path_picker(
+            title: str,
+            hint_text: str,
+            config_key: str,
+            attr_name: str,
+            tooltip: str,
+        ) -> tuple[QGroupBox, PathDropList, Callable[[], list[str]], Callable[[], None]]:
+            box = QGroupBox(title)
+            box_layout = QVBoxLayout(box)
+            hint = QLabel(hint_text)
+            hint.setObjectName("muted")
+            hint.setWordWrap(True)
+            box_layout.addWidget(hint)
 
-        source_list = PathDropList()
-        self.translafixer_source_list_widget = source_list
-        source_list.setMinimumHeight(145)
-        source_list.setToolTip("Drop known-good .po files or folders here.")
-        source_layout.addWidget(source_list)
+            list_widget = PathDropList()
+            setattr(self, attr_name, list_widget)
+            list_widget.setMinimumHeight(145)
+            list_widget.setToolTip(tooltip)
+            box_layout.addWidget(list_widget)
 
-        source_buttons = QHBoxLayout()
-        add_files_btn = self._button("Add .po files", secondary=True)
-        add_folder_btn = self._button("Add folder", secondary=True)
-        remove_files_btn = self._button("Remove selected", secondary=True)
-        clear_files_btn = self._button("Clear", secondary=True)
-        source_status = QLabel("0 source files")
-        source_status.setObjectName("muted")
-        source_buttons.addWidget(add_files_btn)
-        source_buttons.addWidget(add_folder_btn)
-        source_buttons.addWidget(remove_files_btn)
-        source_buttons.addWidget(clear_files_btn)
-        source_buttons.addStretch()
-        source_buttons.addWidget(source_status)
-        source_layout.addLayout(source_buttons)
+            buttons = QHBoxLayout()
+            add_files_btn = self._button("Add .po", secondary=True)
+            add_folder_btn = self._button("Add folder", secondary=True)
+            remove_files_btn = self._button("Remove", secondary=True)
+            clear_files_btn = self._button("Clear", secondary=True)
+            status_label = QLabel("0 files")
+            status_label.setObjectName("muted")
+            buttons.addWidget(add_files_btn)
+            buttons.addWidget(add_folder_btn)
+            buttons.addWidget(remove_files_btn)
+            buttons.addWidget(clear_files_btn)
+            buttons.addStretch()
+            buttons.addWidget(status_label)
+            box_layout.addLayout(buttons)
+
+            def paths() -> list[str]:
+                return [list_widget.item(i).text() for i in range(list_widget.count())]
+
+            def refresh_status() -> None:
+                count = list_widget.count()
+                status_label.setText(f"{count} file{'s' if count != 1 else ''}")
+
+            def save_paths() -> None:
+                self.config[config_key] = paths()
+                save_config(self.config)
+                refresh_status()
+
+            def add_paths(raw_paths: list[str]) -> None:
+                existing = {
+                    str(Path(list_widget.item(i).text()).expanduser().resolve(strict=False))
+                    for i in range(list_widget.count())
+                }
+                added = 0
+                for candidate in collect_source_po_files(raw_paths):
+                    resolved = str(Path(candidate).expanduser().resolve(strict=False))
+                    if resolved in existing:
+                        continue
+                    existing.add(resolved)
+                    list_widget.addItem(QListWidgetItem(str(candidate)))
+                    added += 1
+                if added:
+                    save_paths()
+                else:
+                    refresh_status()
+
+            stored = self.config.get(config_key, [])
+            if isinstance(stored, list):
+                add_paths([str(item) for item in stored])
+
+            def browse_files() -> None:
+                start_dir = str(Path.cwd())
+                if list_widget.count():
+                    start_dir = str(Path(list_widget.item(list_widget.count() - 1).text()).expanduser().parent)
+                paths_selected, _ = QFileDialog.getOpenFileNames(self, title, start_dir, "PO files (*.po);;All files (*.*)")
+                if paths_selected:
+                    add_paths(paths_selected)
+
+            def browse_folder() -> None:
+                start_dir = str(Path.cwd())
+                if list_widget.count():
+                    start_dir = str(Path(list_widget.item(list_widget.count() - 1).text()).expanduser().parent)
+                folder = QFileDialog.getExistingDirectory(self, title, start_dir)
+                if folder:
+                    add_paths([folder])
+
+            def remove_selected() -> None:
+                for item in list_widget.selectedItems():
+                    row = list_widget.row(item)
+                    list_widget.takeItem(row)
+                save_paths()
+
+            def clear_all() -> None:
+                list_widget.clear()
+                save_paths()
+
+            list_widget.pathsDropped.connect(add_paths)
+            add_files_btn.clicked.connect(browse_files)
+            add_folder_btn.clicked.connect(browse_folder)
+            remove_files_btn.clicked.connect(remove_selected)
+            clear_files_btn.clicked.connect(clear_all)
+            refresh_status()
+            return box, list_widget, paths, save_paths
+
+        source_box, _source_list, source_files, save_source_files = build_path_picker(
+            "Translafixer Source — used to translafix/fill",
+            "Known-good source .po files. Run Translafixer and PO Viewer TF fill read from here.",
+            "translafixer_source_files",
+            "translafixer_source_list_widget",
+            "Drop known-good .po files or folders used for Translafixer fixing.",
+        )
         layout.addWidget(source_box)
 
-        target_edit = self._path_row(layout, "Target folder", "translafixer_target_folder")
-
-        def source_files() -> list[str]:
-            return [source_list.item(i).text() for i in range(source_list.count())]
-
-        def refresh_source_status() -> None:
-            count = source_list.count()
-            source_status.setText(f"{count} source file{'s' if count != 1 else ''}")
-
-        def save_sources() -> None:
-            self.config["translafixer_source_files"] = source_files()
-            self.config["translafixer_target_folder"] = target_edit.text().strip()
-            save_config(self.config)
-            refresh_source_status()
-
-        def add_source_paths(paths: list[str]) -> None:
-            existing = {str(Path(source_list.item(i).text()).expanduser().resolve(strict=False)) for i in range(source_list.count())}
-            added = 0
-            for candidate in collect_source_po_files(paths):
-                resolved = str(Path(candidate).expanduser().resolve(strict=False))
-                if resolved in existing:
-                    continue
-                existing.add(resolved)
-                source_list.addItem(QListWidgetItem(str(candidate)))
-                added += 1
-
-            if added:
-                save_sources()
-            else:
-                refresh_source_status()
-
-        stored_sources = self.config.get("translafixer_source_files", [])
-        if isinstance(stored_sources, list):
-            add_source_paths([str(item) for item in stored_sources])
-
-        def browse_source_files() -> None:
-            start_dir = str(Path.cwd())
-            if source_list.count():
-                start_dir = str(Path(source_list.item(source_list.count() - 1).text()).expanduser().parent)
-            elif target_edit.text().strip():
-                start_dir = target_edit.text().strip()
-            paths, _ = QFileDialog.getOpenFileNames(self, "Add correct source .po files", start_dir, "PO files (*.po);;All files (*.*)")
-            if paths:
-                add_source_paths(paths)
-
-        def browse_source_folder() -> None:
-            start_dir = target_edit.text().strip() or str(Path.cwd())
-            folder = QFileDialog.getExistingDirectory(self, "Add folder containing correct source .po files", start_dir)
-            if folder:
-                add_source_paths([folder])
-
-        def remove_selected_sources() -> None:
-            for item in source_list.selectedItems():
-                row = source_list.row(item)
-                source_list.takeItem(row)
-            save_sources()
-
-        def clear_sources() -> None:
-            source_list.clear()
-            save_sources()
-
-        source_list.pathsDropped.connect(add_source_paths)
-        add_files_btn.clicked.connect(browse_source_files)
-        add_folder_btn.clicked.connect(browse_source_folder)
-        remove_files_btn.clicked.connect(remove_selected_sources)
-        clear_files_btn.clicked.connect(clear_sources)
+        target_edit, include_extra = self._extra_path_row(layout, "translafixer", "Extra target folder", "translafixer_target_folder")
 
         options = QHBoxLayout()
         dry_run = QCheckBox("Dry run")
         dry_run.setChecked(True)
         backup = QCheckBox("Create .translafixer.bak before write")
         backup.setChecked(True)
-        include_empty = QCheckBox("Allow empty source msgstr")
-        include_empty.setChecked(False)
-        for widget in [dry_run, backup, include_empty]:
+        for widget in [dry_run, backup]:
             options.addWidget(widget)
+        dup_btn = self._button("Diff Dupes", secondary=True)
+        dup_btn.setToolTip("Open duplicate source groups with different Vietnamese translations from selected checkbox Working folders.")
+        all_dup_btn = self._button("All Dupes", secondary=True)
+        all_dup_btn.setToolTip("Open all duplicate source groups from selected checkbox Working folders, including same translations.")
+        options.addWidget(dup_btn)
+        options.addWidget(all_dup_btn)
         options.addStretch()
         run_btn = self._button("Run Translafixer")
         options.addWidget(run_btn)
@@ -1636,81 +2125,1410 @@ class ToolkitGUI(QMainWindow):
             save_config(self.config)
 
         target_edit.editingFinished.connect(save_paths)
+        dup_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(show_all_duplicates=False, tab_key="translafixer"))
+        all_dup_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(show_all_duplicates=True, tab_key="translafixer"))
 
         def run(logwrite):
+            save_source_files()
             save_paths()
             sources = source_files()
-            target = target_edit.text().strip()
-            if not sources or not target:
-                logwrite("Add source .po files/folders and pick target folder first.", "warn")
+            targets = self._processing_paths("translafixer", extra_edit=target_edit, include_extra=include_extra, logwrite=logwrite)
+            if not sources or not targets:
+                logwrite("Add Translafixer Source files and select target Working folders or enable Extra target.", "warn")
                 return
-            self._check_stop()
-            result = apply_translafix(
-                sources,
-                target,
-                dry_run=dry_run.isChecked(),
-                create_backup=backup.isChecked(),
-                include_empty=include_empty.isChecked(),
-                log=lambda msg: logwrite(msg),
-                stop_requested=self._stop_event.is_set,
-            )
-            logwrite(f"Source files scanned: {result.source_files}")
-            logwrite(f"Source entries: {result.source_entries}")
-            logwrite(f"Usable msgid translations: {result.usable_translations}", "good" if result.usable_translations else "warn")
-            if result.skipped_source_targets:
-                logwrite(f"Skipped selected source files inside target folder: {result.skipped_source_targets}", "warn")
-            if result.empty_source_entries and not include_empty.isChecked():
-                logwrite(f"Skipped empty source translations: {result.empty_source_entries}", "warn")
-            if result.duplicate_same:
-                logwrite(f"Duplicate same source translations: {result.duplicate_same}")
-            if result.conflicts:
-                logwrite(f"Ambiguous source msgid skipped: {result.ambiguous_msgids}", "warn")
-                for conflict in result.conflicts[:25]:
-                    preview = conflict.msgid.replace("\n", " ")
-                    if len(preview) > 120:
-                        preview = preview[:119] + "…"
-                    logwrite(f"  conflict: {preview} | {conflict.file.name}:{conflict.line}", "warn")
-                if len(result.conflicts) > 25:
-                    logwrite(f"  ... {len(result.conflicts) - 25} more conflicts", "warn")
-            for item in result.files:
+            total_target_files = 0
+            total_matched = 0
+            total_changed = 0
+            total_errors = 0
+            for target in targets:
                 self._check_stop()
-                if item.error:
-                    logwrite(f"ERR {item.file}: {item.error}", "bad")
-                    continue
-                if not item.matched:
-                    continue
-                tag = "good" if item.changed else ""
-                action = "would change" if dry_run.isChecked() else "changed"
-                logwrite(f"{item.file} | matched={item.matched} | {action}={item.changed} | unchanged={item.unchanged}", tag)
-                if item.backup_path:
-                    logwrite(f"  backup: {item.backup_path}", "good")
-            logwrite(f"Target files scanned: {result.target_files}")
-            logwrite(f"Matched entries: {result.total_matched}")
-            logwrite(f"Changed entries: {result.total_changed}", "good" if result.total_changed else "warn")
-            if result.total_errors:
-                logwrite(f"Errors: {result.total_errors}", "bad")
+                logwrite(f"Translafixer target: {target}")
+                result = apply_translafix(
+                    sources,
+                    target,
+                    dry_run=dry_run.isChecked(),
+                    create_backup=backup.isChecked(),
+                    log=lambda msg: logwrite(msg),
+                    stop_requested=self._stop_event.is_set,
+                )
+                logwrite(f"Source files scanned: {result.source_files}")
+                logwrite(f"Source entries: {result.source_entries}")
+                logwrite(f"Usable msgid translations: {result.usable_translations}", "good" if result.usable_translations else "warn")
+                if result.skipped_source_targets:
+                    logwrite(f"Skipped selected source files inside target folder: {result.skipped_source_targets}", "warn")
+                if result.empty_source_entries:
+                    logwrite(f"Skipped empty source translations: {result.empty_source_entries}", "warn")
+                if result.duplicate_same:
+                    logwrite(f"Duplicate same source translations: {result.duplicate_same}")
+                if result.conflicts:
+                    logwrite(f"Ambiguous source msgid skipped: {result.ambiguous_msgids}", "warn")
+                    for conflict in result.conflicts[:25]:
+                        preview = conflict.msgid.replace("\n", " ")
+                        if len(preview) > 120:
+                            preview = preview[:119] + "…"
+                        logwrite(f"  conflict: {preview} | {conflict.file.name}:{conflict.line}", "warn")
+                    if len(result.conflicts) > 25:
+                        logwrite(f"  ... {len(result.conflicts) - 25} more conflicts", "warn")
+                for item in result.files:
+                    self._check_stop()
+                    if item.error:
+                        logwrite(f"ERR {item.file}: {item.error}", "bad")
+                        continue
+                    if not item.matched:
+                        continue
+                    tag = "good" if item.changed else ""
+                    action = "would change" if dry_run.isChecked() else "changed"
+                    logwrite(f"{item.file} | matched={item.matched} | {action}={item.changed} | unchanged={item.unchanged}", tag)
+                    if item.backup_path:
+                        logwrite(f"  backup: {item.backup_path}", "good")
+                total_target_files += result.target_files
+                total_matched += result.total_matched
+                total_changed += result.total_changed
+                total_errors += result.total_errors
+            logwrite(f"Target files scanned: {total_target_files}")
+            logwrite(f"Matched entries: {total_matched}")
+            logwrite(f"Changed entries: {total_changed}", "good" if total_changed else "warn")
+            if total_errors:
+                logwrite(f"Errors: {total_errors}", "bad")
             if dry_run.isChecked():
                 logwrite("Dry run only. Uncheck Dry run to write files.", "warn")
 
         run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run))
 
     # ---------------- PO Viewer ----------------
-    def _translafixer_source_paths(self) -> list[str]:
-        widget = getattr(self, "translafixer_source_list_widget", None)
+    def _list_widget_or_config_paths(self, attr_name: str, config_key: str) -> list[str]:
+        widget = getattr(self, attr_name, None)
         if widget is not None:
             return [widget.item(i).text() for i in range(widget.count())]
-        stored = self.config.get("translafixer_source_files", [])
+        stored = self.config.get(config_key, [])
         if isinstance(stored, list):
             return [str(item) for item in stored]
         return []
 
+    def _translafixer_source_paths(self) -> list[str]:
+        return self._list_widget_or_config_paths("translafixer_source_list_widget", "translafixer_source_files")
+
+    def _all_configured_working_paths(
+        self,
+        logwrite: Callable[[str, str], None] | None = None,
+    ) -> list[Path]:
+        """Return every existing Working folder configured in Settings.
+
+        This powers PO Viewer suggestions, which should use all available local
+        translation files from configured game folders.
+        """
+        paths: list[Path] = []
+        seen: set[str] = set()
+        invalid: list[str] = []
+        for option in DR_FILE_OPTIONS:
+            raw = str(self.config.get(f"working_{option.key}_path", "")).strip()
+            if not raw:
+                continue
+            path = Path(raw).expanduser()
+            if not path.exists():
+                invalid.append(f"{option.name}: {path}")
+                continue
+            key = self._path_key(path)
+            if key in seen:
+                continue
+            seen.add(key)
+            paths.append(path)
+        if logwrite is not None and invalid:
+            preview = "; ".join(invalid[:8])
+            if len(invalid) > 8:
+                preview += f"; ... {len(invalid) - 8} more"
+            logwrite("Working folder not found: " + preview, "warn")
+        return paths
+
+    def _duplicate_scan_paths(self, tab_key: str = "translafixer") -> list[Path]:
+        """Duplicate views scan only the selected checkbox Working folders."""
+        return self._selected_working_paths(tab_key)
+
+    def _open_reference_duplicates_dialog(self, *, show_all_duplicates: bool = False, tab_key: str = "translafixer") -> None:
+        dialog_mode = "all" if show_all_duplicates else "diff"
+        view_title = "All Duplicate Sources" if show_all_duplicates else "Different Duplicate Translations"
+        existing_dialog = getattr(self, "_reference_duplicates_dialog", None)
+        if existing_dialog is not None and existing_dialog.isVisible():
+            if (
+                getattr(existing_dialog, "_reference_duplicate_mode", None) == dialog_mode
+                and getattr(existing_dialog, "_reference_duplicate_scope", None) == tab_key
+            ):
+                existing_dialog.raise_()
+                existing_dialog.activateWindow()
+                return
+            existing_dialog.close()
+
+        references = self._duplicate_scan_paths(tab_key)
+        if not references:
+            QMessageBox.warning(self, view_title, "Select checkbox Working folders in this tab first.")
+            return
+
+        scan_duplicates = find_reference_duplicate_sources if show_all_duplicates else find_reference_translation_conflicts
+        try:
+            conflict_entries, result = scan_duplicates(references)
+        except Exception as exc:
+            QMessageBox.critical(self, view_title, f"Could not scan selected Working folders:\n{exc}")
+            return
+
+        if not conflict_entries:
+            no_duplicate_text = (
+                "No repeated source entries found."
+                if show_all_duplicates
+                else "No duplicate entries with different translations found."
+            )
+            QMessageBox.information(
+                self,
+                view_title,
+                f"{no_duplicate_text}\nWorking .po files scanned: {result.source_files}",
+            )
+            return
+
+        all_conflict_entries = list(conflict_entries)
+        hidden_config = self.config.get("translafixer_hidden_duplicate_keys", [])
+        hidden_keys: set[str] = {str(key) for key in hidden_config if str(key)} if isinstance(hidden_config, list) else set()
+        entries_by_key: dict[str, list[ReferenceTranslationConflictEntry]] = defaultdict(list)
+        for conflict_entry in all_conflict_entries:
+            entries_by_key[conflict_entry.key].append(conflict_entry)
+
+        dialog = QDialog(self)
+        dialog.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose, True)
+        dialog.setModal(False)
+        dialog.setWindowTitle(view_title)
+        dialog._reference_duplicate_mode = dialog_mode  # type: ignore[attr-defined]
+        dialog._reference_duplicate_scope = tab_key  # type: ignore[attr-defined]
+        dialog.resize(1180, 660)
+        self._reference_duplicates_dialog = dialog
+
+        def clear_reference_duplicates_dialog(_result: int, closed_dialog: QDialog = dialog) -> None:
+            if getattr(self, "_reference_duplicates_dialog", None) is closed_dialog:
+                setattr(self, "_reference_duplicates_dialog", None)
+
+        dialog.finished.connect(clear_reference_duplicates_dialog)
+        root = QVBoxLayout(dialog)
+        root.setContentsMargins(6, 6, 6, 6)
+        root.setSpacing(4)
+
+        note_text = (
+            "All repeated English/source sentences found in selected checkbox Working folders. "
+            "Includes groups with same or different Vietnamese translations. "
+            if show_all_duplicates
+            else "Different Vietnamese translations found in selected checkbox Working folders. "
+        )
+        note = QLabel(
+            note_text
+            + "CLT tags count as part of the English/source sentence. "
+            + "Edit Vietnamese, then Apply to copy it to this source group. "
+            + "Open switches to PO Viewer on the selected file/entry."
+        )
+        note.setObjectName("muted")
+        note.setWordWrap(True)
+        root.addWidget(note)
+
+        all_group_count = len(entries_by_key)
+        hidden_group_count = len({key for key in entries_by_key if key in hidden_keys})
+        visible_entry_count = len([entry for entry in all_conflict_entries if entry.key not in hidden_keys])
+        status = QLabel(
+            f"{visible_entry_count} visible entries | {all_group_count} duplicate source group(s) | "
+            f"hidden groups={hidden_group_count} | {result.source_files} working .po file(s)"
+        )
+        status.setObjectName("muted")
+        root.addWidget(status)
+
+        split = QSplitter(Qt.Orientation.Vertical)
+        table = QTableWidget()
+        table.setObjectName("poViewerTable")
+        table.setColumnCount(7)
+        table.setHorizontalHeaderLabels(["Grp", "Speaker", "English", "Vietnamese", "File", "Ln", "Vars"])
+        table.setFont(QFont("Consolas", 8))
+        table.verticalHeader().setVisible(False)
+        table.verticalHeader().setDefaultSectionSize(28)
+        table.verticalHeader().setMinimumSectionSize(22)
+        table.setAlternatingRowColors(True)
+        table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
+        table.setEditTriggers(
+            QAbstractItemView.EditTrigger.DoubleClicked
+            | QAbstractItemView.EditTrigger.SelectedClicked
+            | QAbstractItemView.EditTrigger.EditKeyPressed
+        )
+        table.setWordWrap(False)
+        table.setTextElideMode(Qt.TextElideMode.ElideNone)
+        table.setVerticalScrollMode(QAbstractItemView.ScrollMode.ScrollPerPixel)
+        table.setHorizontalScrollMode(QAbstractItemView.ScrollMode.ScrollPerPixel)
+        table.verticalScrollBar().setSingleStep(8)
+        table.horizontalScrollBar().setSingleStep(8)
+        table.setItemDelegate(NoFocusCellDelegate(table))
+        table.setItemDelegateForColumn(2, RichTextCellDelegate(table))
+        table.setItemDelegateForColumn(3, RichTextCellDelegate(table))
+        header = table.horizontalHeader()
+        header.setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(3, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(4, QHeaderView.ResizeMode.Fixed)
+        header.setSectionResizeMode(5, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(6, QHeaderView.ResizeMode.ResizeToContents)
+        table.setColumnWidth(4, 150)
+        split.addWidget(table)
+
+        detail = QSplitter(Qt.Orientation.Horizontal)
+
+        def labeled_box(label: str, box: QPlainTextEdit, extra_label: QLabel | None = None) -> QWidget:
+            wrap = QWidget()
+            box_layout = QVBoxLayout(wrap)
+            box_layout.setContentsMargins(0, 0, 0, 0)
+            box_layout.setSpacing(3)
+            lab = QLabel(label)
+            lab.setStyleSheet("font-weight:800;")
+            box_layout.addWidget(lab)
+            if extra_label is not None:
+                box_layout.addWidget(extra_label)
+            box_layout.addWidget(box, 1)
+            return wrap
+
+        en_box = VisibleNewlinePlainTextEdit()
+        en_box.setReadOnly(True)
+        en_box.setPlaceholderText("English msgid")
+        en_box.setFont(QFont("Consolas", 8))
+        en_box.verticalScrollBar().setSingleStep(6)
+        en_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
+        en_box._clt_highlighter = CltHighlighter(en_box.document())  # keep highlighter alive
+        vi_box = VisibleNewlinePlainTextEdit()
+        vi_box.setPlaceholderText("Edit Vietnamese msgstr here. Use Apply to copy it to this source group.")
+        vi_box.setFont(QFont("Consolas", 8))
+        vi_box.verticalScrollBar().setSingleStep(6)
+        vi_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
+        vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
+        speaker_label = QLabel("Speaker: —")
+        speaker_label.setObjectName("muted")
+        speaker_label.setWordWrap(True)
+        speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
+        detail.addWidget(labeled_box("English / original — read only", en_box))
+        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, speaker_label))
+        detail.setSizes([1, 1])
+        split.addWidget(detail)
+        split.setSizes([500, 150])
+        root.addWidget(split, 1)
+
+        footer = QHBoxLayout()
+        open_file_btn = self._button("Open", secondary=True)
+        open_file_btn.setToolTip("Open the selected .po file in PO Viewer and jump to this entry.")
+        search_replace_btn = self._button("Find", secondary=True)
+        search_replace_btn.setToolTip("Find/replace text in the duplicate view. Replacement edits Vietnamese only.")
+        apply_group_btn = self._button("Apply", secondary=True)
+        apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
+        undo_apply_btn = self._button("Undo", secondary=True)
+        undo_apply_btn.setToolTip("Undo the most recent Apply or Replace change.")
+        undo_apply_btn.setEnabled(False)
+        wrap_break_btn = self._button("Wrap 64", secondary=True)
+        wrap_break_btn.setToolTip("Insert real line breaks in selected/current Vietnamese translation(s) using the Line Wrap tab settings.")
+        hide_group_btn = self._button("Hide", secondary=True)
+        hide_group_btn.setToolTip("Hide selected duplicate source group(s) by default.")
+        show_hidden_check = QCheckBox("Hidden")
+        show_hidden_check.setToolTip("Show groups hidden with Hide.")
+        unhide_group_btn = self._button("Unhide", secondary=True)
+        unhide_group_btn.setToolTip("Remove selected hidden group(s) from the hidden list.")
+        save_btn = self._button("Save")
+        refresh_btn = self._button("Reload", secondary=True)
+        close_btn = self._button("Close", secondary=True)
+        footer.addWidget(open_file_btn)
+        footer.addWidget(search_replace_btn)
+        footer.addWidget(apply_group_btn)
+        footer.addWidget(undo_apply_btn)
+        footer.addWidget(wrap_break_btn)
+        footer.addWidget(hide_group_btn)
+        footer.addWidget(show_hidden_check)
+        footer.addWidget(unhide_group_btn)
+        footer.addStretch()
+        footer.addWidget(save_btn)
+        footer.addWidget(refresh_btn)
+        footer.addWidget(close_btn)
+        root.addLayout(footer)
+
+        po_cache: dict[Path, object] = {}
+        changed_files: set[Path] = set()
+        apply_undo_stack: list[list[dict[str, object]]] = []
+        search_replace_state: dict[str, object] = {}
+        loading = {"value": False}
+        detail_loading = {"value": False}
+        HIDDEN_GROUP_BG = "#604268"
+        HIDDEN_BG = "#49354f"
+        HIDDEN_BG_2 = "#3d3146"
+        HIDDEN_VI_BG = "#553a5f"
+        HIDDEN_TEXT = "#dac9e8"
+
+        def resolved(path: Path) -> Path:
+            return path.expanduser().resolve(strict=False)
+
+        conflict_files = sorted({resolved(entry.file) for entry in all_conflict_entries}, key=lambda item: str(item).casefold())
+        for po_path in conflict_files:
+            po_cache[po_path] = load_po(po_path)
+
+        original_translations: dict[tuple[Path, str], str] = {}
+        for po_path, po_file in po_cache.items():
+            for entry in getattr(po_file, "entries", []):
+                original_translations[(po_path, entry.uid)] = entry.msgstr
+
+        def refresh_changed_file(path: Path) -> None:
+            po_file = po_cache.get(path)
+            if po_file is None:
+                return
+            has_changes = any(
+                original_translations.get((path, entry.uid), entry.msgstr) != entry.msgstr
+                for entry in getattr(po_file, "entries", [])
+            )
+            if has_changes:
+                changed_files.add(path)
+            else:
+                changed_files.discard(path)
+
+        def minimal_file_labels(paths: list[Path]) -> dict[Path, str]:
+            """Return the shortest readable labels that still disambiguate files."""
+            resolved_paths = [resolved(path) for path in paths]
+            by_name: dict[str, list[Path]] = defaultdict(list)
+            for path in resolved_paths:
+                by_name[path.name.casefold()].append(path)
+            labels: dict[Path, str] = {}
+            for path in resolved_paths:
+                same_name = by_name[path.name.casefold()]
+                if len(same_name) == 1:
+                    labels[path] = path.name
+                    continue
+                parts = path.parts
+                for depth in range(2, len(parts) + 1):
+                    candidate = "/".join(parts[-depth:])
+                    duplicates = ["/".join(other.parts[-depth:]) for other in same_name]
+                    if duplicates.count(candidate) == 1:
+                        labels[path] = candidate
+                        break
+                else:
+                    labels[path] = str(path)
+            return labels
+
+        file_labels = minimal_file_labels(conflict_files)
+        FILE_LABEL_MAX_CHARS = 34
+
+        def capped_file_label(label: str, max_chars: int = FILE_LABEL_MAX_CHARS) -> str:
+            """Short table label; full path stays in tooltip."""
+            text = str(label or "")
+            if len(text) <= max_chars:
+                return text
+            text = text.replace("\\", "/")
+            if "/" in text:
+                prefix, name = text.rsplit("/", 1)
+                if len(name) + 2 < max_chars:
+                    prefix_budget = max_chars - len(name) - 1
+                    return f"…{prefix[-max(1, prefix_budget - 1):]}/{name}"
+                text = name
+            if len(text) <= max_chars:
+                return text
+            if "." in text:
+                stem, suffix = text.rsplit(".", 1)
+                suffix = "." + suffix
+            else:
+                stem, suffix = text, ""
+            tail_budget = max(8, max_chars - len(suffix) - 2)
+            head_budget = max(4, max_chars - len(suffix) - tail_budget - 2)
+            return f"{stem[:head_budget]}…{stem[-tail_budget:]}{suffix}"
+
+        def save_hidden_duplicate_keys() -> None:
+            self.config["translafixer_hidden_duplicate_keys"] = sorted(hidden_keys, key=str.casefold)
+            save_config(self.config)
+
+        def displayed_conflict_entries() -> list[ReferenceTranslationConflictEntry]:
+            if show_hidden_check.isChecked():
+                return list(all_conflict_entries)
+            return [entry for entry in all_conflict_entries if entry.key not in hidden_keys]
+
+        def clear_detail() -> None:
+            detail_loading["value"] = True
+            try:
+                en_box.clear()
+                vi_box.clear()
+                speaker_label.setText("Speaker: —")
+            finally:
+                detail_loading["value"] = False
+
+        def make_item(
+            text: str,
+            *,
+            editable: bool = False,
+            bg: str | None = None,
+            fg: str | None = None,
+            italic: bool = False,
+        ) -> QTableWidgetItem:
+            item = QTableWidgetItem(text)
+            flags = Qt.ItemFlag.ItemIsSelectable | Qt.ItemFlag.ItemIsEnabled
+            if editable:
+                flags |= Qt.ItemFlag.ItemIsEditable
+            item.setFlags(flags)
+            if bg:
+                item.setBackground(QColor(bg))
+            if fg:
+                item.setForeground(QBrush(QColor(fg)))
+            if italic:
+                font = item.font()
+                font.setItalic(True)
+                item.setFont(font)
+            return item
+
+        def set_html(item: QTableWidgetItem, text: str, *, color: str = TEXT) -> None:
+            item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text)}</span>')
+
+        def payload_key_from_row(row: int) -> str:
+            item = table.item(row, 3)
+            payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+            if isinstance(payload, dict):
+                return str(payload.get("key") or "")
+            return ""
+
+        def row_is_hidden(row: int) -> bool:
+            key = payload_key_from_row(row)
+            return bool(key and key in hidden_keys)
+
+        def style_non_translation_cell(row: int, column: int, *, refresh_group_label: bool = False) -> None:
+            item = table.item(row, column)
+            if item is None:
+                return
+            hidden = row_is_hidden(row)
+            if column == 0:
+                base = re.sub(r"\s+HIDDEN$", "", item.text()).strip()
+                item.setText(f"{base} HIDDEN" if hidden and show_hidden_check.isChecked() else base)
+                item.setBackground(QColor(HIDDEN_GROUP_BG if hidden else PANEL_3))
+                item.setToolTip("Hidden duplicate group. It is skipped by default until Hidden is enabled." if hidden else "")
+            elif column == 1:
+                item.setBackground(QColor(HIDDEN_BG_2 if hidden else PANEL_2))
+            elif column == 2:
+                item.setBackground(QColor(HIDDEN_BG if hidden else EN_BG))
+                set_html(item, item.text(), color=HIDDEN_TEXT if hidden else TEXT)
+            else:
+                item.setBackground(QColor(HIDDEN_BG_2 if hidden else PANEL))
+            item.setForeground(QBrush(QColor(HIDDEN_TEXT if hidden else TEXT)))
+            font = item.font()
+            font.setItalic(hidden)
+            item.setFont(font)
+
+        def restyle_rows_for_keys(keys: set[str]) -> None:
+            if not keys:
+                return
+            table.setUpdatesEnabled(False)
+            try:
+                for row in range(table.rowCount()):
+                    if payload_key_from_row(row) not in keys:
+                        continue
+                    for column in (0, 1, 2, 4, 5, 6):
+                        style_non_translation_cell(row, column)
+                    vi_item = table.item(row, 3)
+                    update_row_visual(row, vi_item.text() if vi_item is not None else "", refresh_height=False)
+            finally:
+                table.setUpdatesEnabled(True)
+            table.viewport().update()
+
+        def compact_row_height_for_text(*values: str) -> int:
+            forced_lines = max((str(value).count("\n") + 1 for value in values if value is not None), default=1)
+            return max(28, min(220, 17 * forced_lines + 10))
+
+        def refresh_table_row_height(row: int) -> None:
+            en_item = table.item(row, 2)
+            vi_item = table.item(row, 3)
+            table.setRowHeight(
+                row,
+                compact_row_height_for_text(
+                    en_item.text() if en_item is not None else "",
+                    vi_item.text() if vi_item is not None else "",
+                ),
+            )
+
+        def refresh_table_row_heights() -> None:
+            for row in range(table.rowCount()):
+                refresh_table_row_height(row)
+
+        def ref_payload(entry: ReferenceTranslationConflictEntry) -> dict[str, object]:
+            return {
+                "path": str(entry.file),
+                "row": entry.row,
+                "uid": entry.uid,
+                "key": entry.key,
+                "line": entry.line,
+                "source": entry.source,
+                "speaker": entry.speaker,
+                "msgctxt": entry.msgctxt,
+            }
+
+        def entry_from_payload(payload: dict[str, object]):
+            path = resolved(Path(str(payload.get("path") or "")))
+            po = po_cache.get(path)
+            if po is None:
+                return None, None
+            uid = str(payload.get("uid") or "")
+            try:
+                row = int(payload.get("row", -1))
+            except Exception:
+                row = -1
+            entries = getattr(po, "entries", [])
+            if 0 <= row < len(entries) and (not uid or entries[row].uid == uid):
+                return path, entries[row]
+            if uid:
+                for candidate in entries:
+                    if candidate.uid == uid:
+                        return path, candidate
+            return path, None
+
+        def current_payload() -> dict[str, object] | None:
+            row = table.currentRow()
+            if row < 0:
+                return None
+            item = table.item(row, 3)
+            if item is None:
+                return None
+            payload = item.data(Qt.ItemDataRole.UserRole)
+            return payload if isinstance(payload, dict) else None
+
+        def current_translation_text() -> str:
+            if vi_box.hasFocus():
+                return vi_box.toPlainText()
+            row = table.currentRow()
+            item = table.item(row, 3) if row >= 0 else None
+            if item is not None:
+                return item.text()
+            return vi_box.toPlainText()
+
+        def update_row_visual(row: int, text: str, *, refresh_height: bool = True) -> None:
+            item = table.item(row, 3)
+            if item is None:
+                return
+            hidden = row_is_hidden(row)
+            color = HIDDEN_TEXT if hidden else (TEXT if text.strip() else WARN)
+            if hidden:
+                bg = HIDDEN_VI_BG if text.strip() else "#5b423f"
+            else:
+                bg = VI_BG if text.strip() else "#4a3828"
+            item.setBackground(QColor(bg))
+            item.setForeground(QBrush(QColor(color)))
+            font = item.font()
+            font.setItalic(hidden)
+            item.setFont(font)
+            set_html(item, text, color=color)
+            item.setToolTip(("Hidden duplicate group.\n" if hidden else "") + text)
+            if refresh_height:
+                refresh_table_row_height(row)
+
+        def set_entry_translation(row: int, text: str, *, update_detail: bool = False) -> bool:
+            item = table.item(row, 3)
+            if item is None:
+                return False
+            payload = item.data(Qt.ItemDataRole.UserRole)
+            if not isinstance(payload, dict):
+                return False
+            path, entry = entry_from_payload(payload)
+            if path is None or entry is None:
+                return False
+            if entry.msgstr == text:
+                if update_detail:
+                    detail_loading["value"] = True
+                    try:
+                        vi_box.setPlainText(text)
+                    finally:
+                        detail_loading["value"] = False
+                return False
+            entry.msgstr = text
+            refresh_changed_file(path)
+            loading["value"] = True
+            try:
+                item.setText(text)
+                update_row_visual(row, text)
+            finally:
+                loading["value"] = False
+            if update_detail:
+                detail_loading["value"] = True
+                try:
+                    vi_box.setPlainText(text)
+                finally:
+                    detail_loading["value"] = False
+            update_status()
+            return True
+
+        def load_detail_for_row(row: int) -> None:
+            if row < 0:
+                clear_detail()
+                return
+            payload = current_payload()
+            if not isinstance(payload, dict):
+                clear_detail()
+                return
+            _path, entry = entry_from_payload(payload)
+            source = str(payload.get("source") or getattr(entry, "msgid", "") or "") if entry is not None else str(payload.get("source") or "")
+            translation = getattr(entry, "msgstr", "") if entry is not None else (table.item(row, 3).text() if table.item(row, 3) else "")
+            speaker = str(payload.get("speaker") or getattr(entry, "speaker", "") or payload.get("msgctxt") or getattr(entry, "msgctxt", "") or "")
+            path_text = ""
+            path_obj = _path if isinstance(_path, Path) else None
+            if path_obj is not None:
+                path_text = file_labels.get(path_obj, path_obj.name)
+            line_text = str(payload.get("line") or "")
+            label = f"Speaker: {speaker or '—'}"
+            if path_text or line_text:
+                label += f"  |  File: {path_text}"
+                if line_text:
+                    label += f":{line_text}"
+            detail_loading["value"] = True
+            try:
+                en_box.setPlainText(source)
+                vi_box.setPlainText(translation)
+                speaker_label.setText(label)
+            finally:
+                detail_loading["value"] = False
+
+        def populate(entries: list[ReferenceTranslationConflictEntry]) -> None:
+            loading["value"] = True
+            previous_blocked = table.blockSignals(True)
+            table.setUpdatesEnabled(False)
+            table.clearContents()
+            table.setRowCount(len(entries))
+            current_group = None
+            group_number = 0
+            try:
+                for row, entry in enumerate(entries):
+                    if entry.key != current_group:
+                        current_group = entry.key
+                        group_number += 1
+                    path = resolved(entry.file)
+                    file_text = file_labels.get(path, path.name)
+                    file_display_text = capped_file_label(file_text)
+                    is_hidden = entry.key in hidden_keys
+                    hidden_suffix = " HIDDEN" if is_hidden and show_hidden_check.isChecked() else ""
+                    hidden_tip = "Hidden duplicate group. It is skipped by default until Hidden is enabled." if is_hidden else ""
+                    hidden_fg = HIDDEN_TEXT if is_hidden else None
+                    group_item = make_item(
+                        f"{group_number}{hidden_suffix}",
+                        bg=HIDDEN_GROUP_BG if is_hidden else PANEL_3,
+                        fg=hidden_fg,
+                        italic=is_hidden,
+                    )
+                    group_item.setToolTip(hidden_tip)
+                    group_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+                    table.setItem(row, 0, group_item)
+                    speaker_text = entry.speaker or entry.msgctxt or ""
+                    table.setItem(row, 1, make_item(speaker_text, bg=HIDDEN_BG_2 if is_hidden else PANEL_2, fg=hidden_fg, italic=is_hidden))
+                    en_item = make_item(entry.source, bg=HIDDEN_BG if is_hidden else EN_BG, fg=hidden_fg, italic=is_hidden)
+                    en_item.setToolTip(("Hidden duplicate group.\n" if is_hidden else "") + entry.source)
+                    set_html(en_item, entry.source, color=HIDDEN_TEXT if is_hidden else TEXT)
+                    table.setItem(row, 2, en_item)
+                    vi_item = make_item(
+                        entry.translation,
+                        editable=True,
+                        bg=HIDDEN_VI_BG if is_hidden else (VI_BG if entry.translation.strip() else "#4a3828"),
+                        fg=hidden_fg,
+                        italic=is_hidden,
+                    )
+                    vi_item.setData(Qt.ItemDataRole.UserRole, ref_payload(entry))
+                    vi_item.setToolTip(("Hidden duplicate group.\n" if is_hidden else "") + entry.translation)
+                    set_html(vi_item, entry.translation, color=HIDDEN_TEXT if is_hidden else (TEXT if entry.translation.strip() else WARN))
+                    table.setItem(row, 3, vi_item)
+                    file_item = make_item(file_display_text, bg=HIDDEN_BG_2 if is_hidden else PANEL, fg=hidden_fg, italic=is_hidden)
+                    file_item.setToolTip(f"{file_text}\n{path}" if file_text != str(path) else str(path))
+                    table.setItem(row, 4, file_item)
+                    line_item = make_item(str(entry.line), bg=HIDDEN_BG_2 if is_hidden else PANEL, fg=hidden_fg, italic=is_hidden)
+                    line_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+                    table.setItem(row, 5, line_item)
+                    variants_item = make_item(str(entry.variants), bg=HIDDEN_BG_2 if is_hidden else PANEL, fg=hidden_fg, italic=is_hidden)
+                    variants_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+                    table.setItem(row, 6, variants_item)
+                    update_row_visual(row, entry.translation, refresh_height=False)
+                refresh_table_row_heights()
+            finally:
+                table.setUpdatesEnabled(True)
+                table.blockSignals(previous_blocked)
+                loading["value"] = False
+            if table.rowCount():
+                table.selectRow(0)
+                table.setCurrentCell(0, 0)
+                load_detail_for_row(0)
+            else:
+                clear_detail()
+            update_status()
+
+        def update_status() -> None:
+            dirty = len(changed_files)
+            prefix = "* " if dirty else ""
+            hidden_group_count = len({key for key in entries_by_key if key in hidden_keys})
+            shown_entries = table.rowCount()
+            shown_group_count = len({
+                str((table.item(row, 3).data(Qt.ItemDataRole.UserRole) or {}).get("key") or "")
+                for row in range(table.rowCount())
+                if table.item(row, 3) is not None
+            })
+            mode = "hidden shown" if show_hidden_check.isChecked() else "hidden off"
+            status.setText(
+                f"{prefix}{shown_entries} shown entries | {shown_group_count}/{all_group_count} duplicate source group(s) | "
+                f"hidden groups={hidden_group_count} | {result.source_files} working .po file(s) | changed files={dirty} | {mode}"
+            )
+
+        def item_changed(item: QTableWidgetItem) -> None:
+            if loading["value"] or item.column() != 3:
+                return
+            row = item.row()
+            payload = item.data(Qt.ItemDataRole.UserRole)
+            if not isinstance(payload, dict):
+                return
+            path, entry = entry_from_payload(payload)
+            if path is None or entry is None:
+                return
+            new_text = item.text()
+            if entry.msgstr == new_text:
+                return
+            entry.msgstr = new_text
+            refresh_changed_file(path)
+            update_row_visual(row, new_text)
+            if row == table.currentRow():
+                detail_loading["value"] = True
+                try:
+                    vi_box.setPlainText(new_text)
+                finally:
+                    detail_loading["value"] = False
+            update_status()
+
+        def detail_changed() -> None:
+            if detail_loading["value"] or loading["value"]:
+                return
+            row = table.currentRow()
+            if row < 0:
+                return
+            set_entry_translation(row, vi_box.toPlainText())
+
+        def selection_changed() -> None:
+            load_detail_for_row(table.currentRow())
+
+        def selected_rows_or_current() -> list[int]:
+            rows = sorted({index.row() for index in table.selectionModel().selectedRows()})
+            if not rows and table.currentRow() >= 0:
+                rows = [table.currentRow()]
+            return rows
+
+        def selected_group_keys() -> set[str]:
+            keys: set[str] = set()
+            for row in selected_rows_or_current():
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                if isinstance(payload, dict):
+                    key = str(payload.get("key") or "")
+                    if key:
+                        keys.add(key)
+            return keys
+
+        def remove_displayed_rows_for_keys(keys: set[str]) -> int:
+            if not keys:
+                return 0
+            removed = 0
+            previous_row = max(0, table.currentRow())
+            loading["value"] = True
+            previous_blocked = table.blockSignals(True)
+            table.setUpdatesEnabled(False)
+            try:
+                for row in range(table.rowCount() - 1, -1, -1):
+                    if payload_key_from_row(row) in keys:
+                        table.removeRow(row)
+                        removed += 1
+                refresh_table_row_heights()
+            finally:
+                table.setUpdatesEnabled(True)
+                table.blockSignals(previous_blocked)
+                loading["value"] = False
+            if table.rowCount():
+                next_row = min(previous_row, table.rowCount() - 1)
+                table.selectRow(next_row)
+                table.setCurrentCell(next_row, 0)
+                load_detail_for_row(next_row)
+            else:
+                clear_detail()
+            return removed
+
+        def repopulate_after_hidden_change(message: str = "") -> None:
+            populate(displayed_conflict_entries())
+            if message:
+                status.setText(status.text() + f" | {message}")
+
+        def hide_selected_groups() -> None:
+            keys = selected_group_keys()
+            if not keys:
+                QMessageBox.warning(dialog, view_title, "Select duplicate group(s) first.")
+                return
+            before = len(hidden_keys)
+            hidden_keys.update(keys)
+            added = len(hidden_keys) - before
+            save_hidden_duplicate_keys()
+            if show_hidden_check.isChecked():
+                restyle_rows_for_keys(keys)
+                update_status()
+                status.setText(status.text() + f" | hidden added={added}")
+                return
+            removed = remove_displayed_rows_for_keys(keys)
+            update_status()
+            status.setText(status.text() + f" | hidden added={added} | rows removed={removed}")
+
+        def unhide_selected_groups() -> None:
+            keys = selected_group_keys()
+            if not keys:
+                QMessageBox.warning(dialog, view_title, "Select hidden duplicate group(s) first.")
+                return
+            before = len(hidden_keys)
+            hidden_keys.difference_update(keys)
+            removed = before - len(hidden_keys)
+            save_hidden_duplicate_keys()
+            if show_hidden_check.isChecked():
+                restyle_rows_for_keys(keys)
+                update_status()
+                status.setText(status.text() + f" | hidden removed={removed}")
+                return
+            update_status()
+            status.setText(status.text() + f" | hidden removed={removed}")
+
+        def toggle_hidden_visibility() -> None:
+            repopulate_after_hidden_change()
+
+        def breakline_selected_64() -> None:
+            rows = selected_rows_or_current()
+            if not rows:
+                QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
+                return
+            changed = 0
+            current_row = table.currentRow()
+            soft_value, hard_value, cuts_value = self._linewrap_settings()
+            for row in rows:
+                item = table.item(row, 3)
+                if item is None:
+                    continue
+                fixed, did_change = wrap_msgstr(item.text(), soft=soft_value, hard=hard_value, max_cuts=cuts_value)
+                if did_change and set_entry_translation(row, fixed, update_detail=(row == current_row)):
+                    changed += 1
+            refresh_table_row_heights()
+            update_status()
+            status.setText(
+                status.text()
+                + f" | breakline changed={changed} | Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}"
+            )
+
+        def apply_to_same_source() -> None:
+            payload = current_payload()
+            if not isinstance(payload, dict):
+                QMessageBox.warning(dialog, view_title, "Select a duplicate row first.")
+                return
+            key = str(payload.get("key") or "")
+            if not key:
+                return
+            new_text = current_translation_text()
+            changed = 0
+            undo_rows: list[dict[str, object]] = []
+            loading["value"] = True
+            try:
+                for row in range(table.rowCount()):
+                    item = table.item(row, 3)
+                    row_payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                    if not isinstance(row_payload, dict) or str(row_payload.get("key") or "") != key:
+                        continue
+                    path, entry = entry_from_payload(row_payload)
+                    if path is None or entry is None:
+                        continue
+                    if entry.msgstr == new_text:
+                        update_row_visual(row, new_text)
+                        continue
+                    undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": entry.msgstr, "new": new_text})
+                    entry.msgstr = new_text
+                    refresh_changed_file(path)
+                    if item is not None:
+                        item.setText(new_text)
+                        update_row_visual(row, new_text)
+                    changed += 1
+            finally:
+                loading["value"] = False
+            if undo_rows:
+                apply_undo_stack.append(undo_rows)
+                undo_apply_btn.setEnabled(True)
+            load_detail_for_row(table.currentRow())
+            update_status()
+            if changed:
+                status.setText(status.text() + f" | mass changed={changed}")
+            else:
+                status.setText(status.text() + " | no same-source rows needed change")
+
+        def undo_apply_to_same_source() -> None:
+            if not apply_undo_stack:
+                status.setText("Nothing to undo for Apply.")
+                undo_apply_btn.setEnabled(False)
+                return
+            undo_rows = apply_undo_stack.pop()
+            undone = 0
+            affected_paths: set[Path] = set()
+            loading["value"] = True
+            try:
+                for change in reversed(undo_rows):
+                    path = change.get("path")
+                    uid = str(change.get("uid") or "")
+                    old_text = str(change.get("old") or "")
+                    if not isinstance(path, Path) or not uid:
+                        continue
+                    po_file = po_cache.get(path)
+                    if po_file is None:
+                        continue
+                    entry = next((candidate for candidate in getattr(po_file, "entries", []) if candidate.uid == uid), None)
+                    if entry is None:
+                        continue
+                    entry.msgstr = old_text
+                    affected_paths.add(path)
+                    for row in range(table.rowCount()):
+                        item = table.item(row, 3)
+                        row_payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                        if not isinstance(row_payload, dict):
+                            continue
+                        if resolved(Path(str(row_payload.get("path") or ""))) == path and str(row_payload.get("uid") or "") == uid:
+                            item.setText(old_text)
+                            update_row_visual(row, old_text)
+                            break
+                    undone += 1
+                for path in affected_paths:
+                    refresh_changed_file(path)
+            finally:
+                loading["value"] = False
+            undo_apply_btn.setEnabled(bool(apply_undo_stack))
+            load_detail_for_row(table.currentRow())
+            update_status()
+            status.setText(status.text() + f" | undo applied={undone}")
+
+        def open_search_replace_dialog() -> None:
+            existing = search_replace_state.get("dialog")
+            if isinstance(existing, QDialog):
+                existing.show()
+                existing.raise_()
+                existing.activateWindow()
+                return
+
+            search_dialog = QDialog(dialog)
+            search_dialog.setWindowTitle(f"{view_title} Find / Replace")
+            search_dialog.setModal(False)
+            search_dialog.resize(560, 220)
+            root_layout = QVBoxLayout(search_dialog)
+            root_layout.setContentsMargins(10, 10, 10, 10)
+            root_layout.setSpacing(8)
+
+            form = QFormLayout()
+            find_edit = QLineEdit(str(search_replace_state.get("find", "")))
+            find_edit.setPlaceholderText("Find text...")
+            replace_edit = QLineEdit(str(search_replace_state.get("replace", "")))
+            replace_edit.setPlaceholderText("Replace Vietnamese with...")
+            scope_combo = QComboBox()
+            scope_combo.addItem("Vietnamese", "vi")
+            scope_combo.addItem("English", "en")
+            scope_combo.addItem("Both", "both")
+            saved_scope = str(search_replace_state.get("scope", "both"))
+            scope_index = scope_combo.findData(saved_scope)
+            scope_combo.setCurrentIndex(scope_index if scope_index >= 0 else 2)
+            form.addRow("Find", find_edit)
+            form.addRow("Replace", replace_edit)
+            form.addRow("Search in", scope_combo)
+            root_layout.addLayout(form)
+
+            option_row = QHBoxLayout()
+            case_chk = QCheckBox("Case")
+            whole_chk = QCheckBox("Whole word")
+            regex_chk = QCheckBox("Regex")
+            case_chk.setChecked(bool(search_replace_state.get("case", False)))
+            whole_chk.setChecked(bool(search_replace_state.get("whole", False)))
+            regex_chk.setChecked(bool(search_replace_state.get("regex", False)))
+            for widget in (case_chk, whole_chk, regex_chk):
+                option_row.addWidget(widget)
+            option_row.addStretch()
+            root_layout.addLayout(option_row)
+
+            status_label = QLabel("Replace edits Vietnamese only. Find can search English, Vietnamese, or both.")
+            status_label.setObjectName("muted")
+            status_label.setWordWrap(True)
+            root_layout.addWidget(status_label)
+
+            button_row = QHBoxLayout()
+            prev_btn = self._button("Find Prev", secondary=True)
+            next_btn = self._button("Find Next", secondary=True)
+            replace_btn = self._button("Replace", secondary=True)
+            replace_all_btn = self._button("Replace All")
+            close_btn = self._button("Close", secondary=True)
+            for widget in (prev_btn, next_btn, replace_btn, replace_all_btn):
+                button_row.addWidget(widget)
+            button_row.addStretch()
+            button_row.addWidget(close_btn)
+            root_layout.addLayout(button_row)
+
+            def remember_search_settings() -> None:
+                search_replace_state["find"] = find_edit.text()
+                search_replace_state["replace"] = replace_edit.text()
+                search_replace_state["scope"] = scope_combo.currentData()
+                search_replace_state["case"] = case_chk.isChecked()
+                search_replace_state["whole"] = whole_chk.isChecked()
+                search_replace_state["regex"] = regex_chk.isChecked()
+
+            def compile_pattern() -> re.Pattern[str] | None:
+                remember_search_settings()
+                needle_text = find_edit.text()
+                if not needle_text:
+                    status_label.setText("Enter text to search.")
+                    return None
+                source = needle_text if regex_chk.isChecked() else re.escape(needle_text)
+                if whole_chk.isChecked():
+                    source = rf"(?<!\w)(?:{source})(?!\w)"
+                flags = 0 if case_chk.isChecked() else re.IGNORECASE
+                try:
+                    return re.compile(source, flags)
+                except re.error as exc:
+                    status_label.setText(f"Invalid regex: {exc}")
+                    return None
+
+            def row_text(row: int, field: str) -> str:
+                if row < 0 or row >= table.rowCount():
+                    return ""
+                if field == "vi":
+                    if row == table.currentRow() and vi_box.hasFocus():
+                        return vi_box.toPlainText()
+                    item = table.item(row, 3)
+                    return item.text() if item is not None else ""
+                item = table.item(row, 2)
+                return item.text() if item is not None else ""
+
+            def fields_for_row() -> list[str]:
+                scope = str(scope_combo.currentData())
+                fields: list[str] = []
+                if scope in {"vi", "both"}:
+                    fields.append("vi")
+                if scope in {"en", "both"}:
+                    fields.append("en")
+                return fields
+
+            def find_in_row(row: int, pattern: re.Pattern[str]) -> tuple[str, re.Match[str]] | None:
+                for field in fields_for_row():
+                    match = pattern.search(row_text(row, field))
+                    if match:
+                        return field, match
+                return None
+
+            def select_and_highlight(row: int, field: str, match: re.Match[str]) -> None:
+                table.selectRow(row)
+                table.setCurrentCell(row, 3 if field == "vi" else 2)
+                load_detail_for_row(row)
+                box = vi_box if field == "vi" else en_box
+                cursor = box.textCursor()
+                cursor.setPosition(match.start())
+                cursor.setPosition(match.end(), QTextCursor.MoveMode.KeepAnchor)
+                box.setTextCursor(cursor)
+                box.setFocus(Qt.FocusReason.ShortcutFocusReason)
+                table.scrollToItem(table.item(row, 3 if field == "vi" else 2), QAbstractItemView.ScrollHint.PositionAtCenter)
+
+            def find_match(direction: int = 1) -> bool:
+                pattern = compile_pattern()
+                if pattern is None:
+                    return False
+                total = table.rowCount()
+                if total <= 0:
+                    status_label.setText("No duplicate rows loaded.")
+                    return False
+                current = table.currentRow()
+                if current < 0:
+                    current = 0 if direction >= 0 else total - 1
+                signature = (
+                    find_edit.text(),
+                    scope_combo.currentData(),
+                    case_chk.isChecked(),
+                    whole_chk.isChecked(),
+                    regex_chk.isChecked(),
+                    show_hidden_check.isChecked(),
+                    table.rowCount(),
+                )
+                previous_signature = search_replace_state.get("signature")
+                previous_row = search_replace_state.get("last_row")
+                start = current
+                if previous_signature == signature and isinstance(previous_row, int) and previous_row == current:
+                    start = current + direction
+                for step in range(total):
+                    row = (start + (step * direction)) % total
+                    found = find_in_row(row, pattern)
+                    if not found:
+                        continue
+                    field, match = found
+                    select_and_highlight(row, field, match)
+                    search_replace_state["signature"] = signature
+                    search_replace_state["last_row"] = row
+                    where = "Vietnamese" if field == "vi" else "English"
+                    status_label.setText(f"Found in {where} at row {row + 1}/{total}.")
+                    return True
+                status_label.setText("No match found.")
+                return False
+
+            def replacement_value():
+                replacement = replace_edit.text()
+                remember_search_settings()
+                if regex_chk.isChecked():
+                    return replacement
+                return lambda _match: replacement
+
+            def change_row_translation(row: int, new_text: str, *, undo_label: str) -> bool:
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                if not isinstance(payload, dict):
+                    return False
+                path, entry = entry_from_payload(payload)
+                if path is None or entry is None:
+                    return False
+                old_text = entry.msgstr
+                if old_text == new_text:
+                    return False
+                if set_entry_translation(row, new_text, update_detail=(row == table.currentRow())):
+                    apply_undo_stack.append([{"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": undo_label}])
+                    undo_apply_btn.setEnabled(True)
+                    return True
+                return False
+
+            def replace_current() -> None:
+                if str(scope_combo.currentData()) == "en":
+                    status_label.setText("Replace edits Vietnamese only. Switch Search in to Vietnamese or Both.")
+                    return
+                pattern = compile_pattern()
+                if pattern is None:
+                    return
+                row = table.currentRow()
+                if row < 0 or row >= table.rowCount():
+                    status_label.setText("Select a duplicate row first.")
+                    return
+                source_text = row_text(row, "vi")
+                new_text, count = pattern.subn(replacement_value(), source_text, count=1)
+                if count <= 0:
+                    status_label.setText("Current row has no Vietnamese match to replace.")
+                    return
+                if change_row_translation(row, new_text, undo_label="replace"):
+                    status_label.setText(f"Replaced 1 match in row {row + 1}.")
+                    find_match(1)
+                else:
+                    status_label.setText("Replacement made no change.")
+
+            def replace_all() -> None:
+                if str(scope_combo.currentData()) == "en":
+                    status_label.setText("Replace edits Vietnamese only. Switch Search in to Vietnamese or Both.")
+                    return
+                pattern = compile_pattern()
+                if pattern is None:
+                    return
+                undo_rows: list[dict[str, object]] = []
+                changed_rows = 0
+                total_matches = 0
+                loading["value"] = True
+                try:
+                    for row in range(table.rowCount()):
+                        item = table.item(row, 3)
+                        payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                        if not isinstance(payload, dict):
+                            continue
+                        path, entry = entry_from_payload(payload)
+                        if path is None or entry is None:
+                            continue
+                        old_text = entry.msgstr
+                        new_text, count = pattern.subn(replacement_value(), old_text)
+                        if count <= 0 or new_text == old_text:
+                            continue
+                        undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": "replace all"})
+                        entry.msgstr = new_text
+                        refresh_changed_file(path)
+                        if item is not None:
+                            item.setText(new_text)
+                            update_row_visual(row, new_text)
+                        if row == table.currentRow():
+                            detail_loading["value"] = True
+                            try:
+                                vi_box.setPlainText(new_text)
+                            finally:
+                                detail_loading["value"] = False
+                        changed_rows += 1
+                        total_matches += count
+                finally:
+                    loading["value"] = False
+                if undo_rows:
+                    apply_undo_stack.append(undo_rows)
+                    undo_apply_btn.setEnabled(True)
+                update_status()
+                status_label.setText(f"Replaced {total_matches} match{'es' if total_matches != 1 else ''} in {changed_rows} row{'s' if changed_rows != 1 else ''}.")
+
+            prev_btn.clicked.connect(lambda: find_match(-1))
+            next_btn.clicked.connect(lambda: find_match(1))
+            replace_btn.clicked.connect(replace_current)
+            replace_all_btn.clicked.connect(replace_all)
+            close_btn.clicked.connect(search_dialog.close)
+            find_edit.returnPressed.connect(lambda: find_match(1))
+            find_next_shortcut = QShortcut(QKeySequence("F3"), search_dialog)
+            find_next_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+            find_next_shortcut.activated.connect(lambda: find_match(1))
+            find_prev_shortcut = QShortcut(QKeySequence("Shift+F3"), search_dialog)
+            find_prev_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+            find_prev_shortcut.activated.connect(lambda: find_match(-1))
+            search_dialog.finished.connect(lambda _result: search_replace_state.pop("dialog", None))
+            search_replace_state["dialog"] = search_dialog
+            search_replace_state["find_next_shortcut"] = find_next_shortcut
+            search_replace_state["find_prev_shortcut"] = find_prev_shortcut
+            search_dialog.show()
+            find_edit.setFocus(Qt.FocusReason.ShortcutFocusReason)
+            find_edit.selectAll()
+
+        def save_one_file(path: Path) -> tuple[bool, str | None]:
+            po = po_cache.get(path)
+            if po is None:
+                return False, f"{path}: not loaded"
+            try:
+                save_po(po, path)
+                for entry in getattr(po, "entries", []):
+                    original_translations[(path, entry.uid)] = entry.msgstr
+                changed_files.discard(path)
+                return True, None
+            except Exception as exc:
+                return False, f"{path}: {exc}"
+
+        def save_changed() -> None:
+            if not changed_files:
+                status.setText("No changed files to save.")
+                return
+            saved = 0
+            errors: list[str] = []
+            for path in sorted(list(changed_files), key=lambda item: str(item).casefold()):
+                ok, error = save_one_file(path)
+                if ok:
+                    saved += 1
+                elif error:
+                    errors.append(error)
+            if errors:
+                QMessageBox.warning(self, view_title, "Some files could not be saved:\n" + "\n".join(errors[:10]))
+            update_status()
+            if saved:
+                status.setText(status.text() + f" | saved={saved}")
+
+        def open_selected_file_in_po_viewer() -> None:
+            payload = current_payload()
+            if not isinstance(payload, dict):
+                QMessageBox.warning(dialog, view_title, "Select a duplicate row first.")
+                return
+            path = resolved(Path(str(payload.get("path") or "")))
+            if not path.is_file() or path.suffix.lower() != ".po":
+                QMessageBox.warning(dialog, view_title, f"Selected row file is not a real .po file:\n{path}")
+                return
+            if path in changed_files:
+                reply = QMessageBox.question(
+                    dialog,
+                    "Open File",
+                    "This file has unsaved edits in the duplicate view. Save this file before opening it in PO Viewer?",
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No | QMessageBox.StandardButton.Cancel,
+                    QMessageBox.StandardButton.Yes,
+                )
+                if reply == QMessageBox.StandardButton.Cancel:
+                    return
+                if reply == QMessageBox.StandardButton.Yes:
+                    ok, error = save_one_file(path)
+                    if not ok:
+                        QMessageBox.warning(dialog, "Open File", "Could not save before opening:\n" + (error or str(path)))
+                        return
+                    update_status()
+            opener = getattr(self, "_open_file_in_po_viewer", None)
+            if not callable(opener):
+                QMessageBox.warning(dialog, view_title, "PO Viewer is not ready yet.")
+                return
+            line_value: int | None = None
+            try:
+                raw_line = payload.get("line")
+                if raw_line is not None:
+                    line_value = int(raw_line)
+            except Exception:
+                line_value = None
+            uid_value = str(payload.get("uid") or "") or None
+            source_roots = [str(item) for item in self._duplicate_scan_paths(tab_key)]
+            if opener(path, uid=uid_value, line=line_value, source_paths=source_roots):
+                status.setText(f"Opened {path.name} in PO Viewer.")
+            else:
+                QMessageBox.warning(dialog, view_title, f"Could not open in PO Viewer:\n{path}")
+
+        def refresh_dialog() -> None:
+            nonlocal result, all_group_count
+            if changed_files:
+                reply = QMessageBox.question(
+                    self,
+                    view_title,
+                    "You have unsaved edits. Refresh and discard them?",
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                    QMessageBox.StandardButton.No,
+                )
+                if reply != QMessageBox.StandardButton.Yes:
+                    return
+            current_references = self._duplicate_scan_paths(tab_key)
+            if not current_references:
+                QMessageBox.warning(dialog, view_title, "Select checkbox Working folders in this tab first.")
+                return
+            try:
+                refreshed_entries, refreshed_result = scan_duplicates(current_references)
+            except Exception as exc:
+                QMessageBox.critical(dialog, view_title, f"Could not rescan selected Working folders:\n{exc}")
+                return
+
+            all_conflict_entries[:] = list(refreshed_entries)
+            entries_by_key.clear()
+            for conflict_entry in all_conflict_entries:
+                entries_by_key[conflict_entry.key].append(conflict_entry)
+            result = refreshed_result
+            all_group_count = len(entries_by_key)
+            po_cache.clear()
+            original_translations.clear()
+            changed_files.clear()
+            apply_undo_stack.clear()
+            undo_apply_btn.setEnabled(False)
+            current_conflict_files = sorted(
+                {resolved(entry.file) for entry in all_conflict_entries},
+                key=lambda item: str(item).casefold(),
+            )
+            try:
+                for po_path in current_conflict_files:
+                    po_cache[po_path] = load_po(po_path)
+            except Exception as exc:
+                QMessageBox.critical(dialog, view_title, f"Could not reload duplicate files:\n{exc}")
+                return
+            file_labels.clear()
+            file_labels.update(minimal_file_labels(current_conflict_files))
+            for po_path, po_file in po_cache.items():
+                for entry in getattr(po_file, "entries", []):
+                    original_translations[(po_path, entry.uid)] = entry.msgstr
+            populate(displayed_conflict_entries())
+            status.setText(status.text() + " | refreshed")
+
+        table.itemChanged.connect(item_changed)
+        table.itemSelectionChanged.connect(selection_changed)
+        vi_box.textChanged.connect(detail_changed)
+        open_file_btn.clicked.connect(open_selected_file_in_po_viewer)
+        search_replace_btn.clicked.connect(open_search_replace_dialog)
+        wrap_break_btn.clicked.connect(breakline_selected_64)
+        apply_group_btn.clicked.connect(apply_to_same_source)
+        undo_apply_btn.clicked.connect(undo_apply_to_same_source)
+        hide_group_btn.clicked.connect(hide_selected_groups)
+        unhide_group_btn.clicked.connect(unhide_selected_groups)
+        show_hidden_check.stateChanged.connect(lambda _state: toggle_hidden_visibility())
+        save_btn.clicked.connect(save_changed)
+        refresh_btn.clicked.connect(refresh_dialog)
+        close_btn.clicked.connect(dialog.close)
+        find_shortcut = QShortcut(QKeySequence("Ctrl+F"), dialog)
+        find_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        find_shortcut.activated.connect(open_search_replace_dialog)
+        dialog._find_shortcut = find_shortcut  # type: ignore[attr-defined]
+        populate(displayed_conflict_entries())
+        QTimer.singleShot(0, refresh_table_row_heights)
+        update_status()
+        dialog.show()
+        dialog.raise_()
+        dialog.activateWindow()
+
     def _build_po_viewer_tab(self) -> None:
         _tab, layout = self._new_tab("PO Viewer")
+        self._dr_option_selector(layout, "po_viewer")
         self._po_viewer_tab_widget = _tab
         note = QLabel(
-            "Pick .po files/folder and choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
-            "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines, then fill translations from the Translafixer source list. "
-            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
+            "Use ☑↻ to load .po files from selected checkbox Working folders. The Extra source is optional and only loads when Extra is checked. "
+            "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
+            "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
+            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z = undo text/last PO edit, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
             "Ctrl+Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. Red \\n markers show real line breaks. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
@@ -1718,19 +3536,22 @@ class ToolkitGUI(QMainWindow):
         layout.addWidget(note)
 
         source_row = QHBoxLayout()
-        source_label = QLabel("PO source")
-        source_label.setMinimumWidth(80)
+        source_label = QLabel("Extra source")
+        source_label.setMinimumWidth(92)
         source_label.setStyleSheet("font-weight:700;")
         initial_source = str(self.config.get("po_viewer_source") or self.config.get("po_viewer_file", ""))
         source_edit = QLineEdit(initial_source)
-        source_edit.setPlaceholderText("Choose .po file(s) or a folder...")
-        open_po_btn = self._button("Open PO", secondary=True)
-        open_po_btn.setToolTip("Open the currently viewed .po file in the system default app")
-        browse_files_btn = self._button("Pick files", secondary=True)
-        browse_folder_btn = self._button("Pick folder", secondary=True)
-        load_btn = self._button("Load")
-        save_btn = self._button("Save", secondary=True)
+        source_edit.setPlaceholderText("Optional extra .po file(s) or folder; ignored unless Extra is checked...")
+        source_extra_check = QCheckBox("Extra")
+        source_extra_check.setChecked(bool(self.config.get(self._include_extra_config_key("po_viewer"), False)))
+        source_extra_check.setToolTip("When on, the manual PO source is loaded together with selected Working folders.")
+        open_po_btn = self._tool_button("", "Open current .po in the system default app", QStyle.StandardPixmap.SP_FileIcon)
+        browse_files_btn = self._tool_button("", "Pick extra .po file(s)", QStyle.StandardPixmap.SP_DialogOpenButton)
+        browse_folder_btn = self._tool_button("", "Pick extra folder", QStyle.StandardPixmap.SP_DirOpenIcon)
+        load_btn = self._tool_button("☑↻", "Load selected checkbox Working folders + enabled Extra source", width=44)
+        save_btn = self._tool_button("", "Save current .po", QStyle.StandardPixmap.SP_DialogSaveButton)
         source_row.addWidget(source_label)
+        source_row.addWidget(source_extra_check)
         source_row.addWidget(source_edit, 1)
         source_row.addWidget(open_po_btn)
         source_row.addWidget(browse_files_btn)
@@ -1753,13 +3574,14 @@ class ToolkitGUI(QMainWindow):
         layout.addLayout(file_row)
 
         tools = QHBoxLayout()
-        wrap_view_btn = self._button("Visual wrap: ON", secondary=True)
-        clt_color_btn = self._button("CLT view: Tags", secondary=True)
-        wrap_selected_btn = self._button("Wrap selected", secondary=True)
-        wrap_all_btn = self._button("Wrap all", secondary=True)
-        fill_btn = self._button("Translafix from sources")
-        gemini_selected_btn = self._button("Gemini API selected", secondary=True)
-        gemini_selected_btn.setToolTip("Translate the selected PO Viewer rows with the Gemini API. Configure key/model/prompt in the Gemini Web tab.")
+        wrap_view_btn = self._tool_button("↔ ON", "Toggle visual wrap", width=46)
+        clt_color_btn = self._tool_button("CLT", "Toggle CLT tag/color view", width=42)
+        wrap_selected_btn = self._tool_button("⤶ Sel", "Wrap selected/current translation", width=52)
+        wrap_all_btn = self._tool_button("⤶ All", "Wrap all translations", width=52)
+        fill_btn = self._tool_button("TF", "Fill from Translafixer sources", width=38)
+        gemini_selected_btn = self._tool_button("AI", "Translate selected rows with Gemini API", width=38)
+        search_replace_btn = self._tool_button("⌕", "Search / replace (Ctrl+F)", width=34)
+        dup_ref_btn = self._tool_button("Dup", "Open duplicate translation view for selected checkbox Working folders", width=42)
         status = QLabel("No file loaded")
         status.setObjectName("muted")
         status.setWordWrap(True)
@@ -1769,6 +3591,8 @@ class ToolkitGUI(QMainWindow):
         tools.addWidget(wrap_all_btn)
         tools.addWidget(fill_btn)
         tools.addWidget(gemini_selected_btn)
+        tools.addWidget(search_replace_btn)
+        tools.addWidget(dup_ref_btn)
         tools.addStretch()
         tools.addWidget(status, 1)
         layout.addLayout(tools)
@@ -1801,7 +3625,7 @@ class ToolkitGUI(QMainWindow):
 
         detail = QSplitter(Qt.Orientation.Horizontal)
 
-        def labeled_box(label: str, box: QPlainTextEdit) -> QWidget:
+        def labeled_box(label: str, box: QPlainTextEdit, extra_label: QLabel | None = None) -> QWidget:
             wrap = QWidget()
             box_layout = QVBoxLayout(wrap)
             box_layout.setContentsMargins(0, 0, 0, 0)
@@ -1809,6 +3633,8 @@ class ToolkitGUI(QMainWindow):
             lab = QLabel(label)
             lab.setStyleSheet("font-weight:800;")
             box_layout.addWidget(lab)
+            if extra_label is not None:
+                box_layout.addWidget(extra_label)
             box_layout.addWidget(box, 1)
             return wrap
 
@@ -1821,15 +3647,19 @@ class ToolkitGUI(QMainWindow):
         vi_box.setPlaceholderText("Edit Vietnamese msgstr here. English is read-only.")
         vi_box.setFont(QFont("Consolas", 9))
         vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
+        speaker_label = QLabel("Speaker: —")
+        speaker_label.setObjectName("muted")
+        speaker_label.setWordWrap(True)
+        speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
         detail.addWidget(labeled_box("English / original — read only", en_box))
-        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box))
+        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, speaker_label))
         detail.setSizes([1, 1])
         split.addWidget(detail)
         split.setSizes([430, 155])
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From Translafixer sources. Shows distinct Vietnamese translations only. >95% percentage is green. Ctrl+1..9 apply, Ctrl+0 refresh. Lower Min match when you need weaker fuzzy matches.")
+        suggest_note = QLabel("From all configured Settings Working folders. Shows distinct Vietnamese translations. >95% percentage is green. Ctrl+1..9 apply, Ctrl+0 refresh. Lower Min match when you need weaker fuzzy matches.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -1878,6 +3708,9 @@ class ToolkitGUI(QMainWindow):
             "suggestion_cache": {},
             "pending_suggestion_row": None,
             "pending_suggestion_force": False,
+            "undo_stack": [],
+            "undo_batch": None,
+            "undoing": False,
         }
         suggestion_timer = QTimer(_tab)
         suggestion_timer.setSingleShot(True)
@@ -1926,6 +3759,138 @@ class ToolkitGUI(QMainWindow):
         def row_context(entry) -> str:
             return entry.speaker or entry.msgctxt or ""
 
+        def _po_undo_stack() -> list[dict[str, object]]:
+            stack = state.get("undo_stack")
+            if not isinstance(stack, list):
+                stack = []
+                state["undo_stack"] = stack
+            return stack
+
+        def trim_po_undo_stack() -> None:
+            stack = _po_undo_stack()
+            if len(stack) > 100:
+                del stack[:-100]
+
+        def push_po_undo_action(label: str, changes: dict[int, dict[str, str]]) -> None:
+            po = po_file()
+            if po is None:
+                return
+            action_changes: list[dict[str, object]] = []
+            for row, change in sorted(changes.items()):
+                if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                    continue
+                old_text = str(change.get("old", ""))
+                new_text = str(change.get("new", ""))
+                if old_text == new_text:
+                    continue
+                entry = po.entries[row]  # type: ignore[union-attr]
+                action_changes.append(
+                    {
+                        "row": row,
+                        "uid": entry.uid,
+                        "old": old_text,
+                        "new": new_text,
+                    }
+                )
+            if not action_changes:
+                return
+            _po_undo_stack().append({"label": label, "changes": action_changes})
+            trim_po_undo_stack()
+
+        def record_po_undo(row: int, old_text: str, new_text: str, label: str = "edit") -> None:
+            if old_text == new_text or state.get("undoing"):
+                return
+            batch = state.get("undo_batch")
+            if isinstance(batch, dict):
+                changes = batch.setdefault("changes", {})
+                if isinstance(changes, dict):
+                    existing = changes.get(row)
+                    if isinstance(existing, dict):
+                        original_old = str(existing.get("old", ""))
+                        if original_old == new_text:
+                            changes.pop(row, None)
+                        else:
+                            existing["new"] = new_text
+                    else:
+                        changes[row] = {"old": old_text, "new": new_text}
+                return
+            push_po_undo_action(label, {row: {"old": old_text, "new": new_text}})
+
+        def begin_po_undo_batch(label: str) -> None:
+            if state.get("undo_batch") is None:
+                state["undo_batch"] = {"label": label, "changes": {}}
+
+        def end_po_undo_batch() -> None:
+            batch = state.get("undo_batch")
+            state["undo_batch"] = None
+            if not isinstance(batch, dict):
+                return
+            changes = batch.get("changes")
+            if isinstance(changes, dict):
+                push_po_undo_action(str(batch.get("label") or "edit"), changes)
+
+        def row_for_undo_change(change: dict[str, object]) -> int | None:
+            po = po_file()
+            if po is None:
+                return None
+            uid = str(change.get("uid", ""))
+            try:
+                row = int(change.get("row", -1))
+            except Exception:
+                row = -1
+            if 0 <= row < len(po.entries) and (not uid or po.entries[row].uid == uid):  # type: ignore[union-attr]
+                return row
+            if uid:
+                for idx, entry in enumerate(po.entries):  # type: ignore[union-attr]
+                    if entry.uid == uid:
+                        return idx
+            return None
+
+        def undo_last_po_change() -> None:
+            if self._undo_focused_text_editor():
+                return
+            focus = QApplication.focusWidget()
+            if (
+                focus is table
+                or focus is suggestions_list
+                or (focus is not None and (table.isAncestorOf(focus) or suggestions_list.isAncestorOf(focus)))
+            ):
+                if self._undo_text_editor(vi_box):
+                    return
+            stack = _po_undo_stack()
+            if not stack:
+                set_status("Nothing to undo.")
+                return
+            action = stack.pop()
+            raw_changes = action.get("changes", [])
+            if not isinstance(raw_changes, list):
+                set_status("Nothing to undo.")
+                return
+            restored_rows: list[int] = []
+            state["undoing"] = True
+            try:
+                for change in raw_changes:
+                    if not isinstance(change, dict):
+                        continue
+                    row = row_for_undo_change(change)
+                    if row is None:
+                        continue
+                    old_text = str(change.get("old", ""))
+                    if set_entry_translation(row, old_text, record_undo=False):
+                        restored_rows.append(row)
+            finally:
+                state["undoing"] = False
+            if not restored_rows:
+                set_status("Nothing to undo.")
+                return
+            try:
+                keep_vi_focus = _focus_is_vi_editor()
+            except Exception:
+                keep_vi_focus = False
+            select_entry_row(restored_rows[0], center=True, keep_vi_focus=keep_vi_focus)
+            refresh_suggestions_for_row(table.currentRow())
+            set_status(f"Undid {len(restored_rows)} PO edit{'s' if len(restored_rows) != 1 else ''}. Save when ready.")
+
         def _same_file(a: Path | None, b: Path | None) -> bool:
             if a is None or b is None:
                 return False
@@ -1938,7 +3903,7 @@ class ToolkitGUI(QMainWindow):
             current = current_path()
             current_key = str(current.expanduser().resolve(strict=False)) if current is not None else ""
             signature_items: list[tuple[str, int, int]] = []
-            for raw_path in self._translafixer_source_paths():
+            for raw_path in self._all_configured_working_paths():
                 try:
                     po_path = Path(str(raw_path)).expanduser()
                     resolved = str(po_path.resolve(strict=False))
@@ -1949,7 +3914,7 @@ class ToolkitGUI(QMainWindow):
             return tuple(signature_items), current_key
 
         def rebuild_suggestion_candidates(*, quiet: bool = False) -> None:
-            sources = self._translafixer_source_paths()
+            sources = self._all_configured_working_paths()
             current = current_path()
             state["suggestion_source_signature"] = _suggestion_source_signature()
             state["suggestion_index"] = TranslationSuggestionIndex()
@@ -1959,7 +3924,7 @@ class ToolkitGUI(QMainWindow):
                 cache.clear()
             if not sources:
                 if not quiet:
-                    set_status("No Translafixer sources. Add files/folders in Translafixer for suggestions.")
+                    set_status("No Settings Working folders found. Set Working folders in Settings for suggestions.")
                 return
             try:
                 index, result = TranslationSuggestionIndex.from_translafixer_sources(
@@ -1968,13 +3933,13 @@ class ToolkitGUI(QMainWindow):
                 )
             except Exception as exc:
                 if not quiet:
-                    QMessageBox.warning(self, "PO Viewer", f"Could not build suggestion index from Translafixer sources:\n{exc}")
+                    QMessageBox.warning(self, "PO Viewer", f"Could not build suggestion index from Settings Working folders:\n{exc}")
                 return
             state["suggestion_index"] = index
             state["suggestion_source_result"] = result
             if not quiet:
                 skipped = f", skipped current={result.skipped_source_targets}" if result.skipped_source_targets else ""
-                set_status(f"Suggestion index: {result.usable_translations} translated entries from {result.source_files} Translafixer source file(s){skipped}.")
+                set_status(f"Suggestion index: {result.usable_translations} translated entries from {result.source_files} Settings Working .po file(s){skipped}.")
 
         def ensure_suggestion_index(*, force: bool = False, quiet: bool = True) -> TranslationSuggestionIndex | None:
             signature = _suggestion_source_signature()
@@ -2102,7 +4067,7 @@ class ToolkitGUI(QMainWindow):
             translation = str(data.get("translation") or "")
             if not translation.strip():
                 return
-            set_entry_translation(row, translation)
+            set_entry_translation(row, translation, undo_label="suggestion")
 
         def apply_suggestion_number(number: int) -> None:
             index = number - 1
@@ -2136,24 +4101,33 @@ class ToolkitGUI(QMainWindow):
                 if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                     en_box.clear()
                     vi_box.clear()
+                    speaker_label.setText("Speaker: —")
+                    speaker_label.setToolTip("")
                     return
                 entry = po.entries[row]  # type: ignore[union-attr]
+                speaker = entry.speaker.strip() or "—"
+                speaker_label.setText(f"Speaker: {speaker}")
+                speaker_label.setToolTip(entry.msgctxt or "")
                 if en_box.toPlainText() != entry.msgid:
                     en_box.setPlainText(entry.msgid)
                 if vi_box.toPlainText() != entry.msgstr:
                     vi_box.setPlainText(entry.msgstr)
+                    self._clear_text_editor_undo(vi_box)
                 set_status(f"Entry {row + 1}/{len(po.entries)} | line {entry.line}")  # type: ignore[union-attr]
                 refresh_suggestions_for_row(row)
             finally:
                 state["detail_loading"] = False
 
-        def set_entry_translation(row: int, text: str, *, dirty: bool = True) -> bool:
+        def set_entry_translation(row: int, text: str, *, dirty: bool = True, record_undo: bool = True, undo_label: str = "edit") -> bool:
             po = po_file()
             if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                 return False
             entry = po.entries[row]  # type: ignore[union-attr]
             if entry.msgstr == text:
                 return False
+            old_text = entry.msgstr
+            if record_undo:
+                record_po_undo(row, old_text, text, undo_label)
             entry.msgstr = text
             state["loading"] = True
             try:
@@ -2167,6 +4141,7 @@ class ToolkitGUI(QMainWindow):
                 try:
                     if vi_box.toPlainText() != text:
                         vi_box.setPlainText(text)
+                        self._clear_text_editor_undo(vi_box)
                 finally:
                     state["detail_loading"] = False
             refresh_row_style(row)
@@ -2243,7 +4218,14 @@ class ToolkitGUI(QMainWindow):
             finally:
                 file_combo.blockSignals(False)
 
-        def set_file_list(paths: list[str | Path], source_text: str, *, auto_load: bool = True, quiet: bool = False) -> None:
+        def set_file_list(
+            paths: list[str | Path],
+            source_text: str,
+            *,
+            auto_load: bool = True,
+            quiet: bool = False,
+            update_source_edit: bool = True,
+        ) -> None:
             source_paths = [Path(str(item)).expanduser() for item in paths if str(item).strip()]
             files = discover_po_files(source_paths)
             state["loading_files"] = True
@@ -2277,8 +4259,11 @@ class ToolkitGUI(QMainWindow):
                 return
 
             state["source_text"] = source_text
-            source_edit.setText(source_text)
-            self.config["po_viewer_source"] = source_text
+            if update_source_edit:
+                source_edit.setText(source_text)
+                self.config["po_viewer_source"] = source_text
+            else:
+                self.config["po_viewer_source"] = source_edit.text().strip()
             self.config["po_viewer_files"] = [str(item) for item in files]
             save_config(self.config)
             if not quiet:
@@ -2287,22 +4272,22 @@ class ToolkitGUI(QMainWindow):
                 load_file()
 
         def load_source_from_text() -> None:
-            raw = source_edit.text().strip()
-            if not raw:
-                QMessageBox.warning(self, "PO Viewer", "Choose .po file(s) or a folder first.")
+            paths = self._processing_paths("po_viewer", extra_edit=source_edit, include_extra=source_extra_check, require_any=False)
+            if not paths:
+                QMessageBox.warning(self, "PO Viewer", "No input paths. Select file groups with Working folders in Settings, or enable Extra source.")
                 return
-            parts = [part.strip() for part in raw.split(";") if part.strip()]
-            set_file_list(parts or [raw], raw, auto_load=True)
+            source_text = "; ".join(str(path) for path in paths)
+            set_file_list(paths, source_text, auto_load=True, update_source_edit=False)
 
         def load_file(path: Path | None = None) -> None:
             if path is None:
                 path = current_file_path()
             if path is None:
-                raw = source_edit.text().strip()
-                if raw:
-                    set_file_list([raw], raw, auto_load=True)
+                paths = self._processing_paths("po_viewer", extra_edit=source_edit, include_extra=source_extra_check, require_any=False)
+                if paths:
+                    set_file_list(paths, "; ".join(str(path) for path in paths), auto_load=True, update_source_edit=False)
                     return
-                QMessageBox.warning(self, "PO Viewer", "Choose .po file(s) or a folder first.")
+                QMessageBox.warning(self, "PO Viewer", "No input paths. Select file groups with Working folders in Settings, or enable Extra source.")
                 return
             path = Path(path).expanduser()
             if not path.is_file() or path.suffix.lower() != ".po":
@@ -2316,6 +4301,8 @@ class ToolkitGUI(QMainWindow):
             state["po"] = po
             state["path"] = path
             state["dirty"] = False
+            _po_undo_stack().clear()
+            self._clear_text_editor_undo(vi_box)
             select_combo_path(path)
             self.config["po_viewer_file"] = str(path)
             if not self.config.get("po_viewer_source"):
@@ -2389,6 +4376,205 @@ class ToolkitGUI(QMainWindow):
             select_entry_row(target, center=center, keep_vi_focus=keep_vi_focus)
             return True
 
+        def open_search_replace_dialog() -> None:
+            existing = state.get("search_replace_dialog")
+            if isinstance(existing, QDialog):
+                existing.show()
+                existing.raise_()
+                existing.activateWindow()
+                return
+
+            dialog = QDialog(self)
+            dialog.setWindowTitle("PO Viewer Search / Replace")
+            dialog.setModal(False)
+            dialog.resize(520, 210)
+            root = QVBoxLayout(dialog)
+            root.setContentsMargins(10, 10, 10, 10)
+            root.setSpacing(8)
+
+            form = QFormLayout()
+            find_edit = QLineEdit(str(state.get("search_replace_find", "")))
+            find_edit.setPlaceholderText("Find text...")
+            replace_edit = QLineEdit(str(state.get("search_replace_replace", "")))
+            replace_edit.setPlaceholderText("Replace with...")
+            scope_combo = QComboBox()
+            scope_combo.addItem("Vietnamese msgstr", "vi")
+            scope_combo.addItem("English msgid", "en")
+            scope_combo.addItem("Both", "both")
+            form.addRow("Find", find_edit)
+            form.addRow("Replace", replace_edit)
+            form.addRow("Search in", scope_combo)
+            root.addLayout(form)
+
+            option_row = QHBoxLayout()
+            case_chk = QCheckBox("Case sensitive")
+            whole_chk = QCheckBox("Whole word")
+            regex_chk = QCheckBox("Regex")
+            for widget in (case_chk, whole_chk, regex_chk):
+                option_row.addWidget(widget)
+            option_row.addStretch()
+            root.addLayout(option_row)
+
+            status_label = QLabel("")
+            status_label.setObjectName("muted")
+            status_label.setWordWrap(True)
+            root.addWidget(status_label)
+
+            button_row = QHBoxLayout()
+            prev_btn = self._button("Find Prev", secondary=True)
+            next_btn = self._button("Find Next", secondary=True)
+            replace_btn = self._button("Replace", secondary=True)
+            replace_all_btn = self._button("Replace All")
+            close_btn = self._button("Close", secondary=True)
+            for widget in (prev_btn, next_btn, replace_btn, replace_all_btn):
+                button_row.addWidget(widget)
+            button_row.addStretch()
+            button_row.addWidget(close_btn)
+            root.addLayout(button_row)
+
+            def compile_pattern() -> re.Pattern[str] | None:
+                needle_text = find_edit.text()
+                state["search_replace_find"] = needle_text
+                state["search_replace_replace"] = replace_edit.text()
+                if not needle_text:
+                    status_label.setText("Enter text to search.")
+                    return None
+                source = needle_text if regex_chk.isChecked() else re.escape(needle_text)
+                if whole_chk.isChecked():
+                    source = rf"(?<!\w)(?:{source})(?!\w)"
+                flags = 0 if case_chk.isChecked() else re.IGNORECASE
+                try:
+                    return re.compile(source, flags)
+                except re.error as exc:
+                    status_label.setText(f"Invalid regex: {exc}")
+                    return None
+
+            def fields_for_entry(entry) -> list[tuple[str, str]]:
+                scope = str(scope_combo.currentData())
+                fields: list[tuple[str, str]] = []
+                if scope in {"vi", "both"}:
+                    fields.append(("vi", entry.msgstr))
+                if scope in {"en", "both"}:
+                    fields.append(("en", entry.msgid))
+                return fields
+
+            def find_in_row(row: int, pattern: re.Pattern[str]) -> tuple[str, re.Match[str]] | None:
+                po = po_file()
+                if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                    return None
+                entry = po.entries[row]  # type: ignore[union-attr]
+                for field, text_value in fields_for_entry(entry):
+                    match = pattern.search(text_value)
+                    if match:
+                        return field, match
+                return None
+
+            def highlight_match(field: str, match: re.Match[str]) -> None:
+                box = vi_box if field == "vi" else en_box
+                cursor = box.textCursor()
+                cursor.setPosition(match.start())
+                cursor.setPosition(match.end(), QTextCursor.MoveMode.KeepAnchor)
+                box.setTextCursor(cursor)
+                box.setFocus(Qt.FocusReason.ShortcutFocusReason)
+
+            def find_match(direction: int = 1) -> bool:
+                po = po_file()
+                pattern = compile_pattern()
+                if po is None:
+                    status_label.setText("Load a .po file first.")
+                    return False
+                if pattern is None:
+                    return False
+                total = len(po.entries)  # type: ignore[union-attr]
+                if total <= 0:
+                    status_label.setText("No entries loaded.")
+                    return False
+                current = table.currentRow()
+                if current < 0:
+                    current = 0
+                signature = (find_edit.text(), scope_combo.currentData(), case_chk.isChecked(), whole_chk.isChecked(), regex_chk.isChecked())
+                previous_signature = state.get("search_replace_signature")
+                previous_row = state.get("search_replace_last_row")
+                start = current
+                if previous_signature == signature and isinstance(previous_row, int) and previous_row == current:
+                    start = current + direction
+                for step in range(total):
+                    row = (start + (step * direction)) % total
+                    found = find_in_row(row, pattern)
+                    if not found:
+                        continue
+                    field, match = found
+                    select_entry_row(row, center=True)
+                    highlight_match(field, match)
+                    state["search_replace_signature"] = signature
+                    state["search_replace_last_row"] = row
+                    status_label.setText(f"Found in {'Vietnamese' if field == 'vi' else 'English'} at entry {row + 1}/{total}.")
+                    return True
+                status_label.setText("No match found.")
+                return False
+
+            def replacement_value():
+                replacement = replace_edit.text()
+                if regex_chk.isChecked():
+                    return replacement
+                return lambda _match: replacement
+
+            def replace_current() -> None:
+                po = po_file()
+                pattern = compile_pattern()
+                row = table.currentRow()
+                if po is None or pattern is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                    status_label.setText("Find a loaded entry first.")
+                    return
+                entry = po.entries[row]  # type: ignore[union-attr]
+                new_text, count = pattern.subn(replacement_value(), entry.msgstr, count=1)
+                if count <= 0:
+                    status_label.setText("Current row has no Vietnamese match to replace.")
+                    return
+                set_entry_translation(row, new_text, undo_label="replace")
+                status_label.setText(f"Replaced 1 match in entry {row + 1}.")
+                find_match(1)
+
+            def replace_all() -> None:
+                po = po_file()
+                pattern = compile_pattern()
+                if po is None:
+                    status_label.setText("Load a .po file first.")
+                    return
+                if pattern is None:
+                    return
+                changed_rows = 0
+                total_matches = 0
+                begin_po_undo_batch("replace all")
+                try:
+                    for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
+                        new_text, count = pattern.subn(replacement_value(), entry.msgstr)
+                        if count <= 0:
+                            continue
+                        total_matches += count
+                        if set_entry_translation(row, new_text, undo_label="replace all"):
+                            changed_rows += 1
+                finally:
+                    end_po_undo_batch()
+                refresh_suggestions_for_row(table.currentRow())
+                status_label.setText(f"Replaced {total_matches} match{'es' if total_matches != 1 else ''} in {changed_rows} row{'s' if changed_rows != 1 else ''}.")
+
+            prev_btn.clicked.connect(lambda: find_match(-1))
+            next_btn.clicked.connect(lambda: find_match(1))
+            replace_btn.clicked.connect(replace_current)
+            replace_all_btn.clicked.connect(replace_all)
+            close_btn.clicked.connect(dialog.close)
+            find_edit.returnPressed.connect(lambda: find_match(1))
+            dialog_undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), dialog)
+            dialog_undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+            dialog_undo_shortcut.activated.connect(undo_last_po_change)
+            dialog.finished.connect(lambda _result: state.pop("search_replace_dialog", None))
+            state["search_replace_dialog"] = dialog
+            state["search_replace_dialog_undo_shortcut"] = dialog_undo_shortcut
+            dialog.show()
+            find_edit.setFocus(Qt.FocusReason.ShortcutFocusReason)
+            find_edit.selectAll()
+
         def open_file_in_po_viewer(path: str | Path, *, uid: str | None = None, line: int | None = None, source_paths: list[str] | None = None) -> bool:
             target = Path(str(path)).expanduser()
             if not target.is_file() or target.suffix.lower() != ".po":
@@ -2446,7 +4632,12 @@ class ToolkitGUI(QMainWindow):
                 start = str(source if source.is_dir() else source.parent)
             paths, _ = QFileDialog.getOpenFileNames(self, "Open .po file(s)", start, "PO files (*.po);;All files (*.*)")
             if paths:
-                set_file_list(paths, "; ".join(paths), auto_load=True)
+                source_edit.setText("; ".join(paths))
+                source_extra_check.setChecked(True)
+                self.config["po_viewer_source"] = source_edit.text().strip()
+                self.config[self._include_extra_config_key("po_viewer")] = True
+                save_config(self.config)
+                load_source_from_text()
 
         def browse_folder() -> None:
             current = current_path()
@@ -2457,12 +4648,17 @@ class ToolkitGUI(QMainWindow):
                 start = str(source if source.is_dir() else source.parent)
             folder = QFileDialog.getExistingDirectory(self, "Open folder with .po files", start)
             if folder:
-                set_file_list([folder], folder, auto_load=True)
+                source_edit.setText(folder)
+                source_extra_check.setChecked(True)
+                self.config["po_viewer_source"] = source_edit.text().strip()
+                self.config[self._include_extra_config_key("po_viewer")] = True
+                save_config(self.config)
+                load_source_from_text()
 
         def table_item_changed(item: QTableWidgetItem) -> None:
             if state.get("loading") or item.column() != 3:
                 return
-            set_entry_translation(item.row(), item.text())
+            set_entry_translation(item.row(), item.text(), undo_label="table edit")
 
         def vi_text_changed() -> None:
             if state.get("detail_loading"):
@@ -2470,7 +4666,7 @@ class ToolkitGUI(QMainWindow):
             row = table.currentRow()
             if row < 0:
                 return
-            set_entry_translation(row, vi_box.toPlainText())
+            set_entry_translation(row, vi_box.toPlainText(), record_undo=False)
 
         def wrap_rows(rows: list[int]) -> None:
             po = po_file()
@@ -2478,13 +4674,17 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "PO Viewer", "Load a file first.")
                 return
             changed = 0
-            for row in rows:
-                if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
-                    continue
-                entry = po.entries[row]  # type: ignore[union-attr]
-                fixed, did_change = wrap_msgstr(entry.msgstr)
-                if did_change and set_entry_translation(row, fixed):
-                    changed += 1
+            begin_po_undo_batch("wrap")
+            try:
+                for row in rows:
+                    if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                        continue
+                    entry = po.entries[row]  # type: ignore[union-attr]
+                    fixed, did_change = wrap_msgstr(entry.msgstr)
+                    if did_change and set_entry_translation(row, fixed, undo_label="wrap"):
+                        changed += 1
+            finally:
+                end_po_undo_batch()
             set_status(f"Wrapped {changed} translation entr{'y' if changed == 1 else 'ies'}.")
 
         def wrap_selected() -> None:
@@ -2506,12 +4706,14 @@ class ToolkitGUI(QMainWindow):
             mode = QPlainTextEdit.LineWrapMode.WidgetWidth if enabled else QPlainTextEdit.LineWrapMode.NoWrap
             en_box.setLineWrapMode(mode)
             vi_box.setLineWrapMode(mode)
-            wrap_view_btn.setText(f"Visual wrap: {'ON' if enabled else 'OFF'}")
+            wrap_view_btn.setText(f"↔ {'ON' if enabled else 'OFF'}")
+            wrap_view_btn.setToolTip(f"Visual wrap: {'ON' if enabled else 'OFF'}")
             set_status("Visual line wrap enabled." if enabled else "Visual line wrap disabled.")
 
         def set_clt_color_mode(enabled: bool, *, persist: bool = True, quiet: bool = False) -> None:
             state["clt_color_mode"] = enabled
-            clt_color_btn.setText(f"CLT view: {'Color' if enabled else 'Tags'}")
+            clt_color_btn.setText(f"CLT {'C' if enabled else 'T'}")
+            clt_color_btn.setToolTip(f"CLT view: {'Color' if enabled else 'Tags'}")
             en_box._clt_highlighter.set_color_spans(enabled)
             vi_box._clt_highlighter.set_color_spans(enabled)
             for row in range(table.rowCount()):
@@ -2561,19 +4763,23 @@ class ToolkitGUI(QMainWindow):
             matched = 0
             changed = 0
             unchanged = 0
-            for row in rows:
-                if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
-                    continue
-                entry = po.entries[row]  # type: ignore[union-attr]
-                replacement = translations.get(msgid_match_key(entry.msgid))
-                if replacement is None:
-                    continue
-                matched += 1
-                if entry.msgstr == replacement:
-                    unchanged += 1
-                    continue
-                if set_entry_translation(row, replacement):
-                    changed += 1
+            begin_po_undo_batch("translafix")
+            try:
+                for row in rows:
+                    if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                        continue
+                    entry = po.entries[row]  # type: ignore[union-attr]
+                    replacement = translations.get(msgid_match_key(entry.msgid))
+                    if replacement is None:
+                        continue
+                    matched += 1
+                    if entry.msgstr == replacement:
+                        unchanged += 1
+                        continue
+                    if set_entry_translation(row, replacement, undo_label="translafix"):
+                        changed += 1
+            finally:
+                end_po_undo_batch()
             conflict_note = f" | conflicts skipped={result.ambiguous_msgids}" if result.ambiguous_msgids else ""
             set_status(
                 f"Translafix {mode}: source files={result.source_files}, usable={result.usable_translations}, "
@@ -2595,7 +4801,7 @@ class ToolkitGUI(QMainWindow):
             if not api_key:
                 QMessageBox.warning(self, "PO Viewer", "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
                 return
-            prompt = str(self.config.get("gemini_api_prompt", "")).strip() or SYSTEM_INSTRUCTIONS
+            prompt = SYSTEM_INSTRUCTIONS
             model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
             batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
             sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
@@ -2613,10 +4819,14 @@ class ToolkitGUI(QMainWindow):
                 )
                 changed = 0
                 by_uid = {entry.uid: row for row, entry in zip(rows, entries)}
-                for uid, translation in translations.items():
-                    row = by_uid.get(uid)
-                    if row is not None and set_entry_translation(row, translation):
-                        changed += 1
+                begin_po_undo_batch("gemini")
+                try:
+                    for uid, translation in translations.items():
+                        row = by_uid.get(uid)
+                        if row is not None and set_entry_translation(row, translation, undo_label="gemini"):
+                            changed += 1
+                finally:
+                    end_po_undo_batch()
                 refresh_suggestions_for_row(table.currentRow())
             except Exception as exc:
                 QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
@@ -2665,17 +4875,20 @@ class ToolkitGUI(QMainWindow):
         open_po_btn.clicked.connect(open_current_po_external)
         browse_files_btn.clicked.connect(browse_files)
         browse_folder_btn.clicked.connect(browse_folder)
-        load_btn.clicked.connect(lambda: load_file() if source_edit.text().strip() == state.get("source_text") else load_source_from_text())
+        load_btn.clicked.connect(load_source_from_text)
         save_btn.clicked.connect(save_file)
         file_combo.currentIndexChanged.connect(lambda _idx: None if state.get("loading_files") else load_file())
         source_edit.returnPressed.connect(load_source_from_text)
         source_edit.editingFinished.connect(lambda: (self.config.__setitem__("po_viewer_source", source_edit.text().strip()), save_config(self.config)))
+        source_extra_check.stateChanged.connect(lambda _state: (self.config.__setitem__(self._include_extra_config_key("po_viewer"), source_extra_check.isChecked()), save_config(self.config)))
         wrap_view_btn.clicked.connect(toggle_visual_wrap)
         clt_color_btn.clicked.connect(toggle_clt_color_mode)
         wrap_selected_btn.clicked.connect(wrap_selected)
         wrap_all_btn.clicked.connect(wrap_all)
         fill_btn.clicked.connect(fill_from_translafixer_sources)
         gemini_selected_btn.clicked.connect(translate_selected_with_gemini_api)
+        search_replace_btn.clicked.connect(open_search_replace_dialog)
+        dup_ref_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(tab_key="po_viewer"))
         refresh_suggest_btn.clicked.connect(lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         apply_suggest_btn.clicked.connect(apply_selected_suggestion)
         suggestions_list.itemDoubleClicked.connect(lambda _item: apply_selected_suggestion())
@@ -2703,6 +4916,8 @@ class ToolkitGUI(QMainWindow):
         add_shortcut("Ctrl+E", focus_vi_editor)
         add_shortcut("F2", focus_vi_editor)
         add_shortcut("Ctrl+S", save_file)
+        add_shortcut("Ctrl+Z", undo_last_po_change)
+        add_shortcut("Ctrl+F", open_search_replace_dialog)
         add_shortcut("Ctrl+Return", wrap_selected)
         add_shortcut("Ctrl+Enter", wrap_selected)
         for suggestion_number in range(1, 10):
@@ -2712,13 +4927,15 @@ class ToolkitGUI(QMainWindow):
 
         set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)
 
-        if initial_source:
-            set_file_list([initial_source], initial_source, auto_load=False, quiet=True)
+        initial_paths = self._processing_paths("po_viewer", extra_edit=source_edit, include_extra=source_extra_check, require_any=False)
+        if initial_paths:
+            set_file_list(initial_paths, "; ".join(str(path) for path in initial_paths), auto_load=False, quiet=True, update_source_edit=False)
 
     # ---------------- Gemini Web / API ----------------
     def _build_translate_tab(self) -> None:
         _tab, layout = self._new_tab("Gemini Web")
-        path_edit = self._path_row(layout, "Folder", "last_path")
+        self._dr_option_selector(layout, "gemini_web")
+        path_edit, include_extra = self._extra_path_row(layout, "gemini_web", "Extra folder", "last_path")
 
         form = QFormLayout()
         mode_combo = QComboBox()
@@ -2746,11 +4963,6 @@ class ToolkitGUI(QMainWindow):
         api_model_edit = QLineEdit(str(self.config.get("gemini_api_model", self.config.get("gemini_model", "gemini-2.5-flash"))))
         form.addRow("API model", api_model_edit)
 
-        api_prompt_edit = QPlainTextEdit()
-        api_prompt_edit.setPlainText(str(self.config.get("gemini_api_prompt", "")).strip() or SYSTEM_INSTRUCTIONS)
-        api_prompt_edit.setMinimumHeight(125)
-        api_prompt_edit.setPlaceholderText("Prompt used by Gemini API translation calls.")
-        form.addRow("API prompt", api_prompt_edit)
         layout.addLayout(form)
 
         grid = QGridLayout()
@@ -2802,7 +5014,6 @@ class ToolkitGUI(QMainWindow):
             rename_folders.setEnabled(not is_api)
             api_key_edit.setEnabled(is_api)
             api_model_edit.setEnabled(is_api)
-            api_prompt_edit.setEnabled(is_api)
             chrome_btn.setEnabled(not is_api)
             run_btn.setText("Run Gemini API" if is_api else "Run Gemini Web")
 
@@ -2818,70 +5029,100 @@ class ToolkitGUI(QMainWindow):
             self.config["gemini_api_use_key"] = api_key_toggle.isChecked()
             self.config["gemini_api_key"] = api_key_edit.text().strip()
             self.config["gemini_api_model"] = api_model_edit.text().strip() or "gemini-2.5-flash"
-            self.config["gemini_api_prompt"] = api_prompt_edit.toPlainText().strip() or SYSTEM_INSTRUCTIONS
             self.config["gemini_api_sleep_seconds"] = wait_seconds.value()
             save_config(self.config)
 
         def run_web(logwrite):
             save_web_config()
+            paths = self._processing_paths("gemini_web", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
             limit = max_files.value()
-            result = run_gemini_web_path(
-                path_edit.text().strip(),
-                max_files=None if limit <= 0 else limit,
-                max_lines_per_batch=max_lines.value(),
-                max_entries_per_batch=max_entries.value(),
-                wait_between_batches=wait_seconds.value(),
-                cdp_url=cdp_edit.text().strip() or "http://localhost:9222",
-                allow_invalid=lambda: bool(allow_state["value"]),
-                rename_duplicates=rename_dupes.isChecked(),
-                create_missing_backups=backup_missing.isChecked(),
-                rename_folders=rename_folders.isChecked(),
-                response_timeout_seconds=timeout_seconds.value(),
-                retry_count=retries.value(),
-                log=lambda msg: logwrite(msg),
-                stop_requested=self._stop_event.is_set,
-            )
-            if not result.files:
+            remaining = None if limit <= 0 else limit
+            total_files = 0
+            total_translated = 0
+            total_errors = 0
+            for input_path in paths:
+                self._check_stop()
+                if remaining is not None and remaining <= 0:
+                    break
+                logwrite(f"Gemini Web input: {input_path}")
+                result = run_gemini_web_path(
+                    str(input_path),
+                    max_files=remaining,
+                    max_lines_per_batch=max_lines.value(),
+                    max_entries_per_batch=max_entries.value(),
+                    wait_between_batches=wait_seconds.value(),
+                    cdp_url=cdp_edit.text().strip() or "http://localhost:9222",
+                    allow_invalid=lambda: bool(allow_state["value"]),
+                    rename_duplicates=rename_dupes.isChecked(),
+                    create_missing_backups=backup_missing.isChecked(),
+                    rename_folders=rename_folders.isChecked(),
+                    response_timeout_seconds=timeout_seconds.value(),
+                    retry_count=retries.value(),
+                    log=lambda msg: logwrite(msg),
+                    stop_requested=self._stop_event.is_set,
+                )
+                if not result.files:
+                    logwrite(f"No untranslated PO files found in {input_path}.", "warn")
+                    continue
+                total_files += len(result.files)
+                total_translated += result.total_translated
+                total_errors += result.total_errors
+                if remaining is not None:
+                    remaining = max(0, remaining - len(result.files))
+                for item in result.files:
+                    self._check_stop()
+                    tag = "good" if not item.errors else "warn"
+                    logwrite(f"{item.file} | missing={item.missing_before} | applied={item.translated} | errors={len(item.errors)}", tag)
+                    if item.debug_log:
+                        logwrite(f"  debug: {item.debug_log}")
+                    if item.backup_created:
+                        logwrite("  backup: created missing Copy.po only; existing Copy.po was not touched", "good")
+                    if item.folder_renamed_to:
+                        logwrite(f"  folder: {item.folder_renamed_from} -> {item.folder_renamed_to}", "good")
+                    elif item.folder_rename_skipped_reason:
+                        logwrite(f"  folder: skipped ({item.folder_rename_skipped_reason})", "warn")
+                    for e in item.errors[:40]:
+                        logwrite(f"  {e.uid} | {e.msgctxt} | {e.reason}", "bad")
+                    if len(item.errors) > 40:
+                        logwrite(f"  ... {len(item.errors) - 40} more errors", "warn")
+            if not total_files:
                 logwrite("No untranslated PO files found.", "warn")
                 return
-            for item in result.files:
-                self._check_stop()
-                tag = "good" if not item.errors else "warn"
-                logwrite(f"{item.file} | missing={item.missing_before} | applied={item.translated} | errors={len(item.errors)}", tag)
-                if item.debug_log:
-                    logwrite(f"  debug: {item.debug_log}")
-                if item.backup_created:
-                    logwrite("  backup: created missing Copy.po only; existing Copy.po was not touched", "good")
-                if item.folder_renamed_to:
-                    logwrite(f"  folder: {item.folder_renamed_from} -> {item.folder_renamed_to}", "good")
-                elif item.folder_rename_skipped_reason:
-                    logwrite(f"  folder: skipped ({item.folder_rename_skipped_reason})", "warn")
-                for e in item.errors[:40]:
-                    logwrite(f"  {e.uid} | {e.msgctxt} | {e.reason}", "bad")
-                if len(item.errors) > 40:
-                    logwrite(f"  ... {len(item.errors) - 40} more errors", "warn")
-            logwrite(f"Total translated: {result.total_translated}", "good")
-            if result.total_errors:
-                logwrite(f"Total errors: {result.total_errors}", "bad")
+            logwrite(f"Total translated: {total_translated}", "good")
+            if total_errors:
+                logwrite(f"Total errors: {total_errors}", "bad")
 
         def run_api(logwrite):
             save_web_config()
             api_key = api_key_edit.text().strip() or os.environ.get("GEMINI_API_KEY", "").strip()
             if not api_key:
                 raise RuntimeError("Gemini API key missing. Paste it into the API key field or set GEMINI_API_KEY.")
-            base_text = path_edit.text().strip()
-            if not base_text:
-                raise RuntimeError("Choose a .po file or folder first.")
-            base = Path(base_text).expanduser()
-            if not base.exists():
-                raise RuntimeError(f"Path not found: {base}")
-            prompt = api_prompt_edit.toPlainText().strip() or SYSTEM_INSTRUCTIONS
+            paths = self._processing_paths("gemini_web", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
+            prompt = SYSTEM_INSTRUCTIONS
             client = GeminiApiClient(api_key=api_key, model=api_model_edit.text().strip() or "gemini-2.5-flash", prompt=prompt)
             limit = max_files.value()
-            if base.is_file():
-                po_files = [base] if base.suffix.lower() == ".po" else []
-            else:
-                po_files = discover_untranslated_po_files(base, max_files=None if limit <= 0 else limit)
+            po_files: list[Path] = []
+            seen: set[str] = set()
+            for base in paths:
+                self._check_stop()
+                if limit > 0 and len(po_files) >= limit:
+                    break
+                if base.is_file():
+                    candidates = [base] if base.suffix.lower() == ".po" else []
+                else:
+                    candidates = discover_untranslated_po_files(base, max_files=None)
+                for candidate in candidates:
+                    key = self._path_key(candidate)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    po_files.append(candidate)
+                    if limit > 0 and len(po_files) >= limit:
+                        break
             if not po_files:
                 logwrite("No untranslated PO files found.", "warn")
                 return
@@ -2927,7 +5168,6 @@ class ToolkitGUI(QMainWindow):
         api_key_toggle.stateChanged.connect(lambda _state: sync_mode_ui())
         api_key_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_key", text.strip()))
         api_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_model", text.strip()))
-        api_prompt_edit.textChanged.connect(lambda: self.config.__setitem__("gemini_api_prompt", api_prompt_edit.toPlainText().strip()))
         for widget in [cdp_edit, api_key_edit, api_model_edit]:
             widget.editingFinished.connect(save_web_config)
         run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run_selected_mode))
@@ -2947,9 +5187,15 @@ class ToolkitGUI(QMainWindow):
 
     def _build_backup_tab(self) -> None:
         _tab, layout = self._new_tab("Backup / Sync")
-        backup_edit = self._path_row(layout, "Backup path", "last_path")
-        source_edit = self._path_row(layout, "Sync source", "sync_source")
-        target_edit = self._path_row(layout, "Sync target", "sync_target")
+        self._dr_option_selector(layout, "backup_sync")
+        backup_edit, include_extra = self._extra_path_row(layout, "backup_sync", "Extra backup path", "last_path")
+        source_edit = self._path_row(layout, "Manual sync source", "sync_source")
+        target_edit = self._path_row(layout, "Manual sync target", "sync_target")
+
+        sync_hint = QLabel("Backup and restore use selected Settings > Working folders. Extra backup path is included only when its toggle is on. Selected option sync copies Working *name* → Sync *name*. Manual sync by filename still uses its explicit source/target pair.")
+        sync_hint.setObjectName("muted")
+        sync_hint.setWordWrap(True)
+        layout.addWidget(sync_hint)
 
         restore_group = QGroupBox("Restore paths")
         restore_layout = QHBoxLayout(restore_group)
@@ -3018,10 +5264,14 @@ class ToolkitGUI(QMainWindow):
         row = QHBoxLayout()
         row.addStretch()
         backup_btn = self._button("Create Missing Copy.po Backups")
+        option_sync_btn = self._button("Sync Selected Options")
         sync_btn = self._button("Sync by Filename", secondary=True)
+        move_compile_btn = self._button("Move Compile", secondary=True)
         restore_btn = self._button("Restore Working PO from Copy.po")
         row.addWidget(backup_btn)
+        row.addWidget(option_sync_btn)
         row.addWidget(sync_btn)
+        row.addWidget(move_compile_btn)
         row.addWidget(restore_btn)
         layout.addLayout(row)
         log = self._make_log()
@@ -3029,8 +5279,16 @@ class ToolkitGUI(QMainWindow):
 
         def backup(logwrite):
             self._check_stop()
-            n = make_backups(backup_edit.text().strip(), overwrite=False)
-            logwrite(f"Missing Copy.po backups written: {n}", "good")
+            paths = self._processing_paths("backup_sync", extra_edit=backup_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
+            total = 0
+            for input_path in paths:
+                self._check_stop()
+                written = make_backups(input_path, overwrite=False)
+                total += written
+                logwrite(f"{input_path}: wrote {written} missing Copy.po backup(s)", "good" if written else "warn")
+            logwrite(f"Missing Copy.po backups written: {total}", "good")
             logwrite("Existing Copy.po files were not touched.", "warn")
 
         def sync(logwrite):
@@ -3071,12 +5329,90 @@ class ToolkitGUI(QMainWindow):
             log_paths("Target files with no source filename match (not found in source)", result.target_without_source, "warn")
             logwrite(f"Files synced: {result.copied}", "good" if result.copied else "warn")
 
-        def restore_from_copy(logwrite):
-            if not restore_paths:
-                logwrite("Add or drag one or more restore folders / - Copy.po files first.", "warn")
+        def sync_selected_options(logwrite):
+            selected = self._selected_dr_options("backup_sync")
+            if not selected:
+                logwrite("No Danganronpa file groups selected.", "warn")
+                return
+            total_matched = total_copied = total_errors = 0
+            for option_key in selected:
+                self._check_stop()
+                label = option_name(option_key)
+                working_folder = str(self.config.get(f"working_{option_key}_path", "")).strip()
+                sync_folder = str(self.config.get(f"sync_{option_key}_path", "")).strip()
+                filter_by_option = False
+
+                # Backward-compatible fallback for older configs. Dedicated Working
+                # paths are preferred because Sync folders are targets only.
+                if not working_folder:
+                    legacy_root = str(self.config.get("game_folder_path", "")).strip()
+                    if legacy_root:
+                        working_folder = legacy_root
+                        filter_by_option = True
+                        logwrite(f"{label}: using legacy Settings > Game Folder fallback. Set Working {label} for dedicated sync source.", "warn")
+
+                if not working_folder:
+                    logwrite(f"Skip {label}: set Settings > Working {label} first.", "warn")
+                    continue
+                if not sync_folder:
+                    logwrite(f"Skip {label}: set Settings > Sync {label} first.", "warn")
+                    continue
+                try:
+                    result = sync_option_from_working_folder(working_folder, sync_folder, option_key, filter_by_option=filter_by_option)
+                except Exception as exc:
+                    logwrite(f"ERR {label}: {exc}", "bad")
+                    total_errors += 1
+                    continue
+                total_matched += result.matched
+                total_copied += result.copied
+                total_errors += len(result.errors)
+                tag = "good" if result.copied else "warn"
+                logwrite(
+                    f"{label}: source={result.source_root}, sync={result.target_root}, matched={result.matched}, copied={result.copied}, identical={result.skipped_identical}, self={result.skipped_self}, errors={len(result.errors)}",
+                    tag,
+                )
+                for src, dest in result.copied_files[:100]:
+                    logwrite(f"  copy: {src} -> {dest}", "good")
+                if len(result.copied_files) > 100:
+                    logwrite(f"  ... {len(result.copied_files) - 100} more copied", "good")
+                for src, err in result.errors[:50]:
+                    logwrite(f"  ERR {src}: {err}", "bad")
+                if len(result.errors) > 50:
+                    logwrite(f"  ... {len(result.errors) - 50} more errors", "bad")
+            logwrite(f"Selected option sync done. matched={total_matched}, copied={total_copied}, errors={total_errors}", "good" if total_errors == 0 else "warn")
+
+        def move_compile(logwrite):
+            repack = str(self.config.get("repack_path", "")).strip()
+            script = str(self.config.get("script_path", "")).strip()
+            if not repack or not script:
+                logwrite("Set Settings > Repack and Settings > Script first.", "warn")
                 return
             self._check_stop()
-            results = restore_working_po_from_copies(list(restore_paths))
+            result = move_repack_to_script(repack, script)
+            logwrite(f"Repack files scanned: {result.scanned}")
+            for src, dest in result.moved_files[:200]:
+                self._check_stop()
+                logwrite(f"  move: {src} -> {dest}", "good")
+            if len(result.moved_files) > 200:
+                logwrite(f"  ... {len(result.moved_files) - 200} more moved", "good")
+            for src, err in result.errors[:80]:
+                logwrite(f"  ERR {src}: {err}", "bad")
+            if len(result.errors) > 80:
+                logwrite(f"  ... {len(result.errors) - 80} more errors", "bad")
+            logwrite(f"Moved compile files: {result.moved}", "good" if result.moved else "warn")
+            if result.overwritten:
+                logwrite(f"Overwritten existing Script files: {result.overwritten}", "warn")
+            if result.errors:
+                logwrite(f"Move compile errors: {len(result.errors)}", "bad")
+
+        def restore_from_copy(logwrite):
+            working_paths = self._selected_working_paths("backup_sync", logwrite=logwrite)
+            paths = [str(path) for path in working_paths] + list(restore_paths)
+            if not paths:
+                logwrite("Select Working folders or add restore folders / - Copy.po files first.", "warn")
+                return
+            self._check_stop()
+            results = restore_working_po_from_copies(paths)
             ok = failed = 0
             for result in results:
                 self._check_stop()
@@ -3104,7 +5440,9 @@ class ToolkitGUI(QMainWindow):
             self._run_threaded(restore_btn, log, restore_from_copy)
 
         backup_btn.clicked.connect(lambda: self._run_threaded(backup_btn, log, backup))
+        option_sync_btn.clicked.connect(lambda: self._run_threaded(option_sync_btn, log, sync_selected_options))
         sync_btn.clicked.connect(lambda: self._run_threaded(sync_btn, log, sync))
+        move_compile_btn.clicked.connect(lambda: self._run_threaded(move_compile_btn, log, move_compile))
         restore_btn.clicked.connect(start_restore)
 
 

@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from .dr_options import DR_FILE_OPTION_KEYS
+
 DEFAULT_CONFIG = {
     "last_path": "",
     "rules_file": "rules/mass_replace_rules.json",
@@ -27,8 +29,26 @@ DEFAULT_CONFIG = {
     "gemini_api_sleep_seconds": 1.0,
     "po_viewer_suggest_min_score": 70,
     "po_viewer_clt_color_mode": False,
+    "translafixer_hidden_duplicate_keys": [],
+    "game_folder_path": "",
+    "repack_path": "",
+    "script_path": "",
 }
-
+DEFAULT_CONFIG.update({f"working_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
+DEFAULT_CONFIG.update({f"sync_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
+DEFAULT_CONFIG.update({
+    f"{tab_key}_include_extra_path": False
+    for tab_key in (
+        "validate",
+        "replace",
+        "linewrap",
+        "search",
+        "translafixer",
+        "po_viewer",
+        "gemini_web",
+        "backup_sync",
+    )
+})
 
 
 def default_config_path() -> Path:

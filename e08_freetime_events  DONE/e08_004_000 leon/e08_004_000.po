@@ -28,9 +28,7 @@ msgctxt "0002 | NARRATION"
 msgid ""
 "<CLT 23>What would you like to give him?\n"
 "<CLT>"
-msgstr ""
-"<CLT 23>Bạn muốn tặng cậu ấy món gì?\n"
-"<CLT>"
+msgstr "<CLT 23>Bạn muốn tặng cậu ấy món quà gì?<CLT>"
 
 #. もーらい！　サンキューな！
 msgctxt "0003 | LEON KUWATA"
@@ -44,7 +42,7 @@ msgid ""
 "<CLT 4>Does that mean he liked it...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy nghĩa là cậu ấy thích nó...?\n"
+"<CLT 4>Như vậy nghĩa là cậu ấy có thích nó nhỉ...?\n"
 "<CLT>"
 
 #. 何っ！？　オレにくれんの！？
@@ -68,7 +66,7 @@ msgid ""
 "<CLT 4>I get the impression that he liked it. That's good...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như cậu ấy thích nó thật. Thế thì tốt rồi...\n"
+"<CLT 4>Mình có cảm giác là cậu ấy thích nó. May quá...\n"
 "<CLT>"
 
 #. うっそ！　貰っていいの！？
@@ -121,7 +119,7 @@ msgid ""
 "<CLT 4>Uh-oh... I don't think he was too happy with that...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chết rồi... Có vẻ như cậu ấy không vui lắm...\n"
+"<CLT 4>Tiêu rồi... Hình như cậu ấy không vui lắm với món quà đó...\n"
 "<CLT>"
 
 #. こんなモン渡されても困るっつーか…
@@ -154,14 +152,13 @@ msgid ""
 "me now...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hình như mình làm cậu ấy nổi giận rồi... Chắc ấn tượng về mình\n"
-"tệ đi mất...\n"
-"<CLT>"
+"<CLT 4>Mình... nghĩ là mình đã làm cậu ấy giận rồi. Giờ chắc cậu ấy còn\n"
+"ghét mình hơn nữa...<CLT>"
 
 #. やっぱり渡す
 msgctxt "0019 | CHOICE/RE:ACT"
 msgid "Maybe not..."
-msgstr "Để xem lại..."
+msgstr "Có lẽ là không..."
 
 #. 渡さない
 msgctxt "0020 | CHOICE/RE:ACT"

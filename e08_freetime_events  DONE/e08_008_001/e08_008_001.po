@@ -41,7 +41,7 @@ msgid ""
 "<CLT 4>Hmm... Should I talk to Kyoko for a while?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Nên làm gì đây? Có nên rủ Kyoko đi cùng không nhỉ?\n"
+"<CLT 4>Nên làm gì đây? Có nên rủ Kyoko trò chuyện một lát không nhỉ?\n"
 "<CLT>"
 
 #. この学園について、
@@ -67,8 +67,8 @@ msgid ""
 "didn't say anything to each other...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã đi cùng Kyoko trong khi cậu ấy điều tra ngôi trường.\n"
-"Chẳng có lấy một lời hội thoại nào giữa cả hai...\n"
+"<CLT 4>Mình đã đi theo Kyoko trong lúc cậu ấy đi khắp trường để điều\n"
+"tra. Cả hai vẫn chẳng nói với nhau lời nào...\n"
 "<CLT>"
 
 #. <CLT 4>霧切さんと少し仲良くなれたみたいだ…
@@ -90,7 +90,7 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không hẳn"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0012 | NARRATION"

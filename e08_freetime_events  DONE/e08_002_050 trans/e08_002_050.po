@@ -19,8 +19,8 @@ msgid ""
 "How many times do I have to tell you? You're annoying.\n"
 "Feel free to crawl off and die."
 msgstr ""
-"Tôi phải nói bao nhiêu lần thì cậu mới hiểu? Cậu vướng mắt lắm.\n"
-"Biến đi đâu đó đi."
+"Phải nói bao nhiêu lần mới hiểu đây? Cậu thật phiền phức. Biến\n"
+"đi đâu cho khuất mắt tôi đi."
 
 #. <CLT 4>めげずに、十神クンと一緒に過ごした。
 #. <CLT>
@@ -30,7 +30,8 @@ msgid ""
 "Byakuya.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không nản chí, và đã dành chút thời gian ở cùng Byakuya.\n"
+"<CLT 4>Không để bản thân nản lòng, mình đã dành thời gian ở bên cạnh\n"
+"Byakuya.\n"
 "<CLT>"
 
 #. 俺に付きまとう気か？
@@ -51,7 +52,8 @@ msgid ""
 "Byakuya.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không nản chí, và đã dành chút thời gian ở cùng Byakuya.\n"
+"<CLT 4>Không để bản thân nản lòng, mình đã dành thời gian ở bên cạnh\n"
+"Byakuya.\n"
 "<CLT>"
 
 #. ………………
@@ -71,7 +73,7 @@ msgid ""
 "<CLT 4>I spent some time with Byakuya in silence...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã ở cùng Byakuya một lúc trong im lặng...\n"
+"<CLT 4>Mình đã ở cạnh Byakuya trong sự im lặng bao trùm...\n"
 "<CLT>"
 
 #. …弱ったな。
@@ -83,7 +85,9 @@ msgstr "...Yếu đuối thật."
 #. まったく興味がないんだ…
 msgctxt "0009 | BYAKUYA TOGAMI"
 msgid "I have no interest in a commoner like you."
-msgstr "Tôi hoàn toàn không hứng thú với loại người như cậu..."
+msgstr ""
+"Tôi hoàn toàn chẳng có chút hứng thú nào với thứ dân đen như cậu\n"
+"cả."
 
 #. <CLT 4>なじられながらも、
 #. 十神クンと一緒に過ごした…
@@ -94,7 +98,8 @@ msgid ""
 "Byakuya.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù bị mắng mỏ, mình vẫn dành chút thời gian ở cùng Byakuya...\n"
+"<CLT 4>Mặc kệ những lời mỉa mai, mình vẫn dành thời gian ở bên cạnh\n"
+"Byakuya...\n"
 "<CLT>"
 
 #. <CLT 4>十神クンと少し仲良くなれたみたいだ…
@@ -115,9 +120,9 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không hẳn, chắc là không"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0014 | NARRATION"
 msgid "<CLT 3><CLT><CLT 23>Would you like to give Byakuya a<CLT> <CLT 3>present<CLT><CLT 23>?<CLT>"
-msgstr "<CLT 3><CLT><CLT 23>Bạn có muốn tặng Byakuya một <CLT><CLT 3>món quà<CLT><CLT 23> không?<CLT>"
+msgstr "<CLT 23>Bạn có muốn tặng <CLT><CLT 3>quà<CLT><CLT 23> cho Byakuya không?<CLT>"

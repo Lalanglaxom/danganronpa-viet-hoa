@@ -46,7 +46,9 @@ msgctxt "0005 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Does that mean he liked it...?\n"
 "<CLT>"
-msgstr "<CLT 4>Liệu như vậy nghĩa là cậu ấy thích nó nhỉ...?<CLT>"
+msgstr ""
+"<CLT 4>Như vậy nghĩa là cậu ấy có thích nó nhỉ...?\n"
+"<CLT>"
 
 #. おーし、気に入った…
 #. タイマンしてやんよ…
@@ -152,7 +154,7 @@ msgstr ""
 #. やっぱり渡す
 msgctxt "0018 | CHOICE/RE:ACT"
 msgid "Maybe not..."
-msgstr "Hay là thôi nhỉ..."
+msgstr "Có lẽ là không..."
 
 #. 渡さない
 msgctxt "0019 | CHOICE/RE:ACT"
@@ -166,5 +168,5 @@ msgid ""
 "<CLT 23>Are you sure you don't want to give him something?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn chắc chắn là không muốn tặng cậu ấy thứ gì chứ?\n"
+"<CLT 23>Bạn chắc là không muốn tặng cậu ấy món gì chứ?\n"
 "<CLT>"

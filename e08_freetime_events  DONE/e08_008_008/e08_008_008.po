@@ -53,7 +53,7 @@ msgid ""
 "<CLT 4>Hmm... Should I talk to Kyoko for a while?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Nên làm gì đây? Có nên thử rủ Kyoko không nhỉ?\n"
+"<CLT 4>Nên làm gì đây? Có nên rủ Kyoko trò chuyện một lát không nhỉ?\n"
 "<CLT>"
 
 #. 断る理由はないし…
@@ -105,7 +105,7 @@ msgstr "Có, chắc chắn rồi"
 #. 渡さない
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Not really, no"
-msgstr "Không hẳn"
+msgstr "Chắc là không"
 
 #. <CLT 3>プレゼント<CLT><CLT 23>を渡しますか？<CLT>
 msgctxt "0013 | NARRATION"

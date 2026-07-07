@@ -7,6 +7,7 @@ src/dr_po_toolkit/cleanup.py
 src/dr_po_toolkit/cli.py
 src/dr_po_toolkit/config.py
 src/dr_po_toolkit/discovery.py
+src/dr_po_toolkit/dr_options.py
 src/dr_po_toolkit/gemini_web.py
 src/dr_po_toolkit/gui.py
 src/dr_po_toolkit/linewrap.py

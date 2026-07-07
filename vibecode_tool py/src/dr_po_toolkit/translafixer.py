@@ -50,6 +50,22 @@ class TranslationSuggestion:
 
 
 @dataclass(slots=True)
+class ReferenceTranslationConflictEntry:
+    """One reference entry whose msgid has multiple different translations."""
+
+    key: str
+    source: str
+    translation: str
+    speaker: str
+    file: Path
+    row: int
+    uid: str
+    line: int
+    msgctxt: str
+    variants: int = 0
+
+
+@dataclass(slots=True)
 class _SuggestionCandidate:
     key: str
     source: str
@@ -99,6 +115,14 @@ CLT_MATCH_RE = re.compile(r"<\s*clt(?:[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
 
 
 WORD_RE = re.compile(r"\w+", re.UNICODE)
+
+
+def _canonical_clt_tag(match: re.Match[str]) -> str:
+    """Return a stable visible CLT tag for duplicate-review grouping."""
+    raw = match.group(0)
+    code_match = re.search(r"clt[\s_]*(\d+|n)?", raw, re.IGNORECASE)
+    code = (code_match.group(1) if code_match else "") or ""
+    return f"<CLT {code.lower()}>" if code else "<CLT>"
 
 
 def suggestion_match_key(text: str) -> str:
@@ -336,6 +360,22 @@ def msgid_match_key(text: str) -> str:
     return re.sub(r"\s+", " ", stripped).strip()
 
 
+def reference_duplicate_msgid_key(text: str) -> str:
+    """Return the duplicate-review key while preserving CLT tags.
+
+    Unlike Translafixer fill/suggestions, the reference duplicate view treats CLT
+    tags as part of the source sentence, so ``<CLT 4>Hello<CLT>`` and ``Hello``
+    are reviewed as different source groups. Whitespace is still collapsed, and
+    CLT tag spelling/spacing is canonicalized to avoid noisy differences such as
+    ``<clt_4>`` versus ``<CLT 4>``.
+    """
+    normalized = CLT_MATCH_RE.sub(_canonical_clt_tag, _norm(text))
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    normalized = re.sub(r"(<CLT(?: (?:\d+|n))?>)\s+", r"\1", normalized)
+    normalized = re.sub(r"\s+(<CLT(?: (?:\d+|n))?>)", r"\1", normalized)
+    return normalized
+
+
 def _resolve(path: Path) -> Path:
     return path.expanduser().resolve(strict=False)
 
@@ -389,9 +429,12 @@ def build_translation_map(
     """Build msgid -> msgstr from selected correct translation files.
 
     Matching intentionally uses the original text (msgid), not file name or context.
-    If the same msgid has different non-empty translations in the source files, that
-    msgid is marked ambiguous and removed from the usable map so the fixer does not
-    write a wrong translation into another context.
+    Empty source msgstr values are always ignored so Translafixer cannot blank out
+    target translations. ``include_empty`` is accepted only for compatibility and
+    is intentionally ignored. If the same msgid has different non-empty
+    translations in the source files, that msgid is marked ambiguous and removed
+    from the usable map so the fixer does not write a wrong translation into
+    another context.
     """
     result = TranslafixResult()
     translations: dict[str, str] = {}
@@ -407,7 +450,7 @@ def build_translation_map(
             msgstr = _norm(entry.msgstr)
             if not msgid:
                 continue
-            if not include_empty and not msgstr.strip():
+            if not msgstr.strip():
                 result.empty_source_entries += 1
                 continue
             if msgid in ambiguous:
@@ -435,6 +478,121 @@ def build_translation_map(
     return translations, result
 
 
+def _find_reference_duplicate_source_entries(
+    reference_files: str | Path | Iterable[str | Path],
+    *,
+    include_empty: bool = True,
+    only_conflicts: bool = True,
+) -> tuple[list[ReferenceTranslationConflictEntry], TranslafixResult]:
+    """Return repeated reference-source entries.
+
+    When ``only_conflicts`` is true, only duplicate source groups with different
+    translations are returned. When false, every duplicate source group is
+    returned, even when all translations are identical. Empty msgstr rows are
+    included by default so missing translations can be fixed from nearby
+    duplicates, but groups where every translation is empty are skipped.
+    """
+    result = TranslafixResult()
+    grouped: dict[str, list[ReferenceTranslationConflictEntry]] = defaultdict(list)
+
+    for po_path in _iter_source_po_files(reference_files):
+        result.source_files += 1
+        result.source_paths.append(po_path)
+        po_file = load_po(po_path)
+        for row, entry in enumerate(po_file.entries):
+            result.source_entries += 1
+            key = reference_duplicate_msgid_key(entry.msgid)
+            if not key:
+                continue
+            translation = _norm(entry.msgstr)
+            if not translation.strip():
+                result.empty_source_entries += 1
+                if not include_empty:
+                    continue
+            grouped[key].append(
+                ReferenceTranslationConflictEntry(
+                    key=key,
+                    source=entry.msgid,
+                    translation=entry.msgstr,
+                    speaker=entry.speaker,
+                    file=po_path,
+                    row=row,
+                    uid=entry.uid,
+                    line=entry.line,
+                    msgctxt=entry.msgctxt or "",
+                )
+            )
+
+    duplicate_entries: list[ReferenceTranslationConflictEntry] = []
+    for key, entries in sorted(grouped.items(), key=lambda item: item[0].casefold()):
+        if len(entries) <= 1:
+            continue
+        distinct_with_empty = {re.sub(r"\s+", " ", _norm(entry.translation)).strip() for entry in entries}
+        distinct_non_empty = {value for value in distinct_with_empty if value}
+        if not distinct_non_empty:
+            # All translations for this duplicate source are empty. They are not
+            # actionable in the duplicate view because there is no translation to
+            # compare or copy from.
+            continue
+        distinct = distinct_with_empty if include_empty else distinct_non_empty
+        variants = len(distinct)
+        has_conflict = variants > 1
+        if not has_conflict:
+            result.duplicate_same += len(entries) - 1
+            if only_conflicts:
+                continue
+        entries = sorted(entries, key=lambda entry: (str(entry.file).casefold(), entry.row))
+        for entry in entries:
+            entry.variants = max(1, variants)
+        duplicate_entries.extend(entries)
+        if has_conflict:
+            for entry in entries:
+                result.conflicts.append(
+                    TranslafixSourceConflict(
+                        msgid=entry.key,
+                        first_translation="",
+                        other_translation=entry.translation,
+                        file=entry.file,
+                        line=entry.line,
+                    )
+                )
+
+    result.usable_translations = len(duplicate_entries)
+    return duplicate_entries, result
+
+
+def find_reference_translation_conflicts(
+    reference_files: str | Path | Iterable[str | Path],
+    *,
+    include_empty: bool = True,
+) -> tuple[list[ReferenceTranslationConflictEntry], TranslafixResult]:
+    """Return reference entries where the same msgid has different translations.
+
+    Grouping preserves CLT tags, so the duplicate-conflict view treats strings
+    with different CLT markup as different source sentences. Whitespace is still
+    normalized. Empty msgstr values are included by default unless every entry
+    in the duplicate group is empty.
+    """
+    return _find_reference_duplicate_source_entries(
+        reference_files,
+        include_empty=include_empty,
+        only_conflicts=True,
+    )
+
+
+def find_reference_duplicate_sources(
+    reference_files: str | Path | Iterable[str | Path],
+    *,
+    include_empty: bool = True,
+) -> tuple[list[ReferenceTranslationConflictEntry], TranslafixResult]:
+    """Return repeated reference sources, excluding all-empty groups."""
+    return _find_reference_duplicate_source_entries(
+        reference_files,
+        include_empty=include_empty,
+        only_conflicts=False,
+    )
+
+
 def apply_translafix(
     source_files: str | Path | Iterable[str | Path],
     target_folder: str | Path,
@@ -447,12 +605,14 @@ def apply_translafix(
 ) -> TranslafixResult:
     """Rewrite target msgstr values when target msgid exists in source files.
 
-    Selected source files supply known-good translations. The target folder is scanned
-    recursively and every non-Copy .po file is updated by matching original msgid.
-    If a selected source file also lives inside the target folder, it is skipped so the
-    fixer never rewrites its own source material.
+    Selected source files supply known-good translations. Empty source msgstr values
+    are always skipped, even if ``include_empty`` is passed by old callers, so the
+    fixer never copies blank translations over real target text. The target folder
+    is scanned recursively and every non-Copy .po file is updated by matching
+    original msgid. If a selected source file also lives inside the target folder,
+    it is skipped so the fixer never rewrites its own source material.
     """
-    translations, result = build_translation_map(source_files, include_empty=include_empty)
+    translations, result = build_translation_map(source_files)
     if log is not None:
         log(f"Source files: {result.source_files} | usable msgid translations: {result.usable_translations}")
         if result.conflicts:

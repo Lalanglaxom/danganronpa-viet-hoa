@@ -53,7 +53,7 @@ msgid ""
 "<CLT 4>Does that mean she liked it...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Như vậy nghĩa là cậu ấy có thích một chút không nhỉ...?\n"
+"<CLT 4>Như vậy nghĩa là cậu ấy có thích nó nhỉ...?\n"
 "<CLT>"
 
 #. ありがたく頂戴するぞ…
@@ -89,7 +89,7 @@ msgid ""
 "<CLT 4>I get the impression that she liked it. That's good...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>May quá. Có vẻ như cậu ấy thích nó.\n"
+"<CLT 4>May quá. Có vẻ như cô ấy thích nó.\n"
 "<CLT>"
 
 #. 我に…こんな素晴らしい物をくれるというのか？
@@ -167,7 +167,7 @@ msgid ""
 "<CLT 4>Uh-oh... I don't think she was too happy with that...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chết rồi... Hình như mình làm cậu ấy thất vọng rồi...\n"
+"<CLT 4>Chết cha... Hình như mình làm cô ấy bực rồi...\n"
 "<CLT>"
 
 #. そんな物を渡して…
@@ -197,13 +197,13 @@ msgid ""
 "me now...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Hình như mình làm cậu ấy giận rồi... Ấn tượng xấu đi mất rồi...\n"
-"<CLT>"
+"<CLT 4>Mình... nghĩ là mình đã làm cô ấy giận rồi. Giờ chắc cô ấy còn\n"
+"ghét mình hơn nữa...<CLT>"
 
 #. やっぱり渡す
 msgctxt "0025 | CHOICE/RE:ACT"
 msgid "Maybe not..."
-msgstr "Để xem lại..."
+msgstr "Có lẽ là không..."
 
 #. 渡さない
 msgctxt "0026 | CHOICE/RE:ACT"
@@ -217,5 +217,5 @@ msgid ""
 "<CLT 23>Are you sure you don't want to give her something?\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn chắc chắn không muốn tặng quà gì chứ?\n"
+"<CLT 23>Bạn chắc là không muốn tặng cô ấy món gì chứ?\n"
 "<CLT>"

@@ -1585,8 +1585,8 @@ msgid ""
 "are off-limits at night, so please exercise caution.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Từ 10 giờ đêm đến 7 giờ sáng được tính là <CLT><CLT 3>“Giờ ban đêm”<CLT><CLT 23>. Một số\n"
-"khu vực sẽ bị cấm vào ban đêm, xin hãy lưu ý cẩn thận.\n"
+"<CLT 23>\"<CLT><CLT 3>Giờ ban đêm<CLT><CLT 23>\" là từ 10 giờ tối đến 7 giờ sáng. Một số khu\n"
+"vực sẽ bị cấm vào ban đêm, vì vậy hãy lưu ý cẩn thận.\n"
 "<CLT>"
 
 #. <CLT 23>就寝は寄宿舎エリアに設けられた個室でのみ可能です.
@@ -2259,8 +2259,8 @@ msgid ""
 "right now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nghĩ đến việc bị ai đó dõi theo qua camera thế này, cảm\n"
-"giác thật khó chịu...\n"
+"<CLT 4>Cảm giác bị theo dõi qua cái ống kính này thật là khó chịu,\n"
+"nhưng mà...\n"
 "<CLT>"
 
 #. <CLT 4>校則によると、監視カメラを壊したらマズイんだよな…
@@ -2271,7 +2271,7 @@ msgid ""
 "regulations to mess with any of the cameras.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Theo nội quy, phá hoại camera giám sát là rắc rối to...\n"
+"<CLT 4>Theo nội quy thì phá hoại camera giám sát là không xong đâu...\n"
 "<CLT>"
 
 #. <CLT 4>ムカツクけど、放っておくしかない…

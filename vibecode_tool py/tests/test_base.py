@@ -185,6 +185,29 @@ def test_translafixer_rewrites_target_by_msgid():
         assert 'msgstr "Giữ"' in fixed
 
 
+
+
+def test_translafixer_never_applies_empty_source_msgstr_even_if_requested():
+    import tempfile
+    from dr_po_toolkit.translafixer import apply_translafix
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        correct = root / "correct"
+        target = root / "target"
+        correct.mkdir()
+        target.mkdir()
+        (correct / "blank.po").write_text('msgctxt "A"\nmsgid "Erase"\nmsgstr ""\n', encoding="utf-8")
+        target_po = target / "target.po"
+        target_po.write_text('msgctxt "T"\nmsgid "Erase"\nmsgstr "Keep me"\n', encoding="utf-8")
+
+        result = apply_translafix(correct, target, dry_run=False, create_backup=False, include_empty=True)
+
+        assert result.empty_source_entries == 1
+        assert result.usable_translations == 0
+        assert result.total_changed == 0
+        assert 'msgstr "Keep me"' in target_po.read_text(encoding="utf-8")
+
 def test_translafixer_skips_conflicting_source_msgid():
     import tempfile
     from dr_po_toolkit.translafixer import apply_translafix
@@ -438,3 +461,131 @@ def test_translation_suggestions_can_search_below_seventy_percent():
         assert suggestions
         assert suggestions[0].translation == "Xin chào"
         assert suggestions[0].score < 0.70
+
+
+def test_sync_option_from_dedicated_working_folder_copies_all_files_when_unfiltered():
+    import tempfile
+    from dr_po_toolkit.backup import sync_option_from_working_folder
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        working = root / "working_e01"
+        sync = root / "sync_e01"
+        nested = working / "nested"
+        nested.mkdir(parents=True)
+        # Name intentionally does not contain e01; dedicated Working folders should sync all files.
+        source = nested / "scene.po"
+        source.write_text('msgctxt "A"\nmsgid "Hi"\nmsgstr "Xin chào"\n', encoding="utf-8")
+
+        result = sync_option_from_working_folder(working, sync, "e01", filter_by_option=False)
+
+        assert result.matched == 1
+        assert result.copied == 1
+        assert (sync / "nested" / "scene.po").read_text(encoding="utf-8") == source.read_text(encoding="utf-8")
+
+
+def test_reference_duplicate_conflicts_find_different_translations_only():
+    import tempfile
+    from dr_po_toolkit.translafixer import find_reference_duplicate_sources, find_reference_translation_conflicts, reference_duplicate_msgid_key
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        one = root / "one.po"
+        two = root / "two.po"
+        three = root / "three.po"
+        one.write_text(
+            'msgctxt "A | MAKOTO"\nmsgid "<CLT 4>Hello there\\n"\n"<CLT>"\nmsgstr "Xin chào"\n\n'
+            'msgctxt "SAME"\nmsgid "Same"\nmsgstr "Giống"\n',
+            encoding="utf-8",
+        )
+        two.write_text(
+            'msgctxt "B | KYOKO"\nmsgid "Hello there"\nmsgstr "Chào đó"\n\n'
+            'msgctxt "SAME2"\nmsgid "Same"\nmsgstr "Giống"\n',
+            encoding="utf-8",
+        )
+        three.write_text('msgctxt "C | AOI"\nmsgid "Hello there"\nmsgstr "Chào khác"\n', encoding="utf-8")
+
+        conflicts, result = find_reference_translation_conflicts([root])
+
+        assert result.source_files == 3
+        assert result.ambiguous_msgids == 1
+        assert {item.translation for item in conflicts} == {"Chào đó", "Chào khác"}
+        assert {item.speaker for item in conflicts} == {"KYOKO", "AOI"}
+        assert all(item.key == "Hello there" for item in conflicts)
+
+        all_duplicates, all_result = find_reference_duplicate_sources([root])
+        assert {item.key for item in all_duplicates} == {"Hello there", "Same"}
+        assert len(all_duplicates) == 4
+        assert all_result.duplicate_same == 1
+        assert all_result.ambiguous_msgids == 1
+        assert {item.variants for item in all_duplicates if item.key == "Same"} == {1}
+        assert {item.variants for item in all_duplicates if item.key == "Hello there"} == {2}
+
+        assert reference_duplicate_msgid_key('<CLT 4>Hello there\n<CLT>') != reference_duplicate_msgid_key('Hello there')
+        assert reference_duplicate_msgid_key('<clt_4>Hello there\n<CLT>') == reference_duplicate_msgid_key('<CLT 4>Hello there<CLT>')
+
+
+def test_duplicate_paths_use_selected_checkbox_working_folders():
+    import tempfile
+
+    try:
+        from dr_po_toolkit.gui import MainWindow
+    except ImportError:
+        return
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        e01 = root / "e01"
+        e02 = root / "e02"
+        e01.mkdir()
+        e02.mkdir()
+
+        class Dummy:
+            config = {
+                "working_e01_path": str(e01),
+                "working_e02_path": str(e02),
+                "translafixer_dr_options": ["e02"],
+            }
+            _dr_option_widgets = {}
+            _path_key = MainWindow._path_key
+            _initial_dr_options = MainWindow._initial_dr_options
+            _selected_dr_options = MainWindow._selected_dr_options
+            _selected_working_paths = MainWindow._selected_working_paths
+
+        dummy = Dummy()
+
+        assert MainWindow._duplicate_scan_paths(dummy, "translafixer") == [e02]
+
+        dummy.config["translafixer_dr_options"] = []
+        assert MainWindow._duplicate_scan_paths(dummy, "translafixer") == []
+
+
+def test_reference_duplicate_views_include_mixed_empty_but_skip_all_empty_groups():
+    import tempfile
+    from dr_po_toolkit.translafixer import find_reference_duplicate_sources, find_reference_translation_conflicts
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "one.po").write_text(
+            'msgctxt "A"\nmsgid "Needs translation"\nmsgstr "Có bản dịch"\n\n'
+            'msgctxt "E1"\nmsgid "Still blank"\nmsgstr ""\n',
+            encoding="utf-8",
+        )
+        (root / "two.po").write_text(
+            'msgctxt "B"\nmsgid "Needs translation"\nmsgstr ""\n\n'
+            'msgctxt "E2"\nmsgid "Still blank"\nmsgstr ""\n',
+            encoding="utf-8",
+        )
+
+        conflicts, result = find_reference_translation_conflicts(root)
+        assert {item.key for item in conflicts} == {"Needs translation"}
+        assert {item.translation for item in conflicts} == {"Có bản dịch", ""}
+        assert {item.variants for item in conflicts} == {2}
+        assert result.empty_source_entries == 3
+
+        all_duplicates, _all_result = find_reference_duplicate_sources(root)
+        assert {item.key for item in all_duplicates} == {"Needs translation"}
+        assert {item.translation for item in all_duplicates} == {"Có bản dịch", ""}
+
+        old_style_conflicts, _old_result = find_reference_translation_conflicts(root, include_empty=False)
+        assert old_style_conflicts == []

@@ -234,3 +234,160 @@ def restore_working_po_from_copies(paths: list[str | Path] | tuple[str | Path, .
                 results.append(RestoreCopyResult(copy_po, work_po, action, str(exc)))
 
     return results
+
+
+@dataclass(slots=True)
+class SyncOptionResult:
+    option_key: str
+    source_root: Path
+    target_root: Path
+    matched: int = 0
+    copied: int = 0
+    skipped_identical: int = 0
+    skipped_self: int = 0
+    errors: list[tuple[Path, str]] = field(default_factory=list)
+    copied_files: list[tuple[Path, Path]] = field(default_factory=list)
+    skipped_identical_files: list[tuple[Path, Path]] = field(default_factory=list)
+    skipped_self_files: list[tuple[Path, Path]] = field(default_factory=list)
+
+
+@dataclass(slots=True)
+class MoveCompileResult:
+    source_root: Path
+    target_root: Path
+    scanned: int = 0
+    moved: int = 0
+    overwritten: int = 0
+    errors: list[tuple[Path, str]] = field(default_factory=list)
+    moved_files: list[tuple[Path, Path]] = field(default_factory=list)
+
+
+def _norm_part(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
+
+
+def _matches_dr_option(path: Path, root: Path, option_key: str) -> bool:
+    try:
+        rel = path.relative_to(root)
+    except ValueError:
+        rel = path
+    parts = [_norm_part(part) for part in rel.parts]
+    name = _norm_part(path.name)
+    stem = _norm_part(path.stem)
+    suffix = path.suffix.lower()
+    key = _norm_part(option_key)
+
+    if re.fullmatch(r"e\d{2}", key):
+        return (
+            any(part == key for part in parts[:-1])
+            or stem == key
+            or stem.startswith(f"{key}_")
+            or name.startswith(f"{key}_")
+        )
+
+    if key == "script_pak":
+        return any(part == "script_pak" for part in parts) or suffix == ".pak" or name in {"script_pak", "script_pak_pak"}
+    if key == "mtb":
+        return any(part == "mtb" for part in parts) or suffix == ".mtb"
+    if key == "system":
+        return any(part == "system" for part in parts) or stem == "system" or stem.startswith("system_")
+    if key == "tga":
+        return any(part == "tga" for part in parts) or suffix == ".tga"
+    return any(part == key for part in parts) or stem.startswith(f"{key}_")
+
+
+def sync_option_from_working_folder(
+    working_folder: str | Path,
+    sync_folder: str | Path,
+    option_key: str,
+    *,
+    filter_by_option: bool = True,
+) -> SyncOptionResult:
+    """Copy files from a DR working folder into its sync folder.
+
+    When ``filter_by_option`` is true, only files whose path/name matches the option
+    are copied. Dedicated per-option working folders should pass false so the whole
+    folder syncs into the matching destination. Relative paths are preserved.
+    """
+    source_root = Path(working_folder).expanduser()
+    target_root = Path(sync_folder).expanduser()
+    if not source_root.exists() or not source_root.is_dir():
+        raise ValueError(f"working folder does not exist or is not a folder: {source_root}")
+    target_root.mkdir(parents=True, exist_ok=True)
+    if _is_nested_or_same(source_root, target_root):
+        raise ValueError("working folder and sync folder must be separate, not nested")
+
+    result = SyncOptionResult(option_key=option_key, source_root=source_root, target_root=target_root)
+    for src in sorted(source_root.rglob("*"), key=lambda item: str(item).lower()):
+        if not src.is_file():
+            continue
+        if filter_by_option and not _matches_dr_option(src, source_root, option_key):
+            continue
+        result.matched += 1
+        try:
+            rel = src.relative_to(source_root)
+        except ValueError:
+            rel = Path(src.name)
+        dest = target_root / rel
+        try:
+            if dest.exists():
+                try:
+                    if src.samefile(dest):
+                        result.skipped_self += 1
+                        result.skipped_self_files.append((src, dest))
+                        continue
+                except OSError:
+                    pass
+                if _same_file_content(src, dest):
+                    result.skipped_identical += 1
+                    result.skipped_identical_files.append((src, dest))
+                    continue
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dest)
+            result.copied += 1
+            result.copied_files.append((src, dest))
+        except Exception as exc:
+            result.errors.append((src, str(exc)))
+    return result
+
+
+def move_repack_to_script(repack_folder: str | Path, script_folder: str | Path) -> MoveCompileResult:
+    """Move every file from repack_folder into script_folder, preserving relative paths."""
+    source_root = Path(repack_folder).expanduser()
+    target_root = Path(script_folder).expanduser()
+    if not source_root.exists() or not source_root.is_dir():
+        raise ValueError(f"repack folder does not exist or is not a folder: {source_root}")
+    target_root.mkdir(parents=True, exist_ok=True)
+    if _is_nested_or_same(source_root, target_root):
+        raise ValueError("repack and Script folders must be separate, not nested")
+
+    result = MoveCompileResult(source_root=source_root, target_root=target_root)
+    files = [path for path in source_root.rglob("*") if path.is_file()]
+    for src in sorted(files, key=lambda item: str(item).lower()):
+        result.scanned += 1
+        try:
+            rel = src.relative_to(source_root)
+        except ValueError:
+            rel = Path(src.name)
+        dest = target_root / rel
+        try:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if dest.exists():
+                if dest.is_dir():
+                    result.errors.append((src, f"destination is a folder: {dest}"))
+                    continue
+                dest.unlink()
+                result.overwritten += 1
+            shutil.move(str(src), str(dest))
+            result.moved += 1
+            result.moved_files.append((src, dest))
+        except Exception as exc:
+            result.errors.append((src, str(exc)))
+
+    # Clean empty folders left by the move, deepest first.
+    for folder in sorted([p for p in source_root.rglob("*") if p.is_dir()], key=lambda item: len(item.parts), reverse=True):
+        try:
+            folder.rmdir()
+        except OSError:
+            pass
+    return result
