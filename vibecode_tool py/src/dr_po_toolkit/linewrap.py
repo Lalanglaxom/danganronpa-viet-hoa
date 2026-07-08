@@ -31,11 +31,11 @@ def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) ->
 
     # Dùng 64 cho các câu nhét vừa 2 dòng để tối đa diện tích dòng đầu.
     # Chỉ bóp về 58 khi tổng chữ quá dài (> 122) để các dòng nhìn đều nhau hơn.
-    if total_len <= soft + hard:
-        limit = hard
+    if total_len <= soft * 2:
+        limit = soft
         n_cuts = 1
     else:
-        limit = soft
+        limit = hard
         n_cuts = max_cuts
 
     if total_len <= limit:

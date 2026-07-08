@@ -9,7 +9,7 @@ from .dr_options import DR_FILE_OPTION_KEYS
 DEFAULT_CONFIG = {
     "last_path": "",
     "rules_file": "rules/mass_replace_rules.json",
-    "soft_limit": 58,
+    "soft_limit": 54,
     "hard_limit": 64,
     "max_cuts": 2,
     "gemini_model": "gemini-2.5-flash",
