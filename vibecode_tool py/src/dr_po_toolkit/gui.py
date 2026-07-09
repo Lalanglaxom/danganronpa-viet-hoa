@@ -51,7 +51,7 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from .backup import make_backups, move_repack_to_script, restore_working_po_from_copies, sync_by_filename_report, sync_option_from_working_folder
+from .backup import copy_wad_repack_to_game, make_backups, move_repack_to_script, restore_working_po_from_copies, sync_by_filename_report, sync_option_from_working_folder
 from .cancel import OperationCancelled
 from .config import load_config, save_config
 from .discovery import iter_po_files
@@ -81,6 +81,7 @@ from .translafixer import (
     suggestion_match_key,
 )
 from .validation import format_text_report, validate_path, write_reports
+from .text_utils import compile_search_replace_pattern, search_replace_replacement, user_multiline_text
 
 # Chiaki Nanami inspired theme palette: sleepy gamer, soft pink, muted teal,
 # dusty lavender, cream text, and deep charcoal blue panels.
@@ -520,13 +521,19 @@ class ToolkitGUI(QMainWindow):
                 color: #28131e;
                 border: 0;
                 border-radius: 7px;
-                padding: 5px 9px;
-                font-weight: 800;
+                padding: 6px 10px;
+                font-weight: 900;
             }}
             QPushButton:hover {{ background: {ACCENT_SOFT}; }}
             QPushButton:pressed {{ background: {ACCENT_DARK}; color: {WHITE}; }}
             QPushButton:disabled {{ background: #465066; color: #968da6; }}
+            QPushButton#primaryButton {{ background: {ACCENT}; color: #28131e; }}
+            QPushButton#successButton {{ background: {GOOD}; color: #10251d; }}
+            QPushButton#infoButton {{ background: {BLUE}; color: #0d2138; }}
+            QPushButton#warnButton {{ background: {WARN}; color: #302108; }}
+            QPushButton#deployButton {{ background: {ORANGE}; color: #2c1700; }}
             QPushButton#dangerButton {{ background: {BAD}; color: #241018; }}
+            QPushButton#primaryButton:hover, QPushButton#successButton:hover, QPushButton#infoButton:hover, QPushButton#warnButton:hover, QPushButton#deployButton:hover, QPushButton#dangerButton:hover {{ background: {ACCENT_SOFT}; color: #28131e; }}
             QPushButton#secondaryButton {{ background: {PANEL_3}; color: {TEXT}; border: 1px solid #46506a; }}
             QPushButton#secondaryButton:hover {{ background: #46506a; color: {ACCENT_SOFT}; }}
             QToolButton {{
@@ -585,6 +592,7 @@ class ToolkitGUI(QMainWindow):
         settings_btn.clicked.connect(self._open_settings_dialog)
         top.addWidget(settings_btn)
         self.stop_button = QPushButton("Stop Current Action")
+        self.stop_button.setToolTip("Request the current long-running action to stop at the next safe checkpoint.")
         self.stop_button.setObjectName("dangerButton")
         self.stop_button.setEnabled(False)
         self.stop_button.clicked.connect(self._request_stop)
@@ -628,17 +636,99 @@ class ToolkitGUI(QMainWindow):
         soft_spin = getattr(self, "linewrap_soft_spin", None)
         hard_spin = getattr(self, "linewrap_hard_spin", None)
         cuts_spin = getattr(self, "linewrap_cuts_spin", None)
-        soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 58))
+        soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 54))
         hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
         cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
         return soft_value, hard_value, cuts_value
 
-    def _button(self, text: str, *, secondary: bool = False, danger: bool = False) -> QPushButton:
+    def _button_tooltip(self, text: str) -> str:
+        clean = " ".join((text or "").split())
+        tooltips = {
+            "Settings": "Open folder and app settings.",
+            "All": "Select all items in this section.",
+            "None": "Clear all selections in this section.",
+            "Browse": "Choose a file or folder.",
+            "Close": "Close this window.",
+            "Run Validate": "Validate selected PO files and report issues.",
+            "Run Replace": "Apply mass replacement rules to selected PO files.",
+            "Load": "Load data from the selected file or path.",
+            "Save": "Save current changes.",
+            "Save msgstr": "Save the current Vietnamese translation.",
+            "Add Rule": "Create a new replacement rule.",
+            "Delete": "Delete the selected rule or item.",
+            "Enable Selected": "Enable the selected rules.",
+            "Disable Selected": "Disable the selected rules.",
+            "Apply Wrap": "Apply line wrapping to the test text.",
+            "Clear": "Clear the current list or text box.",
+            "Run Line Wrap": "Wrap msgstr lines in selected PO files.",
+            "Search": "Search selected PO files.",
+            "Open File": "Open the selected result in PO Viewer.",
+            "Wrap Selected": "Wrap selected or current translation rows.",
+            "Find Prev": "Move to the previous match.",
+            "Find Next": "Move to the next match.",
+            "Replace": "Replace the current match.",
+            "Replace Current": "Replace matches in the current row only.",
+            "Replace Selected": "Replace matches in selected rows only.",
+            "Replace All": "Replace all matches in this view.",
+            "Add .po": "Add one or more PO source files.",
+            "Add folder": "Add a folder containing PO files.",
+            "Add Folders": "Add one or more folders.",
+            "Remove": "Remove selected items from this list.",
+            "Diff Dupes": "Show duplicate English entries with different Vietnamese translations.",
+            "All Dupes": "Show all duplicate English entries.",
+            "Run Translafixer": "Apply Translafixer suggestions to selected targets.",
+            "Open": "Open the selected item in PO Viewer.",
+            "Find": "Open search and replace for this view.",
+            "Apply": "Apply the selected or current value.",
+            "Undo": "Undo the most recent edit action.",
+            "Wrap 64": "Wrap selected/current translations using Line Wrap tab settings.",
+            "Hide": "Hide selected duplicate groups.",
+            "Unhide": "Show selected hidden duplicate groups again.",
+            "Reload": "Reload data from disk.",
+            "Refresh": "Refresh the current list or suggestions.",
+            "Run Translation": "Run Gemini translation on selected PO files.",
+            "Open Chrome": "Open Chrome with remote debugging for Gemini Web.",
+            "Create Missing Copy.po Backups": "Create missing Copy.po backups without overwriting existing backups.",
+            "Sync Selected Options": "Copy selected Working folders to their configured Sync folders.",
+            "Sync by Filename": "Sync files by matching filename from source to target.",
+            "Move Compile": "Copy compiled files from Repack to Script. WAD Repack is skipped.",
+            "Move Repack": "Copy all Repack files to Script, excluding WAD Repack files.",
+            "Move to Game": "Copy WAD Repack files into the configured Game Folder.",
+            "Restore Working PO from Copy.po": "Restore Working PO files from matching Copy.po backups.",
+        }
+        return tooltips.get(clean, clean or "Button")
+
+    def _button_role(self, text: str, *, secondary: bool = False, danger: bool = False, role: str | None = None) -> str:
+        clean = " ".join((text or "").split())
+        role_map = {
+            "primary": "primaryButton",
+            "success": "successButton",
+            "info": "infoButton",
+            "warn": "warnButton",
+            "deploy": "deployButton",
+            "danger": "dangerButton",
+            "secondary": "secondaryButton",
+        }
+        if role in role_map:
+            return role_map[role]
+        if danger or clean in {"Delete", "Remove"}:
+            return "dangerButton"
+        if clean in {"Clear", "Disable Selected", "Hide", "Restore Working PO from Copy.po"}:
+            return "warnButton"
+        if clean in {"Move Compile", "Move Repack", "Move to Game", "Sync Selected Options", "Sync by Filename"}:
+            return "deployButton"
+        if clean in {"Save", "Save msgstr", "Apply", "Apply Wrap", "Create Missing Copy.po Backups"}:
+            return "successButton"
+        if clean.startswith("Run") or clean in {"Search", "Replace All", "Add Rule", "Add .po", "Add folder", "Add Folders", "Enable Selected", "Load"}:
+            return "primaryButton" if not secondary else "infoButton"
+        if secondary:
+            return "secondaryButton"
+        return "primaryButton"
+
+    def _button(self, text: str, *, secondary: bool = False, danger: bool = False, role: str | None = None) -> QPushButton:
         btn = QPushButton(text)
-        if danger:
-            btn.setObjectName("dangerButton")
-        elif secondary:
-            btn.setObjectName("secondaryButton")
+        btn.setToolTip(self._button_tooltip(text))
+        btn.setObjectName(self._button_role(text, secondary=secondary, danger=danger, role=role))
         return btn
 
     def _tool_button(
@@ -650,7 +740,7 @@ class ToolkitGUI(QMainWindow):
         width: int = 32,
     ) -> QToolButton:
         btn = QToolButton()
-        btn.setToolTip(tooltip)
+        btn.setToolTip(tooltip or self._button_tooltip(text))
         btn.setText(text)
         if icon is not None:
             btn.setIcon(self.style().standardIcon(icon))
@@ -912,6 +1002,7 @@ class ToolkitGUI(QMainWindow):
         general_form.setSpacing(8)
         general_form.setContentsMargins(8, 8, 8, 8)
         self._path_row(general_form, "Repack", "repack_path")
+        self._path_row(general_form, "WAD Repack", "wad_repack_path")
         self._path_row(general_form, "Script", "script_path")
         self._path_row(general_form, "Game Folder", "game_folder_path")
         content_layout.addWidget(general_box)
@@ -935,6 +1026,7 @@ class ToolkitGUI(QMainWindow):
         edit = QLineEdit(str(self.config.get(key, "")))
         edit.setPlaceholderText("Choose file/folder or paste path...")
         browse = self._button("Browse", secondary=True)
+        open_folder = self._tool_button("", "Open this configured folder in the file explorer", QStyle.StandardPixmap.SP_DirOpenIcon)
 
         def save_path() -> None:
             self.config[key] = edit.text().strip()
@@ -949,10 +1041,26 @@ class ToolkitGUI(QMainWindow):
                 edit.setText(path)
                 save_path()
 
+        def open_configured_path() -> None:
+            raw = edit.text().strip()
+            if not raw:
+                QMessageBox.warning(self, "Open folder", "No folder path is set for this row.")
+                return
+            target = Path(raw).expanduser()
+            if target.is_file():
+                target = target.parent
+            if not target.exists() or not target.is_dir():
+                QMessageBox.warning(self, "Open folder", f"Folder not found:\n{target}")
+                return
+            if not self._open_external(target):
+                QMessageBox.warning(self, "Open folder", f"Could not open folder:\n{target}")
+
         browse.clicked.connect(browse_path)
+        open_folder.clicked.connect(open_configured_path)
         edit.editingFinished.connect(save_path)
         row.addWidget(edit, 1)
         row.addWidget(browse)
+        row.addWidget(open_folder)
         if isinstance(layout, QFormLayout):
             layout.addRow(label, wrap)
         else:
@@ -1208,9 +1316,9 @@ class ToolkitGUI(QMainWindow):
         enable_btn = self._button("Enable Selected", secondary=True)
         disable_btn = self._button("Disable Selected", secondary=True)
         rule_buttons.addWidget(add_btn, 0, 0)
-        rule_buttons.addWidget(delete_btn, 0, 1)
-        rule_buttons.addWidget(enable_btn, 1, 0)
-        rule_buttons.addWidget(disable_btn, 1, 1)
+        rule_buttons.addWidget(enable_btn, 0, 1)
+        rule_buttons.addWidget(disable_btn, 1, 0)
+        rule_buttons.addWidget(delete_btn, 1, 1)
         left_layout.addLayout(rule_buttons)
         splitter.addWidget(left)
 
@@ -1396,12 +1504,24 @@ class ToolkitGUI(QMainWindow):
         dry = QCheckBox("Dry run")
         dry.setChecked(True)
         controls.addWidget(dry)
-        soft = QSpinBox(); soft.setRange(1, 999); soft.setValue(int(self.config.get("soft_limit", 58)))
+        soft = QSpinBox(); soft.setRange(1, 999); soft.setValue(int(self.config.get("soft_limit", 54)))
         hard = QSpinBox(); hard.setRange(1, 999); hard.setValue(int(self.config.get("hard_limit", 64)))
         cuts = QSpinBox(); cuts.setRange(1, 20); cuts.setValue(int(self.config.get("max_cuts", 2)))
         self.linewrap_soft_spin = soft
         self.linewrap_hard_spin = hard
         self.linewrap_cuts_spin = cuts
+        soft.setToolTip("Preferred wrap width used by all wrap buttons.")
+        hard.setToolTip("Hard wrap width used by all wrap buttons.")
+        cuts.setToolTip("Maximum number of automatic line cuts used by all wrap buttons.")
+
+        def save_linewrap_settings() -> None:
+            self.config["soft_limit"] = int(soft.value())
+            self.config["hard_limit"] = int(hard.value())
+            self.config["max_cuts"] = int(cuts.value())
+            save_config(self.config)
+
+        for spin in (soft, hard, cuts):
+            spin.valueChanged.connect(lambda _value: save_linewrap_settings())
         for label, spin in [("Soft", soft), ("Hard", hard), ("Max cuts", cuts)]:
             controls.addWidget(QLabel(label))
             controls.addWidget(spin)
@@ -1540,9 +1660,9 @@ class ToolkitGUI(QMainWindow):
         open_btn = self._button("Open File", secondary=True)
         wrap_btn = self._button("Wrap Selected", secondary=True)
         save_btn = self._button("Save msgstr")
-        edit_buttons.addWidget(open_btn)
-        edit_buttons.addWidget(wrap_btn)
         edit_buttons.addWidget(save_btn)
+        edit_buttons.addWidget(wrap_btn)
+        edit_buttons.addWidget(open_btn)
         right_layout.addLayout(edit_buttons)
 
         replace_group = QGroupBox("Find / Replace in Results")
@@ -1587,27 +1707,8 @@ class ToolkitGUI(QMainWindow):
                 del search_undo_stack[:-100]
 
         def compact(text: str, limit: int = 1000) -> str:
-            text = text.replace("\\n", "\n")
+            text = user_multiline_text(text)
             return text if len(text) <= limit else text[: limit - 1] + "…"
-
-        def multiline_text(editor: QPlainTextEdit) -> str:
-            # Let users type/paste real line breaks, or type \n as a shortcut.
-            return editor.toPlainText().replace("\\n", "\n")
-
-        def flexible_whitespace_pattern(text: str) -> str:
-            # Search text often comes from visible PO text where line breaks were collapsed.
-            # Treat any typed/pasted whitespace as flexible whitespace so "hello world"
-            # can replace "hello\nworld", literal "\\n", and other wrapped msgstr forms.
-            pieces: list[str] = []
-            pos = 0
-            for match in re.finditer(r"\s+", text):
-                if match.start() > pos:
-                    pieces.append(re.escape(text[pos:match.start()]))
-                pieces.append(r"(?:\s+|\\n)+")
-                pos = match.end()
-            if pos < len(text):
-                pieces.append(re.escape(text[pos:]))
-            return "".join(pieces)
 
         def wrap_settings() -> tuple[int, int, int]:
             return self._linewrap_settings()
@@ -1827,7 +1928,7 @@ class ToolkitGUI(QMainWindow):
             if self.search_results:
                 table.selectRow(0)
                 load_selected()
-            if not multiline_text(find_edit).strip():
+            if not user_multiline_text(find_edit.toPlainText()).strip():
                 find_edit.setPlainText(text)
 
         def open_selected_file() -> None:
@@ -1848,15 +1949,19 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "Open file", f"Could not open file:\n{result.file}")
 
         def compile_find() -> re.Pattern[str] | None:
-            needle = multiline_text(find_edit)
+            needle = user_multiline_text(find_edit.toPlainText())
             if not needle.strip():
                 status.setText("Find is empty.")
                 return None
-            pattern = flexible_whitespace_pattern(needle)
-            if replace_whole.isChecked():
-                pattern = r"(?<!\w)" + pattern + r"(?!\w)"
-            flags = 0 if replace_case.isChecked() else re.IGNORECASE
-            return re.compile(pattern, flags)
+            try:
+                return compile_search_replace_pattern(
+                    needle,
+                    case_sensitive=replace_case.isChecked(),
+                    whole_word=replace_whole.isChecked(),
+                )
+            except re.error as exc:
+                status.setText(f"Invalid find pattern: {exc}")
+                return None
 
         def result_matches(idx: int, pattern: re.Pattern[str]) -> bool:
             return bool(pattern.search(self.search_results[idx].msgstr))
@@ -1890,7 +1995,7 @@ class ToolkitGUI(QMainWindow):
             pattern = compile_find()
             if pattern is None:
                 return
-            repl = multiline_text(repl_edit)
+            repl = search_replace_replacement(repl_edit.toPlainText())
             updates: dict[int, str] = {}
             total_hits = 0
             wrapped_count = 0
@@ -2411,6 +2516,10 @@ class ToolkitGUI(QMainWindow):
         root.addWidget(split, 1)
 
         footer = QHBoxLayout()
+        prev_source_btn = self._button("Prev", secondary=True)
+        prev_source_btn.setToolTip("Jump to the previous duplicate source group.")
+        next_source_btn = self._button("Next", secondary=True)
+        next_source_btn.setToolTip("Jump to the next duplicate source group.")
         open_file_btn = self._button("Open", secondary=True)
         open_file_btn.setToolTip("Open the selected .po file in PO Viewer and jump to this entry.")
         search_replace_btn = self._button("Find", secondary=True)
@@ -2431,6 +2540,8 @@ class ToolkitGUI(QMainWindow):
         save_btn = self._button("Save")
         refresh_btn = self._button("Reload", secondary=True)
         close_btn = self._button("Close", secondary=True)
+        footer.addWidget(prev_source_btn)
+        footer.addWidget(next_source_btn)
         footer.addWidget(open_file_btn)
         footer.addWidget(search_replace_btn)
         footer.addWidget(apply_group_btn)
@@ -2848,6 +2959,7 @@ class ToolkitGUI(QMainWindow):
             update_status()
 
         def update_status() -> None:
+            update_duplicate_navigation_buttons()
             dirty = len(changed_files)
             prefix = "* " if dirty else ""
             hidden_group_count = len({key for key in entries_by_key if key in hidden_keys})
@@ -2914,6 +3026,53 @@ class ToolkitGUI(QMainWindow):
                     if key:
                         keys.add(key)
             return keys
+
+        def duplicate_source_group_starts() -> list[int]:
+            starts: list[int] = []
+            previous_key: str | None = None
+            for row in range(table.rowCount()):
+                key = payload_key_from_row(row)
+                if not key:
+                    continue
+                if key != previous_key:
+                    starts.append(row)
+                    previous_key = key
+            return starts
+
+        def update_duplicate_navigation_buttons() -> None:
+            enabled = len(duplicate_source_group_starts()) > 1
+            prev_source_btn.setEnabled(enabled)
+            next_source_btn.setEnabled(enabled)
+
+        def jump_duplicate_source(direction: int) -> None:
+            starts = duplicate_source_group_starts()
+            if not starts:
+                status.setText("No duplicate rows loaded.")
+                update_duplicate_navigation_buttons()
+                return
+            if len(starts) == 1:
+                target_row = starts[0]
+                status.setText("Only one duplicate source group is shown.")
+            else:
+                current_row = table.currentRow()
+                if current_row < 0:
+                    target_row = starts[0] if direction >= 0 else starts[-1]
+                else:
+                    current_index = 0
+                    for index, start_row in enumerate(starts):
+                        if start_row <= current_row:
+                            current_index = index
+                        else:
+                            break
+                    target_index = (current_index + (1 if direction >= 0 else -1)) % len(starts)
+                    target_row = starts[target_index]
+            table.clearSelection()
+            table.selectRow(target_row)
+            table.setCurrentCell(target_row, 0)
+            item = table.item(target_row, 0) or table.item(target_row, 3)
+            if item is not None:
+                table.scrollToItem(item, QAbstractItemView.ScrollHint.PositionAtCenter)
+            load_detail_for_row(target_row)
 
         def remove_displayed_rows_for_keys(keys: set[str]) -> int:
             if not keys:
@@ -3111,9 +3270,9 @@ class ToolkitGUI(QMainWindow):
 
             form = QFormLayout()
             find_edit = QLineEdit(str(search_replace_state.get("find", "")))
-            find_edit.setPlaceholderText("Find text...")
+            find_edit.setPlaceholderText("Find text. Spaces and \n also match real line breaks.")
             replace_edit = QLineEdit(str(search_replace_state.get("replace", "")))
-            replace_edit.setPlaceholderText("Replace Vietnamese with...")
+            replace_edit.setPlaceholderText("Replace Vietnamese with... use \n for a line break.")
             scope_combo = QComboBox()
             scope_combo.addItem("Vietnamese", "vi")
             scope_combo.addItem("English", "en")
@@ -3166,15 +3325,16 @@ class ToolkitGUI(QMainWindow):
             def compile_pattern() -> re.Pattern[str] | None:
                 remember_search_settings()
                 needle_text = find_edit.text()
-                if not needle_text:
+                if not user_multiline_text(needle_text).strip():
                     status_label.setText("Enter text to search.")
                     return None
-                source = needle_text if regex_chk.isChecked() else re.escape(needle_text)
-                if whole_chk.isChecked():
-                    source = rf"(?<!\w)(?:{source})(?!\w)"
-                flags = 0 if case_chk.isChecked() else re.IGNORECASE
                 try:
-                    return re.compile(source, flags)
+                    return compile_search_replace_pattern(
+                        needle_text,
+                        case_sensitive=case_chk.isChecked(),
+                        whole_word=whole_chk.isChecked(),
+                        regex=regex_chk.isChecked(),
+                    )
                 except re.error as exc:
                     status_label.setText(f"Invalid regex: {exc}")
                     return None
@@ -3259,11 +3419,8 @@ class ToolkitGUI(QMainWindow):
                 return False
 
             def replacement_value():
-                replacement = replace_edit.text()
                 remember_search_settings()
-                if regex_chk.isChecked():
-                    return replacement
-                return lambda _match: replacement
+                return search_replace_replacement(replace_edit.text(), regex=regex_chk.isChecked())
 
             def change_row_translation(row: int, new_text: str, *, undo_label: str) -> bool:
                 item = table.item(row, 3)
@@ -3438,8 +3595,10 @@ class ToolkitGUI(QMainWindow):
             except Exception:
                 line_value = None
             uid_value = str(payload.get("uid") or "") or None
-            source_roots = [str(item) for item in self._duplicate_scan_paths(tab_key)]
-            if opener(path, uid=uid_value, line=line_value, source_paths=source_roots):
+            # Pass the already-loaded duplicate file list instead of selected root folders.
+            # That keeps Open fast in large Working folders while preserving a useful PO Viewer file dropdown.
+            source_files = [str(item) for item in sorted(po_cache.keys(), key=lambda value: str(value).casefold())]
+            if opener(path, uid=uid_value, line=line_value, source_paths=source_files):
                 status.setText(f"Opened {path.name} in PO Viewer.")
             else:
                 QMessageBox.warning(dialog, view_title, f"Could not open in PO Viewer:\n{path}")
@@ -3498,6 +3657,8 @@ class ToolkitGUI(QMainWindow):
         table.itemChanged.connect(item_changed)
         table.itemSelectionChanged.connect(selection_changed)
         vi_box.textChanged.connect(detail_changed)
+        prev_source_btn.clicked.connect(lambda: jump_duplicate_source(-1))
+        next_source_btn.clicked.connect(lambda: jump_duplicate_source(1))
         open_file_btn.clicked.connect(open_selected_file_in_po_viewer)
         search_replace_btn.clicked.connect(open_search_replace_dialog)
         wrap_break_btn.clicked.connect(breakline_selected_64)
@@ -4394,9 +4555,9 @@ class ToolkitGUI(QMainWindow):
 
             form = QFormLayout()
             find_edit = QLineEdit(str(state.get("search_replace_find", "")))
-            find_edit.setPlaceholderText("Find text...")
+            find_edit.setPlaceholderText("Find text. Spaces and \\n also match real line breaks.")
             replace_edit = QLineEdit(str(state.get("search_replace_replace", "")))
-            replace_edit.setPlaceholderText("Replace with...")
+            replace_edit.setPlaceholderText("Replace with... use \\n for a line break.")
             scope_combo = QComboBox()
             scope_combo.addItem("Vietnamese msgstr", "vi")
             scope_combo.addItem("English msgid", "en")
@@ -4436,15 +4597,16 @@ class ToolkitGUI(QMainWindow):
                 needle_text = find_edit.text()
                 state["search_replace_find"] = needle_text
                 state["search_replace_replace"] = replace_edit.text()
-                if not needle_text:
+                if not user_multiline_text(needle_text).strip():
                     status_label.setText("Enter text to search.")
                     return None
-                source = needle_text if regex_chk.isChecked() else re.escape(needle_text)
-                if whole_chk.isChecked():
-                    source = rf"(?<!\w)(?:{source})(?!\w)"
-                flags = 0 if case_chk.isChecked() else re.IGNORECASE
                 try:
-                    return re.compile(source, flags)
+                    return compile_search_replace_pattern(
+                        needle_text,
+                        case_sensitive=case_chk.isChecked(),
+                        whole_word=whole_chk.isChecked(),
+                        regex=regex_chk.isChecked(),
+                    )
                 except re.error as exc:
                     status_label.setText(f"Invalid regex: {exc}")
                     return None
@@ -4514,10 +4676,7 @@ class ToolkitGUI(QMainWindow):
                 return False
 
             def replacement_value():
-                replacement = replace_edit.text()
-                if regex_chk.isChecked():
-                    return replacement
-                return lambda _match: replacement
+                return search_replace_replacement(replace_edit.text(), regex=regex_chk.isChecked())
 
             def replace_current() -> None:
                 po = po_file()
@@ -4581,20 +4740,27 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "PO Viewer", f"Could not open in PO Viewer:\n{target}")
                 return False
             roots = [item for item in (source_paths or []) if str(item).strip()]
+            files = state.get("file_paths")
+            in_current_list = False
+            if isinstance(files, list):
+                in_current_list = any(_same_file(item if isinstance(item, Path) else Path(str(item)), target) for item in files)
             if roots:
-                set_file_list(roots, "; ".join(roots), auto_load=False, quiet=True)
-            else:
-                files = state.get("file_paths")
-                in_current_list = False
-                if isinstance(files, list):
-                    in_current_list = any(_same_file(item if isinstance(item, Path) else Path(str(item)), target) for item in files)
-                if not in_current_list:
-                    set_file_list([target], str(target), auto_load=False, quiet=True)
+                root_paths = [Path(str(item)).expanduser() for item in roots]
+                current_sources = state.get("source_paths")
+                current_signature = tuple(sorted(self._path_key(item if isinstance(item, Path) else Path(str(item))) for item in current_sources)) if isinstance(current_sources, list) else ()
+                requested_signature = tuple(sorted(self._path_key(item) for item in root_paths))
+                if requested_signature != current_signature or not in_current_list:
+                    set_file_list(root_paths, "; ".join(str(item) for item in root_paths), auto_load=False, quiet=True)
+            elif not in_current_list:
+                set_file_list([target], str(target), auto_load=False, quiet=True)
             load_file(target)
             select_entry_uid(uid, line=line, center=True)
             tab_widget = getattr(self, "_po_viewer_tab_widget", None)
             if tab_widget is not None:
                 self.tabs.setCurrentWidget(tab_widget)
+            self.raise_()
+            self.activateWindow()
+            QTimer.singleShot(0, focus_vi_editor)
             return True
 
         self._open_file_in_po_viewer = open_file_in_po_viewer
@@ -4673,6 +4839,7 @@ class ToolkitGUI(QMainWindow):
             if po is None:
                 QMessageBox.warning(self, "PO Viewer", "Load a file first.")
                 return
+            soft_value, hard_value, cuts_value = self._linewrap_settings()
             changed = 0
             begin_po_undo_batch("wrap")
             try:
@@ -4680,12 +4847,15 @@ class ToolkitGUI(QMainWindow):
                     if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                         continue
                     entry = po.entries[row]  # type: ignore[union-attr]
-                    fixed, did_change = wrap_msgstr(entry.msgstr)
+                    fixed, did_change = wrap_msgstr(entry.msgstr, soft=soft_value, hard=hard_value, max_cuts=cuts_value)
                     if did_change and set_entry_translation(row, fixed, undo_label="wrap"):
                         changed += 1
             finally:
                 end_po_undo_batch()
-            set_status(f"Wrapped {changed} translation entr{'y' if changed == 1 else 'ies'}.")
+            set_status(
+                f"Wrapped {changed} translation entr{'y' if changed == 1 else 'ies'} "
+                f"using Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
+            )
 
         def wrap_selected() -> None:
             rows = selected_rows()
@@ -4994,8 +5164,8 @@ class ToolkitGUI(QMainWindow):
         row.addStretch()
         run_btn = self._button("Run Translation")
         chrome_btn = self._button("Open Chrome", secondary=True)
-        row.addWidget(run_btn)
         row.addWidget(chrome_btn)
+        row.addWidget(run_btn)
         layout.addLayout(row)
         log = self._make_log()
         layout.addWidget(log, 1)
@@ -5266,12 +5436,14 @@ class ToolkitGUI(QMainWindow):
         backup_btn = self._button("Create Missing Copy.po Backups")
         option_sync_btn = self._button("Sync Selected Options")
         sync_btn = self._button("Sync by Filename", secondary=True)
-        move_compile_btn = self._button("Move Compile", secondary=True)
+        move_compile_btn = self._button("Move Repack")
+        move_game_btn = self._button("Move to Game")
         restore_btn = self._button("Restore Working PO from Copy.po")
         row.addWidget(backup_btn)
         row.addWidget(option_sync_btn)
         row.addWidget(sync_btn)
         row.addWidget(move_compile_btn)
+        row.addWidget(move_game_btn)
         row.addWidget(restore_btn)
         layout.addLayout(row)
         log = self._make_log()
@@ -5384,26 +5556,57 @@ class ToolkitGUI(QMainWindow):
         def move_compile(logwrite):
             repack = str(self.config.get("repack_path", "")).strip()
             script = str(self.config.get("script_path", "")).strip()
+            wad_repack = str(self.config.get("wad_repack_path", "")).strip()
             if not repack or not script:
                 logwrite("Set Settings > Repack and Settings > Script first.", "warn")
                 return
             self._check_stop()
-            result = move_repack_to_script(repack, script)
+            result = move_repack_to_script(repack, script, wad_repack_folder=wad_repack or None)
             logwrite(f"Repack files scanned: {result.scanned}")
+            if result.skipped_wad_repack:
+                logwrite(f"WAD Repack files skipped: {result.skipped_wad_repack}", "warn")
+            if result.skipped_identical:
+                logwrite(f"Identical Script files skipped: {result.skipped_identical}", "info")
             for src, dest in result.moved_files[:200]:
                 self._check_stop()
-                logwrite(f"  move: {src} -> {dest}", "good")
+                logwrite(f"  copy: {src} -> {dest}", "good")
             if len(result.moved_files) > 200:
-                logwrite(f"  ... {len(result.moved_files) - 200} more moved", "good")
+                logwrite(f"  ... {len(result.moved_files) - 200} more copied", "good")
             for src, err in result.errors[:80]:
                 logwrite(f"  ERR {src}: {err}", "bad")
             if len(result.errors) > 80:
                 logwrite(f"  ... {len(result.errors) - 80} more errors", "bad")
-            logwrite(f"Moved compile files: {result.moved}", "good" if result.moved else "warn")
+            logwrite(f"Copied Repack files to Script: {result.moved}", "good" if result.moved else "warn")
             if result.overwritten:
                 logwrite(f"Overwritten existing Script files: {result.overwritten}", "warn")
             if result.errors:
-                logwrite(f"Move compile errors: {len(result.errors)}", "bad")
+                logwrite(f"Move Repack errors: {len(result.errors)}", "bad")
+
+        def move_to_game(logwrite):
+            wad_repack = str(self.config.get("wad_repack_path", "")).strip()
+            game_folder = str(self.config.get("game_folder_path", "")).strip()
+            if not wad_repack or not game_folder:
+                logwrite("Set Settings > WAD Repack and Settings > Game Folder first.", "warn")
+                return
+            self._check_stop()
+            result = copy_wad_repack_to_game(wad_repack, game_folder)
+            logwrite(f"WAD Repack files scanned: {result.scanned}")
+            if result.skipped_identical:
+                logwrite(f"Identical Game Folder files skipped: {result.skipped_identical}", "info")
+            for src, dest in result.moved_files[:200]:
+                self._check_stop()
+                logwrite(f"  copy: {src} -> {dest}", "good")
+            if len(result.moved_files) > 200:
+                logwrite(f"  ... {len(result.moved_files) - 200} more copied", "good")
+            for src, err in result.errors[:80]:
+                logwrite(f"  ERR {src}: {err}", "bad")
+            if len(result.errors) > 80:
+                logwrite(f"  ... {len(result.errors) - 80} more errors", "bad")
+            logwrite(f"Copied WAD Repack files to Game Folder: {result.moved}", "good" if result.moved else "warn")
+            if result.overwritten:
+                logwrite(f"Overwritten existing Game Folder files: {result.overwritten}", "warn")
+            if result.errors:
+                logwrite(f"Move to Game errors: {len(result.errors)}", "bad")
 
         def restore_from_copy(logwrite):
             working_paths = self._selected_working_paths("backup_sync", logwrite=logwrite)
@@ -5443,6 +5646,7 @@ class ToolkitGUI(QMainWindow):
         option_sync_btn.clicked.connect(lambda: self._run_threaded(option_sync_btn, log, sync_selected_options))
         sync_btn.clicked.connect(lambda: self._run_threaded(sync_btn, log, sync))
         move_compile_btn.clicked.connect(lambda: self._run_threaded(move_compile_btn, log, move_compile))
+        move_game_btn.clicked.connect(lambda: self._run_threaded(move_game_btn, log, move_to_game))
         restore_btn.clicked.connect(start_restore)
 
 

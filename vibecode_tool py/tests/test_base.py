@@ -589,3 +589,15 @@ def test_reference_duplicate_views_include_mixed_empty_but_skip_all_empty_groups
 
         old_style_conflicts, _old_result = find_reference_translation_conflicts(root, include_empty=False)
         assert old_style_conflicts == []
+
+
+def test_shared_search_replace_ignores_linebreak_shape():
+    from dr_po_toolkit.text_utils import compile_search_replace_pattern, search_replace_replacement
+
+    pattern = compile_search_replace_pattern("hello world")
+    assert pattern.search("hello\nworld")
+    assert pattern.search(r"hello\nworld")
+
+    replaced, count = pattern.subn(search_replace_replacement(r"xin\nchao"), "hello\nworld")
+    assert count == 1
+    assert replaced == "xin\nchao"

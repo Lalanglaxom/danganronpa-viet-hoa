@@ -258,8 +258,19 @@ class MoveCompileResult:
     scanned: int = 0
     moved: int = 0
     overwritten: int = 0
+    skipped_identical: int = 0
+    skipped_wad_repack: int = 0
     errors: list[tuple[Path, str]] = field(default_factory=list)
     moved_files: list[tuple[Path, Path]] = field(default_factory=list)
+    skipped_identical_files: list[tuple[Path, Path]] = field(default_factory=list)
+
+    @property
+    def copied(self) -> int:
+        return self.moved
+
+    @property
+    def copied_files(self) -> list[tuple[Path, Path]]:
+        return self.moved_files
 
 
 def _norm_part(value: str) -> str:
@@ -351,19 +362,57 @@ def sync_option_from_working_folder(
     return result
 
 
-def move_repack_to_script(repack_folder: str | Path, script_folder: str | Path) -> MoveCompileResult:
-    """Move every file from repack_folder into script_folder, preserving relative paths."""
-    source_root = Path(repack_folder).expanduser()
-    target_root = Path(script_folder).expanduser()
+def _is_under_or_same(path: Path, root: Path) -> bool:
+    try:
+        p = path.resolve(strict=False)
+        r = root.resolve(strict=False)
+    except OSError:
+        p = path.absolute()
+        r = root.absolute()
+    return p == r or p.is_relative_to(r)
+
+
+def _looks_like_wad_repack_path(path: Path, root: Path) -> bool:
+    try:
+        rel = path.relative_to(root)
+    except ValueError:
+        rel = path
+    return any(_norm_part(part) in {"wad_repack", "wadrepack"} for part in rel.parts[:-1])
+
+
+def _copy_tree_files(
+    source_folder: str | Path,
+    target_folder: str | Path,
+    *,
+    source_label: str,
+    target_label: str,
+    excluded_folder: str | Path | None = None,
+    skip_wad_named_folders: bool = False,
+) -> MoveCompileResult:
+    source_root = Path(source_folder).expanduser()
+    target_root = Path(target_folder).expanduser()
     if not source_root.exists() or not source_root.is_dir():
-        raise ValueError(f"repack folder does not exist or is not a folder: {source_root}")
+        raise ValueError(f"{source_label} folder does not exist or is not a folder: {source_root}")
     target_root.mkdir(parents=True, exist_ok=True)
     if _is_nested_or_same(source_root, target_root):
-        raise ValueError("repack and Script folders must be separate, not nested")
+        raise ValueError(f"{source_label} and {target_label} folders must be separate, not nested")
+
+    exclude_root: Path | None = None
+    if excluded_folder:
+        candidate = Path(excluded_folder).expanduser()
+        if candidate.exists():
+            exclude_root = candidate
 
     result = MoveCompileResult(source_root=source_root, target_root=target_root)
     files = [path for path in source_root.rglob("*") if path.is_file()]
     for src in sorted(files, key=lambda item: str(item).lower()):
+        if exclude_root is not None and _is_under_or_same(src, exclude_root):
+            result.skipped_wad_repack += 1
+            continue
+        if skip_wad_named_folders and _looks_like_wad_repack_path(src, source_root):
+            result.skipped_wad_repack += 1
+            continue
+
         result.scanned += 1
         try:
             rel = src.relative_to(source_root)
@@ -371,23 +420,49 @@ def move_repack_to_script(repack_folder: str | Path, script_folder: str | Path) 
             rel = Path(src.name)
         dest = target_root / rel
         try:
-            dest.parent.mkdir(parents=True, exist_ok=True)
             if dest.exists():
                 if dest.is_dir():
                     result.errors.append((src, f"destination is a folder: {dest}"))
                     continue
-                dest.unlink()
+                if _same_file_content(src, dest):
+                    result.skipped_identical += 1
+                    result.skipped_identical_files.append((src, dest))
+                    continue
                 result.overwritten += 1
-            shutil.move(str(src), str(dest))
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dest)
             result.moved += 1
             result.moved_files.append((src, dest))
         except Exception as exc:
             result.errors.append((src, str(exc)))
-
-    # Clean empty folders left by the move, deepest first.
-    for folder in sorted([p for p in source_root.rglob("*") if p.is_dir()], key=lambda item: len(item.parts), reverse=True):
-        try:
-            folder.rmdir()
-        except OSError:
-            pass
     return result
+
+
+def move_repack_to_script(
+    repack_folder: str | Path,
+    script_folder: str | Path,
+    *,
+    wad_repack_folder: str | Path | None = None,
+) -> MoveCompileResult:
+    """Copy Repack files into Script, preserving relative paths and leaving Repack intact.
+
+    WAD Repack files are skipped because those belong to the separate Game Folder deploy step.
+    """
+    return _copy_tree_files(
+        repack_folder,
+        script_folder,
+        source_label="Repack",
+        target_label="Script",
+        excluded_folder=wad_repack_folder,
+        skip_wad_named_folders=True,
+    )
+
+
+def copy_wad_repack_to_game(wad_repack_folder: str | Path, game_folder: str | Path) -> MoveCompileResult:
+    """Copy WAD Repack files into the Game Folder, preserving relative paths."""
+    return _copy_tree_files(
+        wad_repack_folder,
+        game_folder,
+        source_label="WAD Repack",
+        target_label="Game Folder",
+    )

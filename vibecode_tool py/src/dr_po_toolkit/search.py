@@ -1,13 +1,12 @@
 from __future__ import annotations
 
-from email.mime import text
 import re
 from dataclasses import dataclass
 from pathlib import Path
 
 from .discovery import iter_po_files
 from .po_io import parse_po_text
-from .text_utils import visible_text
+from .text_utils import user_multiline_text, visible_text
 
 
 @dataclass(slots=True)
@@ -100,7 +99,7 @@ def _file_can_contain_match(
 # ) -> list[SearchResult]:
 #     results: list[SearchResult] = []
 #     base = Path(root)
-#     needle_visible = visible_text(phrase)
+#     needle_visible = visible_text(user_multiline_text(phrase))
 #     if not needle_visible or not (search_msgid or search_msgstr):
 #         return results
 def search_path(
@@ -113,7 +112,7 @@ def search_path(
 ) -> list[SearchResult]:
     results: list[SearchResult] = []
     base = Path(root)
-    needle_visible = visible_text(phrase)
+    needle_visible = visible_text(user_multiline_text(phrase))
     if not needle_visible or not (search_msgid or search_msgstr):
         return results
     

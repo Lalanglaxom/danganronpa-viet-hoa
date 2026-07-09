@@ -33,6 +33,7 @@ DEFAULT_CONFIG = {
     "game_folder_path": "",
     "repack_path": "",
     "script_path": "",
+    "wad_repack_path": "",
 }
 DEFAULT_CONFIG.update({f"working_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
 DEFAULT_CONFIG.update({f"sync_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
