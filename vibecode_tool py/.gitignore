@@ -1,0 +1,58 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# PyInstaller
+*.manifest
+*.pyz
+# keep .spec if you use it to build the app
+# *.spec
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+toolkit_launch_error.log
+
+# Local env / secrets
+.env
+.env.*
+*.local
+
+# IDE / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated archives
+*.zip
+*.rar
+*.7z
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
