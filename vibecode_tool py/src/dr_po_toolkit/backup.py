@@ -314,32 +314,53 @@ def sync_option_from_working_folder(
     *,
     filter_by_option: bool = True,
 ) -> SyncOptionResult:
-    """Copy files from a DR working folder into its sync folder.
+    """Copy .po files from working folder strictly to the matching filename in sync folder.
 
     When ``filter_by_option`` is true, only files whose path/name matches the option
-    are copied. Dedicated per-option working folders should pass false so the whole
-    folder syncs into the matching destination. Relative paths are preserved.
+    are copied. It matches files strictly by their filename. If a matching file 
+    does not already exist in the sync folder, it reports an error and skips copying.
     """
     source_root = Path(working_folder).expanduser()
     target_root = Path(sync_folder).expanduser()
+    
     if not source_root.exists() or not source_root.is_dir():
         raise ValueError(f"working folder does not exist or is not a folder: {source_root}")
+    
     target_root.mkdir(parents=True, exist_ok=True)
+    
     if _is_nested_or_same(source_root, target_root):
         raise ValueError("working folder and sync folder must be separate, not nested")
 
     result = SyncOptionResult(option_key=option_key, source_root=source_root, target_root=target_root)
-    for src in sorted(source_root.rglob("*"), key=lambda item: str(item).lower()):
+    
+    # 1. Map all existing .po files in the sync folder by their filename
+    target_po_map = {}
+    for p in target_root.rglob("*.po"):
+        if p.is_file():
+            target_po_map[p.name] = p
+
+    # 2. Iterate over source .po files
+    for src in sorted(source_root.rglob("*.po"), key=lambda item: str(item).lower()):
         if not src.is_file():
             continue
+            
+        # Ignore - Copy.po or other backup files
+        if is_copy_po(src):
+            continue
+            
         if filter_by_option and not _matches_dr_option(src, source_root, option_key):
             continue
+            
         result.matched += 1
-        try:
-            rel = src.relative_to(source_root)
-        except ValueError:
-            rel = Path(src.name)
-        dest = target_root / rel
+        
+        # 3. Find the destination path using the filename
+        dest = target_po_map.get(src.name)
+        
+        # STRICT CHECK: If it doesn't exist in the sync folder, report error and skip
+        if not dest:
+            result.errors.append((src, f"Strict sync failed: '{src.name}' does not exist anywhere in the sync folder."))
+            continue
+            
         try:
             if dest.exists():
                 try:
@@ -353,12 +374,18 @@ def sync_option_from_working_folder(
                     result.skipped_identical += 1
                     result.skipped_identical_files.append((src, dest))
                     continue
+            
+            # Since dest comes from existing files, its parent dir is guaranteed to exist, 
+            # but we keep this just for absolute safety.
             dest.parent.mkdir(parents=True, exist_ok=True)
+            
             shutil.copy2(src, dest)
             result.copied += 1
             result.copied_files.append((src, dest))
+            
         except Exception as exc:
             result.errors.append((src, str(exc)))
+            
     return result
 
 
@@ -404,6 +431,13 @@ def _copy_tree_files(
             exclude_root = candidate
 
     result = MoveCompileResult(source_root=source_root, target_root=target_root)
+    
+    # 1. Map all existing files in the target folder by their filename
+    target_file_map = {}
+    for p in target_root.rglob("*"):
+        if p.is_file():
+            target_file_map[p.name] = p
+
     files = [path for path in source_root.rglob("*") if path.is_file()]
     for src in sorted(files, key=lambda item: str(item).lower()):
         if exclude_root is not None and _is_under_or_same(src, exclude_root):
@@ -414,11 +448,15 @@ def _copy_tree_files(
             continue
 
         result.scanned += 1
-        try:
-            rel = src.relative_to(source_root)
-        except ValueError:
-            rel = Path(src.name)
-        dest = target_root / rel
+        
+        # 2. Find the destination path using the exact filename
+        dest = target_file_map.get(src.name)
+        
+        # STRICT CHECK: If it doesn't exist anywhere in the target folder, report error and skip
+        if not dest:
+            result.errors.append((src, f"Strict sync failed: '{src.name}' does not exist anywhere in {target_label}."))
+            continue
+            
         try:
             if dest.exists():
                 if dest.is_dir():
@@ -429,12 +467,14 @@ def _copy_tree_files(
                     result.skipped_identical_files.append((src, dest))
                     continue
                 result.overwritten += 1
+                
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, dest)
             result.moved += 1
             result.moved_files.append((src, dest))
         except Exception as exc:
             result.errors.append((src, str(exc)))
+            
     return result
 
 
