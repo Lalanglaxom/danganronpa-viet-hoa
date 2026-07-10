@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Callable
 
 from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize
+from PyQt6.QtNetwork import QLocalServer, QLocalSocket
 from PyQt6.QtGui import QColor, QDesktopServices, QFont, QKeySequence, QShortcut, QSyntaxHighlighter, QTextCharFormat, QTextCursor, QBrush, QTextDocument, QPainter
 from PyQt6.QtWidgets import (
     QAbstractItemView,
@@ -51,6 +52,7 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
+from .app_links import APP_LINK_SERVER_NAME, is_entry_url, parse_entry_url, register_url_protocol
 from .backup import copy_wad_repack_to_game, make_backups, move_repack_to_script, restore_working_po_from_copies, sync_by_filename_report, sync_option_from_working_folder
 from .cancel import OperationCancelled
 from .config import load_config, save_config
@@ -444,6 +446,15 @@ class ToolkitGUI(QMainWindow):
         self._apply_style()
         self._build()
 
+    def open_app_link(self, value: str) -> bool:
+        link = parse_entry_url(value)
+        if link is None:
+            return False
+        opener = getattr(self, "_open_file_in_po_viewer", None)
+        if not callable(opener):
+            return False
+        return bool(opener(link.file, context=link.context or None, line=link.line or None))
+
     def _apply_style(self) -> None:
         self.setStyleSheet(
             f"""
@@ -645,6 +656,21 @@ class ToolkitGUI(QMainWindow):
         hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
         cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
         return soft_value, hard_value, cuts_value
+
+    def _initial_clt_color_mode(self) -> bool:
+        """Return the shared CLT display mode used by every text view."""
+        return bool(
+            self.config.get(
+                "text_view_clt_color_mode",
+                self.config.get("po_viewer_clt_color_mode", False),
+            )
+        )
+
+    def _save_clt_color_mode(self, enabled: bool) -> None:
+        """Persist the shared CLT display mode and its legacy PO Viewer key."""
+        self.config["text_view_clt_color_mode"] = bool(enabled)
+        self.config["po_viewer_clt_color_mode"] = bool(enabled)
+        save_config(self.config)
 
     def _button_tooltip(self, text: str) -> str:
         clean = " ".join((text or "").split())
@@ -1600,11 +1626,13 @@ class ToolkitGUI(QMainWindow):
         search_row = QHBoxLayout()
         search_row.addWidget(QLabel("Search"))
         phrase = QLineEdit()
-        phrase.setPlaceholderText("Text criteria; another text")
+        phrase.setPlaceholderText("Text: | = OR, & = AND")
+        phrase.setToolTip(r"Use | for OR, & for AND, and \| or \& to search for a literal operator.")
         search_row.addWidget(phrase, 2)
         search_row.addWidget(QLabel("Speaker"))
         speaker = QLineEdit()
-        speaker.setPlaceholderText("Speaker/context criteria; another speaker")
+        speaker.setPlaceholderText("Speaker/context: | = OR, & = AND")
+        speaker.setToolTip(r"Use | for OR, & for AND, and \| or \& to search for a literal operator.")
         search_row.addWidget(speaker, 1)
         search_msgid = QCheckBox("EN")
         search_msgid.setChecked(True)
@@ -1612,8 +1640,11 @@ class ToolkitGUI(QMainWindow):
         search_msgstr.setChecked(True)
         search_case = QCheckBox("Case")
         search_whole = QCheckBox("Whole word")
+        search_raw = QCheckBox("Raw")
+        search_raw.setToolTip("Match original parsed PO text exactly without removing CLT tags, brackets, quotes, or line breaks.")
+        clt_color_btn = self._tool_button("CLT T", "CLT view: Tags", width=48)
         search_btn = self._button("Search")
-        for w in [search_msgid, search_msgstr, search_case, search_whole, search_btn]:
+        for w in [search_msgid, search_msgstr, search_case, search_whole, search_raw, clt_color_btn, search_btn]:
             search_row.addWidget(w)
         layout.addLayout(search_row)
 
@@ -1711,6 +1742,7 @@ class ToolkitGUI(QMainWindow):
         splitter.setSizes([740, 430])
 
         search_undo_stack: list[list[dict[str, object]]] = []
+        clt_view_state = {"enabled": self._initial_clt_color_mode()}
 
         def trim_search_undo_stack() -> None:
             if len(search_undo_stack) > 100:
@@ -1754,7 +1786,11 @@ class ToolkitGUI(QMainWindow):
                             bg_color = EN_HIT_BG if result.hit_msgid else EN_BG
                             item.setForeground(QBrush(QColor(WHITE)))
                             item.setBackground(QBrush(QColor(bg_color)))
-                            item.setData(HTML_ROLE, f'<span style="color:{WHITE};">{clt_rich_html(value)}</span>')
+                            item.setData(
+                                HTML_ROLE,
+                                f'<span style="color:{WHITE};">'
+                                f'{clt_rich_html(value, color_mode=bool(clt_view_state["enabled"]))}</span>',
+                            )
                             if result.hit_msgid:
                                 font = item.font()
                                 font.setBold(True)
@@ -1763,7 +1799,11 @@ class ToolkitGUI(QMainWindow):
                             bg_color = VI_HIT_BG if result.hit_msgstr else VI_BG
                             item.setForeground(QBrush(QColor(WHITE)))
                             item.setBackground(QBrush(QColor(bg_color)))
-                            item.setData(HTML_ROLE, f'<span style="color:{WHITE};">{clt_rich_html(value)}</span>')
+                            item.setData(
+                                HTML_ROLE,
+                                f'<span style="color:{WHITE};">'
+                                f'{clt_rich_html(value, color_mode=bool(clt_view_state["enabled"]))}</span>',
+                            )
                             if result.hit_msgstr:
                                 font = item.font()
                                 font.setBold(True)
@@ -1804,6 +1844,44 @@ class ToolkitGUI(QMainWindow):
                 return idx
             selected = selected_result_indices()
             return selected[0] if selected else None
+
+        def set_search_clt_color_mode(enabled: bool, *, persist: bool = True, quiet: bool = False) -> None:
+            clt_view_state["enabled"] = bool(enabled)
+            clt_color_btn.setText(f"CLT {'C' if enabled else 'T'}")
+            clt_color_btn.setToolTip(f"CLT view: {'Color' if enabled else 'Tags'}")
+            msgid_box._clt_highlighter.set_color_spans(enabled)
+            msgstr_box._clt_highlighter.set_color_spans(enabled)
+            table.setUpdatesEnabled(False)
+            try:
+                for row in range(table.rowCount()):
+                    idx = row_result_index(row)
+                    if idx is None or idx < 0 or idx >= len(self.search_results):
+                        continue
+                    result = self.search_results[idx]
+                    for col, value in ((1, compact(result.msgid)), (2, compact(result.msgstr))):
+                        item = table.item(row, col)
+                        if item is not None:
+                            item.setData(
+                                HTML_ROLE,
+                                f'<span style="color:{WHITE};">'
+                                f'{clt_rich_html(value, color_mode=enabled)}</span>',
+                            )
+            finally:
+                table.setUpdatesEnabled(True)
+            table.viewport().update()
+            if len(self.search_results) <= 1000:
+                table.resizeRowsToContents()
+            if persist:
+                self._save_clt_color_mode(enabled)
+            if not quiet:
+                status.setText(
+                    "CLT color view enabled. Tags are hidden in results; text uses in-game colors."
+                    if enabled
+                    else "CLT tag view enabled. Raw CLT tags are visible in results."
+                )
+
+        def toggle_search_clt_color_mode() -> None:
+            set_search_clt_color_mode(not bool(clt_view_state["enabled"]))
 
         def load_selected() -> None:
             idx = current_result_index()
@@ -1863,7 +1941,11 @@ class ToolkitGUI(QMainWindow):
                             item.setText(value)
                             item.setForeground(QBrush(QColor(WHITE)))
                             item.setBackground(QBrush(QColor(bg_color)))
-                            item.setData(HTML_ROLE, f'<span style="color:{WHITE};">{clt_rich_html(value)}</span>')
+                            item.setData(
+                                HTML_ROLE,
+                                f'<span style="color:{WHITE};">'
+                                f'{clt_rich_html(value, color_mode=bool(clt_view_state["enabled"]))}</span>',
+                            )
                         break
             table.resizeRowsToContents()
             load_selected()
@@ -1929,6 +2011,7 @@ class ToolkitGUI(QMainWindow):
                     case_sensitive=search_case.isChecked(),
                     whole_word=search_whole.isChecked(),
                     speaker=speaker_text,
+                    raw=search_raw.isChecked(),
                 ):
                     key = (self._path_key(result.file), result.uid)
                     if key in seen:
@@ -2072,9 +2155,11 @@ class ToolkitGUI(QMainWindow):
                 select_result(restored_indices[0])
             status.setText(f"Undid {changed} saved Search change{'s' if changed != 1 else ''}.")
 
+        set_search_clt_color_mode(bool(clt_view_state["enabled"]), persist=False, quiet=True)
         table.itemSelectionChanged.connect(load_selected)
         table.itemDoubleClicked.connect(lambda _item: open_selected_file())
         search_btn.clicked.connect(run_search)
+        clt_color_btn.clicked.connect(toggle_search_clt_color_mode)
         phrase.returnPressed.connect(run_search)
         speaker.returnPressed.connect(run_search)
         open_btn.clicked.connect(open_selected_file)
@@ -2440,7 +2525,7 @@ class ToolkitGUI(QMainWindow):
         )
         note = QLabel(
             note_text
-            + "CLT tags count as part of the English/source sentence. "
+            + "Raw comparison: line breaks, spaces, and CLT tags all count. "
             + "Edit Vietnamese, then Apply to copy it to this source group. "
             + "Open switches to PO Viewer on the selected file/entry."
         )
@@ -2543,6 +2628,7 @@ class ToolkitGUI(QMainWindow):
         open_file_btn.setToolTip("Open the selected .po file in PO Viewer and jump to this entry.")
         search_replace_btn = self._button("Find", secondary=True)
         search_replace_btn.setToolTip("Find/replace text in the duplicate view. Replacement edits Vietnamese only.")
+        clt_color_btn = self._tool_button("CLT T", "CLT view: Tags", width=48)
         apply_group_btn = self._button("Apply", secondary=True)
         apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
         undo_apply_btn = self._button("Undo", secondary=True)
@@ -2563,6 +2649,7 @@ class ToolkitGUI(QMainWindow):
         footer.addWidget(next_source_btn)
         footer.addWidget(open_file_btn)
         footer.addWidget(search_replace_btn)
+        footer.addWidget(clt_color_btn)
         footer.addWidget(apply_group_btn)
         footer.addWidget(undo_apply_btn)
         footer.addWidget(wrap_break_btn)
@@ -2582,6 +2669,7 @@ class ToolkitGUI(QMainWindow):
         loading = {"value": False}
         detail_loading = {"value": False}
         undoing = {"value": False}
+        clt_view_state = {"enabled": self._initial_clt_color_mode()}
         HIDDEN_GROUP_BG = "#604268"
         HIDDEN_BG = "#49354f"
         HIDDEN_BG_2 = "#3d3146"
@@ -2723,7 +2811,11 @@ class ToolkitGUI(QMainWindow):
             return item
 
         def set_html(item: QTableWidgetItem, text: str, *, color: str = TEXT) -> None:
-            item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text)}</span>')
+            item.setData(
+                HTML_ROLE,
+                f'<span style="color:{color};">'
+                f'{clt_rich_html(text, color_mode=bool(clt_view_state["enabled"]))}</span>',
+            )
 
         def payload_key_from_row(row: int) -> str:
             item = table.item(row, 3)
@@ -2866,6 +2958,42 @@ class ToolkitGUI(QMainWindow):
             item.setToolTip(("Hidden duplicate group.\n" if hidden else "") + text)
             if refresh_height:
                 refresh_table_row_height(row)
+
+        def set_duplicate_clt_color_mode(enabled: bool, *, persist: bool = True, quiet: bool = False) -> None:
+            clt_view_state["enabled"] = bool(enabled)
+            clt_color_btn.setText(f"CLT {'C' if enabled else 'T'}")
+            clt_color_btn.setToolTip(f"CLT view: {'Color' if enabled else 'Tags'}")
+            en_box._clt_highlighter.set_color_spans(enabled)
+            vi_box._clt_highlighter.set_color_spans(enabled)
+            table.setUpdatesEnabled(False)
+            try:
+                for row in range(table.rowCount()):
+                    hidden = row_is_hidden(row)
+                    en_item = table.item(row, 2)
+                    if en_item is not None:
+                        set_html(en_item, en_item.text(), color=HIDDEN_TEXT if hidden else TEXT)
+                    vi_item = table.item(row, 3)
+                    if vi_item is not None:
+                        update_row_visual(row, vi_item.text(), refresh_height=False)
+            finally:
+                table.setUpdatesEnabled(True)
+            table.viewport().update()
+            refresh_table_row_heights()
+            if persist:
+                self._save_clt_color_mode(enabled)
+            if not quiet:
+                update_status()
+                status.setText(
+                    status.text()
+                    + (
+                        " | CLT color view: tags hidden, text colored"
+                        if enabled
+                        else " | CLT tag view: raw tags visible"
+                    )
+                )
+
+        def toggle_duplicate_clt_color_mode() -> None:
+            set_duplicate_clt_color_mode(not bool(clt_view_state["enabled"]))
 
         def set_entry_translation(row: int, text: str, *, update_detail: bool = False, undo_label: str | None = None) -> bool:
             item = table.item(row, 3)
@@ -3707,6 +3835,7 @@ class ToolkitGUI(QMainWindow):
             populate(displayed_conflict_entries())
             status.setText(status.text() + " | refreshed")
 
+        set_duplicate_clt_color_mode(bool(clt_view_state["enabled"]), persist=False, quiet=True)
         table.itemChanged.connect(item_changed)
         table.itemSelectionChanged.connect(selection_changed)
         vi_box.textChanged.connect(detail_changed)
@@ -3714,6 +3843,7 @@ class ToolkitGUI(QMainWindow):
         next_source_btn.clicked.connect(lambda: jump_duplicate_source(1))
         open_file_btn.clicked.connect(open_selected_file_in_po_viewer)
         search_replace_btn.clicked.connect(open_search_replace_dialog)
+        clt_color_btn.clicked.connect(toggle_duplicate_clt_color_mode)
         wrap_break_btn.clicked.connect(breakline_selected_64)
         apply_group_btn.clicked.connect(apply_to_same_source)
         undo_apply_btn.clicked.connect(undo_duplicate_change)
@@ -3747,7 +3877,7 @@ class ToolkitGUI(QMainWindow):
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
             "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z = undo text/last PO edit, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
-            "Ctrl+Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. Red \\n markers show real line breaks. Translafixer matching ignores CLT tags."
+            "Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. Red \\n markers show real line breaks. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
@@ -3821,7 +3951,7 @@ class ToolkitGUI(QMainWindow):
         table.setColumnCount(4)
         table.setHorizontalHeaderLabels(["#", "Speaker / Context", "English msgid", "Vietnamese msgstr"])
         table.verticalHeader().setVisible(False)
-        table.verticalHeader().setDefaultSectionSize(34)
+        table.verticalHeader().setDefaultSectionSize(44)
         table.setAlternatingRowColors(True)
         table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
@@ -3877,7 +4007,7 @@ class ToolkitGUI(QMainWindow):
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From all configured Settings Working folders. Shows distinct Vietnamese translations. >95% percentage is green. Ctrl+1..9 apply, Ctrl+0 refresh. Lower Min match when you need weaker fuzzy matches.")
+        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Ctrl+1..9 apply, Ctrl+0 refresh.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -3919,7 +4049,7 @@ class ToolkitGUI(QMainWindow):
             "loading_files": False,
             "detail_loading": False,
             "visual_wrap": True,
-            "clt_color_mode": bool(self.config.get("po_viewer_clt_color_mode", False)),
+            "clt_color_mode": self._initial_clt_color_mode(),
             "suggestion_index": None,
             "suggestion_source_signature": None,
             "suggestion_source_result": None,
@@ -3929,9 +4059,17 @@ class ToolkitGUI(QMainWindow):
             "undo_stack": [],
             "undo_batch": None,
             "undoing": False,
+            "po_cache": {},
+            "suggestion_building": False,
+            "suggestion_build_token": 0,
+            "suggestion_build_thread": None,
+            "suggestion_build_signals": None,
         }
         suggestion_timer = QTimer(_tab)
         suggestion_timer.setSingleShot(True)
+        viewer_config_timer = QTimer(_tab)
+        viewer_config_timer.setSingleShot(True)
+        viewer_config_timer.timeout.connect(lambda: save_config(self.config))
 
         def po_file():
             return state["po"]
@@ -3971,8 +4109,13 @@ class ToolkitGUI(QMainWindow):
             return item
 
         def set_cell_clt_html(item: QTableWidgetItem | None, text: str, *, color: str = TEXT) -> None:
-            if item is not None:
-                item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text, color_mode=bool(state.get("clt_color_mode")))}</span>')
+            if item is None:
+                return
+            needs_rich = bool(state.get("clt_color_mode")) or "\n" in text or "%TEXT%" in text.upper() or bool(re.search(r"<\s*clt", text, re.IGNORECASE))
+            if not needs_rich:
+                item.setData(HTML_ROLE, None)
+                return
+            item.setData(HTML_ROLE, f'<span style="color:{color};">{clt_rich_html(text, color_mode=bool(state.get("clt_color_mode")))}</span>')
 
         def row_context(entry) -> str:
             return entry.speaker or entry.msgctxt or ""
@@ -4117,9 +4260,7 @@ class ToolkitGUI(QMainWindow):
             except OSError:
                 return str(a) == str(b)
 
-        def _suggestion_source_signature() -> tuple[tuple[str, int, int], str]:
-            current = current_path()
-            current_key = str(current.expanduser().resolve(strict=False)) if current is not None else ""
+        def _suggestion_source_signature() -> tuple[tuple[str, int, int], ...]:
             signature_items: list[tuple[str, int, int]] = []
             for raw_path in self._all_configured_working_paths():
                 try:
@@ -4129,46 +4270,81 @@ class ToolkitGUI(QMainWindow):
                     signature_items.append((resolved, int(stat.st_mtime_ns if stat else 0), int(stat.st_size if stat else 0)))
                 except Exception:
                     signature_items.append((str(raw_path), 0, 0))
-            return tuple(signature_items), current_key
+            return tuple(signature_items)
 
         def rebuild_suggestion_candidates(*, quiet: bool = False) -> None:
             sources = self._all_configured_working_paths()
-            current = current_path()
-            state["suggestion_source_signature"] = _suggestion_source_signature()
-            state["suggestion_index"] = TranslationSuggestionIndex()
-            state["suggestion_source_result"] = None
+            signature = _suggestion_source_signature()
+            state["suggestion_build_token"] = int(state.get("suggestion_build_token", 0)) + 1
+            token = int(state["suggestion_build_token"])
+            state["suggestion_building"] = True
+            state["suggestion_source_signature"] = signature
             cache = state.get("suggestion_cache")
             if isinstance(cache, dict):
                 cache.clear()
             if not sources:
+                state["suggestion_index"] = TranslationSuggestionIndex()
+                state["suggestion_source_result"] = None
+                state["suggestion_building"] = False
                 if not quiet:
                     set_status("No Settings Working folders found. Set Working folders in Settings for suggestions.")
                 return
-            try:
-                index, result = TranslationSuggestionIndex.from_translafixer_sources(
-                    sources,
-                    exclude_files=[current] if current is not None else [],
-                )
-            except Exception as exc:
-                if not quiet:
-                    QMessageBox.warning(self, "PO Viewer", f"Could not build suggestion index from Settings Working folders:\n{exc}")
-                return
-            state["suggestion_index"] = index
-            state["suggestion_source_result"] = result
             if not quiet:
-                skipped = f", skipped current={result.skipped_source_targets}" if result.skipped_source_targets else ""
-                set_status(f"Suggestion index: {result.usable_translations} translated entries from {result.source_files} Settings Working .po file(s){skipped}.")
+                set_status("Building suggestion index in background…")
+
+            signals = WorkerSignals()
+
+            def build_worker() -> None:
+                try:
+                    index, result = TranslationSuggestionIndex.from_translafixer_sources(sources)
+                    signals.result.emit((token, signature, index, result, None, quiet))
+                except Exception as exc:
+                    signals.result.emit((token, signature, None, None, str(exc), quiet))
+                finally:
+                    signals.done.emit()
+
+            def apply_result(payload: object) -> None:
+                if not isinstance(payload, tuple) or len(payload) != 6:
+                    return
+                result_token, result_signature, index, result, error, was_quiet = payload
+                if result_token != state.get("suggestion_build_token"):
+                    return
+                state["suggestion_building"] = False
+                state["suggestion_build_thread"] = None
+                state["suggestion_build_signals"] = None
+                if error:
+                    state["suggestion_index"] = TranslationSuggestionIndex()
+                    state["suggestion_source_result"] = None
+                    if not was_quiet:
+                        QMessageBox.warning(self, "PO Viewer", f"Could not build suggestion index from Settings Working folders:\n{error}")
+                    return
+                state["suggestion_source_signature"] = result_signature
+                state["suggestion_index"] = index
+                state["suggestion_source_result"] = result
+                if not was_quiet and result is not None:
+                    set_status(f"Suggestion index: {result.usable_translations} translated entries from {result.source_files} Settings Working .po file(s).")
+                refresh_suggestions_for_row(table.currentRow(), immediate=True)
+
+            signals.result.connect(apply_result)
+            thread = threading.Thread(target=build_worker, daemon=True)
+            state["suggestion_build_signals"] = signals
+            state["suggestion_build_thread"] = thread
+            thread.start()
 
         def ensure_suggestion_index(*, force: bool = False, quiet: bool = True) -> TranslationSuggestionIndex | None:
             signature = _suggestion_source_signature()
             index = state.get("suggestion_index")
-            if force or index is None or state.get("suggestion_source_signature") != signature:
-                rebuild_suggestion_candidates(quiet=quiet)
-                index = state.get("suggestion_index")
+            needs_build = force or index is None or state.get("suggestion_source_signature") != signature
+            if needs_build:
+                if not state.get("suggestion_building") or force:
+                    rebuild_suggestion_candidates(quiet=quiet)
+                return None
             return index if isinstance(index, TranslationSuggestionIndex) else None
 
-        def _suggestion_cache_key(source_text: str, min_score: float) -> tuple[str, float]:
-            return (suggestion_match_key(source_text), round(min_score, 3))
+        def _suggestion_cache_key(source_text: str, min_score: float, uid: str) -> tuple[str, float, str, str]:
+            path = current_path()
+            path_key = self._path_key(path) if path is not None else ""
+            return (suggestion_match_key(source_text), round(min_score, 3), path_key, uid)
 
         def _render_suggestions(row: int, suggestions) -> None:
             suggestions_list.clear()
@@ -4241,14 +4417,19 @@ class ToolkitGUI(QMainWindow):
                 return
             target = po.entries[row]  # type: ignore[union-attr]
             min_score = suggest_min_score.value() / 100.0
-            key = _suggestion_cache_key(target.msgid, min_score)
+            key = _suggestion_cache_key(target.msgid, min_score, target.uid)
             cache = state.get("suggestion_cache")
             if not isinstance(cache, dict):
                 cache = {}
                 state["suggestion_cache"] = cache
             suggestions = None if force_rebuild else cache.get(key)
             if suggestions is None:
-                suggestions = index.suggest(target.msgid, min_score=min_score, limit=5)
+                current = current_path()
+                candidates = index.suggest(target.msgid, min_score=min_score, limit=10)
+                suggestions = [
+                    item for item in candidates
+                    if not (_same_file(item.file, current) and item.uid == target.uid)
+                ][:5]
                 if len(cache) > 512:
                     cache.clear()
                 cache[key] = suggestions
@@ -4346,6 +4527,7 @@ class ToolkitGUI(QMainWindow):
             old_text = entry.msgstr
             if record_undo:
                 record_po_undo(row, old_text, text, undo_label)
+            invalidate_po_cache()
             entry.msgstr = text
             state["loading"] = True
             try:
@@ -4371,8 +4553,10 @@ class ToolkitGUI(QMainWindow):
         def populate_table() -> None:
             po = po_file()
             state["loading"] = True
-            table.clearContents()
+            table.setUpdatesEnabled(False)
+            table.blockSignals(True)
             try:
+                table.clearContents()
                 if po is None:
                     table.setRowCount(0)
                     return
@@ -4385,11 +4569,15 @@ class ToolkitGUI(QMainWindow):
                     table.setItem(row, 2, make_item(entry.msgid, bg=EN_BG))
                     table.setItem(row, 3, make_item(entry.msgstr, editable=True, bg=VI_BG if entry.msgstr.strip() else "#4a3828"))
                     refresh_row_style(row)
-                    table.setRowHeight(row, 44)
+                if table.rowCount():
+                    table.setCurrentCell(0, 0)
+                    table.selectRow(0)
             finally:
+                table.blockSignals(False)
+                table.setUpdatesEnabled(True)
                 state["loading"] = False
+            table.viewport().update()
             if table.rowCount():
-                table.selectRow(0)
                 load_detail(0)
 
         def discover_po_files(paths: list[str | Path]) -> list[Path]:
@@ -4497,6 +4685,42 @@ class ToolkitGUI(QMainWindow):
             source_text = "; ".join(str(path) for path in paths)
             set_file_list(paths, source_text, auto_load=True, update_source_edit=False)
 
+        def invalidate_po_cache(path: Path | None = None) -> None:
+            target = path or current_path()
+            cache = state.get("po_cache")
+            if target is not None and isinstance(cache, dict):
+                cache.pop(self._path_key(target), None)
+
+        def load_po_cached(path: Path):
+            cache = state.get("po_cache")
+            if not isinstance(cache, dict):
+                cache = {}
+                state["po_cache"] = cache
+            stat = path.stat()
+            key = self._path_key(path)
+            cached = cache.get(key)
+            if isinstance(cached, dict) and cached.get("mtime_ns") == stat.st_mtime_ns and cached.get("size") == stat.st_size:
+                cached_po = cached.get("po")
+                if cached_po is not None:
+                    return cached_po, True
+            loaded = load_po(path)
+            if len(cache) >= 12:
+                cache.pop(next(iter(cache)), None)
+            cache[key] = {"mtime_ns": stat.st_mtime_ns, "size": stat.st_size, "po": loaded}
+            return loaded, False
+
+        def cache_current_po() -> None:
+            po = po_file()
+            path = current_path()
+            cache = state.get("po_cache")
+            if po is None or path is None or not isinstance(cache, dict):
+                return
+            try:
+                stat = path.stat()
+            except OSError:
+                return
+            cache[self._path_key(path)] = {"mtime_ns": stat.st_mtime_ns, "size": stat.st_size, "po": po}
+
         def load_file(path: Path | None = None) -> None:
             if path is None:
                 path = current_file_path()
@@ -4512,7 +4736,7 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "PO Viewer", "Choose a real .po file.")
                 return
             try:
-                po = load_po(path)
+                po, from_cache = load_po_cached(path)
             except Exception as exc:
                 QMessageBox.critical(self, "PO Viewer", f"Could not load file:\n{exc}")
                 return
@@ -4525,12 +4749,12 @@ class ToolkitGUI(QMainWindow):
             self.config["po_viewer_file"] = str(path)
             if not self.config.get("po_viewer_source"):
                 self.config["po_viewer_source"] = str(path)
-            save_config(self.config)
-            rebuild_suggestion_candidates(quiet=True)
+            viewer_config_timer.start(350)
             populate_table()
             issue_count = len(po.issues)
             extra = f" | issues={issue_count}" if issue_count else ""
-            set_status(f"Loaded {len(po.entries)} entries from {path.name}{extra}")
+            cache_note = " | cached" if from_cache else ""
+            set_status(f"Loaded {len(po.entries)} entries from {path.name}{extra}{cache_note}")
 
         def save_file() -> None:
             po = po_file()
@@ -4544,6 +4768,7 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.critical(self, "PO Viewer", f"Could not save file:\n{exc}")
                 return
             state["dirty"] = False
+            cache_current_po()
             set_status(f"Saved {path.name}")
 
         def select_entry_row(row: int, *, center: bool = False, keep_vi_focus: bool = False) -> None:
@@ -4572,7 +4797,7 @@ class ToolkitGUI(QMainWindow):
                 vi_box.setFocus(Qt.FocusReason.ShortcutFocusReason)
                 table.viewport().update()
 
-        def select_entry_uid(uid: str | None = None, *, line: int | None = None, center: bool = True, keep_vi_focus: bool = False) -> bool:
+        def select_entry_uid(uid: str | None = None, *, context: str | None = None, line: int | None = None, center: bool = True, keep_vi_focus: bool = False) -> bool:
             po = po_file()
             if po is None:
                 return False
@@ -4582,6 +4807,16 @@ class ToolkitGUI(QMainWindow):
                     if entry.uid == uid:
                         target = row
                         break
+            if target < 0 and context:
+                context_rows = [
+                    (row, entry) for row, entry in enumerate(po.entries)  # type: ignore[union-attr]
+                    if (entry.msgctxt or "") == context
+                ]
+                if context_rows:
+                    if line is not None:
+                        target = min(context_rows, key=lambda item: abs(int(item[1].line or 0) - line))[0]
+                    else:
+                        target = context_rows[0][0]
             if target < 0 and line is not None:
                 for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
                     if int(entry.line or 0) >= line:
@@ -4791,7 +5026,7 @@ class ToolkitGUI(QMainWindow):
             find_edit.setFocus(Qt.FocusReason.ShortcutFocusReason)
             find_edit.selectAll()
 
-        def open_file_in_po_viewer(path: str | Path, *, uid: str | None = None, line: int | None = None, source_paths: list[str] | None = None) -> bool:
+        def open_file_in_po_viewer(path: str | Path, *, uid: str | None = None, context: str | None = None, line: int | None = None, source_paths: list[str] | None = None) -> bool:
             target = Path(str(path)).expanduser()
             if not target.is_file() or target.suffix.lower() != ".po":
                 QMessageBox.warning(self, "PO Viewer", f"Could not open in PO Viewer:\n{target}")
@@ -4811,7 +5046,7 @@ class ToolkitGUI(QMainWindow):
             elif not in_current_list:
                 set_file_list([target], str(target), auto_load=False, quiet=True)
             load_file(target)
-            select_entry_uid(uid, line=line, center=True)
+            select_entry_uid(uid, context=context, line=line, center=True)
             tab_widget = getattr(self, "_po_viewer_tab_widget", None)
             if tab_widget is not None:
                 self.tabs.setCurrentWidget(tab_widget)
@@ -4947,8 +5182,7 @@ class ToolkitGUI(QMainWindow):
                 refresh_row_style(row)
             refresh_suggestions_for_row(table.currentRow())
             if persist:
-                self.config["po_viewer_clt_color_mode"] = enabled
-                save_config(self.config)
+                self._save_clt_color_mode(enabled)
             if not quiet:
                 set_status("CLT color view enabled. Tags are hidden in table/suggestions; text uses in-game colors." if enabled else "CLT tag view enabled. Raw CLT tags are visible in the PO table.")
 
@@ -5068,6 +5302,8 @@ class ToolkitGUI(QMainWindow):
                 set_status(f"Gemini API translated {changed} selected entr{'y' if changed == 1 else 'ies'}. Save when ready.")
 
         def current_changed(row: int, _col: int, _prev_row: int, _prev_col: int) -> None:
+            if state.get("loading"):
+                return
             load_detail(row)
 
         def _focus_is_vi_editor() -> bool:
@@ -5138,8 +5374,8 @@ class ToolkitGUI(QMainWindow):
         for nav_parent in (table, vi_box):
             add_shortcut("Ctrl+Up", lambda: switch_entry(-1), parent=nav_parent)
             add_shortcut("Ctrl+Down", lambda: switch_entry(1), parent=nav_parent)
-            add_shortcut("Ctrl+Shift+Up", lambda: switch_file(-1), parent=nav_parent)
-            add_shortcut("Ctrl+Shift+Down", lambda: switch_file(1), parent=nav_parent)
+            add_shortcut("Shift+Up", lambda: switch_file(-1), parent=nav_parent)
+            add_shortcut("Shift+Down", lambda: switch_file(1), parent=nav_parent)
         add_shortcut("Ctrl+E", focus_vi_editor)
         add_shortcut("F2", focus_vi_editor)
         add_shortcut("Ctrl+S", save_file)
@@ -5707,10 +5943,72 @@ class ToolkitGUI(QMainWindow):
         restore_btn.clicked.connect(start_restore)
 
 
+def _send_app_link_to_running_instance(value: str) -> bool:
+    socket = QLocalSocket()
+    socket.connectToServer(APP_LINK_SERVER_NAME)
+    if not socket.waitForConnected(250):
+        return False
+    socket.write(value.encode("utf-8"))
+    socket.flush()
+    socket.waitForBytesWritten(500)
+    socket.disconnectFromServer()
+    return True
+
+
+def _start_app_link_server(window: ToolkitGUI) -> QLocalServer | None:
+    # Do not steal the endpoint from another live window. Remove it only when
+    # the previous process crashed and left a stale local-server name behind.
+    probe = QLocalSocket()
+    probe.connectToServer(APP_LINK_SERVER_NAME)
+    if probe.waitForConnected(100):
+        probe.disconnectFromServer()
+        return None
+    QLocalServer.removeServer(APP_LINK_SERVER_NAME)
+    server = QLocalServer(window)
+    if not server.listen(APP_LINK_SERVER_NAME):
+        return None
+
+    sockets: set[QLocalSocket] = set()
+
+    def accept_connections() -> None:
+        while server.hasPendingConnections():
+            socket = server.nextPendingConnection()
+            if socket is None:
+                continue
+            sockets.add(socket)
+
+            def read_link(sock: QLocalSocket = socket) -> None:
+                raw = bytes(sock.readAll()).decode("utf-8", errors="replace").strip()
+                if raw:
+                    window.open_app_link(raw)
+
+            def drop_socket(sock: QLocalSocket = socket) -> None:
+                read_link(sock)
+                sockets.discard(sock)
+                sock.deleteLater()
+
+            socket.readyRead.connect(read_link)
+            socket.disconnected.connect(drop_socket)
+            QTimer.singleShot(0, read_link)
+
+    server.newConnection.connect(accept_connections)
+    window._app_link_server = server
+    window._app_link_sockets = sockets
+    return server
+
+
 def main() -> None:
     app = QApplication.instance() or QApplication(sys.argv)
+    initial_link = next((arg for arg in sys.argv[1:] if is_entry_url(arg)), "")
+    if initial_link and _send_app_link_to_running_instance(initial_link):
+        return
+
+    register_url_protocol()
     window = ToolkitGUI()
+    _start_app_link_server(window)
     window.show()
+    if initial_link:
+        QTimer.singleShot(0, lambda value=initial_link: window.open_app_link(value))
     app.exec()
 
 

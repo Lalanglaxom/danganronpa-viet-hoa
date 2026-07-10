@@ -11,7 +11,6 @@ from typing import Callable, Iterable
 
 from .discovery import iter_po_files
 from .po_io import load_po, save_po
-from .text_utils import visible_text
 
 
 @dataclass(slots=True)
@@ -126,18 +125,72 @@ def _canonical_clt_tag(match: re.Match[str]) -> str:
 
 
 def suggestion_match_key(text: str) -> str:
-    """Return the normalized source text used for fuzzy suggestions."""
-    key = visible_text(msgid_match_key(text)).lower()
-    key = re.sub(r"\s+", " ", key).strip()
-    return key
+    """Return exact parsed source text used to calculate suggestion percentage.
+
+    Suggestion similarity is intentionally raw after PO parsing: CLT tags, real
+    line breaks, whitespace, punctuation, and case all affect the percentage.
+    No visible-text cleanup or whitespace normalization is performed here.
+    """
+    return text or ""
+
+
+def preserve_suggestion_clt_tags(source: str, translation: str) -> str:
+    """Keep CLT control tags when applying a fuzzy suggestion.
+
+    Suggestion scoring is raw, so CLT tags and line breaks affect the percentage.
+    A weaker fuzzy match can still provide plain translated text for a tagged
+    target entry. In that case, copy the target source's CLT wrapper onto it instead
+    of replacing the entry with untagged text. Existing tags in the suggested
+    translation are never removed or rewritten.
+    """
+    source = _norm(source)
+    translation = _norm(translation)
+    source_matches = list(CLT_MATCH_RE.finditer(source))
+    if not source_matches or CLT_MATCH_RE.search(translation):
+        return translation
+
+    # Mask tags to find the visible source-text boundaries while retaining the
+    # source's exact tag spelling and surrounding line breaks. Most game lines
+    # use a leading <CLT N> and a trailing newline + <CLT>.
+    masked = list(source)
+    for match in source_matches:
+        masked[match.start():match.end()] = " " * (match.end() - match.start())
+    visible_positions = [index for index, char in enumerate(masked) if not char.isspace()]
+
+    if visible_positions:
+        first_visible = visible_positions[0]
+        last_visible = visible_positions[-1]
+        prefix = source[:first_visible]
+        suffix = source[last_visible + 1:]
+        boundary_tag_count = len(CLT_MATCH_RE.findall(prefix)) + len(CLT_MATCH_RE.findall(suffix))
+        if boundary_tag_count == len(source_matches):
+            return f"{prefix}{translation}{suffix}"
+
+    # Rare fallback for internal CLT switches: retain every control tag rather
+    # than silently dropping it. Numbered/special tags lead the text and plain
+    # <CLT> terminators follow it, preserving their original spelling/order.
+    opening_tags: list[str] = []
+    closing_tags: list[str] = []
+    for match in source_matches:
+        tag = match.group(0)
+        if re.fullmatch(r"<\s*clt\s*>", tag, re.IGNORECASE):
+            closing_tags.append(tag)
+        else:
+            opening_tags.append(tag)
+    return f"{''.join(opening_tags)}{translation}{''.join(closing_tags)}"
 
 
 def _suggestion_tokens(key: str) -> set[str]:
-    tokens = {token for token in WORD_RE.findall(key) if len(token) >= 2}
+    """Return case-insensitive retrieval tokens without changing final scoring.
+
+    Tokens only choose which candidates reach SequenceMatcher. The percentage is
+    still calculated from each candidate's exact raw key.
+    """
+    tokens = {token.casefold() for token in WORD_RE.findall(key) if len(token) >= 2}
     if tokens:
         return tokens
     # Fallback for very short strings like "OK" or punctuation-heavy game UI text.
-    compact = re.sub(r"\s+", "", key)
+    compact = re.sub(r"\s+", "", key).casefold()
     return {compact} if compact else set()
 
 
@@ -172,7 +225,7 @@ class TranslationSuggestionIndex:
         for token in tokens:
             self.by_token[token].append(idx)
         if candidate.key:
-            self.by_first_char[candidate.key[:1]].append(idx)
+            self.by_first_char[candidate.key[:1].casefold()].append(idx)
 
     @classmethod
     def from_translafixer_sources(
@@ -254,7 +307,7 @@ class TranslationSuggestionIndex:
 
         # If there is no shared token, still try tiny UI strings by first char.
         if not counts and len(target_key) <= 16:
-            return self.by_first_char.get(target_key[:1], [])[:max_candidates]
+            return self.by_first_char.get(target_key[:1].casefold(), [])[:max_candidates]
 
         target_len = len(target_key)
         min_len = max(1, int(target_len * 0.45))
@@ -332,7 +385,7 @@ class TranslationSuggestionIndex:
             TranslationSuggestion(
                 score=score,
                 source=candidate.source,
-                translation=candidate.translation,
+                translation=preserve_suggestion_clt_tags(source, candidate.translation),
                 speaker=candidate.speaker,
                 file=candidate.file,
                 row=candidate.row,
@@ -361,19 +414,13 @@ def msgid_match_key(text: str) -> str:
 
 
 def reference_duplicate_msgid_key(text: str) -> str:
-    """Return the duplicate-review key while preserving CLT tags.
+    """Return the exact raw source text used by the duplicate views.
 
-    Unlike Translafixer fill/suggestions, the reference duplicate view treats CLT
-    tags as part of the source sentence, so ``<CLT 4>Hello<CLT>`` and ``Hello``
-    are reviewed as different source groups. Whitespace is still collapsed, and
-    CLT tag spelling/spacing is canonicalized to avoid noisy differences such as
-    ``<clt_4>`` versus ``<CLT 4>``.
+    No whitespace, line-break, Unicode, or CLT normalization is applied. This
+    makes source grouping byte-for-text exact after PO parsing: a line break, a
+    space, or any CLT spelling/layout difference creates a different group.
     """
-    normalized = CLT_MATCH_RE.sub(_canonical_clt_tag, _norm(text))
-    normalized = re.sub(r"\s+", " ", normalized).strip()
-    normalized = re.sub(r"(<CLT(?: (?:\d+|n))?>)\s+", r"\1", normalized)
-    normalized = re.sub(r"\s+(<CLT(?: (?:\d+|n))?>)", r"\1", normalized)
-    return normalized
+    return text or ""
 
 
 def _resolve(path: Path) -> Path:
@@ -504,7 +551,7 @@ def _find_reference_duplicate_source_entries(
             key = reference_duplicate_msgid_key(entry.msgid)
             if not key:
                 continue
-            translation = _norm(entry.msgstr)
+            translation = entry.msgstr or ""
             if not translation.strip():
                 result.empty_source_entries += 1
                 if not include_empty:
@@ -527,8 +574,10 @@ def _find_reference_duplicate_source_entries(
     for key, entries in sorted(grouped.items(), key=lambda item: item[0].casefold()):
         if len(entries) <= 1:
             continue
-        distinct_with_empty = {re.sub(r"\s+", " ", _norm(entry.translation)).strip() for entry in entries}
-        distinct_non_empty = {value for value in distinct_with_empty if value}
+        # Diff mode is deliberately raw: line breaks, spaces, Unicode form, and
+        # CLT tags all participate in the comparison exactly as parsed.
+        distinct_with_empty = {entry.translation for entry in entries}
+        distinct_non_empty = {value for value in distinct_with_empty if value.strip()}
         if not distinct_non_empty:
             # All translations for this duplicate source are empty. They are not
             # actionable in the duplicate view because there is no translation to
@@ -568,10 +617,9 @@ def find_reference_translation_conflicts(
 ) -> tuple[list[ReferenceTranslationConflictEntry], TranslafixResult]:
     """Return reference entries where the same msgid has different translations.
 
-    Grouping preserves CLT tags, so the duplicate-conflict view treats strings
-    with different CLT markup as different source sentences. Whitespace is still
-    normalized. Empty msgstr values are included by default unless every entry
-    in the duplicate group is empty.
+    Grouping and translation comparison are raw. Line breaks, whitespace,
+    Unicode form, and CLT tags are all significant. Empty msgstr values are
+    included by default unless every entry in the duplicate group is empty.
     """
     return _find_reference_duplicate_source_entries(
         reference_files,

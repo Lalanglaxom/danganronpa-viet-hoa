@@ -335,13 +335,16 @@ def test_search_finds_wrapped_po_text_after_fast_prefilter():
         po = root / "e01.po"
         po.write_text('msgid "Hello\\n"\n"world"\nmsgstr "Xin chào"\n', encoding="utf-8")
 
-        results = search_path(root, "hello world", search_msgid=True, search_msgstr=False)
+        spaced_results = search_path(root, "hello world", search_msgid=True, search_msgstr=False)
+        folded_results = search_path(root, "helloworld", search_msgid=True, search_msgstr=False)
 
-        assert len(results) == 1
-        assert results[0].msgid == "Hello\nworld"
+        assert len(spaced_results) == 1
+        assert spaced_results[0].msgid == "Hello\nworld"
+        assert len(folded_results) == 1
+        assert folded_results[0].msgid == "Hello\nworld"
 
 
-def test_search_accepts_semicolon_criteria_and_speaker_filter():
+def test_search_accepts_or_and_criteria_and_speaker_filter():
     import tempfile
     from dr_po_toolkit.search import search_path
 
@@ -359,14 +362,42 @@ def test_search_accepts_semicolon_criteria_and_speaker_filter():
         po = root / "e01.po"
         po.write_text(sample, encoding="utf-8")
 
-        text_results = search_path(root, "missing; goodbye", speaker="kyoko")
-        speaker_results = search_path(root, "", speaker="makoto; kyoko")
-        combined_results = search_path(root, "hello; goodbye", speaker="makoto")
+        text_results = search_path(root, "missing | goodbye", speaker="kyoko")
+        speaker_results = search_path(root, "", speaker="makoto | kyoko")
+        combined_results = search_path(root, "hello | goodbye", speaker="makoto")
+        and_results = search_path(root, "good & bye", speaker="kyoko")
+        cross_field_results = search_path(root, "goodbye & tạm biệt", speaker="kyoko")
 
         assert [item.msgctxt for item in text_results] == ["0002 | KYOKO KIRIGIRI"]
         assert {item.msgctxt for item in speaker_results} == {"0001 | MAKOTO NAEGI", "0002 | KYOKO KIRIGIRI"}
         assert [item.msgctxt for item in combined_results] == ["0001 | MAKOTO NAEGI"]
+        assert [item.msgctxt for item in and_results] == ["0002 | KYOKO KIRIGIRI"]
+        assert [item.msgctxt for item in cross_field_results] == ["0002 | KYOKO KIRIGIRI"]
+        assert cross_field_results[0].hit_msgid and cross_field_results[0].hit_msgstr
         assert all(item.hit_speaker for item in speaker_results)
+
+
+def test_search_raw_keeps_clt_and_other_text():
+    import tempfile
+    from dr_po_toolkit.search import search_path
+
+    sample = (
+        'msgctxt "0001 | MAKOTO NAEGI"\n'
+        'msgid "<CLT 4>[Hello]; world<CLT>"\n'
+        'msgstr "Xin chào"\n'
+    )
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        po = root / "e01.po"
+        po.write_text(sample, encoding="utf-8")
+
+        visible_results = search_path(root, "<CLT 4>", search_msgstr=False)
+        raw_results = search_path(root, "<CLT 4>", search_msgstr=False, raw=True)
+        semicolon_results = search_path(root, "; world", search_msgstr=False, raw=True)
+
+        assert visible_results == []
+        assert len(raw_results) == 1
+        assert len(semicolon_results) == 1
 
 
 def test_translafixer_ignores_clt_tags_when_matching_msgid():
@@ -410,13 +441,13 @@ def test_translafixer_suggestion_index_uses_sources_and_filters_low_scores():
         )
 
         index, result = TranslationSuggestionIndex.from_translafixer_sources([source_dir])
-        suggestions = index.suggest("Hello there", min_score=0.70)
+        suggestions = index.suggest("<CLT 4>Hello there\n<CLT>", min_score=0.70)
         unrelated = index.suggest("Nothing in common here", min_score=0.70)
 
         assert result.source_files == 1
         assert result.usable_translations == 2
         assert suggestions
-        assert suggestions[0].score > 0.95
+        assert suggestions[0].score == 1.0
         assert suggestions[0].translation.startswith("<CLT 4>Xin chào")
         assert all(item.score > 0.70 for item in suggestions)
         assert unrelated == []
@@ -472,6 +503,68 @@ def test_sync_by_filename_reports_unmatched_and_copied_files():
         assert result.source_without_target == [source_only]
         assert result.target_without_source == [target_only]
         assert target_copy.read_text(encoding="utf-8") == source_copy.read_text(encoding="utf-8")
+
+
+def test_translation_suggestion_preserves_target_clt_wrapper_when_reference_is_plain():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source.po"
+        source.write_text(
+            'msgctxt "A"\nmsgid "Hello there"\nmsgstr "Xin chào đó"\n',
+            encoding="utf-8",
+        )
+        index, _result = TranslationSuggestionIndex.from_translafixer_sources(source)
+
+        suggestions = index.suggest("<CLT 4>Hello there\n<CLT>", min_score=0.60)
+
+        assert suggestions
+        assert suggestions[0].translation == "<CLT 4>Xin chào đó\n<CLT>"
+
+
+def test_translation_suggestion_never_rewrites_existing_clt_tags():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source.po"
+        source.write_text(
+            'msgctxt "A"\nmsgid "Hello there"\nmsgstr ""\n"<CLT 5>Xin chào đó\\n"\n"<CLT>"\n',
+            encoding="utf-8",
+        )
+        index, _result = TranslationSuggestionIndex.from_translafixer_sources(source)
+
+        suggestions = index.suggest("<CLT 4>Hello there\n<CLT>", min_score=0.60)
+
+        assert suggestions
+        assert suggestions[0].translation == "<CLT 5>Xin chào đó\n<CLT>"
+
+
+def test_translation_suggestion_percentage_counts_line_breaks_and_clt_tags_raw():
+    import tempfile
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source.po"
+        source.write_text(
+            'msgctxt "A"\nmsgid ""\n"<CLT 4>Hello there\\n"\n"<CLT>"\nmsgstr "Xin chào"\n',
+            encoding="utf-8",
+        )
+        index, _result = TranslationSuggestionIndex.from_translafixer_sources(source)
+
+        exact = index.suggest("<CLT 4>Hello there\n<CLT>", min_score=0.0)
+        different_newline = index.suggest("<CLT 4>Hello there <CLT>", min_score=0.0)
+        different_clt = index.suggest("<CLT 5>Hello there\n<CLT>", min_score=0.0)
+        plain = index.suggest("Hello there", min_score=0.0)
+
+        assert exact and exact[0].score == 1.0
+        assert different_newline and different_newline[0].score < 1.0
+        assert different_clt and different_clt[0].score < 1.0
+        assert plain and plain[0].score < different_clt[0].score
 
 
 def test_translation_suggestions_can_search_below_seventy_percent():
@@ -550,8 +643,44 @@ def test_reference_duplicate_conflicts_find_different_translations_only():
         assert {item.variants for item in all_duplicates if item.key == "Hello there"} == {2}
 
         assert reference_duplicate_msgid_key('<CLT 4>Hello there\n<CLT>') != reference_duplicate_msgid_key('Hello there')
-        assert reference_duplicate_msgid_key('<clt_4>Hello there\n<CLT>') == reference_duplicate_msgid_key('<CLT 4>Hello there<CLT>')
+        assert reference_duplicate_msgid_key('<clt_4>Hello there\n<CLT>') != reference_duplicate_msgid_key('<CLT 4>Hello there<CLT>')
 
+
+
+def test_reference_duplicate_diff_uses_raw_newlines_and_clt():
+    import tempfile
+    from dr_po_toolkit.translafixer import find_reference_duplicate_sources, find_reference_translation_conflicts
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "one.po").write_text(
+            'msgctxt "A"\nmsgid "Same source"\nmsgstr "Xin\\n"\n"chào"\n\n'
+            'msgctxt "B"\nmsgid "Line\\n"\n"break"\nmsgstr "Một"\n\n'
+            'msgctxt "C"\nmsgid "<CLT 4>Tagged<CLT>"\nmsgstr "Ba"\n',
+            encoding="utf-8",
+        )
+        (root / "two.po").write_text(
+            'msgctxt "D"\nmsgid "Same source"\nmsgstr "Xin chào"\n\n'
+            'msgctxt "E"\nmsgid "Line break"\nmsgstr "Hai"\n\n'
+            'msgctxt "F"\nmsgid "<clt_4>Tagged<CLT>"\nmsgstr "Bốn"\n',
+            encoding="utf-8",
+        )
+        (root / "three.po").write_text(
+            'msgctxt "G"\nmsgid "Same source"\nmsgstr "<CLT 4>Xin chào<CLT>"\n',
+            encoding="utf-8",
+        )
+
+        conflicts, _result = find_reference_translation_conflicts(root)
+        assert {item.source for item in conflicts} == {"Same source"}
+        assert {item.translation for item in conflicts} == {"Xin\nchào", "Xin chào", "<CLT 4>Xin chào<CLT>"}
+        assert {item.variants for item in conflicts} == {3}
+
+        all_duplicates, _all_result = find_reference_duplicate_sources(root)
+        assert {item.source for item in all_duplicates} == {"Same source"}
+        assert "Line\nbreak" not in {item.source for item in all_duplicates}
+        assert "Line break" not in {item.source for item in all_duplicates}
+        assert "<CLT 4>Tagged<CLT>" not in {item.source for item in all_duplicates}
+        assert "<clt_4>Tagged<CLT>" not in {item.source for item in all_duplicates}
 
 def test_duplicate_paths_use_selected_checkbox_working_folders():
     import tempfile
@@ -626,7 +755,11 @@ def test_shared_search_replace_ignores_linebreak_shape():
     assert pattern.search("hello\nworld")
     assert pattern.search(r"hello\nworld")
 
-    replaced, count = pattern.subn(search_replace_replacement(r"xin\nchao"), "hello\nworld")
+    folded_pattern = compile_search_replace_pattern("helloworld")
+    assert folded_pattern.search("hello\nworld")
+    assert folded_pattern.search(r"hello\nworld")
+
+    replaced, count = folded_pattern.subn(search_replace_replacement(r"xin\nchao"), "hello\nworld")
     assert count == 1
     assert replaced == "xin\nchao"
 
@@ -657,3 +790,41 @@ def test_search_replace_sequence_reports_bad_item_index():
         assert exc.index == 2
     else:  # pragma: no cover - defensive
         raise AssertionError("expected SearchReplaceCompileError")
+
+
+def test_validator_entry_link_roundtrip_handles_unicode_and_symbols():
+    import tempfile
+    from dr_po_toolkit.app_links import build_entry_url, parse_entry_url
+
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "tệp & scene #1.po"
+        url = build_entry_url(path, context="001 | Kyoko & Makoto", line=42)
+        parsed = parse_entry_url(url)
+
+        assert parsed is not None
+        assert parsed.file == path.resolve()
+        assert parsed.context == "001 | Kyoko & Makoto"
+        assert parsed.line == 42
+
+
+def test_validator_html_has_direct_open_entry_link():
+    import tempfile
+    from dr_po_toolkit.models import ValidationIssue
+    from dr_po_toolkit.validation import build_html_report
+
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "scene.po"
+        issue = ValidationIssue(
+            level="WARN",
+            check="clt",
+            detail="CLT mismatch",
+            file=path,
+            msgctxt="0001 | MAKOTO",
+            line=17,
+        )
+        report = build_html_report({path: [issue]}, root=tmp)
+
+        assert "Open in app" in report
+        assert "drpo://open?" in report
+        assert "context=0001+%7C+MAKOTO" in report
+        assert "line=17" in report

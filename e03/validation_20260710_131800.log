@@ -1,0 +1,1113 @@
+========================================================================
+PO VALIDATION REPORT
+Generated: 2026-07-10 13:18:00
+========================================================================
+
+[WARN:1] e03_000_003 Corpse Handbook Mailbox\e03_000_003.po
+  WARN   [duplicate_sentence_translation_global] line 120 0010 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='No'. 'Không' -> e03_000_003.po: line 120 0010 | CHOICE/RE:ACT, e03_000_004.po: line 47 0004 | CHOICE/RE:ACT, e03_000_006.po: line 47 0004 | CHOICE/RE:ACT, e03_000_009.po: line 80 0007 | CHOICE/RE:ACT, +151 more | 'Tớ từ chối.' -> e03_044_030.po: line 1496 0200 | KYOUKO KIRIGIRI | 'Không phải!' -> e03_201_141.po: line 199 0026 | MAKOTO NAEGI
+
+[OK] e03_000_004 Surveillance Exit Prompt\e03_000_004.po
+
+[OK] e03_000_005 Gym Trophy Display\e03_000_005.po
+
+[OK] e03_000_006 Gym Exit Prompt\e03_000_006.po
+
+[OK] e03_000_009 Empty DVD Player\e03_000_009.po
+
+[OK] e03_000_010 School Store Investigation\e03_000_010.po
+
+[OK] e03_000_011 Infirmary Monitor Investigation\e03_000_011.po
+
+[OK] e03_000_014 Classroom Investigation Plate\e03_000_014.po
+
+[STRUCT:1] e03_000_015 Classroom Plate Investigation\e03_000_015.po
+  STRUCT [line_count_match] line 43 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_000_016 Area Exit Prompt\e03_000_016.po
+
+[STRUCT:4, INFO:1] e03_000_022 Library History Discovery\e03_000_022.po
+  STRUCT [line_count_match] line 56 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 91 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 126 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 290 0024 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 270 0022 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1, INFO:1] e03_000_025 Archive Case Files\e03_000_025.po
+  STRUCT [line_count_match] line 115 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 109 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_000_026 Locker Room Investigation\e03_000_026.po
+  STRUCT [line_count_match] line 96 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_000_030 Pool Exit Prompt\e03_000_030.po
+  STRUCT [line_count_match] line 27 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_000_031 Classroom Metal Plates\e03_000_031.po
+
+[OK] e03_000_032 Classroom Window Plates\e03_000_032.po
+
+[ERROR:1, STRUCT:1] e03_000_033 Bathroom Supply Search\e03_000_033.po
+  ERROR  [clt_tag_integrity] line 27 0002 | MAKOTO NAEGI: CLT tags differ. source=[], translation=['<CLT 4>', '<CLT>']
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_000_037 Locker Room Cleanup\e03_000_037.po
+  STRUCT [line_count_match] line 57 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_000_042 Rec Room Investigation\e03_000_042.po
+  STRUCT [line_count_match] line 96 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_000_044 Art Room Investigation\e03_000_044.po
+
+[OK] e03_000_046 Art Room Storage\e03_000_046.po
+
+[STRUCT:1] e03_000_047 Physics Lab Discovery\e03_000_047.po
+  STRUCT [line_count_match] line 88 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_000_048 Lab Equipment Storage\e03_000_048.po
+
+[STRUCT:3] e03_000_051 Classroom Metal Survey\e03_000_051.po
+  STRUCT [line_count_match] line 43 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 65 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 89 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+
+[OK] e03_000_052 Classroom Despair Routine\e03_000_052.po
+
+[OK] e03_000_135 Camera Clock Observation\e03_000_135.po
+
+[STRUCT:3, INFO:1] e03_000_136 Kitchen Knife Memory\e03_000_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_000_137 Trash Room Investigation\e03_000_137.po
+
+[STRUCT:1] e03_000_139 Laundry Room Survey\e03_000_139.po
+  STRUCT [line_count_match] line 182 0014 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_000_140 Warehouse Food Investigation\e03_000_140.po
+  STRUCT [line_count_match] line 66 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_000_141 Alter Ego Locker\e03_000_141.po
+
+[OK] e03_000_144 Bathhouse Tub Survey\e03_000_144.po
+
+[STRUCT:1] e03_000_145 Sauna Battle Memory\e03_000_145.po
+  STRUCT [line_count_match] line 31 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_000_146 Fish Tank Inspection\e03_000_146.po
+
+[INFO:5] e03_001_123 Hina Crying Scene\e03_001_123.po
+  INFO   [copy_of_source] line 16 0001 | NO NAME: msgstr is identical to msgid
+  INFO   [copy_of_source] line 41 0006 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 61 0010 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 87 0014 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 215 0032 | AOI ASAHINA: msgstr is identical to msgid
+
+[WARN:1, INFO:4] e03_002_135 Dining Hall Morning\e03_002_135.po
+  WARN   [duplicate_sentence_translation_global] line 290 0033 | CELES: Same msgid has different msgstr across files. msgid='Hmm?'. 'Hửm?' -> e03_002_135.po: line 290 0033 | CELES | 'Hừm...' -> e03_040_044.po: line 75 0006 | MAKOTO NAEGI, e03_040_046.po: line 2573 0291 | MAKOTO NAEGI, e03_040_046.po: line 2755 0308 | MAKOTO NAEGI, e03_042_117.po: line 252 0025 | MAKOTO NAEGI, +1 more
+  INFO   [copy_of_source] line 117 0013 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 127 0015 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 506 0061 | TOUKO FUKAWA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 529 0064 | TOUKO FUKAWA: msgstr is identical to msgid
+
+[INFO:1] e03_003_001 Girls Bathroom Hesitation\e03_003_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_003_003 Entrance Hall Observation Machine Room Observation\e03_003_003.po
+
+[OK] e03_003_021 Third Floor Access\e03_003_021.po
+
+[STRUCT:2] e03_003_027 Byakuya Locker Room\e03_003_027.po
+  STRUCT [line_count_match] line 66 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 136 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_003_041 Third Floor Arrival\e03_003_041.po
+
+[STRUCT:1] e03_003_051 3rd Floor Exploration\e03_003_051.po
+  STRUCT [line_count_match] line 78 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_003_052 3rd Floor Inspection\e03_003_052.po
+  STRUCT [line_count_match] line 50 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_003_101 Dormitory Investigation Survey\e03_003_101.po
+
+[OK] e03_003_135 Generic Leave Prompt\e03_003_135.po
+
+[STRUCT:2, INFO:1] e03_003_136 Kitchen Knife Remembrance\e03_003_136.po
+  STRUCT [line_count_match] line 28 0002 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 50 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 39 0003 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_003_141 Bathhouse Locker Survey\e03_003_141.po
+
+[STRUCT:6, INFO:1] e03_004_042 Recreation Room Discovery\e03_004_042.po
+  STRUCT [line_count_match] line 22 0002 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 62 0007 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 85 0010 | MONOKUMA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 166 0022 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 238 0030 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 263 0032 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 136 0017 | CELES: msgstr is identical to msgid
+
+[STRUCT:4] e03_005_044 Art Room Figurines\e03_005_044.po
+  STRUCT [line_count_match] line 31 0003 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 117 0013 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 134 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 197 0021 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+
+[WARN:2] e03_005_046 Art Room Photo\e03_005_046.po
+  WARN   [duplicate_sentence_translation_global] line 94 0009 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Huh...?'. 'Hả...?' -> e03_005_046.po: line 94 0009 | MAKOTO NAEGI, e03_006_047.po: line 162 0017 | MAKOTO NAEGI, e03_007_135.po: line 307 0044 | AOI ASAHINA, e03_014_142.po: line 386 0052 | MAKOTO NAEGI, +15 more | 'Hả?' -> e03_007_135.po: line 263 0038 | AOI ASAHINA, e03_007_142.po: line 508 0061 | YASUHIRO HAGAKURE, e03_013_101.po: line 21 0002 | MAKOTO NAEGI, e03_044_030.po: line 1451 0194 | MAKOTO NAEGI, +1 more | 'Hả!?' -> e03_032_041.po: line 105 0016 | MAKOTO NAEGI, e03_040_046.po: line 1513 0185 | MAKOTO NAEGI, e03_045_046.po: line 1173 0143 | MAKOTO NAEGI, e03_107_000.po: line 815 0099 | MAKOTO NAEGI, +2 more
+  WARN   [duplicate_sentence_translation_global] line 130 0013 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='What is this...?'. 'Cái gì thế này...?' -> e03_005_046.po: line 130 0013 | MAKOTO NAEGI | 'Cái gì đây...?' -> e03_028_042.po: line 780 0096 | MAKOTO NAEGI
+
+[WARN:1, STRUCT:2, INFO:2] e03_006_047 Physics Lab Investigation\e03_006_047.po
+  WARN   [duplicate_sentence_translation_global] line 253 0030 | KIYOTAKA ISHIMARU: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  STRUCT [line_count_match] line 132 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 391 0046 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 49 0004 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 327 0039 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+
+[STRUCT:1, INFO:2] e03_006_048 Equipment Room Survey\e03_006_048.po
+  STRUCT [line_count_match] line 84 0010 | TOUKO FUKAWA: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 60 0007 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 94 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:15, STRUCT:12, INFO:12] e03_007_135 Anime Camera Discovery Celeste Lie Advice\e03_007_135.po
+  WARN   [duplicate_sentence_translation] line 263 0038 | AOI ASAHINA: Same msgid has different msgstr. msgid='Huh?'. 'Hả?' -> line 263 0038 | AOI ASAHINA | 'Hả...?' -> line 307 0044 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation] line 307 0044 | AOI ASAHINA: Same msgid has different msgstr. msgid='Huh?'. 'Hả?' -> line 263 0038 | AOI ASAHINA | 'Hả...?' -> line 307 0044 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation] line 387 0056 | CHOICE/RE:ACT: Same msgid has different msgstr. msgid='the truth'. 'sự thật' -> line 387 0056 | CHOICE/RE:ACT | 'Sự thật sao...?' -> line 392 0057 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 392 0057 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='the truth'. 'sự thật' -> line 387 0056 | CHOICE/RE:ACT | 'Sự thật sao...?' -> line 392 0057 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 711 0108 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Hina!?'. 'Hina!?' -> line 711 0108 | MAKOTO NAEGI | 'Hina!' -> line 739 0111 | SAKURA OOGAMI
+  WARN   [duplicate_sentence_translation] line 739 0111 | SAKURA OOGAMI: Same msgid has different msgstr. msgid='Hina!?'. 'Hina!?' -> line 711 0108 | MAKOTO NAEGI | 'Hina!' -> line 739 0111 | SAKURA OOGAMI
+  WARN   [duplicate_sentence_translation_global] line 126 0017 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  WARN   [duplicate_sentence_translation_global] line 263 0038 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='Huh...?'. 'Hả...?' -> e03_005_046.po: line 94 0009 | MAKOTO NAEGI, e03_006_047.po: line 162 0017 | MAKOTO NAEGI, e03_007_135.po: line 307 0044 | AOI ASAHINA, e03_014_142.po: line 386 0052 | MAKOTO NAEGI, +15 more | 'Hả?' -> e03_007_135.po: line 263 0038 | AOI ASAHINA, e03_007_142.po: line 508 0061 | YASUHIRO HAGAKURE, e03_013_101.po: line 21 0002 | MAKOTO NAEGI, e03_044_030.po: line 1451 0194 | MAKOTO NAEGI, +1 more | 'Hả!?' -> e03_032_041.po: line 105 0016 | MAKOTO NAEGI, e03_040_046.po: line 1513 0185 | MAKOTO NAEGI, e03_045_046.po: line 1173 0143 | MAKOTO NAEGI, e03_107_000.po: line 815 0099 | MAKOTO NAEGI, +2 more
+  WARN   [duplicate_sentence_translation_global] line 352 0050 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='Y-Yes...'. 'Ừ-Ừm...' -> e03_007_135.po: line 352 0050 | AOI ASAHINA | 'V-Vâng...?' -> e03_016_141.po: line 785 0113 | HIFUMI YAMADA | 'V-Vâng!' -> e03_016_141.po: line 965 0139 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation_global] line 387 0056 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='the truth'. 'sự thật' -> e03_007_135.po: line 387 0056 | CHOICE/RE:ACT | 'Sự thật sao...?' -> e03_007_135.po: line 392 0057 | MAKOTO NAEGI | 'Sự thật ư...?' -> e03_126_001.po: line 111 0015 | CELES
+  WARN   [duplicate_sentence_translation_global] line 392 0057 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='the truth'. 'sự thật' -> e03_007_135.po: line 387 0056 | CHOICE/RE:ACT | 'Sự thật sao...?' -> e03_007_135.po: line 392 0057 | MAKOTO NAEGI | 'Sự thật ư...?' -> e03_126_001.po: line 111 0015 | CELES
+  WARN   [duplicate_sentence_translation_global] line 711 0108 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Hina!?'. 'Hina!?' -> e03_007_135.po: line 711 0108 | MAKOTO NAEGI | 'Hina!' -> e03_007_135.po: line 739 0111 | SAKURA OOGAMI | 'Hina' -> e03_103_000.po: line 200 0026 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 739 0111 | SAKURA OOGAMI: Same msgid has different msgstr across files. msgid='Hina!?'. 'Hina!?' -> e03_007_135.po: line 711 0108 | MAKOTO NAEGI | 'Hina!' -> e03_007_135.po: line 739 0111 | SAKURA OOGAMI | 'Hina' -> e03_103_000.po: line 200 0026 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 849 0127 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='H-Huh...?'. 'H-Hả...?' -> e03_007_135.po: line 849 0127 | AOI ASAHINA, e03_032_041.po: line 85 0012 | TOUKO FUKAWA | 'H-Hả...!?' -> e03_020_135.po: line 147 0022 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation_global] line 1056 0153 | HIFUMI YAMADA: Same msgid has different msgstr across files. msgid='Ngh-gh-gh!?'. 'Hử hử hử!?' -> e03_007_135.po: line 1056 0153 | HIFUMI YAMADA | '…Ư-ư-ư!' -> e03_125_000.po: line 101 0011 | CELES
+  STRUCT [line_count_match] line 522 0079 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 564 0085 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 696 0106 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 899 0134 | YASUHIRO HAGAKURE: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1008 0148 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1116 0160 | YASUHIRO HAGAKURE: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1250 0179 | YASUHIRO HAGAKURE: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1345 0191 | CELES: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 1355 0192 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1372 0194 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1504 0214 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 1538 0217 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 347 0049 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 684 0104 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 711 0108 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 739 0111 | SAKURA OOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 879 0131 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1163 0167 | TOUKO FUKAWA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1408 0200 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1468 0208 | TOUKO FUKAWA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1473 0209 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1478 0210 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1493 0212 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1498 0213 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+
+[INFO:2] e03_007_141 Bathhouse Ghost Investigation\e03_007_141.po
+  INFO   [copy_of_source] line 31 0003 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 59 0008 | HIFUMI YAMADA: msgstr is identical to msgid
+
+[WARN:1, INFO:3] e03_007_142 Alter Ego Discovery Alter Ego Farewell\e03_007_142.po
+  WARN   [duplicate_sentence_translation_global] line 389 0046 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='What is it...?'. 'Có chuyện gì thế...?' -> e03_007_142.po: line 389 0046 | MAKOTO NAEGI | 'Có chuyện gì vậy?' -> e03_255_004.po: line 42 0004 | KYOUKO KIRIGIRI
+  INFO   [copy_of_source] line 139 0016 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 732 0089 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 919 0115 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:2] e03_008_101 Hina Level Up Makoto Bathhouse Choice\e03_008_101.po
+  INFO   [copy_of_source] line 66 0006 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 337 0042 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:2] e03_008_135 Post-Bath Discussion\e03_008_135.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 54 0007 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1] e03_008_141 Bathhouse Peeping Mission Hifumi Battle Cry\e03_008_141.po
+  WARN   [duplicate_sentence_translation_global] line 207 0019 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='...I saw...!'. '...Mình đã thấy...!' -> e03_008_141.po: line 207 0019 | MAKOTO NAEGI | '...Mình đã thấy...' -> e03_039_044.po: line 255 0023 | MAKOTO NAEGI
+
+[WARN:1, INFO:3] e03_009_006 Gym Motive Meeting\e03_009_006.po
+  WARN   [duplicate_sentence_translation_global] line 276 0035 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='B-But...'. 'Nh-Nhưng...' -> e03_009_006.po: line 276 0035 | AOI ASAHINA, e03_034_048.po: line 518 0061 | AOI ASAHINA | 'N-Nhưng mà...!' -> e03_044_030.po: line 1199 0158 | MAKOTO NAEGI, e03_044_030.po: line 1246 0165 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 62 0006 | TOUKO FUKAWA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 256 0032 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 566 0072 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+
+[WARN:1, INFO:1] e03_010_101 Hifumi Strawberry Morning Hifumi Morning Encounter\e03_010_101.po
+  WARN   [duplicate_sentence_translation_global] line 166 0021 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Yeah...'. 'Ừm...' -> e03_010_101.po: line 166 0021 | MAKOTO NAEGI, e03_201_101.po: line 171 0025 | MAKOTO NAEGI | 'Phải.' -> e03_040_046.po: line 1015 0127 | MAKOTO NAEGI | 'Phải...' -> e03_040_046.po: line 1021 0128 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 312 0035 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:2] e03_010_103 Morning Announcement Routine\e03_010_103.po
+  STRUCT [line_count_match] line 166 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 188 0018 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_011_135 Taka Absence Discussion\e03_011_135.po
+
+[INFO:1] e03_012_001 Girls Bathroom Entry\e03_012_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_012_021 Girls Bathroom Hesitation\e03_012_021.po
+
+[OK] e03_012_041 Blocked Up Stairs\e03_012_041.po
+
+[OK] e03_012_101 Locked Dorm Exploration\e03_012_101.po
+
+[STRUCT:2, INFO:1] e03_012_103 Dorm Morning Thoughts\e03_012_103.po
+  STRUCT [line_count_match] line 132 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 186 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 86 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:4, INFO:1] e03_012_136 Kitchen Knife Trauma\e03_012_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 123 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:3] e03_013_101 Taka Condition Concern\e03_013_101.po
+  INFO   [copy_of_source] line 148 0018 | TOUKO FUKAWA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 355 0038 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 437 0045 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:4, STRUCT:1, INFO:9] e03_013_103 Taka Room Visit\e03_013_103.po
+  WARN   [duplicate_sentence_translation] line 87 0010 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='T-Taka!'. 'T-Taka!' -> line 87 0010 | MAKOTO NAEGI | 'T-Taka...' -> line 129 0018 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 129 0018 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='T-Taka!'. 'T-Taka!' -> line 87 0010 | MAKOTO NAEGI | 'T-Taka...' -> line 129 0018 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 87 0010 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='T-Taka!'. 'T-Taka!' -> e03_013_103.po: line 87 0010 | MAKOTO NAEGI | 'T-Taka...' -> e03_013_103.po: line 129 0018 | MAKOTO NAEGI | 'T-Taka!?' -> e03_014_142.po: line 406 0056 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 129 0018 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='T-Taka!'. 'T-Taka!' -> e03_013_103.po: line 87 0010 | MAKOTO NAEGI | 'T-Taka...' -> e03_013_103.po: line 129 0018 | MAKOTO NAEGI | 'T-Taka!?' -> e03_014_142.po: line 406 0056 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 273 0035 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 46 0005 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 82 0009 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 87 0010 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 92 0011 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 97 0012 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 129 0018 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 168 0022 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 188 0025 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 218 0030 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:2, INFO:11] e03_014_142 Taka Alter Ego Meeting\e03_014_142.po
+  WARN   [duplicate_sentence_translation_global] line 361 0048 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Taka...?'. 'Taka...?' -> e03_014_142.po: line 361 0048 | MAKOTO NAEGI | 'Taka...' -> e03_037_048.po: line 269 0029 | MAKOTO NAEGI, e03_040_101.po: line 130 0012 | MAKOTO NAEGI | 'Taka' -> e03_115_000.po: line 964 0111 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 406 0056 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='T-Taka!'. 'T-Taka!' -> e03_013_103.po: line 87 0010 | MAKOTO NAEGI | 'T-Taka...' -> e03_013_103.po: line 129 0018 | MAKOTO NAEGI | 'T-Taka!?' -> e03_014_142.po: line 406 0056 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 16 0001 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 56 0007 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 127 0016 | ALTER EGO: msgstr is identical to msgid
+  INFO   [copy_of_source] line 162 0021 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 268 0035 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 351 0046 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 361 0048 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 366 0049 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+  INFO   [copy_of_source] line 406 0056 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 533 0074 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 566 0079 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_015_101 Breakfast Dining Meeting\e03_015_101.po
+  INFO   [copy_of_source] line 129 0010 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:7, INFO:1] e03_015_103 Nighttime Taka Worry\e03_015_103.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 191 0020 | MONOKUMA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 224 0024 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 266 0028 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 360 0038 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 383 0040 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 405 0042 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 301 0033 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_016_135 Hiro Bath Invitation Makoto Bathhouse Investigation\e03_016_135.po
+
+[WARN:7, STRUCT:9, INFO:6] e03_016_141 Hifumi Alter Obsession\e03_016_141.po
+  WARN   [duplicate_sentence_translation] line 16 0001 | CHOICE/RE:ACT: Same msgid has different msgstr. msgid='the same mistake'. 'cùng một sai lầm' -> line 16 0001 | CHOICE/RE:ACT | 'Cùng một sai lầm...?' -> line 157 0022 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 157 0022 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='the same mistake'. 'cùng một sai lầm' -> line 16 0001 | CHOICE/RE:ACT | 'Cùng một sai lầm...?' -> line 157 0022 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 785 0113 | HIFUMI YAMADA: Same msgid has different msgstr. msgid='Y-Yes...?'. 'V-Vâng...?' -> line 785 0113 | HIFUMI YAMADA | 'V-Vâng!' -> line 965 0139 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation] line 965 0139 | HIFUMI YAMADA: Same msgid has different msgstr. msgid='Y-Yes...?'. 'V-Vâng...?' -> line 785 0113 | HIFUMI YAMADA | 'V-Vâng!' -> line 965 0139 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation_global] line 785 0113 | HIFUMI YAMADA: Same msgid has different msgstr across files. msgid='Y-Yes...'. 'Ừ-Ừm...' -> e03_007_135.po: line 352 0050 | AOI ASAHINA | 'V-Vâng...?' -> e03_016_141.po: line 785 0113 | HIFUMI YAMADA | 'V-Vâng!' -> e03_016_141.po: line 965 0139 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation_global] line 835 0121 | KIYOTAKA ISHIMARU: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  WARN   [duplicate_sentence_translation_global] line 965 0139 | HIFUMI YAMADA: Same msgid has different msgstr across files. msgid='Y-Yes...'. 'Ừ-Ừm...' -> e03_007_135.po: line 352 0050 | AOI ASAHINA | 'V-Vâng...?' -> e03_016_141.po: line 785 0113 | HIFUMI YAMADA | 'V-Vâng!' -> e03_016_141.po: line 965 0139 | HIFUMI YAMADA
+  STRUCT [line_count_match] line 296 0042 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 329 0047 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 342 0049 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 355 0051 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 432 0062 | YASUHIRO HAGAKURE: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 466 0066 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 507 0072 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 598 0084 | HIFUMI YAMADA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 737 0106 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 126 0018 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 166 0023 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 486 0069 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 825 0119 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 935 0134 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 940 0135 | KIYOTAKA ISHIMARU: msgstr is identical to msgid
+
+[INFO:1] e03_017_001 Girls Bathroom Dread\e03_017_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_017_021 Bathroom Creep Avoidance\e03_017_021.po
+
+[OK] e03_017_041 Blocked Stair Gate\e03_017_041.po
+
+[OK] e03_017_101 Dormitory Exploration Inspection\e03_017_101.po
+
+[STRUCT:3, INFO:1] e03_017_103 Daily Routine Dread\e03_017_103.po
+  STRUCT [line_count_match] line 37 0003 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 210 0021 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 222 0022 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 107 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_017_136 Kitchen Knife Reminiscence\e03_017_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 65 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 87 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 76 0006 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_018_001 Bathroom Entry Dread\e03_018_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_018_021 Makoto Bathroom Avoidance\e03_018_021.po
+
+[OK] e03_018_041 Blocked Staircase Gate\e03_018_041.po
+
+[OK] e03_018_101 Dormitory Hallway Exploration\e03_018_101.po
+
+[STRUCT:3, INFO:1] e03_018_103 Nighttime Announcement Sequence\e03_018_103.po
+  STRUCT [line_count_match] line 123 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 135 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 267 0029 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 170 0019 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_018_136 Kitchen Knife Investigation\e03_018_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:2] e03_019_101 Dining Hall Transition\e03_019_101.po
+  INFO   [copy_of_source] line 131 0010 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 141 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_019_103 Morning Announcement Sequence\e03_019_103.po
+  STRUCT [line_count_match] line 53 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 152 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 187 0019 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 101 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:2, INFO:2] e03_020_135 Dining Hall Gossip\e03_020_135.po
+  WARN   [duplicate_sentence_translation_global] line 147 0022 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='H-Huh...?'. 'H-Hả...?' -> e03_007_135.po: line 849 0127 | AOI ASAHINA, e03_032_041.po: line 85 0012 | TOUKO FUKAWA | 'H-Hả...!?' -> e03_020_135.po: line 147 0022 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation_global] line 341 0048 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Interesting...?'. 'Thú vị sao...?' -> e03_020_135.po: line 341 0048 | MAKOTO NAEGI | 'Thú vị đấy...' -> e03_120_001.po: line 93 0010 | KYOUKO KIRIGIRI | 'Thú vị thật...' -> e03_129_000.po: line 84 0012 | BYAKUYA TOGAMI
+  INFO   [copy_of_source] line 83 0012 | NO NAME: msgstr is identical to msgid
+  INFO   [copy_of_source] line 106 0015 | TOUKO FUKAWA: msgstr is identical to msgid
+
+[INFO:1] e03_021_001 Makoto Bathroom Hesitation\e03_021_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_021_021 Makoto Bathroom Avoidance\e03_021_021.po
+
+[OK] e03_021_041 Blocked Staircase Gate\e03_021_041.po
+
+[OK] e03_021_101 Dormitory Investigation Routine\e03_021_101.po
+
+[STRUCT:2, INFO:1] e03_021_103 Makoto Room Inspection\e03_021_103.po
+  STRUCT [line_count_match] line 121 0013 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 178 0019 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 82 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_021_136 Kitchen Investigation Monologue\e03_021_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_022_001 Bathroom Entry Dread\e03_022_001.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_022_021 Makoto Bathroom Comment\e03_022_021.po
+
+[OK] e03_022_041 Blocked Stairway Gate\e03_022_041.po
+
+[OK] e03_022_101 Dormitory Hallway Investigation\e03_022_101.po
+
+[WARN:1, STRUCT:4, INFO:1] e03_022_103 Makoto Idle Thoughts\e03_022_103.po
+  WARN   [duplicate_sentence_translation_global] line 183 0018 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='This is...'. 'Đây là...' -> e03_022_103.po: line 183 0018 | MAKOTO NAEGI | 'Cái này là...!' -> e03_200_205.po: line 1192 0163 | KYOUKO KIRIGIRI
+  STRUCT [line_count_match] line 137 0014 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 149 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 231 0024 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 243 0025 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 95 0010 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_022_136 Kitchen Knife Remembrance\e03_022_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_023_101 Dining Hall Objective\e03_023_101.po
+
+[STRUCT:3, INFO:1] e03_023_103 Mysterious Door Note\e03_023_103.po
+  STRUCT [line_count_match] line 152 0015 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 264 0025 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 276 0026 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 107 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_024_135 Hiro Letter Reveal\e03_024_135.po
+  INFO   [copy_of_source] line 67 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, INFO:4] e03_024_141 Dressing Room Confrontation\e03_024_141.po
+  WARN   [duplicate_sentence_translation_global] line 318 0036 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Gone...?'. 'Biến mất...?' -> e03_024_141.po: line 318 0036 | MAKOTO NAEGI | 'Mất rồi…' -> e03_202_036.po: line 403 0053 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 162 0017 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 348 0041 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 966 0120 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 992 0124 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_025_101 Split Search Mission\e03_025_101.po
+
+[OK] e03_025_103 Alter Ego Theft\e03_025_103.po
+
+[INFO:1] e03_025_135 Dining Hall Absence\e03_025_135.po
+  INFO   [copy_of_source] line 29 0003 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+
+[WARN:1, INFO:1] e03_026_001 Hina Distant Scream\e03_026_001.po
+  WARN   [duplicate_sentence_translation_global] line 31 0003 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  INFO   [copy_of_source] line 87 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_026_003 Entrance Surveillance Check\e03_026_003.po
+  STRUCT [line_count_match] line 64 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_026_009 AV Room Inspection\e03_026_009.po
+
+[OK] e03_026_010 School Store Inspection\e03_026_010.po
+
+[OK] e03_026_011 Nurse Office Inspection\e03_026_011.po
+
+[OK] e03_026_014 Classroom Investigation Check\e03_026_014.po
+
+[OK] e03_026_015 Classroom Environment Inspection\e03_026_015.po
+
+[OK] e03_026_016 Area Exit Prompt\e03_026_016.po
+
+[INFO:1] e03_027_041 Rec Room Discovery\e03_027_041.po
+  INFO   [copy_of_source] line 38 0003 | AOI ASAHINA: msgstr is identical to msgid
+
+[WARN:5, STRUCT:15, INFO:4] e03_028_042 Hifumi Kidnapping Evidence\e03_028_042.po
+  WARN   [duplicate_sentence_translation] line 851 0104 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Justice Hammer 1...'. 'Búa Công lý số 1...' -> line 851 0104 | MAKOTO NAEGI | 'Búa Công lý số 1...?' -> line 1087 0136 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 1087 0136 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Justice Hammer 1...'. 'Búa Công lý số 1...' -> line 851 0104 | MAKOTO NAEGI | 'Búa Công lý số 1...?' -> line 1087 0136 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 42 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='H-Hifumi!?'. 'H-Hifumi!?' -> e03_028_042.po: line 42 0005 | MAKOTO NAEGI | 'H-Hifumi...?' -> e03_033_001.po: line 138 0018 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 446 0063 | SAKURA OOGAMI: Same msgid has different msgstr across files. msgid='You did?'. 'Cậu đã làm vậy sao?' -> e03_028_042.po: line 446 0063 | SAKURA OOGAMI, e03_028_042.po: line 1023 0128 | SAKURA OOGAMI | 'Cậu tìm thấy rồi sao...?' -> e03_045_046.po: line 99 0010 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 780 0096 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='What is this...?'. 'Cái gì thế này...?' -> e03_005_046.po: line 130 0013 | MAKOTO NAEGI | 'Cái gì đây...?' -> e03_028_042.po: line 780 0096 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 66 0009 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 167 0023 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 203 0028 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 273 0039 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 281 0040 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 304 0044 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 346 0049 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 519 0072 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 527 0073 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 636 0084 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 671 0087 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 876 0108 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 923 0114 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1117 0139 | SAKURA OOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1161 0146 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 37 0004 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 42 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 288 0041 | NO NAME: msgstr is identical to msgid
+  INFO   [copy_of_source] line 860 0105 | NO NAME: msgstr is identical to msgid
+
+[OK] e03_029_021 Library Search Party\e03_029_021.po
+
+[WARN:1] e03_030_011 Nurse Office Treatment\e03_030_011.po
+  WARN   [duplicate_sentence_translation_global] line 296 0035 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='H-Hold on!'. 'K-Khoan đã!' -> e03_030_011.po: line 296 0035 | MAKOTO NAEGI | 'Đ-Đợi... đợi đã...' -> e03_039_046.po: line 147 0016 | AOI ASAHINA
+
+[WARN:4, INFO:3] e03_030_022 Hifumi Library Discovery\e03_030_022.po
+  WARN   [duplicate_sentence_translation] line 123 0018 | HIFUMI YAMADA: Same msgid has different msgstr. msgid='Robo Justice...!'. 'Người Máy Công Lý!' -> line 123 0018 | HIFUMI YAMADA | 'Người Máy Công Lý sao...?' -> line 153 0024 | BYAKUYA TOGAMI
+  WARN   [duplicate_sentence_translation] line 153 0024 | BYAKUYA TOGAMI: Same msgid has different msgstr. msgid='Robo Justice...!'. 'Người Máy Công Lý!' -> line 123 0018 | HIFUMI YAMADA | 'Người Máy Công Lý sao...?' -> line 153 0024 | BYAKUYA TOGAMI
+  WARN   [duplicate_sentence_translation_global] line 123 0018 | HIFUMI YAMADA: Same msgid has different msgstr across files. msgid='Robo Justice...!'. 'Người Máy Công Lý!' -> e03_030_022.po: line 123 0018 | HIFUMI YAMADA | 'Người Máy Công Lý sao...?' -> e03_030_022.po: line 153 0024 | BYAKUYA TOGAMI | '...Robo Công Lý!?' -> e03_043_101.po: line 52 0008 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 153 0024 | BYAKUYA TOGAMI: Same msgid has different msgstr across files. msgid='Robo Justice...!'. 'Người Máy Công Lý!' -> e03_030_022.po: line 123 0018 | HIFUMI YAMADA | 'Người Máy Công Lý sao...?' -> e03_030_022.po: line 153 0024 | BYAKUYA TOGAMI | '...Robo Công Lý!?' -> e03_043_101.po: line 52 0008 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 494 0057 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 547 0062 | MONOKUMA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 577 0066 | MONOKUMA: msgstr is identical to msgid
+
+[WARN:1, INFO:1] e03_031_001 Staircase Shadow Chase\e03_031_001.po
+  WARN   [duplicate_sentence_translation_global] line 51 0006 | BYAKUYA TOGAMI: Same msgid has different msgstr across files. msgid="What's wrong...?". 'Sao thế...?' -> e03_031_001.po: line 51 0006 | BYAKUYA TOGAMI, e03_040_046.po: line 1420 0172 | BYAKUYA TOGAMI, e03_045_046.po: line 1080 0130 | BYAKUYA TOGAMI, e03_107_000.po: line 733 0087 | BYAKUYA TOGAMI | 'Có chuyện gì vậy?' -> e03_103_000.po: line 251 0032 | BYAKUYA TOGAMI
+  INFO   [copy_of_source] line 46 0005 | CELES: msgstr is identical to msgid
+
+[OK] e03_031_021 Splitting Up Search\e03_031_021.po
+
+[STRUCT:5, INFO:1] e03_031_022 Library Investigation Summary\e03_031_022.po
+  STRUCT [line_count_match] line 54 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 89 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 146 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 165 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 283 0025 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 263 0023 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:2] e03_032_041 Celeste Scream Groupup\e03_032_041.po
+  WARN   [duplicate_sentence_translation_global] line 56 0007 | CELES: Same msgid has different msgstr across files. msgid='I was blocking the stairs, so he headed further down into the hallway and disappeared...!'. 'Vì tớ đang chặn cầu thang, nên hắn đã lao sâu hơn vào phía hành lang rồi biến mất...!' -> e03_032_041.po: line 56 0007 | CELES, e03_035_041.po: line 61 0007 | CELES | 'Tớ đã chặn lối cầu thang, nên hắn đã lao thẳng xuống phía cuối hành lang rồi biến mất...!' -> e03_040_046.po: line 1493 0182 | CELES, e03_045_046.po: line 1153 0140 | CELES, e03_107_000.po: line 796 0096 | CELES, e03_121_000.po: line 879 0098 | CELES
+  WARN   [duplicate_sentence_translation_global] line 105 0016 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Huh...?'. 'Hả...?' -> e03_005_046.po: line 94 0009 | MAKOTO NAEGI, e03_006_047.po: line 162 0017 | MAKOTO NAEGI, e03_007_135.po: line 307 0044 | AOI ASAHINA, e03_014_142.po: line 386 0052 | MAKOTO NAEGI, +15 more | 'Hả?' -> e03_007_135.po: line 263 0038 | AOI ASAHINA, e03_007_142.po: line 508 0061 | YASUHIRO HAGAKURE, e03_013_101.po: line 21 0002 | MAKOTO NAEGI, e03_044_030.po: line 1451 0194 | MAKOTO NAEGI, +1 more | 'Hả!?' -> e03_032_041.po: line 105 0016 | MAKOTO NAEGI, e03_040_046.po: line 1513 0185 | MAKOTO NAEGI, e03_045_046.po: line 1173 0143 | MAKOTO NAEGI, e03_107_000.po: line 815 0099 | MAKOTO NAEGI, +2 more
+
+[WARN:1, INFO:1] e03_033_001 Nurse Office Rush\e03_033_001.po
+  WARN   [duplicate_sentence_translation_global] line 138 0018 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='H-Hifumi!?'. 'H-Hifumi!?' -> e03_028_042.po: line 42 0005 | MAKOTO NAEGI | 'H-Hifumi...?' -> e03_033_001.po: line 138 0018 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 138 0018 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, INFO:3] e03_034_011 Hifumi Murder Discovery\e03_034_011.po
+  WARN   [duplicate_sentence_translation_global] line 70 0010 | MONOKUMA: Same msgid has different msgstr across files. msgid='After a certain amount of time, which you may use however you like, the class trial will begin!'. 'Sau một khoảng thời gian nhất định mà các em có thể sử dụng tùy thích, lớp xét xử sẽ bắt đầu!' -> e03_034_011.po: line 70 0010 | MONOKUMA, e03_039_046.po: line 76 0007 | MONOKUMA | 'Sau một khoảng thời gian nhất định để các em tùy nghi sử dụng, lớp xét xử sẽ chính thức bắt đầu!' -> e03_113_000.po: line 376 0040 | MONOKUMA
+  INFO   [copy_of_source] line 16 0001 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 364 0044 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 416 0053 | CELES: msgstr is identical to msgid
+
+[INFO:2] e03_034_048 Missing Body Mystery Byakuya Toko Alibi\e03_034_048.po
+  INFO   [copy_of_source] line 50 0004 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 85 0008 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_035_001 Tenth Floor Ascent\e03_035_001.po
+
+[OK] e03_035_041 Suspect Pursuit Investigation\e03_035_041.po
+
+[WARN:1, INFO:1] e03_035_042 Rec Room Distractions\e03_035_042.po
+  WARN   [duplicate_sentence_translation_global] line 201 0020 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Was she really attacked with this...Justice Hammer 1?'. 'Cậu ấy thực sự đã bị tấn công bởi thứ này... Búa Công Lý số 1 sao?' -> e03_035_042.po: line 201 0020 | MAKOTO NAEGI | 'Có thật là cậu ấy đã bị tấn công bằng thứ này... Búa Công Lý số 1 không?' -> e03_038_042.po: line 332 0028 | MAKOTO NAEGI, e03_040_042.po: line 431 0040 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 196 0019 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_036_047 Taka Body Discovery\e03_036_047.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1, INFO:2] e03_037_011 Hifumi Body Theft\e03_037_011.po
+  WARN   [duplicate_sentence_translation_global] line 110 0013 | CELES: Same msgid has different msgstr across files. msgid='Enjoying the sight of us standing around, frightened and confused...'. 'Tận hưởng cảnh tượng chúng ta đứng đây, sợ hãi và bối rối...' -> e03_037_011.po: line 110 0013 | CELES, e03_121_000.po: line 1213 0145 | CELES | 'Đang tận hưởng việc nhìn thấy chúng ta sợ hãi và bối rối...' -> e03_122_001.po: line 29 0003 | CELES
+  INFO   [copy_of_source] line 41 0003 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 72 0007 | AOI ASAHINA: msgstr is identical to msgid
+
+[INFO:1] e03_037_041 Hifumi Body Vanishing\e03_037_041.po
+  INFO   [copy_of_source] line 87 0013 | CELES: msgstr is identical to msgid
+
+[WARN:1, INFO:7] e03_037_048 Double Murder Discovery\e03_037_048.po
+  WARN   [duplicate_sentence_translation_global] line 269 0029 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Taka...?'. 'Taka...?' -> e03_014_142.po: line 361 0048 | MAKOTO NAEGI | 'Taka...' -> e03_037_048.po: line 269 0029 | MAKOTO NAEGI, e03_040_101.po: line 130 0012 | MAKOTO NAEGI | 'Taka' -> e03_115_000.po: line 964 0111 | CHOICE/RE:ACT
+  INFO   [copy_of_source] line 96 0009 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 101 0010 | SAKURA OOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 106 0011 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 111 0012 | SAKURA OOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 147 0016 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 269 0029 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 279 0030 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_038_041 Repository Bodies Found\e03_038_041.po
+  INFO   [copy_of_source] line 16 0001 | CELES: msgstr is identical to msgid
+
+[WARN:1, STRUCT:2, INFO:1] e03_038_042 Rec Room Investigation\e03_038_042.po
+  WARN   [duplicate_sentence_translation_global] line 332 0028 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Was she really attacked with this...Justice Hammer 1?'. 'Cậu ấy thực sự đã bị tấn công bởi thứ này... Búa Công Lý số 1 sao?' -> e03_035_042.po: line 201 0020 | MAKOTO NAEGI | 'Có thật là cậu ấy đã bị tấn công bằng thứ này... Búa Công Lý số 1 không?' -> e03_038_042.po: line 332 0028 | MAKOTO NAEGI, e03_040_042.po: line 431 0040 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 98 0009 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 332 0028 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 321 0027 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_038_044 Art Room Search\e03_038_044.po
+  STRUCT [line_count_match] line 185 0017 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_038_047 Physics Lab Inspection\e03_038_047.po
+  STRUCT [line_count_match] line 88 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:3] e03_038_048 Equipment Room Evidence\e03_038_048.po
+  STRUCT [line_count_match] line 39 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 82 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 113 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_038_051 Classroom Environment Inspection\e03_038_051.po
+
+[OK] e03_038_052 Classroom Monologue Observation\e03_038_052.po
+
+[WARN:1] e03_039_044 Repository Body Hunt\e03_039_044.po
+  WARN   [duplicate_sentence_translation_global] line 255 0023 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='...I saw...!'. '...Mình đã thấy...!' -> e03_008_141.po: line 207 0019 | MAKOTO NAEGI | '...Mình đã thấy...' -> e03_039_044.po: line 255 0023 | MAKOTO NAEGI
+
+[WARN:1, INFO:5] e03_039_046 Hifumi Final Words\e03_039_046.po
+  WARN   [duplicate_sentence_translation_global] line 147 0016 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='H-Hold on!'. 'K-Khoan đã!' -> e03_030_011.po: line 296 0035 | MAKOTO NAEGI | 'Đ-Đợi... đợi đã...' -> e03_039_046.po: line 147 0016 | AOI ASAHINA
+  INFO   [copy_of_source] line 377 0052 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 382 0053 | HIFUMI YAMADA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 496 0066 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 597 0078 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 624 0081 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[INFO:1] e03_040_001 School Exploration Refusal\e03_040_001.po
+  INFO   [copy_of_source] line 26 0002 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_040_003 Entrance Hall Evidence\e03_040_003.po
+
+[OK] e03_040_004 Generic Investigation Room\e03_040_004.po
+
+[OK] e03_040_005 Trophy Case Inspection\e03_040_005.po
+
+[STRUCT:1, INFO:1] e03_040_006 Gym Money Discovery\e03_040_006.po
+  STRUCT [line_count_match] line 49 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 69 0006 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1] e03_040_009 Gym Money Discovery\e03_040_009.po
+  WARN   [duplicate_sentence_translation_global] line 78 0007 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't think it's related to the case this time...". 'Mình không nghĩ là nó có liên quan đến vụ án lần này...' -> e03_040_009.po: line 78 0007 | MAKOTO NAEGI | 'Mình không nghĩ nó có liên quan đến vụ án lần này đâu...' -> e03_040_044.po: line 270 0024 | MAKOTO NAEGI
+
+[OK] e03_040_010 Gym Money Discovery School Store Investigation\e03_040_010.po
+
+[WARN:2, STRUCT:8, INFO:1] e03_040_011 Nurse Office Investigation\e03_040_011.po
+  WARN   [duplicate_sentence_translation] line 299 0032 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="It's too small to be a handkerchief. It's...a glasses cleaning cloth .". 'Nó quá nhỏ để là khăn tay. Nó là... một cái khăn lau kính .' -> line 299 0032 | MAKOTO NAEGI | 'Nó quá nhỏ để là khăn tay. Nó là... một cái khăn lau kính.' -> line 406 0045 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 406 0045 | MAKOTO NAEGI: Same msgid has different msgstr. msgid="It's too small to be a handkerchief. It's...a glasses cleaning cloth .". 'Nó quá nhỏ để là khăn tay. Nó là... một cái khăn lau kính .' -> line 299 0032 | MAKOTO NAEGI | 'Nó quá nhỏ để là khăn tay. Nó là... một cái khăn lau kính.' -> line 406 0045 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 85 0010 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 191 0021 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 299 0032 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 352 0039 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 406 0045 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 483 0052 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 495 0053 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 519 0055 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 476 0051 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_040_014 Nurse Office Investigation\e03_040_014.po
+  STRUCT [line_count_match] line 64 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[OK] e03_040_015 Trapped Classroom Investigation\e03_040_015.po
+
+[OK] e03_040_016 Nurse Office Investigation\e03_040_016.po
+
+[OK] e03_040_021 Girls Bathroom Locked\e03_040_021.po
+
+[STRUCT:8, INFO:1] e03_040_022 Library Archive Discovery\e03_040_022.po
+  STRUCT [line_count_match] line 62 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 95 0008 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 104 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 137 0012 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 146 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 179 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 209 0019 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 324 0029 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 304 0027 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:1] e03_040_025 Nurse Office Investigation\e03_040_025.po
+  STRUCT [line_count_match] line 107 0010 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 117 0011 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 155 0015 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 101 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_040_026 Locker Room Access\e03_040_026.po
+  STRUCT [line_count_match] line 105 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_040_027 Locker Room Access\e03_040_027.po
+  STRUCT [line_count_match] line 66 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_040_030 Large Locker Area\e03_040_030.po
+
+[OK] e03_040_031 Locker Size Inspection\e03_040_031.po
+
+[OK] e03_040_032 Locker Size Inspection\e03_040_032.po
+
+[STRUCT:1] e03_040_033 Locker Size Inspection\e03_040_033.po
+  STRUCT [line_count_match] line 17 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_040_041 Blocked Upstairs Gate\e03_040_041.po
+
+[STRUCT:1, INFO:1] e03_040_042 Rec Room Monitored\e03_040_042.po
+  STRUCT [line_count_match] line 431 0040 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 420 0039 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:2, STRUCT:2] e03_040_044 Art Room Investigation\e03_040_044.po
+  WARN   [duplicate_sentence_translation_global] line 75 0006 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Hmm?'. 'Hửm?' -> e03_002_135.po: line 290 0033 | CELES | 'Hừm...' -> e03_040_044.po: line 75 0006 | MAKOTO NAEGI, e03_040_046.po: line 2573 0291 | MAKOTO NAEGI, e03_040_046.po: line 2755 0308 | MAKOTO NAEGI, e03_042_117.po: line 252 0025 | MAKOTO NAEGI, +1 more
+  WARN   [duplicate_sentence_translation_global] line 270 0024 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="I don't think it's related to the case this time...". 'Mình không nghĩ là nó có liên quan đến vụ án lần này...' -> e03_040_009.po: line 78 0007 | MAKOTO NAEGI | 'Mình không nghĩ nó có liên quan đến vụ án lần này đâu...' -> e03_040_044.po: line 270 0024 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 95 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 106 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[WARN:8, STRUCT:18, INFO:8] e03_040_046 Monokuma File 3\e03_040_046.po
+  WARN   [duplicate_sentence_translation] line 1015 0127 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Yeah.'. 'Phải.' -> line 1015 0127 | MAKOTO NAEGI | 'Phải...' -> line 1021 0128 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 1021 0128 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Yeah.'. 'Phải.' -> line 1015 0127 | MAKOTO NAEGI | 'Phải...' -> line 1021 0128 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 58 0005 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="That's it?". 'Chỉ vậy thôi sao?' -> e03_040_046.po: line 58 0005 | MAKOTO NAEGI | 'Chỉ vậy thôi sao!?' -> e03_200_205.po: line 592 0084 | YASUHIRO HAGAKURE
+  WARN   [duplicate_sentence_translation_global] line 791 0098 | BYAKUYA TOGAMI: Same msgid has different msgstr across files. msgid='...What?'. '...Cái gì?' -> e03_040_046.po: line 791 0098 | BYAKUYA TOGAMI | '...Cái gì!?' -> e03_200_211.po: line 212 0026 | MONOKUMA
+  WARN   [duplicate_sentence_translation_global] line 1015 0127 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Yeah...'. 'Ừm...' -> e03_010_101.po: line 166 0021 | MAKOTO NAEGI, e03_201_101.po: line 171 0025 | MAKOTO NAEGI | 'Phải.' -> e03_040_046.po: line 1015 0127 | MAKOTO NAEGI | 'Phải...' -> e03_040_046.po: line 1021 0128 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 1021 0128 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Yeah...'. 'Ừm...' -> e03_010_101.po: line 166 0021 | MAKOTO NAEGI, e03_201_101.po: line 171 0025 | MAKOTO NAEGI | 'Phải.' -> e03_040_046.po: line 1015 0127 | MAKOTO NAEGI | 'Phải...' -> e03_040_046.po: line 1021 0128 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 1493 0182 | CELES: Same msgid has different msgstr across files. msgid='I was blocking the stairs, so he headed further down into the hallway and disappeared...!'. 'Vì tớ đang chặn cầu thang, nên hắn đã lao sâu hơn vào phía hành lang rồi biến mất...!' -> e03_032_041.po: line 56 0007 | CELES, e03_035_041.po: line 61 0007 | CELES | 'Tớ đã chặn lối cầu thang, nên hắn đã lao thẳng xuống phía cuối hành lang rồi biến mất...!' -> e03_040_046.po: line 1493 0182 | CELES, e03_045_046.po: line 1153 0140 | CELES, e03_107_000.po: line 796 0096 | CELES, e03_121_000.po: line 879 0098 | CELES
+  WARN   [duplicate_sentence_translation_global] line 2016 0240 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="From the nurse's office where he was discovered to here, the repository ...". 'Từ phòng y tế nơi cậu ấy được phát hiện cho tới đây, kho họa cụ ...' -> e03_040_046.po: line 2016 0240 | MAKOTO NAEGI, e03_040_046.po: line 2235 0261 | MAKOTO NAEGI | 'Bởi vì, nơi đầu tiên phát hiện thi thể là phòng y tế ở tầng 1 , còn kho họa cụ này lại ở tận tầng 3 cơ mà...' -> e03_045_046.po: line 1627 0194 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 236 0029 | SAKURA OOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 520 0065 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 538 0067 | SAKURA OOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 574 0071 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 710 0087 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 1474 0179 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1545 0191 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1799 0221 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 1811 0222 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 1836 0224 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 2016 0240 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 2159 0254 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 2235 0261 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 2257 0263 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 2395 0275 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 2488 0283 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 2563 0290 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 2745 0307 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 53 0004 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 98 0010 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 415 0050 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 435 0053 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 776 0095 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 841 0105 | BYAKUYA TOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1415 0171 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 2046 0243 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_040_047 Physics Lab Monitored\e03_040_047.po
+  STRUCT [line_count_match] line 87 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:12] e03_040_048 Dolly Move Mystery\e03_040_048.po
+  STRUCT [line_count_match] line 17 0001 | TOUKO FUKAWA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 82 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 93 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 145 0013 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 225 0020 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 279 0025 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 304 0027 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 315 0028 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 367 0033 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 416 0037 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 445 0040 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 454 0041 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[STRUCT:1] e03_040_051 Monitor Inspection Area\e03_040_051.po
+  STRUCT [line_count_match] line 86 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_040_052 School Crest Monitor\e03_040_052.po
+
+[INFO:1] e03_040_101 Girls Bathroom Rattle\e03_040_101.po
+  INFO   [copy_of_source] line 130 0012 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:1] e03_040_135 Monitor Investigation Focus\e03_040_135.po
+  STRUCT [line_count_match] line 45 0004 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+
+[STRUCT:3, INFO:1] e03_040_136 Kitchen Monitor Inspection\e03_040_136.po
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 3
+  STRUCT [line_count_match] line 55 0004 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 77 0006 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 66 0005 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_040_137 Rattling Monitor Room\e03_040_137.po
+
+[STRUCT:7] e03_040_139 Unrelated Monitor Investigation\e03_040_139.po
+  STRUCT [line_count_match] line 62 0005 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 74 0006 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 86 0007 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 98 0008 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 110 0009 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 122 0010 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 134 0011 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_040_140 Kitchen Stock Investigation\e03_040_140.po
+
+[STRUCT:1] e03_040_141 Missing Alter Ego\e03_040_141.po
+  STRUCT [line_count_match] line 38 0003 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+
+[OK] e03_040_144 Bathhouse Tub Inspection\e03_040_144.po
+
+[OK] e03_040_145 Sauna Heat Source\e03_040_145.po
+
+[OK] e03_040_146 Fish Tank Inspection\e03_040_146.po
+
+[WARN:2, STRUCT:2, INFO:1] e03_042_117 Hiro Room Investigation\e03_042_117.po
+  WARN   [duplicate_sentence_translation] line 243 0024 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Something about them bothers me...'. 'Có điều gì đó về nó làm mình thấy lấn cấn...' -> line 243 0024 | MAKOTO NAEGI | 'Có điều gì đó về chúng làm mình thấy lấn cấn...' -> line 285 0030 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 285 0030 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Something about them bothers me...'. 'Có điều gì đó về nó làm mình thấy lấn cấn...' -> line 243 0024 | MAKOTO NAEGI | 'Có điều gì đó về chúng làm mình thấy lấn cấn...' -> line 285 0030 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 18 0001 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 167 0016 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 149 0014 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[WARN:1] e03_043_101 Hina Big News\e03_043_101.po
+  WARN   [duplicate_sentence_translation_global] line 52 0008 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Robo Justice...!'. 'Người Máy Công Lý!' -> e03_030_022.po: line 123 0018 | HIFUMI YAMADA | 'Người Máy Công Lý sao...?' -> e03_030_022.po: line 153 0024 | BYAKUYA TOGAMI | '...Robo Công Lý!?' -> e03_043_101.po: line 52 0008 | MAKOTO NAEGI
+
+[WARN:4, INFO:9] e03_044_030 Hiro Locker Discovery\e03_044_030.po
+  WARN   [duplicate_sentence_translation_global] line 871 0117 | YASUHIRO HAGAKURE: Same msgid has different msgstr across files. msgid='I found a hole maybe we can use to escape.'. 'Tớ đã tìm thấy một cái lỗ có thể dùng để trốn thoát.' -> e03_044_030.po: line 871 0117 | YASUHIRO HAGAKURE, e03_044_030.po: line 1070 0143 | YASUHIRO HAGAKURE, e03_045_046.po: line 507 0060 | NARRATION, e03_045_046.po: line 566 0068 | YASUHIRO HAGAKURE | 'Tớ tìm thấy một cái lỗ có vẻ là lối thoát.' -> e03_115_000.po: line 899 0104 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 1199 0158 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='B-But...'. 'Nh-Nhưng...' -> e03_009_006.po: line 276 0035 | AOI ASAHINA, e03_034_048.po: line 518 0061 | AOI ASAHINA | 'N-Nhưng mà...!' -> e03_044_030.po: line 1199 0158 | MAKOTO NAEGI, e03_044_030.po: line 1246 0165 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 1298 0174 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Hiro...?'. 'Hiro... đúng không nhỉ...?' -> e03_044_030.po: line 1298 0174 | MAKOTO NAEGI | 'Hiro' -> e03_103_000.po: line 149 0020 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 1496 0200 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='No'. 'Không' -> e03_000_003.po: line 120 0010 | CHOICE/RE:ACT, e03_000_004.po: line 47 0004 | CHOICE/RE:ACT, e03_000_006.po: line 47 0004 | CHOICE/RE:ACT, e03_000_009.po: line 80 0007 | CHOICE/RE:ACT, +151 more | 'Tớ từ chối.' -> e03_044_030.po: line 1496 0200 | KYOUKO KIRIGIRI | 'Không phải!' -> e03_201_141.po: line 199 0026 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 660 0085 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 719 0093 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 732 0095 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 991 0133 | YASUHIRO HAGAKURE: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1226 0162 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1273 0169 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1278 0170 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1293 0173 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1471 0197 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_045_021 Corpse Examination Request\e03_045_021.po
+
+[OK] e03_045_041 Blocked Repository Hurry\e03_045_041.po
+
+[WARN:6, STRUCT:12, INFO:1] e03_045_046 Kyoko Autopsy Investigation\e03_045_046.po
+  WARN   [duplicate_sentence_translation] line 612 0074 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh...?'. 'Hả...?' -> line 612 0074 | MAKOTO NAEGI | 'Hả!?' -> line 1173 0143 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 1173 0143 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh...?'. 'Hả...?' -> line 612 0074 | MAKOTO NAEGI | 'Hả!?' -> line 1173 0143 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 99 0010 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='You did?'. 'Cậu đã làm vậy sao?' -> e03_028_042.po: line 446 0063 | SAKURA OOGAMI, e03_028_042.po: line 1023 0128 | SAKURA OOGAMI | 'Cậu tìm thấy rồi sao...?' -> e03_045_046.po: line 99 0010 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 276 0032 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Me!?'. '...Tớ á!?' -> e03_045_046.po: line 276 0032 | MAKOTO NAEGI | 'Mình' -> e03_115_000.po: line 969 0112 | CHOICE/RE:ACT | 'Tớ...?' -> e03_121_000.po: line 415 0043 | KYOUKO KIRIGIRI
+  WARN   [duplicate_sentence_translation_global] line 930 0110 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='Good idea'. 'Ý kiến hay đó' -> e03_045_046.po: line 930 0110 | CHOICE/RE:ACT | 'Ý kiến hay đó.' -> e03_200_211.po: line 386 0050 | KYOUKO KIRIGIRI
+  WARN   [duplicate_sentence_translation_global] line 1627 0194 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="From the nurse's office where he was discovered to here, the repository ...". 'Từ phòng y tế nơi cậu ấy được phát hiện cho tới đây, kho họa cụ ...' -> e03_040_046.po: line 2016 0240 | MAKOTO NAEGI, e03_040_046.po: line 2235 0261 | MAKOTO NAEGI | 'Bởi vì, nơi đầu tiên phát hiện thi thể là phòng y tế ở tầng 1 , còn kho họa cụ này lại ở tận tầng 3 cơ mà...' -> e03_045_046.po: line 1627 0194 | MAKOTO NAEGI
+  STRUCT [line_count_match] line 22 0002 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 72 0007 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 297 0035 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 628 0076 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 699 0084 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 856 0100 | MONOKUMA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 903 0107 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1134 0137 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1205 0149 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1484 0181 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 1652 0196 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 1775 0206 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 1075 0129 | CELES: msgstr is identical to msgid
+
+[OK] e03_046_001 Red Door Trial\e03_046_001.po
+
+[WARN:1] e03_046_201 Monokuma Illusion Gathering\e03_046_201.po
+  WARN   [duplicate_sentence_translation_global] line 196 0025 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid="That's right...". 'Đúng vậy...' -> e03_046_201.po: line 196 0025 | MAKOTO NAEGI | 'Đúng vậy.' -> e03_200_205.po: line 180 0023 | CELES
+
+[OK] e03_046_205 Class Trial Beginning\e03_046_205.po
+
+[OK] e03_101_000 Trial Rule Debate\e03_101_000.po
+
+[OK] e03_102_000 Blueprint Handwriting Contradiction\e03_102_000.po
+
+[WARN:1] e03_102_001 Hiro Room Evidence\e03_102_001.po
+  WARN   [duplicate_sentence_translation_global] line 74 0010 | YASUHIRO HAGAKURE: Same msgid has different msgstr across files. msgid='Puhuhuhu...'. 'U pư pư pư...' -> e03_102_001.po: line 74 0010 | YASUHIRO HAGAKURE | 'U pư pư pư...!' -> e03_124_001.po: line 129 0018 | YASUHIRO HAGAKURE
+
+[WARN:6, STRUCT:9, INFO:2] e03_103_000 Hiro Blueprint Handwriting\e03_103_000.po
+  WARN   [duplicate_sentence_translation] line 100 0013 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='What...?'. 'Cái gì...?' -> line 100 0013 | MAKOTO NAEGI | 'Cái gì...!?' -> line 357 0044 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation] line 357 0044 | AOI ASAHINA: Same msgid has different msgstr. msgid='What...?'. 'Cái gì...?' -> line 100 0013 | MAKOTO NAEGI | 'Cái gì...!?' -> line 357 0044 | AOI ASAHINA
+  WARN   [duplicate_sentence_translation_global] line 149 0020 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='Hiro...?'. 'Hiro... đúng không nhỉ...?' -> e03_044_030.po: line 1298 0174 | MAKOTO NAEGI | 'Hiro' -> e03_103_000.po: line 149 0020 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 200 0026 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='Hina!?'. 'Hina!?' -> e03_007_135.po: line 711 0108 | MAKOTO NAEGI | 'Hina!' -> e03_007_135.po: line 739 0111 | SAKURA OOGAMI | 'Hina' -> e03_103_000.po: line 200 0026 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 251 0032 | BYAKUYA TOGAMI: Same msgid has different msgstr across files. msgid="What's wrong...?". 'Sao thế...?' -> e03_031_001.po: line 51 0006 | BYAKUYA TOGAMI, e03_040_046.po: line 1420 0172 | BYAKUYA TOGAMI, e03_045_046.po: line 1080 0130 | BYAKUYA TOGAMI, e03_107_000.po: line 733 0087 | BYAKUYA TOGAMI | 'Có chuyện gì vậy?' -> e03_103_000.po: line 251 0032 | BYAKUYA TOGAMI
+  WARN   [duplicate_sentence_translation_global] line 357 0044 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  STRUCT [line_count_match] line 42 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 63 0008 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 86 0011 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 93 0012 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 300 0037 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 410 0052 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 506 0062 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 519 0064 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 682 0083 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 149 0020 | CHOICE/RE:ACT: msgstr is identical to msgid
+  INFO   [copy_of_source] line 200 0026 | CHOICE/RE:ACT: msgstr is identical to msgid
+
+[OK] e03_105_000 Dolly Wheel Bloodstain\e03_105_000.po
+
+[OK] e03_106_000 Dolly Pushing Contradiction\e03_106_000.po
+
+[OK] e03_106_001 Dolly Transportation Review\e03_106_001.po
+
+[STRUCT:8, INFO:1] e03_107_000 Hiro Blueprint Handwriting\e03_107_000.po
+  STRUCT [line_count_match] line 52 0005 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 268 0031 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 472 0053 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 777 0093 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 847 0105 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 874 0108 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1028 0128 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1071 0133 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 728 0086 | CELES: msgstr is identical to msgid
+
+[OK] e03_108_000 Justice Hammer Order\e03_108_000.po
+
+[WARN:1] e03_108_001 Murder Order Debate\e03_108_001.po
+  WARN   [duplicate_sentence_translation_global] line 102 0014 | AOI ASAHINA: Same msgid has different msgstr across files. msgid='Now that you mention it...'. 'Nhắc mới nhớ...' -> e03_108_001.po: line 102 0014 | AOI ASAHINA | 'Nghe cậu ấy nói vậy thì...' -> e03_113_000.po: line 213 0024 | MAKOTO NAEGI
+
+[OK] e03_109_000 Hammer Disguise Proof\e03_109_000.po
+
+[OK] e03_110_000 Taka Death Time\e03_110_000.po
+
+[WARN:2] e03_111_000 Taka Watch Alibi\e03_111_000.po
+  WARN   [duplicate_sentence_translation] line 198 0022 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh!?'. 'Hả!?' -> line 198 0022 | MAKOTO NAEGI | 'Hả...?' -> line 525 0063 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 525 0063 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh!?'. 'Hả!?' -> line 198 0022 | MAKOTO NAEGI | 'Hả...?' -> line 525 0063 | MAKOTO NAEGI
+
+[OK] e03_112_000 Announcement Contradiction Debate\e03_112_000.po
+
+[OK] e03_112_001 Hifumi Announcement Alibi\e03_112_001.po
+
+[WARN:2, STRUCT:3] e03_113_000 Discovery Announcement Paradox\e03_113_000.po
+  WARN   [duplicate_sentence_translation_global] line 213 0024 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Now that you mention it...'. 'Nhắc mới nhớ...' -> e03_108_001.po: line 102 0014 | AOI ASAHINA | 'Nghe cậu ấy nói vậy thì...' -> e03_113_000.po: line 213 0024 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 376 0040 | MONOKUMA: Same msgid has different msgstr across files. msgid='After a certain amount of time, which you may use however you like, the class trial will begin!'. 'Sau một khoảng thời gian nhất định mà các em có thể sử dụng tùy thích, lớp xét xử sẽ bắt đầu!' -> e03_034_011.po: line 70 0010 | MONOKUMA, e03_039_046.po: line 76 0007 | MONOKUMA | 'Sau một khoảng thời gian nhất định để các em tùy nghi sử dụng, lớp xét xử sẽ chính thức bắt đầu!' -> e03_113_000.po: line 376 0040 | MONOKUMA
+  STRUCT [line_count_match] line 56 0005 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 265 0029 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 298 0032 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+
+[OK] e03_114_000 Hifumi Alive Debate\e03_114_000.po
+
+[OK] e03_114_001 Hifumi Body Disappearance\e03_114_001.po
+
+[WARN:3, STRUCT:10, INFO:3] e03_115_000 Hifumi Glasses Clue\e03_115_000.po
+  WARN   [duplicate_sentence_translation_global] line 899 0104 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='I found a hole maybe we can use to escape.'. 'Tớ đã tìm thấy một cái lỗ có thể dùng để trốn thoát.' -> e03_044_030.po: line 871 0117 | YASUHIRO HAGAKURE, e03_044_030.po: line 1070 0143 | YASUHIRO HAGAKURE, e03_045_046.po: line 507 0060 | NARRATION, e03_045_046.po: line 566 0068 | YASUHIRO HAGAKURE | 'Tớ tìm thấy một cái lỗ có vẻ là lối thoát.' -> e03_115_000.po: line 899 0104 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 964 0111 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='Taka...?'. 'Taka...?' -> e03_014_142.po: line 361 0048 | MAKOTO NAEGI | 'Taka...' -> e03_037_048.po: line 269 0029 | MAKOTO NAEGI, e03_040_101.po: line 130 0012 | MAKOTO NAEGI | 'Taka' -> e03_115_000.po: line 964 0111 | CHOICE/RE:ACT
+  WARN   [duplicate_sentence_translation_global] line 969 0112 | CHOICE/RE:ACT: Same msgid has different msgstr across files. msgid='Me!?'. '...Tớ á!?' -> e03_045_046.po: line 276 0032 | MAKOTO NAEGI | 'Mình' -> e03_115_000.po: line 969 0112 | CHOICE/RE:ACT | 'Tớ...?' -> e03_121_000.po: line 415 0043 | KYOUKO KIRIGIRI
+  STRUCT [line_count_match] line 162 0019 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 230 0026 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 280 0031 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 307 0034 | SAKURA OOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 314 0035 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 380 0044 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 422 0049 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 839 0096 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 975 0113 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 1028 0119 | MAKOTO NAEGI: msgid has 1 newline separators; msgstr has 2
+  INFO   [copy_of_source] line 479 0055 | CHOICE/RE:ACT: msgstr is identical to msgid
+  INFO   [copy_of_source] line 484 0056 | CHOICE/RE:ACT: msgstr is identical to msgid
+  INFO   [copy_of_source] line 964 0111 | CHOICE/RE:ACT: msgstr is identical to msgid
+
+[OK] e03_116_000 Genocide Jack Contradiction\e03_116_000.po
+
+[OK] e03_116_001 Note Time Argument\e03_116_001.po
+
+[OK] e03_117_000 Note Evidence Connection\e03_117_000.po
+
+[OK] e03_118_000 Weapon Contradiction Debate\e03_118_000.po
+
+[OK] e03_118_001 Hifumi Weapon Movement\e03_118_001.po
+
+[OK] e03_119_000 Repository Hammer Evidence\e03_119_000.po
+
+[OK] e03_120_000 Accomplice Theory Debate\e03_120_000.po
+
+[WARN:1] e03_120_001 Two Murders Debate\e03_120_001.po
+  WARN   [duplicate_sentence_translation_global] line 93 0010 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='Interesting...?'. 'Thú vị sao...?' -> e03_020_135.po: line 341 0048 | MAKOTO NAEGI | 'Thú vị đấy...' -> e03_120_001.po: line 93 0010 | KYOUKO KIRIGIRI | 'Thú vị thật...' -> e03_129_000.po: line 84 0012 | BYAKUYA TOGAMI
+
+[WARN:3, STRUCT:11, INFO:5] e03_121_000 Two Murders Debate\e03_121_000.po
+  WARN   [duplicate_sentence_translation] line 471 0049 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh...?'. 'Hả...?' -> line 471 0049 | MAKOTO NAEGI | 'Hả!?' -> line 907 0102 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation] line 907 0102 | MAKOTO NAEGI: Same msgid has different msgstr. msgid='Huh...?'. 'Hả...?' -> line 471 0049 | MAKOTO NAEGI | 'Hả!?' -> line 907 0102 | MAKOTO NAEGI
+  WARN   [duplicate_sentence_translation_global] line 415 0043 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='Me!?'. '...Tớ á!?' -> e03_045_046.po: line 276 0032 | MAKOTO NAEGI | 'Mình' -> e03_115_000.po: line 969 0112 | CHOICE/RE:ACT | 'Tớ...?' -> e03_121_000.po: line 415 0043 | KYOUKO KIRIGIRI
+  STRUCT [line_count_match] line 236 0024 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 270 0027 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 364 0037 | AOI ASAHINA: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 804 0088 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 860 0095 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 944 0108 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 956 0110 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 964 0111 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 972 0112 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 995 0115 | BYAKUYA TOGAMI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 1213 0145 | CELES: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 549 0059 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 989 0114 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1033 0120 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1087 0128 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 1319 0157 | CELES: msgstr is identical to msgid
+
+[OK] e03_122_000 Celeste Slipup Debate\e03_122_000.po
+
+[WARN:1] e03_122_001 Celeste Statement Slipup\e03_122_001.po
+  WARN   [duplicate_sentence_translation_global] line 29 0003 | CELES: Same msgid has different msgstr across files. msgid='Enjoying the sight of us standing around, frightened and confused...'. 'Tận hưởng cảnh tượng chúng ta đứng đây, sợ hãi và bối rối...' -> e03_037_011.po: line 110 0013 | CELES, e03_121_000.po: line 1213 0145 | CELES | 'Đang tận hưởng việc nhìn thấy chúng ta sợ hãi và bối rối...' -> e03_122_001.po: line 29 0003 | CELES
+
+[STRUCT:1, INFO:4] e03_123_000 Celeste Slip Up\e03_123_000.po
+  STRUCT [line_count_match] line 357 0040 | MAKOTO NAEGI: msgid has 2 newline separators; msgstr has 1
+  INFO   [copy_of_source] line 36 0003 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 86 0009 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 91 0010 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 397 0044 | CELES: msgstr is identical to msgid
+
+[OK] e03_124_000 Robo Suit Contradiction\e03_124_000.po
+
+[WARN:1] e03_124_001 Robo Upright Contradiction\e03_124_001.po
+  WARN   [duplicate_sentence_translation_global] line 129 0018 | YASUHIRO HAGAKURE: Same msgid has different msgstr across files. msgid='Puhuhuhu...'. 'U pư pư pư...' -> e03_102_001.po: line 74 0010 | YASUHIRO HAGAKURE | 'U pư pư pư...!' -> e03_124_001.po: line 129 0018 | YASUHIRO HAGAKURE
+
+[WARN:1, STRUCT:3, INFO:4] e03_125_000 Robot Suit Exposure\e03_125_000.po
+  WARN   [duplicate_sentence_translation_global] line 101 0011 | CELES: Same msgid has different msgstr across files. msgid='Ngh-gh-gh!?'. 'Hử hử hử!?' -> e03_007_135.po: line 1056 0153 | HIFUMI YAMADA | '…Ư-ư-ư!' -> e03_125_000.po: line 101 0011 | CELES
+  STRUCT [line_count_match] line 248 0033 | CELES: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 438 0056 | KYOUKO KIRIGIRI: msgid has 1 newline separators; msgstr has 0
+  STRUCT [line_count_match] line 509 0065 | CELES: msgid has 1 newline separators; msgstr has 0
+  INFO   [copy_of_source] line 116 0014 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 121 0015 | CELES: msgstr is identical to msgid
+  INFO   [copy_of_source] line 141 0018 | AOI ASAHINA: msgstr is identical to msgid
+  INFO   [copy_of_source] line 193 0026 | HIFUMI YAMADA: msgstr is identical to msgid
+
+[OK] e03_126_000 Real Name Clue\e03_126_000.po
+
+[WARN:1] e03_126_001 Celeste Name Debate\e03_126_001.po
+  WARN   [duplicate_sentence_translation_global] line 111 0015 | CELES: Same msgid has different msgstr across files. msgid='the truth'. 'sự thật' -> e03_007_135.po: line 387 0056 | CHOICE/RE:ACT | 'Sự thật sao...?' -> e03_007_135.po: line 392 0057 | MAKOTO NAEGI | 'Sự thật ư...?' -> e03_126_001.po: line 111 0015 | CELES
+
+[WARN:1, INFO:3] e03_127_000 Student Handbook Clue\e03_127_000.po
+  WARN   [duplicate_sentence_translation_global] line 21 0002 | CELES: Same msgid has different msgstr across files. msgid='What...?'. 'Cái gì...?' -> e03_006_047.po: line 253 0030 | KIYOTAKA ISHIMARU, e03_024_135.po: line 121 0017 | MAKOTO NAEGI, e03_037_041.po: line 74 0011 | MAKOTO NAEGI, e03_103_000.po: line 100 0013 | MAKOTO NAEGI, +1 more | 'Cái gì!?' -> e03_007_135.po: line 126 0017 | MAKOTO NAEGI, e03_007_135.po: line 1123 0161 | TOUKO FUKAWA, e03_008_101.po: line 404 0050 | HIFUMI YAMADA, e03_024_141.po: line 338 0039 | MAKOTO NAEGI, +3 more | 'Cái gì!' -> e03_016_141.po: line 835 0121 | KIYOTAKA ISHIMARU | 'Cái gì...!' -> e03_026_001.po: line 31 0003 | MAKOTO NAEGI | 'Cái gì...!?' -> e03_103_000.po: line 357 0044 | AOI ASAHINA | 'Cái gì cơ!?' -> e03_127_000.po: line 21 0002 | CELES
+  INFO   [copy_of_source] line 95 0011 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 100 0012 | MAKOTO NAEGI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 115 0015 | CELES: msgstr is identical to msgid
+
+[OK] e03_128_000 Murder Plan Recap\e03_128_000.po
+
+[WARN:2, INFO:1] e03_129_000 Celeste Defeat Admission\e03_129_000.po
+  WARN   [duplicate_sentence_translation_global] line 84 0012 | BYAKUYA TOGAMI: Same msgid has different msgstr across files. msgid='Interesting...?'. 'Thú vị sao...?' -> e03_020_135.po: line 341 0048 | MAKOTO NAEGI | 'Thú vị đấy...' -> e03_120_001.po: line 93 0010 | KYOUKO KIRIGIRI | 'Thú vị thật...' -> e03_129_000.po: line 84 0012 | BYAKUYA TOGAMI
+  WARN   [whitespace] line 26 0003 | CELES: leading or trailing whitespace in msgstr
+  INFO   [copy_of_source] line 64 0009 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[STRUCT:3, INFO:2] e03_150_000 BTB Reload Tutorial\e03_150_000.po
+  STRUCT [line_count_match] line 90 0008 | NARRATION: msgid has 2 newline separators; msgstr has 1
+  STRUCT [line_count_match] line 115 0010 | NARRATION: msgid has 1 newline separators; msgstr has 2
+  STRUCT [line_count_match] line 160 0014 | NARRATION: msgid has 2 newline separators; msgstr has 3
+  INFO   [copy_of_source] line 126 0011 | NARRATION: msgstr is identical to msgid
+  INFO   [copy_of_source] line 149 0013 | NARRATION: msgstr is identical to msgid
+
+[OK] e03_196_000 Debug Jump Menu\e03_196_000.po
+
+[OK] e03_197_000 Debug Minigame Jump\e03_197_000.po
+
+[OK] e03_198_000 Wrong Vote Gameover\e03_198_000.po
+
+[OK] e03_199_000 Time Limit Gameover\e03_199_000.po
+
+[WARN:5, INFO:1] e03_200_205 Celeste True Identity\e03_200_205.po
+  WARN   [duplicate_sentence_translation] line 226 0030 | HIFUMI YAMADA: Same msgid has different msgstr. msgid='What...?'. 'Cái gì...?' -> line 226 0030 | HIFUMI YAMADA | 'Cái gì!?' -> line 236 0032 | HIFUMI YAMADA, line 336 0045 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation] line 236 0032 | HIFUMI YAMADA: Same msgid has different msgstr. msgid='What...?'. 'Cái gì...?' -> line 226 0030 | HIFUMI YAMADA | 'Cái gì!?' -> line 236 0032 | HIFUMI YAMADA, line 336 0045 | HIFUMI YAMADA
+  WARN   [duplicate_sentence_translation_global] line 180 0023 | CELES: Same msgid has different msgstr across files. msgid="That's right...". 'Đúng vậy...' -> e03_046_201.po: line 196 0025 | MAKOTO NAEGI | 'Đúng vậy.' -> e03_200_205.po: line 180 0023 | CELES
+  WARN   [duplicate_sentence_translation_global] line 592 0084 | YASUHIRO HAGAKURE: Same msgid has different msgstr across files. msgid="That's it?". 'Chỉ vậy thôi sao?' -> e03_040_046.po: line 58 0005 | MAKOTO NAEGI | 'Chỉ vậy thôi sao!?' -> e03_200_205.po: line 592 0084 | YASUHIRO HAGAKURE
+  WARN   [duplicate_sentence_translation_global] line 1192 0163 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='This is...'. 'Đây là...' -> e03_022_103.po: line 183 0018 | MAKOTO NAEGI | 'Cái này là...!' -> e03_200_205.po: line 1192 0163 | KYOUKO KIRIGIRI
+  INFO   [copy_of_source] line 1106 0153 | CELES: msgstr is identical to msgid
+
+[WARN:2, INFO:2] e03_200_211 Celeste Post Execution\e03_200_211.po
+  WARN   [duplicate_sentence_translation_global] line 212 0026 | MONOKUMA: Same msgid has different msgstr across files. msgid='...What?'. '...Cái gì?' -> e03_040_046.po: line 791 0098 | BYAKUYA TOGAMI | '...Cái gì!?' -> e03_200_211.po: line 212 0026 | MONOKUMA
+  WARN   [duplicate_sentence_translation_global] line 386 0050 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='Good idea'. 'Ý kiến hay đó' -> e03_045_046.po: line 930 0110 | CHOICE/RE:ACT | 'Ý kiến hay đó.' -> e03_200_211.po: line 386 0050 | KYOUKO KIRIGIRI
+  INFO   [copy_of_source] line 184 0021 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 242 0031 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+
+[INFO:2] e03_201_101 Dressing Room Investigation\e03_201_101.po
+  INFO   [copy_of_source] line 81 0010 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 101 0014 | BYAKUYA TOGAMI: msgstr is identical to msgid
+
+[WARN:1, INFO:2] e03_201_141 Alter Ego Recovery\e03_201_141.po
+  WARN   [duplicate_sentence_translation_global] line 199 0026 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='No'. 'Không' -> e03_000_003.po: line 120 0010 | CHOICE/RE:ACT, e03_000_004.po: line 47 0004 | CHOICE/RE:ACT, e03_000_006.po: line 47 0004 | CHOICE/RE:ACT, e03_000_009.po: line 80 0007 | CHOICE/RE:ACT, +151 more | 'Tớ từ chối.' -> e03_044_030.po: line 1496 0200 | KYOUKO KIRIGIRI | 'Không phải!' -> e03_201_141.po: line 199 0026 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 126 0015 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 234 0032 | KYOUKO KIRIGIRI: msgstr is identical to msgid
+
+[INFO:1] e03_202_021 Secret Room Investigation\e03_202_021.po
+  INFO   [copy_of_source] line 16 0001 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_202_033 Investigate Secret Room\e03_202_033.po
+
+[OK] e03_202_035 Secret Room Discovered\e03_202_035.po
+
+[WARN:1, INFO:1] e03_202_036 Secret Room Discovered\e03_202_036.po
+  WARN   [duplicate_sentence_translation_global] line 403 0053 | MAKOTO NAEGI: Same msgid has different msgstr across files. msgid='Gone...?'. 'Biến mất...?' -> e03_024_141.po: line 318 0036 | MAKOTO NAEGI | 'Mất rồi…' -> e03_202_036.po: line 403 0053 | MAKOTO NAEGI
+  INFO   [copy_of_source] line 193 0025 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_203_001 Gym Sound Collapse\e03_203_001.po
+
+[OK] e03_203_004 Gym Noise Mystery\e03_203_004.po
+
+[INFO:3] e03_203_006 Gym Battle Discovered\e03_203_006.po
+  INFO   [copy_of_source] line 104 0011 | SAKURA OOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 178 0024 | SAKURA OOGAMI: msgstr is identical to msgid
+  INFO   [copy_of_source] line 184 0025 | MAKOTO NAEGI: msgstr is identical to msgid
+
+[OK] e03_211_000 Celeste Identity Revealed\e03_211_000.po
+
+[OK] e03_255_003 Dining Hall Discussion\e03_255_003.po
+
+[WARN:1] e03_255_004 Weird Picture Discovery\e03_255_004.po
+  WARN   [duplicate_sentence_translation_global] line 42 0004 | KYOUKO KIRIGIRI: Same msgid has different msgstr across files. msgid='What is it...?'. 'Có chuyện gì thế...?' -> e03_007_142.po: line 389 0046 | MAKOTO NAEGI | 'Có chuyện gì vậy?' -> e03_255_004.po: line 42 0004 | KYOUKO KIRIGIRI
+
+[OK] e03_255_005 Byakuya Room Clue\e03_255_005.po
+
+[OK] e03_255_006 Investigation Location Planning\e03_255_006.po
+
+========================================================================
+SUMMARY
+Files checked: 252
+ERROR: 1
+WARN: 126
+STRUCT: 268
+INFO: 202

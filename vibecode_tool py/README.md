@@ -40,8 +40,11 @@ python run_cli.py validate "path/to/folder" --reports "path/to/folder"
 python run_cli.py replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 python run_cli.py linewrap "path/to/folder" --dry-run
 python run_cli.py search "path/to/folder" "Taka"
+python run_cli.py search "path/to/folder" "Taka | Kyoko & goodbye" --raw
 python run_cli.py backup "path/to/folder"  # creates missing Copy.po only
 ```
+
+Search syntax uses `|` for OR and `&` for AND; AND is evaluated first. Use `\|` or `\&` for literal operator characters. The GUI and CLI `Raw`/`--raw` option searches original parsed PO text without removing CLT tags, brackets, quotes, or line breaks. Semicolons are ordinary searchable text.
 
 After editable install:
 
@@ -69,6 +72,11 @@ Use `Translafixer` when you have known-good `.po` translations and another folde
 Matching uses original text / `msgid`; CLT tags such as `<CLT 4>` and `<CLT>` are ignored while comparing, so tagged and untagged originals can match. `Copy.po` target files are skipped. Dropped source folders skip their own `Copy.po` files, while explicitly selected `Copy.po` files are allowed. Selected source files are also skipped during the target scan, so they are not rewritten even if they live inside the target folder. If source files contain the same `msgid` with different translations, that source text is treated as ambiguous and skipped instead of writing a possibly wrong translation. When writing, the tab can create `*.po.translafixer.bak` backups before changing files.
 
 
+
+## Validator report links
+
+Validator HTML reports include an **Open in app** link on every issue. On Windows, the toolkit registers the per-user `drpo://` protocol automatically. Clicking a report link opens the matching `.po` file and selects the entry by context and line. When the toolkit is already running, the link is forwarded to that window instead of leaving the entry in a separate app instance.
+
 ## PO Viewer GUI tab
 
 Use `PO Viewer` for quick manual edits in one `.po` file.
@@ -80,6 +88,7 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 5. `Wrap selected` / `Wrap all` applies the existing `msgstr` line wrapper.
 6. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
 7. Click `Save` to write the edited `.po` file.
+8. Use `Shift+Up` / `Shift+Down` to switch files. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
 ## Automatic Gemini Web workflow
 

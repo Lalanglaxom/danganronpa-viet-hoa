@@ -17,6 +17,18 @@ def nfc(text: str) -> str:
 
 
 ESCAPED_LINEBREAK_RE = re.compile(r"\\[nrt]", re.IGNORECASE)
+LINEBREAK_TOKEN_RE = re.compile(r"(?:\r\n|\r|\n|\\[nr])", re.IGNORECASE)
+OPTIONAL_LINEBREAK_PATTERN = r"(?:\r\n|\r|\n|\\[nr])*"
+
+
+def strip_linebreak_tokens(text: str) -> str:
+    """Remove real and escaped line-break markers, leaving other spaces intact."""
+    return LINEBREAK_TOKEN_RE.sub("", text or "")
+
+
+def linebreak_insensitive_visible_text(text: str) -> str:
+    """Visible text with real/escaped line breaks removed before normalization."""
+    return visible_text(strip_linebreak_tokens(user_multiline_text(text)))
 
 
 def user_multiline_text(text: str) -> str:
@@ -82,23 +94,31 @@ def search_replace_pairs(find_text: str, replace_text: str) -> list[tuple[str, s
     return pairs
 
 
-def flexible_whitespace_pattern(text: str) -> str:
-    """Build a literal-search regex where whitespace and line breaks are equal.
+def _literal_piece_ignoring_linebreaks(text: str) -> str:
+    """Escape literal text while allowing line breaks between characters."""
+    if not text:
+        return ""
+    return OPTIONAL_LINEBREAK_PATTERN.join(re.escape(char) for char in text)
 
-    Any typed spaces, pasted line breaks, or typed ``\\n``/``\\r``/``\\t`` will
-    match real whitespace in loaded PO text and literal escaped line-break text.
-    This lets a search for ``hello world`` match ``hello\nworld``.
+
+def flexible_whitespace_pattern(text: str) -> str:
+    """Build a literal-search regex that ignores line-break markers.
+
+    Non-regex GUI searches now treat real line breaks and escaped ``\\n``/``\\r``
+    as optional separators inside literal text.  Spaces and tabs still require
+    visible whitespace, so ``hello world`` matches ``hello\nworld`` while
+    ``helloworld`` can also match ``hello\nworld``.
     """
     value = user_multiline_text(text).strip()
     pieces: list[str] = []
     pos = 0
     for match in re.finditer(r"\s+", value):
         if match.start() > pos:
-            pieces.append(re.escape(value[pos:match.start()]))
+            pieces.append(_literal_piece_ignoring_linebreaks(value[pos:match.start()]))
         pieces.append(r"(?:\s+|\\[nrt])+")
         pos = match.end()
     if pos < len(value):
-        pieces.append(re.escape(value[pos:]))
+        pieces.append(_literal_piece_ignoring_linebreaks(value[pos:]))
     return "".join(pieces)
 
 

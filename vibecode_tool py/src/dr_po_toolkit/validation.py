@@ -8,6 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Iterable
 
+from .app_links import build_entry_url
 from .discovery import SegmentFiles, find_backup_for_file, find_segments, iter_po_files
 from .models import POEntry, POFile, ValidationIssue
 from .po_io import load_po
@@ -473,6 +474,7 @@ def build_html_report(results: dict[Path, list[ValidationIssue]], root: str | Pa
                 context = i.msgctxt or ""
                 line_text = f"line {i.line}" if i.line else ""
                 searchable = " ".join([display, level, check, context, line_text, i.detail]).casefold()
+                open_url = build_entry_url(path, context=context, line=i.line)
                 issue_blocks.append(
                     f'<div class="issue {html.escape(level.lower(), quote=True)}" '
                     f'data-level="{html.escape(level, quote=True)}" '
@@ -481,7 +483,8 @@ def build_html_report(results: dict[Path, list[ValidationIssue]], root: str | Pa
                     f'data-detail="{html.escape(searchable, quote=True)}">'
                     f'<div class="issue-head"><b>{html.escape(level)} [{html.escape(check)}]</b> '
                     f'<span class="line">{html.escape(line_text)}</span> '
-                    f'<span class="ctx">{html.escape(context)}</span></div>'
+                    f'<span class="ctx">{html.escape(context)}</span>'
+                    f'<a class="open-entry" href="{html.escape(open_url, quote=True)}" title="Open this entry in DR PO Toolkit">Open in app</a></div>'
                     f'<div class="detail">{html.escape(i.detail)}</div>'
                     f'</div>'
                 )
@@ -518,6 +521,8 @@ h2{{font-size:15px;margin:0 0 8px;word-break:break-word}}
 .issue-head{{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;margin-bottom:3px}}
 .issue.error{{background:#fff1f0;border-color:#ffd3cf}} .issue.warn{{background:#fffbe6;border-color:#f3df91}} .issue.info{{background:#eef4ff;border-color:#cbdcff}} .issue.struct{{background:#f1fff6;border-color:#c9edd4}} .issue.ok{{background:#effaf2;border-color:#c9e8d2}}
 .line,.ctx{{color:var(--muted);font-family:Consolas,monospace}}
+.open-entry{{margin-left:auto;color:var(--blue);font-weight:700;text-decoration:none;border:1px solid #bfd0f7;border-radius:5px;padding:2px 7px;background:#f7f9ff}}
+.open-entry:hover{{background:#e8efff;text-decoration:underline}}
 .detail{{white-space:pre-wrap}}
 .hidden{{display:none!important}}
 @media(max-width:900px){{.filters{{grid-template-columns:1fr 1fr}}}}
