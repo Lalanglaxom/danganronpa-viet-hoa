@@ -65,6 +65,7 @@ def cmd_search(args: argparse.Namespace) -> int:
         search_msgstr=args.msgstr,
         case_sensitive=args.case,
         whole_word=args.whole_word,
+        speaker=getattr(args, "speaker", ""),
     )
     for r in results:
         print(f"{r.file} | {r.msgctxt} | msgid={r.hit_msgid} msgstr={r.hit_msgstr}")
@@ -226,11 +227,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     p = sub.add_parser("search", help="search PO files")
     p.add_argument("path")
-    p.add_argument("phrase")
+    p.add_argument("phrase", nargs="?", default="")
     p.add_argument("--msgid", action=argparse.BooleanOptionalAction, default=True)
     p.add_argument("--msgstr", action=argparse.BooleanOptionalAction, default=True)
     p.add_argument("--case", action="store_true")
     p.add_argument("--whole-word", action="store_true")
+    p.add_argument("--speaker", default="", help="speaker/context filter; separate multiple criteria with ';'")
     p.set_defaults(func=cmd_search)
 
     p = sub.add_parser("backup", help="create missing Copy.po backups without touching existing backups")

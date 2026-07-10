@@ -111,8 +111,8 @@ msgid ""
 "explain the basic controls.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Chào mừng đến với Học viện Đỉnh cao Hy vọng! Trước hết, chúng\n"
-"tôi xin được giải thích về các thao tác điều khiển cơ bản.\n"
+"<CLT 23>Chào mừng đến với Học viện Đỉnh Hy Vọng! Trước hết, chúng tôi\n"
+"xin được giải thích về các thao tác điều khiển cơ bản.\n"
 "<CLT>"
 
 #. <CLT 23>%CTRL_INVESTIGATE_AIM%で、画面上の<CLT><CLT 3>照準<CLT><CLT 23>をご操作頂けます。
@@ -483,7 +483,7 @@ msgstr ""
 #. 誰かの悪ふざけか？
 msgctxt "0050 | MAKOTO NAEGI"
 msgid "What the hell? Is this someone's idea of a joke?"
-msgstr "Cái gì thế này... Trò đùa quái ác của ai đó à?"
+msgstr "Cái gì thế này? Trò đùa quái ác của ai đó à?"
 
 #. <CLT 4>外に出る前に、教室の中を調べてみよう…
 #. <CLT>
@@ -544,7 +544,7 @@ msgid ""
 "<CLT 4>This is a classroom inside Hope's Peak.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây chính là một lớp học bên trong Học viện Đỉnh Hy vọng.\n"
+"<CLT 4>Đây là một lớp học bên trong Học viện Đỉnh Hy Vọng.\n"
 "<CLT>"
 
 #. でも…それにしては…
@@ -908,9 +908,7 @@ msgstr ""
 #. これって誰かの悪ふざけか？
 msgctxt "0093 | MAKOTO NAEGI"
 msgid "What the hell? Is this someone's idea of a joke?"
-msgstr ""
-"Thông báo nhập học mà lại xưng \"chúng bây\" sao... Trò đùa\n"
-"quái ác của ai đó à?"
+msgstr "Cái gì thế này? Trò đùa quái ác của ai đó à?"
 
 #. はい
 msgctxt "0094 | CHOICE/RE:ACT"

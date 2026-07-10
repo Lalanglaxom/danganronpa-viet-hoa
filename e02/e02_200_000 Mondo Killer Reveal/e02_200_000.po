@@ -340,8 +340,8 @@ msgid ""
 "Um...s-sorry, I don't really want to talk about it\n"
 "right now."
 msgstr ""
-"Ừm... m-mình xin lỗi, mình thực sự không muốn nói về\n"
-"chuyện đó vào lúc này."
+"Ừm... x-xin lỗi cậu, hiện tại tớ thực sự không muốn nói\n"
+"về chuyện đó."
 
 #. …このままじゃダメだと思うから、
 #. 後できっと話すよ…
@@ -1317,7 +1317,7 @@ msgstr "Thật sao? Trời đất..."
 #. う、うん…騙しててごめんなさい……
 msgctxt "0167 | CHIHIRO FUJISAKI"
 msgid "Y-Yeah... I'm sorry I lied to you."
-msgstr "V-Vâng... mình xin lỗi vì đã nói dối cậu."
+msgstr "Ừ-Ừm... tớ xin lỗi vì đã nói dối cậu."
 
 #. で、でもよ…どうしてだ？
 msgctxt "0168 | MONDO OOWADA"
@@ -1354,7 +1354,7 @@ msgstr "C-Cậu nói đúng, nhưng..."
 #. …変わりたいんだ。
 msgctxt "0173 | CHIHIRO FUJISAKI"
 msgid "...I want to change."
-msgstr "...mình muốn thay đổi."
+msgstr "...tớ muốn thay đổi."
 
 #. いつまでも“ウソに逃げている弱い自分”を
 #. 壊してさ…！
@@ -1363,8 +1363,8 @@ msgid ""
 "I wrapped myself in lies. I'm weak. I want to destroy\n"
 "that version of me forever!"
 msgstr ""
-"Mình đã luôn bao bọc bản thân trong những lời dối trá. Mình thật\n"
-"yếu đuối. Mình muốn tiêu diệt con người đó của mình mãi mãi!"
+"Tớ đã luôn bao bọc bản thân trong những lời dối trá. Tớ thật\n"
+"yếu đuối. Tớ muốn tiêu diệt con người đó của mình mãi mãi!"
 
 #. <CLT 4>その言葉が…オレを刺した。
 #. <CLT>
@@ -1392,7 +1392,7 @@ msgstr ""
 #. ボクは弱いから…
 msgctxt "0177 | CHIHIRO FUJISAKI"
 msgid "I have to change. I don't want to be weak anymore."
-msgstr "Mình phải thay đổi. Mình không muốn yếu đuối thêm nữa."
+msgstr "Tớ phải thay đổi. Tớ không muốn yếu đuối thêm nữa."
 
 #. でもさぁ、大和田クンは強いから、
 #. きっと、へっちゃらなんだよね？
@@ -1512,7 +1512,7 @@ msgid ""
 "I-I'm not making fun of you. You really are strong,\n"
 "Mondo..."
 msgstr ""
-"M-Mình không có chế nhạo cậu đâu. Cậu thực sự rất mạnh\n"
+"T-Tớ không có chế nhạo cậu đâu. Cậu thực sự rất mạnh\n"
 "mẽ mà, Mondo..."
 
 #. <CLT 4>ジグジグと…不気味な音を立てながら、
@@ -1576,12 +1576,14 @@ msgstr ""
 #. ぼ、僕はただ…大和田クンに憧れてて…
 msgctxt "0200 | CHIHIRO FUJISAKI"
 msgid "N-No, I just...really admire you."
-msgstr "Kh-Không phải đâu, mình chỉ là... thực sự ngưỡng mộ cậu thôi."
+msgstr ""
+"Kh-Không phải đâu, tớ chỉ là... thực sự ngưỡng mộ\n"
+"cậu thôi."
 
 #. 強い…大和田クンに憧れてて…
 msgctxt "0201 | CHIHIRO FUJISAKI"
 msgid "I admire...your strength..."
-msgstr "Mình ngưỡng mộ... sức mạnh của cậu..."
+msgstr "Tớ ngưỡng mộ... sức mạnh của cậu..."
 
 #. そうだよ…オレは強ぇーんだ…
 msgctxt "0202 | MONDO OOWADA"
@@ -1856,7 +1858,9 @@ msgctxt "0237 | MONOKUMA"
 msgid ""
 "Let's give it everything we've got! It's...PUNISHMENT\n"
 "TIIIME!"
-msgstr "Cùng dốc hết sức mình nào! Đã đến... GIỜ HÀNH QUYYYYẾT!"
+msgstr ""
+"Mọi người cùng cố gắng hết mình nào! Đã đến... GIỜ\n"
+"HÀNH QUYYYẾT!"
 
 #. 待てって言ってるじゃないかーーーーーッ！！
 msgctxt "0238 | KIYOTAKA ISHIMARU"

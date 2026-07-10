@@ -29,6 +29,59 @@ def user_multiline_text(text: str) -> str:
     return (text or "").replace(r"\r", "\r").replace(r"\n", "\n").replace(r"\t", "\t")
 
 
+def split_semicolon_parts(text: str, *, keep_empty: bool = False) -> list[str]:
+    """Split text on unescaped semicolons.
+
+    ``\\;`` inserts a literal semicolon.  Empty pieces are kept only when
+    requested, which is useful for replacements that intentionally delete text.
+    """
+    raw = text or ""
+    parts: list[str] = []
+    current: list[str] = []
+    index = 0
+    while index < len(raw):
+        char = raw[index]
+        if char == "\\" and index + 1 < len(raw) and raw[index + 1] == ";":
+            current.append(";")
+            index += 2
+            continue
+        if char == ";":
+            value = user_multiline_text("".join(current))
+            if keep_empty or value.strip():
+                parts.append(value)
+            current = []
+            index += 1
+            continue
+        current.append(char)
+        index += 1
+    value = user_multiline_text("".join(current))
+    if keep_empty or value.strip() or (keep_empty and raw == ""):
+        parts.append(value)
+    if keep_empty and not parts:
+        parts.append("")
+    return parts
+
+
+def search_replace_pairs(find_text: str, replace_text: str) -> list[tuple[str, str]]:
+    """Return ordered find/replacement pairs split with semicolons.
+
+    Find pieces are stripped because they are criteria.  Replacement pieces are
+    kept verbatim except for shared ``\n``/``\r``/``\t`` shortcuts.  If fewer
+    replacements than find terms are provided, the last replacement is reused.
+    """
+    needles = [part.strip() for part in split_semicolon_parts(find_text) if part.strip()]
+    if not needles:
+        return []
+    replacements = split_semicolon_parts(replace_text, keep_empty=True)
+    if not replacements:
+        replacements = [""]
+    pairs: list[tuple[str, str]] = []
+    for index, needle in enumerate(needles):
+        replacement = replacements[index] if index < len(replacements) else replacements[-1]
+        pairs.append((needle, replacement))
+    return pairs
+
+
 def flexible_whitespace_pattern(text: str) -> str:
     """Build a literal-search regex where whitespace and line breaks are equal.
 
@@ -80,6 +133,57 @@ def search_replace_replacement(text: str, *, regex: bool = False):
         return text or ""
     replacement = user_multiline_text(text)
     return lambda _match: replacement
+
+
+class SearchReplaceCompileError(ValueError):
+    """Raised when one item in a GUI search/replace sequence is invalid."""
+
+    def __init__(self, index: int, error: Exception) -> None:
+        self.index = index
+        self.error = error
+        super().__init__(str(error))
+
+
+SearchReplaceSequence = list[tuple[re.Pattern[str], object]]
+
+
+def compile_search_replace_sequence(
+    find_text: str,
+    replace_text: str,
+    *,
+    case_sensitive: bool = False,
+    whole_word: bool = False,
+    regex: bool = False,
+) -> SearchReplaceSequence:
+    """Compile ordered ``;`` separated find/replacement pairs for GUI views."""
+    compiled: SearchReplaceSequence = []
+    for index, (needle_text, replacement_text) in enumerate(search_replace_pairs(find_text, replace_text), start=1):
+        try:
+            pattern = compile_search_replace_pattern(
+                needle_text,
+                case_sensitive=case_sensitive,
+                whole_word=whole_word,
+                regex=regex,
+            )
+        except re.error as exc:
+            raise SearchReplaceCompileError(index, exc) from exc
+        compiled.append((pattern, search_replace_replacement(replacement_text, regex=regex)))
+    return compiled
+
+
+def apply_search_replace_sequence(
+    text_value: str,
+    compiled: SearchReplaceSequence,
+    *,
+    count_per_pattern: int = 0,
+) -> tuple[str, int]:
+    """Apply a compiled search/replace sequence in order."""
+    total_hits = 0
+    updated = text_value
+    for pattern, replacement in compiled:
+        updated, hits = pattern.subn(replacement, updated, count=count_per_pattern)
+        total_hits += hits
+    return updated, total_hits
 
 
 def clt_tags(text: str) -> list[str]:

@@ -341,6 +341,34 @@ def test_search_finds_wrapped_po_text_after_fast_prefilter():
         assert results[0].msgid == "Hello\nworld"
 
 
+def test_search_accepts_semicolon_criteria_and_speaker_filter():
+    import tempfile
+    from dr_po_toolkit.search import search_path
+
+    sample = (
+        'msgctxt "0001 | MAKOTO NAEGI"\n'
+        'msgid "Hello"\n'
+        'msgstr "Xin chào"\n'
+        '\n'
+        'msgctxt "0002 | KYOKO KIRIGIRI"\n'
+        'msgid "Goodbye"\n'
+        'msgstr "Tạm biệt"\n'
+    )
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        po = root / "e01.po"
+        po.write_text(sample, encoding="utf-8")
+
+        text_results = search_path(root, "missing; goodbye", speaker="kyoko")
+        speaker_results = search_path(root, "", speaker="makoto; kyoko")
+        combined_results = search_path(root, "hello; goodbye", speaker="makoto")
+
+        assert [item.msgctxt for item in text_results] == ["0002 | KYOKO KIRIGIRI"]
+        assert {item.msgctxt for item in speaker_results} == {"0001 | MAKOTO NAEGI", "0002 | KYOKO KIRIGIRI"}
+        assert [item.msgctxt for item in combined_results] == ["0001 | MAKOTO NAEGI"]
+        assert all(item.hit_speaker for item in speaker_results)
+
+
 def test_translafixer_ignores_clt_tags_when_matching_msgid():
     import tempfile
     from dr_po_toolkit.translafixer import apply_translafix, msgid_match_key
@@ -601,3 +629,31 @@ def test_shared_search_replace_ignores_linebreak_shape():
     replaced, count = pattern.subn(search_replace_replacement(r"xin\nchao"), "hello\nworld")
     assert count == 1
     assert replaced == "xin\nchao"
+
+
+def test_semicolon_search_replace_pairs_order_and_escape():
+    from dr_po_toolkit.text_utils import search_replace_pairs
+
+    assert search_replace_pairs("foo; bar", "one;two") == [("foo", "one"), ("bar", "two")]
+    assert search_replace_pairs(r"foo\;bar;baz", r"semi\;colon;") == [("foo;bar", "semi;colon"), ("baz", "")]
+
+
+def test_ordered_search_replace_sequence_matches_gui_behavior():
+    from dr_po_toolkit.text_utils import apply_search_replace_sequence, compile_search_replace_sequence
+
+    compiled = compile_search_replace_sequence("one;two", "1;2")
+    text, hits = apply_search_replace_sequence("one two one", compiled)
+
+    assert hits == 3
+    assert text == "1 2 1"
+
+
+def test_search_replace_sequence_reports_bad_item_index():
+    from dr_po_toolkit.text_utils import SearchReplaceCompileError, compile_search_replace_sequence
+
+    try:
+        compile_search_replace_sequence("one;(", "1;2", regex=True)
+    except SearchReplaceCompileError as exc:
+        assert exc.index == 2
+    else:  # pragma: no cover - defensive
+        raise AssertionError("expected SearchReplaceCompileError")

@@ -81,7 +81,12 @@ from .translafixer import (
     suggestion_match_key,
 )
 from .validation import format_text_report, validate_path, write_reports
-from .text_utils import compile_search_replace_pattern, search_replace_replacement, user_multiline_text
+from .text_utils import (
+    SearchReplaceCompileError,
+    apply_search_replace_sequence,
+    compile_search_replace_sequence,
+    user_multiline_text,
+)
 
 # Chiaki Nanami inspired theme palette: sleepy gamer, soft pink, muted teal,
 # dusty lavender, cream text, and deep charcoal blue panels.
@@ -1593,9 +1598,14 @@ class ToolkitGUI(QMainWindow):
         path_edit, include_extra = self._extra_path_row(layout, "search", "Extra Folder/File", "last_path")
 
         search_row = QHBoxLayout()
-        search_row.addWidget(QLabel("Phrase"))
+        search_row.addWidget(QLabel("Search"))
         phrase = QLineEdit()
-        search_row.addWidget(phrase, 1)
+        phrase.setPlaceholderText("Text criteria; another text")
+        search_row.addWidget(phrase, 2)
+        search_row.addWidget(QLabel("Speaker"))
+        speaker = QLineEdit()
+        speaker.setPlaceholderText("Speaker/context criteria; another speaker")
+        search_row.addWidget(speaker, 1)
         search_msgid = QCheckBox("EN")
         search_msgid.setChecked(True)
         search_msgstr = QCheckBox("VI")
@@ -1669,10 +1679,10 @@ class ToolkitGUI(QMainWindow):
         repl_layout = QGridLayout(replace_group)
         find_edit = QPlainTextEdit()
         find_edit.setFixedHeight(58)
-        find_edit.setPlaceholderText("Find text. Spaces or pasted line breaks will also match line breaks in msgstr.")
+        find_edit.setPlaceholderText(r"Find text; another find. Spaces or pasted line breaks also match line breaks in msgstr. Use \; for literal ;.")
         repl_edit = QPlainTextEdit()
         repl_edit.setFixedHeight(58)
-        repl_edit.setPlaceholderText("Replacement text. Use pasted line breaks or \\n for a line break.")
+        repl_edit.setPlaceholderText(r"Replacement text; another replacement. Use pasted line breaks or \n for a line break, and \; for literal ;.")
         replace_case = QCheckBox("Case")
         replace_whole = QCheckBox("Whole word")
         prev_btn = self._button("Find Prev", secondary=True)
@@ -1736,6 +1746,10 @@ class ToolkitGUI(QMainWindow):
                             item.setForeground(QBrush(QColor(MUTED)))
                             item.setBackground(QBrush(QColor(CONTEXT_BG)))
                             item.setToolTip(f"{result.file}\n{result.msgctxt}")
+                            if getattr(result, "hit_speaker", False):
+                                font = item.font()
+                                font.setBold(True)
+                                item.setFont(font)
                         elif col == 1:
                             bg_color = EN_HIT_BG if result.hit_msgid else EN_BG
                             item.setForeground(QBrush(QColor(WHITE)))
@@ -1896,8 +1910,9 @@ class ToolkitGUI(QMainWindow):
 
         def run_search() -> None:
             text = phrase.text()
-            if not text:
-                status.setText("Set phrase first.")
+            speaker_text = speaker.text()
+            if not text.strip() and not speaker_text.strip():
+                status.setText("Set search text or speaker first.")
                 return
             paths = self._processing_paths("search", extra_edit=path_edit, include_extra=include_extra, require_any=False)
             if not paths:
@@ -1913,6 +1928,7 @@ class ToolkitGUI(QMainWindow):
                     search_msgstr=search_msgstr.isChecked(),
                     case_sensitive=search_case.isChecked(),
                     whole_word=search_whole.isChecked(),
+                    speaker=speaker_text,
                 ):
                     key = (self._path_key(result.file), result.uid)
                     if key in seen:
@@ -1928,8 +1944,9 @@ class ToolkitGUI(QMainWindow):
             if self.search_results:
                 table.selectRow(0)
                 load_selected()
-            if not user_multiline_text(find_edit.toPlainText()).strip():
-                find_edit.setPlainText(text)
+            if text.strip() and not user_multiline_text(find_edit.toPlainText()).strip():
+                first_text = next((part.strip() for part in text.split(";") if part.strip()), text.strip())
+                find_edit.setPlainText(first_text)
 
         def open_selected_file() -> None:
             idx = current_result_index()
@@ -1948,23 +1965,24 @@ class ToolkitGUI(QMainWindow):
             if not self._open_external(result.file):
                 QMessageBox.warning(self, "Open file", f"Could not open file:\n{result.file}")
 
-        def compile_find() -> re.Pattern[str] | None:
-            needle = user_multiline_text(find_edit.toPlainText())
-            if not needle.strip():
-                status.setText("Find is empty.")
-                return None
+        def compile_replace_sequence() -> list[tuple[re.Pattern[str], object]] | None:
             try:
-                return compile_search_replace_pattern(
-                    needle,
+                compiled = compile_search_replace_sequence(
+                    find_edit.toPlainText(),
+                    repl_edit.toPlainText(),
                     case_sensitive=replace_case.isChecked(),
                     whole_word=replace_whole.isChecked(),
                 )
-            except re.error as exc:
-                status.setText(f"Invalid find pattern: {exc}")
+            except SearchReplaceCompileError as exc:
+                status.setText(f"Invalid find pattern in item {exc.index}: {exc.error}")
                 return None
+            if not compiled:
+                status.setText("Find is empty.")
+                return None
+            return compiled
 
-        def result_matches(idx: int, pattern: re.Pattern[str]) -> bool:
-            return bool(pattern.search(self.search_results[idx].msgstr))
+        def result_matches(idx: int, compiled: list[tuple[re.Pattern[str], object]]) -> bool:
+            return any(pattern.search(self.search_results[idx].msgstr) for pattern, _replacement in compiled)
 
         def select_result(idx: int) -> None:
             for row in range(table.rowCount()):
@@ -1977,25 +1995,24 @@ class ToolkitGUI(QMainWindow):
                     return
 
         def find_step(direction: int) -> None:
-            pattern = compile_find()
-            if pattern is None or not self.search_results:
+            compiled = compile_replace_sequence()
+            if compiled is None or not self.search_results:
                 return
             current = current_result_index()
             start = current if current is not None else self.search_last_index
             n = len(self.search_results)
             for offset in range(1, n + 1):
                 idx = (start + direction * offset) % n
-                if result_matches(idx, pattern):
+                if result_matches(idx, compiled):
                     select_result(idx)
                     status.setText(f"Found result {idx + 1}/{n}.")
                     return
             status.setText("No match in current results.")
 
         def replace_indices(indices: list[int]) -> None:
-            pattern = compile_find()
-            if pattern is None:
+            compiled = compile_replace_sequence()
+            if compiled is None:
                 return
-            repl = search_replace_replacement(repl_edit.toPlainText())
             updates: dict[int, str] = {}
             total_hits = 0
             wrapped_count = 0
@@ -2004,11 +2021,12 @@ class ToolkitGUI(QMainWindow):
                 if idx < 0 or idx >= len(self.search_results):
                     continue
                 before = self.search_results[idx].msgstr
-                after, hits = pattern.subn(repl, before)
-                if hits:
+                after = before
+                after, row_hits = apply_search_replace_sequence(after, compiled)
+                if row_hits:
                     after, wrapped = wrap_msgstr(after, soft=soft_value, hard=hard_value, max_cuts=cuts_value)
                     updates[idx] = after
-                    total_hits += hits
+                    total_hits += row_hits
                     if wrapped:
                         wrapped_count += 1
             changed = save_updates(updates)
@@ -2058,6 +2076,7 @@ class ToolkitGUI(QMainWindow):
         table.itemDoubleClicked.connect(lambda _item: open_selected_file())
         search_btn.clicked.connect(run_search)
         phrase.returnPressed.connect(run_search)
+        speaker.returnPressed.connect(run_search)
         open_btn.clicked.connect(open_selected_file)
         wrap_btn.clicked.connect(wrap_selected_msgstrs)
         save_btn.clicked.connect(save_current)
@@ -2456,7 +2475,7 @@ class ToolkitGUI(QMainWindow):
             | QAbstractItemView.EditTrigger.SelectedClicked
             | QAbstractItemView.EditTrigger.EditKeyPressed
         )
-        table.setWordWrap(False)
+        table.setWordWrap(True)
         table.setTextElideMode(Qt.TextElideMode.ElideNone)
         table.setVerticalScrollMode(QAbstractItemView.ScrollMode.ScrollPerPixel)
         table.setHorizontalScrollMode(QAbstractItemView.ScrollMode.ScrollPerPixel)
@@ -2496,13 +2515,13 @@ class ToolkitGUI(QMainWindow):
         en_box.setPlaceholderText("English msgid")
         en_box.setFont(QFont("Consolas", 8))
         en_box.verticalScrollBar().setSingleStep(6)
-        en_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
+        en_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.WidgetWidth)
         en_box._clt_highlighter = CltHighlighter(en_box.document())  # keep highlighter alive
         vi_box = VisibleNewlinePlainTextEdit()
         vi_box.setPlaceholderText("Edit Vietnamese msgstr here. Use Apply to copy it to this source group.")
         vi_box.setFont(QFont("Consolas", 8))
         vi_box.verticalScrollBar().setSingleStep(6)
-        vi_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
+        vi_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.WidgetWidth)
         vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
         speaker_label = QLabel("Speaker: —")
         speaker_label.setObjectName("muted")
@@ -2527,7 +2546,7 @@ class ToolkitGUI(QMainWindow):
         apply_group_btn = self._button("Apply", secondary=True)
         apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
         undo_apply_btn = self._button("Undo", secondary=True)
-        undo_apply_btn.setToolTip("Undo the most recent Apply or Replace change.")
+        undo_apply_btn.setToolTip("Undo the most recent Apply, Replace, edit, or Wrap 64 change. Ctrl+Z also works.")
         undo_apply_btn.setEnabled(False)
         wrap_break_btn = self._button("Wrap 64", secondary=True)
         wrap_break_btn.setToolTip("Insert real line breaks in selected/current Vietnamese translation(s) using the Line Wrap tab settings.")
@@ -2562,6 +2581,7 @@ class ToolkitGUI(QMainWindow):
         search_replace_state: dict[str, object] = {}
         loading = {"value": False}
         detail_loading = {"value": False}
+        undoing = {"value": False}
         HIDDEN_GROUP_BG = "#604268"
         HIDDEN_BG = "#49354f"
         HIDDEN_BG_2 = "#3d3146"
@@ -2579,6 +2599,25 @@ class ToolkitGUI(QMainWindow):
         for po_path, po_file in po_cache.items():
             for entry in getattr(po_file, "entries", []):
                 original_translations[(po_path, entry.uid)] = entry.msgstr
+
+        def push_duplicate_undo(changes: list[dict[str, object]]) -> None:
+            filtered = [change for change in changes if str(change.get("old", "")) != str(change.get("new", ""))]
+            if not filtered or undoing["value"]:
+                return
+            apply_undo_stack.append(filtered)
+            if len(apply_undo_stack) > 100:
+                del apply_undo_stack[:-100]
+            undo_apply_btn.setEnabled(True)
+
+        def duplicate_change_for_row(row: int, old_text: str, new_text: str, label: str) -> dict[str, object] | None:
+            item = table.item(row, 3)
+            payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+            if not isinstance(payload, dict):
+                return None
+            path, entry = entry_from_payload(payload)
+            if path is None or entry is None or old_text == new_text:
+                return None
+            return {"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": label}
 
         def refresh_changed_file(path: Path) -> None:
             po_file = po_cache.get(path)
@@ -2736,8 +2775,12 @@ class ToolkitGUI(QMainWindow):
             table.viewport().update()
 
         def compact_row_height_for_text(*values: str) -> int:
-            forced_lines = max((str(value).count("\n") + 1 for value in values if value is not None), default=1)
-            return max(28, min(220, 17 * forced_lines + 10))
+            def estimated_lines(value: str) -> int:
+                segments = str(value or "").split("\n") or [""]
+                return sum(max(1, (len(segment) + 95) // 96) for segment in segments)
+
+            lines = max((estimated_lines(value) for value in values if value is not None), default=1)
+            return max(28, min(220, 17 * lines + 10))
 
         def refresh_table_row_height(row: int) -> None:
             en_item = table.item(row, 2)
@@ -2824,7 +2867,7 @@ class ToolkitGUI(QMainWindow):
             if refresh_height:
                 refresh_table_row_height(row)
 
-        def set_entry_translation(row: int, text: str, *, update_detail: bool = False) -> bool:
+        def set_entry_translation(row: int, text: str, *, update_detail: bool = False, undo_label: str | None = None) -> bool:
             item = table.item(row, 3)
             if item is None:
                 return False
@@ -2834,7 +2877,8 @@ class ToolkitGUI(QMainWindow):
             path, entry = entry_from_payload(payload)
             if path is None or entry is None:
                 return False
-            if entry.msgstr == text:
+            old_text = entry.msgstr
+            if old_text == text:
                 if update_detail:
                     detail_loading["value"] = True
                     try:
@@ -2842,6 +2886,8 @@ class ToolkitGUI(QMainWindow):
                     finally:
                         detail_loading["value"] = False
                 return False
+            if undo_label:
+                push_duplicate_undo([{"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": text, "label": undo_label}])
             entry.msgstr = text
             refresh_changed_file(path)
             loading["value"] = True
@@ -2979,25 +3025,7 @@ class ToolkitGUI(QMainWindow):
             if loading["value"] or item.column() != 3:
                 return
             row = item.row()
-            payload = item.data(Qt.ItemDataRole.UserRole)
-            if not isinstance(payload, dict):
-                return
-            path, entry = entry_from_payload(payload)
-            if path is None or entry is None:
-                return
-            new_text = item.text()
-            if entry.msgstr == new_text:
-                return
-            entry.msgstr = new_text
-            refresh_changed_file(path)
-            update_row_visual(row, new_text)
-            if row == table.currentRow():
-                detail_loading["value"] = True
-                try:
-                    vi_box.setPlainText(new_text)
-                finally:
-                    detail_loading["value"] = False
-            update_status()
+            set_entry_translation(row, item.text(), update_detail=(row == table.currentRow()), undo_label="edit")
 
         def detail_changed() -> None:
             if detail_loading["value"] or loading["value"]:
@@ -3005,7 +3033,7 @@ class ToolkitGUI(QMainWindow):
             row = table.currentRow()
             if row < 0:
                 return
-            set_entry_translation(row, vi_box.toPlainText())
+            set_entry_translation(row, vi_box.toPlainText(), undo_label="edit")
 
         def selection_changed() -> None:
             load_detail_for_row(table.currentRow())
@@ -3150,15 +3178,23 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
                 return
             changed = 0
+            undo_rows: list[dict[str, object]] = []
             current_row = table.currentRow()
             soft_value, hard_value, cuts_value = self._linewrap_settings()
             for row in rows:
                 item = table.item(row, 3)
                 if item is None:
                     continue
+                payload = item.data(Qt.ItemDataRole.UserRole)
+                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
+                if path is None or entry is None:
+                    continue
+                old_text = entry.msgstr
                 fixed, did_change = wrap_msgstr(item.text(), soft=soft_value, hard=hard_value, max_cuts=cuts_value)
                 if did_change and set_entry_translation(row, fixed, update_detail=(row == current_row)):
+                    undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": fixed, "label": "wrap"})
                     changed += 1
+            push_duplicate_undo(undo_rows)
             refresh_table_row_heights()
             update_status()
             status.setText(
@@ -3199,9 +3235,7 @@ class ToolkitGUI(QMainWindow):
                     changed += 1
             finally:
                 loading["value"] = False
-            if undo_rows:
-                apply_undo_stack.append(undo_rows)
-                undo_apply_btn.setEnabled(True)
+            push_duplicate_undo(undo_rows)
             load_detail_for_row(table.currentRow())
             update_status()
             if changed:
@@ -3211,13 +3245,14 @@ class ToolkitGUI(QMainWindow):
 
         def undo_apply_to_same_source() -> None:
             if not apply_undo_stack:
-                status.setText("Nothing to undo for Apply.")
+                status.setText("Nothing to undo.")
                 undo_apply_btn.setEnabled(False)
                 return
             undo_rows = apply_undo_stack.pop()
             undone = 0
             affected_paths: set[Path] = set()
             loading["value"] = True
+            undoing["value"] = True
             try:
                 for change in reversed(undo_rows):
                     path = change.get("path")
@@ -3246,11 +3281,32 @@ class ToolkitGUI(QMainWindow):
                 for path in affected_paths:
                     refresh_changed_file(path)
             finally:
+                undoing["value"] = False
                 loading["value"] = False
             undo_apply_btn.setEnabled(bool(apply_undo_stack))
             load_detail_for_row(table.currentRow())
             update_status()
             status.setText(status.text() + f" | undo applied={undone}")
+
+        def undo_duplicate_change() -> None:
+            focus = QApplication.focusWidget()
+            if focus is vi_box or (focus is not None and vi_box.isAncestorOf(focus)):
+                undoing["value"] = True
+                try:
+                    if self._undo_text_editor(vi_box):
+                        return
+                finally:
+                    undoing["value"] = False
+            if self._undo_focused_text_editor():
+                return
+            if focus is table or (focus is not None and table.isAncestorOf(focus)):
+                undoing["value"] = True
+                try:
+                    if self._undo_text_editor(vi_box):
+                        return
+                finally:
+                    undoing["value"] = False
+            undo_apply_to_same_source()
 
         def open_search_replace_dialog() -> None:
             existing = search_replace_state.get("dialog")
@@ -3270,9 +3326,9 @@ class ToolkitGUI(QMainWindow):
 
             form = QFormLayout()
             find_edit = QLineEdit(str(search_replace_state.get("find", "")))
-            find_edit.setPlaceholderText("Find text. Spaces and \n also match real line breaks.")
+            find_edit.setPlaceholderText("Find text; another find. Spaces and \\n also match real line breaks. Use \\; for literal ;.")
             replace_edit = QLineEdit(str(search_replace_state.get("replace", "")))
-            replace_edit.setPlaceholderText("Replace Vietnamese with... use \n for a line break.")
+            replace_edit.setPlaceholderText("Replacement; another replacement. Use \\n for a line break and \\; for literal ;.")
             scope_combo = QComboBox()
             scope_combo.addItem("Vietnamese", "vi")
             scope_combo.addItem("English", "en")
@@ -3297,7 +3353,7 @@ class ToolkitGUI(QMainWindow):
             option_row.addStretch()
             root_layout.addLayout(option_row)
 
-            status_label = QLabel("Replace edits Vietnamese only. Find can search English, Vietnamese, or both.")
+            status_label = QLabel("Use ; for ordered find→replace pairs. Replace edits Vietnamese only. Find can search English, Vietnamese, or both.")
             status_label.setObjectName("muted")
             status_label.setWordWrap(True)
             root_layout.addWidget(status_label)
@@ -3322,22 +3378,23 @@ class ToolkitGUI(QMainWindow):
                 search_replace_state["whole"] = whole_chk.isChecked()
                 search_replace_state["regex"] = regex_chk.isChecked()
 
-            def compile_pattern() -> re.Pattern[str] | None:
+            def compile_patterns() -> list[tuple[re.Pattern[str], object]] | None:
                 remember_search_settings()
-                needle_text = find_edit.text()
-                if not user_multiline_text(needle_text).strip():
-                    status_label.setText("Enter text to search.")
-                    return None
                 try:
-                    return compile_search_replace_pattern(
-                        needle_text,
+                    compiled = compile_search_replace_sequence(
+                        find_edit.text(),
+                        replace_edit.text(),
                         case_sensitive=case_chk.isChecked(),
                         whole_word=whole_chk.isChecked(),
                         regex=regex_chk.isChecked(),
                     )
-                except re.error as exc:
-                    status_label.setText(f"Invalid regex: {exc}")
+                except SearchReplaceCompileError as exc:
+                    status_label.setText(f"Invalid regex in item {exc.index}: {exc.error}")
                     return None
+                if not compiled:
+                    status_label.setText("Enter text to search.")
+                    return None
+                return compiled
 
             def row_text(row: int, field: str) -> str:
                 if row < 0 or row >= table.rowCount():
@@ -3359,11 +3416,13 @@ class ToolkitGUI(QMainWindow):
                     fields.append("en")
                 return fields
 
-            def find_in_row(row: int, pattern: re.Pattern[str]) -> tuple[str, re.Match[str]] | None:
+            def find_in_row(row: int, compiled: list[tuple[re.Pattern[str], object]]) -> tuple[str, re.Match[str]] | None:
                 for field in fields_for_row():
-                    match = pattern.search(row_text(row, field))
-                    if match:
-                        return field, match
+                    text_value = row_text(row, field)
+                    for pattern, _replacement in compiled:
+                        match = pattern.search(text_value)
+                        if match:
+                            return field, match
                 return None
 
             def select_and_highlight(row: int, field: str, match: re.Match[str]) -> None:
@@ -3379,8 +3438,8 @@ class ToolkitGUI(QMainWindow):
                 table.scrollToItem(table.item(row, 3 if field == "vi" else 2), QAbstractItemView.ScrollHint.PositionAtCenter)
 
             def find_match(direction: int = 1) -> bool:
-                pattern = compile_pattern()
-                if pattern is None:
+                compiled = compile_patterns()
+                if compiled is None:
                     return False
                 total = table.rowCount()
                 if total <= 0:
@@ -3391,6 +3450,7 @@ class ToolkitGUI(QMainWindow):
                     current = 0 if direction >= 0 else total - 1
                 signature = (
                     find_edit.text(),
+                    replace_edit.text(),
                     scope_combo.currentData(),
                     case_chk.isChecked(),
                     whole_chk.isChecked(),
@@ -3405,7 +3465,7 @@ class ToolkitGUI(QMainWindow):
                     start = current + direction
                 for step in range(total):
                     row = (start + (step * direction)) % total
-                    found = find_in_row(row, pattern)
+                    found = find_in_row(row, compiled)
                     if not found:
                         continue
                     field, match = found
@@ -3417,10 +3477,6 @@ class ToolkitGUI(QMainWindow):
                     return True
                 status_label.setText("No match found.")
                 return False
-
-            def replacement_value():
-                remember_search_settings()
-                return search_replace_replacement(replace_edit.text(), regex=regex_chk.isChecked())
 
             def change_row_translation(row: int, new_text: str, *, undo_label: str) -> bool:
                 item = table.item(row, 3)
@@ -3434,8 +3490,7 @@ class ToolkitGUI(QMainWindow):
                 if old_text == new_text:
                     return False
                 if set_entry_translation(row, new_text, update_detail=(row == table.currentRow())):
-                    apply_undo_stack.append([{"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": undo_label}])
-                    undo_apply_btn.setEnabled(True)
+                    push_duplicate_undo([{"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": undo_label}])
                     return True
                 return False
 
@@ -3443,20 +3498,20 @@ class ToolkitGUI(QMainWindow):
                 if str(scope_combo.currentData()) == "en":
                     status_label.setText("Replace edits Vietnamese only. Switch Search in to Vietnamese or Both.")
                     return
-                pattern = compile_pattern()
-                if pattern is None:
+                compiled = compile_patterns()
+                if compiled is None:
                     return
                 row = table.currentRow()
                 if row < 0 or row >= table.rowCount():
                     status_label.setText("Select a duplicate row first.")
                     return
                 source_text = row_text(row, "vi")
-                new_text, count = pattern.subn(replacement_value(), source_text, count=1)
+                new_text, count = apply_search_replace_sequence(source_text, compiled, count_per_pattern=1)
                 if count <= 0:
                     status_label.setText("Current row has no Vietnamese match to replace.")
                     return
                 if change_row_translation(row, new_text, undo_label="replace"):
-                    status_label.setText(f"Replaced 1 match in row {row + 1}.")
+                    status_label.setText(f"Replaced {count} match{'es' if count != 1 else ''} in row {row + 1}.")
                     find_match(1)
                 else:
                     status_label.setText("Replacement made no change.")
@@ -3465,8 +3520,8 @@ class ToolkitGUI(QMainWindow):
                 if str(scope_combo.currentData()) == "en":
                     status_label.setText("Replace edits Vietnamese only. Switch Search in to Vietnamese or Both.")
                     return
-                pattern = compile_pattern()
-                if pattern is None:
+                compiled = compile_patterns()
+                if compiled is None:
                     return
                 undo_rows: list[dict[str, object]] = []
                 changed_rows = 0
@@ -3482,7 +3537,7 @@ class ToolkitGUI(QMainWindow):
                         if path is None or entry is None:
                             continue
                         old_text = entry.msgstr
-                        new_text, count = pattern.subn(replacement_value(), old_text)
+                        new_text, count = apply_search_replace_sequence(old_text, compiled)
                         if count <= 0 or new_text == old_text:
                             continue
                         undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": "replace all"})
@@ -3501,9 +3556,7 @@ class ToolkitGUI(QMainWindow):
                         total_matches += count
                 finally:
                     loading["value"] = False
-                if undo_rows:
-                    apply_undo_stack.append(undo_rows)
-                    undo_apply_btn.setEnabled(True)
+                push_duplicate_undo(undo_rows)
                 update_status()
                 status_label.setText(f"Replaced {total_matches} match{'es' if total_matches != 1 else ''} in {changed_rows} row{'s' if changed_rows != 1 else ''}.")
 
@@ -3663,7 +3716,7 @@ class ToolkitGUI(QMainWindow):
         search_replace_btn.clicked.connect(open_search_replace_dialog)
         wrap_break_btn.clicked.connect(breakline_selected_64)
         apply_group_btn.clicked.connect(apply_to_same_source)
-        undo_apply_btn.clicked.connect(undo_apply_to_same_source)
+        undo_apply_btn.clicked.connect(undo_duplicate_change)
         hide_group_btn.clicked.connect(hide_selected_groups)
         unhide_group_btn.clicked.connect(unhide_selected_groups)
         show_hidden_check.stateChanged.connect(lambda _state: toggle_hidden_visibility())
@@ -3673,7 +3726,11 @@ class ToolkitGUI(QMainWindow):
         find_shortcut = QShortcut(QKeySequence("Ctrl+F"), dialog)
         find_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
         find_shortcut.activated.connect(open_search_replace_dialog)
+        undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), dialog)
+        undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        undo_shortcut.activated.connect(undo_duplicate_change)
         dialog._find_shortcut = find_shortcut  # type: ignore[attr-defined]
+        dialog._undo_shortcut = undo_shortcut  # type: ignore[attr-defined]
         populate(displayed_conflict_entries())
         QTimer.singleShot(0, refresh_table_row_heights)
         update_status()
@@ -4555,9 +4612,9 @@ class ToolkitGUI(QMainWindow):
 
             form = QFormLayout()
             find_edit = QLineEdit(str(state.get("search_replace_find", "")))
-            find_edit.setPlaceholderText("Find text. Spaces and \\n also match real line breaks.")
+            find_edit.setPlaceholderText("Find text; another find. Spaces and \\n also match real line breaks. Use \\; for literal ;.")
             replace_edit = QLineEdit(str(state.get("search_replace_replace", "")))
-            replace_edit.setPlaceholderText("Replace with... use \\n for a line break.")
+            replace_edit.setPlaceholderText("Replacement; another replacement. Use \\n for a line break and \\; for literal ;.")
             scope_combo = QComboBox()
             scope_combo.addItem("Vietnamese msgstr", "vi")
             scope_combo.addItem("English msgid", "en")
@@ -4576,7 +4633,7 @@ class ToolkitGUI(QMainWindow):
             option_row.addStretch()
             root.addLayout(option_row)
 
-            status_label = QLabel("")
+            status_label = QLabel("Use ; for ordered find→replace pairs. Replace edits Vietnamese only.")
             status_label.setObjectName("muted")
             status_label.setWordWrap(True)
             root.addWidget(status_label)
@@ -4593,23 +4650,25 @@ class ToolkitGUI(QMainWindow):
             button_row.addWidget(close_btn)
             root.addLayout(button_row)
 
-            def compile_pattern() -> re.Pattern[str] | None:
+            def compile_patterns() -> list[tuple[re.Pattern[str], object]] | None:
                 needle_text = find_edit.text()
                 state["search_replace_find"] = needle_text
                 state["search_replace_replace"] = replace_edit.text()
-                if not user_multiline_text(needle_text).strip():
-                    status_label.setText("Enter text to search.")
-                    return None
                 try:
-                    return compile_search_replace_pattern(
+                    compiled = compile_search_replace_sequence(
                         needle_text,
+                        replace_edit.text(),
                         case_sensitive=case_chk.isChecked(),
                         whole_word=whole_chk.isChecked(),
                         regex=regex_chk.isChecked(),
                     )
-                except re.error as exc:
-                    status_label.setText(f"Invalid regex: {exc}")
+                except SearchReplaceCompileError as exc:
+                    status_label.setText(f"Invalid regex in item {exc.index}: {exc.error}")
                     return None
+                if not compiled:
+                    status_label.setText("Enter text to search.")
+                    return None
+                return compiled
 
             def fields_for_entry(entry) -> list[tuple[str, str]]:
                 scope = str(scope_combo.currentData())
@@ -4620,15 +4679,16 @@ class ToolkitGUI(QMainWindow):
                     fields.append(("en", entry.msgid))
                 return fields
 
-            def find_in_row(row: int, pattern: re.Pattern[str]) -> tuple[str, re.Match[str]] | None:
+            def find_in_row(row: int, compiled: list[tuple[re.Pattern[str], object]]) -> tuple[str, re.Match[str]] | None:
                 po = po_file()
                 if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                     return None
                 entry = po.entries[row]  # type: ignore[union-attr]
                 for field, text_value in fields_for_entry(entry):
-                    match = pattern.search(text_value)
-                    if match:
-                        return field, match
+                    for pattern, _replacement in compiled:
+                        match = pattern.search(text_value)
+                        if match:
+                            return field, match
                 return None
 
             def highlight_match(field: str, match: re.Match[str]) -> None:
@@ -4641,11 +4701,11 @@ class ToolkitGUI(QMainWindow):
 
             def find_match(direction: int = 1) -> bool:
                 po = po_file()
-                pattern = compile_pattern()
+                compiled = compile_patterns()
                 if po is None:
                     status_label.setText("Load a .po file first.")
                     return False
-                if pattern is None:
+                if compiled is None:
                     return False
                 total = len(po.entries)  # type: ignore[union-attr]
                 if total <= 0:
@@ -4654,7 +4714,7 @@ class ToolkitGUI(QMainWindow):
                 current = table.currentRow()
                 if current < 0:
                     current = 0
-                signature = (find_edit.text(), scope_combo.currentData(), case_chk.isChecked(), whole_chk.isChecked(), regex_chk.isChecked())
+                signature = (find_edit.text(), replace_edit.text(), scope_combo.currentData(), case_chk.isChecked(), whole_chk.isChecked(), regex_chk.isChecked())
                 previous_signature = state.get("search_replace_signature")
                 previous_row = state.get("search_replace_last_row")
                 start = current
@@ -4662,7 +4722,7 @@ class ToolkitGUI(QMainWindow):
                     start = current + direction
                 for step in range(total):
                     row = (start + (step * direction)) % total
-                    found = find_in_row(row, pattern)
+                    found = find_in_row(row, compiled)
                     if not found:
                         continue
                     field, match = found
@@ -4675,39 +4735,36 @@ class ToolkitGUI(QMainWindow):
                 status_label.setText("No match found.")
                 return False
 
-            def replacement_value():
-                return search_replace_replacement(replace_edit.text(), regex=regex_chk.isChecked())
-
             def replace_current() -> None:
                 po = po_file()
-                pattern = compile_pattern()
+                compiled = compile_patterns()
                 row = table.currentRow()
-                if po is None or pattern is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                if po is None or compiled is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                     status_label.setText("Find a loaded entry first.")
                     return
                 entry = po.entries[row]  # type: ignore[union-attr]
-                new_text, count = pattern.subn(replacement_value(), entry.msgstr, count=1)
+                new_text, count = apply_search_replace_sequence(entry.msgstr, compiled, count_per_pattern=1)
                 if count <= 0:
                     status_label.setText("Current row has no Vietnamese match to replace.")
                     return
                 set_entry_translation(row, new_text, undo_label="replace")
-                status_label.setText(f"Replaced 1 match in entry {row + 1}.")
+                status_label.setText(f"Replaced {count} match{'es' if count != 1 else ''} in entry {row + 1}.")
                 find_match(1)
 
             def replace_all() -> None:
                 po = po_file()
-                pattern = compile_pattern()
+                compiled = compile_patterns()
                 if po is None:
                     status_label.setText("Load a .po file first.")
                     return
-                if pattern is None:
+                if compiled is None:
                     return
                 changed_rows = 0
                 total_matches = 0
                 begin_po_undo_batch("replace all")
                 try:
                     for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
-                        new_text, count = pattern.subn(replacement_value(), entry.msgstr)
+                        new_text, count = apply_search_replace_sequence(entry.msgstr, compiled)
                         if count <= 0:
                             continue
                         total_matches += count
