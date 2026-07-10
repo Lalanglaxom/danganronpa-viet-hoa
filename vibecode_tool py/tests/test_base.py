@@ -828,3 +828,48 @@ def test_validator_html_has_direct_open_entry_link():
         assert "drpo://open?" in report
         assert "context=0001+%7C+MAKOTO" in report
         assert "line=17" in report
+
+
+def test_validation_reports_replace_old_files_without_accumulating():
+    import tempfile
+    from dr_po_toolkit.models import ValidationIssue
+    from dr_po_toolkit.validation import write_reports
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        po_path = root / "scene.po"
+        legacy_log = root / "validation_20260101_010101.log"
+        legacy_html = root / "validation_20260101_010101.html"
+        unrelated = root / "keep_me.html"
+        legacy_log.write_text("old", encoding="utf-8")
+        legacy_html.write_text("old", encoding="utf-8")
+        unrelated.write_text("keep", encoding="utf-8")
+
+        first_issue = ValidationIssue(
+            level="WARN",
+            check="first",
+            detail="first report",
+            file=po_path,
+        )
+        txt, html = write_reports({po_path: [first_issue]}, root, root)
+
+        assert txt == root / "validation.log"
+        assert html == root / "validation.html"
+        assert not legacy_log.exists()
+        assert not legacy_html.exists()
+        assert unrelated.read_text(encoding="utf-8") == "keep"
+
+        second_issue = ValidationIssue(
+            level="ERROR",
+            check="second",
+            detail="second report",
+            file=po_path,
+        )
+        txt2, html2 = write_reports({po_path: [second_issue]}, root, root)
+
+        assert (txt2, html2) == (txt, html)
+        assert "second report" in txt.read_text(encoding="utf-8")
+        assert "first report" not in txt.read_text(encoding="utf-8")
+        assert "second report" in html.read_text(encoding="utf-8")
+        assert list(root.glob("validation*.log")) == [txt]
+        assert list(root.glob("validation*.html")) == [html]
