@@ -314,11 +314,12 @@ def sync_option_from_working_folder(
     *,
     filter_by_option: bool = True,
 ) -> SyncOptionResult:
-    """Copy .po files from working folder strictly to the matching filename in sync folder.
+    """Copy working .po files into a shared destination folder.
 
     When ``filter_by_option`` is true, only files whose path/name matches the option
-    are copied. It matches files strictly by their filename. If a matching file 
-    does not already exist in the sync folder, it reports an error and skips copying.
+    are copied. Existing destination files are matched by filename. A source file
+    with no existing filename match is created at the same relative path beneath
+    the destination folder.
     """
     source_root = Path(working_folder).expanduser()
     target_root = Path(sync_folder).expanduser()
@@ -353,14 +354,16 @@ def sync_option_from_working_folder(
             
         result.matched += 1
         
-        # 3. Find the destination path using the filename
+        # 3. Reuse an existing filename match. Otherwise preserve the
+        # source path relative to its configured Working folder.
         dest = target_po_map.get(src.name)
-        
-        # STRICT CHECK: If it doesn't exist in the sync folder, report error and skip
-        if not dest:
-            result.errors.append((src, f"Strict sync failed: '{src.name}' does not exist anywhere in the sync folder."))
-            continue
-            
+        if dest is None:
+            try:
+                relative = src.relative_to(source_root)
+            except ValueError:
+                relative = Path(src.name)
+            dest = target_root / relative
+
         try:
             if dest.exists():
                 try:

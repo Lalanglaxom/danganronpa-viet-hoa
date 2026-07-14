@@ -28,6 +28,7 @@ from PyQt6.QtWidgets import (
     QGroupBox,
     QHBoxLayout,
     QHeaderView,
+    QInputDialog,
     QLabel,
     QLineEdit,
     QListWidget,
@@ -58,6 +59,14 @@ from .cancel import OperationCancelled
 from .config import load_config, save_config
 from .discovery import iter_po_files
 from .dr_options import DR_FILE_OPTIONS, DR_FILE_OPTION_KEYS, default_selected_options, option_name
+from .git_tools import (
+    DANGANVIETHOA_REPOSITORY_URL,
+    build_pull_command,
+    build_push_command,
+    create_commit_message_file,
+    launch_windows_cmd,
+    validate_repository_folder,
+)
 from .gemini_web import (
     DEFAULT_BATCH_RETRIES,
     DEFAULT_CHROME_USER_DATA_DIR,
@@ -720,7 +729,7 @@ class ToolkitGUI(QMainWindow):
             "Run Translation": "Run Gemini translation on selected PO files.",
             "Open Chrome": "Open Chrome with remote debugging for Gemini Web.",
             "Create Missing Copy.po Backups": "Create missing Copy.po backups without overwriting existing backups.",
-            "Sync Selected Options": "Copy selected Working folders to their configured Sync folders.",
+            "Sync Selected Options": "Copy selected Working folders to the shared Extracted destination.",
             "Sync by Filename": "Sync files by matching filename from source to target.",
             "Move Compile": "Copy compiled files from Repack to Script. WAD Repack is skipped.",
             "Move Repack": "Copy all Repack files to Script, excluding WAD Repack files.",
@@ -1003,10 +1012,10 @@ class ToolkitGUI(QMainWindow):
         root.setSpacing(8)
 
         note = QLabel(
-            "Set one Working folder and one Sync folder for each Danganronpa file group. "
+            "Set one Working folder for each Danganronpa file group. "
             "Tabs process the selected checkbox groups from their Working folders. "
             "Optional Extra paths on each tab are added only when their Extra toggle is on. "
-            "Backup/Sync copies Working → Sync; Sync folders are destinations only."
+            "Backup/Sync sends every selected Working folder to the shared Extracted destination."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
@@ -1019,24 +1028,39 @@ class ToolkitGUI(QMainWindow):
         content_layout.setSpacing(10)
         content_layout.setContentsMargins(6, 6, 6, 6)
 
-        option_box = QGroupBox("Danganronpa working + sync folders")
+        option_box = QGroupBox("Danganronpa working folders")
         option_form = QFormLayout(option_box)
         option_form.setSpacing(8)
         option_form.setContentsMargins(8, 8, 8, 8)
         for option in DR_FILE_OPTIONS:
             self._path_row(option_form, f"Working {option.name}", f"working_{option.key}_path")
-            self._path_row(option_form, f"Sync {option.name}", f"sync_{option.key}_path")
         content_layout.addWidget(option_box)
 
         general_box = QGroupBox("Other folders")
         general_form = QFormLayout(general_box)
         general_form.setSpacing(8)
         general_form.setContentsMargins(8, 8, 8, 8)
+        self._path_row(general_form, "Extracted", "extracted_path")
         self._path_row(general_form, "Repack", "repack_path")
         self._path_row(general_form, "WAD Repack", "wad_repack_path")
         self._path_row(general_form, "Script", "script_path")
         self._path_row(general_form, "Game Folder", "game_folder_path")
         content_layout.addWidget(general_box)
+
+        git_box = QGroupBox("Danganronpa Việt Hóa Git")
+        git_form = QFormLayout(git_box)
+        git_form.setSpacing(8)
+        git_form.setContentsMargins(8, 8, 8, 8)
+        self._git_path_row(git_form)
+        git_note = QLabel(
+            f"Repository: {DANGANVIETHOA_REPOSITORY_URL}\n"
+            "Git Pull and Git Push open Windows Command Prompt in this folder. "
+            "The command window remains open so you can inspect Git output."
+        )
+        git_note.setObjectName("muted")
+        git_note.setWordWrap(True)
+        git_form.addRow("", git_note)
+        content_layout.addWidget(git_box)
         content_layout.addStretch()
 
         scroll.setWidget(content)
@@ -1102,6 +1126,85 @@ class ToolkitGUI(QMainWindow):
             outer.addWidget(lab)
             outer.addWidget(wrap, 1)
             layout.addLayout(outer)
+        return edit
+
+    def _git_path_row(self, layout: QFormLayout) -> QLineEdit:
+        key = "danganviethoa_path"
+        label = "danganviethoa folder"
+        wrap = QWidget()
+        row = QHBoxLayout(wrap)
+        row.setContentsMargins(0, 0, 0, 0)
+        row.setSpacing(8)
+
+        edit = QLineEdit(str(self.config.get(key, "")))
+        edit.setPlaceholderText("Choose the cloned danganronpa-viet-hoa folder...")
+        browse = self._button("Browse", secondary=True)
+        open_folder = self._tool_button("", "Open this repository folder", QStyle.StandardPixmap.SP_DirOpenIcon)
+        pull_btn = self._button("Git Pull", secondary=True)
+        push_btn = self._button("Git Push")
+
+        def save_path() -> None:
+            self.config[key] = edit.text().strip()
+            save_config(self.config)
+
+        def browse_path() -> None:
+            path = QFileDialog.getExistingDirectory(self, label, edit.text() or str(Path.cwd()))
+            if path:
+                edit.setText(path)
+                save_path()
+
+        def repository_path() -> Path | None:
+            save_path()
+            try:
+                return validate_repository_folder(edit.text())
+            except ValueError as exc:
+                QMessageBox.warning(self, "Danganronpa Việt Hóa Git", str(exc))
+                return None
+
+        def open_configured_path() -> None:
+            repo = repository_path()
+            if repo is not None and not self._open_external(repo):
+                QMessageBox.warning(self, "Open folder", f"Could not open folder:\n{repo}")
+
+        def open_pull_cmd() -> None:
+            repo = repository_path()
+            if repo is None:
+                return
+            try:
+                launch_windows_cmd(repo, build_pull_command())
+            except (OSError, RuntimeError, ValueError) as exc:
+                QMessageBox.warning(self, "Git Pull", str(exc))
+
+        def open_push_cmd() -> None:
+            repo = repository_path()
+            if repo is None:
+                return
+            message, accepted = QInputDialog.getText(
+                self,
+                "Git Push",
+                "Commit message:",
+                QLineEdit.EchoMode.Normal,
+            )
+            if not accepted:
+                return
+            try:
+                message_file = create_commit_message_file(message)
+                launch_windows_cmd(repo, build_push_command(message_file))
+            except (OSError, RuntimeError, ValueError) as exc:
+                QMessageBox.warning(self, "Git Push", str(exc))
+
+        browse.clicked.connect(browse_path)
+        open_folder.clicked.connect(open_configured_path)
+        pull_btn.clicked.connect(open_pull_cmd)
+        push_btn.clicked.connect(open_push_cmd)
+        edit.editingFinished.connect(save_path)
+
+        row.addWidget(edit, 1)
+        row.addWidget(browse)
+        row.addWidget(open_folder)
+        row.addWidget(pull_btn)
+        row.addWidget(push_btn)
+        layout.addRow(label, wrap)
         return edit
 
     def _request_stop(self) -> None:
@@ -5655,7 +5758,7 @@ class ToolkitGUI(QMainWindow):
         source_edit = self._path_row(layout, "Manual sync source", "sync_source")
         target_edit = self._path_row(layout, "Manual sync target", "sync_target")
 
-        sync_hint = QLabel("Backup and restore use selected Settings > Working folders. Extra backup path is included only when its toggle is on. Selected option sync copies Working *name* → Sync *name*. Manual sync by filename still uses its explicit source/target pair.")
+        sync_hint = QLabel("Backup and restore use selected Settings > Working folders. Extra backup path is included only when its toggle is on. Selected option sync copies every selected Working folder to the shared Settings > Extracted destination. Manual sync by filename still uses its explicit source/target pair.")
         sync_hint.setObjectName("muted")
         sync_hint.setWordWrap(True)
         layout.addWidget(sync_hint)
@@ -5799,16 +5902,19 @@ class ToolkitGUI(QMainWindow):
             if not selected:
                 logwrite("No Danganronpa file groups selected.", "warn")
                 return
+            extracted_folder = str(self.config.get("extracted_path", "")).strip()
+            if not extracted_folder:
+                logwrite("Set Settings > Extracted first.", "warn")
+                return
             total_matched = total_copied = total_errors = 0
             for option_key in selected:
                 self._check_stop()
                 label = option_name(option_key)
                 working_folder = str(self.config.get(f"working_{option_key}_path", "")).strip()
-                sync_folder = str(self.config.get(f"sync_{option_key}_path", "")).strip()
                 filter_by_option = False
 
                 # Backward-compatible fallback for older configs. Dedicated Working
-                # paths are preferred because Sync folders are targets only.
+                # paths are preferred because Extracted is the shared destination.
                 if not working_folder:
                     legacy_root = str(self.config.get("game_folder_path", "")).strip()
                     if legacy_root:
@@ -5819,11 +5925,8 @@ class ToolkitGUI(QMainWindow):
                 if not working_folder:
                     logwrite(f"Skip {label}: set Settings > Working {label} first.", "warn")
                     continue
-                if not sync_folder:
-                    logwrite(f"Skip {label}: set Settings > Sync {label} first.", "warn")
-                    continue
                 try:
-                    result = sync_option_from_working_folder(working_folder, sync_folder, option_key, filter_by_option=filter_by_option)
+                    result = sync_option_from_working_folder(working_folder, extracted_folder, option_key, filter_by_option=filter_by_option)
                 except Exception as exc:
                     logwrite(f"ERR {label}: {exc}", "bad")
                     total_errors += 1
@@ -5833,7 +5936,7 @@ class ToolkitGUI(QMainWindow):
                 total_errors += len(result.errors)
                 tag = "good" if result.copied else "warn"
                 logwrite(
-                    f"{label}: source={result.source_root}, sync={result.target_root}, matched={result.matched}, copied={result.copied}, identical={result.skipped_identical}, self={result.skipped_self}, errors={len(result.errors)}",
+                    f"{label}: source={result.source_root}, extracted={result.target_root}, matched={result.matched}, copied={result.copied}, identical={result.skipped_identical}, self={result.skipped_self}, errors={len(result.errors)}",
                     tag,
                 )
                 for src, dest in result.copied_files[:100]:

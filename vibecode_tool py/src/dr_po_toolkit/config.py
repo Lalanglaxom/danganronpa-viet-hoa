@@ -31,12 +31,14 @@ DEFAULT_CONFIG = {
     "po_viewer_clt_color_mode": False,
     "translafixer_hidden_duplicate_keys": [],
     "game_folder_path": "",
+    "danganviethoa_path": "",
+    "extracted_path": "",
     "repack_path": "",
     "script_path": "",
     "wad_repack_path": "",
 }
 DEFAULT_CONFIG.update({f"working_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
-DEFAULT_CONFIG.update({f"sync_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
+LEGACY_SYNC_DESTINATION_KEYS = {f"sync_{key}_path" for key in DR_FILE_OPTION_KEYS}
 DEFAULT_CONFIG.update({
     f"{tab_key}_include_extra_path": False
     for tab_key in (
@@ -66,10 +68,13 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
         return dict(DEFAULT_CONFIG)
     merged = dict(DEFAULT_CONFIG)
     merged.update(data)
+    for key in LEGACY_SYNC_DESTINATION_KEYS:
+        merged.pop(key, None)
     return merged
 
 
 def save_config(config: dict[str, Any], path: str | Path | None = None) -> None:
     p = Path(path) if path else default_config_path()
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
+    payload = {key: value for key, value in config.items() if key not in LEGACY_SYNC_DESTINATION_KEYS}
+    p.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

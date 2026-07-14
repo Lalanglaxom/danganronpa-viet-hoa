@@ -873,3 +873,118 @@ def test_validation_reports_replace_old_files_without_accumulating():
         assert "second report" in html.read_text(encoding="utf-8")
         assert list(root.glob("validation*.log")) == [txt]
         assert list(root.glob("validation*.html")) == [html]
+
+
+def test_config_uses_shared_extracted_destination_and_drops_legacy_sync_paths():
+    import json
+    import tempfile
+
+    from dr_po_toolkit.config import DEFAULT_CONFIG, load_config, save_config
+    from dr_po_toolkit.dr_options import DR_FILE_OPTION_KEYS
+
+    assert "extracted_path" in DEFAULT_CONFIG
+    assert all(f"sync_{key}_path" not in DEFAULT_CONFIG for key in DR_FILE_OPTION_KEYS)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        config_path = Path(tmp) / "config.json"
+        config_path.write_text(
+            json.dumps(
+                {
+                    "extracted_path": "D:/project/extracted",
+                    "working_e01_path": "D:/project/working/e01",
+                    "sync_e01_path": "D:/old/sync/e01",
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        loaded = load_config(config_path)
+        assert loaded["extracted_path"] == "D:/project/extracted"
+        assert loaded["working_e01_path"] == "D:/project/working/e01"
+        assert "sync_e01_path" not in loaded
+
+        loaded["sync_e02_path"] = "D:/old/sync/e02"
+        save_config(loaded, config_path)
+        saved = json.loads(config_path.read_text(encoding="utf-8"))
+        assert "sync_e01_path" not in saved
+        assert "sync_e02_path" not in saved
+        assert saved["extracted_path"] == "D:/project/extracted"
+
+def test_sync_option_creates_duplicate_filenames_at_their_relative_extracted_paths():
+    import tempfile
+
+    from dr_po_toolkit.backup import sync_option_from_working_folder
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        working = root / "working"
+        extracted = root / "extracted"
+        first = working / "one" / "scene.po"
+        second = working / "two" / "scene.po"
+        first.parent.mkdir(parents=True)
+        second.parent.mkdir(parents=True)
+        first.write_text('msgid "One"\nmsgstr "Một"\n', encoding="utf-8")
+        second.write_text('msgid "Two"\nmsgstr "Hai"\n', encoding="utf-8")
+
+        result = sync_option_from_working_folder(working, extracted, "e01", filter_by_option=False)
+
+        assert result.matched == 2
+        assert result.copied == 2
+        assert (extracted / "one" / "scene.po").read_text(encoding="utf-8") == first.read_text(encoding="utf-8")
+        assert (extracted / "two" / "scene.po").read_text(encoding="utf-8") == second.read_text(encoding="utf-8")
+
+
+
+def test_config_has_danganviethoa_repository_folder_path():
+    from dr_po_toolkit.config import DEFAULT_CONFIG
+
+    assert "danganviethoa_path" in DEFAULT_CONFIG
+    assert DEFAULT_CONFIG["danganviethoa_path"] == ""
+
+
+def test_git_commands_include_status_remote_and_expected_repository():
+    import tempfile
+
+    from dr_po_toolkit.git_tools import (
+        DANGANVIETHOA_REPOSITORY_URL,
+        build_pull_command,
+        build_push_command,
+        create_commit_message_file,
+    )
+
+    assert DANGANVIETHOA_REPOSITORY_URL == "https://github.com/Lalanglaxom/danganronpa-viet-hoa.git"
+    pull = build_pull_command()
+    assert "git remote -v" in pull
+    assert "git status --short --branch" in pull
+    assert pull.endswith("git pull")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        message_file = create_commit_message_file("Update Vietnamese translation")
+        try:
+            assert message_file.read_text(encoding="utf-8") == "Update Vietnamese translation\n"
+            push = build_push_command(message_file)
+            assert "git add -A" in push
+            assert "git diff --cached --stat" in push
+            assert "git commit -F" in push
+            assert "git push" in push
+            assert str(message_file) in push
+        finally:
+            message_file.unlink(missing_ok=True)
+
+
+def test_git_repository_validation_requires_dot_git_folder():
+    import tempfile
+
+    from dr_po_toolkit.git_tools import validate_repository_folder
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        try:
+            validate_repository_folder(root)
+        except ValueError as exc:
+            assert "not a Git repository" in str(exc)
+        else:
+            raise AssertionError("Expected non-repository folder to be rejected")
+
+        (root / ".git").mkdir()
+        assert validate_repository_folder(root) == root

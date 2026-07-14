@@ -31,6 +31,8 @@ pip-wheel-metadata/
 htmlcov/
 .tox/
 .nox/
+__pycache__/
+*.pyc
 
 # Logs
 *.log

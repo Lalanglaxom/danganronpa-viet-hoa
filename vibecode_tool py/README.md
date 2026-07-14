@@ -60,6 +60,8 @@ Large folders are faster in this build because scanners now prune common cache/v
 
 `Sync by Filename` now refuses nested source/target folders, skips self-copy, skips duplicate source filenames, and avoids rewriting target files that are already identical. This reduces disk writes a lot when syncing the same folder repeatedly.
 
+In GUI Settings, each Danganronpa file group has only a Working folder. Set one shared `Extracted` folder under Other folders; `Sync Selected Options` sends every selected Working folder there by default. Existing destination files are matched by filename; new files keep their relative Working-folder path under `Extracted`.
+
 ## Translafixer GUI tab
 
 Use `Translafixer` when you have known-good `.po` translations and another folder needs to be fixed.
@@ -308,3 +310,9 @@ python run_cli.py restore-from-copy "folder1" "folder2" --dry-run
 ## Windows launch notes
 
 If `run_toolkit.vbs` does not open the app after the PyQt UI update, PyQt6 is usually missing. Run `install_requirements.bat`, or run `run_toolkit_debug.bat` to see the error in a console. Startup errors are also written to `toolkit_launch_error.log`.
+
+## Danganronpa Việt Hóa Git controls
+
+In **Settings**, select the cloned `danganronpa-viet-hoa` repository under **danganviethoa folder**. **Git Pull** opens Command Prompt in that folder and runs remote/status checks followed by `git pull`. **Git Push** asks for a commit message, then opens Command Prompt and runs `git add -A`, shows the staged file summary, commits, and pushes. The configured repository is:
+
+`https://github.com/Lalanglaxom/danganronpa-viet-hoa.git`
