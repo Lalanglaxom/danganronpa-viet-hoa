@@ -950,27 +950,51 @@ def test_git_commands_include_status_remote_and_expected_repository():
         build_pull_command,
         build_push_command,
         create_commit_message_file,
+        create_push_script,
     )
 
     assert DANGANVIETHOA_REPOSITORY_URL == "https://github.com/Lalanglaxom/danganronpa-viet-hoa.git"
     pull = build_pull_command()
     assert "git remote -v" in pull
     assert "git status --short --branch" in pull
-    assert pull.endswith("git pull")
+    assert "git fetch --prune origin" in pull
+    assert pull.endswith("git pull --rebase --autostash")
 
-    with tempfile.TemporaryDirectory() as tmp:
+    with tempfile.TemporaryDirectory():
         message_file = create_commit_message_file("Update Vietnamese translation")
+        push_script = None
         try:
             assert message_file.read_text(encoding="utf-8") == "Update Vietnamese translation\n"
-            push = build_push_command(message_file)
-            assert "git add -A" in push
-            assert "git diff --cached --stat" in push
-            assert "git commit -F" in push
-            assert "git push" in push
-            assert str(message_file) in push
+            push_script = create_push_script(message_file)
+            script = push_script.read_text(encoding="utf-8")
+            assert "git fetch --prune origin" in script
+            assert "git rev-list --left-right --count" in script
+            assert "Remote commits not pulled" in script
+            assert "PUSH BLOCKED" in script
+            assert "git ls-files -ci --exclude-standard" in script
+            assert "git add -A" in script
+            assert "git diff --cached --stat" in script
+            assert "git commit -F" in script
+            assert "git push" in script
+            assert str(message_file.resolve()) in script
+
+            push = build_push_command(push_script)
+            assert push.startswith("call ")
+            assert str(push_script.resolve()) in push
         finally:
             message_file.unlink(missing_ok=True)
+            if push_script is not None:
+                push_script.unlink(missing_ok=True)
 
+
+def test_project_gitignore_excludes_python_generated_files():
+    project_root = Path(__file__).resolve().parents[1]
+    ignored = (project_root / ".gitignore").read_text(encoding="utf-8")
+
+    assert "__pycache__/" in ignored
+    assert "*.py[cod]" in ignored
+    assert ".pytest_cache/" in ignored
+    assert ".ruff_cache/" in ignored
 
 def test_git_repository_validation_requires_dot_git_folder():
     import tempfile

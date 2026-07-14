@@ -1,3 +1,0 @@
-[console_scripts]
-dr-po = dr_po_toolkit.cli:main
-dr-po-gui = dr_po_toolkit.gui:main

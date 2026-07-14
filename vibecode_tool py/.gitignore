@@ -1,7 +1,17 @@
-# Python cache
+# Python bytecode and caches (at any folder depth)
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
 
 # Virtual environments
 venv/
@@ -11,7 +21,7 @@ ENV/
 **/venv/
 **/.venv/
 
-# Build / packaging
+# Build and packaging
 build/
 dist/
 *.egg-info/
@@ -22,32 +32,23 @@ pip-wheel-metadata/
 # PyInstaller
 *.manifest
 *.pyz
-# keep .spec if you use it to build the app
-# *.spec
-
-# Test / coverage
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.nox/
-__pycache__/
-*.pyc
+# Keep .spec because this project uses it.
 
 # Logs
 *.log
 toolkit_launch_error.log
 
-# Local env / secrets
+# Local environment and secrets
 .env
 .env.*
 *.local
 
-# IDE / OS junk
+# IDE and operating-system files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Generated archives
 *.zip
@@ -56,5 +57,7 @@ Thumbs.db
 
 # Temporary files
 *.tmp
+*.temp
 *.bak
 *.swp
+*~

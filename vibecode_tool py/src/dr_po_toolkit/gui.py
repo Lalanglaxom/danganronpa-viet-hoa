@@ -64,6 +64,7 @@ from .git_tools import (
     build_pull_command,
     build_push_command,
     create_commit_message_file,
+    create_push_script,
     launch_windows_cmd,
     validate_repository_folder,
 )
@@ -1054,8 +1055,9 @@ class ToolkitGUI(QMainWindow):
         self._git_path_row(git_form)
         git_note = QLabel(
             f"Repository: {DANGANVIETHOA_REPOSITORY_URL}\n"
-            "Git Pull and Git Push open Windows Command Prompt in this folder. "
-            "The command window remains open so you can inspect Git output."
+            "Git Pull preserves local edits with rebase + autostash. "
+            "Git Push fetches origin first and is blocked when remote commits have not been pulled, "
+            "or when ignored generated files are still tracked. The CMD window stays open for inspection."
         )
         git_note.setObjectName("muted")
         git_note.setWordWrap(True)
@@ -1187,10 +1189,17 @@ class ToolkitGUI(QMainWindow):
             )
             if not accepted:
                 return
+            message_file: Path | None = None
+            push_script: Path | None = None
             try:
                 message_file = create_commit_message_file(message)
-                launch_windows_cmd(repo, build_push_command(message_file))
+                push_script = create_push_script(message_file)
+                launch_windows_cmd(repo, build_push_command(push_script))
             except (OSError, RuntimeError, ValueError) as exc:
+                if message_file is not None:
+                    message_file.unlink(missing_ok=True)
+                if push_script is not None:
+                    push_script.unlink(missing_ok=True)
                 QMessageBox.warning(self, "Git Push", str(exc))
 
         browse.clicked.connect(browse_path)

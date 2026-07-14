@@ -313,6 +313,34 @@ If `run_toolkit.vbs` does not open the app after the PyQt UI update, PyQt6 is us
 
 ## Danganronpa Việt Hóa Git controls
 
-In **Settings**, select the cloned `danganronpa-viet-hoa` repository under **danganviethoa folder**. **Git Pull** opens Command Prompt in that folder and runs remote/status checks followed by `git pull`. **Git Push** asks for a commit message, then opens Command Prompt and runs `git add -A`, shows the staged file summary, commits, and pushes. The configured repository is:
+In **Settings**, select the cloned `danganronpa-viet-hoa` repository under **danganviethoa folder**. **Git Pull** opens Command Prompt in that folder and runs `git fetch` followed by `git pull --rebase --autostash`, which temporarily protects uncommitted edits and reapplies them after updating.
+
+**Git Push** asks for a commit message, fetches `origin`, and compares the current branch with its upstream before staging anything. Push is blocked when remote commits have not been pulled, when the branch has no upstream, or when ignored/generated files such as `__pycache__` are still tracked. Local files are left unchanged when blocked.
+
+The configured repository is:
 
 `https://github.com/Lalanglaxom/danganronpa-viet-hoa.git`
+
+### Keep local work while updating from GitHub
+
+Preferred flow:
+
+```cmd
+git status
+git add -A
+git commit -m "Save local work"
+git pull --rebase
+# Resolve conflicts if Git reports any, then:
+git add <resolved-files>
+git rebase --continue
+git push
+```
+
+For uncommitted edits, the app's **Git Pull** button uses `--autostash`. For the first cleanup after adding `.gitignore`, stop tracking already committed cache files without deleting local copies:
+
+```cmd
+git rm -r --cached .
+git add .
+git commit -m "Stop tracking ignored files"
+git push
+```
