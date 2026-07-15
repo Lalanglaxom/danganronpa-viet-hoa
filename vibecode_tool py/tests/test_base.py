@@ -976,6 +976,10 @@ def test_git_commands_include_status_remote_and_expected_repository():
             assert "git diff --cached --stat" in script
             assert "git commit -F" in script
             assert "git push" in script
+            assert 'set "FINAL_EXIT=0"' in script
+            assert 'set "FINAL_EXIT=2"' in script
+            assert 'set "FINAL_EXIT=!GIT_EXIT!"' in script
+            assert "endlocal & exit /b %FINAL_EXIT%" in script
             assert str(message_file.resolve()) in script
 
             push = build_push_command(push_script)
@@ -1012,3 +1016,35 @@ def test_git_repository_validation_requires_dot_git_folder():
 
         (root / ".git").mkdir()
         assert validate_repository_folder(root) == root
+
+
+def test_git_launcher_keeps_console_open_and_reports_exit_code(monkeypatch):
+    import subprocess
+
+    from dr_po_toolkit import git_tools
+
+    captured = {}
+
+    class DummyProcess:
+        pass
+
+    def fake_popen(args, **kwargs):
+        captured["args"] = args
+        captured["kwargs"] = kwargs
+        return DummyProcess()
+
+    repo = Path("/tmp/fake-git-repository")
+    monkeypatch.setattr(git_tools, "validate_repository_folder", lambda _folder: repo)
+    monkeypatch.setattr(git_tools.os, "name", "nt")
+    monkeypatch.setattr(subprocess, "Popen", fake_popen)
+    monkeypatch.setattr(subprocess, "CREATE_NEW_CONSOLE", 16, raising=False)
+
+    git_tools.launch_windows_cmd("ignored", "git status")
+
+    assert captured["args"][:4] == ["cmd.exe", "/D", "/V:ON", "/K"]
+    persistent = captured["args"][4]
+    assert persistent.startswith("git status")
+    assert "DR_GIT_EXIT=!ERRORLEVEL!" in persistent
+    assert "will not close automatically" in persistent
+    assert "pause >nul" in persistent
+    assert captured["kwargs"]["creationflags"] == 16

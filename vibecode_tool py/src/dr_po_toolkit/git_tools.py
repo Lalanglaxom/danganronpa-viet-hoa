@@ -61,6 +61,7 @@ def create_push_script(commit_message_file: str | Path) -> Path:
 
     script = f'''@echo off
 setlocal EnableExtensions EnableDelayedExpansion
+set "FINAL_EXIT=0"
 title Danganronpa Viet Hoa - Safe Git Push
 
 echo === Remote ===
@@ -138,6 +139,7 @@ echo Push completed successfully.
 goto :done
 
 :blocked
+set "FINAL_EXIT=2"
 del /Q {quoted_message} >nul 2>&1
 echo.
 echo Your local files and edits were not deleted or overwritten.
@@ -145,6 +147,7 @@ goto :done
 
 :failed
 set "GIT_EXIT=!ERRORLEVEL!"
+set "FINAL_EXIT=!GIT_EXIT!"
 del /Q {quoted_message} >nul 2>&1
 echo.
 echo Git stopped with error code !GIT_EXIT!. Review the output above.
@@ -153,7 +156,7 @@ echo Git stopped with error code !GIT_EXIT!. Review the output above.
 echo.
 echo This window will stay open for inspection.
 del /Q "%~f0" >nul 2>&1
-endlocal
+endlocal & exit /b %FINAL_EXIT%
 '''
 
     with tempfile.NamedTemporaryFile(
@@ -175,14 +178,29 @@ def build_push_command(push_script_file: str | Path) -> str:
 
 
 def launch_windows_cmd(repository_folder: str | Path, command: str) -> None:
-    """Open a new Windows Command Prompt in the repository and run a command."""
+    """Open a persistent Windows Command Prompt and keep all Git output visible."""
     repo = validate_repository_folder(repository_folder)
     if os.name != "nt":
         raise RuntimeError("Git Pull/Push CMD buttons are available on Windows only.")
 
+    # /K keeps the prompt open. The explicit pause also protects against terminal
+    # profiles that would otherwise close a completed child command immediately.
+    # Delayed expansion is required so ERRORLEVEL is read after Git finishes.
+    persistent_command = (
+        f"{command}"
+        ' & set "DR_GIT_EXIT=!ERRORLEVEL!"'
+        " & echo."
+        ' & if not "!DR_GIT_EXIT!"=="0" ('
+        "echo Git command finished with error code !DR_GIT_EXIT!."
+        " ) else (echo Git command finished successfully.)"
+        " & echo Review the output above. This window will not close automatically."
+        " & echo Press any key to continue to the command prompt..."
+        " & pause >nul"
+    )
+
     creation_flags = getattr(subprocess, "CREATE_NEW_CONSOLE", 0)
     subprocess.Popen(
-        ["cmd.exe", "/K", command],
+        ["cmd.exe", "/D", "/V:ON", "/K", persistent_command],
         cwd=str(repo),
         creationflags=creation_flags,
     )
