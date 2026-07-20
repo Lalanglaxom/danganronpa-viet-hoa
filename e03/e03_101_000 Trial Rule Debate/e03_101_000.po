@@ -19,7 +19,7 @@ msgid ""
 "Let's begin with a basic explanation of the class\n"
 "trial! So, your votes will determine the results."
 msgstr ""
-"Hãy bắt đầu với phần giải thích cơ bản về lớp xét xử! \n"
+"Hãy bắt đầu với phần giải thích cơ bản về lớp xét xử!\n"
 "Thì, lá phiếu của các em sẽ quyết định kết quả."
 
 #. 正しいクロを指摘出来れば、クロだけがおしおき。
@@ -29,8 +29,8 @@ msgid ""
 "If you can figure out \"whodunnit\" then only they will\n"
 "receive punishment. But if you pick the wrong one..."
 msgstr ""
-"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới bị\n"
-"nhận hình phạt. Nhưng nếu các em chọn nhầm người..."
+"Nếu các em chỉ ra đúng \"kẻ thủ ác\", thì chỉ kẻ đó mới\n"
+"bị nhận hình phạt. Nhưng nếu các em chọn nhầm người..."
 
 #. クロ以外の全員がおしおきされ、
 #. みんなを欺いたクロだけが晴れて卒業となりまーす！
@@ -79,8 +79,8 @@ msgid ""
 "I didn't! Someone knocked me out! I was asleep the\n"
 "whole time! I don't know anything about it!"
 msgstr ""
-"Không phải tớ mà! Tớ bị ai đó đánh thuốc mê suốt bấy lâu nay\n"
-"thôi...! Tớ chả biết gi cả!"
+"Không phải tớ mà! Tớ bị ai đó đánh thuốc mê suốt bấy\n"
+"lâu nay thôi...! Tớ chả biết gi cả!"
 
 #. 黙れ！　この人殺しめッ！！
 msgctxt "0010 | TOUKO FUKAWA"
@@ -95,7 +95,9 @@ msgstr "Cô đang gọi ai là kẻ sát nhân hả!?"
 #. 葉隠君、残念ですが…こんな証拠もあるのですよ。
 msgctxt "0012 | CELES"
 msgid "I am sorry to say, Hiro, but we do have evidence..."
-msgstr "Thật đáng tiếc, Hiro... nhưng tụi tớ có bằng chứng đấy."
+msgstr ""
+"Thật đáng tiếc, Hiro... nhưng tụi tớ có bằng chứng\n"
+"đấy."
 
 #. あのコスプレ衣装の<CLT 3>設計図<CLT>です。
 #. それと…
@@ -108,8 +110,8 @@ msgstr "Đó là <CLT 3>bản thiết kế<CLT> của bộ đồ hóa trang đó
 msgctxt "0014 | CELES"
 msgid "<CLT 3>Parts<CLT> we assume were used to build it..."
 msgstr ""
-"Hàng loạt <CLT 3>linh kiện<CLT> được cho là đã dùng để chế tạo ra bộ đồ\n"
-"kia..."
+"Hàng loạt <CLT 3>linh kiện<CLT> được cho là đã dùng để chế tạo ra\n"
+"bộ đồ kia..."
 
 #. すべて、あなたの<CLT 3>部屋<CLT>から見つかった物です。
 #. これらが動かぬ証拠ですわ。
@@ -139,7 +141,9 @@ msgstr "Đ-Đã bảo là... tớ... tớ..."
 #. 知らん知らん知らん知らん知らん知らん知らーんッ！！
 msgctxt "0018 | YASUHIRO HAGAKURE"
 msgid "I don't know, I don't know, I don't KNOW!"
-msgstr "KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT!"
+msgstr ""
+"KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG BIẾT, KHÔNG\n"
+"BIẾT!"
 
 #. <CLT 4>本当に葉隠クンが犯人なのか？　それとも…
 #. <CLT>

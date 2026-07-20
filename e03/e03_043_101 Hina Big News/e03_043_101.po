@@ -41,7 +41,9 @@ msgstr "C-Cậu ấy có sao không? Cậu ấy đang ở đâu thế!?"
 #. …って言うか、大変なのはそれだけじゃなくって…
 msgctxt "0006 | AOI ASAHINA"
 msgid "Wait, I wasn't done. There's more big news!"
-msgstr "Khoan đã, tui chưa nói hết. Còn một tin động trời nữa nè!"
+msgstr ""
+"Khoan đã, tui chưa nói hết. Còn một tin động trời \n"
+"nữa nè!"
 
 #. ジャスティスロボまで参上しちゃったんだって！！
 msgctxt "0007 | AOI ASAHINA"
@@ -65,8 +67,8 @@ msgid ""
 "Anyway! As soon as you can, head to the pool, on the\n"
 "2nd floor!"
 msgstr ""
-"Tóm lại là ông mau lên phòng bơi ở tầng 2 đi! Khẩn cấp lắm luôn\n"
-"đó, đi lẹ giùm tui nha!"
+"Tóm lại là ông mau lên hồ bơi ở tầng 2 đi! Khẩn cấp\n"
+"lắm luôn đó, đi lẹ giùm tui nha!"
 
 #. <CLT 4>まさか、このタイミングで、
 #. 葉隠クンと霧切さんがいっぺんに見つかるなんて…
@@ -77,15 +79,15 @@ msgid ""
 "time...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không ngờ ngay vào lúc này, cả Hiro lẫn Kyoko đều cùng lúc xuất\n"
-"hiện...\n"
+"<CLT 4>Không ngờ ngay vào lúc này, cả Hiro lẫn Kyoko đều cùng\n"
+"lúc xuất hiện...\n"
 "<CLT>"
 
 #. とにかく急ごう！
 #. ２階のプールだったよな！
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "Anyway, I have to head to the pool!"
-msgstr "Dù sao thì mình cũng phải mau đến phòng bơi thôi!"
+msgstr "Dù sao thì mình cũng phải mau đến hồ bơi thôi!"
 
 #. <CLT 4>ボクは２階のプールへと走った。
 #. <CLT>
@@ -94,5 +96,6 @@ msgid ""
 "<CLT 4>I ran off to the 2nd floor as fast as I could.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình tức tốc chạy nhanh hết sức có thể lên phòng bơi ở tầng 2.\n"
+"<CLT 4>Mình tức tốc chạy nhanh hết sức có thể lên hồ bơi ở\n"
+"tầng 2.\n"
 "<CLT>"

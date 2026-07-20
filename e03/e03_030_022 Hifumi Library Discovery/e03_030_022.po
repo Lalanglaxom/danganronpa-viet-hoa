@@ -34,7 +34,7 @@ msgid ""
 "<CLT 4>...we found Hifumi, seriously injured.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...chúng mình tìm thấy Hifumi, cậu ấy bị thương rất nặng.\n"
+"<CLT 4>...chúng mình tìm thấy Hifumi, bị thương rất nặng.\n"
 "<CLT>"
 
 #. だ、大丈夫！？
@@ -76,8 +76,8 @@ msgid ""
 "<CLT 3>Robo Justice<CLT>. Er, that's what I decided to call him,\n"
 "just now..."
 msgstr ""
-"<CLT 3>Robo Công Lý<CLT>. Ờ, đó là cái tên tôi vừa mới đặt cho hắn, ngay lúc\n"
-"này luôn..."
+"<CLT 3>Robo Công Lý<CLT>. Ờ, đó là cái tên tôi vừa mới đặt cho\n"
+"hắn, ngay lúc này luôn..."
 
 #. 何を…言っている…？
 msgctxt "0011 | BYAKUYA TOGAMI"
@@ -96,13 +96,13 @@ msgid ""
 "This \"Robo Justice\" you are referring to is...this, is\n"
 "it not?"
 msgstr ""
-"Cái tên \"Người Máy Công Lý\" mà cậu đang nhắc tới là... cái này,\n"
-"có đúng không?"
+"Cái tên \"Người Máy Công Lý\" mà cậu đang nhắc tới là...\n"
+"cái này, có đúng không?"
 
 #. な、なんだ…このトンデモ物体は…！？
 msgctxt "0014 | BYAKUYA TOGAMI"
 msgid "Wh-What the hell am I looking at...?"
-msgstr "C-Cái thứ quái quỷ gì đang hiện ra trước mắt tôi thế này!?"
+msgstr "C-Cái quái quỷ gì đang hiện ra trước mắt tôi thế này!?"
 
 #. これが、セレスさんと山田クンを襲った犯人…
 msgctxt "0015 | MAKOTO NAEGI"
@@ -117,7 +117,7 @@ msgstr "Có đúng không, Hifumi?"
 #. 間違いありません、こいつです…
 msgctxt "0017 | HIFUMI YAMADA"
 msgid "Yeah...that's him, I'm sure of it..."
-msgstr "Vâng... chính là hắn, tôi chắc chắn luôn..."
+msgstr "Chuẩn... chính là hắn, tôi chắc chắn luôn..."
 
 #. ジャスティスロボですッ！！
 msgctxt "0018 | HIFUMI YAMADA"
@@ -161,8 +161,8 @@ msgid ""
 "I'm seriously happy Hifumi's still alive, but...Robo\n"
 "Justice?"
 msgstr ""
-"Tui thực sự rất vui vì Hifumi vẫn còn sống, nhưng... Người Máy\n"
-"Công Lý sao?"
+"Tui thực sự rất vui vì Hifumi vẫn còn sống, nhưng...\n"
+"Người Máy Công Lý sao?"
 
 #. おいっ、そこケガしてんじゃんッ！
 #. ゲラゲラゲラ…！
@@ -212,8 +212,8 @@ msgid ""
 "must have caught it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu có chuyện gì xảy ra ở đây, hẳn là camera giám sát đã ghi lại\n"
-"được.\n"
+"<CLT 4>Nếu có chuyện gì xảy ra ở đây, hẳn là camera giám sát\n"
+"đã ghi lại được.\n"
 "<CLT>"
 
 #. <CLT 4>…もちろん、教えてくれないんだろうな。
@@ -223,8 +223,8 @@ msgid ""
 "<CLT 4>Not that the mastermind would tell us if it did...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mặc dù kẻ chủ mưu chắc chắn sẽ không đời nào nói cho chúng ta\n"
-"biết...\n"
+"<CLT 4>Mặc dù kẻ chủ mưu chắc chắn sẽ không đời nào nói cho\n"
+"chúng ta biết...\n"
 "<CLT>"
 
 #. <CLT 4>山田クンが心配だ…
@@ -236,8 +236,8 @@ msgid ""
 "for more details...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình thực sự lo cho Hifumi. Mình nên hỏi cậu ấy thêm chi tiết\n"
-"xem sao...\n"
+"<CLT 4>Mình thực sự lo cho Hifumi. Mình nên hỏi cậu ấy thêm\n"
+"chi tiết xem sao...\n"
 "<CLT>"
 
 #. <CLT 4>今は本棚なんかに
@@ -248,7 +248,8 @@ msgid ""
 "<CLT 4>Now's no time to be distracted by a bookshelf...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này\n"
+"đâu...\n"
 "<CLT>"
 
 #. <CLT 4>今は本棚なんかに
@@ -259,7 +260,8 @@ msgid ""
 "<CLT 4>Now's no time to be distracted by a bookshelf...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này\n"
+"đâu...\n"
 "<CLT>"
 
 #. <CLT 4>今は本棚なんかに
@@ -270,7 +272,8 @@ msgid ""
 "<CLT 4>Now's no time to be distracted by a bookshelf...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này đâu...\n"
+"<CLT 4>Giờ không phải lúc để bận tâm đến mấy cái kệ sách này\n"
+"đâu...\n"
 "<CLT>"
 
 #. <CLT 4>机の上にはみっちりと埃が積もってる…
@@ -292,8 +295,8 @@ msgid ""
 "pretty long time.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như thư viện này đã bị bỏ mặc trong một khoảng thời gian\n"
-"khá dài rồi.\n"
+"<CLT 4>Có vẻ như thư viện này đã bị bỏ mặc trong một khoảng\n"
+"thời gian khá dài rồi.\n"
 "<CLT>"
 
 #. <CLT 4>娯楽室でセレスさんを襲ったのと同じような木槌だ…
@@ -305,8 +308,8 @@ msgid ""
 "with in the rec room. But this one is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công Celeste trong\n"
-"phòng giải trí. Nhưng cây này thì...\n"
+"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công\n"
+"Celeste trong phòng giải trí. Nhưng cây này thì...\n"
 "<CLT>"
 
 #. ジャスティスハンマー２号…？
@@ -323,8 +326,8 @@ msgid ""
 "bigger than the first one!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn cây đầu tiên một\n"
-"chút!\n"
+"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn cây đầu\n"
+"tiên một chút!\n"
 "<CLT>"
 
 #. そのハンマーで襲われたんです。
@@ -334,13 +337,15 @@ msgid ""
 "He attacked me with that hammer. He bonked me right on\n"
 "the head with it..."
 msgstr ""
-"Hắn đã tấn công tôi bằng cây búa đó. Hắn nện thẳng vào đầu tôi\n"
-"luôn..."
+"Hắn đã tấn công tôi bằng cây búa đó. Hắn nện thẳng vào\n"
+"đầu tôi luôn..."
 
 #. こんなんで殴られて…よく平気だったね。
 msgctxt "0043 | AOI ASAHINA"
 msgid "A hammer that big, I'm surprised you're still okay..."
-msgstr "Bị đập bởi cây búa to thế kia mà ông vẫn ổn thì lạ thật đấy..."
+msgstr ""
+"Bị đập bởi cây búa to thế kia mà ông vẫn ổn thì lạ\n"
+"thật đấy..."
 
 #. 平気じゃないですよ。血が出てますから…
 msgctxt "0044 | HIFUMI YAMADA"
@@ -353,8 +358,8 @@ msgid ""
 "Protein helps heal wounds, you know. Would you like\n"
 "some?"
 msgstr ""
-"Protein giúp chữa lành vết thương đấy. Cậu có muốn dùng một ít\n"
-"không?"
+"Protein giúp chữa lành vết thương đấy. Cậu có muốn\n"
+"dùng một ít không?"
 
 #. …そんな話は聞いた事ないですわ。
 #. あなただけじゃありません？
@@ -363,8 +368,8 @@ msgid ""
 "...I have never heard such a thing. Are you sure it\n"
 "isn't just you?"
 msgstr ""
-"...Tớ chưa từng nghe thấy chuyện đó bao giờ. Có chắc là không\n"
-"phải chỉ mình cậu thấy thế không?"
+"...Tớ chưa từng nghe thấy chuyện đó bao giờ. Có chắc\n"
+"là không phải chỉ mình cậu thấy thế không?"
 
 #. <CLT 4>娯楽室でセレスさんを襲ったのと同じような木槌だ。
 #. しかも、この木槌…
@@ -375,8 +380,8 @@ msgid ""
 "with in the rec room. But this one is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công Celeste trong\n"
-"phòng giải trí. Nhưng cây này thì...\n"
+"<CLT 4>Đó là một cây búa, giống hệt cây búa đã tấn công\n"
+"Celeste trong phòng giải trí. Nhưng cây này thì...\n"
 "<CLT>"
 
 #. <CLT 4>ジャスティスハンマー２号…？
@@ -398,8 +403,8 @@ msgid ""
 "bigger than the first one!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn cây đầu tiên một\n"
-"chút!\n"
+"<CLT 4>Và trên hết là... cây búa này thực sự lớn hơn cây đầu\n"
+"tiên một chút!\n"
 "<CLT>"
 
 #. <CLT 4>この手紙によれば…
@@ -421,8 +426,8 @@ msgid ""
 "school.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Học viện Đỉnh Hy Vọng đã ngừng hoạt động với tư cách là một ngôi\n"
-"trường.\n"
+"<CLT 4>Học viện Đỉnh Hy Vọng đã ngừng hoạt động với tư cách\n"
+"là một ngôi trường.\n"
 "<CLT>"
 
 #. <CLT 4>しかも最近って訳じゃなくて、
@@ -447,8 +452,8 @@ msgid ""
 "in order to start this \"killing game\"...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kẻ chủ mưu có lẽ đã chiếm lấy ngôi trường bỏ hoang để bắt\n"
-"đầu \"trò chơi sinh tử\" này...\n"
+"<CLT 4>Kẻ chủ mưu có lẽ đã chiếm lấy ngôi trường bỏ hoang để\n"
+"bắt đầu \"trò chơi sinh tử\" này...\n"
 "<CLT>"
 
 #. <CLT 4>学園内にボク達以外の生徒がいない理由は、
@@ -473,8 +478,8 @@ msgid ""
 "the school to close down in the first place...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và rồi còn có cả những \"vấn đề nghiêm trọng\" đã buộc ngôi trường\n"
-"phải đóng cửa ngay từ đầu nữa...\n"
+"<CLT 4>Và rồi còn có cả những \"vấn đề nghiêm trọng\" đã buộc\n"
+"ngôi trường phải đóng cửa ngay từ đầu nữa...\n"
 "<CLT>"
 
 #. <CLT 4>それって、ボクらの身に降りかかっているこの状況と、
@@ -516,8 +521,8 @@ msgid ""
 "<CLT 4>...will that be enough to get us out of here?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...liệu bấy nhiêu đó có đủ để giúp chúng ta thoát khỏi nơi này\n"
-"không?\n"
+"<CLT 4>...liệu bấy nhiêu đó có đủ để giúp chúng ta thoát khỏi\n"
+"nơi này không?\n"
 "<CLT>"
 
 #. <CLT 4>それとも……
@@ -539,8 +544,8 @@ msgid ""
 "for more details...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình thực sự lo cho Hifumi. Mình nên hỏi cậu ấy thêm chi tiết\n"
-"xem sao...\n"
+"<CLT 4>Mình thực sự lo cho Hifumi. Mình nên hỏi cậu ấy thêm\n"
+"chi tiết xem sao...\n"
 "<CLT>"
 
 #. アーッハッハッハッハ！！
@@ -551,7 +556,7 @@ msgstr "Ahh-hahahaha!"
 #. 出た…ッ！！
 msgctxt "0063 | AOI ASAHINA"
 msgid "It's him!"
-msgstr "Chính là hắn!"
+msgstr "Hắn kìa!"
 
 #. うぷぷ、正義のロボットだって！
 #. なんだか楽しそうな展開になってるじゃん！！
@@ -560,8 +565,8 @@ msgid ""
 "Puhuhu! A robot of justice, huh!? Now things are\n"
 "*really* starting to get exciting!"
 msgstr ""
-"U pư pư! Một người máy công lý sao!? Giờ thì mọi chuyện đang\n"
-"thực sự bắt đầu trở nên kịch tính rồi đấy!"
+"U pư pư! Một người máy công lý sao!? Giờ thì mọi\n"
+"chuyện đang thực sự bắt đầu trở nên kịch tính rồi đấy!"
 
 #. どんな必殺技使うんだろ？　飛べるのかなぁ？
 #. お約束の合体とかは、どうなんだろ？
@@ -570,8 +575,8 @@ msgid ""
 "What kind of special moves does it have? Can it fly?\n"
 "Can it COMBINE!?"
 msgstr ""
-"Hắn có chiêu thức đặc biệt nào không? Hắn có biết bay không? Hắn\n"
-"có biết HỢP THỂ không hả!?"
+"Hắn có chiêu thức đặc biệt nào không? Hắn có biết bay\n"
+"không? Hắn có biết HỢP THỂ không!?"
 
 #. にょほほほほー！
 msgctxt "0066 | MONOKUMA"
@@ -595,8 +600,8 @@ msgid ""
 "What we need to do now is get Hifumi to the nurse's\n"
 "office right away."
 msgstr ""
-"Điều chúng ta cần làm lúc này là đưa Hifumi đến phòng y tế ngay\n"
-"lập tức."
+"Điều chúng ta cần làm lúc này là đưa Hifumi đến phòng\n"
+"y tế ngay lập tức."
 
 #. どう見ても、手当てしてあげた方が、
 #. よろしいでしょうし…
@@ -605,8 +610,8 @@ msgid ""
 "Whatever else we do, he needs to be treated as soon as\n"
 "possible."
 msgstr ""
-"Dù có làm gì đi nữa, cậu ấy cũng cần được băng bó vết thương\n"
-"càng sớm càng tốt."
+"Dù có làm gì đi nữa, cậu ấy cũng cần được băng bó vết\n"
+"thương càng sớm càng tốt."
 
 #. そうだね！　じゃあ、行こっか！
 msgctxt "0071 | AOI ASAHINA"
