@@ -1048,3 +1048,82 @@ def test_git_launcher_keeps_console_open_and_reports_exit_code(monkeypatch):
     assert "will not close automatically" in persistent
     assert "pause >nul" in persistent
     assert captured["kwargs"]["creationflags"] == 16
+
+
+def test_linewrap_presets_keep_base64_and_migrate_legacy_values():
+    from dr_po_toolkit.linewrap import normalize_wrap_presets
+
+    presets = normalize_wrap_presets(
+        None,
+        legacy_soft=51,
+        legacy_hard=63,
+        legacy_max_cuts=3,
+    )
+
+    assert presets[0] == {"soft": 58, "hard": 64, "max_cuts": 2}
+    assert presets[1:] == [
+        {"soft": 51, "hard": 63, "max_cuts": 3},
+        {"soft": 51, "hard": 63, "max_cuts": 3},
+        {"soft": 51, "hard": 63, "max_cuts": 3},
+    ]
+
+    edited = normalize_wrap_presets(
+        [
+            {"soft": 1, "hard": 2, "max_cuts": 9},
+            {"soft": "40", "hard": "48", "max_cuts": "1"},
+            {"soft": 60, "hard": 72, "max_cuts": 4},
+            {"soft": 70, "hard": 80, "max_cuts": 5},
+        ]
+    )
+    assert edited[0] == {"soft": 58, "hard": 64, "max_cuts": 2}
+    assert edited[1] == {"soft": 40, "hard": 48, "max_cuts": 1}
+    assert edited[3] == {"soft": 70, "hard": 80, "max_cuts": 5}
+
+
+def test_config_migrates_old_single_linewrap_setting_to_four_presets():
+    import json
+    import tempfile
+
+    from dr_po_toolkit.config import load_config
+
+    with tempfile.TemporaryDirectory() as tmp:
+        config_path = Path(tmp) / "config.json"
+        config_path.write_text(
+            json.dumps({"soft_limit": 47, "hard_limit": 59, "max_cuts": 4}),
+            encoding="utf-8",
+        )
+        config = load_config(config_path)
+
+    assert config["linewrap_active_preset"] == 0
+    assert config["linewrap_presets"][0] == {"soft": 58, "hard": 64, "max_cuts": 2}
+    assert config["linewrap_presets"][1] == {"soft": 47, "hard": 59, "max_cuts": 4}
+    assert len(config["linewrap_presets"]) == 4
+
+
+def test_html_spacing_preserves_double_spaces_around_hidden_clt_boundaries():
+    from dr_po_toolkit.text_utils import html_escape_preserve_spacing
+
+    assert html_escape_preserve_spacing("normal words") == "normal words"
+    assert html_escape_preserve_spacing(" left") == "&nbsp;left"
+    assert html_escape_preserve_spacing("right ") == "right&nbsp;"
+    assert html_escape_preserve_spacing("two  spaces") == "two&nbsp;&nbsp;spaces"
+
+
+def test_visible_character_counts_by_line_ignores_control_tags_and_placeholders():
+    from dr_po_toolkit.text_utils import visible_character_counts_by_line
+
+    text = "<CLT 4>Hello, brave player %TEXT%!\n<CLT>{player_name} found %s [color=red]three gems[/color].\n"
+
+    assert visible_character_counts_by_line(text) == [21, 19, 0]
+
+
+def test_visible_character_counts_by_line_counts_vietnamese_spaces_and_punctuation():
+    from dr_po_toolkit.text_utils import visible_character_counts_by_line
+
+    assert visible_character_counts_by_line("<CLT 4>Xin chào người chơi\nBạn khỏe không?<CLT>") == [19, 15]
+
+
+def test_visible_character_counts_by_line_preserves_double_spaces_around_hidden_tags():
+    from dr_po_toolkit.text_utils import visible_character_counts_by_line
+
+    assert visible_character_counts_by_line("Hello <CLT 4> world") == [12]

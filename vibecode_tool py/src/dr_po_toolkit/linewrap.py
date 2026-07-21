@@ -12,6 +12,82 @@ CLT_SPACE_RE = re.compile(r"<CLT\s+(\d+)>")
 # (used internally during wrapping) must be stripped separately.
 _PROTECTED_CLT_RE = re.compile(r"<CLT_\d+>")
 
+BASE64_WRAP_PRESET = {"soft": 58, "hard": 64, "max_cuts": 2}
+
+
+def normalize_wrap_preset(value: object, fallback: object = BASE64_WRAP_PRESET) -> dict[str, int]:
+    """Return a safe ``soft/hard/max_cuts`` preset dictionary.
+
+    Presets are stored in JSON config, so older or hand-edited config files may
+    contain missing keys, strings, or list/tuple values.  Keep the GUI resilient
+    and clamp values to the same ranges used by its spin boxes.
+    """
+
+    if isinstance(fallback, dict):
+        fallback_values = fallback
+    elif isinstance(fallback, (list, tuple)) and len(fallback) >= 3:
+        fallback_values = {"soft": fallback[0], "hard": fallback[1], "max_cuts": fallback[2]}
+    else:
+        fallback_values = BASE64_WRAP_PRESET
+
+    if isinstance(value, dict):
+        source = value
+    elif isinstance(value, (list, tuple)) and len(value) >= 3:
+        source = {"soft": value[0], "hard": value[1], "max_cuts": value[2]}
+    else:
+        source = {}
+
+    def integer(key: str, minimum: int, maximum: int) -> int:
+        raw = source.get(key, fallback_values.get(key, BASE64_WRAP_PRESET[key]))
+        try:
+            parsed = int(raw)
+        except (TypeError, ValueError):
+            parsed = int(fallback_values.get(key, BASE64_WRAP_PRESET[key]))
+        return max(minimum, min(maximum, parsed))
+
+    return {
+        "soft": integer("soft", 1, 999),
+        "hard": integer("hard", 1, 999),
+        "max_cuts": integer("max_cuts", 1, 20),
+    }
+
+
+def default_wrap_presets(
+    legacy_soft: object = 54,
+    legacy_hard: object = 64,
+    legacy_max_cuts: object = 2,
+) -> list[dict[str, int]]:
+    """Return four presets; preset 1 is the locked base-64 preset.
+
+    Presets 2-4 start with the user's previous single-preset settings so an
+    upgrade does not discard their preferred values.  They can be edited from
+    the Line Wrap tab.
+    """
+
+    legacy = normalize_wrap_preset(
+        {"soft": legacy_soft, "hard": legacy_hard, "max_cuts": legacy_max_cuts},
+        BASE64_WRAP_PRESET,
+    )
+    return [dict(BASE64_WRAP_PRESET), dict(legacy), dict(legacy), dict(legacy)]
+
+
+def normalize_wrap_presets(
+    value: object,
+    *,
+    legacy_soft: object = 54,
+    legacy_hard: object = 64,
+    legacy_max_cuts: object = 2,
+) -> list[dict[str, int]]:
+    """Normalize config data into exactly four line-wrap presets."""
+
+    defaults = default_wrap_presets(legacy_soft, legacy_hard, legacy_max_cuts)
+    raw_presets = value if isinstance(value, list) else []
+    presets = [dict(BASE64_WRAP_PRESET)]
+    for index in range(1, 4):
+        raw = raw_presets[index] if index < len(raw_presets) else defaults[index]
+        presets.append(normalize_wrap_preset(raw, defaults[index]))
+    return presets
+
 
 def wrap_msgstr(text: str, soft: int = 58, hard: int = 64, max_cuts: int = 2) -> tuple[str, bool]:
     original = text

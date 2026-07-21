@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from .dr_options import DR_FILE_OPTION_KEYS
+from .linewrap import default_wrap_presets, normalize_wrap_presets
 
 DEFAULT_CONFIG = {
     "last_path": "",
@@ -12,6 +13,8 @@ DEFAULT_CONFIG = {
     "soft_limit": 54,
     "hard_limit": 64,
     "max_cuts": 2,
+    "linewrap_active_preset": 0,
+    "linewrap_presets": default_wrap_presets(),
     "gemini_model": "gemini-2.5-flash",
     "translation_batch_size": 20,
     "gemini_web_cdp_url": "http://localhost:9222",
@@ -61,13 +64,37 @@ def default_config_path() -> Path:
 def load_config(path: str | Path | None = None) -> dict[str, Any]:
     p = Path(path) if path else default_config_path()
     if not p.exists():
-        return dict(DEFAULT_CONFIG)
+        merged = dict(DEFAULT_CONFIG)
+        merged["linewrap_presets"] = default_wrap_presets()
+        return merged
     try:
         data = json.loads(p.read_text(encoding="utf-8"))
     except Exception:
-        return dict(DEFAULT_CONFIG)
+        merged = dict(DEFAULT_CONFIG)
+        merged["linewrap_presets"] = default_wrap_presets()
+        return merged
+
+    # Migrate the former single wrap setting into editable presets 2-4.
+    # Preset 1 is always the known base-64 behavior.
+    if "linewrap_presets" not in data:
+        data["linewrap_presets"] = default_wrap_presets(
+            data.get("soft_limit", DEFAULT_CONFIG["soft_limit"]),
+            data.get("hard_limit", DEFAULT_CONFIG["hard_limit"]),
+            data.get("max_cuts", DEFAULT_CONFIG["max_cuts"]),
+        )
     merged = dict(DEFAULT_CONFIG)
     merged.update(data)
+    merged["linewrap_presets"] = normalize_wrap_presets(
+        merged.get("linewrap_presets"),
+        legacy_soft=merged.get("soft_limit", DEFAULT_CONFIG["soft_limit"]),
+        legacy_hard=merged.get("hard_limit", DEFAULT_CONFIG["hard_limit"]),
+        legacy_max_cuts=merged.get("max_cuts", DEFAULT_CONFIG["max_cuts"]),
+    )
+    try:
+        active_preset = int(merged.get("linewrap_active_preset", 0))
+    except (TypeError, ValueError):
+        active_preset = 0
+    merged["linewrap_active_preset"] = max(0, min(3, active_preset))
     for key in LEGACY_SYNC_DESTINATION_KEYS:
         merged.pop(key, None)
     return merged

@@ -76,7 +76,7 @@ from .gemini_web import (
     open_chrome_debug,
     run_gemini_web_path,
 )
-from .linewrap import wrap_msgstr, wrap_po_file
+from .linewrap import normalize_wrap_presets, wrap_msgstr, wrap_po_file
 from .po_io import load_po, patch_msgstr_by_uid, save_po
 from .rules import apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_path
@@ -97,7 +97,9 @@ from .text_utils import (
     SearchReplaceCompileError,
     apply_search_replace_sequence,
     compile_search_replace_sequence,
+    html_escape_preserve_spacing,
     user_multiline_text,
+    visible_character_counts_by_line,
 )
 
 # Chiaki Nanami inspired theme palette: sleepy gamer, soft pink, muted teal,
@@ -276,40 +278,7 @@ class CltHighlighter(QSyntaxHighlighter):
 
 
 class VisibleNewlinePlainTextEdit(QPlainTextEdit):
-    """Plain text editor that paints visible red ``\\n`` markers at real line breaks."""
-
-    def __init__(self) -> None:
-        super().__init__()
-        self._show_newline_markers = True
-
-    def setShowNewlineMarkers(self, enabled: bool) -> None:
-        self._show_newline_markers = enabled
-        self.viewport().update()
-
-    def paintEvent(self, event):  # type: ignore[override]
-        super().paintEvent(event)
-        if not self._show_newline_markers:
-            return
-        block = self.firstVisibleBlock()
-        if not block.isValid():
-            return
-        painter = QPainter(self.viewport())
-        painter.setPen(QColor(BAD))
-        painter.setFont(self.font())
-        try:
-            rect_bottom = event.rect().bottom()
-            while block.isValid():
-                block_rect = self.blockBoundingGeometry(block).translated(self.contentOffset())
-                if block_rect.top() > rect_bottom:
-                    break
-                if block.isVisible() and block.next().isValid() and block_rect.bottom() >= event.rect().top():
-                    cursor = QTextCursor(block)
-                    cursor.movePosition(QTextCursor.MoveOperation.EndOfBlock)
-                    caret = self.cursorRect(cursor)
-                    painter.drawText(caret.right() + 4, caret.top() + self.fontMetrics().ascent(), r"\n")
-                block = block.next()
-        finally:
-            painter.end()
+    """Plain PO text editor; per-line metrics are shown above the field."""
 
 
 CLT_TAG_RE = re.compile(r"<\s*clt(?P<code>[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
@@ -320,10 +289,10 @@ def _text_token_html(text: str) -> str:
     parts: list[str] = []
     last = 0
     for match in TEXT_TOKEN_RE.finditer(text or ""):
-        parts.append(html.escape((text or "")[last:match.start()]))
-        parts.append(f'<span style="color:{PURPLE};">{html.escape(match.group(0))}</span>')
+        parts.append(html_escape_preserve_spacing((text or "")[last:match.start()]))
+        parts.append(f'<span style="color:{PURPLE};">{html_escape_preserve_spacing(match.group(0))}</span>')
         last = match.end()
-    parts.append(html.escape((text or "")[last:]))
+    parts.append(html_escape_preserve_spacing((text or "")[last:]))
     return "".join(parts)
 
 
@@ -572,6 +541,8 @@ class ToolkitGUI(QMainWindow):
             }}
             QToolButton:hover {{ background: #46506a; color: {ACCENT_SOFT}; }}
             QToolButton:pressed {{ background: {ACCENT_DARK}; color: {WHITE}; }}
+            QToolButton[wrapPreset="true"] {{ padding: 3px 6px; }}
+            QToolButton[wrapActive="true"] {{ background: {TEAL}; color: {WHITE}; border: 1px solid {CYAN}; }}
             QCheckBox {{ spacing: 5px; color: {TEXT}; }}
             QCheckBox::indicator {{ width: 13px; height: 13px; }}
             QCheckBox::indicator:checked {{ background: {ACCENT}; border: 1px solid {ACCENT_SOFT}; border-radius: 4px; }}
@@ -652,20 +623,99 @@ class ToolkitGUI(QMainWindow):
         log.setMinimumHeight(210)
         return log
 
-    def _linewrap_settings(self) -> tuple[int, int, int]:
-        """Return the active Line Wrap tab settings.
+    def _linewrap_presets(self) -> list[dict[str, int]]:
+        presets = normalize_wrap_presets(
+            self.config.get("linewrap_presets"),
+            legacy_soft=self.config.get("soft_limit", 54),
+            legacy_hard=self.config.get("hard_limit", 64),
+            legacy_max_cuts=self.config.get("max_cuts", 2),
+        )
+        self.config["linewrap_presets"] = presets
+        return presets
 
-        The Line Wrap tab owns the spin boxes, but other views also offer
-        wrap actions. Reading the same widgets here keeps every wrap button
-        on the same soft/hard/max-cuts logic.
-        """
-        soft_spin = getattr(self, "linewrap_soft_spin", None)
-        hard_spin = getattr(self, "linewrap_hard_spin", None)
-        cuts_spin = getattr(self, "linewrap_cuts_spin", None)
-        soft_value = int(soft_spin.value()) if soft_spin is not None else int(self.config.get("soft_limit", 54))
-        hard_value = int(hard_spin.value()) if hard_spin is not None else int(self.config.get("hard_limit", 64))
-        cuts_value = int(cuts_spin.value()) if cuts_spin is not None else int(self.config.get("max_cuts", 2))
-        return soft_value, hard_value, cuts_value
+    def _active_linewrap_preset_index(self) -> int:
+        try:
+            index = int(self.config.get("linewrap_active_preset", 0))
+        except (TypeError, ValueError):
+            index = 0
+        return max(0, min(3, index))
+
+    def _linewrap_settings(self, preset_index: int | None = None) -> tuple[int, int, int]:
+        """Return one of the four shared line-wrap presets."""
+
+        index = self._active_linewrap_preset_index() if preset_index is None else max(0, min(3, int(preset_index)))
+        preset = self._linewrap_presets()[index]
+        return int(preset["soft"]), int(preset["hard"]), int(preset["max_cuts"])
+
+    def _linewrap_preset_label(self, preset_index: int) -> str:
+        soft, _hard, _cuts = self._linewrap_settings(preset_index)
+        return str(soft)
+
+    def _linewrap_preset_tooltip(self, preset_index: int, action: str = "Wrap") -> str:
+        soft, hard, cuts = self._linewrap_settings(preset_index)
+        base_note = " Fixed base-64 preset." if preset_index == 0 else " Editable in the Line Wrap tab."
+        return f"{action} with preset W{preset_index + 1}: Soft={soft}, Hard={hard}, Cuts={cuts}.{base_note}"
+
+    def _refresh_linewrap_preset_buttons(self) -> None:
+        active = self._active_linewrap_preset_index()
+        registered = getattr(self, "_linewrap_preset_button_registry", [])
+        alive: list[tuple[QToolButton, int, str]] = []
+        for button, index, action in registered:
+            try:
+                button.setText(self._linewrap_preset_label(index))
+                button.setToolTip(self._linewrap_preset_tooltip(index, action))
+                button.setProperty("wrapActive", index == active)
+                button.style().unpolish(button)
+                button.style().polish(button)
+                button.update()
+                alive.append((button, index, action))
+            except RuntimeError:
+                # The owning dialog was closed and Qt already deleted the button.
+                continue
+        self._linewrap_preset_button_registry = alive
+
+    def _set_active_linewrap_preset(self, preset_index: int, *, persist: bool = True) -> None:
+        index = max(0, min(3, int(preset_index)))
+        self.config["linewrap_active_preset"] = index
+        soft, hard, cuts = self._linewrap_settings(index)
+        # Keep the old keys synchronized for CLI/backward compatibility.
+        self.config["soft_limit"] = soft
+        self.config["hard_limit"] = hard
+        self.config["max_cuts"] = cuts
+        if persist:
+            save_config(self.config)
+        editor_loader = getattr(self, "_load_linewrap_preset_editor", None)
+        if callable(editor_loader):
+            editor_loader(index)
+        self._refresh_linewrap_preset_buttons()
+
+    def _add_linewrap_preset_buttons(
+        self,
+        layout: QHBoxLayout,
+        callback: Callable[[int], None] | None,
+        *,
+        action: str = "Wrap",
+    ) -> list[QToolButton]:
+        registry = getattr(self, "_linewrap_preset_button_registry", None)
+        if registry is None:
+            registry = []
+            self._linewrap_preset_button_registry = registry
+        buttons: list[QToolButton] = []
+        for index in range(4):
+            button = self._tool_button(self._linewrap_preset_label(index), "", width=54)
+            button.setProperty("wrapPreset", True)
+
+            def pressed(_checked: bool = False, preset_index: int = index) -> None:
+                self._set_active_linewrap_preset(preset_index)
+                if callback is not None:
+                    callback(preset_index)
+
+            button.clicked.connect(pressed)
+            layout.addWidget(button)
+            registry.append((button, index, action))
+            buttons.append(button)
+        self._refresh_linewrap_preset_buttons()
+        return buttons
 
     def _initial_clt_color_mode(self) -> bool:
         """Return the shared CLT display mode used by every text view."""
@@ -704,7 +754,6 @@ class ToolkitGUI(QMainWindow):
             "Run Line Wrap": "Wrap msgstr lines in selected PO files.",
             "Search": "Search selected PO files.",
             "Open File": "Open the selected result in PO Viewer.",
-            "Wrap Selected": "Wrap selected or current translation rows.",
             "Find Prev": "Move to the previous match.",
             "Find Next": "Move to the next match.",
             "Replace": "Replace the current match.",
@@ -722,7 +771,6 @@ class ToolkitGUI(QMainWindow):
             "Find": "Open search and replace for this view.",
             "Apply": "Apply the selected or current value.",
             "Undo": "Undo the most recent edit action.",
-            "Wrap 64": "Wrap selected/current translations using Line Wrap tab settings.",
             "Hide": "Hide selected duplicate groups.",
             "Unhide": "Show selected hidden duplicate groups again.",
             "Reload": "Reload data from disk.",
@@ -1644,32 +1692,79 @@ class ToolkitGUI(QMainWindow):
         path_edit, include_extra = self._extra_path_row(layout, "linewrap", "Extra Folder/File", "last_path")
 
         controls = QHBoxLayout()
+        controls.setSpacing(4)
         dry = QCheckBox("Dry run")
         dry.setChecked(True)
         controls.addWidget(dry)
-        soft = QSpinBox(); soft.setRange(1, 999); soft.setValue(int(self.config.get("soft_limit", 54)))
-        hard = QSpinBox(); hard.setRange(1, 999); hard.setValue(int(self.config.get("hard_limit", 64)))
-        cuts = QSpinBox(); cuts.setRange(1, 20); cuts.setValue(int(self.config.get("max_cuts", 2)))
+        controls.addSpacing(8)
+        controls.addWidget(QLabel("Preset"))
+
+        soft = QSpinBox(); soft.setRange(1, 999)
+        hard = QSpinBox(); hard.setRange(1, 999)
+        cuts = QSpinBox(); cuts.setRange(1, 20)
         self.linewrap_soft_spin = soft
         self.linewrap_hard_spin = hard
         self.linewrap_cuts_spin = cuts
-        soft.setToolTip("Preferred wrap width used by all wrap buttons.")
-        hard.setToolTip("Hard wrap width used by all wrap buttons.")
-        cuts.setToolTip("Maximum number of automatic line cuts used by all wrap buttons.")
+        soft.setToolTip("Preferred width for the selected preset.")
+        hard.setToolTip("Hard width for the selected preset.")
+        cuts.setToolTip("Maximum automatic cuts for the selected preset.")
+
+        preset_info = QLabel("")
+        preset_info.setObjectName("muted")
+        preset_updating = {"value": False}
+
+        def load_preset_editor(preset_index: int | None = None) -> None:
+            index = self._active_linewrap_preset_index() if preset_index is None else max(0, min(3, int(preset_index)))
+            values = self._linewrap_presets()[index]
+            preset_updating["value"] = True
+            try:
+                soft.setValue(int(values["soft"]))
+                hard.setValue(int(values["hard"]))
+                cuts.setValue(int(values["max_cuts"]))
+            finally:
+                preset_updating["value"] = False
+            editable = index != 0
+            for spin in (soft, hard, cuts):
+                spin.setEnabled(editable)
+            preset_info.setText(
+                "W1 is fixed base 64."
+                if index == 0
+                else f"Editing W{index + 1}; changes save automatically."
+            )
+
+        self._load_linewrap_preset_editor = load_preset_editor
+        self._add_linewrap_preset_buttons(controls, None, action="Select")
+        controls.addSpacing(8)
 
         def save_linewrap_settings() -> None:
+            if preset_updating["value"]:
+                return
+            index = self._active_linewrap_preset_index()
+            if index == 0:
+                load_preset_editor(0)
+                return
+            presets = self._linewrap_presets()
+            presets[index] = {
+                "soft": int(soft.value()),
+                "hard": int(hard.value()),
+                "max_cuts": int(cuts.value()),
+            }
+            self.config["linewrap_presets"] = presets
             self.config["soft_limit"] = int(soft.value())
             self.config["hard_limit"] = int(hard.value())
             self.config["max_cuts"] = int(cuts.value())
             save_config(self.config)
+            self._refresh_linewrap_preset_buttons()
 
         for spin in (soft, hard, cuts):
             spin.valueChanged.connect(lambda _value: save_linewrap_settings())
         for label, spin in [("Soft", soft), ("Hard", hard), ("Max cuts", cuts)]:
             controls.addWidget(QLabel(label))
             controls.addWidget(spin)
+        controls.addWidget(preset_info)
         controls.addStretch()
         layout.addLayout(controls)
+        load_preset_editor()
 
         tester = QGroupBox("Line Wrap Test")
         tester_layout = QVBoxLayout(tester)
@@ -1697,22 +1792,43 @@ class ToolkitGUI(QMainWindow):
         layout.addWidget(log, 1)
 
         def apply_test() -> None:
-            fixed, changed = wrap_msgstr(test_input.toPlainText(), soft=soft.value(), hard=hard.value(), max_cuts=cuts.value())
+            preset_index = self._active_linewrap_preset_index()
+            soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
+            fixed, changed = wrap_msgstr(
+                test_input.toPlainText(),
+                soft=soft_value,
+                hard=hard_value,
+                max_cuts=cuts_value,
+            )
             test_input.setPlainText(fixed)
             lengths = [len(line) for line in fixed.splitlines()] or [0]
-            test_status.setText(f"Applied: {'changed' if changed else 'unchanged'} | Lines: {lengths}")
+            test_status.setText(
+                f"W{preset_index + 1}: {'changed' if changed else 'unchanged'} | "
+                f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value} | Lines: {lengths}"
+            )
 
         def run(logwrite):
             self._check_stop()
             paths = self._processing_paths("linewrap", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
                 return
+            preset_index = self._active_linewrap_preset_index()
+            soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             po_files = self._iter_unique_po_paths(paths)
             results: dict[Path, int] = {}
             for po_path in po_files:
                 self._check_stop()
-                results[po_path] = wrap_po_file(po_path, soft=soft.value(), hard=hard.value(), max_cuts=cuts.value(), dry_run=dry.isChecked())
-            logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
+                results[po_path] = wrap_po_file(
+                    po_path,
+                    soft=soft_value,
+                    hard=hard_value,
+                    max_cuts=cuts_value,
+                    dry_run=dry.isChecked(),
+                )
+            logwrite(
+                f"Preset W{preset_index + 1}: Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value} | "
+                f"Inputs: {len(paths)} | PO files: {len(po_files)}"
+            )
             for path, n in results.items():
                 self._check_stop()
                 if n:
@@ -1729,7 +1845,7 @@ class ToolkitGUI(QMainWindow):
     def _build_search_tab(self) -> None:
         _tab, layout = self._new_tab("Search")
         self._dr_option_selector(layout, "search")
-        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Ctrl+Z undoes editor text or the last saved Search edit.")
+        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Ctrl+S saves the current result to its .po file; Ctrl+Z undoes editor text or the last saved Search edit.")
         theme_note.setObjectName("muted")
         theme_note.setWordWrap(True)
         layout.addWidget(theme_note)
@@ -1810,11 +1926,20 @@ class ToolkitGUI(QMainWindow):
         right_layout.addWidget(msgstr_box, 1)
 
         edit_buttons = QHBoxLayout()
+        edit_buttons.setSpacing(4)
         open_btn = self._button("Open File", secondary=True)
-        wrap_btn = self._button("Wrap Selected", secondary=True)
         save_btn = self._button("Save msgstr")
         edit_buttons.addWidget(save_btn)
-        edit_buttons.addWidget(wrap_btn)
+        edit_buttons.addSpacing(8)
+        wrap_label = QLabel("Wrap")
+        wrap_label.setObjectName("muted")
+        edit_buttons.addWidget(wrap_label)
+        self._add_linewrap_preset_buttons(
+            edit_buttons,
+            lambda preset_index: wrap_selected_msgstrs(preset_index),
+            action="Wrap selected Search results",
+        )
+        edit_buttons.addStretch()
         edit_buttons.addWidget(open_btn)
         right_layout.addLayout(edit_buttons)
 
@@ -2069,9 +2194,10 @@ class ToolkitGUI(QMainWindow):
                 status.setText("Select a result first.")
                 return
             changed = save_updates({idx: msgstr_box.toPlainText()})
-            status.setText("Saved msgstr." if changed else "No change.")
+            current_file = self.search_results[idx].file.name
+            status.setText(f"Saved {current_file}." if changed else f"No change in {current_file}.")
 
-        def wrap_selected_msgstrs() -> None:
+        def wrap_selected_msgstrs(preset_index: int | None = None) -> None:
             indices = selected_result_indices()
             if not indices:
                 current = current_result_index()
@@ -2081,7 +2207,7 @@ class ToolkitGUI(QMainWindow):
                 return
 
             current_idx = current_result_index()
-            soft_value, hard_value, cuts_value = wrap_settings()
+            soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             updates: dict[int, str] = {}
             wrapped_count = 0
             for idx in sorted(set(indices)):
@@ -2098,7 +2224,7 @@ class ToolkitGUI(QMainWindow):
             if current_idx is not None and 0 <= current_idx < len(self.search_results):
                 msgstr_box.setPlainText(self.search_results[current_idx].msgstr)
             status.setText(
-                f"Wrapped {wrapped_count} selected result(s), saved {changed}. "
+                f"W{self._active_linewrap_preset_index() + 1}: wrapped {wrapped_count} selected result(s), saved {changed}. "
                 f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
             )
 
@@ -2275,7 +2401,6 @@ class ToolkitGUI(QMainWindow):
         phrase.returnPressed.connect(run_search)
         speaker.returnPressed.connect(run_search)
         open_btn.clicked.connect(open_selected_file)
-        wrap_btn.clicked.connect(wrap_selected_msgstrs)
         save_btn.clicked.connect(save_current)
         msgstr_box.installEventFilter(self)
         prev_btn.clicked.connect(lambda: find_step(-1))
@@ -2287,7 +2412,10 @@ class ToolkitGUI(QMainWindow):
         undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), _tab)
         undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
         undo_shortcut.activated.connect(undo_last_search_change)
-        self._search_shortcuts = [undo_shortcut]
+        save_shortcut = QShortcut(QKeySequence("Ctrl+S"), _tab)
+        save_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        save_shortcut.activated.connect(save_current)
+        self._search_shortcuts = [undo_shortcut, save_shortcut]
 
 
     # ---------------- Translafixer ----------------
@@ -2732,6 +2860,7 @@ class ToolkitGUI(QMainWindow):
         root.addWidget(split, 1)
 
         footer = QHBoxLayout()
+        footer.setSpacing(4)
         prev_source_btn = self._button("Prev", secondary=True)
         prev_source_btn.setToolTip("Jump to the previous duplicate source group.")
         next_source_btn = self._button("Next", secondary=True)
@@ -2744,10 +2873,8 @@ class ToolkitGUI(QMainWindow):
         apply_group_btn = self._button("Apply", secondary=True)
         apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
         undo_apply_btn = self._button("Undo", secondary=True)
-        undo_apply_btn.setToolTip("Undo the most recent Apply, Replace, edit, or Wrap 64 change. Ctrl+Z also works.")
+        undo_apply_btn.setToolTip("Undo the most recent Apply, Replace, edit, or Wrap change. Ctrl+Z also works.")
         undo_apply_btn.setEnabled(False)
-        wrap_break_btn = self._button("Wrap 64", secondary=True)
-        wrap_break_btn.setToolTip("Insert real line breaks in selected/current Vietnamese translation(s) using the Line Wrap tab settings.")
         hide_group_btn = self._button("Hide", secondary=True)
         hide_group_btn.setToolTip("Hide selected duplicate source group(s) by default.")
         show_hidden_check = QCheckBox("Hidden")
@@ -2762,9 +2889,18 @@ class ToolkitGUI(QMainWindow):
         footer.addWidget(open_file_btn)
         footer.addWidget(search_replace_btn)
         footer.addWidget(clt_color_btn)
+        footer.addSpacing(8)
         footer.addWidget(apply_group_btn)
         footer.addWidget(undo_apply_btn)
-        footer.addWidget(wrap_break_btn)
+        wrap_label = QLabel("Wrap")
+        wrap_label.setObjectName("muted")
+        footer.addWidget(wrap_label)
+        self._add_linewrap_preset_buttons(
+            footer,
+            lambda preset_index: breakline_selected(preset_index),
+            action="Wrap selected duplicate rows",
+        )
+        footer.addSpacing(8)
         footer.addWidget(hide_group_btn)
         footer.addWidget(show_hidden_check)
         footer.addWidget(unhide_group_btn)
@@ -3412,7 +3548,7 @@ class ToolkitGUI(QMainWindow):
         def toggle_hidden_visibility() -> None:
             repopulate_after_hidden_change()
 
-        def breakline_selected_64() -> None:
+        def breakline_selected(preset_index: int | None = None) -> None:
             rows = selected_rows_or_current()
             if not rows:
                 QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
@@ -3420,7 +3556,7 @@ class ToolkitGUI(QMainWindow):
             changed = 0
             undo_rows: list[dict[str, object]] = []
             current_row = table.currentRow()
-            soft_value, hard_value, cuts_value = self._linewrap_settings()
+            soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             for row in rows:
                 item = table.item(row, 3)
                 if item is None:
@@ -3439,7 +3575,8 @@ class ToolkitGUI(QMainWindow):
             update_status()
             status.setText(
                 status.text()
-                + f" | breakline changed={changed} | Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}"
+                + f" | W{self._active_linewrap_preset_index() + 1} changed={changed} | "
+                + f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}"
             )
 
         def apply_to_same_source() -> None:
@@ -3956,7 +4093,6 @@ class ToolkitGUI(QMainWindow):
         open_file_btn.clicked.connect(open_selected_file_in_po_viewer)
         search_replace_btn.clicked.connect(open_search_replace_dialog)
         clt_color_btn.clicked.connect(toggle_duplicate_clt_color_mode)
-        wrap_break_btn.clicked.connect(breakline_selected_64)
         apply_group_btn.clicked.connect(apply_to_same_source)
         undo_apply_btn.clicked.connect(undo_duplicate_change)
         hide_group_btn.clicked.connect(hide_selected_groups)
@@ -3971,8 +4107,16 @@ class ToolkitGUI(QMainWindow):
         undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), dialog)
         undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
         undo_shortcut.activated.connect(undo_duplicate_change)
+        save_shortcut = QShortcut(QKeySequence("Ctrl+S"), dialog)
+        save_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        save_shortcut.activated.connect(save_changed)
+        wrap_shortcut = QShortcut(QKeySequence("Ctrl+Enter"), dialog)
+        wrap_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+        wrap_shortcut.activated.connect(lambda: breakline_selected())
         dialog._find_shortcut = find_shortcut  # type: ignore[attr-defined]
         dialog._undo_shortcut = undo_shortcut  # type: ignore[attr-defined]
+        dialog._save_shortcut = save_shortcut  # type: ignore[attr-defined]
+        dialog._wrap_shortcut = wrap_shortcut  # type: ignore[attr-defined]
         populate(displayed_conflict_entries())
         QTimer.singleShot(0, refresh_table_row_heights)
         update_status()
@@ -3989,7 +4133,8 @@ class ToolkitGUI(QMainWindow):
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
             "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z = undo text/last PO edit, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
-            "Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. Red \\n markers show real line breaks. Translafixer matching ignores CLT tags."
+            "Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. "
+            "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
@@ -4034,10 +4179,10 @@ class ToolkitGUI(QMainWindow):
         layout.addLayout(file_row)
 
         tools = QHBoxLayout()
+        tools.setSpacing(4)
         wrap_view_btn = self._tool_button("↔ ON", "Toggle visual wrap", width=46)
         clt_color_btn = self._tool_button("CLT", "Toggle CLT tag/color view", width=42)
-        wrap_selected_btn = self._tool_button("⤶ Sel", "Wrap selected/current translation", width=52)
-        wrap_all_btn = self._tool_button("⤶ All", "Wrap all translations", width=52)
+        wrap_all_btn = self._tool_button("All", "Wrap all translations with the active preset", width=38)
         fill_btn = self._tool_button("TF", "Fill from Translafixer sources", width=38)
         gemini_selected_btn = self._tool_button("AI", "Translate selected rows with Gemini API", width=38)
         search_replace_btn = self._tool_button("⌕", "Search / replace (Ctrl+F)", width=34)
@@ -4045,10 +4190,22 @@ class ToolkitGUI(QMainWindow):
         status = QLabel("No file loaded")
         status.setObjectName("muted")
         status.setWordWrap(True)
+        view_label = QLabel("View")
+        view_label.setObjectName("muted")
+        tools.addWidget(view_label)
         tools.addWidget(wrap_view_btn)
         tools.addWidget(clt_color_btn)
-        tools.addWidget(wrap_selected_btn)
+        tools.addSpacing(8)
+        wrap_label = QLabel("Wrap")
+        wrap_label.setObjectName("muted")
+        tools.addWidget(wrap_label)
+        self._add_linewrap_preset_buttons(
+            tools,
+            lambda preset_index: wrap_selected(preset_index),
+            action="Wrap selected/current PO Viewer rows",
+        )
         tools.addWidget(wrap_all_btn)
+        tools.addSpacing(8)
         tools.addWidget(fill_btn)
         tools.addWidget(gemini_selected_btn)
         tools.addWidget(search_replace_btn)
@@ -4085,7 +4242,7 @@ class ToolkitGUI(QMainWindow):
 
         detail = QSplitter(Qt.Orientation.Horizontal)
 
-        def labeled_box(label: str, box: QPlainTextEdit, extra_label: QLabel | None = None) -> QWidget:
+        def labeled_box(label: str, box: QPlainTextEdit, *extra_widgets: QWidget) -> QWidget:
             wrap = QWidget()
             box_layout = QVBoxLayout(wrap)
             box_layout.setContentsMargins(0, 0, 0, 0)
@@ -4093,8 +4250,8 @@ class ToolkitGUI(QMainWindow):
             lab = QLabel(label)
             lab.setStyleSheet("font-weight:800;")
             box_layout.addWidget(lab)
-            if extra_label is not None:
-                box_layout.addWidget(extra_label)
+            for extra_widget in extra_widgets:
+                box_layout.addWidget(extra_widget)
             box_layout.addWidget(box, 1)
             return wrap
 
@@ -4111,8 +4268,30 @@ class ToolkitGUI(QMainWindow):
         speaker_label.setObjectName("muted")
         speaker_label.setWordWrap(True)
         speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
-        detail.addWidget(labeled_box("English / original — read only", en_box))
-        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, speaker_label))
+        en_character_count_label = QLabel("—")
+        en_character_count_label.setObjectName("muted")
+        en_character_count_label.setWordWrap(True)
+        en_character_count_label.setToolTip("Visible character count for each English line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
+        en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
+        vi_character_count_label = QLabel("—")
+        vi_character_count_label.setObjectName("muted")
+        vi_character_count_label.setWordWrap(True)
+        vi_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        vi_character_count_label.setToolTip("Visible character count for each Vietnamese line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
+        vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
+
+        speaker_count_row = QWidget()
+        speaker_count_layout = QHBoxLayout(speaker_count_row)
+        speaker_count_layout.setContentsMargins(0, 0, 0, 0)
+        speaker_count_layout.setSpacing(8)
+        speaker_count_layout.addWidget(speaker_label, 1)
+        speaker_count_layout.addWidget(
+            vi_character_count_label,
+            0,
+            Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        )
+        detail.addWidget(labeled_box("English / original — read only", en_box, en_character_count_label))
+        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, speaker_count_row))
         detail.setSizes([1, 1])
         split.addWidget(detail)
         split.setSizes([430, 155])
@@ -4204,6 +4383,16 @@ class ToolkitGUI(QMainWindow):
         def set_status(text: str) -> None:
             prefix = "* " if state.get("dirty") else ""
             status.setText(prefix + text)
+
+        def characters_per_line_text(text: str) -> str:
+            counts = visible_character_counts_by_line(text)
+            return "  |  ".join(str(count) for count in counts)
+
+        def update_character_count_labels(english: str | None = None, vietnamese: str | None = None) -> None:
+            en_text = en_box.toPlainText() if english is None else english
+            vi_text = vi_box.toPlainText() if vietnamese is None else vietnamese
+            en_character_count_label.setText(characters_per_line_text(en_text))
+            vi_character_count_label.setText(characters_per_line_text(vi_text))
 
         def selected_rows() -> list[int]:
             selection = table.selectionModel()
@@ -4614,6 +4803,8 @@ class ToolkitGUI(QMainWindow):
                     vi_box.clear()
                     speaker_label.setText("Speaker: —")
                     speaker_label.setToolTip("")
+                    en_character_count_label.setText("—")
+                    vi_character_count_label.setText("—")
                     return
                 entry = po.entries[row]  # type: ignore[union-attr]
                 speaker = entry.speaker.strip() or "—"
@@ -4624,6 +4815,7 @@ class ToolkitGUI(QMainWindow):
                 if vi_box.toPlainText() != entry.msgstr:
                     vi_box.setPlainText(entry.msgstr)
                     self._clear_text_editor_undo(vi_box)
+                update_character_count_labels(entry.msgid, entry.msgstr)
                 set_status(f"Entry {row + 1}/{len(po.entries)} | line {entry.line}")  # type: ignore[union-attr]
                 refresh_suggestions_for_row(row)
             finally:
@@ -4656,6 +4848,7 @@ class ToolkitGUI(QMainWindow):
                         self._clear_text_editor_undo(vi_box)
                 finally:
                     state["detail_loading"] = False
+                update_character_count_labels(entry.msgid, text)
             refresh_row_style(row)
             if dirty:
                 state["dirty"] = True
@@ -5236,14 +5429,15 @@ class ToolkitGUI(QMainWindow):
             row = table.currentRow()
             if row < 0:
                 return
+            update_character_count_labels()
             set_entry_translation(row, vi_box.toPlainText(), record_undo=False)
 
-        def wrap_rows(rows: list[int]) -> None:
+        def wrap_rows(rows: list[int], preset_index: int | None = None) -> None:
             po = po_file()
             if po is None:
                 QMessageBox.warning(self, "PO Viewer", "Load a file first.")
                 return
-            soft_value, hard_value, cuts_value = self._linewrap_settings()
+            soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             changed = 0
             begin_po_undo_batch("wrap")
             try:
@@ -5257,21 +5451,21 @@ class ToolkitGUI(QMainWindow):
             finally:
                 end_po_undo_batch()
             set_status(
-                f"Wrapped {changed} translation entr{'y' if changed == 1 else 'ies'} "
+                f"W{self._active_linewrap_preset_index() + 1}: wrapped {changed} translation entr{'y' if changed == 1 else 'ies'} "
                 f"using Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
             )
 
-        def wrap_selected() -> None:
+        def wrap_selected(preset_index: int | None = None) -> None:
             rows = selected_rows()
             if not rows and table.currentRow() >= 0:
                 rows = [table.currentRow()]
             if not rows:
                 QMessageBox.warning(self, "PO Viewer", "Select entries to wrap.")
                 return
-            wrap_rows(rows)
+            wrap_rows(rows, preset_index)
 
         def wrap_all() -> None:
-            wrap_rows(list(range(table.rowCount())))
+            wrap_rows(list(range(table.rowCount())), self._active_linewrap_preset_index())
 
         def toggle_visual_wrap() -> None:
             state["visual_wrap"] = not bool(state.get("visual_wrap"))
@@ -5458,7 +5652,6 @@ class ToolkitGUI(QMainWindow):
         source_extra_check.stateChanged.connect(lambda _state: (self.config.__setitem__(self._include_extra_config_key("po_viewer"), source_extra_check.isChecked()), save_config(self.config)))
         wrap_view_btn.clicked.connect(toggle_visual_wrap)
         clt_color_btn.clicked.connect(toggle_clt_color_mode)
-        wrap_selected_btn.clicked.connect(wrap_selected)
         wrap_all_btn.clicked.connect(wrap_all)
         fill_btn.clicked.connect(fill_from_translafixer_sources)
         gemini_selected_btn.clicked.connect(translate_selected_with_gemini_api)

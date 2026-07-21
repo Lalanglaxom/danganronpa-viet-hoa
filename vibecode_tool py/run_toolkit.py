@@ -34,8 +34,16 @@ def _show_startup_error(message: str) -> None:
 
 try:
     from dr_po_toolkit.gui import main
-except Exception:
-    _show_startup_error(traceback.format_exc())
+except Exception as exc:
+    details = traceback.format_exc()
+    if isinstance(exc, ModuleNotFoundError) and exc.name == "PyQt6":
+        details = (
+            "PyQt6 is not installed for this Python interpreter.\n\n"
+            "From the toolkit folder, run:\n"
+            "  py -m pip install -r requirements.txt\n\n"
+            + details
+        )
+    _show_startup_error(details)
     raise
 
 

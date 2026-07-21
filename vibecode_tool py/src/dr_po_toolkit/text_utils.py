@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+import html
 import re
 import unicodedata
 
 CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>", re.IGNORECASE)
 ANY_TAG_RE = re.compile(r"<[^>\n]+>")
+BRACKET_TAG_RE = re.compile(r"\[[^\]\n]+\]")
+PERCENT_TOKEN_RE = re.compile(r"%[A-Za-z_][A-Za-z0-9_]*%")
 PLACEHOLDER_PATTERNS = {
     "printf": re.compile(r"%(?:\d+\$)?[sdifouxX]"),
     "brace": re.compile(r"\{[^{}\n]+\}"),
@@ -14,6 +17,22 @@ PLACEHOLDER_PATTERNS = {
 
 def nfc(text: str) -> str:
     return unicodedata.normalize("NFC", text or "")
+
+
+def html_escape_preserve_spacing(text: str) -> str:
+    """Escape text while preserving spaces that rich-text HTML would collapse.
+
+    Normal single spaces inside a phrase remain breakable.  Leading/trailing
+    spaces and repeated spaces become non-breaking spaces so hidden CLT tags do
+    not make accidental double spaces look like a single space in color view.
+    """
+
+    escaped = html.escape(text or "").replace("\t", "    ")
+    return re.sub(
+        r"(^ +| +$| {2,})",
+        lambda match: "&nbsp;" * len(match.group(0)),
+        escaped,
+    )
 
 
 ESCAPED_LINEBREAK_RE = re.compile(r"\\[nrt]", re.IGNORECASE)
@@ -224,6 +243,29 @@ def visible_text(text: str) -> str:
 
 def visible_len(text: str) -> int:
     return len(CLT_RE.sub("", text or ""))
+
+
+def visible_character_counts_by_line(text: str) -> list[int]:
+    """Count visible characters on every real text line.
+
+    Every remaining character counts, including spaces and punctuation, so
+    accidental doubled spaces remain visible in the metric. Game control and
+    formatting syntax is excluded: angle-bracket tags (including CLT), bracket
+    tags, percent tokens such as ``%TEXT%``, printf placeholders, brace
+    placeholders, and escaped control tokens. The returned list follows source
+    line order and includes ``0`` for empty lines.
+    """
+
+    normalized = (text or "").replace("\r\n", "\n").replace("\r", "\n")
+    counts: list[int] = []
+    for line in normalized.split("\n"):
+        visible = ANY_TAG_RE.sub("", line)
+        visible = BRACKET_TAG_RE.sub("", visible)
+        visible = PERCENT_TOKEN_RE.sub("", visible)
+        for pattern in PLACEHOLDER_PATTERNS.values():
+            visible = pattern.sub("", visible)
+        counts.append(len(visible))
+    return counts
 
 
 def placeholders_by_type(text: str) -> dict[str, list[str]]:
