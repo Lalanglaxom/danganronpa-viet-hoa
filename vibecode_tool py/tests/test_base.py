@@ -942,7 +942,7 @@ def test_config_has_danganviethoa_repository_folder_path():
     assert DEFAULT_CONFIG["danganviethoa_path"] == ""
 
 
-def test_git_commands_include_status_remote_and_expected_repository():
+def test_git_commands_use_visible_four_step_push_flow():
     import tempfile
 
     from dr_po_toolkit.git_tools import (
@@ -967,17 +967,18 @@ def test_git_commands_include_status_remote_and_expected_repository():
             assert message_file.read_text(encoding="utf-8") == "Update Vietnamese translation\n"
             push_script = create_push_script(message_file)
             script = push_script.read_text(encoding="utf-8")
-            assert "git fetch --prune origin" in script
-            assert "git rev-list --left-right --count" in script
-            assert "Remote commits not pulled" in script
-            assert "PUSH BLOCKED" in script
-            assert "git ls-files -ci --exclude-standard" in script
-            assert "git add -A" in script
-            assert "git diff --cached --stat" in script
-            assert "git commit -F" in script
-            assert "git push" in script
+            assert "[1/4] Scanning files..." in script
+            assert "[2/4] Checking staged changes..." in script
+            assert "[3/4] Creating commit..." in script
+            assert "[4/4] Uploading to remote..." in script
+            assert "git add ." in script
+            assert "git diff --cached --quiet" in script
+            assert "git commit --quiet -F" in script
+            assert "git push origin main" in script
+            assert "git diff --cached --stat" not in script
+            assert "git fetch --prune origin" not in script
+            assert "git ls-files -ci --exclude-standard" not in script
             assert 'set "FINAL_EXIT=0"' in script
-            assert 'set "FINAL_EXIT=2"' in script
             assert 'set "FINAL_EXIT=!GIT_EXIT!"' in script
             assert "endlocal & exit /b %FINAL_EXIT%" in script
             assert str(message_file.resolve()) in script
@@ -1048,6 +1049,8 @@ def test_git_launcher_keeps_console_open_and_reports_exit_code(monkeypatch):
     assert "will not close automatically" in persistent
     assert "pause >nul" in persistent
     assert captured["kwargs"]["creationflags"] == 16
+    assert "stdout" not in captured["kwargs"]
+    assert "stderr" not in captured["kwargs"]
 
 
 def test_linewrap_presets_keep_base64_and_migrate_legacy_values():

@@ -57,11 +57,10 @@ def default_wrap_presets(
     legacy_hard: object = 64,
     legacy_max_cuts: object = 2,
 ) -> list[dict[str, int]]:
-    """Return four presets; preset 1 is the locked base-64 preset.
+    """Return four editable line-wrap presets.
 
-    Presets 2-4 start with the user's previous single-preset settings so an
-    upgrade does not discard their preferred values.  They can be edited from
-    the Line Wrap tab.
+    The first preset starts with the base-64 defaults, while all presets can be
+    customized from the Line Wrap tab.
     """
 
     legacy = normalize_wrap_preset(
@@ -82,8 +81,8 @@ def normalize_wrap_presets(
 
     defaults = default_wrap_presets(legacy_soft, legacy_hard, legacy_max_cuts)
     raw_presets = value if isinstance(value, list) else []
-    presets = [dict(BASE64_WRAP_PRESET)]
-    for index in range(1, 4):
+    presets = []
+    for index in range(0, 4):
         raw = raw_presets[index] if index < len(raw_presets) else defaults[index]
         presets.append(normalize_wrap_preset(raw, defaults[index]))
     return presets

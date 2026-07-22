@@ -55,98 +55,65 @@ def create_commit_message_file(message: str) -> Path:
 
 
 def create_push_script(commit_message_file: str | Path) -> Path:
-    """Create a Windows batch script with fetch-before-push safety checks."""
+    """Create a visible Windows batch script for staging, committing, and pushing."""
     message_path = Path(commit_message_file).resolve()
     quoted_message = subprocess.list2cmdline([str(message_path)])
 
     script = f'''@echo off
 setlocal EnableExtensions EnableDelayedExpansion
 set "FINAL_EXIT=0"
-title Danganronpa Viet Hoa - Safe Git Push
+title Danganronpa Viet Hoa - Git Push
 
-echo === Remote ===
-git remote -v || goto :failed
-
-echo.
-echo === Current status ===
-git status --short --branch || goto :failed
-
-echo.
-echo === Fetching origin before push ===
-git fetch --prune origin || goto :failed
-
-set "UPSTREAM="
-for /f "delims=" %%U in ('git rev-parse --abbrev-ref --symbolic-full-name "@{{u}}" 2^>nul') do set "UPSTREAM=%%U"
-if not defined UPSTREAM (
-    echo.
-    echo PUSH BLOCKED: this branch has no upstream branch.
-    echo Set an upstream branch, or run Git Pull once, then try again.
-    goto :blocked
-)
-
-set "AHEAD=0"
-set "BEHIND=0"
-for /f "tokens=1,2" %%A in ('git rev-list --left-right --count HEAD..."!UPSTREAM!"') do (
-    set "AHEAD=%%A"
-    set "BEHIND=%%B"
-)
-echo Local commits ahead: !AHEAD!
-echo Remote commits not pulled: !BEHIND!
-
-if not "!BEHIND!"=="0" (
-    echo.
-    echo PUSH BLOCKED: origin contains commits that are not in your local branch.
-    echo Run Git Pull, resolve any conflicts, then press Git Push again.
-    goto :blocked
-)
-
-set "IGNORED_TRACKED="
-for /f "delims=" %%I in ('git ls-files -ci --exclude-standard') do set "IGNORED_TRACKED=1"
-if defined IGNORED_TRACKED (
-    echo.
-    echo PUSH BLOCKED: generated or ignored files are still tracked by Git:
-    git ls-files -ci --exclude-standard
-    echo.
-    echo To stop tracking them without deleting your local files, run once:
-    echo   git rm -r --cached .
-    echo   git add .
-    echo   git commit -m "Stop tracking ignored files"
-    echo   git push
-    goto :blocked
-)
-
-echo.
-echo === Staging changes ===
-git add -A || goto :failed
-git diff --cached --stat
-
-git diff --cached --quiet
-if errorlevel 2 goto :failed
+echo [1/4] Scanning files...
+echo       git add .
+git add .
 if errorlevel 1 (
-    git commit -F {quoted_message} || goto :failed
+    set "GIT_EXIT=!ERRORLEVEL!"
+    goto :failed_with_code
+)
+
+echo.
+echo [2/4] Checking staged changes...
+echo       git diff --cached --quiet
+git diff --cached --quiet
+set "DIFF_EXIT=!ERRORLEVEL!"
+if "!DIFF_EXIT!"=="0" (
+    echo No new staged changes. Existing local commits will still be pushed.
+) else if "!DIFF_EXIT!"=="1" (
+    echo.
+    echo [3/4] Creating commit...
+    echo       git commit --quiet -F ^<message file^>
+    git commit --quiet -F {quoted_message}
+    if errorlevel 1 (
+        set "GIT_EXIT=!ERRORLEVEL!"
+        goto :failed_with_code
+    )
 ) else (
-    echo No new working-tree changes to commit. Existing local commits will still be pushed.
+    set "GIT_EXIT=!DIFF_EXIT!"
+    goto :failed_with_code
+)
+
+if "!DIFF_EXIT!"=="0" (
+    echo.
+    echo [3/4] No commit needed.
 )
 
 del /Q {quoted_message} >nul 2>&1
 
 echo.
-echo === Pushing ===
-git push || goto :failed
+echo [4/4] Uploading to remote...
+echo       git push origin main
+git push origin main
+if errorlevel 1 (
+    set "GIT_EXIT=!ERRORLEVEL!"
+    goto :failed_with_code
+)
 
 echo.
 echo Push completed successfully.
 goto :done
 
-:blocked
-set "FINAL_EXIT=2"
-del /Q {quoted_message} >nul 2>&1
-echo.
-echo Your local files and edits were not deleted or overwritten.
-goto :done
-
-:failed
-set "GIT_EXIT=!ERRORLEVEL!"
+:failed_with_code
 set "FINAL_EXIT=!GIT_EXIT!"
 del /Q {quoted_message} >nul 2>&1
 echo.
@@ -172,7 +139,7 @@ endlocal & exit /b %FINAL_EXIT%
 
 
 def build_push_command(push_script_file: str | Path) -> str:
-    """Build the command used to run the generated safe-push batch file."""
+    """Build the command used to run the generated push batch file."""
     script_path = Path(push_script_file).resolve()
     return f"call {subprocess.list2cmdline([str(script_path)])}"
 

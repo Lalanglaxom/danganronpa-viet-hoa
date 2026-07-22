@@ -1,0 +1,487 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 本来なら点灯しているはずのランプの数は、
+#. <CLT 3>１０個<CLT>じゃなきゃおかしいんだよ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 3>Ten<CLT> of the lights should have been on. Any other\n"
+"number is incredibly suspicious!"
+msgstr ""
+
+#. お、おかしいって…どうしてよ…？
+msgctxt "0002 | TOUKO FUKAWA"
+msgid "S-Suspicious...? Why?"
+msgstr ""
+
+#. 犠牲になったみんなの事を思い出してみれば、
+#. すぐにわかるはずよ…
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid ""
+"That's simple. Just recall who's died here so far, and\n"
+"it should become clear."
+msgstr ""
+
+#. <CLT 4>犠牲になったみんな…
+#. そうだ、そこに謎を解く鍵があるんだ…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's right... That's the key to solving this\n"
+"mystery...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>１人目の犠牲者は、舞園さん…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Sayaka died first...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>２人目の犠牲者は、江ノ島さん…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Junko was second...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>３人目の犠牲者は、桑田クン…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Leon was third...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>４人目の犠牲者は、不二咲クン…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro was fourth...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>５人目の犠牲者は、大和田クン…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo was fifth...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>６人目の犠牲者は、石丸クン…
+#. ７人目の犠牲者は、山田クン…
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka was sixth, then Hifumi was seventh...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>８人目の犠牲者は、セレスさん…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste was eighth...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>９人目の犠牲者は、大神さん…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Sakura was ninth...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そして１０人目の犠牲者は、戦刃むくろ…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And victim number ten was Mukuro.\n"
+"<CLT>"
+msgstr ""
+
+#. あれ…？　全部で<CLT 3>１０人<CLT>…？
+msgctxt "0014 | AOI ASAHINA"
+msgid "Hm... So <CLT 3>ten people<CLT> in all?"
+msgstr ""
+
+#. そうなんだ。本来なら犠牲者の数は、
+#. １０人じゃなきゃおかしいんだよ。
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"That's right. Any other number should make you\n"
+"immediately suspicious."
+msgstr ""
+
+#. それなのに、生物室に保管されてる死体は、
+#. ９人分だけだった…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"But according to the lights in the bio lab, only nine\n"
+"people were being stored there..."
+msgstr ""
+
+#. し、死体が消えたって事か！？
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Y-You're saying a dead body just...up and\n"
+"disappeared!?"
+msgstr ""
+
+#. わかった！　黒幕が証拠隠滅の為に、
+#. 死体を処分しちゃったんだよ！
+msgctxt "0018 | AOI ASAHINA"
+msgid ""
+"I got it! The mastermind destroyed one of the bodies\n"
+"to get rid of evidence!"
+msgstr ""
+
+#. でも、黒幕が証拠隠滅するなら、自分が関わってる
+#. 戦刃むくろの死体を処分するはずだよ…
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"But if they wanted to do that, they would've destroyed\n"
+"Mukuro's body, since they actually killed her."
+msgstr ""
+
+#. だけど…彼女の死体は残ったままだったんだ。
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "And yet...her body was left alone."
+msgstr ""
+
+#. じゃあ…誰の死体が消えちゃったの？
+msgctxt "0021 | AOI ASAHINA"
+msgid "Then...whose body disappeared?"
+msgstr ""
+
+#. そもそも、消えた訳じゃないのかもしれない…
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid "It may very well be...that none of them disappeared."
+msgstr ""
+
+#. き、消えてないなら…
+#. どうして、死体の数が合わないのよ…ッ！
+msgctxt "0023 | TOUKO FUKAWA"
+msgid ""
+"B-But if that's true, then why doesn't the b-body\n"
+"count match...?"
+msgstr ""
+
+#. モノクマの処刑を含めた殺人は１０回起きたけど、
+#. でも、それらの犠牲者は９人しかいなかった。
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid ""
+"Including Monokuma's executions, there have apparently\n"
+"been ten deaths. But there were only nine bodies."
+msgstr ""
+
+#. …つまり、そういう事よ。
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgid "That's the point I'm trying to make."
+msgstr ""
+
+#. 全然わかんないよ！
+#. なんで、殺人が起きた回数より犠牲者の数が少ないの？
+msgctxt "0026 | AOI ASAHINA"
+msgid ""
+"I'm completely lost! How can the number of victims be\n"
+"less than the number of murders!?"
+msgstr ""
+
+#. 同じ人物が２回殺された
+msgctxt "0027 | CHOICE/RE:ACT"
+msgid "The same person was killed twice"
+msgstr ""
+
+#. 殺人が起きたのは９回だった
+msgctxt "0028 | CHOICE/RE:ACT"
+msgid "Only nine murders took place"
+msgstr ""
+
+#. 殺人が起きたのは１０回じゃなく９回だったとか…
+#. だから、死体の数も９人分しかないんじゃ…
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"There weren't actually ten murders, but nine! That's\n"
+"why there are nine bodies..."
+msgstr ""
+
+#. それはないな。
+#. モノクマの処刑も含め殺人は１０回あったはずだ。
+msgctxt "0030 | BYAKUYA TOGAMI"
+msgid ""
+"That's patently untrue. Counting Monokuma's\n"
+"executions, there have indeed been ten murders."
+msgstr ""
+
+#. それは、俺達自身も、
+#. しっかりと確認していたはずだぞ。
+msgctxt "0031 | BYAKUYA TOGAMI"
+msgid "I think we can all agree on that."
+msgstr ""
+
+#. <CLT 4>確かにそうだよな…
+#. だったら…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Actually, you're completely right. So...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 黒幕が死体を処分した
+msgctxt "0034 | CHOICE/RE:ACT"
+msgid "The mastermind destroyed a body"
+msgstr ""
+
+#. やっぱり…黒幕が誰かの死体を処分したんじゃ…
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"Just as I suspected, the mastermind destroyed a body,\n"
+"and then—"
+msgstr ""
+
+#. 証拠隠滅なら、戦刃むくろの死体を処分するはずだ。
+#. 自分の犯罪に深く関わっている死体だからな…
+msgctxt "0036 | BYAKUYA TOGAMI"
+msgid ""
+"If they were going to destroy a body, it would have\n"
+"been *Mukuro's*. The only one they're connected to..."
+msgstr ""
+
+#. それ以外の死体を処分したところで、
+#. なんの意味もないはず…お前が言った事だぞ？
+msgctxt "0037 | BYAKUYA TOGAMI"
+msgid ""
+"There's no point in destroying any body other than\n"
+"that. Didn't you *just* say all that?"
+msgstr ""
+
+#. <CLT 4>そう…だったな…
+#. だったら…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Oh...yeah, I did. Okay then...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. あれー？　答えられないんだー！
+msgctxt "0040 | JUNKO ENOSHIMA (REAL)"
+msgid "Huh? Don't you have anything to say!?"
+msgstr ""
+
+#. うぷぷぷ…なぜなら…
+#. 推理が間違ってるからだよ！
+msgctxt "0041 | JUNKO ENOSHIMA (REAL)"
+msgid "Puhuhu... It's because you know you're dead wrong!"
+msgstr ""
+
+#. <CLT 4>いや、間違ってない！
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No! I'm not wrong!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>戦刃むくろの致命傷が偽装されてたという事は…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mukuro's true cause of death has been covered up till\n"
+"now...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…ダメだ。
+#. みんなのボクに対する印象が、悪くなったみたいだ…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>殺人が起きた回数より犠牲者が少ない理由…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The reason there are less bodies than murders...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>殺人は１０回起きたけど、
+#. 犠牲者は９人しかいなかった理由…
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The explanation for more murders than victims...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その理由って…なんだ？
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why is that...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>何が起きたら、そんな事になるんだ？
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What would it take for that to make sense...?\n"
+"<CLT>"
+msgstr ""
+
+#. 同じ人物が<CLT 3>２回殺されてる<CLT>としたら…
+#. どうなのかな…？
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "What about if...the same person was <CLT 3>killed twice<CLT>?"
+msgstr ""
+
+#. は…？　２回殺されたって…？
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid "Huh? Killed twice...?"
+msgstr ""
+
+#. 今までに起きた１０回の殺人…
+#. その内１回だけは…
+msgctxt "0051 | MAKOTO NAEGI"
+msgid "Officially, ten murders have been committed so far."
+msgstr ""
+
+#. すでに殺されている人物を、
+#. もう１度、殺したものだったのかもしれない…
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"But one of the victims may have been murdered...and\n"
+"then murdered again."
+msgstr ""
+
+#. す、すでに殺されてる人物を…もう１度殺した…？
+msgctxt "0053 | TOUKO FUKAWA"
+msgid "Murdered and...m-murdered again...?"
+msgstr ""
+
+#. それなら、殺人が１０回起きたとしても、
+#. 犠牲者は９人しかいないって事になるはずだよね？
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"If that's the case, there could have been ten killings\n"
+"but still only nine victims, right?"
+msgstr ""
+
+#. そ、それは…そうかもしれないけど…
+#. でも、そんな事って…！
+msgctxt "0055 | AOI ASAHINA"
+msgid ""
+"T-Technically you're right I guess, but\n"
+"still...something like that—"
+msgstr ""
+
+#. …あり得るはず。
+#. いえ、間違いなくあったはずよ。
+msgctxt "0056 | KYOUKO KIRIGIRI"
+msgid "Could easily have happened. No, it *is* what happened."
+msgstr ""
+
+#. もう、わかっているようだな。
+#. その２回殺された人物が誰なのかも…
+msgctxt "0057 | BYAKUYA TOGAMI"
+msgid ""
+"Sounds like you're already convinced. Then can you\n"
+"tell us who was killed twice?"
+msgstr ""
+
+#. …もちろん、<CLT 3>戦刃むくろ<CLT>よ。
+msgctxt "0058 | KYOUKO KIRIGIRI"
+msgid "It was <CLT 3>Mukuro<CLT>, of course."
+msgstr ""
+
+#. つまり、彼女は戦刃むくろとして殺される前に、
+#. すでに、別の誰かとして殺されていたのよ。
+msgctxt "0059 | KYOUKO KIRIGIRI"
+msgid ""
+"Before she was killed as Mukuro Ikusaba, she was\n"
+"killed as someone else."
+msgstr ""
+
+#. だからこそ、その死体は植物庭園で見つけられる前から
+#. 生物室に保存されていた…そういう事か。
+msgctxt "0060 | BYAKUYA TOGAMI"
+msgid ""
+"And that's why the body had to be stored in the bio\n"
+"lab until the moment we found it in the garden..."
+msgstr ""
+
+#. いやいや、そりゃないでしょう！
+#. 戦刃むくろは別の誰かとして殺されてる…なんて…
+msgctxt "0061 | JUNKO ENOSHIMA (REAL)"
+msgid ""
+"No no no, that's crazy talk! She was killed as someone\n"
+"else? Come on!"
+msgstr ""
+
+#. てゆーか、誰だよ！　別の誰かって！
+msgctxt "0062 | JUNKO ENOSHIMA (REAL)"
+msgid ""
+"Besides, who could that \"someone else\" even have\n"
+"been!?"
+msgstr ""
+
+#. それが誰だったのかは…
+#. 彼女の致命傷に注目すれば見えてくるわ…
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid ""
+"All you have to do is look at those bodily injuries of\n"
+"hers and that will become obvious."
+msgstr ""
+
+#. 見えてくる訳…ないじゃん…
+msgctxt "0064 | JUNKO ENOSHIMA (REAL)"
+msgid "Nothing's gonna become obvious...!"
+msgstr ""
+
+#. だって、そんなの霧切さんの妄想だもーーん！！
+msgctxt "0065 | JUNKO ENOSHIMA (REAL)"
+msgid "Because Kyoko's totally delusional!"
+msgstr ""

@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. クライマックス推理に飛ぶ
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Jump to Closing Argument"
+msgstr ""
+
+#. ＭＴＢ１～３
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Bullet Time Battle 1-3"
+msgstr ""
+
+#. 閃きアナグラム１～２
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Hangman's Gambit 1-2"
+msgstr ""
+
+#. <CLT 23>ジャンプ先を選んでください
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Where would you like to jump to?\n"
+"<CLT>"
+msgstr ""
+
+#. ＭＴＢ１（葉隠）に飛ぶ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 1 (Hiro)"
+msgstr ""
+
+#. ＭＴＢ２（腐川）に飛ぶ
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 2 (Toko)"
+msgstr ""
+
+#. ＭＴＢ３（朝日奈）に飛ぶ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 3 (Hina)"
+msgstr ""
+
+#. <CLT 23>ＭＴＢのジャンプ先を選んでください。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Which Bullet Time Battle would you like to jump to?\n"
+"<CLT>"
+msgstr ""
+
+#. 閃きアナグラム１に飛ぶ
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 1"
+msgstr ""
+
+#. 閃きアナグラム２に飛ぶ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 2"
+msgstr ""
+
+#. <CLT 23>閃きアナグラムのジャンプ先を選んでください。
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>Which Hangman's Gambit would you like to jump to?\n"
+"<CLT>"
+msgstr ""

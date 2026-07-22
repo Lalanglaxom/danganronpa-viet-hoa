@@ -653,7 +653,7 @@ class ToolkitGUI(QMainWindow):
 
     def _linewrap_preset_tooltip(self, preset_index: int, action: str = "Wrap") -> str:
         soft, hard, cuts = self._linewrap_settings(preset_index)
-        base_note = " Fixed base-64 preset." if preset_index == 0 else " Editable in the Line Wrap tab."
+        base_note = " Editable in the Line Wrap tab."
         return f"{action} with preset W{preset_index + 1}: Soft={soft}, Hard={hard}, Cuts={cuts}.{base_note}"
 
     def _refresh_linewrap_preset_buttons(self) -> None:
@@ -884,7 +884,7 @@ class ToolkitGUI(QMainWindow):
         selected = set(self._initial_dr_options(tab_key))
         checks: dict[str, QCheckBox] = {}
         for index, option in enumerate(DR_FILE_OPTIONS):
-            checkbox = QCheckBox(option.label)
+            checkbox = QCheckBox(option.name)
             checkbox.setChecked(option.key in selected)
             checkbox.setToolTip(option.description or option.name)
             row, col = divmod(index, 4)
@@ -1104,8 +1104,9 @@ class ToolkitGUI(QMainWindow):
         git_note = QLabel(
             f"Repository: {DANGANVIETHOA_REPOSITORY_URL}\n"
             "Git Pull preserves local edits with rebase + autostash. "
-            "Git Push fetches origin first and is blocked when remote commits have not been pulled, "
-            "or when ignored generated files are still tracked. The CMD window stays open for inspection."
+            "Git Push opens a real CMD window, stages all repository files with git add ., "
+            "creates a commit when needed, and pushes main to origin. "
+            "The CMD window shows each step and stays open for inspection."
         )
         git_note.setObjectName("muted")
         git_note.setWordWrap(True)
@@ -1723,13 +1724,11 @@ class ToolkitGUI(QMainWindow):
                 cuts.setValue(int(values["max_cuts"]))
             finally:
                 preset_updating["value"] = False
-            editable = index != 0
+            editable = True
             for spin in (soft, hard, cuts):
                 spin.setEnabled(editable)
             preset_info.setText(
-                "W1 is fixed base 64."
-                if index == 0
-                else f"Editing W{index + 1}; changes save automatically."
+                f"Editing W{index + 1}; changes save automatically."
             )
 
         self._load_linewrap_preset_editor = load_preset_editor
@@ -1740,9 +1739,6 @@ class ToolkitGUI(QMainWindow):
             if preset_updating["value"]:
                 return
             index = self._active_linewrap_preset_index()
-            if index == 0:
-                load_preset_editor(0)
-                return
             presets = self._linewrap_presets()
             presets[index] = {
                 "soft": int(soft.value()),
@@ -4132,7 +4128,7 @@ class ToolkitGUI(QMainWindow):
             "Use ☑↻ to load .po files from selected checkbox Working folders. The Extra source is optional and only loads when Extra is checked. "
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
-            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z = undo text/last PO edit, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
+            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
             "Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. "
             "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
         )
@@ -4350,6 +4346,7 @@ class ToolkitGUI(QMainWindow):
             "undo_stack": [],
             "undo_batch": None,
             "undoing": False,
+            "pending_text_undo": None,
             "po_cache": {},
             "suggestion_building": False,
             "suggestion_build_token": 0,
@@ -4491,6 +4488,65 @@ class ToolkitGUI(QMainWindow):
             if isinstance(changes, dict):
                 push_po_undo_action(str(batch.get("label") or "edit"), changes)
 
+        def clear_pending_text_undo() -> None:
+            state["pending_text_undo"] = None
+
+        def commit_pending_text_undo(*, clear_native: bool = True) -> bool:
+            pending = state.get("pending_text_undo")
+            clear_pending_text_undo()
+            if not isinstance(pending, dict):
+                return False
+            po = po_file()
+            if po is None:
+                return False
+            try:
+                row = int(pending.get("row", -1))
+            except Exception:
+                return False
+            if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                return False
+            entry = po.entries[row]  # type: ignore[union-attr]
+            expected_uid = str(pending.get("uid", ""))
+            if expected_uid and entry.uid != expected_uid:
+                return False
+            old_text = str(pending.get("old", ""))
+            new_text = entry.msgstr
+            if old_text == new_text:
+                return False
+            push_po_undo_action("text edit", {row: {"old": old_text, "new": new_text}})
+            if clear_native and row == table.currentRow():
+                self._clear_text_editor_undo(vi_box)
+            return True
+
+        def track_pending_text_undo(row: int, old_text: str, new_text: str) -> None:
+            if state.get("undoing"):
+                return
+            po = po_file()
+            if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
+                return
+            pending = state.get("pending_text_undo")
+            if isinstance(pending, dict):
+                try:
+                    pending_row = int(pending.get("row", -1))
+                except Exception:
+                    pending_row = -1
+                if pending_row != row:
+                    commit_pending_text_undo()
+                    pending = None
+            if not isinstance(pending, dict):
+                pending = {
+                    "row": row,
+                    "uid": po.entries[row].uid,  # type: ignore[union-attr]
+                    "old": old_text,
+                    "new": new_text,
+                }
+            else:
+                pending["new"] = new_text
+            if str(pending.get("old", "")) == new_text:
+                clear_pending_text_undo()
+            else:
+                state["pending_text_undo"] = pending
+
         def row_for_undo_change(change: dict[str, object]) -> int | None:
             po = po_file()
             if po is None:
@@ -4519,6 +4575,7 @@ class ToolkitGUI(QMainWindow):
             ):
                 if self._undo_text_editor(vi_box):
                     return
+            commit_pending_text_undo()
             stack = _po_undo_stack()
             if not stack:
                 set_status("Nothing to undo.")
@@ -4828,6 +4885,8 @@ class ToolkitGUI(QMainWindow):
             entry = po.entries[row]  # type: ignore[union-attr]
             if entry.msgstr == text:
                 return False
+            if record_undo:
+                commit_pending_text_undo()
             old_text = entry.msgstr
             if record_undo:
                 record_po_undo(row, old_text, text, undo_label)
@@ -5048,6 +5107,7 @@ class ToolkitGUI(QMainWindow):
             state["po"] = po
             state["path"] = path
             state["dirty"] = False
+            clear_pending_text_undo()
             _po_undo_stack().clear()
             self._clear_text_editor_undo(vi_box)
             select_combo_path(path)
@@ -5067,6 +5127,7 @@ class ToolkitGUI(QMainWindow):
             if po is None or path is None:
                 QMessageBox.warning(self, "PO Viewer", "No file loaded.")
                 return
+            commit_pending_text_undo()
             try:
                 save_po(po, path)
             except Exception as exc:
@@ -5427,10 +5488,14 @@ class ToolkitGUI(QMainWindow):
             if state.get("detail_loading"):
                 return
             row = table.currentRow()
-            if row < 0:
+            po = po_file()
+            if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                 return
+            new_text = vi_box.toPlainText()
+            old_text = po.entries[row].msgstr  # type: ignore[union-attr]
             update_character_count_labels()
-            set_entry_translation(row, vi_box.toPlainText(), record_undo=False)
+            track_pending_text_undo(row, old_text, new_text)
+            set_entry_translation(row, new_text, record_undo=False)
 
         def wrap_rows(rows: list[int], preset_index: int | None = None) -> None:
             po = po_file()
@@ -5607,9 +5672,14 @@ class ToolkitGUI(QMainWindow):
             else:
                 set_status(f"Gemini API translated {changed} selected entr{'y' if changed == 1 else 'ies'}. Save when ready.")
 
-        def current_changed(row: int, _col: int, _prev_row: int, _prev_col: int) -> None:
+        def current_changed(row: int, _col: int, previous_row: int, _prev_col: int) -> None:
             if state.get("loading"):
                 return
+            if row != previous_row:
+                commit_pending_text_undo()
+                # Never carry the previous entry's native editor history into a
+                # different row, even when both translations happen to match.
+                self._clear_text_editor_undo(vi_box)
             load_detail(row)
 
         def _focus_is_vi_editor() -> bool:

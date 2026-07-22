@@ -1,0 +1,730 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 23>「キーン、コーン…　カーン、コーン」
+#. <CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>*Ding dong, bing bong*\n"
+"<CLT>"
+msgstr ""
+
+#. オマエラ、おはようございます！
+#. 朝です、７時になりました！　起床時間ですよ～！
+msgctxt "0002 | MONOKUMA"
+msgid ""
+"Good morning, everyone! It is now 7 a.m. and nighttime\n"
+"is officially over! Time to rise and shine!"
+msgstr ""
+
+#. さぁて、今日も張り切っていきましょう～！
+msgctxt "0003 | MONOKUMA"
+msgid "Get ready to greet another beee-yutiful day!"
+msgstr ""
+
+#. ………………
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. …………………………
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. う…うぅ……
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Grn..."
+msgstr ""
+
+#. <CLT 4>いつも以上に…
+#. ゆっくりと視界が開ける…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It took longer than usual for me to open my eyes.\n"
+"<CLT>"
+msgstr ""
+
+#. …………………………
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. ふぅ……
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "Haa..."
+msgstr ""
+
+#. <CLT 4>まず、大きな息を１つ吐き出した。
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I let out a deep sigh to bring myself up the rest of\n"
+"the way.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>悪寒も、頭痛も、体のダルさも、
+#. すっかりどこかに消えていた…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The chills, the aches, the unfathomable lethargy—they\n"
+"had all disappeared in the night.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ただ…体が汗でグッショリだった……
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>All that was left was me, drenched in sweat...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その原因は、おそらく風邪のせいだけじゃない…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wasn't just because of whatever bug I'd caught,\n"
+"either. It was also...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>昨日の夢<CLT>…
+msgctxt "0014 | MAKOTO NAEGI"
+msgid "...<CLT 3>the dream I'd had<CLT>."
+msgstr ""
+
+#. <CLT 4>一体なんだったんだ…？
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What the hell was that...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いや、そもそも…
+#. あれは夢だったのか…？
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I mean...was it even really a dream?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクは必死で思い返してみた…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I was desperate to recall it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>途切れ途切れの映像を、
+#. 記憶の底から引っ張り出してくる…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I scrambled to grab onto fragments of the dream and\n"
+"reel them up from the depths of my memory.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そうだ…確か昨日は……
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's right. I remember last night...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>熱でうなされてたせいで…
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I came down with a fever, and couldn't quite get to\n"
+"sleep.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>よく…わからない声を聞いて…
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And I...I heard a voice... I didn't really\n"
+"understand...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それで、その後…
+#. <CLT>
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And then...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ふと目覚めたら…
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>All of a sudden, I was awake.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>妙な覆面姿の人物がベッドの横に立ってたんだ。
+#. しかも…
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And there was a strange person standing next to my\n"
+"bed, wearing a...mask.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4><CLT><CLT 3>ナイフ<CLT><CLT 4>を手にしてた…
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And...they were <CLT><CLT 3>holding a knife<CLT><CLT 4>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>必死に抵抗した気がする…
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I want to say I fought them off, but...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だけど、よく覚えてない……
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I don't actually remember.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>熱のせいで、意識と体が剥離したような…
+#. そんな感覚に陥っていた。
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I felt like my mind had been detached from my body,\n"
+"burning up with fever.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>自分の体がどこか遠くで動いているような感覚…
+#. そのせいで…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I was somewhere far away, watching my body move on its\n"
+"own. And because of that...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>自分が、何をしたのかさえ覚えてない。
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I don't remember what really happened.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だけど、きっと…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But still...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>無我夢中で抵抗した気がする…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I feel like I resisted them desperately, feverishly...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その直後、また意識が途切れて…
+#. 次に、気付いた時には…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After that, things go black again. The next thing I\n"
+"remember...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そこには霧切さんが…
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...Kyoko was there.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも…なんで霧切さんがボクの部屋に？
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...what would she have been doing in my room?\n"
+"<CLT>"
+msgstr ""
+
+#. 変な夢……
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "What a strange dream."
+msgstr ""
+
+#. <CLT 4>いや、あれは本当に夢だったのか？
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No... Was it really a dream?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>何か…それを確かめる方法は…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>How can I possibly find out either way...?\n"
+"<CLT>"
+msgstr ""
+
+#. はい
+msgctxt "0039 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0040 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0041 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>昨日の夢が…本当に夢だったのかどうか…
+#. それを確かめる方法は…
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Is there any way to confirm if...that really was a\n"
+"dream or not...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>昨日の夢が…
+#. 本当に夢だったのかどうか…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was it a dream...? Or did that really happen?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>シャワールームを覗いたところで、
+#. 確かめようないな…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't think the bathroom has the answer, whatever it\n"
+"is...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0046 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>昨日の夢が…
+#. 本当に夢だったのかどうか…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was it a dream...? Or did that really happen?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな鉄板じゃ、
+#. 確かめようないな…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The answer's not hiding behind this metal plate...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0050 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>昨日の夢が…
+#. 本当に夢だったのかどうか…
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was it a dream...? Or did that really happen?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな鉄板じゃ、
+#. 確かめようないな…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The answer's not hiding behind this metal plate...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0054 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>昨日の夢が…
+#. 本当に夢だったのかどうか…
+#. <CLT>
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was it a dream...? Or did that really happen?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんなメモなんかじゃ、
+#. 確かめようないな…
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I doubt I'll find the answer written on this\n"
+"notepad...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0058 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>昨日の夢が…
+#. 本当に夢だったのかどうか…
+#. <CLT>
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was it a dream...? Or did that really happen?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな掃除道具じゃ、
+#. 確かめようないな…
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The answer isn't hidden in here, that's for sure...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0062 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>机の引き出しを開くと…
+#. <CLT>
+msgctxt "0063 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I opened the desk drawer, and...\n"
+"<CLT>"
+msgstr ""
+
+#. あれ…？
+msgctxt "0064 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. <CLT 4>…空だ。何も入っていない。
+#. <CLT>
+msgctxt "0065 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's empty. There's nothing inside...\n"
+"<CLT>"
+msgstr ""
+
+#. いや、でも何も入ってないって…
+#. そんなの、おかしい…
+msgctxt "0066 | MAKOTO NAEGI"
+msgid "Wait, nothing inside? That's...strange."
+msgstr ""
+
+#. <CLT 4>だって、ボクは確かに、
+#. 引き出しにしまっておいたはずだ。
+#. <CLT>
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Because it definitely wasn't before.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんから預かった…
+#. あの<CLT><CLT 3>サバイバルナイフ<CLT><CLT 4>を…
+#. <CLT>
+msgctxt "0068 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm positive I put the <CLT><CLT 3>knife<CLT><CLT 4> I got from Toko in\n"
+"here...\n"
+"<CLT>"
+msgstr ""
+
+#. という事は…
+msgctxt "0069 | MAKOTO NAEGI"
+msgid "Wait, that means..."
+msgstr ""
+
+#. <CLT 4>あのナイフは…
+#. ボクが預かってたサバイバルナイフ…！！
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The knife they told me to keep safe...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そんな気はしてたけど…
+#. やっぱり、そうだったんだな。
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I knew it... I just had a feeling...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>つまり、あれは<CLT><CLT 3>夢じゃない<CLT><CLT 4>って事か…！
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It <CLT><CLT 3>wasn't a dream<CLT><CLT 4>, after all!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だとすると、ますます訳がわからない…
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But if that's true, this all makes even less sense...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>どうして、ボクが襲われなきゃいけないんだ？
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why would someone have wanted to attack me?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そもそも、あの覆面は何者なんだ…？
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And who was that behind the mask?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それに…なんで霧切さんが…？
+#. <CLT>
+msgctxt "0076 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And why was Kyoko...?\n"
+"<CLT>"
+msgstr ""
+
+#. どう…なってるんだよ…？
+msgctxt "0077 | MAKOTO NAEGI"
+msgid "What the hell is going on...?"
+msgstr ""
+
+#. ………………
+msgctxt "0078 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>とにかく…１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, I don't think I'm gonna figure it out on my own.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0080 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. そこで、みんなに相談してみよう…
+msgctxt "0081 | MAKOTO NAEGI"
+msgid "Then I can talk to everyone else about it..."
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0083 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>何か…証拠を探そう…
+#. <CLT>
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should look for some kind of evidence...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0085 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0086 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. <CLT 4>何か…証拠を探そう…
+#. <CLT>
+msgctxt "0087 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should look for some kind of evidence...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、これ以上１人で考えてても、
+#. らちが明かない…
+#. <CLT>
+msgctxt "0088 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Anyway, standing here thinking about it isn't gonna\n"
+"help anything.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 3>食堂<CLT>に…行こう…
+msgctxt "0089 | MAKOTO NAEGI"
+msgid "I should head to the <CLT 3>dining hall<CLT>."
+msgstr ""
+
+#. はい
+msgctxt "0090 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0091 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0092 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>何か…証拠を探そう…
+#. <CLT>
+msgctxt "0093 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should look for some kind of evidence...\n"
+"<CLT>"
+msgstr ""

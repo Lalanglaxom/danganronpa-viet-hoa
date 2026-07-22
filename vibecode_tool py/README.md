@@ -317,7 +317,18 @@ If `run_toolkit.vbs` does not open the app after the PyQt UI update, PyQt6 is us
 
 In **Settings**, select the cloned `danganronpa-viet-hoa` repository under **danganviethoa folder**. **Git Pull** opens Command Prompt in that folder and runs `git fetch` followed by `git pull --rebase --autostash`, which temporarily protects uncommitted edits and reapplies them after updating.
 
-**Git Push** asks for a commit message, fetches `origin`, and compares the current branch with its upstream before staging anything. Push is blocked when remote commits have not been pulled, when the branch has no upstream, or when ignored/generated files such as `__pycache__` are still tracked. Local files are left unchanged when blocked.
+**Git Push** asks for a commit message and opens a real Command Prompt window so Git runs directly in front of the user. The window reports four concise steps—scanning files, checking staged changes, creating the commit, and uploading to the remote—without listing every staged filename in the app UI.
+
+The push flow is:
+
+```cmd
+git add .
+git diff --cached --quiet
+git commit --quiet -F <temporary-message-file>
+git push origin main
+```
+
+`git commit -F` is used instead of embedding the message in the command line, which safely supports quotes and special characters. `--quiet` suppresses Git's per-file commit summary. All repository folders, including e04, e05, and e06, remain included by `git add .` unless excluded by the repository's `.gitignore` rules.
 
 The configured repository is:
 

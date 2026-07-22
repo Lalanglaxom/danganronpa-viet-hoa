@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. バッドエンドルートに飛ぶ
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Jump to Bad Ending"
+msgstr ""
+
+#. ＭＴＢ（腐川）に飛ぶ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle (Toko)"
+msgstr ""
+
+#. 閃きアナグラム１～２
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 1-2"
+msgstr ""
+
+#. <CLT 23>ジャンプ先を選んでください
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>Where would you like to jump to?\n"
+"<CLT>"
+msgstr ""
+
+#. 閃きアナグラム１に飛ぶ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 1"
+msgstr ""
+
+#. 閃きアナグラム２に飛ぶ
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 2"
+msgstr ""
+
+#. <CLT 23>閃きアナグラムのジャンプ先を選んでください。
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>Which Hangman's Gambit would you like to jump to?\n"
+"<CLT>"
+msgstr ""
