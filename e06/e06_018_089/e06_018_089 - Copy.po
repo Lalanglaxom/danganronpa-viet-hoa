@@ -1,0 +1,2235 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 【戦刃むくろの死体】
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "[Mukuro's body]"
+msgstr ""
+
+#. 戦場むくろの死体って…！
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Mukuro's corpse...?"
+msgstr ""
+
+#. 本当に！？　その冷蔵庫の中に、
+#. 戦刃むくろの死体が入ってるの！？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Mukuro's body is inside the fridge!?"
+msgstr ""
+
+#. 今までのように、私達が学級裁判をしている間に、
+#. 運ばれて来たんでしょうね…
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid ""
+"Just like every other time, the mastermind probably\n"
+"brought it up here while we were in the class trial."
+msgstr ""
+
+#. …黒幕がやった？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "The mastermind did it...?"
+msgstr ""
+
+#. 戦刃むくろの学級裁判がまだ続くとは、
+#. 思ってもいなかったから…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"Because they assumed we wouldn't be doing the class\n"
+"trial over again, I guess..."
+msgstr ""
+
+#. そう…かもしれないわね…
+msgctxt "0007 | KYOUKO KIRIGIRI"
+msgid "You may be right..."
+msgstr ""
+
+#. どっちにしても…
+#. これで、ようやく彼女の死体を調べられるわ。
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"Either way, now I can finally get a good look at the\n"
+"body."
+msgstr ""
+
+#. <CLT 4>そっか、霧切さんは前の捜査の時は、
+#. 死体を調べる時間もなかったんだったな…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Oh, that's right. Kyoko didn't get a chance to check\n"
+"the body during the last investigation.\n"
+"<CLT>"
+msgstr ""
+
+#. …さっそく今から、
+#. 戦刃むくろの死体を調べ直してみるわ。
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid ""
+"I need to do my own examination of the corpse as soon\n"
+"as possible."
+msgstr ""
+
+#. 今度こそ、この死体から手掛かりを見つけて、
+#. 黒幕のしっぽを掴んでみせる…
+msgctxt "0011 | KYOUKO KIRIGIRI"
+msgid ""
+"I'm going to find a clue this time, and I'm going to\n"
+"grab the mastermind by the tail..."
+msgstr ""
+
+#. じゃあ…ボクはどうしてればいいのかな…？
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "Okay, so...what should *I* do?"
+msgstr ""
+
+#. その辺で待ってたら？
+#. 後で、捜査結果を教えてあげるわよ。
+msgctxt "0013 | KYOUKO KIRIGIRI"
+msgid ""
+"Why don't you just...wait over there? I'll let you\n"
+"know as soon as I'm finished."
+msgstr ""
+
+#. <CLT 4>その辺…って言われてもな…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Just...wait over there? That's it?\n"
+"<CLT>"
+msgstr ""
+
+#. 【説明】
+msgctxt "0015 | CHOICE/RE:ACT"
+msgid "[Report]"
+msgstr ""
+
+#. それで…どんな手掛かりを見つけたの？
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "So, did you find anything?"
+msgstr ""
+
+#. 死体の傷口や出血の跡を
+#. じっくりと調べてみたんだけど…
+msgctxt "0017 | KYOUKO KIRIGIRI"
+msgid ""
+"I paid careful attention to the wounds and the traces\n"
+"of blood. And it seems highly likely that..."
+msgstr ""
+
+#. どうやら、腹部の傷も、後頭部の傷も、
+#. <CLT 3>死後に受けた<CLT>可能性が高そうよ…
+msgctxt "0018 | KYOUKO KIRIGIRI"
+msgid ""
+"...the stomach wound and blow to the back of the head\n"
+"were inflicted <CLT 3>after death<CLT>."
+msgstr ""
+
+#. …え？
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "Really...?"
+msgstr ""
+
+#. 死体が焼けた影響で、わかりにくくなっていたけど、
+#. 間違いないでしょうね。
+msgctxt "0020 | KYOUKO KIRIGIRI"
+msgid ""
+"The burnt tissue made things a little difficult,\n"
+"but I'm completely confident in my findings."
+msgstr ""
+
+#. <CLT 4>つまり、腹部の傷も後頭部の傷も、
+#. 致命傷とは考えられないって事か？
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So that means neither of those were the fatal injury,\n"
+"right?\n"
+"<CLT>"
+msgstr ""
+
+#. じゃあ、あの死体の本当の致命傷って…
+msgctxt "0022 | MAKOTO NAEGI"
+msgid "Then what *was* the fatal injury...?"
+msgstr ""
+
+#. <CLT 4>爆破による損傷が激しい為、死体の身元は不明。
+#. <CLT>
+msgctxt "0023 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"Due to the explosion, the victim's identity\n"
+"is unknown.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>この爆破は、被害者の死後に行われている。
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"They were, however, dead before the blast.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腹部のナイフの傷は背中まで達している。
+#. このナイフによる刺し傷は、１ヵ所のみ。
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"The victim had been stabbed a single time with a\n"
+"knife, which went completely through the body.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>また、後頭部に殴られた形跡もある。
+#. 鉄パイプ程度の太さの棒状の物で殴られた様子。
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"They had also been struck in the head with an object\n"
+"about as thick as a metal pipe.\"\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>他にも、全身に数多くの傷跡があるが、
+#. ここ数日のものではなく、以前からあった傷のようだ。
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"The body was covered with other wounds, but these\n"
+"were at least several days old.\"\n"
+"<CLT>"
+msgstr ""
+
+#. 残る可能性は<CLT 3>“全身の数多くの傷”<CLT>だけど、
+#. それって、古傷だったはずだし…
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"The only other option is those \"<CLT 3>other wounds<CLT>,\" but\n"
+"the file said they were old."
+msgstr ""
+
+#. …古傷なんて、どこにも書いてないわよ。
+msgctxt "0029 | KYOUKO KIRIGIRI"
+msgid "Where does it say they're old?"
+msgstr ""
+
+#. …え？
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr ""
+
+#. モノクマファイルには、
+#. <CLT 3>“ここ数日のものではない傷”<CLT>と書いてあるだけよ。
+msgctxt "0031 | KYOUKO KIRIGIRI"
+msgid ""
+"All the Monokuma File says is that they were inflicted\n"
+"<CLT 3>at least several days ago<CLT>."
+msgstr ""
+
+#. それって、何か違うの…？
+msgctxt "0032 | MAKOTO NAEGI"
+msgid "I...guess I don't see the difference."
+msgstr ""
+
+#. 大いに違うわ。特に言葉の印象がね。
+msgctxt "0033 | KYOUKO KIRIGIRI"
+msgid ""
+"Well the difference is immense, considering the\n"
+"impression they give."
+msgstr ""
+
+#. あなたは“以前からあった傷”という言葉から、
+#. <CLT 3>“古傷”<CLT>という言葉を連想したみたいだけど…
+msgctxt "0034 | KYOUKO KIRIGIRI"
+msgid ""
+"You seem to be equating \"several days old\" with simply\n"
+"\"<CLT 3>old<CLT>.\""
+msgstr ""
+
+#. だけど、その連想がクセモノだったのよ。
+msgctxt "0035 | KYOUKO KIRIGIRI"
+msgid "But that doesn't quite follow logically."
+msgstr ""
+
+#. 古傷って言葉から受ける印象…
+#. 殺人とは関係ないものに思えるでしょ？
+msgctxt "0036 | KYOUKO KIRIGIRI"
+msgid ""
+"\"Old wounds,\" it makes it sound like they've been\n"
+"there forever, like they're not related to the murder."
+msgstr ""
+
+#. …そうじゃないって事？
+msgctxt "0037 | MAKOTO NAEGI"
+msgid "Are you saying...they are?"
+msgstr ""
+
+#. でも、ボクらがモノクマファイルを受け取ったのは、
+#. 戦刃むくろが殺された直後だったはずだよ？
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"But we all got the Monokuma File right after she was\n"
+"killed, right?"
+msgstr ""
+
+#. その時点で、ここ数日の傷じゃないって事は、
+#. やっぱり致命傷だとは考えられないんじゃ…
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"So if the wounds were at least a few days old, there's\n"
+"no way they could've had anything to do with it."
+msgstr ""
+
+#. 戦刃むくろが殺された事自体、
+#. ここ数日の事じゃなかったとしたら…？
+msgctxt "0040 | KYOUKO KIRIGIRI"
+msgid ""
+"But what if Mukuro herself wasn't killed within the\n"
+"last few days?"
+msgstr ""
+
+#. …え！？
+msgctxt "0041 | MAKOTO NAEGI"
+msgid "What...!?"
+msgstr ""
+
+#. 可能性の１つとしては、考えられるはずよ？
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgid ""
+"Certainly you can allow it as one of the many\n"
+"possibilities, can't you?"
+msgstr ""
+
+#. 可能性の１つ…？
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "One of...many?"
+msgstr ""
+
+#. 探偵は超能力者じゃないわ。
+#. 最初から１つの結論を導き出すなんて事は出来ない。
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid ""
+"A detective doesn't have supernatural powers. There's\n"
+"no way to predict the answer from the beginning."
+msgstr ""
+
+#. むしろ、優秀な探偵っていうのは、
+#. 最初は多くの可能性を頭の中に描くものよ…
+msgctxt "0045 | KYOUKO KIRIGIRI"
+msgid ""
+"Instead, the ideal detective begins by imagining as\n"
+"many possible scenarios as they can."
+msgstr ""
+
+#. 常識や偏見や固定概念に惑わされる事なく、
+#. たくさんの可能性を思い描くところから始まり…
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid ""
+"They envision these possibilities without prejudice,\n"
+"without bias, using only their logic and common sense."
+msgstr ""
+
+#. そして、捜査を重ねる事で、
+#. それらの可能性を精査していくのよ。
+msgctxt "0047 | KYOUKO KIRIGIRI"
+msgid ""
+"Then, as they investigate, they test what they find\n"
+"against each of these possibilities."
+msgstr ""
+
+#. あなたに探偵の流儀を教えても、
+#. 仕方ないかもしれないけど…
+msgctxt "0048 | KYOUKO KIRIGIRI"
+msgid ""
+"Of course, me telling you this doesn't mean you'll be\n"
+"any good at detective work."
+msgstr ""
+
+#. でも、謎の解明を目指す以上は、
+#. あなたも覚えておくべきかもね。
+msgctxt "0049 | KYOUKO KIRIGIRI"
+msgid ""
+"But beyond using that to solve this particular\n"
+"mystery, you should keep it in mind for the future."
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>霧切の証言<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0050 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Kyoko's Account<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. ついでに、<CLT 1>【死体に関して知りたい事】<CLT>があるなら、
+#. 今の内に聞いておいた方がいいわよ。
+msgctxt "0051 | KYOUKO KIRIGIRI"
+msgid ""
+"So, if there's anything else you'd like to know about\n"
+"<CLT 1>[the condition of the body]<CLT>, now's the time."
+msgstr ""
+
+#. おそらく、死体を調べられる機会は、
+#. これで最後のはずだから…
+msgctxt "0052 | KYOUKO KIRIGIRI"
+msgid ""
+"We probably won't get another chance to interact with\n"
+"it."
+msgstr ""
+
+#. 【死体に関して知りたい事】
+msgctxt "0053 | CHOICE/RE:ACT"
+msgid "[The condition of the body]"
+msgstr ""
+
+#. あ、そう言えば、１つだけあるよ。
+msgctxt "0054 | MAKOTO NAEGI"
+msgid "Come to think of it, there was one thing..."
+msgstr ""
+
+#. さっき、戦刃むくろのプロフィールを見た時、
+#. 彼女の身長や体重を見たんだけどさ…
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"Earlier, when I was looking at Mukuro's profile, it\n"
+"listed her height and weight..."
+msgstr ""
+
+#. 身長１６９センチ、体重４４キロ。
+#. スリーサイズは、８０・５５・８２…でしょ？
+msgctxt "0056 | KYOUKO KIRIGIRI"
+msgid ""
+"5 foot 7 inches, 97 pounds. Vitals were...31-22-32.\n"
+"Did I get all that right?"
+msgstr ""
+
+#. 覚えてるんだ…
+msgctxt "0057 | MAKOTO NAEGI"
+msgid "You remembered all that...?"
+msgstr ""
+
+#. この死体とも、確かに一致していたわよ。
+msgctxt "0058 | KYOUKO KIRIGIRI"
+msgid "They are indeed consistent with the corpse."
+msgstr ""
+
+#. じゃあ…やっぱり…
+msgctxt "0059 | MAKOTO NAEGI"
+msgid "So then..."
+msgstr ""
+
+#. フェンリルのタトゥーの件もあるし、
+#. 間違いないでしょうね。
+msgctxt "0060 | KYOUKO KIRIGIRI"
+msgid ""
+"And don't forget about the Fenrir tattoo. There's\n"
+"absolutely no mistake..."
+msgstr ""
+
+#. 死んだのは…戦刃むくろよ…！
+msgctxt "0061 | KYOUKO KIRIGIRI"
+msgid ""
+"Our victim in this case is, without a doubt, Mukuro\n"
+"Ikusaba...!"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>戦刃むくろのプロフィール<CLT><CLT 23>を更新しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0062 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Mukuro Ikusaba's Profile<CLT><CLT 23>\" has been updated in the\n"
+"Truth Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. …聞きたい事はそれだけ？
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid "Is that all you wanted to ask?"
+msgstr ""
+
+#. う、うん…そうだと思う…
+msgctxt "0064 | MAKOTO NAEGI"
+msgid "Y-Yeah, I think so..."
+msgstr ""
+
+#. じゃあ、これで…
+#. 戦刃むくろの死体にも用はないわね。
+msgctxt "0065 | KYOUKO KIRIGIRI"
+msgid ""
+"Then it looks like we have no further business with\n"
+"Mukuro's body."
+msgstr ""
+
+#. …行きましょうか。ここ寒いし。
+msgctxt "0066 | KYOUKO KIRIGIRI"
+msgid "Let's get going. It's kind of chilly in here..."
+msgstr ""
+
+#. あ、待ってよ…
+#. 死体を戻してあげないの？
+msgctxt "0067 | MAKOTO NAEGI"
+msgid "Oh, wait, are we not gonna put the body back?"
+msgstr ""
+
+#. このまま出しておくのも…
+#. 可哀相じゃないかな…
+msgctxt "0068 | MAKOTO NAEGI"
+msgid ""
+"Don't you think it's kinda...sad, leaving it out like\n"
+"this?"
+msgstr ""
+
+#. …可哀相？
+msgctxt "0069 | KYOUKO KIRIGIRI"
+msgid "Sad...?"
+msgstr ""
+
+#. 忘れたの？　彼女も敵の１人なのよ…
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgid "Did you forget? She was our enemy once."
+msgstr ""
+
+#. <CLT 3>“超高校級の絶望”<CLT>の１人なのよ…
+msgctxt "0071 | KYOUKO KIRIGIRI"
+msgid "A part of the <CLT 3>Ultimate Despair<CLT>."
+msgstr ""
+
+#. で、でもさ…殺されたって事は…
+#. 結局は被害者な訳だし…
+msgctxt "0072 | MAKOTO NAEGI"
+msgid "B-But she still got killed. She's still a victim..."
+msgstr ""
+
+#. …自業自得って言葉は知ってる？
+msgctxt "0073 | KYOUKO KIRIGIRI"
+msgid ""
+"Have you ever heard the phrase \"you reap what\n"
+"you sow\"?"
+msgstr ""
+
+#. そうかもしれないけど…
+#. でも、やっぱり……
+msgctxt "0074 | MAKOTO NAEGI"
+msgid "W-Well, yeah, but still..."
+msgstr ""
+
+#. ………………
+msgctxt "0075 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. あなたは本当に甘いのね…
+msgctxt "0076 | KYOUKO KIRIGIRI"
+msgid "You really are naive, you know that?"
+msgstr ""
+
+#. 本当に…呆れるくらいに……
+msgctxt "0077 | KYOUKO KIRIGIRI"
+msgid "It's really quite appalling..."
+msgstr ""
+
+#. <CLT 4>だけど、そこでボクを突き放す訳でもなく、
+#. 手伝ってくれる霧切さんも…
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But she could have abandoned me...but she decided to\n"
+"help me instead.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>彼女に言わせれば、
+#. “甘い”って事なのかな…？
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So for someone like that, what does it mean to be\n"
+"\"naive\"?\n"
+"<CLT>"
+msgstr ""
+
+#. じゃあ、これで…
+#. この部屋での捜査はお終いよ。
+msgctxt "0080 | KYOUKO KIRIGIRI"
+msgid "I think we've done all we can do here."
+msgstr ""
+
+#. ここからは、また別行動ね…
+msgctxt "0081 | KYOUKO KIRIGIRI"
+msgid "Back to our separate investigations, yes?"
+msgstr ""
+
+#. あ、ちょっと待って…！
+msgctxt "0082 | MAKOTO NAEGI"
+msgid "Ah, hold on!"
+msgstr ""
+
+#. <CLT 4>最後に、もう１つ残っていたはずだ。
+#. <CLT>
+msgctxt "0083 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I still have one more thing to do...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さんに聞いておかなきゃいけない事が…
+#. <CLT>
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Something I need to talk to Kyoko about...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ロッカールームで見つけた…
+#. あの手帳の件…
+#. <CLT>
+msgctxt "0085 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I need to ask her about the pocketbook I found in that\n"
+"locker.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>確かめない訳には…いかないよな…
+#. <CLT>
+msgctxt "0086 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If I don't do it now...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>再び生物室にやって来たところで…
+#. <CLT>
+msgctxt "0087 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I decided to visit the bio lab one more time.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>真っ先に、ボクの視界に飛び込んできたのは…
+#. <CLT>
+msgctxt "0088 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And the first thing I saw when I got there...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>床に倒れている彼女の姿だった。
+#. <CLT>
+msgctxt "0089 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...was her, passed out. Again.\n"
+"<CLT>"
+msgstr ""
+
+#. え…？　腐川さん…？
+msgctxt "0090 | MAKOTO NAEGI"
+msgid "Huh? Toko...?"
+msgstr ""
+
+#. 死体をしまうのは…
+#. 少し待った方がいいみたいよ…
+msgctxt "0091 | KYOUKO KIRIGIRI"
+msgid "Maybe we should wait a second before closing it."
+msgstr ""
+
+#. …え？　どうして？
+msgctxt "0092 | MAKOTO NAEGI"
+msgid "Huh? How come...?"
+msgstr ""
+
+#. ここに入っているのが、
+#. <CLT 1>【戦刃むくろの死体】<CLT>だからよ…
+msgctxt "0093 | KYOUKO KIRIGIRI"
+msgid "Because <CLT 1>[Mukuro's body]<CLT> is in here."
+msgstr ""
+
+#. <CLT 4>え……？
+#. <CLT>
+msgctxt "0094 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>あの集合写真の件…
+#. 霧切さんにも聞いておいた方がいいよな…
+#. <CLT>
+msgctxt "0095 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should ask Kyoko about that group photo...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だって、あそこには…
+#. 霧切さんも写ってたんだし…
+#. <CLT>
+msgctxt "0096 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After all, she's in it too.\n"
+"<CLT>"
+msgstr ""
+
+#. ねぇ、霧切さん…
+#. 調べながらでいいから聞いて欲しい事があるんだ…
+msgctxt "0097 | MAKOTO NAEGI"
+msgid ""
+"Don't let me interrupt your investigation, but I\n"
+"wanted to talk to you about something."
+msgstr ""
+
+#. ………………
+msgctxt "0098 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. …何？
+msgctxt "0099 | KYOUKO KIRIGIRI"
+msgid "What is it?"
+msgstr ""
+
+#. さっきの…モノクマアナウンスの件なんだけどさ…
+msgctxt "0100 | MAKOTO NAEGI"
+msgid "It's about that announcement Monokuma made earlier..."
+msgstr ""
+
+#. …ヒントがどうのってヤツなら、
+#. 行ってないわよ…
+msgctxt "0101 | KYOUKO KIRIGIRI"
+msgid ""
+"You mean the one about a \"hint\" or something? I didn't\n"
+"take him up on the offer."
+msgstr ""
+
+#. え？　どうして？
+msgctxt "0102 | MAKOTO NAEGI"
+msgid "Huh? Why not?"
+msgstr ""
+
+#. このタイミングでヒントなんて、
+#. 私達を惑わそうとしてるに決まってじゃない。
+msgctxt "0103 | KYOUKO KIRIGIRI"
+msgid ""
+"The only reason he'd give us a \"hint\" at this point\n"
+"would be to confuse us, to cloud our judgment."
+msgstr ""
+
+#. それに、ヒントなんかなくたって、
+#. 自力で謎を解いてみせる…
+msgctxt "0104 | KYOUKO KIRIGIRI"
+msgid ""
+"I can solve this mystery on my own, without whatever\n"
+"hints he may have to offer."
+msgstr ""
+
+#. そっか…そうだよね…
+msgctxt "0105 | MAKOTO NAEGI"
+msgid "That's...a good point."
+msgstr ""
+
+#. <CLT 4>霧切さんの意見も聞いておきたかったけど、
+#. 仕方がないか…
+#. <CLT>
+msgctxt "0106 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I wish I could go back and do the same thing,\n"
+"but what's done is done, I guess...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それに、この霧切さんの様子からして…
+#. <CLT>
+msgctxt "0107 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Standing here looking at her...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>とてもボクを騙そうとしているようには、
+#. 思えないし…
+#. <CLT>
+msgctxt "0108 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I don't think she's hiding anything from me.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>じゃあ、やっぱり、あの写真は、
+#. ボクらを惑わす為に黒幕が用意した“罠”…
+#. <CLT>
+msgctxt "0109 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Is she right? Did the mastermind forge that picture as\n"
+"a trap to confuse us?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そうだよな…
+#. そうでないと説明付かないもんな…
+#. <CLT>
+msgctxt "0110 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's gotta be it. There's no other explanation...\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木君、終わったわよ…
+msgctxt "0111 | KYOUKO KIRIGIRI"
+msgid "Okay, Makoto. I'm done."
+msgstr ""
+
+#. もう調べ終わったの！？　早かったね！
+msgctxt "0112 | MAKOTO NAEGI"
+msgid "Already? Jeez, that was fast!"
+msgstr ""
+
+#. 遅い仕事なら誰にでも出来るわ。
+#. だから、<CLT 1>【説明】<CLT>も手短に終わらせるわよ…
+msgctxt "0113 | KYOUKO KIRIGIRI"
+msgid ""
+"Anyone can do good work if they go slow. In that\n"
+"spirit, I'll make my <CLT 1>[report]<CLT> brief."
+msgstr ""
+
+#. 苗木君、終わったわよ…
+msgctxt "0114 | KYOUKO KIRIGIRI"
+msgid "Okay, Makoto. I'm done."
+msgstr ""
+
+#. もう調べ終わったの！？　早かったね！
+msgctxt "0115 | MAKOTO NAEGI"
+msgid "Already? Jeez, that was fast!"
+msgstr ""
+
+#. 遅い仕事なら誰にでも出来るわ。
+#. だから、<CLT 1>【説明】<CLT>も手短に終わらせるわよ…
+msgctxt "0116 | KYOUKO KIRIGIRI"
+msgid ""
+"Anyone can do good work if they go slow. In that\n"
+"spirit, I'll make my <CLT 1>[report]<CLT> brief."
+msgstr ""
+
+#. ついでに、<CLT 1>【死体に関して知りたい事】<CLT>があるなら、
+#. 今の内に聞いておいた方がいいわよ。
+msgctxt "0117 | KYOUKO KIRIGIRI"
+msgid ""
+"So, if there's anything else you'd like to know about\n"
+"<CLT 1>[the condition of the body]<CLT>, now's the time."
+msgstr ""
+
+#. おそらく、死体を調べられる機会は、
+#. これで最後のはずだから…
+msgctxt "0118 | KYOUKO KIRIGIRI"
+msgid ""
+"We probably won't get another chance to interact with\n"
+"it."
+msgstr ""
+
+#. ねぇ、霧切さん…
+msgctxt "0119 | MAKOTO NAEGI"
+msgid "Hey, Kyoko..."
+msgstr ""
+
+#. 最後に１つだけ…
+#. どうしても聞いておきたい事があるんだ。
+msgctxt "0120 | MAKOTO NAEGI"
+msgid ""
+"I did have one last thing... I know I shouldn't, but I\n"
+"feel like I have to ask..."
+msgstr ""
+
+#. …何かしら？　言ってみて。
+msgctxt "0121 | KYOUKO KIRIGIRI"
+msgid "Go ahead, then. Out with it."
+msgstr ""
+
+#. 本当に…この学園に来てから、
+#. １度もお父さんと会ってないの…？
+msgctxt "0122 | MAKOTO NAEGI"
+msgid ""
+"Have you really not seen your dad even once since you\n"
+"got here?"
+msgstr ""
+
+#. え…？
+msgctxt "0123 | KYOUKO KIRIGIRI"
+msgid "What...?"
+msgstr ""
+
+#. …どういう意味？
+msgctxt "0124 | KYOUKO KIRIGIRI"
+msgid "What do you mean?"
+msgstr ""
+
+#. 寄宿舎の２階に、
+#. ロッカールームがあったのは知ってるよね？
+msgctxt "0125 | MAKOTO NAEGI"
+msgid ""
+"Well...you know all those lockers on the 2nd floor of\n"
+"the dorms?"
+msgstr ""
+
+#. えぇ、知ってるわ…
+msgctxt "0126 | KYOUKO KIRIGIRI"
+msgid "I do, yes."
+msgstr ""
+
+#. だけど、あそこのロッカーは、
+#. 本人の電子生徒手帳でしか開けられないはずよ？
+msgctxt "0127 | KYOUKO KIRIGIRI"
+msgid ""
+"But to get into any of the lockers, you'd need the\n"
+"handbook of whoever the locker belongs to."
+msgstr ""
+
+#. 緊急用の電子生徒手帳を使ったんだよ…
+msgctxt "0128 | MAKOTO NAEGI"
+msgid ""
+"Actually...I managed to get them open using that\n"
+"emergency handbook."
+msgstr ""
+
+#. 学園長の部屋にあった電子生徒手帳ね…
+msgctxt "0129 | KYOUKO KIRIGIRI"
+msgid "The one you found in the headmaster's hidden room..."
+msgstr ""
+
+#. …それで、そのロッカーで、
+#. どんな手掛かりを見つけたの？
+msgctxt "0130 | KYOUKO KIRIGIRI"
+msgid "So? Did you find anything worthwhile in the lockers?"
+msgstr ""
+
+#. 手帳だよ…
+#. しかも、その手帳はボクが見た限りだと…
+msgctxt "0131 | MAKOTO NAEGI"
+msgid ""
+"I found...a pocketbook. And after looking through\n"
+"it..."
+msgstr ""
+
+#. …霧切さんの物としか思えなかった。
+msgctxt "0132 | MAKOTO NAEGI"
+msgid "...I think it must be *your* pocketbook."
+msgstr ""
+
+#. ………………
+msgctxt "0133 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. なんで…そんな風に思うの…？
+msgctxt "0134 | KYOUKO KIRIGIRI"
+msgid "What makes you say that...?"
+msgstr ""
+
+#. さっきも言った通り、
+#. あのロッカーは本人にしか開けられないはずよ？
+msgctxt "0135 | KYOUKO KIRIGIRI"
+msgid ""
+"Like I said, only the locker's owner should be able to\n"
+"get into it, right?"
+msgstr ""
+
+#. そして、あそこにあったのは、
+#. 私達に割り当てられたロッカーとは考えられない。
+msgctxt "0136 | KYOUKO KIRIGIRI"
+msgid "I can't imagine those lockers belonged to any of us..."
+msgstr ""
+
+#. 私達が、あそこに入れるようになったのは、
+#. つい最近の事だからね。
+msgctxt "0137 | KYOUKO KIRIGIRI"
+msgid ""
+"After all, we only got access to that area just\n"
+"recently."
+msgstr ""
+
+#. つまり、私があのロッカーを使えたはずないのよ。
+msgctxt "0138 | KYOUKO KIRIGIRI"
+msgid ""
+"What I'm saying is, there's no way I could've had\n"
+"access to any of those lockers."
+msgstr ""
+
+#. そもそも、どうして、
+#. 私がロッカーに手帳を入れる必要があるの？
+msgctxt "0139 | KYOUKO KIRIGIRI"
+msgid ""
+"And if I *did* have a pocketbook, why would I bother\n"
+"putting it in a locker?"
+msgstr ""
+
+#. 確かに、そうかもしれないけど…
+#. でも、その手帳に書いてあったんだよ。
+msgctxt "0140 | MAKOTO NAEGI"
+msgid ""
+"Everything you just said makes perfect sense. But\n"
+"there was something written inside..."
+msgstr ""
+
+#. 学園長の事を…お父さんって…
+msgctxt "0141 | MAKOTO NAEGI"
+msgid "It was about the headmaster—about your father."
+msgstr ""
+
+#. …ッ！？
+msgctxt "0142 | KYOUKO KIRIGIRI"
+msgid "...!?"
+msgstr ""
+
+#. もしか…して…
+msgctxt "0143 | KYOUKO KIRIGIRI"
+msgid "Could that mean...?"
+msgstr ""
+
+#. だとすると…あの映像も…？
+#. 本物…って事…？
+msgctxt "0144 | KYOUKO KIRIGIRI"
+msgid "That video...is real, too...?"
+msgstr ""
+
+#. あの映像…？
+msgctxt "0145 | MAKOTO NAEGI"
+msgid "Video?"
+msgstr ""
+
+#. 苗木君…どうやら、
+#. すべてが繋がってきたみたいよ…
+msgctxt "0146 | KYOUKO KIRIGIRI"
+msgid ""
+"Makoto...I think everything is finally starting to fit\n"
+"together to reveal a cohesive picture."
+msgstr ""
+
+#. 最悪の繋がり方…だけどね。
+msgctxt "0147 | KYOUKO KIRIGIRI"
+msgid ""
+"Although...I'm afraid that picture might be worse than\n"
+"anything we could have imagined."
+msgstr ""
+
+#. …ど、どういう意味？
+msgctxt "0148 | MAKOTO NAEGI"
+msgid "Wh-What are you talking about...?"
+msgstr ""
+
+#. 私は、これからロッカールームに行ってみるわ。
+msgctxt "0149 | KYOUKO KIRIGIRI"
+msgid "I need to go investigate those lockers, right now."
+msgstr ""
+
+#. あなたが言った事を
+#. 直接、自分の目で確かめたいの。
+msgctxt "0150 | KYOUKO KIRIGIRI"
+msgid ""
+"I need to confirm what you just said with my own two\n"
+"eyes."
+msgstr ""
+
+#. だったら、学園長の電子生徒手帳を渡しておくよ。
+#. これがあれば…
+msgctxt "0151 | MAKOTO NAEGI"
+msgid ""
+"Oh, let me give you the headmaster's handbook. That\n"
+"way you can—"
+msgstr ""
+
+#. いいえ、必要ないわ。
+msgctxt "0152 | KYOUKO KIRIGIRI"
+msgid "That won't be necessary."
+msgstr ""
+
+#. 私の考え通りなら、
+#. そのロッカーは私の生徒手帳で開くはず。
+msgctxt "0153 | KYOUKO KIRIGIRI"
+msgid ""
+"If I'm right about this, I shouldn't have any problem\n"
+"opening the locker with my own handbook."
+msgstr ""
+
+#. だって、それは
+#. 間違いなく<CLT 3>“私のロッカー”<CLT>なんだから…
+msgctxt "0154 | KYOUKO KIRIGIRI"
+msgid "After all, it would seem that it's <CLT 3>my locker<CLT>."
+msgstr ""
+
+#. 霧切さんのロッカー…？
+msgctxt "0155 | MAKOTO NAEGI"
+msgid "Your locker...?"
+msgstr ""
+
+#. あなたも…これを見てみればわかるわ…
+msgctxt "0156 | KYOUKO KIRIGIRI"
+msgid "If you watch this, it'll all make sense."
+msgstr ""
+
+#. <CLT 4>これって、ＤＶＤ…？
+#. しかも…
+#. <CLT>
+msgctxt "0157 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A DVD...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>第７８期生…緊急面談…って！？
+#. <CLT>
+msgctxt "0158 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And it says...\"Class #78: Urgent Interviews\"!?\n"
+"<CLT>"
+msgstr ""
+
+#. あなたがいなくなった後で、
+#. あの隠し部屋から見つけたの…
+msgctxt "0159 | KYOUKO KIRIGIRI"
+msgid "I found it in that hidden room, after you left."
+msgstr ""
+
+#. 私の考えを詳しく説明している時間はないから、
+#. 代わりにを見ておいて。
+msgctxt "0160 | KYOUKO KIRIGIRI"
+msgid ""
+"I don't have time to explain exactly what I think it\n"
+"means, so just watch it and see for yourself."
+msgstr ""
+
+#. そうすれば、あなたも、
+#. その意味に気付くはずよ…
+msgctxt "0161 | KYOUKO KIRIGIRI"
+msgid "I think you'll realize exactly what it means..."
+msgstr ""
+
+#. 私の知らないところで…
+#. 私の手帳がロッカーに入れられていた意味が…
+msgctxt "0162 | KYOUKO KIRIGIRI"
+msgid ""
+"You'll understand why you found my pocketbook in a\n"
+"place none of us have ever seen before."
+msgstr ""
+
+#. <CLT 4>なんだか…よくわからないけど…
+#. <CLT>
+msgctxt "0163 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>None of this makes sense right now...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…とりあえず、このＤＶＤに、
+#. 重要な手掛かりがあるって事か？
+#. <CLT>
+msgctxt "0164 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But I guess that means there's some important clue on\n"
+"this DVD...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>緊急面談のＤＶＤ<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0165 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Interview DVD<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. それと、最後にもう１つだけ…
+msgctxt "0166 | KYOUKO KIRIGIRI"
+msgid "Oh, and now it's my turn."
+msgstr ""
+
+#. 少しだけ、私の無駄話に付き合ってくれる…？
+msgctxt "0167 | KYOUKO KIRIGIRI"
+msgid "Do you have a second to listen to me ramble...?"
+msgstr ""
+
+#. …無駄話？
+msgctxt "0168 | MAKOTO NAEGI"
+msgid "Ramble...?"
+msgstr ""
+
+#. 結論から言うと…
+msgctxt "0169 | KYOUKO KIRIGIRI"
+msgid "So as it turns out..."
+msgstr ""
+
+#. 整理は…付かなかった。
+msgctxt "0170 | KYOUKO KIRIGIRI"
+msgid "...the arrangements I'd made...didn't stick."
+msgstr ""
+
+#. むしろ、ますますわからなくなったわ…
+#. 自分の気持ちさえもね…
+msgctxt "0171 | KYOUKO KIRIGIRI"
+msgid ""
+"What I mean is, I'm less and less sure of everything.\n"
+"Even my own feelings..."
+msgstr ""
+
+#. <CLT 4>それって、お父さんの事…だよな？
+#. <CLT>
+msgctxt "0172 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You're talking about your dad, right?\n"
+"<CLT>"
+msgstr ""
+
+#. その答えが見つかる事はもうないでしょうね…
+#. この先、永遠に…
+msgctxt "0173 | KYOUKO KIRIGIRI"
+msgid ""
+"I can never find the answers to the questions I wanted\n"
+"to ask. For the rest of my life..."
+msgstr ""
+
+#. <CLT 4>黒幕…あいつのせいで……
+#. <CLT>
+msgctxt "0174 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And all because of the mastermind...\n"
+"<CLT>"
+msgstr ""
+
+#. だけど、１つだけハッキリしている事があるわ…
+msgctxt "0175 | KYOUKO KIRIGIRI"
+msgid "But there's one thing I *am* sure of."
+msgstr ""
+
+#. 私の…黒幕を許せないって気持ち…
+msgctxt "0176 | KYOUKO KIRIGIRI"
+msgid ""
+"When it comes to the mastermind, there's no room in my\n"
+"heart for forgiveness."
+msgstr ""
+
+#. 私は、絶対に黒幕に勝ちたい。
+#. その理由が１つ増えたわ。
+msgctxt "0177 | KYOUKO KIRIGIRI"
+msgid ""
+"I swore to destroy the mastermind. This is just one\n"
+"more reason to follow through on that."
+msgstr ""
+
+#. <CLT 4>霧切さんの目には、
+#. 強い意思の炎が宿っていた。
+#. <CLT>
+msgctxt "0178 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko's eyes burned with the fire of determination...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>黒幕に勝ちたいという強い意志が…
+#. <CLT>
+msgctxt "0179 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The determination to defeat the mastermind...\n"
+"<CLT>"
+msgstr ""
+
+#. 不思議ね…あの人の死を知って、
+#. こんな気持ちになるなんて…
+msgctxt "0180 | KYOUKO KIRIGIRI"
+msgid ""
+"It's strange...to be confronted with his death, and\n"
+"suddenly feel this way."
+msgstr ""
+
+#. もし、あの人が幸せになっていたとしたら、
+#. きっと、私はなんとも思わなかったはず…
+msgctxt "0181 | KYOUKO KIRIGIRI"
+msgid "I couldn't care less if my father had found happiness."
+msgstr ""
+
+#. それなのに…なぜかしら？
+msgctxt "0182 | KYOUKO KIRIGIRI"
+msgid "So why is it...?"
+msgstr ""
+
+#. あの人の不幸が…
+#. こんなに…許せないなんて…
+msgctxt "0183 | KYOUKO KIRIGIRI"
+msgid ""
+"Why does it bother me so much to know how he\n"
+"suffered...?"
+msgstr ""
+
+#. バカバカしくて…
+#. 自分でも…よくわからないわ…
+msgctxt "0184 | KYOUKO KIRIGIRI"
+msgid ""
+"It's ridiculous. There's just no understanding it, I\n"
+"guess..."
+msgstr ""
+
+#. <CLT 4>そう言って、彼女は小さく笑った。
+#. <CLT>
+msgctxt "0185 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She let out a small laugh as she said it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>とても悲しげな笑顔で…
+#. <CLT>
+msgctxt "0186 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But her smile was filled with sorrow.\n"
+"<CLT>"
+msgstr ""
+
+#. さてと…無駄話はこのくらいにしましょうか。
+msgctxt "0187 | KYOUKO KIRIGIRI"
+msgid "So, that's it for my rambling."
+msgstr ""
+
+#. 目的を果たす為にも、
+#. まだ、やらなければいけない事が残ってるわ。
+msgctxt "0188 | KYOUKO KIRIGIRI"
+msgid ""
+"There's still much to do before I can consider my task\n"
+"complete."
+msgstr ""
+
+#. うん、そうだね…
+msgctxt "0189 | MAKOTO NAEGI"
+msgid "Yeah, you're right."
+msgstr ""
+
+#. だけど、これだけは覚えておいて…
+msgctxt "0190 | KYOUKO KIRIGIRI"
+msgid "But keep this in mind..."
+msgstr ""
+
+#. 真実はいつも１つよ…
+msgctxt "0191 | KYOUKO KIRIGIRI"
+msgid "There is only ever one absolute truth."
+msgstr ""
+
+#. それが、<CLT 3>“正義”<CLT>であろうと、
+#. <CLT 3>“悪”<CLT>であろうと…
+msgctxt "0192 | KYOUKO KIRIGIRI"
+msgid "Whether that truth serves <CLT 3>justice<CLT> or <CLT 3>suffering<CLT>..."
+msgstr ""
+
+#. <CLT 3>“最善”<CLT>であろうと、
+#. <CLT 3>“最悪”<CLT>であろうともね…
+msgctxt "0193 | KYOUKO KIRIGIRI"
+msgid "Whether it's the <CLT 3>greatest<CLT> truth, or the <CLT 3>worst<CLT>..."
+msgstr ""
+
+#. …どういう意味？
+msgctxt "0194 | MAKOTO NAEGI"
+msgid "What do you mean...?"
+msgstr ""
+
+#. たどり着いた真相が絶望的なものだとしても、
+#. それでも…
+msgctxt "0195 | KYOUKO KIRIGIRI"
+msgid ""
+"Even if the truth you uncover is filled with\n"
+"hopelessness..."
+msgstr ""
+
+#. 希望だけは失わないでね…
+msgctxt "0196 | KYOUKO KIRIGIRI"
+msgid "...you still can't give up hope."
+msgstr ""
+
+#. あ、当たり前だよ…
+#. だって…！
+msgctxt "0197 | MAKOTO NAEGI"
+msgid "A-Absolutely not! Because..."
+msgstr ""
+
+#. 前向きなのだけが…
+#. ボクの唯一の取り柄なんだよ？
+msgctxt "0198 | MAKOTO NAEGI"
+msgid ""
+"Because all I can do is keep moving forward. That's\n"
+"pretty much all I'm good at, ya know?"
+msgstr ""
+
+#. そう…だったわね…
+msgctxt "0199 | KYOUKO KIRIGIRI"
+msgid "Indeed..."
+msgstr ""
+
+#. 変な事言ってごめんなさい…
+msgctxt "0200 | KYOUKO KIRIGIRI"
+msgid "Sorry if that was...strange."
+msgstr ""
+
+#. じゃあ、私は先に行くわね…
+msgctxt "0201 | KYOUKO KIRIGIRI"
+msgid "Anyway, I need to get going."
+msgstr ""
+
+#. また後で…最後の学級裁判で会いましょう。
+msgctxt "0202 | KYOUKO KIRIGIRI"
+msgid "I'll see you at the class trial..."
+msgstr ""
+
+#. <CLT 4>そんな別れの挨拶を残して、
+#. 霧切さんは、生物室を後にした…
+#. <CLT>
+msgctxt "0203 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Leaving behind that final farewell, Kyoko was gone.\n"
+"<CLT>"
+msgstr ""
+
+#. さてと…ボクも行かないとな…
+msgctxt "0204 | MAKOTO NAEGI"
+msgid "I'd better get going myself."
+msgstr ""
+
+#. <CLT 4>霧切さんから預かったＤＶＤ…
+#. <CLT>
+msgctxt "0205 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I got that DVD from Kyoko...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>視聴覚室に行けば、
+#. 中の映像を確認出来るはずだ。
+#. <CLT>
+msgctxt "0206 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should head to the A/V room to check it out.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さんは、絶望的な真相とか言ってたけど…
+#. <CLT>
+msgctxt "0207 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko said something about hopeless truth...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、何があろうとボクは諦めない。
+#. <CLT>
+msgctxt "0208 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But no matter what happens, I *won't* lose hope.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>最悪の真相だろうとなんだろうと…
+#. <CLT>
+msgctxt "0209 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Even if it's the worst truth in the world...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>絶対に負けてたまるか…！
+#. <CLT>
+msgctxt "0210 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I can't afford to lose!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな物を気にしている場合じゃない…！
+#. <CLT>
+msgctxt "0211 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't have time for this!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな物を気にしている場合じゃない…！
+#. <CLT>
+msgctxt "0212 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't have time for this!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>なんか開いてる！！
+#. けど、腐川さんが先だ…！
+#. <CLT>
+msgctxt "0213 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's open! Oh, but Toko...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>冷蔵庫が…開いてる…！
+#. <CLT>
+msgctxt "0214 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The fridge—it's open!\n"
+"<CLT>"
+msgstr ""
+
+#. でも、前に来た時は…
+#. ちゃんと全部閉じてたはずなのに…
+msgctxt "0215 | MAKOTO NAEGI"
+msgid ""
+"But I'm sure they were all shut tight last time I was\n"
+"here..."
+msgstr ""
+
+#. それのせいだったのね…
+msgctxt "0216 | NO NAME"
+msgid "That must be why she passed out."
+msgstr ""
+
+#. 腐川さんが気を失った理由って…
+msgctxt "0217 | KYOUKO KIRIGIRI"
+msgid "She faints so easily..."
+msgstr ""
+
+#. …き、霧切さん！
+msgctxt "0218 | MAKOTO NAEGI"
+msgid "K-Kyoko!"
+msgstr ""
+
+#. 遅くなったわね…
+msgctxt "0219 | KYOUKO KIRIGIRI"
+msgid "It's getting late, isn't it?"
+msgstr ""
+
+#. もう…平気なの？
+msgctxt "0220 | MAKOTO NAEGI"
+msgid "Are you...okay?"
+msgstr ""
+
+#. 悪かったわね…心配かけて…
+msgctxt "0221 | KYOUKO KIRIGIRI"
+msgid "I'm sorry if I made you worry."
+msgstr ""
+
+#. い、いや…謝られるような事じゃ…
+msgctxt "0222 | MAKOTO NAEGI"
+msgid "N-No, you don't have to apologize."
+msgstr ""
+
+#. ねぇ、苗木君。
+#. それより、この部屋って…
+msgctxt "0223 | KYOUKO KIRIGIRI"
+msgid "But listen, about this room..."
+msgstr ""
+
+#. そ、それが…
+msgctxt "0224 | MAKOTO NAEGI"
+msgid "Oh yeah, it's..."
+msgstr ""
+
+#. 死体安置所…のようね…
+msgctxt "0225 | KYOUKO KIRIGIRI"
+msgid "It's a morgue."
+msgstr ""
+
+#. う、うん…そうなんだ。
+msgctxt "0226 | MAKOTO NAEGI"
+msgid "Y-Yeah..."
+msgstr ""
+
+#. やっぱり、そうだったのね…
+msgctxt "0227 | KYOUKO KIRIGIRI"
+msgid "I suspected as much."
+msgstr ""
+
+#. そして、腐川さんは、
+#. その冷蔵庫の中を見たせいで気を失った…
+msgctxt "0228 | KYOUKO KIRIGIRI"
+msgid ""
+"And Toko must have looked inside the fridge, seen what\n"
+"was in there, and...well, there you have it."
+msgstr ""
+
+#. 知ってたの？　腐川さんが気を失った事…
+msgctxt "0229 | MAKOTO NAEGI"
+msgid "You knew she'd fainted?"
+msgstr ""
+
+#. ちょうど今…
+#. 走っていくジェノサイダーとすれ違ったわ。
+msgctxt "0230 | KYOUKO KIRIGIRI"
+msgid ""
+"I was on my way here, when Genocide Jack came running\n"
+"past me."
+msgstr ""
+
+#. クシャミでもしたのかと思ったけど、
+#. この部屋を見て、本当の理由がわかった…
+msgctxt "0231 | KYOUKO KIRIGIRI"
+msgid ""
+"I assumed she must have sneezed, but once I got\n"
+"inside, the real reason became clear."
+msgstr ""
+
+#. 彼女はこの部屋について調べようとして、
+#. そこで、冷蔵庫を開けてしまったんでしょうね…
+msgctxt "0232 | KYOUKO KIRIGIRI"
+msgid ""
+"I imagine she came here to investigate, and when she\n"
+"opened the slot there..."
+msgstr ""
+
+#. それで…中の死体を見て、
+#. 気を失っちゃったのか…
+msgctxt "0233 | MAKOTO NAEGI"
+msgid ""
+"That's when she saw the body inside and dropped like a\n"
+"bag of rocks..."
+msgstr ""
+
+#. <CLT 4>…って、人騒がせだな。本当に。
+#. <CLT>
+msgctxt "0234 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why's everything gotta be so difficult with her?\n"
+"<CLT>"
+msgstr ""
+
+#. とりあえず、冷蔵庫を元に戻しましょうか。
+#. 開いたままにしておく訳にもいかないでしょう…
+msgctxt "0235 | KYOUKO KIRIGIRI"
+msgid ""
+"Anyway, we should close it up. Don't want to leave it\n"
+"hanging open like that..."
+msgstr ""
+
+#. う、うん…そうだね…
+msgctxt "0236 | MAKOTO NAEGI"
+msgid "Yeah, good idea."
+msgstr ""
+
+#. 苗木君。手伝って…
+msgctxt "0237 | KYOUKO KIRIGIRI"
+msgid "Give me a hand with this."
+msgstr ""
+
+#. <CLT 4>霧切さんは冷蔵庫に近付くと、
+#. そこに手を掛け…
+#. <CLT>
+msgctxt "0238 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko approached the fridge, hands outstretched.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…そして止まった。
+#. <CLT>
+msgctxt "0239 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But suddenly...she stopped.\n"
+"<CLT>"
+msgstr ""
+
+#. …どうしたの？
+msgctxt "0240 | MAKOTO NAEGI"
+msgid "What's wrong?"
+msgstr ""
+
+#. 死体をしまうのは…
+#. 少し待った方がいいみたい…
+msgctxt "0241 | KYOUKO KIRIGIRI"
+msgid "Maybe we should wait a second before closing it."
+msgstr ""
+
+#. …え？　どうして？
+msgctxt "0242 | MAKOTO NAEGI"
+msgid "Huh? How come...?"
+msgstr ""
+
+#. ここに入っているのが、
+#. <CLT 1>【戦刃むくろの死体】<CLT>だからよ…
+msgctxt "0243 | KYOUKO KIRIGIRI"
+msgid "Because <CLT 1>[Mukuro's body]<CLT> is in here."
+msgstr ""
+
+#. <CLT 4>え……？
+#. <CLT>
+msgctxt "0244 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>死体を入れておく為の冷蔵庫…
+#. <CLT>
+msgctxt "0245 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's a fridge meant for storing dead bodies...\n"
+"<CLT>"
+msgstr ""
+
+#. ………………
+msgctxt "0246 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>ボクじゃあ、勇気がなくて…
+#. 中は見られないな…
+#. <CLT>
+msgctxt "0247 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't do it...! I can't look inside...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんが先だ…！
+#. <CLT>
+msgctxt "0248 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I need to deal with Toko...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>これも気になるけど、
+#. でも、今は先に……
+#. <CLT>
+msgctxt "0249 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This seems important, but first...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こっちの左半分の冷蔵庫には、
+#. 青いランプが点灯している。
+#. <CLT>
+msgctxt "0250 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>On the left side of the refrigerator, a bunch of blue\n"
+"lights are on.\n"
+"<CLT>"
+msgstr ""
+
+#. でも、こっちにはランプが付いてない…
+msgctxt "0251 | MAKOTO NAEGI"
+msgid "But these ones aren't..."
+msgstr ""
+
+#. きっと、使用中の冷蔵庫には
+#. ランプが点灯するようになっているのね…
+msgctxt "0252 | KYOUKO KIRIGIRI"
+msgid ""
+"It would seem the blue light comes on when a slot\n"
+"is occupied."
+msgstr ""
+
+#. <CLT 4>使用中の冷蔵庫には…
+#. ランプが点灯…
+#. <CLT>
+msgctxt "0253 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So when someone's in there...the blue light comes\n"
+"on...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、点灯しているランプは、
+#. 戦刃むくろの死体が入れられてる冷蔵庫も含めて…
+#. <CLT>
+msgctxt "0254 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looking around, the number of lights that are on,\n"
+"including Mukuro's...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>全部で９個だ…
+#. <CLT>
+msgctxt "0255 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's nine in all.\n"
+"<CLT>"
+msgstr ""
+
+#. ９個……
+msgctxt "0256 | MAKOTO NAEGI"
+msgid "Nine..."
+msgstr ""
+
+#. ９個の…ランプ…？
+msgctxt "0257 | MAKOTO NAEGI"
+msgid "Nine lights...?"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>生物室のランプ<CLT><CLT 23>を更新しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0258 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Bio Lab Lights<CLT><CLT 23>\" has been updated in the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木君、終わったわよ…
+msgctxt "0259 | KYOUKO KIRIGIRI"
+msgid "Okay, Makoto. I'm done."
+msgstr ""
+
+#. もう調べ終わったの！？　早かったね！
+msgctxt "0260 | MAKOTO NAEGI"
+msgid "Already? Jeez, that was fast!"
+msgstr ""
+
+#. 遅い仕事なら誰にでも出来るわ。
+#. だから、<CLT 1>【説明】<CLT>も手短に終わらせるわよ…
+msgctxt "0261 | KYOUKO KIRIGIRI"
+msgid ""
+"Anyone can do good work if they go slow. In that\n"
+"spirit, I'll make my <CLT 1>[report]<CLT> brief."
+msgstr ""
+
+#. <CLT 4>こっちの左半分の冷蔵庫には、
+#. 青いランプが点灯している。
+#. <CLT>
+msgctxt "0262 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>On the left side of the refrigerator, a bunch of blue\n"
+"lights are on.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>きっと、使用中の冷蔵庫には
+#. ランプが点灯するようになってるんだろうけど…
+#. <CLT>
+msgctxt "0263 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It looks like the blue light comes on when there's\n"
+"someone in that slot.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、点灯しているランプは、
+#. 戦刃むくろの死体が入れられてる冷蔵庫も含めて…
+#. <CLT>
+msgctxt "0264 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looking around, the number of lights that are on,\n"
+"including Mukuro's...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>全部で９個だ…
+#. <CLT>
+msgctxt "0265 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's nine in all.\n"
+"<CLT>"
+msgstr ""
+
+#. ９個…
+msgctxt "0266 | MAKOTO NAEGI"
+msgid "Nine..."
+msgstr ""
+
+#. ９個の…ランプ…？
+msgctxt "0267 | MAKOTO NAEGI"
+msgid "Nine lights...?"
+msgstr ""
+
+#. <CLT 4>腐川さんが先だ…！
+#. <CLT>
+msgctxt "0268 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I need to deal with Toko...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>この取扱説明書はもう見た。
+#. それよりも、今は……
+#. <CLT>
+msgctxt "0269 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I've already looked through this instruction manual.\n"
+"More importantly...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんが先だ…！
+#. <CLT>
+msgctxt "0270 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I need to deal with Toko...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>これも気になるけど、
+#. でも、今は先に……
+#. <CLT>
+msgctxt "0271 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looking at this, I can't help but notice...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そう言えば、このビニールシートって、
+#. どこかで見覚えがあると思ってたけど…
+#. <CLT>
+msgctxt "0272 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You know, I think I've seen a tarp like this somewhere\n"
+"before...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>植物庭園の物置にあった、
+#. あのビニールシートと一緒なんだ。
+#. <CLT>
+msgctxt "0273 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Ah, it's the same as the one I found in the garden\n"
+"toolshed...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それに、あのビニールシートには…
+#. <CLT>
+msgctxt "0274 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And if I remember, that tarp...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4><CLT><CLT 3>“生物室”<CLT><CLT 4>ってスタンプも
+#. 押してあったはずだ。<CLT>
+msgctxt "0275 | MAKOTO NAEGI"
+msgid "<CLT 4>It had a stamp on it that said <CLT><CLT 3>bio lab<CLT><CLT 4>.<CLT>"
+msgstr ""
+
+#. <CLT 4>つまり、植物庭園で偽装工作に使われた、
+#. あのビニールシートって…
+#. <CLT>
+msgctxt "0276 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And that's the tarp that was used to help camouflage\n"
+"the murder in the garden...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…間違いない。
+#. この生物室にあった物だったんだ。
+#. <CLT>
+msgctxt "0277 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>At some point, someone got it from the bio lab and\n"
+"took it over there.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>ビニールシート<CLT><CLT 23>を更新しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0278 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Tarp<CLT><CLT 23>\" has been updated in the Truth Bullets section\n"
+"of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木君、終わったわよ…
+msgctxt "0279 | KYOUKO KIRIGIRI"
+msgid "Okay, Makoto. I'm done."
+msgstr ""
+
+#. もう調べ終わったの！？　早かったね！
+msgctxt "0280 | MAKOTO NAEGI"
+msgid "Already? Jeez, that was fast!"
+msgstr ""
+
+#. 遅い仕事なら誰にでも出来るわ。
+#. だから、<CLT 1>【説明】<CLT>も手短に終わらせるわよ…
+msgctxt "0281 | KYOUKO KIRIGIRI"
+msgid ""
+"Anyone can do good work if they go slow. In that\n"
+"spirit, I'll make my <CLT 1>[report]<CLT> brief."
+msgstr ""
+
+#. <CLT 4>これも気になるけど、
+#. でも、今は先に……
+#. <CLT>
+msgctxt "0282 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looking at this, I can't help but notice...\n"
+"<CLT>"
+msgstr ""
+
+#. ふ、腐川さん！　大丈夫！？
+msgctxt "0283 | MAKOTO NAEGI"
+msgid "T-Toko! Are you okay!?"
+msgstr ""
+
+#. <CLT 4>ま、まさか…！
+#. <CLT>
+msgctxt "0284 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No... No!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>死んでるとか…ないよな？
+#. <CLT>
+msgctxt "0285 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She's not...dead, is she!?\n"
+"<CLT>"
+msgstr ""
+
+#. ゲラゲラゲラゲラゲラ！
+msgctxt "0286 | GENOCIDER SHOU"
+msgid "Kyeeehahahaha!"
+msgstr ""
+
+#. うわッ！
+msgctxt "0287 | MAKOTO NAEGI"
+msgid "Uwah!"
+msgstr ""
+
+#. 寒い…！　異常に寒いし！！
+#. 風邪引きそう！！
+msgctxt "0288 | TOUKO FUKAWA"
+msgid ""
+"It's cold... It's super cold! It's so cold, I think I\n"
+"might catch cold!"
+msgstr ""
+
+#. …そりゃ、引くよ。
+#. こんな所で寝てたらさ…
+msgctxt "0289 | MAKOTO NAEGI"
+msgid ""
+"If you keep taking naps in places like this, I'm sure\n"
+"you will..."
+msgstr ""
+
+#. …寝てた？
+#. あぁ、アタシったらまた気を失ってたのね！
+msgctxt "0290 | TOUKO FUKAWA"
+msgid "What, I was asleep? Ahh, I musta fainted again!"
+msgstr ""
+
+#. そんで、あんたはアタシの寝てる姿を眺めて、
+#. ムラムラしてたのねッ！！
+msgctxt "0291 | TOUKO FUKAWA"
+msgid ""
+"I bet you were standing there, staring at me, getting\n"
+"all excited! Weren't you!?"
+msgstr ""
+
+#. いや…してないけど…
+msgctxt "0292 | MAKOTO NAEGI"
+msgid "No...I wasn't..."
+msgstr ""
+
+#. じゃあ何！？　ムンムン？　ルンルン！？
+msgctxt "0293 | TOUKO FUKAWA"
+msgid "Oh, then what? Hot and bothered? Straight-up horny!?"
+msgstr ""
+
+#. そ、それよりさ…
+#. どうして、気を失ってたの？
+msgctxt "0294 | MAKOTO NAEGI"
+msgid "Um, okay, so...why did you pass out?"
+msgstr ""
+
+#. シラネ！　気付いたら寝てた！！
+#. また、あっちの根暗が何かやらかしたんじゃね！？
+msgctxt "0295 | TOUKO FUKAWA"
+msgid ""
+"I dunno! Last thing I remember was me waking up just\n"
+"now! What'd you do to Miss Morose!?"
+msgstr ""
+
+#. そっか…人格が変わっちゃうと、
+#. 記憶を引き継げないんだったね…
+msgctxt "0296 | MAKOTO NAEGI"
+msgid ""
+"Oh, that's right. Your memory stops and starts each\n"
+"time you switch..."
+msgstr ""
+
+#. そう！　知識は共有してても、
+#. 記憶は共有していないの！
+msgctxt "0297 | TOUKO FUKAWA"
+msgid ""
+"Bingo bazinga! We share some basic knowledge, but our\n"
+"memories are very much separate!"
+msgstr ""
+
+#. …って、欠点みたいな言い方すんな！！
+#. むしろ長所じゃねーか！！
+msgctxt "0298 | TOUKO FUKAWA"
+msgid ""
+"And don't say it like it's a bad thing! It's a\n"
+"blessing as far as I'm concerned!"
+msgstr ""
+
+#. だって、あっちの人格が覚えてない事でも、
+#. アタシは覚えていられるのよ！
+msgctxt "0299 | TOUKO FUKAWA"
+msgid ""
+"Cuz even if *she* forgets something, I totally\n"
+"remember!"
+msgstr ""
+
+#. つまり、２倍なのよ！！
+msgctxt "0300 | TOUKO FUKAWA"
+msgid "So it's like double the memory!"
+msgstr ""
+
+#. <CLT 4>いや、２分の１って感じだけど…
+#. <CLT>
+msgctxt "0301 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Uh, no...it's more like half.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>ジェノサイダーの秘密<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0302 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Genocide Jack's Memory<CLT><CLT 23>\" has been added to the Truth\n"
+"Bullets section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. そんな事より、ダーリンは！？
+#. 教えなきゃ、殺すぞ！！
+msgctxt "0303 | TOUKO FUKAWA"
+msgid ""
+"But all I wanna know right now is, where's my little\n"
+"darling!? Tell me now, or I slit your throat!"
+msgstr ""
+
+#. と、十神クンも…
+#. どこかを捜査してるはずだけど…
+msgctxt "0304 | MAKOTO NAEGI"
+msgid ""
+"I-I don't know. I'm sure Byakuya's around somewhere,\n"
+"doing his own investigating."
+msgstr ""
+
+#. １人で！？
+msgctxt "0305 | TOUKO FUKAWA"
+msgid "By himself!?"
+msgstr ""
+
+#. …だと思うけど。
+msgctxt "0306 | MAKOTO NAEGI"
+msgid "I assume so..."
+msgstr ""
+
+#. やっぱりね！　わかってたけどね！
+#. アタシって白夜様に関してはプロだから！！
+msgctxt "0307 | TOUKO FUKAWA"
+msgid ""
+"I knew it! I totally knew it! I'm a total pro when it\n"
+"comes to all things Master!"
+msgstr ""
+
+#. つーか、急がねーと！！
+#. 白夜様が１人で寂しいわ！
+msgctxt "0308 | TOUKO FUKAWA"
+msgid ""
+"Anyway, I gotta hurry! I can't even imagine how lonely\n"
+"he must be right now!"
+msgstr ""
+
+#. ゲラゲラゲラゲラゲラッ！！
+msgctxt "0309 | TOUKO FUKAWA"
+msgid "Kyeeeeehahahahahaha!"
+msgstr ""
+
+#. <CLT 4>この上なく不気味な笑い声を上げながら、
+#. 腐川さんは走り去っていった…
+#. <CLT>
+msgctxt "0310 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Toko shot off, her eerie laughter echoing behind her.\n"
+"<CLT>"
+msgstr ""
+
+#. そう言えば…
+#. 写真の事を聞きそびれたけど…
+msgctxt "0311 | MAKOTO NAEGI"
+msgid "Ah, I totally forgot to ask her about the picture..."
+msgstr ""
+
+#. <CLT 4>でも、ジェノサイダーに聞くだけ無駄か…
+#. <CLT>
+msgctxt "0312 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, there's no point asking Genocide Jack anyway.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それに、今は、
+#. 他に確認すべき事があるはずだ。
+#. <CLT>
+msgctxt "0313 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Besides, I have more important things to do right now.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんが気絶した理由…
+#. <CLT>
+msgctxt "0314 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why did Toko faint?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>彼女が気絶したって事は、
+#. そこに、なんらかの理由があるはず…
+#. <CLT>
+msgctxt "0315 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's gotta be some reason for it...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>まだ…出ていく訳にはいかないよな…
+#. <CLT>
+msgctxt "0316 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't leave with things the way they are right\n"
+"now...!\n"
+"<CLT>"
+msgstr ""
+
+#. はい
+msgctxt "0317 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0318 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0319 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""

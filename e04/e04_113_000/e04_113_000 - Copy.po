@@ -1,0 +1,935 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. そうだ…！　<CLT 3>チェスの駒<CLT>だよ…！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "That's it! The <CLT 3>chess pieces<CLT>!"
+msgstr ""
+
+#. ボトルの中のモノクマフィギュアが持ってるのは、
+#. 全部、チェスの駒なんだ。
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"Inside each bottle there was a Monokuma figure holding\n"
+"a different chess piece."
+msgstr ""
+
+#. キング、ルーク、ビショップ、ポーン…
+#. 確かに、すべてチェスの駒だな…
+msgctxt "0003 | BYAKUYA TOGAMI"
+msgid ""
+"King, rook, bishop, pawn... I definitely remember\n"
+"seeing each of those."
+msgstr ""
+
+#. それと、割れたモノクマボトルの中に入ってた
+#. モノクマフィギュアは…
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"And the piece that was inside the broken bottle we\n"
+"found was..."
+msgstr ""
+
+#. ナイトの駒…だったよね？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "...the knight, if I remember."
+msgstr ""
+
+#. そ、それが…どうしたのよ…？
+msgctxt "0006 | TOUKO FUKAWA"
+msgid "So? What's that m-matter?"
+msgstr ""
+
+#. あなたは、チェスにはあまり詳しくないのね。
+#. だったら教えてあげるわ…
+msgctxt "0007 | KYOUKO KIRIGIRI"
+msgid ""
+"I guess you don't know too much about chess, do you?\n"
+"Then let me explain..."
+msgstr ""
+
+#. チェスの駒の種類は、キング、クイーン、ルーク、
+#. ナイト、ビショップ、ポーン、全部で<CLT 3>６種類<CLT>なのよ。
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"In chess, there are <CLT 3>six different pieces<CLT>—the king,\n"
+"the queen, the rook, knight, bishop, and pawn."
+msgstr ""
+
+#. だけど、あの現場に残されていたのは、
+#. キング、ルーク、ビショップ、ポーンの４体と…
+msgctxt "0009 | KYOUKO KIRIGIRI"
+msgid ""
+"What was left intact at the crime scene were the king,\n"
+"rook, bishop, and pawn...just those four."
+msgstr ""
+
+#. 床に落ちていたナイトだけ…
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid "And on the ground was the knight."
+msgstr ""
+
+#. あ！　<CLT 3>クイーンのフィギュア<CLT>が足りないんだ！
+msgctxt "0011 | AOI ASAHINA"
+msgid "...Oh! So the <CLT 3>queen<CLT> is missing!"
+msgstr ""
+
+#. そうなんだ。現場にあったモノクマボトルは５本…
+#. つまり、１本足りないんだよ。
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"So we only have evidence for five bottles at the\n"
+"scene, while one apparently went missing."
+msgstr ""
+
+#. な、何よ…チェスがなんだって言うのよ…！
+msgctxt "0013 | TOUKO FUKAWA"
+msgid "What does ch-chess have to do with anything!?"
+msgstr ""
+
+#. 日本人なら将棋だべ！
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgid "Yeah! Shogi is way better!"
+msgstr ""
+
+#. …そうよ！
+#. じゃなくて、あたしが言いたいのは…ッ！
+msgctxt "0015 | TOUKO FUKAWA"
+msgid ""
+"Yeah!\n"
+"...Wait, n-no! That's not what I mean!"
+msgstr ""
+
+#. 確かに…ボトルは足りなくなってるかもしれないけど…
+msgctxt "0016 | TOUKO FUKAWA"
+msgid "So, let's say a b-bottle did go missing..."
+msgstr ""
+
+#. それが事件と関係している根拠なんて…
+#. ど、どこにもないじゃない…
+msgctxt "0017 | TOUKO FUKAWA"
+msgid ""
+"Th-There's still no evidence that h-has anything to do\n"
+"w-with this case!"
+msgstr ""
+
+#. 事件前から…すでに１本欠けてたのかも…
+#. し、しれないじゃない…ッ！
+msgctxt "0018 | TOUKO FUKAWA"
+msgid ""
+"That bottle c-could have disappeared anytime b-before\n"
+"the murder!"
+msgstr ""
+
+#. いいえ、なくなったモノクマボトルが
+#. 事件に関係しているのは明白よ。
+msgctxt "0019 | KYOUKO KIRIGIRI"
+msgid ""
+"No, it's clear that the missing bottle *is* connected\n"
+"to this case."
+msgstr ""
+
+#. な、なんで明白なのよッ！！
+msgctxt "0020 | TOUKO FUKAWA"
+msgid "H-How is it clear!?"
+msgstr ""
+
+#. なくなったモノクマボトルはどういう状態だったか…
+#. それを考えてみれば、わかるはずよ。
+msgctxt "0021 | KYOUKO KIRIGIRI"
+msgid ""
+"Think about what state the missing bottle must have\n"
+"been in. Maybe then you'll understand..."
+msgstr ""
+
+#. 割れた状態
+msgctxt "0022 | CHOICE/RE:ACT"
+msgid "It was broken"
+msgstr ""
+
+#. 興奮状態
+msgctxt "0023 | CHOICE/RE:ACT"
+msgid "It was excited"
+msgstr ""
+
+#. モノクマボトルは興奮状態だったんだ…！！
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "The Monokuma Bottle must have been really excited...!"
+msgstr ""
+
+#. …………………
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. 知らなかったよ…
+#. 苗木も…残念な人だったんだね…！
+msgctxt "0026 | AOI ASAHINA"
+msgid ""
+"Makoto... I had no idea *you'd* turn out to be just as\n"
+"big of a disappointment..."
+msgstr ""
+
+#. 俺の方を見ながら、
+#. 言わないで欲しいべ！
+msgctxt "0027 | YASUHIRO HAGAKURE"
+msgid ""
+"H-Hey! I'd appreciate it if you didn't look right at\n"
+"me when you say that!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 傷１つない状態
+msgctxt "0029 | CHOICE/RE:ACT"
+msgid "It was completely intact"
+msgstr ""
+
+#. そうじゃないわ…
+msgctxt "0030 | KYOUKO KIRIGIRI"
+msgid "No, that can't be right."
+msgstr ""
+
+#. あの実験の事を思い出して…
+msgctxt "0031 | KYOUKO KIRIGIRI"
+msgid "Recall the experiment we did..."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>あの実験って言うと…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You mentioned an experiment...\n"
+"<CLT>"
+msgstr ""
+
+#. あなたに手伝ってもらった実験の事を
+#. 思い出して。
+msgctxt "0034 | KYOUKO KIRIGIRI"
+msgid "That's right. The one you helped me perform."
+msgstr ""
+
+#. そうすればわかるはずよ。
+msgctxt "0035 | KYOUKO KIRIGIRI"
+msgid "Think back to that, and it should become clear."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>あの実験って言うと…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You mentioned an experiment...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>現場に残されてたモノクマボトルの
+#. 破片のことだよな…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You're talking about when we weighed those broken\n"
+"pieces of the Monokuma Bottle, right?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>なくなったモノクマボトルの状態…？
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Wait...then the bottle that was missing...\n"
+"<CLT>"
+msgstr ""
+
+#. なくなったモノクマボトルは、
+#. おそらく、<CLT 3>割れた状態<CLT>だったはずだよ…
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "The bottle must have been <CLT 3>broken<CLT>."
+msgstr ""
+
+#. ど、どうして…そんな事がわかるのよ…ッ！
+msgctxt "0041 | TOUKO FUKAWA"
+msgid "What m-makes you so sure!?"
+msgstr ""
+
+#. だって…<CLT 3>証拠<CLT>も残ってるから…
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"Because there was <CLT 3>evidence<CLT> at the scene that\n"
+"supports it."
+msgstr ""
+
+#. 証拠…？
+msgctxt "0043 | AOI ASAHINA"
+msgid "Huh?"
+msgstr ""
+
+#. 現場で割られたボトルが、
+#. １本だけじゃないって事を示す証拠だよ。
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"That's right. We found evidence that shows there was\n"
+"more than just one broken bottle at the scene."
+msgstr ""
+
+#. な、なんなのよ…その証拠って…！
+msgctxt "0045 | TOUKO FUKAWA"
+msgid "And what is this e-evidence!?"
+msgstr ""
+
+#. いいえ…
+#. それ単体では証拠にならないわ。
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid "No. That by itself isn't ample evidence."
+msgstr ""
+
+#. それらを使って行った事…
+#. 証拠になるのはそっちよ。
+msgctxt "0047 | KYOUKO KIRIGIRI"
+msgid ""
+"What you need to show them is what we used to figure\n"
+"it out ourselves."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. いいえ…
+#. それ単体では証拠にならないわ。
+msgctxt "0049 | KYOUKO KIRIGIRI"
+msgid "No. That by itself isn't ample evidence."
+msgstr ""
+
+#. それらを使って行った事…
+#. 証拠になるのはそっちよ。
+msgctxt "0050 | KYOUKO KIRIGIRI"
+msgid ""
+"What you need to show them is what we used to figure\n"
+"it out ourselves."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. はぁ…？　そんなのが証拠だっていうの…？
+msgctxt "0052 | TOUKO FUKAWA"
+msgid "Huh? Is that really supposed to c-convince us?"
+msgstr ""
+
+#. や、やっぱり、証拠なんてないんでしょ！？
+#. 適当な事を…言ってるんだわ！
+msgctxt "0053 | TOUKO FUKAWA"
+msgid ""
+"It's not e-evidence at all! Don't do th-things\n"
+"half-assed...!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木っち、時間かけ過ぎだべ！
+#. 将棋だったら、とっくに持ち時間切れになってるぞ！
+msgctxt "0055 | YASUHIRO HAGAKURE"
+msgid ""
+"Stop taking so long, Makoto! If this was chess, you'd\n"
+"have heard the buzzer by now for sure!"
+msgstr ""
+
+#. こ、このまま本当に時間切れになったらどうすんだ？
+#. まとめて処刑されちまうかも…！
+msgctxt "0056 | YASUHIRO HAGAKURE"
+msgid ""
+"H-Hey, what are we gonna do if we really DO run out of\n"
+"time! We're all gonna die!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>割られたモノクマボトルは１本じゃなかった…
+#. それを示す証拠は…
+#. <CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wasn't just a single broken bottle. And the\n"
+"evidence that proves that is...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>割られたモノクマボトルは１本じゃなかった…
+#. それを示す証拠…
+#. <CLT>
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wasn't just a single broken bottle. And the\n"
+"evidence that proves that is...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>さっき…ボクと霧切さんとで試してみたよな…
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko and I figured it out before...\n"
+"<CLT>"
+msgstr ""
+
+#. さっき、ボクと霧切さんは、
+#. ちょっとした<CLT 3>実験<CLT>をしてみたんだよ。
+msgctxt "0061 | MAKOTO NAEGI"
+msgid "Earlier, Kyoko and I did a little <CLT 3>experiment<CLT>."
+msgstr ""
+
+#. 現場に散乱してたボトルの破片と、
+#. 割れてないモノクマボトルの重さを比べてみたんだ。
+msgctxt "0062 | MAKOTO NAEGI"
+msgid ""
+"We compared the weight of the broken bottle pieces at\n"
+"the scene to one of the unbroken bottles."
+msgstr ""
+
+#. そうしたら、<CLT 3>集めた破片の方が重く<CLT>なったんだ。
+#. そんな結果になった理由は…
+msgctxt "0063 | MAKOTO NAEGI"
+msgid ""
+"And what we found was that the <CLT 3>collection of pieces\n"
+"was heavier<CLT>. And the reason for that is..."
+msgstr ""
+
+#. 現場に散乱してた破片が、
+#. ボトル１本分より多かったからなんだよ。
+msgctxt "0064 | MAKOTO NAEGI"
+msgid ""
+"...there was actually more than one bottle's worth of\n"
+"shattered glass."
+msgstr ""
+
+#. …あッ！
+msgctxt "0065 | TOUKO FUKAWA"
+msgid "Wh—!?"
+msgstr ""
+
+#. つまり、あの現場では、
+#. <CLT 3>２本<CLT>のモノクマボトルが割られていたのよ…
+msgctxt "0066 | KYOUKO KIRIGIRI"
+msgid ""
+"So from this, we can surmise that <CLT 3>two bottles<CLT> were\n"
+"actually broken at the scene of the crime."
+msgstr ""
+
+#. だけど、その内１本分の破片とモノクマフィギュアは
+#. 何者かに処分された…
+msgctxt "0067 | KYOUKO KIRIGIRI"
+msgid ""
+"But someone did their best to clean up the pieces of\n"
+"one of the bottles, along with the figure inside."
+msgstr ""
+
+#. その際、その人物は、
+#. 破片を多めに残してしまったんでしょうね…
+msgctxt "0068 | KYOUKO KIRIGIRI"
+msgid ""
+"But when they did, they must have left behind a few\n"
+"too many pieces."
+msgstr ""
+
+#. まぁ、きっちり量れというのも難しい話でしょうけど…
+msgctxt "0069 | KYOUKO KIRIGIRI"
+msgid ""
+"Which is only natural. They certainly had no way to\n"
+"measure the exact right number of pieces to remove."
+msgstr ""
+
+#. でも、破片を処分って…
+#. どうして、そんな事をする必要があったの？
+msgctxt "0070 | AOI ASAHINA"
+msgid ""
+"But...why would they have to try and get rid of it\n"
+"like that, anyway?"
+msgstr ""
+
+#. それが、事件に関係する物だったからだよ。
+msgctxt "0071 | MAKOTO NAEGI"
+msgid "Because of what it would reveal about the case..."
+msgstr ""
+
+#. <CLT 4>処分されたモノクマボトルが、
+#. 事件に関係していたのは間違いない…
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There can be no doubt that the second missing Monokuma\n"
+"Bottle is involved in this case.\n"
+"<CLT>"
+msgstr ""
+
+#. 大神の２発目の殴打
+msgctxt "0073 | CHOICE/RE:ACT"
+msgid "Sakura's second attacker"
+msgstr ""
+
+#. ボウリング
+msgctxt "0074 | CHOICE/RE:ACT"
+msgid "Some bowling aficionados"
+msgstr ""
+
+#. 腐川っちとオーガは、
+#. モノクマボトルでボウリングを楽しんだんだべ…
+msgctxt "0075 | YASUHIRO HAGAKURE"
+msgid ""
+"Toko and Ogre were having fun bowling, using the\n"
+"Monokuma Bottles as pins."
+msgstr ""
+
+#. その時に、
+#. 腐川っちが投げた球がオーガに…
+msgctxt "0076 | YASUHIRO HAGAKURE"
+msgid "But Toko threw her ball a little too hard, and—!"
+msgstr ""
+
+#. 苗木君、あなたのせいで時間を無駄にしたわ…
+msgctxt "0077 | KYOUKO KIRIGIRI"
+msgid ""
+"Well, Makoto. Thank you very much for wasting all our\n"
+"time."
+msgstr ""
+
+#. えーと…ごめん…
+msgctxt "0078 | MAKOTO NAEGI"
+msgid "Oh, um...sorry."
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. 大神の１発目の殴打
+msgctxt "0080 | CHOICE/RE:ACT"
+msgid "Sakura's first attacker"
+msgstr ""
+
+#. それはねーべ！
+msgctxt "0081 | YASUHIRO HAGAKURE"
+msgid "No, you're wrong!"
+msgstr ""
+
+#. あの時、モノクマボトルは間違いなく割れたべ！
+#. でも、俺が使ったのは１本だけだべ！
+msgctxt "0082 | YASUHIRO HAGAKURE"
+msgid ""
+"Yeah, the Monokuma Bottle definitely broke when I hit\n"
+"her. But I only used the one bottle!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0083 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>１発目の殴打のときじゃないとすると…
+#. <CLT>
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If it's not related to the first time she was\n"
+"attacked...\n"
+"<CLT>"
+msgstr ""
+
+#. そうか…わかったぞ！
+msgctxt "0085 | YASUHIRO HAGAKURE"
+msgid "Ah! I've figured it out!"
+msgstr ""
+
+#. ………………
+msgctxt "0086 | KYOUKO KIRIGIRI"
+msgid ".."
+msgstr ""
+
+#. も、もうちょっと
+#. 俺の発言にも興味を持ってほしいべ！！
+msgctxt "0087 | YASUHIRO HAGAKURE"
+msgid ""
+"I wish you'd at least acknowledge me when I say stuff\n"
+"like that!"
+msgstr ""
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0088 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…早く答えないと雰囲気が悪くなりそうだ。
+#. <CLT>
+msgctxt "0089 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Things are gonna go from bad to worse if I don't hurry\n"
+"up and explain this...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>モノクマボトルが割れるような使い方…
+#. そんな使い方って…あの時しかないはずだ…
+#. <CLT>
+msgctxt "0090 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The reason the second Monokuma Bottle was broken...\n"
+"There's only one explanation for it...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だとすると、あれが使われたのは…
+#. <CLT>
+msgctxt "0091 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It must have been used by...\n"
+"<CLT>"
+msgstr ""
+
+#. 大神さんの<CLT 3>２発目の殴打<CLT>…
+#. 処分されたモノクマボトルはそこで使われたんだよ。
+msgctxt "0092 | MAKOTO NAEGI"
+msgid ""
+"The bottle that was removed from the scene was used\n"
+"the <CLT 3>second time<CLT> Sakura was attacked."
+msgstr ""
+
+#. 大神さんの頭部にあった２つの傷…
+#. 割られた２本のボトル…
+msgctxt "0093 | KYOUKO KIRIGIRI"
+msgid ""
+"The second wound on Sakura's head came from that\n"
+"second bottle."
+msgstr ""
+
+#. それらを踏まえて考えてみれば、
+#. 導き出される結論は、それしかないわ…
+msgctxt "0094 | KYOUKO KIRIGIRI"
+msgid ""
+"Given all the evidence, this is the only possible\n"
+"conclusion."
+msgstr ""
+
+#. そして、犯人は１本分の破片だけを処分する事で、
+#. 殴打は１回だったと見せかけようとしたんだ。
+msgctxt "0095 | MAKOTO NAEGI"
+msgid ""
+"The killer wanted to make it look like there was only\n"
+"one attack, so they had to get rid of their evidence."
+msgstr ""
+
+#. だとすると、２発目の殴打を行った人物は、
+#. 葉隠君以外の誰かという事になるはずよ。
+msgctxt "0096 | KYOUKO KIRIGIRI"
+msgid ""
+"From there, we can conclude that it wasn't Hiro who\n"
+"delivered that second blow."
+msgstr ""
+
+#. そうよね、腐川さん？
+msgctxt "0097 | KYOUKO KIRIGIRI"
+msgid "Wouldn't you agree, Toko?"
+msgstr ""
+
+#. ええ…ッ！？
+msgctxt "0098 | TOUKO FUKAWA"
+msgid "Wh—!?"
+msgstr ""
+
+#. 雑誌を隠した件もあるし…
+#. あなたが事件前後に、娯楽室を訪れた可能性は高いわ。
+msgctxt "0099 | KYOUKO KIRIGIRI"
+msgid ""
+"And there's the matter of the magazine. You must have\n"
+"been in the rec room when the incident took place."
+msgstr ""
+
+#. ま、ま、ま、待ってよ…
+#. 確かに…２発目の殴打はあったかもしれないけど…
+msgctxt "0100 | TOUKO FUKAWA"
+msgid ""
+"W-W-W-Wait! I admit, maybe there was a s-second\n"
+"attack, but..."
+msgstr ""
+
+#. そ、それをやったのが…あたしって根拠は…
+#. どこにも…ないはずよ…！
+msgctxt "0101 | TOUKO FUKAWA"
+msgid ""
+"But there's n-no evidence I had anything t-to do with\n"
+"it!"
+msgstr ""
+
+#. いや、間違いない！　オメーが犯人だべ！
+msgctxt "0102 | YASUHIRO HAGAKURE"
+msgid "No way! You killed her, I'm sure of it!"
+msgstr ""
+
+#. あ、あんた…！　さっきまで自分が犯人だって、
+#. 言ってたクセに…ッ！！
+msgctxt "0103 | TOUKO FUKAWA"
+msgid ""
+"Sh-Shut up! Until two seconds ago, y-you were claiming\n"
+"*you* k-killed her!"
+msgstr ""
+
+#. 俺は自分の過ちを認める事を恐れないんだ！
+#. そういうタイプなんだべ！
+msgctxt "0104 | YASUHIRO HAGAKURE"
+msgid ""
+"I'm not afraid to admit when I'm wrong! That's just\n"
+"the kinda guy I am!"
+msgstr ""
+
+#. それに、そう断言出来る根拠も思い出したぞ！
+msgctxt "0105 | YASUHIRO HAGAKURE"
+msgid "Plus, I just remembered something that proves it!"
+msgstr ""
+
+#. 一応、聞いておこうか…
+msgctxt "0106 | BYAKUYA TOGAMI"
+msgid "Okay, fine, let's hear it..."
+msgstr ""
+
+#. あれは、俺がオーガに呼び出された直後の事だべ…
+msgctxt "0107 | YASUHIRO HAGAKURE"
+msgid "It was right after I got Ogre's note..."
+msgstr ""
+
+#. いきなり呼び出されて不安だった俺は、
+#. 予定時間より早く娯楽室の前で張り込みをしてたんだ。
+msgctxt "0108 | YASUHIRO HAGAKURE"
+msgid ""
+"I was kinda nervous about it, so I went to the rec\n"
+"room early. Y'know, to stake it out or whatever..."
+msgstr ""
+
+#. そんで、しばらくしたところで、
+#. 俺は見たんだ…
+msgctxt "0109 | YASUHIRO HAGAKURE"
+msgid "So I was waitin' there, and that's when I saw her..."
+msgstr ""
+
+#. 腐川っちが、娯楽室に入ってくとこをな！
+msgctxt "0110 | YASUHIRO HAGAKURE"
+msgid "I saw Toko go into the rec room!"
+msgstr ""
+
+#. <CLT 4>腐川さんが…娯楽室に…？
+#. <CLT>
+msgctxt "0111 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>You did...?\n"
+"<CLT>"
+msgstr ""
+
+#. その直後、今度はオーガが娯楽室に入っていった…
+msgctxt "0112 | YASUHIRO HAGAKURE"
+msgid ""
+"Pretty soon, Ogre showed up and *she* went in the rec\n"
+"room!"
+msgstr ""
+
+#. だから、部屋の中には腐川っちもいると思って、
+#. 俺は安心して娯楽室に入ったのに…
+msgctxt "0113 | YASUHIRO HAGAKURE"
+msgid ""
+"I assumed Toko was still in there, so I figured\n"
+"everything would be okay. That's why I headed in..."
+msgstr ""
+
+#. そこにいたのはオーガだけだったんだ！
+#. 腐川っちは、消えちまってたんだべ！！
+msgctxt "0114 | YASUHIRO HAGAKURE"
+msgid ""
+"But when I got inside, Ogre was all alone! Toko had\n"
+"disappeared!"
+msgstr ""
+
+#. なぜ…そんな大事な事を今になって言う…
+msgctxt "0115 | BYAKUYA TOGAMI"
+msgid "And you just now decided to share that with us...?"
+msgstr ""
+
+#. 自分が殺人を犯してしまったというショックで、
+#. すっかり忘れていたべ！
+msgctxt "0116 | YASUHIRO HAGAKURE"
+msgid ""
+"After the shock of thinking I'd killed someone, I\n"
+"forgot all about it!"
+msgstr ""
+
+#. 誰か、あいつの頭のネジを探してやれ。
+msgctxt "0117 | BYAKUYA TOGAMI"
+msgid ""
+"Could someone tighten the screws on his brain?\n"
+"I think they've come loose..."
+msgstr ""
+
+#. おい、腐川っち！
+#. あの時、オメーはどこに消えてたんだ！！
+msgctxt "0118 | YASUHIRO HAGAKURE"
+msgid "So, Toko! Where the heck did you disappear to!?"
+msgstr ""
+
+#. あ、あんたの見間違いよ…
+#. あたしは…娯楽室なんかに行ってないわ…！
+msgctxt "0119 | TOUKO FUKAWA"
+msgid ""
+"You d-don't know what you're talking about. I never\n"
+"went in the r-rec room!"
+msgstr ""
+
+#. 消えたんじゃなくて隠れていたのかもね？
+#. 娯楽室のどこかに…
+msgctxt "0120 | KYOUKO KIRIGIRI"
+msgid ""
+"I'm sure she didn't disappear, but maybe she found\n"
+"somewhere to hide..."
+msgstr ""
+
+#. …なッ！！
+msgctxt "0121 | TOUKO FUKAWA"
+msgid "What!?"
+msgstr ""
+
+#. あ、あたしが娯楽室に隠れてたなんて…
+#. そんな訳…な、ないじゃない…ッ！
+msgctxt "0122 | TOUKO FUKAWA"
+msgid ""
+"Hiding i-in the rec room? \n"
+"Don't be r-r-ridiculous!"
+msgstr ""
+
+#. なななんなのよ…！　妙な言いがかりばっかり！
+#. こここここの害虫…どもももめ…ッ！
+msgctxt "0123 | TOUKO FUKAWA"
+msgid ""
+"Wh-Wh-Wh-Why are you all ganging up on me! You're all\n"
+"nothing but v-v-v-vermin!"
+msgstr ""
+
+#. <CLT 4>いや、言いがかりなんかじゃない…
+#. <CLT>
+msgctxt "0124 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No, it's not ridiculous at all.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんが娯楽室に隠れてたと考えられる根拠は、
+#. ちゃんとあったはずだ…！
+#. <CLT>
+msgctxt "0125 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's definitely proof that shows Toko was hiding in\n"
+"the rec room...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いや、言いがかりなんかじゃない…
+#. <CLT>
+msgctxt "0126 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No, it's not ridiculous at all.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんが娯楽室に隠れてたと考えられる根拠…
+#. <CLT>
+msgctxt "0127 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I need proof that shows Toko was hiding in the rec\n"
+"room...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それは娯楽室の“あの場所”に、
+#. ちゃんと残されていたはずだ！
+#. <CLT>
+msgctxt "0128 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And I have it. She left it there for anyone to\n"
+"find...!\n"
+"<CLT>"
+msgstr ""

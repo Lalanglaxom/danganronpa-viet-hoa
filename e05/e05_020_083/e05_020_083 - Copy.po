@@ -1,0 +1,1151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. どうした？　何か見つけたか？
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgid "What is it? Did you find something?"
+msgstr ""
+
+#. う、うん…
+#. 死体の傍に、こんな物が落ちてたんだけど…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Yeah... This was on the ground near the body."
+msgstr ""
+
+#. …見た事ない鍵だな。
+#. 一体、どこの鍵だ…？
+msgctxt "0003 | BYAKUYA TOGAMI"
+msgid ""
+"I've never seen this key before. What could it\n"
+"possibly go to...?"
+msgstr ""
+
+#. …十神クンでも、わからない？
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "So even you don't know, then?"
+msgstr ""
+
+#. 苗木よ、お前に重要な任務を与えてやろう。
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid "Makoto...I'm going to give you a very important task."
+msgstr ""
+
+#. …え？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. その鍵を使えば、今まで閉ざされていた場所にも
+#. 入れるようになるのかもしれん…
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid ""
+"That key might give you access to certain areas we\n"
+"thought were locked."
+msgstr ""
+
+#. それを確かめろって…？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "You mean...?"
+msgstr ""
+
+#. ５階の<CLT 3>生物室<CLT>、４階の<CLT 3>学園長室<CLT>と<CLT 3>情報処理室<CLT>、
+#. それと、<CLT 3>寄宿舎の２階<CLT>だったな…
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgid ""
+"The <CLT 3>bio lab<CLT>, the <CLT 3>data center<CLT>, the <CLT 3>headmaster's\n"
+"room<CLT>, and <CLT 3>the dorm rooms on the 2nd floor<CLT>..."
+msgstr ""
+
+#. 任せたぞ…
+msgctxt "0010 | BYAKUYA TOGAMI"
+msgid "It's in your hands."
+msgstr ""
+
+#. <CLT 4>要は…パシリか……
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So I'm your errand boy now...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いったん整理しよう…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Just to make things clear...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>昨日の夜…ボクは<CLT><CLT 3>覆面姿の謎の人物<CLT><CLT 4>に襲われた。
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Last night, I was attacked by <CLT><CLT 3>someone wearing a\n"
+"mask<CLT><CLT 4>...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そして、その謎の人物は今…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And whoever that was—now they're...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>なぜだかわからないけど、
+#. ボクの目の前で死体となっている。
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I don't know why, but now they're laying dead in front\n"
+"of me...\n"
+"<CLT>"
+msgstr ""
+
+#. ゲラゲラゲラゲラッ！！
+#. だから言ったじゃーん！　死体が落ちてるって！
+msgctxt "0016 | TOUKO FUKAWA"
+msgid ""
+"Kyeeehahaha! I told ya, there's a corpse hangin' out\n"
+"here!"
+msgstr ""
+
+#. こ、これって…死体なの…？
+#. ホントに…死んでるの…？
+msgctxt "0017 | AOI ASAHINA"
+msgid "Are they really...dead? Is this really a dead body...?"
+msgstr ""
+
+#. すぐに調べるぞ。
+#. ただし…
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid ""
+"You need to begin looking around right away.\n"
+"However..."
+msgstr ""
+
+#. …慎重に慎重を重ねろ。
+#. 何があるかわからんぞ。
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid ""
+"Be ever so careful. There's no telling what you might\n"
+"find."
+msgstr ""
+
+#. ………………
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. こいつは何者だ…？
+#. なぜ、ここで死んでいる…？
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgid "Who is this? How did they wind up dead here...?"
+msgstr ""
+
+#. それを確認しない事には…
+#. 話が進まんな。
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgid "We can't move forward until we figure that out."
+msgstr ""
+
+#. 何か嫌な予感はしていたが…
+#. まさか爆発するとはな…
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgid ""
+"I had a bad feeling about that body. But I never\n"
+"imagined it would explode..."
+msgstr ""
+
+#. だが、あれが誰なのか…
+#. こいつは面白くなってきたな…
+msgctxt "0024 | BYAKUYA TOGAMI"
+msgid ""
+"Regardless, I can't help but wonder who it was. Things\n"
+"are growing more interesting by the minute..."
+msgstr ""
+
+#. 落とし物は…
+msgctxt "0025 | TOUKO FUKAWA"
+msgid "Just throw it in the lost and found!"
+msgstr ""
+
+#. 死体でもちゃんと届け出ろってね！
+#. ゲラゲラゲラゲラッ！！
+msgctxt "0026 | TOUKO FUKAWA"
+msgid ""
+"Even a dead body can find its way home that way!\n"
+"Kyeeehahahaha!"
+msgstr ""
+
+#. し、視界の端に…ちらりと何か見えた気が…
+msgctxt "0027 | TOUKO FUKAWA"
+msgid ""
+"I saw something out of the c-corner of my eye, just\n"
+"for a s-second..."
+msgstr ""
+
+#. もしかして…死体じゃないわよね…？
+msgctxt "0028 | TOUKO FUKAWA"
+msgid "It's a c-corpse...isn't it?"
+msgstr ""
+
+#. うん…そうみたいなんだ…
+msgctxt "0029 | MAKOTO NAEGI"
+msgid "Well, I guess so..."
+msgstr ""
+
+#. みたいって…どっちよ！？
+#. 死体なの…？　そうじゃないの…？
+msgctxt "0030 | TOUKO FUKAWA"
+msgid ""
+"You g-guess? Which is it!? Is it a d-dead body or\n"
+"not...!?"
+msgstr ""
+
+#. …死体だよ。
+msgctxt "0031 | MAKOTO NAEGI"
+msgid "It's a dead body."
+msgstr ""
+
+#. 嫌…嫌よ…見ないわよ…
+#. ま、また気を失ったら困るし…
+msgctxt "0032 | TOUKO FUKAWA"
+msgid ""
+"H-Hate this... I hate it! I'm not gonna l-look at it.\n"
+"I don't wanna faint a-again..."
+msgstr ""
+
+#. ボク達も困るから…
+#. 見ない方がいいと思うよ…
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"Yeah, we don't want that either. So I think it's best\n"
+"if you don't look."
+msgstr ""
+
+#. うぅ…うううぅ…みんな死んでばっかじゃない…
+#. な、なんで…こんな事になってるのよ…
+msgctxt "0034 | TOUKO FUKAWA"
+msgid ""
+"Gh...nn... Everyone is d-dying... Why? Why is this\n"
+"h-happening?"
+msgstr ""
+
+#. ど…どうなってるの…？
+#. あれって…誰なの…？
+msgctxt "0035 | AOI ASAHINA"
+msgid "Wh-What's going on...? Who is that?"
+msgstr ""
+
+#. さすが殺人鬼…
+#. あの爆発でも無傷とは…
+msgctxt "0036 | AOI ASAHINA"
+msgid ""
+"Even the explosion was done perfectly, though. I gotta\n"
+"hand it to whoever did it..."
+msgstr ""
+
+#. …って、感心していいのかな？
+msgctxt "0037 | AOI ASAHINA"
+msgid "Is it wrong to admire that kind of skill?"
+msgstr ""
+
+#. なんで、ここで死体なんだべ…？
+#. ていうか、これ誰だべ？
+msgctxt "0038 | YASUHIRO HAGAKURE"
+msgid "What's this body doing here? I mean...who *is* it!?"
+msgstr ""
+
+#. むむむ…黒幕が黒コゲ…
+msgctxt "0039 | YASUHIRO HAGAKURE"
+msgid "Hrmm... The mastermind just got masterlandmine'd..."
+msgstr ""
+
+#. 自分で言っておいて、なかなかのデキだべ！
+#. 心のネタ帳にメモっとかねば！
+msgctxt "0040 | YASUHIRO HAGAKURE"
+msgid ""
+"Pretty good, right? That one's goin' in the jokebook\n"
+"of my soul!"
+msgstr ""
+
+#. <CLT 4>それよりも、まずは…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to check the body before anything else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも、まずは…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to check the body before anything else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも、まずは…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to check the body before anything else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも、まずは…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to check the body before anything else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも、まずは…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to check the body before anything else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>まずは…この死体が誰なのかを
+#. 確かめないと…
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>We need to find out who this actually is...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、被害者の顔は覆面で覆われてて…
+#. これじゃあ、誰なのか判別出来ない…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But there's no way to tell with the mask covering\n"
+"their face like that.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それに、体を覆った<CLT><CLT 3>“白衣”<CLT><CLT 4>のせいで、
+#. 体型や服装の特徴さえわからない…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And the <CLT><CLT 3>white coat<CLT><CLT 4> they're wearing makes it\n"
+"impossible to tell anything about the body itself.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>謎の被害者…
+#. <CLT>
+msgctxt "0049 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The victim is a total mystery...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だけど…１つだけ確かなのは…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But one thing I *do* know...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>昨日の夜、ボクはこの覆面の人物に襲われている。
+#. <CLT>
+msgctxt "0051 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...is that whoever this is, they attacked me last\n"
+"night in my room.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だけど、その人がどうして…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But why...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>こんな所で…死んでるんだよ…！
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>How did they wind up dead in here!?\n"
+"<CLT>"
+msgstr ""
+
+#. 呼吸はない…胸も動いていない…
+#. 一切の生命的活動が停止しているようだ…
+msgctxt "0054 | BYAKUYA TOGAMI"
+msgid ""
+"Their heart isn't beating, they're not breathing,\n"
+"all signs of life have come to a complete stop..."
+msgstr ""
+
+#. 腹部に突き刺さった<CLT 3>ナイフ<CLT>のせいで、
+#. 服が真っ赤な血で染まっている…
+msgctxt "0055 | BYAKUYA TOGAMI"
+msgid ""
+"Thanks to the <CLT 3>knife<CLT> that's been driven into their\n"
+"stomach, their clothes are stained a bright red."
+msgstr ""
+
+#. 血は止まっているようだが、
+#. まだ濡れたまま、<CLT 3>乾いていない<CLT>ようだな。
+msgctxt "0056 | BYAKUYA TOGAMI"
+msgid ""
+"It appears the bleeding has stopped, but the blood\n"
+"that's there is <CLT 3>still wet<CLT>."
+msgstr ""
+
+#. 触ると、汚れる危険性があるぞ…
+msgctxt "0057 | BYAKUYA TOGAMI"
+msgid "Be careful you don't touch it and get some on you..."
+msgstr ""
+
+#. 冷静に分析してる場合じゃねーって…
+msgctxt "0058 | YASUHIRO HAGAKURE"
+msgid "How can you be so calm at a time like this?"
+msgstr ""
+
+#. つーか、誰なんだって。
+#. 顔も体も隠れてるし、さっぱりだべ…
+msgctxt "0059 | YASUHIRO HAGAKURE"
+msgid ""
+"Who *is* it!? Their face and body are all hidden,\n"
+"so I don't have a clue..."
+msgstr ""
+
+#. 多分…<CLT 3>女の子<CLT>だよ。
+msgctxt "0060 | AOI ASAHINA"
+msgid "I'm pretty sure it's a <CLT 3>girl<CLT> at least..."
+msgstr ""
+
+#. へ…？　なんで？
+msgctxt "0061 | YASUHIRO HAGAKURE"
+msgid "Huh? How can you tell?"
+msgstr ""
+
+#. 胸の膨らみとか…全体的な体のラインもそうだし…
+msgctxt "0062 | AOI ASAHINA"
+msgid ""
+"Well...I think I see the outline of her chest. And\n"
+"just the general shape of the body..."
+msgstr ""
+
+#. 間違いないよ…
+#. その人、女の子だよ…
+msgctxt "0063 | AOI ASAHINA"
+msgid "Yeah, the more I look, the more I'm sure it's a girl."
+msgstr ""
+
+#. <CLT 4>…女の子？
+#. じゃあ、ひょっとして…！
+#. <CLT>
+msgctxt "0064 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Really? Then it could be—!\n"
+"<CLT>"
+msgstr ""
+
+#. ゲラゲラゲラゲラ！　つーかさぁ！
+msgctxt "0065 | TOUKO FUKAWA"
+msgid "Kyeeehahaha! Okay then!"
+msgstr ""
+
+#. その覆面を剥がしちゃえばいいじゃーん！！
+msgctxt "0066 | TOUKO FUKAWA"
+msgid "Let's just tear the mask clean off!"
+msgstr ""
+
+#. おい、待て…
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgid "Wait, don't—!"
+msgstr ""
+
+#. <CLT 4>…だけど遅かった。
+#. 十神クンが呼び止めた時には、もう…
+#. <CLT>
+msgctxt "0068 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But by the time he called out, it was already too\n"
+"late.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐川さんの手は覆面を掴んでいた。
+#. <CLT>
+msgctxt "0069 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Toko's hand shot out toward the mask.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そして、次の瞬間…！
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And in the next instant...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>目がくらむような光と…
+#. 耳をつんざくような轟音…
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...there was a blinding light, and a deafening roar.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>爆発した…
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The body...blew up.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>爆発した爆発した爆発した爆発した爆発した爆発した…
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It blew up it blew up it blew up it blew up it blew up\n"
+"it blew up it blew up it blew up!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…視界が真っ暗になった。
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>My vision started to darken. I prepared to pass out.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だけど…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But then...\n"
+"<CLT>"
+msgstr ""
+
+#. …急げ、さっさと火を消すんだ。
+msgctxt "0076 | BYAKUYA TOGAMI"
+msgid "Hurry up, put out the fire."
+msgstr ""
+
+#. <CLT 4>その声が、飛びかけていたボクの意識を
+#. 引きずり戻してくれた。
+#. <CLT>
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As my consciousness attempted to float away, that\n"
+"voice reached up and pulled it back down to Earth.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そして、ボクの手に何かが渡された…
+#. <CLT>
+msgctxt "0078 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Someone pressed something into my hands.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…水の入ったバケツ。
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It was...a bucket of water.\n"
+"<CLT>"
+msgstr ""
+
+#. 早くしろ。水をかけるんだ。
+msgctxt "0080 | BYAKUYA TOGAMI"
+msgid "Come on, dump the water on it."
+msgstr ""
+
+#. う、うん…ッ！！
+msgctxt "0081 | MAKOTO NAEGI"
+msgid "O-Okay!"
+msgstr ""
+
+#. <CLT 4>ボクは、燃えさかる“死体の上半身”に目掛けて、
+#. バケツの水を思いっきりぶちまけた。
+#. <CLT>
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The upper half of the body was on fire. I took aim and\n"
+"tossed the water as hard as I could.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「バッシャーン！」
+#. <CLT>
+msgctxt "0083 | NARRATION"
+msgid ""
+"<CLT 23>*SPLOOSH*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>すると、すぐに火は勢いを失い…
+#. <CLT>
+msgctxt "0084 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Thankfully, that was enough to put out the fire.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>あたりに不快な匂いだけを残して、
+#. 完全に鎮火した。
+#. <CLT>
+msgctxt "0085 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It died down, leaving behind only the unpleasant smell\n"
+"of burning...\n"
+"<CLT>"
+msgstr ""
+
+#. な、なんとか…
+#. 鎮火した…みたいだけど…
+msgctxt "0086 | MAKOTO NAEGI"
+msgid "I-I guess that took care of it..."
+msgstr ""
+
+#. ど、どういう事だべ…
+#. いきなり……
+msgctxt "0087 | YASUHIRO HAGAKURE"
+msgid "But what the hell, man?"
+msgstr ""
+
+#. 爆発…したよね…？
+msgctxt "0088 | AOI ASAHINA"
+msgid "It...exploded?"
+msgstr ""
+
+#. 何か…嫌な予感はしていたが…
+#. まさか爆発するとは…
+msgctxt "0089 | BYAKUYA TOGAMI"
+msgid ""
+"I...had a bad feeling about that body. But I never\n"
+"imagined it would explode..."
+msgstr ""
+
+#. おかげで、死体が……
+msgctxt "0090 | BYAKUYA TOGAMI"
+msgid "And now the body..."
+msgstr ""
+
+#. <CLT 3>真っ黒焦げ<CLT>だべ…！
+#. スーパーウェルダンだべ…！
+msgctxt "0091 | YASUHIRO HAGAKURE"
+msgid "It's <CLT 3>burnt to a crisp<CLT>! That's beyond well done, man!"
+msgstr ""
+
+#. ちょっと、ステーキに例えないでよ…！
+#. 食べられなくなるじゃん…！
+msgctxt "0092 | AOI ASAHINA"
+msgid ""
+"Don't compare it to a steak! I'll never be able to eat\n"
+"steak again..."
+msgstr ""
+
+#. だけど、これじゃあ…
+#. もう本当にわからないね…
+msgctxt "0093 | MAKOTO NAEGI"
+msgid ""
+"But now that the body's charred, I really have no\n"
+"idea..."
+msgstr ""
+
+#. この死体が…誰なのか…
+msgctxt "0094 | MAKOTO NAEGI"
+msgid "How are we gonna find out who it was...?"
+msgstr ""
+
+#. …ここにいない人間は誰だ？
+msgctxt "0095 | BYAKUYA TOGAMI"
+msgid "Who isn't here right now?"
+msgstr ""
+
+#. …え？
+msgctxt "0096 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr ""
+
+#. ここにいない人間を考えれば、
+#. 可能性は、自ずと絞られてくるはずだ…
+msgctxt "0097 | BYAKUYA TOGAMI"
+msgid ""
+"If we consider who's not here, that will quickly\n"
+"narrow down who it must be."
+msgstr ""
+
+#. ここにいない人間って…
+msgctxt "0098 | AOI ASAHINA"
+msgid "There's only one person missing..."
+msgstr ""
+
+#. 霧切っち…だけだべ…
+msgctxt "0099 | YASUHIRO HAGAKURE"
+msgid "It's...Kyoko."
+msgstr ""
+
+#. …き、霧切さんッ！？
+msgctxt "0100 | MAKOTO NAEGI"
+msgid "K-Kyoko!?"
+msgstr ""
+
+#. <CLT 4>じゃあ、あの死体って…
+#. <CLT>
+msgctxt "0101 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Then that dead body...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さん…！？
+#. <CLT>
+msgctxt "0102 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...is Kyoko?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>違う…そんなはず…ッ！！
+#. <CLT>
+msgctxt "0103 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No! That can't be right!\n"
+"<CLT>"
+msgstr ""
+
+#. …落ち着け。
+#. 俺は霧切だとは一言も言ってないぞ。
+msgctxt "0104 | BYAKUYA TOGAMI"
+msgid "Calm down. I didn't say it was Kyoko."
+msgstr ""
+
+#. けどよ、他に誰が…
+msgctxt "0105 | YASUHIRO HAGAKURE"
+msgid "But, I mean...who else...?"
+msgstr ""
+
+#. まだいるじゃないか…
+msgctxt "0106 | BYAKUYA TOGAMI"
+msgid "There *is* one other person."
+msgstr ""
+
+#. 黒幕だよ…！
+msgctxt "0107 | BYAKUYA TOGAMI"
+msgid "The mastermind..."
+msgstr ""
+
+#. …えッ！？
+msgctxt "0108 | AOI ASAHINA"
+msgid "What!?"
+msgstr ""
+
+#. く、黒幕って…！
+msgctxt "0109 | YASUHIRO HAGAKURE"
+msgid "Th-The mastermind!?"
+msgstr ""
+
+#. そんなん、あり得ねーって！！
+#. 黒幕が黒コゲなんて悪い冗談だべ！！
+msgctxt "0110 | YASUHIRO HAGAKURE"
+msgid ""
+"Come on, there's no way! The MASTERMIND got\n"
+"char-broiled!? Get serious!"
+msgstr ""
+
+#. 確かに、普通であれば、
+#. 考えられない可能性かもしれん。
+msgctxt "0111 | BYAKUYA TOGAMI"
+msgid ""
+"I agree, normally the idea wouldn't be worth\n"
+"considering."
+msgstr ""
+
+#. だが、俺達には思い当たる節があるはずだぞ。
+msgctxt "0112 | BYAKUYA TOGAMI"
+msgid "But I have reason to believe it may be true."
+msgstr ""
+
+#. もし、黒幕が死んだのなら、
+#. あの件にも説明が付けられるはずだ…
+msgctxt "0113 | BYAKUYA TOGAMI"
+msgid ""
+"The mastermind being dead would explain that other\n"
+"matter, wouldn't it?"
+msgstr ""
+
+#. モノクマが急に動かなくなった件だ…
+msgctxt "0114 | BYAKUYA TOGAMI"
+msgid ""
+"Monokuma can hardly move around if its master is dead,\n"
+"right?"
+msgstr ""
+
+#. だ、だけどよ！　あの死体は女なんだろ？
+#. だとすると、おかしくねーか？
+msgctxt "0115 | YASUHIRO HAGAKURE"
+msgid ""
+"B-But...that corpse is a girl, right? It doesn't make\n"
+"any sense!"
+msgstr ""
+
+#. だって、アルターエゴが言ってたべ？
+msgctxt "0116 | YASUHIRO HAGAKURE"
+msgid "I mean, remember what Alter Ego said?"
+msgstr ""
+
+#. つまり、すべてを仕組んだ黒幕は、
+#. その学園長って可能性が高いんだ。
+msgctxt "0117 | ALTER EGO"
+msgid ""
+"So that same person may very well be the mastermind\n"
+"who planned all this out."
+msgstr ""
+
+#. ちなみに、その学園長は<CLT 3>３０代後半の男性<CLT>で…
+msgctxt "0118 | ALTER EGO"
+msgid ""
+"And according to the files, the headmaster is <CLT 3>a man\n"
+"in his late thirties<CLT>."
+msgstr ""
+
+#. 今も…<CLT 3>この学園内にいる<CLT>可能性が高いみたいだよ…
+msgctxt "0119 | ALTER EGO"
+msgid ""
+"It seems possible, even likely, that he's <CLT 3>somewhere\n"
+"in this school<CLT> right now."
+msgstr ""
+
+#. <CLT 3>３０代後半の男性<CLT>って…
+#. 明らかに死体の特徴とは一致しねーぞ？
+msgctxt "0120 | YASUHIRO HAGAKURE"
+msgid ""
+"He said the mastermind is some <CLT 3>middle-aged dude<CLT>,\n"
+"right? Which the corpse obviously isn't!"
+msgstr ""
+
+#. だったら…
+#. 黒幕は…学園長じゃなくて…
+msgctxt "0121 | MAKOTO NAEGI"
+msgid ""
+"Then could that mean...the mastermind *isn't* the\n"
+"headmaster...?"
+msgstr ""
+
+#. 霧切さんが言ってた…例の女子高校生…
+msgctxt "0122 | MAKOTO NAEGI"
+msgid "Is it the teenage girl Kyoko told me about?"
+msgstr ""
+
+#. 超高校級の絶望……
+msgctxt "0123 | MAKOTO NAEGI"
+msgid "The Ultimate Despair...?"
+msgstr ""
+
+#. は…？
+msgctxt "0124 | YASUHIRO HAGAKURE"
+msgid "Huh...?"
+msgstr ""
+
+#. 戦刃むくろ…１６人目の高校生…
+msgctxt "0125 | MAKOTO NAEGI"
+msgid ""
+"Mukuro Ikusaba...the sixteenth student at Hope's\n"
+"Peak..."
+msgstr ""
+
+#. …なんの話だ？
+msgctxt "0126 | BYAKUYA TOGAMI"
+msgid "...What are you talking about?"
+msgstr ""
+
+#. この間、霧切さんから、
+#. こっそり教えてもらったんだよ…
+msgctxt "0127 | MAKOTO NAEGI"
+msgid "The other day, Kyoko confided in me..."
+msgstr ""
+
+#. この学園には…１６人目の高校生がいるって…
+msgctxt "0128 | MAKOTO NAEGI"
+msgid ""
+"She said there was a sixteenth student here in the\n"
+"school."
+msgstr ""
+
+#. 詳しく話せ…
+msgctxt "0129 | BYAKUYA TOGAMI"
+msgid "I think you'd better tell us everything you know."
+msgstr ""
+
+#. え、えっと…霧切さんが言ってたのは…
+msgctxt "0130 | MAKOTO NAEGI"
+msgid "W-Well, all Kyoko told me was..."
+msgstr ""
+
+#. 戦刃むくろ…
+msgctxt "0131 | KYOUKO KIRIGIRI"
+msgid "Mukuro Ikusaba..."
+msgstr ""
+
+#. この学園に潜む１６人目の高校生…
+msgctxt "0132 | KYOUKO KIRIGIRI"
+msgid ""
+"The sixteenth student, lying hidden somewhere in this\n"
+"school..."
+msgstr ""
+
+#. “超高校級の絶望”と呼ばれる女子高校生…
+msgctxt "0133 | KYOUKO KIRIGIRI"
+msgid "The one they call the Ultimate Despair..."
+msgstr ""
+
+#. 戦刃むくろに気を付けて。
+msgctxt "0134 | KYOUKO KIRIGIRI"
+msgid "Watch out for her."
+msgstr ""
+
+#. 霧切さんは、その<CLT 3>戦刃むくろ<CLT>ってヤツこそが、
+#. 黒幕だと睨んでいるみたいだった…
+msgctxt "0135 | MAKOTO NAEGI"
+msgid ""
+"It sounded like Kyoko thinks <CLT 3>Mukuro Ikusaba<CLT> is the\n"
+"mastermind."
+msgstr ""
+
+#. いいえ…学園長は黒幕じゃないわ。
+msgctxt "0136 | KYOUKO KIRIGIRI"
+msgid ""
+"No...the headmaster isn't the mastermind, I'm sure of\n"
+"that."
+msgstr ""
+
+#. え…？
+msgctxt "0137 | MAKOTO NAEGI"
+msgid "What...?"
+msgstr ""
+
+#. まだ確信は持てないけど、
+#. それは間違いない…
+msgctxt "0138 | KYOUKO KIRIGIRI"
+msgid "I don't have proof yet, but I have no doubt I'm right."
+msgstr ""
+
+#. １６人目の高校生…女子高校生か…
+#. 確かに、死体の特徴とは一致するな。
+msgctxt "0139 | BYAKUYA TOGAMI"
+msgid ""
+"There's another student here, and it's a female? That\n"
+"*would* match the body's characteristics..."
+msgstr ""
+
+#. しかも<CLT 3>“超高校級の絶望”<CLT>ってフレーズも、
+#. 黒幕ちっくじゃない…？
+msgctxt "0140 | AOI ASAHINA"
+msgid ""
+"And that phrase, <CLT 3>the Ultimate Despair<CLT>—it sounds\n"
+"super mastermind-y, doesn't it?"
+msgstr ""
+
+#. …つまり、黒幕は戦刃むくろって１６人目の高校生で、
+#. そいつは、超高校級の絶望と呼ばれるヤツだったと？
+msgctxt "0141 | YASUHIRO HAGAKURE"
+msgid ""
+"Okay, so...the mastermind is this girl Mukuro? And\n"
+"she's a student here? And she's the Ultimate Despair?"
+msgstr ""
+
+#. だけどよ、ツチノコみてーにずっと隠れてたそいつが、
+#. どーして…
+msgctxt "0142 | YASUHIRO HAGAKURE"
+msgid ""
+"But if she's been hiding here in the school like some\n"
+"teenage Bigfoot..."
+msgstr ""
+
+#. あそこで黒コゲになってんだって！？
+msgctxt "0143 | YASUHIRO HAGAKURE"
+msgid "...how'd she wind up burnt to a crisp!?"
+msgstr ""
+
+#. いくらなんでも意味不明だべ！
+#. いきなり現れて、いきなり死んでるなんてよ！
+msgctxt "0144 | YASUHIRO HAGAKURE"
+msgid ""
+"None of this makes any sense! To just suddenly show up\n"
+"and then die!?"
+msgstr ""
+
+#. どうやら、もう１度、
+#. あの死体を調べてみる必要がありそうだな…
+msgctxt "0145 | BYAKUYA TOGAMI"
+msgid "I think we'd better take a closer look at the body."
+msgstr ""
+
+#. 何か、身元を割り出す手掛かりが
+#. 残っているかもしれん…
+msgctxt "0146 | BYAKUYA TOGAMI"
+msgid ""
+"There may be some clues to help us figure out exactly\n"
+"who it is."
+msgstr ""
+
+#. あ！　ちょっと待って！
+msgctxt "0147 | AOI ASAHINA"
+msgid "Ah! Hey, wait!"
+msgstr ""
+
+#. …なんだ？
+msgctxt "0148 | BYAKUYA TOGAMI"
+msgid "...What?"
+msgstr ""
+
+#. わ、忘れてない…？
+#. 腐川の事……
+msgctxt "0149 | AOI ASAHINA"
+msgid "A-Aren't we forgetting something? You know...Toko?"
+msgstr ""
+
+#. あいつッ！　確か、ふっ飛ばされてたべ！
+msgctxt "0150 | YASUHIRO HAGAKURE"
+msgid "Oh yeah! She got totally blown up, huh!?"
+msgstr ""
+
+#. …忘れよう。
+#. きっと、爆破されて粉微塵だ。
+msgctxt "0151 | BYAKUYA TOGAMI"
+msgid ""
+"Forget about her. I'm sure the explosion vaporized\n"
+"her."
+msgstr ""
+
+#. う…うぅ…ッ！
+msgctxt "0152 | TOUKO FUKAWA"
+msgid "Nn...gh...!"
+msgstr ""
+
+#. あ、無事だった！
+msgctxt "0153 | AOI ASAHINA"
+msgid "Oh! She survived!"
+msgstr ""
+
+#. なんだ…生きてたのか…
+msgctxt "0154 | BYAKUYA TOGAMI"
+msgid "Oh...she survived..."
+msgstr ""
+
+#. あれ…？　今…何が…？
+#. お、教えてください…白夜様…？
+msgctxt "0155 | TOUKO FUKAWA"
+msgid "Huh? What just h-happened...? Master...?"
+msgstr ""
+
+#. 金輪際、酸素は吸わないと
+#. お前が高らかに宣言したところだ…
+msgctxt "0156 | BYAKUYA TOGAMI"
+msgid ""
+"You declared for the whole world to hear that you\n"
+"would never again inhale a single molecule of oxygen."
+msgstr ""
+
+#. じゃあ…白夜様が吐いたニ酸化炭素だけでいいです…
+#. そ、それだけで…生きていけますから…
+msgctxt "0157 | TOUKO FUKAWA"
+msgid ""
+"Oh. Then...I don't mind b-breathing in the carbon\n"
+"dioxide you exhale. That's enough for m-me to live..."
+msgstr ""
+
+#. 不思議なキャッチボールだべ…
+msgctxt "0158 | YASUHIRO HAGAKURE"
+msgid "This is the strangest back-and-forth I've ever seen..."
+msgstr ""
+
+#. <CLT 4>もう１度、死体を詳しく調べてみよう…
+#. <CLT>
+msgctxt "0159 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I should take a close look at the body one more\n"
+"time...\n"
+"<CLT>"
+msgstr ""
+
+#. …苗木、気を付けてね。
+#. 相手は女の子なんだからね…
+msgctxt "0160 | AOI ASAHINA"
+msgid ""
+"Watch yourself, Makoto. She may be dead, but she's\n"
+"still a girl..."
+msgstr ""
+
+#. だ、大丈夫だよ。
+#. ボクだって…そんなに死体を触れる訳じゃないし…
+msgctxt "0161 | MAKOTO NAEGI"
+msgid ""
+"D-Don't worry. I don't plan on touching the body all\n"
+"that much."
+msgstr ""
+
+#. <CLT 4>それこそ、霧切さんじゃないんだから…
+#. <CLT>
+msgctxt "0162 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm not Kyoko, after all...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0163 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I have to focus on the body...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも…
+#. あの死体を調べないと…
+#. <CLT>
+msgctxt "0164 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I have to focus on the body...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それよりも、死体を調べないと…
+#. <CLT>
+msgctxt "0165 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Right now I have to focus on the body...\n"
+"<CLT>"
+msgstr ""

@@ -1,0 +1,825 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 【話】
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "[talk]"
+msgstr ""
+
+#. 話っていうのは、
+#. 腐川さんが、大神さんに呼び出された件だよ…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"I wanted to talk about the fact that Sakura had asked\n"
+"to meet with you."
+msgstr ""
+
+#. …なッ！！
+msgctxt "0003 | TOUKO FUKAWA"
+msgid "Wh—!?"
+msgstr ""
+
+#. し、し、知らないわよ…
+#. あ、あたしは…何も…知らないわよ…！
+msgctxt "0004 | TOUKO FUKAWA"
+msgid "I-I-I don't know what you're t-talking about!"
+msgstr ""
+
+#. …十神クンは、呼び出された件に関しては
+#. 認めてたよ？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"Byakuya already told me she had asked to meet with\n"
+"him."
+msgstr ""
+
+#. え…？　白夜様もあいつに呼び出されてたの…？
+msgctxt "0006 | TOUKO FUKAWA"
+msgid "What...? She w-wanted to meet with Master, too?"
+msgstr ""
+
+#. ハッ！　<CLT 3>“白夜様も”<CLT>って言っちゃった…！
+msgctxt "0007 | TOUKO FUKAWA"
+msgid "Ah! I just s-said \"<CLT 3>too<CLT>,\" didn't I...?"
+msgstr ""
+
+#. これじゃあ、あたしも呼び出されたって…
+#. バレバレじゃない…！
+msgctxt "0008 | TOUKO FUKAWA"
+msgid "I guess now it's t-totally obvious, huh?"
+msgstr ""
+
+#. そ、そうだね…
+#. じゃあ、話してくれるよね…？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "Y-Yeah, pretty much... So, can you tell me about it?"
+msgstr ""
+
+#. た、確かに<CLT 3>メモは見た<CLT>わ…
+msgctxt "0010 | TOUKO FUKAWA"
+msgid "I a-admit, I did <CLT 3>get the note<CLT>..."
+msgstr ""
+
+#. で、でも…<CLT 3>会いに行ってない<CLT>わよ…
+#. こ、怖くて…行けなかったのよ…！
+msgctxt "0011 | TOUKO FUKAWA"
+msgid ""
+"B-But I didn't go <CLT 3>see her<CLT>! I was s-scared, so...I\n"
+"couldn't bring m-myself to go!"
+msgstr ""
+
+#. <CLT 4>うーん、腐川さんは会いに行ってないって
+#. 言ってるけど…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hmm... Toko claims she didn't go see her, but...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…本当はどうなんだろう？
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...can I really believe her?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、その証言をひっくり返すような根拠がない以上、
+#. 現時点では信じるしかないか…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, until I can prove otherwise, I have no choice\n"
+"but to accept it as fact.\n"
+"<CLT>"
+msgstr ""
+
+#. も、もういいでしょ…
+#. あたしは…部屋に戻るわよ…
+msgctxt "0015 | TOUKO FUKAWA"
+msgid ""
+"Is that g-good enough? Then I'm going back to m-my\n"
+"room..."
+msgstr ""
+
+#. <CLT 4>腐川さんは、そそくさと部屋の中に戻っていった。
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>With that, Toko quickly retreated into her room.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>腐川の証言<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0017 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Toko's Account<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. 【いやらしい話】
+msgctxt "0018 | CHOICE/RE:ACT"
+msgid "[indecent]"
+msgstr ""
+
+#. あの…いやらしいってよく言うけど…
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"Um, you know...you're always talking about how\n"
+"indecent things are."
+msgstr ""
+
+#. そういう事言い出すのって、
+#. いつも腐川さんだよね…？
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"But you're always the one who brings it up in the\n"
+"first place, ya know?"
+msgstr ""
+
+#. な、なぁ！？
+msgctxt "0021 | TOUKO FUKAWA"
+msgid "Wh-What!?"
+msgstr ""
+
+#. あああ、あんた…
+#. 苗木の分際で…言葉責めでもしようって気！？
+msgctxt "0022 | TOUKO FUKAWA"
+msgid ""
+"You think y-you can beat me in a battle of wits?\n"
+"*You*? You're n-nothing...!"
+msgstr ""
+
+#. いや、そんなつもりは…
+msgctxt "0023 | MAKOTO NAEGI"
+msgid "That's not what I'm trying to do..."
+msgstr ""
+
+#. だだだ、駄目よ…！
+#. あたしを責めていいのは白夜様だけ…！
+msgctxt "0024 | TOUKO FUKAWA"
+msgid ""
+"D-D-Don't bother! The only one who's allowed to\n"
+"a-accuse me is Master!"
+msgstr ""
+
+#. ああ…あたしの身も心も…
+#. 白夜様に…
+msgctxt "0025 | TOUKO FUKAWA"
+msgid "My h-heart and soul belong to h-him...!"
+msgstr ""
+
+#. んはぁぁぁ～～～んッ！
+msgctxt "0026 | TOUKO FUKAWA"
+msgid "Aaaaahhh~!"
+msgstr ""
+
+#. <CLT 4>…どうやって収めよう、この状況。<CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "<CLT 4>I need to pump the brakes on this situation...<CLT>"
+msgstr ""
+
+#. ハッ！
+msgctxt "0028 | TOUKO FUKAWA"
+msgid "Ah—!"
+msgstr ""
+
+#. ………………
+msgctxt "0029 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. ………………
+msgctxt "0030 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>気まずい…<CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid "<CLT 4>Awkward silence...<CLT>"
+msgstr ""
+
+#. 【用事】
+msgctxt "0032 | CHOICE/RE:ACT"
+msgid "[Need something]"
+msgstr ""
+
+#. …ちょっと、確認したい事があるんだ。
+#. 葉隠クンが大神さんに呼び出された件なんだけど…
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"Yeah, actually...I just wanted to check something.\n"
+"It's about how Sakura wanted to meet with you..."
+msgstr ""
+
+#. な、な、なんで知ってんだ！？
+msgctxt "0034 | YASUHIRO HAGAKURE"
+msgid "H-H-How'd you know about that!?"
+msgstr ""
+
+#. は…！　さては俺の心を読んだな？
+#. 特異な能力に目覚めたんだべな！？
+msgctxt "0035 | YASUHIRO HAGAKURE"
+msgid ""
+"Uwah! Did you maybe...gaze into my soul? Have your\n"
+"special abilities awakened in you!?"
+msgstr ""
+
+#. だけど、呼び出されたのは俺だけじゃねーべ！
+msgctxt "0036 | YASUHIRO HAGAKURE"
+msgid "B-But! I'm not the only one she wanted to meet with!"
+msgstr ""
+
+#. 腐川っちと十神っちも呼び出したって、
+#. 当の<CLT 3>オーガ自身が言ってた<CLT>べ！
+msgctxt "0037 | YASUHIRO HAGAKURE"
+msgid ""
+"<CLT 3>Ogre told me herself<CLT> that she asked Byakuya and Toko\n"
+"to come, too!"
+msgstr ""
+
+#. え？　大神さん自身から聞いたの？
+#. それって、いつ聞いたの？
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "What? When did Sakura tell you that?"
+msgstr ""
+
+#. あ…！　そ、それは…！
+msgctxt "0039 | YASUHIRO HAGAKURE"
+msgid "Oh—! W-Well...!"
+msgstr ""
+
+#. オーガに呼び出された時だべ！！
+msgctxt "0040 | YASUHIRO HAGAKURE"
+msgid "When she asked me to meet with her, of course!"
+msgstr ""
+
+#. メモで呼び出されたんじゃないの…？
+msgctxt "0041 | MAKOTO NAEGI"
+msgid "But...didn't she write you a note?"
+msgstr ""
+
+#. そう…メモを…メモを…
+msgctxt "0042 | YASUHIRO HAGAKURE"
+msgid "Yeah, uh...a note...she uh..."
+msgstr ""
+
+#. …手渡しされたんだべ！！
+#. そん時に、ついでに聞いたんだ！
+msgctxt "0043 | YASUHIRO HAGAKURE"
+msgid ""
+"She gave it to me in person! And she happened to\n"
+"mention the others, like, in passing!"
+msgstr ""
+
+#. <CLT 4>なんだか…あからさまに怪しいな…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I gotta be honest, this is super suspicious...\n"
+"<CLT>"
+msgstr ""
+
+#. それで、大神さんに会いに行ったの？
+msgctxt "0045 | MAKOTO NAEGI"
+msgid "So then you went and met with Sakura?"
+msgstr ""
+
+#. い、行ってねーって！
+#. 俺が…会いに行く訳ねーだろ！
+msgctxt "0046 | YASUHIRO HAGAKURE"
+msgid "N-No way, I totally didn't! Why would I ever do that!?"
+msgstr ""
+
+#. <CLT 4>やっぱり…何か怪しいな…
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Yeah...definitely suspicious.\n"
+"<CLT>"
+msgstr ""
+
+#. 俺が最後にオーガと会ったのは、
+#. 怪我した朝日奈っちを保健室に連れてった時だべ！
+msgctxt "0048 | YASUHIRO HAGAKURE"
+msgid ""
+"The last time I saw Ogre was when Hina got hurt and I\n"
+"took her to the nurse's office!"
+msgstr ""
+
+#. <CLT 3>それ以来、会ってねーって！！<CLT>
+msgctxt "0049 | YASUHIRO HAGAKURE"
+msgid "<CLT 3>I haven't seen her<CLT> since then!"
+msgstr ""
+
+#. ちなみに…受け取ったメモを見せてもらえる？
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"While I'm here, could you show me the note she gave\n"
+"you?"
+msgstr ""
+
+#. メモ…残ってたっけなぁ…？
+#. えーっと…
+msgctxt "0051 | YASUHIRO HAGAKURE"
+msgid "Oh, um...do I still have it...? Let's see..."
+msgstr ""
+
+#. <CLT 4>葉隠クンはポケットの中に手を突っ込むと…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro was feeling around in his pockets...\n"
+"<CLT>"
+msgstr ""
+
+#. あー、スマン！　ないわ、ないない！！
+msgctxt "0053 | YASUHIRO HAGAKURE"
+msgid "Ah, sorry! Looks like I don't have it anymore!"
+msgstr ""
+
+#. <CLT 4>ひきつったような笑みを見せながら、
+#. ポケットの中から手を出した。
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>With a big, goofy smile on his face, he pulled his\n"
+"hands back out of his pockets.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>と、その時、
+#. 何かがボクの足元に落ちた…
+#. <CLT>
+msgctxt "0055 | YASUHIRO HAGAKURE"
+msgid ""
+"<CLT 4>But when he did, I saw something flutter to the\n"
+"ground...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>葉隠クンの<CLT><CLT 3>“ポケットに入ってた何か”<CLT><CLT 4>が…
+#. <CLT>
+msgctxt "0056 | YASUHIRO HAGAKURE"
+msgid ""
+"<CLT 4>Something had <CLT><CLT 3>fallen out of Hiro's pocket<CLT><CLT 4>.\n"
+"<CLT>"
+msgstr ""
+
+#. ん…？
+msgctxt "0057 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. あ…
+msgctxt "0058 | YASUHIRO HAGAKURE"
+msgid "Ah..."
+msgstr ""
+
+#. ああーーッ！！
+msgctxt "0059 | YASUHIRO HAGAKURE"
+msgid "Aahhh—!"
+msgstr ""
+
+#. <CLT 4>葉隠クンは風のような速さで、
+#. それを拾い上げると…
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Quick as the wind, Hiro snatched it back up again...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>再び、ポケットの中へと突っ込んだ。
+#. <CLT>
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...and shoved it back into his pocket.\n"
+"<CLT>"
+msgstr ""
+
+#. てへへ。ゴミだべゴミ…
+#. ゴミを捨て忘れてたべ…
+msgctxt "0062 | YASUHIRO HAGAKURE"
+msgid ""
+"Ehehe. Sorry, just a bit of trash I forgot to throw\n"
+"out..."
+msgstr ""
+
+#. ゴミ…？
+msgctxt "0063 | MAKOTO NAEGI"
+msgid "Trash...?"
+msgstr ""
+
+#. と、とにかく！　俺はオーガに呼び出されたけど、
+#. 実際には会いに行ってねーって事で…
+msgctxt "0064 | YASUHIRO HAGAKURE"
+msgid ""
+"A-Anyway! I can't deny that Ogre asked to meet with\n"
+"me, but I never went..."
+msgstr ""
+
+#. …失礼させてもらうべ！！
+msgctxt "0065 | YASUHIRO HAGAKURE"
+msgid "So, well, if you'll excuse me...!"
+msgstr ""
+
+#. <CLT 4>一方的に会話を打ち切ると、
+#. 葉隠クンは部屋の中へと逃げていった。
+#. <CLT>
+msgctxt "0066 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Before waiting for a reply, Hiro quickly slipped back\n"
+"into his room.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>葉隠クンはゴミだなんて言ってたけど…
+#. <CLT>
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro said that was just trash, but...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ただのゴミなんかじゃないよな？
+#. <CLT>
+msgctxt "0068 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...there's no way that's all there was to it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>ポケットに入っていたゴミ<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0069 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Pocket Trash<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. 何…？　なんなの…？
+#. <CLT 1>【話】<CLT>があるとか…言ってたわよね…
+msgctxt "0070 | TOUKO FUKAWA"
+msgid ""
+"Wh-What do you want? You said you wanted to <CLT 1>[talk]<CLT>\n"
+"to m-me about something...?"
+msgstr ""
+
+#. <CLT 1>【いやらしい話】<CLT>だったら…承知しないわよ…
+#. すぐさまセクハラで訴えるからね…
+msgctxt "0071 | TOUKO FUKAWA"
+msgid ""
+"If it's s-something <CLT 1>[indecent]<CLT>, get ready for a\n"
+"sexual h-harassment lawsuit..."
+msgstr ""
+
+#. 苗木っち…どうしたん？
+#. 俺に、何か<CLT 1>【用事】<CLT>でもあるんか…？
+msgctxt "0072 | YASUHIRO HAGAKURE"
+msgid "What's up, Makoto? Did you <CLT 1>[need something]<CLT> from me?"
+msgstr ""
+
+#. <CLT 4>ここは、ボクの部屋だけど…
+#. 事件には関係ないな。
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is my room. But it has nothing to do with the\n"
+"case...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ここは霧切さんの部屋だ。
+#. 事件には関係ないよな…
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Kyoko's room. It has nothing to do with the\n"
+"case...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>インターホンを押した…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I pressed the doorbell...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「ピンポーン…」
+#. <CLT>
+msgctxt "0076 | NARRATION"
+msgid ""
+"<CLT 23>*Ding dong*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>しばらくすると…
+#. <CLT>
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And after a few seconds...\n"
+"<CLT>"
+msgstr ""
+
+#. 何…？　誰…？
+msgctxt "0078 | TOUKO FUKAWA"
+msgid "Huh? Wh-Who's there?"
+msgstr ""
+
+#. <CLT 4>負のオーラ…それにも増して…
+#. <CLT>
+msgctxt "0079 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Agh, the most negative aura I've ever felt...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>腐のオーラ…
+#. <CLT>
+msgctxt "0080 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>An aura of total decay...\n"
+"<CLT>"
+msgstr ""
+
+#. 何…？　なんなの…？
+msgctxt "0081 | TOUKO FUKAWA"
+msgid "Well? What do y-you want?"
+msgstr ""
+
+#. 腐川さん…に戻ってたんだね。
+#. ジェノサイダーじゃなくって…
+msgctxt "0082 | MAKOTO NAEGI"
+msgid ""
+"So you're back to normal. Genocide Jack isn't around\n"
+"anymore..."
+msgstr ""
+
+#. あいつの話…しないでよ…
+#. き、気分が悪くなるじゃない……
+msgctxt "0083 | TOUKO FUKAWA"
+msgid ""
+"D-Don't even say her name... It makes me s-sick to my\n"
+"stomach..."
+msgstr ""
+
+#. せっかく…楽しい気分なのに…！
+msgctxt "0084 | TOUKO FUKAWA"
+msgid "I was in such a g-good mood, too...!"
+msgstr ""
+
+#. <CLT 4>楽しい気分には見えないけど…
+#. <CLT>
+msgctxt "0085 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She didn't *look* like she was in a good mood...\n"
+"<CLT>"
+msgstr ""
+
+#. …あのさ、ちょっと話があるんだけど、
+#. 今いいかな？
+msgctxt "0086 | MAKOTO NAEGI"
+msgid ""
+"Hey, I was...hoping to talk to you about something. Is\n"
+"now a bad time?"
+msgstr ""
+
+#. ………………
+msgctxt "0087 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. チッ…！
+msgctxt "0088 | TOUKO FUKAWA"
+msgid "Kh...!"
+msgstr ""
+
+#. <CLT 4>露骨な舌打ちの後、
+#. 腐川さんは廊下に出て来てくれた。
+#. <CLT>
+msgctxt "0089 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Obviously annoyed, Toko slithered out into the hall.\n"
+"<CLT>"
+msgstr ""
+
+#. 何…？　なんなの…？
+#. <CLT 1>【話】<CLT>があるとか…言ってたわよね…
+msgctxt "0090 | TOUKO FUKAWA"
+msgid ""
+"Wh-What do you want? You said you wanted to <CLT 1>[talk]<CLT>\n"
+"to m-me about something...?"
+msgstr ""
+
+#. <CLT 1>【いやらしい話】<CLT>だったら…承知しないわよ…
+#. すぐさまセクハラで訴えるからね…
+msgctxt "0091 | TOUKO FUKAWA"
+msgid ""
+"If it's s-something <CLT 1>[indecent]<CLT>, get ready for a\n"
+"sexual h-harassment lawsuit..."
+msgstr ""
+
+#. …これ以上、しつこく聞くのもな…
+msgctxt "0092 | MAKOTO NAEGI"
+msgid "I probably should avoid pestering people too much..."
+msgstr ""
+
+#. <CLT 4>腐川さん本人が言うには…
+#. <CLT>
+msgctxt "0093 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Toko already told me...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>確かにメモは見た。
+#. でも、怖いから会いには行かなかった…
+#. <CLT>
+msgctxt "0094 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>She said she did get the note, but she was too scared\n"
+"to go meet with Sakura.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…って事だったな。
+#. <CLT>
+msgctxt "0095 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's what she claims, anyway.\n"
+"<CLT>"
+msgstr ""
+
+#. …本当はどうなんだろう？
+msgctxt "0096 | MAKOTO NAEGI"
+msgid "But what's the truth of the matter?"
+msgstr ""
+
+#. <CLT 4>でも、その証言をひっくり返すような根拠がない以上、
+#. 現時点では信じるしかないか…
+#. <CLT>
+msgctxt "0097 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Well, until I can prove otherwise, I have no choice\n"
+"but to accept it as fact.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ここは朝日奈さんの部屋だ。
+#. 事件には関係ないよな…
+#. <CLT>
+msgctxt "0098 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Hina's room. It has nothing to do with the\n"
+"case...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>十神クンの部屋だ。
+#. 事件には関係ないよな…
+#. <CLT>
+msgctxt "0099 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Byakuya's room. It has nothing to do with the\n"
+"case...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>大神さんの部屋だ。
+#. <CLT>
+msgctxt "0100 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is Sakura's room...\n"
+"<CLT>"
+msgstr ""
+
+#. ……………
+msgctxt "0101 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>インターホンを押した…
+#. <CLT>
+msgctxt "0102 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I pressed the doorbell...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「ピンポーン…」
+#. <CLT>
+msgctxt "0103 | NARRATION"
+msgid ""
+"<CLT 23>*Ding dong*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>しばらくすると…
+#. <CLT>
+msgctxt "0104 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And after a few seconds...\n"
+"<CLT>"
+msgstr ""
+
+#. 苗木っち…どうしたん？
+#. 俺に、何か<CLT 1>【用事】<CLT>でもあるんか…？
+msgctxt "0105 | YASUHIRO HAGAKURE"
+msgid "What's up, Makoto? Did you <CLT 1>[need something]<CLT>?"
+msgstr ""
+
+#. これ以上、しつこく聞くのもな…
+msgctxt "0106 | MAKOTO NAEGI"
+msgid "I probably should avoid pestering people too much..."
+msgstr ""
+
+#. <CLT 4>葉隠クン本人が言うには…
+#. <CLT>
+msgctxt "0107 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hiro already told me...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>メモを手渡しされて、呼び出された。
+#. でも会いには行かなかった…
+#. <CLT>
+msgctxt "0108 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He said Sakura handed the note to him personally, but\n"
+"he never went to go meet with her.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、葉隠クンが最後に大神さんと会ったのは、
+#. 怪我した朝日奈さんを保健室に連れてった時…
+#. <CLT>
+msgctxt "0109 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But he also said the last time he saw Sakura was when\n"
+"he took Hina to the nurse's office...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その時点で話が矛盾している。
+#. メモを渡されたのは保健室の一件の後のはずだ。
+#. <CLT>
+msgctxt "0110 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So he contradicted himself. If she gave him the note\n"
+"in person, *that* would've been the last time...\n"
+"<CLT>"
+msgstr ""
+
+#. 何か隠しているみたいだ。
+#. あからさまに怪しい…
+msgctxt "0111 | MAKOTO NAEGI"
+msgid ""
+"He's acting really suspicious. I think he must be\n"
+"hiding something..."
+msgstr ""
+
+#. <CLT 4>それに…
+#. <CLT>
+msgctxt "0112 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Plus...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>葉隠クンの<CLT><CLT 3>ポケットに入ってた何か<CLT><CLT 4>…
+#. 葉隠クンはゴミだなんて言ってたけど…
+#. <CLT>
+msgctxt "0113 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There was <CLT><CLT 3>whatever fell out of his pocket<CLT><CLT 4>. He said\n"
+"it was a piece of trash, but...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ただのゴミなんかじゃない…よな？
+#. <CLT>
+msgctxt "0114 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I think there's more to it than that.\n"
+"<CLT>"
+msgstr ""

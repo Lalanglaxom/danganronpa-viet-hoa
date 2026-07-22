@@ -24,7 +24,7 @@ msgstr ""
 #. …そう。
 msgctxt "0003 | KYOUKO KIRIGIRI"
 msgid "...Indeed."
-msgstr ""
+msgstr "...Chuẩn là vậy."
 
 #. じゃあ、さっそく本題に入りましょうか。
 msgctxt "0004 | KYOUKO KIRIGIRI"
@@ -458,7 +458,7 @@ msgstr ""
 #. …え？
 msgctxt "0072 | MAKOTO NAEGI"
 msgid "...Huh?"
-msgstr ""
+msgstr "...Hả?"
 
 #. だから、昨日の夜はバレなかった…
 msgctxt "0073 | KYOUKO KIRIGIRI"
@@ -552,6 +552,9 @@ msgid ""
 "Hope's Peak Academy at your discretion.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Với những hạn chế tối thiểu, các bạn được tự do khám phá Học\n"
+"viện Đỉnh Đỉnh Hy Vọng theo ý muốn của mình.\n"
+"<CLT>"
 
 #. 謎を解く為の行動に制限は課せられない…
 #. そうあったはずよ？
@@ -889,6 +892,8 @@ msgid ""
 "<CLT 4>Alter Ego...isn't here anymore.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Alter Ego... không còn ở đây nữa rồi.\n"
+"<CLT>"
 
 #. <CLT 4>ひとまず、霧切さんの話を聞こう…
 #. <CLT>

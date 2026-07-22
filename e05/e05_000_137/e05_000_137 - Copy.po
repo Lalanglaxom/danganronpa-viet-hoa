@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. はい
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ここはトラッシュルーム…つまりゴミ捨て場だな。
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is the trash room. The dump, in other words.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そう言えば、掃除当番の話はどうなったんだ？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That reminds me... Whatever happened to that whole\n"
+"\"rotating cleaning duty\" thing?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>鉄格子の開閉スイッチだ…
+#. 開けるのには鍵がいる…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's the switch to open and close the gate. You need a\n"
+"key to activate it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>その鍵って今は誰が持ってるんだろう…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I wonder who has that key...\n"
+"<CLT>"
+msgstr ""
+
+#. はい
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr ""
+
+#. いいえ
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""

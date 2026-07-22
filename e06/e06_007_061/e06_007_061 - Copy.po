@@ -1,0 +1,346 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 23>「ガチャリ…」
+#. <CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>*Click*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>情報処理室のドアを閉めた途端、
+#. そんな妙な音が聞こえた。
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>As soon as the door to the data center was closed, I\n"
+"heard a strange sound.\n"
+"<CLT>"
+msgstr ""
+
+#. 今の音って…？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "What was that...?"
+msgstr ""
+
+#. あ！　鍵が閉まってる！！
+#. 情報処理室の鍵が閉まっちゃったよ！！
+msgctxt "0004 | AOI ASAHINA"
+msgid "Ah! The door! It just locked on its own!"
+msgstr ""
+
+#. …え！？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "What!?"
+msgstr ""
+
+#. <CLT 4>すぐに、手を離したばかりのドアノブを掴んだ。
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>My hand shot out to grab the doorknob...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「ガチャ…ガチャ…」
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+
+#. ホントだ…鍵が締まってる…
+#. でも、どうして…？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "You're right, it's locked. But...why?"
+msgstr ""
+
+#. 鍵が締まって当然だよ。
+#. 情報処理室は封鎖したんだもん。
+msgctxt "0009 | MONOKUMA"
+msgid ""
+"Of course it's locked! Because the data center is now\n"
+"restricted!"
+msgstr ""
+
+#. モ、モノクマ…！？
+msgctxt "0010 | MAKOTO NAEGI"
+msgid "M-Monokuma!?"
+msgstr ""
+
+#. ちょっと！　ずるいよ！
+#. 勝手に封鎖なんて！
+msgctxt "0011 | AOI ASAHINA"
+msgid ""
+"Hey, no fair! You can't just go around restricting\n"
+"whatever you feel like!"
+msgstr ""
+
+#. これはね、オマエラの為でもあるんだよ…
+msgctxt "0012 | MONOKUMA"
+msgid "It's for YOUR benefit!"
+msgstr ""
+
+#. だって、あの部屋を開放したままだと、
+#. ボクを動かせなくなっちゃうでしょ？
+msgctxt "0013 | MONOKUMA"
+msgid ""
+"Cuz if that room stays open, I won't be able\n"
+"to move around."
+msgstr ""
+
+#. マスコット的存在のボクがいなくなった時の
+#. 空気の悪さを想像してごらんよ！
+msgctxt "0014 | MONOKUMA"
+msgid ""
+"Imagine how depressed everyone would get if the school\n"
+"mascot just up and stopped moving!"
+msgstr ""
+
+#. じゃあ、やっぱり…さっきの部屋って…
+msgctxt "0015 | MAKOTO NAEGI"
+msgid "Then...that room..."
+msgstr ""
+
+#. ご察しの通り、ボクを操作する為の部屋だよ！
+msgctxt "0016 | MONOKUMA"
+msgid "As you may have guessed, that's where my controls are!"
+msgstr ""
+
+#. だったら、今のあんたも…
+#. あの部屋で<CLT 3>“誰か”<CLT>が操作してるって事…？
+msgctxt "0017 | AOI ASAHINA"
+msgid ""
+"So...right now, you're being operated by <CLT 3>someone<CLT> in\n"
+"that room?"
+msgstr ""
+
+#. えぇ、そうなりますね。
+msgctxt "0018 | MONOKUMA"
+msgid "Correctamundo!"
+msgstr ""
+
+#. そんなのおかしいよ！
+msgctxt "0019 | AOI ASAHINA"
+msgid "But that doesn't make any sense!"
+msgstr ""
+
+#. 今、あの部屋を調べた時は、
+#. 中に人なんていなかったもん！
+msgctxt "0020 | AOI ASAHINA"
+msgid "We were just in there, and we didn't see anyone!"
+msgstr ""
+
+#. 人はいなかった…？
+msgctxt "0021 | MONOKUMA"
+msgid "Oh you didn't, did you?"
+msgstr ""
+
+#. うぷぷ…ちゃんと調べたのかしら…？
+msgctxt "0022 | MONOKUMA"
+msgid ""
+"Puhuhu... Are you sure you were as thorough as you\n"
+"could have been?"
+msgstr ""
+
+#. 怪しい扉とか…ちゃんと調べたのかしら…？
+msgctxt "0023 | MONOKUMA"
+msgid "Did you happen to check...a certain suspicious hatch?"
+msgstr ""
+
+#. ま、まさか…！
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "N-No way...!"
+msgstr ""
+
+#. 床の扉…？
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "The hatch on the floor!?"
+msgstr ""
+
+#. うぷぷ、残念でしたね！
+#. ビッグチャンスを逃してしまいましたね！
+msgctxt "0026 | MONOKUMA"
+msgid ""
+"Puhuhu, too bad! That was your one big chance, and ya\n"
+"blew it!"
+msgstr ""
+
+#. まぁ、どっちにしろ、床の扉は内鍵だから、
+#. 外から開けられないんだけどね！
+msgctxt "0027 | MONOKUMA"
+msgid ""
+"Of course, that hatch can't be opened from the outside\n"
+"anyway. So whatever!"
+msgstr ""
+
+#. …とにかく、この部屋に関しては、
+#. もう封鎖したので捜査は出来ません。
+msgctxt "0028 | MONOKUMA"
+msgid ""
+"Now then, this room is officially restricted. So no\n"
+"more investigating!"
+msgstr ""
+
+#. なので、オマエラが責任を持って、
+#. 他のみんなに教えてあげてくださいね。
+msgctxt "0029 | MONOKUMA"
+msgid "I'll be relying on you guys to tell the others."
+msgstr ""
+
+#. うぷぷぷ！　さいならー！
+msgctxt "0030 | MONOKUMA"
+msgid "Puhuhu... Peace!"
+msgstr ""
+
+#. 行っちゃった…けど…
+msgctxt "0031 | AOI ASAHINA"
+msgid "He's gone. But..."
+msgstr ""
+
+#. 本当…だったのかな…？
+#. 黒幕が…隠れてたなんて…
+msgctxt "0032 | AOI ASAHINA"
+msgid ""
+"...was he telling the truth? The mastermind was hiding\n"
+"in there?"
+msgstr ""
+
+#. 実際に、部屋を封鎖された事から考えると…
+#. 多分…本当だと思うよ…
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"In fact, if you think back to when we got locked out\n"
+"of the control room, that proves it for sure."
+msgstr ""
+
+#. じゃあ…私が部屋を出ようなんて言ったせいで…
+msgctxt "0034 | AOI ASAHINA"
+msgid "Then...when I said we should leave..."
+msgstr ""
+
+#. …いや、あいつが隠れてたって扉も、
+#. どうせ外からは開けられなかったらしいし…
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"Well, that hatch couldn't be opened from the outside\n"
+"anyway, right?"
+msgstr ""
+
+#. だから、朝日奈さんのせいじゃないよ。
+msgctxt "0036 | MAKOTO NAEGI"
+msgid "So it's not your fault."
+msgstr ""
+
+#. う、うん…
+msgctxt "0037 | AOI ASAHINA"
+msgid "O-Okay..."
+msgstr ""
+
+#. 待って、落ち込んでるヒマはないよ。
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "Anyway, we don't have to let it get to us."
+msgstr ""
+
+#. 残された時間は少ないんだし、
+#. その中で出来る事を前向きに考えないと…
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"We have to stay positive and make the most of the time\n"
+"we have left!"
+msgstr ""
+
+#. そう…だよね…
+msgctxt "0040 | AOI ASAHINA"
+msgid "You're right..."
+msgstr ""
+
+#. 私に出来る事って言ったら…
+#. 体を使う事くらいだし…
+msgctxt "0041 | AOI ASAHINA"
+msgid ""
+"If there's one thing I'm good at, it's keeping my body\n"
+"moving...!"
+msgstr ""
+
+#. じゃあ、あの部屋の事をみんなに伝えるのは任せて！
+#. 私が走り回って、みんなに伝えてくるから！
+msgctxt "0042 | AOI ASAHINA"
+msgid ""
+"Okay! I'm gonna go run around and tell everyone what\n"
+"we found here!"
+msgstr ""
+
+#. よーしっ！　苗木のお陰で、
+#. やる気が出て来たよ！
+msgctxt "0043 | AOI ASAHINA"
+msgid "Nice! You've got me all motivated again!"
+msgstr ""
+
+#. じゃあ、さっそく行って来るよ！
+#. また後でねっ！！
+msgctxt "0044 | AOI ASAHINA"
+msgid "Okay, I'm out! See ya later!"
+msgstr ""
+
+#. <CLT 4>そう言って、朝日奈さんは全速力で
+#. 走り去っていった。
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Hina took off at a full sprint.\n"
+"<CLT>"
+msgstr ""
+
+#. そうだ…！
+#. ボクも自分に出来る事をやらないとな…！
+msgctxt "0046 | MAKOTO NAEGI"
+msgid "And I have to do what I can, too...!"
+msgstr ""
+
+#. <CLT 4>それしか…道はないんだ…！
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's the only way forward!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ここは女子トイレだ…
+#. もちろん、入る訳にはいかない…
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is the girls bathroom. Obviously I can't go in...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 23>「ガチャ、ガチャ…」
+#. <CLT>
+msgctxt "0049 | NARRATION"
+msgid ""
+"<CLT 23>*Rattle rattle*\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>駄目だ、鍵が掛かってる。
+#. やっぱり情報処理室は封鎖されたんだ…
+#. <CLT>
+msgctxt "0050 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Definitely locked. I figured I wouldn't be able to get\n"
+"into the data center...\n"
+"<CLT>"
+msgstr ""

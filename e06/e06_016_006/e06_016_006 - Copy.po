@@ -1,0 +1,451 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. やぁやぁ、いらっしゃい！
+#. じゃあ、最後のヒントをあげましょう！
+msgctxt "0001 | MONOKUMA"
+msgid ""
+"Hello, welcome! Welcome, hello! Are you ready for your\n"
+"final hint!?"
+msgstr ""
+
+#. オマエの足元に落ちている封筒…
+#. それが最後のヒントだよん！
+msgctxt "0002 | MONOKUMA"
+msgid ""
+"Well, it just so happens to be in the envelope on the\n"
+"ground in front of you!"
+msgstr ""
+
+#. <CLT 4>足元に落ちてる封筒…？
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The envelope...?\n"
+"<CLT>"
+msgstr ""
+
+#. 最後のヒントをあげましょう！
+msgctxt "0004 | MONOKUMA"
+msgid "Ready for the final hint?"
+msgstr ""
+
+#. オマエの足元に落ちている封筒…
+#. それが最後のヒントだよん！
+msgctxt "0005 | MONOKUMA"
+msgid "It's in the envelope on the ground in front of you!"
+msgstr ""
+
+#. <CLT 4>足元に落ちてる封筒…？
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The envelope...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>モノクマが写るモニター…
+#. あんな物を気にしている場合じゃないな…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This is one of the monitors Monokuma appears on. I\n"
+"don't have time to waste staring at it...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>今更、監視カメラなんかを
+#. 気にしている場合じゃないな…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After all this time, I'm really not worried about this\n"
+"thing anymore...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>封筒って…これの事だよな…？
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This must be the envelope...\n"
+"<CLT>"
+msgstr ""
+
+#. うぷぷ…ちなみに内容に関しての質問は
+#. 一切、受け付けませんから…
+msgctxt "0010 | MONOKUMA"
+msgid ""
+"Puhuhu... And just so you know, I won't be answering\n"
+"any questions about what you find inside!"
+msgstr ""
+
+#. な、なんだよ、それ…？
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "Wh-What...?"
+msgstr ""
+
+#. いいから！　いいから！
+msgctxt "0012 | MONOKUMA"
+msgid "Don't worry, just get on with it!"
+msgstr ""
+
+#. <CLT 4>モノクマの妙な言葉に不安を覚えつつ、
+#. 足元の封筒を拾い上げ…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Monokuma's cryptic words didn't make me feel any\n"
+"better, but I picked up the envelope...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>中を覗いてみた。
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...and opened it.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そこには、１枚の写真が入っていた。
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What I found was...a single photograph.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>写っていたのは、見知った顔ばかり…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It featured a bunch of faces I recognized extremely\n"
+"well.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクと一緒に、
+#. 希望ヶ峰学園にやって来たみんな…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It was everyone who'd come to Hope's Peak at the same\n"
+"time as me.\n"
+"<CLT>"
+msgstr ""
+
+#. いや、でも…
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "Wait, but..."
+msgstr ""
+
+#. 舞園さんの後ろの…この彼女…！
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "There's someone behind Sayaka..."
+msgstr ""
+
+#. この彼女だけ…見た事が…
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "She's the only one I don't recognize...!"
+msgstr ""
+
+#. いや、違う。見た事あるはずだ！
+msgctxt "0021 | MAKOTO NAEGI"
+msgid "Wait, that's not true. I *do* recognize her!"
+msgstr ""
+
+#. そうだ…十神クンと一緒に、
+#. 学園長室で見たファイルの中に…
+msgctxt "0022 | MAKOTO NAEGI"
+msgid ""
+"That's right... When Byakuya and I were in the\n"
+"headmaster's room, and we looked at that file..."
+msgstr ""
+
+#. え？　戦刃むくろ…？
+msgctxt "0023 | MAKOTO NAEGI"
+msgid "Mukuro Ikusaba...?"
+msgstr ""
+
+#. じゃあ、この彼女が…！？
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "Then this girl is...?"
+msgstr ""
+
+#. な、なんで…？　どうして…？
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "What...? Why...?"
+msgstr ""
+
+#. どうして、みんなが戦刃むくろと一緒に？
+msgctxt "0026 | MAKOTO NAEGI"
+msgid "Why is Mukuro here with everyone else?"
+msgstr ""
+
+#. いや、それ以前に…
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "And even more than that..."
+msgstr ""
+
+#. <CLT 4>そもそも…こうして、
+#. みんなが写ってる事自体がおかしい…
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Just having everyone here posed like this is weird\n"
+"enough by itself.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>しかも、お揃いの…見覚えのない制服で…
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And we're all wearing matching uniforms. I don't\n"
+"remember anything like this...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>いや、正確には、<CLT><CLT 3>“みんな”<CLT><CLT 4>じゃない。
+#. だって、ここには…
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>AND now that I'm looking at it...it's <CLT><CLT 3>not even\n"
+"everyone<CLT><CLT 4>.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクがいない…
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm...not in the picture.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクだけがいない……
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm the only one not there...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>写真に写っているのは、
+#. ボクを除いた１５人だけ…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The picture has all fifteen other students...but not\n"
+"me.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、ボクが写ってないのは当たり前だ。
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But I guess that makes sense.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だって、ボクには、
+#. こんな写真を撮られた記憶なんてないし…
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>After all, I don't remember ever taking a picture like\n"
+"this...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>中学が一緒だった舞園さんは別として、
+#. ボクがみんなと初めて会ったのは…
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I went to junior high with Sayaka, but the first time\n"
+"I met everyone else...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>この希望ヶ峰学園に来てからの事だったんだ。
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...was when I arrived here at Hope's Peak Academy.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だから、ボクが写ってないのは当然なんだ。
+#. むしろ不自然なのは…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So it's natural for me not to be in this picture. But\n"
+"what's definitely *unnatural*...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ここに写ってる、みんなの方だ…
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...is that everyone else *is* in the picture.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>みんなも、ボクと同じように、
+#. この学園で初めて会った同士だと思っていたけど…
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I thought everyone was like me, and didn't know each\n"
+"other till they got here.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>でも、こんな写真が存在するって事は…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But if this picture is real...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>そうじゃなかった…って事なのか…？
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...then could that mean...?\n"
+"<CLT>"
+msgstr ""
+
+#. …じゃあ！！
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "Could it be...?"
+msgstr ""
+
+#. みんなして…ボクの事を…？
+msgctxt "0044 | MAKOTO NAEGI"
+msgid "Everyone else...? And just me...?"
+msgstr ""
+
+#. つまり、ボク以外のみんなは…
+msgctxt "0045 | MAKOTO NAEGI"
+msgid "Everyone here except me is...?"
+msgstr ""
+
+#. うぷぷ…いつまで自問自答してんのさ？
+msgctxt "0046 | MONOKUMA"
+msgid ""
+"Puhuhu... How long are you gonna keep up this rambling\n"
+"soliloquy of yours, Hamlet?"
+msgstr ""
+
+#. いつまでも、そんな場所に突っ立っていられると、
+#. すっごくジャマなんだよね…
+msgctxt "0047 | MONOKUMA"
+msgid ""
+"You're kinda gettin' in the way standing there, ya\n"
+"know?"
+msgstr ""
+
+#. だからさ…
+#. ほら、さっさと出てけよ…
+msgctxt "0048 | MONOKUMA"
+msgid "So...I mean...get out!"
+msgstr ""
+
+#. だ、だけど…！
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "B-But—!"
+msgstr ""
+
+#. だから、言ったでしょ！
+#. 質問は受け付けないってさ！
+msgctxt "0050 | MONOKUMA"
+msgid "I told you, I'm not fielding any questions!"
+msgstr ""
+
+#. 推理ゲームで答えを言っちゃう訳ないじゃん！
+#. そんなマスコットなんて、斬新過ぎだよ！
+msgctxt "0051 | MONOKUMA"
+msgid ""
+"What kind of mystery would this be if I gave you all\n"
+"the answers? That'd be totally out of left field!"
+msgstr ""
+
+#. どｍにおえｗ：ｍｃにあ＠ぽあいｒんｍｃぱおうＡ！？
+msgctxt "0052 | MONOKUMA"
+msgid "dugretTt/r@@2e!— brRRrqffqZZzzkkKk>3"
+msgstr ""
+
+#. <CLT 4>これ以上…答える気はないって事か…
+#. <CLT>
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I guess that means he's done talking.\n"
+"<CLT>"
+msgstr ""
+
+#. …クソッ！！
+msgctxt "0054 | MAKOTO NAEGI"
+msgid "Dammit...!"
+msgstr ""
+
+#. <CLT 23><CLT><CLT 3>集合写真<CLT><CLT 23>を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. <CLT>
+msgctxt "0055 | NARRATION"
+msgid ""
+"<CLT 23>\"<CLT><CLT 3>Group Photo<CLT><CLT 23>\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>結局、ボクが体育館で手に入れたのは…
+#. <CLT>
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>So in the end, all I found in the gym...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>混乱…それだけだった。
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...was even more confusion.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>それだけを手に、
+#. ボクは、すごすごと体育館を後にした。
+#. <CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And with that confusion in hand, I left the gym\n"
+"dejected.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>封筒は…足元に落ちてるみたいだ…
+#. <CLT>
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's an envelope on the ground in front of me...\n"
+"<CLT>"
+msgstr ""

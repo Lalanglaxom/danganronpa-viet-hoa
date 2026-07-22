@@ -1,0 +1,454 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. おぉ、苗木っち！
+#. 無事だったか…？
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid "Ah, Makoto! Are you okay?"
+msgstr ""
+
+#. え？　無事って、どういう意味？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Huh? What do you mean...?"
+msgstr ""
+
+#. あ、あんたが遅いから…心配してやってたのよ…
+msgctxt "0003 | TOUKO FUKAWA"
+msgid "You were late, s-so...we were worried a-about you..."
+msgstr ""
+
+#. 鈍いヤツだ…
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgid "What a dullard..."
+msgstr ""
+
+#. 腐川さんに…十神クンも来てたの？
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "Toko? Byakuya? What are you doing here?"
+msgstr ""
+
+#. 避難…だってさ…
+msgctxt "0006 | AOI ASAHINA"
+msgid "They're \"taking refuge\" here."
+msgstr ""
+
+#. …避難？
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "Refuge...?"
+msgstr ""
+
+#. 豚みたいな顔をするな。
+#. 黒幕の手先から身を守る為に決まってるだろう。
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid ""
+"Don't make that stupid face. We have to protect\n"
+"ourselves against the mastermind's tool."
+msgstr ""
+
+#. 黒幕の手先って…大神さんの事！？
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "The mastermind's...? Are you talking about Sakura!?"
+msgstr ""
+
+#. ………………
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>…と、そこでボクはようやく気が付いた。
+#. 食堂に大神さんだけがいないという事に…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's when I finally noticed. The only one that\n"
+"wasn't in the dining hall...was Sakura.\n"
+"<CLT>"
+msgstr ""
+
+#. あれ…？　大神さんは…？
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "Huh...? Where *is* Sakura?"
+msgstr ""
+
+#. あいつが来てたら、俺の方がここにいない…
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgid "All I know is, if she were here, I wouldn't be."
+msgstr ""
+
+#. わざわざ、ここに来たのは、
+#. 大神の脅威から身を守る為なんだからな。
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid ""
+"The only reason I went out of my way to join the rest\n"
+"of you was as a safeguard against that threat."
+msgstr ""
+
+#. きょ、脅威って…！
+msgctxt "0015 | MAKOTO NAEGI"
+msgid "Th-Threat...!?"
+msgstr ""
+
+#. なんで、そんなに…
+#. さくらちゃんの事を目の敵にするの…？
+msgctxt "0016 | AOI ASAHINA"
+msgid "Why...? Why do you hate her so much?"
+msgstr ""
+
+#. 決まってるだろう。フェアじゃないからだ。
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgid "Isn't it obvious? Because this makes things unfair."
+msgstr ""
+
+#. フェアじゃない…？
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "Unfair...?"
+msgstr ""
+
+#. ゲームは、参加者にとって平等でなければならない。
+#. 黒幕の内通者の存在は、ゲームに支障をきたす…
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid ""
+"The game should be fair to all players. The existence\n"
+"of a spy for the mastermind upsets that balance."
+msgstr ""
+
+#. そんな…バカげた理由で…？
+msgctxt "0020 | AOI ASAHINA"
+msgid "That's a stupid reason!"
+msgstr ""
+
+#. バカげた理由？　命がけのゲームなんだぞ？
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgid "Stupid? This is a life-or-death game, is it not?"
+msgstr ""
+
+#. バカだよ！　あんたは本物のバカだよ！！
+msgctxt "0022 | AOI ASAHINA"
+msgid "It IS stupid! You're a stupid idiot!"
+msgstr ""
+
+#. ねぇ…そうやって争う前に、
+#. もう１度よく考えてみたらどうかしら？
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid ""
+"Before you get too far into your argument, maybe you\n"
+"should stop and think things through."
+msgstr ""
+
+#. どうして、黒幕は大神さんの件をバラしたのか…
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid ""
+"Why did the mastermind reveal that Sakura was the spy\n"
+"to us?"
+msgstr ""
+
+#. 黒幕がさくらちゃんに仕返しをしたんでしょ…？
+#. 目には目を、とか言ってたし…
+msgctxt "0025 | AOI ASAHINA"
+msgid ""
+"They were getting revenge on her, right? Like Monokuma\n"
+"said, \"An eye for an eye.\""
+msgstr ""
+
+#. でも、それだけじゃないわ。
+msgctxt "0026 | KYOUKO KIRIGIRI"
+msgid ""
+"That may be part of it, but it's not the whole\n"
+"picture."
+msgstr ""
+
+#. きっと、大神さんの件をバラす事こそが、
+#. 黒幕の用意した<CLT 3>“動機”<CLT>だったはずよ。
+msgctxt "0027 | KYOUKO KIRIGIRI"
+msgid ""
+"Revealing that fact was also meant to serve as the\n"
+"next <CLT 3>motive<CLT> the mastermind wanted to give us."
+msgstr ""
+
+#. 疑心暗鬼がもたらす不協和音…
+#. そこから生まれる憎しみ合い…
+msgctxt "0028 | KYOUKO KIRIGIRI"
+msgid ""
+"The chaos and confusion born from suspicion...\n"
+"The hatred..."
+msgstr ""
+
+#. つまり、私達がいがみ合ってるこの状況こそ、
+#. 黒幕が仕組んだ罠なのよ。
+msgctxt "0029 | KYOUKO KIRIGIRI"
+msgid ""
+"In other words, this right here—the fighting, the\n"
+"bickering—is the trap the mastermind laid for us."
+msgstr ""
+
+#. それでも…まだ争うつもり…？
+msgctxt "0030 | KYOUKO KIRIGIRI"
+msgid ""
+"Knowing that, will you still stand there and argue\n"
+"like children?"
+msgstr ""
+
+#. そ、そういう訳じゃないけど…でも…
+msgctxt "0031 | AOI ASAHINA"
+msgid "Th-That's not what I'm trying to do. It's just..."
+msgstr ""
+
+#. じゃあ、どうすれば…
+#. みんなは、さくらちゃんの事を信じてくれるの…？
+msgctxt "0032 | AOI ASAHINA"
+msgid ""
+"I mean...how can I get you guys to believe in Sakura\n"
+"again?"
+msgstr ""
+
+#. 本当に黒幕をやっつけてくれたら、
+#. 問題なく信じられんだけどな…
+msgctxt "0033 | YASUHIRO HAGAKURE"
+msgid ""
+"If she really can beat the mastermind like she said,\n"
+"that'd go a long way in my mind..."
+msgstr ""
+
+#. バカッ！　そんな無茶させて、
+#. もしもの事があったらどうすんのッ！？
+msgctxt "0034 | AOI ASAHINA"
+msgid ""
+"Idiot! You'd really ask her to do something so\n"
+"dangerous? What if something terrible happens to her!?"
+msgstr ""
+
+#. …構わないじゃないか。
+msgctxt "0035 | BYAKUYA TOGAMI"
+msgid "It wouldn't matter."
+msgstr ""
+
+#. …え？
+msgctxt "0036 | AOI ASAHINA"
+msgid "...What?"
+msgstr ""
+
+#. 大神が死んだところで黒幕側の人間が１人減るだけだ。
+#. 別に構わないじゃないか…
+msgctxt "0037 | BYAKUYA TOGAMI"
+msgid ""
+"If Sakura were to die, that's one less person for the\n"
+"mastermind to control. I have no problem with that."
+msgstr ""
+
+#. ちょ、ちょっと！　十神クン…！
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "H-Hold on! Byakuya—!"
+msgstr ""
+
+#. それに、あいつが死んでくれれば、
+#. この問題も解決するんだ。
+msgctxt "0039 | BYAKUYA TOGAMI"
+msgid ""
+"In fact, if she did die, that would settle this entire\n"
+"issue, wouldn't it?"
+msgstr ""
+
+#. 一件落着じゃないか…！
+msgctxt "0040 | BYAKUYA TOGAMI"
+msgid "It would put the whole problem to rest!"
+msgstr ""
+
+#. <CLT 23>「バチンッ！」
+#. <CLT>
+msgctxt "0041 | NARRATION"
+msgid ""
+"<CLT 23>*SLAP*\n"
+"<CLT>"
+msgstr ""
+
+#. 何を…する…？
+msgctxt "0042 | BYAKUYA TOGAMI"
+msgid "What the hell...?"
+msgstr ""
+
+#. そんなの最低だよ…！
+msgctxt "0043 | AOI ASAHINA"
+msgid "You disgust me!"
+msgstr ""
+
+#. 正真正銘の人でなしだよ…！
+msgctxt "0044 | AOI ASAHINA"
+msgid "You're...you're a monster!"
+msgstr ""
+
+#. そんな事言う…あんたこそ…
+msgctxt "0045 | AOI ASAHINA"
+msgid "To say something like that..."
+msgstr ""
+
+#. あんたの…方こそ…！
+msgctxt "0046 | AOI ASAHINA"
+msgid "It should've been you."
+msgstr ""
+
+#. …死ねばいいんだよッ！！
+msgctxt "0047 | AOI ASAHINA"
+msgid "You should've been the one to die!"
+msgstr ""
+
+#. 死ね…だと…？
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgid "I should've died...?"
+msgstr ""
+
+#. 面白い…では殺してみるか？
+msgctxt "0049 | BYAKUYA TOGAMI"
+msgid ""
+"Interesting. Then are you planning to take care of\n"
+"that yourself?"
+msgstr ""
+
+#. やってみろ。やればいい。
+#. それが、ここのルールなんだ。
+msgctxt "0050 | BYAKUYA TOGAMI"
+msgid ""
+"Go ahead. Try it, if you dare. That's how it works\n"
+"here, after all."
+msgstr ""
+
+#. やれないと…思ってんの…？
+msgctxt "0051 | AOI ASAHINA"
+msgid "You think I can't do it?"
+msgstr ""
+
+#. あ、朝日奈さん！　落ち着いてよっ！
+msgctxt "0052 | MAKOTO NAEGI"
+msgid "H-Hina! Calm down!"
+msgstr ""
+
+#. そんな風に争っていたら黒幕の思う壺…
+#. それは、大神さんだって望んでないはずよ。
+msgctxt "0053 | KYOUKO KIRIGIRI"
+msgid ""
+"This is exactly what the mastermind wants. And it's\n"
+"exactly what Sakura *doesn't* want."
+msgstr ""
+
+#. …………………
+msgctxt "0054 | AOI ASAHINA"
+msgid "..."
+msgstr "..."
+
+#. どうした…殺さないのか…？
+msgctxt "0055 | BYAKUYA TOGAMI"
+msgid "What's wrong? Lost your nerve?"
+msgstr ""
+
+#. …………………
+msgctxt "0056 | AOI ASAHINA"
+msgid "..."
+msgstr "..."
+
+#. 帰る…
+msgctxt "0057 | AOI ASAHINA"
+msgid "I'm leaving..."
+msgstr ""
+
+#. 部屋に帰る…
+msgctxt "0058 | AOI ASAHINA"
+msgid "I'll be in my room."
+msgstr ""
+
+#. <CLT 4>怒りに体を震わせながら、
+#. 朝日奈さんは、走り去っていった。
+#. <CLT>
+msgctxt "0059 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Trembling with anger, Hina ran off.\n"
+"<CLT>"
+msgstr ""
+
+#. あ、あのメス豚…よくも白夜様を…ッ！
+#. 万死どころか…億死に値するわッ！！
+msgctxt "0060 | TOUKO FUKAWA"
+msgid ""
+"That s-stupid cow...! How dare she...? She should\n"
+"d-die a thousand deaths. No, a million...!"
+msgstr ""
+
+#. 結局、ただの女のヒステリーだったか…
+#. 面白くもなんともないな。
+msgctxt "0061 | BYAKUYA TOGAMI"
+msgid ""
+"So she was just another hysterical little girl. Hardly\n"
+"worth my attention..."
+msgstr ""
+
+#. 十神君…あなたは人の感情というものを
+#. ずいぶん軽んじているようね…
+msgctxt "0062 | KYOUKO KIRIGIRI"
+msgid ""
+"It's what other people call having \"feelings,\"\n"
+"Byakuya. And all you can do is mock them for it."
+msgstr ""
+
+#. …それがどうした？
+msgctxt "0063 | BYAKUYA TOGAMI"
+msgid "What's wrong with that?"
+msgstr ""
+
+#. 忠告よ…そんな事だと、
+#. いずれ足元をすくわれるわ…
+msgctxt "0064 | KYOUKO KIRIGIRI"
+msgid ""
+"A friendly word of warning—someday that attitude is\n"
+"going to come back and bite you. Hard."
+msgstr ""
+
+#. ありがたく受け流させてもらおう…
+msgctxt "0065 | BYAKUYA TOGAMI"
+msgid "And I will happily elude its attempts."
+msgstr ""
+
+#. え、えーっと…
+#. その…なんつーか…
+msgctxt "0066 | YASUHIRO HAGAKURE"
+msgid "S-So um, ya know..."
+msgstr ""
+
+#. とりあえずメシにすっか…？
+msgctxt "0067 | YASUHIRO HAGAKURE"
+msgid "How about we, uh...eat?"
+msgstr ""
+
+#. …って雰囲気じゃねーか。
+msgctxt "0068 | YASUHIRO HAGAKURE"
+msgid "Er...maybe now's not a good time..."
+msgstr ""
+
+#. ハハ…ハハハ……
+msgctxt "0069 | YASUHIRO HAGAKURE"
+msgid "Heh...heh-heh..."
+msgstr ""
+
+#. <CLT 4>ボクらは互いに無言のまま、
+#. 食堂を後にし…
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Without a word, each of us left the dining hall.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…それぞれの個室へと戻っていった。
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>We headed back to our rooms, one by one...\n"
+"<CLT>"
+msgstr ""

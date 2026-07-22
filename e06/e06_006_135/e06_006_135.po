@@ -317,7 +317,7 @@ msgstr ""
 #. …え？
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "...Huh?"
-msgstr ""
+msgstr "...Hả?"
 
 #. みんなで協力して捜査するって意見には、
 #. <CLT 1>【賛成出来ない】<CLT>わね…
@@ -614,6 +614,8 @@ msgid ""
 "<CLT 23>*Ding dong, bing bong*\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>“Bíng bong, bing bong”\n"
+"<CLT>"
 
 #. えー、校内放送でーす。
 msgctxt "0091 | MONOKUMA"
@@ -941,7 +943,7 @@ msgstr ""
 
 #. おきＦやじょち、あんｊｃじ；うぇｃるいおうんｃり！
 msgctxt "0143 | MONOKUMA"
-msgid "Skrgh@yaGfew, anji&\krakAW;! fzzlbRff#[]"
+msgid "Skrgh@yaGfew, anji&\\krakAW;! fzzlbRff#[]"
 msgstr ""
 
 #. また…お前か…
@@ -1798,3 +1800,5 @@ msgid ""
 "<CLT 23>Leave the area?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

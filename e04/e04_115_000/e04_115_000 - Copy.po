@@ -1,0 +1,511 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 娯楽室のロッカーの内側に、
+#. <CLT 3>手形<CLT>が残されてたのは知ってる？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Did you know someone left a <CLT 3>handprint<CLT> behind on the\n"
+"inside of the locker?"
+msgstr ""
+
+#. きっと、誰かがロッカーの中に隠れた時、
+#. うっかり手形を残しちゃったんだろうけど…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"They must have been hiding in there and put their hand\n"
+"on the wall without thinking."
+msgstr ""
+
+#. …腐川さん、この手形に見覚えはない？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Does this handprint look familiar, Toko?"
+msgstr ""
+
+#. な、ないわよ…ッ！！
+msgctxt "0004 | TOUKO FUKAWA"
+msgid "N-No, it doesn't!"
+msgstr ""
+
+#. だったら、この手形とあなたの手を比べてみましょう。
+#. そうすれば、ハッキリするものね？
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid ""
+"Okay then, let's just compare it to your hand, shall\n"
+"we? That'll clear everything up, right?"
+msgstr ""
+
+#. ………………
+msgctxt "0006 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. ぎゃああああああッ！！
+msgctxt "0007 | TOUKO FUKAWA"
+msgid "KYAAAAAAAAAAHH!"
+msgstr ""
+
+#. 腐川、俺に手間を掛けさせるな。
+#. 正直に言うんだ…
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid "Stop wasting my time. Just tell us the truth."
+msgstr ""
+
+#. …はい。あたしの手形です。
+msgctxt "0009 | TOUKO FUKAWA"
+msgid "...Okay. It's my handprint."
+msgstr ""
+
+#. うわ…あっさり認めたべ！！
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgid "Dang, she just straight-up admitted it!"
+msgstr ""
+
+#. じゃあ…さくらちゃんを殺したのも…
+#. あんたなんだね…！
+msgctxt "0011 | AOI ASAHINA"
+msgid "Then *you* killed Sakura!"
+msgstr ""
+
+#. そ、そんな訳…な、ないじゃない…！
+msgctxt "0012 | TOUKO FUKAWA"
+msgid "N-No! I swear, there's no w-way!"
+msgstr ""
+
+#. 正直に言え。
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgid "Out with it."
+msgstr ""
+
+#. あたしが殺しました…多分…
+msgctxt "0014 | TOUKO FUKAWA"
+msgid "I...I p-probably did kill her."
+msgstr ""
+
+#. これまた、あっさりだべ！！
+msgctxt "0015 | YASUHIRO HAGAKURE"
+msgid "Straight-up again!"
+msgstr ""
+
+#. だけど…多分って何…？
+msgctxt "0016 | AOI ASAHINA"
+msgid "Wait...what do you mean, \"probably\"?"
+msgstr ""
+
+#. 腐川さん、詳しい話を聞かせてもらえる？
+#. あなたと大神さんの間に、何があったの？
+msgctxt "0017 | KYOUKO KIRIGIRI"
+msgid ""
+"Give us the details, Toko. What happened between you\n"
+"and Sakura?"
+msgstr ""
+
+#. ………………
+msgctxt "0018 | TOUKO FUKAWA"
+msgid "..."
+msgstr "..."
+
+#. …言え。
+msgctxt "0019 | BYAKUYA TOGAMI"
+msgid "Talk. Now."
+msgstr ""
+
+#. あ、あたしは…大神に呼び出された後…
+#. 先回りして…娯楽室に乗り込む事にしたの…
+msgctxt "0020 | TOUKO FUKAWA"
+msgid ""
+"After I read S-Sakura's note...I decided to go there\n"
+"early. So I w-went into the rec room..."
+msgstr ""
+
+#. い、行かないと…何されるかわらないし…
+#. かといって正面から行くのも…怖いから…
+msgctxt "0021 | TOUKO FUKAWA"
+msgid ""
+"I didn't know wh-what she might do if I didn't g-go,\n"
+"but I was too scared to f-face her head-on..."
+msgstr ""
+
+#. さ、先に…忍び込んでようって思って…
+#. それで…ロッカーの中に…隠れて…
+msgctxt "0022 | TOUKO FUKAWA"
+msgid ""
+"So I f-figured I'd just sneak in first,\n"
+"and h-hide in the locker..."
+msgstr ""
+
+#. じゃあ、ひょっとして見てたんか？
+#. 俺がオーガを殴るとこも…
+msgctxt "0023 | YASUHIRO HAGAKURE"
+msgid ""
+"Then...did you see what happened? Did you see me hit\n"
+"her?"
+msgstr ""
+
+#. そ、その後…あんたがあたしの名前で…
+#. ダイイングメッセージをねつ造した時もね…！
+msgctxt "0024 | TOUKO FUKAWA"
+msgid ""
+"Yes. And I s-saw you write my name. I saw you f-forge\n"
+"her dying message!"
+msgstr ""
+
+#. そりゃなんとも…気まずい気分だべ…
+msgctxt "0025 | YASUHIRO HAGAKURE"
+msgid "Well...that's awkward."
+msgstr ""
+
+#. だ、だから…あたしは葉隠がいなくなった後…
+#. すぐにロッカーから出て…
+msgctxt "0026 | TOUKO FUKAWA"
+msgid "So after he left, I j-jumped out of the locker..."
+msgstr ""
+
+#. その雑誌を…雑誌棚に戻したのよ…
+msgctxt "0027 | TOUKO FUKAWA"
+msgid "...and p-put the magazine back on the sh-shelf."
+msgstr ""
+
+#. その時…雑誌を<CLT 3>上下逆さま<CLT>にして、
+#. 戻しちゃったんだね…？
+msgctxt "0028 | MAKOTO NAEGI"
+msgid "But when you did, you put it back <CLT 3>upside down<CLT>."
+msgstr ""
+
+#. し、仕方ないじゃない…急いでたんだから…！
+msgctxt "0029 | TOUKO FUKAWA"
+msgid "I didn't m-mean to... I was in a h-hurry!"
+msgstr ""
+
+#. 間抜け過ぎるな、どいつもこいつも…
+msgctxt "0030 | BYAKUYA TOGAMI"
+msgid "Imbeciles, all of you."
+msgstr ""
+
+#. そんな事より…
+#. さくらちゃんを殴ったのはどうして…？
+msgctxt "0031 | AOI ASAHINA"
+msgid "Forget all that. Why did you attack Sakura...?"
+msgstr ""
+
+#. ざ、雑誌を棚に戻した直後…
+#. 急に背後から…獣の唸り声みたいなのが聞こえて…
+msgctxt "0032 | TOUKO FUKAWA"
+msgid ""
+"A-After I put the magazine back, I heard a s-sound\n"
+"behind me, like a—like a monster g-growling..."
+msgstr ""
+
+#. そ、それで…振り返ったら…
+msgctxt "0033 | TOUKO FUKAWA"
+msgid "And when I t-turned around..."
+msgstr ""
+
+#. 血まみれの…大神さくらが…
+#. あ、あたしを睨んでたのよ…！！
+msgctxt "0034 | TOUKO FUKAWA"
+msgid ""
+"...there was S-Sakura, covered in b-blood...and\n"
+"staring r-right at me!"
+msgstr ""
+
+#. そ、その血を見たせいで…
+#. あたしは…雑誌棚の前で気絶しちゃって…
+msgctxt "0035 | TOUKO FUKAWA"
+msgid ""
+"When I saw all that b-blood, I fainted...right there\n"
+"in f-front of the magazines."
+msgstr ""
+
+#. だ、だから…その後の事は覚えてないの…
+#. 後は…<CLT 3>あいつ<CLT>に聞いてもらわないと…
+msgctxt "0036 | TOUKO FUKAWA"
+msgid ""
+"I don't remember what h-happened after that. If you\n"
+"want to know m-more, you'll have to ask...<CLT 3>her<CLT>."
+msgstr ""
+
+#. <CLT 4>あいつって…もしかして…？
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Her? You mean...\n"
+"<CLT>"
+msgstr ""
+
+#. …ハクション！
+msgctxt "0038 | TOUKO FUKAWA"
+msgid "...Achoo!"
+msgstr ""
+
+#. ハッハー！　出て参りましたー！！
+msgctxt "0039 | TOUKO FUKAWA"
+msgid "Ha-ha! Guess who's back!"
+msgstr ""
+
+#. やっぱ、オメーのせいだったか！
+msgctxt "0040 | YASUHIRO HAGAKURE"
+msgid "It WAS your fault, after all!"
+msgstr ""
+
+#. アタシの性！　白夜様の性！
+#. ２つの性がぶつかり合う事で、その性はより高みにッ！
+msgctxt "0041 | TOUKO FUKAWA"
+msgid ""
+"My fault, Master's fault! When our faults combine,\n"
+"they soar to even greater heights!"
+msgstr ""
+
+#. 聞かれた事だけ答えろ…
+#. お前が大神さくらを殺したのか？
+msgctxt "0042 | BYAKUYA TOGAMI"
+msgid "Just answer the question. Did you kill Sakura?"
+msgstr ""
+
+#. えー、大前提としまして、
+#. アタシと根暗は、<CLT 3>同じ記憶を共有してない<CLT>のです！
+msgctxt "0043 | TOUKO FUKAWA"
+msgid ""
+"Well, to be honest, Miss Morose and me <CLT 3>don't actually\n"
+"share our memories<CLT>!"
+msgstr ""
+
+#. なので、何が起きたのか、
+#. 詳しい事はわかりませんが…
+msgctxt "0044 | TOUKO FUKAWA"
+msgid "So I can't really say what was going on."
+msgstr ""
+
+#. とにかく、アタシがすやすや寝てたら、
+#. 誰かがガシガシ揺すりやがる訳よ！
+msgctxt "0045 | TOUKO FUKAWA"
+msgid ""
+"But I was just minding my own business, sleeping\n"
+"peacefully, when someone shook me awake!"
+msgstr ""
+
+#. あれ、王子様？　と思って目を開けたら…
+msgctxt "0046 | TOUKO FUKAWA"
+msgid ""
+"Was it a prince paying me a visit, I wondered. So I\n"
+"opened my eyes to see..."
+msgstr ""
+
+#. なんとスプラッター！！　アタシ、ビックリ！！
+msgctxt "0047 | GENOCIDER SHOU"
+msgid "...splatter everywhere! I was NOT prepared for that!"
+msgstr ""
+
+#. ビックリし過ぎて…ッ！
+msgctxt "0048 | GENOCIDER SHOU"
+msgid "And, well...I guess it took me by surprise!"
+msgstr ""
+
+#. 近くにあったボトルでひっぱたいちった！
+#. だって怖かったんだもーん！
+msgctxt "0049 | TOUKO FUKAWA"
+msgid ""
+"I got so startled, I smacked her with the first thing\n"
+"I could find. Which I guess was a bottle!"
+msgstr ""
+
+#. さくらちゃんは心配してくれてたんだよ…
+#. それなのに…酷いよ…！
+msgctxt "0050 | AOI ASAHINA"
+msgid ""
+"Sakura was just worried about you, and you...! You're\n"
+"terrible!"
+msgstr ""
+
+#. 酷いのはあいつだっつーの！
+#. お陰で、萌える男子以外を初めて殺しちまったよ！
+msgctxt "0051 | TOUKO FUKAWA"
+msgid ""
+"No, SHE'S terrible! Thanks to her, I murdered someone\n"
+"who wasn't an adorable boy for the first time ever!"
+msgstr ""
+
+#. その後、あなたは証拠隠滅の為に、
+#. モノクマボトルの破片を処分したのね？
+msgctxt "0052 | KYOUKO KIRIGIRI"
+msgid ""
+"And when it was all over, you collected the pieces of\n"
+"the bottle to get rid of the evidence, didn't you?"
+msgstr ""
+
+#. だって、女なんかを殺したせいで死にたくないじゃん！
+#. どうせ死ぬなら、白夜様を殺して死にたいわ！！
+msgctxt "0053 | TOUKO FUKAWA"
+msgid ""
+"I wasn't about to die for some woman! If I'm gonna\n"
+"go down, I want it to be for killing Master!"
+msgstr ""
+
+#. どこかで１人で死ね…
+#. 一切の意味もなく、ただ死ね…
+msgctxt "0054 | BYAKUYA TOGAMI"
+msgid ""
+"Just go away and die your meaningless death alone.\n"
+"Don't drag me into it."
+msgstr ""
+
+#. ツイてなかったの…色んな不運が重なったのよ…
+msgctxt "0055 | TOUKO FUKAWA"
+msgid ""
+"But I just can't catch a break, ya know? Fate's got it\n"
+"out for me!"
+msgstr ""
+
+#. だって、いつものオーガちんなら、
+#. アタシのボトル攻撃くらい平気でかわせたはずよ！
+msgctxt "0056 | TOUKO FUKAWA"
+msgid ""
+"Cuz normally, Sakura should've been able to dodge my\n"
+"attack no problem!"
+msgstr ""
+
+#. さすがの彼女も…葉隠君から受けた殴打のダメージが
+#. 残っていたんでしょうね…
+msgctxt "0057 | KYOUKO KIRIGIRI"
+msgid ""
+"Even as strong as she is, she must have still been\n"
+"reeling from Hiro's attack."
+msgstr ""
+
+#. いや…なんつーか……
+msgctxt "0058 | YASUHIRO HAGAKURE"
+msgid "Hey, come on. That's, y'know..."
+msgstr ""
+
+#. でも、よかったべ！
+#. オーガは俺が殺した訳じゃなかったんだな！
+msgctxt "0059 | YASUHIRO HAGAKURE"
+msgid ""
+"But anyway, I'm not the one that killed Ogre! So\n"
+"that's good!"
+msgstr ""
+
+#. <CLT 4>よかったって…
+#. そんな最低な発言してると、朝日奈さんに…
+#. <CLT>
+msgctxt "0060 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>\"So that's good\"? Keep talking like that and Hina's\n"
+"gonna—\n"
+"<CLT>"
+msgstr ""
+
+#. とにかく、これで決定だね！
+#. じゃあ、さっさと投票を始めようよ！！
+msgctxt "0061 | AOI ASAHINA"
+msgid "Well then, that's that! Let's start the vote!"
+msgstr ""
+
+#. <CLT 4>あれ…？　朝日奈さん…
+#. てっきり葉隠君を怒鳴りつけると思ったのに…
+#. <CLT>
+msgctxt "0062 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh? I thought for sure you'd have some words for Hiro\n"
+"on that one...\n"
+"<CLT>"
+msgstr ""
+
+#. ほら！　どうしたの、みんなッ！？
+#. 投票でしょ？　さっさと投票しようよッ！
+msgctxt "0063 | AOI ASAHINA"
+msgid ""
+"What's wrong? Come on, everyone! We're ready to vote,\n"
+"right? Let's do this!"
+msgstr ""
+
+#. いや…まだだ…
+msgctxt "0064 | BYAKUYA TOGAMI"
+msgid "No, not quite yet..."
+msgstr ""
+
+#. え…？
+msgctxt "0065 | AOI ASAHINA"
+msgid "Huh?"
+msgstr ""
+
+#. まだって…何がまだなの…？
+msgctxt "0066 | AOI ASAHINA"
+msgid "Not yet? Why not yet?"
+msgstr ""
+
+#. さっきの腐川の話を聞いて妙だとは思わなかったのか？
+#. いや思うはずだ。思わない訳がない…
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgid ""
+"Don't you think there was something odd about Toko's\n"
+"story? I mean, you had to have noticed..."
+msgstr ""
+
+#. は…？　妙って…？
+msgctxt "0068 | YASUHIRO HAGAKURE"
+msgid "Odd? Huh?"
+msgstr ""
+
+#. 葉隠の殴打…その後の腐川の殴打…
+#. だが、それで終わりではなかったんだ。
+msgctxt "0069 | BYAKUYA TOGAMI"
+msgid ""
+"Hiro's attack, and then Toko's... But that still\n"
+"wasn't the end of it."
+msgstr ""
+
+#. <CLT 4>それで…終わりじゃなかった…？
+#. <CLT>
+msgctxt "0070 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It wasn't...?\n"
+"<CLT>"
+msgstr ""
+
+#. おい、腐川…もう１度さっきの話をしてやれ。
+#. お前が気絶した後の話だ…
+msgctxt "0071 | BYAKUYA TOGAMI"
+msgid ""
+"Tell your story one more time. Tell us what happened\n"
+"after you fainted."
+msgstr ""
+
+#. そうすれば、いくら間抜けなこいつらでも、
+#. さすがに気付くはずだ…
+msgctxt "0072 | BYAKUYA TOGAMI"
+msgid ""
+"Then even this gaggle of idiots should understand what\n"
+"I'm talking about."
+msgstr ""
+
+#. ラジャーよッ！　ダーリン！
+msgctxt "0073 | TOUKO FUKAWA"
+msgid "Your wish is my command, darling!"
+msgstr ""
+
+#. <CLT 4>事件はまだ終わりじゃない…？
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>It's not over yet, is it...?\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>だとしたら、大神さんを殺した犯人って…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The one who killed Sakura is...\n"
+"<CLT>"
+msgstr ""

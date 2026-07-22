@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ウソを追及する
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Pursue the lie"
+msgstr ""
+
+#. ウソを追及しない
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Let it go"
+msgstr ""
+
+#. 逃げ出す
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Run away"
+msgstr ""
+
+#. <CLT 4>だめだ…
+#. 逃げたって何も解決しない…！
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No! Running away isn't gonna solve anything!\n"
+"<CLT>"
+msgstr ""
+
+#. ………………
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>霧切さんは…
+#. 何も言わないんだな…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko's not gonna say anything on her own...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>………………
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>ボクが…
+#. 自分で決めるしかないんだ…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to make this choice myself...\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さんのウソを追及するか…？
+#. 今ここで、決めなくちゃならない…！
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to decide right here and now whether or not to\n"
+"expose Kyoko's lie...!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…決めた。
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I've made my decision.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>…霧切さんを信じよう。
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to believe in Kyoko.\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>霧切さんが…人を殺す訳がない！
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's no way she would kill someone!\n"
+"<CLT>"
+msgstr ""
+
+#. <CLT 4>絶対に…何か秘密があるはずだ。
+#. 霧切さんの言う<CLT><CLT 3>“黒幕の罠”<CLT><CLT 4>に関する秘密が…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There has to be some secret here, something that has\n"
+"to do with the <CLT><CLT 3>mastermind's trap<CLT><CLT 4> that Kyoko mentioned.\n"
+"<CLT>"
+msgstr ""
+
+#. …どうした、誰も反論はないのか？
+msgctxt "0014 | BYAKUYA TOGAMI"
+msgid "Well? Does no one have a rebuttal?"
+msgstr ""
+
+#. 霧切の主張を認めるという事か？
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgid "Have you decided to accept her assertion as fact?"
+msgstr ""
+
+#. ………………
+msgctxt "0016 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. そうか…認めざるを得ないようだな…
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgid "I see. So you still refuse to accept it."
+msgstr ""
+
+#. 霧切の個室に武道場のロッカーの鍵を置いたのは、
+#. 霧切ではなく、他の誰かだったという事か…
+msgctxt "0018 | BYAKUYA TOGAMI"
+msgid ""
+"I suppose we have to admit that Kyoko didn't put the\n"
+"locker key in her room, that it was someone else."
+msgstr ""
+
+#. でも…他の誰かって…
+msgctxt "0019 | AOI ASAHINA"
+msgid "But...who else could it have been?"
+msgstr ""
+
+#. 霧切っちの部屋の鍵を持ってたのは、
+#. 十神っちなんだよな…？
+msgctxt "0020 | YASUHIRO HAGAKURE"
+msgid "I mean, Byakuya had her room key, right?"
+msgstr ""
+
+#. あ、あんた…ッ！　何言ってんのよ…ッ！
+msgctxt "0021 | TOUKO FUKAWA"
+msgid "Y-You! What are you t-trying to imply!?"
+msgstr ""
+
+#. だが、俺には<CLT 3>アリバイ<CLT>がある。
+#. 夜時間以降は、お前達とずっと一緒だったはずだ…
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgid ""
+"But of course I have an <CLT 3>alibi<CLT>. From nighttime on, I\n"
+"was with you guys the entire time..."
+msgstr ""
+
+#. 植物庭園での殺人も…霧切の部屋に鍵を置く事も…
+#. 俺には不可能だ…
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgid ""
+"I couldn't possibly have killed anyone, or put the key\n"
+"in Kyoko's room."
+msgstr ""
+
+#. じゃあ、霧切っちの部屋に、
+#. 武道場の鍵を置いたのって…
+msgctxt "0024 | YASUHIRO HAGAKURE"
+msgid "Well *someone* had to put the key in there..."
+msgstr ""
+
+#. 考えられる可能性は１つだけだ…
+msgctxt "0025 | BYAKUYA TOGAMI"
+msgid "There's only one other possibility I can think of..."
+msgstr ""
+
+#. あらかじめ自分が持っていた鍵を、
+#. あたかも、その場で見つけたようなフリをした…
+msgctxt "0026 | BYAKUYA TOGAMI"
+msgid ""
+"Someone could have had the key on them, then once they\n"
+"arrived at the scene, pretended to \"find\" it there."
+msgstr ""
+
+#. え…？
+msgctxt "0027 | MAKOTO NAEGI"
+msgid "What...?"
+msgstr ""
+
+#. それって…苗木の事だよね…？
+msgctxt "0028 | AOI ASAHINA"
+msgid "I-It had to be Makoto...right?"
+msgstr ""
+
+#. …そうとしか考えられまい。
+msgctxt "0029 | BYAKUYA TOGAMI"
+msgid "...I don't see any other option."
+msgstr ""
+
+#. ちょ、ちょっと待ってよ！
+#. そうじゃないって…！！
+msgctxt "0030 | MAKOTO NAEGI"
+msgid "W-Wait a second! You've got it all wrong!"
+msgstr ""
+
+#. …も、もう１度考えてみようよ！
+#. この事件には…何か裏があるはずなんだ！
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"Let's think about it one more time! There's got to be\n"
+"a hidden side to this case!"
+msgstr ""
+
+#. は？　裏？
+msgctxt "0032 | YASUHIRO HAGAKURE"
+msgid "Huh? A hidden side...?"
+msgstr ""
+
+#. そもそも、この学級裁判自体がおかしいんだよ！
+#. みんなだって、そう思うでしょ！？
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"First of all, there's something off about this entire\n"
+"trial! You all see it, don't you?"
+msgstr ""
+
+#. ………………
+msgctxt "0034 | MONOKUMA"
+msgid "..."
+msgstr "..."
+
+#. 正体不明だった戦刃むくろが、急に死体で現れて…
+#. しかも、その学級裁判が行われるなんて…！
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"Mukuro, who we didn't even know existed, suddenly\n"
+"shows up dead, and then we're thrown into a trial...!"
+msgstr ""
+
+#. それに霧切さんも言ってただろ？　黒幕の罠だって！
+#. だから…きっとこれは…ッ！！
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"And Kyoko even said, it's a trap the mastermind set\n"
+"for us! So that's why...this has to be—!"
+msgstr ""
+
+#. はい！　<CLT 3>タイムアップ<CLT>でーす！！
+msgctxt "0037 | MONOKUMA"
+msgid "Okaaay! <CLT 3>Time's up<CLT>!"
+msgstr ""
+
+#. …え？
+msgctxt "0038 | MAKOTO NAEGI"
+msgid "...Huh?"
+msgstr ""
+
+#. 時間切れ！　学級裁判は終わり！
+#. だから、それ以上は喋んないでいいよ！
+msgctxt "0039 | MONOKUMA"
+msgid ""
+"Time's up! Class trial's all over! Everyone can stop\n"
+"talking now!"
+msgstr ""
+
+#. な、なんだよ…時間切れって…？
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "What? Time's up?"
+msgstr ""
+
+#. どういう事？　タイムアップなんておかしいわ！
+#. だって、今まで１度もそんな事…
+msgctxt "0041 | KYOUKO KIRIGIRI"
+msgid ""
+"What do you mean time's up? There's no \"time's up.\"\n"
+"Since when have we—?"
+msgstr ""
+
+#. 霧切さんが遅刻したせいだよ！
+#. そのせいで、時間が押してんのッ！！
+msgctxt "0042 | MONOKUMA"
+msgid ""
+"It's because you were late! So we had to push back the\n"
+"start time!"
+msgstr ""
+
+#. …という訳で、そろそろ投票タイムといきましょうか！
+#. オマエラ、お手元のスイッチで投票してくださーい！
+msgctxt "0043 | MONOKUMA"
+msgid ""
+"So then, it's time for voting time, okay? Everyone,\n"
+"please vote using the lever in front of you!"
+msgstr ""
+
+#. 投票…タイム…？
+msgctxt "0044 | MAKOTO NAEGI"
+msgid "Voting time...?"
+msgstr ""
+
+#. さて、投票の結果クロとなるのは誰なのかッ！
+#. その答えは正解なのか不正解なのかッ！？
+msgctxt "0045 | MONOKUMA"
+msgid ""
+"Now, who will be chosen as the blackened? Will you\n"
+"make the right choice, or the dreadfully wrong one?"
+msgstr ""
+
+#. ちょ、ちょっと…待てよ…！
+msgctxt "0046 | MAKOTO NAEGI"
+msgid "Hey, hold on!"
+msgstr ""
+
+#. さぁ、どうなんだーーッ！？
+msgctxt "0047 | MONOKUMA"
+msgid "What's it gonna be? What's it gonna beeee!?"
+msgstr ""
