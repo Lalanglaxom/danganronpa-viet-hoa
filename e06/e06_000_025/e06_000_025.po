@@ -20,6 +20,9 @@ msgid ""
 "mastermind...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ\n"
+"chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -28,6 +31,8 @@ msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. <CLT 4>これがすべて、未解決事件の捜査報告書か…
 #. <CLT>
@@ -112,7 +117,7 @@ msgstr ""
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"

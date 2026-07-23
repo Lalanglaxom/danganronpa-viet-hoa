@@ -20,6 +20,9 @@ msgid ""
 "not afraid of you, Monokuma!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình sẽ không để mấy thứ này làm mình sợ hãi nữa... Ta không sợ\n"
+"ngươi đâu, Monokuma!\n"
+"<CLT>"
 
 #. <CLT 4>監視カメラ…
 #. きっと今も、この向こうで黒幕が…
@@ -30,6 +33,9 @@ msgid ""
 "mastermind...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ\n"
+"chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -38,6 +44,8 @@ msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. こんなに大きい機械が…ただの空気清浄機なのか…
 msgctxt "0004 | MAKOTO NAEGI"
@@ -107,7 +115,7 @@ msgstr ""
 #. はい
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"

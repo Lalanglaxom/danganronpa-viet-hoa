@@ -18,6 +18,9 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
+"<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -37,6 +40,8 @@ msgid ""
 "<CLT 4>From the bottom of my heart, I just really wanna...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Từ tận đáy lòng, mình thực sự chỉ muốn...\n"
+"<CLT>"
 
 #. <CLT 4>本気で…壊してやろうかな…
 #. <CLT>
@@ -53,6 +58,8 @@ msgid ""
 "<CLT 4>I don't have much time left...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình không còn nhiều thời gian nữa...\n"
+"<CLT>"
 
 #. <CLT 4>分厚い鉄板で隠された窓…
 #. その向こうには……
@@ -63,6 +70,9 @@ msgid ""
 "And just on the other side of it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cửa sổ đã bị che kín hoàn toàn bởi tấm kim loại đó.\n"
+"Và ngay ở phía bên kia của nó...\n"
+"<CLT>"
 
 #. <CLT 4>もうすぐ帰れるはずだ。
 #. いや、絶対に帰ってみせる！！
@@ -73,6 +83,9 @@ msgid ""
 "HAVE to get out!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chắc chắn sẽ sớm thoát khỏi đây. Không... mình nhất\n"
+"định PHẢI thoát ra ngoài!\n"
+"<CLT>"
 
 #. <CLT 4>さようなら！　鉄板祭り！！
 #. いつか恋しくなる日が…来る訳ない！！
@@ -87,7 +100,7 @@ msgstr ""
 #. はい
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
@@ -107,7 +120,7 @@ msgstr ""
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"

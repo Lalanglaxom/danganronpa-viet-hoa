@@ -20,6 +20,9 @@ msgid ""
 "not afraid of you, Monokuma!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình sẽ không để mấy thứ này làm mình sợ hãi nữa... Ta không sợ\n"
+"ngươi đâu, Monokuma!\n"
+"<CLT>"
 
 #. …まあ、変なものが映っても困るけど…
 msgctxt "0002 | MAKOTO NAEGI"
@@ -36,6 +39,8 @@ msgid ""
 "<CLT 4>From the bottom of my heart, I just really wanna...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Từ tận đáy lòng, mình thực sự chỉ muốn...\n"
+"<CLT>"
 
 #. <CLT 4>本気で…壊してやろうかな…
 #. <CLT>
@@ -116,7 +121,7 @@ msgstr ""
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"

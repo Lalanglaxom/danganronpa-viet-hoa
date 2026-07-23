@@ -101,6 +101,9 @@ msgid ""
 "announcement would work just as well...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tại sao chúng lại cần tất cả những chiếc màn hình này chứ? Một\n"
+"thông báo qua loa bình thường cũng hiệu quả rồi mà...\n"
+"<CLT>"
 
 #. <CLT 4>…絵的に寂しいって事か？
 #. <CLT>
@@ -165,6 +168,9 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
+"người luôn sao?\n"
+"<CLT>"
 
 #. <CLT 4>とにかく…事件には関係なさそうだし、
 #. この花には近付かない方がいいな…
@@ -201,6 +207,8 @@ msgid ""
 "<CLT 4>Those nozzles poking out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những cái vòi nhô ra kia...\n"
+"<CLT>"
 
 #. あれは…スプリンクラーだ…
 #. あそこから水がまかれるんだったな。
@@ -266,7 +274,7 @@ msgstr ""
 #. はい
 msgctxt "0031 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0032 | CHOICE/RE:ACT"

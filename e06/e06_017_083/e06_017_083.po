@@ -101,6 +101,9 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
+"<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -180,6 +183,9 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
+"người luôn sao?\n"
+"<CLT>"
 
 #. <CLT 4>とにかく…事件には関係なさそうだし
 #. この花には近付かない方がいいな…
@@ -216,6 +222,8 @@ msgid ""
 "<CLT 4>Those nozzles poking out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những cái vòi nhô ra kia...\n"
+"<CLT>"
 
 #. あれは…スプリンクラーか…
 msgctxt "0028 | MAKOTO NAEGI"
@@ -225,7 +233,7 @@ msgstr ""
 #. はい
 msgctxt "0029 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0030 | CHOICE/RE:ACT"

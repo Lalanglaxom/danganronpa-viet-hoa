@@ -14,7 +14,7 @@ msgstr ""
 #. はい
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0002 | CHOICE/RE:ACT"
@@ -60,6 +60,9 @@ msgid ""
 "stuff like that.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình từng thấy những thứ như thế này trên mấy bộ phim truyền\n"
+"hình về thám tử và mấy thứ như vậy.\n"
+"<CLT>"
 
 #. <CLT 4>…死体発見現場とかで。
 #. <CLT>
@@ -85,7 +88,7 @@ msgstr ""
 #. はい
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"

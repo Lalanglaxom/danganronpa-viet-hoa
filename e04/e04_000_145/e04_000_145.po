@@ -19,6 +19,9 @@ msgid ""
 "a little burn!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nếu chạm vào thứ này, hậu quả sẽ không chỉ dừng lại ở một\n"
+"vết bỏng nhỏ đâu!\n"
+"<CLT>"
 
 #. <CLT 4>こんなの触ったら火傷じゃすまない…！
 #. <CLT>
@@ -28,11 +31,14 @@ msgid ""
 "a little burn!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nếu chạm vào thứ này, hậu quả sẽ không chỉ dừng lại ở một\n"
+"vết bỏng nhỏ đâu!\n"
+"<CLT>"
 
 #. はい
 msgctxt "0003 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"

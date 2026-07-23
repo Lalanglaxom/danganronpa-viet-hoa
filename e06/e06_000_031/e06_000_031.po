@@ -18,6 +18,9 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
+"<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -38,6 +41,9 @@ msgid ""
 "mastermind...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ\n"
+"chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -46,6 +52,8 @@ msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. <CLT 4>よく見ると時計の針がない…
 #. 今までのはなんだったんだ…？
@@ -66,6 +74,9 @@ msgid ""
 "And just on the other side of it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cửa sổ đã bị che kín hoàn toàn bởi tấm kim loại đó.\n"
+"Và ngay ở phía bên kia của nó...\n"
+"<CLT>"
 
 #. <CLT 4>もうすぐ帰れるはずだ。
 #. いや、絶対に帰ってみせる！！
@@ -76,6 +87,9 @@ msgid ""
 "HAVE to get out!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chắc chắn sẽ sớm thoát khỏi đây. Không... mình nhất\n"
+"định PHẢI thoát ra ngoài!\n"
+"<CLT>"
 
 #. <CLT 4>分厚い鉄板で隠された窓…
 #. その向こうには……
@@ -86,6 +100,9 @@ msgid ""
 "And just on the other side of it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cửa sổ đã bị che kín hoàn toàn bởi tấm kim loại đó.\n"
+"Và ngay ở phía bên kia của nó...\n"
+"<CLT>"
 
 #. <CLT 4>もうすぐ帰れるはずだ。
 #. いや、絶対に帰ってみせる！！
@@ -96,6 +113,9 @@ msgid ""
 "HAVE to get out!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chắc chắn sẽ sớm thoát khỏi đây. Không... mình nhất\n"
+"định PHẢI thoát ra ngoài!\n"
+"<CLT>"
 
 #. <CLT 4>分厚い鉄板で隠された窓…
 #. その向こうには……
@@ -106,6 +126,9 @@ msgid ""
 "And just on the other side of it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cửa sổ đã bị che kín hoàn toàn bởi tấm kim loại đó.\n"
+"Và ngay ở phía bên kia của nó...\n"
+"<CLT>"
 
 #. <CLT 4>もうすぐ帰れるはずだ。
 #. いや、絶対に帰ってみせる！！
@@ -116,11 +139,14 @@ msgid ""
 "HAVE to get out!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chắc chắn sẽ sớm thoát khỏi đây. Không... mình nhất\n"
+"định PHẢI thoát ra ngoài!\n"
+"<CLT>"
 
 #. はい
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
@@ -140,7 +166,7 @@ msgstr ""
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0016 | CHOICE/RE:ACT"

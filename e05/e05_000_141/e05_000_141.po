@@ -29,6 +29,8 @@ msgid ""
 "<CLT 4>The massage chair...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Chiếc ghế massage...\n"
+"<CLT>"
 
 #. <CLT 4>なんか罠があったら大変だ。
 #. 使うのはやめておこう。
@@ -39,11 +41,14 @@ msgid ""
 "somehow...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình sẽ tránh xa nó ra, phòng trường hợp nó bị gài bẫy\n"
+"theo cách nào đó...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"

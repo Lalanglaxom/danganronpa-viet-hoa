@@ -63,6 +63,8 @@ msgid ""
 "<CLT 4>There's a thick layer of dust on top of the desk.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một lớp bụi dày đặc trên mặt bàn.\n"
+"<CLT>"
 
 #. <CLT 4>この図書室は長い事放ったらかしになってたんだな…
 #. <CLT>
@@ -141,6 +143,9 @@ msgid ""
 "here—because it's not a real school.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Điều đó giải thích tại sao không có bất kỳ học sinh nào khác ở\n"
+"đây—bởi vì đây không phải là một ngôi trường thực sự.\n"
+"<CLT>"
 
 #. <CLT 4>そして、希望ヶ峰学園が閉鎖に追い込まれた
 #. <CLT><CLT 3>“深刻な問題”<CLT><CLT 4>…
@@ -211,7 +216,7 @@ msgstr ""
 #. はい
 msgctxt "0021 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0022 | CHOICE/RE:ACT"

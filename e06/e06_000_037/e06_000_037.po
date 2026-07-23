@@ -20,6 +20,9 @@ msgid ""
 "announcement would work just as well...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tại sao chúng lại cần tất cả những chiếc màn hình này chứ? Một\n"
+"thông báo qua loa bình thường cũng hiệu quả rồi mà...\n"
+"<CLT>"
 
 #. <CLT 4>…絵的に寂しいって事か？
 #. <CLT>
@@ -37,6 +40,8 @@ msgid ""
 "<CLT 4>From the bottom of my heart, I just really wanna...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Từ tận đáy lòng, mình thực sự chỉ muốn...\n"
+"<CLT>"
 
 #. <CLT 4>本気で…壊してやろうかな…
 #. <CLT>
@@ -59,7 +64,7 @@ msgstr ""
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"

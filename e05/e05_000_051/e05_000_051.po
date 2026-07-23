@@ -30,6 +30,9 @@ msgid ""
 "once. If she couldn't do it, what chance do I have...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chắc Sakura đã cố phá sập mấy thứ này nhiều hơn một lần\n"
+"rồi. Nếu cô ấy còn bó tay, thì mình có cơ hội nào chứ...?\n"
+"<CLT>"
 
 #. <CLT 4>こっちも鉄板…あっちも鉄板…
 #. <CLT>
@@ -44,7 +47,7 @@ msgstr ""
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
@@ -64,7 +67,7 @@ msgstr ""
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"

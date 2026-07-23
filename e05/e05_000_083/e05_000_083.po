@@ -25,6 +25,9 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
+"người luôn sao?\n"
+"<CLT>"
 
 #. <CLT 4>とにかく…この花には近付かない方がいいな…
 #. <CLT>
@@ -95,6 +98,8 @@ msgid ""
 "<CLT 4>What's a chicken coop doing here?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một cái chuồng gà làm gì ở đây thế nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>いるのはニワトリか…
 #. どうせならウサギの方が可愛くてよかったな。
@@ -122,6 +127,9 @@ msgid ""
 "<CLT 4>Apparently, it controls the sprinklers in the garden.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có vẻ như nó dùng để điều khiển hệ thống vòi phun\n"
+"nước trong vườn.\n"
+"<CLT>"
 
 #. <CLT 4>毎朝７時３０分に水がまかれる設定になってるって
 #. モノクマが言ってたな…
@@ -156,6 +164,8 @@ msgid ""
 "<CLT 4>Those nozzles poking out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những cái vòi nhô ra kia...\n"
+"<CLT>"
 
 #. あれは…スプリンクラーか…
 msgctxt "0019 | MAKOTO NAEGI"
@@ -165,7 +175,7 @@ msgstr ""
 #. はい
 msgctxt "0020 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0021 | CHOICE/RE:ACT"

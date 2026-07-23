@@ -20,6 +20,9 @@ msgid ""
 "not afraid of you, Monokuma!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình sẽ không để mấy thứ này làm mình sợ hãi nữa... Ta không sợ\n"
+"ngươi đâu, Monokuma!\n"
+"<CLT>"
 
 #. <CLT 4>いつも見てるのか…？
 #. それはそれで飽きないのか？
@@ -49,7 +52,7 @@ msgstr ""
 #. はい
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0005 | CHOICE/RE:ACT"
@@ -181,6 +184,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -197,6 +202,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -213,6 +220,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -229,6 +238,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -245,6 +256,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -261,6 +274,8 @@ msgid ""
 "<CLT 4>Did Monokuma make this bottle himself?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có phải Monokuma tự mình làm ra cái chai này không nhỉ?\n"
+"<CLT>"
 
 #. <CLT 4>…あの手で？
 #. <CLT>
@@ -273,7 +288,7 @@ msgstr ""
 #. はい
 msgctxt "0031 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0032 | CHOICE/RE:ACT"

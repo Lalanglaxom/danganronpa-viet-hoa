@@ -19,7 +19,8 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
 "<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけか…
@@ -148,7 +149,7 @@ msgstr ""
 #. 鍵が掛かってるみたいだ…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "The door won't budge. It must be locked."
-msgstr "Không mở được... Hình như bị khóa rồi."
+msgstr "Không mở được. Hình như bị khóa rồi."
 
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"

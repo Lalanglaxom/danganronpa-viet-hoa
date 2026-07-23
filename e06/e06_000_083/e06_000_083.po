@@ -29,6 +29,8 @@ msgid ""
 "<CLT 4>From the bottom of my heart, I just really wanna...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Từ tận đáy lòng, mình thực sự chỉ muốn...\n"
+"<CLT>"
 
 #. <CLT 4>本気で…壊してやろうかな…
 #. <CLT>
@@ -88,6 +90,9 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
+"người luôn sao?\n"
+"<CLT>"
 
 #. <CLT 4>とにかく…事件には関係なさそうだし
 #. この花には近付かない方がいいな…
@@ -124,6 +129,8 @@ msgid ""
 "<CLT 4>Those nozzles poking out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những cái vòi nhô ra kia...\n"
+"<CLT>"
 
 #. あれは…スプリンクラーか…
 msgctxt "0014 | MAKOTO NAEGI"
@@ -133,7 +140,7 @@ msgstr ""
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0016 | CHOICE/RE:ACT"

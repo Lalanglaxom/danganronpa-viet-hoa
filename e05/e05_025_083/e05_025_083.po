@@ -759,6 +759,9 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
+"người luôn sao?\n"
+"<CLT>"
 
 #. <CLT 4>とにかく…事件には関係なさそうだし
 #. この花には近付かない方がいいかな…
@@ -1051,6 +1054,8 @@ msgid ""
 "<CLT 4>Those nozzles poking out...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những cái vòi nhô ra kia...\n"
+"<CLT>"
 
 #. あれは…スプリンクラーか…
 msgctxt "0144 | MAKOTO NAEGI"
@@ -1430,7 +1435,7 @@ msgstr ""
 #. はい
 msgctxt "0189 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0190 | CHOICE/RE:ACT"

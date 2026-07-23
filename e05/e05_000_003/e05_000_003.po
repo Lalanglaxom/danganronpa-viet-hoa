@@ -30,6 +30,9 @@ msgid ""
 "I touched it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chắc nó sẽ biến mình thành tổ ong ngay khi mình vừa\n"
+"chạm vào...\n"
+"<CLT>"
 
 #. <CLT 4>入口は…鉄の塊で塞がれてしまっている…
 #. これって…はたして開くんだろうか…
@@ -80,11 +83,14 @@ msgid ""
 "I touched it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chắc nó sẽ biến mình thành tổ ong ngay khi mình vừa\n"
+"chạm vào...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0008 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0009 | CHOICE/RE:ACT"

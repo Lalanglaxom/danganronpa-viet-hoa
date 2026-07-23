@@ -45,6 +45,8 @@ msgid ""
 "but...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cái máy này rõ ràng là có tác dụng nào đó, nhưng...\n"
+"<CLT>"
 
 #. <CLT 4>そもそも、物理が何かよくわからないボクに、
 #. この機械を理解するのは難しそうだ…
@@ -62,7 +64,7 @@ msgstr ""
 #. はい
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"

@@ -38,6 +38,8 @@ msgid ""
 "<CLT 4>There's a lawnmower here...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một cái máy cắt cỏ ở đây...\n"
+"<CLT>"
 
 #. <CLT 4>こんな物があっても、
 #. 誰が、芝の手入れをするんだよ…？
@@ -140,7 +142,7 @@ msgstr ""
 #. はい
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0016 | CHOICE/RE:ACT"

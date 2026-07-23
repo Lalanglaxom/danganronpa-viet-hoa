@@ -18,6 +18,9 @@ msgid ""
 "<CLT 4>This is one of the monitors Monokuma appears on.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma\n"
+"hay xuất hiện.\n"
+"<CLT>"
 
 #. <CLT 4>いまは校章が浮かんでいるだけだ…
 #. <CLT>
@@ -38,6 +41,9 @@ msgid ""
 "mastermind...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ\n"
+"chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -46,6 +52,8 @@ msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. <CLT 4>優雅にグランドピアノを眺めている場合じゃない…
 #. <CLT>
@@ -55,6 +63,9 @@ msgid ""
 "look all fancy.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình không thể lãng phí thời gian để ngắm cây đại\n"
+"dương cầm và cố tỏ ra sang chảnh được.\n"
+"<CLT>"
 
 #. <CLT 4>…謎を解かないと！
 #. <CLT>
@@ -67,7 +78,7 @@ msgstr ""
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"

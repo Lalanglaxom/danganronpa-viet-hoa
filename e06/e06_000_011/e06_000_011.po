@@ -30,6 +30,9 @@ msgid ""
 "mastermind...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay cả lúc này... ở phía bên kia của chiếc camera này, kẻ\n"
+"chủ mưu...\n"
+"<CLT>"
 
 #. <CLT 4>でも、それももうすぐ終わりだ…！
 #. <CLT>
@@ -38,6 +41,8 @@ msgid ""
 "<CLT 4>But that's gonna come to an end soon enough!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng chuyện đó sẽ sớm kết thúc thôi!\n"
+"<CLT>"
 
 #. <CLT 4>これは、ゴミ箱だな…
 #. <CLT>
@@ -66,11 +71,14 @@ msgid ""
 "kept on hand for transfusions.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cái tủ lạnh này chứa đầy các túi máu, có lẽ được lưu\n"
+"trữ sẵn để phục vụ cho việc truyền máu.\n"
+"<CLT>"
 
 #. はい
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0008 | CHOICE/RE:ACT"

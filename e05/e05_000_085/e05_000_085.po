@@ -18,6 +18,8 @@ msgid ""
 "<CLT 4>There's a lawnmower here...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một cái máy cắt cỏ ở đây...\n"
+"<CLT>"
 
 #. <CLT 4>誰が、芝の手入れを…？
 #. モノクマにこれは扱えないよな…
@@ -54,6 +56,8 @@ msgid ""
 "<CLT 4>Bags of fertilizer are piled up.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những bao phân bón được xếp chồng lên nhau.\n"
+"<CLT>"
 
 #. <CLT 4>色々あるんだな。
 #. 用途によって使い分けてるんだろうか…
@@ -125,7 +129,7 @@ msgstr ""
 #. はい
 msgctxt "0014 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"

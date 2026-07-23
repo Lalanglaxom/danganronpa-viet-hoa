@@ -14,7 +14,7 @@ msgstr ""
 #. はい
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0002 | CHOICE/RE:ACT"
@@ -117,6 +117,9 @@ msgid ""
 "idea.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng phòng của mình quá nhỏ... nên mình đã từ bỏ ý\n"
+"định đó rồi.\n"
+"<CLT>"
 
 #. <CLT 4>テーブルに関して感想を言えと言われても、
 #. 正直、困ってしまうな…
@@ -152,7 +155,7 @@ msgstr ""
 #. はい
 msgctxt "0016 | CHOICE/RE:ACT"
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #. いいえ
 msgctxt "0017 | CHOICE/RE:ACT"
