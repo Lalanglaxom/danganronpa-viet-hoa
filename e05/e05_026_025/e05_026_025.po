@@ -19,6 +19,9 @@ msgid ""
 "different cold cases.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một đống báo cáo điều tra liên quan đến những\n"
+"vụ án chưa có lời giải khác nhau.\n"
+"<CLT>"
 
 #. <CLT 4>でも、今回の事件には関係ないよな…
 #. <CLT>
@@ -28,6 +31,9 @@ msgid ""
 "time...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng điều đó chẳng liên quan gì đến cuộc điều tra lần\n"
+"này của mình cả...\n"
+"<CLT>"
 
 #. <CLT 4>“真の支配者層”についての資料…
 #. 一般人が触れてはいけない世界の真実…
@@ -50,6 +56,9 @@ msgid ""
 "time...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng điều đó chẳng liên quan gì đến cuộc điều tra lần\n"
+"này của mình cả...\n"
+"<CLT>"
 
 #. ………………
 msgctxt "0005 | MAKOTO NAEGI"
@@ -111,7 +120,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0013 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>書庫から出ますか？
 #. <CLT>

@@ -20,6 +20,9 @@ msgid ""
 "does there need to be one in the kitchen...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trong những chiếc màn hình mà Monokuma hay xuất hiện.\n"
+"Tại sao trong nhà bếp mà cũng cần có một cái cơ chứ...?\n"
+"<CLT>"
 
 #. <CLT 4>監視カメラ…
 #. こんな物…厨房にまで置かなくったって…
@@ -81,6 +84,8 @@ msgid ""
 "<CLT 4>There's a bunch of vegetables all piled up.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một đống rau củ chất thành chồng.\n"
+"<CLT>"
 
 #. <CLT 4>でも、ここでの食事ともおさらばだ！
 #. <CLT>
@@ -98,7 +103,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>厨房から出ますか？
 #. <CLT>

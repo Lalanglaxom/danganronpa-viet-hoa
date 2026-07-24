@@ -17,6 +17,8 @@ msgid ""
 "This is where the bathroom cleaning supplies are\n"
 "stored."
 msgstr ""
+"<CLT 4>Đây là nơi cất giữ các dụng cụ vệ sinh phòng tắm.\n"
+"<CLT>"
 
 #. <CLT 4>この向こうには、隠し部屋があるけど…
 #. 頻繁に出入りしないほうがいいよな…
@@ -39,7 +41,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0004 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>

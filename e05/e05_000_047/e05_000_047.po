@@ -27,6 +27,9 @@ msgid ""
 "stuff...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Họ chắc hẳn dùng những thứ này cho các thí nghiệm vật lý\n"
+"và đại loại vậy...\n"
+"<CLT>"
 
 #. <CLT 4>資料の他にも滑車やプレート、
 #. 磁石や見た事のない機器が並んでる…
@@ -37,6 +40,9 @@ msgid ""
 "all kinds of stuff I don't even recognize.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có các vật liệu, ròng rọc, tấm thép, nam châm và đủ loại\n"
+"thứ mà mình thậm chí còn chẳng nhận ra được.\n"
+"<CLT>"
 
 #. <CLT 4>なんかの機械って事はわかるけど…
 #. <CLT>
@@ -70,7 +76,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0007 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>

@@ -19,6 +19,9 @@ msgid ""
 "different cold cases.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một đống báo cáo điều tra liên quan đến những\n"
+"vụ án chưa có lời giải khác nhau.\n"
+"<CLT>"
 
 #. <CLT 4>ボクが関わるべき事じゃないよな…
 #. <CLT>
@@ -70,6 +73,8 @@ msgid ""
 "But if it means someone comes after *me*? Nope. I'll\n"
 "leave it where it is, thank you very much."
 msgstr ""
+"Nhưng nếu điều đó đồng nghĩa với việc ai đó sẽ săn đuổi *mình*?\n"
+"Thôi xin. Mình sẽ cứ để nó ở yên đó thôi, cảm ơn nhiều nhé."
 
 #. <CLT 4>電気スタンドだ…
 #. だから、どうしたんだ。
@@ -98,7 +103,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0011 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>書庫から出ますか？
 #. <CLT>

@@ -118,6 +118,8 @@ msgid ""
 "<CLT 4>This is the desk I woke up on when I first got here.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là chiếc bàn mà mình đã tỉnh dậy khi mới tới đây.\n"
+"<CLT>"
 
 #. <CLT 4>あれが始まりで…
 #. そして、もうすぐ終わるんだ。
@@ -137,7 +139,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
@@ -157,7 +159,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0015 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>

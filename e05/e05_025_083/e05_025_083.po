@@ -243,6 +243,9 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Lời khai của Byakuya<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"trong sổ học sinh của bạn.\n"
+"<CLT>"
 
 #. <CLT 4>よし、始めるぞ。
 #. 気になる所を片っ端から調べていくんだ。
@@ -321,7 +324,7 @@ msgstr ""
 #. ねぇ、十神クン…
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "Hey, um...Byakuya?"
-msgstr ""
+msgstr "Này, ừm... Byakuya?"
 
 #. アリバイの言い訳なら後で聞く。
 #. 学級裁判の時にな…
@@ -849,7 +852,7 @@ msgstr ""
 #. え……？
 msgctxt "0118 | YASUHIRO HAGAKURE"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. あぁぁぁあああああッ！！
 msgctxt "0119 | YASUHIRO HAGAKURE"
@@ -1258,6 +1261,8 @@ msgid ""
 "<CLT 4>That's it!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Chính là nó!\n"
+"<CLT>"
 
 #. <CLT 4>あの時の…あいつが手にしていたナイフ…！
 #. <CLT>
@@ -1440,7 +1445,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0190 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>

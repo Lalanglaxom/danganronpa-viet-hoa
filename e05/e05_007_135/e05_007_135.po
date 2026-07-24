@@ -557,7 +557,7 @@ msgstr ""
 #. う、うん…
 msgctxt "0083 | MAKOTO NAEGI"
 msgid "O-Okay..."
-msgstr ""
+msgstr "Ừ-Ừm..."
 
 #. <CLT 4>どっちにしろ、あのモノクマフラワーがあるってだけで
 #. ボクはちょっとな…
@@ -913,17 +913,17 @@ msgstr ""
 #. え…？
 msgctxt "0138 | TOUKO FUKAWA"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. え…？
 msgctxt "0139 | TOUKO FUKAWA"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. え…？
 msgctxt "0140 | TOUKO FUKAWA"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. 白夜様が…あ、あたしを褒めて…？
 msgctxt "0141 | TOUKO FUKAWA"
@@ -1223,6 +1223,8 @@ msgstr ""
 msgctxt "0187 | BYAKUYA TOGAMI"
 msgid "If that's true..."
 msgstr ""
+"<CLT 4>Nếu điều đó là thật...\n"
+"<CLT>"
 
 #. その事件のせいで、希望ヶ峰学園が
 #. 閉鎖に追い込まれた事にも説明が付けられるはずだ。
@@ -1338,6 +1340,8 @@ msgstr ""
 msgctxt "0202 | BYAKUYA TOGAMI"
 msgid "If that's true..."
 msgstr ""
+"<CLT 4>Nếu điều đó là thật...\n"
+"<CLT>"
 
 #. その事件のせいで、希望ヶ峰学園が
 #. 閉鎖に追い込まれた事にも説明が付けられるはずだ。
@@ -1419,7 +1423,7 @@ msgstr ""
 #. そうだな…
 msgctxt "0212 | BYAKUYA TOGAMI"
 msgid "Well..."
-msgstr ""
+msgstr "Chà..."
 
 #. 今日から、お前らは俺の支配下に入る訳だが、
 #. その前にハッキリさせておきたい事がある。
@@ -1567,7 +1571,7 @@ msgstr ""
 #. ど、どういう意味だべ…？
 msgctxt "0236 | YASUHIRO HAGAKURE"
 msgid "Wh-What do you mean...?"
-msgstr ""
+msgstr "Ý-Ý cậu là sao...?"
 
 #. 覚えてないのよ…
 msgctxt "0237 | KYOUKO KIRIGIRI"
@@ -1773,7 +1777,7 @@ msgstr ""
 #. …へ？
 msgctxt "0269 | YASUHIRO HAGAKURE"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. ここでの生活が<CLT 3>“全部悪い事ばかり”<CLT>って、
 #. 本当に言い切れるのかしらね…？
@@ -1786,7 +1790,7 @@ msgstr ""
 #. ど、どういう意味…？
 msgctxt "0271 | MAKOTO NAEGI"
 msgid "Wh-What do you mean...?"
-msgstr ""
+msgstr "Ý-Ý cậu là sao...?"
 
 #. ………………
 msgctxt "0272 | KYOUKO KIRIGIRI"
@@ -1958,7 +1962,7 @@ msgstr ""
 #. うおッ！！
 msgctxt "0295 | YASUHIRO HAGAKURE"
 msgid "Uwah!"
-msgstr ""
+msgstr "U quaa!"
 
 #. な、なんだべ？　急にでかい声出すなって！
 msgctxt "0296 | YASUHIRO HAGAKURE"
@@ -2118,11 +2122,13 @@ msgid ""
 "Mm, ahem, this is a school announcement. It is now 10\n"
 "p.m."
 msgstr ""
+"E hèm, thông báo từ nhà trường đây. Hiện tại đã là\n"
+"10 giờ tối."
 
 #. ただいまより、<CLT 3>“夜時間”<CLT>になります。
 msgctxt "0321 | MONOKUMA"
 msgid "As such, it is officially <CLT 3>nighttime<CLT>."
-msgstr ""
+msgstr "Vì thế, kể từ bây giờ sẽ chính thức là <CLT 3>giờ ban đêm<CLT>."
 
 #. 間もなく、食堂はドアをロックされますので、
 #. 立ち入り禁止となりま～す。

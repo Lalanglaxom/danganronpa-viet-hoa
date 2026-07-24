@@ -53,6 +53,8 @@ msgid ""
 "A huge machine like this... Could it really be *just*\n"
 "an air purifier?"
 msgstr ""
+"Một cỗ máy to lớn thế này... Liệu nó có thực sự *chỉ*\n"
+"là một chiếc máy lọc không khí không?"
 
 #. <CLT 4>物理の実験とかで使う物か…？
 #. <CLT>
@@ -62,6 +64,9 @@ msgid ""
 "stuff...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Họ chắc hẳn dùng những thứ này cho các thí nghiệm vật lý\n"
+"và đại loại vậy...\n"
+"<CLT>"
 
 #. <CLT 4>資料の他にも滑車やプレート、
 #. 磁石や見た事のない機器が並んでる…
@@ -72,6 +77,9 @@ msgid ""
 "all kinds of stuff I don't even recognize.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có các vật liệu, ròng rọc, tấm thép, nam châm và đủ loại\n"
+"thứ mà mình thậm chí còn chẳng nhận ra được.\n"
+"<CLT>"
 
 #. <CLT 4>機械の稼働音が…ボクに語りかけてくるようだ…
 #. <CLT>
@@ -120,7 +128,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0012 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>

@@ -230,6 +230,8 @@ msgid ""
 "...I don't see anything suspicious about the door\n"
 "itself."
 msgstr ""
+"...Bản thân cánh cửa hình như không có điểm gì đáng\n"
+"ngờ cả."
 
 #. <CLT 4>雑誌が収納されている棚にも、
 #. 新しい手掛かりがあるって言ってたっけ…
@@ -730,7 +732,7 @@ msgctxt "0093 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>Umm...\n"
 "<CLT>"
-msgstr ""
+msgstr "Ờm..."
 
 #. ねぇ、霧切さん。
 #. 教えてもらうってのは駄目なのかな？
@@ -1015,7 +1017,7 @@ msgstr ""
 #. あれ…！？
 msgctxt "0135 | MAKOTO NAEGI"
 msgid "Huh...?"
-msgstr ""
+msgstr "Hả...?"
 
 #. ボクが<CLT 3>集めた破片の方が重い<CLT>！？
 msgctxt "0136 | MAKOTO NAEGI"
@@ -1025,7 +1027,7 @@ msgstr ""
 #. そんな…どうして…！？
 msgctxt "0137 | MAKOTO NAEGI"
 msgid "H-How is that possible...?"
-msgstr ""
+msgstr "S-Sao có thể như thế được...?"
 
 #. …やっぱりそうだったのね。
 msgctxt "0138 | KYOUKO KIRIGIRI"
@@ -1129,7 +1131,7 @@ msgctxt "0151 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>What does that mean...?\n"
 "<CLT>"
-msgstr ""
+msgstr "<CLT 4>Chuyện đó... nghĩa là sao?<CLT>"
 
 #. <CLT 3>実験の結果<CLT>と<CLT 3>モノクマボトルの規則性<CLT>…
 #. それらを併せて考えてみれば…
@@ -1406,6 +1408,8 @@ msgstr ""
 msgctxt "0191 | KYOUKO KIRIGIRI"
 msgid "And..."
 msgstr ""
+"<CLT 4>Và...\n"
+"<CLT>"
 
 #. 殺された彼女の<CLT 3>両手はキレイなまま<CLT>だったわ。
 #. 指先に血痕すら付いていない状態だったのよ…
@@ -1599,6 +1603,8 @@ msgid ""
 "<CLT 4>But still, this protein can...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng mà, cái bình protein này...\n"
+"<CLT>"
 
 #. <CLT 4><CLT><CLT 3>“化学室Ａ－２”<CLT><CLT 4>ってラベルが貼られている…
 #. <CLT>
@@ -1729,7 +1735,7 @@ msgstr "Có"
 #. いいえ
 msgctxt "0230 | CHOICE/RE:ACT"
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #. <CLT 23>外に出ますか？
 #. <CLT>
