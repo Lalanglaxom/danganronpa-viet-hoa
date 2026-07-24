@@ -1,0 +1,41 @@
+--- Gemini Translation Raw Output for e04_002_135.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧食堂で朝食を済ませた後、
+#. ボクらは、さっそく探索に取り掛かる事となった。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧We began our search as soon as we'd finished our\n"
+"breakfast in the dining hall.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧新しく行けるようになった場所…
+#. そこに何があるのか確かめる為に…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧We had to find out what had opened up, what was\n"
+"waiting for us...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0004 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ngay sau khi dùng xong bữa sáng ở phòng ăn, chúng mình bắt tay vào việc khám phá ngay lập tức.\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Chúng mình phải tìm hiểu xem nơi nào vừa mới được mở ra, những gì đang chờ đợi bọn mình ở đó...\n⟦CLT⟧"
+
+msgctxt "0004 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Post Trial Search
+

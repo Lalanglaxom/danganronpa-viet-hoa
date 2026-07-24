@@ -1,0 +1,46 @@
+--- Gemini Translation Raw Output for e04_000_026.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧物騒な物だけど…事件には関係ないな…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It seems dangerous... And it has nothing to do with\n"
+"what's going on.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧特に気になる物はないな…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't see anything all that interesting here...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧事件には関係なさそうだ…
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧Doesn't seem related to the case..."
+msgstr ""
+
+#. いいえ
+msgctxt "0014 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thấy có vẻ nguy hiểm... Nhưng nó chẳng liên quan gì đến chuyện đang xảy ra cả.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không thấy có gì đáng chú ý ở đây cả...\n⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có vẻ không liên quan gì đến vụ án..."
+
+msgctxt "0014 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Unrelated Evidence Inspect
+

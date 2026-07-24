@@ -9,85 +9,117 @@ from typing import Iterable
 from .discovery import iter_po_files
 from .models import POEntry, POFile, ReplacementChange, ReplacementRule
 from .po_io import load_po, save_po
+from .text_utils import search_replace_pairs
 
 CLT_BLOCK_RE_TEMPLATE = r"(<CLT\s+{clt_id}>)(.*?)(<CLT>)"
 TAG_RE = re.compile(r"<[^>]+>")
 
 
 def _make_rule_id(find: str, replace: str, speaker: str | None, idx: int) -> str:
+    """Create an internal log label; IDs are no longer stored in the rules file."""
     base = f"{speaker or 'global'}_{find}_to_{replace}".lower()
     base = re.sub(r"[^a-z0-9_]+", "_", base).strip("_")
     return f"{base or 'rule'}_{idx:03d}"
 
 
 def _rule_from_dict(data: dict, idx: int) -> ReplacementRule:
+    find = unicodedata.normalize("NFC", str(data.get("find", "")))
+    replace = unicodedata.normalize("NFC", str(data.get("replace", "")))
     return ReplacementRule(
-        id=str(data.get("id") or data.get("label") or _make_rule_id(str(data.get("find", "")), str(data.get("replace", "")), data.get("speaker") or data.get("character"), idx)),
+        # Kept only for change logs and backwards-compatible model usage.
+        id=_make_rule_id(find, replace, data.get("speaker") or data.get("character"), idx),
         enabled=bool(data.get("enabled", True)),
-        priority=int(data.get("priority", 100)),
+        # Position is the priority now: weak rules are first, strong rules last.
+        priority=idx,
         speaker=data.get("speaker", data.get("character")),
         scope=data.get("scope"),
-        find=unicodedata.normalize("NFC", str(data.get("find", ""))),
-        replace=unicodedata.normalize("NFC", str(data.get("replace", ""))),
+        find=find,
+        replace=replace,
         whole_word=bool(data.get("whole_word", False)),
         case_sensitive=bool(data.get("case_sensitive", True)),
         stop_after=bool(data.get("stop_after", False)),
-        notes=str(data.get("notes", "")),
+        notes=str(data.get("notes", data.get("label", ""))),
     )
 
 
+def _ordered_rule_items(raw: object) -> list[dict]:
+    """Return rule dictionaries in weak-to-strong execution order.
+
+    Version 3+ files already use list position. Older files with numeric
+    priorities are migrated by sorting low priority first and high priority
+    last, preserving file order for ties.
+    """
+    version = int(raw.get("version", 0) or 0) if isinstance(raw, dict) else 0
+    items = raw.get("rules", raw) if isinstance(raw, dict) else raw
+    if not isinstance(items, list):
+        return []
+    records = [(index, item) for index, item in enumerate(items) if isinstance(item, dict)]
+    if version >= 3 or not any("priority" in item for _index, item in records):
+        return [item for _index, item in records]
+
+    def legacy_priority(record: tuple[int, dict]) -> tuple[int, int]:
+        index, item = record
+        try:
+            value = int(item.get("priority", 100))
+        except (TypeError, ValueError):
+            value = 100
+        return value, index
+
+    return [item for _index, item in sorted(records, key=legacy_priority)]
+
+
 def load_rules(path: str | Path) -> list[ReplacementRule]:
-    """Load new rules format or import the old mass_replace_rules.json format."""
+    """Load ordered rules or import the old mass-replace rules format."""
     p = Path(path)
     if not p.exists():
         return []
     raw = json.loads(p.read_text(encoding="utf-8"))
-    items = raw.get("rules", raw) if isinstance(raw, dict) else raw
+    items = _ordered_rule_items(raw)
     rules: list[ReplacementRule] = []
     idx = 0
     for item in items:
-        if not isinstance(item, dict):
-            continue
-        # Legacy format: one criteria contains replace=[[find, replace], ...]
-        if "replace" in item and isinstance(item["replace"], list) and item["replace"] and isinstance(item["replace"][0], list):
-            for pair in item.get("replace", []):
-                if not isinstance(pair, list | tuple) or len(pair) != 2:
+        # Legacy format: one criteria contains replace=[[find, replace], ...].
+        legacy_pairs = item.get("replace")
+        if isinstance(legacy_pairs, list) and legacy_pairs and isinstance(legacy_pairs[0], (list, tuple)):
+            for pair in legacy_pairs:
+                if not isinstance(pair, (list, tuple)) or len(pair) != 2:
                     continue
                 idx += 1
                 rules.append(
-                    ReplacementRule(
-                        id=_make_rule_id(str(pair[0]), str(pair[1]), item.get("character"), idx),
-                        enabled=bool(item.get("enabled", True)),
-                        priority=int(item.get("priority", 100)),
-                        speaker=item.get("speaker", item.get("character")),
-                        scope=item.get("scope"),
-                        find=unicodedata.normalize("NFC", str(pair[0])),
-                        replace=unicodedata.normalize("NFC", str(pair[1])),
-                        whole_word=bool(item.get("whole_word", False)),
-                        case_sensitive=bool(item.get("case_sensitive", True)),
-                        stop_after=bool(item.get("stop_after", False)),
-                        notes=str(item.get("label", item.get("notes", ""))),
+                    _rule_from_dict(
+                        {
+                            "enabled": item.get("enabled", True),
+                            "speaker": item.get("speaker", item.get("character")),
+                            "scope": item.get("scope"),
+                            "find": pair[0],
+                            "replace": pair[1],
+                            "whole_word": item.get("whole_word", False),
+                            "case_sensitive": item.get("case_sensitive", True),
+                            "stop_after": item.get("stop_after", False),
+                            "notes": item.get("label", item.get("notes", "")),
+                        },
+                        idx,
                     )
                 )
             continue
         idx += 1
         rules.append(_rule_from_dict(item, idx))
-    return sorted([r for r in rules if r.find], key=lambda r: (-r.priority, r.id))
+    return [rule for rule in rules if search_replace_pairs(rule.find, rule.replace)]
 
 
 def save_rules(path: str | Path, rules: Iterable[ReplacementRule]) -> None:
     p = Path(path)
-    data = {"version": 2, "rules": [rule_to_dict(r) for r in rules]}
+    p.parent.mkdir(parents=True, exist_ok=True)
+    data = {"version": 3, "rules": [rule_to_dict(rule) for rule in rules]}
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def rule_to_dict(rule: ReplacementRule) -> dict:
+    """Serialize only user-editable rule fields; order supplies priority."""
     return {
-        "id": rule.id,
         "enabled": rule.enabled,
-        "priority": rule.priority,
-        "speaker": rule.speaker,
-        "scope": rule.scope,
+        "speaker": rule.speaker or "",
+        "scope": rule.scope or "",
         "find": rule.find,
         "replace": rule.replace,
         "whole_word": rule.whole_word,
@@ -111,20 +143,28 @@ def _compile_find(find: str, whole_word: bool, case_sensitive: bool) -> re.Patte
     return re.compile(pattern, flags)
 
 
+def _replace_pairs_in_plain_text(text: str, rule: ReplacementRule) -> tuple[str, int]:
+    total = 0
+    updated = text
+    for find, replace in search_replace_pairs(rule.find, rule.replace):
+        pattern = _compile_find(find, rule.whole_word, rule.case_sensitive)
+        updated, count = pattern.subn(lambda _match, value=replace: value, updated)
+        total += count
+    return updated, total
+
+
 def _replace_outside_tags(text: str, rule: ReplacementRule) -> tuple[str, int]:
-    pattern = _compile_find(rule.find, rule.whole_word, rule.case_sensitive)
     total = 0
     result: list[str] = []
     last = 0
     for tag in TAG_RE.finditer(text):
-        chunk = text[last:tag.start()]
-        new_chunk, n = pattern.subn(rule.replace, chunk)
-        total += n
-        result.append(new_chunk)
+        chunk, count = _replace_pairs_in_plain_text(text[last:tag.start()], rule)
+        total += count
+        result.append(chunk)
         result.append(tag.group(0))
         last = tag.end()
-    tail, n = pattern.subn(rule.replace, text[last:])
-    total += n
+    tail, count = _replace_pairs_in_plain_text(text[last:], rule)
+    total += count
     result.append(tail)
     return "".join(result), total
 
@@ -141,17 +181,18 @@ def _replace_in_scope(text: str, rule: ReplacementRule) -> tuple[str, int]:
     def repl(match: re.Match[str]) -> str:
         nonlocal total
         start, content, end = match.groups()
-        new_content, n = _replace_outside_tags(content, rule)
-        total += n
+        new_content, count = _replace_outside_tags(content, rule)
+        total += count
         return start + new_content + end
 
     return block_re.sub(repl, text), total
 
 
 def apply_rules_to_entry(entry: POEntry, rules: Iterable[ReplacementRule]) -> tuple[str, list[tuple[ReplacementRule, int, str, str]]]:
+    """Apply enabled rules from top to bottom; lower rules are stronger."""
     text = entry.msgstr
     hits: list[tuple[ReplacementRule, int, str, str]] = []
-    for rule in sorted((r for r in rules if r.enabled), key=lambda r: (-r.priority, r.id)):
+    for rule in (candidate for candidate in rules if candidate.enabled):
         if not _speaker_matches(entry, rule):
             continue
         before = text
@@ -166,8 +207,9 @@ def apply_rules_to_entry(entry: POEntry, rules: Iterable[ReplacementRule]) -> tu
 def apply_rules_to_po(po_file: POFile, rules: Iterable[ReplacementRule], file_path: Path | None = None) -> list[ReplacementChange]:
     changes: list[ReplacementChange] = []
     fpath = file_path or po_file.path or Path("")
+    rules_list = list(rules)
     for entry in po_file.entries:
-        new_msgstr, hits = apply_rules_to_entry(entry, rules)
+        new_msgstr, hits = apply_rules_to_entry(entry, rules_list)
         if not hits:
             continue
         for rule, count, before, after in hits:
@@ -196,6 +238,7 @@ def apply_rules_to_file(path: str | Path, rules: Iterable[ReplacementRule], dry_
 
 def apply_rules_to_path(path: str | Path, rules: Iterable[ReplacementRule], dry_run: bool = False) -> list[ReplacementChange]:
     all_changes: list[ReplacementChange] = []
+    rules_list = list(rules)
     for po_path in iter_po_files(path):
-        all_changes.extend(apply_rules_to_file(po_path, rules, dry_run=dry_run))
+        all_changes.extend(apply_rules_to_file(po_path, rules_list, dry_run=dry_run))
     return all_changes

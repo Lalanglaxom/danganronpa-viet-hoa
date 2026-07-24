@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. <CLT 23>「キーン、コーン…　カーン、コーン」
+#. <CLT>
+msgctxt "0001 | NARRATION"
+msgid ""
+"<CLT 23>*Ding dong, bing bong*\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>“Bíng bong, bing bong”\n"
+"<CLT>"
+
+#. 校内放送、校内放送……
+msgctxt "0002 | MONOKUMA"
+msgid "Attention! Attention!"
+msgstr "Thông báo! Thông báo đây...!"
+
+#. 至急…体育館までお集まりください……
+msgctxt "0003 | MONOKUMA"
+msgid "Please gather in the gym as soon as you possibly can!"
+msgstr "Tất cả khẩn trương tập hợp tại phòng thể chất ngay lập tức...!"
+
+#. 至急…至急…至急…至急…！
+msgctxt "0004 | MONOKUMA"
+msgid "Quickly, quickly, quickly, quickly!"
+msgstr "Nhanh lên, nhanh lên, nhanh lên, nhanh lên...!"
+
+#. <CLT 4>体育館への…集合アナウンス…？
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>He made a special announcement...to ask us to come to\n"
+"the gym?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nó vừa phát thông báo đặc biệt... yêu cầu bọn mình đến phòng thể chất sao?\n"
+"<CLT>"
+
+#. <CLT 4>しかも…やけにシリアスな感じだったけど…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And he sounded pretty serious about it, too...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hơn nữa... nghe giọng nó có vẻ khá là nghiêm trọng đấy...\n"
+"<CLT>"
+
+#. はい
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0008 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

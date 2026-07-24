@@ -1,0 +1,31 @@
+--- Gemini Translation Raw Output for e04_000_011.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 部屋が元通りになってる…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "The room's back to how it was before."
+msgstr ""
+
+#. モノクマがやったんだな…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "This must be Monokuma's doing..."
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Căn phòng đã trở lại như trước rồi."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Chuyện này hẳn là do Monokuma làm rồi..."
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Restored Room Inspect
+

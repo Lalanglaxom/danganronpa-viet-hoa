@@ -1,0 +1,26 @@
+--- Gemini Translation Raw Output for e04_000_014.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧初日に、ボクが突っ伏していた机…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the desk I woke up on when I first got here.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là chiếc bàn mà mình đã tỉnh dậy khi mới tới đây.\n⟦CLT⟧"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Classroom Desk Inspect
+

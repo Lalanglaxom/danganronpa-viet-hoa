@@ -1,0 +1,28 @@
+--- Gemini Translation Raw Output for e04_000_063.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧かなり大きな棚だな…
+#. 棚いっぱいに薬品が詰め込まれている…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a remarkably big shelf. And it's stocked with all\n"
+"kinds of medicine...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đó là một cái kệ lớn đáng kinh ngạc. Và nó chất đầy đủ các loại thuốc...\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Medicine Shelf Inspect
+

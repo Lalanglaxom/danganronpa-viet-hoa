@@ -1,0 +1,28 @@
+--- Gemini Translation Raw Output for e04_000_037.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧男子に人気のグラビアアイドル…
+#. ダイヤモンドＹＵＫＡのポスターだ…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The poster has a super famous supermodel. Her name is\n"
+"Diamond Yuka, I think...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tấm áp phích có hình một siêu mẫu cực kỳ nổi tiếng. Mình nghĩ tên cô ấy là Diamond Yuka...\n⟦CLT⟧"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Diamond Yuka Poster
+

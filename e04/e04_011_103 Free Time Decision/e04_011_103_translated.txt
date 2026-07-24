@@ -1,0 +1,66 @@
+--- Gemini Translation Raw Output for e04_011_103.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ふぅ…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Whew..."
+msgstr ""
+
+#. ⟦CLT 4⟧今日はこれから…どうしよう…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧So, what should I do today?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧まだ、時間はあるな…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I have plenty of time...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧じっとしている気分じゃないし、
+#. どこかに行ってみようかな…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't feel like just sitting here. I should go\n"
+"somewhere...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. いいえ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Phù..."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thế thì, hôm nay mình nên làm gì đây?\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Vẫn còn nhiều thời gian mà...\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình không muốn cứ ngồi thẫn thờ một chỗ thế này. Chắc phải đi đâu đó thôi...\n⟦CLT⟧"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0010 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Free Time Decision
+

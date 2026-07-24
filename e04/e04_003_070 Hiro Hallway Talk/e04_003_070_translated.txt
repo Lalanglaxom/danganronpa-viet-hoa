@@ -1,0 +1,26 @@
+--- Gemini Translation Raw Output for e04_003_070.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ここの階、解放されたはいいけど
+#. 鍵が掛かってる部屋が多いべ…
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid ""
+"I'm glad this floor got opened up and all, but...\n"
+"there's like a ton of locked rooms up here!"
+msgstr ""
+
+#. いいえ
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgstr "Tớ cũng mừng vì tầng này đã được mở rồi, nhưng mà...\nở trên này có cả đống phòng bị khóa luôn!"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Hiro Hallway Talk
+

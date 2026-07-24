@@ -1,0 +1,78 @@
+--- Gemini Translation Raw Output for e04_000_140.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧ここの棚には、食べ物が並んでいる…
+#. 食料の心配はなさそうだ。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's all different kinds of food stacked up. I\n"
+"guess we don't have to worry about our next meal...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここの棚には、食べ物が並んでいる…
+#. 料理の食材からお菓子まで、よりどりみどりだ。
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's all kinds of food here. From ingredients to\n"
+"candy—they've got everything.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここから帰ったら料理もやってみよう…
+#. 家族と一緒に…！
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧When I get outta here...I'm gonna cook a nice meal\n"
+"with my whole family!\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. でも、その代償が、
+#. ここでの生活だけど…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"Of course...I don't think that's worth the cost of\n"
+"having to live here..."
+msgstr ""
+
+#. ⟦CLT 4⟧でも、その代償が、
+#. ここでの生活だけど…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Of course...I don't think that's worth the cost of\n"
+"having to live here...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0010 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có đủ loại thực phẩm được xếp chồng lên nhau. Đoán là bọn mình không phải lo lắng về bữa ăn tiếp theo rồi...\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Ở đây có đủ loại thực phẩm. Từ nguyên liệu nấu ăn cho đến bánh kẹo—cái gì họ cũng có.\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Khi thoát khỏi đây... mình sẽ nấu một bữa thật ngon cùng với cả gia đình!\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "Dĩ nhiên... mình không nghĩ điều đó đáng để đánh đổi bằng việc phải sống ở đây..."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dĩ nhiên... mình không nghĩ điều đó đáng để đánh đổi bằng việc phải sống ở đây...\n⟦CLT⟧"
+
+msgctxt "0010 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Kitchen Food Inspect
+

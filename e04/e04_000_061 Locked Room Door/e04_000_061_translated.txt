@@ -1,0 +1,43 @@
+--- Gemini Translation Raw Output for e04_000_061.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧駄目だ、鍵が掛かってる。
+#. ここには入れないみたいだ。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧No good—the door's locked. I guess I won't be getting\n"
+"in here...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ドアの表札には“学園長室”ってある。
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The nameplate on the door says \"Headmaster's Room.\"\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧階段…なんだろうけど……
+#. シャッターが降りてる。
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It looks like more stairs, but...the gate's locked.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không xong rồi—cửa đã bị khóa. Mình đoán là mình không vào được đây rồi...\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Biển tên trên cửa ghi \"Phòng Hiệu Trưởng.\"\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có vẻ như còn nhiều cầu thang nữa, nhưng... cổng sắt đã bị khóa rồi.\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Locked Room Door
+

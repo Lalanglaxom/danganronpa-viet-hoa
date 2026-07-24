@@ -1,0 +1,35 @@
+--- Gemini Translation Raw Output for e04_000_006.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. あれ…？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr ""
+
+#. ⟦CLT 4⟧いや…あんな物…
+#. ない方がいいよな…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But...I think it's better that it's gone.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Hả...?"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng... mình nghĩ tốt hơn là nó biến mất rồi.\n⟦CLT⟧"
+
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Missing Monokuma Statue
+

@@ -1,0 +1,70 @@
+--- Gemini Translation Raw Output for e04_000_137.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. いいえ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+#. ⟦CLT 4⟧ここはトラッシュルームだ。
+#. 今は、鉄格子がジャマで中に入れない。
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧The trash room gate is down, so I can't get inside.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、事件には関係なさそうだな…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't think it's involved in the case, anyway...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ここはトラッシュルーム…つまりゴミ捨て場だな。
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is the trash room. The dump, in other words.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧そう言えば、掃除当番の話はどうなったんだ？
+#. 誰もその話をしないけど…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Nobody's really said anything about cleaning duty\n"
+"since...everything happened.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0009 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Không"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cổng phòng chứa rác đang đóng xuống, nên mình không thể vào trong được.\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù sao thì mình cũng không nghĩ nó liên quan đến vụ án...\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là phòng chứa rác. Nói cách khác thì là bãi tập kết rác.\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Thực sự không ai nói gì về trực nhật vệ sinh kể từ khi... mọi chuyện xảy ra.\n⟦CLT⟧"
+
+msgctxt "0009 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Trash Room Inspect
+

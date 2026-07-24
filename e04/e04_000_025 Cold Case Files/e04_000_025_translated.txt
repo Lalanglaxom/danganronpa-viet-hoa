@@ -1,0 +1,106 @@
+--- Gemini Translation Raw Output for e04_000_025.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧この事件と関わりはないよな。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It has no connection to my investigation, though...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧これがすべて、未解決事件の捜査報告書か…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧These are a bunch of investigation reports related to\n"
+"different cold cases.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、今回の事件には関係ないよな…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that has nothing to do with my investigation this\n"
+"time...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧これがすべて、未解決事件の捜査報告書か…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧These are a bunch of investigation reports related to\n"
+"different cold cases.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、今回の事件には関係ないよな…
+#. ⟦CLT⟧
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But that has nothing to do with my investigation this\n"
+"time...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. でも、命を狙われるなんてごめんだ…
+#. 見ない方がいいな。
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"But if it means someone comes after *me*? Nope. I'll\n"
+"leave it where it is, thank you very much."
+msgstr ""
+
+#. 今回の事件にも、関係なさそうだし…
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"Plus, it doesn't seem to have any connection to my\n"
+"investigation right now."
+msgstr ""
+
+#. でも、命を狙われるなんてごめんだ…
+#. 見ない方がいいな。
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"But if it means *I* become a target? Nope. I'll leave\n"
+"it where it is, thank you very much."
+msgstr ""
+
+#. いいえ
+msgctxt "0021 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Dù vậy, nó không có liên quan gì đến cuộc điều tra của mình...\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một đống báo cáo điều tra liên quan đến các vụ án chưa có lời giải khác nhau.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng điều đó chẳng liên quan gì đến cuộc điều tra lần này của mình cả...\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là một đống báo cáo điều tra liên quan đến các vụ án chưa có lời giải khác nhau.\n⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng điều đó chẳng liên quan gì đến cuộc điều tra lần này của mình cả...\n⟦CLT⟧"
+
+msgctxt "0016 | MAKOTO NAEGI"
+msgstr "Nhưng nếu điều đó có nghĩa là ai đó sẽ nhắm vào *mình*? Thôi xin hàng. Cảm ơn nhiều nhé, mình sẽ để nó yên ở nguyên vị trí cũ."
+
+msgctxt "0017 | MAKOTO NAEGI"
+msgstr "Thêm nữa, nó có vẻ không có mối liên hệ nào với cuộc điều tra hiện tại của mình."
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "Nhưng nếu điều đó có nghĩa là *mình* trở thành mục tiêu? Thôi xin hàng. Cảm ơn nhiều nhé, mình sẽ để nó yên ở nguyên vị trí cũ."
+
+msgctxt "0021 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Cold Case Files
+

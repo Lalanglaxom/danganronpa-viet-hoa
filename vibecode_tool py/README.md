@@ -10,8 +10,9 @@ That removes the old problem where each script parsed PO files differently.
 - One package: `dr_po_toolkit`
 - One PO parser/writer: `po_io.py`
 - Safer translation flow: Gemini returns JSON, not PO text
-- Replacer rules are editable through the GUI Rule Editor
-- Rule format now has priority, enabled flag, speaker filter, CLT scope, whole-word, case sensitivity
+- Replacement rules and Mass Replace are combined in the GUI `Rules & Replace` tab
+- Rule list order is weak-to-strong from top to bottom, with drag-and-drop reordering and no stored ID/priority fields
+- One rule supports multiple ordered find/replace pairs separated by `;` (`\;` inserts a literal semicolon)
 - Validator checks source drift, missing entries, duplicate contexts, CLT tags, placeholders, Unicode, whitespace
 - Line wrapper only touches `msgstr`
 - New GUI `Translafixer` tab copies known-good translations by matching original `msgid` text
@@ -103,10 +104,11 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 3. English/original text is read-only. Edit only the Vietnamese side, either in the table or in the bottom Vietnamese editor.
 4. `Visual wrap` toggles display wrapping without changing the file.
 5. Four compact wrap presets are available in Search, PO Viewer, and duplicate/diff views. Each Wrap button shows only its soft-cut value. Preset 1 is the fixed base-64 preset (`58/64`, 2 cuts); edit presets 2-4 in the Line Wrap tab. `All` wraps the whole current file with the active preset.
-6. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
-7. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
-8. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
-9. Use `Shift+Up` / `Shift+Down` to switch files. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
+6. `Preset Replace` applies every enabled rule from `Rules & Replace` to the selected rows, or the current row when nothing is selected. Search saves immediately; PO Viewer and duplicate/diff views keep their normal undo/save flow.
+7. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
+8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
+9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
+10. Use `Shift+Up` / `Shift+Down` to switch files. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
 ## Automatic Gemini Web workflow
 
@@ -231,34 +233,29 @@ The toolkit refuses to write translations if validation fails, unless you pass:
 --allow-partial
 ```
 
-## Rule editor
+## Rules & Replace
 
-Open GUI → `Rule Editor` tab.
+Open GUI → `Rules & Replace`. The upper panel edits the same ordered rules used by the lower Mass Replace runner and by every `Preset Replace` button.
 
 Rule fields:
 
 ```json
 {
-  "id": "makoto_toi_to_to",
   "enabled": true,
-  "priority": 800,
   "speaker": "MAKOTO",
-  "scope": null,
-  "find": "Tôi",
-  "replace": "Tớ",
+  "scope": "",
+  "find": "Tôi;tôi",
+  "replace": "Tớ;tớ",
   "whole_word": true,
   "case_sensitive": true,
   "stop_after": false,
-  "notes": "Makoto pronoun"
+  "notes": "Makoto pronouns"
 }
 ```
 
-Priority order:
+Rules run from top to bottom. The top is weakest; lower rules run later and can override earlier results. Drag rows to change strength. Existing version-2 files are migrated automatically from numeric priority into this ordered version-3 format.
 
-- higher priority runs first
-- character-specific rules should usually be high, e.g. `800`
-- global cleanup rules should usually be low, e.g. `100`
-- CLT thought-style rules can sit around `500`
+Use semicolons for multiple ordered pairs in one rule. Missing replacement pieces reuse the final replacement; use `\;` for a literal semicolon.
 
 ## Recommended workflow
 

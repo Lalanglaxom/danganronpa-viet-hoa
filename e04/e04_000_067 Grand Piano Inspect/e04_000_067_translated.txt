@@ -1,0 +1,68 @@
+--- Gemini Translation Raw Output for e04_000_067.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. これは、グランドピアノか…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Is this...a grand piano?"
+msgstr ""
+
+#. ⟦CLT 4⟧事件には…関係がなさそうだな。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I...don't think it's related to the case.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. これは、グランドピアノか…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Is this...a grand piano?"
+msgstr ""
+
+#. ⟦CLT 4⟧年季が入ってるし…
+#. もしかして、結構な値打ち物なのかも…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It seems really old. I bet it's worth a lot of\n"
+"money...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、弾いてくれる人がいないんじゃ、
+#. 意味がないよな…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Of course, without someone around who can play it,\n"
+"it's totally useless.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Đây là... một chiếc đại dương cầm sao?"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Mình... không nghĩ nó liên quan đến vụ án đâu.\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Đây là... một chiếc đại dương cầm sao?"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nó trông có vẻ thực sự lâu đời rồi. Mình cá là nó trị giá rất nhiều tiền đấy...\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tất nhiên, nếu không có ai xung quanh biết chơi thì nó hoàn toàn vô dụng thôi.\n⟦CLT⟧"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Grand Piano Inspect
+

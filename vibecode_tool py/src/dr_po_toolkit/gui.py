@@ -88,9 +88,10 @@ from .gemini_web import (
     run_gemini_web_path,
 )
 from .linewrap import normalize_wrap_presets, wrap_msgstr, wrap_po_file
+from .models import POEntry
 from .notifications import play_task_notification
 from .po_io import load_po, save_po
-from .rules import apply_rules_to_file, load_rules, rule_to_dict
+from .rules import apply_rules_to_entry, apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_files
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
@@ -635,7 +636,6 @@ class ToolkitGUI(QMainWindow):
 
         self._build_validate_tab()
         self._build_replace_tab()
-        self._build_rule_editor_tab()
         self._build_linewrap_tab()
         self._build_search_tab()
         self._build_translafixer_tab()
@@ -793,6 +793,7 @@ class ToolkitGUI(QMainWindow):
             "Replace Current": "Replace matches in the current row only.",
             "Replace Selected": "Replace matches in selected rows only.",
             "Replace All": "Replace all matches in this view.",
+            "Preset Replace": "Apply all enabled ordered replacement rules to the selected/current entries.",
             "Add .po": "Add one or more PO source files.",
             "Add folder": "Add a folder containing PO files.",
             "Add Folders": "Add one or more folders.",
@@ -1351,6 +1352,19 @@ class ToolkitGUI(QMainWindow):
         if self._stop_event.is_set():
             raise OperationCancelled("Stopped by user.")
 
+    def _enabled_preset_rules(self):
+        rules_path = Path(str(self.config.get("rules_file", "rules/mass_replace_rules.json")).strip())
+        if not rules_path.exists():
+            raise FileNotFoundError(f"Rules file not found: {rules_path}")
+        return [rule for rule in load_rules(rules_path) if rule.enabled]
+
+    def _notify_task_complete(self, status: str = "success") -> None:
+        try:
+            QApplication.alert(self, 2500)
+        except Exception:
+            pass
+        play_task_notification(status, fallback=QApplication.beep)
+
     def _run_threaded(
         self,
         button: QPushButton,
@@ -1374,7 +1388,7 @@ class ToolkitGUI(QMainWindow):
             self._active_log = None
             self._active_thread = None
             self._finish_task_progress(str(outcome["label"]))
-            play_task_notification(str(outcome["status"]), fallback=QApplication.beep)
+            self._notify_task_complete(str(outcome["status"]))
             try:
                 self._active_signals.remove(signals)
             except ValueError:
@@ -1577,87 +1591,51 @@ class ToolkitGUI(QMainWindow):
 
         run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run))
 
-    # ---------------- Mass Replace ----------------
+    # ---------------- Rules + Mass Replace ----------------
     def _build_replace_tab(self) -> None:
-        _tab, layout = self._new_tab("Mass Replace")
-        self._dr_option_selector(layout, "replace")
-        path_edit, include_extra = self._extra_path_row(layout, "replace", "Extra Folder/File", "last_path")
-        rules_edit = self._path_row(layout, "Rules JSON", "rules_file", file=True)
-        row = QHBoxLayout()
-        dry_run = QCheckBox("Dry run")
-        dry_run.setChecked(True)
-        row.addWidget(dry_run)
-        row.addStretch()
-        run_btn = self._button("Run Replace")
-        row.addWidget(run_btn)
-        layout.addLayout(row)
-        log = self._make_log()
-        layout.addWidget(log, 1)
+        _tab, layout = self._new_tab("Rules & Replace")
+        intro = QLabel(
+            "Rules run from top to bottom: the top is weakest and lower rules are stronger. "
+            "Drag rules to change their order. One rule can contain ordered find/replace pairs separated by ; "
+            r"(use \; for a literal semicolon). Preset Replace buttons in editable views use enabled rules only."
+        )
+        intro.setObjectName("muted")
+        intro.setWordWrap(True)
+        layout.addWidget(intro)
 
-        def run(logwrite, progresswrite):
-            self._check_stop()
-            paths = self._processing_paths("replace", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
-            if not paths:
-                return
-            rules = load_rules(rules_edit.text().strip())
-            po_files = self._iter_unique_po_paths(paths)
-            changes = []
-            progresswrite(0, len(po_files), "Replacing PO files")
-            for file_index, po_path in enumerate(po_files, start=1):
-                self._check_stop()
-                changes.extend(apply_rules_to_file(po_path, rules, dry_run=dry_run.isChecked()))
-                progresswrite(file_index, len(po_files), f"Replace {po_path.name}")
-            logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
-            logwrite(f"Rules loaded: {len(rules)}")
-            logwrite(f"Changes: {len(changes)}", "good" if changes else "")
-            for ch in changes[:300]:
-                self._check_stop()
-                logwrite(f"{ch.file.name} | {ch.msgctxt} | {ch.rule_id} | {ch.count}")
-                logwrite(f"- {ch.before}", "warn")
-                logwrite(f"+ {ch.after}", "good")
-            if len(changes) > 300:
-                logwrite(f"... {len(changes) - 300} more changes", "warn")
-            if dry_run.isChecked():
-                logwrite("Dry run only. Uncheck Dry run to write files.", "warn")
+        main_splitter = QSplitter(Qt.Orientation.Vertical)
+        layout.addWidget(main_splitter, 1)
 
-        run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run))
-
-    # ---------------- Rule Editor ----------------
-    def _normalize_rule_dict(self, raw: dict | None = None) -> dict:
-        raw = dict(raw or {})
-        return {
-            "id": str(raw.get("id") or raw.get("label") or ""),
-            "enabled": bool(raw.get("enabled", True)),
-            "priority": int(raw.get("priority") or 100),
-            "speaker": raw.get("speaker", raw.get("character")) or "",
-            "scope": raw.get("scope") or "",
-            "find": str(raw.get("find", "")),
-            "replace": str(raw.get("replace", "")),
-            "whole_word": bool(raw.get("whole_word", False)),
-            "case_sensitive": bool(raw.get("case_sensitive", True)),
-            "stop_after": bool(raw.get("stop_after", False)),
-            "notes": str(raw.get("notes", "")),
-        }
-
-    def _build_rule_editor_tab(self) -> None:
-        _tab, layout = self._new_tab("Rule Editor")
-        top = QHBoxLayout()
-        rules_file = QLineEdit(str(self.config.get("rules_file", "rules/mass_replace_rules.json")))
+        editor_panel = QWidget()
+        editor_layout = QVBoxLayout(editor_panel)
+        editor_layout.setContentsMargins(0, 0, 0, 0)
+        editor_layout.setSpacing(6)
+        rules_edit = self._path_row(editor_layout, "Rules JSON", "rules_file", file=True)
+        file_actions = QHBoxLayout()
         load_btn = self._button("Load", secondary=True)
-        save_btn = self._button("Save", secondary=True)
-        top.addWidget(rules_file, 1)
-        top.addWidget(load_btn)
-        top.addWidget(save_btn)
-        layout.addLayout(top)
+        save_rules_btn = self._button("Save", secondary=True)
+        file_actions.addStretch()
+        file_actions.addWidget(load_btn)
+        file_actions.addWidget(save_rules_btn)
+        editor_layout.addLayout(file_actions)
 
-        splitter = QSplitter(Qt.Orientation.Horizontal)
-        layout.addWidget(splitter, 1)
+        editor_splitter = QSplitter(Qt.Orientation.Horizontal)
+        editor_layout.addWidget(editor_splitter, 1)
 
         left = QWidget()
         left_layout = QVBoxLayout(left)
         left_layout.setContentsMargins(0, 0, 8, 0)
+        order_note = QLabel("Weakest ↑   Drag to reorder   ↓ Strongest")
+        order_note.setObjectName("muted")
+        order_note.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        left_layout.addWidget(order_note)
         rule_list = QListWidget()
         rule_list.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
+        rule_list.setDragDropMode(QAbstractItemView.DragDropMode.InternalMove)
+        rule_list.setDefaultDropAction(Qt.DropAction.MoveAction)
+        rule_list.setDragEnabled(True)
+        rule_list.setAcceptDrops(True)
+        rule_list.setDropIndicatorShown(True)
         left_layout.addWidget(rule_list, 1)
         rule_buttons = QGridLayout()
         add_btn = self._button("Add Rule")
@@ -1669,100 +1647,184 @@ class ToolkitGUI(QMainWindow):
         rule_buttons.addWidget(disable_btn, 1, 0)
         rule_buttons.addWidget(delete_btn, 1, 1)
         left_layout.addLayout(rule_buttons)
-        splitter.addWidget(left)
+        editor_splitter.addWidget(left)
 
         right = QWidget()
         form = QFormLayout(right)
         form.setContentsMargins(8, 0, 0, 0)
-        form.setSpacing(8)
-        fields: dict[str, QWidget] = {}
-        for name in ["id", "priority", "speaker", "scope", "find", "replace", "notes"]:
-            edit = QLineEdit()
-            fields[name] = edit
-            form.addRow(name, edit)
-        for name in ["enabled", "whole_word", "case_sensitive", "stop_after"]:
-            chk = QCheckBox(name)
-            fields[name] = chk
-            form.addRow("", chk)
-        splitter.addWidget(right)
-        splitter.setSizes([470, 650])
+        form.setSpacing(7)
+        enabled_field = QCheckBox("Enabled")
+        speaker_field = QLineEdit()
+        speaker_field.setPlaceholderText("Optional speaker/context filter")
+        scope_field = QLineEdit()
+        scope_field.setPlaceholderText("Optional, for example clt:4")
+        find_field = QPlainTextEdit()
+        find_field.setFixedHeight(62)
+        find_field.setPlaceholderText(r"Find text; another find. Use \; for literal ;.")
+        replace_field = QPlainTextEdit()
+        replace_field.setFixedHeight(62)
+        replace_field.setPlaceholderText(r"Replacement; another replacement. Missing replacements reuse the last one.")
+        whole_field = QCheckBox("Whole word")
+        case_field = QCheckBox("Case sensitive")
+        stop_field = QCheckBox("Stop after this rule matches")
+        notes_field = QLineEdit()
+        fields: dict[str, QWidget] = {
+            "enabled": enabled_field,
+            "speaker": speaker_field,
+            "scope": scope_field,
+            "find": find_field,
+            "replace": replace_field,
+            "whole_word": whole_field,
+            "case_sensitive": case_field,
+            "stop_after": stop_field,
+            "notes": notes_field,
+        }
+        form.addRow("", enabled_field)
+        form.addRow("Speaker", speaker_field)
+        form.addRow("Scope", scope_field)
+        form.addRow("Find pair(s)", find_field)
+        form.addRow("Replace pair(s)", replace_field)
+        option_wrap = QWidget()
+        option_layout = QHBoxLayout(option_wrap)
+        option_layout.setContentsMargins(0, 0, 0, 0)
+        option_layout.addWidget(whole_field)
+        option_layout.addWidget(case_field)
+        option_layout.addStretch()
+        form.addRow("", option_wrap)
+        form.addRow("", stop_field)
+        form.addRow("Notes", notes_field)
+        editor_splitter.addWidget(right)
+        editor_splitter.setSizes([500, 650])
+        main_splitter.addWidget(editor_panel)
+
+        run_panel = QWidget()
+        run_layout = QVBoxLayout(run_panel)
+        run_layout.setContentsMargins(0, 4, 0, 0)
+        run_layout.setSpacing(6)
+        run_title = QLabel("Mass replace files")
+        run_title.setStyleSheet("font-weight:900;")
+        run_layout.addWidget(run_title)
+        self._dr_option_selector(run_layout, "replace")
+        path_edit, include_extra = self._extra_path_row(run_layout, "replace", "Extra Folder/File", "last_path")
+        run_row = QHBoxLayout()
+        dry_run = QCheckBox("Dry run")
+        dry_run.setChecked(True)
+        run_row.addWidget(dry_run)
+        run_row.addStretch()
+        run_btn = self._button("Run Replace")
+        run_row.addWidget(run_btn)
+        run_layout.addLayout(run_row)
+        log = self._make_log()
+        log.setMinimumHeight(150)
+        run_layout.addWidget(log, 1)
+        main_splitter.addWidget(run_panel)
+        main_splitter.setSizes([420, 300])
+
+        list_refreshing = {"value": False}
 
         def label_for_rule(rule: dict) -> str:
             state = "ON " if rule.get("enabled", True) else "OFF"
-            speaker = rule.get("speaker") or "GLOBAL"
-            find = rule.get("find") or "<empty>"
-            replace = rule.get("replace") or ""
-            return f"{state} | {int(rule.get('priority') or 100):>4} | {speaker:<10} | {find} → {replace}"
+            speaker_text = str(rule.get("speaker") or "GLOBAL")
+            find_text = str(rule.get("find") or "<empty>").replace("\n", r"\n")
+            replace_text = str(rule.get("replace") or "").replace("\n", r"\n")
+            if len(find_text) > 72:
+                find_text = find_text[:69] + "…"
+            if len(replace_text) > 72:
+                replace_text = replace_text[:69] + "…"
+            return f"{state} | {speaker_text:<12} | {find_text} → {replace_text}"
 
         def selected_indices() -> list[int]:
             return sorted({rule_list.row(item) for item in rule_list.selectedItems()})
 
         def selected_index() -> int | None:
+            current = rule_list.currentRow()
+            if 0 <= current < len(self.rule_list_data):
+                return current
             indices = selected_indices()
             return indices[0] if indices else None
 
+        def style_rule_item(item: QListWidgetItem, rule: dict) -> None:
+            normalized = self._normalize_rule_dict(rule)
+            item.setText(label_for_rule(normalized))
+            item.setData(Qt.ItemDataRole.UserRole, normalized)
+            item.setForeground(QColor(GOOD if normalized.get("enabled", True) else BAD))
+            item.setBackground(QColor(TEAL_DARK if normalized.get("enabled", True) else "#4a2938"))
+
         def refresh_list(keep: list[int] | None = None) -> None:
             keep = selected_indices() if keep is None else keep
+            list_refreshing["value"] = True
             rule_list.blockSignals(True)
-            rule_list.clear()
-            for rule in self.rule_list_data:
-                item = QListWidgetItem(label_for_rule(rule))
-                item.setForeground(QColor(GOOD if rule.get("enabled", True) else BAD))
-                item.setBackground(QColor(TEAL_DARK if rule.get("enabled", True) else "#4a2938"))
-                rule_list.addItem(item)
-            for i in keep:
-                if 0 <= i < rule_list.count():
-                    rule_list.item(i).setSelected(True)
-            rule_list.blockSignals(False)
+            try:
+                rule_list.clear()
+                for rule in self.rule_list_data:
+                    item = QListWidgetItem()
+                    style_rule_item(item, rule)
+                    rule_list.addItem(item)
+                for index in keep:
+                    if 0 <= index < rule_list.count():
+                        rule_list.item(index).setSelected(True)
+                if keep and 0 <= keep[0] < rule_list.count():
+                    rule_list.setCurrentRow(keep[0])
+            finally:
+                rule_list.blockSignals(False)
+                list_refreshing["value"] = False
 
         def write_rules_file(show_message: bool = False) -> None:
-            path = Path(rules_file.text().strip())
-            if not path:
+            path_text = rules_edit.text().strip()
+            if not path_text:
                 return
+            path = Path(path_text)
             path.parent.mkdir(parents=True, exist_ok=True)
-            normalized = [self._normalize_rule_dict(r) for r in self.rule_list_data]
-            path.write_text(json.dumps({"version": 2, "rules": normalized}, ensure_ascii=False, indent=2), encoding="utf-8")
+            normalized = [self._normalize_rule_dict(rule) for rule in self.rule_list_data]
+            path.write_text(
+                json.dumps({"version": 3, "rules": normalized}, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            self.rule_list_data = normalized
             self.config["rules_file"] = str(path)
             save_config(self.config)
             if show_message:
-                QMessageBox.information(self, "Rules", "Rules saved.")
+                QMessageBox.information(self, "Rules", "Rules saved in weak-to-strong order.")
+
+        def widget_value(widget: QWidget) -> object:
+            if isinstance(widget, QCheckBox):
+                return widget.isChecked()
+            if isinstance(widget, QLineEdit):
+                return widget.text()
+            if isinstance(widget, QPlainTextEdit):
+                return widget.toPlainText()
+            return ""
 
         def collect_form() -> dict:
-            data: dict = {}
-            for name, widget in fields.items():
-                if isinstance(widget, QCheckBox):
-                    data[name] = widget.isChecked()
-                elif isinstance(widget, QLineEdit):
-                    data[name] = widget.text()
-            try:
-                data["priority"] = int(data.get("priority") or 100)
-            except Exception:
-                data["priority"] = 100
-            return self._normalize_rule_dict(data)
+            return self._normalize_rule_dict({name: widget_value(widget) for name, widget in fields.items()})
 
         def load_selected() -> None:
-            idx = selected_index()
-            if idx is None or idx >= len(self.rule_list_data):
+            index = selected_index()
+            if index is None or index >= len(self.rule_list_data):
                 return
             self.rule_loading_fields = True
             try:
-                rule = self.rule_list_data[idx]
+                rule = self.rule_list_data[index]
                 for name, widget in fields.items():
+                    value = rule.get(name, True if name in {"enabled", "case_sensitive"} else False)
                     if isinstance(widget, QCheckBox):
-                        default = True if name in ("enabled", "case_sensitive") else False
-                        widget.setChecked(bool(rule.get(name, default)))
+                        widget.setChecked(bool(value))
                     elif isinstance(widget, QLineEdit):
-                        widget.setText(str(rule.get(name, "")))
+                        widget.setText(str(value or ""))
+                    elif isinstance(widget, QPlainTextEdit):
+                        widget.setPlainText(str(value or ""))
             finally:
                 self.rule_loading_fields = False
 
         def apply_form(auto_save: bool = True) -> None:
-            idx = selected_index()
-            if idx is None or idx >= len(self.rule_list_data) or self.rule_loading_fields:
+            index = selected_index()
+            if index is None or index >= len(self.rule_list_data) or self.rule_loading_fields:
                 return
-            self.rule_list_data[idx] = collect_form()
-            keep = selected_indices()
-            refresh_list(keep)
+            rule = collect_form()
+            self.rule_list_data[index] = rule
+            item = rule_list.item(index)
+            if item is not None:
+                style_rule_item(item, rule)
             if auto_save:
                 try:
                     write_rules_file(False)
@@ -1776,35 +1838,35 @@ class ToolkitGUI(QMainWindow):
                 self.rule_auto_timer = QTimer(self)
                 self.rule_auto_timer.setSingleShot(True)
                 self.rule_auto_timer.timeout.connect(lambda: apply_form(True))
-            self.rule_auto_timer.start(140)
+            self.rule_auto_timer.start(180)
 
         def load_file() -> None:
-            path = Path(rules_file.text().strip())
+            path = Path(rules_edit.text().strip())
             if not path.exists():
                 QMessageBox.warning(self, "Rules", "Rules file not found.")
                 return
-            loaded: list[dict] = []
             try:
                 raw = json.loads(path.read_text(encoding="utf-8"))
-                items = raw.get("rules", raw) if isinstance(raw, dict) else raw
-                if isinstance(items, list):
-                    for item in items:
-                        if isinstance(item, dict) and isinstance(item.get("replace"), list):
-                            loaded = [rule_to_dict(rule) for rule in load_rules(path)]
-                            break
-                        if isinstance(item, dict):
-                            loaded.append(self._normalize_rule_dict(item))
-            except Exception:
                 loaded = [rule_to_dict(rule) for rule in load_rules(path)]
-            self.rule_list_data = loaded
+            except Exception as exc:
+                QMessageBox.critical(self, "Rules", f"Could not load rules:\n{exc}")
+                return
+            self.rule_list_data = [self._normalize_rule_dict(rule) for rule in loaded]
             refresh_list([0] if loaded else [])
             load_selected()
             self.config["rules_file"] = str(path)
             save_config(self.config)
+            legacy = not isinstance(raw, dict) or int(raw.get("version", 0) or 0) < 3
+            if isinstance(raw, dict):
+                items = raw.get("rules", [])
+                legacy = legacy or (isinstance(items, list) and any(isinstance(item, dict) and ("id" in item or "priority" in item) for item in items))
+            if legacy:
+                write_rules_file(False)
 
         def add_rule() -> None:
-            self.rule_list_data.append(self._normalize_rule_dict({"enabled": True, "priority": 100, "case_sensitive": True}))
-            refresh_list([len(self.rule_list_data) - 1])
+            self.rule_list_data.append(self._normalize_rule_dict({"enabled": True, "case_sensitive": True}))
+            index = len(self.rule_list_data) - 1
+            refresh_list([index])
             load_selected()
             write_rules_file(False)
 
@@ -1812,36 +1874,102 @@ class ToolkitGUI(QMainWindow):
             indices = selected_indices()
             if not indices:
                 return
-            for i in reversed(indices):
-                if 0 <= i < len(self.rule_list_data):
-                    self.rule_list_data.pop(i)
-            refresh_list([min(indices[0], len(self.rule_list_data) - 1)] if self.rule_list_data else [])
+            for index in reversed(indices):
+                if 0 <= index < len(self.rule_list_data):
+                    self.rule_list_data.pop(index)
+            keep = [min(indices[0], len(self.rule_list_data) - 1)] if self.rule_list_data else []
+            refresh_list(keep)
             load_selected()
             write_rules_file(False)
 
         def set_enabled_for_selected(value: bool) -> None:
             indices = selected_indices()
-            for i in indices:
-                if 0 <= i < len(self.rule_list_data):
-                    self.rule_list_data[i]["enabled"] = value
-            refresh_list(indices)
+            for index in indices:
+                if 0 <= index < len(self.rule_list_data):
+                    self.rule_list_data[index]["enabled"] = value
+                    item = rule_list.item(index)
+                    if item is not None:
+                        style_rule_item(item, self.rule_list_data[index])
             load_selected()
             write_rules_file(False)
 
+        def sync_dragged_order(*_args) -> None:
+            if list_refreshing["value"]:
+                return
+            ordered: list[dict] = []
+            for row in range(rule_list.count()):
+                data = rule_list.item(row).data(Qt.ItemDataRole.UserRole)
+                if isinstance(data, dict):
+                    ordered.append(self._normalize_rule_dict(data))
+            if len(ordered) == rule_list.count():
+                self.rule_list_data = ordered
+                write_rules_file(False)
+                load_selected()
+
+        def run(logwrite, progresswrite):
+            self._check_stop()
+            paths = self._processing_paths("replace", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
+            if not paths:
+                return
+            rules = load_rules(rules_edit.text().strip())
+            enabled_rules = [rule for rule in rules if rule.enabled]
+            po_files = self._iter_unique_po_paths(paths)
+            changes = []
+            progresswrite(0, len(po_files), "Replacing PO files")
+            for file_index, po_path in enumerate(po_files, start=1):
+                self._check_stop()
+                changes.extend(apply_rules_to_file(po_path, enabled_rules, dry_run=dry_run.isChecked()))
+                progresswrite(file_index, len(po_files), f"Replace {po_path.name}")
+            logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
+            logwrite(f"Rules loaded: {len(rules)} | enabled: {len(enabled_rules)}")
+            logwrite(f"Changes: {len(changes)}", "good" if changes else "")
+            for change in changes[:300]:
+                self._check_stop()
+                logwrite(f"{change.file.name} | {change.msgctxt} | replacements={change.count}")
+                logwrite(f"- {change.before}", "warn")
+                logwrite(f"+ {change.after}", "good")
+            if len(changes) > 300:
+                logwrite(f"... {len(changes) - 300} more changes", "warn")
+            if dry_run.isChecked():
+                logwrite("Dry run only. Uncheck Dry run to write files.", "warn")
+
+        def start_run() -> None:
+            apply_form(False)
+            write_rules_file(False)
+            self._run_threaded(run_btn, log, run)
+
         rule_list.itemSelectionChanged.connect(load_selected)
+        rule_list.model().rowsMoved.connect(sync_dragged_order)
         for widget in fields.values():
             if isinstance(widget, QCheckBox):
                 widget.stateChanged.connect(schedule_auto_update)
             elif isinstance(widget, QLineEdit):
                 widget.textChanged.connect(schedule_auto_update)
+            elif isinstance(widget, QPlainTextEdit):
+                widget.textChanged.connect(schedule_auto_update)
         load_btn.clicked.connect(load_file)
-        save_btn.clicked.connect(lambda: (apply_form(False), write_rules_file(True)))
+        save_rules_btn.clicked.connect(lambda: (apply_form(False), write_rules_file(True)))
         add_btn.clicked.connect(add_rule)
         delete_btn.clicked.connect(delete_rules)
         enable_btn.clicked.connect(lambda: set_enabled_for_selected(True))
         disable_btn.clicked.connect(lambda: set_enabled_for_selected(False))
-
+        run_btn.clicked.connect(start_run)
         QTimer.singleShot(0, load_file)
+
+    # ---------------- Rule data ----------------
+    def _normalize_rule_dict(self, raw: dict | None = None) -> dict:
+        raw = dict(raw or {})
+        return {
+            "enabled": bool(raw.get("enabled", True)),
+            "speaker": str(raw.get("speaker", raw.get("character")) or ""),
+            "scope": str(raw.get("scope") or ""),
+            "find": unicodedata.normalize("NFC", str(raw.get("find", ""))),
+            "replace": unicodedata.normalize("NFC", str(raw.get("replace", ""))),
+            "whole_word": bool(raw.get("whole_word", False)),
+            "case_sensitive": bool(raw.get("case_sensitive", True)),
+            "stop_after": bool(raw.get("stop_after", False)),
+            "notes": str(raw.get("notes", raw.get("label", ""))),
+        }
 
     # ---------------- Line Wrap ----------------
     def _build_linewrap_tab(self) -> None:
@@ -2085,7 +2213,9 @@ class ToolkitGUI(QMainWindow):
         edit_buttons.setSpacing(4)
         open_btn = self._button("Open File", secondary=True)
         save_btn = self._button("Save msgstr")
+        preset_replace_btn = self._button("Preset Replace", secondary=True)
         edit_buttons.addWidget(save_btn)
+        edit_buttons.addWidget(preset_replace_btn)
         edit_buttons.addSpacing(8)
         wrap_label = QLabel("Wrap")
         wrap_label.setObjectName("muted")
@@ -2216,6 +2346,7 @@ class ToolkitGUI(QMainWindow):
                 clt_color_btn,
                 open_btn,
                 save_btn,
+                preset_replace_btn,
                 *search_wrap_buttons,
                 prev_btn,
                 next_btn,
@@ -2696,6 +2827,8 @@ class ToolkitGUI(QMainWindow):
                     status.setText("Search stopped.")
                 if search_state["focus_table"]:
                     table.setFocus(Qt.FocusReason.OtherFocusReason)
+                notification_status = "failed" if search_state["failed"] else ("success" if search_state["finished"] else "stopped")
+                self._notify_task_complete(notification_status)
 
             def search_done() -> None:
                 if search_state["applying"]:
@@ -2839,6 +2972,53 @@ class ToolkitGUI(QMainWindow):
                 return
             replace_indices([idx])
 
+        def preset_replace_selected() -> None:
+            indices = selected_result_indices()
+            if not indices:
+                current = current_result_index()
+                indices = [current] if current is not None else []
+            if not indices:
+                status.setText("Select one or more results first.")
+                return
+            try:
+                rules = self._enabled_preset_rules()
+            except Exception as exc:
+                status.setText(str(exc))
+                return
+            if not rules:
+                status.setText("No enabled preset rules.")
+                return
+            current = current_result_index()
+            updates: dict[int, str] = {}
+            total_hits = 0
+            matched_rules = 0
+            for idx in sorted(set(indices)):
+                if idx < 0 or idx >= len(self.search_results):
+                    continue
+                result = self.search_results[idx]
+                source_text = msgstr_box.toPlainText() if idx == current else result.msgstr
+                temp_entry = POEntry(
+                    index=idx,
+                    msgctxt=result.msgctxt or None,
+                    msgid=result.msgid,
+                    msgstr=source_text,
+                    line=result.line,
+                )
+                new_text, hits = apply_rules_to_entry(temp_entry, rules)
+                if hits and new_text != result.msgstr:
+                    updates[idx] = new_text
+                    total_hits += sum(count for _rule, count, _before, _after in hits)
+                    matched_rules += len(hits)
+            if updates:
+                changed = save_updates(updates, progress_label="Applying preset rules")
+            else:
+                changed = 0
+                finish_progress("No preset matches")
+            status.setText(
+                f"Preset rules: {total_hits} replacement hit(s), {matched_rules} rule match(es), "
+                f"saved {changed} result(s)." + save_error_suffix()
+            )
+
         def undo_last_search_change() -> None:
             if self._undo_focused_text_editor():
                 return
@@ -2885,6 +3065,7 @@ class ToolkitGUI(QMainWindow):
         speaker.returnPressed.connect(run_search)
         open_btn.clicked.connect(open_selected_file)
         save_btn.clicked.connect(save_current)
+        preset_replace_btn.clicked.connect(preset_replace_selected)
         msgstr_box.installEventFilter(self)
         prev_btn.clicked.connect(lambda: find_step(-1))
         next_btn.clicked.connect(lambda: find_step(1))
@@ -3365,6 +3546,8 @@ class ToolkitGUI(QMainWindow):
         clt_color_btn = self._tool_button("CLT T", "CLT view: Tags", width=48)
         apply_group_btn = self._button("Apply", secondary=True)
         apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
+        preset_replace_btn = self._button("Preset Replace", secondary=True)
+        preset_replace_btn.setToolTip("Apply all enabled ordered replacement rules to selected/current duplicate rows.")
         undo_apply_btn = self._button("Undo", secondary=True)
         undo_apply_btn.setToolTip("Undo the most recent Apply, Replace, edit, or Wrap change. Ctrl+Z also works.")
         undo_apply_btn.setEnabled(False)
@@ -3384,6 +3567,7 @@ class ToolkitGUI(QMainWindow):
         footer.addWidget(clt_color_btn)
         footer.addSpacing(8)
         footer.addWidget(apply_group_btn)
+        footer.addWidget(preset_replace_btn)
         footer.addWidget(undo_apply_btn)
         wrap_label = QLabel("Wrap")
         wrap_label.setObjectName("muted")
@@ -3927,6 +4111,48 @@ class ToolkitGUI(QMainWindow):
             if not rows and table.currentRow() >= 0:
                 rows = [table.currentRow()]
             return rows
+
+        def preset_replace_selected() -> None:
+            rows = selected_rows_or_current()
+            if not rows:
+                QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
+                return
+            try:
+                rules = self._enabled_preset_rules()
+            except Exception as exc:
+                QMessageBox.warning(dialog, "Preset Replace", str(exc))
+                return
+            if not rules:
+                status.setText("No enabled preset rules.")
+                return
+            changed = 0
+            total_hits = 0
+            undo_rows: list[dict[str, object]] = []
+            current_row = table.currentRow()
+            self._begin_task_progress("Applying preset rules", len(rows))
+            self._pump_task_progress()
+            for position, row in enumerate(rows, start=1):
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
+                if path is not None and entry is not None:
+                    old_text = entry.msgstr
+                    new_text, hits = apply_rules_to_entry(entry, rules)
+                    if hits:
+                        total_hits += sum(count for _rule, count, _before, _after in hits)
+                    if hits and new_text != old_text and set_entry_translation(
+                        row, new_text, update_detail=(row == current_row)
+                    ):
+                        undo_rows.append(
+                            {"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": "preset replace"}
+                        )
+                        changed += 1
+                self._update_task_progress(position, len(rows), "Applying preset rules")
+                self._pump_task_progress()
+            push_duplicate_undo(undo_rows)
+            self._finish_task_progress(f"Preset replaced {changed} duplicate entries")
+            update_status()
+            status.setText(status.text() + f" | preset hits={total_hits} | changed={changed}")
 
         def selected_group_keys() -> set[str]:
             keys: set[str] = set()
@@ -4627,6 +4853,7 @@ class ToolkitGUI(QMainWindow):
         search_replace_btn.clicked.connect(open_search_replace_dialog)
         clt_color_btn.clicked.connect(toggle_duplicate_clt_color_mode)
         apply_group_btn.clicked.connect(apply_to_same_source)
+        preset_replace_btn.clicked.connect(preset_replace_selected)
         undo_apply_btn.clicked.connect(undo_duplicate_change)
         hide_group_btn.clicked.connect(hide_selected_groups)
         unhide_group_btn.clicked.connect(unhide_selected_groups)
@@ -4719,6 +4946,7 @@ class ToolkitGUI(QMainWindow):
         fill_btn = self._tool_button("TF", "Fill from Translafixer sources", width=38)
         gemini_selected_btn = self._tool_button("AI", "Translate selected rows with Gemini API", width=38)
         search_replace_btn = self._tool_button("⌕", "Search / replace (Ctrl+F)", width=34)
+        preset_replace_btn = self._tool_button("Preset", "Apply enabled ordered replacement rules to selected/current rows", width=58)
         dup_ref_btn = self._tool_button("Dup", "Open duplicate translation view for selected checkbox Working folders", width=42)
         status = QLabel("No file loaded")
         status.setObjectName("muted")
@@ -4742,6 +4970,7 @@ class ToolkitGUI(QMainWindow):
         tools.addWidget(fill_btn)
         tools.addWidget(gemini_selected_btn)
         tools.addWidget(search_replace_btn)
+        tools.addWidget(preset_replace_btn)
         tools.addWidget(dup_ref_btn)
         tools.addStretch()
         tools.addWidget(status, 1)
@@ -6100,6 +6329,47 @@ class ToolkitGUI(QMainWindow):
         def wrap_all() -> None:
             wrap_rows(list(range(table.rowCount())), self._active_linewrap_preset_index())
 
+        def preset_replace_selected() -> None:
+            po = po_file()
+            if po is None:
+                QMessageBox.warning(self, "PO Viewer", "Load a file first.")
+                return
+            rows = selected_rows()
+            if not rows and table.currentRow() >= 0:
+                rows = [table.currentRow()]
+            if not rows:
+                QMessageBox.warning(self, "PO Viewer", "Select one or more entries first.")
+                return
+            try:
+                rules = self._enabled_preset_rules()
+            except Exception as exc:
+                QMessageBox.warning(self, "Preset Replace", str(exc))
+                return
+            if not rules:
+                set_status("No enabled preset rules.")
+                return
+            changed = 0
+            total_hits = 0
+            self._begin_task_progress("Applying preset rules", len(rows))
+            self._pump_task_progress()
+            begin_po_undo_batch("preset replace")
+            try:
+                for position, row in enumerate(rows, start=1):
+                    if 0 <= row < len(po.entries):  # type: ignore[union-attr]
+                        entry = po.entries[row]  # type: ignore[union-attr]
+                        new_text, hits = apply_rules_to_entry(entry, rules)
+                        if hits:
+                            total_hits += sum(count for _rule, count, _before, _after in hits)
+                        if hits and set_entry_translation(row, new_text, undo_label="preset replace"):
+                            changed += 1
+                    self._update_task_progress(position, len(rows), "Applying preset rules")
+                    self._pump_task_progress()
+            finally:
+                end_po_undo_batch()
+                self._finish_task_progress(f"Preset replaced {changed} PO entries")
+            refresh_suggestions_for_row(table.currentRow())
+            set_status(f"Preset rules replaced {total_hits} hit(s) in {changed} selected entr{'y' if changed == 1 else 'ies'}. Save when ready.")
+
         def toggle_visual_wrap() -> None:
             state["visual_wrap"] = not bool(state.get("visual_wrap"))
             enabled = bool(state["visual_wrap"])
@@ -6311,6 +6581,7 @@ class ToolkitGUI(QMainWindow):
         fill_btn.clicked.connect(fill_from_translafixer_sources)
         gemini_selected_btn.clicked.connect(translate_selected_with_gemini_api)
         search_replace_btn.clicked.connect(open_search_replace_dialog)
+        preset_replace_btn.clicked.connect(preset_replace_selected)
         dup_ref_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(tab_key="po_viewer"))
         refresh_suggest_btn.clicked.connect(lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         apply_suggest_btn.clicked.connect(apply_selected_suggestion)

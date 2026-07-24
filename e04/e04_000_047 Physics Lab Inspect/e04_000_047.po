@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. こんなに大きい機械が…ただの空気清浄機なのか…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"A huge machine like this... Could it really be *just*\n"
+"an air purifier?"
+msgstr "Một cái máy to lớn như thế này... Liệu nó có thật sự *chỉ* là máy lọc không khí không?"
+
+#. <CLT 4>物理の実験とかで使う物か…？
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>They must use these for physics experiments and\n"
+"stuff...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hẳn là họ dùng mấy cái này cho các thí nghiệm vật lý với lại vài thứ tương tự...\n"
+"<CLT>"
+
+#. <CLT 4>資料の他にも滑車やプレート、
+#. 磁石や見た事のない機器が並んでる…
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's materials, pulleys, steel plates, magnets, and\n"
+"all kinds of stuff I don't even recognize.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có các tài liệu, ròng rọc, đĩa thép, nam châm, và đủ thứ trên đời mà mình còn chẳng nhận ra.\n"
+"<CLT>"
+
+#. <CLT 4>なんかの機械って事はわかるけど…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This machine obviously has some kind of purpose,\n"
+"but...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái máy này rõ ràng là có tác dụng nào đó, nhưng...\n"
+"<CLT>"
+
+#. <CLT 4>そもそも、物理が何かよくわからないボクに、
+#. この機械を理解するのは難しそうだ…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...I don't know anything about physics to begin with,\n"
+"so I wouldn't have a clue where to start with this.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...ngay từ đầu mình đã chẳng biết gì về vật lý rồi, nên mình\n"
+"chẳng biết phải bắt đầu tìm hiểu từ đâu với nó nữa.\n"
+"<CLT>"
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>外に出ますか？
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Leave the area?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi đây?\n"
+"<CLT>"

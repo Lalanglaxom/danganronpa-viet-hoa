@@ -1,0 +1,84 @@
+--- Gemini Translation Raw Output for e04_000_048.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. …元通りになってる…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "Everything's back to normal..."
+msgstr ""
+
+#. ⟦CLT 4⟧舞園さんや不二咲クンの時と同じか。
+#. これも…モノクマがやったんだろうな…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Just like with Sayaka and Chihiro. Monokuma's\n"
+"responsible, I'm sure...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧今回の事件には関係なさそうだ。
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But it's unrelated to what's going on now.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧その痕跡はどこにもないけど…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But there's no way you'd know it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧埃をかぶってるみたいだし…
+#. 長い事、使われてないみたいだな…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧They're all covered in dust, too. They obviously\n"
+"haven't been used in a long time.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧おそらく…過去の実験結果とか研究資料とか…
+#. その手のファイルがズラリと並んでいる。
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's a bunch of files here. Probably old lab files\n"
+"or research data...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. いいえ
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "No"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Mọi thứ đã trở lại bình thường..."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Giống hệt như trường hợp của Sayaka và Chihiro. Mình chắc chắn... lại là do Monokuma làm rồi...\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng nó không liên quan đến những gì đang diễn ra hiện tại.\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng chẳng có cách nào để cậu biết được chuyện đó cả.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tất cả chúng đều phủ đầy bụi. Rõ ràng là đã lâu lắm rồi không được sử dụng.\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Có một đống hồ sơ ở đây. Có lẽ là hồ sơ phòng thí nghiệm cũ hoặc dữ liệu nghiên cứu...\n⟦CLT⟧"
+
+msgctxt "0011 | CHOICE/RE:ACT"
+msgstr "Không"
+
+==================== FOLDER SUMMARY ====================
+Lab Revisit Cleaned
+
