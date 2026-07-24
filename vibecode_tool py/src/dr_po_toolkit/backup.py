@@ -6,11 +6,39 @@ import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Mapping, Sequence
 
 from .discovery import is_copy_po, iter_po_files
 
 ProgressFn = Callable[[int, int, Path], None]
+
+
+def index_po_files_by_name(
+    path: str | Path,
+    *,
+    progress: ProgressFn | None = None,
+) -> tuple[dict[str, tuple[Path, ...]], int]:
+    """Build a reusable filename index for PO files under *path*.
+
+    Repack can sync several Working folders into the same DRAT EXTRACTED tree.
+    Building this index once avoids walking that large target tree again for
+    every selected Working folder.
+    """
+    root = Path(path)
+    if not root.exists() or not root.is_dir():
+        raise ValueError(f"folder does not exist or is not a folder: {root}")
+
+    buckets: dict[str, list[Path]] = {}
+    count = 0
+    for po_path in iter_po_files(root):
+        count += 1
+        buckets.setdefault(po_path.name, []).append(po_path)
+        if progress is not None and (count == 1 or count % 250 == 0):
+            progress(count, 0, po_path)
+    if progress is not None:
+        completed = count or 1
+        progress(completed, completed, root)
+    return {name: tuple(paths) for name, paths in buckets.items()}, count
 
 
 def make_backups(
@@ -86,11 +114,8 @@ def _same_file_content(src: Path, target: Path) -> bool:
     if s_stat.st_size != t_stat.st_size:
         return False
 
-    # Same size + same timestamp is enough for already synced files.
-    if s_stat.st_mtime_ns == t_stat.st_mtime_ns:
-        return True
-
-    # Same size but different timestamp: deep compare avoids needless rewrites.
+    # Timestamps can collide on fast writes or coarse filesystems. Compare the
+    # bytes whenever sizes match so changed translations are never skipped.
     try:
         return filecmp.cmp(src, target, shallow=False)
     except OSError:
@@ -102,6 +127,9 @@ def sync_by_filename_report(
     target_folder: str | Path,
     *,
     progress: ProgressFn | None = None,
+    target_index: Mapping[str, Sequence[Path]] | None = None,
+    target_file_count: int | None = None,
+    collect_target_without_source: bool = True,
 ) -> SyncByFilenameResult:
     source_folder = Path(source_folder)
     target_folder = Path(target_folder)
@@ -115,10 +143,27 @@ def sync_by_filename_report(
 
     result = SyncByFilenameResult()
     source_files = list(iter_po_files(source_folder))
-    target_files = list(iter_po_files(target_folder))
-    total_progress = len(source_files) + len(target_files)
+    if target_index is None:
+        indexed_targets, indexed_count = index_po_files_by_name(target_folder, progress=progress)
+    else:
+        indexed_targets = target_index
+        indexed_count = (
+            int(target_file_count)
+            if target_file_count is not None
+            else sum(len(paths) for paths in indexed_targets.values())
+        )
+
+    source_name_counts: dict[str, int] = {}
+    for source_path in source_files:
+        source_name_counts[source_path.name] = source_name_counts.get(source_path.name, 0) + 1
+    matched_target_count = sum(
+        len(indexed_targets.get(name, ()))
+        for name, count in source_name_counts.items()
+        if count == 1
+    )
+    total_progress = len(source_files) + matched_target_count
     completed = 0
-    first_path = source_files[0] if source_files else (target_files[0] if target_files else source_folder)
+    first_path = source_files[0] if source_files else source_folder
     if progress is not None and total_progress:
         progress(0, total_progress, Path(first_path))
 
@@ -146,33 +191,37 @@ def sync_by_filename_report(
     result.duplicate_source_names = len(duplicate_names)
     result.duplicate_source_files = [path for paths in duplicate_sources.values() for path in paths]
 
+    result.target_files = indexed_count
     matched_source_names: set[str] = set()
-    for target in target_files:
-        result.target_files += 1
-        try:
-            src = source_index.get(target.name)
-            if not src:
-                result.target_without_source.append(target)
-                continue
-            matched_source_names.add(target.name)
+    for source_name, src in source_index.items():
+        targets = indexed_targets.get(source_name, ())
+        if targets:
+            matched_source_names.add(source_name)
+        for target in targets:
             try:
-                if src.samefile(target):
-                    result.skipped_self += 1
-                    result.skipped_self_files.append((src, target))
+                try:
+                    if src.samefile(target):
+                        result.skipped_self += 1
+                        result.skipped_self_files.append((src, target))
+                        continue
+                except OSError:
+                    pass
+                if _same_file_content(src, target):
+                    result.skipped_identical += 1
+                    result.skipped_identical_files.append((src, target))
                     continue
-            except OSError:
-                pass
-            if _same_file_content(src, target):
-                result.skipped_identical += 1
-                result.skipped_identical_files.append((src, target))
-                continue
-            shutil.copy2(src, target)
-            result.copied += 1
-            result.copied_files.append((src, target))
-        finally:
-            completed += 1
-            if progress is not None:
-                progress(completed, total_progress, target)
+                shutil.copy2(src, target)
+                result.copied += 1
+                result.copied_files.append((src, target))
+            finally:
+                completed += 1
+                if progress is not None:
+                    progress(completed, total_progress, target)
+
+    if collect_target_without_source:
+        for target_name, targets in indexed_targets.items():
+            if target_name not in source_index:
+                result.target_without_source.extend(targets)
     result.source_without_target = [src for name, src in source_index.items() if name not in matched_source_names]
     return result
 

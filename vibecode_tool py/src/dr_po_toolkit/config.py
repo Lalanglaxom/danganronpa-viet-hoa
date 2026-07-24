@@ -34,6 +34,7 @@ DEFAULT_CONFIG = {
     "po_viewer_clt_color_mode": False,
     "translafixer_hidden_duplicate_keys": [],
     "game_folder_path": "",
+    "drat_folder_path": "",
     "danganviethoa_path": "",
     "extracted_path": "",
     "repack_path": "",
@@ -42,6 +43,7 @@ DEFAULT_CONFIG = {
 }
 DEFAULT_CONFIG.update({f"working_{key}_path": "" for key in DR_FILE_OPTION_KEYS})
 LEGACY_SYNC_DESTINATION_KEYS = {f"sync_{key}_path" for key in DR_FILE_OPTION_KEYS}
+LEGACY_REPACK_CONFIG_KEYS = {"backup_sync_include_extra_path", "backup_sync_dr_options"}
 DEFAULT_CONFIG.update({
     f"{tab_key}_include_extra_path": False
     for tab_key in (
@@ -52,7 +54,6 @@ DEFAULT_CONFIG.update({
         "translafixer",
         "po_viewer",
         "gemini_web",
-        "backup_sync",
     )
 })
 
@@ -84,6 +85,21 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
         )
     merged = dict(DEFAULT_CONFIG)
     merged.update(data)
+
+    if "repack_dr_options" not in data and isinstance(data.get("backup_sync_dr_options"), list):
+        merged["repack_dr_options"] = list(data["backup_sync_dr_options"])
+
+    # Migrate the former separate DRAT path settings when possible. The new
+    # DRAT Folder points at the manual-mode root containing EXTRACTED/REPACKED.
+    if not str(merged.get("drat_folder_path", "")).strip():
+        for legacy_key in ("extracted_path", "repack_path"):
+            raw = str(merged.get(legacy_key, "")).strip()
+            if not raw:
+                continue
+            candidate = Path(raw).expanduser()
+            if candidate.name.casefold() in {"extracted", "repacked"}:
+                merged["drat_folder_path"] = str(candidate.parent)
+                break
     merged["linewrap_presets"] = normalize_wrap_presets(
         merged.get("linewrap_presets"),
         legacy_soft=merged.get("soft_limit", DEFAULT_CONFIG["soft_limit"]),
@@ -95,7 +111,7 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
     except (TypeError, ValueError):
         active_preset = 0
     merged["linewrap_active_preset"] = max(0, min(3, active_preset))
-    for key in LEGACY_SYNC_DESTINATION_KEYS:
+    for key in LEGACY_SYNC_DESTINATION_KEYS | LEGACY_REPACK_CONFIG_KEYS:
         merged.pop(key, None)
     return merged
 
@@ -103,5 +119,6 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
 def save_config(config: dict[str, Any], path: str | Path | None = None) -> None:
     p = Path(path) if path else default_config_path()
     p.parent.mkdir(parents=True, exist_ok=True)
-    payload = {key: value for key, value in config.items() if key not in LEGACY_SYNC_DESTINATION_KEYS}
+    legacy_keys = LEGACY_SYNC_DESTINATION_KEYS | LEGACY_REPACK_CONFIG_KEYS
+    payload = {key: value for key, value in config.items() if key not in legacy_keys}
     p.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

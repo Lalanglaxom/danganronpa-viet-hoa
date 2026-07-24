@@ -7,6 +7,7 @@ import re
 import subprocess
 import sys
 import threading
+import time
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
@@ -56,7 +57,15 @@ from PyQt6.QtWidgets import (
 )
 
 from .app_links import APP_LINK_SERVER_NAME, is_entry_url, parse_entry_url, register_url_protocol
-from .backup import copy_wad_repack_to_game, make_backups, move_repack_to_script, restore_working_po_from_copies, sync_by_filename_report, sync_option_from_working_folder
+from .backup import index_po_files_by_name, sync_by_filename_report
+from .drat_repack import (
+    DratRepackError,
+    deploy_filename_plans,
+    plan_files_by_filename,
+    repack_all_formats,
+    repack_all_wads,
+    resolve_drat_workspace,
+)
 from .cancel import OperationCancelled
 from .config import load_config, save_config
 from .discovery import iter_po_files
@@ -79,6 +88,7 @@ from .gemini_web import (
     run_gemini_web_path,
 )
 from .linewrap import normalize_wrap_presets, wrap_msgstr, wrap_po_file
+from .notifications import play_task_notification
 from .po_io import load_po, save_po
 from .rules import apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_files
@@ -135,6 +145,7 @@ CLT_COLOR_BY_CODE = {
 }
 CLT_CODE_BY_STATE = {index: code for index, code in enumerate(CLT_COLOR_BY_CODE, start=1)}
 CLT_STATE_BY_CODE = {code: state for state, code in CLT_CODE_BY_STATE.items()}
+
 
 
 def _normalize_clt_code(raw: str | None) -> str:
@@ -630,7 +641,7 @@ class ToolkitGUI(QMainWindow):
         self._build_translafixer_tab()
         self._build_po_viewer_tab()
         self._build_translate_tab()
-        self._build_backup_tab()
+        self._build_repack_tab()
 
     def _new_tab(self, title: str) -> tuple[QWidget, QVBoxLayout]:
         tab = QWidget()
@@ -799,13 +810,8 @@ class ToolkitGUI(QMainWindow):
             "Refresh": "Refresh the current list or suggestions.",
             "Run Translation": "Run Gemini translation on selected PO files.",
             "Open Chrome": "Open Chrome with remote debugging for Gemini Web.",
-            "Create Missing Copy.po Backups": "Create missing Copy.po backups without overwriting existing backups.",
-            "Sync Selected Options": "Copy selected Working folders to the shared Extracted destination.",
-            "Sync by Filename": "Sync files by matching filename from source to target.",
-            "Move Compile": "Copy compiled files from Repack to Script. WAD Repack is skipped.",
-            "Move Repack": "Copy all Repack files to Script, excluding WAD Repack files.",
-            "Move to Game": "Copy WAD Repack files into the configured Game Folder.",
-            "Restore Working PO from Copy.po": "Restore Working PO files from matching Copy.po backups.",
+            "Repack": "Sync selected Working folders, repack DRAT LIN/PAK files, update Script, rebuild WAD, and deploy it to the Game Folder.",
+            "Sync by Filename": "Sync PO files by matching filename from source to target.",
         }
         return tooltips.get(clean, clean or "Button")
 
@@ -824,11 +830,11 @@ class ToolkitGUI(QMainWindow):
             return role_map[role]
         if danger or clean in {"Delete", "Remove"}:
             return "dangerButton"
-        if clean in {"Clear", "Disable Selected", "Hide", "Restore Working PO from Copy.po"}:
+        if clean in {"Clear", "Disable Selected", "Hide"}:
             return "warnButton"
-        if clean in {"Move Compile", "Move Repack", "Move to Game", "Sync Selected Options", "Sync by Filename"}:
+        if clean in {"Repack", "Sync by Filename"}:
             return "deployButton"
-        if clean in {"Save", "Save msgstr", "Apply", "Apply Wrap", "Create Missing Copy.po Backups"}:
+        if clean in {"Save", "Save msgstr", "Apply", "Apply Wrap"}:
             return "successButton"
         if clean.startswith("Run") or clean in {"Search", "Replace All", "Add Rule", "Add .po", "Add folder", "Add Folders", "Enable Selected", "Load"}:
             return "primaryButton" if not secondary else "infoButton"
@@ -1084,9 +1090,10 @@ class ToolkitGUI(QMainWindow):
 
         note = QLabel(
             "Set one Working folder for each Danganronpa file group. "
-            "Tabs process the selected checkbox groups from their Working folders. "
-            "Optional Extra paths on each tab are added only when their Extra toggle is on. "
-            "Backup/Sync sends every selected Working folder to the shared Extracted destination."
+            "The Repack tab syncs selected Working folders into the configured DRAT workspace, "
+            "rebuilds LIN/PAK/WAD files, updates Script, then deploys the WAD to the Game Folder. "
+            "DRAT Folder may be the game manual-mode folder containing EXTRACTED/REPACKED, "
+            "or its parent DRAT folder."
         )
         note.setObjectName("muted")
         note.setWordWrap(True)
@@ -1111,9 +1118,7 @@ class ToolkitGUI(QMainWindow):
         general_form = QFormLayout(general_box)
         general_form.setSpacing(8)
         general_form.setContentsMargins(8, 8, 8, 8)
-        self._path_row(general_form, "Extracted", "extracted_path")
-        self._path_row(general_form, "Repack", "repack_path")
-        self._path_row(general_form, "WAD Repack", "wad_repack_path")
+        self._path_row(general_form, "DRAT Folder", "drat_folder_path")
         self._path_row(general_form, "Script", "script_path")
         self._path_row(general_form, "Game Folder", "game_folder_path")
         content_layout.addWidget(general_box)
@@ -1361,7 +1366,7 @@ class ToolkitGUI(QMainWindow):
         signals.log.connect(log.append_log)
         signals.progress.connect(self._update_task_progress)
         action_label = button.text().replace("&", "").strip() or "Working"
-        outcome = {"label": f"{action_label} complete"}
+        outcome = {"label": f"{action_label} complete", "status": "success"}
 
         def done() -> None:
             button.setEnabled(True)
@@ -1369,6 +1374,7 @@ class ToolkitGUI(QMainWindow):
             self._active_log = None
             self._active_thread = None
             self._finish_task_progress(str(outcome["label"]))
+            play_task_notification(str(outcome["status"]), fallback=QApplication.beep)
             try:
                 self._active_signals.remove(signals)
             except ValueError:
@@ -1376,12 +1382,59 @@ class ToolkitGUI(QMainWindow):
 
         signals.done.connect(done)
 
+        pending_logs: list[tuple[str, str]] = []
+        last_log_flush = 0.0
+
+        def flush_logs() -> None:
+            nonlocal last_log_flush
+            if not pending_logs:
+                return
+            grouped: list[tuple[list[str], str]] = []
+            for text, tag in pending_logs:
+                if grouped and grouped[-1][1] == tag:
+                    grouped[-1][0].append(text)
+                else:
+                    grouped.append(([text], tag))
+            pending_logs.clear()
+            for texts, tag in grouped:
+                signals.log.emit("\n".join(texts), tag)
+            last_log_flush = time.monotonic()
+
         def logwrite(text: str, tag: str = "") -> None:
-            signals.log.emit(str(text), str(tag or ""))
+            nonlocal last_log_flush
+            pending_logs.append((str(text), str(tag or "")))
+            now = time.monotonic()
+            if len(pending_logs) >= 32 or now - last_log_flush >= 0.075:
+                flush_logs()
+
+        last_progress_emit = 0.0
+        last_progress_stage = ""
+        last_progress_total: int | None = None
 
         def progresswrite(done_count: int, total_count: int = 0, label: str = "") -> None:
+            nonlocal last_progress_emit, last_progress_stage, last_progress_total
             self._check_stop()
-            signals.progress.emit(int(done_count), int(total_count), str(label or action_label))
+            done_value = int(done_count)
+            total_value = int(total_count)
+            label_value = str(label or action_label)
+            match = re.match(r"\s*(\d+/\d+)", label_value)
+            stage = match.group(1) if match else action_label
+            now = time.monotonic()
+            force = (
+                done_value <= 0
+                or (total_value > 0 and done_value >= total_value)
+                or stage != last_progress_stage
+                or total_value != last_progress_total
+                or now - last_progress_emit >= 0.075
+            )
+            if not force:
+                return
+            if pending_logs and (stage != last_progress_stage or now - last_log_flush >= 0.075):
+                flush_logs()
+            signals.progress.emit(done_value, total_value, label_value)
+            last_progress_emit = now
+            last_progress_stage = stage
+            last_progress_total = total_value
 
         def worker() -> None:
             self._stop_event.clear()
@@ -1392,11 +1445,14 @@ class ToolkitGUI(QMainWindow):
                 self._check_stop()
             except OperationCancelled:
                 outcome["label"] = f"{action_label} stopped"
+                outcome["status"] = "stopped"
                 logwrite("Stopped by user.", "warn")
             except Exception as exc:
                 outcome["label"] = f"{action_label} failed"
+                outcome["status"] = "failed"
                 logwrite(f"ERROR: {exc}", "bad")
             finally:
+                flush_logs()
                 signals.done.emit()
 
         log.clear()
@@ -6547,346 +6603,348 @@ class ToolkitGUI(QMainWindow):
         chrome_btn.clicked.connect(lambda: self._run_threaded(chrome_btn, log, open_chrome))
         sync_mode_ui()
 
-    # ---------------- Backup / Sync ----------------
-    def _choose_multiple_folders(self, title: str) -> list[str]:
-        dialog = QFileDialog(self, title)
-        dialog.setFileMode(QFileDialog.FileMode.Directory)
-        dialog.setOption(QFileDialog.Option.ShowDirsOnly, True)
-        dialog.setOption(QFileDialog.Option.DontUseNativeDialog, True)
-        # QFileDialog internals use QListView/QTreeView; set selection mode dynamically.
-        for view in dialog.findChildren(QAbstractItemView):
-            view.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
-        return dialog.selectedFiles() if dialog.exec() else []
-
-    def _build_backup_tab(self) -> None:
-        _tab, layout = self._new_tab("Backup / Sync")
-        self._dr_option_selector(layout, "backup_sync")
-        backup_edit, include_extra = self._extra_path_row(layout, "backup_sync", "Extra backup path", "last_path")
+    # ---------------- Repack ----------------
+    def _build_repack_tab(self) -> None:
+        _tab, layout = self._new_tab("Repack")
+        self._dr_option_selector(layout, "repack")
         source_edit = self._path_row(layout, "Manual sync source", "sync_source")
         target_edit = self._path_row(layout, "Manual sync target", "sync_target")
 
-        sync_hint = QLabel("Backup and restore use selected Settings > Working folders. Extra backup path is included only when its toggle is on. Selected option sync copies every selected Working folder to the shared Settings > Extracted destination. Manual sync by filename still uses its explicit source/target pair.")
-        sync_hint.setObjectName("muted")
-        sync_hint.setWordWrap(True)
-        layout.addWidget(sync_hint)
-
-        restore_group = QGroupBox("Restore paths")
-        restore_layout = QHBoxLayout(restore_group)
-        restore_list = PathDropList()
-        restore_layout.addWidget(restore_list, 1)
-        restore_buttons = QVBoxLayout()
-        add_btn = self._button("Add Folders", secondary=True)
-        remove_btn = self._button("Remove", secondary=True)
-        clear_btn = self._button("Clear", secondary=True)
-        restore_buttons.addWidget(add_btn)
-        restore_buttons.addWidget(remove_btn)
-        restore_buttons.addWidget(clear_btn)
-        restore_buttons.addStretch()
-        restore_layout.addLayout(restore_buttons)
-        layout.addWidget(restore_group)
-
-        hint = QLabel("Drag folders or - Copy.po files into the restore list. Restore overwrites working .po from matching - Copy.po. Copy.po files are never changed.")
+        hint = QLabel(
+            "Repack runs one complete build: sync every selected Working folder into DRAT EXTRACTED by filename, "
+            "rebuild LIN and PAK types 1-3, copy generated files into Script, rebuild every extracted WAD, "
+            "then copy the generated WAD files into Game Folder. Sync by Filename remains available as a separate manual tool."
+        )
         hint.setObjectName("muted")
         hint.setWordWrap(True)
         layout.addWidget(hint)
 
-        restore_paths: list[str] = list(self.config.get("restore_copy_paths", []))
-
-        def refresh_restore() -> None:
-            restore_list.clear()
-            for path in restore_paths:
-                restore_list.addItem(path)
-
-        def save_restore() -> None:
-            self.config["restore_copy_paths"] = restore_paths
-            save_config(self.config)
-
-        def add_restore_paths(paths: list[str]) -> None:
-            added = 0
-            for raw in paths:
-                try:
-                    p = Path(str(raw)).expanduser()
-                except Exception:
-                    continue
-                if not p.exists():
-                    continue
-                if p.is_file() and p.suffix.lower() != ".po":
-                    continue
-                text = str(p.resolve()) if p.exists() else str(p)
-                if text not in restore_paths:
-                    restore_paths.append(text)
-                    added += 1
-            if added:
-                refresh_restore()
-                save_restore()
-
-        def remove_restore() -> None:
-            rows = sorted({restore_list.row(item) for item in restore_list.selectedItems()}, reverse=True)
-            for row in rows:
-                if 0 <= row < len(restore_paths):
-                    restore_paths.pop(row)
-            refresh_restore()
-            save_restore()
-
-        add_btn.clicked.connect(lambda: add_restore_paths(self._choose_multiple_folders("Select restore folders")))
-        remove_btn.clicked.connect(remove_restore)
-        clear_btn.clicked.connect(lambda: (restore_paths.clear(), refresh_restore(), save_restore()))
-        restore_list.pathsDropped.connect(add_restore_paths)
-        refresh_restore()
-
         row = QHBoxLayout()
         row.addStretch()
-        backup_btn = self._button("Create Missing Copy.po Backups")
-        option_sync_btn = self._button("Sync Selected Options")
+        repack_btn = self._button("Repack")
         sync_btn = self._button("Sync by Filename", secondary=True)
-        move_compile_btn = self._button("Move Repack")
-        move_game_btn = self._button("Move to Game")
-        restore_btn = self._button("Restore Working PO from Copy.po")
-        row.addWidget(backup_btn)
-        row.addWidget(option_sync_btn)
+        row.addWidget(repack_btn)
         row.addWidget(sync_btn)
-        row.addWidget(move_compile_btn)
-        row.addWidget(move_game_btn)
-        row.addWidget(restore_btn)
         layout.addLayout(row)
         log = self._make_log()
         layout.addWidget(log, 1)
 
-        def backup(logwrite, progresswrite):
-            self._check_stop()
-            paths = self._processing_paths("backup_sync", extra_edit=backup_edit, include_extra=include_extra, logwrite=logwrite)
+        def log_paths(title: str, paths: list[Path], logwrite, level: str = "warn", max_items: int = 80) -> None:
             if not paths:
                 return
-            total = 0
-            progresswrite(0, 0, "Discovering PO files for backup")
-            for input_path in paths:
-                self._check_stop()
-                written = make_backups(
-                    input_path,
-                    overwrite=False,
-                    progress=lambda done, total_files, path: progresswrite(done, total_files, f"Backup {path.name}"),
-                )
-                total += written
-                logwrite(f"{input_path}: wrote {written} missing Copy.po backup(s)", "good" if written else "warn")
-            logwrite(f"Missing Copy.po backups written: {total}", "good")
-            logwrite("Existing Copy.po files were not touched.", "warn")
+            logwrite(f"{title}: {len(paths)}", level)
+            for path in paths[:max_items]:
+                logwrite(f"  - {path}", level)
+            if len(paths) > max_items:
+                logwrite(f"  ... {len(paths) - max_items} more", level)
+
+        def log_items(title, items, formatter, logwrite, level: str = "info", max_items: int = 80) -> None:
+            if not items:
+                return
+            logwrite(f"{title}: {len(items)}", level)
+            for item in items[:max_items]:
+                logwrite(f"  - {formatter(item)}", level)
+            if len(items) > max_items:
+                logwrite(f"  ... {len(items) - max_items} more", level)
 
         def sync(logwrite, progresswrite):
             self._check_stop()
+            source = source_edit.text().strip()
+            target = target_edit.text().strip()
+            if not source or not target:
+                raise DratRepackError("Choose both Manual sync source and Manual sync target.")
             progresswrite(0, 0, "Scanning sync folders")
             result = sync_by_filename_report(
-                source_edit.text().strip(),
-                target_edit.text().strip(),
-                progress=lambda done, total, path: progresswrite(done, total, f"Manual sync {path.name}"),
+                source,
+                target,
+                progress=lambda done, total, path: progresswrite(done, total, f"Sync {path.name}"),
             )
-
-            def log_paths(title: str, paths: list[Path], level: str = "warn", *, max_items: int = 200) -> None:
-                if not paths:
-                    return
-                logwrite(f"{title}: {len(paths)}", level)
-                for path in paths[:max_items]:
-                    logwrite(f"  - {path}", level)
-                if len(paths) > max_items:
-                    logwrite(f"  ... {len(paths) - max_items} more", level)
-
-            def log_pairs(title: str, pairs: list[tuple[Path, Path]], level: str = "info", *, max_items: int = 200) -> None:
-                if not pairs:
-                    return
-                logwrite(f"{title}: {len(pairs)}", level)
-                for src, target in pairs[:max_items]:
-                    logwrite(f"  - {src} -> {target}", level)
-                if len(pairs) > max_items:
-                    logwrite(f"  ... {len(pairs) - max_items} more", level)
-
-            logwrite(f"Source files scanned: {result.source_files}")
-            logwrite(f"Target files scanned: {result.target_files}")
+            logwrite(f"Source PO files: {result.source_files}")
+            logwrite(f"Target PO files: {result.target_files}")
+            logwrite(f"Files copied: {result.copied}", "good" if result.copied else "warn")
+            logwrite(f"Identical files skipped: {result.skipped_identical}")
             if result.duplicate_source_names:
-                logwrite(f"Duplicate source filenames skipped: {result.duplicate_source_names}", "warn")
-                log_paths("Duplicate source files not pasted", result.duplicate_source_files, "warn")
-            if result.skipped_identical:
-                logwrite(f"Identical files skipped: {result.skipped_identical}")
-                log_pairs("Identical pairs skipped", result.skipped_identical_files, "info")
-            if result.skipped_self:
-                logwrite(f"Self-copy skipped: {result.skipped_self}", "warn")
-                log_pairs("Self-copy pairs skipped", result.skipped_self_files, "warn")
-            log_pairs("Copied source -> target", result.copied_files, "good")
-            log_paths("Source files with no target filename match (not pasted)", result.source_without_target, "warn")
-            log_paths("Target files with no source filename match (not found in source)", result.target_without_source, "warn")
-            logwrite(f"Files synced: {result.copied}", "good" if result.copied else "warn")
+                logwrite(f"Duplicate source filenames skipped: {result.duplicate_source_names}", "bad")
+                log_paths("Duplicate source files", result.duplicate_source_files, logwrite, "bad")
+            log_paths("Source files without a target filename match", result.source_without_target, logwrite)
+            log_paths("Target files without a source filename match", result.target_without_source, logwrite, "info")
 
-        def sync_selected_options(logwrite, progresswrite):
-            selected = self._selected_dr_options("backup_sync")
+        def repack(logwrite, progresswrite):
+            selected = self._selected_dr_options("repack")
             if not selected:
-                logwrite("No Danganronpa file groups selected.", "warn")
-                return
-            extracted_folder = str(self.config.get("extracted_path", "")).strip()
-            if not extracted_folder:
-                logwrite("Set Settings > Extracted first.", "warn")
-                return
-            total_matched = total_copied = total_errors = 0
-            progresswrite(0, len(selected), "Syncing selected groups")
-            for option_index, option_key in enumerate(selected, start=1):
-                self._check_stop()
-                label = option_name(option_key)
-                progresswrite(option_index - 1, len(selected), f"Sync {label}")
-                working_folder = str(self.config.get(f"working_{option_key}_path", "")).strip()
-                filter_by_option = False
+                raise DratRepackError("Select at least one Danganronpa file group.")
 
-                # Backward-compatible fallback for older configs. Dedicated Working
-                # paths are preferred because Extracted is the shared destination.
-                if not working_folder:
-                    legacy_root = str(self.config.get("game_folder_path", "")).strip()
-                    if legacy_root:
-                        working_folder = legacy_root
-                        filter_by_option = True
-                        logwrite(f"{label}: using legacy Settings > Game Folder fallback. Set Working {label} for dedicated sync source.", "warn")
+            drat_folder = str(self.config.get("drat_folder_path", "")).strip()
+            script_raw = str(self.config.get("script_path", "")).strip()
+            game_raw = str(self.config.get("game_folder_path", "")).strip()
+            if not drat_folder or not script_raw or not game_raw:
+                raise DratRepackError("Set Settings > DRAT Folder, Script, and Game Folder first.")
 
-                if not working_folder:
-                    logwrite(f"Skip {label}: set Settings > Working {label} first.", "warn")
-                    progresswrite(option_index, len(selected), f"Skipped {label}")
-                    continue
-                try:
-                    result = sync_option_from_working_folder(
-                        working_folder,
-                        extracted_folder,
-                        option_key,
-                        filter_by_option=filter_by_option,
-                        progress=lambda done, total, path, label=label: progresswrite(done, total, f"Sync {label}: {path.name}"),
-                    )
-                except Exception as exc:
-                    logwrite(f"ERR {label}: {exc}", "bad")
-                    total_errors += 1
-                    progresswrite(option_index, len(selected), f"Failed {label}")
-                    continue
-                total_matched += result.matched
-                total_copied += result.copied
-                total_errors += len(result.errors)
-                tag = "good" if result.copied else "warn"
-                logwrite(
-                    f"{label}: source={result.source_root}, extracted={result.target_root}, matched={result.matched}, copied={result.copied}, identical={result.skipped_identical}, self={result.skipped_self}, errors={len(result.errors)}",
-                    tag,
+            workspace = resolve_drat_workspace(drat_folder)
+            script_folder = Path(script_raw).expanduser()
+            game_folder = Path(game_raw).expanduser()
+            if not script_folder.exists() or not script_folder.is_dir():
+                raise DratRepackError(f"Script folder does not exist: {script_folder}")
+            if not game_folder.exists() or not game_folder.is_dir():
+                raise DratRepackError(f"Game Folder does not exist: {game_folder}")
+
+            try:
+                script_resolved = script_folder.resolve(strict=False)
+                wad_root_resolved = workspace.wad_extracted_root.resolve(strict=False)
+                script_inside_wad = script_resolved == wad_root_resolved or script_resolved.is_relative_to(wad_root_resolved)
+            except OSError:
+                script_inside_wad = False
+            if not script_inside_wad:
+                raise DratRepackError(
+                    f"Script must be the extracted WAD root or a folder inside DRAT EXTRACTED/WAD: {workspace.wad_extracted_root}"
                 )
-                for src, dest in result.copied_files[:100]:
-                    logwrite(f"  copy: {src} -> {dest}", "good")
-                if len(result.copied_files) > 100:
-                    logwrite(f"  ... {len(result.copied_files) - 100} more copied", "good")
-                for src, err in result.errors[:50]:
-                    logwrite(f"  ERR {src}: {err}", "bad")
-                if len(result.errors) > 50:
-                    logwrite(f"  ... {len(result.errors) - 50} more errors", "bad")
-                progresswrite(option_index, len(selected), f"Synced {label}")
-            logwrite(f"Selected option sync done. matched={total_matched}, copied={total_copied}, errors={total_errors}", "good" if total_errors == 0 else "warn")
 
-        def move_compile(logwrite, progresswrite):
-            repack = str(self.config.get("repack_path", "")).strip()
-            script = str(self.config.get("script_path", "")).strip()
-            wad_repack = str(self.config.get("wad_repack_path", "")).strip()
-            if not repack or not script:
-                logwrite("Set Settings > Repack and Settings > Script first.", "warn")
-                return
-            self._check_stop()
-            progresswrite(0, 0, "Scanning Repack files")
-            result = move_repack_to_script(
-                repack,
-                script,
-                wad_repack_folder=wad_repack or None,
-                progress=lambda done, total, path: progresswrite(done, total, f"Repack → Script {path.name}"),
-            )
-            logwrite(f"Repack files scanned: {result.scanned}")
-            if result.skipped_wad_repack:
-                logwrite(f"WAD Repack files skipped: {result.skipped_wad_repack}", "warn")
-            if result.skipped_identical:
-                logwrite(f"Identical Script files skipped: {result.skipped_identical}", "info")
-            for src, dest in result.moved_files[:200]:
-                self._check_stop()
-                logwrite(f"  copy: {src} -> {dest}", "good")
-            if len(result.moved_files) > 200:
-                logwrite(f"  ... {len(result.moved_files) - 200} more copied", "good")
-            for src, err in result.errors[:80]:
-                logwrite(f"  ERR {src}: {err}", "bad")
-            if len(result.errors) > 80:
-                logwrite(f"  ... {len(result.errors) - 80} more errors", "bad")
-            logwrite(f"Copied Repack files to Script: {result.moved}", "good" if result.moved else "warn")
-            if result.overwritten:
-                logwrite(f"Overwritten existing Script files: {result.overwritten}", "warn")
-            if result.errors:
-                logwrite(f"Move Repack errors: {len(result.errors)}", "bad")
+            logwrite(f"DRAT workspace: {workspace.manual_root}", "good")
+            logwrite(f"Game profile: {workspace.profile.name}")
+            logwrite(f"Script target: {script_folder}")
+            logwrite(f"Game target: {game_folder}")
 
-        def move_to_game(logwrite, progresswrite):
-            wad_repack = str(self.config.get("wad_repack_path", "")).strip()
-            game_folder = str(self.config.get("game_folder_path", "")).strip()
-            if not wad_repack or not game_folder:
-                logwrite("Set Settings > WAD Repack and Settings > Game Folder first.", "warn")
-                return
-            self._check_stop()
-            progresswrite(0, 0, "Scanning WAD Repack files")
-            result = copy_wad_repack_to_game(
-                wad_repack,
-                game_folder,
-                progress=lambda done, total, path: progresswrite(done, total, f"WAD → Game {path.name}"),
-            )
-            logwrite(f"WAD Repack files scanned: {result.scanned}")
-            if result.skipped_identical:
-                logwrite(f"Identical Game Folder files skipped: {result.skipped_identical}", "info")
-            for src, dest in result.moved_files[:200]:
-                self._check_stop()
-                logwrite(f"  copy: {src} -> {dest}", "good")
-            if len(result.moved_files) > 200:
-                logwrite(f"  ... {len(result.moved_files) - 200} more copied", "good")
-            for src, err in result.errors[:80]:
-                logwrite(f"  ERR {src}: {err}", "bad")
-            if len(result.errors) > 80:
-                logwrite(f"  ... {len(result.errors) - 80} more errors", "bad")
-            logwrite(f"Copied WAD Repack files to Game Folder: {result.moved}", "good" if result.moved else "warn")
-            if result.overwritten:
-                logwrite(f"Overwritten existing Game Folder files: {result.overwritten}", "warn")
-            if result.errors:
-                logwrite(f"Move to Game errors: {len(result.errors)}", "bad")
-
-        def restore_from_copy(logwrite, progresswrite):
-            working_paths = self._selected_working_paths("backup_sync", logwrite=logwrite)
-            paths = [str(path) for path in working_paths] + list(restore_paths)
-            if not paths:
-                logwrite("Select Working folders or add restore folders / - Copy.po files first.", "warn")
-                return
-            self._check_stop()
-            progresswrite(0, 0, "Scanning Copy.po files")
-            results = restore_working_po_from_copies(
-                paths,
-                progress=lambda done, total, path: progresswrite(done, total, f"Restore {path.name}"),
-            )
-            ok = failed = 0
-            for result_index, result in enumerate(results, start=1):
-                self._check_stop()
-                if result.ok:
-                    ok += 1
-                    logwrite(f"OK {result.action}: {result.copy_po} -> {result.work_po}", "good")
+            # 1. Sync selected Working folders into DRAT EXTRACTED by filename.
+            working: list[tuple[str, Path]] = []
+            invalid: list[str] = []
+            for option_key in selected:
+                label = option_name(option_key)
+                raw = str(self.config.get(f"working_{option_key}_path", "")).strip()
+                path = Path(raw).expanduser() if raw else None
+                if path is None or not path.exists() or not path.is_dir():
+                    invalid.append(f"{label}: {raw or 'not set'}")
                 else:
-                    failed += 1
-                    logwrite(f"ERR {result.action}: {result.copy_po} -> {result.work_po} | {result.error}", "bad")
-            logwrite(f"Restored working PO files: {ok}", "good")
-            if failed:
-                logwrite(f"Failed/skipped: {failed}", "bad")
-            if not results:
-                logwrite("No Copy.po files found in selected folders.", "warn")
+                    working.append((label, path))
+            if invalid:
+                raise DratRepackError("Invalid selected Working folders: " + "; ".join(invalid))
 
-        def start_restore() -> None:
-            answer = QMessageBox.question(
-                self,
-                "Restore working PO",
-                "This will overwrite working .po files with clean content copied from matching - Copy.po files.\n\nCopy.po files will NOT be modified. Continue?",
+            sync_failures = 0
+            total_synced = total_identical = 0
+            progresswrite(0, 0, "1/5 Indexing DRAT EXTRACTED PO files")
+            target_index, target_file_count = index_po_files_by_name(
+                workspace.extracted_root,
+                progress=lambda done, total, path: progresswrite(
+                    done,
+                    total,
+                    f"1/5 Index DRAT EXTRACTED: {path.name}",
+                ),
             )
-            if answer != QMessageBox.StandardButton.Yes:
-                log.append_log("Restore cancelled before start.", "warn")
-                return
-            self._run_threaded(restore_btn, log, restore_from_copy)
+            logwrite(f"1/5 Target PO index ready: {target_file_count} file(s)")
+            progresswrite(0, len(working), "1/5 Sync selected Working folders")
+            for option_index, (label, working_folder) in enumerate(working, start=1):
+                self._check_stop()
+                result = sync_by_filename_report(
+                    working_folder,
+                    workspace.extracted_root,
+                    progress=lambda done, total, path, label=label: progresswrite(
+                        done, total, f"1/5 Sync {label}: {path.name}"
+                    ),
+                    target_index=target_index,
+                    target_file_count=target_file_count,
+                    collect_target_without_source=False,
+                )
+                total_synced += result.copied
+                total_identical += result.skipped_identical
+                failures = result.duplicate_source_names + len(result.source_without_target)
+                if result.source_files == 0:
+                    failures += 1
+                    logwrite(f"{label}: no working PO files found.", "bad")
+                sync_failures += failures
+                logwrite(
+                    f"{label}: source={result.source_files}, copied={result.copied}, "
+                    f"identical={result.skipped_identical}, missing targets={len(result.source_without_target)}, "
+                    f"duplicate source names={result.duplicate_source_names}",
+                    "good" if failures == 0 else "bad",
+                )
+                log_paths(f"{label} files not found in DRAT EXTRACTED", result.source_without_target, logwrite, "bad")
+                log_paths(f"{label} duplicate source files", result.duplicate_source_files, logwrite, "bad")
+                progresswrite(option_index, len(working), f"1/5 Synced {label}")
+            if sync_failures:
+                raise DratRepackError(f"Sync stage has {sync_failures} unresolved file problem(s); repack stopped.")
+            logwrite(f"1/5 Sync complete: copied={total_synced}, identical={total_identical}", "good")
 
-        backup_btn.clicked.connect(lambda: self._run_threaded(backup_btn, log, backup))
-        option_sync_btn.clicked.connect(lambda: self._run_threaded(option_sync_btn, log, sync_selected_options))
+            # 2. Repack every supported DRAT text/container format.
+            progresswrite(0, 0, "2/5 Repacking LIN and PAK files")
+            format_result = repack_all_formats(
+                workspace,
+                progress=lambda done, total, path: progresswrite(done, total, f"2/5 Repack {path.name}"),
+                cancel=self._check_stop,
+            )
+            for category in format_result.categories_missing:
+                logwrite(f"Category not present, skipped: {category}", "info")
+            log_items(
+                "Skipped format jobs",
+                format_result.skipped,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "info",
+            )
+            log_items(
+                "Format errors",
+                format_result.errors,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "bad",
+            )
+            log_paths("Built LIN/PAK outputs", format_result.built_outputs, logwrite, "good")
+            log_paths("Unchanged LIN/PAK outputs", format_result.unchanged_outputs, logwrite, "info")
+            if format_result.errors:
+                raise DratRepackError(f"Format repack failed for {len(format_result.errors)} source folder(s).")
+            if not format_result.outputs:
+                raise DratRepackError("No LIN or PAK files were available from DRAT EXTRACTED.")
+            logwrite(
+                f"2/5 Repack complete: built={len(format_result.built_outputs)}, "
+                f"unchanged={len(format_result.unchanged_outputs)}",
+                "good",
+            )
+
+            # 3. Resolve generated files to Script targets, but do not copy yet.
+            # WAD creation consumes these files virtually, keeping the extracted
+            # WAD tree untouched until every repack has completed successfully.
+            progresswrite(0, 0, "3/5 Preparing virtual Script overlay")
+            script_plan = plan_files_by_filename(
+                format_result.outputs,
+                script_folder,
+                progress=lambda done, total, path: progresswrite(
+                    done,
+                    total,
+                    f"3/5 Scan Script: {path.name}",
+                ),
+                cancel=self._check_stop,
+            )
+            log_items(
+                "Script mapping errors",
+                script_plan.errors,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "bad",
+            )
+            if script_plan.errors:
+                raise DratRepackError(f"Script mapping failed for {len(script_plan.errors)} generated file(s).")
+            log_items(
+                "Planned Script replacements",
+                script_plan.matches,
+                lambda item: f"{item[0]} -> {item[1]}",
+                logwrite,
+                "info",
+            )
+            script_overrides = {target: source for source, target in script_plan.matches}
+            logwrite(f"3/5 Script overlay ready: matched={len(script_plan.matches)}", "good")
+
+            # 4. Repack all WADs using virtual generated-file replacements.
+            progresswrite(0, 0, "4/5 Repacking WAD")
+            wad_result = repack_all_wads(
+                workspace,
+                file_overrides=script_overrides,
+                progress=lambda done, total, path: progresswrite(done, total, f"4/5 WAD {path.name}"),
+                cancel=self._check_stop,
+            )
+            log_items(
+                "Skipped WAD jobs",
+                wad_result.skipped,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "info",
+            )
+            log_items(
+                "WAD errors",
+                wad_result.errors,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "bad",
+            )
+            log_paths("Built WAD outputs", wad_result.built_outputs, logwrite, "good")
+            log_paths("Unchanged WAD outputs", wad_result.unchanged_outputs, logwrite, "info")
+            if wad_result.errors:
+                raise DratRepackError(f"WAD repack failed for {len(wad_result.errors)} folder(s).")
+            if not wad_result.outputs:
+                raise DratRepackError("No WAD files were available.")
+            logwrite(
+                f"4/5 WAD repack complete: built={len(wad_result.built_outputs)}, "
+                f"unchanged={len(wad_result.unchanged_outputs)}",
+                "good",
+            )
+
+            # 5. Validate both destinations first, then deploy Script and WAD files
+            # in one transaction. No target file is changed before all repacks and
+            # all filename matching have succeeded.
+            progresswrite(0, 0, "5/5 Preparing transactional deployment")
+            game_plan = plan_files_by_filename(
+                wad_result.outputs,
+                game_folder,
+                progress=lambda done, total, path: progresswrite(
+                    done,
+                    total,
+                    f"5/5 Scan Game: {path.name}",
+                ),
+                cancel=self._check_stop,
+            )
+            log_items(
+                "Game mapping errors",
+                game_plan.errors,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "bad",
+            )
+            if game_plan.errors:
+                raise DratRepackError(f"Game mapping failed for {len(game_plan.errors)} WAD file(s).")
+
+            script_targets = {target for _source, target in script_plan.matches}
+            game_targets = {target for _source, target in game_plan.matches}
+            deploy_result = deploy_filename_plans(
+                [script_plan, game_plan],
+                progress=lambda done, total, path: progresswrite(done, total, f"5/5 Deploy {path.name}"),
+                cancel=self._check_stop,
+            )
+            log_items(
+                "Deployed files",
+                deploy_result.copied_files,
+                lambda item: (
+                    f"{'SCRIPT' if item[1] in script_targets else 'GAME'} {item[0]} -> {item[1]}"
+                ),
+                logwrite,
+                "good",
+            )
+            log_items(
+                "Unchanged deployment targets",
+                deploy_result.skipped_identical_files,
+                lambda item: f"{'SCRIPT' if item[1] in script_targets else 'GAME'} {item[1]}",
+                logwrite,
+                "info",
+            )
+            log_items(
+                "Deployment errors",
+                deploy_result.errors,
+                lambda item: f"{item[0]}: {item[1]}",
+                logwrite,
+                "bad",
+            )
+            if deploy_result.errors:
+                raise DratRepackError(f"Transactional deployment failed for {len(deploy_result.errors)} file(s).")
+
+            script_copied = sum(1 for _source, target in deploy_result.copied_files if target in script_targets)
+            game_copied = sum(1 for _source, target in deploy_result.copied_files if target in game_targets)
+            script_unchanged = sum(
+                1 for _source, target in deploy_result.skipped_identical_files if target in script_targets
+            )
+            game_unchanged = sum(
+                1 for _source, target in deploy_result.skipped_identical_files if target in game_targets
+            )
+            logwrite(
+                f"5/5 Deployment complete: Script copied={script_copied}, unchanged={script_unchanged}; "
+                f"Game copied={game_copied}, unchanged={game_unchanged}",
+                "good",
+            )
+            logwrite(
+                f"Repack finished. Synced {total_synced} PO file(s); "
+                f"LIN/PAK built={len(format_result.built_outputs)}, unchanged={len(format_result.unchanged_outputs)}; "
+                f"WAD built={len(wad_result.built_outputs)}, unchanged={len(wad_result.unchanged_outputs)}; "
+                f"deployed={deploy_result.copied}, unchanged targets={deploy_result.skipped_identical}.",
+                "good",
+            )
+
+        repack_btn.clicked.connect(lambda: self._run_threaded(repack_btn, log, repack))
         sync_btn.clicked.connect(lambda: self._run_threaded(sync_btn, log, sync))
-        move_compile_btn.clicked.connect(lambda: self._run_threaded(move_compile_btn, log, move_compile))
-        move_game_btn.clicked.connect(lambda: self._run_threaded(move_game_btn, log, move_to_game))
-        restore_btn.clicked.connect(start_restore)
 
 
 def _send_app_link_to_running_instance(value: str) -> bool:

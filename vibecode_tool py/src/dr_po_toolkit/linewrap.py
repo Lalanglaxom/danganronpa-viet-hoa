@@ -81,8 +81,8 @@ def normalize_wrap_presets(
 
     defaults = default_wrap_presets(legacy_soft, legacy_hard, legacy_max_cuts)
     raw_presets = value if isinstance(value, list) else []
-    presets = []
-    for index in range(0, 4):
+    presets = [dict(BASE64_WRAP_PRESET)]
+    for index in range(1, 4):
         raw = raw_presets[index] if index < len(raw_presets) else defaults[index]
         presets.append(normalize_wrap_preset(raw, defaults[index]))
     return presets

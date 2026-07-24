@@ -1157,3 +1157,32 @@ msgstr "Xin chào"
 
     assert len(results) == 2
     assert progress == [(1, 2, "a.po"), (2, 2, "b.po")]
+
+
+def test_sync_reuses_prebuilt_target_index_without_collecting_unmatched_targets():
+    import tempfile
+
+    from dr_po_toolkit.backup import index_po_files_by_name, sync_by_filename_report
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        source = root / "source"
+        target = root / "target"
+        source.mkdir()
+        target.mkdir()
+        (source / "match.po").write_text('msgid "A"\nmsgstr "new"\n', encoding="utf-8")
+        (target / "match.po").write_text('msgid "A"\nmsgstr "old"\n', encoding="utf-8")
+        (target / "unrelated.po").write_text('msgid "B"\nmsgstr "keep"\n', encoding="utf-8")
+
+        target_index, target_count = index_po_files_by_name(target)
+        result = sync_by_filename_report(
+            source,
+            target,
+            target_index=target_index,
+            target_file_count=target_count,
+            collect_target_without_source=False,
+        )
+
+    assert result.copied == 1
+    assert result.target_files == 2
+    assert result.target_without_source == []

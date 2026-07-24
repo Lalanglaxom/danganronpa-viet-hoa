@@ -57,15 +57,25 @@ dr-po replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 
 ## Task progress
 
-The GUI has a shared progress bar in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, Backup, Sync, Restore, and deploy/copy tasks. File- or entry-based work shows current/total counts and percentages. Discovery, browser, and network phases use an animated indeterminate bar until a reliable total is known. Search keeps its detailed local progress bar and mirrors the same state in the shared bar.
+The GUI has a shared progress bar in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, manual filename sync, and the complete Repack pipeline. File- or entry-based work shows current/total counts and percentages. Discovery, browser, and network phases use an animated indeterminate bar until a reliable total is known. Search keeps its detailed local progress bar and mirrors the same state in the shared bar.
 
-## Search / Backup / Sync performance
+## Search / Sync / Repack performance
 
 Large folders are faster in this build because scanners now prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search also does a quick file-level prefilter before fully parsing a `.po` file, so files that cannot contain the phrase are skipped early.
 
 `Sync by Filename` now refuses nested source/target folders, skips self-copy, skips duplicate source filenames, and avoids rewriting target files that are already identical. This reduces disk writes a lot when syncing the same folder repeatedly.
 
-In GUI Settings, each Danganronpa file group has only a Working folder. Set one shared `Extracted` folder under Other folders; `Sync Selected Options` sends every selected Working folder there by default. Existing destination files are matched by filename; new files keep their relative Working-folder path under `Extracted`.
+In GUI Settings, set each Danganronpa file group's `Working` folder, plus `DRAT Folder`, `Script`, and `Game Folder`. `DRAT Folder` may point directly to a game manual-mode folder such as `DR1 (PC) [MANUAL MODE]`, or to its parent DRAT installation folder.
+
+The `Repack` button runs one complete build:
+
+1. sync selected Working `.po` files into DRAT `EXTRACTED` by filename
+2. fingerprint LIN/PAK source folders and rebuild only changed jobs
+3. resolve generated files to matching `Script` filenames without copying them yet
+4. rebuild only changed WADs, reading generated LIN/PAK bytes through a virtual overlay
+5. after every repack and filename check succeeds, deploy Script and Game files together
+
+Incremental state is stored in `REPACKED/.drat_repack_cache.json`. Existing outputs are verified before reuse, identical rebuilt outputs are kept without rewriting, and changed outputs are staged before replacement. The pipeline stops without deploying anything when a selected Working file has no DRAT target, a generated filename is ambiguous, a Script/Game target is missing, or any repack fails. `Sync by Filename` remains as a separate manual action.
 
 ## Translafixer GUI tab
 
@@ -296,9 +306,7 @@ Gemini Web checks the stop request between files, between batches, during wait t
 
 ### Restore working PO from Copy.po
 
-GUI: `Backup / Sync` tab → add one or more `Restore folders` → click `Restore Working PO from Copy.po`.
-
-The restore tool scans every selected folder recursively and overwrites each working `.po` with clean content copied from its matching `- Copy.po` file. It never modifies, deletes, renames, or overwrites the `- Copy.po` files.
+The restore command scans every selected folder recursively and overwrites each working `.po` with clean content copied from its matching `- Copy.po` file. It never modifies, deletes, renames, or overwrites the `- Copy.po` files.
 
 CLI:
 
@@ -361,3 +369,8 @@ git add .
 git commit -m "Stop tracking ignored files"
 git push
 ```
+
+## Third-party code
+
+The DRAT-compatible LIN/PAK/WAD repacking implementation is based on the
+MIT-licensed Danganronpa Another Tool. See `THIRD_PARTY_NOTICES.md`.
