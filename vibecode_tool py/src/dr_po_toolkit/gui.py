@@ -13,7 +13,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Callable
 
-from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize, QEventLoop
+from PyQt6.QtCore import QEvent, QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize, QEventLoop
 from PyQt6.QtNetwork import QLocalServer, QLocalSocket
 from PyQt6.QtGui import QColor, QDesktopServices, QFont, QKeySequence, QShortcut, QSyntaxHighlighter, QTextCharFormat, QTextCursor, QBrush, QTextDocument, QPainter
 from PyQt6.QtWidgets import (
@@ -99,9 +99,6 @@ from .shortcuts import (
     GEMINI_TRANSLATE_SHORTCUT,
     PRESET_REPLACE_SHORTCUT,
     SUGGESTION_REFRESH_SHORTCUT,
-    SUGGESTION_SHORTCUTS,
-    WRAP_ENTIRE_FILE_SHORTCUTS,
-    WRAP_PRESET_SHORTCUTS,
 )
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
@@ -427,6 +424,148 @@ class RichTextCellDelegate(NoFocusCellDelegate):
         width = max(180, option.rect.width() - 8) if option.rect.width() > 0 else 360
         doc.setTextWidth(width)
         return QSize(int(width) + 8, int(doc.size().height()) + 8)
+
+
+
+def _shortcut_digit_from_key(key: int) -> int | None:
+    first = Qt.Key.Key_0.value
+    last = Qt.Key.Key_9.value
+    value = int(key)
+    if first <= value <= last:
+        return value - first
+    return None
+
+
+def _shortcut_focus_is_inside(root: QWidget) -> bool:
+    focus = QApplication.focusWidget()
+    return focus is root or (focus is not None and root.isAncestorOf(focus))
+
+
+class PersistentWrapShortcutFilter(QObject):
+    """Repeat presets after Ctrl+Space until the user releases Ctrl."""
+
+    def __init__(
+        self,
+        root: QWidget,
+        preset_callbacks: dict[int, Callable[[], None]],
+        wrap_entire_file: Callable[[], None],
+    ) -> None:
+        super().__init__(root)
+        self._root = root
+        self._preset_callbacks = dict(preset_callbacks)
+        self._wrap_entire_file = wrap_entire_file
+        self._armed = False
+        app = QApplication.instance()
+        if app is not None:
+            app.installEventFilter(self)
+
+    @property
+    def armed(self) -> bool:
+        return self._armed
+
+    def eventFilter(self, watched: QObject, event: QEvent) -> bool:  # noqa: N802 - Qt API
+        event_type = event.type()
+
+        if event_type == QEvent.Type.KeyRelease:
+            if event.key() == Qt.Key.Key_Control:  # type: ignore[attr-defined]
+                self._armed = False
+            return False
+
+        if event_type != QEvent.Type.KeyPress:
+            return False
+
+        if not _shortcut_focus_is_inside(self._root):
+            self._armed = False
+            return False
+
+        key = event.key()  # type: ignore[attr-defined]
+        modifiers = event.modifiers()  # type: ignore[attr-defined]
+        ctrl_held = bool(modifiers & Qt.KeyboardModifier.ControlModifier)
+        blocked_modifier = bool(
+            modifiers
+            & (
+                Qt.KeyboardModifier.ShiftModifier
+                | Qt.KeyboardModifier.AltModifier
+                | Qt.KeyboardModifier.MetaModifier
+            )
+        )
+
+        if key == Qt.Key.Key_Space and ctrl_held and not blocked_modifier:
+            self._armed = True
+            return True
+
+        if not self._armed:
+            return False
+
+        if not ctrl_held or blocked_modifier:
+            self._armed = False
+            return False
+
+        if key == Qt.Key.Key_Escape:
+            self._armed = False
+            return True
+
+        digit = _shortcut_digit_from_key(key)
+        callback = self._preset_callbacks.get(digit or -1)
+        if callback is not None:
+            if not event.isAutoRepeat():  # type: ignore[attr-defined]
+                callback()
+            return True
+
+        if key in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
+            if not event.isAutoRepeat():  # type: ignore[attr-defined]
+                self._wrap_entire_file()
+            return True
+
+        return False
+
+
+class RepeatedSuggestionShortcutFilter(QObject):
+    """Apply Ctrl+1/2/3 repeatedly while Ctrl remains held in PO Viewer."""
+
+    def __init__(
+        self,
+        root: QWidget,
+        callbacks: dict[int, Callable[[], None]],
+        *,
+        blocked_when: Callable[[], bool] | None = None,
+    ) -> None:
+        super().__init__(root)
+        self._root = root
+        self._callbacks = dict(callbacks)
+        self._blocked_when = blocked_when
+        app = QApplication.instance()
+        if app is not None:
+            app.installEventFilter(self)
+
+    def eventFilter(self, watched: QObject, event: QEvent) -> bool:  # noqa: N802 - Qt API
+        if event.type() != QEvent.Type.KeyPress:
+            return False
+        if not _shortcut_focus_is_inside(self._root):
+            return False
+        if self._blocked_when is not None and self._blocked_when():
+            return False
+
+        modifiers = event.modifiers()  # type: ignore[attr-defined]
+        ctrl_held = bool(modifiers & Qt.KeyboardModifier.ControlModifier)
+        blocked_modifier = bool(
+            modifiers
+            & (
+                Qt.KeyboardModifier.ShiftModifier
+                | Qt.KeyboardModifier.AltModifier
+                | Qt.KeyboardModifier.MetaModifier
+            )
+        )
+        if not ctrl_held or blocked_modifier:
+            return False
+
+        digit = _shortcut_digit_from_key(event.key())  # type: ignore[attr-defined]
+        callback = self._callbacks.get(digit or -1)
+        if callback is None:
+            return False
+        if not event.isAutoRepeat():  # type: ignore[attr-defined]
+            callback()
+        return True
 
 
 class ToolkitGUI(QMainWindow):
@@ -2140,7 +2279,7 @@ class ToolkitGUI(QMainWindow):
         self._dr_option_selector(layout, "search")
         theme_note = QLabel(
             "☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates results; Alt+Up/Down switches files. "
-            "Hold Ctrl, press Space, then 1/2/3/4 to wrap with that preset; Ctrl+Space then Enter wraps the entire file. "
+            "Hold Ctrl, tap Space, then press 1/2/3/4 repeatedly to wrap with those presets; Enter wraps the entire file, and releasing Ctrl exits wrap mode. "
             "Ctrl+R applies preset replacements, Ctrl+G runs Gemini, Ctrl+S saves, and Ctrl+Z undoes."
         )
         theme_note.setObjectName("muted")
@@ -3293,19 +3432,23 @@ class ToolkitGUI(QMainWindow):
         add_search_shortcut("Ctrl+S", save_current)
         add_search_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_search_file(-1))
         add_search_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_search_file(1))
-        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
-            add_search_shortcut(
-                sequence,
-                lambda index=preset_index: (
-                    self._set_active_linewrap_preset(index),
-                    wrap_selected_msgstrs(index),
-                ),
-            )
-        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
-            add_search_shortcut(sequence, wrap_current_search_file)
+        search_wrap_filter = PersistentWrapShortcutFilter(
+            _tab,
+            {
+                index + 1: (
+                    lambda preset_index=index: (
+                        self._set_active_linewrap_preset(preset_index),
+                        wrap_selected_msgstrs(preset_index),
+                    )
+                )
+                for index in range(4)
+            },
+            wrap_current_search_file,
+        )
         add_search_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_search_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_search_with_gemini_api)
         self._search_shortcuts = search_shortcuts
+        self._search_wrap_filter = search_wrap_filter
 
 
     # ---------------- Translafixer ----------------
@@ -5304,19 +5447,23 @@ class ToolkitGUI(QMainWindow):
         add_duplicate_shortcut("Ctrl+S", save_changed)
         add_duplicate_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_duplicate_file(-1))
         add_duplicate_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_duplicate_file(1))
-        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
-            add_duplicate_shortcut(
-                sequence,
-                lambda index=preset_index: (
-                    self._set_active_linewrap_preset(index),
-                    breakline_selected(index),
-                ),
-            )
-        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
-            add_duplicate_shortcut(sequence, wrap_current_duplicate_file)
+        duplicate_wrap_filter = PersistentWrapShortcutFilter(
+            dialog,
+            {
+                index + 1: (
+                    lambda preset_index=index: (
+                        self._set_active_linewrap_preset(preset_index),
+                        breakline_selected(preset_index),
+                    )
+                )
+                for index in range(4)
+            },
+            wrap_current_duplicate_file,
+        )
         add_duplicate_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_duplicate_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_duplicate_with_gemini_api)
         dialog._shortcuts = duplicate_shortcuts  # type: ignore[attr-defined]
+        dialog._wrap_shortcut_filter = duplicate_wrap_filter  # type: ignore[attr-defined]
         populate(displayed_conflict_entries())
         QTimer.singleShot(0, refresh_table_row_heights)
         update_status()
@@ -5333,8 +5480,8 @@ class ToolkitGUI(QMainWindow):
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
             "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Alt+Up/Down = file. "
-            "Hold Ctrl, press Space, then 1/2/3/4 to wrap selected/current with that preset; Ctrl+Space then Enter wraps the entire file. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
-            "Ctrl+1/2/3 applies suggestions 1/2/3 and Alt+0 refreshes them. These work while editing Vietnamese too. "
+            "Hold Ctrl, tap Space, then press 1/2/3/4 repeatedly to wrap selected/current with those presets; Enter wraps the entire file, and releasing Ctrl exits wrap mode. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
+            "Hold Ctrl and press 1/2/3 repeatedly to apply suggestions 1/2/3; Alt+0 refreshes them. These work while editing Vietnamese too. "
             "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
@@ -5501,7 +5648,7 @@ class ToolkitGUI(QMainWindow):
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Ctrl+1/2/3 apply suggestions 1/2/3; Alt+0 refreshes.")
+        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Hold Ctrl and press 1/2/3 repeatedly to apply suggestions; Alt+0 refreshes.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -7053,22 +7200,30 @@ class ToolkitGUI(QMainWindow):
         add_shortcut("Ctrl+S", save_file)
         add_shortcut("Ctrl+Z", undo_last_po_change)
         add_shortcut("Ctrl+F", open_search_replace_dialog)
-        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
-            add_shortcut(
-                sequence,
-                lambda index=preset_index: (
-                    self._set_active_linewrap_preset(index),
-                    wrap_selected(index),
-                ),
-            )
-        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
-            add_shortcut(sequence, wrap_all)
+        po_viewer_wrap_filter = PersistentWrapShortcutFilter(
+            _tab,
+            {
+                index + 1: (
+                    lambda preset_index=index: (
+                        self._set_active_linewrap_preset(preset_index),
+                        wrap_selected(preset_index),
+                    )
+                )
+                for index in range(4)
+            },
+            wrap_all,
+        )
+        suggestion_shortcut_filter = RepeatedSuggestionShortcutFilter(
+            _tab,
+            {number: (lambda suggestion_number=number: apply_suggestion_number(suggestion_number)) for number in range(1, 4)},
+            blocked_when=lambda: po_viewer_wrap_filter.armed,
+        )
         add_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_selected_with_gemini_api)
-        for suggestion_number, sequence in enumerate(SUGGESTION_SHORTCUTS, start=1):
-            add_shortcut(sequence, lambda n=suggestion_number: apply_suggestion_number(n))
         add_shortcut(SUGGESTION_REFRESH_SHORTCUT, lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         self._po_viewer_shortcuts = shortcuts
+        self._po_viewer_wrap_filter = po_viewer_wrap_filter
+        self._po_viewer_suggestion_filter = suggestion_shortcut_filter
 
         set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)
 
