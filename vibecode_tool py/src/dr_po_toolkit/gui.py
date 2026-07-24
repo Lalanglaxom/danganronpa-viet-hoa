@@ -100,7 +100,6 @@ from .shortcuts import (
     PRESET_REPLACE_SHORTCUT,
     SUGGESTION_REFRESH_SHORTCUT,
     SUGGESTION_SHORTCUTS,
-    WRAP_CURRENT_PRESET_SHORTCUT,
     WRAP_ENTIRE_FILE_SHORTCUTS,
     WRAP_PRESET_SHORTCUTS,
 )
@@ -2141,7 +2140,7 @@ class ToolkitGUI(QMainWindow):
         self._dr_option_selector(layout, "search")
         theme_note = QLabel(
             "☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates results; Alt+Up/Down switches files. "
-            "Ctrl+Space wraps with the active preset; hold Ctrl, press 1/2/3/4, then Space for a specific preset; Ctrl+Alt+Enter wraps the entire file. "
+            "Hold Ctrl, press Space, then 1/2/3/4 to wrap with that preset; Ctrl+Space then Enter wraps the entire file. "
             "Ctrl+R applies preset replacements, Ctrl+G runs Gemini, Ctrl+S saves, and Ctrl+Z undoes."
         )
         theme_note.setObjectName("muted")
@@ -3294,7 +3293,6 @@ class ToolkitGUI(QMainWindow):
         add_search_shortcut("Ctrl+S", save_current)
         add_search_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_search_file(-1))
         add_search_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_search_file(1))
-        add_search_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, wrap_selected_msgstrs)
         for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
             add_search_shortcut(
                 sequence,
@@ -5306,7 +5304,6 @@ class ToolkitGUI(QMainWindow):
         add_duplicate_shortcut("Ctrl+S", save_changed)
         add_duplicate_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_duplicate_file(-1))
         add_duplicate_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_duplicate_file(1))
-        add_duplicate_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, breakline_selected)
         for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
             add_duplicate_shortcut(
                 sequence,
@@ -5336,8 +5333,8 @@ class ToolkitGUI(QMainWindow):
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
             "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Alt+Up/Down = file. "
-            "Ctrl+Space wraps selected/current with the active preset; hold Ctrl and press 1/2/3/4 then Space to use that preset; Ctrl+Alt+Enter wraps the entire file. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
-            "Alt+1..9 applies suggestions and Alt+0 refreshes them. These work while editing Vietnamese too. "
+            "Hold Ctrl, press Space, then 1/2/3/4 to wrap selected/current with that preset; Ctrl+Space then Enter wraps the entire file. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
+            "Ctrl+1/2/3 applies suggestions 1/2/3 and Alt+0 refreshes them. These work while editing Vietnamese too. "
             "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
@@ -5504,7 +5501,7 @@ class ToolkitGUI(QMainWindow):
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Alt+1..9 apply, Alt+0 refresh.")
+        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Ctrl+1/2/3 apply suggestions 1/2/3; Alt+0 refreshes.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -7056,7 +7053,6 @@ class ToolkitGUI(QMainWindow):
         add_shortcut("Ctrl+S", save_file)
         add_shortcut("Ctrl+Z", undo_last_po_change)
         add_shortcut("Ctrl+F", open_search_replace_dialog)
-        add_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, wrap_selected)
         for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
             add_shortcut(
                 sequence,

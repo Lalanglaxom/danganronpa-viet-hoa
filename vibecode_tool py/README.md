@@ -108,7 +108,7 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 7. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
 8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
 9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
-10. Use `Alt+Up` / `Alt+Down` to switch files. Use `Ctrl+Space` to wrap selected/current entries with the active preset, or hold `Ctrl`, press `1/2/3/4`, then `Space` to wrap with a specific preset. `Ctrl+Alt+Enter` wraps the entire current file, `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. PO Viewer suggestions use `Alt+1..9`, with `Alt+0` to refresh. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
+10. Use `Alt+Up` / `Alt+Down` to switch files. Hold `Ctrl`, press `Space`, then `1/2/3/4` to wrap selected/current entries with that preset. `Ctrl+Space`, then `Enter`, wraps the entire current file. `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. PO Viewer suggestions use `Ctrl+1/2/3`, with `Alt+0` to refresh. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
 ## Automatic Gemini Web workflow
 
