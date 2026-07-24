@@ -75,8 +75,8 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
         merged["linewrap_presets"] = default_wrap_presets()
         return merged
 
-    # Migrate the former single wrap setting into editable presets 2-4.
-    # Preset 1 is always the known base-64 behavior.
+    # Migrate the former single wrap setting into four editable presets.
+    # Preset 1 starts with the known base-64 behavior but remains customizable.
     if "linewrap_presets" not in data:
         data["linewrap_presets"] = default_wrap_presets(
             data.get("soft_limit", DEFAULT_CONFIG["soft_limit"]),

@@ -93,6 +93,17 @@ from .notifications import play_task_notification
 from .po_io import load_po, save_po
 from .rules import apply_rules_to_entry, apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_files
+from .shortcuts import (
+    FILE_NEXT_SHORTCUT,
+    FILE_PREVIOUS_SHORTCUT,
+    GEMINI_TRANSLATE_SHORTCUT,
+    PRESET_REPLACE_SHORTCUT,
+    SUGGESTION_REFRESH_SHORTCUT,
+    SUGGESTION_SHORTCUTS,
+    WRAP_CURRENT_PRESET_SHORTCUT,
+    WRAP_ENTIRE_FILE_SHORTCUTS,
+    WRAP_PRESET_SHORTCUTS,
+)
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
     ReferenceTranslationConflictEntry,
@@ -2128,7 +2139,11 @@ class ToolkitGUI(QMainWindow):
     def _build_search_tab(self) -> None:
         _tab, layout = self._new_tab("Search")
         self._dr_option_selector(layout, "search")
-        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates the focused results table. Ctrl+S saves the current result; Ctrl+Z undoes editor text or the last saved Search edit.")
+        theme_note = QLabel(
+            "☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates results; Alt+Up/Down switches files. "
+            "Ctrl+Space wraps with the active preset; hold Ctrl, press 1/2/3/4, then Space for a specific preset; Ctrl+Alt+Enter wraps the entire file. "
+            "Ctrl+R applies preset replacements, Ctrl+G runs Gemini, Ctrl+S saves, and Ctrl+Z undoes."
+        )
         theme_note.setObjectName("muted")
         theme_note.setWordWrap(True)
         layout.addWidget(theme_note)
@@ -2214,8 +2229,11 @@ class ToolkitGUI(QMainWindow):
         open_btn = self._button("Open File", secondary=True)
         save_btn = self._button("Save msgstr")
         preset_replace_btn = self._button("Preset Replace", secondary=True)
+        gemini_btn = self._button("Gemini", secondary=True)
+        gemini_btn.setToolTip("Translate selected/current Search results with Gemini API (Ctrl+G).")
         edit_buttons.addWidget(save_btn)
         edit_buttons.addWidget(preset_replace_btn)
+        edit_buttons.addWidget(gemini_btn)
         edit_buttons.addSpacing(8)
         wrap_label = QLabel("Wrap")
         wrap_label.setObjectName("muted")
@@ -2347,6 +2365,7 @@ class ToolkitGUI(QMainWindow):
                 open_btn,
                 save_btn,
                 preset_replace_btn,
+                gemini_btn,
                 *search_wrap_buttons,
                 prev_btn,
                 next_btn,
@@ -2551,88 +2570,105 @@ class ToolkitGUI(QMainWindow):
             )
             return row
 
-        def save_updates(
-            updates: dict[int, str],
+        def result_indices_for_entry(path: Path, uid: str) -> list[int]:
+            path_key = self._path_key(path)
+            return [
+                idx
+                for idx, result in enumerate(self.search_results)
+                if result.uid == uid and self._path_key(result.file) == path_key
+            ]
+
+        def apply_search_change_records(
+            changes: list[dict[str, object]],
             *,
-            record_undo: bool = True,
-            progress_label: str = "Saving search changes",
-        ) -> int:
+            value_key: str,
+            record_undo: bool,
+            progress_label: str,
+            finish_label: str,
+        ) -> tuple[int, int]:
             save_state["errors"] = []
-            if not updates:
-                return 0
+            filtered: list[dict[str, object]] = []
+            for change in changes:
+                path_value = change.get("file")
+                uid = str(change.get("uid") or "")
+                if not isinstance(path_value, Path) or not uid:
+                    continue
+                target = unicodedata.normalize("NFC", str(change.get(value_key, "")))
+                old_text = unicodedata.normalize("NFC", str(change.get("old", "")))
+                new_text = unicodedata.normalize("NFC", str(change.get("new", "")))
+                if old_text == new_text:
+                    continue
+                normalized_change = dict(change)
+                normalized_change["file"] = path_value
+                normalized_change["uid"] = uid
+                normalized_change["old"] = old_text
+                normalized_change["new"] = new_text
+                normalized_change["target"] = target
+                filtered.append(normalized_change)
+            if not filtered:
+                return 0, 0
+
             grouped: dict[Path, list[dict[str, object]]] = defaultdict(list)
-            for idx, new_text in updates.items():
-                if idx < 0 or idx >= len(self.search_results):
-                    continue
-                result = self.search_results[idx]
-                old_text = result.msgstr
-                normalized_new = unicodedata.normalize("NFC", new_text)
-                if old_text == normalized_new:
-                    continue
-                grouped[result.file].append(
-                    {
-                        "index": idx,
-                        "file": result.file,
-                        "uid": result.uid,
-                        "old": old_text,
-                        "new": normalized_new,
-                    }
-                )
-            if not grouped:
-                return 0
+            for change in filtered:
+                grouped[change["file"]].append(change)  # type: ignore[index]
 
             begin_progress(progress_label, len(grouped))
             successful_changes: list[dict[str, object]] = []
-            for file_number, (path, changes) in enumerate(grouped.items(), start=1):
+            for file_number, (path, file_changes) in enumerate(grouped.items(), start=1):
                 try:
                     po = load_search_po(path)
                     by_uid = po.by_uid()
-                    translations = {
-                        str(change["uid"]): str(change["new"])
-                        for change in changes
-                        if str(change["uid"]) in by_uid
-                    }
-                    missing = len(changes) - len(translations)
+                    missing = 0
                     changed_on_disk = 0
-                    for uid, new_text in translations.items():
-                        normalized = unicodedata.normalize("NFC", new_text)
-                        entry = by_uid[uid]
-                        if entry.msgstr != normalized:
-                            entry.msgstr = normalized
+                    for change in file_changes:
+                        uid = str(change["uid"])
+                        entry = by_uid.get(uid)
+                        if entry is None:
+                            missing += 1
+                            continue
+                        target = str(change["target"])
+                        if entry.msgstr != target:
+                            entry.msgstr = target
                             changed_on_disk += 1
+                        if entry.msgstr == target:
+                            successful_changes.append(change)
                     if changed_on_disk:
                         save_po(po, path)
                     cache_saved_po(path, po)
-                    successful_changes.extend(
-                        change
-                        for change in changes
-                        if str(change["uid"]) in by_uid
-                        and by_uid[str(change["uid"])].msgstr == str(change["new"])
-                    )
                     if missing:
                         save_state["errors"].append(
-                            f"{path.name}: {missing} result entr{'y was' if missing == 1 else 'ies were'} not found"
+                            f"{path.name}: {missing} entr{'y was' if missing == 1 else 'ies were'} not found"
                         )
                 except Exception as exc:
                     search_save_cache.pop(self._path_key(path), None)
                     save_state["errors"].append(f"{path.name}: {exc}")
                 update_progress(file_number, len(grouped), progress_label)
 
-            changed_indices: list[int] = []
+            changed_indices: set[int] = set()
             for change in successful_changes:
-                idx = int(change["index"])
-                if 0 <= idx < len(self.search_results):
-                    self.search_results[idx].msgstr = str(change["new"])
-                    changed_indices.append(idx)
+                path = change["file"]
+                uid = str(change["uid"])
+                target = str(change["target"])
+                if not isinstance(path, Path):
+                    continue
+                for idx in result_indices_for_entry(path, uid):
+                    if self.search_results[idx].msgstr != target:
+                        self.search_results[idx].msgstr = target
+                    changed_indices.add(idx)
 
             if record_undo and successful_changes:
-                search_undo_stack.append(successful_changes)
+                search_undo_stack.append(
+                    [
+                        {key: value for key, value in change.items() if key != "target"}
+                        for change in successful_changes
+                    ]
+                )
                 trim_search_undo_stack()
 
             changed_rows: list[int] = []
             table.setUpdatesEnabled(False)
             try:
-                for idx in sorted(set(changed_indices)):
+                for idx in sorted(changed_indices):
                     row = update_result_row(idx)
                     if row is not None:
                         changed_rows.append(row)
@@ -2653,8 +2689,40 @@ class ToolkitGUI(QMainWindow):
                 if msgstr_box.toPlainText() != current_text:
                     msgstr_box.setPlainText(current_text)
                     self._clear_text_editor_undo(msgstr_box)
-            finish_progress(f"Saved {len(changed_indices)} result(s)")
-            return len(changed_indices)
+            finish_progress(finish_label.format(total=len(successful_changes), visible=len(changed_indices)))
+            return len(successful_changes), len(changed_indices)
+
+        def save_updates(
+            updates: dict[int, str],
+            *,
+            record_undo: bool = True,
+            progress_label: str = "Saving search changes",
+        ) -> int:
+            changes: list[dict[str, object]] = []
+            for idx, new_text in updates.items():
+                if idx < 0 or idx >= len(self.search_results):
+                    continue
+                result = self.search_results[idx]
+                normalized_new = unicodedata.normalize("NFC", new_text)
+                if result.msgstr == normalized_new:
+                    continue
+                changes.append(
+                    {
+                        "index": idx,
+                        "file": result.file,
+                        "uid": result.uid,
+                        "old": result.msgstr,
+                        "new": normalized_new,
+                    }
+                )
+            _total, visible = apply_search_change_records(
+                changes,
+                value_key="new",
+                record_undo=record_undo,
+                progress_label=progress_label,
+                finish_label="Saved {visible} result(s)",
+            )
+            return visible
 
         def save_current() -> None:
             idx = current_result_index()
@@ -2712,6 +2780,153 @@ class ToolkitGUI(QMainWindow):
                 f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
                 + save_error_suffix()
             )
+
+        def wrap_current_search_file() -> None:
+            idx = current_result_index()
+            if idx is None:
+                status.setText("Select a result first.")
+                return
+            result = self.search_results[idx]
+            try:
+                po = load_search_po(result.file)
+            except Exception as exc:
+                status.setText(f"Could not load {result.file.name}: {exc}")
+                return
+            soft_value, hard_value, cuts_value = self._linewrap_settings()
+            changes: list[dict[str, object]] = []
+            wrapped_count = 0
+            current_text = msgstr_box.toPlainText()
+            for entry in po.entries:
+                source = current_text if entry.uid == result.uid else entry.msgstr
+                fixed, did_change = wrap_msgstr(
+                    source,
+                    soft=soft_value,
+                    hard=hard_value,
+                    max_cuts=cuts_value,
+                )
+                if did_change:
+                    wrapped_count += 1
+                if fixed != entry.msgstr:
+                    matching = result_indices_for_entry(result.file, entry.uid)
+                    changes.append(
+                        {
+                            "index": matching[0] if matching else -1,
+                            "file": result.file,
+                            "uid": entry.uid,
+                            "old": entry.msgstr,
+                            "new": fixed,
+                        }
+                    )
+            if not changes:
+                status.setText(f"No wrapping changes in {result.file.name}.")
+                return
+            total, visible = apply_search_change_records(
+                changes,
+                value_key="new",
+                record_undo=True,
+                progress_label=f"Wrapping {result.file.name}",
+                finish_label="Wrapped {total} file entries ({visible} visible)",
+            )
+            status.setText(
+                f"W{self._active_linewrap_preset_index() + 1}: wrapped entire {result.file.name}; "
+                f"wrapped={wrapped_count}, changed={total}, visible results={visible}. "
+                f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
+                + save_error_suffix()
+            )
+
+        def translate_search_with_gemini_api() -> None:
+            indices = selected_result_indices()
+            if not indices:
+                current = current_result_index()
+                indices = [current] if current is not None else []
+            if not indices:
+                status.setText("Select one or more results first.")
+                return
+            api_key = str(self.config.get("gemini_api_key", "")).strip() or os.environ.get("GEMINI_API_KEY", "").strip()
+            if not api_key:
+                QMessageBox.warning(self, "Search", "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
+                return
+            current = current_result_index()
+            synthetic_entries: list[POEntry] = []
+            result_by_uid: dict[str, int] = {}
+            for position, result_index in enumerate(sorted(set(indices))):
+                if result_index < 0 or result_index >= len(self.search_results):
+                    continue
+                result = self.search_results[result_index]
+                source_translation = msgstr_box.toPlainText() if result_index == current else result.msgstr
+                entry = POEntry(
+                    index=position,
+                    msgctxt=result.msgctxt or None,
+                    msgid=result.msgid,
+                    msgstr=source_translation,
+                    line=result.line,
+                )
+                synthetic_entries.append(entry)
+                result_by_uid[entry.uid] = result_index
+            if not synthetic_entries:
+                return
+            model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
+            batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
+            sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
+            begin_progress("Gemini translating Search results", len(synthetic_entries))
+            QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
+            try:
+                client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
+
+                def report_gemini_progress(done: int, total: int) -> None:
+                    update_progress(done, total, "Gemini translating Search results")
+
+                translations, errors = translate_entries_with_client(
+                    synthetic_entries,
+                    client,
+                    batch_size=batch_size,
+                    sleep_seconds=sleep_seconds,
+                    allow_partial=False,
+                    prompt=SYSTEM_INSTRUCTIONS,
+                    progress=report_gemini_progress,
+                )
+            except Exception as exc:
+                finish_progress("Gemini API failed")
+                QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
+                return
+            finally:
+                QApplication.restoreOverrideCursor()
+            finish_progress(f"Gemini prepared {len(translations)} translation(s)")
+            updates = {
+                result_by_uid[uid]: translation
+                for uid, translation in translations.items()
+                if uid in result_by_uid
+            }
+            changed = save_updates(updates, progress_label="Saving Gemini translations") if updates else 0
+            status.setText(
+                f"Gemini translated and saved {changed} Search result{'s' if changed != 1 else ''}."
+                + save_error_suffix()
+            )
+            if errors:
+                preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
+                more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
+                QMessageBox.warning(
+                    self,
+                    "Gemini API",
+                    f"Saved {changed} result{'s' if changed != 1 else ''}, with {len(errors)} validation issue(s):\n{preview}{more}",
+                )
+
+        def switch_search_file(delta: int) -> None:
+            current = current_result_index()
+            if current is None or len(self.search_results) <= 1:
+                return
+            current_path = self._path_key(self.search_results[current].file)
+            keep_editor_focus = msgstr_box.hasFocus()
+            for offset in range(1, len(self.search_results) + 1):
+                candidate = (current + delta * offset) % len(self.search_results)
+                if self._path_key(self.search_results[candidate].file) == current_path:
+                    continue
+                select_result(candidate)
+                if keep_editor_focus:
+                    QTimer.singleShot(0, lambda: msgstr_box.setFocus(Qt.FocusReason.ShortcutFocusReason))
+                status.setText(f"Switched to {self.search_results[candidate].file.name}.")
+                return
+            status.setText("Only one file is present in the Search results.")
 
         def run_search() -> None:
             text = phrase.text()
@@ -3029,30 +3244,23 @@ class ToolkitGUI(QMainWindow):
                 status.setText("Nothing to undo.")
                 return
             action = search_undo_stack.pop()
-            updates: dict[int, str] = {}
             restored_indices: list[int] = []
             for change in action:
-                idx = int(change.get("index", -1))
-                if idx < 0 or idx >= len(self.search_results):
-                    continue
-                result = self.search_results[idx]
                 expected_file = change.get("file")
                 expected_uid = str(change.get("uid", ""))
-                if expected_uid and result.uid != expected_uid:
-                    continue
-                if isinstance(expected_file, Path) and self._path_key(result.file) != self._path_key(expected_file):
-                    continue
-                updates[idx] = str(change.get("old", ""))
-                restored_indices.append(idx)
-            changed = save_updates(
-                updates,
+                if isinstance(expected_file, Path) and expected_uid:
+                    restored_indices.extend(result_indices_for_entry(expected_file, expected_uid))
+            changed, visible = apply_search_change_records(
+                action,
+                value_key="old",
                 record_undo=False,
                 progress_label="Restoring previous text",
+                finish_label="Restored {total} entries ({visible} visible)",
             )
             if restored_indices:
                 select_result(restored_indices[0])
             status.setText(
-                f"Undid {changed} saved Search change{'s' if changed != 1 else ''}."
+                f"Undid {changed} saved Search change{'s' if changed != 1 else ''} ({visible} visible)."
                 + save_error_suffix()
             )
 
@@ -3066,6 +3274,7 @@ class ToolkitGUI(QMainWindow):
         open_btn.clicked.connect(open_selected_file)
         save_btn.clicked.connect(save_current)
         preset_replace_btn.clicked.connect(preset_replace_selected)
+        gemini_btn.clicked.connect(translate_search_with_gemini_api)
         msgstr_box.installEventFilter(self)
         prev_btn.clicked.connect(lambda: find_step(-1))
         next_btn.clicked.connect(lambda: find_step(1))
@@ -3073,13 +3282,32 @@ class ToolkitGUI(QMainWindow):
         selected_btn.clicked.connect(lambda: replace_indices(selected_result_indices()))
         all_btn.clicked.connect(lambda: replace_indices(list(range(len(self.search_results)))))
 
-        undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), _tab)
-        undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        undo_shortcut.activated.connect(undo_last_search_change)
-        save_shortcut = QShortcut(QKeySequence("Ctrl+S"), _tab)
-        save_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        save_shortcut.activated.connect(save_current)
-        self._search_shortcuts = [undo_shortcut, save_shortcut]
+        search_shortcuts: list[QShortcut] = []
+
+        def add_search_shortcut(sequence: str, callback: Callable[[], None]) -> None:
+            shortcut = QShortcut(QKeySequence(sequence), _tab)
+            shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+            shortcut.activated.connect(callback)
+            search_shortcuts.append(shortcut)
+
+        add_search_shortcut("Ctrl+Z", undo_last_search_change)
+        add_search_shortcut("Ctrl+S", save_current)
+        add_search_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_search_file(-1))
+        add_search_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_search_file(1))
+        add_search_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, wrap_selected_msgstrs)
+        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
+            add_search_shortcut(
+                sequence,
+                lambda index=preset_index: (
+                    self._set_active_linewrap_preset(index),
+                    wrap_selected_msgstrs(index),
+                ),
+            )
+        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
+            add_search_shortcut(sequence, wrap_current_search_file)
+        add_search_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
+        add_search_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_search_with_gemini_api)
+        self._search_shortcuts = search_shortcuts
 
 
     # ---------------- Translafixer ----------------
@@ -3548,6 +3776,8 @@ class ToolkitGUI(QMainWindow):
         apply_group_btn.setToolTip("Copy the selected/current Vietnamese text to this same-source group.")
         preset_replace_btn = self._button("Preset Replace", secondary=True)
         preset_replace_btn.setToolTip("Apply all enabled ordered replacement rules to selected/current duplicate rows.")
+        gemini_btn = self._button("Gemini", secondary=True)
+        gemini_btn.setToolTip("Translate selected/current duplicate rows with Gemini API (Ctrl+G).")
         undo_apply_btn = self._button("Undo", secondary=True)
         undo_apply_btn.setToolTip("Undo the most recent Apply, Replace, edit, or Wrap change. Ctrl+Z also works.")
         undo_apply_btn.setEnabled(False)
@@ -3568,6 +3798,7 @@ class ToolkitGUI(QMainWindow):
         footer.addSpacing(8)
         footer.addWidget(apply_group_btn)
         footer.addWidget(preset_replace_btn)
+        footer.addWidget(gemini_btn)
         footer.addWidget(undo_apply_btn)
         wrap_label = QLabel("Wrap")
         wrap_label.setObjectName("muted")
@@ -4316,6 +4547,206 @@ class ToolkitGUI(QMainWindow):
                 + f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}"
             )
 
+        def visible_row_for_entry(path: Path, uid: str) -> int | None:
+            for row in range(table.rowCount()):
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                if not isinstance(payload, dict):
+                    continue
+                row_path = resolved(Path(str(payload.get("path") or "")))
+                if row_path == path and str(payload.get("uid") or "") == uid:
+                    return row
+            return None
+
+        def wrap_current_duplicate_file() -> None:
+            payload = current_payload()
+            if not isinstance(payload, dict):
+                QMessageBox.warning(dialog, view_title, "Select a duplicate row first.")
+                return
+            path, _current_entry = entry_from_payload(payload)
+            if path is None:
+                return
+            po_file = po_cache.get(path)
+            if po_file is None:
+                QMessageBox.warning(dialog, view_title, f"Could not load {path.name}.")
+                return
+            soft_value, hard_value, cuts_value = self._linewrap_settings()
+            changes: list[dict[str, object]] = []
+            changed = 0
+            entries = list(getattr(po_file, "entries", []))
+            self._begin_task_progress(f"Wrapping {path.name}", len(entries))
+            self._pump_task_progress()
+            loading["value"] = True
+            try:
+                for position, entry in enumerate(entries, start=1):
+                    old_text = entry.msgstr
+                    fixed, did_change = wrap_msgstr(
+                        old_text,
+                        soft=soft_value,
+                        hard=hard_value,
+                        max_cuts=cuts_value,
+                    )
+                    if did_change:
+                        entry.msgstr = fixed
+                        row = visible_row_for_entry(path, entry.uid)
+                        changes.append(
+                            {
+                                "row": row if row is not None else -1,
+                                "path": path,
+                                "uid": entry.uid,
+                                "old": old_text,
+                                "new": fixed,
+                                "label": "wrap file",
+                            }
+                        )
+                        if row is not None:
+                            item = table.item(row, 3)
+                            if item is not None:
+                                item.setText(fixed)
+                                update_row_visual(row, fixed)
+                        changed += 1
+                    if position % 25 == 0 or position == len(entries):
+                        self._update_task_progress(position, len(entries), f"Wrapping {path.name}")
+                        self._pump_task_progress()
+            finally:
+                loading["value"] = False
+                self._finish_task_progress(f"Wrapped {changed} entries in {path.name}")
+            if changes:
+                refresh_changed_file(path)
+                push_duplicate_undo(changes)
+            load_detail_for_row(table.currentRow())
+            refresh_table_row_heights()
+            update_status()
+            status.setText(
+                status.text()
+                + f" | W{self._active_linewrap_preset_index() + 1} entire file={path.name} changed={changed} | "
+                + f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}"
+            )
+
+        def translate_duplicate_with_gemini_api() -> None:
+            rows = selected_rows_or_current()
+            if not rows:
+                QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
+                return
+            api_key = str(self.config.get("gemini_api_key", "")).strip() or os.environ.get("GEMINI_API_KEY", "").strip()
+            if not api_key:
+                QMessageBox.warning(dialog, view_title, "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
+                return
+            synthetic_entries: list[POEntry] = []
+            row_by_uid: dict[str, int] = {}
+            seen: set[tuple[Path, str]] = set()
+            for position, row in enumerate(rows):
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
+                if path is None or entry is None or (path, entry.uid) in seen:
+                    continue
+                seen.add((path, entry.uid))
+                source = str(payload.get("source") or entry.msgid)
+                synthetic = POEntry(
+                    index=position,
+                    msgctxt=entry.msgctxt,
+                    msgid=source,
+                    msgstr=entry.msgstr,
+                    line=entry.line,
+                )
+                synthetic_entries.append(synthetic)
+                row_by_uid[synthetic.uid] = row
+            if not synthetic_entries:
+                return
+            model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
+            batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
+            sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
+            self._begin_task_progress("Gemini duplicate rows", len(synthetic_entries))
+            self._pump_task_progress()
+            QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
+            try:
+                client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
+
+                def report_gemini_progress(done: int, total: int) -> None:
+                    self._update_task_progress(done, total, "Gemini duplicate rows")
+                    self._pump_task_progress()
+
+                translations, errors = translate_entries_with_client(
+                    synthetic_entries,
+                    client,
+                    batch_size=batch_size,
+                    sleep_seconds=sleep_seconds,
+                    allow_partial=False,
+                    prompt=SYSTEM_INSTRUCTIONS,
+                    progress=report_gemini_progress,
+                )
+            except Exception as exc:
+                self._finish_task_progress("Gemini API failed")
+                QMessageBox.critical(dialog, "Gemini API", f"Gemini API translation failed:\n{exc}")
+                return
+            finally:
+                QApplication.restoreOverrideCursor()
+            changes: list[dict[str, object]] = []
+            changed = 0
+            current_row = table.currentRow()
+            for uid, translation in translations.items():
+                row = row_by_uid.get(uid)
+                if row is None:
+                    continue
+                item = table.item(row, 3)
+                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
+                if path is None or entry is None or entry.msgstr == translation:
+                    continue
+                old_text = entry.msgstr
+                if set_entry_translation(row, translation, update_detail=(row == current_row)):
+                    changes.append(
+                        {
+                            "row": row,
+                            "path": path,
+                            "uid": entry.uid,
+                            "old": old_text,
+                            "new": translation,
+                            "label": "gemini",
+                        }
+                    )
+                    changed += 1
+            push_duplicate_undo(changes)
+            self._finish_task_progress(f"Gemini translated {changed} duplicate entries")
+            update_status()
+            status.setText(status.text() + f" | Gemini changed={changed}")
+            if errors:
+                preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
+                more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
+                QMessageBox.warning(
+                    dialog,
+                    "Gemini API",
+                    f"Translated {changed} duplicate entries, with {len(errors)} validation issue(s):\n{preview}{more}",
+                )
+
+        def switch_duplicate_file(delta: int) -> None:
+            payload = current_payload()
+            if not isinstance(payload, dict) or table.rowCount() <= 1:
+                return
+            current_path = resolved(Path(str(payload.get("path") or "")))
+            current_row = table.currentRow()
+            keep_editor_focus = vi_box.hasFocus()
+            for offset in range(1, table.rowCount() + 1):
+                row = (current_row + delta * offset) % table.rowCount()
+                item = table.item(row, 3)
+                row_payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                if not isinstance(row_payload, dict):
+                    continue
+                row_path = resolved(Path(str(row_payload.get("path") or "")))
+                if row_path == current_path:
+                    continue
+                table.clearSelection()
+                table.selectRow(row)
+                table.setCurrentCell(row, 0)
+                table.scrollToItem(item, QAbstractItemView.ScrollHint.PositionAtCenter)
+                load_detail_for_row(row)
+                if keep_editor_focus:
+                    QTimer.singleShot(0, lambda: vi_box.setFocus(Qt.FocusReason.ShortcutFocusReason))
+                status.setText(status.text() + f" | switched to {row_path.name}")
+                return
+            status.setText(status.text() + " | only one file shown")
+
         def apply_to_same_source() -> None:
             payload = current_payload()
             if not isinstance(payload, dict):
@@ -4854,6 +5285,7 @@ class ToolkitGUI(QMainWindow):
         clt_color_btn.clicked.connect(toggle_duplicate_clt_color_mode)
         apply_group_btn.clicked.connect(apply_to_same_source)
         preset_replace_btn.clicked.connect(preset_replace_selected)
+        gemini_btn.clicked.connect(translate_duplicate_with_gemini_api)
         undo_apply_btn.clicked.connect(undo_duplicate_change)
         hide_group_btn.clicked.connect(hide_selected_groups)
         unhide_group_btn.clicked.connect(unhide_selected_groups)
@@ -4861,22 +5293,33 @@ class ToolkitGUI(QMainWindow):
         save_btn.clicked.connect(save_changed)
         refresh_btn.clicked.connect(refresh_dialog)
         close_btn.clicked.connect(dialog.close)
-        find_shortcut = QShortcut(QKeySequence("Ctrl+F"), dialog)
-        find_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        find_shortcut.activated.connect(open_search_replace_dialog)
-        undo_shortcut = QShortcut(QKeySequence("Ctrl+Z"), dialog)
-        undo_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        undo_shortcut.activated.connect(undo_duplicate_change)
-        save_shortcut = QShortcut(QKeySequence("Ctrl+S"), dialog)
-        save_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        save_shortcut.activated.connect(save_changed)
-        wrap_shortcut = QShortcut(QKeySequence("Ctrl+Enter"), dialog)
-        wrap_shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
-        wrap_shortcut.activated.connect(lambda: breakline_selected())
-        dialog._find_shortcut = find_shortcut  # type: ignore[attr-defined]
-        dialog._undo_shortcut = undo_shortcut  # type: ignore[attr-defined]
-        dialog._save_shortcut = save_shortcut  # type: ignore[attr-defined]
-        dialog._wrap_shortcut = wrap_shortcut  # type: ignore[attr-defined]
+        duplicate_shortcuts: list[QShortcut] = []
+
+        def add_duplicate_shortcut(sequence: str, callback: Callable[[], None]) -> None:
+            shortcut = QShortcut(QKeySequence(sequence), dialog)
+            shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
+            shortcut.activated.connect(callback)
+            duplicate_shortcuts.append(shortcut)
+
+        add_duplicate_shortcut("Ctrl+F", open_search_replace_dialog)
+        add_duplicate_shortcut("Ctrl+Z", undo_duplicate_change)
+        add_duplicate_shortcut("Ctrl+S", save_changed)
+        add_duplicate_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_duplicate_file(-1))
+        add_duplicate_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_duplicate_file(1))
+        add_duplicate_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, breakline_selected)
+        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
+            add_duplicate_shortcut(
+                sequence,
+                lambda index=preset_index: (
+                    self._set_active_linewrap_preset(index),
+                    breakline_selected(index),
+                ),
+            )
+        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
+            add_duplicate_shortcut(sequence, wrap_current_duplicate_file)
+        add_duplicate_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
+        add_duplicate_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_duplicate_with_gemini_api)
+        dialog._shortcuts = duplicate_shortcuts  # type: ignore[attr-defined]
         populate(displayed_conflict_entries())
         QTimer.singleShot(0, refresh_table_row_heights)
         update_status()
@@ -4892,8 +5335,9 @@ class ToolkitGUI(QMainWindow):
             "Use ☑↻ to load .po files from selected checkbox Working folders. The Extra source is optional and only loads when Extra is checked. "
             "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
             "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
-            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Ctrl+Enter = wrap selected/current, "
-            "Shift+Up/Down = file, Ctrl+1..9 = apply suggestion, Ctrl+0 = refresh suggestions. These work while editing Vietnamese too. "
+            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Alt+Up/Down = file. "
+            "Ctrl+Space wraps selected/current with the active preset; hold Ctrl and press 1/2/3/4 then Space to use that preset; Ctrl+Alt+Enter wraps the entire file. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
+            "Alt+1..9 applies suggestions and Alt+0 refreshes them. These work while editing Vietnamese too. "
             "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
         )
         note.setObjectName("muted")
@@ -5060,7 +5504,7 @@ class ToolkitGUI(QMainWindow):
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Ctrl+1..9 apply, Ctrl+0 refresh.")
+        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Alt+1..9 apply, Alt+0 refresh.")
         suggest_note.setObjectName("muted")
         suggest_note.setWordWrap(True)
         suggest_layout.addWidget(suggest_note)
@@ -6605,18 +7049,29 @@ class ToolkitGUI(QMainWindow):
         for nav_parent in (table, vi_box):
             add_shortcut("Ctrl+Up", lambda: switch_entry(-1), parent=nav_parent)
             add_shortcut("Ctrl+Down", lambda: switch_entry(1), parent=nav_parent)
-            add_shortcut("Shift+Up", lambda: switch_file(-1), parent=nav_parent)
-            add_shortcut("Shift+Down", lambda: switch_file(1), parent=nav_parent)
+            add_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_file(-1), parent=nav_parent)
+            add_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_file(1), parent=nav_parent)
         add_shortcut("Ctrl+E", focus_vi_editor)
         add_shortcut("F2", focus_vi_editor)
         add_shortcut("Ctrl+S", save_file)
         add_shortcut("Ctrl+Z", undo_last_po_change)
         add_shortcut("Ctrl+F", open_search_replace_dialog)
-        add_shortcut("Ctrl+Return", wrap_selected)
-        add_shortcut("Ctrl+Enter", wrap_selected)
-        for suggestion_number in range(1, 10):
-            add_shortcut(f"Ctrl+{suggestion_number}", lambda n=suggestion_number: apply_suggestion_number(n))
-        add_shortcut("Ctrl+0", lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
+        add_shortcut(WRAP_CURRENT_PRESET_SHORTCUT, wrap_selected)
+        for preset_index, sequence in enumerate(WRAP_PRESET_SHORTCUTS):
+            add_shortcut(
+                sequence,
+                lambda index=preset_index: (
+                    self._set_active_linewrap_preset(index),
+                    wrap_selected(index),
+                ),
+            )
+        for sequence in WRAP_ENTIRE_FILE_SHORTCUTS:
+            add_shortcut(sequence, wrap_all)
+        add_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
+        add_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_selected_with_gemini_api)
+        for suggestion_number, sequence in enumerate(SUGGESTION_SHORTCUTS, start=1):
+            add_shortcut(sequence, lambda n=suggestion_number: apply_suggestion_number(n))
+        add_shortcut(SUGGESTION_REFRESH_SHORTCUT, lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         self._po_viewer_shortcuts = shortcuts
 
         set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)

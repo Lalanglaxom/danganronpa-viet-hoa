@@ -1053,7 +1053,7 @@ def test_git_launcher_keeps_console_open_and_reports_exit_code(monkeypatch):
     assert "stderr" not in captured["kwargs"]
 
 
-def test_linewrap_presets_keep_base64_and_migrate_legacy_values():
+def test_linewrap_presets_start_with_base64_and_all_remain_editable():
     from dr_po_toolkit.linewrap import normalize_wrap_presets
 
     presets = normalize_wrap_presets(
@@ -1078,7 +1078,7 @@ def test_linewrap_presets_keep_base64_and_migrate_legacy_values():
             {"soft": 70, "hard": 80, "max_cuts": 5},
         ]
     )
-    assert edited[0] == {"soft": 58, "hard": 64, "max_cuts": 2}
+    assert edited[0] == {"soft": 1, "hard": 2, "max_cuts": 9}
     assert edited[1] == {"soft": 40, "hard": 48, "max_cuts": 1}
     assert edited[3] == {"soft": 70, "hard": 80, "max_cuts": 5}
 
@@ -1101,6 +1101,31 @@ def test_config_migrates_old_single_linewrap_setting_to_four_presets():
     assert config["linewrap_presets"][0] == {"soft": 58, "hard": 64, "max_cuts": 2}
     assert config["linewrap_presets"][1] == {"soft": 47, "hard": 59, "max_cuts": 4}
     assert len(config["linewrap_presets"]) == 4
+
+
+def test_config_preserves_edited_first_linewrap_preset():
+    import json
+    import tempfile
+
+    from dr_po_toolkit.config import load_config
+
+    with tempfile.TemporaryDirectory() as tmp:
+        config_path = Path(tmp) / "config.json"
+        config_path.write_text(
+            json.dumps(
+                {
+                    "linewrap_presets": [
+                        {"soft": 44, "hard": 52, "max_cuts": 3},
+                        {"soft": 50, "hard": 60, "max_cuts": 2},
+                        {"soft": 58, "hard": 68, "max_cuts": 4},
+                        {"soft": 66, "hard": 76, "max_cuts": 5},
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+        config = load_config(config_path)
+        assert config["linewrap_presets"][0] == {"soft": 44, "hard": 52, "max_cuts": 3}
 
 
 def test_html_spacing_preserves_double_spaces_around_hidden_clt_boundaries():
