@@ -6,7 +6,7 @@ import unicodedata
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Iterable
+from typing import Callable, Iterable
 
 from .app_links import build_entry_url
 from .discovery import SegmentFiles, find_backup_for_file, find_segments, iter_po_files
@@ -346,20 +346,39 @@ def _append_cross_file_duplicate_sentence_translation_issues(results: dict[Path,
         issues.sort(key=lambda x: (LEVEL_ORDER.get(x.level, 9), x.check, x.line, x.detail))
 
 
-def validate_path(path: str | Path) -> dict[Path, list[ValidationIssue]]:
+def validate_path(
+    path: str | Path,
+    *,
+    progress: Callable[[int, int, Path], None] | None = None,
+) -> dict[Path, list[ValidationIssue]]:
     p = Path(path)
     results: dict[Path, list[ValidationIssue]] = {}
     if p.is_file():
+        if progress is not None:
+            progress(0, 1, p)
         results[p] = validate_po_pair(p)
+        if progress is not None:
+            progress(1, 1, p)
         return results
 
-    found_segment = False
-    for seg in find_segments(p):
-        found_segment = True
-        results[seg.work_po] = validate_po_pair(seg.work_po, seg.copy_po)
-    if not found_segment:
-        for po_path in iter_po_files(p):
+    segments = list(find_segments(p))
+    if segments:
+        total = len(segments)
+        if progress is not None:
+            progress(0, total, segments[0].work_po)
+        for index, seg in enumerate(segments, start=1):
+            results[seg.work_po] = validate_po_pair(seg.work_po, seg.copy_po)
+            if progress is not None:
+                progress(index, total, seg.work_po)
+    else:
+        po_files = list(iter_po_files(p))
+        total = len(po_files)
+        if progress is not None and po_files:
+            progress(0, total, po_files[0])
+        for index, po_path in enumerate(po_files, start=1):
             results[po_path] = validate_po_pair(po_path)
+            if progress is not None:
+                progress(index, total, po_path)
 
     _append_cross_file_duplicate_sentence_translation_issues(results)
     return results

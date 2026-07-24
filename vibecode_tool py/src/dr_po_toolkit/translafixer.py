@@ -650,6 +650,7 @@ def apply_translafix(
     include_empty: bool = False,
     log: Callable[[str], None] | None = None,
     stop_requested: Callable[[], bool] | None = None,
+    progress: Callable[[int, int, Path], None] | None = None,
 ) -> TranslafixResult:
     """Rewrite target msgstr values when target msgid exists in source files.
 
@@ -678,7 +679,11 @@ def apply_translafix(
     if log is not None and result.skipped_source_targets:
         log(f"Skipped selected source files inside target folder: {result.skipped_source_targets}")
 
-    for po_path in target_paths:
+    total_targets = len(target_paths)
+    if progress is not None and target_paths:
+        progress(0, total_targets, target_paths[0])
+
+    for file_index, po_path in enumerate(target_paths, start=1):
         if stop_requested is not None and stop_requested():
             break
 
@@ -717,5 +722,8 @@ def apply_translafix(
             file_result.error = str(exc)
             if log is not None:
                 log(f"ERROR {po_path}: {exc}")
+        finally:
+            if progress is not None:
+                progress(file_index, total_targets, po_path)
 
     return result

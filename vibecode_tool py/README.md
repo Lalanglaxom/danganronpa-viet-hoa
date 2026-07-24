@@ -55,6 +55,10 @@ dr-po replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 ```
 
 
+## Task progress
+
+The GUI has a shared progress bar in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, Backup, Sync, Restore, and deploy/copy tasks. File- or entry-based work shows current/total counts and percentages. Discovery, browser, and network phases use an animated indeterminate bar until a reliable total is known. Search keeps its detailed local progress bar and mirrors the same state in the shared bar.
+
 ## Search / Backup / Sync performance
 
 Large folders are faster in this build because scanners now prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search also does a quick file-level prefilter before fully parsing a `.po` file, so files that cannot contain the phrase are skipped early.

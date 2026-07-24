@@ -82,6 +82,7 @@ Lines:
 {samples}"""
 
 LogFn = Callable[[str], None]
+ProgressFn = Callable[[int, int, Path], None]
 AllowInvalid = bool | Callable[[], bool]
 
 
@@ -1341,6 +1342,7 @@ def run_gemini_web_path(
     retry_count: int = DEFAULT_BATCH_RETRIES,
     log: LogFn | None = None,
     stop_requested: StopFn | None = None,
+    progress: ProgressFn | None = None,
 ) -> WebTranslateRunResult:
     check_stop(stop_requested)
     base = Path(path)
@@ -1364,8 +1366,11 @@ def run_gemini_web_path(
         return WebTranslateRunResult(renamed_duplicates=renamed_duplicates, files=[])
 
     results: list[WebTranslateFileResult] = []
+    total_files = len(po_files)
+    if progress is not None:
+        progress(0, total_files, po_files[0])
     with GeminiWebSession(cdp_url=cdp_url) as session:
-        for po_path in po_files:
+        for file_index, po_path in enumerate(po_files, start=1):
             check_stop(stop_requested)
             backup_created = False
             if create_missing_backups and not find_backup_for_file(po_path):
@@ -1394,5 +1399,7 @@ def run_gemini_web_path(
             )
             file_result.backup_created = backup_created
             results.append(file_result)
+            if progress is not None:
+                progress(file_index, total_files, po_path)
 
     return WebTranslateRunResult(renamed_duplicates=renamed_duplicates, files=results)

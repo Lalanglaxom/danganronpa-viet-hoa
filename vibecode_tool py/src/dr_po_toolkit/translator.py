@@ -6,7 +6,7 @@ import time
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Callable, Iterable
 
 from .discovery import find_backup_for_file, find_segments, iter_po_files
 from .models import POEntry
@@ -284,11 +284,15 @@ def translate_entries_with_client(
     sleep_seconds: float = 1.0,
     allow_partial: bool = False,
     prompt: str | None = None,
+    progress: Callable[[int, int], None] | None = None,
 ) -> tuple[dict[str, str], list[TranslationError]]:
     entry_list = list(entries)
+    total_entries = len(entry_list)
+    if progress is not None:
+        progress(0, total_entries)
     all_errors: list[TranslationError] = []
     all_translations: dict[str, str] = {}
-    for i in range(0, len(entry_list), batch_size):
+    for i in range(0, total_entries, batch_size):
         batch = entry_list[i:i + batch_size]
         translations = client.translate_payload(build_payload(batch, instructions=prompt or client.prompt), prompt=prompt)
         errors = validate_translations(batch, translations)
@@ -297,7 +301,9 @@ def translate_entries_with_client(
         for uid, text in translations.items():
             if allow_partial or uid not in bad:
                 all_translations[uid] = text
-        if sleep_seconds and i + batch_size < len(entry_list):
+        if progress is not None:
+            progress(min(i + len(batch), total_entries), total_entries)
+        if sleep_seconds and i + batch_size < total_entries:
             time.sleep(sleep_seconds)
     return all_translations, all_errors
 

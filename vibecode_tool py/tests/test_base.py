@@ -1130,3 +1130,30 @@ def test_visible_character_counts_by_line_preserves_double_spaces_around_hidden_
     from dr_po_toolkit.text_utils import visible_character_counts_by_line
 
     assert visible_character_counts_by_line("Hello <CLT 4> world") == [12]
+
+
+def test_search_files_reports_file_progress():
+    import tempfile
+
+    from dr_po_toolkit.search import search_files
+
+    po_text = '''msgctxt "0001 | MAKOTO"
+msgid "Hello"
+msgstr "Xin chào"
+'''
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        first = root / "a.po"
+        second = root / "b.po"
+        first.write_text(po_text, encoding="utf-8")
+        second.write_text(po_text.replace("0001", "0002"), encoding="utf-8")
+        progress = []
+
+        results = search_files(
+            [first, second],
+            "hello",
+            progress=lambda done, total, path: progress.append((done, total, path.name)),
+        )
+
+    assert len(results) == 2
+    assert progress == [(1, 2, "a.po"), (2, 2, "b.po")]

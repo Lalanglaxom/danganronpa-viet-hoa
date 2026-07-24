@@ -7,11 +7,12 @@ import re
 import subprocess
 import sys
 import threading
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 from typing import Callable
 
-from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize
+from PyQt6.QtCore import QObject, Qt, QTimer, QUrl, pyqtSignal, QRectF, QSize, QEventLoop
 from PyQt6.QtNetwork import QLocalServer, QLocalSocket
 from PyQt6.QtGui import QColor, QDesktopServices, QFont, QKeySequence, QShortcut, QSyntaxHighlighter, QTextCharFormat, QTextCursor, QBrush, QTextDocument, QPainter
 from PyQt6.QtWidgets import (
@@ -36,6 +37,7 @@ from PyQt6.QtWidgets import (
     QMainWindow,
     QMessageBox,
     QPlainTextEdit,
+    QProgressBar,
     QPushButton,
     QScrollArea,
     QSizePolicy,
@@ -77,9 +79,9 @@ from .gemini_web import (
     run_gemini_web_path,
 )
 from .linewrap import normalize_wrap_presets, wrap_msgstr, wrap_po_file
-from .po_io import load_po, patch_msgstr_by_uid, save_po
+from .po_io import load_po, save_po
 from .rules import apply_rules_to_file, load_rules, rule_to_dict
-from .search import SearchResult, search_path
+from .search import SearchResult, search_files
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
     ReferenceTranslationConflictEntry,
@@ -167,6 +169,8 @@ HTML_ROLE = 0x0100 + 91
 class WorkerSignals(QObject):
     log = pyqtSignal(str, str)
     result = pyqtSignal(object)
+    progress = pyqtSignal(int, int, str)
+    error = pyqtSignal(str)
     done = pyqtSignal()
 
 
@@ -411,6 +415,8 @@ class ToolkitGUI(QMainWindow):
         self._active_thread: threading.Thread | None = None
         self._active_signals: list[WorkerSignals] = []
         self._active_log: LogBox | None = None
+        self._task_progress_token = 0
+        self._task_progress_active = False
         self.search_results: list[SearchResult] = []
         self.search_source_paths: list[str] = []
         self.search_last_index: int = -1
@@ -570,6 +576,15 @@ class ToolkitGUI(QMainWindow):
             QTextEdit#logBox {{ background: #101521; border: 1px solid #3a4058; }}
             QListWidget#pathList::item {{ padding: 4px; border-radius: 6px; }}
             QListWidget#pathList::item:selected {{ background: {ACCENT_DARK}; color: {WHITE}; }}
+            QProgressBar {{
+                background: {PANEL};
+                color: {WHITE};
+                border: 1px solid #3a4058;
+                border-radius: 7px;
+                text-align: center;
+                font-weight: 800;
+            }}
+            QProgressBar::chunk {{ background: {TEAL}; border-radius: 6px; }}
             QSplitter::handle {{ background: #2a3144; }}
             """
         )
@@ -584,6 +599,13 @@ class ToolkitGUI(QMainWindow):
         title = QLabel("☾ Chiaki PO Toolkit")
         title.setObjectName("title")
         top.addWidget(title)
+        self.task_progress = QProgressBar()
+        self.task_progress.setTextVisible(True)
+        self.task_progress.setMinimumHeight(18)
+        self.task_progress.setMinimumWidth(280)
+        self.task_progress.setMaximumWidth(560)
+        self.task_progress.hide()
+        top.addWidget(self.task_progress, 1)
         top.addStretch()
         settings_btn = self._button("Settings", secondary=True)
         settings_btn.clicked.connect(self._open_settings_dialog)
@@ -1265,6 +1287,56 @@ class ToolkitGUI(QMainWindow):
         layout.addRow(label, wrap)
         return edit
 
+    def _begin_task_progress(self, label: str, total: int = 0) -> int:
+        """Show the shared progress bar for any long-running GUI action."""
+        self._task_progress_token += 1
+        token = self._task_progress_token
+        self._task_progress_active = True
+        self.task_progress.show()
+        if total > 0:
+            self.task_progress.setRange(0, total)
+            self.task_progress.setValue(0)
+            self.task_progress.setFormat(f"{label}: %v/%m (%p%)")
+        else:
+            self.task_progress.setRange(0, 0)
+            self.task_progress.setFormat(label)
+        return token
+
+    def _update_task_progress(self, done: int, total: int, label: str = "") -> None:
+        self._task_progress_active = True
+        self.task_progress.show()
+        if total > 0:
+            if self.task_progress.minimum() != 0 or self.task_progress.maximum() != total:
+                self.task_progress.setRange(0, total)
+            self.task_progress.setValue(max(0, min(int(done), int(total))))
+            if label:
+                self.task_progress.setFormat(f"{label}: %v/%m (%p%)")
+        else:
+            self.task_progress.setRange(0, 0)
+            if label:
+                self.task_progress.setFormat(label)
+
+    def _pump_task_progress(self) -> None:
+        """Paint synchronous progress updates without accepting more user input."""
+        self.task_progress.repaint()
+        QApplication.processEvents(QEventLoop.ProcessEventsFlag.ExcludeUserInputEvents)
+
+    def _finish_task_progress(self, label: str = "Done") -> None:
+        token = self._task_progress_token
+        self._task_progress_active = False
+        if self.task_progress.maximum() > 0:
+            self.task_progress.setValue(self.task_progress.maximum())
+        else:
+            self.task_progress.setRange(0, 1)
+            self.task_progress.setValue(1)
+        self.task_progress.setFormat(label)
+
+        def hide_finished() -> None:
+            if self._task_progress_token == token and not self._task_progress_active:
+                self.task_progress.hide()
+
+        QTimer.singleShot(800, hide_finished)
+
     def _request_stop(self) -> None:
         self._stop_event.set()
         if self._active_log is not None:
@@ -1274,7 +1346,12 @@ class ToolkitGUI(QMainWindow):
         if self._stop_event.is_set():
             raise OperationCancelled("Stopped by user.")
 
-    def _run_threaded(self, button: QPushButton, log: LogBox, fn: Callable[[Callable[[str, str], None]], None]) -> None:
+    def _run_threaded(
+        self,
+        button: QPushButton,
+        log: LogBox,
+        fn: Callable[[Callable[[str, str], None], Callable[[int, int, str], None]], None],
+    ) -> None:
         if self._active_thread is not None and self._active_thread.is_alive():
             QMessageBox.warning(self, "Busy", "Another action is running. Press Stop Current Action first.")
             return
@@ -1282,11 +1359,16 @@ class ToolkitGUI(QMainWindow):
         signals = WorkerSignals()
         self._active_signals.append(signals)
         signals.log.connect(log.append_log)
+        signals.progress.connect(self._update_task_progress)
+        action_label = button.text().replace("&", "").strip() or "Working"
+        outcome = {"label": f"{action_label} complete"}
 
         def done() -> None:
             button.setEnabled(True)
             self.stop_button.setEnabled(False)
             self._active_log = None
+            self._active_thread = None
+            self._finish_task_progress(str(outcome["label"]))
             try:
                 self._active_signals.remove(signals)
             except ValueError:
@@ -1297,15 +1379,22 @@ class ToolkitGUI(QMainWindow):
         def logwrite(text: str, tag: str = "") -> None:
             signals.log.emit(str(text), str(tag or ""))
 
+        def progresswrite(done_count: int, total_count: int = 0, label: str = "") -> None:
+            self._check_stop()
+            signals.progress.emit(int(done_count), int(total_count), str(label or action_label))
+
         def worker() -> None:
             self._stop_event.clear()
             self._active_log = log
             try:
                 self._check_stop()
-                fn(logwrite)
+                fn(logwrite, progresswrite)
+                self._check_stop()
             except OperationCancelled:
+                outcome["label"] = f"{action_label} stopped"
                 logwrite("Stopped by user.", "warn")
             except Exception as exc:
+                outcome["label"] = f"{action_label} failed"
                 logwrite(f"ERROR: {exc}", "bad")
             finally:
                 signals.done.emit()
@@ -1313,6 +1402,7 @@ class ToolkitGUI(QMainWindow):
         log.clear()
         button.setEnabled(False)
         self.stop_button.setEnabled(True)
+        self._begin_task_progress(action_label)
         thread = threading.Thread(target=worker, daemon=True)
         self._active_thread = thread
         thread.start()
@@ -1391,17 +1481,26 @@ class ToolkitGUI(QMainWindow):
         log = self._make_log()
         layout.addWidget(log, 1)
 
-        def run(logwrite):
+        def run(logwrite, progresswrite):
             self._check_stop()
             paths = self._processing_paths("validate", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
                 return
             results = {}
             seen_files: set[str] = set()
-            for input_path in paths:
+            progresswrite(0, 0, "Discovering validation files")
+            for input_index, input_path in enumerate(paths, start=1):
                 self._check_stop()
                 logwrite(f"Validate input: {input_path}")
-                for file_path, issues in validate_path(input_path).items():
+                validation_results = validate_path(
+                    input_path,
+                    progress=lambda done, total, path, input_index=input_index: progresswrite(
+                        done,
+                        total,
+                        f"Validate {path.name} [{input_index}/{len(paths)} input]",
+                    ),
+                )
+                for file_path, issues in validation_results.items():
                     key = self._path_key(file_path)
                     if key in seen_files:
                         continue
@@ -1439,7 +1538,7 @@ class ToolkitGUI(QMainWindow):
         log = self._make_log()
         layout.addWidget(log, 1)
 
-        def run(logwrite):
+        def run(logwrite, progresswrite):
             self._check_stop()
             paths = self._processing_paths("replace", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
@@ -1447,9 +1546,11 @@ class ToolkitGUI(QMainWindow):
             rules = load_rules(rules_edit.text().strip())
             po_files = self._iter_unique_po_paths(paths)
             changes = []
-            for po_path in po_files:
+            progresswrite(0, len(po_files), "Replacing PO files")
+            for file_index, po_path in enumerate(po_files, start=1):
                 self._check_stop()
                 changes.extend(apply_rules_to_file(po_path, rules, dry_run=dry_run.isChecked()))
+                progresswrite(file_index, len(po_files), f"Replace {po_path.name}")
             logwrite(f"Inputs: {len(paths)} | PO files: {len(po_files)}")
             logwrite(f"Rules loaded: {len(rules)}")
             logwrite(f"Changes: {len(changes)}", "good" if changes else "")
@@ -1803,7 +1904,7 @@ class ToolkitGUI(QMainWindow):
                 f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value} | Lines: {lengths}"
             )
 
-        def run(logwrite):
+        def run(logwrite, progresswrite):
             self._check_stop()
             paths = self._processing_paths("linewrap", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
@@ -1812,7 +1913,8 @@ class ToolkitGUI(QMainWindow):
             soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             po_files = self._iter_unique_po_paths(paths)
             results: dict[Path, int] = {}
-            for po_path in po_files:
+            progresswrite(0, len(po_files), "Wrapping PO files")
+            for file_index, po_path in enumerate(po_files, start=1):
                 self._check_stop()
                 results[po_path] = wrap_po_file(
                     po_path,
@@ -1821,6 +1923,7 @@ class ToolkitGUI(QMainWindow):
                     max_cuts=cuts_value,
                     dry_run=dry.isChecked(),
                 )
+                progresswrite(file_index, len(po_files), f"Line wrap {po_path.name}")
             logwrite(
                 f"Preset W{preset_index + 1}: Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value} | "
                 f"Inputs: {len(paths)} | PO files: {len(po_files)}"
@@ -1841,7 +1944,7 @@ class ToolkitGUI(QMainWindow):
     def _build_search_tab(self) -> None:
         _tab, layout = self._new_tab("Search")
         self._dr_option_selector(layout, "search")
-        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Ctrl+S saves the current result to its .po file; Ctrl+Z undoes editor text or the last saved Search edit.")
+        theme_note = QLabel("☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates the focused results table. Ctrl+S saves the current result; Ctrl+Z undoes editor text or the last saved Search edit.")
         theme_note.setObjectName("muted")
         theme_note.setWordWrap(True)
         layout.addWidget(theme_note)
@@ -1881,7 +1984,8 @@ class ToolkitGUI(QMainWindow):
         table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
-        table.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        table.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+        table.setTabKeyNavigation(False)
         table.setAlternatingRowColors(True)
         table.setWordWrap(True)
         table.verticalHeader().setVisible(False)
@@ -1930,7 +2034,7 @@ class ToolkitGUI(QMainWindow):
         wrap_label = QLabel("Wrap")
         wrap_label.setObjectName("muted")
         edit_buttons.addWidget(wrap_label)
-        self._add_linewrap_preset_buttons(
+        search_wrap_buttons = self._add_linewrap_preset_buttons(
             edit_buttons,
             lambda preset_index: wrap_selected_msgstrs(preset_index),
             action="Wrap selected Search results",
@@ -1971,11 +2075,20 @@ class ToolkitGUI(QMainWindow):
         status.setObjectName("muted")
         status.setWordWrap(True)
         right_layout.addWidget(status)
+        progress_bar = QProgressBar()
+        progress_bar.setTextVisible(True)
+        progress_bar.setMinimumHeight(18)
+        progress_bar.hide()
+        right_layout.addWidget(progress_bar)
         splitter.addWidget(right)
         splitter.setSizes([740, 430])
 
         search_undo_stack: list[list[dict[str, object]]] = []
         clt_view_state = {"enabled": self._initial_clt_color_mode()}
+        result_rows: dict[int, int] = {}
+        search_save_cache: dict[str, tuple[tuple[int, int], object]] = {}
+        progress_state = {"token": 0, "active": False}
+        save_state: dict[str, list[str]] = {"errors": []}
 
         def trim_search_undo_stack() -> None:
             if len(search_undo_stack) > 100:
@@ -1988,12 +2101,84 @@ class ToolkitGUI(QMainWindow):
         def wrap_settings() -> tuple[int, int, int]:
             return self._linewrap_settings()
 
+        def repaint_progress() -> None:
+            QApplication.processEvents(QEventLoop.ProcessEventsFlag.ExcludeUserInputEvents)
+
+        def begin_progress(label: str, total: int) -> int:
+            self._begin_task_progress(label, total)
+            progress_state["token"] += 1
+            token = int(progress_state["token"])
+            progress_state["active"] = True
+            progress_bar.show()
+            if total > 0:
+                progress_bar.setRange(0, total)
+                progress_bar.setValue(0)
+                progress_bar.setFormat(f"{label}: %v/%m (%p%)")
+            else:
+                progress_bar.setRange(0, 0)
+                progress_bar.setFormat(label)
+            repaint_progress()
+            return token
+
+        def update_progress(
+            done: int,
+            total: int,
+            label: str | None = None,
+            *,
+            pump_events: bool = True,
+        ) -> None:
+            self._update_task_progress(done, total, label or "Search")
+            if total > 0 and (progress_bar.minimum() != 0 or progress_bar.maximum() != total):
+                progress_bar.setRange(0, total)
+            if label:
+                progress_bar.setFormat(f"{label}: %v/%m (%p%)" if total > 0 else label)
+            if total > 0:
+                progress_bar.setValue(max(0, min(done, total)))
+            if pump_events:
+                repaint_progress()
+
+        def finish_progress(label: str = "Done") -> None:
+            self._finish_task_progress(label)
+            token = int(progress_state["token"])
+            progress_state["active"] = False
+            if progress_bar.maximum() > 0:
+                progress_bar.setValue(progress_bar.maximum())
+            progress_bar.setFormat(label)
+            repaint_progress()
+
+            def hide_finished() -> None:
+                if int(progress_state["token"]) == token and not bool(progress_state["active"]):
+                    progress_bar.hide()
+
+            QTimer.singleShot(650, hide_finished)
+
+        def set_search_actions_enabled(enabled: bool) -> None:
+            for widget in [
+                table,
+                msgstr_box,
+                replace_group,
+                clt_color_btn,
+                open_btn,
+                save_btn,
+                *search_wrap_buttons,
+                prev_btn,
+                next_btn,
+                current_btn,
+                selected_btn,
+                all_btn,
+            ]:
+                widget.setEnabled(enabled)
+
         def fill_table() -> None:
+            total = len(self.search_results)
+            begin_progress("Rendering results", total)
             table.setUpdatesEnabled(False)
             table.setRowCount(0)
-            table.setRowCount(len(self.search_results))
+            table.setRowCount(total)
+            result_rows.clear()
             try:
                 for row, result in enumerate(self.search_results):
+                    result_rows[row] = row
                     context_bits = []
                     if result.msgctxt:
                         context_bits.append(result.msgctxt)
@@ -2042,15 +2227,18 @@ class ToolkitGUI(QMainWindow):
                                 font.setBold(True)
                                 item.setFont(font)
                         table.setItem(row, col, item)
+                    if (row + 1) % 50 == 0 or row + 1 == total:
+                        update_progress(row + 1, total, "Rendering results")
             finally:
                 table.setUpdatesEnabled(True)
 
             # resizeRowsToContents is very expensive with thousands of hits.
-            if len(self.search_results) <= 1000:
+            if total <= 350:
                 table.resizeRowsToContents()
             else:
                 table.verticalHeader().setDefaultSectionSize(54)
-            status.setText(f"Results: {len(self.search_results)}")
+            status.setText(f"Results: {total}")
+            finish_progress(f"Loaded {total} result(s)")
 
         def row_result_index(row: int) -> int | None:
             if row < 0 or row >= table.rowCount():
@@ -2102,7 +2290,7 @@ class ToolkitGUI(QMainWindow):
             finally:
                 table.setUpdatesEnabled(True)
             table.viewport().update()
-            if len(self.search_results) <= 1000:
+            if len(self.search_results) <= 350:
                 table.resizeRowsToContents()
             if persist:
                 self._save_clt_color_mode(enabled)
@@ -2128,60 +2316,157 @@ class ToolkitGUI(QMainWindow):
             msgstr_box.setPlainText(result.msgstr)
             self._clear_text_editor_undo(msgstr_box)
 
-        def save_updates(updates: dict[int, str], *, record_undo: bool = True) -> int:
+        def file_signature(path: Path) -> tuple[int, int]:
+            stat = path.stat()
+            return stat.st_mtime_ns, stat.st_size
+
+        def load_search_po(path: Path):
+            key = self._path_key(path)
+            signature = file_signature(path)
+            cached = search_save_cache.get(key)
+            if cached is not None and cached[0] == signature:
+                return cached[1]
+            po = load_po(path)
+            search_save_cache[key] = (signature, po)
+            return po
+
+        def cache_saved_po(path: Path, po: object) -> None:
+            key = self._path_key(path)
+            try:
+                search_save_cache[key] = (file_signature(path), po)
+            except OSError:
+                search_save_cache.pop(key, None)
+
+        def save_error_suffix() -> str:
+            errors = save_state["errors"]
+            if not errors:
+                return ""
+            first = errors[0]
+            extra = f" (+{len(errors) - 1} more)" if len(errors) > 1 else ""
+            return f" Save issue: {first}{extra}."
+
+        def update_result_row(idx: int) -> int | None:
+            row = result_rows.get(idx)
+            if row is None or row < 0 or row >= table.rowCount():
+                return None
+            item = table.item(row, 2)
+            if item is None:
+                return None
+            value = compact(self.search_results[idx].msgstr)
+            bg_color = VI_HIT_BG if self.search_results[idx].hit_msgstr else VI_BG
+            item.setText(value)
+            item.setForeground(QBrush(QColor(WHITE)))
+            item.setBackground(QBrush(QColor(bg_color)))
+            item.setData(
+                HTML_ROLE,
+                f'<span style="color:{WHITE};">'
+                f'{clt_rich_html(value, color_mode=bool(clt_view_state["enabled"]))}</span>',
+            )
+            return row
+
+        def save_updates(
+            updates: dict[int, str],
+            *,
+            record_undo: bool = True,
+            progress_label: str = "Saving search changes",
+        ) -> int:
+            save_state["errors"] = []
             if not updates:
                 return 0
-            grouped: dict[Path, dict[str, str]] = defaultdict(dict)
-            changed_indices: list[int] = []
-            undo_action: list[dict[str, object]] = []
+            grouped: dict[Path, list[dict[str, object]]] = defaultdict(list)
             for idx, new_text in updates.items():
                 if idx < 0 or idx >= len(self.search_results):
                     continue
                 result = self.search_results[idx]
                 old_text = result.msgstr
-                if old_text == new_text:
+                normalized_new = unicodedata.normalize("NFC", new_text)
+                if old_text == normalized_new:
                     continue
-                if record_undo:
-                    undo_action.append(
-                        {
-                            "index": idx,
-                            "file": result.file,
-                            "uid": result.uid,
-                            "old": old_text,
-                            "new": new_text,
-                        }
+                grouped[result.file].append(
+                    {
+                        "index": idx,
+                        "file": result.file,
+                        "uid": result.uid,
+                        "old": old_text,
+                        "new": normalized_new,
+                    }
+                )
+            if not grouped:
+                return 0
+
+            begin_progress(progress_label, len(grouped))
+            successful_changes: list[dict[str, object]] = []
+            for file_number, (path, changes) in enumerate(grouped.items(), start=1):
+                try:
+                    po = load_search_po(path)
+                    by_uid = po.by_uid()
+                    translations = {
+                        str(change["uid"]): str(change["new"])
+                        for change in changes
+                        if str(change["uid"]) in by_uid
+                    }
+                    missing = len(changes) - len(translations)
+                    changed_on_disk = 0
+                    for uid, new_text in translations.items():
+                        normalized = unicodedata.normalize("NFC", new_text)
+                        entry = by_uid[uid]
+                        if entry.msgstr != normalized:
+                            entry.msgstr = normalized
+                            changed_on_disk += 1
+                    if changed_on_disk:
+                        save_po(po, path)
+                    cache_saved_po(path, po)
+                    successful_changes.extend(
+                        change
+                        for change in changes
+                        if str(change["uid"]) in by_uid
+                        and by_uid[str(change["uid"])].msgstr == str(change["new"])
                     )
-                grouped[result.file][result.uid] = new_text
-                result.msgstr = new_text
-                changed_indices.append(idx)
-            changed_files = 0
-            for path, translations in grouped.items():
-                po = load_po(path)
-                n = patch_msgstr_by_uid(po, translations)
-                if n:
-                    save_po(po, path)
-                    changed_files += 1
-            if record_undo and undo_action and changed_files:
-                search_undo_stack.append(undo_action)
+                    if missing:
+                        save_state["errors"].append(
+                            f"{path.name}: {missing} result entr{'y was' if missing == 1 else 'ies were'} not found"
+                        )
+                except Exception as exc:
+                    search_save_cache.pop(self._path_key(path), None)
+                    save_state["errors"].append(f"{path.name}: {exc}")
+                update_progress(file_number, len(grouped), progress_label)
+
+            changed_indices: list[int] = []
+            for change in successful_changes:
+                idx = int(change["index"])
+                if 0 <= idx < len(self.search_results):
+                    self.search_results[idx].msgstr = str(change["new"])
+                    changed_indices.append(idx)
+
+            if record_undo and successful_changes:
+                search_undo_stack.append(successful_changes)
                 trim_search_undo_stack()
-            for idx in changed_indices:
-                for row in range(table.rowCount()):
-                    if row_result_index(row) == idx:
-                        item = table.item(row, 2)
-                        if item:
-                            value = compact(self.search_results[idx].msgstr)
-                            bg_color = VI_HIT_BG if self.search_results[idx].hit_msgstr else VI_BG
-                            item.setText(value)
-                            item.setForeground(QBrush(QColor(WHITE)))
-                            item.setBackground(QBrush(QColor(bg_color)))
-                            item.setData(
-                                HTML_ROLE,
-                                f'<span style="color:{WHITE};">'
-                                f'{clt_rich_html(value, color_mode=bool(clt_view_state["enabled"]))}</span>',
-                            )
-                        break
-            table.resizeRowsToContents()
-            load_selected()
+
+            changed_rows: list[int] = []
+            table.setUpdatesEnabled(False)
+            try:
+                for idx in sorted(set(changed_indices)):
+                    row = update_result_row(idx)
+                    if row is not None:
+                        changed_rows.append(row)
+            finally:
+                table.setUpdatesEnabled(True)
+
+            if len(changed_rows) <= 80:
+                for row in changed_rows:
+                    table.resizeRowToContents(row)
+            elif table.rowCount() <= 350:
+                table.resizeRowsToContents()
+            else:
+                table.viewport().update()
+
+            current_idx = current_result_index()
+            if current_idx is not None and current_idx in changed_indices:
+                current_text = self.search_results[current_idx].msgstr
+                if msgstr_box.toPlainText() != current_text:
+                    msgstr_box.setPlainText(current_text)
+                    self._clear_text_editor_undo(msgstr_box)
+            finish_progress(f"Saved {len(changed_indices)} result(s)")
             return len(changed_indices)
 
         def save_current() -> None:
@@ -2189,11 +2474,16 @@ class ToolkitGUI(QMainWindow):
             if idx is None:
                 status.setText("Select a result first.")
                 return
-            changed = save_updates({idx: msgstr_box.toPlainText()})
+            changed = save_updates(
+                {idx: msgstr_box.toPlainText()},
+                progress_label="Saving current result",
+            )
             current_file = self.search_results[idx].file.name
-            status.setText(f"Saved {current_file}." if changed else f"No change in {current_file}.")
+            message = f"Saved {current_file}." if changed else f"No change in {current_file}."
+            status.setText(message + save_error_suffix())
 
         def wrap_selected_msgstrs(preset_index: int | None = None) -> None:
+            save_state["errors"] = []
             indices = selected_result_indices()
             if not indices:
                 current = current_result_index()
@@ -2206,7 +2496,9 @@ class ToolkitGUI(QMainWindow):
             soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             updates: dict[int, str] = {}
             wrapped_count = 0
-            for idx in sorted(set(indices)):
+            unique_indices = sorted(set(indices))
+            begin_progress("Wrapping selected results", len(unique_indices))
+            for position, idx in enumerate(unique_indices, start=1):
                 if idx < 0 or idx >= len(self.search_results):
                     continue
                 source = msgstr_box.toPlainText() if idx == current_idx else self.search_results[idx].msgstr
@@ -2215,13 +2507,23 @@ class ToolkitGUI(QMainWindow):
                     wrapped_count += 1
                 if changed or source != self.search_results[idx].msgstr:
                     updates[idx] = fixed
+                if position % 25 == 0 or position == len(unique_indices):
+                    update_progress(position, len(unique_indices), "Wrapping selected results")
 
-            changed = save_updates(updates)
+            if updates:
+                changed = save_updates(updates, progress_label="Saving wrapped results")
+            else:
+                changed = 0
+                finish_progress("No wrapping changes")
             if current_idx is not None and 0 <= current_idx < len(self.search_results):
-                msgstr_box.setPlainText(self.search_results[current_idx].msgstr)
+                current_text = self.search_results[current_idx].msgstr
+                if msgstr_box.toPlainText() != current_text:
+                    msgstr_box.setPlainText(current_text)
+                    self._clear_text_editor_undo(msgstr_box)
             status.setText(
                 f"W{self._active_linewrap_preset_index() + 1}: wrapped {wrapped_count} selected result(s), saved {changed}. "
                 f"Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
+                + save_error_suffix()
             )
 
         def run_search() -> None:
@@ -2234,36 +2536,146 @@ class ToolkitGUI(QMainWindow):
             if not paths:
                 status.setText("No input paths. Select file groups with Working folders in Settings, or enable Extra path.")
                 return
-            results: list[SearchResult] = []
-            seen: set[tuple[str, str]] = set()
-            for path in paths:
-                for result in search_path(
-                    path,
-                    text,
-                    search_msgid=search_msgid.isChecked(),
-                    search_msgstr=search_msgstr.isChecked(),
-                    case_sensitive=search_case.isChecked(),
-                    whole_word=search_whole.isChecked(),
-                    speaker=speaker_text,
-                    raw=search_raw.isChecked(),
-                ):
-                    key = (self._path_key(result.file), result.uid)
-                    if key in seen:
+            if self._active_thread is not None and self._active_thread.is_alive():
+                status.setText("Another action is already running. Stop it first.")
+                return
+
+            begin_progress("Collecting PO files", 0)
+            po_files: list[Path] = []
+            seen_files: set[str] = set()
+            for root in paths:
+                for po_path in iter_po_files(root):
+                    key = self._path_key(po_path)
+                    if key in seen_files:
                         continue
-                    seen.add(key)
-                    results.append(result)
-            self.search_results = results
-            self.search_source_paths = [str(path) for path in paths]
-            self.search_last_index = -1
-            search_undo_stack.clear()
-            fill_table()
-            status.setText(f"Found {len(self.search_results)} result(s) from {len(paths)} input path(s).")
-            if self.search_results:
-                table.selectRow(0)
-                load_selected()
-            if text.strip() and not user_multiline_text(find_edit.toPlainText()).strip():
-                first_text = next((part.strip() for part in text.split(";") if part.strip()), text.strip())
-                find_edit.setPlainText(first_text)
+                    seen_files.add(key)
+                    po_files.append(po_path)
+                    if len(po_files) % 100 == 0:
+                        repaint_progress()
+            if not po_files:
+                finish_progress("No PO files found")
+                status.setText("No PO files found in the selected input paths.")
+                return
+
+            search_options = {
+                "search_msgid": search_msgid.isChecked(),
+                "search_msgstr": search_msgstr.isChecked(),
+                "case_sensitive": search_case.isChecked(),
+                "whole_word": search_whole.isChecked(),
+                "speaker": speaker_text,
+                "raw": search_raw.isChecked(),
+            }
+            source_paths = [str(path) for path in paths]
+            begin_progress("Searching files", len(po_files))
+            status.setText(f"Searching {len(po_files)} PO file(s)...")
+            search_btn.setEnabled(False)
+            set_search_actions_enabled(False)
+            self.stop_button.setEnabled(True)
+            self._stop_event.clear()
+
+            signals = WorkerSignals()
+            self._active_signals.append(signals)
+            search_state = {
+                "finished": False,
+                "failed": False,
+                "focus_table": False,
+                "applying": False,
+                "pending_done": False,
+                "cleaned": False,
+            }
+
+            def search_progress(done: int, total: int, filename: str) -> None:
+                update_progress(done, total, "Searching files", pump_events=False)
+                status.setText(f"Searching {filename} ({done}/{total})...")
+
+            def apply_search_results(results: object) -> None:
+                if not isinstance(results, list):
+                    return
+                search_state["applying"] = True
+                try:
+                    search_state["finished"] = True
+                    search_state["focus_table"] = bool(results)
+                    self.search_results = results
+                    self.search_source_paths = source_paths
+                    self.search_last_index = -1
+                    search_undo_stack.clear()
+                    search_save_cache.clear()
+                    fill_table()
+                    status.setText(f"Found {len(self.search_results)} result(s) from {len(po_files)} PO file(s).")
+                    if self.search_results:
+                        table.selectRow(0)
+                        table.setCurrentCell(0, 0)
+                        load_selected()
+                    else:
+                        selected_info.clear()
+                        msgid_box.clear()
+                        msgstr_box.clear()
+                    if text.strip() and not user_multiline_text(find_edit.toPlainText()).strip():
+                        first_text = next((part.strip() for part in text.split(";") if part.strip()), text.strip())
+                        find_edit.setPlainText(first_text)
+                finally:
+                    search_state["applying"] = False
+                    if search_state["pending_done"]:
+                        finish_search_cleanup()
+
+            def search_failed(message: str) -> None:
+                search_state["failed"] = True
+                finish_progress("Search stopped" if message == "Search stopped." else "Search failed")
+                status.setText(message)
+
+            def finish_search_cleanup() -> None:
+                if search_state["cleaned"]:
+                    return
+                search_state["cleaned"] = True
+                search_btn.setEnabled(True)
+                set_search_actions_enabled(True)
+                self.stop_button.setEnabled(False)
+                self._active_thread = None
+                try:
+                    self._active_signals.remove(signals)
+                except ValueError:
+                    pass
+                if not search_state["finished"] and not search_state["failed"]:
+                    finish_progress("Search stopped")
+                    status.setText("Search stopped.")
+                if search_state["focus_table"]:
+                    table.setFocus(Qt.FocusReason.OtherFocusReason)
+
+            def search_done() -> None:
+                if search_state["applying"]:
+                    search_state["pending_done"] = True
+                    return
+                finish_search_cleanup()
+
+            signals.progress.connect(search_progress)
+            signals.result.connect(apply_search_results)
+            signals.error.connect(search_failed)
+            signals.done.connect(search_done)
+
+            def search_worker() -> None:
+                try:
+                    def report(done: int, total: int, path: Path) -> None:
+                        self._check_stop()
+                        signals.progress.emit(done, total, path.name)
+
+                    results = search_files(
+                        po_files,
+                        text,
+                        progress=report,
+                        **search_options,
+                    )
+                    self._check_stop()
+                    signals.result.emit(results)
+                except OperationCancelled:
+                    signals.error.emit("Search stopped.")
+                except Exception as exc:
+                    signals.error.emit(f"Search failed: {exc}")
+                finally:
+                    signals.done.emit()
+
+            thread = threading.Thread(target=search_worker, daemon=True)
+            self._active_thread = thread
+            thread.start()
 
         def open_selected_file() -> None:
             idx = current_result_index()
@@ -2302,14 +2714,16 @@ class ToolkitGUI(QMainWindow):
             return any(pattern.search(self.search_results[idx].msgstr) for pattern, _replacement in compiled)
 
         def select_result(idx: int) -> None:
-            for row in range(table.rowCount()):
-                if row_result_index(row) == idx:
-                    table.selectRow(row)
-                    table.setCurrentCell(row, 0)
-                    table.scrollToItem(table.item(row, 0), QAbstractItemView.ScrollHint.PositionAtCenter)
-                    load_selected()
-                    self.search_last_index = idx
-                    return
+            row = result_rows.get(idx)
+            if row is None or row < 0 or row >= table.rowCount():
+                return
+            table.selectRow(row)
+            table.setCurrentCell(row, 0)
+            item = table.item(row, 0)
+            if item is not None:
+                table.scrollToItem(item, QAbstractItemView.ScrollHint.PositionAtCenter)
+            load_selected()
+            self.search_last_index = idx
 
         def find_step(direction: int) -> None:
             compiled = compile_replace_sequence()
@@ -2327,6 +2741,7 @@ class ToolkitGUI(QMainWindow):
             status.setText("No match in current results.")
 
         def replace_indices(indices: list[int]) -> None:
+            save_state["errors"] = []
             compiled = compile_replace_sequence()
             if compiled is None:
                 return
@@ -2334,7 +2749,9 @@ class ToolkitGUI(QMainWindow):
             total_hits = 0
             wrapped_count = 0
             soft_value, hard_value, cuts_value = wrap_settings()
-            for idx in sorted(set(indices)):
+            unique_indices = sorted(set(indices))
+            begin_progress("Preparing replacements", len(unique_indices))
+            for position, idx in enumerate(unique_indices, start=1):
                 if idx < 0 or idx >= len(self.search_results):
                     continue
                 before = self.search_results[idx].msgstr
@@ -2346,10 +2763,17 @@ class ToolkitGUI(QMainWindow):
                     total_hits += row_hits
                     if wrapped:
                         wrapped_count += 1
-            changed = save_updates(updates)
+                if position % 25 == 0 or position == len(unique_indices):
+                    update_progress(position, len(unique_indices), "Preparing replacements")
+            if updates:
+                changed = save_updates(updates, progress_label="Saving replacements")
+            else:
+                changed = 0
+                finish_progress("No replacement matches")
             status.setText(
                 f"Replaced {total_hits} hit(s) in {changed} result(s). "
                 f"Auto-wrapped {wrapped_count}."
+                + save_error_suffix()
             )
 
         def replace_current() -> None:
@@ -2384,10 +2808,17 @@ class ToolkitGUI(QMainWindow):
                     continue
                 updates[idx] = str(change.get("old", ""))
                 restored_indices.append(idx)
-            changed = save_updates(updates, record_undo=False)
+            changed = save_updates(
+                updates,
+                record_undo=False,
+                progress_label="Restoring previous text",
+            )
             if restored_indices:
                 select_result(restored_indices[0])
-            status.setText(f"Undid {changed} saved Search change{'s' if changed != 1 else ''}.")
+            status.setText(
+                f"Undid {changed} saved Search change{'s' if changed != 1 else ''}."
+                + save_error_suffix()
+            )
 
         set_search_clt_color_mode(bool(clt_view_state["enabled"]), persist=False, quiet=True)
         table.itemSelectionChanged.connect(load_selected)
@@ -2573,7 +3004,7 @@ class ToolkitGUI(QMainWindow):
         dup_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(show_all_duplicates=False, tab_key="translafixer"))
         all_dup_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(show_all_duplicates=True, tab_key="translafixer"))
 
-        def run(logwrite):
+        def run(logwrite, progresswrite):
             save_source_files()
             save_paths()
             sources = source_files()
@@ -2585,7 +3016,8 @@ class ToolkitGUI(QMainWindow):
             total_matched = 0
             total_changed = 0
             total_errors = 0
-            for target in targets:
+            progresswrite(0, 0, "Building Translafixer source map")
+            for target_index, target in enumerate(targets, start=1):
                 self._check_stop()
                 logwrite(f"Translafixer target: {target}")
                 result = apply_translafix(
@@ -2595,6 +3027,11 @@ class ToolkitGUI(QMainWindow):
                     create_backup=backup.isChecked(),
                     log=lambda msg: logwrite(msg),
                     stop_requested=self._stop_event.is_set,
+                    progress=lambda done, total, path, target_index=target_index: progresswrite(
+                        done,
+                        total,
+                        f"Translafixer {path.name} [{target_index}/{len(targets)} target]",
+                    ),
                 )
                 logwrite(f"Source files scanned: {result.source_files}")
                 logwrite(f"Source entries: {result.source_entries}")
@@ -2709,13 +3146,17 @@ class ToolkitGUI(QMainWindow):
             return
 
         scan_duplicates = find_reference_duplicate_sources if show_all_duplicates else find_reference_translation_conflicts
+        self._begin_task_progress(f"Scanning {view_title}")
+        self._pump_task_progress()
         try:
             conflict_entries, result = scan_duplicates(references)
         except Exception as exc:
+            self._finish_task_progress(f"{view_title} scan failed")
             QMessageBox.critical(self, view_title, f"Could not scan selected Working folders:\n{exc}")
             return
 
         if not conflict_entries:
+            self._finish_task_progress("No duplicate entries found")
             no_duplicate_text = (
                 "No repeated source entries found."
                 if show_all_duplicates
@@ -2924,8 +3365,17 @@ class ToolkitGUI(QMainWindow):
             return path.expanduser().resolve(strict=False)
 
         conflict_files = sorted({resolved(entry.file) for entry in all_conflict_entries}, key=lambda item: str(item).casefold())
-        for po_path in conflict_files:
-            po_cache[po_path] = load_po(po_path)
+        self._begin_task_progress("Loading duplicate PO files", len(conflict_files))
+        self._pump_task_progress()
+        try:
+            for file_index, po_path in enumerate(conflict_files, start=1):
+                po_cache[po_path] = load_po(po_path)
+                self._update_task_progress(file_index, len(conflict_files), f"Loading duplicate {po_path.name}")
+                self._pump_task_progress()
+        except Exception as exc:
+            self._finish_task_progress("Duplicate PO load failed")
+            QMessageBox.critical(self, view_title, f"Could not load duplicate files:\n{exc}")
+            return
 
         original_translations: dict[tuple[Path, str], str] = {}
         for po_path, po_file in po_cache.items():
@@ -3308,6 +3758,8 @@ class ToolkitGUI(QMainWindow):
                 detail_loading["value"] = False
 
         def populate(entries: list[ReferenceTranslationConflictEntry]) -> None:
+            self._begin_task_progress("Rendering duplicate entries", len(entries))
+            self._pump_task_progress()
             loading["value"] = True
             previous_blocked = table.blockSignals(True)
             table.setUpdatesEnabled(False)
@@ -3363,11 +3815,15 @@ class ToolkitGUI(QMainWindow):
                     variants_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                     table.setItem(row, 6, variants_item)
                     update_row_visual(row, entry.translation, refresh_height=False)
+                    if (row + 1) % 25 == 0 or row + 1 == len(entries):
+                        self._update_task_progress(row + 1, len(entries), "Rendering duplicate entries")
+                        self._pump_task_progress()
                 refresh_table_row_heights()
             finally:
                 table.setUpdatesEnabled(True)
                 table.blockSignals(previous_blocked)
                 loading["value"] = False
+                self._finish_task_progress(f"Rendered {len(entries)} duplicate entries")
             if table.rowCount():
                 table.selectRow(0)
                 table.setCurrentCell(0, 0)
@@ -3553,19 +4009,22 @@ class ToolkitGUI(QMainWindow):
             undo_rows: list[dict[str, object]] = []
             current_row = table.currentRow()
             soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
-            for row in rows:
+            self._begin_task_progress("Wrapping duplicate entries", len(rows))
+            self._pump_task_progress()
+            for position, row in enumerate(rows, start=1):
                 item = table.item(row, 3)
-                if item is None:
-                    continue
-                payload = item.data(Qt.ItemDataRole.UserRole)
-                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
-                if path is None or entry is None:
-                    continue
-                old_text = entry.msgstr
-                fixed, did_change = wrap_msgstr(item.text(), soft=soft_value, hard=hard_value, max_cuts=cuts_value)
-                if did_change and set_entry_translation(row, fixed, update_detail=(row == current_row)):
-                    undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": fixed, "label": "wrap"})
-                    changed += 1
+                if item is not None:
+                    payload = item.data(Qt.ItemDataRole.UserRole)
+                    path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
+                    if path is not None and entry is not None:
+                        old_text = entry.msgstr
+                        fixed, did_change = wrap_msgstr(item.text(), soft=soft_value, hard=hard_value, max_cuts=cuts_value)
+                        if did_change and set_entry_translation(row, fixed, update_detail=(row == current_row)):
+                            undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": fixed, "label": "wrap"})
+                            changed += 1
+                self._update_task_progress(position, len(rows), "Wrapping duplicate entries")
+                self._pump_task_progress()
+            self._finish_task_progress(f"Wrapped {changed} duplicate entries")
             push_duplicate_undo(undo_rows)
             refresh_table_row_heights()
             update_status()
@@ -3586,28 +4045,33 @@ class ToolkitGUI(QMainWindow):
             new_text = current_translation_text()
             changed = 0
             undo_rows: list[dict[str, object]] = []
+            total_rows = table.rowCount()
+            self._begin_task_progress("Applying duplicate translation", total_rows)
+            self._pump_task_progress()
             loading["value"] = True
             try:
-                for row in range(table.rowCount()):
+                for row in range(total_rows):
                     item = table.item(row, 3)
                     row_payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
-                    if not isinstance(row_payload, dict) or str(row_payload.get("key") or "") != key:
-                        continue
-                    path, entry = entry_from_payload(row_payload)
-                    if path is None or entry is None:
-                        continue
-                    if entry.msgstr == new_text:
-                        update_row_visual(row, new_text)
-                        continue
-                    undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": entry.msgstr, "new": new_text})
-                    entry.msgstr = new_text
-                    refresh_changed_file(path)
-                    if item is not None:
-                        item.setText(new_text)
-                        update_row_visual(row, new_text)
-                    changed += 1
+                    if isinstance(row_payload, dict) and str(row_payload.get("key") or "") == key:
+                        path, entry = entry_from_payload(row_payload)
+                        if path is not None and entry is not None:
+                            if entry.msgstr == new_text:
+                                update_row_visual(row, new_text)
+                            else:
+                                undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": entry.msgstr, "new": new_text})
+                                entry.msgstr = new_text
+                                refresh_changed_file(path)
+                                if item is not None:
+                                    item.setText(new_text)
+                                    update_row_visual(row, new_text)
+                                changed += 1
+                    if (row + 1) % 25 == 0 or row + 1 == total_rows:
+                        self._update_task_progress(row + 1, total_rows, "Applying duplicate translation")
+                        self._pump_task_progress()
             finally:
                 loading["value"] = False
+                self._finish_task_progress(f"Applied to {changed} duplicate rows")
             push_duplicate_undo(undo_rows)
             load_detail_for_row(table.currentRow())
             update_status()
@@ -3899,36 +4363,40 @@ class ToolkitGUI(QMainWindow):
                 undo_rows: list[dict[str, object]] = []
                 changed_rows = 0
                 total_matches = 0
+                total_rows = table.rowCount()
+                self._begin_task_progress("Replacing duplicate entries", total_rows)
+                self._pump_task_progress()
                 loading["value"] = True
                 try:
-                    for row in range(table.rowCount()):
+                    for row in range(total_rows):
                         item = table.item(row, 3)
                         payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
-                        if not isinstance(payload, dict):
-                            continue
-                        path, entry = entry_from_payload(payload)
-                        if path is None or entry is None:
-                            continue
-                        old_text = entry.msgstr
-                        new_text, count = apply_search_replace_sequence(old_text, compiled)
-                        if count <= 0 or new_text == old_text:
-                            continue
-                        undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": "replace all"})
-                        entry.msgstr = new_text
-                        refresh_changed_file(path)
-                        if item is not None:
-                            item.setText(new_text)
-                            update_row_visual(row, new_text)
-                        if row == table.currentRow():
-                            detail_loading["value"] = True
-                            try:
-                                vi_box.setPlainText(new_text)
-                            finally:
-                                detail_loading["value"] = False
-                        changed_rows += 1
-                        total_matches += count
+                        if isinstance(payload, dict):
+                            path, entry = entry_from_payload(payload)
+                            if path is not None and entry is not None:
+                                old_text = entry.msgstr
+                                new_text, count = apply_search_replace_sequence(old_text, compiled)
+                                if count > 0 and new_text != old_text:
+                                    undo_rows.append({"row": row, "path": path, "uid": entry.uid, "old": old_text, "new": new_text, "label": "replace all"})
+                                    entry.msgstr = new_text
+                                    refresh_changed_file(path)
+                                    if item is not None:
+                                        item.setText(new_text)
+                                        update_row_visual(row, new_text)
+                                    if row == table.currentRow():
+                                        detail_loading["value"] = True
+                                        try:
+                                            vi_box.setPlainText(new_text)
+                                        finally:
+                                            detail_loading["value"] = False
+                                    changed_rows += 1
+                                    total_matches += count
+                        if (row + 1) % 25 == 0 or row + 1 == total_rows:
+                            self._update_task_progress(row + 1, total_rows, "Replacing duplicate entries")
+                            self._pump_task_progress()
                 finally:
                     loading["value"] = False
+                    self._finish_task_progress(f"Replaced {total_matches} duplicate matches")
                 push_duplicate_undo(undo_rows)
                 update_status()
                 status_label.setText(f"Replaced {total_matches} match{'es' if total_matches != 1 else ''} in {changed_rows} row{'s' if changed_rows != 1 else ''}.")
@@ -3970,14 +4438,20 @@ class ToolkitGUI(QMainWindow):
             if not changed_files:
                 status.setText("No changed files to save.")
                 return
+            save_paths = sorted(list(changed_files), key=lambda item: str(item).casefold())
+            self._begin_task_progress("Saving duplicate PO files", len(save_paths))
+            self._pump_task_progress()
             saved = 0
             errors: list[str] = []
-            for path in sorted(list(changed_files), key=lambda item: str(item).casefold()):
+            for file_index, path in enumerate(save_paths, start=1):
                 ok, error = save_one_file(path)
                 if ok:
                     saved += 1
                 elif error:
                     errors.append(error)
+                self._update_task_progress(file_index, len(save_paths), f"Saving duplicate {path.name}")
+                self._pump_task_progress()
+            self._finish_task_progress(f"Saved {saved}/{len(save_paths)} duplicate PO files")
             if errors:
                 QMessageBox.warning(self, view_title, "Some files could not be saved:\n" + "\n".join(errors[:10]))
             update_status()
@@ -4045,9 +4519,12 @@ class ToolkitGUI(QMainWindow):
             if not current_references:
                 QMessageBox.warning(dialog, view_title, "Select checkbox Working folders in this tab first.")
                 return
+            self._begin_task_progress(f"Rescanning {view_title}")
+            self._pump_task_progress()
             try:
                 refreshed_entries, refreshed_result = scan_duplicates(current_references)
             except Exception as exc:
+                self._finish_task_progress(f"{view_title} rescan failed")
                 QMessageBox.critical(dialog, view_title, f"Could not rescan selected Working folders:\n{exc}")
                 return
 
@@ -4066,10 +4543,14 @@ class ToolkitGUI(QMainWindow):
                 {resolved(entry.file) for entry in all_conflict_entries},
                 key=lambda item: str(item).casefold(),
             )
+            self._begin_task_progress("Reloading duplicate PO files", len(current_conflict_files))
             try:
-                for po_path in current_conflict_files:
+                for file_index, po_path in enumerate(current_conflict_files, start=1):
                     po_cache[po_path] = load_po(po_path)
+                    self._update_task_progress(file_index, len(current_conflict_files), f"Reloading duplicate {po_path.name}")
+                    self._pump_task_progress()
             except Exception as exc:
+                self._finish_task_progress("Duplicate PO reload failed")
                 QMessageBox.critical(dialog, view_title, f"Could not reload duplicate files:\n{exc}")
                 return
             file_labels.clear()
@@ -4916,6 +5397,9 @@ class ToolkitGUI(QMainWindow):
 
         def populate_table() -> None:
             po = po_file()
+            total_entries = len(po.entries) if po is not None else 0  # type: ignore[union-attr]
+            self._begin_task_progress("Loading PO entries", total_entries)
+            self._pump_task_progress()
             state["loading"] = True
             table.setUpdatesEnabled(False)
             table.blockSignals(True)
@@ -4924,7 +5408,7 @@ class ToolkitGUI(QMainWindow):
                 if po is None:
                     table.setRowCount(0)
                     return
-                table.setRowCount(len(po.entries))  # type: ignore[union-attr]
+                table.setRowCount(total_entries)
                 for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
                     number = make_item(str(row + 1), bg=PANEL_3)
                     number.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -4933,6 +5417,10 @@ class ToolkitGUI(QMainWindow):
                     table.setItem(row, 2, make_item(entry.msgid, bg=EN_BG))
                     table.setItem(row, 3, make_item(entry.msgstr, editable=True, bg=VI_BG if entry.msgstr.strip() else "#4a3828"))
                     refresh_row_style(row)
+                    if (row + 1) % 50 == 0 or row + 1 == total_entries:
+                        label = f"Loading {current_path().name}" if current_path() is not None else "Loading PO entries"
+                        self._update_task_progress(row + 1, total_entries, label)
+                        self._pump_task_progress()
                 if table.rowCount():
                     table.setCurrentCell(0, 0)
                     table.selectRow(0)
@@ -4940,6 +5428,7 @@ class ToolkitGUI(QMainWindow):
                 table.blockSignals(False)
                 table.setUpdatesEnabled(True)
                 state["loading"] = False
+                self._finish_task_progress(f"Loaded {total_entries} PO entries")
             table.viewport().update()
             if table.rowCount():
                 load_detail(0)
@@ -4997,7 +5486,10 @@ class ToolkitGUI(QMainWindow):
             update_source_edit: bool = True,
         ) -> None:
             source_paths = [Path(str(item)).expanduser() for item in paths if str(item).strip()]
+            self._begin_task_progress("Discovering PO files")
+            self._pump_task_progress()
             files = discover_po_files(source_paths)
+            self._begin_task_progress("Building PO file list", len(files))
             state["loading_files"] = True
             file_combo.blockSignals(True)
             try:
@@ -5009,8 +5501,11 @@ class ToolkitGUI(QMainWindow):
                     file_combo.setEnabled(True)
                     state["file_paths"] = files
                     state["source_paths"] = source_paths
-                    for po_path in files:
+                    for file_index, po_path in enumerate(files, start=1):
                         file_combo.addItem(file_label(po_path), str(po_path))
+                        if file_index % 50 == 0 or file_index == len(files):
+                            self._update_task_progress(file_index, len(files), "Building PO file list")
+                            self._pump_task_progress()
                     preferred = str(current_path() or self.config.get("po_viewer_file", ""))
                     if preferred:
                         for idx, po_path in enumerate(files):
@@ -5020,6 +5515,7 @@ class ToolkitGUI(QMainWindow):
             finally:
                 file_combo.blockSignals(False)
                 state["loading_files"] = False
+                self._finish_task_progress(f"Found {len(files)} PO file(s)")
 
             if not files:
                 state["file_paths"] = []
@@ -5127,15 +5623,20 @@ class ToolkitGUI(QMainWindow):
             if po is None or path is None:
                 QMessageBox.warning(self, "PO Viewer", "No file loaded.")
                 return
+            self._begin_task_progress(f"Saving {path.name}", 1)
+            self._pump_task_progress()
             commit_pending_text_undo()
             try:
                 save_po(po, path)
             except Exception as exc:
+                self._finish_task_progress(f"Save failed: {path.name}")
                 QMessageBox.critical(self, "PO Viewer", f"Could not save file:\n{exc}")
                 return
+            self._update_task_progress(1, 1, f"Saving {path.name}")
             state["dirty"] = False
             cache_current_po()
             set_status(f"Saved {path.name}")
+            self._finish_task_progress(f"Saved {path.name}")
 
         def select_entry_row(row: int, *, center: bool = False, keep_vi_focus: bool = False) -> None:
             po = po_file()
@@ -5360,19 +5861,25 @@ class ToolkitGUI(QMainWindow):
                     return
                 if compiled is None:
                     return
+                total_entries = len(po.entries)  # type: ignore[union-attr]
                 changed_rows = 0
                 total_matches = 0
+                self._begin_task_progress("Replacing PO entries", total_entries)
+                self._pump_task_progress()
                 begin_po_undo_batch("replace all")
                 try:
                     for row, entry in enumerate(po.entries):  # type: ignore[union-attr]
                         new_text, count = apply_search_replace_sequence(entry.msgstr, compiled)
-                        if count <= 0:
-                            continue
-                        total_matches += count
-                        if set_entry_translation(row, new_text, undo_label="replace all"):
-                            changed_rows += 1
+                        if count > 0:
+                            total_matches += count
+                            if set_entry_translation(row, new_text, undo_label="replace all"):
+                                changed_rows += 1
+                        if (row + 1) % 25 == 0 or row + 1 == total_entries:
+                            self._update_task_progress(row + 1, total_entries, "Replacing PO entries")
+                            self._pump_task_progress()
                 finally:
                     end_po_undo_batch()
+                    self._finish_task_progress(f"Replaced {total_matches} PO matches")
                 refresh_suggestions_for_row(table.currentRow())
                 status_label.setText(f"Replaced {total_matches} match{'es' if total_matches != 1 else ''} in {changed_rows} row{'s' if changed_rows != 1 else ''}.")
 
@@ -5502,19 +6009,24 @@ class ToolkitGUI(QMainWindow):
             if po is None:
                 QMessageBox.warning(self, "PO Viewer", "Load a file first.")
                 return
+            valid_rows = [row for row in rows if 0 <= row < len(po.entries)]  # type: ignore[union-attr]
             soft_value, hard_value, cuts_value = self._linewrap_settings(preset_index)
             changed = 0
+            self._begin_task_progress("Wrapping PO entries", len(valid_rows))
+            self._pump_task_progress()
             begin_po_undo_batch("wrap")
             try:
-                for row in rows:
-                    if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
-                        continue
+                for position, row in enumerate(valid_rows, start=1):
                     entry = po.entries[row]  # type: ignore[union-attr]
                     fixed, did_change = wrap_msgstr(entry.msgstr, soft=soft_value, hard=hard_value, max_cuts=cuts_value)
                     if did_change and set_entry_translation(row, fixed, undo_label="wrap"):
                         changed += 1
+                    if position % 25 == 0 or position == len(valid_rows):
+                        self._update_task_progress(position, len(valid_rows), "Wrapping PO entries")
+                        self._pump_task_progress()
             finally:
                 end_po_undo_batch()
+                self._finish_task_progress(f"Wrapped {changed} PO entr{'y' if changed == 1 else 'ies'}")
             set_status(
                 f"W{self._active_linewrap_preset_index() + 1}: wrapped {changed} translation entr{'y' if changed == 1 else 'ies'} "
                 f"using Soft={soft_value}, Hard={hard_value}, Cuts={cuts_value}."
@@ -5579,9 +6091,12 @@ class ToolkitGUI(QMainWindow):
             if not sources:
                 QMessageBox.warning(self, "PO Viewer", "Add source files/folders in the Translafixer tab first.")
                 return
+            self._begin_task_progress("Reading Translafixer sources")
+            self._pump_task_progress()
             try:
                 translations, result = build_translation_map(sources)
             except Exception as exc:
+                self._finish_task_progress("Translafixer source read failed")
                 QMessageBox.critical(self, "PO Viewer", f"Could not read Translafixer sources:\n{exc}")
                 return
             rows = selected_rows()
@@ -5590,28 +6105,32 @@ class ToolkitGUI(QMainWindow):
                 rows = [i for i, entry in enumerate(po.entries) if not entry.msgstr.strip()]  # type: ignore[union-attr]
                 mode = "empty"
             if not rows:
+                self._finish_task_progress("No PO entries to fill")
                 set_status("No selected rows and no empty translations to fill.")
                 return
             matched = 0
             changed = 0
             unchanged = 0
+            self._begin_task_progress("Filling PO entries", len(rows))
             begin_po_undo_batch("translafix")
             try:
-                for row in rows:
+                for position, row in enumerate(rows, start=1):
                     if row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                         continue
                     entry = po.entries[row]  # type: ignore[union-attr]
                     replacement = translations.get(msgid_match_key(entry.msgid))
-                    if replacement is None:
-                        continue
-                    matched += 1
-                    if entry.msgstr == replacement:
-                        unchanged += 1
-                        continue
-                    if set_entry_translation(row, replacement, undo_label="translafix"):
-                        changed += 1
+                    if replacement is not None:
+                        matched += 1
+                        if entry.msgstr == replacement:
+                            unchanged += 1
+                        elif set_entry_translation(row, replacement, undo_label="translafix"):
+                            changed += 1
+                    if position % 25 == 0 or position == len(rows):
+                        self._update_task_progress(position, len(rows), "Filling PO entries")
+                        self._pump_task_progress()
             finally:
                 end_po_undo_batch()
+                self._finish_task_progress(f"Filled {changed} PO entr{'y' if changed == 1 else 'ies'}")
             conflict_note = f" | conflicts skipped={result.ambiguous_msgids}" if result.ambiguous_msgids else ""
             set_status(
                 f"Translafix {mode}: source files={result.source_files}, usable={result.usable_translations}, "
@@ -5638,9 +6157,16 @@ class ToolkitGUI(QMainWindow):
             batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
             sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
             entries = [po.entries[row] for row in rows if 0 <= row < len(po.entries)]  # type: ignore[union-attr]
+            self._begin_task_progress("Gemini API PO entries", len(entries))
+            self._pump_task_progress()
             QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
             try:
                 client = GeminiApiClient(api_key=api_key, model=model, prompt=prompt)
+
+                def report_gemini_progress(done: int, total: int) -> None:
+                    self._update_task_progress(done, total, "Gemini API PO entries")
+                    self._pump_task_progress()
+
                 translations, errors = translate_entries_with_client(
                     entries,
                     client,
@@ -5648,6 +6174,7 @@ class ToolkitGUI(QMainWindow):
                     sleep_seconds=sleep_seconds,
                     allow_partial=False,
                     prompt=prompt,
+                    progress=report_gemini_progress,
                 )
                 changed = 0
                 by_uid = {entry.uid: row for row, entry in zip(rows, entries)}
@@ -5661,10 +6188,12 @@ class ToolkitGUI(QMainWindow):
                     end_po_undo_batch()
                 refresh_suggestions_for_row(table.currentRow())
             except Exception as exc:
+                self._finish_task_progress("Gemini API failed")
                 QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
                 return
             finally:
                 QApplication.restoreOverrideCursor()
+            self._finish_task_progress(f"Gemini translated {changed} PO entr{'y' if changed == 1 else 'ies'}")
             if errors:
                 preview = "\n".join(f"{e.msgctxt or e.uid}: {e.reason}" for e in errors[:8])
                 more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
@@ -5870,7 +6399,7 @@ class ToolkitGUI(QMainWindow):
             self.config["gemini_api_sleep_seconds"] = wait_seconds.value()
             save_config(self.config)
 
-        def run_web(logwrite):
+        def run_web(logwrite, progresswrite):
             save_web_config()
             paths = self._processing_paths("gemini_web", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
@@ -5900,6 +6429,7 @@ class ToolkitGUI(QMainWindow):
                     retry_count=retries.value(),
                     log=lambda msg: logwrite(msg),
                     stop_requested=self._stop_event.is_set,
+                    progress=lambda done, total, path: progresswrite(done, total, f"Gemini Web {path.name}"),
                 )
                 if not result.files:
                     logwrite(f"No untranslated PO files found in {input_path}.", "warn")
@@ -5932,7 +6462,7 @@ class ToolkitGUI(QMainWindow):
             if total_errors:
                 logwrite(f"Total errors: {total_errors}", "bad")
 
-        def run_api(logwrite):
+        def run_api(logwrite, progresswrite):
             save_web_config()
             api_key = api_key_edit.text().strip() or os.environ.get("GEMINI_API_KEY", "").strip()
             if not api_key:
@@ -5966,8 +6496,10 @@ class ToolkitGUI(QMainWindow):
                 return
             total_changed = 0
             total_errors = 0
+            progresswrite(0, len(po_files), "Gemini API files")
             for idx, po_path in enumerate(po_files, start=1):
                 self._check_stop()
+                progresswrite(idx - 1, len(po_files), f"Gemini API {po_path.name}")
                 logwrite(f"[{idx}/{len(po_files)}] Gemini API translating {po_path}")
                 changed, errors = translate_file_with_client(
                     po_path,
@@ -5985,22 +6517,25 @@ class ToolkitGUI(QMainWindow):
                     logwrite(f"  {e.uid} | {e.msgctxt} | {e.reason}", "bad")
                 if len(errors) > 40:
                     logwrite(f"  ... {len(errors) - 40} more errors", "warn")
+                progresswrite(idx, len(po_files), f"Gemini API {po_path.name}")
             logwrite(f"Total translated: {total_changed}", "good")
             if total_errors:
                 logwrite(f"Total errors: {total_errors}", "bad")
 
-        def run_selected_mode(logwrite):
+        def run_selected_mode(logwrite, progresswrite):
             if api_mode_enabled():
-                run_api(logwrite)
+                run_api(logwrite, progresswrite)
             else:
-                run_web(logwrite)
+                run_web(logwrite, progresswrite)
 
-        def open_chrome(logwrite):
+        def open_chrome(logwrite, progresswrite):
+            progresswrite(0, 0, "Opening Chrome")
             save_web_config()
             cmd = open_chrome_debug(cdp_url=cdp_edit.text().strip() or "http://localhost:9222", user_data_dir=DEFAULT_CHROME_USER_DATA_DIR)
             logwrite("Chrome opened with remote debugging.", "good")
             logwrite("Login to Gemini in that Chrome window, then click Run Gemini Web.")
             logwrite("Command: " + " ".join(str(x) for x in cmd))
+            progresswrite(1, 1, "Chrome opened")
 
         mode_combo.currentIndexChanged.connect(lambda _idx: (api_key_toggle.setChecked(str(mode_combo.currentData()) == "api"), sync_mode_ui()))
         api_key_toggle.stateChanged.connect(lambda _state: sync_mode_ui())
@@ -6117,23 +6652,33 @@ class ToolkitGUI(QMainWindow):
         log = self._make_log()
         layout.addWidget(log, 1)
 
-        def backup(logwrite):
+        def backup(logwrite, progresswrite):
             self._check_stop()
             paths = self._processing_paths("backup_sync", extra_edit=backup_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
                 return
             total = 0
+            progresswrite(0, 0, "Discovering PO files for backup")
             for input_path in paths:
                 self._check_stop()
-                written = make_backups(input_path, overwrite=False)
+                written = make_backups(
+                    input_path,
+                    overwrite=False,
+                    progress=lambda done, total_files, path: progresswrite(done, total_files, f"Backup {path.name}"),
+                )
                 total += written
                 logwrite(f"{input_path}: wrote {written} missing Copy.po backup(s)", "good" if written else "warn")
             logwrite(f"Missing Copy.po backups written: {total}", "good")
             logwrite("Existing Copy.po files were not touched.", "warn")
 
-        def sync(logwrite):
+        def sync(logwrite, progresswrite):
             self._check_stop()
-            result = sync_by_filename_report(source_edit.text().strip(), target_edit.text().strip())
+            progresswrite(0, 0, "Scanning sync folders")
+            result = sync_by_filename_report(
+                source_edit.text().strip(),
+                target_edit.text().strip(),
+                progress=lambda done, total, path: progresswrite(done, total, f"Manual sync {path.name}"),
+            )
 
             def log_paths(title: str, paths: list[Path], level: str = "warn", *, max_items: int = 200) -> None:
                 if not paths:
@@ -6169,7 +6714,7 @@ class ToolkitGUI(QMainWindow):
             log_paths("Target files with no source filename match (not found in source)", result.target_without_source, "warn")
             logwrite(f"Files synced: {result.copied}", "good" if result.copied else "warn")
 
-        def sync_selected_options(logwrite):
+        def sync_selected_options(logwrite, progresswrite):
             selected = self._selected_dr_options("backup_sync")
             if not selected:
                 logwrite("No Danganronpa file groups selected.", "warn")
@@ -6179,9 +6724,11 @@ class ToolkitGUI(QMainWindow):
                 logwrite("Set Settings > Extracted first.", "warn")
                 return
             total_matched = total_copied = total_errors = 0
-            for option_key in selected:
+            progresswrite(0, len(selected), "Syncing selected groups")
+            for option_index, option_key in enumerate(selected, start=1):
                 self._check_stop()
                 label = option_name(option_key)
+                progresswrite(option_index - 1, len(selected), f"Sync {label}")
                 working_folder = str(self.config.get(f"working_{option_key}_path", "")).strip()
                 filter_by_option = False
 
@@ -6196,12 +6743,20 @@ class ToolkitGUI(QMainWindow):
 
                 if not working_folder:
                     logwrite(f"Skip {label}: set Settings > Working {label} first.", "warn")
+                    progresswrite(option_index, len(selected), f"Skipped {label}")
                     continue
                 try:
-                    result = sync_option_from_working_folder(working_folder, extracted_folder, option_key, filter_by_option=filter_by_option)
+                    result = sync_option_from_working_folder(
+                        working_folder,
+                        extracted_folder,
+                        option_key,
+                        filter_by_option=filter_by_option,
+                        progress=lambda done, total, path, label=label: progresswrite(done, total, f"Sync {label}: {path.name}"),
+                    )
                 except Exception as exc:
                     logwrite(f"ERR {label}: {exc}", "bad")
                     total_errors += 1
+                    progresswrite(option_index, len(selected), f"Failed {label}")
                     continue
                 total_matched += result.matched
                 total_copied += result.copied
@@ -6219,9 +6774,10 @@ class ToolkitGUI(QMainWindow):
                     logwrite(f"  ERR {src}: {err}", "bad")
                 if len(result.errors) > 50:
                     logwrite(f"  ... {len(result.errors) - 50} more errors", "bad")
+                progresswrite(option_index, len(selected), f"Synced {label}")
             logwrite(f"Selected option sync done. matched={total_matched}, copied={total_copied}, errors={total_errors}", "good" if total_errors == 0 else "warn")
 
-        def move_compile(logwrite):
+        def move_compile(logwrite, progresswrite):
             repack = str(self.config.get("repack_path", "")).strip()
             script = str(self.config.get("script_path", "")).strip()
             wad_repack = str(self.config.get("wad_repack_path", "")).strip()
@@ -6229,7 +6785,13 @@ class ToolkitGUI(QMainWindow):
                 logwrite("Set Settings > Repack and Settings > Script first.", "warn")
                 return
             self._check_stop()
-            result = move_repack_to_script(repack, script, wad_repack_folder=wad_repack or None)
+            progresswrite(0, 0, "Scanning Repack files")
+            result = move_repack_to_script(
+                repack,
+                script,
+                wad_repack_folder=wad_repack or None,
+                progress=lambda done, total, path: progresswrite(done, total, f"Repack → Script {path.name}"),
+            )
             logwrite(f"Repack files scanned: {result.scanned}")
             if result.skipped_wad_repack:
                 logwrite(f"WAD Repack files skipped: {result.skipped_wad_repack}", "warn")
@@ -6250,14 +6812,19 @@ class ToolkitGUI(QMainWindow):
             if result.errors:
                 logwrite(f"Move Repack errors: {len(result.errors)}", "bad")
 
-        def move_to_game(logwrite):
+        def move_to_game(logwrite, progresswrite):
             wad_repack = str(self.config.get("wad_repack_path", "")).strip()
             game_folder = str(self.config.get("game_folder_path", "")).strip()
             if not wad_repack or not game_folder:
                 logwrite("Set Settings > WAD Repack and Settings > Game Folder first.", "warn")
                 return
             self._check_stop()
-            result = copy_wad_repack_to_game(wad_repack, game_folder)
+            progresswrite(0, 0, "Scanning WAD Repack files")
+            result = copy_wad_repack_to_game(
+                wad_repack,
+                game_folder,
+                progress=lambda done, total, path: progresswrite(done, total, f"WAD → Game {path.name}"),
+            )
             logwrite(f"WAD Repack files scanned: {result.scanned}")
             if result.skipped_identical:
                 logwrite(f"Identical Game Folder files skipped: {result.skipped_identical}", "info")
@@ -6276,16 +6843,20 @@ class ToolkitGUI(QMainWindow):
             if result.errors:
                 logwrite(f"Move to Game errors: {len(result.errors)}", "bad")
 
-        def restore_from_copy(logwrite):
+        def restore_from_copy(logwrite, progresswrite):
             working_paths = self._selected_working_paths("backup_sync", logwrite=logwrite)
             paths = [str(path) for path in working_paths] + list(restore_paths)
             if not paths:
                 logwrite("Select Working folders or add restore folders / - Copy.po files first.", "warn")
                 return
             self._check_stop()
-            results = restore_working_po_from_copies(paths)
+            progresswrite(0, 0, "Scanning Copy.po files")
+            results = restore_working_po_from_copies(
+                paths,
+                progress=lambda done, total, path: progresswrite(done, total, f"Restore {path.name}"),
+            )
             ok = failed = 0
-            for result in results:
+            for result_index, result in enumerate(results, start=1):
                 self._check_stop()
                 if result.ok:
                     ok += 1

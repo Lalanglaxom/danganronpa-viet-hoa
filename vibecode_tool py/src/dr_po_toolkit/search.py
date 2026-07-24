@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import TypeAlias
+from typing import Callable, Iterable, TypeAlias
 
 from .discovery import iter_po_files
 from .po_io import parse_po_text
@@ -25,6 +25,7 @@ class SearchResult:
 
 PreparedCriterion: TypeAlias = tuple[str, str, re.Pattern[str] | None, re.Pattern[str] | None]
 PreparedExpression: TypeAlias = list[list[PreparedCriterion]]
+SearchProgressCallback: TypeAlias = Callable[[int, int, Path], None]
 
 
 def split_search_expression(text: str) -> list[list[str]]:
@@ -279,8 +280,8 @@ def _file_can_contain_expression(
 #     needle_visible = visible_text(user_multiline_text(phrase))
 #     if not needle_visible or not (search_msgid or search_msgstr):
 #         return results
-def search_path(
-    root: str | Path,
+def search_files(
+    files: Iterable[str | Path],
     phrase: str,
     search_msgid: bool = True,
     search_msgstr: bool = True,
@@ -288,9 +289,10 @@ def search_path(
     whole_word: bool = False,
     speaker: str = "",
     raw: bool = False,
+    progress: SearchProgressCallback | None = None,
 ) -> list[SearchResult]:
     results: list[SearchResult] = []
-    base = Path(root)
+    paths = [Path(path) for path in files]
     phrase_expression = _prepare_expression(
         phrase,
         case_sensitive=case_sensitive,
@@ -308,82 +310,111 @@ def search_path(
     if phrase_expression and not (search_msgid or search_msgstr):
         return results
 
-    for path in iter_po_files(base):
+    total = len(paths)
+    for done, path in enumerate(paths, start=1):
         try:
-            raw_text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
             try:
-                raw_text = path.read_text(encoding="utf-8-sig")
-            except Exception:
+                raw_text = path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                try:
+                    raw_text = path.read_text(encoding="utf-8-sig")
+                except Exception:
+                    continue
+            except OSError:
                 continue
-        except OSError:
-            continue
 
-        if phrase_expression and not _file_can_contain_expression(
-            raw_text,
-            phrase_expression,
-            case_sensitive=case_sensitive,
-            raw=raw,
-        ):
-            continue
-        if speaker_expression and not _file_can_contain_expression(
-            raw_text,
-            speaker_expression,
-            case_sensitive=case_sensitive,
-            raw=raw,
-        ):
-            continue
-
-        po = parse_po_text(raw_text, path)
-        for entry in po.entries:
-            speaker_text = "\n".join(
-                value
-                for value in (entry.speaker, entry.msgctxt or "")
-                if value
-            )
-            hit_speaker = bool(speaker_expression) and _matches_expression(
-                speaker_text,
+            if phrase_expression and not _file_can_contain_expression(
+                raw_text,
+                phrase_expression,
+                case_sensitive=case_sensitive,
+                raw=raw,
+            ):
+                continue
+            if speaker_expression and not _file_can_contain_expression(
+                raw_text,
                 speaker_expression,
                 case_sensitive=case_sensitive,
                 raw=raw,
-            )
-            if speaker_expression and not hit_speaker:
+            ):
                 continue
 
-            if phrase_expression:
-                selected_texts: list[str] = []
-                selected_fields: list[str] = []
-                if search_msgid:
-                    selected_texts.append(entry.msgid)
-                    selected_fields.append("msgid")
-                if search_msgstr:
-                    selected_texts.append(entry.msgstr)
-                    selected_fields.append("msgstr")
-                phrase_matches, field_hits = _matches_expression_across_texts(
-                    selected_texts,
-                    phrase_expression,
+            po = parse_po_text(raw_text, path)
+            for entry in po.entries:
+                speaker_text = "\n".join(
+                    value
+                    for value in (entry.speaker, entry.msgctxt or "")
+                    if value
+                )
+                hit_speaker = bool(speaker_expression) and _matches_expression(
+                    speaker_text,
+                    speaker_expression,
                     case_sensitive=case_sensitive,
                     raw=raw,
                 )
-                if not phrase_matches:
+                if speaker_expression and not hit_speaker:
                     continue
-                hit_id = any(field == "msgid" and hit for field, hit in zip(selected_fields, field_hits))
-                hit_str = any(field == "msgstr" and hit for field, hit in zip(selected_fields, field_hits))
-            else:
-                hit_id = False
-                hit_str = False
 
-            results.append(
-                SearchResult(
-                    file=path,
-                    uid=entry.uid,
-                    msgctxt=entry.msgctxt or "",
-                    msgid=entry.msgid,
-                    msgstr=entry.msgstr,
-                    line=entry.line,
-                    hit_msgid=hit_id,
-                    hit_msgstr=hit_str,
-                    hit_speaker=hit_speaker,
+                if phrase_expression:
+                    selected_texts: list[str] = []
+                    selected_fields: list[str] = []
+                    if search_msgid:
+                        selected_texts.append(entry.msgid)
+                        selected_fields.append("msgid")
+                    if search_msgstr:
+                        selected_texts.append(entry.msgstr)
+                        selected_fields.append("msgstr")
+                    phrase_matches, field_hits = _matches_expression_across_texts(
+                        selected_texts,
+                        phrase_expression,
+                        case_sensitive=case_sensitive,
+                        raw=raw,
+                    )
+                    if not phrase_matches:
+                        continue
+                    hit_id = any(field == "msgid" and hit for field, hit in zip(selected_fields, field_hits))
+                    hit_str = any(field == "msgstr" and hit for field, hit in zip(selected_fields, field_hits))
+                else:
+                    hit_id = False
+                    hit_str = False
+
+                results.append(
+                    SearchResult(
+                        file=path,
+                        uid=entry.uid,
+                        msgctxt=entry.msgctxt or "",
+                        msgid=entry.msgid,
+                        msgstr=entry.msgstr,
+                        line=entry.line,
+                        hit_msgid=hit_id,
+                        hit_msgstr=hit_str,
+                        hit_speaker=hit_speaker,
+                    )
                 )
-            )
+        finally:
+            if progress is not None:
+                progress(done, total, path)
     return results
+
+
+def search_path(
+    root: str | Path,
+    phrase: str,
+    search_msgid: bool = True,
+    search_msgstr: bool = True,
+    case_sensitive: bool = False,
+    whole_word: bool = False,
+    speaker: str = "",
+    raw: bool = False,
+    progress: SearchProgressCallback | None = None,
+) -> list[SearchResult]:
+    return search_files(
+        iter_po_files(Path(root)),
+        phrase,
+        search_msgid=search_msgid,
+        search_msgstr=search_msgstr,
+        case_sensitive=case_sensitive,
+        whole_word=whole_word,
+        speaker=speaker,
+        raw=raw,
+        progress=progress,
+    )

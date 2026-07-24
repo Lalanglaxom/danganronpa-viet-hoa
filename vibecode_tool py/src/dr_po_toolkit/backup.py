@@ -6,24 +6,40 @@ import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Callable
 
 from .discovery import is_copy_po, iter_po_files
 
+ProgressFn = Callable[[int, int, Path], None]
 
-def make_backups(path: str | Path, overwrite: bool = False) -> int:
+
+def make_backups(
+    path: str | Path,
+    overwrite: bool = False,
+    *,
+    progress: ProgressFn | None = None,
+) -> int:
     count = 0
-    for po_path in iter_po_files(path):
-        target = po_path.with_name(f"{po_path.stem} - Copy.po")
-        if target.exists() and not overwrite:
-            continue
-        if target.exists():
-            try:
-                if po_path.samefile(target):
-                    continue
-            except OSError:
-                pass
-        shutil.copy2(po_path, target)
-        count += 1
+    po_files = list(iter_po_files(path))
+    total = len(po_files)
+    if progress is not None and po_files:
+        progress(0, total, po_files[0])
+    for index, po_path in enumerate(po_files, start=1):
+        try:
+            target = po_path.with_name(f"{po_path.stem} - Copy.po")
+            if target.exists() and not overwrite:
+                continue
+            if target.exists():
+                try:
+                    if po_path.samefile(target):
+                        continue
+                except OSError:
+                    pass
+            shutil.copy2(po_path, target)
+            count += 1
+        finally:
+            if progress is not None:
+                progress(index, total, po_path)
     return count
 
 
@@ -81,7 +97,12 @@ def _same_file_content(src: Path, target: Path) -> bool:
         return False
 
 
-def sync_by_filename_report(source_folder: str | Path, target_folder: str | Path) -> SyncByFilenameResult:
+def sync_by_filename_report(
+    source_folder: str | Path,
+    target_folder: str | Path,
+    *,
+    progress: ProgressFn | None = None,
+) -> SyncByFilenameResult:
     source_folder = Path(source_folder)
     target_folder = Path(target_folder)
 
@@ -93,53 +114,76 @@ def sync_by_filename_report(source_folder: str | Path, target_folder: str | Path
         raise ValueError("source and target folders must be separate, not nested")
 
     result = SyncByFilenameResult()
+    source_files = list(iter_po_files(source_folder))
+    target_files = list(iter_po_files(target_folder))
+    total_progress = len(source_files) + len(target_files)
+    completed = 0
+    first_path = source_files[0] if source_files else (target_files[0] if target_files else source_folder)
+    if progress is not None and total_progress:
+        progress(0, total_progress, Path(first_path))
+
     source_index: dict[str, Path] = {}
     duplicate_names: set[str] = set()
     duplicate_sources: dict[str, list[Path]] = {}
-    for p in iter_po_files(source_folder):
+    for p in source_files:
         result.source_files += 1
-        if p.name in source_index:
-            duplicate_names.add(p.name)
-            # Ambiguous source filename: do not use either file.
-            first = source_index.pop(p.name, None)
-            bucket = duplicate_sources.setdefault(p.name, [])
-            if first is not None:
-                bucket.append(first)
-            bucket.append(p)
-            continue
-        if p.name not in duplicate_names:
-            source_index[p.name] = p
+        try:
+            if p.name in source_index:
+                duplicate_names.add(p.name)
+                # Ambiguous source filename: do not use either file.
+                first = source_index.pop(p.name, None)
+                bucket = duplicate_sources.setdefault(p.name, [])
+                if first is not None:
+                    bucket.append(first)
+                bucket.append(p)
+                continue
+            if p.name not in duplicate_names:
+                source_index[p.name] = p
+        finally:
+            completed += 1
+            if progress is not None:
+                progress(completed, total_progress, p)
     result.duplicate_source_names = len(duplicate_names)
     result.duplicate_source_files = [path for paths in duplicate_sources.values() for path in paths]
 
     matched_source_names: set[str] = set()
-    for target in iter_po_files(target_folder):
+    for target in target_files:
         result.target_files += 1
-        src = source_index.get(target.name)
-        if not src:
-            result.target_without_source.append(target)
-            continue
-        matched_source_names.add(target.name)
         try:
-            if src.samefile(target):
-                result.skipped_self += 1
-                result.skipped_self_files.append((src, target))
+            src = source_index.get(target.name)
+            if not src:
+                result.target_without_source.append(target)
                 continue
-        except OSError:
-            pass
-        if _same_file_content(src, target):
-            result.skipped_identical += 1
-            result.skipped_identical_files.append((src, target))
-            continue
-        shutil.copy2(src, target)
-        result.copied += 1
-        result.copied_files.append((src, target))
+            matched_source_names.add(target.name)
+            try:
+                if src.samefile(target):
+                    result.skipped_self += 1
+                    result.skipped_self_files.append((src, target))
+                    continue
+            except OSError:
+                pass
+            if _same_file_content(src, target):
+                result.skipped_identical += 1
+                result.skipped_identical_files.append((src, target))
+                continue
+            shutil.copy2(src, target)
+            result.copied += 1
+            result.copied_files.append((src, target))
+        finally:
+            completed += 1
+            if progress is not None:
+                progress(completed, total_progress, target)
     result.source_without_target = [src for name, src in source_index.items() if name not in matched_source_names]
     return result
 
 
-def sync_by_filename(source_folder: str | Path, target_folder: str | Path) -> int:
-    return sync_by_filename_report(source_folder, target_folder).copied
+def sync_by_filename(
+    source_folder: str | Path,
+    target_folder: str | Path,
+    *,
+    progress: ProgressFn | None = None,
+) -> int:
+    return sync_by_filename_report(source_folder, target_folder, progress=progress).copied
 
 
 @dataclass(slots=True)
@@ -185,7 +229,12 @@ def iter_copy_po_files(path: str | Path):
             yield f
 
 
-def restore_working_po_from_copies(paths: list[str | Path] | tuple[str | Path, ...] | str | Path, dry_run: bool = False) -> list[RestoreCopyResult]:
+def restore_working_po_from_copies(
+    paths: list[str | Path] | tuple[str | Path, ...] | str | Path,
+    dry_run: bool = False,
+    *,
+    progress: ProgressFn | None = None,
+) -> list[RestoreCopyResult]:
     """Overwrite working .po files with clean content copied from matching Copy.po files.
 
     This is recursive for folder inputs. It is intentionally one-way and safe for
@@ -197,11 +246,18 @@ def restore_working_po_from_copies(paths: list[str | Path] | tuple[str | Path, .
     else:
         path_list = list(paths)
 
+    copy_files: list[Path] = []
+    for root in path_list:
+        copy_files.extend(iter_copy_po_files(root))
+
     results: list[RestoreCopyResult] = []
     seen_targets: set[Path] = set()
+    total = len(copy_files)
+    if progress is not None and copy_files:
+        progress(0, total, copy_files[0])
 
-    for root in path_list:
-        for copy_po in iter_copy_po_files(root):
+    for index, copy_po in enumerate(copy_files, start=1):
+        try:
             work_po = working_path_from_copy(copy_po)
             if work_po is None:
                 results.append(RestoreCopyResult(copy_po, copy_po, "skipped", "cannot derive working path"))
@@ -232,6 +288,9 @@ def restore_working_po_from_copies(paths: list[str | Path] | tuple[str | Path, .
                 except Exception:
                     pass
                 results.append(RestoreCopyResult(copy_po, work_po, action, str(exc)))
+        finally:
+            if progress is not None:
+                progress(index, total, copy_po)
 
     return results
 
@@ -313,6 +372,7 @@ def sync_option_from_working_folder(
     option_key: str,
     *,
     filter_by_option: bool = True,
+    progress: ProgressFn | None = None,
 ) -> SyncOptionResult:
     """Copy working .po files into a shared destination folder.
 
@@ -341,54 +401,55 @@ def sync_option_from_working_folder(
             target_po_map[p.name] = p
 
     # 2. Iterate over source .po files
-    for src in sorted(source_root.rglob("*.po"), key=lambda item: str(item).lower()):
-        if not src.is_file():
-            continue
-            
-        # Ignore - Copy.po or other backup files
-        if is_copy_po(src):
-            continue
-            
-        if filter_by_option and not _matches_dr_option(src, source_root, option_key):
-            continue
-            
-        result.matched += 1
-        
-        # 3. Reuse an existing filename match. Otherwise preserve the
-        # source path relative to its configured Working folder.
-        dest = target_po_map.get(src.name)
-        if dest is None:
-            try:
-                relative = src.relative_to(source_root)
-            except ValueError:
-                relative = Path(src.name)
-            dest = target_root / relative
+    source_files = [
+        src
+        for src in sorted(source_root.rglob("*.po"), key=lambda item: str(item).lower())
+        if src.is_file()
+        and not is_copy_po(src)
+        and (not filter_by_option or _matches_dr_option(src, source_root, option_key))
+    ]
+    total = len(source_files)
+    if progress is not None and source_files:
+        progress(0, total, source_files[0])
 
+    for index, src in enumerate(source_files, start=1):
         try:
-            if dest.exists():
+            result.matched += 1
+
+            # 3. Reuse an existing filename match. Otherwise preserve the
+            # source path relative to its configured Working folder.
+            dest = target_po_map.get(src.name)
+            if dest is None:
                 try:
-                    if src.samefile(dest):
-                        result.skipped_self += 1
-                        result.skipped_self_files.append((src, dest))
+                    relative = src.relative_to(source_root)
+                except ValueError:
+                    relative = Path(src.name)
+                dest = target_root / relative
+
+            try:
+                if dest.exists():
+                    try:
+                        if src.samefile(dest):
+                            result.skipped_self += 1
+                            result.skipped_self_files.append((src, dest))
+                            continue
+                    except OSError:
+                        pass
+                    if _same_file_content(src, dest):
+                        result.skipped_identical += 1
+                        result.skipped_identical_files.append((src, dest))
                         continue
-                except OSError:
-                    pass
-                if _same_file_content(src, dest):
-                    result.skipped_identical += 1
-                    result.skipped_identical_files.append((src, dest))
-                    continue
-            
-            # Since dest comes from existing files, its parent dir is guaranteed to exist, 
-            # but we keep this just for absolute safety.
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            
-            shutil.copy2(src, dest)
-            result.copied += 1
-            result.copied_files.append((src, dest))
-            
-        except Exception as exc:
-            result.errors.append((src, str(exc)))
-            
+
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dest)
+                result.copied += 1
+                result.copied_files.append((src, dest))
+            except Exception as exc:
+                result.errors.append((src, str(exc)))
+        finally:
+            if progress is not None:
+                progress(index, total, src)
+
     return result
 
 
@@ -418,6 +479,7 @@ def _copy_tree_files(
     target_label: str,
     excluded_folder: str | Path | None = None,
     skip_wad_named_folders: bool = False,
+    progress: ProgressFn | None = None,
 ) -> MoveCompileResult:
     source_root = Path(source_folder).expanduser()
     target_root = Path(target_folder).expanduser()
@@ -441,43 +503,50 @@ def _copy_tree_files(
         if p.is_file():
             target_file_map[p.name] = p
 
-    files = [path for path in source_root.rglob("*") if path.is_file()]
-    for src in sorted(files, key=lambda item: str(item).lower()):
-        if exclude_root is not None and _is_under_or_same(src, exclude_root):
-            result.skipped_wad_repack += 1
-            continue
-        if skip_wad_named_folders and _looks_like_wad_repack_path(src, source_root):
-            result.skipped_wad_repack += 1
-            continue
-
-        result.scanned += 1
-        
-        # 2. Find the destination path using the exact filename
-        dest = target_file_map.get(src.name)
-        
-        # STRICT CHECK: If it doesn't exist anywhere in the target folder, report error and skip
-        if not dest:
-            result.errors.append((src, f"Strict sync failed: '{src.name}' does not exist anywhere in {target_label}."))
-            continue
-            
+    files = sorted((path for path in source_root.rglob("*") if path.is_file()), key=lambda item: str(item).lower())
+    total = len(files)
+    if progress is not None and files:
+        progress(0, total, files[0])
+    for index, src in enumerate(files, start=1):
         try:
-            if dest.exists():
-                if dest.is_dir():
-                    result.errors.append((src, f"destination is a folder: {dest}"))
-                    continue
-                if _same_file_content(src, dest):
-                    result.skipped_identical += 1
-                    result.skipped_identical_files.append((src, dest))
-                    continue
-                result.overwritten += 1
-                
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dest)
-            result.moved += 1
-            result.moved_files.append((src, dest))
-        except Exception as exc:
-            result.errors.append((src, str(exc)))
-            
+            if exclude_root is not None and _is_under_or_same(src, exclude_root):
+                result.skipped_wad_repack += 1
+                continue
+            if skip_wad_named_folders and _looks_like_wad_repack_path(src, source_root):
+                result.skipped_wad_repack += 1
+                continue
+
+            result.scanned += 1
+
+            # 2. Find the destination path using the exact filename
+            dest = target_file_map.get(src.name)
+
+            # STRICT CHECK: If it doesn't exist anywhere in the target folder, report error and skip
+            if not dest:
+                result.errors.append((src, f"Strict sync failed: '{src.name}' does not exist anywhere in {target_label}."))
+                continue
+
+            try:
+                if dest.exists():
+                    if dest.is_dir():
+                        result.errors.append((src, f"destination is a folder: {dest}"))
+                        continue
+                    if _same_file_content(src, dest):
+                        result.skipped_identical += 1
+                        result.skipped_identical_files.append((src, dest))
+                        continue
+                    result.overwritten += 1
+
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dest)
+                result.moved += 1
+                result.moved_files.append((src, dest))
+            except Exception as exc:
+                result.errors.append((src, str(exc)))
+        finally:
+            if progress is not None:
+                progress(index, total, src)
+
     return result
 
 
@@ -486,6 +555,7 @@ def move_repack_to_script(
     script_folder: str | Path,
     *,
     wad_repack_folder: str | Path | None = None,
+    progress: ProgressFn | None = None,
 ) -> MoveCompileResult:
     """Copy Repack files into Script, preserving relative paths and leaving Repack intact.
 
@@ -498,14 +568,21 @@ def move_repack_to_script(
         target_label="Script",
         excluded_folder=wad_repack_folder,
         skip_wad_named_folders=True,
+        progress=progress,
     )
 
 
-def copy_wad_repack_to_game(wad_repack_folder: str | Path, game_folder: str | Path) -> MoveCompileResult:
+def copy_wad_repack_to_game(
+    wad_repack_folder: str | Path,
+    game_folder: str | Path,
+    *,
+    progress: ProgressFn | None = None,
+) -> MoveCompileResult:
     """Copy WAD Repack files into the Game Folder, preserving relative paths."""
     return _copy_tree_files(
         wad_repack_folder,
         game_folder,
         source_label="WAD Repack",
         target_label="Game Folder",
+        progress=progress,
     )
