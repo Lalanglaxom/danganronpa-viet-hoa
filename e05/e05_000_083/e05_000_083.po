@@ -14,7 +14,7 @@ msgstr ""
 #. モノクマフラワーか…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "The Monokuma Flower, huh?"
-msgstr ""
+msgstr "Hoa Monokuma hả?"
 
 #. <CLT 4>ゴミでもプラスチックでも人間でも食べるって…
 #. 本当なのか？
@@ -36,6 +36,8 @@ msgid ""
 "<CLT 4>I'd better steer clear, just to be safe...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tốt nhất mình nên tránh xa ra cho an toàn...\n"
+"<CLT>"
 
 #. <CLT 4>物置には…
 #. <CLT>
@@ -44,6 +46,8 @@ msgid ""
 "<CLT 4>This place is jam-packed.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nơi này chật ních đồ đạc.\n"
+"<CLT>"
 
 #. <CLT 4>ぎっしりと物が詰め込まれている。
 #. 芝刈り機に植木鉢…肥料やら農具やら…
@@ -54,6 +58,8 @@ msgid ""
 "tools...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Từ máy cắt cỏ cho đến phân bón, chậu hoa cho đến nông cụ...\n"
+"<CLT>"
 
 #. <CLT 4>このツルハシ…
 #. 柄の部分に字が彫り込んであるけど…
@@ -64,11 +70,13 @@ msgid ""
 "pickaxe...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có thứ gì đó được khắc trên cán của cây cuốc chim này...\n"
+"<CLT>"
 
 #. 暮威慈畏…大亜紋土…
 msgctxt "0007 | MAKOTO NAEGI"
 msgid "Crazy...Diamond..."
-msgstr ""
+msgstr "Crazy... Diamond..."
 
 #. これと同じものが…
 #. 大和田クンの背中にも書いてあった。
@@ -76,7 +84,7 @@ msgctxt "0008 | MAKOTO NAEGI"
 msgid ""
 "It's the same thing that was written on the back of\n"
 "Mondo's coat."
-msgstr ""
+msgstr "Nó giống hệt chữ được viết trên lưng áo khoác của Mondo."
 
 #. <CLT 4>大和田クンと関係がありそうなツルハシ…
 #. <CLT>
@@ -85,11 +93,14 @@ msgid ""
 "<CLT 4>This pickaxe is connected to Mondo somehow...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cây cuốc chim này bằng cách nào đó có liên quan\n"
+"đến Mondo...\n"
+"<CLT>"
 
 #. やっぱり、気になる…
 msgctxt "0010 | MAKOTO NAEGI"
 msgid "Strange..."
-msgstr "<CLT 26>Kỳ lạ thật đấy...<CLT>"
+msgstr "Kỳ lạ thật..."
 
 #. <CLT 4>こんな所に飼育小屋が…
 #. <CLT>
@@ -110,6 +121,9 @@ msgid ""
 "prefer rabbits. Way cuter.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ồ, và có những chú gà ở bên trong. Cá nhân mình thì thích\n"
+"thỏ hơn. Đáng yêu hơn nhiều.\n"
+"<CLT>"
 
 #. <CLT 4>壁に制御パネルが埋め込まれている…
 #. <CLT>
@@ -118,6 +132,8 @@ msgid ""
 "<CLT 4>There's a control panel set near the wall.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Có một bảng điều khiển được đặt gần tường.\n"
+"<CLT>"
 
 #. <CLT 4>これは、植物庭園の天井にある
 #. スプリンクラー制御パネルらしい。
@@ -140,6 +156,9 @@ msgid ""
 "7:30...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Monokuma từng nói chúng được cài đặt để báo vào mỗi\n"
+"buổi sáng lúc 7 giờ 30...\n"
+"<CLT>"
 
 #. あんまり朝早く来ると、
 #. びしょびしょになっちゃうかってことか。
@@ -148,6 +167,8 @@ msgid ""
 "So if you showed up here at the wrong time, you'd come\n"
 "away soaking wet."
 msgstr ""
+"Nên nếu xuất hiện ở đây sai thời điểm, mình sẽ ra về\n"
+"trong tình trạng ướt sũng đấy."
 
 #. うん、充分に気をつけないと。
 #. …ボクは濡れフェチじゃないからな！
@@ -156,6 +177,8 @@ msgid ""
 "I'll have to be careful about that. I definitely\n"
 "*don't* have a \"water fetish\"!"
 msgstr ""
+"Mình sẽ phải cẩn thận về chuyện đó. Mình chắc chắn *không*\n"
+"có cái \"fetish với nước\" đâu nhé!"
 
 #. <CLT 4>天井の…あの突起物…
 #. <CLT>
@@ -170,7 +193,7 @@ msgstr ""
 #. あれは…スプリンクラーか…
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "Are those...the sprinklers?"
-msgstr ""
+msgstr "Đó có phải là... vòi phun nước không nhỉ?"
 
 #. はい
 msgctxt "0020 | CHOICE/RE:ACT"

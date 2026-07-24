@@ -179,7 +179,7 @@
     },
     {
       "enabled": false,
-      "speaker": "KIYOTAKA",
+      "speaker": "ALTER EGO",
       "scope": "",
       "find": "Tôi;tôi",
       "replace": "Tớ;tớ",
@@ -205,6 +205,17 @@
       "scope": "",
       "find": "Mình;mình",
       "replace": "Tôi;tôi",
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "ALTER EGO",
+      "scope": "",
+      "find": "Tôi;tôi",
+      "replace": "Mình;mình",
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,

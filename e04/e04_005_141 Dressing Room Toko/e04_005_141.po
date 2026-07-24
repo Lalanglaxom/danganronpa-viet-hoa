@@ -899,12 +899,14 @@ msgctxt "0128 | ALTER EGO"
 msgid ""
 "The one leading the Hope's Peak staff, the one who\n"
 "finalized the plan to isolate you..."
-msgstr "Người đứng đầu đội ngũ nhân viên Đỉnh Hy Vọng, người hoàn tất kế hoạch cách ly mọi người..."
+msgstr ""
+"Người đứng đầu đội ngũ nhân viên Đỉnh Hy Vọng, người hoàn\n"
+"tất kế hoạch cách ly mọi người..."
 
 #. <CLT 3>希望ヶ峰学園長<CLT>だったんだ。
 msgctxt "0129 | ALTER EGO"
 msgid "...was the <CLT 3>Hope's Peak headmaster<CLT>."
-msgstr "...chính là <CLT 3>hiệu trưởng Đỉnh Hy Vọng<CLT>."
+msgstr "...chính là <CLT 3>hiệu trưởng của Đỉnh Hy Vọng<CLT>."
 
 #. つまり、すべてを仕組んだ黒幕は、
 #. その学園長って可能性が高いんだ。
@@ -912,21 +914,27 @@ msgctxt "0130 | ALTER EGO"
 msgid ""
 "So that same person may very well be the mastermind\n"
 "who planned all this out."
-msgstr "Vì vậy, rất có thể chính người đó là kẻ chủ mưu đã vạch ra tất cả những chuyện này."
+msgstr ""
+"Vì vậy, rất có thể chính người đó là kẻ chủ mưu đã vạch ra\n"
+"tất cả những chuyện này."
 
 #. ちなみに、その学園長は<CLT 3>３０代後半の男性<CLT>で…
 msgctxt "0131 | ALTER EGO"
 msgid ""
 "And according to the files, the headmaster is <CLT 3>a man\n"
 "in his late thirties<CLT>."
-msgstr "Bên cạnh đó, theo như các tập tin thì hiệu trưởng là <CLT 3>một người đàn ông U40<CLT>..."
+msgstr ""
+"Bên cạnh đó, theo như các tập tin thì hiệu trưởng là <CLT 3>một\n"
+"người đàn ông U40<CLT>..."
 
 #. 今も…<CLT 3>この学園内にいる<CLT>可能性が高いみたいだよ…
 msgctxt "0132 | ALTER EGO"
 msgid ""
 "It seems possible, even likely, that he's <CLT 3>somewhere\n"
 "in this school<CLT> right now."
-msgstr "Có khả năng rất cao là hiện tại ông ta vẫn đang <CLT 3>ở đâu đó trong ngôi trường này<CLT>..."
+msgstr ""
+"Có khả năng rất cao là hiện tại ông ta vẫn đang <CLT 3>ở đâu đó\n"
+"trong ngôi trường này<CLT>..."
 
 #. 学園長が…この学園の中に…！？
 msgctxt "0133 | KYOUKO KIRIGIRI"
@@ -1692,7 +1700,7 @@ msgid ""
 "<CLT 4>I don't think it matters right now...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bây giờ chuyện đó cũng không quan trọng lắm...\n"
+"<CLT 4>Mình không nghĩ cái này quan trọng bây giờ...\n"
 "<CLT>"
 
 #. <CLT 4>マッサージチェアがある…
@@ -1712,7 +1720,7 @@ msgid ""
 "<CLT 4>It looks pretty old.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trông nó khá là cũ rồi.\n"
+"<CLT 4>Trông có vẻ khá cũ kỹ đấy.\n"
 "<CLT>"
 
 #. <CLT 4>ここで出て行っても仕方ない…
@@ -1722,5 +1730,5 @@ msgid ""
 "<CLT 4>There's no point in leaving now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bây giờ rời đi cũng chẳng để làm gì.\n"
+"<CLT 4>Bây giờ rời đi cũng chẳng giải quyết được gì.\n"
 "<CLT>"
