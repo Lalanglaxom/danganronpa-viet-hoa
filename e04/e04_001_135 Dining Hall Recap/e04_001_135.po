@@ -107,7 +107,7 @@ msgstr ""
 #. ５人だけになっちゃったね…ここに集まるのも…
 msgctxt "0010 | AOI ASAHINA"
 msgid "So now there's only five of us here..."
-msgstr "Vậy là giờ tui mình tụ họp ở đây chỉ còn lại năm người..."
+msgstr "Vậy là giờ tụi mình chỉ còn lại năm người..."
 
 #. 最初にスタートした時の３分の１の人数だべ。
 msgctxt "0011 | YASUHIRO HAGAKURE"
@@ -210,7 +210,7 @@ msgid ""
 "<CLT 4>I can't bring it up in front of the others.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể nêu chuyện này ra trước mặt mọi người được.\n"
+"<CLT 4>Mình không thể nói chuyện này ra trước mặt mọi người được.\n"
 "<CLT>"
 
 #. <CLT 4>そんな事しても…みんなを混乱させるだけだし…
@@ -221,7 +221,8 @@ msgid ""
 "much more.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu mình làm vậy... nó chỉ khiến mọi người hoang mang thêm mà thôi.\n"
+"<CLT 4>Nếu mình làm vậy... nó chỉ khiến mọi người hoang mang thêm\n"
+"mà thôi.\n"
 "<CLT>"
 
 #. ………………
@@ -245,7 +246,9 @@ msgctxt "0028 | AOI ASAHINA"
 msgid ""
 "Well, cuz look how scary everyone looks! It's gotta be\n"
 "cuz you're all fighting on empty stomachs, right?"
-msgstr "Thì nhìn mặt ai trông cũng đáng sợ kìa! Chắc chắn là do mọi người đấu tranh với cái bụng rỗng đúng không?"
+msgstr ""
+"Thì nhìn mặt ai trông cũng đáng sợ kìa! Chắc chắn là do mọi\n"
+"người đấu tranh với cái bụng rỗng đúng không?"
 
 #. きっと、お腹いっぱいになれば元気になるよ。
 #. だから食べようよ…
@@ -253,7 +256,9 @@ msgctxt "0029 | AOI ASAHINA"
 msgid ""
 "If you fill your belly, I'm sure you'll all cheer up!\n"
 "So, let's eat!"
-msgstr "Chỉ cần lấp đầy cái bụng là tui chắc chắn mọi người sẽ vui vẻ trở lại thôi! Thế nên là ăn thôi!"
+msgstr ""
+"Chỉ cần lấp đầy cái bụng là tui chắc chắn mọi người sẽ vui\n"
+"vẻ trở lại! Thế nên là ăn thôi!"
 
 #. ドーナツと焼き魚を、
 #. ぶっ倒れるまで食べようよッ！
@@ -261,14 +266,18 @@ msgctxt "0030 | AOI ASAHINA"
 msgid ""
 "Let's fry up some fish and donuts and eat till we\n"
 "can't stand up!"
-msgstr "Tui mình hãy rán cá với bánh rán rồi ăn đến khi không đứng nổi nữa luôn!"
+msgstr ""
+"Tui mình hãy rán cá với bánh donut rồi ăn đến khi không đứng\n"
+"nổi nữa thì thôi!"
 
 #. ディープインパクト級の世紀末的な組み合わせだべ…
 msgctxt "0031 | YASUHIRO HAGAKURE"
 msgid ""
 "That's like a Deep Impact style, meteor impact,\n"
 "extinction level event combination of foods..."
-msgstr "Đó giống như một sự kết hợp món ăn mang phong cách Cú Va Chạm Sâu, thiên thạch giội xuống, cấp độ tận thế vậy..."
+msgstr ""
+"Đó giống như một sự kết hợp món ăn mang phong cách Cú Va\n"
+"Chạm Sâu, thiên thạch giội xuống, cấp độ tận thế vậy..."
 
 #. なんでッ！？　どっちも朝の定番だよ！？
 msgctxt "0032 | AOI ASAHINA"
@@ -281,7 +290,9 @@ msgctxt "0033 | KYOUKO KIRIGIRI"
 msgid ""
 "Still, the \"till we can't stand up\" part is a problem.\n"
 "After we're done, we need to go <CLT 3>explore<CLT>."
-msgstr "Dù sao thì, cái đoạn \"đến khi không đứng nổi nữa\" là một vấn đề đấy. Sau khi xong việc, chúng ta cần phải đi <CLT 3>khám phá<CLT>."
+msgstr ""
+"Dù sao thì, cái đoạn \"đến khi không đứng nổi nữa\" là một vấn đề\n"
+"đấy. Sau khi xong việc, chúng ta cần phải đi <CLT 3>khám phá<CLT>."
 
 #. 学級裁判後の探索か…
 #. また行ける場所も広がっているはずだからな…
@@ -289,7 +300,9 @@ msgctxt "0034 | SAKURA OOGAMI"
 msgid ""
 "That's right. Since the class trial is over, new areas\n"
 "should have opened up..."
-msgstr "Đúng vậy. Vì Lớp Xét Xử đã kết thúc, các khu vực mới chắc là đã mở ra rồi..."
+msgstr ""
+"Đúng vậy. Vì lớp xét xử đã kết thúc, các khu vực mới chắc\n"
+"là đã mở ra rồi..."
 
 #. それに、私達には<CLT 3>アルターエゴ<CLT>だってある。
 #. この状況のすべてが絶望って訳でもないわ。
@@ -297,19 +310,25 @@ msgctxt "0035 | KYOUKO KIRIGIRI"
 msgid ""
 "Plus, we still have <CLT 3>Alter Ego<CLT>. We don't have to give\n"
 "in to despair just yet."
-msgstr "Hơn nữa, chúng ta vẫn còn <CLT 3>Alter Ego<CLT>. Chúng ta chưa việc gì phải đầu hàng trước tuyệt vọng lúc này."
+msgstr ""
+"Hơn nữa, chúng ta vẫn còn <CLT 3>Alter Ego<CLT>. Chúng ta chưa việc gì\n"
+"phải đầu hàng trước tuyệt vọng lúc này."
 
 #. …そうだよね。前向きに考えないとね。
 msgctxt "0036 | MAKOTO NAEGI"
 msgid ""
 "She's right... We have to plan ahead and think about\n"
 "the future!"
-msgstr "Cậu ấy nói đúng... Chúng ta phải lên kế hoạch trước và nghĩ về tương lai!"
+msgstr ""
+"Cậu ấy nói đúng... Chúng ta phải lên kế hoạch trước và\n"
+"nghĩ về tương lai!"
 
 #. そうそう！　暗い事じゃなくて明るい事を考えようよ！
 msgctxt "0037 | AOI ASAHINA"
 msgid "Yeah, yeah! Think happy thoughts! Not deathy thoughts!"
-msgstr "Đúng rồi, đúng rồi! Hãy nghĩ về những điều vui vẻ đi! Đừng nghĩ về chuyện chết chóc nữa!"
+msgstr ""
+"Đúng rồi, đúng rồi! Hãy nghĩ về những điều vui vẻ đi! Đừng\n"
+"nghĩ về chuyện chết chóc nữa!"
 
 #. ここから助かった後の事とかな…
 msgctxt "0038 | YASUHIRO HAGAKURE"
@@ -322,14 +341,18 @@ msgctxt "0039 | YASUHIRO HAGAKURE"
 msgid ""
 "When this is all over...I think I wanna get reborn for \n"
 "serious. Er—I mean, reborn AS someone serious..."
-msgstr "Khi mọi chuyện kết thúc... tớ nghĩ tớ muốn được tái sinh một cách nghiêm túc. À—ý tớ là, tái sinh THÀNH một người nghiêm túc..."
+msgstr ""
+"Khi mọi chuyện qua đi... tớ nghĩ tớ muốn được tái sinh một cách\n"
+"nghiêm túc. À... ý tớ, tái sinh THÀNH một người nghiêm túc..."
 
 #. 大丈夫？　死亡フラグバリバリのセリフだけど…
 msgctxt "0040 | AOI ASAHINA"
 msgid ""
 "Hey, are you okay? That sounds like something someone\n"
 "who's about to die would say..."
-msgstr "Này, ông có sao không đấy? Mấy lời đó nghe giống hệt mấy câu mà một người sắp chết hay nói vậy..."
+msgstr ""
+"Này, ông có sao không đấy? Mấy lời đó nghe giống hệt mấy\n"
+"câu mà một người sắp chết hay nói vậy..."
 
 #. 大丈夫だべ！　俺は死なん！
 #. なぜなら、もう殺人は起きん！！
@@ -337,7 +360,9 @@ msgctxt "0041 | YASUHIRO HAGAKURE"
 msgid ""
 "I'm totally okay! I'm not gonna die! Why? Cuz there\n"
 "aren't gonna be any more murders!"
-msgstr "Tớ hoàn toàn ổn mà! Tớ sẽ không chết đâu! Tại sao ư? Vì sẽ không còn vụ giết người nào nữa hết!"
+msgstr ""
+"Tớ hoàn toàn ổn mà! Tớ sẽ không chết đâu! Tại sao ư? Vì sẽ\n"
+"không còn vụ giết người nào nữa hết!"
 
 #. え？　何を根拠に断言したの…？
 msgctxt "0042 | AOI ASAHINA"
@@ -350,7 +375,9 @@ msgctxt "0043 | YASUHIRO HAGAKURE"
 msgid ""
 "I predicted it last night! Since it revealed itself to\n"
 "me from the ether, there's no doubt about it!"
-msgstr "Tớ đã bói tối qua đấy! Một khi nó đã hiển thị cho tớ từ không trung rồi thì không còn nghi ngờ gì nữa!"
+msgstr ""
+"Tớ đã bói tối qua đấy! Một khi nó đã hiển thị cho tớ từ\n"
+"trời cao rồi thì không còn nghi ngờ gì nữa!"
 
 #. …お主の占いは当たるのか？
 msgctxt "0044 | SAKURA OOGAMI"
@@ -362,7 +389,9 @@ msgctxt "0045 | YASUHIRO HAGAKURE"
 msgid ""
 "I can usually hit twenty or thirty percent on a good\n"
 "day!"
-msgstr "Vào ngày đẹp trời thì tớ thường đoán trúng khoảng hai mươi đến ba mươi phần trăm đấy!"
+msgstr ""
+"Vào ngày đẹp trời thì tớ thường đoán trúng khoảng hai mươi\n"
+"đến ba mươi phần trăm đấy!"
 
 #. あいまいだし、ビミョーだね…
 msgctxt "0046 | AOI ASAHINA"
@@ -375,14 +404,18 @@ msgctxt "0047 | YASUHIRO HAGAKURE"
 msgid ""
 "Well, yeah! It's not like it's ESP or whatever. Of\n"
 "course I'm only gonna get it right sometimes!"
-msgstr "Thì đúng rồi! Có phải ngoại cảm hay gì đâu chứ. Dĩ nhiên là tớ chỉ thỉnh thoảng mới đoán đúng thôi!"
+msgstr ""
+"Thì đúng rồi! Có phải ngoại cảm hay gì đâu chứ. Dĩ nhiên\n"
+"là tớ chỉ thỉnh thoảng mới đoán đúng thôi!"
 
 #. 俺の占いを、オカルトの類と一緒にすんなって！！
 msgctxt "0048 | YASUHIRO HAGAKURE"
 msgid ""
 "I told you, my fortune-telling isn't like some occult\n"
 "thing!"
-msgstr "Tớ đã bảo rồi, bói toán của tớ không giống mấy trò huyền bí đâu!"
+msgstr ""
+"Tớ đã bảo rồi, bói toán của tớ không giống mấy trò\n"
+"huyền bí đâu!"
 
 #. 占いって…オカルトじゃないんだ…？
 msgctxt "0049 | AOI ASAHINA"
@@ -395,7 +428,9 @@ msgctxt "0050 | YASUHIRO HAGAKURE"
 msgid ""
 "Of course not! Clairvoyance is clairvoyance! Don't put\n"
 "it in the same category as cattle mutilation!"
-msgstr "Dĩ nhiên là không! Thấu thị là thấu thị! Đừng có xếp nó chung hàng với mấy vụ xẻ thịt gia súc!"
+msgstr ""
+"Dĩ nhiên là không! Thấu thị là thấu thị! Đừng có xếp nó\n"
+"chung hàng với mấy vụ xẻ thịt gia súc!"
 
 #. キャトル……何？
 msgctxt "0051 | AOI ASAHINA"
@@ -408,7 +443,9 @@ msgctxt "0052 | KYOUKO KIRIGIRI"
 msgid ""
 "He's referring to the urban legend where aliens abduct\n"
 "cows and dissect them as part of their research."
-msgstr "Cậu ta đang nhắc tới truyền thuyết đô thị về việc người ngoài hành tinh bắt giấu bò rồi mổ xẻ chúng để phục vụ nghiên cứu đấy."
+msgstr ""
+"Cậu ấy đang nhắc tới truyền thuyết đô thị về việc người ngoài\n"
+"hành tinh bắt cóc bò rồi mổ xẻ chúng để nghiên cứu đấy."
 
 #. いや…都市伝説と言い切れるかな！？
 msgctxt "0053 | YASUHIRO HAGAKURE"
@@ -420,14 +457,18 @@ msgctxt "0054 | YASUHIRO HAGAKURE"
 msgid ""
 "As a matter of fact, it's true... As a matter of fact,\n"
 "it's happened to me!"
-msgstr "Trên thực tế thì đó là sự thật... Thực ra chuyện đó từng xảy ra với tớ rồi!"
+msgstr ""
+"Trên thực tế thì đó là sự thật... Thực ra chuyện đó từng\n"
+"xảy ra với tớ rồi!"
 
 #. その日、俺はハンバーガーを買いに行ったんだ。
 msgctxt "0055 | YASUHIRO HAGAKURE"
 msgid ""
 "It all happened one day when I went to go get a\n"
 "hamburger..."
-msgstr "Tất cả xảy ra vào một ngày nọ khi tớ đi mua một cái hamburger..."
+msgstr ""
+"Tất cả xảy ra vào một ngày nọ khi tớ đi mua một cái\n"
+"hamburger..."
 
 #. その店は初めて入る店だったが、
 #. <CLT 3>ビーフ１００％のパティ<CLT>がウリって店だった。
@@ -435,7 +476,9 @@ msgctxt "0056 | YASUHIRO HAGAKURE"
 msgid ""
 "It was a place I'd never been before. They claimed\n"
 "their patties were <CLT 3>100% all beef<CLT>..."
-msgstr "Đó là một nơi tớ chưa từng đến bao giờ. Họ quảng cáo là miếng thịt của họ <CLT 3>100% là thịt bò<CLT>..."
+msgstr ""
+"Đó là một nơi tớ chưa từng đến bao giờ. Họ quảng cáo là\n"
+"miếng thịt của họ <CLT 3>100% là thịt bò<CLT>..."
 
 #. 俺は、さっそくバーガーをテイクアウトし、
 #. そして、家路を急いだんだ。
@@ -461,14 +504,18 @@ msgctxt "0060 | YASUHIRO HAGAKURE"
 msgid ""
 "Some crazy beam came out of nowhere and locked on to\n"
 "my hamburger!"
-msgstr "Một luồng sáng quái đản từ đâu ra khóa chặt ngay vào chiếc hamburger của tớ!"
+msgstr ""
+"Một luồng sáng quái đản từ đâu ra khóa mục tiêu ngay vào\n"
+"chiếc hamburger của tớ!"
 
 #. またたく間に、俺のハンバーガーを連れ去ったんだべ！
 msgctxt "0061 | YASUHIRO HAGAKURE"
 msgid ""
 "And as soon as the beam touched it, the burger started\n"
 "floating in mid-air...!"
-msgstr "Và ngay khi luồng sáng chạm vào, cái bánh hamburger bắt đầu lơ lửng giữa không trung...!"
+msgstr ""
+"Và ngay khi luồng sáng chạm vào, cái bánh hamburger bắt\n"
+"đầu lơ lửng giữa không trung...!"
 
 #. そして、その直後…！
 msgctxt "0062 | YASUHIRO HAGAKURE"
@@ -481,7 +528,9 @@ msgctxt "0063 | YASUHIRO HAGAKURE"
 msgid ""
 "Still floating there, the entire burger started coming\n"
 "apart!"
-msgstr "Vẫn lơ lửng ở đó, toàn bộ chiếc hamburger bắt đầu tách rời ra!"
+msgstr ""
+"Vẫn lơ lửng ở đó, toàn bộ chiếc hamburger bắt đầu\n"
+"tách rời ra!"
 
 #. そして、一部がそのまま連れ去られ、
 #. 残りは俺の手元に戻って来たんだべ！
@@ -489,7 +538,9 @@ msgctxt "0064 | YASUHIRO HAGAKURE"
 msgid ""
 "One part of it just vanished, while the rest fell back\n"
 "into my hand...!"
-msgstr "Một phần của nó biến mất hút, trong khi phần còn lại rơi rớt trở lại tay tớ...!"
+msgstr ""
+"Một phần của nó biến mất hút, trong khi phần còn lại rơi\n"
+"rớt trở lại tay tớ...!"
 
 #. これが、どういう事かわかるか…？
 msgctxt "0065 | YASUHIRO HAGAKURE"
@@ -502,14 +553,18 @@ msgctxt "0066 | YASUHIRO HAGAKURE"
 msgid ""
 "It means, the burger wasn't 100% beef! It must've had\n"
 "some pork or something mixed in..."
-msgstr "Nó có nghĩa là, chiếc hamburger đó không phải 100% thịt bò! Chắc chắn nó đã bị pha thêm thịt heo hay cái gì đó vào rồi!"
+msgstr ""
+"Nó có nghĩa là, chiếc hamburger đó không phải 100% thịt bò! Chắc\n"
+"chắn nó đã bị pha thêm thịt heo hay cái gì đó vào rồi!"
 
 #. おそらく豚が７割、牛が３割のな…
 msgctxt "0067 | YASUHIRO HAGAKURE"
 msgid ""
 "Something like seventy percent pork and thirty percent\n"
 "beef, would be my guess."
-msgstr "Đoán chừng là cỡ bảy mươi phần trăm thịt heo và ba mươi phần trăm thịt bò..."
+msgstr ""
+"Đoán chừng là cỡ bảy mươi phần trăm thịt heo và ba mươi\n"
+"phần trăm thịt bò..."
 
 #. すぐに店に戻って店主を問い詰めたべ。
 #. そしたら、確かに認めてたべ。
@@ -517,14 +572,18 @@ msgctxt "0068 | YASUHIRO HAGAKURE"
 msgid ""
 "So I stormed back into the burger place and got up in\n"
 "the manager's grill. And they totally admitted it..."
-msgstr "Thế là tớ hùng hục xông lại quán burger rồi hỏi cho ra lẽ với tên quản lý. Và họ đã hoàn toàn thừa nhận..."
+msgstr ""
+"Thế là tớ hùng hục xông lại quán burger rồi hỏi cho ra lẽ\n"
+"với tên quản lý. Và họ đã hoàn toàn thừa nhận..."
 
 #. ビーフ１００％じゃなくあいびき肉だってな…
 msgctxt "0069 | YASUHIRO HAGAKURE"
 msgid ""
 "It WASN'T 100% beef! They totally mixed in ground pork\n"
 "with it!"
-msgstr "Nó KHÔNG PHẢI 100% thịt bò! Họ rõ ràng đã trộn thịt heo xay vào!"
+msgstr ""
+"Nó KHÔNG PHẢI 100% thịt bò! Họ rõ ràng đã trộn thịt\n"
+"heo xay vào!"
 
 #. わかったろ！
 #. これがキャトルミューティレーションだ！
@@ -535,7 +594,7 @@ msgstr "Giờ thì thấy chưa!? ĐÓ chính là xẻ thịt gia súc đấy!"
 #. 途中から…なんの話だか…
 msgctxt "0071 | MAKOTO NAEGI"
 msgid "I...kinda got lost halfway through..."
-msgstr "Tớ... hơi bị mất phương hướng từ giữa chừng rồi..."
+msgstr "Tớ... hơi bị lạc mất từ khúc giữa rồi..."
 
 #. オカルト否定派なのか肯定派なのかさっぱりだよ。
 #. あんたって本当にアホ臭いよね…
@@ -543,7 +602,9 @@ msgctxt "0072 | AOI ASAHINA"
 msgid ""
 "I can't tell if you're for the occult or against it.\n"
 "You stink of stupidity..."
-msgstr "Bà tui chẳng thể biết được ông phản đối hay ủng hộ chuyện huyền bí nữa. Trông ông đúng là bốc mùi ngốc nghếch luôn..."
+msgstr ""
+"Tui chẳng thể biết được ông phản đối hay ủng hộ chuyện huyền bí\n"
+"nữa. Nhìn ông đúng là bốc mùi đần thối luôn..."
 
 #. アホ臭いとは失礼だべ！
 msgctxt "0073 | YASUHIRO HAGAKURE"
@@ -558,7 +619,7 @@ msgstr "Thì ông bốc mùi thật mà."
 #. それで、よしッ！！
 msgctxt "0075 | YASUHIRO HAGAKURE"
 msgid "That's fine!"
-msgstr "Thế thì tốt!!"
+msgstr "Thế thì tốt!"
 
 #. いいんだッ！？
 msgctxt "0076 | AOI ASAHINA"
@@ -593,7 +654,7 @@ msgstr "Tôi cũng vậy..."
 #. 私もよ…
 msgctxt "0082 | KYOUKO KIRIGIRI"
 msgid "Nor I."
-msgstr "Tôi cũng thế."
+msgstr "Tớ cũng thế."
 
 #. もちろん、僕だって。
 #. 仲間を殺すなんて、絶対にそんな事しないよ！
@@ -601,7 +662,9 @@ msgctxt "0083 | MAKOTO NAEGI"
 msgid ""
 "That goes for me too, of course. I could never kill\n"
 "any of my friends!"
-msgstr "Tất nhiên tớ cũng vậy. Tớ sẽ không bao giờ tước đi mạng sống của bạn bè mình đâu!"
+msgstr ""
+"Tất nhiên tớ cũng vậy. Tớ sẽ không bao giờ tước đi mạng\n"
+"sống của bạn bè mình đâu!"
 
 #. <CLT 4>…そんな言葉をかけ合いながら、
 #. ボクらは互いに励まし合っていた。
@@ -612,7 +675,8 @@ msgid ""
 "us come together as one.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cảm thấy những lời động viên đó đang giúp chúng mình xích lại gần nhau hơn.\n"
+"<CLT 4>Mình cảm thấy những lời động viên đó đang giúp chúng mình\n"
+"xích lại gần nhau hơn.\n"
 "<CLT>"
 
 #. <CLT 4>結束…それが多くの犠牲の末に、
@@ -624,7 +688,8 @@ msgid ""
 "become united.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sau bao nhiêu hy sinh và gian khổ... cuối cùng chúng mình cũng đã đoàn kết lại.\n"
+"<CLT 4>Sau bao nhiêu hy sinh và gian khổ... cuối cùng chúng mình\n"
+"cũng đã đoàn kết lại.\n"
 "<CLT>"
 
 #. <CLT 4>だけど…
@@ -643,7 +708,9 @@ msgctxt "0087 | SAKURA OOGAMI"
 msgid ""
 "To be honest, I wish Byakuya and Toko were here for\n"
 "this, too."
-msgstr "Thành thật mà nói, tôi ước Byakuya và Toko cũng có mặt ở đây lúc này."
+msgstr ""
+"Thành thật mà nói, tôi ước Byakuya và Toko cũng có mặt ở\n"
+"đây lúc này."
 
 #. でも…あいつらって嫌なヤツだし…
 #. 自分の事しか考えてないし…
@@ -651,7 +718,9 @@ msgctxt "0088 | AOI ASAHINA"
 msgid ""
 "But...they're so hard to deal with. They only think\n"
 "about themselves."
-msgstr "Nhưng mà... hai người đó khó đối phó lắm. Họ chỉ biết nghĩ cho bản thân thôi."
+msgstr ""
+"Nhưng mà... hai người đó khó đối phó lắm. Họ chỉ biết nghĩ\n"
+"cho bản thân thôi."
 
 #. 性格悪い同士で一緒になっても、
 #. 俺らとはムリだべ…
@@ -666,7 +735,7 @@ msgid ""
 "<CLT 4>That was enough to prove...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Điều đó đã đủ để chứng minh...\n"
+"<CLT 4>Điều đó đủ để chứng minh...\n"
 "<CLT>"
 
 #. <CLT 4>ボクらの結束が抱えている、
@@ -678,5 +747,6 @@ msgid ""
 "bond hid <CLT><CLT 3>weakness<CLT><CLT 4> and <CLT><CLT 3>fragility<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thời điểm hiện tại chúng mình đã đoàn kết, nhưng bên trong mối liên kết đó lại ẩn chứa <CLT><CLT 3>sự yếu đuối<CLT><CLT 4> và <CLT><CLT 3>sự mong manh<CLT><CLT 4>.\n"
+"<CLT 4>Thời điểm hiện tại chúng mình đã đoàn kết, nhưng bên trong\n"
+"mối liên kết đó lại ẩn chứa <CLT><CLT 3>sự yếu đuối<CLT><CLT 4> và <CLT><CLT 3>sự mong manh<CLT><CLT 4>.\n"
 "<CLT>"
