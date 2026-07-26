@@ -44,7 +44,7 @@ msgid ""
 "<CLT 4>Oh, as long as I'm here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ồ, dù sao thì mình cũng đã gặp cậu ấy ở đây...\n"
+"<CLT 4>Ồ, dù gì thì cũng đã gặp cậu ấy ở đây...\n"
 "<CLT>"
 
 #. <CLT 4>十神クンはアルターエゴの情報をどう思ってるのか、
@@ -56,7 +56,8 @@ msgid ""
 "Alter Ego told us.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Mình nên hỏi Byakuya xem cậu ấy nghĩ gì về những điều Alter Ego đã nói với bọn mình.\n"
+"<CLT 4>...Mình nên hỏi Byakuya xem cậu ấy nghĩ gì về những điều\n"
+"Alter Ego đã nói với bọn mình.\n"
 "<CLT>"
 
 #. <CLT 4>…いや、駄目だ。
@@ -68,13 +69,14 @@ msgid ""
 "would catch us, for sure.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...Mà thôi, tốt hơn là không nên. Camera giám sát chắc chắn sẽ quay lại mất.\n"
+"<CLT 4>...Mà thôi, tốt hơn là không nên. Camera giám sát chắc\n"
+"chắn sẽ quay lại mất.\n"
 "<CLT>"
 
 #. …なんだ？
 msgctxt "0008 | BYAKUYA TOGAMI"
 msgid "...So?"
-msgstr "...Thế rồi sao?"
+msgstr "...Rồi sao?"
 
 #. え、えっと、その…
 msgctxt "0009 | MAKOTO NAEGI"
@@ -92,7 +94,9 @@ msgctxt "0011 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>He's gone...\n"
 "<CLT>"
-msgstr "Hắn... đi rồi..."
+msgstr ""
+"<CLT 4>Cậu ấy đi rồi\n"
+"<CLT>"
 
 #. おわっ、苗木っち！
 msgctxt "0012 | YASUHIRO HAGAKURE"
@@ -116,7 +120,9 @@ msgctxt "0015 | YASUHIRO HAGAKURE"
 msgid ""
 "If you'd gotten here even a minute earlier, it\n"
 "would've cost me a few more minutes off my life!"
-msgstr "Nếu cậu tới đây sớm dù chỉ một phút, tớ đã tổn thọ mất vài phút ngay buổi sáng rồi đấy."
+msgstr ""
+"Nếu cậu tới đây sớm dù chỉ một phút, tớ đã tổn thọ mất vài\n"
+"phút ngay buổi sáng rồi đấy."
 
 #. え？　どうして？
 msgctxt "0016 | MAKOTO NAEGI"
@@ -145,7 +151,9 @@ msgctxt "0020 | YASUHIRO HAGAKURE"
 msgid ""
 "When a guy and girl go at it, it shortens the lives of\n"
 "the people who have to watch it happen, too."
-msgstr "Mấy vụ chiến tranh giữa nam và nữ ấy mà... nó làm giảm tuổi thọ của cả những người phải đứng nhìn nữa đấy."
+msgstr ""
+"Mấy vụ chiến tranh giữa nam và nữ ấy mà... nó làm giảm\n"
+"tuổi thọ của cả những người phải đứng nhìn nữa đấy."
 
 #. この俺が言うんだから間違いないベ！
 msgctxt "0021 | YASUHIRO HAGAKURE"
@@ -171,7 +179,8 @@ msgid ""
 "do?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy nói thì dễ rồi. Nhưng mình biết phải làm sao bây giờ?\n"
+"<CLT 4>Cậu ấy nói thì dễ rồi. Nhưng mình biết phải làm sao\n"
+"bây giờ?\n"
 "<CLT>"
 
 #. おはよう、朝日奈さん。
@@ -182,7 +191,7 @@ msgstr "Chào buổi sáng, Hina."
 #. おっはよー！
 msgctxt "0026 | AOI ASAHINA"
 msgid "Mornin'!"
-msgstr "Chào buổi sáng!!"
+msgstr "Chào buổi sáng!"
 
 #. ねえねえ、昨日の苗木…
 #. ちょっと格好良かったよ！
@@ -212,7 +221,9 @@ msgctxt "0031 | AOI ASAHINA"
 msgid ""
 "But when stuff like that happens, I never know how to\n"
 "say what I'm thinking..."
-msgstr "Những lúc như thế tui chẳng bao giờ nghĩ ra được từ ngữ nào hay ho để nói cả..."
+msgstr ""
+"Những lúc như thế tui chẳng bao giờ nghĩ ra được từ ngữ\n"
+"nào hay ho để nói cả..."
 
 #. だから、苗木が言ってくれて
 #. スゴく嬉しかった！
@@ -223,7 +234,7 @@ msgstr "Nên tui cực kỳ vui vì Makoto đã nói thay tui đó!"
 #. エヘヘ…ありがと！
 msgctxt "0033 | AOI ASAHINA"
 msgid "So...thanks! Ehehe..."
-msgstr "Thế nên... cảm ơn nhé! U fư fư..."
+msgstr "Thế nên... cảm ơn nhé! Ehehe..."
 
 #. ど、どういたしまして…
 msgctxt "0034 | MAKOTO NAEGI"
@@ -236,7 +247,9 @@ msgctxt "0035 | AOI ASAHINA"
 msgid ""
 "You're usually like, totally normal. But when the time\n"
 "comes, BAM! You bust out your special power."
-msgstr "Bình thường Makoto kiểu rất là bình thường. Nhưng đến lúc cần thiết thì bùm một cái! Ông tung ra siêu năng lực liền hà."
+msgstr ""
+"Mọi khi Makoto kiểu rất là bình thường. Nhưng đến lúc cần\n"
+"thiết thì bùm một cái! Ông tung ra siêu năng lực liền hà."
 
 #. ほら、その…今までのだって…
 #. 苗木がなんとかしてくれたようなもんだし…
@@ -244,7 +257,9 @@ msgctxt "0036 | AOI ASAHINA"
 msgid ""
 "I mean, even before yesterday, when stuff comes up,\n"
 "it's like...you always do something about it."
-msgstr "Ý tui là, từ trước hôm qua cũng vậy, mỗi khi có chuyện gì xảy ra thì... ông luôn là người giải quyết nó."
+msgstr ""
+"Ý tui là, từ trước hôm qua cũng vậy, mỗi khi có chuyện gì\n"
+"xảy ra thì... ông luôn là người giải quyết nó."
 
 #. <CLT 4>今までのって…
 #. きっと、学級裁判の事だよな？
@@ -255,7 +270,8 @@ msgid ""
 "class trials and stuff?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Từ trước hôm qua sao...? Có phải cậu ấy đang nói về các Lớp Xét Xử không nhỉ?\n"
+"<CLT 4>Từ trước hôm qua sao...? Có phải cậu ấy đang nói về các\n"
+"lớp xét xử không nhỉ?\n"
 "<CLT>"
 
 #. そんな事…ないよ…
@@ -277,7 +293,9 @@ msgctxt "0040 | AOI ASAHINA"
 msgid ""
 "With your power, and Sakura's, and everyone else...I'm\n"
 "sure we'll get outta here..."
-msgstr "Với sức mạnh của ông, của Sakura và tất cả mọi người... tui tin chắc tụi mình sẽ thoát khỏi đây..."
+msgstr ""
+"Với sức mạnh của ông, của Sakura và tất cả mọi người...\n"
+"tui tin chắc tụi mình sẽ thoát khỏi đây..."
 
 #. うん、できるさ。
 msgctxt "0041 | MAKOTO NAEGI"
@@ -304,7 +322,8 @@ msgid ""
 "<CLT 4>She's right... Even if the road is long...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy nói đúng... Dù cho chặng đường phía trước có dài đến đâu...\n"
+"<CLT 4>Cậu ấy nói đúng... Dù cho chặng đường phía trước có\n"
+"dài đến đâu...\n"
 "<CLT>"
 
 #. <CLT 4>進まなくちゃ、ゴールにはたどり着けないんだ…！
@@ -315,7 +334,8 @@ msgid ""
 "our goal!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu tụi mình không tiếp tục tiến lên, tụi mình sẽ không bao giờ đến được đích!\n"
+"<CLT 4>Nếu tụi mình không tiếp tục tiến lên, tụi mình sẽ không\n"
+"bao giờ đến được đích!\n"
 "<CLT>"
 
 #. <CLT 4>部屋に帰る用事はないな…
@@ -327,5 +347,6 @@ msgid ""
 "in the dining hall...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không cần phải quay lại phòng làm gì. Mọi người chắc đang ở phòng ăn rồi...\n"
+"<CLT 4>Mình không cần phải quay lại phòng làm gì. Mọi người chắc\n"
+"đang ở phòng ăn rồi...\n"
 "<CLT>"

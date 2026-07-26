@@ -2,7 +2,7 @@
   "version": 3,
   "rules": [
     {
-      "enabled": false,
+      "enabled": true,
       "speaker": "",
       "scope": "",
       "find": "Genocide Jack",
@@ -90,7 +90,7 @@
       "notes": ""
     },
     {
-      "enabled": false,
+      "enabled": true,
       "speaker": "",
       "scope": "",
       "find": "!!",
@@ -217,6 +217,28 @@
       "find": "Tôi;tôi",
       "replace": "Mình;mình",
       "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "ALTER EGO",
+      "scope": "",
+      "find": "Tớ;tớ",
+      "replace": "Mình;mình",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Tui mình; tui mình",
+      "replace": "Tụi mình; tụi mình",
+      "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
