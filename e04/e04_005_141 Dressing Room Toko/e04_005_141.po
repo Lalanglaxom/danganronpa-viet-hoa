@@ -99,8 +99,8 @@ msgid ""
 "Master told me to <CLT 3>w-wait here<CLT>, so that's what I'm\n"
 "d-doing."
 msgstr ""
-"Chủ Nhân bảo tôi <CLT 3>đ-ngồi chờ ở đây<CLT>, nên tôi mới đ-đang\n"
-"làm thế."
+"Chủ Nhân bảo tôi <CLT 3>n-ngồi chờ ở đây<CLT>, nên tôi mới\n"
+"đ-đang làm thế."
 
 #. 犬扱いじゃん…！
 msgctxt "0013 | AOI ASAHINA"
@@ -152,8 +152,8 @@ msgstr "Ừm... bọn tớ muốn cậu tránh ra một chút."
 msgctxt "0020 | TOUKO FUKAWA"
 msgid "Sure thing! Just kneel before me and beg!"
 msgstr ""
-"Được thôi! Chỉ cần quỳ xuống trước mặt bà đây mà van\n"
-"xin đi!"
+"Được thôi! Chỉ cần quỳ xuống trước mặt bà đây mà\n"
+"van xin đi!"
 
 #. ドＭと思いきやドＳだべ！
 msgctxt "0021 | YASUHIRO HAGAKURE"
@@ -242,7 +242,9 @@ msgctxt "0031 | YASUHIRO HAGAKURE"
 msgid ""
 "I'm strong against women and children, but not women\n"
 "and children that seem strong."
-msgstr "Tớ thì mạnh miệng với phụ nữ và trẻ em thật, nhưng phụ nữ và trẻ em mà trông có vẻ mạnh thì tớ chịu."
+msgstr ""
+"Tớ thì mạnh miệng với phụ nữ và trẻ em thật, nhưng phụ nữ\n"
+"và trẻ em mà trông có vẻ mạnh thì tớ chịu."
 
 #. <CLT 4>最低だな…この人…
 #. <CLT>
@@ -464,8 +466,8 @@ msgid ""
 "That should be enough, right? Hurry up and let us talk\n"
 "to Alter Ego."
 msgstr ""
-"Thế là đủ rồi đúng không? Mau cho chúng tôi nói chuyện với\n"
-"Alter Ego đi."
+"Thế là đủ rồi đúng không? Mau cho chúng tôi nói\n"
+"chuyện với Alter Ego đi."
 
 #. はーーーーーいッ！！
 msgctxt "0061 | TOUKO FUKAWA"
@@ -640,7 +642,7 @@ msgid ""
 "And one particularly important fact I discovered was\n"
 "that a <CLT 3>certain plan<CLT> had been put into effect here."
 msgstr ""
-"Và một điều đặc biệt quan trọng mà tớ phát hiện ra là <CLT 3>một kế\n"
+"Và một điều đặc biệt quan trọng mà mình phát hiện ra là <CLT 3>một kế\n"
 "hoạch nhất định<CLT> đã được đưa vào thực thi ở đây."
 
 #. 『希望ヶ峰学園に高校生達を隔離し、
@@ -675,8 +677,8 @@ msgid ""
 "The students were intended to live out the rest of\n"
 "their lives here."
 msgstr ""
-"Các học sinh được định sẵn là sẽ sống phần đời còn lại của\n"
-"họ ở đây."
+"Các học sinh được định sẵn là sẽ sống phần đời còn\n"
+"lại của họ ở đây."
 
 #. そ、その計画って…！
 msgctxt "0086 | MAKOTO NAEGI"
@@ -949,12 +951,12 @@ msgstr "Còn một điều quan trọng nữa mà tớ quên chưa đề cập t
 #. とても大事な事…
 msgctxt "0122 | ALTER EGO"
 msgid "I think it might be important."
-msgstr "Tớ nghĩ điều này có thể rất quan trọng."
+msgstr "Mình nghĩ điều này có thể rất quan trọng."
 
 #. 多分…<CLT 3>黒幕<CLT>の事だよ…
 msgctxt "0123 | ALTER EGO"
 msgid "I believe it has to do with the <CLT 3>mastermind<CLT>..."
-msgstr "Tớ tin rằng nó có liên quan tới <CLT 3>kẻ chủ mưu<CLT>..."
+msgstr "Mình tin rằng nó có liên quan mìnhi <CLT 3>kẻ chủ mưu<CLT>..."
 
 #. 黒幕の…！？
 msgctxt "0124 | MAKOTO NAEGI"
@@ -991,8 +993,8 @@ msgid ""
 "No...that I still don't know. But I *did* find a clue,\n"
 "I think."
 msgstr ""
-"Không... chuyện đó tớ vẫn chưa biết. Nhưng tớ *đã* tìm\n"
-"thấy một manh mối, tớ nghĩ vậy."
+"Không... chuyện đó mình vẫn chưa biết. Nhưng mình *đã* tìm\n"
+"thấy một manh mối, mình nghĩ vậy."
 
 #. 僕達を隔離する計画を立てた希望ヶ峰学園事務局…
 #. その事務局の責任者が…
@@ -1139,8 +1141,8 @@ msgid ""
 "almost...violent.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khi nghe về vị hiệu trưởng, phản ứng của cậu ấy gần như...\n"
-"rất dữ dội.\n"
+"<CLT 4>Khi nghe về vị hiệu trưởng, phản ứng của cậu ấy gần\n"
+"như... rất dữ dội.\n"
 "<CLT>"
 
 #. …他にも、何か情報はないか、
@@ -1179,7 +1181,7 @@ msgstr ""
 #. ごめん…それ以上の事はわからないんだ…
 msgctxt "0150 | ALTER EGO"
 msgid "I'm sorry... That's everything I found."
-msgstr "Tớ xin lỗi... Đó là tất cả những gì tớ tìm được."
+msgstr "Mình xin lỗi... Đó là tất cả những gì mình tìm được."
 
 #. それ以上調べるには、
 #. このノートパソコンの古い情報だけじゃどうしようも…
@@ -1381,7 +1383,7 @@ msgid ""
 "<CLT 4>With that, the laptop entered sleep mode...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nói rồi, chiếc máy tính xách tay tự động chuyển sang\n"
+"<CLT 4>Nói rồi, chiếc laptop tự động chuyển sang\n"
 "chế độ ngủ...\n"
 "<CLT>"
 
@@ -1394,8 +1396,8 @@ msgstr "Vậy là Alter Ego đã làm tất cả những gì cậu ấy có th�
 msgctxt "0179 | KYOUKO KIRIGIRI"
 msgid "We won't have to talk to him all that much anymore."
 msgstr ""
-"Chúng ta sẽ không cần phải trò chuyện với cậu ấy nhiều như\n"
-"trước nữa."
+"Chúng ta sẽ không cần phải trò chuyện với cậu ấy\n"
+"nhiều như trước nữa."
 
 #. でも…なんだか可哀相…
 msgctxt "0180 | AOI ASAHINA"
@@ -1521,8 +1523,8 @@ msgid ""
 "Yeah! He's no different from us! He's still our\n"
 "friend!"
 msgstr ""
-"Đúng vậy! Cậu ấy đâu có khác gì tui mình đâu! Cậu ấy vẫn\n"
-"là bạn của tui mình mà!"
+"Đúng vậy! Cậu ấy đâu có khác gì tụi mình đâu! Cậu ấy vẫn\n"
+"là bạn của tụi mình mà!"
 
 #. なるほど、お前らの気持ちはよくわかったべ…
 msgctxt "0195 | YASUHIRO HAGAKURE"
@@ -1635,7 +1637,7 @@ msgstr ""
 #. なんで、俺らに殺し合いなんかさせるんだ！？
 msgctxt "0207 | YASUHIRO HAGAKURE"
 msgid "Why are they making us kill each other!?"
-msgstr "Tại sao họ lại bắt chúng ta tàn sát lẫn nhau chứ!?"
+msgstr "Tại sao họ lại bắt chúng ta tàn sát lẫn nhau!?"
 
 #. １年前の事件が、すべての元凶と言っていたな。
 msgctxt "0208 | SAKURA OOGAMI"
@@ -1653,7 +1655,7 @@ msgid ""
 "hopeless event in human history<CLT>, right?"
 msgstr ""
 "Ừ, cậu ấy nói đó là <CLT 3>sự kiện lớn nhất, tồi tệ nhất, bi thảm nhất\n"
-"trong lịch sử loài người<CLT>, đúng hông?"
+"trong lịch sử loài người<CLT>, đúng không?"
 
 #. 聞く限りだと、かなり大きな事件みたいだけど…
 msgctxt "0210 | MAKOTO NAEGI"
@@ -1731,7 +1733,7 @@ msgid ""
 "That would explain why none of us knew that the\n"
 "school had been shut down!"
 msgstr ""
-"Điều đó giải thích lý do tại sao không ai trong tui mình\n"
+"Điều đó giải thích lý do tại sao không ai trong tụi mình\n"
 "biết việc trường đã bị đóng cửa!"
 
 #. 事件を丸ごと隠ぺいした…
@@ -1751,7 +1753,7 @@ msgid ""
 "What's wrong with our government!? Our taxes pay their\n"
 "salaries, they should be handling stuff like that!"
 msgstr ""
-"Chính phủ của chúng ta làm ăn kiểu gì thế hông biết!? Thuế của\n"
+"Chính phủ của chúng ta làm ăn kiểu gì thế không biết!? Thuế của\n"
 "dân trả lương cho họ, họ phải giải quyết mấy vụ như này chứ!"
 
 #. なんにしても…現時点で私達に出来る事は１つだけよ…
@@ -1772,8 +1774,8 @@ msgstr "Chúng ta phải tìm ra hiệu trưởng của Học viện Đỉnh Hy 
 msgctxt "0225 | KYOUKO KIRIGIRI"
 msgid "We have to find him, and make him tell us everything."
 msgstr ""
-"Chúng ta phải tìm ra ông ta, và bắt ông ta nói ra tất cả\n"
-"mọi chuyện."
+"Chúng ta phải tìm ra ông ta, và bắt ông ta nói ra\n"
+"tất cả mọi chuyện."
 
 #. きっと…学園長さえ見つければ…
 #. そんな気が…

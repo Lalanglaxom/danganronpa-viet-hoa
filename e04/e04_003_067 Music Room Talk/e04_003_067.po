@@ -104,7 +104,9 @@ msgstr "..."
 #. ごめん…重要な資料だったよね…
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "I'm sorry. I know how important those were."
-msgstr "Tớ xin lỗi. Tớ biết những tài liệu đó quan trọng đến mức nào."
+msgstr ""
+"Tớ xin lỗi. Tớ biết những tài liệu đó quan trọng\n"
+"đến mức nào."
 
 #. …平気よ。私はもう見てるから。
 msgctxt "0014 | KYOUKO KIRIGIRI"
@@ -120,8 +122,8 @@ msgid ""
 "And I half suspected the mastermind might come after\n"
 "you."
 msgstr ""
-"Hơn nữa, tớ cũng đã đoán được phần nào việc kẻ chủ mưu có\n"
-"thể sẽ nhắm vào cậu."
+"Hơn nữa, tớ cũng đã đoán được phần nào việc kẻ chủ\n"
+"mưu có thể sẽ nhắm vào cậu."
 
 #. え…？
 msgctxt "0016 | MAKOTO NAEGI"
@@ -157,7 +159,9 @@ msgstr "Dù vậy, lý do tớ muốn cậu tới đó xem..."
 #. どんな意味を持つのか見極めたかったから。
 msgctxt "0020 | KYOUKO KIRIGIRI"
 msgid "I wanted to see how the mastermind would react."
-msgstr "Là vì tớ muốn xem phản ứng của kẻ chủ mưu sẽ như thế nào."
+msgstr ""
+"Là vì tớ muốn xem phản ứng của kẻ chủ mưu sẽ như\n"
+"thế nào."
 
 #. つまり、黒幕は隠し部屋の存在を
 #. 知っていたのかどうかをね…
@@ -172,7 +176,9 @@ msgstr ""
 #. でも、あなたを襲ってまで奪い返したという事は…
 msgctxt "0022 | KYOUKO KIRIGIRI"
 msgid "But to attack you, and steal everything in the room..."
-msgstr "Nhưng việc hắn tấn công cậu và cướp đi mọi thứ trong phòng..."
+msgstr ""
+"Nhưng việc hắn tấn công cậu và cướp đi mọi thứ\n"
+"trong phòng..."
 
 #. あの部屋は、黒幕にとって
 #. 想定外の手掛かりだったようね…
@@ -295,8 +301,8 @@ msgid ""
 "Did you think I wouldn't notice? You're hiding\n"
 "something."
 msgstr ""
-"Cậu nghĩ tớ không nhận ra sao? Cậu đang giấu tớ điều\n"
-"gì đó..."
+"Cậu nghĩ tớ không nhận ra sao? Cậu đang giấu tớ\n"
+"điều gì đó..."
 
 #. …そうなんでしょ？
 msgctxt "0038 | KYOUKO KIRIGIRI"
@@ -443,8 +449,8 @@ msgstr ""
 msgctxt "0054 | MAKOTO NAEGI"
 msgid "S-Sorry... I can't tell you. Not yet..."
 msgstr ""
-"X-Xin lỗi... tớ chưa thể nói cho cậu biết được. Chưa phải\n"
-"lúc này..."
+"X-Xin lỗi... tớ chưa thể nói cho cậu biết được.\n"
+"Chưa phải lúc này..."
 
 #. ………………
 msgctxt "0055 | KYOUKO KIRIGIRI"
@@ -496,7 +502,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Để lại những lời chia tay tuyệt tình như vậy, Kyoko bỏ đi,\n"
-"để mặc tớ đứng đó một mình.\n"
+"để mặc mình đứng đó.\n"
 "<CLT>"
 
 #. <CLT 4>怒らせちゃった…よな…
@@ -547,7 +553,8 @@ msgid ""
 "<CLT 4>I better look around the room a bit more...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tốt nhất mình nên xem quanh phòng này thêm một chút nữa...\n"
+"<CLT 4>Tốt nhất mình nên xem quanh phòng này thêm một\n"
+"chút nữa...\n"
 "<CLT>"
 
 #. はい

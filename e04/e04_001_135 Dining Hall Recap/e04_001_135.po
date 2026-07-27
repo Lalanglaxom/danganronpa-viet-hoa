@@ -210,7 +210,8 @@ msgid ""
 "<CLT 4>I can't bring it up in front of the others.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể nói chuyện này ra trước mặt mọi người được.\n"
+"<CLT 4>Mình không thể nói chuyện này ra trước mặt mọi\n"
+"người được.\n"
 "<CLT>"
 
 #. <CLT 4>そんな事しても…みんなを混乱させるだけだし…
@@ -221,8 +222,8 @@ msgid ""
 "much more.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu mình làm vậy... nó chỉ khiến mọi người hoang mang thêm\n"
-"mà thôi.\n"
+"<CLT 4>Nếu mình làm vậy... nó chỉ khiến mọi người hoang\n"
+"mang thêm mà thôi.\n"
 "<CLT>"
 
 #. ………………
@@ -233,7 +234,9 @@ msgstr "..."
 #. よし！　じゃあ、ぶっ倒れるまで食べよう！
 msgctxt "0026 | AOI ASAHINA"
 msgid "Okay! In that case, let's eat till we pass out!"
-msgstr "Được rồi! Nếu vậy thì tui mình ăn cho tới khi xỉu luôn đi!"
+msgstr ""
+"Được rồi! Nếu vậy thì tụi mình ăn cho tới khi xỉu\n"
+"luôn đi!"
 
 #. じゃあ、ってなんだべ？
 msgctxt "0027 | YASUHIRO HAGAKURE"
@@ -267,7 +270,7 @@ msgid ""
 "Let's fry up some fish and donuts and eat till we\n"
 "can't stand up!"
 msgstr ""
-"Tui mình hãy rán cá với bánh donut rồi ăn đến khi không đứng\n"
+"Tụi mình hãy rán cá với bánh donut rồi ăn đến khi không đứng\n"
 "nổi nữa thì thôi!"
 
 #. ディープインパクト級の世紀末的な組み合わせだべ…
@@ -291,8 +294,8 @@ msgid ""
 "Still, the \"till we can't stand up\" part is a problem.\n"
 "After we're done, we need to go <CLT 3>explore<CLT>."
 msgstr ""
-"Dù sao thì, cái đoạn \"đến khi không đứng nổi nữa\" là một vấn đề\n"
-"đấy. Sau khi xong việc, chúng ta cần phải đi <CLT 3>khám phá<CLT>."
+"Dù sao thì, cái đoạn \"đến khi xỉu\" là một vấn đề đấy. Sau khi\n"
+"xong việc, chúng ta cần phải đi <CLT 3>khám phá<CLT>."
 
 #. 学級裁判後の探索か…
 #. また行ける場所も広がっているはずだからな…
@@ -484,7 +487,7 @@ msgstr ""
 #. そして、家路を急いだんだ。
 msgctxt "0057 | YASUHIRO HAGAKURE"
 msgid "So I got a burger to go and headed home."
-msgstr "Thế nên tớ mua một cái mang về rồi vội vã về nhà."
+msgstr "Thế nên tớ mua một cái rồi vội vã mang về nhà."
 
 #. そん時だった…
 msgctxt "0058 | YASUHIRO HAGAKURE"
