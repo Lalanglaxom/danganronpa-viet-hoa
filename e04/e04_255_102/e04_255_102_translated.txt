@@ -1,0 +1,126 @@
+--- Gemini Translation Raw Output for e04_255_102.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. これで、霧切さんから教えてもらったところは
+#. 一通り調べ終わったかな…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"There, I've finished examining all the things Kyoko\n"
+"mentioned."
+msgstr ""
+
+#. ⟦CLT 4⟧色々と新しい手掛かりはあったけど…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧And I did find some new clues.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、肝心の密室トリックに関しては、
+#. 相変わらずさっぱりだな…
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But when it comes to the locked room puzzle, I'm still\n"
+"totally clueless...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. …そう言えば、苗木君に言っておく事があったわ。
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid ""
+"Oh, I just remembered. There was something I wanted to\n"
+"tell you."
+msgstr ""
+
+#. さっき天秤を取りに行った時に見たんだけど、
+#. ⟦CLT 3⟧化学室⟦CLT⟧に十神クンがいたわよ。
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid ""
+"I saw Byakuya in the ⟦CLT 3⟧chem lab⟦CLT⟧ when I went to go get\n"
+"the scale."
+msgstr ""
+
+#. 彼に見つかると面倒だから、
+#. 天秤をこっそり持ち出すのに苦労したわ…
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid ""
+"I didn't want to deal with him, so I took great pains\n"
+"to sneak in and out without him noticing me."
+msgstr ""
+
+#. …それが、どうかしたの？
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "And...?"
+msgstr ""
+
+#. 化学室の捜査がまだなら、
+#. あなたも行っておいた方がいいんじゃない？
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid ""
+"If you haven't checked out the chem lab, you should\n"
+"probably do that, since I couldn't do it myself."
+msgstr ""
+
+#. ⟦CLT 4⟧そう言えば、現場に落ちていた⟦CLT⟧⟦CLT 3⟧プロテイン⟦CLT⟧⟦CLT 4⟧は、
+#. 化学室から持って来た物だったよな…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧You know, the ⟦CLT⟧⟦CLT 3⟧protein can⟦CLT⟧⟦CLT 4⟧ we found at the murder\n"
+"scene must have come from the chem lab...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. そうだね…行ってみた方がいいかも…
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"I think you're right. I should probably take a look\n"
+"around that area."
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "There, I've finished examining all the things Kyoko\nmentioned."
+msgstr "Xong rồi, tớ đã kiểm tra xong tất cả những chỗ mà Kyoko nhắc đến."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧And I did find some new clues.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Và tớ cũng đã tìm ra vài manh mối mới.\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧But when it comes to the locked room puzzle, I'm still\ntotally clueless...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Nhưng khi nói đến bài toán phòng kín, tớ vẫn hoàn toàn mù tịt...\n⟦CLT⟧"
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid "Oh, I just remembered. There was something I wanted to\ntell you."
+msgstr "Ơ, tớ vừa nhớ ra. Có chuyện này tớ muốn nói với cậu."
+
+msgctxt "0005 | KYOUKO KIRIGIRI"
+msgid "I saw Byakuya in the ⟦CLT 3⟧chem lab⟦CLT⟧ when I went to go get\nthe scale."
+msgstr "Tớ đã thấy Byakuya ở ⟦CLT 3⟧phòng hóa học⟦CLT⟧ lúc đi lấy cái cân."
+
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid "I didn't want to deal with him, so I took great pains\nto sneak in and out without him noticing me."
+msgstr "Tớ không muốn dây dưa với cậu ta nên đã phải rất vất vả mới lẻn vào và ra ngoài mà không để cậu ta phát hiện."
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "And...?"
+msgstr "Và...?"
+
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid "If you haven't checked out the chem lab, you should\nprobably do that, since I couldn't do it myself."
+msgstr "Nếu cậu chưa kiểm tra phòng hóa học, có lẽ cậu nên qua đó đi, vì tớ đã không thể tự mình làm việc đó."
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧You know, the ⟦CLT⟧⟦CLT 3⟧protein can⟦CLT⟧⟦CLT 4⟧ we found at the murder\nscene must have come from the chem lab...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Cậu biết đấy, ⟦CLT⟧⟦CLT 3⟧hộp protein⟦CLT⟧⟦CLT 4⟧ mà chúng ta tìm thấy ở hiện trường vụ án chắc chắn là được lấy từ phòng hóa học...\n⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgid "I think you're right. I should probably take a look\naround that area."
+msgstr "Cậu nói đúng đấy. Tớ có lẽ nên ghé qua khu vực đó xem sao."
+

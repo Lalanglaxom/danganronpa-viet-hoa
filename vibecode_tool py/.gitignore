@@ -1,63 +1,13 @@
-# Python bytecode and caches (at any folder depth)
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
 .pytest_cache/
-.mypy_cache/
-.pyright/
-.ruff_cache/
-.pyre/
-.coverage
-.coverage.*
-htmlcov/
-.tox/
-.nox/
-
-# Virtual environments
-venv/
 .venv/
-env/
-ENV/
-**/venv/
-**/.venv/
-
-# Build and packaging
+venv/
 build/
 dist/
 *.egg-info/
-.eggs/
-*.egg
-pip-wheel-metadata/
+*.spec.bak
 
-# PyInstaller
-*.manifest
-*.pyz
-# Keep .spec because this project uses it.
-
-# Logs
-*.log
-toolkit_launch_error.log
-
-# Local environment and secrets
-.env
-.env.*
-*.local
-
-# IDE and operating-system files
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Generated archives
-*.zip
-*.rar
-*.7z
-
-# Temporary files
-*.tmp
-*.temp
-*.bak
-*.swp
-*~
+.ruff_cache/
+.mypy_cache/

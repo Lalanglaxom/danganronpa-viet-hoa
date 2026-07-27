@@ -1,0 +1,52 @@
+Completed tasks
+===============
+
+- Added visible PO Viewer suggestion Undo control; Ctrl+Z remains supported.
+- Suggestions now include the current in-memory PO, including unsaved edits.
+- Saving a PO invalidates/rebuilds the disk-backed suggestion index.
+- Added centralized Shortcuts tab and a Shortcuts button next to Settings.
+- Removed long instruction blocks from work tabs and Settings.
+- Reorganized PO Viewer: English above Vietnamese; Japanese notes at right, read-only and copyable.
+- Compacted PO Viewer controls, table rows, splitters, and file-group checkbox strips.
+- Windows VBS launcher now detects missing PyQt6 and offers to install requirements.
+- Added regression tests for live PO suggestions and GUI structure.
+
+Verification: 79 tests passed.
+
+Follow-up UI refinements
+------------------------
+
+- File-group checkboxes now use one evenly spaced horizontal row, with full labels and All/None controls.
+- English and Vietnamese detail panels both show the current speaker and per-line visible character counts.
+- PO Viewer table rows now expand to fit wrapped and multi-line text, and recalculate after edits, column resizing, visual-wrap changes, or CLT-view changes.
+
+Follow-up verification: Python source compiled; 79 pytest tests passed.
+
+Custom wrap shortcuts refinement:
+- Wrap preset 1-4 and Wrap Entire File can be assigned independently in the Shortcuts tab.
+- Assignments are single direct key combinations, save immediately, and persist in config.json.
+- Modifier-held repeated use remains supported in any preset order.
+- Duplicate/reserved assignments are rejected visibly.
+- Reset Wrap Shortcut Defaults restores Shift+1/2/3/4 and Shift+Return.
+
+UI refinement:
+- Removed progress-bar fill, track, border, and busy texture.
+- Progress indicators now display clean text only while preserving percentage/count updates.
+- Verification: 83 pytest tests passed.
+
+Shortcut window and compact editor refinement
+---------------------------------------------
+
+- Removed the Shortcuts tab; the toolbar button now opens a Settings-style Shortcut Settings window.
+- Wrap shortcuts accept three-key chords and sequences of up to three chords.
+- Direct one-chord wrap shortcuts remain repeatable while a modifier stays held.
+- Previous/next PO file shortcuts are fully configurable and apply in Search, duplicate views, and PO Viewer.
+- Reset Shortcut Defaults restores all wrap and file-navigation defaults.
+- English and Vietnamese editors are limited to four visible text rows.
+- Verification: Python source compiled; 85 pytest tests passed.
+
+Gemini batch pacing update:
+- Accepted Gemini Web entries are saved after each batch.
+- The next Gemini request is held for at least 2.5 seconds after a save.
+- The Gemini Web post-save wait control now defaults to and cannot go below 2.5 seconds.
+- Added regression tests for incremental saving and enforced pacing.

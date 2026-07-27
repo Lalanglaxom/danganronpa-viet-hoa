@@ -1,0 +1,101 @@
+--- Gemini Translation Raw Output for e04_255_101.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. …苗木君、どう？
+#. そろそろ一通り調べ終わったんじゃない？
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgid ""
+"Well, Makoto? Have you finished with your general\n"
+"investigation?"
+msgstr ""
+
+#. うん、多分…一通りは…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Yeah, I think so...for the most part."
+msgstr ""
+
+#. …だったら、次は聞き込みよ。
+#. 私は見張りだから、ここを離れられないの。
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid ""
+"Then you should probably go talk with people now. I'm\n"
+"on guard duty, so I can't leave."
+msgstr ""
+
+#. だから、あなたに行ってもらう事に決まったわ。
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid "Which is why I've decided you'll go in my place."
+msgstr ""
+
+#. ⟦CLT 4⟧すでに決定してるんだ…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧She's decided...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ケンカの一件以来、
+#. 霧切さんって強引になったような…
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧She's gotten a lot more pushy since we had\n"
+"our...issue.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧…でも、確かに“聞き込み”も必要だよな。
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But she's right. I do have to go talk to the others.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧大神さんに呼び出されていた残りの２人…
+#. あの人達から、ちゃんと事情を聞いておかないと…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Sakura wanted to meet with two other people. I need to\n"
+"hear what they have to say...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgid "Well, Makoto? Have you finished with your general\ninvestigation?"
+msgstr "Thế nào rồi, Makoto? Cậu đã điều tra tổng quát xong chưa?"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Yeah, I think so...for the most part."
+msgstr "Rồi, tớ nghĩ vậy... hầu như là thế."
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid "Then you should probably go talk with people now. I'm\non guard duty, so I can't leave."
+msgstr "Vậy thì cậu nên đi nói chuyện với mọi người đi. Tớ đang làm nhiệm vụ canh gác nên không thể rời đi."
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid "Which is why I've decided you'll go in my place."
+msgstr "Đó là lý do tớ quyết định cậu sẽ đi thay tớ."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧She's decided...?\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Cậu ấy quyết định luôn rồi sao...?\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧She's gotten a lot more pushy since we had\nour...issue.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Cậu ấy trở nên độc đoán hơn hẳn kể từ vụ... rắc rối đó của tụi mình.\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧But she's right. I do have to go talk to the others.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧...Nhưng cô ấy nói đúng. Tớ thực sự phải đi nói chuyện với những người khác thôi.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧Sakura wanted to meet with two other people. I need to\nhear what they have to say...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Sakura đã hẹn gặp hai người còn lại. Tớ cần phải nghe họ kể lại mọi chuyện...\n⟦CLT⟧"
+

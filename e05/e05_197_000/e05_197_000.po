@@ -39,12 +39,12 @@ msgstr ""
 #. 閃きアナグラム１に飛ぶ
 msgctxt "0005 | CHOICE/RE:ACT"
 msgid "Jump to Hangman's Gambit 1"
-msgstr ""
+msgstr "Nhảy đến Trận Đồ Ký Tự 1"
 
 #. 閃きアナグラム２に飛ぶ
 msgctxt "0006 | CHOICE/RE:ACT"
 msgid "Jump to Hangman's Gambit 2"
-msgstr ""
+msgstr "Nhảy đến Trận Đồ Ký Tự 2"
 
 #. <CLT 23>閃きアナグラムのジャンプ先を選んでください。
 #. <CLT>
@@ -53,3 +53,5 @@ msgid ""
 "<CLT 23>Which Hangman's Gambit would you like to jump to?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Bạn muốn nhảy đến Trận Đồ Ký Tự nào?\n"
+"<CLT>"

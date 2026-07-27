@@ -58,7 +58,7 @@ dr-po replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 
 ## Task progress
 
-The GUI has a shared progress bar in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, manual filename sync, and the complete Repack pipeline. File- or entry-based work shows current/total counts and percentages. Discovery, browser, and network phases use an animated indeterminate bar until a reliable total is known. Search keeps its detailed local progress bar and mirrors the same state in the shared bar.
+The GUI shows shared progress text in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, manual filename sync, and the complete Repack pipeline. File- or entry-based work shows current/total counts and percentages without a filled bar or animated texture. Search keeps its detailed local progress text and mirrors the same state in the shared indicator.
 
 ## Search / Sync / Repack performance
 
@@ -108,7 +108,7 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 7. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
 8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
 9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
-10. Use `Alt+Up` / `Alt+Down` to switch files. Hold `Ctrl`, tap `Space`, then press `1/2/3/4` repeatedly in any order to wrap selected/current entries with those presets; press `Enter` while still holding Ctrl to wrap the entire current file, and release Ctrl to exit wrap mode. Hold `Ctrl` and press `1/2/3` repeatedly in any order to apply PO Viewer suggestions; `Alt+0` refreshes them. `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
+10. Click `Shortcuts` beside Settings to assign wrap and previous/next-file actions. Assignments may be a three-key chord such as `Ctrl+Shift+1`, or a sequence of up to three chords. Direct one-chord wrap keys remain repeatable while their modifier is held. Reset restores `Shift+1/2/3/4`, `Shift+Return`, `Alt+Up`, and `Alt+Down`. Hold `Ctrl` and press `1/2/3` repeatedly to apply PO Viewer suggestions; `Alt+0` refreshes them. `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
 ## Automatic Gemini Web workflow
 

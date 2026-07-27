@@ -1,0 +1,1840 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 大正解でーす…
+msgctxt "0001 | MONOKUMA"
+msgid "Yeah, that's right."
+msgstr "Đại chính xác lunn..."
+
+#. …そう、大神さくらさんを殺したのは、
+#. <CLT 3>大神さくらさん自身<CLT>だったのでした…
+msgctxt "0002 | MONOKUMA"
+msgid "The one who killed Sakura was <CLT 3>Sakura herself<CLT>."
+msgstr "...Đúng vậy, kẻ đã giết Sakura chính là <CLT 3>bản thân Sakura<CLT>..."
+
+#. …ハイ、おしまい。
+msgctxt "0003 | MONOKUMA"
+msgid "...Okay, we're done here."
+msgstr "...Hi, xong phim."
+
+#. そうか…それが真実か…
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgid "So that's the whole truth, huh? I see..."
+msgstr "Ra là vậy... đó là toàn bộ sự thật sao? Ta hiểu rồi..."
+
+#. だが、俺にはまだわからない事がある…
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid "But there's still one thing I don't understand."
+msgstr "Nhưng vẫn còn một điều ta chưa hiểu..."
+
+#. 朝日奈…お前はなんの為に、
+#. 大神の死を隠そうとしたんだ…
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgid "Hina...why did you try to cover up what happened?"
+msgstr "Hina... rốt cuộc mục đích của cô khi che giấu cái chết của Sakura là gì..."
+
+#. あのまま隠し続けていれば、
+#. お前も、処刑されていたかもしれないんだぞ…
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid ""
+"If the truth hadn't come to light, you would have died\n"
+"along with the rest of us."
+msgstr "Nếu sự thật không được phơi bày, có lẽ cô cũng đã bị hành quyết cùng với lũ chúng ta rồi đấy..."
+
+#. それなのに…どうしてそんな事をした！？
+msgctxt "0008 | BYAKUYA TOGAMI"
+msgid "And yet you...! Why did you do that!?"
+msgstr "Vậy mà... tại sao cô lại làm thế!?"
+
+#. そうだべ！　
+#. 危なく、みんな死ぬとこだったんだぞ！？
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgid "Yeah! We almost died there!"
+msgstr "Đúng thế đấy! Suýt nữa thì tất cả bọn này bỏ mạng rồi còn gì hả!?"
+
+#. だ、だって…
+msgctxt "0010 | AOI ASAHINA"
+msgid "Because..."
+msgstr "Bởi vì..."
+
+#. …それが<CLT 3>目的<CLT>だもん！！
+msgctxt "0011 | AOI ASAHINA"
+msgid "That's exactly what I <CLT 3>wanted<CLT>!"
+msgstr "...Đó mới chính là <CLT 3>mục đích<CLT> của tớ đấy!!"
+
+#. …え？
+msgctxt "0012 | MAKOTO NAEGI"
+msgid "What...?"
+msgstr "Cái gì...?"
+
+#. だって、さくらちゃんが死んだのは…
+msgctxt "0013 | AOI ASAHINA"
+msgid "I mean, the reason Sakura died..."
+msgstr "Bởi vì, nguyên nhân khiến Sakura chết..."
+
+#. みんなが…さくらちゃんを追い詰めたせいじゃん…
+msgctxt "0014 | AOI ASAHINA"
+msgid "...is cuz all of you pushed her into a corner."
+msgstr "...chẳng phải là do tất cả các cậu đã dồn ép cậu ấy vào đường cùng hay sao..."
+
+#. みんなが…彼女を殺したんだよ……
+msgctxt "0015 | AOI ASAHINA"
+msgid "You...you all killed her..."
+msgstr "Chính các cậu... tất cả các cậu đã giết cậu ấy..."
+
+#. だから…
+msgctxt "0016 | AOI ASAHINA"
+msgid "So that's why..."
+msgstr "Vì thế nên..."
+
+#. 彼女だけを死なせる訳にいかないじゃん！
+msgctxt "0017 | AOI ASAHINA"
+msgid "...I couldn't let her be the only one that died!"
+msgstr "...Tớ không thể để một mình cậu ấy phải chết được!"
+
+#. あんた…まさか…
+msgctxt "0018 | TOUKO FUKAWA"
+msgid "You d-don't mean..."
+msgstr "C-Cậu không đời nào định..."
+
+#. アタシらを<CLT 3>道連れにする<CLT>為に…！？
+msgctxt "0019 | TOUKO FUKAWA"
+msgid "You were gonna <CLT 3>t-take us all with you<CLT>!?"
+msgstr "Cậu định <CLT 3>kéo tất cả bọn tớ chết chung<CLT> với cậu ta sao!?"
+
+#. 罪を償わなきゃ…
+msgctxt "0020 | AOI ASAHINA"
+msgid "We have to atone for our sins."
+msgstr "Chúng ta phải chuộc lại lỗi lầm chứ..."
+
+#. 私や…みんなが殺したんだから…
+msgctxt "0021 | AOI ASAHINA"
+msgid "Because everyone...even me...we all killed her."
+msgstr "Bởi vì tớ và tất cả mọi người... chính chúng ta đã giết cậu ấy mà."
+
+#. だから…<CLT 3>みんなで罪を償うべき<CLT>なんだよ…
+msgctxt "0022 | AOI ASAHINA"
+msgid "We all have to <CLT 3>pay for our crimes<CLT>..."
+msgstr "Thế nên... <CLT 3>tất cả chúng ta đều phải đền tội<CLT>..."
+
+#. マ、マジかよ…なんだってそんな事…ッ！
+msgctxt "0023 | YASUHIRO HAGAKURE"
+msgid "F-For serious!? That's—!"
+msgstr "Th-Thật á trời... Sao lại làm thế chứ...!"
+
+#. わからないなら…教えてあげるよ…
+msgctxt "0024 | AOI ASAHINA"
+msgid "You still don't understand? Then let me explain..."
+msgstr "Nếu các cậu vẫn không hiểu... thì để tớ giải thích cho mà nghe..."
+
+#. さくらちゃんが、
+#. どんな<CLT 3>絶望<CLT>を抱えて死んでいったのか！
+msgctxt "0025 | AOI ASAHINA"
+msgid ""
+"Do you realize just how much <CLT 3>despair<CLT> Sakura was\n"
+"carrying with her when she died!?"
+msgstr "Rằng Sakura đã phải ôm lấy nỗi <CLT 3>tuyệt vọng<CLT> lớn nhường nào trước khi chết!"
+
+#. これを…見てよ……
+msgctxt "0026 | AOI ASAHINA"
+msgid "Look at this..."
+msgstr "Cậu nhìn cái này xem..."
+
+#. <CLT 23>我はすべてに絶望した。
+#. 醜い争い合いに絶望した。
+#. <CLT>
+msgctxt "0027 | NARRATION"
+msgid ""
+"<CLT 23>Such brutality has made me desperate.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Sự tàn nhẫn này đã đẩy ta vào bước đường cùng.\n"
+"<CLT>"
+
+#. <CLT 23>このまま殺されるのを待つくらいなら、
+#. 我は自らの手で終わらせよう。
+#. <CLT>
+msgctxt "0028 | NARRATION"
+msgid ""
+"<CLT 23>So instead of just waiting to be killed, I'll do it by\n"
+"my own hand.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Thế nên thay vì ngồi chờ bị giết, ta sẽ tự kết liễu đời mình.\n"
+"<CLT>"
+
+#. そ、それって…！？
+msgctxt "0029 | MAKOTO NAEGI"
+msgid "Th-That's...!"
+msgstr "Đ-Đó là...!"
+
+#. 娯楽室の前に落ちてたのを…
+#. 見つけたんだよ…
+msgctxt "0030 | AOI ASAHINA"
+msgid "I found it on the ground, in front of the rec room."
+msgstr "Tớ đã tìm thấy nó... rơi ngay trước phòng giải trí..."
+
+#. <CLT 3>遺書<CLT>だよ…さくらちゃんの…
+msgctxt "0031 | AOI ASAHINA"
+msgid "It's...Sakura's <CLT 3>suicide note<CLT>."
+msgstr "Đó là... <CLT 3>di thư<CLT> của Sakura..."
+
+#. 大神さんの…遺書…？
+msgctxt "0032 | MAKOTO NAEGI"
+msgid "Suicide note...?"
+msgstr "Di thư... của Sakura á?"
+
+#. 今思えば…その予兆は前からあったんだ…
+msgctxt "0033 | AOI ASAHINA"
+msgid "Thinking back, I should have seen it coming..."
+msgstr "Giờ nghĩ lại thì... những điềm báo đó đã xuất hiện từ trước rồi..."
+
+#. あれは、私がジェノサイダーに襲われた直後…
+msgctxt "0034 | AOI ASAHINA"
+msgid "It was right after Genocide Jack had attacked me."
+msgstr "Đó là ngay sau khi tớ bị Genocide tấn công..."
+
+#. 私が襲われた事を知ったさくらちゃんが、
+#. 怒って保健室から飛び出した後の事だよ…
+msgctxt "0035 | AOI ASAHINA"
+msgid ""
+"Sakura got mad and stormed out of the nurse's\n"
+"office..."
+msgstr "Là lúc Sakura hay tin tớ bị tấn công, cậu ấy đã tức giận lao ra khỏi phòng y tế..."
+
+#. <CLT 4>さくらちゃんを追って、
+#. 私もすぐに保健室を飛び出したんだ…
+#. <CLT>
+msgctxt "0036 | AOI ASAHINA"
+msgid ""
+"<CLT 4>I ran out after her, and...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tui chạy đuổi theo cậu ấy, rồi...\n"
+"<CLT>"
+
+#. さくらちゃん、落ち着いて…
+#. 私なら大丈夫だから…！
+msgctxt "0037 | AOI ASAHINA"
+msgid ""
+"Sakura, calm down! You don't have to worry about me,\n"
+"I'm fine!"
+msgstr "Sakura, bình tĩnh lại đi... Tớ không sao đâu mà...!"
+
+#. 落ち着いてなど…いられん…！
+msgctxt "0038 | SAKURA OOGAMI"
+msgid "I...can't calm down..."
+msgstr "Ta... không thể bình tĩnh được..."
+
+#. 我が傷付くのは構わん…
+#. すべては、我の責任なのだからな…
+msgctxt "0039 | SAKURA OOGAMI"
+msgid ""
+"I don't care if I suffer for this. It's my fault,\n"
+"after all."
+msgstr "Ta không bận tâm nếu bản thân mình phải chịu tổn thương... Suy cho cùng, đó đều là trách nhiệm của ta mà..."
+
+#. だが我のせいで…朝日奈までもが傷付くとは…
+msgctxt "0040 | SAKURA OOGAMI"
+msgid "But now *you're* suffering because of me..."
+msgstr "Nhưng tại sao vì ta... mà cả Hina cũng phải chịu đau đớn..."
+
+#. 我のせいで…我をかばったばっかりに…
+msgctxt "0041 | SAKURA OOGAMI"
+msgid "You tried to protect me, but because of me..."
+msgstr "Cậu đã cố gắng bảo vệ ta, nhưng chỉ vì ta..."
+
+#. 親友が傷付く事になろうとはッ！！
+msgctxt "0042 | SAKURA OOGAMI"
+msgid "...my closest friend got hurt!"
+msgstr "...mà người bạn thân thiết nhất của ta lại bị thương!"
+
+#. さ、さくらちゃん…
+msgctxt "0043 | AOI ASAHINA"
+msgid "S-Sakura..."
+msgstr "S-Sakura..."
+
+#. 我のせいで…
+msgctxt "0044 | SAKURA OOGAMI"
+msgid "Because of me..."
+msgstr "Tại ta..."
+
+#. 我のせいで…仲間同士が殺し合おうとしている…
+msgctxt "0045 | SAKURA OOGAMI"
+msgid "...my friends are all going to kill each other."
+msgstr "...Chính vì ta mà bạn bè mới tàn sát lẫn nhau như thế này..."
+
+#. すべて…<CLT 3>我の責任<CLT>だ……
+msgctxt "0046 | SAKURA OOGAMI"
+msgid "This is all...<CLT 3>my responsibility<CLT>."
+msgstr "Tất cả... đều là <CLT 3>trách nhiệm của ta<CLT>..."
+
+#. さくらちゃん…責任を感じてた…
+msgctxt "0047 | AOI ASAHINA"
+msgid "Sakura...thought she was responsible."
+msgstr "Sakura... đã tự dằn vặt bản thân..."
+
+#. 全部…自分のせいだって……
+msgctxt "0048 | AOI ASAHINA"
+msgid "She thought everything was her fault."
+msgstr "Cậu ấy nghĩ rằng tất cả là do lỗi của mình......"
+
+#. だから、きっと…
+#. なんとかして、みんなに許してもらおうと思って…
+msgctxt "0049 | AOI ASAHINA"
+msgid ""
+"Which is why...she wanted to find some way to get\n"
+"everyone to forgive her."
+msgstr "Đó là lý do tại sao... cậu ấy muốn tìm cách nào đó để khiến mọi người tha thứ cho mình."
+
+#. それで…３人を呼び出したんだよ……
+msgctxt "0050 | AOI ASAHINA"
+msgid "So she asked to meet with...them."
+msgstr "Thế nên cậu ấy mới... hẹn gặp ba người đó......"
+
+#. あの３人を呼び出したの…？
+msgctxt "0051 | AOI ASAHINA"
+msgid "You asked to meet with those three?"
+msgstr "Cậu hẹn gặp ba người bọn họ sao?"
+
+#. やめた方がいいよ！　絶対に危ないって！！
+msgctxt "0052 | AOI ASAHINA"
+msgid "You can't! Don't you see how dangerous that is!?"
+msgstr "Cậu không thể làm thế được! Cậu không thấy điều đó nguy hiểm thế nào à!?"
+
+#. 大丈夫だ…少し話をするだけだ…
+msgctxt "0053 | SAKURA OOGAMI"
+msgid "Don't worry. I just want to talk to them."
+msgstr "Đừng lo. Ta chỉ muốn nói chuyện với họ thôi."
+
+#. 話って…なんの話…？
+msgctxt "0054 | AOI ASAHINA"
+msgid "Talk about...what?"
+msgstr "Nói chuyện... về cái gì cơ...?"
+
+#. ………………
+msgctxt "0055 | SAKURA OOGAMI"
+msgid "..."
+msgstr "..."
+
+#. ねぇ、やめた方がいいって。
+#. ３人がかりで襲われたら、さくらちゃんだって…
+msgctxt "0056 | AOI ASAHINA"
+msgid ""
+"Listen, don't do it. If they all gang up on you at\n"
+"once, even you..."
+msgstr "Nghe tớ đi, đừng làm thế. Nếu bọn họ hội đồng cậu cùng một lúc, ngay cả cậu cũng..."
+
+#. 朝日奈よ…
+msgctxt "0057 | SAKURA OOGAMI"
+msgid "Hina..."
+msgstr "Hina..."
+
+#. 勘違いするな、あいつらは敵ではない…
+msgctxt "0058 | SAKURA OOGAMI"
+msgid ""
+"Please, don't think of things like that. They're not\n"
+"my enemy."
+msgstr "Xin đừng nghĩ vậy. Bọn họ không phải là kẻ thù của ta."
+
+#. あいつらは…<CLT 3>仲間<CLT>なのだぞ…
+msgctxt "0059 | SAKURA OOGAMI"
+msgid "They're...<CLT 3>friends<CLT>."
+msgstr "Bọn họ là... <CLT 3>bạn bè<CLT> mà..."
+
+#. さ、さくらちゃん……
+msgctxt "0060 | AOI ASAHINA"
+msgid "S-Sakura..."
+msgstr "S-Sakura..."
+
+#. きっと…さくらちゃんは信じてたんだよ…
+msgctxt "0061 | AOI ASAHINA"
+msgid "She clearly believed..."
+msgstr "Cậu ấy đã hoàn toàn tin tưởng..."
+
+#. みんなの事を…本気で信じてたんだよ…
+msgctxt "0062 | AOI ASAHINA"
+msgid "She...completely believed...in all of us."
+msgstr "Cậu ấy... đã thực sự tin tưởng... tất cả chúng ta..."
+
+#. 話をすればわかってくれるって…
+#. みんな、仲間なんだからって…
+msgctxt "0063 | AOI ASAHINA"
+msgid ""
+"If you'd just talked to her, you would've understood.\n"
+"She was a friend to all of us..."
+msgstr "Giá mà các cậu chịu lắng nghe cậu ấy, các cậu đã hiểu rồi... Rằng cậu ấy vốn là bạn của tất cả chúng ta..."
+
+#. それ…なのに……
+msgctxt "0064 | AOI ASAHINA"
+msgid "And yet..."
+msgstr "Thế nhưng..."
+
+#. それなのにッ！！
+msgctxt "0065 | AOI ASAHINA"
+msgid "And yet...!"
+msgstr "Ấy thế mà...!"
+
+#. あんた達は…さくらちゃんの気持ちを踏みにじった…
+#. しかも最悪の形で……
+msgctxt "0066 | AOI ASAHINA"
+msgid ""
+"You trampled all over her feelings. And then you did\n"
+"the unthinkable..."
+msgstr "Các cậu đã giẫm đạp lên tình cảm của Sakura. Hơn thế nữa, các cậu còn làm ra chuyện tồi tệ nhất..."
+
+#. い、いや…あれは…
+#. 事故みたいなもんで…
+msgctxt "0067 | YASUHIRO HAGAKURE"
+msgid "N-No, that was just a...a misunderstanding!"
+msgstr "K-Không, đó chỉ là... một sự hiểu lầm thôi!"
+
+#. 事故なんて言葉で片付けないでよッ！！
+msgctxt "0068 | AOI ASAHINA"
+msgid "Don't stand there and call it a misunderstanding!"
+msgstr "Đừng có đứng đó mà gọi đó là hiểu lầm chứ hả!!"
+
+#. 信じてたあんた達に…話すら聞いてもらえないで…
+msgctxt "0069 | AOI ASAHINA"
+msgid ""
+"She believed in you...and you wouldn't even listen to\n"
+"what she had to say."
+msgstr "Cậu ấy đã đặt trọn niềm tin vào các cậu... vậy mà các cậu thậm chí còn chẳng buồn nghe lấy một lời..."
+
+#. 問答無用に…殺されかけて…
+msgctxt "0070 | AOI ASAHINA"
+msgid ""
+"Without asking a single question, you tried to kill\n"
+"her..."
+msgstr "Cậu ấy đã bị mưu sát một cách phũ phàng..."
+
+#. さくらちゃんは…！
+#. そんなみんなに絶望したんだよ！！
+msgctxt "0071 | AOI ASAHINA"
+msgid ""
+"Do you have any idea how desperate she was, seeing you\n"
+"act like that!?"
+msgstr "Cậu có biết Sakura đã tuyệt vọng đến nhường nào khi chứng kiến các cậu hành động như thế không!?"
+
+#. それが…この遺書の意味だよ…
+msgctxt "0072 | AOI ASAHINA"
+msgid "That's what her suicide note means..."
+msgstr "Đó chính là ý nghĩa của bức di thư này..."
+
+#. このまま殺されるのを待つくらいなら…
+#. それなら…いっそ…って……
+msgctxt "0073 | AOI ASAHINA"
+msgid ""
+"\"So instead of just waiting to be killed, I'll do it\n"
+"by my own hand.\""
+msgstr "\"Thế nên thay vì ngồi chờ bị giết, ta sẽ tự kết liễu đời mình.\""
+
+#. さくらちゃんは…
+#. そこまで追い詰められて…
+msgctxt "0074 | AOI ASAHINA"
+msgid "That's how far you'd pushed her..."
+msgstr "Các cậu đã đẩy Sakura..."
+
+#. さくらちゃんッ！
+#. どうしたの、その傷！？
+msgctxt "0075 | AOI ASAHINA"
+msgid "Sakura! What happened to you!?"
+msgstr "Sakura! Đã xảy ra chuyện gì với cậu thế này!?"
+
+#. あ、朝日奈…来たのか…
+msgctxt "0076 | SAKURA OOGAMI"
+msgid "H-Hina...you came..."
+msgstr "H-Hina... cậu đến rồi sao..."
+
+#. 待ってて、すぐ手当てするから…！
+msgctxt "0077 | AOI ASAHINA"
+msgid "Wait right here! I'll help you out!"
+msgstr "Đợi ở đây nhé, tớ sẽ băng bó vết thương cho cậu ngay...!"
+
+#. あ、朝日奈よ…
+msgctxt "0078 | SAKURA OOGAMI"
+msgid "H-Hina..."
+msgstr "H-Hina..."
+
+#. え…？
+msgctxt "0079 | AOI ASAHINA"
+msgid "Huh...?"
+msgstr "Hả...?"
+
+#. 我は…ここでお前と出会えた事を嬉しく思う……
+msgctxt "0080 | SAKURA OOGAMI"
+msgid "I...I'm so glad I got to meet you..."
+msgstr "Ta... ta rất vui vì được gặp cậu..."
+
+#. ど、どうしたの、さくらちゃん？
+#. 急に何言ってんの…？
+msgctxt "0081 | AOI ASAHINA"
+msgid ""
+"Wh-What's wrong, Sakura? Why are you talking like\n"
+"that...?"
+msgstr "C-Có chuyện gì vậy, Sakura? Sao tự nhiên cậu lại nói những lời đó...?"
+
+#. …た、頼みがあるのだ。
+msgctxt "0082 | SAKURA OOGAMI"
+msgid "I...have a favor to ask."
+msgstr "...T-Ta có một thỉnh cầu."
+
+#. …頼み？
+msgctxt "0083 | AOI ASAHINA"
+msgid "A favor...?"
+msgstr "Nhờ vả chuyện gì cơ...?"
+
+#. プロテインを…取って来て欲しいのだ。
+msgctxt "0084 | SAKURA OOGAMI"
+msgid "I'd like...some protein."
+msgstr "Ta muốn... lấy ít protein."
+
+#. 頼めるか…？
+msgctxt "0085 | SAKURA OOGAMI"
+msgid "Could I ask you to...?"
+msgstr "Cậu có thể giúp ta chứ...?"
+
+#. う、うん…わかった。
+#. 待ってて、すぐに持って来るから…！
+msgctxt "0086 | AOI ASAHINA"
+msgid "Y-Yeah, you got it! Just hang on, I'll be right back!"
+msgstr "U-Ừm... tớ hiểu rồi. Đợi nhé, tớ sẽ mang tới ngay đây...!"
+
+#. <CLT 4>それが…私とさくらちゃんの最後の会話だった…
+#. <CLT>
+msgctxt "0087 | AOI ASAHINA"
+msgid ""
+"<CLT 4>That was...the last conversation I had with her.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đó là... cuộc trò chuyện cuối cùng của tớ với cậu ấy...\n"
+"<CLT>"
+
+#. 頼まれたプロテインを取りに…化学室に行ったら…
+#. 棚の前で…粉末がまき散らされてて……
+msgctxt "0088 | AOI ASAHINA"
+msgid ""
+"I went to the chem lab to get the protein she'd asked\n"
+"for. When I got there, I saw the powder."
+msgstr "Khi tớ đến phòng thí nghiệm hóa học để lấy chỗ protein mà cậu ấy nhờ... Lúc bước vào, tớ thấy đống bột bị vương vãi khắp nơi......"
+
+#. そこで気付いたんだ……
+msgctxt "0089 | AOI ASAHINA"
+msgid "And that's when I realized..."
+msgstr "Và chính lúc đó tớ đã nhận ra......"
+
+#. さくらちゃんが…
+#. 毒薬の棚から…何か持ち出したって事に…
+msgctxt "0090 | AOI ASAHINA"
+msgid ""
+"I saw that someone had taken something from the poison\n"
+"shelf. Sakura..."
+msgstr "Rằng Sakura đã... lấy thứ gì đó từ kệ độc dược..."
+
+#. 私は……急いで娯楽室に戻ったんだけど…
+msgctxt "0091 | AOI ASAHINA"
+msgid "So I ran back to the rec room as fast as I could."
+msgstr "Tớ...... đã vội vã quay trở lại phòng giải trí..."
+
+#. でも…その時はもう……
+msgctxt "0092 | AOI ASAHINA"
+msgid ""
+"But by the time I got there, it was already too\n"
+"late..."
+msgstr "Nhưng... lúc đó thì đã quá muộn rồi......"
+
+#. さくらちゃん！！
+msgctxt "0093 | AOI ASAHINA"
+msgid "Sakura!"
+msgstr "Sakura!"
+
+#. 開けてよ！　ここを開けてよ！！
+msgctxt "0094 | AOI ASAHINA"
+msgid "Let me in! Please, open the door!"
+msgstr "Mở cửa ra! Làm ơn mở cửa ra đi!!"
+
+#. ………………
+msgctxt "0095 | AOI ASAHINA"
+msgid "..."
+msgstr "..."
+
+#. どうして…
+msgctxt "0096 | AOI ASAHINA"
+msgid "Why...?"
+msgstr "Tại sao...?"
+
+#. ど、どうしてなの…？
+msgctxt "0097 | AOI ASAHINA"
+msgid "Why!?"
+msgstr "Tại sao cơ chứ...?"
+
+#. どうして、さくらちゃんが死ななきゃいけないのッ！！
+msgctxt "0098 | AOI ASAHINA"
+msgid "Why did she have to die!"
+msgstr "Tại sao Sakura lại phải chết cơ chứ!!"
+
+#. さくらちゃんだって…
+#. 弱いところもある…普通の人間なんだよ……
+msgctxt "0099 | AOI ASAHINA"
+msgid "She had weaknesses, just like any other person."
+msgstr "Sakura cũng có những điểm yếu... cậu ấy cũng chỉ là một con người bình thường thôi......"
+
+#. 傷つけられれば血が出るし、
+#. 傷つけられれば痛い。
+msgctxt "0100 | AOI ASAHINA"
+msgid ""
+"If she got cut, she bled. If someone hurt her, she\n"
+"felt it."
+msgstr "Bị cắt thì cũng sẽ chảy máu, bị thương thì cũng sẽ đau đớn."
+
+#. そんな普通の…“弱い人間”なんだよ…
+msgctxt "0101 | AOI ASAHINA"
+msgid "That's weakness... That's normal...!"
+msgstr "Cậu ấy chỉ là một “con người yếu đuối”... rất bình thường như thế thôi...!"
+
+#. それ…なのに……
+msgctxt "0102 | AOI ASAHINA"
+msgid "And yet..."
+msgstr "Thế nhưng..."
+
+#. みんなは彼女を責め立てて…
+msgctxt "0103 | AOI ASAHINA"
+msgid "You all blamed her..."
+msgstr "Các cậu đã trách mắng cậu ấy..."
+
+#. それを庇った私が…傷付いたせいで…
+#. 彼女はさらに重荷を背負って…
+msgctxt "0104 | AOI ASAHINA"
+msgid ""
+"I tried to protect her, and I suffered for it. And\n"
+"that just added to the weight she had to carry...!"
+msgstr "Vì tớ cố bảo vệ cậu ấy nên tớ mới bị thương. Và điều đó lại càng chất chồng thêm gánh nặng mà cậu ấy phải gánh chịu...!"
+
+#. しかも…私は気付いてあげられなくて……
+msgctxt "0105 | AOI ASAHINA"
+msgid "And I didn't even realize it..."
+msgstr "Hơn nữa... tớ lại chẳng hề nhận ra điều đó......"
+
+#. 朝日奈さん…
+msgctxt "0106 | MAKOTO NAEGI"
+msgid "Hina..."
+msgstr "Hina..."
+
+#. 私達が…さくらちゃんを殺したんだよ…
+msgctxt "0107 | AOI ASAHINA"
+msgid "We killed her... All of us."
+msgstr "Chính chúng ta... đã giết Sakura..."
+
+#. さくらちゃんを…追い詰めて殺したんだよ…
+msgctxt "0108 | AOI ASAHINA"
+msgid "We pushed her into a corner...and we murdered her."
+msgstr "Chúng ta đã dồn ép... và sát hại Sakura..."
+
+#. そんな私達だけが、
+#. 生きてていい訳ないんだよッ！！
+msgctxt "0109 | AOI ASAHINA"
+msgid "People like us shouldn't be allowed to live!"
+msgstr "Những kẻ như chúng ta, lấy cái quyền gì mà được sống tiếp cơ chứ!!"
+
+#. それで…俺達を道連れにしようと…
+msgctxt "0110 | BYAKUYA TOGAMI"
+msgid "And that's why you tried to lead us astray."
+msgstr "Và đó là lý do tại sao cô cố tình dẫn dụ chúng ta đi chệch hướng."
+
+#. わざと…学級裁判で間違った答えを出させようと…
+msgctxt "0111 | BYAKUYA TOGAMI"
+msgid ""
+"You did your best to make us arrive at the wrong\n"
+"conclusion during the class trial."
+msgstr "Cô đã làm mọi cách để khiến chúng ta đưa ra kết luận sai lầm trong lớp xét xử."
+
+#. みんなの事を恨んで死んだ…
+#. さくらちゃんの無念を晴らす為だよ…
+msgctxt "0112 | AOI ASAHINA"
+msgid ""
+"Sakura died hating all of us. I wanted to free her of\n"
+"her regrets."
+msgstr "Sakura ra đi trong sự căm ghét tất cả chúng ta... Tớ chỉ muốn giải tỏa những hối hận đó cho cậu ấy thôi..."
+
+#. でも…それも見破られちゃって…
+#. 結局、私は何もしてあげられなかった…
+msgctxt "0113 | AOI ASAHINA"
+msgid ""
+"But even that got found out. In the end, I wasn't able\n"
+"to do anything for her..."
+msgstr "Nhưng... chuyện đó cũng bị phát hiện mất rồi. Cuối cùng, tớ chẳng thể làm được gì cho cậu ấy cả..."
+
+#. もう…さくらちゃんに合わせる顔がないよ…
+msgctxt "0114 | AOI ASAHINA"
+msgid "I could never face her after this..."
+msgstr "Tớ... còn mặt mũi nào để gặp lại Sakura nữa đây..."
+
+#. ねぇ、泣ける話のトコ悪いんだけどさぁ…
+msgctxt "0115 | MONOKUMA"
+msgid ""
+"I'm sorry to interrupt right when you're about to\n"
+"deliver the final tearjerker, but..."
+msgstr "Xin lỗi vì chen ngang vào giữa lúc mấy người sắp sửa cất lên khúc ca bi thương đầy nước mắt, nhưng mà..."
+
+#. 長いよ長い長い長い！！
+#. そんなん眠くなっちゃうよ！
+msgctxt "0116 | MONOKUMA"
+msgid ""
+"...it's just taking so long, long, long, LONG! I'm\n"
+"about to fall asleep over here!"
+msgstr "...dài dòng lôi thôi quá đấy, dài dài dài, dài kinh khủng! Tôi buồn ngủ muốn sập cả nguồn đến nơi rồi đây này!"
+
+#. …ていうかさぁ、大神さんがどう思って死んだのか、
+#. 朝日奈さんなんかが本当に理解してるのかね？
+msgctxt "0117 | MONOKUMA"
+msgid ""
+"I mean, do you really think you have any idea what\n"
+"Sakura was actually thinking when she died?"
+msgstr "...Mà nhân tiện thì, rốt cuộc Aoi có thực sự hiểu được suy nghĩ thực sự của Sakura lúc chết hay không thế hả?"
+
+#. なに…それ…？
+msgctxt "0118 | AOI ASAHINA"
+msgid "What did you say...?"
+msgstr "Cậu đang nói cái gì...?"
+
+#. だってさ、さっきの話だって、
+#. 大部分が朝日奈さんの解釈な訳でしょ？
+msgctxt "0119 | MONOKUMA"
+msgid ""
+"Everything you just said is nothing but your\n"
+"interpretation, right?"
+msgstr "Suy cho cùng thì nãy giờ, phần lớn cũng chỉ là sự suy diễn cá nhân của cô thôi đúng không hả?"
+
+#. あの遺書に基づいた朝日奈さんの解釈…
+msgctxt "0120 | MONOKUMA"
+msgid "Your own opinion on what her suicide note meant?"
+msgstr "Đó chỉ là cách diễn giải của Aoi dựa trên bức di thư đó ấy hả?"
+
+#. わ、わかってるに決まってんじゃん！
+#. だって、私とさくらちゃんは…！
+msgctxt "0121 | AOI ASAHINA"
+msgid ""
+"O-Of course I know what she was thinking! Cuz her and\n"
+"me—!"
+msgstr "C-Chứ còn gì nữa mà không biết! Bởi vì tớ và Sakura...!"
+
+#. だからさ…ボクが言いたいのはね…
+msgctxt "0122 | MONOKUMA"
+msgid "Well, what I'm really trying to say is..."
+msgstr "Thế nên là... điều tôi muốn nói ở đây là..."
+
+#. …その基づいた物が違うんじゃないの？
+msgctxt "0123 | MONOKUMA"
+msgid "...don't you think the entire foundation is shaky?"
+msgstr "...Cái nền tảng đó vốn dĩ đã sai từ gốc rồi phải không nào?"
+
+#. ホントは…こっちだったりして…
+msgctxt "0124 | MONOKUMA"
+msgid "What if it was really...like this?"
+msgstr "Biết đâu thực tế nó lại là thế này thì sao..."
+
+#. なんだべ…？　そりゃ…？
+msgctxt "0125 | YASUHIRO HAGAKURE"
+msgid "What...is that?"
+msgstr "Cái gì... thế hả?"
+
+#. 決まってんじゃん…
+msgctxt "0126 | MONOKUMA"
+msgid "Isn't it obvious?"
+msgstr "...Nhìn là biết rồi mà?"
+
+#. <CLT 3>遺書<CLT>だよ。大神さんのね。
+msgctxt "0127 | MONOKUMA"
+msgid "A <CLT 3>suicide note<CLT>. *Sakura's* suicide note."
+msgstr "Một bức <CLT 3>di thư<CLT>. Di thư của *Sakura* đấy."
+
+#. い、遺書…！？　
+#. だって遺書は…もう朝日奈さんが…！
+msgctxt "0128 | MAKOTO NAEGI"
+msgid "Wh-What? But Hina already..."
+msgstr "C-Cái gì? Nhưng bức di thư thì... Aoi đã..."
+
+#. あれを書いたのはボクだよ。
+msgctxt "0129 | MONOKUMA"
+msgid "Oh, I wrote that one. It was all me, baby."
+msgstr "À, cái đó do chính tay tôi viết đấy."
+
+#. 一方、こっちは朝日奈さんの部屋に置いてあった物。
+#. 大神さんが朝日奈さんに宛てたんだろうね！
+msgctxt "0130 | MONOKUMA"
+msgid ""
+"This is the one Sakura addressed to Hina and put in\n"
+"her room!"
+msgstr "Còn đây mới là thứ được đặt trong phòng của Aoi. Chắc là Sakura viết cho Aoi rồi!"
+
+#. え…じゃあ……
+msgctxt "0131 | AOI ASAHINA"
+msgid "What? Then..."
+msgstr "Hả... Vậy thì......"
+
+#. 私の事…騙してたの…？
+msgctxt "0132 | AOI ASAHINA"
+msgid "You...lied to me?"
+msgstr "Cậu đã... lừa dối tớ sao?"
+
+#. 騙すなんてヤだなぁ～！
+#. ボクは盛り上げようと思っただけだって。
+msgctxt "0133 | MONOKUMA"
+msgid ""
+"Oh, don't say \"lie\"! It makes it sound so dirty! I\n"
+"just thought I'd liven things up a bit!"
+msgstr "Đừng có dùng từ \"lừa dối\" nghe ghê thế chứ! Tôi chỉ muốn làm cho không khí thêm phần sôi động thôi mà."
+
+#. …て言うか、ボクが書いた落書きを、
+#. 朝日奈さんが勝手に勘違いしたのが悪いんじゃん。
+msgctxt "0134 | MONOKUMA"
+msgid ""
+"I can't help it if you totally took my little\n"
+"scribbles at face value."
+msgstr "...Mà vả lại, tại tự cô cứ cắm đầu tin sái cổ vào mấy nét nghệch ngoạc của tôi đấy chứ."
+
+#. 大神さんの署名がある訳じゃないってのに…
+msgctxt "0135 | MONOKUMA"
+msgid "It didn't even have Sakura's signature on it!"
+msgstr "Trong đó có chữ ký nào của Sakura đâu cơ chứ..."
+
+#. き、汚いぞ…ッ！
+msgctxt "0136 | MAKOTO NAEGI"
+msgid "You filthy little...!"
+msgstr "Đồ... khốn nạn!"
+
+#. 汚くないよ。ボクは何もしてないじゃん。
+msgctxt "0137 | MONOKUMA"
+msgid "I'm not filthy! I didn't do anything."
+msgstr "Tôi có khốn nạn đâu. Tôi có làm gì đâu nào."
+
+#. ボクが証拠をでっち上げたりした？
+#. 学級裁判の行方を左右するような介入をした？
+msgctxt "0138 | MONOKUMA"
+msgid ""
+"Did I falsify evidence? Did I affect the outcome of\n"
+"the class trial?"
+msgstr "Tôi có ngụy tạo bằng chứng nào không? Tôi có nhúng tay vào việc chi phối kết quả lớp xét xử không nào?"
+
+#. 事件は、オマエラの中で起きて、
+#. オマエラの中で引っかき回し合ってただけじゃん。
+msgctxt "0139 | MONOKUMA"
+msgid ""
+"The case played out between you and you alone. You\n"
+"were the ones jerking each other around."
+msgstr "Toàn bộ vụ án là do mấy người tự diễn ra, rồi mấy người tự dắt mũi lẫn nhau đấy chứ."
+
+#. あの遺書がきっかけになったとしても…
+#. 結局すべては、オマエラ同士の間で起きた事…
+msgctxt "0140 | MONOKUMA"
+msgid ""
+"Heck, even if the will *had* factored in, it still\n"
+"woulda been between you guys."
+msgstr "Chưa kể, cho dù bức di thư đó có thực sự đóng vai trò quan trọng đi chăng nữa..."
+
+#. だからノープロブレムなり！
+#. これも演出の一環！　キリッ！
+msgctxt "0141 | MONOKUMA"
+msgid ""
+"So what's the problem!? This is all part of the\n"
+"production process! Okay, and...scene! Cut!"
+msgstr "Thế nên có vấn đề gì nào!? Tất cả cũng chỉ là một phần của quá trình sản xuất thôi! Được rồi, và... cắt!"
+
+#. それで…そっちの本物の遺書には、
+#. 何が書いてあるの…？
+msgctxt "0142 | KYOUKO KIRIGIRI"
+msgid ""
+"So then, what did she write in her *real* suicide\n"
+"note?"
+msgstr "Vậy rốt cuộc, cô ấy đã viết gì trong bức di thư *thật* của mình?"
+
+#. …では、美声の呼び声が高いボクが
+#. 代表して読んであげましょう！
+msgctxt "0143 | MONOKUMA"
+msgid ""
+"I'm glad you asked! For your benefit, I shall read it\n"
+"using my melodic, angelic, harmonic narrator voice!"
+msgstr "Tôi mừng vì cậu đã hỏi đấy! Để tôi đọc nó cho mọi người nghe bằng giọng kể chuyện du dương, thánh thót và đầy hòa âm của mình nhé!"
+
+#. ところで…遺書と言えば気になりませんか？
+msgctxt "0144 | MONOKUMA"
+msgid ""
+"But you know...haven't you ever been curious about the\n"
+"whole \"suicide note\" thing?"
+msgstr "Mà này... các người chưa bao giờ cảm thấy tò mò về cái gọi là \"di thư\" sao?"
+
+#. 自殺する際に、遺書を残すシステムを発案したのって、
+#. どこのどなた様なんでしょうかね…？
+msgctxt "0145 | MONOKUMA"
+msgid ""
+"Who came up with the idea of leaving a note when you\n"
+"kill yourself in the first place?"
+msgstr "Không biết kẻ nào, hay vị nào là người đầu tiên nghĩ ra cái hệ thống để lại di thư lúc tự tử nhỉ...?"
+
+#. ですが、残念ながら、
+#. そいつは間違いなく自らの命を絶っている事でしょう。
+msgctxt "0146 | MONOKUMA"
+msgid ""
+"And isn't it just so unfortunate? Killing yourself is\n"
+"just so final, ya know?"
+msgstr "Nhưng thật tiếc làm sao, chắc là kẻ đó giờ này đã tự tay kết liễu đời mình rồi ấy chứ."
+
+#. もう話を聞く事は出来ない…つまり真相は闇の中…
+#. 怖いですね…ブルッちゃいますね…
+msgctxt "0147 | MONOKUMA"
+msgid ""
+"You can never hear the rest of their story. The truth\n"
+"is lost in darkness. Gives me the willies...!"
+msgstr "Chẳng thể nghe thêm câu chuyện nào từ họ nữa... Tức là sự thật đã bị chôn vùi trong bóng tối... Nghe đáng sợ chưa... Nổi hết cả da gà da vịt lên rồi đấy..."
+
+#. 早く…してもらえる…？
+msgctxt "0148 | KYOUKO KIRIGIRI"
+msgid "Could you get on with it, please?"
+msgstr "Cậu có thể đọc nhanh lên được không...?"
+
+#. はいはい！　では読みますよ！
+msgctxt "0149 | MONOKUMA"
+msgid ""
+"Okay, okay, jeez! Talk about a buzzkill... Alright,\n"
+"here we go."
+msgstr "Rồi rồi, trời ạ! Đang cao hứng mà cứ thích phá đám... Thôi được rồi, chúng ta bắt đầu."
+
+#. えーっと……
+msgctxt "0150 | MONOKUMA"
+msgid "Ahem!"
+msgstr "Hèm...!"
+
+#. <CLT 23>…我が親友である朝日奈よ。
+#. お主に伝えておかねばならぬ事がある。
+#. <CLT>
+msgctxt "0151 | MONOKUMA"
+msgid ""
+"<CLT 23>My good friend Hina. There's something I have to tell\n"
+"you.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Hina, người bạn thân thiết của ta. Có vài điều ta buộc phải nói cho cậu biết.\n"
+"<CLT>"
+
+#. <CLT 23>こういう形で伝えるのは心苦しいが、
+#. だが、知っておいて欲しい。
+#. <CLT>
+msgctxt "0152 | MONOKUMA"
+msgid ""
+"<CLT 23>I hate to do it like this, but you need to know.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Ta rất tiếc khi phải dùng cách này, nhưng cậu cần phải biết điều đó.\n"
+"<CLT>"
+
+#. <CLT 23>それが…我の最後の願いだ。
+#. <CLT>
+msgctxt "0153 | MONOKUMA"
+msgid ""
+"<CLT 23>This is...my final wish.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Đây chính là... nguyện vọng cuối cùng của ta.\n"
+"<CLT>"
+
+#. 知っての通り、我は黒幕の内通者だった…
+msgctxt "0154 | SAKURA OOGAMI"
+msgid ""
+"As you know, I've been giving information to the one\n"
+"who's imprisoned you here."
+msgstr "Như cậu đã biết, ta chính là nội ứng của kẻ chủ mưu."
+
+#. 我が黒幕に声を掛けられたのは、
+#. この奇妙な学園生活が始まった最初の日の夜の事…
+msgctxt "0155 | SAKURA OOGAMI"
+msgid ""
+"It was our first night in this strange school that the\n"
+"mastermind came to see me..."
+msgstr "Kẻ chủ mưu đã tiếp cận ta vào đêm đầu tiên của cuộc sống học đường kỳ lạ này..."
+
+#. 黒幕は、<CLT 3>我が一族の道場<CLT>を人質に取る事で、
+#. 我に手先となるよう命じてきたのだ。
+msgctxt "0156 | SAKURA OOGAMI"
+msgid ""
+"You see, the mastermind took control of <CLT 3>my family's\n"
+"dojo<CLT>, and demanded I become their tool."
+msgstr "Kẻ chủ mưu đã dùng <CLT 3>võ đường của gia tộc ta<CLT> làm con tin và ép ta phải trở thành sai khiến của chúng."
+
+#. たかが道場と思うかもしれんが、
+#. あれは、我が一族が３００年に渡って守ってきたもの…
+msgctxt "0157 | SAKURA OOGAMI"
+msgid ""
+"You might not see the importance of a dojo, but my\n"
+"family has watched over it for over 300 years."
+msgstr "Cậu có thể thấy một võ đường chẳng có gì quan trọng, nhưng đó là nơi gia tộc ta đã gìn giữ suốt hơn 300 năm qua..."
+
+#. 我の代で滅ぼす訳にはいかぬ…
+#. だから、我の命にかえてでも守らなければならぬ…
+msgctxt "0158 | SAKURA OOGAMI"
+msgid ""
+"I couldn't let it be destroyed under my watch. So even\n"
+"if it meant my own life, I had to protect it."
+msgstr "Ta không thể để nó lụi tàn dưới thời của mình... Thế nên dù có phải đánh đổi bằng cả sinh mạng, ta cũng phải bảo vệ nó..."
+
+#. …そう思っていた。
+msgctxt "0159 | SAKURA OOGAMI"
+msgid "That's how I saw things..."
+msgstr "...Ta đã từng nghĩ vậy."
+
+#. だが、そんな想いこそが、<CLT 3>我の弱さ<CLT>だったのだ。
+msgctxt "0160 | SAKURA OOGAMI"
+msgid "However, that was my <CLT 3>greatest weakness<CLT>."
+msgstr "Thế nhưng, chính những suy nghĩ đó mới là <CLT 3>điểm yếu lớn nhất<CLT> của ta."
+
+#. そのせいで、我は黒幕に従うという過ちを
+#. 犯してしまったのだから…
+msgctxt "0161 | SAKURA OOGAMI"
+msgid ""
+"And because of that, I made the mistake of giving in\n"
+"to the mastermind."
+msgstr "Chính vì điều đó mà ta đã phạm phải sai lầm khi khuất phục trước kẻ chủ mưu..."
+
+#. そして、黒幕が我に命じたのは…
+#. <CLT 3>『殺人を犯せ』<CLT>という命令だった。
+msgctxt "0162 | SAKURA OOGAMI"
+msgid ""
+"And what the mastermind wanted from me was nothing\n"
+"less...than <CLT 3>murder<CLT>."
+msgstr "Và điều mà kẻ chủ mưu sai bảo ta... chính là mệnh lệnh <CLT 3>\"Hãy phạm tội giết người\"<CLT>."
+
+#. 黒幕は、最初の殺人が起きぬまま、
+#. 事態がこう着するのを危惧していたのだろう…
+msgctxt "0163 | SAKURA OOGAMI"
+msgid ""
+"They were probably worried that until the first murder\n"
+"had happened, nothing would move forward."
+msgstr "Chắc hẳn kẻ chủ mưu lo sợ rằng nếu vụ án mạng đầu tiên không xảy ra, tình hình sẽ rơi vào bế tắc..."
+
+#. だが、黒幕にとっても我にとっても計算外だったのは、
+#. それよりも先に、舞園さやかの事件が起きた事だった。
+msgctxt "0164 | SAKURA OOGAMI"
+msgid ""
+"But what neither the mastermind nor I expected...was\n"
+"the incident involving Sayaka."
+msgstr "Nhưng điều mà cả kẻ chủ mưu lẫn ta đều không ngờ tới... là vụ việc liên quan đến Sayaka lại xảy ra trước cả khi điều đó kịp diễn ra."
+
+#. それにより、計画は変更となった…
+msgctxt "0165 | SAKURA OOGAMI"
+msgid "At that point, the plan changed."
+msgstr "Vào thời điểm đó, kế hoạch đã thay đổi."
+
+#. そこで、黒幕は我に待機を命じた。
+#. 次のこう着状態が訪れるまでの待機だ…
+msgctxt "0166 | SAKURA OOGAMI"
+msgid ""
+"The mastermind told me to hold off—to wait until we\n"
+"reached another stalemate."
+msgstr "Kẻ chủ mưu bảo ta hãy chờ đợi—chờ cho đến khi một tình thế bế tắc khác xuất hiện..."
+
+#. だが、そこで…
+#. お主達と生活を続けていく内に…
+msgctxt "0167 | SAKURA OOGAMI"
+msgid "However, as I lived here with all of you..."
+msgstr "Tuy nhiên, trong khoảng thời gian... sinh sống cùng tất cả các cậu..."
+
+#. 朝日奈と生活を続けていく内に…
+msgctxt "0168 | SAKURA OOGAMI"
+msgid "As I lived here with Hina..."
+msgstr "Khi ta sinh sống ở đây cùng Hina..."
+
+#. …我の決意は揺らいでいった。
+msgctxt "0169 | SAKURA OOGAMI"
+msgid "...my resolve began to weaken."
+msgstr "...quyết tâm của ta bắt đầu lung lay."
+
+#. みなが必死に戦い、
+#. 必死に生き延びようとする姿を見て…
+msgctxt "0170 | SAKURA OOGAMI"
+msgid ""
+"Watching everyone fight with such despair, trying so\n"
+"desperately to stay alive..."
+msgstr "Nhìn mọi người chiến đấu trong tuyệt vọng, chật vật tìm mọi cách để sống sót..."
+
+#. 我は、自分の心の弱さを思い知ったのだ。
+#. 黒幕に屈した弱さにな…
+msgctxt "0171 | SAKURA OOGAMI"
+msgid ""
+"...I saw the weakness in my own heart, the mistake of\n"
+"succumbing to the mastermind."
+msgstr "...ta mới nhận ra sự yếu mềm trong tâm hồn mình, sai lầm vì đã đầu hàng kẻ chủ mưu."
+
+#. そして、なにより…
+msgctxt "0172 | SAKURA OOGAMI"
+msgid "And more than anything..."
+msgstr "Và hơn hết thảy..."
+
+#. 我を<CLT 3>親友<CLT>と言ってくれる人物を裏切れない…
+msgctxt "0173 | SAKURA OOGAMI"
+msgid ""
+"...I cannot betray those who would call me <CLT 3>their\n"
+"friend<CLT>."
+msgstr "...ta không thể phản bội những người đã gọi ta là <CLT 3>bạn thân<CLT> của họ."
+
+#. そう思うようになったのだ…
+msgctxt "0174 | SAKURA OOGAMI"
+msgid "That's how I came to feel."
+msgstr "Đó là cảm xúc mà ta đã chắt chiu..."
+
+#. それで…大神さんは…
+msgctxt "0175 | MAKOTO NAEGI"
+msgid "So that's why Sakura..."
+msgstr "Thế nên Sakura mới..."
+
+#. 我は決めたのだ…
+msgctxt "0176 | SAKURA OOGAMI"
+msgid "I've made a decision..."
+msgstr "Ta đã quyết định rồi..."
+
+#. もう退かぬ、もう媚びぬ、もう省みぬと…
+msgctxt "0177 | SAKURA OOGAMI"
+msgid ""
+"I will no longer retreat, no longer compromise, no\n"
+"longer regret..."
+msgstr ""
+"Ta sẽ không lùi bước, không thỏa hiệp, và không hối\n"
+"tiếc nữa..."
+
+#. …我は決心したのだ！
+msgctxt "0178 | SAKURA OOGAMI"
+msgid "I've made my decision!"
+msgstr "Ta đã hạ quyết tâm rồi!"
+
+#. お前と…戦うと…ッ！！
+msgctxt "0179 | SAKURA OOGAMI"
+msgid "I'm going...to resist you!"
+msgstr "Ta sẽ... chống lại ngươi!"
+
+#. …だけど、そのせいでボクに秘密をバラされ、
+#. みんなから嫌われる羽目になったんですね…
+msgctxt "0180 | MONOKUMA"
+msgid ""
+"Of course, because of that I decided to reveal her\n"
+"secret, which made everyone else hate her."
+msgstr "Đương nhiên, vì chuyện đó mà tôi quyết định vạch trần bí mật của cô ta, khiến cho tất cả mọi người đều căm ghét cô ta đấy..."
+
+#. みんなの為と思った決断のせいで、
+#. みんなから嫌われるなんて…
+msgctxt "0181 | MONOKUMA"
+msgid ""
+"Her decision to stay true to all of you led directly\n"
+"to all of you hating her for it..."
+msgstr "Quyết định sống thật với tất cả các người lại dẫn thẳng đến việc các người quay sang căm ghét cô ta vì điều đó..."
+
+#. 皮肉ですな！　皮と肉だけですよ！
+#. 骨なんてありゃしませんね！！
+msgctxt "0182 | MONOKUMA"
+msgid ""
+"Ironic, isn't it!? Or maybe oxymoronic? Or just\n"
+"moronic...?"
+msgstr "Thật là trớ trêu làm sao! Hay là oái oăm? Hay chỉ là ngớ ngẩn...?"
+
+#. だが、みなが我を恨むのも当然だ。
+#. すべては、我の弱さが招いた結果なのだからな…
+msgctxt "0183 | SAKURA OOGAMI"
+msgid ""
+"Of course, I understand if you all hate me. All of\n"
+"this is because of my own weakness..."
+msgstr "Dĩ nhiên, ta hiểu nếu tất cả các cậu có căm hận ta. Tất cả những chuyện này đều là do sự yếu kém của chính ta gây ra..."
+
+#. だから、自分に向けられる攻撃は、
+#. すべて甘んじて受け入れるつもりだった。
+msgctxt "0184 | SAKURA OOGAMI"
+msgid ""
+"I'm perfectly willing to accept whatever attack you\n"
+"may want to make on me."
+msgstr "Thế nên, ta hoàn toàn sẵn lòng đón nhận bất kỳ sự tấn công nào mà các cậu muốn giáng xuống người ta."
+
+#. それが、お主達を裏切った事への罪滅ぼし。
+#. そう思っていた…
+msgctxt "0185 | SAKURA OOGAMI"
+msgid ""
+"So this is my atonement for betraying you. That's what\n"
+"I had in mind..."
+msgstr "Thế nên đây chính là sự chuộc lỗi của ta vì đã phản bội các cậu. Ta đã nghĩ như vậy..."
+
+#. だが、甘かった。
+#. 我１人が泥を被って済む問題ではなかったのだ。
+msgctxt "0186 | SAKURA OOGAMI"
+msgid ""
+"But unfortunately, that's not enough. This won't end\n"
+"with just me accepting your hatred."
+msgstr "Nhưng ngây thơ thật đấy. Mọi chuyện sẽ không thể kết thúc chỉ bằng việc một mình ta gánh lấy sự căm ghét của các cậu."
+
+#. 事態は我の力だけでは収まらなくなっていた…
+#. そして、それこそが…
+msgctxt "0187 | SAKURA OOGAMI"
+msgid ""
+"My own situation has started having an effect on more\n"
+"people than just me..."
+msgstr "Tình hình đã vượt quá tầm kiểm soát của một mình ta... Và đó chính là..."
+
+#. 黒幕が我の裏切りを公表した、
+#. 本当の目的だったのだ。
+msgctxt "0188 | SAKURA OOGAMI"
+msgid ""
+"Which is exactly what the mastermind wanted when they\n"
+"revealed my betrayal."
+msgstr "Mục đích thực sự của kẻ chủ mưu khi phơi bày chuyện ta phản bội."
+
+#. 我の裏切りがもたらす…不協和音と疑心暗鬼…
+msgctxt "0189 | SAKURA OOGAMI"
+msgid "My betrayal brought suspicion, disharmony..."
+msgstr "Sự bất hòa và nỗi hoài nghi mà sự phản bội của ta mang lại..."
+
+#. それが、殺し合いに発展する事を、
+#. 黒幕は見越していたのだ。
+msgctxt "0190 | SAKURA OOGAMI"
+msgid ""
+"The mastermind knew that eventually it would escalate\n"
+"into someone murdering someone else."
+msgstr "Kẻ chủ mưu đã lường trước được rằng cuối cùng nó sẽ leo thang thành một vụ giết người."
+
+#. だが、それも、すべては我の責任…
+msgctxt "0191 | SAKURA OOGAMI"
+msgid "Of course, I'm still responsible for that, as well."
+msgstr "Dĩ nhiên, ta cũng phải chịu trách nhiệm cho chuyện đó."
+
+#. 我には、この事態を収拾させる義務がある。
+msgctxt "0192 | SAKURA OOGAMI"
+msgid ""
+"I have an obligation to get this situation under\n"
+"control."
+msgstr "Ta có nghĩa vụ phải giải quyết tình huống này."
+
+#. その義務を果たす為、
+#. 我は、黒幕から受けた命を果たす事にした。
+msgctxt "0193 | SAKURA OOGAMI"
+msgid ""
+"And to fulfill that obligation, I've decided to do as\n"
+"the mastermind has commanded."
+msgstr "Và để hoàn thành nghĩa vụ đó, ta đã quyết định thực hiện mệnh lệnh từ kẻ chủ mưu."
+
+#. <CLT 3>『殺人を犯せ』<CLT>という黒幕の命を…
+msgctxt "0194 | SAKURA OOGAMI"
+msgid "I will do as I was told, and <CLT 3>commit murder<CLT>."
+msgstr "Mệnh lệnh <CLT 3>\"Hãy phạm tội giết người\"<CLT> từ kẻ chủ mưu..."
+
+#. ただし、我が殺すのは…
+msgctxt "0195 | SAKURA OOGAMI"
+msgid "But I've decided... The one I'm going to kill is..."
+msgstr "Nhưng người mà ta sẽ giết chính là..."
+
+#. …<CLT 3>我自身<CLT>だ。
+msgctxt "0196 | SAKURA OOGAMI"
+msgid "...<CLT 3>myself<CLT>."
+msgstr "...<CLT 3>chính là ta<CLT>."
+
+#. 黒幕が誰かを殺せと言うなら、
+#. 我は、我自身を殺そう。
+msgctxt "0197 | SAKURA OOGAMI"
+msgid ""
+"If the mastermind demands that I kill someone, then\n"
+"that someone will be me."
+msgstr "Nếu kẻ chủ mưu đòi hỏi ta phải giết một ai đó, thì người đó sẽ là ta."
+
+#. それなら人質となった道場も救われ…
+#. 何より、お主達に殺し合いをさせずに済む。
+msgctxt "0198 | SAKURA OOGAMI"
+msgid ""
+"Then my dojo will be safe, and above all else, none of\n"
+"you will have to kill anyone."
+msgstr "Khi đó võ đường bị làm con tin sẽ được cứu... và trên hết, không ai trong các cậu phải ra tay sát hại ai cả."
+
+#. 我が死ねば、争いの火種も消える…
+msgctxt "0199 | SAKURA OOGAMI"
+msgid ""
+"When I die, the source of conflict among you all dies\n"
+"with me."
+msgstr "Khi ta chết, mầm mống xung đột giữa mọi người cũng sẽ tiêu tan theo ta..."
+
+#. その為に、我は命をかけよう…
+msgctxt "0200 | SAKURA OOGAMI"
+msgid "For that, I'm willing to give up my life."
+msgstr "Vì điều đó, ta sẵn sàng đánh đổi cả tính mạng..."
+
+#. お主達にはその価値がある。
+#. 我の命をかける意味がある。
+msgctxt "0201 | SAKURA OOGAMI"
+msgid ""
+"If it can save you, then sacrificing my own life could\n"
+"have no greater meaning."
+msgstr "Các cậu rất xứng đáng để ta làm vậy. Sự hy sinh mạng sống này của ta hoàn toàn có ý nghĩa."
+
+#. お主達がどう思おうと、
+#. 我の大事な仲間に他ならないのだからな…
+msgctxt "0202 | SAKURA OOGAMI"
+msgid ""
+"Whatever you think of me, please know that you are all\n"
+"my most treasured friends..."
+msgstr "Dù các cậu có nghĩ gì về ta đi nữa, xin hãy nhớ rằng các cậu mãi là những người bạn trân quý nhất của ta..."
+
+#. …我にとって初めてのな。
+msgctxt "0203 | SAKURA OOGAMI"
+msgid "I've never had people like you in my life..."
+msgstr "...Những người bạn đầu tiên trong đời ta."
+
+#. じゃあ…さくらちゃんは…
+msgctxt "0204 | AOI ASAHINA"
+msgid "Then...Sakura..."
+msgstr "Vậy thì... Sakura..."
+
+#. みんなに追い詰められて…
+#. みんなを恨んで死んでいったんじゃなくて…
+msgctxt "0205 | AOI ASAHINA"
+msgid "...didn't feel cornered. She didn't die hating us."
+msgstr "Cậu ấy không hề bị mọi người dồn ép... và không hề ra đi trong căm hận..."
+
+#. みんなが争うのを止める為に…？
+#. <CLT 3>みんなを守る為<CLT>に…？
+msgctxt "0206 | AOI ASAHINA"
+msgid ""
+"She wanted to...stop us from fighting? To <CLT 3>protect\n"
+"us<CLT>?"
+msgstr "Cậu ấy làm vậy để ngăn chúng ta tàn sát lẫn nhau ư...? Để <CLT 3>bảo vệ chúng ta<CLT> sao...?"
+
+#. 彼女が自らの命を絶ったのは、
+#. 彼女が弱かったからじゃなかった…
+msgctxt "0207 | KYOUKO KIRIGIRI"
+msgid "She didn't end her own life because she was weak."
+msgstr "Cô ấy tự kết liễu đời mình không phải vì cô ấy yếu đuối..."
+
+#. むしろ逆だったのよ…
+msgctxt "0208 | KYOUKO KIRIGIRI"
+msgid "Quite the opposite, in fact..."
+msgstr "Thậm chí sự thật còn ngược lại hoàn toàn..."
+
+#. 彼女は<CLT 3>強かった<CLT>…強過ぎたのよ……
+msgctxt "0209 | KYOUKO KIRIGIRI"
+msgid "She was <CLT 3>strong<CLT>. *Too* strong."
+msgstr "Cô ấy rất <CLT 3>mạnh mẽ<CLT>... Quá mức mạnh mẽ..."
+
+#. そのせいで、自らの命を絶つ事になってしまった…
+msgctxt "0210 | KYOUKO KIRIGIRI"
+msgid "That's why she killed herself."
+msgstr "Đó là lý do khiến cô ấy phải tự chọn cái chết cho mình..."
+
+#. 彼女は私達を守る為に、自らの死を選んだ…
+msgctxt "0211 | KYOUKO KIRIGIRI"
+msgid ""
+"She chose death for herself in order to protect the\n"
+"rest of us."
+msgstr "Cô ấy đã chọn cái chết để bảo vệ tất cả chúng ta..."
+
+#. そこまでの自己犠牲は…
+#. 普通の人間ではなし得ない…
+msgctxt "0212 | KYOUKO KIRIGIRI"
+msgid ""
+"To sacrifice so much... No normal person could do\n"
+"that."
+msgstr "Sự hy sinh lớn lao đến nhường ấy... Không một người bình thường nào có thể làm được."
+
+#. でも…彼女の強さが、
+#. それを可能にしてしまったのよ…
+msgctxt "0213 | KYOUKO KIRIGIRI"
+msgid ""
+"It was only her limitless strength that made it\n"
+"possible."
+msgstr "Nhưng chính sức mạnh vô hạn của cô ấy đã biến điều đó thành hiện thực..."
+
+#. ………………
+msgctxt "0214 | AOI ASAHINA"
+msgid "..."
+msgstr "..."
+
+#. 朝日奈よ、最後に謝らせてくれ。
+msgctxt "0215 | SAKURA OOGAMI"
+msgid "Finally...Hina, I want to apologize to you especially."
+msgstr "Hina, cuối cùng thì ta muốn gửi lời xin lỗi đến cậu."
+
+#. お主に何も打ち明けなかったのは、
+#. 打ち明ければ、間違いなく我を止めるからだ。
+msgctxt "0216 | SAKURA OOGAMI"
+msgid ""
+"The reason I didn't tell you any of this is because I\n"
+"knew you would try to stop me."
+msgstr "Lý do ta không nói với cậu bất cứ điều gì là vì ta biết cậu chắc chắn sẽ ngăn cản ta."
+
+#. 本当にすまない…
+#. だが、悲しまないでくれ…
+msgctxt "0217 | SAKURA OOGAMI"
+msgid "I'm really, truly sorry. But please don't be sad."
+msgstr "Thực sự xin lỗi cậu. Nhưng xin đừng buồn."
+
+#. 黒幕の企みを阻止出来るのなら…
+#. お主達の殺し合いを、止める事が出来るのなら…
+msgctxt "0218 | SAKURA OOGAMI"
+msgid ""
+"If I can thwart the mastermind's plans, if I can keep\n"
+"you from killing each other..."
+msgstr "Nếu ta có thể phá hỏng kế hoạch của kẻ chủ mưu, nếu ta có thể ngăn các cậu không giết lẫn nhau..."
+
+#. 我は本望なのだ。
+msgctxt "0219 | SAKURA OOGAMI"
+msgid "...that's enough for me."
+msgstr "...thì ta không còn hối tiếc điều gì nữa."
+
+#. これが、我の選んだ道。
+#. 我のけじめの取り方なのだ。
+msgctxt "0220 | SAKURA OOGAMI"
+msgid ""
+"This is the path that I have chosen. This is the only\n"
+"way I have left to distinguish myself."
+msgstr "Đây là con đường mà ta đã chọn. Đây là cách duy nhất để ta chuộc lại lỗi lầm."
+
+#. この遺書があれば、
+#. 我の学級裁判もすぐに終わるはずだ。
+msgctxt "0221 | SAKURA OOGAMI"
+msgid ""
+"And you can use this note to bring the class trial to\n"
+"a quick end."
+msgstr "Với bức di thư này, lớp xét xử của chúng ta chắc chắn sẽ sớm kết thúc."
+
+#. 朝日奈よ、嫌な役回りを頼んですまぬが、
+#. 後の事は任せたぞ。
+msgctxt "0222 | SAKURA OOGAMI"
+msgid ""
+"I'm so sorry to ask you to do something so unpleasant,\n"
+"but I have to leave the rest to you."
+msgstr "Hina, xin lỗi vì đã phải nhờ cậu gánh vác vai trò khó nhằn này, nhưng mọi chuyện sau đó đành nhờ cậu vậy."
+
+#. …これから、十神と腐川と葉隠に会ってくる。
+msgctxt "0223 | SAKURA OOGAMI"
+msgid "Please talk to Byakuya, Toko, and Hiro on my behalf."
+msgstr "...Bây giờ ta sẽ đi gặp Byakuya, Toko và Hiro."
+
+#. 死ぬつもりだとは伏せておくが、
+#. 我の想いだけは伝えておきたいと思っている。
+msgctxt "0224 | SAKURA OOGAMI"
+msgid ""
+"I can't tell anyone about my plan while I'm alive, but\n"
+"I wanted you to understand why I'm doing this."
+msgstr "Ta sẽ giấu chuyện mình sắp chết, nhưng ta muốn truyền tải những tâm tư của mình đến họ."
+
+#. 後は、言葉ではなく行動で示すのみ。
+#. そうすれば、あいつらも気付いてくれるはずだ…
+msgctxt "0225 | SAKURA OOGAMI"
+msgid ""
+"In the end, though, I hope to show myself through\n"
+"actions and not words. Hopefully then they'll see..."
+msgstr "Từ giờ trở đi, ta sẽ bày tỏ qua hành động thay vì lời nói. Mong rằng khi đó bọn họ sẽ thấu hiểu..."
+
+#. 我らは憎しみ合う敵同士などではなく、
+#. <CLT 3>協力すべき仲間同士<CLT>なのだという事をな…
+msgctxt "0226 | SAKURA OOGAMI"
+msgid ""
+"I never saw you as my enemy. You were only ever my\n"
+"friend, who I wanted to help as much as possible..."
+msgstr "Ta chưa từng xem các cậu là kẻ thù. Các cậu mãi là những người bạn, và ta chỉ muốn giúp đỡ mọi người nhiều nhất có thể..."
+
+#. 朝日奈よ、お主は何としてでも生き延びてくれ。
+#. 仲間と共に生き延びるんだ。
+msgctxt "0227 | SAKURA OOGAMI"
+msgid ""
+"Hina...whatever it takes, survive. Survive along with\n"
+"everyone else."
+msgstr "Hina... dù thế nào đi nữa, cậu hãy sống sót nhé. Hãy sống sót cùng với mọi người."
+
+#. 必ず…生き延びるんだ………
+msgctxt "0228 | SAKURA OOGAMI"
+msgid "No matter what...just survive."
+msgstr "Bằng bất cứ giá nào... hãy sống sót..."
+
+#. そ、そんな…そんなのって…！
+msgctxt "0229 | AOI ASAHINA"
+msgid "Th-This is...!"
+msgstr "Th-Thế này là...!"
+
+#. 私…さくらちゃんの気持ちを…
+#. 全然わかってあげられてなかった……
+msgctxt "0230 | AOI ASAHINA"
+msgid "I...I didn't understand how she felt... Not at all..."
+msgstr "Tớ... tớ đã chẳng thể hiểu được cảm xúc của cậu ấy... Chút nào luôn..."
+
+#. し、親友だと…思ってたのに…！
+msgctxt "0231 | AOI ASAHINA"
+msgid "I thought we were close, and still...!"
+msgstr "Th-Tớ cứ nghĩ chúng ta là bạn thân, vậy mà...!"
+
+#. …ホント、余計なおせっかいでしたね！
+msgctxt "0232 | MONOKUMA"
+msgid ""
+"But in the end, all her meddling was like, totally\n"
+"pointless!"
+msgstr "Nhưng rốt cuộc, mọi sự xía vào của cô ta đều hoàn toàn... vô nghĩa!"
+
+#. 大神さんは殺し合いを止める為に死んだのに、
+#. 結局は、オマエのせいで殺し合いみたくなっちゃった！
+msgctxt "0233 | MONOKUMA"
+msgid ""
+"She died so you guys wouldn't try to kill each other,\n"
+"but you almost ended up doing it anyway!"
+msgstr "Cô ta đã chết để lũ các người không phải tàn sát lẫn nhau, nhưng cuối cùng các người suýt nữa vẫn làm điều đó đấy thôi!"
+
+#. お陰で、大神さんは無駄死にっすよ！
+msgctxt "0234 | MONOKUMA"
+msgid "Thanks to you, her death had no purpose at all!"
+msgstr "Nhờ ơn cô ta mà cái chết của Sakura trở nên vô ích mất tiêu rồi!"
+
+#. しかも、そんな余計なおせっかいのせいで、
+#. みんなの命まで危険にさらしてさぁ…
+msgctxt "0235 | MONOKUMA"
+msgid ""
+"In fact, it was BECAUSE of her stupid meddling that\n"
+"the rest of you nearly bit the big one!"
+msgstr "Hơn thế nữa, chính VÌ cái sự xía vào ngu ngốc đó mà tính mạng của mấy người mới suýt gặp nguy hiểm đấy chứ..."
+
+#. はい責められるー！　みんなに責められるー！
+#. 当たり前だよね！　それだけの事をしたんだもんね！
+msgctxt "0236 | MONOKUMA"
+msgid ""
+"She deserves all the blame! Everyone blame her! Go\n"
+"ahead, she deserves it!"
+msgstr "Đáng bị trách móc lắm chứ! Mọi người mau trách mốc cô ta đi! Cứ tự nhiên đi, cô ta hoàn toàn xứng đáng bị vậy mà!"
+
+#. うぷぷ…次の犠牲者も決まったね…
+msgctxt "0237 | MONOKUMA"
+msgid "Puhuhu... Now then, the next victim has been decided!"
+msgstr "U pư pư... Thế là nạn nhân tiếp theo đã được định đoạt rồi nhé..."
+
+#. 何言ってんだよ…
+#. 誰も…責めやしない……
+msgctxt "0238 | MAKOTO NAEGI"
+msgid ""
+"What do you mean, next victim!? Nobody here blames\n"
+"anyone...!"
+msgstr "Ý cậu là sao hả, nạn nhân tiếp theo cái gì chứ!? Chẳng có ai ở đây trách móc ai hết...!"
+
+#. おろ…？
+msgctxt "0239 | MONOKUMA"
+msgid "Hrmm?"
+msgstr "H̉m?"
+
+#. そもそも…お前が偽物の遺書なんかで、
+#. 朝日奈さんを騙したのが悪いんだ…
+msgctxt "0240 | MAKOTO NAEGI"
+msgid ""
+"First of all, you're in the wrong for tricking Hina\n"
+"with that fake suicide note!"
+msgstr "Trước hết, việc cậu dùng bức di thư giả đó để lừa gạt Hina mới là kẻ sai trái..."
+
+#. それに…
+msgctxt "0241 | MAKOTO NAEGI"
+msgid "And plus..."
+msgstr ""
+"<CLT 4>Và thêm nữa...\n"
+"<CLT>"
+
+#. 大神さんは無駄死になんかじゃないッ！！
+msgctxt "0242 | MAKOTO NAEGI"
+msgid "Sakura's death wasn't a waste!"
+msgstr "Cái chết của Sakura không hề vô nghĩa chút nào hết!!"
+
+#. おろろろ…？
+msgctxt "0243 | MONOKUMA"
+msgid "Hurrrmmm?"
+msgstr "Hừm hừm...?"
+
+#. だって、大神さんは
+#. ボク達に思い出させてくれた…
+msgctxt "0244 | MAKOTO NAEGI"
+msgid "Because she made us remember..."
+msgstr "Bởi vì cậu ấy đã giúp chúng ta nhớ ra rằng..."
+
+#. ボクらは憎しみ合う敵同士なんかじゃなくて…
+msgctxt "0245 | MAKOTO NAEGI"
+msgid "We're not enemies that hate each other."
+msgstr "Chúng ta không phải là những kẻ thù căm ghét lẫn nhau."
+
+#. <CLT 3>協力すべき仲間同士<CLT>なんだって事を…
+msgctxt "0246 | MAKOTO NAEGI"
+msgid "We're friends, who <CLT 3>need to work together<CLT>!"
+msgstr "Mà chúng ta là những người bạn, những kẻ <CLT 3>cần phải sát cánh bên nhau<CLT>!"
+
+#. あぁ…そーだべ…
+msgctxt "0247 | YASUHIRO HAGAKURE"
+msgid "Damn straight."
+msgstr "Chuẩn không cần chỉnh."
+
+#. 俺らが、オーガに間違った憎しみを向けたせいで、
+#. こんな事になっちまったんだし…
+msgctxt "0248 | YASUHIRO HAGAKURE"
+msgid "This is all because of our misplaced hatred."
+msgstr "Tất cả chuyện này xảy ra đều là do chúng ta đặt để sự căm thù sai chỗ..."
+
+#. 責めらんねーべ！
+#. 誰も…朝日奈っちを責めらんねーべ！
+msgctxt "0249 | YASUHIRO HAGAKURE"
+msgid ""
+"I don't blame her! I CAN'T blame her! And nobody can\n"
+"blame Hina, either!"
+msgstr "Tớ không trách cậu ấy! Tớ KHÔNG THỂ trách cậu ấy được! Và cũng chẳng ai có quyền trách Hina cả!"
+
+#. ぶふぉう！？
+msgctxt "0250 | MONOKUMA"
+msgid "Buhwah!?"
+msgstr "Búp hoa!?"
+
+#. 最初から内通者なんて関係なかったんだ…
+#. だって、ボクらが戦うべきなのは…
+msgctxt "0251 | MAKOTO NAEGI"
+msgid ""
+"Whether or not there was a spy never really mattered.\n"
+"Because the one we need to destroy..."
+msgstr "Việc có hay không có kẻ nội ứng thực ra chẳng mấy quan trọng. Bởi vì kẻ mà chúng ta cần phải tiêu diệt..."
+
+#. お前だけなんだッ！！
+msgctxt "0252 | MAKOTO NAEGI"
+msgid "...is you! Nobody else!"
+msgstr "...chính là cậu! Không phải ai khác ngoài cậu hết!"
+
+#. な、何さ、なんなのさ！　この流れ！！
+msgctxt "0253 | MONOKUMA"
+msgid "What the heck!? That's not how this is supposed to go!"
+msgstr "Cái gì chứ!? Kịch bản không phải diễn biến theo hướng này cơ mà!"
+
+#. …そうじゃないでしょ？
+#. このコロシアイ学園生活はオマエラ同士の競争だよ？
+msgctxt "0254 | MONOKUMA"
+msgid ""
+"But anyway, are you sure about that? This killing game\n"
+"is a competition between all of *you*, remember?"
+msgstr "...Mà khoan đã, các người chắc chứ? Trò chơi sinh tử giết chóc này vốn là một cuộc cạnh tranh giữa tất cả các người với nhau mà, nhớ không?"
+
+#. 敵は、オマエラ同士なんだって！！
+msgctxt "0255 | MONOKUMA"
+msgid "Your enemy...is each other."
+msgstr "Kẻ thù của các người... chính là lẫn nhau đấy."
+
+#. 確かに…モノクマの言う通りだ…
+msgctxt "0256 | BYAKUYA TOGAMI"
+msgid "He's absolutely right about that."
+msgstr "Cậu ta nói hoàn toàn chính xác."
+
+#. お、十神クン！　わかってくれる！？
+msgctxt "0257 | MONOKUMA"
+msgid "Ahh, lovely Byakuya! You understand, don't you!?"
+msgstr "Ố chà, Byakuya đáng yêu! Cậu hiểu mà, phải không!?"
+
+#. このゲームは俺達同士の蹴落とし合い…
+#. 勝者だけが生き残れる、命がけの蹴落とし合い…
+msgctxt "0258 | BYAKUYA TOGAMI"
+msgid ""
+"This is a life-or-death elimination match. The only\n"
+"way to survive...is to win."
+msgstr "Đây là một trận chiến loại trực tiếp một mất một còn. Cách duy nhất để sống sót... là phải giành chiến thắng."
+
+#. 確かに…その通りだ…
+msgctxt "0259 | BYAKUYA TOGAMI"
+msgid ""
+"There can be no doubt that those are the rules of the\n"
+"game."
+msgstr "Chắc chắn đó là những quy tắc của trò chơi này rồi."
+
+#. だからこそ…
+#. 俺は<CLT 3>このゲームから降りる<CLT>事にするぞ。
+msgctxt "0260 | BYAKUYA TOGAMI"
+msgid "Which is why...I am <CLT 3>bowing out<CLT> of the game."
+msgstr "Chính vì thế... tôi quyết định <CLT 3>rút lui khỏi trò chơi này<CLT>."
+
+#. あれれ…？
+msgctxt "0261 | MONOKUMA"
+msgid "Huh...?"
+msgstr "Hả...?"
+
+#. 朝日奈と大神は、自分の命を犠牲に、
+#. このゲーム自体を否定しようとした…
+msgctxt "0262 | BYAKUYA TOGAMI"
+msgid ""
+"Sakura and Hina were both willing to sacrifice their\n"
+"own lives to deny the reality of the game."
+msgstr "Cả Sakura và Hina đều sẵn sàng hy sinh mạng sống của chính mình để chối bỏ bản chất của trò chơi này..."
+
+#. そんな行動のせいで、誰もがすっかり、
+#. このゲームへの恐怖心を捨ててしまったようだ…
+msgctxt "0263 | BYAKUYA TOGAMI"
+msgid ""
+"Thanks to them, it would appear the others have cast\n"
+"aside their fear for this game."
+msgstr "Nhờ hành động của họ mà có vẻ như những người khác đã vứt bỏ hoàn toàn sự sợ hãi đối với trò chơi này rồi..."
+
+#. 緊張感のなくなったゲームに、
+#. 参加する意味はない。
+msgctxt "0264 | BYAKUYA TOGAMI"
+msgid ""
+"There's no point in participating in a game which has\n"
+"lost that sense of excitement."
+msgstr "Sẽ chẳng còn ý nghĩa gì khi tiếp tục tham gia một trò chơi đã đánh mất đi cảm giác kích thích đó nữa."
+
+#. だから…俺はゲームから降りる事にする…
+msgctxt "0265 | BYAKUYA TOGAMI"
+msgid "Which is why I will no longer be participating in it."
+msgstr "Đó là lý do tại sao tôi sẽ không tham gia vào nó nữa."
+
+#. な、なんだよ、それ！？
+msgctxt "0266 | MONOKUMA"
+msgid "Wh-What's going on here!?"
+msgstr "C-Cái quái gì đang xảy ra thế này!?"
+
+#. …となれば、残された俺の楽しみは１つだけだ。
+msgctxt "0267 | BYAKUYA TOGAMI"
+msgid "Now I have only one thing to look forward to."
+msgstr "Nếu vậy thì, niềm vui duy nhất còn lại của tôi chỉ có một mà thôi."
+
+#. この俺を操った気になっている黒幕に、
+#. キツイお仕置きを食らわしてやる事だけだ！
+msgctxt "0268 | BYAKUYA TOGAMI"
+msgid ""
+"And that is to heap the harshest possible punishment\n"
+"onto the one who thinks they can control me!"
+msgstr "Đó là giáng những hình phạt khắc nghiệt nhất có thể lên kẻ dám tưởng rằng chúng có thể điều khiển ta!"
+
+#. と、十神クン…！
+#. もしかして…！
+msgctxt "0269 | MAKOTO NAEGI"
+msgid "B-Byakuya! Does this mean...?"
+msgstr "B-Byakuya! Chẳng lẽ ý cậu là...?"
+
+#. …勘違いするなよ。
+msgctxt "0270 | BYAKUYA TOGAMI"
+msgid "Don't misunderstand."
+msgstr "...Đừng có hiểu lầm."
+
+#. 俺は、甘っちょろいセンチメンタリズムに
+#. 動かされた訳ではないからな…
+msgctxt "0271 | BYAKUYA TOGAMI"
+msgid ""
+"I haven't been moved by some thoughtless\n"
+"sentimentalism, if that's what you're thinking."
+msgstr "Tôi không hề bị lay chuyển bởi thứ chủ nghĩa tình cảm ủy mị nào đâu, nếu như đó là những gì anh đang nghĩ..."
+
+#. アタシも白夜様に付いてくわ！
+#. 黒幕が萌える男子って可能性もあるしね！
+msgctxt "0272 | TOUKO FUKAWA"
+msgid ""
+"Wherever Master goes, I go! And if the mastermind\n"
+"turns out to be a guy, maybe I can catch on fire!"
+msgstr "Đại nhân đi đâu, tôi theo đó! Hơn nữa, nhỡ đâu kẻ chủ mưu lại là một nam nhi bốc lửa thì sao!"
+
+#. み、みんな…ッ！！
+msgctxt "0273 | MAKOTO NAEGI"
+msgid "E-Everyone...!"
+msgstr "M-Mọi người...!"
+
+#. どうかしら…？
+#. これでも大神さんの死は無駄だったって言える？
+msgctxt "0274 | KYOUKO KIRIGIRI"
+msgid ""
+"Well? Now can you say that Sakura's death\n"
+"had no meaning?"
+msgstr "Thế nào? Giờ thì các cậu còn dám nói cái chết của Sakura là vô nghĩa nữa không?"
+
+#. フン…つまんないの…
+msgctxt "0275 | MONOKUMA"
+msgid "Hmph. How boring."
+msgstr "Hừ. Chán ngắt."
+
+#. だけど…いいもんねーだ…
+msgctxt "0276 | MONOKUMA"
+msgid "But nothing good can come of this."
+msgstr "Nhưng mà... kệ chứ lị..."
+
+#. ボクには、まだ例のお楽しみタイムがあるしさッ！
+msgctxt "0277 | MONOKUMA"
+msgid "I'm still gonna be the one having the fun time!"
+msgstr "Tôi vẫn còn màn thời gian giải trí tuyệt vời của mình mà!"
+
+#. お、お楽しみタイム…？
+msgctxt "0278 | YASUHIRO HAGAKURE"
+msgid "The fun...time?"
+msgstr "Th-Thời gian... giải trí ư?"
+
+#. じゃあ、ヘッポコ内通者の事なんか忘れて、
+#. いつも通り始めますかね！
+msgctxt "0279 | MONOKUMA"
+msgid ""
+"Anyway, let's forget about that good-for-nothing\n"
+"backstabber and get back on track!"
+msgstr "Thôi nào, hãy quên kẻ phản bội vô tích sự đó đi và quay trở lại quỹ đạo chính nào!"
+
+#. お待ちかねの、<CLT 3>おしおきタイム<CLT>をさッ！
+msgctxt "0280 | MONOKUMA"
+msgid ""
+"It's the moment you've all been waiting for!\n"
+"<CLT 3>Punishment time<CLT>!"
+msgstr "Chính là khoảnh khắc mà tất cả các người đang mong chờ đây! <CLT 3>Thời khắc hành quyết<CLT>!"
+
+#. でも、犯人だったオーガちんは死んでますけど？
+msgctxt "0281 | TOUKO FUKAWA"
+msgid ""
+"Wait, but...Sakura was technically the killer, right?\n"
+"And she's dead!"
+msgstr "Khoan đã, nhưng... Sakura mới chính là hung thủ đúng không? Và cậu ấy đã chết rồi cơ mà!"
+
+#. ま、まさか…ッ！
+msgctxt "0282 | MAKOTO NAEGI"
+msgid "Y-You're not gonna...!"
+msgstr "K-Không lẽ nào...!"
+
+#. わ、私…？
+msgctxt "0283 | AOI ASAHINA"
+msgid "I-Is it me...?"
+msgstr "L-Là tớ sao...?"
+
+#. いやいや、クロが死んじゃったからって、
+#. 代わりの生徒をおしおきしたりしないよ！
+msgctxt "0284 | MONOKUMA"
+msgid ""
+"Oh heavens, no! Just cuz the blackened is dead doesn't\n"
+"mean I can just sub in whatever ol' student I want!"
+msgstr "Trời ạ, không đời nào! Chỉ vì kẻ làm màu đã chết không có nghĩa là tôi có thể tùy ý chọn một học sinh khác để thế chỗ hành quyết đâu nhé!"
+
+#. ボクって、クマ１倍ルールにはうるさいからね！
+msgctxt "0285 | MONOKUMA"
+msgid ""
+"Didn't I tell you!? I'm very particular about the\n"
+"\"Bear-Times-One\" rule!"
+msgstr "Tôi đã nói rồi cơ mà! Tôi cực kỳ nghiêm túc với quy tắc \"Mỗi Gấu Một Mạng\" đấy!"
+
+#. …だけどさ、使わないのはもったいないじゃん？
+#. せっかく、スペシャルなおしおきを用意したのにさ。
+msgctxt "0286 | MONOKUMA"
+msgid ""
+"But I spent so much time preparing my special\n"
+"punishment, it'd be a shame to let it go to waste!"
+msgstr "...Nhưng mà, bỏ không dùng thì phí lắm đúng không? Tôi đã cất công chuẩn bị hình phạt đặc biệt cơ mà."
+
+#. そこで、<CLT 3>スペシャルゲスト<CLT>を用意しました～！
+msgctxt "0287 | MONOKUMA"
+msgid ""
+"So, for my special punishment...I've prepared a\n"
+"<CLT 3>special guest<CLT>!"
+msgstr "Thế nên, tôi đã chuẩn bị sẵn một <CLT 3>khách mời đặc biệt<CLT> rồi đây~!"
+
+#. スペシャルゲスト…？
+msgctxt "0288 | MAKOTO NAEGI"
+msgid "A special guest...?"
+msgstr "Khách mời đặc biệt...?"
+
+#. では張り切っていきましょう！　おしおきターイム！
+msgctxt "0289 | MONOKUMA"
+msgid ""
+"Let's give it everything we've got! It's...PUNISHMENT\n"
+"TIIIME!"
+msgstr ""
+"Mọi người cùng cố gắng hết mình nào! Đã đến... \n"
+"GIỜ HÀNH QUYYYẾT!"

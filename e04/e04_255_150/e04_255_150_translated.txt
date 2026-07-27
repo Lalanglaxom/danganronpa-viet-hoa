@@ -1,0 +1,53 @@
+--- Gemini Translation Raw Output for e04_255_150.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. …おっと、寝てた寝てた！
+#. オマエラの捜査が退屈過ぎて、寝ちゃってたよ！！
+msgctxt "0003 | MONOKUMA"
+msgid ""
+"...Oops! Ya caught me sleeping. Your investigation was\n"
+"just so boring, I couldn't stay awake!"
+msgstr ""
+
+#. やっちゃうよ？　いいすか？
+#. やっちゃってもいいすか？
+msgctxt "0004 | MONOKUMA"
+msgid "Should I do it? Is it okay? Can I? Can I can I can I?"
+msgstr ""
+
+#. じゃあ、⟦CLT 3⟧学級裁判⟦CLT⟧を始めまーす！！
+#. オマエラはいつもの場所に至急集合してくださーい！
+msgctxt "0005 | MONOKUMA"
+msgid ""
+"Okay, then let's begin the ⟦CLT 3⟧class trial⟦CLT⟧! You know\n"
+"where to meet, right?"
+msgstr ""
+
+#. 学校エリア１階にある
+#. ⟦CLT 3⟧赤い扉⟦CLT⟧にお入りください。
+msgctxt "0006 | MONOKUMA"
+msgid ""
+"Please go through the ⟦CLT 3⟧red door⟦CLT⟧ on the first floor of\n"
+"the school!"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0003 | MONOKUMA"
+msgid "...Oops! Ya caught me sleeping. Your investigation was\njust so boring, I couldn't stay awake!"
+msgstr "U pư pư...! Ơ kìa! Lại bắt gặp ta đang ngủ à. Cuộc điều tra của tụi bây chán ngắt đến mức ta không tài nào thức nổi luôn đấy chứ!"
+
+msgctxt "0004 | MONOKUMA"
+msgid "Should I do it? Is it okay? Can I? Can I can I can I?"
+msgstr "Ta làm luôn nhé? Có được không thế? Làm luôn được chứ? Làm được không được không được không?"
+
+msgctxt "0005 | MONOKUMA"
+msgid "Okay, then let's begin the ⟦CLT 3⟧class trial⟦CLT⟧! You know\nwhere to meet, right?"
+msgstr "Vậy thì, chúng ta bắt đầu ⟦CLT 3⟧Lớp Xét Xử⟦CLT⟧ thôi nào! Tụi mày biết phải tập trung ở đâu rồi chứ?"
+
+msgctxt "0006 | MONOKUMA"
+msgid "Please go through the ⟦CLT 3⟧red door⟦CLT⟧ on the first floor of\nthe school!"
+msgstr "Hãy đi qua ⟦CLT 3⟧cánh cửa đỏ⟦CLT⟧ ở tầng một của khu vực trường học nhé!"
+

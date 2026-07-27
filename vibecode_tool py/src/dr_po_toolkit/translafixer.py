@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Callable, Iterable
 
 from .discovery import iter_po_files
+from .models import POFile
 from .po_io import load_po, save_po
 
 
@@ -226,6 +227,39 @@ class TranslationSuggestionIndex:
             self.by_token[token].append(idx)
         if candidate.key:
             self.by_first_char[candidate.key[:1].casefold()].append(idx)
+
+    def add_po_file(self, po_file: POFile, path: str | Path | None = None) -> int:
+        """Add translated entries from an already loaded PO file.
+
+        The GUI uses this to layer the current in-memory PO over the disk-backed
+        suggestion index, so unsaved edits and freshly saved translations can be
+        suggested immediately without reparsing the whole Working-folder set.
+        Returns the number of new candidates added after de-duplication.
+        """
+
+        source_path = Path(path) if path is not None else (po_file.path or Path("<current-po>"))
+        before = len(self.candidates)
+        for row, entry in enumerate(po_file.entries):
+            source = _norm(entry.msgid)
+            translation = _norm(entry.msgstr)
+            if not source.strip() or not translation.strip():
+                continue
+            key = suggestion_match_key(source)
+            if not key:
+                continue
+            self.add(
+                _SuggestionCandidate(
+                    key=key,
+                    source=entry.msgid,
+                    translation=entry.msgstr,
+                    speaker=entry.speaker,
+                    file=source_path,
+                    row=row,
+                    uid=entry.uid,
+                    token_count=len(_suggestion_tokens(key)),
+                )
+            )
+        return len(self.candidates) - before
 
     @classmethod
     def from_translafixer_sources(

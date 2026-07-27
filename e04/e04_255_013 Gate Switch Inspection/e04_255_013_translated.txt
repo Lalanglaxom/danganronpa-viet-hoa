@@ -1,0 +1,29 @@
+--- Gemini Translation Raw Output for e04_255_013.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧鉄格子の開閉スイッチだ…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's the switch to open and close the gate.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクは鍵を持ってないから、開けられない…
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I don't have the key, so I can't do anything with it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Đây là công tắc để đóng mở cổng.\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Tớ không có chìa khóa, nên chẳng làm gì được với nó cả...\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Gate Switch Inspection
+

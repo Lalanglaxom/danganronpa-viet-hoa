@@ -1,0 +1,53 @@
+--- Gemini Translation Raw Output for e04_106_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. な、なんだべ…？
+#. 俺が何かおかしな事言ったか？
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgid "Wh-What's wrong? Did I say something weird...?"
+msgstr ""
+
+#. ⟦CLT 4⟧いや、おかしい…
+#. 今の葉隠クンの言葉には明らかな矛盾がある。
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧No, there's definitely something wrong with what Hiro\n"
+"said just now.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧葉隠クンは死体発見時に、
+#. ダイイングメッセージを見たって言ってるけど…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧He said he saw the dying message when he first found\n"
+"the body...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧その時、あの雑誌があったはずの場所って…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But at that time, where was the magazine...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | YASUHIRO HAGAKURE"
+msgstr "C-Cái gì thế hả...? Tao vừa nói cái gì kỳ cục lắm à...?"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Không, có gì đó rất bất ổn trong những gì Hiro vừa nói lúc nãy.\n⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Cậu ta bảo rằng đã nhìn thấy tin nhắn trước lúc lâm chung vào lúc phát hiện ra cái xác...\n⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr "⟦CLT 4⟧Nhưng vào thời điểm đó, cuốn tạp chí vốn dĩ phải nằm ở đâu chứ...?\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Hagakure Statement Flaw
+

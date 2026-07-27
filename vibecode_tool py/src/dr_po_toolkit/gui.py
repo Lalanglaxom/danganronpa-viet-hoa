@@ -32,6 +32,7 @@ from PyQt6.QtWidgets import (
     QHeaderView,
     QInputDialog,
     QLabel,
+    QKeySequenceEdit,
     QLineEdit,
     QListWidget,
     QListWidgetItem,
@@ -94,11 +95,23 @@ from .po_io import load_po, save_po
 from .rules import apply_rules_to_entry, apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_files
 from .shortcuts import (
-    FILE_NEXT_SHORTCUT,
-    FILE_PREVIOUS_SHORTCUT,
+    CUSTOM_SHORTCUT_ACTIONS,
+    CUSTOM_SHORTCUT_LABELS,
+    FILE_NEXT_ACTION,
+    FILE_PREVIOUS_ACTION,
+    FILE_SHORTCUT_ACTIONS,
     GEMINI_TRANSLATE_SHORTCUT,
+    MAX_CUSTOM_SHORTCUT_CHORDS,
     PRESET_REPLACE_SHORTCUT,
+    RESERVED_SHORTCUTS,
     SUGGESTION_REFRESH_SHORTCUT,
+    WRAP_ENTIRE_FILE_ACTION,
+    WRAP_PRESET_ACTIONS,
+    WRAP_SHORTCUT_ACTIONS,
+    default_file_shortcuts,
+    default_wrap_shortcuts,
+    normalize_custom_shortcuts,
+    shortcut_sequences_conflict,
 )
 from .translator import GeminiApiClient, SYSTEM_INSTRUCTIONS, translate_entries_with_client, translate_file_with_client
 from .translafixer import (
@@ -442,98 +455,122 @@ def _shortcut_focus_is_inside(root: QWidget) -> bool:
 
 
 class PersistentWrapShortcutFilter(QObject):
-    """Repeat presets after Ctrl+Space until the user releases Ctrl."""
+    """Apply editable wrap and file shortcuts, including three-chord sequences.
+
+    Direct one-chord assignments stay repeatable while a modifier remains held.
+    Longer assignments may contain up to three comma-separated key chords.
+    """
+
+    _SEQUENCE_TIMEOUT_SECONDS = 1.5
+    _MODIFIER_KEYS = {
+        Qt.Key.Key_Shift.value,
+        Qt.Key.Key_Control.value,
+        Qt.Key.Key_Alt.value,
+        Qt.Key.Key_Meta.value,
+    }
 
     def __init__(
         self,
         root: QWidget,
         preset_callbacks: dict[int, Callable[[], None]],
         wrap_entire_file: Callable[[], None],
+        shortcut_sequences: Callable[[], dict[str, str]],
+        previous_file: Callable[[], None] | None = None,
+        next_file: Callable[[], None] | None = None,
     ) -> None:
         super().__init__(root)
         self._root = root
-        self._preset_callbacks = dict(preset_callbacks)
-        self._wrap_entire_file = wrap_entire_file
-        self._armed = False
+        self._callbacks: dict[str, Callable[[], None]] = {
+            WRAP_PRESET_ACTIONS[number - 1]: callback
+            for number, callback in preset_callbacks.items()
+            if 1 <= number <= len(WRAP_PRESET_ACTIONS)
+        }
+        self._callbacks[WRAP_ENTIRE_FILE_ACTION] = wrap_entire_file
+        if previous_file is not None:
+            self._callbacks[FILE_PREVIOUS_ACTION] = previous_file
+        if next_file is not None:
+            self._callbacks[FILE_NEXT_ACTION] = next_file
+        self._shortcut_sequences = shortcut_sequences
+        self._pending: tuple[object, ...] = ()
+        self._pending_at = 0.0
         app = QApplication.instance()
         if app is not None:
             app.installEventFilter(self)
 
-    @property
-    def armed(self) -> bool:
-        return self._armed
+    @staticmethod
+    def _parts(sequence_text: str) -> tuple[object, ...]:
+        if not sequence_text:
+            return ()
+        sequence = QKeySequence(sequence_text)
+        return tuple(sequence[index] for index in range(min(sequence.count(), MAX_CUSTOM_SHORTCUT_CHORDS)))
+
+    @staticmethod
+    def _starts_with(sequence: tuple[object, ...], prefix: tuple[object, ...]) -> bool:
+        return len(prefix) <= len(sequence) and sequence[: len(prefix)] == prefix
+
+    def _matching_actions(
+        self,
+        candidate: tuple[object, ...],
+        sequences: dict[str, str],
+    ) -> list[tuple[str, tuple[object, ...]]]:
+        matches: list[tuple[str, tuple[object, ...]]] = []
+        for action in CUSTOM_SHORTCUT_ACTIONS:
+            callback = self._callbacks.get(action)
+            parts = self._parts(sequences.get(action, ""))
+            if callback is not None and parts and self._starts_with(parts, candidate):
+                matches.append((action, parts))
+        return matches
 
     def eventFilter(self, watched: QObject, event: QEvent) -> bool:  # noqa: N802 - Qt API
-        event_type = event.type()
-
-        if event_type == QEvent.Type.KeyRelease:
-            if event.key() == Qt.Key.Key_Control:  # type: ignore[attr-defined]
-                self._armed = False
+        if event.type() != QEvent.Type.KeyPress:
             return False
-
-        if event_type != QEvent.Type.KeyPress:
-            return False
-
         if not _shortcut_focus_is_inside(self._root):
-            self._armed = False
+            self._pending = ()
+            return False
+        if int(event.key()) in self._MODIFIER_KEYS:  # type: ignore[attr-defined]
             return False
 
-        key = event.key()  # type: ignore[attr-defined]
-        modifiers = event.modifiers()  # type: ignore[attr-defined]
-        ctrl_held = bool(modifiers & Qt.KeyboardModifier.ControlModifier)
-        blocked_modifier = bool(
-            modifiers
-            & (
-                Qt.KeyboardModifier.ShiftModifier
-                | Qt.KeyboardModifier.AltModifier
-                | Qt.KeyboardModifier.MetaModifier
-            )
-        )
+        now = time.monotonic()
+        if self._pending and now - self._pending_at > self._SEQUENCE_TIMEOUT_SECONDS:
+            self._pending = ()
 
-        if key == Qt.Key.Key_Space and ctrl_held and not blocked_modifier:
-            self._armed = True
-            return True
-
-        if not self._armed:
+        try:
+            chord = event.keyCombination()  # type: ignore[attr-defined]
+        except AttributeError:
             return False
 
-        if not ctrl_held or blocked_modifier:
-            self._armed = False
+        sequences = self._shortcut_sequences()
+        candidate = self._pending + (chord,)
+        matches = self._matching_actions(candidate, sequences)
+        if not matches and self._pending:
+            self._pending = ()
+            candidate = (chord,)
+            matches = self._matching_actions(candidate, sequences)
+        if not matches:
             return False
 
-        if key == Qt.Key.Key_Escape:
-            self._armed = False
-            return True
-
-        digit = _shortcut_digit_from_key(key)
-        callback = self._preset_callbacks.get(digit or -1)
-        if callback is not None:
-            if not event.isAutoRepeat():  # type: ignore[attr-defined]
+        exact = next(((action, parts) for action, parts in matches if len(parts) == len(candidate)), None)
+        if exact is not None:
+            self._pending = ()
+            callback = self._callbacks.get(exact[0])
+            if callback is not None and not event.isAutoRepeat():  # type: ignore[attr-defined]
                 callback()
             return True
 
-        if key in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
-            if not event.isAutoRepeat():  # type: ignore[attr-defined]
-                self._wrap_entire_file()
+        if event.isAutoRepeat():  # type: ignore[attr-defined]
             return True
-
-        return False
+        self._pending = candidate
+        self._pending_at = now
+        return True
 
 
 class RepeatedSuggestionShortcutFilter(QObject):
     """Apply Ctrl+1/2/3 repeatedly while Ctrl remains held in PO Viewer."""
 
-    def __init__(
-        self,
-        root: QWidget,
-        callbacks: dict[int, Callable[[], None]],
-        *,
-        blocked_when: Callable[[], bool] | None = None,
-    ) -> None:
+    def __init__(self, root: QWidget, callbacks: dict[int, Callable[[], None]]) -> None:
         super().__init__(root)
         self._root = root
         self._callbacks = dict(callbacks)
-        self._blocked_when = blocked_when
         app = QApplication.instance()
         if app is not None:
             app.installEventFilter(self)
@@ -542,8 +579,6 @@ class RepeatedSuggestionShortcutFilter(QObject):
         if event.type() != QEvent.Type.KeyPress:
             return False
         if not _shortcut_focus_is_inside(self._root):
-            return False
-        if self._blocked_when is not None and self._blocked_when():
             return False
 
         modifiers = event.modifiers()  # type: ignore[attr-defined]
@@ -738,14 +773,14 @@ class ToolkitGUI(QMainWindow):
             QListWidget#pathList::item {{ padding: 4px; border-radius: 6px; }}
             QListWidget#pathList::item:selected {{ background: {ACCENT_DARK}; color: {WHITE}; }}
             QProgressBar {{
-                background: {PANEL};
-                color: {WHITE};
-                border: 1px solid #3a4058;
-                border-radius: 7px;
+                background: transparent;
+                color: {ACCENT_SOFT};
+                border: none;
+                padding: 0 4px;
                 text-align: center;
                 font-weight: 800;
             }}
-            QProgressBar::chunk {{ background: {TEAL}; border-radius: 6px; }}
+            QProgressBar::chunk {{ background: transparent; border: none; }}
             QSplitter::handle {{ background: #2a3144; }}
             """
         )
@@ -771,6 +806,10 @@ class ToolkitGUI(QMainWindow):
         settings_btn = self._button("Settings", secondary=True)
         settings_btn.clicked.connect(self._open_settings_dialog)
         top.addWidget(settings_btn)
+        shortcuts_btn = self._button("Shortcuts", secondary=True)
+        shortcuts_btn.setToolTip("Open shortcut assignments and instructions.")
+        shortcuts_btn.clicked.connect(self._open_shortcuts_dialog)
+        top.addWidget(shortcuts_btn)
         self.stop_button = QPushButton("Stop Current Action")
         self.stop_button.setToolTip("Request the current long-running action to stop at the next safe checkpoint.")
         self.stop_button.setObjectName("dangerButton")
@@ -795,10 +834,210 @@ class ToolkitGUI(QMainWindow):
     def _new_tab(self, title: str) -> tuple[QWidget, QVBoxLayout]:
         tab = QWidget()
         layout = QVBoxLayout(tab)
-        layout.setContentsMargins(14, 14, 14, 14)
-        layout.setSpacing(6)
+        layout.setContentsMargins(8, 8, 8, 8)
+        layout.setSpacing(5)
         self.tabs.addTab(tab, title)
         return tab, layout
+
+    def _custom_shortcut_sequences(self) -> dict[str, str]:
+        shortcuts = normalize_custom_shortcuts(
+            self.config.get("wrap_shortcuts"),
+            self.config.get("file_navigation_shortcuts"),
+        )
+        self.config["wrap_shortcuts"] = {action: shortcuts[action] for action in WRAP_SHORTCUT_ACTIONS}
+        self.config["file_navigation_shortcuts"] = {action: shortcuts[action] for action in FILE_SHORTCUT_ACTIONS}
+        return dict(shortcuts)
+
+    def _wrap_shortcut_sequences(self) -> dict[str, str]:
+        shortcuts = self._custom_shortcut_sequences()
+        return {action: shortcuts[action] for action in WRAP_SHORTCUT_ACTIONS}
+
+    def _store_custom_shortcut_sequences(self, shortcuts: dict[str, str]) -> None:
+        self.config["wrap_shortcuts"] = {action: shortcuts.get(action, "") for action in WRAP_SHORTCUT_ACTIONS}
+        self.config["file_navigation_shortcuts"] = {
+            action: shortcuts.get(action, "") for action in FILE_SHORTCUT_ACTIONS
+        }
+        save_config(self.config)
+        self._refresh_linewrap_preset_buttons()
+
+    @staticmethod
+    def _portable_shortcut_text(sequence: QKeySequence | str) -> str:
+        value = sequence if isinstance(sequence, QKeySequence) else QKeySequence(sequence)
+        return value.toString(QKeySequence.SequenceFormat.PortableText).strip()
+
+    @staticmethod
+    def _set_plain_text_visible_rows(editor: QPlainTextEdit, rows: int = 4) -> None:
+        """Keep compact editors at an exact number of visible text rows."""
+
+        row_count = max(1, int(rows))
+        margins = editor.contentsMargins()
+        document_padding = int(editor.document().documentMargin() * 2)
+        height = (editor.fontMetrics().lineSpacing() * row_count) + document_padding
+        height += margins.top() + margins.bottom() + (editor.frameWidth() * 2) + 8
+        editor.setMinimumHeight(height)
+        editor.setMaximumHeight(height)
+
+    def _open_shortcuts_dialog(self) -> None:
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Shortcut Settings")
+        dialog.resize(820, 650)
+        root = QVBoxLayout(dialog)
+        root.setContentsMargins(10, 10, 10, 10)
+        root.setSpacing(8)
+
+        intro = QLabel(
+            "Assign shortcuts for wrapping and switching PO files. A shortcut may be one chord, including "
+            "three held keys such as Ctrl+Shift+1, or a sequence of up to three chords. Single-chord "
+            "wrap shortcuts remain repeatable while their modifier is held."
+        )
+        intro.setWordWrap(True)
+        intro.setObjectName("muted")
+        root.addWidget(intro)
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        content = QWidget()
+        content_layout = QVBoxLayout(content)
+        content_layout.setContentsMargins(6, 6, 6, 6)
+        content_layout.setSpacing(10)
+
+        current = self._custom_shortcut_sequences()
+        shortcut_editors: dict[str, QKeySequenceEdit] = {}
+
+        def add_assignment_group(title: str, actions: tuple[str, ...], note_text: str) -> None:
+            group = QGroupBox(title)
+            grid = QGridLayout(group)
+            grid.setHorizontalSpacing(12)
+            grid.setVerticalSpacing(7)
+            note = QLabel(note_text)
+            note.setWordWrap(True)
+            note.setObjectName("muted")
+            grid.addWidget(note, 0, 0, 1, 2)
+            for row, action in enumerate(actions, start=1):
+                label = QLabel(CUSTOM_SHORTCUT_LABELS[action])
+                editor = QKeySequenceEdit()
+                editor.setMaximumSequenceLength(MAX_CUSTOM_SHORTCUT_CHORDS)
+                editor.setClearButtonEnabled(True)
+                editor.setKeySequence(QKeySequence(current[action]))
+                editor.setToolTip(
+                    "Press one chord or a sequence of up to three chords. Backspace or the clear button disables it."
+                )
+                grid.addWidget(label, row, 0)
+                grid.addWidget(editor, row, 1)
+                shortcut_editors[action] = editor
+            grid.setColumnStretch(1, 1)
+            content_layout.addWidget(group)
+
+        add_assignment_group(
+            "Wrap shortcuts",
+            WRAP_SHORTCUT_ACTIONS,
+            "Direct one-chord presets can be pressed repeatedly in any order without releasing a held modifier.",
+        )
+        add_assignment_group(
+            "PO file switching",
+            FILE_SHORTCUT_ACTIONS,
+            "These assignments switch to the previous or next loaded PO file in Search, duplicate views, and PO Viewer.",
+        )
+
+        shortcut_status = QLabel("Changes save when each shortcut field finishes recording.")
+        shortcut_status.setWordWrap(True)
+        shortcut_status.setObjectName("muted")
+        content_layout.addWidget(shortcut_status)
+
+        help_view = QTextEdit()
+        help_view.setReadOnly(True)
+        help_view.setMinimumHeight(250)
+        help_view.setTextInteractionFlags(
+            Qt.TextInteractionFlag.TextSelectableByMouse
+            | Qt.TextInteractionFlag.TextSelectableByKeyboard
+            | Qt.TextInteractionFlag.LinksAccessibleByMouse
+        )
+        help_view.setHtml(
+            f"""
+            <h2 style='color:{ACCENT_SOFT}; margin-top:0;'>Shortcuts &amp; instructions</h2>
+            <p><b>Ctrl+S</b> save. <b>Ctrl+Z</b> undo. <b>Ctrl+F</b> find/replace.
+            <b>Ctrl+G</b> Gemini. <b>Ctrl+R</b> enabled preset replacements.</p>
+            <p><b>Custom shortcuts:</b> a chord may include modifiers, such as Ctrl+Shift+1.
+            A sequence may contain up to three chords. Direct single-chord wrap assignments remain repeatable: keep
+            the modifier held and press the assigned preset keys in any order.</p>
+            <p><b>PO Viewer:</b> Ctrl+E or F2 focuses Vietnamese. Ctrl+Up / Ctrl+Down changes entry.
+            Hold Ctrl and press 1/2/3 for suggestions. Alt+0 rebuilds suggestions.</p>
+            <p>Custom wrap and file-switch assignments apply immediately in Search, duplicate views, and PO Viewer.</p>
+            """
+        )
+        content_layout.addWidget(help_view)
+        content_layout.addStretch()
+        scroll.setWidget(content)
+        root.addWidget(scroll, 1)
+
+        def canonical(sequence: QKeySequence | str) -> str:
+            return self._portable_shortcut_text(sequence)
+
+        def restore_editor(action: str, sequence_text: str) -> None:
+            editor = shortcut_editors[action]
+            editor.blockSignals(True)
+            editor.setKeySequence(QKeySequence(sequence_text))
+            editor.blockSignals(False)
+
+        def save_assignment(action: str) -> None:
+            editor = shortcut_editors[action]
+            text = canonical(editor.keySequence())
+            sequence = QKeySequence(text)
+            if sequence.count() > MAX_CUSTOM_SHORTCUT_CHORDS:
+                restore_editor(action, current[action])
+                shortcut_status.setText(f"Use at most {MAX_CUSTOM_SHORTCUT_CHORDS} chords.")
+                return
+
+            for reserved_sequence, label in RESERVED_SHORTCUTS.items():
+                if text and shortcut_sequences_conflict(text, canonical(reserved_sequence)):
+                    restore_editor(action, current[action])
+                    shortcut_status.setText(
+                        f"{text} conflicts with fixed shortcut {canonical(reserved_sequence)} ({label})."
+                    )
+                    return
+
+            for other_action, other_text in current.items():
+                if other_action == action or not text or not other_text:
+                    continue
+                if shortcut_sequences_conflict(text, other_text):
+                    restore_editor(action, current[action])
+                    shortcut_status.setText(
+                        f"{text} conflicts with {CUSTOM_SHORTCUT_LABELS[other_action]} ({other_text})."
+                    )
+                    return
+
+            current[action] = text
+            self._store_custom_shortcut_sequences(current)
+            shortcut_status.setText(f"{CUSTOM_SHORTCUT_LABELS[action]}: {text or 'Disabled'}. Saved.")
+
+        for action, editor in shortcut_editors.items():
+            editor.editingFinished.connect(lambda shortcut_action=action: save_assignment(shortcut_action))
+
+        buttons = QHBoxLayout()
+        reset_btn = self._button("Reset Shortcut Defaults", secondary=True)
+        reset_btn.setToolTip(
+            "Restore Shift+1/2/3/4, Shift+Return, Alt+Up, and Alt+Down."
+        )
+
+        def reset_shortcuts() -> None:
+            defaults = {**default_wrap_shortcuts(), **default_file_shortcuts()}
+            current.clear()
+            current.update(defaults)
+            self._store_custom_shortcut_sequences(current)
+            for action, sequence_text in defaults.items():
+                restore_editor(action, sequence_text)
+            shortcut_status.setText(
+                "All shortcut defaults restored: Shift+1/2/3/4, Shift+Return, Alt+Up, and Alt+Down."
+            )
+
+        reset_btn.clicked.connect(reset_shortcuts)
+        close_btn = self._button("Close")
+        close_btn.clicked.connect(dialog.accept)
+        buttons.addWidget(reset_btn)
+        buttons.addStretch()
+        buttons.addWidget(close_btn)
+        root.addLayout(buttons)
+        dialog.exec()
 
     def _make_log(self) -> LogBox:
         log = LogBox()
@@ -835,8 +1074,12 @@ class ToolkitGUI(QMainWindow):
 
     def _linewrap_preset_tooltip(self, preset_index: int, action: str = "Wrap") -> str:
         soft, hard, cuts = self._linewrap_settings(preset_index)
-        base_note = " Editable in the Line Wrap tab."
-        return f"{action} with preset W{preset_index + 1}: Soft={soft}, Hard={hard}, Cuts={cuts}.{base_note}"
+        shortcut = self._wrap_shortcut_sequences().get(WRAP_PRESET_ACTIONS[preset_index], "") or "Disabled"
+        base_note = " Editable in the Line Wrap tab; shortcut editable in the Shortcuts window."
+        return (
+            f"{action} with preset W{preset_index + 1}: Soft={soft}, Hard={hard}, Cuts={cuts}. "
+            f"Shortcut={shortcut}.{base_note}"
+        )
 
     def _refresh_linewrap_preset_buttons(self) -> None:
         active = self._active_linewrap_preset_index()
@@ -1040,34 +1283,38 @@ class ToolkitGUI(QMainWindow):
         return self._initial_dr_options(tab_key)
 
     def _dr_option_selector(self, layout: QVBoxLayout, tab_key: str) -> dict[str, QCheckBox]:
-        box = QGroupBox("Danganronpa file groups")
+        box = QGroupBox("File groups")
+        box.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Maximum)
         outer = QVBoxLayout(box)
-        outer.setContentsMargins(8, 8, 8, 8)
-        outer.setSpacing(5)
-
-        top = QHBoxLayout()
-        hint = QLabel("Choose which chapters/file groups this tab should target.")
-        hint.setObjectName("muted")
-        top.addWidget(hint)
-        top.addStretch()
-        all_btn = self._button("All", secondary=True)
-        none_btn = self._button("None", secondary=True)
-        top.addWidget(all_btn)
-        top.addWidget(none_btn)
-        outer.addLayout(top)
+        outer.setContentsMargins(8, 3, 8, 5)
+        outer.setSpacing(2)
 
         grid = QGridLayout()
-        grid.setHorizontalSpacing(12)
-        grid.setVerticalSpacing(4)
+        grid.setContentsMargins(0, 0, 0, 0)
+        grid.setHorizontalSpacing(10)
+        grid.setVerticalSpacing(2)
         selected = set(self._initial_dr_options(tab_key))
         checks: dict[str, QCheckBox] = {}
         for index, option in enumerate(DR_FILE_OPTIONS):
             checkbox = QCheckBox(option.name)
             checkbox.setChecked(option.key in selected)
             checkbox.setToolTip(option.description or option.name)
-            row, col = divmod(index, 4)
-            grid.addWidget(checkbox, row, col)
+            checkbox.setMinimumHeight(18)
+            checkbox.setMinimumWidth(checkbox.sizeHint().width())
+            checkbox.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+            checkbox.setStyleSheet("font-size:8pt;")
+            grid.addWidget(checkbox, 0, index, Qt.AlignmentFlag.AlignHCenter)
+            grid.setColumnStretch(index, 1)
             checks[option.key] = checkbox
+        all_btn = self._tool_button("All", "Select every file group", width=38)
+        none_btn = self._tool_button("None", "Clear every file group", width=38)
+        all_btn.setFixedHeight(21)
+        none_btn.setFixedHeight(21)
+        controls_col = len(DR_FILE_OPTIONS)
+        grid.addWidget(all_btn, 0, controls_col)
+        grid.addWidget(none_btn, 0, controls_col + 1)
+        grid.setColumnStretch(controls_col, 0)
+        grid.setColumnStretch(controls_col + 1, 0)
         outer.addLayout(grid)
         self._dr_option_widgets[tab_key] = checks
 
@@ -1238,17 +1485,6 @@ class ToolkitGUI(QMainWindow):
         root.setContentsMargins(10, 10, 10, 10)
         root.setSpacing(8)
 
-        note = QLabel(
-            "Set one Working folder for each Danganronpa file group. "
-            "The Repack tab syncs selected Working folders into the configured DRAT workspace, "
-            "rebuilds LIN/PAK/WAD files, updates Script, then deploys the WAD to the Game Folder. "
-            "DRAT Folder may be the game manual-mode folder containing EXTRACTED/REPACKED, "
-            "or its parent DRAT folder."
-        )
-        note.setObjectName("muted")
-        note.setWordWrap(True)
-        root.addWidget(note)
-
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         content = QWidget()
@@ -1278,16 +1514,6 @@ class ToolkitGUI(QMainWindow):
         git_form.setSpacing(8)
         git_form.setContentsMargins(8, 8, 8, 8)
         self._git_path_row(git_form)
-        git_note = QLabel(
-            f"Repository: {DANGANVIETHOA_REPOSITORY_URL}\n"
-            "Git Pull preserves local edits with rebase + autostash. "
-            "Git Push opens a real CMD window, stages all repository files with git add ., "
-            "creates a commit when needed, and pushes main to origin. "
-            "The CMD window shows each step and stays open for inspection."
-        )
-        git_note.setObjectName("muted")
-        git_note.setWordWrap(True)
-        git_form.addRow("", git_note)
         content_layout.addWidget(git_box)
         content_layout.addStretch()
 
@@ -1743,15 +1969,6 @@ class ToolkitGUI(QMainWindow):
     # ---------------- Rules + Mass Replace ----------------
     def _build_replace_tab(self) -> None:
         _tab, layout = self._new_tab("Rules & Replace")
-        intro = QLabel(
-            "Rules run from top to bottom: the top is weakest and lower rules are stronger. "
-            "Drag rules to change their order. One rule can contain ordered find/replace pairs separated by ; "
-            r"(use \; for a literal semicolon). Preset Replace buttons in editable views use enabled rules only."
-        )
-        intro.setObjectName("muted")
-        intro.setWordWrap(True)
-        layout.addWidget(intro)
-
         main_splitter = QSplitter(Qt.Orientation.Vertical)
         layout.addWidget(main_splitter, 1)
 
@@ -1774,10 +1991,6 @@ class ToolkitGUI(QMainWindow):
         left = QWidget()
         left_layout = QVBoxLayout(left)
         left_layout.setContentsMargins(0, 0, 8, 0)
-        order_note = QLabel("Weakest ↑   Drag to reorder   ↓ Strongest")
-        order_note.setObjectName("muted")
-        order_note.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        left_layout.addWidget(order_note)
         rule_list = QListWidget()
         rule_list.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         rule_list.setDragDropMode(QAbstractItemView.DragDropMode.InternalMove)
@@ -2144,8 +2357,6 @@ class ToolkitGUI(QMainWindow):
         hard.setToolTip("Hard width for the selected preset.")
         cuts.setToolTip("Maximum automatic cuts for the selected preset.")
 
-        preset_info = QLabel("")
-        preset_info.setObjectName("muted")
         preset_updating = {"value": False}
 
         def load_preset_editor(preset_index: int | None = None) -> None:
@@ -2161,9 +2372,6 @@ class ToolkitGUI(QMainWindow):
             editable = True
             for spin in (soft, hard, cuts):
                 spin.setEnabled(editable)
-            preset_info.setText(
-                f"Editing W{index + 1}; changes save automatically."
-            )
 
         self._load_linewrap_preset_editor = load_preset_editor
         self._add_linewrap_preset_buttons(controls, None, action="Select")
@@ -2191,7 +2399,6 @@ class ToolkitGUI(QMainWindow):
         for label, spin in [("Soft", soft), ("Hard", hard), ("Max cuts", cuts)]:
             controls.addWidget(QLabel(label))
             controls.addWidget(spin)
-        controls.addWidget(preset_info)
         controls.addStretch()
         layout.addLayout(controls)
         load_preset_editor()
@@ -2277,14 +2484,6 @@ class ToolkitGUI(QMainWindow):
     def _build_search_tab(self) -> None:
         _tab, layout = self._new_tab("Search")
         self._dr_option_selector(layout, "search")
-        theme_note = QLabel(
-            "☾ Sleepy gamer theme: EN results use dusty lavender, VI results use muted teal. Up/Down navigates results; Alt+Up/Down switches files. "
-            "Hold Ctrl, tap Space, then press 1/2/3/4 repeatedly to wrap with those presets; Enter wraps the entire file, and releasing Ctrl exits wrap mode. "
-            "Ctrl+R applies preset replacements, Ctrl+G runs Gemini, Ctrl+S saves, and Ctrl+Z undoes."
-        )
-        theme_note.setObjectName("muted")
-        theme_note.setWordWrap(True)
-        layout.addWidget(theme_note)
         path_edit, include_extra = self._extra_path_row(layout, "search", "Extra Folder/File", "last_path")
 
         search_row = QHBoxLayout()
@@ -2346,7 +2545,7 @@ class ToolkitGUI(QMainWindow):
         en_label = QLabel("English / msgid")
         en_label.setStyleSheet(f"color: {ACCENT_SOFT}; font-weight: 900;")
         right_layout.addWidget(en_label)
-        msgid_box = QPlainTextEdit(); msgid_box.setReadOnly(True); msgid_box.setMinimumHeight(90)
+        msgid_box = QPlainTextEdit(); msgid_box.setReadOnly(True)
         msgid_box.setStyleSheet(
             f"QPlainTextEdit {{ color: {WHITE}; background: {EN_BG}; border: 1px solid {PURPLE}; border-radius: 9px; }}"
         )
@@ -2355,10 +2554,12 @@ class ToolkitGUI(QMainWindow):
         vi_label = QLabel("Vietnamese / msgstr")
         vi_label.setStyleSheet(f"color: {TEAL}; font-weight: 900;")
         right_layout.addWidget(vi_label)
-        msgstr_box = QPlainTextEdit(); msgstr_box.setMinimumHeight(150)
+        msgstr_box = QPlainTextEdit()
         msgstr_box.setStyleSheet(
             f"QPlainTextEdit {{ color: {WHITE}; background: {VI_BG}; border: 1px solid {TEAL}; border-radius: 9px; }}"
         )
+        self._set_plain_text_visible_rows(msgid_box, 4)
+        self._set_plain_text_visible_rows(msgstr_box, 4)
         msgstr_box._clt_highlighter = CltHighlighter(msgstr_box.document())  # keep highlighter alive
         right_layout.addWidget(msgstr_box, 1)
 
@@ -3430,8 +3631,6 @@ class ToolkitGUI(QMainWindow):
 
         add_search_shortcut("Ctrl+Z", undo_last_search_change)
         add_search_shortcut("Ctrl+S", save_current)
-        add_search_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_search_file(-1))
-        add_search_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_search_file(1))
         search_wrap_filter = PersistentWrapShortcutFilter(
             _tab,
             {
@@ -3444,6 +3643,9 @@ class ToolkitGUI(QMainWindow):
                 for index in range(4)
             },
             wrap_current_search_file,
+            self._custom_shortcut_sequences,
+            lambda: switch_search_file(-1),
+            lambda: switch_search_file(1),
         )
         add_search_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_search_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_search_with_gemini_api)
@@ -3455,16 +3657,6 @@ class ToolkitGUI(QMainWindow):
     def _build_translafixer_tab(self) -> None:
         _tab, layout = self._new_tab("Translafixer")
         self._dr_option_selector(layout, "translafixer")
-        note = QLabel(
-            "Translafixer Source is used only for fixing/filling translations. "
-            "Duplicate views scan only selected checkbox Working folders. "
-            "PO Viewer suggestions scan all configured Working folders from Settings. "
-            "Target .po files are rewritten when original text / msgid matches. Copy.po target files are skipped. "
-            "Selected source files are never rewritten, even if they are inside the target folder."
-        )
-        note.setObjectName("muted")
-        note.setWordWrap(True)
-        layout.addWidget(note)
 
         def build_path_picker(
             title: str,
@@ -3475,12 +3667,9 @@ class ToolkitGUI(QMainWindow):
         ) -> tuple[QGroupBox, PathDropList, Callable[[], list[str]], Callable[[], None]]:
             box = QGroupBox(title)
             box_layout = QVBoxLayout(box)
-            hint = QLabel(hint_text)
-            hint.setObjectName("muted")
-            hint.setWordWrap(True)
-            box_layout.addWidget(hint)
 
             list_widget = PathDropList()
+            list_widget.setToolTip(hint_text)
             setattr(self, attr_name, list_widget)
             list_widget.setMinimumHeight(145)
             list_widget.setToolTip(tooltip)
@@ -3891,6 +4080,8 @@ class ToolkitGUI(QMainWindow):
         vi_box.verticalScrollBar().setSingleStep(6)
         vi_box.setLineWrapMode(QPlainTextEdit.LineWrapMode.WidgetWidth)
         vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
+        self._set_plain_text_visible_rows(en_box, 4)
+        self._set_plain_text_visible_rows(vi_box, 4)
         speaker_label = QLabel("Speaker: —")
         speaker_label.setObjectName("muted")
         speaker_label.setWordWrap(True)
@@ -5445,8 +5636,6 @@ class ToolkitGUI(QMainWindow):
         add_duplicate_shortcut("Ctrl+F", open_search_replace_dialog)
         add_duplicate_shortcut("Ctrl+Z", undo_duplicate_change)
         add_duplicate_shortcut("Ctrl+S", save_changed)
-        add_duplicate_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_duplicate_file(-1))
-        add_duplicate_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_duplicate_file(1))
         duplicate_wrap_filter = PersistentWrapShortcutFilter(
             dialog,
             {
@@ -5459,6 +5648,9 @@ class ToolkitGUI(QMainWindow):
                 for index in range(4)
             },
             wrap_current_duplicate_file,
+            self._custom_shortcut_sequences,
+            lambda: switch_duplicate_file(-1),
+            lambda: switch_duplicate_file(1),
         )
         add_duplicate_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_duplicate_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_duplicate_with_gemini_api)
@@ -5475,27 +5667,24 @@ class ToolkitGUI(QMainWindow):
         _tab, layout = self._new_tab("PO Viewer")
         self._dr_option_selector(layout, "po_viewer")
         self._po_viewer_tab_widget = _tab
-        note = QLabel(
-            "Use ☑↻ to load .po files from selected checkbox Working folders. The Extra source is optional and only loads when Extra is checked. "
-            "Choose a non-copy .po from the dropdown. Use Open PO to launch the currently viewed file in its default app. "
-            "View English + Vietnamese side by side, edit only Vietnamese, wrap msgstr lines. TF fill uses Translafixer Source; suggestions use all Settings Working folders. "
-            "Shortcuts: Ctrl+E/F2 = focus Vietnamese editor, Ctrl+S = save, Ctrl+Z repeatedly undoes current and earlier PO text edits, Ctrl+Up/Down = entry, Alt+Up/Down = file. "
-            "Hold Ctrl, tap Space, then press 1/2/3/4 repeatedly to wrap selected/current with those presets; Enter wraps the entire file, and releasing Ctrl exits wrap mode. Ctrl+R applies preset replacements; Ctrl+G runs Gemini. "
-            "Hold Ctrl and press 1/2/3 repeatedly to apply suggestions 1/2/3; Alt+0 refreshes them. These work while editing Vietnamese too. "
-            "Visible character counts are shown per real line above each language field; spaces and punctuation count, while CLT/control tags and placeholders are ignored. Translafixer matching ignores CLT tags."
-        )
-        note.setObjectName("muted")
-        note.setWordWrap(True)
-        layout.addWidget(note)
+
+        initial_source = str(self.config.get("po_viewer_source") or self.config.get("po_viewer_file", ""))
+        file_combo = QComboBox()
+        file_combo.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToMinimumContentsLengthWithIcon)
+        file_combo.setMinimumContentsLength(24)
+        file_combo.setEnabled(False)
+        file_combo.addItem("No .po files loaded", None)
 
         source_row = QHBoxLayout()
-        source_label = QLabel("Extra source")
-        source_label.setMinimumWidth(92)
-        source_label.setStyleSheet("font-weight:700;")
-        initial_source = str(self.config.get("po_viewer_source") or self.config.get("po_viewer_file", ""))
+        source_row.setSpacing(4)
+        file_label = QLabel("File")
+        file_label.setStyleSheet("font-weight:700;")
+        source_row.addWidget(file_label)
+        source_row.addWidget(file_combo, 2)
+
         source_edit = QLineEdit(initial_source)
         source_edit.setPlaceholderText("Optional extra .po file(s) or folder; ignored unless Extra is checked...")
-        source_extra_check = QCheckBox("Extra")
+        source_extra_check = QCheckBox("Use extra")
         source_extra_check.setChecked(bool(self.config.get(self._include_extra_config_key("po_viewer"), False)))
         source_extra_check.setToolTip("When on, the manual PO source is loaded together with selected Working folders.")
         open_po_btn = self._tool_button("", "Open current .po in the system default app", QStyle.StandardPixmap.SP_FileIcon)
@@ -5503,7 +5692,6 @@ class ToolkitGUI(QMainWindow):
         browse_folder_btn = self._tool_button("", "Pick extra folder", QStyle.StandardPixmap.SP_DirOpenIcon)
         load_btn = self._tool_button("☑↻", "Load selected checkbox Working folders + enabled Extra source", width=44)
         save_btn = self._tool_button("", "Save current .po", QStyle.StandardPixmap.SP_DialogSaveButton)
-        source_row.addWidget(source_label)
         source_row.addWidget(source_extra_check)
         source_row.addWidget(source_edit, 1)
         source_row.addWidget(open_po_btn)
@@ -5512,19 +5700,6 @@ class ToolkitGUI(QMainWindow):
         source_row.addWidget(load_btn)
         source_row.addWidget(save_btn)
         layout.addLayout(source_row)
-
-        file_row = QHBoxLayout()
-        file_label = QLabel("File")
-        file_label.setMinimumWidth(80)
-        file_label.setStyleSheet("font-weight:700;")
-        file_combo = QComboBox()
-        file_combo.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToMinimumContentsLengthWithIcon)
-        file_combo.setMinimumContentsLength(32)
-        file_combo.setEnabled(False)
-        file_combo.addItem("No .po files loaded", None)
-        file_row.addWidget(file_label)
-        file_row.addWidget(file_combo, 1)
-        layout.addLayout(file_row)
 
         tools = QHBoxLayout()
         tools.setSpacing(4)
@@ -5570,7 +5745,8 @@ class ToolkitGUI(QMainWindow):
         table.setColumnCount(4)
         table.setHorizontalHeaderLabels(["#", "Speaker / Context", "English msgid", "Vietnamese msgstr"])
         table.verticalHeader().setVisible(False)
-        table.verticalHeader().setDefaultSectionSize(44)
+        table.verticalHeader().setDefaultSectionSize(36)
+        table.verticalHeader().setMinimumSectionSize(36)
         table.setAlternatingRowColors(True)
         table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
@@ -5614,13 +5790,25 @@ class ToolkitGUI(QMainWindow):
         vi_box.setPlaceholderText("Edit Vietnamese msgstr here. English is read-only.")
         vi_box.setFont(QFont("Consolas", 9))
         vi_box._clt_highlighter = CltHighlighter(vi_box.document())  # keep highlighter alive
-        speaker_label = QLabel("Speaker: —")
-        speaker_label.setObjectName("muted")
-        speaker_label.setWordWrap(True)
-        speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
+        self._set_plain_text_visible_rows(en_box, 4)
+        self._set_plain_text_visible_rows(vi_box, 4)
+        jp_box = VisibleNewlinePlainTextEdit()
+        jp_box.setReadOnly(True)
+        jp_box.setPlaceholderText("Japanese extracted note")
+        jp_box.setFont(QFont("Consolas", 9))
+        jp_box._clt_highlighter = CltHighlighter(jp_box.document())  # keep highlighter alive
+        en_speaker_label = QLabel("Speaker: —")
+        en_speaker_label.setObjectName("muted")
+        en_speaker_label.setWordWrap(True)
+        en_speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
+        vi_speaker_label = QLabel("Speaker: —")
+        vi_speaker_label.setObjectName("muted")
+        vi_speaker_label.setWordWrap(True)
+        vi_speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
         en_character_count_label = QLabel("—")
         en_character_count_label.setObjectName("muted")
         en_character_count_label.setWordWrap(True)
+        en_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         en_character_count_label.setToolTip("Visible character count for each English line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
         en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
         vi_character_count_label = QLabel("—")
@@ -5630,28 +5818,42 @@ class ToolkitGUI(QMainWindow):
         vi_character_count_label.setToolTip("Visible character count for each Vietnamese line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
         vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
 
-        speaker_count_row = QWidget()
-        speaker_count_layout = QHBoxLayout(speaker_count_row)
-        speaker_count_layout.setContentsMargins(0, 0, 0, 0)
-        speaker_count_layout.setSpacing(8)
-        speaker_count_layout.addWidget(speaker_label, 1)
-        speaker_count_layout.addWidget(
+        en_speaker_count_row = QWidget()
+        en_speaker_count_layout = QHBoxLayout(en_speaker_count_row)
+        en_speaker_count_layout.setContentsMargins(0, 0, 0, 0)
+        en_speaker_count_layout.setSpacing(8)
+        en_speaker_count_layout.addWidget(en_speaker_label, 1)
+        en_speaker_count_layout.addWidget(
+            en_character_count_label,
+            0,
+            Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        )
+        vi_speaker_count_row = QWidget()
+        vi_speaker_count_layout = QHBoxLayout(vi_speaker_count_row)
+        vi_speaker_count_layout.setContentsMargins(0, 0, 0, 0)
+        vi_speaker_count_layout.setSpacing(8)
+        vi_speaker_count_layout.addWidget(vi_speaker_label, 1)
+        vi_speaker_count_layout.addWidget(
             vi_character_count_label,
             0,
             Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
         )
-        detail.addWidget(labeled_box("English / original — read only", en_box, en_character_count_label))
-        detail.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, speaker_count_row))
-        detail.setSizes([1, 1])
+        language_split = QSplitter(Qt.Orientation.Vertical)
+        language_split.addWidget(labeled_box("English / original — read only", en_box, en_speaker_count_row))
+        language_split.addWidget(labeled_box("Vietnamese / translation — editable", vi_box, vi_speaker_count_row))
+        language_split.setSizes([145, 145])
+        language_split.setStretchFactor(0, 1)
+        language_split.setStretchFactor(1, 1)
+        detail.addWidget(language_split)
+        detail.addWidget(labeled_box("Japanese note — read only / copyable", jp_box))
+        detail.setSizes([620, 260])
+        detail.setStretchFactor(0, 7)
+        detail.setStretchFactor(1, 3)
         split.addWidget(detail)
-        split.setSizes([430, 155])
+        split.setSizes([430, 220])
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)
-        suggest_note = QLabel("From all configured Settings Working folders. Match percentage is raw: CLT tags, line breaks, spacing, punctuation, and case all count. >95% is green. Hold Ctrl and press 1/2/3 repeatedly to apply suggestions; Alt+0 refreshes.")
-        suggest_note.setObjectName("muted")
-        suggest_note.setWordWrap(True)
-        suggest_layout.addWidget(suggest_note)
         suggestions_list = QListWidget()
         suggestions_list.setObjectName("suggestionsList")
         suggestions_list.setUniformItemSizes(False)
@@ -5663,20 +5865,23 @@ class ToolkitGUI(QMainWindow):
         suggest_min_score.setValue(max(0, min(100, int(self.config.get("po_viewer_suggest_min_score", 70)))))
         refresh_suggest_btn = self._button("Refresh", secondary=True)
         apply_suggest_btn = self._button("Apply", secondary=True)
+        undo_suggest_btn = self._button("Undo", secondary=True)
+        undo_suggest_btn.setToolTip("Undo the most recent PO edit, including an applied suggestion (Ctrl+Z).")
         suggest_controls.addWidget(QLabel("Min match"))
         suggest_controls.addWidget(suggest_min_score)
         suggest_controls.addWidget(refresh_suggest_btn)
         suggest_controls.addWidget(apply_suggest_btn)
+        suggest_controls.addWidget(undo_suggest_btn)
         suggest_controls.addStretch()
         suggest_layout.addLayout(suggest_controls)
-        suggest_group.setMinimumWidth(280)
+        suggest_group.setMinimumWidth(240)
 
         content_split = QSplitter(Qt.Orientation.Horizontal)
         content_split.addWidget(split)
         content_split.addWidget(suggest_group)
-        content_split.setSizes([700, 300])
-        content_split.setStretchFactor(0, 7)
-        content_split.setStretchFactor(1, 3)
+        content_split.setSizes([780, 260])
+        content_split.setStretchFactor(0, 8)
+        content_split.setStretchFactor(1, 2)
         layout.addWidget(content_split, 1)
 
         state: dict[str, object] = {
@@ -5695,6 +5900,10 @@ class ToolkitGUI(QMainWindow):
             "suggestion_source_signature": None,
             "suggestion_source_result": None,
             "suggestion_cache": {},
+            "live_suggestion_revision": 0,
+            "live_suggestion_index_revision": -1,
+            "live_suggestion_index_path": None,
+            "live_suggestion_index": None,
             "pending_suggestion_row": None,
             "pending_suggestion_force": False,
             "undo_stack": [],
@@ -5737,7 +5946,7 @@ class ToolkitGUI(QMainWindow):
 
         def characters_per_line_text(text: str) -> str:
             counts = visible_character_counts_by_line(text)
-            return "  |  ".join(str(count) for count in counts)
+            return "Chars: " + "  |  ".join(str(count) for count in counts)
 
         def update_character_count_labels(english: str | None = None, vietnamese: str | None = None) -> None:
             en_text = en_box.toPlainText() if english is None else english
@@ -5759,6 +5968,41 @@ class ToolkitGUI(QMainWindow):
             if bg:
                 item.setBackground(QColor(bg))
             return item
+
+        def po_viewer_text_height(text: str, column: int) -> int:
+            width = max(48, table.columnWidth(column) - 14)
+            bounds = table.fontMetrics().boundingRect(
+                0,
+                0,
+                width,
+                100000,
+                Qt.TextFlag.TextWordWrap | Qt.TextFlag.TextExpandTabs,
+                text or " ",
+            )
+            return max(table.fontMetrics().height(), bounds.height())
+
+        def update_po_viewer_row_height(row: int) -> None:
+            if row < 0 or row >= table.rowCount():
+                return
+            heights = []
+            for column in (1, 2, 3):
+                item = table.item(row, column)
+                heights.append(po_viewer_text_height(item.text() if item is not None else "", column))
+            table.setRowHeight(row, max(36, max(heights, default=table.fontMetrics().height()) + 14))
+
+        def update_all_po_viewer_row_heights() -> None:
+            table.setUpdatesEnabled(False)
+            try:
+                for row in range(table.rowCount()):
+                    update_po_viewer_row_height(row)
+            finally:
+                table.setUpdatesEnabled(True)
+            table.viewport().update()
+
+        row_height_timer = QTimer(_tab)
+        row_height_timer.setSingleShot(True)
+        row_height_timer.timeout.connect(update_all_po_viewer_row_heights)
+        table.horizontalHeader().sectionResized.connect(lambda *_args: row_height_timer.start(120))
 
         def set_cell_clt_html(item: QTableWidgetItem | None, text: str, *, color: str = TEXT) -> None:
             if item is None:
@@ -5972,6 +6216,37 @@ class ToolkitGUI(QMainWindow):
             except OSError:
                 return str(a) == str(b)
 
+        def invalidate_live_suggestion_index() -> None:
+            state["live_suggestion_revision"] = int(state.get("live_suggestion_revision", 0)) + 1
+            state["live_suggestion_index"] = None
+            state["live_suggestion_index_revision"] = -1
+            state["live_suggestion_index_path"] = None
+            cache = state.get("suggestion_cache")
+            if isinstance(cache, dict):
+                cache.clear()
+
+        def current_live_suggestion_index() -> TranslationSuggestionIndex:
+            po = po_file()
+            path = current_path()
+            revision = int(state.get("live_suggestion_revision", 0))
+            cached_revision = int(state.get("live_suggestion_index_revision", -1))
+            cached_path = state.get("live_suggestion_index_path")
+            cached_index = state.get("live_suggestion_index")
+            path_key = self._path_key(path) if path is not None else ""
+            if (
+                isinstance(cached_index, TranslationSuggestionIndex)
+                and cached_revision == revision
+                and cached_path == path_key
+            ):
+                return cached_index
+            index = TranslationSuggestionIndex()
+            if po is not None:
+                index.add_po_file(po, path)
+            state["live_suggestion_index"] = index
+            state["live_suggestion_index_revision"] = revision
+            state["live_suggestion_index_path"] = path_key
+            return index
+
         def _suggestion_source_signature() -> tuple[tuple[str, int, int], ...]:
             signature_items: list[tuple[str, int, int]] = []
             for raw_path in self._all_configured_working_paths():
@@ -6033,6 +6308,9 @@ class ToolkitGUI(QMainWindow):
                 state["suggestion_source_signature"] = result_signature
                 state["suggestion_index"] = index
                 state["suggestion_source_result"] = result
+                cache = state.get("suggestion_cache")
+                if isinstance(cache, dict):
+                    cache.clear()
                 if not was_quiet and result is not None:
                     set_status(f"Suggestion index: {result.usable_translations} translated entries from {result.source_files} Settings Working .po file(s).")
                 refresh_suggestions_for_row(table.currentRow(), immediate=True)
@@ -6125,8 +6403,7 @@ class ToolkitGUI(QMainWindow):
             if row != table.currentRow() and not force_rebuild:
                 return
             index = ensure_suggestion_index(force=force_rebuild, quiet=not force_rebuild)
-            if index is None:
-                return
+            live_index = current_live_suggestion_index()
             target = po.entries[row]  # type: ignore[union-attr]
             min_score = suggest_min_score.value() / 100.0
             key = _suggestion_cache_key(target.msgid, min_score, target.uid)
@@ -6137,11 +6414,26 @@ class ToolkitGUI(QMainWindow):
             suggestions = None if force_rebuild else cache.get(key)
             if suggestions is None:
                 current = current_path()
-                candidates = index.suggest(target.msgid, min_score=min_score, limit=10)
-                suggestions = [
-                    item for item in candidates
-                    if not (_same_file(item.file, current) and item.uid == target.uid)
-                ][:5]
+                disk_candidates = index.suggest(target.msgid, min_score=min_score, limit=15) if index is not None else []
+                # Ignore every disk candidate from the current file; the live
+                # in-memory overlay below is authoritative for that file.
+                disk_candidates = [item for item in disk_candidates if not _same_file(item.file, current)]
+                live_candidates = [
+                    item
+                    for item in live_index.suggest(target.msgid, min_score=min_score, limit=15)
+                    if item.uid != target.uid
+                ]
+                combined = sorted(live_candidates + disk_candidates, key=lambda item: item.score, reverse=True)
+                suggestions = []
+                seen_translations: set[str] = set()
+                for candidate in combined:
+                    translation_key = re.sub(r"\s+", " ", candidate.translation).strip().casefold()
+                    if not translation_key or translation_key in seen_translations:
+                        continue
+                    seen_translations.add(translation_key)
+                    suggestions.append(candidate)
+                    if len(suggestions) >= 5:
+                        break
                 if len(cache) > 512:
                     cache.clear()
                 cache[key] = suggestions
@@ -6178,7 +6470,8 @@ class ToolkitGUI(QMainWindow):
             translation = str(data.get("translation") or "")
             if not translation.strip():
                 return
-            set_entry_translation(row, translation, undo_label="suggestion")
+            if set_entry_translation(row, translation, undo_label="suggestion"):
+                set_status(f"Applied suggestion to entry {row + 1}. Use Undo or Ctrl+Z to reverse it.")
 
         def apply_suggestion_number(number: int) -> None:
             index = number - 1
@@ -6212,20 +6505,29 @@ class ToolkitGUI(QMainWindow):
                 if po is None or row < 0 or row >= len(po.entries):  # type: ignore[union-attr]
                     en_box.clear()
                     vi_box.clear()
-                    speaker_label.setText("Speaker: —")
-                    speaker_label.setToolTip("")
+                    jp_box.clear()
+                    en_speaker_label.setText("Speaker: —")
+                    en_speaker_label.setToolTip("")
+                    vi_speaker_label.setText("Speaker: —")
+                    vi_speaker_label.setToolTip("")
                     en_character_count_label.setText("—")
                     vi_character_count_label.setText("—")
                     return
                 entry = po.entries[row]  # type: ignore[union-attr]
                 speaker = entry.speaker.strip() or "—"
-                speaker_label.setText(f"Speaker: {speaker}")
-                speaker_label.setToolTip(entry.msgctxt or "")
+                speaker_text = f"Speaker: {speaker}"
+                speaker_tooltip = entry.msgctxt or ""
+                en_speaker_label.setText(speaker_text)
+                en_speaker_label.setToolTip(speaker_tooltip)
+                vi_speaker_label.setText(speaker_text)
+                vi_speaker_label.setToolTip(speaker_tooltip)
                 if en_box.toPlainText() != entry.msgid:
                     en_box.setPlainText(entry.msgid)
                 if vi_box.toPlainText() != entry.msgstr:
                     vi_box.setPlainText(entry.msgstr)
                     self._clear_text_editor_undo(vi_box)
+                if jp_box.toPlainText() != entry.japanese_context:
+                    jp_box.setPlainText(entry.japanese_context)
                 update_character_count_labels(entry.msgid, entry.msgstr)
                 set_status(f"Entry {row + 1}/{len(po.entries)} | line {entry.line}")  # type: ignore[union-attr]
                 refresh_suggestions_for_row(row)
@@ -6246,6 +6548,7 @@ class ToolkitGUI(QMainWindow):
                 record_po_undo(row, old_text, text, undo_label)
             invalidate_po_cache()
             entry.msgstr = text
+            invalidate_live_suggestion_index()
             state["loading"] = True
             try:
                 item = table.item(row, 3)
@@ -6263,6 +6566,7 @@ class ToolkitGUI(QMainWindow):
                     state["detail_loading"] = False
                 update_character_count_labels(entry.msgid, text)
             refresh_row_style(row)
+            update_po_viewer_row_height(row)
             if dirty:
                 state["dirty"] = True
                 set_status(f"Edited entry {row + 1}. Save when ready.")
@@ -6290,6 +6594,7 @@ class ToolkitGUI(QMainWindow):
                     table.setItem(row, 2, make_item(entry.msgid, bg=EN_BG))
                     table.setItem(row, 3, make_item(entry.msgstr, editable=True, bg=VI_BG if entry.msgstr.strip() else "#4a3828"))
                     refresh_row_style(row)
+                    update_po_viewer_row_height(row)
                     if (row + 1) % 50 == 0 or row + 1 == total_entries:
                         label = f"Loading {current_path().name}" if current_path() is not None else "Loading PO entries"
                         self._update_task_progress(row + 1, total_entries, label)
@@ -6303,6 +6608,7 @@ class ToolkitGUI(QMainWindow):
                 state["loading"] = False
                 self._finish_task_progress(f"Loaded {total_entries} PO entries")
             table.viewport().update()
+            row_height_timer.start(0)
             if table.rowCount():
                 load_detail(0)
 
@@ -6476,6 +6782,7 @@ class ToolkitGUI(QMainWindow):
             state["po"] = po
             state["path"] = path
             state["dirty"] = False
+            invalidate_live_suggestion_index()
             clear_pending_text_undo()
             _po_undo_stack().clear()
             self._clear_text_editor_undo(vi_box)
@@ -6508,6 +6815,12 @@ class ToolkitGUI(QMainWindow):
             self._update_task_progress(1, 1, f"Saving {path.name}")
             state["dirty"] = False
             cache_current_po()
+            state["suggestion_index"] = None
+            state["suggestion_source_signature"] = None
+            cache = state.get("suggestion_cache")
+            if isinstance(cache, dict):
+                cache.clear()
+            refresh_suggestions_for_row(table.currentRow(), force_rebuild=True, immediate=True)
             set_status(f"Saved {path.name}")
             self._finish_task_progress(f"Saved {path.name}")
 
@@ -6967,6 +7280,7 @@ class ToolkitGUI(QMainWindow):
             vi_box.setLineWrapMode(mode)
             wrap_view_btn.setText(f"↔ {'ON' if enabled else 'OFF'}")
             wrap_view_btn.setToolTip(f"Visual wrap: {'ON' if enabled else 'OFF'}")
+            row_height_timer.start(0)
             set_status("Visual line wrap enabled." if enabled else "Visual line wrap disabled.")
 
         def set_clt_color_mode(enabled: bool, *, persist: bool = True, quiet: bool = False) -> None:
@@ -6977,6 +7291,7 @@ class ToolkitGUI(QMainWindow):
             vi_box._clt_highlighter.set_color_spans(enabled)
             for row in range(table.rowCount()):
                 refresh_row_style(row)
+            row_height_timer.start(0)
             refresh_suggestions_for_row(table.currentRow())
             if persist:
                 self._save_clt_color_mode(enabled)
@@ -7173,6 +7488,7 @@ class ToolkitGUI(QMainWindow):
         dup_ref_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(tab_key="po_viewer"))
         refresh_suggest_btn.clicked.connect(lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         apply_suggest_btn.clicked.connect(apply_selected_suggestion)
+        undo_suggest_btn.clicked.connect(undo_last_po_change)
         suggestions_list.itemDoubleClicked.connect(lambda _item: apply_selected_suggestion())
         suggest_min_score.valueChanged.connect(lambda _value: (self.config.__setitem__("po_viewer_suggest_min_score", suggest_min_score.value()), save_config(self.config), refresh_suggestions_for_row(table.currentRow())))
 
@@ -7193,8 +7509,6 @@ class ToolkitGUI(QMainWindow):
         for nav_parent in (table, vi_box):
             add_shortcut("Ctrl+Up", lambda: switch_entry(-1), parent=nav_parent)
             add_shortcut("Ctrl+Down", lambda: switch_entry(1), parent=nav_parent)
-            add_shortcut(FILE_PREVIOUS_SHORTCUT, lambda: switch_file(-1), parent=nav_parent)
-            add_shortcut(FILE_NEXT_SHORTCUT, lambda: switch_file(1), parent=nav_parent)
         add_shortcut("Ctrl+E", focus_vi_editor)
         add_shortcut("F2", focus_vi_editor)
         add_shortcut("Ctrl+S", save_file)
@@ -7212,11 +7526,13 @@ class ToolkitGUI(QMainWindow):
                 for index in range(4)
             },
             wrap_all,
+            self._custom_shortcut_sequences,
+            lambda: switch_file(-1),
+            lambda: switch_file(1),
         )
         suggestion_shortcut_filter = RepeatedSuggestionShortcutFilter(
             _tab,
             {number: (lambda suggestion_number=number: apply_suggestion_number(suggestion_number)) for number in range(1, 4)},
-            blocked_when=lambda: po_viewer_wrap_filter.armed,
         )
         add_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_selected_with_gemini_api)
@@ -7269,10 +7585,10 @@ class ToolkitGUI(QMainWindow):
         max_files = QSpinBox(); max_files.setRange(0, 9999); max_files.setValue(int(self.config.get("gemini_web_max_files", 59)))
         max_lines = QSpinBox(); max_lines.setRange(1, 9999); max_lines.setValue(int(self.config.get("gemini_web_max_lines", 600)))
         max_entries = QSpinBox(); max_entries.setRange(1, 999); max_entries.setValue(int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
-        wait_seconds = QDoubleSpinBox(); wait_seconds.setRange(0.0, 999.0); wait_seconds.setDecimals(1); wait_seconds.setValue(float(self.config.get("gemini_web_wait_seconds", 8.0)))
+        wait_seconds = QDoubleSpinBox(); wait_seconds.setRange(2.5, 999.0); wait_seconds.setDecimals(1); wait_seconds.setSingleStep(0.5); wait_seconds.setValue(max(2.5, float(self.config.get("gemini_web_wait_seconds", 2.5))))
         timeout_seconds = QSpinBox(); timeout_seconds.setRange(1, 9999); timeout_seconds.setValue(int(self.config.get("gemini_web_timeout_seconds", 180)))
         retries = QSpinBox(); retries.setRange(0, 99); retries.setValue(int(self.config.get("gemini_web_retries", DEFAULT_BATCH_RETRIES)))
-        controls = [("Max files", max_files), ("Max lines", max_lines), ("Max entries", max_entries), ("Wait", wait_seconds), ("Timeout", timeout_seconds), ("Retries", retries)]
+        controls = [("Max files", max_files), ("Max lines", max_lines), ("Max entries", max_entries), ("Post-save wait", wait_seconds), ("Timeout", timeout_seconds), ("Retries", retries)]
         for i, (label, widget) in enumerate(controls):
             grid.addWidget(QLabel(label), 0, i)
             grid.addWidget(widget, 1, i)
@@ -7486,15 +7802,6 @@ class ToolkitGUI(QMainWindow):
         self._dr_option_selector(layout, "repack")
         source_edit = self._path_row(layout, "Manual sync source", "sync_source")
         target_edit = self._path_row(layout, "Manual sync target", "sync_target")
-
-        hint = QLabel(
-            "Repack runs one complete build: sync every selected Working folder into DRAT EXTRACTED by filename, "
-            "rebuild LIN and PAK types 1-3, copy generated files into Script, rebuild every extracted WAD, "
-            "then copy the generated WAD files into Game Folder. Sync by Filename remains available as a separate manual tool."
-        )
-        hint.setObjectName("muted")
-        hint.setWordWrap(True)
-        layout.addWidget(hint)
 
         row = QHBoxLayout()
         row.addStretch()

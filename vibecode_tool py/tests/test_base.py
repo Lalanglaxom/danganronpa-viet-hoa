@@ -1211,3 +1211,20 @@ def test_sync_reuses_prebuilt_target_index_without_collecting_unmatched_targets(
     assert result.copied == 1
     assert result.target_files == 2
     assert result.target_without_source == []
+
+
+def test_suggestion_index_accepts_current_in_memory_po_changes():
+    from dr_po_toolkit.translafixer import TranslationSuggestionIndex
+
+    po = parse_po_text(
+        'msgctxt "A"\nmsgid "Hello there"\nmsgstr "Xin chào"\n\n'
+        'msgctxt "B"\nmsgid "Hello friend"\nmsgstr "Chào bạn"\n'
+    )
+    index = TranslationSuggestionIndex()
+    assert index.add_po_file(po, Path("current.po")) == 2
+    assert index.suggest("Hello there", min_score=0.5)[0].translation == "Xin chào"
+
+    po.entries[0].msgstr = "Xin chào mới"
+    refreshed = TranslationSuggestionIndex()
+    refreshed.add_po_file(po, Path("current.po"))
+    assert refreshed.suggest("Hello there", min_score=0.5)[0].translation == "Xin chào mới"

@@ -1,0 +1,39 @@
+--- Gemini Translation Raw Output for e04_255_037.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧スクール水着が干してある…
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧That swimsuit is still there.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧胸のところに名前があるのが、
+#. マニアからするとポイントが高いらしい。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧If you're really into the sport, the logo on the chest\n"
+"can be super important...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 3 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧That swimsuit is still there.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Bộ đồ bơi đó vẫn ở đó.\n⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧If you're really into the sport, the logo on the chest\ncan be super important...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Nếu thực sự thích môn này, cái logo trước ngực\ncó thể cực kỳ quan trọng...\n⟦CLT⟧"
+

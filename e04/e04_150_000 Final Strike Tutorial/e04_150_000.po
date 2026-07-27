@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 聞きたくありません
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Not at all!"
+msgstr "Không cần đâu!"
+
+#. 聞かせてください
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Absolutely!"
+msgstr "Chắc chắn rồi!"
+
+#. <CLT 23>これまでは、<CLT><CLT 3>トドメ<CLT><CLT 23>は<CLT><CLT 3>%CTRL_FINAL_STRIKE%<CLT><CLT 23>を押せば、
+#. 特に考える必要もございませんでしたが…
+#. <CLT>
+msgctxt "0003 | NARRATION"
+msgid ""
+"<CLT 23>So far, you've probably been pressing the <CLT><CLT 3>%CTRL_FINAL_STRIKE%<CLT><CLT 23>\n"
+"during your <CLT><CLT 3>Final Strike<CLT><CLT 23> without a second thought.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Từ trước đến nay, có lẽ bạn chỉ việc bấm <CLT><CLT 3>%CTRL_FINAL_STRIKE%<CLT><CLT 23> trong lúc tung ra <CLT><CLT 3>Đòn Kết Liễu<CLT><CLT 23> mà chẳng cần phải suy nghĩ gì nhiều.\n"
+"<CLT>"
+
+#. <CLT 23>ここからは、トドメの際に、
+#. あなた様に<CLT><CLT 3>推理<CLT><CLT 23>をして頂きます。
+#. <CLT>
+msgctxt "0004 | NARRATION"
+msgid ""
+"<CLT 23>But from now on, you're gonna have to pay a little\n"
+"<CLT><CLT 3>extra attention<CLT><CLT 23> to your finishing blow.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhưng từ bây giờ, bạn sẽ phải chú ý <CLT><CLT 3>thêm một chút<CLT><CLT 23> vào đòn kết liễu của mình.\n"
+"<CLT>"
+
+#. <CLT 23>トドメに使う<CLT><CLT 3>言弾（コトダマ）<CLT><CLT 23>を、
+#. きちんとお選び頂かなければなりません。
+#. <CLT>
+msgctxt "0005 | NARRATION"
+msgid ""
+"<CLT 23>Now you'll have to choose the proper <CLT><CLT 3>Truth Bullet<CLT><CLT 23> to\n"
+"use during your coup de grace.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Bây giờ cậu phải chọn đúng <CLT><CLT 3>Đạn Luận Điểm<CLT><CLT 23> để\n"
+"sử dụng cho đòn kết liễu của mình.\n"
+"<CLT>"
+
+#. <CLT 23><CLT><CLT 3>選び方<CLT><CLT 23>は、ノンストップ議論と同じでございます。
+#. <CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23>をお使いください%CTRL_SCROLL_ALT%
+#. <CLT>
+msgctxt "0006 | NARRATION"
+msgid ""
+"<CLT 23>You'll <CLT><CLT 3>select it<CLT><CLT 23> the same way as during the Nonstop\n"
+"Debate—simply press the <CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23>%CTRL_SCROLL_ALT%\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Cách thức <CLT><CLT 3>lựa chọn<CLT><CLT 23> cũng giống như trong Tranh Luận Không Ngừng—chỉ cần dùng phím <CLT><CLT 3>%CTRL_QUICK_SELECT%<CLT><CLT 23>%CTRL_SCROLL_ALT%\n"
+"<CLT>"
+
+#. <CLT 23>議論と同様、推理難易度が“ユルヤカ”以下ですと、
+#. 言弾（コトダマ）の装填数が少なくなりますが…
+#. <CLT>
+msgctxt "0007 | NARRATION"
+msgid ""
+"<CLT 23>Also like the debate, if your Logic Difficulty is set\n"
+"to Kind, you'll have fewer bullets to choose from.\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Cũng giống như tranh luận, nếu Độ Khó Suy Luận của bạn được đặt ở mức Thư Giãn, số lượng đạn bạn có thể chọn sẽ ít hơn.\n"
+"<CLT>"
+
+#. <CLT 23>今回のバトルだけは、推理難易度“イジワル”と
+#. 同様の装填数にさせて頂きます。
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>But for educational purposes, we're going to pretend\n"
+"you're set to Mean regardless. Just this once, okay?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Nhưng vì mục đích giáo dục, chúng tôi sẽ tạm coi như\n"
+"cậu đã chọn độ khó Khó nhé. Chỉ lần này thôi đấy hiểu chưa?\n"
+"<CLT>"
+
+#. <CLT 23>そろそろ物語も後半戦でしょうか…
+#. ご健闘をお祈り致します。
+#. <CLT>
+msgctxt "0009 | NARRATION"
+msgid ""
+"<CLT 23>Oh, by the way! You're about halfway through the game\n"
+"now! Go you!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Ồ nhân tiện thì, bạn đã đi được khoảng một nửa câu chuyện rồi đấy! Cố lên nhé!\n"
+"<CLT>"
+
+#. <CLT 23>以上、ご確認のほど、よろしくお願い致します。
+#. <CLT>
+msgctxt "0010 | NARRATION"
+msgid ""
+"<CLT 23>Well then...good luck, and have fun!\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Vậy thôi... chúc bạn may mắn và chơi game vui vẻ!\n"
+"<CLT>"
+
+#. <CLT 23>マシンガントークバトルに<CLT><CLT 3>新要素が追加<CLT><CLT 23>されます。
+#. 説明をお聞きになりますか？
+#. <CLT>
+msgctxt "0011 | NARRATION"
+msgid ""
+"<CLT 23>A <CLT><CLT 3>new element has been added<CLT><CLT 23> to Bullet Time Battles.\n"
+"Would you like to hear more?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Một <CLT><CLT 3>yếu tố mới đã được thêm vào<CLT><CLT 23> Đấu Khẩu Súng Máy. Bạn\n"
+"có muốn nghe thêm không?\n"
+"<CLT>"

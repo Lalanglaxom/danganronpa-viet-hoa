@@ -1,0 +1,122 @@
+--- Gemini Translation Raw Output for e04_255_103.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. うーん…いったん、
+#. この棚についてまとめてみよう…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"I should try to find out more about this shelving\n"
+"unit."
+msgstr ""
+
+#. ⟦CLT 4⟧化学室の棚は、３つの棚に分かれている。
+#. ⟦CLT⟧
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It looks like it's split into three sections.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧Ａの棚には栄養剤、Ｂの棚には試薬、
+#. そして、Ｃの棚には毒薬の類が保管されていた。
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Section A has dietary supplements, section B has\n"
+"reagents, and section C has...lethal chemicals.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧おそらく、大神さんは、
+#. Ａの棚から⟦CLT⟧⟦CLT 3⟧プロテイン⟦CLT⟧⟦CLT 4⟧を持ち出したんだろうけど…
+#. ⟦CLT⟧
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Sakura must have gotten the ⟦CLT⟧⟦CLT 3⟧protein powder⟦CLT⟧⟦CLT 4⟧ from\n"
+"section A.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧…気になるのは、その⟦CLT⟧⟦CLT 3⟧Ａの棚⟦CLT⟧⟦CLT 4⟧に、
+#. ⟦CLT⟧⟦CLT 3⟧Ｃのラベル⟦CLT⟧⟦CLT 4⟧が貼られたビンが紛れ込んでいた事だ。
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But what concerns me is that in section A, there was a\n"
+"bottle with a label from ⟦CLT⟧⟦CLT 3⟧section C⟦CLT⟧⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧Ｃの棚にあるはずの⟦CLT⟧⟦CLT 3⟧毒薬⟦CLT⟧⟦CLT 4⟧のビンが、
+#. どうしてＡの棚に紛れ込んでいたのか…？
+#. ⟦CLT⟧
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What was a bottle of ⟦CLT⟧⟦CLT 3⟧poison⟦CLT⟧⟦CLT 4⟧ from section C doing in\n"
+"section A?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧何か…引っ掛かるよな…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There's definitely something going on there...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 23⟧⟦CLT⟧⟦CLT 3⟧化学室の薬品棚⟦CLT⟧⟦CLT 23⟧を手帳に記録しました。
+#. 言弾（コトダマ）メニューで確認できます。
+#. ⟦CLT⟧
+msgctxt "0008 | NARRATION"
+msgid ""
+"⟦CLT 23⟧\"⟦CLT⟧⟦CLT 3⟧Chem Lab Shelf⟦CLT⟧⟦CLT 23⟧\" has been added to the Truth Bullets\n"
+"section of your handbook.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 ATTEMPT 1 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 2 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 ATTEMPT 3 ERROR ====================
+Gemini prompt was placed, but no new response appeared. The Send button may not have submitted or the tab was interrupted.
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "I should try to find out more about this shelving\nunit."
+msgstr "Tớ nên thử tìm hiểu thêm về chiếc kệ này..."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧It looks like it's split into three sections.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Có vẻ như nó được chia thành ba ngăn.\n⟦CLT⟧"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧Section A has dietary supplements, section B has\nreagents, and section C has...lethal chemicals.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Ngăn A chứa thực phẩm bổ sung, ngăn B chứa thuốc thử, và ngăn C chứa... các loại hóa chất độc hại.\n⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧Sakura must have gotten the ⟦CLT⟧⟦CLT 3⟧protein powder⟦CLT⟧⟦CLT 4⟧ from\nsection A.\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chắc hẳn Sakura đã lấy ⟦CLT⟧⟦CLT 3⟧bột protein⟦CLT⟧⟦CLT 4⟧ từ ngăn A.\n⟦CLT⟧"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧But what concerns me is that in section A, there was a\nbottle with a label from ⟦CLT⟧⟦CLT 3⟧section C⟦CLT⟧⟦CLT 4⟧...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Nhưng điều khiến tớ bận tâm là ở ngăn A lại lẫn một cái chai có nhãn của ⟦CLT⟧⟦CLT 3⟧ngăn C⟦CLT⟧⟦CLT 4⟧...\n⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧What was a bottle of ⟦CLT⟧⟦CLT 3⟧poison⟦CLT⟧⟦CLT 4⟧ from section C doing in\nsection A?\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Tại sao một lọ ⟦CLT⟧⟦CLT 3⟧thuốc độc⟦CLT⟧⟦CLT 4⟧ từ ngăn C lại nằm trong ngăn A chứ...?\n⟦CLT⟧"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "⟦CLT 4⟧There's definitely something going on there...\n⟦CLT⟧"
+msgstr "⟦CLT 4⟧Chắc chắn có gì đó không ổn ở đây...\n⟦CLT⟧"
+
+msgctxt "0008 | NARRATION"
+msgid "⟦CLT 23⟧\"⟦CLT⟧⟦CLT 3⟧Chem Lab Shelf⟦CLT⟧⟦CLT 23⟧\" has been added to the Truth Bullets\nsection of your handbook.\n⟦CLT⟧"
+msgstr "⟦CLT 23⟧\"⟦CLT⟧⟦CLT 3⟧Kệ hóa chất phòng thí nghiệm⟦CLT⟧⟦CLT 23⟧\" đã được ghi lại trong mục Đạn Luận của sổ học sinh.\n⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Chem Lab Shelf
+

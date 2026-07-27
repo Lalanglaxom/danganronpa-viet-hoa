@@ -6,6 +6,13 @@ from typing import Any
 
 from .dr_options import DR_FILE_OPTION_KEYS
 from .linewrap import default_wrap_presets, normalize_wrap_presets
+from .shortcuts import (
+    FILE_SHORTCUT_ACTIONS,
+    WRAP_SHORTCUT_ACTIONS,
+    default_file_shortcuts,
+    default_wrap_shortcuts,
+    normalize_custom_shortcuts,
+)
 
 DEFAULT_CONFIG = {
     "last_path": "",
@@ -15,13 +22,15 @@ DEFAULT_CONFIG = {
     "max_cuts": 2,
     "linewrap_active_preset": 0,
     "linewrap_presets": default_wrap_presets(),
+    "wrap_shortcuts": default_wrap_shortcuts(),
+    "file_navigation_shortcuts": default_file_shortcuts(),
     "gemini_model": "gemini-2.5-flash",
     "translation_batch_size": 20,
     "gemini_web_cdp_url": "http://localhost:9222",
     "gemini_web_max_files": 59,
     "gemini_web_max_lines": 600,
     "gemini_web_max_entries": 40,
-    "gemini_web_wait_seconds": 8.0,
+    "gemini_web_wait_seconds": 2.5,
     "gemini_web_timeout_seconds": 180,
     "gemini_web_retries": 2,
     "gemini_translate_mode": "web",
@@ -67,12 +76,16 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
     if not p.exists():
         merged = dict(DEFAULT_CONFIG)
         merged["linewrap_presets"] = default_wrap_presets()
+        merged["wrap_shortcuts"] = default_wrap_shortcuts()
+        merged["file_navigation_shortcuts"] = default_file_shortcuts()
         return merged
     try:
         data = json.loads(p.read_text(encoding="utf-8"))
     except Exception:
         merged = dict(DEFAULT_CONFIG)
         merged["linewrap_presets"] = default_wrap_presets()
+        merged["wrap_shortcuts"] = default_wrap_shortcuts()
+        merged["file_navigation_shortcuts"] = default_file_shortcuts()
         return merged
 
     # Migrate the former single wrap setting into four editable presets.
@@ -106,6 +119,12 @@ def load_config(path: str | Path | None = None) -> dict[str, Any]:
         legacy_hard=merged.get("hard_limit", DEFAULT_CONFIG["hard_limit"]),
         legacy_max_cuts=merged.get("max_cuts", DEFAULT_CONFIG["max_cuts"]),
     )
+    normalized_shortcuts = normalize_custom_shortcuts(
+        merged.get("wrap_shortcuts"),
+        merged.get("file_navigation_shortcuts"),
+    )
+    merged["wrap_shortcuts"] = {action: normalized_shortcuts[action] for action in WRAP_SHORTCUT_ACTIONS}
+    merged["file_navigation_shortcuts"] = {action: normalized_shortcuts[action] for action in FILE_SHORTCUT_ACTIONS}
     try:
         active_preset = int(merged.get("linewrap_active_preset", 0))
     except (TypeError, ValueError):

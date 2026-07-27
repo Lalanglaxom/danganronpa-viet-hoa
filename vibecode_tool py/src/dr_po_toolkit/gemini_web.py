@@ -41,6 +41,7 @@ DEFAULT_GEMINI_URL = "https://gemini.google.com/app"
 DEFAULT_CHROME_USER_DATA_DIR = str(Path.home() / "ChromeDebug")
 DEFAULT_MAX_ENTRIES_PER_BATCH = 40
 DEFAULT_BATCH_RETRIES = 2
+MIN_POST_SAVE_DELAY_SECONDS = 2.5
 DEFAULT_NO_PROGRESS_TIMEOUT_SECONDS = 60
 
 
@@ -644,6 +645,20 @@ class GeminiWebSession:
         self._playwright = None
         self._browser = None
         self.page = None
+        self._last_entries_saved_at: float | None = None
+
+    def note_entries_saved(self) -> None:
+        """Mark when accepted PO entries were written to disk."""
+        self._last_entries_saved_at = time.monotonic()
+
+    def _wait_after_saved_entries(self, stop_requested: StopFn | None = None) -> None:
+        if self._last_entries_saved_at is None:
+            return
+        elapsed = time.monotonic() - self._last_entries_saved_at
+        remaining = MIN_POST_SAVE_DELAY_SECONDS - elapsed
+        if remaining > 0:
+            sleep_with_stop(remaining, stop_requested)
+        self._last_entries_saved_at = None
 
     def __enter__(self) -> "GeminiWebSession":
         try:
@@ -728,6 +743,7 @@ class GeminiWebSession:
             pass
 
     def send(self, text: str, max_wait_seconds: int = 180, stop_requested: StopFn | None = None) -> str:
+        self._wait_after_saved_entries(stop_requested)
         page = self._ensure_page()
         return send_to_gemini(page, text, max_wait_seconds=max_wait_seconds, stop_requested=stop_requested)
 
@@ -1115,7 +1131,7 @@ def translate_po_file_via_web(
     session: GeminiWebSession,
     po_path: str | Path,
     max_lines_per_batch: int = 600,
-    wait_between_batches: float = 8.0,
+    wait_between_batches: float = MIN_POST_SAVE_DELAY_SECONDS,
     allow_invalid: AllowInvalid = False,
     rename_folder: bool = True,
     response_timeout_seconds: int = 180,
@@ -1151,8 +1167,8 @@ def translate_po_file_via_web(
         max_lines_per_batch=max_lines_per_batch,
         max_entries_per_batch=max_entries_per_batch,
     )
-    all_valid_translations: dict[str, str] = {}
-    all_invalid_translations: dict[str, str] = {}
+    pending_invalid_translations: dict[str, str] = {}
+    effective_wait = max(MIN_POST_SAVE_DELAY_SECONDS, float(wait_between_batches or 0.0))
 
     say(f"File: {po_path.name} | missing {missing_before}/{total_entries}")
     for idx, batch in enumerate(batches, start=1):
@@ -1232,16 +1248,18 @@ def translate_po_file_via_web(
         errors = validate_translations(batch, translations_by_uid)
         invalid_uids = {err.uid for err in errors if err.reason != "missing translation"}
         allow_invalid_now = _allow_invalid_enabled(allow_invalid)
-        accepted = 0
+        translations_to_save: dict[str, str] = {}
         for uid, translation in translations_by_uid.items():
             if uid in invalid_uids:
-                all_invalid_translations[uid] = translation
                 if allow_invalid_now:
-                    accepted += 1
+                    translations_to_save[uid] = translation
+                    pending_invalid_translations.pop(uid, None)
+                else:
+                    pending_invalid_translations[uid] = translation
             else:
-                all_valid_translations[uid] = translation
-                accepted += 1
+                translations_to_save[uid] = translation
 
+        accepted = len(translations_to_save)
         if invalid_uids:
             say(f"  Allow invalid now: {'ON' if allow_invalid_now else 'OFF'}")
 
@@ -1261,28 +1279,38 @@ def translate_po_file_via_web(
         else:
             say(f"  Parsed {len(translations_by_uid)}/{len(batch)}, accepted {accepted}, errors {len(errors)}")
 
-        if idx < len(batches) and wait_between_batches:
-            sleep_with_stop(float(wait_between_batches), stop_requested)
+        if translations_to_save:
+            fresh_po = load_po(po_path)
+            changed = patch_msgstr_by_uid(fresh_po, translations_to_save)
+            if changed:
+                save_po(fresh_po, po_path)
+                session.note_entries_saved()
+                result.translated += changed
+            say(f"  Saved {changed} accepted entries from batch {idx}/{len(batches)}")
+        else:
+            say(f"  No accepted entries saved from batch {idx}/{len(batches)}")
+
+        if idx < len(batches):
+            say(f"  Waiting {effective_wait:.1f}s before the next batch")
+            sleep_with_stop(effective_wait, stop_requested)
 
     check_stop(stop_requested)
     allow_invalid_at_save = _allow_invalid_enabled(allow_invalid)
-    translations_to_save = dict(all_valid_translations)
-    if allow_invalid_at_save:
-        translations_to_save.update(all_invalid_translations)
-
-    if all_invalid_translations:
+    if pending_invalid_translations:
         say(
-            f"Allow invalid at save: {'ON' if allow_invalid_at_save else 'OFF'} | "
-            f"invalid translations {'included' if allow_invalid_at_save else 'skipped'}: {len(all_invalid_translations)}"
+            f"Allow invalid at final save: {'ON' if allow_invalid_at_save else 'OFF'} | "
+            f"invalid translations {'included' if allow_invalid_at_save else 'skipped'}: {len(pending_invalid_translations)}"
         )
+        if allow_invalid_at_save:
+            fresh_po = load_po(po_path)
+            changed = patch_msgstr_by_uid(fresh_po, pending_invalid_translations)
+            if changed:
+                save_po(fresh_po, po_path)
+                session.note_entries_saved()
+                result.translated += changed
 
-    if translations_to_save:
-        fresh_po = load_po(po_path)
-        changed = patch_msgstr_by_uid(fresh_po, translations_to_save)
-        if changed:
-            save_po(fresh_po, po_path)
-        result.translated = changed
-        say(f"Saved {changed} translations to {po_path.name}")
+    if result.translated:
+        say(f"Saved {result.translated} translations to {po_path.name}")
     else:
         say("No translations accepted; PO file not changed")
 
@@ -1331,7 +1359,7 @@ def run_gemini_web_path(
     path: str | Path,
     max_files: int | None = 59,
     max_lines_per_batch: int = 600,
-    wait_between_batches: float = 8.0,
+    wait_between_batches: float = MIN_POST_SAVE_DELAY_SECONDS,
     cdp_url: str = DEFAULT_CDP_URL,
     allow_invalid: AllowInvalid = False,
     rename_duplicates: bool = True,

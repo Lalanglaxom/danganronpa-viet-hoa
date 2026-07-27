@@ -58,16 +58,18 @@ msgid ""
 "<CLT 23>Which Bullet Time Battle would you like to jump to?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Bạn muốn nhảy đến Đấu Khẩu Súng Máy nào?\n"
+"<CLT>"
 
 #. 閃きアナグラム１に飛ぶ
 msgctxt "0009 | CHOICE/RE:ACT"
 msgid "Jump to Hangman's Gambit 1"
-msgstr ""
+msgstr "Nhảy đến Trận Đồ Ký Tự 1"
 
 #. 閃きアナグラム２に飛ぶ
 msgctxt "0010 | CHOICE/RE:ACT"
 msgid "Jump to Hangman's Gambit 2"
-msgstr ""
+msgstr "Nhảy đến Trận Đồ Ký Tự 2"
 
 #. 閃きアナグラム３に飛ぶ
 msgctxt "0011 | CHOICE/RE:ACT"
@@ -81,3 +83,5 @@ msgid ""
 "<CLT 23>Which Hangman's Gambit would you like to jump to?\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>Bạn muốn nhảy đến Trận Đồ Ký Tự nào?\n"
+"<CLT>"

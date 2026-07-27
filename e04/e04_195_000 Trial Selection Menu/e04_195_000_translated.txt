@@ -1,0 +1,31 @@
+--- Gemini Translation Raw Output for e04_195_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 犯人当て付近
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Killer Selection"
+msgstr ""
+
+#. コトダマセレクト１付近
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Truth Bullet Selection 1"
+msgstr ""
+
+#. コトダマセレクト２付近
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Truth Bullet Selection 2"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Chọn Kẻ Sát Nhân"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Lựa chọn Đạn Luận Chứng 1"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Lựa chọn Đạn Luận Chứng 2"
+
+==================== FOLDER SUMMARY ====================
+Trial Selection Menu
+

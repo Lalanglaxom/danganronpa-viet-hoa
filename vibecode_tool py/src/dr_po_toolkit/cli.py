@@ -275,7 +275,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--max-files", type=int, default=59)
     p.add_argument("--max-lines", type=int, default=600, help="approx max PO lines per Gemini batch")
     p.add_argument("--max-entries", type=int, default=DEFAULT_MAX_ENTRIES_PER_BATCH, help="max entries per Gemini batch; smaller batches prevent Gemini Web hangs")
-    p.add_argument("--wait", type=float, default=8.0, help="seconds between Gemini batches")
+    p.add_argument("--wait", type=float, default=2.5, help="seconds after saving a batch before the next Gemini batch; minimum 2.5")
     p.add_argument("--timeout", type=int, default=180, help="seconds to wait for each Gemini response")
     p.add_argument("--retries", type=int, default=DEFAULT_BATCH_RETRIES, help="retry a stuck/invalid Gemini batch this many times")
     p.add_argument("--cdp-url", default=DEFAULT_CDP_URL, help="Chrome CDP URL")
