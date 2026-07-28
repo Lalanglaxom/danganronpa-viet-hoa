@@ -112,7 +112,7 @@
       "notes": ""
     },
     {
-      "enabled": false,
+      "enabled": true,
       "speaker": "",
       "scope": "",
       "find": "Naegi",
@@ -227,7 +227,7 @@
       "scope": "",
       "find": "Tớ;tớ",
       "replace": "Mình;mình",
-      "whole_word": false,
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
@@ -237,8 +237,41 @@
       "speaker": "",
       "scope": "",
       "find": "Tui mình;tui mình",
-      "replace": "Tụi mình;tụi mình",
-      "whole_word": false,
+      "replace": "Tụi mình; tụi mình",
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Mày;mày;Tao;tao",
+      "replace": "Mi;mi;Ta;ta",
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Nó;nó",
+      "replace": "Hắn;hắn",
+      "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Hông;hông",
+      "replace": "Không;không",
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
