@@ -13,7 +13,18 @@
       "notes": ""
     },
     {
-      "enabled": false,
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Genocide Jill",
+      "replace": "Jill Đồ Tể",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
       "speaker": "",
       "scope": "",
       "find": "Lớp Xét Xử",
@@ -157,7 +168,7 @@
     },
     {
       "enabled": true,
-      "speaker": "MAKOTO",
+      "speaker": "",
       "scope": "clt:4",
       "find": "Tớ;tớ",
       "replace": "Mình;mình",
@@ -168,7 +179,7 @@
     },
     {
       "enabled": true,
-      "speaker": "MAKOTO",
+      "speaker": "",
       "scope": "clt:4",
       "find": "Tôi;tôi",
       "replace": "Mình;mình",
