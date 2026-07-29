@@ -50,7 +50,8 @@ msgid ""
 "to look inside.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một ô cửa kính trên cánh cửa phòng giải trí, nên tui đã vội nhìn vào bên trong.\n"
+"<CLT 4>Có một ô cửa kính trên cánh cửa phòng giải trí, nên\n"
+"tui đã vội nhìn vào bên trong.\n"
 "<CLT>"
 
 #. <CLT 4>すると…
@@ -87,13 +88,16 @@ msgid ""
 "head.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cậu ấy vẫn ngồi trên ghế, trông như... đang gục đầu xuống.\n"
+"<CLT 4>Cậu ấy vẫn ngồi trên ghế, trông như... đang gục\n"
+"đầu xuống.\n"
 "<CLT>"
 
 #. どういう事？　大神さんに何があったの？
 msgctxt "0012 | KYOUKO KIRIGIRI"
 msgid "What's going on? Did something happen to her?"
-msgstr "Chuyện gì đang xảy ra thế? Có chuyện gì đã xảy ra với cậu ấy à?"
+msgstr ""
+"Chuyện gì đang xảy ra thế? Có chuyện gì đã xảy\n"
+"ra với cậu ấy à?"
 
 #. この部屋の前を通りかかったら…
 #. たまたま、窓越しにさくらちゃんの姿が見えて…
@@ -101,7 +105,9 @@ msgctxt "0013 | AOI ASAHINA"
 msgid ""
 "I was just walking past, and I happened to notice her\n"
 "through the window..."
-msgstr "Tui vừa đi ngang qua, thì vô tình nhìn thấy cậu ấy qua ô cửa kính..."
+msgstr ""
+"Tui vừa đi ngang qua, thì vô tình nhìn thấy cậu\n"
+"ấy qua ô cửa kính..."
 
 #. でも…ドアが開かなくって…
 msgctxt "0014 | AOI ASAHINA"
@@ -126,7 +132,9 @@ msgstr "P-Phải làm sao đây!? Tụi mình phải làm gì bây giờ!?"
 #. …まずは、部屋に入る方法を考えましょう。
 msgctxt "0018 | KYOUKO KIRIGIRI"
 msgid "First of all, we need to get into that room."
-msgstr "Trước hết, chúng ta cần phải vào được căn phòng đó đã."
+msgstr ""
+"Trước hết, tụi mình cần phải vào được căn phòng\n"
+"đó đã."
 
 #. でも、ドアには鍵が掛かってるみたいだよ。
 #. ドアを壊したら校則違反に…
@@ -134,7 +142,9 @@ msgctxt "0019 | MAKOTO NAEGI"
 msgid ""
 "But the door's locked, right? And if we break in,\n"
 "we'll be violating school regulations..."
-msgstr "Nhưng cửa đang khóa mà đúng không? Và nếu chúng mình đột nhập vào, chúng mình sẽ vi phạm nội quy trường..."
+msgstr ""
+"Nhưng cửa đang khóa mà đúng không? Và nếu chúng mình đột\n"
+"nhập vào, chúng mình sẽ vi phạm nội quy trường..."
 
 #. ドアを破るのよ。
 msgctxt "0020 | KYOUKO KIRIGIRI"
@@ -152,7 +162,9 @@ msgctxt "0022 | KYOUKO KIRIGIRI"
 msgid ""
 "The door isn't locked. It's not locked because <CLT 3>the\n"
 "rec room door doesn't *have* a lock<CLT>."
-msgstr "Cửa không hề khóa. Không khóa là vì <CLT 3>cửa phòng giải trí *chẳng có* ổ khóa nào cả<CLT>."
+msgstr ""
+"Cửa không hề khóa. Không khóa là vì <CLT 3>cửa phòng giải trí\n"
+"*chẳng có* ổ khóa nào cả<CLT>."
 
 #. え？　じゃあ、どうして…？
 msgctxt "0023 | MAKOTO NAEGI"
@@ -165,7 +177,9 @@ msgctxt "0024 | KYOUKO KIRIGIRI"
 msgid ""
 "It feels like the door is pressing up against\n"
 "something inside the room."
-msgstr "Cảm giác như có thứ gì đó bên trong phòng đang chèn chặt vào cánh cửa."
+msgstr ""
+"Cảm giác như có thứ gì đó bên trong phòng đang chèn\n"
+"chặt vào cánh cửa."
 
 #. イス…かしら…？
 msgctxt "0025 | KYOUKO KIRIGIRI"
@@ -183,12 +197,16 @@ msgctxt "0027 | KYOUKO KIRIGIRI"
 msgid ""
 "Either way, this door isn't locked. Which means, as\n"
 "far as I can tell, the rule doesn't apply."
-msgstr "Dù sao đi nữa, đây không phải là một cánh cửa bị khóa. Nghĩa là, theo tớ thấy, quy định đó không áp dụng trong trường hợp này."
+msgstr ""
+"Dù sao thì, cánh cửa này không hề bị khóa. Có nghĩa là,\n"
+"theo như tớ thấy, quy tắc đó không được áp dụng."
 
 #. じゃあ、ドアを破っても問題ないって事だね！？
 msgctxt "0028 | MAKOTO NAEGI"
 msgid "Then...there's no problem if we break in!?"
-msgstr "Vậy... chúng mình phá cửa vào thì cũng không sao đúng không!?"
+msgstr ""
+"Vậy... chúng mình phá cửa vào thì cũng không sao\n"
+"đúng không!?"
 
 #. ドアの窓を割りましょう。それが手っ取り早いわ。
 msgctxt "0029 | KYOUKO KIRIGIRI"
@@ -202,7 +220,9 @@ msgctxt "0030 | AOI ASAHINA"
 msgid ""
 "Okay, I'll go get something to break it with! Wait\n"
 "right here!"
-msgstr "Được rồi, tui sẽ đi lấy thứ gì đó để đập vỡ nó! Đợi tui ở đây nhé!"
+msgstr ""
+"Được rồi, tui sẽ đi lấy thứ gì đó để đập vỡ nó! Đợi\n"
+"tui ở đây nhé!"
 
 #. <CLT 4>娯楽室の中では…
 #. 相変わらず…大神さんはピクリとも動かない…
@@ -213,7 +233,8 @@ msgid ""
 "inch...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bên trong phòng giải trí, Sakura vẫn không nhúc nhích dù chỉ một chút...\n"
+"<CLT 4>Bên trong phòng giải trí, Sakura vẫn không nhúc nhích\n"
+"dù chỉ một chút...\n"
 "<CLT>"
 
 #. <CLT 4>気を失ってる……んだよな？
@@ -230,7 +251,9 @@ msgstr ""
 #. あの大神さんなんだし…
 msgctxt "0033 | MAKOTO NAEGI"
 msgid "Is she...okay? I mean, it's Sakura, so I'm sure..."
-msgstr "Cậu ấy... không sao chứ? Ý tớ là, đó là Sakura mà, nên chắc chắn..."
+msgstr ""
+"Cậu ấy... không sao chứ? Ý tớ là, đó là Sakura\n"
+"mà, nên chắc chắn..."
 
 #. ………………
 msgctxt "0034 | KYOUKO KIRIGIRI"
@@ -271,7 +294,7 @@ msgstr ""
 #. …持って来たよ！！
 msgctxt "0038 | AOI ASAHINA"
 msgid "Here!"
-msgstr "Đây rồi!!"
+msgstr "Đây này!"
 
 #. あっちの教室に…ほうきがあったから…
 #. これで…
@@ -279,17 +302,19 @@ msgctxt "0039 | AOI ASAHINA"
 msgid ""
 "*Huff huff* I found a broom! *Huff* In the classroom!\n"
 "*Huff huff* Use it!"
-msgstr "*Hà hộc* Tui tìm thấy một cây chổi! *Hà* Ở trong phòng học! *Hà hộc* Dùng cái này đi!"
+msgstr ""
+"*Hà hộc* Tui tìm thấy một cây chổi! *Hà* Ở trong phòng\n"
+"học! *Hà hộc* Dùng cái này đi!"
 
 #. …いけるわね、苗木君？
 msgctxt "0040 | KYOUKO KIRIGIRI"
 msgid "You can handle this, right Makoto?"
-msgstr "Cậu xử lý được việc này chứ, Naegi?"
+msgstr "Cậu xử lý được việc này chứ, Makoto?"
 
 #. お願い！　早くッ！！
 msgctxt "0041 | AOI ASAHINA"
 msgid "C'mon! Please, hurry!"
-msgstr "Nhanh lên! Xin ông đấy, mau lên!!"
+msgstr "Nhanh lên! Xin ông đấy, mau lên!"
 
 #. わかった！　２人とも離れてて！
 msgctxt "0042 | MAKOTO NAEGI"
@@ -303,7 +328,8 @@ msgid ""
 "<CLT 4>I took hold of the broom and swung as hard as I could.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ giơ cây chổi trong tay lên và vung mạnh hết sức có thể.\n"
+"<CLT 4>Mình giơ cây chổi trong tay lên và vung mạnh hết\n"
+"sức có thể.\n"
 "<CLT>"
 
 #. <CLT 4>ドアの窓に目掛けて、
@@ -315,7 +341,8 @@ msgid ""
 "solid hit...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhắm thẳng vào ô cửa kính, chỉ cần một cú giáng thật mạnh...\n"
+"<CLT 4>Nhắm thẳng vào ô cửa kính, chỉ cần một cú giáng\n"
+"thật mạnh...\n"
 "<CLT>"
 
 #. <CLT 23>「ガシャーン！」
@@ -337,7 +364,8 @@ msgid ""
 "across the rec room floor.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ô cửa kính vỡ vụn thành trăm mảnh, văng tung tóe khắp sàn phòng giải trí.\n"
+"<CLT 4>Ô cửa kính vỡ vụn thành trăm mảnh, văng tung tóe khắp\n"
+"sàn phòng giải trí.\n"
 "<CLT>"
 
 #. <CLT 4>ボクは、ガラスのなくなった窓から手を入れ、
@@ -349,14 +377,17 @@ msgid ""
 "started jostling the chair leaning against the door.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ thò tay qua ô cửa kính giờ đã trống rỗng và bắt đầu xê dịch cái ghế đang chèn vào cánh cửa.\n"
+"<CLT 4>Mình thò tay qua ô cửa kính giờ đã trống rỗng và bắt\n"
+"đầu xê dịch cái ghế đang chèn vào cánh cửa.\n"
 "<CLT>"
 
 #. このイス…かなり重…ッ！
 #. でも、なんとか…ッ！！
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "The chair's pretty heavy... But if I can just...!"
-msgstr "Cái ghế này nặng thật đấy... Nhưng nếu tớ cố thêm chút nữa...!"
+msgstr ""
+"Cái ghế này nặng thật đấy... Nhưng nếu tớ cố\n"
+"thêm chút nữa...!"
 
 #. <CLT 4>精一杯の力でイスをどかすと、
 #. ようやくドアノブが回り……
@@ -367,7 +398,8 @@ msgid ""
 "knob turned.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ dùng hết sức đẩy nó ra, và cuối cùng tay nắm cửa cũng đã xoay được.\n"
+"<CLT 4>Mình dùng hết sức đẩy hắn ra, và cuối cùng tay nắm cửa\n"
+"cũng đã xoay được.\n"
 "<CLT>"
 
 #. 大神さんッ！！
@@ -382,7 +414,7 @@ msgid ""
 "<CLT 4>I ran up to her as fast as I could.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ chạy lại gần cậu ấy nhanh nhất có thể.\n"
+"<CLT 4>Mình chạy lại gần cậu ấy nhanh nhất có thể.\n"
 "<CLT>"
 
 #. <CLT 4>そして、その手が彼女に触れた瞬間…
@@ -392,7 +424,7 @@ msgid ""
 "<CLT 4>But the moment I laid my hand on her...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng ngay khoảnh khắc tớ đặt tay lên người cậu ấy...\n"
+"<CLT 4>Nhưng ngay khoảnh khắc đặt tay lên người cậu ấy...\n"
 "<CLT>"
 
 #. <CLT 4>ボクが感じたのは<CLT><CLT 3>“死”<CLT><CLT 4>だった。
@@ -402,7 +434,7 @@ msgid ""
 "<CLT 4>...all I felt was cold <CLT><CLT 3>death<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...tất cả những gì tớ cảm nhận được chỉ là sự lạnh lẽo của <CLT><CLT 3>cái chết<CLT><CLT 4>.\n"
+"<CLT 4>...những gì mình cảm nhận được là cái chết <CLT><CLT 3>lạnh lẽo<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. <CLT 4>かろうじて体温は残っていたものの…
@@ -413,7 +445,8 @@ msgid ""
 "living body.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ chỉ còn cảm nhận được chút hơi ấm tàn dư cuối cùng của một cơ thể sống.\n"
+"<CLT 4>Mình chỉ còn cảm nhận được chút hơi ấm tàn dư cuối\n"
+"cùng của một cơ thể sống.\n"
 "<CLT>"
 
 #. <CLT 4>大神さんの体からは、
@@ -468,7 +501,7 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
 
 #. <CLT 4>ひとまず、朝日奈さんの話を聞こう…！
@@ -478,7 +511,7 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
 
 #. <CLT 4>ひとまず、朝日奈さんの話を聞こう…！
@@ -488,7 +521,7 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
 
 #. <CLT 23>「ガタガタガタ！」
@@ -528,7 +561,7 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
 
 #. <CLT 4>ひとまず、朝日奈さんの話を聞こう…！
@@ -538,7 +571,7 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
 
 #. <CLT 4>ひとまず、朝日奈さんの話を聞こう…！
@@ -548,5 +581,5 @@ msgid ""
 "<CLT 4>I need to hear what Hina has to say...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải nghe xem Hina nói gì đã...!\n"
+"<CLT 4>Trước tiên mình cần phải nghe xem Hina nói gì đã...!\n"
 "<CLT>"
