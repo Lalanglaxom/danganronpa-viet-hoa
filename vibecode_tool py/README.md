@@ -284,6 +284,23 @@ Direct Gemini API mode is optional and requires:
 pip install google-genai
 ```
 
+Interactive Gemini API translation in PO Viewer, Search, and duplicate/diff views
+sends exactly one PO entry per request. Each request includes
+`previous_vietnamese_context`: up to the five immediately preceding translated
+entries from that entry's current working PO file, ordered oldest to newest.
+Gemini must use this context for consistent Vietnamese wording, xưng hô, speaker
+tone, and terminology while keeping the current English `source_en` authoritative.
+When several entries from one file are selected, each accepted translation is
+available as context for the following request.
+
+Mass Translate File keeps the configured `Max entries / batch` behavior and does
+not switch to one-entry requests.
+
+PO Viewer keeps a unified undo history for every Vietnamese text mutation,
+including direct editor/table changes, line wrapping, suggestion apply,
+find/replace, preset replacement, Translafixer fill, and Gemini translation.
+Use the toolbar Undo button, the Suggestions Undo button, or `Ctrl+Z`.
+
 ### Copy.po safety
 
 Gemini Web mode never translates, overwrites, edits, or renames existing `- Copy.po` files.

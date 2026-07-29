@@ -3186,56 +3186,86 @@ class ToolkitGUI(QMainWindow):
                 QMessageBox.warning(self, "Search", "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
                 return
             current = current_result_index()
-            synthetic_entries: list[POEntry] = []
-            result_by_uid: dict[str, int] = {}
-            for position, result_index in enumerate(sorted(set(indices))):
+            work_by_file: dict[Path, list[tuple[int, POEntry]]] = {}
+            context_by_file: dict[Path, list[POEntry]] = {}
+            for result_index in sorted(set(indices)):
                 if result_index < 0 or result_index >= len(self.search_results):
                     continue
                 result = self.search_results[result_index]
                 source_translation = msgstr_box.toPlainText() if result_index == current else result.msgstr
-                entry = POEntry(
-                    index=position,
-                    msgctxt=result.msgctxt or None,
+                try:
+                    file_po = load_search_po(result.file)
+                except Exception as exc:
+                    status.setText(f"Could not load {result.file.name} for Gemini context: {exc}")
+                    return
+                actual_entry = next((entry for entry in file_po.entries if entry.uid == result.uid), None)
+                if actual_entry is None:
+                    actual_entry = next(
+                        (
+                            entry
+                            for entry in file_po.entries
+                            if (entry.msgctxt or "") == (result.msgctxt or "") and int(entry.line or 0) == int(result.line or 0)
+                        ),
+                        None,
+                    )
+                if actual_entry is None:
+                    continue
+                request_entry = POEntry(
+                    index=actual_entry.index,
+                    msgctxt=actual_entry.msgctxt,
                     msgid=result.msgid,
                     msgstr=source_translation,
-                    line=result.line,
+                    comments=list(actual_entry.comments),
+                    extracted_comments=list(actual_entry.extracted_comments),
+                    line=actual_entry.line,
                 )
-                synthetic_entries.append(entry)
-                result_by_uid[entry.uid] = result_index
-            if not synthetic_entries:
+                work_by_file.setdefault(result.file, []).append((result_index, request_entry))
+                context_by_file[result.file] = list(file_po.entries)
+            if not work_by_file:
                 return
             model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
-            batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
             sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
-            begin_progress("Gemini translating Search results", len(synthetic_entries))
+            total_entries = sum(len(items) for items in work_by_file.values())
+            begin_progress("Gemini translating Search results", total_entries)
             QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
             try:
                 client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
+                updates: dict[int, str] = {}
+                errors = []
+                completed = 0
+                groups = list(work_by_file.items())
+                for group_index, (file_path, items) in enumerate(groups):
+                    request_entries = [entry for _result_index, entry in items]
+                    result_by_uid = {entry.uid: result_index for result_index, entry in items}
 
-                def report_gemini_progress(done: int, total: int) -> None:
-                    update_progress(done, total, "Gemini translating Search results")
+                    def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
+                        update_progress(offset + done, total_entries, "Gemini translating Search results")
 
-                translations, errors = translate_entries_with_client(
-                    synthetic_entries,
-                    client,
-                    batch_size=batch_size,
-                    sleep_seconds=sleep_seconds,
-                    allow_partial=False,
-                    prompt=SYSTEM_INSTRUCTIONS,
-                    progress=report_gemini_progress,
-                )
+                    translations, entry_errors = translate_entries_with_client(
+                        request_entries,
+                        client,
+                        batch_size=1,
+                        sleep_seconds=sleep_seconds,
+                        allow_partial=False,
+                        prompt=SYSTEM_INSTRUCTIONS,
+                        progress=report_gemini_progress,
+                        context_entries=context_by_file.get(file_path, []),
+                    )
+                    errors.extend(entry_errors)
+                    for uid, translation in translations.items():
+                        result_index = result_by_uid.get(uid)
+                        if result_index is not None:
+                            updates[result_index] = translation
+                    completed += len(items)
+                    if sleep_seconds and group_index + 1 < len(groups):
+                        time.sleep(sleep_seconds)
             except Exception as exc:
                 finish_progress("Gemini API failed")
                 QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
                 return
             finally:
                 QApplication.restoreOverrideCursor()
-            finish_progress(f"Gemini prepared {len(translations)} translation(s)")
-            updates = {
-                result_by_uid[uid]: translation
-                for uid, translation in translations.items()
-                if uid in result_by_uid
-            }
+            finish_progress(f"Gemini prepared {len(updates)} translation(s)")
             changed = save_updates(updates, progress_label="Saving Gemini translations") if updates else 0
             status.setText(
                 f"Gemini translated and saved {changed} Search result{'s' if changed != 1 else ''}."
@@ -4964,10 +4994,10 @@ class ToolkitGUI(QMainWindow):
             if not api_key:
                 QMessageBox.warning(dialog, view_title, "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
                 return
-            synthetic_entries: list[POEntry] = []
-            row_by_uid: dict[str, int] = {}
+            work_by_path: dict[Path, list[tuple[int, POEntry]]] = {}
+            context_by_path: dict[Path, list[POEntry]] = {}
             seen: set[tuple[Path, str]] = set()
-            for position, row in enumerate(rows):
+            for row in rows:
                 item = table.item(row, 3)
                 payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
                 path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
@@ -4975,39 +5005,59 @@ class ToolkitGUI(QMainWindow):
                     continue
                 seen.add((path, entry.uid))
                 source = str(payload.get("source") or entry.msgid)
-                synthetic = POEntry(
-                    index=position,
+                request_entry = POEntry(
+                    index=entry.index,
                     msgctxt=entry.msgctxt,
                     msgid=source,
                     msgstr=entry.msgstr,
+                    comments=list(entry.comments),
+                    extracted_comments=list(entry.extracted_comments),
                     line=entry.line,
                 )
-                synthetic_entries.append(synthetic)
-                row_by_uid[synthetic.uid] = row
-            if not synthetic_entries:
+                work_by_path.setdefault(path, []).append((row, request_entry))
+                po_file = po_cache.get(path)
+                if po_file is not None:
+                    context_by_path[path] = list(getattr(po_file, "entries", []))
+            if not work_by_path:
                 return
             model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
-            batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
             sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
-            self._begin_task_progress("Gemini duplicate rows", len(synthetic_entries))
+            total_entries = sum(len(items) for items in work_by_path.values())
+            self._begin_task_progress("Gemini duplicate rows", total_entries)
             self._pump_task_progress()
             QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
             try:
                 client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
+                translations_by_row: dict[int, str] = {}
+                errors = []
+                completed = 0
+                groups = list(work_by_path.items())
+                for group_index, (path, items) in enumerate(groups):
+                    request_entries = [entry for _row, entry in items]
+                    row_by_uid = {entry.uid: row for row, entry in items}
 
-                def report_gemini_progress(done: int, total: int) -> None:
-                    self._update_task_progress(done, total, "Gemini duplicate rows")
-                    self._pump_task_progress()
+                    def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
+                        self._update_task_progress(offset + done, total_entries, "Gemini duplicate rows")
+                        self._pump_task_progress()
 
-                translations, errors = translate_entries_with_client(
-                    synthetic_entries,
-                    client,
-                    batch_size=batch_size,
-                    sleep_seconds=sleep_seconds,
-                    allow_partial=False,
-                    prompt=SYSTEM_INSTRUCTIONS,
-                    progress=report_gemini_progress,
-                )
+                    translations, entry_errors = translate_entries_with_client(
+                        request_entries,
+                        client,
+                        batch_size=1,
+                        sleep_seconds=sleep_seconds,
+                        allow_partial=False,
+                        prompt=SYSTEM_INSTRUCTIONS,
+                        progress=report_gemini_progress,
+                        context_entries=context_by_path.get(path, []),
+                    )
+                    errors.extend(entry_errors)
+                    for uid, translation in translations.items():
+                        row = row_by_uid.get(uid)
+                        if row is not None:
+                            translations_by_row[row] = translation
+                    completed += len(items)
+                    if sleep_seconds and group_index + 1 < len(groups):
+                        time.sleep(sleep_seconds)
             except Exception as exc:
                 self._finish_task_progress("Gemini API failed")
                 QMessageBox.critical(dialog, "Gemini API", f"Gemini API translation failed:\n{exc}")
@@ -5017,10 +5067,7 @@ class ToolkitGUI(QMainWindow):
             changes: list[dict[str, object]] = []
             changed = 0
             current_row = table.currentRow()
-            for uid, translation in translations.items():
-                row = row_by_uid.get(uid)
-                if row is None:
-                    continue
+            for row, translation in translations_by_row.items():
                 item = table.item(row, 3)
                 payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
                 path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
@@ -5708,6 +5755,8 @@ class ToolkitGUI(QMainWindow):
         wrap_all_btn = self._tool_button("All", "Wrap all translations with the active preset", width=38)
         fill_btn = self._tool_button("TF", "Fill from Translafixer sources", width=38)
         gemini_selected_btn = self._tool_button("AI", "Translate selected rows with Gemini API", width=38)
+        undo_edit_btn = self._tool_button("Undo", "Undo the latest PO text change (Ctrl+Z)", width=46)
+        undo_edit_btn.setEnabled(False)
         search_replace_btn = self._tool_button("⌕", "Search / replace (Ctrl+F)", width=34)
         preset_replace_btn = self._tool_button("Preset", "Apply enabled ordered replacement rules to selected/current rows", width=58)
         dup_ref_btn = self._tool_button("Dup", "Open duplicate translation view for selected checkbox Working folders", width=42)
@@ -5732,6 +5781,7 @@ class ToolkitGUI(QMainWindow):
         tools.addSpacing(8)
         tools.addWidget(fill_btn)
         tools.addWidget(gemini_selected_btn)
+        tools.addWidget(undo_edit_btn)
         tools.addWidget(search_replace_btn)
         tools.addWidget(preset_replace_btn)
         tools.addWidget(dup_ref_btn)
@@ -5866,7 +5916,8 @@ class ToolkitGUI(QMainWindow):
         refresh_suggest_btn = self._button("Refresh", secondary=True)
         apply_suggest_btn = self._button("Apply", secondary=True)
         undo_suggest_btn = self._button("Undo", secondary=True)
-        undo_suggest_btn.setToolTip("Undo the most recent PO edit, including an applied suggestion (Ctrl+Z).")
+        undo_suggest_btn.setToolTip("Undo the latest PO text change: typing, table edits, wrapping, suggestions, replacements, Translafixer, or Gemini (Ctrl+Z).")
+        undo_suggest_btn.setEnabled(False)
         suggest_controls.addWidget(QLabel("Min match"))
         suggest_controls.addWidget(suggest_min_score)
         suggest_controls.addWidget(refresh_suggest_btn)
@@ -6023,6 +6074,12 @@ class ToolkitGUI(QMainWindow):
                 state["undo_stack"] = stack
             return stack
 
+        def update_po_undo_controls() -> None:
+            native_available = bool(vi_box.document().isUndoAvailable())
+            available = bool(_po_undo_stack()) or isinstance(state.get("pending_text_undo"), dict) or native_available
+            undo_edit_btn.setEnabled(available)
+            undo_suggest_btn.setEnabled(available)
+
         def trim_po_undo_stack() -> None:
             stack = _po_undo_stack()
             if len(stack) > 100:
@@ -6053,6 +6110,7 @@ class ToolkitGUI(QMainWindow):
                 return
             _po_undo_stack().append({"label": label, "changes": action_changes})
             trim_po_undo_stack()
+            update_po_undo_controls()
 
         def record_po_undo(row: int, old_text: str, new_text: str, label: str = "edit") -> None:
             if old_text == new_text or state.get("undoing"):
@@ -6088,6 +6146,7 @@ class ToolkitGUI(QMainWindow):
 
         def clear_pending_text_undo() -> None:
             state["pending_text_undo"] = None
+            update_po_undo_controls()
 
         def commit_pending_text_undo(*, clear_native: bool = True) -> bool:
             pending = state.get("pending_text_undo")
@@ -6144,6 +6203,7 @@ class ToolkitGUI(QMainWindow):
                 clear_pending_text_undo()
             else:
                 state["pending_text_undo"] = pending
+                update_po_undo_controls()
 
         def row_for_undo_change(change: dict[str, object]) -> int | None:
             po = po_file()
@@ -6164,6 +6224,7 @@ class ToolkitGUI(QMainWindow):
 
         def undo_last_po_change() -> None:
             if self._undo_focused_text_editor():
+                update_po_undo_controls()
                 return
             focus = QApplication.focusWidget()
             if (
@@ -6172,16 +6233,19 @@ class ToolkitGUI(QMainWindow):
                 or (focus is not None and (table.isAncestorOf(focus) or suggestions_list.isAncestorOf(focus)))
             ):
                 if self._undo_text_editor(vi_box):
+                    update_po_undo_controls()
                     return
             commit_pending_text_undo()
             stack = _po_undo_stack()
             if not stack:
                 set_status("Nothing to undo.")
+                update_po_undo_controls()
                 return
             action = stack.pop()
             raw_changes = action.get("changes", [])
             if not isinstance(raw_changes, list):
                 set_status("Nothing to undo.")
+                update_po_undo_controls()
                 return
             restored_rows: list[int] = []
             state["undoing"] = True
@@ -6199,6 +6263,7 @@ class ToolkitGUI(QMainWindow):
                 state["undoing"] = False
             if not restored_rows:
                 set_status("Nothing to undo.")
+                update_po_undo_controls()
                 return
             try:
                 keep_vi_focus = _focus_is_vi_editor()
@@ -6206,7 +6271,9 @@ class ToolkitGUI(QMainWindow):
                 keep_vi_focus = False
             select_entry_row(restored_rows[0], center=True, keep_vi_focus=keep_vi_focus)
             refresh_suggestions_for_row(table.currentRow())
-            set_status(f"Undid {len(restored_rows)} PO edit{'s' if len(restored_rows) != 1 else ''}. Save when ready.")
+            label = str(action.get("label") or "edit")
+            set_status(f"Undid {label}: {len(restored_rows)} PO entr{'ies' if len(restored_rows) != 1 else 'y'}. Save when ready.")
+            update_po_undo_controls()
 
         def _same_file(a: Path | None, b: Path | None) -> bool:
             if a is None or b is None:
@@ -6786,6 +6853,7 @@ class ToolkitGUI(QMainWindow):
             clear_pending_text_undo()
             _po_undo_stack().clear()
             self._clear_text_editor_undo(vi_box)
+            update_po_undo_controls()
             select_combo_path(path)
             self.config["po_viewer_file"] = str(path)
             if not self.config.get("po_viewer_source"):
@@ -7404,6 +7472,7 @@ class ToolkitGUI(QMainWindow):
                     allow_partial=False,
                     prompt=prompt,
                     progress=report_gemini_progress,
+                    context_entries=po.entries,  # type: ignore[union-attr]
                 )
                 changed = 0
                 by_uid = {entry.uid: row for row, entry in zip(rows, entries)}
@@ -7483,6 +7552,7 @@ class ToolkitGUI(QMainWindow):
         wrap_all_btn.clicked.connect(wrap_all)
         fill_btn.clicked.connect(fill_from_translafixer_sources)
         gemini_selected_btn.clicked.connect(translate_selected_with_gemini_api)
+        undo_edit_btn.clicked.connect(undo_last_po_change)
         search_replace_btn.clicked.connect(open_search_replace_dialog)
         preset_replace_btn.clicked.connect(preset_replace_selected)
         dup_ref_btn.clicked.connect(lambda: self._open_reference_duplicates_dialog(tab_key="po_viewer"))
@@ -7490,6 +7560,7 @@ class ToolkitGUI(QMainWindow):
         apply_suggest_btn.clicked.connect(apply_selected_suggestion)
         undo_suggest_btn.clicked.connect(undo_last_po_change)
         suggestions_list.itemDoubleClicked.connect(lambda _item: apply_selected_suggestion())
+        vi_box.undoAvailable.connect(lambda _available: update_po_undo_controls())
         suggest_min_score.valueChanged.connect(lambda _value: (self.config.__setitem__("po_viewer_suggest_min_score", suggest_min_score.value()), save_config(self.config), refresh_suggestions_for_row(table.currentRow())))
 
         shortcuts: list[QShortcut] = []
@@ -7542,6 +7613,7 @@ class ToolkitGUI(QMainWindow):
         self._po_viewer_suggestion_filter = suggestion_shortcut_filter
 
         set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)
+        update_po_undo_controls()
 
         initial_paths = self._processing_paths("po_viewer", extra_edit=source_edit, include_extra=source_extra_check, require_any=False)
         if initial_paths:

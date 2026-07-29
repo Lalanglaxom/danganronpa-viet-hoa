@@ -979,8 +979,9 @@ msgid ""
 "but to accept it as fact.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng cho đến khi mình có thể chứng minh điều ngược lại, mình\n"
-"chẳng còn cách nào khác ngoài việc coi đó là sự thật...<CLT>"
+"<CLT 4>Hừm, cho đến khi mình có thể chứng minh điều ngược lại, mình\n"
+"không còn cách nào khác ngoài việc chấp nhận đó là sự thật.\n"
+"<CLT>"
 
 #. 話が終わったなら下がれ。
 msgctxt "0112 | BYAKUYA TOGAMI"
@@ -1003,7 +1004,7 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Lời khai của Byakuya<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"<CLT 23>\"<CLT><CLT 3>Lời Khai Của Byakuya<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
 "trong sổ học sinh của bạn.\n"
 "<CLT>"
 
@@ -1935,7 +1936,7 @@ msgid ""
 "connected to why she died...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nguyên nhân khiến <CLT><CLT 3>Sakura nôn ra máu<CLT><CLT 4> chắc chắn có\n"
+"<CLT 4>Nguyên nhân khiến <CLT><CLT 3>Sakura nôn ra máu<CLT><CLT 4>... chắc chắn có\n"
 "liên quan mật thiết đến cái chết của cậu ấy...\n"
 "<CLT>"
 
@@ -2218,8 +2219,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Polka Dot Candy Wrapper<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật trong sổ\n"
-"học sinh của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Vỏ Kẹo Chấm Bi Đỏ<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. それ…私があげたんだ…
@@ -2304,8 +2305,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Glass Shards on the Floor<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật trong\n"
-"sổ học sinh của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Mảnh Kính Trên Sàn<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. <CLT 4>…ん？　ガラス破片の傍に、
@@ -2350,7 +2351,7 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Figure on the Floor<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật trong\n"
+"<CLT 23>\"<CLT><CLT 3>Mô Hình Trên Sàn<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật trong\n"
 "sổ học sinh của bạn.\n"
 "<CLT>"
 
@@ -2468,12 +2469,12 @@ msgstr ""
 #. 気を付けて。それはガセよ。
 msgctxt "0258 | KYOUKO KIRIGIRI"
 msgid "I wouldn't take that to heart, if I were you..."
-msgstr "Nếu tôi là cậu thì tôi sẽ không để tâm đến chuyện đó đâu..."
+msgstr "Nếu là tớ, tớ sẽ không quá lưu lại điều đó đâu..."
 
 #. 知ってるよ…
 msgctxt "0259 | MAKOTO NAEGI"
 msgid "I know..."
-msgstr "Tớ biết chứ..."
+msgstr "Tớ biết mà..."
 
 #. <CLT 4>それにしても、このプロテインの容器…
 #. <CLT>
@@ -2499,8 +2500,8 @@ msgid ""
 "had all kinds of health stuff.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhắc mới nhớ... Sakura từng bảo phòng thí nghiệm hóa học\n"
-"có đủ loại đồ bổ dưỡng.\n"
+"<CLT 4>Nhắc mới nhớ... Sakura từng bảo phòng thí nghiệm\n"
+"hóa học có đủ loại đồ bổ dưỡng.\n"
 "<CLT>"
 
 #. <CLT 4>…という事は、このプロテインって、
@@ -2528,7 +2529,7 @@ msgstr "Hả? Lạ ở chỗ nào?"
 #. この容器の周りに散らばってるのって…
 msgctxt "0266 | KYOUKO KIRIGIRI"
 msgid "You see what's scattered around the can?"
-msgstr "Những thứ đang vương vãi xung quanh cái bình này..."
+msgstr "Cậu có thấy những thứ vương vãi quanh cái bình này không?"
 
 #. 薄水色のガラスの破片…
 #. ボクが割ったドアの<CLT 3>窓ガラスの破片<CLT>だよね。
@@ -2580,7 +2581,8 @@ msgid ""
 "<CLT 4>An important clue...? I'm not sure I see how...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Manh mối quan trọng ư...? Tớ không chắc mình hiểu ý cậu lắm...\n"
+"<CLT 4>Manh mối quan trọng ư...? Mình không chắc mình\n"
+"hiểu ý cậu lắm...\n"
 "<CLT>"
 
 #. <CLT 23><CLT><CLT 3>空のプロテイン容器<CLT><CLT 23>を手帳に記録しました。
@@ -2592,7 +2594,8 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Bình protein trống rỗng<CLT><CLT 23>\" đã được thêm vào phần Đạn Bác Bỏ trong sổ học sinh của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Bình Protein Rỗng<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. <CLT 4>娯楽室の入口付近に、
@@ -2604,8 +2607,8 @@ msgid ""
 "near the entrance to the room.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có một loại hộp nhựa nào đó đang lăn lóc ở gần lối ra vào\n"
-"của căn phòng.\n"
+"<CLT 4>Có một loại hộp nhựa nào đó đang lăn lóc ở gần lối ra\n"
+"vào của căn phòng.\n"
 "<CLT>"
 
 #. <CLT 3>プロテインの容器<CLT>みたいね。
@@ -2623,8 +2626,8 @@ msgid ""
 "Sakura must have drank it. Everyone knows how much she\n"
 "loved her protein..."
 msgstr ""
-"Chắc là Sakura đã uống nó rồi. Ai cũng biết cậu ấy thích protein\n"
-"đến mức nào mà..."
+"Chắc là Sakura đã uống nó rồi. Ai cũng biết cậu ấy\n"
+"thích protein đến mức nào mà..."
 
 #. <CLT 4>それにしても、このプロテインの容器…
 #. <CLT>
@@ -2655,14 +2658,14 @@ msgid ""
 "had all kinds of health stuff.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhắc mới nhớ... Sakura từng bảo phòng thí nghiệm hóa học\n"
-"có đủ loại đồ bổ dưỡng.\n"
+"<CLT 4>Nhắc mới nhớ... Sakura từng bảo phòng thí nghiệm\n"
+"hóa học có đủ loại đồ bổ dưỡng.\n"
 "<CLT>"
 
 #. でも、この容器の周りに散らばってるのって…
 msgctxt "0280 | KYOUKO KIRIGIRI"
 msgid "But you see what's scattered around the can?"
-msgstr "Nhưng những thứ đang vương vãi xung quanh cái bình này..."
+msgstr "Nhưng cậu có thấy những thứ vương vãi quanh cái bình không?"
 
 #. 薄水色のガラスの破片…
 #. ボクが割ったドアの<CLT 3>窓ガラスの破片<CLT>だよね。
@@ -2778,7 +2781,8 @@ msgid ""
 "possible...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trước tiên tớ cần phải khám nghiệm hiện trường vụ án thật kỹ lưỡng mới được...!\n"
+"<CLT 4>Trước tiên mình cần phải khám nghiệm hiện trường vụ án\n"
+"thật kỹ lưỡng mới được...!\n"
 "<CLT>"
 
 #. はい

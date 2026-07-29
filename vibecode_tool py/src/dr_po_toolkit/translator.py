@@ -6,7 +6,7 @@ import time
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Callable, Iterable
+from typing import Any, Callable, Iterable, Mapping
 
 from .discovery import find_backup_for_file, find_segments, iter_po_files
 from .models import POEntry
@@ -24,6 +24,8 @@ Rules:
 - Do not translate speaker names or ids.
 - Do not leave translation empty.
 - Keep tone natural for the speaker while still following the English closely.
+- When previous_vietnamese_context is provided, treat it as mandatory continuity context for established Vietnamese wording, xưng hô/forms of address, speaker tone, and terminology. Reuse those established choices whenever they fit the current English meaning.
+- Never translate, rewrite, quote, or return previous_vietnamese_context. It is context only; source_en for the current entry remains the source of truth.
 """
 
 
@@ -45,7 +47,12 @@ def _clean_prompt(prompt: str | None = None) -> str:
     return (prompt or SYSTEM_INSTRUCTIONS).strip() + "\n"
 
 
-def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa", instructions: str | None = None) -> dict[str, Any]:
+def build_payload(
+    entries: Iterable[POEntry],
+    project: str = "Danganronpa",
+    instructions: str | None = None,
+    previous_vietnamese_context: Iterable[Mapping[str, Any]] | None = None,
+) -> dict[str, Any]:
     items = []
     for entry in entries:
         items.append(
@@ -61,6 +68,7 @@ def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa", inst
         "task": "translate_po_entries_to_vietnamese",
         "project": project,
         "instructions": _clean_prompt(instructions),
+        "previous_vietnamese_context": [dict(item) for item in (previous_vietnamese_context or [])],
         "entries": items,
         "required_response_schema": {
             "entries": [
@@ -71,6 +79,44 @@ def build_payload(entries: Iterable[POEntry], project: str = "Danganronpa", inst
             ]
         },
     }
+
+
+def build_previous_vietnamese_context(
+    file_entries: Iterable[POEntry],
+    current_entry: POEntry,
+    *,
+    limit: int = 5,
+    translation_overrides: Mapping[str, str] | None = None,
+) -> list[dict[str, Any]]:
+    """Return translated context from the immediate previous entries in one PO file.
+
+    The window is positional: only the five entries directly before the current
+    entry are considered. Untranslated entries inside that window are omitted;
+    the function never reaches farther back to replace them.
+    """
+    if limit <= 0:
+        return []
+    entries = list(file_entries)
+    current_position = next((i for i, entry in enumerate(entries) if entry.uid == current_entry.uid), None)
+    if current_position is None:
+        return []
+    overrides = translation_overrides or {}
+    window = entries[max(0, current_position - limit):current_position]
+    context: list[dict[str, Any]] = []
+    for position, entry in enumerate(window, start=current_position - len(window)):
+        translation = overrides.get(entry.uid, entry.msgstr)
+        if not translation.strip():
+            continue
+        context.append(
+            {
+                "relative_position": position - current_position,
+                "uid": entry.uid,
+                "msgctxt": entry.msgctxt,
+                "speaker": entry.speaker,
+                "translation_vi": translation,
+            }
+        )
+    return context
 
 
 def build_prompt(payload: dict[str, Any], instructions: str | None = None) -> str:
@@ -285,25 +331,72 @@ def translate_entries_with_client(
     allow_partial: bool = False,
     prompt: str | None = None,
     progress: Callable[[int, int], None] | None = None,
+    context_entries: Iterable[POEntry] | None = None,
+    on_translation: Callable[[POEntry, str], None] | None = None,
 ) -> tuple[dict[str, str], list[TranslationError]]:
+    """Translate entries with Gemini API.
+
+    Interactive callers opt into strict one-entry requests by supplying
+    ``context_entries``. Each request then receives up to the five immediately
+    preceding translated entries from the same ordered PO file.
+
+    Callers without ``context_entries`` retain the original batched behavior,
+    controlled by ``batch_size``. This is used by Mass Translate File.
+    """
     entry_list = list(entries)
     total_entries = len(entry_list)
     if progress is not None:
         progress(0, total_entries)
     all_errors: list[TranslationError] = []
     all_translations: dict[str, str] = {}
-    for i in range(0, total_entries, batch_size):
-        batch = entry_list[i:i + batch_size]
-        translations = client.translate_payload(build_payload(batch, instructions=prompt or client.prompt), prompt=prompt)
+
+    if context_entries is not None:
+        context_list = list(context_entries)
+        for i, entry in enumerate(entry_list):
+            previous_context = build_previous_vietnamese_context(
+                context_list,
+                entry,
+                limit=5,
+                translation_overrides=all_translations,
+            )
+            payload = build_payload(
+                [entry],
+                instructions=prompt or client.prompt,
+                previous_vietnamese_context=previous_context,
+            )
+            translations = client.translate_payload(payload, prompt=prompt)
+            errors = validate_translations([entry], translations)
+            all_errors.extend(errors)
+            bad = {error.uid for error in errors}
+            translation = translations.get(entry.uid)
+            if translation is not None and (allow_partial or entry.uid not in bad):
+                all_translations[entry.uid] = translation
+                if on_translation is not None:
+                    on_translation(entry, translation)
+            if progress is not None:
+                progress(i + 1, total_entries)
+            if sleep_seconds and i + 1 < total_entries:
+                time.sleep(sleep_seconds)
+        return all_translations, all_errors
+
+    effective_batch_size = max(1, int(batch_size))
+    for i in range(0, total_entries, effective_batch_size):
+        batch = entry_list[i:i + effective_batch_size]
+        payload = build_payload(batch, instructions=prompt or client.prompt)
+        translations = client.translate_payload(payload, prompt=prompt)
         errors = validate_translations(batch, translations)
         all_errors.extend(errors)
-        bad = {e.uid for e in errors}
-        for uid, text in translations.items():
-            if allow_partial or uid not in bad:
-                all_translations[uid] = text
+        bad = {error.uid for error in errors}
+        for entry in batch:
+            translation = translations.get(entry.uid)
+            if translation is None or (not allow_partial and entry.uid in bad):
+                continue
+            all_translations[entry.uid] = translation
+            if on_translation is not None:
+                on_translation(entry, translation)
         if progress is not None:
             progress(min(i + len(batch), total_entries), total_entries)
-        if sleep_seconds and i + batch_size < total_entries:
+        if sleep_seconds and i + effective_batch_size < total_entries:
             time.sleep(sleep_seconds)
     return all_translations, all_errors
 

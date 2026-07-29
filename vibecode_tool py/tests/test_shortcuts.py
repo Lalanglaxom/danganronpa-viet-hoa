@@ -172,3 +172,17 @@ def test_gui_keeps_compact_po_viewer_and_live_suggestion_features():
     assert 'index.add_po_file(po, path)' in gui_source
     assert 'Choose which chapters/file groups this tab should target.' not in gui_source
     assert 'theme_note = QLabel' not in gui_source
+
+
+def test_interactive_gemini_context_and_global_po_viewer_undo_are_wired():
+    gui_source = (Path(__file__).parents[1] / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
+    assert "context_entries=context_by_file.get(file_path, [])" in gui_source
+    assert "context_entries=context_by_path.get(path, [])" in gui_source
+    assert "context_entries=po.entries" in gui_source
+    assert 'undo_edit_btn = self._tool_button("Undo"' in gui_source
+    assert 'begin_po_undo_batch("wrap")' in gui_source
+    assert 'undo_label="suggestion"' in gui_source
+    assert 'begin_po_undo_batch("gemini")' in gui_source
+    assert 'begin_po_undo_batch("replace all")' in gui_source
+    assert 'begin_po_undo_batch("preset replace")' in gui_source
+    assert 'begin_po_undo_batch("translafix")' in gui_source

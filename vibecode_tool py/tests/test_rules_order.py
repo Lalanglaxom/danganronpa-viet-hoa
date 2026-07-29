@@ -52,3 +52,43 @@ def test_legacy_priority_migrates_to_weak_to_strong_order(tmp_path: Path):
     assert saved["version"] == 3
     assert [(rule["find"], rule["replace"]) for rule in saved["rules"]] == [("A", "B"), ("B", "C")]
     assert all("id" not in rule and "priority" not in rule for rule in saved["rules"])
+
+
+def test_preset_replace_ignores_wrapping_newline_for_spaced_phrase():
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="foo\nbar remains\nuntouched")
+    rule = make_rule("foo bar", "baz")
+
+    text, hits = apply_rules_to_entry(entry, [rule])
+
+    assert text == "baz remains\nuntouched"
+    assert sum(count for _rule, count, _before, _after in hits) == 1
+
+
+def test_preset_replace_ignores_newline_between_adjacent_characters():
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="foo\nbar")
+    rule = make_rule("foobar", "baz")
+
+    text, hits = apply_rules_to_entry(entry, [rule])
+
+    assert text == "baz"
+    assert sum(count for _rule, count, _before, _after in hits) == 1
+
+
+def test_newlines_in_preset_find_are_ignored_too():
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="foobar")
+    rule = make_rule("foo\nbar", "baz")
+
+    text, hits = apply_rules_to_entry(entry, [rule])
+
+    assert text == "baz"
+    assert sum(count for _rule, count, _before, _after in hits) == 1
+
+
+def test_newline_only_preset_does_not_match_everywhere():
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="foo\nbar")
+    rule = make_rule("\n", "baz")
+
+    text, hits = apply_rules_to_entry(entry, [rule])
+
+    assert text == "foo\nbar"
+    assert hits == []

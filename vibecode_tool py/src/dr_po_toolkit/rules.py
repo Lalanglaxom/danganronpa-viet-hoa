@@ -135,8 +135,39 @@ def _speaker_matches(entry: POEntry, rule: ReplacementRule) -> bool:
     return rule.speaker.upper() in (entry.msgctxt or "").upper()
 
 
+_LINE_BREAK_PATTERN = r"(?:\r\n|\r|\n)"
+_OPTIONAL_LINE_BREAKS_PATTERN = rf"(?:{_LINE_BREAK_PATTERN})*"
+_HORIZONTAL_OR_LINE_BREAK_PATTERN = rf"(?:[ \t]|{_LINE_BREAK_PATTERN})"
+
+
+def _newline_agnostic_literal_pattern(find: str) -> str:
+    """Return a literal regex that does not let PO line wrapping block a match.
+
+    Newlines in either the rule or the translation are ignored between literal
+    characters. A horizontal-space character in the rule may also match one
+    line break because the line wrapper replaces the original separating space
+    with ``\\n``. This keeps preset rules stable before and after wrapping while
+    leaving tags protected by the caller's chunking logic.
+    """
+
+    normalized = find.replace("\r\n", "\n").replace("\r", "\n")
+    tokens: list[str] = []
+    for char in normalized:
+        if char == "\n":
+            continue
+        if char in {" ", "\t"}:
+            tokens.append(_HORIZONTAL_OR_LINE_BREAK_PATTERN)
+        else:
+            tokens.append(re.escape(char))
+    if not tokens:
+        # A rule containing only line breaks has no visible search text. Do not
+        # compile an empty expression, which would otherwise match everywhere.
+        return r"(?!)"
+    return _OPTIONAL_LINE_BREAKS_PATTERN.join(tokens)
+
+
 def _compile_find(find: str, whole_word: bool, case_sensitive: bool) -> re.Pattern[str]:
-    pattern = re.escape(find)
+    pattern = _newline_agnostic_literal_pattern(find)
     if whole_word:
         pattern = r"(?<!\w)" + pattern + r"(?!\w)"
     flags = 0 if case_sensitive else re.IGNORECASE
