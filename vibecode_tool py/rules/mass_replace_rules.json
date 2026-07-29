@@ -5,26 +5,15 @@
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "Genocide Jack",
-      "replace": "Jack Đồ Tể",
+      "find": "Genocide Jack;Genocider Jack",
+      "replace": "Jack Đồ Tể;Jack Đồ Tể",
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
     },
     {
-      "enabled": true,
-      "speaker": "",
-      "scope": "",
-      "find": "Genocide Jill",
-      "replace": "Jill Đồ Tể",
-      "whole_word": false,
-      "case_sensitive": true,
-      "stop_after": false,
-      "notes": ""
-    },
-    {
-      "enabled": true,
+      "enabled": false,
       "speaker": "",
       "scope": "",
       "find": "Lớp Xét Xử",
@@ -126,8 +115,8 @@
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "Naegi",
-      "replace": "Makoto",
+      "find": "Naegi;Maizono;Kuwata;Ishimaru;Owada;Fujisaki;Yamada;Ludenberg;Ogami;Asahina;Fukawa;Togami;Kirigiri;Hagakure;Yasuhiro;Enoshima;Ikusaba",
+      "replace": "Makoto;Sayaka;Leon;Kiyotaka;Mondo;Chihiro;Hifumi;Celestia;Sakura;Aoi;Toko;Byakuya;Kyoko;Hiro;Hiro;Junko;Mukuro",
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
@@ -168,7 +157,7 @@
     },
     {
       "enabled": true,
-      "speaker": "",
+      "speaker": "MAKOTO",
       "scope": "clt:4",
       "find": "Tớ;tớ",
       "replace": "Mình;mình",
@@ -179,7 +168,7 @@
     },
     {
       "enabled": true,
-      "speaker": "",
+      "speaker": "MAKOTO",
       "scope": "clt:4",
       "find": "Tôi;tôi",
       "replace": "Mình;mình",
@@ -211,12 +200,23 @@
       "notes": ""
     },
     {
-      "enabled": false,
+      "enabled": true,
       "speaker": "TOUKO",
       "scope": "",
-      "find": "Mình;mình",
-      "replace": "Tôi;tôi",
+      "find": "Tớ;tớ;Mình;mình;Mày;mày;Tao;tao",
+      "replace": "Tôi;tôi;Tôi;tôi;Cậu;cậu;Tôi;tôi",
       "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "Yasuhiro",
+      "scope": "",
+      "find": "Mình;mình;Mày;mày;Tao;tao",
+      "replace": "Tớ;tớ;Cậu;cậu;Tớ;tớ",
+      "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
@@ -266,7 +266,7 @@
       "notes": ""
     },
     {
-      "enabled": true,
+      "enabled": false,
       "speaker": "",
       "scope": "",
       "find": "Nó;nó",
