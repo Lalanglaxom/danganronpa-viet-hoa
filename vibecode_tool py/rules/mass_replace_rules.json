@@ -297,6 +297,28 @@
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "ASAHINA",
+      "scope": "",
+      "find": "Ông;ông",
+      "replace": "Cậu;cậu",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "MONOKUMA",
+      "scope": "",
+      "find": "Ta;ta",
+      "replace": "Tôi;tôi",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
     }
   ]
 }
