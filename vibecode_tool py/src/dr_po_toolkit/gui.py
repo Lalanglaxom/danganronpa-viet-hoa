@@ -603,6 +603,35 @@ class RepeatedSuggestionShortcutFilter(QObject):
         return True
 
 
+class RoutedUndoShortcutFilter(QObject):
+    """Route the platform Undo shortcut through a view's unified undo handler.
+
+    Qt text editors otherwise consume Ctrl+Z/Command+Z before the parent view's
+    shortcut can restore non-typing actions such as suggestions or line wrapping.
+    """
+
+    def __init__(self, root: QWidget, callback: Callable[[], None]) -> None:
+        super().__init__(root)
+        self._root = root
+        self._callback = callback
+        app = QApplication.instance()
+        if app is not None:
+            app.installEventFilter(self)
+
+    def eventFilter(self, watched: QObject, event: QEvent) -> bool:  # noqa: N802 - Qt API
+        if event.type() != QEvent.Type.KeyPress or not _shortcut_focus_is_inside(self._root):
+            return False
+        try:
+            is_undo = event.matches(QKeySequence.StandardKey.Undo)  # type: ignore[attr-defined]
+        except Exception:
+            is_undo = False
+        if not is_undo:
+            return False
+        if not event.isAutoRepeat():  # type: ignore[attr-defined]
+            self._callback()
+        return True
+
+
 class ToolkitGUI(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
@@ -1043,6 +1072,20 @@ class ToolkitGUI(QMainWindow):
         log = LogBox()
         log.setMinimumHeight(210)
         return log
+
+    def _gemini_api_context_limit(self) -> int:
+        try:
+            value = int(self.config.get("gemini_api_context_entries", 20))
+        except (TypeError, ValueError):
+            value = 20
+        value = max(0, min(200, value))
+        self.config["gemini_api_context_entries"] = value
+        return value
+
+    def _gemini_api_cross_file_context_enabled(self) -> bool:
+        value = bool(self.config.get("gemini_api_context_across_files", False))
+        self.config["gemini_api_context_across_files"] = value
+        return value
 
     def _linewrap_presets(self) -> list[dict[str, int]]:
         presets = normalize_wrap_presets(
@@ -2634,8 +2677,8 @@ class ToolkitGUI(QMainWindow):
         save_state: dict[str, list[str]] = {"errors": []}
 
         def trim_search_undo_stack() -> None:
-            if len(search_undo_stack) > 100:
-                del search_undo_stack[:-100]
+            if len(search_undo_stack) > 500:
+                del search_undo_stack[:-500]
 
         def compact(text: str, limit: int = 1000) -> str:
             text = user_multiline_text(text)
@@ -3233,6 +3276,9 @@ class ToolkitGUI(QMainWindow):
                 updates: dict[int, str] = {}
                 errors = []
                 completed = 0
+                context_limit = self._gemini_api_context_limit()
+                use_previous_files = self._gemini_api_cross_file_context_enabled() and context_limit > 0
+                previous_file_context: list[POEntry] = []
                 groups = list(work_by_file.items())
                 for group_index, (file_path, items) in enumerate(groups):
                     request_entries = [entry for _result_index, entry in items]
@@ -3250,12 +3296,24 @@ class ToolkitGUI(QMainWindow):
                         prompt=SYSTEM_INSTRUCTIONS,
                         progress=report_gemini_progress,
                         context_entries=context_by_file.get(file_path, []),
+                        context_limit=context_limit,
+                        previous_file_context_entries=previous_file_context if use_previous_files else None,
                     )
                     errors.extend(entry_errors)
                     for uid, translation in translations.items():
                         result_index = result_by_uid.get(uid)
                         if result_index is not None:
                             updates[result_index] = translation
+                    if use_previous_files:
+                        file_context = context_by_file.get(file_path, [])
+                        translated_by_uid = dict(translations)
+                        for context_entry in file_context:
+                            translated = translated_by_uid.get(context_entry.uid)
+                            if translated is not None:
+                                context_entry.msgstr = translated
+                        previous_file_context.extend(file_context)
+                        if len(previous_file_context) > context_limit:
+                            previous_file_context = previous_file_context[-context_limit:]
                     completed += len(items)
                     if sleep_seconds and group_index + 1 < len(groups):
                         time.sleep(sleep_seconds)
@@ -3679,8 +3737,10 @@ class ToolkitGUI(QMainWindow):
         )
         add_search_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_search_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_search_with_gemini_api)
+        search_undo_filter = RoutedUndoShortcutFilter(_tab, undo_last_search_change)
         self._search_shortcuts = search_shortcuts
         self._search_wrap_filter = search_wrap_filter
+        self._search_undo_filter = search_undo_filter
 
 
     # ---------------- Translafixer ----------------
@@ -4220,8 +4280,8 @@ class ToolkitGUI(QMainWindow):
             if not filtered or undoing["value"]:
                 return
             apply_undo_stack.append(filtered)
-            if len(apply_undo_stack) > 100:
-                del apply_undo_stack[:-100]
+            if len(apply_undo_stack) > 500:
+                del apply_undo_stack[:-500]
             undo_apply_btn.setEnabled(True)
 
         def duplicate_change_for_row(row: int, old_text: str, new_text: str, label: str) -> dict[str, object] | None:
@@ -5031,6 +5091,9 @@ class ToolkitGUI(QMainWindow):
                 translations_by_row: dict[int, str] = {}
                 errors = []
                 completed = 0
+                context_limit = self._gemini_api_context_limit()
+                use_previous_files = self._gemini_api_cross_file_context_enabled() and context_limit > 0
+                previous_file_context: list[POEntry] = []
                 groups = list(work_by_path.items())
                 for group_index, (path, items) in enumerate(groups):
                     request_entries = [entry for _row, entry in items]
@@ -5049,12 +5112,24 @@ class ToolkitGUI(QMainWindow):
                         prompt=SYSTEM_INSTRUCTIONS,
                         progress=report_gemini_progress,
                         context_entries=context_by_path.get(path, []),
+                        context_limit=context_limit,
+                        previous_file_context_entries=previous_file_context if use_previous_files else None,
                     )
                     errors.extend(entry_errors)
                     for uid, translation in translations.items():
                         row = row_by_uid.get(uid)
                         if row is not None:
                             translations_by_row[row] = translation
+                    if use_previous_files:
+                        file_context = context_by_path.get(path, [])
+                        translated_by_uid = dict(translations)
+                        for context_entry in file_context:
+                            translated = translated_by_uid.get(context_entry.uid)
+                            if translated is not None:
+                                context_entry.msgstr = translated
+                        previous_file_context.extend(file_context)
+                        if len(previous_file_context) > context_limit:
+                            previous_file_context = previous_file_context[-context_limit:]
                     completed += len(items)
                     if sleep_seconds and group_index + 1 < len(groups):
                         time.sleep(sleep_seconds)
@@ -5701,8 +5776,10 @@ class ToolkitGUI(QMainWindow):
         )
         add_duplicate_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_duplicate_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_duplicate_with_gemini_api)
+        duplicate_undo_filter = RoutedUndoShortcutFilter(dialog, undo_duplicate_change)
         dialog._shortcuts = duplicate_shortcuts  # type: ignore[attr-defined]
         dialog._wrap_shortcut_filter = duplicate_wrap_filter  # type: ignore[attr-defined]
+        dialog._undo_shortcut_filter = duplicate_undo_filter  # type: ignore[attr-defined]
         populate(displayed_conflict_entries())
         QTimer.singleShot(0, refresh_table_row_heights)
         update_status()
@@ -6082,8 +6159,8 @@ class ToolkitGUI(QMainWindow):
 
         def trim_po_undo_stack() -> None:
             stack = _po_undo_stack()
-            if len(stack) > 100:
-                del stack[:-100]
+            if len(stack) > 500:
+                del stack[:-500]
 
         def push_po_undo_action(label: str, changes: dict[int, dict[str, str]]) -> None:
             po = po_file()
@@ -7434,6 +7511,36 @@ class ToolkitGUI(QMainWindow):
                 f"matched={matched}, changed={changed}, unchanged={unchanged}{conflict_note}"
             )
 
+        def previous_po_viewer_file_context(limit: int) -> list[POEntry]:
+            if limit <= 0 or not self._gemini_api_cross_file_context_enabled():
+                return []
+            files = state.get("file_paths")
+            active_path = current_path()
+            if not isinstance(files, list) or active_path is None:
+                return []
+            ordered_paths = [item for item in files if isinstance(item, Path)]
+            active_index = next((index for index, item in enumerate(ordered_paths) if _same_file(item, active_path)), None)
+            if active_index is None or active_index <= 0:
+                return []
+            chunks: list[list[POEntry]] = []
+            remaining = limit
+            po_cache = state.get("po_cache")
+            for previous_path in reversed(ordered_paths[:active_index]):
+                if remaining <= 0:
+                    break
+                cached_po = po_cache.get(previous_path) if isinstance(po_cache, dict) else None
+                try:
+                    previous_po = cached_po if cached_po is not None else load_po(previous_path)
+                except Exception:
+                    continue
+                entries = list(getattr(previous_po, "entries", []))
+                if not entries:
+                    continue
+                take = entries[-remaining:]
+                chunks.insert(0, take)
+                remaining -= len(take)
+            return [entry for chunk in chunks for entry in chunk]
+
         def translate_selected_with_gemini_api() -> None:
             po = po_file()
             if po is None:
@@ -7453,6 +7560,8 @@ class ToolkitGUI(QMainWindow):
             model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
             batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
             sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
+            context_limit = self._gemini_api_context_limit()
+            previous_file_context = previous_po_viewer_file_context(context_limit)
             entries = [po.entries[row] for row in rows if 0 <= row < len(po.entries)]  # type: ignore[union-attr]
             self._begin_task_progress("Gemini API PO entries", len(entries))
             self._pump_task_progress()
@@ -7473,6 +7582,8 @@ class ToolkitGUI(QMainWindow):
                     prompt=prompt,
                     progress=report_gemini_progress,
                     context_entries=po.entries,  # type: ignore[union-attr]
+                    context_limit=context_limit,
+                    previous_file_context_entries=previous_file_context or None,
                 )
                 changed = 0
                 by_uid = {entry.uid: row for row, entry in zip(rows, entries)}
@@ -7605,12 +7716,14 @@ class ToolkitGUI(QMainWindow):
             _tab,
             {number: (lambda suggestion_number=number: apply_suggestion_number(suggestion_number)) for number in range(1, 4)},
         )
+        po_viewer_undo_filter = RoutedUndoShortcutFilter(_tab, undo_last_po_change)
         add_shortcut(PRESET_REPLACE_SHORTCUT, preset_replace_selected)
         add_shortcut(GEMINI_TRANSLATE_SHORTCUT, translate_selected_with_gemini_api)
         add_shortcut(SUGGESTION_REFRESH_SHORTCUT, lambda: refresh_suggestions_for_row(table.currentRow(), force_rebuild=True))
         self._po_viewer_shortcuts = shortcuts
         self._po_viewer_wrap_filter = po_viewer_wrap_filter
         self._po_viewer_suggestion_filter = suggestion_shortcut_filter
+        self._po_viewer_undo_filter = po_viewer_undo_filter
 
         set_clt_color_mode(bool(state.get("clt_color_mode")), persist=False, quiet=True)
         update_po_undo_controls()
@@ -7650,6 +7763,25 @@ class ToolkitGUI(QMainWindow):
 
         api_model_edit = QLineEdit(str(self.config.get("gemini_api_model", self.config.get("gemini_model", "gemini-2.5-flash"))))
         form.addRow("API model", api_model_edit)
+
+        api_context_wrap = QWidget()
+        api_context_row = QHBoxLayout(api_context_wrap)
+        api_context_row.setContentsMargins(0, 0, 0, 0)
+        api_context_row.setSpacing(8)
+        api_context_entries = QSpinBox()
+        api_context_entries.setRange(0, 200)
+        api_context_entries.setValue(self._gemini_api_context_limit())
+        api_context_entries.setFixedWidth(72)
+        api_context_entries.setToolTip("Maximum number of previous English/Vietnamese entries sent as continuity context. Set 0 to disable.")
+        api_context_across_files = QCheckBox("Include previous files")
+        api_context_across_files.setChecked(self._gemini_api_cross_file_context_enabled())
+        api_context_across_files.setToolTip(
+            "Off: context never leaves the current PO file. On: if the current file has too few earlier entries, fill the remaining context from earlier PO files."
+        )
+        api_context_row.addWidget(api_context_entries)
+        api_context_row.addWidget(api_context_across_files)
+        api_context_row.addStretch()
+        form.addRow("Previous context", api_context_wrap)
 
         layout.addLayout(form)
 
@@ -7702,6 +7834,8 @@ class ToolkitGUI(QMainWindow):
             rename_folders.setEnabled(not is_api)
             api_key_edit.setEnabled(is_api)
             api_model_edit.setEnabled(is_api)
+            api_context_entries.setEnabled(is_api)
+            api_context_across_files.setEnabled(is_api and api_context_entries.value() > 0)
             chrome_btn.setEnabled(not is_api)
             run_btn.setText("Run Gemini API" if is_api else "Run Gemini Web")
 
@@ -7718,6 +7852,8 @@ class ToolkitGUI(QMainWindow):
             self.config["gemini_api_key"] = api_key_edit.text().strip()
             self.config["gemini_api_model"] = api_model_edit.text().strip() or "gemini-2.5-flash"
             self.config["gemini_api_sleep_seconds"] = wait_seconds.value()
+            self.config["gemini_api_context_entries"] = api_context_entries.value()
+            self.config["gemini_api_context_across_files"] = api_context_across_files.isChecked()
             save_config(self.config)
 
         def run_web(logwrite, progresswrite):
@@ -7817,6 +7953,9 @@ class ToolkitGUI(QMainWindow):
                 return
             total_changed = 0
             total_errors = 0
+            context_limit = self._gemini_api_context_limit()
+            use_previous_files = api_context_across_files.isChecked() and context_limit > 0
+            previous_file_context: list[POEntry] = []
             progresswrite(0, len(po_files), "Gemini API files")
             for idx, po_path in enumerate(po_files, start=1):
                 self._check_stop()
@@ -7829,9 +7968,19 @@ class ToolkitGUI(QMainWindow):
                     sleep_seconds=wait_seconds.value(),
                     allow_partial=bool(allow_state["value"]),
                     prompt=prompt,
+                    context_limit=context_limit,
+                    previous_file_context_entries=previous_file_context if use_previous_files else None,
                 )
                 total_changed += changed
                 total_errors += len(errors)
+                if use_previous_files:
+                    try:
+                        translated_po = load_po(po_path)
+                        previous_file_context.extend(translated_po.entries)
+                        if len(previous_file_context) > context_limit:
+                            previous_file_context = previous_file_context[-context_limit:]
+                    except Exception as exc:
+                        logwrite(f"  context: could not reload {po_path.name}: {exc}", "warn")
                 tag = "good" if not errors else "warn"
                 logwrite(f"  applied={changed} | errors={len(errors)}", tag)
                 for e in errors[:40]:
@@ -7862,6 +8011,15 @@ class ToolkitGUI(QMainWindow):
         api_key_toggle.stateChanged.connect(lambda _state: sync_mode_ui())
         api_key_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_key", text.strip()))
         api_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_model", text.strip()))
+        api_context_entries.valueChanged.connect(
+            lambda value: (
+                self.config.__setitem__("gemini_api_context_entries", int(value)),
+                api_context_across_files.setEnabled(api_mode_enabled() and int(value) > 0),
+            )
+        )
+        api_context_across_files.stateChanged.connect(
+            lambda _state: self.config.__setitem__("gemini_api_context_across_files", api_context_across_files.isChecked())
+        )
         for widget in [cdp_edit, api_key_edit, api_model_edit]:
             widget.editingFinished.connect(save_web_config)
         run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run_selected_mode))

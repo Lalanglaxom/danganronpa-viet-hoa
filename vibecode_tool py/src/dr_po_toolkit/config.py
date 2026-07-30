@@ -39,6 +39,8 @@ DEFAULT_CONFIG = {
     "gemini_api_model": "gemini-2.5-flash",
     "gemini_api_prompt": "",
     "gemini_api_sleep_seconds": 1.0,
+    "gemini_api_context_entries": 20,
+    "gemini_api_context_across_files": False,
     "po_viewer_suggest_min_score": 70,
     "po_viewer_clt_color_mode": False,
     "translafixer_hidden_duplicate_keys": [],

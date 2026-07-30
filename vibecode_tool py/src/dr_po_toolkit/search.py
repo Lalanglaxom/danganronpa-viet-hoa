@@ -1,12 +1,17 @@
 from __future__ import annotations
 
+import os
 import re
+import threading
+from collections import OrderedDict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Iterable, TypeAlias
 
 from .discovery import iter_po_files
-from .po_io import parse_po_text
+from .models import POFile
+from .po_io import parse_po_text, po_unescape_quoted
 from .text_utils import linebreak_insensitive_visible_text, user_multiline_text, visible_text
 
 
@@ -26,6 +31,33 @@ class SearchResult:
 PreparedCriterion: TypeAlias = tuple[str, str, re.Pattern[str] | None, re.Pattern[str] | None]
 PreparedExpression: TypeAlias = list[list[PreparedCriterion]]
 SearchProgressCallback: TypeAlias = Callable[[int, int, Path], None]
+
+
+# Search is often repeated over the same large folder. Keep a bounded in-memory
+# document cache so subsequent searches only stat files and evaluate the query.
+# The cache is invalidated automatically when mtime or size changes.
+_SEARCH_CACHE_MAX_FILES = 2048
+_SEARCH_CACHE_MAX_CHARS = 192 * 1024 * 1024
+_SEARCH_PARALLEL_THRESHOLD = 12
+_SEARCH_MAX_WORKERS = 8
+_SEARCH_CACHE_LOCK = threading.RLock()
+_SEARCH_CACHE_CHARS = 0
+
+
+@dataclass(slots=True)
+class _SearchDocument:
+    signature: tuple[int, int]
+    raw_text: str | None
+    raw_fields: str
+    visible_fields: str
+    folded_fields: str
+    weight: int
+    po: POFile | None = None
+
+
+_SEARCH_DOCUMENT_CACHE: OrderedDict[str, _SearchDocument] = OrderedDict()
+_PO_FIELD_RE = re.compile(r'^(?:msgctxt|msgid|msgstr)\s+(".*")\s*$')
+_PO_CONTINUATION_RE = re.compile(r'^(".*")\s*$')
 
 
 def split_search_expression(text: str) -> list[list[str]]:
@@ -95,33 +127,11 @@ def _prepare_expression(
     return prepared_expression
 
 
-def _raw_visible_text(text: str) -> str:
-    # Convert common PO escapes before visible_text so the file-level prefilter
-    # matches the same user-visible text that parsed entries would show.
-    # return visible_text(
-    #     text.replace("\\n", " ")
-    #     .replace("\\r", " ")
-    #     .replace("\\t", " ")
-    #     .replace('\\"', '"')
-    # )
-    return text.replace("\\n", " ").replace("\\r", " ").replace("\\t", " ").replace('\\"', '"')
-
-
 def _compile_whole_word(needle: str, case_sensitive: bool) -> re.Pattern[str]:
     flags = 0 if case_sensitive else re.IGNORECASE
     return re.compile(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", flags)
 
 
-# def _matches_prepared(
-#     text: str,
-#     needle: str,
-#     *,
-#     case_sensitive: bool,
-#     whole_word_pattern: re.Pattern[str] | None,
-# ) -> bool:
-#     hay = visible_text(text)
-#     if not hay:
-#         return False
 def _matches_prepared(
     text: str,
     needle: str,
@@ -146,8 +156,134 @@ def _matches_prepared(
     return needle in hay or (bool(folded_needle) and folded_needle in folded_hay)
 
 
+def _extract_po_fields(raw_text: str) -> str:
+    """Decode PO string fields without constructing full PO entry objects.
+
+    This cheap pass joins continuation lines exactly as gettext does. It lets the
+    search prefilter reject non-matching files safely, including wrapped strings
+    such as ``msgid "Hello\\n"`` followed by ``"world"``.
+    """
+    fields: list[str] = []
+    current: list[str] | None = None
+
+    def flush() -> None:
+        nonlocal current
+        if current is not None:
+            fields.append("".join(current))
+            current = None
+
+    for raw_line in raw_text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        line = raw_line.strip()
+        field_match = _PO_FIELD_RE.match(line)
+        if field_match is not None:
+            flush()
+            try:
+                current = [po_unescape_quoted(field_match.group(1))]
+            except Exception:
+                current = [field_match.group(1)[1:-1]]
+            continue
+        continuation_match = _PO_CONTINUATION_RE.match(line)
+        if continuation_match is not None and current is not None:
+            try:
+                current.append(po_unescape_quoted(continuation_match.group(1)))
+            except Exception:
+                current.append(continuation_match.group(1)[1:-1])
+            continue
+        flush()
+    flush()
+    return "\n".join(fields)
+
+
+def _path_cache_key(path: Path) -> str:
+    try:
+        return str(path.resolve(strict=False))
+    except OSError:
+        return str(path.absolute())
+
+
+def _file_signature(path: Path) -> tuple[int, int]:
+    stat = path.stat()
+    return int(stat.st_mtime_ns), int(stat.st_size)
+
+
+def _read_search_document(path: Path) -> _SearchDocument:
+    key = _path_cache_key(path)
+    signature = _file_signature(path)
+    with _SEARCH_CACHE_LOCK:
+        cached = _SEARCH_DOCUMENT_CACHE.get(key)
+        if cached is not None and cached.signature == signature:
+            _SEARCH_DOCUMENT_CACHE.move_to_end(key)
+            return cached
+
+    try:
+        raw_text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        raw_text = path.read_text(encoding="utf-8-sig")
+    raw_fields = _extract_po_fields(raw_text)
+    visible_fields = visible_text(raw_fields)
+    folded_fields = linebreak_insensitive_visible_text(raw_fields)
+    document = _SearchDocument(
+        signature=signature,
+        raw_text=raw_text,
+        raw_fields=raw_fields,
+        visible_fields=visible_fields,
+        folded_fields=folded_fields,
+        weight=len(raw_fields) + len(visible_fields) + len(folded_fields),
+    )
+    global _SEARCH_CACHE_CHARS
+    with _SEARCH_CACHE_LOCK:
+        replaced = _SEARCH_DOCUMENT_CACHE.pop(key, None)
+        if replaced is not None:
+            _SEARCH_CACHE_CHARS -= replaced.weight
+        _SEARCH_DOCUMENT_CACHE[key] = document
+        _SEARCH_CACHE_CHARS += document.weight
+        _SEARCH_DOCUMENT_CACHE.move_to_end(key)
+        while (
+            len(_SEARCH_DOCUMENT_CACHE) > _SEARCH_CACHE_MAX_FILES
+            or _SEARCH_CACHE_CHARS > _SEARCH_CACHE_MAX_CHARS
+        ):
+            _old_key, old_document = _SEARCH_DOCUMENT_CACHE.popitem(last=False)
+            _SEARCH_CACHE_CHARS -= old_document.weight
+    return document
+
+
+def _parsed_search_document(path: Path, document: _SearchDocument) -> POFile:
+    if document.po is not None:
+        return document.po
+    raw_text = document.raw_text
+    if raw_text is None:
+        try:
+            raw_text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            raw_text = path.read_text(encoding="utf-8-sig")
+    po = parse_po_text(raw_text, path)
+    key = _path_cache_key(path)
+    with _SEARCH_CACHE_LOCK:
+        cached = _SEARCH_DOCUMENT_CACHE.get(key)
+        if cached is document:
+            document.po = po
+            document.raw_text = None
+    return po
+
+
+def _drop_cached_raw_text(path: Path, document: _SearchDocument) -> None:
+    key = _path_cache_key(path)
+    with _SEARCH_CACHE_LOCK:
+        cached = _SEARCH_DOCUMENT_CACHE.get(key)
+        if cached is document:
+            document.raw_text = None
+
+
+def clear_search_cache() -> None:
+    """Clear the reusable search cache, mainly useful for tests and diagnostics."""
+    global _SEARCH_CACHE_CHARS
+    with _SEARCH_CACHE_LOCK:
+        _SEARCH_DOCUMENT_CACHE.clear()
+        _SEARCH_CACHE_CHARS = 0
+
+
 def _file_can_contain_match(
-    raw_text: str,
+    document: _SearchDocument,
     needle: str,
     folded_needle: str,
     *,
@@ -157,30 +293,21 @@ def _file_can_contain_match(
     folded_whole_word_pattern: re.Pattern[str] | None,
 ) -> bool:
     if raw:
-        # Parsed PO strings can be split across quoted source lines or escaped,
-        # so a raw file prefilter cannot safely reject a file.
-        return True
-    hay = _raw_visible_text(raw_text)
-    folded_hay = linebreak_insensitive_visible_text(raw_text)
+        hay = document.raw_fields
+        folded_hay = ""
+    else:
+        hay = document.visible_fields
+        folded_hay = document.folded_fields
     if not hay and not folded_hay:
         return False
     if whole_word_pattern is not None:
         if whole_word_pattern.search(hay) is not None:
             return True
-        if folded_whole_word_pattern is not None and folded_whole_word_pattern.search(folded_hay) is not None:
-            return True
-        # Be conservative: raw PO text can split one string over many quoted lines.
-        return True
+        return folded_whole_word_pattern is not None and folded_whole_word_pattern.search(folded_hay) is not None
     if not case_sensitive:
         hay = hay.lower()
         folded_hay = folded_hay.lower()
-    if needle in hay or (bool(folded_needle) and folded_needle in folded_hay):
-        return True
-    parts = [part for part in re.split(r"\s+", needle) if part]
-    if parts and all(part in hay for part in parts):
-        return True
-    # Be conservative for line-break-insensitive criteria to avoid false skips.
-    return True
+    return needle in hay or (bool(folded_needle) and folded_needle in folded_hay)
 
 
 def _matches_expression(
@@ -244,7 +371,7 @@ def _matches_expression_across_texts(
 
 
 def _file_can_contain_expression(
-    raw_text: str,
+    document: _SearchDocument,
     expression: PreparedExpression,
     *,
     case_sensitive: bool,
@@ -253,7 +380,7 @@ def _file_can_contain_expression(
     return any(
         all(
             _file_can_contain_match(
-                raw_text,
+                document,
                 needle,
                 folded_needle,
                 case_sensitive=case_sensitive,
@@ -267,19 +394,94 @@ def _file_can_contain_expression(
     )
 
 
-# def search_path(
-#     root: str | Path,
-#     phrase: str,
-#     search_msgid: bool = True,
-#     search_msgstr: bool = True,
-#     case_sensitive: bool = False,
-#     whole_word: bool = False,
-# ) -> list[SearchResult]:
-#     results: list[SearchResult] = []
-#     base = Path(root)
-#     needle_visible = visible_text(user_multiline_text(phrase))
-#     if not needle_visible or not (search_msgid or search_msgstr):
-#         return results
+def _search_one_file(
+    index: int,
+    path: Path,
+    *,
+    phrase_expression: PreparedExpression,
+    speaker_expression: PreparedExpression,
+    search_msgid: bool,
+    search_msgstr: bool,
+    case_sensitive: bool,
+    raw: bool,
+) -> tuple[int, list[SearchResult]]:
+    file_results: list[SearchResult] = []
+    try:
+        document = _read_search_document(path)
+        if phrase_expression and not _file_can_contain_expression(
+            document,
+            phrase_expression,
+            case_sensitive=case_sensitive,
+            raw=raw,
+        ):
+            _drop_cached_raw_text(path, document)
+            return index, file_results
+        if speaker_expression and not _file_can_contain_expression(
+            document,
+            speaker_expression,
+            case_sensitive=case_sensitive,
+            raw=raw,
+        ):
+            _drop_cached_raw_text(path, document)
+            return index, file_results
+
+        po = _parsed_search_document(path, document)
+        for entry in po.entries:
+            speaker_text = "\n".join(
+                value
+                for value in (entry.speaker, entry.msgctxt or "")
+                if value
+            )
+            hit_speaker = bool(speaker_expression) and _matches_expression(
+                speaker_text,
+                speaker_expression,
+                case_sensitive=case_sensitive,
+                raw=raw,
+            )
+            if speaker_expression and not hit_speaker:
+                continue
+
+            if phrase_expression:
+                selected_texts: list[str] = []
+                selected_fields: list[str] = []
+                if search_msgid:
+                    selected_texts.append(entry.msgid)
+                    selected_fields.append("msgid")
+                if search_msgstr:
+                    selected_texts.append(entry.msgstr)
+                    selected_fields.append("msgstr")
+                phrase_matches, field_hits = _matches_expression_across_texts(
+                    selected_texts,
+                    phrase_expression,
+                    case_sensitive=case_sensitive,
+                    raw=raw,
+                )
+                if not phrase_matches:
+                    continue
+                hit_id = any(field == "msgid" and hit for field, hit in zip(selected_fields, field_hits))
+                hit_str = any(field == "msgstr" and hit for field, hit in zip(selected_fields, field_hits))
+            else:
+                hit_id = False
+                hit_str = False
+
+            file_results.append(
+                SearchResult(
+                    file=path,
+                    uid=entry.uid,
+                    msgctxt=entry.msgctxt or "",
+                    msgid=entry.msgid,
+                    msgstr=entry.msgstr,
+                    line=entry.line,
+                    hit_msgid=hit_id,
+                    hit_msgstr=hit_str,
+                    hit_speaker=hit_speaker,
+                )
+            )
+    except (OSError, UnicodeError):
+        return index, file_results
+    return index, file_results
+
+
 def search_files(
     files: Iterable[str | Path],
     phrase: str,
@@ -311,88 +513,42 @@ def search_files(
         return results
 
     total = len(paths)
-    for done, path in enumerate(paths, start=1):
-        try:
-            try:
-                raw_text = path.read_text(encoding="utf-8")
-            except UnicodeDecodeError:
-                try:
-                    raw_text = path.read_text(encoding="utf-8-sig")
-                except Exception:
-                    continue
-            except OSError:
-                continue
+    worker_kwargs = {
+        "phrase_expression": phrase_expression,
+        "speaker_expression": speaker_expression,
+        "search_msgid": search_msgid,
+        "search_msgstr": search_msgstr,
+        "case_sensitive": case_sensitive,
+        "raw": raw,
+    }
 
-            if phrase_expression and not _file_can_contain_expression(
-                raw_text,
-                phrase_expression,
-                case_sensitive=case_sensitive,
-                raw=raw,
-            ):
-                continue
-            if speaker_expression and not _file_can_contain_expression(
-                raw_text,
-                speaker_expression,
-                case_sensitive=case_sensitive,
-                raw=raw,
-            ):
-                continue
-
-            po = parse_po_text(raw_text, path)
-            for entry in po.entries:
-                speaker_text = "\n".join(
-                    value
-                    for value in (entry.speaker, entry.msgctxt or "")
-                    if value
-                )
-                hit_speaker = bool(speaker_expression) and _matches_expression(
-                    speaker_text,
-                    speaker_expression,
-                    case_sensitive=case_sensitive,
-                    raw=raw,
-                )
-                if speaker_expression and not hit_speaker:
-                    continue
-
-                if phrase_expression:
-                    selected_texts: list[str] = []
-                    selected_fields: list[str] = []
-                    if search_msgid:
-                        selected_texts.append(entry.msgid)
-                        selected_fields.append("msgid")
-                    if search_msgstr:
-                        selected_texts.append(entry.msgstr)
-                        selected_fields.append("msgstr")
-                    phrase_matches, field_hits = _matches_expression_across_texts(
-                        selected_texts,
-                        phrase_expression,
-                        case_sensitive=case_sensitive,
-                        raw=raw,
-                    )
-                    if not phrase_matches:
-                        continue
-                    hit_id = any(field == "msgid" and hit for field, hit in zip(selected_fields, field_hits))
-                    hit_str = any(field == "msgstr" and hit for field, hit in zip(selected_fields, field_hits))
-                else:
-                    hit_id = False
-                    hit_str = False
-
-                results.append(
-                    SearchResult(
-                        file=path,
-                        uid=entry.uid,
-                        msgctxt=entry.msgctxt or "",
-                        msgid=entry.msgid,
-                        msgstr=entry.msgstr,
-                        line=entry.line,
-                        hit_msgid=hit_id,
-                        hit_msgstr=hit_str,
-                        hit_speaker=hit_speaker,
-                    )
-                )
-        finally:
+    if total < _SEARCH_PARALLEL_THRESHOLD:
+        for done, path in enumerate(paths, start=1):
+            _index, file_results = _search_one_file(done - 1, path, **worker_kwargs)
+            results.extend(file_results)
             if progress is not None:
                 progress(done, total, path)
+        return results
+
+    buckets: dict[int, list[SearchResult]] = {}
+    max_workers = min(_SEARCH_MAX_WORKERS, total, max(2, os.cpu_count() or 2))
+    with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="po-search") as executor:
+        future_to_item = {
+            executor.submit(_search_one_file, index, path, **worker_kwargs): (index, path)
+            for index, path in enumerate(paths)
+        }
+        for done, future in enumerate(as_completed(future_to_item), start=1):
+            index, path = future_to_item[future]
+            try:
+                result_index, file_results = future.result()
+            except Exception:
+                result_index, file_results = index, []
+            buckets[result_index] = file_results
+            if progress is not None:
+                progress(done, total, path)
+
+    for index in range(total):
+        results.extend(buckets.get(index, []))
     return results
 
 

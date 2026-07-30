@@ -189,7 +189,7 @@
       "notes": ""
     },
     {
-      "enabled": false,
+      "enabled": true,
       "speaker": "KYOUKO",
       "scope": "",
       "find": "Tôi;tôi",
@@ -283,6 +283,17 @@
       "find": "Hông;hông",
       "replace": "Không;không",
       "whole_word": true,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "phần Đạn Bác Bỏ",
+      "replace": "mục Đạn Sự Thật",
+      "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""

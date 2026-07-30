@@ -1228,3 +1228,27 @@ def test_suggestion_index_accepts_current_in_memory_po_changes():
     refreshed = TranslationSuggestionIndex()
     refreshed.add_po_file(po, Path("current.po"))
     assert refreshed.suggest("Hello there", min_score=0.5)[0].translation == "Xin chào mới"
+
+
+def test_search_cache_reuses_files_and_invalidates_changed_content():
+    import tempfile
+    import time
+
+    from dr_po_toolkit.search import clear_search_cache, search_path
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        po_path = root / "cached.po"
+        po_path.write_text('msgctxt "1 | MAKOTO"\nmsgid "First needle"\nmsgstr "Old"\n', encoding="utf-8")
+        clear_search_cache()
+
+        assert len(search_path(root, "first needle")) == 1
+        assert len(search_path(root, "first needle")) == 1
+
+        # Change both content and size so every supported filesystem invalidates it.
+        time.sleep(0.002)
+        po_path.write_text('msgctxt "1 | MAKOTO"\nmsgid "Second different needle"\nmsgstr "New value"\n', encoding="utf-8")
+
+        assert search_path(root, "first needle") == []
+        assert len(search_path(root, "second different needle")) == 1
+        clear_search_cache()

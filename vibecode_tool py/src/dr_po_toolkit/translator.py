@@ -17,14 +17,14 @@ SYSTEM_INSTRUCTIONS = """You are translating Danganronpa game PO entries into Vi
 Return JSON only. Do not return PO text. Do not explain.
 Rules:
 - Translate only into Vietnamese.
-- The English source_en/msgid is the source of truth. Translate by following the English meaning, wording, order, and intent as closely as natural Vietnamese allows.
-- Use japanese_context only as secondary context for speaker tone, ambiguity, or terminology. Never let Japanese context override, expand, shorten, or change the English source.
+- The English source_en/msgid is the only source text. Follow its meaning, wording, order, and intent as closely as natural Vietnamese allows.
+- Do not use, request, infer from, or output Japanese text. API entry payloads intentionally contain English source text only.
 - Preserve every CLT tag exactly, in the same order, e.g. <CLT 4> and <CLT>.
 - Preserve placeholders and non-CLT tags exactly.
 - Do not translate speaker names or ids.
 - Do not leave translation empty.
 - Keep tone natural for the speaker while still following the English closely.
-- When previous_vietnamese_context is provided, treat it as mandatory continuity context for established Vietnamese wording, xưng hô/forms of address, speaker tone, and terminology. Reuse those established choices whenever they fit the current English meaning.
+- When previous_vietnamese_context is provided, use its previous English sentences as dialogue continuity and any non-empty Vietnamese translations for established wording, xưng hô/forms of address, speaker tone, and terminology.
 - Never translate, rewrite, quote, or return previous_vietnamese_context. It is context only; source_en for the current entry remains the source of truth.
 """
 
@@ -60,7 +60,6 @@ def build_payload(
                 "uid": entry.uid,
                 "msgctxt": entry.msgctxt,
                 "speaker": entry.speaker,
-                "japanese_context": entry.japanese_context,
                 "source_en": entry.msgid,
             }
         )
@@ -85,34 +84,46 @@ def build_previous_vietnamese_context(
     file_entries: Iterable[POEntry],
     current_entry: POEntry,
     *,
-    limit: int = 5,
+    limit: int = 20,
     translation_overrides: Mapping[str, str] | None = None,
+    previous_file_entries: Iterable[POEntry] | None = None,
 ) -> list[dict[str, Any]]:
-    """Return translated context from the immediate previous entries in one PO file.
+    """Return the immediate previous entries used as API continuity context.
 
-    The window is positional: only the five entries directly before the current
-    entry are considered. Untranslated entries inside that window are omitted;
-    the function never reaches farther back to replace them.
+    By default, the window is restricted to ``file_entries``. Callers may opt in
+    to cross-file continuity by passing ordered ``previous_file_entries``. Those
+    entries are only used to fill context that is not available earlier in the
+    current file, and the combined window never exceeds ``limit``.
+
+    Every previous English sentence is included; ``translation_vi`` is empty
+    only when that previous entry has not been translated yet.
     """
     if limit <= 0:
         return []
     entries = list(file_entries)
-    current_position = next((i for i, entry in enumerate(entries) if entry.uid == current_entry.uid), None)
+    current_position = next((i for i, entry in enumerate(entries) if entry is current_entry), None)
+    if current_position is None:
+        current_position = next((i for i, entry in enumerate(entries) if entry.uid == current_entry.uid), None)
     if current_position is None:
         return []
     overrides = translation_overrides or {}
-    window = entries[max(0, current_position - limit):current_position]
+    prior_file_window = list(previous_file_entries or [])
+    local_window = entries[:current_position]
+    combined: list[tuple[POEntry, bool]] = [
+        *((entry, False) for entry in prior_file_window),
+        *((entry, True) for entry in local_window),
+    ]
+    window = combined[-limit:]
     context: list[dict[str, Any]] = []
-    for position, entry in enumerate(window, start=current_position - len(window)):
-        translation = overrides.get(entry.uid, entry.msgstr)
-        if not translation.strip():
-            continue
+    for relative_position, (entry, is_current_file) in enumerate(window, start=-len(window)):
+        translation = overrides.get(entry.uid, entry.msgstr) if is_current_file else entry.msgstr
         context.append(
             {
-                "relative_position": position - current_position,
+                "relative_position": relative_position,
                 "uid": entry.uid,
                 "msgctxt": entry.msgctxt,
                 "speaker": entry.speaker,
+                "source_en": entry.msgid,
                 "translation_vi": translation,
             }
         )
@@ -332,13 +343,17 @@ def translate_entries_with_client(
     prompt: str | None = None,
     progress: Callable[[int, int], None] | None = None,
     context_entries: Iterable[POEntry] | None = None,
+    context_limit: int = 20,
+    previous_file_context_entries: Iterable[POEntry] | None = None,
     on_translation: Callable[[POEntry, str], None] | None = None,
 ) -> tuple[dict[str, str], list[TranslationError]]:
     """Translate entries with Gemini API.
 
     Interactive callers opt into strict one-entry requests by supplying
-    ``context_entries``. Each request then receives up to the five immediately
-    preceding translated entries from the same ordered PO file.
+    ``context_entries``. Each request then receives up to ``context_limit``
+    immediately preceding translated entries from the same ordered PO file.
+    ``previous_file_context_entries`` is optional and only used when callers
+    explicitly enable cross-file continuity.
 
     Callers without ``context_entries`` retain the original batched behavior,
     controlled by ``batch_size``. This is used by Mass Translate File.
@@ -356,8 +371,9 @@ def translate_entries_with_client(
             previous_context = build_previous_vietnamese_context(
                 context_list,
                 entry,
-                limit=5,
+                limit=max(0, int(context_limit)),
                 translation_overrides=all_translations,
+                previous_file_entries=previous_file_context_entries,
             )
             payload = build_payload(
                 [entry],
@@ -408,9 +424,12 @@ def translate_file_with_client(
     sleep_seconds: float = 1.0,
     allow_partial: bool = False,
     prompt: str | None = None,
+    context_limit: int = 0,
+    previous_file_context_entries: Iterable[POEntry] | None = None,
 ) -> tuple[int, list[TranslationError]]:
     po = load_po(po_path)
     missing = source_entries_for_translation(po_path)
+    effective_context_limit = max(0, int(context_limit))
     translations, errors = translate_entries_with_client(
         missing,
         client,
@@ -418,6 +437,9 @@ def translate_file_with_client(
         sleep_seconds=sleep_seconds,
         allow_partial=allow_partial,
         prompt=prompt,
+        context_entries=po.entries if effective_context_limit else None,
+        context_limit=effective_context_limit,
+        previous_file_context_entries=previous_file_context_entries if effective_context_limit else None,
     )
     changed = patch_msgstr_by_uid(po, translations)
     if changed:

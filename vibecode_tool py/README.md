@@ -62,7 +62,7 @@ The GUI shows shared progress text in the top toolbar for every long-running act
 
 ## Search / Sync / Repack performance
 
-Large folders are faster in this build because scanners now prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search also does a quick file-level prefilter before fully parsing a `.po` file, so files that cannot contain the phrase are skipped early.
+Large folders are faster in this build because scanners prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search builds a bounded in-memory index of decoded PO fields, scans larger file sets in parallel, skips files that cannot contain the expression before full parsing, and reuses unchanged parsed files on later searches. Cache entries invalidate automatically when a file's modification time or size changes. The first search indexes the folder; later searches over the same files are normally much faster.
 
 `Sync by Filename` now refuses nested source/target folders, skips self-copy, skips duplicate source filenames, and avoids rewriting target files that are already identical. This reduces disk writes a lot when syncing the same folder repeatedly.
 
@@ -284,22 +284,26 @@ Direct Gemini API mode is optional and requires:
 pip install google-genai
 ```
 
-Interactive Gemini API translation in PO Viewer, Search, and duplicate/diff views
-sends exactly one PO entry per request. Each request includes
-`previous_vietnamese_context`: up to the five immediately preceding translated
-entries from that entry's current working PO file, ordered oldest to newest.
-Gemini must use this context for consistent Vietnamese wording, xưng hô, speaker
-tone, and terminology while keeping the current English `source_en` authoritative.
-When several entries from one file are selected, each accepted translation is
-available as context for the following request.
+Interactive Gemini API translation in PO Viewer, Search, duplicate/diff views,
+and the Gemini API file runner sends one current PO entry per request when
+`Previous context` is above zero. The Gemini tab exposes this setting from 0 to
+200, with a default of 20. Each request includes the immediately preceding
+English `source_en` sentences, ordered oldest to newest, plus any Vietnamese
+translations already available for continuity. Accepted translations become
+context for following requests. Context stays inside the current PO file by
+default. Turn on `Include previous files` beside the compact context count only
+when earlier PO files should fill unused context slots. Set `Previous context`
+to 0 to disable continuity and keep normal `Max entries / batch` requests.
 
-Mass Translate File keeps the configured `Max entries / batch` behavior and does
-not switch to one-entry requests.
+Gemini API entry payloads never include extracted Japanese comments or the old
+`japanese_context` field. The current English `source_en` remains the only source
+text to translate; previous English/Vietnamese entries are continuity context only.
 
-PO Viewer keeps a unified undo history for every Vietnamese text mutation,
-including direct editor/table changes, line wrapping, suggestion apply,
-find/replace, preset replacement, Translafixer fill, and Gemini translation.
-Use the toolbar Undo button, the Suggestions Undo button, or `Ctrl+Z`.
+Search, PO Viewer, and duplicate/diff views keep up to 500 unified undo actions.
+`Ctrl+Z` is routed through that history before the focused editor consumes it, so
+normal typing undo still works and saved actions such as line wrapping, suggestion
+apply, find/replace, preset replacement, Translafixer fill, and Gemini translation
+can also be reversed. Toolbar Undo controls use the same history.
 
 ### Copy.po safety
 

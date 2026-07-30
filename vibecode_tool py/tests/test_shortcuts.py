@@ -186,3 +186,25 @@ def test_interactive_gemini_context_and_global_po_viewer_undo_are_wired():
     assert 'begin_po_undo_batch("replace all")' in gui_source
     assert 'begin_po_undo_batch("preset replace")' in gui_source
     assert 'begin_po_undo_batch("translafix")' in gui_source
+
+
+def test_gemini_previous_file_context_has_compact_opt_in_toggle():
+    root = Path(__file__).parents[1]
+    gui_source = (root / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
+    config_source = (root / "src" / "dr_po_toolkit" / "config.py").read_text(encoding="utf-8")
+
+    assert '"gemini_api_context_across_files": False' in config_source
+    assert 'api_context_entries.setFixedWidth(72)' in gui_source
+    assert 'QCheckBox("Include previous files")' in gui_source
+    assert 'Off: context never leaves the current PO file.' in gui_source
+    assert 'previous_file_context_entries=previous_file_context if use_previous_files else None' in gui_source
+
+
+def test_gui_routes_ctrl_z_to_unified_undo_history():
+    source = (Path(__file__).parents[1] / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
+
+    assert "class RoutedUndoShortcutFilter" in source
+    assert "event.matches(QKeySequence.StandardKey.Undo)" in source
+    assert "RoutedUndoShortcutFilter(_tab, undo_last_search_change)" in source
+    assert "RoutedUndoShortcutFilter(dialog, undo_duplicate_change)" in source
+    assert "RoutedUndoShortcutFilter(_tab, undo_last_po_change)" in source
