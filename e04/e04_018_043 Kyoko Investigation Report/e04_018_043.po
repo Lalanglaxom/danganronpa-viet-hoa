@@ -419,8 +419,7 @@ msgid ""
 "<CLT 4>A dying message...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thông điệp trước lúc lâm chung...\n"
-"Quả nhiên là vậy sao...\n"
+"<CLT 4>Một lời nhắn tuyệt mệnh...\n"
 "<CLT>"
 
 #. だけど、その雑誌が上下逆さまになっていたのは、
@@ -470,7 +469,7 @@ msgstr "Ừ-Ừ, trông giống thế."
 #. そうなんだね！？
 msgctxt "0051 | AOI ASAHINA"
 msgid "Then...she's the killer! Right!?"
-msgstr "Vậy... con nhỏ đó chính là hung thủ! Đúng chứ!?"
+msgstr "Vậy... cô ta chính là hung thủ! Đúng chứ!?"
 
 #. いや…まだ決まった訳じゃ…
 msgctxt "0052 | MAKOTO NAEGI"
@@ -1017,7 +1016,7 @@ msgid ""
 "fine. And that obnoxious Byakuya's not here, so..."
 msgstr ""
 "Tớ đã điều tra kỹ lưỡng hết rồi nên không sao đâu. Vả\n"
-"lại tên Byakuya khó ưa đó cũng có ở đây đâu nên..."
+"lại tên Byakuya khó ưa đó cũng có ở đây nên..."
 
 #. 私は化学室に行って必要な道具を持ってくるから、
 #. その間によろしく…
@@ -1279,8 +1278,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Thí Nghiệm Lọ Monokuma<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
-"trong sổ học sinh của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Thí Nghiệm Lọ Monokuma<CLT><CLT 23>\" đã được thêm vào mục\n"
+"Đạn Sự Thật trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. うーん…
@@ -1393,8 +1392,8 @@ msgid ""
 "discovered from Sakura's body...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Kyoko bảo là trên thi thể của Sakura vẫn còn...\n"
-"Một manh mối mới chưa được khai thác nữa cơ mà...\n"
+"<CLT 4>Theo lời Kyoko, vẫn còn điều gì đó có thể được\n"
+"khám phá từ thi thể của Sakura...\n"
 "<CLT>"
 
 #. ぼんやり眺めてるだけじゃ、
@@ -1958,8 +1957,8 @@ msgid ""
 "Shards of light blue glass... They must be parts of\n"
 "the <CLT 3>window<CLT> I broke to get inside."
 msgstr ""
-"Những mảnh thủy tinh màu xanh nhạt... Chắc chắn là các mảnh vỡ\n"
-"của <CLT 3>ô cửa sổ<CLT> mà mình đã đập vỡ để vào trong."
+"Những mảnh thủy tinh màu xanh nhạt... Chắc chắn là các\n"
+"mảnh vỡ của <CLT 3>ô cửa sổ<CLT> mà tớ đã đập vỡ để vào trong."
 
 #. この破片…容器の周りだけじゃなく、
 #. <CLT 3>容器の下<CLT>にも散らばってるみたいよ…
@@ -1968,8 +1967,8 @@ msgid ""
 "But they aren't just scattered *around* the can.\n"
 "They're also <CLT 3>underneath<CLT> it."
 msgstr ""
-"Những mảnh vỡ này... không chỉ vương vãi *xung quanh* cái\n"
-"bình đâu. Chúng còn ở <CLT 3>bên dưới<CLT> nó nữa."
+"Những mảnh vỡ này... không chỉ vương vãi *xung quanh*\n"
+"cái bình đâu. Chúng còn ở <CLT 3>bên dưới<CLT> nó nữa."
 
 #. それが…どうしたの？
 msgctxt "0219 | MAKOTO NAEGI"
@@ -2103,8 +2102,8 @@ msgid ""
 "locked room is still only half solved...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đã đến giờ này rồi sao...!? Dù bí ẩn về căn phòng kín\n"
-"vẫn chưa được giải mã xong xuôi...<CLT>"
+"<CLT 4>Đã đến giờ này rồi sao...!? Dù bí ẩn về căn phòng\n"
+"kín vẫn chưa được giải mã xong xuôi...<CLT>"
 
 #. <CLT 4>この先は…
 #. 学級裁判でなんとかするしかないって事か…
@@ -2115,8 +2114,8 @@ msgid ""
 "happen at the class trial...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tới bước này thì chuyện gì xảy ra cũng đành phải chờ\n"
-"đến lớp xét xử thôi...!\n"
+"<CLT 4>Tới bước này thì chuyện gì xảy ra cũng đành phải\n"
+"chờ đến lớp xét xử thôi...!\n"
 "<CLT>"
 
 #. いや…絶対になんとかしないと…ッ！
@@ -2125,5 +2124,5 @@ msgid ""
 "No...not whatever happens. I have to\n"
 "MAKE something happen!"
 msgstr ""
-"Không... không thể chờ chuyện gì xảy ra thì xảy ra được.\n"
-"Mình phải TẠO RA chuyện gì đó mới được!"
+"Không... không thể để chuyện gì xảy ra thì xảy ra được.\n"
+"Mình phải TẠO RA điều gì đó!"

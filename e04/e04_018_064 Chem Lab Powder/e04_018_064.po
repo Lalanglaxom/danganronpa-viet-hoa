@@ -234,7 +234,7 @@ msgid ""
 "<CLT 4>So...on this shelf is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy... trên chiếc kệ này là...\n"
+"<CLT 4>Xem nào... trên chiếc kệ này là...\n"
 "<CLT>"
 
 #. <CLT 4>なんか…あんまり見覚えのない薬ばっかりだな…
@@ -465,8 +465,8 @@ msgid ""
 "chemicals<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mấy thứ này trông giống như <CLT><CLT 3>thuốc độc<CLT><CLT 4> và các loại <CLT><CLT 3>hóa\n"
-"chất mạnh<CLT><CLT 4> khác ấy nhỉ...?\n"
+"<CLT 4>Mấy thứ này trông giống như <CLT><CLT 3>thuốc độc<CLT><CLT 4> và các loại <CLT>\n"
+"<CLT 3>hóa chất mạnh<CLT><CLT 4> khác ấy nhỉ...?\n"
 "<CLT>"
 
 #. <CLT 4>この棚にある容器には、
@@ -581,7 +581,7 @@ msgid ""
 "<CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như chiếc lọ được dán nhãn <CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
+"<CLT 4>Có vẻ như cái lọ được dán nhãn <CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. １ついい事を教えてやろう…
@@ -648,7 +648,7 @@ msgid ""
 "where all the powder came from...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phía trước kệ có một cái chai bị vỡ. Có phải tất cả\n"
+"<CLT 4>Phía trước kệ có một cái lọ bị vỡ. Có phải tất cả\n"
 "bột màu vàng này đều từ đây mà ra...?\n"
 "<CLT>"
 
@@ -661,7 +661,7 @@ msgid ""
 "<CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có vẻ như chiếc lọ được dán nhãn <CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
+"<CLT 4>Có vẻ như cái lọ được dán nhãn <CLT><CLT 3>CHEM C-4<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. 今朝、俺は４階を調べて回ったんだが、
@@ -697,7 +697,7 @@ msgid ""
 "to the case somehow.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu đúng là lúc đó vụ việc xảy ra, thì nó hẳn là có\n"
+"<CLT 4>Nếu đó đúng là lúc vụ việc xảy ra, thì nó hẳn là có\n"
 "liên quan gì đó đến vụ án này.\n"
 "<CLT>"
 
@@ -751,8 +751,8 @@ msgid ""
 "paper and a pen.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vừa nở một nụ cười khẩy khó chịu, Byakuya vừa chìa ra\n"
-"một tờ giấy và cây bút.\n"
+"<CLT 4>Vừa nở một nụ cười khẩy khó chịu, Byakuya vừa\n"
+"chìa ra một tờ giấy và cây bút.\n"
 "<CLT>"
 
 #. …どうした、早くしろ。
@@ -810,8 +810,8 @@ msgid ""
 "It would appear that whoever left these footprints\n"
 "only had <CLT 3>business at the leftmost shelf<CLT>."
 msgstr ""
-"Có vẻ như kẻ để lại dấu chân này <CLT 3>chỉ có việc ở chiếc\n"
-"kệ bên trái<CLT> mà thôi."
+"Có vẻ như kẻ để lại dấu chân này <CLT 3>chỉ có việc ở\n"
+"chiếc kệ bên trái<CLT> mà thôi."
 
 #. 迷いなく一直線に左端の棚の前に向かい、
 #. そこで用事を済ませ、そして去っていった…
@@ -850,8 +850,8 @@ msgid ""
 "Okay. Then let me see your shoes and I'll confirm\n"
 "their size for myself."
 msgstr ""
-"Được thôi. Vậy thì đưa giày của cậu đây để tôi tự kiểm tra\n"
-"kích cỡ chân xem sao."
+"Được thôi. Vậy thì đưa giày của cậu đây để tôi\n"
+"tự kiểm tra kích cỡ xem sao."
 
 #. <CLT 4>断る訳にもいかず、
 #. 大人しく十神クンの言葉に従った。
@@ -883,7 +883,7 @@ msgstr ""
 #. 残念なんだ…
 msgctxt "0087 | MAKOTO NAEGI"
 msgid "Unfortunately...?"
-msgstr "Đáng tiếc ư...?"
+msgstr "Đáng tiếc sao...?"
 
 #. だが、これだけハッキリと足跡が残っているのなら、
 #. 誰の足跡かはすぐに判明するはずだ。
