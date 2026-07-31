@@ -20,7 +20,7 @@ msgstr "Hừm... Chỉ có sáu người các cậu thôi sao? Thật á..."
 #. 少ないねッ！　寂しいねッ！
 msgctxt "0002 | MONOKUMA"
 msgid "That's so few! You must be so lonely!"
-msgstr "Ít quá nhỉ! Buồn tẻ quá nhỉ!"
+msgstr "Ít vậy! Chắc các cậu cô đơn lắm!"
 
 #. 何言ってんだ…
 #. 全部…お前のせいじゃないか…ッ！
@@ -28,7 +28,9 @@ msgctxt "0003 | MAKOTO NAEGI"
 msgid ""
 "You say that like it's not YOUR fault we're all that's\n"
 "left!"
-msgstr "Cậu nói nghe thản nhiên ghê nhỉ... Chẳng phải tất cả... là do tại cậu hết sao hả...!"
+msgstr ""
+"Mi nói như thể không phải LỖI của mi mà chúng ta\n"
+"là những người duy nhất còn lại vậy!"
 
 #. 今回の学級裁判で、また減っちゃうんですかねぇ…
 #. それとも…
@@ -36,12 +38,16 @@ msgctxt "0004 | MONOKUMA"
 msgid ""
 "I wonder, will the class trial end with one less\n"
 "classmate again? Or..."
-msgstr "Không biết là sau lớp xét xử lần này, chúng ta lại phải tiễn thêm một người bạn nữa không nhỉ... Hay là..."
+msgstr ""
+"Không biết là sau lớp xét xử lần này, chúng ta lại phải tiễn\n"
+"thêm một người bạn nữa không nhỉ? Hay là..."
 
 #. この学園生活自体が終了するんでしょうか？
 msgctxt "0005 | MONOKUMA"
 msgid "...will your school life come to an end completely?"
-msgstr "...toàn bộ cuộc sống học đường này sẽ chính thức khép lại luôn đây?"
+msgstr ""
+"...toàn bộ cuộc sống học đường này sẽ chính thức\n"
+"khép lại luôn đây?"
 
 #. …じゃあ、始めましょうか！
 #. では、自分の名前が書かれた席に着いてくださーい！
@@ -49,7 +55,9 @@ msgctxt "0006 | MONOKUMA"
 msgid ""
 "Now then, are we ready to begin? You know the drill!\n"
 "Find your assigned seats!"
-msgstr "Bây giờ thì, chúng ta bắt đầu được chưa nào? Mọi người biết phải làm gì rồi đấy! Nhanh chân về chỗ ngồi có ghi tên mình đi nào!"
+msgstr ""
+"Rồi, đã sẵn sàng bắt đầu chưa nào? Các em biết quy tắc rồi\n"
+"đấy! Hãy tìm chỗ ngồi được chỉ định của mình đi!"
 
 #. <CLT 4>そして、４度目の幕が開く…
 #. <CLT>
@@ -58,7 +66,7 @@ msgid ""
 "<CLT 4>And so, the curtain opened for the fourth time...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và cứ thế, tấm màn vén lên lần thứ tư...\n"
+"<CLT 4>Và như thế, tấm màn vén lên lần thứ tư...\n"
 "<CLT>"
 
 #. <CLT 4>命がけの裁判…命がけの騙し合い…命がけの裏切り…
@@ -80,8 +88,8 @@ msgid ""
 "<CLT 4>A deadly riddle, a deadly defense, a deadly faith...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Một câu đố chết chóc, một lời bào chữa chết chóc, một\n"
-"niềm tin chết chóc...\n"
+"<CLT 4>Một câu đố chết chóc, một lời bào chữa chết chóc, \n"
+"một niềm tin chết chóc...\n"
 "<CLT>"
 
 #. <CLT 4>命がけの……学級裁判……

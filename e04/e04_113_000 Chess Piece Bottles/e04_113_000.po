@@ -14,7 +14,7 @@ msgstr ""
 #. そうだ…！　<CLT 3>チェスの駒<CLT>だよ…！
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "That's it! The <CLT 3>chess pieces<CLT>!"
-msgstr "Ra thế rồi...! Chính là <CLT 3>quân cờ vua<CLT>...!"
+msgstr "Ra thế! Chính là <CLT 3>quân cờ vua<CLT>!"
 
 #. ボトルの中のモノクマフィギュアが持ってるのは、
 #. 全部、チェスの駒なんだ。
@@ -22,7 +22,9 @@ msgctxt "0002 | MAKOTO NAEGI"
 msgid ""
 "Inside each bottle there was a Monokuma figure holding\n"
 "a different chess piece."
-msgstr "Bên trong mỗi chiếc chai đều có một hình nhân Monokuma đang cầm một quân cờ vua khác nhau."
+msgstr ""
+"Bên trong mỗi cái lọ đều có một mô hình Monokuma\n"
+"đang cầm một quân cờ vua khác nhau."
 
 #. キング、ルーク、ビショップ、ポーン…
 #. 確かに、すべてチェスの駒だな…
@@ -30,7 +32,9 @@ msgctxt "0003 | BYAKUYA TOGAMI"
 msgid ""
 "King, rook, bishop, pawn... I definitely remember\n"
 "seeing each of those."
-msgstr "Vua, xe, tượng, tốt... Ta nhớ là mình đã nhìn thấy tất cả chúng."
+msgstr ""
+"Vua, xe, tượng, tốt... Tôi nhớ là mình đã nhìn thấy\n"
+"tất cả chúng."
 
 #. それと、割れたモノクマボトルの中に入ってた
 #. モノクマフィギュアは…
@@ -38,7 +42,9 @@ msgctxt "0004 | MAKOTO NAEGI"
 msgid ""
 "And the piece that was inside the broken bottle we\n"
 "found was..."
-msgstr "Và quân cờ nằm bên trong chiếc chai bị vỡ mà chúng ta tìm thấy chính là..."
+msgstr ""
+"Và quân cờ nằm bên trong cái lọ bị vỡ mà chúng\n"
+"ta tìm thấy chính là..."
 
 #. ナイトの駒…だったよね？
 msgctxt "0005 | MAKOTO NAEGI"
@@ -56,7 +62,9 @@ msgctxt "0007 | KYOUKO KIRIGIRI"
 msgid ""
 "I guess you don't know too much about chess, do you?\n"
 "Then let me explain..."
-msgstr "Chắc là cậu không rành lắm về cờ vua đúng không? Vậy để tớ giải thích cho..."
+msgstr ""
+"Chắc là cậu không rành lắm về cờ vua đúng không?\n"
+"Vậy để tớ giải thích cho..."
 
 #. チェスの駒の種類は、キング、クイーン、ルーク、
 #. ナイト、ビショップ、ポーン、全部で<CLT 3>６種類<CLT>なのよ。
@@ -64,7 +72,9 @@ msgctxt "0008 | KYOUKO KIRIGIRI"
 msgid ""
 "In chess, there are <CLT 3>six different pieces<CLT>—the king,\n"
 "the queen, the rook, knight, bishop, and pawn."
-msgstr "Trong cờ vua, có tổng cộng <CLT 3>sáu loại quân cờ khác nhau<CLT>—vua, hậu, xe, mã, tượng và tốt."
+msgstr ""
+"Trong cờ vua, có <CLT 3>sáu loại quân cờ khác nhau<CLT>—vua,\n"
+"hậu, xe, mã, tượng và tốt."
 
 #. だけど、あの現場に残されていたのは、
 #. キング、ルーク、ビショップ、ポーンの４体と…
@@ -72,12 +82,14 @@ msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid ""
 "What was left intact at the crime scene were the king,\n"
 "rook, bishop, and pawn...just those four."
-msgstr "Nhưng những gì còn nguyên vẹn lại hiện trường vụ án chỉ là vua, xe, tượng và tốt... chỉ bốn quân đó thôi."
+msgstr ""
+"Nhưng những gì còn nguyên vẹn tại hiện trường vụ án\n"
+"chỉ là vua, xe, tượng và tốt... chỉ bốn quân đó thôi."
 
 #. 床に落ちていたナイトだけ…
 msgctxt "0010 | KYOUKO KIRIGIRI"
 msgid "And on the ground was the knight."
-msgstr "Và nằm trên mặt đất chỉ có mỗi quân mã."
+msgstr "Và nằm trên mặt đất là quân mã."
 
 #. あ！　<CLT 3>クイーンのフィギュア<CLT>が足りないんだ！
 msgctxt "0011 | AOI ASAHINA"
@@ -90,12 +102,14 @@ msgctxt "0012 | MAKOTO NAEGI"
 msgid ""
 "So we only have evidence for five bottles at the\n"
 "scene, while one apparently went missing."
-msgstr "Nên chúng ta chỉ thấy có bằng chứng về năm chiếc chai tại hiện trường, nghĩa là thiếu mất một chiếc."
+msgstr ""
+"Nên chúng ta chỉ thấy có bằng chứng về năm cái lọ tại\n"
+"hiện trường, nghĩa là thiếu mất một cái."
 
 #. な、何よ…チェスがなんだって言うのよ…！
 msgctxt "0013 | TOUKO FUKAWA"
 msgid "What does ch-chess have to do with anything!?"
-msgstr "C-Cái gì chứ... cờ vua thì liên quan gì đến vụ án cơ chứ...!"
+msgstr "Cờ vua thì có liên quan cái quái gì chứ!?"
 
 #. 日本人なら将棋だべ！
 msgctxt "0014 | YASUHIRO HAGAKURE"
@@ -110,12 +124,12 @@ msgid ""
 "...Wait, n-no! That's not what I mean!"
 msgstr ""
 "Đúng v—\n"
-"...Khoản đã, k-không phải! Ý tớ không phải thế!"
+"...Khoan đã, k-không phải! Ý tôi không phải thế!"
 
 #. 確かに…ボトルは足りなくなってるかもしれないけど…
 msgctxt "0016 | TOUKO FUKAWA"
 msgid "So, let's say a b-bottle did go missing..."
-msgstr "Ừ thì, cứ cho là có một c-chiếc chai biến mất thật đi..."
+msgstr "Ừ thì, cứ cho là có một c-cái lọ biến mất thật đi..."
 
 #. それが事件と関係している根拠なんて…
 #. ど、どこにもないじゃない…
@@ -123,7 +137,9 @@ msgctxt "0017 | TOUKO FUKAWA"
 msgid ""
 "Th-There's still no evidence that h-has anything to do\n"
 "w-with this case!"
-msgstr "Nhưng l-làm gì có tí bằng chứng nào cho thấy nó liên q-quan đến vụ án này chứ..."
+msgstr ""
+"Nhưng l-làm gì có tí bằng chứng nào cho thấy nó\n"
+"liên q-quan đến vụ án này chứ..."
 
 #. 事件前から…すでに１本欠けてたのかも…
 #. し、しれないじゃない…ッ！
@@ -131,7 +147,9 @@ msgctxt "0018 | TOUKO FUKAWA"
 msgid ""
 "That bottle c-could have disappeared anytime b-before\n"
 "the murder!"
-msgstr "Chiếc chai đó c-có khi đã biến mất từ trước lúc án mạng xảy ra k-kia mà...!"
+msgstr ""
+"Cái lọ đó c-có khi đã biến mất từ trước lúc án mạng\n"
+"xảy ra k-kia mà...!"
 
 #. いいえ、なくなったモノクマボトルが
 #. 事件に関係しているのは明白よ。
@@ -139,12 +157,14 @@ msgctxt "0019 | KYOUKO KIRIGIRI"
 msgid ""
 "No, it's clear that the missing bottle *is* connected\n"
 "to this case."
-msgstr "Không, rõ ràng là chiếc chai bị thiếu *có* liên quan đến vụ án này."
+msgstr ""
+"Không, rõ ràng là cái lọ bị thiếu *có* liên quan\n"
+"đến vụ án này."
 
 #. な、なんで明白なのよッ！！
 msgctxt "0020 | TOUKO FUKAWA"
 msgid "H-How is it clear!?"
-msgstr "R-Rõ chỗ nào mà rõ thế hả!!"
+msgstr "R-Rõ chỗ nào mà rõ hả!"
 
 #. なくなったモノクマボトルはどういう状態だったか…
 #. それを考えてみれば、わかるはずよ。
@@ -152,7 +172,9 @@ msgctxt "0021 | KYOUKO KIRIGIRI"
 msgid ""
 "Think about what state the missing bottle must have\n"
 "been in. Maybe then you'll understand..."
-msgstr "Hãy thử nghĩ xem chiếc chai bị mất đó ở trong tình trạng thế nào... Có lẽ cậu sẽ hiểu thôi..."
+msgstr ""
+"Hãy thử nghĩ xem cái lọ bị mất đó ở trong tình trạng\n"
+"thế nào. Có lẽ cậu sẽ hiểu thôi..."
 
 #. 割れた状態
 msgctxt "0022 | CHOICE/RE:ACT"
@@ -162,12 +184,12 @@ msgstr "Nó đã bị vỡ"
 #. 興奮状態
 msgctxt "0023 | CHOICE/RE:ACT"
 msgid "It was excited"
-msgstr "Nó đang ở trạng thái phấn khích"
+msgstr "Nó đang phấn khích"
 
 #. モノクマボトルは興奮状態だったんだ…！！
 msgctxt "0024 | MAKOTO NAEGI"
 msgid "The Monokuma Bottle must have been really excited...!"
-msgstr "Chắc là chiếc chai Monokuma đó đang cực kỳ phấn khích...!"
+msgstr "Chắc là cái lọ Monokuma đó đang cực kỳ phấn khích...!"
 
 #. …………………
 msgctxt "0025 | KYOUKO KIRIGIRI"
@@ -180,7 +202,9 @@ msgctxt "0026 | AOI ASAHINA"
 msgid ""
 "Makoto... I had no idea *you'd* turn out to be just as\n"
 "big of a disappointment..."
-msgstr "Tớ không ngờ... Makoto cũng là một kẻ gây thất vọng tràn trề thế đấy...!"
+msgstr ""
+"Tui không ngờ... Makoto cũng là một người gây thất\n"
+"vọng tràn trề thế đấy..."
 
 #. 俺の方を見ながら、
 #. 言わないで欲しいべ！
@@ -188,7 +212,9 @@ msgctxt "0027 | YASUHIRO HAGAKURE"
 msgid ""
 "H-Hey! I'd appreciate it if you didn't look right at\n"
 "me when you say that!"
-msgstr "Này! Làm ơn đừng có nhìn thẳng vào mặt tao khi nói câu đó chứ!"
+msgstr ""
+"Này! Làm ơn đừng có nhìn thẳng vào mặt tớ khi\n"
+"nói câu đó chứ!"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -243,7 +269,7 @@ msgstr "<CLT 4>Thí nghiệm mà cậu nhắc đến là...<CLT>"
 #. 思い出して。
 msgctxt "0034 | KYOUKO KIRIGIRI"
 msgid "That's right. The one you helped me perform."
-msgstr "Đúng vậy. Cái thí nghiệm mà cậu đã giúp tớ thực hiện ấy."
+msgstr "Đúng vậy. Cái mà cậu đã giúp tớ thực hiện ấy."
 
 #. そうすればわかるはずよ。
 msgctxt "0035 | KYOUKO KIRIGIRI"
@@ -280,7 +306,8 @@ msgid ""
 "pieces of the Monokuma Bottle, right?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ý cậu là lúc chúng ta đem cân mấy mảnh vỡ của chiếc chai Monokuma đó đúng không?\n"
+"<CLT 4>Ý cậu là lúc chúng ta đem cân mấy mảnh vỡ của\n"
+"cái lọ Monokuma đó đúng không?\n"
 "<CLT>"
 
 #. <CLT 4>なくなったモノクマボトルの状態…？
@@ -290,26 +317,28 @@ msgid ""
 "<CLT 4>Wait...then the bottle that was missing...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khoan đã... vậy thì chiếc chai bị mất đó...\n"
+"<CLT 4>Khoan đã... vậy thì cái lọ bị mất đó...\n"
 "<CLT>"
 
 #. なくなったモノクマボトルは、
 #. おそらく、<CLT 3>割れた状態<CLT>だったはずだよ…
 msgctxt "0040 | MAKOTO NAEGI"
 msgid "The bottle must have been <CLT 3>broken<CLT>."
-msgstr "Chắc chắn là chiếc chai đó <CLT 3>đã bị vỡ<CLT>."
+msgstr "Chắc chắn là cái lọ đó <CLT 3>đã bị vỡ<CLT>."
 
 #. ど、どうして…そんな事がわかるのよ…ッ！
 msgctxt "0041 | TOUKO FUKAWA"
 msgid "What m-makes you so sure!?"
-msgstr "X-Sao mà cậu lại dám chắc chắn như thế chứ...!"
+msgstr "S-Sao mà cậu lại dám chắc như thế!?"
 
 #. だって…<CLT 3>証拠<CLT>も残ってるから…
 msgctxt "0042 | MAKOTO NAEGI"
 msgid ""
 "Because there was <CLT 3>evidence<CLT> at the scene that\n"
 "supports it."
-msgstr "Bởi vì tại hiện trường vẫn còn lưu lại <CLT 3>bằng chứng<CLT> chứng minh điều đó cơ mà."
+msgstr ""
+"Bởi vì tại hiện trường vẫn còn lưu lại <CLT 3>bằng chứng<CLT>\n"
+"chứng minh điều đó."
 
 #. 証拠…？
 msgctxt "0043 | AOI ASAHINA"
@@ -322,18 +351,22 @@ msgctxt "0044 | MAKOTO NAEGI"
 msgid ""
 "That's right. We found evidence that shows there was\n"
 "more than just one broken bottle at the scene."
-msgstr "Đúng vậy. Chúng ta đã tìm thấy bằng chứng cho thấy có nhiều hơn một chiếc chai bị vỡ tại hiện trường."
+msgstr ""
+"Đúng vậy. Chúng tớ đã tìm thấy bằng chứng cho thấy có\n"
+"nhiều hơn một cái lọ bị vỡ tại hiện trường."
 
 #. な、なんなのよ…その証拠って…！
 msgctxt "0045 | TOUKO FUKAWA"
 msgid "And what is this e-evidence!?"
-msgstr "C-Cái gì chứ... bằng chứng nào cơ chứ...!"
+msgstr "Và cái b-bằng chứng đó là gì!?"
 
 #. いいえ…
 #. それ単体では証拠にならないわ。
 msgctxt "0046 | KYOUKO KIRIGIRI"
 msgid "No. That by itself isn't ample evidence."
-msgstr "Không. Bản thân nó chưa đủ để làm bằng chứng xác thực đâu."
+msgstr ""
+"Không. Bản thân nó chưa đủ để làm bằng chứng xác\n"
+"thực đâu."
 
 #. それらを使って行った事…
 #. 証拠になるのはそっちよ。
@@ -341,7 +374,9 @@ msgctxt "0047 | KYOUKO KIRIGIRI"
 msgid ""
 "What you need to show them is what we used to figure\n"
 "it out ourselves."
-msgstr "Thứ mà cậu cần chỉ ra cho họ chính là những gì chúng ta đã dùng để tự mình suy ra điều đó."
+msgstr ""
+"Thứ mà cậu cần chỉ ra cho họ chính là những gì chúng\n"
+"ta đã dùng để tự mình suy ra điều đó."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -360,7 +395,9 @@ msgstr ""
 #. それ単体では証拠にならないわ。
 msgctxt "0049 | KYOUKO KIRIGIRI"
 msgid "No. That by itself isn't ample evidence."
-msgstr "Không. Bản thân nó chưa đủ để làm bằng chứng xác thực đâu."
+msgstr ""
+"Không. Bản thân nó chưa đủ để làm bằng chứng xác\n"
+"thực đâu."
 
 #. それらを使って行った事…
 #. 証拠になるのはそっちよ。
@@ -368,7 +405,9 @@ msgctxt "0050 | KYOUKO KIRIGIRI"
 msgid ""
 "What you need to show them is what we used to figure\n"
 "it out ourselves."
-msgstr "Thứ mà cậu cần chỉ ra cho họ chính là những gì chúng ta đã dùng để tự mình suy ra điều đó."
+msgstr ""
+"Thứ mà cậu cần chỉ ra cho họ chính là những gì chúng\n"
+"ta đã dùng để tự mình suy ra điều đó."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -386,7 +425,9 @@ msgstr ""
 #. はぁ…？　そんなのが証拠だっていうの…？
 msgctxt "0052 | TOUKO FUKAWA"
 msgid "Huh? Is that really supposed to c-convince us?"
-msgstr "Hả? Cậu thực sự nghĩ cái đó c-có thể thuyết phục được tụi mình á?"
+msgstr ""
+"Hả? Cậu thực sự nghĩ cái đó c-có thể thuyết phục\n"
+"được tụi tôi á?"
 
 #. や、やっぱり、証拠なんてないんでしょ！？
 #. 適当な事を…言ってるんだわ！
@@ -394,7 +435,9 @@ msgctxt "0053 | TOUKO FUKAWA"
 msgid ""
 "It's not e-evidence at all! Don't do th-things\n"
 "half-assed...!"
-msgstr "Nó có phải b-bằng chứng quái gì đâu! Đừng có làm mấy th-trò nửa vời chứ...!"
+msgstr ""
+"Nó có phải b-bằng chứng quái gì đâu! Đừng có làm mấy\n"
+"th-trò nửa vời chứ...!"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -415,7 +458,9 @@ msgctxt "0055 | YASUHIRO HAGAKURE"
 msgid ""
 "Stop taking so long, Makoto! If this was chess, you'd\n"
 "have heard the buzzer by now for sure!"
-msgstr "Đừng có lề mề nữa chứ Makoto! Nếu đây là cờ vua, chắc cậu đã bị còi báo hết giờ thổi tơi bời rồi đấy!"
+msgstr ""
+"Đừng có lề mề nữa chứ Makoto! Nếu đây là cờ vua, chắc\n"
+"cậu đã bị còi báo hết giờ thổi tơi bời rồi đấy!"
 
 #. こ、このまま本当に時間切れになったらどうすんだ？
 #. まとめて処刑されちまうかも…！
@@ -423,7 +468,9 @@ msgctxt "0056 | YASUHIRO HAGAKURE"
 msgid ""
 "H-Hey, what are we gonna do if we really DO run out of\n"
 "time! We're all gonna die!"
-msgstr "N-Này, nếu chúng ta thực sự hết giờ thì tính sao đây? Có khi tất cả bọn mình sẽ bị xử tử chùm mất thôi...!"
+msgstr ""
+"N-Này, nếu chúng ta thực sự hết giờ thì tính sao đây? Có\n"
+"khi tất cả bọn mình sẽ bị xử tử chùm mất thôi...!"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -447,7 +494,7 @@ msgid ""
 "evidence that proves that is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không chỉ có một cái chai bị vỡ duy nhất. Và bằng chứng\n"
+"<CLT 4>Không chỉ có một cái lọ bị vỡ duy nhất. Và bằng chứng\n"
 "chứng minh điều đó chính là...\n"
 "<CLT>"
 
@@ -460,7 +507,7 @@ msgid ""
 "evidence that proves that is...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không chỉ có một cái chai bị vỡ duy nhất. Và bằng chứng\n"
+"<CLT 4>Không chỉ có một cái lọ bị vỡ duy nhất. Và bằng chứng\n"
 "chứng minh điều đó chính là...\n"
 "<CLT>"
 
@@ -471,7 +518,7 @@ msgid ""
 "<CLT 4>Kyoko and I figured it out before...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Lúc nãy tớ và Kyoko đã cùng nhau tìm ra nó rồi mà...\n"
+"<CLT 4>Lúc nãy mình và Kyoko đã cùng nhau tìm ra nó...\n"
 "<CLT>"
 
 #. さっき、ボクと霧切さんは、
@@ -486,7 +533,9 @@ msgctxt "0062 | MAKOTO NAEGI"
 msgid ""
 "We compared the weight of the broken bottle pieces at\n"
 "the scene to one of the unbroken bottles."
-msgstr "Bọn tớ đã đem so sánh trọng lượng của những mảnh vỡ chai rải rác tại hiện trường với một chiếc chai Monokuma còn nguyên vẹn."
+msgstr ""
+"Bọn tớ đã so sánh trọng lượng của những mảnh vỡ tại hiện\n"
+"trường với một cái lọ Monokuma còn nguyên vẹn."
 
 #. そうしたら、<CLT 3>集めた破片の方が重く<CLT>なったんだ。
 #. そんな結果になった理由は…
@@ -494,7 +543,9 @@ msgctxt "0063 | MAKOTO NAEGI"
 msgid ""
 "And what we found was that the <CLT 3>collection of pieces\n"
 "was heavier<CLT>. And the reason for that is..."
-msgstr "Và kết quả thu được là <CLT 3>tổng trọng lượng mấy mảnh vỡ lại nặng hơn<CLT>. Lý do dẫn đến kết quả đó là..."
+msgstr ""
+"Và kết quả thu được là <CLT 3>tổng trọng lượng mấy mảnh vỡ\n"
+"lại nặng hơn<CLT>. Lý do dẫn đến kết quả đó là..."
 
 #. 現場に散乱してた破片が、
 #. ボトル１本分より多かったからなんだよ。
@@ -502,7 +553,9 @@ msgctxt "0064 | MAKOTO NAEGI"
 msgid ""
 "...there was actually more than one bottle's worth of\n"
 "shattered glass."
-msgstr "...thực chất lượng thủy tinh vỡ tại đó còn nhiều hơn số lượng của một chiếc chai."
+msgstr ""
+"...thực tế là có nhiều hơn một cái lọ bị vỡ thành\n"
+"thủy tinh vụn."
 
 #. …あッ！
 msgctxt "0065 | TOUKO FUKAWA"
@@ -515,7 +568,9 @@ msgctxt "0066 | KYOUKO KIRIGIRI"
 msgid ""
 "So from this, we can surmise that <CLT 3>two bottles<CLT> were\n"
 "actually broken at the scene of the crime."
-msgstr "Nói cách khác, tại hiện trường vụ án, thực chất có tới <CLT 3>hai chiếc chai<CLT> Monokuma đã bị đập vỡ..."
+msgstr ""
+"Nói cách khác, tại hiện trường vụ án, thực chất có tới\n"
+"<CLT 3>hai cái lọ<CLT> Monokuma đã bị đập vỡ..."
 
 #. だけど、その内１本分の破片とモノクマフィギュアは
 #. 何者かに処分された…
@@ -523,7 +578,9 @@ msgctxt "0067 | KYOUKO KIRIGIRI"
 msgid ""
 "But someone did their best to clean up the pieces of\n"
 "one of the bottles, along with the figure inside."
-msgstr "Nhưng những mảnh vỡ của một trong hai chiếc chai cùng với hình nhân bên trong đã bị ai đó thủ tiêu..."
+msgstr ""
+"Nhưng mảnh vỡ của một trong hai cái lọ cùng với mô\n"
+"hình bên trong đã bị ai đó thủ tiêu..."
 
 #. その際、その人物は、
 #. 破片を多めに残してしまったんでしょうね…
@@ -531,14 +588,18 @@ msgctxt "0068 | KYOUKO KIRIGIRI"
 msgid ""
 "But when they did, they must have left behind a few\n"
 "too many pieces."
-msgstr "Và trong lúc làm việc đó, kẻ đó hẳn đã vô tình để sót lại hơi nhiều mảnh vỡ..."
+msgstr ""
+"Và trong lúc làm việc đó, kẻ đó hẳn đã vô tình để sót\n"
+"lại hơi quá nhiều mảnh vỡ..."
 
 #. まぁ、きっちり量れというのも難しい話でしょうけど…
 msgctxt "0069 | KYOUKO KIRIGIRI"
 msgid ""
 "Which is only natural. They certainly had no way to\n"
 "measure the exact right number of pieces to remove."
-msgstr "Chà, suy cho cùng thì bắt ai đó phải dọn sạch đúng bon một con số chính xác từng mảnh một cũng là điều bất khả thi mà."
+msgstr ""
+"Đây cũng lẽ thường thôi. Hắn chắc chắn không có cách nào\n"
+"để đo lường chính xác số mảnh vỡ cần phải thu dọn."
 
 #. でも、破片を処分って…
 #. どうして、そんな事をする必要があったの？
@@ -546,12 +607,14 @@ msgctxt "0070 | AOI ASAHINA"
 msgid ""
 "But...why would they have to try and get rid of it\n"
 "like that, anyway?"
-msgstr "Nhưng... tại sao họ lại phải cố công đi thủ tiêu nó làm gì cơ chứ?"
+msgstr ""
+"Nhưng... tại sao hắn lại phải cố công đi thủ\n"
+"tiêu nó làm gì cơ chứ?"
 
 #. それが、事件に関係する物だったからだよ。
 msgctxt "0071 | MAKOTO NAEGI"
 msgid "Because of what it would reveal about the case..."
-msgstr "Bởi vì nó sẽ hé lộ những sự thật liên quan đến vụ án..."
+msgstr "Bởi vì nó sẽ hé lộ sự thật liên quan đến vụ án..."
 
 #. <CLT 4>処分されたモノクマボトルが、
 #. 事件に関係していたのは間違いない…
@@ -562,18 +625,19 @@ msgid ""
 "Bottle is involved in this case.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không còn nghi ngờ gì nữa khi chiếc chai Monokuma thứ hai bị thủ tiêu hoàn toàn liên quan đến vụ án này.\n"
+"<CLT 4>Không còn nghi ngờ gì nữa khi cái lọ Monokuma thứ hai\n"
+"bị mất hoàn toàn liên quan đến vụ án này.\n"
 "<CLT>"
 
 #. 大神の２発目の殴打
 msgctxt "0073 | CHOICE/RE:ACT"
 msgid "Sakura's second attacker"
-msgstr "Hung thủ tấn công Sakura lần hai"
+msgstr "Kẻ tấn công thứ hai của Sakura"
 
 #. ボウリング
 msgctxt "0074 | CHOICE/RE:ACT"
 msgid "Some bowling aficionados"
-msgstr "Một vài tay chơi bowling cừ khôi"
+msgstr "Mấy tay chơi bowling cừ khôi"
 
 #. 腐川っちとオーガは、
 #. モノクマボトルでボウリングを楽しんだんだべ…
@@ -581,13 +645,17 @@ msgctxt "0075 | YASUHIRO HAGAKURE"
 msgid ""
 "Toko and Ogre were having fun bowling, using the\n"
 "Monokuma Bottles as pins."
-msgstr "Toko và Ogre đã cùng nhau chơi bowling vui vẻ, lấy những chiếc chai Monokuma làm con ki đấy..."
+msgstr ""
+"Toko và Ogre đã cùng nhau chơi bowling vui vẻ, lấy\n"
+"những chiếc lọ Monokuma làm con ki đấy..."
 
 #. その時に、
 #. 腐川っちが投げた球がオーガに…
 msgctxt "0076 | YASUHIRO HAGAKURE"
 msgid "But Toko threw her ball a little too hard, and—!"
-msgstr "Rồi lúc đó, cú ném bóng của Toko hơi quá đà nên đã trúng vào Ogre—!"
+msgstr ""
+"Rồi lúc đó, cú ném bóng của Toko hơi quá đà nên\n"
+"đã trúng vào Ogre—!"
 
 #. 苗木君、あなたのせいで時間を無駄にしたわ…
 msgctxt "0077 | KYOUKO KIRIGIRI"
@@ -595,13 +663,13 @@ msgid ""
 "Well, Makoto. Thank you very much for wasting all our\n"
 "time."
 msgstr ""
-"Makoto, cảm ơn cậu rất nhiều vì đã làm lãng phí toàn bộ\n"
-"thời gian của chúng ta nhé."
+"Makoto, cảm ơn cậu rất nhiều vì đã làm lãng phí toàn\n"
+"bộ thời gian của chúng ta nhé."
 
 #. えーと…ごめん…
 msgctxt "0078 | MAKOTO NAEGI"
 msgid "Oh, um...sorry."
-msgstr "Ái chà... tớ xin lỗi."
+msgstr "Ờ, ừm... tớ xin lỗi."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -619,12 +687,12 @@ msgstr ""
 #. 大神の１発目の殴打
 msgctxt "0080 | CHOICE/RE:ACT"
 msgid "Sakura's first attacker"
-msgstr "Hung thủ tấn công Sakura lần đầu"
+msgstr "Kẻ tấn công thứ nhất của Sakura"
 
 #. それはねーべ！
 msgctxt "0081 | YASUHIRO HAGAKURE"
 msgid "No, you're wrong!"
-msgstr "Kh-Không phải, mọi người sai rồi!"
+msgstr "Kh-Không, cậu sai rồi!"
 
 #. あの時、モノクマボトルは間違いなく割れたべ！
 #. でも、俺が使ったのは１本だけだべ！
@@ -632,7 +700,9 @@ msgctxt "0082 | YASUHIRO HAGAKURE"
 msgid ""
 "Yeah, the Monokuma Bottle definitely broke when I hit\n"
 "her. But I only used the one bottle!"
-msgstr "Đúng thế, chiếc chai Monokuma chắc chắn đã vỡ tung khi tao đánh con bé. Nhưng tao chỉ dùng có đúng một chiếc chai thôi đấy chứ!"
+msgstr ""
+"Phải, cái lọ Monokuma chắc chắn đã vỡ tung khi tớ đánh\n"
+"cô ấy. Nhưng tớ chỉ dùng có đúng một cái lọ đấy thôi!"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -667,7 +737,7 @@ msgstr "A! Tớ hiểu rồi!"
 #. ………………
 msgctxt "0086 | KYOUKO KIRIGIRI"
 msgid ".."
-msgstr ".."
+msgstr "..."
 
 #. も、もうちょっと
 #. 俺の発言にも興味を持ってほしいべ！！
@@ -676,8 +746,8 @@ msgid ""
 "I wish you'd at least acknowledge me when I say stuff\n"
 "like that!"
 msgstr ""
-"Làm ơn hãy tỏ ra chú ý hơn một chút khi tớ thốt ra mấy câu\n"
-"như thế chứ!"
+"Làm ơn hãy tỏ ra chú ý hơn một chút khi tớ thốt\n"
+"ra mấy câu như thế chứ!"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -713,7 +783,8 @@ msgid ""
 "There's only one explanation for it...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Lý do khiến chiếc chai Monokuma thứ hai bị đập vỡ... Kiểu sử dụng như thế... chắc chắn chỉ có thể xảy ra vào lúc đó mà thôi...\n"
+"<CLT 4>Lý do chiếc lọ Monokuma thứ hai bị vỡ...\n"
+"Chỉ có một lời giải thích cho việc này thôi...\n"
 "<CLT>"
 
 #. <CLT 4>だとすると、あれが使われたのは…
@@ -732,7 +803,9 @@ msgctxt "0092 | MAKOTO NAEGI"
 msgid ""
 "The bottle that was removed from the scene was used\n"
 "the <CLT 3>second time<CLT> Sakura was attacked."
-msgstr "Chính là trong <CLT 3>lần tấn công thứ hai<CLT> nhắm vào Sakura... Chiếc chai Monokuma bị thủ tiêu đã được dùng vào lúc đó."
+msgstr ""
+"Chiếc lọ bị thủ tiêu khỏi hiện trường đã được dùng để\n"
+"tấn công Sakura lần <CLT 3>thứ hai<CLT>."
 
 #. 大神さんの頭部にあった２つの傷…
 #. 割られた２本のボトル…
@@ -740,7 +813,9 @@ msgctxt "0093 | KYOUKO KIRIGIRI"
 msgid ""
 "The second wound on Sakura's head came from that\n"
 "second bottle."
-msgstr "Vết thương thứ hai trên đầu Sakura xuất phát từ chiếc chai thứ hai đó."
+msgstr ""
+"Vết thương thứ hai trên đầu Sakura xuất phát từ\n"
+"cái lọ thứ hai đó."
 
 #. それらを踏まえて考えてみれば、
 #. 導き出される結論は、それしかないわ…
@@ -748,7 +823,9 @@ msgctxt "0094 | KYOUKO KIRIGIRI"
 msgid ""
 "Given all the evidence, this is the only possible\n"
 "conclusion."
-msgstr "Dựa trên toàn bộ những bằng chứng đó, đây chính là kết luận duy nhất có thể rút ra được."
+msgstr ""
+"Dựa trên toàn bộ những bằng chứng, đây chính là kết\n"
+"luận duy nhất có thể rút ra được."
 
 #. そして、犯人は１本分の破片だけを処分する事で、
 #. 殴打は１回だったと見せかけようとしたんだ。
@@ -756,7 +833,9 @@ msgctxt "0095 | MAKOTO NAEGI"
 msgid ""
 "The killer wanted to make it look like there was only\n"
 "one attack, so they had to get rid of their evidence."
-msgstr "Và hung thủ đã cố tình phi tang các mảnh vỡ của một chiếc chai để ngụy tạo ra việc chỉ có đúng một cú đánh duy nhất."
+msgstr ""
+"Kẻ giết người muốn làm cho trông như chỉ có một vụ tấn\n"
+"công, nên hắn đã phải phi tang bằng chứng của mình."
 
 #. だとすると、２発目の殴打を行った人物は、
 #. 葉隠君以外の誰かという事になるはずよ。
@@ -764,12 +843,14 @@ msgctxt "0096 | KYOUKO KIRIGIRI"
 msgid ""
 "From there, we can conclude that it wasn't Hiro who\n"
 "delivered that second blow."
-msgstr "Từ đó, chúng ta có thể kết luận rằng không phải Hiro là kẻ đã tung ra cú đánh thứ hai đó."
+msgstr ""
+"Từ đó, chúng ta có thể kết luận rằng không phải Hiro\n"
+"là kẻ đã tung ra cú đánh thứ hai đó."
 
 #. そうよね、腐川さん？
 msgctxt "0097 | KYOUKO KIRIGIRI"
 msgid "Wouldn't you agree, Toko?"
-msgstr "Cậu có nghĩ vậy không, Toko?"
+msgstr "Cậu có đồng ý không, Toko?"
 
 #. ええ…ッ！？
 msgctxt "0098 | TOUKO FUKAWA"
@@ -782,7 +863,9 @@ msgctxt "0099 | KYOUKO KIRIGIRI"
 msgid ""
 "And there's the matter of the magazine. You must have\n"
 "been in the rec room when the incident took place."
-msgstr "Và còn vấn đề về cuốn tạp chí nữa. Cậu chắc chắn đã có mặt ở phòng giải trí khi vụ án xảy ra."
+msgstr ""
+"Và còn vấn đề về cuốn tạp chí nữa. Cậu chắc chắn đã có\n"
+"mặt ở phòng giải trí khi vụ án xảy ra."
 
 #. ま、ま、ま、待ってよ…
 #. 確かに…２発目の殴打はあったかもしれないけど…
@@ -790,7 +873,9 @@ msgctxt "0100 | TOUKO FUKAWA"
 msgid ""
 "W-W-W-Wait! I admit, maybe there was a s-second\n"
 "attack, but..."
-msgstr "C-C-C-Khoan đã! Tớ thừa nhận, có thể là c-có vụ tấn công thứ hai, nhưng..."
+msgstr ""
+"K-K-K-Khoan đã! Tôi thừa nhận, có thể là c-có vụ tấn\n"
+"công thứ hai, nhưng..."
 
 #. そ、それをやったのが…あたしって根拠は…
 #. どこにも…ないはずよ…！
@@ -798,12 +883,16 @@ msgctxt "0101 | TOUKO FUKAWA"
 msgid ""
 "But there's n-no evidence I had anything t-to do with\n"
 "it!"
-msgstr "Nhưng k-làm gì có tí bằng chứng nào cho thấy tớ l-liên quan đến chuyện đó chứ...!"
+msgstr ""
+"Nhưng l-làm gì có bằng chứng nào cho thấy tôi\n"
+"l-liên quan đến chứ...!"
 
 #. いや、間違いない！　オメーが犯人だべ！
 msgctxt "0102 | YASUHIRO HAGAKURE"
 msgid "No way! You killed her, I'm sure of it!"
-msgstr "Không đời nào! Chính cô là kẻ giết con bé, tao dám cá luôn!"
+msgstr ""
+"Không đời nào! Chính cậu là kẻ giết cô ấy, tớ\n"
+"dám cá luôn!"
 
 #. あ、あんた…！　さっきまで自分が犯人だって、
 #. 言ってたクセに…ッ！！
@@ -811,7 +900,9 @@ msgctxt "0103 | TOUKO FUKAWA"
 msgid ""
 "Sh-Shut up! Until two seconds ago, y-you were claiming\n"
 "*you* k-killed her!"
-msgstr "C-Câm miệng! Cho đến tận hai giây trước, ch-chính cậu còn đang nhận c-chính mình là kẻ giết con bé cơ mà...!"
+msgstr ""
+"C-Câm miệng! Cho đến tận hai giây trước, ch-chính cậu\n"
+"còn đang nhận là kẻ giết cô ấy cơ mà...!"
 
 #. 俺は自分の過ちを認める事を恐れないんだ！
 #. そういうタイプなんだべ！
@@ -819,12 +910,16 @@ msgctxt "0104 | YASUHIRO HAGAKURE"
 msgid ""
 "I'm not afraid to admit when I'm wrong! That's just\n"
 "the kinda guy I am!"
-msgstr "Tao không ngại thừa nhận khi mình sai! Tao là cái loại người như thế đấy!"
+msgstr ""
+"Tớ không ngại thừa nhận khi tớ sai! Tớ là cái loại\n"
+"người như thế đấy!"
 
 #. それに、そう断言出来る根拠も思い出したぞ！
 msgctxt "0105 | YASUHIRO HAGAKURE"
 msgid "Plus, I just remembered something that proves it!"
-msgstr "Thêm nữa, tao vừa nhớ ra một chuyện có thể chứng minh điều đó rồi đây!"
+msgstr ""
+"Thêm nữa, tớ vừa nhớ ra một chuyện có thể chứng\n"
+"minh điều đó!"
 
 #. 一応、聞いておこうか…
 msgctxt "0106 | BYAKUYA TOGAMI"
@@ -834,7 +929,7 @@ msgstr "Được rồi, tùy cậu, cứ nói đi..."
 #. あれは、俺がオーガに呼び出された直後の事だべ…
 msgctxt "0107 | YASUHIRO HAGAKURE"
 msgid "It was right after I got Ogre's note..."
-msgstr "Đó là ngay sau khi tao nhận được mẩu giấy nhắn của Ogre..."
+msgstr "Đó là ngay sau khi tớ nhận được mẩu giấy của Ogre..."
 
 #. いきなり呼び出されて不安だった俺は、
 #. 予定時間より早く娯楽室の前で張り込みをしてたんだ。
@@ -842,18 +937,22 @@ msgctxt "0108 | YASUHIRO HAGAKURE"
 msgid ""
 "I was kinda nervous about it, so I went to the rec\n"
 "room early. Y'know, to stake it out or whatever..."
-msgstr "Vì tao thấy hơi lo lắng về nó, nên tao đã đến phòng giải trí từ sớm. Ý tao là, để thám thính tình hình hay gì đó..."
+msgstr ""
+"Vì tớ thấy hơi lo lắng về nó, nên tớ đã đến phòng giải trí từ\n"
+"sớm. Cậu biết đấy, để thám thính tình hình hay gì đó..."
 
 #. そんで、しばらくしたところで、
 #. 俺は見たんだ…
 msgctxt "0109 | YASUHIRO HAGAKURE"
 msgid "So I was waitin' there, and that's when I saw her..."
-msgstr "Thế là tao đứng đợi ở đó một lúc, và đó là lúc tao nhìn thấy con bé..."
+msgstr ""
+"Thế là tớ đứng đợi ở đó một lúc, và đó là lúc tớ\n"
+"nhìn thấy cô ấy..."
 
 #. 腐川っちが、娯楽室に入ってくとこをな！
 msgctxt "0110 | YASUHIRO HAGAKURE"
 msgid "I saw Toko go into the rec room!"
-msgstr "Chính là lúc Toko bước vào phòng giải trí!"
+msgstr "Tớ thấy Toko bước vào phòng giải trí!"
 
 #. <CLT 4>腐川さんが…娯楽室に…？
 #. <CLT>
@@ -861,14 +960,18 @@ msgctxt "0111 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>You did...?\n"
 "<CLT>"
-msgstr "Cậu tìm thấy gì sao...?"
+msgstr ""
+"<CLT 4>Cậu thấy sao...?\n"
+"<CLT>"
 
 #. その直後、今度はオーガが娯楽室に入っていった…
 msgctxt "0112 | YASUHIRO HAGAKURE"
 msgid ""
 "Pretty soon, Ogre showed up and *she* went in the rec\n"
 "room!"
-msgstr "Chẳng mấy chốc sau, Ogre xuất hiện và *cô ấy* cũng bước vào phòng giải trí!"
+msgstr ""
+"Chẳng mấy chốc sau, Ogre xuất hiện và *cô ấy* cũng\n"
+"bước vào phòng giải trí!"
 
 #. だから、部屋の中には腐川っちもいると思って、
 #. 俺は安心して娯楽室に入ったのに…
@@ -876,7 +979,9 @@ msgctxt "0113 | YASUHIRO HAGAKURE"
 msgid ""
 "I assumed Toko was still in there, so I figured\n"
 "everything would be okay. That's why I headed in..."
-msgstr "Tao cứ đinh ninh là Toko vẫn còn ở trong đó, nên tao nghĩ mọi chuyện sẽ ổn thôi. Đó là lý do tao bước vào..."
+msgstr ""
+"Tớ cứ đinh ninh là Toko vẫn còn ở trong đó, nên tớ nghĩ\n"
+"mọi chuyện sẽ ổn thôi. Đó là lý do tớ bước vào..."
 
 #. そこにいたのはオーガだけだったんだ！
 #. 腐川っちは、消えちまってたんだべ！！
@@ -884,12 +989,16 @@ msgctxt "0114 | YASUHIRO HAGAKURE"
 msgid ""
 "But when I got inside, Ogre was all alone! Toko had\n"
 "disappeared!"
-msgstr "Nhưng lúc bước vào trong, chỉ có một mình Ogre ở đó! Toko đã biến mất tăm mất tích từ lúc nào rồi!!"
+msgstr ""
+"Nhưng lúc bước vào trong, chỉ có một mình Ogre ở đó!\n"
+"Toko đã biến mất từ lúc nào rồi!"
 
 #. なぜ…そんな大事な事を今になって言う…
 msgctxt "0115 | BYAKUYA TOGAMI"
 msgid "And you just now decided to share that with us...?"
-msgstr "Và tận bây giờ ngươi mới quyết định chia sẻ điều đó với bọn ta sao...?"
+msgstr ""
+"Và tận bây giờ cậu mới quyết định chia sẻ điều\n"
+"đó với bọn tôi sao...?"
 
 #. 自分が殺人を犯してしまったというショックで、
 #. すっかり忘れていたべ！
@@ -897,14 +1006,18 @@ msgctxt "0116 | YASUHIRO HAGAKURE"
 msgid ""
 "After the shock of thinking I'd killed someone, I\n"
 "forgot all about it!"
-msgstr "Sau cú sốc tưởng rằng mình đã giết người, tao đã quên bẵng đi mất chứ sao!"
+msgstr ""
+"Sau cú sốc tưởng rằng tớ đã giết người, tớ đã\n"
+"quên bẵng đi mất!"
 
 #. 誰か、あいつの頭のネジを探してやれ。
 msgctxt "0117 | BYAKUYA TOGAMI"
 msgid ""
 "Could someone tighten the screws on his brain?\n"
 "I think they've come loose..."
-msgstr "Có ai làm ơn vặn lại mấy con ốc trên bộ não của hắn hộ cái nhỉ? Ta nghĩ chúng bị lỏng ra hết rồi đấy..."
+msgstr ""
+"Có ai vặn lại mấy con ốc trên bộ não của hắn hộ cái nhỉ?\n"
+"Tôi nghĩ chúng bị lỏng ra hết rồi đấy..."
 
 #. おい、腐川っち！
 #. あの時、オメーはどこに消えてたんだ！！
@@ -918,7 +1031,9 @@ msgctxt "0119 | TOUKO FUKAWA"
 msgid ""
 "You d-don't know what you're talking about. I never\n"
 "went in the r-rec room!"
-msgstr "C-Cậu chẳng biết cái quái gì sất. Tớ ch-chưa bao giờ bước chân vào phòng giải trí cả!"
+msgstr ""
+"C-Cậu chẳng biết cái quái gì sất. Tôi ch-chưa bao giờ\n"
+"bước chân vào phòng giải trí cả!"
 
 #. 消えたんじゃなくて隠れていたのかもね？
 #. 娯楽室のどこかに…
@@ -926,7 +1041,9 @@ msgctxt "0120 | KYOUKO KIRIGIRI"
 msgid ""
 "I'm sure she didn't disappear, but maybe she found\n"
 "somewhere to hide..."
-msgstr "Tớ chắc chắn là cậu ta không biến đi đâu cả, mà có lẽ cậu ta đã tìm thấy chỗ nào đó để trốn..."
+msgstr ""
+"Tớ chắc chắn cậu ta không biến đi đâu cả, mà có lẽ\n"
+"cậu ta đã tìm thấy chỗ nào đó để trốn..."
 
 #. …なッ！！
 msgctxt "0121 | TOUKO FUKAWA"
@@ -949,7 +1066,9 @@ msgctxt "0123 | TOUKO FUKAWA"
 msgid ""
 "Wh-Wh-Wh-Why are you all ganging up on me! You're all\n"
 "nothing but v-v-v-vermin!"
-msgstr "S-S-S-Sao tất cả các người lại hùa vào bắt nạt tớ chứ! Các người chẳng qua chỉ là mấy con s-s-s-sâu bọ bẩn thỉu...!"
+msgstr ""
+"S-S-S-Sao tất cả các người lại hùa vào bắt nạt tôi chứ! Các\n"
+"người chẳng qua chỉ là mấy con s-s-s-sâu bọ bẩn thỉu...!"
 
 #. <CLT 4>いや、言いがかりなんかじゃない…
 #. <CLT>
@@ -970,7 +1089,8 @@ msgid ""
 "the rec room...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chắc chắn có bằng chứng cho thấy Toko đã trốn trong phòng giải trí...!\n"
+"<CLT 4>Chắc chắn có bằng chứng cho thấy Toko đã trốn\n"
+"trong phòng giải trí...!\n"
 "<CLT>"
 
 #. <CLT 4>いや、言いがかりなんかじゃない…
@@ -991,7 +1111,8 @@ msgid ""
 "room...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cần bằng chứng cho thấy Toko đã trốn trong phòng giải trí...\n"
+"<CLT 4>Mình cần bằng chứng cho thấy Toko đã trốn trong\n"
+"phòng giải trí...\n"
 "<CLT>"
 
 #. <CLT 4>それは娯楽室の“あの場所”に、
@@ -1003,5 +1124,6 @@ msgid ""
 "find...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và tớ đang giữ nó đây. Cậu ta đã bỏ lại nó ở đó để bất cứ ai cũng có thể tìm thấy...!\n"
+"<CLT 4>Và mình đang giữ nó đây. Cậu ta đã bỏ lại nó ở\n"
+"đó để bất cứ ai cũng có thể tìm thấy...!\n"
 "<CLT>"

@@ -20,13 +20,13 @@ msgstr "Chính là một trong các người..."
 #. 殺したんだよ！
 msgctxt "0002 | AOI ASAHINA"
 msgid "One of you killed Sakura!"
-msgstr "Chính một trong số các người đã giết Sakura!"
+msgstr "Một trong các người đã giết Sakura!"
 
 #. なぜ、俺達が
 #. 犯人だと思うんだ？
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid "And what reason do you have for saying so?"
-msgstr "Và cậu có lý do gì để nói như vậy chứ?"
+msgstr "Và cậu có lý do gì để nói như vậy?"
 
 #. 動機があるからだよ…！
 msgctxt "0004 | AOI ASAHINA"
@@ -37,13 +37,13 @@ msgstr "Bởi vì các người đều có động cơ!"
 #. <CLT 9>憎んでた<CLT>じゃん！
 msgctxt "0005 | AOI ASAHINA"
 msgid "You <CLT 9>hated her<CLT>!"
-msgstr "Các người đã <CLT 9>căm ghét cậu ấy<CLT> cơ mà!"
+msgstr "Các người <CLT 9>ghét cô ấy<CLT>!"
 
 #. それだけか…
 #. 話にならんな…
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "Is that it? That doesn't make any sense..."
-msgstr "Có thế thôi sao? Thật chẳng ra làm sao cả..."
+msgstr "Chỉ thế thôi? Thật chẳng ra làm sao cả..."
 
 #. <CLT 9>それだけの理由<CLT>で
 #. 人を疑うなんて…
@@ -51,7 +51,9 @@ msgctxt "0007 | YASUHIRO HAGAKURE"
 msgid ""
 "That's <CLT 9>the only reason you have<CLT>\n"
 "for accusing us?"
-msgstr "Đó là <CLT 9>lý do duy nhất mà cậu có<CLT> để buộc tội tụi này à?"
+msgstr ""
+"Đó <CLT 9>là lý do duy nhất mà cậu có<CLT>\n"
+"để buộc tội bọn tớ ư?"
 
 #. サイテーよ…
 #. 人としてサイテーだわ…！
@@ -59,17 +61,19 @@ msgctxt "0008 | TOUKO FUKAWA"
 msgid ""
 "That's l-low... That's about\n"
 "as low a-as you can g-get!"
-msgstr "Thật đê tiện... Đê tiện h-hết chỗ nói r-rồi đấy...!"
+msgstr ""
+"Thật đê tiện... Đê tiện h-hết \n"
+"chỗ nói r-rồi đấy...!"
 
 #. <CLT 26>な、なにぃ…！？<CLT>
 msgctxt "0009 | TOUKO FUKAWA"
 msgid "<CLT 26>Wh-What!?<CLT>"
-msgstr "H-Hả!?"
+msgstr "<CLT 26>Cái gì cơ!?<CLT>"
 
 #. <CLT 26>フン…くだらん。<CLT>
 msgctxt "0010 | TOUKO FUKAWA"
 msgid "<CLT 26>Hmph. Idiotic.<CLT>"
-msgstr "<CLT 26>Hừ... Thật nhảm nhí.<CLT>"
+msgstr "<CLT 26>Hừ. Thật nhảm nhí.<CLT>"
 
 #. <CLT 26>十分な動機だよ！<CLT>
 msgctxt "0011 | TOUKO FUKAWA"
