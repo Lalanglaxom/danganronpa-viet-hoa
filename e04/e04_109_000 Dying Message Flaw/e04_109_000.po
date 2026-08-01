@@ -36,8 +36,8 @@ msgstr ""
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "...both of her hands were <CLT 3>completely free of blood<CLT>."
 msgstr ""
-"...cả hai tay của cậu ấy đều <CLT 3>hoàn toàn không dính một\n"
-"chút máu nào<CLT>."
+"...cả hai tay của cậu ấy đều <CLT 3>hoàn toàn không\n"
+"dính một chút máu nào<CLT>."
 
 #. あっれぇーッ！？
 msgctxt "0004 | YASUHIRO HAGAKURE"
@@ -190,12 +190,12 @@ msgstr "Đây là lúc..."
 #. 今日で…終わらせる……
 msgctxt "0027 | SAKURA OOGAMI"
 msgid "I'm going to end it today..."
-msgstr "Hôm nay... tôi sẽ chấm dứt nó..."
+msgstr "Hôm nay... mình sẽ chấm dứt nó..."
 
 #. すべて…終わらせる……
 msgctxt "0028 | SAKURA OOGAMI"
 msgid "I'm going to end...everything."
-msgstr "Tôi sẽ chấm dứt... mọi thứ."
+msgstr "Mình sẽ chấm dứt... mọi thứ."
 
 #. それを聞いた瞬間、なんか閃いちまったんだ！
 #. オーガは俺を殺す気だって！
@@ -225,7 +225,7 @@ msgid ""
 "I saw my only chance. I grabbed a Monokuma Bottle from\n"
 "the shelf, and smashed it across her head!"
 msgstr ""
-"Tớ thấy đó là cơ hội duy nhất. Tớ với lấy một Lọ Monokuma\n"
+"Tớ thấy đó là cơ hội duy nhất. Tớ vớ lấy một Lọ Monokuma\n"
 "trên kệ, rồi đập thẳng vào đầu cô ấy!"
 
 #. オーガの背後から、
@@ -235,8 +235,8 @@ msgid ""
 "I...I hit her from behind, <CLT 3>before she had any idea<CLT>\n"
 "what was happening!"
 msgstr ""
-"Tớ... tớ đánh cô ấy từ phía sau, <CLT 3>khi cô ấy còn chưa kịp hiểu<CLT>\n"
-"chuyện gì đang xảy ra!"
+"Tớ... tớ đánh cô ấy từ phía sau, <CLT 3>khi cô ấy còn chưa\n"
+"kịp hiểu<CLT> chuyện gì đang xảy ra!"
 
 #. そうしたら、オーガはぐったりして…
 #. そのまま動かなくなっちまった…
@@ -274,8 +274,8 @@ msgid ""
 "I-I can't believe you! You're the worst! I hope you\n"
 "d-die!"
 msgstr ""
-"T-Tôi không thể tin được anh! Mi tệ hại nhất! Ta mong\n"
-"mi c-chết đi!"
+"T-Ta không thể tin được mi! Mi tệ hại nhất! Ta\n"
+"mong mi c-chết đi!"
 
 #. これが、今回の事件の全貌だべ。
 #. 後は、煮るなり焼くなり好きにしてくれ…
@@ -331,8 +331,8 @@ msgid ""
 "And until we figure that part out, we can't consider\n"
 "the case closed."
 msgstr ""
-"Và cho đến khi chúng ta tìm ra điểm đó, vụ án này vẫn\n"
-"chưa thể coi là kết thúc."
+"Và cho đến khi chúng ta hiểu ra điểm đó, vụ án này\n"
+"vẫn chưa thể coi là kết thúc."
 
 #. 雑誌を隠した事
 msgctxt "0046 | CHOICE/RE:ACT"
@@ -436,7 +436,7 @@ msgstr ""
 #. そんな事じゃないわ…
 msgctxt "0058 | KYOUKO KIRIGIRI"
 msgid "Anyway...that's not the point I was trying to make."
-msgstr "Dù sao thì... đó không phải là vấn đề mà tớ muốn hướng tới."
+msgstr "Dù sao thì... đó không phải là vấn đề mà tớ muốn nói tới."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -542,8 +542,7 @@ msgid ""
 "sense...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy rốt cuộc Hiro đã làm điều gì mà không có lý\n"
-"chút nào...?\n"
+"<CLT 4>Vậy Hiro đã làm điều gì mà không có lý chút nào...?\n"
 "<CLT>"
 
 #. <CLT 4>さっきの話だけでは説明の付かない
@@ -555,8 +554,7 @@ msgid ""
 "sense...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy rốt cuộc Hiro đã làm điều gì mà không có lý\n"
-"chút nào...?\n"
+"<CLT 4>Vậy Hiro đã làm điều gì mà không có lý chút nào...?\n"
 "<CLT>"
 
 #. <CLT 4>ダイイングメッセージを書いた後の…
@@ -569,7 +567,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Việc cậu ta phải làm sau khi viết lời nhắn đó...\n"
-"Hoàn toàn không có lý chút nào...\n"
+"không có vẻ hợp lý...\n"
 "<CLT>"
 
 #. そう言えば、さっきの話には、
@@ -744,7 +742,7 @@ msgstr "Byakuya"
 #. 白夜様があたしの為にって事よね…ッ！？
 msgctxt "0092 | TOUKO FUKAWA"
 msgid "Y-You're saying Master did it f-for me, right...!?"
-msgstr "Ý c-cậu là Chủ Nhân đã làm v-vì tôi phải không...!?"
+msgstr "Ý c-cậu là Chủ nhân đã làm v-vì tôi phải không...!?"
 
 #. そうよねッ！？
 msgctxt "0093 | TOUKO FUKAWA"
@@ -847,8 +845,8 @@ msgid ""
 "Who else would want to hide the magazine other\n"
 "than the person whose name was written on it?"
 msgstr ""
-"Còn ai muốn giấu cuốn tạp chí đó ngoài kẻ có tên\n"
-"được viết trên đó nữa cơ chứ?"
+"Còn ai muốn giấu cuốn tạp chí đó ngoài người có\n"
+"tên được viết trên đó nữa chứ?"
 
 #. そうなの…？　あんたも娯楽室に行ったの…？
 msgctxt "0105 | AOI ASAHINA"
@@ -892,7 +890,7 @@ msgstr "Đúng vậy. Tớ đã giết cô ấy."
 #. …いや、違うよ。
 msgctxt "0111 | MAKOTO NAEGI"
 msgid "No, you didn't."
-msgstr "Không, cậu không làm ."
+msgstr "Không, cậu không làm."
 
 #. な、なんで、あんたが答えるのよッ！？
 msgctxt "0112 | TOUKO FUKAWA"
@@ -906,8 +904,8 @@ msgid ""
 "I don't doubt Hiro attacked Sakura with the bottle.\n"
 "But that's not where this case ends."
 msgstr ""
-"Tớ không nghi ngờ Hiro đã tấn công Sakura bằng cái\n"
-"chai. Nhưng vụ án không hề kết thúc ở đó..."
+"Tớ không nghi ngờ Hiro đã tấn công Sakura bằng\n"
+"cái lọ. Nhưng vụ án không hề kết thúc ở đó..."
 
 #. 終わりじゃなかったって…どういう意味…？
 msgctxt "0114 | AOI ASAHINA"

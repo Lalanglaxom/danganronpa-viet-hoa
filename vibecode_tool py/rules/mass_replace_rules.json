@@ -304,7 +304,7 @@
       "scope": "",
       "find": "Ông;ông",
       "replace": "Cậu;cậu",
-      "whole_word": false,
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
@@ -335,9 +335,9 @@
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "Chiếc;chiếc;Chai;chai",
-      "replace": "Cái;cái;Lọ;lọ",
-      "whole_word": false,
+      "find": "Chiếc;chiếc;Chai;chai;độc dược;chiếc hộp;hộp",
+      "replace": "Cái;cái;Lọ;lọ;chất độc;cái bình;bình",
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
@@ -349,6 +349,28 @@
       "find": "hình nhân;Hình nhân",
       "replace": "mô hình;Mô hình",
       "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "Byakuya",
+      "scope": "",
+      "find": "Ta;ta",
+      "replace": "Tôi;tôi",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "ASAHINA",
+      "scope": "",
+      "find": "Tớ;tớ",
+      "replace": "Tui;tui",
+      "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
       "notes": ""
