@@ -24,7 +24,7 @@ msgstr ""
 #. …じゃあね、苗木君。
 msgctxt "0002 | KYOUKO KIRIGIRI"
 msgid "So. Goodbye."
-msgstr "Vậy nhé... Tạm biệt."
+msgstr "Vậy nhé. Tạm biệt."
 
 #. ちょ、ちょっと待ってよ！
 msgctxt "0003 | MAKOTO NAEGI"
@@ -39,7 +39,7 @@ msgstr "..."
 #. あのさ…今のってなんだったの…？
 msgctxt "0005 | MAKOTO NAEGI"
 msgid "Listen, what was all that about just now?"
-msgstr "Này... Rốt cuộc chuyện vừa rồi là sao chứ...?"
+msgstr "Này,Rốt cuộc chuyện vừa rồi là sao chứ...?"
 
 #. <CLT 4>夜中に急に起こしに来て…
 #. 鍵の掛かった情報処理室に行くって言って…
@@ -50,7 +50,8 @@ msgid ""
 "just so happened to be locked...!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giữa đêm lôi tớ dậy, bảo là đi đến trung tâm dữ liệu—nơi mà ngẫu nhiên lại bị khóa...!\n"
+"<CLT 4>Giữa đêm lôi mình dậy, bảo là đi đến trung tâm dữ\n"
+"liệu—nơi mà tự nhiên lại bị khóa...!\n"
 "<CLT>"
 
 #. <CLT 4>その割に、本人は遅れて来るし、
@@ -62,7 +63,8 @@ msgid ""
 "checking a single thing!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ấy thế mà bản thân cậu ấy thì đến muộn, để rồi cuối cùng chẳng kiểm tra bất cứ thứ gì mà giải tán luôn...!\n"
+"<CLT 4>Ấy thế mà bản thân cậu ấy thì đến muộn, để rồi chẳng\n"
+"kiểm tra bất cứ gì mà giải tán luôn...!\n"
 "<CLT>"
 
 #. <CLT 4>今の一連の行動に…どんな意味が……
@@ -89,13 +91,14 @@ msgid ""
 "just like always, but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ cứ nghĩ đó sẽ là câu trả lời duy nhất như mọi khi, nhưng mà...\n"
+"<CLT 4>Mình cứ nghĩ đó sẽ là câu trả lời duy nhất như\n"
+"mọi khi, nhưng mà...\n"
 "<CLT>"
 
 #. じゃあね…おやすみ…
 msgctxt "0011 | KYOUKO KIRIGIRI"
 msgid "Well then...goodnight."
-msgstr "Vậy nhé... Chúc ngủ ngon..."
+msgstr "Vậy nhé... Chúc ngủ ngon."
 
 #. う、うん…
 msgctxt "0012 | MAKOTO NAEGI"
@@ -119,7 +122,7 @@ msgid ""
 "<CLT 4>But as I turned to leave...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng ngay khoảnh khắc cậu ấy quay đi...\n"
+"<CLT 4>Nhưng ngay khoảnh khắc mình quay đi...\n"
 "<CLT>"
 
 #. いくさばむくろ…
@@ -130,7 +133,7 @@ msgstr "Mukuro Ikusaba."
 #. え…？
 msgctxt "0016 | MAKOTO NAEGI"
 msgid "What...?"
-msgstr "Cái gì...?"
+msgstr "Hả...?"
 
 #. <CLT 4>ボクの耳元で…霧切さんが囁いた言葉…
 #. <CLT>
@@ -140,13 +143,13 @@ msgid ""
 "my ear...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ngay sát bên tai tớ... Kyoko thì thầm những lời ấy...\n"
+"<CLT 4>Ngay sát bên tai mình, Kyoko thì thầm những lời ấy...\n"
 "<CLT>"
 
 #. <CLT 3>戦刃むくろ<CLT>…
 msgctxt "0018 | KYOUKO KIRIGIRI"
 msgid "<CLT 3>Mukuro Ikusaba<CLT>..."
-msgstr "<CLT 3>Ikusaba Mukuro<CLT>..."
+msgstr "<CLT 3>Mukuro Ikusaba<CLT>..."
 
 #. この学園に潜む<CLT 3>１６人目の高校生<CLT>…
 msgctxt "0019 | KYOUKO KIRIGIRI"
@@ -154,18 +157,18 @@ msgid ""
 "The <CLT 3>sixteenth student<CLT>, lying hidden somewhere in\n"
 "this school..."
 msgstr ""
-"<CLT 3>Học sinh thứ mười sáu<CLT>, người đang ẩn nấp trong ngôi\n"
-"trường này..."
+"<CLT 3>Học sinh thứ mười sáu<CLT>, đang ẩn nấp đâu đó\n"
+"trong ngôi trường này..."
 
 #. <CLT 3>“超高校級の絶望”<CLT>と呼ばれる女子高校生…
 msgctxt "0020 | KYOUKO KIRIGIRI"
 msgid "The one they call the <CLT 3>Ultimate Despair<CLT>..."
-msgstr "Người được mệnh danh là <CLT 3>\"Siêu Học Sinh Tuyệt Vọng\"<CLT>..."
+msgstr "Người được mệnh danh là <CLT 3>Siêu Học Sinh Tuyệt Vọng<CLT>..."
 
 #. 戦刃むくろに気を付けて…
 msgctxt "0021 | KYOUKO KIRIGIRI"
 msgid "Watch out for her."
-msgstr "Hãy với cô ta."
+msgstr "Hãy cẩn thận cô ta."
 
 #. <CLT 23>プレゼント<CLT><CLT 3>“アルターボール”<CLT><CLT 23>を獲得しました。
 #. プレゼントメニューで確認できます。
@@ -175,5 +178,6 @@ msgid ""
 "<CLT 23>You received the <CLT><CLT 3>Alter Lump<CLT><CLT 23> present.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn đã nhận được quà tặng <CLT><CLT 3>Khối Lập Phương Biến Đổi<CLT><CLT 23>. Bạn có thể kiểm tra trong menu quà tặng.\n"
+"<CLT 23>Bạn đã nhận được quà <CLT><CLT 3>Khối Lập Phương Biến Đổi<CLT><CLT 23>. \n"
+"Bạn có thể kiểm tra trong menu quà tặng.\n"
 "<CLT>"

@@ -1,1 +1,8 @@
 gemini translate prompt strictly follow english, japanese is ONLY for extra context if english not clear enough.
+
+build an index or cache or something about all the text so that diff find and search and suggestion appears instantly.
+
+remove the mismatch error of the gemini api when translate an entry
+
+optimize the gemini api prompt so it use as less token as possible but still keep content precise
+

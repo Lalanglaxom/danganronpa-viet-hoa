@@ -14,7 +14,7 @@ msgstr ""
 #. 【頼み】
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "[favor]"
-msgstr "[nhờ vả]"
+msgstr "[thỉnh cầu]"
 
 #. ボクに頼みって…何？
 msgctxt "0002 | MAKOTO NAEGI"
@@ -24,7 +24,9 @@ msgstr "Cậu nhờ tớ... chuyện gì cơ?"
 #. …大神さんが遺書の最後に言ってたでしょ？
 msgctxt "0003 | KYOUKO KIRIGIRI"
 msgid "Remember what Sakura said at the end of her note?"
-msgstr "...Cậu còn nhớ Sakura đã nói gì ở phần cuối bức di thư không?"
+msgstr ""
+"Cậu còn nhớ Sakura đã nói gì ở phần cuối bức\n"
+"di thư không?"
 
 #. 我はただでは死なん。
 #. <CLT 3>貴様に一矢報いる<CLT>…って。
@@ -32,7 +34,9 @@ msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid ""
 "I'm not going to just lay down and die. I *will*\n"
 "<CLT 3>fight you<CLT>..."
-msgstr "Ta sẽ không dễ dàng chịu khuất phục và bỏ mạng đâu. Ta *chắc chắn* sẽ <CLT 3>trả đũa nhà ngươi<CLT>..."
+msgstr ""
+"Ta sẽ không nằm yên chờ chết. \n"
+"Ta sẽ <CLT 3>chiến đấu với mi<CLT>..."
 
 #. あの言葉の意味を確かめたいの…
 msgctxt "0005 | KYOUKO KIRIGIRI"
@@ -43,7 +47,7 @@ msgstr "Tớ muốn tìm hiểu ý nghĩa đằng sau câu nói đó..."
 #. でも、どうやって…？
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "Okay, but...how do you plan to do that?"
-msgstr "Tìm hiểu á... Nhưng bằng cách nào cơ...?"
+msgstr "Tìm hiểu á... Nhưng bằng cách nào cơ?"
 
 #. <CLT 4>すると、霧切さんはボクの耳元に顔を寄せ…
 #. <CLT>
@@ -53,7 +57,8 @@ msgid ""
 "whispered...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nói rồi, Kyoko áp sát mặt lại gần tai tớ và thì thầm...\n"
+"<CLT 4>Nói rồi, Kyoko áp sát mặt lại gần tai mình và\n"
+"thì thầm...\n"
 "<CLT>"
 
 #. ４階の情報処理室…
@@ -79,7 +84,7 @@ msgid ""
 "<CLT 4>Without another word, she was gone...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nói xong câu đó, cậu ấy liền rời khỏi phòng tớ...\n"
+"<CLT 4>Nói xong câu đó, cậu ấy liền rời khỏi phòng mình...\n"
 "<CLT>"
 
 #. は…？
@@ -95,7 +100,8 @@ msgid ""
 "<CLT 4>Her words reverberated through my half-dazed head.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Trong cái đầu vẫn còn đang ngái ngủ, những lời nói của cậu ấy cứ văng vẳng lặp đi lặp lại.\n"
+"<CLT 4>Trong cái đầu vẫn còn đang ngái ngủ, những lời nói\n"
+"của cậu ấy cứ văng vẳng lặp đi lặp lại.\n"
 "<CLT>"
 
 #. <CLT 4><CLT><CLT 3>４階の情報処理室<CLT><CLT 4>…？
@@ -116,7 +122,8 @@ msgid ""
 "<CLT 4>But I thought it was locked...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng mà, chẳng phải chỗ đó... đã bị khóa rồi hay sao nhỉ...?\n"
+"<CLT 4>Nhưng mà, chẳng phải chỗ đó... đã bị khóa rồi\n"
+"hay sao nhỉ...?\n"
 "<CLT>"
 
 #. <CLT 23>「キーン、コーン…　カーン、コーン」
@@ -171,7 +178,7 @@ msgid ""
 "down into sleep.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giờ ban đêm đã điểm, kéo tớ chìm dần vào giấc ngủ.\n"
+"<CLT 4>Giờ ban đêm đã điểm, kéo mình chìm dần vào giấc ngủ.\n"
 "<CLT>"
 
 #. <CLT 4>深い眠りに落ちた。
@@ -182,7 +189,7 @@ msgid ""
 "a deep sleep.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ chìm vào một giấc ngủ sâu.\n"
+"<CLT 4>Mình chìm vào một giấc ngủ sâu.\n"
 "<CLT>"
 
 #. <CLT 4>だけど、それでも終わらせてくれない…
@@ -212,7 +219,7 @@ msgid ""
 "<CLT 4>I could hear a voice...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ có thể nghe thấy một giọng nói...\n"
+"<CLT 4>Mình có thể nghe thấy một giọng nói...\n"
 "<CLT>"
 
 #. …お…………
@@ -233,7 +240,7 @@ msgstr "..."
 #. 起きて………
 msgctxt "0029 | NO NAME"
 msgid "...wake up..."
-msgstr "Dậy đi..."
+msgstr "...dậy đi..."
 
 #. …え？
 msgctxt "0030 | MAKOTO NAEGI"
@@ -249,7 +256,8 @@ msgid ""
 "half-consciousness. My eyelids were like lead.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giọng nói kéo tớ khỏi giấc ngủ sâu vào trạng thái nửa tỉnh nửa mê. Đôi mắt nặng trĩu như chì.\n"
+"<CLT 4>Giọng nói kéo mình khỏi giấc ngủ sâu vào trạng thái\n"
+"nửa tỉnh nửa mê. Đôi mắt nặng trĩu như chì.\n"
 "<CLT>"
 
 #. 霧切さん…？
@@ -270,7 +278,7 @@ msgstr "Hả...? Kyoko hả?"
 #. だから、そうよ。
 msgctxt "0035 | KYOUKO KIRIGIRI"
 msgid "I said yes..."
-msgstr "Thì tớ đã bảo là vâng rồi mà..."
+msgstr "Thì tớ đã bảo là đúng rồi mà..."
 
 #. そっか…霧切さんか…
 msgctxt "0036 | MAKOTO NAEGI"
@@ -289,13 +297,13 @@ msgid ""
 "<CLT 4>In a flash I was wide awake.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ giật mình bật dậy ngay lập tức.\n"
+"<CLT 4>Mình giật mình bật dậy ngay lập tức.\n"
 "<CLT>"
 
 #. な、何してるのッ！？
 msgctxt "0039 | MAKOTO NAEGI"
 msgid "Wh-What are you doing here!?"
-msgstr "Ng-Ngươi đến đây làm gì!?"
+msgstr "C-Cậu đến đây làm gì!?"
 
 #. 起こしに来たのよ。
 msgctxt "0040 | KYOUKO KIRIGIRI"
@@ -305,7 +313,7 @@ msgstr "Tớ đến để đánh thức cậu dậy đây."
 #. お、起こしに来たって…
 msgctxt "0041 | MAKOTO NAEGI"
 msgid "Oh, I see..."
-msgstr "Ái chà, ra vậy..."
+msgstr "À, ra vậy..."
 
 #. …っていうか鍵は！？
 msgctxt "0042 | MAKOTO NAEGI"
@@ -320,14 +328,16 @@ msgstr "Nó chưa khóa. Cậu sơ hở quá đấy."
 #. 開いてた！？　ウソ！？
 msgctxt "0044 | MAKOTO NAEGI"
 msgid "It was unlocked!? Are you serious!?"
-msgstr "Chưa khóa á!? Thật á!?"
+msgstr "Chưa khóa hả!? Thật á!?"
 
 #. 本当よ…いちいち驚かないで。
 msgctxt "0045 | KYOUKO KIRIGIRI"
 msgid ""
 "Always. And you don't have to overreact like that\n"
 "every time you're surprised."
-msgstr "Lúc nào cũng vậy. Và cậu không cần phải làm quá lên mỗi lần bị ngạc nhiên thế đâu."
+msgstr ""
+"Lúc nào cũng vậy. Và cậu không cần phải làm quá lên\n"
+"mỗi lần bị ngạc nhiên thế đâu."
 
 #. 今…何時なの…？
 msgctxt "0046 | MAKOTO NAEGI"
@@ -357,7 +367,8 @@ msgid ""
 "<CLT 4>Why was Kyoko waking me up at this hour...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vào giờ này mà... Sao Kyoko lại đến đánh thức mình dậy cơ chứ...?\n"
+"<CLT 4>Vào giờ này mà... Sao Kyoko lại đến đánh thức\n"
+"mình dậy cơ chứ...?\n"
 "<CLT>"
 
 #. こ、こんな時間にどうしたの…？
@@ -377,7 +388,7 @@ msgid ""
 "<CLT 4>A favor? From me...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhờ tớ... á...?\n"
+"<CLT 4>Nhờ mình... sao?\n"
 "<CLT>"
 
 #. <CLT 4>霧切さんが、どうしてここに？
@@ -388,7 +399,8 @@ msgid ""
 "<CLT 4>I need to find out what Kyoko's doing here.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình phải tìm hiểu xem Kyoko đang làm gì ở đây mới được.\n"
+"<CLT 4>Mình phải tìm hiểu xem Kyoko đang làm gì ở đây\n"
+"mới được.\n"
 "<CLT>"
 
 #. はい
@@ -420,5 +432,6 @@ msgid ""
 "for the data center on the 4th floor.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tớ bước đi trong ngôi trường lúc nửa đêm, tiến thẳng đến trước trung tâm dữ liệu ở tầng 4.\n"
+"<CLT 4>Mình bước đi trong ngôi trường lúc nửa đêm, tiến\n"
+"thẳng đến trước trung tâm dữ liệu ở tầng 4.\n"
 "<CLT>"
