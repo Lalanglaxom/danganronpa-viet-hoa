@@ -1,10 +1,17 @@
+import json
 from pathlib import Path
 
 from dr_po_toolkit.models import POEntry
 from dr_po_toolkit.po_io import load_po
 from dr_po_toolkit.translator import (
+    API_SYSTEM_INSTRUCTIONS,
+    GeminiApiClient,
+    SYSTEM_INSTRUCTIONS,
+    build_api_prompt,
     build_payload,
     build_previous_vietnamese_context,
+    build_prompt,
+    parse_api_translation_response,
     translate_entries_with_client,
     translate_file_with_client,
 )
@@ -15,7 +22,8 @@ def _po_text(total: int = 23, translated_through: int = 21) -> str:
     for number in range(1, total + 1):
         translation = f'Bản dịch {number}' if number <= translated_through else ''
         blocks.append(
-            f'#. 日本語 {number}\n'
+            f'#. <CLT 4>日本語 {number}\n'
+            f'#. <CLT>\n'
             f'msgctxt "{number:04d} | MAKOTO NAEGI"\n'
             f'msgid "English {number}"\n'
             f'msgstr "{translation}"'
@@ -34,8 +42,9 @@ class _InteractiveFakeGeminiApiClient:
         assert len(payload["entries"]) == 1
         current = payload["entries"][0]
         context = payload["previous_vietnamese_context"]
-        assert "japanese_context" not in current
-        assert all("japanese_context" not in item for item in context)
+        assert current["japanese_hint_if_english_ambiguous"].startswith("日本語")
+        assert "<CLT" not in current["japanese_hint_if_english_ambiguous"]
+        assert all("japanese_hint_if_english_ambiguous" not in item for item in context)
 
         if len(self.payloads) == 1:
             assert current["source_en"] == "English 22"
@@ -61,23 +70,111 @@ class _MassTranslateFakeGeminiApiClient:
         self.payloads.append(payload)
         assert len(payload["entries"]) == 2
         assert payload["previous_vietnamese_context"] == []
-        assert all("japanese_context" not in entry for entry in payload["entries"])
+        assert all("japanese_hint_if_english_ambiguous" in entry for entry in payload["entries"])
         return {
             payload["entries"][0]["uid"]: "Bản dịch 22",
             payload["entries"][1]["uid"]: "Bản dịch 23",
         }
 
 
-def test_gemini_api_payload_uses_english_source_only(tmp_path: Path):
+def test_gemini_api_payload_keeps_english_authoritative_and_japanese_as_hint(tmp_path: Path):
     po_path = tmp_path / "sample.po"
     po_path.write_text(_po_text(total=1, translated_through=0), encoding="utf-8")
     entry = load_po(po_path).entries[0]
 
     payload = build_payload([entry])
+    item = payload["entries"][0]
 
-    assert payload["entries"][0]["source_en"] == "English 1"
-    assert "japanese_context" not in payload["entries"][0]
-    assert "日本語" not in str(payload)
+    assert item["source_en"] == "English 1"
+    assert item["japanese_hint_if_english_ambiguous"] == "日本語 1"
+    assert "absolute source of truth" in payload["instructions"]
+    assert "only when the English is genuinely unclear or ambiguous" in payload["instructions"]
+    assert "English `en` is absolute source truth" in API_SYSTEM_INSTRUCTIONS
+    assert "Consult `ja` only when English is genuinely ambiguous" in API_SYSTEM_INSTRUCTIONS
+
+
+def test_compact_api_prompt_avoids_duplicate_schema_and_uids(tmp_path: Path):
+    po_path = tmp_path / "sample.po"
+    po_path.write_text(_po_text(total=3, translated_through=2), encoding="utf-8")
+    po = load_po(po_path)
+    context = build_previous_vietnamese_context(po.entries, po.entries[2], limit=2)
+    payload = build_payload([po.entries[2]], previous_vietnamese_context=context)
+
+    compact = build_api_prompt(payload)
+    verbose = build_prompt(payload)
+    request = json.loads(compact)
+
+    assert len(compact) < len(verbose) * 0.35
+    assert payload["entries"][0]["uid"] not in compact
+    assert "required_response_schema" not in compact
+    assert "instructions" not in compact
+    assert request["e"] == [{"en": "English 3", "ja": "日本語 3", "sp": "MAKOTO NAEGI"}]
+    assert [item["en"] for item in request["c"]] == ["English 1", "English 2"]
+    assert [item["vi"] for item in request["c"]] == ["Bản dịch 1", "Bản dịch 2"]
+
+
+def test_api_response_uses_order_when_gemini_echoes_wrong_uids():
+    expected = ["00001|A", "00002|B"]
+    response = {
+        "entries": [
+            {"uid": "wrong-A", "translation": "Một"},
+            {"uid": "wrong-B", "translation": "Hai"},
+        ]
+    }
+
+    assert parse_api_translation_response(response, expected) == {
+        "00001|A": "Một",
+        "00002|B": "Hai",
+    }
+    assert parse_api_translation_response({"t": ["Một", "Hai"]}, expected) == {
+        "00001|A": "Một",
+        "00002|B": "Hai",
+    }
+
+
+def test_api_response_honours_correct_uids_when_batch_is_shuffled():
+    expected = ["00001|A", "00002|B"]
+    response = {
+        "entries": [
+            {"uid": "00002|B", "translation": "Hai"},
+            {"uid": "00001|A", "translation": "Một"},
+        ]
+    }
+    assert parse_api_translation_response(response, expected) == {
+        "00001|A": "Một",
+        "00002|B": "Hai",
+    }
+
+
+def test_gemini_client_sends_compact_request_once_and_normalizes_bad_uid():
+    calls: list[dict] = []
+
+    class FakeModels:
+        def generate_content(self, **kwargs):
+            calls.append(kwargs)
+            return type("Response", (), {"text": '{"entries":[{"uid":"mismatch","translation":"Xin chào"}]}'})()
+
+    class FakeTypes:
+        @staticmethod
+        def GenerateContentConfig(**kwargs):
+            return kwargs
+
+    client = GeminiApiClient.__new__(GeminiApiClient)
+    client._client = type("Client", (), {"models": FakeModels()})()
+    client._types = FakeTypes
+    client.model = "fake-model"
+    client.prompt = SYSTEM_INSTRUCTIONS
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="Hello", msgstr="", extracted_comments=["こんにちは"])
+    payload = build_payload([entry])
+
+    result = client.translate_payload(payload)
+
+    assert result == {entry.uid: "Xin chào"}
+    assert len(calls) == 1
+    assert calls[0]["contents"] == build_api_prompt(payload)
+    assert entry.uid not in calls[0]["contents"]
+    assert calls[0]["config"]["system_instruction"] == API_SYSTEM_INSTRUCTIONS.strip()
+    assert calls[0]["config"]["temperature"] == 0.1
 
 
 def test_interactive_gemini_api_uses_configurable_previous_twenty_context(tmp_path: Path):

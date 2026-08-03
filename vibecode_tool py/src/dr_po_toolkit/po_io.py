@@ -249,6 +249,17 @@ def save_po(po_file: POFile, path: str | Path | None = None) -> None:
     if target is None:
         raise ValueError("save_po needs a path")
     target.write_text(dump_po(po_file), encoding="utf-8")
+    # Search, duplicate review, and suggestions share an incremental read cache.
+    # Invalidate explicitly after writes so even coarse filesystem timestamps
+    # cannot leave a stale parsed document behind. The local import avoids a
+    # module cycle because text_index itself uses this parser.
+    try:
+        from .text_index import invalidate_text_index
+
+        invalidate_text_index(target)
+    except Exception:
+        # Cache invalidation is an optimisation and must never make saving fail.
+        pass
 
 
 def clone_untranslated_from_source(entry: POEntry) -> POEntry:

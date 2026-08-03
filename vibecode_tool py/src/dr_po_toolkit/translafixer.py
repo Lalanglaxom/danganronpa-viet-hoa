@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import copy
 import re
 import shutil
+import threading
 import unicodedata
-from collections import defaultdict
+from collections import OrderedDict, defaultdict
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -11,7 +13,8 @@ from typing import Callable, Iterable
 
 from .discovery import iter_po_files
 from .models import POFile
-from .po_io import load_po, save_po
+from .po_io import save_po
+from .text_index import corpus_signature, get_cached_po, load_po_clone, text_index_generation
 
 
 @dataclass(slots=True)
@@ -115,6 +118,35 @@ CLT_MATCH_RE = re.compile(r"<\s*clt(?:[\s_]*(?:\d+|n))?\s*>", re.IGNORECASE)
 
 
 WORD_RE = re.compile(r"\w+", re.UNICODE)
+
+# Aggregate caches sit on top of the shared per-file text index. Unchanged
+# corpora reopen instantly; when one file changes, only that file is reparsed.
+_AGGREGATE_CACHE_LOCK = threading.RLock()
+_AGGREGATE_CACHE_MAX = 8
+_SUGGESTION_CORPUS_CACHE: OrderedDict[tuple[object, ...], tuple["TranslationSuggestionIndex", TranslafixResult]] = OrderedDict()
+_TRANSLATION_MAP_CACHE: OrderedDict[tuple[object, ...], tuple[dict[str, str], TranslafixResult]] = OrderedDict()
+_DUPLICATE_SCAN_CACHE: OrderedDict[tuple[object, ...], tuple[list[ReferenceTranslationConflictEntry], TranslafixResult]] = OrderedDict()
+
+
+def _bounded_cache_put(cache: OrderedDict, key: tuple[object, ...], value: object) -> None:
+    with _AGGREGATE_CACHE_LOCK:
+        cache[key] = value
+        cache.move_to_end(key)
+        while len(cache) > _AGGREGATE_CACHE_MAX:
+            cache.popitem(last=False)
+
+
+def clear_translafixer_caches() -> None:
+    """Clear aggregate suggestion/diff caches; shared parsed files stay reusable."""
+    with _AGGREGATE_CACHE_LOCK:
+        _SUGGESTION_CORPUS_CACHE.clear()
+        _TRANSLATION_MAP_CACHE.clear()
+        _DUPLICATE_SCAN_CACHE.clear()
+
+
+def _corpus_cache_key(paths: Iterable[Path], *extra: object) -> tuple[object, ...]:
+    path_list = list(paths)
+    return (text_index_generation(), corpus_signature(path_list), *extra)
 
 
 def _canonical_clt_tag(match: re.Match[str]) -> str:
@@ -269,18 +301,26 @@ class TranslationSuggestionIndex:
         exclude_files: Iterable[str | Path] = (),
         log: Callable[[str], None] | None = None,
     ) -> tuple["TranslationSuggestionIndex", TranslafixResult]:
+        source_paths = list(_iter_source_po_files(sources))
+        excluded = {_resolve(Path(path)) for path in exclude_files}
+        excluded_key = tuple(sorted(str(path) for path in excluded))
+        cache_key = _corpus_cache_key(source_paths, "suggestions", excluded_key)
+        with _AGGREGATE_CACHE_LOCK:
+            cached = _SUGGESTION_CORPUS_CACHE.get(cache_key)
+            if cached is not None:
+                _SUGGESTION_CORPUS_CACHE.move_to_end(cache_key)
+                return cached[0], copy.deepcopy(cached[1])
+
         result = TranslafixResult()
         index = cls()
-        excluded = {_resolve(Path(path)) for path in exclude_files}
-
-        for po_path in _iter_source_po_files(sources):
+        for po_path in source_paths:
             result.source_files += 1
             result.source_paths.append(po_path)
             if _resolve(po_path) in excluded:
                 result.skipped_source_targets += 1
                 continue
             try:
-                po_file = load_po(po_path)
+                po_file = get_cached_po(po_path)
             except Exception as exc:
                 if log is not None:
                     log(f"ERROR reading suggestion source {po_path}: {exc}")
@@ -311,6 +351,7 @@ class TranslationSuggestionIndex:
                     )
                 )
         result.usable_translations = len(index.candidates)
+        _bounded_cache_put(_SUGGESTION_CORPUS_CACHE, cache_key, (index, copy.deepcopy(result)))
         return index, result
 
     def _prefilter_indexes(self, target_key: str, *, max_candidates: int) -> list[int]:
@@ -517,14 +558,22 @@ def build_translation_map(
     from the usable map so the fixer does not write a wrong translation into
     another context.
     """
+    source_paths = list(_iter_source_po_files(source_files))
+    cache_key = _corpus_cache_key(source_paths, "translation-map")
+    with _AGGREGATE_CACHE_LOCK:
+        cached = _TRANSLATION_MAP_CACHE.get(cache_key)
+        if cached is not None:
+            _TRANSLATION_MAP_CACHE.move_to_end(cache_key)
+            return dict(cached[0]), copy.deepcopy(cached[1])
+
     result = TranslafixResult()
     translations: dict[str, str] = {}
     ambiguous: set[str] = set()
 
-    for po_path in _iter_source_po_files(source_files):
+    for po_path in source_paths:
         result.source_files += 1
         result.source_paths.append(po_path)
-        po_file = load_po(po_path)
+        po_file = get_cached_po(po_path)
         for entry in po_file.entries:
             result.source_entries += 1
             msgid = msgid_match_key(entry.msgid)
@@ -556,6 +605,11 @@ def build_translation_map(
             )
 
     result.usable_translations = len(translations)
+    _bounded_cache_put(
+        _TRANSLATION_MAP_CACHE,
+        cache_key,
+        (dict(translations), copy.deepcopy(result)),
+    )
     return translations, result
 
 
@@ -573,13 +627,21 @@ def _find_reference_duplicate_source_entries(
     included by default so missing translations can be fixed from nearby
     duplicates, but groups where every translation is empty are skipped.
     """
+    source_paths = list(_iter_source_po_files(reference_files))
+    cache_key = _corpus_cache_key(source_paths, "duplicates", include_empty, only_conflicts)
+    with _AGGREGATE_CACHE_LOCK:
+        cached = _DUPLICATE_SCAN_CACHE.get(cache_key)
+        if cached is not None:
+            _DUPLICATE_SCAN_CACHE.move_to_end(cache_key)
+            return copy.deepcopy(cached[0]), copy.deepcopy(cached[1])
+
     result = TranslafixResult()
     grouped: dict[str, list[ReferenceTranslationConflictEntry]] = defaultdict(list)
 
-    for po_path in _iter_source_po_files(reference_files):
+    for po_path in source_paths:
         result.source_files += 1
         result.source_paths.append(po_path)
-        po_file = load_po(po_path)
+        po_file = get_cached_po(po_path)
         for row, entry in enumerate(po_file.entries):
             result.source_entries += 1
             key = reference_duplicate_msgid_key(entry.msgid)
@@ -613,9 +675,6 @@ def _find_reference_duplicate_source_entries(
         distinct_with_empty = {entry.translation for entry in entries}
         distinct_non_empty = {value for value in distinct_with_empty if value.strip()}
         if not distinct_non_empty:
-            # All translations for this duplicate source are empty. They are not
-            # actionable in the duplicate view because there is no translation to
-            # compare or copy from.
             continue
         distinct = distinct_with_empty if include_empty else distinct_non_empty
         variants = len(distinct)
@@ -641,6 +700,11 @@ def _find_reference_duplicate_source_entries(
                 )
 
     result.usable_translations = len(duplicate_entries)
+    _bounded_cache_put(
+        _DUPLICATE_SCAN_CACHE,
+        cache_key,
+        (copy.deepcopy(duplicate_entries), copy.deepcopy(result)),
+    )
     return duplicate_entries, result
 
 
@@ -724,7 +788,7 @@ def apply_translafix(
         file_result = TranslafixFileResult(file=po_path)
         result.files.append(file_result)
         try:
-            po_file = load_po(po_path)
+            po_file = load_po_clone(po_path)
             changed = False
             for entry in po_file.entries:
                 if stop_requested is not None and stop_requested():

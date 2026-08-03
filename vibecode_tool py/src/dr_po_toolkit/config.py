@@ -33,6 +33,7 @@ DEFAULT_CONFIG = {
     "gemini_web_wait_seconds": 2.5,
     "gemini_web_timeout_seconds": 180,
     "gemini_web_retries": 2,
+    "gemini_web_use_chatgpt": False,
     "gemini_translate_mode": "web",
     "gemini_api_use_key": False,
     "gemini_api_key": "",

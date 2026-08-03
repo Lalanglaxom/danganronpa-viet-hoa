@@ -58,11 +58,11 @@ dr-po replace "path/to/folder" --rules rules/mass_replace_rules.json --dry-run
 
 ## Task progress
 
-The GUI shows shared progress text in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini Web/API, manual filename sync, and the complete Repack pipeline. File- or entry-based work shows current/total counts and percentages without a filled bar or animated texture. Search keeps its detailed local progress text and mirrors the same state in the shared indicator.
+The GUI shows shared progress text in the top toolbar for every long-running action: Validate, Mass Replace, Line Wrap, Search, Translafixer, PO Viewer load/save/wrap/fill/replace/AI tasks, duplicate scans and batch edits, Gemini/ChatGPT Web, Gemini API, manual filename sync, and the complete Repack pipeline. File- or entry-based work shows current/total counts and percentages without a filled bar or animated texture. Search keeps its detailed local progress text and mirrors the same state in the shared indicator.
 
 ## Search / Sync / Repack performance
 
-Large folders are faster in this build because scanners prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search builds a bounded in-memory index of decoded PO fields, scans larger file sets in parallel, skips files that cannot contain the expression before full parsing, and reuses unchanged parsed files on later searches. Cache entries invalidate automatically when a file's modification time or size changes. The first search indexes the folder; later searches over the same files are normally much faster.
+Large folders are faster in this build because scanners prune common cache/vendor folders such as `.git`, `node_modules`, `__pycache__`, and `.venv`. Search, duplicate/diff review, Translafixer maps, and PO Viewer suggestions now share one bounded incremental text/PO index. Decoded fields, parsed entries, visible/folded search forms, suggestion corpora, and duplicate results are reused across screens. Larger searches run in parallel and reject impossible files before entry parsing. Cache entries invalidate automatically after toolkit saves and whenever file time, change time, or size changes. The GUI now warms every configured Working folder automatically in a background thread immediately after the app opens; later searches, diff dialogs, and suggestion rebuilds over unchanged files are normally immediate.
 
 `Sync by Filename` now refuses nested source/target folders, skips self-copy, skips duplicate source filenames, and avoids rewriting target files that are already identical. This reduces disk writes a lot when syncing the same folder repeatedly.
 
@@ -110,26 +110,26 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
 10. Click `Shortcuts` beside Settings to assign wrap and previous/next-file actions. Assignments may be a three-key chord such as `Ctrl+Shift+1`, or a sequence of up to three chords. Direct one-chord wrap keys remain repeatable while their modifier is held. Reset restores `Shift+1/2/3/4`, `Shift+Return`, `Alt+Up`, and `Alt+Down`. Hold `Ctrl` and press `1/2/3` repeatedly to apply PO Viewer suggestions; `Alt+0` refreshes them. `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
-## Automatic Gemini Web workflow
+## Automatic Gemini or ChatGPT Web workflow
 
-This keeps the old simple Gemini-web behavior, but uses the refactored PO parser/writer and validation.
+The `AI Translation` tab keeps the existing Gemini Web workflow and adds a `Use ChatGPT Web instead of Gemini` toggle. The toggle affects Web mode only; Gemini API mode always remains Gemini.
 
 It will automatically:
 
 1. scan the selected folder for `.po` files
 2. skip `Copy.po` files and `SKIP` folders
 3. find entries with empty `msgstr`
-4. use the working `.po` as Gemini input while leaving any `Copy.po` untouched
-5. protect angle-bracket tags like `<CLT 4>` as safe tokens before pasting, so Gemini Web does not strip the PO body
+4. use the working `.po` as web-model input while leaving any `Copy.po` untouched
+5. protect angle-bracket tags like `<CLT 4>` as safe tokens before pasting, so the web editor does not strip the PO body
 6. split into smaller batches using both max lines and max entries
-7. paste batches into your current Gemini web tab
+7. paste batches into your current Gemini or ChatGPT tab
 8. verify the textbox really contains `msgctxt` / `msgid` / `msgstr` before pressing Send
 9. wait with a real timeout and retry stuck/empty batches
-10. parse Gemini's PO-code-block response and decode safe tokens back to real tags
+10. parse the PO-code-block response and decode safe tokens back to real tags
 11. validate CLT tags/placeholders
 12. write safe translations back into the working `.po` file
 13. save raw Gemini output to `*_translated.txt`
-14. ask Gemini for a 2-3 word folder label and rename the folder only if it is not already renamed
+14. ask the selected web provider for a 2-3 word folder label and rename the folder only if it is not already renamed
 15. optionally remove duplicate ` (1)` suffixes from files/folders
 
 Install optional dependency:
@@ -138,7 +138,7 @@ Install optional dependency:
 python -m pip install playwright
 ```
 
-Use the GUI `Open Chrome` button, or start Chrome manually with remote debugging, then log in to Gemini:
+In `AI Translation`, select `Web tab`, leave the ChatGPT toggle off for Gemini or turn it on for ChatGPT, then use `Open Chrome`. You may also start Chrome manually with remote debugging and open the selected provider:
 
 ```bat
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\ChromeDebug"
@@ -150,7 +150,7 @@ Run from GUI:
 python run_toolkit.py
 ```
 
-Go to `Translate` → click `Run Gemini Web`.
+Go to `AI Translation` and click `Run Gemini Web` or `Run ChatGPT Web`.
 
 Run from CLI:
 
@@ -159,6 +159,8 @@ python run_cli.py gemini-web "path/to/translated_folder" --max-files 59 --max-li
 ```
 
 Use `--no-folder-rename` if you only want translation and no summary rename.
+
+The CLI command remains Gemini Web only. The provider toggle is currently in the GUI.
 
 
 ### Gemini Web anti-stuck safeguards
@@ -178,13 +180,17 @@ If Chrome/Gemini is interrupted while generating, the app now:
 
 If all retries fail, it stops with a clear batch error instead of hanging silently.
 
+### ChatGPT Web duplicate-send safeguards
+
+ChatGPT Web uses the reference ProseMirror/CDP automation path. It never navigates or reloads the active ChatGPT tab. Once ChatGPT accepts a prompt, the toolkit does not resend it after a response-monitoring or parsing failure. Raw output is saved to `*_translated.txt` so the failure can be inspected safely.
+
 ### Gemini Web prompt safety
 
 Gemini Web can treat raw angle tags like `<CLT 4>` as HTML when pasted through automation.
 To avoid blank prompts, this build sends tags as safe visible tokens like `⟦CLT 4⟧`, then decodes Gemini's response back to `<CLT 4>` before writing the `.po`.
 If the textbox does not contain real PO fields (`msgctxt`, `msgid`, `msgstr`) after paste, the app stops before sending instead of submitting an empty prompt.
 
-The translator no longer has an `Open Gemini` option. Run only connects to an already-open Gemini tab, so it will not navigate a random tab or open Gemini during translation.
+The run action only connects to an already-open matching provider tab. `Open Chrome` is a separate explicit setup action, so translation itself does not navigate a random tab or open a provider page.
 
 
 Backup safety: `backup` now creates missing `Copy.po` files only. Existing `Copy.po` files are not overwritten unless you explicitly run:
@@ -295,9 +301,7 @@ default. Turn on `Include previous files` beside the compact context count only
 when earlier PO files should fill unused context slots. Set `Previous context`
 to 0 to disable continuity and keep normal `Max entries / batch` requests.
 
-Gemini API entry payloads never include extracted Japanese comments or the old
-`japanese_context` field. The current English `source_en` remains the only source
-text to translate; previous English/Vietnamese entries are continuity context only.
+Gemini API translation treats the current English `source_en` as the absolute source of truth. Extracted Japanese comments are cleaned and sent only as a compact ambiguity hint; the prompt explicitly forbids Japanese from overriding, adding to, shortening, or changing the English. Previous English/Vietnamese entries remain continuity context only. Direct API requests use minified order-based JSON and expect `{"t":[...]}`, avoiding repeated schemas/instructions and fragile echoed UIDs. Legacy UID-based JSON remains supported for exported manual jobs.
 
 Search, PO Viewer, and duplicate/diff views keep up to 500 unified undo actions.
 `Ctrl+Z` is routed through that history before the focused editor consumes it, so
@@ -307,20 +311,20 @@ can also be reversed. Toolbar Undo controls use the same history.
 
 ### Copy.po safety
 
-Gemini Web mode never translates, overwrites, edits, or renames existing `- Copy.po` files.
+Gemini and ChatGPT Web modes never translate, overwrite, edit, or rename existing `- Copy.po` files.
 The `Create Copy.po if missing` option only creates a new backup when no backup exists yet.
-If a `- Copy.po` already exists, it is left untouched. Gemini Web uses the working `.po` as its input source.
+If a `- Copy.po` already exists, it is left untouched. Web translation uses the working `.po` as its input source.
 
 `Rename (1)` skips all Copy.po files, including names like `chapter - Copy (1).po`.
 
 `Rename segment folders` can rename the containing segment folder, but it does not edit the files inside it.
-`Open Chrome` starts a separate Chrome debug profile and opens Gemini. `Run Gemini Web` only connects to an already-open Gemini tab; it never opens or navigates tabs during translation.
+`Open Chrome` starts a separate Chrome debug profile and opens the selected web provider. The run button connects only to an already-open matching tab. Gemini recovery may refresh a stuck Gemini page; ChatGPT recovery never navigates or reloads the active ChatGPT page.
 
 
 ### Stop Current Action
 
 The GUI has a global `Stop Current Action` button above all tabs. It requests a safe cooperative stop for the active task.
-Gemini Web checks the stop request between files, between batches, during wait timers, and while waiting for Gemini to finish. If Gemini is generating, the tool tries to click Gemini's Stop button before exiting.
+Web translation checks the stop request between files, between batches, during wait timers, and while waiting for the selected provider to finish. If generation is active, the tool tries to click the provider's Stop button before exiting.
 
 ### Restore working PO from Copy.po
 

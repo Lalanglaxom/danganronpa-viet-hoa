@@ -14,7 +14,7 @@ msgstr ""
 #. な、なんだよ、この部屋…！？
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Wh-What the hell is this...!?"
-msgstr ""
+msgstr "C-Cái quái gì thế này...!?"
 
 #. <CLT 4>一目でわかる異様さ…
 #. <CLT>
@@ -24,6 +24,9 @@ msgid ""
 "fast.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Vẻ kinh hoàng ghê rợn của căn phòng ập vào mình\n"
+"ngay tức khắc.\n"
+"<CLT>"
 
 #. <CLT 4>いや、異様なのは、
 #. 目に映る光景だけじゃなかった…
@@ -33,6 +36,8 @@ msgid ""
 "<CLT 4>What I saw was bad enough, but what I smelled...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những gì mình thấy đã đủ tệ rồi, nhưng còn mùi này...\n"
+"<CLT>"
 
 #. <CLT 4>教室の中に漂う…強烈で不快な匂い…
 #. <CLT>
@@ -41,16 +46,18 @@ msgid ""
 "<CLT 4>It was sour, pungent, impossibly rank...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Chua, hăng, tanh tưởi đến không thể chịu nổi...\n"
+"<CLT>"
 
 #. 酷い匂いだな…
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid "It smells awful, doesn't it?"
-msgstr ""
+msgstr "Mùi kinh khủng thật, phải không?"
 
 #. こ、この匂いって…？
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "I-It's..."
-msgstr ""
+msgstr "Đ-Đây là..."
 
 #. 薄々、勘付いているはずだ。
 #. ここで何度も“人の死”に立ち会ってきたお前ならな…
@@ -59,11 +66,13 @@ msgid ""
 "It must be at least vaguely familiar to you. After\n"
 "all, you've been around your fair share of corpses."
 msgstr ""
+"Ít nhất mày cũng thấy nó hơi quen thuộc rồi chứ. Dù\n"
+"sao mày cũng đã chứng kiến không ít xác chết."
 
 #. もしかして、これって…
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Are you saying...?"
-msgstr ""
+msgstr "Ý cậu là...?"
 
 #. <CLT 3>死の匂い<CLT>…
 #. 人間の<CLT 3>血<CLT>と<CLT 3>脂<CLT>の匂いだ…
@@ -72,6 +81,8 @@ msgid ""
 "It's the <CLT 3>smell of death<CLT>. Their <CLT 3>flesh<CLT> and <CLT 3>fat<CLT> and\n"
 "<CLT 3>blood<CLT>..."
 msgstr ""
+"Đó là <CLT 3>mùi của cái chết<CLT>. <CLT 3>Thịt<CLT>, <CLT 3>mỡ<CLT> và\n"
+"<CLT 3>máu<CLT> của con người..."
 
 #. <CLT 4>…不思議と驚きはなかった。
 #. <CLT>
@@ -80,6 +91,8 @@ msgid ""
 "<CLT 4>There was no surprise in his voice, no shock.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Trong giọng cậu ấy không hề có chút ngạc nhiên hay kinh hãi nào.\n"
+"<CLT>"
 
 #. <CLT 4>十神クンの言う通りだ。
 #. ボクは、この匂いを何度も経験していた。
@@ -90,6 +103,9 @@ msgid ""
 "than once before...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng cậu ấy nói đúng. Mình đã từng ngửi thấy mùi này\n"
+"hơn một lần rồi...\n"
+"<CLT>"
 
 #. <CLT 4>これは……<CLT><CLT 3>死と絶望の匂い<CLT><CLT 4>…
 #. <CLT>
@@ -98,6 +114,8 @@ msgid ""
 "<CLT 4>It was the smell of <CLT><CLT 3>death and despair<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đó là mùi của <CLT><CLT 3>cái chết và tuyệt vọng<CLT><CLT 4>.\n"
+"<CLT>"
 
 #. だが、それにしても強烈だ。
 #. 血と脂の匂いが凝縮され…まるで戦場のようだ。
@@ -106,22 +124,24 @@ msgid ""
 "But the smell here is strong, condensed. It's the\n"
 "smell of a battlefield."
 msgstr ""
+"Nhưng mùi ở đây quá nồng, như bị cô đặc lại. Đó là\n"
+"mùi của một chiến trường."
 
 #. やっぱり…これもモノクマが…
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Monokuma must have—"
-msgstr ""
+msgstr "Chắc chắn Monokuma đã—"
 
 #. またボクのせいですか！？
 msgctxt "0015 | MONOKUMA"
 msgid "What, my fault AGAIN!?"
-msgstr ""
+msgstr "Gì cơ, LẠI là lỗi của ta à!?"
 
 #. そうやって、なんでもかんでも、
 #. ボクのせいにしないでよねッ！！
 msgctxt "0016 | MONOKUMA"
 msgid "Stop trying to blame everything on me!"
-msgstr ""
+msgstr "Đừng có chuyện gì cũng đổ hết lên đầu ta!"
 
 #. お、お前が何もしていないなら…
 #. こんな事になっているはずないだろ…！
@@ -130,16 +150,18 @@ msgid ""
 "I-If you hadn't done what you did, this never would\n"
 "have happened!"
 msgstr ""
+"N-Nếu ngươi không làm những chuyện đó, thì chuyện này đã\n"
+"không bao giờ xảy ra!"
 
 #. いやいや…むしろ逆なんですけど…
 msgctxt "0018 | MONOKUMA"
 msgid "No, no, no. It's quite the opposite!"
-msgstr ""
+msgstr "Không, không, không. Hoàn toàn ngược lại cơ!"
 
 #. …逆？
 msgctxt "0019 | MAKOTO NAEGI"
 msgid "The opposite...?"
-msgstr ""
+msgstr "Ngược lại...?"
 
 #. えー、ヒントを教えましょう。
 msgctxt "0020 | MONOKUMA"
@@ -147,18 +169,20 @@ msgid ""
 "Yup! Let me give you an itty bitty eegie squeegie\n"
 "little hint."
 msgstr ""
+"Đúng vậy! Để ta cho các ngươi một gợi ý bé tí ti,\n"
+"nhỏ xíu xiu nhé."
 
 #. この部屋に関しては、
 #. 本当に何もしていませんよ。
 msgctxt "0021 | MONOKUMA"
 msgid "As far as this room goes, I don't know a thing!"
-msgstr ""
+msgstr "Riêng căn phòng này thì ta chẳng biết gì hết!"
 
 #. 掃除もしないで、
 #. <CLT 3>当時の状況にしておいた<CLT>だけなのです！
 msgctxt "0022 | MONOKUMA"
 msgid "I just <CLT 3>left it exactly how I found it<CLT>."
-msgstr ""
+msgstr "Ta chỉ <CLT 3>để nguyên đúng như lúc tìm thấy<CLT> thôi."
 
 #. え…？
 msgctxt "0023 | MAKOTO NAEGI"
@@ -172,6 +196,8 @@ msgid ""
 "How's that for a hint!? Better than those stupid\n"
 "\"hints\" you get from NPCs in those mean old RPGs!"
 msgstr ""
+"Gợi ý thế nào!? Còn đỡ hơn mấy cái \"gợi ý\" ngu ngốc\n"
+"từ NPC trong mấy trò RPG hiểm hóc ấy chứ!"
 
 #. それにしても、
 #. 血だらけなんて物騒だよね。
@@ -180,6 +206,8 @@ msgid ""
 "But it's pretty scary, huh? Blood all over the walls\n"
 "and junk..."
 msgstr ""
+"Nhưng mà cũng đáng sợ nhỉ? Máu me vương đầy tường\n"
+"với đủ thứ linh tinh..."
 
 #. でもさ、外の世界でも、
 #. 人って毎日死んでるんだし…
@@ -188,6 +216,8 @@ msgid ""
 "Of course, even in the outside world, people die\n"
 "bloody, gruesome deaths every day!"
 msgstr ""
+"Tất nhiên, ngay cả ở thế giới bên ngoài, ngày nào cũng có người\n"
+"chết những cái chết đẫm máu và ghê rợn!"
 
 #. だから、大した事じゃないさ！
 #. 上を向いて歩こうぜッ！！
@@ -196,6 +226,8 @@ msgid ""
 "So it's not really a big deal! Just keep your chin up\n"
 "and keep on livin', soldier!"
 msgstr ""
+"Vậy nên cũng chẳng có gì to tát! Ngẩng cao đầu lên\n"
+"và tiếp tục sống đi, chiến sĩ!"
 
 #. <CLT 4>あいつ、何を言ってるんだ…？
 #. <CLT>
@@ -204,6 +236,8 @@ msgid ""
 "<CLT 4>What's he talking about...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hắn đang nói gì vậy...?\n"
+"<CLT>"
 
 #. <CLT 4>掃除もしないで当時の状況にしておいただけ、とか…？
 #. <CLT>
@@ -212,6 +246,8 @@ msgid ""
 "<CLT 4>He just left it the way he found it?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hắn chỉ để nguyên nơi này như lúc tìm thấy sao?\n"
+"<CLT>"
 
 #. <CLT 4>それって…どういう意味だよ…？
 #. <CLT>
@@ -220,12 +256,14 @@ msgid ""
 "<CLT 4>What's the meaning of all this...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tất cả chuyện này có ý nghĩa gì...?\n"
+"<CLT>"
 
 #. 十神クン…
 #. さっきのモノクマの言葉だけどさ…
 msgctxt "0031 | MAKOTO NAEGI"
 msgid "Um, Byakuya? About what Monokuma just told us..."
-msgstr ""
+msgstr "Ừm, Byakuya? Về chuyện Monokuma vừa nói..."
 
 #. ………………
 msgctxt "0032 | BYAKUYA TOGAMI"
@@ -241,6 +279,9 @@ msgid ""
 "thought.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cứ như mình không hề tồn tại vậy. Chắc cậu ấy đang\n"
+"mải suy nghĩ.\n"
+"<CLT>"
 
 #. <CLT 4>集中している…？
 #. いや、ボクを無視しているだけかも…
@@ -251,6 +292,9 @@ msgid ""
 "flat-out ignoring me...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cậu ấy thật sự đang suy nghĩ căng đến thế sao? Hay chỉ là\n"
+"thẳng thừng phớt lờ mình...?\n"
+"<CLT>"
 
 #. はい
 msgctxt "0035 | CHOICE/RE:ACT"
@@ -279,6 +323,8 @@ msgid ""
 "<CLT 4>I don't think I've seen everything there is to see...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình không nghĩ là đã xem hết mọi thứ ở đây...\n"
+"<CLT>"
 
 #. <CLT 4>教室中に血痕が飛び散っている…
 #. まさに、目を覆いたくなる惨状ってヤツだな…
@@ -296,7 +342,7 @@ msgstr ""
 #. …血痕はすっかり乾いているようだ。
 msgctxt "0040 | BYAKUYA TOGAMI"
 msgid "It appears all the bloodstains are dry."
-msgstr ""
+msgstr "Có vẻ toàn bộ vết máu đã khô."
 
 #. それに、変色の具合からして、
 #. この血痕は、<CLT 3>かなり古い物<CLT>のようだな。
@@ -305,16 +351,18 @@ msgid ""
 "And their color has changed, as well. I think it's\n"
 "safe to assume these stains are <CLT 3>considerably old<CLT>."
 msgstr ""
+"Màu sắc của chúng cũng đã thay đổi. Có thể khẳng định\n"
+"những vết máu này <CLT 3>đã có từ rất lâu<CLT>."
 
 #. これって全部…本物の血なのかな？
 msgctxt "0042 | MAKOTO NAEGI"
 msgid "This is all...really blood?"
-msgstr ""
+msgstr "Tất cả những thứ này...thật sự là máu sao?"
 
 #. 当然だ。そうでなければ面白くないだろう。
 msgctxt "0043 | BYAKUYA TOGAMI"
 msgid "Of course. I wouldn't find it interesting otherwise."
-msgstr ""
+msgstr "Tất nhiên. Nếu không thì chẳng có gì thú vị."
 
 #. まったく興味深いな…
 #. 一体、この教室で何が起きたんだろうな…？
@@ -323,6 +371,8 @@ msgid ""
 "And it *is* interesting, I assure you. What on Earth\n"
 "happened in this classroom...?"
 msgstr ""
+"Và ta đảm bảo, chuyện này *rất* thú vị. Rốt cuộc\n"
+"đã xảy ra chuyện gì trong lớp học này...?"
 
 #. <CLT 4>まるで楽しんでいるみたいだ…
 #. やっぱり、十神クンには付いていけないな…
@@ -333,6 +383,9 @@ msgid ""
 "\"keep up\" with someone like that...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Trông cậu ấy như đang...tận hưởng chuyện này. Mình không thể nào\n"
+"\"theo kịp\" một người như thế...\n"
+"<CLT>"
 
 #. <CLT 4>床に直接書かれた白線…
 #. 人型になぞられた不気味な白線だ。
@@ -367,6 +420,8 @@ msgid ""
 "<CLT 4>You always see it at the <CLT><CLT 3>scene of a murder<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Thứ đó luôn xuất hiện tại <CLT><CLT 3>hiện trường án mạng<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. ………………
 msgctxt "0049 | MAKOTO NAEGI"
@@ -380,6 +435,8 @@ msgid ""
 "<CLT 4>I wish I could say I don't believe it...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình chỉ ước có thể nói là mình không tin...\n"
+"<CLT>"
 
 #. はい
 msgctxt "0051 | CHOICE/RE:ACT"
@@ -408,3 +465,5 @@ msgid ""
 "<CLT 4>I don't think I've seen everything there is to see...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình không nghĩ là đã xem hết mọi thứ ở đây...\n"
+"<CLT>"

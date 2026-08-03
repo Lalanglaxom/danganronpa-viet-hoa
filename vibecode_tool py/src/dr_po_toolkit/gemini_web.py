@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Iterable
 
-from .cancel import StopFn, check_stop, sleep_with_stop
+from .cancel import OperationCancelled, StopFn, check_stop, sleep_with_stop
 from .cleanup import RenameChange, normalize_duplicate_names
 from .discovery import find_backup_for_file, iter_po_files
 from .models import POEntry
@@ -133,6 +133,12 @@ class WebTranslateRunResult:
     @property
     def total_errors(self) -> int:
         return sum(len(item.errors) for item in self.files)
+
+
+class PromptAlreadySentError(RuntimeError):
+    """A web prompt was accepted and must not be sent again automatically."""
+
+    prompt_was_accepted = True
 
 
 ANGLE_TAG_RE = re.compile(r"<([^<>\n]{1,80})>")
@@ -615,7 +621,7 @@ def open_chrome_debug(
     """Open a separate Chrome profile with remote debugging enabled.
 
     This does not touch PO files and does not close any existing browser.
-    The caller can then log in to Gemini manually and run the web translator.
+    The caller can then log in to the selected web provider manually.
     """
     chrome = find_chrome_executable()
     profile = Path(user_data_dir).expanduser()
@@ -639,6 +645,10 @@ class GeminiWebSession:
     chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\\ChromeDebug"
     Then open Gemini and log in manually.
     """
+
+    provider_name = "Gemini"
+    allow_page_refresh_retry = True
+    allow_retry_after_response = True
 
     def __init__(self, cdp_url: str = DEFAULT_CDP_URL):
         self.cdp_url = cdp_url
@@ -1128,7 +1138,7 @@ def _folder_already_has_label(folder: Path, segment_id: str) -> bool:
 
 
 def translate_po_file_via_web(
-    session: GeminiWebSession,
+    session,
     po_path: str | Path,
     max_lines_per_batch: int = 600,
     wait_between_batches: float = MIN_POST_SAVE_DELAY_SECONDS,
@@ -1139,6 +1149,7 @@ def translate_po_file_via_web(
     retry_count: int = DEFAULT_BATCH_RETRIES,
     log: LogFn | None = None,
     stop_requested: StopFn | None = None,
+    prompt_template: str = TRANSLATE_PROMPT_TEMPLATE,
 ) -> WebTranslateFileResult:
     def say(message: str) -> None:
         if log:
@@ -1154,13 +1165,17 @@ def translate_po_file_via_web(
     if missing_before <= 0:
         return result
 
-    # Use the working PO file as the source for Gemini Web.
+    provider_name = str(getattr(session, "provider_name", "Gemini") or "Gemini")
+    allow_page_refresh_retry = bool(getattr(session, "allow_page_refresh_retry", True))
+    allow_retry_after_response = bool(getattr(session, "allow_retry_after_response", True))
+
+    # Use the working PO file as the source for web translation.
     # Copy.po is backup/reference only and must never drive translation input,
     # because stale or mismatched Copy.po files can share the same msgctxt IDs.
     source_entries = [entry for entry in po.entries if not entry.msgstr.strip()]
     debug_path = po_path.with_name(f"{po_path.stem}_translated.txt")
     result.debug_log = debug_path
-    debug_path.write_text(f"--- Gemini Translation Raw Output for {po_path.name} ---\n\n", encoding="utf-8")
+    debug_path.write_text(f"--- {provider_name} Translation Raw Output for {po_path.name} ---\n\n", encoding="utf-8")
 
     batches = batch_entries_by_lines(
         source_entries,
@@ -1175,16 +1190,16 @@ def translate_po_file_via_web(
         check_stop(stop_requested)
         say(f"Batch {idx}/{len(batches)} | {len(batch)} entries")
         entries_text = "\n".join(entry_to_po_prompt_block(entry) for entry in batch)
-        prompt = TRANSLATE_PROMPT_TEMPLATE.format(entries=entries_text)
+        prompt = prompt_template.format(entries=entries_text)
         response = ""
         parsed_by_ctx: dict[str, str] = {}
         translations_by_uid: dict[str, str] = {}
         last_exc: Exception | None = None
         normal_attempts = max(1, int(retry_count) + 1)
-        # After all normal retries fail, force-refresh Gemini and try the same
-        # batch one final time. This recovers from hidden/stale Gemini UI states
-        # that are not fixed by Escape/Stop/clear-composer recovery.
-        total_attempts = normal_attempts + 1
+        # Gemini can safely use one final page-refresh retry. Providers such as
+        # ChatGPT opt out because a prompt that was accepted must never be sent
+        # again after a monitoring or parsing failure.
+        total_attempts = normal_attempts + (1 if allow_page_refresh_retry else 0)
 
         with debug_path.open("a", encoding="utf-8") as f:
             f.write(f"==================== BATCH {idx} REQUEST ====================\n")
@@ -1194,7 +1209,7 @@ def translate_po_file_via_web(
         for attempt in range(1, total_attempts + 1):
             check_stop(stop_requested)
             if attempt > normal_attempts:
-                say(f"  Retries failed for batch {idx}/{len(batches)}. Refreshing Gemini page and trying once more")
+                say(f"  Retries failed for batch {idx}/{len(batches)}. Refreshing {provider_name} page and trying once more")
                 session.refresh_page()
                 sleep_with_stop(3, stop_requested)
             elif attempt > 1:
@@ -1212,32 +1227,43 @@ def translate_po_file_via_web(
                         translations_by_uid[entry.uid] = translation
                 if translations_by_uid:
                     break
-                last_exc = RuntimeError("Gemini response had no parseable msgctxt/msgstr entries")
+                last_exc = RuntimeError(f"{provider_name} response had no parseable msgctxt/msgstr entries")
                 with debug_path.open("a", encoding="utf-8") as f:
                     f.write(f"==================== BATCH {idx} ATTEMPT {attempt} EMPTY/PARSE FAIL ====================\n")
                     f.write(response)
                     f.write("\n\n")
+                if not allow_retry_after_response:
+                    raise PromptAlreadySentError(
+                        f"{provider_name} returned an unparseable response. The prompt was already sent and was not resent. "
+                        f"Raw output was saved to {debug_path.name}."
+                    )
                 session.recover_after_error()
+            except OperationCancelled:
+                raise
             except Exception as exc:
                 last_exc = exc
                 with debug_path.open("a", encoding="utf-8") as f:
                     f.write(f"==================== BATCH {idx} ATTEMPT {attempt} ERROR ====================\n")
                     f.write(str(exc))
                     f.write("\n\n")
+                if bool(getattr(exc, "prompt_was_accepted", False)):
+                    raise
                 session.recover_after_error()
                 if attempt >= total_attempts:
-                    session.refresh_page()
-                    raise RuntimeError(
-                        f"Batch {idx}/{len(batches)} failed after {normal_attempts} normal attempt(s) "
-                        f"plus 1 refresh attempt: {exc}"
-                    ) from exc
+                    if allow_page_refresh_retry:
+                        session.refresh_page()
+                        attempts_text = f"{normal_attempts} normal attempt(s) plus 1 refresh attempt"
+                    else:
+                        attempts_text = f"{normal_attempts} attempt(s)"
+                    raise RuntimeError(f"Batch {idx}/{len(batches)} failed after {attempts_text}: {exc}") from exc
 
         if not translations_by_uid and last_exc is not None:
-            session.refresh_page()
-            raise RuntimeError(
-                f"Batch {idx}/{len(batches)} failed after {normal_attempts} normal attempt(s) "
-                f"plus 1 refresh attempt: {last_exc}"
-            )
+            if allow_page_refresh_retry:
+                session.refresh_page()
+                attempts_text = f"{normal_attempts} normal attempt(s) plus 1 refresh attempt"
+            else:
+                attempts_text = f"{normal_attempts} attempt(s)"
+            raise RuntimeError(f"Batch {idx}/{len(batches)} failed after {attempts_text}: {last_exc}")
 
         with debug_path.open("a", encoding="utf-8") as f:
             f.write(f"==================== BATCH {idx} RESPONSE ====================\n")

@@ -83,17 +83,21 @@ from .git_tools import (
 from .gemini_web import (
     DEFAULT_BATCH_RETRIES,
     DEFAULT_CHROME_USER_DATA_DIR,
+    DEFAULT_GEMINI_URL,
     DEFAULT_MAX_ENTRIES_PER_BATCH,
     discover_untranslated_po_files,
     open_chrome_debug,
     run_gemini_web_path,
 )
+from .chatgpt_web import DEFAULT_CHATGPT_URL, run_chatgpt_web_path
 from .linewrap import normalize_wrap_presets, wrap_msgstr, wrap_po_file
 from .models import POEntry
 from .notifications import play_task_notification
 from .po_io import load_po, save_po
+from .text_index import get_cached_po, load_po_clone, prime_text_index
 from .rules import apply_rules_to_entry, apply_rules_to_file, load_rules, rule_to_dict
 from .search import SearchResult, search_files
+from .startup_index import configured_po_files
 from .shortcuts import (
     CUSTOM_SHORTCUT_ACTIONS,
     CUSTOM_SHORTCUT_LABELS,
@@ -639,6 +643,10 @@ class ToolkitGUI(QMainWindow):
         self._stop_event = threading.Event()
         self._active_thread: threading.Thread | None = None
         self._active_signals: list[WorkerSignals] = []
+        self._startup_index_thread: threading.Thread | None = None
+        self._startup_index_started = False
+        self._startup_index_file_count = 0
+        self._startup_index_error = ""
         self._active_log: LogBox | None = None
         self._task_progress_token = 0
         self._task_progress_active = False
@@ -655,6 +663,28 @@ class ToolkitGUI(QMainWindow):
         self.resize(1180, 720)
         self._apply_style()
         self._build()
+
+    def start_initial_indexing(self) -> None:
+        """Warm all configured PO files in the background after the window opens."""
+
+        if self._startup_index_started:
+            return
+        self._startup_index_started = True
+        config_snapshot = dict(self.config)
+
+        def worker() -> None:
+            try:
+                po_files = configured_po_files(config_snapshot)
+                self._startup_index_file_count = len(po_files)
+                prime_text_index(po_files, parse_entries=True)
+            except Exception as exc:
+                # Startup warming is an optimisation. Feature calls still refresh
+                # files on demand, so an indexing error must never prevent launch.
+                self._startup_index_error = str(exc)
+
+        thread = threading.Thread(target=worker, name="startup-po-index", daemon=True)
+        self._startup_index_thread = thread
+        thread.start()
 
     def open_app_link(self, value: str) -> bool:
         link = parse_entry_url(value)
@@ -4262,7 +4292,7 @@ class ToolkitGUI(QMainWindow):
         self._pump_task_progress()
         try:
             for file_index, po_path in enumerate(conflict_files, start=1):
-                po_cache[po_path] = load_po(po_path)
+                po_cache[po_path] = load_po_clone(po_path)
                 self._update_task_progress(file_index, len(conflict_files), f"Loading duplicate {po_path.name}")
                 self._pump_task_progress()
         except Exception as exc:
@@ -5713,7 +5743,7 @@ class ToolkitGUI(QMainWindow):
             self._begin_task_progress("Reloading duplicate PO files", len(current_conflict_files))
             try:
                 for file_index, po_path in enumerate(current_conflict_files, start=1):
-                    po_cache[po_path] = load_po(po_path)
+                    po_cache[po_path] = load_po_clone(po_path)
                     self._update_task_progress(file_index, len(current_conflict_files), f"Reloading duplicate {po_path.name}")
                     self._pump_task_progress()
             except Exception as exc:
@@ -6886,7 +6916,7 @@ class ToolkitGUI(QMainWindow):
                 cached_po = cached.get("po")
                 if cached_po is not None:
                     return cached_po, True
-            loaded = load_po(path)
+            loaded = load_po_clone(path)
             if len(cache) >= 12:
                 cache.pop(next(iter(cache)), None)
             cache[key] = {"mtime_ns": stat.st_mtime_ns, "size": stat.st_size, "po": loaded}
@@ -7530,7 +7560,7 @@ class ToolkitGUI(QMainWindow):
                     break
                 cached_po = po_cache.get(previous_path) if isinstance(po_cache, dict) else None
                 try:
-                    previous_po = cached_po if cached_po is not None else load_po(previous_path)
+                    previous_po = cached_po if cached_po is not None else get_cached_po(previous_path)
                 except Exception:
                     continue
                 entries = list(getattr(previous_po, "entries", []))
@@ -7732,15 +7762,15 @@ class ToolkitGUI(QMainWindow):
         if initial_paths:
             set_file_list(initial_paths, "; ".join(str(path) for path in initial_paths), auto_load=False, quiet=True, update_source_edit=False)
 
-    # ---------------- Gemini Web / API ----------------
+    # ---------------- Web translation / Gemini API ----------------
     def _build_translate_tab(self) -> None:
-        _tab, layout = self._new_tab("Gemini Web")
+        _tab, layout = self._new_tab("AI Translation")
         self._dr_option_selector(layout, "gemini_web")
         path_edit, include_extra = self._extra_path_row(layout, "gemini_web", "Extra folder", "last_path")
 
         form = QFormLayout()
         mode_combo = QComboBox()
-        mode_combo.addItem("Gemini Web tab", "web")
+        mode_combo.addItem("Web tab", "web")
         mode_combo.addItem("Gemini API key", "api")
         saved_mode = str(self.config.get("gemini_translate_mode", "web"))
         mode_combo.setCurrentIndex(1 if saved_mode == "api" else 0)
@@ -7748,6 +7778,11 @@ class ToolkitGUI(QMainWindow):
 
         cdp_edit = QLineEdit(str(self.config.get("gemini_web_cdp_url", "http://localhost:9222")))
         form.addRow("Chrome CDP", cdp_edit)
+
+        chatgpt_web_toggle = QCheckBox("Use ChatGPT Web instead of Gemini")
+        chatgpt_web_toggle.setChecked(bool(self.config.get("gemini_web_use_chatgpt", False)))
+        chatgpt_web_toggle.setToolTip("Affects Web tab mode only. Gemini API mode always uses Gemini.")
+        form.addRow("Web provider", chatgpt_web_toggle)
 
         api_key_wrap = QWidget()
         api_key_row = QHBoxLayout(api_key_wrap)
@@ -7823,9 +7858,13 @@ class ToolkitGUI(QMainWindow):
         def api_mode_enabled() -> bool:
             return str(mode_combo.currentData()) == "api" or api_key_toggle.isChecked()
 
+        def web_provider_name() -> str:
+            return "ChatGPT" if chatgpt_web_toggle.isChecked() else "Gemini"
+
         def sync_mode_ui() -> None:
             is_api = api_mode_enabled()
             cdp_edit.setEnabled(not is_api)
+            chatgpt_web_toggle.setEnabled(not is_api)
             timeout_seconds.setEnabled(not is_api)
             retries.setEnabled(not is_api)
             max_lines.setEnabled(not is_api)
@@ -7837,11 +7876,12 @@ class ToolkitGUI(QMainWindow):
             api_context_entries.setEnabled(is_api)
             api_context_across_files.setEnabled(is_api and api_context_entries.value() > 0)
             chrome_btn.setEnabled(not is_api)
-            run_btn.setText("Run Gemini API" if is_api else "Run Gemini Web")
+            run_btn.setText("Run Gemini API" if is_api else f"Run {web_provider_name()} Web")
 
         def save_web_config() -> None:
             self.config["gemini_translate_mode"] = "api" if api_mode_enabled() else "web"
             self.config["gemini_web_cdp_url"] = cdp_edit.text().strip() or "http://localhost:9222"
+            self.config["gemini_web_use_chatgpt"] = chatgpt_web_toggle.isChecked()
             self.config["gemini_web_max_files"] = max_files.value()
             self.config["gemini_web_max_lines"] = max_lines.value()
             self.config["gemini_web_max_entries"] = max_entries.value()
@@ -7861,6 +7901,8 @@ class ToolkitGUI(QMainWindow):
             paths = self._processing_paths("gemini_web", extra_edit=path_edit, include_extra=include_extra, logwrite=logwrite)
             if not paths:
                 return
+            provider = web_provider_name()
+            runner = run_chatgpt_web_path if provider == "ChatGPT" else run_gemini_web_path
             limit = max_files.value()
             remaining = None if limit <= 0 else limit
             total_files = 0
@@ -7870,8 +7912,8 @@ class ToolkitGUI(QMainWindow):
                 self._check_stop()
                 if remaining is not None and remaining <= 0:
                     break
-                logwrite(f"Gemini Web input: {input_path}")
-                result = run_gemini_web_path(
+                logwrite(f"{provider} Web input: {input_path}")
+                result = runner(
                     str(input_path),
                     max_files=remaining,
                     max_lines_per_batch=max_lines.value(),
@@ -7886,7 +7928,7 @@ class ToolkitGUI(QMainWindow):
                     retry_count=retries.value(),
                     log=lambda msg: logwrite(msg),
                     stop_requested=self._stop_event.is_set,
-                    progress=lambda done, total, path: progresswrite(done, total, f"Gemini Web {path.name}"),
+                    progress=lambda done, total, path: progresswrite(done, total, f"{provider} Web {path.name}"),
                 )
                 if not result.files:
                     logwrite(f"No untranslated PO files found in {input_path}.", "warn")
@@ -7975,7 +8017,7 @@ class ToolkitGUI(QMainWindow):
                 total_errors += len(errors)
                 if use_previous_files:
                     try:
-                        translated_po = load_po(po_path)
+                        translated_po = get_cached_po(po_path)
                         previous_file_context.extend(translated_po.entries)
                         if len(previous_file_context) > context_limit:
                             previous_file_context = previous_file_context[-context_limit:]
@@ -8001,14 +8043,21 @@ class ToolkitGUI(QMainWindow):
         def open_chrome(logwrite, progresswrite):
             progresswrite(0, 0, "Opening Chrome")
             save_web_config()
-            cmd = open_chrome_debug(cdp_url=cdp_edit.text().strip() or "http://localhost:9222", user_data_dir=DEFAULT_CHROME_USER_DATA_DIR)
+            provider = web_provider_name()
+            start_url = DEFAULT_CHATGPT_URL if provider == "ChatGPT" else DEFAULT_GEMINI_URL
+            cmd = open_chrome_debug(
+                cdp_url=cdp_edit.text().strip() or "http://localhost:9222",
+                user_data_dir=DEFAULT_CHROME_USER_DATA_DIR,
+                url=start_url,
+            )
             logwrite("Chrome opened with remote debugging.", "good")
-            logwrite("Login to Gemini in that Chrome window, then click Run Gemini Web.")
+            logwrite(f"Login to {provider} in that Chrome window, then click Run {provider} Web.")
             logwrite("Command: " + " ".join(str(x) for x in cmd))
             progresswrite(1, 1, "Chrome opened")
 
         mode_combo.currentIndexChanged.connect(lambda _idx: (api_key_toggle.setChecked(str(mode_combo.currentData()) == "api"), sync_mode_ui()))
         api_key_toggle.stateChanged.connect(lambda _state: sync_mode_ui())
+        chatgpt_web_toggle.stateChanged.connect(lambda _state: (sync_mode_ui(), save_web_config()))
         api_key_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_key", text.strip()))
         api_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_model", text.strip()))
         api_context_entries.valueChanged.connect(
@@ -8425,6 +8474,7 @@ def main() -> None:
     window = ToolkitGUI()
     _start_app_link_server(window)
     window.show()
+    QTimer.singleShot(0, window.start_initial_indexing)
     if initial_link:
         QTimer.singleShot(0, lambda value=initial_link: window.open_app_link(value))
     app.exec()

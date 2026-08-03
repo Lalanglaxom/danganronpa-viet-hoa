@@ -19,6 +19,9 @@ msgid ""
 "Academy...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Vậy là mình đã lên đến <CLT><CLT 3>tầng 5<CLT><CLT 4> của Học viện\n"
+"Hope's Peak...\n"
+"<CLT>"
 
 #. <CLT 4>今度は、この５階が開放されたって事だな…
 #. <CLT>
@@ -27,6 +30,8 @@ msgid ""
 "<CLT 4>The 5th floor has been opened up to us...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tầng 5 giờ đã được mở cho bọn mình...\n"
+"<CLT>"
 
 #. <CLT 4>それにしても、この階…
 #. 今までの階と比べても異質っていうか…
@@ -37,11 +42,14 @@ msgid ""
 "seen up till now.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mà tầng này khác hẳn tất cả những tầng bọn mình đã\n"
+"thấy từ trước đến giờ.\n"
+"<CLT>"
 
 #. なんだか…嫌な雰囲気だな…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "For some reason it feels...unpleasant."
-msgstr ""
+msgstr "Không hiểu sao... nơi này khiến mình thấy khó chịu."
 
 #. なんか、この階って…
 #. 他の階とちょっと違うよね…
@@ -50,6 +58,8 @@ msgid ""
 "This floor feels different compared to all the others.\n"
 "I'm not sure what it is..."
 msgstr ""
+"Tầng này có cảm giác khác hẳn những tầng còn lại.\n"
+"Mình cũng không rõ là khác ở điểm nào..."
 
 #. なんか…意味でもあるのかな…
 #. 変な意味じゃないといいんだけど…
@@ -58,6 +68,8 @@ msgid ""
 "Is there some reason for that? I hope it's not\n"
 "anything too...creepy."
 msgstr ""
+"Liệu có lý do gì không nhỉ? Mong là không phải chuyện\n"
+"gì quá... rùng rợn."
 
 #. <CLT 23>「ガチャ、ガチャ…」
 #. <CLT>
@@ -87,6 +99,8 @@ msgid ""
 "<CLT 4>We came all this way, just to be denied here.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Bọn mình đi xa đến tận đây, vậy mà vẫn bị chặn lại.\n"
+"<CLT>"
 
 #. <CLT 4>廊下の表札には、<CLT><CLT 3>生物室<CLT><CLT 4>って、
 #. 書いてあるけど…
@@ -96,11 +110,13 @@ msgid ""
 "<CLT 4>The sign in the hall says <CLT><CLT 3>Bio Lab<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tấm biển ngoài hành lang ghi là <CLT><CLT 3>Phòng Thí nghiệm Sinh học<CLT><CLT 4>.\n"
+"<CLT>"
 
 #. 閉ざされた生物室か…
 msgctxt "0011 | MAKOTO NAEGI"
 msgid "A bio lab, that we're forbidden from seeing into."
-msgstr ""
+msgstr "Một phòng thí nghiệm sinh học mà bọn mình bị cấm vào."
 
 #. <CLT 4>…なんかＢ級ホラーテイストだな。
 #. <CLT>
@@ -110,6 +126,9 @@ msgid ""
 "horror movie...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nghe cứ như trong một bộ phim kinh dị hạng B cũ\n"
+"kỹ vậy...\n"
+"<CLT>"
 
 #. どうやら、これで一通りは見終わったみたいだ。
 #. だけど…
@@ -117,7 +136,7 @@ msgctxt "0013 | MAKOTO NAEGI"
 msgid ""
 "I guess I've seen what there is to see up here for\n"
 "now."
-msgstr ""
+msgstr "Chắc mình đã xem hết những gì có thể xem ở đây rồi."
 
 #. <CLT 4>今回も…訳のわからない発見ばっかりだな…
 #. <CLT>
@@ -127,6 +146,9 @@ msgid ""
 "real sense.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng lần này nữa... những gì mình tìm thấy vẫn chẳng\n"
+"có gì thật sự hợp lý cả.\n"
+"<CLT>"
 
 #. いったん、<CLT 3>食堂<CLT>に戻って、
 #. みんなの意見を聞いてみるか…
@@ -135,3 +157,5 @@ msgid ""
 "I need to head back to the <CLT 3>dining hall<CLT> and find out\n"
 "what the others turned up."
 msgstr ""
+"Mình nên quay lại <CLT 3>nhà ăn<CLT> và xem những người khác\n"
+"đã phát hiện được gì."

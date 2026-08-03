@@ -23,6 +23,8 @@ msgid ""
 "<CLT 4>What Kyoko told me yesterday...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những gì Kyoko nói với mình hôm qua...\n"
+"<CLT>"
 
 #. <CLT 4>あれって…
 #. 一体、なんだったんだろう…？
@@ -32,11 +34,13 @@ msgid ""
 "<CLT 4>What the heck did it mean...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Rốt cuộc lời đó có ý nghĩa gì...?\n"
+"<CLT>"
 
 #. 戦刃むくろ…
 msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid "Mukuro Ikusaba..."
-msgstr ""
+msgstr "Mukuro Ikusaba..."
 
 #. この学園に潜む１６人目の高校生…
 msgctxt "0005 | KYOUKO KIRIGIRI"
@@ -44,26 +48,28 @@ msgid ""
 "The sixteenth student, lying hidden somewhere in this\n"
 "school..."
 msgstr ""
+"Học sinh thứ mười sáu, đang ẩn náu đâu đó trong\n"
+"ngôi trường này..."
 
 #. “超高校級の絶望”と呼ばれる女子高校生…
 msgctxt "0006 | KYOUKO KIRIGIRI"
 msgid "The one they call the Ultimate Despair..."
-msgstr ""
+msgstr "Người được gọi là Siêu Học Sinh Cấp THPT Tuyệt Vọng..."
 
 #. 戦刃むくろに気を付けて。
 msgctxt "0007 | KYOUKO KIRIGIRI"
 msgid "Watch out for her."
-msgstr ""
+msgstr "Hãy đề phòng cô ta."
 
 #. あのさ、霧切さん…
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Um, Kyoko...?"
-msgstr ""
+msgstr "Ừm, Kyoko...?"
 
 #. 何も答えないわよ…
 msgctxt "0009 | KYOUKO KIRIGIRI"
 msgid "I'm not going to say anything."
-msgstr ""
+msgstr "Tôi sẽ không nói gì đâu."
 
 #. …え？
 msgctxt "0010 | MAKOTO NAEGI"
@@ -73,7 +79,7 @@ msgstr "...Hả?"
 #. 何も答えられない…
 msgctxt "0011 | KYOUKO KIRIGIRI"
 msgid "I can't say anything..."
-msgstr ""
+msgstr "Tôi không thể nói gì được..."
 
 #. <CLT 4>霧切さんは目を細めて警戒していた。
 #. その視線の先には…
@@ -83,6 +89,8 @@ msgid ""
 "<CLT 4>Kyoko narrowed her eyes.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Kyoko nheo mắt lại.\n"
+"<CLT>"
 
 #. <CLT 4>…監視カメラ。
 #. <CLT>
@@ -91,11 +99,13 @@ msgid ""
 "<CLT 4>Her gaze darted up to the surveillance camera...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ánh mắt cô ấy liếc lên camera giám sát...\n"
+"<CLT>"
 
 #. …わかるでしょう？
 msgctxt "0014 | KYOUKO KIRIGIRI"
 msgid "...You understand why, right?"
-msgstr ""
+msgstr "...Cậu hiểu lý do rồi chứ?"
 
 #. <CLT 4>つまり、黒幕に知られるとまずいほどの、
 #. <CLT><CLT 3>重要な情報<CLT><CLT 4>…って事なのか？
@@ -106,6 +116,9 @@ msgid ""
 "was important<CLT><CLT 4>. The mastermind couldn't find out.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cô ấy muốn nói với mình rằng dù đó là gì, <CLT><CLT 3>nó\n"
+"rất quan trọng<CLT><CLT 4>. Kẻ chủ mưu không được phép biết.\n"
+"<CLT>"
 
 #. <CLT 4>だったら、霧切さんは、
 #. そんな情報をどこで手に入れたんだよ…？
@@ -116,11 +129,14 @@ msgid ""
 "could be that important...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng Kyoko đã lấy được thông tin quan trọng đến\n"
+"mức đó bằng cách nào...?\n"
+"<CLT>"
 
 #. この話は…これで終わりよ…
 msgctxt "0017 | KYOUKO KIRIGIRI"
 msgid "We're finished here."
-msgstr ""
+msgstr "Chuyện ở đây kết thúc rồi."
 
 #. <CLT 4>そう言って、霧切さんは一方的に
 #. 会話を打ち切ってしまった。
@@ -131,6 +147,9 @@ msgid ""
 "to an end.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cô ấy nói rất rõ rằng cuộc trò chuyện của bọn mình\n"
+"đã kết thúc.\n"
+"<CLT>"
 
 #. <CLT 4>いつも通り、詳しい話は
 #. 何もしてくれないまま…
@@ -141,6 +160,9 @@ msgid ""
 "better than before...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Và như mọi khi, mình vẫn chẳng hiểu thêm được\n"
+"gì so với trước...\n"
+"<CLT>"
 
 #. ねぇ、霧切さん…
 msgctxt "0020 | MAKOTO NAEGI"
@@ -161,6 +183,9 @@ msgid ""
 "doesn't feel like talking...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cô ấy còn chẳng nhìn mình. Có vẻ cô ấy thật sự\n"
+"không muốn nói chuyện...\n"
+"<CLT>"
 
 #. <CLT 4>室内なのに桜の木が植えられている。
 #. しかも満開だ。
@@ -171,16 +196,19 @@ msgid ""
 "cherry tree planted here. And it's in full bloom.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Dù căn phòng này hoàn toàn kín, ở đây lại trồng\n"
+"một cây anh đào. Hơn nữa, nó còn đang nở rộ.\n"
+"<CLT>"
 
 #. なかなか風情があるわね…
 msgctxt "0024 | KYOUKO KIRIGIRI"
 msgid "It's quite elegant."
-msgstr ""
+msgstr "Khá là tao nhã."
 
 #. 風情…って言うのかな…？
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "This is what you consider elegant...?"
-msgstr ""
+msgstr "Cậu cho thế này là tao nhã sao...?"
 
 #. 私は海外の暮らしが長かったから…
 #. こういう日本的な風景が新鮮なの…
@@ -189,6 +217,8 @@ msgid ""
 "I lived overseas for a long time, so this kind of\n"
 "Japanese-style scenery is refreshing."
 msgstr ""
+"Tôi đã sống ở nước ngoài rất lâu, nên khung cảnh\n"
+"đậm chất Nhật Bản thế này khiến tôi thấy mới mẻ."
 
 #. <CLT 4>間違った日本的…だけどね…
 #. <CLT>
@@ -198,6 +228,9 @@ msgid ""
 "place?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng xét tình cảnh hiện tại, chẳng phải nó hơi...\n"
+"lạc lõng sao?\n"
+"<CLT>"
 
 #. <CLT 4>室内なのに桜の木が植えられている。
 #. しかも満開だ。
@@ -208,16 +241,19 @@ msgid ""
 "cherry tree planted here. And it's in full bloom.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Dù căn phòng này hoàn toàn kín, ở đây lại trồng\n"
+"một cây anh đào. Hơn nữa, nó còn đang nở rộ.\n"
+"<CLT>"
 
 #. なかなか風情があるわね…
 msgctxt "0029 | KYOUKO KIRIGIRI"
 msgid "It's quite elegant."
-msgstr ""
+msgstr "Khá là tao nhã."
 
 #. 風情…って言うのかな…？
 msgctxt "0030 | MAKOTO NAEGI"
 msgid "This is what you consider elegant...?"
-msgstr ""
+msgstr "Cậu cho thế này là tao nhã sao...?"
 
 #. 私は海外の暮らしが長かったから…
 #. こういう日本的な風景が新鮮なの…
@@ -226,6 +262,8 @@ msgid ""
 "I lived overseas for a long time, so this kind of\n"
 "Japanese-style scenery is refreshing."
 msgstr ""
+"Tôi đã sống ở nước ngoài rất lâu, nên khung cảnh\n"
+"đậm chất Nhật Bản thế này khiến tôi thấy mới mẻ."
 
 #. <CLT 4>間違った日本的…だけどね…
 #. <CLT>
@@ -235,6 +273,9 @@ msgid ""
 "place?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nhưng xét tình cảnh hiện tại, chẳng phải nó hơi...\n"
+"lạc lõng sao?\n"
+"<CLT>"
 
 #. <CLT 4>木製の<CLT><CLT 3>ロッカー<CLT><CLT 4>がある…
 #. <CLT>
@@ -243,6 +284,8 @@ msgid ""
 "<CLT 4>There's a bunch of <CLT><CLT 3>wooden lockers<CLT><CLT 4> in here.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ở đây có một dãy <CLT><CLT 3>tủ gỗ<CLT><CLT 4>.\n"
+"<CLT>"
 
 #. <CLT 4>それぞれのロッカーに木の札が差し込まれている。
 #. なんだか、銭湯を思い出すな…
@@ -253,6 +296,9 @@ msgid ""
 "old-school public bathhouses...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Những chiếc tủ gỗ và chìa khóa khiến mình nhớ đến\n"
+"các nhà tắm công cộng kiểu cổ xưa...\n"
+"<CLT>"
 
 #. <CLT 4>鎧が飾られている…
 #. ジャパニーズスタイルだな…
@@ -263,6 +309,9 @@ msgid ""
 "Japanese.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một bộ giáp đang được trưng bày. Đúng là\n"
+"đậm chất Nhật Bản.\n"
+"<CLT>"
 
 #. <CLT 4>巻き藁がある…
 #. 稽古に使うんだろうな…
@@ -273,6 +322,9 @@ msgid ""
 "use it for training here, too...?\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đây là một trụ rơm dùng để luyện kiếm. Chẳng lẽ\n"
+"ở đây họ cũng dùng nó để tập luyện sao...?\n"
+"<CLT>"
 
 #. <CLT 4>遠くに的が見える…
 #. ボクって目はいいんだ。
@@ -283,6 +335,9 @@ msgid ""
 "proud of my eyesight!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tấm bia kia có vẻ ở khá xa. Phải nói là mình\n"
+"khá tự hào về thị lực của mình!\n"
+"<CLT>"
 
 #. はい
 msgctxt "0038 | CHOICE/RE:ACT"
@@ -311,3 +366,5 @@ msgid ""
 "<CLT 4>I don't think I've seen everything there is to see...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Mình không nghĩ là đã xem hết mọi thứ ở đây...\n"
+"<CLT>"
