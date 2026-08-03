@@ -47,7 +47,7 @@ msgid ""
 "poison was in the protein can..."
 msgstr ""
 "Vậy nên bột protein nằm trong lọ thuốc độc, và thuốc\n"
-"độc nằm trong hộp protein..."
+"độc nằm trong bình protein..."
 
 #. そして、そう考えれば、
 #. 犯人が大神に毒薬を飲ませた方法も見えてくるんだ。
@@ -418,7 +418,8 @@ msgid ""
 "be...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bằng chứng vạch mặt kẻ đã tráo đổi chúng... Chắc chắn là...\n"
+"<CLT 4>Bằng chứng vạch mặt kẻ đã tráo đổi chúng... \n"
+"Chắc chắn là...\n"
 "<CLT>"
 
 #. <CLT 4>入れ替えをした人物を示す証拠って…
@@ -430,7 +431,8 @@ msgid ""
 "be...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bằng chứng vạch mặt kẻ đã tráo đổi chúng... Chắc chắn là...\n"
+"<CLT 4>Bằng chứng vạch mặt kẻ đã tráo đổi chúng... \n"
+"Chắc chắn là...\n"
 "<CLT>"
 
 #. <CLT 4>化学室の棚の前に残されていた…
@@ -878,7 +880,7 @@ msgstr ""
 #. 親友…朝日奈はその関係を利用したんだよ！
 msgctxt "0105 | BYAKUYA TOGAMI"
 msgid "Hina used that trust to kill her!"
-msgstr "Hina đã lợi dụng điều đó để giết cô ta!"
+msgstr "Hina đã lợi dụng niềm tin đó để giết cô ta!"
 
 #. そうする事で、被害者である大神を騙し、
 #. さらには俺達をも騙そうとしたんだ！
@@ -914,7 +916,9 @@ msgstr "Hina... có thật là vậy không?"
 #. もし本当なら…
 msgctxt "0110 | MAKOTO NAEGI"
 msgid "Did you really...kill Sakura? And if you did..."
-msgstr "Cậu thực sự đã... giết Sakura sao? Và nếu đúng là vậy..."
+msgstr ""
+"Cậu thực sự đã... giết Sakura sao? \n"
+"Và nếu đúng là vậy..."
 
 #. どうして…そんな事をしたんだよ…ッ！？
 msgctxt "0111 | MAKOTO NAEGI"
@@ -931,14 +935,14 @@ msgstr "..."
 msgctxt "0113 | AOI ASAHINA"
 msgid "I found her, there in the rec room... She was hurt."
 msgstr ""
-"Lúc tớ tìm thấy cậu ấy ở trong phòng giải trí...\n"
-"Cậu ấy đang bị thương."
+"Lúc tui tìm thấy cậu ấy ở trong phòng giải\n"
+"trí... Cậu ấy đang bị thương."
 
 #. さくらちゃんから頼まれたんだ…
 #. プロテインを持って来て欲しいって…
 msgctxt "0114 | AOI ASAHINA"
 msgid "She asked me to bring her that protein drink."
-msgstr "Cậu ấy đã nhờ tớ mang thức uống protein đó đến..."
+msgstr "Cậu ấy đã nhờ tui mang thức uống protein đó đến..."
 
 #. だけど…化学室にプロテインを取りに行った時…
 #. ふと思い付いちゃったんだよ…
@@ -947,8 +951,8 @@ msgid ""
 "But...when I went to get the powder from the chem lab,\n"
 "it just...occurred to me all of a sudden."
 msgstr ""
-"Nhưng mà... lúc tớ đến phòng hóa học để lấy bột...\n"
-"tự nhiên ý định đó chợt lóe lên trong đầu tớ."
+"Nhưng mà... lúc tui đến phòng hóa học để lấy bột...\n"
+"tự nhiên ý định đó chợt lóe lên trong đầu tui."
 
 #. 今なら殺せる…そう思ったんだな？
 msgctxt "0116 | BYAKUYA TOGAMI"
@@ -1105,8 +1109,8 @@ msgid ""
 "Th-That doesn't matter! Just cuz I'm guilty, that\n"
 "means I have to tell you everything!?"
 msgstr ""
-"C-Chuyện đó không quan trọng! Cứ cho là tớ có tội đi, nhưng\n"
-"điều đó có nghĩa là tớ phải khai tuốt với các cậu chắc!?"
+"C-Chuyện đó không quan trọng! Cứ cho là tui có tội đi, nhưng\n"
+"điều đó có nghĩa là tui phải khai tuốt với các cậu chắc!?"
 
 #. そういう訳じゃないけど…
 #. でも、あなたが話せない理由は気になるわね…
@@ -1205,7 +1209,7 @@ msgstr ""
 #. …気付かなかった？
 msgctxt "0149 | KYOUKO KIRIGIRI"
 msgid "...You didn't notice?"
-msgstr "...Cậu không nhận ra á?"
+msgstr "...Cậu không nhận ra sao?"
 
 #. そ、そうだよ…
 #. そうなんだから仕方ないじゃん…
@@ -1294,7 +1298,9 @@ msgstr "C-Chuyện này..."
 #. そこから毒薬を取り出したんだよ。
 msgctxt "0162 | AOI ASAHINA"
 msgid "Right away I went to section C, and got the poison."
-msgstr "Đầu tiên tớ đi thẳng đến ngăn C, và lấy chất độc ra."
+msgstr ""
+"Đầu tiên tui đi thẳng đến ngăn C, và lấy chất\n"
+"độc ra."
 
 #. 棚の前に粉末をまき散らしたのは、その時？
 msgctxt "0163 | KYOUKO KIRIGIRI"
@@ -1312,8 +1318,8 @@ msgid ""
 "Y-Yeah...when I opened the bottle, I dropped it like\n"
 "an idiot."
 msgstr ""
-"Đ-Đúng vậy... lúc lấy chất độc từ trên kệ ra, tớ đã\n"
-"bất cẩn làm rơi lọ thuốc..."
+"Đ-Đúng vậy... lúc lấy chất độc từ trên kệ ra,\n"
+"tui đã làm rớt nó như một đứa ngốc..."
 
 #. わかったわ。続けて…
 msgctxt "0165 | KYOUKO KIRIGIRI"
@@ -1327,8 +1333,8 @@ msgid ""
 "So then I moved to section A and got the protein\n"
 "powder, and that's where I switched them."
 msgstr ""
-"Tiếp theo... tớ qua ngăn A để lấy protein... rồi\n"
-"tráo đổi chúng ở đó..."
+"Tiếp theo... tui qua ngăn A để lấy protein...\n"
+"rồi tráo đổi chúng ở đó..."
 
 #. その薬の入れ替えが終わった後は…
 msgctxt "0167 | AOI ASAHINA"
@@ -1342,8 +1348,8 @@ msgid ""
 "...I took the protein can that had the poison in it\n"
 "and left the room."
 msgstr ""
-"Tớ... cầm bình protein có chứa chất độc bên trong\n"
-"rồi rời khỏi phòng thí nghiệm."
+"Tui... cầm bình protein có chứa chất độc bên\n"
+"trong rồi rời khỏi phòng thí nghiệm."
 
 #. その時…プロテインを入れた毒薬のビンを、
 #. うっかりＡの棚に戻しちゃったせいで…
@@ -1352,7 +1358,7 @@ msgid ""
 "But I accidentally put the bottle filled with protein\n"
 "powder back on the wrong shelf."
 msgstr ""
-"Nhưng tớ lại lỡ tay đặt cái lọ đựng bột protein\n"
+"Nhưng tui lại lỡ tay đặt cái lọ đựng bột protein\n"
 "lên nhầm kệ."
 
 #. そのせいで…全部バレちゃって…
@@ -1473,6 +1479,6 @@ msgid ""
 "<CLT 4>Until I uncover the full truth of this case!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cho đến khi mình vạch trần được toàn bộ sự\n"
+"<CLT 4>Cho đến khi tớ vạch trần được toàn bộ sự\n"
 "thật của vụ án này!\n"
 "<CLT>"

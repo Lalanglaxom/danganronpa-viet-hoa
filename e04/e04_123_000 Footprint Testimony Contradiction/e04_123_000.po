@@ -511,12 +511,12 @@ msgid ""
 "this bottle of poison?"
 msgstr ""
 "Tại sao một mảnh thủy tinh từ cửa sổ lại rơi vào\n"
-"trong lọ độc dược này?"
+"trong lọ chất độc này?"
 
 #. …それの何がおかしいの！？
 msgctxt "0065 | TOUKO FUKAWA"
 msgid "What's so strange about that!?"
-msgstr "Thì có gì mà lạ chứ!?"
+msgstr "Thế có gì mà lạ chứ!?"
 
 #. 化学室のＡの棚
 msgctxt "0066 | CHOICE/RE:ACT"
@@ -571,8 +571,8 @@ msgid ""
 "Hina said she put the bottle of poison in section C of\n"
 "the shelf in the chem lab...right?"
 msgstr ""
-"Hina nói rằng cậu ấy đã đặt lọ độc dược vào ngăn C của\n"
-"chiếc kệ trong phòng hóa học... phải không?"
+"Hina nói rằng cậu ấy đã đặt lọ chất độc vào ngăn C của\n"
+"cái kệ trong phòng hóa học... phải không?"
 
 #. 朝日奈さんはそんな証言をしたかしら？
 #. よく思い出して見て…
@@ -646,7 +646,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Vị trí mà lọ chất độc đáng lẽ phải nằm ở đó khi\n"
-"mình đập vỡ cửa sổ phòng giải trí là ở đâu...?\n"
+"mình đập vỡ cửa sổ phòng giải trí là đâu...?\n"
 "<CLT>"
 
 #. <CLT 4>さっき朝日奈さんが言ってたのは…
@@ -672,7 +672,7 @@ msgstr ""
 #. え…えっと……
 msgctxt "0082 | AOI ASAHINA"
 msgid "Uh...umm..."
-msgstr "Ơ... ừm..."
+msgstr "Ờ... ừm..."
 
 #. それなのに、あの毒薬のビンの中に、
 #. 娯楽室の窓ガラスの破片が入ってたって事は…
@@ -858,7 +858,7 @@ msgstr "Không phải tớ."
 #. 同じく！
 msgctxt "0106 | TOUKO FUKAWA"
 msgid "Same here!"
-msgstr "Tôi cũng vậy!"
+msgstr "Đây cũng vậy!"
 
 #. わ、私も…蹴飛ばしてないけど…
 msgctxt "0107 | AOI ASAHINA"
@@ -912,5 +912,6 @@ msgid ""
 "the rec room *after* it was opened!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có bằng chứng chứng minh rằng ai đó đã mang cái bình protein vào phòng giải trí *sau* khi nó được mở ra!\n"
+"<CLT 4>Có bằng chứng chứng minh rằng ai đó đã mang cái bình\n"
+"protein vào phòng giải trí *sau* khi nó được mở ra!\n"
 "<CLT>"
