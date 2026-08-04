@@ -106,7 +106,7 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 5. Four compact, editable wrap presets are available in Search, PO Viewer, and duplicate/diff views. Each Wrap button shows only its soft-cut value. Preset 1 starts at the base-64 values (`58/64`, 2 cuts), and all four presets can be edited in the Line Wrap tab. `All` wraps the whole current file with the active preset.
 6. `Preset Replace` applies every enabled rule from `Rules & Replace` to the selected rows, or the current row when nothing is selected. Search saves immediately; PO Viewer and duplicate/diff views keep their normal undo/save flow.
 7. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
-8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
+8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. Search also shows live visible-character counts for each English and Vietnamese line. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
 9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.
 10. Click `Shortcuts` beside Settings to assign wrap and previous/next-file actions. Assignments may be a three-key chord such as `Ctrl+Shift+1`, or a sequence of up to three chords. Direct one-chord wrap keys remain repeatable while their modifier is held. Reset restores `Shift+1/2/3/4`, `Shift+Return`, `Alt+Up`, and `Alt+Down`. Hold `Ctrl` and press `1/2/3` repeatedly to apply PO Viewer suggestions; `Alt+0` refreshes them. `Ctrl+R` applies preset replacements, and `Ctrl+G` runs Gemini translation. Parsed files and the suggestion index are cached, and suggestion indexing runs in the background.
 
@@ -290,18 +290,39 @@ Direct Gemini API mode is optional and requires:
 pip install google-genai
 ```
 
-Interactive Gemini API translation in PO Viewer, Search, duplicate/diff views,
-and the Gemini API file runner sends one current PO entry per request when
-`Previous context` is above zero. The Gemini tab exposes this setting from 0 to
-200, with a default of 20. Each request includes the immediately preceding
-English `source_en` sentences, ordered oldest to newest, plus any Vietnamese
-translations already available for continuity. Accepted translations become
-context for following requests. Context stays inside the current PO file by
-default. Turn on `Include previous files` beside the compact context count only
-when earlier PO files should fill unused context slots. Set `Previous context`
-to 0 to disable continuity and keep normal `Max entries / batch` requests.
+The AI Translation tab has two independent Gemini API profiles:
 
-Gemini API translation treats the current English `source_en` as the absolute source of truth. Extracted Japanese comments are cleaned and sent only as a compact ambiguity hint; the prompt explicitly forbids Japanese from overriding, adding to, shortening, or changing the English. Previous English/Vietnamese entries remain continuity context only. Direct API requests use minified order-based JSON and expect `{"t":[...]}`, avoiding repeated schemas/instructions and fragile echoed UIDs. Legacy UID-based JSON remains supported for exported manual jobs.
+- **Single-entry API** is used by AI buttons in PO Viewer, Search, and
+  duplicate/diff views. Each selected entry is one request. Its default context
+  is 3 previous English/Vietnamese entries and its default inter-request delay
+  is 0 seconds.
+- **Mass-translation API** is used only by `Run Gemini API`. It sends 40 current
+  entries per request by default. Up to 3 prior translated entries are sent once
+  before each batch, rather than repeating the same context for every entry.
+
+Both profiles have separate model, timeout, context, cross-file context, delay,
+thinking, and maximum-output settings. The API key is shared. Set previous
+context to 0 to disable continuity. `Include previous files` is opt-in for each
+profile.
+
+Interactive Gemini API requests run on background workers, so Search, PO Viewer,
+and duplicate/diff views remain responsive while an entry is translating. Each
+request timeout defaults to 90 seconds. A stalled request ends with a
+visible error instead of blocking the interface; Stop is checked between
+requests/batches and during configured delays.
+
+Gemini API translation treats the current English `source_en` as the absolute
+source of truth. Extracted Japanese comments are cleaned and sent only as a
+compact ambiguity hint; the prompt explicitly forbids Japanese from overriding,
+adding to, shortening, or changing the English. Previous English/Vietnamese
+entries remain continuity context only. Direct API requests use minified
+order-based JSON plus a structured-output schema requiring `{"t":[...]}` with
+the same item count. Thinking defaults to off for Gemini 2.5 and the lowest
+supported level for Gemini 3 (`minimal` for Flash/Lite, `low` for Pro).
+`Max output tokens: Auto` adds a source-sized
+safety cap. The GUI reports request, input, output, thinking, cached, and total
+token usage returned by the API. Legacy UID-based JSON remains supported for
+exported manual jobs.
 
 Search, PO Viewer, and duplicate/diff views keep up to 500 unified undo actions.
 `Ctrl+Z` is routed through that history before the focused editor consumes it, so

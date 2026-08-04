@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import threading
 import time
 import unicodedata
 from dataclasses import dataclass
@@ -45,6 +46,48 @@ class TranslationError:
     uid: str
     msgctxt: str
     reason: str
+
+
+@dataclass(slots=True)
+class GeminiApiUsage:
+    """Accumulated token metadata returned by Gemini API requests."""
+
+    requests: int = 0
+    prompt_tokens: int = 0
+    candidate_tokens: int = 0
+    thought_tokens: int = 0
+    cached_tokens: int = 0
+    total_tokens: int = 0
+
+    def add(self, other: "GeminiApiUsage") -> None:
+        self.requests += other.requests
+        self.prompt_tokens += other.prompt_tokens
+        self.candidate_tokens += other.candidate_tokens
+        self.thought_tokens += other.thought_tokens
+        self.cached_tokens += other.cached_tokens
+        self.total_tokens += other.total_tokens
+
+    def as_dict(self) -> dict[str, int]:
+        return {
+            "requests": self.requests,
+            "prompt_tokens": self.prompt_tokens,
+            "candidate_tokens": self.candidate_tokens,
+            "thought_tokens": self.thought_tokens,
+            "cached_tokens": self.cached_tokens,
+            "total_tokens": self.total_tokens,
+        }
+
+    def summary(self) -> str:
+        return " | ".join(
+            [
+                f"requests={self.requests}",
+                f"input={self.prompt_tokens}",
+                f"output={self.candidate_tokens}",
+                f"thinking={self.thought_tokens}",
+                f"cached={self.cached_tokens}",
+                f"total={self.total_tokens}",
+            ]
+        )
 
 
 def _clean_prompt(prompt: str | None = None) -> str:
@@ -511,6 +554,169 @@ def apply_response_to_file(po_path: str | Path, response: str | Path | dict[str,
     return count, errors
 
 
+def _api_response_schema(entry_count: int) -> dict[str, Any]:
+    """Minimal structured-output schema for order-based translation results."""
+    count = max(1, int(entry_count))
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "t": {
+                "type": "array",
+                "description": "Vietnamese translations for each request entry, in exactly the same order.",
+                "items": {"type": "string"},
+                "minItems": count,
+                "maxItems": count,
+            }
+        },
+        "required": ["t"],
+    }
+
+
+def _auto_max_output_tokens(payload: Mapping[str, Any]) -> int:
+    """Return a generous safety cap without paying for unused capacity."""
+    entries = [item for item in payload.get("entries", []) if isinstance(item, Mapping)]
+    source_chars = sum(len(str(item.get("source_en") or "")) for item in entries)
+    # Vietnamese can tokenize less compactly than English. This cap is purposely
+    # generous; it only prevents runaway output and does not reserve/bill tokens.
+    return min(65536, max(256, source_chars * 2 + max(1, len(entries)) * 96))
+
+
+def _usage_int(metadata: Any, snake_name: str, camel_name: str) -> int:
+    value: Any = None
+    if isinstance(metadata, Mapping):
+        value = metadata.get(snake_name, metadata.get(camel_name))
+    else:
+        value = getattr(metadata, snake_name, None)
+        if value is None:
+            value = getattr(metadata, camel_name, None)
+    try:
+        return max(0, int(value or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def gemini_usage_from_response(response: Any) -> GeminiApiUsage:
+    metadata = getattr(response, "usage_metadata", None)
+    if metadata is None:
+        metadata = getattr(response, "usageMetadata", None)
+    if metadata is None:
+        return GeminiApiUsage(requests=1)
+    usage = GeminiApiUsage(
+        requests=1,
+        prompt_tokens=_usage_int(metadata, "prompt_token_count", "promptTokenCount"),
+        candidate_tokens=_usage_int(metadata, "candidates_token_count", "candidatesTokenCount"),
+        thought_tokens=_usage_int(metadata, "thoughts_token_count", "thoughtsTokenCount"),
+        cached_tokens=_usage_int(metadata, "cached_content_token_count", "cachedContentTokenCount"),
+        total_tokens=_usage_int(metadata, "total_token_count", "totalTokenCount"),
+    )
+    if not usage.total_tokens:
+        usage.total_tokens = usage.prompt_tokens + usage.candidate_tokens + usage.thought_tokens
+    return usage
+
+
+def _enum_text(value: Any) -> str:
+    if value is None:
+        return ""
+    raw = getattr(value, "value", value)
+    return str(raw).strip()
+
+
+def _gemini_response_diagnostic(
+    response: Any,
+    *,
+    returned: int | None = None,
+    mapped: int | None = None,
+    expected: int | None = None,
+) -> str:
+    """Return a compact, non-content diagnostic for incomplete API output."""
+    parts: list[str] = []
+    prompt_feedback = getattr(response, "prompt_feedback", None)
+    if prompt_feedback is None:
+        prompt_feedback = getattr(response, "promptFeedback", None)
+    block_reason = _enum_text(getattr(prompt_feedback, "block_reason", None))
+    if not block_reason:
+        block_reason = _enum_text(getattr(prompt_feedback, "blockReason", None))
+    if block_reason:
+        parts.append(f"block_reason={block_reason}")
+
+    candidates = getattr(response, "candidates", None)
+    first_candidate = candidates[0] if isinstance(candidates, (list, tuple)) and candidates else None
+    if first_candidate is not None:
+        finish_reason = _enum_text(getattr(first_candidate, "finish_reason", None))
+        if not finish_reason:
+            finish_reason = _enum_text(getattr(first_candidate, "finishReason", None))
+        if finish_reason:
+            parts.append(f"finish_reason={finish_reason}")
+        finish_message = str(
+            getattr(first_candidate, "finish_message", None)
+            or getattr(first_candidate, "finishMessage", None)
+            or ""
+        ).strip()
+        if finish_message:
+            finish_message = re.sub(r"\s+", " ", finish_message)
+            parts.append(f"finish_message={finish_message[:180]}")
+
+    if returned is not None:
+        parts.append(f"items={returned}")
+    if mapped is not None and expected is not None:
+        parts.append(f"mapped={mapped}/{expected}")
+    return "; ".join(parts)
+
+
+def _thinking_config(types: Any, model: str, mode: str) -> Any | None:
+    """Build model-family-correct thinking controls.
+
+    Gemini 2.5 uses token budgets. Gemini 3 uses named levels and cannot be
+    guaranteed fully off. Flash/Flash-Lite models use ``minimal`` for the
+    optimized "off" setting; Pro models fall back to their lowest supported
+    ``low`` level because they do not accept ``minimal``.
+    Unknown model families keep their server default for compatibility.
+    """
+    normalized_model = (model or "").strip().casefold()
+    normalized_mode = (mode or "off").strip().casefold()
+    if normalized_mode not in {"off", "minimal", "low", "medium", "high", "dynamic"}:
+        normalized_mode = "off"
+    is_gemini_3 = bool(re.search(r"(?:^|-)gemini-3(?:[.-]|$)", normalized_model))
+    is_gemini_25 = "gemini-2.5" in normalized_model
+    if not is_gemini_3 and not is_gemini_25:
+        return None
+    try:
+        thinking_type = types.ThinkingConfig
+    except AttributeError as exc:
+        raise RuntimeError(
+            "The installed google-genai package is too old for thinking controls. "
+            "Update it with: pip install --upgrade google-genai"
+        ) from exc
+
+    if is_gemini_3:
+        if normalized_mode == "dynamic":
+            return None
+        if normalized_mode == "off":
+            level = "low" if "pro" in normalized_model else "minimal"
+        elif normalized_mode == "minimal" and "pro" in normalized_model:
+            level = "low"
+        else:
+            level = normalized_mode
+        return thinking_type(thinking_level=level)
+
+    if is_gemini_25:
+        if normalized_mode == "dynamic":
+            budget = -1
+        elif normalized_mode == "off":
+            # Gemini 2.5 Pro cannot fully disable thinking.
+            budget = 128 if "pro" in normalized_model else 0
+        else:
+            budget = {
+                "minimal": 512,
+                "low": 1024,
+                "medium": 8192,
+                "high": 24576,
+            }[normalized_mode]
+        return thinking_type(thinking_budget=budget)
+    return None
+
+
 class GeminiApiClient:
     """Optional Gemini API client.
 
@@ -520,7 +726,15 @@ class GeminiApiClient:
     with the ``prompt`` argument or the GUI Gemini API Prompt box.
     """
 
-    def __init__(self, api_key: str | None = None, model: str = "gemini-2.5-flash", prompt: str | None = None):
+    def __init__(
+        self,
+        api_key: str | None = None,
+        model: str = "gemini-2.5-flash",
+        prompt: str | None = None,
+        timeout_seconds: float = 90.0,
+        thinking_mode: str = "off",
+        max_output_tokens: int = 0,
+    ):
         import os
         try:
             from google import genai  # type: ignore
@@ -529,11 +743,33 @@ class GeminiApiClient:
             raise RuntimeError("Install google-genai to use GeminiApiClient: pip install google-genai") from exc
         resolved_key = api_key or os.environ.get("GEMINI_API_KEY")
         if not resolved_key:
-            raise RuntimeError("Gemini API key missing. Enter it in the Gemini Web tab or set GEMINI_API_KEY.")
-        self._client = genai.Client(api_key=resolved_key)
+            raise RuntimeError("Gemini API key missing. Enter it in the AI Translation tab or set GEMINI_API_KEY.")
+        try:
+            resolved_timeout = max(1.0, float(timeout_seconds))
+        except (TypeError, ValueError):
+            resolved_timeout = 90.0
+        timeout_ms = max(1, int(resolved_timeout * 1000))
+        try:
+            http_options = types.HttpOptions(timeout=timeout_ms)
+        except Exception as exc:
+            raise RuntimeError(
+                "The installed google-genai package cannot configure request timeouts. "
+                "Update it with: pip install --upgrade google-genai"
+            ) from exc
+        self._client = genai.Client(api_key=resolved_key, http_options=http_options)
         self._types = types
         self.model = model
         self.prompt = _clean_prompt(prompt)
+        self.timeout_seconds = resolved_timeout
+        self.thinking_mode = (thinking_mode or "off").strip().casefold()
+        try:
+            self.max_output_tokens = max(0, int(max_output_tokens))
+        except (TypeError, ValueError):
+            self.max_output_tokens = 0
+        self.last_usage = GeminiApiUsage()
+        self.total_usage = GeminiApiUsage()
+        self.last_response_diagnostic = ""
+        self._usage_lock = threading.Lock()
 
     def translate_payload(self, payload: dict[str, Any], prompt: str | None = None) -> dict[str, str]:
         expected_uids = [
@@ -542,18 +778,105 @@ class GeminiApiClient:
             if isinstance(item, Mapping) and str(item.get("uid") or "")
         ]
         active_prompt = _api_system_instruction(prompt or self.prompt)
-        response = self._client.models.generate_content(
-            model=self.model,
-            contents=build_api_prompt(payload),
-            config=self._types.GenerateContentConfig(
-                system_instruction=active_prompt,
-                response_mime_type="application/json",
-                temperature=0.1,
-            ),
+        timeout_seconds = max(0.001, float(getattr(self, "timeout_seconds", 90.0)))
+        configured_output_limit = max(0, int(getattr(self, "max_output_tokens", 0)))
+        output_limit = configured_output_limit or _auto_max_output_tokens(payload)
+        thinking = _thinking_config(
+            self._types,
+            str(getattr(self, "model", "")),
+            str(getattr(self, "thinking_mode", "off")),
         )
-        parsed = getattr(response, "parsed", None)
-        response_value: Any = parsed if isinstance(parsed, (dict, list)) else (getattr(response, "text", "") or "")
-        return parse_api_translation_response(response_value, expected_uids)
+        config_kwargs: dict[str, Any] = {
+            "system_instruction": active_prompt,
+            "response_mime_type": "application/json",
+            "response_schema": _api_response_schema(len(expected_uids)),
+            "max_output_tokens": output_limit,
+            "temperature": 0,
+        }
+        if thinking is not None:
+            config_kwargs["thinking_config"] = thinking
+        completed = threading.Event()
+        outcome: dict[str, Any] = {}
+
+        def request() -> None:
+            try:
+                outcome["response"] = self._client.models.generate_content(
+                    model=self.model,
+                    contents=build_api_prompt(payload),
+                    config=self._types.GenerateContentConfig(**config_kwargs),
+                )
+            except BaseException as exc:  # preserve the SDK's original exception for the caller
+                outcome["error"] = exc
+            finally:
+                completed.set()
+
+        request_thread = threading.Thread(target=request, name="gemini-api-request", daemon=True)
+        request_thread.start()
+        try:
+            if not completed.wait(timeout_seconds):
+                raise TimeoutError(
+                    f"Gemini API request timed out after {timeout_seconds:g} seconds. "
+                    "Check the connection, model name, and API status, or increase API timeout in the AI Translation tab."
+                )
+            error = outcome.get("error")
+            if isinstance(error, BaseException):
+                raise error
+            response = outcome.get("response")
+            if response is None:
+                raise RuntimeError("Gemini API returned no response object.")
+        except TimeoutError:
+            raise
+        except Exception as exc:
+            detail = str(exc).strip() or exc.__class__.__name__
+            if "timeout" in detail.casefold() or "timed out" in detail.casefold():
+                raise TimeoutError(
+                    f"Gemini API request timed out after {timeout_seconds:g} seconds. "
+                    "Check the connection, model name, and API status, or increase API timeout in the AI Translation tab."
+                ) from exc
+            raise RuntimeError(f"Gemini API request failed ({exc.__class__.__name__}): {detail}") from exc
+        try:
+            parsed = getattr(response, "parsed", None)
+        except Exception:
+            parsed = None
+        if parsed is not None and not isinstance(parsed, (dict, list)):
+            model_dump = getattr(parsed, "model_dump", None)
+            if callable(model_dump):
+                try:
+                    parsed = model_dump()
+                except Exception:
+                    parsed = None
+        usage = gemini_usage_from_response(response)
+        with getattr(self, "_usage_lock", threading.Lock()):
+            self.last_usage = usage
+            total_usage = getattr(self, "total_usage", None)
+            if not isinstance(total_usage, GeminiApiUsage):
+                total_usage = GeminiApiUsage()
+                self.total_usage = total_usage
+            total_usage.add(usage)
+        try:
+            response_text = getattr(response, "text", "") or ""
+        except Exception:
+            response_text = ""
+        response_value: Any = parsed if isinstance(parsed, (dict, list)) else response_text
+        try:
+            translations = parse_api_translation_response(response_value, expected_uids)
+        except Exception as exc:
+            diagnostic = _gemini_response_diagnostic(response, returned=0, mapped=0, expected=len(expected_uids))
+            self.last_response_diagnostic = diagnostic
+            detail = f" ({diagnostic})" if diagnostic else ""
+            raise RuntimeError(f"Gemini returned an unreadable translation response{detail}: {exc}") from exc
+        try:
+            returned_items = len(_api_response_items(_response_data(response_value)))
+        except Exception:
+            returned_items = len(translations)
+        diagnostic = _gemini_response_diagnostic(
+            response,
+            returned=returned_items,
+            mapped=len(translations),
+            expected=len(expected_uids),
+        )
+        self.last_response_diagnostic = diagnostic if len(translations) != len(expected_uids) else ""
+        return translations
 
 
 def translate_entries_with_client(
@@ -568,17 +891,15 @@ def translate_entries_with_client(
     context_limit: int = 20,
     previous_file_context_entries: Iterable[POEntry] | None = None,
     on_translation: Callable[[POEntry, str], None] | None = None,
+    cancel_check: Callable[[], None] | None = None,
 ) -> tuple[dict[str, str], list[TranslationError]]:
     """Translate entries with Gemini API.
 
-    Interactive callers opt into strict one-entry requests by supplying
-    ``context_entries``. Each request then receives up to ``context_limit``
-    immediately preceding translated entries from the same ordered PO file.
-    ``previous_file_context_entries`` is optional and only used when callers
-    explicitly enable cross-file continuity.
-
-    Callers without ``context_entries`` retain the original batched behavior,
-    controlled by ``batch_size``. This is used by Mass Translate File.
+    ``batch_size`` always controls how many current entries are sent per API
+    request. When ``context_entries`` is supplied, each batch also receives up
+    to ``context_limit`` entries immediately preceding the first current entry.
+    This lets mass translation keep continuity without falling back to one API
+    request per entry. Interactive callers use ``batch_size=1`` deliberately.
     """
     entry_list = list(entries)
     total_entries = len(entry_list)
@@ -587,42 +908,52 @@ def translate_entries_with_client(
     all_errors: list[TranslationError] = []
     all_translations: dict[str, str] = {}
 
-    if context_entries is not None:
-        context_list = list(context_entries)
-        for i, entry in enumerate(entry_list):
+    def check_cancelled() -> None:
+        if cancel_check is not None:
+            cancel_check()
+
+    def interruptible_sleep(seconds: float) -> None:
+        if seconds <= 0:
+            return
+        if cancel_check is None:
+            time.sleep(seconds)
+            return
+        deadline = time.monotonic() + seconds
+        while True:
+            check_cancelled()
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                return
+            time.sleep(min(0.1, remaining))
+
+    check_cancelled()
+    context_list = list(context_entries) if context_entries is not None else None
+    effective_batch_size = max(1, int(batch_size))
+    for i in range(0, total_entries, effective_batch_size):
+        check_cancelled()
+        batch = entry_list[i:i + effective_batch_size]
+        previous_context: list[dict[str, Any]] = []
+        if context_list is not None and batch:
             previous_context = build_previous_vietnamese_context(
                 context_list,
-                entry,
+                batch[0],
                 limit=max(0, int(context_limit)),
                 translation_overrides=all_translations,
                 previous_file_entries=previous_file_context_entries,
             )
-            payload = build_payload(
-                [entry],
-                instructions=prompt or client.prompt,
-                previous_vietnamese_context=previous_context,
-            )
-            translations = client.translate_payload(payload, prompt=prompt)
-            errors = validate_translations([entry], translations)
-            all_errors.extend(errors)
-            bad = {error.uid for error in errors}
-            translation = translations.get(entry.uid)
-            if translation is not None and (allow_partial or entry.uid not in bad):
-                all_translations[entry.uid] = translation
-                if on_translation is not None:
-                    on_translation(entry, translation)
-            if progress is not None:
-                progress(i + 1, total_entries)
-            if sleep_seconds and i + 1 < total_entries:
-                time.sleep(sleep_seconds)
-        return all_translations, all_errors
-
-    effective_batch_size = max(1, int(batch_size))
-    for i in range(0, total_entries, effective_batch_size):
-        batch = entry_list[i:i + effective_batch_size]
-        payload = build_payload(batch, instructions=prompt or client.prompt)
+        payload = build_payload(
+            batch,
+            instructions=prompt or client.prompt,
+            previous_vietnamese_context=previous_context,
+        )
         translations = client.translate_payload(payload, prompt=prompt)
+        check_cancelled()
         errors = validate_translations(batch, translations)
+        response_diagnostic = str(getattr(client, "last_response_diagnostic", "") or "").strip()
+        if response_diagnostic:
+            for error in errors:
+                if error.reason == "missing translation":
+                    error.reason = f"missing translation ({response_diagnostic})"
         all_errors.extend(errors)
         bad = {error.uid for error in errors}
         for entry in batch:
@@ -635,7 +966,7 @@ def translate_entries_with_client(
         if progress is not None:
             progress(min(i + len(batch), total_entries), total_entries)
         if sleep_seconds and i + effective_batch_size < total_entries:
-            time.sleep(sleep_seconds)
+            interruptible_sleep(sleep_seconds)
     return all_translations, all_errors
 
 
@@ -648,6 +979,7 @@ def translate_file_with_client(
     prompt: str | None = None,
     context_limit: int = 0,
     previous_file_context_entries: Iterable[POEntry] | None = None,
+    cancel_check: Callable[[], None] | None = None,
 ) -> tuple[int, list[TranslationError]]:
     po = load_po_clone(po_path)
     missing = source_entries_for_translation(po_path)
@@ -662,6 +994,7 @@ def translate_file_with_client(
         context_entries=po.entries if effective_context_limit else None,
         context_limit=effective_context_limit,
         previous_file_context_entries=previous_file_context_entries if effective_context_limit else None,
+        cancel_check=cancel_check,
     )
     changed = patch_msgstr_by_uid(po, translations)
     if changed:

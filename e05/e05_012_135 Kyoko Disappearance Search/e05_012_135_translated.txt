@@ -1,0 +1,222 @@
+--- ChatGPT Translation Raw Output for e05_012_135.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. もう、何もかもがどうでもいいんだ。
+#. バイバイ！
+msgctxt "0043 | MONOKUMA"
+msgid "I don't even care anymore! Sayonara, suckers!"
+msgstr ""
+
+#. ⟦CLT 4⟧…モノクマが去った後、
+#. ボクらはすぐに顔を見合わせた。
+#. ⟦CLT⟧
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧As soon as he was gone, we all glanced around at each\n"
+"other.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ねぇ、今のってどういう事？
+#. モノクマも、霧切ちゃんの居場所を知らないって事？
+msgctxt "0045 | AOI ASAHINA"
+msgid ""
+"So...what was that just now? Does that mean Monokuma\n"
+"doesn't know where she is, either?"
+msgstr ""
+
+#. どうやら…そのようだな…
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgid "It would seem that way..."
+msgstr ""
+
+#. だとすると、
+#. 霧切っちはどこに姿を消したってんだ？
+msgctxt "0047 | YASUHIRO HAGAKURE"
+msgid "Where the heck could she have gone...?"
+msgstr ""
+
+#. …みんなで捜した方がいいんじゃない？
+msgctxt "0048 | AOI ASAHINA"
+msgid "Don't you think we should all go look for her?"
+msgstr ""
+
+#. どうやって捜すというんだ？
+#. モノクマにも見つけられないんだぞ…
+msgctxt "0049 | BYAKUYA TOGAMI"
+msgid ""
+"And how would you suggest we approach that task?\n"
+"Even Monokuma can't seem to locate her..."
+msgstr ""
+
+#. つーか、なんでモノクマが見つけらんねーんだ？
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid "Yeah...how can he not know where she is?"
+msgstr ""
+
+#. 謎だよね…
+msgctxt "0051 | AOI ASAHINA"
+msgid "So strange..."
+msgstr ""
+
+#. ⟦CLT 4⟧きっと、霧切さんは、あの鍵を使って、
+#. この学園の“どこか”に忍び込んだはずだ…
+#. ⟦CLT⟧
+msgctxt "0053 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Kyoko must have used that key to sneak into some\n"
+"unknown part of the school...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧でも、それってどこだ？
+#. モノクマにも気付かれない場所があるなんて…
+#. ⟦CLT⟧
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧But somewhere even Monokuma wouldn't notice? Where\n"
+"could it be...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧いなくなった霧切さんについて話し合いながら、
+#. 朝食を食べた後…
+#. ⟦CLT⟧
+msgctxt "0055 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧We spent the rest of breakfast talking about where\n"
+"Kyoko could have gone.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクらは、それぞれの個室へと戻っていった。
+#. ⟦CLT⟧
+msgctxt "0056 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Afterwards, we returned to our rooms.\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0043 | MONOKUMA"
+msgstr "Ta chẳng còn quan tâm gì nữa! Tạm biệt nhé, lũ ngốc!"
+
+msgctxt "0044 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Ngay khi hắn rời đi, tất cả chúng tôi đều\n"
+"nhìn nhau.\n"
+"⟦CLT⟧"
+
+msgctxt "0045 | AOI ASAHINA"
+msgstr ""
+"Vậy... chuyện vừa rồi là sao? Có nghĩa là Monokuma\n"
+"cũng không biết cô ấy đang ở đâu sao?"
+
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgstr "Có vẻ là vậy..."
+
+msgctxt "0047 | YASUHIRO HAGAKURE"
+msgstr "Rốt cuộc Kirigiri đã biến đi đâu chứ...?"
+
+msgctxt "0048 | AOI ASAHINA"
+msgstr "Mọi người không nghĩ chúng ta nên cùng đi tìm cậu ấy sao?"
+
+msgctxt "0049 | BYAKUYA TOGAMI"
+msgstr ""
+"Và cô định đề xuất chúng ta tiếp cận việc đó\n"
+"như thế nào?\n"
+"Ngay cả Monokuma cũng không thể tìm thấy cô ấy..."
+
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgstr "Ừ... làm sao hắn lại không biết cô ấy đang ở đâu chứ?"
+
+msgctxt "0051 | AOI ASAHINA"
+msgstr "Kỳ lạ thật..."
+
+msgctxt "0053 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chắc chắn Kyoko đã dùng chiếc chìa khóa đó để\n"
+"lẻn vào một nơi nào đó trong ngôi trường này...\n"
+"⟦CLT⟧"
+
+msgctxt "0054 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Nhưng một nơi mà ngay cả Monokuma cũng không phát hiện\n"
+"được sao? Đó có thể là nơi nào chứ...?\n"
+"⟦CLT⟧"
+
+msgctxt "0055 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chúng tôi vừa ăn sáng vừa bàn luận về việc\n"
+"Kyoko có thể đã đi đâu.\n"
+"⟦CLT⟧"
+
+msgctxt "0056 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Sau đó, chúng tôi trở về phòng riêng của mình.\n"
+"⟦CLT⟧"
+
+po
+
+msgctxt "0043 | MONOKUMA"
+msgstr "Ta chẳng còn quan tâm gì nữa! Tạm biệt nhé, lũ ngốc!"
+
+msgctxt "0044 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Ngay khi hắn rời đi, tất cả chúng tôi đều\n"
+"nhìn nhau.\n"
+"⟦CLT⟧"
+
+msgctxt "0045 | AOI ASAHINA"
+msgstr ""
+"Vậy... chuyện vừa rồi là sao? Có nghĩa là Monokuma\n"
+"cũng không biết cô ấy đang ở đâu sao?"
+
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgstr "Có vẻ là vậy..."
+
+msgctxt "0047 | YASUHIRO HAGAKURE"
+msgstr "Rốt cuộc Kirigiri đã biến đi đâu chứ...?"
+
+msgctxt "0048 | AOI ASAHINA"
+msgstr "Mọi người không nghĩ chúng ta nên cùng đi tìm cậu ấy sao?"
+
+msgctxt "0049 | BYAKUYA TOGAMI"
+msgstr ""
+"Và cô định đề xuất chúng ta tiếp cận việc đó\n"
+"như thế nào?\n"
+"Ngay cả Monokuma cũng không thể tìm thấy cô ấy..."
+
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgstr "Ừ... làm sao hắn lại không biết cô ấy đang ở đâu chứ?"
+
+msgctxt "0051 | AOI ASAHINA"
+msgstr "Kỳ lạ thật..."
+
+msgctxt "0053 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chắc chắn Kyoko đã dùng chiếc chìa khóa đó để\n"
+"lẻn vào một nơi nào đó trong ngôi trường này...\n"
+"⟦CLT⟧"
+
+msgctxt "0054 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Nhưng một nơi mà ngay cả Monokuma cũng không phát hiện\n"
+"được sao? Đó có thể là nơi nào chứ...?\n"
+"⟦CLT⟧"
+
+msgctxt "0055 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chúng tôi vừa ăn sáng vừa bàn luận về việc\n"
+"Kyoko có thể đã đi đâu.\n"
+"⟦CLT⟧"
+
+msgctxt "0056 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Sau đó, chúng tôi trở về phòng riêng của mình.\n"
+"⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Kyoko Disappearance Search
+

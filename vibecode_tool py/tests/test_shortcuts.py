@@ -178,7 +178,8 @@ def test_interactive_gemini_context_and_global_po_viewer_undo_are_wired():
     gui_source = (Path(__file__).parents[1] / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
     assert "context_entries=context_by_file.get(file_path, [])" in gui_source
     assert "context_entries=context_by_path.get(path, [])" in gui_source
-    assert "context_entries=po.entries" in gui_source
+    assert "context_entries=context_entries" in gui_source
+    assert "context_entries = copy.deepcopy(list(po.entries))" in gui_source
     assert 'undo_edit_btn = self._tool_button("Undo"' in gui_source
     assert 'begin_po_undo_batch("wrap")' in gui_source
     assert 'undo_label="suggestion"' in gui_source
@@ -193,10 +194,13 @@ def test_gemini_previous_file_context_has_compact_opt_in_toggle():
     gui_source = (root / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
     config_source = (root / "src" / "dr_po_toolkit" / "config.py").read_text(encoding="utf-8")
 
-    assert '"gemini_api_context_across_files": False' in config_source
-    assert 'api_context_entries.setFixedWidth(72)' in gui_source
+    assert '"gemini_api_single_context_across_files": False' in config_source
+    assert '"gemini_api_mass_context_across_files": False' in config_source
+    assert 'api_single_context_entries.setFixedWidth(72)' in gui_source
+    assert 'api_mass_context_entries.setFixedWidth(72)' in gui_source
     assert 'QCheckBox("Include previous files")' in gui_source
-    assert 'Off: context never leaves the current PO file.' in gui_source
+    assert 'Single-entry API' in gui_source
+    assert 'Mass-translation API' in gui_source
     assert 'previous_file_context_entries=previous_file_context if use_previous_files else None' in gui_source
 
 
@@ -208,3 +212,19 @@ def test_gui_routes_ctrl_z_to_unified_undo_history():
     assert "RoutedUndoShortcutFilter(_tab, undo_last_search_change)" in source
     assert "RoutedUndoShortcutFilter(dialog, undo_duplicate_change)" in source
     assert "RoutedUndoShortcutFilter(_tab, undo_last_po_change)" in source
+
+
+def test_search_character_counts_and_async_gemini_workers_are_wired():
+    root = Path(__file__).parents[1]
+    gui_source = (root / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
+    config_source = (root / "src" / "dr_po_toolkit" / "config.py").read_text(encoding="utf-8")
+
+    assert 'en_character_count_label = QLabel("—")' in gui_source
+    assert 'vi_character_count_label = QLabel("—")' in gui_source
+    assert "msgid_box.textChanged.connect(update_search_character_counts)" in gui_source
+    assert "msgstr_box.textChanged.connect(update_search_character_counts)" in gui_source
+    assert gui_source.count("threading.Thread(target=gemini_worker, daemon=True)") >= 3
+    assert 'self._gemini_api_timeout_seconds("single")' in gui_source
+    assert 'self._gemini_api_timeout_seconds("mass")' in gui_source
+    assert '"gemini_api_single_timeout_seconds": 90' in config_source
+    assert '"gemini_api_mass_timeout_seconds": 90' in config_source

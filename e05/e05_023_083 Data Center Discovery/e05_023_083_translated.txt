@@ -1,0 +1,96 @@
+--- ChatGPT Translation Raw Output for e05_023_083.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. …戻って来たか。成果はどうだった？
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgid "So, you're back. How'd it go?"
+msgstr ""
+
+#. あの鍵で開いたのは…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "I found out which room the key goes to."
+msgstr ""
+
+#. …４階の情報処理室。
+#. あの部屋だったよ。
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "It's the data center, down on the 4th floor."
+msgstr ""
+
+#. じゃあ、情報処理室に入れるようになったんか！？
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgid "Then we can get into the data center now!?"
+msgstr ""
+
+#. だが、あの死体はなぜ、
+#. 情報処理室の鍵なんかを持っていたんだ…？
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgid "But why did the now deceased have that key on them?"
+msgstr ""
+
+#. どうやら、情報処理室に行って、
+#. 確かめてみる必要がありそうだな…
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgid ""
+"I suppose we'll just have to go to the data center and\n"
+"find out."
+msgstr ""
+
+#. うん…そうみたいだね…
+msgctxt "0008 | MAKOTO NAEGI"
+msgid "Yeah, I think you're right..."
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgstr "Vậy là cậu quay lại rồi. Kết quả thế nào?"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Mình đã tìm ra căn phòng mà chiếc chìa khóa này mở được."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Đó là phòng xử lý dữ liệu ở tầng 4. Chính là căn phòng đó."
+
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgstr "Vậy bây giờ chúng ta có thể vào phòng xử lý dữ liệu rồi sao!?"
+
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgstr "Nhưng tại sao người đã chết lại mang theo chiếc chìa khóa đó...?"
+
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgstr ""
+"Có lẽ chúng ta chỉ còn cách đến phòng xử lý dữ liệu\n"
+"để tìm hiểu thôi."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "Ừ... mình nghĩ cậu nói đúng..."
+
+po
+
+msgctxt "0001 | BYAKUYA TOGAMI"
+msgstr "Vậy là cậu quay lại rồi. Kết quả thế nào?"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Mình đã tìm ra căn phòng mà chiếc chìa khóa này mở được."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr "Đó là phòng xử lý dữ liệu ở tầng 4. Chính là căn phòng đó."
+
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgstr "Vậy bây giờ chúng ta có thể vào phòng xử lý dữ liệu rồi sao!?"
+
+msgctxt "0006 | BYAKUYA TOGAMI"
+msgstr "Nhưng tại sao người đã chết lại mang theo chiếc chìa khóa đó...?"
+
+msgctxt "0007 | BYAKUYA TOGAMI"
+msgstr ""
+"Có lẽ chúng ta chỉ còn cách đến phòng xử lý dữ liệu\n"
+"để tìm hiểu thôi."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr "Ừ... mình nghĩ cậu nói đúng..."
+
+==================== FOLDER SUMMARY ====================
+Data Center Discovery
+

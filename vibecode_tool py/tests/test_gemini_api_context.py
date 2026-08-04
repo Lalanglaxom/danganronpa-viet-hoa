@@ -3,6 +3,7 @@ from pathlib import Path
 
 from dr_po_toolkit.models import POEntry
 from dr_po_toolkit.po_io import load_po
+from dr_po_toolkit.config import load_config
 from dr_po_toolkit.translator import (
     API_SYSTEM_INSTRUCTIONS,
     GeminiApiClient,
@@ -11,6 +12,7 @@ from dr_po_toolkit.translator import (
     build_payload,
     build_previous_vietnamese_context,
     build_prompt,
+    _thinking_config,
     parse_api_translation_response,
     translate_entries_with_client,
     translate_file_with_client,
@@ -152,18 +154,39 @@ def test_gemini_client_sends_compact_request_once_and_normalizes_bad_uid():
     class FakeModels:
         def generate_content(self, **kwargs):
             calls.append(kwargs)
-            return type("Response", (), {"text": '{"entries":[{"uid":"mismatch","translation":"Xin chào"}]}'})()
+            usage = type(
+                "Usage",
+                (),
+                {
+                    "prompt_token_count": 30,
+                    "candidates_token_count": 8,
+                    "thoughts_token_count": 0,
+                    "cached_content_token_count": 0,
+                    "total_token_count": 38,
+                },
+            )()
+            return type(
+                "Response",
+                (),
+                {"text": '{"entries":[{"uid":"mismatch","translation":"Xin chào"}]}', "usage_metadata": usage},
+            )()
 
     class FakeTypes:
         @staticmethod
         def GenerateContentConfig(**kwargs):
             return kwargs
 
+        @staticmethod
+        def ThinkingConfig(**kwargs):
+            return kwargs
+
     client = GeminiApiClient.__new__(GeminiApiClient)
     client._client = type("Client", (), {"models": FakeModels()})()
     client._types = FakeTypes
-    client.model = "fake-model"
+    client.model = "gemini-2.5-flash"
     client.prompt = SYSTEM_INSTRUCTIONS
+    client.thinking_mode = "off"
+    client.max_output_tokens = 0
     entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="Hello", msgstr="", extracted_comments=["こんにちは"])
     payload = build_payload([entry])
 
@@ -174,7 +197,82 @@ def test_gemini_client_sends_compact_request_once_and_normalizes_bad_uid():
     assert calls[0]["contents"] == build_api_prompt(payload)
     assert entry.uid not in calls[0]["contents"]
     assert calls[0]["config"]["system_instruction"] == API_SYSTEM_INSTRUCTIONS.strip()
-    assert calls[0]["config"]["temperature"] == 0.1
+    assert calls[0]["config"]["temperature"] == 0
+    assert calls[0]["config"]["thinking_config"] == {"thinking_budget": 0}
+    assert calls[0]["config"]["response_schema"]["properties"]["t"]["minItems"] == 1
+    assert calls[0]["config"]["response_schema"]["additionalProperties"] is False
+    assert calls[0]["config"]["max_output_tokens"] >= 256
+    assert client.total_usage.as_dict() == {
+        "requests": 1,
+        "prompt_tokens": 30,
+        "candidate_tokens": 8,
+        "thought_tokens": 0,
+        "cached_tokens": 0,
+        "total_tokens": 38,
+    }
+
+
+def test_incomplete_gemini_response_explains_finish_reason_on_missing_entry():
+    class FakeModels:
+        def generate_content(self, **_kwargs):
+            candidate = type("Candidate", (), {"finish_reason": "MAX_TOKENS", "finish_message": "Output limit reached"})()
+            return type(
+                "Response",
+                (),
+                {"text": '{"t":["Một"]}', "candidates": [candidate]},
+            )()
+
+    class FakeTypes:
+        @staticmethod
+        def GenerateContentConfig(**kwargs):
+            return kwargs
+
+        @staticmethod
+        def ThinkingConfig(**kwargs):
+            return kwargs
+
+    client = GeminiApiClient.__new__(GeminiApiClient)
+    client._client = type("Client", (), {"models": FakeModels()})()
+    client._types = FakeTypes
+    client.model = "gemini-2.5-flash"
+    client.prompt = SYSTEM_INSTRUCTIONS
+    client.timeout_seconds = 5
+    client.thinking_mode = "off"
+    client.max_output_tokens = 0
+    entries = [
+        POEntry(index=0, msgctxt="0001", msgid="One", msgstr=""),
+        POEntry(index=1, msgctxt="0002", msgid="Two", msgstr=""),
+    ]
+
+    translations, errors = translate_entries_with_client(
+        entries,
+        client,
+        batch_size=2,
+        sleep_seconds=0,
+    )
+
+    # An incomplete order-only response cannot be mapped safely, so the batch
+    # is rejected instead of assigning a translation to the wrong entry.
+    assert translations == {}
+    assert len(errors) == 2
+    assert {error.uid for error in errors} == {entry.uid for entry in entries}
+    assert all("finish_reason=MAX_TOKENS" in error.reason for error in errors)
+    assert all("items=1" in error.reason for error in errors)
+    assert all("mapped=0/2" in error.reason for error in errors)
+
+
+def test_gemini_three_uses_lowest_supported_thinking_level():
+    class FakeTypes:
+        @staticmethod
+        def ThinkingConfig(**kwargs):
+            return kwargs
+
+    assert _thinking_config(FakeTypes, "gemini-3.5-flash", "off") == {"thinking_level": "minimal"}
+    assert _thinking_config(FakeTypes, "gemini-3.1-flash-lite", "minimal") == {"thinking_level": "minimal"}
+    assert _thinking_config(FakeTypes, "gemini-3.1-pro", "off") == {"thinking_level": "low"}
+    assert _thinking_config(FakeTypes, "gemini-3.1-pro", "minimal") == {"thinking_level": "low"}
+    assert _thinking_config(FakeTypes, "gemini-3.5-flash", "medium") == {"thinking_level": "medium"}
+    assert _thinking_config(FakeTypes, "gemini-3.5-flash", "dynamic") is None
 
 
 def test_interactive_gemini_api_uses_configurable_previous_twenty_context(tmp_path: Path):
@@ -186,7 +284,7 @@ def test_interactive_gemini_api_uses_configurable_previous_twenty_context(tmp_pa
     translations, errors = translate_entries_with_client(
         po.entries[21:],
         client,  # type: ignore[arg-type]
-        batch_size=20,
+        batch_size=1,
         sleep_seconds=0,
         context_entries=po.entries,
         context_limit=20,
@@ -217,6 +315,91 @@ def test_mass_translate_file_keeps_configured_batch_size_when_context_disabled(t
     assert changed == 2
     assert len(client.payloads) == 1
     assert [entry.msgstr for entry in load_po(po_path).entries[-2:]] == ["Bản dịch 22", "Bản dịch 23"]
+
+
+def test_mass_translation_batches_current_entries_and_sends_context_once_per_batch(tmp_path: Path):
+    po_path = tmp_path / "sample.po"
+    po_path.write_text(_po_text(total=8, translated_through=2), encoding="utf-8")
+
+    class ContextBatchClient:
+        prompt = "test prompt\n"
+
+        def __init__(self):
+            self.payloads: list[dict] = []
+
+        def translate_payload(self, payload: dict, prompt: str | None = None) -> dict[str, str]:
+            self.payloads.append(payload)
+            return {
+                item["uid"]: f"Dịch {item['source_en'].split()[-1]}"
+                for item in payload["entries"]
+            }
+
+    client = ContextBatchClient()
+    changed, errors = translate_file_with_client(
+        po_path,
+        client,  # type: ignore[arg-type]
+        batch_size=3,
+        sleep_seconds=0,
+        context_limit=2,
+    )
+
+    assert not errors
+    assert changed == 6
+    assert len(client.payloads) == 2
+    assert [[item["source_en"] for item in payload["entries"]] for payload in client.payloads] == [
+        ["English 3", "English 4", "English 5"],
+        ["English 6", "English 7", "English 8"],
+    ]
+    assert [item["source_en"] for item in client.payloads[0]["previous_vietnamese_context"]] == [
+        "English 1",
+        "English 2",
+    ]
+    assert [item["source_en"] for item in client.payloads[1]["previous_vietnamese_context"]] == [
+        "English 4",
+        "English 5",
+    ]
+    assert [item["translation_vi"] for item in client.payloads[1]["previous_vietnamese_context"]] == [
+        "Dịch 4",
+        "Dịch 5",
+    ]
+
+
+def test_legacy_shared_api_settings_migrate_to_both_profiles(tmp_path: Path):
+    config_path = tmp_path / "config.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "gemini_api_model": "gemini-2.5-flash-lite",
+                "gemini_api_timeout_seconds": 45,
+                "gemini_api_context_entries": 7,
+                "gemini_api_context_across_files": True,
+                "gemini_api_sleep_seconds": 2.5,
+                "gemini_api_use_key": True,
+                "gemini_web_max_entries": 17,
+                "gemini_web_max_files": 11,
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config["gemini_api_single_model"] == "gemini-2.5-flash-lite"
+    assert config["gemini_api_mass_model"] == "gemini-2.5-flash-lite"
+    assert config["gemini_api_single_timeout_seconds"] == 45
+    assert config["gemini_api_mass_timeout_seconds"] == 45
+    assert config["gemini_api_single_context_entries"] == 7
+    assert config["gemini_api_mass_context_entries"] == 7
+    assert config["gemini_api_single_context_across_files"] is True
+    assert config["gemini_api_mass_context_across_files"] is True
+    assert config["gemini_api_single_sleep_seconds"] == 2.5
+    assert config["gemini_api_mass_sleep_seconds"] == 2.5
+    assert config["gemini_api_mass_batch_entries"] == 17
+    assert config["gemini_api_mass_max_files"] == 11
+    assert config["gemini_translate_mode"] == "api"
+    assert "gemini_api_use_key" not in config
+    assert "gemini_api_model" not in config
+    assert "gemini_api_context_entries" not in config
 
 
 def test_previous_context_keeps_english_sentences_when_translation_is_missing(tmp_path: Path):
@@ -258,3 +441,88 @@ def test_previous_file_context_is_opt_in_and_only_fills_missing_local_slots():
         "Current 2",
     ]
     assert [item["relative_position"] for item in across_files] == [-5, -4, -3, -2, -1]
+
+
+def test_gemini_client_configures_http_timeout_in_milliseconds(monkeypatch):
+    import sys
+    from types import ModuleType, SimpleNamespace
+
+    captured: dict[str, object] = {}
+
+    class FakeHttpOptions:
+        def __init__(self, **kwargs):
+            captured["http_options_kwargs"] = kwargs
+
+    class FakeClient:
+        def __init__(self, **kwargs):
+            captured["client_kwargs"] = kwargs
+            self.models = SimpleNamespace()
+
+    google_module = ModuleType("google")
+    genai_module = ModuleType("google.genai")
+    genai_module.Client = FakeClient  # type: ignore[attr-defined]
+    genai_module.types = SimpleNamespace(HttpOptions=FakeHttpOptions)  # type: ignore[attr-defined]
+    google_module.genai = genai_module  # type: ignore[attr-defined]
+    monkeypatch.setitem(sys.modules, "google", google_module)
+    monkeypatch.setitem(sys.modules, "google.genai", genai_module)
+
+    client = GeminiApiClient(api_key="test-key", timeout_seconds=12.5)
+
+    assert client.timeout_seconds == 12.5
+    assert captured["http_options_kwargs"] == {"timeout": 12500}
+    client_kwargs = captured["client_kwargs"]
+    assert isinstance(client_kwargs, dict)
+    assert client_kwargs["api_key"] == "test-key"
+    assert isinstance(client_kwargs["http_options"], FakeHttpOptions)
+
+
+def test_gemini_timeout_error_is_clear():
+    class FakeModels:
+        def generate_content(self, **_kwargs):
+            raise RuntimeError("read timeout")
+
+    class FakeTypes:
+        @staticmethod
+        def GenerateContentConfig(**kwargs):
+            return kwargs
+
+    client = GeminiApiClient.__new__(GeminiApiClient)
+    client._client = type("Client", (), {"models": FakeModels()})()
+    client._types = FakeTypes
+    client.model = "fake-model"
+    client.prompt = SYSTEM_INSTRUCTIONS
+    client.timeout_seconds = 7
+    entry = POEntry(index=0, msgctxt="0001", msgid="Hello", msgstr="")
+
+    import pytest
+
+    with pytest.raises(TimeoutError, match=r"timed out after 7 seconds"):
+        client.translate_payload(build_payload([entry]))
+
+
+def test_gemini_client_enforces_wall_clock_deadline_even_if_sdk_hangs():
+    import time
+    import pytest
+
+    class FakeModels:
+        def generate_content(self, **_kwargs):
+            time.sleep(0.25)
+            return type("Response", (), {"text": '{"t":["Xin chào"]}'})()
+
+    class FakeTypes:
+        @staticmethod
+        def GenerateContentConfig(**kwargs):
+            return kwargs
+
+    client = GeminiApiClient.__new__(GeminiApiClient)
+    client._client = type("Client", (), {"models": FakeModels()})()
+    client._types = FakeTypes
+    client.model = "fake-model"
+    client.prompt = SYSTEM_INSTRUCTIONS
+    client.timeout_seconds = 0.01
+    entry = POEntry(index=0, msgctxt="0001", msgid="Hello", msgstr="")
+
+    started = time.monotonic()
+    with pytest.raises(TimeoutError, match=r"timed out after 0.01 seconds"):
+        client.translate_payload(build_payload([entry]))
+    assert time.monotonic() - started < 0.15

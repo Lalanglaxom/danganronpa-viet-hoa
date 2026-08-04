@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = ["PyQt6>=6.6"]
 
 [project.optional-dependencies]
-gemini = ["google-genai>=1.0.0"]
+gemini = ["google-genai>=2.9.0,<3.0.0"]
 packaging = ["pyinstaller>=6.0"]
 
 [project.scripts]

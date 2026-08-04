@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 import html
 import json
 import os
@@ -1103,18 +1104,66 @@ class ToolkitGUI(QMainWindow):
         log.setMinimumHeight(210)
         return log
 
-    def _gemini_api_context_limit(self) -> int:
+    def _gemini_api_context_limit(self, profile: str = "single") -> int:
+        key = f"gemini_api_{profile}_context_entries"
+        default = 3
         try:
-            value = int(self.config.get("gemini_api_context_entries", 20))
+            value = int(self.config.get(key, default))
         except (TypeError, ValueError):
-            value = 20
+            value = default
         value = max(0, min(200, value))
-        self.config["gemini_api_context_entries"] = value
+        self.config[key] = value
         return value
 
-    def _gemini_api_cross_file_context_enabled(self) -> bool:
-        value = bool(self.config.get("gemini_api_context_across_files", False))
-        self.config["gemini_api_context_across_files"] = value
+    def _gemini_api_cross_file_context_enabled(self, profile: str = "single") -> bool:
+        key = f"gemini_api_{profile}_context_across_files"
+        value = bool(self.config.get(key, False))
+        self.config[key] = value
+        return value
+
+    def _gemini_api_timeout_seconds(self, profile: str = "single") -> float:
+        key = f"gemini_api_{profile}_timeout_seconds"
+        try:
+            value = float(self.config.get(key, 90))
+        except (TypeError, ValueError):
+            value = 90.0
+        value = max(5.0, min(3600.0, value))
+        self.config[key] = int(value) if value.is_integer() else value
+        return value
+
+    def _gemini_api_profile_model(self, profile: str = "single") -> str:
+        key = f"gemini_api_{profile}_model"
+        value = str(self.config.get(key, "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
+        self.config[key] = value
+        return value
+
+    def _gemini_api_profile_sleep_seconds(self, profile: str = "single") -> float:
+        key = f"gemini_api_{profile}_sleep_seconds"
+        default = 0.0 if profile == "single" else 1.0
+        try:
+            value = float(self.config.get(key, default))
+        except (TypeError, ValueError):
+            value = default
+        value = max(0.0, min(300.0, value))
+        self.config[key] = value
+        return value
+
+    def _gemini_api_profile_thinking_mode(self, profile: str = "single") -> str:
+        key = f"gemini_api_{profile}_thinking_mode"
+        value = str(self.config.get(key, "off")).strip().casefold()
+        if value not in {"off", "minimal", "low", "medium", "high", "dynamic"}:
+            value = "off"
+        self.config[key] = value
+        return value
+
+    def _gemini_api_profile_max_output_tokens(self, profile: str = "single") -> int:
+        key = f"gemini_api_{profile}_max_output_tokens"
+        try:
+            value = int(self.config.get(key, 0))
+        except (TypeError, ValueError):
+            value = 0
+        value = max(0, min(65536, value))
+        self.config[key] = value
         return value
 
     def _linewrap_presets(self) -> list[dict[str, int]]:
@@ -2615,18 +2664,40 @@ class ToolkitGUI(QMainWindow):
         selected_info.setObjectName("muted")
         selected_info.setWordWrap(True)
         right_layout.addWidget(selected_info)
+        en_header = QHBoxLayout()
         en_label = QLabel("English / msgid")
         en_label.setStyleSheet(f"color: {ACCENT_SOFT}; font-weight: 900;")
-        right_layout.addWidget(en_label)
+        en_character_count_label = QLabel("—")
+        en_character_count_label.setObjectName("muted")
+        en_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        en_character_count_label.setToolTip(
+            "Visible character count for each English line. Spaces and punctuation count; CLT/control tags and placeholders are ignored."
+        )
+        en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
+        en_header.addWidget(en_label)
+        en_header.addStretch()
+        en_header.addWidget(en_character_count_label)
+        right_layout.addLayout(en_header)
         msgid_box = QPlainTextEdit(); msgid_box.setReadOnly(True)
         msgid_box.setStyleSheet(
             f"QPlainTextEdit {{ color: {WHITE}; background: {EN_BG}; border: 1px solid {PURPLE}; border-radius: 9px; }}"
         )
         msgid_box._clt_highlighter = CltHighlighter(msgid_box.document())  # keep highlighter alive
         right_layout.addWidget(msgid_box)
+        vi_header = QHBoxLayout()
         vi_label = QLabel("Vietnamese / msgstr")
         vi_label.setStyleSheet(f"color: {TEAL}; font-weight: 900;")
-        right_layout.addWidget(vi_label)
+        vi_character_count_label = QLabel("—")
+        vi_character_count_label.setObjectName("muted")
+        vi_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        vi_character_count_label.setToolTip(
+            "Visible character count for each Vietnamese line. Spaces and punctuation count; CLT/control tags and placeholders are ignored."
+        )
+        vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
+        vi_header.addWidget(vi_label)
+        vi_header.addStretch()
+        vi_header.addWidget(vi_character_count_label)
+        right_layout.addLayout(vi_header)
         msgstr_box = QPlainTextEdit()
         msgstr_box.setStyleSheet(
             f"QPlainTextEdit {{ color: {WHITE}; background: {VI_BG}; border: 1px solid {TEAL}; border-radius: 9px; }}"
@@ -2713,6 +2784,14 @@ class ToolkitGUI(QMainWindow):
         def compact(text: str, limit: int = 1000) -> str:
             text = user_multiline_text(text)
             return text if len(text) <= limit else text[: limit - 1] + "…"
+
+        def characters_per_line_text(text: str) -> str:
+            counts = visible_character_counts_by_line(text)
+            return "Chars: " + "  |  ".join(str(count) for count in counts)
+
+        def update_search_character_counts() -> None:
+            en_character_count_label.setText(characters_per_line_text(msgid_box.toPlainText()))
+            vi_character_count_label.setText(characters_per_line_text(msgstr_box.toPlainText()))
 
         def wrap_settings() -> tuple[int, int, int]:
             return self._linewrap_settings()
@@ -3247,6 +3326,9 @@ class ToolkitGUI(QMainWindow):
             )
 
         def translate_search_with_gemini_api() -> None:
+            if self._active_thread is not None and self._active_thread.is_alive():
+                status.setText("Another action is already running. Stop it first.")
+                return
             indices = selected_result_indices()
             if not indices:
                 current = current_result_index()
@@ -3256,7 +3338,7 @@ class ToolkitGUI(QMainWindow):
                 return
             api_key = str(self.config.get("gemini_api_key", "")).strip() or os.environ.get("GEMINI_API_KEY", "").strip()
             if not api_key:
-                QMessageBox.warning(self, "Search", "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
+                QMessageBox.warning(self, "Search", "Enter the Gemini API key in the AI Translation tab, or set GEMINI_API_KEY.")
                 return
             current = current_result_index()
             work_by_file: dict[Path, list[tuple[int, POEntry]]] = {}
@@ -3293,80 +3375,165 @@ class ToolkitGUI(QMainWindow):
                     line=actual_entry.line,
                 )
                 work_by_file.setdefault(result.file, []).append((result_index, request_entry))
-                context_by_file[result.file] = list(file_po.entries)
+                context_by_file[result.file] = copy.deepcopy(list(file_po.entries))
             if not work_by_file:
+                status.setText("No matching PO entries were available for Gemini.")
                 return
-            model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
-            sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
+
+            model = self._gemini_api_profile_model("single")
+            sleep_seconds = self._gemini_api_profile_sleep_seconds("single")
+            timeout_seconds = self._gemini_api_timeout_seconds("single")
+            thinking_mode = self._gemini_api_profile_thinking_mode("single")
+            max_output_tokens = self._gemini_api_profile_max_output_tokens("single")
             total_entries = sum(len(items) for items in work_by_file.values())
+            context_limit = self._gemini_api_context_limit("single")
+            use_previous_files = self._gemini_api_cross_file_context_enabled("single") and context_limit > 0
+
             begin_progress("Gemini translating Search results", total_entries)
-            QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
-            try:
-                client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
-                updates: dict[int, str] = {}
-                errors = []
-                completed = 0
-                context_limit = self._gemini_api_context_limit()
-                use_previous_files = self._gemini_api_cross_file_context_enabled() and context_limit > 0
-                previous_file_context: list[POEntry] = []
-                groups = list(work_by_file.items())
-                for group_index, (file_path, items) in enumerate(groups):
-                    request_entries = [entry for _result_index, entry in items]
-                    result_by_uid = {entry.uid: result_index for result_index, entry in items}
-
-                    def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
-                        update_progress(offset + done, total_entries, "Gemini translating Search results")
-
-                    translations, entry_errors = translate_entries_with_client(
-                        request_entries,
-                        client,
-                        batch_size=1,
-                        sleep_seconds=sleep_seconds,
-                        allow_partial=False,
-                        prompt=SYSTEM_INSTRUCTIONS,
-                        progress=report_gemini_progress,
-                        context_entries=context_by_file.get(file_path, []),
-                        context_limit=context_limit,
-                        previous_file_context_entries=previous_file_context if use_previous_files else None,
-                    )
-                    errors.extend(entry_errors)
-                    for uid, translation in translations.items():
-                        result_index = result_by_uid.get(uid)
-                        if result_index is not None:
-                            updates[result_index] = translation
-                    if use_previous_files:
-                        file_context = context_by_file.get(file_path, [])
-                        translated_by_uid = dict(translations)
-                        for context_entry in file_context:
-                            translated = translated_by_uid.get(context_entry.uid)
-                            if translated is not None:
-                                context_entry.msgstr = translated
-                        previous_file_context.extend(file_context)
-                        if len(previous_file_context) > context_limit:
-                            previous_file_context = previous_file_context[-context_limit:]
-                    completed += len(items)
-                    if sleep_seconds and group_index + 1 < len(groups):
-                        time.sleep(sleep_seconds)
-            except Exception as exc:
-                finish_progress("Gemini API failed")
-                QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
-                return
-            finally:
-                QApplication.restoreOverrideCursor()
-            finish_progress(f"Gemini prepared {len(updates)} translation(s)")
-            changed = save_updates(updates, progress_label="Saving Gemini translations") if updates else 0
             status.setText(
-                f"Gemini translated and saved {changed} Search result{'s' if changed != 1 else ''}."
-                + save_error_suffix()
+                f"Gemini API translating {total_entries} Search result{'s' if total_entries != 1 else ''}..."
             )
-            if errors:
-                preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
-                more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
-                QMessageBox.warning(
-                    self,
-                    "Gemini API",
-                    f"Saved {changed} result{'s' if changed != 1 else ''}, with {len(errors)} validation issue(s):\n{preview}{more}",
+            search_btn.setEnabled(False)
+            set_search_actions_enabled(False)
+            self.stop_button.setEnabled(True)
+            self._stop_event.clear()
+
+            signals = WorkerSignals()
+            self._active_signals.append(signals)
+            task_state = {"applied": False, "failed": False, "stopped": False, "cleaned": False}
+
+            def gemini_progress(done: int, total: int, label: str) -> None:
+                update_progress(done, total, label, pump_events=False)
+                status.setText(f"{label}: {done}/{total}")
+
+            def apply_gemini_result(payload: object) -> None:
+                if not isinstance(payload, dict):
+                    return
+                updates = payload.get("updates", {})
+                errors = payload.get("errors", [])
+                usage = str(payload.get("usage") or "").strip()
+                if not isinstance(updates, dict) or not isinstance(errors, list):
+                    return
+                task_state["applied"] = True
+                finish_progress(f"Gemini prepared {len(updates)} translation(s)")
+                changed = save_updates(updates, progress_label="Saving Gemini translations") if updates else 0
+                status.setText(
+                    f"Gemini translated and saved {changed} Search result{'s' if changed != 1 else ''}."
+                    + (f" Tokens: {usage}." if usage else "")
+                    + save_error_suffix()
                 )
+                if errors:
+                    preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
+                    more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
+                    QMessageBox.warning(
+                        self,
+                        "Gemini API",
+                        f"Saved {changed} result{'s' if changed != 1 else ''}, with {len(errors)} validation issue(s):\n{preview}{more}",
+                    )
+
+            def gemini_failed(message: str) -> None:
+                stopped = message == "Gemini API translation stopped."
+                task_state["stopped"] = stopped
+                task_state["failed"] = not stopped
+                finish_progress("Gemini API stopped" if stopped else "Gemini API failed")
+                status.setText(message)
+                if not stopped:
+                    QMessageBox.critical(self, "Gemini API", message)
+
+            def finish_gemini_task() -> None:
+                if task_state["cleaned"]:
+                    return
+                task_state["cleaned"] = True
+                search_btn.setEnabled(True)
+                set_search_actions_enabled(True)
+                self.stop_button.setEnabled(False)
+                self._active_thread = None
+                try:
+                    self._active_signals.remove(signals)
+                except ValueError:
+                    pass
+                if not task_state["applied"] and not task_state["failed"] and not task_state["stopped"]:
+                    finish_progress("Gemini API stopped")
+                    status.setText("Gemini API translation stopped.")
+                    task_state["stopped"] = True
+                notification_status = "failed" if task_state["failed"] else ("stopped" if task_state["stopped"] else "success")
+                self._notify_task_complete(notification_status)
+
+            signals.progress.connect(gemini_progress)
+            signals.result.connect(apply_gemini_result)
+            signals.error.connect(gemini_failed)
+            signals.done.connect(finish_gemini_task)
+
+            def gemini_worker() -> None:
+                try:
+                    client = GeminiApiClient(
+                        api_key=api_key,
+                        model=model,
+                        prompt=SYSTEM_INSTRUCTIONS,
+                        timeout_seconds=timeout_seconds,
+                        thinking_mode=thinking_mode,
+                        max_output_tokens=max_output_tokens,
+                    )
+                    updates: dict[int, str] = {}
+                    errors = []
+                    completed = 0
+                    previous_file_context: list[POEntry] = []
+                    groups = list(work_by_file.items())
+                    for group_index, (file_path, items) in enumerate(groups):
+                        self._check_stop()
+                        request_entries = [entry for _result_index, entry in items]
+                        result_by_uid = {entry.uid: result_index for result_index, entry in items}
+
+                        def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
+                            self._check_stop()
+                            signals.progress.emit(offset + done, total_entries, "Gemini translating Search results")
+
+                        translations, entry_errors = translate_entries_with_client(
+                            request_entries,
+                            client,
+                            batch_size=1,
+                            sleep_seconds=sleep_seconds,
+                            allow_partial=False,
+                            prompt=SYSTEM_INSTRUCTIONS,
+                            progress=report_gemini_progress,
+                            context_entries=context_by_file.get(file_path, []),
+                            context_limit=context_limit,
+                            previous_file_context_entries=previous_file_context if use_previous_files else None,
+                            cancel_check=self._check_stop,
+                        )
+                        errors.extend(entry_errors)
+                        for uid, translation in translations.items():
+                            result_index = result_by_uid.get(uid)
+                            if result_index is not None:
+                                updates[result_index] = translation
+                        if use_previous_files:
+                            file_context = context_by_file.get(file_path, [])
+                            translated_by_uid = dict(translations)
+                            for context_entry in file_context:
+                                translated = translated_by_uid.get(context_entry.uid)
+                                if translated is not None:
+                                    context_entry.msgstr = translated
+                            previous_file_context.extend(file_context)
+                            if len(previous_file_context) > context_limit:
+                                previous_file_context = previous_file_context[-context_limit:]
+                        completed += len(items)
+                        if sleep_seconds and group_index + 1 < len(groups):
+                            deadline = time.monotonic() + sleep_seconds
+                            while time.monotonic() < deadline:
+                                self._check_stop()
+                                time.sleep(min(0.1, max(0.0, deadline - time.monotonic())))
+                    self._check_stop()
+                    signals.result.emit({"updates": updates, "errors": errors, "usage": client.total_usage.summary()})
+                except OperationCancelled:
+                    signals.error.emit("Gemini API translation stopped.")
+                except Exception as exc:
+                    signals.error.emit(f"Gemini API translation failed:\n{exc}")
+                finally:
+                    signals.done.emit()
+
+            thread = threading.Thread(target=gemini_worker, daemon=True)
+            self._active_thread = thread
+            thread.start()
 
         def switch_search_file(delta: int) -> None:
             current = current_result_index()
@@ -3732,6 +3899,9 @@ class ToolkitGUI(QMainWindow):
         save_btn.clicked.connect(save_current)
         preset_replace_btn.clicked.connect(preset_replace_selected)
         gemini_btn.clicked.connect(translate_search_with_gemini_api)
+        msgid_box.textChanged.connect(update_search_character_counts)
+        msgstr_box.textChanged.connect(update_search_character_counts)
+        update_search_character_counts()
         msgstr_box.installEventFilter(self)
         prev_btn.clicked.connect(lambda: find_step(-1))
         next_btn.clicked.connect(lambda: find_step(1))
@@ -5076,13 +5246,16 @@ class ToolkitGUI(QMainWindow):
             )
 
         def translate_duplicate_with_gemini_api() -> None:
+            if self._active_thread is not None and self._active_thread.is_alive():
+                QMessageBox.warning(dialog, "Busy", "Another action is already running. Stop it first.")
+                return
             rows = selected_rows_or_current()
             if not rows:
                 QMessageBox.warning(dialog, view_title, "Select duplicate row(s) first.")
                 return
             api_key = str(self.config.get("gemini_api_key", "")).strip() or os.environ.get("GEMINI_API_KEY", "").strip()
             if not api_key:
-                QMessageBox.warning(dialog, view_title, "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
+                QMessageBox.warning(dialog, view_title, "Enter the Gemini API key in the AI Translation tab, or set GEMINI_API_KEY.")
                 return
             work_by_path: dict[Path, list[tuple[int, POEntry]]] = {}
             context_by_path: dict[Path, list[POEntry]] = {}
@@ -5107,102 +5280,186 @@ class ToolkitGUI(QMainWindow):
                 work_by_path.setdefault(path, []).append((row, request_entry))
                 po_file = po_cache.get(path)
                 if po_file is not None:
-                    context_by_path[path] = list(getattr(po_file, "entries", []))
+                    context_by_path[path] = copy.deepcopy(list(getattr(po_file, "entries", [])))
             if not work_by_path:
+                QMessageBox.warning(dialog, view_title, "No duplicate entries were available for Gemini.")
                 return
-            model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
-            sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
+
+            model = self._gemini_api_profile_model("single")
+            sleep_seconds = self._gemini_api_profile_sleep_seconds("single")
+            timeout_seconds = self._gemini_api_timeout_seconds("single")
+            thinking_mode = self._gemini_api_profile_thinking_mode("single")
+            max_output_tokens = self._gemini_api_profile_max_output_tokens("single")
             total_entries = sum(len(items) for items in work_by_path.values())
+            context_limit = self._gemini_api_context_limit("single")
+            use_previous_files = self._gemini_api_cross_file_context_enabled("single") and context_limit > 0
+
             self._begin_task_progress("Gemini duplicate rows", total_entries)
-            self._pump_task_progress()
-            QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
-            try:
-                client = GeminiApiClient(api_key=api_key, model=model, prompt=SYSTEM_INSTRUCTIONS)
-                translations_by_row: dict[int, str] = {}
-                errors = []
-                completed = 0
-                context_limit = self._gemini_api_context_limit()
-                use_previous_files = self._gemini_api_cross_file_context_enabled() and context_limit > 0
-                previous_file_context: list[POEntry] = []
-                groups = list(work_by_path.items())
-                for group_index, (path, items) in enumerate(groups):
-                    request_entries = [entry for _row, entry in items]
-                    row_by_uid = {entry.uid: row for row, entry in items}
+            status.setText(status.text() + f" | Gemini translating {total_entries} row(s)...")
+            for widget in (table, vi_box, gemini_btn):
+                widget.setEnabled(False)
+            self.stop_button.setEnabled(True)
+            self._stop_event.clear()
 
-                    def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
-                        self._update_task_progress(offset + done, total_entries, "Gemini duplicate rows")
-                        self._pump_task_progress()
+            signals = WorkerSignals()
+            self._active_signals.append(signals)
+            task_state = {"applied": False, "failed": False, "stopped": False, "cleaned": False}
 
-                    translations, entry_errors = translate_entries_with_client(
-                        request_entries,
-                        client,
-                        batch_size=1,
-                        sleep_seconds=sleep_seconds,
-                        allow_partial=False,
+            def gemini_progress(done: int, total: int, label: str) -> None:
+                self._update_task_progress(done, total, label)
+                status.setText(status.text().split(" | Gemini translating", 1)[0] + f" | Gemini translating {done}/{total}")
+
+            def apply_gemini_result(payload: object) -> None:
+                if not isinstance(payload, dict):
+                    return
+                translations_by_row = payload.get("translations", {})
+                errors = payload.get("errors", [])
+                usage = str(payload.get("usage") or "").strip()
+                if not isinstance(translations_by_row, dict) or not isinstance(errors, list):
+                    return
+                task_state["applied"] = True
+                changes: list[dict[str, object]] = []
+                changed = 0
+                current_row = table.currentRow()
+                for row, translation in translations_by_row.items():
+                    if not isinstance(row, int) or not isinstance(translation, str):
+                        continue
+                    item = table.item(row, 3)
+                    row_payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+                    path, entry = entry_from_payload(row_payload) if isinstance(row_payload, dict) else (None, None)
+                    if path is None or entry is None or entry.msgstr == translation:
+                        continue
+                    old_text = entry.msgstr
+                    if set_entry_translation(row, translation, update_detail=(row == current_row)):
+                        changes.append(
+                            {
+                                "row": row,
+                                "path": path,
+                                "uid": entry.uid,
+                                "old": old_text,
+                                "new": translation,
+                                "label": "gemini",
+                            }
+                        )
+                        changed += 1
+                push_duplicate_undo(changes)
+                self._finish_task_progress(f"Gemini translated {changed} duplicate entries")
+                update_status()
+                status.setText(status.text() + f" | Gemini changed={changed}" + (f" | tokens: {usage}" if usage else ""))
+                if errors:
+                    preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
+                    more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
+                    QMessageBox.warning(
+                        dialog,
+                        "Gemini API",
+                        f"Translated {changed} duplicate entries, with {len(errors)} validation issue(s):\n{preview}{more}",
+                    )
+
+            def gemini_failed(message: str) -> None:
+                stopped = message == "Gemini API translation stopped."
+                task_state["stopped"] = stopped
+                task_state["failed"] = not stopped
+                self._finish_task_progress("Gemini API stopped" if stopped else "Gemini API failed")
+                status.setText(message)
+                if not stopped:
+                    QMessageBox.critical(dialog, "Gemini API", message)
+
+            def finish_gemini_task() -> None:
+                if task_state["cleaned"]:
+                    return
+                task_state["cleaned"] = True
+                for widget in (table, vi_box, gemini_btn):
+                    try:
+                        widget.setEnabled(True)
+                    except RuntimeError:
+                        pass
+                self.stop_button.setEnabled(False)
+                self._active_thread = None
+                try:
+                    self._active_signals.remove(signals)
+                except ValueError:
+                    pass
+                if not task_state["applied"] and not task_state["failed"] and not task_state["stopped"]:
+                    self._finish_task_progress("Gemini API stopped")
+                    task_state["stopped"] = True
+                notification_status = "failed" if task_state["failed"] else ("stopped" if task_state["stopped"] else "success")
+                self._notify_task_complete(notification_status)
+
+            signals.progress.connect(gemini_progress)
+            signals.result.connect(apply_gemini_result)
+            signals.error.connect(gemini_failed)
+            signals.done.connect(finish_gemini_task)
+
+            def gemini_worker() -> None:
+                try:
+                    client = GeminiApiClient(
+                        api_key=api_key,
+                        model=model,
                         prompt=SYSTEM_INSTRUCTIONS,
-                        progress=report_gemini_progress,
-                        context_entries=context_by_path.get(path, []),
-                        context_limit=context_limit,
-                        previous_file_context_entries=previous_file_context if use_previous_files else None,
+                        timeout_seconds=timeout_seconds,
+                        thinking_mode=thinking_mode,
+                        max_output_tokens=max_output_tokens,
                     )
-                    errors.extend(entry_errors)
-                    for uid, translation in translations.items():
-                        row = row_by_uid.get(uid)
-                        if row is not None:
-                            translations_by_row[row] = translation
-                    if use_previous_files:
-                        file_context = context_by_path.get(path, [])
-                        translated_by_uid = dict(translations)
-                        for context_entry in file_context:
-                            translated = translated_by_uid.get(context_entry.uid)
-                            if translated is not None:
-                                context_entry.msgstr = translated
-                        previous_file_context.extend(file_context)
-                        if len(previous_file_context) > context_limit:
-                            previous_file_context = previous_file_context[-context_limit:]
-                    completed += len(items)
-                    if sleep_seconds and group_index + 1 < len(groups):
-                        time.sleep(sleep_seconds)
-            except Exception as exc:
-                self._finish_task_progress("Gemini API failed")
-                QMessageBox.critical(dialog, "Gemini API", f"Gemini API translation failed:\n{exc}")
-                return
-            finally:
-                QApplication.restoreOverrideCursor()
-            changes: list[dict[str, object]] = []
-            changed = 0
-            current_row = table.currentRow()
-            for row, translation in translations_by_row.items():
-                item = table.item(row, 3)
-                payload = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
-                path, entry = entry_from_payload(payload) if isinstance(payload, dict) else (None, None)
-                if path is None or entry is None or entry.msgstr == translation:
-                    continue
-                old_text = entry.msgstr
-                if set_entry_translation(row, translation, update_detail=(row == current_row)):
-                    changes.append(
-                        {
-                            "row": row,
-                            "path": path,
-                            "uid": entry.uid,
-                            "old": old_text,
-                            "new": translation,
-                            "label": "gemini",
-                        }
-                    )
-                    changed += 1
-            push_duplicate_undo(changes)
-            self._finish_task_progress(f"Gemini translated {changed} duplicate entries")
-            update_status()
-            status.setText(status.text() + f" | Gemini changed={changed}")
-            if errors:
-                preview = "\n".join(f"{entry.msgctxt or entry.uid}: {entry.reason}" for entry in errors[:8])
-                more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
-                QMessageBox.warning(
-                    dialog,
-                    "Gemini API",
-                    f"Translated {changed} duplicate entries, with {len(errors)} validation issue(s):\n{preview}{more}",
-                )
+                    translations_by_row: dict[int, str] = {}
+                    errors = []
+                    completed = 0
+                    previous_file_context: list[POEntry] = []
+                    groups = list(work_by_path.items())
+                    for group_index, (path, items) in enumerate(groups):
+                        self._check_stop()
+                        request_entries = [entry for _row, entry in items]
+                        row_by_uid = {entry.uid: row for row, entry in items}
+
+                        def report_gemini_progress(done: int, _total: int, *, offset: int = completed) -> None:
+                            self._check_stop()
+                            signals.progress.emit(offset + done, total_entries, "Gemini duplicate rows")
+
+                        translations, entry_errors = translate_entries_with_client(
+                            request_entries,
+                            client,
+                            batch_size=1,
+                            sleep_seconds=sleep_seconds,
+                            allow_partial=False,
+                            prompt=SYSTEM_INSTRUCTIONS,
+                            progress=report_gemini_progress,
+                            context_entries=context_by_path.get(path, []),
+                            context_limit=context_limit,
+                            previous_file_context_entries=previous_file_context if use_previous_files else None,
+                            cancel_check=self._check_stop,
+                        )
+                        errors.extend(entry_errors)
+                        for uid, translation in translations.items():
+                            row = row_by_uid.get(uid)
+                            if row is not None:
+                                translations_by_row[row] = translation
+                        if use_previous_files:
+                            file_context = context_by_path.get(path, [])
+                            translated_by_uid = dict(translations)
+                            for context_entry in file_context:
+                                translated = translated_by_uid.get(context_entry.uid)
+                                if translated is not None:
+                                    context_entry.msgstr = translated
+                            previous_file_context.extend(file_context)
+                            if len(previous_file_context) > context_limit:
+                                previous_file_context = previous_file_context[-context_limit:]
+                        completed += len(items)
+                        if sleep_seconds and group_index + 1 < len(groups):
+                            deadline = time.monotonic() + sleep_seconds
+                            while time.monotonic() < deadline:
+                                self._check_stop()
+                                time.sleep(min(0.1, max(0.0, deadline - time.monotonic())))
+                    self._check_stop()
+                    signals.result.emit({"translations": translations_by_row, "errors": errors, "usage": client.total_usage.summary()})
+                except OperationCancelled:
+                    signals.error.emit("Gemini API translation stopped.")
+                except Exception as exc:
+                    signals.error.emit(f"Gemini API translation failed:\n{exc}")
+                finally:
+                    signals.done.emit()
+
+            thread = threading.Thread(target=gemini_worker, daemon=True)
+            self._active_thread = thread
+            thread.start()
 
         def switch_duplicate_file(delta: int) -> None:
             payload = current_payload()
@@ -7572,6 +7829,9 @@ class ToolkitGUI(QMainWindow):
             return [entry for chunk in chunks for entry in chunk]
 
         def translate_selected_with_gemini_api() -> None:
+            if self._active_thread is not None and self._active_thread.is_alive():
+                QMessageBox.warning(self, "Busy", "Another action is already running. Stop it first.")
+                return
             po = po_file()
             if po is None:
                 QMessageBox.warning(self, "PO Viewer", "Load a file first.")
@@ -7584,61 +7844,155 @@ class ToolkitGUI(QMainWindow):
                 return
             api_key = str(self.config.get("gemini_api_key", "")).strip() or os.environ.get("GEMINI_API_KEY", "").strip()
             if not api_key:
-                QMessageBox.warning(self, "PO Viewer", "Enter the Gemini API key in the Gemini Web tab, or set GEMINI_API_KEY.")
+                QMessageBox.warning(self, "PO Viewer", "Enter the Gemini API key in the AI Translation tab, or set GEMINI_API_KEY.")
                 return
+
             prompt = SYSTEM_INSTRUCTIONS
-            model = str(self.config.get("gemini_api_model", "gemini-2.5-flash")).strip() or "gemini-2.5-flash"
-            batch_size = max(1, int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
-            sleep_seconds = float(self.config.get("gemini_api_sleep_seconds", 1.0))
-            context_limit = self._gemini_api_context_limit()
-            previous_file_context = previous_po_viewer_file_context(context_limit)
-            entries = [po.entries[row] for row in rows if 0 <= row < len(po.entries)]  # type: ignore[union-attr]
-            self._begin_task_progress("Gemini API PO entries", len(entries))
-            self._pump_task_progress()
-            QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
-            try:
-                client = GeminiApiClient(api_key=api_key, model=model, prompt=prompt)
+            model = self._gemini_api_profile_model("single")
+            batch_size = 1
+            sleep_seconds = self._gemini_api_profile_sleep_seconds("single")
+            timeout_seconds = self._gemini_api_timeout_seconds("single")
+            thinking_mode = self._gemini_api_profile_thinking_mode("single")
+            max_output_tokens = self._gemini_api_profile_max_output_tokens("single")
+            context_limit = self._gemini_api_context_limit("single")
+            source_po = po
+            source_path = current_path()
+            original_entries = [po.entries[row] for row in rows if 0 <= row < len(po.entries)]  # type: ignore[union-attr]
+            request_entries = copy.deepcopy(original_entries)
+            context_entries = copy.deepcopy(list(po.entries))  # type: ignore[union-attr]
+            previous_file_context = copy.deepcopy(previous_po_viewer_file_context(context_limit))
+            by_uid = {entry.uid: row for row, entry in zip(rows, request_entries)}
 
-                def report_gemini_progress(done: int, total: int) -> None:
-                    self._update_task_progress(done, total, "Gemini API PO entries")
-                    self._pump_task_progress()
+            self._begin_task_progress("Gemini API PO entries", len(request_entries))
+            set_status(
+                f"Gemini API translating {len(request_entries)} selected entr{'y' if len(request_entries) == 1 else 'ies'}..."
+            )
+            _tab.setEnabled(False)
+            self.stop_button.setEnabled(True)
+            self._stop_event.clear()
 
-                translations, errors = translate_entries_with_client(
-                    entries,
-                    client,
-                    batch_size=batch_size,
-                    sleep_seconds=sleep_seconds,
-                    allow_partial=False,
-                    prompt=prompt,
-                    progress=report_gemini_progress,
-                    context_entries=po.entries,  # type: ignore[union-attr]
-                    context_limit=context_limit,
-                    previous_file_context_entries=previous_file_context or None,
-                )
+            signals = WorkerSignals()
+            self._active_signals.append(signals)
+            task_state = {"applied": False, "failed": False, "stopped": False, "cleaned": False}
+
+            def gemini_progress(done: int, total: int, label: str) -> None:
+                self._update_task_progress(done, total, label)
+                set_status(f"Gemini API translating selected entries: {done}/{total}")
+
+            def apply_gemini_result(payload: object) -> None:
+                if not isinstance(payload, dict):
+                    return
+                translations = payload.get("translations", {})
+                errors = payload.get("errors", [])
+                usage = str(payload.get("usage") or "").strip()
+                if not isinstance(translations, dict) or not isinstance(errors, list):
+                    return
+                task_state["applied"] = True
+                if po_file() is not source_po or current_path() != source_path:
+                    self._finish_task_progress("Gemini result not applied")
+                    QMessageBox.warning(
+                        self,
+                        "Gemini API",
+                        "The loaded PO file changed while Gemini was working, so the returned translation was not applied.",
+                    )
+                    return
                 changed = 0
-                by_uid = {entry.uid: row for row, entry in zip(rows, entries)}
                 begin_po_undo_batch("gemini")
                 try:
                     for uid, translation in translations.items():
                         row = by_uid.get(uid)
-                        if row is not None and set_entry_translation(row, translation, undo_label="gemini"):
+                        if row is not None and isinstance(translation, str) and set_entry_translation(row, translation, undo_label="gemini"):
                             changed += 1
                 finally:
                     end_po_undo_batch()
                 refresh_suggestions_for_row(table.currentRow())
-            except Exception as exc:
-                self._finish_task_progress("Gemini API failed")
-                QMessageBox.critical(self, "Gemini API", f"Gemini API translation failed:\n{exc}")
-                return
-            finally:
-                QApplication.restoreOverrideCursor()
-            self._finish_task_progress(f"Gemini translated {changed} PO entr{'y' if changed == 1 else 'ies'}")
-            if errors:
-                preview = "\n".join(f"{e.msgctxt or e.uid}: {e.reason}" for e in errors[:8])
-                more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
-                QMessageBox.warning(self, "Gemini API", f"Translated {changed} entr{'y' if changed == 1 else 'ies'}, with {len(errors)} validation issue(s):\n{preview}{more}")
-            else:
-                set_status(f"Gemini API translated {changed} selected entr{'y' if changed == 1 else 'ies'}. Save when ready.")
+                self._finish_task_progress(f"Gemini translated {changed} PO entr{'y' if changed == 1 else 'ies'}")
+                if errors:
+                    preview = "\n".join(f"{e.msgctxt or e.uid}: {e.reason}" for e in errors[:8])
+                    more = f"\n... {len(errors) - 8} more" if len(errors) > 8 else ""
+                    QMessageBox.warning(
+                        self,
+                        "Gemini API",
+                        f"Translated {changed} entr{'y' if changed == 1 else 'ies'}, with {len(errors)} validation issue(s):\n{preview}{more}",
+                    )
+                else:
+                    set_status(
+                        f"Gemini API translated {changed} selected entr{'y' if changed == 1 else 'ies'}. Save when ready."
+                        + (f" Tokens: {usage}." if usage else "")
+                    )
+
+            def gemini_failed(message: str) -> None:
+                stopped = message == "Gemini API translation stopped."
+                task_state["stopped"] = stopped
+                task_state["failed"] = not stopped
+                self._finish_task_progress("Gemini API stopped" if stopped else "Gemini API failed")
+                set_status(message)
+                if not stopped:
+                    QMessageBox.critical(self, "Gemini API", message)
+
+            def finish_gemini_task() -> None:
+                if task_state["cleaned"]:
+                    return
+                task_state["cleaned"] = True
+                _tab.setEnabled(True)
+                self.stop_button.setEnabled(False)
+                self._active_thread = None
+                try:
+                    self._active_signals.remove(signals)
+                except ValueError:
+                    pass
+                if not task_state["applied"] and not task_state["failed"] and not task_state["stopped"]:
+                    self._finish_task_progress("Gemini API stopped")
+                    set_status("Gemini API translation stopped.")
+                    task_state["stopped"] = True
+                notification_status = "failed" if task_state["failed"] else ("stopped" if task_state["stopped"] else "success")
+                self._notify_task_complete(notification_status)
+
+            signals.progress.connect(gemini_progress)
+            signals.result.connect(apply_gemini_result)
+            signals.error.connect(gemini_failed)
+            signals.done.connect(finish_gemini_task)
+
+            def gemini_worker() -> None:
+                try:
+                    client = GeminiApiClient(
+                        api_key=api_key,
+                        model=model,
+                        prompt=prompt,
+                        timeout_seconds=timeout_seconds,
+                        thinking_mode=thinking_mode,
+                        max_output_tokens=max_output_tokens,
+                    )
+
+                    def report_gemini_progress(done: int, total: int) -> None:
+                        self._check_stop()
+                        signals.progress.emit(done, total, "Gemini API PO entries")
+
+                    translations, errors = translate_entries_with_client(
+                        request_entries,
+                        client,
+                        batch_size=batch_size,
+                        sleep_seconds=sleep_seconds,
+                        allow_partial=False,
+                        prompt=prompt,
+                        progress=report_gemini_progress,
+                        context_entries=context_entries,
+                        context_limit=context_limit,
+                        previous_file_context_entries=previous_file_context or None,
+                        cancel_check=self._check_stop,
+                    )
+                    self._check_stop()
+                    signals.result.emit({"translations": translations, "errors": errors, "usage": client.total_usage.summary()})
+                except OperationCancelled:
+                    signals.error.emit("Gemini API translation stopped.")
+                except Exception as exc:
+                    signals.error.emit(f"Gemini API translation failed:\n{exc}")
+                finally:
+                    signals.done.emit()
+
+            thread = threading.Thread(target=gemini_worker, daemon=True)
+            self._active_thread = thread
+            thread.start()
 
         def current_changed(row: int, _col: int, previous_row: int, _prev_col: int) -> None:
             if state.get("loading"):
@@ -7784,54 +8138,143 @@ class ToolkitGUI(QMainWindow):
         chatgpt_web_toggle.setToolTip("Affects Web tab mode only. Gemini API mode always uses Gemini.")
         form.addRow("Web provider", chatgpt_web_toggle)
 
-        api_key_wrap = QWidget()
-        api_key_row = QHBoxLayout(api_key_wrap)
-        api_key_row.setContentsMargins(0, 0, 0, 0)
-        api_key_toggle = QCheckBox("Use Gemini API key")
-        api_key_toggle.setChecked(bool(self.config.get("gemini_api_use_key", False)) or saved_mode == "api")
         api_key_edit = QLineEdit(str(self.config.get("gemini_api_key", "")))
         api_key_edit.setEchoMode(QLineEdit.EchoMode.Password)
-        api_key_edit.setPlaceholderText("Paste API key here, or leave blank and set GEMINI_API_KEY")
-        api_key_row.addWidget(api_key_toggle)
-        api_key_row.addWidget(api_key_edit, 1)
-        form.addRow("Gemini API", api_key_wrap)
-
-        api_model_edit = QLineEdit(str(self.config.get("gemini_api_model", self.config.get("gemini_model", "gemini-2.5-flash"))))
-        form.addRow("API model", api_model_edit)
-
-        api_context_wrap = QWidget()
-        api_context_row = QHBoxLayout(api_context_wrap)
-        api_context_row.setContentsMargins(0, 0, 0, 0)
-        api_context_row.setSpacing(8)
-        api_context_entries = QSpinBox()
-        api_context_entries.setRange(0, 200)
-        api_context_entries.setValue(self._gemini_api_context_limit())
-        api_context_entries.setFixedWidth(72)
-        api_context_entries.setToolTip("Maximum number of previous English/Vietnamese entries sent as continuity context. Set 0 to disable.")
-        api_context_across_files = QCheckBox("Include previous files")
-        api_context_across_files.setChecked(self._gemini_api_cross_file_context_enabled())
-        api_context_across_files.setToolTip(
-            "Off: context never leaves the current PO file. On: if the current file has too few earlier entries, fill the remaining context from earlier PO files."
+        api_key_edit.setPlaceholderText("Shared by single-entry and mass Gemini API translation, or set GEMINI_API_KEY")
+        api_key_edit.setToolTip(
+            "This key is shared. The settings below are separate: Single entry is used by Search, duplicate views, and PO Viewer; Mass translation is used by this tab."
         )
-        api_context_row.addWidget(api_context_entries)
-        api_context_row.addWidget(api_context_across_files)
-        api_context_row.addStretch()
-        form.addRow("Previous context", api_context_wrap)
-
+        form.addRow("Gemini API key", api_key_edit)
         layout.addLayout(form)
 
-        grid = QGridLayout()
-        max_files = QSpinBox(); max_files.setRange(0, 9999); max_files.setValue(int(self.config.get("gemini_web_max_files", 59)))
+        def make_thinking_combo(saved: str) -> QComboBox:
+            combo = QComboBox()
+            for label, value in (
+                ("Off / lowest cost", "off"),
+                ("Minimal", "minimal"),
+                ("Low", "low"),
+                ("Medium", "medium"),
+                ("High", "high"),
+                ("Dynamic / model default", "dynamic"),
+            ):
+                combo.addItem(label, value)
+            index = combo.findData(saved)
+            combo.setCurrentIndex(index if index >= 0 else 0)
+            combo.setToolTip("Gemini 2.5 uses a thinking-token budget. Gemini 3 Flash/Lite maps Off to Minimal; Gemini 3 Pro maps Off or Minimal to Low.")
+            return combo
+
+        api_profiles = QTabWidget()
+
+        single_page = QWidget()
+        single_form = QFormLayout(single_page)
+        single_note = QLabel("Used by AI buttons in Search, duplicate/diff views, and PO Viewer. Each selected entry is a separate request.")
+        single_note.setWordWrap(True)
+        single_form.addRow(single_note)
+        api_single_model_edit = QLineEdit(self._gemini_api_profile_model("single"))
+        single_form.addRow("Model", api_single_model_edit)
+        api_single_timeout_seconds = QSpinBox()
+        api_single_timeout_seconds.setRange(5, 3600)
+        api_single_timeout_seconds.setValue(int(self._gemini_api_timeout_seconds("single")))
+        api_single_timeout_seconds.setSuffix(" s")
+        single_form.addRow("Request timeout", api_single_timeout_seconds)
+        api_single_context_wrap = QWidget()
+        api_single_context_row = QHBoxLayout(api_single_context_wrap)
+        api_single_context_row.setContentsMargins(0, 0, 0, 0)
+        api_single_context_entries = QSpinBox()
+        api_single_context_entries.setRange(0, 200)
+        api_single_context_entries.setValue(self._gemini_api_context_limit("single"))
+        api_single_context_entries.setFixedWidth(72)
+        api_single_context_entries.setToolTip("Previous English/Vietnamese entries sent only for continuity. Recommended: 3 to 5.")
+        api_single_context_across_files = QCheckBox("Include previous files")
+        api_single_context_across_files.setChecked(self._gemini_api_cross_file_context_enabled("single"))
+        api_single_context_row.addWidget(api_single_context_entries)
+        api_single_context_row.addWidget(api_single_context_across_files)
+        api_single_context_row.addStretch()
+        single_form.addRow("Previous context", api_single_context_wrap)
+        api_single_wait_seconds = QDoubleSpinBox()
+        api_single_wait_seconds.setRange(0.0, 300.0)
+        api_single_wait_seconds.setDecimals(1)
+        api_single_wait_seconds.setSingleStep(0.1)
+        api_single_wait_seconds.setValue(self._gemini_api_profile_sleep_seconds("single"))
+        api_single_wait_seconds.setSuffix(" s")
+        single_form.addRow("Delay between requests", api_single_wait_seconds)
+        api_single_thinking = make_thinking_combo(self._gemini_api_profile_thinking_mode("single"))
+        single_form.addRow("Thinking", api_single_thinking)
+        api_single_max_output = QSpinBox()
+        api_single_max_output.setRange(0, 65536)
+        api_single_max_output.setValue(self._gemini_api_profile_max_output_tokens("single"))
+        api_single_max_output.setSpecialValueText("Auto")
+        api_single_max_output.setToolTip("Auto sizes a safe cap from the English source. A cap prevents runaway output; unused capacity is not billed.")
+        single_form.addRow("Max output tokens", api_single_max_output)
+        api_profiles.addTab(single_page, "Single-entry API")
+
+        mass_page = QWidget()
+        mass_form = QFormLayout(mass_page)
+        mass_note = QLabel("Used only by Run Gemini API below. Current entries are batched while previous context is sent once per batch.")
+        mass_note.setWordWrap(True)
+        mass_form.addRow(mass_note)
+        api_mass_model_edit = QLineEdit(self._gemini_api_profile_model("mass"))
+        mass_form.addRow("Model", api_mass_model_edit)
+        api_mass_timeout_seconds = QSpinBox()
+        api_mass_timeout_seconds.setRange(5, 3600)
+        api_mass_timeout_seconds.setValue(int(self._gemini_api_timeout_seconds("mass")))
+        api_mass_timeout_seconds.setSuffix(" s")
+        mass_form.addRow("Request timeout", api_mass_timeout_seconds)
+        api_mass_max_files = QSpinBox()
+        api_mass_max_files.setRange(0, 9999)
+        api_mass_max_files.setValue(int(self.config.get("gemini_api_mass_max_files", 59)))
+        api_mass_max_files.setSpecialValueText("All")
+        mass_form.addRow("Max files", api_mass_max_files)
+        api_mass_batch_entries = QSpinBox()
+        api_mass_batch_entries.setRange(1, 200)
+        api_mass_batch_entries.setValue(int(self.config.get("gemini_api_mass_batch_entries", 40)))
+        api_mass_batch_entries.setToolTip("Number of untranslated current entries per API request. Recommended: 20 to 40.")
+        mass_form.addRow("Entries per batch", api_mass_batch_entries)
+        api_mass_context_wrap = QWidget()
+        api_mass_context_row = QHBoxLayout(api_mass_context_wrap)
+        api_mass_context_row.setContentsMargins(0, 0, 0, 0)
+        api_mass_context_entries = QSpinBox()
+        api_mass_context_entries.setRange(0, 200)
+        api_mass_context_entries.setValue(self._gemini_api_context_limit("mass"))
+        api_mass_context_entries.setFixedWidth(72)
+        api_mass_context_entries.setToolTip("Previous translated entries sent once before each batch. Recommended: 3 to 5.")
+        api_mass_context_across_files = QCheckBox("Include previous files")
+        api_mass_context_across_files.setChecked(self._gemini_api_cross_file_context_enabled("mass"))
+        api_mass_context_row.addWidget(api_mass_context_entries)
+        api_mass_context_row.addWidget(api_mass_context_across_files)
+        api_mass_context_row.addStretch()
+        mass_form.addRow("Previous context", api_mass_context_wrap)
+        api_mass_wait_seconds = QDoubleSpinBox()
+        api_mass_wait_seconds.setRange(0.0, 300.0)
+        api_mass_wait_seconds.setDecimals(1)
+        api_mass_wait_seconds.setSingleStep(0.1)
+        api_mass_wait_seconds.setValue(self._gemini_api_profile_sleep_seconds("mass"))
+        api_mass_wait_seconds.setSuffix(" s")
+        mass_form.addRow("Delay between batches", api_mass_wait_seconds)
+        api_mass_thinking = make_thinking_combo(self._gemini_api_profile_thinking_mode("mass"))
+        mass_form.addRow("Thinking", api_mass_thinking)
+        api_mass_max_output = QSpinBox()
+        api_mass_max_output.setRange(0, 65536)
+        api_mass_max_output.setValue(self._gemini_api_profile_max_output_tokens("mass"))
+        api_mass_max_output.setSpecialValueText("Auto")
+        api_mass_max_output.setToolTip("Auto sizes a safe cap for each batch. Unused output capacity is not billed.")
+        mass_form.addRow("Max output tokens", api_mass_max_output)
+        api_profiles.addTab(mass_page, "Mass-translation API")
+        layout.addWidget(api_profiles)
+
+        web_group = QGroupBox("Web translation settings")
+        grid = QGridLayout(web_group)
+        web_max_files = QSpinBox(); web_max_files.setRange(0, 9999); web_max_files.setValue(int(self.config.get("gemini_web_max_files", 59)))
         max_lines = QSpinBox(); max_lines.setRange(1, 9999); max_lines.setValue(int(self.config.get("gemini_web_max_lines", 600)))
         max_entries = QSpinBox(); max_entries.setRange(1, 999); max_entries.setValue(int(self.config.get("gemini_web_max_entries", DEFAULT_MAX_ENTRIES_PER_BATCH)))
         wait_seconds = QDoubleSpinBox(); wait_seconds.setRange(2.5, 999.0); wait_seconds.setDecimals(1); wait_seconds.setSingleStep(0.5); wait_seconds.setValue(max(2.5, float(self.config.get("gemini_web_wait_seconds", 2.5))))
         timeout_seconds = QSpinBox(); timeout_seconds.setRange(1, 9999); timeout_seconds.setValue(int(self.config.get("gemini_web_timeout_seconds", 180)))
         retries = QSpinBox(); retries.setRange(0, 99); retries.setValue(int(self.config.get("gemini_web_retries", DEFAULT_BATCH_RETRIES)))
-        controls = [("Max files", max_files), ("Max lines", max_lines), ("Max entries", max_entries), ("Post-save wait", wait_seconds), ("Timeout", timeout_seconds), ("Retries", retries)]
+        controls = [("Max files", web_max_files), ("Max lines", max_lines), ("Max entries", max_entries), ("Post-save wait", wait_seconds), ("Timeout", timeout_seconds), ("Retries", retries)]
         for i, (label, widget) in enumerate(controls):
             grid.addWidget(QLabel(label), 0, i)
             grid.addWidget(widget, 1, i)
-        layout.addLayout(grid)
+        layout.addWidget(web_group)
 
         flags = QHBoxLayout()
         rename_dupes = QCheckBox("Rename (1)"); rename_dupes.setChecked(True)
@@ -7856,7 +8299,7 @@ class ToolkitGUI(QMainWindow):
         layout.addWidget(log, 1)
 
         def api_mode_enabled() -> bool:
-            return str(mode_combo.currentData()) == "api" or api_key_toggle.isChecked()
+            return str(mode_combo.currentData()) == "api"
 
         def web_provider_name() -> str:
             return "ChatGPT" if chatgpt_web_toggle.isChecked() else "Gemini"
@@ -7871,10 +8314,9 @@ class ToolkitGUI(QMainWindow):
             rename_dupes.setEnabled(not is_api)
             backup_missing.setEnabled(not is_api)
             rename_folders.setEnabled(not is_api)
-            api_key_edit.setEnabled(is_api)
-            api_model_edit.setEnabled(is_api)
-            api_context_entries.setEnabled(is_api)
-            api_context_across_files.setEnabled(is_api and api_context_entries.value() > 0)
+            web_group.setEnabled(not is_api)
+            api_single_context_across_files.setEnabled(api_single_context_entries.value() > 0)
+            api_mass_context_across_files.setEnabled(api_mass_context_entries.value() > 0)
             chrome_btn.setEnabled(not is_api)
             run_btn.setText("Run Gemini API" if is_api else f"Run {web_provider_name()} Web")
 
@@ -7882,18 +8324,29 @@ class ToolkitGUI(QMainWindow):
             self.config["gemini_translate_mode"] = "api" if api_mode_enabled() else "web"
             self.config["gemini_web_cdp_url"] = cdp_edit.text().strip() or "http://localhost:9222"
             self.config["gemini_web_use_chatgpt"] = chatgpt_web_toggle.isChecked()
-            self.config["gemini_web_max_files"] = max_files.value()
+            self.config["gemini_web_max_files"] = web_max_files.value()
             self.config["gemini_web_max_lines"] = max_lines.value()
             self.config["gemini_web_max_entries"] = max_entries.value()
             self.config["gemini_web_wait_seconds"] = wait_seconds.value()
             self.config["gemini_web_timeout_seconds"] = timeout_seconds.value()
             self.config["gemini_web_retries"] = retries.value()
-            self.config["gemini_api_use_key"] = api_key_toggle.isChecked()
             self.config["gemini_api_key"] = api_key_edit.text().strip()
-            self.config["gemini_api_model"] = api_model_edit.text().strip() or "gemini-2.5-flash"
-            self.config["gemini_api_sleep_seconds"] = wait_seconds.value()
-            self.config["gemini_api_context_entries"] = api_context_entries.value()
-            self.config["gemini_api_context_across_files"] = api_context_across_files.isChecked()
+            self.config["gemini_api_single_model"] = api_single_model_edit.text().strip() or "gemini-2.5-flash"
+            self.config["gemini_api_single_timeout_seconds"] = api_single_timeout_seconds.value()
+            self.config["gemini_api_single_context_entries"] = api_single_context_entries.value()
+            self.config["gemini_api_single_context_across_files"] = api_single_context_across_files.isChecked()
+            self.config["gemini_api_single_sleep_seconds"] = api_single_wait_seconds.value()
+            self.config["gemini_api_single_thinking_mode"] = str(api_single_thinking.currentData())
+            self.config["gemini_api_single_max_output_tokens"] = api_single_max_output.value()
+            self.config["gemini_api_mass_model"] = api_mass_model_edit.text().strip() or "gemini-2.5-flash"
+            self.config["gemini_api_mass_timeout_seconds"] = api_mass_timeout_seconds.value()
+            self.config["gemini_api_mass_max_files"] = api_mass_max_files.value()
+            self.config["gemini_api_mass_batch_entries"] = api_mass_batch_entries.value()
+            self.config["gemini_api_mass_context_entries"] = api_mass_context_entries.value()
+            self.config["gemini_api_mass_context_across_files"] = api_mass_context_across_files.isChecked()
+            self.config["gemini_api_mass_sleep_seconds"] = api_mass_wait_seconds.value()
+            self.config["gemini_api_mass_thinking_mode"] = str(api_mass_thinking.currentData())
+            self.config["gemini_api_mass_max_output_tokens"] = api_mass_max_output.value()
             save_config(self.config)
 
         def run_web(logwrite, progresswrite):
@@ -7903,7 +8356,7 @@ class ToolkitGUI(QMainWindow):
                 return
             provider = web_provider_name()
             runner = run_chatgpt_web_path if provider == "ChatGPT" else run_gemini_web_path
-            limit = max_files.value()
+            limit = web_max_files.value()
             remaining = None if limit <= 0 else limit
             total_files = 0
             total_translated = 0
@@ -7970,8 +8423,15 @@ class ToolkitGUI(QMainWindow):
             if not paths:
                 return
             prompt = SYSTEM_INSTRUCTIONS
-            client = GeminiApiClient(api_key=api_key, model=api_model_edit.text().strip() or "gemini-2.5-flash", prompt=prompt)
-            limit = max_files.value()
+            client = GeminiApiClient(
+                api_key=api_key,
+                model=api_mass_model_edit.text().strip() or "gemini-2.5-flash",
+                prompt=prompt,
+                timeout_seconds=api_mass_timeout_seconds.value(),
+                thinking_mode=str(api_mass_thinking.currentData()),
+                max_output_tokens=api_mass_max_output.value(),
+            )
+            limit = api_mass_max_files.value()
             po_files: list[Path] = []
             seen: set[str] = set()
             for base in paths:
@@ -7995,8 +8455,8 @@ class ToolkitGUI(QMainWindow):
                 return
             total_changed = 0
             total_errors = 0
-            context_limit = self._gemini_api_context_limit()
-            use_previous_files = api_context_across_files.isChecked() and context_limit > 0
+            context_limit = api_mass_context_entries.value()
+            use_previous_files = api_mass_context_across_files.isChecked() and context_limit > 0
             previous_file_context: list[POEntry] = []
             progresswrite(0, len(po_files), "Gemini API files")
             for idx, po_path in enumerate(po_files, start=1):
@@ -8006,12 +8466,13 @@ class ToolkitGUI(QMainWindow):
                 changed, errors = translate_file_with_client(
                     po_path,
                     client,
-                    batch_size=max_entries.value(),
-                    sleep_seconds=wait_seconds.value(),
+                    batch_size=api_mass_batch_entries.value(),
+                    sleep_seconds=api_mass_wait_seconds.value(),
                     allow_partial=bool(allow_state["value"]),
                     prompt=prompt,
                     context_limit=context_limit,
                     previous_file_context_entries=previous_file_context if use_previous_files else None,
+                    cancel_check=self._check_stop,
                 )
                 total_changed += changed
                 total_errors += len(errors)
@@ -8031,6 +8492,7 @@ class ToolkitGUI(QMainWindow):
                     logwrite(f"  ... {len(errors) - 40} more errors", "warn")
                 progresswrite(idx, len(po_files), f"Gemini API {po_path.name}")
             logwrite(f"Total translated: {total_changed}", "good")
+            logwrite(f"Token usage: {client.total_usage.summary()}", "good")
             if total_errors:
                 logwrite(f"Total errors: {total_errors}", "bad")
 
@@ -8055,21 +8517,51 @@ class ToolkitGUI(QMainWindow):
             logwrite("Command: " + " ".join(str(x) for x in cmd))
             progresswrite(1, 1, "Chrome opened")
 
-        mode_combo.currentIndexChanged.connect(lambda _idx: (api_key_toggle.setChecked(str(mode_combo.currentData()) == "api"), sync_mode_ui()))
-        api_key_toggle.stateChanged.connect(lambda _state: sync_mode_ui())
+        mode_combo.currentIndexChanged.connect(lambda _idx: (sync_mode_ui(), save_web_config()))
         chatgpt_web_toggle.stateChanged.connect(lambda _state: (sync_mode_ui(), save_web_config()))
         api_key_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_key", text.strip()))
-        api_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_model", text.strip()))
-        api_context_entries.valueChanged.connect(
+        api_single_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_single_model", text.strip()))
+        api_mass_model_edit.textChanged.connect(lambda text: self.config.__setitem__("gemini_api_mass_model", text.strip()))
+        api_single_context_entries.valueChanged.connect(
             lambda value: (
-                self.config.__setitem__("gemini_api_context_entries", int(value)),
-                api_context_across_files.setEnabled(api_mode_enabled() and int(value) > 0),
+                self.config.__setitem__("gemini_api_single_context_entries", int(value)),
+                api_single_context_across_files.setEnabled(int(value) > 0),
+                save_web_config(),
             )
         )
-        api_context_across_files.stateChanged.connect(
-            lambda _state: self.config.__setitem__("gemini_api_context_across_files", api_context_across_files.isChecked())
+        api_mass_context_entries.valueChanged.connect(
+            lambda value: (
+                self.config.__setitem__("gemini_api_mass_context_entries", int(value)),
+                api_mass_context_across_files.setEnabled(int(value) > 0),
+                save_web_config(),
+            )
         )
-        for widget in [cdp_edit, api_key_edit, api_model_edit]:
+        api_single_context_across_files.stateChanged.connect(
+            lambda _state: save_web_config()
+        )
+        api_mass_context_across_files.stateChanged.connect(
+            lambda _state: save_web_config()
+        )
+        for widget in (
+            api_single_timeout_seconds,
+            api_single_wait_seconds,
+            api_single_max_output,
+            api_mass_timeout_seconds,
+            api_mass_max_files,
+            api_mass_batch_entries,
+            api_mass_wait_seconds,
+            api_mass_max_output,
+            web_max_files,
+            max_lines,
+            max_entries,
+            wait_seconds,
+            timeout_seconds,
+            retries,
+        ):
+            widget.valueChanged.connect(lambda _value: save_web_config())
+        api_single_thinking.currentIndexChanged.connect(lambda _index: save_web_config())
+        api_mass_thinking.currentIndexChanged.connect(lambda _index: save_web_config())
+        for widget in [cdp_edit, api_key_edit, api_single_model_edit, api_mass_model_edit]:
             widget.editingFinished.connect(save_web_config)
         run_btn.clicked.connect(lambda: self._run_threaded(run_btn, log, run_selected_mode))
         chrome_btn.clicked.connect(lambda: self._run_threaded(chrome_btn, log, open_chrome))
