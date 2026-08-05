@@ -1,0 +1,977 @@
+--- ChatGPT Translation Raw Output for e05_121_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 確かに、矢だけだと細過ぎる…
+#. だから、犯人は⟦CLT 3⟧もう１つの凶器⟦CLT⟧を使ったんだ。
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"You're right. Just the one arrow would've been too\n"
+"weak. That's why the killer used ⟦CLT 3⟧another weapon⟦CLT⟧."
+msgstr ""
+
+#. もう１つの凶器…？
+msgctxt "0002 | AOI ASAHINA"
+msgid "Another weapon...?"
+msgstr ""
+
+#. 武道場のロッカーの中には、
+#. 丸められた⟦CLT 3⟧ガムテープ⟦CLT⟧もあったんだ。
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"Inside the dojo locker, we also found a balled-up wad\n"
+"of ⟦CLT 3⟧duct tape⟦CLT⟧."
+msgstr ""
+
+#. きっと、犯人はこのガムテープを使って、
+#. ジュラルミン製の矢を⟦CLT 3⟧束ねた⟦CLT⟧んだよ。
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"The killer probably used this duct tape to ⟦CLT 3⟧bind⟦CLT⟧\n"
+"multiple arrows together."
+msgstr ""
+
+#. 矢をガムテープで束ねる事によって、
+#. ⟦CLT 3⟧“鉄パイプ程度の太さの凶器”⟦CLT⟧を作り上げ…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"Bundling them together using the duct tape would\n"
+"easily create a ⟦CLT 3⟧single weapon as thick as a pipe⟦CLT⟧."
+msgstr ""
+
+#. それを凶器として使ったんだ！
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "And that's exactly what the killer did!"
+msgstr ""
+
+#. ３本の矢の教えと…同じね…
+#. 戦国武将である毛利元就が…息子達に説いた教え…
+msgctxt "0007 | TOUKO FUKAWA"
+msgid ""
+"It's similar to Aesop's fable about the bundle of\n"
+"sticks..."
+msgstr ""
+
+#. １本ではもろい矢も…束になれば頑丈になる…
+#. そ、そうやって…３兄弟に結束を訴えかけたのよ…
+msgctxt "0008 | TOUKO FUKAWA"
+msgid ""
+"One stick is weak, but put them together, and they\n"
+"become strong. It's meant to teach cooperation."
+msgstr ""
+
+#. 残酷な話だべ…
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgid "Damn, that's harsh..."
+msgstr ""
+
+#. どこがよ…聞いてないでしょ…
+msgctxt "0010 | TOUKO FUKAWA"
+msgid "How is it harsh? Were you even listening?"
+msgstr ""
+
+#. とにかく、これで凶器もわかったはずだ…
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "Anyway, that explains the murder weapon."
+msgstr ""
+
+#. そして、それらの凶器を
+#. 武道場のロッカーに隠した犯人こそが…
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgid ""
+"As for who the culprit is that stashed the weapon in\n"
+"the dojo locker..."
+msgstr ""
+
+#. 霧切響子、お前なんだ…！
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgid "It was you, Kyoko!"
+msgstr ""
+
+#. …私は武道場なんかに行ってないわよ。
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgid "...I've never been to the dojo."
+msgstr ""
+
+#. いや、お前は間違いなく武道場に行っている。
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgid "Oh no, you absolutely have."
+msgstr ""
+
+#. …どうして言い切れるの？
+msgctxt "0016 | AOI ASAHINA"
+msgid "How can you say that with such confidence?"
+msgstr ""
+
+#. もちろん、証拠があるからだ。
+#. そうだよな、苗木？
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgid "Because we have proof, of course. Don't we, Makoto?"
+msgstr ""
+
+#. …ん？　どうした？
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgid "Hm? What's the matter?"
+msgstr ""
+
+#. まさか、犯人をかばうつもりじゃないだろうな…
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgid "Surely you don't intend to protect a murderer..."
+msgstr ""
+
+#. そんな事をしてどうなるか…
+#. わかってるのか？
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgid "You know what will happen if you do, don't you?"
+msgstr ""
+
+#. もし、お前がかばった人物が犯人だったら、
+#. その先に待っている結末は…
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgid ""
+"If you cover for the culprit, there's only one thing\n"
+"that can lead to..."
+msgstr ""
+
+#. 俺達の全員の死…なんだぞ？
+msgctxt "0024 | BYAKUYA TOGAMI"
+msgid "The death of us all. Remember?"
+msgstr ""
+
+#. も、もちろん…わかってるよ…
+msgctxt "0025 | MAKOTO NAEGI"
+msgid "O-Of course I remember...!"
+msgstr ""
+
+#. だったら、お前の手で示してやれ。
+#. 霧切が武道場に行った証拠をな…！
+msgctxt "0026 | BYAKUYA TOGAMI"
+msgid ""
+"Then show us! Show everyone the evidence that proves\n"
+"Kyoko went to the dojo!"
+msgstr ""
+
+#. ほう…
+#. やはり、犯人をかばうつもりなのか…？
+msgctxt "0028 | BYAKUYA TOGAMI"
+msgid "So. You *do* intend to protect a murderer?"
+msgstr ""
+
+#. どういう事だべ、苗木っち！
+msgctxt "0029 | YASUHIRO HAGAKURE"
+msgid "What's he talking about, Makoto!?"
+msgstr ""
+
+#. そうだよ、私たち全員が
+#. 処刑されちゃうんだよ？
+msgctxt "0030 | AOI ASAHINA"
+msgid "Yeah! Tell us, or we're all dead, remember!?"
+msgstr ""
+
+#. 犯人をかばう気なのか…
+#. それとも本気でわからないのか…
+msgctxt "0032 | BYAKUYA TOGAMI"
+msgid ""
+"Are you trying to protect the culprit, or do you\n"
+"honestly not know?"
+msgstr ""
+
+#. どちらにせよ、お前の愚鈍さには呆れるな…
+msgctxt "0033 | BYAKUYA TOGAMI"
+msgid "Either way, I'm positively amazed by your stupidity."
+msgstr ""
+
+#. ⟦CLT 4⟧ボクが…霧切さんに…？
+#. ⟦CLT⟧
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I have evidence...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧霧切さんが⟦CLT⟧⟦CLT 3⟧武道場に行ってる証拠⟦CLT⟧⟦CLT 4⟧って…
+#. ⟦CLT⟧
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Evidence that ⟦CLT⟧⟦CLT 3⟧Kyoko went to the dojo⟦CLT⟧⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクが…霧切さんに…？
+#. ⟦CLT⟧
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧I have evidence...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧霧切さんが⟦CLT⟧⟦CLT 3⟧武道場に行ってる証拠⟦CLT⟧⟦CLT 4⟧って…
+#. ⟦CLT⟧
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Evidence that ⟦CLT⟧⟦CLT 3⟧Kyoko went to the dojo⟦CLT⟧⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧⟦CLT⟧⟦CLT 3⟧武道場のロッカー⟦CLT⟧⟦CLT 4⟧に関係している、
+#. 例の物だよな…？
+#. ⟦CLT⟧
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It must be connected to that ⟦CLT⟧⟦CLT 3⟧dojo locker⟦CLT⟧⟦CLT 4⟧...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 霧切さんが武道場に行った証拠は…
+msgctxt "0040 | MAKOTO NAEGI"
+msgid "The one thing that proves Kyoko was in the dojo is..."
+msgstr ""
+
+#. この…武道場の⟦CLT 3⟧ロッカーの鍵⟦CLT⟧だよ…
+msgctxt "0041 | MAKOTO NAEGI"
+msgid "...right here. The ⟦CLT 3⟧key to the dojo locker⟦CLT⟧."
+msgstr ""
+
+#. …そんな物が、どうして証拠になるの？
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgid "And how does that prove anything?"
+msgstr ""
+
+#. これが…霧切さんの部屋に落ちてたからだよ…
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "Because...I found it in your room."
+msgstr ""
+
+#. 私の部屋に…落ちていた…？
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid "It was...in my room?"
+msgstr ""
+
+#. とぼけても無駄だ…
+msgctxt "0045 | BYAKUYA TOGAMI"
+msgid "Don't bother trying to play dumb."
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"Cậu nói đúng. Chỉ một mũi tên thì sẽ quá yếu.\n"
+"Đó là lý do hung thủ đã sử dụng ⟦CLT 3⟧một hung khí khác⟦CLT⟧."
+
+msgctxt "0002 | AOI ASAHINA"
+msgstr "Một hung khí khác...?"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr ""
+"Trong tủ khóa của võ đường, chúng ta cũng tìm thấy một\n"
+"cuộn ⟦CLT 3⟧băng keo⟦CLT⟧ bị vo tròn."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr ""
+"Hung thủ có lẽ đã dùng băng keo này để ⟦CLT 3⟧buộc chặt⟦CLT⟧\n"
+"nhiều mũi tên lại với nhau."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr ""
+"Bằng cách bó chúng lại với nhau bằng băng keo,\n"
+"họ dễ dàng tạo ra một ⟦CLT 3⟧hung khí duy nhất dày như\n"
+"một ống kim loại⟦CLT⟧."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "Và đó chính xác là điều hung thủ đã làm!"
+
+msgctxt "0007 | TOUKO FUKAWA"
+msgstr ""
+"Nó giống với câu chuyện về bó que của Aesop...\n"
+""
+
+msgctxt "0008 | TOUKO FUKAWA"
+msgstr ""
+"Một que thì yếu, nhưng khi gộp chúng lại với nhau thì\n"
+"chúng trở nên mạnh mẽ. Ý nghĩa là dạy về sự hợp tác."
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "Trời, thật tàn nhẫn..."
+
+msgctxt "0010 | TOUKO FUKAWA"
+msgstr "Tàn nhẫn ở đâu chứ? Cậu có nghe không vậy?"
+
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgstr "Dù sao thì, chuyện này đã giải thích được hung khí."
+
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgstr ""
+"Còn về hung thủ đã giấu những hung khí đó trong tủ\n"
+"khóa của võ đường..."
+
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgstr "Chính là cô, Kyoko!"
+
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgstr "...Tôi chưa từng đến võ đường."
+
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgstr "Không, chắc chắn cô đã đến đó."
+
+msgctxt "0016 | AOI ASAHINA"
+msgstr "Sao cậu có thể nói chắc như vậy?"
+
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgstr ""
+"Vì chúng ta có bằng chứng, tất nhiên rồi.\n"
+"Đúng không, Makoto?"
+
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgstr "Hử? Có chuyện gì?"
+
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgstr "Đừng nói là cậu định bảo vệ một kẻ giết người..."
+
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgstr ""
+"Cậu biết chuyện gì sẽ xảy ra nếu làm vậy, đúng không?"
+
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgstr ""
+"Nếu cậu che giấu cho hung thủ, chỉ có một kết cục đang\n"
+"chờ đợi..."
+
+msgctxt "0024 | BYAKUYA TOGAMI"
+msgstr "Cái chết của tất cả chúng ta. Nhớ chứ?"
+
+msgctxt "0025 | MAKOTO NAEGI"
+msgstr "T-Tất nhiên là mình biết...!"
+
+msgctxt "0026 | BYAKUYA TOGAMI"
+msgstr ""
+"Vậy thì hãy cho chúng tôi thấy đi!\n"
+"Hãy cho mọi người thấy bằng chứng chứng minh Kyoko đã\n"
+"đến võ đường!"
+
+msgctxt "0028 | BYAKUYA TOGAMI"
+msgstr "Vậy là cậu *thật sự* định bảo vệ một kẻ giết người?"
+
+msgctxt "0029 | YASUHIRO HAGAKURE"
+msgstr "Cậu ta đang nói gì vậy, Makoto!?"
+
+msgctxt "0030 | AOI ASAHINA"
+msgstr "Đúng đó! Nói cho chúng mình biết đi, nếu không tất cả sẽ chết đấy!?"
+
+msgctxt "0032 | BYAKUYA TOGAMI"
+msgstr ""
+"Cậu đang cố bảo vệ hung thủ, hay thật sự là cậu không\n"
+"biết?"
+
+msgctxt "0033 | BYAKUYA TOGAMI"
+msgstr "Dù thế nào thì tôi cũng kinh ngạc vì sự ngu ngốc của cậu."
+
+msgctxt "0035 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Mình có bằng chứng sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0036 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Bằng chứng cho việc ⟦CLT 3⟧Kyoko đã đến võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0037 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Mình có bằng chứng sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0038 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Bằng chứng cho việc ⟦CLT 3⟧Kyoko đã đến võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0039 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Nó chắc chắn có liên quan đến ⟦CLT 3⟧tủ khóa của võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0040 | MAKOTO NAEGI"
+msgstr "Thứ duy nhất chứng minh Kyoko đã ở võ đường là..."
+
+msgctxt "0041 | MAKOTO NAEGI"
+msgstr "...ngay đây. ⟦CLT 3⟧chìa khóa tủ khóa võ đường⟦CLT⟧."
+
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgstr "Và thứ đó chứng minh được điều gì?"
+
+msgctxt "0043 | MAKOTO NAEGI"
+msgstr "Bởi vì... mình tìm thấy nó trong phòng của cậu."
+
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgstr "Nó đã... ở trong phòng tôi?"
+
+msgctxt "0045 | BYAKUYA TOGAMI"
+msgstr "Đừng phí công giả vờ không biết."
+
+po
+
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"Cậu nói đúng. Chỉ một mũi tên thì sẽ quá yếu.\n"
+"Đó là lý do hung thủ đã sử dụng ⟦CLT 3⟧một hung khí khác⟦CLT⟧."
+
+msgctxt "0002 | AOI ASAHINA"
+msgstr "Một hung khí khác...?"
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr ""
+"Trong tủ khóa của võ đường, chúng ta cũng tìm thấy một\n"
+"cuộn ⟦CLT 3⟧băng keo⟦CLT⟧ bị vo tròn."
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr ""
+"Hung thủ có lẽ đã dùng băng keo này để ⟦CLT 3⟧buộc chặt⟦CLT⟧\n"
+"nhiều mũi tên lại với nhau."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr ""
+"Bằng cách bó chúng lại với nhau bằng băng keo,\n"
+"họ dễ dàng tạo ra một ⟦CLT 3⟧hung khí duy nhất dày như\n"
+"một ống kim loại⟦CLT⟧."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "Và đó chính xác là điều hung thủ đã làm!"
+
+msgctxt "0007 | TOUKO FUKAWA"
+msgstr ""
+"Nó giống với câu chuyện về bó que của Aesop...\n"
+""
+
+msgctxt "0008 | TOUKO FUKAWA"
+msgstr ""
+"Một que thì yếu, nhưng khi gộp chúng lại với nhau thì\n"
+"chúng trở nên mạnh mẽ. Ý nghĩa là dạy về sự hợp tác."
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "Trời, thật tàn nhẫn..."
+
+msgctxt "0010 | TOUKO FUKAWA"
+msgstr "Tàn nhẫn ở đâu chứ? Cậu có nghe không vậy?"
+
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgstr "Dù sao thì, chuyện này đã giải thích được hung khí."
+
+msgctxt "0012 | BYAKUYA TOGAMI"
+msgstr ""
+"Còn về hung thủ đã giấu những hung khí đó trong tủ\n"
+"khóa của võ đường..."
+
+msgctxt "0013 | BYAKUYA TOGAMI"
+msgstr "Chính là cô, Kyoko!"
+
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgstr "...Tôi chưa từng đến võ đường."
+
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgstr "Không, chắc chắn cô đã đến đó."
+
+msgctxt "0016 | AOI ASAHINA"
+msgstr "Sao cậu có thể nói chắc như vậy?"
+
+msgctxt "0017 | BYAKUYA TOGAMI"
+msgstr ""
+"Vì chúng ta có bằng chứng, tất nhiên rồi.\n"
+"Đúng không, Makoto?"
+
+msgctxt "0020 | BYAKUYA TOGAMI"
+msgstr "Hử? Có chuyện gì?"
+
+msgctxt "0021 | BYAKUYA TOGAMI"
+msgstr "Đừng nói là cậu định bảo vệ một kẻ giết người..."
+
+msgctxt "0022 | BYAKUYA TOGAMI"
+msgstr ""
+"Cậu biết chuyện gì sẽ xảy ra nếu làm vậy, đúng không?"
+
+msgctxt "0023 | BYAKUYA TOGAMI"
+msgstr ""
+"Nếu cậu che giấu cho hung thủ, chỉ có một kết cục đang\n"
+"chờ đợi..."
+
+msgctxt "0024 | BYAKUYA TOGAMI"
+msgstr "Cái chết của tất cả chúng ta. Nhớ chứ?"
+
+msgctxt "0025 | MAKOTO NAEGI"
+msgstr "T-Tất nhiên là mình biết...!"
+
+msgctxt "0026 | BYAKUYA TOGAMI"
+msgstr ""
+"Vậy thì hãy cho chúng tôi thấy đi!\n"
+"Hãy cho mọi người thấy bằng chứng chứng minh Kyoko đã\n"
+"đến võ đường!"
+
+msgctxt "0028 | BYAKUYA TOGAMI"
+msgstr "Vậy là cậu *thật sự* định bảo vệ một kẻ giết người?"
+
+msgctxt "0029 | YASUHIRO HAGAKURE"
+msgstr "Cậu ta đang nói gì vậy, Makoto!?"
+
+msgctxt "0030 | AOI ASAHINA"
+msgstr "Đúng đó! Nói cho chúng mình biết đi, nếu không tất cả sẽ chết đấy!?"
+
+msgctxt "0032 | BYAKUYA TOGAMI"
+msgstr ""
+"Cậu đang cố bảo vệ hung thủ, hay thật sự là cậu không\n"
+"biết?"
+
+msgctxt "0033 | BYAKUYA TOGAMI"
+msgstr "Dù thế nào thì tôi cũng kinh ngạc vì sự ngu ngốc của cậu."
+
+msgctxt "0035 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Mình có bằng chứng sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0036 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Bằng chứng cho việc ⟦CLT 3⟧Kyoko đã đến võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0037 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Mình có bằng chứng sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0038 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Bằng chứng cho việc ⟦CLT 3⟧Kyoko đã đến võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0039 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Nó chắc chắn có liên quan đến ⟦CLT 3⟧tủ khóa của võ đường⟦CLT⟧...\n"
+"⟦CLT⟧"
+
+msgctxt "0040 | MAKOTO NAEGI"
+msgstr "Thứ duy nhất chứng minh Kyoko đã ở võ đường là..."
+
+msgctxt "0041 | MAKOTO NAEGI"
+msgstr "...ngay đây. ⟦CLT 3⟧chìa khóa tủ khóa võ đường⟦CLT⟧."
+
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgstr "Và thứ đó chứng minh được điều gì?"
+
+msgctxt "0043 | MAKOTO NAEGI"
+msgstr "Bởi vì... mình tìm thấy nó trong phòng của cậu."
+
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgstr "Nó đã... ở trong phòng tôi?"
+
+msgctxt "0045 | BYAKUYA TOGAMI"
+msgstr "Đừng phí công giả vờ không biết."
+
+==================== BATCH 2 REQUEST ====================
+#. それに、この鍵だけじゃない…
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgid "That key is just the final piece of the puzzle."
+msgstr ""
+
+#. アリバイの件も、動機の件も、
+#. 苗木に罪をなすり付ける為の偽装工作の件も…
+msgctxt "0047 | BYAKUYA TOGAMI"
+msgid ""
+"Your non-existent alibi, your clear motive, your\n"
+"attempts to frame Makoto for the crime..."
+msgstr ""
+
+#. それらのすべてが、お前が犯人だと示している。
+#. 諦めろ、言い逃れは出来んぞ。
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgid ""
+"This all proves that you are the true culprit. You\n"
+"can't explain this away, so just give up."
+msgstr ""
+
+#. またか…
+#. お前は、どうしても霧切をかばいたいらしいな？
+msgctxt "0050 | BYAKUYA TOGAMI"
+msgid ""
+"Not this again. You really are dead-set on defending\n"
+"her, aren't you?"
+msgstr ""
+
+#. いや…かばうとかそういう事じゃなくて…
+#. ボクはただ…
+msgctxt "0051 | MAKOTO NAEGI"
+msgid "No...it's not that I want to defend her. It's just..."
+msgstr ""
+
+#. 霧切さんに聞かなくちゃいけない事が、
+#. まだ残っているんだよ…
+msgctxt "0052 | MAKOTO NAEGI"
+msgid "There's one more thing I need to ask her."
+msgstr ""
+
+#. …霧切さん、教えて欲しいんだ。
+#. 昨日の夜の件だよ…
+msgctxt "0054 | MAKOTO NAEGI"
+msgid "Kyoko, I want you to tell me something."
+msgstr ""
+
+#. 昨日の夜、霧切さんはボクの部屋にいたよね…？
+msgctxt "0055 | MAKOTO NAEGI"
+msgid "Last night...you were in my room, weren't you?"
+msgstr ""
+
+#. あの時、何があったの？
+#. どうして、ボクの部屋にいたの？
+msgctxt "0056 | MAKOTO NAEGI"
+msgid "Why? What were you doing there?"
+msgstr ""
+
+#. それを…教えて欲しいんだ…
+msgctxt "0057 | MAKOTO NAEGI"
+msgid "That's what I need to know."
+msgstr ""
+
+#. 私は…あなたを助けただけよ…
+msgctxt "0059 | KYOUKO KIRIGIRI"
+msgid "I was just...protecting you."
+msgstr ""
+
+#. ⟦CLT 4⟧ボクを助けた…だけ…？
+#. ⟦CLT⟧
+msgctxt "0061 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧She was protecting me...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧じゃあ、もしかして霧切さんは…
+#. ⟦CLT⟧
+msgctxt "0062 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Then does that mean she...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクが襲われた事に気が付いて…
+#. ⟦CLT⟧
+msgctxt "0063 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧She knew I was being attacked...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それで、助けに来てくれて…
+#. ⟦CLT⟧
+msgctxt "0064 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧...and she came to my rescue.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧もしかして、その時に…！？
+#. ⟦CLT⟧
+msgctxt "0065 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Could that be when...!?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧もし、そうだとしたら、
+#. 霧切さんは…
+#. ⟦CLT⟧
+msgctxt "0066 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Which would mean that Kyoko...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧ボクのせいで…殺人を…？
+#. ⟦CLT⟧
+msgctxt "0067 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧She killed someone...for me...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. もういいだろう。無駄話は終わりだ。
+#. そろそろ結論を出すぞ…
+msgctxt "0068 | BYAKUYA TOGAMI"
+msgid ""
+"That's enough. The time for idle chatter is over. A\n"
+"verdict is close at hand..."
+msgstr ""
+
+#. 間違わないで…私は犯人じゃない…
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgid ""
+"I'm warning you, don't make this mistake. I'm not the\n"
+"killer."
+msgstr ""
+
+#. まさか…お前の往生際がそこまで悪いとはな…
+msgctxt "0071 | BYAKUYA TOGAMI"
+msgid ""
+"I knew you were stubborn, but this is just getting\n"
+"ridiculous."
+msgstr ""
+
+#. …だけど、私が犯人じゃないって事は、
+#. あなたが１番よく知っているはずよ？
+msgctxt "0072 | KYOUKO KIRIGIRI"
+msgid ""
+"Really? But you should know better than anyone I\n"
+"didn't do it."
+msgstr ""
+
+#. そうでしょう、十神君…？
+msgctxt "0073 | KYOUKO KIRIGIRI"
+msgid "Can you tell me I'm wrong?"
+msgstr ""
+
+#. 俺が…だと？
+msgctxt "0074 | BYAKUYA TOGAMI"
+msgid "I...should know?"
+msgstr ""
+
+#. ⟦CLT 4⟧霧切さんが犯人じゃない事は、
+#. 十神クンが１番よく知っているはず…？
+#. ⟦CLT⟧
+msgctxt "0076 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Byakuya should know better than anyone...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧それって…どういう意味だ…？
+#. ⟦CLT⟧
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧What does that mean?\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 2 RESPONSE ====================
+po
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgstr "Chìa khóa đó chỉ là mảnh ghép cuối cùng của câu đố."
+
+msgctxt "0047 | BYAKUYA TOGAMI"
+msgstr ""
+"Bằng chứng ngoại phạm không tồn tại của cậu, động cơ\n"
+"quá rõ ràng của cậu, âm mưu đổ tội cho Makoto..."
+
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgstr ""
+"Tất cả những điều đó đều chứng minh cậu là hung thủ thật\n"
+"sự. Cậu không thể giải thích chuyện này, vậy hãy từ bỏ đi."
+
+msgctxt "0050 | BYAKUYA TOGAMI"
+msgstr ""
+"Lại nữa sao. Cậu thật sự quyết tâm bảo vệ cô ấy đến\n"
+"cùng, đúng không?"
+
+msgctxt "0051 | MAKOTO NAEGI"
+msgstr "Không... không phải là mình muốn bảo vệ cô ấy. Chỉ là..."
+
+msgctxt "0052 | MAKOTO NAEGI"
+msgstr "Vẫn còn một chuyện mình cần hỏi cô ấy."
+
+msgctxt "0054 | MAKOTO NAEGI"
+msgstr "Kyoko, mình muốn cậu nói cho mình biết một chuyện."
+
+msgctxt "0055 | MAKOTO NAEGI"
+msgstr "Đêm qua... cậu đã ở trong phòng mình, đúng không?"
+
+msgctxt "0056 | MAKOTO NAEGI"
+msgstr "Tại sao? Cậu đã làm gì ở đó?"
+
+msgctxt "0057 | MAKOTO NAEGI"
+msgstr "Đó là điều mình cần biết."
+
+msgctxt "0059 | KYOUKO KIRIGIRI"
+msgstr "Tôi chỉ... bảo vệ cậu thôi."
+
+msgctxt "0061 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy đã bảo vệ mình sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0062 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Vậy có nghĩa là cô ấy...?\n"
+"⟦CLT⟧"
+
+msgctxt "0063 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy biết mình đang bị tấn công...\n"
+"⟦CLT⟧"
+
+msgctxt "0064 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧...và cô ấy đã đến cứu mình.\n"
+"⟦CLT⟧"
+
+msgctxt "0065 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chẳng lẽ đó là lúc...!?\n"
+"⟦CLT⟧"
+
+msgctxt "0066 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Điều đó có nghĩa là Kyoko...\n"
+"⟦CLT⟧"
+
+msgctxt "0067 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy đã giết ai đó... vì mình sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0068 | BYAKUYA TOGAMI"
+msgstr ""
+"Đủ rồi. Thời gian nói chuyện vô ích đã kết thúc.\n"
+"Đã đến lúc đưa ra phán quyết..."
+
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgstr ""
+"Tôi cảnh báo cậu, đừng phạm sai lầm này.\n"
+"Tôi không phải hung thủ."
+
+msgctxt "0071 | BYAKUYA TOGAMI"
+msgstr ""
+"Tôi biết cậu rất cứng đầu, nhưng chuyện này đang trở\n"
+"nên vô lý rồi."
+
+msgctxt "0072 | KYOUKO KIRIGIRI"
+msgstr ""
+"Thật sao? Nhưng cậu hơn ai hết phải biết rằng tôi không\n"
+"làm chuyện đó."
+
+msgctxt "0073 | KYOUKO KIRIGIRI"
+msgstr "Cậu có thể nói rằng tôi sai không?"
+
+msgctxt "0074 | BYAKUYA TOGAMI"
+msgstr "Tôi... phải biết sao?"
+
+msgctxt "0076 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Byakuya đáng lẽ phải là người hiểu rõ hơn ai hết...?\n"
+"⟦CLT⟧"
+
+msgctxt "0077 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Điều đó có nghĩa là gì?\n"
+"⟦CLT⟧"
+
+po
+
+msgctxt "0046 | BYAKUYA TOGAMI"
+msgstr "Chìa khóa đó chỉ là mảnh ghép cuối cùng của câu đố."
+
+msgctxt "0047 | BYAKUYA TOGAMI"
+msgstr ""
+"Bằng chứng ngoại phạm không tồn tại của cậu, động cơ\n"
+"quá rõ ràng của cậu, âm mưu đổ tội cho Makoto..."
+
+msgctxt "0048 | BYAKUYA TOGAMI"
+msgstr ""
+"Tất cả những điều đó đều chứng minh cậu là hung thủ thật\n"
+"sự. Cậu không thể giải thích chuyện này, vậy hãy từ bỏ đi."
+
+msgctxt "0050 | BYAKUYA TOGAMI"
+msgstr ""
+"Lại nữa sao. Cậu thật sự quyết tâm bảo vệ cô ấy đến\n"
+"cùng, đúng không?"
+
+msgctxt "0051 | MAKOTO NAEGI"
+msgstr "Không... không phải là mình muốn bảo vệ cô ấy. Chỉ là..."
+
+msgctxt "0052 | MAKOTO NAEGI"
+msgstr "Vẫn còn một chuyện mình cần hỏi cô ấy."
+
+msgctxt "0054 | MAKOTO NAEGI"
+msgstr "Kyoko, mình muốn cậu nói cho mình biết một chuyện."
+
+msgctxt "0055 | MAKOTO NAEGI"
+msgstr "Đêm qua... cậu đã ở trong phòng mình, đúng không?"
+
+msgctxt "0056 | MAKOTO NAEGI"
+msgstr "Tại sao? Cậu đã làm gì ở đó?"
+
+msgctxt "0057 | MAKOTO NAEGI"
+msgstr "Đó là điều mình cần biết."
+
+msgctxt "0059 | KYOUKO KIRIGIRI"
+msgstr "Tôi chỉ... bảo vệ cậu thôi."
+
+msgctxt "0061 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy đã bảo vệ mình sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0062 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Vậy có nghĩa là cô ấy...?\n"
+"⟦CLT⟧"
+
+msgctxt "0063 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy biết mình đang bị tấn công...\n"
+"⟦CLT⟧"
+
+msgctxt "0064 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧...và cô ấy đã đến cứu mình.\n"
+"⟦CLT⟧"
+
+msgctxt "0065 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Chẳng lẽ đó là lúc...!?\n"
+"⟦CLT⟧"
+
+msgctxt "0066 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Điều đó có nghĩa là Kyoko...\n"
+"⟦CLT⟧"
+
+msgctxt "0067 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cô ấy đã giết ai đó... vì mình sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0068 | BYAKUYA TOGAMI"
+msgstr ""
+"Đủ rồi. Thời gian nói chuyện vô ích đã kết thúc.\n"
+"Đã đến lúc đưa ra phán quyết..."
+
+msgctxt "0070 | KYOUKO KIRIGIRI"
+msgstr ""
+"Tôi cảnh báo cậu, đừng phạm sai lầm này.\n"
+"Tôi không phải hung thủ."
+
+msgctxt "0071 | BYAKUYA TOGAMI"
+msgstr ""
+"Tôi biết cậu rất cứng đầu, nhưng chuyện này đang trở\n"
+"nên vô lý rồi."
+
+msgctxt "0072 | KYOUKO KIRIGIRI"
+msgstr ""
+"Thật sao? Nhưng cậu hơn ai hết phải biết rằng tôi không\n"
+"làm chuyện đó."
+
+msgctxt "0073 | KYOUKO KIRIGIRI"
+msgstr "Cậu có thể nói rằng tôi sai không?"
+
+msgctxt "0074 | BYAKUYA TOGAMI"
+msgstr "Tôi... phải biết sao?"
+
+msgctxt "0076 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Byakuya đáng lẽ phải là người hiểu rõ hơn ai hết...?\n"
+"⟦CLT⟧"
+
+msgctxt "0077 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Điều đó có nghĩa là gì?\n"
+"⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Duct Tape Arrow Weapon
+

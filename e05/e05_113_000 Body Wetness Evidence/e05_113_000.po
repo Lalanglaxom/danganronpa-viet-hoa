@@ -1,0 +1,712 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. スプリンクラーのせいじゃないって事は、
+#. <CLT 3>爆破後の死体の状況<CLT>を見れば、わかるはずだよ…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"Just remember <CLT 3>what the body was like after the\n"
+"explosion<CLT> and you'll see why it wasn't the sprinklers."
+msgstr ""
+"Chỉ cần nhớ lại <CLT 3>tình trạng của thi thể sau vụ nổ<CLT>\n"
+"thì sẽ hiểu tại sao không phải do hệ thống phun nước."
+
+#. あの死体って、上半身だけが濡れてて、
+#. 下半身はまったく<CLT 3>濡れてなかった<CLT>よね？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"The top half of the body was wet, yes, but the bottom\n"
+"half <CLT 3>was completely dry<CLT>."
+msgstr ""
+"Phần trên của thi thể bị ướt, đúng vậy, nhưng phần dưới\n"
+"<CLT 3>hoàn toàn khô ráo<CLT>."
+
+#. もし、死体の濡れた原因がスプリンクラーなら、
+#. 全身がまんべんなく濡れているはずじゃない？
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"If the sprinklers got the body wet, shouldn't the\n"
+"*whole* body have been wet?"
+msgstr ""
+"Nếu hệ thống phun nước khiến thi thể bị ướt, chẳng phải\n"
+"*toàn bộ* thi thể đều phải ướt sao?"
+
+#. う、上だけ濡れて…下が濡れてない…！？
+#. なんて…鬼畜マニアックなの…ッ！！
+msgctxt "0004 | TOUKO FUKAWA"
+msgid ""
+"S-So they only got the top wet? The bottom was\n"
+"c-completely dry!? What a brutal m-maniac!"
+msgstr ""
+"V-Vậy là chỉ phần trên bị ướt sao? Phần dưới thì\n"
+"hoàn toàn k-khô ráo!? Đúng là một k-kẻ biến thái tàn nhẫn!"
+
+#. もうやだよ、この人…
+msgctxt "0005 | AOI ASAHINA"
+msgid "I'm so sick of her..."
+msgstr "Mình chán cô ấy quá rồi..."
+
+#. 説明を…続けるよ…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "Let's just...move on..."
+msgstr "Mình cứ... tiếp tục giải thích thôi..."
+
+#. どうして死体の上半身だけが濡れてたのか、
+#. その理由は…
+msgctxt "0007 | MAKOTO NAEGI"
+msgid "The reason only the top half was wet was because..."
+msgstr "Lý do chỉ có phần trên của thi thể bị ướt là vì..."
+
+#. あの死体が燃えた時、ボクが水をかけたせいなんだ。
+#. 燃えている上半身だけにね…
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"...while the body was still on fire, I doused it with\n"
+"water. But only the part on fire—the top half."
+msgstr ""
+"...khi thi thể vẫn đang cháy, mình đã dội nước lên nó.\n"
+"Nhưng chỉ phần đang cháy thôi — phần thân trên."
+
+#. じゃあ…死体が濡れてたのって…
+#. 本当に…スプリンクラーのせいじゃないのね…
+msgctxt "0009 | TOUKO FUKAWA"
+msgid ""
+"O-Oh...then I guess the sprinklers r-really didn't do\n"
+"it..."
+msgstr ""
+"Ồ... vậy thì có vẻ hệ thống phun nước t-thật sự không\n"
+"phải nguyên nhân rồi..."
+
+#. そして、死体がスプリンクラーで濡れてないなら、
+#. 植物庭園で殺人が起きたのは…
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"So if the sprinklers didn't get the body wet, then the\n"
+"murder must have taken place..."
+msgstr ""
+"Vậy nếu hệ thống phun nước không làm thi thể bị ướt,\n"
+"thì vụ giết người chắc chắn xảy ra..."
+
+#. スプリンクラーが作動する
+#. <CLT 3>朝７時３０分以降<CLT>って事になるはずだよ！
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"...sometime *after* the sprinklers turned on at <CLT 3>7:30\n"
+"in the morning<CLT>!"
+msgstr ""
+"...vào lúc *sau khi* hệ thống phun nước hoạt động lúc\n"
+"<CLT 3>7 giờ 30 sáng<CLT>!"
+
+#. じゃあ、殺人が起きたのは、
+#. 朝７時３０分から、死体を発見した９時までの間だな。
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgid ""
+"Which means she must have been killed sometime between\n"
+"then and when the body was discovered at 9."
+msgstr ""
+"Điều đó có nghĩa cô ấy phải bị giết vào khoảng thời gian\n"
+"từ lúc đó cho đến khi thi thể được phát hiện lúc 9 giờ."
+
+#. でも、苗木のアリバイがないのって、
+#. 昨日の夜１０時から朝７時３０分までだったよね？
+msgctxt "0013 | AOI ASAHINA"
+msgid ""
+"But Makoto's alibi was only missing from 10 o'clock\n"
+"last night to 7:30 this morning, right?"
+msgstr ""
+"Nhưng khoảng thời gian Makoto không có bằng chứng ngoại\n"
+"phạm chỉ là từ 10 giờ tối hôm qua đến 7 giờ 30 sáng nay,\n"
+"đúng không?"
+
+#. だったら、苗木っちに犯行は不可能だべ！
+#. 苗木っちのアリバイも成立じゃねーか！！
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgid ""
+"So there's no way Makoto could have done it! I guess\n"
+"you had an alibi, after all. Good for you!"
+msgstr ""
+"Vậy thì Makoto không thể là hung thủ rồi! Cuối cùng thì\n"
+"cậu cũng có bằng chứng ngoại phạm mà! May quá!"
+
+#. そうなると、アリバイがないのは、
+#. 霧切だけという事になるな…
+msgctxt "0015 | BYAKUYA TOGAMI"
+msgid ""
+"In which case, the only one left without an alibi...is\n"
+"Kyoko."
+msgstr ""
+"Trong trường hợp đó, người duy nhất còn lại không có\n"
+"bằng chứng ngoại phạm... là Kyoko."
+
+#. ………………
+msgctxt "0016 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>アリバイがないのは…霧切さんだけ…
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko's the only one without an alibi...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Người duy nhất không có bằng chứng ngoại phạm...\n"
+"là Kyoko...\n"
+"<CLT>"
+
+#. <CLT 4>じゃあ、戦刃むくろを殺した犯人って…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Which would mean that Mukuro's killer is...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vậy có nghĩa là kẻ đã giết Mukuro...\n"
+"<CLT>"
+
+#. <CLT 4>いや…そんなバカな…
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No, I refuse to believe it...!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không, mình không thể tin được chuyện đó...!\n"
+"<CLT>"
+
+#. <CLT 4>あの霧切さんが犯人なんて、そんな事が…
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko murdered someone? That's...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Kyoko lại là người giết ai đó sao? Chuyện đó...\n"
+"<CLT>"
+
+#. …１つだけ言っておくわ。
+msgctxt "0021 | KYOUKO KIRIGIRI"
+msgid "...I'd just like to say one thing."
+msgstr "...Tôi chỉ muốn nói một điều."
+
+#. 私がここで処刑されたら、
+#. この学園の謎は明らかにならない…
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid ""
+"If you vote for me, and I die here, the mystery of\n"
+"this school will stay hidden forever."
+msgstr ""
+"Nếu mọi người bỏ phiếu cho tôi và tôi chết ở đây, bí ẩn\n"
+"của học viện này sẽ mãi mãi không được giải đáp."
+
+#. だから…絶対にそうはさせない…！
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid "Which is why...I can't let that happen!"
+msgstr "Vì vậy... tôi không thể để chuyện đó xảy ra!"
+
+#. <CLT 4>え…？
+#. <CLT>
+msgctxt "0024 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Huh...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hả...?\n"
+"<CLT>"
+
+#. つまり…お前は犯人ではないという事か？
+msgctxt "0025 | BYAKUYA TOGAMI"
+msgid "So are you saying...you're not the culprit?"
+msgstr "Vậy ý cô là... cô không phải hung thủ?"
+
+#. 当然でしょ…
+#. 私が犯人なんて…そんな訳ない…
+msgctxt "0026 | KYOUKO KIRIGIRI"
+msgid "Of course I'm not. I have no reason to kill anyone."
+msgstr ""
+"Tất nhiên là không. Tôi không có lý do gì để giết bất kỳ\n"
+"ai cả."
+
+#. これは黒幕の<CLT 3>罠<CLT>なのよ…
+msgctxt "0027 | KYOUKO KIRIGIRI"
+msgid "This is a <CLT 3>trap<CLT> the mastermind has laid for us."
+msgstr ""
+"Đây là một <CLT 3>cái bẫy<CLT> mà kẻ chủ mưu đã giăng ra cho\n"
+"chúng ta."
+
+#. 黒幕の罠…？
+msgctxt "0028 | AOI ASAHINA"
+msgid "A trap...?"
+msgstr "Một cái bẫy...?"
+
+#. アッハッハッハッハッハ！
+#. この期に及んでボクのせいにする気？
+msgctxt "0029 | MONOKUMA"
+msgid ""
+"Ahahahaha! We're this far into the game, and *now* you\n"
+"decide to blame me?"
+msgstr ""
+"A-ha-ha-ha! Đã đi xa đến mức này rồi mà *bây giờ* các\n"
+"ngươi mới quyết định đổ lỗi cho ta sao?"
+
+#. 苦しいよ！　そりゃ苦しいって！
+#. そんな言い訳が通用すると思ってんの！？
+msgctxt "0030 | MONOKUMA"
+msgid ""
+"Stop wasting time! Stop wasting energy! You really\n"
+"think your little trick is gonna work!?"
+msgstr ""
+"Đừng lãng phí thời gian! Đừng lãng phí năng lượng! Các\n"
+"ngươi thật sự nghĩ trò nhỏ đó sẽ có tác dụng sao!?"
+
+#. お前は黙っていろ…！
+msgctxt "0031 | BYAKUYA TOGAMI"
+msgid "Shut up, you!"
+msgstr "Im đi!"
+
+#. はーい、黙ってまーす！
+msgctxt "0032 | MONOKUMA"
+msgid "You got it, boss! Shutting up now!"
+msgstr "Rõ rồi, sếp! Ta sẽ im ngay!"
+
+#. だが、霧切…
+#. お前には戦刃むくろを殺す<CLT 3>動機<CLT>もあったはずだ。
+msgctxt "0033 | BYAKUYA TOGAMI"
+msgid ""
+"Anyway... Kyoko, you actually did have a <CLT 3>reason<CLT> to\n"
+"kill her."
+msgstr ""
+"Dù sao đi nữa... Kyoko, cô thật sự có <CLT 3>lý do<CLT> để\n"
+"giết cô ta."
+
+#. …え？　動機？
+msgctxt "0034 | MAKOTO NAEGI"
+msgid "Huh? She did?"
+msgstr "Hả? Cô ấy có sao?"
+
+#. 霧切は戦刃むくろを<CLT 3>“超高校級の絶望”<CLT>と言っていた。
+#. つまり、黒幕だと思い込んでいた…
+msgctxt "0035 | BYAKUYA TOGAMI"
+msgid ""
+"She thought Mukuro was the <CLT 3>Ultimate Despair<CLT>. In\n"
+"other words, the mastermind behind everything..."
+msgstr ""
+"Cô ấy nghĩ Mukuro là <CLT 3>Siêu cao trung cấp: Tuyệt vọng<CLT>.\n"
+"Nói cách khác, là kẻ chủ mưu đứng sau mọi chuyện..."
+
+#. だからこそ、戦刃むくろを殺し、
+#. すべてを終わらせようとしたんじゃないのか？
+msgctxt "0036 | BYAKUYA TOGAMI"
+msgid ""
+"So she killed her to try and put a stop to all this.\n"
+"Isn't that right, Kyoko?"
+msgstr ""
+"Vì vậy cô ấy đã giết cô ta để cố chấm dứt tất cả chuyện\n"
+"này. Đúng không, Kyoko?"
+
+#. だが実際は違った…戦刃むくろは黒幕ではなかった。
+#. そこに霧切の誤算があったんだ。
+msgctxt "0037 | BYAKUYA TOGAMI"
+msgid ""
+"But you made one catastrophic mistake—Mukuro wasn't\n"
+"the mastermind at all."
+msgstr ""
+"Nhưng thực tế lại khác... Mukuro không phải kẻ chủ mưu\n"
+"chút nào."
+
+#. そして…霧切にとっては予想外とも言える
+#. この学級裁判が始まってしまった。
+msgctxt "0038 | BYAKUYA TOGAMI"
+msgid ""
+"And as a result, we were forced into another trial,\n"
+"something I'm sure you weren't at all expecting."
+msgstr ""
+"Và kết quả là chúng ta bị ép phải bước vào một phiên tòa\n"
+"lớp khác, điều mà tôi chắc chắn cô hoàn toàn không mong\n"
+"đợi."
+
+#. そ、それが…霧切の動機…？
+msgctxt "0039 | TOUKO FUKAWA"
+msgid "So th-that was her motive...?"
+msgstr "V-Vậy đó là động cơ của cô ấy sao...?"
+
+#. 動機があって、アリバイがないとなると…
+#. こりゃもう…確実に霧切っちが犯人なんじゃ…
+msgctxt "0040 | YASUHIRO HAGAKURE"
+msgid ""
+"If she had a motive, and no alibi, well then...I think\n"
+"it's pretty clear Kyoko's gotta be the culprit..."
+msgstr ""
+"Nếu cô ấy có động cơ và không có bằng chứng ngoại phạm,\n"
+"vậy thì... tôi nghĩ rõ ràng Kyoko chính là hung thủ rồi..."
+
+#. ………………
+msgctxt "0041 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. アリバイがないのは私だけじゃない…
+#. <CLT 3>苗木君<CLT>のアリバイは不十分よ…
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgid ""
+"I'm not the only one without an alibi. <CLT 3>Makoto's<CLT>\n"
+"explanation is still insufficient."
+msgstr ""
+"Tôi không phải người duy nhất không có bằng chứng ngoại\n"
+"phạm. <CLT 3>Lời giải thích của Makoto<CLT> vẫn chưa đủ."
+
+#. え…？
+msgctxt "0043 | MAKOTO NAEGI"
+msgid "Huh...?"
+msgstr "Hả...?"
+
+#. 死体がスプリンクラーで濡れていないからって、
+#. 殺人が朝７時３０分以降に起きたとは言い切れないわ…
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid ""
+"The sprinklers didn't get the body wet, but that\n"
+"doesn't mean the murder happened when he said it did."
+msgstr ""
+"Việc hệ thống phun nước không làm thi thể ướt không có\n"
+"nghĩa là vụ án xảy ra vào thời điểm cậu nói."
+
+#. …ど、どうして！？
+msgctxt "0045 | MAKOTO NAEGI"
+msgid "Wh-What are you—!?"
+msgstr "V-Vì sao chứ!?"
+
+#. 死体をスプリンクラーで濡らさない方法があるからよ。
+msgctxt "0046 | KYOUKO KIRIGIRI"
+msgid ""
+"Because you see, there is a way the body could have\n"
+"avoided getting wet."
+msgstr ""
+"Bởi vì có một cách để thi thể có thể tránh bị\n"
+"ướt."
+
+#. …面白い。言ってみろ。
+msgctxt "0047 | BYAKUYA TOGAMI"
+msgid "...Interesting. I'm listening."
+msgstr "...Thú vị đấy. Tôi đang nghe đây."
+
+#. 現場にあった<CLT 3>“ある物”<CLT>を死体に被せれば、
+#. 濡らさずに済んだはずよ。
+msgctxt "0048 | KYOUKO KIRIGIRI"
+msgid ""
+"All it would take is covering the body with a <CLT 3>certain\n"
+"something<CLT> to keep it from getting wet."
+msgstr ""
+"Chỉ cần phủ lên thi thể một <CLT 3>thứ gì đó nhất định<CLT>\n"
+"ở hiện trường là có thể khiến nó không bị ướt."
+
+#. に、ニワトリを被せる！？
+msgctxt "0049 | YASUHIRO HAGAKURE"
+msgid "Was it a chicken!?"
+msgstr "Là con gà sao!?"
+
+#. あんなにかわいいニワトリを、
+#. 水にさらすってのか！？
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid ""
+"Why would you wanna get a cute little chicken all\n"
+"wet!?"
+msgstr ""
+"Tại sao lại muốn làm một con gà nhỏ dễ thương bị\n"
+"ướt chứ!?"
+
+#. その前に、いくら植物庭園にある物でも
+#. ニワトリを被せるって…意味がわかんないよ…
+msgctxt "0051 | AOI ASAHINA"
+msgid ""
+"Of all the things in the garden, why would someone use\n"
+"a chicken? That's just...so stupid."
+msgstr ""
+"Trong tất cả những thứ ở khu vườn, tại sao lại dùng một\n"
+"con gà chứ? Thật là... ngớ ngẩn."
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. それをどうやって
+#. 死体に被せるというのかしら…？
+msgctxt "0053 | KYOUKO KIRIGIRI"
+msgid "How would they use that to cover a dead body?"
+msgstr "Làm thế nào họ có thể dùng thứ đó để che thi thể?"
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. どうしたの…？
+#. 現場をよく調べたのなら…
+msgctxt "0055 | KYOUKO KIRIGIRI"
+msgid ""
+"What's wrong? If you investigated the crime scene\n"
+"properly..."
+msgstr ""
+"Có chuyện gì vậy? Nếu cậu đã điều tra hiện trường\n"
+"cẩn thận..."
+
+#. 何を被せたのかなんて一目瞭然だと思うけど？
+#. 早く答えてくれない？
+msgctxt "0056 | KYOUKO KIRIGIRI"
+msgid ""
+"...it should be completely obvious what was used to\n"
+"cover it. Could you please tell the others?"
+msgstr ""
+"...thì đáng lẽ phải quá rõ thứ gì đã được dùng để\n"
+"che nó. Cậu có thể nói cho mọi người biết không?"
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0057 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. <CLT 4>現場にあったある物…？　死体に被せる…？
+#. それって、もしかして…<CLT>
+msgctxt "0058 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>A \"certain something\" at the scene was used to cover\n"
+"the body? Could it have been...?<CLT>"
+msgstr ""
+"<CLT 4>Một \"thứ gì đó nhất định\" ở hiện trường được dùng để\n"
+"che thi thể? Có thể nào là...?\n"
+"<CLT>"
+
+#. もしかして、あの<CLT 3>ビニールシート<CLT>の事？
+msgctxt "0059 | MAKOTO NAEGI"
+msgid "You're talking about the <CLT 3>tarp<CLT>, aren't you?"
+msgstr "Ý cậu là <CLT 3>tấm bạt<CLT> đó, đúng không?"
+
+#. 気付いたみたいね…
+msgctxt "0060 | KYOUKO KIRIGIRI"
+msgid "You catch on quick."
+msgstr "Cậu hiểu nhanh đấy."
+
+#. そうよ…あのビニールシートを死体に被せれば、
+#. スプリンクラーをやり過ごす事が可能になるわ。
+msgctxt "0061 | KYOUKO KIRIGIRI"
+msgid ""
+"You're right. All you'd have to do is cover the body\n"
+"with the tarp, and that'd take care of the water."
+msgstr ""
+"Đúng vậy. Chỉ cần phủ tấm bạt đó lên thi thể,\n"
+"nước sẽ không thể làm ảnh hưởng đến nó."
+
+#. 実際、犯人はその方法を使ったはずよ。
+msgctxt "0062 | KYOUKO KIRIGIRI"
+msgid "In fact, that's exactly what the killer did."
+msgstr "Thực tế, hung thủ chắc chắn đã dùng cách đó."
+
+#. あのビニールシートの汚れ方が、
+#. それを物語っているわ…
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid "The dirt pattern on the tarp can attest to that."
+msgstr "Dấu vết bẩn trên tấm bạt đã chứng minh điều đó."
+
+#. ビニールシートの<CLT 3>片面だけが汚れていた<CLT>のは、
+#. その面がスプリンクラーを浴びたから…
+msgctxt "0064 | KYOUKO KIRIGIRI"
+msgid ""
+"<CLT 3>Only one side of the tarp got dirty<CLT>, because that's\n"
+"the side that got covered in water."
+msgstr ""
+"<CLT 3>Chỉ một mặt của tấm bạt bị bẩn<CLT>, bởi vì đó là\n"
+"mặt đã bị nước phun vào."
+
+#. 逆に、死体に面していた裏面は、
+#. スプリンクラーを浴びてないから、汚れてもいない…
+msgctxt "0065 | KYOUKO KIRIGIRI"
+msgid ""
+"The side that faced down over the body, meanwhile,\n"
+"kept perfectly clean."
+msgstr ""
+"Ngược lại, mặt bên dưới tiếp xúc với thi thể thì vẫn\n"
+"hoàn toàn sạch sẽ."
+
+#. つまり、犯人はビニールシートを使って、
+#. 死体がスプリンクラーで濡れる事を防いだのよ。
+msgctxt "0066 | KYOUKO KIRIGIRI"
+msgid ""
+"This proves that the killer used the tarp to keep the\n"
+"body from getting soaked."
+msgstr ""
+"Điều này chứng minh hung thủ đã dùng tấm bạt để ngăn\n"
+"thi thể bị ướt sũng."
+
+#. そこまでして、死体が濡れるのを防いだ理由はなんだ？
+msgctxt "0067 | BYAKUYA TOGAMI"
+msgid ""
+"But why would they go to all that effort just to keep\n"
+"the body from getting wet?"
+msgstr ""
+"Nhưng tại sao chúng lại phải cố gắng đến vậy chỉ để\n"
+"ngăn thi thể bị ướt?"
+
+#. おそらく、殺人が起きた時間帯を
+#. 誤認させる為じゃないかしら…
+msgctxt "0068 | KYOUKO KIRIGIRI"
+msgid ""
+"Most likely so they could cloud the issue of when the\n"
+"murder actually took place."
+msgstr ""
+"Rất có thể là để khiến chúng ta hiểu sai về thời điểm\n"
+"thực sự xảy ra vụ án."
+
+#. さっきの苗木君のような言い訳をする為にね…
+msgctxt "0069 | KYOUKO KIRIGIRI"
+msgid ""
+"In other words, to create an excuse exactly like the\n"
+"one Makoto just gave us..."
+msgstr ""
+"Nói cách khác, để tạo ra một lời biện hộ giống hệt như\n"
+"lời Makoto vừa đưa ra..."
+
+#. ………………
+msgctxt "0070 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>なんで…霧切さんはそんな事を…？
+#. <CLT>
+msgctxt "0071 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why would Kyoko say that...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tại sao... Kyoko lại nói như vậy...?\n"
+"<CLT>"
+
+#. <CLT 4>ボクを…犯人に仕立て上げようとするような事を…？
+#. <CLT>
+msgctxt "0072 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why would she want to make me look like the killer?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tại sao cô ấy lại muốn khiến mình trông giống như\n"
+"một kẻ giết người?\n"
+"<CLT>"
+
+#. <CLT 4>…いや、今はそんな事を考えている場合じゃない。
+#. <CLT>
+msgctxt "0073 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...No, I can't think about that right now.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...Không, lúc này mình không thể nghĩ về chuyện đó.\n"
+"<CLT>"
+
+#. <CLT 4>あのビニールシート…
+#. <CLT>
+msgctxt "0074 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That tarp...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tấm bạt đó...\n"
+"<CLT>"
+
+#. <CLT 4>もし、あれが霧切さんの言うような
+#. 使われ方をしたんだとすると…
+#. <CLT>
+msgctxt "0075 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If it was used the way Kyoko said...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu nó thật sự được sử dụng giống như Kyoko nói...\n"
+"<CLT>"
+
+#. <CLT 4>つまり、ビニールシートは、
+#. 死体に触れていたって事だよな？
+#. <CLT>
+msgctxt "0076 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The tarp must have touched the body, right?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vậy thì tấm bạt chắc chắn đã tiếp xúc với thi thể,\n"
+"đúng không?\n"
+"<CLT>"
+
+#. <CLT 4>あの死体に…
+#. <CLT>
+msgctxt "0077 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But the body...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng thi thể...\n"
+"<CLT>"
+
+#. いや…それはおかしいよ…
+msgctxt "0078 | MAKOTO NAEGI"
+msgid "Wait...something's not right."
+msgstr "Khoan... có gì đó không đúng."
+
+#. 何が…おかしいの…？
+msgctxt "0079 | KYOUKO KIRIGIRI"
+msgid "And what might that be?"
+msgstr "Và đó là chuyện gì vậy?"
+
+#. <CLT 4>…霧切さんの思惑を探ってる場合じゃない。
+#. このままじゃ、ボクが犯人にされちゃうんだ…
+#. <CLT>
+msgctxt "0080 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I can't worry about Kyoko's motivations. If I don't do\n"
+"something, everyone's gonna think I'm the killer!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình không thể lo về động cơ của Kyoko lúc này.\n"
+"Nếu không làm gì, mọi người sẽ nghĩ mình là hung thủ!\n"
+"<CLT>"
+
+#. <CLT 4>ボクが…霧切さんの意見を論破しないと…！
+#. <CLT>
+msgctxt "0081 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I have to refute what Kyoko said...!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình phải bác bỏ những gì Kyoko đã nói...!\n"
+"<CLT>"

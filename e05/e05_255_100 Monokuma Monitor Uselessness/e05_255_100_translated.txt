@@ -1,0 +1,43 @@
+--- ChatGPT Translation Raw Output for e05_255_100.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧モノクマが映るモニター…
+#. モノクマが映る以外の用途はなさそうだ。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This is one of the monitors Monokuma appears on. It\n"
+"seems pretty useless when he's not on it.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 本当に…役立たずだな…！
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "Actually, no...it's totally useless no matter what!"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Đây là một trong những màn hình mà Monokuma xuất hiện.\n"
+"Có vẻ như nó khá vô dụng khi hắn không xuất hiện trên đó.\n"
+"⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Không, phải nói là... dù thế nào nó cũng hoàn toàn vô dụng!"
+
+po
+
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Đây là một trong những màn hình mà Monokuma xuất hiện.\n"
+"Có vẻ như nó khá vô dụng khi hắn không xuất hiện trên đó.\n"
+"⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Không, phải nói là... dù thế nào nó cũng hoàn toàn vô dụng!"
+
+==================== FOLDER SUMMARY ====================
+Monokuma Monitor Uselessness
+

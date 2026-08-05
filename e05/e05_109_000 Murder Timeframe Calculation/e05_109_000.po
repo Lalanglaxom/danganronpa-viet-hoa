@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 死体を発見したのは、<CLT 3>９時<CLT>だったはずだよ。
+#. だって、腐川さんがツルハシを取りに行ったのが…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"The body must have been discovered at <CLT 3>9 a.m.<CLT>, since\n"
+"that's when Toko went to get the pickaxe..."
+msgstr ""
+"Thi thể chắc chắn được phát hiện vào <CLT 3>9 giờ sáng<CLT>, vì\n"
+"đó là lúc Toko đi lấy cái cuốc..."
+
+#. ところで腐川、今は何時だ？
+msgctxt "0002 | BYAKUYA TOGAMI"
+msgid "Now then... Toko, what time is it?"
+msgstr "Nào... Toko, bây giờ là mấy giờ?"
+
+#. えーと…さっき体育館を出る時…９時前だったので…
+#. い、今は…９時ちょうどくらいかと…
+msgctxt "0003 | TOUKO FUKAWA"
+msgid ""
+"W-Well, when we left the gym, it was j-just before 9\n"
+"o'clock. So it's probably 9 on the d-dot now..."
+msgstr ""
+"Ừ-Ừm, khi chúng ta rời khỏi nhà thi đấu thì mới\n"
+"g-gần 9 giờ. Vậy nên b-bây giờ chắc khoảng đúng 9 giờ..."
+
+#. よし、９時１分までにツルハシを取って来い。
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgid "Okay. Go get the pickaxe and be back here by 9:01."
+msgstr "Được. Đi lấy cái cuốc và quay lại đây trước 9 giờ 1 phút."
+
+#. た、確かに…９時くらいだったわね…
+msgctxt "0005 | TOUKO FUKAWA"
+msgid "H-He's right, it had to be around th-then."
+msgstr "C-Cậu nói đúng, chắc chắn là khoảng thời gian đó..."
+
+#. つまり、殺人が起きたと思われる時間帯は、
+#. <CLT 3>夜１０時から朝９時までの間<CLT>…って事だな。
+msgctxt "0006 | YASUHIRO HAGAKURE"
+msgid ""
+"So we can be totally sure the murder happened sometime\n"
+"between <CLT 3>10 at night and 9 in the morning<CLT>."
+msgstr ""
+"Vậy chúng ta có thể chắc chắn vụ giết người xảy ra\n"
+"trong khoảng <CLT 3>từ 10 giờ đêm đến 9 giờ sáng<CLT>."
+
+#. ボクは…昨日は夜時間前から寝ちゃってたんだ。
+#. だから、夜１０時以降のアリバイはないんだけど…
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"For me, I was already asleep before nighttime hit. So\n"
+"I don't have an alibi after 10 o'clock..."
+msgstr ""
+"Còn mình... hôm qua mình đã ngủ trước thời gian ban đêm.\n"
+"Vì vậy mình không có chứng cứ ngoại phạm sau 10 giờ..."
+
+#. でも、朝は９時より前に、
+#. みんなと合流したはずだよ？
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"But I'm sure I met up with everyone else before 9 this\n"
+"morning."
+msgstr ""
+"Nhưng mình chắc là sáng nay mình đã gặp mọi người\n"
+"trước 9 giờ."
+
+#. 食堂で私と会ったよね？
+#. あれは確か…
+msgctxt "0009 | AOI ASAHINA"
+msgid ""
+"We ran into each other in the dining hall, right? That\n"
+"was around..."
+msgstr ""
+"Chúng ta đã gặp nhau ở nhà ăn đúng không?\n"
+"Lúc đó khoảng..."
+
+#. そうだ、７時３０分くらいだった！
+#. 食堂に入る時に確認したから、間違いないよ！
+msgctxt "0010 | AOI ASAHINA"
+msgid ""
+"Oh yeah! Right around 7:30! I remember checking right\n"
+"before I went in, so I'm totally sure about it."
+msgstr ""
+"À đúng rồi! Khoảng 7 giờ 30! Tớ nhớ đã kiểm tra thời gian\n"
+"ngay trước khi bước vào, nên chắc chắn lắm."
+
+#. つまり、苗木っちのアリバイがねーのは、
+#. 夜１０時から朝７時３０分までの間…って事だな。
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid ""
+"Which means from 10 p.m. to 7:30 a.m., you don't have\n"
+"an alibi."
+msgstr ""
+"Nghĩa là từ 10 giờ tối đến 7 giờ 30 sáng,\n"
+"cậu không có chứng cứ ngoại phạm."
+
+#. <CLT 4>事件が起きたのは、夜１０時から朝９時までの間…
+#. アリバイがないのは、夜１０時から朝７時半までの間…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The murder happened between 10 p.m. and 9 a.m. And I\n"
+"don't have an alibi from 10 p.m. till 7:30 a.m.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vụ giết người xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng.\n"
+"Và mình không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
+"<CLT>"
+
+#. <CLT 4>…よし、勝負はここからだ。
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Okay then, it looks like the game has begun...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Được rồi, có vẻ cuộc chiến thật sự bắt đầu từ đây...\n"
+"<CLT>"
+
+#. <CLT 4>ボクのアリバイに関して反論が出来ないなら…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If I can't provide an alibi for that period...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm cho khoảng thời gian đó...\n"
+"<CLT>"
+
+#. <CLT 4>逆に、ボクのアリバイがない時間帯に、
+#. 犯行が起きていない事を証明するしかない…！
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...then I just have to prove the murder didn't happen\n"
+"during the time I don't have an alibi!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra\n"
+"trong khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
+"<CLT>"
+
+#. <CLT 4>事件が起きたのは、夜１０時から朝９時までの間…
+#. アリバイがないのは、夜１０時から朝７時半までの間…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The murder happened between 10 p.m. and 9 a.m. And I\n"
+"don't have an alibi from 10 p.m. till 7:30 a.m.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vụ giết người xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng.\n"
+"Và mình không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
+"<CLT>"
+
+#. <CLT 4>…よし、勝負はここからだ。
+#. <CLT>
+msgctxt "0017 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Okay then, it looks like the game has begun...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Được rồi, có vẻ cuộc chiến thật sự bắt đầu từ đây...\n"
+"<CLT>"
+
+#. <CLT 4>ボクのアリバイに関して反論が出来ないなら…
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>If I can't provide an alibi for that period...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm cho khoảng thời gian đó...\n"
+"<CLT>"
+
+#. <CLT 4>逆に、ボクのアリバイがない時間帯に、
+#. 犯行が起きていない事を証明するしかない…！
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...then I just have to prove the murder didn't happen\n"
+"during the time I don't have an alibi!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra\n"
+"trong khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
+"<CLT>"
+
+#. <CLT 4>その為には、死体がいつからあの場所にあったのか、
+#. それをハッキリさせる必要がありそうだ。
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To do that, I have to make it clear when the body\n"
+"ended up in the garden...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Để làm được vậy, mình phải xác định rõ thi thể đã\n"
+"được đưa đến khu vườn từ lúc nào...\n"
+"<CLT>"

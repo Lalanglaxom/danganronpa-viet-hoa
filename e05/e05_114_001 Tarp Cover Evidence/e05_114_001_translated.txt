@@ -1,0 +1,213 @@
+--- ChatGPT Translation Raw Output for e05_114_001.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. 犯人は死体にビニールシートを
+#. 被せる事で…
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgid "By covering the body with the tarp..."
+msgstr ""
+
+#. 死体が濡れないようにしたのよ。
+msgctxt "0002 | KYOUKO KIRIGIRI"
+msgid "...the killer prevented it from getting wet."
+msgstr ""
+
+#. じゃあ、ビニールシートが
+#. ⟦CLT 9⟧片面だけ汚れてた⟦CLT⟧のは…
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgid ""
+"So the reason the tarp\n"
+"was ⟦CLT 9⟧only dirty on one side⟦CLT⟧..."
+msgstr ""
+
+#. その面がスプリンクラーを
+#. 浴びたせいか！
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgid "...is because the sprinkler got that side wet!"
+msgstr ""
+
+#. でも、そのビニールシートの裏面は…
+msgctxt "0005 | MAKOTO NAEGI"
+msgid "But the underside of the tarp..."
+msgstr ""
+
+#. 少しも汚れてなかったよね？
+msgctxt "0006 | MAKOTO NAEGI"
+msgid "It was totally spotless, right?"
+msgstr ""
+
+#. そっちは、スプリンクラーを
+#. ⟦CLT 9⟧浴びてねーから⟦CLT⟧な！
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgid ""
+"It's cuz that side\n"
+"⟦CLT 9⟧was protected from the water⟦CLT⟧!"
+msgstr ""
+
+#. 死体に面してただけだから…
+msgctxt "0008 | YASUHIRO HAGAKURE"
+msgid "Since it was facing down toward the body..."
+msgstr ""
+
+#. ⟦CLT 9⟧キレイなまま⟦CLT⟧で当然だべ！
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgid "...of course it ⟦CLT 9⟧didn't get dirty⟦CLT⟧!"
+msgstr ""
+
+#. ⟦CLT 26⟧やっぱり苗木が犯人？⟦CLT⟧
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Did Makoto really do it?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧そうに決まってるわ…！⟦CLT⟧
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧That's gotta be it...!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧一理あるな…⟦CLT⟧
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧She has a point...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧何よ…言い訳？⟦CLT⟧
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Is there any explanation?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧それがどうかしたの…？⟦CLT⟧
+msgctxt "0015 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧If that's true, so what?⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧それはそうだろう…⟦CLT⟧
+msgctxt "0016 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧That makes sense...⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧あ…そっか！⟦CLT⟧
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Ah, that's right!⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 26⟧葉隠の言う通りだよ…多分！⟦CLT⟧
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgid "⟦CLT 26⟧Hiro might actually be right!⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgstr "Bằng cách phủ tấm bạt lên thi thể..."
+
+msgctxt "0002 | KYOUKO KIRIGIRI"
+msgstr "...hung thủ đã ngăn thi thể bị ướt."
+
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgstr ""
+"Vậy lý do tấm bạt\n"
+"⟦CLT 9⟧chỉ bị bẩn một mặt⟦CLT⟧ là..."
+
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgstr "...vì mặt đó đã bị hệ thống phun nước làm ướt!"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Nhưng mặt dưới của tấm bạt..."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "Nó hoàn toàn sạch sẽ, đúng không?"
+
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgstr ""
+"Là vì mặt đó\n"
+"⟦CLT 9⟧được bảo vệ khỏi nước⟦CLT⟧!"
+
+msgctxt "0008 | YASUHIRO HAGAKURE"
+msgstr "Vì nó hướng xuống phía thi thể..."
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "...nên tất nhiên nó ⟦CLT 9⟧không bị bẩn⟦CLT⟧ rồi!"
+
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có thật là Makoto đã làm chuyện đó không?⟦CLT⟧"
+
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Chắc chắn là vậy rồi...!⟦CLT⟧"
+
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Cô ấy nói cũng có lý...⟦CLT⟧"
+
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có lời giải thích nào không?⟦CLT⟧"
+
+msgctxt "0015 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Nếu đúng là vậy thì sao chứ?⟦CLT⟧"
+
+msgctxt "0016 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Điều đó cũng hợp lý...⟦CLT⟧"
+
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧À, đúng rồi!⟦CLT⟧"
+
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có lẽ Hiro thật sự đúng!⟦CLT⟧"
+
+po
+
+msgctxt "0001 | KYOUKO KIRIGIRI"
+msgstr "Bằng cách phủ tấm bạt lên thi thể..."
+
+msgctxt "0002 | KYOUKO KIRIGIRI"
+msgstr "...hung thủ đã ngăn thi thể bị ướt."
+
+msgctxt "0003 | YASUHIRO HAGAKURE"
+msgstr ""
+"Vậy lý do tấm bạt\n"
+"⟦CLT 9⟧chỉ bị bẩn một mặt⟦CLT⟧ là..."
+
+msgctxt "0004 | YASUHIRO HAGAKURE"
+msgstr "...vì mặt đó đã bị hệ thống phun nước làm ướt!"
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr "Nhưng mặt dưới của tấm bạt..."
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr "Nó hoàn toàn sạch sẽ, đúng không?"
+
+msgctxt "0007 | YASUHIRO HAGAKURE"
+msgstr ""
+"Là vì mặt đó\n"
+"⟦CLT 9⟧được bảo vệ khỏi nước⟦CLT⟧!"
+
+msgctxt "0008 | YASUHIRO HAGAKURE"
+msgstr "Vì nó hướng xuống phía thi thể..."
+
+msgctxt "0009 | YASUHIRO HAGAKURE"
+msgstr "...nên tất nhiên nó ⟦CLT 9⟧không bị bẩn⟦CLT⟧ rồi!"
+
+msgctxt "0010 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có thật là Makoto đã làm chuyện đó không?⟦CLT⟧"
+
+msgctxt "0011 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Chắc chắn là vậy rồi...!⟦CLT⟧"
+
+msgctxt "0012 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Cô ấy nói cũng có lý...⟦CLT⟧"
+
+msgctxt "0014 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có lời giải thích nào không?⟦CLT⟧"
+
+msgctxt "0015 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Nếu đúng là vậy thì sao chứ?⟦CLT⟧"
+
+msgctxt "0016 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Điều đó cũng hợp lý...⟦CLT⟧"
+
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧À, đúng rồi!⟦CLT⟧"
+
+msgctxt "0018 | YASUHIRO HAGAKURE"
+msgstr "⟦CLT 26⟧Có lẽ Hiro thật sự đúng!⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Tarp Cover Evidence
+

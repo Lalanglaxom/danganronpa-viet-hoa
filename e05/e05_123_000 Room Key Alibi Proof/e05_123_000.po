@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 霧切さんは<CLT 3>自分の部屋には入れなかった<CLT>はず…
+#. そういう事だよね？
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"If I'm right, Kyoko wouldn't have been able <CLT 3>to get\n"
+"into her room<CLT>."
+msgstr ""
+
+#. 自分の部屋に入れなかったって…どうして…？
+msgctxt "0002 | AOI ASAHINA"
+msgid "Huh? Why not?"
+msgstr "Hả? Tại sao lại không chứ?"
+
+#. だって、霧切さんは自分の部屋の鍵を
+#. <CLT 3>十神クンに預けたまま<CLT>だったんだよ…
+msgctxt "0003 | MAKOTO NAEGI"
+msgid "Because she had given her room key to <CLT 3>Byakuya<CLT>."
+msgstr ""
+"Bởi vì cô ấy đã giao chìa khóa phòng của mình cho\n"
+"<CLT 3>Byakuya<CLT> giữ."
+
+#. そうか…そういう事か…
+msgctxt "0004 | BYAKUYA TOGAMI"
+msgid "I see. So that's what you meant..."
+msgstr "Tôi hiểu rồi. Vậy ý cậu là thế..."
+
+#. 俺が…お前の部屋の鍵を持っているという事は…
+msgctxt "0005 | BYAKUYA TOGAMI"
+msgid "And if I had the key to your room..."
+msgstr "Và nếu tôi đang giữ chìa khóa phòng của cô..."
+
+#. 鍵を持ってない私は、
+#. 自分の部屋に入る事が出来ない…
+msgctxt "0006 | KYOUKO KIRIGIRI"
+msgid "...then obviously I had no way of getting in."
+msgstr "...thì rõ ràng tôi không có cách nào để vào được."
+
+#. つまり、自分の部屋に
+#. 武道場の鍵を置く事は不可能だった…
+msgctxt "0007 | KYOUKO KIRIGIRI"
+msgid ""
+"Without my room key, I couldn't have possibly put the\n"
+"locker key in there myself."
+msgstr ""
+"Không có chìa khóa phòng, tôi không thể nào tự mình\n"
+"đặt chìa khóa tủ khóa vào đó."
+
+#. …そうでしょう？
+msgctxt "0008 | KYOUKO KIRIGIRI"
+msgid "Am I wrong?"
+msgstr "...Tôi nói sai sao?"
+
+#. 確かに…そうなるな……
+msgctxt "0009 | BYAKUYA TOGAMI"
+msgid "It...would appear not."
+msgstr "Có vẻ... đúng là như vậy."
+
+#. やっと、わかってくれたみたいね…
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid "Then you're finally starting to understand."
+msgstr "Cuối cùng thì cậu cũng bắt đầu hiểu rồi."
+
+#. ………………
+msgctxt "0011 | MAKOTO NAEGI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>いや…違う…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No...that's not actually true.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không... không đúng.\n"
+"<CLT>"
+
+#. <CLT 4>今の霧切さんの証言には明らかな<CLT><CLT 3>矛盾<CLT><CLT 4>がある…
+#. 明らかな<CLT><CLT 3>ウソ<CLT><CLT 4>がある…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There was a clear <CLT><CLT 3>contradiction<CLT><CLT 4> in what Kyoko just\n"
+"told us. An obvious <CLT><CLT 3>lie<CLT><CLT 4>...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Trong lời khai vừa rồi của Kyoko có một <CLT><CLT 3>mâu thuẫn<CLT><CLT 4> rõ ràng...\n"
+"Có một <CLT><CLT 3>lời nói dối<CLT><CLT 4> rõ ràng...\n"
+"<CLT>"
+
+#. <CLT 4>だけど…こんなの…
+#. <CLT>
+msgctxt "0014 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But this...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng chuyện này...\n"
+"<CLT>"
+
+#. <CLT 4>こんなの霧切さんらしくない！
+#. <CLT>
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>This just isn't like her!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chuyện này không giống Kyoko chút nào!\n"
+"<CLT>"
+
+#. <CLT 4>こんな苦し紛れのウソで乗り切ろうとするなんて…
+#. <CLT>
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>To try and save herself with such a desperate lie...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cố vượt qua chuyện này bằng một lời nói dối tuyệt vọng\n"
+"như vậy...\n"
+"<CLT>"
+
+#. ………………
+msgctxt "0017 | KYOUKO KIRIGIRI"
+msgid "..."
+msgstr "..."
+
+#. <CLT 4>そこまで追い詰められてるって事か…？
+#. <CLT>
+msgctxt "0018 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Does she really feel that threatened?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có phải cô ấy thật sự bị dồn đến mức đó sao?\n"
+"<CLT>"
+
+#. <CLT 4>霧切さんが犯人だから…？
+#. <CLT>
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Because...she's the killer?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Vì... cô ấy là hung thủ sao?\n"
+"<CLT>"
+
+#. <CLT 4>それとも……
+#. <CLT>
+msgctxt "0020 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Or is it something else...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Hay là...\n"
+"<CLT>"
+
+#. <CLT 4>さっきの霧切さんの言葉に、
+#. 何か秘密があるのか…？
+#. <CLT>
+msgctxt "0021 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Was there some deeper meaning hidden in what Kyoko\n"
+"said earlier?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có bí mật nào sâu xa hơn ẩn giấu trong những lời Kyoko\n"
+"nói lúc nãy sao?\n"
+"<CLT>"
+
+#. 私がここで処刑されたら、
+#. この学園の謎は明らかにならない…
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid ""
+"If you vote for me, and I die here, the mystery of\n"
+"this school will stay hidden forever."
+msgstr ""
+"Nếu các cậu bỏ phiếu cho tôi và tôi chết ở đây,\n"
+"bí ẩn của ngôi trường này sẽ mãi mãi không được giải đáp."
+
+#. だから…絶対にそうはさせない…！
+msgctxt "0023 | KYOUKO KIRIGIRI"
+msgid "Which is why...I can't let that happen!"
+msgstr "Vì vậy... tôi không thể để chuyện đó xảy ra!"
+
+#. これは黒幕の<CLT 3>罠<CLT>なのよ…
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid "This is a <CLT 3>trap<CLT> the mastermind has laid for us."
+msgstr "Đây là một <CLT 3>cái bẫy<CLT> do kẻ chủ mưu giăng ra."
+
+#. <CLT 4>黒幕の罠…？
+#. <CLT>
+msgctxt "0025 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind's trap...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái bẫy của kẻ chủ mưu...\n"
+"<CLT>"
+
+#. <CLT 4>黒幕が…霧切さんを陥れようとしている…？
+#. <CLT>
+msgctxt "0026 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind is trying to...trap Kyoko?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Kẻ chủ mưu đang cố... gài bẫy Kyoko sao?\n"
+"<CLT>"
+
+#. <CLT 4>だけど、もし…
+#. <CLT>
+msgctxt "0027 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng...\n"
+"<CLT>"
+
+#. <CLT 4>もし、それが間違っていたら…
+#. <CLT>
+msgctxt "0028 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What if that's not really true?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nếu chuyện đó không thật sự đúng thì sao?\n"
+"<CLT>"
+
+#. <CLT 4>…どうする？
+#. <CLT>
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What can I do?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình phải làm gì đây?\n"
+"<CLT>"
+
+#. <CLT 4>どうすれば…いいんだ…？
+#. <CLT>
+msgctxt "0030 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What...should I do?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình... nên làm gì đây?\n"
+"<CLT>"
+
+#. <CLT 4>ボクは…どうすれば……
+#. <CLT>
+msgctxt "0031 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What should I...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình phải...?\n"
+"<CLT>"
+
+#. <CLT 4>黒幕の…罠…？
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind's...trap?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái bẫy của kẻ chủ mưu...?\n"
+"<CLT>"
+
+#. <CLT 4>　　被害者は戦刃むくろ…？
+#. 　　　　　　霧切さんが殺した…？
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The victim was Mukuro...?\n"
+"And Kyoko killed her...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nạn nhân là Mukuro...?\n"
+"Và Kyoko đã giết cô ấy...?\n"
+"<CLT>"
+
+#. <CLT 4>　　　　　　　　　　　　霧切さんは何を知ってる…？
+#. <CLT>
+msgctxt "0034 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What does Kyoko really know...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Rốt cuộc Kyoko biết điều gì...?\n"
+"<CLT>"
+
+#. <CLT 4>　　　　ボクは…
+#. 　　　　　　　どうするべきなんだ…？
+#. <CLT>
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What am I...\n"
+"supposed to do?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình...\n"
+"phải làm gì đây?\n"
+"<CLT>"
+
+#. <CLT 4>　　霧切さんのウソ…
+#. <CLT>
+msgctxt "0036 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Kyoko's lie...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lời nói dối của Kyoko...\n"
+"<CLT>"
+
+#. <CLT 4>　　　　　　　　　　　　　　　　　　　ボクだけが…
+#. 　　　　　　　　　　　　　　そのウソを知っている…
+#. <CLT>
+msgctxt "0037 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm the only one...\n"
+"who knows it's a lie...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chỉ có mình...\n"
+"biết đó là lời nói dối...\n"
+"<CLT>"
+
+#. <CLT 4>　　　それを指摘出来るのは……ボクだけ…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>I'm the only one...who can expose it...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chỉ có mình... mới có thể vạch trần nó...\n"
+"<CLT>"
+
+#. <CLT 4>　　　　　　　　　正しいのは…
+#. 　　　　　　　　　　　　　　　　誰なんだ…？
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>But who...\n"
+"can I trust...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nhưng ai...\n"
+"mới là người mình có thể tin tưởng...?\n"
+"<CLT>"
+
+#. <CLT 4>　　　　ボクは…
+#. 　　　　　　　どうするべきなんだ…？
+#. <CLT>
+msgctxt "0040 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What am I...\n"
+"supposed to do?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình...\n"
+"phải làm gì đây?\n"
+"<CLT>"
+
+#. <CLT 4>　　　　　　　　　　　　　　　　　　　黒幕の…罠…
+#. <CLT>
+msgctxt "0041 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The mastermind's...trap...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Cái bẫy của kẻ chủ mưu...\n"
+"<CLT>"
+
+#. 先に進む為には、
+#. 危険を避けては通れない…
+msgctxt "0042 | KYOUKO KIRIGIRI"
+msgid ""
+"If you spend all your time trying to avoid danger,\n"
+"you'll never move forward."
+msgstr ""
+"Nếu cứ dành toàn bộ thời gian để tránh né nguy hiểm,\n"
+"chúng ta sẽ không bao giờ tiến về phía trước."
+
+#. 危険は承知の上よ。
+#. それでも謎が解けるなら進むべき…
+msgctxt "0043 | KYOUKO KIRIGIRI"
+msgid ""
+"We know the danger. But if that risk means solving the\n"
+"mystery, we have no choice."
+msgstr ""
+"Chúng ta biết rõ nguy hiểm.\n"
+"Nhưng nếu rủi ro đó giúp giải quyết bí ẩn, chúng ta\n"
+"không còn lựa chọn nào khác."
+
+#. …そうでしょう？
+msgctxt "0044 | KYOUKO KIRIGIRI"
+msgid "Am I wrong?"
+msgstr "...Tôi nói sai sao?"
+
+#. <CLT 4>ボクは…どうするべきなんだ…！？
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What do I do...!?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mình phải làm gì đây...!?\n"
+"<CLT>"

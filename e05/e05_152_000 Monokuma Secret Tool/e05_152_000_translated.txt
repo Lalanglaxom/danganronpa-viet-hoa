@@ -1,0 +1,331 @@
+--- ChatGPT Translation Raw Output for e05_152_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. いや、霧切さんは⟦CLT 3⟧自分の部屋に入れた⟦CLT⟧はずだよ…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid "No, Kyoko *could* have ⟦CLT 3⟧gotten into her room⟦CLT⟧."
+msgstr ""
+
+#. それは…霧切さん自身も言ってたよね…？
+msgctxt "0002 | MAKOTO NAEGI"
+msgid "You said so yourself, didn't you Kyoko?"
+msgstr ""
+
+#. 正確に言えば違う…
+#. あれは…
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid "Actually, to be precise...not quite."
+msgstr ""
+
+#. …学園中のすべての鍵を解錠出来る
+#. ⟦CLT 3⟧“モノクマの秘密道具”⟦CLT⟧といったところかしら…
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgid ""
+"I used ⟦CLT 3⟧Monokuma's secret tool⟦CLT⟧, which can open any\n"
+"lock in the school."
+msgstr ""
+
+#. モノクマの秘密道具…？
+msgctxt "0006 | AOI ASAHINA"
+msgid "Monokuma's secret tool...?"
+msgstr ""
+
+#. 霧切さんが学園長室から盗み出した…
+#. 学園内のすべての鍵を開けられる道具だよ。
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"Kyoko stole it from the headmaster's room. It lets you\n"
+"get into any room in the school."
+msgstr ""
+
+#. それを使えば、
+#. 霧切さんは自分の部屋に入れたはずなんだ。
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"Which means, she could have used it to get into her\n"
+"own room."
+msgstr ""
+
+#. どうやら、ここまでのようね…
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgid "Then I guess that's it."
+msgstr ""
+
+#. 認めるんだな？　自分の罪を…
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgid "You're giving up just like that? You admit to killing—"
+msgstr ""
+
+#. いいえ、私は自分の負けを認めただけよ…
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgid "No, I'm simply recognizing that I lost."
+msgstr ""
+
+#. ど、どういう意味…？
+msgctxt "0013 | TOUKO FUKAWA"
+msgid "Wh-What are you talking about?"
+msgstr ""
+
+#. …たとえ⟦CLT 3⟧罠⟦CLT⟧だとしても、
+#. その罠から抜け出せなかった以上は…
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgid ""
+"Like I said, this was a ⟦CLT 3⟧trap⟦CLT⟧. And I wasn't able to\n"
+"escape it."
+msgstr ""
+
+#. 私の負け…
+msgctxt "0015 | KYOUKO KIRIGIRI"
+msgid "So I lost..."
+msgstr ""
+
+#. そういう意味よ…
+msgctxt "0016 | KYOUKO KIRIGIRI"
+msgid "That's all this means."
+msgstr ""
+
+#. じゃあ、もしかして…本当に…
+msgctxt "0018 | MAKOTO NAEGI"
+msgid "Then...are you saying...? You really didn't...?"
+msgstr ""
+
+#. 本当に…霧切さんは…
+msgctxt "0019 | MAKOTO NAEGI"
+msgid "Kyoko, you really..."
+msgstr ""
+
+#. 犯人じゃ……
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "...aren't the killer?"
+msgstr ""
+
+#. はい！　⟦CLT 3⟧タイムアップ⟦CLT⟧でーす！！
+msgctxt "0021 | MONOKUMA"
+msgid "Okaaay! ⟦CLT 3⟧Time's up⟦CLT⟧!"
+msgstr ""
+
+#. 残念だけど時間切れー！
+#. 終わり、終わり。学級裁判は終わりだよ。
+msgctxt "0023 | MONOKUMA"
+msgid ""
+"I'm sorry to say, but your time is up! All done, all\n"
+"finished. The class trial is allll over!"
+msgstr ""
+
+#. …タ、タイムアップなんておかしいよ！
+#. だって今まで１度も、そんな事…
+msgctxt "0024 | MAKOTO NAEGI"
+msgid "B-But that's ridiculous! Since when is there any—?"
+msgstr ""
+
+#. 霧切さんが遅刻したせいだよ！
+#. そのせいで、時間が押してんのッ！！
+msgctxt "0025 | MONOKUMA"
+msgid ""
+"It's because you were late! So the trial started late,\n"
+"and time ran out!"
+msgstr ""
+
+#. …という訳で、そろそろ投票タイムといきましょうか！
+#. オマエラ、お手元のスイッチで投票してくださーい！
+msgctxt "0026 | MONOKUMA"
+msgid ""
+"So then, it's time for voting time, okay? Everyone,\n"
+"please vote using the lever in front of you!"
+msgstr ""
+
+#. もう、クロは決まり切ってるけどね…
+msgctxt "0027 | MONOKUMA"
+msgid ""
+"But I guess we already know who the blackened is,\n"
+"don't we!?"
+msgstr ""
+
+#. うぷ…ううぷぷぷぷぷぷぅ！！
+msgctxt "0028 | MONOKUMA"
+msgid "Puhuhu... Puuuhuhuhu!"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Không, Kyoko *có thể* đã ⟦CLT 3⟧vào được phòng của cô ấy⟦CLT⟧."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Chính cậu cũng đã nói vậy mà, đúng không Kyoko?"
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgstr "Thực ra, nói chính xác thì... không hẳn."
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgstr ""
+"Tôi đã sử dụng ⟦CLT 3⟧dụng cụ bí mật của Monokuma⟦CLT⟧,\n"
+"thứ có thể mở mọi ổ khóa trong trường."
+
+msgctxt "0006 | AOI ASAHINA"
+msgstr "Dụng cụ bí mật của Monokuma...?"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr ""
+"Kyoko đã lấy nó từ phòng hiệu trưởng. Nó cho phép cậu\n"
+"đi vào bất kỳ căn phòng nào trong trường."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr ""
+"Điều đó có nghĩa là cô ấy có thể đã dùng nó để vào\n"
+"phòng của chính mình."
+
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgstr "Vậy có lẽ là hết rồi."
+
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgstr "Cô từ bỏ dễ dàng như vậy sao? Cô thừa nhận đã giết—"
+
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgstr "Không, tôi chỉ thừa nhận rằng mình đã thua."
+
+msgctxt "0013 | TOUKO FUKAWA"
+msgstr "C-Cô đang nói gì vậy?"
+
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgstr ""
+"Như tôi đã nói, đây là một ⟦CLT 3⟧cái bẫy⟧CLT⟧.\n"
+"Và tôi đã không thể thoát khỏi cái bẫy đó."
+
+msgctxt "0015 | KYOUKO KIRIGIRI"
+msgstr "Vì vậy tôi đã thua..."
+
+msgctxt "0016 | KYOUKO KIRIGIRI"
+msgstr "Chỉ có vậy thôi."
+
+msgctxt "0018 | MAKOTO NAEGI"
+msgstr "Vậy... ý cậu là...? Cậu thật sự không...?"
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "Kyoko, cậu thật sự..."
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "...không phải hung thủ sao?"
+
+msgctxt "0021 | MONOKUMA"
+msgstr "Được rồi! ⟦CLT 3⟧Hết giờ⟦CLT⟧!"
+
+msgctxt "0023 | MONOKUMA"
+msgstr ""
+"Tôi rất tiếc phải nói rằng, nhưng hết giờ rồi! Xong rồi,\n"
+"kết thúc rồi. Phiên tòa lớp học kết thúc rồiiii!"
+
+msgctxt "0024 | MAKOTO NAEGI"
+msgstr "K-Không thể nào! Từ khi nào lại có chuyện—?"
+
+msgctxt "0025 | MONOKUMA"
+msgstr ""
+"Là vì cô đến muộn! Vì vậy phiên tòa bắt đầu trễ,\n"
+"và thời gian đã hết!"
+
+msgctxt "0026 | MONOKUMA"
+msgstr ""
+"Vậy thì đến lúc bỏ phiếu rồi nhé! Mọi người,\n"
+"hãy dùng cần gạt trước mặt để bỏ phiếu nào!"
+
+msgctxt "0027 | MONOKUMA"
+msgstr ""
+"Nhưng tôi nghĩ chúng ta đã biết kẻ hắc ám là ai rồi,\n"
+"đúng không!?"
+
+msgctxt "0028 | MONOKUMA"
+msgstr "Puhuhu... Puuuhuhuhu!"
+
+po
+
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr "Không, Kyoko *có thể* đã ⟦CLT 3⟧vào được phòng của cô ấy⟦CLT⟧."
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr "Chính cậu cũng đã nói vậy mà, đúng không Kyoko?"
+
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgstr "Thực ra, nói chính xác thì... không hẳn."
+
+msgctxt "0004 | KYOUKO KIRIGIRI"
+msgstr ""
+"Tôi đã sử dụng ⟦CLT 3⟧dụng cụ bí mật của Monokuma⟦CLT⟧,\n"
+"thứ có thể mở mọi ổ khóa trong trường."
+
+msgctxt "0006 | AOI ASAHINA"
+msgstr "Dụng cụ bí mật của Monokuma...?"
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr ""
+"Kyoko đã lấy nó từ phòng hiệu trưởng. Nó cho phép cậu\n"
+"đi vào bất kỳ căn phòng nào trong trường."
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr ""
+"Điều đó có nghĩa là cô ấy có thể đã dùng nó để vào\n"
+"phòng của chính mình."
+
+msgctxt "0010 | KYOUKO KIRIGIRI"
+msgstr "Vậy có lẽ là hết rồi."
+
+msgctxt "0011 | BYAKUYA TOGAMI"
+msgstr "Cô từ bỏ dễ dàng như vậy sao? Cô thừa nhận đã giết—"
+
+msgctxt "0012 | KYOUKO KIRIGIRI"
+msgstr "Không, tôi chỉ thừa nhận rằng mình đã thua."
+
+msgctxt "0013 | TOUKO FUKAWA"
+msgstr "C-Cô đang nói gì vậy?"
+
+msgctxt "0014 | KYOUKO KIRIGIRI"
+msgstr ""
+"Như tôi đã nói, đây là một ⟦CLT 3⟧cái bẫy⟧CLT⟧.\n"
+"Và tôi đã không thể thoát khỏi cái bẫy đó."
+
+msgctxt "0015 | KYOUKO KIRIGIRI"
+msgstr "Vì vậy tôi đã thua..."
+
+msgctxt "0016 | KYOUKO KIRIGIRI"
+msgstr "Chỉ có vậy thôi."
+
+msgctxt "0018 | MAKOTO NAEGI"
+msgstr "Vậy... ý cậu là...? Cậu thật sự không...?"
+
+msgctxt "0019 | MAKOTO NAEGI"
+msgstr "Kyoko, cậu thật sự..."
+
+msgctxt "0020 | MAKOTO NAEGI"
+msgstr "...không phải hung thủ sao?"
+
+msgctxt "0021 | MONOKUMA"
+msgstr "Được rồi! ⟦CLT 3⟧Hết giờ⟦CLT⟧!"
+
+msgctxt "0023 | MONOKUMA"
+msgstr ""
+"Tôi rất tiếc phải nói rằng, nhưng hết giờ rồi! Xong rồi,\n"
+"kết thúc rồi. Phiên tòa lớp học kết thúc rồiiii!"
+
+msgctxt "0024 | MAKOTO NAEGI"
+msgstr "K-Không thể nào! Từ khi nào lại có chuyện—?"
+
+msgctxt "0025 | MONOKUMA"
+msgstr ""
+"Là vì cô đến muộn! Vì vậy phiên tòa bắt đầu trễ,\n"
+"và thời gian đã hết!"
+
+msgctxt "0026 | MONOKUMA"
+msgstr ""
+"Vậy thì đến lúc bỏ phiếu rồi nhé! Mọi người,\n"
+"hãy dùng cần gạt trước mặt để bỏ phiếu nào!"
+
+msgctxt "0027 | MONOKUMA"
+msgstr ""
+"Nhưng tôi nghĩ chúng ta đã biết kẻ hắc ám là ai rồi,\n"
+"đúng không!?"
+
+msgctxt "0028 | MONOKUMA"
+msgstr "Puhuhu... Puuuhuhuhu!"
+
+==================== FOLDER SUMMARY ====================
+Monokuma Secret Tool
+

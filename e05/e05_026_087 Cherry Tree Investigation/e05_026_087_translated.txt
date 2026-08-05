@@ -1,0 +1,233 @@
+--- ChatGPT Translation Raw Output for e05_026_087.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ⟦CLT 4⟧桜の木が植えられている。しかも満開だ。
+#. ⟦CLT⟧
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This cherry tree is in full bloom.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 見とれてる場合じゃない、調査をしないと…
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"But I don't have time to appreciate it. I need to look\n"
+"around..."
+msgstr ""
+
+#. ⟦CLT 4⟧桜の木が植えられている。しかも満開だ。
+#. ⟦CLT⟧
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧This cherry tree is in full bloom.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 見とれてる場合じゃない、調査をしないと…
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"But I don't have time to appreciate it. I need to look\n"
+"around..."
+msgstr ""
+
+#. ⟦CLT 4⟧木製のロッカーがある…
+#. ⟦CLT⟧
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There are wooden lockers here...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. 事件に関わるような物は…
+#. なさそうだけど…
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"I don't see anything here that might be connected to\n"
+"the case..."
+msgstr ""
+
+#. ⟦CLT 4⟧鎧が飾られている…
+#. ⟦CLT⟧
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧A suit of armor is on display.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧気になる事は特にないな…
+#. ⟦CLT⟧
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Nothing is catching my attention, though...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧巻き藁がある…
+#. 稽古に使うんだろうな…
+#. ⟦CLT⟧
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧It's a straw post used for sword practice. Did they\n"
+"use it for training here, too...?\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧気になる事は特にないな…
+#. ⟦CLT⟧
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧Nothing is catching my attention, though...\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧遠くに的が見える…
+#. ⟦CLT⟧
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧That target seems pretty far away.\n"
+"⟦CLT⟧"
+msgstr ""
+
+#. ⟦CLT 4⟧おかしな点はないな…
+#. ⟦CLT⟧
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"⟦CLT 4⟧There doesn't seem to be anything out of the\n"
+"ordinary...\n"
+"⟦CLT⟧"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cây anh đào này đang nở rộ.\n"
+"⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr ""
+"Mình không có thời gian để ngắm nhìn nó. Mình cần phải\n"
+"tìm kiếm xung quanh..."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cây anh đào này đang nở rộ.\n"
+"⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr ""
+"Mình không có thời gian để ngắm nhìn nó. Mình cần phải\n"
+"tìm kiếm xung quanh..."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có những chiếc tủ gỗ ở đây...\n"
+"⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr ""
+"Mình không thấy thứ gì ở đây có thể liên quan đến\n"
+"vụ án..."
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Một bộ áo giáp đang được trưng bày.\n"
+"⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Tuy nhiên, không có gì đặc biệt thu hút sự chú ý của\n"
+"mình...\n"
+"⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Đó là một cột rơm dùng để luyện kiếm. Họ cũng dùng\n"
+"nó để tập luyện ở đây sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Tuy nhiên, không có gì đặc biệt thu hút sự chú ý của\n"
+"mình...\n"
+"⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có một cái bia ở khá xa.\n"
+"⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có vẻ như không có gì bất thường...\n"
+"⟦CLT⟧"
+
+po
+
+msgctxt "0001 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cây anh đào này đang nở rộ.\n"
+"⟦CLT⟧"
+
+msgctxt "0002 | MAKOTO NAEGI"
+msgstr ""
+"Mình không có thời gian để ngắm nhìn nó. Mình cần phải\n"
+"tìm kiếm xung quanh..."
+
+msgctxt "0003 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Cây anh đào này đang nở rộ.\n"
+"⟦CLT⟧"
+
+msgctxt "0004 | MAKOTO NAEGI"
+msgstr ""
+"Mình không có thời gian để ngắm nhìn nó. Mình cần phải\n"
+"tìm kiếm xung quanh..."
+
+msgctxt "0005 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có những chiếc tủ gỗ ở đây...\n"
+"⟦CLT⟧"
+
+msgctxt "0006 | MAKOTO NAEGI"
+msgstr ""
+"Mình không thấy thứ gì ở đây có thể liên quan đến\n"
+"vụ án..."
+
+msgctxt "0007 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Một bộ áo giáp đang được trưng bày.\n"
+"⟦CLT⟧"
+
+msgctxt "0008 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Tuy nhiên, không có gì đặc biệt thu hút sự chú ý của\n"
+"mình...\n"
+"⟦CLT⟧"
+
+msgctxt "0009 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Đó là một cột rơm dùng để luyện kiếm. Họ cũng dùng\n"
+"nó để tập luyện ở đây sao...?\n"
+"⟦CLT⟧"
+
+msgctxt "0010 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Tuy nhiên, không có gì đặc biệt thu hút sự chú ý của\n"
+"mình...\n"
+"⟦CLT⟧"
+
+msgctxt "0011 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có một cái bia ở khá xa.\n"
+"⟦CLT⟧"
+
+msgctxt "0012 | MAKOTO NAEGI"
+msgstr ""
+"⟦CLT 4⟧Có vẻ như không có gì bất thường...\n"
+"⟦CLT⟧"
+
+==================== FOLDER SUMMARY ====================
+Cherry Tree Investigation
+

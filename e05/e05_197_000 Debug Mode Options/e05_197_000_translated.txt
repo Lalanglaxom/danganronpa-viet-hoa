@@ -1,0 +1,43 @@
+--- ChatGPT Translation Raw Output for e05_197_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. バッドエンドルートに飛ぶ
+msgctxt "0001 | CHOICE/RE:ACT"
+msgid "Jump to Bad Ending"
+msgstr ""
+
+#. ＭＴＢ（腐川）に飛ぶ
+msgctxt "0002 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle (Toko)"
+msgstr ""
+
+#. 閃きアナグラム１～２
+msgctxt "0003 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 1-2"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+po
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Kết thúc xấu"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Trận chiến Thời gian Đạn (Toko)"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Trò chơi Hangman's Gambit 1-2"
+
+po
+
+msgctxt "0001 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Kết thúc xấu"
+
+msgctxt "0002 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Trận chiến Thời gian Đạn (Toko)"
+
+msgctxt "0003 | CHOICE/RE:ACT"
+msgstr "Chuyển đến Trò chơi Hangman's Gambit 1-2"
+
+==================== FOLDER SUMMARY ====================
+Debug Mode Options
+

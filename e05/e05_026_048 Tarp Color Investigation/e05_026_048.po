@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. これは…青いビニールシート…
+#. 今回の事件に関係してるのは…
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"This tarp is blue. But the only tarp involved in the\n"
+"case this time..."
+msgstr ""
+"Tấm bạt này màu xanh. Nhưng tấm bạt duy nhất có liên quan\n"
+"đến vụ án lần này..."
+
+#. <CLT 4>…白いビニールシートだったな。
+#. <CLT>
+msgctxt "0002 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>...is a *white* tarp.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>...là một tấm bạt *màu trắng*.\n"
+"<CLT>"
+
+#. <CLT 4>大きな棚がある…
+#. <CLT>
+msgctxt "0003 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Now that's a big shelf.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đúng là một cái kệ lớn thật.\n"
+"<CLT>"
+
+#. <CLT 4>中には、実験器具などが置かれているけど…
+#. 気になる事はないな…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There's a bunch of lab equipment and stuff, but I\n"
+"don't see anything worthwhile here...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có rất nhiều thiết bị thí nghiệm và những thứ khác,\n"
+"nhưng mình không thấy gì đáng chú ý ở đây...\n"
+"<CLT>"
+
+#. <CLT 4>色々な棚がある…
+#. 手掛かりになる物はないみたいだ…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>There are shelves full of stuff. None of which seems\n"
+"to offer any kind of clue...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có rất nhiều kệ chứa đầy đồ. Nhưng dường như không\n"
+"có thứ gì cung cấp bất kỳ manh mối nào...\n"
+"<CLT>"
+
+#. はい
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Yes"
+msgstr "Có"
+
+#. いいえ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "No"
+msgstr "Không"
+
+#. <CLT 23>物理準備室から出ますか？
+#. <CLT>
+msgctxt "0008 | NARRATION"
+msgid ""
+"<CLT 23>Leave the equipment room?\n"
+"<CLT>"
+msgstr ""
+"<CLT 23>Rời khỏi phòng thiết bị?\n"
+"<CLT>"
