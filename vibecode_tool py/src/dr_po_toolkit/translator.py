@@ -559,7 +559,12 @@ def _api_response_schema(entry_count: int) -> dict[str, Any]:
     count = max(1, int(entry_count))
     return {
         "type": "object",
-        "additionalProperties": False,
+        # Do not send additionalProperties here. Some google-genai releases
+        # still route JSON Schema through the legacy response_schema converter,
+        # which serializes it as unsupported ``additional_properties`` and makes
+        # the Gemini API reject the entire request with HTTP 400. The response
+        # parser already ignores unknown top-level keys, so forbidding extras is
+        # not needed for safe mapping.
         "properties": {
             "t": {
                 "type": "array",
@@ -571,6 +576,36 @@ def _api_response_schema(entry_count: int) -> dict[str, Any]:
         },
         "required": ["t"],
     }
+
+
+def _is_gemini_schema_compat_error(exc: BaseException) -> bool:
+    """Return True for SDK/API structured-schema serialization failures.
+
+    Affected google-genai versions can turn ``response_json_schema`` into the
+    legacy ``response_schema`` wire representation and snake-case JSON Schema
+    keywords such as ``additionalProperties``. Gemini then returns a 400 before
+    generation starts. Retrying with JSON MIME type but without a response
+    schema is safe because our system instruction still requires the exact
+    {"t": [...]} shape and the response is validated locally before mapping.
+    """
+    detail = str(exc or "").casefold()
+    if not detail:
+        return False
+    mentions_schema = (
+        "response_schema" in detail
+        or "responsejsonschema" in detail
+        or "response_json_schema" in detail
+        or "generation_config.response_schema" in detail
+    )
+    compatibility_signal = (
+        "additional_properties" in detail
+        or "additionalproperties" in detail
+        or "cannot find field" in detail
+        or "invalid json payload" in detail
+    )
+    return mentions_schema and compatibility_signal and (
+        "400" in detail or "invalid_argument" in detail or "invalid argument" in detail
+    )
 
 
 def _auto_max_output_tokens(payload: Mapping[str, Any]) -> int:
@@ -789,7 +824,12 @@ class GeminiApiClient:
         config_kwargs: dict[str, Any] = {
             "system_instruction": active_prompt,
             "response_mime_type": "application/json",
-            "response_schema": _api_response_schema(len(expected_uids)),
+            # This is a standard JSON Schema (it uses JSON-Schema keywords such
+            # as ``additionalProperties``).  Gemini's ``response_schema`` field
+            # is the narrower OpenAPI-style Schema object and can reject those
+            # keywords after the SDK converts them for the wire request.
+            # ``response_json_schema`` is the API field intended for JSON Schema.
+            "response_json_schema": _api_response_schema(len(expected_uids)),
             "max_output_tokens": output_limit,
             "temperature": 0,
         }
@@ -800,11 +840,28 @@ class GeminiApiClient:
 
         def request() -> None:
             try:
-                outcome["response"] = self._client.models.generate_content(
-                    model=self.model,
-                    contents=build_api_prompt(payload),
-                    config=self._types.GenerateContentConfig(**config_kwargs),
-                )
+                contents = build_api_prompt(payload)
+                try:
+                    outcome["response"] = self._client.models.generate_content(
+                        model=self.model,
+                        contents=contents,
+                        config=self._types.GenerateContentConfig(**config_kwargs),
+                    )
+                except BaseException as exc:
+                    if not _is_gemini_schema_compat_error(exc):
+                        raise
+                    # Compatibility fallback for google-genai releases that
+                    # incorrectly serialize response_json_schema as the legacy
+                    # response_schema. The failed request is rejected before
+                    # generation; retry once with JSON-only mode.
+                    fallback_kwargs = dict(config_kwargs)
+                    fallback_kwargs.pop("response_json_schema", None)
+                    fallback_kwargs.pop("response_schema", None)
+                    outcome["response"] = self._client.models.generate_content(
+                        model=self.model,
+                        contents=contents,
+                        config=self._types.GenerateContentConfig(**fallback_kwargs),
+                    )
             except BaseException as exc:  # preserve the SDK's original exception for the caller
                 outcome["error"] = exc
             finally:

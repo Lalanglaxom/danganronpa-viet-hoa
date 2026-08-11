@@ -199,8 +199,9 @@ def test_gemini_client_sends_compact_request_once_and_normalizes_bad_uid():
     assert calls[0]["config"]["system_instruction"] == API_SYSTEM_INSTRUCTIONS.strip()
     assert calls[0]["config"]["temperature"] == 0
     assert calls[0]["config"]["thinking_config"] == {"thinking_budget": 0}
-    assert calls[0]["config"]["response_schema"]["properties"]["t"]["minItems"] == 1
-    assert calls[0]["config"]["response_schema"]["additionalProperties"] is False
+    assert "response_schema" not in calls[0]["config"]
+    assert calls[0]["config"]["response_json_schema"]["properties"]["t"]["minItems"] == 1
+    assert "additionalProperties" not in calls[0]["config"]["response_json_schema"]
     assert calls[0]["config"]["max_output_tokens"] >= 256
     assert client.total_usage.as_dict() == {
         "requests": 1,
@@ -210,6 +211,52 @@ def test_gemini_client_sends_compact_request_once_and_normalizes_bad_uid():
         "cached_tokens": 0,
         "total_tokens": 38,
     }
+
+
+def test_gemini_client_retries_without_schema_on_additional_properties_400():
+    calls: list[dict] = []
+
+    class FakeModels:
+        def generate_content(self, **kwargs):
+            calls.append(kwargs)
+            if len(calls) == 1:
+                raise RuntimeError(
+                    "400 INVALID_ARGUMENT: Invalid JSON payload received. Unknown name "
+                    "'additional_properties' at 'generation_config.response_schema': Cannot find field."
+                )
+            return type("Response", (), {"text": '{"t":["Xin chào"]}'})()
+
+    class FakeTypes:
+        @staticmethod
+        def GenerateContentConfig(**kwargs):
+            return kwargs
+
+        @staticmethod
+        def ThinkingConfig(**kwargs):
+            return kwargs
+
+    client = GeminiApiClient.__new__(GeminiApiClient)
+    client._client = type("Client", (), {"models": FakeModels()})()
+    client._types = FakeTypes
+    client.model = "gemini-2.5-flash"
+    client.prompt = SYSTEM_INSTRUCTIONS
+    client.timeout_seconds = 5
+    client.thinking_mode = "off"
+    client.max_output_tokens = 0
+    client.last_usage = None
+    client.total_usage = type("UsageTotal", (), {"add": lambda self, other: None})()
+    client._usage_lock = __import__("threading").Lock()
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="Hello", msgstr="")
+
+    result = client.translate_payload(build_payload([entry]))
+
+    assert result == {entry.uid: "Xin chào"}
+    assert len(calls) == 2
+    assert "response_json_schema" in calls[0]["config"]
+    assert "additionalProperties" not in calls[0]["config"]["response_json_schema"]
+    assert "response_json_schema" not in calls[1]["config"]
+    assert "response_schema" not in calls[1]["config"]
+    assert calls[1]["config"]["response_mime_type"] == "application/json"
 
 
 def test_incomplete_gemini_response_explains_finish_reason_on_missing_entry():

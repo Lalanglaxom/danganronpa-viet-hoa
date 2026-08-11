@@ -100,7 +100,15 @@ def search_replace_pairs(find_text: str, replace_text: str) -> list[tuple[str, s
     kept verbatim except for shared ``\n``/``\r``/``\t`` shortcuts.  If fewer
     replacements than find terms are provided, the last replacement is reused.
     """
-    needles = [part.strip() for part in split_semicolon_parts(find_text) if part.strip()]
+    # Keep whitespace-only find terms verbatim so rules such as two spaces →
+    # one space are valid.  Non-whitespace terms retain the historical trim
+    # behavior, so ``foo; bar`` still means ``foo`` then ``bar`` rather than
+    # a second needle with an accidental leading space.
+    needles: list[str] = []
+    for part in split_semicolon_parts(find_text, keep_empty=True):
+        if part == "":
+            continue
+        needles.append(part if not part.strip() else part.strip())
     if not needles:
         return []
     replacements = split_semicolon_parts(replace_text, keep_empty=True)
@@ -128,7 +136,13 @@ def flexible_whitespace_pattern(text: str) -> str:
     visible whitespace, so ``hello world`` matches ``hello\nworld`` while
     ``helloworld`` can also match ``hello\nworld``.
     """
-    value = user_multiline_text(text).strip()
+    raw_value = user_multiline_text(text)
+    # A whitespace-only needle is intentional (for example, two spaces → one
+    # space).  Do not strip it into an empty regex, which would match at every
+    # position.  Preserve the exact whitespace count for this special case.
+    if raw_value and not raw_value.strip():
+        return re.escape(raw_value)
+    value = raw_value.strip()
     pieces: list[str] = []
     pos = 0
     for match in re.finditer(r"\s+", value):
@@ -246,26 +260,17 @@ def visible_len(text: str) -> int:
 
 
 def visible_character_counts_by_line(text: str) -> list[int]:
-    """Count visible characters on every real text line.
+    """Count characters on every real text line, ignoring only CLT tags.
 
-    Every remaining character counts, including spaces and punctuation, so
-    accidental doubled spaces remain visible in the metric. Game control and
-    formatting syntax is excluded: angle-bracket tags (including CLT), bracket
-    tags, percent tokens such as ``%TEXT%``, printf placeholders, brace
-    placeholders, and escaped control tokens. The returned list follows source
-    line order and includes ``0`` for empty lines.
+    Every other character counts exactly as written, including spaces,
+    punctuation, square brackets, generic tags, and placeholders.  ``<CLT>``
+    and numbered variants such as ``<CLT 4>`` are the only syntax removed from
+    the count.  The returned list follows source line order and includes ``0``
+    for empty lines.
     """
 
     normalized = (text or "").replace("\r\n", "\n").replace("\r", "\n")
-    counts: list[int] = []
-    for line in normalized.split("\n"):
-        visible = ANY_TAG_RE.sub("", line)
-        visible = BRACKET_TAG_RE.sub("", visible)
-        visible = PERCENT_TOKEN_RE.sub("", visible)
-        for pattern in PLACEHOLDER_PATTERNS.values():
-            visible = pattern.sub("", visible)
-        counts.append(len(visible))
-    return counts
+    return [visible_len(line) for line in normalized.split("\n")]
 
 
 def placeholders_by_type(text: str) -> dict[str, list[str]]:

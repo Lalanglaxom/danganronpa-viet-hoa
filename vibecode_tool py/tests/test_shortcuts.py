@@ -155,6 +155,27 @@ def test_shortcuts_use_settings_style_window_with_file_assignment_and_reset():
     assert "three held keys such as Ctrl+Shift+1" in gui_source
 
 
+
+
+def test_shortcut_dialog_shows_context_instructions_for_every_top_level_tab():
+    gui_source = (Path(__file__).parents[1] / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
+    assert "def _shortcut_instructions_for_tab" in gui_source
+    assert 'current_tab_title = self.tabs.tabText(self.tabs.currentIndex())' in gui_source
+    assert "QGroupBox(f\"Current tab — {current_tab_title or 'Unknown'}\")" in gui_source
+    for title in (
+        "Validate",
+        "Rules & Replace",
+        "Line Wrap",
+        "Search",
+        "Translafixer",
+        "PO Viewer",
+        "AI Translation",
+        "Repack",
+    ):
+        assert f'"{title}": (' in gui_source
+    assert "strictly from top to bottom" in gui_source
+
+
 def test_english_and_vietnamese_editors_are_four_visible_rows():
     gui_source = (Path(__file__).parents[1] / "src" / "dr_po_toolkit" / "gui.py").read_text(encoding="utf-8")
     assert "def _set_plain_text_visible_rows(editor: QPlainTextEdit, rows: int = 4)" in gui_source

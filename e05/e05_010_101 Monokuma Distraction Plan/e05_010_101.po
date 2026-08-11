@@ -28,8 +28,8 @@ msgid ""
 "Hey, Monokuma! You can see me, right!? Get out here!\n"
 "I've got a bone to pick with you!"
 msgstr ""
-"Này, Monokuma! Cậu đang nhìn thấy tôi đúng không!? Ra đây đi!\n"
-"Tôi có chuyện cần nói với cậu!"
+"Này, Monokuma! Mi đang nhìn thấy ta đúng không!?\n"
+"Ra đây đi! Ta có chuyện cần nói với mi!"
 
 #. <CLT 4>そして、しばらくすると……
 #. <CLT>
@@ -59,7 +59,7 @@ msgstr "À mà này!"
 #. な、なんだよ…
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "H-Huh?"
-msgstr "Cái... gì...?"
+msgstr "H... Hả...?"
 
 #. 霧切さんと何してたの？
 #. 深夜のお風呂場に２人きりなんて…
@@ -87,13 +87,13 @@ msgid ""
 "[REMOVED TO CONFORM WITH LOCAL\n"
 "AND INTERNATIONAL CENSORSHIP LAWS]"
 msgstr ""
-"[ĐÃ XÓA ĐỂ TUÂN THỦ LUẬT KIỂM DUYỆT\n"
+"[ĐÃ BỊ GỠ ĐỂ TUÂN THỦ LUẬT KIỂM DUYỆT\n"
 "ĐỊA PHƯƠNG VÀ QUỐC TẾ]"
 
 #. …ですかぁ！？
 msgctxt "0011 | MONOKUMA"
 msgid "—all over her, didn't you!?"
-msgstr "—đã làm chuyện đó với cô ấy đúng không!?"
+msgstr "—khắp cô ấy, đúng không!?"
 
 #. ………………
 msgctxt "0012 | MAKOTO NAEGI"
@@ -131,8 +131,8 @@ msgid ""
 "Oh, so is that why there's no surveillance cameras in\n"
 "the bathhouse?"
 msgstr ""
-"Ồ, vậy đó là lý do không có camera giám sát trong\n"
-"nhà tắm sao?"
+"Ồ, vậy đó là lý do không có camera giám sát\n"
+"trong nhà tắm sao?"
 
 #. 図星！
 msgctxt "0017 | MONOKUMA"
@@ -146,8 +146,8 @@ msgid ""
 "Or is it maybe cuz the lens gets all fogged up, and\n"
 "you can't see anything anyway?"
 msgstr ""
-"Hay là vì ống kính sẽ bị hơi nước làm mờ,\n"
-"nên dù đặt camera cũng chẳng nhìn thấy gì?"
+"Hay là vì ống kính sẽ bị hơi nước làm mờ, nên dù đặt\n"
+"camera cũng chẳng nhìn thấy gì?"
 
 #. ………………
 msgctxt "0019 | MONOKUMA"
@@ -166,8 +166,8 @@ msgid ""
 "Anyway! You went to all that trouble to get me out\n"
 "here, now whaddya want!?"
 msgstr ""
-"Dù sao đi nữa! Cậu đã vất vả gọi ta ra đây,\n"
-"vậy rốt cuộc muốn gì!?"
+"Dù sao thì! Cậu đã vất vả gọi ta ra đây, vậy rốt\n"
+"cuộc muốn gì đây!?"
 
 #. えっと…それは…
 msgctxt "0022 | MAKOTO NAEGI"
@@ -177,7 +177,7 @@ msgstr "Ồ, chuyện đó... ừm..."
 #. お前に…確認したい事があるんだよ…
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "There's just something I wanted to confirm with you."
-msgstr "Tôi chỉ có một chuyện muốn xác nhận với cậu."
+msgstr "Ta chỉ có một chuyện muốn xác nhận với mi."
 
 #. …オスかメスかって？
 msgctxt "0024 | MONOKUMA"
@@ -187,7 +187,9 @@ msgstr "Rằng ta là quý cô hay quý ông sao?"
 #. クマには、オスもメスもないんだよ！
 msgctxt "0025 | MONOKUMA"
 msgid "But in the bear kingdom, there IS no male or female!"
-msgstr "Nhưng trong vương quốc loài gấu thì KHÔNG có nam hay nữ!"
+msgstr ""
+"Nhưng trong vương quốc loài gấu thì KHÔNG có \n"
+"nam hay nữ!"
 
 #. いや…あるだろ…
 msgctxt "0026 | MAKOTO NAEGI"
@@ -203,9 +205,7 @@ msgstr "Thật sao!?"
 #. ボクの…存在って…
 msgctxt "0028 | MONOKUMA"
 msgid "Th-Then...what am I? My entire existence..."
-msgstr ""
-"V-Vậy thì... ta là gì chứ?\n"
-"Sự tồn tại của ta..."
+msgstr "V-Vậy thì... ta là gì chứ? Sự tồn tại của ta..."
 
 #. や、やめよう…深く考えるとハマる…
 #. それで…苗木クンの聞きたい事って…？
@@ -224,13 +224,13 @@ msgid ""
 "Oh, well...you told us earlier that your precious had\n"
 "been stolen."
 msgstr ""
-"À, lúc nãy... cậu đã nói rằng báu vật của cậu\n"
-"đã bị đánh cắp."
+"À, lúc nãy... mi đã nói rằng báu vật của mi đã\n"
+"bị đánh cắp."
 
 #. その宝物って…なんの事だよ…？
 msgctxt "0031 | MAKOTO NAEGI"
 msgid "What's this \"precious\" of yours?"
-msgstr "Cái \"báu vật\" đó của cậu là gì vậy?"
+msgstr "Cái \"báu vật\" đó của mi là gì vậy?"
 
 #. ………………
 msgctxt "0032 | MONOKUMA"
@@ -253,8 +253,8 @@ msgid ""
 "...is that seriously what you dragged me out here to\n"
 "ask me?"
 msgstr ""
-"...đây thật sự là lý do cậu kéo ta ra tận đây\n"
-"chỉ để hỏi chuyện đó sao?"
+"...đây thật sự là lý do cậu kéo ta ra tận đây chỉ để\n"
+"hỏi chuyện đó sao?"
 
 #. ………………
 msgctxt "0035 | MAKOTO NAEGI"
@@ -266,7 +266,9 @@ msgctxt "0036 | MONOKUMA"
 msgid ""
 "You gotta be kiddin' me! You gotta be 100-megaton\n"
 "freakin' KIDDING me!"
-msgstr "Đúng là sốc mà! Sốc tận 100 megaton luôn đấy!!"
+msgstr ""
+"Mi đùa ta đúng không! Mi đùa ta tận 100 triệu\n"
+"tấn đúng không!?"
 
 #. もっと大事な事を聞くんじゃないの？
 #. ハチミツのとり方とか、繁殖期の過ごし方とか…
@@ -275,8 +277,8 @@ msgid ""
 "You're not gonna ask something useful, like how to get\n"
 "the best honey, or ursine breeding tips?"
 msgstr ""
-"Cậu không định hỏi chuyện gì hữu ích hơn sao?\n"
-"Như cách lấy mật ong ngon nhất, hay mẹo sinh sản của loài gấu chẳng hạn..."
+"Cậu không định hỏi chuyện gì hữu ích hơn sao? Như cách lấy mật\n"
+"ong ngon nhất, hay mẹo sinh sản của loài gấu chẳng hạn..."
 
 #. ………………
 msgctxt "0038 | MAKOTO NAEGI"
@@ -291,7 +293,7 @@ msgid ""
 "nutty as you!?"
 msgstr ""
 "Thật ngớ ngẩn... Tất cả con trai tuổi dậy thì\n"
-"đều điên rồ như cậu sao!?"
+"đều ngứa háng như cậu sao!?"
 
 #. くだらなすぎて面倒だから教えてやるよ！
 #. <CLT 3>“鍵”<CLT>と<CLT 3>“ほにゃらら”<CLT>だよ！　はい以上！！
@@ -330,8 +332,8 @@ msgid ""
 "And the next time you summon me for something so\n"
 "stupid, I'll open up your skull and find out!"
 msgstr ""
-"Lần sau mà cậu triệu hồi ta vì một lý do ngớ ngẩn như vậy,\n"
-"ta sẽ mở hộp sọ cậu ra để xem cho biết!"
+"Lần sau mà triệu hồi ta vì một lý do ngớ ngẩn như\n"
+"vậy, ta sẽ mở hộp sọ ra để xem cho biết!"
 
 #. <CLT 4>語気を荒げながら、モノクマは去っていった。
 #. <CLT>
@@ -357,7 +359,7 @@ msgid ""
 "<CLT 4>I hope I kept him distracted long enough...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình hy vọng mình đã khiến hắn mất tập trung đủ lâu...\n"
+"<CLT 4>Mình hy vọng mình đã đánh lạc hướng hắn đủ lâu...\n"
 "<CLT>"
 
 #. <CLT 4>後は…霧切さんが無事に帰って来るのを、
@@ -369,8 +371,8 @@ msgid ""
 "okay.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Giờ mình chỉ có thể chờ đợi và hy vọng Kyoko\n"
-"sẽ trở về an toàn.\n"
+"<CLT 4>Giờ mình chỉ có thể chờ đợi và hy vọng Kyoko sẽ\n"
+"trở về an toàn.\n"
 "<CLT>"
 
 #. <CLT 4>大丈夫…あの霧切さんなんだし…
@@ -423,8 +425,8 @@ msgid ""
 "Hmm? This super stylish, super fashionable game\n"
 "was canceled during development?"
 msgstr ""
-"Hửm? Tựa game siêu phong cách, siêu thời thượng này\n"
-"đã bị hủy trong quá trình phát triển sao?"
+"Hửm? Tựa game siêu phong cách, siêu thời thượng\n"
+"này đã bị hủy trong quá trình phát triển sao?"
 
 #. でもダンガンロンパが売れれば再開されるんだって？
 msgctxt "0054 | MONOKUMA"
@@ -432,8 +434,8 @@ msgid ""
 "But it'll start back up again if Danganronpa\n"
 "sells well?"
 msgstr ""
-"Nhưng nó sẽ được tiếp tục phát triển nếu Danganronpa\n"
-"bán chạy sao?"
+"Nhưng nó sẽ được tiếp tục phát triển nếu\n"
+"Danganronpa bán chạy sao?"
 
 #. じゃあ、オマエラも友達に勧めないとな！
 msgctxt "0055 | MONOKUMA"
@@ -441,5 +443,5 @@ msgid ""
 "Then you guys have to recommend it to your\n"
 "friends, too!"
 msgstr ""
-"Vậy thì các ngươi cũng phải giới thiệu nó cho\n"
-"bạn bè của mình nữa nhé!"
+"Vậy thì các bạn cũng phải tích cực giới thiệu trò này\n"
+"cho bạn bè của mình đi chứ!"

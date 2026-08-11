@@ -937,6 +937,67 @@ class ToolkitGUI(QMainWindow):
         editor.setMinimumHeight(height)
         editor.setMaximumHeight(height)
 
+    def _shortcut_instructions_for_tab(self, title: str, shortcuts: dict[str, str]) -> str:
+        """Return context-sensitive shortcut/use instructions for a top-level tab."""
+
+        def key(action: str) -> str:
+            value = shortcuts.get(action, "")
+            return html.escape(value or "Disabled")
+
+        common_editor = (
+            "<b>Ctrl+S</b> saves, <b>Ctrl+Z</b> undoes, <b>Ctrl+F</b> opens find/replace, "
+            "<b>Ctrl+R</b> applies enabled preset replacement rules, and <b>Ctrl+G</b> runs Gemini "
+            "for the selected/current entries."
+        )
+        wrap_keys = (
+            f"Wrap presets: <b>{key('preset_1')}</b>, <b>{key('preset_2')}</b>, "
+            f"<b>{key('preset_3')}</b>, <b>{key('preset_4')}</b>. "
+            f"Whole-file wrap: <b>{key(WRAP_ENTIRE_FILE_ACTION)}</b>."
+        )
+        file_keys = (
+            f"Switch PO files with <b>{key(FILE_PREVIOUS_ACTION)}</b> / "
+            f"<b>{key(FILE_NEXT_ACTION)}</b>."
+        )
+
+        instructions = {
+            "Validate": (
+                "Choose the working folders and optional extra path, then use <b>Run Validate</b>. "
+                "This tab has no direct action shortcut; validation runs only when you start it here."
+            ),
+            "Rules & Replace": (
+                "Replacement rules execute <b>strictly from top to bottom</b>. Drag a rule to change its position; "
+                "each lower rule receives the text produced by the rules above it. Use <b>Run Replace</b> for mass replacement. "
+                "<b>Ctrl+R</b> is the preset-replace shortcut in Search, duplicate views, and PO Viewer."
+            ),
+            "Line Wrap": (
+                "Configure the four wrap presets here. The assigned wrap keys are used from Search, duplicate views, "
+                f"and PO Viewer. {wrap_keys}"
+            ),
+            "Search": (
+                f"{common_editor} {wrap_keys} {file_keys} Select rows to apply an action to several results; "
+                "otherwise the current row is used."
+            ),
+            "Translafixer": (
+                "Use this tab to scan/apply reference translations and open duplicate/conflict views. "
+                f"Inside the duplicate view, {common_editor} {wrap_keys} {file_keys}"
+            ),
+            "PO Viewer": (
+                f"{common_editor} <b>Ctrl+Up</b> / <b>Ctrl+Down</b> moves between entries; "
+                "<b>Ctrl+E</b> or <b>F2</b> focuses Vietnamese; hold Ctrl and press <b>1</b>/<b>2</b>/<b>3</b> "
+                f"for suggestions; <b>Alt+0</b> rebuilds suggestions. {wrap_keys} {file_keys}"
+            ),
+            "AI Translation": (
+                "Configure Web/API translation and run the selected mode from this tab. "
+                "<b>Ctrl+G</b> is used for single-entry Gemini translation in Search, duplicate views, and PO Viewer; "
+                "it does not start the mass-translation run here."
+            ),
+            "Repack": (
+                "Choose the configured targets, then use <b>Repack</b> or <b>Sync by Filename</b>. "
+                "This tab has no direct action shortcut so a repack cannot be triggered accidentally."
+            ),
+        }
+        return instructions.get(title, "Use the controls shown in this tab. No tab-specific shortcut instructions are defined.")
+
     def _open_shortcuts_dialog(self) -> None:
         dialog = QDialog(self)
         dialog.setWindowTitle("Shortcut Settings")
@@ -948,7 +1009,8 @@ class ToolkitGUI(QMainWindow):
         intro = QLabel(
             "Assign shortcuts for wrapping and switching PO files. A shortcut may be one chord, including "
             "three held keys such as Ctrl+Shift+1, or a sequence of up to three chords. Single-chord "
-            "wrap shortcuts remain repeatable while their modifier is held."
+            "wrap shortcuts remain repeatable while their modifier is held. The first section below shows instructions "
+            "for the tab that was active when you opened this window."
         )
         intro.setWordWrap(True)
         intro.setObjectName("muted")
@@ -963,6 +1025,16 @@ class ToolkitGUI(QMainWindow):
 
         current = self._custom_shortcut_sequences()
         shortcut_editors: dict[str, QKeySequenceEdit] = {}
+
+        current_tab_title = self.tabs.tabText(self.tabs.currentIndex()) if self.tabs.count() else ""
+        current_tab_group = QGroupBox(f"Current tab — {current_tab_title or 'Unknown'}")
+        current_tab_layout = QVBoxLayout(current_tab_group)
+        current_tab_help = QLabel(self._shortcut_instructions_for_tab(current_tab_title, current))
+        current_tab_help.setWordWrap(True)
+        current_tab_help.setTextFormat(Qt.TextFormat.RichText)
+        current_tab_help.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        current_tab_layout.addWidget(current_tab_help)
+        content_layout.addWidget(current_tab_group)
 
         def add_assignment_group(title: str, actions: tuple[str, ...], note_text: str) -> None:
             group = QGroupBox(title)
@@ -1017,6 +1089,8 @@ class ToolkitGUI(QMainWindow):
             <h2 style='color:{ACCENT_SOFT}; margin-top:0;'>Shortcuts &amp; instructions</h2>
             <p><b>Ctrl+S</b> save. <b>Ctrl+Z</b> undo. <b>Ctrl+F</b> find/replace.
             <b>Ctrl+G</b> Gemini. <b>Ctrl+R</b> enabled preset replacements.</p>
+            <p><b>Rules &amp; Replace:</b> replacement rules always execute in visible top-to-bottom order;
+            each rule receives the output of the one above it.</p>
             <p><b>Custom shortcuts:</b> a chord may include modifiers, such as Ctrl+Shift+1.
             A sequence may contain up to three chords. Direct single-chord wrap assignments remain repeatable: keep
             the modifier held and press the assigned preset keys in any order.</p>
@@ -2091,6 +2165,12 @@ class ToolkitGUI(QMainWindow):
     # ---------------- Rules + Mass Replace ----------------
     def _build_replace_tab(self) -> None:
         _tab, layout = self._new_tab("Rules & Replace")
+        order_note = QLabel(
+            "Execution order: top → bottom. Each rule runs on the result produced by the rule above it; drag rules to reorder."
+        )
+        order_note.setWordWrap(True)
+        order_note.setObjectName("muted")
+        layout.addWidget(order_note)
         main_splitter = QSplitter(Qt.Orientation.Vertical)
         layout.addWidget(main_splitter, 1)
 
@@ -2144,7 +2224,7 @@ class ToolkitGUI(QMainWindow):
         scope_field.setPlaceholderText("Optional, for example clt:4")
         find_field = QPlainTextEdit()
         find_field.setFixedHeight(62)
-        find_field.setPlaceholderText(r"Find text; another find. Use \; for literal ;.")
+        find_field.setPlaceholderText(r"Find text; another find. Use \; for literal ;. Whitespace-only finds are kept exactly.")
         replace_field = QPlainTextEdit()
         replace_field.setFixedHeight(62)
         replace_field.setPlaceholderText(r"Replacement; another replacement. Missing replacements reuse the last one.")
@@ -2268,7 +2348,7 @@ class ToolkitGUI(QMainWindow):
             self.config["rules_file"] = str(path)
             save_config(self.config)
             if show_message:
-                QMessageBox.information(self, "Rules", "Rules saved in weak-to-strong order.")
+                QMessageBox.information(self, "Rules", "Rules saved in strict top-to-bottom execution order.")
 
         def widget_value(widget: QWidget) -> object:
             if isinstance(widget, QCheckBox):
@@ -2671,7 +2751,7 @@ class ToolkitGUI(QMainWindow):
         en_character_count_label.setObjectName("muted")
         en_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         en_character_count_label.setToolTip(
-            "Visible character count for each English line. Spaces and punctuation count; CLT/control tags and placeholders are ignored."
+            "Character count for each English line. Every character counts except CLT tags."
         )
         en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
         en_header.addWidget(en_label)
@@ -2691,7 +2771,7 @@ class ToolkitGUI(QMainWindow):
         vi_character_count_label.setObjectName("muted")
         vi_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         vi_character_count_label.setToolTip(
-            "Visible character count for each Vietnamese line. Spaces and punctuation count; CLT/control tags and placeholders are ignored."
+            "Character count for each Vietnamese line. Every character counts except CLT tags."
         )
         vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
         vi_header.addWidget(vi_label)
@@ -6223,13 +6303,13 @@ class ToolkitGUI(QMainWindow):
         en_character_count_label.setObjectName("muted")
         en_character_count_label.setWordWrap(True)
         en_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        en_character_count_label.setToolTip("Visible character count for each English line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
+        en_character_count_label.setToolTip("Character count for each English line, from top to bottom. Every character counts except CLT tags.")
         en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
         vi_character_count_label = QLabel("—")
         vi_character_count_label.setObjectName("muted")
         vi_character_count_label.setWordWrap(True)
         vi_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
-        vi_character_count_label.setToolTip("Visible character count for each Vietnamese line, from top to bottom. Spaces and punctuation count; CLT/control tags and placeholders are ignored.")
+        vi_character_count_label.setToolTip("Character count for each Vietnamese line, from top to bottom. Every character counts except CLT tags.")
         vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
 
         en_speaker_count_row = QWidget()

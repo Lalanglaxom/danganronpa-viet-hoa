@@ -14,7 +14,7 @@ msgstr ""
 #. あ、そうだ…
 msgctxt "0001 | MAKOTO NAEGI"
 msgid "Ah, that's right."
-msgstr "À, đúng vậy..."
+msgstr "À, đúng rồi..."
 
 #. 腐川さんから預かったナイフを、
 #. しまっておかないとな…
@@ -29,8 +29,8 @@ msgid ""
 "I think the safest place for it will be in my <CLT 3>desk\n"
 "drawer<CLT>."
 msgstr ""
-"Mình nghĩ nơi an toàn nhất để cất nó là trong <CLT 3>ngăn kéo\n"
-"bàn học<CLT> của mình."
+"Mình nghĩ nơi an toàn nhất để cất nó là trong\n"
+"<CLT 3>ngăn kéo bàn học<CLT> của mình."
 
 #. <CLT 4>それにしても…
 #. 本当に、霧切さんは大丈夫なのかな？
@@ -51,8 +51,8 @@ msgid ""
 "<CLT 4>She can't get into her room. What's she gonna do...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Cô ấy không thể vào phòng của mình được. Cô ấy sẽ làm\n"
-"gì đây...?\n"
+"<CLT 4>Cô ấy không thể vào phòng của mình được. Cô ấy\n"
+"sẽ làm gì đây...?\n"
 "<CLT>"
 
 #. <CLT 4>何か…ボクに出来る事はないのか…？
@@ -119,8 +119,8 @@ msgid ""
 "without realizing it.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khi mở mắt ra, mình nhận ra rằng mình đã ngủ quên\n"
-"mà không hề hay biết.\n"
+"<CLT 4>Khi mở mắt ra, mình nhận ra rằng mình đã ngủ\n"
+"quên mà không hề hay biết.\n"
 "<CLT>"
 
 #. <CLT 4>でも、そんな事より…
@@ -136,7 +136,9 @@ msgstr ""
 #. インターホン…鳴ったよな…？
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Did I hear...the doorbell...?"
-msgstr "Mình có nghe thấy... tiếng chuông cửa không...?"
+msgstr ""
+"Có phải mình nghe thấy... \n"
+"tiếng chuông cửa không...?"
 
 #. ………………
 msgctxt "0015 | KYOUKO KIRIGIRI"
@@ -151,7 +153,7 @@ msgstr "K-Kyoko...?"
 #. <CLT 3>脱衣所<CLT>で待ってるわよ…
 msgctxt "0017 | KYOUKO KIRIGIRI"
 msgid "I'll be waiting for you in the <CLT 3>dressing room<CLT>..."
-msgstr "Tôi sẽ đợi cậu ở <CLT 3>phòng thay đồ<CLT>..."
+msgstr "Tớ sẽ đợi cậu ở <CLT 3>phòng thay đồ<CLT>...  "
 
 #. 先に行ってるから…
 msgctxt "0018 | KYOUKO KIRIGIRI"
@@ -172,8 +174,8 @@ msgid ""
 "depths of the darkened hallway.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Không hề quay lại đáp lời tôi, Kyoko biến mất vào\n"
-"cuối hành lang tối tăm.\n"
+"<CLT 4>Không hề quay lại đáp lời mình, Kyoko biến mất\n"
+"vào cuối hành lang tối tăm.\n"
 "<CLT>"
 
 #. <CLT 4>えっと、夜時間の出歩きは控えろって
@@ -185,8 +187,7 @@ msgid ""
 "but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình biết là không được ra ngoài vào ban đêm,\n"
-"nhưng...\n"
+"<CLT 4>Mình biết là không được ra ngoài vào ban đêm, nhưng...\n"
 "<CLT>"
 
 #. 行かない訳にも…いかないよな…
@@ -243,8 +244,8 @@ msgid ""
 "don't know why I even bother checking.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Như mọi khi, nó vẫn đang che mất cửa sổ. Mình\n"
-"cũng chẳng hiểu sao mình còn kiểm tra nữa.\n"
+"<CLT 4>Như mọi khi, nó vẫn đang che mất cửa sổ. Mình cũng\n"
+"chẳng hiểu sao mình còn kiểm tra nữa.\n"
 "<CLT>"
 
 #. <CLT 4>このメモ帳…
@@ -326,4 +327,6 @@ msgstr ""
 #. インターホン…鳴ったよな…？
 msgctxt "0036 | MAKOTO NAEGI"
 msgid "Did I hear...the doorbell...?"
-msgstr "Mình có nghe thấy... tiếng chuông cửa không...?"
+msgstr ""
+"Có phải mình nghe thấy... \n"
+"tiếng chuông cửa không...?"

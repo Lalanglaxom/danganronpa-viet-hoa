@@ -29,7 +29,7 @@ def _rule_from_dict(data: dict, idx: int) -> ReplacementRule:
         # Kept only for change logs and backwards-compatible model usage.
         id=_make_rule_id(find, replace, data.get("speaker") or data.get("character"), idx),
         enabled=bool(data.get("enabled", True)),
-        # Position is the priority now: weak rules are first, strong rules last.
+        # Position is authoritative: rule 1 runs first, then rule 2, top to bottom.
         priority=idx,
         speaker=data.get("speaker", data.get("character")),
         scope=data.get("scope"),
@@ -43,29 +43,17 @@ def _rule_from_dict(data: dict, idx: int) -> ReplacementRule:
 
 
 def _ordered_rule_items(raw: object) -> list[dict]:
-    """Return rule dictionaries in weak-to-strong execution order.
+    """Return rules exactly in their visible/file order.
 
-    Version 3+ files already use list position. Older files with numeric
-    priorities are migrated by sorting low priority first and high priority
-    last, preserving file order for ties.
+    Rule position is authoritative for every supported format: the first rule
+    runs first, then the second rule sees that result, and so on. Legacy
+    ``priority`` values are intentionally ignored so loading an older file can
+    never silently change the user's top-to-bottom order.
     """
-    version = int(raw.get("version", 0) or 0) if isinstance(raw, dict) else 0
     items = raw.get("rules", raw) if isinstance(raw, dict) else raw
     if not isinstance(items, list):
         return []
-    records = [(index, item) for index, item in enumerate(items) if isinstance(item, dict)]
-    if version >= 3 or not any("priority" in item for _index, item in records):
-        return [item for _index, item in records]
-
-    def legacy_priority(record: tuple[int, dict]) -> tuple[int, int]:
-        index, item = record
-        try:
-            value = int(item.get("priority", 100))
-        except (TypeError, ValueError):
-            value = 100
-        return value, index
-
-    return [item for _index, item in sorted(records, key=legacy_priority)]
+    return [item for item in items if isinstance(item, dict)]
 
 
 def load_rules(path: str | Path) -> list[ReplacementRule]:
@@ -181,6 +169,16 @@ def _replace_pairs_in_plain_text(text: str, rule: ReplacementRule) -> tuple[str,
         pattern = _compile_find(find, rule.whole_word, rule.case_sensitive)
         updated, count = pattern.subn(lambda _match, value=replace: value, updated)
         total += count
+
+        # Whitespace contraction rules are commonly used to clean accidental
+        # repeated spaces (for example, two spaces → one). A normal regex
+        # replacement is non-overlapping, so a run of three or four spaces can
+        # still leave a double space after one pass. Repeat only this safe,
+        # shrinking whitespace-only case until it is stable.
+        if find and not find.strip() and not replace.strip() and len(replace) < len(find):
+            while count:
+                updated, count = pattern.subn(lambda _match, value=replace: value, updated)
+                total += count
     return updated, total
 
 
@@ -220,7 +218,7 @@ def _replace_in_scope(text: str, rule: ReplacementRule) -> tuple[str, int]:
 
 
 def apply_rules_to_entry(entry: POEntry, rules: Iterable[ReplacementRule]) -> tuple[str, list[tuple[ReplacementRule, int, str, str]]]:
-    """Apply enabled rules from top to bottom; lower rules are stronger."""
+    """Apply enabled rules strictly top to bottom, cascading each result."""
     text = entry.msgstr
     hits: list[tuple[ReplacementRule, int, str, str]] = []
     for rule in (candidate for candidate in rules if candidate.enabled):

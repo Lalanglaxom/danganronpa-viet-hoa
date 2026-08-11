@@ -3,7 +3,7 @@ PyQt6>=6.6
 
 # Base toolkit uses only Python standard library.
 # Optional, only for direct Gemini API mode:
-google-genai>=2.9.0,<3.0.0
+google-genai>=1.53.0,<3.0.0
 # Optional, only for building an .exe:
 pyinstaller>=6.0
 

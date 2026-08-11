@@ -769,6 +769,7 @@ def test_semicolon_search_replace_pairs_order_and_escape():
 
     assert search_replace_pairs("foo; bar", "one;two") == [("foo", "one"), ("bar", "two")]
     assert search_replace_pairs(r"foo\;bar;baz", r"semi\;colon;") == [("foo;bar", "semi;colon"), ("baz", "")]
+    assert search_replace_pairs("  ;", " ;") == [("  ", " ")]
 
 
 def test_ordered_search_replace_sequence_matches_gui_behavior():
@@ -779,6 +780,16 @@ def test_ordered_search_replace_sequence_matches_gui_behavior():
 
     assert hits == 3
     assert text == "1 2 1"
+
+
+def test_whitespace_only_search_replace_sequence_is_not_empty_regex():
+    from dr_po_toolkit.text_utils import apply_search_replace_sequence, compile_search_replace_sequence
+
+    compiled = compile_search_replace_sequence("  ;", " ;")
+    text, hits = apply_search_replace_sequence("a  b", compiled)
+
+    assert hits == 1
+    assert text == "a b"
 
 
 def test_search_replace_sequence_reports_bad_item_index():
@@ -1137,12 +1148,18 @@ def test_html_spacing_preserves_double_spaces_around_hidden_clt_boundaries():
     assert html_escape_preserve_spacing("two  spaces") == "two&nbsp;&nbsp;spaces"
 
 
-def test_visible_character_counts_by_line_ignores_control_tags_and_placeholders():
+def test_visible_character_counts_by_line_ignores_only_clt_tags():
     from dr_po_toolkit.text_utils import visible_character_counts_by_line
 
     text = "<CLT 4>Hello, brave player %TEXT%!\n<CLT>{player_name} found %s [color=red]three gems[/color].\n"
 
-    assert visible_character_counts_by_line(text) == [21, 19, 0]
+    assert visible_character_counts_by_line(text) == [27, 53, 0]
+
+
+def test_visible_character_counts_by_line_counts_square_brackets_normally():
+    from dr_po_toolkit.text_utils import visible_character_counts_by_line
+
+    assert visible_character_counts_by_line("[\n[abc]\n<CLT 4>[abc]") == [1, 5, 5]
 
 
 def test_visible_character_counts_by_line_counts_vietnamese_spaces_and_punctuation():

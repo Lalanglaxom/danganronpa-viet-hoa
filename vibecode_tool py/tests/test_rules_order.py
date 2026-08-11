@@ -19,17 +19,29 @@ def test_rule_supports_ordered_semicolon_pairs():
     assert sum(count for _rule, count, _before, _after in hits) == 3
 
 
-def test_lower_rules_are_stronger_and_run_later():
-    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="A")
-    weak = make_rule("A", "B")
-    strong = make_rule("B", "C")
+def test_rule_can_replace_two_or_more_spaces_with_one_space():
+    rule = make_rule("  ;", " ;")
 
-    text, _hits = apply_rules_to_entry(entry, [weak, strong])
+    for source in ("hello  world", "hello   world", "hello    world", "hello     world"):
+        text, hits = apply_rules_to_entry(POEntry(index=0, msgctxt=None, msgid="", msgstr=source), [rule])
+        assert text == "hello world"
+        assert sum(count for _rule, count, _before, _after in hits) >= 1
+
+
+def test_rules_run_strictly_top_to_bottom_and_cascade():
+    entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="A")
+    first = make_rule("A", "B")
+    second = make_rule("B", "C")
+
+    text, _hits = apply_rules_to_entry(entry, [first, second])
 
     assert text == "C"
 
+    reversed_text, _hits = apply_rules_to_entry(entry, [second, first])
+    assert reversed_text == "B"
 
-def test_legacy_priority_migrates_to_weak_to_strong_order(tmp_path: Path):
+
+def test_legacy_priority_is_ignored_and_file_order_is_preserved(tmp_path: Path):
     path = tmp_path / "rules.json"
     path.write_text(
         json.dumps(
@@ -45,12 +57,15 @@ def test_legacy_priority_migrates_to_weak_to_strong_order(tmp_path: Path):
     )
 
     rules = load_rules(path)
-    assert [(rule.find, rule.replace) for rule in rules] == [("A", "B"), ("B", "C")]
+    assert [(rule.find, rule.replace) for rule in rules] == [("B", "C"), ("A", "B")]
+
+    text, _hits = apply_rules_to_entry(POEntry(index=0, msgctxt=None, msgid="", msgstr="A"), rules)
+    assert text == "B"
 
     save_rules(path, rules)
     saved = json.loads(path.read_text(encoding="utf-8"))
     assert saved["version"] == 3
-    assert [(rule["find"], rule["replace"]) for rule in saved["rules"]] == [("A", "B"), ("B", "C")]
+    assert [(rule["find"], rule["replace"]) for rule in saved["rules"]] == [("B", "C"), ("A", "B")]
     assert all("id" not in rule and "priority" not in rule for rule in saved["rules"])
 
 
