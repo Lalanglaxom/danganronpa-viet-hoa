@@ -79,8 +79,8 @@ msgid ""
 "completely.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng nói vậy cũng không hoàn toàn đúng. Mình không\n"
-"hoàn toàn mất ý thức.\n"
+"<CLT 4>Nhưng nói vậy cũng không hoàn toàn đúng. Mình\n"
+"không hoàn toàn mất ý thức.\n"
 "<CLT>"
 
 #. <CLT 4>もうろうとした意識…
@@ -126,12 +126,12 @@ msgstr ""
 #. う……うぅ……
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "Gh...nn..."
-msgstr "Khụ... ừm..."
+msgstr "Khụ... nm..."
 
 #. う…うぅぅ……
 msgctxt "0014 | MAKOTO NAEGI"
 msgid "Nnngg..."
-msgstr "Ư... ừm..."
+msgstr "Ư... ưm..."
 
 #. <CLT 4>そして…ボクは奇妙な夢へと落ちていった……
 #. <CLT>
@@ -165,7 +165,7 @@ msgstr "..."
 #. ボクは…知って……
 msgctxt "0018 | NO NAME"
 msgid "I under..."
-msgstr "Tôi hiể..."
+msgstr "Em hiể..."
 
 #. 知って…いる……
 msgctxt "0019 | NO NAME"
@@ -205,7 +205,7 @@ msgstr ""
 #. ボクは…知っている……
 msgctxt "0023 | NO NAME"
 msgid "I...understand..."
-msgstr "Tôi... hiểu..."
+msgstr "Em... hiểu..."
 
 #. <CLT 4>ボクの…声だ…
 #. <CLT>
@@ -220,17 +220,17 @@ msgstr ""
 #. ボクは…知っている…
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "I...understand..."
-msgstr "Mình... hiểu..."
+msgstr "Em... hiểu..."
 
 #. ボクは…全部知っているはずだ…
 msgctxt "0026 | MAKOTO NAEGI"
 msgid "I should...understand everything."
-msgstr "Mình đáng lẽ... phải hiểu tất cả mọi thứ."
+msgstr "Em đáng lẽ... phải hiểu tất cả mọi thứ."
 
 #. ボクの目的は…ここから出る事じゃない…
 msgctxt "0027 | MAKOTO NAEGI"
 msgid "My goal isn't to get out of here..."
-msgstr "Mục tiêu của mình không phải là thoát khỏi nơi này..."
+msgstr "Mục tiêu của em không phải là thoát khỏi đây..."
 
 #. ここに…残る事なんだ。
 msgctxt "0028 | MAKOTO NAEGI"
@@ -275,12 +275,12 @@ msgstr "Và đó là lý do..."
 #. 残らなくちゃいけない…
 msgctxt "0034 | MAKOTO NAEGI"
 msgid "I have to stay..."
-msgstr "Mình phải ở lại..."
+msgstr "Em phải ở lại..."
 
 #. ここに…残らなくちゃいけない……
 msgctxt "0035 | MAKOTO NAEGI"
 msgid "I have...to stay here."
-msgstr "Mình phải... ở lại đây."
+msgstr "Em phải... ở lại đây."
 
 #. …うぅッ！
 msgctxt "0036 | MAKOTO NAEGI"
@@ -350,17 +350,17 @@ msgstr ""
 #. ハァ……
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "*Pant...*"
-msgstr "*Thở hổn hển...*"
+msgstr "*Hộc...*"
 
 #. ハァ……ハァ……
 msgctxt "0047 | MAKOTO NAEGI"
 msgid "*Pant...pant...*"
-msgstr "*Thở hổn hển... thở hổn hển...*"
+msgstr "*Hộc... Hộc...*"
 
 #. ハァ……ハァ……ハァ…………
 msgctxt "0048 | MAKOTO NAEGI"
 msgid "*Pant...pant...pant...*"
-msgstr "*Thở hổn hển... thở hổn hển... thở hổn hển...*"
+msgstr "*Hộc... Hộc... Hộc...*"
 
 #. え…？
 msgctxt "0049 | MAKOTO NAEGI"
@@ -376,15 +376,12 @@ msgstr "Kyoko...?"
 msgctxt "0051 | KYOUKO KIRIGIRI"
 msgid "... ... ..."
 msgstr ""
-"<CLT 4>... ... ...\n"
-"<CLT>"
+"... ... ...\n"
 
 #. ………………………………
 msgctxt "0052 | KYOUKO KIRIGIRI"
 msgid "... ... ..."
-msgstr ""
-"<CLT 4>... ... ...\n"
-"<CLT>"
+msgstr "... ... ..."
 
 #. なん…て…
 msgctxt "0053 | MAKOTO NAEGI"
@@ -394,7 +391,7 @@ msgstr "Cái quái...?"
 #. なんて…言ったの…？
 msgctxt "0054 | MAKOTO NAEGI"
 msgid "What did you...?"
-msgstr "Cậu đã nói gì...?"
+msgstr "Cậu đã...?"
 
 #. ………………
 msgctxt "0055 | KYOUKO KIRIGIRI"
@@ -404,9 +401,7 @@ msgstr "..."
 #. ………………………………
 msgctxt "0056 | KYOUKO KIRIGIRI"
 msgid "... ... ..."
-msgstr ""
-"<CLT 4>... ... ...\n"
-"<CLT>"
+msgstr "... ... ..."
 
 #. 何…を……言って……
 msgctxt "0057 | MAKOTO NAEGI"
@@ -460,5 +455,5 @@ msgid ""
 "If the world were like that, I'd consider *that*\n"
 "pretty damn abnormal."
 msgstr ""
-"Nếu một thế giới như vậy tồn tại, thì ta cho rằng\n"
+"Nếu một thế giới như vậy tồn tại, thì tôi cho rằng\n"
 "*đó* mới thật sự là điều bất thường."

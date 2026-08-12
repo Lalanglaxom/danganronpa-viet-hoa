@@ -19,18 +19,20 @@ msgstr "Vậy là cậu quay lại rồi. Kết quả thế nào?"
 #. あの鍵で開いたのは…
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "I found out which room the key goes to."
-msgstr "Mình đã tìm ra căn phòng mà chiếc chìa khóa này mở được."
+msgstr "Tớ đã tìm ra căn phòng mà chiếc chìa khóa này mở được."
 
 #. …４階の情報処理室。
 #. あの部屋だったよ。
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "It's the data center, down on the 4th floor."
-msgstr "Đó là phòng xử lý dữ liệu ở tầng 4. Chính là căn phòng đó."
+msgstr "Đó là trung tâm dữ liệu ở tầng 4. Chính là căn phòng đó."
 
 #. じゃあ、情報処理室に入れるようになったんか！？
 msgctxt "0004 | YASUHIRO HAGAKURE"
 msgid "Then we can get into the data center now!?"
-msgstr "Vậy bây giờ chúng ta có thể vào phòng xử lý dữ liệu rồi sao!?"
+msgstr ""
+"Vậy bây giờ chúng ta có thể vào trung tâm dữ\n"
+"liệu rồi sao!?"
 
 #. なるほどな、そういう事だったか…
 msgctxt "0005 | BYAKUYA TOGAMI"
@@ -41,7 +43,9 @@ msgstr "Thú vị thật..."
 #. 情報処理室の鍵なんかを持っていたんだ…？
 msgctxt "0006 | BYAKUYA TOGAMI"
 msgid "But why did the now deceased have that key on them?"
-msgstr "Nhưng tại sao người đã chết lại mang theo chiếc chìa khóa đó...?"
+msgstr ""
+"Nhưng tại sao người đã chết lại mang theo chiếc\n"
+"chìa khóa đó...?"
 
 #. どうやら、情報処理室に行って、
 #. 確かめてみる必要がありそうだな…
@@ -50,10 +54,10 @@ msgid ""
 "I suppose we'll just have to go to the data center and\n"
 "find out."
 msgstr ""
-"Có lẽ chúng ta chỉ còn cách đến phòng xử lý dữ liệu\n"
-"để tìm hiểu thôi."
+"Có lẽ chúng tôi chỉ còn cách đến trung tâm dữ\n"
+"liệu để tìm hiểu thôi."
 
 #. うん…そうみたいだね…
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "Yeah, I think you're right..."
-msgstr "Ừ... mình nghĩ cậu nói đúng..."
+msgstr "Ừ... tớ nghĩ cậu nói đúng... "

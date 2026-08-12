@@ -18,7 +18,7 @@ msgid ""
 "<CLT 4>In a word, the room was...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nói ngắn gọn thì căn phòng này là...\n"
+"<CLT 4>Nói ngắn gọn thì căn phòng này...\n"
 "<CLT>"
 
 #. <CLT 4>…<CLT><CLT 3>奇妙な部屋<CLT><CLT 4>。
@@ -28,7 +28,7 @@ msgid ""
 "<CLT 4>...<CLT><CLT 3>strange<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...<CLT><CLT 3>kỳ lạ<CLT><CLT 4>.\n"
+"<CLT 4>...<CLT><CLT 3>thật kỳ lạ<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. <CLT 4>今までの部屋もそうだったが、
@@ -40,8 +40,8 @@ msgid ""
 "this room had a...special kind of strangeness.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Ý mình là, những căn phòng trước đây đều kỳ lạ,\n"
-"nhưng căn phòng này có một kiểu kỳ lạ... đặc biệt.\n"
+"<CLT 4>Ý mình là, những căn phòng trước đây đều kỳ lạ, nhưng\n"
+"căn phòng này có một kiểu kỳ lạ... đặc biệt.\n"
 "<CLT>"
 
 #. <CLT 4>今までのような“見せる恐怖”ではなく、
@@ -53,8 +53,8 @@ msgid ""
 "Here, the <CLT><CLT 3>fear<CLT><CLT 4> was lurking beneath the surface...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó không phải kiểu nỗi sợ bề ngoài như những nơi\n"
-"khác trong trường. Ở đây, <CLT><CLT 3>nỗi sợ<CLT><CLT 4> đang ẩn sâu bên dưới...\n"
+"<CLT 4>Nó không phải kiểu nỗi sợ bề ngoài như những nơi khác\n"
+"trong trường. Ở đây, <CLT><CLT 3>nỗi sợ<CLT><CLT 4> đang ẩn sâu bên dưới...\n"
 "<CLT>"
 
 #. <CLT 4>この部屋には、それが充満しているようだった。
@@ -148,8 +148,8 @@ msgid ""
 "It's the <CLT 3>direct feed<CLT> from every single surveillance\n"
 "camera...!"
 msgstr ""
-"Đây là <CLT 3>nguồn phát trực tiếp<CLT> từ toàn bộ\n"
-"camera giám sát...!"
+"Đây là <CLT 3>nguồn phát trực tiếp<CLT> từ toàn bộ camera\n"
+"giám sát...!"
 
 #. 学園内に設置されている監視カメラ…
 #. あれで撮られた映像が…
@@ -158,8 +158,8 @@ msgid ""
 "All the cameras in the school feed back into this\n"
 "room..."
 msgstr ""
-"Tất cả camera được lắp đặt trong trường đều truyền\n"
-"hình ảnh về căn phòng này..."
+"Tất cả camera được lắp đặt trong trường đều\n"
+"truyền hình ảnh về căn phòng này..."
 
 #. このモニターに映し出されているようだ。
 msgctxt "0016 | BYAKUYA TOGAMI"
@@ -170,7 +170,9 @@ msgstr "...và chúng được hiển thị trên những màn hình này."
 #. “俺達を監視する目的”で使われていた部屋…
 msgctxt "0017 | BYAKUYA TOGAMI"
 msgid "So the sole purpose of this room...is to watch us."
-msgstr "Vậy mục đích duy nhất của căn phòng này... là giám sát chúng ta."
+msgstr ""
+"Vậy mục đích duy nhất của căn phòng này... là\n"
+"giám sát chúng ta."
 
 #. お、俺らを監視する為…！？
 msgctxt "0018 | YASUHIRO HAGAKURE"
@@ -248,8 +250,8 @@ msgid ""
 "If they had the key to this room, it can only mean one\n"
 "thing."
 msgstr ""
-"Nếu người đó có chìa khóa của căn phòng này,\n"
-"thì chỉ có thể có một ý nghĩa."
+"Nếu người đó có chìa khóa của căn phòng này, thì\n"
+"chỉ có thể có một ý nghĩa."
 
 #. あの死体は黒幕…戦刃むくろ…
 #. とやらだったという事だ。
@@ -258,8 +260,8 @@ msgid ""
 "That was the body of Mukuro Ikusaba, and she was the\n"
 "mastermind."
 msgstr ""
-"Đó là thi thể của Mukuro Ikusaba, và cô ta chính là\n"
-"kẻ chủ mưu."
+"Đó là thi thể của Mukuro Ikusaba, và cô ta chính\n"
+"là kẻ chủ mưu."
 
 #. じゃあ、黒幕って死んじゃったの！？
 #. 本当に死んじゃったの！？
@@ -284,8 +286,8 @@ msgid ""
 "It's too bad they had to g-go and die...before Master\n"
 "could k-kill them himself!"
 msgstr ""
-"Thật đáng tiếc khi cô ta lại c-chết trước khi Bạch Dạ-sama\n"
-"có thể t-tự tay giết cô ta!"
+"Thật đáng tiếc khi cô ta lại c-chết trước khi\n"
+"Chủ Nhân có thể t-tự tay giết cô ta!"
 
 #. <CLT 4>黒幕が死んだ…？
 #. <CLT>
@@ -306,8 +308,8 @@ msgid ""
 "over?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Điều đó có thật không? Vậy có nghĩa là... mọi thứ\n"
-"đã kết thúc sao?\n"
+"<CLT 4>Điều đó có thật không? Vậy có nghĩa là... mọi\n"
+"thứ đã kết thúc sao?\n"
 "<CLT>"
 
 #. <CLT 4>だって、植物庭園の死体って…
@@ -328,8 +330,8 @@ msgid ""
 "death.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù chuyện gì đã xảy ra, rõ ràng người đó không chết\n"
-"do nguyên nhân tự nhiên.\n"
+"<CLT 4>Dù chuyện gì đã xảy ra, rõ ràng người đó không\n"
+"chết do nguyên nhân tự nhiên.\n"
 "<CLT>"
 
 #. <CLT 4>つまり…あれは誰かが…
@@ -351,7 +353,9 @@ msgstr "Nh-Nhưng... nếu kẻ chủ mưu thật sự đã chết..."
 #. やっと、ここから出られるんだな！
 msgctxt "0040 | YASUHIRO HAGAKURE"
 msgid "That means we can finally get outta this hellhole!"
-msgstr "Điều đó có nghĩa là cuối cùng chúng ta cũng có thể rời khỏi địa ngục này!"
+msgstr ""
+"Điều đó có nghĩa là cuối cùng chúng ta cũng có\n"
+"thể rời khỏi địa ngục này!"
 
 #. そうと決まれば出口だ！　出口を探すべ！！
 msgctxt "0041 | YASUHIRO HAGAKURE"
@@ -375,8 +379,8 @@ msgid ""
 "If the mastermind truly is dead, we can leave whenever\n"
 "we decide to."
 msgstr ""
-"Nếu kẻ chủ mưu thật sự đã chết, chúng ta có thể rời\n"
-"khỏi đây bất cứ lúc nào chúng ta muốn."
+"Nếu kẻ chủ mưu thật sự đã chết, chúng ta có thể\n"
+"rời khỏi đây bất cứ lúc nào chúng ta muốn."
 
 #. だが、それよりも今は…
 msgctxt "0045 | BYAKUYA TOGAMI"
@@ -400,13 +404,13 @@ msgid ""
 "And I'm bothered by the fact that the mastermind was\n"
 "obviously <CLT 3>murdered<CLT>."
 msgstr ""
-"Và tôi cũng thấy băn khoăn về việc kẻ chủ mưu rõ ràng\n"
-"đã bị <CLT 3>giết hại<CLT>."
+"Và tôi cũng thấy băn khoăn về việc kẻ chủ mưu rõ\n"
+"ràng đã bị <CLT 3>giết<CLT>."
 
 #. こ、殺されて…ッ！？
 msgctxt "0048 | YASUHIRO HAGAKURE"
 msgid "M-Murdered!?"
-msgstr "B-Bị sát hại sao!?"
+msgstr "B-Bị giết sao!?"
 
 #. やっぱり…十神クンもそう思った？
 msgctxt "0049 | MAKOTO NAEGI"
@@ -431,7 +435,7 @@ msgstr ""
 #. …殺されたんだよ。
 msgctxt "0052 | BYAKUYA TOGAMI"
 msgid "...the mastermind was murdered."
-msgstr "...kẻ chủ mưu đã bị sát hại."
+msgstr "...kẻ chủ mưu đã bị giết."
 
 #. な、なんで黒幕が殺されなきゃなんねーんだ？
 #. つーか、誰に！？
@@ -440,7 +444,7 @@ msgid ""
 "Wh-Why's it gotta be that way!? I mean, who could've\n"
 "even done it!?"
 msgstr ""
-"T-Tại sao lại phải như vậy chứ!? Ý tôi là, ai có thể\n"
+"T-Tại sao lại phải như vậy chứ!? Ý tớ là, ai có thể\n"
 "làm chuyện đó được!?"
 
 #. …それを明らかにする為にも、
@@ -460,8 +464,8 @@ msgid ""
 "Now do you u-understand, you useless insect!? You're\n"
 "banned from t-talking to Master ever again!"
 msgstr ""
-"Giờ thì hiểu chưa, đồ côn trùng vô dụng!? Cậu bị cấm\n"
-"nói chuyện với Bạch Dạ-sama nữa!"
+"Giờ thì hiểu chưa, đồ côn trùng vô dụng!? Cậu bị\n"
+"cấm nói chuyện với Chủ Nhân nữa!"
 
 #. <CLT 4>黒幕の目的…そして殺された理由か…
 #. <CLT>
@@ -470,7 +474,7 @@ msgid ""
 "<CLT 4>The mastermind's purpose...and why they were killed...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mục đích của kẻ chủ mưu... và lý do họ bị giết...\n"
+"<CLT 4>Mục đích của kẻ chủ mưu... và lý do hắn bị giết...\n"
 "<CLT>"
 
 #. <CLT 4>確かに、この部屋になら、
@@ -505,8 +509,8 @@ msgid ""
 "Okay then, let us begin our search. It's time to\n"
 "uncover the identity of the mastermind."
 msgstr ""
-"Được rồi, hãy bắt đầu tìm kiếm. Đã đến lúc vạch trần\n"
-"thân phận của kẻ chủ mưu."
+"Được rồi, hãy bắt đầu tìm kiếm. Đã đến lúc vạch\n"
+"trần thân phận của kẻ chủ mưu."
 
 #. なぜ、黒幕が殺されたのか…
 msgctxt "0060 | BYAKUYA TOGAMI"
@@ -520,14 +524,14 @@ msgid ""
 "To figure that out, we need to find out the identity\n"
 "and purpose of the mastermind."
 msgstr ""
-"Để tìm ra điều đó, chúng ta cần biết danh tính và\n"
-"mục đích của kẻ chủ mưu."
+"Để tìm ra điều đó, chúng ta cần biết danh tính\n"
+"và mục đích của kẻ chủ mưu."
 
 #. さ、さっさと…何か見つけなさいよ…
 #. 白夜様の為に…！
 msgctxt "0062 | TOUKO FUKAWA"
 msgid "Hurry up and f-find something! For Master...!"
-msgstr "N-Nhanh lên và tìm thứ gì đó đi! Vì Bạch Dạ-sama...!"
+msgstr "N-Nhanh lên và tìm thứ gì đó đi! Vì Chủ Nhân... !"
 
 #. 白夜様の…あんな姿やこんな姿が…
 #. み、見たい放題…
@@ -536,8 +540,8 @@ msgid ""
 "Master's g-going around all this stuff... It's like an\n"
 "all-you-can-watch buffet..."
 msgstr ""
-"Bạch Dạ-sama đang làm tất cả những việc này... Giống\n"
-"như một bữa tiệc xem miễn phí vậy..."
+"Chủ Nhân đang làm tất cả những việc này... Giống\n"
+"như một bữa buffet xem miễn phí vậy... "
 
 #. ………………
 msgctxt "0064 | MAKOTO NAEGI"
@@ -551,8 +555,8 @@ msgid ""
 "I mean, I wanna know why they were killed as much as\n"
 "the next guy...but I also really wanna get outta here!"
 msgstr ""
-"Ý tôi là, tôi cũng muốn biết tại sao họ bị giết như\n"
-"mọi người thôi... nhưng tôi cũng rất muốn ra khỏi đây!"
+"Ý tớ là, tớ cũng muốn biết tại sao hắn bị giết như mọi\n"
+"người thôi... nhưng tớ cũng rất muốn ra khỏi đây!"
 
 #. どう？　テレビは直りそう？
 msgctxt "0066 | MAKOTO NAEGI"
@@ -566,7 +570,7 @@ msgid ""
 "Just a little longer... What, you really wanna watch\n"
 "TV that bad?"
 msgstr ""
-"Chỉ thêm một chút nữa thôi... Gì chứ, cậu thật sự\n"
+"Chỉ thêm một chút nữa thôi... Gì, cậu thật sự\n"
 "muốn xem TV đến vậy sao?"
 
 #. アッハッハ！
@@ -582,8 +586,8 @@ msgid ""
 "Jeez, I can't believe how many monitors there are. My\n"
 "eyes are flickering as fast as they are..."
 msgstr ""
-"Trời ơi, không thể tin được có nhiều màn hình đến vậy.\n"
-"Mắt tớ chớp liên tục luôn rồi..."
+"Trời ơi, không thể tin được có nhiều màn hình\n"
+"đến vậy. Mắt tui chớp liên tục luôn rồi... "
 
 #. <CLT 4>部屋中に設置された
 #. バカみたいな数のモニター…
@@ -626,7 +630,7 @@ msgid ""
 "Look at M-Master go... It's like a feast for the\n"
 "e-eyes..."
 msgstr ""
-"Nhìn B-Bạch Dạ-sama kìa... Đúng là một bữa tiệc cho\n"
+"Nhìn C-Chủ Nhân kìa... Đúng là một bữa tiệc cho\n"
 "đôi mắt..."
 
 #. げげげげげげ月額はいいいいいいくらなの…ッ！？
@@ -707,8 +711,8 @@ msgid ""
 "The door's locked, huh? What if you use the key that\n"
 "opened this room?"
 msgstr ""
-"Cánh cửa bị khóa sao? Thử dùng chiếc chìa khóa đã mở\n"
-"căn phòng này xem sao?"
+"Cánh cửa bị khóa sao? Thử dùng chiếc chìa khóa\n"
+"đã mở căn phòng này xem sao?"
 
 #. 一応、試してみるね…
 msgctxt "0084 | MAKOTO NAEGI"
@@ -747,13 +751,13 @@ msgid ""
 "The mastermind's dead, right? So nothing's gonna\n"
 "happen to us!"
 msgstr ""
-"Kẻ chủ mưu chết rồi đúng không? Vậy thì sẽ không có\n"
-"chuyện gì xảy ra với chúng ta nữa đâu!"
+"Kẻ chủ mưu chết rồi đúng không? Vậy thì sẽ không\n"
+"có chuyện gì xảy ra với chúng ta nữa đâu!"
 
 #. うん…そうだよね…
 msgctxt "0090 | MAKOTO NAEGI"
 msgid "Yeah, I guess you're right..."
-msgstr "Ừ... mình nghĩ cậu nói đúng..."
+msgstr "Ừ... tớ nghĩ cậu nói đúng... "
 
 #. <CLT 4>モノクマのマークが描かれたドア…
 #. 気にはなるけど…
@@ -814,13 +818,13 @@ msgid ""
 "The mastermind's dead, right? So nothing's gonna\n"
 "happen to us!"
 msgstr ""
-"Kẻ chủ mưu chết rồi đúng không? Vậy thì sẽ không có\n"
-"chuyện gì xảy ra với chúng ta nữa đâu!"
+"Kẻ chủ mưu chết rồi đúng không? Vậy thì sẽ không\n"
+"có chuyện gì xảy ra với chúng ta nữa đâu!"
 
 #. うん…そうだよね…
 msgctxt "0097 | MAKOTO NAEGI"
 msgid "Yeah, I guess you're right..."
-msgstr "Ừ... mình nghĩ cậu nói đúng..."
+msgstr "Ừ... tớ nghĩ cậu nói đúng... "
 
 #. <CLT 4>確かに、気にはなるけど、
 #. 気にし過ぎても仕方がないよな…
@@ -862,7 +866,7 @@ msgid ""
 "It is! It's just like the one my grandma uses! It's\n"
 "totally one of those hi-def antennas!"
 msgstr ""
-"Đúng rồi! Nó giống hệt cái mà bà tôi dùng! Nó\n"
+"Đúng rồi! Nó giống hệt cái mà bà tớ dùng! Nó\n"
 "hoàn toàn là một chiếc ăng-ten độ nét cao!"
 
 #. じゃあ、そのアンテナを繋げば、
@@ -872,8 +876,8 @@ msgid ""
 "Wait, so if we hook up that antenna, we could watch\n"
 "TV?"
 msgstr ""
-"Khoan, vậy nếu chúng ta nối chiếc ăng-ten đó vào,\n"
-"chúng ta có thể xem TV sao?"
+"Khoan, vậy nếu chúng ta nối chiếc ăng-ten đó\n"
+"vào, chúng ta có thể xem TV sao?"
 
 #. え？　テレビ！？
 msgctxt "0104 | AOI ASAHINA"
@@ -888,7 +892,7 @@ msgstr "Ồ, Hina sáng thứ Bảy xuất hiện rồi!"
 #. いや…そんなキャラ付けされた事ないけど…
 msgctxt "0106 | AOI ASAHINA"
 msgid "Uhh...are you talking about me?"
-msgstr "Ừm... cậu đang nói về tớ sao?"
+msgstr "Ừm... cậu đang nói về tui hả?"
 
 #. でも、テレビ見れるならやってよ！　早く早く！
 msgctxt "0107 | AOI ASAHINA"
@@ -905,8 +909,8 @@ msgid ""
 "Ah, you're all starved for info from the outside\n"
 "world, huh?"
 msgstr ""
-"À, mọi người đang khao khát thông tin từ thế giới\n"
-"bên ngoài nhỉ?"
+"À, mọi người đang khao khát thông tin từ thế\n"
+"giới bên ngoài nhỉ?"
 
 #. よっしゃ。すぐに映るようにしてやっから任せとけ！
 #. 宇宙船地球号に乗ったつもりで任せとけって！
@@ -915,7 +919,7 @@ msgid ""
 "Alright! Lemme work my magic, and you'll be quantum\n"
 "leaping your way to TV land before ya know it!"
 msgstr ""
-"Được rồi! Để tôi trổ tài một chút, mọi người sẽ\n"
+"Được rồi! Để tớ trổ tài một chút, mọi người sẽ\n"
 "nhảy lượng tử đến thế giới TV ngay thôi!"
 
 #. <CLT 4>大船って意味では間違ってないけど…
@@ -939,12 +943,12 @@ msgstr "Này, cậu vẫn chưa sửa xong TV sao?"
 #. もうちょっと待つべ…
 msgctxt "0112 | YASUHIRO HAGAKURE"
 msgid "Just gimme some time, okay?"
-msgstr "Cho tôi thêm chút thời gian được không?"
+msgstr "Cho tớ thêm chút thời gian được không?"
 
 #. 宇宙船地球号は安全運転なんだべ！
 msgctxt "0113 | YASUHIRO HAGAKURE"
 msgid "I gotta make sure we can drive Spaceship Earth safely!"
-msgstr "Tôi phải đảm bảo Tàu vũ trụ Trái Đất được lái an toàn!"
+msgstr "Tớ phải đảm bảo Tàu vũ trụ Trái Đất được lái an toàn!"
 
 #. <CLT 4>言いたい事は何となくわかるような、
 #. わからないような…
@@ -978,7 +982,7 @@ msgid ""
 "ancient laptop Alter Ego was installed on...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng có vẻ là những chiếc máy tính hiệu năng cao.\n"
+"<CLT 4>Chúng có vẻ là những chiếc pc hiệu năng cao.\n"
 "Không giống chiếc laptop cổ xưa cài Alter Ego...\n"
 "<CLT>"
 
@@ -1000,7 +1004,7 @@ msgstr ""
 #. あんた…いつの時代の人よ…
 msgctxt "0119 | TOUKO FUKAWA"
 msgid "What c-century are you from...?"
-msgstr "C-Cậu đến từ thế kỷ nào vậy...?"
+msgstr "C-Cô đến từ thế kỷ nào vậy...?"
 
 #. もしかしたら、黒幕はこのパソコンで
 #. ネットワークを監視してたのかな…
@@ -1009,8 +1013,8 @@ msgid ""
 "The mastermind must've been using these to monitor the\n"
 "network."
 msgstr ""
-"Kẻ chủ mưu chắc đã dùng những thứ này để giám sát\n"
-"mạng lưới."
+"Kẻ chủ mưu chắc đã dùng những thứ này để giám\n"
+"sát mạng lưới."
 
 #. それで…アルターエゴを…
 msgctxt "0121 | MAKOTO NAEGI"
@@ -1026,7 +1030,9 @@ msgstr "Có lẽ cậu nói đúng về chuyện đó."
 #. なんの意味もないぞ…
 msgctxt "0123 | BYAKUYA TOGAMI"
 msgid "But there's no point in thinking about it now."
-msgstr "Nhưng bây giờ suy nghĩ về chuyện đó cũng chẳng có ý nghĩa gì."
+msgstr ""
+"Nhưng bây giờ suy nghĩ về chuyện đó cũng chẳng\n"
+"có ý nghĩa gì."
 
 #. そう…だよね……
 msgctxt "0124 | MAKOTO NAEGI"
@@ -1042,7 +1048,7 @@ msgid ""
 "ancient laptop Alter Ego was installed on...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng có vẻ là những chiếc máy tính hiệu năng cao.\n"
+"<CLT 4>Chúng có vẻ là những chiếc pc hiệu năng cao.\n"
 "Không giống chiếc laptop cổ xưa cài Alter Ego...\n"
 "<CLT>"
 
@@ -1104,7 +1110,7 @@ msgid ""
 "there! I think I got the TV working!"
 msgstr ""
 "Tin vui cho tất cả những đứa trẻ mê TV sáng thứ Bảy\n"
-"ngoài kia! Tôi nghĩ tôi đã sửa được TV rồi!"
+"ngoài kia! Tớ nghĩ tớ đã sửa được TV rồi!"
 
 #. ホントにッ！？
 msgctxt "0134 | AOI ASAHINA"
@@ -1128,8 +1134,8 @@ msgid ""
 "Friggin' idiot mastermind! All \"you guys need to cut\n"
 "free from your regrets of the outside world\"..."
 msgstr ""
-"Tên kẻ chủ mưu ngu ngốc chết tiệt! Cứ nói kiểu\n"
-"\"các người phải cắt đứt mọi nuối tiếc với thế giới bên ngoài\"..."
+"Tên chủ mưu ngu ngốc chết tiệt! Cứ nói kiểu \"các ngươi phải\n"
+"cắt đứt mọi nuối tiếc với thế giới bên ngoài\"..."
 
 #. １人でこんなモン見ようったって、
 #. そうはいかねーっての！
@@ -1157,8 +1163,8 @@ msgid ""
 "It's the feed coming from...the surveillance camera\n"
 "monitoring this room, isn't it?"
 msgstr ""
-"Đây là hình ảnh truyền từ... camera giám sát\n"
-"đang theo dõi căn phòng này đúng không?"
+"Đây là hình ảnh truyền từ... camera giám sát đang theo\n"
+"dõi căn phòng này đúng không?"
 
 #. あれ…？　おっかしいな…
 msgctxt "0142 | YASUHIRO HAGAKURE"
@@ -1228,7 +1234,7 @@ msgid ""
 "<CLT 4>But on every channel, it was just...us.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng trên kênh nào cũng chỉ có... chúng tôi.\n"
+"<CLT 4>Nhưng trên kênh nào cũng chỉ có... chúng mình.\n"
 "<CLT>"
 
 #. <CLT 4>情報処理室にいる…
@@ -1240,8 +1246,8 @@ msgid ""
 "center.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là hình ảnh trực tiếp của chúng tôi đang đứng\n"
-"trong phòng xử lý dữ liệu.\n"
+"<CLT 4>Đó là hình ảnh trực tiếp của chúng mình đang\n"
+"đứng trong trung tâm dữ liệu.\n"
 "<CLT>"
 
 #. な、なんだ、こりゃ？
@@ -1272,7 +1278,7 @@ msgstr "Mánh khóe? Mánh khóe kiểu gì!?"
 #. それは、わかんねーけど…
 msgctxt "0157 | YASUHIRO HAGAKURE"
 msgid "I'm not sure, but..."
-msgstr "Tôi không chắc, nhưng..."
+msgstr "Tớ không chắc, nhưng... "
 
 #. …え？
 msgctxt "0158 | TOUKO FUKAWA"
@@ -1314,13 +1320,15 @@ msgstr "M-Monokuma!?"
 #. し、し、死んだはずじゃない！
 msgctxt "0165 | TOUKO FUKAWA"
 msgid "How...? You're supposed to be d-dead!"
-msgstr "Sao...? Đáng lẽ ngươi đã ch-chết rồi mà!"
+msgstr "Làm thế nào...? Đáng lẽ mi đã ch-chết rồi mà!"
 
 #. ギャッハッハッハ！　このオレが死んだ！？
 #. 訳わかんねー事言ってんじゃねーじゃん！
 msgctxt "0166 | MONOKUMA"
 msgid "Gyaaahahaha! Me, dead!? Don't be freakin' stupid!"
-msgstr "Gyaaahahaha! Ta chết sao!? Đừng nói chuyện ngu ngốc thế chứ!"
+msgstr ""
+"Gyaaahahaha! Ta chết sao!? Đừng nói chuyện ngu\n"
+"ngốc thế chứ!"
 
 #. つーか、キャラ変わってるし！
 msgctxt "0167 | YASUHIRO HAGAKURE"
@@ -1328,7 +1336,7 @@ msgid ""
 "Hey, you're actin' kinda strange! Something\n"
 "seems...different."
 msgstr ""
-"Này, cậu hành động hơi khác lạ đấy! Có thứ gì đó\n"
+"Này, mi hành động hơi khác lạ đấy! Có thứ gì đó\n"
 "có vẻ... khác đi."
 
 #. 変わるさ…変わって当然クマ…
@@ -1337,27 +1345,25 @@ msgid ""
 "Of course I'm different! Evolution is perfectly\n"
 "natural!"
 msgstr ""
-"Tất nhiên là ta khác rồi! Tiến hóa là chuyện hoàn toàn\n"
-"tự nhiên mà!"
+"Tất nhiên là ta khác rồi! Tiến hóa là chuyện\n"
+"hoàn toàn tự nhiên mà!"
 
 #. あれから、もう２年も経つんだしな…
 msgctxt "0169 | MONOKUMA"
 msgid ""
 "After all, I've been hibernating for two years\n"
 "already..."
-msgstr ""
-"Dù sao thì ta đã ngủ đông suốt hai năm\n"
-"rồi còn gì..."
+msgstr "Dù sao thì ta đã ngủ đông suốt hai năm rồi còn gì..."
 
 #. そんな経ってねーべ！！　せいぜい半日だべ！！
 msgctxt "0170 | YASUHIRO HAGAKURE"
 msgid "Not even! It's been like half a day at MOST!"
-msgstr "Không hề! Cùng lắm chỉ mới nửa ngày thôi mà!!"
+msgstr "Không hề! Cùng lắm chỉ mới nửa ngày thôi!"
 
 #. て言うか、なんで動いてんのッ！？
 msgctxt "0171 | AOI ASAHINA"
 msgid "How are you alive again!?"
-msgstr "Sao cậu lại sống lại được vậy!?"
+msgstr "Sao mi lại sống lại được vậy!?"
 
 #. それだよ、それ…
 #. うぷぷ…オマエラのそんな顔が好きなんだよね。
@@ -1367,7 +1373,7 @@ msgid ""
 "right now is sublime!"
 msgstr ""
 "Đúng rồi, chính là vẻ mặt đó. Puhuhu... Biểu cảm\n"
-"của các ngươi lúc này thật tuyệt vời!"
+"của bọn bây lúc này thật tuyệt vời!"
 
 #. “希望”が“絶望”に変わる瞬間の顔…
 #. それを見たかったんだよね。
@@ -1376,8 +1382,8 @@ msgid ""
 "That's what I wanted to see—the moment you went from\n"
 "hope to despair..."
 msgstr ""
-"Đó là thứ ta muốn thấy—khoảnh khắc các ngươi chuyển\n"
-"từ hy vọng sang tuyệt vọng..."
+"Đó là thứ ta muốn thấy—khoảnh khắc bọn bây\n"
+"chuyển từ hy vọng sang tuyệt vọng..."
 
 #. まさか、その為に…
 #. 死んだフリをしてたとでも言うのか…？
@@ -1386,8 +1392,8 @@ msgid ""
 "Don't tell me you pretended to be dead, all for this\n"
 "moment...?"
 msgstr ""
-"Đừng nói là ngươi giả chết chỉ vì khoảnh khắc này\n"
-"đấy chứ...?"
+"Đừng nói là mi giả chết chỉ vì khoảnh khắc\n"
+"này đấy chứ...?"
 
 #. クマの死んだフリなんてレアじゃない？
 #. 普通、オマエラの方がクマの前で死んだフリでしょ！
@@ -1396,8 +1402,8 @@ msgid ""
 "Why would a bear pretend to be dead? You're the ones\n"
 "who should pretend to be dead when you see a bear!"
 msgstr ""
-"Tại sao một con gấu lại phải giả chết chứ? Đáng lẽ\n"
-"các ngươi mới là kẻ phải giả chết khi gặp gấu!"
+"Tại sao một con gấu lại phải giả chết? Đáng lẽ mấy cậu\n"
+"mới là kẻ phải giả chết khi gặp gấu chứ!"
 
 #. こりゃ笑えるね！　笑おうっと！
 #. アーッハッハッハ！
@@ -1421,8 +1427,8 @@ msgid ""
 "Well, it's almost time to cut off your past so full of\n"
 "hope, and begin to despair at the future ahead of you!"
 msgstr ""
-"Đã gần đến lúc cắt đứt quá khứ tràn đầy hy vọng của\n"
-"các ngươi, và bắt đầu tuyệt vọng trước tương lai phía trước rồi!"
+"Đã gần đến lúc cắt đứt quá khứ tràn đầy hy vọng của bọn\n"
+"bây, và bắt đầu tuyệt vọng trước tương lai phía trước rồi!"
 
 #. オマエラにはもっと楽しんでもらわないと！
 #. この<CLT 3>“コロシアイ学園生活”<CLT>をね！
@@ -1431,8 +1437,8 @@ msgid ""
 "I want you to all have way more fun in this <CLT 3>killing\n"
 "game<CLT>!"
 msgstr ""
-"Ta muốn các ngươi phải tận hưởng nhiều hơn nữa trong\n"
-"<CLT 3>trò chơi giết chóc<CLT> này!"
+"Ta muốn bọn bây phải tận hưởng nhiều hơn nữa\n"
+"trong <CLT 3>trò chơi giết chóc<CLT> này!"
 
 #. ウソでしょ…？　まだ続くって事…？
 msgctxt "0180 | AOI ASAHINA"
@@ -1442,7 +1448,9 @@ msgstr "Không thể nào... Chúng ta vẫn phải tiếp tục sao?"
 #. そ、そんな…ここから出られるはずじゃ…
 msgctxt "0181 | YASUHIRO HAGAKURE"
 msgid "N-No... We were supposed to get out of here...!"
-msgstr "K-Không... Đáng lẽ chúng ta phải được ra khỏi đây rồi chứ...!"
+msgstr ""
+"K-Không... Đáng lẽ chúng ta phải được ra khỏi\n"
+"đây rồi chứ...!"
 
 #. ここから出たい？　
 #. まだ、そんな事を言ってんの？
@@ -1451,7 +1459,7 @@ msgid ""
 "Get out of here? Are you still obsessed with getting\n"
 "out of here?"
 msgstr ""
-"Ra khỏi đây sao? Các ngươi vẫn còn ám ảnh chuyện\n"
+"Ra khỏi đây sao? Tụi bây vẫn còn ám ảnh chuyện\n"
 "muốn thoát khỏi đây à?"
 
 #. …あのさぁ、そろそろ理解しなって！
@@ -1461,8 +1469,8 @@ msgid ""
 "How do you not get it!? There IS no getting out of\n"
 "here!"
 msgstr ""
-"Sao các ngươi không hiểu chứ!? Không thể nào\n"
-"thoát khỏi nơi này đâu!"
+"Sao tụi bây không hiểu chứ!? Không thể nào thoát\n"
+"khỏi nơi này đâu!"
 
 #. それにさ…
 msgctxt "0184 | MONOKUMA"
@@ -1476,25 +1484,26 @@ msgid ""
 "This life <CLT 3>isn't all bad<CLT> ya know! I mean, there's\n"
 "stuff you won't like about life no matter where you are!"
 msgstr ""
-"Cuộc sống này <CLT 3>không phải hoàn toàn tồi tệ<CLT> đâu nhé!\n"
-"Ý ta là, dù ở đâu thì cuộc sống cũng sẽ có những điều\n"
-"các ngươi không thích thôi!"
+"Cuộc sống này <CLT 3>cũng đâu có tệ<CLT> đâu! Ý ta là, dù có đi đâu thì cũng\n"
+"sẽ có những thứ mà sẽ không thích về cuộc sống thôi!"
 
 #. ふ、ふざけないでよ…
 #. こんなの…最悪じゃない…！
 msgctxt "0186 | TOUKO FUKAWA"
 msgid "Are you s-serious? This place is the w-worst...!"
-msgstr "Ngươi n-nói thật sao? Nơi này t-tệ nhất mà...!"
+msgstr "Mi n-nghiêm túc đó à? Nơi này là t-tệ nhất...!"
 
 #. 最悪っていうか絶望…？
 msgctxt "0187 | MONOKUMA"
 msgid "If it's the worst, does that mean you're in...despair?"
-msgstr "Nếu nó là tệ nhất, vậy có nghĩa là ngươi đang... tuyệt vọng sao?"
+msgstr ""
+"Nếu nó là tệ nhất, vậy có nghĩa là mi đang...\n"
+"tuyệt vọng sao?"
 
 #. アーッハッハッハッハッハッハッハ！！
 msgctxt "0188 | MONOKUMA"
 msgid "Ahh-hahahahaha!"
-msgstr "A-ha-ha-ha-ha-ha-ha!!"
+msgstr "A-ha-ha-ha-ha-ha-ha!"
 
 #. ふぅ…笑い疲れたんで…
 #. そろそろ本題に入りましょうか。
@@ -1515,7 +1524,9 @@ msgstr "Vấn đề...?"
 #. オマエラ、いいところに目を付けたよね。
 msgctxt "0191 | MONOKUMA"
 msgid "You guys really struck gold when you found that TV."
-msgstr "Chính cái TV đó..."
+msgstr ""
+"Mấy cậu thực sự vớ được vàng khi tìm thấy cái TV\n"
+"đó đấy..."
 
 #. そうなのです。そのテレビは、
 #. この学園生活を語る上で、欠かせない物なのですよ。
@@ -1524,8 +1535,8 @@ msgid ""
 "Yes, indeed! That TV is an essential part of your\n"
 "school life here."
 msgstr ""
-"Đúng vậy! Cái TV đó là một phần không thể thiếu\n"
-"trong cuộc sống học đường của các ngươi ở đây."
+"Đúng vậy! Cái TV đó là một phần không thể thiếu trong\n"
+"cuộc sống học đường của các cậu ở đây."
 
 #. やはり…このテレビには秘密があるんだな…
 msgctxt "0193 | BYAKUYA TOGAMI"
@@ -1539,13 +1550,13 @@ msgid ""
 "But I connected the antenna, so why's it just showing\n"
 "us the surveillance feed?"
 msgstr ""
-"Nhưng tôi chỉ kết nối ăng-ten thôi mà...\n"
-"Tại sao nó cứ phát hình ảnh từ camera giám sát vậy!?"
+"Nhưng tôi chỉ kết nối ăng-ten thôi mà... Tại sao\n"
+"nó cứ phát hình ảnh từ camera giám sát vậy!?"
 
 #. うぷぷ…気になってる気になってる…
 msgctxt "0195 | MONOKUMA"
 msgid "Puhuhu... Look how attentive they are now!"
-msgstr "Puhuhu... Nhìn xem các ngươi đang chú ý thế nào kìa!"
+msgstr "Puhuhu... Nhìn xem bọn họ đang chú ý thế nào kìa!"
 
 #. じゃあ、出血大サービス！！
 #. そのテレビについて教えてあげましょう！
@@ -1554,8 +1565,8 @@ msgid ""
 "Well then, I'm gonna let you in on a blood-gushing\n"
 "secret and tell you about it!"
 msgstr ""
-"Vậy thì ta sẽ cho các ngươi một bí mật lớn đến mức\n"
-"chảy máu và kể cho các ngươi nghe về cái TV đó!"
+"Vậy thì ta sẽ cho các em một bí mật lớn đến mức\n"
+"chảy máu và kể cho các em nghe về cái TV đó!"
 
 #. そのテレビは間違いなく、アンテナ受信した
 #. テレビ電波の映像を流しているだけなのです！
@@ -1564,8 +1575,8 @@ msgid ""
 "That TV is absolutely, without a doubt, displaying the\n"
 "signal coming in on the antenna."
 msgstr ""
-"Cái TV đó chắc chắn, không còn nghi ngờ gì nữa,\n"
-"chỉ đang hiển thị tín hiệu nhận được từ ăng-ten thôi!"
+"Cái TV đó chắc chắn, không còn nghi ngờ gì nữa, chỉ\n"
+"đang hiển thị tín hiệu nhận được từ ăng-ten thôi!"
 
 #. え…？　どういう事…？
 msgctxt "0198 | AOI ASAHINA"
@@ -1589,7 +1600,7 @@ msgid ""
 "Ugh, you're so stupid! Don't you get it!? Fine, I'll\n"
 "just tell you..."
 msgstr ""
-"Đúng là ngốc nghếch! Các ngươi vẫn chưa hiểu sao!?\n"
+"Đúng là ngốc nghếch! Bọn mi vẫn chưa hiểu sao!?\n"
 "Được rồi, để ta nói cho..."
 
 #. この“コロシアイ学園生活”は、
@@ -1599,9 +1610,8 @@ msgid ""
 "This killing game <CLT 3>is being broadcast live to the\n"
 "entire world<CLT>. It's the most popular thing on TV!"
 msgstr ""
-"Trò chơi giết chóc này <CLT 3>đang được phát sóng trực\n"
-"tiếp trên toàn thế giới<CLT>. Nó là chương trình nổi tiếng\n"
-"nhất trên TV!"
+"Trò chơi giết chóc này <CLT 3>đang được phát sóng trực tiếp trên toàn\n"
+"thế giới<CLT>. Nó là chương trình nổi tiếng nhất trên TV!"
 
 #. は…？
 msgctxt "0202 | MAKOTO NAEGI"
@@ -1615,9 +1625,8 @@ msgid ""
 "This killing game <CLT 3>is being broadcast live to the\n"
 "entire world<CLT>. It's the most popular thing on TV!"
 msgstr ""
-"Trò chơi giết chóc này <CLT 3>đang được phát sóng trực\n"
-"tiếp trên toàn thế giới<CLT>. Nó là chương trình nổi tiếng\n"
-"nhất trên TV!"
+"Trò chơi giết chóc này <CLT 3>đang được phát sóng trực tiếp trên toàn\n"
+"thế giới<CLT>. Nó là chương trình nổi tiếng nhất trên TV!"
 
 #. ………………
 msgctxt "0204 | MAKOTO NAEGI"
@@ -1676,7 +1685,7 @@ msgid ""
 "The camera feed is being broadcast...? No way, that's\n"
 "impossible!"
 msgstr ""
-"Hình ảnh từ camera đang được phát sóng sao...?\n"
+"Hình ảnh từ camera đang được phát sóng...?\n"
 "Không thể nào, chuyện đó là bất khả thi!"
 
 #. その過信が、オマエラの危機管理の甘さなんだよ。
@@ -1685,8 +1694,8 @@ msgid ""
 "That kind of overconfidence is a major weakness in\n"
 "your crisis management system, you know that?"
 msgstr ""
-"Sự tự tin thái quá đó chính là điểm yếu lớn trong\n"
-"hệ thống quản lý khủng hoảng của các ngươi đấy."
+"Sự tự tin thái quá đó chính là điểm yếu lớn trong hệ\n"
+"thống quản lý khủng hoảng của các cậu đấy."
 
 #. ちょっとしたコツさえあれば、
 #. テレビ電波のジャックなんて楽勝モードなのだ！！
@@ -1701,7 +1710,7 @@ msgstr ""
 #. ほ、本気で言ってるのか…？
 msgctxt "0212 | MAKOTO NAEGI"
 msgid "A-Are you being serious right now...?"
-msgstr "C-Cậu đang nghiêm túc đấy à...?"
+msgstr "M-Mi đang nghiêm túc đấy à...?"
 
 #. もちろん！！
 msgctxt "0213 | MONOKUMA"
@@ -1744,7 +1753,7 @@ msgstr ""
 #. すべてに…意味があったんだよ…
 msgctxt "0217 | MONOKUMA"
 msgid "Everything has a meaning, you know..."
-msgstr "Mọi thứ đều có ý nghĩa cả, ngươi biết không..."
+msgstr "Mọi thứ đều có ý nghĩa cả, mi biết không..."
 
 #. ボクが、事あるごとに、
 #. 学園の謎に迫るヒントをあえて教えてあげたのも…
@@ -1753,19 +1762,21 @@ msgid ""
 "All those hints I gave you, all those tantalizing\n"
 "tidbits about the school's mysteries..."
 msgstr ""
-"Tất cả những gợi ý ta đã cho các ngươi, tất cả những\n"
+"Tất cả những gợi ý ta đã cho bọn mi, tất cả những\n"
 "mẩu thông tin hấp dẫn về bí ẩn của trường học..."
 
 #. オマエラを、ここにおびき出したのだって、
 #. そうだよ。
 msgctxt "0219 | MONOKUMA"
 msgid "Even me luring you here right now..."
-msgstr "Ngay cả việc ta dụ các ngươi đến đây lúc này..."
+msgstr "Ngay cả việc ta dụ bọn mi đến đây lúc này..."
 
 #. 意味もなく、そんな事する訳ないでしょ？
 msgctxt "0220 | MONOKUMA"
 msgid "Why would I do any of that without a reason?"
-msgstr "Tại sao ta lại làm tất cả những chuyện đó nếu không có lý do chứ?"
+msgstr ""
+"Tại sao ta lại làm tất cả những chuyện đó nếu\n"
+"không có lý do chứ?"
 
 #. すべては…全国の視聴者諸君に向けた…
 #. 前代未聞の<CLT 3>“絶望的公開生中継”<CLT>の為の…
@@ -1780,7 +1791,9 @@ msgstr ""
 #. 絶望エンターテイメントを演出してたのでーす！
 msgctxt "0222 | MONOKUMA"
 msgid "I became the director of a despair-based production!"
-msgstr "Ta đã trở thành đạo diễn của một chương trình dựa trên sự tuyệt vọng!"
+msgstr ""
+"Ta đã trở thành đạo diễn của một chương trình\n"
+"dựa trên sự tuyệt vọng!"
 
 #. これぞ究極のリアリティーショー！
 #. まさしく、リアル絶望エンターテイメント！
@@ -1789,8 +1802,8 @@ msgid ""
 "This is the ultimate reality show! The best in despair\n"
 "entertainment!"
 msgstr ""
-"Đây chính là chương trình thực tế đỉnh cao! Màn giải trí\n"
-"tuyệt vọng tuyệt vời nhất!"
+"Đây chính là chương trình thực tế đỉnh cao! Màn\n"
+"giải trí tuyệt vọng tuyệt vời nhất!"
 
 #. ウソだッ！　こんなのがテレビで流れてたら、
 #. 警察だって世間だって大騒ぎだよ！！
@@ -1799,7 +1812,7 @@ msgid ""
 "You're lying! If this was on TV, the police and\n"
 "everyone else would be going crazy!"
 msgstr ""
-"Cậu nói dối! Nếu chuyện này được phát trên TV, cảnh sát\n"
+"Mi nói dối! Nếu chuyện này được phát trên TV, cảnh sát\n"
 "và mọi người chắc chắn sẽ náo loạn lên!"
 
 #. そ、そうだべ…
@@ -1828,8 +1841,8 @@ msgid ""
 "But then again...it's not really any of their\n"
 "business, right?"
 msgstr ""
-"Nhưng nói cho cùng... chuyện này đâu thật sự liên quan\n"
-"đến họ, đúng không?"
+"Nhưng nói cho cùng... chuyện này đâu thật sự\n"
+"liên quan đến họ, đúng không?"
 
 #. テレビを見て『あぶなーい』と叫ぶ人がいたとしても、
 #. 本気で助けに向かう人なんていやしないでしょ？
@@ -1838,8 +1851,8 @@ msgid ""
 "Sure, some people might yell at their TV to try and\n"
 "warn you. But who would actually come here to help?"
 msgstr ""
-"Đúng là có người có thể hét vào TV để cảnh báo các ngươi.\n"
-"Nhưng ai sẽ thật sự đến đây để giúp chứ?"
+"Đúng là có người có thể hét vào TV để cảnh báo bọn\n"
+"mi. Nhưng ai sẽ thật sự đến đây để giúp chứ?"
 
 #. そういう事なんじゃない？
 #. よくわかんねーし、どうでもいいんだけどね。
@@ -1848,8 +1861,8 @@ msgid ""
 "Don't you think that's possible? I don't really know\n"
 "personally though, so whatever!"
 msgstr ""
-"Các ngươi không nghĩ chuyện đó có thể xảy ra sao? Dù sao\n"
-"thì ta cũng không biết rõ, nên mặc kệ đi!"
+"Bọn bây không nghĩ chuyện đó có thể xảy ra sao?\n"
+"Dù sao thì ta cũng không biết rõ, nên mặc kệ đi!"
 
 #. …だが、公共の電波をジャックするなど、
 #. 天文学的な資金や設備が必要となるはずだ。
@@ -1865,7 +1878,9 @@ msgstr ""
 #. うぷぷ…それはね…
 msgctxt "0232 | MONOKUMA"
 msgid "Yup! So, how could things have come this far? Well..."
-msgstr "Đúng vậy! Vậy làm sao mọi chuyện lại đi xa đến mức này? Chà..."
+msgstr ""
+"Đúng vậy! Vậy làm sao mọi chuyện lại đi xa đến\n"
+"mức này? Chà..."
 
 #. まだ内緒なの！！
 #. だって、みんなには先にやる事があるでしょ？
@@ -1874,13 +1889,13 @@ msgid ""
 "That's a secret! There's something you all need to do\n"
 "first, remember?"
 msgstr ""
-"Đó là bí mật! Trước tiên các ngươi còn có một việc\n"
+"Đó là bí mật! Trước tiên các cậu còn có một việc\n"
 "cần phải làm, nhớ chứ?"
 
 #. 先に…やる事…？
 msgctxt "0234 | MAKOTO NAEGI"
 msgid "What...?"
-msgstr "Cái gì...?"
+msgstr "Hả...?"
 
 #. もちろん…例のヤツだよ…
 msgctxt "0235 | MONOKUMA"
@@ -1920,7 +1935,7 @@ msgstr "Hả...?"
 #. じゃあ、まさか…ッ！！
 msgctxt "0240 | AOI ASAHINA"
 msgid "C-Class trial!? Do you mean...!?"
-msgstr "K-Không lẽ là... phiên tòa lớp sao!?"
+msgstr "K-Không lẽ là... lớp xét xử sao!?"
 
 #. うぷ…うぷぷぷぷぷぷぷ……
 msgctxt "0241 | MONOKUMA"
@@ -1944,8 +1959,8 @@ msgid ""
 "I'll leave the next Monokuma File right here. Everyone\n"
 "give it all you've got, okay!?"
 msgstr ""
-"Ta sẽ để lại Monokuma File tiếp theo ở đây. Tất cả\n"
-"hãy cố hết sức nhé!?"
+"Ta sẽ để lại Hồ Sơ Monokuma tiếp theo ở đây. Tất\n"
+"cả hãy cố hết sức nhé!?"
 
 #. さってと！　これから忙しくなるぞ！
 #. 今日はたっくさん反響がありそうだな！
@@ -1955,7 +1970,7 @@ msgid ""
 "out! You're in for a heck of a ride...!"
 msgstr ""
 "Được rồi! Từ giờ mọi chuyện sẽ trở nên điên rồ hơn\n"
-"nữa! Các ngươi sẽ có một chuyến đi đáng nhớ đấy...!"
+"nữa! Các em sẽ có một chuyến đi đáng nhớ đấy...!"
 
 #. 楽しみ…楽しみ…！
 msgctxt "0245 | MONOKUMA"
@@ -1980,8 +1995,8 @@ msgid ""
 "of reach.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thực tại không thể hiểu nổi, sự thật thì tuyệt vọng\n"
-"và nằm ngoài tầm với.\n"
+"<CLT 4>Thực tại không thể hiểu nổi, sự thật thì tuyệt\n"
+"vọng và nằm ngoài tầm với.\n"
 "<CLT>"
 
 #. <CLT 4><CLT><CLT 3>“絶望”<CLT><CLT 4>だけを残して…
@@ -1991,7 +2006,7 @@ msgid ""
 "<CLT 4>All we were left with...was <CLT><CLT 3>despair<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tất cả những gì còn lại với chúng tôi... chỉ là\n"
+"<CLT 4>Tất cả những gì còn lại với chúng mình... chỉ là\n"
 "<CLT><CLT 3>sự tuyệt vọng<CLT><CLT 4>.\n"
 "<CLT>"
 
@@ -2004,8 +2019,7 @@ msgid ""
 "place.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng tôi đứng đó không biết bao lâu, đông cứng\n"
-"tại chỗ.\n"
+"<CLT 4>Chúng mình đứng đó không biết bao lâu, đông cứng tại chỗ.\n"
 "<CLT>"
 
 #. <CLT 4>動くどころか…立ってるのもままならない状態…
@@ -2016,8 +2030,8 @@ msgid ""
 "keep myself standing upright.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không thể suy nghĩ được. Chỉ riêng việc giữ\n"
-"cho bản thân đứng vững cũng đã lấy hết sức lực rồi.\n"
+"<CLT 4>Mình không thể suy nghĩ được. Chỉ riêng việc giữ cho\n"
+"bản thân đứng vững cũng đã lấy hết sức lực rồi.\n"
 "<CLT>"
 
 #. さっぱり…意味わかんねーべ……
@@ -2027,8 +2041,8 @@ msgid ""
 "I don't understand any of this... What's \"despair\n"
 "entertainment\"? And..."
 msgstr ""
-"Tôi chẳng hiểu gì cả... \"giải trí tuyệt vọng\" là cái\n"
-"quái gì vậy? Và..."
+"Tớ chẳng hiểu gì cả... \"giải trí tuyệt vọng\" là cái\n"
+"quái gì vậy? Và... "
 
 #. あいつは、なんで生きてんだって！？
 msgctxt "0252 | YASUHIRO HAGAKURE"
@@ -2041,13 +2055,13 @@ msgid ""
 "I thought that finally...*finally* we could get out of\n"
 "here..."
 msgstr ""
-"Tớ đã nghĩ rằng cuối cùng... *cuối cùng* chúng ta có\n"
-"thể rời khỏi đây..."
+"Tui đã nghĩ rằng cuối cùng... *cuối cùng* chúng\n"
+"ta có thể rời khỏi đây..."
 
 #. そ、それに…学級裁判ってなんなのよ…ッ！
 msgctxt "0254 | TOUKO FUKAWA"
 msgid "A-And plus...what did he s-say about a class trial!?"
-msgstr "V-Và nữa... hắn nói gì về phiên tòa lớp vậy!?"
+msgstr "V-Và nữa... hắn nói gì về lớp xét xử vậy!?"
 
 #. 決まってるだろう。
 #. 学級裁判は学級裁判だ…
@@ -2055,9 +2069,7 @@ msgctxt "0255 | BYAKUYA TOGAMI"
 msgid ""
 "Well that part's obvious. The class trial is the class\n"
 "trial."
-msgstr ""
-"Phần đó thì rõ rồi. Phiên tòa lớp chính là phiên tòa\n"
-"lớp."
+msgstr "Phần đó thì rõ rồi. Lớp xét xử chính là lớp xét xử."
 
 #. つまり、これから俺達は、
 #. 犯人を突き止めなければならないという事だ…
@@ -2067,17 +2079,17 @@ msgid ""
 "out who the culprit is..."
 msgstr ""
 "Điều đó có nghĩa là từ giờ, chúng ta phải tìm ra\n"
-"kẻ đã gây án..."
+"ai là hung thủ..."
 
 #. <CLT 3>“霧切響子を殺した犯人”<CLT>をな…
 msgctxt "0257 | BYAKUYA TOGAMI"
 msgid "Figure out...<CLT 3>who killed Kyoko<CLT>."
-msgstr "Tìm ra...<CLT 3>kẻ đã giết Kyoko<CLT>."
+msgstr "Tìm ra... <CLT 3>kẻ đã giết Kyoko<CLT>."
 
 #. え…？
 msgctxt "0258 | MAKOTO NAEGI"
 msgid "What...?"
-msgstr "Cái gì...?"
+msgstr "Gì cơ...?"
 
 #. な、何言ってんだ？
 #. 殺されたのは、戦刃むくろだったはずだべ？
@@ -2086,7 +2098,7 @@ msgid ""
 "Wh-What are you talking about? I thought Mukuro\n"
 "Ikusaba was the one who died..."
 msgstr ""
-"C-Cậu đang nói gì vậy? Tôi tưởng Mukuro Ikusaba\n"
+"C-Cậu đang nói gì vậy? Tớ tưởng Mukuro Ikusaba\n"
 "mới là người đã chết..."
 
 #. 女の死体…という事なら霧切も当てはまる。
@@ -2120,7 +2132,7 @@ msgid ""
 "So naturally that body can't belong to her. So it must\n"
 "be Kyoko."
 msgstr ""
-"Vậy nên thi thể đó đương nhiên không thể là cô ấy.\n"
+"Vậy nên thi thể đó đương nhiên không thể là cô ta.\n"
 "Vậy nó phải là Kyoko."
 
 #. それ以外に…考えられまい……
@@ -2193,12 +2205,12 @@ msgstr ""
 #. そんなの…信じられない…
 msgctxt "0271 | MAKOTO NAEGI"
 msgid "I don't believe it...!"
-msgstr "Mình không tin được...!"
+msgstr "Tớ không tin được... !"
 
 #. そんなの信じられないよッ！！
 msgctxt "0272 | MAKOTO NAEGI"
 msgid "I refuse to believe it!"
-msgstr "Mình không chấp nhận tin chuyện đó!"
+msgstr "Tớ không chấp nhận tin chuyện đó!"
 
 #. お前が信じようと信じまいと関係ない。
 #. 真実は真実でしかない！
@@ -2207,8 +2219,8 @@ msgid ""
 "Whether you believe it or not doesn't matter. The\n"
 "truth is the truth!"
 msgstr ""
-"Cậu có tin hay không cũng không quan trọng. Sự thật\n"
-"vẫn là sự thật!"
+"Cậu có tin hay không cũng không quan trọng. Sự\n"
+"thật vẫn là sự thật!"
 
 #. それでも信じられないと言うなら、
 #. お前自身が確かめてみるんだな…
@@ -2217,13 +2229,13 @@ msgid ""
 "If you refuse to believe, it's your responsibility to\n"
 "uncover the truth for yourself."
 msgstr ""
-"Nếu cậu nhất quyết không tin, thì trách nhiệm của cậu\n"
-"là tự mình tìm ra sự thật."
+"Nếu cậu nhất quyết không tin, thì trách nhiệm\n"
+"của cậu là tự mình tìm ra sự thật."
 
 #. ボク…自身が…？
 msgctxt "0275 | MAKOTO NAEGI"
 msgid "Myself...?"
-msgstr "Chính mình...?"
+msgstr "Tự tớ... ?"
 
 #. …とにかく、始めるぞ。
 msgctxt "0276 | BYAKUYA TOGAMI"
@@ -2234,7 +2246,7 @@ msgstr "...Dù sao thì, chúng ta nên bắt đầu."
 #. 学級裁判が開かれるって事はさ…
 msgctxt "0277 | AOI ASAHINA"
 msgid "B-But...if we're gonna have a class trial..."
-msgstr "Nh-Nhưng... nếu chúng ta sẽ mở phiên tòa lớp..."
+msgstr "Nh-Nhưng... nếu chúng ta có lớp xét xử... "
 
 #. もしかして、犯人って…
 msgctxt "0278 | AOI ASAHINA"
@@ -2248,14 +2260,16 @@ msgid ""
 "Correct. It must be someone participating in our\n"
 "school life."
 msgstr ""
-"Đúng vậy. Hắn chắc chắn là một người tham gia vào\n"
-"cuộc sống học đường của chúng ta."
+"Đúng vậy. Hắn chắc chắn là một người tham gia\n"
+"vào cuộc sống học đường của chúng ta."
 
 #. じゃ、じゃあ…！
 #. この中の誰かが霧切っちを殺したってんか？
 msgctxt "0280 | YASUHIRO HAGAKURE"
 msgid "Wait, so you're saying one of us killed Kyoko!?"
-msgstr "K-Khoan, ý cậu là một trong số chúng ta đã giết Kyoko sao!?"
+msgstr ""
+"K-Khoan, ý cậu là một trong số chúng ta đã giết\n"
+"Kyoko sao!?"
 
 #. いや…そうとも言い切れんがな…
 msgctxt "0281 | BYAKUYA TOGAMI"
@@ -2284,8 +2298,8 @@ msgid ""
 "So I'm going to begin my search. If you value your\n"
 "lives, you'll put everything you have into this."
 msgstr ""
-"Vậy nên tôi sẽ bắt đầu điều tra. Nếu các người coi\n"
-"trọng mạng sống của mình, hãy dốc toàn bộ sức lực vào việc này."
+"Vậy nên tôi sẽ bắt đầu điều tra. Nếu các người coi trọng mạng\n"
+"sống của mình, hãy dốc toàn bộ sức lực vào việc này."
 
 #. それが…ここのルールなんだ…
 msgctxt "0285 | BYAKUYA TOGAMI"
@@ -2301,8 +2315,7 @@ msgid ""
 "File...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Dù sao thì... trước tiên mình nên kiểm tra\n"
-"Monokuma File...\n"
+"<CLT 4>Vậy... trước tiên mình nên kiểm tra Hồ Sơ Monokuma...\n"
 "<CLT>"
 
 #. <CLT 4>爆破による損傷が激しい為、死体の身元は不明。
@@ -2313,8 +2326,7 @@ msgid ""
 "unknown.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>\"Do vụ nổ, danh tính của nạn nhân\n"
-"không xác định được.\"\n"
+"<CLT 4>\"Do vụ nổ, danh tính của nạn nhân không xác định được.\"\n"
 "<CLT>"
 
 #. <CLT 4>この爆破は、被害者の死後に行われている。
@@ -2324,8 +2336,7 @@ msgid ""
 "<CLT 4>\"They were, however, dead before the blast.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>\"Tuy nhiên, nạn nhân đã chết trước khi\n"
-"vụ nổ xảy ra.\"\n"
+"<CLT 4>\"Tuy nhiên, nạn nhân đã chết trước khi vụ nổ xảy ra.\"\n"
 "<CLT>"
 
 #. <CLT 4>腹部のナイフの傷は背中まで達している。
@@ -2337,8 +2348,8 @@ msgid ""
 "knife, which went completely through the body.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>\"Nạn nhân bị đâm một lần duy nhất bằng dao,\n"
-"vết dao xuyên hoàn toàn qua cơ thể.\"\n"
+"<CLT 4>\"Nạn nhân bị đâm một lần duy nhất bằng dao, vết\n"
+"dao xuyên hoàn toàn qua cơ thể.\"\n"
 "<CLT>"
 
 #. <CLT 4>また、後頭部に殴られた形跡もある。
@@ -2350,8 +2361,8 @@ msgid ""
 "about as thick as a metal pipe.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>\"Nạn nhân cũng bị đánh vào đầu bằng một vật\n"
-"có độ dày tương đương một ống kim loại.\"\n"
+"<CLT 4>\"Nạn nhân cũng bị đánh vào đầu bằng một vật có\n"
+"độ dày tương đương một ống kim loại.\"\n"
 "<CLT>"
 
 #. <CLT 4>他にも、全身に数多くの傷跡があるが、
@@ -2363,8 +2374,8 @@ msgid ""
 "were at least several days old.\"\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>\"Cơ thể có nhiều vết thương khác, nhưng\n"
-"những vết này đã có từ ít nhất vài ngày trước.\"\n"
+"<CLT 4>\"Cơ thể có nhiều vết thương khác, nhưng những\n"
+"vết này đã có từ ít nhất vài ngày trước.\"\n"
 "<CLT>"
 
 #. やっぱ、モノクマファイルでも…
@@ -2374,8 +2385,8 @@ msgid ""
 "So even the Monokuma File doesn't tell us who the\n"
 "victim actually was..."
 msgstr ""
-"Ngay cả Monokuma File cũng không cho chúng ta biết\n"
-"nạn nhân thật sự là ai..."
+"Ngay cả Hồ Sơ Monokuma cũng không cho chúng ta\n"
+"biết nạn nhân thật sự là ai..."
 
 #. <CLT 4>正体不明の被害者…
 #. あれは…本当に霧切さんなのか？
@@ -2385,8 +2396,7 @@ msgid ""
 "<CLT 4>The unidentified body... Could it really be Kyoko...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thi thể không rõ danh tính... Có thật sự là Kyoko\n"
-"không...?\n"
+"<CLT 4>Thi thể không xác định... Có thật sự là Kyoko không...?\n"
 "<CLT>"
 
 #. <CLT 4>それとも……
@@ -2406,8 +2416,7 @@ msgid ""
 "<CLT 4>I have no choice... I have to investigate.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không còn lựa chọn nào khác... Mình phải\n"
-"điều tra.\n"
+"<CLT 4>Mình không còn lựa chọn nào khác... Mình phải điều tra.\n"
 "<CLT>"
 
 #. <CLT 4>自分の目で…確かめてみるしかない…
@@ -2438,9 +2447,7 @@ msgctxt "0298 | MAKOTO NAEGI"
 msgid ""
 "I need to go back to the scene of the crime—back to\n"
 "the garden!"
-msgstr ""
-"Mình cần quay lại hiện trường vụ án—trở về\n"
-"khu vườn!"
+msgstr "Mình cần quay lại hiện trường vụ án—trở về khu vườn!"
 
 #. <CLT 23><CLT><CLT 3>モノクマファイル５<CLT><CLT 23>を手帳に記録しました。
 #. 言弾（コトダマ）メニューで確認できます。
@@ -2451,6 +2458,6 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Monokuma File #5<CLT><CLT 23>\" đã được thêm vào mục\n"
-"Đạn sự thật trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Hồ Sơ Monokuma #5<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"

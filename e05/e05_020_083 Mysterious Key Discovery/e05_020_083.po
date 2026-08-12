@@ -40,7 +40,9 @@ msgstr "Vậy ngay cả cậu cũng không biết sao?"
 #. 苗木よ、お前に重要な任務を与えてやろう。
 msgctxt "0005 | BYAKUYA TOGAMI"
 msgid "Makoto...I'm going to give you a very important task."
-msgstr "Makoto... tôi sẽ giao cho cậu một nhiệm vụ rất quan trọng."
+msgstr ""
+"Makoto... tôi sẽ giao cho cậu một nhiệm vụ rất\n"
+"quan trọng."
 
 #. …え？
 msgctxt "0006 | MAKOTO NAEGI"
@@ -69,9 +71,8 @@ msgid ""
 "The <CLT 3>bio lab<CLT>, the <CLT 3>data center<CLT>, the <CLT 3>headmaster's\n"
 "room<CLT>, and <CLT 3>the dorm rooms on the 2nd floor<CLT>..."
 msgstr ""
-"<CLT 3>Phòng sinh học<CLT>, <CLT 3>phòng xử lý dữ liệu<CLT>,\n"
-"<CLT 3>phòng hiệu trưởng<CLT> ở tầng 4, và <CLT 3>các phòng ký túc xá\n"
-"tầng 2<CLT>..."
+"<CLT 3>Phòng sinh học<CLT>, <CLT 3>trung tâm dữ liệu<CLT>, <CLT 3>phòng hiệu trưởng<CLT> ở\n"
+"tầng 4, và <CLT 3>các phòng ký túc xá tầng 2<CLT>..."
 
 #. 任せたぞ…
 msgctxt "0010 | BYAKUYA TOGAMI"
@@ -107,8 +108,7 @@ msgid ""
 "mask<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tối qua, mình đã bị tấn công bởi <CLT><CLT 3>một kẻ\n"
-"đeo mặt nạ<CLT><CLT 4>...\n"
+"<CLT 4>Tối qua, mình đã bị tấn công bởi <CLT><CLT 3>một kẻ đeo mặt nạ<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. <CLT 4>そして、その謎の人物は今…
@@ -141,8 +141,8 @@ msgid ""
 "Kyeeehahaha! I told ya, there's a corpse hangin' out\n"
 "here!"
 msgstr ""
-"Kyeeehahaha! Tôi đã nói rồi mà, ở đây có một cái xác\n"
-"chết!"
+"Kyeeehahaha! Tôi đã nói rồi mà, ở đây có một cái\n"
+"xác chết!"
 
 #. こ、これって…死体なの…？
 #. ホントに…死んでるの…？
@@ -156,9 +156,7 @@ msgctxt "0018 | BYAKUYA TOGAMI"
 msgid ""
 "You need to begin looking around right away.\n"
 "However..."
-msgstr ""
-"Cậu cần bắt đầu điều tra ngay lập tức.\n"
-"Tuy nhiên..."
+msgstr "Cần bắt đầu điều tra ngay lập tức. Tuy nhiên..."
 
 #. …慎重に慎重を重ねろ。
 #. 何があるかわからんぞ。
@@ -185,7 +183,9 @@ msgstr "Người này là ai? Tại sao lại chết ở đây...?"
 #. 話が進まんな。
 msgctxt "0022 | BYAKUYA TOGAMI"
 msgid "We can't move forward until we figure that out."
-msgstr "Chúng ta không thể tiến lên cho đến khi xác định được điều đó."
+msgstr ""
+"Chúng ta không thể tiến lên cho đến khi xác định\n"
+"được điều đó."
 
 #. 何か嫌な予感はしていたが…
 #. まさか爆発するとはな…
@@ -219,8 +219,8 @@ msgid ""
 "Even a dead body can find its way home that way!\n"
 "Kyeeehahahaha!"
 msgstr ""
-"Ngay cả xác chết cũng có thể tìm được đường về nhà\n"
-"bằng cách đó! Kyeeehahaha!"
+"Ngay cả xác chết cũng có thể tìm được đường về\n"
+"nhà bằng cách đó! Kyeeehahaha!"
 
 #. し、視界の端に…ちらりと何か見えた気が…
 msgctxt "0027 | TOUKO FUKAWA"
@@ -248,8 +248,8 @@ msgid ""
 "You g-guess? Which is it!? Is it a d-dead body or\n"
 "not...!?"
 msgstr ""
-"\"Chắc là\" sao? Là cái nào chứ!? Là x-xác chết hay\n"
-"không phải...!?"
+"\"Chắc là\" sao? Là cái nào chứ!? Là x-xác chết\n"
+"hay không phải...!?"
 
 #. …死体だよ。
 msgctxt "0031 | MAKOTO NAEGI"
@@ -283,8 +283,8 @@ msgid ""
 "Gh...nn... Everyone is d-dying... Why? Why is this\n"
 "h-happening?"
 msgstr ""
-"Khụ... ừm... M-Mọi người cứ chết mãi...\n"
-"T-Tại sao? Tại sao chuyện này lại xảy ra?"
+"Gư... um... M-Mọi người cứ chết mãi... T-Tại\n"
+"sao? Tại sao chuyện này lại xảy ra?"
 
 #. ど…どうなってるの…？
 #. あれって…誰なの…？
@@ -311,12 +311,12 @@ msgstr "Có sai không nếu ngưỡng mộ kỹ năng như vậy?"
 #. ていうか、これ誰だべ？
 msgctxt "0038 | YASUHIRO HAGAKURE"
 msgid "What's this body doing here? I mean...who *is* it!?"
-msgstr "Cái xác này làm gì ở đây vậy? Ý tôi là... nó là ai chứ!?"
+msgstr "Cái xác này làm gì ở đây vậy? Ý tớ là... nó là ai chứ!?"
 
 #. むむむ…黒幕が黒コゲ…
 msgctxt "0039 | YASUHIRO HAGAKURE"
 msgid "Hrmm... The mastermind just got masterlandmine'd..."
-msgstr "Hmm... Kẻ chủ mưu vừa bị biến thành kẻ chủ mưu bị mìn..."
+msgstr "Hmm... Kẻ chủ mưu vừa bị biến thành kẻ ăn đủ mìn..."
 
 #. 自分で言っておいて、なかなかのデキだべ！
 #. 心のネタ帳にメモっとかねば！
@@ -325,7 +325,7 @@ msgid ""
 "Pretty good, right? That one's goin' in the jokebook\n"
 "of my soul!"
 msgstr ""
-"Hay đúng không? Tôi phải ghi câu này vào cuốn sổ\n"
+"Hay đúng không? Tớ phải ghi câu này vào cuốn sổ\n"
 "truyện cười trong tâm hồn mình!"
 
 #. <CLT 4>それよりも、まずは…
@@ -403,8 +403,8 @@ msgid ""
 "their face like that.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng không thể xác định được vì khuôn mặt của họ\n"
-"bị che bởi chiếc mặt nạ.\n"
+"<CLT 4>Nhưng không thể xác định được vì khuôn mặt của\n"
+"họ bị che bởi chiếc mặt nạ.\n"
 "<CLT>"
 
 #. <CLT 4>それに、体を覆った<CLT><CLT 3>“白衣”<CLT><CLT 4>のせいで、
@@ -416,8 +416,8 @@ msgid ""
 "impossible to tell anything about the body itself.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Và <CLT><CLT 3>chiếc áo blouse trắng<CLT><CLT 4> họ đang mặc khiến\n"
-"không thể biết được bất cứ đặc điểm nào về cơ thể.\n"
+"<CLT 4>Và <CLT><CLT 3>chiếc áo blouse trắng<CLT><CLT 4> họ đang mặc khiến không\n"
+"thể biết được bất cứ đặc điểm nào về cơ thể.\n"
 "<CLT>"
 
 #. <CLT 4>謎の被害者…
@@ -448,7 +448,7 @@ msgid ""
 "night in my room.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...dù người này là ai, họ đã tấn công mình trong\n"
+"<CLT 4>...dù kẻ này là ai, hắn đã tấn công mình trong\n"
 "phòng tối qua.\n"
 "<CLT>"
 
@@ -469,7 +469,7 @@ msgid ""
 "<CLT 4>How did they wind up dead in here!?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tại sao họ lại chết ở nơi này chứ!?\n"
+"<CLT 4>Tại sao hắn lại chết ở nơi này chứ!?\n"
 "<CLT>"
 
 #. 呼吸はない…胸も動いていない…
@@ -479,8 +479,8 @@ msgid ""
 "Their heart isn't beating, they're not breathing,\n"
 "all signs of life have come to a complete stop..."
 msgstr ""
-"Tim không còn đập, không còn hô hấp,\n"
-"mọi dấu hiệu của sự sống đã hoàn toàn dừng lại..."
+"Tim không còn đập, không còn hô hấp, mọi dấu\n"
+"hiệu của sự sống đã hoàn toàn dừng lại..."
 
 #. 腹部に突き刺さった<CLT 3>ナイフ<CLT>のせいで、
 #. 服が真っ赤な血で染まっている…
@@ -489,8 +489,8 @@ msgid ""
 "Thanks to the <CLT 3>knife<CLT> that's been driven into their\n"
 "stomach, their clothes are stained a bright red."
 msgstr ""
-"Do <CLT 3>con dao<CLT> đã cắm sâu vào bụng,\n"
-"quần áo của họ đã nhuốm một màu đỏ tươi."
+"Do <CLT 3>con dao<CLT> đã cắm sâu vào bụng, quần áo đã nhuốm\n"
+"một màu đỏ tươi."
 
 #. 血は止まっているようだが、
 #. まだ濡れたまま、<CLT 3>乾いていない<CLT>ようだな。
@@ -519,13 +519,13 @@ msgid ""
 "Who *is* it!? Their face and body are all hidden,\n"
 "so I don't have a clue..."
 msgstr ""
-"Rốt cuộc đây là ai vậy!? Mặt và cơ thể đều bị che kín,\n"
-"tôi chẳng biết gì cả..."
+"Rốt cuộc đây là ai vậy!? Mặt và cơ thể đều bị\n"
+"che kín, tớ chẳng biết gì cả... "
 
 #. 多分…<CLT 3>女の子<CLT>だよ。
 msgctxt "0060 | AOI ASAHINA"
 msgid "I'm pretty sure it's a <CLT 3>girl<CLT> at least..."
-msgstr "Ít nhất thì mình khá chắc đây là một <CLT 3>cô gái<CLT>..."
+msgstr "Ít nhất thì tui khá chắc đây là một <CLT 3>cô gái<CLT>... "
 
 #. へ…？　なんで？
 msgctxt "0061 | YASUHIRO HAGAKURE"
@@ -538,14 +538,14 @@ msgid ""
 "Well...I think I see the outline of her chest. And\n"
 "just the general shape of the body..."
 msgstr ""
-"Ừm... mình nghĩ mình nhìn thấy đường nét phần ngực.\n"
-"Và cả hình dáng tổng thể của cơ thể nữa..."
+"Ừm... tui nghĩ tui nhìn thấy đường nét phần ngực. Và\n"
+"cả hình dáng tổng thể của cơ thể nữa..."
 
 #. 間違いないよ…
 #. その人、女の子だよ…
 msgctxt "0063 | AOI ASAHINA"
 msgid "Yeah, the more I look, the more I'm sure it's a girl."
-msgstr "Đúng vậy, càng nhìn mình càng chắc chắn đó là con gái."
+msgstr "Đúng vậy, càng nhìn tui càng chắc chắn đó là con gái."
 
 #. <CLT 4>…女の子？
 #. じゃあ、ひょっとして…！
@@ -613,8 +613,8 @@ msgid ""
 "<CLT 4>...there was a blinding light, and a deafening roar.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...một luồng sáng chói lòa và một tiếng nổ\n"
-"long trời lở đất vang lên.\n"
+"<CLT 4>...một luồng sáng chói lòa và một tiếng nổ long\n"
+"trời lở đất vang lên.\n"
 "<CLT>"
 
 #. <CLT 4>爆発した…
@@ -624,7 +624,7 @@ msgid ""
 "<CLT 4>The body...blew up.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thi thể... đã phát nổ.\n"
+"<CLT 4>Cái xác... đã phát nổ.\n"
 "<CLT>"
 
 #. <CLT 4>爆発した爆発した爆発した爆発した爆発した爆発した…
@@ -674,8 +674,8 @@ msgid ""
 "voice reached up and pulled it back down to Earth.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khi ý thức của mình sắp trôi đi, giọng nói đó\n"
-"đã kéo nó trở lại.\n"
+"<CLT 4>Khi ý thức của mình sắp trôi đi, giọng nói đó đã\n"
+"kéo nó trở lại.\n"
 "<CLT>"
 
 #. <CLT 4>そして、ボクの手に何かが渡された…
@@ -728,7 +728,7 @@ msgid ""
 "<CLT 23>*SPLOOSH*\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>*ÙM!*\n"
+"<CLT 23>*TÙM!*\n"
 "<CLT>"
 
 #. <CLT 4>すると、すぐに火は勢いを失い…
@@ -750,15 +750,15 @@ msgid ""
 "of burning...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó dần tắt đi, chỉ để lại mùi khó chịu\n"
-"của thứ gì đó bị cháy...\n"
+"<CLT 4>Nó dần tắt đi, chỉ để lại mùi khó chịu của thứ\n"
+"gì đó bị cháy...\n"
 "<CLT>"
 
 #. な、なんとか…
 #. 鎮火した…みたいだけど…
 msgctxt "0086 | MAKOTO NAEGI"
 msgid "I-I guess that took care of it..."
-msgstr "M-Mình đoán là đã xử lý xong rồi..."
+msgstr "T-Tớ đoán là đã xử lý xong rồi... "
 
 #. ど、どういう事だべ…
 #. いきなり……
@@ -778,21 +778,19 @@ msgid ""
 "I...had a bad feeling about that body. But I never\n"
 "imagined it would explode..."
 msgstr ""
-"Tôi... đã có linh cảm không lành về thi thể đó.\n"
+"Tôi... đã có linh cảm không lành về cái xác đó.\n"
 "Nhưng tôi chưa từng nghĩ nó sẽ phát nổ..."
 
 #. おかげで、死体が……
 msgctxt "0090 | BYAKUYA TOGAMI"
 msgid "And now the body..."
-msgstr "Và giờ thì thi thể..."
+msgstr "Và giờ thì cái xác..."
 
 #. <CLT 3>真っ黒焦げ<CLT>だべ…！
 #. スーパーウェルダンだべ…！
 msgctxt "0091 | YASUHIRO HAGAKURE"
 msgid "It's <CLT 3>burnt to a crisp<CLT>! That's beyond well done, man!"
-msgstr ""
-"Nó đã <CLT 3>cháy đen hoàn toàn<CLT> rồi!\n"
-"Còn hơn cả chín kỹ nữa đấy!"
+msgstr "Nó đã <CLT 3>cháy đen thui<CLT> rồi! Còn hơn cả chín kỹ nữa đấy!"
 
 #. ちょっと、ステーキに例えないでよ…！
 #. 食べられなくなるじゃん…！
@@ -801,8 +799,8 @@ msgid ""
 "Don't compare it to a steak! I'll never be able to eat\n"
 "steak again..."
 msgstr ""
-"Đừng so sánh nó với bít tết chứ! Tớ sẽ không bao giờ\n"
-"ăn bít tết được nữa mất..."
+"Đừng so sánh nó với bít tết chứ! Tui sẽ không bao\n"
+"giờ ăn bít tết được nữa mất... "
 
 #. だけど、これじゃあ…
 #. もう本当にわからないね…
@@ -811,8 +809,8 @@ msgid ""
 "But now that the body's charred, I really have no\n"
 "idea..."
 msgstr ""
-"Nhưng giờ thi thể đã cháy thành than rồi, mình thật sự\n"
-"không biết nữa..."
+"Nhưng giờ thi thể đã cháy thành than rồi, tớ\n"
+"thật sự không biết nữa... "
 
 #. この死体が…誰なのか…
 msgctxt "0094 | MAKOTO NAEGI"
@@ -836,8 +834,8 @@ msgid ""
 "If we consider who's not here, that will quickly\n"
 "narrow down who it must be."
 msgstr ""
-"Nếu xét xem ai không có mặt ở đây,\n"
-"chúng ta sẽ nhanh chóng thu hẹp được khả năng."
+"Nếu xét xem ai không có mặt ở đây, chúng ta sẽ\n"
+"nhanh chóng thu hẹp được khả năng."
 
 #. ここにいない人間って…
 msgctxt "0098 | AOI ASAHINA"
@@ -893,12 +891,12 @@ msgstr "Bình tĩnh. Tôi chưa từng nói đó là Kyoko."
 #. けどよ、他に誰が…
 msgctxt "0105 | YASUHIRO HAGAKURE"
 msgid "But, I mean...who else...?"
-msgstr "Nhưng ý tôi là... còn ai khác nữa chứ...?"
+msgstr "Nhưng ý tớ là... còn ai khác nữa chứ...?"
 
 #. まだいるじゃないか…
 msgctxt "0106 | BYAKUYA TOGAMI"
 msgid "There *is* one other person."
-msgstr "Vẫn còn một người khác."
+msgstr "Vẫn *còn* một người khác."
 
 #. 黒幕だよ…！
 msgctxt "0107 | BYAKUYA TOGAMI"
@@ -922,8 +920,8 @@ msgid ""
 "Come on, there's no way! The MASTERMIND got\n"
 "char-broiled!? Get serious!"
 msgstr ""
-"Thôi nào, không thể nào! KẺ CHỦ MƯU bị\n"
-"nướng cháy sao!? Nghiêm túc đấy à!"
+"Thôi nào, không thể nào! KẺ CHỦ MƯU bị nướng\n"
+"cháy sao!? Nghiêm túc đấy à!"
 
 #. 確かに、普通であれば、
 #. 考えられない可能性かもしれん。
@@ -932,8 +930,8 @@ msgid ""
 "I agree, normally the idea wouldn't be worth\n"
 "considering."
 msgstr ""
-"Tôi đồng ý, bình thường thì ý tưởng này không đáng\n"
-"để cân nhắc."
+"Tôi đồng ý, bình thường thì ý tưởng này không\n"
+"đáng để cân nhắc."
 
 #. だが、俺達には思い当たる節があるはずだぞ。
 msgctxt "0112 | BYAKUYA TOGAMI"
@@ -947,8 +945,8 @@ msgid ""
 "The mastermind being dead would explain that other\n"
 "matter, wouldn't it?"
 msgstr ""
-"Nếu kẻ chủ mưu đã chết, điều đó sẽ giải thích được\n"
-"chuyện còn lại, đúng không?"
+"Nếu kẻ chủ mưu đã chết, điều đó sẽ giải thích\n"
+"được chuyện còn lại, đúng không?"
 
 #. モノクマが急に動かなくなった件だ…
 msgctxt "0114 | BYAKUYA TOGAMI"
@@ -956,8 +954,8 @@ msgid ""
 "Monokuma can hardly move around if its master is dead,\n"
 "right?"
 msgstr ""
-"Nếu chủ nhân của Monokuma đã chết, thì làm sao nó\n"
-"có thể tiếp tục hoạt động được chứ?"
+"Nếu chủ nhân của Monokuma đã chết, thì làm sao\n"
+"nó có thể tiếp tục hoạt động được?"
 
 #. だ、だけどよ！　あの死体は女なんだろ？
 #. だとすると、おかしくねーか？
@@ -972,7 +970,7 @@ msgstr ""
 #. だって、アルターエゴが言ってたべ？
 msgctxt "0116 | YASUHIRO HAGAKURE"
 msgid "I mean, remember what Alter Ego said?"
-msgstr "Ý tôi là, nhớ lời Alter Ego nói không?"
+msgstr "Ý tớ là, nhớ lời Alter Ego nói không?"
 
 #. つまり、すべてを仕組んだ黒幕は、
 #. その学園長って可能性が高いんだ。
@@ -1009,8 +1007,8 @@ msgid ""
 "He said the mastermind is some <CLT 3>middle-aged dude<CLT>,\n"
 "right? Which the corpse obviously isn't!"
 msgstr ""
-"Cậu ấy nói kẻ chủ mưu là một <CLT 3>người đàn ông\n"
-"trung niên<CLT> mà, đúng không? Rõ ràng thi thể này không phải!"
+"Cậu ấy nói kẻ chủ mưu là một <CLT 3>người đàn ông trung niên<CLT>\n"
+"mà, đúng không? Rõ ràng thi thể này không phải!"
 
 #. だったら…
 #. 黒幕は…学園長じゃなくて…
@@ -1025,12 +1023,14 @@ msgstr ""
 #. 霧切さんが言ってた…例の女子高校生…
 msgctxt "0122 | MAKOTO NAEGI"
 msgid "Is it the teenage girl Kyoko told me about?"
-msgstr "Có phải là cô gái trung học mà Kyoko đã kể cho mình không?"
+msgstr ""
+"Có phải là cô gái trung học mà Kyoko đã kể cho\n"
+"mình không?"
 
 #. 超高校級の絶望……
 msgctxt "0123 | MAKOTO NAEGI"
 msgid "The Ultimate Despair...?"
-msgstr "Tuyệt vọng cấp cao nhất...?"
+msgstr "Siêu Học Sinh Tuyệt Vọng...?"
 
 #. は…？
 msgctxt "0124 | YASUHIRO HAGAKURE"
@@ -1043,8 +1043,8 @@ msgid ""
 "Mukuro Ikusaba...the sixteenth student at Hope's\n"
 "Peak..."
 msgstr ""
-"Mukuro Ikusaba... học sinh thứ 16 của\n"
-"Học viện Hope's Peak..."
+"Mukuro Ikusaba... học sinh thứ 16 của Học viện\n"
+"Đỉnh Hy Vọng..."
 
 #. …なんの話だ？
 msgctxt "0126 | BYAKUYA TOGAMI"
@@ -1055,7 +1055,7 @@ msgstr "...Cậu đang nói chuyện gì vậy?"
 #. こっそり教えてもらったんだよ…
 msgctxt "0127 | MAKOTO NAEGI"
 msgid "The other day, Kyoko confided in me..."
-msgstr "Hôm trước, Kyoko đã bí mật kể cho mình..."
+msgstr "Hôm trước, Kyoko đã bí mật kể cho tớ... "
 
 #. この学園には…１６人目の高校生がいるって…
 msgctxt "0128 | MAKOTO NAEGI"
@@ -1063,8 +1063,8 @@ msgid ""
 "She said there was a sixteenth student here in the\n"
 "school."
 msgstr ""
-"Cô ấy nói rằng có một học sinh thứ 16 ở\n"
-"ngôi trường này."
+"Cô ấy nói rằng có một học sinh thứ 16 ở ngôi\n"
+"trường này."
 
 #. 詳しく話せ…
 msgctxt "0129 | BYAKUYA TOGAMI"
@@ -1074,7 +1074,7 @@ msgstr "Tôi nghĩ cậu nên kể cho chúng tôi mọi thứ cậu biết."
 #. え、えっと…霧切さんが言ってたのは…
 msgctxt "0130 | MAKOTO NAEGI"
 msgid "W-Well, all Kyoko told me was..."
-msgstr "À-Ừm... tất cả những gì Kyoko nói với mình là..."
+msgstr "À-Ừm... tất cả những gì Kyoko nói với tớ là... "
 
 #. 戦刃むくろ…
 msgctxt "0131 | KYOUKO KIRIGIRI"
@@ -1087,8 +1087,8 @@ msgid ""
 "The sixteenth student, lying hidden somewhere in this\n"
 "school..."
 msgstr ""
-"Học sinh thứ mười sáu, đang ẩn nấp đâu đó\n"
-"trong ngôi trường này..."
+"Học sinh thứ mười sáu, đang ẩn nấp đâu đó trong\n"
+"ngôi trường này..."
 
 #. “超高校級の絶望”と呼ばれる女子高校生…
 msgctxt "0133 | KYOUKO KIRIGIRI"
@@ -1106,18 +1106,14 @@ msgctxt "0135 | MAKOTO NAEGI"
 msgid ""
 "It sounded like Kyoko thinks <CLT 3>Mukuro Ikusaba<CLT> is the\n"
 "mastermind."
-msgstr ""
-"Có vẻ Kyoko cho rằng <CLT 3>Mukuro Ikusaba<CLT> chính là\n"
-"kẻ chủ mưu."
+msgstr "Có vẻ Kyoko cho rằng <CLT 3>Mukuro Ikusaba<CLT> chính là kẻ chủ mưu."
 
 #. いいえ…学園長は黒幕じゃないわ。
 msgctxt "0136 | KYOUKO KIRIGIRI"
 msgid ""
 "No...the headmaster isn't the mastermind, I'm sure of\n"
 "that."
-msgstr ""
-"Không... tôi chắc chắn hiệu trưởng không phải là\n"
-"kẻ chủ mưu."
+msgstr "Không... tớ chắc chắn hiệu trưởng không phải kẻ chủ mưu."
 
 #. え…？
 msgctxt "0137 | MAKOTO NAEGI"
@@ -1128,7 +1124,9 @@ msgstr "Cái gì...?"
 #. それは間違いない…
 msgctxt "0138 | KYOUKO KIRIGIRI"
 msgid "I don't have proof yet, but I have no doubt I'm right."
-msgstr "Tôi chưa có bằng chứng, nhưng tôi không nghi ngờ rằng mình đúng."
+msgstr ""
+"Tớ vẫn chưa có bằng chứng, nhưng tớ không nghi\n"
+"ngờ gì việc mình đúng."
 
 #. １６人目の高校生…女子高校生か…
 #. 確かに、死体の特徴とは一致するな。
@@ -1147,7 +1145,7 @@ msgid ""
 "And that phrase, <CLT 3>the Ultimate Despair<CLT>—it sounds\n"
 "super mastermind-y, doesn't it?"
 msgstr ""
-"Và cụm từ <CLT 3>Tuyệt vọng cấp cao nhất<CLT> đó nữa—nghe\n"
+"Và cụm từ <CLT 3>Siêu Học Sinh Tuyệt Vọng<CLT> đó nữa—nghe\n"
 "rất giống kẻ chủ mưu đúng không?"
 
 #. …つまり、黒幕は戦刃むくろって１６人目の高校生で、
@@ -1157,8 +1155,8 @@ msgid ""
 "Okay, so...the mastermind is this girl Mukuro? And\n"
 "she's a student here? And she's the Ultimate Despair?"
 msgstr ""
-"Vậy là... kẻ chủ mưu là cô gái Mukuro này? Và\n"
-"cô ấy là học sinh ở đây? Và cô ấy là Tuyệt vọng cấp cao nhất?"
+"Vậy là... kẻ chủ mưu là cô gái Mukuro này? Và cô ấy là\n"
+"học sinh ở đây? Và cô ấy là Siêu Học Sinh Tuyệt Vọng?"
 
 #. だけどよ、ツチノコみてーにずっと隠れてたそいつが、
 #. どーして…
@@ -1215,7 +1213,7 @@ msgstr "...Cái gì?"
 #. 腐川の事……
 msgctxt "0149 | AOI ASAHINA"
 msgid "A-Aren't we forgetting something? You know...Toko?"
-msgstr "C-Các cậu không quên gì chứ? Ý tớ là... Toko?"
+msgstr "C-Các cậu không quên gì chứ? Ý tui là... Toko?"
 
 #. あいつッ！　確か、ふっ飛ばされてたべ！
 msgctxt "0150 | YASUHIRO HAGAKURE"
@@ -1228,9 +1226,7 @@ msgctxt "0151 | BYAKUYA TOGAMI"
 msgid ""
 "Forget about her. I'm sure the explosion vaporized\n"
 "her."
-msgstr ""
-"Quên cô ta đi. Tôi chắc vụ nổ đã khiến cô ta\n"
-"bốc hơi rồi."
+msgstr "Quên cô ta đi. Tôi chắc vụ nổ đã khiến cô ta bốc hơi rồi."
 
 #. う…うぅ…ッ！
 msgctxt "0152 | TOUKO FUKAWA"
@@ -1251,7 +1247,7 @@ msgstr "Ồ... cô ta vẫn sống..."
 #. お、教えてください…白夜様…？
 msgctxt "0155 | TOUKO FUKAWA"
 msgid "Huh? What just h-happened...? Master...?"
-msgstr "Hả? Vừa rồi đã xảy ra chuyện gì...? Bạch Dạ-sama...?"
+msgstr "Hả? Vừa rồi đã xảy ra chuyện gì...? Chủ Nhân...?"
 
 #. 金輪際、酸素は吸わないと
 #. お前が高らかに宣言したところだ…
@@ -1270,13 +1266,13 @@ msgid ""
 "Oh. Then...I don't mind b-breathing in the carbon\n"
 "dioxide you exhale. That's enough for m-me to live..."
 msgstr ""
-"Ồ. Vậy thì... tôi không phiền nếu được hít thở khí\n"
-"carbon dioxide mà ngài thở ra. Chỉ cần vậy... tôi cũng có thể sống..."
+"Ồ. Vậy thì... tôi không phiền nếu được hít thở khí carbon\n"
+"dioxide mà ngài thở ra. Chỉ cần vậy... tôi cũng có thể sống..."
 
 #. 不思議なキャッチボールだべ…
 msgctxt "0158 | YASUHIRO HAGAKURE"
 msgid "This is the strangest back-and-forth I've ever seen..."
-msgstr "Đây là cuộc đối thoại kỳ lạ nhất mà tôi từng thấy..."
+msgstr "Đây là cuộc đối thoại kỳ lạ nhất mà tớ từng thấy... "
 
 #. <CLT 4>もう１度、死体を詳しく調べてみよう…
 #. <CLT>
@@ -1296,8 +1292,8 @@ msgid ""
 "Watch yourself, Makoto. She may be dead, but she's\n"
 "still a girl..."
 msgstr ""
-"Cẩn thận nhé, Makoto. Dù cô ấy đã chết, nhưng cô ấy\n"
-"vẫn là con gái..."
+"Cẩn thận nhé, Makoto. Dù cô ấy đã chết, nhưng cô\n"
+"ấy vẫn là con gái..."
 
 #. だ、大丈夫だよ。
 #. ボクだって…そんなに死体を触れる訳じゃないし…
