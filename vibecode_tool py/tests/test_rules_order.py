@@ -28,6 +28,21 @@ def test_rule_can_replace_two_or_more_spaces_with_one_space():
         assert sum(count for _rule, count, _before, _after in hits) >= 1
 
 
+
+def test_preset_replace_preserves_space_before_question_and_exclamation_marks():
+    entry = POEntry(
+        index=0,
+        msgctxt=None,
+        msgid="",
+        msgstr="Really ? Yes ! Already? Already!",
+    )
+    rule = make_rule(" ?; !", "?;!")
+
+    text, hits = apply_rules_to_entry(entry, [rule])
+
+    assert text == "Really? Yes! Already? Already!"
+    assert sum(count for _rule, count, _before, _after in hits) == 2
+
 def test_rules_run_strictly_top_to_bottom_and_cascade():
     entry = POEntry(index=0, msgctxt="0001 | MAKOTO", msgid="", msgstr="A")
     first = make_rule("A", "B")
@@ -107,3 +122,33 @@ def test_newline_only_preset_does_not_match_everywhere():
 
     assert text == "foo\nbar"
     assert hits == []
+
+
+def test_default_rules_are_grouped_for_readability_without_losing_space_punctuation_rule():
+    path = Path(__file__).resolve().parents[1] / "rules" / "mass_replace_rules.json"
+    rules = load_rules(path)
+
+    assert len(rules) == 15
+    grouped = next(rule for rule in rules if rule.notes == "Global cleanup & terminology")
+    assert "  " in grouped.find
+    assert " ?" in grouped.find
+    assert " !" in grouped.find
+
+    text, _hits = apply_rules_to_entry(
+        POEntry(index=0, msgctxt=None, msgid="", msgstr="Really  ? Yes !"),
+        [grouped],
+    )
+    assert text == "Really? Yes!"
+
+
+def test_create_rule_insert_index_is_directly_below_current_selection():
+    try:
+        from dr_po_toolkit.gui import _rule_insert_index_below_current
+    except ImportError:
+        return
+
+    assert _rule_insert_index_below_current(5, 0) == 1
+    assert _rule_insert_index_below_current(5, 2) == 3
+    assert _rule_insert_index_below_current(5, 4) == 5
+    assert _rule_insert_index_below_current(5, None) == 5
+    assert _rule_insert_index_below_current(0, None) == 0

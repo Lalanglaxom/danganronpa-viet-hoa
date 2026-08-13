@@ -105,6 +105,7 @@ Use `PO Viewer` for quick manual edits in one `.po` file.
 4. `Visual wrap` toggles display wrapping without changing the file.
 5. Four compact, editable wrap presets are available in Search, PO Viewer, and duplicate/diff views. Each Wrap button shows only its soft-cut value. Preset 1 starts at the base-64 values (`58/64`, 2 cuts), and all four presets can be edited in the Line Wrap tab. `All` wraps the whole current file with the active preset.
 6. `Preset Replace` applies every enabled rule from `Rules & Replace` to the selected rows, or the current row when nothing is selected. Search saves immediately; PO Viewer and duplicate/diff views keep their normal undo/save flow.
+   In `Rules & Replace`, named rules show a compact purpose + pair-count label for easier scanning. `Create Rule` inserts a new rule directly below the current rule (or at the end when nothing is selected).
 7. `Translafix from sources` uses the source list from the `Translafixer` tab. Selected rows are overwritten from matching source translations; if no rows are selected, empty translations are filled only.
 8. Red numbered `\n[1]`, `\n[2]` markers and the EN/VI line-count label show real line breaks. Search also shows live visible-character counts for each English and Vietnamese line. CLT color view preserves repeated spaces around hidden tags so double spaces remain visible.
 9. Click `Save` or press `Ctrl+S` to write the edited `.po` file. Search also supports `Ctrl+S` for the current result's file.

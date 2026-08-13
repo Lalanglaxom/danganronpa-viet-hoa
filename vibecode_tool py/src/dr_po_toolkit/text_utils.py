@@ -93,12 +93,21 @@ def split_semicolon_parts(text: str, *, keep_empty: bool = False) -> list[str]:
     return parts
 
 
-def search_replace_pairs(find_text: str, replace_text: str) -> list[tuple[str, str]]:
+def search_replace_pairs(
+    find_text: str,
+    replace_text: str,
+    *,
+    preserve_find_whitespace: bool = False,
+) -> list[tuple[str, str]]:
     """Return ordered find/replacement pairs split with semicolons.
 
-    Find pieces are stripped because they are criteria.  Replacement pieces are
-    kept verbatim except for shared ``\n``/``\r``/``\t`` shortcuts.  If fewer
-    replacements than find terms are provided, the last replacement is reused.
+    GUI find/replace keeps the historical behavior of trimming non-whitespace
+    criteria, so ``foo; bar`` means ``foo`` then ``bar``. Preset replacement
+    rules can opt into ``preserve_find_whitespace`` so intentional boundary
+    spaces such as ``" ?; !"`` remain part of the needles. Whitespace-only
+    needles are always kept exactly. Replacement pieces are kept verbatim
+    except for shared ``\n``/``\r``/``\t`` shortcuts. If fewer replacements
+    than find terms are provided, the last replacement is reused.
     """
     # Keep whitespace-only find terms verbatim so rules such as two spaces →
     # one space are valid.  Non-whitespace terms retain the historical trim
@@ -108,7 +117,10 @@ def search_replace_pairs(find_text: str, replace_text: str) -> list[tuple[str, s
     for part in split_semicolon_parts(find_text, keep_empty=True):
         if part == "":
             continue
-        needles.append(part if not part.strip() else part.strip())
+        if preserve_find_whitespace or not part.strip():
+            needles.append(part)
+        else:
+            needles.append(part.strip())
     if not needles:
         return []
     replacements = split_semicolon_parts(replace_text, keep_empty=True)

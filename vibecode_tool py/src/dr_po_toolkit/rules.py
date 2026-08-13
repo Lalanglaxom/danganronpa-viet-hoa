@@ -92,7 +92,7 @@ def load_rules(path: str | Path) -> list[ReplacementRule]:
             continue
         idx += 1
         rules.append(_rule_from_dict(item, idx))
-    return [rule for rule in rules if search_replace_pairs(rule.find, rule.replace)]
+    return [rule for rule in rules if search_replace_pairs(rule.find, rule.replace, preserve_find_whitespace=True)]
 
 
 def save_rules(path: str | Path, rules: Iterable[ReplacementRule]) -> None:
@@ -165,7 +165,7 @@ def _compile_find(find: str, whole_word: bool, case_sensitive: bool) -> re.Patte
 def _replace_pairs_in_plain_text(text: str, rule: ReplacementRule) -> tuple[str, int]:
     total = 0
     updated = text
-    for find, replace in search_replace_pairs(rule.find, rule.replace):
+    for find, replace in search_replace_pairs(rule.find, rule.replace, preserve_find_whitespace=True):
         pattern = _compile_find(find, rule.whole_word, rule.case_sensitive)
         updated, count = pattern.subn(lambda _match, value=replace: value, updated)
         total += count

@@ -19,17 +19,17 @@ msgstr "[nói chuyện]"
 #. ボクに話って…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "What do you want to talk about...?"
-msgstr "Cậu muốn nói chuyện gì với mình...?"
+msgstr "Cậu muốn nói chuyện gì với tớ... ?"
 
 #. お前の<CLT 3>アリバイ<CLT>を聞きたいんだ…
 msgctxt "0003 | BYAKUYA TOGAMI"
 msgid "I'd like to hear your <CLT 3>alibi<CLT>."
-msgstr "Tôi muốn nghe <CLT 3>lời khai ngoại phạm<CLT> của cậu."
+msgstr "Tôi muốn nghe <CLT 3>chứng cứ ngoại phạm<CLT> của cậu."
 
 #. ア、アリバイ…！？
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "A-Alibi!?"
-msgstr "L-Lời khai ngoại phạm!?"
+msgstr "C-Chứng cứ ngoại phạm!?"
 
 #. <CLT 3>昨日の夜時間以降<CLT>のアリバイだ。
 #. 言ってみろ…
@@ -39,13 +39,13 @@ msgid ""
 "nighttime began last night<CLT>."
 msgstr ""
 "Đúng vậy. Tôi muốn nghe cậu đã ở đâu <CLT 3>sau khi\n"
-"thời gian ban đêm bắt đầu vào tối qua<CLT>."
+"giờ ban đêm bắt đầu vào tối qua<CLT>."
 
 #. え、えっと…ボクは体調が悪くて…
 #. ずっと寝てたけど……
 msgctxt "0006 | MAKOTO NAEGI"
 msgid "U-Umm... Well I was sick, so I was asleep all night..."
-msgstr "U-Ừm... Mình bị ốm, nên đã ngủ suốt cả đêm..."
+msgstr "Ư-Ưm... Tớ bị ốm, nên đã ngủ suốt cả đêm... "
 
 #. …でも、なんで急にアリバイなんか？
 #. しかも夜時間以降って…
@@ -55,7 +55,7 @@ msgid ""
 "\"nighttime\" got to do with it...?"
 msgstr ""
 "Nhưng tại sao cậu lại hỏi chuyện đó lúc này? Và\n"
-"\"thời gian ban đêm\" thì có liên quan gì chứ...?"
+"\"giờ ban đêm\" thì có liên quan gì chứ... ?"
 
 #. 当然だ。この殺人は、
 #. <CLT 3>昨日の夜時間以降<CLT>に起きているからな。
@@ -64,8 +64,8 @@ msgid ""
 "Isn't it obvious? This murder took place <CLT 3>after\n"
 "nighttime<CLT>."
 msgstr ""
-"Không phải quá rõ ràng sao? Vụ giết người này xảy ra\n"
-"<CLT 3>sau thời gian ban đêm<CLT>."
+"Không phải quá rõ ràng sao? Vụ giết người này\n"
+"xảy ra <CLT 3>sau giờ ban đêm<CLT>."
 
 #. ど、どうして、そんな事がわかるの？
 msgctxt "0009 | MAKOTO NAEGI"
@@ -79,8 +79,8 @@ msgid ""
 "Because just after nighttime began, I came to the\n"
 "garden."
 msgstr ""
-"Vì ngay sau khi thời gian ban đêm bắt đầu hôm qua,\n"
-"tôi đã đến khu vườn."
+"Vì ngay sau khi giờ ban đêm bắt đầu hôm qua, tôi\n"
+"đã đến khu vườn."
 
 #. モノクマが動かなくなった件を伝える為、
 #. 他の連中を捜している最中にな…
@@ -99,8 +99,8 @@ msgid ""
 "Hiro's been spending most of his time in the garden\n"
 "the last few days, so I figured he'd be here."
 msgstr ""
-"Tôi đến đây để gọi Hagakure. Trong vài ngày qua,\n"
-"cậu ta cứ ở lì trong khu vườn này."
+"Tôi đến đây để gọi Hiro. Trong vài ngày qua, cậu\n"
+"ta cứ ở lì trong khu vườn này."
 
 #. その時、俺は確認している。
 #. この場所に<CLT 3>死体がなかった<CLT>事をな…
@@ -109,8 +109,8 @@ msgid ""
 "And I can confirm that when I arrived last night,\n"
 "<CLT 3>there was no body here<CLT>."
 msgstr ""
-"Và lúc đó tôi có thể xác nhận rằng\n"
-"<CLT 3>không có thi thể nào ở đây<CLT>."
+"Và lúc đó tôi có thể xác nhận rằng <CLT 3>không có thi\n"
+"thể nào ở đây<CLT>."
 
 #. つまり、殺人が行われたのはそれ以降…
 msgctxt "0014 | BYAKUYA TOGAMI"
@@ -124,8 +124,8 @@ msgid ""
 "...<CLT 3>at some point during nighttime<CLT>, *after* I left\n"
 "the garden!"
 msgstr ""
-"...<CLT 3>vào một thời điểm trong thời gian ban đêm<CLT>,\n"
-"*sau khi* tôi rời khỏi khu vườn!"
+"...<CLT 3>vào một thời điểm trong giờ ban đêm<CLT>, *sau khi* tôi\n"
+"rời khỏi khu vườn!"
 
 #. だがな…昨日の夜時間以降、
 #. 俺と葉隠と腐川と朝日奈はずっと体育館にいたんだ。
@@ -135,7 +135,7 @@ msgid ""
 "together the entire night last night."
 msgstr ""
 "Tuy nhiên... Toko, Hiro, Hina và tôi đã ở trong\n"
-"phòng thể dục suốt cả đêm hôm qua."
+"phòng thể chất suốt cả đêm hôm qua."
 
 #. え…？
 msgctxt "0017 | MAKOTO NAEGI"
@@ -149,8 +149,8 @@ msgid ""
 "Once I found Hiro in the garden, we immediately went\n"
 "to Toko and Hina's rooms to get them."
 msgstr ""
-"Sau khi gặp Hiro ở khu vườn, chúng tôi lập tức đến\n"
-"phòng của Toko và Hina để gọi họ."
+"Sau khi gặp Hiro ở khu vườn, chúng tôi lập tức\n"
+"đến phòng của Toko và Hina để gọi họ."
 
 #. それ以降、俺達４人は体育館で、
 #. モノクマの解体作業に取り掛かっていたんだよ。
@@ -159,8 +159,8 @@ msgid ""
 "At that point, we all went to the gym and began\n"
 "dismantling Monokuma."
 msgstr ""
-"Sau đó, cả bốn chúng tôi đến phòng thể dục và bắt đầu\n"
-"tháo dỡ Monokuma."
+"Sau đó, cả bốn chúng tôi đến phòng thể chất và\n"
+"bắt đầu tháo dỡ Monokuma."
 
 #. その間は警戒の為、単独行動を避けていた。
 #. トイレに行くのも２人で行ったほどだ。
@@ -169,8 +169,8 @@ msgid ""
 "As a precaution, we made sure not to go anywhere\n"
 "alone. We even went to the bathroom in pairs."
 msgstr ""
-"Để đề phòng, chúng tôi đảm bảo không đi đâu một mình.\n"
-"Ngay cả đi vệ sinh cũng đi theo cặp."
+"Để đề phòng, chúng tôi đảm bảo không đi đâu một\n"
+"mình. Ngay cả đi vệ sinh cũng đi theo cặp."
 
 #. つまり、<CLT 3>俺達４人にはアリバイがある<CLT>んだ。
 #. 完ぺきなアリバイがな…
@@ -179,18 +179,18 @@ msgid ""
 "In other words, all four of us have <CLT 3>air-tight\n"
 "alibis<CLT>."
 msgstr ""
-"Nói cách khác, cả bốn chúng tôi đều có <CLT 3>lời khai\n"
+"Nói cách khác, cả bốn chúng tôi đều có <CLT 3>chứng cứ\n"
 "ngoại phạm hoàn hảo<CLT>."
 
 #. 逆に、アリバイがないのは…
 msgctxt "0022 | BYAKUYA TOGAMI"
 msgid "The only ones who *don't* have alibis..."
-msgstr "Ngược lại, những người *không* có lời khai ngoại phạm..."
+msgstr "Ngược lại, những người *không* có chứng cứ ngoại phạm..."
 
 #. ボクと…霧切さんだけ…
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "...are me and Kyoko."
-msgstr "...là mình và Kyoko."
+msgstr "...là tớ và Kyoko."
 
 #. そして、あの死体が霧切だったとすると…
 msgctxt "0024 | BYAKUYA TOGAMI"
@@ -200,7 +200,9 @@ msgstr "Và nếu nạn nhân thật sự là Kyoko..."
 #. アリバイがないのは…ボクだけ…！
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "...then I'm the only one without an alibi...!"
-msgstr "...thì mình là người duy nhất không có lời khai ngoại phạm...!"
+msgstr ""
+"...thì tớ là người duy nhất không có chứng cứ\n"
+"ngoại phạm...!"
 
 #. それに、朝日奈と腐川を呼びに行った際、
 #. お前の部屋にも寄ったんだが…
@@ -219,8 +221,8 @@ msgid ""
 "But you never came to the door. So...where, precisely,\n"
 "were you?"
 msgstr ""
-"Nhưng cậu hoàn toàn không phản ứng. Vậy... chính xác\n"
-"thì cậu đã ở đâu?"
+"Nhưng cậu hoàn toàn không phản ứng. Vậy... chính\n"
+"xác thì cậu đã ở đâu?"
 
 #. ボクは…本当に部屋にいたよ…
 #. だけど寝てたんだ…体調が悪くて……
@@ -229,13 +231,13 @@ msgid ""
 "I'm telling the truth, I was in my room. But I was\n"
 "dead asleep. I had a fever, so..."
 msgstr ""
-"Mình đang nói sự thật, mình ở trong phòng. Nhưng mình\n"
-"ngủ say như chết. Vì mình bị sốt nên..."
+"Tớ đang nói sự thật, tớ ở trong phòng. Nhưng tớ\n"
+"ngủ say như chết. Vì tớ bị sốt nên..."
 
 #. それではアリバイにはならんな。
 msgctxt "0029 | BYAKUYA TOGAMI"
 msgid "That's hardly an alibi."
-msgstr "Như vậy khó có thể xem là lời khai ngoại phạm."
+msgstr "Như vậy khó có thể xem là chứng cứ ngoại phạm."
 
 #. そう…だよね…
 msgctxt "0030 | MAKOTO NAEGI"
@@ -248,8 +250,8 @@ msgid ""
 "So? What now? You seem to be at quite the disadvantage\n"
 "here..."
 msgstr ""
-"Vậy? Bây giờ cậu định làm gì? Có vẻ tình hình đang\n"
-"rất bất lợi cho cậu..."
+"Vậy? Bây giờ cậu định làm gì? Có vẻ tình hình\n"
+"đang rất bất lợi cho cậu..."
 
 #. <CLT 4>ボクだけにアリバイがないなんて…
 #. それって…
@@ -259,9 +261,8 @@ msgid ""
 "<CLT 4>I'm the only one without an alibi. That's...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ có mình là người không có lời khai ngoại phạm.\n"
-"Điều đó...\n"
-"<CLT>"
+"<CLT 4>Chỉ có mình là người không có chứng cứ ngoại phạm.\n"
+"Điều đó...<CLT>"
 
 #. <CLT 4>かなりマズくないか…？
 #. <CLT>
@@ -282,7 +283,7 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Lời Khai Của Byakuya<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"<CLT 23>\"<CLT><CLT 3>Lời Khai Của Byakuya<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
 "trong sổ học sinh của bạn.\n"
 "<CLT>"
 
@@ -319,17 +320,17 @@ msgstr "Đúng lúc lắm, Makoto. Tôi muốn <CLT 1>[nói chuyện]<CLT> với
 #. 完ぺきなアリバイがな…
 msgctxt "0038 | BYAKUYA TOGAMI"
 msgid "All four of us have <CLT 3>air-tight alibis<CLT>."
-msgstr "Cả bốn chúng tôi đều có <CLT 3>lời khai ngoại phạm hoàn hảo<CLT>."
+msgstr "Cả bốn chúng tôi đều có <CLT 3>chứng cứ ngoại phạm<CLT>."
 
 #. 逆に、アリバイがないのは…
 msgctxt "0039 | BYAKUYA TOGAMI"
 msgid "The only ones who *don't* have alibis..."
-msgstr "Những người *không* có lời khai ngoại phạm..."
+msgstr "Những người *không* có chứng cứ ngoại phạm... "
 
 #. ボクと…霧切さんだけ…
 msgctxt "0040 | MAKOTO NAEGI"
 msgid "...are me and Kyoko."
-msgstr "...là mình và Kyoko."
+msgstr "...là tớ và Kyoko."
 
 #. そして、あの死体が霧切だったとすると…
 msgctxt "0041 | BYAKUYA TOGAMI"
@@ -339,7 +340,9 @@ msgstr "Và nếu nạn nhân thật sự là Kyoko..."
 #. アリバイがないのは…ボクだけ…
 msgctxt "0042 | MAKOTO NAEGI"
 msgid "...then I'm the only one without an alibi...!"
-msgstr "...thì mình là người duy nhất không có lời khai ngoại phạm...!"
+msgstr ""
+"...thì tớ là người duy nhất không có chứng cứ\n"
+"ngoại phạm...!"
 
 #. …どうする？　状況はお前に不利なようだぞ。
 msgctxt "0043 | BYAKUYA TOGAMI"
@@ -347,8 +350,8 @@ msgid ""
 "So? What now? You seem to be at quite the disadvantage\n"
 "here..."
 msgstr ""
-"Vậy? Bây giờ cậu định làm gì? Có vẻ tình hình đang\n"
-"rất bất lợi cho cậu..."
+"Vậy? Bây giờ cậu định làm gì? Có vẻ tình hình\n"
+"đang rất bất lợi cho cậu..."
 
 #. <CLT 4>ボクだけにアリバイがないなんて…
 #. それって…
@@ -358,9 +361,8 @@ msgid ""
 "<CLT 4>I'm the only one without an alibi. That's...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chỉ có mình là người không có lời khai ngoại phạm.\n"
-"Điều đó...\n"
-"<CLT>"
+"<CLT 4>Chỉ có mình là người không có chứng cứ ngoại phạm.\n"
+"Điều đó...<CLT>"
 
 #. <CLT 4>かなりマズくないか…？
 #. <CLT>
@@ -384,8 +386,8 @@ msgid ""
 "If you do come up with an alibi, I'd be happy to hear\n"
 "it. Later. At the class trial."
 msgstr ""
-"Nếu cậu tìm ra được lời khai ngoại phạm, tôi sẽ rất\n"
-"vui lòng lắng nghe. Sau này. Trong phiên tòa lớp."
+"Nếu cậu tìm ra được chứng cứ ngoại phạm, tôi sẽ rất\n"
+"vui lòng lắng nghe. Sau này. Trong lớp xét xử."
 
 #. いや、そうじゃなくて…
 msgctxt "0048 | MAKOTO NAEGI"
@@ -399,8 +401,8 @@ msgid ""
 "You have the key to Kyoko's room, right? I was hoping\n"
 "I could borrow it..."
 msgstr ""
-"Cậu có chìa khóa phòng của Kyoko đúng không? Mình\n"
-"muốn mượn nó..."
+"Cậu có chìa khóa phòng của Kyoko đúng không?\n"
+"Tớ muốn mượn nó... "
 
 #. ………………
 msgctxt "0050 | BYAKUYA TOGAMI"
@@ -422,14 +424,12 @@ msgctxt "0052 | BYAKUYA TOGAMI"
 msgid ""
 "Of course, if I were to go with you, that would be a\n"
 "different story."
-msgstr ""
-"Tất nhiên, nếu tôi đi cùng cậu thì đó lại là chuyện\n"
-"khác."
+msgstr "Tất nhiên, nếu tôi đi cùng cậu thì đó lại là chuyện khác."
 
 #. …付いて来てくれるの？
 msgctxt "0053 | MAKOTO NAEGI"
 msgid "Then...*will* you go with me?"
-msgstr "Vậy... *cậu* sẽ đi cùng mình sao?"
+msgstr "Vậy... *cậu* sẽ đi cùng tớ sao?"
 
 #. だが、俺は調べる事が他にもある。
 #. <CLT 3>後でまた声を掛けろ<CLT>…
@@ -438,14 +438,16 @@ msgid ""
 "Sorry, I have my own agenda to take care of. <CLT 3>Find me\n"
 "again later<CLT> and we'll see."
 msgstr ""
-"Xin lỗi, tôi còn việc riêng cần giải quyết. <CLT 3>Sau\n"
-"này hãy tìm tôi lại<CLT> rồi chúng ta sẽ xem."
+"Xin lỗi, tôi còn việc riêng cần giải quyết. <CLT 3>Sau này\n"
+"hãy tìm tôi lại<CLT> rồi chúng ta sẽ xem."
 
 #. その時の機嫌次第では、
 #. 連れて行ってやるかもしれん…
 msgctxt "0055 | BYAKUYA TOGAMI"
 msgid "Depending on my mood, I may go with you. Or I may not."
-msgstr "Tùy vào tâm trạng của tôi, có thể tôi sẽ đi cùng cậu. Hoặc không."
+msgstr ""
+"Tùy vào tâm trạng của tôi, có thể tôi sẽ đi cùng\n"
+"cậu. Hoặc không."
 
 #. <CLT 4>後で…か…
 #. <CLT>
@@ -466,8 +468,7 @@ msgid ""
 "somewhere else.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy trong lúc đó, mình nên đi điều tra nơi khác\n"
-"trước.\n"
+"<CLT 4>Vậy trong lúc đó, mình nên đi điều tra nơi khác trước.\n"
 "<CLT>"
 
 #. <CLT 4>あの場所の…捜査を…
@@ -483,7 +484,7 @@ msgstr ""
 #. 十神クン、そろそろ行けるかな？
 msgctxt "0059 | MAKOTO NAEGI"
 msgid "You think you can go soon, Byakuya?"
-msgstr "Togami, giờ cậu có thể đi được chưa?"
+msgstr "Byakuya, giờ cậu có thể đi được chưa?"
 
 #. 霧切の部屋だったな。
 #. では、行くぞ…
@@ -492,13 +493,13 @@ msgid ""
 "You wanted to check out Kyoko's room, right? Very\n"
 "well. Let's go."
 msgstr ""
-"Cậu muốn kiểm tra phòng của Kyoko đúng không? Được\n"
-"thôi. Đi nào."
+"Cậu muốn kiểm tra phòng của Kyoko đúng không?\n"
+"Được thôi. Đi nào."
 
 #. あ！　待ってよ、十神クン！
 msgctxt "0061 | MAKOTO NAEGI"
 msgid "Ah! Wait for me!"
-msgstr "À! Chờ mình với!"
+msgstr "À! Chờ tớ với!"
 
 #. <CLT 4>さっさと歩き出してしまった十神クンを追って、
 #. ボクも寄宿舎へと急いだ。
@@ -509,7 +510,7 @@ msgid ""
 "hurried after him on our way to the dorms.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Togami đã bước đi mà không ngoảnh lại, và mình\n"
+"<CLT 4>Byakuya đã bước đi mà không ngoảnh lại, và mình\n"
 "vội vàng đuổi theo cậu ấy đến khu ký túc xá.\n"
 "<CLT>"
 
@@ -540,13 +541,13 @@ msgid ""
 "Do you remember how the body looked, y'know...before\n"
 "it blew up?"
 msgstr ""
-"Cậu có nhớ thi thể đó trông như thế nào... trước khi\n"
-"nó phát nổ không?"
+"Cậu có nhớ thi thể đó trông như thế nào... trước\n"
+"khi nó phát nổ không?"
 
 #. えっと…確か……
 msgctxt "0067 | MAKOTO NAEGI"
 msgid "Umm...if I remember right..."
-msgstr "Ừm... nếu mình nhớ đúng thì..."
+msgstr "Ừm... nếu tớ nhớ đúng thì... "
 
 #. 顔に覆面を被ってて…
 #. 体は白衣に覆われてたよね…
@@ -575,8 +576,8 @@ msgid ""
 "Apparently, the wound had stopped bleeding, but the\n"
 "blood on the body was still wet."
 msgstr ""
-"Có vẻ vết thương đã ngừng chảy máu, nhưng máu trên\n"
-"cơ thể vẫn còn ướt."
+"Có vẻ vết thương đã ngừng chảy máu, nhưng máu\n"
+"trên cơ thể vẫn còn ướt."
 
 #. 触ると汚れる危険性があるって、
 #. 十神クンも言ってたし…
@@ -585,8 +586,8 @@ msgid ""
 "Byakuya said not to touch it to avoid getting all\n"
 "bloody..."
 msgstr ""
-"Togami cũng nói không được chạm vào để tránh bị dính\n"
-"máu..."
+"Byakuya cũng nói không được chạm vào để tránh bị\n"
+"dính máu..."
 
 #. ただ、血の量の割には、
 #. 周辺の床に血痕とかは見当たらなかったんだよね…
@@ -595,8 +596,8 @@ msgid ""
 "But for how much blood there was on the body...I\n"
 "didn't see any on the ground around it."
 msgstr ""
-"Nhưng so với lượng máu trên cơ thể... mình không thấy\n"
-"có vết máu nào trên mặt đất xung quanh."
+"Nhưng so với lượng máu trên cơ thể... tớ không thấy có\n"
+"vết máu nào trên mặt đất xung quanh."
 
 #. なるほどね！　助かったよ！
 #. 苗木のお陰で思い出せた！
@@ -606,7 +607,7 @@ msgid ""
 "explained it, I totally remember how it looked!"
 msgstr ""
 "Tuyệt quá, cảm ơn cậu! Giúp ích rất nhiều đấy. Sau\n"
-"khi cậu giải thích, mình nhớ ra hoàn toàn rồi!"
+"khi cậu giải thích, tui nhớ ra hoàn toàn rồi!"
 
 #. でも、ボクも朝日奈さんに説明したお陰で、
 #. あの時の状況を思い出す事が出来たし…
@@ -615,8 +616,8 @@ msgid ""
 "Well, having to talk about it like that helped me\n"
 "remember it a lot better, too."
 msgstr ""
-"Nhưng nhờ nói chuyện với Asahina như vậy, mình cũng\n"
-"có thể nhớ lại tình hình lúc đó rõ hơn..."
+"Nhưng nhờ nói chuyện với Hina như vậy, tớ cũng\n"
+"có thể nhớ lại tình hình lúc đó rõ hơn... "
 
 #. …お互い様だよ。
 msgctxt "0075 | MAKOTO NAEGI"
@@ -632,8 +633,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Thi thể trước vụ nổ<CLT><CLT 23>\" đã được thêm vào mục\n"
-"Đạn sự thật trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Thi Thể Trước Vụ Nổ<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. あの死体、爆破される前は…
@@ -668,8 +669,8 @@ msgid ""
 "Apparently, the wound had stopped bleeding, but the\n"
 "blood on the body was still wet."
 msgstr ""
-"Có vẻ vết thương đã ngừng chảy máu, nhưng máu trên\n"
-"cơ thể vẫn còn ướt."
+"Có vẻ vết thương đã ngừng chảy máu, nhưng máu\n"
+"trên cơ thể vẫn còn ướt."
 
 #. ただ、血の量の割には、
 #. 周りの床に血痕とかは見当たらなかった、と…
@@ -678,7 +679,7 @@ msgid ""
 "But for how much blood there was on the body...I\n"
 "didn't see any on the ground around it."
 msgstr ""
-"Nhưng so với lượng máu trên cơ thể... mình không thấy\n"
+"Nhưng so với lượng máu trên cơ thể... tui không thấy\n"
 "có vết máu nào trên mặt đất xung quanh."
 
 #. 助かったよ！
@@ -688,8 +689,8 @@ msgid ""
 "That was a big help. Now that you explained it, I\n"
 "totally remember how it looked!"
 msgstr ""
-"Giúp ích rất nhiều đấy. Sau khi cậu giải thích, mình\n"
-"nhớ ra hoàn toàn rồi!"
+"Giúp ích rất nhiều đấy. Sau khi cậu giải thích,\n"
+"tui nhớ ra hoàn toàn rồi!"
 
 #. でも、ボクも朝日奈さんに説明したお陰で、
 #. あの時の状況を思い出す事が出来たし…
@@ -698,8 +699,8 @@ msgid ""
 "Well, having to talk about it like that helped me\n"
 "remember it a lot better, too."
 msgstr ""
-"Nhưng nhờ nói chuyện với Asahina như vậy, mình cũng\n"
-"có thể nhớ lại tình hình lúc đó rõ hơn..."
+"Nhưng nhờ nói chuyện với Hina như vậy, tớ cũng\n"
+"có thể nhớ lại tình hình lúc đó rõ hơn... "
 
 #. …お互い様だよ。
 msgctxt "0084 | MAKOTO NAEGI"
@@ -723,8 +724,8 @@ msgid ""
 "Oh, well I was just thinking about when we first found\n"
 "the body..."
 msgstr ""
-"À, tôi chỉ đang nghĩ xem lúc chúng ta phát hiện ra\n"
-"thi thể lần đầu là khoảng mấy giờ thôi..."
+"À, tớ chỉ đang nghĩ xem lúc chúng ta phát hiện ra\n"
+"thi thể lần đầu là khoảng mấy giờ thôi... "
 
 #. <CLT 3>死体の発見時刻<CLT>か…
 msgctxt "0088 | MAKOTO NAEGI"
@@ -766,8 +767,8 @@ msgid ""
 "around <CLT><CLT 3>7:30<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khi đến đó, mình gặp Asahina. Lúc đó chắc là\n"
-"vào khoảng <CLT><CLT 3>7 giờ 30<CLT><CLT 4>.\n"
+"<CLT 4>Khi đến đó, mình gặp Hina. Lúc đó chắc là vào\n"
+"khoảng <CLT><CLT 3>7 giờ 30<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. <CLT 4>その後、みんなが集まってる体育館に行って、
@@ -779,7 +780,7 @@ msgid ""
 "waiting.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sau đó mình đến phòng thể dục, nơi mọi người\n"
+"<CLT 4>Sau đó mình đến phòng thể chất, nơi mọi người\n"
 "đang chờ.\n"
 "<CLT>"
 
@@ -809,7 +810,7 @@ msgstr ""
 #. ところで腐川、今は何時だ？
 msgctxt "0095 | BYAKUYA TOGAMI"
 msgid "Now then... Toko, what time is it?"
-msgstr "Vậy, Toko... bây giờ là mấy giờ?"
+msgstr "Vậy, Toko... lúc đó là mấy giờ?"
 
 #. えーと…さっき体育館を出る時…９時前だったので…
 #. い、今は…９時ちょうどくらいかと…
@@ -818,8 +819,8 @@ msgid ""
 "W-Well, when we left the gym, it was j-just before 9\n"
 "o'clock. So it's probably 9 on the d-dot now..."
 msgstr ""
-"Ư-Ừm... lúc chúng ta rời phòng thể dục là ngay\n"
-"trước 9 giờ. V-Vậy nên bây giờ chắc là... đúng 9 giờ..."
+"Ư-Ưm... lúc chúng ta rời phòng thể chất là ngay trước 9 giờ.\n"
+"V-Vậy nên lúc đó chắc là... đúng 9 giờ... "
 
 #. そうだ…<CLT 3>９時くらい<CLT>だったはずだよ！
 msgctxt "0097 | MAKOTO NAEGI"
@@ -831,7 +832,7 @@ msgstr "Đúng rồi...! Chắc chắn là <CLT 3>khoảng đúng 9 giờ<CLT>!"
 #. あぁ、そう言やそうかも！
 msgctxt "0098 | YASUHIRO HAGAKURE"
 msgid "Ah! Now that you mention it, I think you're right!"
-msgstr "À! Giờ cậu nhắc thì tôi cũng nghĩ là đúng!"
+msgstr "À! Giờ cậu nhắc thì tớ cũng nghĩ là đúng!"
 
 #. つまり、<CLT 3>死体発見時刻は９時<CLT>って事でよさそうだな。
 #. よし、これで俺の役目は終わりだ。
@@ -840,8 +841,8 @@ msgid ""
 "So I think we can say for sure that <CLT 3>the body was\n"
 "found at 9 a.m.<CLT> Okay, my job's done!"
 msgstr ""
-"Vậy có thể chắc chắn rằng <CLT 3>thi thể được phát hiện\n"
-"lúc 9 giờ sáng<CLT>. Được rồi, phần việc của tôi xong rồi!"
+"Vậy có thể chắc chắn rằng <CLT 3>thi thể được phát hiện lúc 9\n"
+"giờ sáng<CLT>. Được rồi, phần việc của tớ xong rồi!"
 
 #. <CLT 4>少ないな…葉隠クンの役目…
 #. <CLT>
@@ -850,7 +851,7 @@ msgid ""
 "<CLT 4>That's...a pretty small job.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phần việc của Hagakure-kun... ít thật đấy.\n"
+"<CLT 4>Phần việc đó... ít thật đấy.\n"
 "<CLT>"
 
 #. <CLT 23><CLT><CLT 3>事件の時間経過<CLT><CLT 23>を手帳に記録しました。
@@ -862,8 +863,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Thời gian xảy ra vụ án<CLT><CLT 23>\" đã được thêm vào mục\n"
-"Đạn sự thật trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Thời Gian Phát Hiện Thi Thể<CLT><CLT 23>\" đã được thêm vào mục\n"
+"Đạn Luận Điểm trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. 死体発見時刻は<CLT 3>９時<CLT>って事でよさそうだな。
@@ -873,8 +874,8 @@ msgid ""
 "I think we can say for sure that the body was found at\n"
 "<CLT 3>9 a.m.<CLT> Okay, my job's done!"
 msgstr ""
-"Tôi nghĩ có thể chắc chắn rằng thi thể được phát hiện\n"
-"vào <CLT 3>9 giờ sáng<CLT>. Được rồi, phần việc của tôi xong rồi!"
+"Tớ nghĩ có thể chắc chắn rằng thi thể được phát hiện\n"
+"vào <CLT 3>9 giờ sáng<CLT>. Được rồi, phần việc của tớ xong rồi!"
 
 #. <CLT 4>少ないな…葉隠クンの役目…
 #. <CLT>
@@ -883,7 +884,7 @@ msgid ""
 "<CLT 4>That's...a pretty small job.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Phần việc của Hagakure-kun... ít thật đấy.\n"
+"<CLT 4>Phần việc đó... ít thật đấy.\n"
 "<CLT>"
 
 #. モノクマフラワーか…
@@ -900,8 +901,8 @@ msgid ""
 "people?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy, nhựa, và con\n"
-"người luôn sao?\n"
+"<CLT 4>Có thật không...? Nó thực sự ăn được cả giấy,\n"
+"nhựa, và con người luôn sao?\n"
 "<CLT>"
 
 #. <CLT 4>とにかく…事件には関係なさそうだし
@@ -937,8 +938,7 @@ msgid ""
 "coop.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là chuồng gà. Mình nhớ bên trong có vài con\n"
-"gà.\n"
+"<CLT 4>Đây là chuồng gà. Mình nhớ bên trong có vài con gà.\n"
 "<CLT>"
 
 #. <CLT 4>ニワトリが４羽…
@@ -1023,7 +1023,7 @@ msgid ""
 "I was down here just before nighttime last night, and\n"
 "there were definitely five chickens then."
 msgstr ""
-"Tối qua trước giờ ban đêm, tôi có xuống đây xem,\n"
+"Tối qua trước giờ ban đêm, tớ có xuống đây xem,\n"
 "lúc đó chắc chắn vẫn đủ năm con gà."
 
 #. どーすんだ！　５が４になるなんて、
@@ -1033,8 +1033,8 @@ msgid ""
 "What are we gonna do!? Going from five to four is\n"
 "gonna have an impact on the structure of the world!"
 msgstr ""
-"Chúng ta phải làm sao đây!? Việc từ năm con giảm\n"
-"xuống bốn con sẽ ảnh hưởng đến cấu trúc của thế giới đấy!"
+"Chúng ta phải làm sao đây!? Việc từ năm con giảm xuống\n"
+"bốn con sẽ ảnh hưởng đến cấu trúc của thế giới đấy!"
 
 #. ジグソーパズルで考えてみりゃ、わかる！
 #. １つ足りないだけでも世界は未完成のままだべ！
@@ -1054,8 +1054,8 @@ msgid ""
 "at hand...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình cố gắng phớt lờ Hiro và tập trung vào vấn đề\n"
-"trước mắt...\n"
+"<CLT 4>Mình cố gắng phớt lờ Hiro và tập trung vào vấn\n"
+"đề trước mắt...\n"
 "<CLT>"
 
 #. <CLT 4>ニワトリが減った理由か…
@@ -1080,8 +1080,8 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Những con gà trong chuồng gà<CLT><CLT 23>\" đã được thêm vào mục\n"
-"Đạn sự thật trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Những Con Gà Trong Chuồng<CLT><CLT 23>\" đã được thêm vào mục\n"
+"Đạn Luận Điểm trong sổ tay của bạn.\n"
 "<CLT>"
 
 #. ニワトリが<CLT 3>４羽<CLT>に減っている…
@@ -1106,7 +1106,7 @@ msgid ""
 "I was down here just before nighttime last night, and\n"
 "there were definitely five chickens then."
 msgstr ""
-"Tối qua trước giờ ban đêm, tôi có xuống đây xem,\n"
+"Tối qua trước giờ ban đêm, tớ có xuống đây xem,\n"
 "lúc đó chắc chắn vẫn đủ năm con gà."
 
 #. <CLT 4>ニワトリが減った理由か…
@@ -1142,8 +1142,8 @@ msgid ""
 "Monokuma said the time positively couldn't be changed.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó được cài đặt để hoạt động lúc 7 giờ 30 mỗi sáng.\n"
-"Và Monokuma nói thời gian này chắc chắn không thể thay đổi.\n"
+"<CLT 4>Nó được cài đặt để hoạt động lúc 7 giờ 30 mỗi sáng. Và\n"
+"Monokuma nói thời gian này chắc chắn không thể thay đổi.\n"
 "<CLT>"
 
 #. あれ…待てよ…
@@ -1160,8 +1160,8 @@ msgid ""
 "right...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy hệ thống phun nước hoạt động lúc 7 giờ 30 mỗi\n"
-"sáng đúng không...?\n"
+"<CLT 4>Vậy hệ thống phun nước hoạt động lúc 7 giờ 30\n"
+"mỗi sáng đúng không...?\n"
 "<CLT>"
 
 #. <CLT 4>死体が、朝７時３０分よりも前にここにあったなら、
@@ -1173,8 +1173,8 @@ msgid ""
 "sprinklers should have gotten it wet<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy... nếu thi thể đã ở đây trước thời điểm đó,\n"
-"<CLT><CLT 3>thi thể đáng lẽ đã bị ướt bởi hệ thống phun nước<CLT><CLT 4>.\n"
+"<CLT 4>Vậy... nếu thi thể đã ở đây trước thời điểm đó, <CLT><CLT 3>thi thể\n"
+"đáng lẽ đã bị ướt bởi mấy cái vòi nước<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. じゃあ…殺人が起きた時間帯って…
@@ -1191,7 +1191,7 @@ msgid ""
 "section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Hệ thống phun nước<CLT><CLT 23>\" đã được thêm vào mục Đạn sự thật\n"
+"<CLT 23>\"<CLT><CLT 3>Hệ Thống Vòi Nước<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
 "trong sổ tay của bạn.\n"
 "<CLT>"
 
@@ -1214,8 +1214,8 @@ msgid ""
 "Monokuma said the time positively couldn't be changed.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó được cài đặt để hoạt động lúc 7 giờ 30 mỗi sáng.\n"
-"Và Monokuma nói thời gian này chắc chắn không thể thay đổi.\n"
+"<CLT 4>Nó được cài đặt để hoạt động lúc 7 giờ 30 mỗi sáng. Và\n"
+"Monokuma nói thời gian này chắc chắn không thể thay đổi.\n"
 "<CLT>"
 
 #. <CLT 4>でも、スプリンクラーが
@@ -1240,8 +1240,8 @@ msgid ""
 "would have gotten it wet<CLT><CLT 4>.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu thi thể đã ở đây trước thời điểm đó,\n"
-"<CLT><CLT 3>thi thể đáng lẽ đã bị hệ thống phun nước làm ướt<CLT><CLT 4>.\n"
+"<CLT 4>Vậy... nếu thi thể đã ở đây trước thời điểm đó, <CLT><CLT 3>thi thể\n"
+"đáng lẽ đã bị ướt bởi mấy cái vòi nước<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. じゃあ…殺人が起きた時間帯って…
@@ -1283,8 +1283,7 @@ msgid ""
 "not.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...có lẽ mình sẽ biết chắc đó có phải là Kyoko\n"
-"hay không.\n"
+"<CLT 4>...có lẽ mình sẽ biết chắc đó có phải là Kyoko hay không.\n"
 "<CLT>"
 
 #. <CLT 4>これは…何かの破片みたいだけど…
@@ -1305,8 +1304,8 @@ msgid ""
 "<CLT 4>They're all burnt, so I can't really be sure, but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng đều bị cháy xém, nên mình không thể chắc chắn,\n"
-"nhưng...\n"
+"<CLT 4>Chúng đều bị cháy xém, nên mình không thể chắc\n"
+"chắn, nhưng...\n"
 "<CLT>"
 
 #. <CLT 4>どこかで見覚えがあるような…
@@ -1333,7 +1332,7 @@ msgstr ""
 #. …もしかして、<CLT 3>あの場所<CLT>か！？
 msgctxt "0151 | MAKOTO NAEGI"
 msgid "Wait, was it...<CLT 3>there<CLT>!?"
-msgstr "Khoan, có phải là...<CLT 3>nơi đó<CLT> không!?"
+msgstr "Khoan, có phải là... <CLT 3>nơi đó<CLT> không!?"
 
 #. <CLT 4>…後で、確認しに行ってみた方が
 #. いいかもしれない…
@@ -1355,8 +1354,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Mảnh vỡ gần thi thể<CLT><CLT 23>\" đã được thêm vào mục Đạn sự thật\n"
-"trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Mảnh Vỡ Gần Thi Thể<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. <CLT 4>死体付近に散らばってる破片…
@@ -1377,8 +1376,8 @@ msgid ""
 "<CLT 4>They're all burnt, so I can't really be sure, but...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng đều bị cháy xém, nên mình không thể chắc chắn,\n"
-"nhưng...\n"
+"<CLT 4>Chúng đều bị cháy xém, nên mình không thể chắc\n"
+"chắn, nhưng...\n"
 "<CLT>"
 
 #. <CLT 4>ボクは、これと同じ物を<CLT><CLT 3>あの場所<CLT><CLT 4>で見たんだ。
@@ -1388,8 +1387,7 @@ msgid ""
 "<CLT 4>I saw something a lot like them <CLT><CLT 3>somewhere else<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình đã thấy thứ gì đó rất giống chúng <CLT><CLT 3>ở một\n"
-"nơi khác<CLT><CLT 4>...\n"
+"<CLT 4>Mình đã thấy thứ gì đó rất giống chúng <CLT><CLT 3>ở một nơi khác<CLT><CLT 4>...\n"
 "<CLT>"
 
 #. <CLT 4>ナイフが…落ちてるな…
@@ -1434,8 +1432,7 @@ msgid ""
 "here...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Sức mạnh của vụ nổ chắc đã khiến nó bị văng đến\n"
-"đây...\n"
+"<CLT 4>Sức mạnh của vụ nổ chắc đã khiến nó bị văng đến đây...\n"
 "<CLT>"
 
 #. <CLT 4>確か、モノクマファイルによると、
@@ -1447,8 +1444,8 @@ msgid ""
 "through the body, from front to back.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Theo Monokuma File, vết dao xuyên qua toàn bộ cơ thể,\n"
-"từ phía trước ra phía sau.\n"
+"<CLT 4>Theo Hồ Sơ Monokuma, vết dao xuyên qua toàn bộ\n"
+"cơ thể, từ phía trước ra phía sau.\n"
 "<CLT>"
 
 #. <CLT 4>…という事は、このナイフが<CLT><CLT 3>致命傷<CLT><CLT 4>なのか？
@@ -1460,7 +1457,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Vậy có nghĩa là con dao này chính là thứ gây ra\n"
-"<CLT><CLT 3>vết thương chí mạng<CLT><CLT 4>...?\n"
+"<CLT><CLT 3>vết thương trí mạng<CLT><CLT 4>...?\n"
 "<CLT>"
 
 #. <CLT 4>………………
@@ -1500,7 +1497,7 @@ msgid ""
 "<CLT 4>Wait, is this...!?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Khoan, có phải đây là...!?\n"
+"<CLT 4>Khoan, có phải là...!?\n"
 "<CLT>"
 
 #. <CLT 4>そうだ…！
@@ -1558,7 +1555,7 @@ msgid ""
 "<CLT>"
 msgstr ""
 "<CLT 4>Người đeo mặt nạ đã tấn công mình tối qua...\n"
-"Họ đã cầm con dao đó...\n"
+"Hắn đã cầm con dao đó...\n"
 "<CLT>"
 
 #. <CLT 4>そして、ここで覆面の人物の腹部に刺さっていたのも、
@@ -1617,7 +1614,7 @@ msgstr "..."
 #. 霧切さんだったとすると…
 msgctxt "0178 | MAKOTO NAEGI"
 msgid "<CLT 4>And if this really is Kyoko..."
-msgstr "<CLT 4>Và nếu người này thật sự là Kyoko..."
+msgstr "<CLT 4>Và nếu đây thật sự là Kyoko..."
 
 #. <CLT 4>ボクを襲った覆面の人物も、
 #. 霧切さんって事になるはずだけど…
@@ -1654,8 +1651,8 @@ msgid ""
 "from last night...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không biết. Mình không nhớ rõ bất cứ điều gì\n"
-"về đêm hôm qua...\n"
+"<CLT 4>Mình không biết. Mình không nhớ rõ bất cứ điều\n"
+"gì về đêm hôm qua...\n"
 "<CLT>"
 
 #. <CLT 4>でも、まさか…
@@ -1678,8 +1675,8 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Con dao tại hiện trường vụ án<CLT><CLT 23>\" đã được thêm vào mục\n"
-"Đạn sự thật trong sổ tay của bạn.\n"
+"<CLT 23>\"<CLT><CLT 3>Con Dao Ở Hiện Trường<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
+"trong sổ học sinh của bạn.\n"
 "<CLT>"
 
 #. <CLT 4>この覆面の人が刺されていた理由は…

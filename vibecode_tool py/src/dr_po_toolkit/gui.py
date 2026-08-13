@@ -136,6 +136,7 @@ from .text_utils import (
     apply_search_replace_sequence,
     compile_search_replace_sequence,
     html_escape_preserve_spacing,
+    search_replace_pairs,
     user_multiline_text,
     visible_character_counts_by_line,
 )
@@ -452,6 +453,13 @@ def _shortcut_digit_from_key(key: int) -> int | None:
     if first <= value <= last:
         return value - first
     return None
+
+
+def _rule_insert_index_below_current(rule_count: int, current_index: int | None) -> int:
+    """Return the insertion row for Create Rule: directly below current, else at end."""
+    if current_index is None or current_index < 0 or current_index >= rule_count:
+        return rule_count
+    return current_index + 1
 
 
 def _shortcut_focus_is_inside(root: QWidget) -> bool:
@@ -2202,7 +2210,8 @@ class ToolkitGUI(QMainWindow):
         rule_list.setDropIndicatorShown(True)
         left_layout.addWidget(rule_list, 1)
         rule_buttons = QGridLayout()
-        add_btn = self._button("Add Rule")
+        add_btn = self._button("Create Rule")
+        add_btn.setToolTip("Create a new rule directly below the currently selected rule.")
         delete_btn = self._button("Delete", secondary=True)
         enable_btn = self._button("Enable Selected", secondary=True)
         disable_btn = self._button("Disable Selected", secondary=True)
@@ -2289,13 +2298,25 @@ class ToolkitGUI(QMainWindow):
         def label_for_rule(rule: dict) -> str:
             state = "ON " if rule.get("enabled", True) else "OFF"
             speaker_text = str(rule.get("speaker") or "GLOBAL")
+            notes_text = str(rule.get("notes") or "").strip()
+            pairs = search_replace_pairs(
+                str(rule.get("find") or ""),
+                str(rule.get("replace") or ""),
+                preserve_find_whitespace=True,
+            )
+            pair_text = f"{len(pairs)} pair" + ("s" if len(pairs) != 1 else "")
+            if notes_text:
+                if len(notes_text) > 52:
+                    notes_text = notes_text[:49] + "…"
+                return f"{state} | {speaker_text:<12} | {notes_text} | {pair_text}"
+
             find_text = str(rule.get("find") or "<empty>").replace("\n", r"\n")
             replace_text = str(rule.get("replace") or "").replace("\n", r"\n")
-            if len(find_text) > 72:
-                find_text = find_text[:69] + "…"
-            if len(replace_text) > 72:
-                replace_text = replace_text[:69] + "…"
-            return f"{state} | {speaker_text:<12} | {find_text} → {replace_text}"
+            if len(find_text) > 54:
+                find_text = find_text[:51] + "…"
+            if len(replace_text) > 54:
+                replace_text = replace_text[:51] + "…"
+            return f"{state} | {speaker_text:<12} | {find_text} → {replace_text} | {pair_text}"
 
         def selected_indices() -> list[int]:
             return sorted({rule_list.row(item) for item in rule_list.selectedItems()})
@@ -2428,8 +2449,14 @@ class ToolkitGUI(QMainWindow):
                 write_rules_file(False)
 
         def add_rule() -> None:
-            self.rule_list_data.append(self._normalize_rule_dict({"enabled": True, "case_sensitive": True}))
-            index = len(self.rule_list_data) - 1
+            # Commit edits to the current rule before changing the selection.
+            apply_form(False)
+            current = selected_index()
+            index = _rule_insert_index_below_current(len(self.rule_list_data), current)
+            self.rule_list_data.insert(
+                index,
+                self._normalize_rule_dict({"enabled": True, "case_sensitive": True}),
+            )
             refresh_list([index])
             load_selected()
             write_rules_file(False)

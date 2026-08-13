@@ -10,7 +10,7 @@
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Jack aliases"
     },
     {
       "enabled": true,
@@ -21,36 +21,25 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Character surnames → given names"
     },
     {
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "!!;Hope's Peak;...;phiên tòa lớp học;nhà thi đấu;Nhà thi đấu;",
-      "replace": "!;Đỉnh Hy Vọng;... ;lớp xét xử;phòng thể chất;Phòng thể chất",
+      "find": "!!;Hope's Peak;...;phiên tòa lớp học;nhà thi đấu;Nhà thi đấu;phòng thể dục;phòng xử lý dữ liệu;Phiên tòa lớp;phiên tòa lớp;lời khai ngoại phạm;  ;Ngươi;ngươi;thời gian ban đêm; ?; !",
+      "replace": "!;Đỉnh Hy Vọng;... ;lớp xét xử;phòng thể chất;Phòng thể chất;phòng thể chất;trung tâm dữ liệu;Lớp xét xử;lớp xét xử;chứng cứ ngoại phạm; ;Mi;mi;giờ ban đêm;?;!",
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Global cleanup & terminology"
     },
     {
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "phòng xử lý dữ liệu;Phiên tòa lớp;phiên tòa lớp",
-      "replace": "trung tâm dữ liệu;Lớp xét xử;lớp xét xử",
-      "whole_word": false,
-      "case_sensitive": true,
-      "stop_after": false,
-      "notes": ""
-    },
-    {
-      "enabled": true,
-      "speaker": "",
-      "scope": "",
-      "find": "  ;Ngươi;ngươi",
-      "replace": " ;Mi;mi",
+      "find": "Monokuma File",
+      "replace": "Hồ Sơ Monokuma",
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
@@ -65,7 +54,7 @@
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Kyouko voice"
     },
     {
       "enabled": true,
@@ -76,7 +65,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Byakuya voice"
     },
     {
       "enabled": true,
@@ -87,7 +76,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Touko voice"
     },
     {
       "enabled": true,
@@ -98,7 +87,7 @@
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Yasuhiro voice"
     },
     {
       "enabled": true,
@@ -109,7 +98,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Alter Ego voice"
     },
     {
       "enabled": true,
@@ -120,7 +109,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Asahina voice"
     },
     {
       "enabled": true,
@@ -131,7 +120,7 @@
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Monokuma voice"
     },
     {
       "enabled": true,
@@ -142,29 +131,18 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Sakura voice"
     },
     {
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "Tui mình;tui mình",
-      "replace": "Tụi mình;tụi mình",
+      "find": "Tui mình;tui mình;Hông;hông;Anh;anh",
+      "replace": "Tụi mình;tụi mình;Không;không;Cậu;cậu",
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
-    },
-    {
-      "enabled": true,
-      "speaker": "",
-      "scope": "",
-      "find": "Hông;hông;Anh;anh",
-      "replace": "Không;không;Cậu;cậu",
-      "whole_word": true,
-      "case_sensitive": true,
-      "stop_after": false,
-      "notes": ""
+      "notes": "Global word cleanup"
     },
     {
       "enabled": false,
@@ -175,7 +153,7 @@
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Makoto alternate (disabled)"
     },
     {
       "enabled": true,
@@ -186,7 +164,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Makoto voice"
     },
     {
       "enabled": true,
@@ -197,7 +175,7 @@
       "whole_word": true,
       "case_sensitive": true,
       "stop_after": false,
-      "notes": ""
+      "notes": "Makoto CLT 4 voice"
     }
   ]
 }
