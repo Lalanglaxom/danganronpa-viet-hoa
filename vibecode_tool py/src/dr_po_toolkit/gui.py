@@ -672,6 +672,7 @@ class ToolkitGUI(QMainWindow):
         self.resize(1180, 720)
         self._apply_style()
         self._build()
+        self.setMinimumSize(800, 450)
 
     def start_initial_indexing(self) -> None:
         """Warm all configured PO files in the background after the window opens."""
@@ -6293,13 +6294,15 @@ class ToolkitGUI(QMainWindow):
             wrap = QWidget()
             box_layout = QVBoxLayout(wrap)
             box_layout.setContentsMargins(0, 0, 0, 0)
-            box_layout.setSpacing(5)
+            box_layout.setSpacing(4)
             lab = QLabel(label)
             lab.setStyleSheet("font-weight:800;")
+            lab.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
             box_layout.addWidget(lab)
             for extra_widget in extra_widgets:
                 box_layout.addWidget(extra_widget)
-            box_layout.addWidget(box, 1)
+            box.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.MinimumExpanding)
+            box_layout.addWidget(box)
             return wrap
 
         en_box = VisibleNewlinePlainTextEdit()
@@ -6322,20 +6325,24 @@ class ToolkitGUI(QMainWindow):
         en_speaker_label.setObjectName("muted")
         en_speaker_label.setWordWrap(True)
         en_speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
+        en_speaker_label.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         vi_speaker_label = QLabel("Speaker: —")
         vi_speaker_label.setObjectName("muted")
         vi_speaker_label.setWordWrap(True)
         vi_speaker_label.setStyleSheet(f"font-weight:900; color:{ACCENT_SOFT};")
+        vi_speaker_label.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         en_character_count_label = QLabel("—")
         en_character_count_label.setObjectName("muted")
         en_character_count_label.setWordWrap(True)
         en_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        en_character_count_label.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         en_character_count_label.setToolTip("Character count for each English line, from top to bottom. Every character counts except CLT tags.")
         en_character_count_label.setStyleSheet(f"font-weight:800; color:{ACCENT_SOFT};")
         vi_character_count_label = QLabel("—")
         vi_character_count_label.setObjectName("muted")
         vi_character_count_label.setWordWrap(True)
         vi_character_count_label.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+        vi_character_count_label.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         vi_character_count_label.setToolTip("Character count for each Vietnamese line, from top to bottom. Every character counts except CLT tags.")
         vi_character_count_label.setStyleSheet(f"font-weight:800; color:{TEAL};")
 
@@ -6371,7 +6378,9 @@ class ToolkitGUI(QMainWindow):
         detail.setStretchFactor(0, 7)
         detail.setStretchFactor(1, 3)
         split.addWidget(detail)
-        split.setSizes([430, 220])
+        split.setSizes([660, 220])
+        split.setStretchFactor(0, 1)
+        split.setStretchFactor(1, 0)
 
         suggest_group = QGroupBox("Suggestions")
         suggest_layout = QVBoxLayout(suggest_group)

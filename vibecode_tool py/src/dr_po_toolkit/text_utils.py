@@ -3,6 +3,7 @@ from __future__ import annotations
 import html
 import re
 import unicodedata
+from collections.abc import Callable
 
 CLT_RE = re.compile(r"<CLT(?:\s+\d+)?>", re.IGNORECASE)
 ANY_TAG_RE = re.compile(r"<[^>\n]+>")
@@ -209,7 +210,8 @@ class SearchReplaceCompileError(ValueError):
         super().__init__(str(error))
 
 
-SearchReplaceSequence = list[tuple[re.Pattern[str], object]]
+SearchReplaceReplacement = str | Callable[[re.Match[str]], str]
+SearchReplaceSequence = list[tuple[re.Pattern[str], SearchReplaceReplacement]]
 
 
 def compile_search_replace_sequence(

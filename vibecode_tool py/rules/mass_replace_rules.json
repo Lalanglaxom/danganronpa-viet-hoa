@@ -27,8 +27,8 @@
       "enabled": true,
       "speaker": "",
       "scope": "",
-      "find": "!!;Hope's Peak;...;phiên tòa lớp học;nhà thi đấu;Nhà thi đấu;phòng thể dục;phòng xử lý dữ liệu;Phiên tòa lớp;phiên tòa lớp;lời khai ngoại phạm;  ;Ngươi;ngươi;thời gian ban đêm; ?; !",
-      "replace": "!;Đỉnh Hy Vọng;... ;lớp xét xử;phòng thể chất;Phòng thể chất;phòng thể chất;trung tâm dữ liệu;Lớp xét xử;lớp xét xử;chứng cứ ngoại phạm; ;Mi;mi;giờ ban đêm;?;!",
+      "find": "!!;Hope's Peak;...;phiên tòa lớp học;nhà thi đấu;Nhà thi đấu;phòng thể dục;phòng xử lý dữ liệu;Phiên tòa lớp;phiên tòa lớp;lời khai ngoại phạm;  ;thời gian ban đêm; ?; !",
+      "replace": "!;Đỉnh Hy Vọng;... ;lớp xét xử;phòng thể chất;Phòng thể chất;phòng thể chất;trung tâm dữ liệu;Lớp xét xử;lớp xét xử;chứng cứ ngoại phạm; ;giờ ban đêm;?;!",
       "whole_word": false,
       "case_sensitive": true,
       "stop_after": false,
@@ -176,6 +176,28 @@
       "case_sensitive": true,
       "stop_after": false,
       "notes": "Makoto CLT 4 voice"
+    },
+    {
+      "enabled": true,
+      "speaker": "",
+      "scope": "",
+      "find": "Đạn Sự Thật;Ngươi;ngươi",
+      "replace": "Đạn Luận Điểm;Mi;mi",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
+    },
+    {
+      "enabled": true,
+      "speaker": "MONOKUMA",
+      "scope": "",
+      "find": "Ngươi;ngươi",
+      "replace": "Cậu;cậu",
+      "whole_word": false,
+      "case_sensitive": true,
+      "stop_after": false,
+      "notes": ""
     }
   ]
 }

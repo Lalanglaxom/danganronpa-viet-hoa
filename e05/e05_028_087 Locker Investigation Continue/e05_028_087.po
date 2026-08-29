@@ -38,8 +38,8 @@ msgid ""
 "I don't have time to appreciate its beauty. I need to\n"
 "keep searching..."
 msgstr ""
-"Mình không có thời gian để ngắm vẻ đẹp của nó. Mình cần\n"
-"tiếp tục tìm kiếm..."
+"Mình không có thời gian để ngắm vẻ đẹp của nó.\n"
+"Mình cần tiếp tục tìm kiếm..."
 
 #. <CLT 4>桜の木が植えられている。しかも満開だ。
 #. <CLT>
@@ -58,8 +58,8 @@ msgid ""
 "I don't have time to appreciate its beauty. I need to\n"
 "keep searching..."
 msgstr ""
-"Mình không có thời gian để ngắm vẻ đẹp của nó. Mình cần\n"
-"tiếp tục tìm kiếm..."
+"Mình không có thời gian để ngắm vẻ đẹp của nó.\n"
+"Mình cần tiếp tục tìm kiếm..."
 
 #. <CLT 4>木製のロッカーがある…
 #. <CLT>
@@ -80,8 +80,8 @@ msgid ""
 "traditional public bathhouses.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng dùng chìa khóa gỗ, giống như ở những nhà tắm\n"
-"công cộng truyền thống vậy.\n"
+"<CLT 4>Chúng dùng chìa khóa gỗ, giống như ở những nhà\n"
+"tắm công cộng truyền thống vậy.\n"
 "<CLT>"
 
 #. <CLT 4>やっぱり、霧切さんの部屋で拾ったのって、
@@ -100,7 +100,9 @@ msgstr ""
 #. 苗木、右端のロッカーを見てみろ…
 msgctxt "0010 | BYAKUYA TOGAMI"
 msgid "Makoto, do you see the locker farthest to the right?"
-msgstr "Makoto, cậu có thấy cái tủ khóa ở tận cùng bên phải không?"
+msgstr ""
+"Makoto, cậu có thấy cái tủ khóa ở tận cùng bên\n"
+"phải không?"
 
 #. あのロッカーにだけ、
 #. 鍵が差し込まれていないようだぞ…
@@ -109,8 +111,8 @@ msgid ""
 "That's the only one that doesn't have a key in it at\n"
 "the moment."
 msgstr ""
-"Đó là cái duy nhất hiện tại không có chìa khóa cắm bên\n"
-"trong."
+"Đó là cái duy nhất hiện tại không có chìa khóa\n"
+"cắm bên trong."
 
 #. つまり、どういう事かわかるな？
 msgctxt "0012 | BYAKUYA TOGAMI"
@@ -123,8 +125,8 @@ msgid ""
 "I should probably use the key we found on that locker,\n"
 "right?"
 msgstr ""
-"Có lẽ mình nên dùng chiếc chìa khóa tìm được trên cái tủ\n"
-"khóa đó, đúng không?"
+"Có lẽ tớ nên dùng chiếc chìa khóa tìm được\n"
+"trên cái tủ khóa đó, đúng không?"
 
 #. やってみろ…！
 msgctxt "0014 | BYAKUYA TOGAMI"
@@ -145,8 +147,8 @@ msgid ""
 "locker's metal lock, and...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình lấy chiếc chìa khóa gỗ ra và cắm nó vào ổ khóa\n"
-"kim loại của tủ khóa, rồi...\n"
+"<CLT 4>Mình lấy chiếc chìa khóa gỗ ra và cắm nó vào ổ\n"
+"khóa kim loại của tủ khóa, rồi...\n"
 "<CLT>"
 
 #. <CLT 23>「カチャ…」
@@ -167,8 +169,8 @@ msgid ""
 "<CLT 4>The locker eagerly accepted the key, and it opened.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chiếc tủ khóa đón nhận chìa khóa một cách hoàn hảo,\n"
-"và nó mở ra.\n"
+"<CLT 4>Chiếc tủ khóa đón nhận chìa khóa một cách hoàn\n"
+"hảo, và nó mở ra.\n"
 "<CLT>"
 
 #. <CLT 4>矢が入ってる…
@@ -180,8 +182,8 @@ msgid ""
 "in total.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Bên trong có... những mũi tên. Có vẻ như... tổng cộng\n"
-"khoảng mười mũi.\n"
+"<CLT 4>Bên trong có... những mũi tên. Có vẻ như... tổng\n"
+"cộng khoảng mười mũi.\n"
 "<CLT>"
 
 #. <CLT 3>ジュラルミン製の矢<CLT>だな。
@@ -201,8 +203,8 @@ msgid ""
 "Of course, without a bow they're nothing but strong\n"
 "little sticks."
 msgstr ""
-"Tất nhiên, không có cung thì chúng cũng chỉ là những que\n"
-"nhỏ chắc chắn mà thôi."
+"Tất nhiên, không có cung thì chúng cũng chỉ là\n"
+"những que nhỏ chắc chắn mà thôi."
 
 #. <CLT 4>頑丈な…細い棒か…
 #. <CLT>
@@ -223,7 +225,7 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Mũi tên titan<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"<CLT 23>\"<CLT><CLT 3>Mũi Tên Titan<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
 "trong sổ tay của bạn.\n"
 "<CLT>"
 
@@ -247,8 +249,8 @@ msgid ""
 "was used for...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó là một cuộn băng keo bị vo lại. Mình tự hỏi nó đã\n"
-"được dùng để làm gì...\n"
+"<CLT 4>Đó là một cuộn băng keo bị vo lại. Mình tự hỏi\n"
+"nó đã được dùng để làm gì...\n"
 "<CLT>"
 
 #. <CLT 4>血痕…だよな？
@@ -299,7 +301,7 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>\"<CLT><CLT 3>Băng keo dính máu<CLT><CLT 23>\" đã được thêm vào mục Đạn Sự Thật\n"
+"<CLT 23>\"<CLT><CLT 3>Băng Keo Dính Máu<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
 "trong sổ tay của bạn.\n"
 "<CLT>"
 
@@ -311,8 +313,8 @@ msgid ""
 "<CLT 4>I think that's all the locker has to offer for now...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình nghĩ đó là tất cả những gì chiếc tủ khóa này có\n"
-"thể cung cấp lúc này...\n"
+"<CLT 4>Mình nghĩ đó là tất cả những gì chiếc tủ khóa\n"
+"này có thể cung cấp lúc này...\n"
 "<CLT>"
 
 #. <CLT 4>鎧が飾られている…
@@ -347,8 +349,8 @@ msgid ""
 "use it for training here, too...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đây là một trụ rơm dùng để luyện kiếm. Chẳng lẽ\n"
-"ở đây họ cũng dùng nó để tập luyện sao...?\n"
+"<CLT 4>Đây là một trụ rơm dùng để luyện kiếm. Chẳng lẽ ở đây\n"
+"họ cũng dùng nó để tập luyện sao...?\n"
 "<CLT>"
 
 #. <CLT 4>気になる事は特にないな…
@@ -358,8 +360,8 @@ msgid ""
 "<CLT 4>Nothing is catching my attention, though...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Tuy nhiên, không có gì đặc biệt thu hút sự chú ý của\n"
-"mình...\n"
+"<CLT 4>Tuy nhiên, không có gì đặc biệt thu hút sự chú ý\n"
+"của mình...\n"
 "<CLT>"
 
 #. <CLT 4>遠くに的が見える…
@@ -392,8 +394,8 @@ msgid ""
 "Hey. I think it would be wise to look around a bit\n"
 "more."
 msgstr ""
-"Này. Tôi nghĩ sẽ khôn ngoan hơn nếu tiếp tục quan sát\n"
-"xung quanh thêm một chút."
+"Này. Tôi nghĩ sẽ khôn ngoan hơn nếu tiếp tục\n"
+"quan sát xung quanh thêm một chút."
 
 #. ………………
 msgctxt "0039 | BYAKUYA TOGAMI"
@@ -417,8 +419,8 @@ msgid ""
 "The locker was hiding items that were clearly related\n"
 "to the case."
 msgstr ""
-"Chiếc tủ khóa này đang giấu những vật rõ ràng có liên\n"
-"quan đến vụ án."
+"Chiếc tủ khóa này đang giấu những vật rõ ràng có\n"
+"liên quan đến vụ án."
 
 #. だが、そんなロッカーの鍵が、
 #. どうして被害者である霧切の部屋にあったんだ…
@@ -427,8 +429,8 @@ msgid ""
 "But how did the key to the locker wind up in the\n"
 "victim's room...?"
 msgstr ""
-"Nhưng tại sao chìa khóa của một chiếc tủ khóa như vậy\n"
-"lại xuất hiện trong phòng của nạn nhân...?"
+"Nhưng tại sao chìa khóa của một chiếc tủ khóa\n"
+"như vậy lại xuất hiện trong phòng của nạn nhân...?"
 
 #. いや…ひょっとすると…
 msgctxt "0044 | BYAKUYA TOGAMI"
@@ -479,14 +481,14 @@ msgid ""
 "Fenrir...? You mean the mercenary group that Mukuro\n"
 "was a part of?"
 msgstr ""
-"Fenrir...? Ý cậu là nhóm lính đánh thuê mà Mukuro\n"
-"từng tham gia sao?"
+"Fenrir...? Ý cậu là nhóm lính đánh thuê mà\n"
+"Mukuro từng tham gia sao?"
 
 #. でも…調べるって、
 #. どうやって…！？
 msgctxt "0053 | MAKOTO NAEGI"
 msgid "But...how are we supposed to find out about that?"
-msgstr "Nhưng... chúng ta phải tìm hiểu chuyện đó bằng cách nào...!?"
+msgstr "Nhưng... chúng ta tìm hiểu chuyện đó bằng cách nào...!?"
 
 #. 決まっているだろう。調べ物と言ったらどこだ？
 msgctxt "0054 | BYAKUYA TOGAMI"
@@ -494,8 +496,8 @@ msgid ""
 "Isn't it obvious? Where in this school would you go to\n"
 "do research on something?"
 msgstr ""
-"Chẳng phải quá rõ ràng sao? Khi muốn nghiên cứu thứ gì\n"
-"đó, trong học viện này cậu sẽ đến đâu?"
+"Chẳng phải quá rõ ràng sao? Khi muốn nghiên cứu\n"
+"thứ gì đó, trong học viện này cậu sẽ đến đâu?"
 
 #. <CLT 4>調べ物と言ったら…？
 #. <CLT>
@@ -519,8 +521,8 @@ msgid ""
 "That's right... The archive has all kinds of info that\n"
 "the general public doesn't have access to."
 msgstr ""
-"Đúng rồi... Kho lưu trữ có đủ loại thông tin mà công chúng\n"
-"không thể tiếp cận."
+"Đúng rồi... Kho lưu trữ có đủ loại thông tin mà\n"
+"công chúng không thể tiếp cận."
 
 #. …学級裁判まで時間がない。急ぐぞ。
 msgctxt "0058 | BYAKUYA TOGAMI"
@@ -528,5 +530,5 @@ msgid ""
 "We only have so much time before the trial begins.\n"
 "Let's hurry."
 msgstr ""
-"Chúng ta chỉ còn rất ít thời gian trước khi phiên tòa lớp\n"
-"bắt đầu. Mau lên."
+"Chúng tôi chỉ còn rất ít thời gian trước khi lớp\n"
+"xét xử bắt đầu. Mau lên."
