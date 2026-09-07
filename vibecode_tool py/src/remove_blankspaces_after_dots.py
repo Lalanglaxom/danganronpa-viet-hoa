@@ -49,4 +49,4 @@ def add_spaces_after_ellipsis_sandwiched(target_folder: str):
             print(f"Could not process {file_path.name}: {e}")
 
 # Example usage:
-add_spaces_after_ellipsis_sandwiched(r'D:\Danganronpa1Viet\danganronpa-viet-hoa')
+add_spaces_after_ellipsis_sandwiched(r'D:\Danganronpa1Viet\danganronpa-viet-hoa\e05')

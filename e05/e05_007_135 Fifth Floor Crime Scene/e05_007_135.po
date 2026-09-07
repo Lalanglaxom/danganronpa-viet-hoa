@@ -14,7 +14,7 @@ msgstr ""
 #. 【バカでかい植物】
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "[Stupidly large plant]"
-msgstr "[Cái cây to tổ bố]"
+msgstr "[Cái hoa to tổ bố]"
 
 #. あれはモノクマフラワーだってさ…
 #. モノクマが言ってたよ。
@@ -300,7 +300,7 @@ msgid ""
 "Then...maybe Mondo brought it with him when he first\n"
 "came here, and Monokuma confiscated it?"
 msgstr ""
-"Vậy...có lẽ Mondo đã mang nó theo khi mới đến đây, rồi\n"
+"Vậy... có lẽ Mondo đã mang nó theo khi mới đến đây, rồi\n"
 "Monokuma tịch thu nó?"
 
 #. …どっちにしても、気になるよね？
@@ -437,8 +437,8 @@ msgid ""
 "floor...?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Một thứ có ở mọi tầng khác...nhưng không có trên\n"
-"tầng 5...?\n"
+"<CLT 4>Một thứ có ở mọi tầng khác... nhưng không có\n"
+"trên tầng 5...?\n"
 "<CLT>"
 
 #. もしかして…階段の事？
@@ -501,7 +501,7 @@ msgid ""
 "I'm sure we'll make it out of this...!"
 msgstr ""
 "Mọi chuyện sẽ ổn thôi. Chỉ cần tất cả cùng hợp sức,\n"
-"tớ tin chắc bọn mình sẽ thoát khỏi đây... !"
+"tớ tin chắc bọn mình sẽ thoát khỏi đây...!"
 
 #. <CLT 4>いや、なんとかしてみせる！　絶対に！
 #. <CLT>
@@ -549,7 +549,7 @@ msgid ""
 "But still...it's just the six of us. That's barely\n"
 "enough for a decent volleyball team..."
 msgstr ""
-"Nhưng dù sao...cũng chỉ có sáu người chúng ta.\n"
+"Nhưng dù sao... cũng chỉ có sáu người chúng ta.\n"
 "Vừa đủ để lập một đội bóng chuyền tử tế..."
 
 #. ちょっと！　なんで暗いトーンになってんの！？
@@ -618,7 +618,7 @@ msgid ""
 "and—I know what you're gonna say,\n"
 "but...a <CLT 1>[toolshed]<CLT>!"
 msgstr ""
-"Một <CLT 1>[cái cây to tổ bố]<CLT>, một <CLT 1>[chuồng gà]<CLT>, và—tớ biết các\n"
+"Một <CLT 1>[cái hoa to tổ bố]<CLT>, một <CLT 1>[chuồng gà]<CLT>, và—tớ biết các\n"
 "cậu định nói gì rồi, nhưng... một <CLT 1>[nhà kho dụng cụ]<CLT>!"
 
 #. 学校に植物庭園があるとは思わなかったベ！
@@ -750,7 +750,7 @@ msgctxt "0095 | MAKOTO NAEGI"
 msgid ""
 "Hey, Byakuya...it seems like Toko wants to say\n"
 "something."
-msgstr "Này, Byakuya...có vẻ Toko muốn nói điều gì đó."
+msgstr "Này, Byakuya... có vẻ Toko muốn nói điều gì đó."
 
 #. なぜ俺に言う？
 msgctxt "0096 | BYAKUYA TOGAMI"
@@ -1008,7 +1008,7 @@ msgid ""
 "in my desk drawer for now.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chắc mình chẳng còn cách nào khác. Trước mắt cứ...cất\n"
+"<CLT 4>Chắc mình chẳng còn cách nào khác. Trước mắt cứ... cất\n"
 "nó trong ngăn kéo bàn ở phòng mình vậy.\n"
 "<CLT>"
 
@@ -1089,7 +1089,7 @@ msgstr ""
 #. あたしったら…おかしいわね…！
 msgctxt "0146 | TOUKO FUKAWA"
 msgid "Aha... Ahahahahaha! I feel...s-strange...!"
-msgstr "Aha... Ahahahahaha! Mình cảm thấy...l-lạ quá...!"
+msgstr "Aha... Ahahahahaha! Mình cảm thấy... l-lạ quá...!"
 
 #. アハハ…おかし…本気でおかし…！
 #. ちょッ…駄目…アハッ…ヒッ…ヒャ…ハハハハ！
@@ -1098,8 +1098,8 @@ msgid ""
 "Ahaha...so strange...! R-Really strange! Oh no...!\n"
 "Aha...hyah...hyeehahaehea!"
 msgstr ""
-"Ahaha...lạ quá...! T-Thật sự lạ quá! Không được rồi...!\n"
-"Aha...hyah...hyeehahaehea!"
+"Ahaha... lạ quá...! T-Thật sự lạ quá! Không được rồi...!\n"
+"Aha... hyah... hyeehahaehea!"
 
 #. 最近の腐川っちを見てると…
 #. せつない気持ちになんべ…
@@ -1685,7 +1685,7 @@ msgstr ""
 #. …その霧切響子とは何者なんだ？
 msgctxt "0220 | BYAKUYA TOGAMI"
 msgid "Yes, but who *is* she?"
-msgstr "Đúng, nhưng cô ấy *thực sự* là ai?"
+msgstr "Đúng, nhưng cô ta *thực sự* là ai?"
 
 #. 俺達が希望ヶ峰学園に選抜されたのは、
 #. それぞれに、確固たる理由があったはずだ。
@@ -1724,13 +1724,13 @@ msgstr "<CLT 4>Dạo này thì đúng hơn là xui xẻo hơn may mắn, nhưng.
 #. 誰か知っている者はいるか？
 msgctxt "0225 | BYAKUYA TOGAMI"
 msgid "So what about Kyoko? Can anyone tell me what *she* is?"
-msgstr "Vậy còn Kyoko thì sao? Có ai biết *cô ấy* là gì không?"
+msgstr "Vậy còn Kyoko thì sao? Có ai biết *cô ta* là gì không?"
 
 #. そう言や…教えてもらってねーべ…
 msgctxt "0226 | YASUHIRO HAGAKURE"
 msgid "Now that you mention it...she's never told us."
 msgstr ""
-"Giờ cậu nhắc tớ mới nhớ...  cô ấy chưa bao giờ\n"
+"Giờ cậu nhắc tớ mới nhớ... cô ấy chưa bao giờ\n"
 "nói với chúng ta."
 
 #. 霧切ちゃん…
@@ -1805,7 +1805,7 @@ msgstr "Ý-Ý cậu là sao...?"
 #. 覚えてないのよ…
 msgctxt "0237 | KYOUKO KIRIGIRI"
 msgid "Because...I don't remember."
-msgstr "Bởi vì...  tớ không nhớ."
+msgstr "Bởi vì... tớ không nhớ."
 
 #. え…？
 msgctxt "0238 | MAKOTO NAEGI"
@@ -2148,7 +2148,7 @@ msgid ""
 "believe her, e-enjoying getting yelled at..."
 msgstr ""
 "H-Hay có khi cô ta thích được chú ý. Không thể tin nổi,\n"
-"c-Cô ta lại thích thú khi bị mắng như vậy..."
+"c-cô ta lại thích thú khi bị mắng như vậy..."
 
 #. …うるさいぞ、腐川。
 msgctxt "0284 | BYAKUYA TOGAMI"
@@ -2492,7 +2492,7 @@ msgstr ""
 #. 言われなくても…わかってるよ…
 msgctxt "0328 | AOI ASAHINA"
 msgid "Not like we need you to tell us that..."
-msgstr "Không cần cậu phải nói thì chúng tôi cũng biết mà..."
+msgstr "Không cần cậu phải nói thì tụi tui cũng biết mà..."
 
 #. では、解散だ。帰るぞ…
 msgctxt "0329 | BYAKUYA TOGAMI"
