@@ -24,7 +24,7 @@ msgstr ""
 #. ところで腐川、今は何時だ？
 msgctxt "0002 | BYAKUYA TOGAMI"
 msgid "Now then... Toko, what time is it?"
-msgstr "Nào... Toko, bây giờ là mấy giờ?"
+msgstr "Bây giờ... Toko, mấy giờ rồi?"
 
 #. えーと…さっき体育館を出る時…９時前だったので…
 #. い、今は…９時ちょうどくらいかと…
@@ -33,18 +33,18 @@ msgid ""
 "W-Well, when we left the gym, it was j-just before 9\n"
 "o'clock. So it's probably 9 on the d-dot now..."
 msgstr ""
-"Ừ-Ừm, khi chúng ta rời khỏi nhà thi đấu thì mới\n"
-"g-gần 9 giờ. Vậy nên b-bây giờ chắc khoảng đúng 9 giờ..."
+"Ư-Ưm... lúc chúng ta rời phòng thể chất là ngay trước 9 giờ.\n"
+"V-Vậy nên lúc đó chắc là... đúng 9 giờ... "
 
 #. よし、９時１分までにツルハシを取って来い。
 msgctxt "0004 | BYAKUYA TOGAMI"
 msgid "Okay. Go get the pickaxe and be back here by 9:01."
-msgstr "Được. Đi lấy cái cuốc và quay lại đây trước 9 giờ 1 phút."
+msgstr "Được. Đi lấy cái cuốc và quay lại đây trước 9 giờ 01."
 
 #. た、確かに…９時くらいだったわね…
 msgctxt "0005 | TOUKO FUKAWA"
 msgid "H-He's right, it had to be around th-then."
-msgstr "C-Cậu nói đúng, chắc chắn là khoảng thời gian đó..."
+msgstr "C-Cậu ta đúng, chắc chắn là khoảng thời gian đó..."
 
 #. つまり、殺人が起きたと思われる時間帯は、
 #. <CLT 3>夜１０時から朝９時までの間<CLT>…って事だな。
@@ -63,8 +63,8 @@ msgid ""
 "For me, I was already asleep before nighttime hit. So\n"
 "I don't have an alibi after 10 o'clock..."
 msgstr ""
-"Còn mình... hôm qua mình đã ngủ trước thời gian ban đêm.\n"
-"Vì vậy mình không có chứng cứ ngoại phạm sau 10 giờ..."
+"Còn tớ... hôm qua tớ đã ngủ trước giờ ban đêm. Vì vậy\n"
+"tớ không có chứng cứ ngoại phạm sau 10 giờ..."
 
 #. でも、朝は９時より前に、
 #. みんなと合流したはずだよ？
@@ -73,7 +73,7 @@ msgid ""
 "But I'm sure I met up with everyone else before 9 this\n"
 "morning."
 msgstr ""
-"Nhưng mình chắc là sáng nay mình đã gặp mọi người\n"
+"Nhưng tớ chắc là sáng nay tớ đã gặp mọi người\n"
 "trước 9 giờ."
 
 #. 食堂で私と会ったよね？
@@ -93,8 +93,8 @@ msgid ""
 "Oh yeah! Right around 7:30! I remember checking right\n"
 "before I went in, so I'm totally sure about it."
 msgstr ""
-"À đúng rồi! Khoảng 7 giờ 30! Tớ nhớ đã kiểm tra thời gian\n"
-"ngay trước khi bước vào, nên chắc chắn lắm."
+"À đúng rồi! Khoảng 7 giờ 30! Tui nhớ đã kiểm tra thời\n"
+"gian ngay trước khi bước vào, nên chắc chắn lắm."
 
 #. つまり、苗木っちのアリバイがねーのは、
 #. 夜１０時から朝７時３０分までの間…って事だな。
@@ -115,8 +115,8 @@ msgid ""
 "don't have an alibi from 10 p.m. till 7:30 a.m.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vụ giết người xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng.\n"
-"Và mình không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
+"<CLT 4>Vụ án xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng. Và mình\n"
+"không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
 "<CLT>"
 
 #. <CLT 4>…よし、勝負はここからだ。
@@ -136,7 +136,8 @@ msgid ""
 "<CLT 4>If I can't provide an alibi for that period...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm cho khoảng thời gian đó...\n"
+"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm\n"
+"cho khoảng thời gian đó...\n"
 "<CLT>"
 
 #. <CLT 4>逆に、ボクのアリバイがない時間帯に、
@@ -148,8 +149,8 @@ msgid ""
 "during the time I don't have an alibi!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra\n"
-"trong khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
+"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra trong\n"
+"khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
 "<CLT>"
 
 #. <CLT 4>事件が起きたのは、夜１０時から朝９時までの間…
@@ -161,8 +162,8 @@ msgid ""
 "don't have an alibi from 10 p.m. till 7:30 a.m.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vụ giết người xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng.\n"
-"Và mình không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
+"<CLT 4>Vụ án xảy ra trong khoảng từ 10 giờ tối đến 9 giờ sáng. Và mình\n"
+"không có chứng cứ ngoại phạm từ 10 giờ tối đến 7 giờ 30 sáng.\n"
 "<CLT>"
 
 #. <CLT 4>…よし、勝負はここからだ。
@@ -182,7 +183,8 @@ msgid ""
 "<CLT 4>If I can't provide an alibi for that period...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm cho khoảng thời gian đó...\n"
+"<CLT 4>Nếu mình không thể đưa ra chứng cứ ngoại phạm\n"
+"cho khoảng thời gian đó...\n"
 "<CLT>"
 
 #. <CLT 4>逆に、ボクのアリバイがない時間帯に、
@@ -194,8 +196,8 @@ msgid ""
 "during the time I don't have an alibi!\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra\n"
-"trong khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
+"<CLT 4>...thì mình chỉ cần chứng minh vụ giết người không xảy ra trong\n"
+"khoảng thời gian mình không có chứng cứ ngoại phạm!\n"
 "<CLT>"
 
 #. <CLT 4>その為には、死体がいつからあの場所にあったのか、
