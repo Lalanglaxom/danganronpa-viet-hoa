@@ -18,8 +18,8 @@ msgid ""
 "You're right. Just the one arrow would've been too\n"
 "weak. That's why the killer used <CLT 3>another weapon<CLT>."
 msgstr ""
-"Cậu nói đúng. Chỉ một mũi tên thì sẽ quá yếu.\n"
-"Đó là lý do hung thủ đã sử dụng <CLT 3>một hung khí khác<CLT>."
+"Cậu nói đúng. Chỉ một mũi tên thì sẽ quá yếu. Đó là lý\n"
+"do hung thủ đã sử dụng <CLT 3>một hung khí khác<CLT>."
 
 #. もう１つの凶器…？
 msgctxt "0002 | AOI ASAHINA"
@@ -33,8 +33,8 @@ msgid ""
 "Inside the dojo locker, we also found a balled-up wad\n"
 "of <CLT 3>duct tape<CLT>."
 msgstr ""
-"Trong tủ khóa của võ đường, chúng ta cũng tìm thấy một\n"
-"cuộn <CLT 3>băng keo<CLT> bị vo tròn."
+"Trong tủ khóa của võ đường, chúng ta cũng tìm\n"
+"thấy một cuộn <CLT 3>băng keo<CLT> bị vo tròn."
 
 #. きっと、犯人はこのガムテープを使って、
 #. ジュラルミン製の矢を<CLT 3>束ねた<CLT>んだよ。
@@ -53,9 +53,8 @@ msgid ""
 "Bundling them together using the duct tape would\n"
 "easily create a <CLT 3>single weapon as thick as a pipe<CLT>."
 msgstr ""
-"Bằng cách bó chúng lại với nhau bằng băng keo,\n"
-"họ dễ dàng tạo ra một <CLT 3>hung khí duy nhất dày như\n"
-"một ống kim loại<CLT>."
+"Bằng cách bó chúng lại bằng băng keo, hắn dễ dàng tạo ra\n"
+"một <CLT 3>hung khí duy nhất dày như một ống kim loại<CLT>."
 
 #. それを凶器として使ったんだ！
 msgctxt "0006 | MAKOTO NAEGI"
@@ -103,8 +102,8 @@ msgid ""
 "As for who the culprit is that stashed the weapon in\n"
 "the dojo locker..."
 msgstr ""
-"Còn về hung thủ đã giấu những hung khí đó trong tủ\n"
-"khóa của võ đường..."
+"Còn về hung thủ đã giấu những hung khí đó trong\n"
+"tủ khóa của võ đường..."
 
 #. 霧切響子、お前なんだ…！
 msgctxt "0013 | BYAKUYA TOGAMI"
@@ -114,7 +113,7 @@ msgstr "Chính là cô, Kyoko!"
 #. …私は武道場なんかに行ってないわよ。
 msgctxt "0014 | KYOUKO KIRIGIRI"
 msgid "...I've never been to the dojo."
-msgstr "...Tôi chưa từng đến võ đường."
+msgstr "...Tớ chưa từng đến võ đường."
 
 #. いや、お前は間違いなく武道場に行っている。
 msgctxt "0015 | BYAKUYA TOGAMI"
@@ -147,7 +146,7 @@ msgstr "..."
 #. …ん？　どうした？
 msgctxt "0020 | BYAKUYA TOGAMI"
 msgid "Hm? What's the matter?"
-msgstr "Hử? Có chuyện gì?"
+msgstr "Hửm? Có chuyện gì?"
 
 #. まさか、犯人をかばうつもりじゃないだろうな…
 msgctxt "0021 | BYAKUYA TOGAMI"
@@ -167,8 +166,8 @@ msgid ""
 "If you cover for the culprit, there's only one thing\n"
 "that can lead to..."
 msgstr ""
-"Nếu cậu che giấu cho hung thủ, chỉ có một kết cục đang\n"
-"chờ đợi..."
+"Nếu cậu che giấu cho hung thủ, chỉ có một kết\n"
+"cục đang chờ đợi..."
 
 #. 俺達の全員の死…なんだぞ？
 msgctxt "0024 | BYAKUYA TOGAMI"
@@ -178,7 +177,7 @@ msgstr "Cái chết của tất cả chúng ta. Nhớ chứ?"
 #. も、もちろん…わかってるよ…
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "O-Of course I remember...!"
-msgstr "T-Tất nhiên là mình biết...!"
+msgstr "T-Tất nhiên là tớ biết...!"
 
 #. だったら、お前の手で示してやれ。
 #. 霧切が武道場に行った証拠をな…！
@@ -187,9 +186,8 @@ msgid ""
 "Then show us! Show everyone the evidence that proves\n"
 "Kyoko went to the dojo!"
 msgstr ""
-"Vậy thì hãy cho chúng tôi thấy đi!\n"
-"Hãy cho mọi người thấy bằng chứng chứng minh Kyoko đã\n"
-"đến võ đường!"
+"Vậy thì hãy cho chúng tôi thấy đi! Hãy cho mọi người thấy\n"
+"bằng chứng chứng minh Kyoko đã đến võ đường!"
 
 #. ………………
 msgctxt "0027 | KYOUKO KIRIGIRI"
@@ -211,7 +209,9 @@ msgstr "Cậu ta đang nói gì vậy, Makoto!?"
 #. 処刑されちゃうんだよ？
 msgctxt "0030 | AOI ASAHINA"
 msgid "Yeah! Tell us, or we're all dead, remember!?"
-msgstr "Đúng đó! Nói cho chúng mình biết đi, nếu không tất cả sẽ chết đấy!?"
+msgstr ""
+"Đúng đó! Nói cho chúng tui biết đi, nếu không\n"
+"tất cả sẽ chết đấy!?"
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -233,8 +233,8 @@ msgid ""
 "Are you trying to protect the culprit, or do you\n"
 "honestly not know?"
 msgstr ""
-"Cậu đang cố bảo vệ hung thủ, hay thật sự là cậu không\n"
-"biết?"
+"Cậu đang cố bảo vệ hung thủ, hay thật sự là cậu\n"
+"không biết?"
 
 #. どちらにせよ、お前の愚鈍さには呆れるな…
 msgctxt "0033 | BYAKUYA TOGAMI"
@@ -271,6 +271,8 @@ msgid ""
 "<CLT 4>Evidence that <CLT><CLT 3>Kyoko went to the dojo<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Bằng chứng <CLT><CLT 3>Kyoko đã đến võ đường<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. <CLT 4>ボクが…霧切さんに…？
 #. <CLT>
@@ -289,6 +291,8 @@ msgid ""
 "<CLT 4>Evidence that <CLT><CLT 3>Kyoko went to the dojo<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Bằng chứng <CLT><CLT 3>Kyoko đã đến võ đường<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. <CLT 4><CLT><CLT 3>武道場のロッカー<CLT><CLT 4>に関係している、
 #. 例の物だよな…？
@@ -298,6 +302,8 @@ msgid ""
 "<CLT 4>It must be connected to that <CLT><CLT 3>dojo locker<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Nó hẳn phải liên quan đến <CLT 3>cái tủ khoá ở đó<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. 霧切さんが武道場に行った証拠は…
 msgctxt "0040 | MAKOTO NAEGI"
@@ -307,7 +313,7 @@ msgstr "Thứ duy nhất chứng minh Kyoko đã ở võ đường là..."
 #. この…武道場の<CLT 3>ロッカーの鍵<CLT>だよ…
 msgctxt "0041 | MAKOTO NAEGI"
 msgid "...right here. The <CLT 3>key to the dojo locker<CLT>."
-msgstr "...ngay đây. <CLT 3>chìa khóa tủ khóa võ đường<CLT>."
+msgstr "...ngay đây. <CLT 3>Chìa khóa tủ khóa võ đường<CLT>."
 
 #. …そんな物が、どうして証拠になるの？
 msgctxt "0042 | KYOUKO KIRIGIRI"
@@ -317,12 +323,12 @@ msgstr "Và thứ đó chứng minh được điều gì?"
 #. これが…霧切さんの部屋に落ちてたからだよ…
 msgctxt "0043 | MAKOTO NAEGI"
 msgid "Because...I found it in your room."
-msgstr "Bởi vì... mình tìm thấy nó trong phòng của cậu."
+msgstr "Bởi vì... tớ tìm thấy nó trong phòng của cậu."
 
 #. 私の部屋に…落ちていた…？
 msgctxt "0044 | KYOUKO KIRIGIRI"
 msgid "It was...in my room?"
-msgstr "Nó đã... ở trong phòng tôi?"
+msgstr "Nó đã... ở trong phòng tớ?"
 
 #. とぼけても無駄だ…
 msgctxt "0045 | BYAKUYA TOGAMI"
@@ -341,8 +347,8 @@ msgid ""
 "Your non-existent alibi, your clear motive, your\n"
 "attempts to frame Makoto for the crime..."
 msgstr ""
-"Bằng chứng ngoại phạm không tồn tại của cậu, động cơ\n"
-"quá rõ ràng của cậu, âm mưu đổ tội cho Makoto..."
+"Bằng chứng ngoại phạm không tồn tại của cô, động cơ\n"
+"quá rõ ràng của cô, âm mưu đổ tội cho Makoto..."
 
 #. それらのすべてが、お前が犯人だと示している。
 #. 諦めろ、言い逃れは出来んぞ。
@@ -351,8 +357,8 @@ msgid ""
 "This all proves that you are the true culprit. You\n"
 "can't explain this away, so just give up."
 msgstr ""
-"Tất cả những điều đó đều chứng minh cậu là hung thủ thật\n"
-"sự. Cậu không thể giải thích chuyện này, vậy hãy từ bỏ đi."
+"Tất cả những điều đó đều chứng minh cô là hung thủ thật\n"
+"sự. Cô không thể giải thích chuyện này, vậy hãy từ bỏ đi."
 
 #. …ちょっと待って。
 msgctxt "0049 | MAKOTO NAEGI"
@@ -366,20 +372,20 @@ msgid ""
 "Not this again. You really are dead-set on defending\n"
 "her, aren't you?"
 msgstr ""
-"Lại nữa sao. Cậu thật sự quyết tâm bảo vệ cô ấy đến\n"
-"cùng, đúng không?"
+"Lại nữa sao. Cậu thật sự quyết tâm bảo vệ cô ta\n"
+"đến cùng, đúng không?"
 
 #. いや…かばうとかそういう事じゃなくて…
 #. ボクはただ…
 msgctxt "0051 | MAKOTO NAEGI"
 msgid "No...it's not that I want to defend her. It's just..."
-msgstr "Không... không phải là mình muốn bảo vệ cô ấy. Chỉ là..."
+msgstr "Không... không phải là tớ muốn bảo vệ cô ấy. Chỉ là... "
 
 #. 霧切さんに聞かなくちゃいけない事が、
 #. まだ残っているんだよ…
 msgctxt "0052 | MAKOTO NAEGI"
 msgid "There's one more thing I need to ask her."
-msgstr "Vẫn còn một chuyện mình cần hỏi cô ấy."
+msgstr "Vẫn còn một chuyện tớ cần hỏi."
 
 #. ………………
 msgctxt "0053 | KYOUKO KIRIGIRI"
@@ -390,12 +396,12 @@ msgstr "..."
 #. 昨日の夜の件だよ…
 msgctxt "0054 | MAKOTO NAEGI"
 msgid "Kyoko, I want you to tell me something."
-msgstr "Kyoko, mình muốn cậu nói cho mình biết một chuyện."
+msgstr "Kyoko, tớ muốn cậu nói cho tớ biết một chuyện."
 
 #. 昨日の夜、霧切さんはボクの部屋にいたよね…？
 msgctxt "0055 | MAKOTO NAEGI"
 msgid "Last night...you were in my room, weren't you?"
-msgstr "Đêm qua... cậu đã ở trong phòng mình, đúng không?"
+msgstr "Đêm qua... cậu đã ở trong phòng tớ, đúng không?"
 
 #. あの時、何があったの？
 #. どうして、ボクの部屋にいたの？
@@ -406,7 +412,7 @@ msgstr "Tại sao? Cậu đã làm gì ở đó?"
 #. それを…教えて欲しいんだ…
 msgctxt "0057 | MAKOTO NAEGI"
 msgid "That's what I need to know."
-msgstr "Đó là điều mình cần biết."
+msgstr "Đó là điều tớ cần biết."
 
 #. ………………
 msgctxt "0058 | KYOUKO KIRIGIRI"
@@ -416,7 +422,7 @@ msgstr "..."
 #. 私は…あなたを助けただけよ…
 msgctxt "0059 | KYOUKO KIRIGIRI"
 msgid "I was just...protecting you."
-msgstr "Tôi chỉ... bảo vệ cậu thôi."
+msgstr "Tớ chỉ... bảo vệ cậu thôi."
 
 #. え…？
 msgctxt "0060 | MAKOTO NAEGI"
@@ -515,8 +521,8 @@ msgid ""
 "I'm warning you, don't make this mistake. I'm not the\n"
 "killer."
 msgstr ""
-"Tôi cảnh báo cậu, đừng phạm sai lầm này.\n"
-"Tôi không phải hung thủ."
+"Tớ cảnh báo cậu, đừng phạm sai lầm này.\n"
+"Tớ không phải hung thủ."
 
 #. まさか…お前の往生際がそこまで悪いとはな…
 msgctxt "0071 | BYAKUYA TOGAMI"
@@ -524,8 +530,8 @@ msgid ""
 "I knew you were stubborn, but this is just getting\n"
 "ridiculous."
 msgstr ""
-"Tôi biết cậu rất cứng đầu, nhưng chuyện này đang trở\n"
-"nên vô lý rồi."
+"Tôi biết cô rất cứng đầu, nhưng chuyện này đang\n"
+"trở nên vô lý rồi."
 
 #. …だけど、私が犯人じゃないって事は、
 #. あなたが１番よく知っているはずよ？
@@ -534,13 +540,13 @@ msgid ""
 "Really? But you should know better than anyone I\n"
 "didn't do it."
 msgstr ""
-"Thật sao? Nhưng cậu hơn ai hết phải biết rằng tôi không\n"
-"làm chuyện đó."
+"Thật sao? Nhưng cậu hơn ai hết phải biết rằng\n"
+"tớ không làm chuyện đó."
 
 #. そうでしょう、十神君…？
 msgctxt "0073 | KYOUKO KIRIGIRI"
 msgid "Can you tell me I'm wrong?"
-msgstr "Cậu có thể nói rằng tôi sai không?"
+msgstr "Cậu có thể nói rằng tớ sai không?"
 
 #. 俺が…だと？
 msgctxt "0074 | BYAKUYA TOGAMI"

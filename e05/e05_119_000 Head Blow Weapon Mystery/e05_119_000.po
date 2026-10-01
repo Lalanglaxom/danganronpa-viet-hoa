@@ -18,6 +18,8 @@ msgid ""
 "Mukuro died because of the <CLT 3>blow to the back of the\n"
 "head<CLT> she suffered!"
 msgstr ""
+"Mukuro đã chết vì <CLT 3>cú đánh vào sau đầu<CLT> mà cô ấy\n"
+"phải chịu!"
 
 #. <CLT 3>全身の無数の傷<CLT>ってのは？
 #. あれは、事件とは関係ねーのか？
@@ -26,8 +28,7 @@ msgid ""
 "What about <CLT 3>the wounds all over the rest of her body<CLT>?\n"
 "They didn't have anything to do with it?"
 msgstr ""
-"Còn <CLT 3>những vết thương khắp phần còn lại của cơ thể<CLT> thì\n"
-"sao?\n"
+"Còn <CLT 3>những vết thương khắp phần còn lại của cơ thể<CLT> thì sao?\n"
 "Chúng không liên quan gì đến chuyện đó à?"
 
 #. モノクマファイルによると、
@@ -37,8 +38,8 @@ msgid ""
 "The Monokuma File makes it clear that <CLT 3>those weren't\n"
 "fresh wounds<CLT>."
 msgstr ""
-"Monokuma File đã ghi rõ rằng <CLT 3>đó không phải là những\n"
-"vết thương mới<CLT>."
+"Hồ Sơ Monokuma đã ghi rõ rằng <CLT 3>đó không phải là\n"
+"những vết thương mới<CLT>."
 
 #. 古傷じゃ…関係ねーか…
 msgctxt "0004 | YASUHIRO HAGAKURE"
@@ -46,8 +47,8 @@ msgid ""
 "Oh yeah, good point. If they were old, I guess they\n"
 "don't really matter..."
 msgstr ""
-"À đúng rồi. Nếu chúng là vết thương cũ thì chắc chúng\n"
-"không thật sự quan trọng..."
+"À đúng rồi. Nếu chúng là vết thương cũ thì chắc\n"
+"chúng không thật sự quan trọng..."
 
 #. では、間違いないな。
 #. あいつの致命傷は後頭部の殴打だったようだ…
@@ -56,8 +57,8 @@ msgid ""
 "Okay, then we're safe in assuming the blow to the back\n"
 "of her head is what killed her."
 msgstr ""
-"Vậy thì có thể kết luận rằng cú đánh vào sau đầu cô ấy\n"
-"chính là thứ đã giết cô ấy."
+"Vậy thì có thể kết luận rằng cú đánh vào sau đầu\n"
+"cô ấy chính là thứ đã giết cô ấy."
 
 #. じゃあ、凶器って…？
 msgctxt "0006 | AOI ASAHINA"
@@ -71,13 +72,13 @@ msgid ""
 "The M-Monokuma File says she was hit with a b-blunt\n"
 "object, about as thick as a m-metal pipe..."
 msgstr ""
-"Monokuma File nói rằng cô ấy bị đánh bằng một vật cùn,\n"
-"dày khoảng bằng một ống kim loại..."
+"Hồ Sơ Monokuma nói rằng cô ấy bị đánh bằng một\n"
+"vật cùn, dày khoảng bằng một ống kim loại..."
 
 #. …って事は、ツルハシだな！
 msgctxt "0008 | YASUHIRO HAGAKURE"
 msgid "...Oh! I bet it was the pickaxe!"
-msgstr "...Ồ! Tôi cá là nó là cái cuốc chim!"
+msgstr "...Ồ! Tớ cá là nó là cái cuốc chim!"
 
 #. ど、どうして…そうなるのよ…！
 #. ツルハシで殴ったら…殴打どころか頭蓋骨粉砕よ…！
@@ -96,8 +97,8 @@ msgid ""
 "Well...maybe they held it the other way, and hit her\n"
 "with the handle!"
 msgstr ""
-"À... có thể hung thủ cầm ngược nó và đánh bằng phần\n"
-"cán!"
+"À... có thể hung thủ cầm ngược nó và đánh bằng\n"
+"phần cán!"
 
 #. 無理よ…重さのバランスが悪いもの…
 #. い、威力のある一撃なんて不可能だわ…
@@ -140,8 +141,8 @@ msgid ""
 "Hahahaha! I feel the same way! Looks like we're on the\n"
 "same page this time!"
 msgstr ""
-"Ha-ha-ha! Tôi cũng cảm thấy vậy! Có vẻ lần này chúng ta\n"
-"cùng suy nghĩ rồi!"
+"Ha-ha-ha! Tôi cũng cảm thấy vậy! Có vẻ lần này\n"
+"chúng ta cùng suy nghĩ rồi!"
 
 #. 合ってるの、それ…？
 msgctxt "0016 | AOI ASAHINA"
@@ -165,7 +166,7 @@ msgid ""
 "M-Master!"
 msgstr ""
 "C-Chúng ta biết rồi sao!? Đúng là có thể tin tưởng\n"
-"ngài, B-Byakuya-sama!"
+"ngài, C-Chủ Nhân!"
 
 #. なんだべ？　本当の凶器って…？
 msgctxt "0019 | YASUHIRO HAGAKURE"
@@ -194,8 +195,8 @@ msgid ""
 "What!? If that's true, they did one heck of a job\n"
 "covering it up..."
 msgstr ""
-"Cái gì!? Nếu vậy thì hung thủ đã che giấu chuyện đó\n"
-"quá kỹ rồi..."
+"Cái gì!? Nếu vậy thì hung thủ đã che giấu chuyện\n"
+"đó quá kỹ rồi..."
 
 #. …お前はそんなにも処刑になりたいのか？
 msgctxt "0023 | BYAKUYA TOGAMI"
@@ -227,7 +228,7 @@ msgid ""
 "He's so appalled, h-he can't even talk...! You can see\n"
 "that, r-right Makoto!?"
 msgstr ""
-"Cậu ta kinh ngạc đến mức không thể nói nên lời...!\n"
+"Ngài ấy kinh ngạc đến mức không thể nói nên lời...!\n"
 "Cậu thấy rồi chứ, đúng không Makoto!?"
 
 #. なんで、腐川っちはわかるんだべ？
@@ -248,7 +249,7 @@ msgstr ""
 #. それ、違うと思う…
 msgctxt "0029 | AOI ASAHINA"
 msgid "I...don't think that's it."
-msgstr "Mình... không nghĩ là vậy đâu."
+msgstr "Tui... không nghĩ là vậy đâu."
 
 #. <CLT 4>みんなのボクに対する印象が、
 #. 悪くなったみたいだ…
@@ -270,8 +271,8 @@ msgid ""
 "Have you already forgotten? It was just a short while\n"
 "ago..."
 msgstr ""
-"Cậu quên rồi sao? Chuyện đó mới xảy ra cách đây không\n"
-"lâu mà..."
+"Cậu quên rồi sao? Chuyện đó mới xảy ra cách đây\n"
+"không lâu mà..."
 
 #. お前と調査を行った際に見つけたあれだ…
 msgctxt "0032 | BYAKUYA TOGAMI"
@@ -338,8 +339,8 @@ msgid ""
 "An arrow... That's what the culprit attacked Mukuro\n"
 "with?"
 msgstr ""
-"Một mũi tên... Đó là thứ hung thủ đã dùng để tấn công\n"
-"Mukuro sao?"
+"Một mũi tên... Đó là thứ hung thủ đã dùng để tấn\n"
+"công Mukuro sao?"
 
 #. あぁ、間違いない…
 msgctxt "0040 | BYAKUYA TOGAMI"
@@ -359,17 +360,15 @@ msgid ""
 "H-Hey! How dare you back-talk Master!? You have n-no\n"
 "right...!"
 msgstr ""
-"N-Này! Sao cô dám cãi lời ngài ấy!? Cô không có quyền\n"
-"đâu...!"
+"N-Này! Sao cô dám cãi lời ngài ấy!? Cô không có\n"
+"quyền đâu...!"
 
 #. だって、気になるんだから仕方ないじゃん！！
 msgctxt "0043 | AOI ASAHINA"
 msgid ""
 "I'm not back-talking anything! I'm just saying what I\n"
 "think!"
-msgstr ""
-"Mình không cãi gì cả! Mình chỉ nói suy nghĩ của mình\n"
-"thôi!"
+msgstr "Tui không cãi gì cả! Tui chỉ nói suy nghĩ của tui thôi!"
 
 #. <CLT 4>朝日奈さんが疑うのも無理ないか…
 #. だって、凶器には…
@@ -380,9 +379,8 @@ msgid ""
 "one more thing about that weapon...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Mình không trách Asahina nghi ngờ chuyện đó.\n"
-"Bởi vì hung khí còn có một điểm nữa...\n"
-"<CLT>"
+"<CLT 4>Mình không trách Hina nghi ngờ chuyện đó.\n"
+"Bởi vì hung khí còn có một điểm nữa... <CLT>"
 
 #. <CLT 4>もう１つ、<CLT><CLT 3>隠された秘密<CLT><CLT 4>があるんだもんな…
 #. <CLT>
@@ -391,3 +389,5 @@ msgid ""
 "<CLT 4>One more <CLT><CLT 3>secret<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Một <CLT><CLT 3>bí mật<CLT><CLT 4> nữa...\n"
+"<CLT>"
