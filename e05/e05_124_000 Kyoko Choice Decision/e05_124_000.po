@@ -138,7 +138,9 @@ msgstr "Sao? Không ai có lời phản biện nào sao?"
 #. 霧切の主張を認めるという事か？
 msgctxt "0015 | BYAKUYA TOGAMI"
 msgid "Have you decided to accept her assertion as fact?"
-msgstr "Các người đã quyết định chấp nhận lời khẳng định của cô ta là sự thật sao?"
+msgstr ""
+"Các người đã quyết định chấp nhận lời khẳng định\n"
+"của cô ta là sự thật sao?"
 
 #. ………………
 msgctxt "0016 | MAKOTO NAEGI"
@@ -157,9 +159,8 @@ msgid ""
 "I suppose we have to admit that Kyoko didn't put the\n"
 "locker key in her room, that it was someone else."
 msgstr ""
-"Có vẻ chúng ta phải thừa nhận rằng Kyoko không phải là\n"
-"người đặt chìa khóa tủ khóa vào phòng cô ấy, mà là một\n"
-"người khác."
+"Có vẻ ta phải thừa nhận rằng chìa khóa tủ không được\n"
+"Kyoko đặt trong phòng mình, mà là do kẻ khác."
 
 #. でも…他の誰かって…
 msgctxt "0019 | AOI ASAHINA"
@@ -170,7 +171,9 @@ msgstr "Nhưng... còn ai khác có thể làm chuyện đó chứ?"
 #. 十神っちなんだよな…？
 msgctxt "0020 | YASUHIRO HAGAKURE"
 msgid "I mean, Byakuya had her room key, right?"
-msgstr "Ý tôi là, Byakuya giữ chìa khóa phòng của cô ấy, đúng không?"
+msgstr ""
+"Ý tớ là, Byakuya giữ chìa khóa phòng của cô ấy,\n"
+"đúng không?"
 
 #. あ、あんた…ッ！　何言ってんのよ…ッ！
 msgctxt "0021 | TOUKO FUKAWA"
@@ -184,9 +187,8 @@ msgid ""
 "But of course I have an <CLT 3>alibi<CLT>. From nighttime on, I\n"
 "was with you guys the entire time..."
 msgstr ""
-"Nhưng tất nhiên tôi có <CLT 3>bằng chứng ngoại phạm<CLT>.\n"
-"Từ sau giờ ban đêm, tôi đã ở cùng các người suốt thời\n"
-"gian đó..."
+"Nhưng tất nhiên tôi có <CLT 3>chứng cứ ngoại phạm<CLT>. Từ sau giờ\n"
+"ban đêm, tôi đã ở cùng các người suốt thời gian đó..."
 
 #. 植物庭園での殺人も…霧切の部屋に鍵を置く事も…
 #. 俺には不可能だ…
@@ -277,9 +279,8 @@ msgid ""
 "Mukuro, who we didn't even know existed, suddenly\n"
 "shows up dead, and then we're thrown into a trial...!"
 msgstr ""
-"Mukuro, người mà chúng ta thậm chí không biết tồn tại,\n"
-"đột nhiên xuất hiện trong tình trạng đã chết, rồi chúng\n"
-"ta lại bị đưa vào một phiên tòa...!"
+"Mukuro, người mà chúng ta chẳng biết tồn tại, đột nhiên xuất\n"
+"hiện khi đã chết, rồi chúng ta lại bị đưa vào một phiên tòa...!"
 
 #. それに霧切さんも言ってただろ？　黒幕の罠だって！
 #. だから…きっとこれは…ッ！！
@@ -289,8 +290,7 @@ msgid ""
 "for us! So that's why...this has to be—!"
 msgstr ""
 "Và Kyoko cũng đã nói rồi, đây là cái bẫy mà kẻ chủ mưu\n"
-"giăng ra cho chúng ta! Vì vậy... chuyện này chắc chắn\n"
-"phải là—!"
+"giăng ra! Vì vậy... chuyện này chắc chắn phải là—!"
 
 #. はい！　<CLT 3>タイムアップ<CLT>でーす！！
 msgctxt "0037 | MONOKUMA"
@@ -309,7 +309,7 @@ msgid ""
 "Time's up! Class trial's all over! Everyone can stop\n"
 "talking now!"
 msgstr ""
-"Hết giờ! Phiên tòa lớp học kết thúc rồi! Mọi người có\n"
+"Hết giờ! Lớp xét xử kết thúc rồi! Mọi người có\n"
 "thể ngừng nói chuyện được rồi!"
 
 #. な、なんだよ…時間切れって…？
@@ -324,7 +324,7 @@ msgid ""
 "What do you mean time's up? There's no \"time's up.\"\n"
 "Since when have we—?"
 msgstr ""
-"Ý cậu là hết giờ sao? Không có chuyện \"hết giờ\" nào cả.\n"
+"Ý mi hết giờ là thế nào? Không có chuyện \"hết giờ\" nào cả.\n"
 "Từ khi nào chúng ta—?"
 
 #. 霧切さんが遅刻したせいだよ！
@@ -334,8 +334,8 @@ msgid ""
 "It's because you were late! So we had to push back the\n"
 "start time!"
 msgstr ""
-"Là vì cô đến muộn! Vì vậy chúng ta phải dời thời gian\n"
-"bắt đầu lại!"
+"Là vì mi đến muộn! Vì vậy chúng ta phải dời thời\n"
+"gian bắt đầu lại!"
 
 #. …という訳で、そろそろ投票タイムといきましょうか！
 #. オマエラ、お手元のスイッチで投票してくださーい！
@@ -359,14 +359,13 @@ msgid ""
 "Now, who will be chosen as the blackened? Will you\n"
 "make the right choice, or the dreadfully wrong one?"
 msgstr ""
-"Nào, ai sẽ bị chọn là kẻ hắc ám đây!?\n"
-"Liệu các người sẽ đưa ra lựa chọn đúng, hay một lựa\n"
-"chọn sai lầm khủng khiếp?"
+"Bây giờ, ai sẽ là kẻ thủ ác đây!? Liệu đó là lựa chọn\n"
+"chính xác hay là một sai lầm khủng khiếp!?"
 
 #. ちょ、ちょっと…待てよ…！
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "Hey, hold on!"
-msgstr "<CLT 26>Này, chờ chút đã!<CLT>"
+msgstr "Này, chờ chút đã!"
 
 #. さぁ、どうなんだーーッ！？
 msgctxt "0047 | MONOKUMA"

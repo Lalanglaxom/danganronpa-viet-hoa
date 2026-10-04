@@ -14,7 +14,7 @@ msgstr ""
 #. あれ…あれれ…？
 msgctxt "0001 | MONOKUMA"
 msgid "Huh? Huuuuh!?"
-msgstr "Hả? Cái gì cơ!?"
+msgstr "Hả? Hởởởởở!?"
 
 #. な、なんだよこれ…
 #. なんなんだよ…！
@@ -50,22 +50,24 @@ msgstr "Chẳng lẽ là thứ virus ngu ngốc từ tên ngốc đó sao!?"
 #. さては、ネットワークに侵入した時だな…
 msgctxt "0008 | MONOKUMA"
 msgid "He must have planted it when he invaded my network...!"
-msgstr "Chắc chắn hắn đã cài nó khi xâm nhập vào mạng của ta...!"
+msgstr ""
+"Chắc chắn hắn đã cài nó khi xâm nhập vào mạng\n"
+"của ta...!"
 
 #. チクショウ…やりやがったな…！
 msgctxt "0009 | MONOKUMA"
 msgid "Damn it all to hell! I don't believe this!"
-msgstr "Chết tiệt! Không thể tin được chuyện này!"
+msgstr "Chết tiệt thật chứ! Không thể tin được chuyện này!"
 
 #. どうやら計算が狂ったみたいね…
 msgctxt "0010 | KYOUKO KIRIGIRI"
 msgid "It seems you finally made a miscalculation."
-msgstr "Có vẻ cuối cùng cậu cũng tính toán sai rồi."
+msgstr "Có vẻ cuối cùng mi cũng tính toán sai rồi."
 
 #. いえ、狂いっぱなしね…
 msgctxt "0011 | KYOUKO KIRIGIRI"
 msgid "No...you miscalculated from the very beginning."
-msgstr "Không... cậu đã tính sai ngay từ đầu."
+msgstr "Không... mi đã tính sai ngay từ đầu."
 
 #. …なんだって？
 msgctxt "0012 | MONOKUMA"
@@ -77,19 +79,19 @@ msgctxt "0013 | KYOUKO KIRIGIRI"
 msgid ""
 "What I'm saying is, you shouldn't have underestimated\n"
 "us."
-msgstr ""
-"Ý tôi là, cậu đã quá xem thường\n"
-"chúng tôi."
+msgstr "Ý ta là, mi đã quá xem thường chúng ta."
 
 #. フン…何を勝ち誇った気になってんのさ…！
 msgctxt "0014 | MONOKUMA"
 msgid "Hmph! Why are you talking like you've already won!?"
-msgstr "Hừ! Sao các người lại nói như thể đã thắng rồi vậy!?"
+msgstr "Hừ! Sao bọn bây lại nói như thể đã thắng rồi vậy!?"
 
 #. 別に…痛くもかゆくもないよ…
 msgctxt "0015 | MONOKUMA"
 msgid "I barely felt a thing! It was a pinch, an itch!"
-msgstr "Ta hầu như chẳng cảm thấy gì cả! Chỉ như bị châm nhẹ thôi!"
+msgstr ""
+"Ta hầu như chẳng cảm thấy gì cả! Chỉ như bị châm, \n"
+"bị ngứa thôi!"
 
 #. 妙なウィルスだって今ので終わりだろ？
 #. それに、苗木クンだってそうだよ。
@@ -118,9 +120,8 @@ msgid ""
 "To waste away in a garbage-strewn pit... In a way,\n"
 "that's an even BETTER special punishment!"
 msgstr ""
-"Chết dần chết mòn trong một cái hố đầy rác...\n"
-"Theo một cách nào đó, đó còn là một màn trừng phạt đặc\n"
-"biệt TUYỆT VỜI hơn!"
+"Chết dần chết mòn trong một cái hố đầy rác... Theo một cách nào\n"
+"đó, đó còn là một màn trừng phạt đặc biệt TUYỆT VỜI hơn!"
 
 #. ………………
 msgctxt "0019 | KYOUKO KIRIGIRI"
@@ -180,7 +181,9 @@ msgstr "Rốt cuộc chuyện quái gì đang xảy ra vậy?"
 #. …大丈夫よ。追い詰められてるのは私達じゃないわ。
 msgctxt "0029 | KYOUKO KIRIGIRI"
 msgid "It's okay. We're not the ones being trapped this time."
-msgstr "Không sao đâu. Lần này người bị dồn vào thế bí không phải chúng ta."
+msgstr ""
+"Không sao đâu. Lần này người bị dồn vào thế bí\n"
+"không phải chúng ta."
 
 #. え…？
 msgctxt "0030 | AOI ASAHINA"
@@ -190,7 +193,7 @@ msgstr "Hả...?"
 #. むしろ、追い詰められているのは黒幕の方なのよ…
 msgctxt "0031 | KYOUKO KIRIGIRI"
 msgid "Now it's the mastermind that's ensnared..."
-msgstr "Ngược lại, kẻ đang bị dồn vào đường cùng chính là kẻ chủ mưu..."
+msgstr "Giờ kẻ chủ mưu mới là người đang bị dồn vào đường cùng..."
 
 #. どういう…意味だ…？
 msgctxt "0032 | BYAKUYA TOGAMI"

@@ -19,12 +19,12 @@ msgstr "Cái gì...?"
 #. ボクが……犯人…？
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "You think *I'm* the killer...?"
-msgstr "Các người nghĩ *mình* là hung thủ sao...?"
+msgstr "Các cậu nghĩ *tớ* là hung thủ sao...?"
 
 #. すまんべ…苗木っち…
 msgctxt "0003 | YASUHIRO HAGAKURE"
 msgid "Sorry, man..."
-msgstr "Xin lỗi nhé, người anh em..."
+msgstr "Xin lỗi, người anh em..."
 
 #. ご…ごめんね……
 msgctxt "0004 | AOI ASAHINA"
@@ -49,12 +49,14 @@ msgstr "Mọi người... mọi người sai rồi...!"
 #. 違うんだ！　ボクは犯人なんかじゃ…！
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "You've got it all wrong! I didn't do it!"
-msgstr "Mọi người hiểu sai hoàn toàn rồi! Mình không làm chuyện đó!"
+msgstr ""
+"Mọi người hiểu sai hoàn toàn rồi! Tớ không làm\n"
+"chuyện đó!"
 
 #. はい！　大・正・解！
 msgctxt "0009 | MONOKUMA"
 msgid "Good job, everyone!"
-msgstr "Làm tốt lắm, mọi người!"
+msgstr "Làm tốt lắm, các em!"
 
 #. せ、正解…？
 msgctxt "0010 | MAKOTO NAEGI"
@@ -64,12 +66,12 @@ msgstr "L-Làm tốt lắm...?"
 #. うん。正解だよ。
 msgctxt "0011 | MONOKUMA"
 msgid "Yeah. They got it right!"
-msgstr "Đúng vậy. Các bạn đã trả lời đúng!"
+msgstr "Đúng vậy. Các em đã trả lời đúng!"
 
 #. そ、そんなの…おかしい……
 msgctxt "0012 | MAKOTO NAEGI"
 msgid "N-No, I know that's not true..."
-msgstr "K-Không, mình biết chuyện đó không đúng mà..."
+msgstr "K-Không, ta biết chuyện đó không đúng... "
 
 #. おかしいよ！　やっぱり変だ！
 #. この学級裁判はどう考えても変だよ！
@@ -78,13 +80,13 @@ msgid ""
 "None of this makes any sense... This whole trial\n"
 "doesn't make any sense!"
 msgstr ""
-"Không có chuyện nào trong số này hợp lý cả...\n"
-"Toàn bộ phiên tòa này cũng chẳng hợp lý chút nào!"
+"Không có chuyện nào hợp lý cả...\n"
+"Toàn bộ lớp xét xử này hoàn toàn chẳng hợp lý!"
 
 #. 何もおかしくなーーーーい！！
 msgctxt "0014 | MONOKUMA"
 msgid "It makes perfect seeeeEEEENNNSSSSSEEE!!!"
-msgstr "Không có gì bất thường cảaaaa!!!"
+msgstr "Nó hoàn toàn hợp LÝÝÝÝÝÝÝÝÝÝÝ!!!"
 
 #. いつもと同じだよ！　いつもと同じ学級裁判だよ！
 #. だから、いつもと同じように始めるよ！
@@ -93,9 +95,8 @@ msgid ""
 "It's the same as always! It's just like all the other\n"
 "class trials! And I'm gonna end it the same way!"
 msgstr ""
-"Vẫn giống như mọi khi thôi! Đây cũng giống như tất cả\n"
-"những phiên tòa lớp học khác! Và ta sẽ kết thúc nó theo\n"
-"cách tương tự!"
+"Vẫn giống như mọi khi thôi! Cũng giống như tất cả những\n"
+"lớp xét xử khác! Và ta sẽ kết thúc nó theo cách tương tự!"
 
 #. ワックワクドッキドキの、
 #. おしおきターイム…をねッ！！
@@ -104,8 +105,8 @@ msgid ""
 "It's time for your heartpounding, positively thrilling\n"
 "punishment!"
 msgstr ""
-"Đã đến lúc cho màn trừng phạt hồi hộp, đầy kích thích\n"
-"của các ngươi rồi!"
+"Đã đến lúc cho màn trừng phạt hồi hộp, đầy kích\n"
+"thích của các bạn rồi!"
 
 #. ま、待てよ…どうしてボクが…
 msgctxt "0017 | MAKOTO NAEGI"
@@ -129,8 +130,8 @@ msgid ""
 "I don't expect you to forgive me. I know this is all\n"
 "my fault..."
 msgstr ""
-"Tôi không mong các cậu sẽ tha thứ cho tôi.\n"
-"Tôi biết tất cả chuyện này đều là lỗi của tôi..."
+"Tớ không mong các cậu sẽ tha thứ cho tớ.\n"
+"Tớ biết tất cả chuyện này đều là lỗi của tớ... "
 
 #. 霧切…さん…？
 msgctxt "0021 | MAKOTO NAEGI"
