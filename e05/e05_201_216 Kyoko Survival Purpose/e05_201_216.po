@@ -14,7 +14,7 @@ msgstr ""
 #. 【生き延びなくてはいけない理由】
 msgctxt "0001 | CHOICE/RE:ACT"
 msgid "[reason that I had to survive]"
-msgstr "[lý do tôi phải sống sót]"
+msgstr "[lý do mà tớ phải sống sót]"
 
 #. 生き延びなくてはいけない理由って…？
 msgctxt "0002 | MAKOTO NAEGI"
@@ -24,18 +24,20 @@ msgstr "Lý do cậu phải sống sót là gì?"
 #. あなたには…すべてを話しておくわね…
 msgctxt "0003 | KYOUKO KIRIGIRI"
 msgid "I'll tell you. I'll tell you everything..."
-msgstr "Tôi sẽ nói cho cậu biết. Tôi sẽ nói tất cả mọi thứ..."
+msgstr "Tớ sẽ nói cho cậu biết. Tớ sẽ nói tất cả mọi thứ... "
 
 #. 私が生き延びなくてはいけない理由…
 #. それは…
 msgctxt "0004 | KYOUKO KIRIGIRI"
 msgid "The reason I have to survive..."
-msgstr "Lý do tôi phải sống sót..."
+msgstr "Lý do tớ phải sống sót... "
 
 #. 私が、ここに来た<CLT 3>目的<CLT>の事よ…
 msgctxt "0005 | KYOUKO KIRIGIRI"
 msgid "...is so that I can do <CLT 3>what I came to this school to do<CLT>."
-msgstr "...là để tôi có thể thực hiện <CLT 3>điều tôi đến ngôi trường này để làm<CLT>."
+msgstr ""
+"...là để tớ có thể thực hiện \n"
+"<CLT 3>điều tớ đến ngôi trường này để làm<CLT>."
 
 #. …え？
 msgctxt "0006 | MAKOTO NAEGI"
@@ -49,7 +51,7 @@ msgid ""
 "I made up my mind to come to Hope's Peak Academy for\n"
 "one <CLT 1>[very important reason]<CLT>."
 msgstr ""
-"Tôi đã quyết định đến Học viện Hope's Peak vì một\n"
+"Tớ đã quyết định đến Học viện Đỉnh Hy Vọng vì một\n"
 "<CLT 1>[lý do vô cùng quan trọng]<CLT>."
 
 #. 【大事な目的】
@@ -61,12 +63,14 @@ msgstr "[lý do vô cùng quan trọng]"
 #. 希望ヶ峰学園に来たって事…？
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "So you have some reason for coming to Hope's Peak?"
-msgstr "Vậy là cậu có lý do nào đó để đến Học viện Hope's Peak sao?"
+msgstr ""
+"Vậy là cậu có lý do nào đó để đến Học viện Đỉnh\n"
+"Hy Vọng sao?"
 
 #. そう…だったはず…
 msgctxt "0010 | KYOUKO KIRIGIRI"
 msgid "That's right. At least, I did, once."
-msgstr "Đúng vậy. Ít nhất là trước đây tôi từng có."
+msgstr "Đúng vậy. Ít nhất là trước đây tớ từng có."
 
 #. そうだった？　はず？
 msgctxt "0011 | MAKOTO NAEGI"
@@ -77,7 +81,7 @@ msgstr "Trước đây...?"
 #. その大事な目的を…ごく最近まで……
 msgctxt "0012 | KYOUKO KIRIGIRI"
 msgid "Until recently...I'd forgotten what it was."
-msgstr "Cho đến gần đây... tôi đã quên mất nó là gì."
+msgstr "Cho đến gần đây... tớ đã quên mất nó là gì."
 
 #. <CLT 4>忘れてた…？　それって…！
 #. <CLT>
@@ -92,7 +96,7 @@ msgstr ""
 #. 記憶がないの…
 msgctxt "0014 | KYOUKO KIRIGIRI"
 msgid "I had no memory of what my purpose was."
-msgstr "Tôi không còn nhớ mục đích của mình là gì."
+msgstr "Tớ không còn nhớ mục đích của tớ là gì."
 
 #. 記憶がないって…まさか…！
 msgctxt "0015 | MAKOTO NAEGI"
@@ -102,7 +106,7 @@ msgstr "Không còn ký ức sao? Không thể nào!"
 #. <CLT 3>記憶喪失<CLT>…って事？
 msgctxt "0016 | AOI ASAHINA"
 msgid "<CLT 3>Amnesia<CLT>...?"
-msgstr "<CLT 3>Mất trí nhớ<CLT>...?"
+msgstr "<CLT 3>Mất trí nhớ<CLT>... sao?"
 
 #. ………………
 msgctxt "0017 | KYOUKO KIRIGIRI"
@@ -154,13 +158,13 @@ msgstr "Cậu đang nói về lúc chúng ta <CLT 3>bất tỉnh<CLT> đúng kh�
 #. ここに閉じ込められてて…
 msgctxt "0023 | MAKOTO NAEGI"
 msgid "I fainted, and when I woke up...I was trapped here."
-msgstr "Mình đã ngất đi, và khi tỉnh lại... mình đã bị nhốt ở đây."
+msgstr "Tớ đã ngất đi, và khi tỉnh lại... tớ đã bị nhốt ở đây."
 
 #. そして、あそこで気を失って、
 #. 目覚めた直後だったわ…
 msgctxt "0024 | KYOUKO KIRIGIRI"
 msgid "I fainted, too. And when *I* woke up..."
-msgstr "Tôi cũng đã ngất đi. Và khi *tôi* tỉnh lại..."
+msgstr "Tớ cũng đã ngất đi. Và khi *tớ* tỉnh lại... "
 
 #. 自分の中の…妙な違和感に気付いたのは……
 msgctxt "0025 | KYOUKO KIRIGIRI"
@@ -168,7 +172,7 @@ msgid ""
 "...I noticed a strange feeling of...separation within\n"
 "myself. A disconnect."
 msgstr ""
-"...tôi nhận ra một cảm giác xa cách kỳ lạ bên trong\n"
+"...tớ nhận ra một cảm giác xa cách kỳ lạ bên trong\n"
 "chính mình. Một sự tách biệt."
 
 #. 今思えば、あの時すでに、
@@ -178,13 +182,13 @@ msgid ""
 "Thinking back on it now, at that point my memory was\n"
 "gone."
 msgstr ""
-"Bây giờ nghĩ lại, ngay lúc đó ký ức của tôi\n"
+"Bây giờ nghĩ lại, ngay lúc đó ký ức của tớ\n"
 "đã biến mất."
 
 #. あの時…私は忘れてしまったの…
 msgctxt "0027 | KYOUKO KIRIGIRI"
 msgid "At that time...I'd forgotten."
-msgstr "Lúc đó... tôi đã quên mất."
+msgstr "Lúc đó... tớ đã quên mất."
 
 #. この学園に来た大事な目的の事も…
 #. 自分の“超高校級”と呼ばれる能力の事も…
@@ -193,9 +197,8 @@ msgid ""
 "I couldn't remember why I'd come to this school, and I\n"
 "couldn't remember what my \"ultimate\" ability was."
 msgstr ""
-"Tôi không thể nhớ vì sao mình đến ngôi trường này,\n"
-"và cũng không thể nhớ năng lực \"siêu cao trung cấp\"\n"
-"của mình là gì."
+"Tớ không thể nhớ vì sao mình đến ngôi trường này, và cũng không\n"
+"thể nhớ năng lực \"siêu học sinh\" của mình là gì."
 
 #. でも、忘れたなんて…
 #. どうして、そんな事が…？
@@ -210,8 +213,8 @@ msgid ""
 "Strange, isn't it? It's hard to imagine it happened by\n"
 "chance. It seems much too convenient."
 msgstr ""
-"Kỳ lạ đúng không? Rất khó tin rằng đó chỉ là sự trùng\n"
-"hợp. Nó có vẻ quá thuận lợi."
+"Kỳ lạ đúng không? Rất khó tin rằng đó chỉ là sự\n"
+"trùng hợp. Nó có vẻ quá thuận lợi."
 
 #. じゃあ、もしかして…
 #. 霧切さんの記憶がなくなったのって…
@@ -219,9 +222,7 @@ msgctxt "0031 | MAKOTO NAEGI"
 msgid ""
 "Are you saying you think you lost your memory\n"
 "because...?"
-msgstr ""
-"Ý cậu là cậu nghĩ mình mất trí nhớ\n"
-"là vì...?"
+msgstr "Ý cậu là cậu nghĩ mình mất trí nhớ là vì...?"
 
 #. 間違いないわ。<CLT 3>黒幕の仕業<CLT>よ。
 #. 黒幕が私の記憶を奪ったのよ…
@@ -230,8 +231,8 @@ msgid ""
 "I don't think. I'm positive it was <CLT 3>the work of the\n"
 "mastermind<CLT>. They stole my memory..."
 msgstr ""
-"Tôi không nghĩ vậy. Tôi chắc chắn đó là <CLT 3>do kẻ chủ mưu gây ra<CLT>.\n"
-"Hắn đã lấy đi ký ức của tôi..."
+"Tớ không nghĩ. Tớ chắc chắn đó là <CLT 3>do kẻ chủ\n"
+"mưu gây ra<CLT>. Hắn đã lấy đi ký ức của tớ..."
 
 #. で、でも…
 #. 黒幕はどうして、そんな事を？
@@ -242,7 +243,7 @@ msgstr "N-Nhưng... tại sao hắn lại muốn làm chuyện đó?"
 #. 考えられる理由は１つしかないわ。
 msgctxt "0034 | KYOUKO KIRIGIRI"
 msgid "There's only one reason I can come up with."
-msgstr "Chỉ có một lý do mà tôi có thể nghĩ đến."
+msgstr "Chỉ có một lý do mà tớ có thể nghĩ đến."
 
 #. 私の目的…そして私の能力が…
 #. 黒幕にとってジャマだったから…
@@ -251,9 +252,8 @@ msgid ""
 "Because of my purpose, and my ability. Somehow, they\n"
 "would interfere with the mastermind's plans."
 msgstr ""
-"Vì mục đích và năng lực của tôi.\n"
-"Chúng bằng cách nào đó sẽ cản trở kế hoạch của kẻ\n"
-"chủ mưu."
+"Vì mục đích và năng lực của tớ. Chúng bằng cách nào\n"
+"đó sẽ cản trở kế hoạch của kẻ chủ mưu."
 
 #. <CLT 4>黒幕にとってジャマだった…？
 #. だから、黒幕は霧切さんの記憶を奪った…？
@@ -278,13 +278,13 @@ msgid ""
 "...somehow, my memories may be connected to the\n"
 "mystery of this school, and the mastermind."
 msgstr ""
-"...bằng cách nào đó, ký ức của tôi có thể liên quan\n"
+"...bằng cách nào đó, ký ức của tớ có thể liên quan\n"
 "đến bí ẩn của ngôi trường này và kẻ chủ mưu."
 
 #. だからこそ、私はそれを突き止めようとした。
 msgctxt "0039 | KYOUKO KIRIGIRI"
 msgid "Which is why I have to get them back."
-msgstr "Đó là lý do tôi phải lấy lại chúng."
+msgstr "Đó là lý do tớ phải lấy lại chúng."
 
 #. その為に、ずっと１人で調べていたのよ。
 msgctxt "0040 | KYOUKO KIRIGIRI"
@@ -292,7 +292,7 @@ msgid ""
 "That's why I've been investigating things by myself\n"
 "this whole time."
 msgstr ""
-"Đó là lý do tôi đã tự mình điều tra mọi chuyện\n"
+"Đó là lý do tớ đã tự mình điều tra mọi chuyện\n"
 "suốt thời gian qua."
 
 #. でも、そういう事なら…
@@ -312,8 +312,8 @@ msgid ""
 "If I did that, and we all worked as one, the\n"
 "mastermind would have noticed right away. Plus..."
 msgstr ""
-"Nếu tôi làm vậy và tất cả chúng ta cùng hành động,\n"
-"kẻ chủ mưu sẽ nhận ra ngay lập tức. Hơn nữa..."
+"Nếu tớ làm vậy và tất cả chúng ta cùng hành động,\n"
+"kẻ chủ mưu sẽ nhận ra ngay lập tức. Hơn nữa... "
 
 #. 黒幕が“私達の中”に潜んでいる可能性だって、
 #. あるんだし…
@@ -336,7 +336,7 @@ msgid ""
 "Well, don't make too big a deal of it. It's just a\n"
 "possibility."
 msgstr ""
-"Đừng làm chuyện đó nghiêm trọng quá.\n"
+"Đừng xem chuyện đó nghiêm trọng quá.\n"
 "Đó chỉ là một khả năng thôi."
 
 #. だけど、可能性がある以上は、
@@ -380,8 +380,8 @@ msgid ""
 "into her missing memory by herself.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Vậy nên việc cô ấy tự mình điều tra về ký ức đã mất\n"
-"của mình cũng là điều hợp lý.\n"
+"<CLT 4>Vậy nên việc cô ấy tự mình điều tra về ký ức đã\n"
+"mất cũng là điều hợp lý.\n"
 "<CLT>"
 
 #. そうは言っても、やっぱり１人では限界があったわ。
@@ -391,13 +391,13 @@ msgid ""
 "That being said, there was a limit to what I could do\n"
 "by myself. Which is why I asked you to help me."
 msgstr ""
-"Tuy nhiên, những gì tôi có thể làm một mình cũng có\n"
-"giới hạn. Đó là lý do tôi nhờ cậu giúp đỡ."
+"Tuy nhiên, những gì tớ có thể làm một mình cũng có\n"
+"giới hạn. Đó là lý do tớ nhờ cậu giúp đỡ."
 
 #. でも、どうしてボクに…？
 msgctxt "0051 | MAKOTO NAEGI"
 msgid "But...why me?"
-msgstr "Nhưng... tại sao lại là mình?"
+msgstr "Nhưng... tại sao lại là tớ?"
 
 #. あなたが黒幕って可能性が１番低いと思ったから。
 #. 正真正銘、ただの勘だけどね…
@@ -406,9 +406,8 @@ msgid ""
 "Because among everyone, you were least likely to be\n"
 "the mastermind. That was just intuition, but..."
 msgstr ""
-"Vì trong tất cả mọi người, cậu là người ít có khả năng\n"
-"trở thành kẻ chủ mưu nhất. Đó chỉ là trực giác của tôi,\n"
-"nhưng..."
+"Vì trong tất cả mọi người, cậu là người ít có khả năng trở thành\n"
+"kẻ chủ mưu nhất. Đó chỉ là trực giác của tớ, nhưng..."
 
 #. そ、そっか…
 msgctxt "0053 | MAKOTO NAEGI"
@@ -422,24 +421,23 @@ msgid ""
 "Your intuition was right, though. There's no way an\n"
 "ordinary kid like me could've been the mastermind."
 msgstr ""
-"Nhưng trực giác đó của cậu đã đúng.\n"
-"Không đời nào một người bình thường như mình lại có\n"
-"thể là kẻ chủ mưu."
+"Nhưng trực giác đó của cậu đã đúng. Không đời nào một\n"
+"người bình thường như tớ lại có thể là kẻ chủ mưu."
 
 #. ボクは…知っている…
 msgctxt "0055 | MAKOTO NAEGI"
 msgid "I understand..."
-msgstr "Mình... hiểu rồi..."
+msgstr "Tôi... hiểu rồi..."
 
 #. ボクは…全部知っているはずだ…
 msgctxt "0056 | MAKOTO NAEGI"
 msgid "I should...understand everything."
-msgstr "Mình nên... hiểu tất cả mọi chuyện."
+msgstr "Tôi nên... hiểu tất cả mọi chuyện."
 
 #. ボクの目的は…ここから出る事じゃない…
 msgctxt "0057 | MAKOTO NAEGI"
 msgid "My goal isn't to get out of here..."
-msgstr "Mục đích của mình không phải là rời khỏi nơi này..."
+msgstr "Mục đích của tôi không phải là rời khỏi nơi này..."
 
 #. ここに…残る事なんだ。
 msgctxt "0058 | MAKOTO NAEGI"
@@ -505,12 +503,12 @@ msgstr ""
 #. …これでも、私はあなたを信頼してたのよ？
 msgctxt "0066 | KYOUKO KIRIGIRI"
 msgid "Even now, I still trust you, you know."
-msgstr "Cho đến bây giờ, tôi vẫn tin tưởng cậu."
+msgstr "Cho đến bây giờ, tớ vẫn tin tưởng cậu."
 
 #. ただ…私は人を頼るのに慣れてないから…
 msgctxt "0067 | KYOUKO KIRIGIRI"
 msgid "It's just... I'm not used to relying on others."
-msgstr "Chỉ là... tôi không quen dựa dẫm vào người khác."
+msgstr "Chỉ là... tớ không quen dựa dẫm vào người khác."
 
 #. あまり上手く頼めなかったかもしれない…
 #. そのせいで、納得のいかない思いをさせたかもね…
@@ -519,8 +517,8 @@ msgid ""
 "I know I never asked you for help the right way, so I\n"
 "understand if you're not convinced..."
 msgstr ""
-"Tôi biết mình chưa bao giờ nhờ cậu giúp đỡ đúng cách,\n"
-"nên tôi hiểu nếu cậu vẫn chưa thể chấp nhận..."
+"Tớ biết mình chưa bao giờ nhờ cậu giúp đỡ đúng cách,\n"
+"nên tớ hiểu nếu cậu vẫn chưa thể chấp nhận... "
 
 #. <CLT 4>正直、納得のいかない思い…だらけだったけど…
 #. <CLT>
@@ -529,8 +527,8 @@ msgid ""
 "<CLT 4>Honestly, I *was* convinced.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thật lòng mà nói, mình đã không thể chấp nhận chuyện\n"
-"đó.\n"
+"<CLT 4>Thật lòng mà nói, mình đã không thể chấp nhận\n"
+"chuyện đó.\n"
 "<CLT>"
 
 #. <CLT 4>それも…霧切さんの個性って事なのかもな……
@@ -546,7 +544,7 @@ msgstr ""
 #. 【私の目的と私の能力】
 msgctxt "0071 | CHOICE/RE:ACT"
 msgid "[my purpose, and my ability]"
-msgstr "[mục đích và năng lực của tôi]"
+msgstr "[mục đích và năng lực của tớ]"
 
 #. 霧切さんの…能力って…
 msgctxt "0072 | MAKOTO NAEGI"
@@ -557,12 +555,14 @@ msgstr "Năng lực của Kyoko..."
 #. それは、周りからこう呼ばれていたはずよ…
 msgctxt "0073 | KYOUKO KIRIGIRI"
 msgid "My ability—what everyone should have known me for..."
-msgstr "Năng lực của tôi — thứ mà mọi người đáng lẽ phải biết đến..."
+msgstr ""
+"Năng lực của tớ — thứ mà mọi người đáng lẽ phải\n"
+"biết đến..."
 
 #. <CLT 3>“超高校級の探偵”<CLT>って…
 msgctxt "0074 | KYOUKO KIRIGIRI"
 msgid "I'm the <CLT 3>Ultimate Detective<CLT>."
-msgstr "Tôi là <CLT 3>Thám tử siêu cao trung cấp<CLT>."
+msgstr "Tớ là <CLT 3>Siêu Học Sinh Thám Tử<CLT>."
 
 #. <CLT 4>超高校級の…探偵…？
 #. <CLT>
@@ -571,14 +571,14 @@ msgid ""
 "<CLT 4>The Ultimate...Detective?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Thám tử... siêu cao trung cấp sao?\n"
+"<CLT 4>Siêu Học Sinh... Thám Tử?\n"
 "<CLT>"
 
 #. そして、私が希望ヶ峰学園に来た目的…
 #. それは…
 msgctxt "0076 | KYOUKO KIRIGIRI"
 msgid "And the reason I came to Hope's Peak Academy..."
-msgstr "Và lý do tôi đến Học viện Hope's Peak..."
+msgstr "Và lý do tớ đến Học viện Đỉnh Hy Vọng... "
 
 #. この学園で<CLT 1>【ある人物】<CLT>と会う事だったのよ。
 msgctxt "0077 | KYOUKO KIRIGIRI"
@@ -586,19 +586,19 @@ msgid ""
 "There was <CLT 1>[someone I had to find]<CLT> here in the\n"
 "school."
 msgstr ""
-"Có <CLT 1>[một người mà tôi phải tìm]<CLT> ở trong\n"
-"ngôi trường này."
+"Có <CLT 1>[một người mà tớ phải tìm]<CLT> ở trong ngôi\n"
+"trường này."
 
 #. 私は、その人と、
 #. どうしても会う必要があったの。
 msgctxt "0078 | KYOUKO KIRIGIRI"
 msgid "Whatever it took, I *had* to find them."
-msgstr "Bằng mọi giá, tôi *phải* tìm được người đó."
+msgstr "Bằng mọi giá, tớ *phải* tìm được người đó."
 
 #. 【ある人物】
 msgctxt "0079 | CHOICE/RE:ACT"
 msgid "[someone I had to find]"
-msgstr "[một người mà tôi phải tìm]"
+msgstr "[một người mà tớ phải tìm]"
 
 #. ある人物って…誰の事…？
 msgctxt "0080 | MAKOTO NAEGI"
@@ -613,7 +613,7 @@ msgstr "Chà..."
 #. <CLT 3>希望ヶ峰学園の学園長<CLT>よ…
 msgctxt "0082 | KYOUKO KIRIGIRI"
 msgid "It was the <CLT 3>headmaster of Hope's Peak Academy<CLT>."
-msgstr "Đó là <CLT 3>hiệu trưởng của Học viện Hope's Peak<CLT>."
+msgstr "Đó là <CLT 3>hiệu trưởng của Học viện Đỉnh Hy Vọng<CLT>."
 
 #. が、学園長…ッ！？
 msgctxt "0083 | MAKOTO NAEGI"
@@ -624,12 +624,12 @@ msgstr "Hi-Hiệu trưởng!?"
 #. 学園長に会いに…！？
 msgctxt "0084 | MAKOTO NAEGI"
 msgid "Why did you want to find the headmaster!?"
-msgstr "Tại sao Kyoko lại muốn tìm hiệu trưởng chứ!?"
+msgstr "Tại sao cậu lại muốn tìm hiệu trưởng chứ!?"
 
 #. <CLT 3>私の父<CLT>だから…
 msgctxt "0085 | KYOUKO KIRIGIRI"
 msgid "Because he's <CLT 3>my father<CLT>."
-msgstr "Bởi vì ông ấy là <CLT 3>cha tôi<CLT>."
+msgstr "Bởi vì ông ấy là <CLT 3>cha tớ<CLT>."
 
 #. え…！？
 msgctxt "0086 | MAKOTO NAEGI"
@@ -643,9 +643,8 @@ msgid ""
 "I was separated from him as a child. As it turns out,\n"
 "he became the headmaster of Hope's Peak."
 msgstr ""
-"Tôi đã bị chia cắt khỏi ông ấy khi còn nhỏ.\n"
-"Và hóa ra ông ấy đã trở thành hiệu trưởng của Học viện\n"
-"Hope's Peak."
+"Tớ đã bị chia cắt khỏi ông ấy khi còn nhỏ. Và hóa ra ông ấy đã\n"
+"trở thành hiệu trưởng của Học viện Đỉnh Hy Vọng."
 
 #. <CLT 4>霧切さんの…お父さん…？
 #. <CLT>
@@ -664,7 +663,7 @@ msgid ""
 "<CLT 4>...is Hope's Peak's headmaster...!?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...là hiệu trưởng của Học viện Hope's Peak sao...!?\n"
+"<CLT 4>... là hiệu trưởng của Học viện Đỉnh Hy Vọng sao...!?\n"
 "<CLT>"
 
 #. だ、だから…
@@ -719,8 +718,8 @@ msgid ""
 "My memory hadn't come back at that point. But when he\n"
 "said that, I felt...strange."
 msgstr ""
-"Lúc đó ký ức của tôi vẫn chưa trở lại. Nhưng khi cậu ấy\n"
-"nói điều đó, tôi đã cảm thấy... rất kỳ lạ."
+"Lúc đó ký ức của tớ vẫn chưa trở lại. Nhưng khi cậu ấy\n"
+"nói điều đó, tớ đã cảm thấy... rất kỳ lạ."
 
 #. 今思えば当然ね。だって学園長と会う事こそが、
 #. 私の目的そのものだったんだから…
@@ -729,8 +728,8 @@ msgid ""
 "It makes perfect sense now, of course, since my whole\n"
 "purpose for coming here was to find him."
 msgstr ""
-"Bây giờ nghĩ lại thì điều đó hoàn toàn hợp lý,\n"
-"vì mục đích tôi đến đây chính là để tìm ông ấy."
+"Bây giờ nghĩ lại thì điều đó hoàn toàn hợp lý, vì mục\n"
+"đích tớ đến đây chính là để tìm ông ấy."
 
 #. そう…だったんだ…
 msgctxt "0100 | MAKOTO NAEGI"
@@ -744,8 +743,8 @@ msgid ""
 "But listen, Makoto. I want to make this perfectly\n"
 "clear, so there's no misunderstanding..."
 msgstr ""
-"Nhưng nghe này, Makoto. Tôi muốn nói thật rõ để không\n"
-"có sự hiểu lầm nào..."
+"Nhưng nghe này, Makoto. Tớ muốn nói thật rõ để\n"
+"không có sự hiểu lầm nào..."
 
 #. 学園長は黒幕じゃないって言ったのは、
 #. あの人をかばう為なんかじゃないわよ。
@@ -754,8 +753,8 @@ msgid ""
 "I said the headmaster wasn't the mastermind, but I\n"
 "didn't say that to protect him."
 msgstr ""
-"Tôi nói hiệu trưởng không phải kẻ chủ mưu, nhưng không\n"
-"phải vì tôi muốn bảo vệ ông ấy."
+"Tớ nói hiệu trưởng không phải kẻ chủ mưu, nhưng\n"
+"không phải vì tớ muốn bảo vệ ông ấy."
 
 #. 学園長室に忍び込んだ時に、
 #. 私が感じた事を言っただけ…
@@ -764,8 +763,8 @@ msgid ""
 "I only said what I felt based on what I'd seen when I\n"
 "snuck into the headmaster's room."
 msgstr ""
-"Tôi chỉ nói những gì tôi cảm nhận được dựa trên những\n"
-"gì tôi đã thấy khi lẻn vào phòng hiệu trưởng."
+"Tớ chỉ nói những gì tớ cảm nhận được dựa trên những\n"
+"gì tớ đã thấy khi lẻn vào phòng hiệu trưởng."
 
 #. 学園長室で…何を見たの…？
 msgctxt "0104 | MAKOTO NAEGI"
@@ -779,9 +778,8 @@ msgid ""
 "The room had been ransacked. The shelves were a mess,\n"
 "the desk drawers dumped on the floor..."
 msgstr ""
-"Khi tôi lẻn vào phòng hiệu trưởng, căn phòng đã bị\n"
-"xáo trộn. Giá sách bừa bộn, các ngăn kéo bàn bị đổ ra\n"
-"sàn..."
+"Khi tớ lẻn vào phòng hiệu trưởng, căn phòng đã bị xáo trộn. Giá\n"
+"sách bừa bộn, các ngăn kéo bàn bị đổ ra sàn..."
 
 #. つまり、その部屋に詳しくない人物が、
 #. そこに入ったと考えられる…
@@ -804,7 +802,7 @@ msgctxt "0108 | KYOUKO KIRIGIRI"
 msgid ""
 "That was my assumption, yes. And to confirm my\n"
 "suspicion..."
-msgstr "Đó là suy đoán của tôi. Và để xác nhận nghi ngờ đó..."
+msgstr "Đó là suy đoán của tớ. Và để xác nhận nghi ngờ đó... "
 
 #. この鍵を使って、
 #. 寄宿舎の２階に行く事に決めたのよ。
@@ -813,8 +811,8 @@ msgid ""
 "...I decided to investigate the 2nd floor of the dorms\n"
 "using the key I'd found."
 msgstr ""
-"...tôi quyết định điều tra tầng 2 khu ký túc xá bằng\n"
-"chiếc chìa khóa tôi đã tìm thấy."
+"...tớ quyết định điều tra tầng 2 khu ký túc xá bằng\n"
+"chiếc chìa khóa tớ đã tìm thấy."
 
 #. でも、どうして寄宿舎の２階に…？
 msgctxt "0110 | MAKOTO NAEGI"
@@ -824,7 +822,7 @@ msgstr "Nhưng... tại sao lại là tầng 2 khu ký túc xá?"
 #. 同じく学園長室で、これを見たからよ…
 msgctxt "0111 | KYOUKO KIRIGIRI"
 msgid "Because I also found this in the headmaster's room."
-msgstr "Bởi vì tôi cũng tìm thấy thứ này trong phòng hiệu trưởng."
+msgstr "Bởi vì tớ cũng tìm thấy thứ này trong phòng hiệu trưởng."
 
 #. これって…見取り図…？
 msgctxt "0112 | MAKOTO NAEGI"
@@ -836,7 +834,7 @@ msgctxt "0113 | KYOUKO KIRIGIRI"
 msgid ""
 "It's a layout of <CLT 3>the entirety of Hope's Peak\n"
 "Academy<CLT>."
-msgstr "Đây là <CLT 3>sơ đồ toàn bộ Học viện Hope's Peak<CLT>..."
+msgstr "Đây là <CLT 3>sơ đồ toàn bộ Học viện Đỉnh Hy Vọng<CLT>... "
 
 #. あの鍵や戦刃むくろのプロフィールと一緒に、
 #. 学園長室から持って来た物よ…
@@ -845,8 +843,8 @@ msgid ""
 "I found it in the headmaster's room, along with\n"
 "Mukuro's profile and that key."
 msgstr ""
-"Tôi đã mang nó từ phòng hiệu trưởng cùng với hồ sơ của\n"
-"Mukuro và chiếc chìa khóa đó."
+"Tớ đã mang nó từ phòng hiệu trưởng cùng với hồ\n"
+"sơ của Mukuro và chiếc chìa khóa đó."
 
 #. この見取り図によると、
 #. 寄宿舎の２階には、教職員の個室があるみたいだった。
@@ -865,8 +863,8 @@ msgid ""
 "Some of the staff must have had to stay overnight from\n"
 "time to time."
 msgstr ""
-"Có lẽ thỉnh thoảng một số nhân viên phải ở lại qua\n"
-"đêm."
+"Có lẽ thỉnh thoảng một số nhân viên phải ở lại\n"
+"qua đêm."
 
 #. 学園長の個室も…
 msgctxt "0117 | KYOUKO KIRIGIRI"
@@ -874,8 +872,8 @@ msgid ""
 "And I figured the headmaster would have some kind of\n"
 "private room there..."
 msgstr ""
-"Và tôi nghĩ hiệu trưởng chắc cũng có một căn phòng\n"
-"riêng ở đó..."
+"Và tớ nghĩ hiệu trưởng chắc cũng có một căn\n"
+"phòng riêng ở đó..."
 
 #. きっと、その部屋に黒幕の手掛かりがあるはず…
 #. そう思って調べていく内に…
@@ -884,13 +882,13 @@ msgid ""
 "I assumed that if that were true, that room would\n"
 "likely hold more clues. So I went to check..."
 msgstr ""
-"Tôi cho rằng nếu đúng như vậy, căn phòng đó có thể sẽ\n"
-"chứa thêm manh mối. Vì vậy tôi đã đến kiểm tra..."
+"Tớ cho rằng nếu đúng như vậy, căn phòng đó có thể sẽ\n"
+"chứa thêm manh mối. Vì vậy tớ đã đến kiểm tra... "
 
 #. 私はようやく思い出したのよ…
 msgctxt "0119 | KYOUKO KIRIGIRI"
 msgid "And that's when I finally remembered."
-msgstr "Và đó là lúc tôi cuối cùng cũng nhớ ra."
+msgstr "Và đó là lúc tớ cuối cùng cũng nhớ ra."
 
 #. 私の目的は…
 #. その部屋の持ち主に会う事だったんだって…
@@ -899,8 +897,8 @@ msgid ""
 "I remembered that my purpose was to find the owner of\n"
 "that room."
 msgstr ""
-"Tôi nhớ ra rằng mục đích của tôi là tìm chủ nhân của\n"
-"căn phòng đó."
+"Tớ nhớ ra rằng mục đích của tớ là tìm chủ nhân\n"
+"của căn phòng đó."
 
 #. そっか…霧切さんが寄宿舎の２階に行ったのは、
 #. 学園長の個室を調べる為だったんだね…
@@ -920,8 +918,7 @@ msgid ""
 "<CLT 1>[2nd floor of the dorms]<CLT>\n"
 "didn't have any cameras or monitors."
 msgstr ""
-"Nhưng khi tôi đến đó, tôi nhận ra rằng\n"
-"<CLT 1>[tầng 2 khu ký túc xá]<CLT>\n"
+"Nhưng khi tớ đến đó, tớ nhận ra rằng <CLT 1>[tầng 2 khu ký túc xá]<CLT>\n"
 "không có bất kỳ camera hay màn hình giám sát nào."
 
 #. こっちで、<CLT 1>【あんな事】<CLT>が起きてるなんて、
@@ -931,7 +928,7 @@ msgid ""
 "Which is why I had no idea <CLT 1>[what was going on]<CLT> in\n"
 "the rest of the building."
 msgstr ""
-"Vì vậy tôi hoàn toàn không biết <CLT 1>[chuyện gì đã xảy ra]<CLT>\n"
+"Vì vậy tớ hoàn toàn không biết <CLT 1>[chuyện gì đã xảy ra]<CLT>\n"
 "ở những nơi khác trong tòa nhà."
 
 #. その部屋の捜査に気を取られ過ぎていたせいね。
@@ -941,8 +938,8 @@ msgid ""
 "I was so preoccupied with investigating that room. It\n"
 "was unforgivably careless of me..."
 msgstr ""
-"Là vì tôi đã quá tập trung điều tra căn phòng đó.\n"
-"Thật sự... đó là một sự bất cẩn không thể tha thứ..."
+"Là vì tớ đã quá tập trung điều tra căn phòng đó.\n"
+"Thật sự... đó là một sự bất cẩn không thể tha thứ... "
 
 #. 【寄宿舎の２階】
 msgctxt "0125 | CHOICE/RE:ACT"
@@ -957,18 +954,18 @@ msgid ""
 "mean..."
 msgstr ""
 "Vậy... nơi đó như thế nào?\n"
-"Ý mình là khu vực đó của trường..."
+"Ý tớ là khu vực đó của trường... "
 
 #. 口では上手く説明出来ないわ…
 #. ただ…
 msgctxt "0127 | KYOUKO KIRIGIRI"
 msgid "It's hard to describe. All I can say is..."
-msgstr "Thật khó để mô tả. Tôi chỉ có thể nói rằng..."
+msgstr "Thật khó để mô tả. Tớ chỉ có thể nói rằng... "
 
 #. あの場所を訪れた瞬間、私は思ったわ…
 msgctxt "0128 | KYOUKO KIRIGIRI"
 msgid "The moment I saw it, I realized..."
-msgstr "Khoảnh khắc nhìn thấy nơi đó, tôi nhận ra..."
+msgstr "Khoảnh khắc nhìn thấy nơi đó, tớ nhận ra... "
 
 #. この学園で起きている事は、
 #. 私達が想像してたのより遥かに恐ろしい事なんだって…
@@ -992,9 +989,8 @@ msgid ""
 "I can't explain it. You need to see it for yourself.\n"
 "And I'm sure you'll get your chance soon enough..."
 msgstr ""
-"Tôi không thể giải thích được. Cậu cần phải tự mình\n"
-"nhìn thấy.\n"
-"Và tôi chắc chắn cậu sẽ sớm có cơ hội..."
+"Tớ không thể giải thích được. Cậu cần phải tự mình nhìn\n"
+"thấy. Và tớ chắc chắn cậu sẽ sớm có cơ hội..."
 
 #. <CLT 4>なんだか意味深だな…それに…
 #. <CLT>
@@ -1024,24 +1020,26 @@ msgstr "[chuyện gì đã xảy ra]"
 #. 戦刃むくろが殺された件だよね？
 msgctxt "0135 | MAKOTO NAEGI"
 msgid "It has to do with Mukuro Ikusaba, doesn't it?"
-msgstr "Có liên quan đến chuyện Mukuro Ikusaba bị giết, đúng không?"
+msgstr ""
+"Có liên quan đến chuyện Mukuro Ikusaba bị giết,\n"
+"đúng không?"
 
 #. 先に、ハッキリさせておくけど、
 #. 殺したのは私じゃないわ…
 msgctxt "0136 | KYOUKO KIRIGIRI"
 msgid "Just to be perfectly clear, I didn't kill her."
-msgstr "Trước hết, tôi muốn nói rõ rằng tôi không giết cô ấy."
+msgstr "Trước hết, tớ muốn nói rõ rằng tớ không giết cô ấy."
 
 #. もちろん、あなたでもないでしょうけど…
 msgctxt "0137 | KYOUKO KIRIGIRI"
 msgid "And I know it wasn't you, either."
-msgstr "Và tôi biết cậu cũng không phải người đó."
+msgstr "Và tớ biết cậu cũng không phải người đó."
 
 #. わかってる…
 #. でも…だからこそ、わからないんだ…
 msgctxt "0138 | MAKOTO NAEGI"
 msgid "I know you're right. But that just means..."
-msgstr "Mình biết cậu nói đúng. Nhưng điều đó chỉ có nghĩa là..."
+msgstr "Tớ biết cậu nói đúng. Nhưng điều đó chỉ có nghĩa là... "
 
 #. 霧切さんとボク以外のみんなには<CLT 3>アリバイもある<CLT>し…
 #. そう考えると、誰が殺したのか…
@@ -1050,8 +1048,8 @@ msgid ""
 "Everyone but you and me <CLT 3>had an alibi<CLT>. So then who\n"
 "*did* kill her...?"
 msgstr ""
-"Tất cả mọi người ngoại trừ cậu và mình đều có <CLT 3>bằng chứng ngoại phạm<CLT>.\n"
-"Vậy thì rốt cuộc *ai* đã giết cô ấy...?"
+"Tất cả mọi người ngoại trừ cậu và tớ đều có <CLT 3>bằng chứng\n"
+"ngoại phạm<CLT>. Vậy thì rốt cuộc *ai* đã giết cô ấy...?"
 
 #. 黒幕が関係しているのは、
 #. 間違いないはずよ。
@@ -1060,7 +1058,7 @@ msgid ""
 "What I can say for sure is that the mastermind is\n"
 "directly involved."
 msgstr ""
-"Điều tôi có thể chắc chắn là kẻ chủ mưu\n"
+"Điều tớ có thể chắc chắn là kẻ chủ mưu\n"
 "có liên quan trực tiếp."
 
 #. そもそも、戦刃むくろの学級裁判は、
@@ -1070,8 +1068,8 @@ msgid ""
 "To begin with, the point of the class trial of Mukuro\n"
 "Ikusaba...was to get me killed."
 msgstr ""
-"Ngay từ đầu, mục đích của phiên tòa lớp học về Mukuro\n"
-"Ikusaba... là để giết tôi."
+"Ngay từ đầu, mục đích của lớp xét xử về\n"
+"Mukuro Ikusaba... là để giết tớ."
 
 #. <CLT 3>霧切さんを殺す為<CLT>の…？
 msgctxt "0142 | MAKOTO NAEGI"
@@ -1085,23 +1083,23 @@ msgid ""
 "I stole that key and disappeared, and in retaliation\n"
 "they wanted to draw me out and eliminate me."
 msgstr ""
-"Tôi đã lấy cắp chiếc chìa khóa đó và biến mất,\n"
-"và để trả đũa, chúng muốn dụ tôi xuất hiện rồi loại bỏ tôi."
+"Tớ đã lấy cắp chiếc chìa khóa đó và biến mất, và để trả\n"
+"đũa, hắn muốn dụ tớ xuất hiện rồi loại bỏ tớ."
 
 #. 黒幕は学級裁判を利用したのよ。
 msgctxt "0144 | KYOUKO KIRIGIRI"
 msgid "That was the point of the class trial."
-msgstr "Đó chính là mục đích của phiên tòa lớp học."
+msgstr "Đó chính là mục đích của lớp xét xử."
 
 #. 学級裁判を…利用した…？
 msgctxt "0145 | MAKOTO NAEGI"
 msgid "It was...?"
-msgstr "Phiên tòa lớp học... sao?"
+msgstr "Vậy sao...?"
 
 #. 黒幕には…直接手を下せない理由があったから…
 msgctxt "0146 | KYOUKO KIRIGIRI"
 msgid "The mastermind knew they couldn't interfere directly."
-msgstr "Kẻ chủ mưu biết rằng chúng không thể trực tiếp can thiệp."
+msgstr "Kẻ chủ mưu biết rằng hắn không thể trực tiếp can thiệp."
 
 #. もしかして…<CLT 3>校則<CLT>の事…？
 msgctxt "0147 | MAKOTO NAEGI"
@@ -1134,7 +1132,7 @@ msgid ""
 "and with that rule in place, they couldn't step in."
 msgstr ""
 "Kẻ chủ mưu nhất quyết tuân theo các quy tắc,\n"
-"và với nội quy đó, chúng không thể trực tiếp ra tay."
+"và với nội quy đó, hắn không thể trực tiếp ra tay."
 
 #. だから、私を殺す為に学級裁判を利用したのよ…
 msgctxt "0151 | KYOUKO KIRIGIRI"
@@ -1142,8 +1140,8 @@ msgid ""
 "Since they couldn't kill me themselves, they tried to\n"
 "use the class trial to do it."
 msgstr ""
-"Vì không thể tự tay giết tôi, chúng đã cố sử dụng\n"
-"phiên tòa lớp học để làm điều đó."
+"Vì không thể tự tay giết tớ, hắn đã cố sử dụng\n"
+"lớp xét xử để làm điều đó."
 
 #. <CLT 4>校則にこだわるあまり…
 #. 直接、手を出せないなんて…
@@ -1185,8 +1183,8 @@ msgid ""
 "There's one other thing I'd like to point out about\n"
 "the murder of Mukuro Ikusaba..."
 msgstr ""
-"Còn một điều khác tôi muốn nói về\n"
-"vụ sát hại Mukuro Ikusaba..."
+"Còn một điều khác tớ muốn nói về vụ sát hại\n"
+"Mukuro Ikusaba..."
 
 #. …言っておく事？
 msgctxt "0156 | MAKOTO NAEGI"
@@ -1200,13 +1198,13 @@ msgid ""
 "There was a point where Mukuro may not have become the\n"
 "victim..."
 msgstr ""
-"Có một thời điểm mà Mukuro có thể đã không trở thành\n"
-"nạn nhân..."
+"Có một thời điểm mà Mukuro có thể đã không trở\n"
+"thành nạn nhân..."
 
 #. <CLT 1>【あなた】<CLT>だったかもしれないのよ、苗木君…！
 msgctxt "0158 | KYOUKO KIRIGIRI"
 msgid "It could have been <CLT 1>[you]<CLT>, Makoto...!"
-msgstr "Có thể người đó là <CLT 1>[cậu]<CLT>, Makoto...!"
+msgstr "Mà đã có thể là <CLT 1>[cậu]<CLT>, Makoto...!"
 
 #. …え？
 msgctxt "0159 | MAKOTO NAEGI"
@@ -1221,12 +1219,12 @@ msgstr "[cậu]"
 #. ボクが…殺されてたかも…？
 msgctxt "0161 | MAKOTO NAEGI"
 msgid "I could have become the victim...?"
-msgstr "Mình có thể đã trở thành nạn nhân sao...?"
+msgstr "Tớ có thể đã trở thành nạn nhân sao...?"
 
 #. あなたには、その心当たりがあるはずよ？
 msgctxt "0162 | KYOUKO KIRIGIRI"
 msgid "You know what I'm talking about, right?"
-msgstr "Cậu biết tôi đang nói về chuyện gì, đúng không?"
+msgstr "Cậu biết tớ đang nói về chuyện gì, đúng không?"
 
 #. それって…もしかして…
 msgctxt "0163 | MAKOTO NAEGI"
@@ -1246,7 +1244,7 @@ msgstr ""
 #. 私は聞く事が出来るの…
 msgctxt "0165 | KYOUKO KIRIGIRI"
 msgid "I can hear them, you know."
-msgstr "Tôi có thể nghe thấy nó."
+msgstr "Tớ có thể nghe thấy nó."
 
 #. 死神の足音…を…
 msgctxt "0166 | KYOUKO KIRIGIRI"
@@ -1261,7 +1259,7 @@ msgstr "Cái gì...?"
 #. 私は、死神の足音を聞く事が出来るの…
 msgctxt "0168 | KYOUKO KIRIGIRI"
 msgid "I can hear the god of death as he moves."
-msgstr "Tôi có thể nghe thấy thần chết đang di chuyển."
+msgstr "Tớ có thể nghe thấy thần chết đang di chuyển."
 
 #. 事件に巻き込まれる能力と言い換えられるわね。
 #. これも、探偵としての能力よ…
@@ -1270,7 +1268,7 @@ msgid ""
 "That ability naturally draws me into cases, just like\n"
 "this."
 msgstr ""
-"Có thể nói đó là năng lực khiến tôi tự nhiên bị cuốn\n"
+"Có thể nói đó là năng lực khiến tớ tự nhiên bị cuốn\n"
 "vào các vụ án. Đây cũng là năng lực của một thám tử..."
 
 #. …あの時もそうだったわ。
@@ -1285,8 +1283,8 @@ msgid ""
 "I was in the dorms, and I had a sudden sense of dread.\n"
 "I looked down the stairwell..."
 msgstr ""
-"Tôi đang ở khu ký túc xá thì đột nhiên có cảm giác bất\n"
-"an. Tôi nhìn xuống cầu thang..."
+"Tớ đang ở khu ký túc xá thì đột nhiên có cảm giác lạnh\n"
+"sống lưng. Tớ nhìn xuống cầu thang..."
 
 #. 白い影が廊下を横切るのが見えたの。
 msgctxt "0172 | KYOUKO KIRIGIRI"
@@ -1300,18 +1298,18 @@ msgid ""
 "I gave chase right away. As I followed it, I saw the\n"
 "shadow go into your room..."
 msgstr ""
-"Tôi lập tức đuổi theo. Khi đi theo nó, tôi thấy cái\n"
-"bóng đó đi vào phòng của cậu..."
+"Tớ lập tức đuổi theo. Khi đi theo nó, tớ thấy cái\n"
+"bóng đó đi vào phòng của cậu... "
 
 #. そこで、あの場面に出くわしたのよ。
 msgctxt "0174 | KYOUKO KIRIGIRI"
 msgid "I ran into your room, and I saw what was happening."
-msgstr "Tôi chạy vào phòng cậu và nhìn thấy chuyện đang xảy ra."
+msgstr "Tớ chạy vào phòng cậu và nhìn thấy chuyện đang xảy ra."
 
 #. もちろん、すぐに止めに入ったわ…
 msgctxt "0175 | KYOUKO KIRIGIRI"
 msgid "I intervened immediately, of course."
-msgstr "Tất nhiên, tôi đã lập tức can thiệp."
+msgstr "Tất nhiên, tớ đã lập tức can thiệp."
 
 #. だけど、それだけでは終わらなかった。
 msgctxt "0176 | KYOUKO KIRIGIRI"
@@ -1322,15 +1320,15 @@ msgstr "Nhưng mọi chuyện không kết thúc ở đó."
 #. 今度は…
 msgctxt "0177 | KYOUKO KIRIGIRI"
 msgid "I stopped them, but that led to..."
-msgstr "Tôi đã ngăn chặn người đó, nhưng điều đó dẫn đến..."
+msgstr "Tớ đã ngăn chặn người đó, nhưng điều đó dẫn đến... "
 
 #. その覆面の人物自体が、
 #. 死体で発見される事になった…
 msgctxt "0178 | KYOUKO KIRIGIRI"
 msgid "Whoever the masked assailant was, they ended up dead."
 msgstr ""
-"Kẻ tấn công đeo mặt nạ đó,\n"
-"cuối cùng lại được phát hiện trong tình trạng đã chết..."
+"Kẻ tấn công đeo mặt nạ đó, cuối cùng lại được phát\n"
+"hiện trong tình trạng đã chết..."
 
 #. そして、その後の一連の死体の偽装工作や、
 #. 武道場の鍵を私の部屋に置いたのは…
@@ -1339,8 +1337,8 @@ msgid ""
 "And their murder was disguised, and the dojo key wound\n"
 "up in my room..."
 msgstr ""
-"Và việc che giấu vụ giết người đó, cùng với việc chìa khóa\n"
-"võ đường được đưa vào phòng tôi..."
+"Và việc che giấu vụ giết người đó, cùng với việc chìa\n"
+"khóa võ đường được đưa vào phòng tớ... "
 
 #. おそらく、すべて<CLT 1>【黒幕の仕業】<CLT>よ。
 #. ジャマな私を学級裁判で排除する為にやったのね…
@@ -1350,7 +1348,7 @@ msgid ""
 "attempt to use the class trial to eliminate me..."
 msgstr ""
 "Tất cả chắc chắn là <CLT 1>[do kẻ chủ mưu gây ra]<CLT>,\n"
-"nhằm sử dụng phiên tòa lớp học để loại bỏ tôi..."
+"nhằm sử dụng lớp xét xử để loại bỏ tớ... "
 
 #. <CLT 4>そ、それが本当なら…
 #. <CLT>
@@ -1370,8 +1368,8 @@ msgid ""
 "<CLT 4>...then I was right not to expose Kyoko's lie.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>...thì mình đã đúng khi không vạch trần lời nói dối\n"
-"của Kyoko.\n"
+"<CLT 4>...thì mình đã đúng khi không vạch trần lời nói\n"
+"dối của Kyoko.\n"
 "<CLT>"
 
 #. <CLT 4>霧切さんの事…信じて良かったんだ……
@@ -1404,8 +1402,8 @@ msgid ""
 "I don't have conclusive evidence, but that's what I\n"
 "think."
 msgstr ""
-"Tôi không có bằng chứng chắc chắn, nhưng đó là điều\n"
-"tôi nghĩ."
+"Tớ không có bằng chứng chắc chắn, nhưng đó là\n"
+"điều tớ nghĩ."
 
 #. だとしたら、マズイよ…
 #. 黒幕はその気になったら平気で人を殺すって事…
@@ -1414,9 +1412,8 @@ msgid ""
 "But that's really bad if true. It means the mastermind\n"
 "can kill whoever they want if they feel like it."
 msgstr ""
-"Nhưng nếu đúng là vậy thì thật tệ.\n"
-"Điều đó có nghĩa là kẻ chủ mưu có thể giết bất kỳ ai\n"
-"khi chúng muốn."
+"Nhưng nếu đúng là vậy thì thật tệ. Điều đó có nghĩa là kẻ\n"
+"chủ mưu có thể giết bất kỳ ai khi chúng muốn."
 
 #. …あれ？　でも、これって矛盾してない？
 msgctxt "0188 | MAKOTO NAEGI"
@@ -1430,8 +1427,8 @@ msgid ""
 "The mastermind wanted to use the class trial to try\n"
 "and kill you cuz they couldn't interfere, right?"
 msgstr ""
-"Kẻ chủ mưu muốn sử dụng phiên tòa lớp học để giết cậu\n"
-"vì chúng không thể can thiệp trực tiếp, đúng không?"
+"Kẻ chủ mưu muốn sử dụng lớp xét xử để giết cậu vì hắn\n"
+"không thể can thiệp trực tiếp, đúng không?"
 
 #. そう…矛盾しているのよ…
 msgctxt "0190 | KYOUKO KIRIGIRI"
@@ -1450,13 +1447,13 @@ msgid ""
 "They needed the class trial to kill me, but seemed\n"
 "ready to kill you in your room..."
 msgstr ""
-"Chúng cần phiên tòa lớp học để giết tôi, nhưng dường\n"
-"như lại sẵn sàng giết cậu ngay trong phòng cậu..."
+"Hắn cần lớp xét xử để giết tớ, nhưng dường như lại sẵn\n"
+"sàng giết cậu ngay trong phòng cậu..."
 
 #. …すべてが矛盾しているのよ。
 msgctxt "0193 | KYOUKO KIRIGIRI"
 msgid "Everything they did is a contradiction."
-msgstr "Mọi việc chúng làm đều là một mâu thuẫn."
+msgstr "Mọi việc hắn làm đều là một mâu thuẫn."
 
 #. それって…どういう意味？
 msgctxt "0194 | MAKOTO NAEGI"
@@ -1489,18 +1486,18 @@ msgid ""
 "A little more, and I should be able to figure out the\n"
 "mastermind's identity."
 msgstr ""
-"Chỉ thêm một chút nữa, tôi sẽ có thể tìm ra\n"
+"Chỉ thêm một chút nữa, tớ sẽ có thể tìm ra\n"
 "danh tính của kẻ chủ mưu."
 
 #. <CLT 3>“もう１人の超高校級の絶望”<CLT>の正体がね…
 msgctxt "0199 | KYOUKO KIRIGIRI"
 msgid "The identity of...the <CLT 3>other Ultimate Despair<CLT>."
-msgstr "Danh tính của... <CLT 3>“Kẻ tuyệt vọng siêu cao trung cấp khác”<CLT>."
+msgstr "Danh tính của... <CLT 3>Siêu Học Sinh Tuyệt Vọng khác<CLT>."
 
 #. もう１人の…超高校級の絶望…？
 msgctxt "0200 | MAKOTO NAEGI"
 msgid "The *other* Ultimate Despair...?"
-msgstr ""
+msgstr "Siêu Học Sinh Tuyệt Vọng khác...?"
 
 #. 殺された戦刃むくろ…
 #. 彼女は“超高校級の絶望”に間違いない…
@@ -1509,8 +1506,8 @@ msgid ""
 "There's no doubt that Mukuro was the Ultimate Despair,\n"
 "and that she's dead."
 msgstr ""
-"Không còn nghi ngờ gì nữa, Mukuro là Kẻ tuyệt vọng\n"
-"siêu cao trung cấp, và cô ấy đã chết."
+"Không còn nghi ngờ gì nữa, Mukuro là Siêu Học Sinh\n"
+"Tuyệt Vọng, và cô ấy đã chết."
 
 #. ただし…超高校級の絶望は<CLT 3>１人じゃなかった<CLT>のよ…
 msgctxt "0202 | KYOUKO KIRIGIRI"
@@ -1518,8 +1515,8 @@ msgid ""
 "But I don't think the Ultimate Despair is <CLT 3>just one\n"
 "person<CLT>."
 msgstr ""
-"Nhưng tôi không nghĩ Kẻ tuyệt vọng siêu cao trung cấp\n"
-"chỉ là <CLT 3>một người<CLT>."
+"Nhưng tớ không nghĩ Siêu Học Sinh Tuyệt Vọng chỉ\n"
+"là <CLT 3>một người<CLT>."
 
 #. １人じゃ…ない…？
 msgctxt "0203 | MAKOTO NAEGI"
@@ -1533,8 +1530,8 @@ msgid ""
 "If you think about it, \"the Ultimate Despair\" seems to\n"
 "implicate whoever caused that event."
 msgstr ""
-"Nếu suy nghĩ kỹ, \"Kẻ tuyệt vọng siêu cao trung cấp\"\n"
-"dường như ám chỉ những kẻ đã gây ra sự kiện đó."
+"Nếu suy nghĩ kỹ, \"Siêu Học Sinh Tuyệt Vọng\" dường như\n"
+"ám chỉ những kẻ đã gây ra sự kiện đó."
 
 #. もしかして、その事件って…
 msgctxt "0205 | MAKOTO NAEGI"
@@ -1547,9 +1544,8 @@ msgid ""
 "...what happened a year ago—<CLT 3>the biggest, most awful,\n"
 "most tragic event in human history<CLT>."
 msgstr ""
-"...chuyện xảy ra một năm trước—<CLT 3>sự kiện tuyệt vọng\n"
-"lớn nhất, tồi tệ nhất và bi thảm nhất trong lịch sử loài\n"
-"người<CLT>."
+"...chuyện xảy ra một năm trước—<CLT 3>sự kiện lớn nhất, tồi\n"
+"tệ nhất và bi thảm nhất trong lịch sử loài người<CLT>."
 
 #. <CLT 4>人類史上最大最悪の絶望的事件…
 #. それを起こした連中が…
@@ -1570,7 +1566,7 @@ msgid ""
 "<CLT 4>They're the Ultimate Despair?\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Chúng là Kẻ tuyệt vọng siêu cao trung cấp sao?\n"
+"<CLT 4>Chúng là Siêu Học Sinh Tuyệt Vọng sao?\n"
 "<CLT>"
 
 #. 絶望だけを行動原理とする、
@@ -1605,12 +1601,12 @@ msgstr ""
 #. それが…超高校級の絶望…
 msgctxt "0213 | KYOUKO KIRIGIRI"
 msgid "*That* is the Ultimate Despair."
-msgstr "*Đó* chính là Kẻ tuyệt vọng siêu cao trung cấp."
+msgstr "*Đó* chính là Siêu Học Sinh Tuyệt Vọng."
 
 #. 私達の…<CLT 3>“本当の敵”<CLT>よ……
 msgctxt "0214 | KYOUKO KIRIGIRI"
 msgid "And that is our <CLT 3>real enemy<CLT>."
-msgstr "Và đó chính là <CLT 3>“kẻ thù thật sự”<CLT> của chúng ta."
+msgstr "Và đó chính là <CLT 3>kẻ thù thật sự<CLT> của chúng ta."
 
 #. <CLT 23>プレゼント<CLT><CLT 3>“夢の島ロケット”<CLT><CLT 23>を獲得しました。
 #. プレゼントメニューで確認できます。
@@ -1620,7 +1616,7 @@ msgid ""
 "<CLT 23>You received the <CLT><CLT 3>Dream Island Rocket<CLT><CLT 23> present.\n"
 "<CLT>"
 msgstr ""
-"<CLT 23>Bạn đã nhận được món quà <CLT><CLT 3>Tên lửa Đảo Mộng Mơ<CLT><CLT 23>.\n"
+"<CLT 23>Bạn đã nhận được món quà <CLT><CLT 3>Tên Lửa Đảo Mộng Mơ<CLT><CLT 23>.\n"
 "Bạn có thể kiểm tra trong menu quà tặng.\n"
 "<CLT>"
 
@@ -1707,10 +1703,8 @@ msgid ""
 "Which makes <CLT><CLT 3>\"Hope's Peak\"<CLT><CLT 4> a pretty fitting name.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nó được xây dựng nhằm nuôi dưỡng <CLT><CLT 3>“hy vọng”<CLT><CLT 4>\n"
-"cho tương lai của đất nước.\n"
-"Điều đó khiến <CLT><CLT 3>“Đỉnh Hope”<CLT><CLT 4> trở thành một cái tên\n"
-"hoàn toàn phù hợp.\n"
+"<CLT 4>Với mục tiêu nuôi dưỡng <CLT><CLT 3>hy vọng<CLT><CLT 4> cho tương lai của đất nước, nơi\n"
+"đây quả thực xứng với cái tên <CLT><CLT 3>Học viện Đỉnh Hy vọng<CLT><CLT 4>.\n"
 "<CLT>"
 
 #. <CLT 4>そんな学園への入学資格は２つ…
@@ -1857,8 +1851,8 @@ msgid ""
 "<CLT 4>It wasn't any classroom I'd ever been in before.\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Đó không phải là lớp học nào mà mình từng học trước\n"
-"đây.\n"
+"<CLT 4>Căn phòng này cũng chẳng giống một lớp học nào\n"
+"mình từng thấy.\n"
 "<CLT>"
 
 #. どう…なってるんだ……？
@@ -1982,7 +1976,7 @@ msgstr ""
 #. つまり…<CLT 3>地下のゴミ捨て場<CLT>って事か…
 msgctxt "0252 | MAKOTO NAEGI"
 msgid "This must be some kind of...<CLT 3>underground garbage pit<CLT>."
-msgstr "Đây chắc là...<CLT 3>bãi rác ngầm dưới lòng đất<CLT>."
+msgstr "Đây chắc là... <CLT 3>bãi rác ngầm dưới lòng đất<CLT>."
 
 #. <CLT 4>それが、ボクの置かれている状況だった。
 #. <CLT>
@@ -2001,7 +1995,8 @@ msgid ""
 "<CLT 4>But that was just the beginning of my problems...\n"
 "<CLT>"
 msgstr ""
-"<CLT 4>Nhưng đó mới chỉ là khởi đầu của những vấn đề của mình...\n"
+"<CLT 4>Nhưng đó mới chỉ là khởi đầu của những vấn đề\n"
+"của mình...\n"
 "<CLT>"
 
 #. <CLT 4>ここで…のたれ死ぬのを待つのか…？
@@ -2024,7 +2019,9 @@ msgstr "Không, mình không thể để chuyện đó xảy ra...!"
 #. だって…仲間が助けてくれた命だもんな…
 msgctxt "0257 | MAKOTO NAEGI"
 msgid "Not after what my good friend went through to save me!"
-msgstr "Không sau tất cả những gì người bạn tốt đã làm để cứu mình!"
+msgstr ""
+"Không phải sau tất cả những gì người bạn tốt đã\n"
+"làm để cứu mình!"
 
 #. <CLT 4>ボクはハッキリと覚えている…
 #. あの時、起きた事を…
@@ -2098,7 +2095,7 @@ msgstr "Nhưng Kyoko..."
 #. どうしてボクを助けに来てくれたの？
 msgctxt "0266 | MAKOTO NAEGI"
 msgid "Why'd you come to rescue me?"
-msgstr "Tại sao cậu lại đến cứu mình?"
+msgstr "Tại sao cậu lại đến cứu tớ?"
 
 #. 借りを返す為…
 #. いえ、罪滅ぼしかしら…
@@ -2118,7 +2115,7 @@ msgid ""
 "During the trial, even though you knew I was lying,\n"
 "you didn't say anything."
 msgstr ""
-"Trong phiên tòa, dù cậu biết tôi đang nói dối,\n"
+"Trong phiên tòa, dù cậu biết tớ đang nói dối,\n"
 "nhưng cậu đã không nói gì."
 
 #. やっぱり…気付いてたんだね…
@@ -2130,17 +2127,19 @@ msgstr "Vậy... cậu biết rằng mình biết..."
 #. 私はあなたを助けなかった…
 msgctxt "0271 | KYOUKO KIRIGIRI"
 msgid "But even though I knew, I did nothing to help you."
-msgstr "Nhưng dù biết điều đó, tôi vẫn không làm gì để giúp cậu."
+msgstr ""
+"Nhưng dù biết điều đó, tớ vẫn không làm gì để\n"
+"giúp cậu."
 
 #. 私は…あなたを見捨ててしまった…
 msgctxt "0272 | KYOUKO KIRIGIRI"
 msgid "I...abandoned you."
-msgstr "Tôi... đã bỏ rơi cậu."
+msgstr "Tớ... đã bỏ rơi cậu."
 
 #. そ、そんな…見捨てたなんて…！
 msgctxt "0273 | MAKOTO NAEGI"
 msgid "Don't say that! You didn't abandon me!"
-msgstr "Đ-Đừng nói vậy! Cậu không hề bỏ rơi mình!"
+msgstr "Đ-Đừng nói vậy! Cậu không hề bỏ rơi tớ!"
 
 #. いいえ、大げさでもなんでもないわ。
 #. 私は自分の命惜しさに、あなたを見捨てたのよ…
@@ -2149,8 +2148,8 @@ msgid ""
 "No, that's exactly what I did. I abandoned you\n"
 "in order to save my own life."
 msgstr ""
-"Không, đó chính xác là điều tôi đã làm.\n"
-"Tôi đã bỏ rơi cậu để cứu lấy mạng sống của chính mình."
+"Không, đó chính xác là điều tớ đã làm. Tớ đã bỏ\n"
+"rơi cậu để cứu lấy mạng sống của chính mình."
 
 #. あなたは私を救おうとしたのに…
 #. 私はあなたを見捨てた…
@@ -2159,8 +2158,8 @@ msgid ""
 "You were trying to save me, and I couldn't bring\n"
 "myself to do the same for you."
 msgstr ""
-"Cậu đã cố cứu tôi, nhưng tôi lại không thể làm điều\n"
-"tương tự cho cậu."
+"Cậu đã cố cứu tớ, nhưng tớ lại không thể làm\n"
+"điều tương tự cho cậu."
 
 #. だけどね、言い訳する訳じゃないけど…
 msgctxt "0276 | KYOUKO KIRIGIRI"
@@ -2168,8 +2167,8 @@ msgid ""
 "But listen, not that I'm trying to make\n"
 "excuses, but..."
 msgstr ""
-"Nhưng nghe này, không phải tôi đang cố\n"
-"biện minh, chỉ là..."
+"Nhưng nghe này, không phải tớ đang cố\n"
+"biện minh, chỉ là... "
 
 #. 私には、どうしても
 #. <CLT 1>【生き延びなくてはいけない理由】<CLT>があったの…
@@ -2178,23 +2177,23 @@ msgid ""
 "...there was a <CLT 1>[reason that I had to survive]<CLT>\n"
 "no matter the cost."
 msgstr ""
-"...tôi có một <CLT 1>[lý do mà tôi phải sống sót]<CLT>\n"
+"...tớ có một <CLT 1>[lý do mà tớ phải sống sót]<CLT>\n"
 "bằng mọi giá."
 
 #. …なんて、それこそ言い訳でしかないわね…
 msgctxt "0278 | KYOUKO KIRIGIRI"
 msgid "I can't offer you any reason other than that."
-msgstr "Tôi không thể đưa ra bất kỳ lý do nào khác ngoài điều đó."
+msgstr "Tớ không thể đưa ra bất kỳ lý do nào khác ngoài điều đó."
 
 #. 本当に…ごめんなさい…
 msgctxt "0279 | KYOUKO KIRIGIRI"
 msgid "I really am sorry."
-msgstr "Tôi thật sự xin lỗi."
+msgstr "Tớ thật sự xin lỗi."
 
 #. 私は自分の命惜しさに、あなたを見捨てたのよ…
 msgctxt "0280 | KYOUKO KIRIGIRI"
 msgid "I abandoned you in order to save my own life."
-msgstr "Tôi đã bỏ rơi cậu để cứu lấy mạng sống của chính mình."
+msgstr "Tớ đã bỏ rơi cậu để cứu lấy mạng sống của chính mình."
 
 #. だけどね、言い訳する訳じゃないけど…
 msgctxt "0281 | KYOUKO KIRIGIRI"
@@ -2202,8 +2201,8 @@ msgid ""
 "But listen, not that I'm trying to make\n"
 "excuses, but..."
 msgstr ""
-"Nhưng nghe này, không phải tôi đang cố\n"
-"biện minh, nhưng..."
+"Nhưng nghe này, không phải tớ đang cố\n"
+"biện minh, nhưng... "
 
 #. 私にはどうしても
 #. <CLT 1>【生き延びなくてはいけない理由】<CLT>があったの…
@@ -2212,8 +2211,8 @@ msgid ""
 "...there was a <CLT 1>[reason that I had to survive]<CLT>\n"
 "no matter the cost."
 msgstr ""
-"...tôi có một <CLT 1>[lý do mà tôi phải sống sót]<CLT>\n"
-"dù phải trả bất cứ giá nào."
+"...tớ có một <CLT 1>[lý do mà tớ phải sống sót]<CLT>\n"
+"bằng mọi giá."
 
 #. だからって、言い訳にはならないのはわかってるわ…
 msgctxt "0283 | KYOUKO KIRIGIRI"
@@ -2221,29 +2220,29 @@ msgid ""
 "I'm sure that's not a great reason as far as you're\n"
 "concerned, but..."
 msgstr ""
-"Tôi biết đó không phải là một lý do đủ thuyết phục\n"
-"đối với cậu, nhưng..."
+"Tớ biết đó không phải là một lý do đủ thuyết phục\n"
+"đối với cậu, nhưng... "
 
 #. 本当に…ごめんなさい…
 msgctxt "0284 | KYOUKO KIRIGIRI"
 msgid "I really am sorry."
-msgstr "Tôi thật sự xin lỗi."
+msgstr "Tớ thật sự xin lỗi."
 
 #. あなたには…すべてを話しておくわね…
 msgctxt "0285 | KYOUKO KIRIGIRI"
 msgid "I'm going to tell you everything."
-msgstr "Tôi sẽ nói cho cậu biết tất cả."
+msgstr "Tớ sẽ nói cho cậu biết tất cả."
 
 #. 私が生き延びなくてはいけない理由…
 #. それは…
 msgctxt "0286 | KYOUKO KIRIGIRI"
 msgid "The reason I have to survive..."
-msgstr "Lý do tôi phải sống sót..."
+msgstr "Lý do tớ phải sống sót... "
 
 #. 私がここに来た<CLT 3>目的<CLT>の事よ…
 msgctxt "0287 | KYOUKO KIRIGIRI"
 msgid "It's tied into <CLT 3>why<CLT> I came here in the first place."
-msgstr "Đó là vì nó liên quan đến <CLT 3>lý do<CLT> tôi đến đây ngay từ đầu."
+msgstr "Đó là vì nó liên quan đến <CLT 3>lý do<CLT> tớ đến đây ngay từ đầu."
 
 #. …え？
 msgctxt "0288 | MAKOTO NAEGI"
@@ -2257,8 +2256,8 @@ msgid ""
 "The <CLT 1>[very important reason]<CLT> I made up my mind to ever\n"
 "come to Hope's Peak Academy…"
 msgstr ""
-"<CLT 1>[lý do vô cùng quan trọng]<CLT> khiến tôi quyết định\n"
-"đến Học viện Hope's Peak..."
+"<CLT 1>[lý do vô cùng quan trọng]<CLT> khiến tớ quyết định\n"
+"đến Học viện Đỉnh Hy Vọng... "
 
 #. 霧切さんが１人で、色々と調べてた理由は、
 #. わかったけどさ…
@@ -2267,8 +2266,8 @@ msgid ""
 "You said you had a reason for doing all that\n"
 "investigating on your own..."
 msgstr ""
-"Cậu nói cậu có lý do để tự mình điều tra mọi chuyện\n"
-"như vậy..."
+"Cậu nói cậu có lý do để tự mình điều tra mọi\n"
+"chuyện như vậy..."
 
 #. それで…その結果はどうだったの？
 #. 何か思い出せた？
@@ -2287,8 +2286,8 @@ msgid ""
 "I think there's still a lot I don't remember.\n"
 "But at the very least..."
 msgstr ""
-"Tôi nghĩ vẫn còn rất nhiều điều tôi chưa nhớ ra.\n"
-"Nhưng ít nhất..."
+"Tớ nghĩ vẫn còn rất nhiều điều tớ chưa nhớ ra.\n"
+"Nhưng ít nhất... "
 
 #. <CLT 1>【私の目的と私の能力】<CLT>に関しては、
 #. ようやく思い出す事が出来たわ。
@@ -2297,8 +2296,8 @@ msgid ""
 "...I was finally able to recall \n"
 "<CLT 1>[my purpose, and my ability]<CLT>."
 msgstr ""
-"...cuối cùng tôi cũng đã nhớ lại được\n"
-"<CLT 1>[mục đích và năng lực của tôi]<CLT>."
+"...cuối cùng tớ cũng đã nhớ lại được\n"
+"<CLT 1>[mục đích và năng lực của tớ]<CLT>."
 
 #. 私が思い出した私の能力…
 #. それは、周りからこう呼ばれていたはずよ…
@@ -2307,19 +2306,19 @@ msgid ""
 "You see, those who knew me best, knew me by\n"
 "the title..."
 msgstr ""
-"Cậu thấy đấy, những người hiểu rõ tôi nhất\n"
-"đã biết tôi qua danh hiệu..."
+"Cậu thấy đấy, những người hiểu rõ tớ nhất\n"
+"đã biết tớ qua danh hiệu... "
 
 #. <CLT 3>“超高校級の探偵”<CLT>って…
 msgctxt "0295 | KYOUKO KIRIGIRI"
 msgid "...the <CLT 3>Ultimate Detective<CLT>..."
-msgstr "...<CLT 3>Thám tử siêu cao trung cấp<CLT>..."
+msgstr "...<CLT 3>Siêu Học Sinh Thám tử<CLT>..."
 
 #. そして、私が希望ヶ峰学園に来た目的…
 #. それは…
 msgctxt "0296 | KYOUKO KIRIGIRI"
 msgid "And as for why I came to Hope's Peak Academy..."
-msgstr "Còn về lý do tôi đến Học viện Hope's Peak..."
+msgstr "Còn về lý do tớ đến Học viện Đỉnh Hy Vọng... "
 
 #. この学園で、<CLT 1>【ある人物】<CLT>と会う事だったのよ。
 #. 私はその人とどうしても会う必要があったの。
@@ -2328,8 +2327,8 @@ msgid ""
 "There was <CLT 1>[someone I had to find]<CLT> here in the\n"
 "school. Whatever it took, I *had* to find them."
 msgstr ""
-"Có <CLT 1>[một người mà tôi phải tìm]<CLT> ở trong\n"
-"ngôi trường này. Bằng mọi giá, tôi *phải* tìm được người đó."
+"Có <CLT 1>[một người mà tớ phải tìm]<CLT> ở trong ngôi trường này.\n"
+"Bằng mọi giá, tớ *phải* tìm được người đó."
 
 #. 私がいた<CLT 1>【寄宿舎の２階】<CLT>には、
 #. 監視カメラもモニターもなかったから…
@@ -2339,8 +2338,8 @@ msgid ""
 "<CLT 1>[2nd floor of the dorms]<CLT>, \n"
 "there were no cameras, and no monitors."
 msgstr ""
-"Tất nhiên, khi tôi đến <CLT 1>[tầng 2 khu ký túc xá]<CLT>,\n"
-"nơi đó không có camera và cũng không có màn hình."
+"Tất nhiên, khi tớ đến <CLT 1>[tầng 2 khu ký túc xá]<CLT>, nơi đó\n"
+"không có camera và cũng không có màn hình."
 
 #. こっちで、<CLT 1>【あんな事】<CLT>が起きてるなんて、
 #. 全然、気が付かなかった…
@@ -2349,7 +2348,7 @@ msgid ""
 "Which is why I had no idea <CLT 1>[what was going on]<CLT>\n"
 "in the rest of the building."
 msgstr ""
-"Vì vậy tôi hoàn toàn không biết <CLT 1>[chuyện gì đã xảy ra]<CLT>\n"
+"Vì vậy tớ hoàn toàn không biết <CLT 1>[chuyện gì đã xảy ra]<CLT>\n"
 "ở những nơi khác trong tòa nhà."
 
 #. その部屋の捜査に気を取られ過ぎていたせいね。
@@ -2359,8 +2358,8 @@ msgid ""
 "I was so preoccupied with investigating that area.\n"
 "It was unforgivably careless of me..."
 msgstr ""
-"Tôi đã quá tập trung điều tra khu vực đó.\n"
-"Đó thật sự là một sự bất cẩn không thể tha thứ..."
+"Tớ đã quá tập trung điều tra khu vực đó.\n"
+"Đó thật sự là một sự bất cẩn không thể tha thứ... "
 
 #. 本来だったら、あの時殺されていたのは、
 #. 戦刃むくろじゃなくって…
@@ -2369,13 +2368,13 @@ msgid ""
 "There was a point where Mukuro may not have become the\n"
 "victim..."
 msgstr ""
-"Đã có lúc người có thể trở thành nạn nhân\n"
-"không phải Mukuro..."
+"Có một thời điểm mà Mukuro có thể đã không trở\n"
+"thành nạn nhân..."
 
 #. <CLT 1>【あなた】<CLT>だったかもしれないのよ、苗木君…
 msgctxt "0302 | KYOUKO KIRIGIRI"
 msgid "It could have been <CLT 1>[you]<CLT>, Makoto...!"
-msgstr "Mà có thể là <CLT 1>[cậu]<CLT>, Makoto...!"
+msgstr "Mà đã có thể là <CLT 1>[cậu]<CLT>, Makoto...!"
 
 #. 一連の死体の偽装工作や
 #. 武道場の鍵を私の部屋に置いたのは…
@@ -2384,8 +2383,8 @@ msgid ""
 "And their murder was disguised, and the dojo key wound\n"
 "up in my room..."
 msgstr ""
-"Và việc che giấu vụ giết người đó,\n"
-"cùng với việc chìa khóa võ đường được đưa vào phòng tôi..."
+"Và việc che giấu vụ giết người đó, cùng với việc chìa\n"
+"khóa võ đường được đưa vào phòng tớ... "
 
 #. おそらく、すべて<CLT 1>【黒幕の仕業】<CLT>よ。
 #. ジャマな私を排除する為にやったのよ…
@@ -2394,8 +2393,8 @@ msgid ""
 "I'm sure it was <CLT 1>[the work of the mastermind]<CLT>.\n"
 "They wanted to get rid of the thorn in their side—me."
 msgstr ""
-"Tôi chắc chắn tất cả đều là <CLT 1>[do kẻ chủ mưu gây ra]<CLT>.\n"
-"Chúng muốn loại bỏ cái gai trong mắt chúng — chính là tôi."
+"Tớ chắc chắn tất cả đều là <CLT 1>[do kẻ chủ mưu gây ra]<CLT>.\n"
+"Hắn muốn loại bỏ cái gai trong mắt hắn — chính là tớ."
 
 #. <CLT 4>だとしたら、やっぱり正解だったんだな。
 #. あの時、霧切さんの矛盾を追及しなかったのは…
@@ -2468,7 +2467,7 @@ msgstr "K-Kyoko?"
 #. 思ったより元気そうね…
 msgctxt "0313 | KYOUKO KIRIGIRI"
 msgid "You look like you're doing better than I expected..."
-msgstr "Trông cậu khỏe hơn tôi tưởng..."
+msgstr "Trông cậu khỏe hơn tớ tưởng... "
 
 #. ど、どうしてここに…？
 msgctxt "0314 | MAKOTO NAEGI"
@@ -2479,12 +2478,12 @@ msgstr "C-Cậu đang làm gì ở đây vậy?"
 #. あなたを助けに来たのよ。
 msgctxt "0315 | KYOUKO KIRIGIRI"
 msgid "Isn't it obvious? I'm here to help you."
-msgstr "Không phải quá rõ rồi sao? Tôi đến để giúp cậu."
+msgstr "Không phải quá rõ rồi sao? Tớ đến để giúp cậu."
 
 #. 霧切さん、嬉しいけど…
 msgctxt "0316 | MAKOTO NAEGI"
 msgid "I'm glad to hear that, Kyoko..."
-msgstr "Mình rất vui khi nghe vậy, Kyoko..."
+msgstr "Tớ rất vui khi nghe vậy, Kyoko... "
 
 #. その…頭にゴミが…
 msgctxt "0317 | MAKOTO NAEGI"
@@ -2512,7 +2511,7 @@ msgstr ""
 #. まずは、これを渡しておくわね。
 msgctxt "0320 | KYOUKO KIRIGIRI"
 msgid "First, I have something for you."
-msgstr "Trước tiên, tôi có thứ này cho cậu."
+msgstr "Trước tiên, tớ có thứ này cho cậu."
 
 #. とりあえず食べて。話はその後よ…
 msgctxt "0321 | KYOUKO KIRIGIRI"
@@ -2535,7 +2534,7 @@ msgctxt "0324 | MAKOTO NAEGI"
 msgid ""
 "<CLT 4>I snatched the bread and water that she was holding\n"
 "out for me."
-msgstr ""
+msgstr "<CLT 4>Mình giật lấy ổ bánh mì và nước mà cô ấy đưa cho."
 
 #. <CLT 4>ボクはそれを、
 #. ものの数秒で胃の中へと押し込んだ。
@@ -2558,7 +2557,7 @@ msgstr "Phù, đúng là hồi sinh thật rồi..."
 #. これで…また頑張れる…！
 msgctxt "0327 | MAKOTO NAEGI"
 msgid "Now I've got all the energy I need to keep going!"
-msgstr "Giờ mình đã có đủ năng lượng để tiếp tục rồi!"
+msgstr "Giờ tớ đã có đủ năng lượng để tiếp tục rồi!"
 
 #. やっぱり、まだ諦めていなかったわね…
 msgctxt "0328 | KYOUKO KIRIGIRI"
@@ -2577,8 +2576,8 @@ msgid ""
 "After all, the fact that I can keep going forward\n"
 "is about all I'm good at..."
 msgstr ""
-"Dù sao thì việc mình có thể tiếp tục tiến về phía\n"
-"trước cũng gần như là điểm mạnh duy nhất của mình..."
+"Dù sao thì việc tớ có thể tiếp tục tiến về phía trước\n"
+"cũng gần như là điểm mạnh duy nhất của tớ..."
 
 #. なかなか素敵な取り柄を持ってるのね…
 msgctxt "0331 | KYOUKO KIRIGIRI"
