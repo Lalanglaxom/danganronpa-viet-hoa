@@ -930,7 +930,7 @@ msgstr ""
 #. そうね…
 msgctxt "0141 | KYOUKO KIRIGIRI"
 msgid "Indeed."
-msgstr "Đúng vậy."
+msgstr "Đúng rồi."
 
 #. <CLT 4>食堂にやって来たボクと霧切さんを
 #. 出迎えたのは…
@@ -1360,6 +1360,8 @@ msgid ""
 "<CLT 4>\"They were, however, dead before the blast.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Tuy nhiên, nạn nhân đã chết trước khi vụ nổ xảy ra.\"\n"
+"<CLT>"
 
 #. <CLT 4>腹部のナイフの傷は背中まで達している。
 #. このナイフによる刺し傷は、１ヵ所のみ。
@@ -1370,6 +1372,9 @@ msgid ""
 "knife, which went completely through the body.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Nạn nhân bị đâm một lần duy nhất bằng dao, vết\n"
+"dao xuyên hoàn toàn qua cơ thể.\"\n"
+"<CLT>"
 
 #. <CLT 4>また、後頭部に殴られた形跡もある。
 #. 鉄パイプ程度の太さの棒状の物で殴られた様子。
@@ -1380,6 +1385,9 @@ msgid ""
 "about as thick as a metal pipe.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Nạn nhân cũng bị đánh vào đầu bằng một vật có\n"
+"độ dày tương đương một ống kim loại.\"\n"
+"<CLT>"
 
 #. <CLT 4>他にも、全身に数多くの傷跡があるが、
 #. ここ数日のものではなく、以前からあった傷のようだ。
@@ -1390,6 +1398,9 @@ msgid ""
 "were at least several days old.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Cơ thể có nhiều vết thương khác, nhưng những\n"
+"vết này đã có từ ít nhất vài ngày trước.\"\n"
+"<CLT>"
 
 #. 戦刃むくろ…
 #. 正体不明の彼女を殺した犯人が…
@@ -1599,7 +1610,7 @@ msgstr ""
 #. …どうだったの？
 msgctxt "0239 | MAKOTO NAEGI"
 msgid "And?"
-msgstr ""
+msgstr "Và?"
 
 #. ううん、ダメだったよ。
 #. 鍵の掛かった部屋もそのままだったし…

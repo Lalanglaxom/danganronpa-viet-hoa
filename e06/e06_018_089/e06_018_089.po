@@ -178,6 +178,8 @@ msgid ""
 "<CLT 4>\"They were, however, dead before the blast.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Tuy nhiên, nạn nhân đã chết trước khi vụ nổ xảy ra.\"\n"
+"<CLT>"
 
 #. <CLT 4>腹部のナイフの傷は背中まで達している。
 #. このナイフによる刺し傷は、１ヵ所のみ。
@@ -188,6 +190,9 @@ msgid ""
 "knife, which went completely through the body.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Nạn nhân bị đâm một lần duy nhất bằng dao, vết\n"
+"dao xuyên hoàn toàn qua cơ thể.\"\n"
+"<CLT>"
 
 #. <CLT 4>また、後頭部に殴られた形跡もある。
 #. 鉄パイプ程度の太さの棒状の物で殴られた様子。
@@ -198,6 +203,9 @@ msgid ""
 "about as thick as a metal pipe.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Nạn nhân cũng bị đánh vào đầu bằng một vật có\n"
+"độ dày tương đương một ống kim loại.\"\n"
+"<CLT>"
 
 #. <CLT 4>他にも、全身に数多くの傷跡があるが、
 #. ここ数日のものではなく、以前からあった傷のようだ。
@@ -208,6 +216,9 @@ msgid ""
 "were at least several days old.\"\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>\"Cơ thể có nhiều vết thương khác, nhưng những\n"
+"vết này đã có từ ít nhất vài ngày trước.\"\n"
+"<CLT>"
 
 #. 残る可能性は<CLT 3>“全身の数多くの傷”<CLT>だけど、
 #. それって、古傷だったはずだし…
@@ -371,6 +382,9 @@ msgid ""
 "Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Lời Khai Của Kyoko<CLT><CLT 23>\" đã được thêm vào mục Đạn Luận Điểm\n"
+"trong sổ học sinh của bạn.\n"
+"<CLT>"
 
 #. ついでに、<CLT 1>【死体に関して知りたい事】<CLT>があるなら、
 #. 今の内に聞いておいた方がいいわよ。
@@ -453,6 +467,9 @@ msgid ""
 "Truth Bullets section of your handbook.\n"
 "<CLT>"
 msgstr ""
+"<CLT 23>\"<CLT><CLT 3>Hồ Sơ Của Mukuro Ikusaba<CLT><CLT 23>\" đã được cập nhật vào mục\n"
+"Đạn Luận Điểm trong sổ tay của bạn.\n"
+"<CLT>"
 
 #. …聞きたい事はそれだけ？
 msgctxt "0063 | KYOUKO KIRIGIRI"
