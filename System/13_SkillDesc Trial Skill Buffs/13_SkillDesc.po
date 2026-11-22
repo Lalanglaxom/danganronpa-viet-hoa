@@ -167,9 +167,10 @@ msgid ""
 "Bullet Time Battle Final\n"
 "Strike. Costs 3 SP."
 msgstr ""
-"Tăng tốc độ bay của Đạn Hy Vọng.\n"
+"Tăng tốc độ bay của Đạn Luận Điểm.\n"
 "Có hiệu quả trong Tranh Luận Liên Hồi\n"
-"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 3 SP."
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. \n"
+"Tốn 3 SP."
 
 #. コトダマを撃った後、次のコトダ
 #. マを発射できるようになるまでの
@@ -185,9 +186,10 @@ msgid ""
 "and the Bullet Time Battle\n"
 "Final Strike. Costs 3 SP."
 msgstr ""
-"Giảm độ trễ giữa những lần bắn Đạn Hy Vọng.\n"
+"Giảm độ trễ giữa những lần bắn Đạn Luận Điểm.\n"
 "Có hiệu quả trong Tranh Luận Liên Hồi\n"
-"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 3 SP."
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. \n"
+"Tốn 3 SP."
 
 #. コトダマが３種類以上装填される
 #. 議論の場合に、事前に３種類まで
@@ -205,7 +207,8 @@ msgid ""
 msgstr ""
 "Giảm số lượng lập luận xuống còn tối đa ba.\n"
 "Có hiệu quả trong Tranh Luận Liên Hồi\n"
-"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. Tốn 5 SP."
+"và Đòn Kết Liễu của Đấu Khẩu Súng Máy. \n"
+"Tốn 5 SP."
 
 #. サイレンサーを、発言に当ててし
 #. まっても、タイムリミットが減ら
@@ -221,8 +224,9 @@ msgid ""
 "Debate. Costs 2 SP."
 msgstr ""
 "Giới hạn thời gian sẽ không giảm,\n"
-"ngay cả khi cậu bắn vào lập luận bằng ống giảm thanh.\n"
-"Có hiệu quả trong Tranh Luận Liên Hồi. Tốn 2 SP."
+"ngay cả khi bạn bắn vào lập luận bằng \n"
+"ống giảm thanh. Có hiệu quả trong Tranh \n"
+"Luận Liên Hồi. Tốn 2 SP."
 
 #. 相手の発言をコトダマとして記憶
 #. する速度が上がります。
@@ -271,9 +275,10 @@ msgid ""
 "Closing Argument. Costs 3 SP."
 msgstr ""
 "Giảm sát thương lên Thanh Ảnh Hưởng\n"
-"khi cậu bắn trượt. Có hiệu quả trong Tranh\n"
-"Luận Liên Hồi, Trận Đồ Ký Tự, Đấu Khẩu Súng Máy,\n"
-"và Lập Luận Hồi Kết. Tốn 3 SP."
+"khi bạn bắn trượt. Có hiệu quả trong Tranh\n"
+"Luận Liên Hồi, Trận Đồ Ký Tự, Đấu Khẩu \n"
+"Súng Máy, và Lập Luận Hồi Kết. \n"
+"Tốn 3 SP."
 
 #. 精神集中、フィーバータイム時、
 #. 集中力ゲージの減少が遅くなり、
@@ -291,9 +296,10 @@ msgid ""
 "Gambit, and the Bullet Time\n"
 "Battle. Costs 5 SP."
 msgstr ""
-"Thanh Tập Trung giảm chậm hơn khi đang tập\n"
-"trung và trong thời gian Hưng Phấn. Có hiệu quả\n"
-"trong Tranh Luận Liên Hồi, Trận Đồ Ký Tự,\n"
+"Thanh Tập Trung giảm chậm hơn \n"
+"khi đang tập trung và trong thời gian \n"
+"Hưng Phấn. Có hiệu quả trong Tranh \n"
+"Luận Liên Hồi, Trận Đồ Ký Tự,\n"
 "và Đấu Khẩu Súng Máy. Tốn 5 SP."
 
 #. 精神集中、フィーバータイム時、
@@ -381,7 +387,7 @@ msgid ""
 "during the Bullet Time Battle.\n"
 "Costs 4 SP."
 msgstr ""
-"Cho phép cậu khóa mục tiêu vào hai\n"
+"Cho phép bạn khóa mục tiêu vào hai\n"
 "lập luận cùng lúc. Có hiệu quả\n"
 "trong Đấu Khẩu Súng Máy.\n"
 "Tốn 4 SP."
@@ -398,7 +404,7 @@ msgid ""
 "during the Bullet Time Battle.\n"
 "Costs 4 SP."
 msgstr ""
-"Cho phép cậu nạp hai viên đạn cùng\n"
+"Cho phép bạn nạp hai viên đạn cùng\n"
 "lúc. Có hiệu quả trong Đấu Khẩu Súng Máy.\n"
 "Tốn 4 SP."
 
@@ -430,7 +436,7 @@ msgid ""
 "you can investigate."
 msgstr ""
 "Trong đời sống học đường, nhấn nút R\n"
-"để đánh dấu các vật thể mà cậu có thể\n"
+"để đánh dấu các vật thể mà bạn có thể\n"
 "điều tra."
 
 #. 学園生活パートで×ボタンを押し
@@ -456,8 +462,8 @@ msgid ""
 "When you find Monocoins,\n"
 "you'll earn more than usual."
 msgstr ""
-"Khi cậu tìm thấy Huy hiệu Monokuma,\n"
-"cậu sẽ nhận được nhiều hơn bình thường."
+"Khi bạn tìm thấy Huy hiệu Monokuma,\n"
+"bạn sẽ nhận được nhiều hơn bình thường."
 
 #. ※
 msgctxt "0029"
@@ -534,25 +540,25 @@ msgstr ""
 #. れます。
 msgctxt "0042"
 msgid "Your max SP increases by 1."
-msgstr "Điểm Kỹ Năng tối đa của cậu tăng thêm 1."
+msgstr "Điểm Kỹ Năng tối đa của bạn tăng thêm 1."
 
 #. スキルポイントの最大値が＋２さ
 #. れます。
 msgctxt "0043"
 msgid "Your max SP increases by 2."
-msgstr "Điểm Kỹ Năng tối đa của cậu tăng thêm 2."
+msgstr "Điểm Kỹ Năng tối đa của bạn tăng thêm 2."
 
 #. スキルポイントの最大値が＋３さ
 #. れます。
 msgctxt "0044"
 msgid "Your max SP increases by 3."
-msgstr "Điểm Kỹ Năng tối đa của cậu tăng thêm 3."
+msgstr "Điểm Kỹ Năng tối đa của bạn tăng thêm 3."
 
 #. スキルポイントの最大値が９９に
 #. なります。
 msgctxt "0045"
 msgid "Your max SP becomes 99."
-msgstr "Điểm Kỹ Năng tối đa của cậu trở thành 99."
+msgstr "Điểm Kỹ Năng tối đa của bạn trở thành 99."
 
 #. ？？？
 msgctxt "0046"
