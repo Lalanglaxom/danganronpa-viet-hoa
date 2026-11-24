@@ -38,7 +38,7 @@ SEND_BTN_SEL = (
 RESPONSE_MARKDOWN_SEL = 'div.markdown-main-panel, message-content, pre'
 DEFAULT_CDP_URL = "http://localhost:9222"
 DEFAULT_GEMINI_URL = "https://gemini.google.com/app"
-DEFAULT_CHROME_USER_DATA_DIR = str("C\ChromeDebug")
+DEFAULT_CHROME_USER_DATA_DIR = str("C:\\ChromeDebug")
 DEFAULT_MAX_ENTRIES_PER_BATCH = 40
 DEFAULT_BATCH_RETRIES = 2
 MIN_POST_SAVE_DELAY_SECONDS = 2.5
@@ -926,22 +926,17 @@ def _place_prompt_in_chatbox(page, text: str) -> str:
     chatbox = _active_chatbox(page)
     chatbox.click(timeout=20_000)
 
-    attempts = (
-        _try_clipboard_paste,
-        _try_dispatch_paste,
-        _try_exec_insert,
-        _try_safe_inner_html,
+    attempts: tuple[Callable[[], str], ...] = (
+        lambda: _try_clipboard_paste(page, chatbox, text),
+        lambda: _try_dispatch_paste(chatbox, text),
+        lambda: _try_exec_insert(page, chatbox, text),
+        lambda: _try_safe_inner_html(page, chatbox, text),
     )
 
     last = ""
     for attempt in attempts:
         _clear_chatbox(page, chatbox)
-        if attempt is _try_clipboard_paste:
-            placed = attempt(page, chatbox, text)
-        elif attempt is _try_exec_insert or attempt is _try_safe_inner_html:
-            placed = attempt(page, chatbox, text)
-        else:
-            placed = attempt(chatbox, text)
+        placed = attempt()
         last = placed or ""
         if _prompt_looks_placed(text, last):
             return last

@@ -30,17 +30,20 @@ msgid ""
 "heard a strange sound.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Ngay khi cánh cửa phòng dữ liệu đóng lại, tôi\n"
+"nghe thấy một âm thanh kỳ lạ.\n"
+"<CLT>"
 
 #. 今の音って…？
 msgctxt "0003 | MAKOTO NAEGI"
 msgid "What was that...?"
-msgstr ""
+msgstr "Tiếng gì thế...?"
 
 #. あ！　鍵が閉まってる！！
 #. 情報処理室の鍵が閉まっちゃったよ！！
 msgctxt "0004 | AOI ASAHINA"
 msgid "Ah! The door! It just locked on its own!"
-msgstr ""
+msgstr "Á! Cánh cửa! Nó tự khóa mất rồi!"
 
 #. …え！？
 msgctxt "0005 | MAKOTO NAEGI"
@@ -54,6 +57,8 @@ msgid ""
 "<CLT 4>My hand shot out to grab the doorknob...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tay tôi vội đưa ra nắm lấy tay nắm cửa...\n"
+"<CLT>"
 
 #. <CLT 23>「ガチャ…ガチャ…」
 #. <CLT>
@@ -69,7 +74,7 @@ msgstr ""
 #. でも、どうして…？
 msgctxt "0008 | MAKOTO NAEGI"
 msgid "You're right, it's locked. But...why?"
-msgstr ""
+msgstr "Đúng thật, nó khóa rồi. Nhưng... tại sao chứ?"
 
 #. 鍵が締まって当然だよ。
 #. 情報処理室は封鎖したんだもん。
@@ -78,6 +83,8 @@ msgid ""
 "Of course it's locked! Because the data center is now\n"
 "restricted!"
 msgstr ""
+"Tất nhiên là khóa rồi! Vì phòng dữ liệu giờ đã bị\n"
+"hạn chế ra vào!"
 
 #. モ、モノクマ…！？
 msgctxt "0010 | MAKOTO NAEGI"
@@ -91,11 +98,13 @@ msgid ""
 "Hey, no fair! You can't just go around restricting\n"
 "whatever you feel like!"
 msgstr ""
+"Này, chơi xấu thế! Ngươi không thể cứ thích hạn chế\n"
+"chỗ nào là hạn chế đâu nhé!"
 
 #. これはね、オマエラの為でもあるんだよ…
 msgctxt "0012 | MONOKUMA"
 msgid "It's for YOUR benefit!"
-msgstr ""
+msgstr "Là vì lợi ích của CÁC NGƯỜI đấy!"
 
 #. だって、あの部屋を開放したままだと、
 #. ボクを動かせなくなっちゃうでしょ？
@@ -104,6 +113,8 @@ msgid ""
 "Cuz if that room stays open, I won't be able\n"
 "to move around."
 msgstr ""
+"Vì nếu căn phòng đó cứ mở toang, ta sẽ không thể\n"
+"di chuyển xung quanh được."
 
 #. マスコット的存在のボクがいなくなった時の
 #. 空気の悪さを想像してごらんよ！
@@ -112,16 +123,18 @@ msgid ""
 "Imagine how depressed everyone would get if the school\n"
 "mascot just up and stopped moving!"
 msgstr ""
+"Hãy tưởng tượng xem mọi người sẽ chán nản thế nào nếu linh vật của trường\n"
+"bỗng dưng ngừng cử động chứ!"
 
 #. じゃあ、やっぱり…さっきの部屋って…
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "Then...that room..."
-msgstr ""
+msgstr "Vậy thì... căn phòng đó..."
 
 #. ご察しの通り、ボクを操作する為の部屋だよ！
 msgctxt "0016 | MONOKUMA"
 msgid "As you may have guessed, that's where my controls are!"
-msgstr ""
+msgstr "Như các ngươi đoán đấy, đó là nơi đặt bộ điều khiển của ta!"
 
 #. だったら、今のあんたも…
 #. あの部屋で<CLT 3>“誰か”<CLT>が操作してるって事…？
@@ -130,27 +143,29 @@ msgid ""
 "So...right now, you're being operated by <CLT 3>someone<CLT> in\n"
 "that room?"
 msgstr ""
+"Vậy... ngay lúc này, ngươi đang được điều khiển bởi <CLT 3>ai đó<CLT> ở\n"
+"trong căn phòng kia sao?"
 
 #. えぇ、そうなりますね。
 msgctxt "0018 | MONOKUMA"
 msgid "Correctamundo!"
-msgstr ""
+msgstr "Chính xác luôn!"
 
 #. そんなのおかしいよ！
 msgctxt "0019 | AOI ASAHINA"
 msgid "But that doesn't make any sense!"
-msgstr ""
+msgstr "Nhưng chuyện đó vô lý quá!"
 
 #. 今、あの部屋を調べた時は、
 #. 中に人なんていなかったもん！
 msgctxt "0020 | AOI ASAHINA"
 msgid "We were just in there, and we didn't see anyone!"
-msgstr ""
+msgstr "Bọn tôi vừa ở trong đó xong, và chẳng thấy ai cả!"
 
 #. 人はいなかった…？
 msgctxt "0021 | MONOKUMA"
 msgid "Oh you didn't, did you?"
-msgstr ""
+msgstr "Ồ, các ngươi không thấy sao?"
 
 #. うぷぷ…ちゃんと調べたのかしら…？
 msgctxt "0022 | MONOKUMA"
@@ -158,21 +173,23 @@ msgid ""
 "Puhuhu... Are you sure you were as thorough as you\n"
 "could have been?"
 msgstr ""
+"Puhuhu... Các ngươi có chắc là mình đã kiểm tra kỹ hết mức\n"
+"có thể chưa?"
 
 #. 怪しい扉とか…ちゃんと調べたのかしら…？
 msgctxt "0023 | MONOKUMA"
 msgid "Did you happen to check...a certain suspicious hatch?"
-msgstr ""
+msgstr "Các ngươi có tình cờ kiểm tra... một cái cửa sập khả nghi nào không?"
 
 #. ま、まさか…！
 msgctxt "0024 | MAKOTO NAEGI"
 msgid "N-No way...!"
-msgstr ""
+msgstr "K-Không thể nào...!"
 
 #. 床の扉…？
 msgctxt "0025 | MAKOTO NAEGI"
 msgid "The hatch on the floor!?"
-msgstr ""
+msgstr "Cái cửa sập trên sàn nhà sao!?"
 
 #. うぷぷ、残念でしたね！
 #. ビッグチャンスを逃してしまいましたね！
@@ -181,6 +198,8 @@ msgid ""
 "Puhuhu, too bad! That was your one big chance, and ya\n"
 "blew it!"
 msgstr ""
+"Puhuhu, tiếc quá đi! Đó là cơ hội lớn duy nhất của các ngươi, và các ngươi\n"
+"đã bỏ lỡ rồi!"
 
 #. まぁ、どっちにしろ、床の扉は内鍵だから、
 #. 外から開けられないんだけどね！
@@ -189,6 +208,8 @@ msgid ""
 "Of course, that hatch can't be opened from the outside\n"
 "anyway. So whatever!"
 msgstr ""
+"Tất nhiên, cái cửa sập đó đằng nào cũng không mở được từ bên ngoài\n"
+"đâu. Nên kệ đi!"
 
 #. …とにかく、この部屋に関しては、
 #. もう封鎖したので捜査は出来ません。
@@ -197,22 +218,24 @@ msgid ""
 "Now then, this room is officially restricted. So no\n"
 "more investigating!"
 msgstr ""
+"Nào, căn phòng này chính thức bị hạn chế. Vậy nên đừng\n"
+"có điều tra nữa nhé!"
 
 #. なので、オマエラが責任を持って、
 #. 他のみんなに教えてあげてくださいね。
 msgctxt "0029 | MONOKUMA"
 msgid "I'll be relying on you guys to tell the others."
-msgstr ""
+msgstr "Ta sẽ trông cậy vào các ngươi để báo lại cho những người khác đấy."
 
 #. うぷぷぷ！　さいならー！
 msgctxt "0030 | MONOKUMA"
 msgid "Puhuhu... Peace!"
-msgstr ""
+msgstr "Puhuhu... Tạm biệt!"
 
 #. 行っちゃった…けど…
 msgctxt "0031 | AOI ASAHINA"
 msgid "He's gone. But..."
-msgstr ""
+msgstr "Hắn đi rồi. Nhưng..."
 
 #. 本当…だったのかな…？
 #. 黒幕が…隠れてたなんて…
@@ -221,6 +244,8 @@ msgid ""
 "...was he telling the truth? The mastermind was hiding\n"
 "in there?"
 msgstr ""
+"...liệu hắn có nói thật không? Kẻ chủ mưu đang trốn\n"
+"ở trong đó sao?"
 
 #. 実際に、部屋を封鎖された事から考えると…
 #. 多分…本当だと思うよ…
@@ -229,11 +254,13 @@ msgid ""
 "In fact, if you think back to when we got locked out\n"
 "of the control room, that proves it for sure."
 msgstr ""
+"Thực ra, nếu cậu nghĩ lại lúc chúng ta bị khóa ngoài\n"
+"phòng điều khiển, điều đó chắc chắn đã chứng minh rồi."
 
 #. じゃあ…私が部屋を出ようなんて言ったせいで…
 msgctxt "0034 | AOI ASAHINA"
 msgid "Then...when I said we should leave..."
-msgstr ""
+msgstr "Vậy thì... lúc tớ bảo chúng ta nên rời đi..."
 
 #. …いや、あいつが隠れてたって扉も、
 #. どうせ外からは開けられなかったらしいし…
@@ -242,11 +269,13 @@ msgid ""
 "Well, that hatch couldn't be opened from the outside\n"
 "anyway, right?"
 msgstr ""
+"Chà, cái cửa sập đó đằng nào cũng không mở được từ bên ngoài mà,\n"
+"đúng không?"
 
 #. だから、朝日奈さんのせいじゃないよ。
 msgctxt "0036 | MAKOTO NAEGI"
 msgid "So it's not your fault."
-msgstr ""
+msgstr "Nên đó không phải lỗi của cậu đâu."
 
 #. う、うん…
 msgctxt "0037 | AOI ASAHINA"
@@ -256,7 +285,7 @@ msgstr "Ừ-Ừm..."
 #. 待って、落ち込んでるヒマはないよ。
 msgctxt "0038 | MAKOTO NAEGI"
 msgid "Anyway, we don't have to let it get to us."
-msgstr ""
+msgstr "Dù sao thì, chúng ta không cần phải để chuyện đó làm nản lòng."
 
 #. 残された時間は少ないんだし、
 #. その中で出来る事を前向きに考えないと…
@@ -265,6 +294,8 @@ msgid ""
 "We have to stay positive and make the most of the time\n"
 "we have left!"
 msgstr ""
+"Chúng ta phải giữ tinh thần lạc quan và tận dụng tối đa khoảng thời gian\n"
+"còn lại!"
 
 #. そう…だよね…
 msgctxt "0040 | AOI ASAHINA"
@@ -278,6 +309,8 @@ msgid ""
 "If there's one thing I'm good at, it's keeping my body\n"
 "moving...!"
 msgstr ""
+"Nếu có một thứ tớ giỏi, thì đó là giữ cho cơ thể mình\n"
+"luôn vận động...!"
 
 #. じゃあ、あの部屋の事をみんなに伝えるのは任せて！
 #. 私が走り回って、みんなに伝えてくるから！
@@ -286,18 +319,20 @@ msgid ""
 "Okay! I'm gonna go run around and tell everyone what\n"
 "we found here!"
 msgstr ""
+"Được rồi! Tớ sẽ chạy đi khắp nơi và kể cho mọi người những gì\n"
+"chúng ta tìm thấy ở đây!"
 
 #. よーしっ！　苗木のお陰で、
 #. やる気が出て来たよ！
 msgctxt "0043 | AOI ASAHINA"
 msgid "Nice! You've got me all motivated again!"
-msgstr ""
+msgstr "Tuyệt! Cậu làm tớ có lại động lực rồi đấy!"
 
 #. じゃあ、さっそく行って来るよ！
 #. また後でねっ！！
 msgctxt "0044 | AOI ASAHINA"
 msgid "Okay, I'm out! See ya later!"
-msgstr ""
+msgstr "Được rồi, tớ đi đây! Gặp lại sau nhé!"
 
 #. <CLT 4>そう言って、朝日奈さんは全速力で
 #. 走り去っていった。
@@ -307,12 +342,14 @@ msgid ""
 "<CLT 4>Hina took off at a full sprint.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Hina lao đi với tốc độ hết sức.\n"
+"<CLT>"
 
 #. そうだ…！
 #. ボクも自分に出来る事をやらないとな…！
 msgctxt "0046 | MAKOTO NAEGI"
 msgid "And I have to do what I can, too...!"
-msgstr ""
+msgstr "Và tôi cũng phải làm những gì mình có thể chứ...!"
 
 #. <CLT 4>それしか…道はないんだ…！
 #. <CLT>
@@ -321,6 +358,8 @@ msgid ""
 "<CLT 4>That's the only way forward!\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Đó là con đường duy nhất phía trước!\n"
+"<CLT>"
 
 #. <CLT 4>ここは女子トイレだ…
 #. もちろん、入る訳にはいかない…
