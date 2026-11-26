@@ -1,0 +1,582 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DR1 (PC)\n"
+"Report-Msgid-Bugs-To: your_email\n"
+"POT-Creation-Date: 7/22/2026\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. 本来なら点灯しているはずのランプの数は、
+#. <CLT 3>１０個<CLT>じゃなきゃおかしいんだよ！
+msgctxt "0001 | MAKOTO NAEGI"
+msgid ""
+"<CLT 3>Ten<CLT> of the lights should have been on. Any other\n"
+"number is incredibly suspicious!"
+msgstr ""
+"Lẽ ra phải có <CLT 3>mười<CLT> ngọn đèn bật sáng mới đúng. Bất kỳ con số\n"
+"nào khác đều vô cùng đáng ngờ!"
+
+#. お、おかしいって…どうしてよ…？
+msgctxt "0002 | TOUKO FUKAWA"
+msgid "S-Suspicious...? Why?"
+msgstr "Đ-Đáng ngờ...? Tại sao chứ?"
+
+#. 犠牲になったみんなの事を思い出してみれば、
+#. すぐにわかるはずよ…
+msgctxt "0003 | KYOUKO KIRIGIRI"
+msgid ""
+"That's simple. Just recall who's died here so far, and\n"
+"it should become clear."
+msgstr ""
+"Đơn giản thôi. Chỉ cần nhớ lại những ai đã chết ở đây cho đến giờ, mọi chuyện\n"
+"sẽ sáng tỏ ngay."
+
+#. <CLT 4>犠牲になったみんな…
+#. そうだ、そこに謎を解く鍵があるんだ…
+#. <CLT>
+msgctxt "0004 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>That's right... That's the key to solving this\n"
+"mystery...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Đúng vậy... Đó chính là chìa khóa để giải mã bí ẩn\n"
+"này...\n"
+"<CLT>"
+
+#. <CLT 4>１人目の犠牲者は、舞園さん…
+#. <CLT>
+msgctxt "0005 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Sayaka died first...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sayaka chết đầu tiên...\n"
+"<CLT>"
+
+#. <CLT 4>２人目の犠牲者は、江ノ島さん…
+#. <CLT>
+msgctxt "0006 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Junko was second...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Junko là người thứ hai...\n"
+"<CLT>"
+
+#. <CLT 4>３人目の犠牲者は、桑田クン…
+#. <CLT>
+msgctxt "0007 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Leon was third...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Leon là người thứ ba...\n"
+"<CLT>"
+
+#. <CLT 4>４人目の犠牲者は、不二咲クン…
+#. <CLT>
+msgctxt "0008 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Chihiro was fourth...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Chihiro là người thứ tư...\n"
+"<CLT>"
+
+#. <CLT 4>５人目の犠牲者は、大和田クン…
+#. <CLT>
+msgctxt "0009 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mondo was fifth...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Mondo là người thứ năm...\n"
+"<CLT>"
+
+#. <CLT 4>６人目の犠牲者は、石丸クン…
+#. ７人目の犠牲者は、山田クン…
+#. <CLT>
+msgctxt "0010 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Taka was sixth, then Hifumi was seventh...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Taka là người thứ sáu, rồi Hifumi là người thứ bảy...\n"
+"<CLT>"
+
+#. <CLT 4>８人目の犠牲者は、セレスさん…
+#. <CLT>
+msgctxt "0011 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Celeste was eighth...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Celeste là người thứ tám...\n"
+"<CLT>"
+
+#. <CLT 4>９人目の犠牲者は、大神さん…
+#. <CLT>
+msgctxt "0012 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Sakura was ninth...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Sakura là người thứ chín...\n"
+"<CLT>"
+
+#. <CLT 4>そして１０人目の犠牲者は、戦刃むくろ…
+#. <CLT>
+msgctxt "0013 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>And victim number ten was Mukuro.\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Và nạn nhân thứ mười là Mukuro.\n"
+"<CLT>"
+
+#. あれ…？　全部で<CLT 3>１０人<CLT>…？
+msgctxt "0014 | AOI ASAHINA"
+msgid "Hm... So <CLT 3>ten people<CLT> in all?"
+msgstr "Hừm... Vậy là tổng cộng <CLT 3>mười người<CLT> ư?"
+
+#. そうなんだ。本来なら犠牲者の数は、
+#. １０人じゃなきゃおかしいんだよ。
+msgctxt "0015 | MAKOTO NAEGI"
+msgid ""
+"That's right. Any other number should make you\n"
+"immediately suspicious."
+msgstr ""
+"Đúng vậy. Bất kỳ con số nào khác cũng sẽ khiến bạn phải\n"
+"nghi ngờ ngay lập tức."
+
+#. それなのに、生物室に保管されてる死体は、
+#. ９人分だけだった…
+msgctxt "0016 | MAKOTO NAEGI"
+msgid ""
+"But according to the lights in the bio lab, only nine\n"
+"people were being stored there..."
+msgstr ""
+"Nhưng theo số đèn trong phòng sinh học, chỉ có chín\n"
+"người được lưu giữ ở đó..."
+
+#. し、死体が消えたって事か！？
+msgctxt "0017 | YASUHIRO HAGAKURE"
+msgid ""
+"Y-You're saying a dead body just...up and\n"
+"disappeared!?"
+msgstr ""
+"C-Cậu đang nói là có một cái xác tự dưng... biến mất\n"
+"không dấu vết sao!?"
+
+#. わかった！　黒幕が証拠隠滅の為に、
+#. 死体を処分しちゃったんだよ！
+msgctxt "0018 | AOI ASAHINA"
+msgid ""
+"I got it! The mastermind destroyed one of the bodies\n"
+"to get rid of evidence!"
+msgstr ""
+"Tớ hiểu rồi! Kẻ chủ mưu đã hủy một trong các thi thể\n"
+"để phi tang bằng chứng!"
+
+#. でも、黒幕が証拠隠滅するなら、自分が関わってる
+#. 戦刃むくろの死体を処分するはずだよ…
+msgctxt "0019 | MAKOTO NAEGI"
+msgid ""
+"But if they wanted to do that, they would've destroyed\n"
+"Mukuro's body, since they actually killed her."
+msgstr ""
+"Nhưng nếu muốn làm vậy, kẻ đó đã phải hủy thi thể của\n"
+"Mukuro rồi, vì chính kẻ đó đã giết cô ấy mà."
+
+#. だけど…彼女の死体は残ったままだったんだ。
+msgctxt "0020 | MAKOTO NAEGI"
+msgid "And yet...her body was left alone."
+msgstr "Vậy mà... thi thể của cô ấy vẫn được để nguyên."
+
+#. じゃあ…誰の死体が消えちゃったの？
+msgctxt "0021 | AOI ASAHINA"
+msgid "Then...whose body disappeared?"
+msgstr "Vậy thì... thi thể của ai đã biến mất?"
+
+#. そもそも、消えた訳じゃないのかもしれない…
+msgctxt "0022 | KYOUKO KIRIGIRI"
+msgid "It may very well be...that none of them disappeared."
+msgstr "Rất có thể... là chẳng có thi thể nào biến mất cả."
+
+#. き、消えてないなら…
+#. どうして、死体の数が合わないのよ…ッ！
+msgctxt "0023 | TOUKO FUKAWA"
+msgid ""
+"B-But if that's true, then why doesn't the b-body\n"
+"count match...?"
+msgstr ""
+"Nh-Nhưng nếu điều đó là thật, thì tại sao s-số lượng thi thể\n"
+"lại không khớp chứ...?"
+
+#. モノクマの処刑を含めた殺人は１０回起きたけど、
+#. でも、それらの犠牲者は９人しかいなかった。
+msgctxt "0024 | KYOUKO KIRIGIRI"
+msgid ""
+"Including Monokuma's executions, there have apparently\n"
+"been ten deaths. But there were only nine bodies."
+msgstr ""
+"Tính cả các vụ hành hình của Monokuma, rõ ràng đã có\n"
+"mười cái chết. Nhưng lại chỉ có chín thi thể."
+
+#. …つまり、そういう事よ。
+msgctxt "0025 | KYOUKO KIRIGIRI"
+msgid "That's the point I'm trying to make."
+msgstr "Đó chính là điều tôi đang cố nói."
+
+#. 全然わかんないよ！
+#. なんで、殺人が起きた回数より犠牲者の数が少ないの？
+msgctxt "0026 | AOI ASAHINA"
+msgid ""
+"I'm completely lost! How can the number of victims be\n"
+"less than the number of murders!?"
+msgstr ""
+"Tớ mù tịt luôn rồi! Làm sao số lượng nạn nhân lại có thể\n"
+"ít hơn số vụ giết người được chứ!?"
+
+#. 同じ人物が２回殺された
+msgctxt "0027 | CHOICE/RE:ACT"
+msgid "The same person was killed twice"
+msgstr "Cùng một người bị giết hai lần"
+
+#. 殺人が起きたのは９回だった
+msgctxt "0028 | CHOICE/RE:ACT"
+msgid "Only nine murders took place"
+msgstr "Chỉ có chín vụ giết người xảy ra"
+
+#. 殺人が起きたのは１０回じゃなく９回だったとか…
+#. だから、死体の数も９人分しかないんじゃ…
+msgctxt "0029 | MAKOTO NAEGI"
+msgid ""
+"There weren't actually ten murders, but nine! That's\n"
+"why there are nine bodies..."
+msgstr ""
+"Thực chất không phải có mười vụ giết người, mà chỉ có chín thôi! Đó là\n"
+"lý do tại sao lại có chín thi thể..."
+
+#. それはないな。
+#. モノクマの処刑も含め殺人は１０回あったはずだ。
+msgctxt "0030 | BYAKUYA TOGAMI"
+msgid ""
+"That's patently untrue. Counting Monokuma's\n"
+"executions, there have indeed been ten murders."
+msgstr ""
+"Điều đó hoàn toàn sai sự thật. Tính cả các vụ hành hình\n"
+"của Monokuma, quả thực đã có mười vụ giết người."
+
+#. それは、俺達自身も、
+#. しっかりと確認していたはずだぞ。
+msgctxt "0031 | BYAKUYA TOGAMI"
+msgid "I think we can all agree on that."
+msgstr "Ta nghĩ tất cả chúng ta đều có thể đồng ý về điều đó."
+
+#. <CLT 4>確かにそうだよな…
+#. だったら…
+#. <CLT>
+msgctxt "0032 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Actually, you're completely right. So...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Thật ra, cậu hoàn toàn đúng. Vậy thì...\n"
+"<CLT>"
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0033 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. 黒幕が死体を処分した
+msgctxt "0034 | CHOICE/RE:ACT"
+msgid "The mastermind destroyed a body"
+msgstr "Kẻ chủ mưu đã hủy một thi thể"
+
+#. やっぱり…黒幕が誰かの死体を処分したんじゃ…
+msgctxt "0035 | MAKOTO NAEGI"
+msgid ""
+"Just as I suspected, the mastermind destroyed a body,\n"
+"and then—"
+msgstr ""
+"Đúng như tôi nghi ngờ, kẻ chủ mưu đã hủy một thi thể,\n"
+"và sau đó—"
+
+#. 証拠隠滅なら、戦刃むくろの死体を処分するはずだ。
+#. 自分の犯罪に深く関わっている死体だからな…
+msgctxt "0036 | BYAKUYA TOGAMI"
+msgid ""
+"If they were going to destroy a body, it would have\n"
+"been *Mukuro's*. The only one they're connected to..."
+msgstr ""
+"Nếu kẻ đó định hủy một thi thể, thì đó phải là thi thể của\n"
+"*Mukuro*. Thi thể duy nhất có liên quan tới kẻ đó..."
+
+#. それ以外の死体を処分したところで、
+#. なんの意味もないはず…お前が言った事だぞ？
+msgctxt "0037 | BYAKUYA TOGAMI"
+msgid ""
+"There's no point in destroying any body other than\n"
+"that. Didn't you *just* say all that?"
+msgstr ""
+"Chẳng có ích lợi gì khi hủy bất kỳ thi thể nào khác ngoài\n"
+"cái đó cả. Chẳng phải ngươi *vừa mới* nói hết những điều đó sao?"
+
+#. <CLT 4>そう…だったな…
+#. だったら…
+#. <CLT>
+msgctxt "0038 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Oh...yeah, I did. Okay then...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>À... ừ, mình đã nói thế. Được rồi vậy thì...\n"
+"<CLT>"
+
+#. <CLT 4>みんなのボクに対する印象が、
+#. 悪くなったみたいだ…
+#. <CLT>
+msgctxt "0039 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. あれー？　答えられないんだー！
+msgctxt "0040 | JUNKO ENOSHIMA (REAL)"
+msgid "Huh? Don't you have anything to say!?"
+msgstr "Hả? Ngươi không có gì để nói sao!?"
+
+#. うぷぷぷ…なぜなら…
+#. 推理が間違ってるからだよ！
+msgctxt "0041 | JUNKO ENOSHIMA (REAL)"
+msgid "Puhuhu... It's because you know you're dead wrong!"
+msgstr "Puhuhu... Đó là vì ngươi biết mình đã sai bét rồi!"
+
+#. <CLT 4>いや、間違ってない！
+#. <CLT>
+msgctxt "0042 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>No! I'm not wrong!\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Không! Mình không hề sai!\n"
+"<CLT>"
+
+#. <CLT 4>戦刃むくろの致命傷が偽装されてたという事は…
+#. <CLT>
+msgctxt "0043 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Mukuro's true cause of death has been covered up till\n"
+"now...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Nguyên nhân cái chết thực sự của Mukuro đã bị che giấu cho đến\n"
+"tận bây giờ...\n"
+"<CLT>"
+
+#. <CLT 4>…ダメだ。
+#. みんなのボクに対する印象が、悪くなったみたいだ…
+#. <CLT>
+msgctxt "0044 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Looks like I just embarrassed myself\n"
+"in front of everyone...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Có vẻ như mình vừa mới làm trò hề trước mặt mọi\n"
+"người rồi...\n"
+"<CLT>"
+
+#. <CLT 4>殺人が起きた回数より犠牲者が少ない理由…
+#. <CLT>
+msgctxt "0045 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The reason there are less bodies than murders...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lý do có ít thi thể hơn số vụ giết người...\n"
+"<CLT>"
+
+#. <CLT 4>殺人は１０回起きたけど、
+#. 犠牲者は９人しかいなかった理由…
+#. <CLT>
+msgctxt "0046 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>The explanation for more murders than victims...\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Lời giải thích cho việc số vụ giết người nhiều hơn số nạn nhân...\n"
+"<CLT>"
+
+#. <CLT 4>その理由って…なんだ？
+#. <CLT>
+msgctxt "0047 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>Why is that...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Tại sao lại như vậy...?\n"
+"<CLT>"
+
+#. <CLT 4>何が起きたら、そんな事になるんだ？
+#. <CLT>
+msgctxt "0048 | MAKOTO NAEGI"
+msgid ""
+"<CLT 4>What would it take for that to make sense...?\n"
+"<CLT>"
+msgstr ""
+"<CLT 4>Phải xảy ra chuyện gì thì điều đó mới hợp lý được...?\n"
+"<CLT>"
+
+#. 同じ人物が<CLT 3>２回殺されてる<CLT>としたら…
+#. どうなのかな…？
+msgctxt "0049 | MAKOTO NAEGI"
+msgid "What about if...the same person was <CLT 3>killed twice<CLT>?"
+msgstr "Thế còn trường hợp... cùng một người bị <CLT 3>giết hai lần<CLT> thì sao?"
+
+#. は…？　２回殺されたって…？
+msgctxt "0050 | YASUHIRO HAGAKURE"
+msgid "Huh? Killed twice...?"
+msgstr "Hả? Bị giết hai lần ư...?"
+
+#. 今までに起きた１０回の殺人…
+#. その内１回だけは…
+msgctxt "0051 | MAKOTO NAEGI"
+msgid "Officially, ten murders have been committed so far."
+msgstr "Về mặt chính thức, mười vụ giết người đã xảy ra cho đến nay."
+
+#. すでに殺されている人物を、
+#. もう１度、殺したものだったのかもしれない…
+msgctxt "0052 | MAKOTO NAEGI"
+msgid ""
+"But one of the victims may have been murdered...and\n"
+"then murdered again."
+msgstr ""
+"Nhưng một trong các nạn nhân có thể đã bị sát hại... và\n"
+"sau đó lại bị sát hại thêm lần nữa."
+
+#. す、すでに殺されてる人物を…もう１度殺した…？
+msgctxt "0053 | TOUKO FUKAWA"
+msgid "Murdered and...m-murdered again...?"
+msgstr "Bị sát hại rồi... b-bị sát hại thêm lần nữa ư...?"
+
+#. それなら、殺人が１０回起きたとしても、
+#. 犠牲者は９人しかいないって事になるはずだよね？
+msgctxt "0054 | MAKOTO NAEGI"
+msgid ""
+"If that's the case, there could have been ten killings\n"
+"but still only nine victims, right?"
+msgstr ""
+"Nếu đúng là như vậy, thì có thể đã có mười vụ giết người\n"
+"nhưng vẫn chỉ có chín nạn nhân, đúng không?"
+
+#. そ、それは…そうかもしれないけど…
+#. でも、そんな事って…！
+msgctxt "0055 | AOI ASAHINA"
+msgid ""
+"T-Technically you're right I guess, but\n"
+"still...something like that—"
+msgstr ""
+"V-Về mặt lý thuyết thì cậu nói đúng đấy, nhưng\n"
+"mà... chuyện như thế—"
+
+#. …あり得るはず。
+#. いえ、間違いなくあったはずよ。
+msgctxt "0056 | KYOUKO KIRIGIRI"
+msgid "Could easily have happened. No, it *is* what happened."
+msgstr "Hoàn toàn có thể xảy ra. Không, *chính xác* là chuyện đó đã xảy ra."
+
+#. もう、わかっているようだな。
+#. その２回殺された人物が誰なのかも…
+msgctxt "0057 | BYAKUYA TOGAMI"
+msgid ""
+"Sounds like you're already convinced. Then can you\n"
+"tell us who was killed twice?"
+msgstr ""
+"Nghe có vẻ cô đã hoàn toàn bị thuyết phục rồi. Vậy cô có thể\n"
+"cho chúng tôi biết ai là người đã bị giết hai lần không?"
+
+#. …もちろん、<CLT 3>戦刃むくろ<CLT>よ。
+msgctxt "0058 | KYOUKO KIRIGIRI"
+msgid "It was <CLT 3>Mukuro<CLT>, of course."
+msgstr "Đó chính là <CLT 3>Mukuro<CLT>, dĩ nhiên rồi."
+
+#. つまり、彼女は戦刃むくろとして殺される前に、
+#. すでに、別の誰かとして殺されていたのよ。
+msgctxt "0059 | KYOUKO KIRIGIRI"
+msgid ""
+"Before she was killed as Mukuro Ikusaba, she was\n"
+"killed as someone else."
+msgstr ""
+"Trước khi bị giết với tư cách là Mukuro Ikusaba, cô ấy đã\n"
+"bị giết dưới danh tính của một người khác."
+
+#. だからこそ、その死体は植物庭園で見つけられる前から
+#. 生物室に保存されていた…そういう事か。
+msgctxt "0060 | BYAKUYA TOGAMI"
+msgid ""
+"And that's why the body had to be stored in the bio\n"
+"lab until the moment we found it in the garden..."
+msgstr ""
+"Và đó là lý do tại sao thi thể phải được lưu giữ trong phòng\n"
+"sinh học cho đến tận lúc chúng ta tìm thấy nó trong vườn thực vật..."
+
+#. いやいや、そりゃないでしょう！
+#. 戦刃むくろは別の誰かとして殺されてる…なんて…
+msgctxt "0061 | JUNKO ENOSHIMA (REAL)"
+msgid ""
+"No no no, that's crazy talk! She was killed as someone\n"
+"else? Come on!"
+msgstr ""
+"Không không không, thật là nhảm nhí! Cô ta bị giết dưới danh tính của một\n"
+"người khác à? Thôi nào!"
+
+#. てゆーか、誰だよ！　別の誰かって！
+msgctxt "0062 | JUNKO ENOSHIMA (REAL)"
+msgid ""
+"Besides, who could that \"someone else\" even have\n"
+"been!?"
+msgstr ""
+"Hơn nữa, cái \"người khác\" đó thậm chí có thể là\n"
+"ai được chứ!?"
+
+#. それが誰だったのかは…
+#. 彼女の致命傷に注目すれば見えてくるわ…
+msgctxt "0063 | KYOUKO KIRIGIRI"
+msgid ""
+"All you have to do is look at those bodily injuries of\n"
+"hers and that will become obvious."
+msgstr ""
+"Tất cả những gì ngươi cần làm là nhìn vào những vết thương trên cơ thể của\n"
+"cô ấy và điều đó sẽ trở nên rõ ràng ngay thôi."
+
+#. 見えてくる訳…ないじゃん…
+msgctxt "0064 | JUNKO ENOSHIMA (REAL)"
+msgid "Nothing's gonna become obvious...!"
+msgstr "Chẳng có gì trở nên rõ ràng hết cả...!"
+
+#. だって、そんなの霧切さんの妄想だもーーん！！
+msgctxt "0065 | JUNKO ENOSHIMA (REAL)"
+msgid "Because Kyoko's totally delusional!"
+msgstr "Tại vì Kyoko hoàn toàn hoang tưởng rồi!"

@@ -19,7 +19,7 @@ msgstr "..."
 #. あ、葉隠クン！
 msgctxt "0002 | MAKOTO NAEGI"
 msgid "Oh, hey Hiro!"
-msgstr ""
+msgstr "Ồ, chào Hiro!"
 
 #. …うぉっ！　苗木っち！？
 msgctxt "0003 | YASUHIRO HAGAKURE"
@@ -29,12 +29,12 @@ msgstr "Uwah! Makoto!?"
 #. ど、どうしたの？　そんなに驚いて…
 msgctxt "0004 | MAKOTO NAEGI"
 msgid "Why'd you act so surprised...?"
-msgstr ""
+msgstr "Sao cậu lại tỏ ra ngạc nhiên thế...?"
 
 #. い、いや…なんでもねーけど…
 msgctxt "0005 | YASUHIRO HAGAKURE"
 msgid "O-Oh, no reason!"
-msgstr ""
+msgstr "K-Không có gì đâu!"
 
 #. 葉隠クンも、さっきのモノクマアナウンスを聞いて、
 #. 体育館に来たんだよね？
@@ -43,23 +43,25 @@ msgid ""
 "You heard Monokuma's announcement, right? Are you here\n"
 "to find out what he has to say?"
 msgstr ""
+"Cậu đã nghe thông báo của Monokuma rồi đúng không? Cậu đến đây\n"
+"để xem ông ta định nói gì à?"
 
 #. お、俺は…
 msgctxt "0007 | YASUHIRO HAGAKURE"
 msgid "I...I..."
-msgstr ""
+msgstr "T-Tôi... Tôi..."
 
 #. もう行ってきた…
 #. だから…帰るトコだべ…
 msgctxt "0008 | YASUHIRO HAGAKURE"
 msgid "I just did, actually. I'm on my way out..."
-msgstr ""
+msgstr "Thực ra tôi vừa mới vào rồi. Tôi đang trên đường về đây..."
 
 #. え、もう聞いたの！？
 #. モノクマのヒントってなんだったの？
 msgctxt "0009 | MAKOTO NAEGI"
 msgid "You already talked to him? What'd he say!?"
-msgstr ""
+msgstr "Cậu đã nói chuyện với ông ta rồi á? Ông ta nói gì vậy!?"
 
 #. ………………
 msgctxt "0010 | YASUHIRO HAGAKURE"
@@ -69,7 +71,7 @@ msgstr "..."
 #. わ、悪いけど…俺は…！
 msgctxt "0011 | YASUHIRO HAGAKURE"
 msgid "Listen, sorry, b-but I...!"
-msgstr ""
+msgstr "Nghe này, xin lỗi nhé, n-nhưng tôi...!"
 
 #. これで失礼すんべ！！
 msgctxt "0012 | YASUHIRO HAGAKURE"
@@ -79,7 +81,7 @@ msgstr "T-Tớ đi đây...!"
 #. あ、ちょっと葉隠クン！！
 msgctxt "0013 | MAKOTO NAEGI"
 msgid "Hiro, wait!"
-msgstr ""
+msgstr "Hiro, đợi đã!"
 
 #. <CLT 4>呼び止める声もむなしく、
 #. 葉隠クンは逃げるように走り去ってしまった…
@@ -90,11 +92,14 @@ msgid ""
 "like a frightened animal.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cố ngăn cậu ấy lại cũng chẳng ích gì. Cậu ấy bỏ chạy\n"
+"như một con thú hoảng sợ.\n"
+"<CLT>"
 
 #. は、葉隠…クン…？
 msgctxt "0015 | MAKOTO NAEGI"
 msgid "H-Hiro...?"
-msgstr ""
+msgstr "H-Hiro...?"
 
 #. <CLT 4>どうして、あんな…
 #. ボクを避けるみたいに…
@@ -104,6 +109,8 @@ msgid ""
 "<CLT 4>It was like he was trying to avoid me...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Cứ như thể cậu ấy đang cố tránh mặt tôi vậy...\n"
+"<CLT>"
 
 #. <CLT 4>葉隠クンには、<CLT><CLT 3>ロッカールームのノートの件<CLT><CLT 4>も
 #. 確認しておきたかったのに…
@@ -114,11 +121,14 @@ msgid ""
 "found in the locker<CLT><CLT 4>...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tôi đã hy vọng có thể nói chuyện với cậu ấy về <CLT><CLT 3>cuốn vở tôi\n"
+"tìm thấy trong tủ đồ<CLT><CLT 4>...\n"
+"<CLT>"
 
 #. やっぱり…何か隠し事が…？
 msgctxt "0018 | MAKOTO NAEGI"
 msgid "Has he been hiding something this whole time?"
-msgstr ""
+msgstr "Chẳng lẽ cậu ấy đã giấu giếm chuyện gì suốt bấy lâu nay sao?"
 
 #. <CLT 4>とにかく、今は体育館に向かおう。
 #. <CLT>
@@ -127,6 +137,8 @@ msgid ""
 "<CLT 4>Anyway, for now I'd better get to the gym...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Dù sao thì, trước mắt tôi nên đến nhà thi đấu đã...\n"
+"<CLT>"
 
 #. <CLT 4>監視カメラなんかより…
 #. とにかく、今は体育館に向かおう！
@@ -137,6 +149,9 @@ msgid ""
 "than some damn surveillance camera...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Lúc này tôi lo chuyện đến nhà thi đấu hơn là\n"
+"cái camera giám sát chết tiệt nào đó...\n"
+"<CLT>"
 
 #. <CLT 4>とにかく、今は体育館に向かおう。
 #. <CLT>
@@ -145,6 +160,8 @@ msgid ""
 "<CLT 4>Anyway, for now I'd better get to the gym...\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Dù sao thì, trước mắt tôi nên đến nhà thi đấu đã...\n"
+"<CLT>"
 
 #. <CLT 4>葉隠クンの様子は気になるけど…
 #. 今は体育館に向かおう。
@@ -155,3 +172,6 @@ msgid ""
 "I need to get to the gym.\n"
 "<CLT>"
 msgstr ""
+"<CLT 4>Tôi lo lắng về thái độ của Hiro, nhưng... ngay bây giờ\n"
+"tôi cần phải đến nhà thi đấu.\n"
+"<CLT>"
