@@ -1,0 +1,39 @@
+--- Gemini Translation Raw Output for e06_197_000.po ---
+
+==================== BATCH 1 REQUEST ====================
+#. ＭＴＢ（モノクマ１）に飛ぶ
+msgctxt "0005 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 1 (Monokuma A)"
+msgstr ""
+
+#. ＭＴＢ（モノクマ２）に飛ぶ
+msgctxt "0006 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 2 (Monokuma B)"
+msgstr ""
+
+#. ＭＴＢ（江ノ島）に飛ぶ
+msgctxt "0007 | CHOICE/RE:ACT"
+msgid "Jump to Bullet Time Battle 3 (Junko)"
+msgstr ""
+
+#. 閃きアナグラム３に飛ぶ
+msgctxt "0011 | CHOICE/RE:ACT"
+msgid "Jump to Hangman's Gambit 3"
+msgstr ""
+
+==================== BATCH 1 RESPONSE ====================
+msgctxt "0005 | CHOICE/RE:ACT"
+msgstr "Nhảy tới Đấu Đạn Thời Gian 1 (Monokuma A)"
+
+msgctxt "0006 | CHOICE/RE:ACT"
+msgstr "Nhảy tới Đấu Đạn Thời Gian 2 (Monokuma B)"
+
+msgctxt "0007 | CHOICE/RE:ACT"
+msgstr "Nhảy tới Đấu Đạn Thời Gian 3 (Junko)"
+
+msgctxt "0011 | CHOICE/RE:ACT"
+msgstr "Nhảy tới Đố Chữ Treo Cổ 3"
+
+==================== FOLDER SUMMARY ====================
+Minigame Jump Choices
+
